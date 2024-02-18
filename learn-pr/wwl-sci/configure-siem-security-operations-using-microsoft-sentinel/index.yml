@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.configure-siem-security-operations-using-microsoft-sentinel-labs
+metadata:
+  title: Configure SIEM security operations using Microsoft Sentinel
+  description: "Configure security information and event management (SIEM) security operations using Microsoft Sentinel."
+  ms.date: 10/3/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: module-guided-project 
+  ms.service: microsoft-sentinel
+title: Configure SIEM security operations using Microsoft Sentinel
+summary: In this module, you learned how to configure SIEM security operations using Microsoft Sentinel.
+abstract: |
+  Upon completion of this module, the learner is able to:
+  - Create and configure a Microsoft Sentinel workspace
+  - Deploy Microsoft Sentinel Content Hub solutions and data connectors
+  - Configure Microsoft Sentinel Data Collection rules, NRT Analytic rule and Automation
+  - Perform a simulated attack to validate Analytic and Automation rules
+prerequisites: |
+  - Basic experience with Azure services
+  - Basic knowledge of operational concepts, such as monitoring, logging, and alerting
+  - An Azure subscription
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - security-operations-analyst
+products: 
+- azure
+- microsoft-sentinel
+- azure-log-analytics
+subjects: 
+  - threat-protection
+  - cloud-security
+units:
+- learn.wwl.configure-siem-security-operations-using-microsoft-sentinel-labs.introduction
+- learn.wwl.configure-siem-security-operations-using-microsoft-sentinel-labs-create.exercise
+- learn.wwl.configure-siem-security-operations-using-microsoft-sentinel-labs-deploy.exercise
+- learn.wwl.configure-siem-security-operations-using-microsoft-sentinel-labs-validate.exercise
+- learn.wwl.configure-siem-security-operations-using-microsoft-sentinel-labs-perform.exercise
+- learn.wwl.configure-siem-security-operations-using-microsoft-sentinel-labs.summary
+badge:
+  uid: learn.wwl.configure-siem-security-operations-using-microsoft-sentinel-labs.badge

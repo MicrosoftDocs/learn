@@ -4,12 +4,12 @@ metadata:
   moduleType: standard
   title: Build rich interactive components with Blazor web apps
   description: Learn how to interoperate Blazor apps with JavaScript code, use templated components, and handle component lifecycle events.
-  ms.date: 07/25/2023
+  ms.date: 10/10/2023
   author: IEvangelist
   ms.author: dapine
-  ms.topic: interactive-tutorial
-  ms.prod: dotnet-architecture
-  ms.technology: blazor 
+  ms.topic: module
+  ms.service: dotnet-architecture
+  ms.subservice: blazor
 title: Build rich interactive components with Blazor web apps
 summary: Learn how to interoperate Blazor apps with JavaScript code, use templated components, and handle component lifecycle events.
 abstract: |
@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - Familiarity with HTML, CSS, and JavaScript web development.
   - Novice ability to write C# code.
-  - The [.NET 7.0 SDK](https://dotnet.microsoft.com/download/dotnet/7.0) installed.
+  - The [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) installed.
   - An integrated development environment (IDE) such as [Visual Studio Code](https://code.visualstudio.com).
 iconUrl: /training/achievements/build-interactive-components-blazor-web-apps.svg
 levels:

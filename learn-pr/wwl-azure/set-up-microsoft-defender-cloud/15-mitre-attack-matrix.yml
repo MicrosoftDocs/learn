@@ -4,11 +4,10 @@ title: MITRE Attack matrix
 metadata:
   title: MITRE Attack matrix
   description: "MITRE Attack matrix"
-  ms.date: 08/29/2023
+  ms.date: 01/04/2024
   author: wwlpublish
   ms.author: serlingdavis
-  ms.topic: interactive-tutorial
-  ms.prod: azure
-durationInMinutes: 3
+  ms.topic: unit
+durationInMinutes: 10
 content: |
   [!include[](includes/15-mitre-attack-matrix.md)]

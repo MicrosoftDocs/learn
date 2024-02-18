@@ -6,10 +6,10 @@ metadata:
   ms.date: 5/10/2023
   author: VanMSFT
   ms.author: vanto
-  ms.topic: interactive-tutorial             
+  ms.topic: module
   ms.custom:
     - build-2023
-  ms.prod: learning-sqlserver                   
+  ms.service: sql                
 title: Understand the built-in query intelligence enhancements of SQL Server 2022
 summary: "Learn about and use the Intelligent Query Processing feature enhancements in SQL Server 2022."
 abstract: |

@@ -1,5 +1,3 @@
-
-
 You can add, edit, or remove a policy by using any of the following methods:
 
 * Azure portal
@@ -80,3 +78,5 @@ az storage account management-policy create \
 ```
 
 A lifecycle management policy must be read or written in full. Partial updates aren't supported.
+
+

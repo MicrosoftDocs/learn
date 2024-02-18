@@ -4,11 +4,10 @@ title: Identify deployment options for SAP solutions on Azure
 metadata:
   title: Identify deployment options for SAP solutions on Azure
   description: "Identify deployment options for SAP solutions on Azure"
-  ms.date: 04/21/2023
+  ms.date: 02/14/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/3-identify-deployment-options-sap-solutions-on-azure.md)]

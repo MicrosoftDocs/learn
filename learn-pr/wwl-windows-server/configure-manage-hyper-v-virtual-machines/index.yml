@@ -6,9 +6,9 @@ metadata:
   ms.date: 12/12/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: windows-server
-  ms.technology: hyper-v
+  ms.topic: module
+  ms.service: windows-server
+  ms.subservice: hyper-v
 title: Configure and manage Hyper-V virtual machines
 summary: Learn about configuring and managing Hyper-V virtual machines in Windows Server 2019.
 abstract: |

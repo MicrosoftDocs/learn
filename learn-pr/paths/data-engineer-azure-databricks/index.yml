@@ -1,18 +1,17 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.data-engineer-azure-databricks
 metadata:
-  title: Data engineering with Azure Databricks
-  description: Data engineering with Azure Databricks
-  ms.date: 08/29/2022
+  title: Implement a Data Analytics Solution with Azure Databricks
+  description: Implement a Data Analytics Solution with Azure Databricks
+  ms.date: 02/08/2024
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Data engineering with Azure Databricks
+  ms.topic: learning-path
+title: Implement a Data Analytics Solution with Azure Databricks
 prerequisites: |
   None
 summary: |
-  Learn how to harness the power of Apache Spark and powerful clusters running on the Azure Databricks platform to run large data engineering workloads in the cloud.
+  Learn how to harness the power of Apache Spark and powerful clusters running on the Azure Databricks platform to run data analytics workloads in a data lakehouse.
 iconUrl: /training/achievements/data-engineer-azure-databricks.svg
 levels:
 - intermediate
@@ -22,6 +21,7 @@ products:
 - azure-databricks
 subjects:
 - data-engineering
+- data-analytics
 modules:
 - learn.wwl.explore-azure-databricks
 - learn.wwl.use-apache-spark-azure-databricks

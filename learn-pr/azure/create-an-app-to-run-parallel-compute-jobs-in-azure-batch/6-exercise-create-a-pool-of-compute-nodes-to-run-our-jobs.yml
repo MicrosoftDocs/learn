@@ -6,11 +6,10 @@ metadata:
   description: In this hands-on exercise, you'll add a pool to your Batch account using the .NET client library.
   ms.date: 06/01/2019
   author: lauradolan
-  ms.author: ladolan
-  ms.topic: interactive-tutorial
+  ms.author: jushiman
+  ms.topic: unit
   ms.custom:
     - devx-track-dotnet
-  ms.prod: learning-azure
 durationInMinutes: 7
 content: |
   [!include[](includes/6-exercise-create-a-pool-of-compute-nodes-to-run-our-jobs.md)]

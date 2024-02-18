@@ -7,8 +7,7 @@ metadata:
   ms.date: 7/12/2023
   author: aprilspeight
   ms.author: apspeigh
-  ms.topic: interactive-tutorial
-  ms.prod: holoLens
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/4-use-cloud-connected-deployment.md)]

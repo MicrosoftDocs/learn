@@ -1,13 +1,13 @@
-With each consecutive chapter, you'll add new **Azure Cloud** services to expand the application features and user experience, while teaching you the fundamentals of each **Azure Cloud** service.
+With each consecutive chapter, you'll add new Azure Cloud services to expand the application features and user experience, while teaching you the fundamentals of each Azure Cloud service.
 
 > [!NOTE]
-> This module series will focus on the **HoloLens 2**, but due the cross-platform nature of Unity, most of these lessons will also apply for desktop and mobile applications.
+> This module series will focus on the HoloLens 2, but due the cross-platform nature of Unity, most of these lessons will also apply for desktop and mobile applications.
 
 ## Application goals
 
-In this module series, you'll build a **HoloLens 2** application that can detect objects from images and find its spatial location. We'll refer to these objects as **Tracked Objects**.
+In this module series, you'll build a HoloLens 2 application that can detect objects from images and find its spatial location. We'll refer to these objects as *Tracked Objects*.
 
-The user can create a **Tracked Object** to associate a set of images via computer vision, a spatial location, or both. All data must be persisted into the cloud. 
+The user can create a *Tracked Object* to associate a set of images via computer vision, a spatial location, or both. All data must be persisted into the cloud.
 
 ### Features
 
@@ -17,25 +17,25 @@ The user can create a **Tracked Object** to associate a set of images via comput
 
 ## Azure Cloud Services
 
-You'll use the following **Azure Cloud** services to implement the above features:
+You'll use the following Azure Cloud services to implement the above features:
 
 ### Azure Storage
 
-You will use [Azure Storage](https://azure.microsoft.com/services/storage/) to persist data. Azure Storage allows you to store data in a table and upload large binaries like images.
+You'll use [Azure Storage](https://azure.microsoft.com/services/storage/) to persist data. Azure Storage allows you to store data in a table and upload large binaries like images.
 
 ### Azure Custom Vision
 
-With [Azure AI Custom Vision](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/) (part of the [Azure AI services](https://azure.microsoft.com/services/cognitive-services/)) you can associate a set of images to *Tracked Objects*, train a machine learning model on the set you created, and detect the *Tracked Objects*.
+With [Azure AI Custom Vision](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/) (part of the [Azure AI services](https://azure.microsoft.com/services/cognitive-services/)) you can associate a set of images to Tracked Objects, train a machine learning model on the set you created, and detect the Tracked Objects.
 
 ### Azure Spatial Anchors
 
-To store a *Tracked Object* location and give guided directions to find it, you'll use [Azure Spatial Anchors](https://azure.microsoft.com/services/spatial-anchors/).
+To store a Tracked Object location and give guided directions to find it, you'll use [Azure Spatial Anchors](https://azure.microsoft.com/services/spatial-anchors/).
 
 ## Create and prepare the Unity project
 
-In this section, you'll' create a new Unity project and get it ready for MRTK development.
+In this section, you'll create a new Unity project and get it ready for MRTK development.
 
-First, follow the steps in [Initializing your project and first application](/training/paths/beginner-hololens-2-tutorials/), excluding the Build your application to your device instructions, which includes the following steps:
+First, follow the steps in [the HoloLens 2 learning path](/training/paths/beginner-hololens-2-tutorials/), excluding the Build your application to your device instructions, which includes the following steps:
 
 1. Creating the Unity project and giving it a suitable name, for example, *Azure Cloud Tutorials*
 2. Switching the build platform
@@ -46,14 +46,14 @@ First, follow the steps in [Initializing your project and first application](/tr
 
 ## Import the tutorial assets
 
-1) Add AzurespatialAnchors SDK to your project. To add the packages, please follow this [tutorial.](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)
+1. Add the `AzurespatialAnchors` SDK to your project. To add the package, [follow this tutorial](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage).
 
-2) Download and **import** the following Unity custom packages **in the order they are listed**:
+1. Download and import the following Unity custom packages *in the order they're listed*:
 
     * [AzureStorageForUnity.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v3.0.0/AzureStorageForUnity.unitypackage)
-    * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureCloudServices.3.0.0](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v3.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureCloudServices.3.0.0.unitypackage)
+    * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureCloudServices.3.0.1](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v3.0.1/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureCloudServices.3.0.1.unitypackage)
 
-    After you have imported the tutorial assets your Project window should look similar to this:
+    After you've imported the tutorial assets, your Project window should look similar to this:
 
     :::image type="content" source="../media/after-import-legacy-xr.png" alt-text="Screenshot of Unity Hierarchy, Scene, and Project windows after importing the tutorial assets." lightbox="../media/after-import-legacy-xr.png":::
 
@@ -71,7 +71,7 @@ In this section, you'll prepare the scene by adding some of the tutorial prefabs
 
     The **DataManager (prefab)** is responsible for talking to Azure storage, and will be explained further in the next tutorial.
 
-2. Now with the three prefabs still selected, drag them into the Hierarchy window to add them to the scene:
+2. Now, with the three prefabs still selected, drag them into the Hierarchy window to add them to the scene:
 
     :::image type="content" source="../media/drag-hierarchy.png" alt-text="Screenshot of Unity with newly added SceneController, RootMenu and DataManager prefabs still selected." lightbox="../media/drag-hierarchy.png":::
 
@@ -82,7 +82,7 @@ In this section, you'll prepare the scene by adding some of the tutorial prefabs
     :::image type="content" source="../media/root-menu-object.png" alt-text="Screenshot of Unity with RootMenu object selected." lightbox="../media/root-menu-object.png":::
 
     > [!TIP]
-    > If you find the large icons in your scene, (for example, the large framed 'T' icons) distracting, you can hide these by [toggling the Gizmos](https://docs.unity3d.com/2021.3/Documentation/Manual/GizmosMenu.html) to the off position.
+    > If you find the large icons in your scene distracting (for example, the large framed 'T' icons), you can hide them by [toggling the Gizmos](https://docs.unity3d.com/2021.3/Documentation/Manual/GizmosMenu.html) to the off position.
 
 ## Configuring the scene
 
@@ -94,15 +94,15 @@ In this section, you'll connect *SceneManager*, *DataManager*, and *RootMenu* to
 
     :::image type="content" source="../media/data-manager-object.png" alt-text="Screenshot of Unity with DataManager object selected." lightbox="../media/data-manager-object.png":::
 
-2. In the Inspector window, locate the **DataManager (Script)** component and you'll see an empty slot on the **On Data Manager Ready ()** event. Drag the **SceneController** object from the Hierarchy window to the **On Data Manager Ready ()** event.
+2. In the Inspector window, locate the **DataManager (Script)** component. You'll see an empty slot on the **On Data Manager Ready ()** event. Drag the **SceneController** object from the Hierarchy window to the **On Data Manager Ready ()** event.
 
     :::image type="content" source="../media/data-manager-event-listener.png" alt-text="Screenshot of Unity with DataManager event listener added." lightbox="../media/data-manager-event-listener.png":::
 
-3. The event's dropdown menu is now active. Select the dropdown menu and navigate to **SceneController** and select the **Init ()** option in the submenu:
+3. The event's drop-down menu is now active. Select the drop-down menu, navigate to **SceneController**, and select the **Init ()** option in the submenu.
 
     :::image type="content" source="../media/data-manager-event-action.png" alt-text="Screenshot of Unity with DataManager event action added." lightbox="../media/data-manager-event-action.png":::
 
-4. From the Hierarchy window, select the **SceneController** object. You will find the **SceneController** (script) component in the Inspector.
+4. From the Hierarchy window, select the **SceneController** object. You'll find the **SceneController** (script) component in the Inspector.
 
     :::image type="content" source="../media/scene-controller-select.png" alt-text="Screenshot of Unity with SceneController selected." lightbox="../media/scene-controller-select.png":::
 
@@ -110,24 +110,24 @@ In this section, you'll connect *SceneManager*, *DataManager*, and *RootMenu* to
 
     :::image type="content" source="../media/scene-controller.png" alt-text="Screenshot of Unity with SceneController configured." lightbox="../media/scene-controller.png":::
 
-6. In the Hierarchy window, select the **MRTK XR Rig** object. Ensure that the **MRTK Speech** child object is enabled. This will allow you to open the menu by saying 'Open Menu'. 
+6. In the Hierarchy window, select the **MRTK XR Rig** object. Ensure that the **MRTK Speech** child object is enabled. This allows you to open the menu by saying "Open menu."
 
 7. Now your scene is ready for the upcoming tutorials. Don't forget to save it to your project.
 
 ## Prepare project build pipeline
 
-> [!Note]
-> Building and testing on HoloLens 2 is not mandatory. You can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a HoloLens device. You can purchase devices at [HoloLens.com](http://hololens.com/).
+> [!NOTE]
+> Building and testing on HoloLens 2 isn't mandatory. You can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a HoloLens device. You can purchase devices at [HoloLens.com](https://hololens.com/).
 
-Before we finish the scene, let's prepare the project to be built for **HoloLens 2**.
+Before we finish the scene, let's prepare the project to build for **HoloLens 2**.
 
 ### 1. Add other required capabilities
 
-1. In the Unity menu, select **Edit** > **Project Settings...** to open the Project Settings window:
+1. In the Unity menu, select **Edit** > **Project Settings...** to open the Project Settings window.
 
     :::image type="content" source="../media/open-project-setting.png" alt-text="Screenshot of Unity open Project Settings." lightbox="../media/open-project-setting.png":::
 
-2. In the Project Settings window, select **Player** and then **Publishing Settings**:
+2. In the Project Settings window, select **Player**, then **Publishing Settings**:
 
     :::image type="content" source="../media/publish-settings.png" alt-text="Screenshot of Unity Publishing Settings." lightbox="../media/publish-settings.png":::
 
@@ -137,13 +137,10 @@ Before we finish the scene, let's prepare the project to be built for **HoloLens
 
 ### 2. Deploy the app to your HoloLens 2
 
-> [!Note]
-> Building and testing on HoloLens 2 is not mandatory. You can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a HoloLens device. You can purchase devices at [HoloLens.com](http://hololens.com/).
-
-You won't be able to run all the features that you'll use in this tutorial series inside the Unity editor. Therefore, you need to be familiar with deploying the application to your HoloLens 2 device.
+You won't be able to run all the features that you'll use in this tutorial series inside the Unity editor. Therefore, you need to be familiar with deploying the application to your HoloLens 2 device or emulator.
 
 > [!TIP]
-> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Getting started tutorials - Build your application to your device](/training/modules/learn-mrtk-tutorials/1-7-exercise-hand-interaction-with-objectmanipulator?ns-enrollment-type=LearningPath&ns-enrollment-id=learn.azure.beginner-hololens-2-tutorials/) instructions.
+> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Getting started tutorials - Build and deploy your application](/training/modules/learn-mrtk-tutorials/1-7-exercise-hand-interaction-with-objectmanipulator?ns-enrollment-type=LearningPath&ns-enrollment-id=learn.azure.beginner-hololens-2-tutorials/) instructions.
 
 ### 3. Run the app on your HoloLens 2 and follow the in-app instructions
 

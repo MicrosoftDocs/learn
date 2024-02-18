@@ -6,8 +6,7 @@ metadata:
   ms.date: 06/15/2021
   author: aprilspeight
   ms.author: apspeigh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Configure Unity for Windows Mixed Reality development
 durationInMinutes: 10

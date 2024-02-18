@@ -3,14 +3,14 @@ uid: learn.azure.sustainable-software-engineering-overview
 metadata:
   title: The Principles of Sustainable Software Engineering
   description: Sustainable Software Engineering is an emerging discipline at the intersection of climate science, software, hardware, electricity markets, and data center design. The Principles of Sustainable Software Engineering are a core set of competencies needed to define, build, and run sustainable software applications.
-  ms.date: 06/13/2023
+  ms.date: 09/29/2023
   author: Zimmergren
   ms.author: tozimmergren
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.contributors:
   - tozimmergren
   - simont
+  ms.service: azure
 title: The Principles of Sustainable Software Engineering
 summary: Sustainable Software Engineering is an emerging discipline at the intersection of climate science, software, hardware, electricity markets, and data center design. The Principles of Sustainable Software Engineering are a core set of competencies needed to define, build, and run sustainable software applications.
 abstract: |
@@ -18,7 +18,7 @@ abstract: |
   - Identify the six principles of Sustainable Software Engineering.
   - Understand the two philosophies of Sustainable Software Engineering.
 prerequisites: |
-  - Familiarization with general computing concepts
+  - Familiarity with general computing concepts
 iconUrl: /training/achievements/sustainable-software-engineering-overview.svg
 levels:
 - beginner

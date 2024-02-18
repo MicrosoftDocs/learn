@@ -1,20 +1,20 @@
-This unit summarizes the [Azure security baseline for Windows Virtual Machines](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline) by providing the first five controls in each of the following nine areas:
+This unit summarizes the [Azure security baseline for Windows Virtual Machines](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline) by providing the first five controls in each of the following nine areas:
 
--   [Network Security](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#network-security)
--   [Logging and Monitoring](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#logging-and-monitoring)
--   [Identity and Access Control](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#identity-and-access-control)
--   [Data Protection](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#data-protection)
--   [Vulnerability Management](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#vulnerability-management)
--   [Inventory and Asset Management](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#inventory-and-asset-management)
--   [Secure Configuration](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#secure-configuration)
--   [Malware Defense](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#malware-defense)
--   [Data Recovery](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#data-recovery)
+-   [Network Security](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#network-security)
+-   [Logging and Monitoring](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#logging-and-monitoring)
+-   [Identity and Access Control](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#identity-and-access-control)
+-   [Data Protection](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#data-protection)
+-   [Vulnerability Management](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#vulnerability-management)
+-   [Inventory and Asset Management](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#inventory-and-asset-management)
+-   [Secure Configuration](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#secure-configuration)
+-   [Malware Defense](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#malware-defense)
+-   [Data Recovery](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#data-recovery)
 
 ## Network Security
 
 ### 1.1: Protect Azure resources within virtual networks
 
-**Guidance**: When you create an Azure virtual machine (VM), you must create a virtual network (VNet) or use an existing VNet and configure the VM with a subnet. Ensure that all deployed subnets have a Network Security Group applied with network access controls specific to your applications trusted ports and sources.
+**Guidance**: When you create an Azure virtual machine (VM), you must create a virtual network (virtual network) or use an existing virtual network and configure the VM with a subnet. Ensure that all deployed subnets have a Network Security Group applied with network access controls specific to your applications trusted ports and sources.
 
 Alternatively, if you have a specific use case for a centralized firewall, Azure Firewall can also be used to meet those requirements.
 
@@ -30,7 +30,7 @@ Alternatively, if you have a specific use case for a centralized firewall, Azure
 
 **Guidance**: If using your virtual machine (VM) to host web applications, use a network security group (NSG) on the VM's subnet to limit what network traffic, ports and protocols are allowed to communicate. Follow a least privileged network approach when configuring your NSGs to only allow required traffic to your application.
 
-You can also deploy Azure Web Application Firewall (WAF) in front of critical web applications for additional inspection of incoming traffic. Enable Diagnostic Setting for WAF and ingest logs into a Storage Account, Event Hub, or Log Analytics Workspace.
+You can also deploy Azure Web Application Firewall (WAF) in front of critical web applications for extra inspection of incoming traffic. Enable Diagnostic Setting for WAF and ingest logs into a Storage Account, Event Hubs, or Log Analytics Workspace.
 
 **Responsibility**: Customer
 
@@ -52,13 +52,13 @@ You can use Microsoft Defender for Cloud's Just In Time Network access to limit 
 
 ### 2.1: Use approved time synchronization sources
 
-**Guidance**: Microsoft maintains time sources for Azure resources, however, you have the option to manage the time synchronization settings for your Windows Virtual Machines.
+**Guidance**: Microsoft maintains time sources for Azure resources, however, you can manage the time synchronization settings for your Windows Virtual Machines.
 
 **Responsibility**: Microsoft
 
 ### 2.2: Configure central security log management
 
-**Guidance**: The Microsoft Defender for Cloud provides Security Event log monitoring for windows Virtual Machines. Given the volume of data that the security event log generates, it is not stored by default.
+**Guidance**: The Microsoft Defender for Cloud provides Security Event log monitoring for windows Virtual Machines. Given the volume of data that the security event log generates, it isn't stored by default.
 
 **Responsibility**: Customer
 
@@ -70,13 +70,13 @@ Enable the collection of guest OS diagnostic data by deploying the diagnostic ex
 
 For advanced visibility of the applications and services supported by your virtual machines you can enable both Azure Monitor for VMs and Application insights. With Application Insights, you can monitor your application and capture telemetry such as HTTP requests, exceptions, etc. so you can correlate issues between the VMs and your application.
 
-Additionally, enable Azure Monitor for access to your audit and activity logs which includes event source, date, user, timestamp, source addresses, destination addresses, and other useful elements.
+Additionally, enable Azure Monitor for access to your audit and activity logs, which includes event source, date, user, timestamp, source addresses, destination addresses, and other useful elements.
 
 **Responsibility**: Customer
 
 ### 2.4: Collect security logs from operating systems
 
-**Guidance**: Use Microsoft Defender for Cloud to provide Security Event log monitoring for Azure Virtual Machines. Given the volume of data that the security event log generates, it is not stored by default.
+**Guidance**: Use Microsoft Defender for Cloud to provide Security Event log monitoring for Azure Virtual Machines. Given the volume of data that the security event log generates, it isn't stored by default.
 
 If your organization would like to retain the security event log data from the virtual machine, it can be stored within a Log Analytics Workspace at the desired data collection tier configured within Microsoft Defender for Cloud.
 
@@ -92,13 +92,13 @@ If your organization would like to retain the security event log data from the v
 
 ### 3.1: Maintain an inventory of administrative accounts
 
-**Guidance**: While Azure Active Directory (Azure AD) is the recommended method to administrate user access, Azure Virtual Machines may have local accounts. Both local and domain accounts should be reviewed and managed, normally with a minimum footprint. In addition, leverage Azure Privileged Identity Management for administrative accounts used to access the virtual machines resources.
+**Guidance**: While Microsoft Entra ID is the recommended method to administrate user access, Azure Virtual Machines can have local accounts. Both local and domain accounts should be reviewed and managed, normally with a minimum footprint. In addition, use Azure Privileged Identity Management for administrative accounts used to access the virtual machines resources.
 
 **Responsibility**: Customer
 
 ### 3.2: Change default passwords where applicable
 
-**Guidance**: Windows Virtual Machines and Azure Active Directory (Azure AD) do not have the concept of default passwords. Customer responsible for third-party applications and marketplace services that may use default passwords.
+**Guidance**: Windows Virtual Machines and Microsoft Entra ID don't have the concept of default passwords. Customer responsible for non-Microsoft applications and marketplace services that can use default passwords.
 
 **Responsibility**: Customer
 
@@ -108,15 +108,19 @@ If your organization would like to retain the security event log data from the v
 
 **Responsibility**: Customer
 
-### 3.4: Use Azure Active Directory single sign-on (SSO)
+<a name='34-use-azure-active-directory-single-sign-on-sso'></a>
 
-**Guidance**: Wherever possible, customer to use SSO with Azure Active Directory (Azure AD) rather than configuring individual stand-alone credentials per-service. Use Microsoft Defender for Cloud Identity and Access Management recommendations.
+### 3.4: Use Microsoft Entra single sign-on (SSO)
+
+**Guidance**: Wherever possible, customer to use SSO with Microsoft Entra rather than configuring individual stand-alone credentials per-service. Use Microsoft Defender for Cloud Identity and Access Management recommendations.
 
 **Responsibility**: Customer
 
-### 3.5: Use multi-factor authentication for all Azure Active Directory-based access
+<a name='35-use-multi-factor-authentication-for-all-azure-active-directory-based-access'></a>
 
-**Guidance**: Enable Azure Active Directory (Azure AD) multifactor authentication and follow Microsoft Defender for Cloud Identity and Access Management recommendations.
+### 3.5: Use multifactor authentication for all Microsoft Entra ID-based access
+
+**Guidance**: Enable Microsoft Entra multifactor authentication and follow Microsoft Defender for Cloud Identity and Access Management recommendations.
 
 **Responsibility**: Customer
 
@@ -124,7 +128,7 @@ If your organization would like to retain the security event log data from the v
 
 ### 4.1: Maintain an inventory of sensitive Information
 
-**Guidance**: Use Tags to assist in tracking Azure virtual machines that store or process sensitive information.
+**Guidance**: Use Tags to help tracking Azure virtual machines that store or process sensitive information.
 
 **Responsibility**: Customer
 
@@ -136,15 +140,15 @@ If your organization would like to retain the security event log data from the v
 
 ### 4.3: Monitor and block unauthorized transfer of sensitive information
 
-**Guidance**: Implement third-party solution on network perimeters that monitors for unauthorized transfer of sensitive information and blocks such transfers while alerting information security professionals.
+**Guidance**: Implement non-Microsoft solution on network perimeters that monitors for unauthorized transfer of sensitive information and blocks such transfers while alerting information security professionals.
 
-For the underlying platform which is managed by Microsoft, Microsoft treats all customer content as sensitive to guard against customer data loss and exposure. To ensure customer data within Azure remains secure, Microsoft has implemented and maintains a suite of robust data protection controls and capabilities.
+Microsoft treats all customer content as sensitive to guard against customer data loss and exposure on the platforms that it manages. To ensure customer data within Azure remains secure, Microsoft has implemented and maintains a suite of robust data protection controls and capabilities.
 
 **Responsibility**: Customer
 
 ### 4.4: Encrypt all sensitive information in transit
 
-**Guidance**: Data in transit to, from, and between Virtual Machines (VM) that are running Windows is encrypted in a number of ways, depending on the nature of the connection such as when connecting to a VM in an RDP or SSH session.
+**Guidance**: Data in transit to, from, and between Virtual Machines (VM) that are running Windows is encrypted in different ways, depending on the nature of the connection such as when connecting to a VM in an RDP or SSH session.
 
 Microsoft uses the Transport Layer Security (TLS) protocol to protect data when it's traveling between the cloud services and customers.
 
@@ -152,7 +156,7 @@ Microsoft uses the Transport Layer Security (TLS) protocol to protect data when 
 
 ### 4.5: Use an active discovery tool to identify sensitive data
 
-**Guidance**: Use a third-party active discovery tool to identify all sensitive information stored, processed, or transmitted by the organization's technology systems, including those located onsite or at a remote service provider and update the organization's sensitive information inventory.
+**Guidance**: Use a non-Microsoft active discovery tool to identify all sensitive information stored, processed, or transmitted by the organization's technology systems, including those located onsite or at a remote service provider and update the organization's sensitive information inventory.
 
 **Responsibility**: Customer
 
@@ -160,25 +164,25 @@ Microsoft uses the Transport Layer Security (TLS) protocol to protect data when 
 
 ### 5.1: Run automated vulnerability scanning tools
 
-**Guidance**: Follow recommendations from Microsoft Defender for Cloud on performing vulnerability assessments on your Azure Virtual Machines. Use Azure Security recommended or third-party solution for performing vulnerability assessments for your virtual machines.
+**Guidance**: Follow recommendations from Microsoft Defender for Cloud on performing vulnerability assessments on your Azure Virtual Machines. Use Azure Security (recommended) or non-Microsoft solution for performing vulnerability assessments for your virtual machines.
 
 **Responsibility**: Customer
 
 ### 5.2: Deploy automated operating system patch management solution
 
-**Guidance**: Use the Azure Update Management solution to manage updates and patches for your virtual machines. Update Management relies on the locally configured update repository to patch supported Windows systems. Tools like System Center Updates Publisher (Updates Publisher) allow you to publish custom updates into Windows Server Update Services (WSUS). This scenario allows Update Management to patch machines that use Configuration Manager as their update repository with third-party software.
+**Guidance**: Use the Azure Update Management solution to manage updates and patches for your virtual machines. Update Management relies on the locally configured update repository to patch supported Windows systems. Tools like System Center Updates Publisher (Updates Publisher) allow you to publish custom updates into Windows Server Update Services (WSUS). This scenario allows Update Management to patch machines that use Configuration Manager as their update repository with non-Microsoft software.
 
 **Responsibility**: Customer
 
-### 5.3: Deploy automated patch management solution for third-party software titles
+### 5.3: Deploy automated patch management solution for non-Microsoft software titles
 
-**Guidance**: You may use a third-party patch management solution. You can use the Azure Update Management solution to manage updates and patches for your virtual machines. Update Management relies on the locally configured update repository to patch supported Windows systems. Tools like System Center Updates Publisher (Updates Publisher) allow you to publish custom updates into Windows Server Update Services (WSUS). This scenario allows Update Management to patch machines that use Configuration Manager as their update repository with third-party software.
+**Guidance**: You can use a non-Microsoft patch management solution. You can use the Azure Update Management solution to manage updates and patches for your virtual machines. Update Management relies on the locally configured update repository to patch supported Windows systems. Tools like System Center Updates Publisher (Updates Publisher) allow you to publish custom updates into Windows Server Update Services (WSUS). This scenario allows Update Management to patch machines that use Configuration Manager as their update repository with non-Microsoft software.
 
 **Responsibility**: Customer
 
 ### 5.4: Compare back-to-back vulnerability scans
 
-**Guidance**: Export scan results at consistent intervals and compare the results to verify that vulnerabilities have been remediated. When using vulnerability management recommendation suggested by Microsoft Defender for Cloud, customer may pivot into the selected solution's portal to view historical scan data.
+**Guidance**: Export scan results at consistent intervals and compare the results to verify that vulnerabilities have been remediated. When using vulnerability management recommendation suggested by Microsoft Defender for Cloud, customer can pivot into the selected solution's portal to view historical scan data.
 
 **Responsibility**: Customer
 
@@ -192,7 +196,7 @@ Microsoft uses the Transport Layer Security (TLS) protocol to protect data when 
 
 ### 6.1: Use automated asset discovery solution
 
-**Guidance**: Use Azure Resource Graph to query and discover all resources (including Virtual machines) within your subscriptions. Ensure you have appropriate (read) permissions in your tenant and are able to enumerate all Azure subscriptions as well as resources within your subscriptions.
+**Guidance**: Use Azure Resource Graph to query and discover all resources (including Virtual machines) within your subscriptions. Ensure you have appropriate (read) permissions in your tenant and are able to enumerate all Azure subscriptions and resources within your subscriptions.
 
 **Responsibility**: Customer
 
@@ -204,7 +208,7 @@ Microsoft uses the Transport Layer Security (TLS) protocol to protect data when 
 
 ### 6.3: Delete unauthorized Azure resources
 
-**Guidance**: Use tagging, management groups, and separate subscriptions, where appropriate, to organize and track virtual machines and related resources. Reconcile inventory on a regular basis and ensure unauthorized resources are deleted from the subscription in a timely manner.
+**Guidance**: Use tagging, management groups, and separate subscriptions, where appropriate, to organize and track virtual machines and related resources. Reconcile inventory regularly and ensure unauthorized resources are deleted from the subscription in a timely manner.
 
 **Responsibility**: Customer
 
@@ -241,7 +245,7 @@ In addition, use the Azure Resource Graph to query/discover resources within the
 
 ### 7.3: Maintain secure Azure resource configurations
 
-**Guidance**: Use Azure Resource Manager templates and Azure Policies to securely configure Azure resources associated with the Virtual machines. Azure Resource Manager templates are JSON-based files used to deploy Virtual machine along with Azure resources and custom template will need to be maintained. Microsoft performs the maintenance on the base templates. Use Azure policy [deny] and [deploy if not exist] to enforce secure settings across your Azure resources.
+**Guidance**: Use Azure Resource Manager templates and Azure Policies to securely configure Azure resources associated with the Virtual machines. Azure Resource Manager templates are JSON-based files used to deploy Virtual machines along with Azure resources. Custom templates need to be maintained. Microsoft performs the maintenance on the base templates. Use Azure policy [deny] and [deploy if not exist] to enforce secure settings across your Azure resources.
 
 **Responsibility**: Customer
 
@@ -249,8 +253,8 @@ In addition, use the Azure Resource Graph to query/discover resources within the
 
 **Guidance**: There are several options for maintaining a secure configuration for Azure Virtual Machines(VM) for deployment:
 
-- Azure Resource Manager templates: These are JSON-based files used to deploy a VM from the Azure portal, and custom template will need to be maintained. Microsoft performs the maintenance on the base templates.
-- Custom Virtual hard disk (VHD): In some circumstances it may be required to have custom VHD files used such as when dealing with complex environments that cannot be managed through other means.
+- Azure Resource Manager templates: These are JSON-based files used to deploy a VM from the Azure portal. Custom templates need to be maintained. Microsoft performs the maintenance on the base templates.
+- Custom Virtual hard disk (VHD): In some circumstances it can be required to have custom VHD files used such as when dealing with complex environments that can't be managed through other means.
 - Azure Automation State Configuration: Once the base OS is deployed, this can be used for more granular control of the settings, and enforced through the automation framework.
 
 For most scenarios, the Microsoft base VM templates combined with the Azure Automation Desired State Configuration can assist in meeting and maintaining the security requirements.
@@ -259,15 +263,21 @@ For most scenarios, the Microsoft base VM templates combined with the Azure Auto
 
 ### 7.5: Securely store configuration of Azure resources
 
-**Guidance**: Use Azure Repos to securely store and manage your code like custom Azure policies, Azure Resource Manager templates, Desired State Configuration scripts etc. To access the resources you manage in Azure DevOps, such as your code, builds, and work tracking, you must have permissions for those specific resources. Most permissions are granted through built-in security groups as described in Permissions and access. You can grant or deny permissions to specific users, built-in security groups, or groups defined in Azure Active Directory (Azure AD) if integrated with Azure DevOps, or Active Directory if integrated with TFS.
+**Guidance**: Use Azure Repos to securely store and manage your code like custom Azure policies, Azure Resource Manager templates, Desired State Configuration scripts etc. To access the resources you manage in Azure DevOps, such as your code, builds, and work tracking, you must have permissions for those specific resources. Most permissions are granted through built-in security groups as described in Permissions and access. You can grant or deny permissions to specific users, built-in security groups, or groups defined in Microsoft Entra ID if integrated with Azure DevOps, or Active Directory if integrated with TFS.
 
 **Responsibility**: Customer
 
 ## Malware Defense
 
-### 8.1: Use centrally-managed anti-malware software
+### 8.1: Use centrally managed anti-malware software
 
 **Guidance**: Use Microsoft Antimalware for Azure Windows Virtual machines to continuously monitor and defend your resources.
+
+**Responsibility**: Customer
+
+### 8.2: Pre-scan files to be uploaded to non-compute Azure resources
+
+**Guidance**: Pre-scan any files being uploaded to non-compute Azure resources, such as App Service, Data Lake Storage, Blob Storage, etc. Use Azure Defender for Storage to detect malware uploaded to storage accounts.
 
 **Responsibility**: Customer
 

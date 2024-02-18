@@ -7,11 +7,10 @@ metadata:
   ms.date: 05/01/2023
   author: chasecrum
   ms.author: chasecrum
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-arm-template
     - devx-track-azurecli
-  ms.prod: learning-azure
 durationInMinutes: 11
 content: |
   [!include[](includes/6-other-azure-tools-for-linux-deployments.md)]
@@ -23,9 +22,9 @@ quiz:
     - content: "Azure CLI is the only tool that can be used to create and configure Linux VMs."
       isCorrect: false
       explanation: "Incorrect: Azure CLI can be used to configure Linux, Windows, and OpenBSD VMs."
-    - content: "Azure CLI-based scripts and batch files can run in a wide variety of shells, including Bash, Cmd, and Windows PowerShell."
+    - content: "Azure CLI-based scripts and batch files can run in a wide variety of shells, including Bash, Cmd.exe, and Windows PowerShell."
       isCorrect: true
-      explanation: "Correct: Azure CLI-based scripts can run in Bash, Cmd, Windows PowerShell, and many other Linux-based shell environments."
+      explanation: "Correct: Azure CLI-based scripts can run in Bash, Cmd.exe, Windows PowerShell, and many other Linux-based shell environments."
     - content: "Azure CLI is designed primarily for people with Windows experience."
       isCorrect: false
       explanation: "Incorrect: Azure CLI is designed primarily for people with Linux experience, although it can also be used in both Windows and Linux environments."

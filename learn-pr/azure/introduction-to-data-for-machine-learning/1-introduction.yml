@@ -5,12 +5,10 @@ metadata:
   title: Introduction
   description: Introduction to data for machine learning module.
   ms.date: 02/23/2023
-  ms.service: machine-learning
   author: fbsolo-ms1
   ms.author: franksolomon
   ms.reviewer: franksolomon
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)] 

@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/17/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Connect to Azure Cosmos DB for NoSQL with the SDK
 prerequisites: |
   Before starting this learning path, you should have experience of building cloud applications with Microsoft C# or a similar programming language.

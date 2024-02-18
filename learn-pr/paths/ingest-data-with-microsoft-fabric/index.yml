@@ -6,8 +6,7 @@ metadata:
   ms.date: 09/07/2023
   author: wwlpublish
   ms.author: anrudduc
-  ms.topic: interactive-tutorial
-  ms.service: fabric
+  ms.topic: learning-path
 title: Ingest data with Microsoft Fabric
 prerequisites: |
   Familiarity with Microsoft Fabric:

@@ -1,4 +1,4 @@
-With PIM, you can view activity, activations, and audit history for Azure privileged access group members and owners within your Azure AD organization.
+With PIM, you can view activity, activations, and audit history for privileged access group members and owners within your Microsoft Entra organization.
 
 If your organization has outsourced management functions to a service provider who uses [Azure delegated resource management](/azure/lighthouse/concepts/azure-delegated-resource-management), role assignments authorized by that service provider won't be shown here.
 
@@ -8,8 +8,8 @@ Follow these steps to view the audit history for privileged access groups.
 
 ## **Resource audit** gives you a view of all activity associated with your privileged access groups.
 
-1.  Open **Azure AD Privileged Identity Management**.
-2.  Select **Privileged access groups (Preview)**.
+1.  Open **Microsoft Entra Privileged Identity Management**.
+2.  Select **Groups**.
 3.  Select the privileged access group you want to view audit history for.
 4.  Under **Activity**, select **Resource audit**.
 5.  Filter the history using a predefined date or custom range.
@@ -21,8 +21,8 @@ Follow these steps to view the audit history for privileged access groups.
 
 **My audit** enables you to view your personal role activity for a privileged access group.
 
-1.  Open **Azure AD Privileged Identity Management**.
-2.  Select **Privileged access groups (Preview)**.
+1.  Open **Microsoft Entra Privileged Identity Management**.
+2.  Select **Groups**.
 3.  Select the privileged access group you want to view audit history for.
 4.  Under **Activity**, select **My audit**.
 5.  Filter the history using a predefined date or custom range.

@@ -3,10 +3,10 @@ uid: learn.wwl.explore-event-streams-microsoft-fabric
 metadata:
   title: Use real time eventstreams in Microsoft Fabric
   description: "This Microsoft training module explores the use of eventstreams in Microsoft Fabric. It covers the basics of eventstreams, how to create and use them, and how to handle errors. The module also includes a hands-on lab where learners can practice creating and using eventstreams in a sample application."
-  ms.date: 09/26/2023
+  ms.date: 11/01/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: fabric
 title: Use real time eventstreams in Microsoft Fabric
 summary: This module is an introduction to the Microsoft Fabric Eventstream within Real-Time Analytics (RTA)

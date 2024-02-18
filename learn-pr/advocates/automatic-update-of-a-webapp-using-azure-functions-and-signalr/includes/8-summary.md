@@ -4,11 +4,11 @@ First, you learned about the limitations of the existing solution, which looked 
 
 The solution uses Azure Cosmos DB and Azure Functions in combination with SignalR to detect and broadcast changes in the database.
 
-With this new application architecture your application enjoys the following benefits:
+With this new application architecture, your application enjoys the following benefits:
 
-- An efficient web application architecture, where communication between the client and the server happens only when data is changed
-- Simple data change detection using Azure Functions to listen to the Azure Cosmos DB change feed via the Azure Cosmos DB trigger
-- Server-push architecture with a wide range of support for new and old browsers via SignalR
+- An efficient web application architecture, where communication between the client and the server happens only when data is changed.
+- Simple data change detection using Azure Functions to listen to the change feed from the Azure Cosmos DB via the Azure Cosmos DB trigger.
+- Server-push architecture with a wide range of support for new and old browsers via SignalR.
 - Improved response time and reduced to a little over a half second to automatically update the UI.
 
 To verify your implementation, you can reference the *end* folder or you can [view the code on GitHub](https://github.com/MicrosoftDocs/mslearn-advocates.azure-functions-and-signalr/tree/master/end).
@@ -18,7 +18,7 @@ To verify your implementation, you can reference the *end* folder or you can [vi
 
 ## Restore Visual Studio Code settings
 
-The following steps return the settings of your Visual Studio Code instance back to how it was before you completed the tutorial. If you don't restore the previous settings, you won't be able to connect to your Azure subscriptions from Visual Studio Code.
+The following steps return the settings of your Visual Studio Code instance back to how it was before you completed the tutorial. If you don't restore the previous settings, you aren't able to connect to your Azure subscriptions from Visual Studio Code.
 
 ### Remove tenant from configuration
 
@@ -32,6 +32,6 @@ The following steps return the settings of your Visual Studio Code instance back
 
 Once the tenant is removed from the Azure extension settings, open the command palette and select **Azure: Sign Out** and then **Azure: Sign In**.
 
-## Additional Resources
+## Learn more
 
 - Learn more about [Azure Cosmos DB input bindings for Azure Functions](/azure/azure-functions/functions-bindings-cosmosdb-v2)

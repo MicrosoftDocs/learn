@@ -8,8 +8,7 @@ metadata:
   author: steved0x
   ms.author: sdanie
   ms.custom: devdivchpfy22
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

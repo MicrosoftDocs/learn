@@ -7,8 +7,8 @@ metadata:
   author: codemillmatt
   ms.author: masoucou
   ms.manager: markl
-  ms.topic: interactive-tutorial
-  ms.prod: .net
+  ms.topic: module
+  ms.service: dotnet
   ms.custom:
   - team=cloud_advocates
   ms.contributors:

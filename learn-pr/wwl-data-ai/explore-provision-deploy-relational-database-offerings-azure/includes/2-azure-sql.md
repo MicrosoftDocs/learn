@@ -10,7 +10,7 @@ Azure SQL is a collective term for a family of Microsoft SQL Server based databa
 
 ## Compare Azure SQL services
 
-| | SQL Server on Azure VMs | Azure SQL Managed Instance | Azure SQL Database |
+| -- | SQL Server on Azure VMs | Azure SQL Managed Instance | Azure SQL Database |
 | - | - | - | - |
 | |![SQL Server Azure VM logo](../media/azure-sql-vm.png) | ![Azure SQL Managed Instance logo](../media/azure-sql-managed-instance.png) | ![Azure SQL Database logo](../media/azure-sql-database.png) |
 | Type of cloud service | IaaS | PaaS | PaaS |
@@ -49,7 +49,7 @@ It's not always easy for businesses to switch their DBMS to a fully managed serv
 
 Azure SQL Managed instance effectively runs a fully controllable instance of SQL Server in the cloud. You can install multiple databases on the same instance. You have complete control over this instance, much as you would for an on-premises server. SQL Managed Instance automates backups, software patching, database monitoring, and other general tasks, but you have full control over security and resource allocation for your databases. You can find detailed information at [What is Azure SQL Managed Instance?](/azure/sql-database/sql-database-managed-instance).
 
-Managed instances depend on other Azure services such as Azure Storage for backups, Azure Event Hubs for telemetry, Azure Active Directory for authentication, Azure Key Vault for Transparent Data Encryption (TDE) and a couple of Azure platform services that provide security and supportability features. The managed instances make connections to these services.
+Managed instances depend on other Azure services such as Azure Storage for backups, Azure Event Hubs for telemetry, Microsoft Entra ID for authentication, Azure Key Vault for Transparent Data Encryption (TDE) and a couple of Azure platform services that provide security and supportability features. The managed instances make connections to these services.
 
 All communications are encrypted and signed using certificates. To check the trustworthiness of communicating parties, managed instances constantly verify these certificates through certificate revocation lists. If the certificates are revoked, the managed instance closes the connections to protect the data.
 
@@ -65,7 +65,7 @@ Azure SQL Managed Instance enables a system administrator to spend less time on 
 
 Azure SQL Managed Instance has near 100% compatibility with SQL Server Enterprise Edition, running on-premises.
 
-Azure SQL Managed Instance supports SQL Server Database engine logins and logins integrated with Azure Active Directory (AD). SQL Server Database engine logins include a username and a password. You must enter your credentials each time you connect to the server. Azure AD logins use the credentials associated with your current computer sign-in, and you don't need to provide them each time you connect to the server.
+Azure SQL Managed Instance supports SQL Server Database engine logins and logins integrated with Microsoft Entra ID. SQL Server Database engine logins include a username and a password. You must enter your credentials each time you connect to the server. Microsoft Entra logins use the credentials associated with your current computer sign-in, and you don't need to provide them each time you connect to the server.
 
 ## Azure SQL Database
 

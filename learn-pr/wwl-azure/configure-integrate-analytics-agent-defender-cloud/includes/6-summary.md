@@ -6,4 +6,4 @@ After completing this module, you should be able to:
  -  Configure a Log Analytics agent in the Defender for Cloud environment.
  -  Create and manage a workspace in Defender for Cloud.
  -  Integrate the Log Analytics agent with the workspace for streamlined data analysis and threat detection.
- -  Troubleshoot common issues related to configuration and integration of Log Analytics in Defender for Cloud. 
+ -  Troubleshoot common issues related to configuration and integration of Log Analytics in Defender for Cloud.

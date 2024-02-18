@@ -61,4 +61,4 @@ To practice converting to a Managed Identity, complete the following steps:
 
 For more information about managed identities and service connections, see:
 
-- [Use Azure Active Directory service principals & managed identities](https://learn.microsoft.com/azure/devops/integrate/get-started/authentication/service-principal-managed-identity)
+- [Use Microsoft Entra service principals & managed identities](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity)

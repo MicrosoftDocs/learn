@@ -4,10 +4,9 @@ metadata:
   title: Use libraries
   description: Use libraries.
   ms.date: 02/11/2020
-  author: jlooper
+  author: GitHubber17
   ms.author: chnoring 
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom:
     - team=nextgen
     - devx-track-extended-java

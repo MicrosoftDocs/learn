@@ -7,8 +7,7 @@ metadata:
   ms.date: 10/23/2019
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Architect network infrastructure in Azure
 summary: Learn how to architect a secure, flexible, network infrastructure in Azure and connect on-premises networks to your Azure resources.
 prerequisites: |

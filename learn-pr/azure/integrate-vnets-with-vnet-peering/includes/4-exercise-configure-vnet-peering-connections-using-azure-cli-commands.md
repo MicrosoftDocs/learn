@@ -94,7 +94,7 @@ Now that you've created the peering connections between the virtual networks, ma
 
 Your peering connections between the virtual networks should now look like this:
 
-![Diagram of the resulting virtual network peering connections.](../media/4-vnet-peering-configure-connections-result.svg)
+:::image type="content" source="../media/4-vnet-peering-configure-connections-result.svg" alt-text="Diagram of the resulting virtual network peering connections.":::
 
 ## Check effective routes
 

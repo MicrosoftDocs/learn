@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-configuration-aspnet-core.4-implement-app-configuration
+metadata:
+  title: Exercise - Implement the Azure App Configuration service
+  description: Implement an Azure App Configuration store in a microservices app.
+  author: codemillmatt
+  ms.author: masoucou
+  ms.date: 11/06/2023
+  ms.topic: unit
+title: Exercise - Implement configuration settings in Azure App Configuration instance
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-implement-app-configuration.md)]

@@ -16,7 +16,7 @@ int GetEnemyDamageOutput(string enemyId);
 void UpdateHeroHP(int damage);
 ```
 
-Looking at the method signatures, you can imagine how the input and output of each method can be used across the program. The methods also allow make the game code more robust since each one has return values that can be used for different types of scenarios.
+Looking at the method signatures, you can imagine how the input and output of each method can be used across the program. The methods also make the game code more robust since each one has return values that can be used for different types of scenarios.
 
 Capturing return values from methods is incredibly useful for all sorts of applications. In this module, you'll learn more about method execution and working with method return types.
 
@@ -34,3 +34,4 @@ In this module, you will:
 - Experience using `switch` statements, if-else statements, and for-loops
 - Experience using the `Random` class to generate a random number.
 - Basic understanding of C# methods
+

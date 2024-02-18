@@ -1,4 +1,4 @@
-Password protection is a feature of Microsoft Entra that reduces the risk of users setting weak passwords.  Microsoft Entra password protection detects and blocks known weak passwords and their variants, and can also block other weak terms that are specific to your organization.
+Password protection is a feature of Microsoft Entra ID that reduces the risk of users setting weak passwords.  Microsoft Entra password protection detects and blocks known weak passwords and their variants, and can also block other weak terms that are specific to your organization.
 
 With Microsoft Entra password protection, default global banned password lists are automatically applied to all users in a Microsoft Entra tenant. To support your own business and security needs, you can define entries in a custom banned password list. When users change or reset their passwords, these lists are checked to enforce the use of strong passwords.
 
@@ -10,7 +10,7 @@ A global banned password list with known weak passwords is automatically updated
 
 Variations are created using an algorithm that transposes text case and letters to numbers such as "1" to an "l". Variations on Password1 might include Passw0rd1, Pass0rd1, and others. These passwords are then checked and added to the global banned password list. The global banned password list is automatically applied to all users in a Microsoft Entra tenant and can't be disabled.
 
-If a Microsoft Entra ID user tries to set their password to one of these weak passwords, they receive a notification to choose a more secure one. The global banned list is sourced from real-world, actual password spray attacks. This approach improves the overall security and effectiveness, and the password validation algorithm also uses smart fuzzy-matching techniques used to find strings that approximately match a pattern. Microsoft Entra password protection efficiently detects and blocks millions of the most common weak passwords from being used in your enterprise.
+If a Microsoft Entra user tries to set their password to one of these weak passwords, they receive a notification to choose a more secure one. The global banned list is sourced from real-world, actual password spray attacks. This approach improves the overall security and effectiveness, and the password validation algorithm also uses smart fuzzy-matching techniques used to find strings that approximately match a pattern. Microsoft Entra password protection efficiently detects and blocks millions of the most common weak passwords from being used in your enterprise.
 
 ### Custom banned password lists
 
@@ -24,7 +24,7 @@ Admins can also create custom banned password lists to support specific business
 
 The custom banned password list is combined with the global banned password list to block variations of all the passwords.
 
-Banned password lists are a feature of Microsoft Entra ID premium licensing.
+Banned password lists are a feature of Microsoft Entra ID P1 or P2 licensing.
 
 :::image type="content" source="../media/custom-banned-passwords-config-inline.png" lightbox="../media/custom-banned-passwords-config-expanded.png" alt-text="A screen capture showing a configuration screen for setting up a custom banned password list.":::
 

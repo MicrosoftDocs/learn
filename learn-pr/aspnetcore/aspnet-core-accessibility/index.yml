@@ -7,8 +7,8 @@ metadata:
   author: jongalloway
   ms.author: jogallow
   ms.manager: markl
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.topic: module
+  ms.service: aspnet-core
 title: Create accessible web apps by using ASP.NET Core
 summary: Diagnose and fix common web accessibility issues in an ASP.NET Core application.
 abstract: |

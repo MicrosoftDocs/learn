@@ -1,51 +1,55 @@
 > [!IMPORTANT]
-> This module creates Azure resources.  If you don't plan to use this module again or if you don't complete the module, be sure to remove the created resources.  Instructions for removing all resources are included at the end of the module.
+> This module creates Azure resources. If you don't plan to use this module again or if you don't complete the module, be sure to remove the created resources. Instructions for removing all resources are included at the end of the module.
 
-This module assumes you have Azure CLI installed and you can run it from the command prompt or Windows PowerShell, which is our recommendation.  The module also assumes you have an Azure account and at a minimum, the Contributor and User Access Administrator roles on the Azure subscription, or Owner.
+This module assumes that you have Azure CLI installed. You can run commands from a Command Prompt window or Windows PowerShell. We recommend PowerShell.
+
+The module also assumes that you have an Azure account. You need the Contributor and User Access Administrator roles on the Azure subscription, or Owner.
 
 > [!IMPORTANT]
-> If you belong to an organization, you may need to coordinate with your IT Team to create your AAD user account and grant the appropriate privileges.  Also, Guest accounts associated with your Azure subscription do not meet the minimum requirements.  You must have a member account.
+> If you belong to an organization, you might need to coordinate with your IT Team to create your Azure Active Directory (Azure AD) user account and grant the appropriate privileges. Also, guest accounts associated with your Azure subscription don't meet the minimum requirements. You must have a member account.
 
-The ARM Template logic has been integrated into a Connection Prefab that drives a data simulator.  
+The ARM template logic has been integrated into a connection prefab that drives a data simulator.
 
-## Download the Visual Studio solution and the ARM template
+## Download the solution and ARM template
 
-[Download the repository from GitHub](https://aka.ms/mr-adt-mslearn) and unzip the repository  
+In the previous unit, you cloned or downloaded [the repository from GitHub](https://aka.ms/mr-adt-mslearn).
 
-## Log in to Azure using Azure CLI
+## Sign in to Azure using Azure CLI
 
-1. Locate the **azuredeploy.bicep** script that has been created for you.  Typically, this is in the root of the repository folder that you just unzipped or pulled.
-2. Start **Windows PowerShell** from the start menu.  All Azure CLI commands will be executed in your PowerShell console.
-3. Change the current path to the location of the **azuredeploy.bicep** script identified in step 1.
+1. Locate the *azuredeploy.bicep* script that has been created for you. Typically, this file is in the root of the repository folder.
+1. From the **Start** menu, open PowerShell. All Azure CLI commands run in your PowerShell console.
+1. Change the current path to the location of the *azuredeploy.bicep* script you found in step 1.
 
-    ```console
-    cd <path for azuredeploy.bicep>
-    ```
+   ```console
+   cd <path for azuredeploy.bicep>
+   ```
 
-4. Log in to Azure by typing **az login** in the shell window and pressing **Enter**.  This will spawn a browser window and prompt for authentication. 
-    - If the CLI fails to spawn the appropriate browser window, use the device code flow in your PowerShell window **az login --use-device-code**.  You'll be returned a unique code.  [Open the device login page](https://aka.ms/devicelogin) in your browser and enter the code displayed in your terminal, into the website.
+1. Sign in to Azure by using the [az login](/cli/azure/reference-index#az-login) command. This command opens a browser window and prompts for authentication.
 
-    :::image type="content" source="../media/az-login-results.png" alt-text="Screenshot of the Shell using the Windows PowerShell environment to execute the az login command.":::
+   > [!NOTE]
+   > If the command fails to open the appropriate browser window, use this command: `az login --use-device-code`. This device code flow returns a unique code. [Open the device sign-in page](https://aka.ms/devicelogin) in your browser and enter the code displayed in your terminal.
+
+   :::image type="content" source="../media/az-login-results.png" alt-text="Screenshot of the output of the Windows PowerShell command running the az login command.":::
 
 ## Set variables in PowerShell
 
-1. Set the **projectname** variable, keeping it to a maximum of 14 characters, all lowercase, and no special characters (dashes permitted). This is the base unique name for your Azure resources that will be created in this exercise.  Additional random characters will be appended to the projectname.  Make sure your values are enclosed in double quotes.
+1. Set the `$projectname` variable. This value is the base unique name for the Azure resources that you create in this exercise. Extra random characters are appended to the project name. Make sure that your values are enclosed in double quotes.
 
-    ```console
-    $projectname="myproj"
-    ```
+   > [!NOTE]
+   > Variables in PowerShell start with the `$` symbol.
 
-    > [!IMPORTANT]
-    > Your project name must be kept to a maximum of 14 characters, and may contain lowercase letters and numbers only.
-    
-    > [!NOTE]
-    > Variables in PowerShell are prefixed with the **$** symbol.
+   ```console
+   $projectname="myproj"
+   ```
 
-2. Set the App Registration name, keeping it to a maximum of 14 characters.  This is the name of the application registration for your mixed reality app
+   > [!IMPORTANT]
+   > Your project name is a maximum of 14 characters. It can contain only lowercase letters, numbers, and the hyphen character.
 
-    ```console
-    $appreg="myappreg"
-    ```
+1. Set the App Registration name, which can be a maximum of 14 characters. This value is the name of the application registration for your mixed reality app.
+
+   ```console
+   $appreg="myappreg"
+   ```
 
 ## Create the App Registration
 
@@ -55,89 +59,102 @@ Run the following command to create a service principal and configure its access
 az ad sp create-for-rbac --name ${appreg} --role Contributor --scopes /subscriptions/<SUBSCRIPTION-ID> > AppCredentials.txt
 ```
 
+The output from this command is redirected from standard output to *AppCredentials.txt* text file. The command creates the file in the same directory where your run the command. Any errors that might occur are displayed in your PowerShell console. Open the file to retrieve the credentials to configure the telemetry simulator application later.
+
 > [!NOTE]
-> The output from this command will be saved by redirecting standard output to **AppCredentials.txt** text file in the same directory in which you are running the az scripts.  Any errors, should they occur will be displayed in your PowerShell console.  You will need to open this file to retrieve these credentials to configure the telemetry simulator application later.  Be wary of leaving this file on your filesystem long term, as it will contain credentials.  Consider deleting the file after completing this learning path.
+> Be careful where you keep this file, because it contains credentials. Consider deleting the file after completing this learning path.
 
-:::image type="content" source="../media/az-app-reg.png" alt-text="Screenshot of the command-line interface using the PowerShell environment to set app product and registration names and create the app registration.":::
+:::image type="content" source="../media/az-app-reg.png" alt-text="Screenshot of setting the app product and registration names and creating the app registration in PowerShell.":::
 
-## Obtain the ObjectID of the App Registration and the UserID
+## Obtain the object ID of the App Registration and the user ID
 
-1. Create and set a variable for the ObjectID in PowerShell by inputting the below commands and press **Enter**.
+1. Create and set a variable for the `ObjectID` in PowerShell by using the following command.
 
-    ```console
-    $objectid=$(az ad sp list --display-name ${appreg} --query [0].objectId --output tsv)
-    ```
+   ```console
+   $objectid=$(az ad sp list --display-name ${appreg} --query [0].objectId --output tsv)
+   ```
 
-2. Validate that the variable contains a GUID by using the **echo** command and then press **Enter**.  If not, examine your previous steps
+2. Validate that the variable contains a GUID by using the `echo` command. If not, examine your previous steps.
 
-    ```console
-    echo $objectid
-    ```
+   ```console
+   echo $objectid
+   ```
 
-3. Create and set a variable for the UserID as below, then press **Enter**. 
+3. Create and set a variable for the user ID.
 
-    ```console
-    $userid=$(az ad signed-in-user show --query objectId -o tsv)
-    ```
+   ```console
+   $userid=$(az ad signed-in-user show --query objectId -o tsv)
+   ```
 
-4. Validate that the variable contains a GUID by using the **echo** command and then press **Enter**.  If not, examine your previous steps
+4. Validate that the variable contains a GUID by using the `echo` command. If not, examine your previous steps.
 
-    ```console
-    echo $userid
-    ```
+   ```console
+   echo $userid
+   ```
 
-    :::image type="content" source="../media/object-and-user-id.png" alt-text="Screenshot of the command-line interface using the Windows PowerShell environment to get the apps object and user ID.":::
+   :::image type="content" source="../media/object-and-user-id.png" alt-text="Screenshot of using the Windows PowerShell environment to get the apps object and user ID.":::
 
-## Create the Azure Resource Group
+## Create the Azure resource group
 
-Create the Resource Group by using the **az group** command in PowerShell, as listed below and press **Enter**.  Pay particular attention to the location, as it must be **eastus**, as this specified one of the valid regions for **Microsoft.SignalRService/SignalR** and **Microsoft.DigitalTwins/digitalTwinsInstances** used later.
+Create the resource group by using the [az group create](/cli/azure/group#az-group-create) command in PowerShell:
 
 ```console
 az group create --name ${projectname}-rg --location eastus
 ```
- 
-## Deploy the ARM template to the newly created Azure Resource Group
 
-Deploy the supplied.bicep** file to your Resource group and redirect the output to a text file called **ARM_deployment_out.txt**.  The file is for reference only and is not required for the rest of this module.  Note that this process can take 10-15 minutes to complete
+Pay particular attention to the location. It must be `eastus`. This region is one of the valid regions for *Microsoft.SignalRService/SignalR* and *Microsoft.DigitalTwins/digitalTwinsInstances*.
+
+## Deploy the ARM template to the newly created resource group
+
+Deploy the supplied *bicep* file to your resource group and redirect the output to a text file called *ARM_deployment_out.txt*. This process can take 10-15 minutes to complete.
 
 ```console
-az deployment group create -f azuredeploy.bicep -g ${projectname}-rg --parameters projectName=${projectname} userId=${userid} appRegObjectId=${objectid} > ARM_deployment_out.txt
+az deployment group create --template-file azuredeploy.bicep --resource-group ${projectname}-rg `
+   --parameters projectName=${projectname} userId=${userid} appRegObjectId=${objectid} `
+   > ARM_deployment_out.txt
 ```
 
+The file is for reference only. It isn't required for the rest of this module.
+
 > [!NOTE]
-> You may receive several WARNING messages regarding valid URI renaming, that the output contains credentials, and type availability.  Please review these warnings, but no immediate action is required, and this will not affect this module.
+> You might receive several WARNING messages regarding valid URI renaming that the output contains credentials and type availability. Review these warnings, but no immediate action is required. The warnings don't affect this module.
 
 > [!TIP]
-> If you need to re-create the Azure resources for any reason, you will need to be sure that you delete all previous instances of resources and resource groups.
+> If you need to re-create the Azure resources for any reason, be sure that you delete all previous instances of resources and resource groups.
 
 ## Install the Azure CLI extension
 
-Install the **azure-iot** extension for the Azure CLI in PowerShell by using the **az extension** command in PowerShell, as listed below and press **Enter**.  This will download and install the extension, or if you've it installed already, you'll be alerted.
+Install the *azure-iot* extension for the Azure CLI in PowerShell by using the [az extension](/cli/azure/extension#az-extension-add) command in PowerShell.
 
 ```console
 az extension add --name azure-iot
 ```
 
+This command downloads and installs the extension. If it's already installed, the command alerts you.
+
 ## Query Azure deployment for key configuration parameters
 
-Query the Azure deployment by using the **az deployment** command in PowerShell, as listed below and press **Enter**.  The command below redirects the output to a file named **Azure_config_settings.txt** into the same directory in which you're running the command.
+Query the Azure deployment by using the [az deployment group show](/cli/azure/deployment/group#az-deployment-group-show) command in PowerShell. This command redirects the output to a file named *Azure_config_settings.txt* in the same directory in which you run the command.
 
 ```console
-az deployment group show -n azuredeploy -g ${projectname}-rg --query properties.outputs.importantInfo.value > Azure_config_settings.txt
+az deployment group show --name azuredeploy --resource-group ${projectname}-rg `
+   --query properties.outputs.importantInfo.value > Azure_config_settings.txt
 ```
 
 ## Query Azure deployment for resource group connection parameter
 
-1.	Use the **az iot** command to query the IoT hub for the Resource Group connection string parameter that you'll use later in the module.   Query the connection string for your Resource Group by using the **az iot** hub command in PowerShell, as listed below and press **Enter**.  The command below redirects the output and appends it (note the use of two ‘>’ symbols instead of one) to the file named **Azure_config_settings.txt** into the same directory in which you're running the command.  This file was created in the previous step.
+1. Use the [az iot hub connection-string show](/cli/azure/iot/hub/connection-string#az-iot-hub-connection-string-show) command to query the IoT hub for the resource group connection string parameter. You use this value later in the module. 
 
-    ```console
-    az iot hub connection-string show --resource-group ${projectname}-rg >> Azure_config_settings.txt
-    ```
+   ```console
+   az iot hub connection-string show --resource-group ${projectname}-rg >> Azure_config_settings.txt
+   ```
 
-2. Confirm the contents of the output text file in PowerShell, as listed below and press **Enter**. This will display several key configuration parameters for later use in this module.  
+   The command redirects the output and appends it to the file named *Azure_config_settings.txt* in the same directory in which you run the command. You created this file in the previous section. The two `>` symbols indicate that the command appends rather than overwrites.
 
-    ```console
-    get-content Azure_config_settings.txt
-    ```
+1. Confirm the contents of the output text file in PowerShell. This command displays several key configuration parameters for later use in this module.
 
-    :::image type="content" source="../media/query-azure-deployment-to-file.png" alt-text="Screenshot of the command-line interface running the get-content command prompt.":::
+   ```console
+   get-content Azure_config_settings.txt
+   ```
+
+   :::image type="content" source="../media/query-azure-deployment-to-file.png" alt-text="Screenshot of running the get-content command in PowerShell." lightbox="../media/query-azure-deployment-to-file.png":::

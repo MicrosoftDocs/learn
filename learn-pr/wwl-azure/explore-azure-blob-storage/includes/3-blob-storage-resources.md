@@ -1,4 +1,3 @@
-
 Blob storage offers three types of resources:
 
 * The **storage account**.

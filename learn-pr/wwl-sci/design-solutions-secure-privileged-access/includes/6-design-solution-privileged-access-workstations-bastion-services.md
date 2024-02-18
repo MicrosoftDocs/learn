@@ -6,7 +6,7 @@ The article provides an overview of security controls to provide a secure workst
 
 ![Diagram that shows a workflow to acquire and deploy a secure workstation.](../media/secure-workstation-deployment-flow.png)
 
-This solution relies on core security capabilities in the Windows 10 operating system, Microsoft Defender for Endpoint, Azure Active Directory, and Microsoft Intune.
+This solution relies on core security capabilities in the Windows 10 operating system, Microsoft Defender for Endpoint, Microsoft Entra ID, and Microsoft Intune.
 
 ### Who benefits from a secure workstation?
 
@@ -82,7 +82,7 @@ Azure Bastion is a service you deploy that lets you connect to a virtual machine
 Bastion provides secure RDP and SSH connectivity to all of the VMs in the virtual network in which it's provisioned. Using Azure Bastion protects your virtual machines from exposing RDP/SSH ports to the outside world, while still providing secure access using RDP/SSH.
 
 <!-- 
-[](https://learn.microsoft.com/azure/bastion/bastion-overview#key)
+[](/azure/bastion/bastion-overview#key)
 -->
 ### Key benefits
 

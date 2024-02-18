@@ -2,7 +2,7 @@ In this exercise, we'll use Azure portal and PowerShell to configure storage met
 
 ## Create a storage account
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account with which you activated the sandbox.
+1. Select [this link](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to sign in to the Azure portal by using the same account with which you activated the sandbox.
 
 2. In the Azure portal, select **Create a resource**.
 
@@ -41,23 +41,25 @@ Before you can add blobs to a storage account, you need to create a blob contain
 
 2. In the **Containers** panel, select **+ Container**.
 
-3. In the **Name** field, enter **monitor-blobs-container**, and then select **Create**.
+3. In the **Name** field, enter **monitor-blobs-container**, then select **Create**.
 
 ## Upload files to the blob container
 
 To upload a single file to the blob container:
 
-1. Open the **monitor-blobs-container** container, and then select **Upload**.
+1. Open the **monitor-blobs-container** container, then select **Upload**.
 
-2. On the **Upload blob** pane, select the folder icon.
+1. Select the **Browse for files** link.
 
-3. In the **Open** dialog box, select a small text file from your local file system, and select **Open**.
+1. In the **Open** dialog box, select a small text file from your local file system, and select **Open**.
 
-4. Wait for one minute, and then repeat these steps to upload a different file.
+1. Select **Upload**.
 
-5. Wait for another minute, and then repeat these steps to upload another file.
+1. Wait for one minute, and then repeat these steps to upload a different file.
 
-6. Wait for several more minutes before continuing with the next section.
+1. Wait for another minute, and then repeat these steps to upload another file.
+
+1. Wait for several more minutes before continuing with the next section.
 
 ## Visualize metrics in the Azure portal
 
@@ -67,15 +69,13 @@ Transaction metrics are emitted on every request to a storage account, so you sh
 
 2. In the menu pane, under **Monitoring**, select **Metrics**.
 
-3. In the top right, select **Last Hour** for the time range.
+3. In the top right, select **Last hour** for the time range.
 
-4. Under **Time** granularity, select **Automatic**, and then select **Apply**.
+4. Under **Time granularity**, select **Automatic**, then select **Apply**.
 
 5. On the bar that appears beneath the chart title, select **Line chart**, and then **Bar chart**.
 
-6. Under **Chart Title**, select **Add metric**.
-
-7. Change the **metric namespace** to **Blob**, select **ingress** for **metric**.
+6. Change the **metric namespace** to **Blob** and select **Ingress** for the **metric**.
 
    The following image shows a bar for every file upload operation in the last hour.
 
@@ -84,7 +84,7 @@ Transaction metrics are emitted on every request to a storage account, so you sh
 
 ## Split a metric
 
-Splitting a metric enables you to view additional dimensions in the data. For each file that you uploaded, the Azure portal made several API calls. Each request resulted in bytes transferred. You can split the ingress metric by the API dimension to see the breakdown of bytes transferred by API call. To split a metric, complete the following steps:
+Splitting a metric lets you view additional dimensions in the data. For each file that you uploaded, the Azure portal made several API calls. Each request resulted in bytes transferred. You can split the ingress metric by the API dimension to see the breakdown of bytes transferred by API call. To split a metric, complete the following steps:
 
 1. Select **Apply splitting**
 
@@ -97,7 +97,7 @@ Splitting a metric enables you to view additional dimensions in the data. For ea
 
 ## Add a filter
 
-Filtering enables you to look at the metrics with greater granularity. You can use a filter to look only at specific API calls used for your upload operation. In this case, we are interested only in bytes related to the file transfer. We want to exclude traffic related to other API calls used to complete the transfer.
+Filtering lets you look at the metrics with greater granularity. You can use a filter to look only at specific API calls used for your upload operation. In this case, we're interested only in bytes related to the file transfer. We want to exclude traffic related to other API calls used to complete the transfer.
 
 1. Select **Add filter**.
 

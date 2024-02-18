@@ -294,6 +294,11 @@ Most of the numeric data types have a `Parse()` method, which converts a string 
 
 The `Convert` class has many helper methods to convert a value from one type into another. In the following code example, you convert a couple of strings into values of type `int`.
 
+> [!NOTE]
+> The code samples in this exercise are designed based on en-US culture settings, and use a period (`.`) as the decimal separator. Building and running the code with a culture setting that uses a different decimal separators (such as a comma `,`) may give unexpected results or errors. To fix this issue, replace the period decimal separators in the code samples with your local decimal separator (such as `,`).
+> Alternatively, to run a program using the en-US culture setting, add the following code to the top of your program: `using System.Globalization;` and after any other `using` statements add `CultureInfo.CurrentCulture = new CultureInfo("en-US");`.
+
+
 1. Delete or use the line comment operator `//` to comment out the code from the previous exercise step, and add the following code:
 
     ```csharp

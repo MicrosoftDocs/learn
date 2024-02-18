@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.develop-asp-core-api
 metadata:
-  title: 'APL-2002: Develop an ASP.NET Core web app that consumes an API'
+  title: Develop an ASP.NET Core web app that consumes an API
   description: Learn how to gather information from API documentation and perform HTTP operations in an ASP.NET Core Razor Pages web app.
-  ms.date: 09/12/2023
+  ms.date: 10/20/2023
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
-title: 'APL-2002: Develop an ASP.NET Core web app that consumes an API'
+  ms.topic: learning-path
+  ms.service: aspnet-core
+title: Develop an ASP.NET Core web app that consumes an API
 prerequisites: |
   *   Experience writing C# at an intermediate level
   *   Ability to write HTML at an intermediate level
@@ -16,7 +16,6 @@ prerequisites: |
 summary: |
   Learn how to gather information from API documentation and perform HTTP operations in an ASP.NET Core Razor Pages web app.
 iconUrl: /training/achievements/generic-trophy.svg
-hidden: true
 levels:
 - intermediate
 roles:

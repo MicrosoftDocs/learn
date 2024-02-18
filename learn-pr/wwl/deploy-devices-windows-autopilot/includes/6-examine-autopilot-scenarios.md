@@ -38,7 +38,7 @@ To perform a self-deploying mode deployment using Windows Autopilot:
  -  Ensure that the profile has been assigned to the device before attempting to deploy that device.
  -  Self-deploying mode requires devices with TPM 2.0 and Windows 10 version 1903 or later.
 
-Some interaction may be required under certain circumstances. If only wireless connectivity is available, the wireless network must be selected. If multiple languages are pre-installed, a language must be selected.
+Some interaction might be required under certain circumstances. If only wireless connectivity is available, the wireless network must be selected. If multiple languages are pre-installed, a language must be selected.
 
 ### Autopilot for existing devices
 
@@ -84,7 +84,7 @@ Instead of the entire provisioning process occurring when the user powers on the
 
 The process for configuring a pre-provisioned deployment is as follows:
 
-1.  Enable the **White Glove OOBE** option in the desired Autopilot Profile.
+1.  Enable the **Windows Autopilot for pre-provisioned deployment** option in the desired Autopilot Profile.
 2.  Connect (ethernet required for pre-provision) and boot the device. At the first OOBE screen press, the Windows key five times.
 3.  In the additional dialog options, select **Windows Autopilot provisioning**.
 4.  Verify the device information. If changes are needed, complete them in Intune, and select refresh to re-download the updated information.

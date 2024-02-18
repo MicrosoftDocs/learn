@@ -121,7 +121,7 @@ To deploy your app to an Azure resource, such as a virtual machine or App Servic
 You can learn more about these security models at the end of this module, but in short:
 
 * A **service principal** is an identity with a limited role that can access Azure resources. Think of a service principal as a service account that can do automated tasks on your behalf.
-* **Managed identities** for Azure resources are a feature of Azure Active Directory (Azure AD) that simplifies the process of working with service principals. Because managed identities exist on the Azure AD tenant, Azure infrastructure can automatically authenticate the service and manage the account for you.
+* **Managed identities** for Azure resources are a feature of Microsoft Entra ID that simplifies the process of working with service principals. Because managed identities exist on the Microsoft Entra tenant, Azure infrastructure can automatically authenticate the service and manage the account for you.
 
 Managed identities simplify the process of working with service principals; but in this module, we'll be using service principal authentication because a service connection can automatically discover your Azure resources and assign the appropriate service principal roles for you.
 

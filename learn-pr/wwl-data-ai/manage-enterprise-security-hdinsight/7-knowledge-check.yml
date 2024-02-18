@@ -7,8 +7,7 @@ metadata:
   ms.date: 01/05/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -25,7 +24,7 @@ quiz:
     - content: "Inbound Access rules."
       isCorrect: false
       explanation: "Inbound rules filter traffic passing from the network to a service."
-  - content: "Contoso wants to retain Active directory passwords on-premises so that they are not synchronized to Azure active directory. In such circumstances, what service would you recommend designing for the authentication for users?"
+  - content: "Contoso wants to retain Active directory passwords on-premises so that they are not synchronized to Microsoft Entra ID. In such circumstances, what service would you recommend designing for the authentication for users?"
     choices:
     - content: "HDInsight Identity Broker."
       isCorrect: true
@@ -33,9 +32,9 @@ quiz:
     - content: "Apache Ranger."
       isCorrect: false
       explanation: "Apache Ranger enables you to monitor data security"
-    - content: "Azure Active directory domain services."
+    - content: "Microsoft Entra Domain Services."
       isCorrect: false
-      explanation: "Azure Active directory domain services will be the source of the passwords"
+      explanation: "Microsoft Entra Domain Services will be the source of the passwords"
   - content: "After a suspected unauthorized login, Contoso has asked you to provide them with SSH logs for one of their ESP clusters enabled with Azure Monitoring. Which log file would serve the purpose?"
     choices:
     - content: "log_ambari_audit_CL."

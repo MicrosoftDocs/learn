@@ -35,7 +35,7 @@ To use agent-level logging restrictions, follow these steps:
 4. Save the new variable.
 5. Run your pipeline to see the logs.
 
-The setting `System.Debug=False` turns off verbose logs for all runs. With the Enable system diagnostics checkbox, you can also configure verbose logs for a single run. For more information, see [Review logs to diagnose pipeline issues.](https://learn.microsoft.com/azure/devops/pipelines/troubleshooting/review-logs)
+The setting `System.Debug=False` turns off verbose logs for all runs. With the Enable system diagnostics checkbox, you can also configure verbose logs for a single run. For more information, see [Review logs to diagnose pipeline issues.](/azure/devops/pipelines/troubleshooting/review-logs)
 
 ## Use the issecret parameter
 
@@ -75,7 +75,7 @@ Create a new YAML pipeline with a task that logs a secret variable to the agent 
 
 For more information about secrets, see:
 
-- [Set secret variables.](https://learn.microsoft.com/azure/devops/pipelines/process/set-secret-variables)
-- [How to securely use variables and parameters in your pipeline.](https://learn.microsoft.com/azure/devops/pipelines/security/inputs/)
-- [Plan how to secure your YAML pipelines.](https://learn.microsoft.com/azure/devops/pipelines/security/approach/)
-- [Recommendations to securely structure projects in your pipeline.](https://learn.microsoft.com/azure/devops/pipelines/security/projects/)
+- [Set secret variables.](/azure/devops/pipelines/process/set-secret-variables)
+- [How to securely use variables and parameters in your pipeline.](/azure/devops/pipelines/security/inputs/)
+- [Plan how to secure your YAML pipelines.](/azure/devops/pipelines/security/approach/)
+- [Recommendations to securely structure projects in your pipeline.](/azure/devops/pipelines/security/projects/)

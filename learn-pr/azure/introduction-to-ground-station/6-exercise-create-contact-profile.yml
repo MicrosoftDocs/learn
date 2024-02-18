@@ -7,8 +7,8 @@ metadata:
   ms.date: 09/27/2022
   author: meaghanlewis
   ms.author: mosagie
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  manager: eliotgra
+  ms.topic: unit
 durationInMinutes: 11
 content: |
   [!include[](includes/6-exercise-create-contact-profile.md)]

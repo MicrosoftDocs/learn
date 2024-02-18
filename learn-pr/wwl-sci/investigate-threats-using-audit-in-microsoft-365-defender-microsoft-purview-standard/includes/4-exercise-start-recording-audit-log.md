@@ -6,7 +6,7 @@ You have already learned that Audit (Standard) is enabled by default for all org
 
 ### Prerequisites
 
-- You'll need a Microsoft 365 tenant with licensing that supports Microsoft 365 Defender and Microsoft Purview.
+- You'll need a Microsoft 365 tenant with licensing that supports Microsoft Defender XDR and Microsoft Purview.
 - To run the PowerShell cmdlets, you'll need to have Cloud Shell configured (either in the [Microsoft Azure portal](https://portal.azure.com/) or the [Microsoft 365 admin center portal](https://admin.microsoft.com/)).
 
 > [!NOTE]
@@ -17,7 +17,7 @@ You have already learned that Audit (Standard) is enabled by default for all org
 To start recording in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), select **Audit** under **Solutions** and then select (the horizontal blue bar) **Start recording user and admin activity**.
 
 > [!TIP]
-> You can perform the same steps in the [Microsoft 365 Defender portal](https://security.microsoft.com/), shown in the screenshot.
+> You can perform the same steps in the [Microsoft Defender portal](https://security.microsoft.com/), shown in the screenshot.
 
 :::image type="content" source="../media/screenshot-audit-enable.png" alt-text="Screenshot of the blue bar used to enable recording of activity.":::
 
@@ -39,7 +39,7 @@ To start recording using Exchange PowerShell, perform the following steps:
 
 After completing these steps, you'll have enabled Unified Audit Log recording:
 
-- Using the Microsoft Purview compliance portal (or the Microsoft 365 Defender portal).
+- Using the Microsoft Purview compliance portal (or the Microsoft Defender portal).
 - Using Exchange online PowerShell cmdlets in Cloud Shell
 
 ## Check your work

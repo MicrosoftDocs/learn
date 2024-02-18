@@ -1,4 +1,4 @@
-In your first week on your new job, you've looked through the existing resources in your company's Azure subscription. There are a number of resource groups that contain many different resources, but they aren't organized into a coherent structure. You've worked on Azure before, but aren't entirely sure how resource groups work and what their role is. You've guessed (correctly) that they can play a role in how you organize your resources. Let's look at what they are, and how they can be used.
+In your first week on your new job, you've looked through the existing resources in your company's Azure subscription. There are a number of resource groups that contain many different resources, but they aren't organized into a coherent structure. You've worked on Azure before, but aren't entirely sure how resource groups work and what their role is. You've guessed (correctly) that they can play a role in how you organize your resources. Let's look at what they are and how they can be used.
 
 [!INCLUDE [azure-free-trial-note](../../../includes/azure-free-trial-note.md)]
 
@@ -8,7 +8,7 @@ In your first week on your new job, you've looked through the existing resources
 
 ## What are resource groups?
 
-Resource groups are a fundamental element of the Azure platform. A resource group is a logical container for resources deployed on Azure. These resources are anything you create in an Azure subscription like virtual machines, Application Gateways, and Cosmos DB instances. All resources must be in a resource group, and a resource can only be a member of a single resource group. Many resources can be moved between resource groups, with some services having specific limitations or requirements to move. Resource groups can't be nested. Before you can provision any resource, you need a resource group in which to place it.
+Resource groups are a fundamental element of the Azure platform. A resource group is a logical container for resources deployed on Azure. These resources are anything you create in an Azure subscription, like virtual machines, Application Gateways, and Cosmos DB instances. All resources must be in a resource group, and a resource can only be a member of a single resource group. Many resources can be moved between resource groups, with some services having specific limitations or requirements to move. Resource groups can't be nested. Before you can provision any resource, you need a resource group in which to place it.
 
 ### Logical grouping
 
@@ -18,11 +18,11 @@ Resource groups exist to help manage and organize your Azure resources. By placi
 
 ### Lifecycle
 
-If you delete a resource group, all resources contained within the group are also deleted. Organizing resources by lifecycle can be useful in non-production environments, where you might try an experiment, but then dispose of it when done. Resource groups make it easy to remove a set of resources at once.
+If you delete a resource group, all resources contained within the group are also deleted. Organizing resources by lifecycle can be useful in non-production environments, where you might try an experiment and dispose of it when done. Resource groups make it easy to remove a set of resources at once.
 
 ### Authorization
 
-Resource groups are also a scope for applying role-based access control (RBAC) permissions. By applying RBAC permissions to a resource group, you can reduce administration and limit access to allow only what is needed.
+Resource groups are also a scope for applying role-based access control (RBAC) permissions. By applying RBAC permissions to a resource group, you can reduce administration and limit access to allow only what's needed.
 
 ## Create a resource group
 
@@ -32,14 +32,14 @@ You can create resource groups by using the following methods:
 - Azure PowerShell
 - Azure CLI
 - Templates
-- Azure SDKs (like .NET, Java)
+- Azure SDKs (like .NET or Java)
 
-Let's walk through the steps you'd take to create a resource group in the Azure portal. If you'd like to follow along in your own subscription, you may.
+Let's walk through the steps you'd take to create a resource group in the Azure portal. If you'd like to follow along in your own subscription, you can.
 
 1. Open a web browser and sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
     > [!IMPORTANT]
-    > Make sure to use your _own_ subscription. When you are in the free sandbox environment, it will not allow you to create resource groups. You can tell which subscription you are using by looking at the tenant name under your profile picture. You can switch tenants by selecting your profile picture and selecting **Switch Directory** from the options menu.
+    > Make sure to use your _own_ subscription. Free sandbox environments don't allow you to create resource groups. You can tell which subscription you're using by looking at the tenant name under your profile picture at the top-left of the screen. You can switch tenants by selecting your profile picture and selecting **Switch Directory** from the options menu.
 
 1. On the Azure portal or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
@@ -70,11 +70,11 @@ That's it, you've created a resource group that you can now use when you deploy 
 1. From the list, select your newly created resource group. The **Resource group** pane appears.
 
     > [!NOTE]
-    > You may also see a resource group called *NetworkWatcherRG*. You can ignore this resource group, as it's created automatically to enable Network Watcher in Azure virtual networks.
+    > You might also see a resource group called _NetworkWatcherRG_. You can ignore this resource group, as it's created automatically to enable Network Watcher in Azure virtual networks.
 
     :::image type="content" source="../media/2-resource-group-overview.png" alt-text="Screenshot of Azure portal showing new resource group pane with no resources in it yet.":::
 
-1. On the **Overview** page, you'll find the basic information about the resource group, such as its subscription, the subscription ID, any tags that are applied, and a history of the deployments to this resource group. We'll cover tags in the next unit. The deployments link takes you to a new panel with the history of all deployments to this resource group. Anytime you create a resource, it's a deployment, and you'll see the history for each resource group here.
+1. On the **Overview** page, you'll find the basic information about the resource group, such as its subscription, the subscription ID, any tags that are applied, and a history of the deployments to this resource group. We'll cover tags in the next unit. If you expand **Essentials** at the top of the page, you'll find the **Deployments** link, which takes you to a new panel with the history of all deployments to this resource group. Whenever you create a resource, it's a deployment, and you'll see the history for each resource group here.
 
     Using the toolbar across the top of the resource group page, you can add more resources, change the columns in the list, move the resource group to another subscription, or delete it entirely.
 
@@ -82,9 +82,9 @@ That's it, you've created a resource group that you can now use when you deploy 
 
     You don't have any resources in this resource group yet, so the list at the bottom is empty. Let's create a couple of resources in the resource group.
 
-1. In the top menu bar, select **Create**, or select **Create resources** at the bottom of the pane; either will work. The **Create a resource** pane appears.
+1. In the top menu bar, select **Create**, or select the **Create resources** button at the bottom of the pane; either will work. The **Create a resource** pane appears.
 
-1. In the *Search services and marketplace* search box, search for and select *Virtual network*. The **Virtual network** pane appears.
+1. In the _Search services and marketplace_ search box, search for and select **Virtual network**. The **Virtual network** pane appears.
 
 1. Select **Create**. The **Create virtual network** pane appears.
 
@@ -101,7 +101,7 @@ That's it, you've created a resource group that you can now use when you deploy 
 
 1. Select **Review + create**, and after validation passes, select **Create** to add the virtual network to your resource group.
 
-1. Repeat the virtual network creation steps again to create one more virtual network. Make sure to place the virtual network in the resource group that you created earlier, and name the virtual network *msftlearn-vnet2*.
+1. Repeat the virtual network creation steps again to create one more virtual network. Make sure to place the virtual network in the resource group that you created earlier, and name the virtual network _msftlearn-vnet2_.
 
 1. Go back to your resource group. The two virtual networks you created should appear on the **Overview** pane.
 
@@ -109,19 +109,19 @@ That's it, you've created a resource group that you can now use when you deploy 
 
 Your resource group contains two virtual network resources, because you specified the resource group when you created the resources. You could create more resources inside this resource group, or you could create more resource groups in the subscription and deploy resources into those resource groups.
 
-When creating resources, you usually have the option to create a new resource group as an alternative to using an existing resource group. This may simplify the process, but as you see in your new organization, doing so can lead to resources spread across resource groups with little thought as to how to organize them.
+When creating resources, you usually have the option to create a new resource group as an alternative to using an existing resource group. This might simplify the process, but as you see in your new organization, doing so can lead to resources spread across resource groups with little thought as to how to organize them.
 
 ## Use resource groups for organization
 
-So how can you use resource groups to your advantage in your new organization? Here are some guidelines and best practices that can help with the organization.
+So, how can you use resource groups to your advantage in your new organization? Here are some guidelines and best practices that can help with the organization.
 
 ### Consistent naming convention
 
-You can start with using an understandable naming convention. You named your resource group **msftlearn-core-infrastructure-rg**. You've given some indication of what it's used for (**msftlearn**), the types of resources contained within (**core-infrastructure**), and the type of resource it is (**rg**). This descriptive name gives us a better idea of what it is. If you had named it **my-resource-group** or **rg1**, you have no idea on a glance of what the usage may be. In this case, you can deduce that there are probably core pieces of infrastructure contained within. If you created more virtual networks, storage accounts, or other resources the company may consider *core infrastructure*, you could also place them here to improve the organization of your company's resources. Naming conventions can vary widely between and even within companies, but some planning can help.
+You can start with using an understandable naming convention. You named your resource group **msftlearn-core-infrastructure-rg**. You've given some indication of what it's used for (**msftlearn**), the types of resources contained within (**core-infrastructure**), and the type of resource it is (**rg**). This descriptive name gives us a better idea of what it is. If you had named it **my-resource-group** or **rg1**, you'd have no idea on a glance of what the usage may be. In this case, you can deduce that there are probably core pieces of infrastructure contained within. If you created more virtual networks, storage accounts, or other resources that the company might consider _core infrastructure_, you could also place them here to improve your company's resource organization. Naming conventions can vary widely between and even within companies, but some planning can help.
 
 ### Organizing principles
 
-You can organize resource groups in a number of ways; let's take a look at a few examples. You might put all resources that are *core infrastructure* into this resource group, but you could also organize resources strictly by resource type. For example, put all virtual networks in one resource group, all virtual machines in another resource group, and all Azure Cosmos DB instances in another resource group.
+You can organize resource groups in a number of ways; let's take a look at a few examples. You might put all resources that are _core infrastructure_ into this resource group, but you could also organize resources strictly by resource type. For example, you might put all virtual networks in one resource group, all virtual machines in another resource group, and all Azure Cosmos DB instances in another resource group.
 
 ![Diagram of resources grouped by type: vnet-rg for virtual networks, vm-rg for virtual machines, and db-rg for databases.](../media/2-resource-type-rg.png)
 
@@ -137,11 +137,11 @@ You could even use a combination of these strategies and organize by environment
 
 ![Diagram of resources grouped by environment and department: prod-finance, dev-finance, prod-marketing, and dev-marketing.](../media/2-env-dept-rg.png)
 
-There are a few factors that can play into the strategy you use to organize resources: authorization, resource life cycle, and billing.
+There are a few factors that can play into the strategy you use to organize resources: authorization, resource lifecycle, and billing.
 
 #### Organize for authorization
 
-Since resource groups are a scope of RBAC, you can organize resources by *who* needs to administer them. If your database administration team is responsible for managing all of your Azure SQL Database instances, putting them in the same resource group would simplify administration. You could give the team the proper permissions at the resource-group level to administer the databases within the resource group. Similarly, the database administration team could be denied access to the resource group with virtual networks so they don't inadvertently make changes to resources outside the scope of their responsibility.
+Because resource groups are a scope of RBAC, you can organize resources by _who_ needs to administer them. If your database administration team is responsible for managing all of your Azure SQL Database instances, putting them in the same resource group simplifies administration. You could give the team the proper permissions at the resource-group level to administer the databases within the resource group. Similarly, the database administration team could be denied access to the resource group with virtual networks so they don't inadvertently make changes to resources outside their scope of responsibility.
 
 #### Organize for lifecycle
 

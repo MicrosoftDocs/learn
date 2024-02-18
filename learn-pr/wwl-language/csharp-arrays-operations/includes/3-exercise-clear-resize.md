@@ -2,7 +2,9 @@ As you continue building a pallet tracker for the logistics company, suppose you
 
 ## Use array methods to clear and resize an array
 
-The `Array.Clear()` method allows you to remove the contents of specific elements in your array, and the `Array.Resize()` method adds or removes elements from your array.
+The `Array.Clear()` method allows you to remove the contents of specific elements in your array and replace it with the array default value. For example, in a `string` array the element value cleared is replaced with `null`, when you clear a `int` array element the replacement is done with `0` (zero).
+
+The `Array.Resize()` method adds or removes elements from your array.
 
 1. Delete or use the line comment operator `//` to comment out all of the code from the previous exercises.
 
@@ -101,7 +103,7 @@ Two approaches are needed to determine the value of a cleared element to see how
 
     ```
 
-If you focus on the line of output `After: `, you may think that the value stored in `pallets[0]` is an empty string. However, the C# Compiler implicitly converts the null value to an empty string for presentation.
+If you focus on the line of output `After: `, you might think that the value stored in `pallets[0]` is an empty string. However, the C# Compiler implicitly converts the null value to an empty string for presentation.
 
 ### Call a string helper method on a cleared element
 

@@ -6,8 +6,7 @@ metadata:
   ms.date: 05/06/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Implement a secure environment for a database service
 prerequisites: |
   - Ability to use tools for running queries against a Microsoft SQL database, either on-premises on cloud-based

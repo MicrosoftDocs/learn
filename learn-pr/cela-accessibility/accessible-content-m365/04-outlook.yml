@@ -7,8 +7,7 @@ metadata:
   ms.date: 05/09/2020
   author: erzelman
   ms.author: erzelman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-cela-accessibility
+  ms.topic: unit
 durationInMinutes: 11
 content: |
   [!include[](includes/outlook.md)]

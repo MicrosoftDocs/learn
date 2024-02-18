@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.get-started-prompt-flow.variants-monitor
+title: Explore variants and monitoring options
+metadata:
+  title: Explore variants and monitoring options
+  description: "Learn about variants and how to monitor within prompt flow."
+  ms.date: 11/30/2023
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-variants-monitor.md)]

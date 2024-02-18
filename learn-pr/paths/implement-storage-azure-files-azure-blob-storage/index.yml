@@ -6,8 +6,7 @@ metadata:
   ms.date: 07/17/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Secure storage for Azure Files and Azure Blob Storage
 prerequisites: |
   *   Experience using the Azure portal to create resources.
@@ -18,7 +17,7 @@ summary: |
   In this learning path, you practice storing business data securely by using Azure Blob Storage and Azure Files. The skills validated include creating storage accounts, storage containers, and file shares. Also, configuring encryption and networking to improve the security posture.
   [!INCLUDE [](../../includes/wwl/azure-subscription-prerequisite.md)]
 iconUrl: /training/achievements/implement-storage-for-azure-files-and-azure-blob-storage.svg
-hidden: true
+hidden: false
 levels:
 - intermediate
 roles:
@@ -31,7 +30,6 @@ modules:
 - learn.create-azure-storage-account
 - learn.wwl.configure-blob-storage
 - learn.wwl.configure-storage-security
-- learn.wwl.storage-security
 - learn.secure-and-isolate-with-nsg-and-service-endpoints
 - learn.wwl.guided-project-azure-files-azure-blobs
 trophy:

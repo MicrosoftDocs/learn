@@ -7,8 +7,8 @@ metadata:
   author: alvinashcraft
   ms.author: aashcraft
   manager: jmartens
-  ms.topic: interactive-tutorial
-  ms.prod: visual-studio
+  ms.topic: module
+  ms.service: visual-studio-windows
 title: Getting started with Visual Studio for Windows 10 app development
 summary: Visual Studio is the development tool used to create, debug, and deploy Windows 10 applications.
 abstract: |

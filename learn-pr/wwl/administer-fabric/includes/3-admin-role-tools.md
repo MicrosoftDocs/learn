@@ -9,13 +9,13 @@ There are several roles that work together to administer Microsoft Fabric for yo
 > [!NOTE]
 > See [What is Microsoft Fabric administration?](/fabric/admin/microsoft-fabric-admin) for specific details on the different admin roles and responsibilities.
 
-As a Fabric admin, you work primarily in the Fabric admin portal. You may also need to familiarize yourself with: the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview), the [Microsoft 365 Security & Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center), [Azure Active Directory in the Azure portal](/azure/active-directory/fundamentals/active-directory-whatis), [PowerShell cmdlets](/powershell/power-bi/overview), and [administrative APIs and SDK](/rest/api/power-bi/admin).
+As a Fabric admin, you work primarily in the Fabric admin portal. You may also need to familiarize yourself with: the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview), the [Microsoft 365 Security & Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center), [Microsoft Entra ID in the Azure portal](/azure/active-directory/fundamentals/active-directory-whatis), [PowerShell cmdlets](/powershell/power-bi/overview), and [administrative APIs and SDK](/rest/api/power-bi/admin).
 
 ## Describe admin tasks
 
 As an admin, you may be responsible for a wide range of tasks to keep the Fabric platform running smoothly. These tasks include:
 
-**Security and access control**: One of the most important aspects of Fabric administration is managing security and access control to ensure that only authorized users can access sensitive data. You can use role-based access control (RBAC) to define who can view and edit content, set up data gateways to securely connect to on-premises data sources, and use Azure Active Directory (Azure AD) to manage user access.  
+**Security and access control**: One of the most important aspects of Fabric administration is managing security and access control to ensure that only authorized users can access sensitive data. You can use role-based access control (RBAC) to define who can view and edit content, set up data gateways to securely connect to on-premises data sources, and use Microsoft Entra ID to manage user access.  
 
 **Data governance**: Effective Fabric administration requires a solid understanding of data governance principles. You should know how to secure inbound and outbound connectivity in your tenant and how to monitor usage and performance metrics. You should also know how to apply data governance policies to ensure data within your tenant is only accessible to authorized users.
 
@@ -60,6 +60,6 @@ You can make these requests using any HTTP client library that supports OAuth 2.
 
 ### Admin monitoring workspace
 
-Fabric tenant admins will have access to the new *admin monitoring workspace*. You can choose to share access to the workspace or specific items within it with other users in your organization. The admin monitoring workspace includes the Feature Usage and Adoption dataset and report, which together provide insights on the usage and performance of your Fabric environment. You can use this information to identify trends and patterns, and troubleshoot issues.
+Fabric tenant admins will have access to the new *admin monitoring workspace*. You can choose to share access to the workspace or specific items within it with other users in your organization. The admin monitoring workspace includes the Feature Usage and Adoption semantic model and report, which together provide insights on the usage and performance of your Fabric environment. You can use this information to identify trends and patterns, and troubleshoot issues.
 
 ![Screenshot of the Admin monitoring report.](../media/admin-monitoring-report.png)

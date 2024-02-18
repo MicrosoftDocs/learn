@@ -18,7 +18,7 @@ To add an eventstream destination in Microsoft Fabric, you need to follow these 
 
 ## Types of event destinations available in eventstream
 
-In eventstream there are currently four current destination types supported including:
+In eventstream, there are currently four current destination types supported including:
 
 - KQL Database
 - Lakehouse
@@ -46,11 +46,11 @@ In eventstream there are currently four current destination types supported incl
 
 ## Add event processor operators
 
-In several destinations, you'll see the button for event processing and once a destination connection is established you'll be able to add or edit new or existing processing operations prior to it reaching its destination.
+In several destinations, you see the button for event processing. Once a destination connection is established you are able to add or edit new or existing processing operations prior to it reaching its destination.
 
 ![Screenshot of event procesing.](../media/event-processing-editor.png)
 
-Within the event processing editor, you'll have several operations available to you to refine the data for your target sources including:
+Within the event processing editor, you have several operations available to you to refine the data for your target sources including:
 
 ![Screenshot of event processing operations.](../media/event-processing-editor-operations.png)
 
@@ -76,3 +76,49 @@ These operations include:
 This processor operation is contained within the Event Task and you can edit it by the event task icon:
 
 ![Screenshot of event processing task.](../media/event-processing-icon.png)
+
+## Windowing functions in Eventstream
+
+Windowing functions are a way to perform operations on the data contained in temporal windows, such as aggregating, filtering, or transforming streaming events based on time. Windowing functions are useful for analyzing streaming data that changes over time, such as sensor readings, web clicks, on-line transactions, and more and provide great flexibility to keep an accurate record of events as they occurred.
+
+Earlier, we mentioned the **Group by** operator in the event processor editor. This graphical interface allows us to define the logic we need for processing, transforming, and routing event data. There are four parameters that need specified in the **Group by** operator settings to use these windowing functions that include:
+
+- The **window type**, which can be **tumbling, sliding, snapshot, hopping**, or **session**.
+  - **tumbling windows** divides incoming events into fixed and non-overlapping intervals based on arrival time.
+
+    This window shows a count of tweets per time zone every 10 seconds apart.
+      
+     ![Screenshot of the tumbling window concept.](./media/../../media/tumbling-window.png)
+
+  - **sliding windows** takes the events into fixed and overlapping intervals based on time and divides them.
+   
+     This window is a 10-second sliding window that will alert the user whenever a topic is mentioned more than 3 times in under 10 seconds
+  
+     ![Screenshot of the sliding window concept.](./../media/sliding-window.png)
+
+    > [NOTE]
+    > All of the tweets belong to the same topic in this scenario
+
+  - **session windows** simply divides events into variable and non-overlapping intervals which are based on a gap of lack of activity.
+    
+    This window will show the total count of tweets that occur within five minutes of one another
+  
+     ![Screenshot of the session window concept.](./../media/session-window.png)
+
+  - **hopping windows** hopping windows are different from **tumbling** windows as they model scheduled overlapping window.
+  
+    This is a 10 second hopping window which refreshes every 5 seconds and provides the total count of tweets over the past 10 seconds.
+    
+      ![Screenshot of the hopping window concept.](./../media/hopping-window.png)
+
+  - **snapshot windows** snapshot windows group eventstream events that have the same timestamp and are unlike the other windowing functions, which require the function to be named. In 
+  - **snapshot windows** you simply add the ```System.Timestamp()``` to the ```GROUP BY``` clause.
+
+    This window provides a count of tweets with the same topic type that occur at exactly the same time.
+
+     ![Screenshot of the snapshot window concept.](./../media/snapshot-window.png)
+
+- The **window duration**, this is the length of each window interval, which can be in seconds, minutes, hours, and even days. An example duration, such as 10 minutes, means simply that each window covers 10 minutes of event data.
+- The **window offset**, this is an optional parameter that will shift the start and end of each window interval by a specified amount of time. An example of when this optional parameter is set might be a window offset of 2 minutes, which means that each window starts and ends 2 minutes later than usual.
+- The **grouping key**, this is one or more columns in your event data that you wish to group by. For example, by sensor ID, or item category.
+- The **Aggregation function**, this is one or more of the functions that you want to apply to each group of events in each window. This is where the counts, sums, averages, min/max, and even custom functions become useful.

@@ -2,7 +2,7 @@ Structured exception handling uses the TRY/CATCH construct to test for errors, a
 
 ## Commit transactions
 
-When using transactions with structured exception handling, place the COMMIT the transaction inside the TRY block as in the following code example:
+When using transactions with structured exception handling, place the COMMIT TRANSACTION inside the TRY block as in the following code example:
 
 ```sql
 BEGIN TRY
@@ -16,7 +16,7 @@ END TRY
 ```
 
 ## Rollback transaction
-When used with structured exception handling, place the ROLLBACK the transaction inside the CATCH block as in the following code example:
+When used with structured exception handling, place the ROLLBACK TRANSACTION inside the CATCH block as in the following code example:
 
 ```sql
 BEGIN TRY
@@ -43,7 +43,7 @@ Return value | Meaning
  -1 | The current request has an active user transaction, but an error has occurred that has caused the transaction to be classified as an uncommittable transaction.
 
 
-XACT_State can be used before the ROLLBACK command, to check whether the transaction is active.
+XACT_STATE can be used before the ROLLBACK command, to check whether the transaction is active.
 
 The following code shows the XACT_STATE function being used within the CATCH block so that the transaction is only rolled back if there is an active user transaction.
 

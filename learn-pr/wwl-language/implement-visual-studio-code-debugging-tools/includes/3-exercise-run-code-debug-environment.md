@@ -43,36 +43,13 @@ The first step in learning the debugger tools is creating a code project that yo
 
 Visual Studio Code uses a launch configuration file to specify the application that runs in the debug environment.
 
-> [!NOTE]
-> The debugger configuration experience described in this exercise is based on the C# extension (Base language support for C#), without the **C# Dev Kit** extension. The C# Dev Kit extension automates a portion of the debugger configuration and includes other advanced features. The C# Dev Kit is recommended for professional developers using C#.
+1. If the Debug101 folder doesn't include a Debug101.sln file, select **Program.cs**, and then verify that a .sln file is created.
 
-1. Open the **Run** menu.
+    Opening a C# code file prompts the environment to check for project files. The .sln file is a solution file that is used by Visual Studio to manage projects and is usually created automatically when you create a new project in Visual Studio Code. The .sln file is used by the debugger to identify the project that should be run in the debug environment.
 
-1. Notice that the **Run** menu provides access to several debug options, including a menu option named **Add Configuration**.
+1. On the View menu, select **Command Palette**.
 
-    ![Screenshot showing the Visual Studio Code run menu.](../media/run-menu-new-project-configure-debug.png)
-
-    The **Open Configuration** menu option is currently disabled because you haven't added a launch configuration file to your project.
-
-1. On the **Run** menu, select **Add Configuration**.
-
-1. To choose the debugger option for your console app, select **.NET 5+ and .NET Core**.
-
-    If you see a message stating that a .NET debug configuration cannot be created, you can ignore it. The message will disappear after a short time and you will see a button labeled **Add Configuration**.
-
-1. Select the **Add Configuration** button, and then select **{} .NET: Launch .NET Core Console App**.
-
-1. For the **program:** attribute, replace **`<target-framework>`** with **net7.0** and replace **`<project-name.dll>`** with **Debug101.dll**.
-
-    Notice that the **program** attribute now specifies the path to the executable version of your **Debug101** application.
-
-    ```json
-    "program": "${workspaceFolder}/bin/Debug/net7.0/Debug101.dll",
-    ```
-
-    Connecting your application with the debugger is one of the primary goals of a configuration.
-
-1. On the **File** menu, select **Save**.
+1. At the command prompt, enter **.net: g** and then select **.NET: Generate Assets for Build and Debug**.
 
 1. Notice the new `.vscode` folder that has been added to your project folder.
 
@@ -80,17 +57,17 @@ Visual Studio Code uses a launch configuration file to specify the application t
 
     The `.vscode` folder contains files that are used to configure the debug environment.
 
+1. Expand the `.vscode` folder, and then select the **launch.json** file.
+
 1. Take a minute to examine the launch.json file.
 
     The launch configurations file can include multiple configurations. Each configuration includes a collection of attributes that are used to define that configuration.
 
 1. Notice that the **prelaunchTask** attribute specifies a **build** task.
 
-1. On the **View** menu, select **Command Palette**.
+1. In the `.vscode` folder, select **tasks.json**.
 
-1. At the Command Palette prompt, type **task** to filter the list of commands.
-
-1. Select **Tasks: Configure Default Build Task**, select **Create tasks.json file from template**, and then select **.NET Core**.
+1. Notice that the tasks.json file contains the *build* task for your code project.
 
 1. Close the **launch.json** and **tasks.json** files.
 

@@ -1,45 +1,84 @@
-To use the Read API, call the **Read** REST function (or equivalent SDK method), passing the image URL or binary data, and optionally specifying the language the text is written in (with a default value of **en** for English).
+To use the Read OCR feature, call the **ImageAnalysis** function (REST API or equivalent SDK method), passing the image URL or binary data, and optionally specifying a gender neutral caption or the language the text is written in (with a default value of **en** for English).
 
-The Read function returns an operation ID, which you can use in a subsequent call to the **Get Read Results** function in order to retrieve details of the text that has been read. Depending on the volume of text, you may need to poll the **Get Read Results** function multiple times before the operation is complete.
+To make an OCR request to **ImageAnalysis**, specify the visual feature as `READ`.
 
-The results of from the Read API are broken down by *page*, then *line*, and then *word*. Additionally, the text values are included at both the *line* and *word* levels, making it easier to read entire lines of text if you don't need to extract text at the individual *word* level.
+**C#**
+
+```csharp
+ImageAnalysisResult result = client.Analyze(
+    <image-to-analyze>,
+    VisualFeatures.Read);
+```
+
+**Python**
+
+```python
+result = client.analyze(
+    image_url=<image_to_analyze>,
+    visual_features=[VisualFeatures.READ]
+)
+```
+
+If using the REST API, specify the feature as `read`.
+
+```rest
+https://<endpoint>/computervision/imageanalysis:analyze?features=read&...
+```
+
+The results of the Read OCR function are returned synchronously, either as JSON or the language specific object of a similar structure. These results are broken down in *blocks* (with the current service only using one block), then *lines*, and then *words*. Additionally, the text values are included at both the *line* and *word* levels, making it easier to read entire lines of text if you don't need to extract text at the individual *word* level.
 
 ```JSON
 {
-  "status": "succeeded",
-  "createdDateTime": "2019-10-03T14:32:04Z",
-  "lastUpdatedDateTime": "2019-10-03T14:38:14Z",
-  "analyzeResult": {
-    "version": "v3.0",
-    "readResults": [
-      {
-        "page": 1,
-        "language": "en",
-        "angle": 49.59, "width": 600,
-        "height": 400, "unit": "pixel",
-        "lines": [
-          {
-            "boundingBox": [
-              20,61,204,64,204,84,20,81],
-            "text": "Hello world!",
-            "words": [
-              {
-                "boundingBox": [
-                  20,62,48,62,48,83,20,82],
-                "text": "Hello",
-                "confidence": 0.91
-              },
-              {
-                "boundingBox": [
-                  51,62,105,63,105,83,51,83],
-                "text": "world!",
-                "confidence": 0.164
-              }
-            ]
-          }
+    "metadata":
+    {
+        "width": 500,
+        "height": 430
+    },
+    "readResult":
+    {
+        "blocks":
+        [
+            {
+                "lines":
+                [
+                    {
+                        "text": "Hello World!",
+                        "boundingPolygon":
+                        [
+                            {"x":251,"y":265},
+                            {"x":673,"y":260},
+                            {"x":674,"y":308},
+                            {"x":252,"y":318}
+                        ],
+                        "words":
+                        [
+                            {
+                                "text":"Hello",
+                                "boundingPolygon":
+                                [
+                                    {"x":252,"y":267},
+                                    {"x":307,"y":265},
+                                    {"x":307,"y":318},
+                                    {"x":253,"y":318}
+                                ],
+                            "confidence":0.996
+                            },
+                            {
+                                "text":"World!",
+                                "boundingPolygon":
+                                [
+                                    {"x":318,"y":264},
+                                    {"x":386,"y":263},
+                                    {"x":387,"y":316},
+                                    {"x":319,"y":318}
+                                ],
+                                "confidence":0.99
+                            }
+                        ]
+                    },
+                ]
+            }
         ]
-      }
-    ]
-  }
+    }
 }
 ```

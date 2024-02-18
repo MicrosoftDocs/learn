@@ -6,10 +6,10 @@ metadata:
   ms.date: 04/19/2023
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom:
     - build-2023
-  ms.prod: learning-azure
+  ms.service: azure
 title: Understand hybrid data platform on SQL Server 2022
 summary: Learn about new major cloud connected capabilities of SQL Server 2022.
 abstract: |

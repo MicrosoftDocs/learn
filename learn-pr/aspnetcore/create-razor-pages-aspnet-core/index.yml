@@ -7,8 +7,8 @@ metadata:
   author: jongalloway
   ms.author: jogallow
   ms.manager: markl
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.topic: module
+  ms.service: aspnet-core
 title: Create a web UI with ASP.NET Core
 summary: Learn how to create web pages using Razor with ASP.NET Core.
 iconUrl: /training/achievements/aspnetcore/create-a-web-ui-with-aspnet-core.svg

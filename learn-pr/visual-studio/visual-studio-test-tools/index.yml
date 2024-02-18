@@ -10,7 +10,7 @@ metadata:
   manager: jmartens
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: visual-studio
+  ms.service: visual-studio-windows
   ms.devlang: csharp
 title: C# testing in Visual Studio
 summary: Start testing your C# apps by using the testing tools in Visual Studio.

@@ -34,10 +34,10 @@ To configure auditing for your organization:
 
         ![Screenshot of Azure DevOps showing the auditing log under the organization settings.](../media/auditing-log-organization-settings.png)
 
-Consider sending your events downstream to a Security Information and Event Management (SIEM) tool using the [Audit Streaming feature](https://learn.microsoft.com/azure/devops/organizations/audit/auditing-streaming) for long-term storage and analysis of your auditing events. We recommend exporting the auditing logs for cursory data analysis.
+Consider sending your events downstream to a Security Information and Event Management (SIEM) tool using the [Audit Streaming feature](/azure/devops/organizations/audit/auditing-streaming) for long-term storage and analysis of your auditing events. We recommend exporting the auditing logs for cursory data analysis.
 
 > [!NOTE]
-> Auditing is only available for organizations backed by Azure Active Directory. For more information, see [Connect your organization to Azure Active Directory](https://learn.microsoft.com/azure/devops/organizations/accounts/connect-organization-to-azure-ad).
+> Auditing is only available for organizations backed by Microsoft Entra ID. For more information, see [Connect your organization to Microsoft Entra ID](/azure/devops/organizations/accounts/connect-organization-to-azure-ad).
 
 ## Challenge yourself
 
@@ -49,6 +49,6 @@ To reinforce your understanding of managing and auditing permissions, try the fo
 
 For more information about approvals and checks, see:
 
-- [Access, export, and filter audit logs](https://learn.microsoft.com/azure/devops/organizations/audit/azure-devops-auditing/)
-- [Auditing events list](https://learn.microsoft.com/azure/devops/organizations/audit/auditing-events/)
-- [Security groups, service accounts, and permissions in Azure DevOps](https://learn.microsoft.com/azure/devops/organizations/security/permissions/)
+- [Access, export, and filter audit logs](/azure/devops/organizations/audit/azure-devops-auditing/)
+- [Auditing events list](/azure/devops/organizations/audit/auditing-events/)
+- [Security groups, service accounts, and permissions in Azure DevOps](/azure/devops/organizations/security/permissions/)

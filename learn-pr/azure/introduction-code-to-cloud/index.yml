@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.introduction-code-to-cloud
+metadata:
+  title: Introduction to Code to Cloud            
+  description: This module covers provides an Introduction to Code to Cloud, a service that allows you to seamlessly deploy your complex micro-architecture solutions to Microsoft Azure.
+  ms.date: 09/04/2023
+  author: juliamuiruri4 
+  ms.author: juliamuiruri 
+  ms.topic: module-intro-to-product
+  ms.service: azure
+title: Introduction to Code to Cloud
+summary: This module covers provides an Introduction to Code to Cloud, a service that allows you to seamlessly deploy your complex micro-architecture solutions to Microsoft Azure.
+abstract: |
+  By the end of this module, you'll be able to:
+  -	Understand the different ways to deploy your web applications using Code to Cloud
+  -	Manage your compute, database, caching, and other key services within a simplified easy-to-use management experience
+  -	Understand when to deploy using Code to Cloud
+prerequisites: |
+  - A GitHub Account
+  - An Azure subscription
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+subjects:
+- cloud-computing
+units:
+- learn.introduction-code-to-cloud.introduction
+- learn.introduction-code-to-cloud.what-is-code-to-cloud
+- learn.introduction-code-to-cloud.exercise-deploy-to-code-to-cloud-using-starter-template
+- learn.introduction-code-to-cloud.exercise-bring-your-own-repository-to-code-to-cloud
+- learn.introduction-code-to-cloud.manage-your-app-components-on-code-to-cloud
+- learn.introduction-code-to-cloud.knowledge-check
+- learn.introduction-code-to-cloud.summary
+badge:
+  uid: learn.introduction-code-to-cloud.badge

@@ -25,7 +25,7 @@ These steps only need to be done once per subscription.
 
 For each data service instance that you want to deploy in the subscription:
 
-1. Sign in to the Azure AD tenant with an account that has permissions to manage the Azure Arc-enabled Kubernetes resource.
+1. Sign in to the Microsoft Entra tenant with an account that has permissions to manage the Azure Arc-enabled Kubernetes resource.
 1. Create the Azure Arc data controller.
 1. Create the instance of the data service.
 1. Connect with Azure Data Studio.
@@ -40,7 +40,7 @@ For example, by deploying the Azure Machine Learning extension, you can enable a
 
 The process to deploy Azure Machine Learning to an Arc-enabled Kubernetes cluster consists of the following high-level steps.
 
-1. Sign in to the Azure AD tenant with an account that has permissions to manage the Azure Arc-enabled Kubernetes resource.
+1. Sign in to the Microsoft Entra tenant with an account that has permissions to manage the Azure Arc-enabled Kubernetes resource.
 1. Create an instance of the Azure Machine Learning extension on the cluster.
 1. Deploy the Azure Machine Learning extension.
 1. Attach the Kubernetes cluster to your Azure Machine Learning workspace.

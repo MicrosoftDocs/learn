@@ -4,11 +4,10 @@ title: Exercise - Create a workspace
 metadata:
   title: Exercise - Create a workspace
   description: "Exercise - Create a workspace"
-  ms.date: 09/27/2023
+  ms.date: 01/03/2024
   author: wwlpublish
   ms.author: serlingdavis
-  ms.topic: interactive-tutorial
-  ms.prod: azure
-durationInMinutes: 10
+  ms.topic: unit
+durationInMinutes: 30
 content: |
   [!include[](includes/3-use-the-log-analytics-workspaces-menu-to-create-a-workspace.md)]

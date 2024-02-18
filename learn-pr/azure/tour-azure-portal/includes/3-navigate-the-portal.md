@@ -26,11 +26,11 @@ You can change your default view to the customizable **Dashboard** in the portal
 
 ## Azure portal global controls
 
-The Azure portal displays several icons in the status bar at the top right of the screen. These icons are global controls that are always available, no matter what service you're working with. Each icon provides quick access to useful functionality, such as configuring settings or viewing notifications about portal activity.
+The Azure portal displays several icons in the status bar at the top-right side of the screen. These icons are global controls that are always available, no matter what service you're working with. Each icon provides quick access to useful functionality, such as configuring settings or viewing notifications about portal activity.
 
 :::image type="content" source="../media/5-portal-icon-bar.png" alt-text="Screenshot of the global control icons at the top of the Azure portal.":::
 
-If you are viewing the Azure portal on a screen with reduced horizontal space, you may need to expand an ellipsis (**...**) menu to view the global controls.
+If you're viewing the Azure portal on a screen with reduced horizontal space, you might need to expand an ellipsis (**...**) menu to view the global controls.
 
 Let's walk through each of these controls to understand them better.
 
@@ -40,11 +40,11 @@ Select the **Cloud Shell** icon (>_) to create a new Azure Cloud Shell session. 
 
 ### Directories and subscriptions
 
-Select the book and filter icon to show the **Directories + subscriptions** pane.
-
-In some cases, you may have access to more than one Azure subscription. The **Directory + subscription** pane lets you change the subscription you're working in, or change to a different directory.
+In some cases, you may have access to more than one Azure subscription. The **Directory + subscription** section of **Portal settings** lets you change the subscription you're working in, or change to a different directory.
 
 ![Screenshot of the Directory and subscription pane.](../media/3-directory-pane.png)
+
+Directories and subscriptions used to be accessed with the book and filter icon. The **Directories + subscriptions** feature, though, is now located on the **Portal settings** page, which you access by selecting the gear icon.
 
 ### Notifications
 
@@ -54,6 +54,7 @@ Selecting the bell icon displays the **Notifications** pane. This pane lists the
 
 Select the gear icon to change the Azure portal settings. In the tabs at the left, there are multiple options that let you change settings for:
 
+- Directories and subscription management
 - Inactivity sign out delay
 - Default view when you first sign in
 - Flyout or docked option for the portal menu
@@ -78,7 +79,7 @@ The **Feedback** icon on the top-right side of the screen opens a pane that lets
 
 ### Profile settings
 
-If you select on your name in the top right-hand corner, a menu opens with a few options:
+If you select your name in the top right corner, a menu opens with a few options:
 
 - Sign in with another account, or sign out entirely
 - View your account profile, where you can change your password

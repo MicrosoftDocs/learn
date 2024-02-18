@@ -20,7 +20,7 @@ You can configure agent identities in Azure DevOps using a personal access token
 
 For more information about agents identities, see:
 
-- [Azure Pipelines agents.](https://learn.microsoft.com/azure/devops/pipelines/agents/agents/)
-- [Microsoft-hosted agents.](https://learn.microsoft.com/azure/devops/pipelines/agents/hosted/)
-- [Create and manage agent pools.](https://learn.microsoft.com/azure/devops/pipelines/agents/pools-queues/)
-- [Use Azure Active Directory service principals & managed identities](https://learn.microsoft.com/azure/devops/integrate/get-started/authentication/service-principal-managed-identity)
+- [Azure Pipelines agents.](/azure/devops/pipelines/agents/agents/)
+- [Microsoft-hosted agents.](/azure/devops/pipelines/agents/hosted/)
+- [Create and manage agent pools.](/azure/devops/pipelines/agents/pools-queues/)
+- [Use Microsoft Entra service principals & managed identities](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity)

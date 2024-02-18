@@ -6,8 +6,8 @@ metadata:
   ms.date: 05/24/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Configure network routing and endpoints
 summary: Learn how to configure network routes, including endpoints and private links.
 abstract: |

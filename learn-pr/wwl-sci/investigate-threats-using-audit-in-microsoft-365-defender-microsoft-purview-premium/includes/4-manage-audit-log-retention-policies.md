@@ -7,7 +7,7 @@ Organizations can create and manage audit log retention policies in the Microsof
 
 ### Default audit log retention policy
 
-Microsoft Purview Audit (Premium) provides a default audit log retention policy for all organizations. This policy retains all Exchange Online, SharePoint Online, OneDrive for Business, and Azure Active Directory audit records for one year. The default policy retains audit records that contain the value of Exchange, SharePoint, OneDrive, AzureActiveDirectory for the Workload property (which is the service in which the activity occurred).
+Microsoft Purview Audit (Premium) provides a default audit log retention policy for all organizations. This policy retains all Exchange Online, SharePoint Online, OneDrive for Business, and Microsoft Entra audit records for one year. The default policy retains audit records that contain the value of Exchange, SharePoint, OneDrive, AzureActiveDirectory for the Workload property (which is the service in which the activity occurred).
 
 > [!NOTE]
 > The default audit log retention policy can't be modified.

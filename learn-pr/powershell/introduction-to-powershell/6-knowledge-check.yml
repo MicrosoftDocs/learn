@@ -7,8 +7,7 @@ metadata:
   ms.date: 07/09/2021
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 4
 content: |
@@ -18,7 +17,7 @@ quiz:
     - content: What's a correct way to locate a command in PowerShell?
       choices:
         - content: "Call `Get-Command 'name of command'`"
-          explanation: Correct. Using the `Get-Copmmand` cmdlet is the correct way to locate a command.
+          explanation: Correct. Using the `Get-Command` cmdlet is the correct way to locate a command.
           isCorrect: true
         - content: "Call `Find 'name of command'`"
           explanation: Incorrect. There's no `Find` command in PowerShell.

@@ -3,15 +3,15 @@ uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure
 metadata:
   title: Explore Azure Storage for non-relational data
   description: "Explore Azure Storage for non-relational data"
-  ms.date: 05/05/2023
+  ms.date: 01/30/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.service: azure-storage
+  ms.topic: module
+  ms.service: azure
 title: Explore Azure Storage for non-relational data
 summary: Azure Storage is a core service in Microsoft Azure that is commonly used to store non-relational data.
 abstract: |
-  In this module, you'll learn how to:
+  In this module, you learn how to:
   - Describe features and capabilities of Azure blob storage
   - Describe features and capabilities of Azure Data Lake Gen2
   - Describe features and capabilities of Azure file storage

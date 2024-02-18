@@ -6,7 +6,7 @@ metadata:
   ms.date: 01/25/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: microsoft-sentinel
 title: Threat response with Microsoft Sentinel playbooks
 summary: This module describes how to create Microsoft Sentinel playbooks to respond to security threats.

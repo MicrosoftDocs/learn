@@ -6,7 +6,7 @@ metadata:
   ms.date: 08/16/2022
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: microsoft-sentinel
 title: Connect Windows hosts to Microsoft Sentinel
 summary: One of the most common logs to collect is Windows security events.  Learn how Microsoft Sentinel makes this easy with the Security Events connector.

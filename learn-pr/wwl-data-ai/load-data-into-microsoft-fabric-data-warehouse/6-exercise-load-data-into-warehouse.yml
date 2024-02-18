@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.load-data-into-microsoft-fabric-data-warehouse.exercise-load-data-into-warehouse
+title: 'Exercise: Load data into a warehouse in Microsoft Fabric'
+metadata:
+  title: 'Exercise: Load data into a warehouse in Microsoft Fabric'
+  description: "Learn how to load data into a warehouse using T-SQL in Microsoft Fabric."
+  ms.date: 12/01/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric 
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise-load-data-into-warehouse.md)]

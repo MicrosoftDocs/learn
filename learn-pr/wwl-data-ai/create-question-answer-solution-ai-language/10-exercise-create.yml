@@ -10,8 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: azure-ai-language
   ms.subservice: azure-ai-question-answering
-labId: 100989
-labModal: true
 durationInMinutes: 20
+labId: 152405
+labModal: true
 content: |
   [!include[](includes/10-exercise-create.md)]
