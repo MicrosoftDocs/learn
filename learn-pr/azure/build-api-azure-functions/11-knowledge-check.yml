@@ -17,7 +17,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "What do you need to do in an Azure Function to make it an HTTP endpoint?"
+    - content: "What do you need to do in a function to make it an HTTP endpoint?"
       choices:
         - content: "Name the main file 'index'."
           isCorrect: false
@@ -30,7 +30,7 @@ quiz:
           explanation: "Azure Functions have to have a default trigger type specified."
         - content: "Select the 'HTTP Trigger' template when creating a function."
           isCorrect: true
-          explanation: "The 'HTTP Trigger' template lets Azure Functions know that a function should be exposed as an HTTP endpoint."
+          explanation: "The 'HTTP Trigger' template is used to create a function that exposes an HTTP endpoint."
     - content: "What is the RESTful way to handle a delete product action in your API?"
       choices:
         - content: "Set the URL to /products, pass the ID of the item in the request body and use an HTTP DELETE method."
@@ -45,14 +45,14 @@ quiz:
         - content: "Set the URL to /products, pass in the ID of the item as a URL parameter (products/1) and set the HTTP method to DELETE."
           isCorrect: true
           explanation: "A RESTful URL is organized by resource name (products), parameters are passed as part of the URL and the correct HTTP method for a delete operation is DELETE. "
-    - content: "How do you specify app settings for an Azure Functions project?"
+    - content: "How do you specify app settings for a local Azure Functions project?"
       choices:
         - content: "In the package.json file."
           isCorrect: false
           explanation: "The app settings for an Azure Functions project are not found in the package.json file."
-        - content: "Azure Functions will automatically read settings from a local.settings.json file."
+        - content: "Azure Functions reads app settings from the local.settings.json file."
           isCorrect: true
-          explanation: "Azure Functions relies on a file called local.settings.json. Any settings added to that file will be available as app settings."
+          explanation: "Azure Functions relies on a file called local.settings.json. Any settings added to that file are available as environment variables."
         - content: "Specify them on the process.env object."
           isCorrect: false
           explanation: "The process.env object is populated from values in the local.settings.json file."
