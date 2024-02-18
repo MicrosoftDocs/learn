@@ -17,7 +17,9 @@ The OT sensor deployment is the phase where you upload, install, and set up the 
 
 In this module, you perform this process:
 
-- Download the monitoring ISO file and install it on the sensor.
+- Download the monitoring ISO file.
+- Create a virtual machine sensor.
+- Install the monitoring software on the VM sensor.
 - Configure the settings for the interface that the sensor monitors.
 - Upload the activation file and assign a security certificate to the sensor.
 

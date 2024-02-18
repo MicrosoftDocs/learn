@@ -1,4 +1,3 @@
-
 Your car manufacturing organization has offices and production sites across the globe, with a network linking them together. A sensor was onboarded to Defender for IoT and the site networking is set up. Now your task is to deploy the sensor by installing the OT monitoring software and activating the sensor to send data to the Azure portal.
 
 ## Your organization's OT sensor deployment plan

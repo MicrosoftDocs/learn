@@ -1,13 +1,13 @@
 This unit describes how to download the OT monitoring software from the Defender for IoT in the Azure portal. Then set up a virtual machine and connect it to a device/ interface. Then upload the monitoring software to the sensor. Afterwards, configure the network settings so that the sensor connects with the Azure portal. Finally, assign the end point interfaces, activate the sensor and set up the security certificates.
-<!-- check all inmages for compliance - may need to redo them or edit -->
+<!-- check all images for compliance - may need to redo them or edit -->
 ## Configure firewall to allow the sensor to connect to Azure portal
 
-Configure your firewall rules so that your sensor can access the cloud on port 443, and connect to each of the listed endpoints in the downloaded list.
-<!-- can i see a demo file, also what are the instructions for this? Who to ask?-->
+Configure your firewall rules so that your sensor can access the cloud on port 443, and connect to each of the endpoints listed in the JSON file provided by the communications Team.
+<!-- what are the instructions for this? Who to ask?-->
 
 ## Create a virtual machine with ESXi
 
-To perform this procedure, VMware, ESXi 5.5 or later must be installed and operational on your ??sensor??. Defender for IoT also supports other processes, such as using Hyper-V or physical sensors. <!-- keep this or remove?-->
+To perform this procedure, VMware, ESXi 5.5 or later must be installed and operational on your ??sensor??. Defender for IoT also supports other processes, such as using Hyper-V or physical sensors.
 <!-- I think the next is not important for this
 Details for the following network parameters to use for your sensor appliance:
 

@@ -11,4 +11,4 @@ metadata:
   ms.service: defender-for-iot
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-plan-to-deploy-sensor.md)]
+  [!include[](includes/3-plan-to-set-up-vm.md)]

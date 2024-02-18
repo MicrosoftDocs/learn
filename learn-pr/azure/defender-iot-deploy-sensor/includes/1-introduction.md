@@ -12,12 +12,11 @@ You’ve been tasked with installing Defender for IoT software on your new OT se
 
 In this module you'll complete the following tasks:
 
-- **Install monitoring software**: install the ISO file on the sensor.
+- **Create a virtual machine**: Configure a VM and run the sensor on it.
+- **Install monitoring software**: Install the ISO file on the sensor.
 - **Set up the interface**: Define the interface settings for each sensor end point to be monitored.
 - **Activate the sensor**: Run the activation file and assign security signatures.
 
 ## What is the main goal?
 
 By the end of this session, you'll be familiar with the process of deploying and activating your OT sensor so it can start sending data to Microsoft Defender for IoT.
-
-This is a demo Learn Module, so you won't enter details on an actual sensor, instead you follow the process so that it's easier to implement on a full running system. <!-- I think we need to put in some type of disclaimer about each Module not being a proper demo -->
