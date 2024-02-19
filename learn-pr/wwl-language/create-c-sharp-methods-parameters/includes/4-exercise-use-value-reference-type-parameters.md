@@ -93,7 +93,7 @@ In this exercise, you'll learn more about passing reference and value type argum
 
 ### Test with strings
 
-Earlier, you learned that strings are an *immutable* type. Even though a string is a reference value type, unlike an array, its value can't be altered once it's assigned. You might have noticed this if you've used methods such as `string.Replace` or `string.ToUpper`. In this task, you'll learn to correct a common error found when working with strings.
+Earlier, you learned that strings are an *immutable* type. Even though a string is a reference type, unlike an array, its value can't be altered once it's assigned. You might have noticed this if you've used methods such as `string.Replace` or `string.ToUpper`. In this task, you'll learn to correct a common error found when working with strings.
 
 1. In the Visual Studio Code Editor, delete any existing code from the previous exercises.
 

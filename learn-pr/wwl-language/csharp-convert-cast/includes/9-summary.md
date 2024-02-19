@@ -13,3 +13,7 @@ Without this wealth of options, it would be difficult to work in a typed program
 - [Casting and type conversions (C# programming guide)](/dotnet/csharp/programming-guide/types/casting-and-type-conversions)
 - [Built-in types (C# reference)](/dotnet/csharp/language-reference/builtin-types/built-in-types)
 - [Default values of C# types (C# reference)](/dotnet/csharp/language-reference/builtin-types/default-values)
+
+## Get a free verified certification
+
+Microsoft and freeCodeCamp.org offer a training and certification combo on foundational C#. By completing this Learn module, you're already started. Explore freeCodeCamp's Foundational C# with Microsoft certification here: [https://aka.ms/csharp-certification](https://aka.ms/csharp-certification).
