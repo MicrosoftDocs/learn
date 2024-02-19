@@ -58,8 +58,8 @@ az postgres flexible-server create \
     --public-access "All" \
     --tier "Burstable" \
     --sku-name "Standard_B1ms" \
-    --storage-size 256 \
-    --version "14"
+    --storage-size 32 \
+    --version "16"
 ```
 
 This command creates a small PostgreSQL server that uses the variables that you set up earlier.
@@ -100,7 +100,8 @@ quarkus.datasource.jdbc.url=<the POSTGRES_CONNECTION_STRING_SSL value>
 Use this command to run the application locally: 
 
 ```shell
-mvnw.cmd clean quarkus:dev
+./mvnw clean quarkus:dev    # On Mac or Linux
+mvnw.cmd clean quarkus:dev  # On Windows
 ```
 
 When Quarkus is running, create a few to-dos by using the following cURL commands in a separate terminal window:
