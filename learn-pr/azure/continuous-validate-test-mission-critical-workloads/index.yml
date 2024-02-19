@@ -34,7 +34,7 @@ products:
 -	azure-load-testing
 # - chaos-studio
 subjects:
--	high-availability-system
+-	site-reliability-engineering
 -	architecture
 -	solution-design
 -	devops
