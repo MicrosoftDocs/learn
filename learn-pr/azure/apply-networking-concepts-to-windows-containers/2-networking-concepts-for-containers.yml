@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.apply-networking-concepts-to-windows-containers.networking-concepts-for-containers
+title: Networking concepts for containers
+metadata:
+  unitType: learning-content
+  title: Networking concepts for containers
+  description: Containers are isolated units of software that run on a shared operating system (OS) kernel. A container packages an application with its dependencies and abstracts it from the host OS where it runs.
+  ms.date: 02/12/2024
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-networking-concepts-for-containers.md)]
