@@ -3,7 +3,7 @@ uid: learn.wwl.guided-project-calculate-print-student-grades
 metadata:
   title: Guided project - Calculate and print student grades
   description: "Learn to develop an application that will calculate and display results based on given data."
-  ms.date: 02/16/2024
+  ms.date: 02/19/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
@@ -33,8 +33,6 @@ roles:
 - student
 products:
 - dotnet
-subjects:
-- development-tools
 units:
 - learn.wwl.guided-project-calculate-print-student-grades.introduction
 - learn.wwl.guided-project-calculate-print-student-grades.prepare
