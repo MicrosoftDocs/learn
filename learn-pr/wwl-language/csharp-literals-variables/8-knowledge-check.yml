@@ -28,7 +28,7 @@ quiz:
     - content: "`var` isn't a data type."
       isCorrect: false
       explanation: "Incorrect. It's true that `var` isn't a data type, but that's not the problem with this code."
-    - content: "Use of `var` keyword without initializing the variable"
+    - content: "Use of `var` keyword without initializing the variable."
       isCorrect: true
       explanation: "Correct! A `var` data type must have an initialized value."
     - content: "A variable named `message` should always be a string."
@@ -47,10 +47,10 @@ quiz:
       explanation: "Correct! Using the decimal literal `M` or `m` denotes a decimal data type. Decimal values include the values after the decimal point when displayed."
   - content: "Which of the following lines of code creates a variable correctly?"
     choices:
-    - content: "`int x = 12.3m;`"
+    - content: "`int x = 12.3 m;`"
       isCorrect: false
       explanation: "Incorrect. An `int` can't be set to a literal decimal value."
-    - content: "`decimal x = 12.3m;`"
+    - content: "`decimal x = 12.3 m;`"
       isCorrect: true
       explanation: "Correct! The assignment correctly matches the declared data type."
     - content: "`bool x = 'False';`"
