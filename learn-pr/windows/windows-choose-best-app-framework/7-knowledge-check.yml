@@ -34,7 +34,7 @@ quiz:
     - content: WinUI and Windows App SDK
       isCorrect: false
       explanation: Incorrect. WinUI is a good choice for applications that require modern UI features and are built on the latest version of .NET.
-  - content: A software startup is creating a consumer-facing app that needs to implement the Fluent design system and wants to make it available on the Microsoft Store. Which Windows UI framework is the best option for this requirement?
+  - content: An independent software vendor (ISV) is creating a multimedia app that needs to implement the Fluent design system and wants to make it available on the Microsoft Store. Which Windows UI framework is the best option for this requirement?
     choices:
     - content: WPF
       isCorrect: false
