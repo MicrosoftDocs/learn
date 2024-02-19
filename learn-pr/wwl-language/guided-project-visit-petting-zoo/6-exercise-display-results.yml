@@ -4,12 +4,10 @@ title: Exercise - Create a method to display the results
 metadata:
   title: Exercise - Create a method to display the results
   description: "Exercise - Create a method to display the results"
-  ms.date: 10/31/2023
+  ms.date: 02/16/2024
   author: wwlpublish
   ms.author: buzahid
-  ms.topic: interactive-tutorial
-  ms.custom:
-  - N/A
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/6-exercise-display-results.md)]
