@@ -64,10 +64,10 @@ quiz:
     choices:
     - content: "To simplify the user onboarding experience"
       isCorrect: false
-      explanation: "Incorrect. While Microsoft recommends enabling combined security information registration to simplify the user onboarding experience that is not the sole purpose of Microsoft Entra multifactor authentication."
+      explanation: "Incorrect. While Microsoft recommends enabling combined security information registration to simplify the user onboarding experience that isn't the sole purpose of Microsoft Entra multifactor authentication."
     - content: "To add additional security over only using a password when a user signs in"
       isCorrect: true
       explanation: "Correct. Microsoft Entra multifactor authentication adds additional security over only using a password when a user signs in by prompting the user for additional forms of authentication, such as responding to a push notification or entering a code from a software or hardware token."
     - content: "To replace passwords with more complex authentication methods"
       isCorrect: false
-      explanation: "Incorrect. Passwords should be replaced with more secure authentication methods, but that is not the sole purpose of Microsoft Entra multifactor authentication."
+      explanation: "Incorrect. Passwords should be replaced with more secure authentication methods, but that isn't the sole purpose of Microsoft Entra multifactor authentication."
