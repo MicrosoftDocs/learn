@@ -8,7 +8,7 @@ In this exercise, you deploy your network infrastructure, and then create a new 
 
 This deployment creates the Azure network resources matching the preceding diagram. With these resources in place, you can add the new HR virtual network.
 
-1. If you're in the sandbox, you may need to login and then set the current subscription to your own:
+1. If you have more than one subscription, you may need to login and then set the current subscription to your own:
 
 ```azurecli
 az login
