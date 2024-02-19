@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/16/2024
+  ms.date: 02/19/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -56,7 +56,7 @@ quiz:
       explanation: "Correct. The Linked option lets you configure the target location when a user selects the application in your organization's end user portals."
     - content: "Enables sign on functionality through Microsoft Entra credentials"
       isCorrect: false
-      explanation: "Incorrect. The Linked option doesn't provide sign on functionality through Microsoft Entra credentials."
+      explanation: "Incorrect. The Linked option doesn't provide sign-on functionality through Microsoft Entra credentials."
     - content: "Disables SSO when the application isn't ready to be configured for SSO"
       isCorrect: false
       explanation: "Incorrect. The Disabled option disables SSO when the application isn't ready to be configured for SSO."
@@ -64,7 +64,7 @@ quiz:
     choices:
     - content: "To simplify the user onboarding experience"
       isCorrect: false
-      explanation: "Incorrect. While Microsoft recommends enabling combined security information registration to simplify the user onboarding experience, that is not the sole purpose of Microsoft Entra multifactor authentication."
+      explanation: "Incorrect. While Microsoft recommends enabling combined security information registration to simplify the user onboarding experience that is not the sole purpose of Microsoft Entra multifactor authentication."
     - content: "To add additional security over only using a password when a user signs in"
       isCorrect: true
       explanation: "Correct. Microsoft Entra multifactor authentication adds additional security over only using a password when a user signs in by prompting the user for additional forms of authentication, such as responding to a push notification or entering a code from a software or hardware token."
