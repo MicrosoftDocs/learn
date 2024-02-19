@@ -3,7 +3,7 @@ uid: learn.wwl.guided-project-develop-conditional-branching-looping
 metadata:
   title: Guided project - Develop conditional branching and looping structures in C#
   description: "Guided project - Develop conditional branching and looping structures in C#"
-  ms.date: 02/16/2024
+  ms.date: 02/19/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module
@@ -33,7 +33,7 @@ products:
 - dotnet
 - vs-code
 subjects:
-- development-tools
+- app-development
 units:
 - learn.wwl.guided-project-develop-conditional-branching-looping.introduction
 - learn.wwl.guided-project-develop-conditional-branching-looping.prepare
