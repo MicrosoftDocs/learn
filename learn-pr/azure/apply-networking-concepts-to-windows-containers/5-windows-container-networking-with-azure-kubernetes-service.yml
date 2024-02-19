@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.apply-networking-concepts-to-windows-containers.windows-container-networking-with-azure-kubernetes-service
+title: Windows container networking with Azure Kubernetes Service
+metadata:
+  unitType: learning-content
+  title: Windows container networking with Azure Kubernetes Service
+  description: Azure Kubernetes Service (AKS) manages your hosted Kubernetes environment and makes it simple to deploy and manage containerized applications in Azure. An AKS environment has features like automated updates, self-healing, and quick scaling.
+  ms.date: 02/12/2024
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-windows-container-networking-with-azure-kubernetes-service.md)]
