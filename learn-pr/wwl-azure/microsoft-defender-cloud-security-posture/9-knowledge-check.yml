@@ -60,7 +60,7 @@ quiz:
     - content: "Changing the geographical location of stored data."
       isCorrect: false
       explanation: "While data residency is an important consideration, custom initiatives in Microsoft Defender for Cloud are intended for tailoring security policies, not for data location management."
-  - content: "How can hybrid cloud and multi-cloud environments be integrated with Microsoft Defender for Cloud?"
+  - content: "How can hybrid cloud and multicloud environments be integrated with Microsoft Defender for Cloud?"
     choices:
     - content: "Through manual log file uploads only."
       isCorrect: false
@@ -70,4 +70,4 @@ quiz:
       explanation: "While third-party tools can be part of a comprehensive security strategy, the question focuses on how Microsoft Defender for Cloud itself facilitates integration and security management across different cloud environments."
     - content: "By connecting environments to Defender for Cloud for unified security management."
       isCorrect: true
-      explanation: "Integrating hybrid and multi-cloud environments with Microsoft Defender for Cloud allows organizations to centralize their security management, gaining visibility and control over their distributed resources."
+      explanation: "Integrating hybrid and multicloud environments with Microsoft Defender for Cloud allows organizations to centralize their security management, gaining visibility and control over their distributed resources."
