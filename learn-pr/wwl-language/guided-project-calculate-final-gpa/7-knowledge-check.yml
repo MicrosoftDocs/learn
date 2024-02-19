@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/16/2024
+  ms.date: 02/19/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
@@ -22,7 +22,7 @@ quiz:
       explanation: "Incorrect. Fractional values casted to an Integer aren't rounded up."
     - content: "3"
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "Correct! The result is 3 because when you cast a decimal to an int, the decimal is truncated without rounding."
   - content: "In the following code `decimal x = 7 / 5;` why does x = 1?"
     choices:
     - content: "Using the `decimal` data type truncates the fraction"
