@@ -3,7 +3,7 @@ uid: learn.languages.csharp-for
 metadata:
   title: Iterate through a code block using for statement in C#
   description: "Iterate through a code block using for statement in C#"
-  ms.date: 02/16/2024
+  ms.date: 02/19/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module
@@ -32,7 +32,7 @@ products:
 - dotnet
 - vs-code
 subjects:
-- development-tools
+- app-development
 units:
 - learn.languages.csharp-for.introduction
 - learn.languages.csharp-for.exercise-for
