@@ -12,7 +12,7 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "A developer needs to iterate through an array of items.  The number of items in the array is unknown.  The code inside the iteration code block examines each item sequentially to select an item that matches specified criteria.  The index number of the selected array element is not important.  The selected item is referenced multiple times within the code block.  Which type of iteration statement is best suited for this scenario?"
+  - content: "A developer needs to iterate through an array of items.  The number of items in the array is unknown.  The code inside the iteration code block examines each item sequentially to select an item that matches specified criteria.  The index number of the selected array element isn't important.  The selected item is referenced multiple times within the code block.  Which type of iteration statement is best suited for this scenario?"
     choices:
     - content: "`foreach`"
       isCorrect: true
