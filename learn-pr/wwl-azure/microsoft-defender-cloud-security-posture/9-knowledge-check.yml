@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/16/2024
+  ms.date: 02/19/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -27,7 +27,7 @@ quiz:
     - content: "To create marketing strategies for cloud services."
       isCorrect: false
       explanation: "External Attack Surface Management is designed for security purposes, not for developing marketing strategies."
-  - content: "External Attack Surface Management is designed for security purposes, not for developing marketing strategies."
+  - content: "How does Microsoft Defender for Cloud help assess compliance?"
     choices:
     - content: "By providing real-time currency exchange rates."
       isCorrect: false
