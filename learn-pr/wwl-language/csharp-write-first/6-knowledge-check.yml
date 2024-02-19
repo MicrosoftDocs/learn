@@ -16,7 +16,7 @@ quiz:
     choices:
     - content: "The compiler primarily locates spelling mistakes in your code."
       isCorrect: false
-      explanation: "Incorrect. While it's possible you misspelled something in your code and that produces an error, that isn't the primary job of the compiler."
+      explanation: "Incorrect. While it's possible you misspelled something in your code and that produces an error that isn't the primary job of the compiler."
     - content: "The compiler primarily executes your code."
       isCorrect: false
       explanation: "Incorrect. The compiler doesn't execute your code, but makes it possible for your code to be executed."
