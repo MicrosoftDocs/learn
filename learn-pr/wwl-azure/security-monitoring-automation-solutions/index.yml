@@ -3,13 +3,13 @@ uid: learn.wwl.security-monitoring-automation-solutions
 metadata:
   title: Configure and manage security monitoring and automation solutions
   description: "Configure and manage security monitoring and automation solutions"
-  ms.date: 02/16/2024
+  ms.date: 02/19/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
   ms.service: azure
 title: Configure and manage security monitoring and automation solutions
-summary: This module focuses on configuring and managing security monitoring and automation solutions using Azure Monitor and Microsoft Sentinel, enabling organizations to proactively identify and respond to security incidents in their cloud environment.
+summary: ''
 abstract: ""
 prerequisites: ""
 iconUrl: /training/achievements/generic-badge.svg
