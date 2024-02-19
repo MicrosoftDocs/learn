@@ -16,7 +16,7 @@ These problems are compounded for users who need access from another organizatio
  -  No one person may know all of the specific individuals in other organization's directories to be able to invite them<br>
  -  Even if they were able to invite these users, no one in that organization may remember to manage all of the users' access consistently
 
-Entitlement management can help address these challenges. To learn more about how customers have been using entitlement management, you can read the Mississippi Division of Medicaid, Storebrand and Avanade case studies.
+Entitlement management can help address these challenges. To learn more about how customers have been using entitlement management, you can read the Mississippi Division of Medicaid, Store brand and Avanade case studies.
 
 ## What can I do with entitlement management?
 

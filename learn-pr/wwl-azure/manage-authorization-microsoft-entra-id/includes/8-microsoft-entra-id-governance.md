@@ -33,8 +33,8 @@ Organizations also need additional identities, for partners, suppliers and other
 
 In Microsoft Entra ID Governance, you can enable business groups to determine which of these guests should have access, and for how long, using:<br>
 
- -  entitlement management in which you can specify the other organizations whose users are allowed to request access to your organization's resources. When one of those users's request is approved, they are automatically added by entitlement management as a B2B guest to your organization's directory, and assigned appropriate access. And entitlement management automatically removes the B2B guest user from your organization's directory when their access rights expire or are revoked.<br>
- -  access reviews that automates recurring reviews of existing guests already in your organization's directory, and removes those users from your organization's directory when they no longer need access.
+ -  entitlement management in which you can specify the other organizations whose users are allowed to request access to your organization's resources. When one of those user's request is approved, they are automatically added by entitlement management as a B2B guest to your organization's directory, and assigned appropriate access. And entitlement management automatically removes the B2B guest user from your organization's directory when their access rights expire or are revoked.<br>
+ -  access reviews that automate recurring reviews of existing guests already in your organization's directory, and removes those users from your organization's directory when they no longer need access.
 
 ## Access lifecycle
 
@@ -60,4 +60,4 @@ Governing privileged access is a key part of modern Identity Governance especial
 :::image type="content" source="../media/privileged-access-lifecycle-21c99e2d.png" alt-text="Diagram showing an example of the privileged access lifecycle.":::
 
 
-Microsoft Entra Privileged Identity Management (PIM) provides additional controls tailored to securing access rights for resources, across Microsoft Entra, Azure, other Microsoft Online Services and other applications. The just-in-time access, and role change alerting capabilities provided by Microsoft Entra PIM, in addition to multi-factor authentication and Conditional Access, provide a comprehensive set of governance controls to help secure your company's resources (directory, Microsoft 365, and Azure resource roles). As with other forms of access, organizations can use access reviews to configure recurring access re-certification for all users in privileged administrator roles.
+Microsoft Entra Privileged Identity Management (PIM) provides additional controls tailored to securing access rights for resources, across Microsoft Entra, Azure, other Microsoft Online Services and other applications. The just-in-time access, and role change alerting capabilities provided by Microsoft Entra PIM, in addition to multifactor authentication and Conditional Access, provide a comprehensive set of governance controls to help secure your company's resources (directory, Microsoft 365, and Azure resource roles). As with other forms of access, organizations can use access reviews to configure recurring access re-certification for all users in privileged administrator roles.
