@@ -32,7 +32,7 @@ quiz:
       explanation: "Incorrect. The `default` keyword does not supply a default value for the variable being evaluated. An error will be generated if the variable has not been initialized."
     - content: "The `default` keyword acts as the matching value when none of the supplied `case` values is a match."
       isCorrect: true
-      explanation: "Correct. If there are no matching `case` value labels, the optional `default` label is used as the matching value."
+      explanation: "Correct. If there is no matching `case` value labels, the optional `default` label is used as the matching value."
     - content: "The `default` keyword supplies a default actions code block that is always executed regardless of the matching case value"
       isCorrect: false
       explanation: "Incorrect. The `default` keyword does not supply a code block that is always executed."
