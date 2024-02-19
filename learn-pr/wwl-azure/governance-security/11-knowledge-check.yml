@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/12/2024
+  ms.date: 02/16/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -16,58 +16,58 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "A company wants to ensure protection against accidental or malicious deletion of their secrets. What feature should they configure on their key vault?"
+  - content: "What can be managed within an Azure Key Vault?"
     choices:
-    - content: "Configure soft delete and purge protection features on their secrets"
+    - content: "Virtual machine sizes and configurations."
       isCorrect: false
-      explanation: "Incorrect. Soft delete and purge protection features only protect against accidental or malicious deletion of secrets, not the entire key vault."
-    - content: "Back up all secrets in the key vault"
-      isCorrect: false
-      explanation: "Incorrect. Backing up secrets may introduce operational challenges and cause time-out errors."
-    - content: "Configure soft delete and purge protection features on their key vault"
+      explanation: "Vault is not involved in managing VM sizes or configurations. It's focused on cryptographic keys and secrets management."
+    - content: "Certificates, secrets, and encryption keys."
       isCorrect: true
-      explanation: "Correct. Soft delete and purge protection features protect against accidental or malicious deletion of the entire key vault."
-  - content: "A company wants to ensure that only approved changes can be made to their environment to maintain compliance. Which artifact can be included in a blueprint definition to achieve this?"
+      explanation: "Key Vault is specifically designed for securely storing and accessing secrets, keys, and certificates, providing a centralized management solution for these sensitive data."
+    - content: "Networking equipment configurations."
+      isCorrect: false
+      explanation: "Key Vault manages cryptographic keys and secrets, not network configurations."
+  - content: "What is the primary function of Azure Policy?"
     choices:
-    - content: "Resource Hierarchy"
+    - content: "To enhance network speed and efficiency."
       isCorrect: false
-      explanation: "Incorrect. Resource Hierarchy is used to create a new resource group for use by other artifacts within the blueprint."
-    - content: "Azure Resource Manager template"
+      explanation: "Azure Policy does not directly affect network speed or efficiency. Its main role is governance and compliance."
+    - content: "To provide unlimited storage capacity for any Azure service."
       isCorrect: false
-      explanation: "Incorrect. Azure Resource Manager template is used to compose complex environments."
-    - content: "Policy Assignment"
+      explanation: "Azure Policy focuses on governance and compliance, not on providing storage solutions."
+    - content: "To create, assign, and manage governance policies for Azure resources."
       isCorrect: true
-      explanation: "Correct. Policy Assignment allows assignment of a policy or initiative to the subscription the blueprint is assigned to, ensuring only approved changes can be made to the environment."
-  - content: "A company wants to ensure that their development teams can rapidly build and start up new environments with trust they're building within organizational compliance. Which Azure service enables cloud architects and central information technology groups to define a repeatable set of Azure resources that implements and adheres to an organization's standards, patterns, and requirements?"
+      explanation: "Azure Policy is used to enforce organizational standards and assess compliance at scale, ensuring resources conform to corporate policies and regulatory requirements."
+  - content: "How do Azure Blueprints help in configuring security settings?"
     choices:
-    - content: "Azure Resource Manager templates"
-      isCorrect: false
-      explanation: "Incorrect. Azure Resource Manager templates are documents that get used for deployments of one or more Azure resources, but once those resources deploy there's no active connection or relationship to the template."
-    - content: "Azure Policy"
-      isCorrect: false
-      explanation: "Incorrect. Azure Policy is a default allow and explicit deny system focused on resource properties during deployment and for already existing resources."
-    - content: "Azure Blueprints"
+    - content: "By deploying pre-configured templates that include security settings."
       isCorrect: true
-      explanation: "Correct. Azure Blueprints enables cloud architects and central information technology groups to define a repeatable set of Azure resources that implements and adheres to an organization's standards, patterns, and requirements. It makes it possible for development teams to rapidly build and start up new environments with trust they're building within organizational compliance."
-  - content: "A security administrator needs to ensure that cryptographic keys are regularly updated to enhance security. Which of the following Azure Key Vault configurations should be implemented to achieve this goal?"
+      explanation: "Azure Blueprints automate the deployment of resources, including security policies, RBAC settings, and ARM templates, ensuring a consistent and compliant environment."
+    - content: "By manually managing each resource individually."
+      isCorrect: false
+      explanation: "Blueprints provide automation for deployment, not manual management."
+    - content: "By automatically scaling resources based on demand."
+      isCorrect: false
+      explanation: "Blueprints focus on governance and compliance, not on resource scaling."
+  - content: "How is key rotation configured in Azure Key Vault?"
     choices:
-    - content: "Implement backup and recovery processes for certificates, secrets, and keys"
+    - content: "By manually updating keys at each use."
       isCorrect: false
-      explanation: "Incorrect. Backup and recovery processes ensure data resilience and availability, but they do not address key rotation."
-    - content: "Configure access to Key Vault using Azure Role Based Access Control (RBAC)"
+      explanation: "Manual updates do not adhere to best practices for key rotation, which requires a more automated and reliable method."
+    - content: "Using physical security mechanisms."
       isCorrect: false
-      explanation: "Incorrect. RBAC is used to control permissions effectively, but it does not address key rotation."
-    - content: "Configure key rotation to enhance security by regularly updating cryptographic keys"
+      explanation: "Key rotation is a digital process that involves updating cryptographic keys at specified intervals, not related to physical security."
+    - content: "Through automatic rotation policies."
       isCorrect: true
-      explanation: "Correct. Key rotation enhances security by regularly updating cryptographic keys."
-  - content: "A company needs to store cryptographic keys in a FIPS 140-2 Level 3 validated HSM. Which Azure service can they use?"
+      explanation: "Azure Key Vault supports configuring automatic key rotation policies, enhancing security by regularly updating cryptographic keys without manual intervention."
+  - content: "What is the purpose of a dedicated Hardware Security Module (HSM)?"
     choices:
-    - content: "Azure Key Vault Managed HSM"
+    - content: "To serve as an external backup device for Azure services."
       isCorrect: false
-      explanation: "Incorrect. Azure Key Vault Managed HSM currently uses FIPS 140-2 Level 2 validated HSMs."
-    - content: "Azure Security Center"
-      isCorrect: false
-      explanation: "Incorrect. Azure Security Center is a unified infrastructure security management system that strengthens the security posture of your data centers and provides advanced threat protection across hybrid workloads."
-    - content: "Azure Dedicated HSM"
+      explanation: "HSMs are focused on securing cryptographic keys and performing secure cryptographic operations, not serving as backup devices."
+    - content: "To enhance security by physically protecting cryptographic keys."
       isCorrect: true
-      explanation: "Correct. Azure Dedicated HSM is an Azure service that provides cryptographic key storage in Azure and meets the most stringent security requirements, including FIPS 140-2 Level 3 validation."
+      explanation: "Dedicated HSMs provide a high level of security for cryptographic operations and key management by physically isolating and protecting keys from unauthorized access."
+    - content: "To provide a physical computing device for processing graphical data."
+      isCorrect: false
+      explanation: "HSMs are designed for securing cryptographic keys, not for processing graphical data."
