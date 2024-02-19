@@ -3,7 +3,7 @@ uid: learn.languages.csharp-write-first
 metadata:
   title: Write your first C# code
   description: "Write your first C# code"
-  ms.date: 02/16/2024
+  ms.date: 02/19/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
@@ -25,8 +25,6 @@ roles:
 - developer
 products:
 - dotnet
-subjects:
-- development-tools
 units:
 - learn.languages.csharp-write-first.introduction
 - learn.languages.csharp-write-first.exercise-hello-world
