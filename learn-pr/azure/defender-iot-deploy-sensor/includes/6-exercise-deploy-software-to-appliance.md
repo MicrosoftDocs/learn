@@ -1,25 +1,14 @@
-This unit describes how to download the OT monitoring software from the Defender for IoT in the Azure portal. Then set up a virtual machine and connect it to a device/ interface. Then upload the monitoring software to the sensor. Afterwards, configure the network settings so that the sensor connects with the Azure portal. Finally, assign the end point interfaces, activate the sensor and set up the security certificates.
+This unit describes how to download the OT monitoring software from the Defender for IoT in the Azure portal. Then upload the monitoring software to the virtual machine OT sensor. Afterwards, configure the network settings so that the sensor connects with the Azure portal. Finally, assign the end point interfaces, activate the sensor and set up the security certificates.
 <!-- check all images for compliance - may need to redo them or edit -->
 
 ## Install Defender for IoT software
 
 To start the software installation, open your virtual machine.
 
-### Configure the virtual machine
-<!-- is this correct, and described properly, or has it already been done above??check with Mark -->
-The virtual machine must have two network adapters configured, one that connects to the Azure portal, and the other to the traffic mirroring ports on the sensor.
-
-On your virtual machine:
-
-1. Open the VM settings
-1. Add two new network adaptors, give each a significant name so they're easily identifiable, such as:
-    - **Azure network adapter** - to connect to the Azure portal
-    - **Mirroring port adapter** - to connect to the sensor mirroring port
-
 ### Download the monitoring software file
 
 In Defender for IoT select **Getting started > Sensor**, then select the latest software version and select **Download**. <!-- must ensure they download the correct software version otherwise the admin and log in will be incorrect, if it is different on older versions -->
-
+<!-- is this file 'given' to the person as a prerequisite? -->
 :::image type="content" source="../media/4-download-iso-file.png" alt-text="screenshot of Downloading ISO monitoring file from Defender for IoT":::
 
 Save the downloaded ISO file in a location that's accessible from your VM.
@@ -64,7 +53,7 @@ On your virtual machine:
 
 ### Post-installation validation
 <!-- do we really need to include this section for the LM? -->
-This procedure describes how to validate your installation using the sensor's own system health checks and is available to the default *admin* user.
+Validate your installation using the sensor's own system health checks, available to the default *admin* user.
 
 **To validate your installation**:
 
@@ -80,22 +69,14 @@ This procedure describes how to validate your installation using the sensor's ow
 <!-- I would prefer this heading to be ## Activate and initial setup as is in the diagram before -->
 ## Define initial setup
 
-The following procedure describes how to configure your sensor's initial setup settings, including:
-
-- Signing into the sensor console and changing the *admin* user password
-- Defining network details for your sensor
-- Defining the interfaces you want to monitor
-- Activating your sensor
-- Configuring SSL/TLS certificate settings
-
-### Signing in to the sensor
+Sign in to the sensor and then configure your sensor's initial settings, which has four stages.
 
 Open a browser in the virtual machine.
 
-1. Enter the IP address given at the end of the sensor installation, ```192.168.0.101```. The initial sign-in page appears, for example:
+1. Type the IP address given at the end of the sensor installation, ```192.168.0.101```. The initial sign-in page appears, for example:
 
     :::image type="content" source="../media/4-console-sign-in-page.png" alt-text="Screenshot of sensor console sign in":::
-1. Enter the following credentials:<!-- how do we know they have chosen the correct sensor verison? define that above-->
+1. Type the following credentials:<!-- how do we know they have chosen the correct sensor verison? define that above-->
 
     Username: ```admin```
     Password: ```admin```
@@ -104,7 +85,7 @@ Open a browser in the virtual machine.
 
 ## Activate and initial setup
 
-The **Defender for IoT | Overview** page opens to the **Management interface** tab.
+The **Defender for IoT | Overview** page opens to the **Management interface** tab. Now you start to configure the settings.
 <!-- add screenshot of the Overview page here -->
 
 ### Define network details

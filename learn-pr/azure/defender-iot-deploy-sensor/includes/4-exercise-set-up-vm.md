@@ -8,20 +8,10 @@ Configure your firewall rules so that your sensor can access the cloud on port 4
 ## Create a virtual machine with ESXi
 
 To perform this procedure, VMware, ESXi 5.5 or later must be installed and operational on your ??sensor??. Defender for IoT also supports other processes, such as using Hyper-V or physical sensors.
-<!-- I think the next is not important for this
-Details for the following network parameters to use for your sensor appliance:
-
-- A management network IP address
-- A sensor subnet mask
-- An appliance hostname
-- A DNS address
-- A default gateway
-- Any input interfaces
--->
 
 1. Make sure that VMware is running on your machine.
 
-1. Sign in to <!-- removed the-->ESXi, choose the relevant **datastore**, and select **Datastore Browser**.
+1. Sign in to ESXi, choose the relevant **datastore**, and select **Datastore Browser**.
 
 1. **Upload** the image and select **Close**.
 
@@ -62,9 +52,9 @@ Virtual switches don't have mirroring capabilities. However, for the sake of thi
 
 1. Open the vSwitch properties page and select **Add standard virtual switch**.
 
-1. Enter **SPAN Network** as the network label.
+1. Type **SPAN Network** as the network label.
 
-1. In the MTU field, enter **4096**.
+1. In the MTU field, type **4096**.
 
 1. Select **Security**, and verify that the **Promiscuous Mode** policy is set to **Accept** mode.
 
@@ -76,7 +66,7 @@ Virtual switches don't have mirroring capabilities. However, for the sake of thi
 
 1. Open the **Port Group** properties page and select **Add Port Group**.
 
-1. Enter **SPAN Port Group** as the name, enter **4095** as the VLAN ID, and select **SPAN Network** in the vSwitch drop down, then select **Add**.
+1. Type **SPAN Port Group** as the name, type **4095** as the VLAN ID, and select **SPAN Network** in the vSwitch drop down, then select **Add**.
 
 1. Open the **OT Sensor VM** properties.
 
@@ -90,7 +80,7 @@ Virtual switches don't have mirroring capabilities. However, for the sake of thi
 <!-- check if this needs to be done, or can we give them a fake file?  -->
 After you configure the traffic mirroring, retrieve a PCAP file to receive a sample of recorded traffic (PCAP file) from the switch SPAN or mirror port.
 
-A sample PCAP file helps you: <!-- helps you -->
+A sample PCAP file helps you: <!-- remove this or is it actually important to explain why they need the pcap file now? should be in unit3 not 4? -->
 
 - Validate the switch configuration
 - Confirm that the traffic going through your switch is relevant for monitoring
@@ -107,4 +97,6 @@ A sample PCAP file helps you: <!-- helps you -->
     For example:
 
     :::image type="content" source="../media/4-wireshark-validation.png" alt-text="Screenshot of Wireshark validation.":::
-<!-- Consider breaking this unit at this point and making a new one for the next stage -->
+
+### Check your work
+<!-- what do we need to provide that shows the work is correct? ask Mark -->

@@ -1,28 +1,21 @@
-Your car manufacturing organization has offices and production sites across the globe, with a network linking them together. A sensor was onboarded to Defender for IoT and the site networking is set up. A virtual machine is active which your sensor runs on. Now your task is to deploy the sensor by installing the OT monitoring software and activating the sensor to send data to the Azure portal.
+Your car manufacturing organization has offices and production sites across the globe, with a network linking them together. A sensor was onboarded to Defender for IoT and the site networking is set up. A virtual machine is active which runs your sensor.
+
+Now your task is to deploy the sensor by installing the OT monitoring software and activating the sensor to send data to the Azure portal.
 
 ## Your organization's OT sensor deployment plan
 
 The OT sensor deployment plan is shown in the following diagram:
 
 :::image type="content" source="../media/3-deploy-sensors.png" alt-text="Diagram of the sensor deployment path" border="false":::
-<!--
+<!-- this title was based on the diagram above -should this image be re done and change the titles to fit our new flow?? -->
 ## Install Defender for IoT software
- I dont understand the headings here, I would have thought this should be H3 as it is a sub category of the previous H2 heading. But Cat put this entire section as H2s? I have done that here but it seems incorrect-->
 
-<!-- WHAT DOES THIS MEAN  - Ensure that the hostname is configured in the organizational DNS server. in the jenkins sensor-->
-<!--Download the OT monitoring software installation file from the Defender for IoT setup page, and then install it on the OT sensor appliance. For our scenario, the OT sensor appliance is a virtual machine. We will use the VMware ESXi v-Switch to build the virtual machine, but other systems such as HyperV could also be used.
+Download the OT monitoring software installation file from the Defender for IoT setup page. <!-- is this provided by the previous team??? --> Save the ISO file, at a later stage you will install it on to the OT sensor appliance.
 
-You need the details of two network adapters:
-
-- One connects the sensor to the Azure portal for cloud management.
-- The other connects the sensor to a traffic mirroring port.
-
-For more information about setting up your virtual machine, refer to your virtual machine software documentation.
-
-Run the installation file on the virtual machine, and follow the stages in the wizard to install the software. Once the installation is completed the default network details are displayed. In a real life scenario, configured sensors can be bought and this step is skipped.-->
+Run the installation file on the virtual machine, and follow the stages in the wizard to install the software. Once the installation is completed the default network details are displayed. In a real life scenario, configured sensors can be bought and this step is skipped.
 
 ## Activate and set up the sensor
-<!-- this title was based on the diagram above - -->
+<!-- this title was based on the diagram above -should this image be re done and change the titles to fit our new flow?? -->
 Configure the sensor in a browser, and provide the sensor administrator username and password.
 
 The browser displays the **Defender for IoT | Overview** page, which leads you through the four stages of setting up the sensor. Each stage is displayed in its own tab.
