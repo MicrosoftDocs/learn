@@ -58,7 +58,6 @@ The latest .NET 8 release has improved support for containerization. You can use
     store                               latest    e9458c3abdb1   About a minute ago   218MB
     ```
 
-
 ## Use a Dockerfile to create the Products back-end image
 
 If you want more control of how the images are built, you can use a Dockerfile to create an image for the Products web service. 
@@ -148,21 +147,23 @@ Having completed the Dockerfile, the next step is to use it to create a Docker i
     productsbackend                     latest   190783f7e06f    About a minute ago   293MB
     ```
 
+Think about the difference between using `dotnet publish` and having to manually create the **dockerfiles** for each microservice in your apps.
+
 ## Run the container and test the service
 
 Now you can use the image to run and host the Products service.
 
-1. To create and run a container from the new **productsbackend** image and expose the service on port 5200, run this command:
+1. To create and run a container from the new **products** image and expose the service on port 32001, run this command:
+
+    ```bash
+    docker run -it --rm -p 32001:8080  products
+    ```
+
+    Or if you'd like to run the image you created using the Dockerfile, run:
 
     ```bash
     docker run -it --rm -p 32001:8080 productsbackend
     ```
-
-    Or to run the image you created with `dotnet publish` run:
-
-    ```bash
-    docker run -it --rm -p 32001:8080  products
-    ```   
 
 1. To test the service, switch to the **PORTS** tab then, to the right of the local address for the **Back End** port, select the globe icon. The browser opens a new tab at that address.
 
