@@ -50,7 +50,7 @@ With an access package, an administrator or delegated access package manager lis
 
 Access packages also include one or more policies. A policy defines the rules or guardrails for assignment to access package. Each policy can be used to ensure that only the appropriate users are able to have access assignments, and the access is time-limited and will expire if not renewed.
 
-:::image type="content" source="../media/entitlement%20management-access-package-ff92c8c2.png" alt-text="Diagram showing an example of the entitlement management access package.":::
+:::image type="content" source="../media/entitlement-management-access-package-f8cf669c.png" alt-text="Diagram showing an example of the entitlement management access package.":::
 
 
 You can have policies for users to request access. In these kinds of policies, an administrator or access package manager defines
