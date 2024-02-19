@@ -33,7 +33,7 @@ Organizations also need additional identities, for partners, suppliers and other
 
 In Microsoft Entra ID Governance, you can enable business groups to determine which of these guests should have access, and for how long, using:<br>
 
- -  entitlement management in which you can specify the other organizations whose users are allowed to request access to your organization's resources. When one of those user's request is approved, they are automatically added by entitlement management as a B2B guest to your organization's directory, and assigned appropriate access. And entitlement management automatically removes the B2B guest user from your organization's directory when their access rights expire or are revoked.<br>
+ -  entitlement management in which you can specify the other organizations whose users are allowed to request access to your organization's resources. When one of those users's request is approved, they are automatically added by entitlement management as a B2B guest to your organization's directory, and assigned appropriate access. And entitlement management automatically removes the B2B guest user from your organization's directory when their access rights expire or are revoked.<br>
  -  access reviews that automate recurring reviews of existing guests already in your organization's directory, and removes those users from your organization's directory when they no longer need access.
 
 ## Access lifecycle

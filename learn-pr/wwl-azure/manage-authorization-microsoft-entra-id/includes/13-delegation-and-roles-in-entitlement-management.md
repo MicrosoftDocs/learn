@@ -67,7 +67,7 @@ Also, the chosen approver and a requestor of an access package have rights, alth
 | Approver  | Authorized by a policy to approve or deny requests to access packages, though they can't change the access package definitions. |
 | Requestor | Authorized by a policy of an access package to request that access package.                                                     |
 
-The following table lists the tasks that the entitlement management roles can do within entitlement managemen
+The following table lists the tasks that the entitlement management roles can do within entitlement management
 
 | **Task**                                                                | **Admin** | **Catalog creator** | **Catalog owner** | **Access package manager** | **Access package assignment manager** |
 |-------------------------------------------------------------------------|-----------|---------------------|-------------------|----------------------------|---------------------------------------|
