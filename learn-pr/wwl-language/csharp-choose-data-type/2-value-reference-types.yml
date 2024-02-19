@@ -16,12 +16,12 @@ quiz:
   questions:
   - content: "Which choice best represents how bits represent on and off?"
     choices:
-    - content: "Bits are represented by \"x\" or \"o\""
+    - content: "Bits are represented by \"x\" or \"o\"."
       isCorrect: false
       explanation: "Incorrect. Bits are binary and represented using the \"1\" or \"0\" digit."
-    - content: "Bits are represented by \"+bit\" or \"-bit\""
+    - content: "Bits are represented by \"+bit\" or \"-bit\"."
       isCorrect: false
       explanation: "Incorrect. Bits are binary and represented using the \"1\" or \"0\" digit."
-    - content: "Bits are binary and represented by \"1\" or \"0\""
+    - content: "Bits are binary and represented by \"1\" or \"0\"."
       isCorrect: true
       explanation: "Correct. Bits are represented using the \"1\" or \"0\" digit."
