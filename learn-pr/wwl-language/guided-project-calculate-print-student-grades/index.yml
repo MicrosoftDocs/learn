@@ -11,12 +11,7 @@ metadata:
   ms.devlang: csharp
 title: Guided project - Calculate and print student grades
 summary: Learn to develop an application that will calculate and display results based on given data.
-abstract: |
-  After you complete this module, you'll be able to:
-  *   Learn to develop basic applications by breaking down the work into smaller parts
-  *   Identify appropriate data types for storing and working with variables
-  *   Perform mathematical operations to determine results
-  *   Apply formatting techniques to display output
+abstract: ""
 prerequisites: |
   *   Beginner level experience with basic C# syntax rules
   *   Beginner level experience with displaying a message to a console using the Console.WriteLine() and Console.Write() methods
