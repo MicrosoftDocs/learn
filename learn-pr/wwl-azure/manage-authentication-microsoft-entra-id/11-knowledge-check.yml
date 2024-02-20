@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/12/2024
+  ms.date: 02/19/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -27,47 +27,47 @@ quiz:
     - content: "To process password validation requests from the password filter DLL of the DC Agent using the current locally available password policy and return the result of pass or fail"
       isCorrect: true
       explanation: "Correct. The DC Agent service processes password validation requests from the password filter DLL of the DC Agent using the current locally available password policy and returns the result of pass or fail."
-  - content: "What does System for Cross Domain Identity Management (SCIM) enabled application do?"
-    choices:
-    - content: "Provides a list of all SaaS apps that have been pre-integrated into Microsoft Entra ID."
-      isCorrect: false
-      explanation: "Incorrect. This answer describes what the Microsoft Entra ID Marketplace does."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
-      isCorrect: false
-      explanation: "Incorrect. This answer describes what an automation tool does."
-    - content: "Allows for automatic provisioning of user accounts and groups across different systems"
-      isCorrect: true
-      explanation: "Correct. SCIM enables automatic provisioning of user accounts and groups across different systems, making it easier to manage access control."
-  - content: "What does Microsoft Entra Verified ID enable?"
-    choices:
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
-      isCorrect: false
-      explanation: "Incorrect. This is a description of a different service."
-    - content: "Enables the creation of virtual machines for cloud computing"
-      isCorrect: false
-      explanation: "Incorrect. This is a description of a different service."
-    - content: "Enables the verification of credentials issued by other organizations"
-      isCorrect: true
-      explanation: "Correct. Microsoft Entra Verified ID allows verifiers to use their own tenant to verify credentials issued by other organizations."
   - content: "A verifier uses their own Microsoft Entra tenant to perform the verification of the credential that was issued by another organization. What is the purpose of using Microsoft Entra Verified ID service for verification?"
     choices:
     - content: "To issue verifiable credentials using your own tenant"
       isCorrect: false
       explanation: "Incorrect. This is the purpose of setting up Microsoft Entra Verified ID service, not using it for verification."
-    - content: "To download ngrok and sign up for a free account"
-      isCorrect: false
-      explanation: "Incorrect. This is a prerequisite for setting up the sample application, not the purpose of using Microsoft Entra Verified ID service for verification."
     - content: "To unlock privileges to subjects that possess verified credential expert cards"
       isCorrect: true
       explanation: "Correct. The purpose of using Microsoft Entra Verified ID service for verification is to unlock privileges to subjects that possess verified credential expert cards."
+    - content: "To download ngrok and sign up for a free account"
+      isCorrect: false
+      explanation: "Incorrect. This is a prerequisite for setting up the sample application, not the purpose of using Microsoft Entra Verified ID service for verification."
   - content: "A company is planning to deploy SSO with their applications in Microsoft Entra ID. They need to consider administrative roles, certificate renewal, communication, and licensing. Which of the following is true about the SAML application certificate?"
     choices:
+    - content: "The certificate needs to be renewed prior to its expiration, and the expiration date can be customized in the Microsoft Entra admin center."
+      isCorrect: true
+      explanation: "Correct. It's important to have processes in place to renew certificates prior to their expiration, and to identify the right roles and email distribution lists involved with managing the lifecycle of the signing certificate. The certificate duration can be changed in the Microsoft Entra admin center."
     - content: "The certificate can't be customized."
       isCorrect: false
       explanation: "Incorrect. The certificate can be customized for expiration date if needed."
     - content: "The certificate is valid for one year by default."
       isCorrect: false
       explanation: "Incorrect. The certificate is valid for three years by default."
-    - content: "The certificate needs to be renewed prior to its expiration, and the expiration date can be customized in the Microsoft Entra admin center."
+  - content: "What does the Linked option do in My Apps?"
+    choices:
+    - content: "Lets you configure the target location when a user selects the application in your organization's end user portals"
       isCorrect: true
-      explanation: "Correct. It's important to have processes in place to renew certificates prior to their expiration, and to identify the right roles and email distribution lists involved with managing the lifecycle of the signing certificate. The certificate duration can be changed in the Microsoft Entra admin center."
+      explanation: "Correct. The Linked option lets you configure the target location when a user selects the application in your organization's end user portals."
+    - content: "Enables sign on functionality through Microsoft Entra credentials"
+      isCorrect: false
+      explanation: "Incorrect. The Linked option doesn't provide sign-on functionality through Microsoft Entra credentials."
+    - content: "Disables SSO when the application isn't ready to be configured for SSO"
+      isCorrect: false
+      explanation: "Incorrect. The Disabled option disables SSO when the application isn't ready to be configured for SSO."
+  - content: "What is the purpose of Microsoft Entra multifactor authentication?"
+    choices:
+    - content: "To simplify the user onboarding experience"
+      isCorrect: false
+      explanation: "Incorrect. While Microsoft recommends enabling combined security information registration to simplify the user onboarding experience that isn't the sole purpose of Microsoft Entra multifactor authentication."
+    - content: "To add additional security over only using a password when a user signs in"
+      isCorrect: true
+      explanation: "Correct. Microsoft Entra multifactor authentication adds additional security over only using a password when a user signs in by prompting the user for additional forms of authentication, such as responding to a push notification or entering a code from a software or hardware token."
+    - content: "To replace passwords with more complex authentication methods"
+      isCorrect: false
+      explanation: "Incorrect. Passwords should be replaced with more secure authentication methods, but that isn't the sole purpose of Microsoft Entra multifactor authentication."

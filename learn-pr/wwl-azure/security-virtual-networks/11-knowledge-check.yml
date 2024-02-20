@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/12/2024
+  ms.date: 02/19/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -40,34 +40,34 @@ quiz:
       explanation: "Correct. ASGs enable you to configure network security as a natural extension of an application's structure, allowing you to group virtual machines and define network security policies based on those groups."
   - content: "A company needs to connect two virtual networks in Azure so that traffic can be routed between them. Which virtual network connection type should they use?"
     choices:
+    - content: "Virtual network peering"
+      isCorrect: true
+      explanation: "Correct. Virtual network peering connects two Azure virtual networks so that they appear as one for connectivity purposes. Traffic between virtual machines in the peered virtual networks is routed through the Microsoft backbone infrastructure, through private IP addresses only. No public internet is involved. This provides a low latency, high bandwidth connection and is useful in scenarios such as cross-region data replication and database failover."
     - content: "Global peering"
       isCorrect: false
       explanation: "Incorrect. Global peering is used to peer virtual networks across Azure regions, but it does not provide a direct connection between two virtual networks within the same region."
     - content: "VPN gateway"
       isCorrect: false
       explanation: "Incorrect. A VPN gateway is used to send traffic between an Azure virtual network and an on-premises location over the public internet. While it can also be used to send traffic between Azure virtual networks, it is not the most efficient option for connecting two virtual networks within the same region."
-    - content: "Virtual network peering"
-      isCorrect: true
-      explanation: "Correct. Virtual network peering connects two Azure virtual networks so that they appear as one for connectivity purposes. Traffic between virtual machines in the peered virtual networks is routed through the Microsoft backbone infrastructure, through private IP addresses only. No public internet is involved. This provides a low latency, high bandwidth connection and is useful in scenarios such as cross-region data replication and database failover."
   - content: "A network security group is associated with a virtual machine's network interface. The security rules in the network security group are processed for inbound traffic. If the network security group allows port 80 inbound, which of the following will process the traffic?"
     choices:
+    - content: "The security rules in the network security group associated with the network interface"
+      isCorrect: true
+      explanation: "Correct. The security rules in the network security group associated with the network interface are processed first for inbound traffic."
     - content: "The security rules in the network security group associated with the subnet and the network interface"
       isCorrect: false
       explanation: "Incorrect. The security rules in the network security group associated with the network interface are processed first."
     - content: "The security rules in the network security group associated with the subnet"
       isCorrect: false
       explanation: "Incorrect. The security rules in the network security group associated with the network interface are processed first."
-    - content: "The security rules in the network security group associated with the network interface"
-      isCorrect: true
-      explanation: "Correct. The security rules in the network security group associated with the network interface are processed first for inbound traffic."
   - content: "A company wants to establish network topologies that combine cross premises connectivity with inter virtual network connectivity. Which Azure feature allows them to do this?"
     choices:
     - content: "Azure Virtual Network Gateway"
       isCorrect: false
       explanation: "Incorrect. Azure Virtual Network Gateway is used to establish secure, cross-premises connectivity between an on-premises network and Azure."
-    - content: "Azure Resource Manager"
-      isCorrect: false
-      explanation: "Incorrect. Azure Resource Manager is a deployment model used to manage resources in Azure."
     - content: "VNet peering"
       isCorrect: true
       explanation: "Correct. VNet peering allows the establishment of network topologies that combine cross premises connectivity with inter virtual network connectivity without using a virtual network gateway."
+    - content: "Azure Resource Manager"
+      isCorrect: false
+      explanation: "Incorrect. Azure Resource Manager is a deployment model used to manage resources in Azure."
