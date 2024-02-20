@@ -4,7 +4,7 @@ Azure IoT Hub implements device-to-cloud messaging using a streaming messaging p
 
 An Azure IoT Hub message consists of:
 
-* A predetermined set of *system properties* as listed in **System properties of D2C Azure IoT Hub messages**.
+* A predetermined set of *system properties* as described later in this unit.
 * A set of *application properties*. A dictionary of string properties that the application can define and access, without needing to deserialize the message body. Azure IoT Hub never modifies these properties.
 * A message body, which can be any type of data.
 
@@ -20,9 +20,9 @@ Device-to-cloud messaging with Azure IoT Hub has the following characteristics:
 
 For more information about how to encode and decode messages sent using different protocols, see [Azure IoT SDKs](/azure/iot-hub/iot-hub-devguide-sdks).
 
-Each IoT Hub protocol provides a message content type property, which is respected when routing data to custom endpoints. To have your data properly handled at the destination (for example, JSON being treated as a parsable string instead of Base64 encoded binary data), you must provide the appropriate content type and charset for the message.
+Each IoT Hub protocol provides a message content type property, which is respected when routing data to custom endpoints. To have your data properly handled at the destination (for example, JSON being treated as a parsable string instead of Base64 encoded binary data), provide the appropriate content type and charset for the message.
 
-To use your message body in an IoT Hub routing query, you must provide a valid JSON object for the message and set the content type property of the message to `application/json;charset=utf-8`.
+To use your message body in an IoT Hub routing query, provide a valid JSON object for the message and set the content type property of the message to `application/json;charset=utf-8`.
 
 A valid, routable message body may look like the following definition:
 
@@ -56,7 +56,7 @@ routing query
     message-id
   :::column-end:::
   :::column:::
-    A user-settable identifier for the message used for request-reply patterns. Format: A case-sensitive string (up to 128 characters long) of ASCII 7-bit alphanumeric characters. The following other characters can also be used \{'-', ':', '.', '+', '%', '\_', '\#', '\*', '?', '!', '(', ')', ',', '=', '@', ';', '$', '''\}
+    A user-settable identifier for the message used for request-reply patterns. Format: A case-sensitive string (up to 128 characters long) of ASCII 7-bit alphanumeric characters. The following other characters can also be used `- : . + % \ # * ? ! ( ) , = @ ; $ '`.
   :::column-end:::
   :::column:::
     Yes
@@ -70,7 +70,7 @@ routing query
     iothub-enqueuedtime
   :::column-end:::
   :::column:::
-    Date and time the Device-to-Cloud message was received by Azure IoT Hub.
+    The date and time the device-to-cloud message was received by Azure IoT Hub.
   :::column-end:::
   :::column:::
     No
@@ -226,7 +226,7 @@ routing query
     message-id
   :::column-end:::
   :::column:::
-    A user-settable identifier for the message used for request-reply patterns. Format: A case-sensitive string (up to 128 characters long) of ASCII 7-bit alphanumeric characters. The following other characters can also be used \{'-', ':', '.', '+', '%', '\_', '\#', '\*', '?', '!', '(', ')', ',', '=', '@', ';', '$', '''\}.
+    A user-settable identifier for the message used for request-reply patterns. Format: A case-sensitive string (up to 128 characters long) of ASCII 7-bit alphanumeric characters. The following other characters can also be used  `- : . + % _ # * ? ! ( ) , = @ ; $ '`.
   :::column-end:::
   :::column:::
     Yes
@@ -248,7 +248,7 @@ routing query
     to
   :::column-end:::
   :::column:::
-    A destination specified in Cloud-to-Device messages.
+    A destination specified in cloud-to-device messages.
   :::column-end:::
   :::column:::
     No

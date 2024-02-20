@@ -4,7 +4,7 @@ Message routing enables you to send messages from your devices to cloud services
 
 * Filtering data before routing it to various endpoints by applying rich queries. Message routing allows you to query on the message properties and message body as well as device twin tags and device twin properties.
 
-As described in the previous unit page, Azure IoT Hub defines a common set of features for all device-to-cloud messaging for interoperability across protocols.
+As described in the previous unit, Azure IoT Hub defines a common set of features for all device-to-cloud messaging for interoperability across protocols.
 
 > [!NOTE]
 > Some of the features mentioned in this unit, like cloud-to-device messaging, device twins, and device management, are only available in the standard tier of IoT Hub.
@@ -19,7 +19,7 @@ Each message is routed to all endpoints whose routing queries it matches. In oth
 
 You can use standard Event Hubs integration and SDKs to receive device-to-cloud messages from the built-in endpoint (messages/events). Once a route is created, data stops flowing to the built-in endpoint unless a route is created to that endpoint. Even if no routes are created, a fallback route must be enabled to route messages to the built-in endpoint. The fallback is enabled by default if you create your hub using the portal or the CLI.
 
-The built-in endpoint is described in more detail on the next unit page.
+The built-in endpoint is described in more detail in the next unit.
 
 ## Custom endpoints
 
@@ -44,7 +44,7 @@ There are two storage services that Azure IoT Hub can route messages to:
 
 Azure Data Lake Storage accounts are hierarchical namespace-enabled storage accounts built on top of blob storage. Both of these use blobs for their storage.
 
-To learn how to read from this endpoint type, see read from [Blob storage](/azure/storage/blobs/storage-blob-event-quickstart).
+To learn how to read from this endpoint type, see [Blob storage](/azure/storage/blobs/storage-blob-event-quickstart).
 
 ### Azure Service Bus queues and Service Bus topics as a routing endpoint
 
@@ -57,7 +57,7 @@ To learn how to read from these endpoint types, see:
 
 ### Event Hubs as a routing endpoint
 
-Event Hubs is a service that processes large amounts of event data (telemetry) from connected devices and applications. After you collect data into Event Hubs, you can store the data using a storage cluster or transform it using a real-time analytics provider. This large-scale event collection and processing capability are a key component of modern application architectures including the Internet of Things (IoT).
+Event Hubs is a service that processes large amounts of event data (telemetry) from connected devices and applications. After you collect data into Event Hubs, you can store the data using a storage cluster or transform it using a real-time analytics provider. This large-scale event collection and processing capability are a key component of modern application architectures including IoT.
 
 See, read from [Event Hubs](/azure/event-hubs/event-hubs-dotnet-standard-getstarted-send) to learn about how to read messages from Event Hubs.
 
@@ -87,7 +87,7 @@ In addition to device telemetry, message routing also enables sending non-teleme
 * Digital twin change events
 * Device connection state events
 
-For example, if a route is created with the data source set to **Device Twin Change Events**, Azure IoT Hub sends messages to the endpoint that contain the change in the device twin. Similarly, if a route is created with the data source set to **Device Lifecycle Events**, Azure IoT Hub sends a message indicating whether the device or module was deleted or created. For more information about device lifecycle events, see Device and module lifecycle notifications. When using Azure IoT Plug and Play, a developer can create routes with the data source set to **Digital Twin Change Events** and Azure IoT Hub sends messages whenever a digital twin property is set or changed, a digital twin is replaced, or when a change event happens for the underlying device twin. Finally, if a route is created with data source set to **Device Connection State Events**, IoT Hub sends a message indicating whether the device was connected or disconnected.
+For example, if a route is created with the data source set to **Device Twin Change Events**, Azure IoT Hub sends messages to the endpoint that contain the change in the device twin. Similarly, if a route is created with the data source set to **Device Lifecycle Events**, Azure IoT Hub sends a message indicating whether the device or module was deleted or created. When using Azure IoT Plug and Play, a developer can create routes with the data source set to **Digital Twin Change Events** and Azure IoT Hub sends messages whenever a digital twin property is set or changed, a digital twin is replaced, or when a change event happens for the underlying device twin. Finally, if a route is created with data source set to **Device Connection State Events**, IoT Hub sends a message indicating whether the device was connected or disconnected.
 
 Azure IoT Hub also integrates with Azure Event Grid to publish device events to support real-time integrations and automation of workflows based on these events.
 

@@ -45,15 +45,15 @@ Each routing query you configure has the following properties:
   :::column-end:::
 :::row-end:::
 
-A single message may match the condition on multiple routing queries, in which case Azure IoT Hub delivers the message to the endpoint associated with each matched query. Azure IoT Hub also automatically deduplicates message delivery, so if a message matches multiple queries that have the same destination, it's only written once to that destination.
-
 ## Message routing query syntax
 
 Message routing allows you to query on the message properties and message body as well as device twin tags and device twin properties. If the message body isn't in JSON format, message routing can still route the message, but queries can't be applied to the message body. Queries are described as Boolean expressions where, if true, the query succeeds and routes all the incoming data; otherwise, the query fails and the incoming data isn't routed. If the expression evaluates to a null or undefined value, it's treated as a Boolean false value, and generates an error in the Azure IoT Hub routes resource logs. The query syntax must be correct for the route to be saved and evaluated.
 
 ## Message routing query based on message properties
 
-Azure IoT Hub defines a common format for all device-to-cloud messaging for interoperability across protocols. Azure IoT Hub message assumes the following JSON representation of the message. System properties are added for all users and identify content of the message. Users can selectively add application properties to the message. We recommend using unique property names as Azure IoT Hub device-to-cloud messaging isn't case-sensitive. For example, if you have multiple properties with the same name, Azure IoT Hub will only send one of the properties.
+Azure IoT Hub defines a common format for all device-to-cloud messaging for interoperability across protocols. Azure IoT Hub assumes the following JSON representation of the message.
+* System properties (**systemProperties**) are added for all users and identify the content of the message.
+* Users can optionally add application properties (**appProperties**) to the message. Application properties are user-defined strings. We recommend using unique property names as Azure IoT Hub device-to-cloud messaging isn't case-sensitive. For example, if you have multiple properties with the same name, Azure IoT Hub will only send one of the properties.
 
 ```json
 { 
@@ -75,16 +75,6 @@ Azure IoT Hub defines a common format for all device-to-cloud messaging for inte
 } 
 
 ```
-
-### System properties
-
-System properties help identify contents and source of the messages.
-
-As described in [Create and read IoT Hub messages](/azure/iot-hub/iot-hub-devguide-messages-construct), there are other system properties in a message. In addition to `contentType`, `contentEncoding`, and `enqueuedTime`, the `connectionDeviceId` and `connectionModuleId` properties can also be queried.
-
-### Application properties
-
-Application properties are user-defined strings that can be added to the message. These fields are optional.
 
 ### Message properties query expressions
 
