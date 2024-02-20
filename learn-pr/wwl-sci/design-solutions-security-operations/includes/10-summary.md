@@ -2,7 +2,7 @@ You've learned how to:
 
 - Design security operations capabilities in hybrid and multicloud environments
 - Design centralized logging and auditing
-- Design Security Event Management (SIEM) solutions
+- Design Security Information and Event Management (SIEM) solutions
 - Design a solution for detection and response that includes Extended Detection and Response (XDR)
 - Design a solution for security orchestration, automation and response (SOAR)
 - Design security workflows
