@@ -33,7 +33,6 @@ products:
 - azure-container-apps
 subjects:
 - cloud-computing
-- development-tools
 units:
 - learn.java-target-destinations.1-introduction
 - learn.java-target-destinations.2-application-deployment-types
