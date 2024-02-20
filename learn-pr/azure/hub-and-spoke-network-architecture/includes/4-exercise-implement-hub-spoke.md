@@ -8,7 +8,7 @@ In this exercise, you deploy your network infrastructure, and then create a new 
 
 This deployment creates the Azure network resources matching the preceding diagram. With these resources in place, you can add the new HR virtual network.
 
-1. If you have more than one subscription, you may need to login and then set the current subscription to your own:
+1. If you have more than one subscription, you may need to log in and then set the current subscription to your own:
 
 ```azurecli
 az login
@@ -22,7 +22,7 @@ az account set --subscription <rgn>[subscription GUID]</rgn>
 az group create --name <rgn>[sandbox resource group name]</rgn> --location <rgn>[location]</rgn>
 ```
 
-1. Ceate the virtual networks and subnets for your server resources. Run the following command:
+1. Create the virtual networks and subnets for your server resources. Run the following command:
 
 ```azurecli
 az deployment group create \
