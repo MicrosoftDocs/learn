@@ -2,12 +2,12 @@ This unit describes how to download the OT monitoring software from the Defender
 <!-- check all images for compliance - may need to redo them or edit -->
 ## Configure firewall to allow the sensor to connect to Azure portal
 
-Configure your firewall rules so that your sensor can access the cloud on port 443, and connect to each of the endpoints listed in the JSON file provided by the communications Team.
-<!-- what are the instructions for this? Who to ask?-->
+Configure your firewall rules so that your sensor can access the cloud on port 443, and connect to each of the endpoints listed in the JSON file provided by the communications Team. This should be provided by your organization .... department.
+<!-- what are the instructions for this? it is done by the company. check with MT that this isnt a copy of the set up of connection to network management below-->
 
 ## Create a virtual machine with ESXi
 
-To perform this procedure, VMware, ESXi 5.5 or later must be installed and operational on your ??sensor??. Defender for IoT also supports other processes, such as using Hyper-V or physical sensors.
+To perform this procedure, VMware, ESXi 5.5 or later must be installed and operational on your server. Defender for IoT also supports other processes, such as using Hyper-V or physical sensors.
 
 1. Make sure that VMware is running on your machine.
 
@@ -35,10 +35,22 @@ To perform this procedure, VMware, ESXi 5.5 or later must be installed and opera
 
 | Type |Memory  | Storage  | CPU Processor |
 |----|-----|---------|----|
-| E | 32 MB RAM | 1 TB |  4 Core/ 8 Threads |
-| L | 8 MB RAM | 1 TB |  4 Core/ 4 Threads |
+| Enterprise | 32 MB RAM | 1/1.8 TB |  4 Core/ 8 Threads |
+| Line | 8 MB RAM | 100/ 500 GB |  4 Core/ 4 Threads |
 
-Your VM is now prepared for the Defender for IoT software installation. Next you configure the traffic mirroring.
+Your VM is now prepared for the Defender for IoT software installation.
+
+### Configure a network adapter
+
+Make tioo connections - first outside to network adapter 1 - vm network - add to prereq
+
+**To configure a network adapter**:
+
+1. For **Network Adapter 1**, select the group name that connects to an external network, for example **VMNetwork**. <!-- substitute with your one--> Select **Next**. <!-- check how to proceed? MT-->
+
+1. Open the **Port Group** properties page and select the port group that connects to your network, then select **Add**. <!-- is this correct? MT-->
+
+1. Select **OK**.
 
 ### Configure a SPAN port
 
@@ -77,22 +89,16 @@ Virtual switches don't have mirroring capabilities. However, for the sake of thi
 1. Connect to the sensor, and verify that mirroring works.
 
 ### Validate traffic mirroring
-<!-- check if this needs to be done, or can we give them a fake file?  -->
+
 After you configure the traffic mirroring, retrieve a PCAP file to receive a sample of recorded traffic (PCAP file) from the switch SPAN or mirror port.
-
-A sample PCAP file helps you: <!-- remove this or is it actually important to explain why they need the pcap file now? should be in unit3 not 4? -->
-
-- Validate the switch configuration
-- Confirm that the traffic going through your switch is relevant for monitoring
-- Identify the bandwidth and an estimated number of devices detected by the switch
 
 1. Use a network protocol analyzer application, such as *Wireshark*, to record a sample PCAP file for a few minutes. For example, connect a laptop to a port where you've configured traffic monitoring.
 
-1. Check that *Unicast packets* are present in the recording traffic. Unicast traffic is traffic sent from address to another.<!-- from ONE address to another OR from address to address - Make the same change in the original doc-->
+1. Check that *Unicast packets* are present in the recording traffic. Unicast traffic is traffic sent from address to another address.<!-- from ONE address to another OR from address to address - Make the same change in the original doc MT-->
 
     If most of the traffic is ARP messages, your traffic mirroring configuration isn't correct.
 
-1. Verify that your OT protocols are present in the analyzed traffic.
+1. In Wireshark, verify that your OT protocols are present in the analyzed traffic, in statistics -> protocol hierarchy.
 
     For example:
 
@@ -100,3 +106,5 @@ A sample PCAP file helps you: <!-- remove this or is it actually important to ex
 
 ### Check your work
 <!-- what do we need to provide that shows the work is correct? ask Mark -->
+what will i see in the VM - go to esxi in VM and check the edit settings are correct. ram, hard disk size span port are corect.
+and in wireshark - the data is the correct amount, bandwidth, time taken, averages, mac and ip addresses.

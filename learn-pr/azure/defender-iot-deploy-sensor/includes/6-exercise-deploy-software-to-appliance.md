@@ -19,18 +19,9 @@ All files downloaded from the Azure portal are signed by root of trust so that y
 
 On your virtual machine:
 
-1. Mount the ISO file onto the virtual machine using the system specific application. In this scenario, we're using the iLO for HPE machines. <!-- is this written correctly? I think this is what comes next and the reference to iLO is irrelevant! - check with Mark-->
-
-> [!NOTE]
-> Towards the end of this process you will be presented with the usernames and passwords for your device. Make sure to copy these down as these passwords will not be presented again.
-
-**To install the software on the virtual sensor**:
-
-On your virtual machine:
-
 1. Open your VM settings.
 
-1. For **CD/DVD Drive 1**, select **Datastore ISO file** and select the Defender for IoT software you downloaded earlier. <!-- may need to change isnt relevant anymore!!OR change to provided as a prereq/ by the .... team -->
+1. For **CD/DVD Drive 1**, select **Datastore ISO file** and select the Defender for IoT software you downloaded earlier. <!-- may need to change isnt relevant anymore!!OR change to provided as a prereq/ by the .... team MT -->
 
 1. Select **Next** > **Finish**.
 
@@ -81,7 +72,7 @@ Open a browser in the virtual machine.
     Username: ```admin```
     Password: ```admin```
 1. Select Login.
-1. Define a new password for the admin user, containing lowercase and uppercase alphabetic characters, numbers and symbols.<!-- not sure we really need this? Although it is important , it isnt the direct part of the process? What do you think?-->
+1. Define a new password for the admin user, containing lowercase and uppercase alphabetic characters, numbers and symbols.<!-- not sure we really need this? Although it is important , it isnt the direct part of the process? What do you think? i think MT said we dont need this anymore because the default are used as above.-->
 
 ## Activate and initial setup
 
@@ -91,12 +82,11 @@ The **Defender for IoT | Overview** page opens to the **Management interface** t
 ### Define network details
 
 In the **Management interface** tab, define the network details for the sensor. Even though default network values are given after the monitoring software is installed, it's best practice to give different names or settings for security purposes. For example:
-<!-- check data with engineer -->
 
 |Name  |Description  |
 |---------|---------|
 |**Management interface**     | paris-sales-floor1  |
-|**IP Address**     |   172.23.42.12|
+|**IP Address**     |   172.23.42.12 |
 |**Subnet Mask**     |     255.20.98.75    |
 |**Default Gateway**     |  172.18.24.214     |
 |**DNS**     |   10.50.10.50  |

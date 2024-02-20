@@ -1,12 +1,12 @@
 Microsoft Defender for IoT provides comprehensive threat detection for IoT/OT environments, with multiple deployment options that include cloud-connected, fully on-premises, or hybrid environments.
 
-This module describes the steps required to deploy Defender for IoT for operational technology (OT) monitoring.
+This module describes the steps required to deploy an OT sensor and connect it to Defender for IoT for operational technology (OT) monitoring.<!--changed this -->
 
 ## Example scenario
 
 Suppose you work for a car manufacturer that has offices and production sites across the globe. You're tasked with implementing a system to monitor traffic and secure your manufacturing automation systems (Operational Technology), from the access panels to the pneumatic and packaging systems. To take your organization's OT security visibility to a whole new level, your team chooses to use Microsoft Defender for IoT.
 
-You’ve been tasked with installing Defender for IoT software on your new OT sensors. You have an activation file from an onboarded OT sensor, and the list of your sensor’s required endpoints. You now need to download the Defender for IoT software and save it in a location accessible from your sensor machine. You’ll run the installation. Then, use your activation file to complete your deployment and connect your sensor to Azure.
+You’ve been tasked with installing Defender for IoT software on your new OT sensors. You have the activation file from the onboarded OT sensor, and the list of your sensor’s required endpoints. You must first create a virtual machine to run the sensor on and then install the monitoring software on to the sensor. Then, use your activation file to complete your deployment and connect your sensor to Azure.
 
 ## What will we be doing?
 
