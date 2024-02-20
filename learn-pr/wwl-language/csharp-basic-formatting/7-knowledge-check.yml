@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/19/2024
+  ms.date: 02/20/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
@@ -22,7 +22,7 @@ quiz:
       explanation: "Incorrect. \\' is the escape sequence for a single quote, not a double quote."
     - content: "'`\\\"`'"
       isCorrect: true
-      explanation: "Correct. Correct, `\\\"` displays double quotes!"
+      explanation: "Correct. `\\\"` displays double quotes!"
   - content: "Which of the following lines of code correctly uses string interpolation assuming that the variable `value` is a string?"
     choices:
     - content: "'`Console.WriteLine(@\"My value: {value}\");`'"
