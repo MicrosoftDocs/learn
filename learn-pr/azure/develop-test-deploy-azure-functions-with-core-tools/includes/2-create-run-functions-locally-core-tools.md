@@ -22,20 +22,6 @@ Core Tools is packaged as a single command-line utility named `func`. If you run
 
 Both Visual Studio and Visual Studio Code use Core Tools to provide an integrated local debugging experience. 
 
-### Core Tools versions
-
-Because Core Tools include the Azure Functions runtime, the major version of the Core Tools you use must always match the major version of the Functions runtime in Azure. Currently, version 4.x is the recommended version of the Functions runtime, and the only version that supports all languages. This tutorial discusses and uses Core Tools version 4.x, but you don't install anything on your own computer. This tutorial instead uses an Azure Cloud Shell environment in a browser, which already has the correct version of Core Tools, Azure CLI, Node.js, code editor already installed.
-
-### Local development vs. Azure portal development
-
-The Azure portal provides a rich functions editor experience, which is limited or excluded for some specific language stacks. Local development is supported for all language stacks supported by Functions. 
-
-You can't use the portal to edit functions that you develop locally and deploy to Azure. When you start using any local development workflow, you can't use the Azure portal to make changes to your function code. 
-
-## Create functions locally
-
-Here's a closer look at how to create functions with Core Tools and run them locally. Learn how to publish to Azure later on in this tutorial.
-
 Here are some fundamental concepts about functions.
 
 ### Function apps and functions projects
@@ -43,6 +29,20 @@ Here are some fundamental concepts about functions.
 When you develop functions locally, you work within a *functions project*. The project is a folder that contains the code and configuration files that define your functions. This code project is deployed to a *function app* resource in Azure. In a function app instance, all of the functions share a common set of configuration values and resources. 
 
 Each function app targets a specific language stack, and each stack has its own language-specific project requirements. Fortunately,  you never need to create functions project manually yourself. You can use Core Tools to generate function projects and functions from scratch in your desired language.
+
+### Core Tools versions
+
+Because Core Tools include the Azure Functions runtime, the major version of the Core Tools you use must always match the major version of the Functions runtime in Azure. Currently, version 4.x is the recommended version of the Functions runtime, and the only version that supports all languages. While this tutorial discusses and uses Core Tools version 4.x, you don't need to install anything on your own computer. In this tutorial, you instead use Core Tools in an Azure Cloud Shell environment in your browser. Cloud Shell already has the correct versions of Core Tools, Azure CLI, and Node.js, along with a code editor already installed.
+
+### Local development vs. Azure portal development
+
+While the Azure portal does provide a built-in editor for your function code, you can only use it for specific language stacks. You also can't use the portal to edit functions that you develop locally and deploy to Azure. When you start using any local development workflow, you can't use the Azure portal to make changes to your function code. 
+
+Core Tools supports local development for all language stacks supported by Azure Functions. 
+
+## Create functions locally
+
+Here's a closer look at how to create functions with Core Tools and run them locally. Learn how to publish to Azure later on in this tutorial.
 
 ### Create a new functions project with `func init`
 
@@ -73,9 +73,9 @@ In the next part of this tutorial, you use `func new` to create an HTTP-triggere
 
 ## Run functions locally
 
-Functions aren't programs that can be run on their own. They must be hosted. The function host is what powers everything outside of your function code: it loads the configuration, listens for triggers and HTTP requests, starts the worker process for the language your functions are written in, writes log output, and more. In Azure, function apps run the function host automatically when they start.
+Functions aren't programs that can be run on their own. They must be hosted. The Azure Functions host is what powers everything outside of your function code: it loads the configuration, listens for triggers and HTTP requests, starts the worker process for the language your functions are written in, writes log output, and more. In Azure, function apps run the host automatically when they start.
 
-You can use the Core Tools to run your own instance of the functions host and try out your functions locally before you publish them. By running your functions before publishing them, you can make sure your configuration and code loads correctly and test out your functions by making real HTTP calls to them without the need for Azure resources.
+You can use the Core Tools to run your own instance of the Azure Functions host and try out your functions locally before you publish them. By running your functions before publishing them, you can make sure your configuration and code loads correctly and test out your functions by making real HTTP calls to them without the need for Azure resources.
 
 To start the functions host locally, run `func start` from a functions project folder. At the end of the output, the Core Tools display local URLs you can use to call each of your functions. While the host is running, you can use any tools or libraries that make HTTP calls, like `curl`, to interact with your functions. The Core Tools write any log output produced by the host to the terminal in real time.
 

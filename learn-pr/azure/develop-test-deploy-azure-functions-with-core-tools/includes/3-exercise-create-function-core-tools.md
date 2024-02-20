@@ -5,13 +5,13 @@ Azure Functions Core Tools lets you develop functions locally on your own comput
 
 You decide to start your work locally with Azure Functions by developing a function that computes simple interest. Eventually, you can create more complex functions that work together and call other services and databases. Using Core Tools to build a function that carries out a basic loan calculation is a good start. You also want to try running your function on your own computer before publishing it to Azure. You can do it all from Azure Cloud Shell using Core Tools.
 
-The Azure Cloud Shell comes with Core Tools, Azure CLI, and an editor you can use to write code. Make sure to activate the sandbox before you proceed.
+The Azure Cloud Shell comes with Core Tools, Azure CLI, and an editor you can use to write code. Make sure to select **Activate sandbox** above before you proceed.
 
 ## Create a local Azure Functions project
 
 In this exercise, use Cloud Shell to develop your first JavaScript function using Core Tools. Cloud Shell already has the correct versions of both Core Tools and Node.js installed. 
 
-1. Run `func init` to initialize a functions project in a new `loan-wizard` folder.
+1. From the root folder, run `func init` to create a functions project in a new `loan-wizard` folder.
 
     ```bash
     func init loan-wizard
@@ -21,7 +21,9 @@ In this exercise, use Cloud Shell to develop your first JavaScript function usin
 
 1. When prompted to select a language, enter **1** for **javascript**.
 
-    The output lists the files being written to disk. You see *host.json* and *local.settings.json*, and a few other files:
+    The output lists the files being written to disk, including these files:
+    - *host.json* supports app-level configuration for both the runtime instance and specific trigger and binding types.
+    - *local.settings.json* sets local-only behaviors and application settings (local environment variables).
     - *package.json* is a JavaScript-specific file that keeps track of any packages you install and use within your code.
     - *.gitignore* and *extensions.json* are configuration files used by the Git version control tool and Visual Studio Code, respectively. You can ignore them for now.
 
@@ -53,7 +55,7 @@ It's time to create your function!
 
     :::image type="content" source="../media/3-functions-project-view.png" alt-text="Screenshot showing the simple-interest folder with the function.json file open in Cloud Shell code editor.":::
 
-    The wizard creates a new file in the functions project under `src/functions` called **simple-interest.js**, which has default template content. Take a moment now to explore the project files using the editor. The screenshot shows the expanded folder with *simple-interest.js* open in the editor.
+    The wizard creates a new file in the functions project under `src/functions` called **simple-interest.js**, which has default template content. This code supports the Node.js v4 programming model for Azure Functions. Take a moment now to explore the project files using the editor. The screenshot shows the expanded folder with *simple-interest.js* open in the editor.
 
 ## Implement the simple-interest function
 
@@ -89,7 +91,7 @@ The default function implementation that Core Tools created for us in *simple-in
     });
     ```
 
-    This script looks for parameters named `principal`, `rate`, and `term` in the query string of the HTTP request, and returns the result of the simple interest calculation (principal * rate * term).
+    This script looks for parameters named `principal`, `rate`, and `term` in the query string of the HTTP request. It then returns the result of the simple interest calculation (`principal * rate * term`).
 
 1. Save the file by pressing **Ctrl**+**S**, and close the editor by pressing **Ctrl**+**Q**.
 
