@@ -35,6 +35,7 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
   - entra
   - microsoft-purview
   - microsoft-defender
+  - copilot
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - security
 units:

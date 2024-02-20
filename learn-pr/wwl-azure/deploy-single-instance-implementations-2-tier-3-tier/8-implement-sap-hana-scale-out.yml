@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.service: azure
 durationInMinutes: 4
 content: |
   [!include[](includes/8-implement-sap-hana-scale-out.md)]

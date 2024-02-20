@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-identities-microsoft-entra-id.secure-external-microsoft-entra-identities
+title: Secure external identities
+metadata:
+  title: Secure external identities
+  description: "Secure external identities"
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-secure-external-microsoft-entra-identities.md)]

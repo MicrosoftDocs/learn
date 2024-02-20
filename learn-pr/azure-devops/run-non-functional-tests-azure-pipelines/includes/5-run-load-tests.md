@@ -1,4 +1,4 @@
-In this section, you run the test plan that Mara and Tim created in the release pipeline. The test plan uses Apache JMeter to run load tests.
+In this section, you'll run the test plan that you created in the release pipeline. The test plan uses Apache JMeter to run load tests.
 
 Here's how you run the tests:
 
@@ -9,7 +9,7 @@ Here's how you run the tests:
 
 ## Fetch the branch from GitHub
 
-In this section, you fetch the `jmeter` branch from GitHub and check out, or switch to, that branch.
+In this section, you'll fetch the `jmeter` branch from GitHub and check out, or switch to, that branch.
 
 This branch contains the _Space Game_ project that you worked with in previous modules. It also contains an Azure Pipelines configuration to start with.
 
@@ -35,7 +35,7 @@ This branch contains the _Space Game_ project that you worked with in previous m
 
 ## Add variables to Azure Pipelines
 
-Tim's original test plan provides a hard-coded value for the hostname of the _Space Game_ website that runs in the **staging** environment.
+The team's original test plan provides a hard-coded value for the hostname of the _Space Game_ website that runs in the **staging** environment.
 
 To make the test plan more flexible, your version uses a JMeter property. Think of a property as a variable that you can set from the command line.
 
@@ -55,9 +55,9 @@ When you run JMeter from the command line, you use the `-J` argument to set the 
 apache-jmeter-5.4.3/bin/./jmeter -n -t LoadTest.jmx -o Results.xml -Jhostname=tailspin-space-game-web-staging-1234.azurewebsites.net
 ```
 
-Here you set the `STAGING_HOSTNAME` variable in Azure Pipelines. This variable points to your site's hostname that runs on App Service in your **staging** environment. You also set the `jmeterVersion` to specify the version of JMeter to install.
+Here, you set the `STAGING_HOSTNAME` variable in Azure Pipelines. This variable points to your site's hostname that runs on App Service in your **staging** environment. You also set the `jmeterVersion` to specify the version of JMeter to install.
 
-When the agent runs, these variables are automatically exported to the agent as environment variables. So your pipeline configuration can run JMeter this way:
+When the agent runs, these variables are automatically exported to the agent as environment variables, so your pipeline configuration can run JMeter this way:
 
 ```bash
 apache-jmeter-5.4.3/bin/./jmeter -n -t LoadTest.jmx -o Results.xml -Jhostname=$(STAGING_HOSTNAME)
@@ -79,7 +79,7 @@ Let's add the pipeline variables now, before you update your pipeline configurat
     > [!NOTE]
     > This is the version of JMeter that we last used to test this module. To get the latest version, see [Download Apache JMeter](https://jmeter.apache.org/download_jmeter.cgi?azure-portal=true).
 
-1. To save your variable to the pipeline, near the top of the page, select **Save**.
+1. To save your variable to the pipeline,  select **Save** near the top of the page.
 
     Your variable group resembles the one shown in the following image:
 
@@ -87,9 +87,9 @@ Let's add the pipeline variables now, before you update your pipeline configurat
 
 ## Modify the pipeline configuration
 
-In this section, you modify the pipeline to run your load tests during the _Staging_ stage.
+In this section, you'll modify the pipeline to run your load tests during the _Staging_ stage.
 
-1. In Visual Studio Code, open the *azure-pipelines.yml* file. Then modify the file:
+1. In Visual Studio Code, open the *azure-pipelines.yml* file. Then modify the file as follows:
 
     > [!TIP]
     > You can replace the entire file or just update the part that's highlighted.
@@ -115,7 +115,7 @@ In this section, you modify the pipeline to run your load tests during the _Stag
 
 ## Watch Azure Pipelines run the tests
 
-Here you watch the pipeline run. You see the load tests run during _Staging_.
+Here, you'll watch the pipeline run. You'll see the load tests run during _Staging_.
 
 1. In Azure Pipelines, go to the build and trace it as it runs.
 
@@ -137,9 +137,9 @@ Here you watch the pipeline run. You see the load tests run during _Staging_.
 
     :::image type="content" source="../media/5-test-summary.png" alt-text="Screenshot of Azure Pipelines, showing the full test report.":::
 
-    If any test were to fail, you would see detailed results of the failure. From those results, you could investigate the source of the failure.
+    If any test were to fail, you'd see detailed results of the failure. From those results, you could investigate the source of the failure.
 
-    Recall that the XSLT file produces a JUnit file, *JUnit.xml*. The JUnit file answers these two questions:
+    Recall that the XSLT file produces a JUnit file called *JUnit.xml*. The JUnit file answers these two questions:
 
     * Is the average request time less than one second?
     * Do fewer than 10 percent of requests take more than one second to complete?
@@ -153,8 +153,4 @@ Here you watch the pipeline run. You see the load tests run during _Staging_.
     :::image type="content" source="../media/5-tests-junit-details.png" alt-text="Screenshot of the test report, showing two successful test cases.":::
 
 > [!NOTE]
-> You're using the **B1** App Service plan, which runs on the **Basic** tier. This plan is intended for apps that have low traffic requirements, such as apps in a test environment. Because of this plan, the performance of your website might be less than you expect. In practice, you would choose a plan for the **staging** environment that more closely matches your production environment. For example, the **Standard** and **Premium** plans are for production workloads. These run on dedicated virtual machine instances.
-
-**Tim:** Mara, I don't need to tell you this, but at first, I resisted the changes you proposed. I feared losing control over my production environment. But even with all these changes, I still have control. Plus, we now do load testing earlier in the process. In the past, I waited until just before we released because the process was time-consuming. Now we can continuously monitor how our websites perform. If performance drops, we know which change caused the decline.
-
-**Mara:** Early testing also gives us enough time to fix the problem, rather than rushing at the last minute. I love your attitude, Tim. Thanks for sticking with it!
+> You're using the **B1** App Service plan, which runs on the **Basic** tier. This plan is intended for apps that have low traffic requirements, such as apps in a test environment. Because of this plan, the performance of your website might be less than you expect. In practice, you'd choose a plan for the **staging** environment that more closely matches your production environment. For example, the **Standard** and **Premium** plans are for production workloads. These run on dedicated virtual machine instances.

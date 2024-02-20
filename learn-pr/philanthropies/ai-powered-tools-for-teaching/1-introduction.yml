@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.ai-powered-tools-for-teaching.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: This module consists of example activities that demonstrate how to integrate AI-powered tools into your learning environment. It serves as practical guide for those who are keen to explore and practice new AI skills.
+  ms.date: 01/29/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+  ms.service: artificial-intelligence
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

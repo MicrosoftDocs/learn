@@ -7,7 +7,7 @@ metadata:
   author: alexwolfmsft
   ms.author: alexwolf
   ms.topic: module-build-your-first
-  ms.prod: aspnet-core
+  ms.service: aspnet-core
   manager: mcleans
 title: Build your first Orleans app with ASP.NET Core 8.0
 summary: Learn how to build cloud-native, distributed apps with Orleans.

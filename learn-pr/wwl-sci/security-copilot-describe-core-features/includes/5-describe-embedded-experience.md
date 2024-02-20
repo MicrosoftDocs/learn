@@ -1,11 +1,17 @@
 
 Security Copilot is accessible directly from some Microsoft security products; this is referred to the embedded experience.  In an embedded experience, Microsoft Security Copilot is able to invoke the product specific capabilities directly, as opposed to trying to match the prompt against all the available capabilities, based on all the enabled plugins.
 
-Security Copilot is embedded in Microsoft Defender XDR for security teams to efficiently summarize incidents, analyze scripts and codes, use guided responses to resolve incidents, generate KQL queries, and create incident reports.  As with the standalone experience, the embedded experience provides users a mechanism to provide feedback on the accuracy of the AI generated response. Also, from the embedded experience, users can easily move to the standalone experience.
+Security Copilot is embedded in Microsoft Defender XDR for security teams to efficiently summarize incidents, analyze scripts and codes, use guided responses to resolve incidents, generate KQL queries, and create incident reports.  As with the standalone experience, the embedded experience provides users a mechanism to provide feedback on the accuracy of the AI generated response. For any AI generated content, you can select the feedback prompt on the bottom right of the content window and select from the available options.
+
+:::image type="content" source="../media/verify-for-accuracy-v2.png" lightbox="../media/verify-for-accuracy-v2.png" alt-text="Screen capture of the feedback icon for AI generated content and the three options.  The options are confirmed, it looks great, off target, inaccurate, and potentially harmful, inappropriate.":::
+
+Also, for content generated through the embedded experience you can easily transition to the standalone experience. This allows you to continue your investigation in the standalone experience where you can interface directly with the prompt bar, use prompt suggestions, promptbooks, and additional plugins. To move to the standalone experience, select the ellipses within the generated content window then choose Open in Security Copilot.
+
+:::image type="content" source="../media/switch-to-standalone-experience.png" lightbox="../media/switch-to-standalone-experience.png" alt-text="Screen capture showing the option to open in Security Copilot, which is available by selecting the ellipses in the AI generated content window.":::
 
 #### Summarize Incidents
 
-To immediately understand an incident, you can tap Security Copilot in Microsoft Defender XDR to summarize an incident for you. Security Copilot creates an overview of the attack containing essential information for you to understand what transpired in the attack, what assets are involved, and the timeline of the attack. Security Copilot automatically creates a summary when you navigate to an incident's page.
+To immediately understand an incident, you can use Security Copilot in Microsoft Defender XDR to summarize an incident for you. Security Copilot creates an overview of the attack containing essential information for you to understand what transpired in the attack, what assets are involved, and the timeline of the attack. Security Copilot automatically creates a summary when you navigate to an incident's page.
 
 :::image type="content" source="../media/xdr-incident-summary-v5.png" lightbox="../media/xdr-incident-summary-v5.png" alt-text="Screen capture of the Security Copilot embedded experience in Microsoft Defender XDR, showing an incident summary.":::
 
@@ -18,9 +24,6 @@ Incidents containing up to 100 alerts can be summarized into one incident summar
 - Indicators of compromise (IOCs).
 - Names of threat actors involved.
 
-Users can choose to continue their investigation in the standalone experience where they can access interface directly with the prompt bar, use prompt suggestions, use promptbooks, and use additional plugins. To move to the standalone experience, the user selects the ellipses within the incident summary window then choosing Open in Security Copilot.
-
-:::image type="content" source="../media/xdr-incident-summary-ellipses-v2.png" lightbox="../media/xdr-incident-summary-ellipses-v2.png" alt-text="Screen capture showing the option to open in Security Copilot, which is available by selecting the ellipses in the incident summary window.":::
 
 #### Guided responses
 
@@ -54,7 +57,7 @@ You can access the script analysis capability in the alert timeline within an in
 
 Security Copilot analyzes the script and displays the results in the script analysis card.  Users can select the Show code to see specific lines of code related to the analysis.  To hide the code, users need only to select Hide code.
 
-:::image type="content" source="../media/xdr-script-analysis-show-code.png" lightbox="../media/xdr-script-analysis-show-code.png" alt-text="Screen capture showing the lines of code related to the script analysis.":::
+:::image type="content" source="../media/xdr-script-analysis-show-code-v2.png" lightbox="../media/xdr-script-analysis-show-code-v2.png" alt-text="Screen capture showing the lines of code related to the script analysis.":::
 
 Users can move to the standalone experience by selecting the ellipses in the script analysis card and selecting the option to Open in Security Copilot.
 

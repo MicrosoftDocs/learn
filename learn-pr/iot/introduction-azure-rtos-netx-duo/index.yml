@@ -19,6 +19,7 @@ abstract: |
 prerequisites: |
   - Completion of the ThreadX learning path, a working knowledge of C or C++, and GitHub will be most helpful.
 iconUrl: /learn/achievements/iot/introduction-azure-rtos-netx-duo.svg
+hidden: true
 levels:
   - beginner
 roles:

@@ -1,17 +1,17 @@
 ### YamlMime:Module
 uid: learn-wwl.security-copilot-getting-started
 metadata:
-  title: Get started with Microsoft Security Copilot
-  description: "Get started with Microsoft Security Copilot"
+  title: Describe Microsoft Copilot for Security
+  description: "Describe Microsoft Copilot for Security"
   ms.date: 10/31/2023
   author: ceperezb
   ms.author: ceperezb
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.prod: security
   ms.service: security-copilot
-title: Get started with Microsoft Security Copilot
+title: Describe Microsoft Copilot for Security
 summary: |
-  Get started with Microsoft Security Copilot, an AI-powered, cloud-based security analysis tool that enables analysts to respond to threats quickly, process signals at machine speed, and assess risk more quickly than may otherwise be possible.
+  Get acquainted with Microsoft Copilot for Security. You’ll be introduced to some basic terminology, how Microsoft Copilot for Security processes prompts, the elements of an effective prompt, and how to enable the solution.
   [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   By the end of this module, you'll be able to:
@@ -36,6 +36,10 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
   - microsoft-defender
   - microsoft-sentinel
   - defender-xdr
+  - intune
+  - defender-for-threat-intelligence
+  - mdeasm
+  - ms-copilot
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - cloud-security
   - threat-protection
