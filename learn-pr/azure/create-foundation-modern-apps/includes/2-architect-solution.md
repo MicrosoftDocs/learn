@@ -49,6 +49,8 @@ Based on the scenario and the ideal solution, here's a possible architecture:
 
 The architecture uses several different services to minimize the amount of code you need to write, and to take the most possible advantage of the scalability and infrastructure benefits Azure provides.
 
+Well-Known Text (WKT) is a plain text markup language for representing vector geometry locations on a map. WKT is an Open Geospatial Consortium (OGC) standard that is used to represent spatial data in a textual format. Most OGC-compliant systems support Well-Known Text.
+
 There's a complete learning path dedicated to exploring each piece of the architecture. Here, you'll get an overview about which solution components are selected and why. Then, in this module, you'll focus on the database service.
 
 ### Store and process data with Azure SQL Database
