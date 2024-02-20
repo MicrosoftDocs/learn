@@ -1,6 +1,3 @@
-
-
-
 In this module, you have learned about different storage scenarios and how to provide storage for each of them. 
 - The first scenario was providing storage for the IT department's testing and training. For this scenario, you learned how to create a storage account and configure basic settings for security and networking. 
 - The second scenario was providing storage for the public website. You learned how to create a storage account with anonymous public access, create a blob storage container, and enable soft delete and versioning. 

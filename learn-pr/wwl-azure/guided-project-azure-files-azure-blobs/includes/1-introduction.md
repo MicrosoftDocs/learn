@@ -1,5 +1,3 @@
-
-
 [!INCLUDE [](../../../includes/wwl/ai-contribution-notes.md)]
 
 This module covers different storage scenarios using Azure Files and Azure Blob Storage.
