@@ -16,9 +16,7 @@ At the center of Microsoft Copilot for Security is the prompt bar. You use the p
 
 :::image type="content" source="../media/new-promptbar.png" alt-text="A screen capture of the Microsoft Copilot for Security prompt bar.":::
 
-:::image type="content" source="../media/prompt-bar-unit-1.png" alt-text="A screen capture of the Microsoft Copilot for Security prompt bar.":::
-
-As you make requests and as Copilot responds, you may have some additional follow-up requests. The entirety of that dialog is referred to as a session. Copilot maintains context within a session.
+As you make requests and as Copilot responds, you may have some additional follow-up requests. The entirety of the dialog is referred to as a session. Copilot maintains context within a session.
 
 ***Plugins and capabilities***
 
@@ -35,6 +33,8 @@ A plugin for Microsoft Sentinel may have similar capabilities but runs only with
 Copilot currently supports plug-ins for Microsoft services and non-Microsoft services, including websites and custom plug-ins that can be enabled.
 
 :::image type="content" source="../media/new-microsoft-plugins.png" lightbox="../media/new-microsoft-plugins.png" alt-text="A screen capture of the plugins window, showing the Microsoft plugins, including Entra, Intune, Microsoft Defender XDR, and more.":::
+
+Some plugins require setup and configuration. This is common with other, non-Microsoft plugins that may need to be set up and configured for account authentication.
 
 :::image type="content" source="../media/plugins-other-web.png" lightbox="../media/plugins-other-web.png alt-text="A screen capture of the plugins window, showing the non-Microsoft plugins, including ServiceNow, Splunk, the public web, and custom plugins.":::
 

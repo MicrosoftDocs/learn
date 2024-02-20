@@ -51,7 +51,7 @@ During the set up of Copilot for Security, you'll be prompted to configure setti
   
   For more information about how Microsoft handles your data, see [Data security and privacy](/security-copilot/privacy-data-security).
   
-    :::image type="content" source="../media/organization-data-settings.png" lightbox="../media/organization-data-settings.png" alt-text="Screen capture showing the page for capacity provisioning through Azure.":::
+    :::image type="content" source="../media/organization-data-settings.png" lightbox="../media/organization-data-settings.png" alt-text="Screen capture showing the settings for how you can configure data sharing to help improve Copilot.":::
 
 - Decide where your prompts are evaluated - You can restrict the evaluation within your geo or allow evaluation anywhere in the world. For more information on the list of mapped locations for your geo, see Data security and privacy.
 
@@ -78,7 +78,7 @@ The Microsoft Copilot for Security roles are:
 - Copilot workspace contributor
 - Copilot workspace reader
 
-For a detailed listing of the permissions granted for each of these roles, refer to [Assign roles](security-copilot/authentication?#assign-roles)
+For a detailed listing of the permissions granted for each of these roles, refer to the Assign roles article in the Summary and resources unit of this module.
 
 Your role controls what activities you have access to, such as configuring settings, assigning permissions or performing tasks. Copilot doesn't go beyond the access you have. Additionally, individual Microsoft plugins may have their own role requirements for accessing the service and data it represents. As an example, an analyst that has been assigned a Security Reader role or a Copilot workspace reader role is able to access the Copilot portal, but to utilize the Microsoft Sentinel plugin would need an appropriate role like Microsoft Sentinel Reader to access incidents in the workspace. To access the devices, privileges, and policies available through the Microsoft Intune plugin, that same analyst would need another service-specific role like the Intune Endpoint Security Manager role.
 
