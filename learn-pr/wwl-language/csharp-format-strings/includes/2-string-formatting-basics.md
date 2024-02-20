@@ -14,7 +14,7 @@ This module includes hands-on activities that guide you through the process of b
 1. On the Visual Studio Code **File** menu, select **Open Folder**.
 
 1. In the **Open Folder** dialog, navigate to the Windows Desktop folder.
-   If you have different folder location where you keep code projects, you can use that folder location instead. For this training, the important thing is to have a location that�s easy locate and remember.
+   If you have a different folder location where you keep code projects, you can use that folder location instead. For this training, the important thing is to have a location that's easy locate and remember.
 
 1. In the **Open Folder** dialog, select **Select Folder**.
    If you see a security dialog asking if you trust the authors, select **Yes**.
@@ -84,20 +84,13 @@ A few observations about these examples:
 Instead of using a numbered token and including the literal value or variable name in a list of arguments to `String.Format()` or `Console.WriteLine()`, you can just use the variable name inside of the curly braces.
 
 1. In order for a string to be interpolated, you must prefix it with the `$` directive. Now, create the same examples from earlier using string interpolation instead of composite formatting. Update your code as follows:
-
-```csharp
-string first = "Hello";
-string second = "World";
-Console.WriteLine($"{first} {second}!");
-Console.WriteLine($"{second} {first}!");
-Console.WriteLine($"{first} {first} {first}!");
-```
+   ```csharp   string first = "Hello";   string second = "World";   Console.WriteLine($"{first} {second}!");   Console.WriteLine($"{second} {first}!");   Console.WriteLine($"{first} {first} {first}!");   ```
 
 1. Save your code file, and then use Visual Studio Code to run your code.
    You should see the following output:
    ```Output   Hello World!   World Hello!   Hello Hello Hello!   ```
 
->[!Note:]
+> [!NOTE]
 > If you look at code examples in books and online, you're likely to see both *composite formatting* and *string interpolation* used, but generally you should choose *string interpolation*.
 
 ### Formatting currency
@@ -118,18 +111,18 @@ Price: $123.45 (Save $50.00)
 
 Notice how adding the `:C` to the tokens inside of the curly braces formats the number as currency regardless of whether you use `int` or `decimal`.
 
->[!Note:]
-> What happens if your country/region and language isn't known? If you run the previous code in the "in-browser" .NET Editor, such as at [TrydotNet](https://dotnet.microsoft.com/en-us/platform/try-dotnet) you'll see the following output: **`Price: �123.45 (Save �50.00)`**.  The symbol **`�`** is used instead of the symbol for your country/region's money. This is a generic symbol used to denote "currency" regardless of the *type* of currency. You see this symbol in the .NET Editor because it ignores your current location.
+> [!NOTE]
+> What happens if your country/region and language isn't known? If you run the previous code in the "in-browser" .NET Editor, such as at [TrydotNet](https://dotnet.microsoft.com/en-us/platform/try-dotnet) you'll see the following output: **`Price: ¤123.45 (Save ¤50.00)`**.  The symbol **`¤`** is used instead of the symbol for your country/region's money. This is a generic symbol used to denote "currency" regardless of the *type* of currency. You see this symbol in the .NET Editor because it ignores your current location.
 
 ## How the user's country/region and language affect string formatting
 
 What if you execute the previous code on a computer in France that has its Windows Display Language set to French? In that case you would see the following output.
 
 ```Output
-Price: 123,45 � (Save 50,00 �)
+Price: 123,45 € (Save 50,00 €)
 ```
 
-The reason for the previous "�" output is that the string currency formatting feature is dependent on the local computer setting for *culture*. In this context, the term "culture" refers to the country/region and language of the end user. The *culture code* is a five character string that computers use to identify the location and language of the end user. The culture code ensures certain information like dates and currency can be presented properly.
+The reason for the previous "€" output is that the string currency formatting feature is dependent on the local computer setting for *culture*. In this context, the term "culture" refers to the country/region and language of the end user. The *culture code* is a five character string that computers use to identify the location and language of the end user. The culture code ensures certain information like dates and currency can be presented properly.
 
 For example:
 
@@ -211,7 +204,7 @@ You saved $7.56 off the regular $67.55 price.
 
 You can combine multiple formatted strings. Build on the previous code concatenating the calculated percentage using the string interpolation instead of string concatenation by inserting `yourDiscount += $"A discount of {(price - salePrice)/price:P2}!";` into the code on the line before `Console.WriteLine()`.
 
->[!Note]
+> [!NOTE]
 > You don't need to use `String.Format()` with this string interpolation approach.
 
 Update your code as follows.
