@@ -19,18 +19,18 @@ In this exercise, you'll configure the environment for use throughout this modul
 2. Set the subscription you want to use for this module using the `az account set` command.
 
     ```azurecli-interactive
-    az account set --subscription "<subscription-name>"
+    az account set --subscription <subscription-name>
     ```
 
 3. Clone the [sample application](https://github.com/Azure-Samples/aks-store-demo) to your development environment using the `git clone` command.
 
-    ```azurecli-interactive
+    ```bash
     git clone https://github.com/Azure-Samples/aks-store-demo.git
     ```
 
 4. Change into the cloned directory using `cd`.
 
-    ```azurecli-interactive
+    ```bash
     cd aks-store-demo
     ```
 
@@ -62,6 +62,6 @@ In this exercise, you'll configure the environment for use throughout this modul
 
 5. Verify the connection to the AKS cluster using the `kubectl get nodes` command.
 
-    ```azurecli-interactive
+    ```bash
     kubectl get nodes
     ```
