@@ -5,7 +5,7 @@ Your company is planning a migration of all your on-premises resources to Azure.
 In this unit, you explore the following parts of this model:
 
 - The hub-spoke architecture
-- The topology
+- The network topology
 - The components needed in Azure
 - How to plan the implementing infrastructure
 
@@ -23,14 +23,14 @@ Implementing a hub and spoke architecture can have the following benefits:
 
 ## Introduction to hub-spoke topology
 
-Hub-spoke networks are commonly used for hybrid cloud architectures, and can be simpler to implement and maintain in the long term. The hub is a virtual network that acts as a central location for managing external connectivity. It also hosts services used by multiple workloads. The hub coordinates all communications to and from the spokes. IT rules or processes like security can inspect, route, and centrally manage traffic. The spokes are virtual networks that host workloads, and connect to the central hub through virtual network peering.
+Hub-spoke networks are commonly used for hybrid cloud architectures, and can be simpler to implement and maintain in the long term. The hub is a virtual network that acts as a central location for managing external connectivity. It also hosts services used by multiple workloads. The hub coordinates all communications to and from the spokes. IT rules or processes, such as security, can inspect, route, and centrally manage traffic. The spokes are virtual networks that host workloads, and connect to the central hub through virtual network peering.
 
 Hub-spoke topologies offer several business benefits:
 
 - Increased business agility by standardizing on network connections. Organizations can adapt to changing markets, adding a new branch in a different geopolitical region, or a new business channel, as spokes.
 - Liability reduction by maintaining a consistent architecture. As the business grows, or traffic volumes increase, it's simple to add more systems.
 - Greater visibility into the business, with data flowing through the same place. The hub is the core of the business and provides the foundations for deeper business insights, as it processes every piece of information belonging to the organization.
-- A single location in which to share centralized services by multiple workloads. This location enables you to minimize redundant resources and the effort required to manage them.
+- A single location for sharing centralized services by multiple workloads. This location enables you to minimize redundant resources and the effort required to manage them.
 
 ## Architectural components
 
