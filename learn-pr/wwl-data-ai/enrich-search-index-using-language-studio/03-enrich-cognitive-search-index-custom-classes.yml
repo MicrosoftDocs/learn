@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.enrich-search-index-using-language-studio.enrich-cognitive-search-index-custom-classes
-title: Enrich a cognitive search index with custom classes and Language Studio
+title: Enrich an AI Search index with custom classes and Language Studio
 metadata:
-  title: Enrich a cognitive search index with custom classes and Language Studio
-  description: "Enrich a cognitive search index with custom classes and Language Studio"
+  title: Enrich an AI Search index with custom classes and Language Studio
+  description: "Enrich an AI Search index with custom classes and Language Studio"
   ms.date: 09/27/2023
   author: wwlpublish
   ms.author: berryivor

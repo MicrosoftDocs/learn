@@ -96,4 +96,4 @@ Language Studio guides you through the remaining steps. Follow the left navigati
 
 Whichever feature your use you end up with a model that you can use in apps to add language understanding.
 
-In the context of Azure Cognitive Search, these models can help us enrich our search indexes to create better search experiences. Or provide answers when users ask questions.
+In the context of Azure AI Search, these models can help us enrich our search indexes to create better search experiences. Or provide answers when users ask questions.

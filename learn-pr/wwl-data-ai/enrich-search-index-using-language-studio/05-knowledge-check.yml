@@ -25,9 +25,9 @@ quiz:
     - content: "Custom text classification."
       isCorrect: false
       explanation: "Incorrect. You need to train a model with the classes you want to identify."
-  - content: "Which step enables a cognitive search index to store the enrichments from a Language Studio project?"
+  - content: "Which step enables an AI Search index to store the enrichments from a Language Studio project?"
     choices:
-    - content: "Update your Azure Cognitive Search solution."
+    - content: "Update your Azure AI Search solution."
       isCorrect: true
       explanation: "Correct. You need to edit the index, indexer, and custom skillset to store the enrichments."
     - content: "Create a function app."

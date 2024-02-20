@@ -5,7 +5,7 @@ Custom text classification allows you to map a passage of text to different user
 
 Here, you'll see what you need to consider to enrich a search index using a custom text classification model.
 
-- Store your documents so they can be accessed by Language Studio and Azure Cognitive Search indexers
+- Store your documents so they can be accessed by Language Studio and Azure AI Search indexers
 - Create a custom text classification project
 - Train and test your model
 - Create a search index based on your stored documents
@@ -89,7 +89,7 @@ In Language Studio, in your project, select Data labeling. You'll see all your d
 
 ### Create search index
 
-There isn't anything specific you need to do to create a search index that will be enriched by a custom text classification model. Follow the steps in [Create an Azure Cognitive Search solution](/training/modules/create-azure-cognitive-search-solution/). You'll be updating the index, indexer, and custom skill after you've created a function app.
+There isn't anything specific you need to do to create a search index that will be enriched by a custom text classification model. Follow the steps in [Create an Azure AI Search solution](/training/modules/create-azure-cognitive-search-solution/). You'll be updating the index, indexer, and custom skill after you've created a function app.
 
 ### Create an Azure function app
 
@@ -168,7 +168,7 @@ Then process the JSON response from the model, for example:
 }
 ```
 
-The function then returns a structured JSON message back to a custom skillset in cognitive search, for example:
+The function then returns a structured JSON message back to a custom skillset in AI Search, for example:
 
 ```json
 [{"category": "Action", "confidenceScore": 0.99}, {"category": "Comedy", "confidenceScore": 0.96}]
@@ -182,7 +182,7 @@ There are five things the function app needs to know:
 1. The project name.
 1. The deployment name.
 
-The first is passed from your custom skillset in cognitive search to the function as input. The remaining four can be found in Language Studio.
+The first is passed from your custom skillset in AI Search to the function as input. The remaining four can be found in Language Studio.
 
 :::image type="content" source="../media/copy-prediction-endpoint-small.png" alt-text="A screenshot showing where to copy the prediction endpoint from." lightbox="../media/copy-prediction-endpoint.png":::
 
@@ -192,7 +192,7 @@ The endpoint and deployment name is on the deploying a model pane.
 
 The project name and primary key are on the project settings pane.
 
-### Update your Azure Cognitive Search solution
+### Update your Azure AI Search solution
 
 There are three changes in the Azure portal you need to make to enrich your search index.
 
@@ -202,7 +202,7 @@ There are three changes in the Azure portal you need to make to enrich your sear
 
 #### Add a field to an existing index
 
-In the Azure portal, go to your cognitive search resource, select the index and you'll add JSON for in this format:
+In the Azure portal, go to your AI Search resource, select the index and you'll add JSON for in this format:
 
 ```json
 {
