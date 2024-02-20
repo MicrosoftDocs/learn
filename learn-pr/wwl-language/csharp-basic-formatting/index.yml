@@ -2,7 +2,7 @@
 uid: learn.languages.csharp-basic-formatting
 metadata:
   title: Perform basic string formatting in C#
-  description: "Perform basic string formatting in C#"
+  description: "Combine literal and variable text data that contain special characters, formatting, and Unicode into meaningful messages for the end user."
   ms.date: 02/20/2024
   author: wwlpublish
   ms.author: buzahid
