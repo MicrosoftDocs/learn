@@ -21,6 +21,7 @@ prerequisites: |
   - Some knowledge of JavaScript and TypeScript
   - Some familiarity with Node.js Express and Azure Functions
   - [Node.js LTS](https://nodejs.org/) installed
+  - [NVM](https://github.com/nvm-sh/nvm) or [nvm-windows](https://github.com/coreybutler/nvm-windows)
   - [Visual Studio Code](https://code.visualstudio.com/) with the [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) extension installed
   - [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) installed
 iconUrl: /training/achievements/shift-express-api-azure-functions.svg

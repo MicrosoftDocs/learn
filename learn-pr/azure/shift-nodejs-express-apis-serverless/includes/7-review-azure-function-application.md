@@ -24,30 +24,7 @@ The Functions application has folders that map to each of their endpoints, as sh
 The Functions application in the _functions_ folder should have the following file structure:
 
 ```files
-functions
- | - vacations-delete
- | | - function.json
- | | - index.ts
- | - vacations-get
- | | - function.json      👈 The vacation route's configuration
- | | - index.ts           👈 The vacation routes
- | - vacations-post
- | | - function.json
- | | - index.ts
- | - vacations-put
- | | - function.json
- | | - index.ts
- | - services              👈 The same folder that the Express app has
- | | - data.ts             👈 The vacation data (could be database API calls)
- | | - index.ts
- | | - vacation.service.ts 👈 The logic to get the vacation data
- | - .funcignore
- | - .gitignore
- | - host.json
- | - local.settings.json
- | - package.json
- | - proxies.json
- | - tsconfig.json
+TBD
 ```
 
 In the next unit, you run and debug your Angular application and Functions application together.

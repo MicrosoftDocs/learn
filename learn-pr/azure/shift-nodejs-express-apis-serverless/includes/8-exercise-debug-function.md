@@ -17,7 +17,7 @@ To display a list of vacations, the Angular application runs the `getVacations()
 1. Open the _functions/services/vacations.service.ts_ file, and locate the following code:
 
    ```typescript
-   async function getVacations({ req, res }: Context) {
+   async function getVacations(request, context) {
      try {
        const vacations = data.getVacations();
        res.status(200).json(vacations);
@@ -34,7 +34,7 @@ To display a list of vacations, the Angular application runs the `getVacations()
 Now that you have breakpoints in both the Angular and the Functions apps, you can step through and debug them together.
 
 >[!NOTE]
->You don't run the functions in Azure yet. You're using core tools to run and debug locally.
+>You don't run the functions in Azure yet. You're using Azure Functions Core Tools (CLI) to run and debug locally.
 
 ### Proxy the requests from Angular to Functions
 

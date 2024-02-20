@@ -6,3 +6,4 @@ The following screenshot shows the Angular Vacation Wishlist app with a list of 
 
 The sample project initially builds a TypeScript Node.js Express application that interacts with the vacation wishlist. The goal of the learning module is to shift the project APIs to a Functions app and migrate the Express server to a serverless model. The finished application and its API feature all the benefits of serverless technology.
 
+This training module shifts the backend code from Express to Azure Functions. The data is managed in-memory as JSON data. The frontend code remains the same. 

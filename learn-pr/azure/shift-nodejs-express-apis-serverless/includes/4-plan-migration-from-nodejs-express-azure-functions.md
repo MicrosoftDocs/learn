@@ -1,4 +1,4 @@
-To plan the shift to serverless, you can break down the Node.js Express app into three main areas:
+To plan the shift of the backend to serverless, you can break down the Node.js Express app into three main areas:
 
 - The Express server, which is mostly in _server.ts_
 - The routes, which are in the _routes/_ folder
@@ -6,12 +6,51 @@ To plan the shift to serverless, you can break down the Node.js Express app into
 
 To refactor your code from Node.js Express to Azure Functions, you follow these steps:
 
-1. Create the Azure Functions application.
-1. Copy the Node.js Express services from the _server/services_ folder to the _functions_ folder.
-1. Import the `Context` object from `@azure/functions`.
-1. Use destructuring to access `Context.req` and `Context.res`.
-1. Create a function for each route endpoint.
-1. Name and set the method for each route endpoint in each function's _function.json_ file.
-1. Add code to each function to call the appropriate service.
+1. Create a new Azure Functions application.
+1. Copy the data services from Node.js Express to the Azure Functions app. This works because the data services are not tied to the Express server.
+1. Create a new function for each route endpoint.
+1. Update function code to call the appropriate service.
+1. Update function routes to match the original Express routes.
+
+## Express route example
+
+This is a simple example of an Express route that gets vacations from the vacation service. Notice the parameters for the route handler are the `req` and `res` objects.
+
+```typescript
+import * as express from 'express';
+import { vacationService } from '../services';
+
+const router = express.Router();
+
+router.get('/vacations', (req, res) => {
+  vacationService.getVacations(req, res);
+});
+```
+
+## Azure Functions route example
+
+This is a simple example of an Azure Functions route handler and route definition that gets vacations from the vacation service. Notice the paramteers for the route handler are the `request` and `context` objects.
+
+```typescript
+import { app } from '@azure/functions';
+import { HttpRequest, HttpResponseInit, InvocationContext } from '@azure/functions';
+import * as vacationService from '../services/vacation.services';
+
+export async function getVacations(request, context) {
+    return {
+        status: 200,
+        jsonBody: vacationService.getVacations();
+    };
+};
+
+app.http('get-vacations', {
+    methods: ['GET'],
+    route: 'vacations',
+    authLevel: 'anonymous',
+    handler: getVacations
+});
+```
+
+Once you understand the structure of the Azure Functions app, you can organize your code to match the structure of the original Node.js Express app.
 
 In the next exercise, you create the Functions app and shift the code from the Express server to Functions.
