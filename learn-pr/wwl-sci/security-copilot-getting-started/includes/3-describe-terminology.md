@@ -36,7 +36,8 @@ Copilot currently supports plug-ins for Microsoft services and non-Microsoft ser
 
 Some plugins require setup and configuration. This is common with other, non-Microsoft plugins that may need to be set up and configured for account authentication.
 
-:::image type="content" source="../media/plugins-other-web.png" lightbox="../media/plugins-other-web.png alt-text="A screen capture of the plugins window, showing the non-Microsoft plugins, including ServiceNow, Splunk, the public web, and custom plugins.":::
+:::image type="content" source="../media/plugins-other-web.png" lightbox="../media/plugins-other-web.png" alt-text="A screen capture of the plugins window, showing the non-Microsoft plugins, including ServiceNow, Splunk, the public web, and custom plugins.":::
+
 
 ***Orchestrator***
 
