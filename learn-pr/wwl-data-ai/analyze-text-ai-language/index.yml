@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/10/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure-ai-language
 title: Analyze text with Azure AI Language
 summary: The Azure AI Language service enables you to create intelligent apps and services that extract semantic information from text.

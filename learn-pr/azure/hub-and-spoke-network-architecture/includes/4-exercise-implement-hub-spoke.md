@@ -1,4 +1,4 @@
-You need to deploy your network infrastructure in a hub-spoke configuration for your resources. Additionally, your internal HR department wants to host a new internal HR system that shouldn't be accessible from the internet. The system should be accessible to everyone in the company, whether they work at headquarters or in a satellite office.
+You've decided to deploy your network infrastructure in a hub-spoke configuration for your resources. Additionally, your internal HR department wants to host a new internal HR system that shouldn't be accessible from the internet. The HR system should be accessible to everyone in the company, whether they work at headquarters or in a satellite office.
 
 In this exercise, you deploy your network infrastructure, and then create a new virtual network to host the servers for your company's new HR system.
 
@@ -8,7 +8,21 @@ In this exercise, you deploy your network infrastructure, and then create a new 
 
 This deployment creates the Azure network resources matching the preceding diagram. With these resources in place, you can add the new HR virtual network.
 
-First, create the virtual networks and subnets for your server resources. Run the following command:
+1. If you have more than one subscription, you may need to log in and then set the current subscription to your own:
+
+```azurecli
+az login
+
+az account set --subscription <rgn>[subscription GUID]</rgn>
+```
+
+1. Create a resource group:
+
+```azurecli
+az group create --name <rgn>[sandbox resource group name]</rgn> --location <rgn>[location]</rgn>
+```
+
+1. Create the virtual networks and subnets for your server resources. Run the following command:
 
 ```azurecli
 az deployment group create \
