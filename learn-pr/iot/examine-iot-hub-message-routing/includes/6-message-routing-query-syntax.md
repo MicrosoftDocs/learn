@@ -1,6 +1,6 @@
 Message routing enables users to route different data types, including device telemetry messages, device lifecycle events, and device twin change events, to various endpoints. Azure IoT Hub message routing provides a querying capability to filter the data before routing it to the endpoints.
 
-A single message may match the condition on multiple routing queries, in which case Azure IoT Hub delivers the message to the endpoint associated with each matched query. Azure IoT Hub also automatically deduplicates message delivery, so if a message matches multiple queries that have the same destination, it is only written once to that destination.
+A single message may match the condition on multiple routing queries, in which case Azure IoT Hub delivers the message to the endpoint associated with each matched query. Azure IoT Hub also automatically deduplicates message delivery, so if a message matches multiple queries that have the same destination, it's only written once to that destination.
 
 Each routing query you configure has the following properties:
 
@@ -33,7 +33,7 @@ Each routing query you configure has the following properties:
     Condition
   :::column-end:::
   :::column:::
-    The query expression for the routing query that is run against the message application properties, system properties, message body, device twin tags, and device twin properties to determine if it is a match for the endpoint.
+    The query expression for the routing query that is run against the message application properties, system properties, message body, device twin tags, and device twin properties to determine if it's a match for the endpoint.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -78,7 +78,7 @@ Azure IoT Hub defines a common format for all device-to-cloud messaging for inte
 
 ### Message properties query expressions
 
-A query on message system properties needs to be prefixed with the `$` symbol. Queries on application properties are accessed with their name and should not be prefixed with the `$` symbol. If an application property name begins with `$`, then Azure IoT Hub searches for it in the system properties, and it isn't found, then it looks in the application properties. The following examples show how to query on system properties and application properties.
+A query on message system properties needs to be prefixed with the `$` symbol. Queries on application properties are accessed with their name and shouldn't be prefixed with the `$` symbol. If an application property name begins with `$`, then Azure IoT Hub searches for it in the system properties, and it isn't found, then it looks in the application properties. The following examples show how to query on system properties and application properties.
 
 To query on system property contentEncoding
 
@@ -105,7 +105,7 @@ A full list of supported operators and functions is provided in the [expression 
 
 ## Message routing query based on message body
 
-To enable querying on message body, the message should be in a JSON encoded in either UTF-8, UTF-16 or UTF-32. The `contentType` must be set to `application/JSON`. The `contentEncoding` system property must be one of the supported UTF encodings supported by that system property. If these properties aren't specified, Azure IoT Hub will not evaluate the query expression on the message body.
+To enable querying on message body, the message should be in a JSON encoded in either UTF-8, UTF-16 or UTF-32. The `contentType` must be set to `application/JSON`. The `contentEncoding` system property must be one of the supported UTF encodings supported by that system property. If these properties aren't specified, Azure IoT Hub won't evaluate the query expression on the message body.
 
 The following example shows how to create a message with a properly formed and encoded JSON body:
 
