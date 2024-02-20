@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.use-semantic-search
 metadata:
-  title: Use semantic search to get better search results in Azure Cognitive Search
-  description: "Learn how semantic search can help you to improve your Azure Cognitive Search results."
+  title: Use semantic search to get better search results in Azure AI Search
+  description: "Learn how semantic search can help you to improve your Azure AI Search results."
   ms.date: 9/29/2023
   author: wwlpublish
   ms.author: berryivor
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: cognitive-search	
-title: Use semantic search to get better search results in Azure Cognitive Search
-summary: "Learn how semantic search can help you to improve your Azure Cognitive Search results."
+title: Use semantic search to get better search results in Azure AI Search
+summary: "Learn how semantic search can help you to improve your Azure AI Search results."
 abstract: |
   By the end of this module, you'll be able to:
     - Describe semantic search
@@ -17,7 +17,7 @@ abstract: |
     - Perform semantic search on an index
 prerequisites: |
     - Familiarity with Microsoft Azure
-    - Familiarity with Azure Cognitive Search
+    - Familiarity with Azure AI Search
     - Application development experience
 iconUrl: /learn/achievements/generic-badge.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level

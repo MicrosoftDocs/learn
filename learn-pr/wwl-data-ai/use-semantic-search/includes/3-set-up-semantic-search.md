@@ -2,12 +2,12 @@ You enable semantic search at the service level and, once it is enabled, semanti
 
 ## Enable semantic search
 
-Before enabling semantic search, you must have an Azure Cognitive Search service with at least one index.
+Before enabling semantic search, you must have an Azure AI Search service with at least one index.
 
 > [!NOTE]
-> For semantic search, the Cognitive Search service must have a billable tier. You cannot change the pricing tier of a Cognitive Search service. If you need another pricing tier, you will have to re-create the service.
+> For semantic search, the AI Search service must have a billable tier. You cannot change the pricing tier of an AI Search service. If you need another pricing tier, you will have to re-create the service.
 
-Semantic search is not available in every region. Before enabling semantic search, check that the region of your Cognitive Search service supports semantic search.
+Semantic search is not available in every region. Before enabling semantic search, check that the region of your AI Search service supports semantic search.
 To see a list of regions that support semantic search, see [Products available by region](https://azure.microsoft.com/explore/global-infrastructure/products-by-region/?products=search)
 
 To enable semantic search in the Azure portal, perform the following steps:

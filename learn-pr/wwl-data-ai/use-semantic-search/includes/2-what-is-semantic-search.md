@@ -1,8 +1,8 @@
-Semantic search is a capability within Azure Cognitive Search that aims to improve the ranking of search results. Semantic search improves the ranking of search results by using language understanding to more accurately match the context of the original query.
+Semantic search is a capability within Azure AI Search that aims to improve the ranking of search results. Semantic search improves the ranking of search results by using language understanding to more accurately match the context of the original query.
 
 ## BM25 ranking function
 
-Azure Cognitive Search uses the BM25 ranking function, by default. The BM25 ranking function ranks search results based on the frequency that the search term appears within a document. The BM25 ranking function will often achieve excellent ranking results, because a document that frequently includes a search term is often the most relevant, however, this isn't always the case. BM25 ranking doesn't place any relevance on the semantics of the query and ranking can sometimes be improved by adding language understanding.
+Azure AI Search uses the BM25 ranking function, by default. The BM25 ranking function ranks search results based on the frequency that the search term appears within a document. The BM25 ranking function will often achieve excellent ranking results, because a document that frequently includes a search term is often the most relevant, however, this isn't always the case. BM25 ranking doesn't place any relevance on the semantics of the query and ranking can sometimes be improved by adding language understanding.
 
 ## Semantic search
 
@@ -30,7 +30,7 @@ The semantic captions are now ranked based on the semantic relevance of the capt
 
 ## Semantic ranking capabilities
 
-See the following video for an overview of the capabilities of cognitive search:
+See the following video for an overview of the capabilities of AI Search:
 
 > [!VIDEO https://www.youtube.com/embed/yOf0WfVd_V0?si=_xY1s8AytK0R-ohY]
 
@@ -53,4 +53,4 @@ Up to 1000 semantic search queries a month are available free of charge.
 
 For more than 1000 queries a month, you should choose standard pricing. The cost of standard pricing is based on the volume of searches, the type of searches, and the region of the search.
 
-For more information  on semantic search pricing, see [Azure Cognitive Search pricing](https://azure.microsoft.com/pricing/details/search/)
+For more information  on semantic search pricing, see [Azure AI Search pricing](https://azure.microsoft.com/pricing/details/search/)

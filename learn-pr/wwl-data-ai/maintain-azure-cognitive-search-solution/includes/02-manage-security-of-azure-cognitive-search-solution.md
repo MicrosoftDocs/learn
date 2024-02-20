@@ -16,7 +16,7 @@ The Azure AI Search service, like all Azure services, encrypts the data it store
 
 Data in transit is encrypted using the standard HTTPS TLS 1.3 encryption over port 443.
 
-If you'd like to use your own encryption keys, AI Search supports using the Azure Key Vault. A benefit of using your own customer-managed keys is that double encryption will be enabled on all objects you use your custom keys on.
+If you'd like to use your own encryption keys, ACS supports using the Azure Key Vault. A benefit of using your own customer-managed keys is that double encryption will be enabled on all objects you use your custom keys on.
 
 > [!TIP]
 > For detailed steps on how to use customer-managed keys for encryption, see [Configure customer-managed keys for data encryption in Azure AI Search](/azure/search/search-security-manage-encryption-keys)
@@ -36,7 +36,7 @@ If your search service is only going to be used by on-premises resources, you ca
 
 With the infrastructure in place to reduce the attack surface of your search solution, your focus can change to how to authenticate search requests from your users and apps.
 
-The default option when you create your AI Search is key-based authentication. There are two different kinds of keys:
+The default option when you create your ACS is key-based authentication. There are two different kinds of keys:
 
 - **Admin keys** - grant your write permissions and the right to query system information (*maximum of 2 admin keys can be created per search service*)
 - **Query keys** - grant read permissions and are used by your users or apps to query indexes (*maximum of 50 query keys can be created per search service*)

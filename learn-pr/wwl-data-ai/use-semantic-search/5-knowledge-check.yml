@@ -26,9 +26,9 @@ quiz:
       explanation: "Incorrect. Semantic search isn't limited to 25 results."
   - content: "Which services is a prerequisite for semantic search?"
     choices:
-    - content: "Azure Cognitive Search service with a billable tier."
+    - content: "Azure AI Search service with a billable tier."
       isCorrect: true
-      explanation: "Correct. Azure Cognitive Search service with a billable tier is required for semantic search."
+      explanation: "Correct. Azure AI Search service with a billable tier is required for semantic search."
     - content: "Azure AI services with a billable tier."
       isCorrect: false
       explanation: "Incorrect. Azure AI services isn't required for semantic search."
