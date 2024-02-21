@@ -1,5 +1,5 @@
 
-Azure Cognitive Search uses the BM25 similarity ranking algorithm. The algorithm scores documents based on the search terms used.
+Azure AI Search uses the BM25 similarity ranking algorithm. The algorithm scores documents based on the search terms used.
 
 Here, you'll see how to add scoring profiles to alter the scores for documents based on your own criteria.
 
@@ -13,7 +13,7 @@ The search engine scores the documents returned from the first three phases. The
 
 #### Improve the score for more relevant documents
 
-As the default scoring works on the frequency of terms and rarity, the final calculated score might not return the highest score for the most relevant document. Each dataset is different, so Cognitive Search lets you influence a document score using scoring profiles.
+As the default scoring works on the frequency of terms and rarity, the final calculated score might not return the highest score for the most relevant document. Each dataset is different, so AI Search lets you influence a document score using scoring profiles.
 
 :::image type="content" source="../media/weighted-field-score.png" alt-text="A diagram showing a weighted field score." border="false":::
 
