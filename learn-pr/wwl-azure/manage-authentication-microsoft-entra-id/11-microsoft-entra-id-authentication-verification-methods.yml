@@ -4,7 +4,7 @@ title: 'Recommend and enforce modern authentication protocols '
 metadata:
   title: Recommend and enforce modern authentication protocols
   description: "Recommend and enforce modern authentication protocols"
-  ms.date: 02/19/2024
+  ms.date: 02/21/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/10-microsoft-entra-id-authentication-verification-methods.md)]
+  [!include[](includes/11-microsoft-entra-id-authentication-verification-methods.md)]

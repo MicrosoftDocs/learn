@@ -4,7 +4,7 @@ title: Configure Microsoft Entra Verified ID
 metadata:
   title: Configure Microsoft Entra Verified ID
   description: "Configure Microsoft Entra Verified ID"
-  ms.date: 02/19/2024
+  ms.date: 02/21/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/9-configure-microsoft-entra-verified-id.md)]
+  [!include[](includes/10-configure-microsoft-entra-verified-id.md)]
