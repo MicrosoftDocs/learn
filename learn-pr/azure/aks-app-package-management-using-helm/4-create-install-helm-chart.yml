@@ -4,8 +4,8 @@ title: Create and install a Helm chart
 metadata:
   description: Explore how a Helm chart defines an application's deployment information and install a chart from a Helm repository.
   title: Create and install a Helm chart
-  author: rayoef
-  ms.author: rayoflores
+  author: schaffererin
+  ms.author: schaffererin
   ms.topic: unit
   ms.date: 02/20/2024
 

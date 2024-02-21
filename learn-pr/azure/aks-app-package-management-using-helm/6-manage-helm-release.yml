@@ -4,8 +4,8 @@ title: Manage a Helm release
 metadata:
   description: Explore how to use Helm to track changes when installing, upgrading, rolling back, or deleting a Helm release on a Kubernetes cluster.
   title: Manage a Helm release
-  author: rayoef
-  ms.author: rayoflores
+  author: schaffererin
+  ms.author: schaffererin
   ms.topic: unit
   ms.date: 02/20/2024
 
