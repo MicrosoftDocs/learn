@@ -29,7 +29,7 @@ roles:
 products: 
   - azure-cognitive-search
 subjects: 
-  - data-ai
+  - artificial-intelligence
 units:
 - learn.improve-search-results-vector-search.introduction
 - learn.improve-search-results-vector-search.vector-search

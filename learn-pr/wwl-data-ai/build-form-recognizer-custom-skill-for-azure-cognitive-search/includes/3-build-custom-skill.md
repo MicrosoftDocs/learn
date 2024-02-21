@@ -28,11 +28,11 @@ You can obtain both these values from the Azure AI Document Intelligence resourc
 
 Your code should formulate a REST response that includes a JSON body. The AI Search service expects this response to include:
 
-- `values`. A collection in which each item is one of the submitted forms.
+- `values`. A collection where each item is one of the submitted forms.
   - `recordId`. AI Search uses this value to match results to one of the input forms.
   - `data`. Use the `data` collection to return the fields that Azure AI Document Intelligence has extracted from each input form.
   - `errors`. If you couldn't obtain the analysis for a form, use the `errors` collection to indicate why.
-  - `warnings`, If you have obtained results but some non-critical problem has arisen, use the `warnings` collection to report the issue.
+  - `warnings`, If you have obtained results but some noncritical problem has arisen, use the `warnings` collection to report the issue.
 
 ## Testing the custom skill
 

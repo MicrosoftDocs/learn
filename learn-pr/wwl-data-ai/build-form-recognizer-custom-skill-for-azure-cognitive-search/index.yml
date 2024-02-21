@@ -25,7 +25,6 @@ products:
 - ai-services
 subjects:
 - artificial-intelligence
-- data-ai
 units:
 - learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search.introduction
 - learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search.understand-enrichment-pipelines

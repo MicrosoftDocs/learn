@@ -24,7 +24,7 @@ During the indexing process, AI Search crawls your content, processes it, and cr
 
 You can create a customized list of skills that will be executed as a skillset in the third stage of indexing. Each skill is a call to an AI process that enriches the index. For example, an AI skill might translate words into different languages or extract words from a binary image.
 
-AI Search has a range of built-in skills, that you can include in your pipeline. Built-in skills use pre-trained AI models, provided by Microsoft. These include:
+AI Search has a range of built-in skills, that you can include in your pipeline. Built-in skills use pretrained AI models, provided by Microsoft. These include:
 
 - **Key phrase extraction.** Detects important phrases in text based on the placement of terms, linguistic rules, and proximity to other terms.
 - **Language detection.** Detects the predominantly used language in text.
@@ -49,7 +49,7 @@ In the above call:
 
 - [service name] is the name of your AI Search service in Azure.
 - [skillset name] is a name for the skillset you're creating.
-- [api version] is the version of the Search REST API.
+- [API version] is the version of the Search REST API.
 - [admin key] is the API key for the Search service. You can obtain this key from the Azure portal.
 
 The JSON code that defines the skillset looks like this:
@@ -73,8 +73,8 @@ The JSON code that defines the skillset looks like this:
 
 In the above JSON code;
 
-- **cognitiveservices** is required if you're using billable Azure AI Services APIs in your skillset. Provide the API key for your Azure AI Services multiservice resource.
-- **knowledgeStore** specifies an Azure Storage Account where the output from skills can be stored
+- **cognitiveServices** is required if you're using billable Azure AI Services APIs in your skillset. Provide the API key for your Azure AI Services multiservice resource.
+- **knowledgeStore** specifies an Azure Storage Account where the output from skills can be stored.
 - **encryptionKey** specifies keys from the Azure Key Vault that will be used to encrypt sensitive content in the pipeline.
 
 The **skills** section defines one or more built-in or custom skills that will analyze the content. For example:

@@ -32,7 +32,7 @@ products:
   - azure
 subjects: 
   - cloud-computing
-  - data-ai
+  - artificial-intelligence
 units:
 - learn.wwl.use-own-data-azure-openai.introduction
 - learn.wwl.use-own-data-azure-openai.understand-use-own-data
