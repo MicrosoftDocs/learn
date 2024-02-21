@@ -31,8 +31,6 @@ roles:
 products:
 - dotnet
 - vs-code
-subjects:
-- app-development
 units:
 - learn.languages.csharp-code-blocks.introduction
 - learn.languages.csharp-code-blocks.exercise-variable-scope
