@@ -217,7 +217,7 @@ Helm allows upgrading existing releases as a delta of all the changes that apply
 
 :::image type="content" source="../media/6-helm-delta-release.svg" border="false" alt-text="A diagram shows how the Helm upgrade command creates a delta of all changed items in a Helm chart to upgrade a release and create a new release revision on a Kubernetes cluster.":::
 
-For example, let's say the development team of the example `webapp` in this unit makes makes code changes that impact only the website's functionality. The team makes the following updates to the `Chart.yaml` file to reflect the new version of the application:
+For example, let's say the development team of the example `webapp` in this unit makes code changes that impact only the website's functionality. The team makes the following updates to the `Chart.yaml` file to reflect the new version of the application:
 
 - Updates the web app's container image and tags the image as `webapp: linux-v2` when pushing the image to the container registry.
 - Updates the `dockerTag` value to `linux-v2` and the chart version value to `0.2.0` in the chart's values file.
