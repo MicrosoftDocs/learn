@@ -43,7 +43,7 @@ When you use Event Hubs SDKs or product integrations that are unaware of Azure I
 
 The **Event Hub Details** section contains the following values: **Partitions**, **Event Hubs-compatible name**, **Event Hubs-compatible endpoint**, **Retention for**, and **Consumer Groups**.
 
-:::image type="content" source="../media/eventhubcompatible.png" alt-text="Screenshot that shows the Events section for the Built-in endpoint properties for Azure IoT hub.":::
+:::image type="content" source="../media/event-hub-compatible.png" alt-text="Screenshot that shows the Events section for the Built-in endpoint properties for Azure IoT hub.":::
 
 In the portal, the Event Hubs-compatible endpoint field contains a complete Event Hubs connection string that looks like: `Endpoint=sb://abcd1234namespace.servicebus.windows.net/;SharedAccessKeyName=iothubowner;SharedAccessKey=keykeykeykeykeykey=;EntityPath=iothub-ehub-abcd-1234-123456`. If the SDK you're using requires other values, then they would be:
 

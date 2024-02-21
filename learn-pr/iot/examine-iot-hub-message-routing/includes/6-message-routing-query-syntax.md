@@ -80,7 +80,7 @@ Azure IoT Hub defines a common format for all device-to-cloud messaging for inte
 
 A query on message system properties needs to be prefixed with the `$` symbol. Queries on application properties are accessed with their name and shouldn't be prefixed with the `$` symbol. If an application property name begins with `$`, then Azure IoT Hub searches for it in the system properties, and it isn't found, then it looks in the application properties. The following examples show how to query on system properties and application properties.
 
-To query on system property contentEncoding
+To query on system property contentEncoding:
 
 ```SQL
 $contentEncoding = 'UTF-8'
