@@ -3,7 +3,7 @@ In this module, you learned how to onboard a new, cloud-connected sensor to Defe
 - How to onboard your sensor in Defender for IoT on the Azure portal.
 - How to add a new Defender for IoT site and zone for use as you deploy more sensors.
 
-You can now onboard more sensors until all the items listed in the network diagram are onboarded. Continue the process of deploying Defender for IoT by passing all of the activation and endpoint JSON files to the deployment team, making sure they know which files applies to which sensor.
+You can now onboard more sensors until all the items listed in the network diagram are onboarded. Continue the process of deploying Defender for IoT by passing all of the activation and endpoint JSON files to the deployment team, making sure they know which files apply to which sensor.
 
 The project is now passed to the connectivity team, who continue the site network setup and then to the deployment team again to deploy and activate the sensors.
 
