@@ -21,8 +21,8 @@ Analytics rules search for specific events or sets of events across your environ
      -  Low. The immediate impact would be minimal. A threat actor would likely need to conduct multiple steps before achieving an impact on an environment.
      -  Medium. The threat actor could have some impact on the environment with this activity, but it would be limited in scope or require additional activity.
      -  High. The activity identified provides the threat actor with wide ranging access to conduct actions on the environment or is triggered by impact on the environment.
- -  Severity level defaults are not a guarantee of current or environmental impact level. Customize alert details to customize the severity, tactics, and other properties of a given instance of an alert with the values of any relevant fields from a query output.
- -  Severity definitions for Microsoft Sentinel analytics rule templates are relevant only for alerts created by analytics rules. For alerts ingested from from other services, the severity is defined by the source security service.<br>
+ -  Severity level defaults aren't a guarantee of current or environmental impact level. Customize alert details to customize the severity, tactics, and other properties of a given instance of an alert with the values of any relevant fields from a query output.
+ -  Severity definitions for Microsoft Sentinel analytics rule templates are relevant only for alerts created by analytics rules. For alerts ingested from other services, the severity is defined by the source security service.<br>
  -  When you create the rule, its Status is Enabled by default, which means it will run immediately after you finish creating it. If you don’t want it to run immediately, select Disabled, and the rule will be added to your Active rules tab and you can enable it from there when you need it.
 
 :::image type="content" source="../media/general-tab-b265927c.png" alt-text="Screenshot showing an example of how to create a new rule.":::
@@ -55,21 +55,21 @@ Here's another sample query, one that would alert you when an anomalous number o
 
 **Rule query best practices:**
 
- -  The query length should be between 1 and 10,000 characters and cannot contain `search *` or `union *`. You can use user-defined functions to overcome the query length limitation.<br>
- -  Using ADX functions to create Azure Data Explorer queries inside the Log Analytics query window is not supported.<br>
+ -  The query length should be between 1 and 10,000 characters and can't contain `search *` or `union *`. You can use user-defined functions to overcome the query length limitation.<br>
+ -  Using ADX functions to create Azure Data Explorer queries inside the Log Analytics query window isn't supported.<br>
  -  When using the **`bag_unpack`** function in a query, if you project the columns as fields using `project field1` and the column doesn't exist, the query will fail. To guard against this happening, you must project the column as follows:<br>
      -  `project field1 = column_ifexists("field1","")`<br>
 
 ### Alert enrichment
 
- -  Use the **Entity mapping** configuration section to map parameters from your query results to Microsoft Sentinel-recognized entities. Entities enrich the rules' output (alerts and incidents) with essential information that serves as the building blocks of any investigative processes and remedial actions that follow. They are also the criteria by which you can group alerts together into incidents in the **Incident settings** tab.
+ -  Use the **Entity mapping** configuration section to map parameters from your query results to Microsoft Sentinel-recognized entities. Entities enrich the rules' output (alerts and incidents) with essential information that serves as the building blocks of any investigative processes and remedial actions that follow. They're also the criteria by which you can group alerts together into incidents in the **Incident settings** tab.
  -  Use the **Custom details** configuration section to extract event data items from your query and surface them in the alerts produced by this rule, giving you immediate event content visibility in your alerts and incidents.<br>
  -  Use the **Alert details** configuration section to override default values of the alert's properties with details from the underlying query results. Alert details allow you to display, for example, an attacker's IP address or account name in the title of the alert itself, so it will appear in your incidents queue, giving you a much richer and clearer picture of your threat landscape.
 
 > [!NOTE]
 > **The size limit for an entire alert is 64 KB**.
 
- -  Alerts that grow larger than 64 KB will be truncated. As entities are identified, they are added to the alert one by one until the alert size reaches 64 KB, and any remaining entities are dropped from the alert.<br>
+ -  Alerts that grow larger than 64 KB will be truncated. As entities are identified, they're added to the alert one by one until the alert size reaches 64 KB, and any remaining entities are dropped from the alert.<br>
  -  The other alert enrichments also contribute to the size of the alert.<br>
  -  To reduce the size of your alert, use the `project-away` operator in your query to remove any unnecessary fields. (Consider also the `project` operator if there are only a few fields you need to keep.)<br>
 
@@ -82,7 +82,7 @@ Here's another sample query, one that would alert you when an anomalous number o
  -  Set **Run query every** to control how often the query is run—as frequently as every 5 minutes or as infrequently as once every 14 days.
  -  Set **Lookup data from the last** to determine the time period of the data covered by the query—for example, it can query the past 10 minutes of data, or the past 6 hours of data. The maximum is 14 days.
  -  For the new **Start running** setting (in Preview):
-     -  Leave it set to Automatically to continue the original behavior: the rule will run for the first time immediately upon being created, and after that at the interval set in the **Run query every** setting.
+     -  Leave it set to Automatically continue the original behavior: the rule will run for the first time immediately upon being created, and after that at the interval set in the **Run query every** setting.
      -  Toggle the switch to **At specific time** if you want to determine when the rule first runs, instead of having it run immediately. Then choose the date using the calendar picker and enter the time in the format of the example shown.
 
 :::image type="content" source="../media/advanced-scheduling-639fd185.png" alt-text="Screenshot showing an example how to configure query scheduling parameters.":::
@@ -94,7 +94,7 @@ The line of text under the **Start running** setting (with the information icon 
 
 **Query intervals and lookback period**
 
-These two settings are independent of each other, up to a point. You can run a query at a short interval covering a time period longer than the interval (in effect having overlapping queries), but you cannot run a query at an interval that exceeds the coverage period, otherwise you will have gaps in the overall query coverage.
+These two settings are independent of each other, up to a point. You can run a query at a short interval covering a time period longer than the interval (in effect having overlapping queries), but you can't run a query at an interval that exceeds the coverage period, otherwise you'll have gaps in the overall query coverage.
 
 **Ingestion delay**
 
