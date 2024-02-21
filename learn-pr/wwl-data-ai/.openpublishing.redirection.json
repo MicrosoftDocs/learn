@@ -104,46 +104,6 @@
       "source_path": "create-manage-cognitive-services/7-summary.yml",
       "redirect_url": "/training/modules/create-manage-ai-services/",
       "redirect_document_id": false
-    },
-    {
-      "source_path": "custom-name-entity-extraction/index.md",
-      "redirect_url": "/training/modules/custom-name-entity-recognition/index.md",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "custom-name-entity-extraction/1-introduction.yml",
-      "redirect_url": "/training/modules/custom-name-entity-recognition/1-introduction.yml",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "custom-name-entity-extraction/2-understand-custom-named.yml",
-      "redirect_url": "/training/modules/custom-name-entity-recognition/2-understand-custom-named.yml",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "custom-name-entity-extraction/3-tag-your-data.yml",
-      "redirect_url": "/training/modules/custom-name-entity-recognition/3-tag-your-data.yml",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "custom-name-entity-extraction/4-train-evaluate-your-model.yml",
-      "redirect_url": "/training/modules/custom-name-entity-recognition/4-train-evaluate-your-model.yml",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "custom-name-entity-extraction/5-exercise-extract-custom-entities.yml",
-      "redirect_url": "/training/modules/custom-name-entity-recognition/5-exercise-extract-custom-entities.yml",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "custom-name-entity-extraction/6-knowledge-check.yml",
-      "redirect_url": "/training/modules/custom-name-entity-recognition/6-knowledge-check.yml",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "custom-name-entity-extraction/7-summary.yml",
-      "redirect_url": "/training/modules/custom-name-entity-recognition/7-summary.yml",
-      "redirect_document_id": true
     }
   ]
 }

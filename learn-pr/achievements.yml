@@ -2368,11 +2368,6 @@ achievements:
   title: Extract text from images and documents
   summary: Learn how to implement text extraction solutions with images and documents using Azure AI Document Intelligence service's OCR Test Tool, pre-built models, and custom models.
   iconUrl: /training/achievements/extract-text-documents.svg
-- uid: learn.wwl.custom-name-entity-extraction.badge
-  type: badge
-  title: Create a custom named entity extraction solution
-  summary: Build a custom entity recognition solution to extract entities from unstructured documents.
-  iconUrl: /training/achievements/2-custom-name-entity-recognition.svg
 - uid: learn.wwl.create-manage-cognitive-services.badge
   type: badge
   title: Create and consume Azure AI Services
