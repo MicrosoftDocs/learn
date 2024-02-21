@@ -33,8 +33,6 @@ roles:
 products:
 - dotnet
 - vs-code
-subjects:
-- app-development
 units:
 - learn.languages.csharp-if-elseif-else.introduction
 - learn.languages.csharp-if-elseif-else.exercise-if
