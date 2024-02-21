@@ -6,3 +6,7 @@ In this module, you completed exercises using helper methods to use arrays more 
 - Combine all of the elements of an array into a single string using the `String.Join()` method.
 
 The array helper methods allowed you to work flexibly with data in the applications. Without these features, arrays would be less useful.
+
+## Get a free verified certification
+
+Microsoft and freeCodeCamp.org offer a training and certification combo on foundational C#. By completing this Learn module, you're already started. Explore freeCodeCamp's Foundational C# with Microsoft certification here: [https://aka.ms/csharp-certification](https://aka.ms/csharp-certification).
