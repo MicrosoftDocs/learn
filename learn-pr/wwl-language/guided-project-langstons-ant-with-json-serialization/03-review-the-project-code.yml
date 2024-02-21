@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-langstons-ant-with-json-serialization.review-the-project-code
+title: Review the project code
+metadata:
+  title: Review the project code
+  description: "Review the project code"
+  ms.date: 02/21/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/03-review-the-project-code.md)]
