@@ -35,4 +35,4 @@ quiz:
       explanation: "Segmenting of resources happens when you create virtual networks and have resources assigned to them."
     - content: "It routes traffic from your network to Azure over the internet."
       isCorrect: false
-      explanation: "Traffic over an ExpressRoute connection is not routed over the internet. It traverses a private circuit instead."
+      explanation: "Traffic over an ExpressRoute connection is not routed over the internet. It goes through a private circuit instead."
