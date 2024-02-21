@@ -31,8 +31,6 @@ roles:
 products:
 - dotnet
 - vs-code
-subjects:
-- app-development
 units:
 - learn.wwl.create-throw-exceptions-c-sharp.introduction
 - learn.wwl.create-throw-exceptions-c-sharp.examine-create-exception-c-sharp
