@@ -35,7 +35,7 @@ An example, completed OT set up form:
 
 In a real-life scenario, you might use the links and options on this page to add a new subscription, or to select a site or zone that was added previously, when onboarding an earlier sensor. You'd clear options for **Cloud connected** and **Automatic Threat Intelligence updates** to retain more on-premises control of your sensor.
 
-- Select **Register** to complete the onboarding. A success message appears and your activation file is automatically downloaded. <!--this isnt really a success message, it is a new page with a success message but 3 important boxes, one is needed in the next point. HOw to describe this?  -->
+- Select **Register** to complete the onboarding. A success message appears and your activation file is automatically downloaded. <!--this isnt really a success message, it is a new page with a success message but 3 important boxes, one is needed in the next point. HOw to describe this? A new page opens, with a succeess message and 3 boxes. The activation file automatically downloads, but can also be downloaded from one of the boxes. -->
 
 - In the **Add outbound allow rules** box, select the **Download** link to download a JSON list of the endpoints you must configure as secure endpoints from your sensor. Save the downloaded file locally.
 
