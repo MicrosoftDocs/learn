@@ -30,8 +30,6 @@ roles:
 products:
 - dotnet
 - vs-code
-subjects:
-- app-development
 units:
 - learn.wwl.challenge-project-arrays-iteration-selection.introduction
 - learn.wwl.challenge-project-arrays-iteration-selection.prepare
