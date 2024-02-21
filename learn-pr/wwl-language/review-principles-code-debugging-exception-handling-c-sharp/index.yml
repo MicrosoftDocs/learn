@@ -29,8 +29,6 @@ roles:
 products:
 - dotnet
 - vs-code
-subjects:
-- app-development
 units:
 - learn.wwl.review-principles-code-debugging-exception-handling-c-sharp.introduction
 - learn.wwl.review-principles-code-debugging-exception-handling-c-sharp.get-started-test-debug-exception
