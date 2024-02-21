@@ -3,11 +3,13 @@ uid: learn.wwl.security-virtual-networks
 metadata:
   title: Plan and implement security for virtual networks
   description: "This module is designed to provide administrators with the knowledge and skills needed to plan and implement robust security measures for Azure virtual networks, ensuring the confidentiality, integrity, and availability of network resources."
-  ms.date: 12/28/2023
+  ms.date: 02/20/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
-  ms.prod: azure
+  ms.custom:
+  - N/A
+  ms.service: azure
 title: Plan and implement security for virtual networks
 summary: This module is designed to provide administrators with the knowledge and skills needed to plan and implement robust security measures for Azure virtual networks, ensuring the confidentiality, integrity, and availability of network resources.
 abstract: |
@@ -38,6 +40,7 @@ units:
 - learn.wwl.security-virtual-networks.virtual-network-peering-gateways
 - learn.wwl.security-virtual-networks.virtual-wide-area-network
 - learn.wwl.security-virtual-networks.secure-virtual-private-network-connectivity-point-to-site-site-to-site
+- learn.wwl.security-virtual-networks.azure-expressroute
 - learn.wwl.security-virtual-networks.expressroute-encryption
 - learn.wwl.security-virtual-networks.secure-paas-deployments
 - learn.wwl.security-virtual-networks.flow-logging-network-security-groups

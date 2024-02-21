@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: jileary
   ms.topic: module
-  ms.prod: azure
+  ms.service: azure
 title: Guided Project - Configure secure access to workloads with Azure virtual networking services
 summary: In this module, you practice configuring secure access to workloads using Azure virtual networking. The lab combines both learning and hands-on practice.
 abstract: |

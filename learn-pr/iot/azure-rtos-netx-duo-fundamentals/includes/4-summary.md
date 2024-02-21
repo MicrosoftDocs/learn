@@ -1,1 +1,0 @@
-We learned about the importance of packet pool processing in the TCP/IP networking model. We also learned that NetX Duo supports both IPv4 and IPv6. We inspected the general template of a NetX Duo project, and learned how to enable address resolution protocol and internet control message protocol. We also learned how to make ping requests.

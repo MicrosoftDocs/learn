@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/27/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: cognitive-search
 title: Enrich a search index using Language Studio
 summary: Azure AI Language gives you the power of Natural Language Processing (NLP) to automatically understand and analyze text. You can use that power to enhance your search solutions.

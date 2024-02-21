@@ -5,7 +5,7 @@ metadata:
   description: Discover the Azure AI Personalizer service that is part of Azure AI services.
   ms.date: 02/23/2023
   author: gerryo
-  ms.author: gerryo
+  ms.author: nitinme
   manager: nitinme
   ms.topic: module
   ms.service: azure-ai-personalizer

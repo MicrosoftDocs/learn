@@ -6,7 +6,7 @@ metadata:
   description: "Use scalar or multi-valued subqueries"
   ms.date: 11/07/2023
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: rcaper
   ms.topic: unit
 azureSandbox: false
 labModal: false

@@ -9,7 +9,7 @@ metadata:
   ms.manager: markl
   ms.custom: team=nextgen
   ms.topic: module
-  ms.prod: aspnet-core
+  ms.service: aspnet-core
 title: Create a full stack application by using React and minimal API for ASP.NET Core
 summary: Learn how to create a full stack application by using React and minimal API for ASP.NET Core.
 abstract: |

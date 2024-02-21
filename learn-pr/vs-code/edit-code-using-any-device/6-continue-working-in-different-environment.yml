@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.edit-code-using-any-device.continue-working-in-different-environment
+title: Continue working in a different environment
+metadata:
+  title: Continue working in a different environment
+  description: "You can seamlessly move to a more powerful environment using the Continue Working On... command in Visual Studio Code for the Web."
+  ms.date: 01/22/2024
+  author: olguzzar
+  ms.author: olguzzar
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-continue-working-in-different-environment.md)]

@@ -4,6 +4,8 @@ Recall that you plan to deploy an IoT Edge device in each store to manage the lo
 
 Here, you'll use the Azure CLI to create an IoT Central application from the **Custom application** template. You'll run the CLI commands in the Azure sandbox and then navigate to the application's web UI. In the web UI, you complete the setup by adding a device template for your IoT Edge device.
 
+[!INCLUDE [learn-pr/includes/azure-optional-exercise-subscription-note](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 ## Download the deployment manifest
 
 When you create the device template for your IoT Edge device, you'll need the deployment manifest and an interface definition on your local machine. You can download these files by right-clicking on the following links and choosing **Save as**:
