@@ -7,6 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
+  ms.service: dotnet-csharp
+  ms.devlang: csharp
 title: Guided Project - Langstons ant with JSON serialization
 summary: Learn to implement JSON serialization to save and load a Langston's ant simulation.
 abstract: |
@@ -30,6 +32,7 @@ roles:
 - k-12-educator
 - student
 products:
+- azure
 - dotnet
 units:
 - learn.wwl.guided-project-langstons-ant-with-json-serialization.introduction
