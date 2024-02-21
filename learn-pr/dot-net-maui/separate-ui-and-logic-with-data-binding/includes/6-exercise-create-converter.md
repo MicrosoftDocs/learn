@@ -4,7 +4,7 @@ In this exercise, you add a converter to the Weather app created in the previous
 
 The current binding context of the weather app's page is a data object with properties describing the weather forecast. One of those properties is the sky condition, which is an enumeration. When weather information is displayed, the app should show an icon to visualize the sky condition. This means that the enumeration needs to be converted to an image resource.
 
-01. Open the project from the previous exercise in Visual Studio. If you don't have a copy, you can download it from [GitHub]().
+01. Open the Weather Sample project from the previous exercise in Visual Studio. If you don't have a copy, you can download it from [GitHub](https://github.com/MicrosoftDocs/mslearn-dotnetmaui-databinding1/raw/main/part4-exercise-finish.zip).
 
 01. Add a folder to the project named _Converters_.
 01. Add a new class to the _Converters_ folder named _WeatherConditionToImageConverter.cs_.

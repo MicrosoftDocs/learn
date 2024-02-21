@@ -2,9 +2,9 @@ In this exercise, you'll convert an app that uses events and code-behind to one 
 
 ## Download and run the sample
 
-To start this exercise module, download the [Weather Sample]() project. This project displays the weather from a fake weather reporting service. The code doesn't contain any data binding.
+To start this exercise module, download the [Weather Sample](https://github.com/MicrosoftDocs/mslearn-dotnetmaui-databinding1/raw/main/part4-exercise-start.zip) project. This project displays the weather from a fake weather reporting service. The code doesn't contain any data binding.
 
-01. Download and extract the [Weather Sample]() project to a temporary folder.
+01. Download and extract the [Weather Sample](https://github.com/MicrosoftDocs/mslearn-dotnetmaui-databinding1/raw/main/part4-exercise-start.zip) project to a temporary folder.
 01. Navigate to the _before_ folder and open the _WeatherClient.sln_ solution.
 01. Build and run the project to make sure it works. On the screen displayed, you'll see some empty weather details. Press the **Refresh** button and you'll see the weather details update.
 
