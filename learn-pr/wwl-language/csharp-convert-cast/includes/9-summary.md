@@ -16,4 +16,4 @@ Without this wealth of options, it would be difficult to work in a typed program
 
 ## Get a free verified certification
 
-Microsoft and freeCodeCamp.org offer a training and certification combo on foundational C#. By completing this Learn module, you're already started. Explore freeCodeCamp's Foundational C# with Microsoft certification here: [https://aka.ms/csharp-certification](https://aka.ms/csharp-certification).
+Microsoft has partnered with freeCodeCamp.org to offer a training and certification program on foundational C#. By completing this Microsoft Learn module, you're already one step closer to being certified. To explore the foundational C# certification offered by freeCodeCamp, visit: [https://aka.ms/csharp-certification](https://aka.ms/csharp-certification).
