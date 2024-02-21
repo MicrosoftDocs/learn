@@ -1,18 +1,18 @@
 ### YamlMime:Module
 uid: learn.wwl.enrich-search-index-using-language-studio
 metadata:
-  title: Enrich a search index using Language Studio
+  title: Enrich your data with Azure AI Language
   description: "Azure AI Language gives you the power of Natural Language Processing (NLP) to automatically understand and analyze text. You can use that power to enhance your search solutions."
   ms.date: 09/27/2023
   author: wwlpublish
   ms.author: berryivor
   ms.topic: module-standard-task-based
   ms.service: cognitive-search
-title: Enrich a search index using Language Studio
+title: Enrich your data with Azure AI Language
 summary: Azure AI Language gives you the power of Natural Language Processing (NLP) to automatically understand and analyze text. You can use that power to enhance your search solutions.
 abstract: |
   In this module, you'll learn how to:
-  - Use Language Studio to enrich Azure AI Search indexes
+  - Use Azure AI Language to enrich Azure AI Search indexes
   - Enrich an AI Search index with custom classes
 prerequisites: |
   *   Familiarity with Microsoft Azure

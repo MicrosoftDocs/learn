@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.use-semantic-search
 metadata:
-  title: Use semantic search to get better search results in Azure AI Search
-  description: "Learn how semantic search can help you to improve your Azure AI Search results."
+  title: Perform search re-ranking with semantic ranking in Azure AI Search
+  description: "Perform search re-ranking with semantic ranking in Azure AI Search."
   ms.date: 9/29/2023
   author: wwlpublish
   ms.author: berryivor
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: cognitive-search	
-title: Use semantic search to get better search results in Azure AI Search
-summary: "Learn how semantic search can help you to improve your Azure AI Search results."
+title: Perform search re-ranking with semantic ranking in Azure AI Search
+summary: "Learn how to perform L2 ranking with semantic ranker in Azure AI Search."
 abstract: |
   By the end of this module, you'll be able to:
-    - Describe semantic search
-    - Set up semantic search
-    - Perform semantic search on an index
+    - Describe semantic ranking
+    - Set up semantic ranking
+    - Perform semantic ranking on an index
 prerequisites: |
     - Familiarity with Microsoft Azure
     - Familiarity with Azure AI Search

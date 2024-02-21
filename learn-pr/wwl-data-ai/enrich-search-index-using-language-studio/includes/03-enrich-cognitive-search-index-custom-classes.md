@@ -20,7 +20,7 @@ Along with your data, you also need a way to assign classifications for each doc
 
 You can choose between two different kinds of project, if a  document maps to a single class use a single label classification project. If you could map a document to more than one class, use the multi label classification project.
 
-If you don't want to manually classify each document, you can label all your documents before you create your Language Studio project. This process involves creating a labels JSON document in this format:
+If you don't want to manually classify each document, you can label all your documents before you create your Azure AI Language project. This process involves creating a labels JSON document in this format:
 
 ```json
 {
@@ -64,11 +64,11 @@ If you don't want to manually classify each document, you can label all your doc
 
 You add as many classes as you have to the `classes` array. You add an entry for each document in the `documents` array including which classes the document matches.
 
-### Create your Language Studio project
+### Create your Azure AI Language project
 
-There are two ways to create your Language Studio project. If you start using the Language Studio without first creating a language service in the Azure portal, Language Studio will offer to create one for you.
+There are two ways to create your Azure AI Language project. If you start using the Language Studio without first creating a language service in the Azure portal, Language Studio will offer to create one for you.
 
-The most flexible way to create a Language Studio project is to first create your language service using the Azure portal. If you choose this option, you get the option to add custom features.
+The most flexible way to create a Azure AI Language project is to first create your language service using the Azure portal. If you choose this option, you get the option to add custom features.
 
 :::image type="content" source="../media/add-additional-features.png" alt-text="A screenshot showing creating a language service in the Azure portal.":::
 

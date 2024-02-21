@@ -14,7 +14,7 @@ labModal: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "Which of the following features of Language Studio can you use out of box without needing to train a model?"
+  - content: "Which of the following features of Azure AI Language can you use out of box without needing to train a model?"
     choices:
     - content: "Conversational language understanding."
       isCorrect: false
@@ -25,7 +25,7 @@ quiz:
     - content: "Custom text classification."
       isCorrect: false
       explanation: "Incorrect. You need to train a model with the classes you want to identify."
-  - content: "Which step enables an AI Search index to store the enrichments from a Language Studio project?"
+  - content: "Which step enables an AI Search index to store the enrichments from a Azure AI Language project?"
     choices:
     - content: "Update your Azure AI Search solution."
       isCorrect: true
