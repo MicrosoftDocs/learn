@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.security-virtual-networks.flow-logging-network-security-groups
-title: Monitor network security by using Network Watcher, including NSG flow logging
+title: Monitor network security by using Network Watcher, including network security groups
 metadata:
-  title: Monitor network security by using Network Watcher, including NSG flow logging
-  description: "Monitor network security by using Network Watcher, including NSG flow logging"
-  ms.date: 02/12/2024
+  title: Monitor network security by using Network Watcher, including network security groups
+  description: "Monitor network security by using Network Watcher, including network security groups"
+  ms.date: 02/20/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
