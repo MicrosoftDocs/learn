@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.advanced-security-compute.microsoft-defender-containers
-title: Secure and monitor AKS
+title: Secure and monitor Azure Kubernetes Service
 metadata:
-  title: Secure and monitor AKS
-  description: "Secure and monitor AKS"
-  ms.date: 02/12/2024
+  title: Secure and monitor Azure Kubernetes Service
+  description: "Secure and monitor Azure Kubernetes Service"
+  ms.date: 02/20/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

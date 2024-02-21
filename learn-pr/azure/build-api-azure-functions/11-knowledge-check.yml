@@ -29,7 +29,7 @@ quiz:
           explanation: "There are many types of triggers in Azure Functions, but only HTTP triggers are called by HTTP requests."
         - content: "Select the `HTTP Trigger` template when creating the function."
           isCorrect: true
-          explanation: "The `HTTP Trigger` template is used to create a function that exposes an HTTP endpoint."
+          explanation: "The 'HTTP Trigger' template is used to create a function that exposes an HTTP endpoint."
     - content: "What is the RESTful way to handle a delete product action in your API?"
       choices:
         - content: "Set the URL to `/products`, pass the ID of the item in the request body and use an HTTP `DELETE` method."
