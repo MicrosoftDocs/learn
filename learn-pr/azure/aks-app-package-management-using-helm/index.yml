@@ -34,8 +34,6 @@ roles:
 products:
 - azure
 - azure-kubernetes-service
-subjects:
-- development-tools
 units:
 - learn.app-package-management-using-helm.introduction
 - learn.app-package-management-using-helm.what-is-helm

@@ -22,4 +22,4 @@ To avoid charges to your Azure subscription, you want to clean up the resources 
 
 - [Helm documentation](https://helm.sh/docs/helm/helm/)
 - [Go template language](https://godoc.org/text/template)
-- [Azure Kubernetes Service (AKS) documentation](https://docs.microsoft.com/azure/aks/)
+- [Azure Kubernetes Service (AKS) documentation](/azure/aks/)
