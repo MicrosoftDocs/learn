@@ -14,7 +14,7 @@ labModal: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "Which of the following options is the only supported endpoint for use with Azure Cognitive Search custom AML skill?"
+  - content: "Which of the following options is the only supported endpoint for use with Azure AI Search custom AML skill?"
     choices:
     - content: "Real-time endpoint."
       isCorrect: false
