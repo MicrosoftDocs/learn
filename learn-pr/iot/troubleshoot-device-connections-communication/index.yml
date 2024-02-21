@@ -13,11 +13,11 @@ metadata:
 title: Troubleshoot Azure IoT Hub device connections and communication
 summary: This module introduces you to troubleshooting device connection and communications issues, and it examines best practice approaches and troubleshooting guidelines that apply to device connections.
 abstract: |
-  After you complete this module, you will be able to:
-  - Describe device reconnection management
-  - Describe device disconnect troubleshooting using Azure Monitor and Event Grid
-  - Describe the device communication troubleshooting guide
-  - Describe message routing troubleshooting
+  After you complete this module, you'll be able to:
+  - Describe device reconnection management.
+  - Describe device disconnect troubleshooting using Azure Monitor and Event Grid.
+  - Describe the device communication troubleshooting guide.
+  - Describe message routing troubleshooting.
 prerequisites: |
   Ability to:
   - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
