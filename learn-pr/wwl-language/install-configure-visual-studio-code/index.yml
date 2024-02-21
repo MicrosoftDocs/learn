@@ -3,7 +3,7 @@ uid: learn.wwl.install-configure-visual-studio-code
 metadata:
   title: Install and configure Visual Studio Code
   description: "Learn how to configure Visual Studio Code for C# and how to use this professional IDE to create and run console applications."
-  ms.date: 02/19/2024
+  ms.date: 02/21/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module
@@ -11,11 +11,11 @@ title: Install and configure Visual Studio Code
 summary: Learn how to configure Visual Studio Code for C# and how to use this professional IDE to create and run console applications.
 abstract: |
   In this module, you will:
-  - Configure Visual Studio Code and your development environment for programming in C#.
-  - Explore the Visual Studio Code user interface.
-  - Create, edit, build, and run a console application using Visual Studio Code.
+  -   Configure Visual Studio Code and your development environment for programming in C#.
+  -   Explore the Visual Studio Code user interface.
+  -   Create, edit, build, and run a console application using Visual Studio Code.
 prerequisites: |
-  *   Experience creating simple C# console applications.
+  -   Experience creating simple C# console applications.
 iconUrl: /training/achievements/install-configure-visual-studio-code.svg
 levels:
 - beginner
