@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.troubleshoot-device-connections-communication
 metadata:
-  title: Troubleshoot device connections and communication
+  title: Troubleshoot Azure IoT Hub device connections and communication
   description: "This module introduces you to troubleshooting device connection and communications issues, and it examines best practice approaches and troubleshooting guidelines that apply to device connections."
   ms.date: 12/06/2023
   author: kgremban
@@ -10,7 +10,7 @@ metadata:
   ms.custom: engagement-fy23
   ms.topic: module-standard-task-based
   ms.service: iot-hub
-title: Troubleshoot device connections and communication
+title: Troubleshoot Azure IoT Hub device connections and communication
 summary: This module introduces you to troubleshooting device connection and communications issues, and it examines best practice approaches and troubleshooting guidelines that apply to device connections.
 abstract: |
   After you complete this module, you will be able to:
