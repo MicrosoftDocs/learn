@@ -1,8 +1,6 @@
-As a software engineer at Tailwind Trader's, responsible for an application on your company's vacation planning website that helps customers add, edit, view, and remove plans on their vacation wish lists. Your API, which is hosted on a server running Node.js and Express, is critical to the success of the application. It's challenging to manage the server and scale the application up and down as needed while minimizing costs.
+As a software engineer at Tailwind Trader's, you are responsible for an application on your company's vacation planning website that helps customers add, edit, view, and remove plans on their vacation wish lists. Your API, which is hosted on a server running Node.js and Express, is critical to the success of the application. It's challenging to manage the server and scale the application up and down as needed while minimizing costs.
 
 ## Server-based applications
-
-To reduce the burden of maintaining servers, you can migrate your application to a serverless model that scales up and down as needed, reduces costs, and requires less code. You can use Azure Functions to shift your API to a serverless model without having to rewrite your application.
 
 To use your current Express application and server, you must:
 
