@@ -2,7 +2,7 @@
 uid: learn.languages.csharp-arrays
 metadata:
   title: Store and iterate through sequences of data using Arrays and the foreach statement in C#
-  description: "Store and iterate through sequences of data using Arrays and the foreach statement in C#"
+  description: "Learn to create array variables and iterate through elements of the array."
   ms.date: 02/21/2024
   author: wwlpublish
   ms.author: cahowd
@@ -32,8 +32,6 @@ roles:
 products:
 - dotnet
 - vs-code
-subjects:
-- app-development
 units:
 - learn.languages.csharp-arrays.introduction
 - learn.languages.csharp-arrays.exercise-array-basics
