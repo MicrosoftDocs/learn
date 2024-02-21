@@ -1,4 +1,4 @@
-You work for a large insurance organization that's planning a migration to Azure. Your head office currently hosts all the company's public-facing websites and its insurance quote app. Your company headquarters and satellite offices around the country/region still needs to access internal resources that were migrated to Azure along with the back-office area of the quote app. Your virtual machine infrastructure requires access to central services including Active Directory and DNS.
+You work for a large insurance organization that's planning a migration to Azure. Your head office currently hosts all the company's public-facing websites and its insurance quote app. Your company headquarters and satellite offices around the country/region still need to access internal resources that were migrated to Azure, along with the back-office area of the quote app. Your virtual machine infrastructure requires access to central services including Active Directory and DNS.
 
 In this module, you review a hub-spoke topology in Azure designed for:
 
@@ -6,7 +6,7 @@ In this module, you review a hub-spoke topology in Azure designed for:
 - Planning and designing virtual networks
 - Securing your architectural design
 
-The final design provides for isolation of resources, have a low administrative overhead, and allow communication from on-premises resources.
+The final design provides for isolation of resources, has a low administrative overhead, and allows communication from on-premises resources.
 
 ## Learning objectives
 

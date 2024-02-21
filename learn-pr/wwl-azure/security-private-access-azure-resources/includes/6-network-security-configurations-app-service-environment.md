@@ -225,4 +225,4 @@ If you adjust the size of the front ends to two cores but don't adjust the ratio
 
 2. Select Delete at the top of the App Service Environment pane. Enter the name of your ASE to confirm that you want to delete it. When you delete an ASE, you also delete all the content within it.
 
-:::image type="content" source="../media/delete-an-application-service-environment-page-4309a7ce.png" alt-text="Screenshot showing how to delete an application service environment.":::
+:::image type="content" source="../media/delete-application-service-environment-page-565fddaf.png" alt-text="Screenshot showing how to delete an application service environment.":::

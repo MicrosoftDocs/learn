@@ -4,7 +4,7 @@ title: Implement Conditional Access policies
 metadata:
   title: Implement Conditional Access policies
   description: "Implement Conditional Access policies"
-  ms.date: 02/12/2024
+  ms.date: 02/19/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/9-conditional-access.md)]
+  [!include[](includes/15-conditional-access.md)]

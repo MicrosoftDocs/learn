@@ -6,7 +6,7 @@ metadata:
   description: A discussion of what files can be used in HPC workloads and how files are typically accessed.
   ms.date: 12/29/2020
   author: scjescho
-  ms.author: scjescho
+  ms.author: padmalathas
   ms.topic: interactive-tutorial
 durationInMinutes: 3
 content: |
