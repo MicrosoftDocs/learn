@@ -12,8 +12,8 @@ title: Enrich your data with Azure AI Language
 summary: Azure AI Language gives you the power of Natural Language Processing (NLP) to automatically understand and analyze text. You can use that power to enhance your search solutions.
 abstract: |
   In this module, you'll learn how to:
-  - Use Azure AI Language to enrich Azure AI Search indexes
-  - Enrich an AI Search index with custom classes
+  - Use Azure AI Language to enrich Azure AI Search indexes.
+  - Enrich an AI Search index with custom classes.
 prerequisites: |
   *   Familiarity with Microsoft Azure
   *   Application development experience with C# or Python
