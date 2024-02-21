@@ -8,25 +8,11 @@ In this exercise, you deploy your network infrastructure, and then create a new 
 
 This deployment creates the Azure network resources matching the preceding diagram. With these resources in place, you can add the new HR virtual network.
 
-1. If you have more than one subscription, you may need to log in and then set the current subscription to your own:
-
-```azurecli
-az login
-
-az account set --subscription <rgn>[subscription GUID]</rgn>
-```
-
-1. Create a resource group:
-
-```azurecli
-az group create --name <rgn>[sandbox resource group name]</rgn> --location <rgn>[location]</rgn>
-```
-
-1. Create the virtual networks and subnets for your server resources. Run the following command:
+Create the virtual networks and subnets for your server resources. Run the following command:
 
 ```azurecli
 az deployment group create \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
     --template-uri https://raw.githubusercontent.com/MicrosoftDocs/mslearn-hub-and-spoke-network-architecture/master/azuredeploy.json
 ```
 
@@ -151,7 +137,7 @@ Now you've created a network security group that can be assigned to each of the 
 
 Now, you associate the network security group to the virtual network.
 
-1. If you close the **HRNsg** window, go to the **Home** page of the portal. Select **All resources** and select **HRNsg**. The **HRNsg** pane appears. Otherwise, go to the next step.
+1. If you closed the **HRNsg** window, go to the **Home** page of the portal. Select **All resources** and select **HRNsg**. The **HRNsg** pane appears. Otherwise, go to the next step.
 
 2. In the left menu pane, under **Settings**, select **Subnets**. The **Subnets** pane appears for your HRNsg network security group.
 
