@@ -45,7 +45,7 @@ subjects:
 - security
 - storage
 - virtual-machine
-- workloads
+- infrastructure
 units:
 - learn.wwl.set-up-microsoft-defender-cloud.introduction
 - learn.wwl.set-up-microsoft-defender-cloud.implement-microsoft-defender-for-cloud
