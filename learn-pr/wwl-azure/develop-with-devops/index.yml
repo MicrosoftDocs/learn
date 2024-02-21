@@ -21,7 +21,6 @@ abstract: |
 prerequisites: |
   *   Basic familiarity with IT terms and concepts
 iconUrl: /training/achievements/generic-trophy.svg
-hidden: true
 levels:
   - beginner
 roles:
