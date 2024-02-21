@@ -3,13 +3,16 @@ uid: learn.wwl.guided-project-azure-files-azure-blobs
 metadata:
   title: Guided Project - Azure Files and Azure Blobs
   description: "In this module, you practice storing business data securely by using Azure Blob Storage and Azure Files. The lab combines both learning and hands-on practice."
-  ms.date: 10/16/2023
+  ms.date: 02/20/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
-  ms.service: azure
+  ms.custom:
+  - N/A
 title: Guided Project - Azure Files and Azure Blobs
-summary: In this module, you practice storing business data securely by using Azure Blob Storage and Azure Files. The lab combines both learning and hands-on practice.
+summary: |
+  In this module, you practice storing business data securely by using Azure Blob Storage and Azure Files. The lab combines both learning and hands-on practice.
+  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   In this module, you practice how to:
   *   Create and configure a storage account.
@@ -23,7 +26,6 @@ prerequisites: |
   - Basic knowledge of security concepts like identities, permissions, and encryption.
   - Basic knowledge of networking concepts like virtual networks and subnetting.
 iconUrl: /training/achievements/guided-project-azure-files-azure-blobs.svg
-hidden: false
 levels:
 - intermediate
 roles:
