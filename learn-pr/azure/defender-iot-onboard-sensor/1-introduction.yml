@@ -1,7 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.onboard-sensor-microsoft-defender-iot.introduction
-title: |
-  Introduction
+title: Introduction
 metadata:
   title: |
     Introduction to onboarding an OT sensor

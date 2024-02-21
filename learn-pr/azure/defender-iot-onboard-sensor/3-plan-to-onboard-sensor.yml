@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.onboard-sensor-microsoft-defender-io.plan-to-onboard-sensor
-title: |
-  Plan to onboard an OT sensor
+title: 
+  Plan to onboard an OT sensor to Microsoft Defender for IoT
 metadata:
   title: |
-    Plan to onboard an OT sensor
+    Plan to onboard an OT sensor to Microsoft Defender for IoT
   description: "Plan to onboard an OT sensor"
   ms.date: 12/4/2023
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.service: defender-for-iot
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/3-plan-to-onboard-sensor.md)]

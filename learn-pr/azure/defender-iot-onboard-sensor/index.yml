@@ -9,7 +9,7 @@ metadata:
   ms.author: cwatson
   ms.topic: module-standard-task-based
   ms.service: defender-for-iot
-title: |
+title: 
   Onboard your first OT sensor to Microsoft Defender for IoT
 summary: Based on the sensor information gathered in the plan and prepare phases of a deployment, onboard one of these sensors to Defender for IoT, download the sensor's activation file, and the list of endpoints required to connect your sensor to Azure.
 abstract: |
@@ -17,10 +17,10 @@ abstract: |
     - Onboard an OT sensor to Defender for IoT
 prerequisites: |
   - Knowledge of what Defender for IoT is and how it works at a beginner level 
-  - Access to an [Azure subscription](https://azure.microsoft.com/free) as a Security Admin, Contributor, or Owner 
+  - Access to an [Azure subscription](https://azure.microsoft.com/free) as a Security Admin, Contributor, or Owner user
   -	A Defender for IoT license with an [OT plan](/azure/defender-for-iot/organizations/getting-started)
-  - Knowledge of deployment planning concepts for Defender for IoT including sites and zones, cloud connection options, and users and roles at a beginner level
-  - Knowledge of traffic mirroring methods for OT sensors at a beginner level
+  - Knowledge of deployment planning concepts for Defender for IoT, such as sites and zones OT sensor parameters
+  - Details of the specific site and zone needed to assign to the sensor 
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - intermediate
