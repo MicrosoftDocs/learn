@@ -23,20 +23,6 @@ There are two containers in the Contoso Shop project. Before pushing the images 
 
 Follow these steps to create and run Docker containers in the codespace.
 
-1. When the setup is complete, within the **dotnet-kubernetes** directory, open the file named **docker-compose.yml**.
-1. Switch to the **PORTS** tab, point at the **Forwarded Address** for the **Back End (32001)** port, and then click the **Copy Local Address** icon.
-
-    ![Screenshot showing how to copy the forwarded port for the backend service.](../media/copy-forwarded-port.png)
-
-1. Paste this URL into the `ImagePrefix` environment variable in the **docker-compose.yml** file, replacing the text `http://localhost`. 
-1. Append `images` to the pasted text:
-
-    ```docker-compose
-    environment: 
-      - ProductEndpoint=http://backend:8080
-      - ImagePrefix=https://studious-fortnight-4g4rx9g47wg249w-32001.app.github.dev/images
-    ```
-
 1. Switch to the **TERMINAL** tab and run the following command to go to the code root:
 
    ```cli
@@ -46,7 +32,7 @@ Follow these steps to create and run Docker containers in the codespace.
 1. Run the following command to build the containers:
 
     ```bash
-    docker compose build
+    dotnet publish /p:PublishProfile=DefaultContainer
     ```
 
     It might take a while to build the containers.
@@ -57,9 +43,9 @@ Follow these steps to create and run Docker containers in the codespace.
     docker compose up
     ```
 
-1. To test the front end service, switch to the **PORTS** tab, then to the right of the local address for the **Front End** port, select the globe icon. The browser displays the homepage. 
+1. To test the front end service, switch to the **PORTS** tab, then to the right of the local address for the **Front End** port, select the globe icon. The browser displays the homepage.
 1. Select **Products**. The catalog shows Contoso's merchandise.
-1. Close the web site, return to the **TERMINAL** tab, and then press <kbd>Ctrl + C</kbd>. Docker compose halts the containers.
+1. Close the web site, return to the **TERMINAL** tab, and then press <kbd>CTRL</kbd> + <kbd>C</kbd>. Docker compose halts the containers.
 
 ## Sign in to Docker Hub
 
