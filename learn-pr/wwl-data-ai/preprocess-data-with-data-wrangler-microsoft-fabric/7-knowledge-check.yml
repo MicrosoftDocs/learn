@@ -19,13 +19,13 @@ quiz:
   - content: What type of data does Data Wrangler currently support?
     choices:
     - content: Only Pandas DataFrames.
-      isCorrect: False
+      isCorrect: false
       explanation: Incorrect. Data Wrangler supports Pandas DataFrames and Spark DataFrames.
     - content: Only Spark DataFrames.
       isCorrect: false
       explanation: Incorrect. Data Wrangler supports Pandas DataFrames and Spark DataFrames.
     - content: Both Pandas and Spark DataFrames.
-      isCorrect: false
+      isCorrect: true
       explanation: Correct. Both Pandas and Spark DataFrames are supported.
   - content: How can you launch Data Wrangler from a Microsoft Fabric notebook?
     choices:
