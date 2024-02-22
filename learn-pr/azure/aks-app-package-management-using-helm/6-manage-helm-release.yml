@@ -4,10 +4,10 @@ title: Manage a Helm release
 metadata:
   description: Explore how to use Helm to track changes when installing, upgrading, rolling back, or deleting a Helm release on a Kubernetes cluster.
   title: Manage a Helm release
-  author: zr-msft
-  ms.author: zarhoads
+  author: schaffererin
+  ms.author: schaffererin
   ms.topic: unit
-  ms.date: 03/10/2023
+  ms.date: 02/20/2024
 
 durationInMinutes: 12
 content: |
@@ -18,26 +18,26 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "Suppose a software solution has two critical components. The first component is a web application. The second is a service that processes online orders. The two components are both part of an online order processing pipeline, but doesn't have a dependency on each other. Which strategy would fit the deployment of these two applications best using Helm?"
+  - content: "Let's say you have a software solution with two critical components: a web application and a service that processes online orders. Both components are part of an online order processing pipeline, but they don't have a dependency on each other. Which strategy would best fit the deployment of these two applications using Helm?"
     choices:
-    - content: "Create a single Helm chart that for both applications, but don't set either chart as a dependency of the other."
+    - content: "Create a single Helm chart for both applications, but don't set either chart as a dependency of the other."
       isCorrect: false
       explanation: "When you deploy a Helm chart, the applications deployed in the chart are deployed as a release. A single release can make it difficult to manage upgrades and fixes to each component independently."
     - content: "Create two separate Helm charts, one for each of the applications."
       isCorrect: true
-      explanation: "When you deploy a Helm chart, the applications deployed in the chart are deployed as a release. By splitting the deployment across two charts, this strategy allows you to manage each component in a separate development life cycle for upgrades and fixes."
+      explanation: "When you deploy a Helm chart, the applications deployed in the chart are deployed as a release. By splitting the deployment across two charts, this strategy allows you to manage each component in a separate development lifecycle for upgrades and fixes."
     - content: "Create a single Helm chart for both applications, and set the service that process the orders as a dependency chart."
       isCorrect: false
       explanation: "When you deploy a Helm chart, the applications deployed in the chart are deployed as a release. A single release can make it difficult to manage upgrades and fixes to each component independently."
 
-  - content: "Suppose a software solution makes use of website as one of its critical components. The website is the only component that depends on a caching service. Which strategy would fit the deployment of these two applications best using Helm?"
+  - content: "Let's say you have a software solution that has a website as one of its critical components. The website is the only component that depends on a caching service. Which strategy would best fit the deployment of these two applications using Helm?"
     choices:
     - content: "Create two separate Helm charts, one for each of the applications."
       isCorrect: false
-      explanation: "By splitting the deployment across two charts, this strategy allows you to manage each component in a separate development life cycle. However, since there's a direct dependency between the website and the caching service, a better approach would be to deploy these components as a single Helm release."
-    - content: "Create a single Helm chart to deploy the website. Deploy the caching service as a separate component by using deployment manifest files."
+      explanation: "By splitting the deployment across two charts, this strategy allows you to manage each component in a separate development lifecycle. However, since there's a direct dependency between the website and the caching service, a better approach would be to deploy these components as a single Helm release."
+    - content: "Create a single Helm chart to deploy the website, and deploy the caching service as a separate component using deployment manifest files."
       isCorrect: false
-      explanation: "By managing the dependent caching service outside of the website's Helm chart, will make it difficult to manage the deployment of the website. There's a direct dependency between the website and the caching service and a better approach would be to deploy these components as a single Helm release."
+      explanation: "Managing the dependent caching service outside of the website's Helm chart will make it difficult to manage the deployment of the website. There's a direct dependency between the website and the caching service. A better approach would be to deploy these components as a single Helm release."
     - content: "Create a single Helm chart for both applications, and set the caching service as a dependency chart."
       isCorrect: true
       explanation: "When you deploy a Helm chart, the applications deployed in the chart are deployed as a release. A single release can make it easier to manage upgrades and fixes to the components that have dependencies."
