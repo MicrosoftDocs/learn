@@ -82,10 +82,6 @@ In the v4 programming model, you can organize your routes in several ways. You c
         handler: getVacations
     });
     ```
-* Create function file.
-* Add the _vacationService_ import to the file.
-* Add function handler for data access and error handling.
-* Move the route definition to the _index.ts_ file
 
 ## Naming the function and handler
 
@@ -112,9 +108,9 @@ While the GET and POST routes are the same. The `PUT` and `DELETE` routes use a 
 
 Create the `POST` function that handles adding a vacation.
 
-1. In Visual Studio Code, open the command palette with <kbd>Ctrl<kbd> + <kbd>Shift<kbd> + P</kbd> and type `Azure Functions: Create Function` and press <kbd>Enter</kbd>.
+1. In Visual Studio Code, open the command palette with <kbd>Ctrl</kbd> + <kbd>Shift</kbd> +<kbd>P</kbd> and type `Azure Functions: Create Function` and press <kbd>Enter</kbd>.
 1. Select **HTTP Trigger** as the type, and *postVacation* as the name.
-1. Add the _vacationService_ import to the file.
+1. Add the _vacationService_ import statement to the file.
 
    ```typescript
    import { vacationService } from '../services';
@@ -182,9 +178,9 @@ Create the `POST` function that handles adding a vacation.
 
 Create the `PUT` function that handles adding a vacation.
 
-1. In Visual Studio Code, open the command palette with <kbd>Ctrl<kbd> + <kbd>Shift<kbd> + P</kbd> and type `Azure Functions: Create Function` and press <kbd>Enter</kbd>.
+1. In Visual Studio Code, open the command palette with <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> and type `Azure Functions: Create Function` and press <kbd>Enter</kbd>.
 1. Select **HTTP Trigger** as the type, and *updateVacation* as the name.
-1. Add the _vacationService_ import to the file.
+1. Add the _vacationService_ import statement to the file.
 
    ```typescript
    import { vacationService } from '../services';
@@ -231,7 +227,6 @@ Create the `PUT` function that handles adding a vacation.
 
     The `request.params.id` property is used to get the vacation ID from the URL. The `request.json()` method is used to get the vacation data from the request body. The `as Vacation` syntax is a type assertion that tells TypeScript to treat the result as a `Vacation` object.
 
-    ```typescript
 
 1. Move the route definition from the _putVacation_ file to the _index.ts_ file. Update the method property array to `PUT`. 
 
@@ -248,7 +243,7 @@ Create the `PUT` function that handles adding a vacation.
 
 Create the `DELETE` function that handles adding a vacation.
 
-1. In Visual Studio Code, open the command palette with <kbd>Ctrl<kbd> + <kbd>Shift<kbd> + P</kbd> and type `Azure Functions: Create Function` and press <kbd>Enter</kbd>.
+1. In Visual Studio Code, open the command palette with <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> and type `Azure Functions: Create Function` and press <kbd>Enter</kbd>.
 1. Select **HTTP Trigger** as the type, and *deleteVacation* as the name.
 1. Add the _vacationService_ import to the file.
 

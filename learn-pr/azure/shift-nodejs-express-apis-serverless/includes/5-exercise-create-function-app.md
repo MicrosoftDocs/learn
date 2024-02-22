@@ -39,7 +39,7 @@ First you refactor the code to import the appropriate npm package. Then you refa
 
 ### Copy over existing code from Express project
 
-In Visual Studio Code, copy the following subfolders from _server_ folder from the Express application and paste it into the _functions/_ folder.
+In Visual Studio Code, copy the following subfolders from the _server_ folder in the Express application and paste it into the _functions/_ folder:
 
 * data
 * models
