@@ -34,6 +34,8 @@ roles:
 products:
 - dotnet
 - vs-code
+subjects:
+- app-development
 units:
 - learn.wwl.guided-project-debug-handle-exceptions-c-sharp-console-application.introduction
 - learn.wwl.guided-project-debug-handle-exceptions-c-sharp-console-application.prepare
