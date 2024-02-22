@@ -1,4 +1,4 @@
-This module equips administrators to secure public access, ensuring application and service confidentiality, integrity, and availability
+This module equips administrators to secure public access, ensuring application and service confidentiality, integrity, and availability. 
 
 ## Scenario
 
