@@ -112,7 +112,7 @@ While the GET and POST routes are the same. The `PUT` and `DELETE` routes use a 
 
 Create the `POST` function that handles adding a vacation.
 
-1. In Visual Studio Code, open the command palette with <kbd>Ctrl<kbd> + <kbd>Shift<kbd> + P</kbd> and type `Azure Functions: Create Function` and press <kbd>Enter</kbd>.
+1. In Visual Studio Code, open the command palette with <kbd>Ctrl</kbd> + <kbd>Shift</kbd> +<kbd>P</kbd> and type `Azure Functions: Create Function` and press <kbd>Enter</kbd>.
 1. Select **HTTP Trigger** as the type, and *postVacation* as the name.
 1. Add the _vacationService_ import statement to the file.
 
