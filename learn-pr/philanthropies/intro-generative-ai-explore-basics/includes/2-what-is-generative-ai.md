@@ -1,4 +1,4 @@
-Generative AI is a term for AI systems that recognize patterns in significant and complex data sets to generate original text, voice, and images based on these patterns. While some AI systems can make predictions based on existing data, generative AI is designed to use the patterns provided to generate entirely new content. As a result, generative AI tools doesn't create the same output twice for the same input. 
+Generative AI is a term for AI systems that recognize patterns in significant and complex data sets to generate original text, voice, and images based on these patterns. While some AI systems can make predictions based on existing data, generative AI is designed to use the patterns provided to generate entirely new content. As a result, generative AI tools don't create the same output twice for the same input. 
 
 **Two types of generative AI models**:  
 
