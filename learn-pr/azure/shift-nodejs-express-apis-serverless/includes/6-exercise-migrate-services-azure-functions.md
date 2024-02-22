@@ -6,7 +6,7 @@ You created the first API endpoint when you created the Azure Functions app in t
 
 1. Open the _functions/src/functions/getVacations.ts_ file.
 1. Open the _server/routes/vacation.routes.ts_ file in a separate window so you can see both files side by side.
-1. Add the _vacationService_ import to the _getVacations.ts_ file.
+1. Add the _vacationService_ import statement to the _getVacations.ts_ file.
 
    ```typescript
    import { vacationService } from '../services';
