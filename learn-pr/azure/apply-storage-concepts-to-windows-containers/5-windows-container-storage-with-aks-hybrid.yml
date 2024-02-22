@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.apply-storage-concepts-to-windows-containers.windows-container-storage-with-aks-hybrid
+title: Windows container storage with AKS Hybrid
+metadata:
+  unitType: learning-content
+  title: Windows container storage with AKS Hybrid
+  description: Azure Kubernetes Service (AKS) hybrid deployment options is an on-premises implementation of the Azure Kubernetes Service orchestrator, which automates running containerized applications at scale while allowing you to operate consistent cloud native applications anywhere.
+  ms.date: 02/13/2024
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-windows-container-storage-with-aks-hybrid.md)]
