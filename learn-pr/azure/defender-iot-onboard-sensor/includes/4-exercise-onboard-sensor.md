@@ -31,7 +31,7 @@ Once the sensor is onboarded, an activation file and a list of endpoints file ar
 
 An example, completed OT set up form:
 
-:::image type="content" source="../media/4-ot-onboarding-complete-form.png" alt-text="screenshot of a completed OT onboarding form":::
+:::image type="content" source="../media/4-ot-onboarding-complete-form.png" alt-text="screenshot of a completed OT onboarding form" border="false":::
 
 In a real-life scenario, you might use the links and options on this page to add a new subscription, or to select a site or zone that was added previously, when onboarding an earlier sensor. You'd clear options for **Cloud connected** and **Automatic Threat Intelligence updates** to retain more on-premises control of your sensor.
 
