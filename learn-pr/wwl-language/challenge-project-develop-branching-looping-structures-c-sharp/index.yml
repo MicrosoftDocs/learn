@@ -34,6 +34,8 @@ roles:
 products:
 - dotnet
 - vs-code
+subjects:
+- app-development
 units:
 - learn.wwl.challenge-project-develop-branching-looping-structures-c-sharp.introduction
 - learn.wwl.challenge-project-develop-branching-looping-structures-c-sharp.prepare
