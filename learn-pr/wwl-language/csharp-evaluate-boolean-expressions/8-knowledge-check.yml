@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/22/2024
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
@@ -16,7 +16,7 @@ quiz:
     choices:
     - content: "`Console.WriteLine(!value);`."
       isCorrect: true
-      explanation: "Correct! Adding the `!` operator (the \"not-operator\") before a conditional expression forces your code to reverse its evaluation of the operand. When logical negation is applied, the evaluation produces `true` , if the operand evaluates to `false` , and `false` , if the operand evaluates to `true`."
+      explanation: "Correct! Adding the `!` operator (the \"not-operator\") before a conditional expression forces your code to reverse its evaluation of the operand. When logical negation is applied, the evaluation produces `true` if the operand evaluates to `false` and `false` if the operand evaluates to `true`."
     - content: "`Console.WriteLine(value != false);`."
       isCorrect: false
       explanation: "Incorrect. Using the inequality operator to evaluate whether `value` isn't equal to `false` isn't an example of logical negation."
