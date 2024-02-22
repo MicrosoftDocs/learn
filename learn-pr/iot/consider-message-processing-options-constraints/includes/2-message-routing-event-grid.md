@@ -1,7 +1,7 @@
-Azure IoT Hub provides the capability to stream data from your connected devices and integrate that data into your business applications. IoT Hub offers two methods for integrating IoT events into other Azure services or business applications.
+Azure IoT Hub provides the capability to stream data from your connected devices and integrate that data into your business applications. Azure IoT Hub offers two methods for integrating IoT events into other Azure services or business applications.
 
- -  **IoT Hub message routing**: This IoT Hub feature enables users to route device-to-cloud messages to service endpoints like Azure Storage containers, Event Hubs, Service Bus queues, and Service Bus topics. Routing also provides a querying capability to filter the data before routing it to the endpoints. In addition to device telemetry data, you can also send non-telemetry events that can be used to trigger actions.
- -  **IoT Hub integration with Event Grid**: Azure Event Grid is a fully managed event routing service that uses a publish-subscribe model. IoT Hub and Event Grid work together to integrate IoT Hub events into Azure and non-Azure services, in near-real time. IoT Hub publishes both device events and telemetry events.
+* ***IoT Hub message routing**: This Azure IoT Hub feature enables users to route device-to-cloud messages to service endpoints like Azure Storage containers, Event Hubs, Service Bus queues, and Service Bus topics. Routing also provides a querying capability to filter the data before routing it to the endpoints. In addition to device telemetry data, you can also send non-telemetry events that can be used to trigger actions.
+* ***Azure IoT Hub integration with Event Grid**: Azure Event Grid is a fully managed event routing service that uses a publish-subscribe model. Azure IoT Hub and Event Grid work together to integrate Azure IoT Hub events into Azure and non-Azure services, in near-real time. Azure IoT Hub publishes both device events and telemetry events.
 
 ## Differences
 
@@ -26,7 +26,7 @@ While both message routing and Event Grid enable alert configuration, there are 
     Yes, message routing can be used for telemetry data, report device twin changes, device lifecycle events, and digital twin change events (part of the IoT Plug and Play public preview).
   :::column-end:::
   :::column:::
-    Yes, Event Grid can be used for telemetry data but can also report when devices are created, deleted, connected, and disconnected from IoT Hub.
+    Yes, Event Grid can be used for telemetry data but can also report when devices are created, deleted, connected, and disconnected from Azure IoT Hub.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -48,7 +48,7 @@ While both message routing and Event Grid enable alert configuration, there are 
     Rich filtering on message application properties, message system properties, message body, device twin tags, and device twin properties. Filtering isn't applied to digital twin change events.
   :::column-end:::
   :::column:::
-    Filtering based on event type, subject type and attributes in each event. When subscribing to telemetry events, you can apply more filters on the data to filter on message properties, message body and device twin in your IoT Hub, before publishing to Event Grid.
+    Filtering based on event type, subject type and attributes in each event. When subscribing to telemetry events, you can apply more filters on the data to filter on message properties, message body and device twin in your Azure IoT Hub, before publishing to Event Grid.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -61,7 +61,7 @@ Azure Blob Storage
 Service Bus queue
 Service Bus topics
 
-Paid IoT Hub SKUs (S1, S2, and S3) are limited to 10 custom endpoints. 100 routes can be created per IoT Hub.
+Paid Azure IoT Hub SKUs (S1, S2, and S3) are limited to 10 custom endpoints. 100 routes can be created per Azure IoT Hub.
   :::column-end:::
   :::column:::
     Azure Functions
@@ -74,7 +74,7 @@ Queue Storage
 Microsoft Flow
 Third-party services through WebHooks
 
-500 endpoints per IoT Hub are supported.
+500 endpoints per Azure IoT Hub are supported.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -82,27 +82,26 @@ Third-party services through WebHooks
     Cost
   :::column-end:::
   :::column:::
-    There is no separate charge for message routing. Only ingress of telemetry into IoT Hub is charged. For example, if you have a message routed to three different endpoints, you are billed for only one message.
+    There is no separate charge for message routing. Only ingress of telemetry into Azure IoT Hub is charged. For example, if you have a message routed to three different endpoints, you are billed for only one message.
   :::column-end:::
   :::column:::
-    There is no charge from IoT Hub. Event Grid offers the first 100,000 operations per month for free, and then $0.60 per million operations afterwards.
+    There is no charge from Azure IoT Hub. Event Grid offers the first 100,000 operations per month for free, and then $0.60 per million operations afterwards.
   :::column-end:::
 :::row-end:::
 
-
 ## Similarities
 
-IoT Hub message routing and Event Grid have similarities too, some of which are detailed in the following table:
+Azure IoT Hub message routing and Event Grid have similarities too, some of which are detailed in the following table:
 
 :::row:::
   :::column:::
     **Feature**
   :::column-end:::
   :::column:::
-    **IoT Hub message routing**
+    **Azure IoT Hub message routing**
   :::column-end:::
   :::column:::
-    **IoT Hub integration with Event Grid**
+    **Azure IoT Hub integration with Event Grid**
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -165,7 +164,7 @@ IoT Hub message routing and Event Grid have similarities too, some of which are 
     Security
   :::column-end:::
   :::column:::
-    Iot Hub provides per-device identity and revocable access control.
+    Azure Iot Hub provides per-device identity and revocable access control.
   :::column-end:::
   :::column:::
     Event Grid provides validation at three points: event subscriptions, event publishing, and webhook event delivery.

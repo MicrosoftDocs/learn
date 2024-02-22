@@ -1,8 +1,8 @@
-Each Azure subscription can have at most 50 IoT hubs (combined Basic and Standard tiers), and at most one Free hub.
+Each Azure subscription can have at most 50 Azure IoT hubs (combined Basic and Standard tiers), and at most one Free hub.
 
-Each IoT hub is provisioned with one or more units in a specific tier. The tier and number of units determine the maximum daily quota of messages that you can send. The message size used to calculate the daily quota is 0.5 KB for a free tier hub and 4KB for all other tiers.
+Each Azure IoT hub is provisioned with one or more units in a specific tier. The tier and number of units determine the maximum daily quota of messages that you can send. The message size used to calculate the daily quota is 0.5 KB for a free tier hub and 4KB for all other tiers.
 
-The tier also determines the throttling limits that IoT Hub enforces on all operations.
+The tier also determines the throttling limits that Azure IoT Hub enforces on all operations.
 
 ## Operation throttles
 
@@ -256,16 +256,15 @@ For example, two S1 units are 2x12 = 24/sec, but you have at least 100 send oper
   :::column-end:::
 :::row-end:::
 
-
-\* This feature is not available in the basic tier of IoT Hub. \*\* Throttling meter size is 4 KB.
+\* This feature is not available in the basic tier of Azure IoT Hub. \*\* Throttling meter size is 4 KB.
 
 ### Throttling details
 
- -  The meter size determines at what increments your throttling limit is consumed. If your direct call's payload is between 0 and 4 KB, it is counted as 4 KB. You can make up to 40 calls per second per unit before hitting the limit of 160 KB/sec/unit. Similarly, if your payload is between 4 KB and 8 KB, each call accounts for 8 KB and you can make up to 20 calls per second per unit before hitting the max limit. Finally, if your payload size is between 156KB and 160 KB, you'll be able to make only 1 call per second per unit in your hub before hitting the limit of 160 KB/sec/unit.
- -  For Jobs device operations (update twin, invoke direct method) for tier S2, 50/sec/unit only applies to when you invoke methods using jobs. If you invoke direct methods directly, the original throttling limit of 24 MB/sec/unit (for S2) applies.
- -  Quota is the aggregate number of messages you can send in your hub per day. You can find your hub's quota limit under the column Total number of messages /day on the IoT Hub pricing page.
- -  Your cloud-to-device and device-to-cloud throttles determine the maximum rate at which you can send messages -- number of messages irrespective of 4 KB chunks. Each D2C message can be up to 256 KB; C2D messages can be up to 64KB. These are the maximum message size for each type of message.
- -  It's a good practice to throttle your calls so that you don't hit/exceed the throttling limits. If you do hit the limit, IoT Hub responds with error code 429 and the client should back-off and retry. These limits are per hub (or in some cases per hub/unit).
+* The meter size determines at what increments your throttling limit is consumed. If your direct call's payload is between 0 and 4 KB, it is counted as 4 KB. You can make up to 40 calls per second per unit before hitting the limit of 160 KB/sec/unit. Similarly, if your payload is between 4 KB and 8 KB, each call accounts for 8 KB and you can make up to 20 calls per second per unit before hitting the max limit. Finally, if your payload size is between 156KB and 160 KB, you'll be able to make only 1 call per second per unit in your hub before hitting the limit of 160 KB/sec/unit.
+* For Jobs device operations (update twin, invoke direct method) for tier S2, 50/sec/unit only applies to when you invoke methods using jobs. If you invoke direct methods directly, the original throttling limit of 24 MB/sec/unit (for S2) applies.
+* Quota is the aggregate number of messages you can send in your hub per day. You can find your hub's quota limit under the column Total number of messages /day on the IoT Hub pricing page.
+* Your cloud-to-device and device-to-cloud throttles determine the maximum rate at which you can send messages -- number of messages irrespective of 4 KB chunks. Each D2C message can be up to 256 KB; C2D messages can be up to 64KB. These are the maximum message size for each type of message.
+* It's a good practice to throttle your calls so that you don't hit/exceed the throttling limits. If you do hit the limit, IoT Hub responds with error code 429 and the client should back-off and retry. These limits are per hub (or in some cases per hub/unit).
 
 ### Traffic shaping
 
@@ -409,7 +408,6 @@ Job history is retained up to 30 days.
   :::column-end:::
 :::row-end:::
 
-
 \* This feature is not available in the basic tier of IoT Hub.
 
 ## Increasing the quota or throttle limit
@@ -420,7 +418,7 @@ At any given time, you can increase quotas or throttle limits by increasing the 
 
 IoT Hub strives to provide low latency for all operations. However, due to network conditions and other unpredictable factors it cannot guarantee a certain latency. When designing your solution, you should:
 
- -  Avoid making any assumptions about the maximum latency of any IoT Hub operation.
- -  Provision your IoT hub in the Azure region closest to your devices.
- -  Consider using Azure IoT Edge to perform latency-sensitive operations on the device or on a gateway close to the device.
- -  Multiple IoT Hub units affect throttling as described previously, but do not provide any other latency benefits or guarantees.
+* Avoid making any assumptions about the maximum latency of any IoT Hub operation.
+* Provision your IoT hub in the Azure region closest to your devices.
+* Consider using Azure IoT Edge to perform latency-sensitive operations on the device or on a gateway close to the device.
+* Multiple IoT Hub units affect throttling as described previously, but do not provide any other latency benefits or guarantees.
