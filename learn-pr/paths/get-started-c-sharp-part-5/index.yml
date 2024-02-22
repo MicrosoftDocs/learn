@@ -62,8 +62,6 @@ roles:
 products:
 - dotnet
 - vs-code
-subjects:
-- development-tools
 modules:
 - learn.wwl.write-first-c-sharp-method
 - learn.wwl.create-c-sharp-methods-parameters
