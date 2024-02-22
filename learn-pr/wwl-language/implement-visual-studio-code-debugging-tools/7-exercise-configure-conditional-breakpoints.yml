@@ -4,10 +4,12 @@ title: Configure conditional breakpoints in C#
 metadata:
   title: Configure conditional breakpoints in C#
   description: "Configure conditional breakpoints in C#"
-  ms.date: 02/21/2024
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/7-exercise-configure-conditional-breakpoints.md)]
