@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/6-azure-web-application-firewall.md)]
+  [!include[](includes/5-azure-web-application-firewall.md)]
