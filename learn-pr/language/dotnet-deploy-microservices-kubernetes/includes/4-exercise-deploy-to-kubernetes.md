@@ -119,12 +119,38 @@ Next, let's deploy and run the microservice.
 1. To test the service, switch to the **PORTS** tab, then to the right of the local address for the **Back End** port, select the globe icon. The browser opens a new tab at that address.
 1. To query some products, append the address with **/api/product** and then press <kbd>Enter</kbd>. You should see some product information listed in JSON format.
 
+    ```json
+    [
+        {
+            "id": 1,
+            "name": "Solar Powered Flashlight",
+            "description": "A fantastic product for outdoor enthusiasts",
+            "price": 19.99,
+            "imageUrl": "product1.png"
+        },
+        {
+            "id": 2,
+            "name": "Hiking Poles",
+            "description": "Ideal for camping and hiking trips",
+            "price": 24.99,
+            "imageUrl": "product2.png"
+        },
+        {
+            "id": 3,
+            "name": "Outdoor Rain Jacket",
+            "description": "This product will keep you warm and dry in all weathers",
+            "price": 49.99,
+            "imageUrl": "product3.png"
+        },
+        ...
+    ```
+
 ## Create a deployment file and run the frontend service
 
 Much like the backend service, we need a deployment file for the frontend as well.
 
 1. Create a new file in the **donet-kubernetes** folder named **frontend-deploy.yml**
-2. Paste the following code into the file:
+1. Paste the following code into the file:
 
     ```yml
     ---
@@ -149,8 +175,6 @@ Much like the backend service, we need a deployment file for the frontend as wel
               value: http://*:80
             - name: ProductEndpoint
               value: http://productsbackend
-            - name: ImagePrefix
-              value: http://localhost/images
       selector:
         matchLabels:
           app: storefrontend
@@ -169,37 +193,23 @@ Much like the backend service, we need a deployment file for the frontend as wel
         app: storefrontend
     ```
 
-3. Replace the placeholder `[YOUR DOCKER USERNAME]` with your actual Docker username.
+1. Replace the placeholder `[YOUR DOCKER USERNAME]` with your actual Docker username.
 
     Notice this file is similar to the one we created for the backend microservice. There are two differences:
 
     - We're specifying a different container to run under the deployment's `spec.template.spec.containers.image` value.
     - There's a new environment variable under the `spec.template.spec.containers.env` section. The code in the **storefrontend** application calls the backend, but because we did not specify a fully qualified domain name (FQDN), nor will we know the IP address of the backend microservice, we use the name we specified under the `metadata.name` node of the `Deployment`. Kubernetes will then take care of the rest.
 
-4. Switch to the **PORTS** tab, point at the **Forwarded Address** for the **Back End (32001)** port, and then select the **Copy Local Address** icon.
-
-    ![Screenshot showing how to copy the forwarded port for the backend service.](../media/copy-forwarded-port.png)
-
-5. Paste this URL into the `ImagePrefix` environment variable in the **frontend-deploy.yml** file, replacing the text `http://localhost`. Make sure that `/images` appears at the end of the line: 
-
-    ```yaml
-    env:
-        - name: ASPNETCORE_URLS
-          value: http://*:80
-        - name: ProductEndpoint
-          value: http://productsbackend
-        - name: ImagePrefix
-          value: https://studious-fortnight-4g4rx9g47wg249w-32001.app.github.dev/images
-    ```
-
-6. Deploy the container to Kubernetes with the following command:
+1. Deploy the container to Kubernetes with the following command:
 
     ```bash
     kubectl apply -f frontend-deploy.yml
     ```
 
     Again you can use `kubectl get pods` to see the status of the deployment. Once the row for **storefrontend** displays **Running** under the **STATUS** column, everything is ready to go.
-7. To test the front end service, switch to the **PORTS** tab, then to the right of the local address for the **Front End** port, select the globe icon. The browser displays the homepage. 
-8. Select **Products**. The catalog shows Contoso's merchandise.
+1. To test the front end service, switch to the **PORTS** tab, then to the right of the local address for the **Front End** port, select the globe icon. The browser displays the homepage. 
+1. Select **Products**. The catalog shows Contoso's merchandise.
+
+    :::image type="content" source="../media/eshop-products.png" alt-text="A screenshot of the eSHopLite products page.":::
 
 In this exercise, you created a deployment file that described exactly how you wanted the containers to run within Kubernetes. You then had Kubernetes download the image from Docker Hub and start up the containers.

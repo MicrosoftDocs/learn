@@ -25,13 +25,13 @@ Follow these steps to create and run Docker containers in the codespace.
 
 1. Switch to the **TERMINAL** tab and run the following command to go to the code root:
 
-   ```cli
+   ```bash
    cd dotnet-kubernetes
    ```
 
 1. Run the following command to build the containers:
 
-    ```bash
+    ```dotnetcli
     dotnet publish /p:PublishProfile=DefaultContainer
     ```
 
@@ -63,8 +63,8 @@ docker login
 1. Enter the following code to retag or rename the Docker images you created under your Docker username.
 
     ```bash
-    docker tag storeimage [YOUR DOCKER USER NAME]/storeimage
-    docker tag productservice [YOUR DOCKER USER NAME]/productservice
+    docker tag store [YOUR DOCKER USER NAME]/storeimage
+    docker tag products [YOUR DOCKER USER NAME]/productservice
     ```
 
 1. Then finally upload, or push, the Docker images to Docker Hub.
