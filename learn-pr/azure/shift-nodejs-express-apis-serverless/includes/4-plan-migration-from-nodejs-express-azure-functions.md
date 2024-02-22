@@ -4,7 +4,7 @@ To plan the shift off the backend Express app to serverless, you can break down 
 - The routes, which are in the _routes/_ folder
 - The data access logic, which is in _services/_ folder
 
-To refactor your code from Express to Azure Functions, you follow these steps:
+To refactor your code from Express to Azure Functions, you plan these actions, which you will begin implementing in the next unit:
 
 1. Create a new Azure Functions application.
 1. Copy the _services_ folder from Node.js Express to the Azure Functions app. This works because the data services are not tied to the Express server.
