@@ -4,10 +4,12 @@ title: Exercise - Create and throw an exception
 metadata:
   title: Exercise - Create and throw an exception
   description: "Exercise - Create and throw an exception"
-  ms.date: 02/21/2024
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 14
 content: |
   [!include[](includes/3-exercise-create-throw-exception-c-sharp.md)]
