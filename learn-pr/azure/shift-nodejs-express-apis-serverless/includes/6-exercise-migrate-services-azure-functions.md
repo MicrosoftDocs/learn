@@ -231,7 +231,6 @@ Create the `PUT` function that handles adding a vacation.
 
     The `request.params.id` property is used to get the vacation ID from the URL. The `request.json()` method is used to get the vacation data from the request body. The `as Vacation` syntax is a type assertion that tells TypeScript to treat the result as a `Vacation` object.
 
-    ```typescript
 
 1. Move the route definition from the _putVacation_ file to the _index.ts_ file. Update the method property array to `PUT`. 
 
