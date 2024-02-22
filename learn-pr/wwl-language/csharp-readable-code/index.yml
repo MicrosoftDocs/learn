@@ -34,6 +34,8 @@ roles:
 products:
 - dotnet
 - vs-code
+subjects:
+- app-development
 units:
 - learn.languages.csharp-readable-code.introduction
 - learn.languages.csharp-readable-code.choose-variable-names
