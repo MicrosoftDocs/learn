@@ -4,10 +4,12 @@ title: 'Exercise - Run code in the debug environment '
 metadata:
   title: Exercise - Run code in the debug environment
   description: "Exercise - Run code in the debug environment"
-  ms.date: 02/21/2024
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/3-exercise-run-code-debug-environment.md)]
