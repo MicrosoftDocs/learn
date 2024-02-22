@@ -34,9 +34,7 @@ subjects:
 - security
 units:
 - learn.wwl.security-public-access-azure-resources.introduction
-- learn.wwl.security-public-access-azure-resources.plan-implement-transport-layer-security
 - learn.wwl.security-public-access-azure-resources.azure-firewall-azure-firewall-manager-firewall-policies
-- learn.wwl.security-public-access-azure-resources.azure-application-gateway
 - learn.wwl.security-public-access-azure-resources.front-door-overview
 - learn.wwl.security-public-access-azure-resources.azure-web-application-firewall
 - learn.wwl.security-public-access-azure-resources.azure-distributed-denial-of-service-protection
