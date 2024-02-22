@@ -8,6 +8,8 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 11
 content: |
   [!include[](includes/6-examine-launch-configurations.md)]
