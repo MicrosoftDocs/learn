@@ -60,7 +60,7 @@ server
 1. Then the routes, such as `/vacations`, are loaded from the _/routes_ folder.
 1. The routes execute the appropriate code in the _/services_ folder. The data store configuration is defined in the _vacation.service.ts_ file.
 
-Tthe Angular client app makes an `HTTP GET` request to the `/api/vacations` route, and the route in `routes/vacation.routes.ts` calls the data logic in the `services/vacation.service.ts` file to get the vacations.
+The Angular client app makes an `HTTP GET` request to the `/api/vacations` route, and the route in `routes/vacation.routes.ts` calls the data logic in the `services/vacation.service.ts` file to get the vacations.
 
 ### Proxy configuration
 

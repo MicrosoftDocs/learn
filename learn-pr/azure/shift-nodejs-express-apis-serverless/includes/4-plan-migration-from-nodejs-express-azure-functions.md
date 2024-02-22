@@ -33,7 +33,7 @@ router.get('/vacations', (req, res) => {    // API route
 
 ## Azure Functions route example
 
-This is a simple example of an Azure Functions route handler and route definition that gets vacations from the vacation service. Notice the paramters for the route handler are the `request` and `context` objects.
+This is a simple example of an Azure Functions route handler and route definition that gets vacations from the vacation service. Notice the parameters for the route handler are the `request` and `context` objects.
 
 ```typescript
 import { app } from '@azure/functions';

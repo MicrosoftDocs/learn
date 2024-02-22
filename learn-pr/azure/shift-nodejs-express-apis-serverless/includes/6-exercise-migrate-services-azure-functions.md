@@ -91,9 +91,9 @@ In the v4 programming model, you can organize your routes in several ways. You c
 
 The name `getVacations` is used as both the first parameter to _app.http_ and as a property in the second parameter. This may be confusing and you may want different naming rules in your organization or team, depending on how the name is used.
 
-:::image type="content" source="../media/http-definition/png" alt-text="Screenshot of the http definition with the first paramter numbered as one, and the second parameter's handler property numbered as two.":::
+:::image type="content" source="../media/http-definition/png" alt-text="Screenshot of the http definition with the first parameter numbered as one, and the second parameter's handler property numbered as two.":::
 
-* **First parameter - name as string**: The value for the first parameter is the name of the function as it will appear in the Azure portal. Those names are listed alpanumerically in the portal, so you may want to use a naming convention that groups similar functions together by purpose, such as `vacationGet` or by method, such as `getVacation`. You may also choose a different case such as snake_case, kebab-case, or camelCase. 
+* **First parameter - name as string**: The value for the first parameter is the name of the function as it will appear in the Azure portal. Those names are listed alphanumerically in the portal, so you may want to use a naming convention that groups similar functions together by purpose, such as `vacationGet` or by method, such as `getVacation`. You may also choose a different case such as snake_case, kebab-case, or camelCase. 
 * **Second parameter - handler function**: The value for the second parameter is the name of the function handler as it is imported and used in the code. This name should be descriptive and match the purpose of the function. It can conform to naming conventions you already have for functions in your code base and may be enforced with typical code conformity tools.
 
 ## Create the remaining functions
@@ -113,7 +113,7 @@ While the GET and POST routes are the same. The `PUT` and `DELETE` routes use a 
 Create the `POST` function that handles adding a vacation.
 
 1. In Visual Studio Code, open the command palette with <kbd>Ctrl<kbd> + <kbd>Shift<kbd> + P</kbd> and type `Azure Functions: Create Function` and press <kbd>Enter</kbd>.
-1. Selete **HTTP Trigger** as the type, and *postVacation* as the name.
+1. Select **HTTP Trigger** as the type, and *postVacation* as the name.
 1. Add the _vacationService_ import to the file.
 
    ```typescript
@@ -183,7 +183,7 @@ Create the `POST` function that handles adding a vacation.
 Create the `PUT` function that handles adding a vacation.
 
 1. In Visual Studio Code, open the command palette with <kbd>Ctrl<kbd> + <kbd>Shift<kbd> + P</kbd> and type `Azure Functions: Create Function` and press <kbd>Enter</kbd>.
-1. Selete **HTTP Trigger** as the type, and *updateVacation* as the name.
+1. Select **HTTP Trigger** as the type, and *updateVacation* as the name.
 1. Add the _vacationService_ import to the file.
 
    ```typescript
@@ -249,7 +249,7 @@ Create the `PUT` function that handles adding a vacation.
 Create the `DELETE` function that handles adding a vacation.
 
 1. In Visual Studio Code, open the command palette with <kbd>Ctrl<kbd> + <kbd>Shift<kbd> + P</kbd> and type `Azure Functions: Create Function` and press <kbd>Enter</kbd>.
-1. Selete **HTTP Trigger** as the type, and *deleteVacation* as the name.
+1. Select **HTTP Trigger** as the type, and *deleteVacation* as the name.
 1. Add the _vacationService_ import to the file.
 
    ```typescript
