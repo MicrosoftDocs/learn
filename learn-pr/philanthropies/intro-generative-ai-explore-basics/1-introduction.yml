@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.intro-generative-ai-explore-basics.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Generative AI is transforming the way people interact digitally and receive information. Their ongoing evolution is driving a shift towards more nuanced, accessible, and personalized experiences.
+  ms.date: 02/21/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: module-standard-task-based
+  ms.service: artificial-intelligence
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

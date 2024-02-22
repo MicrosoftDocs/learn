@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.intro-generative-ai-explore-basics.create-training-content-using-microsoft-copilot
+title: Create training content using Microsoft Copilot
+metadata:
+  title: Create training content using Microsoft Copilot
+  description: Microsoft Copilot, previously known as Bing Chat, is a generative AI-powered assistant that enables search, chat, and content creation; all within a single interface. It is powered by an LLM, which is responsible for Microsoft Copilot's extensive functionalities and user experiences.
+  ms.date: 02/21/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: module-standard-task-based
+  ms.service: artificial-intelligence
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-create-training-content-using-microsoft-copilot.md)]

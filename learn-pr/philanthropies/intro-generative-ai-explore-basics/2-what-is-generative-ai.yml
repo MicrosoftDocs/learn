@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.intro-generative-ai-explore-basics.what-is-generative-ai
+title: What is generative AI?
+metadata:
+  title: What is generative AI?
+  description: Generative AI is a term for AI systems that recognize patterns in big and complex data sets to generate original text, voice, and images based on these patterns. While some AI systems can make predictions based on existing data, generative AI is designed to use the patterns provided to generate entirely new content.
+  ms.date: 02/21/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: module-standard-task-based
+  ms.service: artificial-intelligence
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-what-is-generative-ai.md)]
