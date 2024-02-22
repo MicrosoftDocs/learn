@@ -21,7 +21,26 @@ The `./functions/src/functions` folder map to each of the endpoints, as shown in
 The Functions application in the _functions_ folder should have the following file structure:
 
 ```files
-
+functions
+├── data
+│   └── vacations.json
+├── host.json
+├── local.settings.json
+├── models
+│   └── vacation.models.ts
+├── package.json
+├── package-lock.json
+├── services
+│   ├── index.ts
+│   └── vacation.services.ts
+├── src
+│   ├── functions
+│   │   ├── deleteVacation.ts
+│   │   ├── getVacations.ts
+│   │   ├── postVacation.ts
+│   │   └── updateVacation.ts
+│   └── index.ts
+└── tsconfig.json
 ```
 
 In the next unit, you run and debug your Angular application and Functions application together.
