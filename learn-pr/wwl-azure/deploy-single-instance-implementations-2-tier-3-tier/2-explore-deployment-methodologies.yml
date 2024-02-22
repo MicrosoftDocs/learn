@@ -7,7 +7,7 @@ metadata:
   ms.date: 10/20/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom: devx-track-azurecli, devx-track-azurepowershell, devx-track-terraform
   ms.service: azure
 durationInMinutes: 4
