@@ -3,10 +3,12 @@ uid: learn.wwl.implement-exception-handling-c-sharp
 metadata:
   title: Implement exception handling in C# console applications
   description: "This module explores the use of exceptions and the exception handling process in C# console applications. Hands-on activities provide experience implementing exception handling patterns for various coding scenarios."
-  ms.date: 02/21/2024
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: dotnet-csharp
   ms.devlang: csharp
 title: Implement exception handling in C# console applications
@@ -31,6 +33,8 @@ roles:
 products:
 - dotnet
 - vs-code
+subjects:
+- app-development
 units:
 - learn.wwl.implement-exception-handling-c-sharp.introduction
 - learn.wwl.implement-exception-handling-c-sharp.examine-exceptions-exception-handling-process
