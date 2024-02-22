@@ -20,24 +20,6 @@ To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslear
 1. Search for and select **Dev Containers: Clone Repository in Container Volume**.
 1. Select your forked repository. Visual Studio Code creates your development container locally.
 
-## Update your development environment
-
-The eShopLite app needs to be updated for the Codespace you're running the app in. This allows the images to render in the front end.
-
-1. From the **EXPLORER** sidebar, select **dotnet-resiliency/docker-compose.yml**.
-
-1. In the bottom panel, select to the **PORTS** tab, then to the right of the local address for the **Back End (32001)** port, select the **Copy** icon.
-
-1. Paste this URL into the `ImagePrefix` environment variable in the **docker-compose.yml** file at line 12, replacing the text `http://localhost`.
-
-1. Add `/images` to the pasted text, your **docker-compose.yml** file should look like this:
-
-    ```docker-compose
-    environment: 
-      - ProductEndpoint=http://backend:8080
-      - ImagePrefix=https://your-codepace-generated-name.app.github.dev/images
-    ```
-
 ### Build and run the app
 
 1. In the bottom panel, select to the **TERMINAL** tab and run the following command go to the code root:
@@ -46,19 +28,21 @@ The eShopLite app needs to be updated for the Codespace you're running the app i
     cd dotnet-resiliency
     ```
 
-1.  Run the following command to build the eShop app:
+1. Run the following command to build the eShop app images:
 
     ```bash
-    docker-compose build
+    dotnet publish /p:PublishProfile=DefaultContainer
     ```
 
 1. Once the build has completed, run the following command to start the app:
 
     ```bash
-    docker-compose up
+    docker compose up
     ```
 
-1. In the bottom panel, select to the **PORTS** tab, then in the Forwarded Address column of the table, select the **Open in Browser** icon for the **Front End (32000**) port.
+1. In the bottom panel, select to the **PORTS** tab, then in the Forwarded Address column of the table, select the **Open in Browser** icon for the **Front End (32000**) port. 
+
+    If you are running this locally open a browser window to view [http://localhost:32000/products](http://localhost:32000/products).
 
 1. The eShop app should be running. Select the **Products** menu item on the left, you should see the list of products.
 
@@ -83,7 +67,7 @@ You'll now stop the product service to see what happens to the app.
     c08285e8aaa4   storeimage                                                                       "dotnet Store.dll"       8 minutes ago    Up 8 minutes    80/tcp, 443/tcp, 0.0.0.0:5902->8080/tcp, :::5902->8080/tcp   eshoplite-frontend-1
     6ba80f3c7ab0   productservice                                                                   "dotnet Products.dll"    8 minutes ago    Up 8 minutes    80/tcp, 443/tcp, 0.0.0.0:5200->8080/tcp, :::5200->8080/tcp   eshoplite-backend-1
     cd0c822a5222   vsc-eshoplite-958868d22c9851dd911b2423199bfc782861d1a8f7afac48e5096a1b7516082f   "/bin/sh -c 'echo Co…"   27 minutes ago   Up 27 minutes     
-    ``` 
+    ```
 
 1. Look for the CONTAINER ID for the **productservice** container. In the above example, the ID is **6ba80f3c7ab0**.
 1. Stop your product service with this docker command:
@@ -168,18 +152,18 @@ The first steps to make your app more resilient are to add the `Microsoft.Extens
 
     ```bash
     cd ..
-    docker-compose build
+    dotnet publish /p:PublishProfile=DefaultContainer
     ```
 
 1. When the build has completed, run the following command to start the app:
 
     ```bash
-    docker-compose up
+    docker compose up
     ```
 
 1. Go back to the browser tab running the app and refresh the product page. You should see the list of products.
 
-1. Go back to your codespace, and in the **TERMINAL** tab select the second bash terminal.
+1. Go back to your codespace, and in the **TERMINAL** tab select the second bash terminal. Copy the CONTAINER ID for the **productservice** container.
 
 1. Rerun the docker stop command:
 
@@ -220,18 +204,19 @@ In this example, you'd like the store service to wait a little longer, to give t
         options.Retry.MaxRetryAttempts = 7;
     });
     ```
+
     The above code changes the retry strategy defaults to have a maximum number of retires to seven. Remember this is an exponential backoff, so the total time is around 5 minutes.
 
 1. Stop docker up with <kbd>Ctrl</kbd>+<kbd>C</kbd>. Then run the following command to rebuild the eShop app:
 
     ```bash
-    docker-compose build
+    dotnet publish /p:PublishProfile=DefaultContainer
     ```
 
 1. When the build has completed, run the following command to start the app:
 
     ```bash
-    docker-compose up
+    docker compose up
     ```
 
     Stop the backend service conainer in the bash terminal and refresh the eShop; you'll see that it takes longer to see the error message. If you check the logs though, you can see that the retry strategy only retried five times. The last message from Polly is:
@@ -239,7 +224,7 @@ In this example, you'd like the store service to wait a little longer, to give t
     ```bash
     Polly.Timeout.TimeoutRejectedException: The operation didn't complete within the allowed timeout of '00:00:30'.
     ```
-    
+
     The above message tells you that the total request timeout has stopped the maximum number of retries from being reached. You can fix this by increasing the total request timeout.
 
 1. In the terminal, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the app.
@@ -256,6 +241,7 @@ In this example, you'd like the store service to wait a little longer, to give t
         };
     });
     ```
+
     The above code changes the total request timeout to 260 seconds, which is now longer than the retry strategy.
 
     With these changes you should have enough time to run the app, stop the product service, check the terminal logs for retry attempts, refresh the eShop to see the loading message, and finally restart the product service to successfully see the list of products.
@@ -263,13 +249,13 @@ In this example, you'd like the store service to wait a little longer, to give t
 1. Run the following command to rebuild the eShop app:
 
     ```bash
-    docker-compose build
+    dotnet publish /p:PublishProfile=DefaultContainer
     ```
 
 1. When the build has completed, run the following command to start the app:
 
     ```bash
-    docker-compose up
+    docker compose up
     ```
 
 ### Test the new resiliency options
@@ -277,10 +263,13 @@ In this example, you'd like the store service to wait a little longer, to give t
 To help test the app in your container, use the Docker extension. This allows you to use a GUI to view and control the state of containers.
 
 1. From the left menu select the **Docker** icon.
-1. In the **DOCKER** panel, under **CONTAINERS**, right-click the **productservice** container and select **Stop**.
+
+    :::image type="content" source="../media/docker-extension.png" alt-text="A screenshot of the docker extension, showing how to stop the products service."  lightbox="../media/docker-extension.png":::
+
+1. In the **DOCKER** panel, under **CONTAINERS**, right-click the **products** container and select **Stop**.
 1. Go back to the browser tab running the app and refresh the product page. You'll see the **Loading...** message.
 1. Go back to your codespace, and in the **TERMINAL** tab, select the **docker** terminal. Note that the resilience strategy is working.
-1. In the **DOCKER** panel, under **CONTAINERS**, right-click the **productservice** container and select **Start**.
-1. Go back to the browser tab running the app and refresh the product page. You'll see the app has recovered and lists the products.
+1. In the **DOCKER** panel, under **CONTAINERS**, right-click the **products** container and select **Start**.
+1. Go back to the browser tab running the app. Wait and the app should recover and you'll see the app list the products.
 
-
+1. In the Terminal, stop docker with <kbd>Ctrl</kbd>+<kbd>C</kbd>.

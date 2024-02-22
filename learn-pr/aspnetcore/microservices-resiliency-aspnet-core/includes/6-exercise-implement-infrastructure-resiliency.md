@@ -18,17 +18,16 @@ Before applying Linkerd, revert the app to a state before code-based resiliency 
     git checkout Program.cs
     git checkout Store.csproj
     cd ..
-    docker-compose build
+    dotnet publish /p:PublishProfile=DefaultContainer
     ```
 
-### Install Kubernetes 
+### Install Kubernetes
 
 In your codespace you'll now install Kubernetes and k3d. k3d is a tool that runs a single-node Kubernetes cluster inside a VM on your local machine. It's useful for testing Kubernetes deployments locally and runs well inside a codespace.
 
 Run these commands to install Kubernetes and MiniKube:
 
 ```bash
-
 curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.28/deb/Release.key | sudo gpg --dearmor -o /etc/apt/kubernetes-apt-keyring.gpg
 
 echo 'deb [signed-by=/etc/apt/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.28/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
@@ -49,8 +48,8 @@ Run these commands to push your images to Docker Hub:
 ```bash
 sudo docker login
 
-sudo docker tag productservice [your username]/productservice
-sudo docker tag storeimage [your username]/storeimage
+sudo docker tag products [your username]/productservice
+sudo docker tag store [your username]/storeimage
 
 sudo docker push [your username]/productservice
 sudo docker push [your username]/storeimage
@@ -60,7 +59,7 @@ sudo docker push [your username]/storeimage
 
 At the moment you've defined how your app runs in docker. Kubernetes uses a different format for defining how your app runs. You'll use a tool called Kompose to convert your docker-compose file to Kubernetes manifests.
 
-1. You need to edit these files to use the images you've pushed to Docker Hub. 
+1. You need to edit these files to use the images you've pushed to Docker Hub.
 1. In the codespace, open the file **backend-deploy.yml**.
 1. Change this line:
 
@@ -70,7 +69,7 @@ At the moment you've defined how your app runs in docker. Kubernetes uses a diff
     ```
 
     Replace the placeholder [YOUR DOCKER USER NAME] with your actual Docker username.
-    
+
 1. Repeat these steps for the **frontend-deploy.yml** file.
 1. Change this line:
 
@@ -81,22 +80,6 @@ At the moment you've defined how your app runs in docker. Kubernetes uses a diff
     ```
 
     Replace the placeholder [YOUR DOCKER USER NAME] with your actual Docker username.
-    
-1. Switch to the **PORTS** tab, point at the **Forwarded Address** for the **Back End (32001)** port, and then select the **Copy Local Address** icon.
-
-1. Paste this URL into the `ImagePrefix` environment variable in the **frontend-deploy.yml** file, replacing the text `http://localhost`. Make sure that `/images` appears at the end of the line: 
-
-    ```yaml
-    env:
-        - name: ASPNETCORE_URLS
-          value: http://*:80
-        - name: ProductEndpoint
-          value: http://productsbackend
-        - name: ImagePrefix
-          value: https://studious-fortnight-4g4rx9g47wg249w-32001.app.github.dev/images
-	```
-
-    Your codespace will have a different URL for *studious-fortnight-4g4rx9g47wg249w-32001*.
 
 1. Deploy the eShop app into Kubernetes:
 
@@ -320,7 +303,7 @@ The services must be configured to use Linkerd proxy containers.
           labels: 
     ```
 
-1. Add the `linkerd.io/inject: enabled` annotation to the **fromkend-deploy.yml** file in the same place.
+1. Add the `linkerd.io/inject: enabled` annotation to the **frontend-deploy.yml** file in the same place.
 
 1. Update the deployments in the Kubernetes cluster:
 
@@ -393,6 +376,7 @@ Linkerd has extensions to give you additional features. You'll install the viz e
     ```bash
     linkerd viz install | kubectl apply -f -
     ```
+
 1. View the dashboard with this command:
 
    ```bash
@@ -400,7 +384,7 @@ Linkerd has extensions to give you additional features. You'll install the viz e
    ```
 
    Go to the **PORTS** tab and you'll see a new port that's been forwarded with a process of **linkerd viz dashboard** running. Select the **Open in Browser** to open the dashboard.
-   
+
 1. In the Linkerd dashboard, select **Namespaces**.
 1. Under HTTP Metrics, select **default**.
 
@@ -415,6 +399,7 @@ After the redeployed containers are healthy, use the following steps to test the
     ```bash
     kubectl get pods --all-namespaces
     ```
+
 1. Stop all the product service pods:
 
     ```bash
@@ -428,6 +413,7 @@ After the redeployed containers are healthy, use the following steps to test the
     ```bash
     kubectl scale deployment productsbackend --replicas=1
     ```
+
 1. The app should now display the products.
 
 Linkerd follows a different approach to resiliency than what you saw with code-based resilience. Linkerd transparently retried the operation multiple times in quick succession. The app didn't need to be changed to support this behavior.
