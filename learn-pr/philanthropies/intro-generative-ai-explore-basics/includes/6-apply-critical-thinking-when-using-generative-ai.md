@@ -9,7 +9,7 @@ Critical thinking consists of:
 1. **Synthesis**. Identify relationships between two or more ideas. For example, learners might be required to compare perspectives from multiple sources.
 1. **Evaluation**. Judging the quality, credibility, or importance of data, ideas, or events. For example, learners might read different accounts of a historical event and determine which ones they find most credible.
 
-By using critical thinking, users can produce good quality AI-generated content easily, quickly, and responsibly. Here are a few steps you can take to ensure you use generative AI tools responsibly.
+Users can produce good quality AI-generated content easily, quickly, and responsibly by using critical thinking. Here are a few steps you can take to ensure you use generative AI tools responsibly.
 
 1. **Accuracy check**. Double-checking facts for accuracy are essential when using generative AI tools. You can prompt Large Language Models (LLMs) to cite the sources used to generate content for your prompt. It's important to check the cited sources to ensure they're current, reliable, and from a reputable website.
 1. **Ask questions and seek feedback**. While creating and consuming generative AI content, ask yourself questions such as: What is the purpose? Who is the intended audience? How reliable are the sources and information? Asking questions and seeking feedback helps improve your understanding of the content.
