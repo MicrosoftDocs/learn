@@ -10,7 +10,7 @@ Deployments allow you to update your applications without downtime just by chang
 
 While there are many benefits to using Deployments over pods, they aren't able to adequately handle our scenario.  
 
-This scenario involves an event-driven application that receives a large number of events at various times. Without a KEDA Scaler object or HPA, you would need to manually adjust the number of replicas to process the number of events and *scale down* the Deployment when the load returns to normal.
+This scenario involves an event-driven application that receives a large number of events at various times. Without a KEDA Scaler object or HPA, you'd need to manually adjust the number of replicas to process the number of events and *scale down* the Deployment when the load returns to normal.
 
 ### Sample Deployment manifest
 
@@ -36,8 +36,8 @@ spec:
           name: contoso-microservice
 ```
 
-In the sample manifest, `replicas` is set to 10, which is the highest number we can set for necessary replicas available for processing the peak number of events. However, this causes the application consumes too many resources during nonpeak times, which might starve other Deployments within the cluster.
+In the sample manifest, `replicas` is set to 10, which is the highest number we can set for necessary replicas available for processing the peak number of events. However, this causes the application to consume too many resources during nonpeak times, which might starve other Deployments within the cluster.
 
 One solution is to use a standalone HPA to monitor the CPU usage of the pods, which is a better option than manually scaling in both directions. However, the HPA doesn't focus on the number of events received to the Redis list.
 
-The best solution is to **use KEDA and a Redis scaler** to query the list and determine if more or less pods are needed to process the events.
+The best solution is to **use KEDA and a Redis scaler** to query the list and determine if more or fewer pods are needed to process the events.

@@ -6,7 +6,7 @@ metadata:
   description: "Build an Azure AI Document Intelligence custom skill"
   ms.date: 02/06/2024
   author: wwlpublish
-  ms.author: rcaper
+  ms.author: berryivor
   ms.topic: unit
 durationInMinutes: 7
 content: |

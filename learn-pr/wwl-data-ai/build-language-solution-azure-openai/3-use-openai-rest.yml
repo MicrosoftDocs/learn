@@ -2,7 +2,7 @@
 uid: learn.wwl.build-language-solution-azure-openai.use-openai-rest
 title: Use Azure OpenAI REST API
 metadata:
-  title: exercise
+  title: Use Azure OpenAI REST API
   description: "Understand how to use the REST API to connect to the available endpoints of an Azure OpenAI resource."
   ms.date: 4/5/2023
   author: ivorb
