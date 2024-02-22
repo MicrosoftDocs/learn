@@ -19,7 +19,7 @@ A fast (hot) processing pipeline:
 - Displays data content.
 - Generates short term, time-sensitive information.
 - Triggers corresponding actions, such as alerts.
-- Subsequently archives the data.
+- Stores the data in an archive.
 
 A slow (cold) processing pipeline:
 
