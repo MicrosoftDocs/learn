@@ -19,7 +19,7 @@ Consider the example of a weather service app. The following XAML fragment conta
 </VerticalStackLayout>
 ```
 
-:::image type="content" source="../media/2-compare-event-and-data-bound/events-ui-example.png" alt-text="A .NET MAUI UI that has an entry control for a postal code, a button with the text refresh. Under those two controls is a label that represents the humidity.":::
+:::image type="content" source="../media/2-compare-event-and-data-bound/events-ui-example.png" alt-text="Screenshot of a .NET MAUI app that has an entry control for a postal code, a button with the text refresh. Under those two controls is a label that represents the humidity.":::
 
 There are three named controls in this example:
 

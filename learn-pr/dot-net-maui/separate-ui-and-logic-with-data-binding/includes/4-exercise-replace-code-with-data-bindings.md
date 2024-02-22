@@ -8,7 +8,7 @@ To start this exercise module, download the [Weather Sample](https://github.com/
 01. Navigate to the _before_ folder and open the _WeatherClient.sln_ solution.
 01. Build and run the project to make sure it works. On the screen displayed, you'll see some empty weather details. Press the **Refresh** button and you'll see the weather details update.
 
-    :::image type="content" source="../media/4-exercise-replace-code-with-data-bindings/app2.png" alt-text="A weather app showing the weather for the day.":::
+    :::image type="content" source="../media/4-exercise-replace-code-with-data-bindings/app2.png" alt-text="Screenshot of a weather app showing the weather for the day.":::
 
 01. For reference, here's a summary of the classes and files you'll work with in this exercise.
 
