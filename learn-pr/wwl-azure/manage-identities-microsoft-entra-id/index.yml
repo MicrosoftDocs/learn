@@ -2,8 +2,8 @@
 uid: learn.wwl.manage-identities-microsoft-entra-id
 metadata:
   title: Manage identities in Microsoft Entra ID
-  description: "This module focuses on effectively managing identities and enhancing security in Microsoft Entra ID, ensuring that users, groups, and external identities are protected against security threats and unauthorized access."
-  ms.date: 02/21/2024
+  description: "Manage identities in Microsoft Entra ID"
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
@@ -14,12 +14,12 @@ title: Manage identities in Microsoft Entra ID
 summary: This module focuses on effectively managing identities and enhancing security in Microsoft Entra ID, ensuring that users, groups, and external identities are protected against security threats and unauthorized access.
 abstract: |
   By the end of this module, participants are able to:
-  *   Enhance security in Microsoft Entra ID to safeguard user identities and accounts.
-  *   Implement security for group management in Microsoft Entra ID for effective access control.
-  *   Advise on the secure management of external identities in Microsoft Entra ID.
-  *   Utilize Microsoft Entra ID Protection for proactive threat detection and response.
+  -   Enhance security in Microsoft Entra ID to safeguard user identities and accounts.
+  -   Implement security for group management in Microsoft Entra ID for effective access control.
+  -   Advise on the secure management of external identities in Microsoft Entra ID.
+  -   Utilize Microsoft Entra ID Protection for proactive threat detection and response.
 prerequisites: |
-  - None
+  -   None
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

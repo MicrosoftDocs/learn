@@ -10,7 +10,7 @@ Microsoft Entra ID lets you use groups to manage access to applications, data, a
 
 Some groups can't be managed in the Azure portal:
 
- -  Groups synced from on-premises Active Directory can be managed only in on-premises Active Directory.<br>
+ -  Groups synced from on-premises Microsoft Entra ID can be managed only in on-premises Microsoft Entra ID.<br>
  -  Distribution lists and mail-enabled security groups are managed only in Exchange admin center or Microsoft 365 admin center. You must sign in to Exchange admin center or Microsoft 365 admin center to manage these groups.
 
 ## What to know before creating a group
@@ -32,9 +32,9 @@ This option also lets you give people outside of your organization access to the
 
 ## Membership types:
 
-Assigned: Lets you add specific users as members of a group and have unique permissions.
+**Assigned**: Lets you add specific users as members of a group and have unique permissions.
 
-Dynamic user: Lets you use dynamic membership rules to automatically add and remove members. If a member's attributes change, the system looks at your dynamic group rules for the directory to see if the member meets the rule requirements (is added), or no longer meets the rules requirements (is removed).<br>
+**Dynamic user**: Lets you use dynamic membership rules to automatically add and remove members. If a member's attributes change, the system looks at your dynamic group rules for the directory to see if the member meets the rule requirements (is added), or no longer meets the rules requirements (is removed).<br>
 
 Dynamic device: Lets you use dynamic group rules to automatically add and remove devices. If a device's attributes change, the system looks at your dynamic group rules for the directory to see if the device meets the rule requirements (is added), or no longer meets the rules requirements (is removed).
 
@@ -46,7 +46,7 @@ After creating a Microsoft Entra group, you need to grant it the appropriate acc
 
 Microsoft Entra ID helps you give access to your organization's resources by providing access rights to a single user or to an entire Microsoft Entra group. Using groups lets the resource owner or Microsoft Entra directory owner assign a set of access permissions to all the members of the group. The resource or directory owner can also give management rights to someone such as a department manager or a help desk administrator, letting that person add and remove members.
 
-:::image type="content" source="../media/access-management-overview-49008839.png":::
+:::image type="content" source="../media/access-management-overview-49008839.png" alt-text="Diagram showing how access management in Microsoft Entra ID works.":::
 
 
 ## Ways to assign access rights
@@ -54,11 +54,11 @@ Microsoft Entra ID helps you give access to your organization's resources by pro
 After creating a group, you need to decide how to assign access rights. Explore the ways to assign access rights to determine the best process for your scenario.
 
  -  **Direct assignment**. The resource owner directly assigns the user to the resource.<br>
- -  **Group assignment**. The resource owner assigns a Microsoft Entra group to the resource, which automatically gives all of the group members access to the resource. Group membership is managed by both the group owner and the resource owner, letting either owner add or remove members from the group. For more information about managing group membership, see the Manage groups article.<br>
+ -  **Group assignment**. The resource owner assigns a Microsoft Entra group to the resource, which automatically gives all of the group members access to the resource. Group membership is managed by both the group owner and the resource owner, letting either owner add or remove members from the group.<br>
  -  **Rule-based assignment**. The resource owner creates a group and uses a rule to define which users are assigned to a specific resource. The rule is based on attributes that are assigned to individual users. The resource owner manages the rule, determining which attributes and values are required to allow access the resource.<br>
  -  **External authority assignment**. Access comes from an external source, such as an on-premises directory or a SaaS app. In this situation, the resource owner assigns a group to provide access to the resource and then the external source manages the group members.<br>
 
-:::image type="content" source="../media/access-management-process-591704e6.png":::
+:::image type="content" source="../media/access-management-process-591704e6.png" alt-text="Diagram showing ways to assign access rights.":::
 
 
 ## Can users join groups without being assigned?
