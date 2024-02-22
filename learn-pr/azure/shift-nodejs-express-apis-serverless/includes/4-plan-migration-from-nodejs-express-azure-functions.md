@@ -1,4 +1,4 @@
-To plan the shift of the backend Express app to serverless, you can break down the Express app into three main areas:
+To plan the shift off the backend Express app to serverless, you can break down the Express app into three main areas:
 
 - The Express server, which is mostly in _server.ts_
 - The routes, which are in the _routes/_ folder
