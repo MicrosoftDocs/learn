@@ -2,7 +2,7 @@ Onboard an OT sensor to Defender for IoT once you have a deployment plan and a p
 
 In a real-life scenario, you use a network diagram that your architecture team prepared of your environment to identify the site and zone to apply to the sensor you're onboarding.
 
-Onboarding a sensor to Defender for IoT provides you with an activation file and a file listing all of the application end points. You use these at later stages in the deployment process.
+Onboarding a sensor to Defender for IoT provides you with an activation file and a file listing all of the application end points. You use these at a later stage in the deployment process.
 
 ## Defender for IoT for OT deployment path
 

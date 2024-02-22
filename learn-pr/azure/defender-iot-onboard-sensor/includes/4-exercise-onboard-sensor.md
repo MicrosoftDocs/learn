@@ -1,6 +1,6 @@
 This unit describes how to onboard an OT sensor to Defender for IoT in the Azure portal. You onboard a cloud-connected sensor for your car manufacturer's sales floor in the Paris office.
 
-Once the sensor is onboarded, an activation file and a list of endpoints file are available for download, which are stored and used in the *deployment phase* to activate your sensor.
+Once the sensor is onboarded, an activation file and a list of endpoints file are available for download. These files are stored and used in the deployment phase to activate your sensor.
 
 ## Onboard your cloud-connected OT sensor
 
@@ -35,16 +35,18 @@ An example, completed OT set up form:
 
 In a real-life scenario, you might use the links and options on this page to add a new subscription, or to select a site or zone that was added previously, when onboarding an earlier sensor. You'd clear options for **Cloud connected** and **Automatic Threat Intelligence updates** to retain more on-premises control of your sensor.
 
-- Select **Register** to complete the onboarding. A success message appears and your activation file is automatically downloaded. <!--this isnt really a success message, it is a new page with a success message but 3 important boxes, one is needed in the next point. HOw to describe this? A new page opens, with a succeess message and 3 boxes. The activation file automatically downloads, but can also be downloaded from one of the boxes. -->
+1. Select **Register** to complete the onboarding.
 
-- In the **Add outbound allow rules** box, select the **Download** link to download a JSON list of the endpoints you must configure as secure endpoints from your sensor. Save the downloaded file locally.
+    A new page opens, with a succeess message and additional information. The activation file automatically downloads.
 
-:::image type="content" source="../media/3-download-endpoint-file.png" alt-text="Screenshot of the Set Up OT sensor success page for downloading endpoint list":::
-<!-- check image for details-->
+1. In the **Add outbound allow rules** area, select the **Download** link to download a JSON list of the endpoints you must configure as secure endpoints from your sensor. Save the downloaded file locally.
+
+:::image type="content" source="../media/4-download-endpoint-file.png" alt-text="Screenshot of the Set Up OT sensor success page for downloading endpoint list" lightbox="../media/4-download-endpoint-file.png":::
+
 - Select **Finish** and your sensor is now shown in Defender for IoT's **Sites and sensors** page.
 
-### Check your work
-<!-- should this be a H2 or H3 heading?-->
+## Check your work
+
 The sensor is now onboarded to Defender for IoT and displays in your **Sites and sensors** page with a status of **Pending Activation**.
 
-In a later stage, you'll need to upload the activation file to your sensor, so ensure it's available for the deployment team to use when activating the sensor.<!-- A better version? In a later stage, you'll need the activation and endpoints file, so ensure they're available for the deployment team to use when activating the sensor. -->
+In a later stage, you'll need the activation and endpoints file, so ensure they're available for the deployment team to use when activating the sensor.
