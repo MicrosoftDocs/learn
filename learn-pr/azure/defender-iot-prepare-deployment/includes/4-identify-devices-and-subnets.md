@@ -86,7 +86,7 @@ Recall that your car manufacturing organization has offices and production sites
 
 In this unit you've learned how to identify the devices and subnets and their interesting traffic to monitor, and created an OT sensor deployment list for your car manufacturer. In the next unit, you'll learn how to determine the traffic mirroring methods to use for your site.
   
-## Knowledge check 0
+## Knowledge check
 
 :::image type="complex" source="../media/4-sample-network-diagram-knowledge-check.png" alt-text="Diagram of a sample network diagram." border="false":::
 
