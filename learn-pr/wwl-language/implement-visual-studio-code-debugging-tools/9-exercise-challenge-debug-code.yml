@@ -4,10 +4,12 @@ title: Exercise - Complete a challenge activity using the debugger
 metadata:
   title: Exercise - Complete a challenge activity using the debugger
   description: "Exercise - Complete a challenge activity using the debugger"
-  ms.date: 02/21/2024
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/9-exercise-challenge-debug-code.md)]
