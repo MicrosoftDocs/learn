@@ -6,7 +6,7 @@ Here, you'll deploy Azure SQL Database using scripts, connect to it in Azure Dat
 
 ## Deploy Azure SQL Database using PowerShell
 
-In order to set up the database for the bus-catching scenario, you first need to deploy a database to work with. To do this, you'll use Azure Cloud Shell on the right side of this page. Cloud Shell is also available through the Azure portal, and it allows you to create and manage Azure resources. It comes preinstalled with various tools, including the Azure CLI, Azure PowerShell, and sqlcmd. In this exercise, you'll use Azure PowerShell, but you can accomplish the same tasks with the Azure CLI. In the script, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
+In order to set up the database for the bus-catching scenario, you first need to deploy a database to work with. To do this, you'll use Azure Cloud Shell. Cloud Shell is also available through the Azure portal, and it allows you to create and manage Azure resources. It comes preinstalled with various tools, including the Azure CLI, Azure PowerShell, and sqlcmd. In this exercise, you'll use Azure PowerShell, but you can accomplish the same tasks with the Azure CLI. In the script, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
 
 These scripts should take three to five minutes to complete. Be sure to note your password, unique ID, and region, because they won't be shown again.
 
@@ -29,7 +29,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     >    * Lowercase characters
     >    * Uppercase characters
     >    * Numbers ( 0-9 )
-    >    * Symbols ( @ # $ % ^ & * - _  + = [ ] { } | \ : ‘ , . ? / ` ~ “ ( ) ; )
+    >    * Symbols ( @ # $ % ^ & * - _  + = [ ] { } | \ : ' , . ? / ` ~ " ( ) ; )
 
     ```powershell
     # Collect password 
@@ -105,9 +105,9 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 Once your database is deployed, there are many ways that you can connect and interact with it: sqlcmd, Azure Data Studio, SSMS, the query editor in the portal, etc. Here, you'll learn how to connect to the database using Azure Data Studio.
 
-1. Open Azure Data Studio and confirm that the code repository folder is open by selecting the **Explorer** icon on the left-hand taskbar. If you don't see the code files, return to the previous exercise to configure your environment.
+1. Open Azure Data Studio and confirm that the code repository folder is open by selecting the **Explorer** icon on the Activity Bar. If you don't see the code files, return to the previous exercise to configure your environment.
 
-1. Select **Connections** from the left-hand taskbar. All your database connections can be created and stored here.
+1. Select **Connections** from the Activity Bar. All your database connections can be created and stored here.
 
 1. Next to *Servers*, select the **New Connection** button (it looks like a server with a plus sign).
 
@@ -130,7 +130,7 @@ Once your database is deployed, there are many ways that you can connect and int
 
 Once you're connected to any database, you'll usually need to deploy the database schema and tailor the database to meet your scenario's requirements by creating tables. Using a series of T-SQL scripts in a SQL notebook in Azure Data Studio, you'll configure the database to support your application and load some initial bus-related data.
 
-1. In Azure Data Studio, select the **Explorer** icon in the left-hand taskbar.
+1. In Azure Data Studio, select the **Explorer** icon in the Activity Bar.
 
 1. Under the folder `database\notebooks`, open **`01-set-up-database.ipynb`**.
 
@@ -140,7 +140,7 @@ Once you're connected to any database, you'll usually need to deploy the databas
 
 Now that your database is configured, it's time to dive deeper into how Azure SQL Database will receive the real-time JSON data and store it in the database. Fortunately, Azure SQL Database has JSON support so that's easily managed. Then, you can use the geospatial capabilities in Azure SQL Database to find the distances between buses, define and store geofences, and even determine if a bus is within a given geofence. With a foundation like this one, your application development becomes greatly simplified. This exercise will be completed in a SQL notebook in Azure Data Studio, similar to the previous activity.
 
-1. In Azure Data Studio, select the **Explorer** icon in the left-hand taskbar.
+1. In Azure Data Studio, select the **Explorer** icon in the Activity Bar.
 
 1. Under the folder `database\notebooks`, open **`02-json-geospatial-sql-db.ipynb`**.
 
