@@ -37,9 +37,15 @@ The following table lists the main differences between the Node.js Express appli
 
 First you refactor the code to import the appropriate npm package. Then you refactor to handle the differences between how Express and Functions pass the request and response objects.
 
-### Copy the data service code
+### Copy over existing code from Express project
 
-In Visual Studio Code, copy the _server/services_ folder from the Express application and paste it into the _functions/src_ folder.
+In Visual Studio Code, copy the following subfolders from _server_ folder from the Express application and paste it into the _functions/src_ folder.
 
-Save the file. Continue to the next unit to create the functions and refactor the endpoints and routes.
+* data
+* models
+* services
+
+You don't need to copy the _routes_ folder because you're going to create new functions for each route in the Azure Functions app.
+
+Continue to the next unit to create the functions and refactor the endpoints and routes.
 

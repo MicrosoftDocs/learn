@@ -41,6 +41,10 @@ Open the project in Visual Studio Code, and open the _server_ folder to explore 
 
 ```files
 server
+ | - data
+ | | - vacations.json
+ | - models
+ | | - vacation.model.ts
  | - routes
  | | - index.ts            👈 1. Entry point
  | | - vacation.routes.ts  👈 2. The vacation routes
