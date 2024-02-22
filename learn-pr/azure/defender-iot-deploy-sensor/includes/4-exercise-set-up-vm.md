@@ -105,6 +105,6 @@ After you configure the traffic mirroring, retrieve a PCAP file to receive a sam
     :::image type="content" source="../media/4-wireshark-validation.png" alt-text="Screenshot of Wireshark validation.":::
 
 ### Check your work
-<!-- what do we need to provide that shows the work is correct? ask Mark -->
-what will i see in the VM - go to esxi in VM and check the edit settings are correct. ram, hard disk size span port are corect.
-and in wireshark - the data is the correct amount, bandwidth, time taken, averages, mac and ip addresses.
+
+1. In the VM, check that the RAM, hard disk size and SPAN port settings are correct.
+1. In *Wireshark*, check that the bandwidth, time taken, data averages, mac and ip addresses and the data packages received are all correct for your system.

@@ -29,7 +29,7 @@ On your virtual machine:
 
     :::image type="content" source="../media/4-iot-iso-boot.png" alt-text="Screenshot of the installation wizard for mounting the ISO file on the OT sensor virtual machine":::
 
-1. Select **Install iot-sensor_23.1.1.75399077**. <!-- change this to say Select the correct install version that appears in the list, for example **Install iot-sensor_23.1.1.75399077** -->
+1. Select **Install iot-sensor_23.1.1.75399077**. <!-- change this to say Select the correct install version that appears in the list, for example **Install iot-sensor_23.1.1.75399077** LM-->
 
     The installation process takes 20-30 minutes. When completed the default network details are shown. While the default IP, subnet, and gateway addresses are identical with each installation, the UID is unique for each appliance. For example:
   
@@ -72,7 +72,6 @@ Open a browser in the virtual machine.
     Username: ```admin```
     Password: ```admin```
 1. Select Login.
-1. Define a new password for the admin user, containing lowercase and uppercase alphabetic characters, numbers and symbols.<!-- not sure we really need this? Although it is important , it isnt the direct part of the process? What do you think? i think MT said we dont need this anymore because the default are used as above.-->
 
 ## Activate and initial setup
 
@@ -95,7 +94,7 @@ In the **Management interface** tab, define the network details for the sensor. 
 When you're done, select **Next: Interface configurations** to continue.
 
 ### Select interfaces to monitor
-<!-- should the content of the next 3 sections be numbered as a procedure or are they too short?-->
+
 The Interface configurations tab shows all of the interfaces detected by the sensor.
 
 In the **Interface Configurations** tab:
@@ -129,8 +128,7 @@ Verify that your sensor is connected to Azure by checking its connectivity statu
 
 1. Open Defender for IoT in the Azure portal.
 1. Select the **Sites and sensors** section.
-1. Check that your sensor is listed and the status is *connected*. <!-- there is no connected status. ....and the correct sensor version is listed, and the sensor health is healthy ? -->
-1. Check that device data appears by selecting **Device inventory** and then selecting a device.
-<!-- is this last point correct? what would be the correct check?  -->
+1. Check that your sensor is listed and the status is *healthy*.
+1. Check that device data appears by selecting **Device inventory**.
 <!-- Cat: Add screenshot image of a successful outcome-->
 :::image type="content" source="../media/4-device-inventory.png" alt-text="Screenshot of the Defender for IoT Device inventory page showing recent data from the sensor":::

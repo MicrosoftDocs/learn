@@ -10,7 +10,7 @@ The OT sensor deployment plan is shown in the following diagram:
 <!-- this title was based on the diagram above -should this image be re done and change the titles to fit our new flow?? -->
 ## Install Defender for IoT software
 
-Download the OT monitoring software installation file from the Defender for IoT setup page. <!-- is this provided by the previous team??? --> Save the ISO file, at a later stage you will install it on to the OT sensor appliance.
+Download the OT monitoring software installation file from the Defender for IoT setup page. Save the ISO file, at a later stage you will install it on to the OT sensor appliance.
 
 Run the installation file on the virtual machine, and follow the stages in the wizard to install the software. Once the installation is completed the default network details are displayed. In a real life scenario, configured sensors can be bought and this step is skipped.
 
@@ -36,16 +36,10 @@ In the **Management interface** tab, you define the network details that connect
 <!-- check where to find the hostname and DNS server datails - provided by the company-->
 ### Select interfaces to monitor
 
-The **Interface configurations** tab shows each interface on the sensor, which should match the list of endpoints in the network diagram.<!-- not sure if this is needed here? but it is important and should be checked surely?--> You set up each interface individually.
+The **Interface configurations** tab shows each interface on the sensor, which should match the list of endpoints in the network diagram. You set up each interface individually.
 
-Select and enable each interface to be monitored.<!-- might change to numbered list here-->
-If you're unsure which interface to use, select the :::image type="icon" source="../media/3-blink-interface.png" alt-text="blink interface icon"::: Blink physical interface LED button to have the selected port blink on your machine. Select any of the interfaces that are connected to your switch. <!--is this only if you are close to the sensor? How would this work for a cloud sensor?-->
-There are optional, advanced settings for each interface, as follows:<!-- i think this isnt needed if it is a lm path.-->
-
-|Name  |Description  |
-|---------|---------|
-|**Mode**| Select one of the following: </br>- SPAN Traffic (no encapsulation) to use the default SPAN port mirroring.</br> - ERSPAN if you're using ERSPAN mirroring.|
-|**Description**| Enter an optional description for the interface. These descriptions may be helpful in understanding the purpose of each interface.|
+Select and enable each interface to be monitored.
+If you're unsure which interface to use, select the :::image type="icon" source="../media/3-blink-interface.png" alt-text="blink interface icon"::: Blink physical interface LED button to have the selected port blink on your machine. Select any of the interfaces that are connected to your switch.
 
 ### Upload activation file
 
