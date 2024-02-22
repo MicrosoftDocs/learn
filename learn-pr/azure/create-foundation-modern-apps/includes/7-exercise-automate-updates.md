@@ -22,9 +22,9 @@ GitHub secrets introduce a way to securely store secrets, keys, and other sensit
 
 ## Configure yaml file for GitHub Actions
 
-There are several template yaml files available in the code repository. For this module, you'll only use the workflow file for Azure SQL Database. If you decide to complete future modules of this learning path, you'll learn how to automate deployment for other services.
+There are several template yaml files available in the code repository. For this module, you'll only use the workflow file for Azure SQL Database.
 
-1. In Visual Studio Code, select the **Explorer** icon on the left-hand taskbar to view the repository files. If you don't see them, select **File** > **Open folder** and navigate to the location where you cloned the repository.
+1. In Visual Studio Code, select the **Explorer** icon on the Activity Bar to view the repository files. If you don't see them, select **File** > **Open folder** and navigate to the location where you cloned the repository.
 
 1. Under the folder `.github\workflows`, rename **`azuresqldatabase.yml.template`** to **`azuresqldatabase.yml`**.
 
@@ -34,7 +34,7 @@ There are several template yaml files available in the code repository. For this
 
 Now that your GitHub secret and workflow file are configured, you're ready to push your commits and observe the workflow.
 
-1. Select the **Source Control** icon on the left-hand taskbar.
+1. Select the **Source Control** icon on the Activity Bar.
 
 1. In the *Message* box, enter "Enable database yaml" or some other message.
 
