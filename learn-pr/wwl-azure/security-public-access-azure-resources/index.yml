@@ -40,7 +40,6 @@ units:
 - learn.wwl.security-public-access-azure-resources.front-door-overview
 - learn.wwl.security-public-access-azure-resources.azure-web-application-firewall
 - learn.wwl.security-public-access-azure-resources.azure-distributed-denial-of-service-protection
-- learn.wwl.security-public-access-azure-resources.knowledge-check
 - learn.wwl.security-public-access-azure-resources.summary
 badge:
   uid: learn.wwl.security-public-access-azure-resources.badge
