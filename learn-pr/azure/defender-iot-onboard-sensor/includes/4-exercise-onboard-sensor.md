@@ -1,6 +1,6 @@
 This unit describes how to onboard an OT sensor to Defender for IoT in the Azure portal. You onboard a cloud-connected sensor for your car manufacturer's sales floor in the Paris office.
 
-Once the sensor is onboarded, an activation file and a list of endpoints file are available for download, which you use in a later Learn Module to activate your sensor. <!--what about this change?? -->
+Once the sensor is onboarded, an activation file and a list of endpoints file are available for download, which are stored and used in the *deployment phase* to activate your sensor.
 
 ## Onboard your cloud-connected OT sensor
 

@@ -3,8 +3,8 @@ Your car manufacturing organization has offices and production sites across the 
 Defender for IoT uses *sites* and *zones* for this segmentation, and you need the details about your sensors' sites and zones when onboarding your sensor.
 
 ## Sites and zones
-<!-- In our example, each international office location is ....-->
-In Defender for IoT, each office location is designated as a separate *site*. Each of these sites contains areas with different uses, such as executive offices, production floors, and sales. In Defender for IoT, each of these logical areas are called *zones*.
+
+In Defender for IoT, in our example, each international office location is designated as a separate *site*. Each of these sites contains areas with different uses, such as executive offices, production floors, and sales. In Defender for IoT, each of these logical areas are called *zones*.
 
 Each of your sensors is assigned to a site and zone, with its own unique name. The sensor is either connected to the cloud, where data is streamed to the Azure portal, or managed locally, where data is accessed only on-premises. You define sites and zones for your sensors as you onboard them to Defender for IoT.
 

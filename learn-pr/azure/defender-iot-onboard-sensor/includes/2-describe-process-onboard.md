@@ -20,8 +20,6 @@ This planning is essential for ensuring an effective Defender for IoT deployment
 
 ## In this phase
 
-Sensor onboarding, described in this module, is the deployment phase where you log a specific sensor to Defender for IoT. When a cloud-connected sensor is fully deployed, sensor data is available in Defender for IoT on the Azure portal. <!--Remove the last sentence - seems incorrect to write here.  is the phase where you log a specific sensor with Defender for IoT, so that it is ready to connect to the actual sensor when that is activated. -->
-
-Sensor onboarding involves you entering your Azure subscription, site and zone information, and other sensor details in Defender for IoT.<!-- remove last part of sentence -->
+Sensor onboarding, described in this module, is the deployment phase where you log a specific sensor to Defender for IoT. In this phase you enter your Azure subscription, site and zone information.
 
 In this module, you're onboarding an OT sensor to monitor traffic from a specific office at one of the car manufacturer sites in our sample scenario. When you're done, you have an OT sensor in Defender for IoT and an activation file to use with your sensor.
