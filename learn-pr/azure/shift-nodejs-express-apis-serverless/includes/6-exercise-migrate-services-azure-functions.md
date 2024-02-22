@@ -82,10 +82,6 @@ In the v4 programming model, you can organize your routes in several ways. You c
         handler: getVacations
     });
     ```
-* Create function file.
-* Add the _vacationService_ import to the file.
-* Add function handler for data access and error handling.
-* Move the route definition to the _index.ts_ file
 
 ## Naming the function and handler
 
