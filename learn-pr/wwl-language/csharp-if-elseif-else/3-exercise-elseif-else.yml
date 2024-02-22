@@ -4,10 +4,12 @@ title: Exercise - Create nested decision logic with if, else if, and else
 metadata:
   title: Exercise - Create nested decision logic with if, else if, and else
   description: "Exercise - Create nested decision logic with if, else if, and else"
-  ms.date: 02/21/2024
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 14
 content: |
   [!include[](includes/3-exercise-elseif-else.md)]
