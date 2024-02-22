@@ -3,7 +3,7 @@ uid: learn.security-copilot-describe-core-features
 metadata:
   title: Describe the core features of Microsoft Security Copilot
   description: "Describe the core features of Microsoft Security Copilot."
-  ms.date: 11/18/2023
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
@@ -42,6 +42,7 @@ units:
 - learn.security-copilot-describe-core-features.describe-standalone-experience
 - learn.security-copilot-describe-core-features.describe-microsoft-plugins
 - learn.security-copilot-describe-core-features.describe-non-microsoft-plugins
+- learn.security-copilot-describe-core-features.describe-custom-promptbooks
 - learn.security-copilot-describe-core-features.knowledge-check
 - learn.security-copilot-describe-core-features.summary
 badge:

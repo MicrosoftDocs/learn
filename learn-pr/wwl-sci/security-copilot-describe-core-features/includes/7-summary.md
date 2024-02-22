@@ -1,11 +1,12 @@
 
-In this module, learned about the core features of Microsoft Security Copilot. These features include promptbooks that provide security analysts a standardized set of prompts that serve as a framework for conducting investigations and responding to security incidents. You learned about the types of plugins that are available and enable integration with various sources, providing domain specific capabilities to aid your investigations.
+In this module, learned about the core features of Microsoft Security Copilot. These features include promptbooks and creating custom promptbooks that provide security analysts a standardized set of prompts that serve as a framework for conducting investigations. You learned about the types of plugins that are available and enable integration with various sources, providing domain specific capabilities to aid your investigations.
 
 Now that you completed this module, you can:
 
 - Describe the features available in the standalone Security Copilot experience.
 - Describe the Microsoft plugins available in Security Copilot.
 - Describe the non-Microsoft plugins supported by Security Copilot.
+- Describe custom promptbooks.
 
 #### Learn more
 
