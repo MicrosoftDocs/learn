@@ -36,7 +36,7 @@ Once you've identified the approach that best addresses how you'll update your d
 
 ### Implement CI/CD with Azure DevOps
 
-Azure DevOps is a suite of products that provides full support to all DevOps aspects, including a CI/CD pipeline. A pipeline is composed of Tasks that define the steps of the pipeline. A Task can be almost anything, from the execution of an executable to the build of a .NET solution. You can use a specific task named **Azure SQL Database Deployment Task** to deploy a `.dacpac` file or execute a .sql script.
+Azure DevOps is a suite of products that provides full support to all DevOps aspects, including a CI/CD pipeline. A pipeline is composed of Tasks that define the steps of the pipeline. A Task can be almost anything, from the execution of an executable to the build of a .NET solution. You can use a specific task named **Azure SQL Database Deployment Task** to deploy a `.dacpac` file or execute an .sql script.
 
 ### Implement CI/CD with GitHub Actions
 
