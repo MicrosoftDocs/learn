@@ -43,7 +43,6 @@ products:
 subjects:
 - data-analytics
 - database
-- development-tools
 units:
 - learn.wwl.use-built-functions-transact-sql.introduction
 - learn.wwl.use-built-functions-transact-sql.categorize-functions
