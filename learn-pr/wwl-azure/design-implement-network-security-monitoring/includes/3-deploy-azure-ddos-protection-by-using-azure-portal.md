@@ -8,34 +8,44 @@ Distributed Denial of Service (DDoS) attacks are some of the largest availabilit
 
 Azure DDoS Protection, combined with application design best practices, provide defense against DDoS attacks. Azure DDoS Protection provides the following service tiers:
 
-- **Network Protection:** Provides additional mitigation capabilities over DDoS infrastructure Protection that are tuned specifically to Azure Virtual Network resources. Azure DDoS Protection is simple to enable, and requires no application changes. Protection policies are tuned through dedicated traffic monitoring and machine learning algorithms. Policies are applied to public IP addresses associated to resources deployed in virtual networks, such as Azure Load Balancer, Azure Application Gateway, and Azure Service Fabric instances, but this protection doesn't apply to App Service Environments. Real-time telemetry is available through Azure Monitor views during an attack, and for history. Rich attack mitigation analytics are available via diagnostic settings. Application layer protection can be added through the Azure Application Gateway Web Application Firewall or by installing a third party firewall from Azure Marketplace. Protection is provided for IPv4 and IPv6 Azure public IP addresses.
-- **IP Protection:** DDoS IP Protection is a pay-per-protected IP model. DDoS IP Protection contains the same core engineering features as DDoS Network Protection, but will differ in value-added services like DDoS rapid response support, cost protection, and discounts on WAF.
+- **Network Protection**
+
+   Provides additional mitigation capabilities over DDoS infrastructure Protection that are tuned specifically to Azure Virtual Network resources. Azure DDoS Protection is simple to enable, and requires no application changes. Protection policies are tuned through dedicated traffic monitoring and machine learning algorithms. Policies are applied to public IP addresses associated to resources deployed in virtual networks, such as Azure Load Balancer, Azure Application Gateway, and Azure Service Fabric instances, but this protection doesn't apply to App Service Environments. Real-time telemetry is available through Azure Monitor views during an attack, and for history. Rich attack mitigation analytics are available via diagnostic settings. Application layer protection can be added through the Azure Application Gateway Web Application Firewall or by installing a third party firewall from Azure Marketplace. Protection is provided for IPv4 and IPv6 Azure public IP addresses.
+- **IP Protection**
+
+   DDoS IP Protection is a pay-per-protected IP model. DDoS IP Protection contains the same core engineering features as DDoS Network Protection, but will differ in value-added services like DDoS rapid response support, cost protection, and discounts on WAF.
 
 DDoS Protection protects resources in a virtual network including public IP addresses associated with virtual machines, load balancers, and application gateways. When coupled with the Application Gateway web application firewall, or a third-party web application firewall deployed in a virtual network with a public IP, DDoS Protection can provide full layer 3 to layer 7 mitigation capability.
 
-Every property in Azure is protected by Azure's DDoS infrastructure (Basic) Protection at no additional cost. While Azure DDoS Protection is a paid service, design for services that are deployed in a virtual network.
+Every property in Azure is protected by Azure's DDoS infrastructure (Basic) Protection at no additional cost. Azure DDoS Protection is a paid service, designed for services that are deployed in a virtual network.
 
 ## Types of DDoS attacks
 
 DDoS Protection can mitigate the following types of attacks:
 
-**Volumetric attacks** \- These attacks flood the network layer with a substantial amount of seemingly legitimate traffic. They include UDP floods, amplification floods, and other spoofed-packet floods. DDoS Protection mitigates these potential multi-gigabyte attacks by absorbing and scrubbing them, with Azure's global network scale, automatically.
+- **Volumetric attacks**
 
-**Protocol attacks** \- These attacks render a target inaccessible, by exploiting a weakness in the layer 3 and layer 4 protocol stack. They include SYN flood attacks, reflection attacks, and other protocol attacks. DDoS Protection mitigates these attacks, differentiating between malicious and legitimate traffic, by interacting with the client, and blocking malicious traffic.
+   These attacks flood the network layer with a substantial amount of seemingly legitimate traffic. They include UDP floods, amplification floods, and other spoofed-packet floods. DDoS Protection mitigates these potential multi-gigabyte attacks by absorbing and scrubbing them, with Azure's global network scale, automatically.
 
-**Resource (application) layer attacks** \- These attacks target web application packets, to disrupt the transmission of data between hosts. They include HTTP protocol violations, SQL injection, cross-site scripting, and other layer 7 attacks. Use a Web Application Firewall, such as the Azure Application Gateway web application firewall, and DDoS Protection to provide defense against these attacks. There are also third-party web application firewall offerings available in the Azure Marketplace.
+- **Protocol attacks**
+
+   These attacks render a target inaccessible, by exploiting a weakness in the layer 3 and layer 4 protocol stack. They include SYN flood attacks, reflection attacks, and other protocol attacks. DDoS Protection mitigates these attacks, differentiating between malicious and legitimate traffic, by interacting with the client, and blocking malicious traffic.
+
+- **Resource (application) layer attacks**
+
+   These attacks target web application packets, to disrupt the transmission of data between hosts. They include HTTP protocol violations, SQL injection, cross-site scripting, and other layer 7 attacks. Use a Web Application Firewall, such as the Azure Application Gateway web application firewall, and DDoS Protection to provide defense against these attacks. There are also third-party web application firewall offerings available in the Azure Marketplace.
 
 ## Azure DDoS protection features
 
 Some of Azure DDoS protection features include:
 
- -  **Native platform integration:** Natively integrated into Azure and configured through portal.
- -  **Turnkey protection:** Simplified configuration protecting all resources immediately.
- -  **Always-on traffic monitoring:** Your application traffic patterns are monitored 24 hours a day, 7 days a week, looking for indicators of DDoS attacks.
- -  **Adaptive tuning:** Profiling and adjusting to your service's traffic.
- -  **Attack analytics:** Get detailed reports in five-minute increments during an attack, and a complete summary after the attack ends.
- -  **Attack metrics and alerts:** Summarized metrics from each attack are accessible through Azure Monitor. Alerts can be configured at the start and stop of an attack, and over the attack's duration, using built-in attack metrics.
- -  **Multi-layered protection:** When deployed with a web application firewall (WAF), DDoS Protection protects both at the network layer (Layer 3 and 4, offered by Azure DDoS Protection) and at the application layer (Layer 7, offered by a WAF).
+- **Native platform integration:** Natively integrated into Azure and configured through portal.
+- **Turnkey protection:** Simplified configuration protecting all resources immediately.
+- **Always-on traffic monitoring:** Your application traffic patterns are monitored 24 hours a day, 7 days a week, looking for indicators of DDoS attacks.
+- **Adaptive tuning:** Profiling and adjusting to your service's traffic.
+- **Attack analytics:** Get detailed reports in five-minute increments during an attack, and a complete summary after the attack ends.
+- **Attack metrics and alerts:** Summarized metrics from each attack are accessible through Azure Monitor. Alerts can be configured at the start and stop of an attack, and over the attack's duration, using built-in attack metrics.
+- **Multi-layered protection:** When deployed with a web application firewall (WAF), DDoS Protection protects both at the network layer (Layer 3 and 4, offered by Azure DDoS Protection) and at the application layer (Layer 7, offered by a WAF).
 
 Let us have a look in a bit more detail at some of those key features.
 
@@ -45,12 +55,11 @@ DDoS Protection monitors actual traffic utilization and constantly compares it a
 
 :::image type="content" source="../media/always-on-traffic-monitoring-d9296111.png" alt-text="Diagram illustrating always-on traffic monitoring with DDoS protection.":::
 
-
 During mitigation, traffic sent to the protected resource is redirected by the DDoS protection service and several checks are performed, such as:
 
- -  Ensure packets conform to internet specifications and aren't malformed.
- -  Interact with the client to determine if the traffic is potentially a spoofed packet (e.g: SYN Auth or SYN Cookie or by dropping a packet for the source to retransmit it).
- -  Rate-limit packets if no other enforcement method can be performed.
+- Ensure packets conform to internet specifications and aren't malformed.
+- Interact with the client to determine if the traffic is potentially a spoofed packet (e.g: SYN Auth or SYN Cookie or by dropping a packet for the source to retransmit it).
+- Rate-limit packets if no other enforcement method can be performed.
 
 DDoS protection drops attack traffic and forwards the remaining traffic to its intended destination. Within a few minutes of attack detection, you're notified using Azure Monitor metrics. By configuring logging on DDoS Protection telemetry, you can write the logs to available options for future analysis. Metric data in Azure Monitor for DDoS Protection is retained for 30 days.
 
@@ -60,11 +69,10 @@ The Azure DDoS Protection service helps protect customers and prevent impacts to
 
 :::image type="content" source="../media/adaptive-real-time-tuning-c2c94bd4.png" alt-text="Diagram illustrating adaptive real-time tuning in DDoS protection.":::
 
-
 The service accomplishes this by using two insights:
 
- -  Automatic learning of per-customer (per- Public IP) traffic patterns for Layer 3 and 4.
- -  Minimizing false positives, considering that the scale of Azure allows it to absorb a significant amount of traffic.
+- Automatic learning of per-customer (per- Public IP) traffic patterns for Layer 3 and 4.
+- Minimizing false positives, considering that the scale of Azure allows it to absorb a significant amount of traffic.
 
 ## Attack metrics, alerts, and logs
 
@@ -74,8 +82,7 @@ In the Azure portal, select **Monitor > Metrics**. In the **Metrics** pane, sele
 
 DDoS Protection applies three autotuned mitigation policies (SYN, TCP, and UDP) for each public IP of the protected resource, in the virtual network that has DDoS enabled. You can view the policy thresholds by selecting the **Inbound \[SYN/TCP/UDP\] packets to trigger DDoS mitigation** metrics as shown in the example screenshot below.
 
-:::image type="content" source="../media/ddos-mitigation-policies-586c35e7.png" alt-text="Chart displaying mitigation policy metrics from DDoS Protection":::
-
+:::image type="content" source="../media/ddos-mitigation-policies-586c35e7.png" alt-text="Screenshot of the chart that displays the mitigation policy metrics from DDoS Protection.":::
 
 The policy thresholds are autoconfigured via machine learning-based network traffic profiling. DDoS mitigation occurs for an IP address under attack only when the policy threshold is exceeded.
 
@@ -83,13 +90,13 @@ If the public IP address is under attack, the value for the **Under DDoS attack 
 
 It's recommended to configure an alert on this metric as you'll then get notified if there's an active DDoS mitigation performed on your public IP address.
 
-:::image type="content" source="../media/under-ddos-attack-metric-a946df9a.png" alt-text="Chart displaying metric for 'Under DDoS attack or not'":::
+:::image type="content" source="../media/under-ddos-attack-metric-a946df9a.png" alt-text="Screenshot of a chart that displays the metric for 'Under DDoS attack or not'.":::
 
 ## Multi-layered protection
 
 Specific to resource attacks at the application layer, you should configure a web application firewall (WAF) to help secure web applications. A WAF inspects inbound web traffic to block SQL injections, cross-site scripting, DDoS, and other Layer 7 attacks. Azure provides WAF as a feature of **Application Gateway** for centralized protection of your web applications from common exploits and vulnerabilities. There are other WAF offerings available from Azure partners that might be more suitable for your needs via the Azure Marketplace.
 
-:::image type="content" source="../media/waf-application-gateway-a8c1eff1.png" alt-text="Diagram illustrating the Web Application Firewall Application Gateway":::
+:::image type="content" source="../media/waf-application-gateway-a8c1eff1.png" alt-text="Diagram illustrating the Web Application Firewall Application Gateway.":::
 
 Even web application firewalls are susceptible to volumetric and state exhaustion attacks. Therefore, it's firmly recommended to enable DDoS Protection on the WAF virtual network to help protect from volumetric and protocol attacks.
 

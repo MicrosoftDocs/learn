@@ -45,7 +45,7 @@ The prebuilt models are very flexible but you can help them to return accurate a
 You must also comply with these requirements when you submit a form for analysis:
 
 - The file must be in JPEG, PNG, BMP, TIFF, or PDF format. Additionally, the Read model can accept Microsoft Office files.
-- The file must be smaller that 500 MB for the standard tier, and 4 MB for the free tier.
+- The file must be smaller than 500 MB for the standard tier, and 4 MB for the free tier.
 - Images must have dimensions between 50 x 50 pixels and 10,000 x 10,000 pixels.
 - PDF documents must have dimensions less than 17 x 17 inches or A3 paper size.
 - PDF documents must not be protected with a password.
@@ -127,3 +127,4 @@ The details you can extract from these results depend on the model you used.
 
 - [What is Azure AI Document Intelligence?](/azure/ai-services/document-intelligence/overview)
 - [Azure AI Document Intelligence models](/azure/ai-services/document-intelligence/concept-model-overview)
+

@@ -6,7 +6,7 @@ metadata:
   description:  Learn about the scenarios for DSR in Azure and Office 365 for customer data, and the tools to use for DSR.
   ms.date: 11/13/2020
   author: micrum
-  ms.author: micrum
+  ms.author: robmcm
   ms.topic: unit
 durationInMinutes: 7
 content: |

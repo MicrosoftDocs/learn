@@ -2,7 +2,7 @@ Virtual Network (VNet) service endpoint provides secure and direct connectivity 
 
 Service endpoints are available for the following Azure services and regions. The *Microsoft.\** resource is in parenthesis. Enable this resource from the subnet side while configuring service endpoints for your service:
 
-**Generally available**
+## **Generally available**
 
  -  Azure Storage (*Microsoft.Storage*): Generally available in all Azure regions.<br>
  -  Azure Storage cross-region service endpoints (*Microsoft.Storage.Global*): Generally available in all Azure regions.
@@ -52,12 +52,15 @@ By default, Azure service resources secured to virtual networks aren't reachable
 
 ExpressRoute: If you're using ExpressRoute for public peering or Microsoft peering from your premises, you'll need to identify the NAT IP addresses that you're using. For public peering, each ExpressRoute circuit uses two NAT IP addresses, by default, applied to Azure service traffic when the traffic enters the Microsoft Azure network backbone. For Microsoft peering, the NAT IP addresses are either customer provided or provided by the service provider. To allow access to your service resources, you must allow these public IP addresses in the resource IP firewall setting. To find your public peering ExpressRoute circuit IP addresses, open a support ticket with ExpressRoute via the Azure portal.
 
+:::image type="content" source="../media/virtual-network-service-endpoints-d0502250.png" alt-text="Diagram showing how to secure Azure service resources from on-premises networks.":::
+
+
 ## Configuration
 
  -  Configure service endpoints on a subnet in a virtual network. Endpoints work with any type of compute instances running within that subnet.
  -  You can configure multiple service endpoints for all supported Azure services (Azure Storage or Azure SQL Database, for example) on a subnet.
  -  For Azure SQL Database, virtual networks must be in the same region as the Azure service resource. For all other services, you can secure Azure service resources to virtual networks in any region.
- -  The virtual network where the endpoint is configured can be in the same or different subscription than the Azure service resource. For more information on permissions required for setting up endpoints and securing Azure services, see Provisioning.
+ -  The virtual network where the endpoint is configured can be in the same or different subscription than the Azure service resource.
  -  For supported services, you can secure new or existing resources to virtual networks using service endpoints.
 
 ## Considerations

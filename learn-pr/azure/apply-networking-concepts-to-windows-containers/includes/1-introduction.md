@@ -1,0 +1,7 @@
+Containers are a common development approach for microservice architectures and applications. A containers-based implementation uses hardware efficiently because the security features allow multiple instances to run simultaneously on the same host without affecting each other. Containers also make it easy to scale out a service by deploying more instances.
+
+On a single host or development environment, the standard container management runtime supports managing individual containers. When you need to scale a complex system that has multiple containers working together, container management is more challenging. Your solution must incorporate configuration and maintenance for load balancing, orchestration of the deployment process, and support for network connectivity.
+
+To help with the management process for a complex system, developers often use a container management platform like **Kubernetes**. The platform offers networking configuration settings to enable containers to reach specified resources within a network or be accessible to external networks including the internet.
+
+In this module, you explore the types of business problems that you can solve by implementing networking options for your Windows containers on Azure Kubernetes Service (AKS). You review basic networking concepts for Windows containers and Kubernetes, including managing isolation with virtual switches and configuring IP addresses with Container Network Interface (CNI) plugins. You examine network deployment solutions for Windows containerized applications on AKS and AKS Hybrid.

@@ -4,68 +4,70 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/02/2024
+  ms.date: 02/16/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/11-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "A company wants to automate the creation and teardown of environments to deliver secure and stable application hosting platforms. Which of the following options enables this?"
+  - content: "What can be managed within an Azure Key Vault?"
     choices:
-    - content: "EncipherOnly"
+    - content: "Virtual machine sizes and configurations."
       isCorrect: false
-      explanation: "Incorrect. EncipherOnly is a key usage option that allows only encryption operations."
-    - content: "KeyCertSign"
-      isCorrect: false
-      explanation: "Incorrect. KeyCertSign is a key usage option that allows signing of certificates."
-    - content: "KeyEncipherment"
+      explanation: "Vault is not involved in managing VM sizes or configurations. It's focused on cryptographic keys and secrets management."
+    - content: "Certificates, secrets, and encryption keys."
       isCorrect: true
-      explanation: "Correct. KeyEncipherment is a key usage option that enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-  - content: "A company wants to ensure protection against accidental or malicious deletion of their secrets. What feature should they configure on their key vault?"
+      explanation: "Key Vault is specifically designed for securely storing and accessing secrets, keys, and certificates, providing a centralized management solution for these sensitive data."
+    - content: "Networking equipment configurations."
+      isCorrect: false
+      explanation: "Key Vault manages cryptographic keys and secrets, not network configurations."
+  - content: "What is the primary function of Azure Policy?"
     choices:
-    - content: "Configure soft delete and purge protection features on their secrets"
+    - content: "To enhance network speed and efficiency."
       isCorrect: false
-      explanation: "Incorrect. Soft delete and purge protection features only protect against accidental or malicious deletion of secrets, not the entire key vault."
-    - content: "Back up all secrets in the key vault"
+      explanation: "Azure Policy does not directly affect network speed or efficiency. Its main role is governance and compliance."
+    - content: "To provide unlimited storage capacity for any Azure service."
       isCorrect: false
-      explanation: "Incorrect. Backing up secrets may introduce operational challenges and cause time-out errors."
-    - content: "Configure soft delete and purge protection features on their key vault"
+      explanation: "Azure Policy focuses on governance and compliance, not on providing storage solutions."
+    - content: "To create, assign, and manage governance policies for Azure resources."
       isCorrect: true
-      explanation: "Correct. Soft delete and purge protection features protect against accidental or malicious deletion of the entire key vault."
-  - content: "A company wants to ensure that only approved changes can be made to their environment to maintain compliance. Which artifact can be included in a blueprint definition to achieve this?"
+      explanation: "Azure Policy is used to enforce organizational standards and assess compliance at scale, ensuring resources conform to corporate policies and regulatory requirements."
+  - content: "How do Azure Blueprints help in configuring security settings?"
     choices:
-    - content: "Resource Hierarchy"
-      isCorrect: false
-      explanation: "Incorrect. Resource Hierarchy is used to create a new resource group for use by other artifacts within the blueprint."
-    - content: "Azure Resource Manager template"
-      isCorrect: false
-      explanation: "Incorrect. Azure Resource Manager template is used to compose complex environments."
-    - content: "Policy Assignment"
+    - content: "By deploying pre-configured templates that include security settings."
       isCorrect: true
-      explanation: "Correct. Policy Assignment allows assignment of a policy or initiative to the subscription the blueprint is assigned to, ensuring only approved changes can be made to the environment."
-  - content: "A company wants to enable the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms. Which Azure service can they use for this purpose?"
+      explanation: "Azure Blueprints automate the deployment of resources, including security policies, RBAC settings, and ARM templates, ensuring a consistent and compliant environment."
+    - content: "By manually managing each resource individually."
+      isCorrect: false
+      explanation: "Blueprints provide automation for deployment, not manual management."
+    - content: "By automatically scaling resources based on demand."
+      isCorrect: false
+      explanation: "Blueprints focus on governance and compliance, not on resource scaling."
+  - content: "How is key rotation configured in Azure Key Vault?"
     choices:
-    - content: "Azure Cosmos DB"
+    - content: "By manually updating keys at each use."
       isCorrect: false
-      explanation: "Incorrect. Azure Cosmos DB is a globally distributed, multi-model database service."
-    - content: "Azure Functions"
+      explanation: "Manual updates do not adhere to best practices for key rotation, which requires a more automated and reliable method."
+    - content: "Using physical security mechanisms."
       isCorrect: false
-      explanation: "Incorrect. Azure Functions is a serverless compute service that enables you to run event-triggered code without having to explicitly provision or manage infrastructure."
-    - content: "Azure DevTest Labs"
+      explanation: "Key rotation is a digital process that involves updating cryptographic keys at specified intervals, not related to physical security."
+    - content: "Through automatic rotation policies."
       isCorrect: true
-      explanation: "Correct. Azure DevTest Labs enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-  - content: "A company wants to ensure that their application hosting platforms are secure and stable. What enables the automation and validation of the creation and teardown of environments to help deliver this?"
+      explanation: "Azure Key Vault supports configuring automatic key rotation policies, enhancing security by regularly updating cryptographic keys without manual intervention."
+  - content: "What is the purpose of a dedicated Hardware Security Module (HSM)?"
     choices:
-    - content: "A firewall"
+    - content: "To serve as an external backup device for Azure services."
       isCorrect: false
-      explanation: "Incorrect. A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules."
-    - content: "An antivirus software"
-      isCorrect: false
-      explanation: "Incorrect. An antivirus software is a program designed to prevent, detect, and remove malware from computer systems."
-    - content: "A built-in policy"
+      explanation: "HSMs are focused on securing cryptographic keys and performing secure cryptographic operations, not serving as backup devices."
+    - content: "To enhance security by physically protecting cryptographic keys."
       isCorrect: true
-      explanation: "Correct. A built-in policy enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      explanation: "Dedicated HSMs provide a high level of security for cryptographic operations and key management by physically isolating and protecting keys from unauthorized access."
+    - content: "To provide a physical computing device for processing graphical data."
+      isCorrect: false
+      explanation: "HSMs are designed for securing cryptographic keys, not for processing graphical data."
