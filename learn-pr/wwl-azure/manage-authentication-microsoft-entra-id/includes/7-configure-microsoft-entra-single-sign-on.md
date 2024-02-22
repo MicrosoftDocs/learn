@@ -35,7 +35,7 @@ Set up a process for how you'll handle a certificate change between Microsoft En
 
 Communication is critical to the success of any new service. Proactively communicate to your users about how their experience will change. Communicate when it will change, and how to gain support if they experience issues. Review the options for how users will access their SSO-enabled applications, and craft your communications to match your selection.
 
-Implement your communication plan. Make sure you're letting your users know that a change is coming, when it has arrived, and what to do now. Also, make sure that you provide information about how to seek assistance.
+Implement your communication plan. Make sure you were letting your users know that a change is coming, when it has arrived, and what to do now. Also, make sure that you provide information about how to seek assistance.
 
 ## Licensing
 
