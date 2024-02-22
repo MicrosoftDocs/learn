@@ -8,6 +8,8 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 18
 content: |
   [!include[](includes/4-return-values-input-parameters.md)]
