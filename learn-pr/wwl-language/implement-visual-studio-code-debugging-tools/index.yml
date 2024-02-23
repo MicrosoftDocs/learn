@@ -33,6 +33,8 @@ roles:
 products:
 - dotnet
 - vs-code
+subjects:
+- app-development
 units:
 - learn.wwl.implement-visual-studio-code-debugging-tools.introduction
 - learn.wwl.implement-visual-studio-code-debugging-tools.examine-visual-studio-code-debugger
