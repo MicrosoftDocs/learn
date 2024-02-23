@@ -4,7 +4,7 @@ title: Use commands in a viewmodel
 metadata:
   title: Use commands in a viewmodel
   description: "Use commands to add testable support for event-like behaviors in the viewmodel."
-  ms.date: 05/01/2019
+  ms.date: 02/20/2024
   author: codemillmatt
   ms.author: masoucou
   ms.topic: unit
