@@ -19,6 +19,8 @@ summary: |
   *   Use real time Eventstream in Microsoft Fabric
   *   Query data in a KQL database in Microsoft Fabric
   *   Create real time dashboards in Microsoft Fabric
+  > [!NOTE]
+  > The Applied Skills assessment for this learning path will be available in April.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner
