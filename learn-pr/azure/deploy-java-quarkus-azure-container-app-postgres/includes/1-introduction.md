@@ -27,5 +27,5 @@ By the end of this module, you'll be able to:
 You should be familiar with Java applications. Quarkus is explained as you follow along. As you complete the exercises in this module, you'll use a personal Azure account. Make sure that you have the following resources:
   
 - An Azure subscription
-- Local installations of Java JDK (11 or later), Maven (3.8 or later), and the Azure CLI (2.48 or later)
+- Local installations of Java JDK (17 or later), Maven (3.9 or later), and the Azure CLI (2.57 or later)
 - Docker and Docker Desktop

@@ -7,6 +7,7 @@ First, make sure you can access the PostgreSQL server by using the Azure CLI. To
 ```bash
 az postgres flexible-server execute \
     --name "$AZ_POSTGRES_SERVER_NAME" \
+    --database-name "$AZ_POSTGRES_DB_NAME" \
     --admin-user "$AZ_POSTGRES_USERNAME" \
     --admin-password "$AZ_POSTGRES_PASSWORD" \
     --querytext "select * from Todo" \
@@ -52,6 +53,7 @@ Now try to query the database by running a SQL statement from the CLI:
 ```bash
 az postgres flexible-server execute \
     --name "$AZ_POSTGRES_SERVER_NAME" \
+    --database-name "$AZ_POSTGRES_DB_NAME" \
     --admin-user "$AZ_POSTGRES_USERNAME" \
     --admin-password "$AZ_POSTGRES_PASSWORD" \
     --querytext "select * from Todo" \
@@ -90,6 +92,7 @@ If you try to access the database from the CLI by running the following command,
 ```bash
 az postgres flexible-server execute \
     --name "$AZ_POSTGRES_SERVER_NAME" \
+    --database-name "$AZ_POSTGRES_DB_NAME" \
     --admin-user "$AZ_POSTGRES_USERNAME" \
     --admin-password "$AZ_POSTGRES_PASSWORD" \
     --querytext "select * from Todo" \

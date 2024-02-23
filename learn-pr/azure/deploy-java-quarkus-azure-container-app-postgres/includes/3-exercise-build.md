@@ -17,13 +17,13 @@ You don't need to specify Azure dependencies because you run your application lo
 At a command prompt, generate the to-do application:
 
 ```bash
-mvn -U io.quarkus:quarkus-maven-plugin:2.15.1.Final:create \
-    -DplatformVersion=2.15.1.Final \
+mvn -U io.quarkus:quarkus-maven-plugin:3.7.3:create \
+    -DplatformVersion=3.7.3 \
     -DprojectGroupId=com.example.demo \
     -DprojectArtifactId=todo \
     -DclassName="com.example.demo.TodoResource" \
     -Dpath="/api/todos" \
-    -DjavaVersion=11 \
+    -DjavaVersion=17 \
     -Dextensions="resteasy-jackson, hibernate-orm-panache, jdbc-postgresql, docker"
 ```
 
@@ -52,6 +52,10 @@ This command creates a new Quarkus project. It generates a Maven directory struc
       <artifactId>quarkus-arc</artifactId>
     </dependency>
     <dependency>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-hibernate-orm</artifactId>
+    </dependency>
+    <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-resteasy</artifactId>
     </dependency>
@@ -73,7 +77,7 @@ This command creates a new Quarkus project. It generates a Maven directory struc
 
 ## Code the application
 
-Next, create a new *Todo.java* class file in the same folder as the *TodoResource.java* file. Add the following Java code to the new file. It uses Java Persistence API (`javax.persistence.Entity` package) to store and retrieve data from your PostgreSQL server. It also uses [Hibernate ORM with Panache](https://quarkus.io/guides/hibernate-orm-panache) (inheriting from `io.quarkus.hibernate.orm.panache.PanacheEntity`) to simplify the persistence layer.
+Next, create rename the generated *MyEntity.java* class to *Todo.java* (located in the same folder as the *TodoResource.java* file). Replace the existing code with the following Java code. It uses Java Persistence API (`jakarta.persistence.*` package) to store and retrieve data from your PostgreSQL server. It also uses [Hibernate ORM with Panache](https://quarkus.io/guides/hibernate-orm-panache) (inheriting from `io.quarkus.hibernate.orm.panache.PanacheEntity`) to simplify the persistence layer.
 
 You use a JPA entity (`@Entity`) to map the Java `Todo` object directly to the PostgreSQL `Todo` table. The `TodoResource` REST endpoint then creates a new `Todo` entity class and persists it. This class is a domain model that's mapped on the `Todo` table. The table is automatically created by JPA.
 
@@ -86,7 +90,7 @@ package com.example.demo;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 
-import javax.persistence.Entity;
+import jakarta.persistence.Entity;
 import java.time.Instant;
 
 @Entity
@@ -118,22 +122,20 @@ To manage that class, update the `TodoResource` so that it can publish REST inte
 ```java
 package com.example.demo;
 
+import jakarta.inject.Inject;
+import jakarta.transaction.Transactional;
+import jakarta.ws.rs.Consumes;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.POST;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.Produces;
+import static jakarta.ws.rs.core.MediaType.APPLICATION_JSON;
+import jakarta.ws.rs.core.Response;
+import jakarta.ws.rs.core.UriBuilder;
+import jakarta.ws.rs.core.UriInfo;
 import org.jboss.logging.Logger;
 
-import javax.inject.Inject;
-import javax.transaction.Transactional;
-import javax.ws.rs.Consumes;
-import javax.ws.rs.GET;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.Context;
-import javax.ws.rs.core.Response;
-import javax.ws.rs.core.UriBuilder;
-import javax.ws.rs.core.UriInfo;
 import java.util.List;
-
-import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 
 @Path("/api/todos")
 @Consumes(APPLICATION_JSON)
@@ -143,9 +145,12 @@ public class TodoResource {
     @Inject
     Logger logger;
 
+    @Inject
+    UriInfo uriInfo;
+
     @POST
     @Transactional
-    public Response createTodo(Todo todo, @Context UriInfo uriInfo) {
+    public Response createTodo(Todo todo) {
         logger.info("Creating todo: " + todo);
         Todo.persist(todo);
         UriBuilder uriBuilder = uriInfo.getAbsolutePathBuilder().path(todo.id.toString());
@@ -162,13 +167,14 @@ public class TodoResource {
 
 ## Run the application
 
-When you run the application in development mode, Docker needs to be running. That's because Quarkus detects that you need a PostgreSQL database (because of the PostgreSQL dependency `quarkus-jdbc-postgresql` in *pom.xml*), downloads the PostgreSQL Docker image, and starts a container with the database. It then automatically creates the `Todo` table in the database.
+When you run the application in development mode, Docker needs to be running. That's because Quarkus detects that you need a PostgreSQL database (because of the PostgreSQL dependency `quarkus-jdbc-postgresql` declared in the *pom.xml* file), downloads the PostgreSQL Docker image, and starts a container with the database. It then automatically creates the `Todo` table in the database.
 
 Make sure Docker is running locally on your machine and run the to-do application by using this command:
 
 ```bash
 cd todo
-mvnw.cmd quarkus:dev
+./mvnw quarkus:dev    # On Mac or Linux
+mvnw.cmd quarkus:dev  # On Windows
 ```
 
 The Quarkus application should start and connect to your database. You should see the following output:
@@ -243,11 +249,10 @@ To test the application, you can use the existing `TodoResourceTest` class. It n
 package com.example.demo;
 
 import io.quarkus.test.junit.QuarkusTest;
-import org.junit.jupiter.api.Test;
-
 import static io.restassured.RestAssured.given;
-import static javax.ws.rs.core.HttpHeaders.CONTENT_TYPE;
-import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
+import static jakarta.ws.rs.core.HttpHeaders.CONTENT_TYPE;
+import static jakarta.ws.rs.core.MediaType.APPLICATION_JSON;
+import org.junit.jupiter.api.Test;
 
 @QuarkusTest
 class TodoResourceTest {
@@ -279,7 +284,8 @@ class TodoResourceTest {
 When you test the application, Docker Desktop needs to be running because Quarkus detects that it needs the PostgreSQL database for testing. Test the application by using this command:
 
 ```bash
-mvnw.cmd clean test
+./mvnw clean test    # On Mac or Linux
+mvnw.cmd clean test  # On Windows
 ```
 
 You should see output that looks similar to this:
