@@ -46,6 +46,7 @@ units:
 - learn.wwl.operate-with-devops.explore-observability-through-security-assessment
 - learn.wwl.operate-with-devops.explore-resiliency-with-site-reliability-engineering
 - learn.wwl.operate-with-devops.improve-developer-experience-with-platform-engineering
+- learn.wwl.operate-with-devops.enhance-workload-resiliency-traffic-manager-and-azure-chaos-studio
 - learn.wwl.operate-with-devops.knowledge-check
 - learn.wwl.operate-with-devops.summary
 badge:

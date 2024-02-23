@@ -40,12 +40,13 @@ subjects:
   - devops
   - cloud-computing
 units:
-  - learn.wwl.deliver-with-devops.introduction
-  - learn.wwl.deliver-with-devops.explore-continuous-delivery
-  - learn.wwl.deliver-with-devops.explore-infrastructure-as-code
-  - learn.wwl.deliver-with-devops.explore-progressive-exposure-techniques
-  - learn.wwl.deliver-with-devops.explore-continuous-delivery-github-actions
-  - learn.wwl.deliver-with-devops.knowledge-check
-  - learn.wwl.deliver-with-devops.summary
+- learn.wwl.deliver-with-devops.introduction
+- learn.wwl.deliver-with-devops.explore-continuous-delivery
+- learn.wwl.deliver-with-devops.explore-infrastructure-as-code
+- learn.wwl.deliver-with-devops.explore-progressive-exposure-techniques
+- learn.wwl.deliver-with-devops.explore-continuous-delivery-github-actions
+- learn.wwl.deliver-with-devops.implement-ci-cd-with-github-actions-and-iac-with-bicep
+- learn.wwl.deliver-with-devops.knowledge-check
+- learn.wwl.deliver-with-devops.summary
 badge:
   uid: learn.wwl.deliver-with-devops.badge

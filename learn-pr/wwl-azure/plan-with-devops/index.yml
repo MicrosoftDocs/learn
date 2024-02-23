@@ -39,12 +39,13 @@ subjects:
   - devops
   - cloud-computing
 units:
-  - learn.wwl.plan-with-devops.introduction
-  - learn.wwl.plan-with-devops.foster-devops-culture
-  - learn.wwl.plan-with-devops.what-is-agile
-  - learn.wwl.plan-with-devops.explore-devops-practices
-  - learn.wwl.plan-with-devops.plan-with-github
-  - learn.wwl.plan-with-devops.knowledge-check
-  - learn.wwl.plan-with-devops.summary
+- learn.wwl.plan-with-devops.introduction
+- learn.wwl.plan-with-devops.foster-devops-culture
+- learn.wwl.plan-with-devops.what-is-agile
+- learn.wwl.plan-with-devops.explore-devops-practices
+- learn.wwl.plan-with-devops.plan-with-github
+- learn.wwl.plan-with-devops.agile-plan-and-management-using-github
+- learn.wwl.plan-with-devops.knowledge-check
+- learn.wwl.plan-with-devops.summary
 badge:
   uid: learn.wwl.plan-with-devops.badge

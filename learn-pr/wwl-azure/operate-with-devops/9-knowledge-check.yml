@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
 durationInMinutes: 4
 content: |
-  [!include[](includes/8-knowledge-check.md)]
+  [!include[](includes/9-knowledge-check.md)]
 quiz:
   questions:
     - content: "What do continuous operations target in the context of operational excellence?"

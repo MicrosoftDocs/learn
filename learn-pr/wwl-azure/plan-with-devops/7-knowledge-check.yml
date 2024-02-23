@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
 durationInMinutes: 4
 content: |
-  [!include[](includes/6-knowledge-check.md)]
+  [!include[](includes/7-knowledge-check.md)]
 quiz:
   questions:
     - content: "What is the primary goal of Agile?"

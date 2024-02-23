@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deliver-with-devops.implement-ci-cd-with-github-actions-and-iac-with-bicep
+title: Implement CI/CD with GitHub Actions and IaC with Bicep
+metadata:
+  title: Implement CI CD with GitHub Actions and IaC with Bicep
+  description: "This lab gives you the opportunity to implement CI/CD using GitHub Actions and enable IaC with Bicep."
+  ms.date: 2/23/2024
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+durationInMinutes: 40
+content: |
+  [!include[](includes/6-implement-ci-cd-with-github-actions-and-iac-with-bicep.md)]
