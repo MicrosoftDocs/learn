@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-intelligent-planners.how-to-use-a-planner
+title: How to use a planner
+metadata:
+  title: How to use a planner
+  description: "How to use a planner"
+  ms.date: 02/23/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-how-to-use-a-planner.md)]
