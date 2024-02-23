@@ -72,7 +72,7 @@ In the v4 programming model, you can organize your routes in several ways. You c
     ```typescript
     import { getVacations } from `./functions/getVacations`;
     ```
-1. Move the route definition from `./functions/getVacataion` to the _index.ts_ file. Update the **method** property array to `GET`. 
+1. Move the route definition from `./functions/getVacations` to the _index.ts_ file. Update the **method** property array to `GET`. 
 
     ```typescript
     app.http('getVacations', {
