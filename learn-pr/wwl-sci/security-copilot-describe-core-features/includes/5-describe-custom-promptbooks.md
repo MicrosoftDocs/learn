@@ -28,12 +28,12 @@ Selecting the promptbook opens it. From here, you enter the required input param
 
 ### Edit a promptbook
 
-To edit your existing promptbook, select the home menu (hamburger icon) and select Promptbook library. 
+To edit your existing promptbook, select the home menu (hamburger icon) and select Promptbook library.
 
 :::image type="content" source="../media/promptbook-library.png" lightbox="../media/promptbook-library.png" alt-text="Screen capture of the home menu options showing the promptbook library option.":::
 
-Select the ellipses for the promptbook you want to edit then select Edit from the options. You can only edit existing promptbooks if you're the owner of the promptbook. 
+Select the ellipses for the promptbook you want to edit then select Edit from the options. You can only edit existing promptbooks if you're the owner of the promptbook.
 
-:::image type="content" source="../media/my-promptbooks-edit.png" lightbox="../media/my-promptbooks-edit.png" alt-text="Screen capture of the home menu options showing the promptbook library option.":::
+:::image type="content" source="../media/my-promptbooks-edit.png" lightbox="../media/my-promptbooks-edit.png" alt-text="Screen capture of the edit option for your custom promptbook.":::
 
 In addition to editing, you can also choose to view the details of the promptbook, duplicate it, or delete it. You can also choose to run the promptbook by selecting the run icon.
