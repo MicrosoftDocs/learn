@@ -1,4 +1,4 @@
-The Semantic Kernel SDK allows you to automatically coordinate functions and prompts that are referenced in your kernel. Rather than time manually invoke functions and prompts, this tool helps you save time and makes your applications smarter. Let's try it out!
+The Semantic Kernel SDK allows you to automatically coordinate functions and prompts that are referenced in your kernel. Rather than manually invoking functions and prompts, this tool helps you save time and makes your applications smarter. Let's try it out!
 
 1. Open the `Program.cs` file and modify it with the following code:
 
@@ -21,9 +21,9 @@ The Semantic Kernel SDK allows you to automatically coordinate functions and pro
     Console.WriteLine(result);
     ```
 
-1. Enter `dotnet run` in the terminal.
+1. Enter `dotnet run` in the terminal
 
-    You should see output similar to the following:
+    You should see output similar to the following response:
 
     ```output
     Based on your recently played songs and your location in Portland, OR, I would recommend attending the upcoming concert of Kina Grannis. She will be performing in Portland on April 16, 2024. This concert would be a great opportunity for you to enjoy live music and experience Kina Grannis' beautiful songs.

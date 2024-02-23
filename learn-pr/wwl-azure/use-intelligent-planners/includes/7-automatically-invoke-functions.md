@@ -1,6 +1,6 @@
 The Semantic Kernel SDK has a powerful auto function calling feature that lets you automatically invoke functions and prompts. Enabling auto function calling allows the kernel to automatically select which functions and prompts to use on some provided input. This feature can help you save time manually invoke functions and prompts and make your applications smarter.
 
-To use function calling, you must use an OpenAI model that supports it. Currently, this includes GPT-3.5-turbo and GPT-4 models that are version 0613 or newer.
+To use function calling, you must use an OpenAI model that supports it. Currently, these models include GPT-3.5-turbo and GPT-4 models that are version 0613 or newer.
 
 To enable auto function calling, you must set the `ToolCallBehavior` property of the `OpenAIPromptExecutionSettings` object to `AutoInvokeKernelFunctions`. 
 
@@ -39,7 +39,7 @@ var result = await kernel.InvokePromptAsync(prompt, new(settings));
 Console.WriteLine(result);
 ```
 
-Depending on your ingredients and function details, the output of this code might be similar to the following:
+Depending on your ingredients and function details, the output of this code might be similar to the following response:
 
 ```output
 Based on the list of ingredients for aloo jeera, you are missing the following items:

@@ -1,4 +1,4 @@
-Planners are an excellent tool to help you automatically run your functions and prompts. To use the Handlebars planner, first you need to install the add on package:
+Planners are an excellent tool to help you automatically run your functions and prompts. To use the Handlebars planner, first you need to install the add-on package:
 
 `dotnet add package Microsoft.SemanticKernel.Planners.Handlebars --version 1.2.0-preview`
 
@@ -24,7 +24,7 @@ Console.WriteLine(result);
 
 ```
 
-The output may be similar to the following:
+The output may be similar to the following result:
 
 ```output
 Based on the list of ingredients for blueberry muffins, you are missing blueberries and salt from your available ingredients.

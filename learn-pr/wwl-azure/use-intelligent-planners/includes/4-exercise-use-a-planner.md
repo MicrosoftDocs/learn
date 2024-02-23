@@ -1,4 +1,4 @@
-In this exercise, you'll use a planner to automatically invoke your plugin functions to accomplish a goal. The goal is to recommend an upcoming concert to a user based on their recently played music. To accomplish this goal, you'll need to make sure all of the steps are in place before the Handlebars planner can accurately plan the steps. First let's create a plugin to retrieve upcoming concerts.
+In this exercise, you use a planner to automatically invoke your plugin functions to accomplish a goal. The goal is to recommend an upcoming concert to a user based on their recently played music. To accomplish this goal, you need to make sure all of the steps are in place before the Handlebars planner can accurately plan the steps. First, let's create a plugin to retrieve upcoming concerts.
 
 ## Prepare your development environment
 
@@ -23,7 +23,7 @@ For these exercises, a starter project is available for you to use. Use the foll
 
 1. In Explorer, right-click the **M04-use-intelligent-planners/M04-Project** folder and click **Open in Integrated Terminal**
 
-1. Expand the **M04-use-intelligent-planners/M04-Project** folder.
+1. Expand the **M04-use-intelligent-planners/M04-Project** folder
 
     You should see a "Program.cs" file.
 
@@ -43,7 +43,7 @@ Now you're ready to begin the exercise. Good luck!
 
     `dotnet add package Microsoft.SemanticKernel.Planners.Handlebars --version 1.2.0-preview`
 
-1. In the 'Plugins' folder, create a new file named 'MusicConcertPlugin.cs'.
+1. In the 'Plugins' folder, create a new file named 'MusicConcertPlugin.cs'
 
 1. In the MusicConcertPlugin' file, add the following code:
 
@@ -99,7 +99,7 @@ Now you're ready to begin the exercise. Good luck!
     ]
     ```
 
-    This file should be in the same directory as your 'Program.cs' file. Currently, the Handlebars planner won't complete LLM prompts on its own. The planner can only select available prompts and functions to combine to achieve the goal. So next, you'll need to create a prompt to ask the LLM to suggest a concert.
+    This file should be in the same directory as your 'Program.cs' file. Currently, the Handlebars planner can't complete large language model (LLM) prompts on its own. The planner can only select available prompts and functions to combine to achieve the goal. So next, you need to create a prompt to ask the LLM to suggest a concert.
 
 1. In the 'Prompts' folder, create a new folder named 'SuggestConcert'
 
@@ -149,7 +149,7 @@ Now you're ready to begin the exercise. Good luck!
     please recommend a relevant concert that is close to their location.
     ```
 
-    This prompt helps the LLM filter the user's input and retrieve just the destination from the text. Next, you'll invoke the planner to create a plan that combines the plugins together to accomplish the goal.
+    This prompt helps the LLM filter the user's input and retrieve just the destination from the text. Next, you invoke the planner to create a plan that combines the plugins together to accomplish the goal.
 
 1. Open your 'Program.cs' file and update it with the following code:
 
@@ -173,7 +173,7 @@ Now you're ready to begin the exercise. Good luck!
 
 1. In the terminal, enter `dotnet run`
 
-    You should see output similar to the following:
+    You should see output similar to the following response:
 
     ```output
     Based on the user's recently played songs and their location in Redmond WA USA, a relevant concert recommendation would be the upcoming concert of Kina Grannis in Seattle WA, USA on February 22, 2024. Kina Grannis is an indie-folk artist, and her music genre aligns with the user's recently played songs, such as "Loanh Quanh" by Mademoiselle. Additionally, Seattle is close to Redmond, making it a convenient location for the user to attend the concert.
