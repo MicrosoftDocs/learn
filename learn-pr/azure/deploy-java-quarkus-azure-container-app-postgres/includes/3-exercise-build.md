@@ -27,9 +27,6 @@ mvn -U io.quarkus:quarkus-maven-plugin:2.15.1.Final:create \
     -Dextensions="resteasy-jackson, hibernate-orm-panache, jdbc-postgresql, docker"
 ```
 
-> [!NOTE]
-> By default, the project is generated with Java 17. The preceding command uses the `DjavaVersion` parameter to override the default value and use Java 11.
-
 This command creates a new Quarkus project. It generates a Maven directory structure (`src/main/java` for source code and `src/test/java` for tests). It creates some Java classes, some tests, and some Dockerfiles. It also generates a *pom.xml* file with all the needed dependencies (Hibernate, RESTEasy, Jackson, PostgreSQL, and Docker):
 
 ```xml

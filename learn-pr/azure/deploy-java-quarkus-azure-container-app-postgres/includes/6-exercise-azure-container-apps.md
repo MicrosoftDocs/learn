@@ -65,17 +65,17 @@ This command does several things:
 The `az containerapp up` command takes some time to run. You should see output that's similar to the following:
 
 ```bash
-Using resource group 'rg-azure-deploy-quarkus'
-Creating ContainerAppEnvironment 'cae-azure-deploy-quarkus' in resource group rg-azure-deploy-quarkus
+Using resource group 'rgazure-deploy-quarkus'
+Creating ContainerAppEnvironment 'caeazure-deploy-quarkus' in resource group rgazure-deploy-quarkus
 No Log Analytics workspace provided.
 Generating a Log Analytics workspace with name "workspace-rgazuredeployquarkusEED7"
-Creating Azure Container Registry ca001ad52ae7acr in resource group rg-azure-deploy-quarkus
+Creating Azure Container Registry ca001ad52ae7acr in resource group rgazure-deploy-quarkus
 
 Run ID: ca3 was successful after 41s
-Creating Containerapp ca-azure-deploy-quarkus in resource group rg-azure-deploy-quarkus
+Creating Containerapp caazure-deploy-quarkus in resource group rgazure-deploy-quarkus
 Adding registry password as a secret with name "ca001ad52ae7acrazurecrio-ca001nxc57acr"
 
-Your container app ca-azure-deploy-quarkus has been created and deployed! Congrats! 
+Your container app caazure-deploy-quarkus has been created and deployed! Congrats! 
 ```
 
 ## Validate the deployment
