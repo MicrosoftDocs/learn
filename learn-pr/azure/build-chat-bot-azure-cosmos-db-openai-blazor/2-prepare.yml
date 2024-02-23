@@ -6,6 +6,8 @@ metadata:
   title: Prepare
   description: |
     Review the project's environment and get started deploying the Azure Cosmos DB for NoSQL and Azure OpenAI resources.
+  codespaces-url: |
+    https://codespaces.new/azure-samples/cosmosdb-chatgpt/tree/start?template=false&quickstart=1
   author: seesharprun
   manager: jroth
   ms.author: sidandrews
