@@ -10,7 +10,7 @@ In this unit, you will:
 * Amend the application to use the feature flag.
 * Change the products page to display a sales banner.
 * Build and test the app.
-     
+
 ## Open the development environment
 
 You can choose to use a GitHub codespace that hosts the exercise, or complete the exercise locally in Visual Studio Code.
@@ -112,11 +112,10 @@ You'll now add the App Configuration connection string to the application. Compl
     ```
 
     The **:::no-loc text="docker-compose.yml":::** will resemble the following YAML:
-    
+
     ```yml
     environment: 
       - ProductEndpoint=http://backend:8080
-      - ImagePrefix=http://localhost:32001/images
       - ConnectionStrings:AppConfig=Endpoint=https://eshop-app-features1168054702.azconfig.io;Id=<ID>;Secret=<Secret value>
     ```
 
@@ -221,12 +220,13 @@ Your app can now read the feature flag, but the products page needs to be update
     ```
 
     The preceding code imports the Feature Management library's namespaces and injects the `IFeatureManager` interface into the component.
+
 1. In the **:::no-loc text="@code":::** section, add the following variable to store the state of the feature flag:
 
     ```csharp
     private bool saleOn = false;  
     ```
-    
+
 1. In the **:::no-loc text="OnInitializedAsync":::** method, add the following code:
 
     ```csharp
@@ -263,7 +263,7 @@ Your app can now read the feature flag, but the products page needs to be update
 
 ### Build the app
 
-1. Ensure you've saved all your changes, and are in the root directory. In the terminal, run the following command:
+1. Ensure you've saved all your changes, and are in the eShopLite directory. In the terminal, run the following command:
 
     ```bash
     cd ..
