@@ -20,7 +20,7 @@ Fork the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative-devops](ht
 2. Select the **Codespaces** tab
 3. Select the **+** icon to create your codespace.
 
-GitHub takes several minutes to create and configure the codespace. When it's finished, you see the code files for the exercise. 
+GitHub takes several minutes to create and configure the codespace. When it's finished, you see the code files for the exercise.
 
 ## Optional: Visual Studio Code Setup
 To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative-devops](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative-devops/fork) repository to your own GitHub account. Then:
@@ -31,11 +31,11 @@ To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslear
 
 ## Build containers
 
-In the terminal pane, run this docker command:
+1. In the terminal pane, run this dotnet CLI command:
 
-```console
-docker-compose build
-```
+    ```dotnetcli
+    dotnet publish /p:PublishProfile=DefaultContainer 
+    ```
 
 ## Create the Azure resources
 
@@ -106,8 +106,8 @@ docker-compose build
 1. To tag your images and push them to the ACR you just created, run these commands:
 
     ```bash
-    docker tag storeimage $ACR_NAME.azurecr.io/storeimage:v1
-    docker tag productservice $ACR_NAME.azurecr.io/productservice:v1
+    docker tag store $ACR_NAME.azurecr.io/storeimage:v1
+    docker tag products $ACR_NAME.azurecr.io/productservice:v1
     
     docker push $ACR_NAME.azurecr.io/storeimage:v1
     docker push $ACR_NAME.azurecr.io/productservice:v1

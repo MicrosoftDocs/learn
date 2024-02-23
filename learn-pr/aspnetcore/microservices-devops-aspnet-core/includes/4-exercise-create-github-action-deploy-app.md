@@ -18,6 +18,7 @@ To deploy new versions of the eShop product service, you'll need to edit the **p
     ```  
 
     Replace the `[replace with your ACR name]` with the name of your ACR; for example, **acseshop186748394**.
+
 1. In the top right, select **Commit changes...** then, in the dialog, select **Commit changes**.
 
 ## Create the deployment action
@@ -102,6 +103,7 @@ You have a new product your marketing team would like to add to the catalog.
     ```csharp
     new Product {  Name = "Camping Tent 2", Description = "This updated tent is improved and cheaper, perfect for your next trip.", Price = 79.99m, ImageUrl = "product9.png" },
     ```
+
 1. In the top right, select **Commit changes...** then, in the dialog, select **Commit changes**.
 
 ## Monitor the deployment
@@ -118,9 +120,9 @@ You have a new product your marketing team would like to add to the catalog.
     ```bash
     kubectl get pods --selector=app=productservice --watch
     ```
-    
+
     During the deployment, a variation of the following output appears:
-    
+
     ```console
     NAME                             READY   STATUS    RESTARTS   AGE
     productservice-7979d4c47-xlcrr   1/1     Running   0          17m
@@ -130,9 +132,8 @@ You have a new product your marketing team would like to add to the catalog.
     productservice-ff98b6d8d-7wmsh   1/1     Running             0          4s
     productservice-7979d4c47-xlcrr   1/1     Terminating         0          19m
     ```
-    
-    In the preceding output, notice that a new **productservice** pod is created. When the new pod is ready, the old one is terminated. This process makes the transition to the new version as smooth as possible.
 
+    In the preceding output, notice that a new **productservice** pod is created. When the new pod is ready, the old one is terminated. This process makes the transition to the new version as smooth as possible.
 
 ## Verify the app
 
