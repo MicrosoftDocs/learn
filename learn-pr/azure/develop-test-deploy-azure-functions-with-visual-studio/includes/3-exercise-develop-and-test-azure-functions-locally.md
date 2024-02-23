@@ -137,7 +137,7 @@ Create an Azure Function App using an **Azure Functions** template.
     return new BadRequestObjectResult("Please provide a watch model in the query string");
     ```
 
-    This code reads the `model` parameter from the query string in the HTTP request and returns the details for that watch model. In this example code, we've created dummy `watchinfo` data. The function returns a response that contains these details, or, if the HTTP request doesn't include a query string, the function returns an error message.
+    This code reads the `model` parameter from the query string in the HTTP request and returns the details for that watch model. In this example code, we've created dummy `watchinfo` data that is returned regardless of the value of `model`. The function returns a response that contains these details, or, if the HTTP request doesn't include a query string, the function returns an error message. In a real-world example, you would use the `model` value to do a lookup of the correct `watchinfo` to return.
 
 ## Test the Azure Function locally
 

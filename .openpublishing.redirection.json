@@ -34615,6 +34615,16 @@
       "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/9-conditional-access.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/manage-authorization-microsoft-entra-id/15-conditional-access",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-app-package-management-using-helm/7-exercise-manage-helm-release.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/aks-app-package-management-using-helm/6-manage-helm-release",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-app-package-management-using-helm/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/aks-app-package-management-using-helm/7-summary",
+      "redirect_document_id": false
     }
   ]
 }
