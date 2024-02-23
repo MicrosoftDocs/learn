@@ -8,7 +8,7 @@ metadata:
   ms.author: buzahid
   ms.topic: module
 title: Give your AI agent skills
-summary: In this module, you'll learn about native functions in the Semantic Kernel SDK. You'll understand how native functions can accomplish customized tasks, effectively giving your AI agent a &quot;skill.&quot; You'll also learn how to combine prompts with native functions to build intelligent applications.
+summary: This module explores native functions in the Semantic Kernel SDK. Learn how native functions can accomplish customized tasks, effectively giving your AI agent a &quot;skill.&quot;
 abstract: |
   -   Understand native functions in the Semantic Kernel SDK.
   -   Learn how to create native function plugins.

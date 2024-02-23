@@ -1,10 +1,10 @@
 Plugins can consist of both native code and semantic prompts to the large language model (LLM). By combining native functions and prompts to the LLM, you can quickly create intelligent applications.
 
-You may have already guessed that you can call your own plugin functions inside your custom prompts. The flexibility provided by the Semantic Kernel SDK allows you to create prompts that can call any other plugins. This means that you can create prompts that call other prompts, or prompts that call your own custom functions!
+You can call your own plugin functions inside your custom prompts. The flexibility provided by the Semantic Kernel SDK allows you to create prompts that can call any other plugins. This means that you can create prompts that call other prompts, or prompts that call your own custom functions!
 
 For example, suppose you want the LLM to suggest a recipe based on some ingredients the user has in their pantry. You could create a native function that retrieves a list of ingredients from the user. Then create a prompt that calls your function and requests a recipe from the LLM. Let's see how this works.
 
-Suppose this is a list of the user's ingredients stored in ingredients.txt
+Suppose this list contains the user's ingredients stored in ingredients.txt:
 ```json
 [
     "sugar",
@@ -25,7 +25,7 @@ Suppose this is a list of the user's ingredients stored in ingredients.txt
 ]
 ```
 
-Then your plugin to retrieve the ingredients might be similar to this:
+Then your plugin to retrieve the ingredients might be similar to this code:
 ```c#
 public class IngredientsPlugin
 {

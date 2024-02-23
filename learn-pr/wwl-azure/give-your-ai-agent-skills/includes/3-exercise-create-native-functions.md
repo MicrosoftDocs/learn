@@ -21,9 +21,9 @@ For these exercises, a starter project is available for you to use. Use the foll
 
     You need to be signed in to GitHub to successfully clone the project.
 
-1. Open the project in Visual Studio Code
+1. Open the project in Visual Studio Code.
 
-1. In Explorer, right-click the **M03-give-your-ai-agent-skills/M03-Project** folder and click **Open in Integrated Terminal**
+1. In Explorer, right-click the **M03-give-your-ai-agent-skills/M03-Project** folder and click **Open in Integrated Terminal**.
 
 1. Expand the **M03-give-your-ai-agent-skills/M03-Project** folder.
 
@@ -45,7 +45,7 @@ Now you're ready to begin the exercise. Good luck!
 
 1. In the 'Plugins' folder, create a new file 'MusicLibrary.cs'
 
-    First, you'll create some quick functions to get and add songs to the user's recently played list.
+    First, create some quick functions to get and add songs to the user's "Recently Played" list.
 
 1. Enter the following code:
 
@@ -68,7 +68,7 @@ Now you're ready to begin the exercise. Good luck!
     }
     ```
 
-    In this code, you use the `KernelFunction` decorator to declare your native function. You also use the `Description` decorator to add a description of what the function does. For now, you can assume that the user's recently played list is stored in a text file called 'recentlyplayed.txt'. Next, you'll add code to add a song to the list.
+    In this code, you use the `KernelFunction` decorator to declare your native function. You also use the `Description` decorator to add a description of what the function does. For now, you can assume that the user's list of recent plays is stored in a text file called 'recentlyplayed.txt'. Next, you can add code to add a song to the list.
 
 1. Add the following code to your `MusicLibraryPlugin` class:
 
@@ -131,7 +131,7 @@ Now you're ready to begin the exercise. Good luck!
 
     For simplicity, this file should be in the same directory as your 'Program.cs' file. Next, let's import and invoke your new plugin!
 
-1. In your 'Program.cs' file, update your code to the following:
+1. Update your 'Program.cs' file with the following code:
 
     ```c#
     var kernel = builder.Build();
@@ -160,7 +160,7 @@ Now you're ready to begin the exercise. Good luck!
     Added 'Derniere danse' to recently played
     ```
 
-    If you open up 'recentlyplayed.txt' you should see the new song added to the list.
+    If you open up 'recentlyplayed.txt,' you should see the new song added to the list.
 
 > [!IMPORTANT]
 > Be sure not to delete any of the code you've written so far, you'll need it for the next exercise.

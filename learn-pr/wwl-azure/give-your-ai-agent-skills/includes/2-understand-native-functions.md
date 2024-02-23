@@ -1,6 +1,6 @@
 Native functions are functions written in native code that can be called by the Semantic Kernel SDK in an artificially intelligent (AI) application. They're useful for performing tasks that large language models can't do on their own. You can think of a native function like a skill your application can perform. Combining chat completion services with functional skills allows you to create an AI agent that can perform a wide range of tasks!
 
-Native functions have a certain format and a recommended file structure to be used by the kernel.Native functions should use the `KernelFunction` decorator in their definitions, and should be placed in a "Plugins" directory. Related functions should be placed in the same file or sub-directory.
+Native functions have a certain format and a recommended file structure to be used by the kernel.Native functions should use the `KernelFunction` decorator in their definitions, and should be placed in a "Plugins" directory. Related functions should be placed in the same file or subdirectory.
 
 Suppose the user wants to complete an item on their todo list. The large language model (LLM) can't access their todo list directly, but you can write a native function to mark an item as complete. For example, the todo list might be saved as a .txt file:
 
@@ -63,9 +63,9 @@ public class TodoListPlugin
 }
 ```
 
-Notice the `KernelFunction` decorator on the `CompleteTask` function. This tells the kernel that this function can be called by the kernel. The `Description` decorator tells the kernel what the function does. The function accepts the `task` as a string and returns a string letting the user know the task was marked complete.
+Notice the `KernelFunction` decorator on the `CompleteTask` function. This decorator tells the kernel that this function can be accessed. The `Description` decorator tells the kernel what the function does. The function accepts the `task` as a string and returns a string letting the user know the task was marked complete.
 
-In the `Program.cs` file, you can import and call this native function similar to how you would call a one of the built in plugins. Using `ImportPluginFromType` followed by `InvokeAsync` with the plugin name, function name, and arguments.
+In the `Program.cs` file, you can import and call this native function similar to how you would call a one of the built-in plugins. Using `ImportPluginFromType` followed by `InvokeAsync` with the plugin name, function name, and arguments.
 
 ```c#
 using Microsoft.SemanticKernel;

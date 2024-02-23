@@ -32,7 +32,7 @@ For this exercise, you combine your native functions with a prompt that asks the
     ]
     ```
 
-1. In your `Program.cs` file, update your code to the following:
+1. Update your 'Program.cs' file with the following code:
 
     ```c#
     var kernel = builder.Build();
@@ -51,11 +51,11 @@ For this exercise, you combine your native functions with a prompt that asks the
     Console.WriteLine(result);
     ```
 
-    In this code, you combine your native functions with a semantic prompt. The native functions are able to retrieve user data that the LLM couldn't access on its own, and the LLM is able to generate a song recommendation based on the text input.
+    In this code, you combine your native functions with a semantic prompt. The native functions are able to retrieve user data that the large language model (LLM) couldn't access on its own, and the LLM is able to generate a song recommendation based on the text input.
 
-1. Enter `dotnet run` to test your code.
+1. To test your code, enter `dotnet run` in the terminal.
 
-    You should see a response similar to the following:
+    You should see a response similar to the following output:
 
     ```output 
     Based on the user's recently played music, a suggested song to play next could be "Sabry Aalil" by Sherine since the user seems to enjoy pop and Egyptian pop music.
@@ -63,4 +63,4 @@ For this exercise, you combine your native functions with a prompt that asks the
 
     >[!NOTE] The recommended song may be different than the one shown here.
 
-You've successfully combined your native functions with a semantic prompt. You have the beginnings of a music recommendation agent! Try playing around with the prompts and input files to see what other recommendations you can generate.
+You successfully combined your native functions with a semantic prompt. You have the beginnings of a music recommendation agent! Try playing around with the prompts and input files to see what other recommendations you can generate.
