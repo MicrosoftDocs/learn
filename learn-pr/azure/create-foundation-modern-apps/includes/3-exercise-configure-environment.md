@@ -21,7 +21,7 @@ You'll use Visual Studio Code as your main development tool. If you have another
     - [**GitHub Pull Requests and Issues**](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github): This extension allows you to authenticate to GitHub and manage repositories.
     - [**Azure Resources**](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups): This extension allows you to manage Azure resources.
     - [**SQL Server (mssql)**](https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql): This extension includes tools for querying SQL Server and Azure SQL resources.
-    - [**Live Server**](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer): This extension enables you to run web applications locally with ease.
+    - [**Microsoft Live Preview**](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server): This extension enables you to run web applications locally with ease.
 
 1. The main code sample is hosted on GitHub. Sign into GitHub in Visual Studio Code using your GitHub account so you can clone, commit, push, and pull from Visual Studio Code. If you don't have a GitHub account, [create one here](https://github.com/join).
 
@@ -31,11 +31,9 @@ You'll use Visual Studio Code as your main development tool. If you have another
 
 1. Back in Visual Studio Code, select the **Source Control** pane from the Activity Bar.
 
-1. Select **...** in the Source Control pane.
+1. Select the **Clone Repository** button and enter the URL copied in a previous step. Select the location you would like the repository to be copied locally. Likely, this is a local folder such inside C:\GitHub. Don't choose a OneDrive-synced location for Git repositories. This step downloads the repository to your local machine.
 
-1. Select **Clone** from the dropdown menu and enter the URL copied in a previous step. Select the location you would like the repository to be copied locally. This step will download the repository to your local machine.
-
-1. In Visual Studio Code, select **File** > **Open folder** and go to the location where you cloned the repository. This step will open the folder in your Visual Studio Code session.
+1. Select **Open** when Visual Studio Code asks you if you want to open the cloned repository. This step opens the folder in your Visual Studio Code session.
 
 1. Select the **Explorer** pane from the Activity Bar. Confirm that you see the repository files.
 

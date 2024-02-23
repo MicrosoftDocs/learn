@@ -16,13 +16,13 @@ quiz:
   questions:
   - content: "In the context of GitHub actions, what's the name of the component that represents a standalone command that delivers a desired outcome?"
     choices:
-    - content: "job"
+    - content: "Job"
       isCorrect: false
       explanation: "Incorrect. A job is a group set of steps that execute on a runner."
-    - content: "action"
+    - content: "Action"
       isCorrect: true
       explanation: "Correct. An action is a standalone command that delivers a desired outcome."
-    - content: "event"
+    - content: "Event"
       isCorrect: false
       explanation: "Incorrect. An event is an activity that triggers a workflow."
   - content: "Which GitHub action prepares a Kubernetes manifest file for deployment into a target Kubernetes cluster?"

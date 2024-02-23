@@ -46,3 +46,4 @@ There are several ways `IHttpClientFactory` can be used in an app:
 *   [Generated clients](/dotnet/core/extensions/httpclient-factory#generated-clients)
 
 The best approach depends upon the app's requirements.
+
