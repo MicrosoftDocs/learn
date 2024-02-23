@@ -21,7 +21,7 @@ abstract: |
 prerequisites: | 
   - Familiarity with developing Java applications
   - An Azure subscription
-  - Local installations of Java JDK (11 or later), Maven (3.8), and the Azure CLI (2.48 or later) 
+  - Local installations of Java JDK (17 or later), Maven (3.9 or later), and the Azure CLI (2.57 or later) 
   - Docker and Docker Desktop
 iconUrl: /training/achievements/generic-badge.svg
 levels:
