@@ -17,9 +17,7 @@ PIM enables you to allow a specific set of actions at a particular scope. Key fe
 
 The PIM concepts in this section will help you understand your organization’s privileged identity requirements.
 
-### What can you manage in PIM<br>
-
-Today, you can use PIM with:
+Today, you can use PIM with:<br>
 
  -  **Microsoft Entra roles** – Sometimes referred to as directory roles, Microsoft Entra roles include built-in and custom roles to manage Microsoft Entra ID and other Microsoft 365 online services.<br>
  -  **Azure roles** – The role-based access control (RBAC) roles in Azure that grants access to management groups, subscriptions, resource groups, and resources.<br>
@@ -132,11 +130,6 @@ The following table shows example settings:<br>
 ### Assign and activate Microsoft Entra roles
 
 For Microsoft Entra roles in PIM, only a user who is in the Privileged Role Administrator or Global Administrator role can manage assignments for other administrators. Global Administrators, Security Administrators, Global Readers, and Security Readers can also view assignments to Microsoft Entra roles in PIM.
-
-Follow the instructions in the links below:<br>
-
-1.  Give eligible assignments.<br>
-2.  Allow eligible users to activate their Microsoft Entra role just-in-time.<br>
 
 When role nears its expiration, use PIM to extend or renew the roles. Both user-initiated actions require an approval from a Global administrator or Privileged role administrator.<br>
 
