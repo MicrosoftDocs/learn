@@ -1,4 +1,4 @@
-For this exercise, you create a plugin that allows the user to convert currency amounts from one currency to another. Since the LLM can't access the internet to determine the current exchange rate, you need to provide the exchange rates into your plugin. For this exercise, you use an existing currencies.txt file to provide the exchange rates.
+For this exercise, you create a plugin that allows the user to convert currency amounts from one currency to another. Since the model can't access the internet to determine the current exchange rate, you need to provide the exchange rates into your plugin. For this exercise, you use an existing currencies.txt file to provide the exchange rates.
 
 > [!IMPORTANT]
 > You need to complete the Setup instructions in the previous unit, Prepare, before you begin this exercise.
@@ -7,7 +7,7 @@ For this exercise, you create a plugin that allows the user to convert currency 
 
 In this task, you create a native function that can convert an amount from a base currency currency to a target currency.
 
-1. Create a new file named `CurrencyConverter.cs` in the **Plugins/ConvertCurrency** folder.
+1. Create a new file named `CurrencyConverter.cs` in the **Plugins/ConvertCurrency** folder
 
 1. In the `CurrencyConverter.cs` file, add the following code to create a plugin function:
 
@@ -25,7 +25,7 @@ In this task, you create a native function that can convert an amount from a bas
     }
     ```
 
-    In this code, you use the `KernelFunction` decorator to declare your native function. You also use the `Description` decorator to add a description of what the function does. You can leverage `Currency.Currencies` to get a dictionary of currencies and their exchange rates. Next, add some logic to convert a given amount from one currency to another.
+    In this code, you use the `KernelFunction` decorator to declare your native function. You also use the `Description` decorator to add a description of what the function does. You can use `Currency.Currencies` to get a dictionary of currencies and their exchange rates. Next, add some logic to convert a given amount from one currency to another.
 
 1. Modify your `ConvertAmount` function with the following code:
 
@@ -97,9 +97,9 @@ In this task, you create a native function that can convert an amount from a bas
 
 In this task, you create a prompt that parses the user's input to identify the target currency, base currency, and amount to convert.
 
-1. Create a new folder named `GetTargetCurrencies` in the **Prompts** folder.
+1. Create a new folder named `GetTargetCurrencies` in the **Prompts** folder
 
-1. In the `GetTargetCurrencies` folder, create a new file named `config.json`.
+1. In the `GetTargetCurrencies` folder, create a new file named `config.json`
 
 1. Enter the following text into the `config.json` file:
 
@@ -124,7 +124,7 @@ In this task, you create a prompt that parses the user's input to identify the t
     }
     ```
 
-1. In the `GetTargetCurrencies` folder, create a new file named `skprompt.txt`.
+1. In the `GetTargetCurrencies` folder, create a new file named `skprompt.txt`
 
 1. Enter the following text into the `skprompt.txt` file:
 
@@ -149,7 +149,7 @@ In this task, you create a prompt that parses the user's input to identify the t
 
 ## Check your work
 
-In this task, you'll run your application and verify your code is working correctly. 
+In this task, you run your application and verify your code is working correctly. 
 
 1. Test your new prompt by updating your `Program.cs` file with the following code:
 
@@ -166,7 +166,7 @@ In this task, you'll run your application and verify your code is working correc
     Console.WriteLine(result);
     ```
 
-1. Enter `dotnet run` in the terminal to test your prompt. You should see the following output:
+1. Enter `dotnet run` in the terminal. You should see the following output:
 
     ```output
     AUD|KRW|140000

@@ -8,7 +8,7 @@ metadata:
   ms.author: buzahid
   ms.topic: module
 title: Guided project - Create an AI travel agent
-summary: This module guidea you through the steps required to develop a proof-of-concept AI Travel assistant with the Semantic Kernel SDK. By the end of this module, you will have completed a simple chatbot application.
+summary: This module guides you through the steps required to develop a proof-of-concept AI Travel assistant with the Semantic Kernel SDK. By the end of this module, you will have completed a simple chatbot application.
 abstract: |
   -   Create plugins for the Semantic Kernel
   -   Create prompts to elicit the best responses from the LLM

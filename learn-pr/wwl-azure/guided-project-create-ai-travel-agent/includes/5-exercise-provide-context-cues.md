@@ -1,4 +1,4 @@
-In this exercise, you use the conversation history to provide context to the LLM. You also adjust the code so that it allows the user to continue the conversation, just like a real chatbot. Let's get started!
+In this exercise, you use the conversation history to provide context to the large language model (LLM). You also adjust the code so that it allows the user to continue the conversation, just like a real chatbot. Let's get started!
 
 1. Modify the code to use a `do`-`while` loop to accept the user's input:
 
@@ -38,7 +38,7 @@ In this exercise, you use the conversation history to provide context to the LLM
         break;
     ```
 
-    In this code, you use the built in `SummarizeConversation` function to summarize the chat with the user. Next, let's use the summary to suggest activities at the destination.
+    In this code, you use the built-in `SummarizeConversation` function to summarize the chat with the user. Next, let's use the summary to suggest activities at the destination.
 
 1. Extend the `SuggestActivities` case with the following code:
 
@@ -60,7 +60,7 @@ In this exercise, you use the conversation history to provide context to the LLM
 
     In this code, you add `input` and `chatSummary` as kernel arguments. Then the kernel invokes the prompt and routes it to the `SuggestActivities` plugin. You also append the user's input and the assistant's response to the chat history and display the results. Next, you need to add the `chatSummary` variable to the `SuggestActivities` plugin.
 
-1. Navigate to **Prompts/SuggestActivities/config.json** and open the file in Visual Studio Code.
+1. Navigate to **Prompts/SuggestActivities/config.json** and open the file in Visual Studio Code
 
 1. Under `input_variables`, add a variable for the chat history:
 
@@ -79,7 +79,7 @@ In this exercise, you use the conversation history to provide context to the LLM
   ]
   ```
 
-1. Navigate to **Prompts/SuggestActivities/skprompt.txt** and open the file.
+1. Navigate to **Prompts/SuggestActivities/skprompt.txt** and open the file
 
 1. Add a prompt to use the chat history:
 

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.guided-project-create-ai-travel-agent.knowledge-check
-title: knowledge check
+title: Knowledge check
 metadata:
-  title: knowledge check
-  description: "knowledge check"
+  title: Knowledge check
+  description: "Knowledge check"
   ms.date: 02/23/2024
   author: wwlpublish
   ms.author: buzahid
@@ -16,13 +16,13 @@ quiz:
     choices:
     - content: "Developers should avoid using Semantic Kernel SDK as it adds unnecessary complexity."
       isCorrect: false
-      explanation: "incorrect choice"
+      explanation: "Incorrect. The Semantic Kernel SDK is designed to simplify the integration of AI."
     - content: "Semantic Kernel SDK uses abstraction to reduce the learning curve of integration AI."
       isCorrect: true
       explanation: "Correct. Semantic Kernel SDK eases AI integration by providing abstraction and orchestration."
     - content: "Semantic Kernel SDK is only suitable for advanced AI developers."
       isCorrect: false
-      explanation: "incorrect choice"
+      explanation: "Incorrect. The Semantic Kernel SDK is suitable for developers of all levels."
   - content: "Which of the following is true about native functions?"
     choices:
     - content: "Native functions can only be used in prompts."

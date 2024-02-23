@@ -1,6 +1,6 @@
 In this exercise, you detect the user's intent and route the conversation to the desired plugins. You can use a provided plugin to retrieve the user's intent. Let's get started!
 
-1. In your `Program.cs` file, update your code with the following:
+1. Update your `Program.cs` file with the following code:
 
     ```c#
     kernel.ImportPluginFromType<CurrencyConverter>();
@@ -16,7 +16,7 @@ In this exercise, you detect the user's intent and route the conversation to the
 
     ```
 
-    In this code, you use the `GetIntent` prompt to detect the user's intent. You then store the intent in a variable called `intent`. Next, you'll route the intent to your `CurrencyConverter` plugin.
+    In this code, you use the `GetIntent` prompt to detect the user's intent. You then store the intent in a variable called `intent`. Next, you route the intent to your `CurrencyConverter` plugin.
 
 1. Add the following code to your `Program.cs` file:
 
@@ -48,7 +48,7 @@ In this exercise, you detect the user's intent and route the conversation to the
     
     If the user's intent is to convert currency, you use the `GetTargetCurrencies` prompt to retrieve the currency information. Then you use the `CurrencyConverter` plugin to convert the amount.
 
-    Next, you'll add some cases to handle the other intents. For now, let's use the auto-invoke capability of the Semantic Kernel SDK to route the intent to the available plugins.
+    Next, you add some cases to handle the other intents. For now, let's use the automatic function calling capability of the Semantic Kernel SDK to route the intent to the available plugins.
 
 1. Create the automatic function calling setting by adding the following code to your `Program.cs` file:
 
@@ -69,7 +69,7 @@ In this exercise, you detect the user's intent and route the conversation to the
     );
     ```
 
-    Next, you'll add cases to the switch statement for the other intents.
+    Next, you add cases to the switch statement for the other intents.
 
 1. Update your `Program.cs` file with the following code:
 
@@ -93,9 +93,9 @@ In this exercise, you detect the user's intent and route the conversation to the
 
     In this code, you use the `AutoInvokeKernelFunctions` setting to automatically call functions and prompts that are referenced in your kernel. If the user's intent is to convert currency, the `CurrencyConverter` plugin performs its task. 
     
-    If the user's intent is to get destination or activity suggestions, translate a phrase, or get helpful phrases in a language, the `AutoInvokeKernelFunctions` setting automatically calls the existing plugins that have been included in the project code.
+    If the user's intent is to get destination or activity suggestions, translate a phrase, or get helpful phrases in a language, the `AutoInvokeKernelFunctions` setting automatically calls the existing plugins that were included in the project code.
 
-    You can also add code to run the user's input as a prompt to the LLM if it doesn't fall under any of these intent cases.
+    You can also add code to run the user's input as a prompt to the large language model (LLM) if it doesn't fall under any of these intent cases.
 
 1. Update the default case with the following code:
 
@@ -113,27 +113,27 @@ In this exercise, you detect the user's intent and route the conversation to the
 
 In this task, you run your application and verify your code is working correctly. 
 
-1. Enter `dotnet run` in the terminal. When prompted, enter some text similar to the following:
+1. Enter `dotnet run` in the terminal. When prompted, enter some text similar to the following prompt:
 
     ```output
     What would you like to do?
     How many TTD is 50 Qatari Riyals?    
     ```
 
-1. You should see output similar to the following:
+1. You should see output similar to the following response:
 
     ```output
     $50 QAR is approximately $93.10 in Trinidadian Dollars (TTD)
     ```
 
-1. Enter `dotnet run` in the terminal. When prompted, enter some text similar to the following:
+1. Enter `dotnet run` in the terminal. When prompted, enter some text similar to the following prompt:
 
     ```output
     What would you like to do?
     I want to go somewhere that has lots of warm sunny beaches and delicious, spicy food!
     ```
 
-1. You should see output similar to the following:
+1. You should see output similar to the following response:
 
     ```output
     Based on your preferences for warm sunny beaches and delicious, spicy food, I have a few destination recommendations for you:
@@ -147,13 +147,13 @@ In this task, you run your application and verify your code is working correctly
     These destinations offer a perfect blend of warm sunny beaches and delicious, spicy food, ensuring a memorable trip for you. Let me know if you need any further assistance or if you have any specific preferences for your trip!
     ```
 
-1. Enter `dotnet run` in the terminal. When prompted, enter some text similar to the following:
+1. Enter `dotnet run` in the terminal. When prompted, enter some text similar to the following prompt:
 
     ```output
     What would you like to do?
     Can you give me a recipe for chicken satay?
 
-1. You should see a response similar to the following:
+1. You should see a response similar to the following response:
 
     ```output
     Sure, I can help with that.
