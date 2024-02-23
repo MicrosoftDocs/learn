@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.dotnet-maui.separate-ui-and-logic-with-data-binding
+metadata:
+  title: Create a UI that uses data binding in .NET MAUI.
+  description: Create a UI with data binding. Your UI automatically updates based on the latest data, while the data updates in response to changes in the UI.
+  ms.date: 02/14/2024
+  author: adegeo
+  ms.author: adegeo
+  ms.topic: module-standard-task-based
+  ms.service: dotnet-mobile
+  ms.subservice: dotnet-maui
+title: Create a UI that uses data binding in .NET MAUI.
+summary: |
+  Learn how to add data binding to your UI. With data binding, your UI automatically updates when the data changes. When data types don't match, you can use a converter to transform data for the UI.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Compare an event-driven UI to a data-bound UI.
+  - Create data objects usable with data binding.
+  - Design a UI that's driven by data binding.
+prerequisites: |
+  - Visual Studio 2022 with the **.NET Multi-platform App UI development** workload installed. 
+  - Familiarity with intermediate programming concepts like interfaces, classes, and attributes.
+  - Ability to write XAML code.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- dotnet-maui
+- dotnet
+- vs
+units:
+- learn.dotnet-maui.separate-ui-and-logic-with-data-binding.1-introduction
+- learn.dotnet-maui.separate-ui-and-logic-with-data-binding.2-compare-event-and-data-bound
+- learn.dotnet-maui.separate-ui-and-logic-with-data-binding.3-use-data-bindings-xaml
+- learn.dotnet-maui.separate-ui-and-logic-with-data-binding.4-exercise-replace-code-with-data-bindings
+- learn.dotnet-maui.separate-ui-and-logic-with-data-binding.5-databinding-mismatched-types
+- learn.dotnet-maui.separate-ui-and-logic-with-data-binding.6-exercise-create-converter
+- learn.dotnet-maui.separate-ui-and-logic-with-data-binding.7-summary
+badge:
+  uid: learn.dotnet-maui.separate-ui-and-logic-with-data-binding.badge
