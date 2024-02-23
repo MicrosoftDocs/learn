@@ -263,22 +263,16 @@ Your app can now read the feature flag, but the products page needs to be update
 
 ### Build the app
 
-1. Ensure you've saved all your changes, and are in the eShopLite directory. In the terminal, run the following command:
+1. Ensure you've saved all your changes, and are in the **dotnet-feature-flags** directory. In the terminal, run the following command:
 
-    ```bash
-    cd ..
+    ```dotnetcli
+    dotnet publish /p:PublishProfile=DefaultContainer 
     ```
 
-1. Run the docker compose build command:
+1. Run the app using docker:
 
     ```bash
-    docker-compose build
-    ```  
-
-1. Run the docker compose up command:
-
-    ```bash
-    docker-compose up
+    docker compose up
     ```  
 
 ### Test the feature flag

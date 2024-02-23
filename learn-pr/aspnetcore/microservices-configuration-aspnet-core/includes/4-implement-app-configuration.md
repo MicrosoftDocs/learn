@@ -75,11 +75,16 @@ The product page needs to be updated to display the discounted prices. Complete 
 
 ### Build the app
 
-1. Ensure you've saved all your changes, and are in the root directory. In the terminal, run the following commands:
+1. Ensure you've saved all your changes, and are in the **dotnet-feature-flags** directory. In the terminal, run the following command:
+
+    ```dotnetcli
+    dotnet publish /p:PublishProfile=DefaultContainer 
+    ```
+
+1. Run the app using docker:
 
     ```bash
-    docker-compose build
-    docker-compose up
+    docker compose up
     ```  
 
 ## Test the price discount feature
