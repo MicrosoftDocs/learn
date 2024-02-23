@@ -70,7 +70,7 @@ Also, the chosen approver and a requestor of an access package have rights, alth
 The following table lists the tasks that the entitlement management roles can do within entitlement management
 
 | **Task**                                                                | **Admin** | **Catalog creator** | **Catalog owner** | **Access package manager** | **Access package assignment manager** |
-|-------------------------------------------------------------------------|-----------|---------------------|-------------------|----------------------------|---------------------------------------|
+| ----------------------------------------------------------------------- | --------- | ------------------- | ----------------- | -------------------------- | ------------------------------------- |
 | Delegate to a catalog creator                                           | ✔️        |                     |                   |                            |                                       |
 | Add a connected organization                                            | ✔️        |                     |                   |                            |                                       |
 | Create a new catalog                                                    | ✔️        | ✔️                  |                   |                            |                                       |
@@ -108,17 +108,17 @@ For a user who isn't a global administrator, to add groups, applications, or Sha
 
 The following table lists some of the role combinations that include the actions that allow users in those role combinations to add resources to a catalog. To remove resources from a catalog, you must also have a role or ownership with those same actions.
 
-| **Microsoft Entra directory role** | **Entitlement management role** | **Can add security group** | **Can add Microsoft 365 Group** | **Can add app**           | **Can add SharePoint Online site** |
-|------------------------------------|---------------------------------|----------------------------|---------------------------------|---------------------------|------------------------------------|
-| Global Administrator               | n/a                             | ✔️                         | ✔️                              | ✔️                        | ✔️                                 |
-| Identity Governance Administrator  | n/a                             |                            |                                 | ✔️                        |                                    |
-| Groups Administrator               | Catalog owner                   | ✔️                         | ✔️                              |                           |                                    |
-| Intune Administrator               | Catalog owner                   | ✔️                         | ✔️                              |                           |                                    |
-| Exchange Administrator             | Catalog owner                   |                            | ✔️                              |                           |                                    |
-| SharePoint Administrator           | Catalog owner                   |                            | ✔️                              |                           | ✔️                                 |
-| Application Administrator          | Catalog owner                   |                            |                                 | ✔️                        |                                    |
-| Cloud Application Administrator    | Catalog owner                   |                            |                                 | ✔️                        |                                    |
-| User                               | Catalog owner                   | Only if group owner        | Only if group owner             | Only if app owner<br><br> |
+| **Microsoft Entra directory role** | **Entitlement management role** | **Can add security group** | **Can add Microsoft 365 Group** | **Can add app**   | **Can add SharePoint Online site** |
+| ---------------------------------- | ------------------------------- | -------------------------- | ------------------------------- | ----------------- | ---------------------------------- |
+| Global Administrator               | n/a                             | ✔️                         | ✔️                              | ✔️                | ✔️                                 |
+| Identity Governance Administrator  | n/a                             |                            |                                 | ✔️                |                                    |
+| Groups Administrator               | Catalog owner                   | ✔️                         | ✔️                              |                   |                                    |
+| Intune Administrator               | Catalog owner                   | ✔️                         | ✔️                              |                   |                                    |
+| Exchange Administrator             | Catalog owner                   |                            | ✔️                              |                   |                                    |
+| SharePoint Administrator           | Catalog owner                   |                            | ✔️                              |                   | ✔️                                 |
+| Application Administrator          | Catalog owner                   |                            |                                 | ✔️                |                                    |
+| Cloud Application Administrator    | Catalog owner                   |                            |                                 | ✔️                |                                    |
+| User                               | Catalog owner                   | Only if group owner        | Only if group owner             | Only if app owner |
 
 ## Delegated management of guest user lifecycle
 

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-authorization-microsoft-entra-id.microsoft-entra-privileged-identity-management
-title: 'Configure Microsoft Entra Privileged Identity Management '
+title: 'Microsoft Entra Privileged Identity Management '
 metadata:
-  title: Configure Microsoft Entra Privileged Identity Management
-  description: "Configure Microsoft Entra Privileged Identity Management"
-  ms.date: 02/19/2024
+  title: Microsoft Entra Privileged Identity Management
+  description: "Microsoft Entra Privileged Identity Management"
+  ms.date: 02/23/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
