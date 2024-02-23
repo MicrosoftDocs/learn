@@ -4,7 +4,7 @@ Launch the exercise and follow the instructions. When you're done, be sure to re
 
 <br/>
 
-<a href="https://microsoftlearning.github.io/APL-2002-develop-aspnet-core-consumes-api/Instructions/Labs/02-implement-http-operations.html" target="_blank">
+<a href="https://go.microsoft.com/fwlink/?linkid=2261384" target="_blank">
     <img src="../media/launch-exercise.png" alt="Button to launch exercise.">
 </a>
 
