@@ -4,16 +4,16 @@ In this unit, you create the Azure Container Apps environment by using the Azure
 
 Container Apps is used to deploy containerized applications. So you first need to containerize the Quarkus application into a Docker image. This process is easy because the Quarkus Maven plugin has already generated some Dockerfiles under `src/main/docker`.
 
-Use this command to rename one of these Dockerfiles, *Dockerfile.legacy-jar*, to *Dockerfile* and move it to the root folder:
+Use this command to rename one of these Dockerfiles, *Dockerfile.jvm*, to *Dockerfile* and move it to the root folder:
 
 ```bash
-mv src/main/docker/Dockerfile.legacy-jar ./Dockerfile
+mv src/main/docker/Dockerfile.jvm ./Dockerfile
 ```
 
 Replace the content after the long comment in the Dockerfile with the following:
 
 ```dockerfile
-FROM registry.access.redhat.com/ubi8/openjdk-11:1.14
+FROM registry.access.redhat.com/ubi8/openjdk-17:1.18
 
 ENV LANGUAGE='en_US:en'
 
@@ -26,15 +26,17 @@ COPY --chown=185 target/quarkus-app/quarkus/ /deployments/quarkus/
 
 EXPOSE 8080
 USER 185
-ENV AB_JOLOKIA_OFF=""
-ENV JAVA_OPTS="-Dquarkus.http.host=0.0.0.0 -Djava.util.logging.manager=org.jboss.logmanager.LogManager"
+ENV JAVA_OPTS_APPEND="-Dquarkus.http.host=0.0.0.0 -Djava.util.logging.manager=org.jboss.logmanager.LogManager"
 ENV JAVA_APP_JAR="/deployments/quarkus-run.jar"
+
+ENTRYPOINT [ "/opt/jboss/container/java/run/run-java.sh" ]
 ```
 
 This Dockerfile expects the Quarkus application to be packaged as a *quarkus-run.jar* file. This name is the default name for the Quarkus application when it's packaged as a JAR file. You need to make sure that the Quarkus application is packaged as a JAR file. To do so, run the following Maven command:
 
 ```bash
-mvnw.cmd package
+./mvnw package    # On Mac or Linux
+mvnw.cmd package  # On Windows
 ```
 
 This command packages the Quarkus application into a JAR file and generates a *quarkus-run.jar* file in the *target/quarkus-app* folder.
