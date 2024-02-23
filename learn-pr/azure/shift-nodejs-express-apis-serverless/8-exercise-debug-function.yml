@@ -3,7 +3,7 @@ uid: learn.azure.shift-express-api-azure-functions.10-exercise-debug-function
 metadata:
   title: Exercise - Run and debug Azure Functions and Angular
   description: Run and debug the Angular and Azure Functions applications together in Visual Studio Code.
-  ms.date: 04/10/2020
+  ms.date: 02/20/2024
   author: johnpapa
   ms.author: jopapa
   ms.topic: unit
