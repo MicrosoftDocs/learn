@@ -5,7 +5,7 @@ durationInMinutes: 15
 metadata:
   title: Exercise - Add behavior to your XAML page
   description: "In this exercise, you continue modifying your application and connect the behavior to the XAML-defined UI. You assign names to some elements and wire events up to others."
-  ms.date: 05/01/2019
+  ms.date: 02/20/2024
   author: codemillmatt
   ms.author: masoucou
   ms.topic: unit
