@@ -12,12 +12,12 @@ title: Develop with DevOps
 summary: Streamline updates to your software development projects by applying version control with Git and GitHub. Your software lifecycle improves through the implementation of continuous integration, shift-left testing, and shift-left security.
 abstract: |
   Upon completion of this module, you'll be able to:
-  *   Define source control and version control
-  *   Describe how to manage source control with Git
-  *   Describe how to manage source control with GitHub Flow
-  *   Define the concept of continuous integration
-  *   Explore DevOps shift-left testing scenarios
-  *   Explore DevOps shift-left security scenarios
+  *   Define source control and version control.
+  *   Describe how to manage source control with Git.
+  *   Describe how to manage source control with GitHub Flow.
+  *   Define the concept of continuous integration.
+  *   Explore DevOps shift-left testing scenarios.
+  *   Explore DevOps shift-left security scenarios.
 prerequisites: |
   *   Basic familiarity with IT terms and concepts
 iconUrl: /training/achievements/generic-trophy.svg
