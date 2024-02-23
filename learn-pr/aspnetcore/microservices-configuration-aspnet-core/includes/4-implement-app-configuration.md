@@ -42,8 +42,6 @@ The product page needs to be updated to use the new configuration setting. Compl
         saleOn = await FeatureManager.IsEnabledAsync("SeasonalDiscount");
 
         // Simulate asynchronous loading to demonstrate streaming rendering
-        await Task.Delay(500);
-        imagePrefix = Configuration["ImagePrefix"];
         products = await ProductService.GetProducts();
 
         if (saleOn) {

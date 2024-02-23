@@ -259,7 +259,6 @@ You now extend the tracing capabilities of the app by adding Zipkin. As you did 
         dockerfile: ./eShopLite/Store/Dockerfile
       environment: 
         - ProductEndpoint=http://backend:8080
-        - ImagePrefix=http://[YOUR URL]/images
         - ZIPKIN_URL=http://zipkin:9411
       ports:
         - "32000:8080"
@@ -445,7 +444,6 @@ The last step is to add Application Insights to your app.
           dockerfile: ./eShopLite/Store/Dockerfile
         environment: 
           - ProductEndpoint=http://backend:8080
-          - ImagePrefix=http://localhost:32001/images
           - ZIPKIN_URL=http://zipkin:9411
           - APPLICATIONINSIGHTS_CONNECTION_STRING=InstrumentationKey=b851fa75-85a2-42f7-bb6f-413725d9d8ba;IngestionEndpoint=https://eastus-2.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus.livediagnostics.monitor.azure.com/
         ports:

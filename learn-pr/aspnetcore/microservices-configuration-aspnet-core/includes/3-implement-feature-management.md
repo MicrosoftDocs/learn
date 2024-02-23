@@ -241,8 +241,6 @@ Your app can now read the feature flag, but the products page needs to be update
         saleOn = await FeatureManager.IsEnabledAsync("SeasonalDiscount");
 
         // Simulate asynchronous loading to demonstrate streaming rendering
-        await Task.Delay(500);
-        imagePrefix = Configuration["ImagePrefix"];
         products = await ProductService.GetProducts();
     }
     ```
