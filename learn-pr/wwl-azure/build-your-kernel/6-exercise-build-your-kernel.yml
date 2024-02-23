@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-your-kernel.exercise-build-your-kernel
-title: Semantic Kernel SDK setup
+title: Exercise - Build your kernel
 metadata:
-  title: Semantic Kernel SDK setup
-  description: "Semantic Kernel SDK setup"
+  title: Exercise - Build your kernel
+  description: "Exercise - Build your kernel"
   ms.date: 02/23/2024
   author: wwlpublish
   ms.author: buzahid
