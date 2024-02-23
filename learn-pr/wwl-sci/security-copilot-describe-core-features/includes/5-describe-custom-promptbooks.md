@@ -30,7 +30,7 @@ Selecting the promptbook opens it. From here, you enter the required input param
 
 To edit your existing promptbook, select the home menu (hamburger icon) and select Promptbook library.
 
-:::image type="content" source="../media/promptbook-library.png" lightbox="../media/promptbook-library.png" alt-text="Screen capture of the home menu options showing the promptbook library option.":::
+:::image type="content" source="../media/promptbook-library.png" lightbox="../media/promptbook-library.png" alt-text="Screen capture of the home menu options including the promptbook library option.":::
 
 Select the ellipses for the promptbook you want to edit then select Edit from the options. You can only edit existing promptbooks if you're the owner of the promptbook.
 
