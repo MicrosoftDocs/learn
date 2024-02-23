@@ -25,7 +25,7 @@ In this lab, you will:
 
  -  This lab requires **Microsoft Edge** or an [Azure DevOps-supported browser](/azure/devops/server/compatibility).
  -  **GitHub account:** If you don't already have a GitHub account that you can use for this lab, create one by following the instructions available in the article [Creating an account on GitHub](https://docs.github.com/get-started/quickstart/creating-an-account-on-github).
- -  An **Azure subscription** to which you have at least the **Contributor-level access**. If you do not have an Azure subscription, you can sign up for a [free trial](https://azure.microsoft.com/free).
+ -  An **Azure subscription** to which you have at least the **Contributor-level access**. If you don't have an Azure subscription, you can sign up for a [free trial](https://azure.microsoft.com/free).
 
 ## Exercises
 
