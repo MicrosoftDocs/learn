@@ -33,8 +33,6 @@ roles:
   - database-administrator
 products:
   - sql-server
-subjects:
-  - data-ai
 units:
 - learn.sql-server-2022-security-scalability-availability.introduction
 - learn.sql-server-2022-security-scalability-availability.ledger
