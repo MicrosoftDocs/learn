@@ -6,8 +6,8 @@ metadata:
   title: Implement Datacenter Firewall on Azure Stack HCI
   description: Step through the process of implementing Datacenter Firewall on Azure Stack HCI.
   ms.date: 5/6/2021
-  author: rmcmurray
-  ms.author: robmcm
+  author: JasonGerend
+  ms.author: jgerend
   ms.topic: unit
 durationInMinutes: 8
 content: |
