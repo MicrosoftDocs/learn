@@ -4,7 +4,7 @@ As a software engineer at Tailwind Trader's, you're responsible for an applicati
 
 To use your current Express application and server, you must:
 
-- To start and run the server, write code that includes the necessary middleware and logic.
+- Write your code, including the necessary middleware and logic required to start and run the server.
 - Configure and maintain the physical server hardware and software.
 - Manage scaling your application up and down as demand fluctuates.
 - Manage the costs of deploying and running the server.
