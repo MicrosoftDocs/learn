@@ -1,38 +1,38 @@
-This exercise takes you through the process of implementing continuous integration and CI/CD of a sample containerized Node.js web app into an AKS cluster. You'll also test this functionality by directly modifying one of the app files to trigger the automatic build and deployment processes.
+This exercise takes you through the process of implementing continuous integration and CI/CD of a sample containerized Node.js web app into an Azure Kubernetes Service (AKS) cluster. You also test this functionality by directly modifying one of the app files to trigger the automatic build and deployment processes.
 
 > [!NOTE]
 > This exercise illustrates how to use Azure DevOps Starter (which simplifies the process for implementing CI/CD pipelines considerably). For detailed information regarding authoring pipelines in Azure DevOps and GitHub, refer to the references provided at the end of this module.
 
-In this exercise, you'll:
+In this exercise, you:
 
-* Prepare for deploying Azure resources.
-* Implement a CI/CD pipeline by using Azure DevOps Starter.
-* Validate the CI/CD functionality.
-* Delete deployed resources.
+- Prepare for deploying Azure resources.
+- Implement a CI/CD pipeline by using Azure DevOps Starter.
+- Validate the CI/CD functionality.
+- Delete deployed resources.
 
 ## Prerequisites
 
 To perform this exercise, you need:
 
-* An Azure subscription.
-* A Microsoft account, or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
-* An Azure DevOps organization associated with the Microsoft account or the Microsoft Entra account referenced in the previous prerequisite. To create an Azure DevOps organization, refer to the link provided at the end of the module.
-* A GitHub account associated with the Microsoft account or the Microsoft Entra account referenced in the previous prerequisite. To create a GitHub account, follow the instructions available at [Signing up for a new GitHub account](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/signing-up-for-a-new-github-account).
+- An Azure subscription.
+- A Microsoft account or a Microsoft Entra account. The Global Administrator role in the Microsoft Entra tenant should be associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
+- An Azure DevOps organization associated with the Microsoft account or the Microsoft Entra account referenced in the previous prerequisite. To create an Azure DevOps organization, refer to the link provided at the end of the module.
+- A GitHub account associated with the Microsoft account or the Microsoft Entra account referenced in the previous prerequisite. To create a GitHub account, follow the instructions available at [Signing up for a new GitHub account](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/signing-up-for-a-new-github-account).
 
 ## Prepare for deploying Azure resources
 
-Before you can proceed with deploying Azure resources by using GitHub actions, you need to register the **Microsoft.AlertsManagement** resource provider. This is because the workflow references it during AKS cluster provisioning.
+Before you can proceed with deploying Azure resources by using GitHub actions, you need to register the **Microsoft.AlertsManagement** resource provider because the workflow references it during AKS cluster provisioning.
 
 1. If needed, start a web browser.
-1. Go to the [Azure portal](https://portal.azure.com/) and sign in to access the Azure subscription you'll be using in this module.
+1. Go to the [Azure portal](https://portal.azure.com/) and sign in to access the Azure subscription you're using in this module.
 1. In the Azure portal, open a **Cloud Shell** Bash session by selecting its icon in the toolbar next to the search text box.
-1. Within the Bash session in the Azure Cloud Shell pane, run the following command to register the **Microsoft.AlertsManagement** resource provider:
+1. Within the Bash session in the Azure Cloud Shell pane, run the following command to register the **Microsoft.AlertsManagement** resource provider.
 
     ```bash
     az provider register --namespace Microsoft.AlertsManagement
     ```
 
-1. Run the following command to verify the registration state of the **Microsoft.AlertsManagement** resource provider:
+1. Run the following command to verify the registration state of the **Microsoft.AlertsManagement** resource provider.
 
     ```bash
     az provider show --namespace Microsoft.AlertsManagement --query registrationState
@@ -46,7 +46,7 @@ Before you can proceed with deploying Azure resources by using GitHub actions, y
 Now you're ready to proceed with implementing a CI/CD pipeline by using Azure DevOps Starter.
 
 1. In the web browser displaying the Azure portal, use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **DevOps Starter**. From the list of results, in the **Services** section, select **DevOps Starter**.
-1. On the **DevOps Starter** blade, select **+ Create**.
+1. On the **DevOps Starter** menu, select **+ Create**.
 1. On the **Start fresh with a new application** tab, verify the presence of the **Setting up DevOps starter with GitHub** label. If the label states **Setting up DevOps starter with Azure DevOps**, select the **here** link, select **GitHub**, and then select **Done**.
 1. On the **Start fresh with a new application** page, select the **Node.js** tile, and then select **Next: Framework >**.
 
@@ -54,7 +54,7 @@ Now you're ready to proceed with implementing a CI/CD pipeline by using Azure De
 
 1. On the **Choose an application framework** page, select the **Express.js** tile, and then select **Next: Service >**.
 
-    :::image type="content" source="../media/5-azure-devops-starter-express-js-framework.png" alt-text="Screenshot of the  DevOps Starter blade, Choose an application framework page, with the Choose.js tile selected." border="false":::
+    :::image type="content" source="../media/5-azure-devops-starter-express-js-framework.png" alt-text="Screenshot of the DevOps Starter blade, Choose an application framework page, with the Choose.js tile selected." border="false":::
 
 1. On the **Select an Azure service to deploy the application** page, select the **Kubernetes Service** tile, and then select **Next: Create >**.
 
@@ -66,16 +66,16 @@ Now you're ready to proceed with implementing a CI/CD pipeline by using Azure De
 
 1. In the **Authorize Azure GitHub Actions** pop-up window, select **Authorize AzureGitHub Actions**.
 
-    :::image type="content" source="../media/5-azure-github-actions-authorize.png" alt-text="Screenshot of the Authorize Azure GitHub Actions pop-up window." border="false":::
+    :::image type="content" source="../media/5-azure-github-actions-authorize.png" alt-text="Screenshot of the 'Authorize Azure GitHub Actions' pop-up window." border="false":::
 
 1. If prompted to confirm access, in the **Password** textbox, enter the password of your GitHub account, and then select **Confirm password**.
-1. Back on the **Select Repository and Subscription** page, specify the following settings:
+1. On the **Select Repository and Subscription** page, specify the following settings:
 
     | Setting | Value |
     | --- | --- |
-    | Organization | The name of the GitHub account you'll be using in this exercise. |
+    | Organization | The name of the GitHub account you're using in this exercise. |
     | Repository | **cna-devops-05** |
-    | Subscription | The name of the Azure subscription you'll be using in this exercise. |
+    | Subscription | The name of the Azure subscription you're using in this exercise. |
     | Create new or use existing cluster | **Create new** |
     | Cluster name | **cna-devops-05-aks** |
     | Location | The Azure region closest to the location of your lab environment where you can create an Azure Kubernetes Service cluster. |
@@ -84,7 +84,7 @@ Now you're ready to proceed with implementing a CI/CD pipeline by using Azure De
     :::image type="content" source="../media/5-azure-devops-starter-select-repo-sub-settings.png" alt-text="Screenshot of the Select Repository and Subscription page with the previously mentioned values selected." border="false":::
 
 1. On the **Select Repository and Subscription** page, select **Additional settings**.
-1. On the **Additional settings** blade, review the **Kubernetes Service** and **Container Registry** sections. If you encounter an error message indicating that the Container Registry name is already in use, change the name to another value until the message no longer appears, save the change, and close the blade. Otherwise, select **OK** without making any changes.
+1. On the **Additional settings** blade, review the **Kubernetes Service** and **Container Registry** sections. If you encounter an error message indicating that the Container Registry name is already in use, change the name to another value until the message no longer appears. Save the change, and close the blade. Otherwise, select **OK** without making any changes.
 
     :::image type="content" source="../media/5-azure-devops-starter-select-repo-sub-additional-settings.png" alt-text="Screenshot of the Additional settings blade." border="false":::
 
@@ -124,7 +124,7 @@ Now you're ready to proceed with implementing a CI/CD pipeline by using Azure De
 1. At the beginning of the page, select **Start commit**.
 1. In the **Commit changes** pop-up window, select **Commit changes**.
 
-    :::image type="content" source="../media/5-github-edit-start-commit.png" alt-text="Screenshot of the Commit menu option of the workflow file in GitHub." border="false":::
+    :::image type="content" source="../media/5-github-edit-start-commit.png" alt-text="Screenshot of the 'Commit' menu option of the workflow file in GitHub." border="false":::
 
 1. Switch back to the web browser tab displaying the Azure portal and on the deployment blade, select **Go to resource**.
 1. On the **cna-devops-05** blade, in the **GitHub Workflow** section, select **Authorize**.
@@ -155,7 +155,7 @@ Now you're ready to proceed with implementing a CI/CD pipeline by using Azure De
 
 ## Validate the CI/CD functionality
 
-Now that the GitHub workflow and the corresponding Azure resources are fully deployed, you'll validate the CI/CD functionality.
+Now that the GitHub workflow and the corresponding Azure resources are fully deployed, validate the CI/CD functionality.
 
 1. In the web browser displaying the Azure portal, navigate to the **cna-devops-05-rg** resource group.
 1. On the **cna-devops-05-rg** blade, select the entry representing the **cna-devops-05** Kubernetes service.
@@ -166,7 +166,7 @@ Now that the GitHub workflow and the corresponding Azure resources are fully dep
     > [!NOTE]
     > The sampleapp listens to incoming HTTP requests on TCP port 8080.
 
-1. Open a new browser window and navigate to the URL, which consists of the `http://` prefix followed by the value of the IP address you identified in the previous step and ending with the **:8080** suffix.
+1. Open a new browser window and navigate to the URL, which consists of the `http://` prefix followed by the value of the IP address you identified in the previous step and ending with the `:8080` suffix.
 1. Verify that the web browser displays the **Success!** page.
 
     :::image type="content" source="../media/5-sampleapp-original.png" alt-text="Screenshot of the Success page for the sample web app in its original form." border="false":::
@@ -188,12 +188,12 @@ Now that the GitHub workflow and the corresponding Azure resources are fully dep
 
 ## Delete deployed resources
 
-Your testing of CI/CD by using GitHub workflows is complete. To avoid unnecessary costs associated with using Azure resources, you'll now delete the resources you provisioned in this exercise.
+Your testing of CI/CD by using GitHub workflows is complete. To avoid unnecessary costs associated with using Azure resources, delete the resources you provisioned in this exercise.
 
-1. In the web browser displaying the Azure portal, on the **cna-devops-05-rg** resource group blade, on the toolbar, select **Delete resource group**.
+1. In the web browser displaying the Azure portal, on the **cna-devops-05-rg** resource group page, select **Delete resource group** on the toolbar.
 1. In the **TYPE THE RESOURCE GROUP NAME** text box, enter the name of the resource group, and then select **Delete**.
 1. Repeat the previous two steps for any other resource groups created during this exercise.
 
 ## Results
 
-Congratulations! You've completed the second exercise of this module. In this exercise, you went through the process of implementing CI/CD for a sample containerized Node.js web app into an AKS cluster. You also tested this functionality by directly modifying one of the app files to trigger the automatic build and deployment processes. After you completed your testing, you deleted the Azure resources deployed in this exercise to avoid extra charges.
+Congratulations! You completed the second exercise of this module. In this exercise, you went through the process of implementing CI/CD for a sample containerized Node.js web app into an AKS cluster. You also tested this functionality by directly modifying one of the app files to trigger the automatic build and deployment processes. After you completed your testing, you deleted the Azure resources deployed in this exercise to avoid extra charges.
