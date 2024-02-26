@@ -41,7 +41,7 @@ Service Health also allows you to create health alerts to notify you when someth
 
 The Resource Health executes some minute-by-minute checks across the resources and makes the information available to you. There's a specific type of resource that runs the health checks. You can see the [full list of resource types on this page](/azure/service-health/resource-health-checks-resource-types).
 
-As an example: for Virtual Machines, the type of checks executed include:
+As an example: for Virtual Machines, the types of checks executed include:
 
 * Is the server hosting this virtual machine up and running?
 * Has the host operating system (OS) booting completed?
