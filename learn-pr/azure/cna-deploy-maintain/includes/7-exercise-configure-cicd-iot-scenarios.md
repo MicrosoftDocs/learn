@@ -1,9 +1,9 @@
-This exercise takes you through the process of implementing CI/CD of a sample IoT application to Azure IoT Edge. As in the previous exercise, you'll use Azure DevOps Starter for this purpose. However, you'll rely on Azure DevOps to provide the code repository and implement the corresponding CI/CD pipelines.
+This exercise takes you through the process of implementing CI/CD of a sample IoT application to Azure IoT Edge. As in the previous exercise, you use Azure DevOps Starter for this purpose. However, you rely on Azure DevOps to provide the code repository and implement the corresponding CI/CD pipelines.
 
 > [!NOTE]
 > This exercise illustrates how to use Azure DevOps Starter (which simplifies the process for implementing CI/CD pipelines considerably). For detailed information regarding authoring pipelines in Azure DevOps and GitHub, refer to the references provided at the end of this module.
 
-In this exercise, you'll:
+In this exercise, you:
 
 * Implement an IoT Edge CI/CD pipeline by using Azure DevOps Starter.
 * Validate the CI/CD functionality.
@@ -14,19 +14,19 @@ In this exercise, you'll:
 To perform this exercise, you need:
 
 * An Azure subscription.
-* A Microsoft account, or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
+* A Microsoft account or a Microsoft Entra account. The Global Administrator role in the Microsoft Entra tenant should be associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
 * An Azure DevOps organization associated with the Microsoft account or the Microsoft Entra account referenced in the previous prerequisite. To create an Azure DevOps organization, refer to the link provided at the end of the module.
 * At least one concurrent pipeline in your Azure DevOps organization.
 
 > [!NOTE]
-> This requirement results from changes to the policy governing free grants of concurrent pipelines to Azure DevOps projects. For more information, refer to [Change in Azure Pipelines Grant for Public Projects](https://devblogs.microsoft.com/devops/change-in-azure-pipelines-grant-for-public-projects/). You'll find there a link to the form that you can use to request the free grant of parallel jobs in Azure Pipelines. The response is expected within 2-3 business days.
+> This requirement results from changes to the policy governing free grants of concurrent pipelines to Azure DevOps projects. For more information, see [Change in Azure Pipelines Grant for Public Projects](https://devblogs.microsoft.com/devops/change-in-azure-pipelines-grant-for-public-projects/). In that article, there's a link to the form that you can use to request the free grant of parallel jobs in Azure Pipelines. The response is expected within 2-3 business days.
 
 ## Implement an IoT Edge CI/CD pipeline by using Azure DevOps Starter
 
-For the sake of simplicity, you'll implement the Azure IoT Edge CI/CD pipeline by using Azure DevOps Starter functionality.
+For the sake of simplicity, let's implement the Azure IoT Edge CI/CD pipeline by using Azure DevOps Starter functionality.
 
 1. If needed, start a web browser.
-1. Go to the [Azure portal](https://portal.azure.com/) and sign in to access the Azure subscription you'll be using in this module.
+1. Go to the [Azure portal](https://portal.azure.com/) and sign in to access the Azure subscription you're using in this module.
 1. In the Azure portal, use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **DevOps Starter**.
 1. In the list of results, in the **Services** section, select **DevOps Starter**.
 1. On the **DevOps Starter** blade, select **+ Create**.
@@ -48,27 +48,27 @@ For the sake of simplicity, you'll implement the Azure IoT Edge CI/CD pipeline b
     | Setting | Value |
     | --- | --- |
     | Project name | **cna-devops-07** |
-    | Azure DevOps Organization | The name of the Azure DevOps organization you'll be using in this exercise. |
-    | Subscription | The name of the Azure subscription you'll be using in this exercise. |
-    | IoT Hub name | The unique name of the Azure IoT Hub you'll be using in this exercise. |
-    | Location | The name of the Azure region you'll be using in this exercise. |
+    | Azure DevOps Organization | The name of the Azure DevOps organization you're using in this exercise. |
+    | Subscription | The name of the Azure subscription you're using in this exercise. |
+    | IoT Hub name | The unique name of the Azure IoT Hub you're using in this exercise. |
+    | Location | The name of the Azure region you're using in this exercise. |
 
-    :::image type="content" source="../media/7-azure-devops-starter-almost-there.png" alt-text="Screenshot of the Almost there page." border="false":::
+    :::image type="content" source="../media/7-azure-devops-starter-almost-there.png" alt-text="Screenshot of the Almost there! page." border="false":::
 
-1. On the **Almost there** page, select **Additional settings**.
+1. On the **Almost there!** page, select **Additional settings**.
 1. On the **Additional settings** blade, specify the following configuration, leaving all other settings with their default values:
 
     | Setting | Configuration |
     | --- | --- |
     | Container Registry name | Change the value to a globally unique name consisting of between 5 and 50 alphanumeric characters starting with a letter. |
     | Container Registry SKU | Select the **Basic** entry from the drop-down list. |
-    | Container Registry Location | Select the name of the Azure region you'll be using in this exercise.|
+    | Container Registry Location | Select the name of the Azure region you're using in this exercise.|
 
     > [!NOTE]
-    > The Container Registry name check mark indicates its global uniqueness.
+    > The Container Registry name checkmark indicates its global uniqueness.
 
-1. On the **Additional settings** blade, select **OK**. and
-1. Back on the **DevOps Starter** blade **Almost there** page, select **Review + Create**.
+1. On the **Additional settings** blade, select **OK**.
+1. On the **Almost there!** page in the **DevOps Starter** blade, select **Review + Create**.
 
     > [!NOTE]
     > Wait for the Azure DevOps Starter resource provisioning to complete. This might take about a minute.
@@ -122,16 +122,16 @@ For the sake of simplicity, you'll implement the Azure IoT Edge CI/CD pipeline b
 
     :::image type="content" source="../media/7-azure-devops-release-pipeline-edit-button.png" alt-text="Screenshot of the CD pipeline with the Edit button displaying." border="false":::
 
-1. In the CD pipeline pane, on the **Pipeline** tab, from the **qa** stage, select the pre-deployment conditions applicable to this stage.
+1. In the CD pipeline pane, on the **Pipeline** tab, from the **qa** stage, select the predeployment conditions applicable to this stage.
 
-    :::image type="content" source="../media/7-azure-devops-release-pipeline-qa-pre-deployment-conditions.png" alt-text="Screenshot of the CD pipeline with the pre-deployment conditions of the qa stage." border="false":::
+    :::image type="content" source="../media/7-azure-devops-release-pipeline-qa-pre-deployment-conditions.png" alt-text="Screenshot of the CD pipeline with the predeployment conditions of the 'qa' stage." border="false":::
 
 1. In the **Pre-deployment conditions** pane, select **Manual only**.
 
-    :::image type="content" source="../media/7-azure-devops-release-pipeline-qa-manual-only.png" alt-text="Screenshot of the CD pipeline with the qa stage pre-deployment conditions set to Manual only." border="false":::
+    :::image type="content" source="../media/7-azure-devops-release-pipeline-qa-manual-only.png" alt-text="Screenshot of the CD pipeline with the qa stage predeployment conditions set to Manual only." border="false":::
 
     > [!NOTE]
-    > Selecting **Manual only** will stop automatic deployment following the **dev** stage completion. This change is applied for the sake of simplicity, to eliminate the need for applying changes during the pipeline's **qa** and **prod** stages, which would be equivalent to those you have to apply to the **dev** stage. In general, rather than using the **Manual only** option, you could rely on the results from the smoke test to determine whether  deployment can proceed to the subsequent stage.
+    > Selecting **Manual only** will stop automatic deployment following the **dev** stage completion. This change is applied for the sake of simplicity, to eliminate the need for applying changes during the pipeline's **qa** and **prod** stages, which would be equivalent to those you have to apply to the **dev** stage. In general, rather than using the **Manual only** option, you could rely on the results from the smoke test to determine whether deployment can proceed to the subsequent stage.
 
 1. In the CD pipeline pane, on the **Pipeline** tab, from the **dev** stage, select the link indicating the number of jobs and tasks in that stage.
 
@@ -184,7 +184,7 @@ For the sake of simplicity, you'll implement the Azure IoT Edge CI/CD pipeline b
 
 ## Validate the CI/CD functionality
 
-Now that the GitHub workflow and the corresponding Azure resources are fully deployed, you'll validate the CI/CD functionality.
+Now that the GitHub workflow and the corresponding Azure resources are fully deployed, validate the CI/CD functionality.
 
 1. In the CD pipeline pane, on the menu, select **Repos**, and then in the repository's folder hierarchy, select **edgeSmokeTest.sh**.
 1. In the pane displaying the **edgeSmokeTest.sh** file content, select **Edit**.
@@ -226,12 +226,12 @@ Now that the GitHub workflow and the corresponding Azure resources are fully dep
 
 ## Delete deployed resources
 
-Your testing of CI/CD by using GitHub workflows is complete. To avoid unnecessary costs associated with the use of Azure resources, you'll now delete the resources you provisioned in this exercise.
+Your testing of CI/CD by using GitHub workflows is complete. To avoid unnecessary costs associated with the use of Azure resources, you should delete the resources you provisioned in this exercise.
 
-1. In the web browser displaying the Azure portal, on the **cna-devops-07-rg** resource group blade, from the toolbar, select **Delete resource group**.
+1. In the web browser displaying the Azure portal, on the **cna-devops-07-rg** resource group blade, select **Delete resource group** from the toolbar.
 1. In the **TYPE THE RESOURCE GROUP NAME** text box, enter the name of the resource group, and then select **Delete**.
 1. Repeat the previous two steps for any other resource groups created during this exercise.
 
 ## Results
 
-Congratulations! You've completed the third and final exercise of this module. In this exercise, you went through the process of implementing a multi-stage CI/CD pipeline that builds and deploys an IoT application to Azure IoT Edge. As in the previous exercise, you used Azure DevOps Starter for this purpose. But this time, you used Azure DevOps to provide the code repository and implement the corresponding CI/CD pipelines. After you completed your testing, you deleted the Azure resources deployed in this exercise to avoid extra charges.
+Congratulations! You completed the third and final exercise of this module. In this exercise, you went through the process of implementing a multi-stage CI/CD pipeline that builds and deploys an IoT application to Azure IoT Edge. As in the previous exercise, you used Azure DevOps Starter for this purpose. But this time, you used Azure DevOps to provide the code repository and implement the corresponding CI/CD pipelines. After you completed your testing, you deleted the Azure resources deployed in this exercise to avoid extra charges.
