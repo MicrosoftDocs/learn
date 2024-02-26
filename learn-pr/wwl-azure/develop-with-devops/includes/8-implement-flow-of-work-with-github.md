@@ -11,14 +11,13 @@ In this lab, you will:
 
  -  Implement and manage repos with GitHub
 
-    > **Note:** For this and subsequent labs, use the same GitHub account you created for the purpose of the [first lab](https://go.microsoft.com/fwlink/?linkid=2261093).
-
 ## Prerequisites
 
  -  Complete the first lab in this series, [Lab 01 - Agile Planning and Management using GitHub](https://go.microsoft.com/fwlink/?linkid=2261093).
 
 ## Requirements
 
+ -  Use the same GitHub account you created for the purpose of the [first lab](https://go.microsoft.com/fwlink/?linkid=2261093).
  -  This lab requires **Microsoft Edge** or an [Azure DevOps-supported browser](/azure/devops/server/compatibility).
  -  **GitHub account:** If you don't already have a GitHub account that you can use for this lab, create one by following the instructions available in the article [Creating an account on GitHub](https://docs.github.com/get-started/quickstart/creating-an-account-on-github).
 

@@ -5,7 +5,7 @@
 
 Remember this module’s scenario in which you work for a software development company in the retail industry that is experiencing frequent downtime and performance issues with their new online store application. Since you have decided to enhance workload and test resiliency using Traffic Manager and Azure Chaos Studio respectively, this lab gives you the opportunity to implement a Traffic Manager profile and validate Traffic Manager functionality, configure Azure Chaos Studio environment, and implement and validate an experiment.
 
-   > **Note:** In the previous lab, you deployed two instances of a .NET web app into two Azure region. In this lab, you will first create a resilient configuration that implements the load balancing functionality of Azure Traffic Manager between the two web app instances. Next, you will use Azure Chaos Studio to trigger a failure of one of the apps to test the resiliency of the load balancing implementation.
+In the previous lab, you deployed two instances of a .NET web app into two Azure regions. In this lab, you will first create a resilient configuration that implements the load balancing functionality of Azure Traffic Manager between the two web app instances. Next, you will use Azure Chaos Studio to trigger a failure in one of the apps to test the resiliency of the load balancing implementation.
 
 ## Objectives
 
@@ -16,11 +16,10 @@ In this lab, you will:
  -  Test workload resiliency by using Azure Chaos Studio
  -  Remove the resources used in the labs
 
-    > **Note:** For this and subsequent labs, use the same GitHub account you created for the purpose of the [first lab](https://go.microsoft.com/fwlink/?linkid=2261093).
-
 ## Prerequisites
 
  -  Complete the first lab in this series, [Lab 01 - Agile Planning and Management using GitHub](https://go.microsoft.com/fwlink/?linkid=2261093).
+ -  Use the same GitHub account you created for the purpose of the [first lab](https://go.microsoft.com/fwlink/?linkid=2261093).
  -  Complete the second lab in this series, [Lab 02 - Implement Flow of Work with GitHub](https://go.microsoft.com/fwlink/?linkid=2261094).
  -  Complete the third lab in this series, [Lab 03 - Implement CI/CD with GitHub Actions and IaC with Bicep](https://go.microsoft.com/fwlink/?linkid=2261725).
 
