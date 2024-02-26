@@ -10,7 +10,7 @@ Your company wanted to learn how they could use their existing expertise in Mave
 
 1. You learned about the various methods that you can use to authenticate your deployments for automation.
 
-The whole process would be difficult to achieve without the Maven Plugin for Azure App Service. You would have had to manually create an App Service plan, and manually configure Maven to transfer your application over FTP to Azure App Service.
+The whole process would be difficult to achieve without the Maven Plugin for Azure App Service. You would've had to manually create an App Service plan and manually configure Maven to transfer your application over FTP to Azure App Service.
 
 Now that you've learned how to use the Maven Plugin for Azure App Service, you're confident that you can recommend migrating your Java application code to Azure. You know your team can continue using Maven to manage projects and deploy them to Azure.
 
@@ -20,10 +20,10 @@ Now that you've learned how to use the Maven Plugin for Azure App Service, you'r
 
 The following links discuss additional information related to Java development on Azure:
 
-- [Azure for Java cloud developers](/azure/java)
-- [Install the JDK for Azure and Azure Stack](/azure/java/jdk/java-jdk-install)
+- [Azure for Java cloud developers](/azure/developer/java/)
+- [Install the JDK](/azure/developer/java/fundamentals/java-jdk-install)
 - [Tomcat project page](https://tomcat.apache.org/maven-plugin-2.2)
-- [Create an Azure service principal with Azure CLI](/cli/azure/create-an-azure-service-principal-azure-cli)
+- [Create an Azure service principal with Azure CLI](/cli/azure/azure-cli-sp-tutorial-1)
 - [Automation with service principals](/azure/analysis-services/analysis-services-service-principal)
 - [az ad sp create-for-rbac](/cli/azure/ad/sp#az-ad-sp-create-for-rbac)
 
