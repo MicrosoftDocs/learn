@@ -28,7 +28,7 @@ Now you've created a project, it's time to upload some training data. Here, you 
 1. Copy the following URL, and paste it into the **Audio + transcript** box, then select **Next**
 
     ```http
-    https://github.com/Azure-Samples/cognitive-services-speech-sdk/raw/master/sampledata/customspeech/en-US/training/audio-and-trans.zip
+    https://github.com/Azure-Samples/cognitive-services-speech-sdk/blob/master/sampledata/customspeech/en-US/general/testing/audio-and-trans.zip
     ```
 
     :::image type="content" source="../media/5-azure-blob-link.png" alt-text="Screenshot showing an example of steps 4 and 5 in the speech portal.":::
