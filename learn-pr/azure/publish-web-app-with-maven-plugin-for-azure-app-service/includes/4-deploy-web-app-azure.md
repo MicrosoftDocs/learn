@@ -33,7 +33,7 @@ To add the Maven Plugin for Azure App Service to your web app, you'd add the XML
 </plugin>
 ```
 
-However, the plugin provides a convenient and interactive way to add configurations to your pom file:
+However, the plugin provides a convenient and interactive way to add configurations to your POM file:
 
 ```bash
 mvn com.microsoft.azure:azure-webapp-maven-plugin:2.2.0:config
