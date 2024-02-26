@@ -45,7 +45,7 @@ units:
 - learn.wwl.deliver-with-devops.explore-infrastructure-as-code
 - learn.wwl.deliver-with-devops.explore-progressive-exposure-techniques
 - learn.wwl.deliver-with-devops.explore-continuous-delivery-github-actions
-- learn.wwl.deliver-with-devops.implement-ci-cd-with-github-actions-and-i-a-c-with-bicep
+- learn.wwl.deliver-with-devops.implement-ci-cd-with-github-actions-and-infrastructure-as-code-with-bicep
 - learn.wwl.deliver-with-devops.knowledge-check
 - learn.wwl.deliver-with-devops.summary
 badge:

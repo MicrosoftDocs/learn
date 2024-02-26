@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.deliver-with-devops.implement-ci-cd-with-github-actions-and-i-a-c-with-bicep
+uid: learn.wwl.deliver-with-devops.implement-ci-cd-with-github-actions-and-infrastructure-as-code-with-bicep
 title: Implement CI/CD with GitHub Actions and IaC with Bicep
 metadata:
   title: Implement CI CD with GitHub Actions and IaC with Bicep
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 40
 content: |
-  [!include[](includes/6-implement-ci-cd-with-github-actions-and-i-a-c-with-bicep.md)]
+  [!include[](includes/6-implement-ci-cd-with-github-actions-and-infrastructure-as-code-with-bicep.md)]
