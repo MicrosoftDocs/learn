@@ -4,7 +4,7 @@ title: Secure external identities
 metadata:
   title: Secure external identities
   description: "Secure external identities"
-  ms.date: 02/16/2024
+  ms.date: 02/26/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/6-secure-external-microsoft-entra-identities.md)]
+  [!include[](includes/7-secure-external-microsoft-entra-identities.md)]
