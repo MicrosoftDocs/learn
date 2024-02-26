@@ -8,7 +8,7 @@ Onboarding a sensor to Defender for IoT provides you with an activation file and
 
 The following diagram shows the OT monitoring deployment path, with the team responsible for each phase:
 
-:::image type="content" source="../media/2-ot-deploy.png" alt-text="Diagram of the complete OT deployment process" border="false":::
+:::image type="content" source="../media/2-operational-technology-deploy.png" alt-text="Diagram of the complete OT deployment process." border="false":::
 
 This module describes the second phase in the deployment: *Onboarding sensors*. In a real-life scenario, you already have your deployment plan ready, and your networks and sites prepared.
 
