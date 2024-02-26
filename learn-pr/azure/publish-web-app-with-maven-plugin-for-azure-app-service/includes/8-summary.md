@@ -1,4 +1,4 @@
-Your company wanted to learn how they could use their existing expertise in Maven to automate deployment of their Java web apps to Azure App Service. To test how easy it would be for your company to use the Maven Plugin for Azure App Service, you used the following steps:
+Your company wanted to learn how they could use their existing expertise in Maven to automate deployment of their Java web apps to Azure App Service. To test the ease with which your company could use the Maven Plugin for Azure App Service, you used the following steps:
 
 1. You created a sample web app with a Maven archetype, and you tested it locally using Tomcat.
 
@@ -10,7 +10,7 @@ Your company wanted to learn how they could use their existing expertise in Mave
 
 1. You learned about the various methods that you can use to authenticate your deployments for automation.
 
-The whole process would be difficult to achieve without the Maven Plugin for Azure App Service. You would've had to manually create an App Service plan and manually configure Maven to transfer your application over FTP to Azure App Service.
+The whole process would be difficult to achieve without the Maven Plugin for Azure App Service. You'd need to manually create an App Service plan and manually configure Maven to transfer your application over FTP to Azure App Service.
 
 Now that you've learned how to use the Maven Plugin for Azure App Service, you're confident that you can recommend migrating your Java application code to Azure. You know your team can continue using Maven to manage projects and deploy them to Azure.
 
@@ -27,7 +27,7 @@ The following links discuss additional information related to Java development o
 - [Automation with service principals](/azure/analysis-services/analysis-services-service-principal)
 - [az ad sp create-for-rbac](/cli/azure/ad/sp#az-ad-sp-create-for-rbac)
 
-These additional links provide a wealth of information about getting started with Apache Maven:
+These links provide a wealth of information about getting started with Apache Maven:
 
 - [Maven Getting Started Guide](https://maven.apache.org/guides/getting-started/)
 - [Introduction to the Build Lifecycle](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html)
