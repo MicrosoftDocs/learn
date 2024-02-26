@@ -33,7 +33,7 @@ In the **Management interface** tab, you define the network details that connect
 |**Default Gateway**     | Type the address you want to use as the sensor's default gateway.        |
 |**DNS**     |   Type the sensor's DNS server IP address.      |
 |**Hostname**     |  Type the hostname you want to assign to the sensor. Make sure that you use the same hostname as is defined in the DNS server.       |
-<!-- check where to find the hostname and DNS server datails - provided by the company-->
+
 ### Select interfaces to monitor
 
 The **Interface configurations** tab shows each interface on the sensor, which should match the list of endpoints in the network diagram. You set up each interface individually.

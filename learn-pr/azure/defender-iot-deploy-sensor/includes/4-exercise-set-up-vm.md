@@ -1,5 +1,5 @@
 This unit describes how to download the OT monitoring software from the Defender for IoT in the Azure portal. Then set up a virtual machine and connect it to a device/ interface. Then upload the monitoring software to the sensor. Afterwards, configure the network settings so that the sensor connects with the Azure portal. Finally, assign the end point interfaces, activate the sensor and set up the security certificates.
-<!-- check all images for compliance - may need to redo them or edit -->
+
 ## Configure firewall to allow the sensor to connect to Azure portal
 
 Configure your firewall rules so that your sensor can access the cloud on port 443, and connect to each of the endpoints listed in the JSON file provided by the communications Team. This should be provided by your organization .... department.
@@ -31,18 +31,18 @@ To perform this procedure, VMware, ESXi 5.5 or later must be installed and opera
 
 1. Choose the relevant datastore and select **Next**.
 
-1. Change the virtual hardware parameters to the following specifications:
+1. Change the virtual hardware parameters to either of the following specifications:
 
 | Type |Memory  | Storage  | CPU Processor |
 |----|-----|---------|----|
 | Enterprise | 32 MB RAM | 1/1.8 TB |  4 Core/ 8 Threads |
 | Line | 8 MB RAM | 100/ 500 GB |  4 Core/ 4 Threads |
 
-Your VM is now prepared for the Defender for IoT software installation.
+You must now make two adapter connections, the first to an outside network adapter to allow the sensor to communicate with Azure. The second to recieve the mirrored traffic from the SPAN switch.
 
-### Configure a network adapter
+### Configure a outside network adapter
 
-Make tioo connections - first outside to network adapter 1 - vm network - add to prereq
+You will now configure network adapter 1 to connect to your VM network.
 
 **To configure a network adapter**:
 
@@ -94,7 +94,7 @@ After you configure the traffic mirroring, retrieve a PCAP file to receive a sam
 
 1. Use a network protocol analyzer application, such as *Wireshark*, to record a sample PCAP file for a few minutes. For example, connect a laptop to a port where you've configured traffic monitoring.
 
-1. Check that *Unicast packets* are present in the recording traffic. Unicast traffic is traffic sent from address to another address.<!-- from ONE address to another OR from address to address - Make the same change in the original doc MT-->
+1. Check that *Unicast packets* are present in the recording traffic. Unicast traffic is traffic sent from address to another address.
 
     If most of the traffic is ARP messages, your traffic mirroring configuration isn't correct.
 

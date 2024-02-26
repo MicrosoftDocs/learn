@@ -8,8 +8,7 @@ The OT sensor deployment plan is shown in the following diagram:
 
 ## Install Defender for IoT software
 <!-- I dont understand the headings here, I would have thought this should be H3 as it is a sub category of the previous H2 heading. But Cat put this entire section as H2s? I have done that here but it seems incorrect  LW-->
-This Learn Module is divided into 2 sections, the first - units 3 and 4 - deals with creating and setting up the virtual machine to run the OT sensor. THe second - units 5 and 6 - deals with installing and activiating the monitoring software on the virtual machine OT sensor.
-<!-- WHAT DOES THIS MEAN  - Ensure that the hostname is configured in the organizational DNS server. in the sensor T-->
+This Learn Module is divided into 2 sections, the first - units 3 and 4 - deals with creating and setting up the virtual machine to run the OT sensor. The second - units 5 and 6 - deals with installing and activiating the monitoring software on the virtual machine OT sensor.
 
 ### Set up a virtual machine
 <!-- placement heading - what should we do for this introduction - should it be here or probably earlier in unit 1 or 2? LW-->
