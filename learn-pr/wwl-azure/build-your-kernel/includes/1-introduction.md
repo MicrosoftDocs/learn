@@ -1,6 +1,6 @@
-The Semantic Kernel SDK allows you to integrate the power of large language models (LLM) in your own applications. In the rapidly evolving landscape of artificial intelligence (AI), AI copilots emerged as powerful tools. The Semantic Kernel SDK allows developers to integrate LLM prompts and results in their applications, and potentially craft their own copilot-like experiences. 
+The Semantic Kernel SDK allows you to integrate the power of large language models (LLMs) in your own applications. In the rapidly evolving landscape of artificial intelligence (AI), AI copilots emerged as powerful tools. The Semantic Kernel SDK allows developers to integrate prompts to LLMs and results in their applications, and potentially craft their own copilot-like experiences. 
 
-Suppose you're a developer for Margie's Travel, a global leader in the travel and hospitality industry. You are tasked with creating a personalized AI travel agent. Rather than creating your own language processing model from scratch, you can use the Semantic Kernel to interface with LLMs and create an AI agent that can:
+Suppose you're a developer for Margie's Travel, a global leader in the travel and hospitality industry. You're tasked with creating a personalized AI travel agent. Rather than creating your own language processing model from scratch, you can use the Semantic Kernel to interface with LLMs and create an AI agent that can:
 
 - Understand natural language.
 - Provide customized recommendations.
@@ -21,5 +21,5 @@ This module introduces you to the Semantic Kernel SDK. You can learn how the ker
 
 - Experience programming in C#.
 - Visual Studio Code IDE installed.
-- Familiarity with Azure and the Azure Portal.
+- Familiarity with Azure and the Azure portal.
 - Access to Azure Open AI services.
