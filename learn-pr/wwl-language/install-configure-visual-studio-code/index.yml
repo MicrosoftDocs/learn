@@ -29,6 +29,8 @@ roles:
 products:
 - dotnet
 - vs-code
+subjects:
+- app-development
 units:
 - learn.wwl.install-configure-visual-studio-code.introduction
 - learn.wwl.install-configure-visual-studio-code.exercise-download-install-visual-studio-code

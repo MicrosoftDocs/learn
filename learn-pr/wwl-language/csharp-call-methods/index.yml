@@ -34,6 +34,8 @@ roles:
 products:
 - dotnet
 - vs-code
+subjects:
+- app-development
 units:
 - learn.languages.csharp-call-methods.introduction
 - learn.languages.csharp-call-methods.dotnet-class-library
