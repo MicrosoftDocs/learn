@@ -3,7 +3,7 @@ uid: learn.wwl.give-your-ai-agent-skills
 metadata:
   title: Give your AI agent skills
   description: "Learn how native functions can be combined with prompts to accomplish customized tasks with the semantic kernel SDK."
-  ms.date: 02/23/2024
+  ms.date: 02/26/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
@@ -16,8 +16,8 @@ abstract: |
 prerequisites: |
   -   Experience programming in C#.
   -   Visual Studio Code IDE installed.
-  -   Familiarity with Azure and the Azure Portal.
-  -   Access to Azure Open AI Services.
+  -   Familiarity with Azure and the Azure portal.
+  -   Access to Azure Open AI services.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

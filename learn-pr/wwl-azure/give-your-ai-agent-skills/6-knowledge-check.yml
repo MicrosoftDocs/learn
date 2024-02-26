@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/23/2024
+  ms.date: 02/26/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
@@ -16,7 +16,7 @@ quiz:
     choices:
     - content: "To customize prompts and generated responses."
       isCorrect: false
-      explanation: "Incorrect. Native functions are not used to create custom prompts."
+      explanation: "Incorrect. Native functions aren't used to create custom prompts."
     - content: "To run native code in the application."
       isCorrect: true
       explanation: "Correct. Native functions are used to run native code in the application."
@@ -30,7 +30,7 @@ quiz:
       explanation: "Incorrect. Native functions are declared using a function decorator."
     - content: "Using `kernel.InvokeAsync(\"PluginName\", \"NativeFunctionName\");`"
       isCorrect: false
-      explanation: "Incorrect. This is how you invoke a native function, not declare it."
+      explanation: "Incorrect. This line invokes a native function."
     - content: "By using `[KernelFunction, Description(\"Function description\")]`"
       isCorrect: true
       explanation: "Correct. Native functions are declared using the `KernelFunction` decorator."
