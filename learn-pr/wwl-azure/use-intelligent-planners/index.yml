@@ -3,7 +3,7 @@ uid: learn.wwl.use-intelligent-planners
 metadata:
   title: Use intelligent planners
   description: "Learn about the different ways you can automatically invoke functions using the Semantic Kernel SDK."
-  ms.date: 02/23/2024
+  ms.date: 02/26/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
@@ -17,8 +17,8 @@ abstract: |
 prerequisites: |
   -   Experience programming in C#.
   -   Visual Studio Code IDE installed.
-  -   Familiarity with Azure and the Azure Portal.
-  -   Access to Azure Open AI Services.
+  -   Familiarity with Azure and the Azure portal.
+  -   Access to Azure Open AI services.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

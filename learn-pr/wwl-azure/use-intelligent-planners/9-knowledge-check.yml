@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/23/2024
+  ms.date: 02/26/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
@@ -16,7 +16,7 @@ quiz:
     choices:
     - content: "`planner.GeneratePlan(prompt);`"
       isCorrect: false
-      explanation: "Incorrect. `HandlebarsPlanner.GeneratePlan` is not a function."
+      explanation: "Incorrect. `HandlebarsPlanner.GeneratePlan` isn't a function."
     - content: "`planner.CreatePlanAsync(kernel, prompt);`"
       isCorrect: true
       explanation: "Correct! Use `CreatePlanAsync` with the kernel and the prompt to create a plan."
@@ -27,10 +27,10 @@ quiz:
     choices:
     - content: "By using `kernel.InvokeAsync(prompt);`"
       isCorrect: false
-      explanation: "Incorrect. This is how you invoke a prompt, not enable automatic function calling."
+      explanation: "Incorrect. This line invokes a prompt, it doesn't enable automatic function calling."
     - content: "By using `kernel.EnableAutomaticFunctionCalling(true);`"
       isCorrect: false
-      explanation: "Incorrect. There is no function called `EnableAutomaticFunctionCalling`."
+      explanation: "Incorrect. There's no function called `EnableAutomaticFunctionCalling`."
     - content: "By using `OpenAIPromptExecutionSettings` with `ToolCallBehavior.AutoInvokeKernelFunctions`"
       isCorrect: true
       explanation: "Correct! Use `OpenAIPromptExecutionSettings` with `ToolCallBehavior.AutoInvokeKernelFunctions` in your kernel to enable automatic function calling."
@@ -38,10 +38,10 @@ quiz:
     choices:
     - content: "`plan.GetTemplate();`"
       isCorrect: false
-      explanation: "Incorrect. `HandlebarsPlan.GetTemplate` is not a function."
+      explanation: "Incorrect. `HandlebarsPlan.GetTemplate` isn't a function."
     - content: "`plan.ToString();`"
       isCorrect: true
       explanation: "Correct! Use `ToString` to get the plan template."
     - content: "`plan.GetPlanTemplate();`"
       isCorrect: false
-      explanation: "Incorrect. `HandlebarsPlan.GetPlanTemplate` is not a function."
+      explanation: "Incorrect. `HandlebarsPlan.GetPlanTemplate` isn't a function."
