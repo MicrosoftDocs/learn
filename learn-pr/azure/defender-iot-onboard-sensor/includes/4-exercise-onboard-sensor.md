@@ -41,7 +41,7 @@ In a real-life scenario, you might use the links and options on this page to add
 
 1. In the **Add outbound allow rules** area, select the **Download** link to download a JSON list of the endpoints you must configure as secure endpoints from your sensor. Save the downloaded file locally.
 
-:::image type="content" source="../media/4-download-endpoint-file.png" alt-text="Screenshot of the Set Up OT sensor success page for downloading endpoint list" lightbox="../media/4-download-endpoint-file.png":::
+:::image type="content" source="../media/4-download-endpoint-file.png" alt-text="Screenshot of the Set Up OT sensor success page for downloading endpoint list." lightbox="../media/4-download-endpoint-file.png":::
 
 - Select **Finish** and your sensor is now shown in Defender for IoT's **Sites and sensors** page.
 
