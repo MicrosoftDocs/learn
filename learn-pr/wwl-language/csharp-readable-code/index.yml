@@ -3,10 +3,12 @@ uid: learn.languages.csharp-readable-code
 metadata:
   title: Create readable code with conventions, whitespace, and comments in C#
   description: "Write code that is easier to read, update and support using naming conventions, comments and whitespace."
-  ms.date: 02/21/2024
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: dotnet-csharp
   ms.devlang: csharp
 title: Create readable code with conventions, whitespace, and comments in C#
@@ -32,6 +34,8 @@ roles:
 products:
 - dotnet
 - vs-code
+subjects:
+- app-development
 units:
 - learn.languages.csharp-readable-code.introduction
 - learn.languages.csharp-readable-code.choose-variable-names
