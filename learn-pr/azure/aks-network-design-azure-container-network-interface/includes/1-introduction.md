@@ -8,7 +8,7 @@ The following diagram provides a high-level overview of the application's archit
 
 Your team is tasked with building and delivering an initial version of the store as quickly as possible. From there, you can iterate to add new features, adapt to business needs, and stay ahead of the competition.
 
-Your team plans to build the application using DevOps and cloud native patterns and practices. Your company has recently standardized on Kubernetes to host all container-based workloads and has decided to leverage Azure CNI networking for the cluster. You've been asked to design the cluster for the new service, which involves designing the network. To effectively design the network, you need to understand the requirements, constraints, and considerations of the Azure CNI networking model.
+Your team plans to build the application using DevOps and cloud native patterns and practices. Your company has recently standardized on Kubernetes to host all container-based workloads and decided to use the Azure Container Networking Interface (CNI) for the cluster. You're tasked with designing the cluster for the new service, which involves designing the network. To effectively design the network, you need to understand the requirements, constraints, and considerations of the Azure CNI networking model.
 
 Before you begin, it's important you understand the details about some key Kubernetes components. In the next unit, we provide an overview of key Kubernetes networking concepts.
 
