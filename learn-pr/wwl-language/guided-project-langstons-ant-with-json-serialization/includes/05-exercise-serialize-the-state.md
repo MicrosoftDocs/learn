@@ -21,9 +21,9 @@
 
     In this code, you use the `JsonSerializer` class to serialize the `Game` instance into a JSON string. You use the predefined `serializeOptions` to specify the formatting and converters to use. Finally, rather than returning `null`, you return the serialized JSON string.
 
-    JSON does not natively support two-dimensional arrays, however the `Game` object is implemented with a two-dimensional byte array. How do we store it in JSON? The JsonSerializerOptions class can help you define how to serialize the data. In this case, you use the `MultiDimensionalArrayConverter` class to handle the two-dimensional array. You also use the `InterfaceConverterFactory` class to handle the `IAnt` interface.
+    JSON doesn't natively support two-dimensional arrays. However the `Game` object is implemented with a two-dimensional byte array. How do we store it in JSON? The `JsonSerializerOptions` class can help you define how to serialize the data. In this case, you use the `MultiDimensionalArrayConverter` class to handle the two-dimensional array. You also use the `InterfaceConverterFactory` class to handle the `IAnt` interface.
 
-    Next, you'll call the `ToJson` method when the "Save" button is clicked.
+    Next, you call the `ToJson` method when the "Save" button is selected.
 
 1. Navigate to `MainWindow.xaml.cs` and locate the `btnSave_Click` method.
 
@@ -44,16 +44,16 @@
 
 ## Check your work
 
-1. Enter `dotnet run` in the terminal to run the WPF application.
+1. Enter `dotnet run` in the terminal to run the Windows Presentation Foundation (WPF) application.
 
-1. Click the "Play" button to start the simulation.
+1. To start the simulation, select the "Play" button.
 
-1. Allow the simulation to run for a few generations, then click the "Pause" button.
+1. Allow the simulation to run for a few generations, then select the "Pause" button.
 
-1. Click "Save" button. In the dialog, enter a file name and choose a destination that is easy to find.
+1. Select "Save" button. In the dialog, enter a file name and choose a destination that is easy to find.
 
 1. Open the file in a text editor.
 
     The file should contain a JSON string that represents the game state. The JSON string should include the generation count, grid, and the ant information.
 
-Now that you've successfully serialized the game state to a JSON file, you can move on to the next exercise to deserialize the game state.
+Now that you successfully serialized the game state to a JSON file, you can move on to the next exercise to deserialize the game state.

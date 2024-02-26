@@ -1,8 +1,8 @@
-This is a guided project where you use Visual Studio Code to develop a Langston's Ant project. The project demonstrates how simple rules can create complex behaviors. In this project, you'll develop the functionality to save and load simulation states. Let's start by setting up your development environment!
+This module is a guided project where you use Visual Studio Code to develop a Langston's Ant project. The project demonstrates how simple rules can create complex behaviors. In this project, you develop the functionality to save and load simulation states. Let's start by setting up your development environment!
 
 ## Project overview
 
- In this project, you'll apply what you learned about object serialization. The Langston's Ant project uses Visual Studio Code to simulate ants moving on a grid, inspired by Alan Turing's universal Turing machine. The ant follows rules: turn right on white squares, left on black ones, changing the square color with each move. This project demonstrates how simple rules lead to complex patterns. You'll modify the project to save and load simulation states using JSON formatting and serialization.
+ In this project, you apply what you learned about object serialization. The Langston's Ant project uses Visual Studio Code to simulate ants moving on a grid, inspired by Alan Turing's universal Turing machine. The ant follows rules: turn right on white squares, left on black ones, changing the square color with each move. This project demonstrates how simple rules lead to complex patterns. You modify the project to save and load simulation states using JSON formatting and serialization.
 
 ## Setup
 
@@ -17,11 +17,11 @@ Use the following steps to prepare for the Guided Project exercises:
 
 1. Under the Visual Studio Code **Start** section, select **Clone Git Repository**.
 
-1. In the URL bar, enter `https://github.com/MicrosoftLearning/MSLearn-Implement-JSON-Storage-and-Serialization-in-C-Sharp`
+1. In the URL bar, enter `https://github.com/MicrosoftLearning/MSLearn-Implement-JSON-Storage-and-Serialization-in-C-Sharp.git`
 
 1. In the File Explorer, create a new folder in a location that is easy to find and remember, such as a folder in your Desktop.
 
-1. Click the **Select as Repository Destination** button.
+1. Select the **Select as Repository Destination** button.
 
     You need to be signed in to GitHub to successfully clone the project.
 
@@ -33,7 +33,7 @@ Use the following steps to prepare for the Guided Project exercises:
 
 1. Expand the **WPF** folder.
 
-    You should see a collection of files and folders for the WPF application.
+    You should see a collection of files and folders for the Windows Presentation Foundation (WPF) application.
 
 1. Right-click the **WPF** folder and click **Open in Integrated Terminal**.
 

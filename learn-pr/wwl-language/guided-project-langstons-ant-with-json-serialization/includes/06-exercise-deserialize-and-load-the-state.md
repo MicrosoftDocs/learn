@@ -22,7 +22,7 @@
 
     In this code, you use the `JsonSerializer` class to deserialize the JSON string into a `Game` object. You use the predefined `serializeOptions` to specify the formatting and converters to use. Finally, rather than returning `null`, you return the deserialized `Game` object.
 
-    Next, you'll call the `FromJson` method when the "Load" button is clicked.
+    Next, you call the `FromJson` method when the "Load" button is selected.
 
 1. Navigate to `MainWindow.xaml.cs` and locate the `btnLoad_Click` method.
 
@@ -48,20 +48,20 @@
 
 ## Check your work
 
-1. Enter `dotnet run` in the terminal to run the WPF application.
+1. Enter `dotnet run` in the terminal to run the Windows Presentation Foundation (WPF) application.
 
-1. Click the "Play" button to start the simulation.
+1. To start the simulation, select the "Play" button.
 
-1. Allow the simulation to run for a few generations, then click the "Pause" button.
+1. Allow the simulation to run for a few generations, then select the "Pause" button.
 
-1. Click "Save" button. In the dialog, enter a file name and choose a destination that is easy to find.
+1. Select "Save" button. In the dialog, enter a file name and choose a destination that is easy to find.
 
-1. Click the "Stop" button to clear the game view.
+1. Select the "Stop" button to clear the game view.
 
-1. Click the "Load" button. In the dialog, select the file you saved earlier.
+1. Select the "Load" button. In the dialog, select the file you saved earlier.
 
 1. Observe that the previous game state is loaded and the game view is updated.
 
-    You can also click the "Play" button to continue from the loaded game sate.
+    You can also select the "Play" button to continue from the loaded game sate.
 
-Now your WPF application is set up to use JSON serialization to save and load game states. You've completed the guided project, congratulations!
+Now your WPF application is set up to use JSON serialization to save and load game states. You completed the guided project, congratulations!

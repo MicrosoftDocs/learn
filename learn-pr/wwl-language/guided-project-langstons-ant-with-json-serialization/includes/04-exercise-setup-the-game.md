@@ -1,9 +1,9 @@
-In this exercise, you'll set up the WPF application to use the Langton's Ant simulation code. You'll copy over the classes from the console application to the WPF application. Then you'll make a few modifications to the WPF application to use the Langton's Ant game code. Let's get started!
+In this exercise, you set up the Windows Presentation Foundation (WPF) application to use the Langton's Ant simulation code. You copy over the classes from the console application to the WPF application. Then you make a few modifications to the WPF application to use the Langton's Ant game code. Let's get started!
 
 > [!IMPORTANT]
 > You need to have completed the Setup instructions in the previous unit, Prepare, before you begin this Exercise.
 
-1. Copy Ant.cs, GeneralizedAnt.cs and Game.cs files from the `Console/Game` folder. 
+1. Copy Ant.cs, GeneralizedAnt.cs, and Game.cs files from the `Console/Game` folder. 
 
 1. Paste the files into the `WPF/Game` folder.
 
