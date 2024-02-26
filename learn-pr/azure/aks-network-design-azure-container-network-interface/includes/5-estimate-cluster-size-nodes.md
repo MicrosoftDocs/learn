@@ -2,11 +2,11 @@ You now need to determine what kind of virtual machine (VM) nodes you need and h
 
 ## What size virtual machines do you need?
 
-In AKS, each node in your cluster is an Azure VM. VMs come in various specifications to help support the demands of different types of applications. Some applications might need more processing power or memory, or faster storage. You need to select a VM category and instance that meets the needs of your application.
+In Azure Kubernetes Service (AKS), each node in your cluster is an Azure VM. VMs come in various specifications to help support the demands of different types of applications. Some applications might need more processing power or memory, or faster storage. You need to select a VM category and instance that meets the needs of your application.
 
 You want to make sure the type has enough memory and processing power for your application. Keep in mind that not all of the memory and processing power is available for your application. Some of this power is needed for the operating system and for Kubernetes system components. AKS automatically reserves a certain amount of memory and processing power to ensure these critical system components can operate as needed.
 
-The default VM type deployed as part of an AKS cluster is the *D2 v3 general purpose virtual machine*. This is a two core VM with 8 gigabytes of memory. AKS reserves 100 millicores of processor and 3.55 GiB of memory, leaving 1900 millicores (1.9 cores) and 5.45Gi of memory free for your application.
+The default VM type deployed as part of an AKS cluster is the *D2 v3 general purpose virtual machine*, a two core VM with 8 gigabytes of memory. AKS reserves 100 millicores of processor and 3.55 GiB of memory, leaving 1,900 millicores (1.9 cores) and 5.45Gi of memory free for your application.
 
 > [!TIP]
 > The amount of reserved processor and memory varies depending on the type of VM you select. This amount becomes proportionally smaller as the VM size increases.
@@ -25,7 +25,7 @@ Node pools can support one of two modes: *System* or *User*. *System node pools*
 
 In a default configuration, an AKS cluster contains a single System node pool, which is used to run everything. If you want, you can add extra System or User node pools and configure your application pods to run exclusively in the User node pools. Critical system pods run only in the System node pools. Using System and User node pools can prevent incorrectly configured applications from affecting the operation of critical system services and potentially causing the cluster to fail.
 
-Kubernetes can also add or remove nodes when necessary. If you plan to use this feature, you need to define an upper limit for the maximum number of nodes that Kubernetes can scale up to. Then, you plan your network design around that maximum number. Keep in mind that you need to account for at least one extra node per cluster to allow for the update process to run properly.
+Kubernetes can also add or remove nodes when necessary. If you plan to use this feature, you need to define an upper limit for the maximum number of nodes that Kubernetes can scale up to. Then, plan your network design around that maximum number. Keep in mind that you need to account for at least one extra node per cluster to allow for the update process to run properly.
 
 > [!TIP]
 > You can configure the number of nodes updated at a given time, with *one* being the default value. Upgrading more than one node at a time can decrease the overall time taken to upgrade a cluster. You need to account for extra nodes as part of your planning.
@@ -52,10 +52,10 @@ Locations API | 100 m - 500 m | 100 Mi / 500 Mi
 
 ## Sizing your nodes
 
-You determined the minimum number of replicas that each service should run and the minimum number of processor cores and memory that each service requires. This gives you a figure of 1.5 cores and 2.8Gi of memory as the starting point. When the application scales up to its maximum number of replicas and is using its maximum amount of processor cores and memory, it needs 53 cores and 50 GB of memory.
+You determined the minimum number of replicas that each service should run and the minimum number of processor cores and memory that each service requires. This calculation gives you a figure of 1.5 cores and 2.8Gi of memory as the starting point. When the application scales up to its maximum number of replicas and is using its maximum number of processor cores and amount of memory, it needs 53 cores and 50 GB of memory.
 
-In this scenario, the workloads are CPU intensive. If you go with the default D2 v3 general purpose VM, you would need a large number of them to meet the workload's processor requirements. This would result in a large amount of unused memory across the VMs. Let's consider a VM type intended for compute intensive workloads. For example, something from the Fsv2-series would need fewer VMs to meet the processor requirements and would have a lower amount of unused memory.
+In this scenario, the workloads are CPU intensive. If you go with the default D2 v3 general purpose VM, you would need a large number of them to meet the workload's processor requirements. This configuration would result in a large amount of unused memory across the VMs. Let's consider a VM type intended for compute intensive workloads. For example, something from the Fsv2-series would need fewer VMs to meet the processor requirements and would have a lower amount of unused memory.
 
-The F8s v2 VM type has 8 cores and 16 GB of memory. With the AKS resource reservations, that gives you 7820 millicores and 12.65Gi for each node. When running at maximum scale, you would need seven VMs to handle the workloads.
+The F8s v2 VM type has 8 cores and 16 GB of memory. With the AKS resource reservations, you have 7820 millicores and 12.65Gi for each node. When running at maximum scale, you would need seven VMs to handle the workloads.
 
 Now, you need to take a look at the network.
