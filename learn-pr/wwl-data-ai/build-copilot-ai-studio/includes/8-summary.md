@@ -1,5 +1,5 @@
-In this module, you learned:
+In this module, you learned to:
 
-- The development lifecycle when creating LLM applications.
-- What a flow is in prompt flow.
-- The core components when working with prompt flow.
+- Identify the need to ground your language model with Retrieval Augmented Generation (RAG).
+- Index your data with Azure AI Search to make it searchable for language models.
+- Build a copilot using RAG on your own data in the Azure AI Studio.

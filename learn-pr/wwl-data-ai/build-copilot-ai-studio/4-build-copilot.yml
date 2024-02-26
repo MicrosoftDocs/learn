@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-copilot-ai-studio.build-copilot
-title: Explore connections and runtimes
+title: Build a copilot with prompt flow
 metadata:
-  title: Explore connections and runtimes
-  description: "Learn about the core components connections and runtimes to work with prompt flow."
+  title: Build a copilot with prompt flow
+  description: "Learn about build a copilot with prompt flow."
   ms.date: 02/21/2024
   author: madiepev
   ms.author: madiepev
   ms.topic: unit
-durationInMinutes: 4
+durationInMinutes: 7
 content: |
   [!include[](includes/4-build-copilot.md)]

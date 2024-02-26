@@ -31,7 +31,6 @@ subjects:
   - artificial-intelligence
   - machine-learning
   - natural-language-processing
-  - data-ai
 units:
 - learn.wwl.build-copilot-ai-studio.introduction
 - learn.wwl.build-copilot-ai-studio.ground-language-model

@@ -1,33 +1,48 @@
-When you create a Large Language Model (LLM) application with prompt flow, you first need to configure any necessary **connections** and **runtimes**.
+Now that you understand the need to ground your language model when building a copilot, you can use prompt flow to create the chatbot application.
 
-## Explore connections
+## Use a sample to create a chat flow
 
-Whenever you want your flow to connect to external data source, service, or API, you need your flow to be authorized to communicate with that external service. When you create a **connection**, you configure a secure link between prompt flow and external services, ensuring seamless and safe data communication.
+Prompt flow provides various samples you can use as a starting point to create an application. When you want to combine RAG and a language model in your application, you can clone the **Multi-round Q&A on your data** sample.
 
-:::image type="content" source="../media/connections.png" alt-text="Diagram showing a flow with two nodes, connecting to Cognitive Search and Azure Open AI.":::
+The sample contains the necessary elements to include RAG and a language model:
 
-Depending on the type of connection you create, the connection securely stores the endpoint, API key, or credentials necessary for prompt flow to communicate with the external service. Any necessary secrets aren't exposed to users, but instead are stored in an Azure Key Vault.
+:::image type="content" source="../media/chat-flow.png" alt-text="Screenshot of the chat flow created with the Q&A sample.":::
 
-By setting up connections, users can easily reuse external services necessary for tools in their flows.
+1. Append the history to the chat input to define a prompt in the form of a contextualized form of a question.
+1. Look up relevant information from your data using your search index.
+1. Generate the prompt context by using the retrieved data from the index to augment the question.
+1. Create prompt variants by adding a system message and structuring the chat history.
+1. Submit the prompt to a language model that generates a natural language response.
 
-Certain built-in tools require you to have a connection configured:
+Let's explore each of these elements in more detail.
 
-|Connection type|Built-in tools|
-|---|---|
-|Azure Open AI|LLM or Python|
-|Open AI|LLM or Python|
-|Cognitive Search|Vector DB Lookup or Python|
-|Serp|Serp API or Python|
-|Custom|Python|
+### Modify query with history
 
-Prompt flow connections play pivotal roles in two scenarios. They automate API credential management, simplifying and securing the handling of sensitive access information. Additionally, they enable secure data transfer from various sources, crucial for maintaining data integrity and privacy across different environments.
+The first step in the flow is a Large Language Model (LLM) node that takes the chat history and the user's last question and generates a new question that includes all necessary information. By doing so, you generate more succinct input that is processed by the rest of the flow.
 
-## Explore runtimes
+### Look up relevant information
 
-After creating your flow, and configuring the necessary connections your tools use, you want to run your flow. To run the flow, you need compute, which is offered through prompt flow **runtimes**.
+Next, you use the Index Lookup tool to query the search index you created with the integrated Azure AI Search feature and find the relevant information from your data source.
 
-:::image type="content" source="../media/runtimes.png" alt-text="Diagram runtimes, compute, and environments in relation to flows.":::
+> [!Tip]
+> Learn more about the [Index Lookup tool](https://learn.microsoft.com/azure/machine-learning/prompt-flow/tools-reference/index-lookup-tool?azure-portal=true).
 
-Runtimes (1) are a combination of a **compute instance** (2) providing the necessary compute resources, and an **environment** (3) specifying the necessary packages and libraries that need to be installed before being able to run the flow.
+### Generate prompt context
 
-When you use runtimes, you have a controlled environment where flows can be run and validated, ensuring that everything works as intended in a stable setting. A default environment is available for quick development and testing. When you require other packages to be installed, you can [create a custom environment](https://learn.microsoft.com/azure/machine-learning/prompt-flow/how-to-customize-environment-runtime?azure-portal=true).
+The output of the Index Lookup tool is the retrieved context you want to use when generating a response to the user. You want to use the output in a prompt that is sent to a language model, which means you want to parse the output into a more suitable format.
+
+The output of the Index Lookup tool can include the top *n* results (depending on the parameters you set). When you generate the prompt context, you can use a Python node to iterate over the retrieved documents from your data source and combine their contents and sources into one document string. The string will be used in the prompt you send to the language model in the next step of the flow.
+
+### Define prompt variants
+
+When you construct the prompt you want to send to your language model, you can use variants to represent different prompt contents.
+
+When including RAG in your chat flow, your goal is to ground the chatbot's responses. Next to retrieving relevant context from your data source, you can also influence the groundedness of the chatbot's response by instructing it to use the context and aim to be factual.
+
+With the prompt variants, you can provide varying system messages in the prompt to explore which content provides the most groundedness.
+
+### Chat with context
+
+Finally, you use an LLM node to send the prompt to a language model to generate a response using the relevant context retrieved from your data source. The response from this node is also the output of the entire flow.
+
+After configuring the sample chat flow to use your indexed data and the language model of your choosing, you can deploy the flow and integrate it with an application to offer users a copilot experience.
