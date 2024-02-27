@@ -2,7 +2,7 @@ Using the Semantic Kernel SDK takes minimal setup. To begin creating your own AI
 
 The steps to get started using the Semantic Kernel SDK are:
 
-1. Install the Semantic Kernel SDK.
+1. Install the Semantic Kernel SDK.<br>
     In Visual Studio Code, you can use the command: `dotnet add package Microsoft.SemanticKernel --version 1.2.0`
 
 2. Navigate to the Azure portal.
