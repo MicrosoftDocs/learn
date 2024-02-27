@@ -46,7 +46,7 @@ SQL Server 2022 provides three actions to `CREATE INDEX` online index operations
 
 ## Improve query performance with WAIT_AT_LOW_PRIORITY
 
-Imagine you're a DBA responsible for maintaining the performance of a busy e-commerce database. You need to create a new index on the Orders table to improve query performance, but you want to minimize how this command affect other transactions.
+Imagine you're a DBA responsible for maintaining the performance of a busy e-commerce database. You need to create a new index on the Orders table to improve query performance, but you want to minimize how this command affects other transactions.
 
 With the `WAIT_AT_LOW_PRIORITY` option in SQL Server 2022, you can achieve this goal by specifying lock wait behavior during online index creation. Here are two examples of choosing to terminate either the create index command or the blocker commands using the `WAIT_AT_LOW_PRIORITY` settings:
 
