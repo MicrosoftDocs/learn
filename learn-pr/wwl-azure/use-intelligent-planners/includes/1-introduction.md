@@ -4,7 +4,7 @@ Suppose you want to create an AI disc jockey that can tailor a user's music list
 
 In this module, you learn about the different ways you can automatically invoke functions using the Semantic Kernel SDK. You can understand how planners can generate plans to accomplish tasks. You also learn how to fine-tune planners to optimize performance.
 
-## Learning Objectives
+## Learning objectives
 
 - Understand planners in the Semantic Kernel SDK.
 - Learn how to use planners to automate function calls.

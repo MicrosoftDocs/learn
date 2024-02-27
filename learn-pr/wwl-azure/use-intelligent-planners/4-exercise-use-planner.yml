@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.use-intelligent-planners.exercise-use-a-planner
+uid: learn.wwl.use-intelligent-planners.exercise-use-planner
 title: Exercise - Create a planner
 metadata:
   title: Exercise - Create a planner
   description: "Exercise - Create a planner"
-  ms.date: 02/26/2024
+  ms.date: 02/27/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-exercise-use-a-planner.md)]
+  [!include[](includes/4-exercise-use-planner.md)]

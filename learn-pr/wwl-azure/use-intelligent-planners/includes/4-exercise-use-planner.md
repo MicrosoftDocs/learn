@@ -66,31 +66,31 @@ Now you're ready to begin the exercise. Good luck!
 
     ```json
     [
-        {"artist": "Mademoiselle", "concerts": [
+        {"artist": "Ly Hoa", "concerts": [
             { "location": "Los Angeles CA, USA", "date": "7/14/2024" },
             { "location": "London, UK", "date": "10/21/2024" },
             { "location": "Berlin, Germany", "date": "11/9/2024" },
             { "location": "Paris, France", "date": "11/23/2024" },
         ]},
-        {"artist": "Kina Grannis", "concerts": [
+        {"artist": "Lisa Taylor", "concerts": [
             { "location": "Portland OR, USA", "date": "2/14/2024" },
             { "location": "Seattle WA, USA", "date": "2/22/2024" },
             { "location": "New York City NY, USA", "date": "4/14/2024" },
             { "location": "Nashville TN, USA", "date": "5/10/2024" },
         ]},
-        {"artist": "Hozier", "concerts": [
+        {"artist": "Henry", "concerts": [
             { "location": "Vancouver, Canada", "date": "2/2/2024" },
             { "location": "Seattle WA, USA", "date": "2/14/2024" },
             { "location": "Los Angeles CA, USA", "date": "3/1/2024" },
             { "location": "Austin TX, USA", "date": "3/10/2024" },
         ]},
-        {"artist": "Kehlani", "concerts": [
+        {"artist": "Gaby", "concerts": [
             { "location": "New York City NY, USA", "date": "2/14/2024" },
             { "location": "Chicago IL, USA", "date": "3/3/2024" },
             { "location": "Los Angeles CA, USA", "date": "5/6/2024" },
             { "location": "Barcelona, Spain", "date": "5/24/2024" },
         ]},
-        { "artist": "Mitski", "concerts": [
+        { "artist": "Nanami", "concerts": [
             { "location": "Portland OR, USA", "date": "4/16/2024" },
             { "location": "Seattle WA, USA", "date": "4/20/2024" },
             { "location": "San Diego, USA", "date": "6/2/2024" },
@@ -176,7 +176,7 @@ Now you're ready to begin the exercise. Good luck!
     You should see output similar to the following response:
 
     ```output
-    Based on the user's recently played songs and their location in Redmond WA USA, a relevant concert recommendation would be the upcoming concert of Kina Grannis in Seattle WA, USA on February 22, 2024. Kina Grannis is an indie-folk artist, and her music genre aligns with the user's recently played songs, such as "Loanh Quanh" by Mademoiselle. Additionally, Seattle is close to Redmond, making it a convenient location for the user to attend the concert.
+    Based on the user's recently played songs and their location in Redmond WA USA, a relevant concert recommendation would be the upcoming concert of Lisa Taylor in Seattle WA, USA on February 22, 2024. Lisa Taylor is an indie-folk artist, and her music genre aligns with the user's recently played songs, such as "Loanh Quanh" by Ly Hoa. Additionally, Seattle is close to Redmond, making it a convenient location for the user to attend the concert.
     ```
 
     Try tweaking your prompt and location to see what other results you can generate.

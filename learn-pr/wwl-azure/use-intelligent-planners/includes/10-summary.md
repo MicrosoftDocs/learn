@@ -2,4 +2,4 @@ In this module, you learned how to use the Handlebars planner to automatically c
 
 ## Reference materials
 
-- You can learn more about planners here: [https://learn.microsoft.com/en-us/semantic-kernel/agents/planners/?tabs=Csharp](/semantic-kernel/agents/planners)
+- You can learn more about planners here: [https://learn.microsoft.com/semantic-kernel/agents/planners/?tabs=Csharp](/semantic-kernel/agents/planners)
