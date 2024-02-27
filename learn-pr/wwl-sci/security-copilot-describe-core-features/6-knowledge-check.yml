@@ -29,12 +29,23 @@ quiz:
       explanation: "The landing page includes more than just the plugins."
   - content: "What are plugins in Microsoft Security Copilot?"
     choices:
-    - content: "Plugins from Microsoft and third-party security products are a means to extend and integrate services with Security Copilot."
+    - content: "Plugins from Microsoft and non-Microsoft security products are a means to extend and integrate services with Security Copilot."
       isCorrect: true
-      explanation: "Plugins bring more context from event logs, alerts, incidents, and policies from both Microsoft security products and supported third-party solutions."
+      explanation: "Plugins bring more context from event logs, alerts, incidents, and policies from both Microsoft security products and supported non-Microsoft solutions."
     - content: "Open-source intelligence feeds that provide guidance specific to your organization."
       isCorrect: false
-      explanation: "Although there can be plugins to Open-source intelligence feeds, plugins provide a much broader set of services.  Plugins provide a means to extent and integrate across many different types of services."
-    - content: "Third-party vendors that provide guidance specific to your organization."
+      explanation: "Although there can be plugins to Open-source intelligence feeds, plugins provide a broader set of services. Plugins provide a means to extent and integrate across many different types of services."
+    - content: "External vendors that provide guidance specific to your organization."
       isCorrect: false
-      explanation: "Although there can be plugins from third-party vendors, they are not the only source of plugins. Plugins are a means to extend and integrate services from Microsoft and third-party vendors, with Security Copilot."
+      explanation: "Although there can be plugins from non-Microsoft vendors, they aren't the only source of plugins. Plugins are a means to extend and integrate services from Microsoft and non-Microsoft solutions, with Security Copilot."
+  - content: "What statement best describes the approach a user would start with to create a custom promptbook?"
+    choices:
+    - content: "Start with an existing session that contains the desired prompts, select the prompts to include, then select the create promptbook icon."
+      isCorrect: true
+      explanation: "To create your own promptbook, you can start with an existing session that contains the prompts you want to work with."
+    - content: "Use the sources icon in the prompt bar then select the upload file option to upload a file with the prompts you want to work with."
+      isCorrect: false
+      explanation: "Creating a custom promptbook doesn't require a user to upload a file. A user starts with an existing session that contains the desired prompts."
+    - content: "Send an email to a user with a global administrator or security administrator role along with a file containing the desired prompts and input parameters."
+      isCorrect: false
+      explanation: "Any user that can create sessions in Copilot can create a custom promptbook."
