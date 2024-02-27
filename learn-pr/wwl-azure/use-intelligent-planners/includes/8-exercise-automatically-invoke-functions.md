@@ -26,7 +26,7 @@ The Semantic Kernel SDK allows you to automatically coordinate functions and pro
     You should see output similar to the following response:
 
     ```output
-    Based on your recently played songs and your location in Portland, OR, I would recommend attending the upcoming concert of Kina Grannis. She will be performing in Portland on April 16, 2024. This concert would be a great opportunity for you to enjoy live music and experience Kina Grannis' beautiful songs.
+    Based on your recently played songs and your location in Portland, OR, I would recommend attending the upcoming concert of Lisa Taylor. She will be performing in Portland on April 16, 2024. This concert would be a great opportunity for you to enjoy live music and experience Lisa Taylor' beautiful songs.
     ```
 
     You can try using different prompts and importing other plugins to see how the output changes!
