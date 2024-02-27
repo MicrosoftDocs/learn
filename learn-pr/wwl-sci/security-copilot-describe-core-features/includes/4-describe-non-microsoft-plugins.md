@@ -1,4 +1,4 @@
-Microsoft Security Copilot supports non-Microsoft plugins to extend Security Copilot's capabilities.  These plugins are categorized as:
+Microsoft Copilot for Security supports non-Microsoft plugins to extend Copilot's capabilities.  These plugins are categorized as:
 - Other
 - Websites
 - Custom
@@ -8,7 +8,7 @@ Microsoft Security Copilot supports non-Microsoft plugins to extend Security Cop
 
 #### Other plugins
 
-Other plugins give Security Copilot access to information and capabilities from services beyond Microsoft that your organization uses. Other plugins currently supported include:
+Other plugins give Copilot access to information and capabilities from services beyond Microsoft that your organization uses. Other plugins currently supported include:
 
 - ServiceNow
 - Splunk
@@ -21,18 +21,18 @@ Access to these plugins assumes an account and license to the specific service a
 
 #### Websites
 
-The websites plugins give Security Copilot access to industry information from the public web.   Currently, only the public web plugin is supported but additional website plugins are expected.
+The websites plugins give Copilot access to industry information from the public web.   Currently, only the public web plugin is supported but additional website plugins are expected.
 
 The website plugins are accessed using anonymous authentication.
 
 #### Custom
 
-The Security Copilot platform enables developers and users to write their own plugins that can be invoked to perform specialized tasks. There are two types of custom plugins:
+The Microsoft Copilot for Security platform enables developers and users to write their own plugins that can be invoked to perform specialized tasks. There are two types of custom plugins:
 
-- Custom Security Copilot plugins that you develop
+- Custom Copilot plugins that you develop
 - Custom plugins developed with OpenAI’s API.
 
-Regardless of the approach, every Security Copilot plugin requires a YAML or JSON formatted manifest file (for example: plugin.yaml or plugin.json) which describes metadata about the skill set and how to invoke the skills.
+Regardless of the approach, every Copilot plugin requires a YAML or JSON formatted manifest file (for example: plugin.yaml or plugin.json) which describes metadata about the skill set and how to invoke the skills.
 
 :::image type="content" source="../media/custom-plugin-v2.png" lightbox="../media/custom-plugin-v2.png" alt-text="Screen capture of the manage plugins menu, highlighting the custom plugins.":::
 
@@ -40,4 +40,4 @@ Regardless of the approach, every Security Copilot plugin requires a YAML or JSO
 
 Once a custom plugin is added, it can be turned on or off, updated, or deleted.  
 
-To Learn more about custom plugins, see [Plugins overview Microsoft Security Copilot](/security-copilot/plugin_overview).
+To Learn more about custom plugins, see [Plugins overview Microsoft Copilot for Security](/security-copilot/plugin_overview).
