@@ -9,9 +9,9 @@ Suppose you want to see different branches of a particular simulation state. To 
 
 In this module, you practice how to: 
 
-- Serialize data to JSON
-- Deserialize JSON data
-- Read and write file data
+- Serialize data to JSON.
+- Deserialize JSON data.
+- Read and write file data.
 
 ## Prerequisites 
 

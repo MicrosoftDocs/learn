@@ -15,7 +15,7 @@ In this exercise, you set up the Windows Presentation Foundation (WPF) applicati
 
     The `Game` class already has all the members necessary to implement the interface.
 
-1. Right-click the WPF folder and click "Open in Integrated Terminal"
+1. Right-click the WPF folder and click "Open in Integrated Terminal".
 
 1. Run the following command to make sure the project builds correctly:
 

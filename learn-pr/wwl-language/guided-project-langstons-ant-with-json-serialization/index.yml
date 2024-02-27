@@ -9,13 +9,14 @@ metadata:
   ms.topic: module
   ms.service: dotnet-csharp
   ms.devlang: csharp
+  ai-usage: human-only
 title: Guided project - Langstons ant with JSON serialization
 summary: This is a guided project that walks you through the steps to implement JSON serialization to save and load Langston's ant simulation states.
 abstract: |
   In this module, you practice how to:
-  - Serialize data to JSON
-  - Deserialize JSON data
-  - Read and write file data
+  - Serialize data to JSON.
+  - Deserialize JSON data.
+  - Read and write file data.
 prerequisites: |
   - Visual Studio Community installed.
   - A GitHub account to clone code repositories.
