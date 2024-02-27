@@ -60,7 +60,7 @@ The prerequisites and deployment paths for Windows Hello for Business are highly
 
 Select Windows Hello for Business and complete the wizard to determine the prerequisites and deployment appropriate for your organization.<br>
 
-:::image type="content" source="../media/passwordless-wizard-select-52e6cad2.png" alt-text="Screenshot showing the security key enforce restriction notification.":::
+:::image type="content" source="../media/passwordless-wizard-select-52e6cad2.png" alt-text="Screenshot showing the Windows Hello for Business configuration page.":::
 
 
 The wizard will use your inputs to craft a step-by-step plan for you to follow.
@@ -187,12 +187,12 @@ Enabling Windows 10 sign-in using FIDO2 security keys requires you to enable the
 
 When you deploy the security key, you can optionally restrict the use of FIDO2 keys only to specific manufacturers that have been approved by your organization. Restricting keys requires the Authenticator Attestation GUID (AAGUID). There are two ways to get your AAGUID.
 
-:::image type="content" source="../media/security-key-enforce-key-restriction-6dd07803.png" alt-text="Screenshot showing the security key enforce restriction notification.":::
+:::image type="content" source="../media/security-key-enforce-key-restriction-6dd07803.png" alt-text="Screenshot showing the Authenticator Attestation user interface settings page.":::
 
 
 1. If the security key is restricted, and the user tries to register the FIDO2 security key, they receive the following error:
 
-:::image type="content" source="../media/security-key-restricted-error-c11372d7.png" alt-text="Screenshot showing the security key restricted error.":::
+:::image type="content" source="../media/security-key-restricted-error-c11372d7.png" alt-text="Screenshot showing the security key restricted error notification.":::
 
 
 2. If the security key is restricted, and the user tries to register the FIDO2 security key, they receive the following error:
