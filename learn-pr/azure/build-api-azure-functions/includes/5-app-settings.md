@@ -13,7 +13,8 @@ An Azure Functions project has a `local.settings.json` file. This file contains 
   "IsEncrypted": false,
   "Values": {
     "AzureWebJobsStorage": "",
-    "FUNCTIONS_WORKER_RUNTIME": "node"
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "AzureWebJobsFeatureFlags": "EnableWorkerIndexing"
   }
 }
 ```
@@ -26,6 +27,7 @@ If you want to add a connection string, you can add another property called "CON
   "Values": {
     "AzureWebJobsStorage": "",
     "FUNCTIONS_WORKER_RUNTIME": "node",
+    "AzureWebJobsFeatureFlags": "EnableWorkerIndexing",
     "CONNECTION_STRING": "AccountEndpoint=https://tailwind-traders-7983.documents.azure.com:443/;AccountKey=DQRvPibrRolFNVoVjyV8s4kBHr3jlixSBTVVJuwCMxG7NSeBmaftVuaXQ3Hi5h4Dw1AQXB0x1jdIqqBw1ZYzUQ==;"
   }
 }
@@ -33,7 +35,9 @@ If you want to add a connection string, you can add another property called "CON
 
 ## Access app settings in Azure Functions code
 
-To access these configuration values in your Azure Functions from JavaScript, see the `process.env` object. It contains all of the key/value pairs that are specified in the `local.settings.json` file.
+To access these configuration values in your Azure Functions from JavaScript, use the `process.env` object. It contains all of the key/value pairs that are specified in the `local.settings.json` file.
+
+The following code found at `./api/src/services/product.services.ts` reads the connection string from the `process.env` object to create the CosmosClient object to access the Azure Cosmos DB service.
 
 ```typescript
 let client = new CosmosClient(process.env.CONNECTION_STRING);

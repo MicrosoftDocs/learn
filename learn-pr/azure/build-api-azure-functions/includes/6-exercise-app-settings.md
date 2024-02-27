@@ -22,6 +22,7 @@ It's time to put some gasoline in this API engine and fire it up. That's an anal
      "Values": {
        "AzureWebJobsStorage": "",
        "FUNCTIONS_WORKER_RUNTIME": "node",
+       "AzureWebJobsFeatureFlags": "EnableWorkerIndexing",
        "CONNECTION_STRING": "PASTE YOUR CONNECTION STRING HERE"
      }
    }
@@ -29,7 +30,7 @@ It's time to put some gasoline in this API engine and fire it up. That's an anal
 
 ## Examine the productsService for the connection string
 
-Open the `api/services/productsService.ts` file.
+Open the `api/services/product.services.ts` file.
 
 Look at line 4. Notice that the connection string is read from the `process.env` variable.
 
@@ -47,6 +48,6 @@ Look at line 4. Notice that the connection string is read from the `process.env`
    http://localhost:7071/api/GetProducts
    ```
 
-Behold the products.
+1. Behold the products.
 
    :::image type="content" source="../media/all-products.png" alt-text="Screenshot of a web browser displaying items in the products collection displayed is JSON format." loc-scope="other"::: <!-- no-loc -->

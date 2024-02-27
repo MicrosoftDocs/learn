@@ -12,57 +12,34 @@ By default, any HTTP trigger function responds to GET and POST requests. It also
 
 #### Change which HTTP request method a function responds to
 
-Each function that's created has a corresponding `function.json` file in the function folder. That file specifies to which HTTP request methods a function responds. The following `function.json` file shows the *GetProducts* function that you created in the previous exercise.
+The _src/index.ts_ file contains the _app_ object which specifies the HTTP methods for each function. The following code block in the _index.ts_ file shows the app configuration of the **GetProducts** function that you created in the previous exercise.
 
-```json
-{
-  "bindings": [
-    {
-      "authLevel": "function",
-      "type": "httpTrigger",
-      "direction": "in",
-      "name": "req",
-      "methods": ["get", "post"]
-    },
-    {
-      "type": "http",
-      "direction": "out",
-      "name": "res"
-    }
-  ],
-  "scriptFile": "../dist/GetProducts/index.js"
-}
+```typescript
+app.http('GetProducts', {
+    methods: ['GET', 'POST'],
+    authLevel: 'anonymous',    
+    handler: GetProducts
+});
 ```
 
-See the `methods` property above? That array specifies which HTTP request methods this function will respond to. If a method that isn't in that list is used, you'll get a 404 error.
 
 #### Change the function route
 
-You can change the URL, or *route* that Azure Functions listens on for a specific function by adding a *routes* parameter in the `function.json` configuration file.
+You can change the URL, or *route* that Azure Functions listens on for a specific function by adding a *route* parameter to the route defintion in _index.ts_.
 
 ```json
 "route": "products"
 ```
 
-```json
-{
-  "bindings": [
-    {
-      "authLevel": "function",
-      "type": "httpTrigger",
-      "direction": "in",
-      "name": "req",
-      "methods": ["get", "post"],
-      "route": "products"
-    },
-    {
-      "type": "http",
-      "direction": "out",
-      "name": "res"
-    }
-  ],
-  "scriptFile": "../dist/GetProducts/index.js"
-}
+The full route definition is:
+
+```typescript
+app.http('GetProducts', {
+    methods: ['GET', 'POST'],
+    route: 'products',          // <- route: /api/products
+    authLevel: 'anonymous',
+    handler: GetProducts
+});
 ```
 
 Specifying a route changes everything after the *api* section of the URL. In the previous configuration file, the route to the *GetProducts* function is now `http://localhost:7071/api/products`.
@@ -70,7 +47,7 @@ Specifying a route changes everything after the *api* section of the URL. In the
 You can pass parameters along with a route. Parameters take the form of *{parameterName}*. This means that to pass a parameter called `id` to the `product` endpoint, you'd specify the following route.
 
 ```json
-"route": "product/{id}"
+"route": "products/{id}"
 ```
 
 Armed with this new knowledge of REST and how to implement it in Azure Functions, you can now make that unwieldy Products API a *RESTful* one. That's exactly what you'll do in the next exercise.
