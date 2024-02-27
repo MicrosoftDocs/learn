@@ -5,23 +5,3 @@ Pretend for a moment, if you will, that you work for a large online hardware ret
 Tailwind Traders is a global corporation with a massive online retail operation. You also have brick-and-mortar stores in just about every major city in the world. One of your most critical tasks is keeping up with the inventory of products that you carry.
 
 Logistics specialists need to manage the inventory from all over the globe. You never know when the buying mood will strike, so customer demand can dramatically increase and decrease without warning. When that happens, the inventory management tool's usage spikes. Thousands of inventory managers also use the tool to keep up with demand. Your mission is to create an HTTP API that a lightweight web front end can consume. The whole app needs to be fast and global. It also needs to scale up automatically when traffic unexpectedly spikes without costing a fortune when traffic is low.
-
-## Learning objectives
-
-In this module, you will:
-
-- Build an HTTP API using the Azure Functions extension for Visual Studio Code.
-- Securely store sensitive data like database connection strings.
-- Learn how to modify Azure Functions to make them RESTful.
-- Specify who can access the API using Cross-Origin Resource Sharing (CORS).
-
-## Prerequisites
-
-Must have:
-
-- Basic understanding of web services and API concepts, including HTTP Methods and REST
-- Knowledge of Azure Functions, including HTTP Triggers
-- [Node.js](https://nodejs.org/en/) installed
-- [Visual Studio Code](https://code.visualstudio.com/) installed
-- [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) installed
-- [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) extension installed

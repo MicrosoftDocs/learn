@@ -17,39 +17,63 @@ It's time to deliver on those lofty buzzwords. Now, you need to create a new pro
    | Name          | Value        |
    | ------------- | ------------ |
    | Language      | TypeScript   |
-   | Select a TypeScript Programming Model | Model V3 |
+   | Select a TypeScript Programming Model | Model V4 |
    | Template      | HTTP trigger |
    | Name          | GetProducts  |
    | Authorization | Function     |
 
-1. When asked to overwrite the `package.json` file, make sure you select **No**.
+1. When asked to overwrite the `.gitignore` or `package.json` file, make sure you select **No**.
 
-    The *api* folder in Visual Studio Code now contains an Azure Functions project along with a new function called *GetProducts*. Several other required project files are also added, including `host.json` and `local.settings.json`.
+    The _functions_ folder in _api/src_ now contains a new Azure Functions app with a function at _api/src/functions/GetProducts.ts_. Several other required project files are also added, including `host.json` and `local.settings.json`.
 
-1. Replace the code in the *GetProducts/index.ts* file with the following code.
+1. Replace the code in the *GetProducts.ts* file with the following code.
 
    ```typescript
-   import { AzureFunction, Context, HttpRequest } from "@azure/functions";
-   import productsService from "../services/productsService";
-
-   const httpTrigger: AzureFunction = async function (
-     context: Context,
-     req: HttpRequest
-   ): Promise<void> {
-     let response;
-
-     try {
-       let products = await productsService.read();
-       response = { body: products, status: 200 };
-     } catch (err) {
-       response = { body: err.message, status: 500 };
-     }
-
-     context.res = response;
-   };
-
-   export default httpTrigger;
+    import { HttpRequest, HttpResponseInit, InvocationContext } from "@azure/functions";
+    import productService from "../services/product.services";
+    
+    export async function GetProducts(request: HttpRequest, context: InvocationContext): Promise<HttpResponseInit> {
+        context.log(`Http function processed request for url "${request.url}"`);
+        
+        try{
+            let products = await productService.read();
+            
+            return {
+                status: 200,
+                jsonBody: {
+                    products,
+                }
+            };
+        } catch (error: unknown) {
+            const err = error as Error;
+            context.error(`Error listing product: ${err.message}`);
+        
+            return {
+              status: 500,
+              jsonBody: {
+                error: "Failed to list products",
+              },
+            };
+        }
+    };
    ```
+
+1. In the `src/index.ts`, add this import statement.
+
+    ```typescript
+    import { GetProducts } from "./functions/GetProducts";
+    ```
+    
+1. In the `src/index.ts`, add the handler for the route definition.
+
+    ```typescript
+    app.http('GetProducts', {
+        methods: ['GET', 'POST'],
+        authLevel: 'anonymous',
+        handler: GetProducts
+    });
+    ```
+    
 
 ## Examine the Create, Update, and Delete functions
 
