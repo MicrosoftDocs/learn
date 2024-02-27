@@ -145,7 +145,7 @@ Complete the following steps to verify that your app still works:
     echo "http://$(kubectl get services --namespace ingress-nginx ingress-nginx-controller --output jsonpath='{.status.loadBalancer.ingress[0].ip}')"
     ```
 
-    The above command returns the external IP address for the web app. Hold <kbd>CTRL</kbd> and click the link to open the app in a new tab.
+    The above command returns the external IP address for the web app. Hold <kbd>CTRL</kbd> and select the link to open the app in a new tab.
 
 Go to the products page to view the new tent listed at the bottom of the page.
 

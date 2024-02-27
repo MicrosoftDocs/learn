@@ -43,7 +43,7 @@ quiz:
     - content: "Docker images allow hosts to perform load-balancing and routing."
       isCorrect: false
       explanation: "Orchestrators allow hosts to perform load-balancing and routing."
-  - content: "Why would a developer write a Dockerfile?"
+  - content: "What's the difference between a container and an image?"
     choices:
     - content: "To create the initialization routine for the Docker engine."
       isCorrect: false

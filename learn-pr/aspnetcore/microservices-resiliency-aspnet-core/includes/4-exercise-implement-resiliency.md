@@ -4,13 +4,13 @@ The current version of the app has no resiliency handling. If the `Product` serv
 
 You've been asked to add resilience to the app, so that the `Store` service retries the backend service call if it fails.
 
-In this exercise, you add resiliency to an existing cloud-native app and test that your fix has worked.
+In this exercise, you add resiliency to an existing cloud-native app and test your fix.
 
 ## Open the development environment
 
 You can choose to use a GitHub codespace that hosts the exercise, or complete the exercise locally in Visual Studio Code.
 
-To use a **codespace** create a pre-configured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-resiliency%2Fdevcontainer.json).
+To use a **codespace**, create a preconfigured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-resiliency%2Fdevcontainer.json).
 
 GitHub takes several minutes to create and configure the codespace. When it's finished, you see the code files for the exercise. The code that's used for the remainder of this module is in the **/dotnet-resiliency** directory.
 
@@ -42,7 +42,7 @@ To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslear
 
 1. In the bottom panel, select to the **PORTS** tab, then in the Forwarded Address column of the table, select the **Open in Browser** icon for the **Front End (32000**) port. 
 
-    If you are running this locally open a browser window to view [http://localhost:32000/products](http://localhost:32000/products).
+    If you're running this locally open a browser window to view [http://localhost:32000/products](http://localhost:32000/products).
 
 1. The eShop app should be running. Select the **Products** menu item on the left, you should see the list of products.
 
@@ -119,7 +119,7 @@ The first steps to make your app more resilient are to add the `Microsoft.Extens
 
 1. In the **EXPLORER** sidebar, select **Program.cs**.
 
-1. At the top of the file add the following using statement:
+1. At the top of the file, add the following using statement:
 
     ```csharp
     using Microsoft.Extensions.Http.Resilience;
@@ -127,7 +127,7 @@ The first steps to make your app more resilient are to add the `Microsoft.Extens
 
 ### Add a standard resilience strategy
 
-1. At Line 13, before the *;*, add this code:
+1. At Line 13, before the **;**, add this code:
 
     ```csharp
     .AddStandardResilienceHandler()
@@ -188,7 +188,7 @@ The first steps to make your app more resilient are to add the `Microsoft.Extens
     eshoplite-frontend-1  |       Execution attempt. Source: 'ProductService-standard//Standard-Retry', Operation Key: '', Result: 'Name or service not known (backend:8080)', Handled: 'True', Attempt: '2', Execution Time: '27.2703'
     ```
 
-    You should see a number of messages like this; each one is a retry attempt. The above message shows the second attempt, and the time it took to execute.
+    You should see a lot of messages like this; each one is a retry attempt. The above message shows the second attempt, and the time it took to execute.
 
 ### Configure a resilience strategy
 
@@ -219,7 +219,7 @@ In this example, you'd like the store service to wait a little longer, to give t
     docker compose up
     ```
 
-    Stop the backend service conainer in the bash terminal and refresh the eShop; you'll see that it takes longer to see the error message. If you check the logs though, you can see that the retry strategy only retried five times. The last message from Polly is:
+    Stop the backend service container in the bash terminal and refresh the eShop; you'll see that it takes longer to see the error message. If you check the logs though, you can see that the retry strategy only retried five times. The last message from Polly is:
 
     ```bash
     Polly.Timeout.TimeoutRejectedException: The operation didn't complete within the allowed timeout of '00:00:30'.
@@ -262,7 +262,7 @@ In this example, you'd like the store service to wait a little longer, to give t
 
 To help test the app in your container, use the Docker extension. This allows you to use a GUI to view and control the state of containers.
 
-1. From the left menu select the **Docker** icon.
+1. From the left menu, select the **Docker** icon.
 
     :::image type="content" source="../media/docker-extension.png" alt-text="A screenshot of the docker extension, showing how to stop the products service."  lightbox="../media/docker-extension.png":::
 

@@ -7,7 +7,7 @@ In this exercise, you create a microservice endpoint and containerize it by usin
 
 You can choose to use a GitHub codespace that hosts the exercise, or complete the exercise locally in Visual Studio Code.
 
-To use a **codespace** create a pre-configured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-docker%2Fdevcontainer.json).
+To use a **codespace**, create a preconfigured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-docker%2Fdevcontainer.json).
 
 GitHub takes several minutes to create and configure the codespace. When it's finished, you see the code files for the exercise. The code that's used for the remainder of this module is in the **/dotnet-docker** directory.
 
@@ -62,7 +62,7 @@ The latest .NET 8 release has improved support for containerization. You can use
 
 If you want more control of how the images are built, you can use a Dockerfile to create an image for the Products web service. 
 
-1. In the **EXPLORER** pane, open the file named **./dotnet-docker/Products/Dockerfile**. The file will be empty.
+1. In the **EXPLORER** pane, open the file named **./dotnet-docker/Products/Dockerfile**. The file is empty.
 1. Enter the following code:
 
     ```dockerfile
@@ -95,7 +95,7 @@ If you want more control of how the images are built, you can use a Dockerfile t
   	RUN dotnet publish -c release -o /app
   	```
 	
-    This code will do the following steps sequentially when invoked:
+    This code does the following steps sequentially when invoked:
     
       - Set the working directory within the image to `/src`.
       - Copy the file named **Products.csproj** found locally to the `/src` directory that you created.
@@ -115,7 +115,7 @@ If you want more control of how the images are built, you can use a Dockerfile t
   	ENTRYPOINT ["dotnet", "Products.dll"]
   	```
 
-  	This code will do the following steps sequentially when invoked:
+  	This code does the following steps sequentially when invoked:
   
       - Pull the `mcr.microsoft.com/dotnet/aspnet:8.0` image.
       - Set the working directory within the image to `/app`.
@@ -136,7 +136,7 @@ Having completed the Dockerfile, the next step is to use it to create a Docker i
 
   	This runs the commands in **Dockerfile** in the current directory and applies the tag **productsbackend:latest** to the resulting image.
 
-1. After much output, the image will be built. Entering `docker images` will show you a list of all images in your codespace including **productsbackend**. The other image is the one for the codespace itself.
+1. After much output, the image will be built. Entering `docker images` shows you a list of all images in your codespace including **productsbackend**. The other image is the one for the codespace itself.
 
     You'll see output like this:
 

@@ -23,7 +23,7 @@ Before applying Linkerd, revert the app to a state before code-based resiliency 
 
 ### Install Kubernetes
 
-In your codespace you'll now install Kubernetes and k3d. k3d is a tool that runs a single-node Kubernetes cluster inside a VM on your local machine. It's useful for testing Kubernetes deployments locally and runs well inside a codespace.
+In your codespace, you'll now install Kubernetes and k3d. k3d is a tool that runs a single-node Kubernetes cluster inside a VM on your local machine. It's useful for testing Kubernetes deployments locally and runs well inside a codespace.
 
 Run these commands to install Kubernetes and MiniKube:
 
@@ -114,7 +114,7 @@ At the moment you've defined how your app runs in docker. Kubernetes uses a diff
 
 ### Install linkerd
 
-The dev container needs Linkerd CLI to be installed. Run the following command to confirm that Linkerd prerequisites have been satisfied:
+The dev container needs Linkerd CLI to be installed. Run the following command to confirm that Linkerd prerequisites are satisfied:
 
 ```bash
 curl -sL run.linkerd.io/install | sh
@@ -369,7 +369,7 @@ serviceprofile.linkerd.io/backend created
 ```
 ### Install monitoring on the service mesh
 
-Linkerd has extensions to give you additional features. You'll install the viz extension and view the status of the app in Linkerd's dashboard.
+Linkerd has extensions to give you extra features. You'll install the viz extension and view the status of the app in Linkerd's dashboard.
 
 1. In the terminal, run this command to install the extension:
 
@@ -406,7 +406,7 @@ After the redeployed containers are healthy, use the following steps to test the
     kubectl scale deployment productsbackend --replicas=0
     ```
 
-1. Go to the eShop web app and try to view the products. There will be a delay until the error message, "There is a problem loading our products. Please try again later."
+1. Go to the eShop web app and try to view the products. There will be a delay until the error message, "There's a problem loading our products. Please try again later."
 
 1. Restart the product service pods:
 

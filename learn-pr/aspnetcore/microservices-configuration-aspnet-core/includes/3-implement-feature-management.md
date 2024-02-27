@@ -15,7 +15,7 @@ In this unit, you will:
 
 You can choose to use a GitHub codespace that hosts the exercise, or complete the exercise locally in Visual Studio Code.
 
-To use a **codespace** create a pre-configured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-feature-flags%2Fdevcontainer.json).
+To use a **codespace**, create a preconfigured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-feature-flags%2Fdevcontainer.json).
 
 GitHub takes several minutes to create and configure the codespace. When it's finished, you see the code files for the exercise. The code that's used for the remainder of this module is in the **/dotnet-feature-flags** directory.
 
@@ -119,7 +119,7 @@ You'll now add the App Configuration connection string to the application. Compl
       - ConnectionStrings:AppConfig=Endpoint=https://eshop-app-features1168054702.azconfig.io;Id=<ID>;Secret=<Secret value>
     ```
 
-The preceding line represents a key-value pair, in which `ConnectionStrings:AppConfig` is an environment variable name. In the *:::no-loc text="Store":::* project, the environment variables configuration provider will read its value.
+The preceding line represents a key-value pair, in which `ConnectionStrings:AppConfig` is an environment variable name. In the *:::no-loc text="Store":::* project, the environment variables configuration provider reads its value.
 
 > [!TIP]
 > Your Azure App Configuration connection string contains a plain-text secret. In real world apps, consider integrating App Configuration with Azure Key Vault for secure storage of secrets. Key Vault is out of scope for this module, but guidance can be found at [Tutorial: Use Key Vault references in an ASP.NET Core app](/azure/azure-app-configuration/use-key-vault-references-dotnet-core).
@@ -212,7 +212,7 @@ Apply the following changes to your **:::no-loc text="Store":::** project:
 Your app can now read the feature flag, but the products page needs to be updated to show that a sale is on. Complete the following steps:
 
 1. Open the **:::no-loc text="Store/Components/Pages/Products.razor":::** file.
-1. At the top of the file add the following code:
+1. At the top of the file, add the following code:
 
     ```csharp
     @using Microsoft.FeatureManagement
@@ -280,8 +280,8 @@ To verify the feature flag works as expected in a codespace, complete the follow
 1. Switch to the **PORTS** tab, then to the right of the local address for the **Front End** port, select the globe icon. The browser opens a new tab at the homepage.
 1. Select **Products**.
 
-If you are using Visual Studio Code locally, open **http://localhost:32000/products**.
+If you're using Visual Studio Code locally, open **http://localhost:32000/products**.
 
 :::image type="content" source="../media/sale-alert.png" alt-text="A screenshot showing the sale alert on the products page." border="true" lightbox="../media/sale-alert.png":::
 
-In the Azure portal you can enable and disable the feature flag and refresh the products page to see the flag in action.
+In the Azure portal, you can enable and disable the feature flag and refresh the products page to see the flag in action.
