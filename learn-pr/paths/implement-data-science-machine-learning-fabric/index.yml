@@ -13,8 +13,6 @@ prerequisites: |
   You should be familiar with basic data concepts and terminology.
 summary: |
   Explore the data science process and learn how to train machine learning models to accomplish artificial intelligence in Microsoft Fabric.
-  > [!NOTE]
-  > The Applied Skills assessment for this learning path will be available in April.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner

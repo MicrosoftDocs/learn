@@ -43,7 +43,7 @@ roles:
 products:
 - azure
 subjects:
-- business-continuity
+- site-reliability-engineering
 units:
 - learn.cmu-cloud-admin.cmu-disaster-recovery-backup.0-introduction
 - learn.cmu-cloud-admin.cmu-disaster-recovery-backup.1-failures-fault-tolerance
