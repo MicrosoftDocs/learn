@@ -11,6 +11,7 @@ metadata:
   - N/A
   ms.service: cosmos-db
   ms.subservice: nosql
+  ai-usage: human-only
 title: Implement backup and restore for Azure Cosmos DB for NoSQL
 summary: We will learn to use the two backup models Azure Cosmos DB provides.
 abstract: |
