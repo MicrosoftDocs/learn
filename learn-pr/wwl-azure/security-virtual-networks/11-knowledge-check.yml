@@ -38,17 +38,6 @@ quiz:
     - content: "VPN gateway"
       isCorrect: false
       explanation: "Incorrect. A VPN gateway is used to send traffic between an Azure virtual network and an on-premises location over the public internet. While it can also be used to send traffic between Azure virtual networks, it is not the most efficient option for connecting two virtual networks within the same region."
-  - content: "A network security group is associated with a virtual machine's network interface. The security rules in the network security group are processed for inbound traffic. If the network security group allows port 80 inbound, which of the following will process the traffic?"
-    choices:
-    - content: "The security rules in the network security group associated with the network interface"
-      isCorrect: true
-      explanation: "Correct. The security rules in the network security group associated with the network interface are processed first for inbound traffic."
-    - content: "The security rules in the network security group associated with the subnet and the network interface"
-      isCorrect: false
-      explanation: "Incorrect. The security rules in the network security group associated with the network interface are processed first."
-    - content: "The security rules in the network security group associated with the subnet"
-      isCorrect: false
-      explanation: "Incorrect. The security rules in the network security group associated with the network interface are processed first."
   - content: "A company wants to establish network topologies that combine cross premises connectivity with inter virtual network connectivity. Which Azure feature allows them to do this?"
     choices:
     - content: "Azure Virtual Network Gateway"
@@ -71,3 +60,14 @@ quiz:
     - content: "By encrypting all traffic within Azure virtual networks"
       isCorrect: false
       explanation: "Network Watcher focuses on monitoring and diagnostics rather than encryption."
+  - content: "What is the primary purpose of Network Security Groups (NSGs) in Azure Virtual Networks?"
+    choices:
+    - content: "To provide DNS resolution services for virtual networks"
+      isCorrect: false
+      explanation: "Incorrect because NSGs are used to filter network traffic to and from Azure resources in an Azure virtual network, not to provide DNS services."
+    - content: "To filter network traffic to and from Azure resources within an Azure Virtual Network"
+      isCorrect: true
+      explanation: "Correct because NSGs allow or deny network traffic to resources within a virtual network. They can be associated with either subnets or individual VM instances, providing a way to enforce and control access policies at a granular level."
+    - content: "To automate the deployment of virtual machines"
+      isCorrect: false
+      explanation: "Incorrect because NSGs are used for controlling access to resources within a virtual network by permitting or denying network traffic, not for automating deployments."
