@@ -29,7 +29,7 @@ roles:
 products:
 - azure-monitor
 subjects:
-- business-continuity
+- site-reliability-engineering
 units:
 - learn.wwl.configure-azure-monitor.introduction
 - learn.wwl.configure-azure-monitor.describe-key-capabilities
