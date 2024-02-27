@@ -35,7 +35,7 @@ units:
 - learn.wwl.build-your-kernel.why-use-semantic-kernel
 - learn.wwl.build-your-kernel.how-build-your-kernel
 - learn.wwl.build-your-kernel.exercise-create-your-endpoint
-- learn.wwl.build-your-kernel.exercise-build-a-kernel-object
+- learn.wwl.build-your-kernel.exercise-build-kernel-object
 - learn.wwl.build-your-kernel.knowledge-check
 - learn.wwl.build-your-kernel.summary
 badge:

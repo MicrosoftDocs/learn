@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.build-your-kernel.exercise-build-a-kernel-object
+uid: learn.wwl.build-your-kernel.exercise-build-kernel-object
 title: Exercise - Build a kernel object
 metadata:
   title: Exercise - Build a kernel object
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/6-exercise-build-a-kernel-object.md)]
+  [!include[](includes/6-exercise-build-kernel-object.md)]
