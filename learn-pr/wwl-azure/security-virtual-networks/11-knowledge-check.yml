@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/20/2024
+  ms.date: 02/27/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -16,17 +16,6 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "A company is migrating their applications to a PaaS environment. They want to ensure that their security perimeter is strong and secure. Which of the following is a best practice for managing the identity perimeter?"
-    choices:
-    - content: "Store credentials and secrets in source code or GitHub."
-      isCorrect: false
-      explanation: "Incorrect. Storing credentials and secrets in public code repositories such as GitHub can lead to unauthorized access by attackers."
-    - content: "Use network-centric thinking to define the primary security perimeter."
-      isCorrect: false
-      explanation: "Incorrect. Network-centric thinking is less relevant in PaaS environments where broad network access is a key characteristic of cloud computing."
-    - content: "Secure keys and credentials using a centralized solution such as Azure Key Vault."
-      isCorrect: true
-      explanation: "Correct. A centralized solution such as Azure Key Vault can safeguard keys and secrets by encrypting them using hardware security modules (HSMs), providing an additional layer of security for PaaS deployments."
   - content: "A company wants to configure network security as a natural extension of an application's structure. They want to group virtual machines and define network security policies based on those groups. Which Azure feature should they use?"
     choices:
     - content: "Network Security Group (NSG)"
@@ -71,3 +60,14 @@ quiz:
     - content: "Azure Resource Manager"
       isCorrect: false
       explanation: "Incorrect. Azure Resource Manager is a deployment model used to manage resources in Azure."
+  - content: "How does Network Watcher help monitor network security in Azure?"
+    choices:
+    - content: "By providing real-time threat detection and prevention"
+      isCorrect: false
+      explanation: "While Network Watcher offers monitoring capabilities, it doesn't provide real-time threat detection and prevention."
+    - content: "By enabling monitoring of network traffic flow and identifying security rule violations."
+      isCorrect: true
+      explanation: "Network Watcher helps identify and diagnose network issues, including security rule violations, by providing insights into network traffic flow and connectivity."
+    - content: "By encrypting all traffic within Azure virtual networks"
+      isCorrect: false
+      explanation: "Network Watcher focuses on monitoring and diagnostics rather than encryption."
