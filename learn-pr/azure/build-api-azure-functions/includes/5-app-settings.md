@@ -28,7 +28,7 @@ If you want to add a connection string, you can add another property called "CON
     "AzureWebJobsStorage": "",
     "FUNCTIONS_WORKER_RUNTIME": "node",
     "AzureWebJobsFeatureFlags": "EnableWorkerIndexing",
-    "CONNECTION_STRING": "AccountEndpoint=https://tailwind-traders-7983.documents.azure.com:443/;AccountKey=DQRvPibrRolFNVoVjyV8s4kBHr3jlixSBTVVJuwCMxG7NSeBmaftVuaXQ3Hi5h4Dw1AQXB0x1jdIqqBw1ZYzUQ==;"
+    "CONNECTION_STRING": "PASTE YOUR CONNECTION STRING HERE"
   }
 }
 ```

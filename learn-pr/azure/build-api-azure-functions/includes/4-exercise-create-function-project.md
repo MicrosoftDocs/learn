@@ -20,7 +20,6 @@ It's time to deliver on those lofty buzzwords. Now, you need to create a new pro
    | Select a TypeScript Programming Model | Model V4 |
    | Template      | HTTP trigger |
    | Name          | GetProducts  |
-   | Authorization | Function     |
 
 1. When asked to overwrite the `.gitignore` or `package.json` file, make sure you select **No**.
 

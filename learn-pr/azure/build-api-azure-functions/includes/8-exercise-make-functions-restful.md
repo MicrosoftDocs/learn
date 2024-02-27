@@ -7,7 +7,7 @@ The Products Manager API is about to get serious style upgrade courtesy of you, 
 1. In the route definition for **GetProducts**, restrict the `methods` property so that it only contains the value `GET`.
 
    ```json
-   "methods": ["GET"]
+   methods: ['GET']
    ```
 
 1. Add the `route` property with a value of `products` for a full route of `/api/products`.
@@ -38,7 +38,7 @@ The Products Manager API is about to get serious style upgrade courtesy of you, 
 1. Still in the `api/src/index.ts` file, restrict the allowed `methods` property to `POST`.
 
    ```json
-   methods: ["POST"]
+   methods: ['POST']
    ```
 
 1. Add the `route` property with a value of `products` for a full route of `/api/products`.
@@ -66,7 +66,7 @@ The Products Manager API is about to get serious style upgrade courtesy of you, 
 1. Still in the `api/src/index.ts` file, restrict the allowed `methods` property to `PUT`.
 
    ```json
-   methods: ["PUT"],
+   methods: ['PUT'],
    ```
 
 1. Add the `route` property with a value of `products` for a full route of `/api/products`.
@@ -94,7 +94,7 @@ The Products Manager API is about to get serious style upgrade courtesy of you, 
 1. Still in the `api/src/index.ts` file, restrict the allowed `methods` property to `DELETE`.
 
    ```json
-    methods: ["DELETE"]
+    methods: ['DELETE']
    ```
 
 1. Update the route to use the product id as a route parameter.

@@ -28,7 +28,7 @@ app.http('GetProducts', {
 You can change the URL, or *route* that Azure Functions listens on for a specific function by adding a *route* parameter to the route defintion in _index.ts_.
 
 ```json
-"route": "products"
+route: "products"
 ```
 
 The full route definition is:
@@ -47,7 +47,7 @@ Specifying a route changes everything after the *api* section of the URL. In the
 You can pass parameters along with a route. Parameters take the form of *{parameterName}*. This means that to pass a parameter called `id` to the `product` endpoint, you'd specify the following route.
 
 ```json
-"route": "products/{id}"
+route: "products/{id}"
 ```
 
 Armed with this new knowledge of REST and how to implement it in Azure Functions, you can now make that unwieldy Products API a *RESTful* one. That's exactly what you'll do in the next exercise.
