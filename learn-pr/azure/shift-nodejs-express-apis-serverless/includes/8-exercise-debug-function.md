@@ -3,38 +3,46 @@ In this exercise, you run and debug the Angular application and the Azure Functi
 >[!NOTE]
 >The files _.vscode/launch.json_ and _.vscode/tasks.json_ are integral to the debugging experience for this project.
 
+## Start Azurite for local functions storage
+
+Azure Functions uses Azure Storage to store its data. You can use Azurite, a local emulator for Azure Storage, to run the Functions app locally. Azurite provides a local environment that emulates the Azure Blob, Queue, and Table services for development purposes.
+
+1. Open a new terminal in Visual Studio Code. 
+1. Run the following command to start Azurite.
+
+    ```bash
+    npx -y azurite --location ./.azurite/data --debug ./.azurite/logs
+    ```
+
+    This command installs azurite and starts it in the current directory. The `--location` flag specifies the location of the data, and the `--debug` flag specifies the location of the logs.
+
+1. Open the `.gitignore` file and add the following line to ignore the Azurite data and logs.
+
+    ```plaintext
+    .azurite
+    ```
+
+    This line ensures that the Azurite data and logs are not committed to the repository.
+
 ## Set breakpoints
 
-When the application launches, Angular requests the vacations data from the Functions application. The two applications work together to get the data and render it in the browser.
+When the full-stack application launches, the Angular front-end client requests the vacations data from the Functions back-end application. The two applications work together to get the data and render it in the browser.
 
-To display a list of vacations, the Angular application runs the `getVacations()` function in the _vacations.component.ts_ file, which calls the `vacations` endpoint in the Azure Functions API. The file _functions/vacations-get/index.ts_ defines the endpoint's route. Set breakpoints in these files, so during debugging you can step through the code that fetches the vacations.
+To display a list of vacations, the Angular application runs the `getVacations()` function in the _vacations.component.ts_ file, which calls the `vacations` endpoint in the Azure Functions API. The file _functions/getVacations.ts_ defines the endpoint's route. Set breakpoints in these files, so during debugging you can step through the code that fetches the vacations.
 
 1. In Visual Studio Code, open the application's _src/app/vacations/vacations.component.ts_ file, and locate the `getVacations()` function.
 1. Set a breakpoint by selecting the editor's gutter to the left of the first line of code, `this.vacationService.getAll();`, inside the `getVacations()` function.
 
    :::image type="content" source="../media/3-first-breakpoint.png" alt-text="Screenshot of the first breakpoint to set in Visual Studio Code.":::
 
-1. Open the _functions/services/vacations.service.ts_ file, and locate the following code:
-
-   ```typescript
-   async function getVacations({ req, res }: Context) {
-     try {
-       const vacations = data.getVacations();
-       res.status(200).json(vacations);
-     } catch (error) {
-       res.status(500).send(error);
-     }
-   }
-   ```
-
-1. Set a breakpoint by selecting the editor's gutter to the left of the `try {` line.
+1. Open the _functions/src/functions/getVacations.ts_ file, and set a breakpoint by selecting the editor's gutter to the left of the `try {` line.
 
 ## Run and debug the application
 
 Now that you have breakpoints in both the Angular and the Functions apps, you can step through and debug them together.
 
->[!NOTE]
->You don't run the functions in Azure yet. You're using core tools to run and debug locally.
+> [!NOTE]
+> You don't run the functions in Azure yet. You're using Azure Functions Core Tools (CLI) to run and debug locally.
 
 ### Proxy the requests from Angular to Functions
 

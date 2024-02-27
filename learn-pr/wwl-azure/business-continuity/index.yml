@@ -27,7 +27,7 @@ roles:
 products:
 - azure-backup
 subjects:
-- business-continuity
+- site-reliability-engineering
 units:
 - learn.wwl.business-continuity.introduction
 - learn.wwl.business-continuity.troubleshoot-backup-issues

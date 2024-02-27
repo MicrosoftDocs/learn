@@ -10,6 +10,9 @@ In order to set up the database for the bus-catching scenario, you first need to
 
 These scripts should take three to five minutes to complete. Be sure to note your password, unique ID, and region, because they won't be shown again.
 
+> [!TIP]
+> You can use **CTRL** + **Shift** + **V** to paste commands into Cloud Shell. **CTRL** + **V** won't work.
+
 1. Start by obtaining your local public IP address. Ensure that you're disconnected from any VPN service, and open a local PowerShell terminal on your device. Run the following command, and note the resulting IP address.
 
     ```powershell
@@ -21,15 +24,15 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 1. Run the following commands in Cloud Shell. Enter a **complex password** and, at the prompt, enter your local public IP address, which you obtained in the preceding step.
 
-    > [!Note]
+    > [!NOTE]
     > A **complex password** must consist of:
     >
     > * 8 characters minimum and 16 characters maximum
     > * Requires 3 out of 4 of the following:
-    >    * Lowercase characters
-    >    * Uppercase characters
-    >    * Numbers ( 0-9 )
-    >    * Symbols ( @ # $ % ^ & * - _  + = [ ] { } | \ : ' , . ? / ` ~ " ( ) ; )
+    >   * Lowercase characters
+    >   * Uppercase characters
+    >   * Numbers ( 0-9 )
+    >   * Symbols ( @ # $ % ^ & * - _  + = [ ] { } | \ : ‘ , . ? / ` ~ “ ( ) ; )
 
     ```powershell
     # Collect password 
@@ -40,7 +43,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     Write-Host "Password and IP Address stored"
     ```
 
-1. Output and store in a text file the information you'll need throughout the module by running the following code in Cloud Shell. You'll likely need to press Enter after you paste the code, because the last line won't be run by default.
+1. Output and store in a text file the information you'll need throughout the module by running the following code in Cloud Shell. You'll likely need to press **Enter** after you paste the code, because the last line won't be run by default.
 
     ```powershell
     # Get resource group and location and random string
@@ -93,8 +96,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
     The script will take several minutes to complete. There are four main commands in the preceding block; let's break them down. The first command creates an Azure SQL Database logical server, which serves as the instance to connect to and as a way for grouping metadata and policy settings for all databases assigned to that server. The next two commands create two firewall rules: one to allow your IP address to connect and one to allow other Azure services to connect. This setting will be especially useful when you set up CI/CD pipelines using Azure DevOps and/or GitHub Actions.
 
-    The final command deploys a database into that logical server. From the commands, you can tell the database is a General Purpose, Serverless database with a range of virtual cores between 0.5 and 4. Serverless is meant for intermittent, unpredictable usage with lower average compute utilization over time. Serverless provides automatic compute scaling to simplify performance management and is billed only for the amount of compute used. Serverless also supports automatic pausing and resuming to help further price optimize. When your database is paused, you pay only for storage. Serverless is a great solution for the bus catching scenario as it's in development phase (not used
- 24/7) and it's unknown how popular it will be when you launch (how much compute it will need).
+    The final command deploys a database into that logical server. From the commands, you can tell the database is in the General Purpose service tier with four vCores, and in the Serverless compute tier with a range of virtual cores between 0.5 and 4. The Serverless compute tier is meant for intermittent, unpredictable usage with lower average compute utilization over time.  The Serverless compute tier provides automatic compute scaling to simplify performance management and is billed only for the amount of compute used.  The Serverless compute tier also supports automatic pausing and resuming to help further price optimize. When your database is paused, you pay only for storage. The Serverless compute tier is a great solution for the bus-catching scenario as it's in development phase (not used 24/7) and it's unknown how popular it will be when you launch (how much compute it will need).
 
     If you have any issues or want to confirm the resources were deployed, you can review in the Azure portal.
 
@@ -104,6 +106,9 @@ These scripts should take three to five minutes to complete. Be sure to note you
 ## Connect to Azure SQL Database with Azure Data Studio
 
 Once your database is deployed, there are many ways that you can connect and interact with it: sqlcmd, Azure Data Studio, SSMS, the query editor in the portal, etc. Here, you'll learn how to connect to the database using Azure Data Studio.
+
+> [!NOTE]
+> Depending on your local configuration (for example, if you're on a VPN), Azure Data Studio might prompt you to add your IP address to the server firewall. You can add your IP address to the server firewall in the Azure portal by following the steps [in this article](/azure/azure-sql/database/firewall-configure#from-the-database-overview-page).
 
 1. Open Azure Data Studio and confirm that the code repository folder is open by selecting the **Explorer** icon on the Activity Bar. If you don't see the code files, return to the previous exercise to configure your environment.
 
