@@ -17,7 +17,7 @@ In this exercise, you use the conversation history to provide context to the lar
 
     Now you can keep the conversation going until the user enters a blank line.
 
-1. Capture details about the user's trip by modifying the `SuggestDestinations` case:
+2. Capture details about the user's trip by modifying the `SuggestDestinations` case:
 
     ```c#
     case "SuggestDestinations":
@@ -27,7 +27,7 @@ In this exercise, you use the conversation history to provide context to the lar
         break;
     ```
 
-1. Use the trip details in the `SuggestActivities` case with the following code:
+3. Use the trip details in the `SuggestActivities` case with the following code:
 
     ```c#
      case "SuggestActivities":
@@ -40,7 +40,7 @@ In this exercise, you use the conversation history to provide context to the lar
 
     In this code, you use the built-in `SummarizeConversation` function to summarize the chat with the user. Next, let's use the summary to suggest activities at the destination.
 
-1. Extend the `SuggestActivities` case with the following code:
+4. Extend the `SuggestActivities` case with the following code:
 
     ```c#
     var activities = await kernel.InvokePromptAsync(
@@ -53,16 +53,16 @@ In this exercise, you use the conversation history to provide context to the lar
 
     chatHistory.AppendLine("User:" + input);
     chatHistory.AppendLine("Assistant:" + activities.ToString());
-    
+
     Console.WriteLine(activities);
     break;
     ```
 
     In this code, you add `input` and `chatSummary` as kernel arguments. Then the kernel invokes the prompt and routes it to the `SuggestActivities` plugin. You also append the user's input and the assistant's response to the chat history and display the results. Next, you need to add the `chatSummary` variable to the `SuggestActivities` plugin.
 
-1. Navigate to **Prompts/SuggestActivities/config.json** and open the file in Visual Studio Code
+5. Navigate to **Prompts/SuggestActivities/config.json** and open the file in Visual Studio Code
 
-1. Under `input_variables`, add a variable for the chat history:
+6. Under `input_variables`, add a variable for the chat history:
 
     ```json
     "input_variables": [
@@ -76,12 +76,12 @@ In this exercise, you use the conversation history to provide context to the lar
           "description": "The destination a user wants to visit",
           "required": true
       }
-  ]
-  ```
+      ]
+    ```
 
-1. Navigate to **Prompts/SuggestActivities/skprompt.txt** and open the file
+7. Navigate to **Prompts/SuggestActivities/skprompt.txt** and open the file
 
-1. Add a prompt to use the chat history:
+8. Add a prompt to use the chat history:
 
     ```html 
     You are an experienced travel agent. 
@@ -89,7 +89,8 @@ In this exercise, you use the conversation history to provide context to the lar
     Consider the traveler's background: {{$history}}
     ```
 
-    Leave the rest of the prompt as is. Now the plugin uses the chat history to provide context to the LLM.
+Leave the rest of the prompt as is. Now the plugin uses the chat history to provide context to the LLM.
+
 
 ## Check your work
 
@@ -125,37 +126,37 @@ In this task, you run your application and verify the code is working correctly.
         break;
     ```
 
-1. Enter `dotnet run` in the terminal. When prompted, enter some text similar to the following:
+2. Enter `dotnet run` in the terminal. When prompted, enter some text similar to the following:
 
     ```output
     What would you like to do?
     How much is 60 USD in new zealand dollars?
     ```
 
-1. You should receive some output similar to the following:
+3. You should receive some output similar to the following:
 
     ```output
     $60 USD is approximately $97.88 in New Zealand Dollars (NZD)
     What would you like to do?
     ```
 
-1. Enter a prompt for destination suggestions with some context cues, for example:
+4. Enter a prompt for destination suggestions with some context cues, for example:
 
     ```output
     What would you like to do?
     I'm planning an anniversary trip with my spouse, but they are currently using a wheelchair and accessibility is a must. What are some destinations that would be romantic for us?
     ```
 
-1. You should receive some output with recommendations of accessible destinations.
+5. You should receive some output with recommendations of accessible destinations.
 
-1. Enter a prompt for activity suggestions, for example:
+6. Enter a prompt for activity suggestions, for example:
 
     ```output
     What would you like to do?
     What are some things to do in Barcelona?
     ```
 
-1. You should receive recommendations that fit within the previous context, for example, accessible activities in Barcelona similar to the following:
+7. You should receive recommendations that fit within the previous context, for example, accessible activities in Barcelona similar to the following:
 
     ```output
     1. Visit the iconic Sagrada Família: This breathtaking basilica is an iconic symbol of Barcelona's architecture and is known for its unique design by Antoni Gaudí.

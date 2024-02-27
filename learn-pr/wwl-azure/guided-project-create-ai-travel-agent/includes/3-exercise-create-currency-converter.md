@@ -5,11 +5,11 @@ For this exercise, you create a plugin that allows the user to convert currency 
 
 ### Create a native function
 
-In this task, you create a native function that can convert an amount from a base currency currency to a target currency.
+In this task, you create a native function that can convert an amount from a base currency to a target currency.
 
 1. Create a new file named `CurrencyConverter.cs` in the **Plugins/ConvertCurrency** folder
 
-1. In the `CurrencyConverter.cs` file, add the following code to create a plugin function:
+2. In the `CurrencyConverter.cs` file, add the following code to create a plugin function:
 
     ```c#
     using AITravelAgent;
@@ -27,7 +27,7 @@ In this task, you create a native function that can convert an amount from a bas
 
     In this code, you use the `KernelFunction` decorator to declare your native function. You also use the `Description` decorator to add a description of what the function does. You can use `Currency.Currencies` to get a dictionary of currencies and their exchange rates. Next, add some logic to convert a given amount from one currency to another.
 
-1. Modify your `ConvertAmount` function with the following code:
+3. Modify your `ConvertAmount` function with the following code:
 
     ```c#
     [KernelFunction, Description("Convert an amount from one currency to another")]
@@ -64,7 +64,7 @@ In this task, you create a native function that can convert an amount from a bas
     > [!NOTE]
     > When using the Semantic Kernel SDK in your own projects, you don't need to hardcode data into files if you have access to RESTful APIs. Instead, you can use the `Plugins.Core.HttpClient` plugin to retrieve data from APIs.
 
-1. In the `Program.cs` file, import and invoke your new plugin function with the following code:
+4. In the `Program.cs` file, import and invoke your new plugin function with the following code:
 
     ```c#
     kernel.ImportPluginFromType<CurrencyConverter>();
@@ -85,7 +85,7 @@ In this task, you create a native function that can convert an amount from a bas
 
     In this code, you use the `ImportPluginFromType` method to import your plugin. Then you use the `InvokeAsync` method to invoke your plugin function. The `InvokeAsync` method takes the plugin name, function name, and a dictionary of parameters. Finally, you print the result to the console. Next, run the code to make sure it's working.
 
-1. In the terminal, enter `dotnet run`. You should see the following output:
+5. In the terminal, enter `dotnet run`. You should see the following output:
 
     ```output
     $52000 VND is approximately $2.13 in US Dollars (USD)
@@ -99,9 +99,9 @@ In this task, you create a prompt that parses the user's input to identify the t
 
 1. Create a new folder named `GetTargetCurrencies` in the **Prompts** folder
 
-1. In the `GetTargetCurrencies` folder, create a new file named `config.json`
+2. In the `GetTargetCurrencies` folder, create a new file named `config.json`
 
-1. Enter the following text into the `config.json` file:
+3. Enter the following text into the `config.json` file:
 
     ```output
     {
@@ -124,9 +124,9 @@ In this task, you create a prompt that parses the user's input to identify the t
     }
     ```
 
-1. In the `GetTargetCurrencies` folder, create a new file named `skprompt.txt`
+4. In the `GetTargetCurrencies` folder, create a new file named `skprompt.txt`
 
-1. Enter the following text into the `skprompt.txt` file:
+5. Enter the following text into the `skprompt.txt` file:
 
     ```html
     <message role="system">Identify the target currency, base currency, and 
@@ -166,7 +166,7 @@ In this task, you run your application and verify your code is working correctly
     Console.WriteLine(result);
     ```
 
-1. Enter `dotnet run` in the terminal. You should see the following output:
+2. Enter `dotnet run` in the terminal. You should see the following output:
 
     ```output
     AUD|KRW|140000

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/26/2024
+  ms.date: 02/27/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
@@ -34,7 +34,7 @@ quiz:
     - content: "Native functions can't be used in prompts."
       isCorrect: false
       explanation: "Incorrect. Native functions can be used in prompts."
-  - content: "How do you assign a role to the LLM when generating a response?"
+  - content: "Which option assigns a role in a prompt to the large language model (LLM)?"
     choices:
     - content: "Using the `role` attribute in the `message` tag."
       isCorrect: true
