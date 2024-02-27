@@ -1,7 +1,11 @@
+
+In this exercise, you'll create an Azure Cosmos DB for NoSQL database and learn how easy is to perform a point in time recovery after changes are made to the database.
+
+The exercise is designed to familiarize you with the restore process in Azure Cosmos DB for NoSQL.
+
 > [!NOTE]
-> A virtual machine (VM) containing the client tools you need is provided, along with the exercise instructions. Use the button above to open the VM. A limited number of concurrent sessions are available - if the hosted environment is unavailable, try again later.
+> To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have access to create and manage an Azure Cosmos DB account.
 
-> [!TIP]
-> Alternatively, if you would like to use a development environment on your own computer, you can use this [setup guide](https://github.com/microsoftlearning/dp-420-cosmos-db-dev/blob/main/instructions/00-setup-environment.md) and follow these [exercise instructions](https://github.com/microsoftlearning/dp-420-cosmos-db-dev/blob/main/instructions/27-backup-recover.md). The setup guide is designed for multiple development exercises, and may include software that is not required for this specific exercise. Additionally, due to the range of possible operating systems and setup configurations, we can't provide support if you choose to complete the exercise on your own computer.
+Launch the exercise and follow the instructions.
 
-When you finish the exercise, end the lab to close the VM. Don't forget to come back and complete the knowledge check to earn points for completing this module!
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2261373)
