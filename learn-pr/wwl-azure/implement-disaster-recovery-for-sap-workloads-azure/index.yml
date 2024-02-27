@@ -30,7 +30,7 @@ roles:
 products:
 - azure
 subjects:
-- business-continuity
+- site-reliability-engineering
 units:
 - learn.wwl.implement-disaster-recovery-for-sap-workloads-azure.introduction
 - learn.wwl.implement-disaster-recovery-for-sap-workloads-azure.explore-disaster-recovery-of
