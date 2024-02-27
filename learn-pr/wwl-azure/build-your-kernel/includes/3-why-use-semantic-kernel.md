@@ -26,6 +26,6 @@ Enterprise solutions can benefit from implementing the Semantic Kernel SDK in th
 
 - Enhanced Reliability 
 
-    The Semantic Kernel SDK allows developers to create a streamlined, reliable AI experience compared to the potential unpredictability of prompts & responses from LLMs used directly. The SDK supports the ability to fine tune prompts and plan tasks to create a controlled and predictable user experience.
+    The Semantic Kernel SDK allows developers to create a streamlined, reliable AI experience compared to the potential unpredictability of prompts and responses from LLMs used directly. The SDK supports the ability to fine tune prompts and plan tasks to create a controlled and predictable user experience.
 
 As businesses and entrepreneurs navigate AI adoption, the Semantic Kernel SDK emerges as a valuable tool. The Semantic Kernel SDK provides an all-encompassing solution by simplifying the challenges of using direct APIs, cutting down on the learning curve, and incorporating the latest AI developments. It offers a streamlined pathway for developers to quickly create entirely new AI solutions, or enhance their existing products and applications. 

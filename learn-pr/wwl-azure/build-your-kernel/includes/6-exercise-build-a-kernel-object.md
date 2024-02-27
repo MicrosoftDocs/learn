@@ -4,31 +4,31 @@ In this exercise, you learn how to build your first Semantic Kernel SDK project.
 
     You can create a new project by opening the Terminal and running the command: `dotnet new console -o SKProject`
 
-1. Open the terminal in your project's directory.
+2. Open the terminal in your project's directory.
 
     You can open the terminal by right-clicking your project folder and selecting "Open in Integrated Terminal"
 
-1. In the Terminal, run the following command to install the Semantic Kernel SDK:
+3. In the Terminal, run the following command to install the Semantic Kernel SDK:
 
     `dotnet add package Microsoft.SemanticKernel --version 1.2.0`
 
-1. Enter the following code to create the kernel:
-    
-        ```c#
-        using Microsoft.SemanticKernel;
-    
-        var builder = Kernel.CreateBuilder();
-        builder.Services.AddAzureOpenAIChatCompletion(
-            "your-resource-name",
-            "your-endpoint",
-            "your-resource-key",
-            "deployment-model");
-        var kernel = builder.Build();
-        ```
+4. Enter the following code to create the kernel:
+
+    ```c#
+    using Microsoft.SemanticKernel;
+
+    var builder = Kernel.CreateBuilder();
+    builder.Services.AddAzureOpenAIChatCompletion(
+        "your-resource-name",
+        "your-endpoint",
+        "your-resource-key",
+        "deployment-model");
+    var kernel = builder.Build();
+    ```
 
     Be sure to replace the placeholders with the values from your Azure resource.
 
-1. To test that your kernel and endpoint is working, enter the following code:
+5. To test that your kernel and endpoint is working, enter the following code:
 
     ```c#
     var result = await kernel.InvokePromptAsync(
@@ -36,7 +36,7 @@ In this exercise, you learn how to build your first Semantic Kernel SDK project.
         Console.WriteLine(result);
     ```
 
-1. Run the code and check that you see a response similar to the following:
+6. Run the code and check that you see a response similar to the following:
 
     ```output
     1. Omelette

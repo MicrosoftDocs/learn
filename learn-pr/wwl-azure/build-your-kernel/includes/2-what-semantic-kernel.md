@@ -15,7 +15,7 @@ A copilot is a type of AI agent. A copilot is a natural language processing comp
 
 Semantic Kernel integrates LLMs like OpenAI, Azure OpenAI, and Hugging Face with conventional programming languages like C#, Python, and Java. Developers can create "plugins" to interface with the LLMs and perform all sorts of tasks. The Semantic Kernel SDK also provides built-in plugins that quickly enhance an application. Developers can easily apply AI models in their own applications without having to learn the intricacies of each model's API.
 
-:::image type="content" source="../media/semantic-kernel-graphic.png" alt-text="A stack graphic representing the key components of the Semantic Kernel SDK.":::
+:::image type="content" source="../media/semantic-kernel-graphic.png" alt-text="Screenshot of a stack graphic representing the key components of the Semantic Kernel SDK.":::
 
 The key components of the Semantic Kernel SDK are:
 
@@ -24,11 +24,11 @@ The key components of the Semantic Kernel SDK are:
     The core of the Semantic Kernel stack is an AI orchestration layer that allows the seamless integration of AI models and plugins. This layer is responsible for combining these components to craft innovative user interactions.
 
 - Connectors
-    
+
     The Semantic Kernel SDK offers a set of connectors that enable developers to integrate LLMs into their existing applications. These connectors serve as the bridge between the application code and the AI models.
 
 - Plugins 
-    
+
     The Semantic Kernel SDK operates on plugins, essentially serving as the "body" of the AI app. Plugins consist of prompts that you want the AI model to respond to and functions that can complete specialized tasks. Developers can use built-in plugins, or create their own. 
 
 For developers eager to delve into the realm of AI innovation, the Semantic Kernel SDK opens the door to creating personalized AI agents. The SDK seamlessly integrates models and customized plugins that enable you to craft unique and impactful user experiences.

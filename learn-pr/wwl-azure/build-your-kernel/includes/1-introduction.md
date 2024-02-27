@@ -11,7 +11,7 @@ Whether you're delving into code completion, email composition, or text summariz
 
 This module introduces you to the Semantic Kernel SDK. You can learn how the kernel extends functionality by connecting code to LLMs. You can also learn how the SDK can be used to create artificially intelligent agents that can automate custom tasks.
 
-## Learning Objectives
+## Learning objectives
 
 - Understand the purpose of Semantic Kernel.
 - Understand prompting basics.
