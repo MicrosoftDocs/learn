@@ -7,7 +7,7 @@ By understanding the basics of generative AI, you enhance your ability to make r
 To continue your learning journey, go to:
 
 - [Fundamentals of generative AI training page on Microsoft Learn](/training/modules/fundamentals-generative-ai/)
-- {Career Essentials in Generative AI by Microsoft and LinkedIn](https://www.linkedin.com/learning/paths/career-essentials-in-generative-ai-by-microsoft-and-linkedin)
+- [Career Essentials in Generative AI by Microsoft and LinkedIn](https://www.linkedin.com/learning/paths/career-essentials-in-generative-ai-by-microsoft-and-linkedin)
 - [Use AI embedded in everyday applications - Training | Microsoft Learn](/training/modules/leverage-ai-tools/4-use-ai-embedded-everyday-applications)
 - [Natural Language Generation (NLG) and speech recognition - Training | Microsoft Learn](/training/modules/application-ai-with-ai-foundations-imagine-cup-junior/nlg-and-speech-recognition)
 
