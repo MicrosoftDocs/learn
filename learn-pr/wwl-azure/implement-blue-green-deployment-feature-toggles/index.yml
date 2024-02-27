@@ -41,7 +41,7 @@ products:
 - azure-test-plans
 - github
 subjects:
-- business-continuity
+- site-reliability-engineering
 units:
 - learn.wwl.implement-blue-green-deployment-feature-toggles.introduction
 - learn.wwl.implement-blue-green-deployment-feature-toggles.what-blue-green-deployment
