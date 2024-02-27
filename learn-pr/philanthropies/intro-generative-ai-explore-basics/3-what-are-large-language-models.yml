@@ -3,12 +3,11 @@ uid: learn.philanthropies.intro-generative-ai-explore-basics.what-are-large-lang
 title: What are large language models (LLMs)?
 metadata:
   title: What are large language models (LLMs)?
-  description: Large language models (LLMs) are a type of neural network architectures that can process and generate conversational text, write code, abstract information, answer questions and process text in a myriad of ways. LLMs have been trained on vast amounts of text data and can generate human-like text across a wide range of tasks.
+  description: This content is a part of the 'Introduction to generative AI - Exploring the basics' module.
   ms.date: 02/21/2024
   author: yoosunee
   ms.author: andreapark
-  ms.topic: module-standard-task-based
-  ms.service: artificial-intelligence
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/3-what-are-large-language-models.md)]

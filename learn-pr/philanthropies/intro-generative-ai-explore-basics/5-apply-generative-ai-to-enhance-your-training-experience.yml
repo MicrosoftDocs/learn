@@ -3,12 +3,11 @@ uid: learn.philanthropies.intro-generative-ai-explore-basics.apply-generative-ai
 title: Apply generative AI to enhance your training experience
 metadata:
   title: Apply generative AI to enhance your training experience
-  description: Generative AI technology offers numerous applications with the potential to have a positive impact on society. These applications span a wide range, including content creation, chatbots, virtual assistants, predictive analytics, and forecasting.
+  description: This content is a part of the 'Introduction to generative AI - Exploring the basics' module.
   ms.date: 02/21/2024
   author: yoosunee
   ms.author: andreapark
-  ms.topic: module-standard-task-based
-  ms.service: artificial-intelligence
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/5-apply-generative-ai-to-enhance-your-training-experience.md)]
