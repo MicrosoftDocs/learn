@@ -25,7 +25,7 @@ Use the following steps to prepare for the Guided Project exercises:
 
     You need to be signed in to GitHub to successfully clone the project.
 
-1. Open the project in Visual Studio Code
+1. Open the project in Visual Studio Code.
 
 1. In Explorer, expand the **M03-Guided-Project** folder.
 
@@ -38,6 +38,6 @@ Use the following steps to prepare for the Guided Project exercises:
 1. Right-click the **WPF** folder and click **Open in Integrated Terminal**.
 
 > [!NOTE] 
-> If you get stuck during any of the exercises, the solution for this module is available in the **Solution** directory.
+> If you get stuck during any of the exercises, the solution for this module is available in the **Solution** folder of the guided project repository.
 
 You're now ready to begin the Guided Project exercises. Good luck!

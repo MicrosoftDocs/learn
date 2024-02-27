@@ -1,4 +1,4 @@
-In this exercise, you set up the Windows Presentation Foundation (WPF) application to use the Langton's Ant simulation code. You copy over the classes from the console application to the WPF application. Then you make a few modifications to the WPF application to use the Langton's Ant game code. Let's get started!
+In this exercise, you set up the Windows Presentation Foundation (WPF) application to use the Langston's Ant simulation code. You copy over the classes from the console application to the WPF application. Then you make a few modifications to the WPF application to use the Langston's Ant game code. Let's get started!
 
 > [!IMPORTANT]
 > You need to have completed the Setup instructions in the previous unit, Prepare, before you begin this Exercise.
@@ -41,4 +41,4 @@ In this exercise, you set up the Windows Presentation Foundation (WPF) applicati
 
 1. Press the Play button and observe the ant begins to move on the grid.
 
-Now your WPF application is set up to use the Langton's Ant simulation code. In the next exercise, you'll modify the WPF application to use JSON serialization.
+Now your WPF application is set up to use the Langston's Ant simulation code. In the next exercise, you'll modify the WPF application to use JSON serialization.

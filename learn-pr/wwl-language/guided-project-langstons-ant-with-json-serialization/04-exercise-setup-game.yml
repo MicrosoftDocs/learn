@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.guided-project-langstons-ant-with-json-serialization.exercise-setup-the-game
+uid: learn.wwl.guided-project-langstons-ant-with-json-serialization.exercise-setup-game
 title: Exercise - Setup the game code
 metadata:
   title: Exercise - Setup the game code
   description: "Exercise - Setup the game code"
-  ms.date: 02/26/2024
+  ms.date: 02/27/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/04-exercise-setup-the-game.md)]
+  [!include[](includes/04-exercise-setup-game.md)]

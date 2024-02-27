@@ -15,9 +15,9 @@ In this module, you practice how to:
 
 ## Prerequisites 
 
-- Visual Studio Community installed
-- A GitHub account to clone code repositories
-- Basic knowledge of the Visual Studio IDE and project structure
-- Basic understanding of the C# programming language
-- Familiarity with classes, abstract classes, and inheritance
-- Familiarity with JSON and serialization
+- Visual Studio Community installed.
+- A GitHub account to clone code repositories.
+- Basic knowledge of the Visual Studio IDE and project structure.
+- Basic understanding of the C# programming language.
+- Familiarity with classes, abstract classes, and inheritance.
+- Familiarity with JSON and serialization.
