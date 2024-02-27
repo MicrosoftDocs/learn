@@ -4,7 +4,13 @@ It's common to build apps and other custom code for your Azure solution. Custom 
 
 Many types of apps need to be *compiled* or *built* before they can be used. The build process takes the source code for the app, performs a sequence of activities on it, and then creates a set of deployable files.
 
-The build process compiles the source code into binary files or executables. A build process ordinarily includes other activities like compressing the image files that are served to your website's users, *linting* your code to verify that it follows good coding practices, and running *unit tests* that verify the behavior of individual pieces of your app. You might also perform steps such as digitally signing the files to help ensure that they can't be modified.
+The build process compiles the source code into binary files or executables, but it ordinarily includes other activities as well:
+
+- Compressing the image files that are served to your website's users.
+- *Linting* your code to verify that it follows good coding practices.
+- Running *unit tests* that verify the behavior of individual pieces of your app.
+
+In addition to these steps, you might also perform steps such as digitally signing the files to help ensure that they can't be modified.
 
 Whatever the series of steps might be, the output of the build process is a deployable *artifact*. The artifact is ordinarily saved to the pipeline agent's file system. Later stages of your pipeline need to work with the artifact to deploy it through your environments, and test it as it progresses through the quality gates you define in your pipeline definition.
 
