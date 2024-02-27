@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/26/2024
+  ms.date: 02/27/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
@@ -23,7 +23,7 @@ quiz:
     - content: "To summarize conversations and chat history"
       isCorrect: false
       explanation: "Incorrect. Native functions are used to run native code in the application."
-  - content: "How do you declare a native function using the Semantic Kernel SDK?"
+  - content: "How is a native function declared using the Semantic Kernel SDK?"
     choices:
     - content: "By using `public static void NativeFunction() {}`"
       isCorrect: false

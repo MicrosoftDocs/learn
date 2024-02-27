@@ -108,22 +108,22 @@ Now you're ready to begin the exercise. Good luck!
     [
         {
             "title": "Loanh Quanh",
-            "artist": "Mademoiselle",
+            "artist": "Ly Hoa",
             "genre": "indie, folk"
         },
         {
             "title": "Kalam Eineh",
-            "artist": "Sherine",
+            "artist": "Yasemin",
             "genre": "pop, Egyptian pop"
         },
         {
             "title": "I Miss You",
-            "artist": "Shing02",
+            "artist": "Chishin",
             "genre": "hiphop, rap"
         },
         {
             "title": "4EVER",
-            "artist": "Clairo",
+            "artist": "Gaby",
             "genre": "alternative, indie"
         }
     ]
@@ -141,8 +141,8 @@ Now you're ready to begin the exercise. Good luck!
         "MusicLibraryPlugin", 
         "AddToRecentlyPlayed", 
         new() {
-            ["artist"] = "Indila", 
-            ["song"] = "Derniere danse", 
+            ["artist"] = "Tiara", 
+            ["song"] = "Danse", 
             ["genre"] = "French pop, electropop, pop"
         }
     );
@@ -157,7 +157,7 @@ Now you're ready to begin the exercise. Good luck!
     You should see the following output:
 
     ```output
-    Added 'Derniere danse' to recently played
+    Added 'Danse' to recently played
     ```
 
     If you open up 'recentlyplayed.txt,' you should see the new song added to the list.

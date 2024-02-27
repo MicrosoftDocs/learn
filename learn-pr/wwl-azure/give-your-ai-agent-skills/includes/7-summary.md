@@ -2,6 +2,6 @@ In this module, you learned how the Semantic Kernel SDK can connect code to larg
 
 ## Reference materials
 
-- You can learn more about native functions here: [https://learn.microsoft.com/en-us/semantic-kernel/agents/plugins/using-the-kernelfunction-decorator?tabs=Csharp](/semantic-kernel/agents/plugins/using-the-kernelfunction-decorator)
+- You can learn more about native functions here: [https://learn.microsoft.com/semantic-kernel/agents/plugins/using-the-kernelfunction-decorator?tabs=Csharp](/semantic-kernel/agents/plugins/using-the-kernelfunction-decorator)
 
-- You can find more information about nesting functions here: [https://learn.microsoft.com/en-us/semantic-kernel/prompts/calling-nested-functions?tabs=Csharp](/semantic-kernel/prompts/calling-nested-functions)
+- You can find more information about nesting functions here: [https://learn.microsoft.com/semantic-kernel/prompts/calling-nested-functions?tabs=Csharp](/semantic-kernel/prompts/calling-nested-functions)

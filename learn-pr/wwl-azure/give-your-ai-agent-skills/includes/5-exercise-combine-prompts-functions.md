@@ -12,32 +12,32 @@ For this exercise, you combine your native functions with a prompt that asks the
     }
     ```
 
-1. Create a new file in the 'M03-Project' folder called 'musiclibrary.txt' and paste the following content:
+2. Create a new file in the 'M03-Project' folder called 'musiclibrary.txt' and paste the following content:
 
     ```
     [
-        { title: "See Tinh", artist: "Hoang Thuy Linh", genre: "pop, Vietnamese pop" },
-        { title: "Luv(sic)", artist: "Nujabes", genre: "hiphop, rap, Japanese hiphop" },
-        { title: "Kids", artist: "MGMT", genre: "synthpop, alternative, indie" },
-        { title: "Ana Negm", artist: "Cairokee", genre: "pop, arabic hiphop, Egyptian rap" },
-        { title: "Single Ladies", artist: "Beyonce", genre: "pop, r&b" },
-        { title: "Oblivion", artist: "Grimes", genre: "alternative, indie, electropop" },
-        { title: "1901", artist: "Phoenix", genre: "synthpop, alternative, indie" },
-        { title: "Suisei", artist: "Daoko", genre: "pop, Japanese pop" },
-        { title: "Sabry Aalil", artist: "Sherine", genre: "pop, Egyptian pop" },
-        { title: "From Eden", artist: "Hozier", genre: "blues, soul, electropop" },
-        { title: "Sofia", artist: "Clairo", genre: "alternative, indie, pop" },
-        { title: "Strawberry Blond", artist: "Mitski", genre: "Indie, Alternative, Folk"},
-        { title: "July", artist: "Kina Grannis", genre: "indie, folk" }
+        { title: "See Tinh", artist: "Thach Ngoc", genre: "pop, Vietnamese pop" },
+        { title: "Luv(sic)", artist: "Chishin", genre: "hiphop, rap, Japanese hiphop" },
+        { title: "Kids", artist: "Omar Bennett", genre: "synthpop, alternative, indie" },
+        { title: "Ana Negm", artist: "Dabir", genre: "pop, arabic hiphop, Egyptian rap" },
+        { title: "Ladies that are Single", artist: "Sydney", genre: "pop, r&b" },
+        { title: "Oblivion", artist: "Eugenia", genre: "alternative, indie, electropop" },
+        { title: "1901", artist: "Andre", genre: "synthpop, alternative, indie" },
+        { title: "Suisei", artist: "Mirai", genre: "pop, Japanese pop" },
+        { title: "Sabry Aalil", artist: "Yasemin", genre: "pop, Egyptian pop" },
+        { title: "From Eden", artist: "Henry", genre: "blues, soul, electropop" },
+        { title: "Sofia", artist: "Gaby", genre: "alternative, indie, pop" },
+        { title: "Strawberry Blond", artist: "Nanami", genre: "Indie, Alternative, Folk"},
+        { title: "July", artist: "Lisa Taylor", genre: "indie, folk" }
     ]
     ```
 
-1. Update your 'Program.cs' file with the following code:
+3. Update your 'Program.cs' file with the following code:
 
     ```c#
     var kernel = builder.Build();
     kernel.ImportPluginFromType<MusicLibraryPlugin>();
-    
+
     string prompt = @"This is a list of music available to the user:
         {{MusicLibraryPlugin.GetMusicLibrary}} 
 
@@ -53,14 +53,16 @@ For this exercise, you combine your native functions with a prompt that asks the
 
     In this code, you combine your native functions with a semantic prompt. The native functions are able to retrieve user data that the large language model (LLM) couldn't access on its own, and the LLM is able to generate a song recommendation based on the text input.
 
-1. To test your code, enter `dotnet run` in the terminal.
+4. To test your code, enter `dotnet run` in the terminal.
 
     You should see a response similar to the following output:
 
     ```output 
-    Based on the user's recently played music, a suggested song to play next could be "Sabry Aalil" by Sherine since the user seems to enjoy pop and Egyptian pop music.
+    Based on the user's recently played music, a suggested song to play next could be "Sabry Aalil" by Yasemin since the user seems to enjoy pop and Egyptian pop music.
     ```
 
-    >[!NOTE] The recommended song may be different than the one shown here.
+    >[!NOTE] 
+    >
+    >The recommended song may be different than the one shown here.
 
 You successfully combined your native functions with a semantic prompt. You have the beginnings of a music recommendation agent! Try playing around with the prompts and input files to see what other recommendations you can generate.

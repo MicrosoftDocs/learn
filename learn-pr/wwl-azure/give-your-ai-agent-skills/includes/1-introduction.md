@@ -4,7 +4,7 @@ Suppose you want to create an artificially intelligent (AI) disc jockey that can
 
 In this module, you learn how native functions work in the Semantic Kernel SDK. You can understand how native functions can accomplish customized tasks, effectively giving your AI agent a "skill." You also practice how to combine prompts with native functions to build intelligent applications.
 
-## Learning Objectives
+## Learning objectives
 
 - Understand native functions in the Semantic Kernel SDK.
 - Learn how to create native function plugins.

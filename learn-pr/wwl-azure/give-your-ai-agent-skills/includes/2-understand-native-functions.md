@@ -1,6 +1,6 @@
 Native functions are functions written in native code that can be called by the Semantic Kernel SDK in an artificially intelligent (AI) application. They're useful for performing tasks that large language models can't do on their own. You can think of a native function like a skill your application can perform. Combining chat completion services with functional skills allows you to create an AI agent that can perform a wide range of tasks!
 
-Native functions have a certain format and a recommended file structure to be used by the kernel.Native functions should use the `KernelFunction` decorator in their definitions, and should be placed in a "Plugins" directory. Related functions should be placed in the same file or subdirectory.
+Native functions have a certain format and a recommended file structure to be used by the kernel. Native functions should use the `KernelFunction` decorator in their definitions, and should be placed in a "Plugins" directory. Related functions should be placed in the same file or subdirectory.
 
 Suppose the user wants to complete an item on their todo list. The large language model (LLM) can't access their todo list directly, but you can write a native function to mark an item as complete. For example, the todo list might be saved as a .txt file:
 
@@ -88,4 +88,4 @@ var result = await kernel.InvokeAsync<string>(
 Console.WriteLine(result);
 ```
 
-Now your AI agent can help the user complete tasks on their to-do list. Optionally, you can choose to denote the return type of the function in the `InvokeAsync` call. Otherwise a `FunctionResult` object is returned.
+Now your AI agent can help the user complete tasks on their todo list. Optionally, you can choose to denote the return type of the function in the `InvokeAsync` call. Otherwise a `FunctionResult` object is returned.

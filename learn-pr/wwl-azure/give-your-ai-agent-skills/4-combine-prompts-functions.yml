@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.give-your-ai-agent-skills.combine-prompts-and-functions
+uid: learn.wwl.give-your-ai-agent-skills.combine-prompts-functions
 title: Combine prompts and functions
 metadata:
   title: Combine prompts and functions
   description: "Combine prompts and functions"
-  ms.date: 02/26/2024
+  ms.date: 02/27/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-combine-prompts-and-functions.md)]
+  [!include[](includes/4-combine-prompts-functions.md)]
