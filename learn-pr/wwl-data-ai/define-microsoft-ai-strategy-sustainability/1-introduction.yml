@@ -4,11 +4,10 @@ title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
-  ms.date: 11/28/2023
+  ms.date: 01/30/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-  ms.service: azure-ai-services
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

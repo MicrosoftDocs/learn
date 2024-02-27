@@ -6,8 +6,7 @@ metadata:
   ms.date: 12/11/2019
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Exercise - Analyze a scenario and map it to a technology option
 durationInMinutes: 10
 interactive: bash

@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implementing-backup-restore-for-azure-cosmos-db-sql-api.exercise-recover-database-container-from-recovery-point
-title: 'Exercise: Recover a database or container from a recovery point'
+title: Exercise - Recover a database or container from a recovery point
 metadata:
-  title: 'Exercise: Recover a database or container from a recovery point'
-  description: "Exercise: Recover a database or container from a recovery point"
-  ms.date: 05/17/2023
+  title: Exercise - Recover a database or container from a recovery point
+  description: "Exercise - Recover a database or container from a recovery point"
+  ms.date: 02/27/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
-azureSandbox: false
-labId: 107595
-labModal: true
+  ms.custom:
+  - N/A
 durationInMinutes: 20
 content: |
   [!include[](includes/5-exercise-recover-database-container-from-recovery-point.md)]

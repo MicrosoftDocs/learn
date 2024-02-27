@@ -5,3 +5,7 @@ Arrays enabled you to store each Order ID as an element of a single variable. Yo
 Imagine how difficult it would be to handle related data in your code if you *didn't* have a structure like an array? You would need to know ahead of time just how many data elements you expected to work with and define a separate variable for each value. That would create a brittle solution.
 
 Arrays can be sized when created according to the amount of data you need to work with. As you become even more familiar with arrays (and similar data structures), you'll often use them in your applications to process and manage data.
+
+## Get a free verified certification
+
+Microsoft and freeCodeCamp.org offer a training and certification combo on foundational C#. By completing this Learn module, you've already started. Explore freeCodeCamp's Foundational C# with Microsoft certification here: [https://aka.ms/csharp-certification](https://aka.ms/csharp-certification).

@@ -4,11 +4,10 @@ title: Exercise - Enable Defender for Cloud on your Azure subscription
 metadata:
   title: Exercise - Enable Defender for Cloud on your Azure subscription
   description: "Exercise - Enable Defender for Cloud on your Azure subscription"
-  ms.date: 10/11/2023
+  ms.date: 02/23/2024
   author: wwlpublish
   ms.author: serlingdavis
-  ms.topic: interactive-tutorial
-  ms.prod: azure
-durationInMinutes: 10
+  ms.topic: unit
+durationInMinutes: 31
 content: |
   [!include[](includes/6-upgrade-microsoft-defender-for-cloud.md)]

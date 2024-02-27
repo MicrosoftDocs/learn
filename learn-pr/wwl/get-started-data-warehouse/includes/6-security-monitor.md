@@ -9,7 +9,7 @@ Data warehouse security is important to protect your data from unauthorized acce
 - Azure Storage Service Encryption to protect the data in transit and at rest.
 - Azure Monitor and Azure Log Analytics to monitor the warehouse activity and audit the access to the data.
 - Multifactor authentication (MFA) to add an extra layer of security to user accounts.
-- Azure Active Directory (Azure AD) integration to manage the user identities and access to the warehouse.
+- Microsoft Entra ID integration to manage the user identities and access to the warehouse.
 
 ### Workspace permissions
 
@@ -30,7 +30,7 @@ You can grant permissions to users via T-SQL or in the Fabric portal. Grant the 
 - ReadData: Allows the user to read data from any table/view within the warehouse.
 - ReadAll: Allows user to read data the raw parquet files in OneLake that can be consumed by Spark.
 
-A user connection to the SQL endpoint will fail without Read permission at a minimum.
+A user connection to the SQL analytics endpoint will fail without Read permission at a minimum.
 
 ## Monitoring
 

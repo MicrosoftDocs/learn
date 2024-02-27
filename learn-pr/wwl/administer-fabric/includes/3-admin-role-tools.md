@@ -60,6 +60,6 @@ You can make these requests using any HTTP client library that supports OAuth 2.
 
 ### Admin monitoring workspace
 
-Fabric tenant admins will have access to the new *admin monitoring workspace*. You can choose to share access to the workspace or specific items within it with other users in your organization. The admin monitoring workspace includes the Feature Usage and Adoption dataset and report, which together provide insights on the usage and performance of your Fabric environment. You can use this information to identify trends and patterns, and troubleshoot issues.
+Fabric tenant admins will have access to the new *admin monitoring workspace*. You can choose to share access to the workspace or specific items within it with other users in your organization. The admin monitoring workspace includes the Feature Usage and Adoption semantic model and report, which together provide insights on the usage and performance of your Fabric environment. You can use this information to identify trends and patterns, and troubleshoot issues.
 
 ![Screenshot of the Admin monitoring report.](../media/admin-monitoring-report.png)

@@ -3,7 +3,7 @@ uid: learn-xamarin.explore-cross-platform-design-patterns.2-share-code-using-net
 metadata:
   title: Share code by using .NET standard libraries
   description: "Use .NET Standard libraries to structure shared code."
-  ms.date: 05/01/2019
+  ms.date: 02/20/2024
   author: codemillmatt
   ms.author: masoucou
   ms.topic: unit

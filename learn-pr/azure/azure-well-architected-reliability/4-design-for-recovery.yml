@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-reliability.design-for-recovery
+title: Design for recovery
+metadata:
+  title: Design for recovery
+  description: Learn strategies for designing your Azure workload to support recovery.
+  ms.date: 12/18/2023
+  author: claytonsiemens77
+  ms.author: csiemens
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-design-for-recovery.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following is an example of metrics that help drive your disaster recovery plans?"
+    choices:
+    - content: "Number of successful backups per day"
+      isCorrect: false
+      explanation: "Tracking your successful backups is important for your everyday operations, but isn't a component of a disaster recovery plan."
+    - content: "Average time between deployment failures"
+      isCorrect: false
+      explanation: "Measuring the time between deployment failures can help you understand your deployment velocity, but isn't a component of a disaster recovery plan."
+    - content: "Hours of downtime per month"
+      isCorrect: false
+      explanation: "Tracking your downtime is important to maintain your SLAs, but it doesn't drive your disaster recovery plans."
+    - content: "Average time to restore a database from backup"
+      isCorrect: true
+      explanation: "Your disaster recovery plans should include metrics that help you understand how long it takes to restore your services."
+  - content: "Which of the following scenarios is an example of how to deal with stateful data for recovery purposes?"
+    choices:
+    - content: "Moving cold data to archive storage"
+      isCorrect: false
+      explanation: "Archive storage data isn’t stateful data. It’s data that is rarely accessed and is stored for long periods of time."
+    - content: "Migrating from App Service to Azure Kubernetes Service (AKS)"
+      isCorrect: false
+      explanation: "The application data for both services is stored in a database, so changing the compute model won't affect the stateful data stored in the database."
+    - content: "Using Azure SQL Database instead of SQL Server on a VM"
+      isCorrect: false
+      explanation: "Changing the deployment model for your database doesn't address dealing with the recovery of stateful data."
+    - content: "Changing from a single region deployment of Cosmos DB to a multi-region deployment"
+      isCorrect: true
+      explanation: "Correct. Cosmos DB is a stateful service, so changing from a single region deployment to a multi-region deployment replicates your data to multiple regions, which lowers your RTO and RPO."
+  - content: "Contoso has a mission-critical line-of-business application in Azure. What is one way they could implement self-healing to improve the reliability of their application?"
+    choices:
+    - content: "Use Azure Monitor actions to automatically restart the application if it fails"
+      isCorrect: true
+      explanation: "Correct. Azure Monitor actions can be used to automatically perform actions when an alert is triggered. In this case, the action would be to restart the application."
+    - content: "Use Azure Policy to check for compliance with the company's security policies"
+      isCorrect: false
+      explanation: "Azure Policy is used to enforce compliance with company policies, but it can't perform self-healing actions."
+    - content: "Increase the backup frequency of the application's database"
+      isCorrect: false
+      explanation: "This change would improve the recoverability of the application, but it introduces self-healing capabilities in the workload."
+    - content: "Use Azure Advisor to identify potential performance issues with the application"
+      isCorrect: false
+      explanation: "Azure Advisor can be used to identify potential performance issues, but it can't perform self-healing actions."
