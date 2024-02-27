@@ -1,18 +1,18 @@
 
-Microsoft Security Copilot can be accessed through the dedicated site https://securitycopilot.microsoft.com. This dedicated site is also referred to as the standalone experience. It is through the standalone experience that users access the landing page or portal to the platform.
+Microsoft Copilot for Security can be accessed through the dedicated site https://securitycopilot.microsoft.com. This dedicated site is also referred to as the standalone experience. It is through the standalone experience that users access the landing page or portal to the platform.
 
-There are some key landmarks on the Security Copilot landing page (portal) to which the user can navigate.
+There are some key landmarks on the Copilot landing page (portal) to which the user can navigate.
 
 - Home menu
 - Manage plugins
 - Prompt bar
 - Help
 
-:::image type="content" source="../media/landing-page-landmarks.png" lightbox="../media/landing-page-landmarks.png" alt-text="Screen capture of the landing page for the standalone experience of Microsoft Security Copilot.":::
+:::image type="content" source="../media/landing-page-landmarks.png" lightbox="../media/landing-page-landmarks.png" alt-text="Screen capture of the landing page for the standalone experience of Microsoft Copilot for Security.":::
 
 ### Home menu
 
-The home menu is accessed by selecting the home icon located on the top left corner of the Security Copilot landing page.
+The home menu is accessed by selecting the home icon located on the top left corner of the Copilot landing page.
 
 :::image type="content" source="../media/home-icon-home-page-v2.png" lightbox="../media/home-icon-home-page-v2.png" alt-text="Screen capture of the home menu icon and the page it opens when selected.":::
 
@@ -27,37 +27,37 @@ From the home menu, the user can navigate as follows:
 
     :::image type="content" source="../media/preferences-and-privacy-v2.png" lightbox="../media/preferences-and-privacy-v2.png" alt-text="Screen capture showing the options available on the settings page, which include tabs for preferences and data and privacy.":::
 
-- The tenant for which Security Copilot is provisioned. The tenant, which is provisioned for Security Copilot doesn't need to be the tenant your security analyst logs in from. In the screenshot that follows, security analyst Angus MacGregor uses a Fabrikam account to sign in. Security Copilot is provisioned in the Contoso tenant.  By selecting the down arrow, Angus MacGregor is able to select the Contoso tenant.
+- The tenant for which Copilot is provisioned. The tenant, which is provisioned for Copilot doesn't need to be the tenant your security analyst logs in from. In the screenshot that follows, security analyst Angus MacGregor uses a Fabrikam account to sign in. Copilot is provisioned in the Contoso tenant.  By selecting the down arrow, Angus MacGregor is able to select the Contoso tenant.
 
     :::image type="content" source="../media/tenant-switcher-v3.png" lightbox="../media/tenant-switcher-v3.png" alt-text="Screen capture showing the tenant switching window, with multiple tenants listed.":::
 
 ### Plugins
 
-The manage plugins icon is located on the bottom left corner of the Security Copilot landing page. Selecting this icon opens the Manage plugins menu that lists preinstalled plugins for Microsoft security services and other commonly used services and websites that you can use. You can also add your own custom plugins. The subsequent unit provides more details on plugins.
+The manage plugins icon is located on the bottom left corner of the Copilot landing page. Selecting this icon opens the Manage plugins menu that lists preinstalled plugins for Microsoft security services and other commonly used services and websites that you can use. You can also add your own custom plugins. The subsequent unit provides more details on plugins.
 
 :::image type="content" source="../media/plugin-icon-plugin-list.png" lightbox="../media/plugin-icon-plugin-list.png" alt-text="Screen capture showing the plugin icon and the plugin window showing a subset of the plugins.":::
 
 ### Help
 
-The help icon is located on the bottom right of the Security Copilot landing page. By selecting the help icon, users can link to documentation, frequently access questions (FAQs), an interactive tour to review key features, and more.
+The help icon is located on the bottom right of the Copilot landing page. By selecting the help icon, users can link to documentation, frequently access questions (FAQs), an interactive tour to review key features, and more.
 
 :::image type="content" source="../media/help-to-help-list.png" lightbox="../media/help-to-help-list.png" alt-text="Screen capture showing the help icon and the help window.":::
 
 ### Prompt bar
 
-The prompt bar is on the bottom center of the Security Copilot landing page. You use the prompt bar to tell Security Copilot what insights you want from your security data, in natural language, then select the run (the icon at the far right of the prompt bar). For those that are relatively new to the security analyst role and engaging with AI, effective prompting may take some practice. For this reason, Security Copilot provides suggestions for prompts and promptbooks that provide a series of preselected prompts.
+The prompt bar is on the bottom center of the Copilot landing page. You use the prompt bar to tell Copilot what insights you want from your security data, in natural language, then select the run (the icon at the far right of the prompt bar). For those that are relatively new to the security analyst role and engaging with AI, effective prompting may take some practice. For this reason, Copilot provides suggestions for prompts and promptbooks that provide a series of preselected prompts.
 
 :::image type="content" source="../media/prompt-bar.png" lightbox="../media/prompt-bar.png" alt-text="Screen capture showing the prompt bar.":::
 
-Even though the prompt bar is at the bottom of the landing page, it really is the center piece of Security Copilot. This is where the user spends their time. Prompts are the primary input Security Copilot needs to generate answers that can help users in their security-related tasks. Good prompting is key to getting good results. To help, Security Copilot provides suggestions and promptbooks.
+Even though the prompt bar is at the bottom of the landing page, it really is the centerpiece of Copilot. This is where the user spends their time. Prompts are the primary input Copilot needs to generate answers that can help users in their security-related tasks. Good prompting is key to getting good results. To help, Copilot provides suggestions and promptbooks.
 
 #### Prompt suggestions and system capabilities
 
-Prompt suggestions are specific, single prompts that you can use in Security Copilot. The available prompt suggestions are displayed by typing the forward slash (the "/" symbol) at the prompt bar. The list displayed is a small subset of all the available system capabilities available to you, based on the plugins you enabled. To view all the system capabilities available to you, select See all system capabilities. Each system capability is itself a prompt suggestion that you can run in the standalone experience.  
+Prompt suggestions are specific, single prompts that you can use in Copilot. The available prompt suggestions are displayed by typing the forward slash (the "/" symbol) at the prompt bar. The list displayed is a small subset of all the available system capabilities available to you, based on the plugins you enabled. To view all the system capabilities available to you, select See all system capabilities. Each system capability is itself a prompt suggestion that you can run in the standalone experience.  
 
 :::image type="content" source="../media/prompt-suggestions-see-all-capabilities.png" lightbox="../media/prompt-suggestions-see-all-capabilities.png" alt-text="Screen capture of the prompt suggestions that can be run in the standalone experience.":::
 
-Selecting a prompt suggestion (a system capability) typically requires more input to get a useful response, but Security Copilot provides that guidance. As an example, the image that follows shows the information that the user should include for the “GetDefenderIncidents” prompt suggestion.
+Selecting a prompt suggestion (a system capability) typically requires more input to get a useful response, but Copilot provides that guidance. As an example, the image that follows shows the information that the user should include for the “GetDefenderIncidents” prompt suggestion.
 
 :::image type="content" source="../media/get-defender-incidents-prompt-suggestion.png" lightbox="../media/get-defender-incidents-prompt-suggestion.png" alt-text="Screen capture showing the required inputs for the Get Defender incident prompt suggestions.":::
 
@@ -75,7 +75,7 @@ You can find the different promptbooks by typing an asterisk (the "*" symbol) at
 
 #### Feedback
 
-Whether you use promptbooks, prompt suggestions, or your own prompt, providing feedback about your satisfaction with the generated response can help Microsoft in improving Security Copilot. You can find the feedback buttons on the left-hand side at the bottom of every response.
+Whether you use promptbooks, prompt suggestions, or your own prompt, providing feedback about your satisfaction with the generated response can help Microsoft in improving Copilot. You can find the feedback buttons on the left-hand side at the bottom of every response.
 
 You can select:
 
@@ -99,7 +99,7 @@ The pin board enables you to keep track of important responses in a session. You
 
 :::image type="content" source="../media/pin-mapping-to-pin-board.png" lightbox="../media/pin-mapping-to-pin-board.png" alt-text="Screen capture showing the pin icon. When a prompt response is selected along with the pin icon opens the pin board.":::
 
-The contents of the pin board can be shared so that people in your organization with Security Copilot access can view this session. Additionally, the contents of the pin board can be exported to Microsoft Word, sent via email, or copied.
+The contents of the pin board can be shared so that people in your organization with Copilot access can view this session. Additionally, the contents of the pin board can be exported to Microsoft Word, sent via email, or copied.
 
 :::image type="content" source="../media/share-pinned-item-v2.png" lightbox="../media/share-pinned-item.png" alt-text="Screen capture showing the window that is displayed when a user selects the option to share the pinned item.":::
 
