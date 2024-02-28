@@ -6,7 +6,7 @@ Now your task is to deploy the sensor by installing the OT monitoring software a
 
 The OT sensor deployment plan is shown in the following diagram:
 
-:::image type="content" source="../media/3-deploy-sensors.png" alt-text="Diagram of the sensor deployment path" border="false":::
+:::image type="content" source="../media/deploy-sensor-New-v2.png" alt-text="Diagram of the sensor deployment path" border="false":::
 <!-- this title was based on the diagram above -should this image be re done and change the titles to fit our new flow?? -->
 ## Install Defender for IoT software
 
@@ -46,6 +46,6 @@ In the **Activation** tab upload the activation file, provided by the deployment
 
 ### Define certificate settings
 
-In the **Certificates** tab, deploy the SSL/TLS certificate settings. It's best practice to use a CA-signed certificate that's more secure, however in our test environment the self-signed certificate is secure enough. <!-- split sentence at However?-->
+In the **Certificates** tab, deploy the SSL/TLS certificate settings. It's best practice to use a CA-signed certificate that's more secure, however in our test environment the self-signed certificate is secure enough.
 
 Once these tasks are performed the sensor deployment process is complete and it can send data to the Azure portal.

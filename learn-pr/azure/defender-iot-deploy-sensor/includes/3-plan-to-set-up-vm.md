@@ -4,14 +4,16 @@ Your car manufacturing organization has offices and production sites across the 
 
 The OT sensor deployment plan is shown in the following diagram:
 
-:::image type="content" source="../media/3-deploy-sensors.png" alt-text="Diagram of the sensor deployment path" border="false":::
+:::image type="content" source="../media/deploy-sensor-New-v2.png" alt-text="Diagram of the sensor deployment path" border="false":::
 
-## Install Defender for IoT software
+This Learn Module is divided into 2 sections.
 
-This Learn Module is divided into 2 sections, the first - units 3 and 4 - deals with creating and setting up the virtual machine to run the OT sensor. The second - units 5 and 6 - deals with installing and activiating the monitoring software on the virtual machine OT sensor.
+Section 1: units 3 and 4 deal with creating and setting up the virtual machine to run the OT sensor.
+
+Section 2: units 5 and 6 deal with installing and activiating the monitoring software on the virtual machine OT sensor.
 
 ### Set up a virtual machine
-<!-- placement heading - what should we do for this introduction - should it be here or probably earlier in unit 1 or 2? LW-->
+
 <!-- remove this: Download the OT monitoring software installation file from the Defender for IoT setup page. !-- is this provided by the previous team??? --! Save the ISO file, at a later stage you will install it on to the OT sensor appliance. LW-->
 
 The first stage in deploying the OT sensor monitoring software is to set up a virtual machine to act as the OT sensor.

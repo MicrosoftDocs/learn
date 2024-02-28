@@ -29,7 +29,7 @@ On your virtual machine:
 
     :::image type="content" source="../media/4-iot-iso-boot.png" alt-text="Screenshot of the installation wizard for mounting the ISO file on the OT sensor virtual machine":::
 
-1. Select **Install iot-sensor_23.1.1.75399077**. <!-- change this to say Select the correct install version that appears in the list, for example **Install iot-sensor_23.1.1.75399077** LM-->
+1. Select **Install iot-sensor_<version_number>**.
 
     The installation process takes 20-30 minutes. When completed the default network details are shown. While the default IP, subnet, and gateway addresses are identical with each installation, the UID is unique for each appliance. For example:
   
