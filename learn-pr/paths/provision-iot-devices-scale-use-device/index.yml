@@ -15,7 +15,7 @@ prerequisites: |
   *   Explain the features and capabilities of IoT Hub and implement secure device-to-cloud communication between an IoT device and an IoT hub instance.
   *   Describe the Azure IoT SDKs for devices and services, and how Visual Studio Code, Azure CLI, and the Azure Cloud Shell can be used to configure and develop components of an IoT solution.
 summary: |
-  You will learn about the Device Provisioning Service properties and capabilities, device attestation mechanisms, device provisioning lifecycle tasks, and you will implement device enrollment (and disenrollment) using group enrollment processes.
+  You'll learn about the Device Provisioning Service properties and capabilities, device attestation mechanisms, device provisioning lifecycle tasks, and you'll implement device enrollment (and disenrollment) using group enrollment processes.
 iconUrl: /training/achievements/iot-provisions-device-scale.svg
 levels:
 - intermediate
