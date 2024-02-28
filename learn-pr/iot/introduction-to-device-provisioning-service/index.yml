@@ -30,8 +30,7 @@ products:
 - azure-iot-hub
 - azure-iot-sdk
 subjects:
-- device-management
-- asset-management
+- iot
 units:
 - learn.introduction-to-device-provisioning-service.introduction
 - learn.introduction-to-device-provisioning-service.what-is-device-provisioning-service
