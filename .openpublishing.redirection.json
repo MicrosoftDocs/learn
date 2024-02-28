@@ -32277,6 +32277,26 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-azure/examine-device-provisioning-service-coding-tools-access/3-device-provisioning-service-software-development-kits.yml",
+      "redirect_url": "/training/modules/examine-device-provisioning-service-coding-tools-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-device-provisioning-service-coding-tools-access/4-control-access-device-provisioning-service.yml",
+      "redirect_url": "/training/modules/examine-device-provisioning-service-coding-tools-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-device-provisioning-service-coding-tools-access/5-knowledge-check.yml",
+      "redirect_url": "/training/modules/examine-device-provisioning-service-coding-tools-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-device-provisioning-service-coding-tools-access/6-summary.yml",
+      "redirect_url": "/training/modules/examine-device-provisioning-service-coding-tools-access/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/2-microsoft-entra-id-users.md",
       "redirect_url": "/training/modules/manage-identities-microsoft-entra-id/3-microsoft-entra-id-users",
       "redirect_document_id": false
