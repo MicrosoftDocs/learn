@@ -2,7 +2,7 @@
 ms.custom:
   - build-2023
 ---
-In this module, you explored the new features and enhancements introduced in SQL Server 2022, learning how they optimize performance and offer better control on SQL object creation. You gained insights into the powerful T-SQL capabilities, such as resumable constraints, low priority options, `SELECT WINDOW` predicate, and more, which help database administrators and developers better manage database operations, improve efficiency, and adapt to the evolving needs of modern data management.
+In this module, you explored the new features and enhancements introduced in SQL Server 2022, learning how they optimize performance and offer better control on SQL object creation. You gained insights into the powerful T-SQL capabilities—such as resumable constraints, low-priority options, the `SELECT WINDOW` predicate, and more—which help database administrators and developers better manage database operations, improve efficiency, and adapt to the evolving needs of modern data management.
 
 In this module, you learned about the following areas:
 
