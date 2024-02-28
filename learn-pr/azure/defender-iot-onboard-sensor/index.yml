@@ -1,8 +1,7 @@
 ### YamlMime:Module
 uid: learn.onboard-sensor-microsoft-defender-iot
 metadata:
-  title: |
-    Onboard your first OT sensor to Microsoft Defender for IoT
+  title: Onboard your first OT sensor to Microsoft Defender for IoT
   description: "Learn how to onboard an OT sensor as part of the deployment of Microsoft Defender for IoT to monitor your OT network."
   ms.date: 12/4/2023
   author: cwatson-cat
