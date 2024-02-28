@@ -30,28 +30,28 @@ quiz:
       explanation: 'This example is a good question to ask.'
     - content: 'How quickly can we reach a C-level executive about the problem?'
       isCorrect: true
-      explanation: 'Correct, though C-level executives are important, this does not help you evaluate your process.'
+      explanation: 'Correct, though C-level executives are important, this doesn't help you evaluate your process.'
 
   - content: 'When creating a conversation bridge to communicate about an incident, why is it important to carve out a unique channel for it?'
     choices:
-    - content: 'This process will make sure we are HIPAA-compliant'
+    - content: 'This process will make sure we're HIPAA-compliant'
       isCorrect: false
-      explanation: 'This is not a HIPAA requirement (and it does not relate to keeping irrelevant discussion out of the channel)'
+      explanation: 'This isn't a HIPAA requirement (and it doesn't relate to keeping irrelevant discussion out of the channel)'
     - content: 'It will keep irrelevant discussion out of the channel making it easier to later use the data for post-incident review'
       isCorrect: true
       explanation: 'Correct.'
     - content: 'It lets us keep channels for engineers and management separate'
       isCorrect: false
-      explanation: 'This process is not necessary when communicating about an incident (under normal circumstances).'
+      explanation: 'This process isn't necessary when communicating about an incident (under normal circumstances).'
 
   - content: 'Which of the following is true?'
     choices:
     - content: 'You should keep information about incidents limited to only the primary and secondary responders until the incident has been resolved'
       isCorrect: false
       explanation: 'All people associated with the incident need access to the information.'
-    - content: 'You should keep information about an incident in a centralized place where it is accessible to everyone on the team'
+    - content: 'You should keep information about an incident in a centralized place where it's accessible to everyone on the team'
       isCorrect: true
-      explanation: 'Correct, it is important that it is easy to find and access.'
+      explanation: 'Correct, it's important that it's easy to find and access.'
     - content: 'You should use only email to document discussions about the incident.'
       isCorrect: false
       explanation: 'There are many ways to document discussions about an incident.'
@@ -60,10 +60,10 @@ quiz:
     choices:
     - content: 'ChatOps'
       isCorrect: false
-      explanation: 'ChatOps is a practice, it is not a codeless automation tool.'
-    - content: 'troubleshooting guides'
+      explanation: 'ChatOps is a practice, it isn't a codeless automation tool.'
+    - content: 'Troubleshooting guides'
       isCorrect: false
-      explanation: 'Troubleshooting guides are useful for providing runbooks for response, they are not a codeless automation tool.'
+      explanation: 'Troubleshooting guides are useful for providing runbooks for response, they aren't a codeless automation tool.'
     - content: 'Logic Apps'
       isCorrect: true
       explanation: 'Correct.'
