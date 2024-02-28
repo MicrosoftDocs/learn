@@ -27,7 +27,7 @@ quiz:
       explanation: 'This answer is part of the formula for communicating with stakeholders.'
     - content: 'This is who is staffing the incident response.'
       isCorrect: true
-      explanation: 'This might not be information that stakeholders necessarily need to know (plus it may change as the incident progresses).'
+      explanation: 'This information might not be what stakeholders necessarily need to know (plus it may change as the incident progresses).'
     - content: 'We will get back to you in X amount of time.'
       isCorrect: false
       explanation: 'This answer is part of the formula for communicating with stakeholders.'
