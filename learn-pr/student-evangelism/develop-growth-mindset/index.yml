@@ -27,7 +27,7 @@ roles:
 products:
 - azure
 subjects:
-- modern-work
+- business-applications
 units:
 - learn.student-evangelism.develop-growth-mindset.introduction
 - learn.student-evangelism.develop-growth-mindset.describe-fixed-growth-mindsets
