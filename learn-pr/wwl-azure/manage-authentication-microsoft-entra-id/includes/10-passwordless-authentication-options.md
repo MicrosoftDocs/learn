@@ -23,7 +23,7 @@ Windows Hello for Business is ideal for information workers that have their own 
 
 The following steps show how the sign-in process works with Microsoft Entra ID:
 
-:::image type="content" source="../media/windows-hello-flow-b3fcb3d2.png" alt-text="Diagram showing an example of the how the sign-in process works with Microsoft Entra ID.":::
+:::image type="content" source="../media/windows-hello-flow-b3fcb3d2.png" alt-text="Diagram showing an example of how the sign-in process works with Microsoft Entra ID.":::
 
 
 1. A user signs into Windows using biometric or PIN gesture. The gesture unlocks the Windows Hello for Business private key and is sent to the Cloud Authentication security support provider, referred to as the Cloud AP provider.
@@ -42,7 +42,7 @@ The following steps show how the sign-in process works with Microsoft Entra ID:
 
 ## Microsoft Authenticator
 
-You can also allow your employee's phone to become a passwordless authentication method. You may already be using the Authenticator app as a convenient multi-factor authentication option in addition to a password. You can also use the Authenticator App as a passwordless option.
+You can also allow your employee's phone to become a passwordless authentication method. You may already be using the Authenticator app as a convenient multifactor authentication option in addition to a password. You can also use the Authenticator App as a passwordless option.
 
 :::image type="content" source="../media/approve-sign-in-page-2e4b3029.png" alt-text="Screenshot showing an example of the Microsoft authenticator application.":::
 
@@ -143,7 +143,7 @@ We recommend no more than **20 sets of keys** for each passwordless method for a
 
 When you use PowerShell to create a CSV file with all of the existing keys, carefully identify the keys that you need to keep, and remove those rows from the CSV. Then use the modified CSV with PowerShell to delete the remaining keys to bring the account key count under the limit.
 
-It is safe to delete any key reported as "Orphaned"="True" in the CSV. An orphaned key is one for a device that is not longer registered in Entra ID. If removing all Orphans still doesn't bring the User account below the limit it is necessary to look at the "DeviceId" and "CreationTime" columns to identify which keys to target for deletion. Be careful to remove any row in the CSV for keys you want to keep. Keys for any DeviceID corresponding to devices the user actively uses should be removed from the CSV before the deletion step.
+It is safe to delete any key reported as "Orphaned"="True" in the CSV. An orphaned key is one for a device that is not longer registered in Microsoft Entra ID. If removing all Orphans still doesn't bring the User account below the limit it is necessary to look at the "DeviceId" and "CreationTime" columns to identify which keys to target for deletion. Be careful to remove any row in the CSV for keys you want to keep. Keys for any DeviceID corresponding to devices the user actively uses should be removed from the CSV before the deletion step.
 
 ## Choose a passwordless method<br>
 
