@@ -49,7 +49,7 @@ For our example, we'll use the following Logic App connectors for incident track
 - **Azure Storage**, where you can store and retrieve information about who's on call so you can assign the proper people to respond to the incident. In our example, we'll be using Azure Table Storage because it offers a very simple "key-value" store that makes it easy to store a list of engineers and their on-call status.
 - **Microsoft Teams**, which you can use to create a new, unique incident channel to track your engineering teams' conversations in real time as they communicate about specific incidents. This allows you to preserve the interactions in relation to the timeline of events later when performing a post-incident review.
 
-Now let's tie this all together with a Logic App. First, take a look at the complete app as shown in the Logic Apps Designer, then we'll walk though it step by step.
+Now let's tie this all together with a Logic App. First, take a look at the complete app as shown in the Logic Apps Designer, then we'll walk through it step by step.
 
 :::image type="content" source="../media/logic-app-overview.png" alt-text="Screenshot of a zoomed out view of a logic app as displayed in the Logic Apps Designer.":::
 
