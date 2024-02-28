@@ -17,7 +17,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'When communicating with stakeholders, which of these items are not part of the formula we suggested?'
+  - content: 'When you communicate with stakeholders, which of these items are not part of the formula we suggested?'
     choices:
     - content: 'This is what we know.'
       isCorrect: false
