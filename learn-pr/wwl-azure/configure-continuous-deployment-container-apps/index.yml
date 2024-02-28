@@ -12,7 +12,9 @@ metadata:
   ms.service: azure
   ai-usage: ai-assisted
 title: Configure continuous deployment for container apps
-summary: This module explores deployment options for containerized apps. It reviews the features of Azure DevOps and examines automated deployments to Container Apps using Azure Pipelines.
+summary: |
+  This module explores deployment options for containerized apps. It reviews the features of Azure DevOps and examines automated deployments to Container Apps using Azure Pipelines.
+  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   - Examine deployment options and strategies for containerized applications.
   - Examine the features and capabilities of Azure DevOps and Azure Pipelines.
