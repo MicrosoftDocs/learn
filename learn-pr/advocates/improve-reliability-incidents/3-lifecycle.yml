@@ -29,7 +29,7 @@ quiz:
       isCorrect: true
       explanation: 'Correct, incidents do provide a pulse for you.'
 
-  - content: 'Which of these isn't a phase of an incident?'
+  - content: 'Which of these is not a phase of an incident?'
     choices:
     - content: 'Detection'
       isCorrect: false
