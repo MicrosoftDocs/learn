@@ -34,13 +34,13 @@ quiz:
 
   - content: 'Why are workbooks and troubleshooting guides considered live documents in our description?'
     choices:
-    - content: 'they can be edited at any time'
+    - content: 'They can be edited at any time'
       isCorrect: false
       explanation: 'This answer is true, but it is not what makes them live documents.'
     - content: 'Kusto Query Language (KQL) queries can be embedded and will display their results when the document is read'
       isCorrect: true
       explanation: 'Correct.'
-    - content: 'they are automatically shared to the public as soon as they are written'
+    - content: 'They are automatically shared to the public as soon as they are written'
       isCorrect: false
       explanation: 'They are live because they can have embedded KQL queries, plus workbooks and troubleshooting guides are only shared with people with your explicit permission.'
       
