@@ -12,7 +12,9 @@ metadata:
   ms.service: azure
   ai-usage: ai-assisted
 title: Guided project - Deploy and manage a container app using Azure Container Apps
-summary: This module guides learners through the end-to-end process of building, deploying, and managing containerized applications using Azure Container Apps, Azure Container Registry, Azure Pipelines, and other tools and resources.
+summary: 
+  This module guides learners through the end-to-end process of building, deploying, and managing containerized applications using Azure Container Apps, Azure Container Registry, Azure Pipelines, and other tools and resources.
+  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   - Configure Azure Container Registry, Azure Container Apps, and other resources required for an app deployment scenario.
   - Configure Azure Pipelines for a continuous integration scenario.
