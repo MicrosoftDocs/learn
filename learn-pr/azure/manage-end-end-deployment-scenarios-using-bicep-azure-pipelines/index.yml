@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Manage end-to-end deployment scenarios by using Bicep and Azure Pipelines
   description: Build a deployment pipeline for Bicep infrastructure as code templates. Create a single pipeline to deploy infrastructure, applications, and data.
-  ms.date: 12/12/2022
+  ms.date: 02/28/2024
   author: mumian
   ms.author: jgao
   ms.topic: module
