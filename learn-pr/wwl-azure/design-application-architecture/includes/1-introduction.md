@@ -42,7 +42,7 @@ The content in the module helps you prepare for Exam AZ-305: Designing Microsoft
 
 Design infrastructure solutions
 
-- Design an application architecture
+- Design an application architecture.
 
 ## Prerequisites
 
