@@ -57,7 +57,6 @@ The following diagram depicts how your devices might be divided into the differe
 
 ## Knowledge check
 
-:::image type="content" source="../media/3-industrial-network-diagram-knowledge-check.png" alt-text="Diagram of a sample network diagram. Figure one for the knowledge check question." border="false":::
-
+:::image type="complex" source="../media/3-industrial-network-diagram-knowledge-check.png" alt-text="Diagram of a sample network diagram. Figure one for the knowledge check question." border="false":::
 Figure 1 shows a sample network diagram divided into Cloud, Enterprise (IoT), and OT areas. The cloud area includes Microsoft Azure and a data center/SOC/MSSP area and is separated from the Enterprise area with a firewall. The Enterprise/IoT area includes the corporate network and is set off from the OT area by a firewall. In the OT area are three defined areas spanning the production floor, SCADA/DCS, and industrial perimeter network. The first is labeled IPN and includes Historian, Security update server, and Domain controller on the SCADA/DCS level and a switch on the industrial perimeter network (IPN) level. The other two areas are labeled Zone one and Zone two, respectively and include production floor resources, PLCs / RTUs and HMIs on the SCADA/DCS level, and a switch each on the IPN level. Each switch has an arrow pointing upward. The IPN area has a line leading up to the firewall (labeled "A"). It additionally has a line leading from the arrow to the corporate network (labeled "B"), and to the Data center area (labeled "C").  Zone one and Zone two each have lines leading up from their zones (labeled "D" and "F" respectively) that connect together and then lead up to the corporate network (labeled "E").
 :::image-end:::
