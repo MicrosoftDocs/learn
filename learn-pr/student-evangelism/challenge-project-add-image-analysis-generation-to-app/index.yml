@@ -48,7 +48,7 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
   - ai-services
   - azure-openai
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
-  - data-ai
+  - data-management
 units:
 - learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.introduction
 - learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.prepare

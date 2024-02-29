@@ -9,7 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.custom: team=nextgen
   ms.service: azure-javascript
-  ms.devlang: nodejs, javascript
 title: Create a new Node.js project and work with dependencies  
 summary: Use dependencies from the npm registry to develop Node.js applications faster. Learn how to manage dependencies for your project. This module uses JavaScript CommonJS in the Node.js runtime.
 abstract: |
