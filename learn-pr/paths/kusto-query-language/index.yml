@@ -38,7 +38,7 @@ products:
 - azure
 subjects:
 - data-analytics
-- data-science
+- data-management
 - data-visualization
 - big-data
 modules:

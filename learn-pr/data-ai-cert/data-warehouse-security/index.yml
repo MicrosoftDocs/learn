@@ -29,7 +29,7 @@ products:
 - azure-synapse-analytics
 subjects:
 - security
-- data-warehousing
+- data-storage
 units:
 - learn.data-ai.data-warehouse-security.introduction
 - learn.data-ai.data-warehouse-security.azure-dw-security-control

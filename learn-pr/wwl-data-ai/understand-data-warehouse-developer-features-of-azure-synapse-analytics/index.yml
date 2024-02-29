@@ -29,7 +29,7 @@ products:
 - azure-synapse-analytics
 subjects:
 - data-analytics
-- data-lake
+- data-storage
 - data-warehousing
 units:
 - learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.introduction
