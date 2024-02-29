@@ -15,8 +15,7 @@ After completing this module, you'll be able to:
 
 ## Prerequisites 
 
-- A GitHub enterprise account with a GitHub Advanced Security license
+- A GitHub account
 - Familiarity with managing GitHub administrative settings
 - Basic knowledge of GitHub Actions
-
 
