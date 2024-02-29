@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.github.intro-github-copilot-enterprise
+title: Introduction to Github Copilot Enterprise
+metadata:
+  title: Introduction to Github Copilot Enterprise
+  description: GitHub Copilot Enterprise is designed as an intelligent companion for developers, making the vast repository of your organization's institutional knowledge readily accessible. This cutting-edge tool empowers your team to query both public and private codebases directly, facilitating a smoother onboarding process for new codebases, fostering consistency across engineering teams, and ensuring universal access to established standards and previously completed work.
+  ms.date: 07/18/2023
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: module-intro-to-product
+  ms.service: github-copilot
+summary: >
+  Learn about the difference between GitHub Copilot for Enterprise versus Business versus GitHub Copilot for Individuals, specific use cases, how to enable it, and how to use it.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Understand what the GitHub Copilot Enterprise plan is.
+  - Understand the difference between GitHub Copilot Enterprise versus Business versus Individual.
+  - Learn about specific use cases for GitHub Copilot Enterprise and hear how customers are enhancing their productivity.
+  - Review how to enable GitHub Copilot Enterprise.
+prerequisites: |
+  - Basic understanding of GitHub fundamentals
+  -	A GitHub Enterprise Cloud administrator account
+  -	An existing Copilot for Business plan.
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels: 
+  - beginner
+roles: 
+  - developer
+  - devops-engineer
+  - administrator
+  - business-analyst
+products:
+  - github
+subjects:
+  - data-ai
+units:
+  - learn.github.intro-github-copilot-enterprise.introduction
+  - learn.github.intro-github-copilot-enterprise.about-github-copilot-enterprise
+  - learn.github.intro-github-copilot-enterprise.how-to-get-started
+  - learn.github.intro-github-copilot-enterprise.knowledge-check
+  - learn.github.intro-github-copilot-enterprise.summary
+badge:
+  uid: learn.github.intro-github-copilot-enterprise.badge
