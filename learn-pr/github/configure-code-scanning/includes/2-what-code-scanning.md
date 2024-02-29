@@ -44,7 +44,7 @@ Follow these steps to set up code scanning using the CodeQL GitHub Actions workf
 
 4. In the dropdown menu that appears select "Default"
 
-5. Review the default options. If needed, select the "Edit" button in the bottom left corner of the new window to customize how CodeQL will run.
+5. Review the default options. If needed, select the "Edit" button in the bottom left corner of the new window to customize how CodeQL runs.
 
     The `on:pull_request` and `on:push` triggers are the default for code scanning are each useful for different purposes. You'll learn more about these triggers in the  "Configure Code Scanning" unit. 
 
