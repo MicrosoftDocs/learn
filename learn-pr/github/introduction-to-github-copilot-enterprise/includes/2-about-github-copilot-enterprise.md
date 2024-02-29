@@ -2,7 +2,7 @@ GitHub Copilot Enterprise builds the power of generative AI into an editor exten
 
 :::image type="content" source="../media/2-copilot-benefits.png" alt-text="Image that lists the benefits of GitHub Copilot." border="true":::
 
-Living within and ingrained into the organization's codebase, Copilot leverages your organization's codebase and internal knowledge to provide contextualized coding assistance, answer questions, explain the intent of the code in your repositories, and even suggest code to support your team's working patterns and best practices. This boosts productivity, collaboration, and efficiency by allowing your developers to get tailored GitHub Copilot assistance while contributing and reviewing each other's work,  making their work faster, and making it easier to stick to your organization standards.
+Living within and ingrained into the organization's codebase, Copilot uses your organization's codebase and internal knowledge to provide contextualized coding assistance, answer questions, explain the intent of the code in your repositories, and even suggest code to support your team's working patterns and best practices. This boosts productivity, collaboration, and efficiency by allowing your developers to get tailored GitHub Copilot assistance while contributing and reviewing each other's work,  making their work faster, and making it easier to stick to your organization standards.
 
 ## New features in GitHub Copilot Enterprise
 
@@ -12,7 +12,7 @@ Let's learn about the new features that come with GitHub Copilot Enterprise.
 
 :::image type="content" source="../media/2-github-copilot-chat-window.png" alt-text="Screenshot of GitHub Copilot chat window." border="true":::
 
-GitHub Copilot Enterprise allows developers to use GitHub Copilot Chat to create prompts that are customized to your codebase. This opens up a world of new possibilities, enabling developers to leverage it directly within issues, pull requests, code files within code spaces, and even directly on repositories.
+GitHub Copilot Enterprise allows developers to use GitHub Copilot Chat to create prompts that are customized to your codebase. This feature opens up a world of new possibilities, enabling developers to apply it directly within issues, pull requests, code files within code spaces, and even directly on repositories.
 
 By initiating Copilot Chat threads within these environments, team members can harness Copilot's tailored suggestions to get the information they need from that space or enhance their coding experience while contributing.
 
@@ -30,7 +30,7 @@ GitHub Copilot Enterprise allows developers to generate summaries of pull reques
 
 Docsets are private custom collections of internal code and documentation tailored to organizations' specific needs and workflows. Copilot docset management can help you find the answers you're looking for and present them to you succinctly. For example, Copilot docset management can answer specific questions about using a particular library or framework, so that you don't have to search the whole docset.
 
-Copilot docset management also references existing documentation related to your questions so that you can find additional, contextual information. This personalized approach streamlines development workflows, ensuring that solutions provided are precisely aligned with the intricacies of individual projects and workflows.
+Copilot docset management also references existing documentation related to your questions so that you can find more contextual information. This personalized approach streamlines development workflows, ensuring that solutions provided are precisely aligned with the intricacies of individual projects and workflows.
 
 - **Code review**
 
@@ -58,6 +58,4 @@ Now, let's review the differences between GitHub Copilot Enterprise, GitHub Copi
 **Audit logging and reporting**| ✓ | Limited | ✕ |
 |**VPN proxy support via self-signed certificates**| ✓ | ✓ | ✕ |
 
-If you're wondering how GitHub Copilot Enterprise can help you and your team, we've got you covered.
-
-Want to get started with GitHub Copilot Enterprise? Let's learn how in our next unit.
+Wondering how GitHub Copilot Enterprise can help you and your team? Want to get started with GitHub Copilot Enterprise? Let's learn how in our next unit.
