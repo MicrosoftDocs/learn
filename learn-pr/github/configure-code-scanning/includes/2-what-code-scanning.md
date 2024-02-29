@@ -6,7 +6,7 @@ In this unit, you'll learn about CodeQL, the three options for setting up code s
 
 ## About code scanning with CodeQL
 
-CodeQL is the code analysis engine developed by GitHub to automate security checks. You can analyze your code using CodeQL and display the results as code scanning alerts. There are three main ways to setup CodeQL analysis for code scanning:
+CodeQL is the code analysis engine developed by GitHub to automate security checks. You can analyze your code using CodeQL and display the results as code scanning alerts. There are three main ways to set up CodeQL analysis for code scanning:
 
 - Use default setup to quickly configure CodeQL analysis for code scanning on your repository. The default setup handles choosing the languages to analyze, query suite to run, and events that trigger scans with the option to manually configure the languages and query suites. This setup option runs code scanning as a Github Action.
 - Use advanced setup to add the CodeQL workflow directly to your repository. Adding the CodeQL workflow directly into your repository generates a customizable workflow file, which uses the [github/codeql-action](https://github.com/github/codeql-action/) to run the CodeQL CLI as a Github Action.
@@ -38,7 +38,7 @@ Follow these steps to set up code scanning using the CodeQL GitHub Actions workf
 
      :::image type="content" source="../media/2-security-tab-screenshot.png" alt-text="screenshot of the security tab":::
 
-3. Click **Set up code scanning**. If this option is not available, ask an organization owner or repository administrator to enable GitHub Advanced Security. 
+3. Click **Set up code scanning**. If this option isn't available, ask an organization owner or repository administrator to enable GitHub Advanced Security. 
  
      :::image type="content" source="../media/3-set-up-code-scanning-button-screenshot.png" alt-text="screenshot of the set up code scanning button":::
 
@@ -58,4 +58,4 @@ Running code scanning with GitHub Actions affects your monthly billing minutes. 
 
 ## About Billing for Actions
 
-Code scanning uses GitHub Actions, and each run of a code scanning workflow consumes minutes for GitHub Actions. GitHub Actions usage is free for both public repositories and self-hosted runners. For private repositories, each GitHub account receives a certain number of free minutes and storage, depending on the product used with the account. Any usage beyond the included amounts is controlled by spending limits. If you are a monthly billed customer, your account has a default spending limit of 0 US dollars (USD), which prevents extra usage of minutes or storage for private repositories beyond the amounts included with your account. If you pay your account by invoice, your account will have an unlimited default spending limit. Minutes reset every month, while storage usage does not.
+Code scanning uses GitHub Actions, and each run of a code scanning workflow consumes minutes for GitHub Actions. GitHub Actions usage is free for both public repositories and self-hosted runners. For private repositories, each GitHub account receives a certain number of free minutes and storage, depending on the product used with the account. Any usage beyond the included amounts is controlled by spending limits. If you're a monthly billed customer, your account has a default spending limit of 0 US dollars (USD), which prevents extra usage of minutes or storage for private repositories beyond the amounts included with your account. If you pay your account by invoice, your account will have an unlimited default spending limit. Minutes reset every month, while storage usage does not.
