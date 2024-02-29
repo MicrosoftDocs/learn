@@ -66,11 +66,11 @@ To perform this exercise, you need:
 1. In the **DATA** section, select the ellipsis icon next to the newly created database **iotdb** and select **New Container**.
 1. On the **New Container** pane, specify the following settings, and then select **OK**.
 
-  | Setting | Configuration |
-  | --- | --- |
-  | Database id | **Use existing - iotdb** |
-  | Container id | **iotcollection** |
-  | Partition Key | **/pk/timestamp/deviceid** |
+   | Setting | Configuration |
+   | --- | --- |
+   | Database id | **Use existing - iotdb** |
+   | Container id | **iotcollection** |
+   | Partition Key | **/pk/timestamp/deviceid** |
 
 1. Keep all the web browser windows open. You'll use them in the next exercise of this module.
 
