@@ -3,7 +3,7 @@ uid: learn.wwl.develop-ai-agents-azure-open-ai-semantic-kernel-sdk
 metadata:
   title: APL-2005 Develop AI agents using Azure OpenAI and the Semantic Kernel SDK
   description: APL-2005 Develop AI agents using Azure OpenAI and the Semantic Kernel SDK
-  ms.date: 02/28/2024
+  ms.date: 02/29/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: learning-path
@@ -30,5 +30,6 @@ modules:
 - learn.wwl.create-plugins-semantic-kernel
 - learn.wwl.give-your-ai-agent-skills
 - learn.wwl.use-intelligent-planners
+- learn.wwl.guided-project-create-ai-travel-agent
 trophy:
   uid: learn.wwl.develop-ai-agents-azure-open-ai-semantic-kernel-sdk.trophy
