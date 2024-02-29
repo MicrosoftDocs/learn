@@ -28,7 +28,7 @@ products:
 - azure-databricks
 subjects:
 - data-ai
-- data-science
+- data-management
 - machine-learning
 units:
 - learn.wwl.machine-learning-azure-databricks.introduction
