@@ -2,8 +2,7 @@
 uid: learn.onboard-sensor-microsoft-defender-iot.introduction
 title: Introduction
 metadata:
-  title: |
-    Introduction to onboarding an OT sensor
+  title: Introduction to onboarding an OT sensor
   description: "Introduction to Defender for IoT module for the onboarding a sensor phase of a deployment."
   ms.date: 12/4/2023
   author: cwatson-cat
