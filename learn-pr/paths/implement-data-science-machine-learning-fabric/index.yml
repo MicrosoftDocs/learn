@@ -27,7 +27,7 @@ subjects:
 - data-analytics
 - data-engineering
 - data-integration
-- data-science
+- data-management
 modules:
 - learn.wwl.get-started-data-science-fabric
 - learn-wwl.explore-data-for-data-science-microsoft-fabric
