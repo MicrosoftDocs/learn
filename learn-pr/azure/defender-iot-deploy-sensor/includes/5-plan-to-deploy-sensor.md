@@ -6,7 +6,7 @@ Now your task is to deploy the sensor by installing the OT monitoring software a
 
 The OT sensor deployment plan is shown in the following diagram:
 
-:::image type="content" source="../media/deploy-sensor-New-v2.png" alt-text="Diagram of the sensor deployment path" border="false":::
+:::image type="content" source="../media/5-deploy-sensor-path.png" alt-text="Diagram of the sensor deployment path" border="false":::
 <!-- this title was based on the diagram above -should this image be re done and change the titles to fit our new flow?? -->
 ## Install Defender for IoT software
 

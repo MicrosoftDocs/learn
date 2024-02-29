@@ -9,7 +9,7 @@ To start the software installation, open your virtual machine.
 
 In Defender for IoT select **Getting started > Sensor**, then select the latest software version and select **Download**. <!-- must ensure they download the correct software version otherwise the admin and log in will be incorrect, if it is different on older versions -->
 <!-- is this file 'given' to the person as a prerequisite? -->
-:::image type="content" source="../media/4-download-iso-file.png" alt-text="screenshot of Downloading ISO monitoring file from Defender for IoT":::
+:::image type="content" source="../media/6-download-iso-file.png" alt-text="screenshot of Downloading ISO monitoring file from Defender for IoT":::
 
 Save the downloaded ISO file in a location that's accessible from your VM.
 
@@ -27,7 +27,7 @@ On your virtual machine:
 
     The installation boots and a wizard opens, for example:
 
-    :::image type="content" source="../media/4-iot-iso-boot.png" alt-text="Screenshot of the installation wizard for mounting the ISO file on the OT sensor virtual machine":::
+    :::image type="content" source="../media/6-iot-iso-boot.png" alt-text="Screenshot of the installation wizard for mounting the ISO file on the OT sensor virtual machine":::
 
 1. Select **Install iot-sensor_<version_number>**.
 
@@ -66,7 +66,7 @@ Open a browser in the virtual machine.
 
 1. Type the IP address given at the end of the sensor installation, ```192.168.0.101```. The initial sign-in page appears, for example:
 
-    :::image type="content" source="../media/4-console-sign-in-page.png" alt-text="Screenshot of sensor console sign in":::
+    :::image type="content" source="../media/6-console-sign-in-page.png" alt-text="Screenshot of sensor console sign in":::
 1. Type the following credentials:<!-- how do we know they have chosen the correct sensor verison? define that above-->
 
     Username: ```admin```
@@ -131,4 +131,4 @@ Verify that your sensor is connected to Azure by checking its connectivity statu
 1. Check that your sensor is listed and the status is *healthy*.
 1. Check that device data appears by selecting **Device inventory**.
 <!-- Cat: Add screenshot image of a successful outcome-->
-:::image type="content" source="../media/4-device-inventory.png" alt-text="Screenshot of the Defender for IoT Device inventory page showing recent data from the sensor":::
+:::image type="content" source="../media/6-device-inventory.png" alt-text="Screenshot of the Defender for IoT Device inventory page showing recent data from the sensor":::
