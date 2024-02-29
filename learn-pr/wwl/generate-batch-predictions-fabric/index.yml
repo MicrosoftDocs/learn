@@ -32,7 +32,7 @@ roles:
 products:
 - fabric
 subjects:
-- data-science
+- data-management
 - machine-learning
 units:
 - learn.wwl.generate-batch-predictions-fabric.introduction
