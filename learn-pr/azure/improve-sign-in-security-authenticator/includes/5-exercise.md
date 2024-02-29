@@ -21,7 +21,7 @@ Create a user account for the purposes of testing the Microsoft Authenticator re
 
 ## Add the user to the Remote employees group
 
-1. From the Azure portal home, seearch for and select **Microsoft Entra ID**, then select **Groups** under **Manage**.
+1. From the Azure portal home, search for and select **Microsoft Entra ID**, then select **Groups** under **Manage**.
 1. Select the **Remote employees** group (or whatever name you gave to your group for remote workers).
 1. Select **Members** under **Manage** in the left menu.
 1. Select **Add members** in the taskbar, then search for and check the box next to the user you created in the previous section.
