@@ -40,9 +40,5 @@ Your company is concerned about sign-ins from users in your **Remote employees**
 1. Select **Save** in the taskbar.
 
    :::image type="content" border="true" source="../media/remote-employees.png" alt-text="Screenshot of adding remote employees group.":::
-The next unit will help you walk through the user experience in more detail. You'll:
 
-1. Create a Microsoft Entra user account for testing and add it to the remote employees group.
-1. Enable the test user for Microsoft Authenticator.
-1. Sign in as the test user, perform MFA, and follow the steps to set up Microsoft Authenticator.
-
+In the next unit, you'll you walk through the user experience in more detail.
