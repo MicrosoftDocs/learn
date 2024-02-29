@@ -27,7 +27,6 @@ subjects:
 - data-analytics
 - data-engineering
 - data-storage
-- data-warehousing
 units:
 - learn.wwl.use-sql-warehouses-azure-databricks.introduction
 - learn.wwl.use-sql-warehouses-azure-databricks.get-started
