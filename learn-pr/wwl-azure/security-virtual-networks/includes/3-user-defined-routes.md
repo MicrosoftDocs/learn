@@ -30,7 +30,7 @@ The system gives preference to the route with the explicit prefix when there's a
 
 To use this feature, specify a Service Tag name for the address prefix parameter in route table commands. For example, in PowerShell you can create a new route to direct traffic sent to an Azure Storage IP prefix to a virtual appliance by using:
 
-`Azure PowerShellCopy`
+**Azure PowerShell**``
 
 `$param = @{`
 
@@ -38,7 +38,7 @@ To use this feature, specify a Service Tag name for the address prefix parameter
 
 The same command for CLI is as follows:
 
-`Azure CLI`
+**Azure CLI**
 
 `az network route-table route create \`
 
