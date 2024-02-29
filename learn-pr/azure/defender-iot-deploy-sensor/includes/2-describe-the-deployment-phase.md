@@ -1,4 +1,4 @@
-To deploy the OT sensors in your car manufacturing organization, you install, configure and activate the OT monitoring software on the sensor. In our case, we will install the software on a virtual machine that you set up.
+To deploy the OT sensors in your car manufacturing organization, you install, configure and activate the OT monitoring software on the sensor. In our case, we install the software on a virtual machine that you set up.
 
 Once you deploy and activate the sensor, Defender for IoT displays traffic data sent by the sensor, including detected devices and triggered alerts.
 
