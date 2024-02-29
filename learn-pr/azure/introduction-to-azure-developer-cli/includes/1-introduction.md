@@ -12,7 +12,7 @@ Suppose you work at a financial company that is building a cloud native applicat
 - A Cosmos DB for NoSQL instance to permanently store app data.
 - CI/CD pipelines to ensure changes are reliably deployed through an automated process.
 
-Developers spend significant amounts of time and energy creating and properly configuring these types of resources. Setting up Azure environment resources is often a barrier to development progress on the app itself. The Azure Developer CLI is designed to greatly streamline and accelerate the process of moving from local development to provisioning and deploying your application resources to Azure.
+Developers spend significant amounts of time and energy creating and properly configuring these types of resources. Setting up Azure environment resources is often a barrier to development progress on the app itself. The Azure Developer CLI is designed to greatly streamline and accelerate this process. Especially, the tasks involved in moving from local development to provisioning and deploying your application resources to Azure.
 
 ## Learning objectives
 

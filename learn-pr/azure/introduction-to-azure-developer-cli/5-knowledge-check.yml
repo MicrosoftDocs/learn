@@ -56,7 +56,7 @@ quiz:
     - content: "Monitoring resources are configured to provide live metrics for the app."
       isCorrect: false
       explanation: "Incorrect. To configure monitoring, you must run the `azd monitor` command."
-  - content: "Which is the purpose of the `infra` folder in an `azd` template?"
+  - content: "What is the purpose of the `infra` folder in an `azd` template?"
     choices:
     - content: "It stores the CI/CD pipeline definitions for the template."
       isCorrect: false
