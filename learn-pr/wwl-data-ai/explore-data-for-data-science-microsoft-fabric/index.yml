@@ -32,7 +32,7 @@ roles:
 products:
 - fabric
 subjects:
-- data-science
+- data-management
 - machine-learning
 units:
 - learn-wwl.explore-data-for-data-science-microsoft-fabric.introduction

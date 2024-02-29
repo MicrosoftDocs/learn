@@ -28,7 +28,7 @@ products:
 - azure
 - azure-data-lake
 subjects:
-- data-lake
+- data-storage
 units:
 - learn.data-ai-introduction-to-azure-data-lake-storage.introduction
 - learn.data-ai-introduction-to-azure-data-lake-storage.azure-data-lake-gen2

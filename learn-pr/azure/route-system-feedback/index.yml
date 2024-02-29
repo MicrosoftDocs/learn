@@ -29,7 +29,7 @@ roles:
 products:
 - azure-devops
 subjects:
-- data-warehousing
+- data-storage
 units:
 - learn.azdo.route-system-feedback.1-introduction
 - learn.azdo.route-system-feedback.2-continuously-monitor

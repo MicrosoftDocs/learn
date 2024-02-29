@@ -32,7 +32,6 @@ products:
   - github
 subjects:
   - devops
-  - development-tools
 units:
 - learn.github-copilot-with-python.introduction
 - learn.github-copilot-with-python.what-is-github-copilot
