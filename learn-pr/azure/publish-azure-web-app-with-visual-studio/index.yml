@@ -34,7 +34,6 @@ products:
 - aspnet-core
 - vs-ide
 subjects:
-- development-tools
 - cloud-computing
 units:
 - learn.publish-azure-web-app-with-visual-studio.1-introduction
