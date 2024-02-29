@@ -36,7 +36,6 @@ subjects:
 - data-engineering
 - data-integration
 - data-storage
-- data-warehousing
 units:
 - learn.wwl.get-started-lakehouses.introduction
 - learn.wwl.get-started-lakehouses.fabric-lakehouse
