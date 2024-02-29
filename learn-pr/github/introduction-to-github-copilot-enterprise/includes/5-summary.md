@@ -20,4 +20,6 @@ Now that you've finished this module, you should be able to:
 
 ## How to provide feedback
 
-If you have content feedback or suggested changes for this Microsoft Learn module, https://github.com/githubpartners/microsoft-learn/issues/new/choose. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!
+Let us know if you have [content feedback or suggested changes for this Microsoft Learn module](https://github.com/githubpartners/microsoft-learn/issues/new/choose). GitHub maintains this content and a team member triages all requests.
+
+Thank you for taking the time to improve our content!
