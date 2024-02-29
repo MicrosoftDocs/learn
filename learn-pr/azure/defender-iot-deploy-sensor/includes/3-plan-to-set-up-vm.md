@@ -4,7 +4,7 @@ Your car manufacturing organization has offices and production sites across the 
 
 The OT sensor deployment plan is shown in the following diagram:
 
-:::image type="content" source="../media/deploy-sensor-path.png" alt-text="Diagram of the sensor deployment path" border="false":::
+:::image type="content" source="../media/3-deploy-sensor-path.png" alt-text="Diagram of the sensor deployment path" border="false":::
 
 This Learn Module is divided into 2 sections.
 
