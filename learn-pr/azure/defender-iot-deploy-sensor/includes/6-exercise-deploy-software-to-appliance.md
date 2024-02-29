@@ -7,7 +7,7 @@ To start the software installation, open your virtual machine.
 ### Download the monitoring software file
 
 In Defender for IoT select **Getting started > Sensor**, then select the latest software version and select **Download**. <!-- must ensure they download the correct software version otherwise the admin and log in will be incorrect, if it is different on older versions -->
-<!-- is this file 'given' to the person as a prerequisite? -->
+<!-- is this file 'given' to the person as a prerequisite? I don think so. -->
 :::image type="content" source="../media/6-download-iso-file.png" alt-text="screenshot of Downloading ISO monitoring file from Defender for IoT":::
 
 Save the downloaded ISO file in a location that's accessible from your VM.
@@ -20,7 +20,7 @@ On your virtual machine:
 
 1. Open your VM settings.
 
-1. For **CD/DVD Drive 1**, select **Datastore ISO file** and select the Defender for IoT software you downloaded earlier. <!-- may need to change isnt relevant anymore!!OR change to provided as a prereq/ by the .... team MT -->
+1. For **CD/DVD Drive 1**, select **Datastore ISO file** and select the ISO file of the monitoring software you downloaded earlier.
 
 1. Select **Next** > **Finish**.
 
@@ -59,9 +59,9 @@ Validate your installation using the sensor's own system health checks, availabl
 
 ## Activate and set up the sensor
 
-### Define initial setup
+Sign in to the sensor to then configure your sensor's initial settings, which has four stages.
 
-Sign in to the sensor and then configure your sensor's initial settings, which has four stages.
+### Sign in to the sensor
 
 Open a browser in the virtual machine.
 
@@ -75,7 +75,7 @@ Open a browser in the virtual machine.
 1. Select Login.
 
 The **Defender for IoT | Overview** page opens to the **Management interface** tab. Now you start to configure the settings.
-<!-- add screenshot of the Overview page here -->
+<!-- add screenshot of the Overview page here - can we get from THeo or Ariel or just leave this out?-->
 
 ### Define network details
 
@@ -129,5 +129,5 @@ Verify that your sensor is connected to Azure by checking its connectivity statu
 1. Select the **Sites and sensors** section.
 1. Check that your sensor is listed and the status is *healthy*.
 1. Check that device data appears by selecting **Device inventory**.
-<!-- Cat: Add screenshot image of a successful outcome-->
+
 :::image type="content" source="../media/6-device-inventory.png" alt-text="Screenshot of the Defender for IoT Device inventory page showing recent data from the sensor":::

@@ -2,7 +2,7 @@ This unit describes how to set up a virtual machine and connect it to a sensor, 
 
 ## Check the prerequisites - Configure firewall to allow the sensor to connect to Azure portal
 
-Before setting up the virtual machine, it is essential to confirm that your firewall is properly set up, so that your sensor can access the cloud on port 443, and connect to each of the endpoints. You must also confirm that the network adapter port groups for the internet and SNAP switch are also ready otherwise the virtual machine will not be able to communicate.
+Before setting up the virtual machine, it's essential to confirm that your firewall is properly set up. This ensures that your sensor can access the cloud on port 443, and connect to each of the endpoints. You must also confirm that the network adapter port groups for the internet and SNAP switch are also ready otherwise the virtual machine won't be able to communicate.
 
 ## Create a virtual machine with ESXi
 
@@ -37,11 +37,11 @@ To perform this procedure, VMware ESXi 5.5 or later must be installed and operat
 | Enterprise | 32 MB RAM | 1/1.8 TB |  4 Core/ 8 Threads |
 | Line | 8 MB RAM | 100/ 500 GB |  4 Core/ 4 Threads |
 
-You must now make two adapter connections, the first to an outside network adapter to allow the sensor to communicate with Azure. The second to recieve the mirrored traffic from the SPAN switch.
+You must now make two adapter connections, the first to an outside network adapter to allow the sensor to communicate with Azure. The second to receive the mirrored traffic from the SPAN switch.
 
-### Configure a internet network adapter
+### Configure an internet network adapter
 
-You will now configure network adapter 1 to connect to your VM network.
+You'll now configure network adapter 1 to connect to your VM network.
 
 **To configure a network adapter**:
 
@@ -87,15 +87,15 @@ Virtual switches don't have mirroring capabilities. However, for the sake of thi
 
 1. Connect to the sensor, and verify that mirroring works.
 
-1. Select **Next**. The virtual machine detail appear. Select **Finish**.
+1. Select **Next**. The virtual machine details appear to allow you to check they're correct. Select **Finish**.
 
-This procedss will take a minute to complete.
+Building the virtual machine starts. This process takes a few minutes to complete.
 
 ### Validate traffic mirroring
 
 After you configure the traffic mirroring, retrieve a PCAP file to receive a sample of recorded traffic (PCAP file) from the switch SPAN or mirror port.
 
-1. Use a network protocol analyzer application, such as *Wireshark*, to record a sample PCAP file for a few minutes. For example, connect a laptop to a port where you've configured traffic monitoring.
+1. Use a network protocol analyzer application, such as *Wireshark*, to record a sample PCAP file for a few minutes. For example, connect a laptop to a port with configured traffic monitoring.
 
 1. Check that *Unicast packets* are present in the recording traffic. Unicast traffic is traffic sent from address to another address.
 

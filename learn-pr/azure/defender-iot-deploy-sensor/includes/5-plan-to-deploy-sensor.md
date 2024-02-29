@@ -1,4 +1,4 @@
-Your car manufacturing organization has offices and production sites across the globe, with a network linking them together. A sensor was onboarded to Defender for IoT and the site networking is set up. A virtual machine is active which runs your sensor.
+Your car manufacturing organization has offices and production sites across the globe, with a network linking them together. A sensor was onboarded to Defender for IoT and the site networking is set up. A virtual machine is active that runs your sensor.
 
 Now your task is to deploy the OT monitoring software on to the sensor and activating the sensor to send data to the Azure portal.
 
@@ -12,7 +12,7 @@ The OT sensor deployment plan is shown in the following diagram:
 
 Download and save the OT monitoring software installation file from the Defender for IoT setup page.
 
-Open the virtual machine, run the installation file, and follow the stages in the wizard to install the software. Once the installation is complete the default network details are displayed. In a real life scenario, configured sensors can be bought and this step is skipped.
+Open the virtual machine, run the installation file, and follow the stages in the installation wizard. Once the installation is complete the default network details are displayed. In a real life scenario, configured sensors can be bought and this step is skipped.
 
 ## Activate and set up the sensor
 

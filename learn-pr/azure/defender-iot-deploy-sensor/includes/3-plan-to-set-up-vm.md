@@ -10,19 +10,19 @@ This Learn Module is divided into 2 sections.
 
 Section 1: units 3 and 4 deal with creating and setting up the virtual machine to run the OT sensor.
 
-Section 2: units 5 and 6 deal with installing and activiating the monitoring software on the virtual machine OT sensor.
+Section 2: units 5 and 6 deal with installing and activating the monitoring software on the virtual machine OT sensor.
 
 OR
 
 Section 1 - creating and setting up the virtual machine to run the OT sensor: units 3 and 4
 
-Section 2 - installing and activiating the monitoring software on the virtual machine OT sensor: units 5 and 6
+Section 2 - installing and activating the monitoring software on the virtual machine OT sensor: units 5 and 6
 
 ### Set up a virtual machine
 
 The first stage in deploying the OT sensor monitoring software is to set up a virtual machine to act as the OT sensor.
 
-We will use the VMware ESXi to build the virtual machine, but other systems such as HyperV could also be used. The information below is for setting up the ESXi, but you may need to refer to your virtual machine software documenation for more details.
+We'll use the VMware ESXi to build the virtual machine, but other systems such as HyperV could also be used. The information below is for setting up the ESXi, but you might need to refer to your virtual machine software documentation for more details.
 
 1. Create a virtual machine following the VMware directions after choosing **Create new virtual machine** and setting the correct virtual hardware parameters.
 
@@ -35,8 +35,8 @@ We will use the VMware ESXi to build the virtual machine, but other systems such
 - A default gateway
 - Any input interfaces
 
-1. Configure the SPAN port to enable traffic mirroring. For a virtual machine this must be set up using the **Promiscuous mode**.
+1. Configure the SPAN port to enable traffic mirroring. For a virtual machine, this must be set up using the **Promiscuous mode**.
 
-1. Verify that the SPAN port is correctly mirroring traffic by retrieving a PCAP file. The sample PCAP file data will confirm the switch configuiration and that the data passing through the switch is relevant for monitoring. You should also be able to idenfity the bandwidth and estimate the number of devices detetced by the switch. It is important to confirm the correct amount of data is being monitored. If the SPAN port is incorrectly set, too much data may be transferred and this can overwhelm the system, or not enough data is sent and the sensor will not correctly secure your system.
+1. Verify that the SPAN port is correctly mirroring traffic by retrieving a PCAP file. The sample PCAP file data will confirm that the switch configuration and that the data passing through the switch is relevant for monitoring. You should also be able to identify the bandwidth and estimate the number of devices detected by the switch. It's important to confirm the correct amount of data is being monitored. If the SPAN port is incorrectly set, too much data might be transferred which can overwhelm the system, or not enough data is sent and the sensor won't correctly secure your system.
 
 Use *Wireshark* or a similar program to record a PCAP file, and then confirm that the data recorded contains the correct data. If most of the traffic is ARP messages, your traffic mirroring configuration isn't correct.
