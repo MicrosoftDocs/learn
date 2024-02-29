@@ -6,7 +6,7 @@ To use the Azure AI Vision service you must first create a resource for it in yo
 Once you've created a resource, there are several ways to use Azure AI Vision's Read API: 
 - Vision Studio
 - REST API 
-- Software Development Kits (SDKs): Python, C#, Javascript
+- Software Development Kits (SDKs): Python, C#, JavaScript
 
 Below we will focus on the Vision Studio.
 

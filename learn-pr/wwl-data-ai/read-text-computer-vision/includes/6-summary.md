@@ -1,4 +1,4 @@
-Optical character recognition (OCR) has been around for a long time. The ability to do the same extraction from images, is where the Read API can help. The Read API provides the ability to extract large amounts of typewritten or handwritten text from images. 
+Optical character recognition (OCR) has been around for a long time. The ability to do the same extraction from images is where the Read API can help. The Read API provides the ability to extract large amounts of typewritten or handwritten text from images. 
 
 You can find out more about reading text with Azure AI Vision in the [service documentation](/azure/ai-services/computer-vision/overview-ocr?azure-portal=true).
 
