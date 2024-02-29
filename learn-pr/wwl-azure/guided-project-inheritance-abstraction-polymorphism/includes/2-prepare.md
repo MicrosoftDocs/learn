@@ -10,7 +10,7 @@ Use the following steps to prepare for the Guided Project exercises:
 
 1. Create a working directory with File Explorer in your Desktop folder called **LangtonsAnts**.
 
-1. Download the zip file containing the Starter project code by selecting the following link: [Starter Files](https://github.com/MicrosoftLearning/Guided-Project-implement-inheritance-abstraction-polymorphism/zip/refs/heads/main).
+1. Download the zip file containing the Starter project code by selecting the following link: [Starter Files](https://github.com/MicrosoftLearning/Guided-Project-implement-inheritance-abstraction-polymorphism/tree/main/Starter).
 
 1. Unzip the download files to your working directory.
 

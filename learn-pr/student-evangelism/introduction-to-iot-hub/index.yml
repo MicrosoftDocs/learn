@@ -2,7 +2,7 @@
 uid: learn.oxford.intro-to-iot-hub
 metadata:
   title: "Introduction to Azure IoT Hub"
-  description: "University of Oxford"
+  description: "Learn how to assess the characteristics of Azure IoT Hub and determine scenarios when to use IoT Hub."
   ms.date: 9/29/2019
   author: leestott
   ms.author: chnoring

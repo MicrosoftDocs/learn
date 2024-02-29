@@ -11,9 +11,9 @@ The following table summarizes each plan and their cloud availability.
 | [Secure score](/azure/defender-for-cloud/secure-score-security-controls) | ![Icon for a check mark](../media/yes-icon.png) | ![Icon for a check mark](../media/yes-icon.png) | Azure, AWS, GCP, on-premises |
 | [Governance](/azure/defender-for-cloud/concept-regulatory-compliance) | - | ![Icon for a check mark](../media/yes-icon.png) | Azure, AWS, GCP, on-premises |
 | [Regulatory compliance](/azure/defender-for-cloud/concept-regulatory-compliance) | - | ![Icon for a check mark](../media/yes-icon.png) | Azure, AWS, GCP, on-premises |
-| [Cloud security explorer](/azure/defender-for-cloud/how-to-manage-cloud-security-explorer) | - | ![Icon for a check mark](../media/yes-icon.png) | Azure, AWS |
-| [Attack path analysis](/azure/defender-for-cloud/how-to-manage-attack-path) | - | ![Icon for a check mark](../media/yes-icon.png) | Azure, AWS |
-| [Agentless scanning for machines](/azure/defender-for-cloud/concept-agentless-data-collection) | - | ![Icon for a check mark](../media/yes-icon.png) | Azure, AWS |
+| [Cloud security explorer](/azure/defender-for-cloud/how-to-manage-cloud-security-explorer) | - | ![Icon for a check mark](../media/yes-icon.png) | Azure, AWS, GCP |
+| [Attack path analysis](/azure/defender-for-cloud/how-to-manage-attack-path) | - | ![Icon for a check mark](../media/yes-icon.png) | Azure, AWS, GCP |
+| [Agentless scanning for machines](/azure/defender-for-cloud/concept-agentless-data-collection) | - | ![Icon for a check mark](../media/yes-icon.png) | Azure, AWS, GCP |
 
 The following sections will provide an overview of a few of these features:
 
