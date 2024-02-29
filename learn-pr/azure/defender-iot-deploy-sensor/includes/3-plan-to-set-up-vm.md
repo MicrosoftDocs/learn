@@ -12,9 +12,13 @@ Section 1: units 3 and 4 deal with creating and setting up the virtual machine t
 
 Section 2: units 5 and 6 deal with installing and activiating the monitoring software on the virtual machine OT sensor.
 
-### Set up a virtual machine
+OR
 
-<!-- remove this: Download the OT monitoring software installation file from the Defender for IoT setup page. !-- is this provided by the previous team??? --! Save the ISO file, at a later stage you will install it on to the OT sensor appliance. LW-->
+Section 1 - creating and setting up the virtual machine to run the OT sensor: units 3 and 4
+
+Section 2 - installing and activiating the monitoring software on the virtual machine OT sensor: units 5 and 6
+
+### Set up a virtual machine
 
 The first stage in deploying the OT sensor monitoring software is to set up a virtual machine to act as the OT sensor.
 
@@ -31,7 +35,7 @@ We will use the VMware ESXi to build the virtual machine, but other systems such
 - A default gateway
 - Any input interfaces
 
-1. Configure the SPAN port to enable traffic mirroring. This has a specific set up when using a virtual machine using the **Promiscuous mode**.
+1. Configure the SPAN port to enable traffic mirroring. For a virtual machine this must be set up using the **Promiscuous mode**.
 
 1. Verify that the SPAN port is correctly mirroring traffic by retrieving a PCAP file. The sample PCAP file data will confirm the switch configuiration and that the data passing through the switch is relevant for monitoring. You should also be able to idenfity the bandwidth and estimate the number of devices detetced by the switch. It is important to confirm the correct amount of data is being monitored. If the SPAN port is incorrectly set, too much data may be transferred and this can overwhelm the system, or not enough data is sent and the sensor will not correctly secure your system.
 

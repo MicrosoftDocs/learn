@@ -1,21 +1,21 @@
 Your car manufacturing organization has offices and production sites across the globe, with a network linking them together. A sensor was onboarded to Defender for IoT and the site networking is set up. A virtual machine is active which runs your sensor.
 
-Now your task is to deploy the sensor by installing the OT monitoring software and activating the sensor to send data to the Azure portal.
+Now your task is to deploy the OT monitoring software on to the sensor and activating the sensor to send data to the Azure portal.
 
 ## Your organization's OT sensor deployment plan
 
 The OT sensor deployment plan is shown in the following diagram:
 
 :::image type="content" source="../media/5-deploy-sensor-path.png" alt-text="Diagram of the sensor deployment path" border="false":::
-<!-- this title was based on the diagram above -should this image be re done and change the titles to fit our new flow?? -->
+
 ## Install Defender for IoT software
 
-Download the OT monitoring software installation file from the Defender for IoT setup page. Save the ISO file, at a later stage you will install it on to the OT sensor appliance.
+Download and save the OT monitoring software installation file from the Defender for IoT setup page.
 
-Run the installation file on the virtual machine, and follow the stages in the wizard to install the software. Once the installation is completed the default network details are displayed. In a real life scenario, configured sensors can be bought and this step is skipped.
+Open the virtual machine, run the installation file, and follow the stages in the wizard to install the software. Once the installation is complete the default network details are displayed. In a real life scenario, configured sensors can be bought and this step is skipped.
 
 ## Activate and set up the sensor
-<!-- this title was based on the diagram above -should this image be re done and change the titles to fit our new flow?? -->
+
 Configure the sensor in a browser, and provide the sensor administrator username and password.
 
 The browser displays the **Defender for IoT | Overview** page, which leads you through the four stages of setting up the sensor. Each stage is displayed in its own tab.

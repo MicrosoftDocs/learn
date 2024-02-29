@@ -1,5 +1,4 @@
 This unit describes how to download the OT monitoring software from the Defender for IoT in the Azure portal. Then upload the monitoring software to the virtual machine OT sensor. Afterwards, configure the network settings so that the sensor connects with the Azure portal. Finally, assign the end point interfaces, activate the sensor and set up the security certificates.
-<!-- check all images for compliance - may need to redo them or edit -->
 
 ## Install Defender for IoT software
 
@@ -13,7 +12,7 @@ In Defender for IoT select **Getting started > Sensor**, then select the latest 
 
 Save the downloaded ISO file in a location that's accessible from your VM.
 
-All files downloaded from the Azure portal are signed by root of trust so that your machines use signed assets only.
+All files downloaded from the Azure portal are signed by root of trust so that your machines use signed assets only.<!-- remove, not sure it is important?-->
 
 ### Install the monitoring software on the virtual machine
 
@@ -57,8 +56,10 @@ Validate your installation using the sensor's own system health checks, availabl
     - **Appliance** to check that the system is running. Verify that each line item shows **Running** and that the last line states that the **System is up**.
     - **Version** to verify that you have the correct version installed.
     - **ifconfig** to verify that all input interfaces configured during installation are running.
-<!-- I would prefer this heading to be ## Activate and initial setup as is in the diagram before -->
-## Define initial setup
+
+## Activate and set up the sensor
+
+### Define initial setup
 
 Sign in to the sensor and then configure your sensor's initial settings, which has four stages.
 
@@ -72,8 +73,6 @@ Open a browser in the virtual machine.
     Username: ```admin```
     Password: ```admin```
 1. Select Login.
-
-## Activate and initial setup
 
 The **Defender for IoT | Overview** page opens to the **Management interface** tab. Now you start to configure the settings.
 <!-- add screenshot of the Overview page here -->

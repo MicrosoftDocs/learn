@@ -17,12 +17,14 @@ prerequisites: |
   - Knowledge of what Defender for IoT is and how it works at a beginner level
   - Access to an [Azure subscription](https://azure.microsoft.com/free) as a Security Admin, Contributor, or Owner 
   -	A Defender for IoT license with an [OT plan](/azure/defender-for-iot/organizations/getting-started)
-  - A configured firewall and all of the rules and settings for it to connect to port 443, including: IP address, subnet mask, default gateway, DNS and hostname <!-- check with ariel-->
+  - A configured firewall and all of the rules and settings for it to connect to port 443, including: IP address, subnet mask, default gateway, DNS and hostname
   - Access to either a virtual or physical OT sensor
   - Access to a Virtual machine, such as VMware ESXi 5.5 or later
-  - The name of a configured virtual machine network adapter with an external link - <!-- is this written correctly?-->
+  - A configured network adapter port group that connects to the internet 
+  - A configured network adapter port group that connects to the SPAN port on the virtual switch
   - Access to Wireshark or similar PCAP file reader
-  - The endpoints list file and the sensor Activation file related to this sensor
+  - The JSON list of endpoints file
+  - The sensor Activation file for this sensor
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - intermediate

@@ -1,13 +1,12 @@
-This unit describes how to download the OT monitoring software from the Defender for IoT in the Azure portal. Then set up a virtual machine and connect it to a device/ interface. Then upload the monitoring software to the sensor. Afterwards, configure the network settings so that the sensor connects with the Azure portal. Finally, assign the end point interfaces, activate the sensor and set up the security certificates.
+This unit describes how to set up a virtual machine and connect it to a sensor, including configuring the network adapter and SPAN port settings. And, finally that validate the traffic mirroring is properly configured and provides the correct data to the sensor.
 
-## Configure firewall to allow the sensor to connect to Azure portal
+## Check the prerequisites - Configure firewall to allow the sensor to connect to Azure portal
 
-Configure your firewall rules so that your sensor can access the cloud on port 443, and connect to each of the endpoints listed in the JSON file provided by the communications Team. This should be provided by your organization .... department.
-<!-- what are the instructions for this? it is done by the company. check with MT that this isnt a copy of the set up of connection to network management below-->
+Before setting up the virtual machine, it is essential to confirm that your firewall is properly set up, so that your sensor can access the cloud on port 443, and connect to each of the endpoints. You must also confirm that the network adapter port groups for the internet and SNAP switch are also ready otherwise the virtual machine will not be able to communicate.
 
 ## Create a virtual machine with ESXi
 
-To perform this procedure, VMware, ESXi 5.5 or later must be installed and operational on your server. Defender for IoT also supports other processes, such as using Hyper-V or physical sensors.
+To perform this procedure, VMware ESXi 5.5 or later must be installed and operational on your server.
 
 1. Make sure that VMware is running on your machine.
 
@@ -40,15 +39,15 @@ To perform this procedure, VMware, ESXi 5.5 or later must be installed and opera
 
 You must now make two adapter connections, the first to an outside network adapter to allow the sensor to communicate with Azure. The second to recieve the mirrored traffic from the SPAN switch.
 
-### Configure a outside network adapter
+### Configure a internet network adapter
 
 You will now configure network adapter 1 to connect to your VM network.
 
 **To configure a network adapter**:
 
-1. For **Network Adapter 1**, select the group name that connects to an external network, for example **VMNetwork**. <!-- substitute with your one--> Select **Next**. <!-- check how to proceed? MT-->
+1. For **Network Adapter 1**, select the port group name that connects to your external network, then select **Next**.
 
-1. Open the **Port Group** properties page and select the port group that connects to your network, then select **Add**. <!-- is this correct? MT-->
+1. Open the **Port Group** properties page and select the port group that connects to your external network, then select **Add**.
 
 1. Select **OK**.
 
@@ -87,6 +86,10 @@ Virtual switches don't have mirroring capabilities. However, for the sake of thi
 1. Select **OK**.
 
 1. Connect to the sensor, and verify that mirroring works.
+
+1. Select **Next**. The virtual machine detail appear. Select **Finish**.
+
+This procedss will take a minute to complete.
 
 ### Validate traffic mirroring
 
