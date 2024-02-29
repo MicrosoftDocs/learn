@@ -37,8 +37,8 @@ Enrichments are applied per endpoint. If you specify five enrichments to be stam
 
 Enrichments can be configured using the following methods:
 * Portal- [See the message enrichments tutorial](/azure/iot-hub/tutorial-message-enrichments)
-* Azure CLI -	[az iot hub message-enrichment](/cli/azure/iot/hub/message-enrichment)
-* Azure PowerShell -[Add-AzIotHubMessageEnrichment](/powershell/module/az.iothub/add-aziothubmessageenrichment?view=azps-11.3.0)
+* Azure CLI -[az iot hub message-enrichment](/cli/azure/iot/hub/message-enrichment)
+* Azure PowerShell -[Add-AzIotHubMessageEnrichment](/powershell/module/az.iothub/add-aziothubmessageenrichment)
 
 Adding message enrichments doesn't add latency to the message routing.
 
