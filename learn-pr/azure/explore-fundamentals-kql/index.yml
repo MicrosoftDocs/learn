@@ -35,7 +35,7 @@ products:
   - configuration-manager
   - fabric
 subjects:
-  - data-science
+  - data-management
   - data-visualization
   - big-data
 units:
