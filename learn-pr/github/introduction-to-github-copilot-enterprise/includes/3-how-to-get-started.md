@@ -88,7 +88,7 @@ Finally, select the **Index org-docset** button to index this docset data into C
 Once created, developers can use docsets. Here's how:
 
 - You don't need special permissions to access existing docsets created by administrators. While you're working on your code, Copilot automatically draws upon all relevant docsets your team or organization has access to.
-- If you want to directly explore the contents of a specific docset, you can navigate to [github.com/copilot/](github.com/copilot/).
+- If you want to directly explore the contents of a specific docset, you can navigate to [github.com/copilot/](https://github.com/copilot/).
 
 :::image type="content" source="../media/3-select-docset-in-organization.png" alt-text="Screenshot of selecting a docset in an organization.":::
 

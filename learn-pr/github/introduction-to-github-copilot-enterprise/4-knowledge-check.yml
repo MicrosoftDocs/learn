@@ -12,19 +12,19 @@ durationInMinutes: 4
 quiz:
   title: Check your knowledge
   questions:
-  - content: Which of these advanced features aren’t available in GitHub Copilot Enterprise but were available in GitHub Copilot Business?
+  - content: Which of these advanced features aren't available in GitHub Copilot Enterprise but were available in GitHub Copilot Business?
     choices:
     - content: "Copilot Chat Customized to your Codebase"
-      isCorrect: true
+      isCorrect: false
       explanation: "This feature allows developers to use Copilot chat customized to their codebase, enhancing collaboration and streamlining workflows."
     - content: "Copilot Pull Request Summaries"
-      isCorrect: true
+      isCorrect: false
       explanation: "This feature enables developers to generate summaries of pull requests based on code changes, enhancing understanding and accelerating review processes."
     - content: "Copilot Documentation Search and Summaries using Docsets"
-      isCorrect: true
+      isCorrect: false
       explanation: "This feature allows organizations to create and manage custom docsets from their internal code and documentation, tailoring Copilot's suggestions to their specific projects and domains."
     - content: "None of the above"
-      isCorrect: false
+      isCorrect: true
       explanation: "While all the listed features are available in GitHub Copilot Enterprise, the question asks for features distinguishing it from the previous Copilot for Business plan."
   - content: How does Copilot use an organization's codebase and internal knowledge to enhance productivity and collaboration?
     choices:
