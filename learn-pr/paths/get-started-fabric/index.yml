@@ -32,7 +32,6 @@ subjects:
 - data-privacy
 - data-storage
 - data-visualization
-- data-warehousing
 modules:
 - learn.wwl.introduction-end-analytics-use-microsoft-fabric
 - learn.wwl.get-started-lakehouses
