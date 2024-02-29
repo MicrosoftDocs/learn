@@ -29,7 +29,6 @@ subjects:
 - data-analytics
 - data-engineering
 - data-storage
-- data-warehousing
 units:
 - learn.wwl.use-delta-lake-azure-databricks.introduction
 - learn.wwl.use-delta-lake-azure-databricks.get-started

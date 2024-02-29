@@ -33,7 +33,7 @@ roles:
 products:
 - azure-synapse-analytics
 subjects:
-- data-warehousing
+- data-storage
 units:
 - learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.introduction
 - learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.describe
