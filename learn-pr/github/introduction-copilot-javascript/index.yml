@@ -33,7 +33,6 @@ products:
   - github
 subjects:
   - devops
-  - development-tools
 units:
 - learn.github-copilot-with-javascript.introduction
 - learn.github-copilot-with-javascript.what-is-github-copilot
