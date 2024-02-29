@@ -19,8 +19,8 @@ Before enabling a registration campaign, make sure prerequisites are complete. Y
 1. In the [Azure portal](https://portal.azure.com), search for and select **Microsoft Entra ID**.
 1. In the Microsoft Entra admin center, select **Security** > **Authentication methods** > **Policies**.
 1. Select **Microsoft Authenticator** in the list.
-1. Move the **Enabled** slider to the **on** position, then select **Remote employees** (or whatever group name you gave set up for your remote workers).
-1. Select **Push** in the **Authentication mode** drop down.
+1. Move the **Enabled** slider to the **on** position, then select **Remote employees** (or whatever group name you set up for your remote workers).
+1. Select **Push** in the **Authentication mode** drop-down.
 1. In the contextual menu, select the **Configure** tab and enable any options you want.
 1. Select **Save**.
 
