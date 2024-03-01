@@ -50,11 +50,11 @@ Follow these steps to set up code scanning using the CodeQL GitHub Actions workf
 
 6. Select "Enable CodeQL" once you're ready to turn on code scanning.
 
-    In the default CodeQL analysis workflow, code scanning is configured to analyze your code each time you either push a change to the default branch and any protected branches, or raise a pull request against the default branch. Once the push is made, code scanning will automatically run.
+    In the default CodeQL analysis workflow, code scanning is configured to analyze your code each time you either push a change to any protected branches or raise a pull request against the default branch. Once the push is made, code scanning runs automatically.
 
-Above we enabled code scanning using the default setup, which will run code scans as a Github Action without needing to maintain a workflow file. The other option is "advanced setup," which will generate the default workflow file that can be edited for advanced configuration and more steps. We will cover using the advanced setup for configuring code scanning in a later unit.
+Above we enabled code scanning using the default setup, which runs code scans as a Github Action without needing to maintain a workflow file. The other option is "advanced setup," which generates the default workflow file that can be edited for advanced configuration and more steps. We will cover using the advanced setup for configuring code scanning in a later unit.
 
-Running code scanning with GitHub Actions affects your monthly billing minutes. If you want to use GitHub Actions beyond the storage or minutes included in your account, you'll be billed for more usage.
+Running code scanning with GitHub Actions affects your monthly billing minutes. If you want to use GitHub Actions beyond the storage or minutes included in your account, you're be billed for more usage.
 
 ## About Billing for Actions
 
