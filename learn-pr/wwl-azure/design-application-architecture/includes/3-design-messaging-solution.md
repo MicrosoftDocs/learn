@@ -1,4 +1,3 @@
-
 Azure offers two message-based solutions, Azure Queue Storage and Azure Service Bus. Queue Storage stores large numbers of messages in Azure Storage. Service Bus is a message broker that decouples applications and services. We'll examine the different features and capabilities of these services and consider how to choose which service to implement.
 
 One of your design tasks for Tailwind Traders is to recommend a design for their product demo application. Customers use the app to get the latest tips, reviews, and instructions for featured home improvement products. You have two requirements for the app design:

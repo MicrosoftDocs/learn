@@ -5,7 +5,7 @@ durationInMinutes: 15
 metadata:
   title: Exercise - Create your first XAML page
   description: "This exercise takes an existing Xamarin.Forms application and converts the user interface definition from C# to XAML"
-  ms.date: 05/01/2019
+  ms.date: 02/20/2024
   author: codemillmatt
   ms.author: masoucou
   ms.topic: unit
