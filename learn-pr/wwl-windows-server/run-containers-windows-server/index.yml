@@ -31,7 +31,7 @@ roles:
 products:
 - windows-server
 subjects:
-- container
+- containers
 units:
 - learn.wwl.run-containers-windows-server.introduction
 - learn.wwl.run-containers-windows-server.define-containers
