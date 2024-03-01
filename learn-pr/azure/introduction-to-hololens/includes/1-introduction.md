@@ -20,7 +20,7 @@ You'll find a complete description for each of the components you'll be using to
 |---------| ------------|
 | Visor | Contains HoloLens 2 sensors and displays. You can rotate the visor up while wearing the HoloLens. |
 | Headband | To put on the HoloLens, use the adjustment wheel to expand the headband. With the HoloLens in place, tighten the adjustment wheel by turning to the right until the headband fits comfortably. |
-| Brightness buttons | When wearing the HoloLens, the brightness buttons are on the left side of the visor near your temple. |
-| Volume buttons | When wearing the HoloLens, the volume buttons are on the right side of the visor near your temple. |
-| Power button | When wearing the HoloLens, the power button is located on the right side of the rear outer cover. |
-| USB-C port | When wearing the HoloLens, the USB-C port is located on the right side of the rear outer cover below the Power button. |
+| Brightness buttons | When you're wearing the HoloLens, the brightness buttons are on the left side of the visor near your temple. |
+| Volume buttons | When you're wearing the HoloLens, the volume buttons are on the right side of the visor near your temple. |
+| Power button | When you're wearing the HoloLens, the power button is located on the right side of the rear outer cover. |
+| USB-C port | When you're wearing the HoloLens, the USB-C port is located on the right side of the rear outer cover below the Power button. |
