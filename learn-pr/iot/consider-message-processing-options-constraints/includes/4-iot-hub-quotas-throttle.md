@@ -1,10 +1,10 @@
 This unit explains the quotas for an Azure IoT hub, and provides information to help you understand how throttling works.
 
-Each Azure subscription can have at most 50 Azure IoT hubs, and at most 1 Free hub.
+Each Azure subscription can have at most 50 Azure IoT hubs, and at most one Free hub.
 
-Each Azure IoT hub is provisioned with one or more units in a specific tier. The tier and number of units determine the maximum daily quota of messages that you can send to your hub per day. The message size used to calculate the daily quota is 0.5 KB for a free tier hub and 4KB for all other tiers.
+Each Azure IoT hub is provisioned with one or more units in a specific tier. The tier and number of units determine the maximum daily quota of messages that you can send to your hub per day. The message size used to calculate the daily quota is 0.5 KB for a free tier hub and 4 KB for all other tiers.
 
-You can find your hub's quota limit under the column **Total number of messages /day** on the [Azure IoT Hub pricing page](/pricing/details/iot-hub/) in the Azure portal.
+You can find your hub's quota limit under the column **Total number of messages /day** on the [Azure IoT Hub pricing page](https://azure.microsoft.com/pricing/details/iot-hub/) in the Azure portal.
 
 The tier also determines the throttling limits that Azure IoT Hub enforces on all operations.
 
@@ -22,7 +22,7 @@ The following table shows the enforced throttles for operations that are availab
 |----------|-------------------|-----------|-----------|
 | Identity registry operations (create, retrieve, list, update, delete) | 1.67/sec/unit (100/min/unit) | 1.67/sec/unit (100/min/unit) | 83.33/sec/unit (5,000/min/unit) |
 | New device connections (this limit applies to the rate of new connections, not the total number of connections) | Higher of 100/sec or 12/sec/unit. For example, two S1 units are 2 * 12 = 24 new connections/sec, but you have at least 100 new connections/sec across your units. With nine S1 units, you have 108 new connections/sec (9 * 12) across your units. | 120 new connections/sec/unit | 6,000 new connections/sec/unit |
-| Device-to-cloud sends | Higher of 100 send operations/sec or 12 send operations/sec/unit (e.g., two S1 units are 24/sec, but you have at least 100 send operations/sec across your units) | 120 send operations/sec/unit | 6,000 send operations/sec/unit |
+| Device-to-cloud sends | Higher of 100 send operations/sec or 12 send operations/sec/unit (for example, two S1 units are 24/sec, but you have at least 100 send operations/sec across your units). With nine S1 units, you have 108 send operations/sec (9 * 12) across your units. | 120 send operations/sec/unit | 6,000 send operations/sec/unit |
 | File upload | 1.67 file upload initiations/sec/unit (100/min/unit) | 1.67 file upload initiations/sec/unit (100/min/unit) | 83.33 file upload initiations/sec/unit (5,000/min/unit) |
 | Queries | 20/min/unit | 20/min/unit | 1,000/min/unit |
 
@@ -48,11 +48,11 @@ The following table shows the enforced throttles for operations that are availab
 
 ### Throttling details
 
-* The meter size determines at what increments your throttling limit is consumed. If your direct call's payload is between 0 and 4 KB, it is counted as 4 KB. You can make up to 40 calls per second per unit before hitting the limit of 160 KB/sec/unit.
+* The meter size determines at what increments your throttling limit is consumed. If your direct call's payload is between 0 KB and 4 KB, it is counted as 4 KB. You can make up to 40 calls per second per unit before hitting the limit of 160 KB/sec/unit.
 
   Similarly, if your payload is between 4 KB and 8 KB, each call accounts for 8 KB and you can make up to 20 calls per second per unit before hitting the max limit.
   
-  Finally, if your payload size is between 156KB and 160 KB, you'll be able to make only 1 call per second per unit in your hub before hitting the limit of 160 KB/sec/unit.
+  Finally, if your payload size is between 156 KB and 160 KB, you'll be able to make only one call per second per unit in your hub before hitting the limit of 160 KB/sec/unit.
 * For Jobs device operations (update twin, invoke direct method) for tier S3, 50/sec/unit only applies to when you invoke methods using jobs. If you invoke direct methods directly, the original throttling limit of 24 MB/sec/unit (for S3) applies.
 * Quota is the aggregate number of messages you can send in your hub per day. You can find your hub's quota limit under the column Total number of messages /day on the IoT Hub pricing page.
 * Your cloud-to-device and device-to-cloud throttles determine the maximum rate at which you can send messages irrespective of 4 KB chunks. Device-to-cloud messages can be up to 256 KB; cloud-to-device messages can be up to 64 KB. These are the maximum message sizes for each type of message.
@@ -83,14 +83,14 @@ Azure IoT Hub enforces other operational limits:
 | --- | --- |
 | Devices | The total number of devices plus modules that can be registered to a single Azure IoT hub is capped at 1,000,000. |
 | File uploads | 10 concurrent file uploads per device. |
-| Jobs¹ | Maximum concurrent jobs are 1 (for Free and S1), 5 (for S2), and 10 (for S3). However, the max concurrent device import/export jobs is 1 for all tiers. Job history is retained up to 30 days. |
+| Jobs¹ | Maximum concurrent jobs are 1 (for Free and S1), 5 (for S2), and 10 (for S3). However, the max concurrent device import/export job is 1 for all tiers. Job history is retained up to 30 days. |
 | Additional endpoints | Basic and standard SKU hubs may have 10 additional endpoints. Free SKU hubs may have one additional endpoint. |
 | Message routing queries | Basic and standard SKU hubs may have 100 routing queries. Free SKU hubs may have five routing queries. |
 | Message enrichments | Basic and standard SKU hubs can have up to 10 message enrichments. Free SKU hubs can have up to two message enrichments. |
 | Device-to-cloud messaging | Maximum message size 256 KB |
-| Cloud-to-device messaging¹ | Maximum message size 64 KB. Maximum pending messages for delivery is 50 per device. |
+| Cloud-to-device messaging¹ | Maximum message size 64 KB. Maximum pending messages for delivery are 50 per device. |
 | Direct method¹ | Maximum direct method payload size is 128 KB for the request and 128 KB for the response. |
-| Automatic device and module configurations1 | 100 configurations per basic or standard SKU hub. 10 configurations per free SKU hub. |
+| Automatic device and module configurations¹ | 100 configurations per basic or standard SKU hub. 10 configurations per free SKU hub. |
 | IoT Edge automatic deployments¹ | 50 modules per deployment. 100 deployments (including layered deployments) per basic or standard SKU hub. 10 deployments per free SKU hub. |
 | Twins¹ | Maximum size of desired properties and reported properties sections are 32 KB each. Maximum size of tags section is 8 KB. Maximum size of each individual property in every section is 4 KB. |
 | Shared access policies | Maximum number of shared access policies is 16. Within that limit, the maximum number of shared access policies that grant service connect access is 10. |

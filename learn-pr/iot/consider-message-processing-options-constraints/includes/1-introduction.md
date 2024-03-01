@@ -1,8 +1,8 @@
-The approach to message processing in an Azure IoT solution can be influenced by various Azure technologies.
+The approach to message processing in an Azure IoT Hub solution can be influenced by various Azure technologies.
 
-Suppose you joined a team that is implementing an Azure IoT solution for the company. Your team is implementing device message processing in support of data analytics and other downstream requirements. Understanding how Azure IoT Hub message routing compares with other message processing services and the limits that apply to Azure IoT Hub throughput helps to ensure the team's success. You decide to examine message routing alternatives and Azure IoT Hub's message processing limits.
+Suppose you joined a team that is implementing an Azure IoT Hub solution for the company. Your team is implementing device message processing in support of data analytics and other downstream requirements. Understanding how Azure IoT Hub message routing compares with other message processing services and the limits that apply to Azure IoT Hub throughput helps to ensure the team's success. You decide to examine message routing alternatives and Azure IoT Hub's message processing limits.
 
-In this module, you will:
+In this module, you'll:
 
 * Compare Azure IoT Hub message routing with Event Grid integration.
 * Examine Azure IoT Hub message enrichment.
