@@ -2,7 +2,7 @@
 uid: learn.wwl.consider-message-processing-options-constraints
 metadata:
   title: Consider Azure IoT Hub message processing options and constraints
-  description: "This module introduces you to services and service features that can be used with, or as an alternative to, Azure IoT Hub message routing to process messages, and examines Azure IoT Hub message processing limits."
+  description: "This module introduces you to services and service features that can be used with, or as an alternative to, Azure IoT Hub message routing to process messages. It also examines Azure IoT Hub message processing limits."
   ms.date: 02/22/2024
   author: kgremban
   ms.author: kgremban
@@ -10,7 +10,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.service: iot-hub
 title: Consider Azure IoT Hub message processing options and constraints
-summary: This module introduces you to services and service features that can be used with, or as an alternative to, Azure IoT Hub message routing to process messages, and examines Azure IoT Hub message processing limits.
+summary: This module introduces you to services and service features that can be used with, or as an alternative to, Azure IoT Hub message routing to process messages. It also examines Azure IoT Hub message processing limits.
 abstract: |
   After you complete this module, you'll be able to:
   - Describe Azure IoT Hub message routing with Event Grid integration.

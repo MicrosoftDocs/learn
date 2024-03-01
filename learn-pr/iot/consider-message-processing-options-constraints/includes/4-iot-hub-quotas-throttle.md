@@ -2,9 +2,9 @@ This unit explains the quotas for an Azure IoT hub, and provides information to 
 
 Each Azure subscription can have at most 50 Azure IoT hubs, and at most 1 Free hub.
 
-Each Azure IoT hub is provisioned with one or more units in a specific tier. The tier and number of units determine the maximum daily quota of messages that you can send. The message size used to calculate the daily quota is 0.5 KB for a free tier hub and 4KB for all other tiers.
+Each Azure IoT hub is provisioned with one or more units in a specific tier. The tier and number of units determine the maximum daily quota of messages that you can send to your hub per day. The message size used to calculate the daily quota is 0.5 KB for a free tier hub and 4KB for all other tiers.
 
-You can find your hub's quota limit under the column **Total number of messages /day** on the Azure IoT Hub pricing page in the Azure portal.
+You can find your hub's quota limit under the column **Total number of messages /day** on the [Azure IoT Hub pricing page](/pricing/details/iot-hub/) in the Azure portal.
 
 The tier also determines the throttling limits that Azure IoT Hub enforces on all operations.
 
@@ -21,7 +21,7 @@ The following table shows the enforced throttles for operations that are availab
 | Throttle | Free, B1, and S1 | B2 and S2 | B3 and S3 |
 |----------|-------------------|-----------|-----------|
 | Identity registry operations (create, retrieve, list, update, delete) | 1.67/sec/unit (100/min/unit) | 1.67/sec/unit (100/min/unit) | 83.33/sec/unit (5,000/min/unit) |
-| New device connections (this limit applies to the rate of new connections, not the total number of connections) | Higher of 100/sec or 12/sec/unit (e.g., two S1 units are 24 new connections/sec, but you have at least 100 new connections/sec across your units) | 120 new connections/sec/unit | 6,000 new connections/sec/unit |
+| New device connections (this limit applies to the rate of new connections, not the total number of connections) | Higher of 100/sec or 12/sec/unit. For example, two S1 units are 2 * 12 = 24 new connections/sec, but you have at least 100 new connections/sec across your units. With nine S1 units, you have 108 new connections/sec (9 * 12) across your units. | 120 new connections/sec/unit | 6,000 new connections/sec/unit |
 | Device-to-cloud sends | Higher of 100 send operations/sec or 12 send operations/sec/unit (e.g., two S1 units are 24/sec, but you have at least 100 send operations/sec across your units) | 120 send operations/sec/unit | 6,000 send operations/sec/unit |
 | File upload | 1.67 file upload initiations/sec/unit (100/min/unit) | 1.67 file upload initiations/sec/unit (100/min/unit) | 83.33 file upload initiations/sec/unit (5,000/min/unit) |
 | Queries | 20/min/unit | 20/min/unit | 1,000/min/unit |

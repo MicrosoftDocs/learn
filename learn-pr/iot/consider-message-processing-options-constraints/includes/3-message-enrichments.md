@@ -4,8 +4,8 @@ Message enrichment is the ability of the Azure IoT Hub to stamp messages with ad
 
 A message enrichment has three key elements:
 
-* Enrichment name or key
-* A value
+* Enrichment name or key.
+* A value.
 * One or more endpoints for which the enrichment should be applied.
 
 The **key** is a string. A key can only contain alphanumeric characters or these special characters: hyphen (`-`), underscore (`_`), and period (`.`).
@@ -14,7 +14,7 @@ The **value** can be any of the following examples:
 
 * Any static string. Dynamic values such as conditions, logic, operations, and functions aren't allowed. For example, if you develop a SaaS application that is used by several customers, you can assign an identifier to each customer and make that identifier available in the application. When the application runs, Azure IoT Hub stamps the device telemetry messages with the customer's identifier, making it possible to process the messages differently for each customer.
 * The name of the Azure IoT hub sending the message. This value is `$iothubname`.
-* Information from the device twin, such as its path. Examples would be `$twin.tags.field` and `$twin.tags.latitude`.
+* Information from the device twin, such as its path. Examples are `$twin.tags.field` and `$twin.tags.latitude`.
 
 > [!NOTE]
 > At this time, only `$iothubname`, `$twin.tags`, `$twin.properties.desired`, and `$twin.properties.reported` are supported variables for message enrichment. Additionally, only primitive types are supported for enrichments. Messages cannot be enriched with object types.
@@ -36,19 +36,19 @@ You can also add enrichments to messages that are being published to Event Grid 
 Enrichments are applied per endpoint. If you specify five enrichments to be stamped for a specific endpoint, all messages going to that endpoint are stamped with the same five enrichments.
 
 Enrichments can be configured using the following methods:
-* Portal- [See the message enrichments tutorial](/azure/iot-hub/tutorial-message-enrichments)
-* Azure CLI -[az iot hub message-enrichment](/cli/azure/iot/hub/message-enrichment)
-* Azure PowerShell -[Add-AzIotHubMessageEnrichment](/powershell/module/az.iothub/add-aziothubmessageenrichment)
+* Azure Portal- [See the message enrichments tutorial](/azure/iot-hub/tutorial-message-enrichments).
+* Azure CLI -[az iot hub message-enrichment](/cli/azure/iot/hub/message-enrichment).
+* Azure PowerShell -[Add-AzIotHubMessageEnrichment](/powershell/module/az.iothub/add-aziothubmessageenrichment).
 
 Adding message enrichments doesn't add latency to the message routing.
 
 ## Limitations
 
 * You can add up to 10 enrichments per Azure IoT Hub for those hubs in the standard or basic tier. For Azure IoT Hubs in the free tier, you can add up to 2 enrichments.
-* In some cases, if you're applying an enrichment with a value set to a tag or property in the device twin, the value is stamped as a string value. For example, if an enrichment value is set to `$twin.tags.field`, the messages is stamped with the string "`$twin.tags.field`" rather than the value of that field from the twin. This happens in the following cases:
+* In some cases, if you're applying an enrichment with a value set to a tag or property in the device twin, the value is stamped as a string value. For example, if an enrichment value is set to `$twin.tags.field`, the messages is stamped with the string `$twin.tags.field` rather than the value of that field from the twin. This happens in the following cases:
   * Your Azure IoT Hub is in the basic tier. Basic tier Azure IoT hubs don't support device twins.
   * Your IoT hub is in the standard tier, but the device twin path used for the value of the enrichment doesn't exist. For example, if the enrichment value is set to `$twin.tags.location` and the device twin does not have a location property under tags, the message is stamped with the string `$twin.tags.location`.
-  * Your IoT hub is in the standard tier, but the device twin path used for the value of the enrichment resolves to an object, rather than a simple property. For example, if the enrichment value is set to $twin.tags.location, and the location property under tags is an object that contains child properties like `{"building": 43, "room": 503}`, the message is stamped with the string `$twin.tags.location`.
+  * Your IoT hub is in the standard tier, but the device twin path used for the value of the enrichment resolves to an object, rather than a simple property. For example, if the enrichment value is set to `$twin.tags.location`, and the location property under tags is an object that contains child properties like `{"building": 43, "room": 503}`, the message is stamped with the string `$twin.tags.location`.
 * Updates to a device twin can take up to five minutes to be reflected in the corresponding enrichment value.
 * The total message size, including the enrichments, can't exceed 256 KB. If a message size exceeds 256 KB, the Azure IoT Hub drops the message. You can use Azure IoT Hub metrics to identify and debug errors when messages are dropped. For example, you can monitor the *telemetry messages incompatible* `d2c.telemetry.egress.invalid` message in the routing metrics.
 * Message enrichments don't apply to digital twin change events.

@@ -14,7 +14,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Within an IoT solution, what is message enrichment?"
+  - content: "Within an Azure IoT Hub solution, what is message enrichment?"
     choices:
     - content: "An Azure IoT hub feature that enables users to direct device messages to a service endpoint."
       isCorrect: false
