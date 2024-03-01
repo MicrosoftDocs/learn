@@ -31,7 +31,7 @@ products:
 - azure
 - azure-bot-service
 subjects:
-- chatbot
+- chatbots
 units:
 - learn.wwl.design-bot-conversation-flow.introduction
 - learn.wwl.design-bot-conversation-flow.introduce-principles-of-bot-design
