@@ -2,9 +2,9 @@
 uid: learn.build-serverless-full-stack-apps-azure
 metadata:
   title: Build serverless, full stack applications in Azure
-  description: Learn how to create, build, and deploy modern full stack applications in Azure by using the language of your choice (Python, Node.js, or .NET) and with a Vue.js frontend. Topics covered include modern database capabilities, CI/CD and DevOps, backend API development, REST, and more. Using a real-world scenario of trying to catch the bus, you will learn how to build a solution that uses Azure SQL Database, Azure Functions, Azure Static Web Apps, Logic Apps, Visual Studio Code, and GitHub Actions.
+  description: Learn how to create, build, and deploy modern full stack applications in Azure by using the language of your choice (Python, Node.js, or .NET) and with a Vue.js frontend.
   brand: azure
-  ms.date: 03/15/2023
+  ms.date: 03/01/2024
   author: amthomas46
   ms.author: antho
   ms.topic: learning-path
@@ -12,7 +12,7 @@ metadata:
     - build-2023
     - build-2023-dataai
 title: Build serverless, full stack applications in Azure
-summary: Learn how to create, build, and deploy modern full stack applications in Azure by using the language of your choice (Python, Node.js, or .NET) and with a Vue.js frontend. Topics covered include modern database capabilities, CI/CD and DevOps, backend API development, REST, and more. Using a real-world scenario of trying to catch the bus, you will learn how to build a solution that uses Azure SQL Database, Azure Functions, Azure Static Web Apps, Logic Apps, Visual Studio Code, and GitHub Actions.
+summary: Learn how to create, build, and deploy modern full stack applications in Azure by using the language of your choice (Python, Node.js, or .NET) and with a Vue.js frontend. Using a real-world scenario of trying to catch the bus, you will learn how to build a solution that uses Azure SQL Database, Azure Functions, Azure Static Web Apps, Logic Apps, Visual Studio Code, and GitHub Actions.
 prerequisites: | 
   - Ability to navigate the Azure portal
   - Familiarity with database concepts such as stored procedures and querying
@@ -42,8 +42,5 @@ subjects:
 - serverless-computing
 modules:
 - learn.azure.create-foundation-modern-apps
-- learn.azure.deploy-backend-apis
-- learn.azure.build-full-stack-apps
-- learn.azure.automate-deployments-github-actions-azure
 trophy:
   uid: learn.build-serverless-full-stack-apps-azure.trophy
