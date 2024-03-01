@@ -80,7 +80,7 @@ Using the prompt bar, the user can ask for a threat hunting query, using natural
 
 :::image type="content" source="../media/xdr-advanced-hunting-query-v2.png" lightbox="../media/xdr-advanced-hunting-query-v2.png" alt-text="Screen capture showing the KQL query generated from a natural language request.":::
 
-The user can then choose to run the query by selecting Add and run. The generated query then appears as the last query in the query editor. To make further tweaks, select Add to editor. 
+The user can then choose to run the query by selecting Add and run. The generated query then appears as the last query in the query editor. To make further tweaks, select Add to editor.
 
 The option to run the generated query can also be set automatically through the settings icon.
 
@@ -121,7 +121,7 @@ Sophisticated attacks often use files that mimic legitimate or system files to a
 
 There are many ways to access the detailed profile page of a specific file. For example, you can use the search feature, select on a link from the Alert process tree, Incident graph, Artifact timeline, or select an event listed in the Device timeline.
 
-In this example, you navigate to files through the incident graph, which shows the full scope of the attack, how the attack spread through your network over time, where it started, and how far the attacker went. 
+In this example, you navigate to files through the incident graph of an incident with impacted files.  The incident graph shows the full scope of the attack, how the attack spread through your network over time, where it started, and how far the attacker went.
 
 From the incident graph, selecting files displays the option to view files. Selecting view files opens a panel on the right side of the screen listing impacted files.
 
