@@ -31,7 +31,7 @@ roles:
 products: 
 - bing
 subjects:
-  - digital-application-innovation
+  - app-development
 units:
 - learn.challenge-project-use-generative-ai-to-create-business-model-startup.introduction
 - learn.challenge-project-use-generative-ai-to-create-business-model-startup.prepare
