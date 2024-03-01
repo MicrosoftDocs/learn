@@ -1,6 +1,6 @@
 GitHub Copilot Enterprise builds the power of generative AI into an editor extension that suggests code in real time, but focuses on becoming accessible throughout more phases of the development workflow.
 
-:::image type="content" source="../media/2-copilot-benefits.png" alt-text="Image that lists the benefits of GitHub Copilot.":::
+:::image type="content" source="../media/2-copilot-benefits.png" alt-text="Diagram that lists the benefits of GitHub Copilot.":::
 
 Living within and ingrained into the organization's codebase, Copilot uses your organization's codebase and internal knowledge to provide contextualized coding assistance, answer questions, explain the intent of the code in your repositories, and even suggest code to support your team's working patterns and best practices. This boosts productivity, collaboration, and efficiency by allowing your developers to get tailored GitHub Copilot assistance while contributing and reviewing each other's work,  making their work faster, and making it easier to stick to your organization standards.
 
