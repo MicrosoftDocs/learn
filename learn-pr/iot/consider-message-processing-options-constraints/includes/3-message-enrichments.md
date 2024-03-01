@@ -8,7 +8,7 @@ A message enrichment has three key elements:
 * A value
 * One or more endpoints for which the enrichment should be applied.
 
-The **key** is a string. A key can only contain alphanumeric characters or these special characters: hyphen (-), underscore (\_), and period (.).
+The **key** is a string. A key can only contain alphanumeric characters or these special characters: hyphen (`-`), underscore (`_`), and period (`.`).
 
 The **value** can be any of the following examples:
 
@@ -19,7 +19,7 @@ The **value** can be any of the following examples:
 > [!NOTE]
 > At this time, only `$iothubname`, `$twin.tags`, `$twin.properties.desired`, and `$twin.properties.reported` are supported variables for message enrichment. Additionally, only primitive types are supported for enrichments. Messages cannot be enriched with object types.
 
-Message Enrichments are added as application properties to messages sent to chosen endpoints.
+Message Enrichments are added as application properties to messages sent to chosen endpoint(s).
 
 ## Applying enrichments
 
@@ -31,7 +31,7 @@ The messages can come from any data source supported by Azure IoT Hub message ro
 
 You can add enrichments to messages that are going to the built-in endpoint of an Azure IoT Hub, or messages that are being routed to custom endpoints such as Azure Blob storage, a Service Bus queue, or a Service Bus topic.
 
-You can also add enrichments to messages that are being published to Event Grid by first creating an Event Grid subscription with the device telemetry message type. Based on this subscription, we will create a default route in Azure IoT Hub for the telemetry. This single route can handle all of your Event Grid subscriptions. You can then configure enrichments for the endpoint by using the Enrich messages tab of the IoT Hub Message routing section.
+You can also add enrichments to messages that are being published to Event Grid by first creating an Event Grid subscription with the device telemetry message type. Based on this subscription, we will create a default route in Azure IoT Hub for the telemetry. This single route can handle all of your Event Grid subscriptions. You can then configure enrichments for the endpoint by using the **Enrich messages** tab of the Azure IoT Hub **Message routing** section.
 
 Enrichments are applied per endpoint. If you specify five enrichments to be stamped for a specific endpoint, all messages going to that endpoint are stamped with the same five enrichments.
 

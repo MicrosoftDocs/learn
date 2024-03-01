@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.consider-message-processing-options-constraints.examine-message-enrichments-for-d2c-messages
-title: Examine message enrichments for D2C messages
+title: Examine message enrichments for device-to-cloud Azure IoT Hub messages
 metadata:
-  title: Examine message enrichments for D2C messages
-  description: "Examine message enrichments for D2C messages"
+  title: Examine message enrichments for device-to-cloud Azure IoT Hub messages
+  description: "Examine message enrichments for device-to-cloud Azure IoT Hub messages"
   ms.date: 02/22/2024
   author: kgremban
   ms.author: kgremban
