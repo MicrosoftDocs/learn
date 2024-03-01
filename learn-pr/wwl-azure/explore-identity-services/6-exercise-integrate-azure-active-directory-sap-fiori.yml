@@ -7,7 +7,7 @@ metadata:
   ms.date: 10/17/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 11
 content: |
   [!include[](includes/6-exercise-integrate-azure-active-directory-sap-fiori.md)]
