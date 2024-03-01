@@ -22,7 +22,7 @@ Follow these steps to edit a workflow file:
 
 3. After you have edited the file, select **Start commit** and complete the "Commit changes" form. You can choose to commit directly to the current branch, or create a new branch and start a pull request.
 
-    :::image type="content" source="../media/3-start-commit-button-screenshot.png" alt-text="screenshot of the start commit button":::
+    :::image type="content" source="../media/3-severities-4-level-severity-screenshot.png" alt-text="screenshot of the start commit button":::
 
 Review the following sections for some common code scanning configuration options. 
 
