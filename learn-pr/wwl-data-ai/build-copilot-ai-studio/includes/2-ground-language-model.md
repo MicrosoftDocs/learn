@@ -2,9 +2,27 @@ Language models excel in generating engaging text, and are ideal as the base for
 
 Though language models are trained on a vast amount of data, they may not have access to the knowledge you want to make available to your users. To ensure that a copilot is grounded on specific data to provide accurate and domain-specific responses, you can use **Retrieval Augmented Generation** (**RAG**).
 
-## **Understanding RAG**
+## Understanding RAG
 
-RAG is a technique that you can use to ground a language model. When you build a chat application with the Azure AI Studio, you can use **prompt flow** to create a chat that uses only a language model, or one that uses a language model with RAG.
+RAG is a technique that you can use to ground a language model. In other words, it's a process for retrieving information that is relevant to the user's task.
+
+Imagine a user interacting with a chatbot or copilot. The flow used by the copilot to retrieve the relevant information and generate a grounded answer can contain the following steps:
+
+:::image type="content" source="../media/retrieved-context.jpg" alt-text="Diagram of retrieval augmented generation.":::
+
+1. The question of the user is received.
+1. A language model rephrases the question to a query suitable to search your data.
+1. Your indexed data source is queried to retrieve relevant information or context.
+1. The original question and retrieved context is sent to a language model.
+1. The final response is generated and sent back to the user.
+
+By retrieving context from a specified data source, you ensure that the language model uses relevant information when responding, instead of relying on its training data.
+
+Using RAG is a powerful and easy-to-use technique for many cases in which you want to ground your language model and improve the factual accuracy of your copilot's responses.
+
+### Explore RAG with prompt flow
+
+When you build a chat application with the Azure AI Studio, you can use **prompt flow** to create a chat that uses only a language model, or one that uses a language model with RAG.
 
 To understand the added value of RAG, let’s compare the two types of chat flows you can create with the Azure AI Studio’s prompt flow.
 
@@ -29,7 +47,7 @@ When you want to add RAG to your application, you can create a flow that grounds
 
 In both flows, you need to construct the prompt that is sent to the language model. When creating a simple standard chat, you can configure the prompt in the LLM node. When adding RAG to your flow however, you need to retrieve the necessary context first, and add it to your prompt, before sending it to the language model.
 
-## Retrieve the context
+## Search your data source
 
 The key added value of RAG is the retrieval of relevant context before using a language model to generate a response. The question then remains how the context is retrieved.
 

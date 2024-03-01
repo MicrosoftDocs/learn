@@ -3,7 +3,7 @@ uid: learn.wwl.build-copilot-ai-studio.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check to test your knowledge on Azure AI Studio's prompt flow."
+  description: "Knowledge check to test your knowledge on grounding models with RAG."
   ms.date: 02/21/2024
   author: madiepev
   ms.author: madiepev

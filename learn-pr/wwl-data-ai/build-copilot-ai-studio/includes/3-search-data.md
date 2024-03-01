@@ -19,7 +19,20 @@ How you configure your search index depends on the data you have and the context
 
 An **embedding** is a special format of data representation that a search engine can use to easily find the relevant information. More specifically, an embedding is a vector of floating-point numbers.
 
-When your data is represented with embeddings, you can use the distance between two embeddings in a vector space to quantify the semantic similarity between two inputs in the original format. In other words, embeddings allow you to represent words and their meanings in such a way that matches can be found even when your data includes different formats (text or image) and languages.
+For example, imagine you have two documents with the following contents:
+
+- *"The children played joyfully in the park."*
+- *"Kids happily ran around the playground."*
+
+These two documents contain text that are semantically related, even though different words are used. By creating vector embeddings for the text in the documents, the relation between the words in the text can be mathematically calculated.
+
+Imagine the keywords being extracted from the document and plotted as a vector in a multidimensional space:
+
+:::image type="content" source="../media/vector-embeddings.jpg" alt-text="Diagram of vector embeddings.":::
+
+The distance between vectors can be calculated by measuring the cosine of the angle between two vectors, also known as the **cosine similarity**. In other words, the cosine similarity computes the semantic similarity between documents and a query.
+
+By representing words and their meanings with vectors, you can extract relevant context from your data source even when your data is stored in different formats (text or image) and languages.
 
 When you want to be able to use vector search to search your data, you need to create embeddings when creating your search index. To create embeddings for your search index, you can use an Azure OpenAI embedding model available in the Azure AI Studio.
 
