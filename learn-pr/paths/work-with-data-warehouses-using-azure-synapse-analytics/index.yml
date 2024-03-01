@@ -24,7 +24,7 @@ roles:
 products:
 - azure-synapse-analytics
 subjects:
-- data-warehousing
+- data-storage
 modules:
 - learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads
 - learn.wwl.load-data-into-relational-data-warehouse
