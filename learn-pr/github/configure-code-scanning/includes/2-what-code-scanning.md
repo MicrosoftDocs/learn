@@ -8,14 +8,14 @@ In this unit, you'll learn about CodeQL, the three options for setting up code s
 
 CodeQL is the code analysis engine developed by GitHub to automate security checks. You can analyze your code using CodeQL and display the results as code scanning alerts. There are three main ways to set up CodeQL analysis for code scanning:
 
-- Use default setup to quickly configure CodeQL analysis for code scanning on your repository. The default setup handles choosing the languages to analyze, query suite to run, and events that trigger scans with the option to manually configure the languages and query suites. This setup option runs code scanning as a Github Action.
-- Use advanced setup to add the CodeQL workflow directly to your repository. Adding the CodeQL workflow directly into your repository generates a customizable workflow file, which uses the [github/codeql-action](https://github.com/github/codeql-action/) to run the CodeQL CLI as a Github Action.
+- Use default setup to quickly configure CodeQL analysis for code scanning on your repository. The default setup handles choosing the languages to analyze, query suite to run, and events that trigger scans with the option to manually configure the languages and query suites. This setup option runs code scanning as a GitHub Action.
+- Use advanced setup to add the CodeQL workflow directly to your repository. Adding the CodeQL workflow directly into your repository generates a customizable workflow file, which uses the [github/codeql-action](https://github.com/github/codeql-action/) to run the CodeQL CLI as a GitHub Action.
 - Run the CodeQL CLI directly in an external CI system and upload the results to GitHub.  
   
 CodeQL treats code like data, allowing you to find potential vulnerabilities in your code with greater confidence than traditional static analyzers. You generate a CodeQL database to represent your codebase, then you run CodeQL queries on that database to identify problems in the codebase. The query results are shown as code scanning alerts in GitHub when you use CodeQL with code scanning.
 
 CodeQL supports both compiled and interpreted languages, and can find vulnerabilities and errors in code written in the following supported languages:
-- C/C++
+- C or C++
 - C#
 - Go
 - Java/Kotlin
@@ -42,7 +42,7 @@ Follow these steps to set up code scanning using the CodeQL GitHub Actions workf
  
      :::image type="content" source="../media/3-set-up-code-scanning-button-screenshot.png" alt-text="screenshot of the set up code scanning button":::
 
-4. In the dropdown menu that appears select "Default"
+4. In the dropdown menu that appears select "Default."
 
 5. Review the default options. If needed, select the "Edit" button in the bottom left corner of the new window to customize how CodeQL runs.
 
@@ -52,7 +52,7 @@ Follow these steps to set up code scanning using the CodeQL GitHub Actions workf
 
     In the default CodeQL analysis workflow, code scanning is configured to analyze your code each time you either push a change to any protected branches or raise a pull request against the default branch. Once the push is made, code scanning runs automatically.
 
-Above we enabled code scanning using the default setup, which runs code scans as a Github Action without needing to maintain a workflow file. The other option is "advanced setup," which generates the default workflow file that can be edited for advanced configuration and more steps. We will cover using the advanced setup for configuring code scanning in a later unit.
+Above we enabled code scanning using the default setup, which runs code scans as a GitHub Action without needing to maintain a workflow file. The other option is "advanced setup," which generates the default workflow file that can be edited for advanced configuration and more steps. We'll cover using the advanced setup for configuring code scanning in a later unit.
 
 Running code scanning with GitHub Actions affects your monthly billing minutes. If you want to use GitHub Actions beyond the storage or minutes included in your account, you'll be billed for more usage.
 
