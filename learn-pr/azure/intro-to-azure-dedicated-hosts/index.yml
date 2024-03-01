@@ -6,7 +6,7 @@ metadata:
   ms.date: 06/1/2023
   author: mattmcinnes
   ms.author: mattmcinnes
-  ms.topic: module
+  ms.topic: module-intro-to-product
   ms.service: azure
 title: Introduction to Azure dedicated hosts
 summary: Learn about what Azure dedicated hosts is, how it works, and when you should choose to use a dedicated host as a solution to meet your organization's needs.

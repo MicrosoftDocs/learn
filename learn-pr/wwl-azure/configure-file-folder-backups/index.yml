@@ -29,7 +29,7 @@ roles:
 products:
 - azure-backup
 subjects:
-- business-continuity
+- site-reliability-engineering
 units:
 - learn.wwl.configure-file-folder-backups.introduction
 - learn.wwl.configure-file-folder-backups.describe-azure-backup-benefits

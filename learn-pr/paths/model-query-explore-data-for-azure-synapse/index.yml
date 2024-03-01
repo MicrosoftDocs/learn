@@ -6,7 +6,7 @@ metadata:
   ms.date: 08/16/2022
   author: wwlpublish
   ms.author: shlindsay
-  ms.topic: interactive-tutorial
+  ms.topic: learning-path
 title: Model, query, and explore data in Azure Synapse
 prerequisites: |
   You should have experience using Azure data services. If you have no previous Azure data experience, we recommend you complete the [Azure Data Fundamentals: Explore core data concepts](/training/paths/azure-data-fundamentals-explore-core-data-concepts/) learning path before starting this one.

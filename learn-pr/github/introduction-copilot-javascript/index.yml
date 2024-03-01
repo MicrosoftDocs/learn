@@ -6,7 +6,7 @@ metadata:
   ms.date: 8/23/2023
   author: abrilurena
   ms.author: abrilu
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: github-copilot
   ms.devlang: javascript
 title: Using GitHub Copilot with JavaScript
@@ -33,7 +33,6 @@ products:
   - github
 subjects:
   - devops
-  - development-tools
 units:
 - learn.github-copilot-with-javascript.introduction
 - learn.github-copilot-with-javascript.what-is-github-copilot

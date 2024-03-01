@@ -57,7 +57,7 @@ The following features have been removed from SQL Server 2022 that were availabl
 
 - Machine Learning Server - Machine Learning Server was retired in July of 2022. Therefore, the Machine Learning Server feature has been removed from the SQL Server setup.
 
-- Distributed Replay - Distributed Reply is no longer available to configure with the setup for SQL Server 2022 on Windows.
+- Distributed Replay - Distributed Replay is no longer available to configure with the setup for SQL Server 2022 on Windows.
 
 - Stretch Database - Stretch Database is deprecated in SQL Server 2022. This feature will be removed in a future version of Microsoft SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature.
 
