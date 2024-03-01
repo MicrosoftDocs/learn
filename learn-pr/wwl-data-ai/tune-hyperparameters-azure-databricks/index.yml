@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/27/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure-databricks
 title: Tune hyperparameters with Azure Databricks
 summary: In Azure Databricks, you can automate the process of hyperparameter tuning to more easily identify the best model.

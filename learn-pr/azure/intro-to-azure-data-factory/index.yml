@@ -7,7 +7,7 @@ metadata:
   ms.date: 02/13/2024  
   author: jonburchel
   ms.author: jburchel  
-  ms.topic: module
+  ms.topic: module-intro-to-product
   ms.service: data-factory
 title: Introduction to Azure Data Factory
 summary: Microsoft Azure Data Factory is a fully managed, serverless data integration service. It enables you to visually integrate data sources with more than 90 built-in, maintenance-free connectors. 
@@ -29,7 +29,7 @@ products:
   - azure-data-factory
 subjects:
 - cloud-computing
-- data-lake
+- data-storage
 - data-analytics
 units:
 - learn.intro-to-azure-data-factory.1-introduction

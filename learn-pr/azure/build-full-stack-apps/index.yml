@@ -37,7 +37,7 @@ products:
   - static-web-apps
   - azure-app-service
 subjects:
-- database
+- databases
 units:
 - learn.azure.build-full-stack-apps.introduction
 - learn.azure.build-full-stack-apps.exercise-deploy-resources
