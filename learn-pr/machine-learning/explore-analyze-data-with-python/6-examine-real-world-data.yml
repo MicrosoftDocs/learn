@@ -5,8 +5,8 @@ metadata:
   title: Examine real world data
   description: "Examine real world data"
   ms.date: 12/22/2022
-  author: TomReidNZ
-  ms.author: jasdeb
+  author: s-polly
+  ms.author: scottpolly
   ms.topic: unit
   ms.custom:
     - devx-track-python

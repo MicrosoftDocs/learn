@@ -1,10 +1,10 @@
-The REST API is the most flexible way to push data into an Azure Cognitive Search index. You can use any programming language or interactively with any app that can post JSON requests to an endpoint.
+The REST API is the most flexible way to push data into an Azure AI Search index. You can use any programming language or interactively with any app that can post JSON requests to an endpoint.
 
 Here, you'll see how to use the REST API effectively and explore the available operations. Then you'll look at .NET Core code and see how to optimize adding large amounts of data through the API.
 
 ### Supported REST API operations
 
-There are two supported REST APIs provided by cognitive search. Search and management APIs. This module focuses on the search REST APIs that provide operations on five features of search:
+There are two supported REST APIs provided by AI Search. Search and management APIs. This module focuses on the search REST APIs that provide operations on five features of search:
 
 |Feature     |Operations |
 |------------|------------|
@@ -70,7 +70,7 @@ The JSON must be in this format:
 If your request is successful, the API will return a 200 status code.
 
 > [!NOTE]
-> For a full list of all the response codes and error messages, see [Add, Update or Delete Documents (Azure Cognitive Search REST API)](/rest/api/searchservice/addupdate-or-delete-documents#response)
+> For a full list of all the response codes and error messages, see [Add, Update or Delete Documents (Azure AI Search REST API)](/rest/api/searchservice/addupdate-or-delete-documents#response)
 
 This example JSON uploads the customer record in the previous unit:
 

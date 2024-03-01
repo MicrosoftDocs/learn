@@ -5,8 +5,8 @@ metadata:
   title: What is Azure Private 5G Core?
   description: "Provides a high-level picture of Azure Private 5G Core."
   ms.date: 10/10/2022
-  author: rmcmurray
-  ms.author: robmcm
+  author: lnyswonger
+  ms.author: lnyswonger
   ms.topic: unit
 durationInMinutes: 7
 content: |

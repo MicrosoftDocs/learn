@@ -8,7 +8,7 @@ metadata:
   author: IEvangelist
   ms.author: dapine
   ms.manager: markl
-  ms.topic: module
+  ms.topic: module-intro-to-product
   ms.service: aspnet-core
   ms.subservice: aspnetcore-signalr
 title: Introduction to ASP.NET Core SignalR

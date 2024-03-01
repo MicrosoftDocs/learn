@@ -6,7 +6,7 @@ metadata:
   ms.date: 07/21/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: cognitive-services
 title: Deploy Azure AI services in containers
 summary: Learn about Container support in Azure AI Services allowing the use of APIs available in Azure and enable flexibility in where to deploy and host the services with Docker containers.
