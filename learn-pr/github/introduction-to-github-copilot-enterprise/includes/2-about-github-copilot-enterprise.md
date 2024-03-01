@@ -12,7 +12,7 @@ Let's learn about the new features that come with GitHub Copilot Enterprise.
 
 :::image type="content" source="../media/2-github-copilot-chat-window.png" alt-text="Screenshot of GitHub Copilot chat window.":::
 
-GitHub Copilot Enterprise allows developers to use GitHub Copilot Chat to create prompts that are customized to your codebase. This feature opens up a world of new possibilities, enabling developers to apply it directly within issues, pull requests, code files within code spaces, and even directly on repositories.
+GitHub Copilot Enterprise allows developers to use GitHub Copilot Chat to create prompts that are customized to your codebase. This feature opens up a world of new possibilities, enabling developers to apply it directly within issues, pull requests, code files within Codespaces, and even directly on repositories.
 
 By initiating Copilot Chat threads within these environments, team members can harness Copilot's tailored suggestions to get the information they need from that space or enhance their coding experience while contributing.
 
