@@ -10,13 +10,23 @@ You can upload the results using the code scanning API, the CodeQL CLI, or GitHu
 
 #### Code scanning API
 
-The code scanning API lets you retrieve and update code scanning alerts from a repository. You can use the endpoints to create automated reports for the code scanning alerts in an organization or upload analysis results generated using offline code scanning tools.   
+The code scanning API lets you retrieve information on code scanning alerts, analysises, databases, and default setup configuration from a repository. Addtionally, you can update code scanning alerts and the default setup configuration. You can use the endpoints to create automated reports for the code scanning alerts in an organization or upload analysis results generated using offline code scanning tools.    
 
-The GitHub API can be accessed over HTTPS from `https://api.github.com`. All data is sent and received as JSON. The API uses custom media types to let consumers choose the format of the data they wish to receive. Media types are specific to resources, allowing them to change independently and support formats that other resources don't. 
+The GitHub API can be accessed over HTTPS from `https://api.github.com`. All data is sent and received as JSON. The API uses custom media types to let consumers choose the format of the data they wish to receive. Media types are specific to resources, allowing them to change independently and support formats that other resources don't.
 
 There is one supported custom media type for the code scanning REST API, `application/sarif+json`. 
 
 You can use this media type with GET requests sent to the `/analyses/{analysis_id}` endpoint. When you use this media type with this operation, the response includes a subset of the actual data that was uploaded for the specified analysis, rather than the summary of the analysis that's returned when you use the default media type. The response also includes additional data such as the `github/alertNumber` and `github/alertUrl` properties. The data is formatted as SARIF version 2.1.0.
+
+The following is an example cURL command using the API to list the code scanning alerts for an organization:
+
+```
+curl -L \
+  -H "Accept: application/vnd.github+json" \
+  -H "Authorization: Bearer <YOUR-TOKEN>" \
+  -H "X-GitHub-Api-Version: 2022-11-28" \
+  https://api.github.com/orgs/ORG/code-scanning/alerts
+```
 
 Review the [GitHub REST API docs](https://docs.github.com/en/rest/reference/code-scanning) for more information about the using the code scanning API. 
 
