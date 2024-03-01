@@ -18,13 +18,19 @@ Before users can start using Copilot, admins need to provision and allocate capa
 
 There are two options for provisioning capacity:
 
-- Provision capacity within Copilot - When you first open Copilot for Security as an admin, a wizard will guide you through the steps in setting up capacity for your organization. The wizard prompts you for information including your Azure subscription, resource group, region, capacity name, and the quantity of SCUs.
+- Provision capacity within Copilot for Security (recommended)
+- Provision capacity through Azure
 
-    :::image type="content" source="../media/copilot-capacity-provisioning-v2.png" lightbox="../media/copilot-capacity-provisioning-v2.png" alt-text="Screen capture showing the page for capacity provisioning through Copilot.":::
+> [!NOTE]
+> Regardless of the method you choose, you will need to purchase a minimum of 1 and a maximum of 100 SCUs.
 
-- Provision capacity through Azure - The Azure portal now includes Copilot for Security as a service. Selecting the service, opens the page where you input information including your Azure subscription, resource group, region, capacity name, and the quantity of SCUs.
+  ***Provision capacity within Copilot for Security***. When you first open Copilot for Security as an admin, a wizard will guide you through the steps in setting up capacity for your organization. The wizard prompts you for information including your Azure subscription, resource group, region, capacity name, and the quantity of SCUs.
 
-    :::image type="content" source="../media/azure-capacity-provisioning-v2.png" lightbox="../media/azure-capacity-provisioning-v2.png" alt-text="Screen capture showing the page for capacity provisioning through Azure.":::
+   :::image type="content" source="../media/copilot-capacity-provisioning-v2.png" lightbox="../media/copilot-capacity-provisioning-v2.png" alt-text="Screen capture showing the page for capacity provisioning through Copilot.":::
+
+  ***Provision capacity through Azure***. The Azure portal now includes Copilot for Security as a service. Selecting the service, opens the page where you input information including your Azure subscription, resource group, region, capacity name, and the quantity of SCUs.
+
+  :::image type="content" source="../media/azure-capacity-provisioning-v2.png" lightbox="../media/azure-capacity-provisioning-v2.png" alt-text="Screen capture showing the page for capacity provisioning through Azure.":::
 
 Regardless of the approach you choose to provision capacity, the process takes the information and establishes a resource group for the Microsoft Copilot for Security service, within your Azure subscription. The SCUs are an Azure resource within that resource group. Deployment of the Azure resource can take a few minutes.
 
