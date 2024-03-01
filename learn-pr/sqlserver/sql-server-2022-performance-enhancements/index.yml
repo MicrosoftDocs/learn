@@ -32,7 +32,7 @@ roles:
 products:
 - sql-server
 subjects:
-  - database
+  - databases
 units:
 - learn.sql-server-2022-performance-enhancements.introduction
 - learn.sql-server-2022-performance-enhancements.memory-feedback
