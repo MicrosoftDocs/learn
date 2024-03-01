@@ -34755,6 +34755,16 @@
       "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/5-enforce-premises-microsoft-entra-password-protection.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/manage-authentication-microsoft-entra-id/12-enforce-premises-microsoft-entra-password-protection",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/7-configure-microsoft-entra-single-sign-on.md",
+      "redirect_url": "/training/modules/manage-authentication-microsoft-entra-id/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/8-integrate-applications-with-microsoft-entra-id.md",
+      "redirect_url": "/training/modules/manage-authentication-microsoft-entra-id/",
+      "redirect_document_id": false
     }
   ]
 }
