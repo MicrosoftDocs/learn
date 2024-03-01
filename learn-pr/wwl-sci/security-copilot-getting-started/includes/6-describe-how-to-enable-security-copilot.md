@@ -7,7 +7,7 @@ To start using Microsoft Copilot for Security, organizations need to take steps 
 
 ### Provision capacity
 
-Microsoft Copilot for Security is sold as a consumptive offering, meaning that Customers will be billed monthly based on a provisioned capacity that is billed by the hour.  The capacity that is provisioned is referred to as a security compute unit (SCU).  An SCU is the unit of measure of computing power used to run Copilot in both the standalone and embedded experiences.
+Microsoft Copilot for Security is sold as a consumptive offering, meaning that Customers are billed monthly based on a provisioned capacity that is billed by the hour. The capacity that is provisioned is referred to as a security compute unit (SCU). An SCU is the unit of measure of computing power used to run Copilot in both the standalone and embedded experiences.
 
 Before users can start using Copilot, admins need to provision and allocate capacity. To provision capacity:
 
@@ -18,7 +18,7 @@ Before users can start using Copilot, admins need to provision and allocate capa
 
 There are two options for provisioning capacity:
 
-- Provision capacity within Copilot - When you first open Copilot for Security as an admin, a wizard will guide you through the steps in setting up capacity for your organization.  The wizard prompts you for information including your Azure subscription, resource group, region, capacity name, and the quantity of SCUs.
+- Provision capacity within Copilot - When you first open Copilot for Security as an admin, a wizard will guide you through the steps in setting up capacity for your organization. The wizard prompts you for information including your Azure subscription, resource group, region, capacity name, and the quantity of SCUs.
 
     :::image type="content" source="../media/copilot-capacity-provisioning-v2.png" lightbox="../media/copilot-capacity-provisioning-v2.png" alt-text="Screen capture showing the page for capacity provisioning through Copilot.":::
 
@@ -26,7 +26,7 @@ There are two options for provisioning capacity:
 
     :::image type="content" source="../media/azure-capacity-provisioning-v2.png" lightbox="../media/azure-capacity-provisioning-v2.png" alt-text="Screen capture showing the page for capacity provisioning through Azure.":::
 
-Regardless of the approach you choose to provision capacity, the process takes the information and establishes a resource group for the Microsoft Copilot for Security service, within your Azure subscription.  The SCUs are an Azure resource within that resource group. Deployment of the Azure resource can take a few minutes.
+Regardless of the approach you choose to provision capacity, the process takes the information and establishes a resource group for the Microsoft Copilot for Security service, within your Azure subscription. The SCUs are an Azure resource within that resource group. Deployment of the Azure resource can take a few minutes.
 
 Once admins complete the steps to onboard to Copilot, they can manage capacity by increasing or decreasing provisioned SCUs within the Azure portal or the Security Copilot product itself. Copilot for Security provides a usage monitoring dashboard for capacity owners, allowing them to track usage over time and make informed decisions about capacity provisioning.
 
@@ -37,7 +37,7 @@ To set up the default environment, you need to have one of the following Microso
 - Global administrator
 - Security administrator
 
-During the set up of Copilot for Security, you'll be prompted to configure settings.  These include:
+During the setup of Copilot for Security, you are prompted to configure settings. These include:
 
 - SCU capacity - Select the capacity of SCUs previously provisioned.
 
@@ -59,18 +59,18 @@ During the set up of Copilot for Security, you'll be prompted to configure setti
 
 ### Role permissions
 
-To ensure that the users can access the fetaures of Copilot they need have the appropriate role permissions.
+To ensure that the users can access the fetaures of Copilot, they need to have the appropriate role permissions.
 
-Permissions can be assigned using Entra ID roles or Copilot for Security roles. As a best practice, provide the least privileged role applicable for each user.
+Permissions can be assigned using Microsoft Entra ID roles or Copilot for Security roles. As a best practice, provide the least privileged role applicable for each user.
 
-The Entra ID roles are:
+The Microsoft Entra ID roles are:
 
 - Global administrator
 - Security administrator
 - Security operator
 - Security reader
 
-Although these roles grant users varying levels of access to Copilot, the scope of these roles extends beyond Copilot.  For this reason, Copilot for Security roles were defined. The Copilot roles are defined and managed within Copilot and grant access only to Copilot for Security features.
+Although these roles grant users varying levels of access to Copilot, the scope of these roles extends beyond Copilot. For this reason, Copilot for Security roles were defined. The Copilot roles are defined and managed within Copilot and grant access only to Copilot for Security features.
 
 The Microsoft Copilot for Security roles are:
 
@@ -80,6 +80,6 @@ The Microsoft Copilot for Security roles are:
 
 For a detailed listing of the permissions granted for each of these roles, refer to the Assign roles article in the Summary and resources unit of this module.
 
-Your role controls what activities you have access to, such as configuring settings, assigning permissions or performing tasks. Copilot doesn't go beyond the access you have. Additionally, individual Microsoft plugins may have their own role requirements for accessing the service and data it represents. As an example, an analyst that has been assigned a Security Reader role or a Copilot workspace reader role is able to access the Copilot portal, but to utilize the Microsoft Sentinel plugin would need an appropriate role like Microsoft Sentinel Reader to access incidents in the workspace. To access the devices, privileges, and policies available through the Microsoft Intune plugin, that same analyst would need another service-specific role like the Intune Endpoint Security Manager role.
+Your role controls what activities you have access to, such as configuring settings, assigning permissions, or performing tasks. Copilot doesn't go beyond the access you have. Additionally, individual Microsoft plugins may have their own role requirements for accessing the service and data it represents. As an example, an analyst that has been assigned a Security Reader role or a Copilot workspace reader role is able to access the Copilot portal, but to utilize the Microsoft Sentinel plugin would need an appropriate role like Microsoft Sentinel Reader to access incidents in the workspace. To access the devices, privileges, and policies available through the Microsoft Intune plugin, that same analyst would need another service-specific role like the Intune Endpoint Security Manager role.
 
-For Microsoft plugins, Copilot leverages the OBO (on behalf of) model – meaning that  Copilot knows that a customer has licenses to specific products and is automatically signed into those products.  Security Copilot can then access the specific products when the plugin is enabled and, where applicable, parameters are configured.
+For Microsoft plugins, Copilot uses the OBO (on behalf of) model – meaning that  Copilot knows that a customer has licenses to specific products and is automatically signed into those products. Security Copilot can then access the specific products when the plugin is enabled and, where applicable, parameters are configured.

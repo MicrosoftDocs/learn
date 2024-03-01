@@ -14,7 +14,7 @@ You can experience Copilot through the dedicated site, also referred to as the s
 
 :::image type="content" source="../media/copilot-new-home-page-v2.png" lightbox="../media/copilot-new-home-page-v2.png" alt-text="Diagram that shows the landing page for the Microsoft Copilot for Security standalone experience.  The prompt bar is at the bottom center of the page.":::
 
-Additionally, some Microsoft security products embed Copilot capabilities directly within the products’ user interface. This experience is referred to as the embedded experience. Microsoft 365 Defender, for example, enables Copilot capabilities including summarizing incidents, analyzing scripts, generating KQL queries, and more.
+Additionally, some Microsoft security products embed Copilot capabilities directly within the products’ user interface. This experience is referred to as the embedded experience. Microsoft Defender XDR, for example, enables Copilot capabilities including summarizing incidents, analyzing scripts, generating KQL queries, and more.
 
 :::image type="content" source="../media/security-copilot-embedded-m365-xdr-v3.png" lightbox="../media/security-copilot-embedded-m365-xdr-v3.png" alt-text="Diagram that shows the advanced hunting page of Microsoft Defender XDR, The page includes a button for Copilot that When selected opens a side panel for natural language to KQL query assistant.":::
 
@@ -28,7 +28,7 @@ With the OpenAI large language models (LLM) for NLP, Microsoft Copilot for Secur
 
 ### Integration with Security-specific sources
 
-Copilot combines the Open AI LLM with a security-specific model from Microsoft. This security-specific model is informed by Microsoft’s unique global threat intelligence and more than 65 trillion daily signals and incorporates a growing set of security-specific ssources (plug-ins).  Through these plug-ins, Microsoft Copilot for Security integrates with various sources, including Microsoft's own security products including Microsoft Sentinel, Microsoft 365 Defender, and Microsoft Intune, third-party vendors, and open-source intelligence feeds. Through this information, Copilot is able to learn and leverage advanced threat intelligence, at machine speed, to help analysts identify and respond to emerging threats.
+Copilot combines the Open AI LLM with a security-specific model from Microsoft. This security-specific model is informed by Microsoft’s unique global threat intelligence and more than 65 trillion daily signals and incorporates a growing set of security-specific ssources (plug-ins).  Through these plug-ins, Microsoft Copilot for Security integrates with various sources, including Microsoft's own security products including Microsoft Sentinel, Microsoft Defender XDR, and Microsoft Intune, third-party vendors, and open-source intelligence feeds. Through this information, Copilot is able to learn and leverage advanced threat intelligence, at machine speed, to help analysts identify and respond to emerging threats.
 
 The information you give Copilot will only be accessible to your organization. Your data is your data, and it's protected by comprehensive enterprise compliance and security controls. Your data isn't used to train the foundation AI models.
 

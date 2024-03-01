@@ -25,9 +25,9 @@ quiz:
     - content: Microsoft Copilot for Security is an AI-powered, cloud-based security analysis tool that enables analysts to respond to threats quickly, process signals at machine speed, and assess risk exposure more quickly than may otherwise be possible. It supports security posture management, incident response, and security reporting.
       isCorrect: true
       explanation: Correct. This is the definition of Microsoft Copilot for Security and the use cases it supports according to the training material.
-    - content: Microsoft Copilot for Security is a standalone experience that cannot be embedded within other Microsoft security products.
+    - content: Microsoft Copilot for Security is a standalone experience that can't be embedded within other Microsoft security products.
       isCorrect: false
-      explanation: Incorrect. Microsoft Copilot for Security can be embedded within other Microsoft security products, such as Microsoft 365 Defender.
+      explanation: Incorrect. Microsoft Copilot for Security can be embedded within other Microsoft security products, such as Microsoft Defender XDR.
   - content: What is the orchestrator in Microsoft Copilot for Security?
     choices:
     - content: Copilot’s system for composing capabilities (skills) together to answer a user’s prompt.
@@ -38,15 +38,15 @@ quiz:
       explanation: Incorrect. A plugin/skillset is a collection of skills by a particular resource.
     - content: A tool used to generate customizable reports.
       isCorrect: false
-      explanation: Incorrect. The orchestrator is not a tool used to generate customizable reports.
-  - content: What are the minimal licensing requirements to start using Microsoft Copilot for Security?
+      explanation: Incorrect. The orchestrator isn't a tool used to generate customizable reports.
+  - content: What are the steps required to onboard organizations and users to Microsoft Copilot for Security?
     choices:
-    - content: Microsoft Copilot for Security licensing and Microsoft Intune licensing.
+    - content: Enable Copilot plugins, and procure Microsoft Entra Premium 1 licensing.
       isCorrect: false
-      explanation: Incorrect. The minimal licensing requirements include Microsoft Copilot for Security licensing and Microsoft Entra Premium 1.
-    - content: Microsoft Copilot for Security licensing and Microsoft Sentinel licensing.
+      explanation: Incorrect. To onboard the organization and users, an admin must Provision SCUs, set up the default environment, and assign role permission.  
+    - content: Procure Microsoft Entra Premium 1 licensing.
       isCorrect: false
-      explanation: Incorrect. The minimal licensing requirements include Microsoft Copilot for Security licensing and Microsoft Entra Premium 1.
-    - content: Microsoft Copilot for Security licensing and Microsoft Entra Premium 1.
+      explanation: Incorrect. Entra Premium 1 licensing isn't required. To onboard the organization and users to Copilot, The admin must provision and allocate security compute units (SCUs), set up the default environment, and assign role permissions to user.
+    - content: Provision SCUs, set up the default environment, and assign role permission.
       isCorrect: true
-      explanation: Correct. The minimal licensing requirements include Microsoft Copilot for Security licensing and Microsoft Entra Premium 1.
+      explanation: Correct. The admin must provision and allocate security compute units (SCUs), set up the default environment, and assign role permissions to user.
