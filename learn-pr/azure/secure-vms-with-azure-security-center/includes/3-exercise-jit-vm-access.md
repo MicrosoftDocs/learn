@@ -1,4 +1,4 @@
-You need to have the enhanced security features of Microsoft Defender for Cloud to use this feature. After you activate a trial or enable enhanced security on your subscription, you can enable JIT VM Access for selected Azure virtual machines (VMs) in the subscription. If you don't want to start a trial now, you can read through the following instructions to see the required steps.
+You need to have the enhanced security features of Microsoft Defender for Cloud to use this feature. After you activate a trial or enable enhanced security on your subscription, you can enable Just-in-time (JIT) virtual machine (VM) access for selected Azure virtual machines (VMs) in the subscription. If you don't want to start a trial now, you can read through the following instructions to see the required steps.
 
 ## Create a new VM
 
@@ -13,7 +13,7 @@ Let's start by creating a virtual machine using Azure Cloud Shell.
 
     Start by setting some default values, so you don't have to enter them multiple times.
 
-1. Set a default location. Here, we'll use **eastus**, but feel free to change that to a location closer to you.
+1. Set a default location. Here, we use **eastus**, but feel free to change that to a location closer to you.
 
     ```azurecli
     az configure --defaults location=eastus
@@ -22,7 +22,7 @@ Let's start by creating a virtual machine using Azure Cloud Shell.
     <!-- Paste tip-->
     [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
-1. Next, create a new Azure *resource group* to hold your VM resources. We're using the name `mslearnDeleteMe` here to remind ourselves to delete this group when we're finished.
+1. Next, create a new Azure *resource group* to hold your VM resources. We used the name `mslearnDeleteMe` here to remind ourselves to delete this group when we're finished.
 
     ```azurecli
     az group create --name mslearnDeleteMe --location eastus
@@ -34,7 +34,7 @@ Let's start by creating a virtual machine using Azure Cloud Shell.
     az configure --defaults group="mslearnDeleteMe"
     ```
 
-1. Next, run the following command to create a new Windows-based VM. Make sure to replace the following `<your-password-here>` value that with a valid password.
+1. Next, run the following command to create a new Windows-based VM. Make sure to replace the `<your-password-here>` value with your own valid password.
 
     ```azurecli
     az vm create \
@@ -45,7 +45,7 @@ Let's start by creating a virtual machine using Azure Cloud Shell.
         --admin-password <your-password-here>
     ```
 
-    It takes a few minutes to create the VM and supporting resources. You should get a response similar to:
+    It takes a few minutes to create the VM and supporting resources. You should get a response similar to the following example.
 
     ```json
     {
@@ -61,7 +61,7 @@ Let's start by creating a virtual machine using Azure Cloud Shell.
     }
     ```
 
-1. Use the public IP address in the response to connect to the VM using Remote Desktop (RDP). Windows has a built-in RDP client. If you use a different client system, there are clients available for macOS and Linux.
+1. To connect to the VM using Remote Desktop (RDP), use the public IP address in the response. Windows has a built-in RDP client. If you use a different client system, there are clients available for macOS and Linux.
 
 You can connect and administer the VM. Let's add JIT for security!
 
@@ -81,7 +81,7 @@ You can connect and administer the VM. Let's add JIT for security!
 
     ![Screenshot that depicts how you can enable JIT VM Access for a selected VM.](../media/M3-RDP02.png)
 
-    The **JIT VM access configuration** pane appears for your VM. After you enable the JIT rules, you can examine the Network Security Group for the VM. It will have a new set of rules applied to block remote management access, as shown in the following image:
+    The **JIT VM access configuration** pane appears for your VM. After you enable the JIT rules, you can examine the Network Security Group for the VM. It has a new set of rules applied to block remote management access, as shown in the following image.
 
     ![Screenshot that depicts rules to block remote management access.](../media/M3-RDP03.png)
 
@@ -91,7 +91,7 @@ You can connect and administer the VM. Let's add JIT for security!
 
 ## Request Remote Desktop Access
 
-If you try to RDP into the Windows VM at this point, you'll find that access is blocked. When your admin needs access, they can come into Defender for Cloud to request access.
+If you try to RDP into the Windows VM at this point, access is blocked. When your admin needs access, they can come into Defender for Cloud to request access.
 
 1. Under **Virtual machines**, select the **Configured** tab.
 
@@ -105,6 +105,6 @@ If you try to RDP into the Windows VM at this point, you'll find that access is 
 
     ![Screenshot that depicts opening a port by selecting On for its toggle.](../media/M3-RDP05.png)
 
-1. Select **Open ports** to finalize the request. You can set the number of hours to keep the port open from this pane as well. After the time has expired, the port(s) will be closed, and access will be denied.
+1. Select **Open ports** to finalize the request. You can set the number of hours to keep the port open from this pane as well. After the time expires, the port is closed, and access is denied.
 
-Now, your Remote Desktop client can connect successfully - at least for the time period you've allotted through Defender for Cloud.
+Now, your Remote Desktop client can connect successfully - at least for the time period that you allotted through Defender for Cloud.
