@@ -2,9 +2,9 @@ Whether you're using Dynamics 365 Remote Assist, Guides, or an Azure mixed reali
 
 ## HoloLens 2 solutions
 
-If you're interested in using business-ready solutions for your organization, start with the [Dynamics 365 applications](https://www.microsoft.com/hololens/apps). 
+If you're interested in using business-ready solutions for your organization, start with the [Dynamics 365 applications](https://www.microsoft.com/hololens/apps).
 
-If you're interested in creating a solution designed for your organization, contact Microsoft's [partner program](https://www.microsoft.com/hololens/partners). 
+If you're interested in creating a solution designed for your organization, contact Microsoft's [partner program](https://www.microsoft.com/hololens/partners).
 
 Independent software vendors that build mixed reality solutions on Azure are larger and more profitable.
 
@@ -22,8 +22,6 @@ Independent software vendors that build mixed reality solutions on Azure are lar
 1. [Develop for HoloLens - get Started](/windows/mixed-reality/develop/development?tabs=unity)
 1. [Microsoft Store](/hololens/holographic-store-apps)
 1. [Increase revenue and profits for ISVs](https://www.microsoft.com/hololens/forrester-total-economic-impact-isv)
-
-
 
 ## See also
 
