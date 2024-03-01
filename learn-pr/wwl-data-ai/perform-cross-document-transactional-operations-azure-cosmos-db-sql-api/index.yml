@@ -24,7 +24,7 @@ roles:
 products:
 - azure-cosmos-db
 subjects:
-- database
+- databases
 units:
 - learn.wwl.perform-cross-document-transactional-operations-azure-cosmos-db-sql-api.introduction
 - learn.wwl.perform-cross-document-transactional-operations-azure-cosmos-db-sql-api.create-transactional-batch-sdk
