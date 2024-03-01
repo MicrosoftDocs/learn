@@ -5,7 +5,7 @@ In this module, you explored the potential of AI-generated images in training an
 To continue your learning journey, go to:
 
 - [Four AI powered image generators - YouTube](https://www.youtube.com/watch?v=bZ-2jxN3Swg&t=93s)
-- [Introducing Image Creator from Microsoft Bing - YouTube](https://www.youtube.com/watch?v=cfCArxrQXgk&list=PLrYgQl0KoO3PKIvvc6yYOMaY1DGPWXvM0&index=2))
+- [Introducing Image Creator from Microsoft Bing - YouTube](https://www.youtube.com/watch?v=cfCArxrQXgk&list=PLrYgQl0KoO3PKIvvc6yYOMaY1DGPWXvM0&index=2)
 
 ## Bibliography
 
