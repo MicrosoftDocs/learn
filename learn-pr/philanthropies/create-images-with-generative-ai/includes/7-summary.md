@@ -1,22 +1,16 @@
-A prompt is a text-based input that tells a generative AI model what to do and how to do it. A prompt has two main components: instruction and context. The instruction states the task and the objective for the model, while the context provides information for the model's output.
+In this module, you explored the potential of AI-generated images in training and learning environments. AI-powered images can serve as creative prompts for brainstorming, bring abstract concepts to life, enhance visual communication, and enrich learning materials. Trainers can use AI-powered image generators to create a more engaging and innovative learning environment. Now, you can take what you learned and create a more fun, creative, and inclusive learning environment for your learners. 
 
-Prompt engineering is the skill of crafting prompts that produce the desired output from the model. The quality and effectiveness of the prompt affects the quality and effectiveness of the model's output. To create good prompts, the user needs to utilize their critical thinking skills to write descriptive language to define the desired output and communicate it clearly and specifically to the model. With the skill of prompt engineering, you are now ready to create, produce, and design with generative AI.
-
-## Additional resources
+## Other resources
 
 To continue your learning journey, go to:
 
-- [Prompt engineering overview | Microsoft Learn](/semantic-kernel/prompts/)
-- [Improve generative AI responses with prompt engineering - Training | Microsoft Learn](/training/modules/fundamentals-generative-ai/6-writing-prompts)
-- [Write more effective prompts - Training | Microsoft Learn](/training/modules/apply-prompt-engineering-azure-openai/3-write-effective-prompts)
-- [Prompt Engineering: How to Talk to the AIs (linkedin.com)](https://www.linkedin.com/learning/prompt-engineering-how-to-talk-to-the-ais)
-- [Github Prompts for EDU](https://github.com/microsoft/prompts-for-edu)
+- [Four AI powered image generators - YouTube](https://www.youtube.com/watch?v=bZ-2jxN3Swg&t=93s)
+- [Introducing Image Creator from Microsoft Bing - YouTube](https://www.youtube.com/watch?v=cfCArxrQXgk&list=PLrYgQl0KoO3PKIvvc6yYOMaY1DGPWXvM0&index=2))
 
 ## Bibliography
 
-1. [Stratton J. - Disclose when you're using generative AI](https://www.linkedin.com/learning/streamlining-your-work-with-copilot-formerly-bing-chat-bing-chat-enterprise/disclose-when-you-re-using-generative-ai). in: *Streamlining Your Work with Microsoft Microsoft Copilot*. LinkedIn Learning. Published June 22, 2023.  
-1. [What are Prompts?](/semantic-kernel/prompt-engineering/) Microsoft. Published May 23, 2023.  
-1. [Introduction to prompt engineering](/azure/ai-services/openai/concepts/prompt-engineering). Microsoft. Published July 17, 2023.  
-1. [How text generation works](/ai-builder/azure-openai-textgen#parts-of-a-prompt). Microsoft. Published July 14, 2023.  
-1. [Prompt Engineering Techniques | Learn How to Interact with OpenAI Models](https://microsoft.github.io/Workshop-Interact-with-OpenAI-models/Part-1-labs/Prompt-engineering-techniques/) Microsoft.github.io.  
-1. [Prompt Engineering: Improving Our Ability to Communicate with an LLM](https://www.microsoft.com/research/group/dynamics-insights-apps-artificial-intelligence-machine-learning/articles/prompt-engineering-improving-our-ability-to-communicate-with-an-llm/). Published May 30, 2023.
+1. [Shaw FS. Prompts for communicators using the new AI-powered Bing](https://blogs.microsoft.com/blog/2023/03/16/prompts-for-communicators-using-the-new-ai-powered-bing/). Microsoft. Published March 16, 2023.  
+1. [Siegel J. The art of the prompt: How to get the best out of generative AI](https://news.microsoft.com/source/features/ai/the-art-of-the-prompt-how-to-get-the-best-out-of-generative-ai/). Microsoft. Published May 5, 2023.  
+1. [Horvitz E. Microsoft. AI Anthology Case Studies](https://unlocked.microsoft.com/ai-anthology/case-studies/#medicine). Microsoft. Publication date unavailable.  
+1. [Unit 5. Use AI-powered image generation capabilities effectively](/training/modules/empower-educators-explore-potential-artificial-intelligence/use-ai-powered-image-generation-capabilities-effectively). in: *Empower educators to explore the potential of artificial intelligence*. Microsoft. Publication date unavailable.  
+1. [Create Images with Your Words - Bing Image Creator Comes to the New Bing](https://blogs.microsoft.com/blog/2023/03/21/create-images-with-your-words-bing-image-creator-comes-to-the-new-bing/). The Official Microsoft Blog. Published March 21, 2023. 
