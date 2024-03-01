@@ -1,5 +1,3 @@
-
-
 The IT department needs to prototype different storage scenarios and to train new personnel. The content isn't important enough to back up and doesn't need to be restored if the data is overwritten or removed. A simple configuration that can be easily changed is desired.
 
 ## Architecture diagram
@@ -13,4 +11,4 @@ Launch the exercise and follow the instructions. When you're done, be sure to re
 > [!NOTE]
 > To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/).
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/Secure-storage-for-Azure-Files-and-Azure-Blob-Storage/Instructions/Labs/LAB_01_storage_test_training.html?azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2261592)

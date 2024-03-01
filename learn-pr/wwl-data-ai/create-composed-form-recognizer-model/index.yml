@@ -6,7 +6,7 @@ metadata:
   ms.date: 11/07/2023
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure-ai-document-intelligence
 title: Create a composed Form Recognizer model
 summary: Learn how to assemble custom models into composed solutions that can analyze different types of your own documents.

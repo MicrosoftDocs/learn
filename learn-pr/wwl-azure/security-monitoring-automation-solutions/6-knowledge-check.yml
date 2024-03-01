@@ -4,68 +4,70 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/15/2024
+  ms.date: 02/21/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What action does the Incident settings section in Microsoft Sentinel enable?"
+  - content: "What is the role of analytics rules in Microsoft Sentinel?"
     choices:
-    - content: "Automatically group all alerts into a single incident"
+    - content: "To automate the scaling of Azure resources based on demand."
       isCorrect: false
-      explanation: "Incorrect. This setting only groups alerts triggered by a specific analytics rule."
-    - content: "Disable the creation of incidents for all analytics rules"
-      isCorrect: false
-      explanation: "Incorrect. This setting only applies to the specific analytics rule being configured."
-    - content: "Enable or disable the creation of incidents for alerts triggered by a specific analytics rule"
+      explanation: "Analytics rules are designed for threat detection, not for resource scaling."
+    - content: "To create and customize logic for detecting threats and generating alerts."
       isCorrect: true
-      explanation: "Correct. The Incident settings section allows you to enable or disable the creation of incidents for alerts triggered by a specific analytics rule."
-  - content: "A security analyst needs to collect logs from a custom data source on a Linux computer. Which method should they use to collect the logs?"
+      explanation: "By defining and customizing analytics rules, users can tailor Microsoft Sentinel's threat detection capabilities to their specific needs, enhancing security monitoring and alerting."
+    - content: "To manually process and analyze large datasets for insights."
+      isCorrect: false
+      explanation: "Analytics rules automate threat detection and alert generation, moving beyond manual data analysis."
+  - content: "How do data connectors in Microsoft Sentinel enhance security monitoring?"
     choices:
-    - content: "Use the Log Analytics agent to collect the logs as files on the Linux computer."
+    - content: "By manually archiving old data to reduce data volume."
       isCorrect: false
-      explanation: "Incorrect. This method is used to collect logs as files on Windows or Linux computers, but not specifically for custom data sources."
-    - content: "Configure the Syslog daemon to forward events to the Microsoft Sentinel workspace."
-      isCorrect: false
-      explanation: "Incorrect. This method is used to collect logs from the built-in Syslog daemon, not a custom data source."
-    - content: "Use the Log Analytics custom log collection agent to collect the logs as files on the Linux computer."
+      explanation: "Data connectors focus on data integration for security analytics, not on manual data archiving processes."
+    - content: "By enabling integration with various data sources for comprehensive security analytics."
       isCorrect: true
-      explanation: "Correct. This method is used to collect logs as files on Windows or Linux computers for custom data sources."
-  - content: "A company wants to consolidate log entries from multiple Azure subscriptions and tenants into one location for analysis. They also want to perform complex analysis and gain deep insights on activity log entries. Which feature should they enable by sending the activity log to a Log Analytics workspace?"
+      explanation: "These connectors allow Microsoft Sentinel to collect data across a wide range of security solutions, providing a unified view for threat detection and response."
+    - content: "By encrypting all data stored in Azure Storage to meet compliance requirements."
+      isCorrect: false
+      explanation: "While data encryption is vital for security, the primary role of data connectors is to facilitate data integration, not to encrypt data."
+  - content: "What is the primary purpose of using Azure Monitor for security events?"
     choices:
-    - content: "Enabling Azure Storage account"
+    - content: "To increase the storage capacity of Azure Blob Storage."
       isCorrect: false
-      explanation: "Incorrect. Azure Storage account is used to retain log data longer than 90 days for audit, static analysis, or back up."
-    - content: "Exporting Activity Logs to a file"
-      isCorrect: false
-      explanation: "Incorrect. Exporting Activity Logs to a file doesn't enable the Azure Monitor Logs feature, which allows correlating activity log data with other monitoring data collected by Azure Monitor."
-    - content: "Sending the activity log to a Log Analytics workspace"
+      explanation: "Azure Monitor's focus is on monitoring and analysis, not directly affecting storage capacity."
+    - content: "To monitor and analyze security events across Azure and on-premises environments."
       isCorrect: true
-      explanation: "Correct. Sending the activity log to a Log Analytics workspace enables the Azure Monitor Logs feature, where you can correlate activity log data with other monitoring data collected by Azure Monitor. You can also consolidate log entries from multiple Azure subscriptions and tenants into one location for analysis together. Use log queries to perform complex analysis and gain deep insights on activity log entries. Use log alerts with Activity entries for more complex alerting logic. Store activity log entries for longer than the activity log retention period. Incur no data ingestion or retention charges for activity log data stored in a Log Analytics workspace."
-  - content: "A security team needs to ensure the secure configuration of their Azure resources. They want to use a tool that can assess the security posture of their resources and provide recommendations for improvement. Which Azure service should they use?"
+      explanation: "Azure Monitor allows organizations to collect, analyze, and act on telemetry data from Azure and on-premises environments, enhancing security event visibility and response."
+    - content: "To reduce the cost of Azure Virtual Machines."
+      isCorrect: false
+      explanation: "While cost optimization is important, Azure Monitor's primary function is security event monitoring, not cost reduction."
+  - content: "How should alerts and incidents in Microsoft Sentinel be evaluated?"
     choices:
-    - content: "Microsoft Defender for Cloud"
+    - content: "By ignoring low-severity alerts to focus on high-severity incidents only."
       isCorrect: false
-      explanation: "Incorrect. Microsoft Defender for Cloud provides recommendations for improving the security posture of Azure resources, but it doesn't assess the current security posture."
-    - content: "Azure Policy"
-      isCorrect: false
-      explanation: "Incorrect. Azure Policy is used to enforce compliance with organizational standards and policies, but it doesn't assess the current security posture."
-    - content: "Azure Advisor"
+      explanation: "Ignoring alerts can lead to missed threats; all alerts should be systematically evaluated."
+    - content: "Through systematic investigation and triage to determine the appropriate response."
       isCorrect: true
-      explanation: "Correct. Azure Advisor assesses the security posture of Azure resources and provides recommendations for improving security, performance, and cost optimization."
-  - content: "A security analyst is creating a playbook in Microsoft Sentinel. They want to automate the response to an incident or alert. What is the next step they should take after defining the trigger, conditions, and actions in the playbook?"
+      explanation: "Evaluating alerts and incidents involves investigating and triaging them based on severity, context, and potential impact, guiding effective response strategies."
+    - content: "Using physical security controls to prevent unauthorized access to data centers."
+      isCorrect: false
+      explanation: "While physical security is important, the evaluation of alerts and incidents in Sentinel is a digital process focused on threat intelligence and response."
+  - content: "What is the benefit of configuring automation in Microsoft Sentinel?"
     choices:
-    - content: "Add additional logic to the steps using a library of functions"
+    - content: "To replace the need for a security operations team entirely."
       isCorrect: false
-      explanation: "Incorrect. The security analyst can add additional logic to the steps using a library of functions while defining the trigger, conditions, and actions in the playbook."
-    - content: "Create a new automation rule"
+      explanation: "Automation complements the work of security teams by enhancing efficiency, not replacing them."
+    - content: "To manually review and approve every security alert generated."
       isCorrect: false
-      explanation: "Incorrect. The security analyst should create an automation rule before defining the trigger, conditions, and actions in the playbook."
-    - content: "Determine the criteria under which the playbook will run and set up the automation mechanism that will run it when those criteria are met"
+      explanation: "The goal of automation is to reduce the need for manual intervention, not to increase it."
+    - content: "To streamline response processes by automating actions based on specific triggers."
       isCorrect: true
-      explanation: "Correct. After defining the trigger, conditions, and actions in the playbook, the security analyst should determine the criteria under which the playbook will run and set up the automation mechanism that will run it when those criteria are met by creating an automation rule."
+      explanation: "Automation in Microsoft Sentinel allows for the setup of playbooks that automatically execute responses to threats, improving the speed and consistency of security operations."

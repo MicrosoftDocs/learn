@@ -31,7 +31,6 @@ products:
   - azure
 subjects: 
   - cloud-computing
-  - data-ai
 units:
 - learn.wwl.fundamentals-generative-ai.introduction
 - learn.wwl.fundamentals-generative-ai.what-is-generative-ai
