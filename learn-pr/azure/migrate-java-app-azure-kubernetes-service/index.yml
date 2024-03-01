@@ -28,7 +28,7 @@ products:
 - azure-migrate
 - azure-kubernetes-service
 subjects:
-- container
+- containers
 units:
 - learn.azure.migrate-java-app-azure-kubernetes-service.introduction
 - learn.azure.migrate-java-app-azure-kubernetes-service.containerization-overview
