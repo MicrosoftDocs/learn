@@ -12,7 +12,7 @@ metadata:
 title: Introduction to Azure IoT Hub Device Provisioning Service
 summary: This module introduces you to features of the Device Provisioning Service, enrollment types, attestation mechanisms, and the stages within the provisioning lifecycle.
 abstract: |
-  After you complete this module, you will be able to:
+  After you complete this module, you'll be able to:
   *   Evaluate whether Device Provisioning Service is appropriate for your Azure IoT solution.
   *   Describe the concepts and features of Device Provisioning Service deployments, including device enrollment concepts, attestation methods, and the device auto-provisioning process.
 prerequisites: |
@@ -30,8 +30,7 @@ products:
 - azure-iot-hub
 - azure-iot-sdk
 subjects:
-- device-management
-- asset-management
+- iot
 units:
 - learn.introduction-to-device-provisioning-service.introduction
 - learn.introduction-to-device-provisioning-service.what-is-device-provisioning-service
