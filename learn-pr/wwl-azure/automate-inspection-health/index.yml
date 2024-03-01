@@ -6,7 +6,7 @@ metadata:
   ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure
 title: Automate inspection of health
 summary: This module describes how to automate the inspection of health events, configure notifications in Azure DevOps and GitHub, set up service hooks to monitor pipelines, measure the quality of your release process, and detail release gates for quality purposes. You'll examine release management tools and details about them.

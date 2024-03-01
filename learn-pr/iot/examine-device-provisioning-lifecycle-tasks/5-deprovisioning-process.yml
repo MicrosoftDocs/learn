@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-device-provisioning-lifecycle-tasks.examine-deprovisioning-process
+title: Examine the deprovisioning process
+metadata:
+  title: Examine the deprovisioning process
+  description: "Examine the deprovisioning process"
+  ms.date: 01/08/2024
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-deprovisioning-process.md)]

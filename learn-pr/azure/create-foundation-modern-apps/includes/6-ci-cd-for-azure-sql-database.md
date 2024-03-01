@@ -24,11 +24,11 @@ We use the Desired State approach in the bus-catching scenario; it's probably th
 
 ### Implement Code First Migrations depending on your language
 
-There's another option when you don't want to write T-SQL scripts; instead, you want to let C#, Python, or Node and the entities defined in your solution (for example, a Book, a Customer) automatically generate the database and schema. There's usually a specific tool that comes with or applies to a platform or framework. These tools ensure that every time you change or add a field or entity, the new structure will be reflected in the database. You can find references to tools for specific platforms and frameworks at the end of this module.
+There's another option when you don't want to write T-SQL scripts; instead, you want to let C#, Python, or Node and the entities defined in your solution (for example, a Bus, a Route, or a Location) automatically generate the database and schema. There's usually a specific tool that comes with or applies to a platform or framework. These tools ensure that every time you change or add a field or entity, the new structure will be reflected in the database. You can find references to tools for specific platforms and frameworks at the end of this module.
 
 ### Use manual scripts for step-by-step deployments
 
-In the manual scripting approach, a developer carefully writes and maintains scripts needed to create and change the database over time. After a script has been deployed in production, it's never changed; rather, a new one is created. Each script contains the code needed to evolve the database to the new schema. In cases where a database needs to be deployed from scratch, all scripts must be executed in the correct sequence to ensure database is created and the evolved correctly. Tools like [DbUp](https://dbup.github.io/) help ensure that, once a script has been deployed, it isn't applied again to the same database in subsequent executions.
+In the manual scripting approach, a developer carefully writes and maintains scripts needed to create and change the database over time. After a script has been deployed in production, it's never changed; rather, a new one is created. Each script contains the code needed to evolve the database to the new schema. In cases where a database needs to be deployed from scratch, all scripts must be executed in the correct sequence to ensure database is created and the evolved correctly. Once a script had been deployed, you can use tools like the Schema Compare utility in SQL Server Data Tools (SSDT) to compare database definitions. This helps ensure that the deployed script isn't applied again to the same database in subsequent executions.
 
 ## Select a pipeline tool to implement CI/CD with ease
 
@@ -36,7 +36,7 @@ Once you've identified the approach that best addresses how you'll update your d
 
 ### Implement CI/CD with Azure DevOps
 
-Azure DevOps is a suite of products that provides full support to all DevOps aspects, including a CI/CD pipeline. A pipeline is composed of Tasks that define the steps of the pipeline. A Task can be almost anything, from the execution of an executable to the build of a .NET solution. You can use a specific task named **Azure SQL Database Deployment Task** to deploy a `.dacpac` file or execute a .sql script.
+Azure DevOps is a suite of products that provides full support to all DevOps aspects, including a CI/CD pipeline. A pipeline is composed of Tasks that define the steps of the pipeline. A Task can be almost anything, from the execution of an executable to the build of a .NET solution. You can use a specific task named **Azure SQL Database Deployment Task** to deploy a `.dacpac` file or execute an .sql script.
 
 ### Implement CI/CD with GitHub Actions
 

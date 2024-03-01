@@ -4,12 +4,14 @@ By configuring the Visual Studio Code debugger environment for different sample 
 
 Without the ability to configure and use the Visual Studio Code debugger tools, you wouldn't be able to isolate and fix code bugs in a timely manner.
 
-## Reference materials:
+## Reference materials
 
-- You can find additional information about the Visual Studio Code debugger here: [https://code.visualstudio.com/docs/editor/debugging](https://code.visualstudio.com/docs/editor/debugging).
+- You can find additional information about the Visual Studio Code debugger and launch configurations here: [https://code.visualstudio.com/docs/editor/debugging](https://code.visualstudio.com/docs/editor/debugging).
 
-- You can find additional information about the OmniSharp debugger for C# here: [https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md).
+- You can find additional information about .NET debugging in Visual Studio Code here: [https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md).
 
-- You can find additional information about the OmniSharp debugger and the launch.json file here: [https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md).
+- You can find additional information about configuring the C# debugger here: [https://code.visualstudio.com/docs/csharp/debugger-settings](https://code.visualstudio.com/docs/csharp/debugger-settings).
 
-- You can find additional information about advanced launch configuration scenarios here: [https://code.visualstudio.com/docs/editor/debugging](https://code.visualstudio.com/docs/editor/debugging).
+## Get a free verified certification
+
+Microsoft and freeCodeCamp.org offer a training and certification combo on foundational C#. By completing this Learn module, you've already started. Explore freeCodeCamp's Foundational C# with Microsoft certification here: [https://aka.ms/csharp-certification](https://aka.ms/csharp-certification). 

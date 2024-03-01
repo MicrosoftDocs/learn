@@ -8,7 +8,7 @@ metadata:
   author: markingmyname
   ms.author: maghan  
   manager: jroth
-  ms.topic: module
+  ms.topic: module-intro-to-product
   ms.service: mariadb
 title: Introduction to Azure Database for MariaDB
 summary: Evaluate whether Azure Database for MariaDB can manage your organization's mission-critical workloads. Describe whether its performance and scalability make it ideal to host your database workloads.
@@ -30,7 +30,7 @@ products:
   - azure
   - azure-database-mariadb
 subjects:
-- data-warehousing
+- data-storage
 units:
 - learn.intro-to-azure-database-for-mariadb.1-introduction
 - learn.intro-to-azure-database-for-mariadb.2-what-is-azure-database-for-mariadb
