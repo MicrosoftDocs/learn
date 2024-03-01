@@ -22,7 +22,7 @@ Follow these steps to edit a workflow file:
 
 3. After you have edited the file, select **Start commit** and complete the "Commit changes" form. You can choose to commit directly to the current branch, or create a new branch and start a pull request.
 
-    :::image type="content" source="../media/3-severities-4-level-severity-screenshot.png" alt-text="screenshot of the start commit button":::
+    :::image type="content" source="../media/2-security-tab-screenshot.png" alt-text="screenshot of the start commit button":::
 
 Review the following sections for some common code scanning configuration options. 
 
@@ -56,7 +56,7 @@ By default, only alerts with the severity level of `Error` or security severity 
   
 3. In the **Code scanning** section under **Protection rules**, use the drop-down menu to select the severity level you would like to trigger a pull request check failure.
 
-    :::image type="content" source="../media/protection_rules_dropdown.png" alt-text="screenshot of the code scanning alert severity drop-down menu.":::
+    :::image type="content" source="../media/3-severities-4-level-severity-screenshot.png" alt-text="screenshot of the code scanning alert severity drop-down menu.":::
 
 ### Avoid unnecessary scans of pull requests
 
