@@ -69,7 +69,8 @@ To do so, you:
 
 ## Run the program locally
 
-1. To test run your program locally on the built-in simulator, select **Run Q# File** from the play icon drop-down in the top-right, or press **Ctrl+F5**. Your output will appear in the debug console.
+1. Open a new terminal, **Terminal > New Terminal**. 
+1. To test run your program locally on the built-in simulator, select **Run Q# File** from the play icon drop-down in the top-right, or press **Ctrl+F5**. Your output will appear in the debug console of the terminal.
 1. Run the program again to see a different result.
 
 In the next unit, you'll implement the second phase of your quantum random number generator: combining multiple random bits to form a larger number.

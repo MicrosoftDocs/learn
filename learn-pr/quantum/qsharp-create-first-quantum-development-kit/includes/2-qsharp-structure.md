@@ -31,8 +31,6 @@ namespace HelloQuantum {
 
 In this example, the `open` directive tells the Q# compiler to look for the `Message` operation in the `Microsoft.Quantum.Intrinsic` namespace. 
 
-The Q# documentation provides complete reference documentation for each built-in library. For more information, see [Q# libraries](/quantum/user-guide/libraries/additional-libraries?tabs=tabid-csproj).
-
 ## Entry points
 
 `EntryPoint` tells the Q# compiler where to begin executing the program. Every Q# program must have at least one entry point followed by an operation.

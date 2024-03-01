@@ -3,7 +3,7 @@ In this unit, you'll push a container image to Azure Container Registry.
 Azure Container Registry allows you to build, store, and manage container images and artifacts in a private registry for all types of container deployments. Use Azure container registries with your existing container development and deployment pipelines.
 
 > [!NOTE]
-> If your session has idled out or you're doing this step at another point in time and/or from another CLI, you may have to reinitialize your environment variables and reauthenticate with the following CLI commands.
+> If your session has idled out or you're doing this step at another point in time and/or from another CLI, you might have to reinitialize your environment variables and reauthenticate with the following CLI commands.
 >
 >AZ_RESOURCE_GROUP=javacontainerizationdemorg
 >

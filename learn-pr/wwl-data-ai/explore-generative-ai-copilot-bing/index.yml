@@ -3,13 +3,15 @@ uid: learn.wwl.explore-generative-ai-copilot-bing
 metadata:
   title: Explore generative AI with Copilot in Bing
   description: "Interact with Copilot in Bing to learn about the capabilities of generative AI. Bring your personal creativity and passion to dream up a novel destination and create the content to help tell its story."
-  ms.date: 12/05/2023
+  ms.date: 02/20/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module-guided-project
-  ms.prod: azure
+  ms.service: azure
 title: Explore generative AI with Copilot in Bing
-summary: Interact with Microsoft Copilot in Bing to learn about the capabilities of generative AI. Bring your personal creativity and passion to dream up a novel destination and create the content to help tell its story.
+summary: |
+  Interact with Microsoft Copilot in Bing to learn about the capabilities of generative AI. Bring your personal creativity and passion to dream up a novel destination and create the content to help tell its story.
+  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   In this module, learn how to:
   - Use multimodal features of Copilot in Bing

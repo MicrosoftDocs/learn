@@ -9,7 +9,9 @@ metadata:
   ms.topic: module
   ms.service: azure
 title: Specify requirements for securing SaaS, PaaS, and IaaS services
-summary: "You learn how to analyze security requirements for different cloud offerings (SaaS, PaaS, and IaaS), IoT workloads, web workloads and containers."
+summary: |
+  You learn how to analyze security requirements for different cloud offerings (SaaS, PaaS, and IaaS), IoT workloads, web workloads and containers.
+  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   By the end of this module, you are able to:
     - Specify security baselines for SaaS, PaaS, and IaaS services

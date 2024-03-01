@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: module
-  ms.prod: azure
+  ms.service: azure
 title: Plan an Azure Kubernetes Service deployment
 summary: In this module, you learn about the core Kubernetes infrastructure components, including control plane nodes, node pools, and workload resources such as pods, deployments, and sets.
 abstract: |

@@ -4,7 +4,7 @@ One of the biggest considerations when working with distributed applications is 
 
 In Kubernetes, Secrets allow you to store sensitive information in a safer way than plain text format in pods and deployments. Secrets are designed to store passwords and other sensitive data.
 
-Kubernetes Secrets encode their data in a Base64 format. Although Base64 isn't an encryption algorithm, Kubernetes can see that the information is encoded and can hide this information from command outputs such as `kubectl describe`. This process doesn't happen with plain text configuration. Secrets always scoped to a single namespace to avoid added exposure of sensitive data to other workloads in the cluster.
+Kubernetes Secrets encode their data in a base64 format. Although base64 isn't an encryption algorithm, Kubernetes can see that the information is encoded and can hide this information from command outputs such as `kubectl describe`. This process doesn't happen with plain text configuration. Secrets are always scoped to a single namespace to avoid added exposure of sensitive data to other workloads in the cluster.
 
 ### Types of Secrets
 
@@ -15,11 +15,11 @@ There are different types of Secrets. The most common and default type is `Opaqu
 - `kubernetes.io/tls`: TLS client or server data, used to serve HTTPS connections from within an Ingress resource, for example.
 
 > [!TIP]
-> For more information, see the [official Kubernetes Secrets documentation](https://kubernetes.io/docs/concepts/configuration/secret/#secret-types).
+> For more information, see the official [Kubernetes Secrets documentation](https://kubernetes.io/docs/concepts/configuration/secret/#secret-types).
 
 ## Create and use a Secret
 
-According to the [official Kubernetes documentation](https://kubernetes.io/docs/concepts/configuration/secret/#overview-of-secrets), you can use a Secret in three different ways:
+According to the official [Kubernetes Secrets documentation](https://kubernetes.io/docs/concepts/configuration/secret/#overview-of-secrets), you can use a Secret in three different ways:
 
 - Mounted as files in a volume on containers inside a Pod or Deployment.
 - Referenced as an environment variable in the Pod or Deployment specification.
@@ -38,7 +38,7 @@ data:
   key_name: "key value in base64 format"
 ```
 
-For this Secret, you need to encode the values *before* you create the Secret. If you want to create a Secret with the plain text value and let Kubernetes encode it automatically, you use `stringData` instead of `data`:
+For a Secret with this specification, you need to encode the values *before* you create the Secret. If you want to create a Secret with the plain text value and let Kubernetes encode it automatically, you use `stringData` instead of `data`:
 
 ```yaml
 apiVersion: v1
@@ -55,6 +55,6 @@ The application receives the *decoded* Secret string as the value passed to it i
 
 ### Secret updates
 
-All Secrets that are *mounted as volumes* inside a pod are automatically updated once their value changes. This change might not occur immediately because of the [Kubelet configuration](https://kubernetes.io/docs/concepts/configuration/configmap/#mounted-configmaps-are-updated-automatically), but will happen automatically so there's no need to restart the Pod.
+All Secrets that are *mounted as volumes* inside a pod are automatically updated once their value changes. This change might not occur immediately because of the [Kubelet configuration](https://kubernetes.io/docs/concepts/configuration/configmap/#mounted-configmaps-are-updated-automatically), but it happens automatically so there's no need to restart the Pod.
 
-Secrets that are *bound to environment variables* aren't automatically updated. For these cases, it's necessary to restart the Pod for the changes to take effect.
+In cases where Secrets are *bound to environment variables* they aren't automatically updated, making it necessary to restart the Pod for the changes to take effect.

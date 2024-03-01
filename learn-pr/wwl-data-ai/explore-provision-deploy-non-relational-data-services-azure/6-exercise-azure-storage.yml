@@ -4,11 +4,10 @@ title: 'Exercise: Explore Azure Storage'
 metadata:
   title: 'Exercise: Explore Azure Storage'
   description: "Exercise: Explore Azure Storage"
-  ms.date: 10/19/2023
+  ms.date: 01/30/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-  ms.service: azure-storage
 durationInMinutes: 15
 content: |
   [!include[](includes/6-exercise-azure-storage.md)]
