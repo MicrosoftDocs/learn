@@ -6,7 +6,7 @@ metadata:
   ms.date: 01/29/2024
   author: wwlpublish
   ms.author: serlingdavis
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure
 title: Filter network traffic with a network security group using the Azure portal
 summary: In this module, we will focus on filtering network traffic using Network Security Groups (NSGs) in the Azure portal. Learn how to create, configure, and apply NSGs for improved network security.
