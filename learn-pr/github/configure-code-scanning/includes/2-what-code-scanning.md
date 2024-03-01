@@ -36,11 +36,11 @@ Follow these steps to set up code scanning using the CodeQL GitHub Actions workf
 
 2. Under your repository name, click **Security**.
 
-     :::image type="content" source="../media/2-security-tab-screenshot.png" alt-text="screenshot of the security tab":::
+     :::image type="content" source="../media/2-security-tab-screenshot.png" alt-text="Screenshot of the security tab.":::
 
 3. Click **Set up code scanning**. If this option isn't available, ask an organization owner or repository administrator to enable GitHub Advanced Security. 
  
-     :::image type="content" source="../media/3-set-up-code-scanning-button-screenshot.png" alt-text="screenshot of the set up code scanning button":::
+     :::image type="content" source="../media/3-set-up-code-scanning-button-screenshot.png" alt-text="Screenshot of the set up code scanning button.":::
 
 4. In the dropdown menu that appears select "Default."
 
