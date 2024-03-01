@@ -2,7 +2,7 @@
 
 AI-102: Learning Path 6 Develop document intelligence solutions with Azure AI Services
 
-As you are preparing to teach this Learning Path, get familiar with what the students will learn during the Learning Path. In this Learning Path, students will understand the definition of document intelligence, what to use to analyze forms, and extract the data that they contain. Students will also learn about developing or deploying an Azure Document Intelligence solution and review the brand updated Document Intelligence Studio, a no code tool that allows users to explore, understand, and integrate the features from the Document Intelligence service into real applications.
+As you're preparing to teach this Learning Path, get familiar with what the students learn during the Learning Path. In this Learning Path, students understand the definition of document intelligence, what to use to analyze forms, and extract the data that they contain. Students also learn about developing or deploying an Azure Document Intelligence solution and review the brand updated Document Intelligence Studio, a no code tool that allows users to explore, understand, and integrate the features from the Document Intelligence service into real applications.
 
 This Learning Path consists of two lessons:
 - Lesson 1 – Use prebuilt Document Intelligence models

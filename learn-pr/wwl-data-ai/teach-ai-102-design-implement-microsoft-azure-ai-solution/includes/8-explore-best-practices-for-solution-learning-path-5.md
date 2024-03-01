@@ -2,7 +2,7 @@
 
 AI-102: Learning Path 5 Develop knowledge mining solutions with Azure AI Search
 
-As you are preparing to teach this Learning Path, get familiar with what the students will learn during the Learning Path. In this Learning Path, students will learn about knowledge mining with Azure AI search and how it connects a lot of different services at the same time. Students will also learn about the concepts of indexing and querying.
+As you're preparing to teach this Learning Path, get familiar with what the students learn during the Learning Path. In this Learning Path, students learn about knowledge mining with Azure AI search and how it connects many different services at the same time. Students also learn about the concepts of indexing and querying.
 
 This Learning Path consists of three lessons:
 - Lesson 1 – Implement an intelligent search solution
@@ -16,7 +16,7 @@ This Learning Path consists of three lessons:
 - Encourage students to focus on creating and using an Azure AI Search resource and how to use a custom skill
 - Use examples of how Azure AI Search can be integrated with other Azure resources
 
-Demo and lab instructions can be found in the Trainer Prep Guide, in the “Required Materials to prepare for and teach this course” section:
+Demo and lab instructions can be found in the Trainer Prep Guide, in the "Required Materials to prepare for and teach this course" section:
 
 Learning Path 5 Demo
 - Create an Azure cognitive search solution

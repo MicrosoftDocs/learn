@@ -5,7 +5,7 @@ AI-102: Learning Path 1 Get started with Azure AI Services
 
 Learning Path 1 Overview
 
-As you are preparing to teach this Learning Path, get familiar with what the students will learn during the Learning Path. In this Learning Path students will learn about artificial intelligence (AI) and related areas of computer science, such as data science and machine learning. Students will also explore considerations for building AI solutions responsibly and some of the key Azure services that can be used to integrate AI capabilities into applications.
+As you're preparing to teach this Learning Path, get familiar with what the students learn during the Learning Path. In this Learning Path students learn about artificial intelligence (AI) and related areas of computer science, such as data science and machine learning. Students will also explore considerations for building AI solutions responsibly and some of the key Azure services that can be used to integrate AI capabilities into applications.
 
 This learning path consists of four lessons:
 
@@ -23,7 +23,7 @@ This learning path consists of four lessons:
 - Ask students to think of an example when each topic would be useful in the real world
 - Find real life examples to explain the necessity of using AI responsibly
 
-Demo and lab instructions can be found in the Trainer Prep Guide, in the “Required Materials to prepare for and teach this course” section:
+Demo and lab instructions can be found in the Trainer Prep Guide, in the "Required Materials to prepare for and teach this course" section:
 
 Learning Path 1 Demos
 - Secure AI Services 

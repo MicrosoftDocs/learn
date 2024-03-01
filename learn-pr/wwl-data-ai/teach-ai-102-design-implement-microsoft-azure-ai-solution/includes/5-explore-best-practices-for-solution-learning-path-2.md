@@ -2,7 +2,7 @@
 
 AI-102: Learning Path 2 Develop computer vision solutions with Azure AI Vision
 
-As you are preparing to teach this Learning Path, get familiar with what the students will learn during the Learning Path. In this Learning Path, students will learn about image analysis, object classification, object detection, as well as how to detect, analyze, and recognize faces. Students will also learn about the different tools available for customizing division models for performing some tasks like detection or classification.
+As you're preparing to teach this Learning Path, get familiar with what the students learn during the Learning Path. In this Learning Path, students learn about image analysis, object classification, object detection, and how to detect, analyze, and recognize faces. Students will also learn about the different tools available for customizing division models for performing some tasks like detection or classification.
 
 This Learning Path consists of two lessons:
 - Lesson 1 – Get Started with Cognitive Services
@@ -16,7 +16,7 @@ This Learning Path consists of two lessons:
 - Ask students to think of an example when each topic would be useful in the real world
 - Find real life examples to explain the necessity of using AI responsibly
 
-Demo and lab instructions can be found in the Trainer Prep Guide, in the “Required Materials to prepare for and teach this course” section:
+Demo and lab instructions can be found in the Trainer Prep Guide, in the "Required Materials to prepare for and teach this course" section:
 
 Learning Path 2 Demos
 - Explore features in Vision Studio

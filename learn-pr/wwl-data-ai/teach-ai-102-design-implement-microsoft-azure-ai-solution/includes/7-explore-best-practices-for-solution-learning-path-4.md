@@ -2,7 +2,7 @@
 
 AI-102: Learning Path 4 Develop generative AI solutions with Azure OpenAI Service
 
-As you are preparing to teach this Learning Path, get familiar with what the students will learn during the Learning Path. In this Learning Path, students will learn about language model prediction, the concept of embeddings, and utilizing Azure OpenAI Studio Playground documentation around capabilities and availability of models. Students will also learn about the differences between completions, chat completions options, and the models that are supported for each of them.
+As you're preparing to teach this Learning Path, get familiar with what the students learn during the Learning Path. In this Learning Path, students learn about language model prediction, the concept of embeddings, and utilizing Azure OpenAI Studio Playground documentation around capabilities and availability of models. Students also learn about the differences between completions, chat completions options, and the models that are supported for each of them.
 
 This Learning Path consists of four lessons:
 - Lesson 1 – Get started with Azure OpenAI Service

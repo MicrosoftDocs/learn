@@ -1,6 +1,6 @@
 
 
-As you are preparing to teach this Learning Path, get familiar with what the students will learn during the Learning Path. In this Learning Path, students will learn about natural language processing (NLP) using text analysis, translation, speech-to-text, and to speech services. Students will also learn about recent changes to different NLP-related services including new features, new names, and deprecation of some traditional services.
+As you're preparing to teach this Learning Path, get familiar with what the students learn during the Learning Path. In this Learning Path, students learn about natural language processing (NLP) using text analysis, translation, speech-to-text, and to speech services. Students also learn about recent changes to different NLP-related services including new features, new names, and deprecation of some traditional services.
 
 This Learning Path consists of five lessons:
 - Lesson 1 – Analyze and translate text
