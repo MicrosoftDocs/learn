@@ -67,6 +67,8 @@ Copilot docset management allows organizations to create and manage custom docse
 
 ### Create docsets
 
+To create a docset, you need to have admin rights in the repository.
+
 :::image type="content" source="../media/3-github-copilot-docsets-list.png" alt-text="Screenshot of GitHub Copilot Docsets list.":::
 
 Navigate to [github.com/copilot/](https://github.com/copilot/), scroll down, and select **Create a new docset**.
