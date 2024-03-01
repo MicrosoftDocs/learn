@@ -30,7 +30,6 @@ products:
 subjects:
 - data-analytics
 - data-storage
-- data-warehousing
 units:
 - learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.introduction
 - learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.explore-development-tools-for
