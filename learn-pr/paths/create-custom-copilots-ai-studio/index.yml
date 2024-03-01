@@ -19,7 +19,7 @@ roles:
 - data-scientist
 - ai-engineer
 products:
-- azure-ai-studio
+- ai-services
 subjects:
 - artificial-intelligence
 - machine-learning
