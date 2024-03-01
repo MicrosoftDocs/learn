@@ -29,7 +29,7 @@ roles:
 products:
 - azure-synapse-analytics
 subjects:
-- data-warehousing
+- data-storage
 units:
 - learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.introduction
 - learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.understand-performance-issues-related-to-tables
