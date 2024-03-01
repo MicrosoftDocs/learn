@@ -27,14 +27,11 @@ subjects:
 - data-analytics
 - data-engineering
 - data-integration
-- data-lake
 - data-management
 - data-modeling
-- data-privacy
-- data-science
+- information-protection-governance
 - data-storage
 - data-visualization
-- data-warehousing
 modules:
 - learn.wwl.introduction-end-analytics-use-microsoft-fabric
 - learn.wwl.get-started-lakehouses

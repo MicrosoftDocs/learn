@@ -7,7 +7,7 @@ metadata:
   ms.date: 10/18/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.service: sap-on-azure
   ms.subservice: sap-vm-workloads
 durationInMinutes: 5
