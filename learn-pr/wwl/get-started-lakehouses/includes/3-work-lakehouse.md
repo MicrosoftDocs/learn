@@ -4,17 +4,17 @@ Now that you understand the core capabilities of a Microsoft Fabric Lakehouse, l
 
 Before you can create a lakehouse, you create a workspace in the Microsoft Fabric platform. Configure your workspace to allow Fabric resources.
 
-You create and configure a new Lakehouse in the Data Engineering workload. Each lakehouse produces three named items in the Fabric-enabled workspace:
+You create and configure a new lakehouse in the Data Engineering workload. Each L produces three named items in the Fabric-enabled workspace:
 
 - **Lakehouse** is the lakehouse storage and metadata, where you interact with files, folders, and table data.
 - **Semantic model (default)** is an automatically created data model based on the tables in the lakehouse. Power BI reports can be built from the semantic model.
 - **SQL Endpoint** is a read-only SQL endpoint through which you can connect and query data with Transact-SQL.
 
-![Screenshot of the three Lakehouse items as described.](../media/lakehouse-items.png)
+![Screenshot of the three lakehouse items as described.](../media/lakehouse-items.png)
 
 You can work with the data in the lakehouse in two modes:
 
-- **Lakehouse** enables you to add and interact with tables, files, and folders in the Lakehouse.
+- **Lakehouse** enables you to add and interact with tables, files, and folders in the lakehouse.
 - **SQL analytics endpoint** enables you to use SQL to query the tables in the lakehouse and manage its relational data model.
 
 ![Screenshot of the two Lakehouse Explorer modes.](../media/explorer-modes.png)
@@ -27,7 +27,7 @@ Shortcuts are useful when you need data in your lakehouse from a different stora
 
 Source data permissions and credentials are all managed by OneLake. When accessing data through a shortcut to another OneLake location, the identity of the calling user will be used to authorize access to the data in the target path of the shortcut. The user must have permissions in the target location to read the data.
 
-Shortcuts can be created in both Lakehouses and KQL databases, and appear as a folder in the lake. Spark, SQL, Real-Time Analytics, and Analysis Services can access data via shortcuts when querying data.
+Shortcuts can be created in both lakehouses and KQL databases, and appear as a folder in the lake. Spark, SQL, Real-Time Analytics, and Analysis Services can access data via shortcuts when querying data.
 
 Shortcuts have limited data source connectors, so when you can't use shortcuts, you can ingest data directly into your lakehouse.
 
