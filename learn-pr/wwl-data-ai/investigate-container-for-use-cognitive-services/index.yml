@@ -32,7 +32,7 @@ products:
 - ai-services
 - azure-container-instances
 subjects:
-- container
+- containers
 - artificial-intelligence
 units:
 - learn.wwl.investigate-container-for-use-with-cognitive-services.introduction-to-containerization-of
