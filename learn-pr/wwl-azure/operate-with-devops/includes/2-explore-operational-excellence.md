@@ -2,7 +2,7 @@ DevOps practices not only cover software build, testing, and delivery, but they 
 
 ## What is operational excellence?
 
-:::image type="content" source="../media/2-monitoring.png" alt-text="Diagram showing a monitoring graph representation":::
+:::image type="content" source="../media/2-monitoring.png" alt-text="Diagram showing a monitoring graph representation.":::
 
 Operational excellence is a set of practices that promote efficiency, resiliency, and continuous improvement in day-to-day operations. The key aspects of operational excellence overlap to a large extent with DevOps practices such as automation, collaboration, continuous improvement, scalability, and flexibility. However, there are a few that is covered here due to their operational significance. These aspects include:
 

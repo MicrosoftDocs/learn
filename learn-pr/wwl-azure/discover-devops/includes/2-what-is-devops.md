@@ -1,4 +1,4 @@
-DevOps is a commonly misunderstood and mischaracterize term. Before you explore more nuanced aspects of DevOps, it's essential that you understand its meaning and what DevOps isn't.
+DevOps is a commonly misunderstood and mischaracterized term. Before you explore more nuanced aspects of DevOps, it's essential that you understand its meaning and what DevOps isn't.
 
 ## What is DevOps (and what isn't)?
 
@@ -10,7 +10,7 @@ It's not a state that an organization can reach, but rather a continuous journey
 
 It’s also important to note that DevOps isn't tied to a specific technology or tools.
 
-:::image type="content" source="../media/2-devops-toolchain.png" alt-text="Screenshot of the DevOps toolchain and application lifecycle":::
+:::image type="content" source="../media/2-devops-toolchain.png" alt-text="Screenshot of the DevOps toolchain and application lifecycle.":::
 
 Now to explore DevOps in a contextual way, let's consider the traditional organization in the software development company example in which the development team and the operations team work in silos. Review challenges associated with this scenario and examine the meaning of DevOps in this context and how it can help.
 
