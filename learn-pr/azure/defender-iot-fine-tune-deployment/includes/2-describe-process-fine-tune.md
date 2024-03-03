@@ -1,7 +1,5 @@
 Your sensor can now send data to Microsoft Defender for IoT, but you need to make some final checks to ensure that the system runs as it was originally planned. You need to check that all the planned devices are correctly listed and that they're configured properly in the system. 
 
-<!--You need to check that the devices listed match the ones listed in your network plan. Then check the settings of each device and ensure that they're configured properly.
-When Defender for IoT first receives data from each device it automatically defines their settings, sometimes these settings might be incorrect. You must check each device and in some cases you have to adjust and correct the settings. -->
 Once these checks are complete, you have a full and accurate list of devices that are set up correctly and can now securely process data.
 
 ## OT sensor deployment path
@@ -10,7 +8,12 @@ The following diagram shows the complete OT deployment path, with the team respo
 
 :::image type="content" source="../media/2-ot-deploy.png" alt-text="Diagram of the complete OT deployment process" border="false":::
 
-This module describes the fifth phase in the deployment: *Calibrate and fine-tune*. In a real-life scenario, the deployment and connectivity teams ensure that the sensor is already onboarded, activated and sending data to Defender for IoT.
+This Learn Module is divided into two sections.
+
+Section 1: units 3 and 4 dealing with calibrating and fine-tuning your sensor.
+Section 2: units 6 and 7 dealing with triaging the alerts.
+
+Units 3 and 4 describes the fifth phase in the deployment: *Calibrate and fine-tune*. In a real-life scenario, the deployment and connectivity teams ensure that the sensor is already onboarded, activated and sending data to Defender for IoT.
 
 The OT calibration and fine-tuning is the phase where you check that all of the devices listed in the network plan appear correctly in Defender for IoT. You also check that the settings that Defender for IoT automatically assigns to each device are correct. You might have to adjust some of these device settings.
 
@@ -26,6 +29,7 @@ Once you know that all of the devices are properly connected to Defender for IoT
 
 <!-- What are managed and unmanaged devices?  check that all the assigned settings are correct. -->
 <!-- When does this categorization of devices occur, who does it? <https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/device-inventory#supported-devices>-->
+
 ## Outcome
 
 Once these steps are properly completed, Defender for IoT is set up to monitor all of the devices passing data to the Azure portal. Defender for IoT now has an accurate list of all the sensors, devices, and their subnets, and the correct status for each one so that they're tracked for vulnerabilities and compromises. This device list should match the original network diagram produced at the beginning of the process.

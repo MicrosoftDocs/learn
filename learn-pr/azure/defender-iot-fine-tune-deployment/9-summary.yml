@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.defender-iot-fine-tune-deployment.exercise-triage-alerts
-title: Exercise - Triage alerts in learning mode 
+uid: learn.defender-iot-fine-tune-deployment.summary
+title: Summary
 metadata:
-  title: Exercise - Triage alerts in learning mode
-  description: "Exercise - Triage alerts in learning mode."
+  title: Summary
+  description: "Summary"
   ms.date: 1/9/2024
   author: limwainstein
   ms.author: lwainstein
@@ -21,4 +21,4 @@ metadata:
   ms.service: defender-for-iot
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-exercise-triage-alerts.md)]
+  [!include[](includes/9-summary.md)]
