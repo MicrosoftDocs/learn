@@ -32,12 +32,12 @@ quiz:
 
   - content: "Which would be an interesting traffic point to identify?"
     choices:
-    - content: "Traffic that isn't uni-directional."
+    - content: "Traffic that is multi-directional."
       isCorrect: true
       explanation: "Traffic that travels in two directions is interesting to monitor."
-    - content: "Traffic that isn't broadcast or multicast."
+    - content: "Traffic that is unicast."
       isCorrect: false 
-      explanation: "Broadcast and multicast traffic are considered interesting points of traffic to monitor."
+      explanation: "Unicast only covers part of the traffic and is less interesting to monitor. Broadcast and multicast traffic are considered interesting points of traffic to monitor."
     - content: "Traffic that doesn't pose a risk to the network."
       isCorrect: false
       explanation: "You're interested in monitoring traffic that could pose a risk to your network."
