@@ -6,13 +6,13 @@ To start the software installation, open your virtual machine.
 
 ### Download the monitoring software file
 
-In Defender for IoT select **Getting started > Sensor**, then select the latest software version and select **Download**. <!-- must ensure they download the correct software version otherwise the admin and log in will be incorrect, if it is different on older versions -->
-<!-- is this file 'given' to the person as a prerequisite? I don think so. -->
+In Defender for IoT select **Getting started > Sensor**, then select the latest software version and select **Download**.
+
+NOTE:  <!-- must ensure they download the correct software version otherwise the admin and log in will be incorrect, if it is different on older versions -->
+
 :::image type="content" source="../media/6-download-iso-file.png" alt-text="screenshot of Downloading ISO monitoring file from Defender for IoT":::
 
 Save the downloaded ISO file in a location that's accessible from your VM.
-
-All files downloaded from the Azure portal are signed by root of trust so that your machines use signed assets only.<!-- remove, not sure it is important?-->
 
 ### Install the monitoring software on the virtual machine
 
@@ -42,7 +42,7 @@ On your virtual machine:
     The IP address is needed to access the sensor for initial setup and activation.
 
 ### Post-installation validation
-<!-- do we really need to include this section for the LM? -->
+
 Validate your installation using the sensor's own system health checks, available to the default *admin* user.
 
 **To validate your installation**:
@@ -68,10 +68,11 @@ Open a browser in the virtual machine.
 1. Type the IP address given at the end of the sensor installation, ```192.168.0.101```. The initial sign-in page appears, for example:
 
     :::image type="content" source="../media/6-console-sign-in-page.png" alt-text="Screenshot of sensor console sign in":::
-1. Type the following credentials:<!-- how do we know they have chosen the correct sensor verison? define that above-->
+1. Type the following credentials:
 
     Username: ```admin```
     Password: ```admin```
+
 1. Select Login.
 
 The **Defender for IoT | Overview** page opens to the **Management interface** tab. Now you start to configure the settings.
