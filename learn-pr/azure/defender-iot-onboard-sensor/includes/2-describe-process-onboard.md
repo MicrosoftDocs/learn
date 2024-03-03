@@ -1,78 +1,25 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Onboard an OT sensor to Defender for IoT once you have a deployment plan and a prepared site. The site preparations include a detailed network diagram of all the sensors your organization needs, how they're divided by geographical sites and zones, and which connection method each one uses.
 
-    Goal: briefly summarize the key skill this unit will teach
+In a real-life scenario, you use a network diagram that your architecture team prepared of your environment to identify the site and zone to apply to the sensor you're onboarding.
 
-    Heading: none
+Onboarding a sensor to Defender for IoT provides you with an activation file and a file listing all of the application end points. You use these at a later stage in the deployment process.
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+## Defender for IoT for OT deployment path
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+The following diagram shows the OT monitoring deployment path, with the team responsible for each phase:
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+:::image type="content" source="../media/2-operational-technology-deploy.png" alt-text="Diagram of the complete OT deployment process." border="false":::
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+This module describes the second phase in the deployment: *Onboarding sensors*. In a real-life scenario, you already have your deployment plan ready, and your networks and sites prepared.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+Specifically, you need a list of the OT sensors planned for your deployment and how they're segmented into different geographical and logical sites and zones.
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+Real-life deployment plans and preparations also include details about your monitoring goals, the devices that need monitoring, and more. You'd make sure that all the appliances and hardware needed are already set up and working before onboarding the sensor.
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+This planning is essential for ensuring an effective Defender for IoT deployment across your system.
 
-    Goal: State concisely what's covered in this unit
+## In this phase
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+Sensor onboarding, described in this module, is the deployment phase where you log a specific sensor to Defender for IoT. In this phase you enter your Azure subscription, site and zone information.
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
-
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
-
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
-
-    Heading: none
--->
-TODO: add a visual element
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+In this module, you're onboarding an OT sensor to monitor traffic from a specific office at one of the car manufacturer sites in our sample scenario. When you're done, you have an OT sensor in Defender for IoT and an activation file to use with your sensor.

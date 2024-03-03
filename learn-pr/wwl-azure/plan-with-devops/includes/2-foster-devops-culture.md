@@ -9,3 +9,7 @@ Given the core DevOps culture elements, there are many actions that organization
 - **Facilitate continuous learning and improvement**: Organizations should establish architecture review boards and centers of excellence to develop and maintain their best practices in the areas of development, operations, and security. Team structure should ensure that everyone is a specialist in their function and a generalist in all other functions so that team members can support each other when needed.
 - **Commit to optimization**: Business and customer-driven needs should be the primary factors that determine the overall DevOps strategy. The teams need to regularly review their standard operating procedures, apply creative thinking, and seek areas of improvement.
 - **Embrace safe experimentation**: Organizations should develop means for testing and evaluating new functionality in isolation from the production environment and delivering innovative solutions in compliance with safe deployment practices.
+
+Exemplifying these recommendations, Microsoft has a well-established live site culture that is based on the principles of DevOps. The company has a strong focus on customer satisfaction and operational excellence, and it has a culture of continuous learning and improvement. Key aspects of Microsoft's live site culture:
+
+:::image type="content" source="../media/3-microsoft-live-site-culture.png" alt-text="Screenshot of Microsoft's live site culture":::

@@ -7,7 +7,7 @@ metadata:
   ms.date: 10/18/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/6-add-registry-entries-both-cluster-nodes-sap-ascs-scs-instance.md)]

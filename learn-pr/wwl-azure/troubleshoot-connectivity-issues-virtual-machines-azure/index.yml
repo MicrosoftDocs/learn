@@ -6,7 +6,7 @@ metadata:
   ms.date: 04/27/2023
   author: fabianomira
   ms.author: famira
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure
 title: Troubleshoot connectivity issues with virtual machines in Microsoft Azure
 summary: Troubleshoot deployment, connectivity, and authorization issues with Azure Bastion and just in time access to Virtual Machines.

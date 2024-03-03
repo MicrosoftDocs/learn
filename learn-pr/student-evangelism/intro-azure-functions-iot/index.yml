@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/08/2023
   author: leestott
   ms.author: chnoring
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.custom: team=nextgen
   ms.service: azure-functions
 title: "Introduction to Azure Functions for IoT"

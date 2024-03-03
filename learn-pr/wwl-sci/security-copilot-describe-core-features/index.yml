@@ -1,21 +1,21 @@
 ### YamlMime:Module
 uid: learn.security-copilot-describe-core-features
 metadata:
-  title: Describe the core features of Microsoft Security Copilot
-  description: "Describe the core features of Microsoft Security Copilot."
-  ms.date: 11/18/2023
+  title: Describe the core features of Microsoft Copilot for Security
+  description: "Describe the core features of Microsoft Copilot for Security."
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: security-copilot
-title: Describe the core features of Microsoft Security Copilot
+title: Describe the core features of Microsoft Copilot for Security
 summary: |
-  Microsoft Security Copilot has a rich set of features. Learn about available plugins, promptbooks, the ways you can export and share information from Security Copilot, and much more.
+  Microsoft Copilot for Security has a rich set of features. Learn about available plugins, promptbooks, the ways you can export and share information from Copilot, and much more.
   [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   By the end of this module, you'll be able to:
     - Describe the features available in the standalone experience.
-    - Describe the services to which Security Copilot can integrate.
+    - Describe the services to which Microsoft Copilot for Security can integrate.
 prerequisites: |
   - None
 iconUrl: /learn/achievements/generic-badge.svg
@@ -42,6 +42,7 @@ units:
 - learn.security-copilot-describe-core-features.describe-standalone-experience
 - learn.security-copilot-describe-core-features.describe-microsoft-plugins
 - learn.security-copilot-describe-core-features.describe-non-microsoft-plugins
+- learn.security-copilot-describe-core-features.describe-custom-promptbooks
 - learn.security-copilot-describe-core-features.knowledge-check
 - learn.security-copilot-describe-core-features.summary
 badge:

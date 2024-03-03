@@ -1,78 +1,27 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Your car manufacturing organization has offices and production sites across the globe, with a network linking them together. Zero Trust access principles require segmenting your network to enhance security and limit access for each segment to relevant personnel only.
 
-    Goal: briefly summarize the key skill this unit will teach
+Defender for IoT uses *sites* and *zones* for this segmentation, and you need the details about your sensors' sites and zones when onboarding your sensor.
 
-    Heading: none
+## Sites and zones
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+In Defender for IoT, in our example, each international office location is designated as a separate *site*. Each of these sites contains areas with different uses, such as executive offices, production floors, and sales. In Defender for IoT, each of these logical areas are called *zones*.
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+Each of your sensors is assigned to a site and zone, with its own unique name. The sensor is either connected to the cloud, where data is streamed to the Azure portal, or managed locally, where data is accessed only on-premises. You define sites and zones for your sensors as you onboard them to Defender for IoT.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+### Your organization's deployment plan
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+Your car manufacturer has four offices worldwide. The following table shows the part of your deployment plan that details the sites, zones, and sensor required for each office.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+|Site | Zones | Sensor name | Cloud connected |
+|--- | ---|---|--- |
+|**Paris office** |- Ground floor (Guests)<br> - Floor 1 (Sales) <br> - Floor 2 (Executive)|paris-guests<br>paris-sales<br>paris-exec | Yes<br>Yes<br>Yes |
+|**Lagos office** |- Ground floor (Guests)<br> - Floor 1 (Sales)  |lagos-offices<br>lagos-factory |Yes <br> No |
+|**Dubai office** |- Ground floor (Convention center)<br> - Floor 1 (Sales) <br> - Floor 2 (Offices)|dubai-guests<br>dubai-sales<br>dubai-exec| Yes<br>Yes<br>Yes|
+|**Tianjin office** |- Ground floor (Offices)<br> - Floors 1-2 (Factory)| tianjin-office <br>tianjin-factory | Yes <br> No |
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+To onboard the **Sales floor** sensor for the **Paris office**, you need the following information ready:
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
-
-    Goal: State concisely what's covered in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
-
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
-
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
-
-    Heading: none
--->
-TODO: add a visual element
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+- **Site name**: Paris office
+- **Zone**: Floor 1 (Sales)
+- **Sensor name**: paris-sales
+- **Cloud connected**: Yes
