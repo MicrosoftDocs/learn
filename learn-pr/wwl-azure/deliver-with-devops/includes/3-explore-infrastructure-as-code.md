@@ -15,6 +15,8 @@ While individual implementations of IaC may differ significantly, they all tend 
 
 Implementing IaC starts with identifying infrastructure requirements, including compute, storage, and networking components. Details depend largely on the platform hosting that infrastructure and could differ significantly depending, for example, on the use of public or private cloud environments.
 
+:::image type="content" source="../media/3-infrastructure-as-code.png" alt-text="Diagram of the infrastructure as code flow.":::
+
 The choice of the platform will also have an impact on the choice of the IaC technology and tools. For example, each public cloud provider offers its own set of IaC capabilities. In the case of Microsoft Azure, these capabilities are based on Azure Resource Manager (ARM) and Bicep templates. There are also solutions that offer multicloud support, such as Terraform.
 The choice of tool determines the type of files and the corresponding directory structure of your projects. This should allow you to set up repositories in the version control system of your choice. VCS repos facilitate tracking infrastructure changes, intra and cross-team collaboration, automation for deployments and rollbacks, as well as integration with CI/CD workflows.
 
