@@ -4,6 +4,8 @@ Continuous integration (CI) and continuous delivery (CD) are closely related Dev
 
 Continuous delivery comprises the practices, which automate generation of software releases, ensure they are in a deployable state, and make them available to their consumers. Its focus is on minimizing the *time to deploy* and *time to mitigate (TTM)*, also known as *time to remediate (TTR)*. The latter refers to scenarios where a newly released version of the application reaches the production environment and needs to be rolled back.
 
+:::image type="content" source="../media/2-explore-continuous-delivery.png" alt-text="Diagram of the continuous delivery flow.":::
+
 Continuous delivery tends to be an iterative process, where the same artifact representing the latest software release transitions through several environments, which are dedicated, for example, to user acceptance testing, staging, and production. This provides ample opportunities to validate its functionality and stability.
 
 It's worth noting that DevOps nomenclature includes two closely related terms, which have similar names and the same acronym – continuous delivery and continuous deployment. Both deal with automating and streamlining the software delivery process. The primary distinction between them is that the latter strives to implement full automation, including the production environment, while in case of the former, that final delivery requires a manual approval.

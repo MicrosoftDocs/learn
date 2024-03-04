@@ -33,7 +33,6 @@ products:
   - azure
 subjects: 
   - cloud-computing
-  - data-ai
 units:
 - learn.wwl.build-language-solution-azure-openai.introduction
 - learn.wwl.build-language-solution-azure-openai.integrate-azure-openai-into-app
