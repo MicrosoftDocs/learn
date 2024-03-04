@@ -4,7 +4,7 @@ In this exercise, you create a Docker Compose YAML file. Then you use the Docker
 
 ## Connect to the codespace
 
-If you have disconnected from the codespace you used in the previous exercise, reconnect now:
+If you disconnected from the codespace you used in the previous exercise, reconnect now:
 
 1. Open a browser and go to the [eShopLite repository](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative).
 1. Select **Code**, and then select the **Codespaces** tab.
@@ -15,7 +15,7 @@ If you have disconnected from the codespace you used in the previous exercise, r
 
 Use the docker-compose file to configure images for both the back-end and front-end services:
 
-1. In the dotnet-docker folder of the codespace (the same folder with README.md), open the file named **./dotnet-docker/docker-compose.yml**. This file will be empty.
+1. In the dotnet-docker folder of the codespace (the same folder with README.md), open the file named **./dotnet-docker/docker-compose.yml**. This file is empty.
 
 1. Add the following code to the docker-compose.yml file:
 
