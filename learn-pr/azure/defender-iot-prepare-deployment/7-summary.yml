@@ -2,12 +2,11 @@
 uid: learn.defender-iot-prepare-deployment.summary
 title: Summary
 metadata:
-  title: |
-    Summary
+  title: Summary
   description: "Summary of the Defender for IoT deployment preparation module."
-  ms.date: 10/11/2023
-  author: mjosephym
-  ms.author: v-mjosephy
+  ms.date: 03/04/2024
+  author: limwainstein
+  ms.author: lwainstein
   ms.topic: interactive-tutorial
   ms.service: defender-for-iot
 durationInMinutes: 3

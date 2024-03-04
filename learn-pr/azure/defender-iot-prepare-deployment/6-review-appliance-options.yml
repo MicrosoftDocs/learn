@@ -1,14 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.defender-iot-prepare-deployment.review-appliance-options
 title: Review appliance options
-
 metadata:
   title: Review appliance options
-
   description: "Describes the process of choosing appropriate appliances and hardware profiles for your Microsoft Defender for IoT sensors."
-  ms.date: 10/11/2023
-  author: mjosephym
-  ms.author: v-mjosephy
+  ms.date: 03/04/2024
+  author: limwainstein
+  ms.author: lwainstein
   ms.topic: interactive-tutorial
   ms.service: defender-for-iot
 durationInMinutes: 6
