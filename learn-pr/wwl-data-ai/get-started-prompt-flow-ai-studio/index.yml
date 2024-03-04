@@ -31,7 +31,6 @@ subjects:
   - artificial-intelligence
   - machine-learning
   - natural-language-processing
-  - data-ai
 units:
 - learn.get-started-prompt-flow-ai-studio.introduction
 - learn.get-started-prompt-flow-ai-studio.understand-lifecycle

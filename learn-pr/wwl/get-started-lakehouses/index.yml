@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-lakehouses
 metadata:
   title: Get started with lakehouses in Microsoft Fabric
   description: "Get started with lakehouses in Microsoft Fabric"
-  ms.date: 09/08/2023
+  ms.date: 03/01/2024
   author: wwlpublish
   ms.author: anrudduc
   ms.topic: module-standard-task-based
@@ -35,9 +35,7 @@ subjects:
 - data-analytics
 - data-engineering
 - data-integration
-- data-lake
 - data-storage
-- data-warehousing
 units:
 - learn.wwl.get-started-lakehouses.introduction
 - learn.wwl.get-started-lakehouses.fabric-lakehouse

@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/23/2023
   author: AbdullahBell
   ms.author: abell
-  ms.topic: module
+  ms.topic: module-intro-to-product
   ms.service: ddos-protection
 title: "Introduction to Azure DDoS Protection"
 summary: Learn how to guard your Azure services from a denial of service attack using Azure DDoS Protection.
