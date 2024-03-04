@@ -12,7 +12,7 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "What does Retrieval Augmented Generation (RAG) refer to in the context of language model application?"
+  - content: "What does Retrieval Augmented Generation (RAG) refer to in the context of a language model application?"
     choices:
     - content: "RAG helps you fine-tune a language model."
       isCorrect: false
