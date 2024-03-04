@@ -9,7 +9,7 @@ You can choose to use a GitHub codespace that hosts the exercise, or complete th
 
 To use a **codespace**, create a preconfigured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-docker%2Fdevcontainer.json).
 
-GitHub takes several minutes to create and configure the codespace. When it's finished, you see the code files for the exercise. The code that's used for the remainder of this module is in the **/dotnet-docker** directory.
+GitHub takes several minutes to create and configure the codespace. When the process completes, you see the code files for the exercise. The code used for the remainder of this module is in the **/dotnet-docker** directory.
 
 To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative) repository to your own GitHub account. Then:
 
@@ -19,7 +19,7 @@ To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslear
 
 ## Use .NET publish to create the Products back-end image
 
-The latest .NET 8 release has improved support for containerization. You can use the `dotnet publish` command to create a Docker image for your microservices. The command creates a rootless container image. This means the services run under an `app` account. This is great for security and performance. The command knows how to pick the best base image by checking the settings in the project file.
+The latest .NET 8 release improves support for containerization. You can use the `dotnet publish` command to create a Docker image for your microservices. The command creates a rootless container image that runs services under an `app` account. Running rootless containers is great for security and performance. The command knows how to pick the best base image by checking the settings in the project file.
 
 1. To create the images for all the **:::no-loc text="eShopLite":::** services, go to the **TERMINAL** tab and run this command:
 
@@ -28,7 +28,7 @@ The latest .NET 8 release has improved support for containerization. You can use
   	dotnet publish /p:PublishProfile=DefaultContainer
   	```
 
-    You'll see output like this:
+    You see output like the following messages:
 
     ```console
     DataEntities -> /workspaces/mslearn-dotnet-cloudnative/dotnet-docker/DataEntities/bin/Release/net8.0/publish/
@@ -42,7 +42,7 @@ The latest .NET 8 release has improved support for containerization. You can use
     Pushed image 'products:latest' to local registry via 'docker'.
     ```
 
-    The command has read the solution file, determined it contains three projects, built them, and created images for the store and products projects. The images are named after the projects and published into the local docker registry.
+    The command reads the solution file, determined it contains three projects, built them, and created images for the store and products projects. The images are named after the projects and published into the local docker registry.
 
 1. Check the images are available in docker:
 
@@ -50,7 +50,7 @@ The latest .NET 8 release has improved support for containerization. You can use
     docker images
     ```
     
-    You'll see output like this:
+    You see output like the following messages:
 
     ```console
     REPOSITORY                          TAG       IMAGE ID       CREATED              SIZE
@@ -87,7 +87,6 @@ If you want more control of how the images are built, you can use a Dockerfile t
 1. Directly below the last line, enter this code:
 
     ```dockerfile
-
   	WORKDIR /src
   	COPY Products/Products.csproj .
   	RUN dotnet restore
@@ -102,11 +101,10 @@ If you want more control of how the images are built, you can use a Dockerfile t
       - Call `dotnet restore` on the project.
       - Copy everything in the local **Products** directory to the image.
       - Call `dotnet publish` on the project.
-	
+
 1. Directly below the last line, enter this code:
 
     ```dockerfile
-
   	FROM mcr.microsoft.com/dotnet/aspnet:8.0
   	WORKDIR /app
   	EXPOSE 80
@@ -138,7 +136,7 @@ Having completed the Dockerfile, the next step is to use it to create a Docker i
 
 1. After much output, the image will be built. Entering `docker images` shows you a list of all images in your codespace including **productsbackend**. The other image is the one for the codespace itself.
 
-    You'll see output like this:
+    You see output like the following messages:
 
     ```console
     REPOSITORY                          TAG       IMAGE ID       CREATED              SIZE

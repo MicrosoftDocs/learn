@@ -7,9 +7,9 @@ In order for Kubernetes to create a container image, it needs a place from which
 
 You can choose to use a GitHub codespace that hosts the exercise, or complete the exercise locally in Visual Studio Code.
 
-To use a **codespace** create a pre-configured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-kubernetes%2Fdevcontainer.json).
+To use a **codespace**, create a preconfigured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-kubernetes%2Fdevcontainer.json).
 
-This takes several minutes while GitHub creates and configures the codespace. Once finished, you will see the code files for the exercise. The code used for the rest of this module is in the **/dotnet-kubernetes** directory.
+The process takes several minutes while GitHub creates and configures the codespace. Once finished, the code used for the rest of this module is in the **/dotnet-kubernetes** directory.
 
 To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative) repository to your own GitHub account. Then open the folder in Visual Studio Code:
 
@@ -74,7 +74,7 @@ docker login
     docker push [YOUR DOCKER USER NAME]/productservice
     ```
 
-    If you receive an authentication error you can run `docker logout` followed by `docker login` to re-authenticate.
+    If you receive an authentication error, you can run `docker logout` followed by `docker login` to reauthenticate.
 
 In this exercise, you used Dockerfiles and docker compose to create two Docker images and containers, and pushed those images to Docker Hub.
 

@@ -21,7 +21,7 @@ We need to install both the **kubectl** tool and the **k3d** Kubernetes implemen
     curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.28/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
     ```
 
-    If you receive an error that the directory already exists, simply run the `curl` command separately.
+    If you receive an error that the directory already exists, run the `curl` command separately.
 
 1. Add the Kubernetes repository to your **apt** configuration:
 
@@ -93,9 +93,9 @@ You can create a file manage container deployment into Kubernetes with a YAML fi
 
 This file does a couple of things.
 
-The first portion defines a deployment spec for the container to be deployed into Kubernetes. It specifies one replica, where to find the container image, which ports to open on the container, and sets some environment variables. This first portion also defines labels and names that the container and spec can be referenced by.
+The first portion defines a deployment spec for the container to be deployed into Kubernetes. It specifies one replica, where to find the container image, which ports to open on the container, and sets some environment variables. This first portion also defines labels and names that can be used to reference the container and spec.
 
-The second portion then defines that the container runs as a Kubernetes NodePort service. For this module, you don't need to understand all of the specifics of NodePorts, but you should know that this type of service exposes an external IP address so we can test the service from outside the cluster. 
+The second portion then defines that the container runs as a Kubernetes NodePort service. For this module, you don't need to understand all of the specifics of NodePorts. However, you should know that this type of service exposes an external IP address so you can test the service from outside the cluster. 
 
 ## Deploy and run the backend microservice
 
@@ -114,9 +114,9 @@ Next, let's deploy and run the microservice.
     kubectl get pods
     ```
 
-    In the resulting output, you'll have a row with **productsbackend** followed by a string of random characters under the **NAME** column. When everything is ready, there will be a **1/1** under the **READY** column and **Running** under the **STATUS** column.
+    In the resulting output, you have a row with **productsbackend** followed by a string of random characters under the **NAME** column. When everything is ready, there's a **1/1** under the **READY** column and **Running** under the **STATUS** column.
 
-1. To test the service, switch to the **PORTS** tab, then to the right of the local address for the **Back End** port, select the globe icon. The browser opens a new tab at that address.
+1. To test the service, switch to the **PORTS** tab, near the local address for the **Back End** port, select the globe icon. The browser opens a new tab at that address.
 1. To query some products, append the address with **/api/product** and then press <kbd>Enter</kbd>. You should see some product information listed in JSON format.
 
     ```json
@@ -198,7 +198,7 @@ Much like the backend service, we need a deployment file for the frontend as wel
     Notice this file is similar to the one we created for the backend microservice. There are two differences:
 
     - We're specifying a different container to run under the deployment's `spec.template.spec.containers.image` value.
-    - There's a new environment variable under the `spec.template.spec.containers.env` section. The code in the **storefrontend** application calls the backend, but because we did not specify a fully qualified domain name (FQDN), nor will we know the IP address of the backend microservice, we use the name we specified under the `metadata.name` node of the `Deployment`. Kubernetes will then take care of the rest.
+    - There's a new environment variable under the `spec.template.spec.containers.env` section. The code in the **storefrontend** application calls the backend, but because we didn't specify a fully qualified domain name (FQDN), we don't know the IP address of the backend microservice, we use the name we specified under the `metadata.name` node of the `Deployment`. Kubernetes takes care of the rest.
 
 1. Deploy the container to Kubernetes with the following command:
 

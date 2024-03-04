@@ -1,4 +1,4 @@
-In this unit, you'll complete the following tasks:
+In this exercise, you'll complete the following tasks:
 
 - Enhance the existing GitHub action to include a deployment job.
 - Verify that the changes deploy to the Azure Kubernetes Service (AKS) cluster.
@@ -6,10 +6,10 @@ In this unit, you'll complete the following tasks:
 
 ## Update the Kubernetes manifest for the product service
 
-To deploy new versions of the eShop product service, you'll need to edit the **product.yml** file to point at the ACR you used in the previous unit.
+To deploy new versions of the eShop product service, edit the **product.yml** file to point at the Azure Container Registry (ACR) you used in the previous unit.
 
-1. In your forked repository, on the **:::no-loc text="code tab":::**, select the **:::no-loc text="product.yml":::** file.
-1. Select the edit icon (pencil) to edit the file.
+1. In your forked repository, select the **:::no-loc text="code tab":::**, then select the *:::no-loc text="product.yml":::* file.
+1. To edit the file, select the edit icon (pencil).
 1. Edit the line:
 
     ```yml
@@ -36,8 +36,8 @@ Has one step that deploys new images. Here's the steps in an `ubuntu-latest` run
 Complete the following steps to create a GitHub action that deploys the coupon service:
 
 1. In your forked repository, on the **:::no-loc text="code tab":::**, select the **:::no-loc text=".github/workflows":::** tab.
-1. Select **:::no-loc text="azure-kubernetes-service.yml":::**.
-1. Select the edit icon (pencil) to edit the file.
+1. Select *:::no-loc text="azure-kubernetes-service.yml":::*.
+1. To edit the file, select the edit icon (pencil).
 1. At the bottom of the file, paste the following YAML code into the editor:
 
     ```yaml
@@ -86,18 +86,18 @@ Complete the following steps to create a GitHub action that deploys the coupon s
     
     ```
 
-1. In the top right, select **Commit changes...**, then, in the dialog, select **Commit changes**.
+1. In the top right, select **Commit changes...**, then in the dialog select **Commit changes**.
 
 ## Trigger a deployment
 
-Updating the **:::no-loc text="azure-kubernetes-service.yml":::** file and committing the changes automatically triggers another deployment. You'll now make a code change to trigger another deployment.
+Updating the **:::no-loc text="azure-kubernetes-service.yml":::** file and committing the changes automatically triggers another deployment. Now see how making a code change triggers another deployment.
 
 You have a new product your marketing team would like to add to the catalog.
 
 1. In your forked repository, on the **:::no-loc text="code tab":::**, select the **:::no-loc text="Products":::** folder.
 1. Select the **:::no-loc text="Data":::** folder.
 1. Select the **:::no-loc text="ProductDataContext.c":::** file.
-1. Select the edit icon (pencil) to edit the file.
+1. To edit the file, select the edit icon (pencil).
 1. At the bottom of the file, add a new product to the **products** array:
 
     ```csharp

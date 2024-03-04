@@ -1,8 +1,8 @@
-In this exercise, you'll classify the sensitive data types in a sample **:::no-loc text="eShopLite":::** application. 
+In this exercise, you classify the sensitive data types in a sample **:::no-loc text="eShopLite":::** application. 
 
 The app is in active development and currently has two data classes, **:::no-loc text="Product":::** and **:::no-loc text="Order":::**. They're building out the ordering process and want you to add the code to classify data types.
 
-In this exercise, you'll:
+In this exercise, see how to:
 
 * Explore the current app and its data types.
 * Add the code to classify the data types.
@@ -14,7 +14,7 @@ You can choose to use a GitHub codespace that hosts the exercise, or complete th
 
 To use a **codespace**, create a preconfigured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-compliance%2Fdevcontainer.json).
 
-GitHub takes several minutes to create and configure the codespace. When it's finished, you see the code files for the exercise. The code that's used for the remainder of this module is in the **/dotnet-compliance** directory.
+GitHub takes several minutes to create and configure the codespace. When the process completes, you see the code files for the exercise. The code to use for the remainder of this module is in the **/dotnet-compliance** directory.
 
 To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative) repository to your own GitHub account. Then:
 
@@ -54,7 +54,7 @@ To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslear
 
 ## Create taxonomies and attributes
 
-In this task, you'll add the code to create two new taxonomies. Then you'll annotate the **:::no-loc text="Product":::** and **:::no-loc text="Order":::** data types with the appropriate attributes.
+In this task, add code to create two new taxonomies. Then annotate the **:::no-loc text="Product":::** and **:::no-loc text="Order":::** data types with the appropriate attributes.
 
 1. In the **TERMINAL** tab, move to the **:::no-loc text="eShopLite/DataEntities":::** folder:
 
