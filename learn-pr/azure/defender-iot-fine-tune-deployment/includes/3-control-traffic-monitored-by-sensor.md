@@ -1,8 +1,9 @@
 <!-- where should this unit go, here or after the fine tune exercise?-->
 <!-- also re read and make adjustments, also where will the items needed in the exercise unit be explained? THey should be here somewhere in the doc. -->
 
-To complete the fine tuning and calibration of the sensors, Microsoft Defender for IoT now enters a *Learning* mode. Defender for IoT builds a baseline of alerts to help it learn which type of alerts are important or critical and which are less. Over a limited time period, Defender for IoT learns to automatically recognize alerts that can affect the security of your devices. At the end of this period, Defender for IoT enters the regular *operational* mode.
+intro - this should be the plan unit for fine tune ex.
 
+<!-->
 ## OT sensor deployment path
 
 The following diagram shows the complete OT deployment path, with the team responsible for each phase:
@@ -14,7 +15,7 @@ This module describes the sixth phase in the deployment: *Baseline learning ends
 The OT baseline learning is the phase where Defender for IoT enters the Learning mode. Defender for IoT learns which types of alerts are important and critical, and which are lower level alerts that can be filtered out. You review the alerts after Defender for IoT generates them and adjust their status when needed. After a limited period Defender for IoT moves from *Learning* mode and into *operational* mode.  
 
 During this time Defender for IoT analyzes the flow of data and generates different types of alerts to warn of security problems. You must look over these alerts and confirm or dismiss them appropriately. As Defender for IoT processes more alerts and applies your inputs, it learns which are proper alerts and which are either less important or aren't actually alerts at all. Over a period of weeks Defender for IoT reaches a mature stage and doesn't need regular assessment, and then ends the *Learning* mode and moves to the *operational* mode.  
-
+-->
 ## The Learning mode
 
 The *learning* mode is the important, initial stage for Defender for IoT to understand which activities are normal and regular and which aren't. During this period, your OT sensor learns to identify normal network activity, including the devices and protocols in your network and the regular file transfers that occur between specific devices. At the same time the sensor is producing a set of alerts for suspicious traffic. These alerts form the baseline of OT alerts for tracking activity when the system moves to the *operation* mode.

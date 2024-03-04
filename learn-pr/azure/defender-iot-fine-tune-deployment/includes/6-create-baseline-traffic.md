@@ -20,11 +20,11 @@ either be analyzed in a map view or the event timeline view.
 
 The Map View shows the source and destination devices for an alert as well as other devices connected to your sensor. For example:
 
-:::image type="content" source="../media/5-map-view.png" alt-text="Screenshot of the Map View tab on an alert details page":::
+:::image type="content" source="../media/6-map-view.png" alt-text="Screenshot of the Map View tab on an alert details page":::
 
 The Event Timeline View shows the alert event together in a list with other recent activity that occurred on the device before and after the alert was detected. This gives you a better insight into what was happening on the network before and after this alert occurred. Seeing the list of events might help you identify the cause of the alert, or understand that there is nothing problematic in this case. For example:
 
-:::image type="content" source="../media/5-event-timeline-alert-sensor.png" alt-text="Screenshot of an event timeline on an alert details page":::
+:::image type="content" source="../media/6-event-timeline-alert-sensor.png" alt-text="Screenshot of an event timeline on an alert details page":::
 -->
 
 ### Update alerts
