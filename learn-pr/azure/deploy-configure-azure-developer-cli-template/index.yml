@@ -29,8 +29,6 @@ roles:
   - solution-architect
 products:
   - azure-clis
-subjects:
-- development-tools
 units:
 - learn.azure.deploy-configure-azure-developer-cli-templates.introduction
 - learn.azure.deploy-configure-azure-developer-cli-templates.install-azure-developer-cli
