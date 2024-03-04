@@ -15,12 +15,15 @@ title: Manage authentication by using Microsoft Entra ID
 summary: This module is designed to provide administrators with the knowledge and skills needed to manage authentication effectively using Microsoft Entra ID, ensuring secure access to resources and enhancing user experience.
 abstract: |
   By the end of this module, participants are able to:
+
   -   Implement multifactor and passwordless authentication for enhanced security and convenience.
+
   -   Enforce password protection measures and single sign-on for simplified, secure access.
+
   -   Integrate SSO with identity providers and endorse modern authentication protocols.
+
   -   Set up Microsoft Entra Verified ID for trusted identity verification.
-prerequisites: |
-  -   None
+prerequisites: '-   None'
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
