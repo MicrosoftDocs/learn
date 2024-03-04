@@ -41,7 +41,7 @@ products:
 subjects:
 - cloud-computing
 - device-management
-- business-continuity
+- site-reliability-engineering
 units:
 - learn.intro-to-azure-service-health.introduction
 - learn.intro-to-azure-service-health.what-is-azure-service-health
