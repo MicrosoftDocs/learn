@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/19/2024
+  ms.date: 03/04/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
@@ -18,10 +18,10 @@ quiz:
     choices:
     - content: "Deployments allow for more resource allocation to each pod"
       isCorrect: false
-      explanation: "Incorrect. Deployments do not allocate more resources to each pod, but rather manage a group of identical pods."
+      explanation: "Incorrect. Deployments don't allocate more resources to each pod, but rather manage a group of identical pods."
     - content: "Deployments provide higher security for the pods"
       isCorrect: false
-      explanation: "Incorrect. Deployments do not provide higher security for the pods, but rather ensure high availability and redundancy."
+      explanation: "Incorrect. Deployments don't provide higher security for the pods, but rather ensure high availability and redundancy."
     - content: "Deployments enable automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
       isCorrect: true
       explanation: "Correct. Deployments enable automation and validation of the creation and teardown of environments, which helps deliver secure and stable application hosting platforms by ensuring high availability and redundancy."
@@ -43,7 +43,7 @@ quiz:
       explanation: "Incorrect. A custom storage class is created before creating a persistent volume claim."
     - content: "To list the content of a directory in the AKS cluster"
       isCorrect: false
-      explanation: "Incorrect. Listing the content of a directory is not related to creating a custom storage class."
+      explanation: "Incorrect. Listing the content of a directory isn't related to creating a custom storage class."
     - content: "To define the properties of a persistent volume that will be used by a persistent volume claim"
       isCorrect: true
       explanation: "Correct. A custom storage class defines the properties of a persistent volume that will be used by a persistent volume claim, such as the storage class name, the provisioner, and the reclaim policy."
@@ -51,10 +51,10 @@ quiz:
     choices:
     - content: "Use only Azure Premium SSD v2 for applications that require consistently low latency, high I/O operations per second (IOPS), and high throughput."
       isCorrect: false
-      explanation: "Incorrect. Azure Premium SSD v2 is one of the options for block level access to data, but it is not the only option."
+      explanation: "Incorrect. Azure Premium SSD v2 is one of the options for block level access to data, but it isn't the only option."
     - content: "Use only Azure NetApp Files for shared application data that requires high performance."
       isCorrect: false
-      explanation: "Incorrect. Azure NetApp Files is one of the options for file level access to data, but it is not the only option."
+      explanation: "Incorrect. Azure NetApp Files is one of the options for file level access to data, but it isn't the only option."
     - content: "Choose from platform managed databases, disks, and file and blob storage."
       isCorrect: true
       explanation: "Correct. AKS supports both stateless and stateful workloads. To accommodate this requirement, you can apply a range of native Azure services, including managed databases, disks, and file and blob storage. Each of these options offers different SKUs, sizes, and performance characteristics."
