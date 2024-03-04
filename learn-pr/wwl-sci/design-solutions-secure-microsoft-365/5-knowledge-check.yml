@@ -30,13 +30,13 @@ quiz:
       choices:
         - content: "It provides protection against malware and viruses in Office 365 email and documents."
           isCorrect: true
-          explanation: "Microsoft Defender for Office 365 provides protection against malware and viruses in Office 365 email and documents."
+          explanation: "Microsoft Defender for Collaboration provides protection against malware and viruses in Office 365 email and documents."
         - content: "It protects against physical security threats to the Office 365 infrastructure."
           isCorrect: false
           explanation: "Physical security threats to the Office 365 infrastructure are not within the scope of Microsoft Defender for Office 365."
         - content: "It ensures compliance with industry-specific regulations for Office 365 data."
           isCorrect: false
-          explanation: "While compliance is important, Microsoft Defender for Office 365 is not specifically focused on ensuring compliance with industry-specific regulations for Office 365 data."
+          explanation: "While compliance is important, Microsoft Defender for Collaboration is not specifically focused on ensuring compliance with industry-specific regulations for Office 365 data."
         - content: "It provides endpoint protection for devices outside of the organization's network."
           isCorrect: false
           explanation: "Endpoint protection for devices outside of the organization's network is not within the scope of Microsoft Defender for Office 365."
@@ -59,13 +59,13 @@ quiz:
       choices:
       - content: "An email filtering solution that protects against phishing and malware."
         isCorrect: false
-        explanation: "Microsoft Defender for Office 365 is the email filtering solution that protects against phishing and malware. Microsoft Defender XDR is a suite of services that includes Microsoft Defender for Office 365 as well as other products for endpoint, identity, and application protection."
+        explanation: "Microsoft Defender for Collaboration is the email filtering solution that protects against phishing and malware. Microsoft Defender XDR is a suite of services that includes Microsoft Defender for Collaboration as well as other products for endpoint, identity, and application protection."
       - content: "A suite of services that provides protection for endpoint, identity, and application."
         isCorrect: true
-        explanation: "Microsoft Defender XDR is a suite of services that includes Microsoft Defender for Office 365 as well as other products for endpoint, identity, and application protection."
+        explanation: "Microsoft Defender XDR is a suite of services that includes Microsoft Defender for Collaboration as well as other products for endpoint, identity, and application protection."
       - content: "A service that provides advanced threat protection for Microsoft 365 workloads."
         isCorrect: false
-        explanation: "Microsoft Defender for Office 365 is the service that provides advanced threat protection for Microsoft 365 workloads. Microsoft Defender XDR is a suite of services that includes Microsoft Defender for Office 365 as well as other products for endpoint, identity, and application protection."
+        explanation: "Microsoft Defender for Collaboration is the service that provides advanced threat protection for Microsoft 365 workloads. Microsoft Defender XDR is a suite of services that includes Microsoft Defender for Collaboration as well as other products for endpoint, identity, and application protection."
       - content: "A security posture assessment tool for Microsoft 365 environments."
         isCorrect: false
         explanation: "Microsoft Defender XDR is not a security posture assessment tool, but rather a suite of services that includes products for endpoint, identity, and application protection."

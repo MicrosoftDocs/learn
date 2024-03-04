@@ -21,7 +21,7 @@ prerequisites: |
   - Knowledge of operational technology (OT) networks and networking concepts at an intermediate level 
   - Familiarity with the Purdue networking model, like the device types that are included in each networking level
   - Knowledge of what Azure roles and role-based access controls (RBAC) are and how they work at a beginner level
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/defender-for-iot/defender-iot-plan-deployment.svg
 levels: 
   - intermediate
 roles: 
