@@ -29,7 +29,7 @@
 
 ### All other yml files
 - [X] *uid* is set and matches index.yml
-- [] *title* is set
+- [X] *title* is set
 - [X] *ms.date* is set 
 - [X] *author* and *ms.author* are set
 - [X] *durationInMinutes* is set and IS ACCURATE
