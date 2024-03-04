@@ -5,8 +5,8 @@ metadata:
   description: "Learn how to use an Azure Document Intelligence solution as a custom skill to enrich content in an Azure AI Search pipeline."
   ms.date: 02/06/2024
   author: wwlpublish
-  ms.author: berryivor
-  ms.topic: module
+  ms.author: rcaper
+  ms.topic: module-standard-task-based
   ms.service: azure
 title: Build a Document Intelligence custom skill for Azure AI Search
 summary: Learn how to use an Azure Document Intelligence solution as a custom skill to enrich content in an Azure AI Search pipeline.

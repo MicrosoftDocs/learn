@@ -1,4 +1,4 @@
-Microsoft Defender for Cloud monitors the status of antimalware protection for your virtual machines (VMs). Defender for Cloud notes issues, such as detected threats and insufficient protection, that might make your VMs and computers vulnerable to malware threats. By using the information on **Endpoint protection issues**, you can make a plan to address any identified issues.
+Microsoft Defender for Cloud monitors the status of antimalware protection for your virtual machines (VMs). Defender for Cloud notes issues, such as detected threats and insufficient protection that might make your VMs and computers vulnerable to malware threats. By using the information on **Endpoint protection issues**, you can make a plan to address any identified issues.
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
@@ -10,9 +10,11 @@ Microsoft Defender for Cloud monitors the status of antimalware protection for y
 
 Defender for Cloud reports the following endpoint protection issues:
 
-- **Endpoint protection should be installed on your machines** - A supported antimalware solution isn't installed on these Azure VMs.
+- **Endpoint protection should be installed on your machines**
 
-- **Endpoint protection health issues on machines should be resolved**:
+  - A supported antimalware solution isn't installed on these Azure VMs.
+
+- **Endpoint protection health issues on machines should be resolved**
 
   - *Signature out of date*. An antimalware solution is installed on these VMs and computers, but the solution doesn't have the latest antimalware signatures.
 
@@ -24,17 +26,17 @@ Defender for Cloud reports the following endpoint protection issues:
 
 For VMs that are vulnerable, Defender for Cloud offers to resolve the issue and install malware protection onto the unprotected VMs.
 
-:::image type="content" source="../media/5-defender-for-cloud-endpoint-protection-fix.png" alt-text="Screenshot that shows the option to fix an unprotected VM.":::
+:::image type="content" source="../media/5-defender-for-cloud-endpoint-protection-fix.png" alt-text="Screenshot that shows the option to fix unprotected VMs.":::
 
 However, you can also install this protection yourself. Let's examine those steps.
 
 ## Install Antimalware in a new VM
 
-**Microsoft Antimalware** is available as an extension that you can add to existing VMs, or include as part of the creation of a new VM. You can use the Azure portal, Azure CLI / PowerShell, or ARM template to add the extension.
+**Microsoft Antimalware** is available as an extension that you can add to existing VMs, or include as part of the creation of a new virtual machine (VM). You can use the Azure portal, Azure CLI / PowerShell, or ARM template to add the extension.
 
 Let's use the Azure portal to create a new VM, and install the extension.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) with the same account and subscription you used in the previous exercise. We'll reuse the same resource group so we can delete both VMs at the same time.
+1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) with the same account and subscription you used in the previous exercise. We reuse the same resource group so we can delete both VMs at the same time.
 
 1. On the Azure portal menu or the **home** page, select **Create a resource**. The **Create a resource** pane displays.
 
@@ -51,8 +53,8 @@ Let's use the Azure portal to create a new VM, and install the extension.
     | Virtual machine name | Enter a VM name, such as *testvm1*.|
     | Region | Select a location closest to you from the dropdown list. |
     | **Administrator account** |
-    | Username | Select a valid username you'll remember. |
-    | Password | Select a valid password you'll remember. |
+    | Username | Select a valid username that you can remember. |
+    | Password | Select a valid password that you can remember. |
 
     ![Screenshot showing the Basic tab for VM creation.](../media/7-create-vm.png)
 
@@ -68,12 +70,13 @@ Let's use the Azure portal to create a new VM, and install the extension.
 
     ![Screenshot showing the Advanced tab with Microsoft malware extension installed.](../media/7-install-ms-malware2.png)
 
-1. Next, select the **Management** tab. This is where you can configure the monitoring capabilities for Microsoft Defender for Cloud:
-    - Detailed monitoring you can view in Azure Monitor.
-    - Boot diagnostics
-    - OS guest diagnostics
+1. Next, select the **Management** tab and configure the monitoring capabilities for Microsoft Defender for Cloud.
 
-    If any of these options are selected, the VM will need an Azure Storage account to write the log data.
+    - Detailed monitoring you can view in Azure Monitor.
+    - Boot diagnostics.
+    - OS guest diagnostics.
+
+    If any of these options are selected, the VM needs an Azure Storage account in which to write the log data.
 
 1. Select **Review + create**, verify the settings, and when validation passes, select **Create** to deploy the new VM.
 
@@ -81,13 +84,13 @@ Deploying the VM takes a few minutes to complete. You can monitor the deployment
 
 ## Add the extension to an existing VM
 
-You can also add the antimalware extension to an existing VM after it's deployed. You can use command-line tools, so it can be scripted. You can also use the REST APIs or the Azure portal. Here are the steps to use for the portal:
+You can also add the antimalware extension after an existing VM is deployed. You can use command-line tools, so it can be scripted. You can also use the REST APIs or the Azure portal. Here are the steps to use for the portal:
 
 1. Select the VM onto which you want to install the extension.
 
 1. In the left menu pane, under **Settings**, select **Extensions + applications**.
 
-    :::image type="content" source="../media/5-virtual-machine-add-extension.png" alt-text="Screenshot that shows the Add Extensions option selected.":::
+    :::image type="content" source="../media/5-virtual-machine-add-extension.png" alt-text="Screenshot that shows the 'Add Extensions' option selected.":::
 
 1. Select **Add**.
 
