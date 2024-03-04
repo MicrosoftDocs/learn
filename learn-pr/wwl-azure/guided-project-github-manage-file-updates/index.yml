@@ -28,8 +28,6 @@ roles:
 - developer
 products:
 - azure
-subjects:
-- development-tools
 units:
 - learn.wwl.guided-project-github-manage-file-updates.introduction
 - learn.wwl.guided-project-github-manage-file-updates.prepare

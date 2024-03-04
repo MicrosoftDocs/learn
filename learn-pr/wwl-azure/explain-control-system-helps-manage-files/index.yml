@@ -23,8 +23,6 @@ roles:
 - developer
 products:
 - azure
-subjects:
-- development-tools
 units:
 - learn.wwl.explain-control-system-helps-manage-files.introduction
 - learn.wwl.explain-control-system-helps-manage-files.describe-version-control-source-control
