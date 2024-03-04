@@ -10,7 +10,7 @@ Use the `targetScope` keyword to tell Bicep that the resources in the file are f
 
 Notice that you're telling Bicep to deploy the resources at the scope of a management group, but you're not specifying *which* management group. When you deploy the template, you tell Bicep exactly which management group you want to deploy the resources to. The Azure CLI and Azure PowerShell cmdlets provide arguments to specify this information.
 
-You can set the `targetScope` to `resourceGroup`, `subscription`, `managementGroup`, or `tenant`. If you don't specify a `targetScope`, Bicep assumes the `resourceGroup` scope and deploys files to a resource group.
+You can set the `targetScope` for your file to `resourceGroup`, `subscription`, `managementGroup`, or `tenant`. If you don't specify a target scope, Bicep assumes the `resourceGroup` scope.
 
 ## Create resource groups
 
