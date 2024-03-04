@@ -6,7 +6,7 @@ metadata:
   ms.date: 02/13/2024
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: data-factory
 title: Orchestrate data movement and transformation in Azure Data Factory or Azure Synapse Pipeline
 summary: In this module, you will learn how Azure Data Factory can orchestrate large scale data movement by using other Azure Data Platform and Machine Learning technologies.
