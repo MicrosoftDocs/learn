@@ -3,34 +3,38 @@ First section will be the plan unit - what you need to know and get ready, 2nd w
 # Fine tuning
 
 <https://youtu.be/iwEAHiN6BOI?si=xUeeL_LF2T-9zjc5&t=1544>
-Your sensor is now sending data to Microsoft Defender for IoT, but we need to check that the sensors are recognized, set up and configured correctly. The sensor initially scans the entire network and tries to identify where all of the devices should be located within the Perdue levels.
+Your sensor is now sending data to Microsoft Defender for IoT, but we need to check that the sensors are recognized, set up and configured correctly. The sensor initially scans the entire network and tries to identify where all of the devices should be located within the Purdue levels.
 
 ## View the subnets detected by your sensor
 <!-- Qus: what exactly is a subnet? 
-What is the difference between the Jenkins sensor page and the D4IoT sensor page? do they control different things? They both show interfaces and subnets and a device inventory, how are they different if at all?
+What is the difference between the Jenkins sensor page and the D4IoT sensor page? do they control different things? They both show interfaces and subnets and a device inventory, how are they different if at all? - no real difference, MS want the D4Iot to be better than the sensor, so it should show more things and give better control.
 what defines a device as authorised? or not? 
 device properties - how does that relate to making changes?-->
 
-First you analyze the traffic being monitored. Run the **Analyze** feature in the deployment section. <!-- does the analysis really have to be run the first time or is this device map produced automatically? I think it is automatic.-->
+First you analyze the traffic being monitored. Run the **Analyze** feature in the deployment section.
 
-This tracks each interface that is monitored by the sensor and lists the subnets associated with each interface. When the analysis has completed, you need to check that each interface is monitoring the correct traffic.
+This tracks each interface that is monitored by the sensor and lists the subnets associated with each interface. When the analysis is complete, you need to check that each interface is monitoring the correct traffic.
 
+<!-- example of changing interfaces and sensor location -->
 ## Modify subnet data to match your network
 
-Subnets are also analyzed by the OT sensor. A subnet is a group of devices or interfaces that have a specific purpose or area, for example all of the printers in the main offices, all of the lights in the manufacturing level, all heating systems in the administrative rooms. Each subnet is assigned its own ideintifcation code/ address.
+Subnets are also analyzed by the OT sensor. A subnet is a group of devices or interfaces that have a specific purpose or are located in a specific area, for example all of the printers in the main offices, all of the lights in the manufacturing level, all heating systems in the administrative rooms. Each subnet is assigned its own identifcation code/ address.
 
-The sensor analyzes your system and assigns subnet settings and attemps to understand the architecture of your system and fit it into the purdue model set up. In some cases, the device map produced needs to be corrected, and you must ensure that each device is associated with the appropriate subnet and has the correct IP address.
+The sensor analyzes your system and assigns subnet settings and attemps to understand the architecture of your system and fit it into the Purdue model set up. In some cases, the device map produced needs to be corrected. You will need to change any device settings that are associated with the wrong subnet and ensure that they have the correct IP address.
 
-<!-- In this section https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-control-what-traffic-is-monitored#fine-tune-your-subnet-list  why is one an Azure device, but the map isnt? Also what is the meaning of the tip in this section? how is this different from the stuff above the tip? What is the difference between the (Jenkins) sensor screen device mapa nd inventory and the Azure D4IoT Device Inventory?? there is no difference, but there are better features in Azure for dealing weith multiple sensors than on individual sensor itself-->
+In the device inventory you can view the subnets grouped as either *local* or *routed*. All of the devices connected to a listed subnet are called *local* devices, while the devices connected to unlisted subnets are called *routed*.
 
-<!--updating the subnets listed, where do they find this data? -->
+<!-- In this section https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-control-what-traffic-is-monitored#fine-tune-your-subnet-list  why is one an Azure device, but the map isnt? - should change to either Azure device map or device inventory. Also what is the meaning of the tip in this section? how is this different from the stuff above the tip? -->
 
-There are several ways to update the subnet data. If you have a .CSV file with the data correctly organized, this can be uploaded. Any data will be overwritten. You could update an IP address or the subnet Mask. Redefining the ICS subnet can only be done manually, but is not discussed in this module!!(How to write this better?)
+<!--updating the subnets listed, where do they find this data? they should have it from the original network map!?-->
+
+There are several ways to update the subnet data. If you have a .CSV file with the data correctly organized, this can be uploaded. Any data will be overwritten. You could update an IP address or the subnet Mask.
 
 In some cases, you need to adjust the subnet settings. This may involve changing subnet addresses which will change the location of a device within the device map created by the sensor.
+<!-- give example here? or uploading csv file-->
 
 Once any changes are made, the analysis should be run again to ensure the set up is now correct.  
-<!--<https://learn.microsoft.com/azure/defender-for-iot/organizations/how-to-control-what-traffic-is-monitored>-->
+
  In the Subnets page, reached from the Azure portal by selecting **System settings > Basic > Subnets**, you can update the subnets listed using the following options:
 <!-- I have removed the extra options that are not relevant for changing data, but for other actions etc. 
 |**Export subnets**     |  Export the currently listed subnets to a .CSV file.       |
@@ -47,7 +51,6 @@ Once any changes are made, the analysis should be run again to ensure the set up
 |**Segregated**     |   Select to show this subnet separately when displaying the device map according to Purdue level.  |
 | **Remove subnet** | Select to remove any subnets that aren't related to your IoT/OT network scope.|
 
-<!--What is ICS subnet?? -->
 <!-- do we want to show changing a device?? or is that beyond the scope? must talk about this, but how much details??? change one ip setting? -->
 When all of the subnets are correctly set up, select **Save** to save the updates.
 
