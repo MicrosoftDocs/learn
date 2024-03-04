@@ -1,0 +1,66 @@
+### YamlMime:ModuleUnit
+uid: learn.build-blazor-todo-list.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge about event handling and data binding in Blazor.
+  ms.date: 1/26/2024
+  author: danroth27
+  ms.author: daroth
+  ms.manager: markl
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "How do you make a Blazor component interactive so that it can handle UI events?"
+    choices:
+    - content: "Apply an interactive render mode using the @rendermode directive."
+      isCorrect: true
+      explanation: "A Blazor component must use an interactive render mode to handle UI event."
+    - content: "Assign the component a route using the @page directive."
+      isCorrect: false
+      explanation: "Applying a route to a Blazor component doesn't make it interactive."
+    - content: "Add an event handler to the component, like @onclick."
+      isCorrect: false
+      explanation: "If a Blazor component doesn't use an interactive render mode, then event handlers are ignored."
+    - content: "Add a code block to the component using @code"
+      isCorrect: false
+      explanation: "You need to apply an interactive render mode to the component using @rendermode to make it interactive."
+  - content: "What happens to a component immediately after it handles a UI event?"
+    choices:
+    - content: "The component is rendered."
+      isCorrect: true
+      explanation: "A component that handles a UI event is automatically rendered."
+    - content: "The component is disposed."
+      isCorrect: false
+      explanation: "Components aren't disposed after handling events."
+    - content: "The component updates all data bindings."
+      isCorrect: false
+      explanation: "Each data binding is only updated based on a specific event from the UI element it's applied to."
+  - content: "What is data binding used for in Blazor?"
+    choices:
+    - content: "To persist the state of a component to a database."
+      isCorrect: false
+      explanation: "Data binding is used to bind the value of a UI element to a value in code, not to persist component state."
+    - content: "To bind the value of a UI element to a value in code."
+      isCorrect: true
+      explanation: "Data binding is used to bind the value of a UI element to a value in code."
+    - content: "To bind request data to a model object."
+      isCorrect: false
+      explanation: "Data binding is used to bind the value of a UI element to a value in code, not to handle request data."
+  - content: "Which of the following examples isn't a valid Razor directive?"
+    choices:
+    - content: "@bind"
+      isCorrect: false
+      explanation: "The @bind Razor directive is used for two-way data binding." 
+    - content: "@code"
+      isCorrect: false
+      explanation: "The @code Razor directive is used to add C# members to a component."
+    - content: "@page"
+      isCorrect: false
+      explanation: "The @page Razor directive is used to add routes to a component."
+    - content: "@currentCount"
+      isCorrect: true
+      explanation: "There's no @currentCount Razor directive - it's a rendered C# expression."

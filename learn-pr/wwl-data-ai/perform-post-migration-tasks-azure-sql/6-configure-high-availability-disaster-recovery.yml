@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.service: azure
 durationInMinutes: 8
 content: |
   [!include[](includes/6-configure-high-availability-disaster-recovery.md)]

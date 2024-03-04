@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-your-kernel.what-semantic-kernel
+title: What is semantic kernel
+metadata:
+  title: What is semantic kernel
+  description: "What is semantic kernel"
+  ms.date: 02/27/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-what-semantic-kernel.md)]

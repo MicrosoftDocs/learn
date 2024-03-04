@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/04/2023
+  ms.date: 01/31/2024
   author: wwlpublish
   ms.author: anrudduc
   ms.topic: unit
@@ -20,9 +20,9 @@ quiz:
     - content: "Notebooks can orchestrate the Copy Data activity and transformations."
       isCorrect: false
       explanation: "Incorrect. Pipelines use the Copy Data activity, but don't support transformations without a notebook or dataflow."
-    - content: "Notebooks offer a user-friendly, low-code experience for large datasets."
+    - content: "Notebooks offer a user-friendly, low-code experience for large semantic models."
       isCorrect: false
-      explanation: "Incorrect. Dataflows offer a UI experience, but they are not as performant as notebooks with large datasets."
+      explanation: "Incorrect. Dataflows offer a UI experience, but they are not as performant as notebooks with large semantic models."
   - content: "What is the purpose of V-Order and Optimize Write in Delta tables?"
     choices:
     - content: "V-Order and Optimize Write sorts the Delta table when queried with PySpark in a Fabric Notebook."

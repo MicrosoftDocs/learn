@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module
-  ms.prod: azure
+  ms.service: azure
 title: Embrace responsible AI principles and practices
 summary: This module is designed to help you adopt responsible AI practices. It offers an overview of the principles, governance system, and procedures followed at Microsoft, but we encourage you to develop your own AI strategy.
 abstract: |

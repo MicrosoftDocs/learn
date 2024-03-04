@@ -1,0 +1,29 @@
+### YamlMime:LearningPath
+uid: learn.wwl.migrate-modernize-explore-foundations-of-identity-governance
+metadata:
+  title: Modernize and explore the foundations of identity and governance for SAP on Azure
+  description: Modernize and explore the foundations of identity and governance for SAP on Azure
+  ms.date: 01/11/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: learning-path
+  ms.service: azure
+title: Modernize and explore the foundations of identity and governance for SAP on Azure
+prerequisites: |
+  Before taking this training, you should complete the Azure Administrator (AZ-104) or Azure Solutions Architect Expert (AZ-305) exam, and SAP HANA or NetWeaver training.
+summary: |
+  SAP professionals need to evaluate SAP solutions on Azure for identity services, remote management, and governance and manageability. These modules explore the identity and management for SAP workloads on Azure.
+iconUrl: /training/achievements/generic-trophy.svg
+hidden: true
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+modules:
+- learn.wwl.migrate-modernize-explore-identity-services
+- learn.wwl.migrate-modernize-explore-azure-governance-manageability
+trophy:
+  uid: learn.wwl.migrate-modernize-explore-foundations-of-identity-governance.trophy

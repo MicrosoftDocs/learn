@@ -39,6 +39,9 @@ When you use virtual network integration, you can use the following Azure networ
 
 Apps in App Service are hosted on worker roles. Virtual network integration works by mounting virtual interfaces to the worker roles with addresses in the delegated subnet. The virtual interfaces used aren't resources customers have direct access to. Because the from address is in your virtual network, it can access most things in or through your virtual network like a VM in your virtual network would.
 
+:::image type="content" source="../media/azure-application-service-integration-6188176d.png" alt-text="Digrams showing how Azure Application Service Integration works by mounting virtual interfaces to the worker roles with addresses in the delegated subnet.":::
+
+
 When virtual network integration is enabled, your app makes outbound calls through your virtual network. The outbound addresses that are listed in the app properties portal are the addresses still used by your app. However, if your outbound call is to a virtual machine or private endpoint in the integration virtual network or peered virtual network, the outbound address is an address from the integration subnet. The private IP assigned to an instance is exposed via the environment variable, WEBSITE\_PRIVATE\_IP.<br>
 
 When all traffic routing is enabled, all outbound traffic is sent into your virtual network. If all traffic routing isn't enabled, only private traffic (RFC1918) and service endpoints configured on the integration subnet is sent into the virtual network. Outbound traffic to the internet is routed directly from the app.<br>

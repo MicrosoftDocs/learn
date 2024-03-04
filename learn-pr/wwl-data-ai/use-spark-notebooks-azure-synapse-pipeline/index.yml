@@ -27,7 +27,7 @@ products:
 - azure-synapse-analytics
 subjects:
 - data-engineering
-- data-warehousing
+- data-storage
 units:
 - learn.wwl.use-spark-notebooks-azure-synapse-pipeline.introduction
 - learn.wwl.use-spark-notebooks-azure-synapse-pipeline.understand-notebooks-pipelines

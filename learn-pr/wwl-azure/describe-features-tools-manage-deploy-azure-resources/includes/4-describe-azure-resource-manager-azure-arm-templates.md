@@ -14,9 +14,9 @@ With Azure Resource Manager, you can:
  -  Apply tags to resources to logically organize all the resources in your subscription.
  -  Clarify your organization's billing by viewing costs for a group of resources that share the same tag.
 
-The following video provides an overview of how you can use different Azure tools with ARM to manage your environment:
+The following video provides an overview of Azure Resource Manager.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyvOc]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=d257e6ec-abab-47f4-a209-22049e7a40b4]
 
 ## Infrastructure as code
 
@@ -24,7 +24,7 @@ Infrastructure as code is a concept where you manage your infrastructure as line
 
 ### ARM templates
 
-By using ARM templates, you can describe the resources you want to use in a declarative JSON format. With an ARM template, the deployment code is verified before any code is run. This ensures that the resources will be created and connected correctly. The template then orchestrates the creation of those resources in parallel. That is, if you need 50 instances of the same resource, all 50 instances are created at the same time.<br>
+By using ARM templates, you can describe the resources you want to use in a declarative JSON format. With an ARM template, the deployment code is verified before any code is run. This ensures that the resources will be created and connected correctly. The template then orchestrates the creation of those resources in parallel. That is, if you need 50 instances of the same resource, all 50 instances are created at the same time.
 
 Ultimately, the developer, DevOps professional, or IT professional needs only to define the desired state and configuration of each resource in the ARM template, and the template does the rest. Templates can even execute PowerShell and Bash scripts before or after the resource has been set up.
 
