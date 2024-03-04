@@ -216,7 +216,7 @@ Now you've pushed the eShop images to the ACR, you need to update the AKS deploy
 
     This `kubectl` command deploys the eShop app, a front-end Blazor web app and back-end REST API product service, and an ingress rule to route traffic to the correct services to your AKS cluster. Rerun this command if you receive any error on deployments.
 
-   You should see oupout similar to this:
+   You should see output similar to this:
    ```console
    deployment.apps/storeimage created
    service/eshop-website created
