@@ -24,7 +24,7 @@ For example, imagine you have two documents with the following contents:
 - *"The children played joyfully in the park."*
 - *"Kids happily ran around the playground."*
 
-These two documents contain text that are semantically related, even though different words are used. By creating vector embeddings for the text in the documents, the relation between the words in the text can be mathematically calculated.
+These two documents contain texts that are semantically related, even though different words are used. By creating vector embeddings for the text in the documents, the relation between the words in the text can be mathematically calculated.
 
 Imagine the keywords being extracted from the document and plotted as a vector in a multidimensional space:
 
