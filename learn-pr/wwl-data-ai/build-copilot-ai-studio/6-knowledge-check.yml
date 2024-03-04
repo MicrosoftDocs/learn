@@ -12,36 +12,36 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "A flow uses an LLM tool to generate text with a GPT-3.5 model. What do you need to create to ensure prompt flow can securely call the deployed model from Azure Open AI?"
+  - content: "What does Retrieval Augmented Generation (RAG) refer to in the context of language model application?"
     choices:
-    - content: "Runtimes"
+    - content: "RAG helps you fine-tune a language model."
       isCorrect: false
-      explanation: "Incorrect. Runtimes provide the necessary compute to run the flow."
-    - content: "Connections"
+      explanation: "Incorrect. RAG doesn't fine-tune a language model."
+    - content: "RAG helps you to integrate a language model in a chat-based application."
+      isCorrect: false
+      explanation: "Incorrect. RAG's purpose isn't to integrate a language model."
+    - content: "RAG helps you ground your language model."
       isCorrect: true
-      explanation: "Correct. Create a connection to allow prompt flow to securely communicate with Azure Open AI."
-    - content: "Tools"
-      isCorrect: false
-      explanation: "Incorrect. You use tools when adding nodes to your flow. Though a tool provides the functionality, it doesn't allow you to safely store connection information."
-  - content: "You want to integrate your flow with an online website. What do you need to do to easily integrate your flow?"
+      explanation: "Correct. RAG allows you to retrieve context that helps ground your language model."
+  - content: "Which search method is most likely to yield the most accurate results when integrating it with a copilot?"
     choices:
-    - content: "Create a custom environment."
+    - content: "Keyword search."
       isCorrect: false
-      explanation: "Incorrect. You create a custom environment when you need extra packages to be installed to run your flow."
-    - content: "Create a runtime."
+      explanation: "Incorrect. Keyword search relies solely on predefined terms or phrases, potentially missing relevant information that doesn't match the exact keywords used."
+    - content: "Vector search."
       isCorrect: false
-      explanation: "Incorrect. A runtime is needed to run your flow, during development and testing."
-    - content: "Deploy your flow to an endpoint."
+      explanation: "Incorrect. Vector search uses mathematical representations of documents, which can capture semantic relationships and similarities between documents, but it can still miss context-specific information."
+    - content: "Hybrid search."
       isCorrect: true
-      explanation: "Correct. When you deploy a flow to an endpoint, prompt flow generates a URL and key that the website can use to call the flow for real-time predictions."
-  - content: "After deployment, you notice that your flow is underperforming. Which stage in the development lifecycle should you revert back to?"
+      explanation: "Correct. Hybrid search combines the strengths of both keyword and vector search methods, allowing for a more comprehensive and accurate retrieval of relevant information by using both keyword matching and semantic similarity."
+  - content: "When integrating RAG and a language model in a chat flow to build a copilot, what is the purpose of using prompt variants?"
     choices:
-    - content: "Experimentation"
+    - content: "To modify the user's query with historical data."
+      isCorrect: false
+      explanation: "Incorrect. Modifying the user's query with historical data is achieved through the Large Language Model (LLM) node, not through prompt variants."
+    - content: "To generate prompt context by retrieving relevant information from the data source."
+      isCorrect: false
+      explanation: "Incorrect. Generating prompt context is done by parsing the output of the Index Lookup tool, not through prompt variants."
+    - content: "To provide multiple system messages in the prompt."
       isCorrect: true
-      explanation: "Correct. Revert back to the experimentation stage to develop and test your flow with a small dataset."
-    - content: "Evaluation and refinement"
-      isCorrect: false
-      explanation: "Incorrect. Only move to evaluation and refinement to test your flow with a larger dataset when you developed and tested it with a smaller dataset first."
-    - content: "Production"
-      isCorrect: false
-      explanation: "Incorrect. During production you deploy and monitor the flow."
+      explanation: "Correct. Prompt variants allow for the inclusion of different system messages in the prompt, exploring which content provides the most groundedness."
