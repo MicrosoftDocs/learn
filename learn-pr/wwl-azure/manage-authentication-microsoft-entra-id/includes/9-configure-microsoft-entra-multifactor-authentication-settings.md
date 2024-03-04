@@ -26,21 +26,21 @@ First, create a Conditional Access policy and assign your test group of users as
 
 2. Browse to **Protection** &gt; **Conditional Access**, select + **New policy**, and then select **Create new policy**.
 
-:::image type="content" source="../media/conditional-access-policy-configuration-51511a83.png" alt-text="Screenshot showing an example of the conditional access new policy creation page.":::
+    :::image type="content" source="../media/conditional-access-policy-configuration-51511a83.png" alt-text="Screenshot showing an example of the conditional access new policy creation page.":::
 
 
 3. Enter a name for the policy, such as *MFA Pilot*.
 
 4. Under **Assignments**, select the current value under **Users or workload identities**.<br>
 
-:::image type="content" source="../media/conditional-access-assignments-60a93961.png" alt-text="Screenshot showing an example of the conditional access assignments page.":::
+    :::image type="content" source="../media/conditional-access-assignments-60a93961.png" alt-text="Screenshot showing an example of the conditional access assignments page.":::
 
 
 5. Under **What does this policy apply to?**, verify that **Users and groups** is selected.
 
 6. Under **Include**, choose **Select users and groups**, and then select **Users and groups**.
 
-:::image type="content" source="../media/conditional-access-policy-new-assignment-842ad63f.png" alt-text="Screenshot showing an example of how to control access for users and groups.":::
+    :::image type="content" source="../media/conditional-access-policy-new-assignment-842ad63f.png" alt-text="Screenshot showing an example of how to control access for users and groups.":::
 
 
 > [!NOTE]
@@ -48,7 +48,7 @@ First, create a Conditional Access policy and assign your test group of users as
 
 7. Browse for and select your Microsoft Entra group, such as *MFA-Test-Group*, then choose **Select**.
 
-:::image type="content" source="../media/conditional-access-select-users-groups-2b5dc66a.png" alt-text="Screenshot showing an example of how to apply control access to users or groups.":::
+    :::image type="content" source="../media/conditional-access-select-users-groups-2b5dc66a.png" alt-text="Screenshot showing an example of how to apply control access to users or groups.":::
 
 
 > [!NOTE]
@@ -74,7 +74,7 @@ For this example, configure the Conditional Access policy to require multifactor
 
 3. Browse the list of available sign-in events that can be used. For this example, select **Windows Azure Service Management API** so that the policy applies to sign-in events. Then choose **Select**.
 
-:::image type="content" source="../media/multifactor-credentials-e4680656.png" alt-text="Screenshot showing an example of how to configure the conditional access policy to require multifactor authentication.":::
+    :::image type="content" source="../media/multifactor-credentials-e4680656.png" alt-text="Screenshot showing an example of how to configure the conditional access policy to require multifactor authentication.":::
 
 
 ### Configure multifactor authentication for access
@@ -85,12 +85,12 @@ In this example, configure the access controls to require multifactor authentica
 
 1. Under **Access controls**, select the current value under **Grant**, and then select **Grant access**.
 
-:::image type="content" source="../media/multifactor-grant-access-95b7f0f3.png" alt-text="Screenshot showing an example of how to block or grant access.":::
+    :::image type="content" source="../media/multifactor-grant-access-95b7f0f3.png" alt-text="Screenshot showing an example of how to block or grant access.":::
 
 
 2. Select **Require multifactor authentication**, and then choose **Select**.
 
-:::image type="content" source="../media/multifactor-control-access-b8b5eade.png" alt-text="Screenshot showing an example of how to grant access and require multifactor authentication.":::
+    :::image type="content" source="../media/multifactor-control-access-b8b5eade.png" alt-text="Screenshot showing an example of how to grant access and require multifactor authentication.":::
 
 
 ### Activate the policy
