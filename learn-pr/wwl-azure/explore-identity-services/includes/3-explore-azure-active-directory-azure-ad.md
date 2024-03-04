@@ -1,4 +1,3 @@
-
 Microsoft Entra ID is a Microsoft-managed, cloud-based, identity and access management solution. It provides secure access for organizations and individuals to various cloud-resident services, including Azure, Office 365, Microsoft Dynamics CRM Online, and Microsoft Intune. It can also be used to facilitate seamless authentication to on-premises applications.
 
 Microsoft Entra ID offers multitenancy and scalability:
@@ -17,9 +16,9 @@ To enhance your Microsoft Entra implementation, you can also add paid capabiliti
 
 Each Azure subscription is associated with one, and only one, Microsoft Entra tenant. Besides providing authentication, this association also facilitates authorization, allowing you to grant permissions to resources in the Azure subscription (via Role Based Access Control) to users, groups, and service principals that exist in that particular Microsoft Entra tenant. Note that individual Microsoft Entra tenant can be associated with multiple Azure subscriptions. This allows you to use the same users, groups, and service principals to access and manage resources across multiple Azure subscriptions.
 
-Many applications built on different platforms such as .NET, Java, Node.js, and PHP can use industry-standard protocols such as Security Assertion Markup Language (SAML) 2.0, Web Services Federation (WS-Federation), and OpenID Connect to integrate with the identity management provided by Microsoft Entra ID. With the support of Open Authorization (OAuth 2.0), developers can develop mobile and web service applications that leverage Microsoft Entra ID for cloud authentication and access management. They can also take advantage of the support for Microsoft Entra ID across several PaaS services, such as Azure Web Apps or Azure SQL Database.
+Many applications built on different platforms such as .NET, Java, Node.js, and PHP can use industry-standard protocols such as Security Assertion Markup Language (SAML) 2.0, Web Services Federation (WS-Federation), and OpenID Connect to integrate with the identity management provided by Microsoft Entra ID. With the support of Open Authorization (OAuth 2.0), developers can develop mobile and web service applications that use Microsoft Entra ID for cloud authentication and access management. They can also take advantage of the support for Microsoft Entra ID across several PaaS services, such as Azure Web Apps or Azure SQL Database.
 
 Organizations that use AD DS can synchronize users and groups from their Active Directory domains with Microsoft Entra ID to enable an SSO experience for their users accessing both on-premises and cloud-based applications.
 
 > [!NOTE]
-> To learn more about the functionality that implements Microsoft Entra authentication for Linux VMs, see [Log in to a Linux virtual machine in Azure by using Microsoft Entra ID and OpenSSH](/azure/active-directory/devices/howto-vm-sign-in-azure-ad-linux).
+> To learn more about the functionality that implements Microsoft Entra authentication for Linux virtual machines, see [Log in to a Linux virtual machine in Azure by using Microsoft Entra ID and OpenSSH](/azure/active-directory/devices/howto-vm-sign-in-azure-ad-linux).
