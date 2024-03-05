@@ -28,7 +28,7 @@ roles:
 products:
 - azure
 subjects:
-- business-continuity
+- site-reliability-engineering
 units:
 - learn.wwl.plan-sap-hana-azure-large-instances-high-availability-disaster-recovery.introduction
 - learn.wwl.plan-sap-hana-azure-large-instances-high-availability-disaster-recovery.explore

@@ -32,7 +32,6 @@ products:
 - azure-kubernetes-service
 
 subjects:
-- development-tools
 - container
 units:
 - learn.containerize-deploy-java-app-aks.introduction

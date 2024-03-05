@@ -27,7 +27,7 @@ roles:
 products:
 - azure-synapse-analytics
 subjects:
-- data-warehousing
+- data-storage
 units:
 - learn.wwl.secure-data-warehouse-azure-synapse-analytics.introduction
 - learn.wwl.secure-data-warehouse-azure-synapse-analytics.understand-network-security-options-for

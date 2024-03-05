@@ -23,7 +23,7 @@ products:
 subjects:
 - database
 - data-engineering
-- data-lake
+- data-storage
 modules:
 - learn.wwl.introduction-to-azure-synapse-analytics
 - learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools
