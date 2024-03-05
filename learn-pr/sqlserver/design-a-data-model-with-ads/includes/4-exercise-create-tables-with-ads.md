@@ -143,7 +143,7 @@ The following table outline is a summary of what we discussed in the previous pa
 
 The next table you have to create is the card translations table. This table will contain the card ID and card text translations in multiple languages.
 
-The first column will be the **translations_id** column, which will be an `int` data type. Following that is the **card_id** column. In the previous table, card_id was an `int`, and it'll will be the same here. The next column will track what language the translation is in. We'll call it **card_language** and set it to a `nvarchar` of length 50. The final two columns are the **translated_name** and **translated_text** columns. You'll be *increasing* the lengths from the card table, because languages like Japanese or Chinese have more complex characters, thus requiring more space in the database. For example, in English, an *O* will take up one byte. In Japanese, う, which is pronounced as 'oo' like in pool, will take up to four bytes.  
+The first column will be the **translations_id** column, which will be an `int` data type. Following that is the **card_id** column. In the previous table, card_id was an `int`, and it'll be the same here. The next column will track what language the translation is in. We'll call it **card_language** and set it to a `nvarchar` of length 50. The final two columns are the **translated_name** and **translated_text** columns. You'll be *increasing* the lengths from the card table, because languages like Japanese or Chinese have more complex characters, thus requiring more space in the database. For example, in English, an *O* will take up one byte. In Japanese, う, which is pronounced as 'oo' like in pool, will take up to four bytes.  
 
 With the translation rules in mind, here's how you can create the translations table:
 
@@ -265,7 +265,7 @@ Here's what the sets table will look like:
 
 ## Create the set_lists table
 
-The last table will tie the cards table and the set table together. When a set releases, it contains a subset of cards from the cards table. For example, if you have cards 1 through 20, a set might contain cards 1 through 10. Another set might contain cards 5 through 8 and then 10 through 20.
+The last table will tie the cards table and the set table together. When a set releases, it contains a subset of cards from the cards table. For example, if you have cards 1 through 20, a set might contain cards 1 through 10. Another set might contain cards 5 through 8, then 10 through 20.
 
 The columns you'll need start with a **set_list_id** column of data type `int`. Next, you'll need a **card_id** column of data type `int`, as seen in the **cards** and **card_translations** tables. Finally, you'll need a **set_id** column of data type `int`, as in the **sets** table.
 
