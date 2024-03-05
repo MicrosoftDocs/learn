@@ -4,25 +4,25 @@ In this unit, you'll learn how your company can configure Maven to use Azure aut
 
 ## Authenticating your web app
 
-Azure gives you the flexibility to decide how you want to authenticate your app. The option you choose depends on your company's build environment. The three options to authenticate your application code with Maven are listed below, in order of complexity (from least to most):
+Azure gives you the flexibility to decide how you want to authenticate your app. The option you choose depends on your company's build environment. The three options to authenticate your application code with Maven are listed here, in order of complexity (from least to most):
 
-- Authenticate using the Azure CLI, or use the Cloud Shell on the Azure portal
+- Authenticate using the Azure CLI or use the Cloud Shell on the Azure portal.
 
-- Create an Azure service principal, create a JSON file with your service principal credentials, and modify your project's `pom.xml` file to use the JSON file
+- Create an Azure service principal, create a JSON file with your service principal credentials, and modify your project's `pom.xml` file to use the JSON file.
 
-- Create an Azure service principal, add your service principal credentials to a Maven `settings.xml` file, and modify your project's `pom.xml` file to use the Maven settings
+- Create an Azure service principal, add your service principal credentials to a Maven `settings.xml` file, and modify your project's `pom.xml` file to use the Maven settings.
 
-Microsoft recommends the third option, as it provides the most reliable, flexible, and consistent approach to authentication. In a real world setting, your company's existing Java web apps might be running on local servers that don't have the Azure CLI tools installed. With that in mind, you would probably implement the recommendation to add authentication using a service principal and a Maven `settings.xml` file. However, for this exercise, the sandbox doesn't have sufficient privileges to create service principals.
+Microsoft recommends the third option, as it provides the most reliable, flexible, and consistent approach to authentication. In a real-world setting, your company's existing Java web apps might be running on local servers that don't have the Azure CLI tools installed. With that in mind, you'd probably implement the recommendation to add authentication using a service principal and a Maven `settings.xml` file. However, for this exercise, the sandbox doesn't have sufficient privileges to create service principals.
 
 ### Authentication with the Azure CLI
 
 The easiest way to authenticate Maven is to sign in with the Azure CLI. The Maven Plugin for Azure App Service can then deploy the app using your credentials, with no extra configuration required.
 
-If you're using the Azure Cloud Shell, as you've been when completing the exercises with the Microsoft Learn Sandbox in this module, then you're logged in to Azure by default – you don't need to run any more commands. However, if you're using the Azure CLI from a separate computer, then you'll need to sign in by using the `az login` command.
+If you're using the Azure Cloud Shell, as you've been when completing the exercises with the Microsoft Learn Sandbox in this module, then you're logged in to Azure by default; you don't need to run any more commands. However, if you're using the Azure CLI from a separate computer, then you'll need to sign in by using the `az login` command.
 
 ### Authentication with an authentication file
 
-The second method for authenticating your web app involves creating an Azure service principal, and saving your service principal credentials to a file that you'll reference from your project settings.
+The second method for authenticating your web app involves creating an Azure service principal and saving your service principal credentials to a file that you'll reference from your project settings.
 
 To create an Azure service principal with the Azure CLI, use the following steps.
 
@@ -48,9 +48,9 @@ To create an Azure service principal with the Azure CLI, use the following steps
     }
     ```
 
-1. Using the information from the `az ad sp create-for-rbac` response, create an authentication file with your service principal information:
+1. Using the information from the `az ad sp create-for-rbac` response, create an authentication file with your service principal information.
 
-    1. Create a new JSON file with the code editor.
+    1. Create a new JSON file with the code editor:
 
         ```bash
         cd ~/MyWebApp
@@ -67,6 +67,7 @@ To create an Azure service principal with the Azure CLI, use the following steps
           "tenantId": "tttttttt-tttt-tttt-tttt-tttttttttttt"
         }
         ```
+
         Where:
 
         | Parameter | Description |
@@ -80,9 +81,9 @@ To create an Azure service principal with the Azure CLI, use the following steps
 
     1. Quit the code editor by typing <kbd>Ctrl</kbd>+<kbd>Q</kbd>.
 
-1. Modify your web app's `pom.xml` file to reference the authentication file:
+1. Modify your web app's `pom.xml` file to reference the authentication file.
 
-    1. Open your `pom.xml` file with the code editor.
+    1. Open your `pom.xml` file with the code editor:
 
         ```bash
         cd ~/MyWebApp
@@ -98,6 +99,7 @@ To create an Azure service principal with the Azure CLI, use the following steps
           <file>/absolute/path/to/auth.json</file>
         </authentication>
         ```
+
         Where `/absolute/path/to/auth.json` is the full path to the `auth.json` file that you created earlier.
 
         Your `azure-webapp-maven-plugin` section should now resemble the following example:
@@ -139,13 +141,13 @@ To create an Azure service principal with the Azure CLI, use the following steps
 
     1. Quit the code editor by typing <kbd>Ctrl</kbd>+<kbd>Q</kbd>.
 
-1. Use Maven to build and deploy your web app to Azure App Service.
+1. Use Maven to build and deploy your web app to Azure App Service:
 
     ```bash
     mvn azure-webapp:deploy
     ```
 
-    Maven displays a series of build messages, and the final message should indicate successful deployment to Azure.
+    Maven displays a series of build messages, and the final message should indicate successful deployment to Azure:
 
     ```console
     [INFO] ------------------------------------------------------------------------
@@ -171,11 +173,12 @@ To create an Azure service principal with the Azure CLI, use the following steps
     [INFO] Final Memory: 43M/286M
     [INFO] ------------------------------------------------------------------------
     ```
-    Where the `Authenticate with file: /home/username/MyWebApp/auth.json` line in the response indicates that your authentication file was used to publish your web app to Azure.
+
+    The `Authenticate with file: /home/username/MyWebApp/auth.json` line in the response indicates that your authentication file was used to publish your web app to Azure.
 
 ### Authentication with a Maven `settings.xml` file
 
-The third method for authenticating your web app involves creating an Azure service principal, then creating a Maven `settings.xml` file that contains your service principal credentials, and then modifying your project's `pom.xml` file to use the Maven settings.
+The third method for authenticating your web app involves creating an Azure service principal, creating a Maven `settings.xml` file that contains your service principal credentials, and modifying your project's `pom.xml` file to use the Maven settings.
 
 The steps to create an Azure service principal with the Azure CLI are the same as in the preceding section of this unit.
 
@@ -203,7 +206,7 @@ The steps to create an Azure service principal with the Azure CLI are the same a
 
 1. Create a user version of the `settings.xml` file for Maven to use.
 
-    1. Create a new XML file for your Maven settings with the code editor.
+    1. Create a new XML file for your Maven settings with the code editor:
 
         ```bash
         code ~/.m2/settings.xml
@@ -227,6 +230,7 @@ The steps to create an Azure service principal with the Azure CLI are the same a
           </servers>
         </settings>
         ```
+
         Where:
 
         | Parameter | Description |
@@ -239,9 +243,9 @@ The steps to create an Azure service principal with the Azure CLI are the same a
 
     1. Quit the code editor by typing <kbd>Ctrl</kbd>+<kbd>Q</kbd>.
 
-1. Modify your web app's `pom.xml` file to reference the authentication file:
+1. Modify your web app's `pom.xml` file to reference the authentication file.
 
-    1. Open your `pom.xml` file with the code editor.
+    1. Open your `pom.xml` file with the code editor:
 
         ```bash
         cd ~/MyWebApp
@@ -297,13 +301,13 @@ The steps to create an Azure service principal with the Azure CLI are the same a
 
     1. Quit the code editor by typing <kbd>Ctrl</kbd>+<kbd>Q</kbd>.
 
-1. Use Maven to build and deploy your web app to Azure App Service.
+1. Use Maven to build and deploy your web app to Azure App Service:
 
     ```bash
     mvn azure-webapp:deploy
     ```
 
-    Maven displays a series of build messages, and the final message should indicate successful deployment to Azure.
+    Maven displays a series of build messages, and the final message should indicate successful deployment to Azure:
 
     ```console
     [INFO] ------------------------------------------------------------------------
@@ -329,5 +333,5 @@ The steps to create an Azure service principal with the Azure CLI are the same a
     [INFO] Final Memory: 43M/300M
     [INFO] ------------------------------------------------------------------------
     ```
-    Where the `Authenticate with ServerId: azure-auth` line in the response indicates that your service principal credentials were used to publish your web app to Azure.
 
+    The `Authenticate with ServerId: azure-auth` line in the response indicates that your service principal credentials were used to publish your web app to Azure.
