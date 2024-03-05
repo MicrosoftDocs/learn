@@ -1,4 +1,4 @@
-Organizing books in a library follows a set of design principles, as does organizing resources in subscriptions. Enterprise-scale architecture includes a reference implementation of the infrastructure-as-code, continuous integration and continuous delivery (CI/CD) pipeline, which helps organizations establish a cloud-operating model. 
+Organizing books in a library follows a set of design principles, as does organizing resources in subscriptions. Enterprise-scale architecture includes a reference implementation of the infrastructure-as-code continuous integration and continuous delivery (CI/CD) pipeline, which helps organizations establish a cloud-operating model. 
 
 Enterprise-scale architecture and reference implementation help organizations meet not only the criteria of success for cloud adoption, but also the requirements for success with continuous engineering. Familiarize yourself with these principles to understand their impact and the trade-offs associated with nonadherence.
 
@@ -12,7 +12,7 @@ Subscriptions are units of management and scale that are aligned with an organiz
 
 ## Policy-driven governance
 
-Azure Policy provides guardrails for subscriptions to ensure continuous compliance of an organization's platform and applications. At the same time, Policy helps to provide application owners both sufficient freedom and a secure, unhindered path to the cloud. Organizations should define governance rules in code to create guardrails authoritatively across the platform. Organizations declare the intent of the policy, and certain effects, such as *deploy-if-not-exists* and *deny* policies, help ensure a compliant resource configuration and prevent configuration drift.
+Azure Policy provides guardrails for subscriptions to ensure continuous compliance of an organization's platform and applications. At the same time, Policy helps to provide application owners both sufficient freedom and a secure, unhindered path to the cloud. Organizations should define governance rules in code to create guardrails authoritatively across the platform. Organizations declare the intent of the policy and use certain effects, such as *deploy-if-not-exists* and *deny* policies. These effects help ensure a compliant resource configuration, and prevent configuration drift.
 
 <!---- Management group level policies
 - Infrastructure deployment by policy--->
@@ -53,14 +53,14 @@ These design areas are discussed in more detail in other Microsoft Learn modules
 
 - **Identity and access management**: Identity and access management provides the basis of a large part of security assurance. To protect data and resources, it enables access based on identity authentication and authorization controls, and it helps you decide which requests should be permitted.
 
-- **Management group and subscription organization**: When an organization plans Azure adoption at scale, it must thoroughly consider management group structures within a Microsoft Entra tenant. A well-defined management group and subscription organization simplifies the management of Azure Policy and role-based access control (RBAC) assignments.
+- **Management group and subscription organization**: When an organization plans Azure adoption at scale, it must thoroughly consider management group structures within a Microsoft Entra tenant. A well-defined management group and subscription organization, simplifies the management of Azure Policy and role-based access control (RBAC) assignments.
 
 - **Network topology and connectivity**: There are key design considerations and recommendations surrounding networking and connectivity to, from, and within Azure. Network topology is a critical element of an enterprise-scale architecture, because it defines how applications can communicate with each other.
 
-- **Management and monitoring**: A management and monitoring process gives central teams key recommendations for maintaining operational visibility within a large-scale Azure platform. This is a key consideration for operationally maintaining an Azure enterprise estate with centralized management and monitoring at a platform level.
+- **Management and monitoring**: A management and monitoring process gives central teams key recommendations for maintaining operational visibility within a large-scale Azure platform. This process is a key consideration for operationally maintaining an Azure enterprise estate with centralized management and monitoring at a platform level.
 
-- **Business continuity and disaster recovery**: Organizations capture disaster recovery (DR) requirements to design suitable platform-level capabilities that application workloads can consume. This helps organizations reach their specific recovery time objectives (RTOs) and recovery point objectives (RPOs) in Azure.
+- **Business continuity and disaster recovery**: Organizations capture disaster recovery (DR) requirements to design suitable platform-level capabilities that application workloads can consume. These DR requirements help organizations reach their specific recovery time objectives (RTOs) and recovery point objectives (RPOs) in Azure.
 
 - **Security, governance, and compliance**: This critical design area covers encryption and a framework for assessing the enterprise security readiness of Azure services.
 
-- **Platform automation and DevOps**: Many traditional IT operating models aren't compatible with the cloud. In this section, we look at planning for a platform DevOps approach, as well as central and federated responsibilities.
+- **Platform automation and DevOps**: Many traditional IT operating models aren't compatible with the cloud. In this section, we look at planning for a platform DevOps approach, and central and federated responsibilities.

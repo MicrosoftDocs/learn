@@ -43,4 +43,4 @@ quiz:
       explanation: An organization should develop a cloud security strategy before it implements a landing zone.
     - content: Adopting a skills readiness plan.
       isCorrect: false
-      explanation: This should happen during the Plan phase of the Cloud Adoption Framework.
+      explanation: This task should happen during the Plan phase of the Cloud Adoption Framework.
