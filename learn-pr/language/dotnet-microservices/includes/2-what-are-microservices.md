@@ -79,7 +79,7 @@ A Dockerfile is a set of instructions that create a Docker image that has the ex
 
 ## .NET SDK container publishing
 
-In .NET 7, the .NET SDK gained the ability to create container images via the `dotnet publish`` command. The tools to do this do a bunch of inference based on the properties of your project and its outputs, and then create the same image that a simple Dockerfile would create. It can take a few as wo commands to create a new application and publish it as an image:
+In .NET 7, the .NET SDK gained the ability to create container images via the `dotnet publish`` command. The tools to do this do a bunch of inference based on the properties of your project and its outputs, and then create the same image that a simple Dockerfile would create. It can take a few as two commands to create a new application and publish it as an image:
 
 ```donetcli
 dotnet new webapi
