@@ -14,7 +14,7 @@ metadata:
 title: Create a composed Form Recognizer model
 summary: Learn how to assemble custom models into composed solutions that can analyze different types of your own documents.
 abstract: |
-  In this module, you will learn to:
+  In this module, you'll learn to:
 
   -   Describe business problems that you would use custom models and composed models to solve.
 
