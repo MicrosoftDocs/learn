@@ -34785,6 +34785,16 @@
       "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/8-integrate-applications-with-microsoft-entra-id.md",
       "redirect_url": "/training/modules/manage-authentication-microsoft-entra-id/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-public-access-azure-resources/5-front-door-overview.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-public-access-azure-resources/6-front-door-content-development-network",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-public-access-azure-resources/6-azure-web-application-firewall.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-public-access-azure-resources/5-azure-web-application-firewall",
+      "redirect_document_id": false
     }
   ]
 }
