@@ -88,7 +88,7 @@ The following section will use the query sheet in Azure Data Studio. Once you've
 
     ![Screenshot showing query results from the joined cards and card_translations tables.](../media/query-7.png)
 
-1. The following SQL statement will insert a row into the sets table. You'll be using the built in function `GETDATE()` to insert today's data in the format YYYY-MM-DD. While the `GETDATE` function also returns hours, minutes, and seconds, the data type is `date`, so it will truncate that extra time data.
+1. The following SQL statement will insert a row into the sets table. You'll be using the built-in function `GETDATE()` to insert today's data in the format YYYY-MM-DD. While the `GETDATE` function also returns hours, minutes, and seconds, the data type is `date`, so it will truncate that extra time data.
 
     ```sql
     insert into dbo.sets (set_name, set_date)
