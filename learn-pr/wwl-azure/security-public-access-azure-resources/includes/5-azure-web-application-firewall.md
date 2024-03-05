@@ -152,19 +152,9 @@ You can configure and deploy all WAF policies using the Azure portal, REST APIs,
 
 It's important to monitor the health of your application gateway. You can support this by integrating your WAF and the applications it protects with Microsoft Defender for Cloud, Azure Monitor, and Azure Monitor logs.
 
-:::image type="content" source="../media/web-application-diagnostics-9335e295.png" alt-text="Diagram showing an example of a web application firewalls monitoring functionality.":::
+:::image type="content" source="../media/web-applcation-firewall-diagnostics-73b2ce41.png" alt-text="Diagram showing an example of an Azure web application firewall monitoring functionality.":::
 
 
 ## Azure Monitor
 
 Application Gateway logs are integrated with Azure Monitor. This allows you to track diagnostic information, including WAF alerts and logs. You can access this capability on the Diagnostics tab in the Application Gateway resource in the portal or directly through Azure Monitor.
-
-## Microsoft Defender for Cloud
-
-Defender for Cloud helps you prevent, detect, and respond to threats. It provides increased visibility into and control over the security of your Azure resources. Application Gateway is integrated with Defender for Cloud. Defender for Cloud scans your environment to detect unprotected web applications. It can recommend Application Gateway WAF to protect these vulnerable resources. You create the firewalls directly from Defender for Cloud. These WAF instances are integrated with Defender for Cloud. They send alerts and health information to Defender for Cloud for reporting.
-
-## Microsoft Sentinel
-
-Microsoft Sentinel is a scalable, cloud-native, security information event management (SIEM) and security orchestration automated response (SOAR) solution. Microsoft Sentinel delivers intelligent security analytics and threat intelligence across the enterprise, providing a single solution for alert detection, threat visibility, proactive hunting, and threat response.
-
-With the built-in Azure WAF firewall events workbook, you can get an overview of the security events on your WAF. This includes events, matched and blocked rules, and everything else that gets logged in the firewall logs. More information on logging follows.
