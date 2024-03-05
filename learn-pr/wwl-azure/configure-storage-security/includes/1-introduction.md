@@ -1,25 +1,27 @@
-This module focuses on configuring storage security in Azure. It covers topics such as configuring shared access signatures (SAS), implementing customer-managed keys, and defining stored access policies for Azure Storage encryption.
+Azure Storage provides a comprehensive set of security capabilities that work together to enable developers to build secure applications.
 
-Suppose you work for a financial services company that stores sensitive customer data in Azure Storage. Recently, there's an increase in cyber attacks targeting cloud storage, and your company wants to ensure that their data is secure. Your task is to configure storage security in Azure to protect the customer data from unauthorized access. By implementing shared access signatures (SAS), customer-managed keys, and stored access policies, you can enhance the security of the Azure Storage solution and mitigate the risk of data breaches. This module guides you through the process of configuring these security measures and provides best practices for securing Azure Storage.
-
-The goal of this module is to equip you with the knowledge and skills to configure storage security in Azure. By the end of this module, you're able to implement shared access signatures, manage customer-managed keys, and define stored access policies to enhance the security of Azure Storage.
-
+In this module, your company is storing sensitive data in Azure Storage, including personal information. The data is used internally and by external application developers. You're responsible for ensuring the data is secure for all users. You're tasked with providing configuration solutions to grant secure access to the information.
 
 ## Learning objectives
 
 In this module, you learn how to:
 
-- Configure a shared access signature.
+- Configure a shared access signature, including the uniform resource identifier (URI) and SAS parameters.
 - Configure Azure Storage encryption.
 - Implement customer-managed keys.
 - Recommend opportunities to improve Azure Storage security.
 
 ## Skills measured
 
-The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). 
+The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). The module concepts are covered in:
+
+Implement and manage storage (15–20%)
+
+- Secure storage
+   - Generate shared access signature (SAS) tokens
+   - Manage access keys
+   - Configure Microsoft Entra authentication for an Azure storage account
 
 ## Prerequisites
 
-- Basic knowledge of Azure storage solutions.
-- Familiarity with the Azure portal so you can configure the security measures.
-- Understanding of security concepts like encryption and keys.
+None.
