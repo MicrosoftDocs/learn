@@ -7,10 +7,11 @@ metadata:
   ms.date: 02/25/2020
   author: ajburnle
   ms.author: ajburnle
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-azurepowershell
-  ms.prod: learning-azure
+    - has-azure-ad-ps-ref
+    - azure-ad-ref-level-one-done
 durationInMinutes: 5
 content: |
   [!include[](includes/3-add-custom-domain-name.md)]

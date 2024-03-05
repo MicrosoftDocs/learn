@@ -1,4 +1,3 @@
-
 Now that you have reviewed this module, you should be able to:
 
 - Define common identity terms and explain how they're used in the Microsoft Cloud

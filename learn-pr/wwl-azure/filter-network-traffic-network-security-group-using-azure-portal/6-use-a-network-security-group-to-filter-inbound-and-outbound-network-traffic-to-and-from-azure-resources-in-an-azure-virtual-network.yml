@@ -4,10 +4,10 @@ title: Exercise - Create a virtual network infrastructure
 metadata:
   title: Exercise - Create a virtual network infrastructure
   description: "Exercise - Create a virtual network infrastructure"
-  ms.date: 10/09/2023
+  ms.date: 01/29/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 30
 content: |
   [!include[](includes/6-use-a-network-security-group-to-filter-inbound-and-outbound-network-traffic-to-and-from-azure-resources-in-an-azure-virtual-network.md)]

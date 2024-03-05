@@ -4,25 +4,16 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/07/2023
+  ms.date: 02/29/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
-durationInMinutes: 10
+  ms.custom:
+  - N/A
+durationInMinutes: 6
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "In this module, what is the main benefit that the team achieves by switching from Azure Kubernetes Service (AKS) to Azure Container Apps?"
-    choices:
-    - content: "AKS provides better custom service mesh capabilities than Azure Container Apps."
-      isCorrect: false
-      explanation: "Incorrect. While AKS provides custom service mesh capabilities, the team believes that they're not making use of the advance features of AKS like custom service mesh or autoscaling."
-    - content: "Azure Container Apps is more complex than AKS."
-      isCorrect: false
-      explanation: "Incorrect. The team believes that switching to Azure Container Apps will reduce the complexity of their current devops implementation."
-    - content: "Azure Container Apps enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-      isCorrect: true
-      explanation: "Correct. The team believes that switching to Azure Container Apps will improve their ability to publish and run containerized apps at scale, reduce the complexity of their current devops implementation, and save resources by using scale-to-zero and built-in autoscaling capabilities."
   - content: "What is the principle of least privilege?"
     choices:
     - content: "Limiting access to only one resource in a system."
@@ -34,17 +25,6 @@ quiz:
     - content: "Limiting access to only the resources necessary to complete a user's task."
       isCorrect: true
       explanation: "Correct. The principle of least privilege ensures that users only have access to the resources they need to complete their tasks, reducing the risk of unauthorized access or accidental damage to other resources."
-  - content: "What is the purpose of Azure Container Apps?"
-    choices:
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-      isCorrect: true
-      explanation: "Correct. Azure Container Apps enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-    - content: "To deploy a container app from an image in the Azure Kubernetes Service platform."
-      isCorrect: false
-      explanation: "Incorrect. Azure Container Apps is a separate platform from Azure Kubernetes Service."
-    - content: "To deploy a container app from an image in the Azure Virtual Machine platform."
-      isCorrect: false
-      explanation: "Incorrect. Azure Container Apps is a separate platform from Azure Virtual Machines."
   - content: "What is the purpose of configuring a continuous integration environment for Container Apps?"
     choices:
     - content: "To create a new container registry instance that contains one image."
@@ -78,7 +58,7 @@ quiz:
     - content: "Install Visual Studio Code."
       isCorrect: false
       explanation: "Incorrect. Visual Studio Code is used for developing and deploying applications, not for creating and managing container images."
-  - content: "What is the purpose of configuring a user-assigned managed identity in this exercise?"
+  - content: "What is the purpose of configuring a user-assigned managed identity in this guided project module?"
     choices:
     - content: "To enable the container registry to use the managed identity to pull artifacts."
       isCorrect: true
@@ -89,17 +69,6 @@ quiz:
     - content: "To create a new Azure subscription."
       isCorrect: false
       explanation: "Incorrect. Configuring a user-assigned managed identity does not involve creating a new Azure subscription."
-  - content: "What is the purpose of configuring a connection between the container app and Service Bus?"
-    choices:
-    - content: "To establish communication between the container app and the Service Bus instance."
-      isCorrect: true
-      explanation: "Correct. Configuring a connection between the container app and Service Bus allows the container app to connect and communicate with the Service Bus instance."
-    - content: "To create HTTP scale rules for the container app."
-      isCorrect: false
-      explanation: "Incorrect. Configuring a connection between the container app and Service Bus is not related to creating HTTP scale rules."
-    - content: "To authenticate the container app using a user-assigned managed identity."
-      isCorrect: false
-      explanation: "Incorrect. This is the purpose of configuring the container app to authenticate using the user assigned identity."
   - content: "What is the purpose of configuring `Pipeline 1` to use the self-hosted agent pool?"
     choices:
     - content: "To verify the configuration of the continuous integration environment for Container Apps."
@@ -111,14 +80,3 @@ quiz:
     - content: "To enable `Pipeline 1` to deploy a container image from the container registry to the container app using a self-hosted agent pool."
       isCorrect: true
       explanation: "Correct. Configuring `Pipeline 1` to use the self-hosted agent pool enables it to deploy a container image from the container registry to the container app."
-  - content: "What is the purpose of setting the revision management to multiple in Azure Container Apps?"
-    choices:
-    - content: "To enable the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-      isCorrect: true
-      explanation: "Correct. Setting the revision management to multiple enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-    - content: "To deploy a new revision of the container app with a v2 suffix."
-      isCorrect: false
-      explanation: "Incorrect. Setting the revision management to multiple is not related to deploying a new revision with a v2 suffix."
-    - content: "To configure traffic splitting between labeled revisions."
-      isCorrect: false
-      explanation: "Incorrect. Setting the revision management to multiple is not related to configuring traffic splitting between labeled revisions."

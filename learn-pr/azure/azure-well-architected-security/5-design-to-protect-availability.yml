@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-security.design-to-protect-availability
+title: Design to protect availability
+metadata:
+  title: Design to protect availability
+  description: Learn how use security controls to protect your workload's availability.
+  ms.date: 12/05/2023
+  author: claytonsiemens77
+  ms.author: csiemens
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-design-to-protect-availability.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'How did Contoso use security controls to respond to an attack that overwhelmed their system?'
+    choices:
+    - content: 'They used adopted a design pattern that minimized the blast radius attacks like this one.'
+      isCorrect: true
+      explanation: 'Correct. By decoupling their application into smaller components, Contoso was able to minimize the blast radius of future similar attacks.'
+    - content: 'They blocked access to public-facing services.'
+      isCorrect: false
+      explanation: "Incorrect. Blocking access to public-facing services would've prevented legitimate users from accessing the application."
+    - content: 'They invested in a third-party DDoS protection service.'
+      isCorrect: false
+      explanation: "Incorrect. The attack wasn't a DDoS attack and they were able to respond to the attack without the help of a third-party service."
+    - content: 'They increased the number of virtual machines in their application.'  
+      isCorrect: false
+      explanation: "Incorrect. This measure would've increased the cost of the application without addressing the root cause of the problem."
+  - content: 'What is an example of a preventative measure that can be used to limit attack vectors?'
+    choices:
+    - content: "Monitoring resource health"
+      isCorrect: false
+      explanation: "Incorrect. Monitoring resource health is a reactive measure that can be used to respond to an attack, but it does not prevent the attack from happening."
+    - content: 'Using an anti-malware solution'
+      isCorrect: true
+      explanation: 'Correct. Using anti-malware software can prevent malware from being installed on a system.'
+    - content: 'Enabling autoscaling on virtual machines'
+      isCorrect: false
+      explanation: "Incorrect. Autoscaling is good for responding to increased requests, but doesn't limit attack vectors."
+    - content: 'Using Azure Traffic Manager to block malicious traffic'
+      isCorrect: false
+      explanation: "Incorrect. Azure Traffic Manager is used to route traffic to different endpoints, but it does not block malicious traffic."
+  - content: "True or false: when running in a recovery environment, it's OK to have a relaxed security posture in comparison to the production environment."
+    choices:
+    - content: "True"
+      isCorrect: false
+      explanation: "Incorrect. The recovery environment should be as secure as the production environment."
+    - content: 'False'
+      isCorrect: true
+      explanation: 'Correct. The recovery environment should be as secure as the production environment.'

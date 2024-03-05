@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Add multiple environments to your pipeline
   description: Update a deployment pipeline to deploy to two environments, and use a pipeline template with parameters.
   ms.date: 02/27/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
   ms.custom:
     - devx-track-bicep

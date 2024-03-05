@@ -4,7 +4,7 @@ Azure Pipelines can be used to automate build, test, and deployment processes.
 
 Understanding pipeline terms and parts can help you to work more efficiently and to create better, more reliable pipelines.
 
-![Screenshot showing Azure Pipelines selected in an Azure DevOps project.](../media/azure-pipeline-process-terms-parts.png)
+![Diagram showing the structure of a pipeline and how a stage is processed.](../media/azure-pipeline-process-terms-parts.png)
 
 - A trigger tells a Pipeline to run.
 - A pipeline is made up of one or more stages. A pipeline can deploy to one or more environments.
@@ -94,7 +94,7 @@ The Azure Pipelines service provides some built-in tasks to enable fundamental b
 
 ### Built-in task for Azure Container Apps
 
-The AzureContainerApps@1 - Azure Container Apps Deploy v1 task is an Azure DevOps Task that can be used to build and deploy Azure Container Apps.
+The Azure Container Apps Deploy v1 task (AzureContainerApps@1) task is an Azure DevOps Task that can be used to build and deploy Azure Container Apps.
 
 This Azure Pipelines Task makes it easy for users to deploy their application source to an Azure Container App in their Azure Pipelines workflow. Users can choose between providing a previously built image, a Dockerfile that an image can be built from, or using a builder to create a runnable application image for the user.
 

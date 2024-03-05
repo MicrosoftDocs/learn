@@ -25,6 +25,8 @@ The Container Apps Environment section of the Basics tab includes the following 
 - Region: The region should normally match your resource group. If you are using a virtual network, it's important for the regions to match.
 - Container Apps environment: The **Create new** link to create a container apps environment for your resource.
 
+Every container app must be part of a container app environment. An environment provides an isolated network for one or more container apps, making it possible for them to easily invoke each other.
+
 The **Create Container Apps Environment** process opens to a Basics tab.
 
 The **Basics** tab on the Create Container Apps Environment page, provides the following:
@@ -60,6 +62,8 @@ The **Container** tab on the Create Container App page provides the option to us
 - The Container details section provides the option to choose a Container Registry and image.
 - The Container resource allocation (Preview) section allows you to adjust the CPU and memory allocation for your app.
 - The Environment variables section allows you to specify name/value pairs that are accessible as environment variables.
+
+The **Bindings** tab can be used to connect your container app to other Azure resources. Bindings are optional but can be used to provide additional functionality.
 
 The **Ingress** tab can be used to enable ingress for applications that need an HTTP or TCP endpoint.
 

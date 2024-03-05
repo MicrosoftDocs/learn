@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-reliability.keep-it-simple
+title: Keep it simple
+metadata:
+  title: Keep it simple
+  description: Learn strategies for simplifying your workload design to optimize its reliability.
+  ms.date: 12/18/2023
+  author: claytonsiemens77
+  ms.author: csiemens
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-keep-it-simple.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Why should you try to minimize the number of components in your workload?"
+    choices:
+    - content: "Minimizing the components in your workload reduces the complexity, which makes it easier to manage and troubleshoot."
+      isCorrect: true
+      explanation: "Correct. The more components you have, the more complex your workload is. This makes it more difficult to manage and troubleshoot."
+    - content: "Minimizing the number of components in your workload means you don't have to monitor the workload."
+      isCorrect: false
+      explanation: "Incorrect. You should always monitor your workload, regardless of how many components it has."
+    - content: "Minimizing the number of components in your workload means you can use services that are in preview."
+      isCorrect: false
+      explanation: "Incorrect. You should never use services that are in preview in production workloads."
+    - content: "Minimizing the number of components in your workload reduces the need to enable scaling."
+      isCorrect: false
+      explanation: "Incorrect. Your scaling strategy should be based on the needs of your workload, not the number of components it has."
+  - content: "What elements of your software development lifecycle should be standardized?"
+    choices:
+    - content: "Development languages, frameworks, and tools"
+      isCorrect: false
+      explanation: "Incorrect. These elements are all important, but they aren’t the only elements that should be standardized."
+    - content: "Documentation"
+      isCorrect: false
+      explanation: "Incorrect. Documentation is important, but it isn’t the only element that should be standardized."
+    - content: "Testing"
+      isCorrect: false
+      explanation: "Incorrect. Testing is important, but it isn’t the only element that should be standardized."
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "Correct. All of these elements should be standardized to ensure that your workload is reliable and easy to manage."
+  - content: "How did moving to Azure App Services help the Contoso team simplify their workload?"
+    choices:
+    - content: "It saved them from having to rewrite the application."
+      isCorrect: false
+      explanation: "Incorrect. Rewriting the application wasn't a concern for the Contoso team."
+    - content: "It allowed them to reduce the amount of code they had to maintain."
+      isCorrect: true
+      explanation: "Correct. By moving to Azure App Services, the Contoso team was able to reduce the amount of code they had to maintain by removing the instrumentation code."
+    - content: "It allowed them to containerize their application."
+      isCorrect: false
+      explanation: "Incorrect. The team didn't containerize the app."
+    - content: "It allowed the team to move to a serverless architecture."
+      isCorrect: false
+      explanation: "Incorrect. Azure App Services isn’t a serverless architecture."

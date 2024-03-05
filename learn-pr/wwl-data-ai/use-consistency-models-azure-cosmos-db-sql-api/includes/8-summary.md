@@ -11,4 +11,4 @@ For more information about the topics discussed in this module, see:
 
 - [Consistency levels in Azure Cosmos DB][learn.microsoft.com/azure/cosmos-db/consistency-levels]
 
-[learn.microsoft.com/azure/cosmos-db/consistency-levels]: https://learn.microsoft.com/azure/cosmos-db/consistency-levels
+[learn.microsoft.com/azure/cosmos-db/consistency-levels]: /azure/cosmos-db/consistency-levels

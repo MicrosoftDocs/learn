@@ -1,5 +1,3 @@
-
-
 While the Microsoft Intune admin center doesn't include any reports specifically for inventory in the Reports node, you can still report on all your devices and applications using the Devices and Apps tab.
 
 ### Device reporting

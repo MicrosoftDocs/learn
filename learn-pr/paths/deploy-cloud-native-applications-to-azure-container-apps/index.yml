@@ -3,11 +3,10 @@ uid: learn.wwl.deploy-cloud-native-applications-to-azure-container-apps
 metadata:
   title: Deploy cloud-native apps using Azure Container Apps
   description: Learn how to build, deploy, scale, and manage containerized cloud-native apps using Azure Container Apps, Azure Container Registry, and Azure Pipelines.
-  ms.date: 11/16/2023
+  ms.date: 11/22/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: learning-path
-  ms.prod: learning-azure
 title: Deploy cloud-native apps using Azure Container Apps
 prerequisites: |
   - Basic understanding of cloud computing concepts: Familiarity with cloud computing fundamentals, such as virtualization, scalability, and on-demand resource provisioning.
@@ -19,7 +18,6 @@ prerequisites: |
 summary: |
   Develop the skills necessary to configure a secure deployment solution for cloud-native apps. Learn how to build, deploy, scale, and manage containerized cloud-native apps using Azure Container Apps, Azure Container Registry, and Azure Pipelines.
 iconUrl: /training/achievements/generic-trophy.svg
-hidden: true
 levels:
 - intermediate
 roles:

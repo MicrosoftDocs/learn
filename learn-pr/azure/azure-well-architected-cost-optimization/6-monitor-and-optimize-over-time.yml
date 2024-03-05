@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-cost-optimization.monitor-and-optimize-over-time
+title: Monitor and optimize over time
+metadata:
+  title: Monitor and optimize over time
+  description: Learn how to continuously right-size investment as your workload evolves with the ecosystem.
+  ms.date: 10/23/2023
+  author: martinekuan
+  ms.author: martinek
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/6-monitor-and-optimize-over-time.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "What types of Azure costs may show up in your cost tracking system that you can potentially optimize?"
+      choices:
+        - content: "Hardware support agreements."
+          isCorrect: false
+          explanation: "Incorrect. Your Azure costs only include the cost of the Azure services you use. Hardware support agreements aren't included in your Azure costs."
+        - content: "Cloud consulting services."
+          isCorrect: false
+          explanation: "Incorrect. Any cloud consulting services you use aren't included in your Azure costs."
+        - content: "AWS compute costs."
+          isCorrect: false
+          explanation: "Incorrect. AWS costs aren't included in your Azure costs."
+        - content: "Azure storage costs."
+          isCorrect: true
+          explanation: "Correct. All Azure services, including Storage Accounts, are included in your Azure costs."
+
+    - content: "Which of the following aspects of your workload should you not consider refining according to ROI data?"
+      choices:
+        - content: "The workload's architecture design."
+          isCorrect: false
+          explanation: "Incorrect. The workload's architecture design should be continuously evaluated for refining according to ROI data."
+        - content: "Your workload's flows."
+          isCorrect: false
+          explanation: "Incorrect. Your workload's flows should be continuously evaluated for refining according to ROI data."
+        - content: "Your workload code." 
+          isCorrect: false
+          explanation: "Incorrect. Your workload's code should be continuously evaluated for refining according to ROI data."
+        - content: "Your workload's functional and nonfunctional requirements."
+          isCorrect: true
+          explanation: "Correct. The functional and nonfunctional requirements aren't subject to change based on ROI data."
+
+    - content: "Contoso Air developers are considering deploying a new Dev/Test environment in Azure. Which of the following design decisions would be most cost-effective?"
+      choices:
+        - content: "Deploying the app on an Azure App Service Isolated plan in the new Dev/Test environment resources."
+          isCorrect: false
+          explanation: "Incorrect. Dev/Test environments should be designed with the minimum resources required to support the workload."
+        - content: "Enabling Azure Site Recovery for the Dev/Test environment."
+          isCorrect: false
+          explanation: "Incorrect. Dev/Test environments shouldn't be designed with disaster recovery capabilities in most cases."
+        - content: "Enabling Active geo-replication for the Dev/Test environment's Azure SQL databases."
+          isCorrect: false
+          explanation: "Incorrect. Dev/Test environments typically only use test data and shouldn't replicate that data to other regions in most cases."
+        - content: "Using the Developer SKU for the Dev/Test environment's API Management instance,"
+          isCorrect: true
+          explanation: "Correct. Using the Developer SKU for the Dev/Test environment's API Management instance is the most cost-effective option."

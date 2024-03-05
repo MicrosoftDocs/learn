@@ -11,5 +11,8 @@ metadata:
   ms.custom:
     - devx-track-python
 durationInMinutes: 30
+azureSandbox: false
+labId: 152392
+labModal: true
 content: |
   [!include[](includes/5-exercise.md)]

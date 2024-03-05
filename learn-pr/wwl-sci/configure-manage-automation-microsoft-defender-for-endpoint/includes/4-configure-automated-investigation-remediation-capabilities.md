@@ -24,7 +24,7 @@ As a global administrator or security administrator:
 
         - In the Devices section, use one or more conditions to identify and include devices.
 
-        - On the User access tab, select the Microsoft Entra groups that should have access to the device group you're creating.
+        - On the User access tab, select the Azure Active Directory groups that should have access to the device group you're creating.
 
 1. Select **Done** when you're finished setting up your device group.
 
@@ -75,3 +75,4 @@ Using the no automation option isn't recommended because it reduces the security
 ## Quickly configure remediation levels on device groups
 
 Another way to set or update remediation levels on Device groups is in the Settings, General, Auto remediation page.  The page provides a list of Device groups and the current remediation level for each.  Select the row will allow you to adjust the remediation setting.
+

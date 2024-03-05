@@ -6,8 +6,8 @@ metadata:
   ms.date: 11/16/2023
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: .net
+  ms.topic: module
+  ms.service: dotnet
   ms.custom:
   - team=cloud_advocates
   ms.contributors:

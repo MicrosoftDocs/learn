@@ -22,7 +22,7 @@ quiz:
     - content: "The primary and secondary keys"
       isCorrect: false
       explanation: "Incorrect. The Azure AI Speech SDK requires the location and a key to connect to the Azure AI Speech service."
-    - content: "The endpoint and one of the keys"
+    - content: "The endpoint and the name of your resource"
       isCorrect: false
       explanation: "Incorrect. The Azure AI Speech SDK requires the location and a key to connect to the Azure AI Speech service."
   - content: "Which object should you use to specify that the speech input to be transcribed to text is in an audio file?"

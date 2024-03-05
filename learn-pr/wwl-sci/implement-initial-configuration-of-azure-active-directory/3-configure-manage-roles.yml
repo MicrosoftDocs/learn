@@ -4,11 +4,10 @@ title: Configure and manage Microsoft Entra roles
 metadata:
   title: Configure and manage Microsoft Entra roles
   description: "Configure and manage Microsoft Entra roles"
-  ms.date: 10/25/2023
+  ms.date: 11/21/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
-  ms.prod: azure
 durationInMinutes: 7
 content: |
   [!include[](includes/3-configure-manage-roles.md)]

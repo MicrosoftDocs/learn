@@ -6,8 +6,8 @@ metadata:
   title: Summary
   description: This unit summarizes what you've learned in this module.
   ms.date: 10/14/2021
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
   ms.custom:
     - devx-track-bicep

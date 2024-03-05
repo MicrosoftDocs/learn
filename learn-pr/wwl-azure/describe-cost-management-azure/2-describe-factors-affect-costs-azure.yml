@@ -7,7 +7,7 @@ metadata:
   ms.date: 08/16/2023
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/2-describe-factors-affect-costs-azure.md)]

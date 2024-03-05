@@ -4,11 +4,10 @@ title: Try-This exercise - Run an image from the registry
 metadata:
   title: Try-This exercise - Run an image from the registry
   description: "Try-This exercise - Run an image from the registry"
-  ms.date: 11/14/2023
+  ms.date: 01/29/2024
   author: wwlpublish
   ms.author: bradj
-  ms.topic: module
-  ms.prod: azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/6-run-image-from-registry.md)]

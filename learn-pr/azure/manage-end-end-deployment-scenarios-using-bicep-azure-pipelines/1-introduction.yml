@@ -6,8 +6,8 @@ metadata:
   title: Introduction
   description: This unit introduces you to managing end-to-end deployment scenarios by using Bicep and Azure Pipelines.
   ms.date: 12/12/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
   ms.custom:
     - devx-track-bicep

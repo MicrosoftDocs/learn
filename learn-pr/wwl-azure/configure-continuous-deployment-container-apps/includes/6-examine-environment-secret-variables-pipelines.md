@@ -46,7 +46,7 @@ Secret variables set in the pipeline settings UI for a pipeline are scoped to th
 
 ### Secret variable in the UI
 
-To set secrets in the web interface, follow these steps:
+To set secrets in the Azure DevOps interface, follow these steps:
 
 1. Go to the Pipelines page, select the appropriate pipeline, and then select Edit.
 

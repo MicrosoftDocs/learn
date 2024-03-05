@@ -2,7 +2,7 @@ In this module, you'll learn how to:
 
 - Design security operations capabilities in hybrid and multicloud environments
 - Design centralized logging and auditing
-- Design Security Event Management (SIEM) solutions
+- Design Security Information and Event Management (SIEM) solutions
 - Design a solution for detection and response that includes Extended Detection and Response (XDR)
 - Design a solution for security orchestration, automation and response (SOAR)
 - Design security workflows
@@ -54,7 +54,7 @@ To deliver against these outcomes, security operations teams should be structure
 - **Hunt (tier 3):** Focused primarily on proactive hunting for highly sophisticated attack processes and developing guidance to the wider teams for maturing security controls as a result. The tier 3 team also acts as an escalation point for major incidents in to support forensic analysis and response.
 
 <!-- 
-[](https://learn.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-operations-center#modernization)
+[](/azure/cloud-adoption-framework/organize/cloud-security-operations-center#modernization)
 -->
 ## Modernization
 
@@ -68,7 +68,7 @@ Detecting and responding to threats is currently undergoing significant moderniz
 -   **Threat hunting:** SOCs are adding hypothesis driven threat hunting to proactively identify advanced attackers and shift noisy alerts out of frontline analyst queues.
 -   **Incident management:** Discipline is becoming formalized to coordinate nontechnical elements of incidents with legal, communications, and other teams. **Integration of internal context:** To help prioritize SOC activities such as the relative risk scores of user accounts and devices, sensitivity of data and applications, and key security isolation boundaries to closely defend.
 <!--
-[](https://learn.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-operations-center#team-composition-and-key-relationships)
+[](/azure/cloud-adoption-framework/organize/cloud-security-operations-center#team-composition-and-key-relationships)
 -->
 
 ## Team composition and key relationships

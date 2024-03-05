@@ -1,9 +1,9 @@
-You've constructed the prototype device and written the console app that drives it. Now it's time to deploy your app to the device!
+You've constructed the prototype device and written the console app that drives it. Now, it's time to deploy your app to the device.
 
 > [!IMPORTANT]
-> Ensure your Raspberry Pi is configured as described in the introduction unit. The SSH service must be enabled for secure shell access from your development machine. The `I2C` service must be enabled to allow your code to access the I<sup>2</sup>C bus. Ensure your Raspberry Pi is connected to your network via WiFi or Ethernet.
+> Ensure your Raspberry Pi is configured as described in the *Introduction* unit. The SSH service must be enabled for secure shell access from your development machine. The `I2C` service must be enabled to allow your code to access the I<sup>2</sup>C bus. Ensure your Raspberry Pi is connected to your network via WiFi or Ethernet.
 >
-> For more information about Raspberry Pi configuration, see the [Raspberry Pi documentation](https://www.raspberrypi.org/documentation/configuration/raspi-config.md). 
+> For more information about Raspberry Pi configuration, see the [Raspberry Pi documentation](https://www.raspberrypi.com/documentation/computers/configuration.html).
 
 ## Deployment types
 
@@ -11,7 +11,7 @@ You've constructed the prototype device and written the console app that drives 
 
 ## Create a destination directory on the Raspberry Pi
 
-Complete the following steps **in a new terminal window**:
+Complete the following steps *in a new terminal window*:
 
 1. Open a secure shell session to your Raspberry Pi.
 
@@ -41,7 +41,7 @@ Complete the following steps **in a new terminal window**:
 
 ## Publish a self-contained app to the Raspberry Pi
 
-Complete the following steps **in the original terminal window on your development machine**:
+Complete the following steps *in the original terminal window on your development machine*:
 
 1. Publish the app as a self-contained app.
 
@@ -50,7 +50,7 @@ Complete the following steps **in the original terminal window on your developme
     ```
 
     > [!IMPORTANT]
-    > This assumes you're using the recommended 64-bit OS. If you're using a 32-bit version of Raspberry Pi OS, use `--runtime linux-arm` in the command above to target the correct OS.
+    > This assumes you're using the recommended 64-bit OS. If you're using a 32-bit version of Raspberry Pi OS, use `--runtime linux-arm` in the preceding command to target the correct OS.
 
     The preceding command creates a directory with the files required for a self-contained deployment for the `linux-arm64` runtime. Take note of the location of the *publish* folder.
 

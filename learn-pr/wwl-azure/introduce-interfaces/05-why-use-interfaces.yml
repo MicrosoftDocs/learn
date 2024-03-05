@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduce-interfaces.why-use-interfaces
+title: Why use interfaces
+metadata:
+  title: Why use interfaces
+  description: "Why use interfaces"
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/05-why-use-interfaces.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following best describes an interface in C#?"
+    choices:
+    - content: "An interface is a concrete class that provides default behavior for a specific type"
+      isCorrect: false
+      explanation: "Incorrect. Interfaces are abstract types."
+    - content: "An interface is a blueprint for a class that defines a set of methods and properties that a class must implement."
+      isCorrect: true
+      explanation: "Correct! Interfaces provide a blueprint for classes, specifying a set of methods and properties that implementing classes must define."
+    - content: "An interface is a static class that provides utility functions for a specific type."
+      isCorrect: false
+      explanation: "Incorrect. An interface is an abstract type that specifies functionality to be implemented"
+  - content: "Which of the following is a benefit of using interfaces in C#?"
+    choices:
+    - content: "Interfaces help reduce tight coupling between classes"
+      isCorrect: true
+      explanation: "Correct. Interfaces help reduce tight coupling"
+    - content: "Interfaces prevent modularized unit testing"
+      isCorrect: false
+      explanation: "Incorrect. Interfaces help isolate and test specific functionality"
+    - content: "Interfaces increase dependencies between classes"
+      isCorrect: false
+      explanation: "Incorrect. Interfaces help reduce tight coupling by providing abstraction"

@@ -6,8 +6,8 @@ metadata:
   ms.date: 10/30/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.topic: module
+  ms.service: azure
 title: Implement access management for Azure resources
 summary: Explore how to use built-in Azure roles, managed identities, and RBAC-policy to control access to Azure resources.  Identity is the key to secure solutions.
 abstract: |

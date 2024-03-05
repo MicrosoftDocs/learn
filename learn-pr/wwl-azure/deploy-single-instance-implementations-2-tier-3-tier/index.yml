@@ -6,8 +6,8 @@ metadata:
   ms.date: 10/20/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.topic: module
+  ms.service: azure
 title: Deploy single-instance implementations of SAP on Azure (2-tier and 3-tier)
 summary: SAP professionals need to evaluate deploying SAP solutions on Azure. This module explores the preparation for single-instance SAP HANA deployment on Azure.
 abstract: |

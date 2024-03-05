@@ -7,7 +7,7 @@ metadata:
   ms.service: machine-learning
   author: fbsolo-ms1
   ms.author: franksolomon
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Introduction to data for machine learning
 summary: The power of machine learning models comes from the data that is used to train them. Through content and exercises, we explore how to understand your data, how to encode it so that the computer can interpret it properly, how to clean it of errors, and tips that will help you create models that perform well.
 abstract: | 
@@ -29,7 +29,7 @@ products:
 subjects:
 - machine-learning
 - data-analytics
-- data-lake
+- data-storage
 units:
 - learn.machinelearning.introduction-to-data-for-machine-learning.introduction
 - learn.machinelearning.introduction-to-data-for-machine-learning.detect-correct-data

@@ -7,9 +7,9 @@ metadata:
   ms.date: 10/20/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom: devx-track-arm-template
-  ms.prod: azure
+  ms.service: azure
 durationInMinutes: 15
 content: |
   [!include[](includes/3-deploy-via-azure-resource-manager-templates.md)]

@@ -4,12 +4,10 @@ title: Machine learning for computer vision
 metadata:
   title: Machine learning for computer vision
   description: "Understand machine learning enables computer vision"
-  ms.date: 10/27/2023
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.service: artificial-intelligence
-  ms.subservice: vision
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2b-computer-vision-models.md)]

@@ -8,7 +8,7 @@ metadata:
   author: beth-panx
   ms.author: xupa
   ms.topic: module-standard-task-based
-  ms.prod: microsoft-edge
+  ms.service: microsoft-edge
 summary: >
   Efficiently integrate Progressive Web App (PWA) features into projects using PWABuilder.  Master PWA integration using PWABuilder, optimizing user experience, and streamlining development for a polished final product.
 abstract: | 

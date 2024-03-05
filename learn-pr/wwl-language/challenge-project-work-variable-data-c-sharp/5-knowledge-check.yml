@@ -4,10 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/23/2023
+  ms.date: 02/21/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 3
 quiz:
   title: ""
@@ -19,7 +19,7 @@ quiz:
       explanation: "Incorrect. `String.Trim()` doesn't prevent or enable sorting of a string array."
     - content: "`String.Trim()` removes leading white space that would sort before numbers and letters."
       isCorrect: true
-      explanation: "Correct. String.Trim() removes white spaces that would interfere with sorting."
+      explanation: "Correct. String.Trim() removes both leading and trailing whitespace."
     - content: "The array sort is noticeably faster using `String.Trim()` on each element."
       isCorrect: false
       explanation: "Incorrect. The array sort isn't noticeably faster using `String.Trim()`."

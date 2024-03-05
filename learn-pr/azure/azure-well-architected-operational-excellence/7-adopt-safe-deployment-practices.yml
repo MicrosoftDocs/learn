@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-operational-excellence.adopt-safe-deployment-practices
+title: Adopt safe deployment practices
+metadata:
+  title: Adopt safe deployment practices
+  description: Learn how to adopt safe deployment practices to improve your operational excellence.
+  ms.date: 12/05/2023
+  author: claytonsiemens77
+  ms.author: csiemens
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/7-adopt-safe-deployment-practices.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'Which of the following is a fundamental principle of safe deployment practices?'
+    choices:
+    - content: 'All deployments should be automated through pipelines.'
+      isCorrect: true
+      explanation: "Correct. All deployments should be automated through pipelines. This ensures that deployments are consistent and repeatable."
+    - content: 'All deployments should be performed manually.'
+      isCorrect: false
+      explanation: 'Incorrect. Manual deployments are error-prone and inconsistent.'
+    - content: 'Only deployments to production should be automated.'
+      isCorrect: false
+      explanation: "Incorrect. All deployments should be automated, not just those to production. This ensures that deployments are consistent and repeatable."
+    - content: 'Only deployments to non-production environments should be automated.'
+      isCorrect: false
+      explanation: "Incorrect. All deployments should be automated, not just those to non-production environments. This ensures that deployments are consistent and repeatable."
+  - content: 'Which of the following is a recommended deployment strategy?'
+    choices:
+    - content: 'Prefer large, infrequent deployments.'
+      isCorrect: false
+      explanation: 'Incorrect. Large, infrequent deployments are risky and difficult to roll back.'
+    - content: 'Prefer small, frequent deployments.'
+      isCorrect: true
+      explanation: 'Correct. Small, frequent deployments are less risky and easier to roll back.'
+    - content: 'Prefer large, frequent deployments.'
+      isCorrect: false
+      explanation: "Incorrect. Deploying frequently is good, but large deployments are risky and difficult to roll back."
+    - content: 'Prefer small, infrequent deployments.'
+      isCorrect: false
+      explanation: "Incorrect. Small deployments are good, but they should be frequent. This ensures that deployments are consistent and repeatable."
+  - content: 'How did Contoso adopt the approach of progressive exposure?'
+    choices:
+    - content: 'They created separate environments for each feature, and exposed the environments to users as they were ready.'
+      isCorrect: false
+      explanation: 'Incorrect. This approach would require a large number of environments, and would be difficult to manage.'
+    - content: 'They had users enroll in a test program, and exposed new features to the users in the program.'
+      isCorrect: false
+      explanation: 'Incorrect. This approach would be difficult to manage.'
+    - content: 'They used a blue-green deployment strategy to push a new version to a portion of the production environment, and then gradually increased the exposure of the new version.'
+      isCorrect: false
+      explanation: "Incorrect. In this case the team chose to use feature flags."
+    - content: 'They used feature flags to control the exposure of new features to users.'
+      isCorrect: true
+      explanation: "Correct. This allowed Contoso to gradually expose new features to users, and to roll back the features if necessary."

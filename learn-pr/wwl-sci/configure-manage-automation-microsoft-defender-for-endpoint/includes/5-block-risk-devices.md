@@ -3,23 +3,21 @@ Contain a threat by not letting risky devices access your corporate resources th
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4byD1?rel=0]
 
-You'll need a Microsoft Endpoint Manager environment, with Intune managed and Microsoft Entra joined Windows 10 or higher devices.
-
-There are steps you'll need to take in Microsoft 365 Defender, Microsoft Endpoint Manager portal, and Microsoft Entra admin center.
+You'll need a Microsoft Endpoint Manager environment, with Intune managed and Azure AD joined Windows 10 or higher devices.
 
 The required roles to access these portals and implement Conditional access:
 
-- Microsoft 365 Defender portal - You'll need to sign in to the portal with a global administrator role to turn on the integration.
+- Microsoft Defender portal - You'll need to sign in to the portal with a global administrator role to turn on the integration.
 
 - Intune - You'll need to sign in to the portal with security administrator rights with management permissions.
 
-- Microsoft Entra admin center - You'll need to sign in as a global administrator, security administrator, or Conditional Access administrator.
+- Azure AD portal - You'll need to sign in as a global administrator, security administrator, or Conditional Access administrator.
 
 :::image type="content" source="../media/mde-architecture.png" alt-text="Diagram of architecture for M D E conditional access.":::
 
 Take the following steps to enable Conditional Access:
 
-1. Turn on the Microsoft Intune connection from Microsoft 365 Defender.
+1. Turn on the Microsoft Intune connection from Microsoft Defender XDR.
 
 1. Turn on the Defender for Endpoint integration in Endpoint Manager
 
@@ -27,11 +25,11 @@ Take the following steps to enable Conditional Access:
 
 1. Assign the policy
 
-1. Create a Microsoft Entra Conditional Access policy
+1. Create an Azure AD Conditional Access policy
 
 ### Turn on the Microsoft Intune connection
 
-1. In the Microsoft 365 Defender navigation pane, select **Settings > Endpoints** and then under General section select **Advanced features**.
+1. In the Microsoft Defender XDR navigation pane, select **Settings > Endpoints** and then under General section select **Advanced features**.
 
 1. Toggle the Microsoft Intune connection setting to **On**.
 
@@ -75,15 +73,13 @@ Take the following steps to enable Conditional Access:
 
 1. Select **Assignments**.
 
-1. Include or exclude your Microsoft Entra groups to assign them the policy.
+1. Include or exclude your Azure AD groups to assign them the policy.
 
 1. To deploy the policy to the groups, select **Review + Save** and then select **Save**. The user devices targeted by the policy are evaluated for compliance.
 
-<a name='create-an-azure-ad-conditional-access-policy'></a>
+### Create an Azure AD Conditional Access policy
 
-### Create a Microsoft Entra Conditional Access policy
-
-1. In the Azure portal, select **Microsoft Entra Conditional Access** from the Services menu, and select the drop-down **+ New policy**, and then select **Create new policy**.
+1. In the Azure portal, select **Azure AD Conditional Access** from the Services menu, and select the drop-down **+ New policy**, and then select **Create new policy**.
 
 1. Enter a policy Name, and select **Users or workload entities**. Use the Include or Exclude options to add your groups for the policy.
 
@@ -94,3 +90,4 @@ Take the following steps to enable Conditional Access:
 1. In the Grant area, apply Conditional Access based on device compliance. For example, select **Grant access > Require device to be marked as compliant**. Choose **Select** to save your changes.
 
 1. Select **Enable policy** choice, and then **Create** to save your changes.
+

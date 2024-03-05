@@ -4,8 +4,8 @@ metadata:
   title: Introduction to Azure Private 5G Core
   description: "Introduces Azure Private 5G Core, which provides 5G core network functions as part of an on-premises private mobile network for enterprises."
   ms.date: 10/10/2022
-  author: rmcmurray
-  ms.author: robmcm
+  author: lnyswonger
+  ms.author: lnyswonger
   ms.topic: module
   ms.service: private-5g-core
 title: Introduction to Azure Private 5G Core

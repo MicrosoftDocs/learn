@@ -1,4 +1,4 @@
-﻿### YamlMime:ModuleUnit
+### YamlMime:ModuleUnit
 uid: learn.azure.implement-firewall-load-balancer.6-knowledge-check
 title: Knowledge check
 metadata:
@@ -6,10 +6,9 @@ metadata:
   title: Knowledge check
   description: Check your knowledge of Azure Stack HCI Datacenter Firewall and Software Load Balancer.
   ms.date: 5/6/2021
-  author: rmcmurray
-  ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: JasonGerend
+  ms.author: jgerend
+  ms.topic: unit
 durationInMinutes: 5
 content: |
 quiz:

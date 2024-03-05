@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: module
-  ms.prod: azure
+  ms.custom: devx-track-arm-template
 durationInMinutes: 6
 content: |
   [!include[](includes/2-explore-azure-resource-manager-automation-for-sap.md)]

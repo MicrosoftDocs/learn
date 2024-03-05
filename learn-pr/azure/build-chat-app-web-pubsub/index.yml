@@ -6,7 +6,7 @@ metadata:
   ms.date: 12/14/2022
   author: dlepow
   ms.author: danlep
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.contributors: jixin, v-glennminch
   ms.service: azure-web-pubsub
   manager: mcleans

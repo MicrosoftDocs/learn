@@ -4,7 +4,7 @@ title: Connect to Azure Storage metrics in Azure Monitor
 metadata:
   title: Connect to Azure Storage metrics in Azure Monitor
   description: In this unit, you learn how Azure Storage accounts store metrics in Azure Monitor and how to examine those metrics by using the REST API.
-  ms.date: 04/11/2019
+  ms.date: 01/17/2024
   author: normesta
   ms.author: normesta
   ms.topic: unit

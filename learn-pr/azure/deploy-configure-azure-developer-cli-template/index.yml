@@ -7,9 +7,9 @@ metadata:
   ms.date: 11/01/2022
   author: alexwolfmsft
   ms.author: alexwolf
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom: engagement-fy23
+  ms.service: azure
 title: Deploy and configure Azure Developer CLI templates
 summary: "Learn how to deploy, configure and perform common tasks with Azure Developer CLI templates."
 abstract: |

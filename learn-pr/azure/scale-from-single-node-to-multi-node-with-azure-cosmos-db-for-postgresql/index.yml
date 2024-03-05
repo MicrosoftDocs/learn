@@ -7,7 +7,7 @@ metadata:
   ms.date: 02/22/2023
   author: sadukie
   ms.author: jonels
-  ms.topic: interactive-tutorial
+  ms.topic: module-standard-task-based
   ms.service: cosmos-db
   ms.subservice: postgresql
 title: Scale from a single node to multiple nodes by using Azure Cosmos DB for PostgreSQL

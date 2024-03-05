@@ -4,9 +4,9 @@ metadata:
   title: Design a full-stack monitoring strategy on Azure
   description: Use monitoring services on Azure to help bring operational excellence and security to your applications and infrastructure.
   ms.date: 11/13/2023
-  author: kayodeprinceMS
-  ms.author: kaprince
-  ms.topic: interactive-tutorial
+  author: bwren
+  ms.author: bwren
+  ms.topic: module
   ms.service: azure
 title: Design a full-stack monitoring strategy on Azure
 summary: Use monitoring services on Azure to help bring operational excellence and security to your applications and infrastructure.

@@ -6,9 +6,8 @@ metadata:
   description: A discussion of file-system authentication and authorization and how they affect your storage architecture.
   ms.date: 12/29/2020
   author: scjescho
-  ms.author: scjescho
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: padmalathas
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/5-authentication-authorization-considerations.md)]

@@ -1,4 +1,4 @@
-Your custom skill must implement the expected schema for input and output data that is expected by skills in an Azure Cognitive Search skillset.
+Your custom skill must implement the expected schema for input and output data that is expected by skills in an Azure AI Search skillset.
 
 ## Input Schema
 

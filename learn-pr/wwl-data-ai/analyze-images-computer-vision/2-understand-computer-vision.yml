@@ -4,12 +4,10 @@ title: Images and image processing
 metadata:
   title: Images and image processing
   description: "Understand how computers process images"
-  ms.date: 10/27/2023
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.service: artificial-intelligence
-  ms.subservice: vision
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/2-understand-computer-vision.md)]

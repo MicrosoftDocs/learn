@@ -1,4 +1,4 @@
-﻿### YamlMime:ModuleUnit
+### YamlMime:ModuleUnit
 uid: learn.azure.plan-deploy-sdn-infrastructure.6-knowledge-check
 title: Knowledge check
 metadata:
@@ -6,10 +6,9 @@ metadata:
   title: Knowledge check
   description: A knowledge check unit.
   ms.date: 11/23/2021
-  author: rmcmurray
-  ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: JasonGerend
+  ms.author: jgerend
+  ms.topic: unit
 durationInMinutes: 3
 content: |
 quiz:

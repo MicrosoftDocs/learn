@@ -6,10 +6,8 @@ metadata:
   ms.date: 11/16/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.custom:
-  - N/A
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Configure Azure Policy
 summary: |
   Learn how to configure Azure Policy to implement compliance requirements.
