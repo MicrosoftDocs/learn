@@ -49,7 +49,9 @@ Based on the scenario and the ideal solution, here's a possible architecture:
 
 The architecture uses several different services to minimize the amount of code you need to write, and to take the most possible advantage of the scalability and infrastructure benefits Azure provides.
 
-There's a complete learning path dedicated to exploring each piece of the architecture. Here, you'll get an overview about which solution components are selected and why. Then, in this module, you'll focus on the database service.
+Well-Known Text (WKT) is a plain text markup language for representing vector geometry locations on a map. WKT is an Open Geospatial Consortium (OGC) standard that is used to represent spatial data in a textual format. Most OGC-compliant systems support Well-Known Text.
+
+Here, you'll get an overview about which solution components are selected and why. Then, in this module, you'll focus on the database service.
 
 ### Store and process data with Azure SQL Database
 
@@ -59,7 +61,7 @@ Azure SQL Database has native JSON support, which helps in reducing the amount o
 
 Azure SQL also provides complete geospatial support, which is a great feature because manipulating geospatial data isn't the easiest of tasks. By having a fully featured geospatial engine within the database, you can avoid the complexity of integrating with external libraries. You also don't have to move data around to figure out, for example, if a bus is within a defined geofence. Because Azure SQL adheres to the [Open Geospatial Consortium standards](http://www.ogc.org.tw/en-US/Standards), it's easy to integrate data stored in Azure SQL with visualization libraries like OpenLayers.
 
-The aforementioned features are built on the rock-solid foundations of the relational model, evolved through years of improvement to meet the requirements of modern applications. Azure SQL Database is scalable up to 100 TB with the [Hyperscale tier](/azure/azure-sql/database/service-tier-hyperscale), or cost-effective with the [Serverless tier](/azure/azure-sql/database/serverless-tier-overview) (supports autoscaling and pause-and-resume). Azure SQL also supports columnstore indexes for blazing fast analytical queries, graph models to simplify complex object relationship management, and a state-of-the-art query optimizer that's continuously improving and can handle even the most demanding workload, like the one required by today's [massive multiplayer online gaming](https://techcommunity.microsoft.com/t5/azure-sql-blog/pearl-abyss-massive-scale-using-azure-sql-database/ba-p/386231).
+The aforementioned features are built on the rock-solid foundations of the relational model, evolved through years of improvement to meet the requirements of modern applications. Azure SQL Database is scalable up to 100 TB with the [Hyperscale tier](/azure/azure-sql/database/service-tier-hyperscale), meaning you can use it for storage-intensive applications (for example, large databases). Azure SQL Database is also cost-effective when you use the [Serverless tier](/azure/azure-sql/database/serverless-tier-overview), which supports autoscaling and pause-and-resume. Azure SQL also supports columnstore indexes for blazing fast analytical queries, graph models to simplify complex object relationship management, and a state-of-the-art query optimizer that's continuously improving and can handle even the most demanding workload, like the one required by today's [massive multiplayer online gaming](https://techcommunity.microsoft.com/t5/azure-sql-blog/pearl-abyss-massive-scale-using-azure-sql-database/ba-p/386231).
 
 With Azure SQL, it's also easy to access static data—like the route information provided by the GTFS standard—that can be stored in an Azure Blob Storage account. We can use the `OPENROWSET` function in Azure SQL to import data from a text file without the need for another service. This allows us to minimize solution complexity.
 

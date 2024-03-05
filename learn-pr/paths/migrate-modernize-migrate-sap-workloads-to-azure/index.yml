@@ -7,13 +7,14 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: learning-path
-  ms.prod: azure
+  ms.service: azure
 title: Modernize and migrate SAP workloads to Azure
 prerequisites: |
   Before taking this training, you should complete the Azure Administrator (AZ-104) or Azure Solutions Architect Expert (AZ-305) exam, and SAP HANA or NetWeaver training.
 summary: |
   SAP professionals a variety of SAP on-premises solutions that need to be migrated to the cloud. These modules explore migration of SAP workloads to Azure, including very large databases over 20 TB.
 iconUrl: /training/achievements/generic-trophy.svg
+hidden: true
 levels:
 - advanced
 roles:

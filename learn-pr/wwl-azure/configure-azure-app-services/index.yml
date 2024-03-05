@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
-  ms.prod: azure
   ms.service: app-service
 title: Configure Azure App Service
 summary: |

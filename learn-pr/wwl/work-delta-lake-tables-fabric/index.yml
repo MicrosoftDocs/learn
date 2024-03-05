@@ -3,10 +3,10 @@ uid: learn.wwl.work-delta-lake-tables-fabric
 metadata:
   title: Work with Delta Lake tables in Microsoft Fabric
   description: "Tables in a Microsoft Fabric lakehouse are based on the Delta Lake technology commonly used in Apache Spark. By using the enhanced capabilities of delta tables, you can create advanced analytics solutions."
-  ms.date: 12/26/2023
+  ms.date: 01/31/2024
   author: wwlpublish
-  ms.author: shlindsay
-  ms.topic: module
+  ms.author: anrudduc
+  ms.topic: module-standard-task-based
   ms.service: fabric
   ms.custom:
   - build-2023

@@ -7,7 +7,7 @@ metadata:
   author: alvinashcraft
   ms.author: aashcraft
   ms.topic: module
-  ms.prod: w10
+  ms.service: windows-10
   manager: jken
 title: Write your first Windows application
 summary: Learn how to create apps in some of the most popular Windows development frameworks - UWP, WPF, and Windows Forms.

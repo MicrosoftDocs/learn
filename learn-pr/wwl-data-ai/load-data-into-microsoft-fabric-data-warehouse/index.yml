@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: module
-  ms.prod: fabric
   ms.custom:
     - build-2023
     - build-2023-dataai
@@ -31,7 +30,7 @@ roles:
 products:
 - fabric
 subjects:
-- data-science
+- data-management
 - machine-learning
 units:
 - learn-wwl.load-data-into-microsoft-fabric-data-warehouse.introduction

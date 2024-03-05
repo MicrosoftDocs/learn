@@ -31,7 +31,7 @@ roles:
 products:
 - fabric
 subjects:
-- data-science
+- data-management
 - machine-learning
 units:
 - learn.wwl.train-track-model-fabric.introduction

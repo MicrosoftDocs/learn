@@ -4,6 +4,8 @@ You have an on-premises datacenter that you plan to keep, but you want to use Az
 
 **Azure virtual networks** enable Azure resources, such as virtual machines, web apps, and databases, to communicate with: each other, users on the internet, and on-premises client computers. You can think of an Azure network as a set of resources that links other Azure resources.
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6b5b138e-8406-406e-8b34-40bdadf9fc6d]
+
 Azure virtual networks provide key networking capabilities:
 
 - Isolation and segmentation
@@ -13,10 +15,7 @@ Azure virtual networks provide key networking capabilities:
 - Route network traffic
 - Filter network traffic
 - Connect virtual networks
- 
-#### Network configurations for virtual machines
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yEve]
 
 ### Isolation and segmentation
 

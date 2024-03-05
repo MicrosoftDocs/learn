@@ -2,13 +2,13 @@
 ms.custom:
   - build-2023
 ---
-In Microsoft Fabric, you can create a Dataflow (Gen2) in the Data Factory workload or Power BI workspace, or directly in the lakehouse. Since our scenario is focused on data ingestion, let's look at the **Data Factory** workload experience. Dataflows (Gen2) use Power Query Online to visualize transformations. See an overview of the interface:
+In Microsoft Fabric, you can create a Dataflow Gen2 in the Data Factory workload or Power BI workspace, or directly in the lakehouse. Since our scenario is focused on data ingestion, let's look at the **Data Factory** workload experience. Dataflows Gen2 use Power Query Online to visualize transformations. See an overview of the interface:
 
 ![Screenshot of the Power Query Online interface.](../media/power-query-online-overview.png)
 
 ### 1. Power Query ribbon
 
-Dataflows (Gen2) support a wide variety of data source connectors. Common sources include cloud and on-premises relational databases, Excel or flat files, SharePoint, SalesForce, Spark, and of course Fabric Lakehouses. Then there are numerous data transformations possible, such as:
+Dataflows Gen2 support a wide variety of data source connectors. Common sources include cloud and on-premises relational databases, Excel or flat files, SharePoint, SalesForce, Spark, and of course Fabric Lakehouses. Then there are numerous data transformations possible, such as:
 
 - Filter and Sort rows
 - Pivot and Unpivot
@@ -44,4 +44,4 @@ In the Query settings pane, you can see a **Data Destination** field where you c
 > [!TIP]
 > If made available, data analysts can also connect to the dataflow through Power BI Desktop.
 >
-> ![Screenshot of Power BI Desktop Get Data Connectors window with Power Platform selected including Power BI datasets, Lakehouses, Dataflows, and more.](../media/power-bi-desktop-dataflow-connectors.png)
+> ![Screenshot of Power BI Desktop Get Data Connectors window with Power Platform selected including Power BI semantic models, Lakehouses, Dataflows, and more.](../media/power-bi-desktop-dataflow-connectors.png)

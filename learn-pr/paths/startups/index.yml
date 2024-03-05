@@ -37,8 +37,6 @@ roles:
 - startup-founder
 products:
 - consumer
-subjects:
-- modern-life
 modules:
 - learn.startups.fundamentals
 - learn.startups.validate-idea

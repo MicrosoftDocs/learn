@@ -21,7 +21,7 @@ Understanding the assessment rules used in the migration process is important be
 
 For example, one of the rules in the assessment guidelines for migrating your SQL Server database to Azure SQL Database is the ***LinkedServer*** rule. This rule checks for the presence of linked servers, which aren't supported in Azure SQL Database. By reviewing this rule, you can identify any linked server dependencies and plan for alternative approaches or modifications in your application to ensure a successful transition to Azure SQL Database.
 
-To learn more about the rules used to assess the feasibility of migrating your SQL Server database to Azure SQL Database or Azure SQL Managed Instance, refer to the following links: [Assessment rules for SQL Server to Azure SQL Database migration](https://learn.microsoft.com/azure/azure-sql/migration-guides/database/sql-server-to-sql-database-assessment-rules) and [Assessment rules for SQL Server to Azure SQL Managed Instance migration](https://learn.microsoft.com/azure/azure-sql/migration-guides/managed-instance/sql-server-to-sql-managed-instance-assessment-rules).
+To learn more about the rules used to assess the feasibility of migrating your SQL Server database to Azure SQL Database or Azure SQL Managed Instance, refer to the following links: [Assessment rules for SQL Server to Azure SQL Database migration](/azure/azure-sql/migration-guides/database/sql-server-to-sql-database-assessment-rules) and [Assessment rules for SQL Server to Azure SQL Managed Instance migration](/azure/azure-sql/migration-guides/managed-instance/sql-server-to-sql-managed-instance-assessment-rules).
 
 ## Other supported scenarios
 
