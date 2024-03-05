@@ -34810,6 +34810,11 @@
       "source_path": "learn-pr/wwl-data-ai/read-text-computer-vision/4-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/read-text-computer-vision/6-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-identity-services/3-explore-azure-active-directory.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-identity-services/3-explore-azure-active-directory-azure-ad",
+      "redirect_document_id": false
     }
   ]
 }
