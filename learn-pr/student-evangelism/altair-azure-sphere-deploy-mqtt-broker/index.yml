@@ -6,7 +6,7 @@ metadata:
   ms.date: 11/16/2021
   author: gloveboxes
   ms.author: chnoring
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.custom: nextgen
   ms.service: azure-sphere
 title: Deploy a private MQTT broker

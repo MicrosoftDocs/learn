@@ -26,7 +26,7 @@ products:
 - windows
 subjects:
 - devops
-- development-tools
+- frontend-development
 units:
 - learn-windows.introduction-w10-dev.1-introduction-to-windows-10-development
 - learn-windows.introduction-w10-dev.2-installing-tools-automatically
