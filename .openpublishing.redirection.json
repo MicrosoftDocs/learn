@@ -34795,6 +34795,21 @@
       "source_path": "learn-pr/wwl-azure/security-public-access-azure-resources/6-azure-web-application-firewall.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/security-public-access-azure-resources/5-azure-web-application-firewall",
       "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-data-ai/read-text-computer-vision/3a-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/read-text-computer-vision/5-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-text-computer-vision/3-read-text-computer-vision.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/read-text-computer-vision/4-read-text-computer-vision",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-text-computer-vision/4-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/read-text-computer-vision/6-summary",
+      "redirect_document_id": false
     }
   ]
 }
