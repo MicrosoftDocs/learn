@@ -129,7 +129,7 @@ The following table outline is a summary of what we discussed in the previous pa
 
 1. Select the **Publish Changes** button on the top-left of the table designer window to save these table changes to the database.
 
-    ![Screenshot showing how to click the Publish Changes button, just above the table name field.](../media/new-table-17.png)
+    ![Screenshot showing how to click the Publish Changes button, located just above the table name field.](../media/new-table-17.png)
 
     If you're prompted to review the changes, select the **Update Database** button.
 
@@ -199,7 +199,7 @@ With the translation rules in mind, here's how you can create the translations t
 
 1. Select the **Publish Changes** button on the top left of the table designer window to save these table changes to the database.
 
-    ![Screenshot showing how to click the Publish Changes button, just above the table name field.](../media/translate-8.png)
+    ![Screenshot showing how to click the Publish Changes button, which is just above the table name field.](../media/translate-8.png)
 
     If you're prompted to review the changes, select the **Update Database** button.
 
