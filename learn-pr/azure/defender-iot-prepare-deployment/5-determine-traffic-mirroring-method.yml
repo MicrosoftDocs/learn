@@ -1,13 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.defender-iot-prepare-deployment.determine-traffic-mirroring-method
 title: Determine traffic mirroring methods to use
-
 metadata:
   title: Determine traffic mirroring methods to use
   description: "Describes the process to prepare which traffic monitoring methods to use."
-  ms.date: 10/11/2023
-  author: mjosephym
-  ms.author: v-mjosephy
+  ms.date: 03/04/2024
+  author: limwainstein
+  ms.author: lwainstein
   ms.topic: interactive-tutorial
   ms.service: defender-for-iot
 durationInMinutes: 5

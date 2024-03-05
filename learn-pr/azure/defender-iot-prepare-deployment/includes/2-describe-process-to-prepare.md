@@ -16,7 +16,7 @@ The phases include:
 
 At the end of your deployment, baseline learning ends with a set of learned network traffic, and operation mode begins.
 
-## OT site deployment preparation phase
+## In this phase
 
 This module describes the *"prepare"* phase, which is part of the *"plan and prepare"* phase of deployment. You already completed your deployment plan, including how you'll segment your network into sites and zones, the sensor connection methods to use, and the types of users and roles you want for each sensor.
 
