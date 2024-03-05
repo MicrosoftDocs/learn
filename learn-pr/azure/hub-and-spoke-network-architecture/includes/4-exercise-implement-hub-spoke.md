@@ -1,4 +1,4 @@
-You need to deploy your network infrastructure in a hub-spoke configuration for your resources. Additionally, your internal HR department wants to host a new internal HR system that shouldn't be accessible from the internet. The system should be accessible to everyone in the company, whether they work at headquarters or in a satellite office.
+You've decided to deploy your network infrastructure in a hub-spoke configuration for your resources. Additionally, your internal HR department wants to host a new internal HR system that shouldn't be accessible from the internet. The HR system should be accessible to everyone in the company, whether they work at headquarters or in a satellite office.
 
 In this exercise, you deploy your network infrastructure, and then create a new virtual network to host the servers for your company's new HR system.
 
@@ -8,11 +8,11 @@ In this exercise, you deploy your network infrastructure, and then create a new 
 
 This deployment creates the Azure network resources matching the preceding diagram. With these resources in place, you can add the new HR virtual network.
 
-First, create the virtual networks and subnets for your server resources. Run the following command:
+Create the virtual networks and subnets for your server resources. Run the following command:
 
 ```azurecli
 az deployment group create \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
     --template-uri https://raw.githubusercontent.com/MicrosoftDocs/mslearn-hub-and-spoke-network-architecture/master/azuredeploy.json
 ```
 
@@ -137,7 +137,7 @@ Now you've created a network security group that can be assigned to each of the 
 
 Now, you associate the network security group to the virtual network.
 
-1. If you close the **HRNsg** window, go to the **Home** page of the portal. Select **All resources** and select **HRNsg**. The **HRNsg** pane appears. Otherwise, go to the next step.
+1. If you closed the **HRNsg** window, go to the **Home** page of the portal. Select **All resources** and select **HRNsg**. The **HRNsg** pane appears. Otherwise, go to the next step.
 
 2. In the left menu pane, under **Settings**, select **Subnets**. The **Subnets** pane appears for your HRNsg network security group.
 

@@ -16,7 +16,7 @@ summary: Use Visual Studio Code and Azure Functions to rapidly create a serverle
 abstract: |
   In this module, you will:
   - Establish a solid understanding of Application Programming Interfaces (API).
-  - Create an API with Azure Functions.
+  - Create an API with Azure Functions v3 programming model for Node.js.
   - Connect to Azure Cosmos DB from an Azure Function.
   - Discern the benefits of REST and how to implement a RESTful API.
   - Distinguish the different types of security for Azure Functions and web-based APIs.
