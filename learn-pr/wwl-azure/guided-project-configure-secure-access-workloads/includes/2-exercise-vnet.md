@@ -1,4 +1,3 @@
-
 ## Scenario 
 
 The IT department needs network isolation and segmentation for the web application. Once the virtual network is created, the next step would be to configure virtual network peering. This allows the virtual networks to communicate with each other securely and privately.
@@ -16,4 +15,6 @@ Launch the exercise and follow the instructions. When you're done, be sure to re
 > [!NOTE]
 > To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/).
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://github.com/MicrosoftLearning/Configure-secure-access-to-workloads-with-Azure-virtual-networking-services/blob/main/Instructions/Labs/LAB_01_virtual_networks.md)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2261590)
+
+

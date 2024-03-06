@@ -4,10 +4,12 @@ title: Exercise - Operationalize and enforce policy to filter traffic
 metadata:
   title: Exercise - Operationalize and enforce policy to filter traffic
   description: "Exercise - Operationalize and enforce policy to filter traffic"
-  ms.date: 12/04/2023
+  ms.date: 03/06/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise-policy.md)]
