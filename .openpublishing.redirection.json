@@ -32467,6 +32467,131 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/deploy-backend-apis/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/openapi-apim-integrate-visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-backend-apis/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/openapi-apim-integrate-visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-backend-apis/2-create-apis-azure-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/openapi-apim-integrate-visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-backend-apis/3-exercise-deploy-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/openapi-apim-integrate-visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-backend-apis/4-build-your-application.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/openapi-apim-integrate-visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-backend-apis/5-exercise-set-up-data-feed.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/openapi-apim-integrate-visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-backend-apis/6-push-notifications-logic-apps.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/openapi-apim-integrate-visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-backend-apis/7-exercise-deploy-logic-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/openapi-apim-integrate-visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-backend-apis/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/openapi-apim-integrate-visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-full-stack-apps/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/get-started-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-full-stack-apps/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/get-started-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-full-stack-apps/2-exercise-deploy-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/get-started-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-full-stack-apps/3-accelerate-app-development.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/get-started-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-full-stack-apps/4-exercise-deploy-static-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/get-started-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-full-stack-apps/5-access-azure-sql-database.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/get-started-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-full-stack-apps/6-exercise-deploy-with-github-actions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/get-started-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-full-stack-apps/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/get-started-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/build-serverless-full-stack-apps-azure/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-foundation-modern-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-deployments-github-actions-azure/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/modules/github-actions-cd",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-deployments-github-actions-azure/1-introduction.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/modules/github-actions-cd",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-deployments-github-actions-azure/2-catch-the-bus.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/modules/github-actions-cd",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-deployments-github-actions-azure/3-exercise-deploy-resources.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/modules/github-actions-cd",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-deployments-github-actions-azure/4-deep-dive-github-actions.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/modules/github-actions-cd",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-deployments-github-actions-azure/5-exercise-configure-github-deployments.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/modules/github-actions-cd",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-deployments-github-actions-azure/6-summary.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/modules/github-actions-cd",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/build-chat-bot-with-azure-bot-service/index.yml",
       "redirect_url": "/azure/bot-service/",
       "redirect_document_id": false
