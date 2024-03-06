@@ -3,9 +3,9 @@ uid: learn.onboard-sensor-microsoft-defender-iot
 metadata:
   title: Onboard your first OT sensor to Microsoft Defender for IoT
   description: "Learn how to onboard an OT sensor as part of the deployment of Microsoft Defender for IoT to monitor your OT network."
-  ms.date: 12/4/2023
-  author: cwatson-cat
-  ms.author: cwatson
+  ms.date: 02/21/2024
+  author: limwainstein
+  ms.author: lwainstein
   ms.topic: module-standard-task-based
   ms.service: defender-for-iot
 title: 
