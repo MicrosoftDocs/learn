@@ -30503,6 +30503,56 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/cna-deploy-maintain/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-azure-devops-with-github",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cna-deploy-maintain/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-azure-devops-with-github",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cna-deploy-maintain/2-define-principles-benefits-devops.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-azure-devops-with-github",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cna-deploy-maintain/3-exercise-implement-infrastructure-as-code.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-azure-devops-with-github",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cna-deploy-maintain/4-deploy-maintain-cloud-native-app-using-github.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-azure-devops-with-github",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cna-deploy-maintain/5-exercise-provision-cloud-native-app-using-github.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-azure-devops-with-github",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cna-deploy-maintain/6-use-devops-iot-scenarios.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-azure-devops-with-github",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cna-deploy-maintain/7-exercise-configure-cicd-iot-scenarios.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-azure-devops-with-github",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cna-deploy-maintain/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-azure-devops-with-github",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cna-deploy-maintain/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-azure-devops-with-github",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/build-industrial-brain/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
       "redirect_document_id": false

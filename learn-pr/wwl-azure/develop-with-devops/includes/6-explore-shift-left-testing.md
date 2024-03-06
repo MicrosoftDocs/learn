@@ -1,11 +1,16 @@
 Testing in application lifecycle management is essential to maximize code quality and minimize operational risk associated with deploying and updating software. The term *shift-left* in this context conveys the idea of moving testing activities as early as possible in the development phase. The organization in our sample scenario should consider incorporating this approach into its DevOps strategy in order to minimize the current security and stability issues. In this unit, review different types of tests that could be implemented in this manner and then examine their implementation methods.
 
+:::image type="content" source="../media/6-shift-left-quality-vision.png" alt-text="Diagram showing the DevOps test principles.":::
+
 ## What tests should be part of shift-left testing?
 
 Software development incorporates a wide range of test types, but those of a particular interest to us include:
 
 - **Unit tests**: These tests focus on the smallest testable parts of an application code, such as individual functions or methods. The objective is to establish whether each unit of code can successfully perform its intended operation in isolation from the rest of the codebase and external dependencies. Such tests should be fully automated, quick (complete within 30 seconds), and provide full code coverage (which basically means that all unit tests should collectively test the entire codebase).
 Unit testing is suitable for the shift-left approach. We recommend applying it to all code as early in the development cycle as possible, preferably at the beginning of the programming phase.
+
+    :::image type="content" source="../media/6-test-vision.png" alt-text="Diagram showing the vision of testing and unit tests.":::
+
 - **Smoke tests**: These tests are meant to assess the core functionality of an application in a test environment. While they test the actual application (rather than its individual, isolated components, as unit tests do), their purpose is to determine if the application build or deployment is sufficiently stable to warrant more in-depth testing. However, they don't verify interoperability between apps. As with unit tests, they should be fully automated and relatively quick (user interaction can be simulated by using browser automation tools and user interface automation frameworks). The term *smoke test* is meant to convey the idea of smoke indicating a major issue (fire) that should be addressed as soon as possible.
 Smoke testing should also be implemented early in the development cycle, preferably as soon as a version of the software providing its core functionality is available. This applies to both the application build and deployment phases.
 - **Integration tests**: These tests validate interaction between different application components. Unlike unit tests, they can take a considerable amount of time to complete.
