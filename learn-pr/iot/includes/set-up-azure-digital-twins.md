@@ -35,6 +35,6 @@ Finally, run the following command to grant yourself the *Azure Digital Twins Da
 > If you find you're unable to run this command and you want to follow along with the hands-on exercises in this unit, have someone with elevated permissions (such as an Owner, Account Admin, or User Access Administrator + Contributor) run this command on your behalf. Instead of assigning the role to the current signed-in user account, they can enter the email associated with your Azure account for the `assignee` parameter.
 
 ```azurecli
-$USER = az ad signed-in-user show --query id -o tsv
-az dt role-assignment create --dt-name $INSTANCE_NAME --assignee $USER --role "Azure Digital Twins Data Owner"
+AZURE_USER=$(az ad signed-in-user show --query id -o tsv)
+az dt role-assignment create --dt-name $INSTANCE_NAME --assignee $AZURE_USER --role "Azure Digital Twins Data Owner"
 ```
