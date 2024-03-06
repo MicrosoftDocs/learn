@@ -8,8 +8,6 @@ The terms *source control* and *version control* are often used interchangeably,
 
 ## What are the benefits of version control?
 
-:::image type="content" source="../media/2-pipeline-phases.png" alt-text="Screenshot of a pipeline using your code from the version control with multiple phases, including build, test, and deploy.":::
-
 Version control keeps track of changes to files within its scope of management. This offers a wide range of benefits:
 
 - **History and version tracking**: You have the ability to review history of changes to any file, including the ability to determine when each individual change took place and what was their scope. This also provides traceability, typically by associating each set of changes with a unique identifier.
