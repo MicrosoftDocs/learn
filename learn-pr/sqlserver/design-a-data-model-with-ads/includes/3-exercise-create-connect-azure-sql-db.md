@@ -19,7 +19,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
     Why do you need your IP address? You'll be opening up access to this database, but restricting it to **only** your IP address in a later step.
 
-1. Run the following commands in the Cloud Shell. Enter a **complex password** and enter your local public IP addressa t the prompt, which you obtained in the preceding step.
+1. Run the following commands in the Cloud Shell. Enter a **complex password** and enter your local public IP address at the prompt, which you obtained in the preceding step.
 
     > [!NOTE]
     > A **complex password** must consist of:
