@@ -11,8 +11,8 @@ In this task, you’ll create a virtual machine using the Azure portal.
 2.  Select Create a resource &gt; Compute &gt; Virtual Machine &gt; Create.
 3.  The Create a virtual machine pane opens to the basics tab.
 4.  Verify or enter the following values for each setting. If a setting isn’t specified, leave the default value.
-
-**Basics tab**
+    
+    **Basics tab**
     
     | **Setting**                  | **Value**                                                  |
     | ---------------------------- | ---------------------------------------------------------- |
