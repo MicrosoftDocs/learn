@@ -62,4 +62,4 @@ In some cases, a device might be listed more than once, which happens when a dev
 
 ## Smart IT learning
 <!-- not sure if this is worth keeping. -->
-There is also a setting to continue a form of tracking the traffic even after the *Learning* stage has been turned off. Activating the *Smart IT Learning* makes Defender for IoT send alerts when new suspicious traffic is tracked.
+There is also a setting to continue a form of tracking the traffic even after the *Learning* stage has been turned off, and *operational* mode has started. Activating the *Smart IT Learning* makes Defender for IoT send alerts when new suspicious traffic is tracked.
