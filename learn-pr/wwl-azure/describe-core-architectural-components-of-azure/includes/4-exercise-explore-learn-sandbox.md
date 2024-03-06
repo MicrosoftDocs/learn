@@ -23,14 +23,12 @@ Use the PowerShell Get-date command to get the current date and time.
 ```powershell
 Get-date
 
-
 ```
 
 Most Azure specific commands will start with the letters az. The Get-date command you just ran is a PowerShell specific command. Let's try an Azure command to check what version of the CLI you're using right now.
 
 ```powershell
 az version
-
 
 ```
 
@@ -42,7 +40,6 @@ Enter bash to switch to the BASH CLI.
 
 ```powershell
 bash
-
 
 ```
 
@@ -57,7 +54,6 @@ Again, use the Get-date command to get the current date and time.
 ```azurecli
 Get-date
 
-
 ```
 
 You received an error because Get-date is a PowerShell specific command.
@@ -70,14 +66,12 @@ Use the date command to get the current date and time.
 ```azurecli
 date
 
-
 ```
 
 Just like in the PowerShell mode of the CLI, you can use the letters az to start an Azure command in the BASH mode. Try to run an update to the CLI with az upgrade.
 
 ```azurecli
 az upgrade
-
 
 ```
 
@@ -91,7 +85,6 @@ Enter az interactive to enter interactive mode.
 
 ```azurecli
 az interactive
-
 
 ```
 
@@ -107,12 +100,10 @@ Once initialized, you can use the arrow keys or tab to help complete your comman
 ```azurecli
 version
 
-
 ```
 
 ```azurecli
 upgrade
-
 
 ```
 
@@ -120,7 +111,6 @@ The commands should have worked the same as before, and given you the same resul
 
 ```azurecli
 exit
-
 
 ```
 
