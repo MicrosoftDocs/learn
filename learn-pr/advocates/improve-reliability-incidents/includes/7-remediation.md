@@ -1,6 +1,6 @@
 Dividing the incident response lifecycle into five phases as you've seen in this module helps you to understand the process, but the phases aren't always as distinct as they appear in the diagram. In particular, the line between the response and remediation phases often begins to blur. This is especially true when actions intended to mitigate or improve the situation have the opposite effect. In this case, response and remediation tend to overlap or go back and forth between the two.
 
-:::image type="content" source="../media/lifecycle-remediation.png" alt-text="Cycle diagram of circles labeled with incident responses phases. Circles are connected to next circle with arrows from phase to phase. Detections, Response, and Remediation are highlighted":::
+:::image type="content" source="../media/lifecycle-remediation.png" alt-text="Cycle diagram of circles labeled with incident responses phases. Circles are connected to next circle with arrows from phase to phase. Detections, Response, and Remediation are highlighted.":::
 
 In this unit, you'll learn more about remediation and the steps that make up this phase, as well as some helpful tips and tools. One important thing to note: you shouldn't take the measures outlined here as a prescriptive checklist.
 

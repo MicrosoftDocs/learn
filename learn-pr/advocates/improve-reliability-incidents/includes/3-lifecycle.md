@@ -24,6 +24,6 @@ The individual phases of the incident response process look a little different d
 - **Analysis**: To obtain lasting value from incidents, you need to learn from them. This phase is the process of gathering the information on just what happened and when during the incident and seeing what you can learn from it by asking the right questions. There's an entire module on Learning from Failure that addresses this phase.
 - **Readiness**: You should incorporate the lessons learned in the analysis phase into your operations practice. If there are action items that would help prevent a similar outage in the future, they would also be part of this phase.
 
-:::image type="content" source="../media/lifecycle.png" alt-text="Cycle diagram of circles labeled with phases from above. Circles are connected to next circle with arrows from phase to phase":::
+:::image type="content" source="../media/lifecycle.png" alt-text="Cycle diagram of circles labeled with phases from above. Circles are connected to next circle with arrows from phase to phase.":::
 
 Before you create an incident response plan, you need to understand the characteristics and value of incidents and be familiar with the phases of the incident lifecycle. The next step is to ensure that your response strategy is built on a solid foundation.
