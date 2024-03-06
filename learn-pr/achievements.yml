@@ -3053,3 +3053,8 @@ achievements:
   title: Architect full-stack applications and automate deployments with GitHub
   summary: Deploy an end-to-end solution to solve the real-world scenario of catching the bus. You'll learn how to architect a solution that uses Azure SQL Database, Azure Functions, Azure Static Web Apps, Logic Apps, Visual Studio Code, and GitHub Actions.
   iconUrl: /training/achievements/automate-deployments-github-actions-azure.svg
+- uid: learn.build-serverless-full-stack-apps-azure.trophy
+  type: trophy
+  title: Build serverless, full stack applications in Azure
+  summary: Learn how to create, build, and deploy modern full stack applications in Azure by using the language of your choice (Python, Node.js, or .NET) and with a Vue.js frontend. Using a real-world scenario of trying to catch the bus, you will learn how to build a solution that uses Azure SQL Database, Azure Functions, Azure Static Web Apps, Logic Apps, Visual Studio Code, and GitHub Actions.
+  iconUrl: /training/achievements/build-serverless-full-stack-apps-azure.svg

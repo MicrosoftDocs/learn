@@ -32512,6 +32512,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/build-serverless-full-stack-apps-azure/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-foundation-modern-apps",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/automate-deployments-github-actions-azure/index.yml" ,
       "redirect_url": "https://learn.microsoft.com/training/modules/github-actions-cd",
       "redirect_document_id": false
