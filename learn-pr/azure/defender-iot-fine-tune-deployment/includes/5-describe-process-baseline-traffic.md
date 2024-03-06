@@ -1,7 +1,7 @@
 <!-- can use this article for screenshots as well /organizations/how-to-manage-cloud-alerts -->
 ## Describe the baseline process
 
-Your sensor is now fine tuned and almost fully operational. The final stage is to create a baseline of alerts so that Microsoft Defender for IoT understands the normal type of traffic flow through your system. This way Defender for IoT is able to identify which traffic is most dangerous or suspicious and produces accurate alerts. This *learning* process can take several weeks as you redefine any incorrect alerts that Defender for IoT flags.
+Your sensor is now fine tuned and almost fully operational. The final stage is to create a baseline of alerts so that Microsoft Defender for IoT understands the normal type of traffic flow through your system. Then, Defender for IoT is able to identify which traffic is most dangerous or suspicious and produces accurate alerts. This *learning* process can take several weeks as you redefine any incorrect alerts that Defender for IoT flags.
 
 Once the learning process is complete, Defender for IoT creates an accurate baseline of alerts to work from and protect your devices. It's still possible that you have to add new alerts but this occurs on a less regular basis than in the initial period.
 
