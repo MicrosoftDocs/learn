@@ -4,7 +4,10 @@ To access a protected resource like email or calendar data, your application nee
 
 As an application developer, you must identify how your application will access data. The application can use delegated access, acting on behalf of a signed-in user, or app-only access, acting only as the application's own identity.
 
-## Delegated access (access on behalf of a user)
+:::image type="content" source="../media/access-scenarios-a2eca226.png" alt-text="Diagram showing access scenarios for delegated access and application only access.":::
+
+
+## Delegated access (access on behalf of a user)<br>
 
 In this access scenario, a user has signed into a client application. The client application accesses the resource on behalf of the user. Delegated access requires delegated permissions. Both the client and the user must be authorized separately to make the request.
 
@@ -49,14 +52,14 @@ One way that applications are granted permissions is through consent. Consent is
 
 The key details of a consent prompt are the list of permissions the application requires and the publisher information
 
-## User consent
+### User consent
 
 User consent happens when a user attempts to sign into an application. The user provides their sign-in credentials. These credentials are checked to determine whether consent has already been granted. If no previous record of user or admin consent for the required permissions exists, the user is shown a consent prompt, and asked to grant the application the requested permissions. In many cases, an admin may be required to grant consent on behalf of the user.
 
-## Administrator consent
+### Administrator consent
 
 Depending on the permissions they require, some applications might require an administrator to be the one who grants consent. For example, application permissions and many high-privilege delegated permissions can only be consented to by an administrator. Administrators can grant consent for themselves or for the entire organization.
 
-## Preauthorization
+### Preauthorization
 
 Preauthorization allows a resource application owner to grant permissions without requiring users to see a consent prompt for the same set of permissions that have been preauthorized. This way, an application that has been preauthorized won't ask users to consent to permissions. Resource owners can preauthorize client apps in the Azure portal or by using PowerShell and APIs, like Microsoft Graph.
