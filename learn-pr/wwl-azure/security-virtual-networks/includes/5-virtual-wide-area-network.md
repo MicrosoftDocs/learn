@@ -185,4 +185,297 @@ You can use the following example values to create a VNet. Make sure to substitu
 
 ### Connect a VNet to a hub
 
+The following steps enable you to connect your virtual network to your virtual hub using PowerShell. You can also use Azure portal to complete this task. Repeat these steps for each VNet that you want to connect.
+
+Before you create a connection, be aware of the following:<br>
+
+ -  A virtual network can only be connected to one virtual hub at a time.<br>
+ -  In order to connect it to a virtual hub, the remote virtual network can't have a gateway.<br>
+ -  Some configuration settings, such as **Propagate static route**, can only be configured in the Azure portal at this time.<br>
+
+If VPN gateways are present in the virtual hub, this operation as well as any other write operation on the connected VNet can cause disconnection to point-to-site clients as well as reconnection of site-to-site tunnels and **Border Gateway Protocol (BGP)** sessions.
+
+### Add a connection
+
+1. Declare the variables for the existing resources, including the existing virtual network.
+
+`$resourceGroup = Get-AzResourceGroup -ResourceGroupName "TestRG"`
+
+`$virtualWan = Get-AzVirtualWan -ResourceGroupName "TestRG" -Name "TestVWAN1"`
+
+`$virtualHub = Get-AzVirtualHub -ResourceGroupName "TestRG" -Name "Hub1"`
+
+`$remoteVirtualNetwork = Get-AzVirtualNetwork -Name "VNet1" -ResourceGroupName "TestRG"`
+
+2. Create a connection to peer the virtual network to the virtual hub.
+
+`New-AzVirtualHubVnetConnection -ResourceGroupName "TestRG" -VirtualHubName "Hub1" -Name "VNet1-connection" -RemoteVirtualNetwork $remoteVirtualNetwork`
+
 ### Configure VPN device
+
+#### Download VPN configuration
+
+Use the VPN device configuration file to configure your on-premises VPN device. Here are the basic steps:
+
+1. From your Virtual WAN page, go to **Hubs** \-&gt; **Your virtual hub** \-&gt; **VPN (Site to site)** page.<br>
+
+2. At the top of the **VPN (Site to site)** page, click **Download VPN Config**. You'll see a series of messages as Azure creates a new storage account in the resource group 'microsoft-network-\[location\]', where location is the location of the WAN. You can also add an existing storage account by clicking "Use Existing" and adding a valid SAS URL with write permissions enabled.<br>
+
+3. Once the file finishes creating, click the link to download the file. This creates a new file with VPN configuration at the provided SAS url location.<br>
+
+4. Apply the configuration to your on-premises VPN device. For more information, see VPN device configuration in this section.<br>
+
+5. After you've applied the configuration to your VPN devices, you aren't required to keep the storage account that you created.
+
+#### VPN device configuration file
+
+The device configuration file contains the settings to use when configuring your on-premises VPN device. When you view this file, notice the following information:
+
+**vpnSiteConfiguration** \- This section denotes the device details set up as a site connecting to the virtual WAN. It includes the name and public IP address of the branch device.<br>
+
+**vpnSiteConnections** \- This section provides information about the following settings:<br>
+
+ -  **Address space** of the virtual hub(s) virtual network.
+     -  Example:
+         -  `"AddressSpace":"10.1.0.0/24"`
+
+ -  **Address space** of the virutal networks that are connected to the virtual hub.
+     -  Example:
+         -  `"ConnectedSubnets":["10.2.0.0/16","10.3.0.0/16"]`
+
+ -  **IP address space o**f the virtual hub vpngateway. Because each vpngateway connection is composed of two tunnels in active-active configuration, you'll see both IP addresses listed in this file. In this example, you see "Instance0" and "Instance1" for each site.
+     -  Example:
+         -  `"Instance0":"104.45.18.186"`
+         -  `"Instance1":"104.45.13.195"`
+
+ -  **Vpngateway connection configuration details** such as BGP, preshared key etc. The PSK is the preshared key that is automatically generated for you. You can always edit the connection in the **Overview** page for a custom **Pre-Shared Key (PSK)**.
+
+#### Example device configuration file
+
+`{`
+
+`"configurationVersion":{`
+
+`"LastUpdatedTime":"2018-07-03T18:29:49.8405161Z",`
+
+`"Version":"r403583d-9c82-4cb8-8570-1cbbcd9983b5"`
+
+`},`
+
+`"vpnSiteConfiguration":{`
+
+`"Name":"testsite1",`
+
+`"IPAddress":"73.239.3.208"`
+
+`},`
+
+`"vpnSiteConnections":[`
+
+`{`
+
+`"hubConfiguration":{`
+
+`"AddressSpace":"10.1.0.0/24",`
+
+`"Region":"West Europe",`
+
+`"ConnectedSubnets":[`
+
+`"10.2.0.0/16",`
+
+`"10.3.0.0/16"`
+
+`]`
+
+`},`
+
+`"gatewayConfiguration":{`
+
+`"IpAddresses":{`
+
+`"Instance0":"104.45.18.186",`
+
+`"Instance1":"104.45.13.195"`
+
+`}`
+
+`},`
+
+`"connectionConfiguration":{`
+
+`"IsBgpEnabled":false,`
+
+`"PSK":"bkOWe5dPPqkx0DfFE3tyuP7y3oYqAEbI",`
+
+`"IPsecParameters":{`
+
+`"SADataSizeInKilobytes":102400000,`
+
+`"SALifeTimeInSeconds":3600`
+
+`}`
+
+`}`
+
+`}`
+
+`]`
+
+`},`
+
+`{`
+
+`"configurationVersion":{`
+
+`"LastUpdatedTime":"2018-07-03T18:29:49.8405161Z",`
+
+`"Version":"1f33f891-e1ab-42b8-8d8c-c024d337bcac"`
+
+`},`
+
+`"vpnSiteConfiguration":{`
+
+`"Name":" testsite2",`
+
+`"IPAddress":"66.193.205.122"`
+
+`},`
+
+`"vpnSiteConnections":[`
+
+`{`
+
+`"hubConfiguration":{`
+
+`"AddressSpace":"10.1.0.0/24",`
+
+`"Region":"West Europe"`
+
+`},`
+
+`"gatewayConfiguration":{`
+
+`"IpAddresses":{`
+
+`"Instance0":"104.45.18.187",`
+
+`"Instance1":"104.45.13.195"`
+
+`}`
+
+`},`
+
+`"connectionConfiguration":{`
+
+`"IsBgpEnabled":false,`
+
+`"PSK":"XzODPyAYQqFs4ai9WzrJour0qLzeg7Qg",`
+
+`"IPsecParameters":{`
+
+`"SADataSizeInKilobytes":102400000,`
+
+`"SALifeTimeInSeconds":3600`
+
+`}`
+
+`}`
+
+`}`
+
+`]`
+
+`},`
+
+`{`
+
+`"configurationVersion":{`
+
+`"LastUpdatedTime":"2018-07-03T18:29:49.8405161Z",`
+
+`"Version":"cd1e4a23-96bd-43a9-93b5-b51c2a945c7"`
+
+`},`
+
+`"vpnSiteConfiguration":{`
+
+`"Name":" testsite3",`
+
+`"IPAddress":"182.71.123.228"`
+
+`},`
+
+`"vpnSiteConnections":[`
+
+`{`
+
+`"hubConfiguration":{`
+
+`"AddressSpace":"10.1.0.0/24",`
+
+`"Region":"West Europe"`
+
+`},`
+
+`"gatewayConfiguration":{`
+
+`"IpAddresses":{`
+
+`"Instance0":"104.45.18.187",`
+
+`"Instance1":"104.45.13.195"`
+
+`}`
+
+`},`
+
+`"connectionConfiguration":{`
+
+`"IsBgpEnabled":false,`
+
+`"PSK":"YLkSdSYd4wjjEThR3aIxaXaqNdxUwSo9",`
+
+`"IPsecParameters":{`
+
+`"SADataSizeInKilobytes":102400000,`
+
+`"SALifeTimeInSeconds":3600`
+
+`}`
+
+`}`
+
+`}`
+
+`]`
+
+`}`
+
+#### Configure your VPN device
+
+> [!NOTE]
+> If you are working with a Virtual WAN partner solution, VPN device configuration automatically happens. The device controller obtains the configuration file from Azure and applies to the device to set up connection to Azure. This means you don't need to know how to manually configure your VPN device.
+
+#### Caveats:
+
+ -  The instructions on the VPN devices page aren't written for Virtual WAN, but you can use the Virtual WAN values from the configuration file to manually configure your VPN device.
+ -  The downloadable device configuration scripts that are for VPN Gateway don't work for Virtual WAN, as the configuration is different.
+ -  A new Virtual WAN can support both IKEv1 and IKEv2.
+ -  Virtual WAN can use both policy based and route-based VPN devices and device instructions.
+
+### View or edit gateway settings
+
+You can view and edit your VPN gateway settings at any time. Go to your **Virtual HUB** \-&gt; **VPN (Site to site)** and select **View/Configure**.
+
+:::image type="content" source="../media/view-configuration-1-f41fd8a5.png" alt-text="Screenshot showing how to view and edit your Virtual Private Network gateway settings from the Virtual Hub configuration page.":::
+
+
+On the **Edit VPN Gateway** page, you can see the following settings:
+
+ -  **Public IP Address**: Assigned by Azure.<br>
+ -  **Private IP Address**: Assigned by Azure.<br>
+ -  **Default BGP IP Address**: Assigned by Azure.<br>
+ -  **Custom BGP IP Address**: This field is reserved for APIPA (Automatic Private IP Addressing). Azure supports BGP IP in the ranges 169.254.21.\* and 169.254.22.\*. Azure accepts BGP connections in these ranges but will dial connection with the default BGP IP. Users can specify multiple custom BGP IP addresses for each instance. The same custom BGP IP address shouldn't be used for both instances.<br>
+
+:::image type="content" source="../media/edit-gateway-931c0276.png" alt-text="Screenshot showing how to edit virtual private network gateway settings.":::
