@@ -1,4 +1,4 @@
-<!-- also re read and make adjustments, also where will the items needed in the exercise unit be explained? THey should be here somewhere in the doc. -->
+<!-- also re read and make adjustments, also where will the items needed in the exercise unit be explained? THey should be here somewhere in the doc. Can use this page <https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/update-device-inventory#edit-device-properties-per-device> for images -->
 # Plan fine-tuning and calibration
 
 Data is now flowing from your sensor to Microsoft Defender for IoT. The monitoring software initially identifies the interfaces and endpoints and tries to identify where they're located in the system, which subnet they're connected to and what security settings should be given to each one.
@@ -13,9 +13,15 @@ The sensor analyzes your system and assigns subnet settings and attempts to unde
 
 The first stage of fine-tuning your sensor is to run the **Analyze** feature in the Deployment section of the sensor. When the analysis function is completed, check the information about each interface. If it isn't what you expected, you need to check that subnet and device settings and make any needed changes.
 
+## Check public IP addresses
+
+It is important to identify any public IP addresses that are used internally. These must be listed and <!--what do we need to do? remove, reassign an IP, define as authorized?-->. If a public IP address is not listed as a subnet it will be treated as a public network for security settings.
+
 ## Check and modify the subnet settings
 
 The sensor software /Defender for IoT identifies the subnets within your system. However, you might also need to correct and change some of the subnet settings or even update the list of subnets made by Defender for IoT.
+
+Any subnets that are not listed and configured will be considered as external networks.
 
 You can update the subnet settings using a .CSV file containing a new and complete list of all subnets, with the data formatted in a specific order. This requires a .CSV file to upload, and is beyond the scope of this Learn Module.
 
@@ -30,6 +36,10 @@ We recommend that you enter a meaningful name that specifies the subnet's networ
 You might also want to define this as a segregated subnet, meaning the subnet is displayed separately in the device map for the Purdue levels view.
 
 Changes are made and then the new subnet settings can be saved.
+
+## DHCP address ranges
+<!-- exclude this or is it important??-->
+Devices that have an IP address allocated by a DHCP server, which change dynamically, must define the address ranges used.
 
 ## Important devices
 
@@ -48,3 +58,8 @@ You can also customize other parts of the data, such as the names assigned to th
 ## Merge devices
 
 In some cases, a device might be listed more than once, which happens when a device has two or more similar connectors, for example a laptop with both Wifi and a physical network card. In this case, you need to merge them together, using the **Merge** option. This makes a new device listing that contains all of the data from both merged devices.
+<!-- <https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-control-what-traffic-is-monitored#manually-define-a-subnet-as-ics> why would i define something as ICS, it doesnt explain here?-->
+
+## Smart IT learning
+<!-- not sure if this is worth keeping. -->
+There is also a setting to continue a form of tracking the traffic even after the *Learning* stage has been turned off. Activating the *Smart IT Learning* makes Defender for IoT send alerts when new suspicious traffic is tracked.

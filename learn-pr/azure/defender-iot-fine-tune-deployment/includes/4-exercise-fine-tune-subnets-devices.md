@@ -3,6 +3,10 @@
 <https://youtu.be/iwEAHiN6BOI?si=xUeeL_LF2T-9zjc5&t=1544>
 Your sensor is now sending data to Microsoft Defender for IoT, but we need to check that the sensors are recognized, and configured correctly. The sensor initially scans the entire network and tries to identify where all of the devices should be located within the Purdue levels.
 
+## Check public IP addresses
+
+What do we do here?
+
 ## View the subnets detected by your sensor
 
 First you analyze the traffic being monitored.
@@ -57,13 +61,17 @@ When all of the subnets are correctly set up, select **Save** to save the update
 
 Once any changes are made, the analysis should be run again to ensure the set-up is now correct.  <!-- is this the way to describe this. Or should be: Once all changes are made, select **Analyze** and review the results again. -->
 
+## Add DHCP address ranges
+
+<!-- if we think this is relevant take the info from here for instructions. <https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-control-what-traffic-is-monitored#configure-dhcp-address-ranges> -->
+
 ## View detected devices
 
 <!-- carry on watching this <https://youtu.be/FbLhJZN1LdQ?si=xMBscEGQxGspzMSR&t=4635> -->
 
 All of the devices detected by Defender for IoT appear in the Device inventory and Device map. You make changes to the device details by selecting a specific item and then selecting **Edit**.
 
-Or select a group of items to edit at the same time, select **Add field types** and make your changes. It's important to review the data for the Name, Class, Type, and Subtype, Authorization, Scanner device, and Programming device columns.<!-- what does this refer to? the names of the settings do not match and the multiple choice option doesnt exist either?-->
+Or select a group of items to edit at the same time, select **Add field types** and make your changes. It's important to review the data for the **Name**, **Class**, **Type**, and **Subtype**, **Authorization**, **Scanner device**, and **Programming device** columns.<!-- what does this refer to? the names of the settings do not match and the multiple choice option doesnt exist either?-->
 
 ## Update selected details
 <!-- go over this, how to give examples of this??-->

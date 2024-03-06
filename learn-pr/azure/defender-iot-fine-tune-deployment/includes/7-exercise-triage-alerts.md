@@ -32,3 +32,20 @@ What happens during learning mode?
 
 How long should learning mode last?
 <https://learn.microsoft.com/azure/defender-for-iot/organizations/ot-deploy/create-learned-baseline#learn-mode-timeline>
+
+## End Learning mode
+<!-- Should this be part of the LM? Even though this will be done at a later time in real life, as part of the exercise it should be added to this unit.-->
+After a week or two when Defender for IoT has learnt to identify suspicious traffic and not send false alerts, you can turn off the *Learn* status.
+
+In the Sensor:
+
+1. Select **System settings**.
+1. Select **Detection Engines and Network Modelling**.
+1. Under **Network modelling**, toggle the **Learning** button to **Enabled**.
+1. Select **Close**.
+
+After this change, any new devices or traffic trigger an alert, which is assessed like other alerts.
+
+## Check your work
+
+What do we do to show this has been successful?

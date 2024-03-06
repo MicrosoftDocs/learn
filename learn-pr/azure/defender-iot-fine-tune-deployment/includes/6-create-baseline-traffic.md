@@ -56,7 +56,9 @@ Alert severities on this page are listed by the severity as shown in the Azure p
 
 Changes are saved and the baseline alerts are updated accordingly. As this process continues, you'll notice a decrease in the number of new alerts as the sensor learns the normal flow of traffic in your system.
 
-Eventually, the sensor will automatically change from Learning mode to Operational mode when it detects a low level of new alerts. Alternatively, if you think the sensor is properly set up you can manually change to Operational mode. After this you could still receive new alerts, and must check and triage them as well. Some need to be assigned as Learn and even though the sensor isn't in the Learning mode, new alerts can be added to the baseline to keep the sensor up to date of new threats to your system.
+Eventually, the sensor will automatically change from Learning mode to Operational mode when it detects a low level of new alerts. Alternatively, if you think the sensor is properly set up you can manually change to Operational mode.
+
+After this you could still receive new alerts, and must check and triage them as well. Some need to be assigned as Learn and even though the sensor isn't in the Learning mode, new alerts can be added to the baseline to keep the sensor up to date of new threats to your system.
 
 <!-- A nice definition. may use it more.
 Baseline - creates an environmental baseline for the normal communication behaviour of devices in your network is known. going forward, anything that is unseen traffic will create an alert to be followed up with.
