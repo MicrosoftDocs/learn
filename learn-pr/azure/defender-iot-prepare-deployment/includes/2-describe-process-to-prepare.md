@@ -4,7 +4,7 @@
 
 The following image depicts an OT monitoring deployment path, with the team responsible for each phase:
 
-:::image type="content" source="../media/2-ot-deploy.png" alt-text="Diagram of an OT deployment path." border="false":::
+:::image type="content" source="../media/2-sensor-deploy.png" alt-text="Diagram of an OT deployment path." border="false":::
 
 The phases include:
 
