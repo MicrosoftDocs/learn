@@ -49,9 +49,9 @@ you can update the subnets listed using the following options:
 -->
 |Name  |Description  |
 |---------|---------|
-| **IP address** | <Value> |
-| **Mask**| <Value> |
-| **Name**| <Value>|
+| **IP address** | < Value > |
+| **Mask**| < Value > |
+| **Name**| < Value >|
 |**Segregated**     |   Select to show this subnet separately when displaying the device map according to Purdue level.  |
 
 <!-- do we want to show changing a device?? or is that beyond the scope? must talk about this, but how much details??? change one ip setting? -->
