@@ -1,9 +1,12 @@
-Whether you’re delivering content and files or building global apps and APIs, Azure Front Door can help you deliver higher availability, lower latency, greater scale, and more secure experiences to your users wherever they are.
+Whether you’re delivering content and files or building global apps and APIs, Azure Front Door can help you deliver higher availability, lower latency, greater scale, and more secure experiences to your users wherever they are.<br>
 
 Azure Front Door is Microsoft’s modern cloud Content Delivery Network (CDN) that provides fast, reliable, and secure access between your users and your applications’ static and dynamic web content across the globe. Azure Front Door delivers your content using Microsoft’s global edge network with hundreds of global and local points of presence (PoPs) distributed around the world close to both your enterprise and consumer end users.
 
 :::image type="content" source="../media/azure-front-door-d3d96b00.png" alt-text="Diagram showing how Azure Front Door Azure Front Door is Microsoft’s modern cloud Content Delivery Network (CDN) that provides fast, reliable, and secure access between your users and your applications static and dynamic web content across the globe.":::
 
+
+> [!NOTE]
+> For web workloads, we highly recommend utilizing Azure DDoS protection and a web application firewall to safeguard against emerging DDoS attacks. Another option is to employ Azure Front Door along with a web application firewall. Azure Front Door offers platform-level protection against network-level DDoS attacks.
 
 Azure Front Door enables internet-facing application to:
 
@@ -42,6 +45,20 @@ Modernize your internet first applications on Azure with Cloud Native experience
  -  Low entry fee and a simplified cost model that reduces billing complexity by having fewer meters needed to plan for.<br>
  -  Azure to Front Door integrated egress pricing that removes the separate egress charge from Azure regions to Azure Front Door.<br>
 
-## Comparison between Azure Front Door and Azure CDN services
+## Intelligent secure internet perimeter
+
+ -  Secure applications with built-in layer 3-4 DDoS protection, seamlessly attached Web Application Firewall (WAF), and Azure DNS to protect your domains.
+ -  Protect your applications against layer 7 DDoS attacks using WAF.<br>
+ -  Protect your applications from malicious actors with Bot manager rules based on Microsoft’s own Threat Intelligence.<br>
+ -  Privately connect to your backend behind Azure Front Door with Private Link and embrace a zero-trust access model.<br>
+ -  Provide a centralized security experience for your application via Azure Policy and Azure Advisor that ensures consistent security features across apps.<br>
+
+## Comparison between Azure Front Door and Azure CDN services<br>
 
 Azure Front Door and Azure CDN are both Azure services that offer global content delivery with intelligent routing and caching capabilities at the application layer. Both services can be used to optimize and accelerate your applications by providing a globally distributed network of points of presence (POP) close to your users. Both services also offer a variety of features to help you secure your applications from malicious attacks and to help you monitor your application's health and performance.
+
+:::image type="content" source="../media/content-delivery-architecture-eb50c33f.png" alt-text="Diagram showing a comparison between Azure Front Door and Azure Content Development Network.":::
+
+
+> [!NOTE]
+> To switch between tiers, you will need to recreate the Azure Front Door profile. You can use the migration capability to move your existing Azure Front Door profile to the new tier.

@@ -1,8 +1,17 @@
-The ability to extract text from images is handled by Azure AI Vision service. One of the services in Azure AI Vision is the *Read API*. You can think of the Read API as an OCR engine that powers text extraction from images, PDFs, and TIFF files.
+The ability for computer systems to process written and printed text is an area of AI where *computer vision* intersects with *natural language processing*. Vision capabilities are needed to "read" the text, and then natural language processing capabilities make sense of it.
 
-The Read API uses the latest recognition models and is optimized for images that have a significant amount of text or have considerable visual noise. It can automatically determine the proper recognition model to use taking into consideration the number of lines of text, images that include text, and handwriting.
+OCR is the foundation of processing text in images and uses machine learning models that are trained to recognize individual shapes as letters, numerals, punctuation, or other elements of text. Much of the early work on implementing this kind of capability was performed by postal services to support automatic sorting of mail based on postal codes. Since then, the state-of-the-art for reading text has moved on, and we have models that detect printed or handwritten text in an image and read it line-by-line and word-by-word.
 
-The results from the Read API are arranged into the following hierarchy:
+![A screenshot of an envelope showing a handwritten address with typed text next to it.](../media/sample-mail.jpg)
+
+## Azure AI Vision's OCR Engine
+Azure AI Vision service has the ability to extract machine-readable text from images. Azure AI Vision's *Read API* is the OCR engine that powers text extraction from images, PDFs, and TIFF files. OCR for images is optimized for general, non-document images that makes it easier to embed OCR in your user experience scenarios.
+
+The Read API, otherwise known as *Read OCR engine*, uses the latest recognition models and is optimized for images that have a significant amount of text or have considerable visual noise. It can automatically determine the proper recognition model to use taking into consideration the number of lines of text, images that include text, and handwriting.
+
+The OCR engine takes in an image file and identifies bounding boxes, or coordinates, where items are located within an image. In OCR, the model identifies bounding boxes around anything that appears to be text in the image. 
+
+Calling the Read API returns results arranged into the following hierarchy:
 
 - **Pages** - One for each page of text, including information about the page size and orientation.
 - **Lines** - The lines of text on a page.
@@ -10,10 +19,4 @@ The results from the Read API are arranged into the following hierarchy:
 
 Each line and word includes bounding box coordinates indicating its position on the page.
 
-[Vision Studio](https://portal.vision.cognitive.azure.com/) provides a graphical user interface and enables you to try out Azure AI Vision service without writing any code.
-
-## Create an Azure resource
-To use the Azure AI Vision service you must first create a resource for it in your Azure subscription. You can use either of the following resource types:
-
-- **Azure AI Vision**: A specific resource for vision services. Use this resource type if you don't intend to use any other AI services, or if you want to track utilization and costs for your AI Vision resource separately.
-- **Azure AI services**: A general resource that includes Azure AI Vision along with many other Azure AI services such as Azure AI Language, Azure AI Speech, and others. Use this resource type if you plan to use multiple Azure AI services and want to simplify administration and development.
+![A screenshot showing bounding boxes around the page, line, and word of a letter.](../media/pages-lines-words-example.jpg)
