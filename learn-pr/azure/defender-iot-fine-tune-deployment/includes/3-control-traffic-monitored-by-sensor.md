@@ -40,6 +40,10 @@ This is also useful to differentiate between similar types of devices, where one
 The device will appear in the device map with a star on it.
 
 ## Update device details
+<!-- is the authorized stuff relevant here? we wont be showing how to change it. -->
+During the inital *learning* stage, all devices detected are identified as *authorized*. This means that the device has been checked and approved as recognized parts of your system. Once the learning stage is completed, any new devices detected will be logged as *unauthorized*, and must be fully checked before you update the status to *authorized*.
+
+You can also customize other parts of the data, such as the names assigned to the detected ports, the VLAN names and the DHCP addresses. <!-- I am not sure about some of this, <https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/device-inventory#device-inventory-column-data> this seems a list of possible detail changes, which , if any should we choose, and how many should be update? -->
 
 ## Merge devices
 
