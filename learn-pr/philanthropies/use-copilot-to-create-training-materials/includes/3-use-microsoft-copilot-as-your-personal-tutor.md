@@ -1,4 +1,6 @@
-Microsoft Copilot is a generative AI application that uses natural language generation (NLG) to process user queries and generate accurate and relevant responses to queries. In this activity, you'll practice using Microsoft Copilot as your tutor. **Please select one of the options below and practice using Microsoft Copilot.**
+Microsoft Copilot is a generative AI application that uses natural language generation (NLG) to process user queries and generate accurate and relevant responses to queries. In this activity, you'll practice using Microsoft Copilot as your tutor. 
+
+**Please select one of the options below and practice using Microsoft Copilot.**
 
 ## Option A: Write a resume
 
@@ -45,5 +47,5 @@ Reflect on your experience using Microsoft Copilot as your personal tutor to ans
 - **Quality of responses**: Were the responses from Microsoft Copilot accurate, helpful, and easy to understand? How did you fine tune the answers to make them more aligned to your prompt goals?
 - **Speed**: How quickly did Microsoft Copilot respond to the questions?
 - **Range of topics**: What topics did you ask Microsoft Copilot about? Was Microsoft Copilot able to find helpful information for all topics?
-- **Personalization: Did Microsoft Copilot present personalized responses based on your needs and preferences?
+- **Personalization**: Did Microsoft Copilot present personalized responses based on your needs and preferences?
 - **Overall experience**: How would you rate the experience of using Microsoft Copilot as a personal tutor?
