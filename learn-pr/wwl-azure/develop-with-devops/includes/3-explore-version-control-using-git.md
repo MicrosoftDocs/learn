@@ -1,5 +1,7 @@
 There are different types of version control systems (VCS), but generally they can be categorized as centralized and distributed. In recent years (partially due to the growing popularity of DevOps), the latter category gained significant popularity, with Git becoming the de facto standard in modern software development. This particular VCS would be the most suitable choice for the organization in our sample scenario, especially considering its intention to use GitHub as the target platform for its DevOps transition. In this unit, explore the use of Git as version control.
 
+:::image type="content" source="../media/3-distributed-centralized.png" alt-text="Screenshot of a table comparing centralized and distributed version control systems benefits.":::
+
 ## Centralized vs. Distributed Version Control
 
 Both centralized version control systems (CVCS) and distributed version control systems (DVCS) offer the ability to manage and track changes in software development projects. The primary differences between them are related to the way they implement repositories and collaboration. In particular:
@@ -10,6 +12,8 @@ Both centralized version control systems (CVCS) and distributed version control 
 - **Branching and merging model**: In centralized systems, branching and merging typically requires coordination with others. In distributed systems, branches can be created independently in local copies and merged afterwards.
 
 It's worth noting that, while the distributed model doesn't rely on having a central repository (in the traditional sense), it's common to implement one copy of the repository, which is hosted by services such as GitHub, GitLab, or Bitbucket. This instance serves as the focal point of collaboration and synchronization.
+
+:::image type="content" source="../media/3-centralized-distributed.png" alt-text="Screenshot of centralized and distributed version control systems repositories and collaboration.":::
 
 ## Git terminology
 
