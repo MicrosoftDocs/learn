@@ -10,9 +10,7 @@ In this task, you’ll create a virtual machine using the Azure portal.
 1.  Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 2.  Select Create a resource &gt; Compute &gt; Virtual Machine &gt; Create.
 3.  The Create a virtual machine pane opens to the basics tab.
-4.  Verify or enter the following values for each setting. If a setting isn’t specified, leave the default value.
-    
-    **Basics tab**
+4.  Verify or enter the following values for each setting. If a setting isn’t specified, leave the default value. **Basics tab**
     
     | **Setting**                  | **Value**                                                  |
     | ---------------------------- | ---------------------------------------------------------- |
@@ -31,7 +29,6 @@ In this task, you’ll create a virtual machine using the Azure portal.
     | Password                     | Enter a custom password                                    |
     | Confirm password             | Reenter the custom password                                |
     | Public inbound ports         | None                                                       |
-
 5.  Select Review and Create.
 
 > [!IMPORTANT]
@@ -47,9 +44,9 @@ Once the deployment is created, you can verify that Azure created not only a VM,
 
 1.  Select Home
 2.  Select Resource groups
-3.  <!--- raw content start --->
-Select the <rgn>[sandbox resource group name]</rgn> resource group
-<!--- raw content end --->
+3.  
+
+Select the \[sandbox resource group name\] resource group
 
 You should see a list of resources in the resource group. The storage account and virtual network are associated with the Learn sandbox. However, the rest of the resources were created when you created the virtual machine. By default, Azure gave them all a similar name to help with association and grouped them in the same resource group.
 

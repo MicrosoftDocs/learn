@@ -1,15 +1,14 @@
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWEsag]
 
-Azure is a continually expanding set of cloud services that help you meet current and future business challenges. Azure gives you the freedom to build, manage, and deploy applications on a massive global network using your favorite tools and frameworks. 
+Azure is a continually expanding set of cloud services that help you meet current and future business challenges. Azure gives you the freedom to build, manage, and deploy applications on a massive global network using your favorite tools and frameworks.
 
 ## What does Azure offer?
 
-With help from Azure, you have everything you need to build your next great solution. The following lists several of the benefits that Azure provides, so you can easily invent with purpose:
+**Limitless innovation.** Build intelligent apps and solutions with advanced technology, tools, and services to take your business to the next level. Seamlessly unify your technology to simplify platform management and to deliver innovations efficiently and securely on a trusted cloud.
 
- -  **Be ready for the future**: Continuous innovation from Microsoft supports your development today and your product visions for tomorrow.
- -  **Build on your terms**: You have choices. With a commitment to open source, and support for all languages and frameworks, you can build how you want and deploy where you want.
- -  **Operate hybrid seamlessly**: On-premises, in the cloud, and at the edge, we'll meet you where you are. Integrate and manage your environments with tools and services designed for a hybrid cloud solution.
- -  **Trust your cloud**: Get security from the ground up, backed by a team of experts, and proactive compliance trusted by enterprises, governments, and startups.
+ -  **Bring ideas to life:** Build on a trusted platform to advance your organization with industry-leading AI and cloud services.
+ -  **Seamlessly unify:** Efficiently manage all your infrastructure, data, analytics, and AI solutions across an integrated platform.
+ -  **Innovate on trust:** Rely on trusted technology from a partner who's dedicated to security and responsibility.
 
 ## What can I do with Azure?
 

@@ -15,7 +15,7 @@ A region is a geographical area on the planet that contains at least one, but po
 When you deploy a resource in Azure, you'll often need to choose the region where you want your resource deployed.
 
 > [!NOTE]
-> Some services or virtual machine (VM) features are only available in certain regions, such as specific VM sizes or storage types. There are also some global Azure services that don't require you to select a particular region, such as Microsoft Entra ID, Azure Traffic Manager, and Azure DNS.
+> Some services or virtual machine (VM) features are only available in certain regions, such as specific VM sizes or storage types. There are also some global Azure services that don't require you to select a particular region, such as Azure Active Directory, Azure Traffic Manager, and Azure DNS.
 
 ### Availability Zones
 
