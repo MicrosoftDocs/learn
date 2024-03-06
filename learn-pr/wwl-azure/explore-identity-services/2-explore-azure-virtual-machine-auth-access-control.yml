@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-identity-services.explore-azure-virtual-machine-authentication,-authorization,-access-control
-title: Explore Azure virtual machine authentication, authorization, and access control
+title: Explore Azure Virtual Machine authentication, authorization, and access control
 metadata:
-  title: Explore Azure virtual machine authentication, authorization, and access control
-  description: "Explore Azure virtual machine authentication, authorization, and access control"
-  ms.date: 10/17/2023
+  title: Explore Azure Virtual Machine authentication, authorization, and access control
+  description: "Explore Azure Virtual Machine authentication, authorization, and access control"
+  ms.date: 03/05/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
