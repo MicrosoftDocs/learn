@@ -10,7 +10,7 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
-azureSandbox: false
+sandbox: false
 title: Summary
 durationInMinutes: 2
 content: |
