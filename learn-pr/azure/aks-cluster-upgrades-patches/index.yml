@@ -30,7 +30,7 @@ products:
   - azure
   - azure-kubernetes-service
 subjects:
-- container
+- containers
 units:
 - learn.aks-cluster-upgrades-patches.introduction
 - learn.aks-cluster-upgrades-patches.what-are-versions 
