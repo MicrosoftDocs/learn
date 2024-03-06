@@ -138,7 +138,8 @@ For scenarios where a published app links to other published apps, enable link t
 
 For example, suppose that you have three applications published through application proxy that all link to each other: Benefits, Expenses, and Travel, plus a fourth app, Feedback that isn't published through application proxy.
 
-### :::image type="content" source="../media/link-translation-0a4e090d.png" alt-text="Diagram showing an example of three applications published through application proxy."::: 
+:::image type="content" source="../media/link-translation-0a4e090d.png" alt-text="Diagram showing an example of three applications published through application proxy.":::
+
 
 When you enable link translation for the Benefits app, the links to Expenses and Travel are redirected to the external URLs for those apps, so that users accessing the applications from outside the corporate network can access them. Links from Expenses and Travel back to Benefits don't work because link translation hasn't been enabled for those two apps. The link to Feedback isn't redirected because there's no external URL, so users using the Benefits app won't be able to access the feedback app from outside the corporate network.
 
@@ -148,10 +149,10 @@ Several options exist for managing access to application proxy published resourc
 
 The most straight forward way of assigning users access to an application is going into the **Users and Groups** options from the left-hand pane of your published application and directly assigning groups or individuals.
 
-:::image type="content" source="../media/add-user-0f5638ff.png" alt-text="Diagram showing an example of managing access to application proxy published resources.":::
+:::image type="content" source="../media/add-user-0f5638ff.png" alt-text="Screenshot showing an example of managing access to application proxy published resources.":::
  You can also allow users to self-service access to your application by assigning a group that they aren't currently a member of and configuring the self-serve options.
 
-:::image type="content" source="../media/allow-access-1d990f66.png" alt-text="Diagram showing an example of allowing users to self-service access to your application by assigning a group.":::
+:::image type="content" source="../media/allow-access-1d990f66.png" alt-text="Screenshot showing an example of allowing users to self-service access to your application by assigning a group.":::
 
 
 If enabled, users will then be able to log into the MyApps portal and request access, and either be auto approved and added to the already permitted self-service group, or need approval from a designated approver.
@@ -160,7 +161,7 @@ Guest users can also be invited to access internal applications published via ap
 
 For on premises applications that are normally accessible anonymously, requiring no authentication, you may prefer to disable the option located in the application’s Properties.
 
-:::image type="content" source="../media/assignment-required-80db257a.png" alt-text="Diagram showing an example of how to disable the option located in the application’s properties.":::
+:::image type="content" source="../media/assignment-required-80db257a.png" alt-text="Screenshot showing an example of how to disable the option located in the application’s properties.":::
 
 
 Leaving this option set to No allows users to access the on-premises application via Microsoft Entra application proxy without permissions, so use with caution.

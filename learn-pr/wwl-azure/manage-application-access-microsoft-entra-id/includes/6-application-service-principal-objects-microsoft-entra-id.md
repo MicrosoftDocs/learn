@@ -70,7 +70,7 @@ In this example scenario:
 
 ### Example
 
-The following diagram illustrates the relationship between an application's application object and corresponding service principal objects in the context of a sample multi-tenant application called HR app. There are three Microsoft Entra tenants in this example scenario:
+The following diagram illustrates the relationship between an application's application object and corresponding service principal objects in the context of a sample multitenant application called HR app. There are three Microsoft Entra tenants in this example scenario:
 
  -  **Adatum** \- The tenant used by the company that developed the HR app<br>
  -  **Contoso** \- The tenant used by the Contoso organization, which is a consumer of the HR app
