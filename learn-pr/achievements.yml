@@ -3058,3 +3058,8 @@ achievements:
   title: Build serverless, full stack applications in Azure
   summary: Learn how to create, build, and deploy modern full stack applications in Azure by using the language of your choice (Python, Node.js, or .NET) and with a Vue.js frontend. Using a real-world scenario of trying to catch the bus, you will learn how to build a solution that uses Azure SQL Database, Azure Functions, Azure Static Web Apps, Logic Apps, Visual Studio Code, and GitHub Actions.
   iconUrl: /training/achievements/build-serverless-full-stack-apps-azure.svg
+- uid: learn.azure.cna-deploy-maintain-cloud-native-apps.badge
+  type: badge
+  title: Deploy and maintain cloud-native apps with GitHub actions and Azure Pipelines
+  summary: Implement DevOps in cloud-native application scenarios. Use GitHub actions and Azure Pipelines to build and deploy infrastructure and applications.
+  iconUrl: /training/achievements/cna-deploy-maintain.svg

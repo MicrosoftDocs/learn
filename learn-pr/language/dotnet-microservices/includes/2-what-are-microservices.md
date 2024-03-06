@@ -64,7 +64,7 @@ When a developer uses Docker, they create an app or service, and then they packa
 
 The image, when it runs, becomes the container. The container is the in-memory instance of an image.
 
-A container image is immutable. After you build an image, the image can't be changed. Because you can't change an image, if you need to make changes to the app or service and its dependencies, create a new image. This feature guarantees that the image that you use in production is the same image that's used in development and testing.
+A container image is immutable. After you build an image, the image can't be changed. Because you can't change an image, if you need to make changes to the app or service and its dependencies, create a new image. This feature guarantees that the imageF you use in production is the same image that's used in development and testing.
 
 ### What is a Dockerfile?
 
@@ -79,14 +79,14 @@ A Dockerfile is a set of instructions that create a Docker image that has the ex
 
 ## .NET SDK container publishing
 
-In .NET 7, the .NET SDK gained the ability to create container images via the `dotnet publish`` command. The tools to do this do a bunch of inference based on the properties of your project and its outputs, and then create the same image that a simple Dockerfile would create. It can take a few as wo commands to create a new application and publish it as an image:
+In .NET 7, the .NET SDK gained the ability to create container images via the `dotnet publish`` command. The tools that do this do a bunch of inference based on the properties of your project and its outputs, and then create the same image that a simple Dockerfile would create. It can take a few as two commands to create a new application and publish it as an image:
 
 ```donetcli
 dotnet new webapi
 dotnet publish --os linux --arch x64 /t:PublishContainer -c Release
 ```
 
-The preceding .NET CLI commands create a new web API and publishes the app as a container:
+The preceding .NET CLI commands create a new web API and publish the app as a container:
 
 * Targeting Linux as the OS (--os linux).
 * Specifying an x64 architecture (--arch x64).
