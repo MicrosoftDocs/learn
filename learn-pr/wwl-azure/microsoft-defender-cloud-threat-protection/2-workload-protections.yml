@@ -4,10 +4,12 @@ title: Enable workload protection services in Microsoft Defender for Cloud, incl
 metadata:
   title: Enable workload protection services in Microsoft Defender for Cloud, including Microsoft Defender for Storage, Databases, Containers, App Service, Key Vault, Resource Manager, and DNS
   description: "Enable workload protection services in Microsoft Defender for Cloud, including Microsoft Defender for Storage, Databases, Containers, App Service, Key Vault, Resource Manager, and DNS"
-  ms.date: 02/19/2024
+  ms.date: 03/06/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/2-workload-protections.md)]
