@@ -1,6 +1,6 @@
-In this module, you’ve learned how to use AI tools like Microsoft Copilot to aid in content creation. You’ve explored how AI tools can assist in writing learning objectives, streamlining research, creating effective assessments, and providing personalized feedback. You’ve also discovered how AI tools can boost productivity and collaboration in a remote environment. This knowledge equips you to create more effective and personalized learning experiences using AI.
+In this module, you learned how to use AI tools like Microsoft Copilot to aid in content creation. You explored how AI tools can help writing learning objectives, streamlining research, creating effective assessments, and providing personalized feedback. You also discovered how AI tools can boost productivity and collaboration in a remote environment. This knowledge equips you to create more effective and personalized learning experiences using AI.
 
-## Additional resources
+## Other resources
 
 To continue your learning journey for this topic, go to:
 
@@ -21,7 +21,7 @@ To continue your learning journey for this topic, go to:
 
 1. [Untitled Form](https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&omkt=en-us&tryout=true&linkorigin=SiteMap). Forms. Publication date unavailable.
 
-1. [5 things to know about Reading Coach in Immersive Reader](https://edudownloads.azureedge.net/msdownloads/5-things-to-know-about-Reading-Coach-in-Immersive-Reader.pdf).  Microsoft. Publication date unavailable.  
+1. [5 things to know about Reading Coach in Immersive Reader](https://edudownloads.azureedge.net/msdownloads/5-things-to-know-about-Reading-Coach-in-Immersive-Reader.pdf). Microsoft. Publication date unavailable.  
   
 1. Dohnal M. [Introducing Microsoft Editor – Bring out your best writer wherever you write](https://techcommunity.microsoft.com/t5/microsoft-365-blog/introducing-microsoft-editor-bring-out-your-best-writer-wherever/ba-p/1247931). Microsoft.Published March 30, 2020.
 

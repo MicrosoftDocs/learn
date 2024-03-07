@@ -12,7 +12,7 @@ Productivity is important in today's changing world. Microsoft 365 Copilot can e
 - Analyze the potential impact of changing training methods on learner engagement. Show me a visual clarification comparing [Method A] vs [Method B].
 - Develop a model illustrating the influence of employees’ training attendance based on the amount of employees’ sales during the next quarter.  
 
-**Turn ideas and learning materials into stunning presentations**.  Trainers have an abundance of materials available to them. With Microsoft Copilot, existing documents can be converted into engaging slideshows that include speaker notes and references. It can also animate and decorate presentations, allowing more time to focus on presenting the content to learners. Here are some sample prompts to experiment with:  
+**Turn ideas and learning materials into stunning presentations**. Trainers have an abundance of materials available to them. With Microsoft Copilot, existing documents can be converted into engaging slideshows that include speaker notes and references. It can also animate and decorate presentations, allowing more time to focus on presenting the content to learners. Here are some sample prompts to experiment with:  
 
 - Craft a presentation spanning five slides and, drawing from this research document, incorporate relevant stock images.
 - Condense this presentation into speaker notes.  
@@ -24,9 +24,9 @@ Productivity is important in today's changing world. Microsoft 365 Copilot can e
 - Provide an overview of the emails I didn't catch up on during my absence last week. Highlight any significant items.
 - Draft a response to last week’s learner inquiries and add further details regarding their second and third points.  
 
-**Create, capture, organize, and recall information**. As a note-taking partner, Microsoft Copilot in Microsoft OneNote generates plans and ideas, creates lists, organizes information, and more. It also can transform existing text by summarizing, rewriting, formatting, and adding visual context. For example, to prepare a training session on effective communication, Microsoft Copilot can be leveraged to draft a plan and organize the sessions. Here are some sample prompts to experiment with:
+**Create, capture, organize, and recall information**. As a note-taking partner, Microsoft Copilot in Microsoft OneNote generates plans and ideas, creates lists, organizes information, and more. It also can transform existing text by summarizing, rewriting, formatting, and adding visual context. For example, to prepare a training session on effective communication, Microsoft Copilot can be used to draft a plan and organize the sessions. Here are some sample prompts to experiment with:
 
-- Create talking points for a training session on effective communication
+- Create talking points for a training session on effective communication.
 - Generate a list of icebreaker activities for a team-building training session.
 - Create a checklist of items to prepare for a virtual training session.
 
