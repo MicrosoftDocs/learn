@@ -42,7 +42,10 @@ quiz:
     choices:
     - content: "When a virtual machine is stopped and then restarted through Azure."
       isCorrect: true
-      explanation: "Correct. In this case, the dynamic IP address will change."
-    - content: "When a virtual machine is rebooted or stopped from within the guest OS"
+      explanation: "Correct. In this case, the dynamic IP address changes."
+    - content: "When a virtual machine is rebooted or stopped from within the guest OS."
       isCorrect: false
-      explanation: "Incorrect. In this case, the dyanamic IP address will not change."
+      explanation: "Incorrect. In this case, the dyanamic IP address won't change."
+    - content: "Each time the virtual machine is accessed."
+      isCorrect: false
+      explanation: "Incorrect. The virtual machine dynamic IP address won't change."
