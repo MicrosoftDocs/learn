@@ -21,10 +21,10 @@ quiz:
       explanation: "Incorrect. Azure Blob storage is cost effective, but isn't the best option when performance is critical."
     - content: "Azure Cosmos DB"
       isCorrect: true
-      explanation: "Correct. Azure Cosmos DB is more expensive than Azure Blob storage or Azure Data Lake Gen 2, but it is the only choice listed that supports all of the requirements."
-    - content: "Azure Data Lake Gen 2"
+      explanation: "Correct. Azure Cosmos DB is more expensive than Azure Blob storage or Azure Data Lake Gen2, but it is the only choice listed that supports all of the requirements."
+    - content: "Azure Data Lake Gen2"
       isCorrect: false
-      explanation: "Incorrect. Azure Data Lake Gen 2 supports the high availability requirement, but is better suited to cold storage when a very large amount of storage space is required. Although it has been performance optimized on top of Azure Blob storage, it isn't critically fast, and it is more expensive than Azure Blob storage."
+      explanation: "Incorrect. Azure Data Lake Gen2 supports the high availability requirement, but is better suited to cold storage when a very large amount of storage space is required. Although it has been performance optimized on top of Azure Blob storage, it isn't critically fast, and it is more expensive than Azure Blob storage."
   - content: "What are the names of the two storage paths in an IoT lambda architecture?"
     choices:
     - content: "High and low"
