@@ -1,4 +1,4 @@
-To improve sign-in security, you needed to roll out a low-cost sign-in strategy to help users switch from signing in with less secure methods, like Voice calls or SMS, to a more secure method. 
+To improve sign-in security, you needed to roll out a low-cost sign-in strategy to help users switch from signing in with less secure methods, like voice calls or SMS, to a more secure method. 
 
 You chose to create a registration campaign to help users set up Microsoft Authenticator, a free app, and use it as their default method for sign-in. The registration campaign helps improve the company's security posture in many ways:
 
