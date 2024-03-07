@@ -10,11 +10,11 @@ Your company hired its first workers to work remotely. It's important that these
 
 By the end of this module, you'll be able to:
 
-- Explain tunneling and the features of Visual Studio Code Remote - Tunnels extension.
+- Explain tunneling and the features of the Visual Studio Code Remote - Tunnels extension.
 - Use the Visual Studio Code Remote - Tunnels extension to tunnel into a remote host.
 - Configure remote tunnel access via the Visual Studio Code user interface and the code command-line interface.
 
 ## What is the main objective?
 By the end of this module, you understand the basics of tunneling and have a solid foundation for using the Remote - Tunnels extension, all within Visual Studio Code.
 
-Let's get started on this journey to familiarize yourself on how to use tunneling to connect to remote hosts.
+Let's get started on this journey to learn how to use tunneling to connect to remote hosts.
