@@ -1,6 +1,4 @@
 
-# 2nd Exercise - Learning
-
 ## View your alerts
 
 <https://learn.microsoft.com/azure/defender-for-iot/organizations/how-to-view-alerts>
