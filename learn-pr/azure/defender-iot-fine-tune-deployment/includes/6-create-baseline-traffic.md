@@ -1,5 +1,4 @@
 <!-- can use this article for screenshots as well /organizations/how-to-manage-cloud-alerts -->
-
 Your car manufacturing organization has offices and production sites across the globe, with a network linking them together. A sensor is connected and sending data to Defender for IoT. The sensor settings are fine-tuned to ensure all the devices are correctly identified. Now your task is to set up the alert baseline to ensure that alerts ignore normal traffic with in the system and only report on suspicious activity.
 
 Microsoft Defender for IoT now enters the *Learning* mode as soon as it starts to receieve data from the sensor. In this mode, Defender for IoT builds a baseline of alerts to help it identify which type of network traffic is important and which isn't. Over a limited time period, Defender for IoT learns to automatically recognize the alerts that can affect the security of your devices. At the end of this period, Defender for IoT enters the regular *operational* mode.
