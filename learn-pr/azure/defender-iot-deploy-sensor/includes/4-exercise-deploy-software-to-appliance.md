@@ -1,3 +1,24 @@
+This unit describes how to set up a virtual machine and connect it to a sensor, including configuring the network adapter and SPAN port settings. And, finally that validate the traffic mirroring is properly configured and provides the correct data to the sensor.
+
+## Check the prerequisites
+
+The following items must be configured before starting this exercise unit:
+
+1. The firewall is properly configured. This ensures that your sensor can access the cloud on port 443, and connect to each of the endpoints.
+1. The virtual machine, VMware ESXi 5.5 or later, is configured to either of the following specifications:
+
+    | Type |Memory  | Storage  | CPU Processor |
+    |----|-----|---------|----|
+    | Enterprise | 32 MB RAM | 1/1.8 TB |  4 Core/ 8 Threads |
+    | Line | 8 MB RAM | 100/ 500 GB |  4 Core/ 4 Threads |
+
+1. The network adapter port groups for the internet and SNAP switch are configured, so that the virtual machine is able to communicate with them.
+1. Validate that the traffic mirroring is configured correctly.
+
+> [!NOTE]
+> You may need to use the Promiscuous mode in the VM to connect with the switches. Promiscuous mode is an operating mode and a security monitoring technique for a VM's interfaces in the same portgroup level as the virtual switch to view the switch's network traffic. Promiscuous mode is disabled by default but can be defined at the virtual switch or portgroup level.
+>
+
 This unit describes how to download the OT monitoring software from the Defender for IoT in the Azure portal. Then upload the monitoring software to the virtual machine OT sensor. Afterwards, configure the network settings so that the sensor connects with the Azure portal. Finally, assign the end point interfaces, activate the sensor and set up the security certificates.
 
 ## Install Defender for IoT software
@@ -7,8 +28,6 @@ To start the software installation, open your virtual machine.
 ### Download the monitoring software file
 
 In Defender for IoT select **Getting started > Sensor**, then select the latest software version and select **Download**.
-
-NOTE:  <!-- must ensure they download the correct software version otherwise the admin and log in will be incorrect, if it is different on older versions -->
 
 :::image type="content" source="../media/6-download-iso-file.png" alt-text="screenshot of Downloading ISO monitoring file from Defender for IoT":::
 

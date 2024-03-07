@@ -37,8 +37,6 @@ subjects:
 units:
 - learn.defender-iot-deploy-sensor.introduction
 - learn.defender-iot-deploy-sensor.describe-the-deployment-phase
-- learn.defender-iot-deploy-sensor.plan-to-set-up-vm
-- learn.defender-iot-deploy-sensor.exercise-set-up-vm
 - learn.defender-iot-deploy-sensor.plan-to-deploy-sensor
 - learn.defender-iot-deploy-sensor.exercise-deploy-software-to-appliance
 - learn.defender-iot-deploy-sensor.knowledge-check
