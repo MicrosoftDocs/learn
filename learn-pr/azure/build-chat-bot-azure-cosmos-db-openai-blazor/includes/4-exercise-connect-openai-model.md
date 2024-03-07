@@ -12,10 +12,10 @@ The [`Azure.AI.OpenAI`](https://www.nuget.org/packages/Azure.AI.OpenAI) package 
 
 1. Open a new terminal.
 
-1. Use [`dotnet add package`](/dotnet/core/tools/dotnet-add-package) to import the `Azure.AI.OpenAI` package from NuGet specifying a prerelease version.
+1. Use [`dotnet add package`](/dotnet/core/tools/dotnet-add-package) to import the `Azure.AI.OpenAI` package from NuGet specifying a prerelease version of `1.0.0-beta.14`.
 
     ```bash
-    dotnet add package Azure.AI.OpenAI --prerelease
+    dotnet add package Azure.AI.OpenAI --version 1.0.0-beta.14
     ```
 
 1. Build the .NET project again.
