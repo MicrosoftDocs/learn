@@ -17,19 +17,19 @@ DevOps security in Defender for Cloud allows you to manage your connected enviro
 
 Here, you can add Azure DevOps, GitHub, and GitLab environments, customize the DevOps workbook to show your desired metrics, and configure pull request annotations.
 
-:::image type="content" source="../media/posture-management-03c5a866.png":::
+:::image type="content" source="../media/posture-management-03c5a866.png" alt-text="Screenshot showing the posture management recommendations in the security overview page.":::
 
 
 ## Understanding your DevOps security
 
-:::image type="content" source="../media/security-overview-b7ab20c2.png" alt-text="Screenshot showing how to review onboarded DevOps resources and the related security information.":::
+:::image type="content" source="../media/security-overview-b7ab20c2.png" alt-text="Screenshot showing how to review development operations security findings.":::
 
 
 ## Review your findings
 
 The DevOps inventory table allows you to review onboarded DevOps resources and the security information related to them.
 
-:::image type="content" source="../media/bottom-of-page-29c226e4.png":::
+:::image type="content" source="../media/bottom-of-page-29c226e4.png" alt-text="Screenshot showing how to review onboarded DevOps resources and the related security information.":::
  On this part of the screen you see:
 
  -  **Name** \- Lists onboarded DevOps resources from Azure DevOps, GitHub, and/or GitLab. View the resource health page by selecting it.
