@@ -26,7 +26,7 @@ roles:
 products:
 - azure-openai
 subjects:
-- data-ai
+- data-management
 units:
 - learn.wwl.define-microsoft-ai-strategy-retail.introduction
 - learn.wwl.define-microsoft-ai-strategy-retail.explore-ai-goals-challenges-retail

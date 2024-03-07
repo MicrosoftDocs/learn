@@ -30,7 +30,7 @@ products:
 - m365
 subjects:
 - artificial-intelligence
-- data-ai
+- data-management
 units:
 - learn.wwl.create-business-value.introduction
 - learn.wwl.create-business-value.define-ai-strategy-create-business-value
