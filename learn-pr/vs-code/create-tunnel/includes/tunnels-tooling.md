@@ -43,7 +43,7 @@ In the upcoming exercises, you use both the Visual Studio Code Desktop and the c
     :::image type="content" source="../media/10-folder-1.png" alt-text="Screenshot of creating a folder.":::
 
     :::image type="content" source="../media/11-folder-2.png" alt-text="Screenshot of the created folder.":::
-1. Create a *TestCLI folder*, repeating the previous step.
+1. Create a *TestCLI* folder, repeating the previous step.
 1. Create an *index.html* file with the following test code:
 
     ```html
