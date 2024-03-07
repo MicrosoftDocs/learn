@@ -8,6 +8,6 @@ metadata:
   ms.author: radolphe
   ms.date: 12/15/2023
   ms.topic: unit
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
   [!include[](includes/tunnels-tooling.md)]
