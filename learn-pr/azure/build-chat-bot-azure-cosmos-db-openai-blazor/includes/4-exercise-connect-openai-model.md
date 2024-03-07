@@ -90,7 +90,7 @@ Finally, implement the class variables required to use the Azure OpenAI client. 
     private readonly OpenAIClient _client;
     ```
 
-1. Create a new string variable named `_systemPromptText` with a static block of text to send to the AI assistant before each prompt.
+1. Define a static block of text to send to the AI assistant before each prompt with a new string variable named `_systemPromptText`.
 
     ```csharp
     private readonly string _systemPrompt = @"
@@ -98,7 +98,7 @@ Finally, implement the class variables required to use the Azure OpenAI client. 
         Provide concise answers that are polite and professional." + Environment.NewLine;
     ```
 
-1. Create another new string variable named `_summarizePrompt` with a static block of text to send to the AI assistant with instructions on how to summarize a conversation.
+1. Define a second static block of text to send to the AI with instructions on how to summarize a conversation with a new string variable named `_summarizePrompt`.
 
     ```csharp
     private readonly string _summarizePrompt = @"

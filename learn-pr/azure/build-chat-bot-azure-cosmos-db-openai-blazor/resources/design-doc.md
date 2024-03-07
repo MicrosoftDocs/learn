@@ -1,6 +1,6 @@
 # Guided project: Build a chat bot using Azure OpenAI, Azure Cosmos DB for NoSQL, and Blazor
 
-## Role(s)
+## Roles
 
 - [`developer`](https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role)
 
@@ -8,7 +8,7 @@
 
 - [`beginner`](https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level)
 
-## Product(s)
+## Products
 
 - [`azure-cosmos-db`](https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level)
 - [`azure-openai`](https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level)
@@ -26,7 +26,7 @@
 
 ## Summary
 
-Connect an existing Blazor web application to Azure Cosmos DB for NoSQL and Azure OpenAI using their .NET SDKs. Your code manages and queries items in the API for NoSQL container. Your code also sends prompts to Azure OpenAI and parses the responses.
+Connect an existing Blazor web application to Azure Cosmos DB for NoSQL and Azure OpenAI using their .NET software development kits (SDKs). Your code manages and queries items in the API for NoSQL container. Your code also sends prompts to Azure OpenAI and parses the responses.
 
 ## Learning objectives
 
@@ -37,7 +37,7 @@ Connect an existing Blazor web application to Azure Cosmos DB for NoSQL and Azur
 
 ## Subtasks
 
-| Subtask | What part of the introduction scenario does this subtask satisfy? | How do you assess it? (Exercise or Knowledge check) | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask do you combine it with? |
+| Subtask | What part of the introduction scenario does this subtask satisfy? | How do you assess it? (Exercise or Knowledge check) | Which learning objectives does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask do you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
 | Connect to Azure OpenAI | "connect to Azure OpenAI" | Exercise | 1 | yes |
 | Interface with conversational interface | "send prompts, parse responses, and summarize conversations" | Exercise | 2 | yes |
@@ -50,7 +50,7 @@ Connect an existing Blazor web application to Azure Cosmos DB for NoSQL and Azur
     - Prose table-of-contents
         - This module walks through the steps to connect an existing Blazor application to an Azure Cosmos DB for NoSQL account and an Azure OpenAI account. Your application sends prompts to the model in Azure OpenAI and parses the responses. Your application also stores various conversation sessions and their corresponding messages as items colocated in a single container within Azure Cosmos DB for NoSQL.
     - Scenario
-        - Your development team has built a chat bot interface with Blazor that can handle multiple conversations with message history for each conversation. With .NET best practices in mind, your team has stubbed out a basic implementation for a service to connect to Azure Cosmos DB and store conversation sessions and individual messages. Your team has also stubbed out an implementation of a service to connect to Azure OpenAI to send prompts, parse responses, and summarize conversations. You build an application that imports the .NET SDK for Azure Cosmos DB and Azure OpenAI and then implement these services using the SDKs.
+        - Your development team built a chat bot interface with Blazor that can handle multiple conversations with message history for each conversation. With .NET best practices in mind, your team stubbed out a basic implementation for a service to connect to Azure Cosmos DB and store conversation sessions and individual messages. Your team also stubbed out an implementation of a service to connect to Azure OpenAI to send prompts, parse responses, and summarize conversations. You build an application that imports the .NET SDK for Azure Cosmos DB and Azure OpenAI and then implement these services using the SDKs.
     - Terminal learning objective (goal)
         - By the end of this module, you're able to author .NET classes that connect to Azure Cosmos DB for NoSQL or Azure OpenAI. The classes you author implement common operations using their respective SDKs. Finally, the classes you author are then used in a Blazor application.
 1. Prepare
@@ -91,7 +91,7 @@ Connect an existing Blazor web application to Azure Cosmos DB for NoSQL and Azur
 1. Exercise: Implement the Azure Cosmos DB for NoSQL service
     - Implement methods to use a query string to get a list of sessions or messages
     - Implement methods to create a new session or message
-    - Implement a method to update an existing session
+    - Implement a method to update existing sessions using point operations
     - Implement a method to upsert (create or update) multiple messages using a transactional batch operation
     - Implement a method to delete all sessions or messages by partition key using a transactional batch operation
 1. Knowledge check

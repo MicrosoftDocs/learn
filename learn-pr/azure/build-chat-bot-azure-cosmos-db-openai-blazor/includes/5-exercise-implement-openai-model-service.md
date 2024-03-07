@@ -1,4 +1,4 @@
-Let's start with the simplest service to implement, `OpenAiService`. This service only contains two methods that we need to implement so we can implement basic prompts and completions right away. We're not implementing our Azure Cosmos DB for NoSQL data service until later, so we can't persist our sessions across debugging sessions yet.
+Let's start with the simplest service, `OpenAiService`. This service only contains two methods that we need to implement so we can implement basic prompts and completions right away. We're not implementing our Azure Cosmos DB for NoSQL data service until later, so we can't persist our sessions across debugging sessions yet.
 
 In this exercise, we have a few key requirements:
 
@@ -11,7 +11,7 @@ First, implement a question-answer conversation by sending a system prompt, a qu
 
 1. Open the **Services/OpenAiService.cs** file.
 
-1. Within the `GetChatCompletionAsync` method, remove any existing placeholder code:
+1. Within the `GetChatCompletionAsync` method, remove any existing placeholder code.
 
     ```csharp
     public async Task<(string completionText, int completionTokens)> GetChatCompletionAsync(string sessionId, string userPrompt)
@@ -71,7 +71,7 @@ First, implement a question-answer conversation by sending a system prompt, a qu
 
 Now, send the AI model a different system prompt, your current conversation, and session ID so the AI model can summarize the conversation in a couple of words.
 
-1. Within the `SummarizeAsync` method, remove any existing placeholder code:
+1. Within the `SummarizeAsync` method, remove any existing placeholder code.
 
     ```csharp
     public async Task<string> SummarizeAsync(string sessionId, string conversationText)
@@ -91,7 +91,7 @@ Now, send the AI model a different system prompt, your current conversation, and
     ChatMessage userMessage = new(ChatRole.User, conversationText);
     ```
 
-1. Create a `ChatCompletionsOptions` variable named `options` with the two message variables in the `Messages` list, `User` set to the `sessionId` constructor parameter, `MaxTokens` set to `200`, and the remaining properties to the recommended values here:
+1. Create a `ChatCompletionsOptions` variable named `options` with the two message variables in the `Messages` list, `User` set to the `sessionId` constructor parameter, `MaxTokens` set to `200`, and the remaining properties to the recommended values here.
 
     ```csharp
     ChatCompletionsOptions options = new()
@@ -125,7 +125,7 @@ Now, send the AI model a different system prompt, your current conversation, and
 
 ## Check your work
 
-At this point, your application should have a thorough enough implementation of the Azure OpenAI service that you can test the application. Remember, you haven't implemented a data store yet, so your conversations aren't persisted between debugging sessions.
+At this point, your application should have a thorough enough implementation of the Azure OpenAI service that you can test the application. Remember, you don't have a data store implementation yet, so your conversations aren't persisted between debugging sessions.
 
 ### [Validate application](#tab/validate-app)
 
@@ -148,7 +148,7 @@ At this point, your application should have a thorough enough implementation of 
 
 ### [Review code](#tab/review-code)
 
-1. Review the `AskAsync` method of the *OpenAiService.cs* code file to make sure that your code matches this sample.
+1. Make sure that your code matches this sample by reviewing the `AskAsync` method of the *OpenAiService.cs* code file.
 
     ```csharp
     public async Task<(string completionText, int completionTokens)> GetChatCompletionAsync(string sessionId, string userPrompt)
@@ -180,7 +180,7 @@ At this point, your application should have a thorough enough implementation of 
     }
     ```
 
-1. Review the `SummarizeAsync` method of the *OpenAiService.cs* code file to make sure that your code matches this sample.
+1. Make sure that your code matches this sample by reviewing the `SummarizeAsync` method of the *OpenAiService.cs* code file.
 
     ```csharp
     public async Task<string> SummarizeAsync(string sessionId, string conversationText)
