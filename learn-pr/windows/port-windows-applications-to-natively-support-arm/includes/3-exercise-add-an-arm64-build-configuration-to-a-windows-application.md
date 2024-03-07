@@ -18,7 +18,7 @@ In this exercise, you’ll add an Arm64 build to an existing Windows application
 
     :::image type="content" source="../media/vs-2022-build-menu-configuration-manager.png" alt-text="The Visual Studio 2022 Build menu is expanded with the Configuration Manager item selected.":::
 
-1. On the **Configuration Manager** dialog, ensure the **Debug** Active solution configuration is selected. In the **Project contexts** section next to the **HelloWorldArm** project, expand the **Platform** drop-down list and select **New**.
+1. On the **Configuration Manager** dialog, ensure the **Debug** Active solution configuration and the **ARM64** Active solution platform are selected. In the **Project contexts** section next to the **HelloWorldArm** project, expand the **Platform** drop-down list and select **New**.
 
     :::image type="content" source="../media/vs-2022-configuration-manager-new-platform.png" alt-text="The Visual Studio 2022 Configuration Manager dialog displays with the Debug Active solution configuration selected and the Platform drop-down list expanded with the New item selected.":::
 
