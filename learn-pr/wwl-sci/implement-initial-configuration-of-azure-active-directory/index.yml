@@ -6,7 +6,7 @@ metadata:
   ms.date: 11/21/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure
 title: Implement initial configuration of Microsoft Entra ID
 summary: Learn to create an initial Microsoft Entra ID configuration to ensure all the identity solutions available in Azure are ready to use. This module explores how to build and configure a Microsoft Entra system.

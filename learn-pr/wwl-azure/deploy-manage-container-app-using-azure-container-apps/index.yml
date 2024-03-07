@@ -6,9 +6,7 @@ metadata:
   ms.date: 02/29/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: module
-  ms.custom:
-  - N/A
+  ms.topic: module-guided-project
   ms.service: azure
   ai-usage: ai-assisted
 title: Guided project - Deploy and manage a container app using Azure Container Apps

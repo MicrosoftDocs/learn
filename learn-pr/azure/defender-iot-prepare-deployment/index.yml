@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.defender-iot-prepare-deployment
+metadata:
+  title: |
+    Prepare to deploy Microsoft Defender for IoT
+  description: Learn how to prepare your deployment of Microsoft Defender for IoT to monitor your OT network.
+  ms.date: 03/04/2024
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.service: defender-for-iot
+title: Prepare to deploy Microsoft Defender for IoT
+summary: To prepare for the deployment of Microsoft Defender for IoT, identify what to monitor, choose a traffic mirroring method, and review the appliance options.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Analyze a network diagram to identify devices and subnets to monitor with Defender for IoT.
+    - Analyze a network diagram to identify where to place Defender for IoT network sensors and how they should be configured.
+    - Choose a traffic mirroring method for each sensor.
+    - Compare the appliance options available for use with Defender for IoT network sensors.
+prerequisites: |
+  - Knowledge of what Defender for IoT is and how it works at a beginner level
+  - Knowledge of operational technology (OT) networks and networking concepts at an intermediate level
+  - Familiarity with the Purdue networking model like the device types that are included in each networking level
+  - A network diagram
+iconUrl: /learn/achievements/defender-for-iot/defender-iot-prepare-deployment.svg
+levels: 
+  - intermediate
+roles: 
+  - solution-architect
+products: 
+  - defender-for-iot
+subjects:
+  - security
+units:
+- learn.defender-iot-prepare-deployment.introduction
+- learn.defender-iot-prepare-deployment.describe-process-to-prepare
+- learn.defender-iot-prepare-deployment.examine-network-diagram
+- learn.defender-iot-prepare-deployment.identify-the-devices-and-subnets
+- learn.defender-iot-prepare-deployment.determine-traffic-mirroring-method
+- learn.defender-iot-prepare-deployment.review-appliance-options
+- learn.defender-iot-prepare-deployment.summary
+badge:
+  uid: 
+    learn.defender-iot-prepare-deployment.badge
