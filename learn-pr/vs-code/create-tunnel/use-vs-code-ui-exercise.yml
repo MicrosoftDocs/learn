@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-tunnel.use-vs-code-ui-exercise
-title: Exercise - Enable Remote - Tunnels in Visual Studio Code UI
+title: Exercise - Enable Remote - Tunnels in the Visual Studio Code UI
 metadata:
-  title: Exercise - Enable Remote - Tunnels in Visual Studio Code UI
+  title: Exercise - Enable Remote - Tunnels in the Visual Studio Code UI
   description: This exercise explains the steps to enable remote tunnels with the Visual Studio Code user interface.
   author: theReynald
   ms.author: radolphe
