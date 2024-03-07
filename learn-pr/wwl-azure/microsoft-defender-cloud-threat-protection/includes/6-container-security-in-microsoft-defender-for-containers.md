@@ -76,6 +76,3 @@ Security alerts for runtime workload in the clusters can be recognized by the K8
 
 Defender for Containers also includes host-level threat detection with over 60 Kubernetes-aware analytics, AI, and anomaly detections based on your runtime workload.
 
-|
-|
-|
