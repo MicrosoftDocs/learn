@@ -39,7 +39,6 @@ products:
 - azure-test-plans
 - github
 subjects:
-- development-tools
 - devops
 units:
 - learn.wwl.owasp-and-dynamic-analyzers.introduction
