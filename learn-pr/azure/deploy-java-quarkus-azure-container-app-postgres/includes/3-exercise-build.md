@@ -77,7 +77,7 @@ This command creates a new Quarkus project. It generates a Maven directory struc
 
 ## Code the application
 
-Next, create rename the generated *MyEntity.java* class to *Todo.java* (located in the same folder as the *TodoResource.java* file). Replace the existing code with the following Java code. It uses Java Persistence API (`jakarta.persistence.*` package) to store and retrieve data from your PostgreSQL server. It also uses [Hibernate ORM with Panache](https://quarkus.io/guides/hibernate-orm-panache) (inheriting from `io.quarkus.hibernate.orm.panache.PanacheEntity`) to simplify the persistence layer.
+Next, rename the generated *MyEntity.java* class to *Todo.java* (located in the same folder as the *TodoResource.java* file). Replace the existing code with the following Java code. It uses Java Persistence API (`jakarta.persistence.*` package) to store and retrieve data from your PostgreSQL server. It also uses [Hibernate ORM with Panache](https://quarkus.io/guides/hibernate-orm-panache) (inheriting from `io.quarkus.hibernate.orm.panache.PanacheEntity`) to simplify the persistence layer.
 
 You use a JPA entity (`@Entity`) to map the Java `Todo` object directly to the PostgreSQL `Todo` table. The `TodoResource` REST endpoint then creates a new `Todo` entity class and persists it. This class is a domain model that's mapped on the `Todo` table. The table is automatically created by JPA.
 

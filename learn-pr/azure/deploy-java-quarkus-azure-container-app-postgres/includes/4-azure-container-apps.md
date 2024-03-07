@@ -20,7 +20,7 @@ Container Apps provides the following features.
 
 In the next exercise, you'll be introduced to the following concepts.
 
-* _Environment_: An enhanced-security boundary around a group of container apps. The apps are deployed in a singe virtual network, they can easily intercommunicate with each other, and they write logs to a single Log Analytics workspace. An environment can be compared with a Kubernetes namespace.
+* _Environment_: An enhanced-security boundary around a group of container apps. The apps are deployed in a single virtual network, they can easily intercommunicate with each other, and they write logs to a single Log Analytics workspace. An environment can be compared with a Kubernetes namespace.
 * _Container app_: A group of containers (a pod) that's deployed and scales together. They share a single disk space and network.
 * _Revision_: An immutable snapshot of a container app. New revisions are created automatically and are valuable for HTTP traffic redirection strategies like A/B testing.
 

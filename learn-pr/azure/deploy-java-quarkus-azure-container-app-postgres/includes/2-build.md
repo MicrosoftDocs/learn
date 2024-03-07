@@ -12,7 +12,7 @@ You want to create a Quarkus application that hosts its logic in Container Apps 
 
 ## Quarkus
 
-[Quarkus](https://quarkus.io) is A Kubernetes Native Java stack that's tailored for OpenJDK HotSpot and GraalVM. It's created from the best-of-breed Java libraries and standards. Quarkus is an open source stack for writing Java applications. Quarkus isn't limited to microservices, even though it's highly suited for them.
+[Quarkus](https://quarkus.io) is a Kubernetes Native Java stack that's tailored for OpenJDK HotSpot and GraalVM. It's created from the best-of-breed Java libraries and standards. Quarkus is an open source stack for writing Java applications. Quarkus isn't limited to microservices, even though it's highly suited for them.
 
 From a developer's point of view, Quarkus provides a great developer experience: it gives you fast live reload and unified configuration and hides the complexity of GraalVM, enabling you to easily generate native executables. All without introducing a new programming model. Quarkus lets you use your experience in standard libraries that you might already know (like CDI, JPA, Bean Validation, and JAX-RS) and many popular frameworks (like Eclipse Vert.x and Apache Camel).
 
