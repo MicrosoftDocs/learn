@@ -15,7 +15,7 @@ In the previous scenario, a developer needs to work on an application that depen
 
 ### Why use the Visual Studio Code Remote - Tunnels extension?
 
-The use of tunneling offers a streamlined solution to many challenges. Extensions are now available for development tools such as Visual Studio Code. The Visual Studio Code [Remote - Tunnels extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.remote-server) can effectively eliminate the need for source code to be on your Visual Studio Code client machine because the extension runs commands and other extensions directly on the remote machine. This approach is possible because of the [Visual Studio Code Server](https://code.visualstudio.com/docs/remote/vscode-server). This service can run on a remote development machine, like your desktop PC or a virtual machine (VM). It makes it possible to securely connect to the remote machine from anywhere through a local Visual Studio Code client, without the requirement of the Secure Shell protocol.
+The use of tunneling offers a streamlined solution to many challenges. Extensions are now available for development tools such as Visual Studio Code. The Visual Studio Code [Remote - Tunnels extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.remote-server) can effectively eliminate the need for source code to be on your Visual Studio Code client machine because the extension runs commands and other extensions directly on the remote machine. This approach is possible because of [Visual Studio Code Server](https://code.visualstudio.com/docs/remote/vscode-server). This service can run on a remote development machine, like your desktop PC or a virtual machine (VM). It makes it possible to securely connect to the remote machine from anywhere through a local Visual Studio Code client, without the requirement of the Secure Shell protocol.
 
 :::image type="content" source="../media/8-remote-chart.png" alt-text="Diagram of Visual Studio Code and Remote OS chart.":::
 
@@ -32,19 +32,19 @@ Regardless of the method chosen, the outcome in terms of tunneling functionality
 
 ### Visual Studio Code Desktop or the code CLI?
 
-If it's not feasible to install the full Visual Studio Code Desktop on your remote machine, the CLI offers a viable alternative. On the other hand, if you're already engaged in tasks within Visual Studio Code, employing the Visual Studio Code Desktop UI to initiate tunneling for your current machine is a convenient option.
+If it's not feasible to install Visual Studio Code Desktop on your remote machine, the CLI offers a viable alternative. On the other hand, if you're already engaged in tasks within Visual Studio Code, using the Visual Studio Code Desktop UI to initiate tunneling for your current machine is a convenient option.
 
 ### Prepare for the exercises
 
-In the upcoming exercises, you use both the Visual Studio Code Desktop and the code CLI to set up tunnels. To prepare for these exercises, you want to have some sample code in a file and folder available on your local machine. Let's dive right in.
+In the upcoming exercises, you use both the Visual Studio Code Desktop and the code CLI to set up tunnels. To prepare for these exercises, you should have some sample code in a file and folder available on your local machine. Let's dive right in.
 
-1. Create a TestUI folder on your hard drive.
+1. Create a *TestUI* folder on your hard drive.
 
     :::image type="content" source="../media/10-folder-1.png" alt-text="Screenshot of creating a folder.":::
 
     :::image type="content" source="../media/11-folder-2.png" alt-text="Screenshot of the created folder.":::
-1. Create a TestCLI folder, repeating the previous step.
-1. Create an `index.html` file with the following test code:
+1. Create a *TestCLI folder*, repeating the previous step.
+1. Create an *index.html* file with the following test code:
 
     ```html
     <!DOCTYPE html> 
@@ -59,6 +59,6 @@ In the upcoming exercises, you use both the Visual Studio Code Desktop and the c
     </html> 
     ```
 
-1. Copy the file into both the TestUI and TestCLI folders.
+1. Copy the file into both the *TestUI* and *TestCLI* folders.
 
     :::image type="content" source="../media/18-populated-folders.png" alt-text="Screenshot of the TestUI and TestCLI folders with index.html files.":::
