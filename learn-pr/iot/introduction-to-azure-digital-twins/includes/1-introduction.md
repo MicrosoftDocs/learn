@@ -5,3 +5,9 @@ Suppose you work in the IT department of a manufacturing company that owns sever
 In this module, you'll explore how Azure Digital Twins can be used to digitally represent the connected arms in this factory, and bring those representations to life by combining contextual business information with IoT data. You'll view the environment as 2D and 3D representations and understand how the digital twins can be queried to gain insights about the real environment, both at the present moment and from patterns in historized data over time.
 
 Upon completion of this module, you'll be able to describe how models, twins, and relationships are used in Azure Digital Twins to represent components of a real-world IoT environment in a digital graph, which is live and queriable. This will help you to evaluate whether Azure Digital Twins is appropriate for digitally representing and gaining insights from your IoT environment.
+
+## Resources needed for hands-on exercises
+
+This module includes hands-on exercises. To complete all the exercises, you'll need the following resources:
+* An Azure subscription. If you don't have one, you can [create one for free now](https://azure.microsoft.com/free).
+    - In your account, you'll also need subscription-level permission to manage access to Azure resources (such as the *Owner* role). If you don't have this permission, you'll need cooperation of someone that does have that permission and can run some commands on your behalf.

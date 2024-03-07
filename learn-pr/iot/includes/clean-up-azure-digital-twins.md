@@ -11,5 +11,5 @@ ms.service: digital-twins
 In your Cloud Shell, run the following command to delete the resources that you created in this module's hands-on exercises.
 
 ```azurecli
-az group delete --name azure-digital-twins-training
+az group delete --name $RESOURCE_GROUP
 ```

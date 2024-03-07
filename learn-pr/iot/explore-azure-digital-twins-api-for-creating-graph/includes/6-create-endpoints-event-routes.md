@@ -35,10 +35,10 @@ Next, create an Event Grid topic in Azure. Later, you'll register this Event Gri
 
 In a browser tab, navigate to the [Azure Cloud Shell](https://ms.portal.azure.com/#cloudshell/).
 
-Run the following command in the Cloud Shell to create an Event Grid topic. The command assumes you're using the resource group name of *azure-digital-twins-training* that was provided in [Unit 2](../2-configure-postman-api-collections.yml), and there's a placeholder to name your new Event Grid topic.
+Run the following command in the Cloud Shell to create an Event Grid topic. There's a placeholder to name your new Event Grid topic.
 
 ```azurecli
-    az eventgrid topic create --resource-group azure-digital-twins-training --location westus2 --name <name-for-your-event-grid-topic> 
+    az eventgrid topic create --resource-group $RESOURCE_GROUP --location $REGION --name <name-for-your-event-grid-topic> 
 ```
 
 Copy and save the value of `endpoint` in the result, as you'll need it for a request parameter in the next section.
@@ -46,7 +46,7 @@ Copy and save the value of `endpoint` in the result, as you'll need it for a req
 Next, run the following command to get the shared access keys of the topic. There's a placeholder for you to enter the name you chose for your Event Grid topic.
 
 ```azurecli
-    az eventgrid topic key list --name <name-of-your-event-grid-topic> --resource-group azure-digital-twins-training
+    az eventgrid topic key list --name <name-of-your-event-grid-topic> --resource-group $RESOURCE_GROUP
 ```
 
 Copy and save the value of `key1` in the result, as you'll need it for a request parameter in the next section.

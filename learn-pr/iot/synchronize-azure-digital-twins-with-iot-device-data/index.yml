@@ -19,6 +19,8 @@ abstract: |
 prerequisites: |
   - Understanding of how models, twins, and relationships are used in an Azure Digital Twins solution
   - Experience with programming concepts at the intermediate level
+  - An [Azure subscription](https://azure.microsoft.com/free), and permission to manage access to Azure resources in the subscription
+  - [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/) with the Azure development workload.
   - [.NET Core](https://dotnet.microsoft.com/download/dotnet)
 iconUrl: /training/achievements/synchronize-azure-digital-twins-with-iot-device-data.svg
 ratingEnabled: false

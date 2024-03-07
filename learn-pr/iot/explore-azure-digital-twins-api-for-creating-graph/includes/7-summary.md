@@ -5,3 +5,5 @@ After configuring the API collections in Postman, you used the Import Jobs API t
 Using the Azure Digital Twins built-in capabilities for creating models, devices, and connections between them has given you a central destination for device data that's intuitively organized like your real world environment. This can be used to give stakeholders and operators a quick, all-up view of the energy grid components in the city and how they connect to each other. Later, you can send IoT data into this graph in order to gather queryable insights and build dashboards to track what is happening with the city's energy flow.
 
 [!INCLUDE [Instructions to clean up Azure Digital Twins resources](../../includes/clean-up-azure-digital-twins.md)]
+
+You might also want to delete the [Postman](https://web.postman.co/) account that you created in Unit 2.

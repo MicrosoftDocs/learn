@@ -1,4 +1,4 @@
-In this unit, you get ready to build the sample data flow scenario.
+In this unit, you set up the scenario and get ready to build the sample data flow.
 
 ## Understand scenario and data flow
 
@@ -19,6 +19,8 @@ Next, Flow B propagates data through the digital twin graph. Data flow follows t
 1. Event Grid sends the notification data to another custom Azure function.
 1. The Azure function code uses the notification data to update connected twins as appropriate. In this case, it will update the *Temperature* property on the *Room21* twin, setting the value to match the *Temperature* value on the thermostat twin that the room contains.
 
+You'll set up these data flows in Units 3 and 4 of this module. But first, follow the steps below to prepare an Azure Digital Twins instance and a device simulator, to get the scenario ready. 
+
 [!INCLUDE [Instructions to set up Azure Digital Twins instance](../../includes/set-up-azure-digital-twins.md)]
 
 ### Create scenario graph
@@ -37,6 +39,8 @@ az dt twin create -n $INSTANCE_NAME --dtmi "dtmi:example:Room;1" --twin-id Room2
 az dt twin relationship create -n $INSTANCE_NAME --relationship-id room21_contains_thermostat67 --relationship contains --twin-id Room21 --target Thermostat67
 ```
 
+In a real scenario with many rooms and devices, you'd continue to create more digital twins so that each entity in your environment is represented in your graph.
+
 ## Download device simulator
 
 Get the device simulator code by navigating to the [Azure Digital Twins end-to-end sample project](/samples/azure-samples/digital-twins-samples/digital-twins-samples), and selecting the **Browse code** button underneath the title. 
@@ -48,3 +52,5 @@ This will take you to the GitHub repo for the samples, which you can download as
 This will download a .zip folder to your machine as *digital-twins-samples-main.zip*. Unzip the folder and extract the files.
 
 The device simulator is located in the *DeviceSimulator* folder. Only the contents of this folder are needed for this module; you can remove the other files and folders from your machine if you want.
+
+Later in this module, you'll run the device simulator application to simulate data being emitted by a thermostat in the smart building scenario.
