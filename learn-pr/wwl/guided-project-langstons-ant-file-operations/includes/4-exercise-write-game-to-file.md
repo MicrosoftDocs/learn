@@ -94,7 +94,7 @@ In this exercise, you add code that writes the game state to a file. Let's get s
 
 1. Navigate to the `do`-`while` loop at the end of the **Program.cs** file
 
-1. Update the `do-while` loop to call the `WriteToFile` method when the user presses the `w` key:
+1. Update the `do-while` loop to call the `WriteToFile` method when the user presses the <kbd>w</kbd> key:
 
     ```c#
     if (input == "w" || input == "W") 
@@ -109,7 +109,7 @@ In this exercise, you add code that writes the game state to a file. Let's get s
     }
     ```
 
-    Now the `WriteToFile` method is called when the user presses the `w` key.
+    Now the `WriteToFile` method is called when the user presses the <kbd>w</kbd> key.
 
 ## Check your work
 
@@ -121,11 +121,11 @@ In this exercise, you add code that writes the game state to a file. Let's get s
     Press Enter for a new generation, 'w' to write to file, or 'r' to read from file.
     ```
 
-1. Press the `Enter` key several times
+1. Press the <kbd>Enter</kbd> key several times
 
     The application should display the next generations of the game.
 
-1. Press the `w` key.
+1. Press the <kbd>w</kbd> key.
 
     The application should display the message "File written." 
 

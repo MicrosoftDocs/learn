@@ -43,7 +43,7 @@ In this exercise, you add code that reads the game state file. Let's get started
 
 1. Navigate to the `do`-`while` loop at the bottom of the **Program.cs** file
 
-1. Update the `if` statement that handles the `r` key:
+1. Update the `if` statement that handles the <kbd>r</kbd> key:
 
     ```c#
     else if (input == "r" || input == "R") {
@@ -52,7 +52,7 @@ In this exercise, you add code that reads the game state file. Let's get started
     } 
     ```
 
-    Now the `ReadFile` method is called when the user presses the `r` key and the content of the file is displayed.
+    Now the `ReadFile` method is called when the user presses the <kbd>r</kbd> key and the content of the file is displayed.
 
 ## Check your work
 
@@ -64,15 +64,15 @@ In this exercise, you add code that reads the game state file. Let's get started
     Press Enter for a new generation, 'w' to write to file, or 'r' to read from file.
     ```
 
-1. Press the `Enter` key several times.
+1. Press the <kbd>Enter</kbd> key several times.
 
     The application should display several generations of the game.
 
-1. Press the `w` key.
+1. Press the <kbd>w</kbd> key.
 
     The application should display the message "File written." The "antPattern.txt" file should be created in the `output` directory.
 
-1. Press the `r` key.
+1. Press the <kbd>r</kbd> key.
 
     The application should display the file content which is the previously generated game state.
 

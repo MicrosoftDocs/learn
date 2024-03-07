@@ -18,7 +18,7 @@ In this exercise, you add code that supports the options to read or write the ga
 
     Next, update the method to handle the different keys pressed by the user.
 
-1. Add a new `if` statement to handle the `w` key:
+1. Add a new `if` statement to handle the <kbd>w</kbd> key:
 
     ```c#
     if (input == "w" || input == "W") 
@@ -35,9 +35,9 @@ In this exercise, you add code that supports the options to read or write the ga
     }
     ```
 
-    For now, use a comment to indicate where the `WriteToFile` method will be called until you implement the method.
+    For now, use a comment to indicate where the `WriteToFile` method should be called until you implement the method.
 
-1. Add a condition for the `r` key:
+1. Add a condition for the <kbd>r</kbd> key:
 
     ```c#
     if (input == "w" || input == "W") 
@@ -59,9 +59,9 @@ In this exercise, you add code that supports the options to read or write the ga
     }
     ```
 
-    For now, use a comment to indicate where the `ReadFile` method will be called until you implement the method.
+    For now, use a comment to indicate where the `ReadFile` method should be called until you implement the method.
 
-1. Add conditions to the `while` statement to handle the `w` and `r` keys:
+1. Add conditions to the `while` statement to handle the <kbd>w</kbd> and <kbd>r</kbd> keys:
 
     ```c#
     while (String.IsNullOrEmpty(input) 
@@ -69,7 +69,7 @@ In this exercise, you add code that supports the options to read or write the ga
         || input == "r" || input == "R");
     ```
 
-    Now the `while` statement will continue to loop if the user presses the Enter key, or the `w` or `r` keys.
+    Now the `while` statement continues to loop if the user presses the <kbd>Enter</kbd> key, or the <kbd>w</kbd> or <kbd>r</kbd> keys.
 
 ## Check your work
 
@@ -81,15 +81,15 @@ In this exercise, you add code that supports the options to read or write the ga
     Press Enter for a new generation, 'w' to write to file, or 'r' to read from file.
     ```
 
-1. Press the `Enter` key.
+1. Press the <kbd>Enter</kbd> key.
 
     The application should display the next generation of the game.
 
-1. Press the `w` key.
+1. Press the <kbd>w</kbd> key.
 
     The application should display the message "File written."
 
-1. Press the `r` key.
+1. Press the <kbd>r</kbd> key.
 
     The application should display the message "File read."
 

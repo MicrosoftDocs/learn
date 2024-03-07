@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/06/2024
+  ms.date: 03/07/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
@@ -16,21 +16,21 @@ quiz:
     choices:
     - content: "`File.Write(stringPath, content);`"
       isCorrect: false
-      explanation: "Incorrect. There is no method called `Write` in the `File` class."
+      explanation: "Incorrect. There's no method called `Write` in the `File` class."
     - content: "`File.WriteStringToFile(stringPath, content);`"
       isCorrect: false
-      explanation: "Incorrect. There is no method called `WriteStringToFile` in the `File` class."
+      explanation: "Incorrect. There's no method called `WriteStringToFile` in the `File` class."
     - content: "`File.WriteAllText(stringPath, content);`"
       isCorrect: true
-      explanation: "Correct. WriteAllText writes the specified string to the file, creating the file if it does not already exist."
+      explanation: "Correct. WriteAllText writes the specified string to the file, creating the file if it doesn't already exist."
   - content: "Which line correctly checks if a directory, `directoryPath`, exists in C#?"
     choices:
     - content: "`Directory.CheckExistence(directoryPath);`"
       isCorrect: false
-      explanation: "Incorrect. There is no method called `CheckExistence` in the `Directory` class."
+      explanation: "Incorrect. There's no method called `CheckExistence` in the `Directory` class."
     - content: "`Directory.EnsureDirectory(directoryPath);`"
       isCorrect: false
-      explanation: "Incorrect. There is no method called `EnsureDirectory` in the `Directory` class."
+      explanation: "Incorrect. There's no method called `EnsureDirectory` in the `Directory` class."
     - content: "`Directory.Exists(directoryPath);`"
       isCorrect: true
       explanation: "Correct. The `Exists` method checks whether a directory exists at the specified path."
