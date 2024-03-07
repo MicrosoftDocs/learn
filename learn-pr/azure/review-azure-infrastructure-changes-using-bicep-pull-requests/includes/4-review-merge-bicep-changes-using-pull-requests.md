@@ -86,7 +86,7 @@ In some teams, the pull request author should also complete it. This process hel
 
 ::: zone pivot="azurerepos"
 
-In some teams, the the pull request author should also complete it. This process helps ensure that the author controls when the merge happens and can be available to monitor any automated deployments. In other teams, approvers complete the pull request. You can even use Azure DevOps to automatically complete a pull request when it meets the approval criteria. Your team should decide who merges pull requests and when.
+In some teams, the pull request author should also complete it. This process helps ensure that the author controls when the merge happens and can be available to monitor any automated deployments. In other teams, approvers complete the pull request. You can even use Azure DevOps to automatically complete a pull request when it meets the approval criteria. Your team should decide who merges pull requests and when.
 
 ::: zone-end
 
