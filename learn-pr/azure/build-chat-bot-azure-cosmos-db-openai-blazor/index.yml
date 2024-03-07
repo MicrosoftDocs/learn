@@ -48,9 +48,9 @@ products:
   - blazor
 subjects:
   - cloud-computing
-  - chatbot
+  - chatbots
   - artificial-intelligence
-  - database
+  - databases
   - custom-app-development
 units:
 - learn.build-chat-bot-azure-cosmos-db-openai-blazor.introduction
