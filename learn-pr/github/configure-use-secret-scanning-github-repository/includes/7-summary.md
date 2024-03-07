@@ -1,8 +1,8 @@
 The goal of this module was to help you understand how secret scanning works so you can configure and use it efficiently in your project.
 
-Secret scanning is enabled by default on all public repositories, and you can enable it at the organization or private repository level on an enterprise plan with an Advanced Security license. Secret scanning scans the code on all branches present in your GitHub repository and alerts you every time a secret is accidentally committed into a repository. You're then able to take the appropriate actions to secure your code according to the type of secret that was committed.
+Secret scanning is enabled by default on all public repositories. You can also enable it at the organization or private repository level on an enterprise plan with an Advanced Security license. Secret scanning scans the code on all branches present in your GitHub repository and alerts you every time a secret is accidentally committed into a repository. You're then able to take the appropriate actions to secure your code according to the type of secret that was committed.
 
-For private repositories, secret scanning's configuration options also enable you to exclude specific files from scans, choose the people to notify of alerts, and create custom patterns for the secrets in your project that are not automatically detected by GitHub.
+For private repositories, you can configure secret scanning to exclude specific files from scans, choose the people to notify of alerts, and create custom patterns for the secrets in your project that GitHub doesn't automatically detect.
 
 ## Learn more
 
