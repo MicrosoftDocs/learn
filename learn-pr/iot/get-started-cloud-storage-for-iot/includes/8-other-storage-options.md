@@ -1,4 +1,4 @@
-There are several additional available types of Azure storage.
+There are several other available types of Azure storage.
 
 ### Azure Files
 
@@ -66,4 +66,4 @@ If you currently use Azure Table Storage, you gain the following benefits by mov
 | **Query** | Query execution uses index for primary key, and scans otherwise. | Queries can take advantage of automatic indexing on properties for fast query times. |
 | **Consistency** | Strong within primary region. Eventual within secondary region. | Five well-defined consistency levels to trade off availability, latency, throughput, and consistency based on your application needs. |
 | **Pricing** | Consumption-based. | Available in both consumption-based and provisioned capacity modes. |
-| **SLAs** | 99.9% to 99.99% availability, depending on the replication strategy. | 99.999% read availability, 99.99% write availability on a single-region account and 99.999% write availability on multi-region accounts. Comprehensive SLAs covering availability, latency, throughput and consistency. |
+| **SLAs** | 99.9% to 99.99% availability, depending on the replication strategy. | 99.999% read availability, 99.99% write availability on a single-region account and 99.999% write availability on multi-region accounts. Comprehensive SLAs covering availability, latency, throughput, and consistency. |

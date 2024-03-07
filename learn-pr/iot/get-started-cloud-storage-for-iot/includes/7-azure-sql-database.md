@@ -4,7 +4,7 @@ Azure SQL Database is always running on the latest stable version of SQL Server 
 
 ## Key features
 
-* **Business continuity**: Business continuity in Azure SQL Database refers to the mechanisms, policies, and procedures that enable your business to continue operating in the face of disruption, particularly to its computing infrastructure. In the most of the cases, Azure SQL Database will handle the disruptive events that might happen in the cloud environment and keep your applications and business processes running.
+* **Business continuity**: Business continuity in Azure SQL Database refers to the mechanisms, policies, and procedures that enable your business to continue operating in the face of disruption, particularly to its computing infrastructure. In the most of the cases, Azure SQL Database handles the disruptive events that might happen in the cloud environment and keep your applications and business processes running.
 * **Extensive monitoring and alerting capabilities**: Azure SQL Database provides advanced monitoring and troubleshooting features that help you get deeper insights into workload characteristics. These features and tools include:
   * The built-in monitoring capabilities provided by the latest version of the SQL Server database engine. They enable you to find real-time performance insights.
   * PaaS monitoring capabilities provided by Azure that enable you to monitor and troubleshoot a large number of database instances.
