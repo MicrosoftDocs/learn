@@ -6,7 +6,7 @@ The top security challenges organizations face include:
 
 Organizations need to act quickly to address all the security challenges they face, but working at human speed, even if there weren't a talent shortage, isn't enough. Organizations need to work at machine speed.
 
-Microsoft Copilot for Security is an AI-powered, cloud-based security analysis tool that enables analysts to respond to threats quickly, process signals at machine speed, and assess risk exposure more quickly than may otherwise be possible. 
+Microsoft Copilot for Security is an AI-powered, cloud-based security analysis tool that enables analysts to respond to threats quickly, process signals at machine speed, and assess risk exposure more quickly than may otherwise be possible.
 
 ### Standalone and embedded experience
 
@@ -22,13 +22,13 @@ More information on both the standalone and embedded experience are covered in s
 
 ### Natural language processing (NLP)
 
-Copilot is built using OpenAI models for natural language processing (NLP) and is designed to integrate with existing security tools and processes, making it easier for organizations to improve their overall security posture. But what exactly does this mean?  
+Copilot is built using Azure OpenAI Services and is designed to integrate with existing security tools and processes, making it easier for organizations to improve their overall security posture. Azure OpenAI Services provides REST API access to OpenAI's powerful large language models (LLMs) for natural language processing (NLP), while providing security capabilities of Microsoft Azure.
 
-With the OpenAI large language models (LLM) for NLP, Microsoft Copilot for Security is able to read, decipher, understand, and make sense of human languages, enabling users to interact with it using natural language. And although the OpenAI LLM models are trained on a vast amount of information that enables it with broad general knowledge and problem solving abilities, it’s not enough. Security analysts expect their copilot to be specifically trained on security and that is where the integration with existing security tools and processes comes into play.
+With access to the powerful LLMs for NLP, Copilot is able to read, decipher, and make sense of human languages, enabling users to securely interact with it using natural language. Although the LLMs are trained on a vast amount of information that endows Copilot with broad general knowledge and problem solving abilities, it’s not enough. Security analysts expect their copilot to be trained on security and that is where the integration with existing security tools and processes comes into play.
 
 ### Integration with Security-specific sources
 
-Copilot combines the Open AI LLM with a security-specific model from Microsoft. This security-specific model is informed by Microsoft’s unique global threat intelligence and more than 65 trillion daily signals and incorporates a growing set of security-specific resources (plug-ins). Through these plug-ins, Microsoft Copilot for Security integrates with various sources, including Microsoft's own security products including Microsoft Sentinel, Microsoft Defender XDR, and Microsoft Intune, third-party vendors, and open-source intelligence feeds. Through this information, Copilot is able to learn and leverage advanced threat intelligence, at machine speed, to help analysts identify and respond to emerging threats.
+Copilot combines powerful LLMs with a security-specific model from Microsoft. This security-specific model is informed by Microsoft’s unique global threat intelligence, more than 65 trillion daily signals, and incorporates information from a growing set of security-specific sources using plug-ins and connections to knowledge bases. Through plug-ins, Copilot integrates with Microsoft's own security products, non-Microsoft products, and open-source intelligence feeds. Connections to an organization's knowledge bases gives Copilot more context, resulting in responses that are more relevant, specific, and customized to the user. Through the powerful combination of advanced general models and security specific sources, Copilot is able to learn at machine speed to help analysts identify and respond to emerging threats.
 
 The information you give Copilot will only be accessible to your organization. Your data is your data, and it's protected by comprehensive enterprise compliance and security controls. Your data isn't used to train the foundation AI models.
 
