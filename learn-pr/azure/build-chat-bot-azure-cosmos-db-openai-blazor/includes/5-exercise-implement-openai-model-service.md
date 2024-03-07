@@ -19,13 +19,13 @@ First, implement a question-answer conversation by sending a system prompt, a qu
     }
     ```
 
-1. Create a `ChatMessage` variable named `systemMessage`. For this variable, use the `User` role and the `_systemPrompt` variable for content.
+1. Create a `ChatRequestSystemMessage` variable named `systemMessage`. For this variable, use the `User` role and the `_systemPrompt` variable for content.
 
     ```csharp
     ChatRequestSystemMessage systemMessage = new(_systemPrompt);
     ```
 
-1. Create a `ChatMessage` variable named `userMessage`. For this variable, the role should be `ChatRole.User` and use the `userPrompt` constructor parameter for the message's content.
+1. Create a `ChatRequestUserMessage` variable named `userMessage`. For this variable, the role should be `ChatRole.User` and use the `userPrompt` constructor parameter for the message's content.
 
     ```csharp
     ChatRequestUserMessage userMessage = new(userPrompt);
@@ -53,7 +53,7 @@ First, implement a question-answer conversation by sending a system prompt, a qu
     > [!TIP]
     > **4096** is the maximum number of tokens for the **gpt-35-turbo** model. We're just rounding down here to simplify things.
 
-1. Asynchronously invoke the `GetChatCompletionsAsync` method of the Azure OpenAI client variable (`_client`). Pass in the name of the model (`_modelName`) and the `options` variable you created. Store the result in a variable named `completions` of type `ChatCompletions`.
+1. Asynchronously invoke the `GetChatCompletionsAsync` method of the Azure OpenAI client variable (`_client`). Pass in the `options` variable you created. Store the result in a variable named `completions` of type `ChatCompletions`.
 
     ```csharp
     ChatCompletions completions = await _client.GetChatCompletionsAsync(options);
@@ -86,13 +86,13 @@ Now, send the AI model a different system prompt, your current conversation, and
     }
     ```
 
-1. Create a `ChatMessage` variable named `systemMessage`. For this variable, use the `User` role and the `_summarizePrompt` variable for content.
+1. Create a `ChatRequestSystemMessage` variable named `systemMessage`. For this variable, use the `User` role and the `_summarizePrompt` variable for content.
 
     ```csharp
-    ChatMessage systemMessage = new(ChatRole.System, _summarizePrompt);
+    ChatRequestSystemMessage systemMessage = new(_summarizePrompt);
     ```
 
-1. Create another `ChatMessage` variable named `userMessage`. Use the `User` role again and use the `conversationText` constructor parameter for the message's content.
+1. Create another `ChatRequestUserMessage` variable named `userMessage`. Use the `User` role again and use the `conversationText` constructor parameter for the message's content.
 
     ```csharp
     ChatRequestUserMessage userMessage = new(conversationText);
@@ -117,7 +117,7 @@ Now, send the AI model a different system prompt, your current conversation, and
     };
     ```
 
-1. Invoke `_client.GetChatCompletionsAsync` asynchronously with the model name (`_modelName`) and the `options` variable as parameters. Store the result in a variable named `completions` of type `ChatCompletions`.
+1. Invoke `_client.GetChatCompletionsAsync` asynchronously using the `options` variable as a parameter. Store the result in a variable named `completions` of type `ChatCompletions`.
 
     ```csharp
     ChatCompletions completions = await _client.GetChatCompletionsAsync(options);
@@ -194,7 +194,7 @@ At this point, your application should have a thorough enough implementation of 
     ```csharp
     public async Task<string> SummarizeAsync(string sessionId, string conversationText)
     {
-        ChatMessage systemMessage = new(ChatRole.System, _summarizePrompt);
+        ChatRequestSystemMessage systemMessage = new(_summarizePrompt);
         ChatRequestUserMessage userMessage = new(conversationText);
     
         ChatCompletionsOptions options = new()
