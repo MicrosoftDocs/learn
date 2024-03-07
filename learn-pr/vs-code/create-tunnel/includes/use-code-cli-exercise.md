@@ -1,37 +1,32 @@
 In this exercise, you learn how to:
 
-- Create and use a tunnel through the [code command-line interface (CLI)](https://code.visualstudio.com/docs/editor/command-line).
+- Create and use a tunnel through the [code CLI](https://code.visualstudio.com/docs/editor/command-line).
 - Install the code CLI on a remote machine you intend to work on.
 - Establish a tunnel between a Visual Studio Code client and your remote machine by using the code CLI.
 
-There are two options to obtain the code CLI. You can get it either from the Visual Studio Code download pane or through the command prompt.
+You can get the code CLI either from the Visual Studio Code download pane or through the command prompt.
 
-## Use the code CLI
-
-To use the code CLI, follow the steps in the next procedure.
-
-### Get the code CLI from the Visual Studio Code download pane
+## Get the code CLI from the Visual Studio Code download pane
 
 1. Go to the [Visual Studio Code download pane](https://code.visualstudio.com/#alt-downloads).
     
     :::image type="content" source="../media/0-download.png" alt-text="Screenshot of the download pane.":::
 
-1. Download and extract the code CLI for your operating system into the TestCLI directory.
+1. Download and extract the code CLI for your operating system into the *TestCLI* directory.
     
     1. After you download the file, you see that you have a compressed file.
     
      :::image type="content" source="../media/13-compressed-code.png" alt-text="Screenshot of a compressed file.":::
 
-    1. Double-click the file to extract it to the TestCLI directory, and you see the code file.
+    1. Double-click the file to extract it to the *TestCLI* directory, and you see the code file.
     
     :::image type="content" source="../media/14-uncompressed-code.png" alt-text="Screenshot of an extracted code file.":::
 
-1. From the terminal, go to the TestCLI directory.
+1. From the terminal, go to the *TestCLI* directory.
 
-### Install and unpack the code CLI through the terminal
-If you don't have access to a user interface or the Visual Studio Code download pane, you can use the terminal to install the code CLI. After you create the TestCLI folder, use the following commands to install the code CLI from within the TestCLI directory in the terminal.
+## Install and unpack the code CLI through the terminal
 
-From the TestCLI directory in the terminal, run the following command:
+If you don't have access to a user interface or the Visual Studio Code download pane, you can use the terminal to install the code CLI. After you create the *TestCLI* folder, use the following commands to install the code CLI from within the *TestCLI* directory in the terminal:
 
 ```bash
  curl -Lk 'https://code.visualstudio.com/sha/download?build=stable&os=cli-alpine-x64' --output vscode_cli.tar.gz
@@ -41,8 +36,9 @@ From the TestCLI directory in the terminal, run the following command:
 tar -xf vscode_cli.tar.gz
 ```
 
-### Create a secure tunnel
-1. Run the following command to download and start the Visual Studio Code Server on this machine and then create a tunnel to it.
+## Create a secure tunnel
+
+1. Run the following command to download and start the Visual Studio Code Server on this machine and then create a tunnel to it:
 
     ```bash
     code tunnel --accept-server-license-terms
