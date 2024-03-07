@@ -26,8 +26,6 @@ A [development container](https://containers.dev/) environment is available with
 
 1. Start the process to create a new GitHub Codespace by selecting the **Active Codespaces** option at the beginning of this unit.
 
-    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Azure-Samples/cosmosdb-chatgpt/tree/start?template=false&quickstart=1)
-
 1. On the **Create codespace** page, review the codespace configuration settings, and then select **Create new codespace**.
 
     ![Screenshot of the confirmation screen before creating a new codespace.](../media/codespace-configuration.png)
@@ -40,6 +38,12 @@ A [development container](https://containers.dev/) environment is available with
     > You can use the main menu to navigate to the **Terminal** menu option and then select the **New Terminal** option.
     >
     > :::image type="content" source="../media/open-terminal-option.png" lightbox="../media/open-terminal-option.png" alt-text="Screenshot of the codespaces menu option to open a new terminal.":::
+
+1. Validate that the Azure CLI is installed in your environment.
+
+    ```bash
+    az --version
+    ```
 
 1. Validate that .NET 8 is installed in your environment.
 
@@ -70,7 +74,7 @@ This project uses the [azure-samples/cosmosdb-chatgpt](https://github.com/Azure-
 1. Sign in to the Azure CLI.
 
     ```azurecli
-    az login
+    az login --use-device-code
     ```
 
 1. Create a new shell variable named **resourceGroupName** with the name of the Azure resource group that you create (`mslearn-cosmos-openai`).
@@ -87,13 +91,13 @@ This project uses the [azure-samples/cosmosdb-chatgpt](https://github.com/Azure-
       --location "eastus"
     ```
 
-1. Deploy the [azuredeploy.json](https://github.com/Azure-Samples/cosmosdb-chatgpt/blob/main/azuredeploy.json) template file to the resource group using [`az group deployment create`](/cli/azure/group/deployment#az-group-deployment-create).
+1. Deploy the [azuredeploy.json](https://github.com/Azure-Samples/cosmosdb-chatgpt/blob/start/azuredeploy.json) template file to the resource group using [`az group deployment create`](/cli/azure/group/deployment#az-group-deployment-create).
 
     ```azurecli
     az deployment group create \
       --resource-group $resourceGroupName \
       --name zero-touch-deployment \
-      --template-uri https://raw.githubusercontent.com/Azure-Samples/cosmosdb-chatgpt/main/azuredeploy.json
+      --template-uri https://raw.githubusercontent.com/Azure-Samples/cosmosdb-chatgpt/start/azuredeploy.json
     ```
 
 1. Wait for the deployment to complete before proceeding with this project.
