@@ -17,7 +17,7 @@ To continue your learning journey for this topic, go to:
 
 1. Stallbaumer C. [Introducing Microsoft 365 Copilot–A whole new way to work](https://www.microsoft.com/microsoft-365/blog/2023/03/16/introducing-microsoft-365-copilot-a-whole-new-way-to-work/). Microsoft. Published March 16, 2023.
 
-1. [Unit 3. Generative AI. in: Empower educators to explore the potential of artificial intelligence](training/modules/empower-educators-explore-potential-artificial-intelligence/generative-ai). Microsoft. Publication date unavailable.
+1. [Unit 3. Generative AI. in: Empower educators to explore the potential of artificial intelligence](/training/modules/empower-educators-explore-potential-artificial-intelligence/generative-ai). Microsoft. Publication date unavailable.
 
 1. [Untitled Form](https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&omkt=en-us&tryout=true&linkorigin=SiteMap). Forms. Publication date unavailable.
 
@@ -37,7 +37,7 @@ To continue your learning journey for this topic, go to:
 
 1. Herskowitz N. [How Microsoft Teams uses AI and machine learning to improve calls and meetings](https://www.microsoft.com/microsoft-365/blog/2022/06/13/how-microsoft-teams-uses-ai-and-machine-learning-to-improve-calls-and-meetings/). Microsoft. Published June 13, 2023.  
   
-1. [Unit 2. Introduction to AI. in: Empower educators to explore the potential of artificial intelligence](/training/modules/empower-educators-explore-potential-artificial-intelligence/introduction-ai). Microsoft. Publication unavailable.  
+1. [Unit 2. Introduction to AI. in: Empower educators to explore the potential of artificial intelligence](/training/modules/empower-educators-explore-potential-artificial-intelligence/introduction-ai). Microsoft. Publication unavailable.
 
 1. [Unit 5. Assessment in remote learning. In: Stay connected with remote learning through Microsoft Teams and Office 365](/training/modules/staying-connected-remote-learning-microsoft-teams-office-365/assessment-remote-learning). Microsoft. Publication date available.
 
