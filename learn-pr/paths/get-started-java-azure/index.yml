@@ -60,7 +60,6 @@ products:
 - msal-java
 - azure-service-bus
 subjects:
-- development-tools
 - architecture
 - cloud-computing
 modules:
