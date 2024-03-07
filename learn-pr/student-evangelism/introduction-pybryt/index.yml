@@ -27,8 +27,6 @@ products:
   - azure
 prerequisites: |
   - Basic Python knowledge
-subjects:
-- development-tools
 units:
   - learn.intro-to-pybryt.1-introduction
   - learn.intro-to-pybryt.2-high-level

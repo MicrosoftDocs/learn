@@ -7,7 +7,7 @@ metadata:
   ms.date: 10/18/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/4-examine-multi-sid-3-tier-sap-netweaver-high-availability-anydb-deployment.md)]

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 10/15/2020
+  ms.date: 02/24/2024
   author: pierreroman
   ms.author: pierrer
   ms.topic: unit
@@ -37,7 +37,7 @@ quiz:
       explanation: "You can provide the service principal credentials part of a configured secret in your GitHub repository settings."
     - content: "Provide the shared access signature (SAS) part of a configured secret in GitHub repository settings."
       isCorrect: false
-      explanation: "Shared access signatures or SAS tokens are used to provides secure delegated access to resources in your storage account without compromising the security of your data."
+      explanation: "Shared access signatures or SAS tokens are used to provide secure delegated access to resources in your storage account without compromising the security of your data."
   - content: "What's the best way to modularize your resources for deployment?" 
     choices:
     - content: "Use nested templates."

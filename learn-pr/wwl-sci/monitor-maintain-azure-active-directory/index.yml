@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/23/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure
 title: Monitor and maintain Microsoft Entra ID
 summary: Audit and diagnostic logs within Microsoft Entra ID provide a rich view into how users are accessing your Azure solution. Learn to monitor, troubleshoot, and analyze sign-in data.

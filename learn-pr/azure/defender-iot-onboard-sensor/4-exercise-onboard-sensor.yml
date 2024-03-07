@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.onboard-sensor-microsoft-defender-io.exercise-onboard-sensor
+title: 
+  Exercise - Onboard an OT sensor to Defender for IoT
+metadata:
+  title: Exercise - Onboard an OT sensor to Defender for IoT
+  description: "Exercise - Onboard an OT sensor to Defender for IoT"
+  ms.date: 02/21/2024
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-exercise-onboard-sensor.md)]

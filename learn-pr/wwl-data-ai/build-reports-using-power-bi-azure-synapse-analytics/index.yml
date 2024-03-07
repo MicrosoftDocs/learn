@@ -29,7 +29,7 @@ products:
 subjects:
 - data-analytics
 - data-visualization
-- data-warehousing
+- data-storage
 units:
 - learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics.introduction
 - learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics.describe-synapse-workspace-integration

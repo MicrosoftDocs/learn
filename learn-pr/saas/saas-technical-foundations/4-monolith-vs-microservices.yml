@@ -2,13 +2,12 @@
 uid: learn.saas-technical-foundations.monolith-vs-microservices
 title: Monolithic and microservices architectures
 metadata:
-  title: |
-    Monolithic and microservices architectures
+  title: Monolithic and microservices architectures
   description: "Learn different aspects of monolithic and microservices architectures, examining their strengths, weaknesses, and the considerations that help you make informed architectural choices."
   ms.date: 2/9/2024
   author: kostinams
   ms.author: irkostin
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.service: architecture-center
 durationInMinutes: 15
 content: |
