@@ -1,25 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-cloud-storage-for-iot
 metadata:
-  title: Get started with cloud storage for IoT
+  title: Examine Cloud storage options for Azure IoT Hub solutions
   description: "This module introduces you to the Azure data storage options that are often used in Azure IoT solutions, and the hot and cold storage paths can be implemented in support of various business requirements."
   ms.date: 02/16/2024
   author: kgremban
   ms.author: kgremban
   manager: lizross
   ms.topic: module-standard-task-based
-title: Get started with cloud storage for IoT
+title: Examine Cloud storage options for Azure IoT Hub solutions
 summary: This module introduces you to the Azure data storage options that are often used in Azure IoT solutions, and the hot and cold storage paths can be implemented in support of various business requirements.
 abstract: |
   After you complete this module, you will be able to:
   - Describe the lambda architecture for data storage.
-  - Describe Azure storage options commonly implemented with IoT solutions.
+  - Describe Azure storage options commonly implemented with Azure IoT Hub solutions.
   - Describe the features provided by specific Azure storage options.
 prerequisites: |
   Ability to:
   - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
-  - Describe the features and capabilities of IoT Hub.
-  - Describe how an IoT solution uses message routing and other message processing options to process message and event data, and how messaging quotas and throttling limits affect message processing.
+  - Describe the features and capabilities of Azure IoT Hub.
+  - Describe how an Azure IoT Hub solution uses message routing and other message processing options to process message and event data, and how messaging quotas and throttling limits affect message processing.
 iconUrl: /training/achievements/iot-cloud-storage.svg
 levels:
 - intermediate
@@ -40,6 +40,7 @@ units:
 - learn.wwl.get-started-cloud-storage-for-iot.examine-azure-data-lake-gen-2
 - learn.wwl.get-started-cloud-storage-for-iot.examine-azure-cosmos-db
 - learn.wwl.get-started-cloud-storage-for-iot.examine-azure-sql-database
+- learn.wwl.get-started-cloud-storage-for-iot.examine-additional-storage-options
 - learn.wwl.get-started-cloud-storage-for-iot.knowledge-check
 - learn.wwl.get-started-cloud-storage-for-iot.summary
 badge:

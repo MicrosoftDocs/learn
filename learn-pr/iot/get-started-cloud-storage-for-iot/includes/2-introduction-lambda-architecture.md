@@ -12,9 +12,15 @@ The following sections describe the hybrid nature of the IoT lambda architecture
 
 The apparent conflict with Azure IoT data is as follows. Telemetry data is coming in hot, there's lots of it, and it needs to be analyzed quickly. Preventive maintenance is the goal of this analysis, where the data should be stored, both to archive it, and to run some deeper analysis over longer time periods. The deeper analysis is used to detect longer term trends, or failure patterns, that might be difficult to detect with a shorter real-time sample.
 
-One of the easiest ways of handling this duality at the device sensor end of things, is to send two messages. The first message contains only the telemetry data that needs analyzed in real time. The second message contains the telemetry, and all the other data that might be needed for deeper analysis or archiving.
+One of the easiest ways of handling this duality at the device sensor end of things, is to send two messages:
+* The first message contains only the telemetry data that needs to be analyzed in real time.
+* The second message contains the telemetry, and all the other data that might be needed for deeper analysis or archiving.
 
-The Azure IoT Hub routes these two messages to different resources. It's common to use the familiar terms *hot*, *warm*, *cool*, and *cold* in data analysis. Hot clearly means a real-time approach is needed. Warm can have the same meaning, though perhaps the data is "near" real time, or at least, recent. Cool means the flow of data is slow. Cold means that the data is stored and not "flowing".
+The Azure IoT Hub routes these two messages to different resources. It's common to use the familiar terms *hot*, *warm*, *cool*, and *cold* in data analysis:
+* *Hot* clearly means a real-time approach is needed.
+* *Warm* can have the same meaning, though perhaps the data is "near" real time, or at least, recent.
+* *Cool* means the flow of data is slow.
+* *Cold* means that the data is stored and not "flowing".
 
 ## Understand lambda architecture
 
@@ -22,19 +28,21 @@ The *Lambda architecture* for an Azure IoT solution enables multiple data paths.
 
 :::image type="content" source="../media/m04-l02-lamda-architecture-dataflow-c15dc3c3.png" alt-text="Diagram that shows the lambda architecture for an IoT solution that includes hot and cold storage paths.":::
 
-The hot path is the streaming telemetry routed into real-time analysis. This path is also the right path to trigger warnings and alerts.
+In the diagram:
 
-The cold path is a batch processing path for telemetry data storage.
+* **The Fast path - Real Time Processing** (hot path) is the streaming telemetry routed into real-time analysis. This path is also the right path to trigger warnings and alerts.
+
+* The **Slow Path - Batch Processing** (cold path) is a batch processing path for telemetry data storage.
 
 ### The hot path
 
-The IoT remote device pumps out *specific* telemetry. This telemetry is sent in its own message, routed by the IoT Hub for instant analysis and visualization. The analysis could be done by a human operator, say, using Azure Time Series Insights. This approach is described in this module.
+The IoT remote device pumps out *specific* telemetry. This telemetry is sent in its own message, routed by the Azure IoT Hub for instant analysis and visualization. The analysis can be done by a human operator, say, using Azure Time Series Insights. This approach is described in this module.
 
-Alternatively, the analysis could be handled by Azure ML models, via Azure Stream Analytics. This scenario is more complex, involves coding, and is described in other IoT Hub Learn modules.
+Alternatively, the analysis could be handled by Azure ML models, via Azure Stream Analytics. This scenario is more complex, involves coding, and is described in other Azure IoT Hub Learn modules.
 
 ### The cold path
 
-The IoT remote device also sends out all telemetry, and logging, data. The IoT Hub directs these messages down a route to an Azure storage account. There are various storage resources available in Azure, and the next units describe these options.
+The IoT remote device also sends out all telemetry, and logging, data. The Azure IoT Hub directs these messages down a route to an Azure storage account. There are various storage resources available in Azure, and the next units describe these options.
 
 ### Issues with lambda architecture
 

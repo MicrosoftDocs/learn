@@ -34750,6 +34750,16 @@
       "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/9-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/manage-identities-microsoft-entra-id/10-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-started-cloud-storage-for-iot/8-knowledge-check.md",
+      "redirect_url": "/training/modules/get-started-cloud-storage-for-iot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-started-cloud-storage-for-iot/9-summary.md",
+      "redirect_url": "/training/modules/get-started-cloud-storage-for-iot/",
+      "redirect_document_id": false
     }
   ]
 }
