@@ -1,8 +1,24 @@
 <!-- can use this article for screenshots as well /organizations/how-to-manage-cloud-alerts -->
 
-Your car manufacturing organization has offices and production sites across the globe, with a network linking them together. A sensor was onboarded to Defender for IoT and deployed to the sensor. Now your task is to set up the alert baseline to ensure that alerts ignore normal traffic with in the system and only report on suspicious activity.
+Your car manufacturing organization has offices and production sites across the globe, with a network linking them together. A sensor is connected and sending data to Defender for IoT. The sensor settings are fine-tuned to ensure all the devices are correctly identified. Now your task is to set up the alert baseline to ensure that alerts ignore normal traffic with in the system and only report on suspicious activity.
 
-Once the calibration and fine-tuning of the sensor is complete, Microsoft Defender for IoT now enters a *Learning* mode. In this mode, Defender for IoT builds a baseline of alerts to help it identify which type of alerts are important and which are not. Over a limited time period, Defender for IoT learns to automatically recognize the alerts that can affect the security of your devices. At the end of this period, Defender for IoT enters the regular *operational* mode.
+Microsoft Defender for IoT now enters the *Learning* mode as soon as it starts to receieve data from the sensor. In this mode, Defender for IoT builds a baseline of alerts to help it identify which type of network traffic is important and which isn't. Over a limited time period, Defender for IoT learns to automatically recognize the alerts that can affect the security of your devices. At the end of this period, Defender for IoT enters the regular *operational* mode.
+
+## Creating the alerts baseline
+
+The best way to create the alert baseline is following the triage process. The process is:
+
+1. Filter the alerts - by time, severity or other parameter.
+1. Group alerts - a different filter option based on the groups created in the device map or inventory sections. (Although we haven't mentioned this properly)
+1. Choose an alert, open the alert details pane, analyze the displayed information to decide if this alert needs to be adjusted.
+1. You might also want to check the raw data files, called PCAP files. These can be downloaded and assessed and then changes to the alerts made accordingly.
+1. Add comments to alerts to communicate between team members and make decisions.
+1. save any changes you have made, such as authorizing an alert.
+
+<!-- rewrite above in sentences or leave as is? -->
+<!--at num3  https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-view-alerts#view-details-and-remediate-a-specific-alert this starts with 1. sign into the OT sensor. I suggest removing this line, we are already there, as mentioned above. Why would we add this here?  -->
+<!-- at end! https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-view-alerts#manage-alert-status-and-triage-alerts the first sentence is confusing. Does this mean save any changes i have made to the alert? Or something else. If it does then I would put it near the end of the entire section of article. but not at the beginning, or it is it at the beginning that it is clear it relates to actions for when you have finished your work-->
+Could list alert status options - but I think they're better to be added to the exercise stage.
 
 ## Triage your alerts
 
@@ -66,3 +82,7 @@ Baseline - creates an environmental baseline for the normal communication behavi
 <!-- from videos i have watched, they make a report first and then use that to go through alerts, but in our documentation it just goes through alerts which should be triaged. So just wondering about that difference!! Ask Theo when he is in touch today . I will write based on the internal documentation, not MSFT videos, etc. -->
 
 <!-- generally I find that links go to various places, all over documentation, and are hard to know where or why you are now in a different section -->
+
+## Managing OT alerts in a hybrid environment
+<!-- not sure this is the place for this? -->
+Your organization might also have access to the OT sensor from a virtual machine, <!-- from the sensor itself (Im not sure about this , this could be on prem) --> or through Defender for IoT. This multi access set up is called a hybrid environment. In this set up, changes made on one system synchronize across the other systems, so that updates or changes made only on one system aren't lost. When you return to the other system you see the changes already displayed in the relevant information.
