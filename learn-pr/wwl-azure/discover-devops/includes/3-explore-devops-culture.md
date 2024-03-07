@@ -7,6 +7,8 @@ The DevOps culture creates a collaborative, transparent, and continuously improv
 
 ## What are the key elements of DevOps culture?
 
+:::image type="content" source="../media/3-devops-culture.png" alt-text="Diagram showing the key elements of DevOps culture.":::
+
 The key elements of DevOps culture can be summarized as follows:
 
 - **Collaboration:** DevOps encourages teamwork and open communication across teams, eliminating silos and improving efficiency.
