@@ -36,26 +36,28 @@ If it's not feasible to install the full Visual Studio Code Desktop on your remo
 
 ### Prepare for the exercises
 
-In the upcoming exercises, you use both the Visual Studio Code Desktop and the code CLI to set up tunnels. To prepare for these exercises, you want to have some sample code in a file and folder available on your local machine. Let's dive right in:
+In the upcoming exercises, you use both the Visual Studio Code Desktop and the code CLI to set up tunnels. To prepare for these exercises, you want to have some sample code in a file and folder available on your local machine. Let's dive right in.
 
 1. Create a TestUI folder on your hard drive.
-:::image type="content" source="../media/10-folder-1.png" alt-text="Screenshot of creating a folder.":::
-:::image type="content" source="../media/11-folder-2.png" alt-text="Screenshot of the created folder.":::
+
+    :::image type="content" source="../media/10-folder-1.png" alt-text="Screenshot of creating a folder.":::
+
+    :::image type="content" source="../media/11-folder-2.png" alt-text="Screenshot of the created folder.":::
 1. Create a TestCLI folder, repeating the previous step.
 1. Create an `index.html` file with the following test code:
 
-```html
-<!DOCTYPE html> 
-<html> 
-<head> 
-    <title>Sample Page</title> 
-</head> 
-<body> 
-    <h1>Welcome to My Sample Page</h1> 
-    <p>This is a simple HTML page with some sample content.</p> 
-</body> 
-</html> 
-```
+    ```html
+    <!DOCTYPE html> 
+    <html> 
+    <head> 
+        <title>Sample Page</title> 
+    </head> 
+    <body> 
+        <h1>Welcome to My Sample Page</h1> 
+        <p>This is a simple HTML page with some sample content.</p> 
+    </body> 
+    </html> 
+    ```
 
 1. Copy the file into both the TestUI and TestCLI folders.
 

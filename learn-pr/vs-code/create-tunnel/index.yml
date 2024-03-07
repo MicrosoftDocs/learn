@@ -8,12 +8,12 @@ metadata:
   ms.author: radolphe
   ms.topic: module-intro-to-product
   ms.service: vs-code
-title: Introduction to Remote - Tunnels extension
-summary: Enable Remote Tunnel access with Visual Studio Code.
+title: Introduction to the Remote - Tunnels extension
+summary: Enable remote tunnel access with Visual Studio Code.
 abstract: |
   In this module you will:
   - Explain what tunneling is and learn how to enable remote tunnels to securely transmit data.
-  - Use the Remote - Tunnels extension.
+  - Use the Visual Studio Code Remote - Tunnels extension.
 
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

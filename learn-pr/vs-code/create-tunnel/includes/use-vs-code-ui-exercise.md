@@ -1,8 +1,8 @@
-In this exercise, we enable Remote - Tunnels access by using the Visual Studio Code user interface.
+In this exercise, we enable Remote - Tunnels access by using the Visual Studio Code user interface (UI).
 
-## Use the Visual Studio Code user interface
+## Use the Visual Studio Code UI
 
-To use the Visual Studio Code user interface, follow the steps in the next procedure.
+To use the Visual Studio Code UI, follow the steps in the next procedure.
 
 ### Install the Remote – Tunnels extension
 
