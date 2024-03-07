@@ -34,12 +34,12 @@ quiz:
           explanation: "Incorrect. While AI can help grading, the question specifically asks about content creation, which grading doesn't fall under."
         - content: "By attending the classes on behalf of the trainer."
           isCorrect: false
-          explanation: "Incorrect. AI tools can't attend classes on behalf of the trainer. They're designed to assist the trainer in various tasks, not replace them."
+          explanation: "Incorrect. AI tools can't attend classes on behalf of the trainer. They're designed to assist the trainer in various tasks, not to replace them."
     - content: "How can AI tools enhance the scheduling of meetings in a remote training environment?"
       choices:
         - content: "By manually checking each participant’s calendar."
           isCorrect: false
-          explanation: "Incorrect. AI tools automate the scheduling process, not perform it manually."
+          explanation: "Incorrect. AI tools automate the scheduling process, they don't perform it manually."
         - content: "By automatically scheduling meetings based on the invitees’ calendars and availability."
           isCorrect: true
           explanation: "Correct. AI tools can automate the scheduling of meetings based on the invitees’ calendars and availability."

@@ -8,6 +8,6 @@ Discover how generative AI can enhance your training:
 
 - **Creating assessments**. Learners' progress and outcomes can be measured using AI assessment tools to create essay prompts, quizzes, tests, and assignments that encourage critical thinking. For example, Microsoft Forms allows trainers to create online quizzes and surveys for instant grading and feedback.
 
-- **Providing feedback**. AI tools can provide personalized and timely feedback to learners by analyzing their performance data and identifying their strengths and weaknesses. For example, Microsoft's AI-powered tool Reading Coach allows trainers to provide feedback to learners who are struggling with reading or writing by highlighting errors, suggesting corrections, and offering personalized practice opportunities.
+- **Providing feedback**. AI tools can provide personalized and timely feedback to learners by analyzing their performance data and identifying their strengths and weaknesses. For example, Microsoft's AI-powered tool Reading Coach allows trainers to provide feedback to learners who are struggling with reading or writing by highlighting errors, suggest corrections, and offer personalized practice opportunities.
 
 - **Improving writing quality**. With AI integrated into writing applications like Microsoft Word, real-time support is available while writing training plans. It optimizes the writing context and offers suggestions for wording and formatting.
