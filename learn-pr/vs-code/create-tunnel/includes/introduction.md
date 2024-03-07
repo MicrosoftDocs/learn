@@ -15,6 +15,6 @@ By the end of this module, you'll be able to:
 - Configure remote tunnel access via the Visual Studio Code user interface and the code command-line interface.
 
 ## What is the main objective?
-By the end of this module, you understand the basics of tunneling and have a solid foundation for using the Remote - Tunnels extension, all within Visual Studio Code.
+By the end of this module, you'll understand the basics of tunneling and have a solid foundation for using the Remote - Tunnels extension, all within Visual Studio Code.
 
 Let's get started on this journey to learn how to use tunneling to connect to remote hosts.
