@@ -3038,3 +3038,8 @@ achievements:
   summary: Minimize the time and resources required to migrate your on-premises environment to Azure. Assess your current systems with Azure Migrate, and migrate them with Azure Migrate and Azure Database Migration Service.
   title: Design your migration to Azure
   iconUrl: /training/achievements/design-your-migration-to-azure.svg
+- uid: learn.azure.migrate-java-app-azure-app-service.badge
+  type: badge
+  summary: In this module, you learn to use the Azure Migrate App Containerization tool to containerize and migrate Java web applications to Azure App Service.
+  title: Migrate Java web applications to Azure App Service
+  iconUrl: /training/achievements/java-on-azure-badge.svg
