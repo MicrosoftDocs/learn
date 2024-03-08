@@ -43,14 +43,15 @@ quiz:
     - content: "Docker images allow hosts to perform load-balancing and routing."
       isCorrect: false
       explanation: "Orchestrators allow hosts to perform load-balancing and routing."
-  - content: "Why would a developer write a Dockerfile?"
+  - content: "What's the difference between a container and an image?"
     choices:
-    - content: "To create the initialization routine for the Docker engine."
+    - content: "The container hosts multiple images as they're created."
       isCorrect: false
-      explanation: "A Dockerfle doesn't describe how to initialize the Docker engine."
-    - content: "To create a text file with instructions for how to build a Docker image."
+      explanation: "A container doesn't host images."
+    - content: "The container is a template that describes what images are."
+      isCorrect: false
+      explanation: "A container isn't a template."
+    - content: "The container can be thought of as running an instance of an image."
       isCorrect: true
-      explanation: "A Dockerfile is used to create the Docker image."
-    - content: "To create the code to run the microservice."
-      isCorrect: false
-      explanation: "The code to create the microservice is created in the tool that is best suited for the job. Any language and framework will work."
+      explanation: "Multiple containers can be created from the same image. Each container has its own unique state and data."
+
