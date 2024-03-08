@@ -6,7 +6,7 @@ You discovered that the extension allows you to connect to a remote machine, suc
 
 ## Learn more
 
-The following articles and resources are related to the Visual Studio Code Remote - Tunnels extension. They're worth exploring for further understanding and depth:
+The following articles and resources are related to the Visual Studio Code Remote - Tunnels extension. They're worth exploring for further understanding and depth.
 
 - [Developing with Remote Tunnels](https://code.visualstudio.com/docs/remote/tunnels): This article explains the concept and advantages of developing with remote tunnels.
 - [Visual Studio Code Server](https://code.visualstudio.com/docs/remote/vscode-server): This article goes into more detail about how the Visual Studio Code Server operates and supports remote development.
