@@ -29,7 +29,6 @@ prerequisites: |
   - A GitHub Enterprise Cloud or Enterprise Server account
   - Working knowledge of GitHub Actions and workflows
 subjects:
-- development-tools
 - devops
 units:
   - learn.github.manage-github-actions-enterprise.introduction
