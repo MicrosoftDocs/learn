@@ -3,17 +3,17 @@
 
 :::image type="content" source="../media/16-networks.jpg" alt-text="Photo of network servers.":::
 
-Tunneling is a networking concept that involves creating a secure and direct connection between two separate networks or devices, allowing data to be transmitted privately across different networks or the internet. Let's discuss a scenario where tunneling is useful.
+Tunneling is a networking concept that involves creating a secure and direct connection between two separate networks or devices. Creating a tunnel allows data to be transmitted privately across different networks or the internet. Let's discuss a scenario where tunneling is useful.
 
-### The problems
+## Scenario
 
 A development team is spread across various locations. The team needs to interact with a remote server that contains essential resources and applications. Securing efficient access is critically required. The server that's housed within their company's datacenter contains vital development tools and databases necessary for the team's work. Due to the stringent security policies, direct access to this server from external networks is heavily restricted. In such a situation, traditional solutions like virtual private networks (VPNs) can be cumbersome and lead to slow connections, which hinder productivity for developers.
 
-### Use cases for tunnels
+## Use cases for tunnels
 
-In the previous scenario, a developer needs to work on an application that depends on services and databases located on the company's internal network. Rather than dealing with VPNs or exposing sensitive services to the internet, the developer can use tunneling to establish a secure and direct connection from their local environment to the remote server. This approach enables seamless access to files, databases, and services as if the developer were physically connected to the remote server. Tunneling facilitates a more efficient workflow by allowing developers to edit code, perform debugging, and execute tasks directly on the remote server, all within their preferred development environment.
+In the preceding scenario, a developer needs to work on an application that depends on services and databases located on the company's internal network. Rather than dealing with VPNs or exposing sensitive services to the internet, the developer can use tunneling to establish a secure and direct connection from their local environment to the remote server. This approach enables seamless access to files, databases, and services as if the developer were physically connected to the remote server. Tunneling facilitates a more efficient workflow by allowing developers to edit code, perform debugging, and execute tasks directly on the remote server, all within their preferred development environment.
 
-### Why use the Visual Studio Code Remote - Tunnels extension?
+## Visual Studio Code Remote - Tunnels extension
 
 The use of tunneling offers a streamlined solution to many challenges. Extensions are now available for development tools such as Visual Studio Code. The Visual Studio Code [Remote - Tunnels extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.remote-server) can effectively eliminate the need for source code to be on your Visual Studio Code client machine because the extension runs commands and other extensions directly on the remote machine. This approach is possible because of [Visual Studio Code Server](https://code.visualstudio.com/docs/remote/vscode-server). This service can run on a remote development machine, like your desktop PC or a virtual machine (VM). It makes it possible to securely connect to the remote machine from anywhere through a local Visual Studio Code client, without the requirement of the Secure Shell protocol.
 
@@ -30,7 +30,7 @@ Two methods are available to set up tunnels:
 
 Regardless of the method chosen, the outcome in terms of tunneling functionality is identical, allowing you to select the approach that best suits your needs.
 
-### Visual Studio Code Desktop or the code CLI?
+### Decide between Visual Studio Code Desktop and the code CLI
 
 If it's not feasible to install Visual Studio Code Desktop on your remote machine, the CLI offers a viable alternative. On the other hand, if you're already engaged in tasks within Visual Studio Code, using the Visual Studio Code Desktop UI to initiate tunneling for your current machine is a convenient option.
 
