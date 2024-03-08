@@ -33,9 +33,9 @@ DevOps posture management assists organizations in discovering and remediating h
 
 ## DevOps threat matrix
 
-Our goal for developing the threat matrix for DevOps is to build a comprehensive knowledgebase that defenders can use to keep track of and build defenses against relevant attack techniques. Using the MITRE ATT&CK framework as a base, we collected techniques and attack vectors associated with DevOps environments and created a matrix dedicated to DevOps attack methods.
+Our goal for developing the threat matrix for DevOps is to build a comprehensive knowledgebase that Defenders can use to keep track of and build defenses against relevant attack techniques. Using the MITRE ATT&CK framework as a base, we collected techniques and attack vectors associated with DevOps environments and created a matrix dedicated to DevOps attack methods.
 
-It is worth noting that the tactics in this matrix must be looked at from the DevOps perspective. For example, execution techniques in a Virtual Machine running Windows or Linux OS are different from the Execution in a DevOps pipeline. In the Linux case, execution means running code in the OS. When we talk about DevOps environments, it means running code in the pipeline or DevOps resources. In addition to using this threat matrix to categorize attacks and corresponding defense methods, defenders can work alongside red teams to continuously test assumptions and find new potential attack techniques.
+It is worth noting that the tactics in this matrix must be looked at from the DevOps perspective. For example, execution techniques in a Virtual Machine running Windows or Linux OS are different from the Execution in a DevOps pipeline. In the Linux case, execution means running code in the OS. When we talk about DevOps environments, it means running code in the pipeline or DevOps resources. In addition to using this threat matrix to categorize attacks and corresponding defense methods, Defenders can work alongside red teams to continuously test assumptions and find new potential attack techniques.
 
 ## MITRE ATT&CK Defined:
 
@@ -53,7 +53,7 @@ The knowledge base is organized into several categories: **pre-attack**, **initi
 
 The initial access tactic refers to techniques an attacker may use for gaining access to the DevOps resources – repositories, pipelines, and dependencies. The following techniques may be a precondition for the next steps:
 
-**Source Code Managemenmt (SCM) authentication** – Access by having an authentication method to the organization’s source code management. It may be a personal access token (PAT), an SSH key, or any other allowed authentication credential. An example of a method an attacker can use to achieve this technique is using a phishing attack against an organization.<br>
+**Source Code Management (SCM) authentication** – Access by having an authentication method to the organization’s source code management. It may be a personal access token (PAT), an SSH key, or any other allowed authentication credential. An example of a method an attacker can use to achieve this technique is using a phishing attack against an organization.<br>
 
 **Continuous Integration (CI) and Continuous Delivery (CD) service authentication** – Similar to SCM authentication, an attacker can leverage authentication to the CI/CD service in order to attack the organization’s DevOps.<br>
 
@@ -131,7 +131,7 @@ The lateral movement tactic refers to techniques used by attackers to move throu
 
 Defense evasion techniques could be used by attackers to bypass defenses used in a DevOps environment and allow attacks to continue under the radar:
 
-**Service logs manipulation** – Service logs enable defenders to detect attacks in their environment. An attacker running inside an environment (for example, in the build pipelines) could change the logs to prevent defenders from observing the attack. This is similar to an attacker changing the history logs on a Linux machine, preventing any observer from seeing the commands executed by the attacker.<br>
+**Service logs manipulation** – Service logs enable Defenders to detect attacks in their environment. An attacker running inside an environment (for example, in the build pipelines) could change the logs to prevent Defenders from observing the attack. This is similar to an attacker changing the history logs on a Linux machine, preventing any observer from seeing the commands executed by the attacker.<br>
 
 **Compilation manipulation** – if an attacker wishes to leave no traces in the SCM service, the attacker may change the compilation process in order to inject the malicious code. This may be done in several ways:<br>
 

@@ -1,14 +1,14 @@
 Microsoft Security DevOps is a command line application that integrates static analysis tools into the development lifecycle. Security DevOps installs, configures, and runs the latest versions of static analysis tools such as, **Security Development Lifecycle (SDL)**, security and compliance tools. Security DevOps is data-driven with portable configurations that enable deterministic execution across multiple environments.
 
-| **Name**          | **Language**                                                                                                                                                                                       | **License**        |
-| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| AntiMalware       | AntiMalware protection in Windows from Microsoft Defender for Endpoint, that scans for malware and breaks the build if malware has been found. This tool scans by default on windows-latest agent. | Not Open Source    |
-| Bandit            | Python                                                                                                                                                                                             | Apache License 2.0 |
-| BinSkim           | Binary--Windows, ELF                                                                                                                                                                               | MIT License        |
-| ESlint            | JavaScript                                                                                                                                                                                         | MIT License        |
-| Template Analyzer | ARM Template, Bicep                                                                                                                                                                                | MIT License        |
-| Terrascan         | Terraform (HCL2), Kubernetes (JSON/YAML), Helm v3, Kustomize, Dockerfiles, CloudFormation                                                                                                          | Apache License 2.0 |
-| Trivy             | container images, Infrastructure as Code (IaC)                                                                                                                                                     | Apache License 2.0 |
+| **Name**          | **Language**                                                                                                                                                                                      | **License**        |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| AntiMalware       | AntiMalware protection in Windows from Microsoft Defender for Endpoint that scans for malware and breaks the build if malware has been found. This tool scans by default on windows-latest agent. | Not Open Source    |
+| Bandit            | Python                                                                                                                                                                                            | Apache License 2.0 |
+| BinSkim           | Binary--Windows, ELF                                                                                                                                                                              | MIT License        |
+| ESlint            | JavaScript                                                                                                                                                                                        | MIT License        |
+| Template Analyzer | ARM Template, Bicep                                                                                                                                                                               | MIT License        |
+| Terra scan        | Terraform (HCL2), Kubernetes (JSON/YAML), Helm v3, Kustomize, Dockerfiles, CloudFormation                                                                                                         | Apache License 2.0 |
+| Trivy             | container images, Infrastructure as Code (IaC)                                                                                                                                                    | Apache License 2.0 |
 
 ## Prerequisites
 
@@ -33,7 +33,7 @@ Microsoft Security DevOps is a command line application that integrates static a
 
 4. Select New workflow.
 
-5. On the Get started with GitHub Actions page, select set up a workflow yourself
+5. On the Get started with GitHub Actions page, select set-up a workflow yourself
 
 :::image type="content" source="../media/new-workflow-de35682c.png" alt-text="Screenshot showing how to Get started with GitHub Actions.":::
 6. In the text box, enter a name for your workflow file. For example, `msdevopssec.yml`.

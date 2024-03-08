@@ -37,7 +37,7 @@ The DevOps inventory table allows you to review onboarded DevOps resources and t
  -  **Advanced security status** \- Shows whether advanced security features are enabled for the DevOps resource.
      -  `On` \- Advanced security is enabled.
      -  `Off` \- Advanced security isn't enabled.
-     -  `Partially enabled` \- Certain Advanced security features isn't enabled (for example, code scanning is off).
+     -  `Partially enabled` \- Certain Advanced security feature aren't enabled (for example, code scanning is off).
      -  `N/A` \- Defender for Cloud doesn't have information about enablement.
 
 > [!NOTE]
@@ -51,6 +51,6 @@ The DevOps inventory table allows you to review onboarded DevOps resources and t
 > [!NOTE]
 > Currently, this information is available only for Azure DevOps repositories.
 
- -  Findings - Shows the total number of code, secrets, dependency, and infrastructure-as-code findings identified in the DevOps resource.
+ -  Findings - Shows the total number of codes, secrets, dependency, and infrastructure-as-code findings identified in the DevOps resource.
 
 This table can be viewed as a flat view at the DevOps resource level (repositories for Azure DevOps and GitHub, projects for GitLab) or in a grouping view showing organizations/projects/groups hierarchy. Also, the table can be filtered by subscription, resource type, finding type, or severity.
