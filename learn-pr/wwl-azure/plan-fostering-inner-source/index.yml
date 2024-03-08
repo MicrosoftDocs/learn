@@ -40,7 +40,6 @@ products:
 - azure-test-plans
 - github
 subjects:
-- development-tools
 - devops
 units:
 - learn.wwl.plan-foster-inner-source.introduction

@@ -4,7 +4,7 @@ By creating a new instance of Azure Cosmos DB, you delegated the management of t
 
 ## Clean up resources
 
-In this module, you created resources using your Azure subscription. The following steps show you how to clean up these resources so you don't incur more charges.
+[!INCLUDE [azure-subscription-cleanup](../../../includes/azure-subscription-cleanup.md)]
 
 1. Navigate to the [Azure portal](https://portal.azure.com?azure-portal=true).
 2. Select **Resource groups** > **rg-ship-manager**.
