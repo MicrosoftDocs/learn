@@ -70,7 +70,7 @@ tar -xf vscode_cli.tar.gz
     
     This process authenticates you to the tunneling service and ensures that you have access to the designated remote machines.
     
-1. Open this URL on a client of your choice.
+1. Open the URL on a client of your choice.
 1. Select **Allow** to give the Remote - Tunnels extension permission to sign in.
     
     :::image type="content" source="../media/25-remote-asks-permission.png" alt-text="Screenshot of the Remote - Tunnels extension permission to sign in.":::
