@@ -1,20 +1,20 @@
 This exercise provides an overview of integrating a Next.js with an IoT data pipeline. 
 
-In this exercise, you'll:
+In this exercise, you:
 
-- Configure a Next.js application
-- Deploy an Azure web app hosting the Next.js application
-- Validate the functionality of the Azure web app
+- Configure a Next.js application.
+- Deploy an Azure web app hosting the Next.js application.
+- Verify the functionality of the Azure web app.
 
 ## Prerequisites
 
 To perform this exercise, you need:
 
 - An Azure subscription.
-- A Microsoft account or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
-- To have completed the exercise units **Set up Azure Cosmos DB** and **Integrate Azure Cosmos DB with the IoT data pipeline**.
+- A Microsoft account or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant. The tenant must be associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
+- To complete the exercise units **Set up Azure Cosmos DB** and **Integrate Azure Cosmos DB with the IoT data pipeline**.
 
-In this exercise, you'll use an existing Next.js application code that retrieves IoT telemetry data from the Cosmos DB collection you implemented in the previous exercise unit of this module.
+In this exercise, you use an existing Next.js application code that retrieves IoT telemetry data from the Cosmos DB collection you implemented in the previous exercise unit of this module.
 
 ## Configure a Next.js application
 
@@ -43,13 +43,13 @@ Configure a sample Next.js application that retrieves data from a Cosmos DB coll
    cd ./mslearn-cloud-native-apps/m05u08/
    ```
 
-1. Run the following command to display the content of the **index.js** file. This file contains the Next.js script that establishes a connection to the Cosmos DB account you created in the first exercise of this module. It queries the content of the **iotcollection** in the **iotdb** database that you created in the second exercise of this module.
+1. Run the following command to display the content of the **index.js** file. This file contains the Next.js script that establishes a connection to the Cosmos DB account you created in the first exercise of this module. It also queries the content of the **iotcollection** in the **iotdb** database that you created in the second exercise of this module.
 
    ```bash
    cat ./pages/index.js
    ```
 
-1. Run the following command to display the content of the **config.js** file. This file stores the values representing the Cosmos DB SQL API endpoint, the corresponding access key, and the target database and container hosting the IoT data you collected in the previous exercise of this module.
+1. Run the following command to display the content of the **config.js** file. This file stores the values representing the Cosmos DB SQL API endpoint. It also stores the corresponding access key, and the target database and container hosting the IoT data you collected in the previous exercise of this module.
 
    ```bash
    cat ./config.js
@@ -93,7 +93,7 @@ Deploy the newly configured Next.js application to an Azure web app and validate
 > [!NOTE]
 > You can deploy the same application to any other Azure service that provides a Node.js runtime environment, including Azure Virtual Machines, Azure Container Instances, or Azure Kubernetes Service.
 
-1. In the **Azure Cloud Shell**, run the following commands to create a resource group to host the Azure web app, into which you'll deploy the Next.js application.
+1. In the **Azure Cloud Shell**, run the following commands to create a resource group to host the Azure web app, into which you deploy the Next.js application.
 
    ```bash
    RG1NAME=cosmos-db-RG
@@ -134,14 +134,14 @@ Deploy the newly configured Next.js application to an Azure web app and validate
    az webapp deployment user set --user-name $DEPLOYMENTUSER --password $DEPLOYMENTPASS
    ```
 
-1. Run the following commands to identify the user-level deployment credentials. Make sure to record their value, because you'll need them later in this exercise.
+1. Run the following commands to identify the user-level deployment credentials. Make sure to record their value, because you need them later in this exercise.
 
    ```bash
    echo $DEPLOYMENTUSER
    echo $DEPLOYMENTPASS
    ```
 
-1. Run the following commands to identify the Azure web app deployment URL that you'll use as the target of the `git push` command.
+1. Run the following commands to identify the Azure web app deployment URL that you use as the target of the `git push` command.
 
    ```bash
    RG2NAME=nextjs-webapp-RG
@@ -156,7 +156,7 @@ Deploy the newly configured Next.js application to an Azure web app and validate
    git remote add azure $DEPLOYMENTURL
    ```
 
-1. Run the following commands to create the **master** branch based on the **main** branch and push its content to the Azure Web app. You'll be prompted for the password that's part of the user-level deployment credentials you recorded earlier.
+1. Run the following commands to create the **master** branch based on the **main** branch and push its content to the Azure Web app. You're prompted for the password that's part of the user-level deployment credentials you recorded earlier.
 
    ```bash
    git checkout -b master
@@ -176,7 +176,7 @@ Validate the functionality of the Azure web app hosting the Next.js application.
 1. On the **App Services** pane, in the list of App Service instances, select the entry representing the Azure web app you deployed in the previous task of this exercise. The name should consist of the **nextjs** prefix followed by a string of digits.
 1. On the pane displaying the properties of the web app, under the **Development Tools** section, select the **App Service Editor (Preview)** entry. Then, select **Open editor**.
 1. Select the **Open Console** icon.
-1. From the console prompt, run the following command:
+1. From the console prompt, run the following command.
 
    ```bash
    npm run build
@@ -202,7 +202,7 @@ Validate the functionality of the Azure web app hosting the Next.js application.
 
 ## Results
 
-Congratulations! You completed the third exercise of this module. You created an Azure function that logs an HTTP request payload, configured and validated IoT telemetry rules of an Azure IoT Central application, created an Azure Storage account that stores IoT telemetry, and configured and validated data export of an Azure IoT Central application.
+Congratulations! You completed the third exercise of this module. In this exercise, you created an Azure function that logs an HTTP request payload. Then, you configured and validated the IoT telemetry rules of an Azure IoT Central application. Finally, you created an Azure Storage account that stores IoT telemetry, and configures and validates the data export of an Azure IoT Central application.
 
 ## Clean up the resources
 

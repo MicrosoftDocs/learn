@@ -19,5 +19,7 @@ By the end of this module, you'll be able to:
 - The ability to use the [Azure CLI](/azure/aks/kubernetes-walkthrough).
 - The ability to create a Docker container. If you're new to Docker, review the [introduction to containers](/training/modules/intro-to-containers/) before you begin.
 
+[!INCLUDE [azure-subscription-prerequisite](../../../includes/azure-subscription-prerequisite.md)]
+
 > [!NOTE]
 > All exercises use [Azure Cloud Shell](/azure/cloud-shell/overview), which already has all the needed tools installed. If you prefer to run the examples in your own terminal, you need to install [Azure CLI](/azure/aks/kubernetes-walkthrough) and [Kubectl](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster).

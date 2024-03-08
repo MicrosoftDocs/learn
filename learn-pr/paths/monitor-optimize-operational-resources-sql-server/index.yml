@@ -25,7 +25,7 @@ roles:
 products:
 - azure
 subjects:
-- data-warehousing
+- data-storage
 modules:
 - learn.wwl.describe-performance-monitoring
 - learn.wwl.configure-sql-server-resources-for-optimal-performance

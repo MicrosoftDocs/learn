@@ -20,7 +20,7 @@ roles:
 products:
 - azure-synapse-analytics
 subjects:
-- data-warehousing
+- data-storage
 - data-analytics
 modules:
 - learn.wwl.introduction-to-azure-synapse-analytics
