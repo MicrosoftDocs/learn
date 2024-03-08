@@ -18,7 +18,6 @@ Run the following command in the Azure CLI to create an IoT hub. The default nam
 
 ```azure-cli
 IOT_HUB="iot-hub-smart-building"
-echo "Your IoT Hub is named $IOT_HUB."
 az iot hub create --name $IOT_HUB --resource-group $RESOURCE_GROUP --sku S1
 ```
 
@@ -28,7 +27,7 @@ In this section, you create an Azure function to process data from IoT Hub and u
 
 ### Create function app
 
-First, create a new function app in Azure. Run the following CLI commands to create a storage account for the function app, create the new function app, and make sure Visual Studio will be able to publish to it. The commands generate a random number to use in the storage account name, and the function app is called *digitaltwinsfunctions*.
+First, create a new function app in Azure. Run the following CLI commands to create a storage account for the function app, create the new function app, and make sure Visual Studio will be able to publish to it. The commands generate a random number to use in the storage account name and the function app name.
 
 ```azure-cli
 STORAGE_ACCOUNT_NAME="functionstorage$RANDOM"
@@ -73,9 +72,9 @@ Next, set up a local project where you'll write the specific Azure function that
 
 Next, fill in the code body of the function. The function needs to identify key information in the incoming message, then use the [Azure Digital Twins .NET SDK](https://learn.microsoft.com/dotnet/api/overview/azure/digitaltwins.core-readme) to update the correct twin in Azure Digital Twins, based on that information.
 
-Build the code by following these steps:
+Start by completing the following steps to set up the function and prepare it to work with Azure Digital Twins.
 
-1. Add these `using` statements to your function, so you can make the function asynchronous and access Azure functionality. (Additional `using` statements will be added by Visual Studio automatically as you paste in code.)
+1. Add these `using` statements to your file, so you can make the function asynchronous and access Azure functionality. (Additional `using` statements will be added by Visual Studio automatically as you paste in code.)
 
     ```csharp
     using Azure;
@@ -97,7 +96,7 @@ Build the code by following these steps:
 
     :::image type="content" source="../media/3-code-2.png" alt-text="Screenshot of code in Visual Studio, showing the new variables." lightbox="../media/3-code-2.png":::
 
-1. In the `Run` method, add the following code after the log line. This code snippet uses the authentication variables above to set up a `DigitalTwinsClient`, which contains methods to retrieve and update digital twin information. For more information about this class, see [DigitalTwinsClient Class](https://learn.microsoft.com/dotnet/api/azure.digitaltwins.core.digitaltwinsclient).
+1. In the `Run` method, add the following code after the log line. This code snippet uses the authentication variables above to set up a `DigitalTwinsClient`, which contains methods to retrieve and update digital twin information. For more information about this class, see [DigitalTwinsClient Class (.NET SDK)](https://learn.microsoft.com/dotnet/api/azure.digitaltwins.core.digitaltwinsclient).
 
     ```csharp
     var credentials = new DefaultAzureCredential();
@@ -108,6 +107,8 @@ Build the code by following these steps:
     ```
 
     :::image type="content" source="../media/3-code-3.png" alt-text="Screenshot of code in Visual Studio, showing the the DigitalTwinsClient." lightbox="../media/3-code-3.png":::
+
+Next, fill in the unique functionality.
 
 1. After this code (still in the `Run` method), set up an `if` statement to take action when the function receives an Event Grid event with data. This will be executed when the temperature data from IoT Hub arrives at the Azure function.
 
@@ -120,7 +121,7 @@ Build the code by following these steps:
 
     :::image type="content" source="../media/3-code-4.png" alt-text="Screenshot of code in Visual Studio, showing the if statement." lightbox="../media/3-code-4.png":::
 
-1. In the body of the `if` statement, after the logger line, add the following code. This code snippet reads the incoming message to identify the device that's sending the message and the updated temperature value.
+1. In the body of the `if` statement, after the logger line, add the following code. This code snippet reads the incoming message from IoT Hub to identify the device that's sending the message and the updated temperature value.
 
     ```csharp
     // Reading deviceId and temperature for IoT Hub JSON
@@ -146,6 +147,9 @@ Build the code by following these steps:
 
 1. Save the completed function file.
 
+>[!NOTE]
+>You can see this full code sample in the same GitHub repository where you downloaded the device simulator: [ProcessHubToDTEvents.cs (digital-twins-samples)](https://github.com/Azure-Samples/digital-twins-samples/blob/main/AdtSampleApp/SampleFunctionsApp/ProcessHubToDTEvents.cs).
+
 #### Publish function
 
 Follow these steps to publish your function to the Azure function app you created earlier in this unit.
@@ -159,7 +163,7 @@ Follow these steps to publish your function to the Azure function app you create
     1. **Functions instance**: Under **Subscription name**, select your subscription. Your resource groups will show up in the box. Expand your resource group (if you kept the default name for this module, it's *azure-digital-twins-training*), and select the function app, *digitaltwinsfunctions*. 
     1. Select **Finish** to finish setting up the publish profile.
 1. Back in Visual Studio, verify the function is **Ready to publish** to your new function app, and select **Publish**.
-    :::image type="content" source="../media/3-publish-finish.png" alt-text="Screenshot of code in Visual Studio, showing the updating additions to the if statement." lightbox="../media/3-publish-finish.png":::
+    :::image type="content" source="../media/3-publish-finish.png" alt-text="Screenshot of code in Visual Studio, showing the final Publish button." lightbox="../media/3-publish-finish.png":::
 
 On a successful publish, Visual Studio will indicate that the publish succeeded.
 
@@ -169,9 +173,9 @@ Now that your IoT Hub and Azure function have been created, you can set up the c
 
 ### Connect device to IoT Hub
 
-First, you need to get the simulated device data into IoT Hub.
+First, get the simulated device data into IoT Hub.
 
-Run the following Azure CLI command to create a virtual device in IoT Hub to represent the thermostat device. The IoT Hub device will be called *Thermostat67*.
+In the Azure CLI, run the following command to create a virtual device in IoT Hub to represent the thermostat device. The IoT Hub device will be called *Thermostat67*.
 
 ```azure-cli
 az iot hub device-identity create --device-id Thermostat67 --hub-name $IOT_HUB --resource-group $RESOURCE_GROUP
@@ -220,7 +224,7 @@ Run the following dotnet command in the console to run the device simulator proj
 dotnet run
 ```
 
-The project will start running and begin displaying simulated temperature telemetry messages. A new message is sent every five seconds.
+The project will start running and begin sending simulated temperature telemetry messages. A new message is sent every five seconds.
 
 :::image type="content" source="../media/3-device-simulator.png" alt-text="Screenshot of the device simulator running in the console." lightbox="../media/3-device-simulator.png":::
 
@@ -232,7 +236,7 @@ az dt twin query -n $INSTANCE_NAME -q "select T.\$dtId, T.Temperature from digit
 
 The results show that the *Thermostat67* twin, which was originally created in Unit 2 with a *Temperature* value of 0.0, has a *Temperature* value that matches a value from the device simulator. The value is updating quickly, so repeat the query command a few more times to watch the value change.
 
-:::image type="content" source="../media/3-publish-finish.png" alt-text="Screenshot of Cloud Shell showing the output of the queries." lightbox="../media/3-publish-finish.png":::
+:::image type="content" source="../media/3-twin-results.png" alt-text="Screenshot of Cloud Shell showing the output of the queries." lightbox="../media/3-twin-results.png":::
 
 Once you've observed changing temperature values on the digital twin, you can stop the device simulator. These values indicate that it's successfully connected to the device simulator and being updated based on its readings. The Azure function you created will work for any number of devices, as long as they're all represented in IoT Hub and have a digital twin with a matching name. In the sample scenario, this means your Azure Digital Twins representation is now running with live data from the smart building.
 
