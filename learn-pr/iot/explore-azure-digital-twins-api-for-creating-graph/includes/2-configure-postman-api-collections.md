@@ -76,7 +76,7 @@ Select the *Control plane* collection in the workspace and switch to the **Varia
 | Variable | Initial value |
 | --- | --- |
 | `subscriptionId` | Your Azure subscription ID. You can find this in the Azure portal. |
-| `resourceGroupName` | *azure-digital-twins-training* (this is the name of the resource group you created at the start of this unit). |
+| `resourceGroupName` | The name of the resource group you created at the start of this unit (if you kept the default name, it's *azure-digital-twins-training*). |
 | `resourceName` | The name of the Azure Digital Twins instance you created at the start of this unit. |
 
 Select **Save**.

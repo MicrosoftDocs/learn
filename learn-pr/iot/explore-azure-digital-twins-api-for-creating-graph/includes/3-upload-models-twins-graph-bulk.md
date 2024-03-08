@@ -27,29 +27,29 @@ If you don't already have a Cloud Shell tab open, navigate to the [Azure Cloud S
 Set the following console variables to use in this section, replacing placeholders with your own values:
 
 ```azure-cli
-$INSTANCE_NAME = <The name of your Azure Digital Twins instance from the previous unit. It's in the format Digital-Twins-xxxx>
-$USER = az ad signed-in-user show --query id -o tsv
-$SUBSCRIPTION = az account show --query "id" --output tsv
+INSTANCE_NAME=<The name of your Azure Digital Twins instance from the previous unit. It's in the format Digital-Twins-xxxx>
+AZURE_USER=az ad signed-in-user show --query id -o tsv
+SUBSCRIPTION=az account show --query "id" --output tsv
 
-$STORAGE_ACCOUNT = <Enter a name to use for your Azure storage account>
-$CONTAINER = <Enter a name to use for your storage container>
+STORAGE_ACCOUNT=<Enter a name to use for your Azure storage account>
+CONTAINER=<Enter a name to use for your storage container>
 ```
 
 Next, run the following command to assign a system-assigned identity to the Azure Digital Twins instance, and store its ID value to a `$PRINCIPALID` console variable. This value is needed to give Azure Digital Twins permission to access the import file from Azure Blob Storage.
 
 ```azure-cli
-az dt create --dt-name $INSTANCE_NAME --resource-group azure-digital-twins-training --mi-system-assigned --location westus2
-$PRINCIPALID = az dt identity show -n $INSTANCE_NAME -g azure-digital-twins-training --query "principalId" --output tsv 
+az dt create --dt-name $INSTANCE_NAME --resource-group $RESOURCE_GROUP --mi-system-assigned --location $REGION
+PRINCIPALID=$(az dt identity show -n $INSTANCE_NAME -g $RESOURCE_GROUP --query "principalId" --output tsv)
 ```
 
 Next, create an Azure storage account and blob container, and assign access permission for both your user account and your Azure Digital Twins instance. These Azure storage resources are necessary to store the import file used by the Import Jobs API.
 
 ```azure-cli
-az storage account create --name $STORAGE_ACCOUNT --resource-group azure-digital-twins-training --location westus2 --sku Standard_ZRS --encryption-services blob
+az storage account create --name $STORAGE_ACCOUNT --resource-group $RESOURCE_GROUP --location $REGION --sku Standard_ZRS --encryption-services blob
 
-az role assignment create --role "Storage Blob Data Contributor" --assignee $USER --scope "/subscriptions/$SUBSCRIPTION/resourceGroups/azure-digital-twins-training/providers/Microsoft.Storage/storageAccounts/$STORAGE_ACCOUNT"
+az role assignment create --role "Storage Blob Data Contributor" --assignee $AZURE_USER --scope "/subscriptions/$SUBSCRIPTION/resourceGroups/$RESOURCE_GROUP/providers/Microsoft.Storage/storageAccounts/$STORAGE_ACCOUNT"
 
-az role assignment create --role "Storage Blob Data Contributor" --assignee $PRINCIPALID --scope "/subscriptions/$SUBSCRIPTION/resourceGroups/azure-digital-twins-training/providers/Microsoft.Storage/storageAccounts/$STORAGE_ACCOUNT"
+az role assignment create --role "Storage Blob Data Contributor" --assignee $PRINCIPALID --scope "/subscriptions/$SUBSCRIPTION/resourceGroups/$RESOURCE_GROUP/providers/Microsoft.Storage/storageAccounts/$STORAGE_ACCOUNT"
 
 az storage container create --account-name $STORAGE_ACCOUNT --name $CONTAINER --auth-mode login
 ```

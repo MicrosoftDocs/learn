@@ -16,9 +16,9 @@ abstract: |
   - Evaluate whether Azure Digital Twins is appropriate for digitally representing your IoT environment.
   - Describe how models, twins, and relationships are used to represent components of a real-world IoT environment in a digital graph, and how they can be queried to gather business insights.
 prerequisites: |
-  - An Azure subscription, and permission to manage access to Azure resources in the subscription
   - Experience with IoT concepts such as devices and event data at the beginner level
   - Experience with SQL-style query concepts such as SELECT, FROM, and WHERE clauses at the beginner level
+  - An [Azure subscription](https://azure.microsoft.com/free), and permission to manage access to Azure resources in the subscription
 iconUrl: /training/achievements/introduction-to-azure-digital-twins.svg
 ratingEnabled: false
 levels:
