@@ -70,7 +70,7 @@ To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslear
     export ACR_NAME=acseshop$SRANDOM
     ```
 
-    The previous commands create environment variables that you'll use in the next Azure CLI commands. You need to change the **LOCATION** to an Azure region close to you; for example, **eastus**. If you'd like a different name for your resource group, AKS cluster, or ACR, change those values. To view your new repositories in the Azure Portal, assign yourself as **App Compliance Automation Administrator** in the **Access control (IAM)** of the container registry.
+    The previous commands create environment variables that you'll use in the next Azure CLI commands. You need to change the **LOCATION** to an Azure region close to you; for example, **eastus**. If you'd like a different name for your resource group, AKS cluster, or ACR, change those values. To view your new repositories in the Azure portal, assign yourself as **App Compliance Automation Administrator** in the **Access control (IAM)** of the container registry.
 
 1. Run these Azure CLI commands:
 

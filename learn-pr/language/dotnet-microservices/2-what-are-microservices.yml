@@ -45,7 +45,7 @@ quiz:
       explanation: "Orchestrators allow hosts to perform load-balancing and routing."
   - content: "What's the difference between a container and an image?"
     choices:
-    - content: "The contianer hosts multiple images as they're created."
+    - content: "The container hosts multiple images as they're created."
       isCorrect: false
       explanation: "A container doesn't host images."
     - content: "The container is a template that describes what images are."
