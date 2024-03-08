@@ -85,7 +85,7 @@ When a developer uses Docker, they create an app or service, and then they packa
 
 The image, when it runs, becomes the container. The container is the in-memory instance of an image.
 
-A container image is immutable. After you build an image, the image can't be changed. Because you can't change an image, if you need to make changes to the app or service and its dependencies, create a new image. This feature guarantees that the image that you use in production is the same image that's used in development and testing.
+A container image is immutable. After you build an image, the image can't be changed. Because you can't change an image, if you need to make changes to the app or service and its dependencies, create a new image. This feature guarantees that the imageF you use in production is the same image that's used in development and testing.
 
 ### What is a Dockerfile?
 

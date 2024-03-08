@@ -4,10 +4,10 @@ title: Summary
 metadata:
   title: Summary
   description: Summary of what you learned in the Plan to deploy a Microsoft Defender for IoT monitoring system for OT networks training module. 
-  ms.date: 09/27/2023
-  author: mjosephym
-  ms.author: v-mjosephy
-  ms.topic: interactive-tutorial
+  ms.date: 11/29/2023
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: unit
   ms.service: defender-for-iot
 durationInMinutes: 1
 content: |

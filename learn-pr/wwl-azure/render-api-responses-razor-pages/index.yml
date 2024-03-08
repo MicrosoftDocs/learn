@@ -6,7 +6,7 @@ metadata:
   ms.date: 02/22/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.custom:
   - N/A
 title: Render API responses in ASP.NET Core Razor Pages

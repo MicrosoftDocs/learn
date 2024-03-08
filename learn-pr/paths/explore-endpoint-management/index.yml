@@ -30,7 +30,7 @@ products:
 - intune
 subjects:
 - infrastructure
-- modern-work
+- business-applications
 modules:
 - learn.wwl.explore-enterprise-desktop
 - learn.wwl.explore-windows-editions
