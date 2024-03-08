@@ -57,7 +57,7 @@ Start by completing the following steps to set up the function and prepare it to
     private static readonly HttpClient httpClient = new HttpClient();
     private static string adtServiceUrl = Environment.GetEnvironmentVariable("ADT_SERVICE_URL");  //This will be populated at runtime by the environment variable you set up earlier for the Azure function app. adtServiceUrl will ultimately be set to "https://<host-name-of-your-Azure-Digital-Twins-instance>".
     ```
-1. In the `Run` method, add the following code after the log line. This code snippet uses the authentication variables above to set up a `DigitalTwinsClient`, which contains methods to retrieve and update digital twin information. For more information about this class, see [DigitalTwinsClient Class (.NET SDK)](https://learn.microsoft.com/dotnet/api/azure.digitaltwins.core.digitaltwinsclient).
+1. In the `Run` method, add the following code after the log line. This code snippet uses the authentication variables above to set up a `DigitalTwinsClient`, which contains methods to retrieve and update digital twin information. For more information about this class, see [DigitalTwinsClient Class (.NET SDK)](/dotnet/api/azure.digitaltwins.core.digitaltwinsclient).
 
     ```csharp
     var credentials = new DefaultAzureCredential();
@@ -88,7 +88,7 @@ Next, fill in the unique functionality.
 
     :::image type="content" source="../media/4-code-5.png" alt-text="Screenshot of code in Visual Studio, showing the reading additions to the if statement." lightbox="../media/4-code-5.png":::
 
-1. Next inside the `if` statement, add some code to identify this twin's parent. This code uses the [GetIncomingRelationshipsAsync](https://learn.microsoft.com/dotnet/api/azure.digitaltwins.core.digitaltwinsclient.getincomingrelationshipsasync) SDK method to list the relationships that target this twin, identify which one is of the *contains* type, and trace that relationship back to its source twin. 
+1. Next inside the `if` statement, add some code to identify this twin's parent. This code uses the [GetIncomingRelationshipsAsync](/dotnet/api/azure.digitaltwins.core.digitaltwinsclient.getincomingrelationshipsasync) SDK method to list the relationships that target this twin, identify which one is of the *contains* type, and trace that relationship back to its source twin. 
 
     In the Azure Digital Twins graph that you set up in Unit 2 to represent the sample scenario, the *Thermostat67* twin's parent is *Room21*. This is represented by a *contains*-type relationship from *Room21* to *Thermostat67*.
 
@@ -106,7 +106,7 @@ Next, fill in the unique functionality.
 
     :::image type="content" source="../media/4-code-6.png" alt-text="Screenshot of code in Visual Studio, showing the parent-finding additions to the if statement." lightbox="../media/4-code-6.png":::
 
-1. Complete the `if` statement by adding the following code. If a parent twin was found, this code takes the operation from the incoming message about replacing the *Temperature* value of the child twin, and applies that operation to the parent, using the [UpdateDigitalTwinAsync](https://learn.microsoft.com/dotnet/api/azure.digitaltwins.core.digitaltwinsclient.updatedigitaltwinasync) method.
+1. Complete the `if` statement by adding the following code. If a parent twin was found, this code takes the operation from the incoming message about replacing the *Temperature* value of the child twin, and applies that operation to the parent, using the [UpdateDigitalTwinAsync](/dotnet/api/azure.digitaltwins.core.digitaltwinsclient.updatedigitaltwinasync) method.
 
     ```csharp
     if (parentId != null)

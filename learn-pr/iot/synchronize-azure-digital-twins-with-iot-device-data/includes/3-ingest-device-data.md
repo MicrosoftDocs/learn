@@ -70,7 +70,7 @@ Next, set up a local project where you'll write the specific Azure function that
 
 #### Write function code
 
-Next, fill in the code body of the function. The function needs to identify key information in the incoming message, then use the [Azure Digital Twins .NET SDK](https://learn.microsoft.com/dotnet/api/overview/azure/digitaltwins.core-readme) to update the correct twin in Azure Digital Twins, based on that information.
+Next, fill in the code body of the function. The function needs to identify key information in the incoming message, then use the [Azure Digital Twins .NET SDK](/dotnet/api/overview/azure/digitaltwins.core-readme) to update the correct twin in Azure Digital Twins, based on that information.
 
 Start by completing the following steps to set up the function and prepare it to work with Azure Digital Twins.
 
@@ -96,7 +96,7 @@ Start by completing the following steps to set up the function and prepare it to
 
     :::image type="content" source="../media/3-code-2.png" alt-text="Screenshot of code in Visual Studio, showing the new variables." lightbox="../media/3-code-2.png":::
 
-1. In the `Run` method, add the following code after the log line. This code snippet uses the authentication variables above to set up a `DigitalTwinsClient`, which contains methods to retrieve and update digital twin information. For more information about this class, see [DigitalTwinsClient Class (.NET SDK)](https://learn.microsoft.com/dotnet/api/azure.digitaltwins.core.digitaltwinsclient).
+1. In the `Run` method, add the following code after the log line. This code snippet uses the authentication variables above to set up a `DigitalTwinsClient`, which contains methods to retrieve and update digital twin information. For more information about this class, see [DigitalTwinsClient Class (.NET SDK)](/dotnet/api/azure.digitaltwins.core.digitaltwinsclient).
 
     ```csharp
     var credentials = new DefaultAzureCredential();
@@ -134,7 +134,7 @@ Next, fill in the unique functionality.
 
     :::image type="content" source="../media/3-code-5.png" alt-text="Screenshot of code in Visual Studio, showing the reading additions to the if statement." lightbox="../media/3-code-5.png":::
 
-1. Complete the `if` statement by adding the following code. This code snippet uses the [UpdateDigitalTwinAsync](https://learn.microsoft.com/dotnet/api/azure.digitaltwins.core.digitaltwinsclient.updatedigitaltwinasync) method to update the digital twin that has an ID matching the device ID from the telemetry message. Using a JSON Patch document, the method updates the twin's `Temperature` property to match the new temperature value.
+1. Complete the `if` statement by adding the following code. This code snippet uses the [UpdateDigitalTwinAsync](/dotnet/api/azure.digitaltwins.core.digitaltwinsclient.updatedigitaltwinasync) method to update the digital twin that has an ID matching the device ID from the telemetry message. Using a JSON Patch document, the method updates the twin's `Temperature` property to match the new temperature value.
 
     ```csharp
     //Update twin using device temperature
