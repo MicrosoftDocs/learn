@@ -40,25 +40,25 @@ Some features are available to organizations running an instance of GitHub Enter
 You'll need to prepare to use upkeep features. Start with authentication using SAML single sign-on.
 
 1. Connect your identity provider to your GitHub organization.
-2. Access the settings for your organization.
-3. Review the existing security configurations for that organization.
-4. If you want to unify all the Enterprise organizations under SAML single sign-on, select **Require SAML authentication** and provide the requested technical information (sign on URL, optional issuer, and public certificate).
+1. Access the settings for your organization.
+1. Review the existing security configurations for that organization.
+1. If you want to unify all the Enterprise organizations under SAML single sign-on, select **Require SAML authentication** and provide the requested technical information (sign on URL, optional issuer, and public certificate).
 
 Then, secure the knowledge base for any of your private repositories that exist on the GitHub Enterprise Cloud.
 
 :::image type="content" source="../media/public-or-private-visibility.png" alt-text="Drop-down to choose a visibility for your site":::
 
 1. Navigate to your site's repository and access its settings.
-2. Change **GitHub Pages visibility** to "Private."
-3. Verify your privacy by checking that no URLs appear under **GitHub Pages**.
+1. Change **GitHub Pages visibility** to "Private."
+1. Verify your privacy by checking that no URLs appear under **GitHub Pages**.
 
 Finally, if you're running an instance of GitHub Enterprise Server and also using the GitHub Enterprise Cloud, use GitHub Connect to enable unified search and contributions between the two platforms.
 
 :::image type="content" source="../media/enable-github-connect-button.png" alt-text="Enable GitHub Connect button":::
 
 1. Sign in to GitHub Enterprise Server and GitHub.com.
-2. In Enterprise Server, access **Enterprise settings** and click "Enable GitHub Connect."
-3. Choose the organizations you want to connect from the list.
+1. In Enterprise Server, access **Enterprise settings** and click "Enable GitHub Connect."
+1. Choose the organizations you want to connect from the list.
 
 GitHub Support can assist you with managing users' accounts, security threats, and abuse of social features. You'll learn more about these use cases in the next unit.
 
@@ -83,16 +83,16 @@ You can track your GitHub Enterprise organization's use of GitHub Advanced Secur
 :::image type="content" source="../media/enterprise-licensing-tab-ghas.png" alt-text="screenshot showing GitHub Advanced Security in enterprise licensing settings":::
 
 1. Select an Enterprise organization in **Your enterprises** and access **Settings**.
-2. Check the number of seats your Enterprise organization is using. If you're near to or exceeding the limit your organization has purchased, discuss with organizational stakeholders.
-3. Select "GitHub Advanced Security" in **Billing** in the left sidebar to learn more details about Advanced Security use, like whether an Enterprise organization has many committers using GHAS only in that organization.
+1. Check the number of seats your Enterprise organization is using. If you're near to or exceeding the limit your organization has purchased, discuss with organizational stakeholders.
+1. Select "GitHub Advanced Security" in **Billing** in the left sidebar to learn more details about Advanced Security use, like whether an Enterprise organization has many committers using GHAS only in that organization.
 
 Tracking users' GitHub Actions use is even easier. Your Enterprise account allows 50,000 minutes of GitHub Actions runtime per month and 50 GB of Actions storage. Check in the settings for **Your enterprises** to learn how much of that allotment your organizations have that month.
 
 :::image type="content" source="../media/actions-minutes.png" alt-text="Details of minute usage":::
 
 1. Select an Enterprise organization in **Your enterprises** and access **Settings**.
-2. Select "GitHub Actions" in **Billing** to see how many minutes or how much storage your organizations have used. If you're near to or exceeding the limit, discuss with organizational stakeholders.
-3. Keep your collaborators' operating systems in mind; Windows runners use minutes at twice the rate of Linux runners, and macOS runners use minutes at 10 times the rate of Linux runners.
+1. Select "GitHub Actions" in **Billing** to see how many minutes or how much storage your organizations have used. If you're near to or exceeding the limit, discuss with organizational stakeholders.
+1. Keep your collaborators' operating systems in mind; Windows runners use minutes at twice the rate of Linux runners, and macOS runners use minutes at 10 times the rate of Linux runners.
 
 ### Identify organization strengths with activity statistics
 
