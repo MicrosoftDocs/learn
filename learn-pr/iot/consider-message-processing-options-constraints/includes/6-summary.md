@@ -4,4 +4,4 @@ You studied device message processing alternatives to message routing and the th
 
 If you didn't study device message processing, you wouldn't be prepared to implement message routing and the throttling limits that apply to Azure IoT Hub message.
 
-Understanding the alternatives to message routing and the throttling limits that apply to Azure IoT Hub message throughput helps to ensure team's success.
+Understanding the alternatives to message routing and the throttling limits that apply to IoT Hub message throughput helps to ensure team's success.

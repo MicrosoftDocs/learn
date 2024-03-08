@@ -1,22 +1,22 @@
 This unit explains the quotas for an Azure IoT hub, and provides information to help you understand how throttling works.
 
-Each Azure subscription can have at most 50 Azure IoT hubs, and at most one Free hub.
+Each Azure subscription can have at most 50 IoT hubs, and at most one Free hub.
 
-Each Azure IoT hub is provisioned with one or more units in a specific tier. The tier and number of units determine the maximum daily quota of messages that you can send to your hub per day. The message size used to calculate the daily quota is 0.5 KB for a free tier hub and 4 KB for all other tiers.
+Each IoT hub is provisioned with one or more units in a specific tier. The tier and number of units determine the maximum daily quota of messages that you can send to your hub per day. The message size used to calculate the daily quota is 0.5 KB for a free tier hub and 4 KB for all other tiers.
 
 You can find your hub's quota limit under the column **Total number of messages /day** on the [Azure IoT Hub pricing page](https://azure.microsoft.com/pricing/details/iot-hub/) in the Azure portal.
 
-The tier also determines the throttling limits that Azure IoT Hub enforces on all operations.
+The tier also determines the throttling limits that IoT Hub enforces on all operations.
 
-## Operation Throttles
+## Operation throttles
 
 Operation throttles are rate limitations that are applied in minute ranges and are intended to prevent abuse. They're also subject to traffic shaping.
 
-It's a good practice to throttle your calls so that you don't hit/exceed the throttling limits. If you do hit the limit, Azure IoT Hub responds with error code 429, and the client should back off and retry. These limits are per hub (or in some cases per hub/unit).
+It's a good practice to throttle your calls so that you don't hit/exceed the throttling limits. If you do hit the limit, IoT Hub responds with error code 429, and the client should back off and retry. These limits are per hub (or in some cases per hub/unit).
 
-## Basic and Standard Tier Operations
+## Basic and standard tier operations
 
-The following table shows the enforced throttles for operations that are available in all Azure IoT Hub tiers. Values refer to an individual hub.
+The following table shows the enforced throttles for operations that are available in all IoT Hub tiers. Values refer to an individual hub.
 
 | Throttle | Free, B1, and S1 | B2 and S2 | B3 and S3 |
 |----------|-------------------|-----------|-----------|
@@ -26,7 +26,7 @@ The following table shows the enforced throttles for operations that are availab
 | File upload | 1.67 file upload initiations/sec/unit (100/min/unit) | 1.67 file upload initiations/sec/unit (100/min/unit) | 83.33 file upload initiations/sec/unit (5,000/min/unit) |
 | Queries | 20/min/unit | 20/min/unit | 1,000/min/unit |
 
-## Standard Tier Operations
+## Standard tier operations
 
 The following table shows the enforced throttles for operations that are available in standard tiers only. Values refer to an individual hub.
 
@@ -59,29 +59,29 @@ The following table shows the enforced throttles for operations that are availab
 
 ### Traffic shaping
 
-To accommodate burst traffic, Azure IoT Hub accepts requests above the throttle for a limited time. The first few of these requests are processed immediately. However, if the number of requests continues violate the throttle, Azure IoT Hub starts placing the requests in a queue and processed at the limit rate. This effect is called traffic shaping. Furthermore, the size of this queue is limited. If the throttle violation continues, eventually the queue fills up, and Azure IoT Hub starts rejecting requests with `429 ThrottlingException`.
+To accommodate burst traffic, IoT Hub accepts requests above the throttle for a limited time. The first few of these requests are processed immediately. However, if the number of requests continues violate the throttle, IoT Hub starts placing the requests in a queue and processed at the limit rate. This effect is called traffic shaping. Furthermore, the size of this queue is limited. If the throttle violation continues, eventually the queue fills up, and IoT Hub starts rejecting requests with `429 ThrottlingException`.
 
-For example, you use a simulated device to send 200 device-to-cloud messages per second to your S1 Azure IoT Hub (which has a limit of 100/sec D2C sends). For the first minute or two, the messages are processed immediately. However, since the device continues to send more messages than the throttle limit, Azure IoT Hub begins to only process 100 messages per second and puts the rest in a queue. You start noticing increased latency. Eventually, you start getting `429 ThrottlingException` as the queue fills up, and the "number of throttle errors" in Azure IoT Hub's metrics starts increasing.
+For example, you use a simulated device to send 200 device-to-cloud messages per second to your S1 IoT Hub (which has a limit of 100/sec D2C sends). For the first minute or two, the messages are processed immediately. However, since the device continues to send more messages than the throttle limit, IoT Hub begins to only process 100 messages per second and puts the rest in a queue. You start noticing increased latency. Eventually, you start getting `429 ThrottlingException` as the queue fills up, and the "number of throttle errors" in IoT Hub's metrics starts increasing.
 
 ### Identity registry operations throttle
 
 Device identity registry operations are intended for run-time use in device management and provisioning scenarios. Reading or updating a large number of device identities is supported through import and export jobs.
 
-When initiating identity operations through bulk registry update operations (not bulk import and export jobs), the same throttle limits apply. For example, if you want to submit bulk operation to create 50 devices, and you have a S1 Azure IoT Hub with one unit, only two of these bulk requests are accepted per minute. This limitation is because the identity operation throttle for an S1 Azure IoT Hub with one unit is 100/min/unit. Also in this case, a third request (and beyond) in the same minute would be rejected because the limit has been reached.
+When initiating identity operations through bulk registry update operations (not bulk import and export jobs), the same throttle limits apply. For example, if you want to submit bulk operation to create 50 devices, and you have a S1 IoT Hub with one unit, only two of these bulk requests are accepted per minute. This limitation is because the identity operation throttle for an S1 IoT Hub with one unit is 100/min/unit. Also in this case, a third request (and beyond) in the same minute would be rejected because the limit has been reached.
 
 ### Device connections throttle
 
-The device connections throttle governs the rate at which new device connections can be established with an Azure IoT hub. The device connections throttle does not govern the maximum number of simultaneously connected devices. The device connections rate throttle depends on the number of units that are provisioned for the Azure IoT hub.
+The device connections throttle governs the rate at which new device connections can be established with an IoT hub. The device connections throttle does not govern the maximum number of simultaneously connected devices. The device connections rate throttle depends on the number of units that are provisioned for the IoT hub.
 
 For example, if you buy a single S1 unit, you get a throttle of 100 connections per second. Therefore, to connect 100,000 devices, it takes at least 1,000 seconds (approximately 16 minutes). However, you can have as many simultaneously connected devices as you have devices registered in your identity registry.
 
 ## Other limits
 
-Azure IoT Hub enforces other operational limits:
+IoT Hub enforces other operational limits:
 
 | Operation | Limit |
 | --- | --- |
-| Devices | The total number of devices plus modules that can be registered to a single Azure IoT hub is capped at 1,000,000. |
+| Devices | The total number of devices plus modules that can be registered to a single IoT hub is capped at 1,000,000. |
 | File uploads | 10 concurrent file uploads per device. |
 | Jobs¹ | Maximum concurrent jobs are 1 (for Free and S1), 5 (for S2), and 10 (for S3). However, the max concurrent device import/export job is 1 for all tiers. Job history is retained up to 30 days. |
 | Additional endpoints | Basic and standard SKU hubs may have 10 additional endpoints. Free SKU hubs may have one additional endpoint. |
@@ -95,20 +95,20 @@ Azure IoT Hub enforces other operational limits:
 | Twins¹ | Maximum size of desired properties and reported properties sections are 32 KB each. Maximum size of tags section is 8 KB. Maximum size of each individual property in every section is 4 KB. |
 | Shared access policies | Maximum number of shared access policies is 16. Within that limit, the maximum number of shared access policies that grant service connect access is 10. |
 | Restrict outbound network access | Maximum number of allowed FQDNs is 20. |
-| x509 CA certificates | Maximum number of x509 CA certificates that can be registered on Azure IoT Hub is 25. |
+| x509 CA certificates | Maximum number of x509 CA certificates that can be registered on IoT Hub is 25. |
 
-¹ This feature is not available in the basic tier of Azure IoT Hub.
+¹ This feature is not available in the basic tier of IoT Hub.
 
 ## Increasing the quota or throttle limit
 
-At any given time, you can increase quotas or throttle limits by increasing the number of provisioned units in an Azure IoT hub.
+At any given time, you can increase quotas or throttle limits by increasing the number of provisioned units in an IoT hub.
 
 ## Latency
 
-Azure IoT Hub strives to provide low latency for all operations. However, due to network conditions and other unpredictable factors it cannot guarantee a certain latency. When designing your solution, you should:
+IoT Hub strives to provide low latency for all operations. However, due to network conditions and other unpredictable factors it cannot guarantee a certain latency. When designing your solution, you should:
 
-* Avoid making any assumptions about the maximum latency of any Azure IoT Hub operation.
-* Provision your Azure IoT hub in the Azure region closest to your devices.
+* Avoid making any assumptions about the maximum latency of any IoT Hub operation.
+* Provision your IoT hub in the Azure region closest to your devices.
 * Consider using Azure IoT Edge to perform latency-sensitive operations on the device or on a gateway close to the device.
 
-Multiple Azure IoT Hub units affect throttling as described previously, but do not provide any other latency benefits or guarantees.
+Multiple IoT Hub units affect throttling as described previously, but do not provide any other latency benefits or guarantees.
