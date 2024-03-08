@@ -35,8 +35,6 @@ Access to your Project will depend if your Project is an organization-level Proj
 
 Admins of organization-level Projects can manage access for the entire organization, for teams, for individual organization members, and for outside collaborators. Admins of user-level Projects can invite individual collaborators and manage their access.
 
-Types of Roles and access to your Project
-
 #### Organization level Project
 
 - No access: Only organization owners and users granted individual access can see the Project. Organization owners are also admins for the Project.
