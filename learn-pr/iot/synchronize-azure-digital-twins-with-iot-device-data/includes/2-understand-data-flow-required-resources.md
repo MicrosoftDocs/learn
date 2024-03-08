@@ -2,24 +2,24 @@ In this unit, you set up the scenario and get ready to build the sample data flo
 
 ## Understand scenario and data flow
 
-The sample scenario for this module is a smart building, which contains many rooms equipped with smart thermostats. This module focuses in on one room in the building (*Room 21*), and the thermostat in that room (*Thermostat 67*). This is simplified to make it easier to learn the process of connecting device data to Azure Digital Twins. In a larger building scenario, you could expand this process to populate additional thermostat and room twins, using data from additional real or simulated thermostats.
+The sample scenario for this module is a smart building, which contains many rooms equipped with smart thermostats. This module focuses in on one room in the building (*Room 21*), and the thermostat in that room (*Thermostat 67*). This simplification is made to make it easier to learn the process of connecting device data to Azure Digital Twins. In a larger building scenario, you could expand this process to populate more thermostat and room twins, using data from more real or simulated thermostats.
 
-Below is a diagram showing the data flow through multiple Azure services that will be set up for this scenario.
+Here's a diagram showing the data flow through multiple Azure services that's set up in this scenario.
 
 :::image type="content" source="../media/2-3-4-building-scenario.png" alt-text="Graph showing data flowing from a device into Azure Digital Twins, then throughout Azure Digital Twins." border="false" lightbox="../media/2-3-4-building-scenario.png":::
 
 Flow A ingests device data into Azure Digital Twins. Data flow follows this path:
-1. Temperature data is produced by the simulated device, *Thermostat 67*.
+1. The simulated device, *Thermostat 67*, produces temperature data.
 1. The temperature data is sent to the cloud, arriving in IoT Hub.
 1. IoT Hub routes the temperature data to a custom Azure function.
 1. The Azure function code uses the temperature data to update the *Temperature* property on the corresponding twin in Azure Digital Twins. In this case, that's the *Thermostat67* twin.
 
 Next, Flow B propagates data through the digital twin graph. Data flow follows this path:
-1. The *Thermostat 67* twin produces a notification that its *Temperature* property has changed. Azure Digital Twins routes this notification data to Event Grid.
+1. The *Thermostat 67* twin produces a notification that its *Temperature* property changed. Azure Digital Twins routes this notification data to Event Grid.
 1. Event Grid sends the notification data to another custom Azure function.
-1. The Azure function code uses the notification data to update connected twins as appropriate. In this case, it will update the *Temperature* property on the *Room21* twin, setting the value to match the *Temperature* value on the thermostat twin that the room contains.
+1. The Azure function code uses the notification data to update connected twins as appropriate. In this case, it updates the *Temperature* property on the *Room21* twin, setting the value to match the *Temperature* value on the thermostat twin that the room contains.
 
-You'll set up these data flows in Units 3 and 4 of this module. But first, follow the steps below to prepare an Azure Digital Twins instance and a device simulator, to get the scenario ready. 
+You set up these data flows in Units 3 and 4 of this module. But first, use the following steps to prepare an Azure Digital Twins instance and a device simulator, to get the scenario ready. 
 
 [!INCLUDE [Instructions to set up Azure Digital Twins instance](../../includes/set-up-azure-digital-twins.md)]
 
@@ -45,11 +45,11 @@ In a real scenario with many rooms and devices, you'd continue to create more di
 
 Get the device simulator code by navigating to the [Azure Digital Twins end-to-end sample project](/samples/azure-samples/digital-twins-samples/digital-twins-samples), and selecting the **Browse code** button underneath the title. 
 
-This will take you to the GitHub repo for the samples, which you can download as a .zip by selecting the **Code** button followed by **Download ZIP**.
+This button takes you to the GitHub repo for the samples, which you can download as a .zip by selecting the **Code** button followed by **Download ZIP**.
 
 :::image type="content" source="../media/2-download-repo-zip.png" alt-text="Screenshot of the digital-twins-samples repo on GitHub, highlighting the steps to download it as a zip." lightbox="../media/2-download-repo-zip.png":::
 
-This will download a .zip folder to your machine as *digital-twins-samples-main.zip*. Unzip the folder and extract the files.
+This downloads a .zip folder to your machine as *digital-twins-samples-main.zip*. Unzip the folder and extract the files.
 
 The device simulator is located in the *DeviceSimulator* folder. Only the contents of this folder are needed for this module; you can remove the other files and folders from your machine if you want.
 
