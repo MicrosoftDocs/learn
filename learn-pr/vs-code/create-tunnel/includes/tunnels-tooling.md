@@ -26,13 +26,11 @@ Two methods are available to set up tunnels:
 - [Visual Studio Code Desktop](https://code.visualstudio.com/download): Activate tunneling via the Visual Studio Code Desktop user interface (UI). Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.
 - [Code command-line interface (CLI)](https://code.visualstudio.com/docs/editor/command-line): Execute the tunnel command available in the code CLI. The CLI lets you control how you open the editor. From the command line, you use the CLI when you perform tasks such as opening files, installing extensions, changing the display language, and outputting diagnostics through command-line options (switches).
 
-:::image type="content" source="../media/9-cli.png" alt-text="Screenshot of CLI image.":::
-
-Regardless of the method chosen, the outcome in terms of tunneling functionality is identical, allowing you to select the approach that best suits your needs.
-
-### Decide between Visual Studio Code Desktop and the code CLI
+  :::image type="content" source="../media/9-cli.png" alt-text="Screenshot of the code command-line interface.":::
 
 If it's not feasible to install Visual Studio Code Desktop on your remote machine, the CLI offers a viable alternative. On the other hand, if you're already engaged in tasks within Visual Studio Code, using the Visual Studio Code Desktop UI to initiate tunneling for your current machine is a convenient option.
+
+Regardless of the method that you choose, the outcome in terms of tunneling functionality is identical. Select the approach that best suits your needs.
 
 ### Prepare for the exercises
 
