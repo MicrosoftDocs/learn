@@ -77,4 +77,3 @@ There are certain limits around the number of Azure resources you can deploy. Mo
 ## Virtual networks and availability zones<br>
 
 Virtual networks and subnets span all availability zones in a region. You don't need to divide them by availability zones to accommodate zonal resources. For example, if you configure a zonal VM, you don't have to take into consideration the virtual network when selecting the availability zone for the VM. The same is true for other zonal resources.
-
