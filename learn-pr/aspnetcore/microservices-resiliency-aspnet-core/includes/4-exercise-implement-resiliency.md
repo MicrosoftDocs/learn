@@ -222,7 +222,7 @@ In this example, you'd like the store service to wait a little longer, to give t
     Stop the backend service container in the bash terminal and refresh the eShop. Note it takes longer to see the error message. If you check the logs though, you can see that the retry strategy only retried five times. The last message from Polly is:
 
     ```bash
-    Polly.Timeout.TimeoutRejectedException: The operation didn't complete within t he allowed timeout of '00:00:30'.
+    Polly.Timeout.TimeoutRejectedException: The operation didn't complete within the allowed timeout of '00:00:30'.
     ```
 
     The above message tells you that the total request timeout stops the maximum number of retries from being reached. You can fix the problem by increasing the total request timeout.
