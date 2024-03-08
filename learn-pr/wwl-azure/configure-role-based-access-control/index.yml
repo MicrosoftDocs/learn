@@ -9,6 +9,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A
+  ms.service: azure
   ai-usage: ai-assisted
 title: Configure role-based access control
 summary: Learn how to use role-based access control (RBAC) to ensure resources are protected, but users can still access the resources they need. [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
