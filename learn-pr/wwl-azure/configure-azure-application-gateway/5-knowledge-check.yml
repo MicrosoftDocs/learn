@@ -4,18 +4,17 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/31/2024
+  ms.date: 03/07/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   title: ""
-
   questions:
   - content: "What criteria does Azure Application Gateway use to route requests to a web server?"
     choices:
@@ -24,11 +23,10 @@ quiz:
       explanation: "Incorrect. Application Gateway doesn't directly use the region to route requests."
     - content: "The hostname, port, and path in the URL of the request."
       isCorrect: true
-      explanation: "Correct. Application Gateway uses the hostname, port, and URL path."      
+      explanation: "Correct. Application Gateway uses the hostname, port, and URL path."
     - content: "The users authentication information."
       isCorrect: false
       explanation: "Incorrect. Application Gateway doesn't consider user authentication information when routing requests."
-
   - content: "Which load-balancing strategy does Azure Application Gateway implement?"
     choices:
     - content: "Requests are distributed to the server in the back-end pool with the lightest load."
@@ -40,12 +38,11 @@ quiz:
     - content: "Requests are distributed to each available server in a back-end pool in turn via a round-robin technique."
       isCorrect: true
       explanation: "Correct. Application Gateway distributes requests across multiple servers by using a round-robin technique."
-  
   - content: "How can the concerns about security threats be addressed?"
     choices:
     - content: "Install Azure Web Application Firewall."
       isCorrect: true
-      explanation: "Correct. Azure Web Application Firewall is an optional component that handles incoming requests before they reach a listener. Web Application Firewall checks each request for many common threats, based on the Open Web Application Security Project."    
+      explanation: "Correct. Azure Web Application Firewall is an optional component that handles incoming requests before they reach a listener. Web Application Firewall checks each request for many common threats, based on the Open Web Application Security Project."
     - content: "Install an internal load balancer."
       isCorrect: false
       explanation: "Incorrect. An internal load balancer isn't the ideal solution to address the security threats."
