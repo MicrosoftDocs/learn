@@ -231,9 +231,6 @@ These logs provide detailed information about logins to applications configured 
 
 The connectors and the service take care of all the high availability tasks. You can monitor the status of your connectors from the application proxy page in the Microsoft Entra admin center.
 
-:::image type="content" source="../media/application-proxy-connectors-073f2251.png" alt-text="Screenshot showing an example of the application proxy connector monitoring page.":::
-
-
 ### Windows event logs and performance counters
 
 Connectors have both admin and session logs. The admin logs include key events and their errors. The session logs include all the transactions and their processing details.
