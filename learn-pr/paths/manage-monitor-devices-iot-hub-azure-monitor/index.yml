@@ -15,7 +15,7 @@ prerequisites: |
   - Describe the concept of device twins and how devices twins are used.
 summary: |
   Learn about device management patterns and capabilities, including bulk device management that can be implemented using features of IoT Hub and by developing code. You'll also learn about the solution monitoring tools available in Azure and how to apply them to the IoT Hub service, and how to create event logs that can be used to help troubleshoot your solution.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/iot/manage-monitor-devices-iot-hub-azure-monitor.svg
 levels:
 - intermediate
 roles:
