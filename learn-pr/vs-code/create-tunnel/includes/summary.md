@@ -4,7 +4,7 @@ In this module, you learned some important aspects of using the Visual Studio Co
 
 You discovered that the extension allows you to connect to a remote machine, such as a desktop PC or a virtual machine, through a secure tunnel. You also learned that the extension eliminates the need for having the source code on your Visual Studio Code client machine by running commands and other extensions directly on the remote machine. We also covered the configuration and use of the extension through the Visual Studio Code user interface and the code CLI.
 
-## Learning more
+## Learn more
 
 The following articles and resources are related to the Visual Studio Code Remote - Tunnels extension. They're worth exploring for further understanding and depth:
 
