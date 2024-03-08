@@ -25,7 +25,7 @@ products:
 - power-bi
 - azure-synapse-analytics
 subjects:
-- data-ai
+- data-management
 modules:
 - learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics
 - learn.wwl.integrate-machine-learning-within-azure-synapse-analytics
