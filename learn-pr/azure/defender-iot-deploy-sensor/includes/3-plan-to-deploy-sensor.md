@@ -1,4 +1,4 @@
-Your car manufacturing organization has offices and production sites across the globe, with a network linking them together. A sensor was onboarded to Defender for IoT and the site networking is set up. Now your task is to deploy the sensor by installing the OT monitoring software and activating the sensor to send data to the Azure portal.
+Your car manufacturing organization has offices and production sites across the globe, with a network linking them together. In earlier phases, the deployment team onboarded a sensor to Defender for IoT and the connectivity team set-up the site networking. For this module, you have a virtual machine (VM) ready to act as the operational technology (OT) sensor. Your task is to deploy the sensor by installing the OT monitoring software and activate the sensor to send data to the Azure portal. This unit provides an overview of this process.
 
 ## Your organization's OT sensor deployment plan
 
@@ -12,13 +12,15 @@ This Learn Module deals with installing and activating the monitoring software o
 
 The first stage in deploying the OT sensor monitoring software is to check that your virtual machine is correctly configured to act as the OT sensor.
 
-We'll use the VMware ESXi virtual machine, but other systems such as HyperV could also be used. The information below is for setting up the ESXi, but you might need to refer to your virtual machine software documentation for more details.
+We use the VMware ESXi virtual machine, but other systems such as HyperV could also be used. The information below is for setting up the ESXi, but you might need to refer to your virtual machine software documentation for more details.
 
 ## Install Defender for IoT software
 
-Download and save the OT monitoring software installation file from the Defender for IoT setup page.
+In a real life scenario, your organization can buy configured sensors. So, you wouldn't need to complete this step. But for this module, to install software in the VM, you complete the following steps in the exercise unit:
 
-Open the virtual machine, run the installation file, and follow the stages in the installation wizard. Once the installation is complete the default network details are displayed. In a real life scenario, configured sensors can be bought and this step is skipped.
+1. Download and save the OT monitoring software installation file from the Defender for IoT setup page.
+
+1. Open the virtual machine, run the installation file, and follow the stages in the installation wizard. Once the installation is complete the default network details are displayed.
 
 ## Activate and set up the sensor
 

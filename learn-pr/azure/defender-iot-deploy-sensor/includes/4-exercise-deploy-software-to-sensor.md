@@ -1,4 +1,4 @@
-This unit describes how to set up a virtual machine and connect it to a sensor, including configuring the network adapter and SPAN port settings. And, finally that validate the traffic mirroring is properly configured and provides the correct data to the sensor.
+This unit describes how to set up a virtual machine and connect it to a sensor, including configuring the network adapter and SPAN port settings. And, finally that validate the traffic mirroring is properly configured and provides the correct data to the sensor. <!-- add more context as we did for unit 3 and use active voice-->
 
 ## Check the prerequisites
 
@@ -23,21 +23,24 @@ This unit describes how to download the OT monitoring software from the Defender
 
 ## Install Defender for IoT software
 
-To start the software installation, open your virtual machine.
+First download the software from Defender for IoT and then install the software on your VM.
 
 ### Download the monitoring software file
 
-In Defender for IoT select **Getting started > Sensor**, then select the latest software version and select **Download**.
+To get started, download the software from Defender for IoT.
 
-:::image type="content" source="../media/6-download-iso-file.png" alt-text="screenshot of Downloading ISO monitoring file from Defender for IoT":::
+1. In Defender for IoT select **Getting started > Sensor**.
+1. Select the latest software version and select **Download**.
 
-Save the downloaded ISO file in a location that's accessible from your VM.
+:::image type="content" source="../media/6-download-iso-file.png" alt-text="screenshot of Downloading ISO monitoring file from Defender for IoT" lightbox="../media/6-download-iso-file.png":::
+
+1. Save the downloaded ISO file in a location that's accessible from your VM.
 
 ### Install the monitoring software on the virtual machine
 
-On your virtual machine:
+Connect to your VM to install the software.
 
-1. Open your VM settings.
+1. On your VM, open the settings.
 
 1. For **CD/DVD Drive 1**, select **Datastore ISO file** and select the ISO file of the monitoring software you downloaded earlier.
 
@@ -58,13 +61,11 @@ On your virtual machine:
     UID: 91F14D56-C1E4-966F-726F-006A527C61D
     ```
 
-    The IP address is needed to access the sensor for initial setup and activation.
+1. Make a note of the IP address. You need this information to access the sensor for initial setup and activation.
 
 ### Post-installation validation
 
 Validate your installation using the sensor's own system health checks, available to the default *admin* user.
-
-**To validate your installation**:
 
 1. Sign in to the OT sensor as the `admin` user.
 
@@ -78,7 +79,7 @@ Validate your installation using the sensor's own system health checks, availabl
 
 ## Activate and set up the sensor
 
-Sign in to the sensor to then configure your sensor's initial settings, which has four stages.
+Sign in to the sensor to configure your sensor's initial settings, which has four stages.
 
 ### Sign in to the sensor
 
@@ -131,7 +132,7 @@ After rebooting, the virtual machine opens to the **Defender for IoT | Overview*
 
 1. Select **Upload** and add the activation file.
 1. Select the **Terms and Condition** option.
-1. Select **Next:Certificates**.
+1. Select **Next: Certificates**.
 
 ### Define certificate settings
 
