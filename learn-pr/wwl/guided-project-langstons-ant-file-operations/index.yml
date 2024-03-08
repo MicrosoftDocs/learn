@@ -3,7 +3,7 @@ uid: learn.wwl.guided-project-langstons-ant-file-operations
 metadata:
   title: Guided project - Langstons ant with file operations
   description: "Guided project - Langstons ant with file operations"
-  ms.date: 03/07/2024
+  ms.date: 03/08/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module-guided-project
@@ -13,7 +13,7 @@ metadata:
 title: Guided project - Langstons ant with file operations
 summary: This is a guided project module where you implement file input and output in an existing Langston's Ant simulation.
 abstract: |
-  In this module you'll practice how to
+  In this module, you practice how to
 
   -   Read data from a file
 
@@ -47,7 +47,7 @@ units:
 - learn.wwl.guided-project-langstons-ant-file-operations.introduction
 - learn.wwl.guided-project-langstons-ant-file-operations.prepare
 - learn.wwl.guided-project-langstons-ant-file-operations.exercise-support-operations
-- learn.wwl.guided-project-langstons-ant-file-operations.exercise-write-game-to-file
+- learn.wwl.guided-project-langstons-ant-file-operations.exercise-write-game-file
 - learn.wwl.guided-project-langstons-ant-file-operations.exercise-read-game-from-file
 - learn.wwl.guided-project-langstons-ant-file-operations.knowledge-check
 - learn.wwl.guided-project-langstons-ant-file-operations.summary
