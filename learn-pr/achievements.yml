@@ -3063,3 +3063,8 @@ achievements:
   title: Deploy and maintain cloud-native apps with GitHub actions and Azure Pipelines
   summary: Implement DevOps in cloud-native application scenarios. Use GitHub actions and Azure Pipelines to build and deploy infrastructure and applications.
   iconUrl: /training/achievements/cna-deploy-maintain.svg
+- uid: learn.azure.migrate-java-app-azure-app-service.badge
+  type: badge
+  summary: In this module, you learn to use the Azure Migrate App Containerization tool to containerize and migrate Java web applications to Azure App Service.
+  title: Migrate Java web applications to Azure App Service
+  iconUrl: /training/achievements/java-on-azure-badge.svg
