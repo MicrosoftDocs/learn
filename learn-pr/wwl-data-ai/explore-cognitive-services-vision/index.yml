@@ -6,7 +6,7 @@ metadata:
   ms.date: 08/22/2023
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: artificial-intelligence
 title: Explore Azure AI services for Vision (preview)
 summary: Azure AI services for Vision, powered by Microsoft’s Florence large foundation model, incorporates significant improvements to image analysis and groundbreaking customization capabilities.

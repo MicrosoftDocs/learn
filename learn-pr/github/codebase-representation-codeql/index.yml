@@ -30,7 +30,6 @@ roles: # user input: add roles from role taxonomy (https://review.learn.microsof
 products:
   - github
 subjects:
-- development-tools
 - threat-protection
 units:
 - learn.codebase-representation-codeql.1-introduction

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-your-kernel.why-use-semantic-kernel
+title: Why use semantic kernel
+metadata:
+  title: Why use semantic kernel
+  description: "Why use semantic kernel"
+  ms.date: 02/27/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-why-use-semantic-kernel.md)]

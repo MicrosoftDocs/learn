@@ -7,7 +7,7 @@ metadata:
   ms.date: 12/13/2023
   author: SoniaLopezBravo
   ms.author: sonialopez
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/3-use-copilot.md)]

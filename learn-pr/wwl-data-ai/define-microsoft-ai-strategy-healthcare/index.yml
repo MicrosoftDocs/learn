@@ -26,7 +26,7 @@ roles:
 products:
 - azure-openai
 subjects:
-- data-ai
+- data-management
 units:
 - learn.wwl.define-microsoft-ai-strategy-healthcare.introduction
 - learn.wwl.define-microsoft-ai-strategy-healthcare.explore-ai-goals-challenges-healthcare

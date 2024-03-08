@@ -4,8 +4,8 @@ metadata:
   title: Introduction to Secure Application Delivery with Azure network security
   description: Learn to protect your network from cyber security attacks with secure application delivery.
   ms.date: 04/20/2021
-  author: micrum
-  ms.author: micrum
+  author: vhorne
+  ms.author: victorh
   ms.topic: learning-path
 title: Introduction to Secure Application Delivery with Azure network security
 prerequisites: |

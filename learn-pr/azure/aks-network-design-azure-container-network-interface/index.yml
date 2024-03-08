@@ -2,16 +2,16 @@
 uid: learn.aks-network-design-azure-container-network-interface
 metadata:
   title: Configure Azure CNI networking in Azure Kubernetes Service (AKS)
-  description: In this module, you learn about Azure CNI networking and how to configure it in Azure Kubernetes Service (AKS).
-  ms.date: 10/31/2023
+  description: In this module, you learn about the Azure Container Networking Interface (CNI) and how to configure it in Azure Kubernetes Service (AKS).
+  ms.date: 02/15/2024
   author: rayoef
   ms.author: rayoflores
   ms.topic: module-standard-task-based
   ms.service: azure-kubernetes-service
 title: Configure Azure CNI networking in Azure Kubernetes Service (AKS)
-summary: This module introduces Azure CNI networking and how to configure it in Azure Kubernetes Service (AKS). We cover some Kubernetes networking basics, including how certain resource types use IP addresses, how to size a cluster for a workload, and how to design a network for an AKS cluster using Azure CNI.
+summary: This module introduces Azure CNI networking and how to configure it in Azure Kubernetes Service (AKS). We cover some Kubernetes networking basics. Including, how certain resource types use IP addresses, how to size a cluster for a workload, and how to design a network for an AKS cluster using Azure CNI.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
   - List the key Kubernetes resource types that require network access.
   - Assess an application's needs and how those needs can affect network design.
   - Understand the process of sizing an AKS cluster for your workloads.
@@ -20,7 +20,7 @@ prerequisites: |
   Before you begin, you should have a basic understanding of the following concepts:
   - Docker containers.
   - Kubernetes.
-  - Networking basics, such as IP addresses and CIDR address ranges.
+  - Networking basics, such as IP addresses and CIDR (Classless Inter-Domain Routing) address ranges.
 iconUrl: /training/achievements/aks-network-design-azure-container-network-interface.svg
 levels:
   - intermediate

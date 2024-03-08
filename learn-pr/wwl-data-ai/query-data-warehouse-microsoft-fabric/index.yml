@@ -29,7 +29,7 @@ roles:
 products:
 - fabric
 subjects:
-- data-science
+- data-management
 - machine-learning
 units:
 - learn-wwl.query-data-warehouse-microsoft-fabric.introduction

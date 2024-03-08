@@ -34,7 +34,7 @@ prerequisites: |
   - Basic familiarity with the HTTP protocol
   - Experience using the command line, including Git operations
 subjects:
-- data-warehousing
+- data-storage
 units:
 - learn.azure.build-web-api-nodejs-express.1-introduction
 - learn.azure.build-web-api-nodejs-express.2-create-app
