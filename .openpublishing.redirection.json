@@ -34990,6 +34990,11 @@
       "source_path": "learn-pr/wwl-azure/explore-identity-services/3-explore-azure-active-directory.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/explore-identity-services/3-explore-azure-active-directory-azure-ad",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/filter-network-traffic-network-security-group-using-azure-portal/6-use-a-network-security-group-to-filter-inbound-and-outbound-network-traffic-to-and-from-azure-resources-in-an-azure-virtual-network.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/filter-network-traffic-network-security-group-using-azure-portal/6-filter-inbound-and-outbound-network-traffic",
+      "redirect_document_id": false
     }
   ]
 }
