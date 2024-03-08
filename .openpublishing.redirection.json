@@ -2436,6 +2436,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/monitor-troubleshoot-iot-solution-by-using-azure-monitor/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/use-iot-hub-apps-manage-iot-devices/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/contributor/contribute-docs-browser/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/contribute-to-docs-browser/",
       "redirect_document_id": false
