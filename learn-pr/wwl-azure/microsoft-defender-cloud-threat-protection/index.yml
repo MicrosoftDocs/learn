@@ -43,8 +43,8 @@ units:
 - learn.wwl.microsoft-defender-cloud-threat-protection.protect-your-databases-with-defender-databases
 - learn.wwl.microsoft-defender-cloud-threat-protection.managed-kubernetes
 - learn.wwl.microsoft-defender-cloud-threat-protection.container-security-microsoft-defender-containers
-- learn.wwl.microsoft-defender-cloud-threat-protection.defender-for-containers-architecture
-- learn.wwl.microsoft-defender-cloud-threat-protection.configure-microsoft-defender-for-containers-components
+- learn.wwl.microsoft-defender-cloud-threat-protection.defender-containers-architecture
+- learn.wwl.microsoft-defender-cloud-threat-protection.configure-microsoft-defender-containers-components
 - learn.wwl.microsoft-defender-cloud-threat-protection.vulnerability-assessments
 - learn.wwl.microsoft-defender-cloud-threat-protection.microsoft-defender-cloud-devops-security
 - learn.wwl.microsoft-defender-cloud-threat-protection.devops-security-support-prerequisites

@@ -37,7 +37,7 @@ The DevOps inventory table allows you to review onboarded DevOps resources and t
  -  **Advanced security status** \- Shows whether advanced security features are enabled for the DevOps resource.
      -  `On` \- Advanced security is enabled.
      -  `Off` \- Advanced security isn't enabled.
-     -  `Partially enabled` \- Certain Advanced security feature aren't enabled (for example, code scanning is off).
+     -  `Partially enabled` \- Certain Advanced security features aren't enabled (for example, code scanning is off).
      -  `N/A` \- Defender for Cloud doesn't have information about enablement.
 
 > [!NOTE]
