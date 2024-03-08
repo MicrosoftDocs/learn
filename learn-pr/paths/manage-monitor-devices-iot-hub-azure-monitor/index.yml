@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.iot.manage-monitor-devices-iot-hub-azure-monitor
 metadata:
-  title: Manage and Monitor IoT devices by using Azure IoT Hub and Azure Monitor
+  title: Manage and monitor IoT devices by using Azure IoT Hub and Azure Monitor
   description: Learn about device management patterns and capabilities, and the solution monitoring tools available in Azure and how to apply them to the IoT Hub service.
   ms.date: 01/07/2022
   author: asergaz
   ms.author: sergaz
   ms.topic: learning-path
-title: Manage and Monitor IoT devices by using Azure IoT Hub and Azure Monitor
+title: Manage and monitor IoT devices by using Azure IoT Hub and Azure Monitor
 prerequisites: |
   - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
   - Explain the features and capabilities of IoT Hub and implement secure device-to-cloud communication between an IoT device and an IoT hub instance.
