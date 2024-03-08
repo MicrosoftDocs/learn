@@ -32,7 +32,7 @@ To get started, download the software from Defender for IoT.
 1. In Defender for IoT select **Getting started > Sensor**.
 1. Select the latest software version and select **Download**.
 
-:::image type="content" source="../media/6-download-iso-file.png" alt-text="screenshot of Downloading ISO monitoring file from Defender for IoT" lightbox="../media/6-download-iso-file.png":::
+    :::image type="content" source="../media/4-download-iso-file.png" alt-text="screenshot of Downloading ISO monitoring file from Defender for IoT" lightbox="../media/4-download-iso-file.png":::<!-- add highlight box to download section -->
 
 1. Save the downloaded ISO file in a location that's accessible from your VM.
 
@@ -48,7 +48,7 @@ Connect to your VM to install the software.
 
     The installation boots and a wizard opens, for example:
 
-    :::image type="content" source="../media/6-iot-iso-boot.png" alt-text="Screenshot of the installation wizard for mounting the ISO file on the OT sensor virtual machine":::
+    :::image type="content" source="../media/4-iot-iso-boot.png" alt-text="Screenshot of the installation wizard for mounting the ISO file on the OT sensor virtual machine":::
 
 1. Select **Install iot-sensor_<version_number>**.
 
@@ -67,7 +67,7 @@ Connect to your VM to install the software.
 
 Validate your installation using the sensor's own system health checks, available to the default *admin* user.
 
-1. Sign in to the OT sensor as the `admin` user.
+1. Sign in to the OT sensor as the `admin` user. <!-- should this be in code highlight? -->
 
 1. Select **System Settings** > **Sensor management** > **System Health Check**.
 
@@ -87,7 +87,7 @@ Open a browser in the virtual machine.
 
 1. Type the IP address given at the end of the sensor installation, ```192.168.0.101```. The initial sign-in page appears, for example:
 
-    :::image type="content" source="../media/6-console-sign-in-page.png" alt-text="Screenshot of sensor console sign in":::
+    :::image type="content" source="../media/4-console-sign-in-page.png" alt-text="Screenshot of sensor console sign in":::
 1. Type the following credentials:
 
     Username: ```admin```
@@ -151,4 +151,4 @@ Verify that your sensor is connected to Azure by checking its connectivity statu
 1. Check that your sensor is listed and the status is *healthy*.
 1. Check that device data appears by selecting **Device inventory**.
 
-:::image type="content" source="../media/6-device-inventory.png" alt-text="Screenshot of the Defender for IoT Device inventory page showing recent data from the sensor":::
+:::image type="content" source="../media/4-device-inventory.png" alt-text="Screenshot of the Defender for IoT Device inventory page showing recent data from the sensor"  lightbox="../media/4-device-inventory.png" :::<!-- image is blurry -->

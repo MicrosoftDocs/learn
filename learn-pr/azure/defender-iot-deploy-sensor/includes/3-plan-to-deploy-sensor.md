@@ -5,7 +5,7 @@ Your car manufacturing organization has offices and production sites across the 
 The OT sensor deployment plan is shown in the following diagram:
 
 :::image type="content" source="../media/3-deploy-sensor-path.png" alt-text="Diagram of the sensor deployment path" border="false":::
-
+<!-- redo this image, it is now incorrect with the set up VM, must be removed-->
 This Learn Module deals with installing and activating the monitoring software on the virtual machine OT sensor.
 
 ### Check your virtual machine
