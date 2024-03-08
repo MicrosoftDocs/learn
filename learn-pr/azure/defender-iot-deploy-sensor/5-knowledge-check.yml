@@ -46,7 +46,7 @@ quiz:
     choices:
     - content: "The sensor Set Up page after sensor onboarding" 
       isCorrect: true
-      explanation: "Correct, the sensor Set Up page "
+      explanation: "Correct, the sensor Set Up page"
     - content: "It automatically downloads after the onboarding process"
       isCorrect: false
       explanation: "Incorrect, it's on the sensor Set Up page after sensor onboarding"
