@@ -2,7 +2,7 @@
 uid: learn.wwl.guided-project-langstons-ant-file-operations
 metadata:
   title: Guided project - Langstons ant with file operations
-  description: "This is a guided project module where you implement file input and output in an existing Langston's Ant simulation."
+  description: "Guided project - Langstons ant with file operations"
   ms.date: 03/08/2024
   author: wwlpublish
   ms.author: buzahid
@@ -15,13 +15,13 @@ summary: This is a guided project module where you implement file input and outp
 abstract: |
   In this module, you practice how to
 
-  -   Read data from a file
+  -   Read data from a file.
 
-  -   Write data to a file
+  -   Write data to a file.
 
-  -   Check if a file or directory exists
+  -   Check if a file or directory exists.
 
-  -   Create a new directory
+  -   Create a new directory.
 prerequisites: |
   -   Visual Studio Code installed.
 
