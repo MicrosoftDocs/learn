@@ -1,7 +1,19 @@
 
 ## View your alerts
 
-<https://learn.microsoft.com/azure/defender-for-iot/organizations/how-to-view-alerts>
+First you must identify which alerts are important to triage.
+
+1. In Defender for IoT, open **Alerts**.
+1. Using the **Search** box or the **Add filter** identify a set of alerts to filter.
+1. Select the alert by ticking the checkbox for that row.
+1. Select View full details to drill down further. For example:
+
+    :::image type="content" source="../media/7-alert-detected.png" alt-text="screenshot of a chosen alert to view the full alert details" lightbox="../media/7-alert-detected.png":::
+
+1. The alert details page provides more details about the alert, and a set of remediation steps on the Take action tab. For example:
+    :::image type="content" source="../media/7-alert-full-details.png" alt-text="Screenshot of the alert details with the Take Action box highlighted":::
+1. 
+1. 
 
 ## Select a few to triage and learn to add them to your learned network baseline
 
