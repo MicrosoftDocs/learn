@@ -30,7 +30,7 @@ To get started, download the software from Defender for IoT.
 1. In Defender for IoT select **Getting started > Sensor**.
 1. Select the latest software version and select **Download**.
 
-    :::image type="content" source="../media/4-download-iso-file.png" alt-text="screenshot of Downloading ISO monitoring file from Defender for IoT" lightbox="../media/4-download-iso-file.png":::<!-- add highlight box to download section -->
+    :::image type="content" source="../media/4-download-iso-file.png" alt-text="screenshot of Downloading ISO monitoring file from Defender for IoT" lightbox="../media/4-download-iso-file.png":::
 
 1. Save the downloaded ISO file in a location that's accessible from your VM.
 
@@ -98,18 +98,20 @@ The **Defender for IoT | Overview** page opens to the **Management interface** t
 
 ### Define network details
 
-In the **Management interface** tab, define the network details for the sensor. Even though default network values are given after the monitoring software is installed, it's best practice to give different names or settings for security purposes. For example:
+In the **Management interface** tab:
 
-|Name  |Description  |
-|---------|---------|
-|**Management interface**     | paris-sales-floor1  |
-|**IP Address**     |   172.23.42.12 |
-|**Subnet Mask**     |     255.20.98.75    |
-|**Default Gateway**     |  172.18.24.214     |
-|**DNS**     |   10.50.10.50  |
-|**Hostname**     |    iot-sensor    |
+1. Define the network details for the sensor. Even though default network values are given after the monitoring software is installed, it's best practice to give different names or settings for security purposes. For example:
 
-When you're done, select **Next: Interface configurations** to continue.
+    |Name  |Description  |
+    |---------|---------|
+    |**Management interface**     | paris-sales-floor1  |
+    |**IP Address**     |   172.23.42.12 |
+    |**Subnet Mask**     |     255.20.98.75    |
+    |**Default Gateway**     |  172.18.24.214     |
+    |**DNS**     |   10.50.10.50  |
+    |**Hostname**     |    iot-sensor    |
+
+1. When you're done, select **Next: Interface configurations** to continue.
 
 ### Select interfaces to monitor
 
