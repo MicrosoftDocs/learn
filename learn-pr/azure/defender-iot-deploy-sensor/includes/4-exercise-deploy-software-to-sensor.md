@@ -1,27 +1,25 @@
-This unit describes how to set up a virtual machine and connect it to a sensor, including configuring the network adapter and SPAN port settings. And, finally that validate the traffic mirroring is properly configured and provides the correct data to the sensor. <!-- add more context as we did for unit 3 and use active voice-->
+This unit lists the prerequisite items that you must check are configured before starting to deploy the sensor software. The unit then describes how you download the Microsoft Defender for IoT monitoring software and install it on the Virtual Machine (VM) Operation Technology (OT) sensor. Finally, the unit describes how you configure the sensor network settings, assign the end point interfaces, activate the sensor and set up the security certificates so that the sensor can securely transfer data to the Azure portal.
 
 ## Check the prerequisites
 
 The following items must be configured before starting this exercise unit:
 
-1. The firewall is properly configured. This ensures that your sensor can access the cloud on port 443, and connect to each of the endpoints.
-1. The virtual machine, VMware ESXi 5.5 or later, is configured to either of the following specifications:
+1. The firewall is properly configured, ensuring that your sensor can access the cloud on port 443, and connect to each of the endpoints.
+1. The VM, VMware ESXi 5.5 or later, is configured to either of the following specifications:
 
     | Type |Memory  | Storage  | CPU Processor |
     |----|-----|---------|----|
     | Enterprise | 32 MB RAM | 1/1.8 TB |  4 Core/ 8 Threads |
     | Line | 8 MB RAM | 100/ 500 GB |  4 Core/ 4 Threads |
 
-1. The network adapter port groups for the internet and SNAP switch are configured, so that the virtual machine is able to communicate with them.
+1. The network adapter port groups for the internet and SNAP switch are configured, so that the VM is able to communicate with them.
 1. Validate that the traffic mirroring is configured correctly.
 
 > [!NOTE]
 > You may need to use the Promiscuous mode in the VM to connect with the switches. Promiscuous mode is an operating mode and a security monitoring technique for a VM's interfaces in the same portgroup level as the virtual switch to view the switch's network traffic. Promiscuous mode is disabled by default but can be defined at the virtual switch or portgroup level.
 >
 
-This unit describes how to download the OT monitoring software from the Defender for IoT in the Azure portal. Then upload the monitoring software to the virtual machine OT sensor. Afterwards, configure the network settings so that the sensor connects with the Azure portal. Finally, assign the end point interfaces, activate the sensor and set up the security certificates.
-
-## Install Defender for IoT software
+## Install the monitoring software
 
 First download the software from Defender for IoT and then install the software on your VM.
 
@@ -36,7 +34,7 @@ To get started, download the software from Defender for IoT.
 
 1. Save the downloaded ISO file in a location that's accessible from your VM.
 
-### Install the monitoring software on the virtual machine
+### Install the monitoring software on the VM
 
 Connect to your VM to install the software.
 
@@ -83,7 +81,7 @@ Sign in to the sensor to configure your sensor's initial settings, which has fou
 
 ### Sign in to the sensor
 
-Open a browser in the virtual machine.
+Open a browser in the VM.
 
 1. Type the IP address given at the end of the sensor installation, ```192.168.0.101```. The initial sign-in page appears, for example:
 
@@ -128,7 +126,7 @@ In the **Interface Configurations** tab:
 
 The activation tab is the section to upload the activation file received from the Deployment team.
 
-After rebooting, the virtual machine opens to the **Defender for IoT | Overview** page. In the **Activation** tab:
+After rebooting, the VM opens to the **Defender for IoT | Overview** page. In the **Activation** tab:
 
 1. Select **Upload** and add the activation file.
 1. Select the **Terms and Condition** option.

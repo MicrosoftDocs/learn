@@ -6,13 +6,13 @@ The OT sensor deployment plan is shown in the following diagram:
 
 :::image type="content" source="../media/3-deploy-sensor-path.png" alt-text="Diagram of the sensor deployment path" border="false":::
 <!-- redo this image, it is now incorrect with the set up VM, must be removed-->
-This Learn Module deals with installing and activating the monitoring software on the virtual machine OT sensor.
+This Module deals with installing and activating the monitoring software on the and set up the security certificates OT sensor.
 
-### Check your virtual machine
+### Check your VM
 
-The first stage in deploying the OT sensor monitoring software is to check that your virtual machine is correctly configured to act as the OT sensor.
+The first stage in deploying the OT sensor monitoring software is to check that your VM is correctly configured to act as the OT sensor.
 
-We use the VMware ESXi virtual machine, but other systems such as HyperV could also be used. The information below is for setting up the ESXi, but you might need to refer to your virtual machine software documentation for more details.
+We use the VMware ESXi virtual machine, but other systems such as HyperV could also be used and you might need to refer to your VM documentation for more details.
 
 ## Install Defender for IoT software
 
@@ -20,7 +20,7 @@ In a real life scenario, your organization can buy configured sensors. So, you w
 
 1. Download and save the OT monitoring software installation file from the Defender for IoT setup page.
 
-1. Open the virtual machine, run the installation file, and follow the stages in the installation wizard. Once the installation is complete the default network details are displayed.
+1. Open the VM, run the installation file, and follow the stages in the installation wizard. Once the installation is complete the default network details are displayed.
 
 ## Activate and set up the sensor
 
