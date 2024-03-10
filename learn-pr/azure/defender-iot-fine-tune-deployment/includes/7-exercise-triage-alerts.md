@@ -1,3 +1,4 @@
+intro here
 
 ## View your alerts
 
@@ -10,38 +11,30 @@ First you must identify which alerts are important to triage.
 
     :::image type="content" source="../media/7-alert-detected.png" alt-text="screenshot of a chosen alert to view the full alert details" lightbox="../media/7-alert-detected.png":::
 
-1. The alert details page provides more details about the alert, and a set of remediation steps on the Take action tab. For example:
-    :::image type="content" source="../media/7-alert-full-details.png" alt-text="Screenshot of the alert details with the Take Action box highlighted":::
-1. 
-1. 
-
-## Select a few to triage and learn to add them to your learned network baseline
-
-<https://learn.microsoft.com/azure/defender-for-iot/organizations/ot-deploy/create-learned-baseline#triage-alerts>
-
-<https://learn.microsoft.com/azure/defender-for-iot/organizations/how-to-view-alerts#prerequisites>
-
 ## triage
 
+1. The alert details page provides more details about the alert, and a set of remediation steps on the Take action tab. For example:
+
+    :::image type="content" source="../media/7-alert-full-details.png" alt-text="Screenshot of the alert details with the Take Action box highlighted" lightbox="../media/7-alert-full-details.png" :::
+
+1. Other options include selecting the Learn button so that Defender for IoT knows that this is authorized traffic. And.....
+
+1. After setting the triage, you should update the alert severity and alert status.
+Give example of an alert or 2 types of alerts with different changes made. and also different severity and status changes.
+
+### add comments if possible
+
+### create supression rules if possible
+
+1. Select **Save** to keep these changes.
+
+## Select a few to triage and learn to add them to your learned network baseline
+<!-- how do we do this? Who to speak to? Vhathek?-->
+<https://learn.microsoft.com/azure/defender-for-iot/organizations/ot-deploy/create-learned-baseline#triage-alerts>
+
+<https://learn.microsoft.com/azure/defender-for-iot/organizations/how-to-view-alerts#prerequisites> not really important!
+
 <https://learn.microsoft.com/azure/defender-for-iot/organizations/how-to-view-alerts#manage-alert-status-and-triage-alerts>
-
-# knowledge check
-
-## Baseline of OT network traffic for sensors created
-
-Knowledge check (apply level): To do  
-
-## Explain the differences between different alert status options
-
-Questions about managing alerts in hybrid â€“ both on prem and in the Azure portal
-
-Apply level questions for these key takeaways?
-
-What happens during learning mode?
-<https://learn.microsoft.com/azure/defender-for-iot/organizations/ot-deploy/create-learned-baseline#understand-learning-mode>
-
-How long should learning mode last?
-<https://learn.microsoft.com/azure/defender-for-iot/organizations/ot-deploy/create-learned-baseline#learn-mode-timeline>
 
 ## End Learning mode
 <!-- Should this be part of the LM? Even though this will be done at a later time in real life, as part of the exercise it should be added to this unit.-->
@@ -59,3 +52,21 @@ After this change, any new devices or traffic trigger an alert, which is assesse
 ## Check your work
 
 What do we do to show this has been successful?
+
+possible knowledge check questions:
+
+## Baseline of OT network traffic for sensors created
+
+Knowledge check (apply level): To do  
+
+## Explain the differences between different alert status options
+
+Questions about managing alerts in hybrid â€“ both on prem and in the Azure portal
+
+Apply level questions for these key takeaways?
+
+What happens during learning mode?
+<https://learn.microsoft.com/azure/defender-for-iot/organizations/ot-deploy/create-learned-baseline#understand-learning-mode>
+
+How long should learning mode last?
+<https://learn.microsoft.com/azure/defender-for-iot/organizations/ot-deploy/create-learned-baseline#learn-mode-timeline>
