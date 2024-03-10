@@ -49,7 +49,7 @@ The Event Timeline View shows the alert event together in a list with other rece
 -->
 
 ### Update alerts
-<https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/respond-ot-alert>
+<https://learn.microsoft.com/azure/defender-for-iot/organizations/respond-ot-alert>
 After analyzing the alert details, you can update its severity or status levels. Alerts can have four different statuses in the Azure portal.
 <!-- Do we go over ther rules first or the alerts?? - I think , it is alerts only, as this is referring to the initial set up. How much of the alert status table should be included here? Only the info relevant to the Azure portal. -->
 
@@ -75,11 +75,11 @@ Alert severities on this page are listed by the severity levels shown in the Azu
 
 ## Add comments
 
-<https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-view-alerts#add-alert-comments> looks as though this has been removed on the sensor - if so this should be removed and updated. - definitely not listed in the d4iot section.
+<https://learn.microsoft.com/azure/defender-for-iot/organizations/how-to-view-alerts#add-alert-comments> looks as though this has been removed on the sensor - if so this should be removed and updated. - definitely not listed in the d4iot section.
 
 ## Create suppression rule
 
-Do we want to write about this - check out how to do this. <https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/manage-alerts?view=o365-worldwide#suppress-alerts>
+Do we want to write about this - check out how to do this. <https://learn.microsoft.com/microsoft-365/security/defender-endpoint/manage-alerts#suppress-alerts>
 
 ## Save changes
 <!-- does this need a title? I gave it because it is listed in the intro triage list!-->
@@ -100,4 +100,3 @@ Baseline - creates an environmental baseline for the normal communication behavi
 <!-- from videos i have watched, they make a report first and then use that to go through alerts, but in our documentation it just goes through alerts which should be triaged. So just wondering about that difference!! Ask Theo when he is in touch today . I will write based on the internal documentation, not MSFT videos, etc. - I dont think it makes a big difference, and the report is probably best for operational mode. -->
 
 <!-- generally I find that links go to various places, all over documentation, and are hard to know where or why you are now in a different section -->
-
