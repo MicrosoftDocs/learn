@@ -97,7 +97,7 @@ Changes are saved and the baseline alerts are updated. As the learning process c
 Your organization might also have access to the OT sensor from a virtual machine, <!-- from the sensor itself (Im not sure about this , this could be on prem) --> or through Defender for IoT. This multi access set up is called a hybrid environment. In this set up, changes made on one system synchronize across the other systems, so that updates or changes made only on one system aren't lost. When you return to the other system, you see the changes already displayed in the relevant information.
 
 ## Operational mode
-
+<!-- Should this be part of the LM? Even though this will be done at a later time in real life, as part of the exercise it should be added to this unit.-->
 Eventually, the sensor automatically changes from Learning mode to Operational mode when it detects a low level of new alerts. Alternatively, if you think the sensor is properly set up you can manually change to Operational mode. Going forward, anything that is unseen traffic creates an alert to be followed up with.
 
 Even in Operational mode, you could still receive new alerts, and must check and triage them as well. Some of these alerts are for regular network traffic, and even though the sensor isn't in the Learning mode you need to assign it as learn. The new alert is added to the baseline, which keeps the sensor up to date of new threats to your system.

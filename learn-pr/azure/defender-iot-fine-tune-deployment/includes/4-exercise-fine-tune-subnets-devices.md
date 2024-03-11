@@ -1,5 +1,4 @@
-<!--<https://youtu.be/iwEAHiN6BOI?si=xUeeL_LF2T-9zjc5&t=1544>-->
-Your sensor is now sending data to Microsoft Defender for IoT, but we need to check that the sensors are recognized, and configured correctly. The sensor initially scans the entire network and tries to identify where all of the devices should be located within the Purdue levels.
+Your sensor is now sending data to Microsoft Defender for IoT, but we need to check that the devices are recognized, and configured correctly. The sensor initially scans the entire network and tries to identify where all of the devices should be located within the Purdue levels.
 
 ## Check public IP addresses
 
