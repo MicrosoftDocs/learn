@@ -1,10 +1,10 @@
-Personalized learning is an innovative educational paradigm that shifts the focus from a standardized learning to a tailored approach, where each learners' individual characteristics such as strengths, needs, skills, and interests are at the forefront of their educational journey. This method diverges from the conventional one-size-fits-all model, promoting a more dynamic, learner-centered pathway that enhances learner engagement.
+Personalized learning is an innovative educational paradigm that shifts the focus from a standardized learning to a tailored approach. Each learners' individual characteristics such as strengths, needs, skills, and interests are at the forefront of their educational journey. This method diverges from the conventional one-size-fits-all model, promoting a more dynamic, learner-centered pathway that enhances learner engagement.
 
-By leveraging AI tools, personalized learning environments are created that not only recognize but help foster an inclusive environment for diverse needs. These environments adapt to the varying paces and styles of learning, ensuring that every learner can thrive. Trainers equipped with AI tools can develop customized training plans, activities, and assessments that resonate with the personal experiences and goals of their learners, thereby fostering a deeper connection to the material and a more profound understanding of the subject matter.
+By using AI tools, personalized learning environments are created that not only recognize but help foster an inclusive environment for diverse needs. These environments adapt to the varying paces and styles of learning, ensuring that every learner can thrive. Trainers equipped with AI tools can develop customized training plans, activities, and assessments that resonate with the personal experiences and goals of their learners. Trainers equipped with AI tools can foster a deeper connection to the material and a more profound understanding of the subject matter.
 
-The ultimate goal of personalized learning is to cultivate an educational experience that is as unique as the learners themselves. It's about creating a space where learners feel valued and understood, where their educational experience is aligned with their personal ambitions, and where technology serves as a bridge to a future where every learner has the opportunity to succeed. Personalized learning isn't just a method; it's a movement towards a more inclusive, responsive, and student-driven approach to the training environment.
+The ultimate goal of personalized learning is to cultivate an educational experience that is as unique as the learners themselves. It's about creating a space where learners feel valued and understood. This is a space where their educational experience is aligned with their personal ambitions, and where technology serves as a bridge to a future where every learner has the opportunity to succeed. Personalized learning isn't just a method; it's a movement towards a more inclusive, responsive, and student-driven approach to the training environment.
 
-## Additional resources
+## Other resources
 
 To continue your learning journey for this topic, go to:
 
@@ -22,7 +22,7 @@ Spataro J. [From breakout rooms in Microsoft Teams to AI in To Do – here's wha
 
 [Bing Chat](https://www.microsoft.com/edge/features/bing-chat?form=MT00D8). Microsoft Edge. Publication date unavailable.
 
-[Microsoft Education. Blended Learning Module: 5 Small Group Collaboration](https://www.youtube.com/watch?v=mv5N8dDRxT8&ab_channel=MicrosoftEducation). [Video] YouTube. Published June 1, 2021.
+[Microsoft Education. Blended Learning Module: Five Small Group Collaboration](https://www.youtube.com/watch?v=mv5N8dDRxT8&ab_channel=MicrosoftEducation). [Video] YouTube. Published June 1, 2021.
 
 [Configure transcription and captions for Teams meetings](/microsoftteams/meeting-transcription-captions). Microsoft. Published March 17, 2023.
 
