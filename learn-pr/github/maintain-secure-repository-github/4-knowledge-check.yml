@@ -41,9 +41,9 @@ quiz:
     - content: "Looks for known secrets or credentials committed within the repository."
       isCorrect: true
       explanation: "This approach is done to prevent the use of fraudulent behavior and to secure the integrity of any sensitive data."
-    - content: "Analyzes and finds security vulnerabilities and errors in the code in a GitHub repository ."
+    - content: "Analyzes and finds security vulnerabilities and errors in the code in a GitHub repository."
       isCorrect: false
       explanation: "Secret scanning is used to analyze and find security vulnerabilities and errors in the code in a GitHub repository, not secret scanning."
     - content: "Secret scanning uses CodeQL to query your code as data."
       isCorrect: false
-      explanation: "Incorrect. That's code scanning again, not secret scanning"
+      explanation: "Incorrect. That's code scanning again, not secret scanning."
