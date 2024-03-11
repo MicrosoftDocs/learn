@@ -65,7 +65,8 @@ Creation of sensitive mounts
 
 You can view security alerts by selecting the Security alerts tile at the top of the Defender for Cloud's overview page, or the link from the sidebar.
 
-## :::image type="content" source="../media/overview-page-alerts-links-21a0d7d2.png" alt-text="Screenshot showing an example of how to  view security alerts in Defender for Cloud's overview page."::: 
+:::image type="content" source="../media/overview-page-alerts-links-21a0d7d2.png" alt-text="Screenshot showing an example of how to  view security alerts in Defender for Cloud's overview page.":::
+
 
 The security alerts page opens:
 

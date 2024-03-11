@@ -107,13 +107,14 @@ When Defender for Cloud protects a cluster hosted in Elastic Kubernetes Service,
  -  **Defender agent**: The DaemonSet that is deployed on each node, collects signals from hosts using eBPF technology, and provides runtime protection. The agent is registered with a Log Analytics workspace, and used as a data pipeline. However, the audit log data isn't stored in the Log Analytics workspace. The Defender agent is deployed as an Arc-enabled Kubernetes extension.
  -  **Azure Policy for Kubernetes**: A pod that extends the open-source Gatekeeper v3 and registers as a web hook to Kubernetes admission control making it possible to apply at-scale enforcements, and safeguards on your clusters in a centralized, consistent manner. The Azure Policy for Kubernetes pod is deployed as an Arc-enabled Kubernetes extension. It's only installed on one node in the cluster.
 
-### :::image type="content" source="../media/architecture-amazon-elastic-kubernetes-cluster-c8ecdcff.png" alt-text="Diagram showing an example of the Amazon Elastic Kubernetes Service architecture.":::  How does agentless discovery for Kubernetes in AWS work?
+:::image type="content" source="../media/architecture-amazon-elastic-kubernetes-cluster-c8ecdcff.png" alt-text="Diagram showing an example of the Amazon Elastic Kubernetes Service architecture.":::
+ How does agentless discovery for Kubernetes in AWS work?
 
 The discovery process is based on snapshots taken at intervals:
 
 When you enable the agentless discovery for Kubernetes extension, the following process occurs:
 
- -  **Creat**e:
+ -  **Create**:
      -  The Defender for Cloud role MDCContainersAgentlessDiscoveryK8sRole must be added to the aws-auth ConfigMap of the EKS clusters. The name can be customized.<br>
  -  **Assign**: Defender for Cloud assigns the MDCContainersAgentlessDiscoveryK8sRole role the following permissions:
      -  eks:UpdateClusterConfig<br>

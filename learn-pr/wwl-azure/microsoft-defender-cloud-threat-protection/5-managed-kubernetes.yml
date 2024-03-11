@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.microsoft-defender-cloud-threat-protection.managed-kubernetes
-title: Managed Kubernetes
+title: Managed Kubernetes threat factors
 metadata:
-  title: Managed Kubernetes
-  description: "Managed Kubernetes"
-  ms.date: 03/08/2024
+  title: Managed Kubernetes threat factors
+  description: "Managed Kubernetes threat factors"
+  ms.date: 03/11/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

@@ -22,9 +22,6 @@ Validate the following endpoints are configured for outbound access so that the 
 
 2. In the Defender plans page, select **Defender for Containers** and select **Settings**.
 
-:::image type="content" source="../media/containers-settings-8873d7bf.png" alt-text="Screenshot showing how to enable Defender for Containers in the Settings page.":::
-
-
 > [!TIP]
 > If the subscription already has Defender for Kubernetes and/or Defender for container registries enabled, an update notice is shown. Otherwise, the only option will be Defender for Containers.
 
@@ -184,7 +181,9 @@ If the policy has already been assigned to a workspace, you'll see`Assignments (
 1. Select the relevant assignment.
 
 :::image type="content" source="../media/relevant-assignment-42e9a8c2.png" alt-text="Screenshot showing how to assign custom workspace assignment from the Policy definition page.":::
- 2. Select **Edit assignment**.
+
+
+2. Select **Edit assignment**.
 
 3. In the **Parameters** tab, deselect the **Only show parameters that need input or review** option.
 

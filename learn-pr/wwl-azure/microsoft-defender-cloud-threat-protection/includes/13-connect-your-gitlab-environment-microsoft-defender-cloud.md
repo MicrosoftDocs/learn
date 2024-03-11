@@ -31,7 +31,9 @@ To connect your GitHub account to Microsoft Defender for Cloud:
 6. Select **Next**: **select plans**. Configure the Defender CSPM plan status for your GitHub connector.
 
 :::image type="content" source="../media/select-plans-dd2c495f.png" alt-text="Screenshot showing how to Configure the Defender CSPM plan status for your GitHub connector.":::
-7. Select **Next**: **Configure access**.
+
+
+7. Select **Next**: **Configure access**.<br>
 
 8. Select **Authorize** to grant your Azure subscription access to your GitHub repositories. Sign in, if necessary, with an account that has permissions to the repositories that you want to protect.<br>
 
