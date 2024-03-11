@@ -8,4 +8,4 @@ In this module, you'll:
 * Review Azure storage options commonly implemented with Azure IoT solutions.
 * Examine the features provided by specific Azure storage options.
 
-By the end of this module, you will be able to describe the hot and cold storage path options for an Azure IoT solution.
+By the end of this module, you'll be able to describe the hot and cold storage path options for an Azure IoT solution.
