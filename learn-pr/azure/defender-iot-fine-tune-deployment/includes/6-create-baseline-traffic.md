@@ -11,7 +11,6 @@ The best way to create the alert baseline is following the triage process. The p
 1. Group alerts - a different filter option based on the groups created in the device map or inventory sections. (Although we haven't mentioned this properly) <!-- remove for LM-->
 1. Choose an alert, open the alert details pane, and analyze the displayed information to decide if this alert needs to be adjusted.
 1. You might also want to check the raw data files, called PCAP files. The files can be downloaded and assessed and then changes to the alerts made accordingly.<!-- remove for LM-->
-1. Add comments to alerts to communicate between team members and make decisions. <!-- how do we do this, I cannot find it in the lab? might have been removed. even from sensor-->
 1. save your changes.
 
 <!--at num3  https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-view-alerts#view-details-and-remediate-a-specific-alert this starts with 1. sign into the OT sensor. I suggest removing this line, we are already there, as mentioned above. Why would we add this here?  -->
@@ -79,10 +78,6 @@ Alert severities on this page are listed by the severity levels shown in the Azu
 
 <!-- what to do with this, it is not available on D4IoT portal? Maybe write this: Note: In the sensor portal, you can also set the alert status to Mute. But this is not available in the Azure portal. 
 |**Mute**     |  - OT network sensors <br><br>- On-premises management console      <br><br>*Unmuting* an alert is available only on the OT sensor.  |  Mute an alert when you want to close it and not see again for the same traffic, but without adding the alert allowed traffic. <br><br>For example, when the Operational engine triggers an alert indicating that the PLC Mode was changed on a device. The new mode might indicate that the PLC isn't secure, but after investigation, it's determined that the new mode is acceptable. <br><br>Muting an alert closes it, but doesn't add an item to the sensor event timeline. Detected traffic is included in data mining reports, but not when calculating data for other sensor reports. <br><br>Muting an alert is available for selected alerts only, mostly those triggered by the *Anomaly*, *Protocol Violation*, or *Operational* engines.  |-->
-
-## Add comments
-
-<https://learn.microsoft.com/azure/defender-for-iot/organizations/how-to-view-alerts#add-alert-comments> looks as though this has been removed on the sensor - if so this should be removed and updated. - definitely not listed in the d4iot section.
 
 ## Create suppression rule
 

@@ -29,10 +29,6 @@ You can also select several alerts to triage at the same time, however you aren'
 
 :::image type="content" source="../media/7-bulk-alert-triage.png" alt-text="Screenshot of bulk update of alerts, in this case updating the severity level for these alerts" lightbox="../media/7-bulk-alert-triage.png":::
 
-### Add comments if possible
-
-<!-- asked Theo and Ariel if this still exists?! -->
-
 ### Create suppression rules if possible
 
 Select **Save** to keep these changes.
