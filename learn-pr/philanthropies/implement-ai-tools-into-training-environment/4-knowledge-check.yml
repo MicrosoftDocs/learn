@@ -29,19 +29,19 @@ quiz:
       choices:
         - content: "They make the training environment modern."
           isCorrect: false
-          explanation: "Incorrect. While AI tools may modernize the training environment, this is not their primary benefit."
+          explanation: "Incorrect. While AI tools may modernize the training environment, this isn't the primary benefit of AI tools."
         - content: "They enhance creativity, productivity, and skills."
           isCorrect: true
           explanation: "Correct. AI tools are designed to enhance creativity, productivity, and skills by promoting learner engagement and deeper cognitive engagement."
-        - content: "They replace the need for additional human support, saving resources."
+        - content: "They replace the need for other human support, saving resources."
           isCorrect: false
           explanation: "Incorrect."
-    - content: "AI tools are meant to augment human trainers, not replace them. What is one limitation of AI tools?"
+    - content: "AI tools are meant to augment human trainers, not to replace them. What is one limitation of AI tools?"
       choices:
         - content: "They can't operate without human intervention."
           isCorrect: false
-          explanation: "Incorrect. While AI tools do require some human oversight, they are capable of operating independently in many areas."
-        - content: "At times they struggle with understanding context."
+          explanation: "Incorrect. While AI tools do require some human oversight, they're capable of operating independently in many areas."
+        - content: "At times, they struggle with understanding context."
           isCorrect: true
           explanation: "Correct. One of the areas where AI continues to evolve and improve is understanding context, including humor, sarcasm, and irony."
         - content: "They can't process large amounts of data."
