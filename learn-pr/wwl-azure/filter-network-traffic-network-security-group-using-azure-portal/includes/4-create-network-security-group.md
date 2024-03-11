@@ -11,6 +11,8 @@ Security rules are evaluated and applied based on the five-tuple (**1. source, 2
 
 Existing connections may not be interrupted when you remove a security rule that allowed the connection. Modifying network security group rules will only affect new connections. When a new rule is created or an existing rule is updated in a network security group, it will only apply to new connections. Existing connections are not reevaluated with the new rules.
 
+Existing connections may not be interrupted when you remove a security rule that allowed the connection. Modifying network security group rules will only affect new connections. When a new rule is created or an existing rule is updated in a network security group, it will only apply to new connections. Existing connections are not reevaluated with the new rules.
+
 ## How network security groups filter network traffic
 
 You can deploy resources from several Azure services into an Azure virtual network. You can associate zero, or one, network security group to each virtual network subnet and network interface in a virtual machine. The same network security group can be associated to as many subnets and network interfaces as you choose. The following picture illustrates different scenarios for how network security groups might be deployed to **allow network traffic to and from the internet over TCP port 80**:
@@ -50,4 +52,3 @@ You can easily view the aggregate rules applied to a network interface by **view
 
 > [!TIP]
 > Unless you have a specific reason to, we recommend that you associate a network security group to a subnet, or a network interface, but not both. Since rules in a network security group associated to a subnet can conflict with rules in a network security group associated to a network interface, you can have unexpected communication problems that require troubleshooting.
-

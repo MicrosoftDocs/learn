@@ -11,7 +11,7 @@ metadata:
   - N/A
   ai-usage: human-only
 title: Guided Project - Azure Files and Azure Blobs
-summary: In this module, you practice storing business data securely by using Azure Blob Storage and Azure Files. The lab combines both learning and hands-on practice. [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
+summary: In this module, you practice storing business data securely by using Azure Blob Storage and Azure Files. The lab combines both learning and hands-on practice.
 abstract: |
   In this module, you practice how to:
   -   Create and configure a storage account.

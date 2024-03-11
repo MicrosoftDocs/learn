@@ -28,8 +28,8 @@ This scenario has the following access management configuration:
 
 - The built-in _Contributor_ role has two sets of permissions: _Actions_ and _NotActions_.
 
-- The _Contributor_ role is assigned at different scopes to the Marketing group and Pharma-sales resource group:
+- The _Contributor_ role is assigned at different scopes to the Marketing and Pharma-sales resource groups:
 
-   - Users in the Marketing group are granted access to create or manage any Azure resource in the Pharma-sales resource group.
+   - Marketing users are granted access to create or manage any Azure resource in the Pharma-sales resource group.
 
-   - Marketing users aren't granted access to resources outside the Pharma-sales resource group, unless they have another role assignment that grants them access to the resource group.
+   - Marketing users aren't granted access to resources outside the Pharma-sales resource group.

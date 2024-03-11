@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
-  ms.prod: identity-and-access
 durationInMinutes: 7
 content: |
   [!include[](includes/5-design-implement-app-management-roles.md)]
