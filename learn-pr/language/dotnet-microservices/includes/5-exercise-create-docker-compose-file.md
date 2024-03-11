@@ -24,18 +24,18 @@ Use the docker-compose file to configure images for both the back-end and front-
     
     services: 
     
-    frontend:
-        image: store:latest
-        environment: 
-            - ProductEndpoint=http://backend:8080
-        ports:
-            - "32000:8080"
-        depends_on: 
-            - backend
-    backend:
-        image: products:latest
-        ports: 
-            - "32001:8080"
+        frontend:
+            image: store:latest
+            environment: 
+                - ProductEndpoint=http://backend:8080
+            ports:
+                - "32000:8080"
+            depends_on: 
+                - backend
+        backend:
+            image: products:latest
+            ports: 
+                - "32001:8080"
     ```
 
    This code does several things:
