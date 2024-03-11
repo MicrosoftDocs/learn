@@ -36,13 +36,13 @@ In the diagram:
 
 ### The hot path
 
-The IoT remote device pumps out *specific* telemetry. This telemetry is sent in its own message, routed by the Azure IoT Hub for instant analysis and visualization. The analysis can be done by a human operator, say, using Azure Time Series Insights. This approach is described in this module.
+The IoT remote device pumps out *specific* telemetry. This telemetry is sent in its own message, routed by the IoT Hub for instant analysis and visualization. The analysis can be done by a human operator, say, using Azure Time Series Insights. This approach is described in this module.
 
-Alternatively, the analysis could be handled by Azure Machine Learning models, via Azure Stream Analytics. This scenario is more complex, involves coding, and is described in other Azure IoT Hub Learn modules.
+Alternatively, the analysis could be handled by Azure Machine Learning models, via Azure Stream Analytics. This scenario is more complex, involves coding, and is described in other IoT Hub Learn modules.
 
 ### The cold path
 
-The IoT remote device also sends out all telemetry, and logging, data. The Azure IoT Hub directs these messages down a route to an Azure storage account. There are various storage resources available in Azure, and the next units describe these options.
+The IoT remote device also sends out all telemetry, and logging, data. The IoT Hub directs these messages down a route to an Azure storage account. There are various storage resources available in Azure, and the next units describe these options.
 
 ### Issues with lambda architecture
 

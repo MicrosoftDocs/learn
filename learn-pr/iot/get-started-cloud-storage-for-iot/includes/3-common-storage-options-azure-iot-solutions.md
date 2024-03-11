@@ -2,7 +2,7 @@ There is a wide variety of cloud storage options available to architects who are
 
 Azure storage options that are commonly found in Azure IoT Hub solutions include:
 
-* Azure Blob Storage and Azure Data Lake Gen2, which are both available as Azure IoT Hub routing endpoints.
+* Azure Blob Storage and Azure Data Lake Gen2, which are both available as IoT Hub routing endpoints.
 * Azure Cosmos DB and Azure SQL Database, which are both available as Azure Stream Analytics outputs.
 
 ## Azure Storage characteristics
@@ -17,14 +17,14 @@ Azure Storage is Microsoft's cloud storage solution for modern data storage scen
 
 ## Azure Storage as a routing endpoint
 
-There are two storage services that Azure IoT Hub can route messages to:
+There are two storage services that IoT Hub can route messages to:
 
 * Azure Blob Storage
 * Azure Data Lake Storage Gen2 (ADLS Gen2) accounts
 
-Azure Data Lake Storage accounts are hierarchical namespace-enabled storage accounts built on top of blob storage. Both of these use blobs for their storage.
+Both services use blobs for their storage. Azure Data Lake Storage accounts are hierarchical namespace-enabled storage accounts built on top of blob storage.
 
-Azure IoT Hub supports writing data to Azure Storage in the Apache Avro format and in JSON format. The default is AVRO. When using JSON encoding, you must set the contentType to application/json and contentEncoding to UTF-8 in the message system properties. Both of these values are case-insensitive. If the content encoding is not set, then Azure IoT Hub writes the messages in base 64 encoded format.
+IoT Hub supports writing data to Azure Storage in the Apache Avro format and in JSON format. The default is Avro. When using JSON encoding, you must set the `Content-Type` to `application/json` and `contentEncoding` to `UTF-8` in the message system properties. Both of these values are case-insensitive. If the content encoding is not set, then IoT Hub writes the messages in base 64 encoded format.
 
 The encoding format can only be set when the blob storage endpoint is configured; it can't be edited for an existing endpoint. To switch encoding formats for an existing endpoint, you need to delete and re-create the custom endpoint with the format you want. One helpful strategy might be to create a new custom endpoint with your desired encoding format and add a parallel route to that endpoint. In this way, you can verify your data before deleting the existing endpoint.
 
@@ -32,15 +32,15 @@ The encoding format can only be set when the blob storage endpoint is configured
 
 Each time you access data in your storage account, your client application makes a request over HTTP/HTTPS to Azure Storage. By default, every resource in Azure Storage is secured, and every request to a secure resource must be authorized. Authorization ensures that the client application has the appropriate permissions to access a particular resource in your storage account.
 
-Each authorization option is briefly described below:
+Each authorization option is briefly described as follows:
 
 * **Shared Key authorization** for blobs, files, queues, and tables. A client using Shared Key passes a header with every request that is signed using the storage account access key.
 
   Microsoft recommends that you disallow Shared Key authorization for your storage account. When Shared Key authorization is disallowed, clients must use Microsoft Entra ID or a user delegation SAS to authorize requests for data in that storage account.
 
-* **Shared access signatures** for blobs, files, queues, and tables. Shared access signatures (SAS) provide limited delegated access to resources in a storage account via a signed URL. The signed URL specifies the permissions granted to the resource and the interval over which the signature is valid. A service SAS or account SAS is signed with the account key, while the user delegation SAS is signed with Microsoft Entra credentials and applies to blobs only. For more information, see Using shared access signatures (SAS).
+* **Shared access signatures** for blobs, files, queues, and tables. Shared access signatures (SAS) provide limited delegated access to resources in a storage account via a signed URL. The signed URL specifies the permissions granted to the resource and the interval over which the signature is valid. A service SAS or account SAS is signed with the account key, while the user delegation SAS is signed with Microsoft Entra credentials and applies to blobs only.
 
-* **Microsoft Entra** integration for authorizing requests to blob, queue, and table resources. Microsoft recommends using Microsoft Entra credentials to authorize requests to data when possible for optimal security and ease of use. For more information about Microsoft Entra integration, see the articles for either blob, queue, or table resources.
+* **Microsoft Entra** integration for authorizing requests to blob, queue, and table resources. Microsoft recommends using Microsoft Entra credentials to authorize requests to data when possible for optimal security and ease of use.
 
   You can use Azure role-based access control (Azure RBAC) to manage a security principal's permissions to blob, queue, and table resources in a storage account. You can also use Azure attribute-based access control (ABAC) to add conditions to Azure role assignments for blob resources.
 

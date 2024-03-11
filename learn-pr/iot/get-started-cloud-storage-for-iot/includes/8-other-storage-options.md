@@ -1,10 +1,10 @@
-There are several other available types of Azure storage.
+There are several other Azure storage types. Some key storage types are described as follows:
 
-### Azure Files
+## Azure Files
 
 Azure Files offers fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) protocol, Network File System (NFS) protocol, and Azure Files REST API. Azure file shares can be mounted concurrently by cloud or on-premises deployments. SMB Azure file shares are accessible from Windows, Linux, and macOS clients. NFS Azure file shares are accessible from Linux clients. Additionally, SMB Azure file shares can be cached on Windows servers with Azure File Sync for fast access near where the data is being used.
 
-#### Why Azure Files is useful
+### Why Azure Files is useful
 
 Azure file shares can be used to:
 
@@ -22,7 +22,7 @@ Azure file shares can be used to:
 
 * **Containerization**: Azure file shares can be used as persistent volumes for stateful containers. Containers deliver "build once, run anywhere" capabilities that enable developers to accelerate innovation. For the containers that access raw data at every start, a shared file system is required to allow these containers to access the file system no matter which instance they run on.
 
-#### Key benefits
+### Key benefits
 
 * **Easy to use**: When an Azure file share is mounted on your computer, you don't need to do anything special to access the data: just navigate to the path where the file share is mounted and open/modify a file.
 * **Shared access**: Azure file shares support the industry standard SMB and NFS protocols, meaning you can seamlessly replace your on-premises file shares with Azure file shares without worrying about application compatibility. Being able to share a file system across multiple machines, applications, and application instances is a significant advantage for applications that need shareability.
@@ -31,13 +31,13 @@ Azure file shares can be used to:
 * **Resiliency**: Azure Files has been built from the ground up to be always available. Replacing on-premises file shares with Azure Files means you no longer have to wake up to deal with local power outages or network issues.
 * **Familiar programmability**: Applications running in Azure can access data in the share via file system I/O APIs. Developers can therefore leverage their existing code and skills to migrate existing applications. In addition to System IO APIs, you can use Azure Storage Client Libraries or the Azure Files REST API.
 
-### Azure Queue storage
+## Azure Queue storage
 
 Azure Queue Storage is a service for storing large numbers of messages. You access messages from anywhere in the world via authenticated calls using HTTP or HTTPS. A queue message can be up to 64 KB in size. A queue may contain millions of messages, up to the total capacity limit of a storage account. Queues are commonly used to create a backlog of work to process asynchronously, like in the [Web-Queue-Worker architectural style](/azure/architecture/guide/architecture-styles/web-queue-worker).
 
 For example, say you want your customers to be able to upload pictures, and you want to create thumbnails for each picture. You could have your customer wait for you to create the thumbnails while uploading the pictures. An alternative would be to use a queue. When the customer finishes their upload, write a message to the queue. Then have an Azure Function retrieve the message from the queue and create the thumbnails. Each of the parts of this processing can be scaled separately, giving you more control when tuning it for your usage.
 
-### Azure Cosmos DB for Table
+## Azure Cosmos DB for Table
 
 Azure Cosmos DB is a fully managed NoSQL and relational database for modern app development.
 
@@ -53,7 +53,7 @@ Azure Table Storage has SDKs available for .NET, Java, Python, Node.js, and Go. 
 
 Specifically, the .NET Azure Tables SDK Azure.Data.Tables offers the latest features supported by the API for Table. The Azure Tables client library can seamlessly target either Azure Table storage or API for Table service endpoints with no code changes.
 
-#### API for Table benefits
+### API for Table benefits
 
 If you currently use Azure Table Storage, you gain the following benefits by moving to the API for Table:
 

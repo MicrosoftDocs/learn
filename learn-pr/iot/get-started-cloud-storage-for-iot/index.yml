@@ -14,13 +14,13 @@ summary: This module introduces you to the Azure data storage options that are o
 abstract: |
   After you complete this module, you'll be able to:
   - Describe the lambda architecture for data storage.
-  - Describe Azure storage options commonly implemented with Azure IoT Hub solutions.
+  - Describe Azure storage options commonly implemented with IoT Hub solutions.
   - Describe the features provided by specific Azure storage options.
 prerequisites: |
   Ability to:
   - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
-  - Describe the features and capabilities of Azure IoT Hub.
-  - Describe how an Azure IoT Hub solution uses message routing and other message processing options to process message and event data, and how messaging quotas and throttling limits affect message processing.
+  - Describe the features and capabilities of IoT Hub.
+  - Describe how an IoT Hub solution uses message routing and other message processing options to process message and event data, and how messaging quotas and throttling limits affect message processing.
 iconUrl: /training/achievements/iot-cloud-storage.svg
 levels:
 - intermediate
