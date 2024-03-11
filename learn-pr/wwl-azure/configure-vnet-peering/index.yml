@@ -12,7 +12,7 @@ metadata:
   ms.service: virtual-network
   ai-usage: ai-assisted
 title: Configure Azure Virtual Network peering
-summary: Learn to configure an Azure Virtual Network peering connection and address transit and connectivity concerns. [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
+summary: Learn to configure an Azure Virtual Network peering connection and address transit and connectivity concerns.
 abstract: |
   In this module, you learn how to:
 
