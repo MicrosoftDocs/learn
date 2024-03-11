@@ -106,13 +106,13 @@ To get started:
 
 #### Generate keyword query language from natural language prompt in eDiscovery
 
-Search is one of the most used but highly time-intensive workflows in an investigation. An accurate search is crucial for the success of an investigation. Traditionally, in eDiscovery, a search happens through a condition builder or the input of a query in Keyword Query Language (KQL). While condition builder surfaces most used properties and operators, eDiscovery search is rich in functionality and supports many more properties and operators through KQL. However, there's a considerable learning curve involved in creating a KQL query, including learning all supported properties and operators as well the
+Search is one of the most used but highly time-intensive workflows in an investigation. An accurate search is crucial for the success of an investigation. Traditionally, in eDiscovery, a search happens through a condition builder or the input of a query in Keyword Query Language (KeyQL). While condition builder surfaces most used properties and operators, eDiscovery search is rich in functionality and supports many more properties and operators through KeyQL. However, there's a considerable learning curve involved in creating a KeyQL query, including learning all supported properties and operators as well the
 proper format for construction.
 
 With Copilot embedded in Purview eDiscovery (Premium), you can now:
 
-- Provide a prompt in natural language and get a query generated in KQL that they can use as-is or build onto their existing query.
-- Refine and enhance your natural language prompt for a more accurate KQL.
+- Provide a prompt in natural language and get a query generated in KeyQL that they can use as-is or build onto their existing query.
+- Refine and enhance your natural language prompt for a more accurate KeyQL.
 
 To get started:
 
@@ -129,13 +129,13 @@ To get started:
 
 1. Provide your own natural language input or select one of the suggested prompts.
 
-    :::image type="content" source="../media/ediscovery-kql-prompt-suggestions-v2.png" lightbox="../media/ediscovery-kql-prompt-suggestions-v2.png" alt-text="Screen capture of the page where you can enter a natural language prompt for your query or use a suggested prompted.":::
+    :::image type="content" source="../media/ediscovery-keyql-prompt-suggestions-v2.png" lightbox="../media/ediscovery-keyql-prompt-suggestions-v2.png" alt-text="Screen capture of the page where you can enter a natural language prompt for your query or use a suggested prompted.":::
 
-1. From the bottom of the natural language prompt box, you can select the option to refine your prompt.  Once you're satisfied with the prompt, select Generate KQL.  
+1. From the bottom of the natural language prompt box, you can select the option to refine your prompt.  Once you're satisfied with the prompt, select Generate KeyQL.  
 
-1. Copilot generates the KQL query, which you can then copy to the KQL text box.  Once copied, you can run the query or save as draft.
+1. Copilot generates the KeyQL query, which you can then copy to the KeyQL text box.  Once copied, you can run the query or save as draft.
 
-    :::image type="content" source="../media/ediscovery-generated-kql-query-v3.png" lightbox="../media/ediscovery-generated-kql-query-v3.png" alt-text="Screen capture of the page showing the generated query.  The page also highlights where you can copy the KQL so it can be saved as a draft.":::
+    :::image type="content" source="../media/ediscovery-generated-keyql-query-v3.png" lightbox="../media/ediscovery-generated-keyql-query-v3.png" alt-text="Screen capture of the page showing the generated query.  The page also highlights where you can copy the KeyQL so it can be saved as a draft.":::
 
 #### Limitations of Copilot for Purview eDiscovery
 
@@ -150,4 +150,4 @@ To get started:
 - Copilot doesn't reference prior responses when responding to new
 questions about this message.
 
-- This experience is only available on the new Microsoft Purview compliance portal (preview).
+- This experience is only available on the Microsoft Purview  portal (preview).
