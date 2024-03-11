@@ -8,22 +8,23 @@ metadata:
   ms.author: gmalc
   ms.topic: module
   ms.service: azure
+  ai-usage: human-only
 title: Detect, analyze, and recognize faces
 summary: The ability for applications to detect human faces, analyze facial features and emotions, and identify individuals is a key artificial intelligence capability.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
 
-  - Identify options for face detection, analysis, and identification
+  - Identify options for face detection, analysis, and identification.
 
-  - Understand considerations for face analysis
+  - Understand considerations for face analysis.
 
-  - Detect faces with the Computer Vision service
+  - Detect faces with the Computer Vision service.
 
-  - Understand capabilities of the Face service
+  - Understand capabilities of the Face service.
 
-  - Compare and match detected faces
+  - Compare and match detected faces.
 
-  - Implement facial recognition
+  - Implement facial recognition.
 prerequisites: |
   Before starting this module, you should already have:
 
