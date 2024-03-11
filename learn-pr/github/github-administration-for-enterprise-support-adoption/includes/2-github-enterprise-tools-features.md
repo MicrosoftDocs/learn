@@ -96,7 +96,7 @@ It's even easier to track the use of GitHub Actions by your users. Your Enterpri
 
 ### Identify organization strengths with activity statistics
 
-You can track more statistics than just feature use. A user within a GitHub Enterprise Cloud organization can learn about the overall health of their organization by using the beta feature *organization activity insights* and the feature *organization dependency insights*. As an administrator, leaders of your GitHub Enterprise Cloud organization might expect you to track these insights.
+You can track more statistics than just feature use. If you're a user within a GitHub Enterprise Cloud organization, you can learn about the overall health of your organization. The beta feature *organization activity insights* and the feature *organization dependency insights*, give you a wealth of data. As an administrator, leaders of your GitHub Enterprise Cloud organization might expect you to track these insights.
 
 Organization activity insights display issue and pull request activity, top programming languages used, and other data about where collaborators spend their time. This knowledge is useful when deciding where to direct collaborators to serve as extra resources for a complex feature deployment. Or, whether more training might expand a team's language capabilities.
 
@@ -116,9 +116,9 @@ In this context, a *tool* is usually an extension (sometimes called an *integrat
 
 You can install integrations in your personal account or in organizations that you own. You can also install GitHub Apps from a third-party in a specific repository where you have admin permissions or that your organization owns. These permissions mean that, as an administrator, you're in a position to approve or deny adding integrations or tools to the GitHub workflow.
 
-Third-party tools usually require permissions at the repository level, and these permissions might change. If a tool's developer changes its permissions and the permissions are for a repository only, you're able to review and accept the new permissions.
+Third-party tools usually require permissions at the repository level, and these permissions might change. If a tool's developer changes its permissions, and the permissions are for a repository only, then you can review and accept the new permissions.
 
-The best way to find trustworthy tools for your Enterprise organization, and to construct workflows from trustworthy tools, is to take advantage of the GitHub Marketplace's categorization system to find tools that receive independent security verification.
+The best way to find trustworthy tools for your Enterprise organization, and to construct workflows from trustworthy tools, is to take advantage of the GitHub Marketplace's categorization system. Using this system, you can find tools that receive independent security verification.
 
 Although anyone can publish an action in the GitHub Marketplace, publishers must complete a verification process in order to be listed under the **Verified Creator** category in the Marketplace. This process includes establishing a line of communication between GitHub and the publisher, demonstrating that the publisher meets basic security requirements, and verifying the publisher's domain. (However, GitHub doesn't analyze apps and actions on the GitHub Marketplace.)
 
@@ -131,11 +131,11 @@ The verified creator badge, which appears as a check mark next to the publisher'
 
 ### Tools that focus on continuous integration and continuous delivery
 
-Your team probably places a high priority on building a "CI/CD pipeline"--a series of automated workflows that help DevOps teams cut down on manual tasks:
+Your team probably places a high priority on building a *CI/CD pipeline*--a series of automated workflows that help DevOps teams cut down on manual tasks:
 
-- Continuous integration (CI) automatically **builds**, **tests**, and **integrates** code changes within a shared repository; then
-- Continuous delivery (CD) automatically **delivers** code changes to production-ready environments for approval; or
-- Continuous deployment (CD) automatically **deploys** code changes to customers directly.
+- Continuous integration (CI) automatically **builds**, **tests**, and **integrates** code changes within a shared repository.
+- Then, continuous delivery (CD) automatically **delivers** code changes to production-ready environments for approval.
+- Or, continuous deployment (CD) automatically **deploys** code changes to customers directly.
 
 Your administrative duties are likely to extend to approving, implementing, and maintaining tools that focus entirely on improving this pipeline. With that in mind, GitHub Enterprise organizations that make the most of their GitHub Actions minutes and automatic security and version updates choose tools that meet these criteria:
 
