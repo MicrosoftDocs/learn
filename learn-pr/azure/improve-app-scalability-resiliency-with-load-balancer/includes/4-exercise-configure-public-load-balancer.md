@@ -13,7 +13,7 @@ First, deploy your patient-portal application across two virtual machines in a s
 
 To deploy the patient portal web application:
 
-1. Create a new resource group. In this example, the resource group is named **learn-ts-loadbalancer-rg** in the **East US** location. Replace **[sandbox resource group name]** with your own resource group name in step 3.
+1. Create a new resource group. In step 3 replace **[sandbox resource group name]** with your own resource group name.
 
 1. Run the following `git clone` command in Azure Cloud Shell. The command clones the repo that contains the source for the app and runs the setup script from GitHub. Then changes to the directory of the cloned repo.
 
