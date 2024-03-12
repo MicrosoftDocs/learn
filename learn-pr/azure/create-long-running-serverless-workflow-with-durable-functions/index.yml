@@ -29,7 +29,7 @@ products:
 - azure
 - azure-functions
 subjects:
-- serverless-compute
+- serverless-computing
 units:
 - learn.azure-create-long-running-serverless-workflow-with-durable-functions.1-introduction
 - learn.azure-create-long-running-serverless-workflow-with-durable-functions.2-what-is-durable-functions
