@@ -4,9 +4,9 @@ In this module, you learned how to deploy an OT sensor and check that the data a
 - How to define the sensor network settings so that it can connect to the interfaces at the site.
 - How to configure the interfaces and add the activation file.
 - Which certificate should be used and how to add one to the sensor.
-- Verify that the data appears in the Microsoft Defender for IoT site.
+- How to verify that the data appears in the Microsoft Defender for IoT site.
 
-Deploying the OT sensor, activating the monitoring software, and configuring the interfaces is another step in protecting the equipment in your organization. <!--continue the goal of achieving high level security to the connected devices and equipment in your organization.-->
+The deployment tasks you completed in this module are an important step in protecting your organization's equipment and improving your security posture.
 
 ## Learn more
 

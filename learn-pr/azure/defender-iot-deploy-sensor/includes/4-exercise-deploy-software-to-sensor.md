@@ -1,8 +1,8 @@
-This unit lists the prerequisite items that you must check are configured before starting to deploy the sensor software. The unit then describes how you download the Microsoft Defender for IoT monitoring software and install it on the Virtual Machine (VM) Operation Technology (OT) sensor. Finally, the unit describes how you configure the sensor network settings, assign the end point interfaces, activate the sensor and set up the security certificates so that the sensor can securely transfer data to the Azure portal.
+This unit lists the site items that you must check are configured before starting to deploy the sensor software. The unit then describes how you download the Microsoft Defender for IoT monitoring software and install it on the Virtual Machine (VM) Operation Technology (OT) sensor. Finally, the unit describes how you configure the sensor network settings, assign the end point interfaces, activate the sensor and set up the security certificates so that the sensor can securely transfer data to the Azure portal.
 
-## Check the prerequisites
+## Prerequisites
 
-The following items must be configured before starting this exercise unit:
+Before you start the exercise, check that:
 
 1. The firewall is properly configured, ensuring that your sensor can access the cloud on port 443, and connect to each of the endpoints.
 1. The VM, VMware ESXi 5.5 or later, is configured to either of the following specifications:
@@ -13,10 +13,10 @@ The following items must be configured before starting this exercise unit:
     | Line | 8 MB RAM | 100/ 500 GB |  4 Core/ 4 Threads |
 
 1. The network adapter port groups for the internet and SNAP switch are configured, so that the VM is able to communicate with them.
-1. Validate that the traffic mirroring is configured correctly.
+1. The traffic mirroring is configured correctly.
 
 > [!NOTE]
-> You may need to use the Promiscuous mode in the VM to connect with the switches. Promiscuous mode is an operating mode and a security monitoring technique for a VM's interfaces in the same portgroup level as the virtual switch to view the switch's network traffic. Promiscuous mode is disabled by default but can be defined at the virtual switch or portgroup level.
+> You may need to use Promiscuous mode in the VM to connect with the switches. Promiscuous mode is an operating mode and a security monitoring technique for a VM's interfaces in the same port group level as the virtual switch to view the switch's network traffic. Promiscuous mode is disabled by default but can be defined at the virtual switch or port group level.
 >
 
 ## Install the monitoring software
@@ -50,7 +50,9 @@ Connect to your VM to install the software.
 
 1. Select **Install iot-sensor_<version_number>**.
 
-    The installation process takes 20-30 minutes. When completed the default network details are shown. While the default IP, subnet, and gateway addresses are identical with each installation, the UID is unique for each appliance. For example:
+    The installation process takes 20-30 minutes. When the wizard completes the installation, it shows the default network details.
+
+    While the default IP, subnet, and gateway addresses are identical with each installation, the UID is unique for each appliance. For example:
   
     ```bash
     IP: 192.168.0.101, 
@@ -77,7 +79,7 @@ Validate your installation using the sensor's own system health checks, availabl
 
 ## Activate and set up the sensor
 
-Sign in to the sensor to configure your sensor's initial settings, which has four stages.
+Sign in to the sensor to configure your sensor's initial settings. The setup has four stages.
 
 ### Sign in to the sensor
 
@@ -91,7 +93,7 @@ Open a browser in the VM.
     Username: ```admin```
     Password: ```admin```
 
-1. Select Login.
+1. Select **Login**.
 
 The **Defender for IoT | Overview** page opens to the **Management interface** tab. Now you start to configure the settings.
 <!-- add screenshot of the Overview page here - can we get from THeo or Ariel or just leave this out?-->
@@ -100,7 +102,7 @@ The **Defender for IoT | Overview** page opens to the **Management interface** t
 
 In the **Management interface** tab:
 
-1. Define the network details for the sensor. Even though default network values are given after the monitoring software is installed, it's best practice to give different names or settings for security purposes. For example:
+1. Define the network details for the sensor. It's best practice to give different names or settings for security purposes, even though you were given default network values after the monitoring software installation. For example:
 
     |Name  |Description  |
     |---------|---------|
@@ -115,11 +117,11 @@ In the **Management interface** tab:
 
 ### Select interfaces to monitor
 
-The Interface configurations tab shows all of the interfaces detected by the sensor.
+The **Interface configurations** tab shows all of the interfaces detected by the sensor.
 
 In the **Interface Configurations** tab:
 
-1. Choose the interface to be monitored by setting the toggle button to **Enable**.
+1. Select the interface to be monitored by setting the toggle button to **Enable**.
 1. Select **Save** to save your changes.
 1. Select **Next: Reboot >** to continue.
 1. Select **Start reboot** to reboot your sensor machine.

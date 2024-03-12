@@ -6,21 +6,23 @@ The OT sensor deployment plan is shown in the following diagram:
 
 :::image type="content" source="../media/3-deploy-sensors.png" alt-text="Diagram of the sensor deployment path" border="false":::
 
-This Module deals with installing and activating the monitoring software on the and set up the security certificates OT sensor.
+This module deals with installing and activating the monitoring software on the OT sensor.
 
 ### Check your VM
 
 The first stage in deploying the OT sensor monitoring software is to check that your VM is correctly configured to act as the OT sensor.
 
-We use the VMware ESXi virtual machine, but other systems such as HyperV could also be used and you might need to refer to your VM documentation for more details.
+We use the VMware ESXi virtual machine, but you can use other systems, such as HyperV. You might need to refer to your VM documentation for more details.
 
 ## Install Defender for IoT software
 
-In a real life scenario, your organization can buy configured sensors. So, you wouldn't need to complete this step. But for this module, to install software in the VM, you complete the following steps in the exercise unit:
+In the next unit, you complete the following steps to install software in the VM:
 
 1. Download and save the OT monitoring software installation file from the Defender for IoT setup page.
 
-1. Open the VM, run the installation file, and follow the stages in the installation wizard. Once the installation is complete the default network details are displayed.
+1. Open the VM, run the installation file, and follow the stages in the installation wizard.
+
+Once the installation completes, the default network details are displayed in the VM. <!-- check with Theo where this is displayed?-->
 
 ## Activate and set up the sensor
 
@@ -46,14 +48,14 @@ In the **Management interface** tab, you define the network details that connect
 
 The **Interface configurations** tab shows each interface on the sensor, which should match the list of endpoints in the network diagram. You set up each interface individually.
 
-Select and enable each interface to be monitored. If you're unsure which interface to use, select the :::image type="icon" source="../media/3-blink-interface.png" alt-text="blink interface icon"::: Blink physical interface LED button to have the selected port blink on your machine. Select any of the interfaces that are connected to your switch.
+Select and enable each interface to be monitored. If you're unsure which interface to use, select the :::image type="icon" source="../media/3-blink-interface.png" alt-text="blink interface icon"::: **Blink physical interface** LED button to have the selected port blink on your machine. Select any of the interfaces that are connected to your switch.
 
 ### Upload activation file
 
-In the **Activation** tab upload the activation file, provided by the deployment team.
+In the **Activation** tab upload the activation file you received from the deployment team.
 
 ### Define certificate settings
 
-In the **Certificates** tab, deploy the SSL/TLS certificate settings. It's best practice to use a CA-signed certificate that's more secure, however in our test environment the self-signed certificate is secure enough.
+In the **Certificates** tab, deploy the SSL/TLS certificate settings. It's best practice to use a CA-signed certificate that's more secure, however for this learn module the self-signed certificate is secure enough.
 
-Once these tasks are performed the sensor deployment process is complete and it can send data to the Azure portal.
+Once you complete these tasks the sensor deployment process is complete and the sensor starts sending data to the Azure portal.

@@ -12,7 +12,7 @@ You’ve been tasked with installing Defender for IoT monitoring software on you
 
 In this module you'll complete the following tasks:
 
-- **Check the virtual machine**: Ensire that the VM is configured correctly and runs the OT sensor.
+- **Check the virtual machine**: Ensure that the VM is configured correctly and runs the OT sensor.
 - **Download the monitoring software**: Download the ISO file from the Azure portal.
 - **Install monitoring software**: Install the ISO file on the sensor.
 - **Set up the interface**: Define the interface settings for each sensor end point to be monitored.
