@@ -9,10 +9,11 @@ metadata:
   ms.topic: interactive-tutorial
   ms.custom:
   - N/A
+  ms.service: azure-backup
+  ai-usage: ai-assisted
 title: Configure file and folder backups
 summary: |
   Learn how to configure backup and restore policies that meet your company's regulatory needs.
-  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   In this module, you learn how to:
   - Identify features and usage cases for Azure Backup.

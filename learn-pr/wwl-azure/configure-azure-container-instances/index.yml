@@ -9,10 +9,11 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
+  ms.service: azure-container-instances
+  ai-usage: ai-assisted
 title: Configure Azure Container Instances
 summary: |
   Learn how to configure Azure Container Instances including container groups.
-  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   In this module, you learn how to:
   - Identify when to use containers versus virtual machines.

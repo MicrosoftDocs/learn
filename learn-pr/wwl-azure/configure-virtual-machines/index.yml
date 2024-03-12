@@ -9,10 +9,11 @@ metadata:
   ms.topic: interactive-tutorial
   ms.custom:
   - N/A
+  ms.service: azure-virtual-machines
+  ai-usage: ai-assisted
 title: Configure virtual machines
 summary: |
   Learn how to configure virtual machines including sizing, storage, and connections.
-  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   In this module, you learn how to:
   *   Determine the responsibilities of cloud service providers and customers in a cloud computing environment.
