@@ -36,8 +36,6 @@ The following table shows the enforced throttles for messaging operations that a
 | Maximum number of concurrently connected device streams | 50 | 50 | 50 |
 | Maximum device stream data transfer (aggregate volume per day) | 300 MB | 300 MB | 300 MB |
 
-¹Throttling meter size is 4 KB. Throttling is based on request payload size only.
-
 ### Throttling details
 
 * The meter size determines at what increments your throttling limit is consumed. If your direct call's payload is between 0 KB and 4 KB, it is counted as 4 KB. You can make up to 40 calls per second per unit before hitting the limit of 160 KB/sec/unit.
