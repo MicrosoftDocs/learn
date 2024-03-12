@@ -8,7 +8,6 @@ metadata:
   ms.author: jushiman
   ms.topic: unit
   ms.custom:
-    - devx-track-azurecli
 title: What is Azure Batch?
 durationInMinutes: 6
 content: |

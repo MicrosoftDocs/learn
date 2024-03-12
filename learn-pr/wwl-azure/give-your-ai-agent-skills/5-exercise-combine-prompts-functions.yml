@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.give-your-ai-agent-skills.exercise-combine-prompts-functions
+title: Exercise - Combine prompts and functions
+metadata:
+  title: Exercise - Combine prompts and functions
+  description: "Exercise - Combine prompts and functions"
+  ms.date: 02/27/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-combine-prompts-functions.md)]

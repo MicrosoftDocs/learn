@@ -36,8 +36,6 @@ products:
 - dotnet-maui
 - dotnet
 - vs
-subjects:
-- development-tools
 units:
 - learn.build-blazor-hybrid.bh-introduction
 - learn.build-blazor-hybrid.bh-understand-blazor-hybrid

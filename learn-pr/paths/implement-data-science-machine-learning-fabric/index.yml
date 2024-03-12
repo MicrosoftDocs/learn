@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/17/2023
   author: madiepev
   ms.author: madiepev
-  ms.topic: interactive-tutorial
+  ms.topic: learning-path
   ms.prod: learning-power-bi
 title: Implement data science and machine learning for AI in Microsoft Fabric
 prerequisites: |
@@ -27,7 +27,7 @@ subjects:
 - data-analytics
 - data-engineering
 - data-integration
-- data-science
+- data-management
 modules:
 - learn.wwl.get-started-data-science-fabric
 - learn-wwl.explore-data-for-data-science-microsoft-fabric
