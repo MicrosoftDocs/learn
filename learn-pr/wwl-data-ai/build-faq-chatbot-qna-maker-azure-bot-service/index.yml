@@ -26,7 +26,7 @@ roles:
 products:
 - azure-bot-service
 subjects:
-- chatbot
+- chatbots
 units:
 - learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service.introduction
 - learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service.understand-question-answering

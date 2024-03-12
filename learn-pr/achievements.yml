@@ -832,6 +832,16 @@ achievements:
   title: Set up an IoT Edge Gateway
   summary: Set up an IoT Edge Gateway
   iconUrl: /training/achievements/set-up-iot-edge-gateway.svg
+- uid: learn.wwl.monitor-troubleshoot-iot-solution-by-using-azure-monitor.trophy
+  type: trophy
+  title: Monitor and troubleshoot an IoT solution by using Azure Monitor
+  summary: You will learn about the solution monitoring tools available in Azure and how to apply them to the IoT Hub service, and how to create event logs that can be used to help troubleshoot your solution.
+  iconUrl: /training/achievements/azure-monitor-troubleshoot-solution.svg
+- uid: learn.wwl.manage-iot-devices-by-using-iot-hub-apps.trophy
+  type: trophy
+  title: Manage IoT devices by using IoT Hub and apps
+  summary: You will learn about device management patterns and the capabilities for device management, including bulk device management that can be implemented using features of IoT Hub and by developing code.
+  iconUrl: /training/achievements/iot-hub-devices-apps.svg
 - uid: learn.iot.automate-iot-devices-management-with-azure-iot-hub.badge
   type: badge
   title: Automate IoT devices management with Azure IoT Hub
