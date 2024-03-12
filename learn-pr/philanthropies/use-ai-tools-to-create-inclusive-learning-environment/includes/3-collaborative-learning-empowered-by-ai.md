@@ -2,7 +2,7 @@ AI-powered communication and collaboration tools are redefining education. These
 
 Collaborative learning is a powerful tool that allows you to engage with learners. When used within a small circle of learners, collaborative learning can enhance engagement, encourage peer learning, and accommodate diverse learners' skills. With the integration of AI, collaborative learning becomes even more effective and efficient.
 
-Collaborative learning can be done through synchronous or asynchronous learning. Considering how prevalent blended learning becomes, you need to find a way to create an online learning environment that effectively supports collaboration. One way to facilitate collaborative learning is by using technology such as Microsoft Teams. By using these tools, learners can collaborate with each other in real-time, share ideas, and work together on projects.
+Collaborative learning can be done through synchronous or asynchronous learning. Considering how prevalent blended learning becomes, you need to find a way to create an online learning environment that effectively supports collaboration. One way to facilitate collaborative learning is by using technology such as Microsoft Teams. Learners can collaborate with each other in real-time, share ideas, and work together on projects by using these tools.
 
 Features such as virtual breakout rooms, collaborative document editing, and AI-driven insights allow you to create dynamic learning environments in which learners can collaborate seamlessly, regardless of their physical location. By moving communication online, learners can keep their project records organized and minimize miscommunication.
 
