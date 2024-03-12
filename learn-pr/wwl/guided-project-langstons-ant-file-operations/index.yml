@@ -17,45 +17,25 @@ summary: This is a guided project module where you implement file input and outp
 abstract: |
   In this module, you practice how to
 
-  -
+  -   Read data from a file.
 
-  Read data from a file.
+  -   Write data to a file.
 
-  -
+  -   Check if a file or directory exists.
 
-  Write data to a file.
-
-  -
-
-  Check if a file or directory exists.
-
-  -
-
-  Create a new directory.
+  -   Create a new directory.
 prerequisites: |
-  -
+  -   Visual Studio Code installed.
 
-  Visual Studio Code installed.
+  -   A GitHub account to clone code repositories.
 
-  -
+  -   Basic knowledge of the Visual Studio IDE and project structure.
 
-  A GitHub account to clone code repositories.
+  -   Basic understanding of the C# programming language.
 
-  -
+  -   Familiarity with classes, abstract classes, and inheritance.
 
-  Basic knowledge of the Visual Studio IDE and project structure.
-
-  -
-
-  Basic understanding of the C# programming language.
-
-  -
-
-  Familiarity with classes, abstract classes, and inheritance.
-
-  -
-
-  Familiarity with file operations in C#.
+  -   Familiarity with file operations in C#.
 iconUrl: /training/achievements/generic-badge.svg
 hidden: true
 levels:
