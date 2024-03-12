@@ -46,7 +46,7 @@ Connect to your VM to install the software.
 
     The installation boots and a wizard opens, for example:
 
-    :::image type="content" source="../media/4-iot-iso-boot.png" alt-text="Screenshot of the installation wizard for mounting the ISO file on the OT sensor virtual machine":::
+    :::image type="content" source="../media/4-iot-iso-boot.png" alt-text="Screenshot of the installation wizard for mounting the ISO file on the OT sensor virtual machine" width="400px":::
 
 1. Select **Install iot-sensor_<version_number>**.
 
