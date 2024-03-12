@@ -22,17 +22,17 @@ quiz:
     - content: Script analysis
       isCorrect: true
       explanation: Correct. The script analysis capability of Copilot in Microsoft Defender XDR provides security teams added capacity to inspect scripts and code without using external tools. This capability also reduces complexity of analysis, minimizing challenges and allowing security teams to quickly assess and identify a script as malicious or benign.
-    - content: Generate KQL queries
+    - content: Generate KQL queries.
       isCorrect: false
       explanation: Incorrect. Generate KQL queries is a feature that allows threat hunters or security analysts to make a request or ask a question in natural language, and Copilot generates a KQL query that corresponds to the request using the advanced hunting data schema.
-  - content: A data security admin wants to review a DLP alert summary using Microsoft Copilot in Microsoft Purview. What are the steps they should follow?
+  - content: An organization's legal compliance team uses Microsoft Purview eDiscovery tools for internal and external investigations and is planning to use Copilot for Security to help make them more productive and aid in their investigations.  Which of the following statements is true regarding Copilot use with eDiscovery?
     choices:
-    - content: Sign in to the compliance portal and go to the Data Loss Prevention solution. Navigate to the alerts queue and select the alert you want to review. Select 'Get a summary from Security Copilot.'
+    - content: Copilot functionality is not supported with Microsoft Purview eDiscovery.
+      isCorrect: false
+      explanation: Incorrect. Copilot for Security functionality is supported with Microsoft Purview eDiscovery (Premium).
+    - content: The organization must be licensed to use Microsoft Purview eDiscovery (Premium).
       isCorrect: true
-      explanation: Correct. These are the correct steps for reviewing a DLP alert summary using Copilot in Microsoft Purview.
-    - content: Navigate to the Insider Risk Management solution and select the alert you want to review.
+      explanation: Correct. To use Copilot for Security functionality with Microsoft Purview eDiscovery, the organization must be licensed for Microsoft Purview eDiscovery (Premium).
+    - content: The organization needs to be licensed for Microsoft Purview eDiscovery (Standard), as a minimum.
       isCorrect: false
-      explanation: Incorrect. This answer describes the steps for reviewing an Insider Risk Management alert, not a DLP alert.
-    - content: Navigate to Communication Compliance in the compliance portal and select a policy match to view message content.
-      isCorrect: false
-      explanation: Incorrect. This answer describes the steps for getting a contextual summary of content in a Communication Compliance policy, not reviewing a DLP alert.
+      explanation: Incorrect. To use Copilot for Security functionality with Microsoft Purview eDiscovery, the organization must be licensed for Microsoft Purview eDiscovery (Premium).
