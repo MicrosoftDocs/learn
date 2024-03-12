@@ -4,19 +4,17 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/14/2022
-  author: wwlpublish
-  ms.author: cahowd
+  ms.date: 02/22/2024
+  author: kgremban
+  ms.author: kgremban
   ms.topic: unit
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Within an IoT solution, what is message enrichment?"
+  - content: "Within an Azure IoT Hub solution, what is message enrichment?"
     choices:
     - content: "An IoT hub feature that enables users to direct device messages to a service endpoint."
       isCorrect: false
