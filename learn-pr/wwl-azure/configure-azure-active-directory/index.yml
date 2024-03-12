@@ -14,8 +14,6 @@ metadata:
 title: Configure Microsoft Entra ID
 summary: |
   Learn how to configure Microsoft Entra ID, including features like Microsoft Entra join and self-service password reset.
-
-  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   In this module, you learn how to:
 

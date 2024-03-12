@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-hdinsight-aks-data-transformation-flink.introduction  
+title: Introduction
+metadata:
+  unitType: introduction  
+  title: Introduction
+  description: Apache Flink is a powerful framework and distributed processing engine for stateful computations over both unbounded and bounded data streams.
+  ms.date: 02/22/2024  
+  author: sairamyeturi 
+  ms.author: sairamyeturi
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/introduction.md)]
