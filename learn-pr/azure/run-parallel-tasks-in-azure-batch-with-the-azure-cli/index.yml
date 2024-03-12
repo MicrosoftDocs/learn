@@ -28,7 +28,7 @@ products:
 - azure-batch
 subjects:
 - cloud-computing
-- high-performance-computing
+- infrastructure
 units:
 - learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli.introduction
 - learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli.what-is-azure-batch
