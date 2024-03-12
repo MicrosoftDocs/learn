@@ -54,7 +54,7 @@ Common scenarios in which AEC organizations benefit from mixed reality on Micros
 * **3D plan and model demonstrations**: Empower project leaders, designers, and engineers and improve customer service and sales with 3D demonstrations and immersive visualizations.
 Self-guided learning: Equip onsite workers to view task instructions, essential data, and model visualizations while in the flow of work, thereby increasing speed, quality, and safety.
 
-*"HoloLens 2 provides an exponential increase in knowledge transfer compared to text or picture documentation,. With the 3D interface, you can see a vehicle in the correct location and spatial orientation, and you can pull away or hide the parts you don’t need to see and tear down a virtual model of a car in a fraction of the time it would take with a real one."* — Porsche. Read the full customer story<sup>2</sup>.
+*"HoloLens 2 provides an exponential increase in knowledge transfer compared to text or picture documentation. With the 3D interface, you can see a vehicle in the correct location and spatial orientation, and you can pull away or hide the parts you don’t need to see and tear down a virtual model of a car in a fraction of the time it would take with a real one."* — Porsche. Read the full customer story<sup>2</sup>.
 
 #### Healthcare organizations
 
