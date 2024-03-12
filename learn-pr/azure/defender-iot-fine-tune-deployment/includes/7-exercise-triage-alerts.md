@@ -5,21 +5,21 @@ Your sensor is now fine-tuned so that the devices are correctly identified, conf
 First, identify which alerts are important to triage.
 
 1. In Defender for IoT, open **Alerts**.
-1. Using the **Search** box or **Add filter** filter a set of alerts.
+1. Using the **Search** box or **Add filter** to filter/ display a set of alerts.
 1. Select the alert by ticking the checkbox for that row.
 1. Select **View full details** to drill down further and see the remediation suggestions.<!-- with this last few words, the image should be of the remediation?? but here is a different image. and the remediation is in the next section. What should I do for this? --> For example:
 
     :::image type="content" source="../media/7-alert-detected.png" alt-text="screenshot of a chosen alert to view the full alert details" lightbox="../media/7-alert-detected.png":::
 
-## Triage
+## Triage an alert
 
-1. The alert details page provides more details about the alert. In the **Take action** Tab is the list of the remediation steps to be taken to fix the problem. For example:
+1. The **Alert details** page provides more details about the alert. The **Take action** Tab lists the remediation steps or options needed to fix the problem. For example:
 
     :::image type="content" source="../media/7-alert-full-details.png" alt-text="Screenshot of the alert details with the Take Action box highlighted" lightbox="../media/7-alert-full-details.png" :::
 
 1. Other options include selecting the Learn button so that Defender for IoT knows that the traffic is authorized. And.....
 
-1. To complete the triage, you should update the alert severity and alert status.
+1. To complete the triage, update the alert severity and alert status.
 
 Give example of an alert or two types of alerts with different changes made. And also different severity and status changes.
 

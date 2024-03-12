@@ -34,11 +34,14 @@ As alerts arrive, you check that they're correctly assigned. In some cases durin
 In the early stages, you need to spend more time checking the alerts. Depending on the size and complexity of the system the learning mode could last from 2-6 weeks, and automatically turn offs when the sensor detects a decrease in newly detected alerts. However, you can also manually turn off the learning mode if you think that alerts produced accurately represent the network activity.
 
 ### End the learning mode
+<!-- Should this be part of the LM? Even though this will be done at a later time in real life, as part of the exercise should it be added to this unit?-->
+The learning mode will turn off when the sensor detects a decrease in the number of new alerts produced, which is typically 2-6 weeks after deployment. You can also turn off the learning mode manually when you see that the alerts accurately reflect your network activity. Going forward, anything that is new traffic creates an alert to be followed up with.
 
-The learning mode will turn off when the sensor detects a decrease in the number of new alerts produced, which is typically 2-6 weeks after deployment. You can also turn off the learning mode manually when you feel that the alerts accurately reflect your network activity.
-
-Even in the *operation* mode, new inaccurate alerts might be generated. You can assign these inaccurate alerts a learning status and the sensor adds them to the existing baseline alerts. This ensures that your alerts baseline is up to date, doesn't miss new types of suspicious traffic and keeps your network and devices safe.
+Even in the *operation* mode, you could still receive new alerts, and must check and triage them as well. Some of these new alerts are for regular network traffic. Even though the sensor isn't in the Learning mode you can assign these inaccurate alerts a learning status so that the sensor adds them to the existing baseline alerts. This ensures that your alerts baseline is up to date, doesn't miss new types of suspicious traffic and keeps your network and devices safe.
 
 ## Outcome of this process
 
-When you complete the triage process and the operational mode is enabled, your deployment of the OT sensor to Defender for IoT is complete. The sensor now has a verified baseline of alerts and understands the types of traffic that is considered safe and secure. In the future any network traffic that doesn't match the baseline triggers a new alert. You're able to set these alerts to be learnt by the sensor as well, and are added to create a new and improved baseline.
+When you complete the triage process, the **Alerts** page should show the updated status of the alerts.
+
+OR
+When you complete the triage process and the operational mode is enabled, your deployment of the OT sensor to Defender for IoT is complete. The sensor now has a verified baseline of alerts and understands the types of traffic that are considered safe and secure. <!-- do we need to add anything to this? Is there a list we can show that looks different from the original alerts list, or should we show a shortened list? Or a list of the baseline alerts? Or for this LM should the OUtcome be a shortened alert list? AN empty list? -->
