@@ -41,7 +41,7 @@ To solve that problem, we'll externalize the state to an application that specia
 3. Create a new database using the `az cosmosdb mongodb database create` command. In this example, the database is named *contoso-ship-manager*.
 
     ```azurecli-interactive
-    az cosmosdb mongodb database create ---account-name $COSMOSDB_ACCOUNT_NAME --resource-group $RESOURCE_GROUP --name contoso-ship-manager
+    az cosmosdb mongodb database create --account-name $COSMOSDB_ACCOUNT_NAME --resource-group $RESOURCE_GROUP --name contoso-ship-manager
     ```
 
 4. Verify the database was successfully created using the `az cosmosdb mongodb database list` command.
@@ -76,7 +76,7 @@ Now that you've created an external state to store all the data from the ship ma
         --node-count 3 \
         --generate-ssh-keys \
         --node-vm-size Standard_B2s \
-        --enable-app-routing
+        --enable-addons http_application_routing
     ```
 
     The creation process can take a few moments to complete.
