@@ -5,7 +5,7 @@ The scenarios available through the embedded experiences are determined by the M
 
 In the standalone experience, Copilot does some processing to determine which of its many capabilities is best suited to respond to your prompt. In the embedded experience, because Copilot is available in the specific product, Copilot is able to invoke the product specific capabilities directly, providing processing efficiency. 
 
-The embedded experience is also a great place to start a security investigation. For example, as an analyst using Microsoft Defender XDR, you're likely to spend a good amount time in the incidents page. From the incident page, you can select an alert and immediately get a summary of that incident. Depending on what you learn you may determine that a deeper investigation is needed. In this scenario, you can easily transition to the standalone experience to pursue a more detailed, cross product investigation that brings to bear all the Copilot capabilities enabled for your role. 
+The embedded experience is also a great place to start a security investigation. For example, as an analyst using Microsoft Defender XDR, you're likely to spend a good amount time in the incidents page. From the incident page, you can select an alert and immediately get a summary of that incident. Depending on what you learn you may determine that a deeper investigation is needed. In this scenario, you can easily transition to the standalone experience to pursue a more detailed, cross product investigation that brings to bear all the Copilot capabilities enabled for your role.
 
 In this module, you learn about the scenarios supported by the embedded experiences of Microsoft Copilot for Security.
 
