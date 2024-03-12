@@ -12,14 +12,14 @@ Put on your learning gear and join this challenge where you'll be **creating a B
 ![Screenshot showing an introduction slide to a startup called wildsense.](../media/wildsense-intro.png)
 
 > [!NOTE]
-> In this challenge project, you will use Bing Chat to create a Business Model for your existing startup or a fictitious startup.
+> In this challenge project, you will use Microsoft Copilot to create a Business Model for your existing startup or a fictitious startup.
 
 ## Alternative Tools
 
-You need Bing Chat to do this exercise. It involves text and image generation. If you don’t have Bing Chat, you can use other tools, but you may need to change some steps. Here are some places where you can find these tools:
+You need Microsoft Copilot to do this exercise. It involves text and image generation. If you don’t have Microsoft Copilot, you can use other tools, but you may need to change some steps. Here are some places where you can find these tools:
 
 - Microsoft Designer at <https://designer.microsoft.com/>
 - ChatGPT at <http://openai.com>
 - Dalle-2 at OpenAI - <http://openai.com>
 
-You can use other platforms if you would like, just note that the directions are intended for Bing Chat so you might have to adapt a few things specifically when it comes to image creation.
+You can use other platforms if you would like, just note that the directions are intended for Microsoft Copilot so you might have to adapt a few things specifically when it comes to image creation.

@@ -3,12 +3,12 @@
 > Steps to add prompts
 >
 > 1. Copy the sample prompt provided below **and make any edits you want**.
-> 1. Paste it into Bing Chat
+> 1. Paste it into Microsoft Copilot
 
 ## Cost Structure
 As a founder, it's important to understand the monetary consequences associated with delivering value to your customers. Going through this step helps you optimize your fixed and variable costs based on your key activities and explore ideas to minimize costs
 
-### Sample Prompt
+**Sample Prompt**
 
 ```
 Thanks! This is very insightful so far. Now, Can you help me think through our cost structure considering everything we have covered so far.
@@ -16,9 +16,9 @@ Help me break down the different cost- associated responsibilities and give roug
 Please summarize this in short bullet points.
 ```
 
-### Sample Response
+**Sample Response**
 
-Below is a sample response from Bing Chat.
+Below is a sample response from Microsoft Copilot.
 ![Screenshot showing sample response on cost structure.](../media/cost-structure.png)
 
 ## Revenue Streams
@@ -31,7 +31,7 @@ Some of revenue generation methods include:-
 - **Subscription fees:** Money generated from offering continuous services in packages
 - **Renting/ Lending/ Leasing fees:** Money generated from giving exclusive right to products for a defined period
 
-### Sample Prompt
+**Sample Prompt**
 
 ```
 Can you help me think through and generate a revenue model for my startup.
@@ -39,7 +39,7 @@ Considering all the above, help me break down the different possible revenue str
 Please summarize this in short bullet points.
 ```
 
-### Sample Response
+**Sample Response**
 
-Below is a sample response from Bing Chat.
+Below is a sample response from Microsoft Copilot.
 ![Screenshot showing sample response on revenue streams.](../media/revenue-streams.png)
