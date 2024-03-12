@@ -27,6 +27,9 @@ Microsoft is committed to encryption at rest options across cloud services and g
 
 As described previously, the goal of encryption at rest is that data that is persisted on disk is encrypted with a secret encryption key. To achieve that goal secure key creation, storage, access control, and management of the encryption keys must be provided. Though details might vary, Azure services Encryption at Rest implementations can be described in terms illustrated in the following diagram.
 
+:::image type="content" source="../media/azure-security-encryption-f494b036.png" alt-text="Diagram showing an example of Azure encryption at rest components.":::
+
+
 ## Azure Key Vault
 
 The storage location of the encryption keys and access control to those keys is central to an encryption at rest model. The keys need to be highly secured but manageable by specified users and available to specific services. For Azure services, Azure Key Vault is the recommended key storage solution and provides a common management experience across services. Keys are stored and managed in key vaults, and access to a key vault can be given to users or services. Azure Key Vault supports customer creation of keys or import of customer keys for use in customer-managed encryption key scenarios.
