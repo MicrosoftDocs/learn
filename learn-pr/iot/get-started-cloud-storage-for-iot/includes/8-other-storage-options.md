@@ -1,4 +1,4 @@
-There are several other Azure storage types. Some key storage types are described as follows:
+There are several other Azure storage types that are used with Azure IoT Hub solutions. Some key additional storage types are described as follows:
 
 ## Azure Files
 
@@ -35,7 +35,7 @@ Azure file shares can be used to:
 
 Azure Queue Storage is a service for storing large numbers of messages. You access messages from anywhere in the world via authenticated calls using HTTP or HTTPS. A queue message can be up to 64 KB in size. A queue may contain millions of messages, up to the total capacity limit of a storage account. Queues are commonly used to create a backlog of work to process asynchronously, like in the [Web-Queue-Worker architectural style](/azure/architecture/guide/architecture-styles/web-queue-worker).
 
-For example, say you want your customers to be able to upload pictures, and you want to create thumbnails for each picture. You could have your customer wait for you to create the thumbnails while uploading the pictures. An alternative would be to use a queue. When the customer finishes their upload, write a message to the queue. Then have an Azure Function retrieve the message from the queue and create the thumbnails. Each of the parts of this processing can be scaled separately, giving you more control when tuning it for your usage.
+For example, say you want your customers to be able to upload pictures, and you want to create thumbnails for each picture. You could have your customer wait for you to create the thumbnails while uploading the pictures. An alternative would be to use a queue. When the customer finishes their upload, write a message to the queue. Then have an Azure function retrieve the message from the queue and create the thumbnails. Each of the parts of this processing can be scaled separately, giving you more control when tuning it for your usage.
 
 ## Azure Cosmos DB for Table
 
