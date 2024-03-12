@@ -36,7 +36,7 @@ quiz:
       explanation: "Increasing the accuracy and reliability of the system's output isn't the main purpose of user testing and evaluation. Rather, it's a possible outcome of it."
     - content: "It makes the system understandable by a global audience and avoids complex terms."
       isCorrect: true
-      explanation: "By providing clear prompt suggestions, people with disabilities can easily select these prompts to generate clear content that meets the needs of users. It enhances the security and privacy of the system and the users' data."
+      explanation: "Clear prompt suggestions help people with disabilities to generate clear content that meets their needs. Providing clear prompt suggestions enhances the security and privacy of the system and the users' data."
     - content: "It enhances the security and privacy of the system and the users' data."
       isCorrect: false
       explanation: "Enhancing the security and privacy of the system and the users' data isn't the main purpose of user testing and evaluation. Rather, it's a design principle that should be followed throughout the development process."
@@ -67,4 +67,4 @@ quiz:
       explanation: "The developers' personal preferences and opinions might not reflect the needs and expectations of the target user group. They might introduce bias or discrimination in the design and development of the solution."
     - content: "To avoid any bias or discrimination in the design and development of the solution."
       isCorrect: true
-      explanation: "By involving a diverse representative sample of users, you can avoid any bias or discrimination in the design and development of the solution and help ensure that it meets the needs and preferences of all potential users. This approach can also enhance the accessibility, usability, and trustworthiness of the solution."
+      explanation: "Involving a diverse representative sample of users helps avoid bias or discrimination in the design and development of the solution. It also helps ensure that the solution meets the needs and preferences of all potential users. This approach can also enhance the accessibility, usability, and trustworthiness of the solution."

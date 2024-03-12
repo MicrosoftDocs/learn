@@ -10,4 +10,4 @@ Simply put, AI is software that imitates human behaviors and capabilities. Devel
 - **Computer vision**: Capabilities within AI to interpret the world visually through cameras, video, and images.
 - **Natural language processing**: Capabilities within AI for a computer to interpret written or spoken language and to respond in kind.
 - **Speech recognition**: Technology that enables a program to process human speech into a written format. It's also known as automatic speech recognition (ASR) or speech-to-text.
-- **Generative AI**: Capabilities within AI that create original content in a variety of formats, including natural language, images, and code.
+- **Generative AI**: Capabilities within AI that create original content in various formats, including natural language, images, and code.

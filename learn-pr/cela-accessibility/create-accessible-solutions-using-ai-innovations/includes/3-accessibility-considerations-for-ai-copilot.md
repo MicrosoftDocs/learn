@@ -8,8 +8,8 @@ Accessibility considerations for AI copilots include:
 
 - **Keyboard interaction**: AI copilots should allow users to navigate and interact with the system by using the keyboard and follow a logical and consistent order of focus. This approach can benefit users who have difficulties using the mouse or other pointing devices, such as people with mobility disabilities or low vision.
 
-  Keyboard interaction should support common keyboard shortcuts and commands. They also must provide visual indicators of the current focus and selection.  
-- **Prompt suggestions**: AI copilots should provide simple and clear prompt suggestions that are understandable to a global audience and that avoid complex or specialized terms. This approach can benefit users who have limited literacy or language skills, such as people with cognitive disabilities or non-native speakers.
+  Keyboard interaction should support common keyboard shortcuts and commands. It must also provide visual indicators of the current focus and selection.  
+- **Prompt suggestions**: AI copilots should provide simple and clear prompt suggestions that a global audience can understand. Prompt suggestions should avoid complex or specialized terms. This approach can benefit users who have limited literacy or language skills, such as people with cognitive disabilities or non-native speakers.
 
   Prompt suggestions should also be relevant, appropriate, and helpful for a user's task and context. They should avoid misleading, confusing, or offensive content.
 - **Sounds that convey important information**: AI copilots can provide sounds to indicate the availability, completion, or error of a task. Sounds can also convey the presence of new or updated prompts. These sounds should be distinct, recognizable, and consistent. They should provide options to adjust the volume, frequency, and duration.
