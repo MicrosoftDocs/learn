@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.examine-approaches-to-device-management-at-scale
+metadata:
+  title: Examine approaches to device management at scale using Azure IoT Hub
+  description: "Examine the approaches to apply device management tasks to large numbers of IoT devices using Azure IoT Hub."
+  ms.date: 10/01/2023
+  author: kgremban
+  ms.author: kgremban
+  manager: lizross
+  ms.custom: engagement-fy23
+  ms.topic: module-standard-task-based
+  ms.service: iot-hub
+title: Examine approaches to device management at scale using Azure IoT Hub
+summary: Examine the approaches to apply device management tasks to large numbers of IoT devices using Azure IoT Hub.
+abstract: |
+  After you complete this module, you will be able to:
+  - Describe how to use device management jobs in Azure IoT Hub.
+  - Describe automatic device management using Azure IoT Hub.
+  - Describe device management best practices for Azure IoT Hub.
+prerequisites: |
+  Ability to:
+  - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
+  - Explain the features and capabilities of IoT Hub and implement secure device-to-cloud communication between an IoT device and an IoT hub instance.
+  - Describe the device management patterns and device configuration options using Azure IoT Hub device twins and direct methods.
+iconUrl: /training/achievements/device-management-at-scale.svg
+levels:
+- intermediate
+roles:
+- developer
+- solution-architect
+products:
+- azure-iot-hub
+- azure-iot-sdk
+subjects:
+- iot
+units:
+- learn.wwl.examine-approaches-to-device-management-at-scale.introduction
+- learn.wwl.examine-approaches-to-device-management-at-scale.examine-how-to-use-iot-hub-jobs-for
+- learn.wwl.examine-approaches-to-device-management-at-scale.examine-iot-hub-automatic
+- learn.wwl.examine-approaches-to-device-management-at-scale.examine-automatic-using-azure-cli
+- learn.wwl.examine-approaches-to-device-management-at-scale.examine-device-configuration-best-practices
+- learn.wwl.examine-approaches-to-device-management-at-scale.knowledge-check
+- learn.wwl.examine-approaches-to-device-management-at-scale.summary
+badge:
+  uid: learn.wwl.examine-approaches-to-device-management-at-scale.badge
