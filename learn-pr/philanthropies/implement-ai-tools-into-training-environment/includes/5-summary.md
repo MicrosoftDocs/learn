@@ -18,7 +18,7 @@ Raman K. [Innovating with purpose: Microsoft' approach towards developing and us
 
 DiCerbo K. [AI, education, and humanity](https://unlocked.microsoft.com/ai-anthology/kristen-dicerbo/). Microsoft. Published June 26, 2023. Accessed August 29, 2023.
 
-[Unit 6. AI in education](/training/modules/empower-educators-explore-potential-artificial-intelligence/ai-education). in: *Empower educators to explore the potential of artificial intelligence*. Publication date unavailable. Accessed August 30, 2023.
+[Unit 6. AI in education](/training/modules/empower-educators-explore-potential-artificial-intelligence/ai-education). In: *Empower educators to explore the potential of artificial intelligence*. Publication date unavailable. Accessed August 30, 2023.
 
 Tholfsen M. [Introducing Reading Coach for personalized practice, and other major updates to Reading Progress](https://techcommunity.microsoft.com/t5/education-blog/introducing-reading-coach-for-personalized-practice-and-other/ba-p/3223533). Microsoft. Published March 20, 2022. Accessed August 31, 2023.
 
