@@ -109,7 +109,7 @@ Don't use fixed credentials within pods or container images, as they are at risk
 
 To access other Azure resources, like Azure Cosmos DB, Key Vault, or Blob storage, the pod needs authentication credentials. You could define authentication credentials with the container image or inject them as a Kubernetes secret. Either way, you would need to manually create and assign them. Usually, these credentials are reused across pods and aren't regularly rotated.<br>
 
-With pod-managed identities (preview) for Azure resources, you automatically request access to services through Microsoft Entra ID. Pod-managed identities is currently in preview for AKS.<br>
+With pod-managed identities (preview) for Azure resources, you automatically request access to services through Microsoft Entra ID. Pod-managed identities are currently in preview for AKS.<br>
 
 Microsoft Entra pod-managed identity (preview) supports two modes of operation:
 
