@@ -66,14 +66,14 @@ To get started:
 
     :::image type="content" source="../media/copilot-communication-compliance-follow-up.png" lightbox="../media/copilot-communication-compliance-follow-up.png" alt-text="Screen capture showing more default prompts and the prompt bar to enable the user to learn more about the message that triggered the policy.":::
 
-### Gain contextual summary of evidence collected in eDiscovery review sets
+### Gain contextual summary of evidence collected in eDiscovery review sets (Preview)
 
 eDiscovery admins or managers spend a significant amount of time reviewing evidence collected in review sets. Copilot embedded with Microsoft Purview eDiscovery (Premium) can help you optimize your time. With Copilot, you can now:
 
 - Get a contextual summary of a single item in a review set.
 - Ask follow-up contextual questions about the summary.
 
-To use Copilot in Microsoft Purview with eDiscovery (Premium), you must be licensed for eDiscovery (Premium) and have the appropriate role permissions for Copilot and for eDiscovery. You must have access to eDiscovery (Premium) cases, and to obtain a contextual summary for an item in a review set, the Purview Review role is required. For Copilot, you need, as a minimum, the Entra Security operator or Copilot workspace contributor role.
+To use Copilot in Microsoft Purview with eDiscovery (Premium), currently in public preview, you must be licensed for eDiscovery (Premium) and have the appropriate role permissions for Copilot and for eDiscovery. You must have access to eDiscovery (Premium) cases, and to obtain a contextual summary for an item in a review set, the Purview Review role is required. For Copilot, you need, as a minimum, the Entra Security operator or Copilot workspace contributor role.
 
 To get started:
 
