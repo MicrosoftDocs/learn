@@ -2,7 +2,7 @@
 uid: learn.wwl.guided-project-langstons-ant-with-json-serialization
 metadata:
   title: Guided project - Langstons ant with JSON serialization
-  description: "Guided project - Langstons ant with JSON serialization"
+  description: "This is a guided project that walks you through the steps to implement JSON serialization to save and load Langston's ant simulation states."
   ms.date: 03/12/2024
   author: wwlpublish
   ms.author: buzahid
