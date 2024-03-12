@@ -8,6 +8,8 @@ To continue your learning journey, go to:
 - [Develop search strategies with Search Coach and Search Progress - Training | Microsoft Learn](/training/modules/develop-search-strategies-search-coach-search-progress/)
 - [Microsoft AI - Learning and Community Hub | Microsoft Learn](/ai/)
 
+## Bibliography
+
 Raman K. [Innovating with purpose: Microsoft' approach towards developing and using AI responsibly](https://news.microsoft.com/en-my/2023/03/30/innovating-with-purpose-microsofts-approach-towards-developing-and-using-ai-responsibly/). Microsoft. Published March 30, 2023. Accessed September 1, 2023.
 
 [AI: A Whole New Way of Working](https://www.microsoft.com/en-us/worklab/ai-a-whole-new-way-of-working). Microsoft. Publication data unavailable. Accessed September 1, 2023.
