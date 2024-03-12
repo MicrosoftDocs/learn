@@ -16,30 +16,22 @@ It's a good practice to throttle your calls so that you don't hit/exceed the thr
 
 ## Basic and standard tier operations
 
-The following table shows the enforced throttles for operations that are available in all IoT Hub tiers. Values refer to an individual hub.
+The following table shows the enforced throttles for messaging operations that are available in all IoT Hub tiers. Values refer to an individual hub.
 
 | Throttle | Free, B1, and S1 | B2 and S2 | B3 and S3 |
 |----------|-------------------|-----------|-----------|
-| Identity registry operations (create, retrieve, list, update, delete) | 1.67/sec/unit (100/min/unit) | 1.67/sec/unit (100/min/unit) | 83.33/sec/unit (5,000/min/unit) |
-| New device connections (this limit applies to the rate of new connections, not the total number of connections) | Higher of 100/sec or 12/sec/unit. For example, two S1 units are 2 * 12 = 24 new connections/sec, but you have at least 100 new connections/sec across your units. With nine S1 units, you have 108 new connections/sec (9 * 12) across your units. | 120 new connections/sec/unit | 6,000 new connections/sec/unit |
 | Device-to-cloud sends | Higher of 100 send operations/sec or 12 send operations/sec/unit (for example, two S1 units are 24/sec, but you have at least 100 send operations/sec across your units). With nine S1 units, you have 108 send operations/sec (9 * 12) across your units. | 120 send operations/sec/unit | 6,000 send operations/sec/unit |
 | File upload | 1.67 file upload initiations/sec/unit (100/min/unit) | 1.67 file upload initiations/sec/unit (100/min/unit) | 83.33 file upload initiations/sec/unit (5,000/min/unit) |
 | Queries | 20/min/unit | 20/min/unit | 1,000/min/unit |
 
 ## Standard tier operations
 
-The following table shows the enforced throttles for operations that are available in standard tiers only. Values refer to an individual hub.
+The following table shows the enforced throttles for messaging operations that are available in standard tiers only. Values refer to an individual hub.
 
 | Throttle | Free and S1 | S2 | S3 |
 |----------|--------------|----|----|
 | Cloud-to-device sends | 1.67 send operations/sec/unit (100 messages/min/unit) | 1.67 send operations/sec/unit (100 send operations/min/unit) | 83.33 send operations/sec/unit (5,000 send operations/min/unit) |
 | Cloud-to-device receives (only when device uses HTTPS) | 16.67 receive operations/sec/unit (1,000 receive operations/min/unit) | 16.67 receive operations/sec/unit (1,000 receive operations/min/unit) | 833.33 receive operations/sec/unit (50,000 receive operations/min/unit) |
-| Direct methods | 160KB/sec/unit¹ | 480KB/sec/unit¹ | 24MB/sec/unit¹ |
-| Twin (device and module) reads | 100/sec | Higher of 100/sec or 10/sec/unit | 500/sec/unit |
-| Twin updates (device and module) | 50/sec | Higher of 50/sec or 5/sec/unit | 250/sec/unit |
-| Jobs operations (create, update, list, delete) | 1.67/sec/unit (100/min/unit) | 1.67/sec/unit (100/min/unit) | 83.33/sec/unit (5,000/min/unit) |
-| Jobs device operations (update twin, invoke direct method) | 10/sec | Higher of 10/sec or 1/sec/unit | 50/sec/unit |
-| Configurations and edge deployments (create, update, list, delete) | 0.33/sec/unit (20/min/unit) | 0.33/sec/unit (20/min/unit) | 0.33/sec/unit (20/min/unit) |
 | Device stream initiation rate | 5 new streams/sec | 5 new streams/sec | 5 new streams/sec |
 | Maximum number of concurrently connected device streams | 50 | 50 | 50 |
 | Maximum device stream data transfer (aggregate volume per day) | 300 MB | 300 MB | 300 MB |
@@ -63,39 +55,19 @@ To accommodate burst traffic, IoT Hub accepts requests above the throttle for a 
 
 For example, you use a simulated device to send 200 device-to-cloud messages per second to your S1 IoT Hub (which has a limit of 100/sec D2C sends). For the first minute or two, the messages are processed immediately. However, since the device continues to send more messages than the throttle limit, IoT Hub begins to only process 100 messages per second and puts the rest in a queue. You start noticing increased latency. Eventually, you start getting `429 ThrottlingException` as the queue fills up, and the "number of throttle errors" in IoT Hub's metrics starts increasing.
 
-### Identity registry operations throttle
-
-Device identity registry operations are intended for run-time use in device management and provisioning scenarios. Reading or updating a large number of device identities is supported through import and export jobs.
-
-When initiating identity operations through bulk registry update operations (not bulk import and export jobs), the same throttle limits apply. For example, if you want to submit bulk operation to create 50 devices, and you have a S1 IoT Hub with one unit, only two of these bulk requests are accepted per minute. This limitation is because the identity operation throttle for an S1 IoT Hub with one unit is 100/min/unit. Also in this case, a third request (and beyond) in the same minute would be rejected because the limit has been reached.
-
-### Device connections throttle
-
-The device connections throttle governs the rate at which new device connections can be established with an IoT hub. The device connections throttle does not govern the maximum number of simultaneously connected devices. The device connections rate throttle depends on the number of units that are provisioned for the IoT hub.
-
-For example, if you buy a single S1 unit, you get a throttle of 100 connections per second. Therefore, to connect 100,000 devices, it takes at least 1,000 seconds (approximately 16 minutes). However, you can have as many simultaneously connected devices as you have devices registered in your identity registry.
-
 ## Other limits
 
 IoT Hub enforces other operational limits:
 
 | Operation | Limit |
 | --- | --- |
-| Devices | The total number of devices plus modules that can be registered to a single IoT hub is capped at 1,000,000. |
 | File uploads | 10 concurrent file uploads per device. |
-| Jobs¹ | Maximum concurrent jobs are 1 (for Free and S1), 5 (for S2), and 10 (for S3). However, the max concurrent device import/export job is 1 for all tiers. Job history is retained up to 30 days. |
-| Additional endpoints | Basic and standard SKU hubs may have 10 additional endpoints. Free SKU hubs may have one additional endpoint. |
+| Additional routing endpoints | Basic and standard SKU hubs may have 10 endpoints in addition to the built-in endpoint. Free SKU hubs may have one additional endpoint. |
 | Message routing queries | Basic and standard SKU hubs may have 100 routing queries. Free SKU hubs may have five routing queries. |
 | Message enrichments | Basic and standard SKU hubs can have up to 10 message enrichments. Free SKU hubs can have up to two message enrichments. |
 | Device-to-cloud messaging | Maximum message size 256 KB |
 | Cloud-to-device messaging¹ | Maximum message size 64 KB. Maximum pending messages for delivery are 50 per device. |
 | Direct method¹ | Maximum direct method payload size is 128 KB for the request and 128 KB for the response. |
-| Automatic device and module configurations¹ | 100 configurations per basic or standard SKU hub. 10 configurations per free SKU hub. |
-| IoT Edge automatic deployments¹ | 50 modules per deployment. 100 deployments (including layered deployments) per basic or standard SKU hub. 10 deployments per free SKU hub. |
-| Twins¹ | Maximum size of desired properties and reported properties sections are 32 KB each. Maximum size of tags section is 8 KB. Maximum size of each individual property in every section is 4 KB. |
-| Shared access policies | Maximum number of shared access policies is 16. Within that limit, the maximum number of shared access policies that grant service connect access is 10. |
-| Restrict outbound network access | Maximum number of allowed FQDNs is 20. |
-| x509 CA certificates | Maximum number of x509 CA certificates that can be registered on IoT Hub is 25. |
 
 ¹ This feature is not available in the basic tier of IoT Hub.
 
