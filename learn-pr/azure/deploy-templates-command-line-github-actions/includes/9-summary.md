@@ -2,7 +2,7 @@ This module introduced you to one of the ways that you can include Azure Resourc
 
 In summary:
 
-- You learned to deploy your templates from a variety of methods.
+- You learned to deploy your templates using various methods.
 - You learned to modularize your ARM templates by creating linked templates.
 - You learned how to create GitHub Actions to deploy templates from a source code repository.
 

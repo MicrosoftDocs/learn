@@ -4,10 +4,10 @@ Whether you're deploying your templates in your test environment or in productio
 * Azure CLI
 * GitHub Actions
 
-You'll sometimes need to deploy from different locations. For example:
+Sometimes, you need to deploy from different locations. For example:
 
-* From a local file
-* From an external or remote location by using a Uniform Resource Identifier (URI)
+* From a local file.
+* From an external or remote location by using a Uniform Resource Identifier (URI).
 
 Both methods include the option of using a parameter file.
 
@@ -17,7 +17,7 @@ You also need to give a name to the deployment so you can easily identify it in 
 
 For convenience, you can also create a variable that stores the path to the template file. This variable makes it easier for you to run the deployment commands because you don't have to specify the path every time you deploy.
 
-As you might have learned in the [Deploy to multiple Azure environments by using ARM template features](/training/modules/modify-azure-resource-manager-template-reuse/) module, you can use an ARM template parameter file to hold values that will be passed in to the ARM template when the template is deployed. Or you can pass the parameters as part of the command itself as inline parameters. Inline parameters can be well suited for automated deployments as part of a scripted environment where the parameters will be programmatically generated.
+In the [Deploy to multiple Azure environments by using ARM template features](/training/modules/modify-azure-resource-manager-template-reuse/) module, you learned about using an ARM template parameter file to hold values. The values are then passed in to the ARM template when the template is deployed. Or you can pass the parameters as part of the command itself as inline parameters. Inline parameters can be well suited for automated deployments as part of a scripted environment where the parameters are programmatically generated.
 
 ## Azure PowerShell
 
@@ -28,7 +28,7 @@ When you're using Azure PowerShell to deploy your resources to Azure with ARM te
 * To deploy to a management group, use [New-AzManagementGroupDeployment](/powershell/module/az.resources/New-AzManagementGroupDeployment?azure-portal=true&view=azps-4.4.0).
 * To deploy to a tenant, use [New-AzTenantDeployment](/powershell/module/az.resources/new-aztenantdeployment?azure-portal=true&view=azps-4.4.0).
 
-In the majority of cases, you target your deployment to a resource group (which will be the focus of this module). When you need to apply policies or role assignments across a larger scope, you can target your deployment to a subscription, management group, or tenant.
+In most cases, you target your deployment to a resource group (which is the focus of this module). When you need to apply policies or role assignments across a larger scope, you can target your deployment to a subscription, management group, or tenant.
 
 ## Azure CLI
 
