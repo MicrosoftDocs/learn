@@ -104,6 +104,14 @@ The command can take a few minutes to complete. Wait for it to finish before mov
 
 ### Enable a backup by using the Azure CLI
 
+1. First, create the azure-backup vault by using Cloud Shell:
+
+    ```azurecli
+    az backup vault create \
+        --resource-group vmbackups \
+        --name azure-backup
+    ```
+
 1. Using Cloud Shell, enable a backup for the *NW-APP01* virtual machine.
 
     ```azurecli
@@ -111,7 +119,7 @@ The command can take a few minutes to complete. Wait for it to finish before mov
         --resource-group vmbackups \
         --vault-name azure-backup \
         --vm NW-APP01 \
-        --policy-name DefaultPolicy
+        --policy-name EnhancedPolicy
     ```
 
 1. Monitor the progress of the setup using the Azure CLI.
