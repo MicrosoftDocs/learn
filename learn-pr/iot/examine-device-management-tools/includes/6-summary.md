@@ -1,0 +1,7 @@
+You work as an operator in an electrical power monitoring and control room at a large auto manufacturing plant. A field power line voltage measurement IoT device is malfunctioning and is giving erratic readings that could affect the stability of the plant power grid.
+
+You use the Azure portal to send a direct method to the malfunctioning device, instructing it to go offline and stop sending messages. You use the portal to update the device twin of the malfunctioning device with offline and malfunctioning status information. You run a script using the IoT extension for Azure CLI to update the firmware for other devices that will fix a programming error that caused the original device to fail.
+
+Imagine how long it might take to bring one or malfunctioning power line monitoring devices that are in danger of affecting a plant power grid without device management tools. And imagine how long it would take to update device firmware for hundreds of devices individually without CLI scripting for device management.
+
+By using Azure IoT device management tools, you quickly took a device offline and avoided costly plant downtime. You were able to update the firmware in the network of devices, and your technician was later able to bring the device replacement online and test it using a laptop computer at the device location. Azure IoT device management tools have saved your company time and money, and helped avoid a potential catastrophic power grid failure.
