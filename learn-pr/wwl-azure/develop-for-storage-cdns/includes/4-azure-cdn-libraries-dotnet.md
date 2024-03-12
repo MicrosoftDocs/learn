@@ -78,7 +78,7 @@ private static void CreateCdnEndpoint(CdnManagementClient cdn)
 {
     if (endpointAlreadyExists)
     {
-        Console.WriteLine("Profile {0} already exists.", profileName);
+        Console.WriteLine("Endpoint {0} already exists.", endpointName);
     }
     else
     {
@@ -112,5 +112,6 @@ private static void PromptPurgeCdnEndpoint(CdnManagementClient cdn)
     }
 }
 ```
+
 
 
