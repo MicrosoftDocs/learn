@@ -12,7 +12,7 @@ To continue your learning journey for this topic, go to:
 - [Collaborating with Microsoft Teams - Training | Microsoft Learn](/training/paths/teamwork-specialist/)
 - [Empower every student with an inclusive classroom - Training | Microsoft Learn](/training/modules/empower-every-student-with-inclusive-classroom/)
 
-Bibliography
+## Bibliography
 
 [Unit 1. Introduction](/training/modules/staying-connected-remote-learning-microsoft-teams-office-365/introduction). In: *Stay connected with remote learning through Microsoft Teams and Office 365*. Microsoft. Publication date unavailable.
 
@@ -26,7 +26,7 @@ Spataro J. [From breakout rooms in Microsoft Teams to AI in To Do – here's wha
 
 [Configure transcription and captions for Teams meetings](/microsoftteams/meeting-transcription-captions). Microsoft. Published March 17, 2023.
 
-[Unit 7. AI tools for educators and accessibility](/training/modules/empower-educators-explore-potential-artificial-intelligence/ai-tools-educators-accessibility). in: *Empower educators to explore the potential of artificial intelligence*. Microsoft. Publication date unavailable.
+[Unit 7. AI tools for educators and accessibility](/training/modules/empower-educators-explore-potential-artificial-intelligence/ai-tools-educators-accessibility). In: *Empower educators to explore the potential of artificial intelligence*. Microsoft. Publication date unavailable.
 
 [Vision and reading support for students (scroll)](https://sway.office.com/5lWFeNsZFTxGf2pl?ref=Link&loc=mysways). Sway. Publication date unavailable.
 
