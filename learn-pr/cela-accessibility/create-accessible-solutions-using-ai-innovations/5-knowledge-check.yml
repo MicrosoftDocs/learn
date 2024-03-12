@@ -53,7 +53,7 @@ quiz:
       explanation: "Your main priority should be the users of your system. Customers and investors also benefit from this priority."
     - content: "To comply with the ethical and legal standards and regulations for AI solutions."
       isCorrect: false
-      explanation: "User testing should aim to evaluate the solution from a broader perspective. It should consider the needs, expectations, and values of various user groups and not only the individual preferences of some users."
+      explanation: "User testing should aim to evaluate the solution from a broader perspective. It should consider the needs, expectations, and values of various user groups and not just the individual preferences of some users."
   - content: "Why is it important to involve a diverse and representative sample of users in user testing and evaluation of an accessible and inclusive AI solution?"
     choices:
     - content: "To gain a competitive advantage over other AI solutions."
