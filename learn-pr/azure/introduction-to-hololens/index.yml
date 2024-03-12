@@ -5,7 +5,7 @@ metadata:
   description: This course provides a basic understanding of what HoloLens can do for an organization.
   ms.date: 03/01/2024
   author: qianw211  
-  ms.author: qianwen
+  ms.author: lolab
   ms.topic: module
   ms.service: hololens
 title: Introduction to HoloLens
