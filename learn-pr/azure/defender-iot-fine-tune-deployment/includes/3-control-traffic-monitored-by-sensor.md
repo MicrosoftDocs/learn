@@ -5,7 +5,7 @@ Data is now flowing from your sensor to Microsoft Defender for IoT. The monitori
 
 However, it's possible that some of these device settings might not be correctly identified and so you need to check each one. In some cases, you need to reassign the settings or location of the devices in the Perdue levels.
 
-The OT sensor analyzes the subnets. A subnet is a group of devices or interfaces that have a specific purpose or are located in a specific area, for example all of the printers in the main offices, all of the lights in the manufacturing level, all heating systems in the administrative rooms. Each subnet is assigned its own identification code/ address.<!-- check this-->
+The Operational Technology (OT) sensor analyzes the subnets. A subnet is a group of devices or interfaces that have a specific purpose or are located in a specific area, for example all of the printers in the main offices, all of the lights in the manufacturing level, all heating systems in the administrative rooms. Each subnet is assigned its own identification code/ address.<!-- check this-->
 
 The sensor analyzes your system and assigns subnet settings and attempts to understand the architecture of your system and fit it into the Purdue model set-up. In some cases, the device map produced needs to be corrected. You might need to change device settings that are associated with the wrong subnet and ensure that they have the correct IP address.
 
