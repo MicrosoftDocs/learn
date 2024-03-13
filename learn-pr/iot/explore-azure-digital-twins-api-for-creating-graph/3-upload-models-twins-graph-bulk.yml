@@ -8,7 +8,7 @@ metadata:
   ms.date: 10/11/2023
   author: baanders
   ms.author: baanders
-  ms.topic: module-standard-task-based
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/3-upload-models-twins-graph-bulk.md)]
