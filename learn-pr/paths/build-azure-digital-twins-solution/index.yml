@@ -9,8 +9,10 @@ metadata:
   ms.author: baanders
   ms.topic: training-path
 summary: >
-  Discover how PWABuilder can streamline Progressive Web App (PWA) creation and deployment to save both time and resources for your organization.  Learn how to efficiently integrate PWA features like push notifications and background sync into projects, enhance your PWA testing skills, gain insights into compliance, and become an expert in packaging and submitting your app to the Microsoft Store using Microsoft Partner Center.
-prerequisites: None
+  Learn about the Azure Digital Twins platform for IoT. This learning path will teach you what Azure Digital Twins is and how it works, with hands-on exercises to practice building out a data-driven Azure Digital Twins solution.
+prerequisites: 
+  - Beginner level experience with IoT concepts such as devices and event data
+  - "To complete hands-on exercises: An [Azure subscription](https://azure.microsoft.com/free), and permission to manage access to Azure resources in the subscription"
 iconUrl: /training/achievements/built-out-an-azure-digital-twins-solution.svg
 levels:
   - beginner
