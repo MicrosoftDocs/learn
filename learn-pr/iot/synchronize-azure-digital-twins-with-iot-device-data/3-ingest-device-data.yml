@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.synchronize-azure-digital-twins-with-iot-device-data.ingest-device-data
-title: Ingest device data with an Azure function
+title: Ingest device data
 sandbox: true
 interactive: bash
 metadata:
