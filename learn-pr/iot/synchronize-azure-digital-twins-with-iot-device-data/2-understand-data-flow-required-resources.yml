@@ -7,6 +7,7 @@ metadata:
   ms.date: 09/07/2023
   author: baanders
   ms.author: baanders
+  ms.topic: module-standard-task-based
 durationInMinutes: 10
 content: |
   [!include[](includes/2-understand-data-flow-required-resources.md)]

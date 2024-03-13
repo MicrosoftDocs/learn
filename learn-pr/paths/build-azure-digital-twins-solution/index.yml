@@ -10,9 +10,9 @@ metadata:
   ms.topic: training-path
 summary: >
   Learn about the Azure Digital Twins platform for IoT. This learning path will teach you what Azure Digital Twins is and how it works, with hands-on exercises to practice building out a data-driven Azure Digital Twins solution.
-prerequisites: 
+prerequisites:  |
   - Beginner level experience with IoT concepts such as devices and event data
-  - "To complete hands-on exercises: An [Azure subscription](https://azure.microsoft.com/free), and permission to manage access to Azure resources in the subscription"
+  - To complete hands-on exercises: An [Azure subscription](https://azure.microsoft.com/free), and permission to manage access to Azure resources in the subscription
 iconUrl: /training/achievements/built-out-an-azure-digital-twins-solution.svg
 levels:
   - beginner

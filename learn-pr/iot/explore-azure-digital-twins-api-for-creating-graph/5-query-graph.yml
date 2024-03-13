@@ -8,7 +8,7 @@ metadata:
   ms.date: 11/29/2023
   author: baanders
   ms.author: baanders
-  ms.topic: unit
+  ms.topic: module-standard-task-based
 durationInMinutes: 10
 content: |
   [!include[](includes/5-query-graph.md)]
