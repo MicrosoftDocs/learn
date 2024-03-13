@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.examine-device-management-concepts-methods
+metadata:
+  title: Examine device management concepts and methods for Azure IoT Hub
+  description: "Examine the principles and common patterns of device management, and device management using device twins and direct methods in Azure IoT Hub."
+  ms.date: 09/26/2023
+  author: kgremban
+  ms.author: kgremban
+  manager: lizross
+  ms.custom: engagement-fy23
+  ms.topic: module-standard-task-based
+  ms.service: iot-hub
+title: Examine device management concepts and methods for Azure IoT Hub
+summary: Evaluate the principles and common patterns of device management, and device management using device twins and direct methods in Azure IoT Hub.
+abstract: |
+  After you complete this module, you'll be able to:
+  - Describe device management concepts for Azure IoT Hub.
+  - Describe the device management patterns for Azure IoT Hub.
+  - Describe device configuration options using device twins and direct methods for Azure IoT Hub.
+prerequisites: |
+  Ability to:
+  - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
+  - Explain the features and capabilities of IoT Hub and implement secure device-to-cloud communication between an IoT device and an IoT hub instance.
+iconUrl: /training/achievements/device-management-examine.svg
+levels:
+- intermediate
+roles:
+- developer
+- solution-architect
+products:
+- azure-iot-hub
+- azure-iot-sdk
+subjects:
+- iot
+units:
+- learn.wwl.examine-device-management-concepts-methods.introduction
+- learn.wwl.examine-device-management-concepts-methods.review
+- learn.wwl.examine-device-management-concepts-methods.patterns
+- learn.wwl.examine-device-management-concepts-methods.configuration-using-device-twins
+- learn.wwl.examine-device-management-concepts-methods.using-direct-methods
+- learn.wwl.examine-device-management-concepts-methods.choose-between-approaches
+- learn.wwl.examine-device-management-concepts-methods.knowledge-check
+- learn.wwl.examine-device-management-concepts-methods.summary
+badge:
+  uid: learn.wwl.examine-device-management-concepts-methods.badge
