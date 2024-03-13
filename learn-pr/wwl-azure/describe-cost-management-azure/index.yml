@@ -2,20 +2,26 @@
 uid: learn.wwl.describe-cost-management-azure
 metadata:
   title: Describe cost management in Azure
-  description: "This module describes cost management methods and tools for Azure consumption."
-  ms.date: 08/16/2023
+  description: "Describe cost management in Azure"
+  ms.date: 03/12/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
 title: Describe cost management in Azure
 summary: This module explores methods to estimate, track, and manage costs in Azure.
 abstract: |
-  *   Describe factors that can affect costs in Azure
-  *   Compare the Pricing calculator and Total Cost of Ownership (TCO) calculator
-  *   Describe the Microsoft Cost Management tool
-  *   Describe the purpose of tags
-prerequisites: |
-  * Basic familiarity with IT terms and concepts
+  -   Describe factors that can affect costs in Azure
+
+  -   Compare the Pricing calculator and Total Cost of Ownership (TCO) calculator
+
+  -   Describe the Microsoft Cost Management tool
+
+  -   Describe the purpose of tags
+prerequisites: '-   Basic familiarity with IT terms and concepts'
 iconUrl: /training/achievements/describe-cost-management-azure.svg
 levels:
 - beginner
