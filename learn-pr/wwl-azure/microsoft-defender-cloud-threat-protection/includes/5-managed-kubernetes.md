@@ -3,7 +3,7 @@ In a managed Kubernetes environment, addressing security involves understanding 
 ## Compromised Account
 
  -  **Threat Factor**: An attacker gains access to a Kubernetes cluster through stolen credentials, API tokens, or keys. This can lead to unauthorized access, data theft, and malicious deployments.
- -  **Mitigation**: Implement strong authentication mechanisms, multi-factor authentication (MFA), regular rotation of credentials, and least privilege access principles.
+ -  **Mitigation**: Implement strong authentication mechanisms, multifactor authentication (MFA), regular rotation of credentials, and least privilege access principles.
 
 ## Vulnerable or Misconfigured Images
 
