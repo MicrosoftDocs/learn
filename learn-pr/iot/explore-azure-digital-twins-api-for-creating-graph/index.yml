@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/11/2023
   author: baanders
   ms.author: baanders
-  ms.topic: module-standard-task-based
+  ms.topic: module
   ms.service: digital-twins
 title: Explore the Azure Digital Twins API for creating a graph
 summary: >
