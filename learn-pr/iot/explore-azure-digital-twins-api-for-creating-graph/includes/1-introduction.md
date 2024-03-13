@@ -1,4 +1,4 @@
-Use the Azure Digital Twins APIs to create models, twins, and relationships, gather information about the elements you've created, query the graph, and add endpoints and event routes.
+In this module, you use the Azure Digital Twins APIs to create models, twins, and relationships, gather information about the elements you've created, query the graph, and add endpoints and event routes.
 
 Imagine you're tasked with designing a digital solution to help monitor a city's energy grid, including different types of plants, consumers, power lines, receivers, and substations. As the first step of this solution, you've chosen to set up Azure Digital Twins as an organized hub to receive and contextualize data from IoT devices across the city. You need to create the digital twin mappings for your city's energy environment and prepare the graph for IoT data to propagate through it.
 
@@ -8,8 +8,7 @@ By the end of this module, you'll be able to set up Postman to manage Azure Digi
 
 ## Resources needed for hands-on exercises
 
-This module includes hands-on exercises. To complete all the exercises, you'll need the following resources:
+This module includes hands-on exercises. To complete all the exercises, you need the following resources:
 * An Azure subscription. If you don't have one, you can [create one for free now](https://azure.microsoft.com/free).
-    - In your account, you'll also need subscription-level permission to manage access to Azure resources (such as the *Owner* role). If you don't have this permission, you'll need cooperation of someone that does have that permission and can run some commands on your behalf.
-
-As part of the module, you'll be asked to create a [Postman](https://web.postman.co/) account.
+    - In your account, you need subscription-level permission to manage access to Azure resources (such as the *Owner* role). If you don't have this permission, you need cooperation from someone that does have that permission, who can run some commands on your behalf.
+* As part of the module, you'll be asked to create a [Postman](https://web.postman.co/) account.

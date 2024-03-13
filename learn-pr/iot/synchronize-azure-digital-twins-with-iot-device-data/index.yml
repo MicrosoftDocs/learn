@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/07/2023
   author: baanders
   ms.author: baanders
-  ms.topic: module-standard-task-based
+  ms.topic: module
   ms.service: digital-twins
 title: Synchronize Azure Digital Twins with IoT device data
 summary: >

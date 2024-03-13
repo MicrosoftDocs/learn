@@ -8,9 +8,9 @@ After completing this module, you'll be able to identify which Azure services ar
 
 ## Resources needed for hands-on exercises
 
-This module includes hands-on exercises. To complete all the exercises, you'll need the following resources:
+This module includes hands-on exercises. To complete all the exercises, you need the following resources:
 * An Azure subscription. If you don't have one, you can [create one for free now](https://azure.microsoft.com/free).
-    - In your account, you'll also need subscription-level permission to manage access to Azure resources (such as the *Owner* role). If you don't have this permission, you'll need cooperation of someone that does have that permission and can run some commands on your behalf.
+    - In your account, you need subscription-level permission to manage access to Azure resources (such as the *Owner* role). If you don't have this permission, you need cooperation from someone that does have that permission, who can run some commands on your behalf.
 * Microsoft Visual Studio installed on your machine. You can download [Visual Studio Community](https://visualstudio.microsoft.com/downloads/) for free.
     - Make sure your installation includes the **Azure development** workload.
 * .NET Core installed on your machine. You can download it for free at [.NET Core downloads](https://dotnet.microsoft.com/download/dotnet).

@@ -6,11 +6,11 @@ metadata:
   ms.date: 10/11/2023
   author: baanders
   ms.author: baanders
-  ms.topic: module-standard-task-based
+  ms.topic: module
   ms.service: digital-twins
 title: Explore the Azure Digital Twins API for creating a graph
 summary: >
-  Use the Azure Digital Twins APIs to create models, twins, and relationships, gather information about the elements you've created, query the graph, and add endpoints and event routes.
+  Use the Azure Digital Twins APIs to create models, twins, and relationships; gather information about the elements you've created; query the graph; and add endpoints and event routes.
 abstract: | 
   By the end of this module, you'll be able to...
   - Set up Postman structure and permissions to manage Azure Digital Twins API requests.
