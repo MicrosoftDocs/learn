@@ -8,7 +8,7 @@ To take advantage of immersive experiences, you should consider designing beyond
 
 ## Place modules for comfort
 
-To ensure the user's comfort, you need to consider object placement. For areas of interest, the optimum placement for focus is 2 meters (6.5 feet) from a user. To ensure maximum comfort, it's critical objects throughout the Scene reside 1.25-5 meters (4-16 feet) from the user.
+To ensure the user's comfort, you need to consider object placement. For areas of interest, the optimum placement for focus is 2 meters (6.5 feet) from a user. To ensure maximum comfort, it's critical that objects throughout the Scene reside 1.25-5 meters (4-16 feet) from the user.
 
 In this use case, Turbine models are connected to ADT data streams and use MRTK Tooltips. These are useful objects you can attach to assets in your Scene that provide further data points.
 
