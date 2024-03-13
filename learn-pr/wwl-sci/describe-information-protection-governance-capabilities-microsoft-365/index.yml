@@ -6,7 +6,8 @@ metadata:
   ms.date: 09/09/2023
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: purview-information-protection
 title: Describe information protection, data lifecycle management, and data governance capabilities in Microsoft Purview
 summary: Microsoft Purview is a comprehensive set of solutions that help you govern, protect, and manage your entire data estate, providing unified data governance and risk management for your organization.
 abstract: |

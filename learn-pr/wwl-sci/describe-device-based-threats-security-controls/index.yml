@@ -6,7 +6,8 @@ metadata:
   ms.date: 12/06/2022
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: security
 title: Describe device-based threats and security controls
 summary: Internet connected devices are everywhere, and users and organizations depend on them for pretty much every facet of daily life and business use. Throughout this module, you'll learn about device threats and mitigation techniques.
 abstract: |
