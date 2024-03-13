@@ -8,7 +8,6 @@ metadata:
   ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.service: azure
-  ms.subservice: defender-for-cloud
 title: Manage your cloud security posture management​
 summary: Microsoft Defender for Cloud, Cloud Security Posture Management (CSPM) provides visibility into vulnerable resources and provides hardening guidance.
 abstract: |
