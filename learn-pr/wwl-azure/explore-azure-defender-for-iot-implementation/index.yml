@@ -7,6 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
+  ms.service: defender-for-iot
 title: Explore Microsoft Defender for IoT implementation
 summary: This module provides you with experience configuring Microsoft Defender for IoT and implementing Microsoft Defender for IoT security agents to enhance your awareness of device-level security concerns.
 abstract: |
