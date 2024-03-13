@@ -11,14 +11,17 @@ Start by logging into GitHub at [https://github.com](https://github.com?azure-po
     :::image type="content" source="../media/branch-selector-ca9bf5ab.png" alt-text="Screenshot of the branch selector in GitHub.":::
     
 3.  Edit the **project2.md** file.
-4.  Add another grade line for Monty below Mingkwan.<br>`| Monty | pts |`
+4.  Add another grade line for Monty below Mingkwan.
+    `| Monty | pts |`
 5.  Select **Commit changes**.
 6.  Select **Commit changes**.
 7.  Change your repository branch to **project34**.
-8.  Edit **project3.md** to add a grade line for Monty.<br>`| Monty | pts |`
+8.  Edit **project3.md** to add a grade line for Monty.
+    `| Monty | pts |`
 9.  Select **Commit changes**.
 10. Select **Commit changes**.
-11. Edit **project4.md** to add a grade line for Monty.<br>`| Monty | pts |`
+11. Edit **project4.md** to add a grade line for Monty.
+    `| Monty | pts |`
 12. Select **Commit changes**.
 13. Select **Commit changes**.
 
@@ -96,7 +99,8 @@ You should receive a message about a conflict, and the file names in Visual Stud
     If you select Accept Incoming, you'll have to re-enter the grades. If you select Accept Current, you'll have to add Monty back in, and if you select Accept Combination you'll have to manually merge the two together. For this exercise, you'll stick with what you currently have locally and add Monty in.
 2.  Select Resolve in Merge Editor
 3.  Select Accept Current
-4.  In the Result panel, manually add a new line that gives Monty 12 pts<br>`| Monty | 12 pts |`
+4.  In the Result panel, manually add a new line that gives Monty 12 pts
+    `| Monty | 12 pts |`
 5.  Select Complete Merge
 
 ### Update project4.md
@@ -106,7 +110,8 @@ You'll need to follow the same process for project4.md to give Monty credit for 
 1.  Select project4.md
 2.  Select Resolve in Merge Editor
 3.  Select Accept Current
-4.  In the Result panel, manually add a new line that gives Monty 14 pts.<br>`| Monty | 14 pts |`
+4.  In the Result panel, manually add a new line that gives Monty 14 pts.
+    `| Monty | 14 pts |`
 5.  Select Complete Merge
 
 > [!IMPORTANT]
