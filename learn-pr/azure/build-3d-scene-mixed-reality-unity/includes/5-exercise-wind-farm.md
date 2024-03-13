@@ -61,7 +61,7 @@ When you create a Developer Key, be sure to select **Basic** as the key type and
 
     :::image type="content" source="../media/bing-maps-transform.png" alt-text="Screenshot of the Bing Maps Design prefab with the transform component selected.":::
 
-1. Use the the **File > Save** menu option to save the Scene. If prompted, save your Scene in the **Scenes** folder.
+1. Use the **File > Save** menu option to save the Scene. If prompted, save your Scene in the **Scenes** folder.
 1. In the Scene, you should have both the Static and Dynamic terrain loaded. Navigate the Scene using your mouse and/or keyboard.
 
     > [!NOTE]
