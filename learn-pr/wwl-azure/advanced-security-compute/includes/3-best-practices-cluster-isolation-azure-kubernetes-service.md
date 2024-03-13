@@ -49,7 +49,10 @@ More advanced scheduler features include:<br>
 
 **Best practice guidance**: Separate teams and projects using logical isolation. Minimize the number of physical AKS clusters you deploy to isolate teams or applications.
 
-With logical isolation, you can use a single AKS cluster for multiple workloads, teams, or environments. Kubernetes Namespaces form the logical isolation boundary for workloads and resources.<br>
+With logical isolation, you can use a single AKS cluster for multiple workloads, teams, or environments. Kubernetes Namespaces form the logical isolation boundary for workloads and resources.
+
+:::image type="content" source="../media/logical-isolation-7e3f58e3.png" alt-text="Diagram showing an example of logically isolated clusters.":::
+
 
 Logical separation of clusters usually provides a higher pod density than physically isolated clusters, with less excess compute capacity sitting idle in the cluster. When combined with the Kubernetes cluster autoscaler, you can scale the number of nodes up or down to meet demands. This best practice approach minimizes costs by running only the required number of nodes.<br>
 
@@ -63,6 +66,9 @@ For these types of hostile multitenant workloads, you should use physically isol
 
 **Best practice guidance**: Minimize the use of physical isolation for each separate team or application deployment and use logical isolation instead.
 
-Physically separating AKS clusters is a common approach to cluster isolation. In this isolation model, teams or workloads are assigned their own AKS cluster. While physical isolation might look like the easiest way to isolate workloads or teams, it adds management and financial overhead. With physically isolated clusters, you must maintain multiple clusters and individually provide access and assign permissions. You're also billed for each individual node.<br>
+Physically separating AKS clusters is a common approach to cluster isolation. In this isolation model, teams or workloads are assigned their own AKS cluster. While physical isolation might look like the easiest way to isolate workloads or teams, it adds management and financial overhead. With physically isolated clusters, you must maintain multiple clusters and individually provide access and assign permissions. You're also billed for each individual node.
+
+:::image type="content" source="../media/physical-isolation-24ce5695.png" alt-text="Diagram showing an example of physically isolated clusters.":::
+
 
 Physically isolated clusters usually have a low pod density. Since each team or workload has their own AKS cluster, the cluster is often over-provisioned with compute resources. Often, a few pods are scheduled on those nodes. Unclaimed node capacity can't be used for applications or services in development by other teams. These excess resources contribute to the extra costs in physically isolated clusters.<br>
