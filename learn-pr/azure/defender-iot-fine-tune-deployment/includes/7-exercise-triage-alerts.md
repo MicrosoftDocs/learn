@@ -5,7 +5,7 @@ Your sensor is now fine-tuned so that the devices are correctly identified, conf
 First, identify which alerts are important to triage.
 
 1. In Defender for IoT, open **Alerts**.
-1. Using the **Search** box or **Add filter** to filter/ display a set of alerts.
+1. Use the **Search** box or **Add filter** to filter/ display a set of alerts.
 1. Select the alert by ticking the checkbox for that row.
 1. Select **View full details** to drill down further and see the remediation suggestions.<!-- with this last few words, the image should be of the remediation?? but here is a different image. and the remediation is in the next section. What should I do for this? --> For example:
 
@@ -13,25 +13,29 @@ First, identify which alerts are important to triage.
 
 ## Triage an alert
 
-1. The **Alert details** page provides more details about the alert. The **Take action** Tab lists the remediation steps or options needed to fix the problem. For example:
+The **Alerts** page provides more details about the alert.
+
+1. Using the **Alert details** tab and the other information, analyze the alert and decide if it requires a security response or is normal network traffic.
+1. The **Take action** Tab lists the remediation steps or options needed to fix the problem. Choose which steps to follow depending on your analysis of the alert.
+    For example:
+    1. If the alert is normal network traffic, choose Select Learn.
+    1. If the alert requires a security response, consult a relevant Control Systems Engineer to validate the origin of the alert.
 
     :::image type="content" source="../media/7-alert-full-details.png" alt-text="Screenshot of the alert details with the Take Action box highlighted" lightbox="../media/7-alert-full-details.png" :::
 
-1. Other options include selecting the Learn button so that Defender for IoT knows that the traffic is authorized. And.....
-
-1. To complete the triage, update the alert severity and alert status.
+1. To complete the triage, update the alert severity and alert status. Select **Apply** to keep the changes.
 
 Give example of an alert or two types of alerts with different changes made. And also different severity and status changes.
 
 ### Select multiple alerts
 
-You can also select several alerts to triage at the same time, however you aren't able to see the details of them together. You're able to make bulk changes their severity or status levels or apply the *learn* setting using the menu bar above the alerts table.
+You can also select several alerts to triage at the same time, however you aren't able to see their details together. You're able to make bulk changes to their severity or status levels or apply the *learn* setting using the Alerts page menu bar. <!-- highlight in image below -->
 
 :::image type="content" source="../media/7-bulk-alert-triage.png" alt-text="Screenshot of bulk update of alerts, in this case updating the severity level for these alerts" lightbox="../media/7-bulk-alert-triage.png":::
 
 ### Create suppression rules if possible
 
-Select **Save** to keep these changes.
+What to write here?
 
 ## Select a few to triage and learn to add them to your learned network baseline
 <!-- how do we do this? Who to speak to? Vhathek?-->
@@ -57,21 +61,4 @@ After this change, any new devices or traffic trigger an alert, which is assesse
 ## Check your work
 
 What do we do to show the work is successful?
-
-Possible knowledge check questions:
-
-## Baseline of OT network traffic for sensors created
-
-Knowledge check (apply level): To do  
-
-## Explain the differences between different alert status options
-
-Questions about managing alerts in hybrid â€“ both on-premises and in the Azure portal
-
-Apply level questions for these key takeaways?
-
-What happens during learning mode?
-<https://learn.microsoft.com/azure/defender-for-iot/organizations/ot-deploy/create-learned-baseline#understand-learning-mode>
-
-How long should learning mode last?
-<https://learn.microsoft.com/azure/defender-for-iot/organizations/ot-deploy/create-learned-baseline#learn-mode-timeline>
+When you complete the triage process, the **Alerts** page shows the updated status of the alerts.

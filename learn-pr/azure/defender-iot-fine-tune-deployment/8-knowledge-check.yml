@@ -34,6 +34,28 @@ durationInMinutes: 5
 ###  - Provide a meaningful explanation for both correct and incorrect answers
 ###
 ###########################################################################
+
+###########################################################################
+### Possible knowledge check questions:
+###
+### ## Baseline of OT network traffic for sensors created
+###
+### Knowledge check (apply level): To do  
+###
+### ## Explain the differences between different alert status options
+###
+### Questions about managing alerts in hybrid â€“ both on-premises and in the Azure portal
+###
+### Apply level questions for these key takeaways?
+###
+### What happens during learning mode?
+### <https://learn.microsoft.com/azure/defender-for-iot/organizations/ot-deploy/create-learned-baseline#understand-learning-mode>
+###
+###  How long should learning mode last?
+### <https://learn.microsoft.com/azure/defender-for-iot/organizations/ot-deploy/create-learned-baseline#learn-mode-timeline>
+###
+###########################################################################
+
 content: |
 quiz:
   questions:

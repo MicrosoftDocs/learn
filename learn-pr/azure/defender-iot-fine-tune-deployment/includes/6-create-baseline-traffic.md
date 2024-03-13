@@ -1,97 +1,84 @@
-Your car manufacturing organization has offices and production sites across the globe, with a network linking them together. A sensor at one site is connected and sending data to Microsoft Defender for IoT. The deployment team has already fine-tuned the sensor settings ensuring that all the devices are correctly identified. Now your task is to set up the alert baseline to ensure that normal traffic doesn't trigger alerts within the system and instead only report suspicious activity.
+Your car manufacturing organization has offices and production sites across the globe, with a network linking them together. A sensor at one site is connected and sending data to Microsoft Defender for IoT. The deployment team has already fine-tuned the sensor settings ensuring that all the devices are correctly identified. Now your task is to set up the alert baseline to ensure that normal traffic doesn't trigger alerts within the system and instead only reports suspicious activity. Checking and updating the alerts is called the triage process.
 
-Defender for IoT is automatically set to the *Learning* mode as soon as it starts to receive data from the sensor. In this mode, Defender for IoT starts builds a baseline of alerts to help identify suspicious network traffic that might affect the security of your devices. When suspicious traffic is identified Defender for IoT creates an alert. During this phase, you need to check all of the alerts and confirm if the traffic is dangerous. If the traffic is normal network traffic, you assign the learning mode and the sensor will learn not to flag this type of traffic in the future. At the end of the learning period, Defender for IoT enters the regular *operational* mode.
+Defender for IoT is automatically set to the *Learning* mode as soon as it starts to receive data from the sensor. In this mode, Defender for IoT starts building a baseline of alerts to help identify suspicious network traffic that might affect the security of your devices. When suspicious traffic is identified Defender for IoT creates an alert. During the *learning* mode, you need to check all of the alerts and confirm if the traffic is dangerous. If the traffic is normal network traffic assign the *learn* status and the sensor will learn not to flag this type of traffic in the future. At the end of the learning period, Defender for IoT enters the regular *operational* mode.
 
 ## Creating the alerts baseline
 
-The best way to create the alert baseline is following the triage process. The process is:
+To create the alert baseline, follow the triage process:
 
 1. Filter the alerts - by time, severity, or another parameter.
 1. Group alerts - a different filter option based on the groups created in the device map or inventory sections. (Although we haven't mentioned this properly) <!-- remove for LM -->
-1. Choose an alert, open the alert details pane, and analyze the displayed information to decide if this alert needs to be adjusted.
-1. You might also want to check the raw data files, called PCAP files. The files can be downloaded and assessed and then changes to the alerts made accordingly.<!-- remove for LM -->
-1. Save your changes.
-
-<!--at num3  https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-view-alerts#view-details-and-remediate-a-specific-alert this starts with 1. sign into the OT sensor. I suggest removing this line, we are already there, as mentioned above. Why would we add this here?  -->
-<!-- at end! https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-view-alerts#manage-alert-status-and-triage-alerts the first sentence is confusing. Does this mean save any changes i have made to the alert? Or something else. If it does then I would put it near the end of the entire section of article. but not at the beginning, or it is it at the beginning that it is clear it relates to actions for when you have finished your work-->
-Could list alert status options - but I think they're better to be added to the exercise stage.
+1. Choose an alert, open the alert details pane, and analyze the alert information.
+1. Follow the **Remediation steps** to triage according to type of alert, and save your changes.
+1. Optionally, check the raw data PCAP files. The files can be downloaded and assessed and then changes to the alerts made accordingly.<!-- remove for LM add create suppression rules instead? -->
 
 ## Triage your alerts
-<!-- How do we triage the alerts, just describe doing this with an example we have in screenshots, and tell them to look for their own and ones on their system-->
-In the **Alert details** page, a set of remediation steps are listed in order to triage the alert. When the alert is correct and requires a security response the remediation steps set out the best options available. If this isn't a real problem you should select the **Learn** button and the sensor learns that this network traffic shouldn't trigger an alert. Making these changes is called the triage process.
-
-In Defender for IoT, select the Alerts page that lists all of the alerts generated by the sensor.
+<!-- How do we triage the alerts, just describe doing this with an example we have in screenshots, and tell them to look for their own and ones on their system - LW-->
+In the **Alert details** page, a set of remediation steps are listed in order to triage the alert. When the alert is correct and requires a security response the remediation steps set out the best options available. If this isn't a real problem, select the Learn button, and the sensor learns that this network traffic shouldn't trigger an alert again. Making these changes is called the triage process.
 
 ### Filter and group alerts
 
-Filter the list of alerts by a parameter or mix of parameters. The list can also be sorted using **Group by** as well.  
+In Defender for IoT, select the **Alerts** page that lists all of the alerts generated by your sensor.
+<!-- should this be left as is or use numbering? as this is a walk through unit, not the actual exercise i thought the numbers might not be best - LW-->
+Filter the list of alerts by a parameter or mix of parameters, such as a time period, the site or zone, or alert severity. You can also sort the list using the **Group by** feature.
 
 :::image type="content" source="../media/alerts-main-group-by.png" alt-text="Screenshot of the alerts screen filtering with group by setting":::
 
-From the list of alerts, select a specific alert and the details appear in the alert pane, including the alert description, traffic source, traffic destination and more. Choosing multiple alerts allows you to make bulk changes to the status, severity, or learn levels using the top menu bar<!-- does this have another name? -->. <!-- Should bulk changes be placed lower down the article, because it is about making changes, we havent spoken about that yet!! but it is also here with choosing the number of alerts!!!-->
+Select an alert and the details appear in the alert pane, including the alert description, traffic source, traffic destination and more. To analyze the alert in greater detail, select **View full details**. Choosing multiple alerts allows you to make bulk changes to the status, severity, or learn levels using the alerts menu bar.<!-- does this have another name? LW--> <!-- Should bulk changes be placed lower down the article, because it is about making changes, we havent spoken about that yet!! but it is also here with choosing the number of alerts!!! - LW-->
 
 :::image type="content" source="../media/alerts-main-bulk-status.png" alt-text="Screenshot of the alerts screen making a bulk status change":::
 
 ### Analyze an alert
 
-An Alert can be analyzed in greater depth in the Alert detail page, which shows the alert details and suggests remediation steps to take. You can also download the PCAP files of the raw data for the alert, and analyze them using a PCAP file reader, which might also give you more information about the alert.
-<!--This is in the OT sensor only: do we keep this or not?
-either be analyzed in a map view or the event timeline view.
+Alerts have different **Names** that describe the type of security problem identified. Each Name has its own list of **Remediation steps** to be taken. Some of these steps can be done immediately and directly in Defender for IoT. While others need you to check aspects of your system, and then update the alert another time.
 
-The Map View shows the source and destination devices for an alert as well as other devices connected to your sensor. For example:
+Analyze the alert in greater depth in the **Alerts** page, which has two tabs, the **Alerts details** and the **Take action** tab where the **Remediation steps** are found.
 
-:::image type="content" source="../media/6-map-view.png" alt-text="Screenshot of the Map View tab on an alert details page":::
-
-The Event Timeline View shows the alert event together in a list with other recent activity that occurred on the device before and after the alert was detected. This gives you a better insight into what was happening on the network before and after this alert occurred. Seeing the list of events might help you identify the cause of the alert, or understand that there is nothing problematic in this case. For example:
-
-:::image type="content" source="../media/6-event-timeline-alert-sensor.png" alt-text="Screenshot of an event timeline on an alert details page":::
--->
+You can also download the PCAP files of the raw traffic data and analyze them using a PCAP file reader, which might also give you more information about the alert.
 
 ### Update alerts
 
-<https://learn.microsoft.com/azure/defender-for-iot/organizations/respond-ot-alert>
-After analyzing the alert details, you can update its severity or status levels.
+Follow the **Remediation steps**. If available you might be asked to *Select Learn*.
 
-To triage the alerts, you need to analyze the **severity** and **status** settings automatically assigned to it. There are four severities of alerts that the sensor assigns, which can be modified. They are: *Critical, Major, Minor, Warning*. Alerts also have a status of *New, Active, Closed*. We recommend that you start triaging the critical level alerts first. <!-- check the differences between sensor and Azure only 3 severity levels on Azure, but 4 on sensor? How does that work?  I have added this later but should any of this be mentioned here instead?-->
+**Learn** an alert when you want to close it, and add it as allowed traffic so that you aren't alerted the next time the same traffic is detected. For example, when the sensor detects firmware version changes following standard maintenance procedures, or when a new, expected device is added to the network. Learning an alert closes the alert and adds an item to the sensor event timeline. Learning alerts is available for selected alerts only, mostly alerts triggered by *Policy* and *Anomaly* engine alerts.
+
+Then update the **severity** or **status** levels, which are automatically set when the alert is created and might now need changing.
+
+In Defender for IoT, the sensor assigns three **Severity** levels, they are: *High*, *Medium* and *Low*. The sensor also assigns three **Status** levels, they are *New*, *Active* and *Closed*. We recommend that you start triaging the critical level alerts first.
+
 :::image type="content" source="../media/alerts-main-1.png" alt-text="Screenshot of the alerts screen":::
+<!-- add red hihglight boxes for the severity and staus columns-->
 
-Alerts can have four different statuses in the Azure portal.
-<!-- Do we go over ther rules first or the alerts?? - I think , it is alerts only, as this is referring to the initial set up. How much of the alert status table should be included here? Only the info relevant to the Azure portal. -->
+Update the status level using the table:
 
 |Status / triage action | Description  |
 |---------|---------|
-|**New**     |     *New* alerts are alerts that the team needs to triage or investigate. New traffic detected for the same device doesn't generate a new alert, but is added to the existing alerts. <!-- what does this mean-->   |
-|**Active**     |     Set an alert to *Active* to indicate that an investigation is underway, but that the alert can't yet be closed or otherwise triaged. <br><br>This status has no effect elsewhere in Defender for IoT.      |
-|**Closed**     | Close an alert to indicate that the investigation is complete, and you want to be alerted again the next time the same traffic is detected.<br><br>Closing an alert adds it to the sensor event timeline.  |
-|**Learn**     |    Learn an alert when you want to close it, add it as allowed traffic, so that you aren't alerted the next time the same traffic is detected. <br><br>For example, when the sensor detects firmware version changes following standard maintenance procedures, or when a new, expected device is added to the network. <br><br>Learning an alert closes the alert and adds an item to the sensor event timeline. Detected traffic is included in data mining reports, but not when calculating other OT sensor reports. <br><br>Learning alerts is available for selected alerts only, mostly alerts triggered by *Policy* and *Anomaly* engine alerts. |
+|**New**     |     *New* alerts are alerts that the team needs to triage or investigate. |
+|**Active**     |     Set an alert to *Active* to indicate that an investigation is underway, but that the alert can't yet be closed or otherwise triaged. <br><br>This status has no effect elsewhere in Defender for IoT.  <!-- remove this sentence?-->    |
+|**Closed**     | Set and alert to *Close* to indicate that the investigation is complete, and to alert you again the next time the same traffic is detected.<br><br>Closing an alert adds it to the sensor event timeline. <!-- remove this i think --> |
 
-Defender for IoT alerts has three severity levels,   Update the following severity levels using the table:
+Update the severity level using the table:
 
-| Defender for IoT  | OT sensor  | Description  |
-|---------|---------|---------|
-| **High**     | **Critical**        | Indicates a malicious attack that should be handled immediately.        |
-| **Medium**     | **Major**        | Indicates a security threat that's important to address.        |
-| **Low**     | **Minor**, **Warning**        | Indicates some deviation from the baseline behavior that might contain a security threat, or contains no security threats.        |
-
-Alert severities on this page are listed by the severity levels shown in the Azure portal. The sensor software has four severity levels. The table compares the Defender for IoT and sensor levels, and defines each level.
-
-<!-- what to do with this, it is not available on D4IoT portal? Maybe write this: Note: In the sensor portal, you can also set the alert status to Mute. But this is not available in the Azure portal. 
-|**Mute**     |  - OT network sensors <br><br>- On-premises management console      <br><br>*Unmuting* an alert is available only on the OT sensor.  |  Mute an alert when you want to close it and not see again for the same traffic, but without adding the alert allowed traffic. <br><br>For example, when the Operational engine triggers an alert indicating that the PLC Mode was changed on a device. The new mode might indicate that the PLC isn't secure, but after investigation, it's determined that the new mode is acceptable. <br><br>Muting an alert closes it, but doesn't add an item to the sensor event timeline. Detected traffic is included in data mining reports, but not when calculating data for other sensor reports. <br><br>Muting an alert is available for selected alerts only, mostly those triggered by the *Anomaly*, *Protocol Violation*, or *Operational* engines.  |-->
+| Defender for IoT  |  Description  |
+|---------|---------|
+| **High**    |  Indicates a malicious attack that should be handled immediately.        |
+| **Medium**  |  Indicates a security threat that's important to address.        |
+| **Low**     |  Indicates some deviation from the baseline behavior that might contain a security threat, or contains no security threats.        |
 
 ## Create suppression rule
 
-Do we want to write about this - check out how to do this. <https://learn.microsoft.com/microsoft-365/security/defender-endpoint/manage-alerts#suppress-alerts>
+Do we want to write about this - check out how to do this. Why would we do this? <https://learn.microsoft.com/microsoft-365/security/defender-endpoint/manage-alerts#suppress-alerts>
 
 ## Save changes
 <!-- does this need a title? I gave it because it is listed in the intro triage list!-->
-Changes are saved and the baseline alerts are updated. As the learning process continues, you receive less new alerts as the sensor learns the normal flow of traffic in your system.
-
-
+Save each change and the baseline alerts are updated. As the learning process continues, you receive less new alerts as the sensor learns the normal flow of traffic in your system.
 
 <!-- A nice definition. may use it more.
 Baseline - creates an environmental baseline for the normal communication behaviour of devices in your network is known. going forward, anything that is unseen traffic will create an alert to be followed up with. -->
-<!-- from videos i have watched, they make a report first and then use that to go through alerts, but in our documentation it just goes through alerts which should be triaged. So just wondering about that difference!! Ask Theo when he is in touch today . I will write based on the internal documentation, not MSFT videos, etc. - I dont think it makes a big difference, and the report is probably best for operational mode. -->
 
 <!-- generally I find that links go to various places, all over documentation, and are hard to know where or why you are now in a different section -->
 
 <!-- can use this article for screenshots as well /organizations/how-to-manage-cloud-alerts -->
+
+<!--at num3  https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-view-alerts#view-details-and-remediate-a-specific-alert this starts with 1. sign into the OT sensor. I suggest removing this line, we are already there, as mentioned above. Why would we add this here?  -->
+<!-- at end! https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-view-alerts#manage-alert-status-and-triage-alerts the first sentence is confusing. Does this mean save any changes i have made to the alert? Or something else. If it does then I would put it near the end of the entire section of article. but not at the beginning, or it is it at the beginning that it is clear it relates to actions for when you have finished your work-->
