@@ -23,10 +23,10 @@ In the [Deploy to multiple Azure environments by using ARM template features](/t
 
 When you're using Azure PowerShell to deploy your resources to Azure with ARM templates, you need to be aware of a few scopes. Depending on the scope of the deployment, you use different commands to target your deployment:
 
-* To deploy to a resource group, use [New-AzResourceGroupDeployment](/powershell/module/az.resources/new-azresourcegroupdeployment?azure-portal=true&view=azps-4.4.0).
+* To deploy to a resource group, use [New-AzResourceGroupDeployment](/powershell/module/az.resources/new-azresourcegroupdeployment?azure-portal=true&view=azps-4.4.0&preserve-view=true).
 * To deploy to a subscription, use [New-AzSubscriptionDeployment](/azure/azure-resource-manager/templates/deploy-to-subscription?azure-portal=true).
-* To deploy to a management group, use [New-AzManagementGroupDeployment](/powershell/module/az.resources/New-AzManagementGroupDeployment?azure-portal=true&view=azps-4.4.0).
-* To deploy to a tenant, use [New-AzTenantDeployment](/powershell/module/az.resources/new-aztenantdeployment?azure-portal=true&view=azps-4.4.0).
+* To deploy to a management group, use [New-AzManagementGroupDeployment](/powershell/module/az.resources/New-AzManagementGroupDeployment?azure-portal=true&view=azps-4.4.0&preserve-view=true).
+* To deploy to a tenant, use [New-AzTenantDeployment](/powershell/module/az.resources/new-aztenantdeployment?azure-portal=true&view=azps-4.4.0&preserve-view=true).
 
 In most cases, you target your deployment to a resource group (which is the focus of this module). When you need to apply policies or role assignments across a larger scope, you can target your deployment to a subscription, management group, or tenant.
 
@@ -34,7 +34,7 @@ In most cases, you target your deployment to a resource group (which is the focu
 
 The same deployment scopes exist for an Azure CLI deployment:
 
-* To deploy to a resource group, use [az deployment group create](/cli/azure/deployment/group?azure-portal=true&view=azure-cli-latest#az-deployment-group-create).
-* To deploy to a subscription, use [az deployment sub create](/cli/azure/deployment/sub?azure-portal=true&view=azure-cli-latest#az-deployment-sub-create).
-* To deploy to a management group, use [az deployment mg create](/cli/azure/deployment/mg?azure-portal=true&view=azure-cli-latest#az-deployment-mg-create).
-* To deploy to a tenant, use [az deployment tenant create](/cli/azure/deployment/tenant?azure-portal=true&view=azure-cli-latest#az-deployment-tenant-create).
+* To deploy to a resource group, use [az deployment group create](/cli/azure/deployment/group?azure-portal=true&view=azure-cli-latest#az-deployment-group-create&preserve-view=true).
+* To deploy to a subscription, use [az deployment sub create](/cli/azure/deployment/sub?azure-portal=true&view=azure-cli-latest#az-deployment-sub-create&preserve-view=true).
+* To deploy to a management group, use [az deployment mg create](/cli/azure/deployment/mg?azure-portal=true&view=azure-cli-latest#az-deployment-mg-create&preserve-view=true).
+* To deploy to a tenant, use [az deployment tenant create](/cli/azure/deployment/tenant?azure-portal=true&view=azure-cli-latest#az-deployment-tenant-create&preserve-view=true).

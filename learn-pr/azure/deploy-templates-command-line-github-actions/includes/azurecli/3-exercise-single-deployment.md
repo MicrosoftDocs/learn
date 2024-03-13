@@ -34,7 +34,7 @@ az group list -o table
 In this command, use the resource name that you got from the previous command. (It looks something like `learn-a73131a1-b618-48b8-af70-21af7ca420c4`.) This command allows you to omit that parameter from the rest of the Azure CLI commands in this exercise.
 
 > [!NOTE]
-> Normally, when you use an Azure CLI command to deploy a template, you need to specify the target resource group name.  In the exercise in this module, we're bypassing this requirement by setting the context of our deployment. We're specifying our sandbox resource group name in the next step by using the [az configure](/cli/azure/azure-cli-configuration?azure-portal=true&view=azure-cli-latest) Azure CLI command.
+> Normally, when you use an Azure CLI command to deploy a template, you need to specify the target resource group name.  In the exercise in this module, we're bypassing this requirement by setting the context of our deployment. We're specifying our sandbox resource group name in the next step by using the [az configure](/cli/azure/azure-cli-configuration?azure-portal=true&view=azure-cli-latest&preserve-view=true) Azure CLI command.
 
 ```azurecli
 az configure --defaults group={Resource Group Name}
@@ -112,7 +112,7 @@ In the following exercise, you deploy a template from your local machine. The na
     }
     ```
 
-1. After you save the file locally, you can use the Azure CLI command to deploy it at the resource group level that we talked about in the last unit. Namely, use [az deployment group create](/cli/azure/deployment/group?azure-portal=true&view=azure-cli-latest#az-deployment-group-create).
+1. After you save the file locally, you can use the Azure CLI command to deploy it at the resource group level that we talked about in the last unit. Namely, use [az deployment group create](/cli/azure/deployment/group?azure-portal=true&view=azure-cli-latest&preserve-view=true#az-deployment-group-create).
 
     > [!NOTE]
     > In the following example, the template file is in a **json** folder in the home drive in Windows Linux Subsystem (WSL2). Adjust your command based on your shell of choice.

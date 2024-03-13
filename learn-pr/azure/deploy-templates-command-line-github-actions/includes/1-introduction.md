@@ -18,7 +18,7 @@ After completing this module, you're able to:
 - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
 - [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true)
 - Either:
-  - The latest version of the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true&view=azure-cli-latest)
-  - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true&view=azure-cli-latest)
+  - The latest version of the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true&view=azure-cli-latest&preserve-view=true)
+  - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true&view=azure-cli-latest&preserve-view=true)
 - A [GitHub](https://github.com?azure-portal=true) account
 - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)

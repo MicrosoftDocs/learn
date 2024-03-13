@@ -31,7 +31,7 @@ Get-AzResourceGroup | where-object ResourceGroupName -match "learn" | Set-AzDefa
 In this command, use the resource name that you got from the previous command. (It looks like something like `learn-a73131a1-b618-48b8-af70-21af7ca420c4`.) This command allows you to omit that parameter from the rest of the Azure PowerShell commands in this exercise.
 
 > [!NOTE]
-> Normally, when you run a PowerShell or Azure CLI command to deploy a template, you must specify the target resource group name. Running the previous command, we've set the context of our deployment. We've specified our sandbox resource group name by running the [Set-AzDefault](/powershell/module/az.accounts/set-azdefault?azure-portal=true&view=azps-4.5.0) PowerShell command:
+> Normally, when you run a PowerShell or Azure CLI command to deploy a template, you must specify the target resource group name. Running the previous command, we've set the context of our deployment. We've specified our sandbox resource group name by running the [Set-AzDefault](/powershell/module/az.accounts/set-azdefault?azure-portal=true&view=azps-4.5.0&preserve-view=true) PowerShell command:
 >
 > ```powershell
 > Set-AzDefault -ResourceGroupName {Resource Group Name}
@@ -109,7 +109,7 @@ In the following exercise, you deploy a template from your local machine. The na
     }
     ```
 
-1. After you save the file locally, you can use the PowerShell command to deploy it at the resource group level that we talked about in the last unit. Namely, use the [New-AzResourceGroupDeployment](/powershell/module/az.resources/new-azresourcegroupdeployment?azure-portal=true&view=azps-4.4.0) command.
+1. After you save the file locally, you can use the PowerShell command to deploy it at the resource group level that we talked about in the last unit. Namely, use the [New-AzResourceGroupDeployment](/powershell/module/az.resources/new-azresourcegroupdeployment?azure-portal=true&view=azps-4.4.0&preserve-view=true) command.
 
     ```powershell
     $templateFile="C:\JSON\maintemplate.json"
