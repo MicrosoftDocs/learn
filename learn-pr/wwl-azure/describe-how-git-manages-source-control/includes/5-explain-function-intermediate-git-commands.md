@@ -12,7 +12,7 @@ If you’re the only one working in a branch or on a repository, and all of your
 
 
 > [!NOTE]
-> `git pull` updates the branch you’re currently working within. Make sure you run `git checkout` to the branch you want to update first.
+> `git pull` updates the branch you’re currently working within. Make sure you run `git checkout \<branch>` to the branch you want to update first.
 
 ## git merge
 
@@ -40,6 +40,8 @@ This is a training document.
 =======
 This is a note from a different branch in the same document.
 <p>:::blockquote-begin:::>>>>>> training:::blockquote-end:::</p>
+
+
 
 
 
