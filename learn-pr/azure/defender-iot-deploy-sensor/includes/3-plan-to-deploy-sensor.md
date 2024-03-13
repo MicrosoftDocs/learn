@@ -52,7 +52,7 @@ Select and enable each interface to be monitored. If you're unsure which interfa
 
 ### Upload activation file
 
-In the **Activation** tab upload the activation file you received from the deployment team.
+In the **Activation** tab upload the activation file you received from the deployment team. <!-- deployment team - team that handles deployment?? consitencey keep as is-->
 
 ### Define certificate settings
 

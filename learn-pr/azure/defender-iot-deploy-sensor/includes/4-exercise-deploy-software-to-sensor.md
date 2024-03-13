@@ -47,7 +47,7 @@ Connect to your VM to install the software.
     The installation boots and a wizard opens, for example:
 
     :::image type="content" source="../media/4-iot-iso-boot.png" alt-text="Screenshot of the installation wizard for mounting the ISO file on the OT sensor virtual machine" :::
-
+<!-- change width of the image, is it ok now?-->
 1. Select **Install iot-sensor_<version_number>**.
 
     The installation process takes 20-30 minutes. When the wizard completes the installation, it shows the default network details.
@@ -128,7 +128,7 @@ In the **Interface Configurations** tab:
 
 ### Upload activation file
 
-The activation tab is the section to upload the activation file received from the Deployment team.
+The activation tab is the section to upload the activation file received from the Deployment team. <!-- as in unit 3-->
 
 After rebooting, the VM opens to the **Defender for IoT | Overview** page. In the **Activation** tab:
 
