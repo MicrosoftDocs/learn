@@ -2436,6 +2436,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/monitor-troubleshoot-iot-solution-by-using-azure-monitor/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/use-iot-hub-apps-manage-iot-devices/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/contributor/contribute-docs-browser/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/contribute-to-docs-browser/",
       "redirect_document_id": false
@@ -29635,6 +29645,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-azure/examine-device-management-tools/3-device-management-using-azure-command-line-interface.md",
+      "redirect_url": "/training/modules/examine-device-management-tools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-device-management-tools/4-device-management-using-azure-iot-tools-visual-studio-code.md",
+      "redirect_url": "/training/modules/examine-device-management-tools",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/deploy-model-batch-endpoint/1b-video.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/deploy-model-batch-endpoint",
       "redirect_document_id": false
@@ -31347,6 +31367,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-azure/examine-azure-iot-solution-monitoring-logging/2-azure-monitor-alerts-log-analytics.md",
+      "redirect_url": "/training/modules/examine-azure-iot-solution-monitoring-logging/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-iot-solution-monitoring-logging/3-iot-hub-metrics.md",
+      "redirect_url": "/training/modules/examine-azure-iot-solution-monitoring-logging/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-iot-solution-monitoring-logging/4-set-up-resource-logs.md",
+      "redirect_url": "/training/modules/examine-azure-iot-solution-monitoring-logging/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-iot-solution-monitoring-logging/5-device-connection-state-lifecycle-notifications.md",
+      "redirect_url": "/training/modules/examine-azure-iot-solution-monitoring-logging/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-iot-solution-monitoring-logging/6-quotas-throttling.md",
+      "redirect_url": "/training/modules/examine-azure-iot-solution-monitoring-logging/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-iot-solution-monitoring-logging/7-knowledge-check.md",
+      "redirect_url": "/training/modules/examine-azure-iot-solution-monitoring-logging/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-iot-solution-monitoring-logging/8-summary.md",
+      "redirect_url": "/training/modules/examine-azure-iot-solution-monitoring-logging/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/challenge-project-classes-methods-properties/index.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
       "redirect_document_id": false
@@ -31749,6 +31804,26 @@
   {
     "source_path": "learn-pr/achievements/learn.partner-center.badge.yml",
     "redirect_url": "https://learn.microsoft.com/partner-center/overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/troubleshoot-device-connections-communication/2-device-side-connectivity-management.md",
+    "redirect_url": "/training/modules/troubleshoot-device-connections-communication/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/troubleshoot-device-connections-communication/3-troubleshoot-guide-device-communication.md",
+    "redirect_url": "/training/modules/troubleshoot-device-connections-communication/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/troubleshoot-device-connections-communication/4-knowledge-check.md",
+    "redirect_url": "/training/modules/troubleshoot-device-connections-communication/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/troubleshoot-device-connections-communication/5-summary.md",
+    "redirect_url": "/training/modules/troubleshoot-device-connections-communication/",
     "redirect_document_id": false
   },
   {

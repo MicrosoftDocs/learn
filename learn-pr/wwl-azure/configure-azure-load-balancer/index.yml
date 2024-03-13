@@ -14,7 +14,6 @@ metadata:
 title: Configure Azure Load Balancer
 summary: |
   Learn how to configure an internal or public load balancer.
-  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   In this module, you learn how to:
   - Identify features and usage cases for Azure Load Balancer.
