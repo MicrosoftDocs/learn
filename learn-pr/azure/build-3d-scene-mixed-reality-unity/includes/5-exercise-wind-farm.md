@@ -65,7 +65,7 @@ When you create a Developer Key, be sure to select **Basic** as the key type and
 1. In the Scene, you should have both the Static and Dynamic terrain loaded. Navigate the Scene using your mouse and/or keyboard.
 
     > [!NOTE]
-    > When you're navigating in the Scene panel, you might find that your assets of interest become set in awkward positions. To return focus and zoom to a particular aAsset, select the object in the Hierarchy panel, then click in the Scene window. Next, press **Shift+F**, and your Scene will center on and zoom in to the selected Asset. You can achieve the same effect by double-clicking an asset in the Hierarchy panel.
+    > When you're navigating in the Scene panel, you might find that your assets of interest become set in awkward positions. To return focus and zoom to a particular asset, select the object in the Hierarchy panel, then click in the Scene window. Next, press **Shift+F**, and your Scene will center on and zoom in to the selected Asset. You can achieve the same effect by double-clicking an asset in the Hierarchy panel.
   
 1. Select the **Play** button and navigate the Game panel.  
 
