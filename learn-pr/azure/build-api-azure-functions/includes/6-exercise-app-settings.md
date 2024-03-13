@@ -2,7 +2,9 @@ It's time to put some gasoline in this API engine and fire it up. That's an anal
 
 ## Get the database connection string
 
-1. Paste the following code into Azure Cloud Shell on the right and press <kbd>Enter</kbd>.
+1. When you open the sandbox, part of that process creates the database and populates it with sample data. The database connection string is created during that process.
+
+1. After you open the sandbox, paste the following code into Azure Cloud Shell and press <kbd>Enter</kbd> to get the connection string.
 
    ```bash
    cd mslearn-build-api-azure-functions/DB_SETUP && ./GET_CONNECTION_STRING.sh
@@ -23,14 +25,14 @@ It's time to put some gasoline in this API engine and fire it up. That's an anal
        "AzureWebJobsStorage": "",
        "FUNCTIONS_WORKER_RUNTIME": "node",
        "AzureWebJobsFeatureFlags": "EnableWorkerIndexing",
-       "CONNECTION_STRING": "PASTE YOUR CONNECTION STRING HERE"
+       "CONNECTION_STRING": "<YOUR-CONNECTION-STRING>"
      }
    }
    ```
 
 ## Examine the productsService for the connection string
 
-Open the `api/services/product.services.ts` file.
+Open the `api/src/services/product.services.ts` file.
 
 Look at line 4. Notice that the connection string is read from the `process.env` variable.
 

@@ -2,6 +2,12 @@ Tailwind Traders had planned on building a traditional API, but you deftly point
 
 It's time to deliver on those lofty buzzwords. Now, you need to create a new project in Azure Functions that will be the HTTP API for the *Products Manager* app. That means creating the Azure Functions project, complete with all of the endpoints that the Products Manager app is going to need to be able to create, read, update, and delete products.
 
+## Create a project with existing code
+
+This exercise provides you with a partially completed code base. When you create the new Azure Functions app, you need to leave the existing **`package.json`** file in place. The **`package.json`** file is the file that contains the project's dependencies. If you overwrite it, you'll lose the existing dependencies.
+
+This workflow was selected to give you a head start on the project. You'll be able to focus on the serverless code and the database integration code, rather than setting up the project from scratch.
+
 ## Create a new Azure Functions project
 
 1. In Visual Studio Code, open the Command Palette.
@@ -20,42 +26,11 @@ It's time to deliver on those lofty buzzwords. Now, you need to create a new pro
    | Select a TypeScript Programming Model | Model V4 |
    | Template      | HTTP trigger |
    | Name          | GetProducts  |
+   | Overwrite `package.json` | No |
 
 1. When asked to overwrite the `.gitignore` or `package.json` file, make sure you select **No**.
 
     The _functions_ folder in _api/src_ now contains a new Azure Functions app with a function at _api/src/functions/GetProducts.ts_. Several other required project files are also added, including `host.json` and `local.settings.json`.
-
-1. Replace the code in the *GetProducts.ts* file with the following code.
-
-   ```typescript
-    import { HttpRequest, HttpResponseInit, InvocationContext } from "@azure/functions";
-    import productService from "../services/product.services";
-    
-    export async function GetProducts(request: HttpRequest, context: InvocationContext): Promise<HttpResponseInit> {
-        context.log(`Http function processed request for url "${request.url}"`);
-        
-        try{
-            let products = await productService.read();
-            
-            return {
-                status: 200,
-                jsonBody: {
-                    products,
-                }
-            };
-        } catch (error: unknown) {
-            const err = error as Error;
-            context.error(`Error listing product: ${err.message}`);
-        
-            return {
-              status: 500,
-              jsonBody: {
-                error: "Failed to list products",
-              },
-            };
-        }
-    };
-   ```
 
 1. In the `src/index.ts`, add this import statement.
 
@@ -72,7 +47,6 @@ It's time to deliver on those lofty buzzwords. Now, you need to create a new pro
         handler: GetProducts
     });
     ```
-    
 
 ## Examine the Create, Update, and Delete functions
 
@@ -92,7 +66,7 @@ You can run and debug Azure Functions projects locally from within Visual Studio
   
 1. Select **Attach to Node Functions**.
 
-   The Azure Functions project will launch. Note that the terminal shows you on what URL the function is running.
+   The Azure Functions project will launch. Note that the terminal shows you the function app URL.
 
    :::image type="content" source="../media/functions-in-terminal.png" alt-text="Screenshot of the Visual Studio Code integrated terminal showing functions URLs." loc-scope="other"::: <!-- no-loc -->
 

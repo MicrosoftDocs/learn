@@ -1,12 +1,16 @@
-You're working on an API that connects to a database. Your API will connect to that database via a database connection string. In this module, you'll learn best practices for storing sensitive information like connection strings in an Azure Functions API.
+As a Tailwind Traders engineer, you're working on an API that connects to a database. Your API will connect to that database via a **database connection string**. In this module, you'll learn best practices for storing sensitive information like connection strings in an Azure Functions API.
 
-## Store connection strings in Azure Functions
+## Store connection strings as app setting
 
 It's a good idea to avoid hard-coding connection strings. You'll likely use the connection string across different files, and there's a chance that it could change in the future.
 
-You'll want to store the connection string as an app setting. App settings are specified in one place and referenced throughout the app. You can easily change them at any point in the future without having to change the code. App settings are never checked in to source control.
+You'll want to store the connection string as an app setting:
 
-An Azure Functions project has a `local.settings.json` file. This file contains a set of key/value pairs the app uses as configuration values. You can add your own items to the `Values` object. You can access those values from your code.
+* App settings are specified in one place and referenced throughout the app. 
+* You can easily change them at any point in the future without having to change the code. 
+* App settings are never checked in to source control.
+
+An Azure Functions project has a `local.settings.json` file. This file contains a set of key/value pairs the app uses as configuration values when developing locally. You can add your own items to the `Values` object. You can access those values from your code.
 
 ```json
 {
@@ -28,7 +32,7 @@ If you want to add a connection string, you can add another property called "CON
     "AzureWebJobsStorage": "",
     "FUNCTIONS_WORKER_RUNTIME": "node",
     "AzureWebJobsFeatureFlags": "EnableWorkerIndexing",
-    "CONNECTION_STRING": "PASTE YOUR CONNECTION STRING HERE"
+     "CONNECTION_STRING": "AccountEndpoint=https://tailwind-traders-7071.documents.azure.com:443/;AccountKey=123456;"
   }
 }
 ```
@@ -43,4 +47,4 @@ The following code found at `./api/src/services/product.services.ts` reads the c
 let client = new CosmosClient(process.env.CONNECTION_STRING);
 ```
 
-You now know how to securely store a connection string, and how to reference that string in your application.
+You now know how to securely store a connection string during local development, and how to reference that string in your application.
