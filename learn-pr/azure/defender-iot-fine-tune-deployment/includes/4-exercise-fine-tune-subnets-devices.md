@@ -8,7 +8,7 @@ What do we do here?
 
 First you analyze the traffic being monitored.
 
-1. Lon in to your sensor.
+1. Log in to your sensor.
 1. Select **System setting** > **Deployment**.
 1. Select **Analyze** to start the subnet analysis process.
 
@@ -54,9 +54,11 @@ you can update the subnets listed using the following options:
 |**Segregated**     |   Select to show this subnet separately when displaying the device map according to Purdue level.  |
 
 <!-- do we want to show changing a device?? or is that beyond the scope? must talk about this, but how much details??? change one ip setting? -->
+We recommend giving a meaningful name that specifies the subnet's network role. Subnet names can have up to 60 characters.
+
 When all of the subnets are correctly set up, select **Save** to save the updates.<!-- do we need to do anything to return to the deployment page? or are we on it already?-->
 
-Once any changes are made, the analysis should be run again to ensure the set-up is now correct.  <!-- is this the way to describe this. Or should be: Once all changes are made, select **Analyze** and review the results again. -->
+Once any changes are made, the analysis should be run again to ensure the set up is now correct.  <!-- is this the way to describe this. Or should be: Once all changes are made, select **Analyze** and review the results again. -->
 
 ## Add DHCP address ranges
 
