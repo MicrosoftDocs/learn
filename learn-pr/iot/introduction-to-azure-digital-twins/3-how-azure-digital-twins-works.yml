@@ -8,6 +8,6 @@ metadata:
   author: baanders
   ms.author: baanders
   ms.topic: unit
-durationInMinutes: 20
+durationInMinutes: 25
 content: |
   [!include[](includes/3-how-azure-digital-twins-works.md)]

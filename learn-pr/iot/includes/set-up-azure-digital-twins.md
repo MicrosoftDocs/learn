@@ -10,11 +10,12 @@ ms.service: digital-twins
 
 For a hands-on experience with Azure Digital Twins, this unit provides Azure CLI commands that you can run with an Azure subscription. If you don't have an Azure subscription already, [create one for free now](https://azure.microsoft.com/free).
 
-In another browser tab, navigate to the [Azure Cloud Shell](https://ms.portal.azure.com/#cloudshell/).
+In another browser window, navigate to the [Azure Cloud Shell](https://ms.portal.azure.com/#cloudshell/). The commands in this module are written for the Cloud Shell's bash environment, which may be selected already by default.
 
-Run the following commands in the Cloud Shell to set up your session and create a resource group to use for this unit. This also creates environment variables to store your subscription ID, resource group, and location in your Cloud Shell session for reuse in future module commands. There is one placeholder for your Azure subscription ID value. By default, your resource group will be named *azure-digital-twins-training* and it will be created in the *westus2* region.
+Run the following commands in the Cloud Shell to set up your session and create a resource group to use for this unit. This also creates environment variables to store your subscription ID, resource group, and location in your Cloud Shell session, for reuse in future commands throughout the module.  By default, your resource group will be named *azure-digital-twins-training* and it will be created in the *westus2* region. There is one placeholder for you to fill in your Azure subscription ID value.
 
 ```azurecli
+az login
 AZURE_SUBSCRIPTION="<your-Azure-subscription-ID>"
 RESOURCE_GROUP="azure-digital-twins-training"
 REGION="westus2"
@@ -42,3 +43,5 @@ Finally, run the following command to grant yourself the *Azure Digital Twins Da
 AZURE_USER=$(az ad signed-in-user show --query id -o tsv)
 az dt role-assignment create --dt-name $INSTANCE_NAME --assignee $AZURE_USER --role "Azure Digital Twins Data Owner"
 ```
+
+Now you have an Azure Digital Twins instance to use in this module, and permission to manage its data.

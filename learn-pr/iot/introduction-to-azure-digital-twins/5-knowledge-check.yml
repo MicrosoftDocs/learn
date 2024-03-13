@@ -8,7 +8,7 @@ metadata:
   author: baanders
   ms.author: baanders
   ms.topic: unit
-durationInMinutes: 7
+durationInMinutes: 5
 content: |
 quiz:
   questions:
@@ -36,7 +36,7 @@ quiz:
       explanation: Correct. Azure Data Explorer isn't needed to ingest device data into Azure Digital Twins. It's a great egress destination for digital twin data to enable digital twin queries over time.
   - content: A real estate developer already has digital models for their environment, created in the OWL language based on industry standards. Can they use their models in Azure Digital Twins?
     choices:
-    - content: Yes. Any model files can be imported into Azure Digital Twins.
+    - content: Yes, as is. Azure Digital Twins supports multiple industry standard model formats.
       isCorrect: false
       explanation: Incorrect. Although model files can be written in any text editor, they must be in DTDL format to work with Azure Digital Twins.
     - content: Yes, but they must first be converted to the DTDL language.
