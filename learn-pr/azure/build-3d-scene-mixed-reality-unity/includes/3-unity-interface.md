@@ -8,11 +8,11 @@ A. **Toolbar**: The toolbar provides a shortcut to the most essential features, 
 
 B. **Scene view**: The Scene view is the main work area, and allows you to visually navigate and edit your Scene.
 
-C. **Game view**: The Game view simulates what your final rendered game will look. When you select the Play button, the simulation begins.
+C. **Game view**: The Game view simulates how your final rendered game will look. When you select the Play button, the simulation begins.
 
 D. **Hierarchy window**: The Hierarchy window lists all GameObjects that exist in the current Scene.
 
-E. **Inspector window**: The Inspector window lists a selected GameObject or asset's properties.
+E. **Inspector window**: The Inspector window lists a selected GameObject's or asset's properties.
 
 F. **Project window**: The Project window lists all the assets, scenes, and scripts contained in your created project.
 
