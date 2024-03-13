@@ -24,7 +24,7 @@ quiz:
       explanation: "Correct. User-assigned identities exist independently from the resources they're associated with and must be explicitly deleted."
     - content: "Can only be associated with a single Azure resource"
       isCorrect: false
-      explanation: "Incorrect. The same user-assigned managed identity can be associated with more than one Azure resource.."
+      explanation: "Incorrect. The same user-assigned managed identity can be associated with more than one Azure resource."
   - content: "A client app requests managed identities for an access token for a given resource. Which of the following options is the basis for the token?"
     choices:
     - content: "Oauth 2.0"
