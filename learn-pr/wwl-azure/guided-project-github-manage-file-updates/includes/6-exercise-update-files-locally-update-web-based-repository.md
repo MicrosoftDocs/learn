@@ -72,6 +72,10 @@ Select the project1.md file in the Visual Studio Code explorer view and update t
 
 
 
+
+
+
+
 ```
 
 | **Command**            | **Action**                                                                        |
@@ -120,6 +124,10 @@ Now it's time to go through the same process for the second project. This time, 
 
 
 
+
+
+
+
 ```
 
 | **Command**                                                 | **Action**                                                                             |
@@ -162,6 +170,10 @@ Update the grades for projects 3 and 4 using the same method as for projects 1 a
 
 
 
+
+
+
+
 ```
 
 ### Project 4 grades
@@ -174,6 +186,10 @@ Update the grades for projects 3 and 4 using the same method as for projects 1 a
 | Quinn | 17 pts |
 | Sasa | 16 pts |
 | Mingkwan | 17 pts |
+
+
+
+
 
 
 
