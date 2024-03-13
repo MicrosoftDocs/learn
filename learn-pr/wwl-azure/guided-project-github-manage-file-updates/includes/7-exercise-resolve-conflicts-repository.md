@@ -12,15 +12,18 @@ Start by logging into GitHub at [https://github.com](https://github.com?azure-po
     
 3.  Edit the **project2.md** file.
 4.  Add another grade line for Monty below Mingkwan.
+    
     `| Monty | pts |`
 5.  Select **Commit changes**.
 6.  Select **Commit changes**.
 7.  Change your repository branch to **project34**.
 8.  Edit **project3.md** to add a grade line for Monty.
+    
     `| Monty | pts |`
 9.  Select **Commit changes**.
 10. Select **Commit changes**.
 11. Edit **project4.md** to add a grade line for Monty.
+    
     `| Monty | pts |`
 12. Select **Commit changes**.
 13. Select **Commit changes**.
@@ -100,6 +103,7 @@ You should receive a message about a conflict, and the file names in Visual Stud
 2.  Select Resolve in Merge Editor
 3.  Select Accept Current
 4.  In the Result panel, manually add a new line that gives Monty 12 pts
+    
     `| Monty | 12 pts |`
 5.  Select Complete Merge
 
@@ -111,6 +115,7 @@ You'll need to follow the same process for project4.md to give Monty credit for 
 2.  Select Resolve in Merge Editor
 3.  Select Accept Current
 4.  In the Result panel, manually add a new line that gives Monty 14 pts.
+    
     `| Monty | 14 pts |`
 5.  Select Complete Merge
 
