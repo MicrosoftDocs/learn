@@ -29,7 +29,7 @@ quiz:
     choices:
     - content: "A measure"
       isCorrect: false
-      explanation: "That's incorrect. A measure is a numeric value that is aggregated in the model"
+      explanation: "That's incorrect. A measure is a numeric value that is aggregated in the model."
     - content: "A hierarchy"
       isCorrect: true
       explanation: "That's correct. A hierarchy defines multiple levels of attributes."
