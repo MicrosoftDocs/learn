@@ -13,4 +13,4 @@ In this exercise, you'll enable Container insights for your AKS cluster using th
     :::image type="content" source="../media/3-unmonitored-clusters.png" lightbox="../media/3-unmonitored-clusters.png" alt-text="Screenshot of the onboarding page for unmonitored clusters.":::
 1. On the **Configure Container Insight** page, accept the default Log Analytics workspace which will be created for you, or select your own workspace from the drop-down list. Select **Create new** to create a new workspace.
 1. Select **Configure**.  
-   :::image type="content" source="../media/3-configure-container-insights-workspace.png" lightbox="../media/3-configure-container-insights-workspace.png" alt-text="Screenshot of the configure container insights page.":::  
+   :::image type="content" source="../media/3-configure-container-insights-workspace.png" lightbox="../media/3-configure-container-insights-workspace.png" alt-text="Screenshot of the Configure container insights page.":::  
