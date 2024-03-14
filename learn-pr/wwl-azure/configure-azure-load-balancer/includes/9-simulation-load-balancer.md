@@ -42,4 +42,3 @@ Your organization is migrating hub and spoke network topologies to Azure. As the
 > Select the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning. 
 
 [![Screenshot of the simulation page.](../media/simulation-traffic-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-104%20Exam%20Guide%20-%20Microsoft%20Azure%20Administrator%20Exercise%2010?azure-portal=true)
-
