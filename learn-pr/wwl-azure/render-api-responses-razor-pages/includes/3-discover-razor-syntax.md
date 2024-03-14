@@ -11,7 +11,7 @@ When an `@` symbol is followed by a Razor reserved keyword, it transitions into 
 Syntax | Output
 --- | ---
 `<p>@Username</p>` | Renders the value of `@Username` in the HTML output.
-`<p>@@Username</p>` | Renders "@@Username" in the HTML output.
+`<p>@@Username</p>` | Renders "@Username" in the HTML output. 
 
 HTML attributes and content containing email addresses don't treat the `@` symbol as a transition character. For example, the email addresses in the following code are untouched by Razor parsing:
 

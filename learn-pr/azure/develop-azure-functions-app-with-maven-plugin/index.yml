@@ -29,7 +29,7 @@ roles:
 products:
 - azure-functions
 subjects:
-- serverless-compute
+- serverless-computing
 units:
 - learn.develop-azure-functions-app-with-maven-plugin.1-introduction
 - learn.develop-azure-functions-app-with-maven-plugin.2-create-azure-function-maven-archetype

@@ -30,7 +30,7 @@ products:
   - azure
   - azure-cyclecloud
 subjects:
-- high-performance-computing
+- infrastructure
 - cloud-computing
 units:
 - learn.azure.customize-clusters-azure-cyclecloud.introduction
