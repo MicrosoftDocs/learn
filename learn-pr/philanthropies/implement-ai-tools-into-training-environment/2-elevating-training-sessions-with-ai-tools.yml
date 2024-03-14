@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.implement-ai-tools-into-training-environment.elevating-training-sessions-with-ai-tools
+title: Elevating training sessions with AI Tools
+metadata:
+  title: Elevating training sessions with AI Tools
+  description: This content is a part of the 'Implement AI tools into a training environment' module.
+  ms.date: 03/11/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-elevating-training-sessions-with-ai-tools.md)]

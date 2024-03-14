@@ -1,6 +1,6 @@
 Your developer team needed you to implement various methods in pre-existing stubbed out services to connect their chat bot Blazor web application to Azure OpenAI's conversational interface and Azure Cosmos DB for NoSQL data storage.
 
-Both Azure OpenAI and Azure Cosmos DB for NoSQL have .NET SDKs available to access their endpoints and perform common operations.
+Both Azure OpenAI and Azure Cosmos DB for NoSQL have .NET software development kits (SDKs) available to access their endpoints and perform common operations.
 
 You implemented service classes using the `Microsoft.Azure.Cosmos` and `Azure.AI.OpenAI` packages on NuGet. You sent prompts to the Azure OpenAI conversational interface along with contextual prefixes and parsed the usage and body properties of the response. You also used Azure Cosmos DB for NoSQL to store the conversation sessions and messages within a single container.
 
@@ -16,4 +16,4 @@ With the .NET SDKs for Azure Cosmos DB for NoSQL and Azure OpenAI, you were able
   - [Azure OpenAI](/azure/cognitive-services/openai/chatgpt-quickstart)
 - **Developer reference**
   - [Blazor](/aspnet/core/blazor/)
-  - [GPT 3.5 Turbo in Azure OpenAI](/azure/cognitive-services/openai/how-to/chatgpt)
+  - [ChatGPT 3.5 Turbo in Azure OpenAI](/azure/cognitive-services/openai/how-to/chatgpt)

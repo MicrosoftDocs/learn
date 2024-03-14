@@ -6,7 +6,7 @@ metadata:
   ms.date: 06/15/2023
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure
 title: Explore fundamentals of real-time analytics
 summary: Learn about the basics of stream processing, and the services in Microsoft Azure that you can use to implement real-time analytics solutions.

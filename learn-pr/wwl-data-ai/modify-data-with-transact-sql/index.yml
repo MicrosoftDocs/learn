@@ -39,8 +39,6 @@ products:
 - azure-sql-managed-instance
 - azure-sqlserver-vm
 - azure-sql-virtual-machines
-subjects:
-- development-tools
 units:
 - learn.wwl.modify-data-with-transact-sql.introduction
 - learn.wwl.modify-data-with-transact-sql.insert-data

@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/09/2023
   author: garvct
   ms.author: cogarvey
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: virtual-machines
 title: Optimizing tightly coupled HPC applications on HBv2, HC, and HB series virtual machines
 summary: This module provides you with guidance on choosing the right SKU for your high-performance computing (HPC) applications, and how to build and run highly optimized and tightly coupled HPC applications.
@@ -30,7 +30,7 @@ products:
 - azure
 subjects:
 - virtual-machine
-- high-performance-computing
+- infrastructure
 units:
 - learn.azure.optimize-hpc-application-azure-virtual-machines-series.1-introduction
 - learn.azure.optimize-hpc-application-azure-virtual-machines-series.2-selecting-the-right-hpc-sku

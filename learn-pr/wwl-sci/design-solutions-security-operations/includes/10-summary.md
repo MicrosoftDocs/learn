@@ -15,7 +15,7 @@ You've learned how to:
 - [Workspace architecture best practices for Microsoft Sentinel | Microsoft Learn](/azure/sentinel/best-practices-workspace-architecture)
 - [Microsoft cloud security benchmark - Logging and threat detection | Microsoft Learn](/security/benchmark/azure/mcsb-logging-threat-detection)
 - [Azure Monitor overview](/azure/azure-monitor/overview)
-- [Evaluate and pilot Microsoft Defender XDR, an XDR solution | Microsoft Learn](https://learn.microsoft.com/microsoft-365/security/defender/eval-overview?view=o365-worldwide)
+- [Evaluate and pilot Microsoft Defender XDR, an XDR solution | Microsoft Learn](/microsoft-365/security/defender/eval-overview?view=o365-worldwide)
 - [Introduction to automation in Microsoft Sentinel | Microsoft Learn](/azure/sentinel/automation)
 - [Microsoft cloud security benchmark - Incident Response | Microsoft Learn](/security/benchmark/azure/mcsb-incident-response)
 - [Understand threat intelligence in Microsoft Sentinel | Microsoft Learn](/azure/sentinel/understand-threat-intelligence?source=recommendations)

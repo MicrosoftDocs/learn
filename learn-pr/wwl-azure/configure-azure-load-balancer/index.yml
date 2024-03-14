@@ -3,17 +3,17 @@ uid: learn.wwl.configure-azure-load-balancer
 metadata:
   title: Configure Azure Load Balancer
   description: "Configure Azure Load Balancer"
-  ms.date: 11/20/2023
+  ms.date: 03/01/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
   ms.custom:
   - N/A
   ms.service: load-balancer
+  ai-usage: ai-assisted
 title: Configure Azure Load Balancer
 summary: |
   Learn how to configure an internal or public load balancer.
-  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   In this module, you learn how to:
   - Identify features and usage cases for Azure Load Balancer.
@@ -30,8 +30,6 @@ roles:
 - administrator
 products:
 - azure-load-balancer
-subjects:
-- development-tools
 units:
 - learn.wwl.configure-azure-load-balancer.introduction
 - learn.wwl.configure-azure-load-balancer.determine-uses

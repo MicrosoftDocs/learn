@@ -10,10 +10,10 @@ metadata:
   ms.custom:
   - N/A
   ms.service: network-watcher
+  ai-usage: ai-assisted
 title: Configure Network Watcher
 summary: |
   You learn how to configure Network Watcher and troubleshoot common networking problems.
-  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   After completing this module, you'll be able to:
   *   Identify the features and usage cases for Azure Network Watcher.
