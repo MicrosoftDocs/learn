@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.use-ai-tools-to-create-inclusive-learning-environment.inclusive-and-accessible-learning
+title: Inclusive and accessible learning
+metadata:
+  title: Inclusive and accessible learning
+  description: This content is a part of the 'Use AI tools to create an inclusive learning environment' module.
+  ms.date: 03/11/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-inclusive-and-accessible-learning.md)]

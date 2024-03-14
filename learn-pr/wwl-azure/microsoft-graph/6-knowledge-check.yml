@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/02/2023
+  ms.date: 03/13/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
@@ -14,7 +14,7 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which HTTP method below is used to update a resource with new values?"
+  - content: "Which HTTP method is used to update a resource with new values?"
     choices:
     - content: "POST"
       isCorrect: false

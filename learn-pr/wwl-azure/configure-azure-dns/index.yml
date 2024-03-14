@@ -8,10 +8,10 @@ metadata:
   ms.author: cynthist
   ms.topic: module
   ms.service: dns
+  ai-usage: ai-assisted
 title: Configure Azure DNS
 summary: |
   Learn how to configure Azure DNS including custom domain names and record sets.
-  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   In this module, you learn how to:
   - Identify features and usage cases for domains, custom domains, and private zones.
