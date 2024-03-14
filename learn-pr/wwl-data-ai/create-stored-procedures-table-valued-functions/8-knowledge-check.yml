@@ -29,21 +29,21 @@ quiz:
     choices:
     - content: "Execute the stored procedure and view the recordset returned"
       isCorrect: false
-      explanation: "Incorrect. The recordset does not contain the value in the output parameter."
+      explanation: "Incorrect. The recordset doesn't contain the value in the output parameter."
     - content: "Declare a variable and pass it as an output parameter when you execute the stored procedure"
       isCorrect: true
       explanation: "Correct. You need to create a variable that will be populated with the value in the output parameter when the procedure is run."
     - content: "Declare a variable inside the stored procedure and then view it after you run the stored procedure"
       isCorrect: false
-      explanation: "Incorrect. You cannot view values in variables inside the stored procedure."
+      explanation: "Incorrect. You can't view values in variables inside the stored procedure."
   - content: "Where can you use a table-valued function?"
     choices:
     - content: "Only inside stored procedures"
       isCorrect: false
-      explanation: "Incorrect. Table-valued functions are not limited to stored procedures."
+      explanation: "Incorrect. Table-valued functions aren't limited to stored procedures."
     - content: "Anywhere in SQL that you can use a table"
       isCorrect: true
       explanation: "Correct. You can use a table-valued function anywhere in SQL that you can use a table."
     - content: "When you need to update rows"
       isCorrect: false
-      explanation: "Incorrect. Table-valued functions do not update rows."
+      explanation: "Incorrect. Table-valued functions don't update rows."
