@@ -206,48 +206,24 @@ To remove this - or any - Defender for Cloud extension, it's not enough to turn 
  -  **Enabling** auto provisioning, potentially impacts existing and future machines.
  -  **Disabling** auto provisioning for an extension, only affects the future machines - nothing is uninstalled by disabling auto provisioning.
 
-You can remove the extension using the REST API or a Resource Manager template as explained in the tabs below.
+You can remove the extension using the Azure Command-line interface (CLI) or a Resource Manager template as explained in the tabs below.
 
-`rest`
+1. Remove the Microsoft Defender for with the following commands:
 
-`https://management.azure.com/subscriptions/{{SubscriptionId}}/resourcegroups/{{ResourceGroup}}/providers/Microsoft.ContainerService/managedClusters/{{ClusterName}}?api-version={{ApiVersion}}`
+`Azure CLI`
 
-| **Name**       | **Description**                                  | **Mandatory** |
-| -------------- | ------------------------------------------------ | ------------- |
-| SubscriptionId | Cluster's subscription ID                        | Yes           |
-| ResourceGroup  | Cluster's resource group                         | Yes           |
-| ClusterName    | Cluster's name                                   | Yes           |
-| ApiVersion     | API version, must be &gt;= 2022-06-01 | Yes           |
+`az login`
 
-`Request body:`
+`az account set --subscription <subscription-id>`
 
-`{`
+`az aks update --disable-defender --resource-group <your-resource-group> --name <your-cluster-name>`
 
-`"location": "{{Location}}",`
+Removing the extension might take a few minutes.
 
-`"properties": {`
+2. To verify that the extension was successfully removed, run the following command:
 
-`"securityProfile": {`
+`Console`
 
-`"defender": {`
+`kubectl get pods -n kube-system | grep microsoft-defender`
 
-`"securityMonitoring": {`
-
-`"enabled": false`
-
-`}`
-
-`}`
-
-`}`
-
-`}`
-
-`}`
-
-Request body parameters:
-
-| **Name**                                                       | **Description**                                                                          | **Mandatory** |
-| -------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ------------- |
-| location                                                       | Cluster's location                                                                       | Yes           |
-| properties.securityProfile.defender.securityMonitoring.enabled | Determines whether to enable or disable Microsoft Defender for Containers on the cluster | Yes           |
+When the extension is removed, you should see that no pods are returned in the get pods command. It might take a few minutes for the pods to be deleted.
