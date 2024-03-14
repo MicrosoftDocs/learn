@@ -9,11 +9,11 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: windows
 title: Manage device authentication
-summary: In this module, you learn about device authentication and management in Microsoft Entra ID
+summary: In this module, you learn about device authentication and management in Microsoft Entra ID.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   - Describe Microsoft Entra join.
-  - Describe Microsoft Entra join prerequisites, limitations and benefits.
+  - Describe Microsoft Entra join prerequisites, limitations, and benefits.
   - Join device to Microsoft Entra ID.
   - Manage devices joined to Microsoft Entra ID.
 prerequisites: |
