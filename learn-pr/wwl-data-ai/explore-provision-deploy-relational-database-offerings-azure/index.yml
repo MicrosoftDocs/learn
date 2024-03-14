@@ -14,7 +14,7 @@ metadata:
 title: Explore relational database services in Azure
 summary: Microsoft Azure provides multiple services for relational databases. You can choose the relational database management system that's best for your needs, and host relational data in the cloud.
 abstract: |
-  In this module, you'll learn how to:
+  In this module, you learn how to:
 
   -   Identify options for Azure SQL services
 
