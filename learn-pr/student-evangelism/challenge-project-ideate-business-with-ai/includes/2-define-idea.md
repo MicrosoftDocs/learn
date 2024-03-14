@@ -50,7 +50,7 @@ An example of an idea to help in increasing productivity
 - Many people **struggle with managing their time and tasks effectively**, and often feel overwhelmed or stressed by their workload. I want to build an **AI-powered personal assistant app** that helps users plan, prioritize, and execute their tasks based on their goals, preferences, and deadlines. The app can also provide feedback, reminders, and suggestions to help users improve their productivity and well-being.
 
 ### Natural disasters & pandemics
-Think about some of the natural disasters which strucked in different parts of the world, and how technology can be used to mitigate or prevent.
+Think about some of the natural disasters that have struck in different parts of the world, and how technology can be used to mitigate or prevent.
 
 An example of an idea generated from natural causes
 - **Natural disasters such as earthquakes, floods, hurricanes, and wildfires can cause massive damage and loss of lives and are often hard to predict and prepare for**. I'm thinking of creating an **AI-powered early warning system** that can:
