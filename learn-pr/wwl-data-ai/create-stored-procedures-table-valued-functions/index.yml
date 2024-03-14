@@ -14,7 +14,7 @@ metadata:
 title: Create stored procedures and user-defined functions
 summary: Learn how to use Stored procedures to group T-SQL statements so they can be used and reused whenever needed. You may need to execute stored procedures that someone else has created or create your own.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
 
   -   Return results by executing stored procedures.
 

@@ -18,10 +18,10 @@ quiz:
     choices:
     - content: "Store the value in a temporary table"
       isCorrect: false
-      explanation: "Incorrect. Temporary tables do not automatically pass values to stored procedures."
+      explanation: "Incorrect. Temporary tables don't automatically pass values to stored procedures."
     - content: "Use an output parameter"
       isCorrect: false
-      explanation: "Incorrect. Output parameters do not pass values to stored procedures."
+      explanation: "Incorrect. Output parameters don't pass values to stored procedures."
     - content: "Use an input parameter"
       isCorrect: true
       explanation: "Correct. Input parameters are used as local variables within the body of the procedure."
