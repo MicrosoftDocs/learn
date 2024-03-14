@@ -8,7 +8,7 @@ metadata:
   ms.author: juliamuiruri
   ms.custom: team=nextgen
   ms.topic: module-challenge-project # Please don't edit, used for our analytics
-  ms.service: bing
+  ms.service: ms-copilot
 title: Challenge Project – Create a Business Model for your startup using Microsoft Copilot
 summary: Use Microsoft Copilot, Your everyday AI companion, to Create a Business Model for your Startup or business
 abstract: |
@@ -29,9 +29,9 @@ roles:
   - business-owner
   - startup-founder
 products: 
-- bing
+- ms-copilot
 subjects:
-  - digital-application-innovation
+  - app-development
 units:
 - learn.challenge-project-use-generative-ai-to-create-business-model-startup.introduction
 - learn.challenge-project-use-generative-ai-to-create-business-model-startup.prepare

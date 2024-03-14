@@ -12,7 +12,7 @@ Microsoft Copilot also tries to recommend other prompts that can help you explor
 
 You can select the suggestions from Microsoft Copilot to get more insights.
 
-![Screenshot showing bing suggestions.](../media/copilot-suggestions.png)
+![Screenshot showing microsoft copilot suggestions.](../media/copilot-suggestions.png)
 
 ## Next steps: Apply for Founders Hub
 
