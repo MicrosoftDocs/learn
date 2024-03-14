@@ -6,4 +6,4 @@ In this module, you learned some basic prompt creation techniques, explored some
 - Learn how to safely implement generative AI solutions in [Fundamentals of Responsible Generative AI.](/training/modules/responsible-generative-ai/)
 - Learn how adopting Microsoft AI can help your business, review [Transform your business with Microsoft AI.](/training/paths/transform-your-business-with-microsoft-ai/)
 - Learn how [Microsoft empowers responsible AI practices.](https://www.microsoft.com/ai/responsible-ai)
-- Explore the Microsoft [AI learning and community hub.](/ai/) 
+- Explore the Microsoft [AI learning and community hub.](/ai/)  
