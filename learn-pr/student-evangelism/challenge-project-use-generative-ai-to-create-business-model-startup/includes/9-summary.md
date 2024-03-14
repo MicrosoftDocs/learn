@@ -20,6 +20,6 @@ You have identified a real-world problem and identified potential customers with
 
 Microsoft for Startups Founders Hub helps startups radically accelerate innovation by providing access to industry-leading AI services, expert guidance, and the essential technology needed to build a future-proofed startup.
 
-Of course, this is the perfect opportunity 😃 for you to unlock extra resources and bring your startup into a reality, and guess what, you already have everything you need. Don't let this opportunity pass you.
+This is the perfect opportunity 😃 for you to unlock extra resources and bring your startup into a reality, and guess what, you already have everything you need. Don't let this opportunity pass you.
 
-Apply for the [Founders Hub program today](https://www.microsoft.com/startups?WT.mc_id=academic-110682-juliamuiruri)
+Apply for the [Founders Hub program today.](https://www.microsoft.com/startups?WT.mc_id=academic-110682-juliamuiruri)

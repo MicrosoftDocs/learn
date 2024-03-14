@@ -1,10 +1,10 @@
 
-Before jumping straight to building a product, a key step for a startup is to identify which customers the company tries to serve through its products and services. Remember, you can't really have any startup/ business without customers. With your idea in mind, think about the needs of your most important users and their attributes including demographics and categorization. Your most important customers could be:
+Before going straight to building a product, a key step for a startup is to identify which customers the company tries to serve through its products and services. Remember, you can't really have any startup/ business without customers. With your idea in mind, think about the needs of your most important users and their attributes including demographics and categorization. Your most important customers could be:
 
 1. **A mass market** - Your product considered to serve a wide view of potential users with no specific attributes.
 1. **A niche market** - Your product is customized for uses with a specialized need and characteristics.
 1. **Segmented market** - Looking at an existing customer segment, your product is highly customized for a distinguished portion of the customer group.
-1. **Diverse market** - Your product(s) serve multiple customers with different needs and characteristics.
+1. **Diverse market** - Your product serve multiple customers with different needs and characteristics.
 
 > [!NOTE]
 > Steps to add prompts
@@ -77,6 +77,6 @@ Please summarize the main points of your response in short bullet points.
 
 **Sample Response**
 
-Below is a sample response from Microsoft Copilot
+Below is a sample response from Microsoft Copilot.
 
 ![Screenshot showing sample response on customer relations.](../media/customer-relations.png)

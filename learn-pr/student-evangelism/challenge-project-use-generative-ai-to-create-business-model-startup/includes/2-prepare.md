@@ -39,7 +39,7 @@ You do the same to Microsoft Copilot by giving it the role you want it to play. 
 
 ### Steps
 
-1. Copy the sample prompt provided below and make any edits you want.
+1. Copy the sample prompt provided below and make any edits you want
 2. Paste it into Microsoft Copilot
 
 **Sample Prompt**
@@ -64,6 +64,6 @@ Below is a sample response from Microsoft Copilot.
 
 ## Note on Conversation Limits
 
-If you are on Microsoft Copilot with your personal profile in Microsoft Edge, you should have **30 conversation turns**. A conversation turn is a response from Microsoft Copilot, so basically this means that you get up to 30 responses in one conversation session. This tutorial takes around 24 conversation turns, leaving you with a few to explore as we go along. You can identify how many turns you have left by looking at your last conversation response, as shown below. If you see a lower number (like 10), make sure you log into the Microsoft Edge Browser with your personal profile.
+If you are on Microsoft Copilot with your personal profile in Microsoft Edge, you should have **30 conversation turns**. A conversation turn is a response from Microsoft Copilot, so basically this means that you get up to 30 responses in one conversation session. This tutorial takes around 24 conversation turns, leaving you with a few to explore as we go along. You can confirm how many turns you have remaining by looking at your last conversation response, as shown below. If you see a lower number (like 10), make sure you log into the Microsoft Edge Browser with your personal profile.
 
 ![Screenshot showing conversation turn limits.](../media/conversation-limits.png)

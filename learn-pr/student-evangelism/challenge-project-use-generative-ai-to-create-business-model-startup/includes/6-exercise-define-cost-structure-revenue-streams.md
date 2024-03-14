@@ -6,7 +6,7 @@
 > 1. Paste it into Microsoft Copilot
 
 ## Cost Structure
-As a founder, it's important to understand the monetary consequences associated with delivering value to your customers. Going through this step helps you optimize your fixed and variable costs based on your key activities and explore ideas to minimize costs
+As a founder, it's important to understand the monetary consequences associated with delivering value to your customers. Going through this step helps you optimize your fixed and variable costs based on your key activities and explore ideas to minimize costs.
 
 **Sample Prompt**
 
@@ -22,7 +22,7 @@ Below is a sample response from Microsoft Copilot.
 ![Screenshot showing sample response on cost structure.](../media/cost-structure.png)
 
 ## Revenue Streams
-The final step involves thinking about how the startup generates income from each of the identified customer segments. You'll explore the different sources and methods you can use to generate revenue, and reasonable pricing models for your products/ services to your different customer segments.
+The final step involves thinking about how the startup generates income from each of the identified customer segments. You explore the different sources and methods you can use to generate revenue, and reasonable pricing models for your products/ services to your different customer segments.
 
 Some of revenue generation methods include:-
 

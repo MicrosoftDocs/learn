@@ -61,7 +61,7 @@ This should pull together all your written content for you. You can always revis
 
 ## Creating your final output
 
-We created a bunch of content. We'll use a PowerPoint template to bring all that content together.
+We created a bunch of content. We use a PowerPoint template to bring all that content together.
 
 ### Steps
 
@@ -76,4 +76,4 @@ We created a bunch of content. We'll use a PowerPoint template to bring all that
 
 ## Completed
 
-Congrats! We're excited to see what you created. This exercise taught some basic prompt creation techniques, highlighted some Microsoft Copilot capabilities, and provided an introduction to the capabilities of Generative AI (Large Language Models), whether it be completion, transformation, conversation or summarizing.
+Congrats! We're excited to see what you created. This exercise taught some basic prompt creation techniques, highlighted some Microsoft Copilot capabilities, and provided an introduction to the capabilities of Generative AI (Large Language Models), whether it be completion, transformation, conversation, or summarizing.

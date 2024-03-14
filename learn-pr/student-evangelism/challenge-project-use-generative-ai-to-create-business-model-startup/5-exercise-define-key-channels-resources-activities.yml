@@ -9,7 +9,7 @@ metadata:
   ms.author: juliamuiruri
   ms.custom: team=nextgen
   ms.topic: unit
-  ms.service: ms-copilot
+  ms.service: bing
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-define-key-channels-resources-activities.md)]

@@ -1,5 +1,5 @@
 
-This step guides you through identifying how you'll reach your identified customers to create awareness of your unique value proposition and interact with them. 
+This step guides you through identifying how you reach your identified customers to create awareness of your unique value proposition and interact with them. 
 
 To ensure a successful startup, you need to identify effective channels that will be fast, efficient and cost effective.
 
@@ -26,7 +26,7 @@ Below is a sample response from Microsoft Copilot.
 
 ## Key Activities
 
-In this step, you'll start thinking about the practical actions that need to be undertaken in order for you deliver your value proposition to your customers. Use this section to list down and prioritize the important activities that need to be completed.
+In this step, you start thinking about the practical actions that need to be undertaken in order for you deliver your value proposition to your customers. Use this section to list down and prioritize the important activities that need to be completed.
 
 The activities you list here should directly lead to meeting customer needs and generating revenue for the startup.
 
@@ -67,7 +67,7 @@ Below is a sample response from Microsoft Copilot.
 
 Launching a startup often has its own risks associated with it and innovators need to establish critical partnerships to help reduce these risks and work to optimize operations. This step guides you through thinking about key partnership opportunities and joining forces with business allies through strategic partnerships or joint ventures.
 
-These partners provide a network that your startup could potentially use to reduce risks and uncertainties to your business model, costs and streamline access to resources and capabilities that give you a competitive advantage
+These partners provide a network that your startup could potentially use to reduce risks and uncertainties to your business model, costs, and streamline access to resources and capabilities that give you a competitive advantage.
 
 **Sample Prompt**
 
