@@ -4,31 +4,35 @@ In this unit, you'll use the Query API to gather more information about the stat
 
 Start by reviewing the [Query API documentation](/rest/api/digital-twins/dataplane/query). The API contains one operation for running a query. The text of the query determines what digital twins are in the result.
 
-:::image type="content" source="../media/5-query.png" alt-text="Reference doc screenshot showing the Query operation." border="false" lightbox="../media/5-query.png":::
+:::image type="content" source="../media/5-query.png" alt-text="Reference doc screenshot showing the Query operation." border="true" lightbox="../media/5-query.png":::
 
 Queries are written in the SQL-like **Azure Digital Twins query language**, and can find twins by their models, properties, and relationships. You can also combine these parameters to further narrow down query results.
 
 ## Query by model
 
-First, try a query that finds twins based on their model. Say that you want to see all the power lines represented in your Azure Digital Twins instance.
+First, try a query that finds twins based on their model. Say that you want to see all the power lines from your energy grid represented in your Azure Digital Twins instance.
 
-From your Postman collections, start by opening the request template at **Data plane** > **query** > **POST Query Query Twins**.
+From your Postman collections, start by opening the request template at _Data plane > query > **POST Query Query Twins**_.
 
-In the **Params** tab, set the **api-version** value to *2023-10-31*. In the **Headers** tab, uncheck the **max-items-per-page**, **traceparent**, and **tracestate** options.
+Make the following changes in the template:
+* In the **Params** tab, set the **api-version** value to *2023-10-31*. 
+* In the **Headers** tab, uncheck the **max-items-per-page**, **traceparent**, and **tracestate** options.
+* In the **Body** tab, replace the contents with the following information. This query returns all twins that have a model of *dtmi:example:grid:transmission:powerLine;1*.
 
-In the **Body** tab, replace the contents with the following information. This query returns all twins that have a model of *dtmi:example:grid:transmission:powerLine;1*.
-
-```json
-{
-  "query": "SELECT * FROM DIGITALTWINS WHERE IS_OF_MODEL('dtmi:example:grid:transmission:powerLine;1')"
-}
-```
+  ```json
+  {
+    "query": "SELECT * FROM DIGITALTWINS WHERE IS_OF_MODEL('dtmi:example:grid:transmission:powerLine;1')"
+  }
+  ```
 
 Send the request.
 
+>[!TIP]
+>If your data plane bearer token from [Unit 2](2-configure-postman-api-collections.md) has expired, you'll get a *401 Unauthorized* error. Remember that you can re-run the `az account get-access-token --resource 0b07f429-9f4b-4714-9392-cc5e8e80c8b0` command to get a new token, and update it in the **Authorization** tab of your data plane Postman collection.
+
 The response from a successful request looks something like this:
 
-:::image type="content" source="../media/5-query-query-twins-model.png" alt-text="Postman screenshot showing the results of the Query Query Twins request with the model query." border="false" lightbox="../media/5-query-query-twins-model.png":::
+:::image type="content" source="../media/5-query-query-twins-model.png" alt-text="Postman screenshot showing the results of the Query Query Twins request with the model query." border="true" lightbox="../media/5-query-query-twins-model.png":::
 
 This 200 response contains a list of digital twins in JSON format that meet the query criteria. In this case, it's a list of all the power lines in the instance (there are five).
 
@@ -38,7 +42,7 @@ Next, run some queries that find twins based on their property values.
 
 ### Query for undefined properties
 
-The *Power Line* model contains a property definition for *Capacity*. Although you imported several power line twins in [Unit 3](../3-upload-models-twins-graph-bulk.yml), they don't all have a value set for this property. The query in this section builds on the model query from the previous section and adds a provision to select only the power lines that don't have a value set for their capacity property.
+The *Power Line* model contains a property definition for *Capacity*. Although you imported several power line twins in [Unit 3](3-upload-models-twins-graph-bulk.md), they don't all have a value set for this property. The query in this section builds on the model query from the previous section and adds a provision to select only the power lines that don't have a value set for their capacity property.
 
 In the same request template of  **POST Query Query Twins**, edit the **Body** tab. Replace the contents with the following information. This query looks for power line twins that don't have a defined *Capacity* property.
 
@@ -55,7 +59,7 @@ The 200 response from a successful request looks very similar to the response fr
 You can use queries like this to make sure your digital twin representation is fully populated.
 
 >[!TIP]
->You learned how to update a twin property in [Unit 4](../4-update-graph-elements.yml). For a challenge exercise, try using the *$dtId* values in the query result along with that process to update the *Capacity* property on each twin that's missing it.
+>You learned how to update a twin property in [Unit 4](4-update-graph-elements.md). For a challenge exercise, try using the *$dtId* values in the query result along with that process to update the *Capacity* property on each twin that's missing it.
 
 ### Query by value
 
@@ -73,7 +77,7 @@ In the same request template of  **POST Query Query Twins**, edit the **Body** t
 
 The 200 response from a successful request only contains one twin, *pl_distribute*.
 
-:::image type="content" source="../media/5-query-query-twins-property.png" alt-text="Postman screenshot showing the results of the Query Query Twins request with the property query." border="false" lightbox="../media/5-query-query-twins-property.png":::
+:::image type="content" source="../media/5-query-query-twins-property.png" alt-text="Postman screenshot showing the results of the Query Query Twins request with the property query." border="true" lightbox="../media/5-query-query-twins-property.png":::
 
 You can use queries like this to verify your twin graph. You can also use them to check for irregularities in live properties that are set by devices in a fully connected solution.
 
@@ -95,6 +99,6 @@ Send the request.
 
 The 200 response from a successful request contains six *Delivery Substation* twins. You can see in the twin details that they all also have a *Capacity* value of 0.
 
-:::image type="content" source="../media/5-query-query-twins-relationship.png" alt-text="Postman screenshot showing the results of the Query Query Twins request with the relationship query." border="false" lightbox="../media/5-query-query-twins-relationship.png":::
+:::image type="content" source="../media/5-query-query-twins-relationship.png" alt-text="Postman screenshot showing the results of the Query Query Twins request with the relationship query." border="true" lightbox="../media/5-query-query-twins-relationship.png":::
 
 You can use queries like this to verify relationships in your graph and understand how different twins impact each other.

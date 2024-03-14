@@ -8,7 +8,7 @@ Then, you'll use the Event Routes API to create a new **event route** that direc
 In a fully-connected Azure Digital Twins solution, endpoints and event routes are used to send twin data both inside and outside of Azure Digital Twins.
 
 The first step is to create an Azure Digital Twins endpoint, powered by one of these Azure event handling services:
-* Events Hubs
+* Event Hubs
 * Event Grid
 * Service Bus
 
@@ -19,7 +19,7 @@ From there, the event handling service at the endpoint receives the specified ev
 In this unit, you create an endpoint that's capable of using Event Grid to deliver Azure Digital Twins events outside of the service. Then, you create an event route that sends twin events to that endpoint. By setting up this event structure on the Azure Digital Twins side, you begin to lay the groundwork for a complete future solution where data is exported to and handled by external destinations. (Full configuration of these external destinations is out of scope for this module.)
 
 >[!TIP]
->For a complete end-to-end Azure Digital Twins data flow, including connected external services and sample Azure functions for handling data, see the following tutorial in the Azure Digital Twins documentation: [Build out an end-to-end solution](/azure/digital-twins/tutorial-end-to-end).
+>An in-depth exercise to set up the full data flow in Azure Digital Twins is included in Module 3 of this learning path, [Synchronize Azure Digital Twins with IoT Device Data](../../synchronize-azure-digital-twins-with-iot-device-data/index.yml).
 
 ## Create an endpoint
 
@@ -27,7 +27,7 @@ In this section, you use the Endpoints API to create a new endpoint in your Azur
 
 Start by reviewing the [Endpoints API documentation](/rest/api/digital-twins/controlplane/endpoints). Notice that unlike previous API sets used so far in this module, the Endpoints API is part of the **Control plane** collection, because it's scoped beyond Azure Digital Twins and needs to interact with other Azure resources in your subscription. The API contains operations for creating/updating, deleting, getting, and listing endpoints.
 
-:::image type="content" source="../media/6-endpoints.png" alt-text="Reference doc screenshot showing the Endpoints operations." border="false" lightbox="../media/6-endpoints.png":::
+:::image type="content" source="../media/6-endpoints.png" alt-text="Reference doc screenshot showing the Endpoints operations." border="true" lightbox="../media/6-endpoints.png":::
 
 ### Prepare the endpoint resource
 
@@ -35,51 +35,51 @@ Next, create an Event Grid topic in Azure. Later, you'll register this Event Gri
 
 In a browser tab, navigate to the [Azure Cloud Shell](https://ms.portal.azure.com/#cloudshell/).
 
-Run the following command in the Cloud Shell to create an Event Grid topic. There's a placeholder to name your new Event Grid topic.
+Run the following command in the Cloud Shell to create an Event Grid topic. This command uses the console variables defined in previous units for `$RESOURCE_GROUP` and `$REGION`.
 
 ```azurecli
-    az eventgrid topic create --resource-group $RESOURCE_GROUP --location $REGION --name <name-for-your-event-grid-topic> 
+EVENT_GRID_TOPIC="event-grid-smart-building$RANDOM"
+az eventgrid topic create --resource-group $RESOURCE_GROUP --location $REGION --name $EVENT_GRID_TOPIC
 ```
 
 Copy and save the value of `endpoint` in the result, as you'll need it for a request parameter in the next section.
 
-Next, run the following command to get the shared access keys of the topic. There's a placeholder for you to enter the name you chose for your Event Grid topic.
+Next, run the following command to get the shared access keys of the topic.
 
 ```azurecli
-    az eventgrid topic key list --name <name-of-your-event-grid-topic> --resource-group $RESOURCE_GROUP
+az eventgrid topic key list --name $EVENT_GRID_TOPIC --resource-group $RESOURCE_GROUP
 ```
 
 Copy and save the value of `key1` in the result, as you'll need it for a request parameter in the next section.
 
 ### Send the endpoint request
 
-From your Postman collections, start by opening the request template at **Control plane** > **subscriptions** > **{subscriptionId}** > **resourceGroups** > **{resourceGroupName}** > **providers** > **Microsoft.DigitalTwins** > **digitalTwinsInstances** > **{resourceName}** > **endpoints** > **{endpointName}** > **PUT Digital Twins Endpoint Create Or Update**.
+Return to your Postman window. From your Postman collections, start by opening the request template at _Control plane > subscriptions > {subscriptionId} > resourceGroups > {resourceGroupName} > providers > Microsoft.DigitalTwins > digitalTwinsInstances > {resourceName} > endpoints > {endpointName} > **PUT Digital Twins Endpoint Create Or Update**_.
 
-In the **Params** tab, set the **api-version** value to *2023-01-31*. This is a different API version than previous calls in this module, because this is the latest version of the control plane API set.
+Make the following changes in the template:
+* In the **Params** tab, set the **api-version** value to *2023-01-31*. This is a different API version than previous calls in this module, because this is the latest version of the control plane API set.
+  * Fill the **subscriptionId**, **resourceGroupName**, and **resourceName** with the name of your subscription, resource group, and Azure Digital Twins instance. (You can find these values in the `$AZURE_SUBSCRIPTION`, `$RESOURCE_GROUP`, and `$INSTANCE_NAME` console variables, or by searching for your instance in the [Azure portal](https://portal.azure.com) and pulling up its details.) Fill **endpointName** with a friendly name for your endpoint, like *trainingtestendpoint*.
+* In the **Body** tab, replace the contents with the following information, and fill the placeholders with the endpoint and key values you saved in the previous section. This says that you want to create an Event Grid-type endpoint, and provides the information needed to find and authenticate with it.
 
-Fill the **subscriptionId**, **resourceGroupName**, and **resourceName** with the name of your subscription, resource group, and Azure Digital Twins instance. (You can find these values again if you need to by searching for your instance in the [Azure portal](https://portal.azure.com) and pulling up its details.) Fill **endpointName** with a name for your endpoint.
-
-In the **Body** tab, replace the contents with the following information, and fill the placeholders with the values you saved in the previous section. This says that you want to create an Event Grid-type endpoint, and provides the information needed to find and authenticate with it.
-
-```json
-{
-  "properties": {
-    "endpointType": "EventGrid",
-    "TopicEndpoint": "<saved-endpoint-value>",
-    "authenticationType": "KeyBased",
-    "accessKey1": "<saved-key1-value>"
+  ```json
+  {
+    "properties": {
+      "endpointType": "EventGrid",
+      "TopicEndpoint": "<saved-endpoint-value>",
+      "authenticationType": "KeyBased",
+      "accessKey1": "<saved-key1-value>"
+    }
   }
-}
-```
+  ```
 
 Send the request.
 
 >[!TIP]
->If your control plane bearer token from [Unit 2](../2-configure-postman-api-collections.yml) has expired, remember that you can re-run the `az account get-access-token --resource https://management.azure.com/` command to get a new one.
+>If your control plane bearer token from [Unit 2](2-configure-postman-api-collections.md) has expired, you'll get a *401 Unauthorized* error. Remember that you can re-run the `az account get-access-token --resource https://management.azure.com/` command to get a new token, and update it in the **Authorization** tab of your control plane Postman collection.
 
 The response from a successful request looks something like this:
 
-:::image type="content" source="../media/6-digital-twins-endpoint-create-or-update.png" alt-text="Postman screenshot showing the results of the Digital Twins Endpoint Create Or Update request." border="false" lightbox="../media/6-digital-twins-endpoint-create-or-update.png":::
+:::image type="content" source="../media/6-digital-twins-endpoint-create-or-update.png" alt-text="Postman screenshot showing the results of the Digital Twins Endpoint Create Or Update request." border="true" lightbox="../media/6-digital-twins-endpoint-create-or-update.png":::
 
 This 201 response contains information about the endpoint that has been created. In the screenshot shown above, the `provisioningState` shows a value of *Provisioning*, which indicates that the endpoint is still in the process of being created.
 
@@ -89,13 +89,15 @@ In this section, you check the status of the endpoint to verify when it is finis
 
 From the same Postman collection folder, open the request template for **GET Digital Twins Endpoint Get**.
 
-In the **Params** tab, set the **api-version** value to *2023-01-31*. Fill the **subscriptionId**, **resourceGroupName**, and **resourceName** with the name of your subscription, resource group, and Azure Digital Twins instance, and fill **endpointName** with the name that you chose for your endpoint.
+Make the following changes in the template:
+* In the **Params** tab, set the **api-version** value to *2023-01-31*. 
+  * Fill the **subscriptionId**, **resourceGroupName**, and **resourceName** with the name of your subscription, resource group, and Azure Digital Twins instance. Fill **endpointName** with the friendly name that you chose for your endpoint (the default suggestion was *trainingtestendpoint*).
 
 Send the request.
 
 The response from a successful request looks something like this:
 
-:::image type="content" source="../media/6-digital-twins-endpoint-get.png" alt-text="Postman screenshot showing the results of the Digital Twins Endpoint Get request." border="false" lightbox="../media/6-digital-twins-endpoint-get.png":::
+:::image type="content" source="../media/6-digital-twins-endpoint-get.png" alt-text="Postman screenshot showing the results of the Digital Twins Endpoint Get request." border="true" lightbox="../media/6-digital-twins-endpoint-get.png":::
 
 This 200 response contains information about the endpoint. Look for the `provisioningState` field. If the value is *Succeeded*, the endpoint is finished provisioning and you can proceed to the next section. If it still says *Provisioning,* wait a few minutes and repeat this section.
 
@@ -107,31 +109,35 @@ In this section, you'll use the Event Routes API to create a new event route tha
 
 Start by reviewing the [Event Routes API documentation](/rest/api/digital-twins/dataplane/event-routes). This is a data plane API that contains operations for adding, deleting, getting, and listing event routes.
 
-:::image type="content" source="../media/7-event-routes.png" alt-text="Reference doc screenshot showing the Event Routes operations." border="false" lightbox="../media/7-event-routes.png":::
+:::image type="content" source="../media/7-event-routes.png" alt-text="Reference doc screenshot showing the Event Routes operations." border="true" lightbox="../media/7-event-routes.png":::
 
 ### Send the event route request
 
-From your Postman collections, start by opening the request template at **Data plane** > **eventroutes** > **{id}** > **PUT Event Routes Add**.
+From your Postman collections, start by opening the request template at _Data plane > eventroutes > {id} > **PUT Event Routes Add**_.
 
-In the **Params** tab, set the **api-version** value to *2023-10-31*. In the **id** field, enter a name for your new event route. In the **Headers** tab, uncheck the **traceparent** and **tracestate** options.
+Make the following changes in the template:
+* In the **Params** tab, set the **api-version** value to *2023-10-31*. In the **id** field, enter a friendly name for your new event route, such as *trainingtestroute*. 
+* In the **Headers** tab, uncheck the **traceparent** and **tracestate** options.
+* In the **Body** tab, replace the contents with the following information and fill in the friendly name of your endpoint from earlier in this unit (the default suggestion was *trainingtestendpoint*). This text creates an event route that sends twin update events to the endpoint.
 
-In the **Body** tab, replace the contents with the following information and fill in the name of your endpoint from earlier in this unit. This text creates an event route that sends twin update events to the endpoint.
+  >[!TIP]
+  >To create an event route that sends all event types, not just update events, you can use `"filter": "true"`. For more filter options, see [Supported route filters](/azure/digital-twins/how-to-create-routes?tabs=portal2%2Cportal3#supported-route-filters) in the Azure Digital Twins documentation.
 
->[!TIP]
->To create an event route that sends all event types with no specified filter, use `"filter": "true"`. For more filter options, see [Supported route filters](/azure/digital-twins/how-to-create-routes?tabs=portal2%2Cportal3#supported-route-filters) in the Azure Digital Twins documentation.
-
-```json
-{
-  "endpointName": "<endpoint-name>",
-  "filter": "type = 'Microsoft.DigitalTwins.Twin.Update'"
-}
-```
+  ```json
+  {
+    "endpointName": "<endpoint-name>",
+    "filter": "type = 'Microsoft.DigitalTwins.Twin.Update'"
+  }
+  ```
 
 Send the request.
 
+>[!TIP]
+>If your data plane bearer token from [Unit 2](2-configure-postman-api-collections.md) has expired, you'll get a *401 Unauthorized* error. Remember that you can re-run the `az account get-access-token --resource 0b07f429-9f4b-4714-9392-cc5e8e80c8b0` command to get a new token, and update it in the **Authorization** tab of your data plane Postman collection.
+
 The response from a successful request looks something like this:
 
-:::image type="content" source="../media/6-event-routes-add.png" alt-text="Postman screenshot showing the results of the Event Routes Add request." border="false" lightbox="../media/6-event-routes-add.png":::
+:::image type="content" source="../media/6-event-routes-add.png" alt-text="Postman screenshot showing the results of the Event Routes Add request." border="true" lightbox="../media/6-event-routes-add.png":::
 
 This 204 response doesn't show any details about the event route.
 
@@ -141,16 +147,18 @@ In this section, you retrieve information about the event route that you created
 
 From the same Postman collection folder, open the request template for **GET Event Routes Get By Id**.
 
-In the **Params** tab, set the **api-version** value to *2023-10-31*. In the **id** field, enter the event route name that you chose in the previous section. In the **Headers** tab, uncheck the **traceparent** and **tracestate** options.
+Make the following changes in the template:
+* In the **Params** tab, set the **api-version** value to *2023-10-31*. In the **id** field, enter the event route name that you chose in the previous section (the default suggestion was *trainingtestroute*).
+* In the **Headers** tab, uncheck the **traceparent** and **tracestate** options.
 
 Send the request.
 
 The response from a successful request looks something like this:
 
-:::image type="content" source="../media/6-event-routes-get-by-id.png" alt-text="Postman screenshot showing the results of the Event Routes Get by ID request." border="false" lightbox="../media/6-event-routes-get-by-id.png":::
+:::image type="content" source="../media/6-event-routes-get-by-id.png" alt-text="Postman screenshot showing the results of the Event Routes Get by ID request." border="true" lightbox="../media/6-event-routes-get-by-id.png":::
 
 This 200 response returns the details of your event route, including its ID, the endpoint where it connects, and any filters it applies.
 
 After this process, digital twin update events will be sent to the Event Grid endpoint. Event Grid is capable of sending the events to other Azure services for downstream processing, or for defining update logic for other twins in your Azure Digital Twins graph.
 
-In the scenario for this module, this is an important step towards keeping your Azure Digital Twins graph updated with data from your city grid environment. When digital twins representing consumers or power lines change their values, this information can be automatically exported to a Power BI report for stakeholders, or into a Logic Apps flow that emails flagged values to operators. You can also use endpoints and event routes to propagate a change throughout the graph, like if the capacity on a power line changes and you need to subsequently adjust the capacity of recipients that are fed by that power line. Creating endpoints and event routes is an important step towards building a responsive digital representation of your environment.
+In the scenario for this module, endpoints and event routes are the first step in keeping your Azure Digital Twins graph updated with data from your city grid environment. When digital twins that represent consumers or power lines change their values, this information can be exported automatically to a Power BI report for stakeholders, or into a Logic Apps flow that emails flagged values to operators. You can also use endpoints and event routes to propagate changes throughout the graph, like if the capacity on a power line changes and you need to subsequently adjust the capacity of recipients that are fed by that power line. Creating endpoints and event routes is an important step towards building a responsive digital representation of your environment.

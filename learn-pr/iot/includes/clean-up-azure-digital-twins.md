@@ -8,7 +8,7 @@ ms.service: digital-twins
 
 ## Clean up hands-on resources
 
-In your Cloud Shell, run the following command to delete the resources that you created in this module's hands-on exercises.
+In your Cloud Shell, run the following command to delete the Azure resources that you created in this module's hands-on exercises.
 
 ```azurecli
 az group delete --name $RESOURCE_GROUP

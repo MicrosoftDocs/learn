@@ -1,6 +1,6 @@
 In this unit, you set up data ingestion from a thermostat device in your building (represented here with a device simulator) into Azure Digital Twins. This process involves the resources shown in Flow A in this diagram:
 
-:::image type="content" source="../media/2-3-4-building-scenario.png" alt-text="Graph showing data flowing from a device into Azure Digital Twins, then throughout Azure Digital Twins." border="false" lightbox="../media/2-3-4-building-scenario.png":::
+:::image type="content" source="../media/2-3-4-building-scenario.png" alt-text="Graph showing data flowing from a device into Azure Digital Twins, then throughout Azure Digital Twins." border="true" lightbox="../media/2-3-4-building-scenario.png":::
 
 Data flow follows this path:
 1. The simulated device, *Thermostat 67*, produces temperature data.

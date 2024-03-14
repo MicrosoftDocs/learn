@@ -6,7 +6,7 @@ The sample scenario for this module is a smart building, which contains many roo
 
 Here's a diagram showing the data flow through multiple Azure services that's set up in this scenario.
 
-:::image type="content" source="../media/2-3-4-building-scenario.png" alt-text="Graph showing data flowing from a device into Azure Digital Twins, then throughout Azure Digital Twins." border="false" lightbox="../media/2-3-4-building-scenario.png":::
+:::image type="content" source="../media/2-3-4-building-scenario.png" alt-text="Graph showing data flowing from a device into Azure Digital Twins, then throughout Azure Digital Twins." border="true" lightbox="../media/2-3-4-building-scenario.png":::
 
 Flow A ingests device data into Azure Digital Twins. Data flow follows this path:
 1. The simulated device, *Thermostat 67*, produces temperature data.

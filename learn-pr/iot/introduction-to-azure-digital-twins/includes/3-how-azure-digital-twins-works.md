@@ -123,7 +123,7 @@ az dt twin relationship create --dt-name $INSTANCE_NAME --relationship contains 
 
 Here's a screenshot from Azure Digital Twins Explorer, displaying the graph in 2D that you've created in this unit so far. The graph has one distribution center twin, *DistCtr*, and six robot arm twins, *Arm1* through *Arm6*. *DistCtr* has a *contains* relationship to each of the arm twins.
 
-:::image type="content" source="../media/2-3-factory-graph.png" alt-text="Screenshot of Azure Digital Twins Explorer showing a 2D graph. In the graph, one distribution center twin is connected to six arm twins via six lines labeled contains." border="false" lightbox="../media/2-3-factory-graph.png":::
+:::image type="content" source="../media/2-3-factory-graph.png" alt-text="Screenshot of Azure Digital Twins Explorer showing a 2D graph. In the graph, one distribution center twin is connected to six arm twins via six lines labeled contains." border="true" lightbox="../media/2-3-factory-graph.png":::
 
 ### Hands-on exercise: View the graph
 
@@ -154,7 +154,7 @@ az dt twin update -n $INSTANCE_NAME --twin-id DistCtr --json-patch '[{"op":"repl
 Now your digital graph represents the latest state of your factory distribution center and its robotic arms.
 
 >[!TIP]
->An in-depth exercise to set up live data flow in Azure Digital Twins is included in Module 3 of this learning path, [Synchronize Azure Digital Twins with IoT Device Data](/training/modules/synchronize-azure-digital-twins-with-iot-device-data/).
+>An in-depth exercise to set up live data flow in Azure Digital Twins is included in Module 3 of this learning path, [Synchronize Azure Digital Twins with IoT Device Data](../../synchronize-azure-digital-twins-with-iot-device-data/index.yml).
 
 In the next section, you'll see how to query the graph to gather insights and export data to other services (inside or outside of Azure), for further processing and data presentation.
 
