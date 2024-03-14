@@ -66,13 +66,13 @@ To create the connection to an existing Azure AI Search index, configure the Azu
 
 1. The indexes page will list the available indexes for a given Azure AI Search instance. From the indexes page, copy the name of the index you want to Copilot to search and enter it into the index name field for the plugin.
 
-    :::image type="content" source="../media/index-setting-name.png" lightbox="../media/index-setting-name.png" alt-text="Screen capture of the Azure AI Search plugin parameters.":::  
+    :::image type="content" source="../media/index-setting-name.png" lightbox="../media/index-setting-name.png" alt-text="Screen capture of the Azure AI Search instance name pointing to the corresponding field in the plugin parameters window.":::  
 
 1. Select the index whose name you entered in plugin settings page. this opens the index page. From here, select the fields tab.
 
 1. The fields tab shows the field names for the index. What is listed here are the default names for the fields, when the index is created. Admins may choose different names for fields in the index, so the names shown here may not be the same for your index. Work with the admin who manages your Azure AI Search service for guidance.
 
-      :::image type="content" source="../media/chunk-vector-title-settings.png" lightbox="../media/chunk-vector-title-settings.png" alt-text="Screen capture of the Azure AI Search plugin parameters.":::
+      :::image type="content" source="../media/chunk-vector-title-settings.png" lightbox="../media/chunk-vector-title-settings.png" alt-text="Screen capture of the Azure AI Search index field names pointing to the corresponding fields in the plugin parameters window.":::
 
 1. Close the index fields page. Then From the left navigation pane, select Keys.
 
