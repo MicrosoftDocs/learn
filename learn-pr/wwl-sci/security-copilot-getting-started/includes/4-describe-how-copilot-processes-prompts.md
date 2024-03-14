@@ -5,7 +5,7 @@ So now that there's a basic understanding of plugins, capabilities, and how the 
 
 When a user submits a prompt, Copilot processes that prompt to generate the best possible response. The diagram that follows illustrates those process steps to provide a general understanding of what is happening and how the response comes to be.
 
-:::image type="content" source="../media/skills-workflow-figma-numbered-v2.png" lightbox="../media/skills-workflow-figma-numbered-v2.png" alt-text="Diagram illustrating how Microsoft Copilot for Security processes a prompt request.":::
+:::image type="content" source="../media/process-prompts-figma-updated-logo-numbered.png" lightbox="../media/process-prompts-figma-updated-logo-numbered.png" alt-text="Diagram illustrating how Microsoft Copilot for Security processes a prompt request.":::
 
 1. The process starts when a user submits a prompt in the prompt bar. Once the user submits their prompt, it's sent to the Copilot backend referred to as the orchestrator.  The orchestrator is Copilot’s system for composing capabilities (skills) together to answer a user’s prompt.
 
