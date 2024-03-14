@@ -20,7 +20,7 @@ To upload a file, the steps are as follows:
 
 1. In Uploads, check the status of the file. Wait for the status to change from Uploading to Uploaded. If the upload failed, correct the problem, and try again.
 
-    > [!NOTE]
+  > [!NOTE]
   > Uploaded files are only available to the user account that uploaded it. Uploaded files are stored outside the tenant. To include the file as a source in your current session, toggle the button on the right-hand side of the file until the toggle is lit up. If you are not going to use the file yet, or to exclude the file as a source in your current session, keep the toggle button in grey.
 
 To delete a file, hover the file name in the Files section to make the trash bin icon appear. Select the trash icon to delete the file.
@@ -85,8 +85,8 @@ To create the connection to an existing Azure AI Search index, configure the Azu
 
 1. Check that all your parameters are correct for the search instance and index you want to connect to then select save.
 
-    > [!IMPORTANT]
-> Currently, Copilot does not validate your credentials when you save your settings. If they are not correct, you will see an error later when Copilot attempts to run the Azure AI Search plugin. Close the Azure AI Search settings window.
+  > [!IMPORTANT]
+  > Currently, Copilot does not validate your credentials when you save your settings. If they are not correct, you will see an error later when Copilot attempts to run the Azure AI Search plugin. Close the Azure AI Search settings window.
 
 Once connected, prompt Copilot to look for information related to the KB you uploaded. Make sure to mention "Azure AI Search" in the prompt. For example:
 
