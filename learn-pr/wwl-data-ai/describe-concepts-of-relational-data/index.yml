@@ -14,11 +14,11 @@ summary: Explore the relational model for databases, how tables are structured, 
 abstract: |
   In this module, you will:
 
-  * Explore the characteristics of relational data
+  * Explore the characteristics of relational data.
 
-  * Define tables, indexes, and views
+  * Define tables, indexes, and views.
 
-  * Explore relational data workload offerings
+  * Explore relational data workload offerings.
 prerequisites: None
 iconUrl: /training/achievements/describe-concepts-of-relational-data.svg
 levels:
