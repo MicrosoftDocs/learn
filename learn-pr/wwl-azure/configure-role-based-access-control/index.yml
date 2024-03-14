@@ -3,7 +3,7 @@ uid: learn.wwl.configure-role-based-access-control
 metadata:
   title: Configure role-based access control
   description: "Learn how to use role-based access control (RBAC) to ensure resources are protected, but users can still access the resources they need."
-  ms.date: 03/08/2024
+  ms.date: 03/14/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module-standard-task-based
@@ -12,21 +12,33 @@ metadata:
   ms.service: azure
   ai-usage: ai-assisted
 title: Configure role-based access control
-summary: Learn how to use role-based access control (RBAC) to ensure resources are protected, but users can still access the resources they need. [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
+summary: Learn how to use role-based access control (RBAC) to ensure resources are protected, but users can still access the resources they need.
 abstract: |
   In this module, you learn how to:
 
-  -   Identify features and use cases for role-based access control.
+  -
 
-  -   List and create role definitions.
+  Identify features and use cases for role-based access control.
 
-  -   Create role assignments.
+  -
 
-  -   Identify differences between Azure RBAC and Microsoft Entra roles.
+  List and create role definitions.
 
-  -   Manage access to subscriptions with RBAC.
+  -
 
-  -   Review built-in Azure RBAC roles.
+  Create role assignments.
+
+  -
+
+  Identify differences between Azure RBAC and Microsoft Entra roles.
+
+  -
+
+  Manage access to subscriptions with RBAC.
+
+  -
+
+  Review built-in Azure RBAC roles.
 prerequisites: None
 iconUrl: /training/achievements/roles-based-access-control.svg
 levels:
