@@ -55,8 +55,7 @@ Send the request. A 204 response with no error message indicates the delete requ
 
 :::image type="content" source="../media/4-digital-twin-models-delete.png" alt-text="Postman screenshot showing the results of the Digital Twin Models Delete request." border="true" lightbox="../media/4-digital-twin-models-delete.png":::
 
->[!TIP]
->If your data plane bearer token from [Unit 2](2-configure-postman-api-collections.md) has expired, you'll get a *401 Unauthorized* error. Remember that you can re-run the `az account get-access-token --resource 0b07f429-9f4b-4714-9392-cc5e8e80c8b0` command to get a new token, and update it in the **Authorization** tab of your data plane Postman collection.
+[!INCLUDE [Reminder for how to get a new data plane bearer token](../../includes/azure-digital-twins-data-plane-token.md)]
 
 Return to the **Params** tab and change the **id** value to *dtmi:example:grid:transmission:generatorSubStation;1*. This value is the ID of the *Generator Substation* model. Send the request.
 
@@ -180,7 +179,7 @@ Scrolling through the response should reveal the new `Operator` property as part
 Since your work in the previous section made a new `Operator` property available in the substation model definitions, you can add this property to any digital twins that use the substation models. In this section, you add the property to a delivery substation twin called *sub_corp*.
 
 >[!TIP]
->To get a list of all twins that use a certain model, use the Query APIs covered in [Unit 5](5-query-graph.md) of this module.
+>To get a list of all twins that use a certain model, use the Query APIs covered in [Unit 5](../5-query-graph.yml) of this module.
 
 Start by reviewing the [Twins API documentation](/rest/api/digital-twins/dataplane/twins). The API contains operations to add/delete, get, and update digital twins, their components, and their relationships. In this section, you focus on operations dealing with twins themselves.
 

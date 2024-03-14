@@ -75,7 +75,7 @@ Make the following changes in the template:
 Send the request.
 
 >[!TIP]
->If your control plane bearer token from [Unit 2](2-configure-postman-api-collections.md) has expired, you'll get a *401 Unauthorized* error. Remember that you can re-run the `az account get-access-token --resource https://management.azure.com/` command to get a new token, and update it in the **Authorization** tab of your control plane Postman collection.
+>If your control plane bearer token from [Unit 2](../2-configure-postman-api-collections.yml) has expired, you'll get a *401 Unauthorized* error. Remember that you can re-run the `az account get-access-token --resource https://management.azure.com/` command to get a new token, and update it in the **Authorization** tab of your control plane Postman collection.
 
 The response from a successful request looks something like this:
 
@@ -132,8 +132,7 @@ Make the following changes in the template:
 
 Send the request.
 
->[!TIP]
->If your data plane bearer token from [Unit 2](2-configure-postman-api-collections.md) has expired, you'll get a *401 Unauthorized* error. Remember that you can re-run the `az account get-access-token --resource 0b07f429-9f4b-4714-9392-cc5e8e80c8b0` command to get a new token, and update it in the **Authorization** tab of your data plane Postman collection.
+[!INCLUDE [Reminder for how to get a new data plane bearer token](../../includes/azure-digital-twins-data-plane-token.md)]
 
 The response from a successful request looks something like this:
 
