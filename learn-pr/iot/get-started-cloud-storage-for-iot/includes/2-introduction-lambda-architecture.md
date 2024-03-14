@@ -2,7 +2,7 @@ The following list includes three distinct purposes for storing telemetry readin
 
 * To be analyzed for anomalies - for preventive maintenance.
 * For visualization by a remote human operator - to help in decision making.
-* To be archived - perhaps for later analysis.
+* To be archived - for later analysis.
 
 Each of these scenarios has conflicting storage requirements. However, having conflicting goals doesn't need to be a bad thing. Conflicting goals for data storage lead us to hybrid systems, which can be flexible and powerful.
 
@@ -30,7 +30,7 @@ The Lambda architecture for an Azure IoT solution enables multiple data paths. H
 
 In the following diagram:
 
-* **The Fast path - Real Time Processing** (hot path) is the streaming telemetry routed into real-time analysis. This path is also the right path to trigger warnings and alerts.
+* **Fast path - Real Time Processing** (hot path) is the streaming telemetry routed into real-time analysis. This path is also the right path to trigger warnings and alerts.
 
 * The **Slow Path - Batch Processing** (cold path) is a batch processing path for telemetry data storage.
 
@@ -38,13 +38,13 @@ In the following diagram:
 
 ### The hot path
 
-In this scenario, the IoT remote device pumps out specific telemetry. This telemetry is sent in its own message, routed by the IoT Hub for instant analysis and visualization. The analysis can be done by a human operator, say, using Azure Time Series Insights. This approach is described in this module.
+In this scenario, the IoT remote device pumps out specific telemetry. This telemetry is sent in its own message, routed by the IoT Hub for instant analysis and visualization. The analysis can be done by a human operator, say, using Azure Data Explorer. This approach is described in this module.
 
-Alternatively, the analysis could be handled by Azure Machine Learning models, via Azure Stream Analytics. This scenario is more complex, involves coding, and is described in other IoT Hub Learn modules.
+Alternatively, the analysis could be handled by Azure Machine Learning models, via Azure Stream Analytics. This scenario is more complex and involves coding.
 
 ### The cold path
 
-In this scenario, the IoT remote device also sends out all telemetry, and logging, data. The IoT Hub directs these messages down a route to an Azure storage account. There are various storage resources available in Azure, and the next units describe these options.
+In this scenario, the IoT remote device also sends out all telemetry, and logging data. The IoT Hub directs these messages down a route to an Azure storage account. There are various storage resources available in Azure, and the next units describe these options.
 
 ### Issues with lambda architecture
 

@@ -2,7 +2,7 @@
 uid: learn.wwl.get-started-cloud-storage-for-iot
 metadata:
   title: Examine Cloud storage options for Azure IoT Hub solutions
-  description: "This module introduces you to the Azure data storage options that are often used in Azure IoT solutions, and the hot and cold storage paths can be implemented in support of various business requirements."
+  description: "This module introduces you to the Azure data storage options that are often used in Azure IoT solutions, and the hot and cold storage paths that can be implemented in support of various business requirements."
   ms.date: 02/16/2024
   author: kgremban
   ms.author: kgremban
@@ -10,7 +10,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.service: iot-hub
 title: Examine Cloud storage options for Azure IoT Hub solutions
-summary: This module introduces you to the Azure data storage options that are often used in Azure IoT solutions, and the hot and cold storage paths can be implemented in support of various business requirements.
+summary: This module introduces you to the Azure data storage options that are often used in Azure IoT solutions, and the hot and cold storage paths that can be implemented in support of various business requirements.
 abstract: |
   After you complete this module, you'll be able to:
   - Describe the lambda architecture for data storage.
