@@ -20,6 +20,9 @@ To upload a file, the steps are as follows:
 
 1. In Uploads, check the status of the file. Wait for the status to change from Uploading to Uploaded. If the upload failed, correct the problem, and try again.
 
+    > [!NOTE]
+  > Uploaded files are only available to the user account that uploaded it. Uploaded files are stored outside the tenant. To include the file as a source in your current session, toggle the button on the right-hand side of the file until the toggle is lit up. If you are not going to use the file yet, or to exclude the file as a source in your current session, keep the toggle button in grey.
+
 To delete a file, hover the file name in the Files section to make the trash bin icon appear. Select the trash icon to delete the file.
 
 ### Azure AI Search plugin

@@ -21,3 +21,4 @@ Now that you completed this module, you can:
 - [What is Microsoft Defender Threat Intelligence (Defender TI)?](/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti)
 - [What is Microsoft Sentinel?](/azure/sentinel/overview)
 - [Microsoft Entra](/entra/)
+- [What's Azure AI Search?](/azure/search/search-what-is-azure-search)
