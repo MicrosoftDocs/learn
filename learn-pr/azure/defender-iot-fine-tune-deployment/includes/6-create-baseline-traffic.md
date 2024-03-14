@@ -22,11 +22,15 @@ In Defender for IoT, select the **Alerts** page that lists all of the alerts gen
 <!-- should this be left as is or use numbering? as this is a walk through unit, not the actual exercise i thought the numbers might not be best - LW-->
 Filter the list of alerts by a parameter or mix of parameters, such as a time period, the site or zone, or alert severity. You can also sort the list using the **Group by** feature.
 
-:::image type="content" source="../media/alerts-main-group-by.png" alt-text="Screenshot of the alerts screen filtering with group by setting":::
+:::image type="content" source="../media/alerts-main-group-by.png" alt-text="Screenshot of the alerts screen filtering with group by setting" lightbox="../media/alerts-main-group-by.png":::
+OR
+:::image type="content" source="../media/6-alerts-main-group-by.png" alt-text="Screenshot of the alerts screen filtering with group by setting with box" lightbox="../media/6-alerts-main-group-by.png":::
 
 Select an alert and the details appear in the alert pane, including the alert description, traffic source, traffic destination and more. To analyze the alert in greater detail, select **View full details**. Choosing multiple alerts allows you to make bulk changes to the status, severity, or learn levels using the alerts menu bar.<!-- does this have another name? LW--> <!-- Should bulk changes be placed lower down the article, because it is about making changes, we havent spoken about that yet!! but it is also here with choosing the number of alerts!!! - LW-->
 
-:::image type="content" source="../media/alerts-main-bulk-status.png" alt-text="Screenshot of the alerts screen making a bulk status change":::
+:::image type="content" source="../media/alerts-main-bulk-status.png" alt-text="Screenshot of the alerts screen making a bulk status change" lightbox="../media/alerts-main-bulk-status.png":::
+OR
+:::image type="content" source="../media/6-alerts-main-bulk-status.png" alt-text="Screenshot of the alerts screen making a bulk status change with box" lightbox="../media/6-alerts-main-bulk-status.png":::
 
 ### Analyze an alert
 
@@ -46,8 +50,7 @@ Then update the **severity** or **status** levels, which are automatically set w
 
 In Defender for IoT, the sensor assigns three **Severity** levels, they are: *High*, *Medium* and *Low*. The sensor also assigns three **Status** levels, they are *New*, *Active* and *Closed*. We recommend that you start triaging the critical level alerts first.
 
-:::image type="content" source="../media/alerts-main-1.png" alt-text="Screenshot of the alerts screen":::
-<!-- add red hihglight boxes for the severity and staus columns-->
+:::image type="content" source="../media/alerts-main-1.png" alt-text="Screenshot of the alerts screen" lightbox="../media/alerts-main-1.png":::
 
 Update the status level using the table:
 

@@ -7,6 +7,8 @@ Once these checks are complete, you have a full and accurate list of devices tha
 The following diagram shows the complete Operational Technology (OT) deployment path, with the team responsible for each phase:
 
 :::image type="content" source="../media/2-ot-deploy.png" alt-text="Diagram of the complete OT deployment process" border="false":::
+OR
+:::image type="content" source="../media/2-ot-deploy-box.png" alt-text="Diagram of the complete OT deployment process boxed" border="false":::
 
 This Learn Module is divided into two sections.
 

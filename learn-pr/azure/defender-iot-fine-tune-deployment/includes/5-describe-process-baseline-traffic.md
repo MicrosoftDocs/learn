@@ -8,6 +8,8 @@ Once the learning stage is complete, Defender for IoT moves to the operational s
 The following diagram shows the complete OT deployment path, with the team responsible for each phase:
 
 :::image type="content" source="../media/5-ot-deploy.png" alt-text="Diagram of the complete OT deployment process" border="false":::
+OR
+:::image type="content" source="../media/5-ot-deploy-box.png" alt-text="Diagram of the complete OT deployment process boxed" border="false":::
 
 This Learn Module is divided into two sections.
 
