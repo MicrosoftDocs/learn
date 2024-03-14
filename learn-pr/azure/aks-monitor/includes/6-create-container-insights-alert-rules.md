@@ -2,11 +2,11 @@ Azure Monitor Alerts help you detect and address issues before users notice them
 
 ## Viewing alerts
 
-When an alert is created, it’s displayed in the **Alerts** menu for your AKS cluster. You can view the details of the alert including what caused the alert to fire. Use this data find the cause and appropriate resolution for the issue. If Container insights determines that the issue has been corrected, it automatically resolves the alert.
+When an alert is created, it's displayed in the **Alerts** menu for your AKS cluster. You can view the alert's details, including what caused the alert to fire. Use this data find the cause and appropriate resolution for the issue. If Container insights determines that the issue has been corrected, it automatically resolves the alert.
 
 ## Action groups
 
-Action groups contain automated actions that are taken when an alert is fired. These actions could proactively notify administrators by mail or text message, trigger a Logic app, or start a process to try to take corrective action. A single action group can be applied to multiple alert rules so that you can reuse a particular set of actions.
+Action groups contain automated actions that are taken when an alert is fired. These actions could proactively notify administrators by mail or text message, trigger a Logic app, or start a process to try to take corrective action. You can apply a single action group to multiple alert rules so that you can reuse a particular set of actions.
 
 ## Container insights alerts
 
