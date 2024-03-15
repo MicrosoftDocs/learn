@@ -81,9 +81,10 @@ Start by completing the following steps to set up the function and prepare it to
     using System.Threading.Tasks;
     ```
 
-1. Make a few updates to the sample function that's been provided in the template. 
+1. Make these updates to the sample function that's been provided in the template. 
     1. The function has a default name of `Function1`. Rename it to `IoTHubToADT` to make it easier to recognize later.
-    1. Remove `static` from the class declaration. Make the function asynchronous, by changing the signature of the `Run` method from `public static void` to `public async Task`.
+    1. Remove `static` from the class declaration. 
+    1. Make the function asynchronous, by changing the signature of the `Run` method from `public static void` to `public async Task`.
     
     :::image type="content" source="../media/3-code-1.png" alt-text="Screenshot of code in Visual Studio, showing the template changes." lightbox="../media/3-code-1.png":::
 
@@ -91,7 +92,7 @@ Start by completing the following steps to set up the function and prepare it to
 
 Next, add the unique functionality.
 
-1. Next inside the `Run` method, set up an `if` statement to take action when the function receives an Event Grid event with data. This will be executed when the temperature data from IoT Hub arrives at the Azure function.
+1. Still inside the `Run` method, set up an `if` statement to take action when the function receives an Event Grid event with data. This will be executed when the temperature data from IoT Hub arrives at the Azure function.
 
     ```csharp
     if (eventGridEvent != null && eventGridEvent.Data != null)

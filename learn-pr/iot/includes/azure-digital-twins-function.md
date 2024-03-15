@@ -6,7 +6,7 @@ ms.topic: include
 ms.service: digital-twins
 ---
 
-1. Add these variables to the top of your class, before the function declaration. These class variables will be used to authenticate your function with Azure Digital Twins. There are no placeholders to replace; just paste them in as shown.
+3. Add the following variables to the top of your class, before the function declaration. These class variables will be used to authenticate your function with Azure Digital Twins. There are no placeholders to replace; just paste them in as shown.
 
     ```csharp
     private static readonly HttpClient httpClient = new HttpClient();
@@ -15,7 +15,7 @@ ms.service: digital-twins
 
     :::image type="content" source="../synchronize-azure-digital-twins-with-iot-device-data/media/3-code-2.png" alt-text="Screenshot of code in Visual Studio, showing the new variables." lightbox="../synchronize-azure-digital-twins-with-iot-device-data/media/3-code-2.png":::
 
-1. In the `Run` method, add the following code after the log line. This code snippet uses the authentication variables above to set up a `DigitalTwinsClient`, which contains methods to retrieve and update digital twin information. For more information about this class, see [DigitalTwinsClient Class (.NET SDK)](/dotnet/api/azure.digitaltwins.core.digitaltwinsclient).
+4. In the `Run` method, add the following code after the log line. This code snippet uses the authentication variables above to set up a `DigitalTwinsClient`, which contains methods to retrieve and update digital twin information. For more information about this class, see [DigitalTwinsClient Class (.NET SDK)](/dotnet/api/azure.digitaltwins.core.digitaltwinsclient).
 
     ```csharp
     var credentials = new DefaultAzureCredential();

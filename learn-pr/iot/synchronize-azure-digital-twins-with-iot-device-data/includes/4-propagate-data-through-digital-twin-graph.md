@@ -47,15 +47,16 @@ Start by completing the following steps to set up the function and prepare it to
     using System.Threading.Tasks;
     ```
 
-1. Make a few updates to the sample function that's been provided in the template. 
+1. Make these updates to the sample function that's been provided in the template. 
     1. The function has a default name of `Function2`. Rename it to `ADTToADT` to make it easier to recognize later.
-    1. Remove `static` from the class declaration. Make the function asynchronous, by changing the signature of the `Run` method from `public static void` to `public async Task`.
+    1. Remove `static` from the class declaration. 
+    1. Make the function asynchronous, by changing the signature of the `Run` method from `public static void` to `public async Task`.
 
 [!INCLUDE [Common Azure Digital Twins function setup steps](../../includes/azure-digital-twins-function.md)]
 
 Next, add the unique functionality.
 
-1. Next inside the `Run` method, set up an `if` statement to take action when the function receives an Event Grid event with data. This statement will be executed when Azure Digital Twins sends a twin update to the Azure function.
+1. Still inside the `Run` method, set up an `if` statement to take action when the function receives an Event Grid event with data. This statement will be executed when Azure Digital Twins sends a twin update to the Azure function.
 
     ```csharp
     if (eventGridEvent != null && eventGridEvent.Data != null)
