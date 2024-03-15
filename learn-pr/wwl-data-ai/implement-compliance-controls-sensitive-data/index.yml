@@ -31,7 +31,7 @@ products:
 - sql-server
 subjects:
 - classification-analysis
-- database
+- databases
 - threat-protection
 units:
 - learn.wwl.implement-compliance-controls-for-sensitive-data.introduction
