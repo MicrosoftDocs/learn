@@ -12,7 +12,7 @@ Let's look at the simplest approach for Windows VMs: Remote Desktop.
 
 ## What is the Remote Desktop Protocol?
 
-Remote Desktop Protocol (RDP) provides remote connectivity to the UI of Windows-based computers. RDP lets you sign in to a remote physical or virtual Windows computer and control that computer as if you were seated at the console. An RDP connection allows you to carry out the vast majority of operations that you can do from a physical computer's console, with the exception of some power and hardware-related functions.
+Remote Desktop Protocol (RDP) provides remote connectivity to the UI of Windows-based computers. RDP lets you sign in to a remote physical or virtual Windows computer and control that computer as if you were seated at the console. An RDP connection allows you to carry out most operations that you can do from a physical computer's console, except for some power and hardware-related functions.
 
 An RDP connection requires an RDP client. Microsoft provides RDP clients for the following operating systems:
 
@@ -35,7 +35,7 @@ One thing to be aware of with public IP addresses in Azure is they're often dyna
 
 ### How do you connect to a VM in Azure using RDP?
 
-Connecting to a VM in Azure using RDP is a simple process. In the Azure portal, you'll go to your VM's properties, and at the top, select **Connect**. This will show you the IP addresses assigned to the VM and give you the option to download a **preconfigured.rdp** file that Windows then opens in the RDP client. You can choose to connect over the public IP address of the VM in the RDP file. Instead, if you're connecting over VPN or ExpressRoute, you can select the internal IP address. You can also select the port number for the connection.
+Connecting to a VM in Azure using RDP is a simple process. In the Azure portal, you'll go to your VM's properties, and at the top, select **Connect**. This shows you the IP addresses assigned to the VM and give you the option to download a **preconfigured.rdp** file that Windows then opens in the RDP client. You can choose to connect over the public IP address of the VM in the RDP file. Instead, if you're connecting over VPN or ExpressRoute, you can select the internal IP address. You can also select the port number for the connection.
 
 If you're using a static public IP address for the VM, you can save the **.rdp** file to your desktop. If you're using dynamic IP addressing, the **.rdp** file only remains valid while the VM is running. If you stop and restart the VM, you must download another **.rdp** file.
 
