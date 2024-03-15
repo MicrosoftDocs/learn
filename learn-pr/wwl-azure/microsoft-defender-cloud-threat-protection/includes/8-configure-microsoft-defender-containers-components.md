@@ -22,7 +22,7 @@ Validate the following endpoints are configured for outbound access so that the 
 
 2. In the Defender plans page, select **Defender for Containers** and select **Settings**.
 
-:::image type="content" source="../media/containers-settings-8873d7bf.png" alt-text="Screenshot showing how to enable Defender for Containers in the Settings page.":::
+:::image type="content" source="../media/containers-settings-8873d7bf.png" alt-text="Screenshot showing how to enable Defender for Containers in the Settings page." lightbox="../media/containers-settings-8873d7bf.png" :::
 
 
 > [!TIP]
@@ -33,7 +33,7 @@ Validate the following endpoints are configured for outbound access so that the 
 
 3. Turn the relevant component on to enable it.
 
-:::image type="content" source="../media/container-components-f83671a3.png" alt-text="Screenshot showing how to turn on the relevant component.":::
+:::image type="content" source="../media/container-components-f83671a3.png" alt-text="Screenshot showing how to turn on the relevant component." lightbox="../media/container-components-f83671a3.png" :::
 
 
  -  Defenders for Containers customers who joined before August 2023 and don't have Agentless discovery for Kubernetes enabled as part of Defender CSPM when they enabled the plan, must manually enable the Agentless discovery for Kubernetes extension within the Defender for Containers plan.
@@ -115,7 +115,7 @@ Within 30 minutes, Defender for Cloud detects this activity and trigger a securi
 
 2. In the Azure portal, open Microsoft Defender for Cloud's security alerts page and look for the alert on the relevant resource:
 
-:::image type="content" source="../media/sample-kubernetes-security-alert-79455e5a.png" alt-text="Screenshot showing Microsoft Defender for Cloud's security alerts page.":::
+:::image type="content" source="../media/sample-kubernetes-security-alert-79455e5a.png" alt-text="Screenshot showing Microsoft Defender for Cloud's security alerts page." lightbox="../media/sample-kubernetes-security-alert-79455e5a.png" :::
 
 
 ## Default Log Analytics workspace for AKS
