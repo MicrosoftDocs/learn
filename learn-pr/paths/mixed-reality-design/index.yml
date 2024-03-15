@@ -20,7 +20,7 @@ roles:
 products: 
 - hololens
 subjects:
-- digital-application-innovation
+- app-development
 modules:
 - learn.intro-to-mixed-reality
 - learn.azure.design-considerations-mr-development
