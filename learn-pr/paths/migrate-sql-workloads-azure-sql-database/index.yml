@@ -39,7 +39,7 @@ products:
 - sql-server
 subjects:
 - migration
-- database
+- databases
 - cloud-security
 - cloud-computing
 modules:
