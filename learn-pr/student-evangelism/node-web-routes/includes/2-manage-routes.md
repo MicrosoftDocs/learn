@@ -64,7 +64,7 @@ Data can be sent into the API in several ways:
 | Data | Location | Explanation | 
 | --- | --- | --- |
 | Route parameter |  `/products/:id`, where `:id` is the parameter | Route parameters are part of the URL. They're used to identify a specific resource. The data length is confined to the allowed length of the URL so it is typically short such as an ID or a name. A route can have multiple parameters.|
-| Query parameter | `/products?page=1&pageSize=20`, where `?page=1&pageSize=20` | Query parameters are part of the URL. They're used to filter data. The data length is confined to the allowed length of the URL so it is typically short such as an ID or a name. A route can have multiple query parameters.|
+| Query parameter | `/products?page=1&pageSize=20`, where `?page=1&pageSize=20` is the parameter | Query parameters are part of the URL. They're used to filter data. The data length is confined to the allowed length of the URL so it is typically short such as an ID or a name. A route can have multiple query parameters.|
 | Request body | `POST /products` | The request body is part of the HTTP request. It's used to send data to the API. The data length isn't confined to the allowed length of the URL so it can be long. The HTTP header indicates to the API the type of data such as text, JSON, or binary.|
 
 Incoming data usually matches the following methods based on the purpose of the action: 
