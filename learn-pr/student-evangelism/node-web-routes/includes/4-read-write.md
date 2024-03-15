@@ -8,7 +8,7 @@ Common HTTP methods are:
 
 | Method | Description |
 | --- | --- |
-| POST | Create a new resource. |
+| `POST` | Create a new resource. |
 | PUT | Update an existing resource. |
 | PATCH | Update part of an existing resource. |
 
