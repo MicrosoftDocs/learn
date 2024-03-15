@@ -12,7 +12,7 @@ metadata:
   ms.service: azure
   ai-usage: ai-assisted
 title: Describe features and tools for managing and deploying Azure resources
-summary: This module covers tools that help you manage your Azure and on-premises resources.&nbsp;
+summary: This module covers tools that help you manage your Azure and on-premises resources.
 abstract: |
   -   Describe Azure portal
 
