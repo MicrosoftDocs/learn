@@ -55,7 +55,7 @@ To create the *Control plane* collection, select **Import** from your Postman wo
 
 Enter the following URL, which represents the Azure Digital Twins control plane Swagger:
 
-```Copy URL
+```URL
 https://raw.githubusercontent.com/Azure/azure-rest-api-specs/main/specification/digitaltwins/resource-manager/Microsoft.DigitalTwins/stable/2023-01-31/digitaltwins.json
 ```
 
@@ -65,7 +65,7 @@ Next, select **Import** again to create the *Data plane* collection.
 
 Enter the following URL, which represents the Azure Digital Twins data plane Swagger:
 
-```Copy URL
+```URL
 https://raw.githubusercontent.com/Azure/azure-rest-api-specs/main/specification/digitaltwins/data-plane/Microsoft.DigitalTwins/stable/2023-10-31/digitaltwins.json
 ```
 Continue the prompts to import the Swagger as a Postman collection. It will import as *Azure Digital Twins API*.

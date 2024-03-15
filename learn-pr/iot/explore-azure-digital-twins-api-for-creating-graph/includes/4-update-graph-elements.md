@@ -10,7 +10,7 @@ However, models that are uploaded to an Azure Digital Twins instance are immutab
 
 In the city grid example for this module, say you decide you also want your graph to keep track of who owns and operates each substation. There are three substation-type models in your instance: *Delivery Substation*, *Generator Substation*, and *Base Receiver* (the base model from which the other two inherit). By adding an `Operator` property to the base model, you can make the new property available on all three substation models.
 
-Copied here is the original text of the *Base Receiver* model that was uploaded to your instance with the sample scenario in the previous unit. (You can also view the [energy grid models in GitHub](https://github.com/Azure-Samples/azure-digital-twins-getting-started/tree/main/models/energy-grid-example).)
+Here's the original text of the *Base Receiver* model that was uploaded to your instance with the sample scenario in the previous unit. (You can also view the [energy grid models in GitHub](https://github.com/Azure-Samples/azure-digital-twins-getting-started/tree/main/models/energy-grid-example).)
 
 ```json
 {
@@ -43,7 +43,7 @@ Here's the updated text for the model after adding a new `Operator` property. Fo
 
 Before uploading the new *Base Receiver* model, you need to delete the old one.
 
-However, the other substation models *Delivery Substation* and *Generator Substation* depend on this model, so *Base Receiver* can't be deleted without removing those models first. So, in this section, you remove all three substation models, reupload the edited *Base Receiver* model, then reupload the dependent *Delivery Substation* and *Generator Substation* models without any changes to them.
+However, the other substation models *Delivery Substation* and *Generator Substation* depend on this model, so *Base Receiver* can't be deleted without removing those models first. So in this section, you remove all three substation models. Then, you reupload the edited *Base Receiver* model, then reupload the dependent *Delivery Substation* and *Generator Substation* models without any changes to them.
 
 From your Postman collections, start by opening the request template at _Data plane > models > {id} > **DEL Digital Twin Models Delete**_.
 
@@ -61,7 +61,7 @@ Return to the **Params** tab and change the **id** value to *dtmi:example:grid:t
 
 Finally, change the **id** value again to *dtmi:example:grid:transmission:baseReceiver;1*. This value is the ID of the *Base Receiver* model. Send the request.
 
-After this, all substation-type models are deleted from your instance.
+After these steps, all substation-type models are deleted from your instance.
 
 ### Upload new models
 
@@ -72,7 +72,7 @@ From your Postman collections, open the request template at _Data plane > models
 Make the following changes in the template:
 * In the **Params** tab, set the **api-version** value to *2023-10-31*. 
 * In the **Headers** tab, uncheck the **traceparent** and **tracestate** options.
-* In the **Body** tab, replace the contents with the following code. This is the new *Base Receiver* model definition inside a set of square brackets.
+* In the **Body** tab, replace the contents with the following snippet. This code is the new *Base Receiver* model definition inside a set of square brackets.
 
     ```json
     [
@@ -98,9 +98,9 @@ The response from a successful request looks something like this:
 
 :::image type="content" source="../media/4-digital-twin-models-add.png" alt-text="Postman screenshot showing the results of the Digital Twin Models Add request." border="true" lightbox="../media/4-digital-twin-models-add.png":::
 
-This response indicates that the new *Base Receiver* model described in the response was uploaded to the instance, replacing the old definition that was deleted.
+It's the body of the new *Base Receiver* model. This response indicates that the new model was uploaded to the instance, and replaced the old definition that was deleted.
 
-Next, return to the **Body** tab and replace the contents with the following code. It's the definition of the *Delivery Substation* model, copied here from its [GitHub source file](https://github.com/Azure-Samples/azure-digital-twins-getting-started/blob/main/models/energy-grid-example/DeliverySubStation.json) for simplicity.
+Next, return to the **Body** tab and replace the contents with the following code. It's the definition of the *Delivery Substation* model, copied from its [GitHub source file](https://github.com/Azure-Samples/azure-digital-twins-getting-started/blob/main/models/energy-grid-example/DeliverySubStation.json) for simplicity.
 
 ```json
 [
@@ -128,7 +128,7 @@ Next, return to the **Body** tab and replace the contents with the following cod
 
 Send the request.
 
-Next, replace the **Body** contents with the following code. It's the definition of the *Generator Substation* model, copied here from its [GitHub source file](https://github.com/Azure-Samples/azure-digital-twins-getting-started/blob/main/models/energy-grid-example/GeneratorSubStation.json) for simplicity.
+Next, replace the **Body** contents with the following code. It's the definition of the *Generator Substation* model, copied from its [GitHub source file](https://github.com/Azure-Samples/azure-digital-twins-getting-started/blob/main/models/energy-grid-example/GeneratorSubStation.json) for simplicity.
 
 ```json
 [
@@ -156,7 +156,7 @@ Next, replace the **Body** contents with the following code. It's the definition
 
 Send the request.
 
-Now you've reuploaded all of the substation models to the instance, including the updated *Base receiver* model and two unchanged inherited models for *Delivery Substation* and *Generator Substation*. The inherited models, and any digital twins referencing the *Base Receiver* model or any of its inherited models, now reference the updated definition and are capable of supporting an `Operator` property.
+Now all of the substation models are reuploaded to the instance (including the updated *Base receiver* model, and two unchanged inherited models for *Delivery Substation* and *Generator Substation*). The inherited models, and any digital twins referencing the *Base Receiver* model or any of its inherited models, now reference the updated definition and are capable of supporting an `Operator` property.
 
 ### Verify updates
 

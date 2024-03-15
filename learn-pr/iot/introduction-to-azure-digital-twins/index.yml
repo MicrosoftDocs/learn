@@ -17,9 +17,9 @@ abstract: |
   - Describe how models, twins, and relationships are used to represent components of a real-world IoT environment in a digital graph.
   - Describe how the digital graph can be queried to gather business insights.
 prerequisites: |
-  - Beginner level experience with IoT concepts such as devices and event data
-  - Beginner level experience with SQL-style query concepts such as SELECT, FROM, and WHERE clauses
-  - To complete hands-on exercises: An [Azure subscription](https://azure.microsoft.com/free), and permission to manage access to Azure resources in the subscription (or cooperation from someone that does have that permission, who can run some commands on your behalf)
+  - Beginner level experience with IoT concepts such as devices and event data.
+  - Beginner level experience with SQL-style query concepts such as SELECT, FROM, and WHERE clauses.
+  - To complete hands-on exercises: An [Azure subscription](https://azure.microsoft.com/free), and permission to manage access to Azure resources in the subscription (or cooperation from someone that does have that permission, who can run some commands on your behalf).
 iconUrl: /training/achievements/introduction-to-azure-digital-twins.svg
 ratingEnabled: false
 levels:
