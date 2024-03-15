@@ -25,7 +25,7 @@ roles:
 products:
 - azure-cosmos-db
 subjects:
-- database
+- databases
 units:
 - learn.wwl.design-mongodb-database-for-azure-cosmos-db.introduction
 - learn.wwl.design-mongodb-database-for-azure-cosmos-db.models-shard-keys
