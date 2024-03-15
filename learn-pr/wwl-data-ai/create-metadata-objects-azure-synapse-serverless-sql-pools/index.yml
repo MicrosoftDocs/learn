@@ -26,7 +26,7 @@ roles:
 products:
 - azure-synapse-analytics
 subjects:
-- serverless-compute
+- serverless-computing
 units:
 - learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.introduction
 - learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.lake-database
