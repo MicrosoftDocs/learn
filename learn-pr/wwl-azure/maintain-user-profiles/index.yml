@@ -7,6 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
+  ms.service: windows
 title: Maintain user profiles
 summary: Students learn about the benefits of various Windows user profiles, how to manage them, and how to facilitate profile data synchronization across multiple devices.
 abstract: |
