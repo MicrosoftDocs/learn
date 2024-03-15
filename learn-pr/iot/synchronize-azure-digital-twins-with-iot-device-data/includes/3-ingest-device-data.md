@@ -106,7 +106,7 @@ Start by completing the following steps to set up the function and prepare it to
     log.LogInformation($"ADT service client connection created.");
     ```
 
-    :::image type="content" source="../media/3-code-3.png" alt-text="Screenshot of code in Visual Studio, showing the the DigitalTwinsClient." lightbox="../media/3-code-3.png":::
+    :::image type="content" source="../media/3-code-3.png" alt-text="Screenshot of code in Visual Studio, showing the DigitalTwinsClient." lightbox="../media/3-code-3.png":::
 
 Next, fill in the unique functionality.
 
