@@ -1,10 +1,10 @@
-Tailwind Traders is impressed with your APIs which return existing products. Now you need to create an API which can insert and update products. The data might be stored in a database and might contain millions of records. For that reason, you need to use techniques that limit how much data is passed into the API and returned from the API.
+Tailwind Traders is impressed with your APIs, which return existing products. Now you need to create an API that can insert and update products. The data might be stored in a database and contain millions of records. For that reason, you need to use techniques that limit how much data is passed into the API and returned from the API.
 
 ## Implement support to write data
 
 Implement the CRUD API on the `products` resource:
 
-This starter project at `nodejs-http/exercise-express-routing/reading-writing` contains the product files and some starter application code. All you need to do is to fill in the missing parts.
+This starter project at `nodejs-http/exercise-express-routing/reading-writing`contains the product files and some starter application code. All you need to do is fill in the missing parts.
 
 1. Right-click the **reading-writing** folder name and select **Open in integrated terminal**. 
 1. In the terminal, run the following command to install it:
@@ -45,7 +45,7 @@ This starter project at `nodejs-http/exercise-express-routing/reading-writing` c
     app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
    ```
 
-   The *app.js* file shows a skeleton of a program. Your next job is to implement the routes.
+   The *app.js* file shows the skeleton of a program. Your next job is to implement the routes.
 
 ## Implement route to read data
 
