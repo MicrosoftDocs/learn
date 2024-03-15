@@ -1,12 +1,12 @@
 
-Now that you completed your brainstorming/ideation and used Bing Chat in the first challenge project, we're using it to guide us in generating a prototype.
+Now that you completed your brainstorming/ideation and used Copilot with Bing in the first challenge project, we're using it to guide us in generating a prototype.
 
 ## Identify the core functionalities of your software
 
 ### Steps
 
 1. Copy the sample prompt provided and edit it to add your refined idea one-paragraph summary from unit 4 of the previous challenge.
-1. Paste it into Bing Chat.
+1. Paste it into Copilot with Bing.
 
 ### Sample prompt
 
@@ -25,7 +25,7 @@ Human-wildlife conflict is a serious and growing problem that affects both wildl
 ### Steps to generate UI ideas
 
 1. Copy the sample prompt provided and make any edits you want
-2. Paste it into Bing chat
+2. Paste it into Copilot with Bing
 
 ### Sample prompt for UI ideas
 
@@ -38,18 +38,18 @@ Can you suggest some UI ideas that easily provide the core functionalities for t
 ![Screenshot showing a sample response for UI ideas.](./media/ui-ideas.png)
 
 > [!NOTE]
-> Bing Chat will provide some links to the UI samples to inspire.
+> Copilot with Bing will provide some links to the UI samples to inspire.
 
-![Animated GIF showing Bing Chat providing links to UI samples for inspiration.](./media/bing-chat-samples.gif)
+![Animated GIF showing Copilot with Bing providing links to UI samples for inspiration.](./media/bing-chat-samples.gif)
 
-## Sketch your UI from the examples recommended by Bing Chat
+## Sketch your UI from the examples recommended by Copilot with Bing
 
 Grab your pen and paper and try to sketch your UI.
 
 > [!NOTE]
 > With your users in mind, take some time to sketch the different pages of your solution whether a website, web app, dashboard and remember to consider using responsive designs.
 
-### [Optional] Share your mock-up with Bing Chat for more visual inspiration
+### [Optional] Share your mock-up with Copilot with Bing for more visual inspiration
 
 ![Screenshot showing an example of sharing a mockup.](./media/mockup.png)
 
@@ -59,4 +59,4 @@ Grab your pen and paper and try to sketch your UI.
 
 ## Next steps
 
-Bing Chat provided us with valuable insights and inspiration for creating our mock-up and prototype. We were able to use the tools and visual resources provided by Bing Chat to develop our ideas and refine our vision. Having created our prototype, we're now ready to move forward with the next phase of our project and begin building.
+Copilot with Bing provided us with valuable insights and inspiration for creating our mock-up and prototype. We were able to use the tools and visual resources provided by Copilot with Bing to develop our ideas and refine our vision. Having created our prototype, we're now ready to move forward with the next phase of our project and begin building.
