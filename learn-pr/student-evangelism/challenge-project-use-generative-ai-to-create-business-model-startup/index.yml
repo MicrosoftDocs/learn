@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.challenge-project-use-generative-ai-to-create-business-model-startup
 metadata:
-  title: Challenge Project – Create a Business Model for your startup using Microsoft Copilot
-  description: "Challenge Project - Use Microsoft Copilot (formally Bing Chat) to Create a Business Model for your Startup or business"
+  title: Challenge Project – Create a Business Model for your startup using Microsoft Copilot.
+  description: "Challenge Project - Use Microsoft Copilot (formally Bing Chat) to Create a Business Model for your Startup or business."
   ms.date: 12/4/2023
   author: juliamuiruri4
   ms.author: juliamuiruri
@@ -10,15 +10,15 @@ metadata:
   ms.topic: module-challenge-project # Please don't edit, used for our analytics
   ms.service: microsoft-copilot
 title: Challenge Project – Create a Business Model for your startup using Microsoft Copilot
-summary: Use Microsoft Copilot, Your everyday AI companion, to Create a Business Model for your Startup or business
+summary: Use Microsoft Copilot, your everyday AI companion, to create a Business Model for your Startup or business.
 abstract: |
-  In this module you will develop the following skills that can be used in your everyday interaction with Generative AI:
-  - Utilizing the various features or capabilities of Microsoft Copilot
-  - Utilizing multi-modal features of Microsoft Copilot
-  - Prompt writing tips and techniques
-  - Practice your Critical/ Creative Thinking with Microsoft Copilot
-  - Researching with Microsoft Copilot
-  - Applying format and tone to Generative AI Models
+  In this module you develop the following skills that can be used in your everyday interaction with Generative AI:
+  - Utilizing the various features or capabilities of Microsoft Copilot.
+  - Utilizing multi-modal features of Microsoft Copilot.
+  - Prompt writing tips and techniques.
+  - Practice your Critical/ Creative Thinking with Microsoft Copilot.
+  - Researching with Microsoft Copilot.
+  - Applying format and tone to Generative AI Models.
 prerequisites: |
   - Personal account for [Microsoft Copilot](https://copilot.microsoft.com/) and [Copilot Designer](https://copilot.microsoft.com/images/create)
 iconUrl: /learn/achievements/generic-badge.svg
