@@ -1,4 +1,4 @@
-Imagine you work for a company that does video-data processing and pattern analysis. You're building a new prototype platform to process the video from traffic cameras, analyze trends, and provide actionable data for traffic and road improvements. 
+Imagine that you work for a company that does video-data processing and pattern analysis. You're building a new prototype platform to process the video from traffic cameras, analyze trends, and provide actionable data for traffic and road improvements. 
 
 To improve your algorithms, you've made arrangements with several new cities to collect their traffic-camera data. However, not all of the video data is in the same format, and many of the formats only have Windows codecs to decode the data. Therefore, you've decided to use Virtual Machines (VMs) to do the initial processing and then push the data onto Azure Functions, which will process a standard format. This approach allows you to bring on new data formats dynamically without stopping the entire system.
 
