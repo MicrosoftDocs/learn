@@ -10,7 +10,7 @@ Common HTTP methods are:
 | --- | --- |
 | `POST` | Create a new resource. |
 | PUT | Update an existing resource. |
-| PATCH | Update part of an existing resource. |
+| `PATCH` | Update part of an existing resource. |
 
 `PUT` and `PATCH` are similar. The difference is that `PUT` replaces the entire resource. `PATCH` replaces only the properties that are specified in the request body.
 
