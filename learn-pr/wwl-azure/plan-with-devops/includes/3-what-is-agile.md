@@ -1,5 +1,7 @@
 We used the term *agile* in the previous module to describe one of the essential elements of DevOps culture, representing the ability to rapidly respond to customer feedback and needs. This term also appeared several times in the unit describing the correlation between DevOps and the application lifecycle. However, there's also another, more specific meaning of *Agile* (in the capitalized format), which describes an approach to software development and project management. Such an approach is commonly associated with DevOps practices. In our sample scenario, transitioning from the traditional Waterfall approach to Agile would help the organization realize a range of DevOps benefits. In this unit, explore the primary characteristics of Agile and examine its correlation with DevOps.
 
+:::image type="content" source="../media/3-agile-methods.png" alt-text="Diagram showing a cycle around a Kanban board.":::
+
 ## Agile principles and values
 
 Agile is an approach to software development that promotes team collaboration, continuous improvement, and automation, with the ultimate goal of faster, more reliable, and customer-centric software delivery. The term originated from the Agile Manifesto, created in 2001 by a group of software developers, providing a set of guiding principles for modern software development. The manifesto included four foundational statements that prioritized individuals and interactions, working solutions, and customer collaboration over rigid processes and tools. In particular, these statements assigned more value to:
@@ -29,15 +31,19 @@ In the Sprint Planning event, the team chooses backlog items to work on during t
 
 ## What is Kanban?
 
+:::image type="content" source="../media/3-what-is-kanban.png" alt-text="Diagram showing a Kanban board representation with multiple columns.":::
+
 Kanban is the Japanese word for a signboard or billboard. In the context of Agile, the concept of Kanban has been conceived as a means for improving the efficiency of manufacturing processes, but, in recent years, it became prevalent in software development projects.
 
 The key principle of this approach is visualization of project-related work in the form of *Kanban boards*. These can be physical boards or software applications that display cards arranged into columns representing the status of individual project items. Commonly used column names include **To-do**, **Doing**, and **Done**, although teams can customize them to accurately reflect all relevant stages in a project delivery workflow (such as development and testing). Visualizing work as cards in different states on a board simplifies the assessment of project status and identifying potential productivity issues.
 
-:::image type="content" source="../media/3-agile-kanban-board-sample.png" alt-text="Screenshot of Kanban board with four columns including new, development, testing and done.":::
+:::image type="content" source="../media/3-agile-kanban-board-sample.png" alt-text="Diagram showing a Kanban board with three columns including To do, doing, and done.":::
 
 These cards correspond to product backlog items in the Scrum framework. The cards can be customized to include references to other items in the product delivery process, such as tasks and test cases.
 
 While the concept of a backlog is common in Kanban and Scrum, it's important to note that Kanban is more flexible and doesn't involve iterations. Work items can be added, reprioritized, or removed from the backlog based on the team's capacity and the changing needs of the project or service being managed with Kanban.
+
+:::image type="content" source="../media/3-kanban-pull-model.png" alt-text="Diagram showing a Kanban board with people pulling work from the backlog.":::
 
 In particular, Kanban promotes the use of a pull model, in which stakeholders add requests to the backlog list of tasks, items, or work that needs to be completed. The development team selects items from the backlog and adds them into the active work process depending on their priority and the team's resources availability. This minimizes the quality issues associated with the pull model, in which stakeholders arbitrarily assign work to development teams, frequently with unrealistic deadlines. In addition, to optimize productivity, Kanban supports imposing limits on the number of items that the development team is currently working on, referred to as *work in progress*  or simply *WIP*.
 

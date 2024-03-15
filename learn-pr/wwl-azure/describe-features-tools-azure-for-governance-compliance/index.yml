@@ -2,20 +2,26 @@
 uid: learn.wwl.describe-features-tools-azure-for-governance-compliance
 metadata:
   title: Describe features and tools in Azure for governance and compliance
-  description: "This module describes features and tools that are helpful for governing and maintaining compliance within Azure."
-  ms.date: 08/16/2023
+  description: "Describe features and tools in Azure for governance and compliance"
+  ms.date: 03/13/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
 title: Describe features and tools in Azure for governance and compliance
 summary: This module introduces you to tools that can help with governance and compliance within Azure.
 abstract: |
-  *   Describe the purpose of Microsoft Purview
-  *   Describe the purpose of Azure Policy
-  *   Describe the purpose of resource locks
-  *   Describe the purpose of the Service Trust portal
-prerequisites: |
-  *  Basic familiarity with IT terms and concepts
+  -   Describe the purpose of Microsoft Purview
+
+  -   Describe the purpose of Azure Policy
+
+  -   Describe the purpose of resource locks
+
+  -   Describe the purpose of the Service Trust portal
+prerequisites: '-   Basic familiarity with IT terms and concepts'
 iconUrl: /training/achievements/describe-features-tools-azure-for-governance-compliance.svg
 levels:
 - beginner

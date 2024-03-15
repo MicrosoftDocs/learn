@@ -1,8 +1,8 @@
 When you swap slots, you can precisely control the behavior and configuration of web apps. 
 
-Suppose you've set up deployment slots for production and staging. You've tested a new version of your social media web app in the staging slot. Now it's time to deploy that new version to production. You want to deploy the app smoothly and in the correct configuration.
+Suppose you set up deployment slots for production and staging. You test a new version of your social media web app in the staging slot. Now it's time to deploy that new version to production. You want to deploy the app smoothly and in the correct configuration.
 
-Here, you'll learn the correct configuration to swap the web app into production.
+Here, you learn the correct configuration to swap the web app into production.
 
 ## Manage the configuration for a swap
 
@@ -24,7 +24,7 @@ To view and configure settings for the swap, go to the web app resource and foll
 
     :::image type="content" source="../media/4-deployment-slot-setting.png" alt-text="Screenshot of the toggle deployment slot setting in the Azure portal.":::
 
-1. Select **Save** on the Configuration pane when you are finished to save your settings.
+1. Select **Save** on the Configuration pane when you're finished to save your settings.
 
 ### Swap slots in the Azure portal
 
@@ -44,7 +44,7 @@ When you swap slots, the settings in the target slot (which is typically the pro
 
 To help you discover problems before your app goes live into production, Azure App Service offers a swap-with-preview feature. When you choose this option, the swap proceeds in two phases:
 
-- **Phase 1**: Slot settings from the target slot are applied to the web app in the source slot. Azure then warms up the staging slot. At this point, the swap operation pauses so you can test the app in the source slot to make sure it works with the target slot configuration. If you find no problems, begin the next phase.
+- **Phase 1**: Slot settings from the target slot are applied to the web app in the source slot. Azure then warms up the source slot. At this point, the swap operation pauses so you can test the app in the source slot to make sure it works with the target slot configuration. If you find no problems, begin the next phase.
 - **Phase 2**: The hostnames for the two sites are swapped. The version of the app now in the source slot receives its slot settings.
 
 > [!IMPORTANT]
@@ -64,7 +64,7 @@ Auto swap brings the zero-downtime and easy rollback benefits of swap-based depl
 
 When you use auto swap, you can't test the new app version in the staging slot before the swap. Auto swap mainly benefits users who want zero-downtime deployments and simple automated deployment pipelines.
 
-If you want to be able to test before you swap, you'll need a more complex deployment pipeline that requests the slot swap itself. Alternatively, you can deploy to a separate slot that's dedicated for testing.
+If you want to be able to test before you swap, you need a more complex deployment pipeline that requests the slot swap itself. Alternatively, you can deploy to a separate slot that's dedicated for testing.
 
 > [!NOTE]
 > Auto swap is not available in App Service on Linux.
