@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-langstons-ant-file-operations.exercise-write-game-file
+title: Exercise - Write the game state to a file
+metadata:
+  title: Exercise - Write the game state to a file
+  description: "Exercise - Write the game state to a file"
+  ms.date: 03/12/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-exercise-write-game-file.md)]

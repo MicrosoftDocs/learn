@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/11/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: machine-learning
 title: Perform hyperparameter tuning with Azure Machine Learning
 summary: Learn how to perform hyperparameter tuning with a sweep job in Azure Machine Learning.

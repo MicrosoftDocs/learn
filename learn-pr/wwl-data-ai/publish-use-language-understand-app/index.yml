@@ -6,7 +6,7 @@ metadata:
   ms.date: 11/7/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure-ai-language
 title: Develop an app with Azure AI Language
 summary: After creating an Azure AI Language Understanding model, you can publish it and consume it from client applications.
@@ -31,7 +31,6 @@ products:
 subjects:
 - artificial-intelligence
 - cloud-computing
-- data-ai
 units:
 - learn.wwl.publish-use-language-understand-app.introduction
 - learn.wwl.publish-use-language-understand-app.understand-capabilities-of-language-service

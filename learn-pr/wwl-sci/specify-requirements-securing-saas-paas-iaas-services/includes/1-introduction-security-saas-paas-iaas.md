@@ -16,7 +16,7 @@ The content in the module helps you prepare for the certification exam SC-100: M
 As you consider and evaluate public cloud services, it’s critical to understand the shared responsibility model and which security tasks are handled by the cloud provider and which tasks are handled by you. The workload responsibilities vary depending on whether the workload is hosted on Software as a Service (SaaS), Platform as a Service (PaaS), Infrastructure as a Service (IaaS), or in an on-premises datacenter
 
 <!-- 
-[](https://learn.microsoft.com/azure/security/fundamentals/shared-responsibility#division-of-responsibility)
+[](/azure/security/fundamentals/shared-responsibility#division-of-responsibility)
 -->
 
 

@@ -30,8 +30,7 @@ products:
 subjects:
 - data-analytics
 - data-engineering
-- data-lake
-- data-warehousing
+- data-storage
 units:
 - learn.wwl.use-delta-lake-azure-synapse-analytics.introduction
 - learn.wwl.use-delta-lake-azure-synapse-analytics.understand-delta-lake

@@ -1,4 +1,4 @@
-Web APIs enable all an application to be reachable by anyone who's using a browser or HTTP-capable client software. Each route enables specific capabilities of the application.
+Web APIs enable an application to be reachable by anyone who's using a browser or HTTP-capable client software. Each route enables specific capabilities of the application.
 
 In this module, as an engineer at Tailwind Traders, the fictitious online retailer, you are assigned the job to use Node.js to create a new set of HTTP APIs that lists the products that the retailer sells to enable applications to work with the product data.
 

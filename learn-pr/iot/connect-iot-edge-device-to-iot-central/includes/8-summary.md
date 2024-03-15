@@ -6,6 +6,8 @@ You configured an IoT Central application with a device template that defines th
 
 Using IoT Edge devices in your stores delivers a robust solution that can handle connectivity outages and reduce the amount of data sent from each store.
 
+[!INCLUDE [learn-pr/includes/learn-pr/includes/azure-optional-exercise-subscription-cleanup](../../../includes/azure-optional-exercise-subscription-cleanup.md)]
+
 ## Learn more
 
 - [Azure IoT documentation](/azure/iot/)

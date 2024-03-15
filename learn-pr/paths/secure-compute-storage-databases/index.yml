@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.secure-compute-storage-databases
 metadata:
-  title: Secure compute, storage, and databases
-  description: Secure compute, storage, and databases
-  ms.date: 01/03/2024
+  title: 'AZ-500: Secure compute, storage, and databases'
+  description: 'AZ-500: Secure compute, storage, and databases'
+  ms.date: 03/12/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: learning-path
-title: Secure compute, storage, and databases
+title: 'AZ-500: Secure compute, storage, and databases'
 prerequisites: |
   None
 summary: |

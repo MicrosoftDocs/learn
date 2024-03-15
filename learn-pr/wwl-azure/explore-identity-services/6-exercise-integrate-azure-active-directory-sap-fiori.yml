@@ -4,10 +4,10 @@ title: Integrate Microsoft Entra ID with SAP Fiori
 metadata:
   title: Integrate Microsoft Entra ID with SAP Fiori
   description: "Integrate Microsoft Entra ID with SAP Fiori"
-  ms.date: 10/17/2023
+  ms.date: 03/05/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 11
 content: |
   [!include[](includes/6-exercise-integrate-azure-active-directory-sap-fiori.md)]

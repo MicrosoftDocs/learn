@@ -1,6 +1,6 @@
 By registering your web API and exposing it through scopes, assigning an owner and app role, you can provide permissions-based access to its resources to authorized users and client apps that access your API.
 
-Register the web API
+## Register the web API
 
 Access to APIs requires configuration of access scopes and roles. If you want to expose your resource application web APIs to client applications, configure access scopes and roles for the API. If you want a client application to access a web API, configure permissions to access the API in the app registration.
 
@@ -51,6 +51,9 @@ You can use the default value of application client identity or another supporte
 
 6. Select Add a scope
 
+:::image type="content" source="../media/expose-application-program-interface-c51f4c95.png" alt-text="Screenshot showing the applications registrations page.":::
+
+
 7. Next, specify the scope's attributes in the Add a scope pane. For this walk-through, you can use the example values or specify your own.<br>
 
 | **Field**                  | **Example value**                                                |
@@ -78,13 +81,26 @@ Next, add another example scope named `Employees.Write.All` that only admins can
 
 To add the `Employees.Write.All` example scope, follow the steps in the **Add a scope** section and specify these values in the Add a scope pane:
 
-| **Field**                  | **Example value**                                                |
-| -------------------------- | ---------------------------------------------------------------- |
-| Scope name                 | Employees.Write.All                                              |
-| Who can consent            | Admins only                                                      |
-| Admin consent display name | Write access to Employee records                                 |
-| Admin consent description  | Allow the application to have write access to all Employee data. |
-| User consent display name  | *None (leave empty)*                                             |
-| User consent description   | *None (leave empty)*                                             |
+| **Field**                  | **Example value**                                                  |
+| -------------------------- | ------------------------------------------------------------------ |
+| Scope name                 | `Employees.Write.All`                                              |
+| Who can consent            | Admins only                                                        |
+| Admin consent display name | `Write access to Employee records`                                 |
+| Admin consent description  | `Allow the application to have write access to all Employee data.` |
+| User consent display name  | *None (leave empty)*                                               |
+| User consent description   | *None (leave empty)*                                               |
 
 Set the State to Enabled, and then select Add scope.
+
+## Verify the exposed scopes
+
+If you have successfully added both example scopes described in the previous sections, they'll appear in the Expose an API pane of your web API's app registration, similar to the following image:
+
+:::image type="content" source="../media/verify-exposed-scopes-dbb01a99.png" alt-text="Screenshot showing how to verify exposed scopes.":::
+
+
+As shown in the image, a scope's full string is the concatenation of your web API's **Application ID URI** and the scope's **Scope name**.
+
+For example, if your web API's application ID URI is `https://contoso.com/api` and the scope name is `Employees.Read.All`, the full scope is:<br>
+
+`https://contoso.com/api/Employees.Read.All`

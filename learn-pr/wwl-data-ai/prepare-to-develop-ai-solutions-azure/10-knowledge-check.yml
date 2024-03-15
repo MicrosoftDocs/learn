@@ -40,10 +40,10 @@ quiz:
     choices:
     - content: "The Azure AI service"
       isCorrect: false
-      explanation: "That's incorrect. Use Azure Cognitive Search to index documents for search."
-    - content: "Azure Cognitive Search"
+      explanation: "That's incorrect. Use Azure AI Search to index documents for search."
+    - content: "Azure AI Search"
       isCorrect: true
-      explanation: "That's correct. Use Azure Cognitive Search to index documents for search."
-    - content: "Azure Bot Service"
+      explanation: "That's correct. Use Azure AI Search to index documents for search."
+    - content: "Azure OpenAI Service"
       isCorrect: false
-      explanation: "That's incorrect. Use Azure Cognitive Search to index documents for search."
+      explanation: "That's incorrect. Use Azure AI Search to index documents for search."

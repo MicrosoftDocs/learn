@@ -4,26 +4,26 @@ The main takeaways from this module are that Azure Container Apps implements con
 
 Detailed resources:
 
-- Select the right code-to-cloud path for Azure Container Apps [https://learn.microsoft.com/azure/container-apps/code-to-cloud-options](/azure/container-apps/code-to-cloud-options)
+- Select the right code-to-cloud path for Azure Container Apps [/azure/container-apps/code-to-cloud-options](/azure/container-apps/code-to-cloud-options)
 
-- Publish revisions with Azure Pipelines in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/azure-pipelines](/azure/container-apps/azure-pipelines)
+- Publish revisions with Azure Pipelines in Azure Container Apps | Microsoft Learn [/azure/container-apps/azure-pipelines](/azure/container-apps/azure-pipelines)
 
-- Publish revisions with GitHub Actions in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/github-actions](/azure/container-apps/github-actions)
+- Publish revisions with GitHub Actions in Azure Container Apps | Microsoft Learn [/azure/container-apps/github-actions](/azure/container-apps/github-actions)
 
-- What is Azure DevOps? - Azure DevOps | Microsoft Learn [https://learn.microsoft.com/azure/devops/user-guide/what-is-azure-devops](/azure/devops/user-guide/what-is-azure-devops)
+- What is Azure DevOps? - Azure DevOps | Microsoft Learn [/azure/devops/user-guide/what-is-azure-devops](/azure/devops/user-guide/what-is-azure-devops)
 
-- What is Azure Pipelines? - Azure Pipelines | Microsoft Learn [https://learn.microsoft.com/azure/devops/pipelines/get-started/what-is-azure-pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines)
+- What is Azure Pipelines? - Azure Pipelines | Microsoft Learn [/azure/devops/pipelines/get-started/what-is-azure-pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines)
 
-- Azure Pipelines Agents - Azure Pipelines | Microsoft Learn [https://learn.microsoft.com/azure/devops/pipelines/agents/agents](/azure/devops/pipelines/agents/agents)
+- Azure Pipelines Agents - Azure Pipelines | Microsoft Learn [/azure/devops/pipelines/agents/agents](/azure/devops/pipelines/agents/agents)
 
-- Deploy an Azure Pipelines agent on Windows - Azure Pipelines | Microsoft Learn [https://learn.microsoft.com/azure/devops/pipelines/agents/windows-agent](/azure/devops/pipelines/agents/windows-agent)
+- Deploy an Azure Pipelines agent on Windows - Azure Pipelines | Microsoft Learn [/azure/devops/pipelines/agents/windows-agent](/azure/devops/pipelines/agents/windows-agent)
 
-- Azure Container Apps image pull from Azure Container Registry with managed identity | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/managed-identity-image-pull](/azure/container-apps/managed-identity-image-pull)
+- Azure Container Apps image pull from Azure Container Registry with managed identity | Microsoft Learn [/azure/container-apps/managed-identity-image-pull](/azure/container-apps/managed-identity-image-pull)
 
-- Build and Release Tasks - Azure Pipelines | Microsoft Learn [https://learn.microsoft.com/azure/devops/pipelines/process/tasks](/azure/devops/pipelines/process/tasks)
+- Build and Release Tasks - Azure Pipelines | Microsoft Learn [/azure/devops/pipelines/process/tasks](/azure/devops/pipelines/process/tasks)
 
-- Azure Pipelines task reference | Microsoft Learn [https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/](/azure/devops/pipelines/tasks/reference/)
+- Azure Pipelines task reference | Microsoft Learn [/azure/devops/pipelines/tasks/reference/](/azure/devops/pipelines/tasks/reference/)
 
-- Define variables - Azure Pipelines | Microsoft Learn [https://learn.microsoft.com/azure/devops/pipelines/process/variables](/azure/devops/pipelines/process/variables)
+- Define variables - Azure Pipelines | Microsoft Learn [/azure/devops/pipelines/process/variables](/azure/devops/pipelines/process/variables)
 
-- Set secret variables - Azure Pipelines | Microsoft Learn [https://learn.microsoft.com/azure/devops/pipelines/process/set-secret-variables](/azure/devops/pipelines/process/set-secret-variables)
+- Set secret variables - Azure Pipelines | Microsoft Learn [/azure/devops/pipelines/process/set-secret-variables](/azure/devops/pipelines/process/set-secret-variables)

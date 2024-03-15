@@ -24,8 +24,6 @@ roles:
 products:
 - azure-app-service
 - dotnet-orleans
-subjects:
-  - development-tools
 prerequisites: |
   - A local installation of the [.NET SDK](https://dotnet.microsoft.com/download)
   - [Visual Studio Code](https://code.visualstudio.com) with the Azure development workload installed

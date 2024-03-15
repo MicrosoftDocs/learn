@@ -9,10 +9,11 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
+  ms.service: azure
+  ai-usage: ai-assisted
 title: Configure network security groups
 summary: |
   Learn how to implement network security groups, and ensure network security group rules are correctly applied.
-  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   In this module, you learn how to:
   - Determine when to use network security groups.

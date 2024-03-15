@@ -6,6 +6,7 @@ metadata:
   ms.date: 05/12/2023
   author: JasonGerend
   ms.author: jgerend
+  manager: femila
   ms.topic: module
   ms.custom: e2e-hybrid
   ms.service: azure-stack

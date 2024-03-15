@@ -7,8 +7,8 @@ metadata:
   author: jongalloway
   ms.author: jogallow
   manager: jmartens
-  ms.topic: module
-  ms.prod: .net
+  ms.topic: module-standard-task-based
+  ms.service: dotnet
 title: Interactively debug .NET apps with the Visual Studio debugger
 summary: Learn how to efficiently debug your .NET app by using Visual Studio to fix your bugs quickly.
 abstract: |

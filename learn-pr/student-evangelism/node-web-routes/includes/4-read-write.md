@@ -2,17 +2,17 @@ So far, you've developed routes to read data for the Tailwind Traders products A
 
 ## Write data to the API
 
-To write data, use an HTTP method to indicate if the data is new or and update to existing data. 
+To write data, use an HTTP method to indicate if the data is new or an update to existing data. 
 
 Common HTTP methods are:
 
 | Method | Description |
 | --- | --- |
-| POST | Create a new resource. |
-| PUT | Update an existing resource. |
-| PATCH | Update part of an existing resource. |
+| `POST` | Create a new resource. |
+| `PUT` | Update an existing resource. |
+| `PATCH` | Update part of an existing resource. |
 
-Put and Patch are similar. The difference is that Put replaces the entire resource. Patch replaces only the properties that are specified in the request body.
+`PUT` and `PATCH` are similar. The difference is that `PUT` replaces the entire resource. `PATCH` replaces only the properties that are specified in the request body.
 
 ## Configure your app to receive data
 

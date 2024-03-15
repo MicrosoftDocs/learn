@@ -7,7 +7,7 @@ metadata:
   ms.date: 10/18/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 100
 content: |
   [!include[](includes/10-implement-sap-architecture-on-azure-vms-running-linux.md)]

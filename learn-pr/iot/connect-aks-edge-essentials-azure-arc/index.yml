@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.connect-aks-edge-essentials-azure-arc
+metadata:
+  title: Connect your Azure Kubernetes Service (AKS) Edge Essentials cluster to Azure Arc 
+  description: Deploy applications to Azure Arc-enabled AKS Edge Essentials cluster with GitOps and Flux.
+  ms.date: 01/17/2024
+  author: asergaz
+  ms.author: sergaz
+  ms.topic: module-standard-task-based
+  ms.service: azure-kubernetes-service
+  ms.subservice: aks-edge-essentials
+title: Connect your Azure Kubernetes Service (AKS) Edge Essentials cluster to Azure Arc
+summary: Deploy applications to Azure Arc-enabled AKS Edge Essentials cluster with GitOps and Flux. You'll create an Azure virtual machine (VM) with Windows 11 Enterprise, deploy AKS Edge Essentials single machine K3S cluster with a Linux node, and connect it to Azure Arc. You'll then deploy a sample application to the cluster with GitOps and Flux.
+abstract: |
+  After you complete this module, you'll be able to:
+    - Deploy AKS Edge Essentials
+    - Connect AKS Edge Essentials cluster to Azure Arc.
+    - Deploy containerized applications to AKS Edge Essentials cluster with GitOps and Flux.
+prerequisites: |
+  - An Azure subscription with the **Owner** role (a [free subscription](https://azure.microsoft.com/free/) is sufficient)
+  - A [GitHub account](https://docs.github.com/get-started/signing-up-for-github)
+  - Knowledge about [Kubernetes core concepts for AKS](/azure/aks/hybrid/kubernetes-concepts)
+  - Ability to execute scripts with PowerShell
+iconUrl: /training/achievements/iot/connect-aks-edge-essentials-azure-arc.svg
+levels:
+- beginner
+roles:
+- administrator
+- business-owner
+- developer
+- solution-architect
+- student
+products:
+- azure
+- aks-edge-essentials
+- windows-iot
+subjects:
+- iot
+- containers
+units:
+- learn.connect-aks-edge-essentials-azure-arc.introduction
+- learn.connect-aks-edge-essentials-azure-arc.arc-enable-aks-edge-essentials
+- learn.connect-aks-edge-essentials-azure-arc.exercise-arc-enable-aks-edge-essentials
+- learn.connect-aks-edge-essentials-azure-arc.remote-application-aks-edge-essentials
+- learn.connect-aks-edge-essentials-azure-arc.exercise-remote-application-aks-edge-essentials
+- learn.connect-aks-edge-essentials-azure-arc.knowledge-check
+- learn.connect-aks-edge-essentials-azure-arc.summary
+badge:
+  uid: learn.connect-aks-edge-essentials-azure-arc.badge
