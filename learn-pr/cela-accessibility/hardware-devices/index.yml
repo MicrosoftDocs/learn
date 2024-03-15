@@ -28,7 +28,7 @@ roles:
 products:
 - xbox
 subjects:
-- gaming-innovation
+- game-development
 units:
 - learn.hardware-devices.introduction
 - learn.hardware-devices.standard-devices

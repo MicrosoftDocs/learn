@@ -33,7 +33,7 @@ products:
 - azure
 - azure-kubernetes-service
 subjects:
-- container
+- containers
 units:
 - learn.intro-to-kubernetes.introduction
 - learn.intro-to-kubernetes.what-is-kubernetes

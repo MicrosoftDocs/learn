@@ -38,7 +38,7 @@ products:
 - azure
 - power-platform
 subjects:
-  - data-ai
+  - data-management
 units:
 - learn.student-evangelism.challenge-project-build-speech-translator-app.introduction
 - learn.student-evangelism.challenge-project-build-speech-translator-app.prepare

@@ -3,7 +3,7 @@ uid: learn.wwl.configure-virtual-networks
 metadata:
   title: Configure virtual networks
   description: "Learn how to configure virtual networks and subnets, including IP addressing."
-  ms.date: 03/07/2024
+  ms.date: 03/08/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
@@ -12,7 +12,7 @@ metadata:
   ms.service: azure
   ai-usage: ai-assisted
 title: Configure virtual networks
-summary: Learn to configure virtual networks and subnets, including IP addressing. [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
+summary: Learn to configure virtual networks and subnets, including IP addressing.
 abstract: |
   In this module, you learn how to:
 
