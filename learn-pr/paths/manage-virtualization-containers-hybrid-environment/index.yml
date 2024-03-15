@@ -24,7 +24,7 @@ roles:
 products:
 - windows-server
 subjects:
-- container
+- containers
 modules:
 - learn.wwl.configure-manage-hyper-v
 - learn.wwl.configure-manage-hyper-v-virtual-machines

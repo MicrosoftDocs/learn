@@ -38,7 +38,7 @@ products:
 - sql-server
 subjects:
 - migration
-- database
+- databases
 - cloud-computing
 modules:
 - learn.wwl.introduction-data-platform-modernization

@@ -29,7 +29,7 @@ products:
 - azure-container-instances
 - azure-container-registry
 subjects:
-- container
+- containers
 - database
 - data-engineering
 units:
