@@ -17,12 +17,18 @@ When creating visually engaging training plans, Microsoft Designer can play a pi
 If you're new to Microsoft Designer, follow these steps to design your poster:
 
 1. Open [Microsoft Designer](https://designer.microsoft.com/) and click on a new blank design.
-   :::image type="content" source="../media/microsoft-designer-new-blank-design.jpg" alt-text="Screenshot of Microsoft Designer being open and 'New blank design' option being chosen.":::
-1. Select the design size that best fits your poster dimensions.
-   :::image type="content" source="../media/select-design-size-fits-poster-dimensions.jpg" alt-text="Screenshot of design size selection in Microsoft Designer.":::
-1. Choose a visually appealing background for your poster, either by selecting one of the predesigned backgrounds, or by creating your own using the design tools available in Microsoft Designer.
-   :::image type="content" source="../media/choose-visually-appealing-background-for-poster.jpg" alt-text="Screenshot of Microsoft Designer option to choose a background.":::
-1. Add text boxes to the poster to include information about "Essential things to boost productivity at work." Some topics you might want to include are:
+
+:::image type="content" source="../media/microsoft-designer-new-blank-design.jpg" alt-text="Screenshot of Microsoft Designer being open and 'New blank design' option being chosen.":::
+
+2. Select the design size that best fits your poster dimensions.
+
+:::image type="content" source="../media/select-design-size-fits-poster-dimensions.jpg" alt-text="Screenshot of design size selection in Microsoft Designer.":::
+
+3. Choose a visually appealing background for your poster, either by selecting one of the predesigned backgrounds, or by creating your own using the design tools available in Microsoft Designer.
+
+:::image type="content" source="../media/choose-visually-appealing-background-for-poster.jpg" alt-text="Screenshot of Microsoft Designer option to choose a background.":::
+
+4. Add text boxes to the poster to include information about "Essential things to boost productivity at work." Some topics you might want to include are:
    - Managing energy, not just time
    - Building a better to-do list
    - Tuning out distractions
@@ -32,11 +38,16 @@ If you're new to Microsoft Designer, follow these steps to design your poster:
    - Taking regular breaks
    - Refining the workspace
    - Focusing on high-priority tasks
-   :::image type="content" source="../media/add-text-boxes-to-poster.jpg" alt-text="Screenshot of Microsoft Designer option to add text boxes to a poster.":::
-1. Use the design tools available in Microsoft Designer to format the text and make it eye-catching.
-1. Add images or graphics to your poster to convey your narrative. Click on the "Insert" tab to add images from your computer or from the web.
-   :::image type="content" source="../media/add-images-to-poster-to-convey-narrative.jpg" alt-text="Screenshot of Microsoft Designer option to add images or graphics to a poster.":::
-1. Review and polish your poster until you're satisfied with the result.
+     
+:::image type="content" source="../media/add-text-boxes-to-poster.jpg" alt-text="Screenshot of Microsoft Designer option to add text boxes to a poster.":::
+
+5. Use the design tools available in Microsoft Designer to format the text and make it eye-catching.
+
+7. Add images or graphics to your poster to convey your narrative. Click on the "Insert" tab to add images from your computer or from the web.
+
+:::image type="content" source="../media/add-images-to-poster-to-convey-narrative.jpg" alt-text="Screenshot of Microsoft Designer option to add images or graphics to a poster.":::
+
+7. Review and polish your poster until you're satisfied with the result.
 
 ## Reflection questions
 
