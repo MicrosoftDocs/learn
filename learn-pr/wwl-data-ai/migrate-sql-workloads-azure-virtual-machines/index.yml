@@ -6,7 +6,7 @@ metadata:
   ms.date: 07/28/2023
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure
 title: Migrate SQL Server workloads to Azure Virtual Machine
 summary: You will explore different migration tools and migrate SQL Server databases to Azure Virtual Machine.

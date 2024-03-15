@@ -2,7 +2,7 @@ Moving data from an on-premises data source to the cloud can be intimidating. We
 
 ## The guides
 
-Before getting starting with migration tools, it can be helpful to explore the [migration guides](https://learn.microsoft.com/data-migration/) Microsoft has put together. These guides explain how to move from a variety of sources to various destinations. For example, the guides provide instructions on moving your data from the following sources and destinations (this is just a small sample):
+Before getting starting with migration tools, it can be helpful to explore the [migration guides](/data-migration/) Microsoft has put together. These guides explain how to move from a variety of sources to various destinations. For example, the guides provide instructions on moving your data from the following sources and destinations (this is just a small sample):
 
 | Source | Destination |
 | - | - |

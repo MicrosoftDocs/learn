@@ -56,6 +56,6 @@ Some common permissions are:
 
 For more information about pipeline permissions, see:
 
-- [Set pipeline permissions](https://learn.microsoft.com/azure/devops/pipelines/policies/permissions)
-- [About pipeline security roles](https://learn.microsoft.com/azure/devops/organizations/security/about-security-roles)
-- [Use Azure Resource Manager service connections](https://learn.microsoft.com/azure/devops/pipelines/library/service-endpoints)
+- [Set pipeline permissions](/azure/devops/pipelines/policies/permissions)
+- [About pipeline security roles](/azure/devops/organizations/security/about-security-roles)
+- [Use Azure Resource Manager service connections](/azure/devops/pipelines/library/service-endpoints)

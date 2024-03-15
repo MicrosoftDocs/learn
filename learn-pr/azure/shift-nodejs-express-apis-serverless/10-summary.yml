@@ -3,7 +3,7 @@ uid: learn.azure.shift-express-api-azure-functions.12-summary
 metadata:
   title: Summary
   description: Review changes made to your application that removed polling and added server push technologies
-  ms.date: 04/10/2020
+  ms.date: 02/20/2024
   author: johnpapa
   ms.author: jopapa
   ms.topic: unit

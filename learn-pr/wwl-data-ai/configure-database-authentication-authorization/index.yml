@@ -28,7 +28,7 @@ roles:
 products:
 - azure
 subjects:
-- database
+- databases
 units:
 - learn.wwl.configure-database-authentication-authorization.introduction
 - learn.wwl.configure-database-authentication-authorization.describe-active-directory-azure-active-directory

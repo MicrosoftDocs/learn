@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/18/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure-ai-document-intelligence
 title: Extract data from forms with Azure Document Intelligence
 summary: Azure Document Intelligence uses machine learning technology to identify and extract key-value pairs and table data from form documents with accuracy, at scale. This module teaches you how to use the *Azure Document Intelligence* Azure AI service.

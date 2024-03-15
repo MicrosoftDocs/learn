@@ -31,8 +31,7 @@ products:
 - azure-cosmos-db
 - vs-code
 subjects:
-- database
-- development-tools
+- databases
 units:
 - learn.azure.build-node-cosmos-app-vscode.1-introduction
 - learn.azure.build-node-cosmos-app-vscode.2-create-cosmosdb-instance

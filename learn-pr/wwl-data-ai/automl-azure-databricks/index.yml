@@ -6,7 +6,7 @@ metadata:
   ms.date: 08/29/2023
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure-databricks
 title: Use AutoML in Azure Databricks
 summary: AutoML in Azure Databricks simplifies the process of building an effective machine learning model for your data.
@@ -24,8 +24,7 @@ roles:
 products:
 - azure-databricks
 subjects:
-- data-ai
-- data-science
+- data-management
 - machine-learning
 units:
 - learn.wwl.automl-azure-databricks.introduction

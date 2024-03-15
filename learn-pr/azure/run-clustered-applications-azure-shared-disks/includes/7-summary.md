@@ -4,6 +4,8 @@ Using Ultra Disk and Premium SSDs, you'll benefit from shared access to high-per
 
 In this module, you learned about Azure shared disks and their benefits. You also learned how to create Azure shared disks and use them to deploy clustered VMs.
 
+[!INCLUDE [azure-exercise-subscription-cleanup](../../../includes/azure-exercise-subscription-cleanup.md)]
+
 ## Learn more
 
 To learn more, refer to the following articles:

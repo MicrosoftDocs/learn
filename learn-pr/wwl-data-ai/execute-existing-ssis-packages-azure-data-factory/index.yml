@@ -35,7 +35,7 @@ products:
 subjects:
 - cloud-computing
 - data-analytics
-- data-warehousing
+- data-storage
 units:
 - learn.wwl.execute-existing-ssis-packages-azure-data-factory.introduction
 - learn.wwl.execute-existing-ssis-packages-azure-data-factory.describe-sql-server-integration-services

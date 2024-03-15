@@ -21,7 +21,7 @@ We need to install both the **kubectl** tool and the **k3d** Kubernetes implemen
     curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.28/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
     ```
 
-    If you receive an error that the directory already exists, simply run the `curl` command separately.
+    If you receive an error that the directory already exists, run the `curl` command separately.
 
 1. Add the Kubernetes repository to your **apt** configuration:
 
@@ -93,9 +93,9 @@ You can create a file manage container deployment into Kubernetes with a YAML fi
 
 This file does a couple of things.
 
-The first portion defines a deployment spec for the container to be deployed into Kubernetes. It specifies one replica, where to find the container image, which ports to open on the container, and sets some environment variables. This first portion also defines labels and names that the container and spec can be referenced by.
+The first portion defines a deployment spec for the container to be deployed into Kubernetes. It specifies one replica, where to find the container image, which ports to open on the container, and sets some environment variables. This first portion also defines labels and names that can be used to reference the container and spec.
 
-The second portion then defines that the container runs as a Kubernetes NodePort service. For this module, you don't need to understand all of the specifics of NodePorts, but you should know that this type of service exposes an external IP address so we can test the service from outside the cluster. 
+The second portion then defines that the container runs as a Kubernetes NodePort service. For this module, you don't need to understand all of the specifics of NodePorts. However, you should know that this type of service exposes an external IP address so you can test the service from outside the cluster. 
 
 ## Deploy and run the backend microservice
 
@@ -114,17 +114,43 @@ Next, let's deploy and run the microservice.
     kubectl get pods
     ```
 
-    In the resulting output, you'll have a row with **productsbackend** followed by a string of random characters under the **NAME** column. When everything is ready, there will be a **1/1** under the **READY** column and **Running** under the **STATUS** column.
+    In the resulting output, you have a row with **productsbackend** followed by a string of random characters under the **NAME** column. When everything is ready, there's a **1/1** under the **READY** column and **Running** under the **STATUS** column.
 
-1. To test the service, switch to the **PORTS** tab, then to the right of the local address for the **Back End** port, select the globe icon. The browser opens a new tab at that address.
+1. To test the service, switch to the **PORTS** tab, near the local address for the **Back End** port, select the globe icon. The browser opens a new tab at that address.
 1. To query some products, append the address with **/api/product** and then press <kbd>Enter</kbd>. You should see some product information listed in JSON format.
+
+    ```json
+    [
+        {
+            "id": 1,
+            "name": "Solar Powered Flashlight",
+            "description": "A fantastic product for outdoor enthusiasts",
+            "price": 19.99,
+            "imageUrl": "product1.png"
+        },
+        {
+            "id": 2,
+            "name": "Hiking Poles",
+            "description": "Ideal for camping and hiking trips",
+            "price": 24.99,
+            "imageUrl": "product2.png"
+        },
+        {
+            "id": 3,
+            "name": "Outdoor Rain Jacket",
+            "description": "This product will keep you warm and dry in all weathers",
+            "price": 49.99,
+            "imageUrl": "product3.png"
+        },
+        ...
+    ```
 
 ## Create a deployment file and run the frontend service
 
 Much like the backend service, we need a deployment file for the frontend as well.
 
 1. Create a new file in the **donet-kubernetes** folder named **frontend-deploy.yml**
-2. Paste the following code into the file:
+1. Paste the following code into the file:
 
     ```yml
     ---
@@ -149,8 +175,6 @@ Much like the backend service, we need a deployment file for the frontend as wel
               value: http://*:80
             - name: ProductEndpoint
               value: http://productsbackend
-            - name: ImagePrefix
-              value: http://localhost/images
       selector:
         matchLabels:
           app: storefrontend
@@ -169,37 +193,23 @@ Much like the backend service, we need a deployment file for the frontend as wel
         app: storefrontend
     ```
 
-3. Replace the placeholder `[YOUR DOCKER USERNAME]` with your actual Docker username.
+1. Replace the placeholder `[YOUR DOCKER USERNAME]` with your actual Docker username.
 
     Notice this file is similar to the one we created for the backend microservice. There are two differences:
 
     - We're specifying a different container to run under the deployment's `spec.template.spec.containers.image` value.
-    - There's a new environment variable under the `spec.template.spec.containers.env` section. The code in the **storefrontend** application calls the backend, but because we did not specify a fully qualified domain name (FQDN), nor will we know the IP address of the backend microservice, we use the name we specified under the `metadata.name` node of the `Deployment`. Kubernetes will then take care of the rest.
+    - There's a new environment variable under the `spec.template.spec.containers.env` section. The code in the **storefrontend** application calls the backend, but because we didn't specify a fully qualified domain name (FQDN), we don't know the IP address of the backend microservice, we use the name we specified under the `metadata.name` node of the `Deployment`. Kubernetes takes care of the rest.
 
-4. Switch to the **PORTS** tab, point at the **Forwarded Address** for the **Back End (32001)** port, and then select the **Copy Local Address** icon.
-
-    ![Screenshot showing how to copy the forwarded port for the backend service.](../media/copy-forwarded-port.png)
-
-5. Paste this URL into the `ImagePrefix` environment variable in the **frontend-deploy.yml** file, replacing the text `http://localhost`. Make sure that `/images` appears at the end of the line: 
-
-    ```yaml
-    env:
-        - name: ASPNETCORE_URLS
-          value: http://*:80
-        - name: ProductEndpoint
-          value: http://productsbackend
-        - name: ImagePrefix
-          value: https://studious-fortnight-4g4rx9g47wg249w-32001.app.github.dev/images
-    ```
-
-6. Deploy the container to Kubernetes with the following command:
+1. Deploy the container to Kubernetes with the following command:
 
     ```bash
     kubectl apply -f frontend-deploy.yml
     ```
 
     Again you can use `kubectl get pods` to see the status of the deployment. Once the row for **storefrontend** displays **Running** under the **STATUS** column, everything is ready to go.
-7. To test the front end service, switch to the **PORTS** tab, then to the right of the local address for the **Front End** port, select the globe icon. The browser displays the homepage. 
-8. Select **Products**. The catalog shows Contoso's merchandise.
+1. To test the front end service, switch to the **PORTS** tab, then to the right of the local address for the **Front End** port, select the globe icon. The browser displays the homepage. 
+1. Select **Products**. The catalog shows Contoso's merchandise.
+
+    :::image type="content" source="../media/eshop-products.png" alt-text="A screenshot of the eSHopLite products page.":::
 
 In this exercise, you created a deployment file that described exactly how you wanted the containers to run within Kubernetes. You then had Kubernetes download the image from Docker Hub and start up the containers.

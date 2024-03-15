@@ -3,13 +3,13 @@ uid: learn.challenge-project-use-generative-ai-to-create-business-model-startu.e
 title: Exercise - Co-Define your customers, Value Propositions and Customer Relations
 metadata:
   title: Exercise - Co-Define your customers, Value Propositions and Customer Relations
-  description: "Exercise - Co-Define your customers, Value Propositions and Customer Relations with Bing chat"
+  description: "Exercise - Co-Define your customers, Value Propositions and Customer Relations with Microsoft Copilot"
   ms.date: 12/4/2023
   author: juliamuiruri4
   ms.author: juliamuiruri
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.service: bing
+  ms.topic: unit
+  ms.service: microsoft-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-define-customers-value-proposition-customer-relations.md)]

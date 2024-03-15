@@ -6,8 +6,8 @@ metadata:
   description: "Select an option to implement directory and identity services using Active Directory Domain Services in Azure"
   ms.date: 08/25/2023
   author: wwlpublish
-  ms.author: v-anwarr
-  ms.topic: interactive-tutorial
+  ms.author: tonyj
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

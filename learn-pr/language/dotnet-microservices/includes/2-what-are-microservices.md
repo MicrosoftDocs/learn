@@ -50,9 +50,30 @@ Another benefit of containerization is scalability. You can scale out quickly by
 
 In short, containers offer the benefits of isolation, portability, agility, scalability, and control across the entire application lifecycle workflow.
 
-The microservices you build in this module will run in a Docker container.
+The microservices you build in this module will run in a Docker container, published using .NET CLI.
 
-### Docker
+## .NET SDK container publishing
+
+In .NET 7, the .NET SDK gained the ability to create container images via the `dotnet publish` command. The tools to do this do a bunch of inference based on the properties of your project and its outputs. .NET then creates the same image that a Dockerfile would create. It can take as few as two commands to create a new application and publish it as an image:
+
+```donetcli
+dotnet new webapi
+dotnet publish --os linux --arch x64 /t:PublishContainer -c Release
+```
+
+The preceding .NET CLI commands create a new web API and publishes the app as a container:
+
+* Targeting Linux as the OS (--os linux).
+* Specifying an x64 architecture (--arch x64).
+* Using the release configuration (-c Release).
+
+You can control many aspects of the generated container through MSBuild properties. In general, if you can use a command in a _Dockerfile_ to set some configuration, you can do the same via MSBuild.
+
+### Why build microservices in .NET?
+
+Starting with .NET Core and continuing to current iterations, .NET is built to be cloud-native first. It runs cross-platform, so your Docker image can be based on a flavor of Linux, and your .NET code still runs. Microsoft has already created .NET images for Docker. Also, .NET is extremely fast. The ASP.NET Kestrel web server routinely outperforms other web servers.
+
+## Docker
 
 [Docker](https://www.docker.com/) is an [open-source platform](https://github.com/docker/docker) that you can use to automate the deployment of applications as portable, self-sufficient containers that can run in the cloud or on-premises. Docker is also the company that promotes and evolves this technology. Docker as an organization works in collaboration with cloud, Linux, and Windows vendors, including Microsoft.
 
@@ -64,7 +85,7 @@ When a developer uses Docker, they create an app or service, and then they packa
 
 The image, when it runs, becomes the container. The container is the in-memory instance of an image.
 
-A container image is immutable. After you build an image, the image can't be changed. Because you can't change an image, if you need to make changes to the app or service and its dependencies, create a new image. This feature guarantees that the image that you use in production is the same image that's used in development and testing.
+A container image is immutable. After you build an image, the image can't be changed. Because you can't change an image, if you need to make changes to the app or service and its dependencies, create a new image. This feature guarantees that the imageF you use in production is the same image that's used in development and testing.
 
 ### What is a Dockerfile?
 
@@ -76,6 +97,3 @@ You can customize an image by starting a container with a base image, and then m
 
 A Dockerfile is a set of instructions that create a Docker image that has the exact software that you need in it to run your application, including the application itself.
 
-## Why build microservices in .NET?
-
-Starting with .NET Core and continuing to current iterations, .NET is built to be cloud-native first. It runs cross-platform, so your Docker image can be based on a flavor of Linux, and your .NET code still runs. Microsoft has already created .NET images for Docker. Also, .NET is extremely fast. The ASP.NET Kestrel web server routinely outperforms other web servers.

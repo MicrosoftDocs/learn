@@ -1,4 +1,4 @@
-In this exercise, you deploy a scale object custom resource definition (CRD) into your AKS cluster. The scaler object contains the trigger that connects your deployed application to KEDA. After deploying to AKS, KEDA monitors the Redis List and scales up if the list length exceeds the defined threshold and scales down if the list length falls below the defined threshold.
+In this exercise, you'll deploy a scale object custom resource definition (CRD) into your AKS cluster. The scaler object contains the trigger that connects your deployed application to KEDA. After deploying to AKS, KEDA monitors the Redis List and scales up if the list length exceeds the defined threshold and scales down if the list length falls below the defined threshold.
 
 ## `ScaledObject` manifest overview
 
@@ -22,7 +22,7 @@ In this exercise, you deploy a scale object custom resource definition (CRD) int
     > [!NOTE]
     > `minReplicaCount: 0` takes the Deployment default replica count from one to zero. This occurs if the service is idle and not processing any events. In this case, if there are no items in the Redis List, and the service remains idle, KEDA scales to zero.
 
-* `advanced`: This section is related to advanced customizations of KEDA. The `restoreToOriginalReplicaCount` instructs KEDA to return the replica count to the original value after scale up events. In this case, you set it to `false`, which causes a scale down to the `minReplicaCount` value of zero.
+* `advanced`: This section is related to advanced customizations of KEDA. The `restoreToOriginalReplicaCount` instructs KEDA to return the replica count to the original value after scale-up events. In this case, you set it to `false`, which causes a scale down to the `minReplicaCount` value of zero.
 
     ```yaml
       restoreToOriginalReplicaCount: false        # Optional. Default: false
@@ -56,7 +56,7 @@ For more information, see [KEDA Scalers](https://keda.sh/docs/2.2/scalers/).
 
 ## Create the `ScaledObject` manifest
 
-1. In Cloud Shell, create a manifest file for the Kubernetes Deployment called `scaled-object.yaml` using the `touch` command.
+1. In Cloud Shell, create a manifest file for the Kubernetes Deployment called `scaled-object.yaml` using the `touch` command:
 
     ```azurecli-interactive
     touch scaled-object.yaml
@@ -64,7 +64,7 @@ For more information, see [KEDA Scalers](https://keda.sh/docs/2.2/scalers/).
 
 2. Open the integrated editor in Cloud Shell by entering `code .`
 
-3. Open the `scaled-object.yaml` file, and add the following code section of YAML.
+3. Open the `scaled-object.yaml` file and add the following code section of YAML:
 
     ```yaml
     apiVersion: keda.sh/v1alpha1
@@ -104,11 +104,11 @@ For more information, see [KEDA Scalers](https://keda.sh/docs/2.2/scalers/).
           portFromEnv: REDIS_PORT
     ```
 
-4. Save the manifest file and close the editor.
+4. Save the manifest file (<kbd>CTRL + S</kbd>) and close the editor(<kbd>CTRL + Q</kbd>).
 
 ## Apply the manifest
 
-1. Deploy the manifest to your cluster using the `kubectl apply` command.
+1. Deploy the manifest to your cluster using the `kubectl apply` command:
 
       ```azurecli-interactive
       kubectl apply -f ./scaled-object.yaml
@@ -120,7 +120,7 @@ For more information, see [KEDA Scalers](https://keda.sh/docs/2.2/scalers/).
       scaledobject.keda.sh/scaled-contoso created
       ```
 
-2. Check the number of running pods using the `kubectl get pods` command.
+2. Check the number of running pods using the `kubectl get pods` command:
 
       ```azurecli-interactive
       kubectl get pods
@@ -136,7 +136,7 @@ For more information, see [KEDA Scalers](https://keda.sh/docs/2.2/scalers/).
 3. Periodically run the `kubectl get pods` command to verify the Deployment is scaling the number of pods according to the backlog of work.
 
     > [!NOTE]
-    > If you have Linux utility `watch` installed you can run the following command to see the pods scale to process the Redis list items: `watch kubectl get pods`. If not, you can also use `kubectl get pods -w`.
+    > If you have the Linux utility watch installed, you can use the `watch kubectl get pods` command to see the pods scale to process the Redis list items. If not, you can use the `kubectl get pods -w` command.
 
     Your output should look similar to the following example output:
 
@@ -149,4 +149,4 @@ For more information, see [KEDA Scalers](https://keda.sh/docs/2.2/scalers/).
       contoso-microservice-794d98b5-5kdbw   1/1     Running   0          2m15s
     ```
 
-After all the items are processed and the `cooldownPeriod` expires, you will see that the number of pods is *zero*. This is because KEDA removed all running replicas and has no items left to process.
+After all the items are processed and the `cooldownPeriod` expires, you'll see that the number of pods is *zero*. This is because KEDA removed all running replicas and has no items left to process.

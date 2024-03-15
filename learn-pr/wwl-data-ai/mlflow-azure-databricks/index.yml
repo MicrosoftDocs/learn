@@ -6,7 +6,7 @@ metadata:
   ms.date: 08/29/2023
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure-databricks
 title: Use MLflow in Azure Databricks
 summary: MLflow is an open source platform for managing the machine learning lifecycle that is natively supported in Azure Databricks.
@@ -24,8 +24,7 @@ roles:
 products:
 - azure-databricks
 subjects:
-- data-ai
-- data-science
+- data-management
 - machine-learning
 units:
 - learn.wwl.mlflow-azure-databricks.introduction

@@ -4,10 +4,12 @@ title: Implement and manage Microsoft Entra Permissions Management
 metadata:
   title: Implement and manage Microsoft Entra Permissions Management
   description: "Implement and manage Microsoft Entra Permissions Management"
-  ms.date: 12/28/2023
+  ms.date: 02/23/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/6-enable-microsoft-entra-permissions-management-your-organization.md)]

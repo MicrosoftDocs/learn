@@ -3,8 +3,8 @@ uid: learn.security-copilot-describe-core-features.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Describe the core features of Microsoft Security Copilot."
-  ms.date: 11/18/2023
+  description: "Describe the core features of Microsoft Copilot for Security."
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
@@ -16,37 +16,36 @@ content: |
 
 quiz:
   questions:
-  - content: "What is the Security Copilot landing page?"
+  - content: "What is the Microsoft Copilot for Security landing page?"
     choices:
     - content: "The portal to the platform where users can access key landmarks such as the prompt bar, plugins, and help."
       isCorrect: true
-      explanation: "The Security Copilot landing page is the portal to the platform where users can access key landmarks such as the prompt bar, plugins, and help."
+      explanation: "The SCopilot landing page is the portal to the platform where users can access key landmarks such as the prompt bar, plugins, and help."
     - content: "A page where users can only access the prompt bar."
       isCorrect: false
       explanation: "The landing page includes more than just the prompt bar."
-    - content: "A page that lists all the plugins available in Security Copilot."
+    - content: "A page that lists all the plugins available in Copilot."
       isCorrect: false
       explanation: "The landing page includes more than just the plugins."
-  - content: "What are plugins in Microsoft Security Copilot?"
+  - content: "What are plugins in Microsoft Copilot for Security?"
     choices:
-    - content: "Extensions that give Security Copilot access to information and capabilities from within your organization's Microsoft products."
+    - content: "Plugins from Microsoft and non-Microsoft security products are a means to extend and integrate services with Copilot."
       isCorrect: true
-      explanation: "Plugins extend Security Copilot’s capabilities by giving it access to information and capabilities from within your organization's Microsoft products."
+      explanation: "Plugins bring more context from event logs, alerts, incidents, and policies from both Microsoft security products and supported non-Microsoft solutions."
     - content: "Open-source intelligence feeds that provide guidance specific to your organization."
       isCorrect: false
-      explanation: "Open-source intelligence feeds are not the only source of plugins."
-    - content: "Third-party vendors that provide guidance specific to your organization."
+      explanation: "Although there can be plugins to Open-source intelligence feeds, plugins provide a broader set of services. Plugins provide a means to extent and integrate across many different types of services."
+    - content: "External vendors that provide guidance specific to your organization."
       isCorrect: false
-      explanation: "Third-party vendors are not the only source of plugins."
-  - content: "What is the embedded experience in Security Copilot?"
+      explanation: "Although there can be plugins from non-Microsoft vendors, they aren't the only source of plugins. Plugins are a means to extend and integrate services from Microsoft and non-Microsoft solutions, with Copilot."
+  - content: "What statement best describes the approach a user would start with to create a custom promptbook?"
     choices:
-    - content: "Security Copilot accessible directly from some Microsoft security products"
+    - content: "Start with an existing session that contains the desired prompts, select the prompts to include, then select the create promptbook icon."
       isCorrect: true
-      explanation: "With the embedded experience, Security Copilot is accessible directly from some Microsoft security products."
-    - content: "A mechanism to provide feedback on the accuracy of the AI generated response."
+      explanation: "To create your own promptbook, you can start with an existing session that contains the prompts you want to work with."
+    - content: "Use the sources icon in the prompt bar then select the upload file option to upload a file with the prompts you want to work with."
       isCorrect: false
-      explanation: "This is a feature available in both the standalone and embedded experience."
-    - content: "A capability to analyze scripts and codes using external tools."
+      explanation: "Creating a custom promptbook doesn't require a user to upload a file. A user starts with an existing session that contains the desired prompts."
+    - content: "Send an email to a user with a global administrator or security administrator role along with a file containing the desired prompts and input parameters."
       isCorrect: false
-      explanation: "The script analysis capability of Security Copilot in Microsoft Defender XDR provides security teams added capacity to inspect scripts and code without using external tools."
-  
+      explanation: "Any user that can create sessions in Copilot can create a custom promptbook."

@@ -6,7 +6,7 @@ metadata:
   ms.date: 08/22/2023
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: active-directory
 title: Authenticate and authorize multi-tenant apps using Microsoft Entra ID
 summary: Microsoft Entra ID enables you to improve the functionality of cloud-native apps in multitenant scenarios.

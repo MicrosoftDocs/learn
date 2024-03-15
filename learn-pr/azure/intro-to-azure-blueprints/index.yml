@@ -7,7 +7,7 @@ metadata:
   ms.date: 1/2/2024
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: blueprints
 title: Intro to Azure blueprints
 summary: "This module introduces you to Azure Blueprints and describes its characteristics, capabilities, and use cases."
@@ -31,8 +31,6 @@ roles:
 products:
 - azure
 - azure-blueprints
-subjects:
-- development-tools
 units:
 - learn.intro-to-azure-blueprints.introduction
 - learn.intro-to-azure-blueprints.what-is-azure-blueprints

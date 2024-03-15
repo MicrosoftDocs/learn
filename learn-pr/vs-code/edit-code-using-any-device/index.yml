@@ -1,0 +1,57 @@
+### YamlMime:Module
+uid: learn.edit-code-using-any-device
+metadata:
+  title: Edit code using any device with Visual Studio Code for the Web
+  description: "In this module, you'll learn how to use Visual Studio for the Web to develop from any device that is browser compatible. We'll explore how to make and review lightweight code edits using Visual Studio Code for the Web. Finally, we'll learn how to continue working in a different environment to get the full feature set of Visual Studio Code."             
+  ms.date: 01/22/2024           
+  author: olguzzar     
+  ms.author: olguzzar
+  manager: buhollan
+  ms.topic: module
+  ms.service: vs-code
+
+title: Edit code using any device with Visual Studio Code for the Web
+
+summary: |
+  In this module, you'll learn how to use Visual Studio for the Web to develop from any device that is browser compatible. We'll explore how to make and review lightweight code edits using Visual Studio Code for the Web. Finally, we'll learn how to continue working in a different environment to get the full feature set of Visual Studio Code.
+
+abstract: |
+  By the end of this module, you'll be able to
+    - Determine when to use Visual Studio Code for the Web vs Visual Studio Code Desktop.
+    - View and edit code in the browser.
+    - Use source control features and review pull requests in the browser.
+    - Move to a more powerful development environment using the "Continue Working On…" feature.
+
+
+prerequisites: |
+  - Basic knowledge of software development, such as what it means to edit code and use source control
+  - Basic familiarity with the Visual Studio Code editor
+
+
+iconUrl: /learn/achievements/introduction-to-visual-studio-code.svg
+
+levels:
+  - beginner
+
+roles:
+  - developer
+
+products:
+ - vs-code
+
+subjects:
+  - app-development
+
+units:
+- learn.edit-code-using-any-device.introduction
+- learn.edit-code-using-any-device.what-is-visual-studio-code-for-the-web
+- learn.edit-code-using-any-device.exercise-use-visual-studio-code-for-the-web
+- learn.edit-code-using-any-device.working-with-code
+- learn.edit-code-using-any-device.exercise-work-with-existing-repo
+- learn.edit-code-using-any-device.continue-working-in-different-environment
+- learn.edit-code-using-any-device.exercise-continue-working-in-different-environment
+- learn.edit-code-using-any-device.knowledge-check
+- learn.edit-code-using-any-device.summary
+
+badge:
+  uid: learn.edit-code-using-any-device.badge

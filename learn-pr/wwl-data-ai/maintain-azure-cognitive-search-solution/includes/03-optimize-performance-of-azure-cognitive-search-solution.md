@@ -12,7 +12,7 @@ To start with, enable diagnostic logging using Log Analytics:
 - In the Azure portal, select **Diagnostic settings**.
 - Select **+ Add diagnostic settings**.
 
-:::image type="content" source="../media/add-diagnostic-logging-small.png" alt-text="Screenshot showing how to add diagnostics to an Azure Cognitive Search service." lightbox="../media/add-diagnostic-logging.png":::
+:::image type="content" source="../media/add-diagnostic-logging-small.png" alt-text="Screenshot showing how to add diagnostics to an Azure AI Search service." lightbox="../media/add-diagnostic-logging.png":::
 
 - Give your diagnostic setting a name.
 - Select **allLogs** and **AllMetrics**.
@@ -23,13 +23,13 @@ To start with, enable diagnostic logging using Log Analytics:
 
 It's important to capture this diagnostic information at the search service level. As there are several places where your end-users or apps can see performance issues.
 
-:::image type="content" source="../media/possible-performance-issues.png" lightbox="../media/possible-performance-issues.png"alt-text="A diagram showing all the possible performance bottlenecks when searching. From network latency, app service performance, or cognitive search processing the query.":::
+:::image type="content" source="../media/possible-performance-issues.png" lightbox="../media/possible-performance-issues.png"alt-text="A diagram showing all the possible performance bottlenecks when searching. From network latency, app service performance, or AI Search processing the query.":::
 
 If you can prove that your search service is performing well, you can eliminate it from the possible factors if you're having performance issues.
 
 ### Check if your search service is throttled
 
-Azure Cognitive Search searches and indexes can be throttled. If your users or apps are having their searches throttled, it's captured in Log Analytics with a 503 HTTP response. If your indexes are being throttled, they'll show up as 207 HTTP responses.
+Azure AI Search searches and indexes can be throttled. If your users or apps are having their searches throttled, it's captured in Log Analytics with a 503 HTTP response. If your indexes are being throttled, they'll show up as 207 HTTP responses.
 
 This query you can run against your search service logs shows you if your search service is being throttled.
 
@@ -48,7 +48,7 @@ You'd run the command to see a bar chart of your search services HTTP responses.
 
 ### Check the performance of individual queries
 
-The best way to test individual query performance is with a client tool like Postman. You can use any tool that will show you the headers in the response to a query. Azure Cognitive Search will always return an 'elapsed-time' value for how long it took the service to complete the query.
+The best way to test individual query performance is with a client tool like Postman. You can use any tool that will show you the headers in the response to a query. Azure AI Search will always return an 'elapsed-time' value for how long it took the service to complete the query.
 
 :::image type="content" source="../media/performance-elapsed-time-small.png" alt-text="Screenshot of Postman showing the elapsed time and total round trip time highlighted." lightbox="../media/performance-elapsed-time.png":::
 
@@ -56,7 +56,7 @@ If you want to know how long it would take to send and then receive the response
 
 ## Optimize your index size and schema
 
-How your search queries perform is directly connected to the size and complexity of your indexes. The smaller and more optimized your indexes, the fast Azure Cognitive Search can respond to queries. Here are some tips that can help if you've found that you've performance issues on individual queries.
+How your search queries perform is directly connected to the size and complexity of your indexes. The smaller and more optimized your indexes, the fast Azure AI Search can respond to queries. Here are some tips that can help if you've found that you've performance issues on individual queries.
 
 If you don't pay attention, indexes can grow over time. You should review that all the documents in your index are still relevant and need to be searchable.
 
