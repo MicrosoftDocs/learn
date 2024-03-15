@@ -4,12 +4,10 @@ title: Exercise – Explore fundamentals of data visualization with Power BI
 metadata:
   title: Exercise – Explore fundamentals of data visualization with Power BI
   description: "Exercise – Explore fundamentals of data visualization with Power BI"
-  ms.date: 08/31/2022
+  ms.date: 03/14/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
-labModal: false
 durationInMinutes: 20
 content: |
   [!include[](includes/5-exercise-power-bi.md)]

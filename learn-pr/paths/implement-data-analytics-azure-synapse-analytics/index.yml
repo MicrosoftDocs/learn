@@ -21,7 +21,7 @@ roles:
 products:
 - azure-synapse-analytics
 subjects:
-- database
+- databases
 - data-engineering
 - data-storage
 modules:
