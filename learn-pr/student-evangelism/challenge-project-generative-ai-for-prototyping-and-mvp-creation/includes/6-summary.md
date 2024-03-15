@@ -9,6 +9,6 @@ You created a prototype and built a Minimal Viable Product (MVP) with the help o
 
 Microsoft for Startups Founders Hub helps startups radically accelerate innovation by providing access to industry-leading AI services, expert guidance, and the essential technology needed to build a future-proofed startup.
 
-This is the perfect opportunity 😃 for you to unlock extra resources and bring your startup into a reality. and guess what, you have everything you need. Apply for the [Founders Hub program](https://www.microsoft.com/en/startups?WT.mc_id=academic-114050-bethanycheum) today
+This is the perfect opportunity 😃 for you to unlock extra resources and bring your startup into a reality. And guess what, you have everything you need. Apply for the [Founders Hub program](https://www.microsoft.com/en/startups?WT.mc_id=academic-114050-bethanycheum) today
 
 In addition, if you're a student, participate today in [Imagine Cup](https://imaginecup.microsoft.com/?WT.mc_id=academic-114050-bethanycheum). Imagine Cup is a global competition that enables you to share your project to the world and gives you a chance to win amazing prizes along the way.
