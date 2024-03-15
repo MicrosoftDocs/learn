@@ -3,7 +3,7 @@ uid: learn.iot.synchronize-azure-digital-twins-with-iot-device-data
 metadata:
   title: Synchronize Azure Digital Twins with IoT device data
   description: Set up data flow from a simulated IoT device into Azure Digital Twins. 
-  ms.date: 09/07/2023
+  ms.date: 03/15/2024
   author: baanders
   ms.author: baanders
   ms.topic: module
@@ -13,8 +13,8 @@ summary: >
   Set up an automatic data flow from a simulated IoT Hub device into Azure Digital Twins. Combine this data with business logic to update digital twin properties.
 abstract: | 
   By the end of this module, you'll be able to...
-  - Identify which Azure services are used to carry IoT data to Azure Digital Twins
-  - Describe the flow of data from a connected IoT device through supportive Azure services into Azure Digital Twins
+  - Identify which Azure services are used to carry IoT data to Azure Digital Twins.
+  - Describe the flow of data from a connected IoT device through supportive Azure services into Azure Digital Twins.
   - Create Azure functions to define how twins should be updated, based on device data and business logic.
 prerequisites: |
   - Understanding of how models, twins, and relationships are used in an Azure Digital Twins solution.

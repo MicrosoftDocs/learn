@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.synchronize-azure-digital-twins-with-iot-device-data.propagate-data-through-digital-twin-graph
 title: Propagate data through digital twin graph
-sandbox: true
-interactive: bash
 metadata:
   title: Propagate data through digital twin graph with an Azure function
   description: Create an Azure function to watch digital twins for updates and apply updates to related digital twins.

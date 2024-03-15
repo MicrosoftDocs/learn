@@ -26,21 +26,21 @@ Navigate back to the [Azure Cloud Shell](https://ms.portal.azure.com/#cloudshell
 
 Set two console variables to use for your new storage resource names, replacing placeholders with your own values:
 
-```azure-cli
+```azurecli
 STORAGE_ACCOUNT=<Enter a name to use for your Azure storage account>
 CONTAINER=<Enter a name to use for your storage container>
 ```
 
 Next, run the following command to assign a system-assigned identity to the Azure Digital Twins instance, and store its ID value to a `$PRINCIPALID` console variable. This value is needed to give Azure Digital Twins permission to access the import file from Azure Blob Storage.
 
-```azure-cli
+```azurecli
 az dt create --dt-name $INSTANCE_NAME --resource-group $RESOURCE_GROUP --mi-system-assigned --location $REGION
 PRINCIPALID=$(az dt identity show -n $INSTANCE_NAME -g $RESOURCE_GROUP --query "principalId" --output tsv)
 ```
 
 Next, create an Azure storage account and blob container, and assign access permission for both your user account and your Azure Digital Twins instance. These Azure storage resources are necessary to store the import file used by the Import Jobs API.
 
-```azure-cli
+```azurecli
 az storage account create --name $STORAGE_ACCOUNT --resource-group $RESOURCE_GROUP --location $REGION --sku Standard_ZRS --encryption-services blob
 az storage container create --account-name $STORAGE_ACCOUNT --name $CONTAINER --auth-mode login
 
@@ -50,7 +50,7 @@ az role assignment create --role "Storage Blob Data Contributor" --assignee $PRI
 
 Run this command to get the URL of your new storage container. Save this value, because you'll use it later when you run the Import Jobs API command from Postman.
 
-```azure-cli
+```azurecli
 echo "https://$STORAGE_ACCOUNT.blob.core.windows.net/$CONTAINER"
 ```
 
@@ -58,7 +58,7 @@ Finally, upload the sample file you downloaded [at the start of this unit](#unde
 
 Now that the sample file is accessible from the Cloud Shell, you can run the following CLI command to upload the sample file to your Azure storage container.
 
-```azure-cli
+```azurecli
 az storage blob upload --account-name $STORAGE_ACCOUNT --container-name $CONTAINER --name distributionGridBulkImport.json --file distributionGridBulkImport.json --auth-mode login
 ```
 
