@@ -35,7 +35,7 @@ Each route can have actions such as create, read, update, and delete (known as C
 
 Express is a web framework that helps you create HTTP APIs. Use it to create routes that handle HTTP requests.
 
-Write code to match the table for `/products/114`, like this:
+Here's an example of code that handles HTTP requests for the URL `/products/114`:
 
 ```javascript
 app.get('/products/:id', (req, res) => {
@@ -75,6 +75,9 @@ Incoming data usually matches the following methods based on the purpose of the 
 | Read | GET | Route and query parameters |
 | Update | PUT | Request body |
 | Delete | DELETE | Route and query parameters |
+
+> [!TIP]
+> The first letter of each method spells CRUD. That terms is used in the industry to describe the four basic types of operations that can be performed on data.
 
 ## Route parameter example with req.params
 

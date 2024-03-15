@@ -1,6 +1,8 @@
 So far, you've developed routes to read data for the Tailwind Traders products API. However, you need to add products too. 
 
-## Write data to the API
+In this unit, we discuss the different methods we can use to add or update products and show examples of how that code is implemented. In the next unit, you'll actually edit your application code to add new products and update existing ones.
+
+## Understand how to write data to the API
 
 To write data, use an HTTP method to indicate if the data is new or an update to existing data. 
 
@@ -14,7 +16,7 @@ Common HTTP methods are:
 
 `PUT` and `PATCH` are similar. The difference is that `PUT` replaces the entire resource. `PATCH` replaces only the properties that are specified in the request body.
 
-## Configure your app to receive data
+## Understand how to configure your app to receive data
 
 To receive data in your web application, configure Express based on the format of the incoming data such as HTML or JSON format. These are common steps, regardless of the data format.
 
@@ -35,7 +37,9 @@ To receive data in your web application, configure Express based on the format o
 
 The data sent from the client is available from `req.body`. You can read the data and insert it into the database.
 
-## Insert a new product
+## Understand how to insert a new product
+
+After configuring an app to receive data, you're ready to create code to insert data. Here's an example of some code that inserts new products to the Tailwind Trader's application data store:
 
 ```javascript
 // Insert a new product
@@ -56,8 +60,9 @@ Call this API with a POST request to `/products` with a JSON body to insert a ne
 }
 ```
 
+## Understand how to update entire product
 
-## Update entire product
+In addition to adding new products, Tailwind Traders needs the ability to replace existing product data. Here's a sample of that code, which handles `PUT` requests:
 
 ```javascript
 app.put('/products/:id', (req, res) => {
@@ -83,7 +88,9 @@ Call this API with a PUT request to `/products/:id` with a JSON body to update a
 }
 ```
 
-## Update part of a product
+## Understand how to update part of a product
+
+You also need the capability to replace a portion of a product's data rather than all of it. Here's an example of that code, which handles `PATCH` requests:
 
 ```javascript
 app.patch('/products/:id', (req, res) => {

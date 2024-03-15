@@ -77,9 +77,11 @@ This exercise teaches both techniques.
 
     The *parameters* directory should contain these files:
 
-    - app.js - This file contains the Express application.
-    - package.json - This file contains the dependencies for the project.
-    - package-lock.json - This file contains the exact versions of the dependencies.
+    | File | Purpose |
+    |--|--|
+    |`app.js`|This file contains the Express application.|
+    |`package.json`|This file contains the dependencies for the project.|
+    |`package-lock.json`|This file contains the exact versions of the dependencies.|
 
 1. Right-click on the folder name in the file explorer, `/nodejs-http/exercise-express-routing/parameters` and select **Open in integrated terminal**. 
 1. In the terminal, run the following command to install the project's dependencies:
@@ -157,7 +159,7 @@ The code contains an Express application. The next step is to implement two rout
 1. Add the following to the end of the URL:
 
     ```text
-    product/1
+    /products/1
     ``` 
 
     The output is:
@@ -210,7 +212,7 @@ The code contains an Express application. The next step is to implement two rout
 1. Add the following to the end of the URL:
 
     ```text
-    page=1&pageSize=2
+    /products?page=1&pageSize=2
     ``` 
 
 
