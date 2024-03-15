@@ -13,7 +13,7 @@ These input resources can live in the same Azure subscription as your Stream Ana
 
 Azure IoT Hub is a highly scalable publish-subscribe event ingestor optimized for IoT scenarios.
 
-The default timestamp of events coming from an IoT Hub in Stream Analytics is the timestamp that the event arrived in the IoT Hub, which is EventEnqueuedUtcTime. To process the data as a stream using a timestamp in the event payload, you must use the TIMESTAMP BY keyword.
+The default timestamp of events coming from an IoT Hub in Stream Analytics is the timestamp that the event arrived in the IoT Hub, which is `EventEnqueuedUtcTime`. To process the data as a stream using a timestamp in the event payload, you must use the `TIMESTAMP BY` keyword.
 
 ### IoT Hub consumer groups
 
@@ -21,79 +21,17 @@ You should configure each Stream Analytics IoT Hub input to have its own consume
 
 When you use stream data from an IoT Hub, you have access to the following metadata fields in your Stream Analytics query:
 
-:::row:::
-  :::column:::
-    **Property**
-  :::column-end:::
-  :::column:::
-    **Description**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    EventProcessedUtcTime
-  :::column-end:::
-  :::column:::
-    The date and time that the event was processed.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    EventEnqueuedUtcTime
-  :::column-end:::
-  :::column:::
-    The date and time that the event was received by the IoT Hub.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    PartitionId
-  :::column-end:::
-  :::column:::
-    The zero-based partition ID for the input adapter.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    IoTHub.MessageId
-  :::column-end:::
-  :::column:::
-    An ID that is used to correlate two-way communication in IoT Hub.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    IoTHub.CorrelationId
-  :::column-end:::
-  :::column:::
-    An ID that is used in message responses and feedback in IoT Hub.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    IoTHub.ConnectionDeviceId
-  :::column-end:::
-  :::column:::
-    The authentication ID used to send this message. This value is stamped on servicebound messages by the IoT Hub.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    IoTHub.ConnectionDeviceGenerationId
-  :::column-end:::
-  :::column:::
-    The generation ID of the authenticated device that was used to send this message. This value is stamped on servicebound messages by the IoT Hub.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    IoTHub.EnqueuedTime
-  :::column-end:::
-  :::column:::
-    The time when the message was received by the IoT Hub.
 
-  :::column-end:::
-:::row-end:::
+| Property                              | Description                                                                                                   |
+|---------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| EventProcessedUtcTime                 | The date and time that the event was processed.                                                               |
+| EventEnqueuedUtcTime                  | The date and time that the event was received by the IoT Hub.                                                 |
+| PartitionId                           | The zero-based partition ID for the input adapter.                                                            |
+| IoTHub.MessageId                      | An ID that is used to correlate two-way communication in IoT Hub.                                             |
+| IoTHub.CorrelationId                  | An ID that is used in message responses and feedback in IoT Hub.                                              |
+| IoTHub.ConnectionDeviceId             | The authentication ID used to send this message. This value is stamped on servicebound messages by the IoT Hub.|
+| IoTHub.ConnectionDeviceGenerationId   | The generation ID of the authenticated device that was used to send this message.                             |
+| IoTHub.EnqueuedTime                   | The time when the message was received by the IoT Hub.                                                        |
 
 
 For example, you can write a query like the following example:

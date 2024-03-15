@@ -6,273 +6,58 @@ Queries are written using a combination of query syntax elements and functions. 
 
 ## Query language elements
 
-The Azure Stream Analytics service provides various elements for building queries. The elements are summarized in the following table.
+Azure Stream Analytics provides a variety of  elements for building queries. They are summarized below.
 
-:::row:::
-  :::column:::
-    **Element**
-  :::column-end:::
-  :::column:::
-    **Summary**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    APPLY
-  :::column-end:::
-  :::column:::
-    The APPLY operator allows you to invoke a table-valued function for each row that is returned by an outer table expression within a query. There are two forms of APPLY:
-
-CROSS APPLY returns only rows from the outer table that produce a result set from the table-valued function.
-
-OUTER APPLY returns both rows that produce a result set in the columns produced by the table-valued function. For rows that do not produce a result, NULL values are returned.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    CASE
-  :::column-end:::
-  :::column:::
-    CASE evaluates a list of conditions and returns one of multiple possible result expressions.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    COALESCE
-  :::column-end:::
-  :::column:::
-    COALESCE evaluates the arguments in order and returns the value of the first expression that initially does not evaluate to NULL.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    CREATE TABLE
-  :::column-end:::
-  :::column:::
-    CREATE TABLE is used to define the schema of the payload of the events coming into Azure Stream Analytics.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    FROM
-  :::column-end:::
-  :::column:::
-    FROM specifies the input stream or a step name associated in a WITH clause. The FROM clause is always required for any SELECT statement.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    GROUP BY
-  :::column-end:::
-  :::column:::
-    GROUP BY is used to group a selected set of rows into a set of summary rows. The summary rows are grouped by the values of one or more columns or expressions.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    HAVING
-  :::column-end:::
-  :::column:::
-    HAVING specifies a search condition for a group or an aggregate. HAVING can be used only with the SELECT expression.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    INTO
-  :::column-end:::
-  :::column:::
-    INTO explicitly specifies an output stream, and is always associated with an SELECT expression. If not specified, the default output stream is "output".
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    JOIN and
-
-Reference Data JOIN
-  :::column-end:::
-  :::column:::
-    JOIN is used to combine records from two or more input sources. JOIN is temporal in nature, meaning that each JOIN must define how far the matching rows can be separated in time.
-
-JOIN is also used to correlate persisted historical data or a slow-changing dataset (also known as Reference data) with the real-time event stream to make smarter decisions about the system. For example, join an event stream to a static dataset that maps IP Addresses to locations. This type of JOIN is the only one supported in Stream Analytics where a temporal bound is not necessary.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    MATCH\_RECOGNIZE
-  :::column-end:::
-  :::column:::
-    MATCH\_RECOGNIZE is used to search for a set of events over a data stream.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    OVER
-  :::column-end:::
-  :::column:::
-    OVER defines the grouping of rows before an associated aggregate or analytic function is applied.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    SELECT
-  :::column-end:::
-  :::column:::
-    SELECT is used to retrieve rows from input streams. SELECT enables the selection of columns from one or more input streams in Azure Stream Analytics.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    UNION
-  :::column-end:::
-  :::column:::
-    UNION combines two or more queries into a single result set. The result set includes all the rows that belong to all queries in the union.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    WHERE
-  :::column-end:::
-  :::column:::
-    WHERE specifies the search condition for the rows returned by the query.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    WITH
-  :::column-end:::
-  :::column:::
-    WITH specifies a temporary named result set that can be referenced by a FROM clause in the query. This parameter is defined within the execution scope of a single SELECT statement.
-  :::column-end:::
-:::row-end:::
-
+|Element|Summary|
+|-------------|-------------|
+|[APPLY](/stream-analytics-query/apply-azure-stream-analytics)|The APPLY operator allows you to invoke a table-valued function for each row returned by an outer table expression of a query. There are two forms of APPLY:<br /><br /> CROSS APPLY returns only rows from the outer table that produce a result set from the table-valued function.<br /><br /> OUTER APPLY returns both rows that produce a result set, and rows that do not, with NULL values in the columns produced by the table-valued function.|
+|[CASE](/stream-analytics-query/case-azure-stream-analytics)|CASE evaluates a list of conditions and returns one of multiple possible result expressions|
+|[COALESCE](/stream-analytics-query/coalesce-azure-stream-analytics)|COALESCE evaluates the arguments in order and returns the value of the first expression that initially does not evaluate to NULL.|
+|[CREATE TABLE](/stream-analytics-query/create-table-stream-analytics)|CREATE TABLE is used to define the schema of the payload of the events coming into Azure Stream Analytics.|
+|[FROM](/stream-analytics-query/from-azure-stream-analytics)|FROM specifies the input stream or a step name associated in a WITH clause. The FROM clause is **always** required for any SELECT statement.|
+|[GROUP BY](/stream-analytics-query/group-by-azure-stream-analytics)|GROUP BY groups a selected set of rows into a set of summary rows grouped by the values of one or more columns or expressions.|
+|[HAVING](/stream-analytics-query/having-azure-stream-analytics)|HAVING specifies a search condition for a group or an aggregate. HAVING can be used **only** with the SELECT expression.|
+|[INTO](/stream-analytics-query/into-azure-stream-analytics)|INTO explicitly specifies an output stream, and is **always** associated with an SELECT expression.  If not specified, the default output stream is "output".|
+|[JOIN](/stream-analytics-query/join-azure-stream-analytics) and<br /><br /> [Reference Data JOIN](/stream-analytics-query/reference-data-join-azure-stream-analytics)|JOIN is used to combine records from two or more input sources.  JOIN is temporal in nature, meaning that each JOIN must define how far the matching rows can be separated in time.<br /><br /> JOIN is also used to   correlate persisted historical data or a slow changing dataset (aka. reference data) with the real-time event stream to make smarter decisions about the system. For example, join an event stream to a static dataset which maps IP Addresses to locations. This is the **only** JOIN supported in Stream Analytics where a temporal bound is not necessary.|
+|[MATCH_RECOGNIZE](/stream-analytics-query/match-recognize-stream-analytics)|MATCH_RECOGNIZE is used to search for a set of events over a data stream.|
+|[NULLIF](/stream-analytics-query/nullif-azure-stream-analytics)|NULLIF evaluates two arguments and returns null if they are equal.|
+|[OVER](/stream-analytics-query/over-azure-stream-analytics)|OVER defines the grouping of rows before an associated aggregate or analytic function is applied. |
+|[SELECT](/stream-analytics-query/select-azure-stream-analytics)|SELECT is used to retrieve rows from input streams and enables the selection of one or many columns from one or many input streams in Azure Stream Analytics.|
+|[UNION](/stream-analytics-query/union-azure-stream-analytics)|UNION combines two or more queries into a single result set that includes all the rows that belong to all queries in the union.|
+|[WHERE](/stream-analytics-query/where-azure-stream-analytics)|WHERE specifies the search condition for the rows returned by the query.|
+|[WITH](/stream-analytics-query/with-azure-stream-analytics)|WITH specifies a temporary named result set which can be referenced by a FROM clause in the query. This is defined within the execution scope of a single SELECT statement.|
 
 ## Built-in functions
 
-### Types of functions
+Azure Stream Analytics provides some built-in functions. The categories of built-in functions are:
 
-:::row:::
-  :::column:::
-    **Function Category**
-  :::column-end:::
-  :::column:::
-    **Description**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Aggregate Functions
-  :::column-end:::
-  :::column:::
-    Operate on a collection of values but return a single, summarizing value.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Analytic Functions
-  :::column-end:::
-  :::column:::
-    Return a value based on defined constraints.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Array Functions
-  :::column-end:::
-  :::column:::
-    Returns information from an array.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    GeoSpatial Functions
-  :::column-end:::
-  :::column:::
-    Perform specialized GeoSpatial functions.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Input Metadata Functions
-  :::column-end:::
-  :::column:::
-    Query the metadata of property in the data input.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Record Functions
-  :::column-end:::
-  :::column:::
-    Returns record properties or values.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Windowing Functions
-  :::column-end:::
-  :::column:::
-    Perform operations on events within a time window.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Scalar Functions
-  :::column-end:::
-  :::column:::
-    Operate on a single value and then return a single value. Scalar functions can be used wherever an expression is valid.
-  :::column-end:::
-:::row-end:::
+### Types of Functions
 
+|Function Category|Description|
+|-----------------------|-----------------|
+|[Aggregate Functions](/stream-analytics-query/aggregate-functions-azure-stream-analytics)|Operate on a collection of values but return a single, summarizing value.|
+|[Analytic Functions](/stream-analytics-query/analytic-functions-azure-stream-analytics)|Return a value based on defined constraints.|
+|[Array Functions](/stream-analytics-query/array-functions-stream-analytics)|Returns information from an array.|
+|[GeoSpatial Functions](/stream-analytics-query/geospatial-functions)|Perform specialized GeoSpatial functions.|
+|[Input Metadata Functions](/stream-analytics-query/input-metadata-functions)|Query the metadata of property in the data input.|
+|[Record Functions](/stream-analytics-query/record-functions-azure-stream-analytics)|Returns record properties or values.|
+|[Windowing Functions](/stream-analytics-query/windowing-azure-stream-analytics)|Perform operations on events within a time window.|
+|[Scalar Functions](/stream-analytics-query/built-in-functions-azure-stream-analytics#BKMK_ScalarFunctions)|Operate on a single value and then return a single value. Scalar functions can be used wherever an expression is valid.|
 
-### Scalar functions
+### Scalar Functions
 
-A scalar function operates on a single value and then returns a single value. Scalar functions can be used wherever an expression is valid.
+A scalar function operates on a single value and then return a single value. Scalar functions can be used wherever an expression is valid.
 
-:::row:::
-  :::column:::
-    **Function Category**
-  :::column-end:::
-  :::column:::
-    **Description**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Conversion Functions
-  :::column-end:::
-  :::column:::
-    These functions allow you to cast data into different formats.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Date and Time Functions
-  :::column-end:::
-  :::column:::
-    These functions allow you to perform operations on DateTime formats.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Mathematical Functions
-  :::column-end:::
-  :::column:::
-    These functions represent the scalar functions that perform a calculation. These functions are usually based on input values that are provided as arguments, and return a numeric value.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    String Functions
-  :::column-end:::
-  :::column:::
-    These functions allow you to convert strings to upper or lower case.
-  :::column-end:::
-:::row-end:::
-
+|Function Category|Description|
+|-----------------------|-----------------|
+|[Conversion Functions](/stream-analytics-query/conversion-functions-azure-stream-analytics)|These functions allow you to cast data into different formats.|
+|[Date and Time Functions](/stream-analytics-query/date-and-time-functions-azure-stream-analytics)|These functions allow you to perform operations on DateTime formats.|
+|[Mathematical Functions](/stream-analytics-query/mathematical-functions-azure-stream-analytics)|Represent the scalar functions that perform a calculation, usually based on input values that are provided as arguments, and return a numeric value.|
+|[String Functions](/stream-analytics-query/string-functions-azure-stream-analytics)|These functions allow you to convert strings to upper or lower case.|
 
 ## Query syntax examples
 
-The following queries are examples taken from the Stream Analytics query language reference. They were selected because the help to illustrate common query patterns and show basic syntax.
+The following queries are examples taken from the Stream Analytics query language reference. They were selected because they help to illustrate common query patterns and show basic syntax.
 
 All query pattern examples included in the reference guide are based on the following toll booth scenario:
 
@@ -284,40 +69,10 @@ For this example, the input stream includes the make of the car, the time when t
 
 #### Input
 
-:::row:::
-  :::column:::
-    **Make**
-  :::column-end:::
-  :::column:::
-    **Time**
-  :::column-end:::
-  :::column:::
-    **Weight**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Honda
-  :::column-end:::
-  :::column:::
-    2015-01-01T00:00:01.0000000Z
-  :::column-end:::
-  :::column:::
-    "1000"
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Honda
-  :::column-end:::
-  :::column:::
-    2015-01-01T00:00:02.0000000Z
-  :::column-end:::
-  :::column:::
-    "2000"
-  :::column-end:::
-:::row-end:::
-
+|Make|Time|Weight|
+|----|----|------|
+|Honda|2015-01-01T00:00:01.0000000Z|"1000"|
+|Honda|2015-01-01T00:00:02.0000000Z|"2000"|
 
 #### Query solution
 
@@ -330,28 +85,13 @@ For this example, the input stream includes the make of the car, the time when t
     GROUP BY
         Make,
         TumblingWindow(second, 10)
-
 ```
 
 #### Output
 
-:::row:::
-  :::column:::
-    **Make**
-  :::column-end:::
-  :::column:::
-    **Weight**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Honda
-  :::column-end:::
-  :::column:::
-    3000
-  :::column-end:::
-:::row-end:::
-
+|Make|Weight|
+|----|------|
+|Honda|3000|
 
 #### Explanation
 
@@ -365,55 +105,13 @@ In this example, the input stream includes the make of a car and the time when t
 
 #### Input
 
-:::row:::
-  :::column:::
-    **Make**
-  :::column-end:::
-  :::column:::
-    **Time**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Honda
-  :::column-end:::
-  :::column:::
-    2015-01-01T00:00:01.0000000Z
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Honda
-  :::column-end:::
-  :::column:::
-    2015-01-01T00:00:02.0000000Z
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Toyota
-  :::column-end:::
-  :::column:::
-    2015-01-01T00:00:01.0000000Z
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Toyota
-  :::column-end:::
-  :::column:::
-    2015-01-01T00:00:02.0000000Z
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Toyota
-  :::column-end:::
-  :::column:::
-    2015-01-01T00:00:03.0000000Z
-  :::column-end:::
-:::row-end:::
-
+|Make|Time|
+|----|----|
+|Honda|2015-01-01T00:00:01.0000000Z|
+|Honda|2015-01-01T00:00:02.0000000Z|
+|Toyota|2015-01-01T00:00:01.0000000Z|
+|Toyota|2015-01-01T00:00:02.0000000Z|
+|Toyota|2015-01-01T00:00:03.0000000Z|
 
 #### Query solution
 
@@ -438,86 +136,23 @@ In this example, the input stream includes the make of a car and the time when t
         TumblingWindow(second, 10)
     HAVING
         [Count] >= 3
-
 ```
 
 #### Output 1
 
-:::row:::
-  :::column:::
-    **Make**
-  :::column-end:::
-  :::column:::
-    **Time**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Honda
-  :::column-end:::
-  :::column:::
-    2015-01-01T00:00:01.0000000Z
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Honda
-  :::column-end:::
-  :::column:::
-    2015-01-01T00:00:02.0000000Z
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Toyota
-  :::column-end:::
-  :::column:::
-    2015-01-01T00:00:01.0000000Z
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Toyota
-  :::column-end:::
-  :::column:::
-    2015-01-01T00:00:02.0000000Z
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Toyota
-  :::column-end:::
-  :::column:::
-    2015-01-01T00:00:03.0000000Z
-  :::column-end:::
-:::row-end:::
-
+|Make|Time|
+|----|----|
+|Honda|2015-01-01T00:00:01.0000000Z|
+|Honda|2015-01-01T00:00:02.0000000Z|
+|Toyota|2015-01-01T00:00:01.0000000Z|
+|Toyota|2015-01-01T00:00:02.0000000Z|
+|Toyota|2015-01-01T00:00:03.0000000Z|
 
 #### Output 2
 
-:::row:::
-  :::column:::
-    **Make**
-  :::column-end:::
-  :::column:::
-    **Time**
-  :::column-end:::
-  :::column:::
-    **Count**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Toyota
-  :::column-end:::
-  :::column:::
-    2015-01-01T00:00:10.0000000Z
-  :::column-end:::
-  :::column:::
-    3
-  :::column-end:::
-:::row-end:::
-
+|Make|Time|Count|
+|----|----|-----|
+|Toyota|2015-01-01T00:00:10.0000000Z|3|
 
 #### Explanation
 

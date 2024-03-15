@@ -6,19 +6,20 @@ When you design your Stream Analytics query, refer to the name of the output by 
 
 The output types supported by Azure Stream Analytics include:
 
- -  Azure Data Lake Storage Gen 1
- -  Azure Data Explorer
- -  Azure Database for PostgreSQL
- -  Azure SQL Database
- -  Azure Synapse Analytics
- -  Blob storage and Azure Data Lake Gen 2
- -  Azure Event Hubs
- -  Power BI
- -  Azure Table storage
- -  Azure Service Bus queues
- -  Azure Service Bus topics
- -  Azure Cosmos DB
- -  Azure Functions
+- Azure Data Explorer
+- Azure Functions
+- Azure Synapse Analytics
+- Blob storage and Azure Data Lake Gen 2
+- Azure Cosmos DB
+- Azure Data Lake Storage Gen 2
+- Azure Event Hubs
+- Kafka (preview)
+- Azure Database for PostgreSQL
+- Power BI
+- Azure Service Bus queues
+- Azure Service Bus topics
+- Azure SQL Database
+- Azure Table storage
 
 The following sections briefly describe the most common use for a few of these output options.
 
@@ -35,9 +36,6 @@ The Azure Event Hubs service is a highly scalable publish-subscribe event ingest
 ## Power BI
 
 You can use Power BI as an output for a Stream Analytics job to provide for a rich visualization experience of analysis results. You can use this capability for operational dashboards, report generation, and metric-driven reporting.
-
-> [!NOTE]
-> Power BI output from Stream Analytics is currently not available in the Azure China 21Vianet and Azure Germany (T-Systems International) regions.
 
 ## Table storage
 
