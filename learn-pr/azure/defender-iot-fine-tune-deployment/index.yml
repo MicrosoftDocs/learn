@@ -19,7 +19,7 @@ prerequisites: |
   - Access to an [Azure subscription](https://azure.microsoft.com/free) as a Security Admin, Contributor, or Owner.
   - A Defender for IoT license with an [OT plan](/azure/defender-for-iot/organizations/getting-started)
   - Access to an installed sensor that's receiving network traffic
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/defender-for-iot/defender-iot-fine-tune-deployment.svg
 levels:
   - intermediate
 roles:
