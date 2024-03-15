@@ -4,12 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/01/2023
+  ms.date: 03/14/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -18,24 +16,24 @@ quiz:
   questions:
   - content: "When should you use a spreadsheet for analyzing data?"
     choices:
-    - content: "When you work alone or in a team, and need to collaborate on a project with a small dataset"
+    - content: "When you work alone or in a team, and need to collaborate on a project with a small dataset."
       isCorrect: true
       explanation: "That's correct. Spreadsheets can be used with modest-sized datasets and shared with a small number of colleagues."
-    - content: "When you want to collate invoices and purchase orders together"
+    - content: "When you want to collate invoices and purchase orders together."
       isCorrect: false
       explanation: "That's incorrect. You would need a data solution to extract the data before doing analysis."
-    - content: "When you want to process data feeds from third-party applications"
+    - content: "When you want to process data feeds from third-party applications."
       isCorrect: false
       explanation: "That's incorrect. You would need a data solution to extract the data before doing analysis."
   - content: "Why would you use Microsoft Azure Synapse Analytics?"
     choices:
-    - content: "To develop a database for relational and transactional systems"
+    - content: "To develop a database for relational and transactional systems."
       isCorrect: false
       explanation: "That's incorrect. Azure SQL Database is designed for developing relational and transactional systems."
-    - content: "To build a data warehouse using data from multiple systems"
+    - content: "To build a data warehouse using data from multiple systems."
       isCorrect: true
       explanation: "That's correct. You use Azure Synapse Analytics to produce a data warehouse that can be queried using Power BI, to create reports and dashboards."
-    - content: "To develop a database for an application that stores nonrelational data"
+    - content: "To develop a database for an application that stores nonrelational data."
       isCorrect: false
       explanation: "That's incorrect. Azure Cosmos DB is the correct solution for a nonrelational database."
   - content: "Which of the following data professionals is responsible for modeling data and creating reports and dashboards?"

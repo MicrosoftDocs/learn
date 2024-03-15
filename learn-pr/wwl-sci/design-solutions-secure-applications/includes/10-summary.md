@@ -11,7 +11,7 @@ You've learned how to:
 ## Learn more with security documentation
 
 - [DevSecOps controls - Cloud Adoption Framework](/azure/cloud-adoption-framework/secure/devsecops-controls)
-- [Overview - Microsoft Defender for Cloud Apps | Microsoft Learn](https://learn.microsoft.com/defender-cloud-apps/what-is-defender-for-cloud-apps)
+- [Overview - Microsoft Defender for Cloud Apps | Microsoft Learn](/defender-cloud-apps/what-is-defender-for-cloud-apps)
 - [Application lifecycle management in Azure Container Apps](/azure/container-apps/application-lifecycle-management)
 - [Workload identities - Microsoft Entra](/azure/active-directory/workload-identities/workload-identities-overview)
 - [Azure API Management - Overview and key concepts](/azure/api-management/api-management-key-concepts)
