@@ -38,10 +38,10 @@ quiz:
     choices:
     - content: "Unpivoting can't restore the original data."
       isCorrect: true
-      explanation: "Correct. The original data will not be restored."
+      explanation: "Correct. The original data won't be restored."
     - content: "The data is unpivoted, and the original detail rows are restored."
       isCorrect: false
       explanation: "Incorrect. This won't restore the original data."
-    - content: "The data is unpivoted, but you will then need to use CUBE  to restore the original detail rows."
+    - content: "The data is unpivoted, but you'll then need to use CUBE  to restore the original detail rows."
       isCorrect: false
       explanation: "Incorrect. Using CUBE won't restore the original data."
