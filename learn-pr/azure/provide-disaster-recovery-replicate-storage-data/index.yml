@@ -24,7 +24,7 @@ roles:
 products:
 - azure-storage
 subjects:
-- data-ai
+- data-management
 units:
 - learn.azure.provide-disaster-recovery-replicate-storage-data.introduction
 - learn.azure.provide-disaster-recovery-replicate-storage-data.evaluate-data-redundancy-options
