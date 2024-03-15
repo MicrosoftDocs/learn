@@ -6,6 +6,7 @@ metadata:
   ms.date: 8/14/2023
   author: dominicbetts
   ms.author: dobett
+  manager: lizross
   ms.topic: module-intro-to-product
   ms.service: iot
 title: Introduction to Azure IoT
@@ -27,7 +28,7 @@ roles:
 products:
 - azure-iot
 subjects:
-- digital-application-innovation
+- app-development
 - iot
 units:
 - learn.introduction-to-azure-iot.introduction

@@ -7,7 +7,9 @@ metadata:
   ms.date: 02/08/2023
   author: SoniaLopezBravo
   ms.author: sonialopez
+  manager: tedhudek
   ms.topic: unit
+  show_latex: true
 durationInMinutes: 10
 content: |
   [!include[](includes/5-estimate-resources-of-a-real-world-problem.md)]

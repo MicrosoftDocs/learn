@@ -4,11 +4,10 @@ title: AI services on the Azure platform
 metadata:
   title: AI services on the Azure platform
   description: "AI services on the Azure platform"
-  ms.date: 10/26/2023
+  ms.date: 12/05/2023
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.service: azure-ai-services
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/2-what-are-ai-services.md)]

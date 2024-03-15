@@ -29,7 +29,7 @@ products:
 languages:
 - powershell
 subjects:
-- digital-application-innovation
+- app-development
 modules:
 - learn.intro-azure-functions
 - learn.choose-azure-service-to-integrate-and-automate-business-processes

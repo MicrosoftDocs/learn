@@ -4,10 +4,10 @@ title: Exercise - Explore data type casting and conversion
 metadata:
   title: Exercise - Explore data type casting and conversion
   description: "Exercise - Explore data type casting and conversion"
-  ms.date: 10/19/2023
+  ms.date: 03/08/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 30
@@ -34,7 +34,7 @@ quiz:
       explanation: "Incorrect. Casting truncates all decimals."
     - content: "`int cost = Convert.ToInt32(3.75m);`"
       isCorrect: true
-      explanation: "Correct. `Convert.ToInt32()` rounds values with fractional precision"
+      explanation: "Correct. `Convert.ToInt32()` rounds values with fractional precision."
     - content: "`uint cost = (uint)3.75m;`"
       isCorrect: false
       explanation: "Incorrect. Casting truncates all decimals."

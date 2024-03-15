@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-generative-ai-copilot-bing.exercise-plan-menu
+title: 'Exercise: Plan the menu'
+metadata:
+  title: 'Exercise: Plan the menu'
+  description: "Exercise: Plan the menu"
+  ms.date: 03/14/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-exercise-plan-menu.md)]

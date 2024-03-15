@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.onboard-sensor-microsoft-defender-iot.summary
+title: 
+  Summary
+metadata:
+  title: Summary
+  description: "Summary unit"
+  ms.date: 02/21/2024
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

@@ -24,7 +24,7 @@ roles:
 products:
 - azure
 subjects:
-- data-lake
+- data-storage
 units:
 - learn.data-ai.upload-data-to-azure-data-lake-storage.introduction
 - learn.data-ai.upload-data-to-azure-data-lake-storage.create-azure-data-lake

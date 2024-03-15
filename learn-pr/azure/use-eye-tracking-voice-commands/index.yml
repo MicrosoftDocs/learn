@@ -1,21 +1,20 @@
 ### YamlMime:Module
 uid: learn.azure.using-eyetracking-and-voice-commands-mrtk
 metadata:
-  title: Enable eye-tracking and voice commands for objects on the HoloLens 2
-  description: This course provides the user an overall understanding on how to use eye-tracking and voice commands
-  ms.date: 06/26/2023
+  title: Enable eye tracking and voice commands for objects on the HoloLens 2
+  description: This course provides the user an overall understanding on how to use eye tracking and voice commands
+  ms.date: 01/04/2023
   author: marlenaklein-msft
   ms.author: marlenaklein
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
-title: Enable eye-tracking and voice commands for objects on the HoloLens 2
-summary: Use eye-tracking and voice commands in your unity project and enhance user experience
+  ms.topic: module
+title: Enable eye tracking and voice commands for objects on the HoloLens 2
+summary: In this module, you'll use eye tracking and voice commands in your Unity project and enhance user experience.
 abstract: |
-  By the end of this module you will be able to:
-  - Learn how to enable eye-tracking for HoloLens 2
-  - Learn how to use eye-tracking to trigger action
-  - Learn how to create speech commands
-  - Learn how to control speech commands globally and locally
+  By the end of this module, you'll be able to:
+  - Learn how to enable eye tracking for HoloLens 2.
+  - Learn how to use eye tracking to trigger action.
+  - Learn how to create speech commands.
+  - Learn how to control speech commands globally and locally.
 
 iconUrl: /training/achievements/using-eyetracking-and-voice-commands-mrtk.svg
 levels:

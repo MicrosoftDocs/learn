@@ -22,36 +22,50 @@ The array of pixel values for this image is two-dimensional (representing rows a
 
 ```
 Red:
- 0   0   0   0   0   0   0  
- 0   0   0   0   0   0   0
- 0   0  255 255 255  0   0
- 0   0  255 255 255  0   0
- 0   0  255 255 255  0   0
- 0   0   0   0   0   0   0
- 0   0   0   0   0   0   0
+ 150  150  150  150  150  150  150  
+ 150  150  150  150  150  150  150
+ 150  150  255  255  255  150  150
+ 150  150  255  255  255  150  150
+ 150  150  255  255  255  150  150
+ 150  150  150  150  150  150  150
+ 150  150  150  150  150  150  150
 
 Green:
- 0   0   0   0   0   0   0  
- 0   0   0   0   0   0   0
- 0   0  255 255 255  0   0
- 0   0  255 255 255  0   0
- 0   0  255 255 255  0   0
- 0   0   0   0   0   0   0
- 0   0   0   0   0   0   0
+ 0    0    0    0    0    0    0          
+ 0    0    0    0    0    0    0
+ 0    0   255  255  255   0    0
+ 0    0   255  255  255   0    0
+ 0    0   255  255  255   0    0
+ 0    0    0    0    0    0    0
+ 0    0    0    0    0    0    0
 
 Blue:
- 0   0   0   0   0   0   0  
- 0   0   0   0   0   0   0
- 0   0  255 255 255  0   0
- 0   0  255 255 255  0   0
- 0   0  255 255 255  0   0
- 0   0   0   0   0   0   0
- 0   0   0   0   0   0   0
+ 255  255  255  255  255  255  255  
+ 255  255  255  255  255  255  255
+ 255  255   0    0    0   255  255
+ 255  255   0    0    0   255  255
+ 255  255   0    0    0   255  255
+ 255  255  255  255  255  255  255
+ 255  255  255  255  255  255  255
 ```
 
 Here's the resulting image:
 
 ![Diagram of a color image.](../media/color-square.png)
+
+The purple squares are represented by the combination: 
+```
+Red: 150 
+Green: 0 
+Blue: 255 
+```
+
+The yellow squares in the center are represented by the combination: 
+```
+Red: 255
+Green: 255
+Blue: 0
+```
 
 ## Using filters to process images
 
@@ -63,7 +77,7 @@ A common way to perform image processing tasks is to apply *filters* that modify
 -1 -1 -1
 ```
 
-The kernel is then *convolved* across the image, calculating a weighted sum for each 3.3 patch of pixels and assigning the result to a new image. It's easier to understand how the filtering works by exploring a step-by-step example.
+The kernel is then *convolved* across the image, calculating a weighted sum for each 3x3 patch of pixels and assigning the result to a new image. It's easier to understand how the filtering works by exploring a step-by-step example.
 
 Let's start with the grayscale image we explored previously:
 

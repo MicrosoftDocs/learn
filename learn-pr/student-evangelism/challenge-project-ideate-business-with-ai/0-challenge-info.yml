@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.challenge-project-use-generative-ai-to-ideate.challenge-info
+title: Challenge project – Ideate with Microsoft Copilot
+metadata:
+  title: Challenge project – Ideate with Microsoft Copilot
+  description: "Understand how you can use Microsoft Copilot to come up with great ideas for your Startup and business"
+  ms.date: 12/7/2023
+  author: pablonunes
+  ms.author: pablolopes
+  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.service: microsoft-copilot
+durationInMinutes: 2
+content: |
+  [!include[](includes/0-challenge-info.md)]

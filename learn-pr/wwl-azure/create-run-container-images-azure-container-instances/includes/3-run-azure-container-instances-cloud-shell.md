@@ -39,7 +39,7 @@ You create a container by providing a name, a Docker image, and an Azure resourc
     ```bash
     az container create --resource-group az204-aci-rg \
         --name mycontainer \
-        --image mcr.microsoft.com/azuredocs/aci-helloworld
+        --image mcr.microsoft.com/azuredocs/aci-helloworld \
         --ports 80 \
         --dns-name-label $DNS_NAME_LABEL --location <myLocation> 
     ```
@@ -77,4 +77,5 @@ When no longer needed, you can use the `az group delete` command to remove the r
 ```bash
 az group delete --name az204-aci-rg --no-wait
 ```
+
 

@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.challenge-project-use-generative-ai-to-ideate.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Learn more skills with Microsoft Learn"
+  ms.date: 12/7/2023
+  author: pablonunes
+  ms.author: pablolopes
+  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.service: microsoft-copilot
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the main purpose of ideation in Design Thinking?"
+    choices:
+    - content: "To evaluate the feasibility and viability of the ideas generated."
+      isCorrect: false
+      explanation: "The ideation phase is to focus in the number of ideas to select the fittest later."
+    - content: "To generate as many ideas as possible."
+      isCorrect: true
+      explanation: "Correct, the ideation phase has focus in generating multiple ideas, to later select one and create solutions around it."
+    - content: "To prototype and test the most promising ideas with users"
+      isCorrect: false
+      explanation: "The ideation phase is to focus in the number of ideas to select the fittest later."
+  - content: "What is the Brain writing technique?"
+    choices:
+      - content: “It is a technique for rapid idea generation that involves writing down and sharing ideas in the group.” 
+        isCorrect: true 
+        explanation: “Correct! Brain writing is an ideation technique with paper to add details to ideas.”
+      - content: “It's a technique for evaluating and selecting the best ideas from a pool of generated ideas.” 
+        isCorrect: false 
+        explanation: “This option isn't the definition of brain writing, but rather a description of another ideation technique.”
+      - content: “It's a technique for prototyping and testing the most promising ideas with users and stakeholders.” 
+        isCorrect: false 
+        explanation: “This option isn't the definition of brain writing, but rather a description of another ideation technique called rapid prototyping.”

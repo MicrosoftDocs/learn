@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/12/2023
   author: JulianePadrao
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: 'Migrate SQL Server workloads to Azure SQL Database'
 prerequisites: |
   - Experience with SQL Server databases.
@@ -40,7 +39,7 @@ products:
 - sql-server
 subjects:
 - migration
-- database
+- databases
 - cloud-security
 - cloud-computing
 modules:

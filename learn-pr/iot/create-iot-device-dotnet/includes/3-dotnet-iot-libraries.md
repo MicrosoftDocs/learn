@@ -17,13 +17,13 @@ The `System.Device.Gpio` package implements various protocols for interacting wi
 - Pulse Width Modulation (PWM)
 - Serial port
 
-`System.Device.Gpio` doesn't provide any device-specific features. It just provides the foundations for communicating using the supported protocols. For example, the BME280 sensor used in this module uses the I<sup>2</sup>C bus to communicate. `System.Device.Gpio` provides abstractions to interact via I<sup>2</sup>C, but it doesn't provide any functionality specific to the functions of the BME280. If you write code interacting with the BME280 using just `System.Device.Gpio`, your code needs to understand the functions of the BME280. That includes how to serialize/deserialize messages to/from the sensor over the I<sup>2</sup>C bus.
+`System.Device.Gpio` doesn't provide any device-specific features; it just provides the foundations for communicating using the supported protocols. For example, the BME280 sensor we use in this module uses the I<sup>2</sup>C bus to communicate. `System.Device.Gpio` provides abstractions to interact via I<sup>2</sup>C, but it doesn't provide any functionality specific to the functions of the BME280. If you write code interacting with the BME280 using just `System.Device.Gpio`, your code needs to understand the BME280's functions. That includes how to serialize/deserialize messages to/from the sensor over the I<sup>2</sup>C bus.
 
 ### Iot.Device.Bindings
 
 The `Iot.Device.Bindings` package contains device bindings to streamline app development by wrapping `System.Device.Gpio`. It contains classes representing a wide array of common IoT sensors and other devices. It's a community-driven, open-source project, and anybody can add new device support.
 
-Using `Iot.Device.Bindings` enables the developer to work directly with device abstractions without worrying about low-level communication. Consider the example of the BME280 sensor. To communicate with the sensor, your app must send and receive messages in binary on the I<sup>2</sup>C bus. The classes in `Iot.Device.Bindings` provide abstractions using classes in `System.Device.Gpio` to handle the binary communication for you. This library enables you to focus on what you intend to do with the sensor, not on low-level communication.
+Using `Iot.Device.Bindings` allows the developer to work directly with device abstractions without worrying about low-level communication. Consider the example of the BME280 sensor. To communicate with the sensor, your app must send and receive messages in binary on the I<sup>2</sup>C bus. The classes in `Iot.Device.Bindings` provide abstractions using classes in `System.Device.Gpio` to handle the binary communication for you. This library allows you to focus on what you intend to do with the sensor, not on low-level communication.
 
 ## Supported operating systems
 

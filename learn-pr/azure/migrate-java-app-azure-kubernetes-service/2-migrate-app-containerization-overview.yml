@@ -3,13 +3,12 @@ uid: learn.azure.migrate-java-app-azure-kubernetes-service.containerization-over
 metadata:
   title: Azure Migrate App Containerization overview
   description: Provides an overview of Azure Migrate App Containerization feature
-  ms.date: 09/01/2021
+  ms.date: 01/10/2024
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-extended-java
-  ms.prod: learning-azure
 title: Azure Migrate App Containerization overview
 durationInMinutes: 4
 content: |

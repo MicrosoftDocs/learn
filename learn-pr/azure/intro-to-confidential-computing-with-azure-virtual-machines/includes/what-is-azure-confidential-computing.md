@@ -8,7 +8,7 @@ A TEE enforces execution of only authorized code. Any data in the TEE can't be r
 
 TEEs are also being used to protect proprietary business logic, analytics functions, machine learning algorithms, or entire applications.
 
-Because you're focused on cloud migration, you also want to understand how these concepts work in the cloud. As you find out, Azure confidential computing isn't a single technology, but multiple technologies that help increase trust in Azure for sensitive workloads. 
+Because you're focused on cloud migration, you also want to understand how these concepts work in the cloud. As you find out, Azure confidential computing isn't a single technology, it's multiple technologies working together to help increase trust in Azure for sensitive workloads. 
 
 - Prevent unauthorized access to data, with little to no change from existing practices. Meet regulatory compliance needs. Keep full control of data to satisfy government regulations for protecting personal information and secure organizational IP.
 
@@ -41,14 +41,14 @@ Microsoft offers multiple technologies for confidential computing.
 The services in the portfolio provide vectors of protection, including from these factors:
 
 - The cloud operator
-- The tenant operator 
+- The tenant operator
 - Other tenants
 - Physical access to the systems
 - Collaborators for both data and IP
 
 As you can see, multiple options help you protect sensitive workloads in Azure. Which options you use depends on several factors. For example, is the application greenfield or are you migrating it to Azure? 
 
-If you're migrating applications, it might be easier to create confidential computing from raw virtual machines and then migrate. Or you can deploy [containers that use those VM types](/azure/confidential-computing/confidential-node-pool-aks). 
+If you're migrating applications, it might be easier to create new confidential computing virtual machines and then migrate said applications to the raw VMs. You can also deploy [containers that use those VM types](/azure/confidential-computing/confidential-node-pool-aks). 
 
 If you're building a new application on Azure, what use case are you trying to address? Depending on your needs, one of the other services can help. For example, Always Encrypted with secure enclaves in Azure SQL or Azure Confidential Ledger.
 

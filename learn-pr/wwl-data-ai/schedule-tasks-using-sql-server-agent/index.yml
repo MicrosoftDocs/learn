@@ -30,7 +30,7 @@ products:
 - azure-sql-database
 - sql-server
 subjects:
-- data-ai
+- data-management
 units:
 - learn.wwl.schedule-tasks-using-sql-server-agent.introduction
 - learn.wwl.schedule-tasks-using-sql-server-agent.create-maintenance-plan

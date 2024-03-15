@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.challenge-project-ideate-business-with-ai
+metadata:
+  title: Challenge project – Ideate with Microsoft Copilot
+  description: "Challenge Project - Use Microsoft Copilot (formerly Bing Chat), to Create the perfect idea for your Startup or business"
+  ms.date: 12/7/2023
+  author: pablonunes
+  ms.author: pablolopes
+  ms.custom: team=nextgen
+  ms.topic: module-challenge-project # Please don't edit, used for our analytics
+  ms.service: microsoft-copilot
+title: Challenge project – Ideate with Microsoft Copilot
+summary: Use Microsoft Copilot, Your everyday AI companion, to Create the perfect idea for your Startup or business
+abstract: |
+  In this module you'll develop the following skills that can be used in your everyday interaction with Generative AI:
+    - Utilizing the various features or capabilities of Microsoft Copilot
+    - Utilizing multi-modal features of Microsoft Copilot
+    - Prompt writing tips and techniques
+    - Practice your Critical/ Creative Thinking with Microsoft Copilot
+    - Researching with Microsoft Copilot
+    - Applying format and tone to Generative AI Models
+prerequisites: |
+  - Personal account for [Microsoft Copilot](https://copilot.microsoft.com/) and [Copilot Designer](https://copilot.microsoft.com/images/create)
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles: 
+  - student
+  - business-owner
+  - startup-founder
+products: 
+  - ms-copilot
+subjects:
+  - app-development
+units:
+- learn.challenge-project-use-generative-ai-to-ideate.challenge-info
+- learn.challenge-project-use-generative-ai-to-ideate.introduction
+- learn.challenge-project-use-generative-ai-to-ideate.define-idea
+- learn.challenge-project-use-generative-ai-to-ideate.prepare
+- learn.challenge-project-use-generative-ai-to-ideate.refine-idea-with-ai
+- learn.challenge-project-use-generative-ai-to-ideate.next-step
+- learn.challenge-project-use-generative-ai-to-ideate.knowledge-check
+- learn.challenge-project-use-generative-ai-to-ideate.summary
+badge:
+  uid: learn.challenge-project-use-generative-ai-to-ideate.badge

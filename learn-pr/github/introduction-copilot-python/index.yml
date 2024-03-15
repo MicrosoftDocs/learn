@@ -6,8 +6,8 @@ metadata:
   ms.date: 8/23/2023
   author: bethanyjep
   ms.author: bethanycheum
-  ms.topic: interactive-tutorial
-  ms.prod: github
+  ms.topic: module-standard-task-based
+  ms.service: github-copilot
 title: Using GitHub Copilot with Python
 summary: "Use GitHub Copilot, an AI pair programmer that offers autocomplete-style suggestions as you code, to work with Python"
 abstract: |
@@ -32,7 +32,6 @@ products:
   - github
 subjects:
   - devops
-  - development-tools
 units:
 - learn.github-copilot-with-python.introduction
 - learn.github-copilot-with-python.what-is-github-copilot

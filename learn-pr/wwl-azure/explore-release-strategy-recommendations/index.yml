@@ -6,8 +6,8 @@ metadata:
   ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
-  ms.topic: module
-  ms.prod: azure
+  ms.topic: module-standard-task-based
+  ms.service: azure
 title: Explore release recommendations
 summary: This module explores the critical release strategy recommendations that organizations must consider when designing automated deployments and explains how to define components of a release pipeline and artifact sources, create approves, and configure release gates.
 abstract: |

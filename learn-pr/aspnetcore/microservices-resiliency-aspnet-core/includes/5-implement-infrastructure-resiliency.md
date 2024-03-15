@@ -9,7 +9,7 @@ The *control plane* component has many components that support managing the serv
 * Security management for things like strong identity and certificates for mTLS.
 * Metrics or observability to collect and aggregate metrics and telemetry from the apps.
 
-The *data plane* component consists of proxies that are transparently injected alongside each service, a pattern known as the Sidecar pattern. Each proxy is configured to control the network traffic in and out of the pod containing your service. This configuration allows each proxy to be configured to:
+The *data plane* component consists of proxies that are transparently injected alongside each service; this is known as the Sidecar pattern. Each proxy is configured to control the network traffic in and out of the pod that contains your service. This configuration allows each proxy to be configured to:
 
 * Secure traffic via mTLS.
 * Dynamically route traffic.
@@ -22,7 +22,7 @@ Some popular service mesh options for Kubernetes clusters include Linkerd, Istio
 
 #### Comparison to code-based approaches
 
-Linkerd's principal fault-handling strategy is comprised of [retries and timeouts](https://linkerd.io/2/features/retries-and-timeouts). Since Linkerd has a systemic view of the entire cluster, it can employ resiliency strategies in novel ways. An example is retrying in such a way as to add a maximum of 20 percent additional load on the target service. Linkerd's metrics-based view allows it to adapt dynamically to cluster conditions in real time. This approach adds another dimension to managing the cluster, but doesn't add any code.
+Linkerd's principal fault-handling strategy comprises [retries and timeouts](https://linkerd.io/2/features/retries-and-timeouts). Because Linkerd has a systemic view of the entire cluster, it can employ resiliency strategies in novel ways. An example is retrying in such a way as to add a maximum of 20 percent additional load on the target service. Linkerd's metrics-based view allows it to adapt dynamically to cluster conditions in real time. This approach adds another dimension to managing the cluster, but doesn't add any code.
 
 With a code-based approach, such as with Polly, you:
 

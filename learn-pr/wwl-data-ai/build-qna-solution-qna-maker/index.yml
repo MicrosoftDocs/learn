@@ -3,13 +3,13 @@ uid: learn.wwl.build-qna-solution-qna-maker
 metadata:
   title: Build a question answering solution
   description: "Build a question answering solution with Azure AI Services"
-  ms.date: 07/19/2023
+  ms.date: 01/22/2024
   author: wwlpublish
-  ms.author: berryivor
-  ms.topic: module
-  ms.service: cognitive-services
+  ms.author: gmalc
+  ms.topic: module-standard-task-based
+  ms.service: azure
 title: Build a question answering solution
-summary: The question answering capability of the Azure AI Language service makes it easy to build applications in which users ask questions using natural language and receive appropriate answers.
+summary: The question answering capability of the Language service makes it easy to build applications in which users ask questions using natural language and receive appropriate answers.
 abstract: |
   After completing this module, you will be able to:
   - Understand question answering

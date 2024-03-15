@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-generative-ai-copilot-bing.exercise-define-idea-set-context
+title: 'Exercise: Define your idea and set the context'
+metadata:
+  title: 'Exercise: Define your idea and set the context'
+  description: "Exercise: Define your idea and set the context"
+  ms.date: 03/14/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-exercise-define-idea-set-context.md)]

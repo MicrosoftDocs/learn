@@ -7,9 +7,8 @@ metadata:
   ms.date: 11/02/2023
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.service: artificial-intelligence
-  ms.subservice: document-intelligence
+  ms.topic: unit
+  ms.service: azure-ai-document-intelligence
 durationInMinutes: 2
 quiz:
   title: ""

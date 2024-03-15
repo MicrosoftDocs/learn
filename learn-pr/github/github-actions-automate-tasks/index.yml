@@ -6,7 +6,8 @@ metadata:
   ms.date: 10/06/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: github
 title: "Automate development tasks by using GitHub Actions"
 summary: Create a basic GitHub Action and use that action in a workflow.
 abstract: |
@@ -29,8 +30,6 @@ roles:
 products:
 - github
 - azure
-subjects:
-- development-tools
 units:
 - learn.github.github-actions-automate-tasks.1-introduction
 - learn.github.github-actions-automate-tasks.2-github-actions-automate-development-tasks

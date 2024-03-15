@@ -1,7 +1,3 @@
----
-ms.custom:
-  - build-2023
----
 Security and monitoring are critical aspects of managing your data warehouse.
 
 ## Security
@@ -12,8 +8,8 @@ Data warehouse security is important to protect your data from unauthorized acce
 - SSL encryption to secure the communication between the warehouse and the client applications.
 - Azure Storage Service Encryption to protect the data in transit and at rest.
 - Azure Monitor and Azure Log Analytics to monitor the warehouse activity and audit the access to the data.
-- Multi-Factor Authentication (MFA) to add an extra layer of security to user accounts.
-- Microsoft Entra integration to manage the user identities and access to the warehouse.
+- Multifactor authentication (MFA) to add an extra layer of security to user accounts.
+- Microsoft Entra ID integration to manage the user identities and access to the warehouse.
 
 ### Workspace permissions
 
@@ -22,7 +18,7 @@ Data in Fabric is organized into workspaces, which are used to control access an
 In addition to workspace roles, you can grant *item permissions* and access through SQL.
 
 > [!TIP]
-> See [Workspaces in Power BI](https://learn.microsoft.com/power-bi/collaborate-share/service-new-workspaces#roles-and-licenses) for more information on workspace roles.
+> See [Workspaces in Power BI](/power-bi/collaborate-share/service-new-workspaces#roles-and-licenses) for more information on workspace roles.
 
 ### Item permissions
 
@@ -34,7 +30,7 @@ You can grant permissions to users via T-SQL or in the Fabric portal. Grant the 
 - ReadData: Allows the user to read data from any table/view within the warehouse.
 - ReadAll: Allows user to read data the raw parquet files in OneLake that can be consumed by Spark.
 
-A user connection to the SQL endpoint will fail without Read permission at a minimum.
+A user connection to the SQL analytics endpoint will fail without Read permission at a minimum.
 
 ## Monitoring
 

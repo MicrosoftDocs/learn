@@ -4,10 +4,12 @@ title: Application security groups
 metadata:
   title: Application security groups
   description: "Application security groups"
-  ms.date: 10/09/2023
+  ms.date: 03/08/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
-durationInMinutes: 3
+  ms.custom:
+  - N/A
+durationInMinutes: 10
 content: |
   [!include[](includes/5-application-security-groups.md)]

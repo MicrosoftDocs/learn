@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-code-with-interfaces.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary purpose of an interface in C#?"
+    choices:
+    - content: "To provide an implementation of a class."
+      isCorrect: false
+      explanation: "Incorrect. Interfaces don't provide an implementation of a class."
+    - content: "To create an instance of a concrete class."
+      isCorrect: false
+      explanation: "Incorrect. Interfaces are not used to create instances of concrete classes."
+    - content: "To define a contract for functionality."
+      isCorrect: true
+      explanation: "Correct. Interfaces in C# define a contract for functionality that implementing classes must adhere to."
+  - content: "Which of the following scenarios would be best suited for using an interface in C#?"
+    choices:
+    - content: "When you need to inherit implementation details from a base class."
+      isCorrect: false
+      explanation: "Incorrect. This scenario is best used for a base or abstract class."
+    - content: "When you need to define a contract for a behavior related to several classes."
+      isCorrect: true
+      explanation: "Correct. This scenario is suited for using an interface."
+    - content: "When you need to create an instance of an abstract class."
+      isCorrect: false
+      explanation: "Incorrect. Interfaces aren't used to create instances of abstract classes."
+  - content: "What is the purpose of the `is` keyword in C#?"
+    choices:
+    - content: "To check if an object is compatible with a certain type or interface."
+      isCorrect: true
+      explanation: "Correct. The `is` keyword checks if an object is compatible with a certain type or interface."
+    - content: "Attempts to cast an object to the specified interface type, returning null if the cast fails."
+      isCorrect: false
+      explanation: "Incorrect. The `is` keyword checks if an object is compatible with a certain type or interface."
+    - content: "To define a contract for functionality."
+      isCorrect: false
+      explanation: "Incorrect. Interfaces are used to define a contract for functionality, not the `is` keyword."

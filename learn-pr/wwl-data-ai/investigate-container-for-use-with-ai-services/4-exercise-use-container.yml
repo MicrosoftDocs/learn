@@ -7,8 +7,10 @@ metadata:
   ms.date: 09/11/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.service: azure-ai-services
-durationInMinutes: 35
+durationInMinutes: 30
+labId: 152412
+labModal: true
 content: |
   [!include[](includes/4-exercise-use-container.md)]

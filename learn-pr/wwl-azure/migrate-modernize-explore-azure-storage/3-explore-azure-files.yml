@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-explore-azure-storage.explore-azure-files
+title: Explore Azure Files
+metadata:
+  title: Explore Azure Files
+  description: "Explore Azure Files"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-explore-azure-files.md)]

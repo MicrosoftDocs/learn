@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.build-web-app-blazor-webassembly-vscode.7-exercise-razor-binding
+title: Exercise - Create a to-do list
+metadata:
+  title: Exercise - Create a to-do list
+  description: Create a to-do list component with interactive controls and data binding.
+  ms.date: 01/26/2024
+  author: danroth27
+  ms.author: daroth
+  ms.manager: markl
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-data-binding.md)]
+  

@@ -1,3 +1,5 @@
+
+
 Often, you'll need to combine data from many different sources, including literal strings and variables containing both text and numeric data. In this unit, you'll use string concatenation to combine two or more values into a new string.
 
 ## What is string concatenation?
@@ -71,4 +73,3 @@ Here's what you've learned about string concatenation so far:
 
 - String concatenation allows you to combine smaller literal and variable strings into a single string.
 - Avoid creating intermediate variables if adding them doesn't increase readability.
-
