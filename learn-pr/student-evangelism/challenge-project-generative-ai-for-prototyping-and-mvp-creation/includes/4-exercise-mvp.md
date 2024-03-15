@@ -3,14 +3,14 @@ We created our prototype, which enables us to visualize how our project would lo
 
 An MVP is a tangible product that you can use to test and validate your prototype with customers.
 
-## Step 1: Use Microsoft Copilot to narrow down your product features
+## Step 1: Use Copilot with Bing to narrow down your product features
 
-In the first step, we ask Microsoft Copilot to suggest some features we can build for our product.
+In the first step, we ask Copilot with Bing to suggest some features we can build for our product.
 
 ### Steps
 
 1. Copy the sample prompt provided and make any edits you want
-2. Paste it into Microsoft Copilot
+2. Paste it into Copilot with Bing
 
 **Sample prompt**
 
@@ -20,9 +20,9 @@ Hey Microsoft Copilot, from what I have shared so far about my idea, I now want 
 
 **Sample response**
 
-![Screenshot showing a sample Microsoft Copilot response discussing project features from a prompt.](./media/project-features.png)
+![Screenshot showing a sample Copilot with Bing response discussing project features from a prompt.](./media/project-features.png)
 
-But before we focus on each feature separately, let us ask Microsoft Copilot to help identify the tools and services we need to put our project together.
+But before we focus on each feature separately, let us ask Copilot with Bing to help identify the tools and services we need to put our project together.
 
 **Sample prompt on tools/services for our project**
 
@@ -36,14 +36,14 @@ Thanks for the help so far. To successfully implement these features, which tool
 
 ## Step 2: Select a feature and flesh out more details on implementation
 
-In the second step, we select one of the features and brainstorm with Microsoft Copilot how to implement and the tools we may need. The output prepares us to understand the workload that is ahead of you to bring our idea to life.
+In the second step, we select one of the features and brainstorm with Copilot with Bing how to implement and the tools we may need. The output prepares us to understand the workload that is ahead of you to bring our idea to life.
 
 Now let's focus on each feature/ functionality separately.
 
 ### Steps for a specific feature
 
 1. Copy the sample prompt provided and make any edits you want
-2. Paste it into Microsoft Copilot
+2. Paste it into Copilot with Bing
 
 **Sample prompt for a specific feature**
 
@@ -65,18 +65,18 @@ Repeat step 2 for each feature until you have a clear understanding of how you c
 
 ## Step 3: Now to the exciting part: Building our MVP
 
-You now have a proper guide to the technical requirements to implement your project. Next step is for you (and your team) to start building. Microsoft Copilot helps us identify tools that you would need to install, so a good flow of events from here would be:
+You now have a proper guide to the technical requirements to implement your project. Next step is for you (and your team) to start building. Copilot with Bing helps us identify tools that you would need to install, so a good flow of events from here would be:
 
 1. Review your sketch designs to ensure that you're clear on what you're building
 2. Set up your local or virtual developer environment such as [GitHub Codespaces](https://github.com/features/codespaces?WT.mc_id=academic-114050-bethanycheum) to begin the project
 
-### [Optional] Keep working with Microsoft Copilot
+### [Optional] Keep working with Copilot with Bing
 
-Here are some more ways in you can keep using Microsoft Copilot throughout your project development cycle. Be creative on how you engage the tool to guide your development or unblock you if you get stuck.
+Here are some more ways in you can keep using Copilot with Bing throughout your project development cycle. Be creative on how you engage the tool to guide your development or unblock you if you get stuck.
 
 #### Example: Ask help on how to build specific components and on libraries to use
 
-Explore asking Microsoft Copilot for some code samples too.
+Explore asking Copilot with Bing for some code samples too.
 
 **Sample prompt on different components/libraries**
 
