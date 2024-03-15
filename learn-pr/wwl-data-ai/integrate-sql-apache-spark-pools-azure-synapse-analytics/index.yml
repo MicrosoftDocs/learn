@@ -39,7 +39,7 @@ roles:
 products:
 - azure-synapse-analytics
 subjects:
-- database
+- databases
 units:
 - learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.introduction
 - learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.describe-integration-methods-between-sql

@@ -6,6 +6,6 @@ This module lays the foundation for you to harness the full potential of Linux d
 
 ## References
 
-- [Introduction to Windows Subsystem for Linux (WSL)](/windows/wsl-introduction)
+- [Introduction to Windows Subsystem for Linux (WSL)](/training/modules/wsl-introduction/)
 - [Developing in WSL](https://code.visualstudio.com/docs/remote/wsl) 
 - [Remote development in WSL](https://code.visualstudio.com/docs/remote/wsl-tutorial)
