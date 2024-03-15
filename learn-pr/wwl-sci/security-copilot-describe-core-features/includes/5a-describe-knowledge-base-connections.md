@@ -33,7 +33,13 @@ Azure AI Search is a service that enables you to effectively search, retrieve in
 
 - Querying can happen once an index is populated with searchable content. Your client app sends query requests to a search service and handles responses. All query execution is over a search index that you control.
 
-Through the Azure AI Search plugin, you can bring own index as a searchable source that you can query using prompts in the Copilot prompt bar. 
+Through the Azure AI Search plugin, you can bring own index as a searchable source that you can query using prompts in the Copilot prompt bar.
+
+Before you setup the connection to your existing Azure AI index, verify the following:
+
+- The Azure AI Search index is set up for vectorization using the text-embedding-ada-002 model. Refer to [Quickstart: Integrated vectorization (preview)](/azure/search/search-get-started-portal-import-vectors)
+- The text field in your index must be searchable.
+- The title field in your index must be filterable.
 
 To create the connection to an existing Azure AI Search index, configure the Azure AI Search plugin as follows:
 
@@ -73,7 +79,7 @@ To create the connection to an existing Azure AI Search index, configure the Azu
 
 1. Select the index whose name you entered in plugin settings page. this opens the index page. From here, select the fields tab.
 
-1. The fields tab shows the field names for the index. What is listed here are the default names for the fields, when the index is created. Admins may choose different names for fields in the index, so the names shown here may not be the same for your index. Work with the admin who manages your Azure AI Search service for guidance.
+1. The fields tab shows the field names for the index. What is shown here may be different than what is shown for your index. Work with the admin who manages your Azure AI Search service for guidance, as needed.
 
       :::image type="content" source="../media/chunk-vector-title-settings.png" lightbox="../media/chunk-vector-title-settings.png" alt-text="Screen capture of the Azure AI Search index field names pointing to the corresponding fields in the plugin parameters window.":::
 
