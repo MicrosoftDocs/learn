@@ -8,8 +8,6 @@ metadata:
   author: asergaz
   ms.author: sergaz
   ms.topic: unit
-azureSandbox: false
-labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/4-azure-stream-analytics-patterns-guidelines.md)]

@@ -9,8 +9,6 @@ metadata:
   ms.author: sergaz
   ms.topic: unit
   ai-usage: ai-assisted
-azureSandbox: false
-labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/3-azure-stream-analytics-other-stream-process-technologies.md)]

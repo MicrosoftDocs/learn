@@ -8,8 +8,6 @@ metadata:
   author: asergaz
   ms.author: sergaz
   ms.topic: unit
-azureSandbox: false
-labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/9-azure-stream-analytics-queries-parse-complex-data-types.md)]
