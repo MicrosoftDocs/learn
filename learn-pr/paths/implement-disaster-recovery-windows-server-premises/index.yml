@@ -30,7 +30,7 @@ products:
 - azure-site-recovery
 - windows-server
 subjects:
-- business-continuity
+- site-reliability-engineering
 - infrastructure
 modules:
 - learn.wwl.implement-hyper-v-replica

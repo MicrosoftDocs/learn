@@ -36,7 +36,10 @@ The PIM role assignments give you a secure way to grant access to resources in y
 
 PIM keeps you informed by sending you and other participants email notifications. These emails might also include links to relevant tasks, such activating, approve or deny a request.<br>
 
-The following screenshot shows an email message sent by PIM. The email informs Patti that Alex updated a role assignment for Emily.<br>
+The following screenshot shows an email message sent by PIM. The email informs Administrator-B that Administrator-A updated a role assignment for Member-1.
+
+:::image type="content" source="../media/email-notification-b68b6897.png" alt-text="Screenshot showing an example of a role assignment email notification.":::
+
 
 ## Assign
 
@@ -51,11 +54,17 @@ The assignment process starts by assigning roles to members. To grant access to 
 
 The following screenshot shows how administrator assigns a role to members.
 
+:::image type="content" source="../media/add-role-assignment-b1d1c8f2.png" alt-text="Screenshot showing the add assignments configuration page.":::
+
+
 ## Activate
 
 If users have been made eligible for a role, then they must activate the role assignment before using the role. To activate the role, users select specific activation duration within the maximum (configured by administrators), and the reason for the activation request.
 
 The following screenshot shows how members activate their role to a limited time.
+
+:::image type="content" source="../media/role-activation-23e319a9.png" alt-text="Screenshot showing the role assignments configuration page.":::
+
 
 If the role requires approval to activate, a notification appears in the upper right corner of the user's browser informing them the request is pending approval. If an approval isn't required, the member can start using the role.<br>
 
@@ -71,3 +80,32 @@ After administrators set up time-bound owner or member assignments, the first qu
  -  **Renew** – When a role assignment has already expired, the user can use Privileged Identity Management to request a renewal for the role assignment
 
 Both user-initiated actions require an approval from a Global Administrator or Privileged Role Administrator. Admins don't need to be in the business of managing assignment expirations. You can just wait for the extension or renewal requests to arrive for simple approval or denial.
+
+## Scenarios
+
+Privileged Identity Management supports the following scenarios:
+
+### Privileged Role Administrator permissions<br>
+
+ -  Enable approval for specific roles
+ -  Specify approver users or groups to approve requests
+ -  View request and approval history for all privileged roles
+
+### Approver permissions
+
+ -  View pending approvals (requests)
+ -  Approve or reject requests for role elevation (single and bulk)
+ -  Provide justification for my approval or rejection
+
+### Eligible role user permissions
+
+ -  Request activation of a role that requires approval
+ -  View the status of your request to activate
+ -  Complete your task in Microsoft Entra ID if activation was approved
+
+## Microsoft Graph APIs
+
+You can use Privileged Identity Management programmatically through the following Microsoft Graph APIs:
+
+ -  PIM for Microsoft Entra roles APIs<br>
+ -  PIM for groups APIs

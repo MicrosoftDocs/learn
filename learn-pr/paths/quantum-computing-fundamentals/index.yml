@@ -7,6 +7,7 @@ metadata:
   ms.date: 12/20/2023
   author: SoniaLopezBravo
   ms.author: sonialopez
+  manager: tedhudek
   ms.topic: learning-path
 title: Get started with Azure Quantum
 summary: |
@@ -39,6 +40,7 @@ subjects:
 - cloud-computing
 modules:
 - learn.quantum.intro-to-azure-quantum
+- learn.quantum.choose-the-best-azure-quantum
 - learn.quantum.qsharp-create-first-quantum-development-kit
 - learn.quantum.estimate-resources-quantum-algorithms
 trophy:

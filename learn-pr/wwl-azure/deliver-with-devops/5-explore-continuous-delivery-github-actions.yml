@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deliver-with-devops.explore-continuous-delivery-github-actions
+title: 'Explore continuous delivery with GitHub Actions'
+metadata:
+  title: 'Explore continuous delivery with GitHub Actions'
+  description: "GitHub Actions enable software delivery workflows, making it the optimal CI/CD approach for organizations using GitHub for DevOps. Learn how to build and run CI/CD workflows in this unit."
+  ms.date: 02/06/2024
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-explore-continuous-delivery-github-actions.md)]

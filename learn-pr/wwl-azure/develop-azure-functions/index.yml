@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/05/2023
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure-functions
 title: Develop Azure Functions
 summary: Learn how to create and deploy Azure Functions.

@@ -1,4 +1,3 @@
-
 Integrating SAP HANA with Microsoft Entra ID provides you with the following benefits:
 
 - You can control in Microsoft Entra ID who has access to SAP HANA.
@@ -9,7 +8,7 @@ To configure Microsoft Entra integration with SAP HANA, you need the following i
 
 - A Microsoft Entra subscription.
 - An SAP HANA subscription that's single sign-on (SSO) enabled.
-- A HANA instance that's running on any public IaaS, on-premises, or Azure VM.
+- A HANA instance that's running on any public IaaS, on-premises, or Azure Virtual Machine.
 - The XSA Administration web interface, and HANA Studio installed on the HANA instance.
 
 Microsoft Entra integration within SAP HANA allows you to implement:
@@ -88,6 +87,6 @@ If you need to create a user manually, take the following steps:
 4. Add the **External Identity** or choose **Any**. Then select **OK**.
 
     > [!NOTE]
-    > If the **Any** check box is not selected, then the user name in HANA needs to exactly match the name of the user in the UPN before the domain suffix.
+    > If the **Any** check box isn't selected, then the user name in HANA needs to exactly match the name of the user in the UPN before the domain suffix.
 5. Assign the relevant roles to the user.
 6. To verify the outcome, select the **SAP HANA** tile in the Access Panel. You should be automatically signed in to the SAP HANA for which you set up SSO.

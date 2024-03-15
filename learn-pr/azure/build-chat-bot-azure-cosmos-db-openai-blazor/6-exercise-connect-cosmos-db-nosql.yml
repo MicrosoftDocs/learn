@@ -6,14 +6,13 @@ metadata:
   title: Exercise - Connect to Azure Cosmos DB for NoSQL
   description: |
     Import the Microsoft.Azure.Cosmos package from NuGet. Next, create a client instance. Then, configure the database and container connections.
-
   author: seesharprun
   manager: jroth
   ms.author: sidandrews
   ms.reviewer: mjbrown
   ms.topic: unit
   ms.custom: devx-track-dotnet
-  ms.date: 10/17/2023
+  ms.date: 03/07/2024
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-connect-cosmos-db-nosql.md)]

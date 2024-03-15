@@ -3,7 +3,7 @@ uid: learn.wwl.guided-project-implement-events
 metadata:
   title: 'Guided project: Implement events'
   description: "This guided project demonstrates working with events and delegates."
-  ms.date: 01/12/2024
+  ms.date: 01/29/2024
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: module-intro-to-product
@@ -17,11 +17,12 @@ abstract: |
   - Understand how events and delegates are used.
   - Learn how to implement event handler stubs.
 prerequisites: |
-  - Installation of Visual Studio Code that's configured for C# application development, including C# Dev Kit.
+  - Installation of Visual Studio Code configured for C# application development, including C# Dev Kit.
   - Experience with the VS Code editor.
   - Ability to develop C# console applications that implement business logic using loops, if statements, properties, and methods.
   - Experience with basic C# syntax rules.
 iconUrl: /training/achievements/generic-badge.svg
+hidden: true
 levels:
 - beginner
 roles:

@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-langstons-ant-file-operations.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/12/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which line correctly writes a string to a file in C#?"
+    choices:
+    - content: "`File.Write(stringPath, content);`"
+      isCorrect: false
+      explanation: "Incorrect. There's no method called `Write` in the `File` class."
+    - content: "`File.WriteStringToFile(stringPath, content);`"
+      isCorrect: false
+      explanation: "Incorrect. There's no method called `WriteStringToFile` in the `File` class."
+    - content: "`File.WriteAllText(stringPath, content);`"
+      isCorrect: true
+      explanation: "Correct. WriteAllText writes the specified string to the file, creating the file if it doesn't already exist."
+  - content: "Which line correctly reads the text from a file in C#?"
+    choices:
+    - content: "`File.ReadText(stringPath);`"
+      isCorrect: false
+      explanation: "Incorrect. There's no method called `ReadText` in the `File` class."
+    - content: "`File.ReadAllText(stringPath);`"
+      isCorrect: true
+      explanation: "Correct. `ReadAllText` reads all characters from the file specified by the path and returns them as a string."
+    - content: "`File.ReadTextFile(stringPath);`"
+      isCorrect: false
+      explanation: "Incorrect. There's no method called `ReadTextFile` in the `File` class."
+  - content: "Which line correctly checks if a directory, `directoryPath`, exists in C#?"
+    choices:
+    - content: "`Directory.CheckExistence(directoryPath);`"
+      isCorrect: false
+      explanation: "Incorrect. There's no method called `CheckExistence` in the `Directory` class."
+    - content: "`Directory.EnsureDirectory(directoryPath);`"
+      isCorrect: false
+      explanation: "Incorrect. There's no method called `EnsureDirectory` in the `Directory` class."
+    - content: "`Directory.Exists(directoryPath);`"
+      isCorrect: true
+      explanation: "Correct. The `Exists` method checks whether a directory exists at the specified path."

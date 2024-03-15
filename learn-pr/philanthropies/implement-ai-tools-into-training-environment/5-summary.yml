@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.implement-ai-tools-into-training-environment.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is a part of the 'Implement AI tools into a training environment' module.
+  ms.date: 03/11/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-summary.md)]

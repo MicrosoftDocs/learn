@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-langstons-ant-with-json-serialization.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Check your knowledge"
+  ms.date: 03/12/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which line serializes an object into JSON using `System.Text.Json`?"
+    choices:
+    - content: "`JsonSerializer.Serialize(object);`"
+      isCorrect: true
+      explanation: "Correct. `JsonSerializer.Serialize` is used to serialize an object into JSON."
+    - content: "`JsonConverter.ConvertToJson(object);`"
+      isCorrect: false
+      explanation: "Incorrect. There's no `ConvertToJson` method in System.Text.Json."
+    - content: "`object.ToJson();`"
+      isCorrect: false
+      explanation: "Incorrect. There's no `ToJson` method in `System.Text.Json`."
+  - content: "How are options specified for JSON serialization using `System.Text.Json`?"
+    choices:
+    - content: "By passing options directly to the `JsonSerializer.Serialize` method."
+      isCorrect: false
+      explanation: "Incorrect. `JsonSerializer.Serialize` doesn't accept options directly."
+    - content: "By setting properties on the JsonSerializerOptions instance."
+      isCorrect: true
+      explanation: "Correct. JsonSerializerOptions instance allows you to specify options for serialization."
+    - content: "By using attributes on the properties of the class being serialized."
+      isCorrect: false
+      explanation: "Incorrect. Attributes on properties don't directly control serialization options."
+  - content: "When serializing an object with `System.Text.Json`, how are null values handled by default?"
+    choices:
+    - content: "It serializes null values as \"null\" in the JSON output."
+      isCorrect: true
+      explanation: "Correct. By default, it serializes null values as \"null\" in the JSON output."
+    - content: "It omits null values from the JSON output."
+      isCorrect: false
+      explanation: "Incorrect. By default, null values are included in the JSON output."
+    - content: "It throws an exception if it encounters null values."
+      isCorrect: false
+      explanation: "Incorrect. An exception isn't thrown for null values during serialization."

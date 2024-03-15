@@ -25,7 +25,7 @@ prerequisites: |
   - Access to Wireshark or similar PCAP file reader
   - The JSON list of endpoints file
   - The sensor Activation file for this sensor
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/defender-for-iot/defender-iot-deploy-sensor.svg
 levels: 
   - intermediate
 roles: 

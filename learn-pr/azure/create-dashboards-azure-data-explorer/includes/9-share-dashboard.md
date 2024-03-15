@@ -1,4 +1,4 @@
-You've gained insights from an unfamiliar dataset and built a dashboard to communicate these insights. In this unit, you'll share the dashboard with a colleague.
+After gaining insights from an unfamiliar dataset and building a dashboard to communicate these insights, in this unit, you learn how to share the dashboard with a colleague.
 
 ## Manage permissions and share dashboard
 

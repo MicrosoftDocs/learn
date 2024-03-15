@@ -1,26 +1,6 @@
 Effective security programs must protect against both insider risk as well as attacks from external threats. You can find best practices for both throughout the Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft Cloud Security Benchmark (MCSB). While all security controls should reduce risk in one or both of these scenarios, this section will focus primarily on insider risk aspects and the security operations elements of external attacks.
 
-An attack chain describes the typical chain of events during an attack that leads to organizational damage. This includes technical and non-technical steps taken by adversaries or insiders during the attack. It's important to note that there is no single linear path for either insider risk or external attacks. There are many common elements across attacks, but each one can take a unique path.
-
-The MCRA includes an attack chain diagram that depicts common techniques related to both external attacks and insider risks, as shown below.
-
-![Diagram of an attack chain M C R A depicting both external attacks and insider risks.](../media/mcra-attack-chain.png)
-
-The top portion of this diagram represents common steps seen in many external attacks and the Microsoft capabilities that map to each step. The bottom portion shows the insider risk leading indicators and how Microsoft Purview Insider Risk Management helps quickly identify, triage, and act on risky user activity.
-
-Most external attacks include common steps and follow common patterns that are depicted in the diagram above. Most of the variation in external attacks comes from the use of different entry points. Attacks also differ based on the different objectives of the attackers like stealing data, encrypting data, or disrupting business.
-
-Most external attacks that result in a major incident include some form of privilege escalation using credential theft, which is mitigated by securing privileged access. For more information, see [securing privileged access](https://aka.ms/SPA).
-
-Lockheed Martin created one of the first adaptations of the 'kill chain' military concept to cybersecurity. This concept of a cybersecurity attack chain it helped mature how organizations understand attacks and plan security controls by viewing attacks as a sequential chain of events. Many organizations use the MITRE ATT&CK framework today for detailed control planning like threat detection coverage.
-
-The diagram below describes how these relate to each other and to a simple Prepare-Enter-Traverse-Execute (PETE) model that Microsoft developed to improve communications with business leaders and non-security professionals. 
-
-![Diagram of how M I T R E ATT&CK, P E T E, and Lockheed Martin kill chain map to each other.](../media/mitre-attack-pete-lockheed-kill-chains.png)
-
-Attackers can choose different techniques to achieve each goal of prepare, enter, traverse, and execute objectives.
-
-Attackers may also use a combination of techniques or the same technique over and over again iteratively to achieve their objectives.
+An attack chain describes the typical chain of events during an attack that leads to organizational damage. This includes technical and non-technical steps taken by adversaries or insiders during the attack. It's important to note that there is no single linear path for either insider risk or external attacks. There are many common elements across attacks, but each one can take a unique path. For more information on resources in MCRA for attack chain modeling, see [Attack chain modeling](/training/modules/design-resiliency-strategy-common-cyberthreats-like-ransomware/1-common-cyberthreats-attack-patterns).
 
 ## Attack protection with MCRA
 

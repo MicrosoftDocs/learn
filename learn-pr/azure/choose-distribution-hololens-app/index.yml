@@ -7,7 +7,7 @@ metadata:
   author: aprilspeight
   ms.author: apspeigh
   ms.topic: module-choose-best-product
-  ms.prod: hololens
+  ms.service: hololens
 title: Choose a distribution channel for a HoloLens app
 summary: "Explore distribution channels for HoloLens apps and analyze which channel is best for your app."
 abstract: |

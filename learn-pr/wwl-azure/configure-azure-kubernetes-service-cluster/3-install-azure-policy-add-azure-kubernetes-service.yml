@@ -4,11 +4,10 @@ title: Try-This exercise - Enable Azure Policy add on for Azure Kubernetes Servi
 metadata:
   title: Try-This exercise - Enable Azure Policy add on for Azure Kubernetes Service
   description: "Try-This exercise - Enable Azure Policy add on for Azure Kubernetes Service"
-  ms.date: 11/14/2023
+  ms.date: 03/08/2024
   author: wwlpublish
   ms.author: bradj
-  ms.topic: module
-  ms.prod: azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/3-install-azure-policy-add-azure-kubernetes-service.md)]
