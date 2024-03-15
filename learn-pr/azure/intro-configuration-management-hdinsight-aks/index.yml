@@ -30,7 +30,7 @@ products:
   - azure
   - azure-hdinsight
 subjects:
-- data-ai
+- data-management
 units:
 - learn.intro-configuration-management-hdinsight-aks.1-introduction
 - learn.intro-configuration-management-hdinsight-aks.2-guidelines-for-hdinsight-on-aks-cluster
