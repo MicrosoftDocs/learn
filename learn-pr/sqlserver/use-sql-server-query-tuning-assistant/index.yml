@@ -30,7 +30,7 @@ roles:
 products: 
 - sql-server
 subjects:
-- database
+- databases
 units:
 - learn-sqlserver.use-sql-server-query-tuning-assistant.1-introduction
 - learn-sqlserver.use-sql-server-query-tuning-assistant.2-decide-qta-right
