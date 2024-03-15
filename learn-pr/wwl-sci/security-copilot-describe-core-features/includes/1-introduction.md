@@ -10,4 +10,4 @@ After completing this module, you'll be able to:
 - Describe the features available in the standalone Copilot experience.
 - Describe the plugins available in Copilot.
 - Describe custom promptbooks.
-- Describe knowledge base (KB) connections.
+- Describe knowledge base connections.
