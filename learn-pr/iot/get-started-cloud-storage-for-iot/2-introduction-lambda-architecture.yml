@@ -4,12 +4,10 @@ title: Examine the IoT Lambda architecture
 metadata:
   title: Examine the IoT Lambda architecture
   description: "Examine the IoT Lambda architecture"
-  ms.date: 07/14/2022
-  author: wwlpublish
-  ms.author: cahowd
+  ms.date: 02/16/2024
+  author: kgremban
+  ms.author: kgremban
   ms.topic: unit
-azureSandbox: false
-labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/2-introduction-lambda-architecture.md)]

@@ -34992,6 +34992,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-azure/get-started-cloud-storage-for-iot/8-knowledge-check.md",
+      "redirect_url": "/training/modules/get-started-cloud-storage-for-iot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-started-cloud-storage-for-iot/9-summary.md",
+      "redirect_url": "/training/modules/get-started-cloud-storage-for-iot/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/10-microsoft-entra-id-authentication-verification-methods.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/manage-authentication-microsoft-entra-id/11-microsoft-entra-id-authentication-verification-methods",
       "redirect_document_id": false
