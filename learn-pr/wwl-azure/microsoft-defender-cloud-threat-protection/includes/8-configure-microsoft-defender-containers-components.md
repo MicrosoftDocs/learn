@@ -102,16 +102,16 @@ A dedicated Defender for Cloud recommendation provides:
 
 1. To simulate a security alert, run the following command from the cluster:
 
-`Console`
-
-`kubectl get pods --namespace=asc-alerttest-662jfi039n`
-
-The expected response is `No resource found`.
-
-Within 30 minutes, Defender for Cloud detects this activity and trigger a security alert.
-
-> [!NOTE]
-> To simulate agentless alerts for Defender for Containers, Azure Arc isn't a prerequisite.
+    `Console`
+  
+    `kubectl get pods --namespace=asc-alerttest-662jfi039n`
+  
+    The expected response is `No resource found`.
+  
+    Within 30 minutes, Defender for Cloud detects this activity and trigger a security alert.
+  
+    > [!NOTE]
+    > To simulate agentless alerts for Defender for Containers, Azure Arc isn't a prerequisite.
 
 2. In the Azure portal, open Microsoft Defender for Cloud's security alerts page and look for the alert on the relevant resource:
 
