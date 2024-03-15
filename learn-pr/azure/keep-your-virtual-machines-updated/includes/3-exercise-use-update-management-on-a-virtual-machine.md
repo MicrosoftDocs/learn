@@ -20,7 +20,7 @@ Here, you create a new virtual machine to serve as a web server for the local me
     | **Instance details** |
     | Virtual machine name | *MediaWebServer*                                           |
     | Region               | *Select the region nearest you*                          |
-    | Availability options | No infrastructure redundancy required                    |
+    | Availability options | Select **No infrastructure redundancy required**           |
     | Security type        | Select **Trusted launch virtual machines**               |
     | Image                | Select **Windows Server 2019 Datacenter - x64 Gen2**                    |
     | VM architecture      | Leave as default (**x64**)                    |
