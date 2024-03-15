@@ -26,7 +26,7 @@ products:
 - azure-cosmos-db
 subjects:
 - cloud-computing
-- database
+- databases
 units:
 - learn.wwl.query-azure-cosmos-db-sql-api.introduction
 - learn.wwl.query-azure-cosmos-db-sql-api.understand-sql-query-language

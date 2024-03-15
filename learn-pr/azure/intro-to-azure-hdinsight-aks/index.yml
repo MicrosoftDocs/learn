@@ -32,7 +32,7 @@ products:
   - azure
   - azure-hdinsight-aks
 subjects:
-- data-ai
+- data-management
 units:
 - learn.intro-to-azure-hdinsight-aks.1-introduction
 - learn.intro-to-azure-hdinsight-aks.2-what-is-azure-hdinsight-aks
