@@ -29,7 +29,7 @@ roles:
 products: 
 - azure
 subjects:
-- data-ai
+- data-management
 units:
 - learn.student-evangelism.introduction-python-nasa.1-introduction
 - learn.student-evangelism.introduction-python-nasa.2-artemis

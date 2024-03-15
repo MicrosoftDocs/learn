@@ -30,7 +30,7 @@ products:
   - azure
   - azure-database-mysql
 subjects:
-- database
+- databases
 units:
 - learn.intro-to-azure-database-for-mysql.1-introduction
 - learn.intro-to-azure-database-for-mysql.2-what-is-azure-database-for-mysql

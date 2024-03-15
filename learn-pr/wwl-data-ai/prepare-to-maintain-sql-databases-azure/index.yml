@@ -32,7 +32,7 @@ products:
 - azure-sql-virtual-machines
 - sql-server
 subjects:
-- database
+- databases
 units:
 - learn.wwl.prepare-to-maintain-sql-databases-azure.introduction
 - learn.wwl.prepare-to-maintain-sql-databases-azure.describe-azure-data-platform-roles
