@@ -1,8 +1,8 @@
-At the core of every startup is a value proposition. This statement explains what your product will do for your users and what benefits they'll derive from using it.
+Every startup has a value proposition at its core. A statement that describes what your product does for your users and what benefits they derive from using it.
 
-When your startup is just an idea, the value proposition is basically a set of untested hypotheses. That is, you think you know which customers you'll serve, what job your product will do for them, and how your product will be valuable to them.
+When your startup is just an idea, the value proposition is basically a set of untested hypotheses. That is, you think you know which customers you serve, what job your product does for them, and how your product is valuable to them.
 
-In this unit, we'll use the Value Proposition Canvas. It's a simple one-page tool to capture and test each of these hypotheses and then use feedback from customers to refine it. This is important. If you guess wrong and build a product that doesn't do the job your customers need or doesn't create enough value for them, they won't use it and you won't have a business.
+In this unit, we use the Value Proposition Canvas. It's a simple one-page tool to capture and test each of these hypotheses and then use feedback from customers to refine it. This exercise is important. If you guess wrong and build a product that doesn't do the job your customers need or doesn't create enough value for them, they won't use it and you won't have a business.
 
 A value proposition has three elements:
 
@@ -36,7 +36,7 @@ Let's look at a simple example:
 
 ## Task: Create a job story
 
-Create a job story for your product by using the preceding format, imagining that you're the customer. Remember that these are your hypotheses about why your customers want your product to do a certain job, and what that job is. You can test and validate these hypotheses only by talking to customers.
+Create a job story for your product by using the preceding format, imagining that you're the customer. Remember that these hypotheses are about why your customers want your product to do a certain job, and what that job is. You can test and validate these hypotheses only by talking to customers.
 
 ## Pain relievers and gain creators
 
@@ -51,7 +51,7 @@ Let's look first at pain relievers. These products reduce or eliminate a pain th
 
 Pains can also be personal to the individual user, such as frustration, fear, anxiety, or loneliness.
 
-It can be enlightening to talk to customers and understand what pains they want your product to take away so that you can build the right product. Your objective in talking to customers shouldn't be to sell them on your idea, but rather to ask a lot of open questions and understand as many of their pain points as you can.
+It can be enlightening to talk to customers and understand what pains they want your product to take away so that you can build the right product. Your objective in talking to customers shouldn't be to sell them on your idea, but rather to ask many open questions and understand as many of their pain points as you can.
 
 Your next job is to prioritize those pain points so that you can address the most significant ones with your product. Customers are much more likely to use and pay for a product that relieves a severe, frequent pain over a product that relieves a mild, infrequent pain.
 
@@ -59,7 +59,7 @@ It's helpful to use a customer pain matrix that plots intensity versus frequency
 
 :::image type="content" source="../media/learning-path-pain-matrix-chart.png" alt-text="Chart that shows the relationship between the intensity and frequency of pain.":::
 
-Now let's look at gain creators. These products deliver something additional to your customers by successfully doing a particular job. Examples of gains include:
+Now let's look at gain creators. These products deliver something more to your customers by successfully doing a particular job. Examples of gains include:
 
 - Additional revenues.
 - Improved efficiency.
@@ -77,11 +77,11 @@ If you deliver a significant gain to customers, and it occurs quickly after they
 
 Create a customer pains matrix and a customer gains matrix for your target customers. Talk to some customers and populate the matrices with the pains and gains they've told you about. Which pains or gains do you think you should try to address?
 
-Completing this quick task will help you get a feel for whether your product is viewed by customers as more of a pain reliever or a gain creator. This information will be extremely useful when you start writing copy for your website or for other places where you describe your product and its value proposition.
+Completing this quick task helps you get a feel for whether your product is viewed by customers as more of a pain reliever or a gain creator. This information is extremely useful when you start writing copy for your website or for other places where you describe your product and its value proposition.
 
 ## Case study: Tylenol
 
-Let's use Tylenol as a brief case study to help us delve deeper into pains and gains. Tylenol is, of course, a literal pain reliever. The job that it does for customers is taking away a physical pain. At its most basic, the value proposition for Tylenol is pain relief.
+Let's use Tylenol as a brief case study to help us delve deeper into pains and gains. Of course, Tylenol is literally a pain reliever. The job that it does for customers is taking away a physical pain. At its most basic, the value proposition for Tylenol is pain relief.
 
 If you ask customers why they want the pain taken away, they'll often tell you that pain stops them from being productive in their day or makes it harder for them to be fully present with friends and family. Therefore, we could argue that Tylenol's real job is giving people back their day.
 
