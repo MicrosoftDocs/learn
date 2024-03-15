@@ -13,3 +13,6 @@ In your Cloud Shell, run the following command to delete the Azure resources tha
 ```azurecli
 az group delete --name $RESOURCE_GROUP
 ```
+
+>[!TIP]
+>If you experience a *Failed to connect to MSI* error, run `az login` and try the command again. You can also delete the resource group from the [Azure portal](https://portal.azure.com).
