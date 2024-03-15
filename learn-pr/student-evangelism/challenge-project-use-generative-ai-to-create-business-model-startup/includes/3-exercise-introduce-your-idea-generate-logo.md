@@ -32,7 +32,7 @@ We now want to design a logo for the company that reflects the startup's core bu
 
 As Microsoft Copilot remembers the context of the conversation, we can take the lazy way to have it create a logo from the description it already wrote. Ask Microsoft Copilot to create a logo for you.
 
-*Note: If you're using another tool, you'll need to create a prompt to generate the image.*
+*Note: If you're using another tool, you need to create a prompt to generate the image.*
 
 ### Steps
 

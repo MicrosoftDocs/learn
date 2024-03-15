@@ -5,7 +5,7 @@ The exercises in this module mark the beginning of an exciting journey as you st
 
 But you won't do it alone. **Co-create this vision with AI**, and together you'll ideate, research, and brand to kick start your startup and set it up for success.
 
-Put on your learning gear and join this challenge where you'll be **creating a Business Model for your very own Startup**. We invite you to bring your curiosity and creativity to use Generative AI capabilities to build a Business Model for your Startup.
+Put on your learning gear and join this challenge where you are **creating a Business Model for your very own Startup**. We invite you to bring your curiosity and creativity to use Generative AI capabilities to build a Business Model for your Startup.
 
 **Your goal** is to create a PowerPoint Deck/ Video that communicates your business strategy with AI generated content. A Deck template is provided to you, and with each step of the challenge, you fill a respective slide on the Deck to accelerate your output.
 
