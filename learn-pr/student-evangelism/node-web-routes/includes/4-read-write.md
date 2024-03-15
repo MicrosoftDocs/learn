@@ -12,7 +12,7 @@ Common HTTP methods are:
 | PUT | Update an existing resource. |
 | PATCH | Update part of an existing resource. |
 
-Put and Patch are similar. The difference is that Put replaces the entire resource. Patch replaces only the properties that are specified in the request body.
+`PUT` and `PATCH` are similar. The difference is that `PUT` replaces the entire resource. `PATCH` replaces only the properties that are specified in the request body.
 
 ## Configure your app to receive data
 
