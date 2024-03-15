@@ -12,4 +12,4 @@ In this module, you'll:
 
 ## Prerequisites
 
-none
+None.
