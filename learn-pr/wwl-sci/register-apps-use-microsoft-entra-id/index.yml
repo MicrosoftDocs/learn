@@ -27,7 +27,7 @@ products:
 - azure
 - entra-id
 subjects:
-- digital-application-innovation
+- app-development
 - identity-access
 units:
 - learn.wwl.register-apps-use-microsoft-entra-id.introduction

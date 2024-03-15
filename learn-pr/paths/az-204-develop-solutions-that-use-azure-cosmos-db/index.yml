@@ -23,7 +23,7 @@ products:
 - azure
 - azure-cosmos-db
 subjects:
-- database
+- databases
 modules:
 - learn.wwl.explore-azure-cosmos-db
 - learn.wwl.work-with-cosmos-db
