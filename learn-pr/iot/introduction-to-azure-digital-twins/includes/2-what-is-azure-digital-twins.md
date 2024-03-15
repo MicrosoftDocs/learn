@@ -35,7 +35,7 @@ You can also query historized twin data collected over time, using the **data hi
 
 Here's an example of historized twin updates shown in Azure Data Explorer, illustrating the changing values of outflow from a salt machine in a dairy factory over time.
 
-:::image type="content" source="../media/2-data-history.png" alt-text="Screenshot of Azure Data Explorer showing a query of historized data with results plotted on a graph over time." border="false" lightbox="../media/2-data-history.png":::
+:::image type="content" source="../media/2-data-history.png" alt-text="Screenshot of Azure Data Explorer showing a query of historized data with results plotted on a graph over time." border="true" lightbox="../media/2-data-history.png":::
 
 ## Visualize
 
@@ -43,11 +43,11 @@ Azure Digital Twins provides the ability to visualize your environment in two or
 
 **Azure Digital Twins Explorer** is a 2D interface that can help you build and interact with your graph. Here's an example of the graph for the module scenario shown in Azure Digital Twins Explorer. It shows a twin for the entire distribution center, connected with *contains* relationships to six robotic arm twins.
 
-:::image type="content" source="../media/2-3-factory-graph.png" alt-text="Screenshot of Azure Digital Twins Explorer showing a 2D graph. In the graph, one distribution center twin is connected to six arm twins via six lines labeled contains." border="false" lightbox="../media/2-3-factory-graph.png":::
+:::image type="content" source="../media/2-3-factory-graph.png" alt-text="Screenshot of Azure Digital Twins Explorer showing a 2D graph. In the graph, one distribution center twin is connected to six arm twins via six lines labeled contains." border="true" lightbox="../media/2-3-factory-graph.png":::
 
 **Azure Digital Twins 3D Scenes Studio (preview)** is an immersive visual 3D environment, where end users can monitor, diagnose, and investigate operational digital twin data with the visual context of 3D assets. Starting with a digital twin graph and curated 3D model, you can map the 3D elements to digital twins in the Azure Digital Twins graph using the studio's low-code builder. Then, you can define UI interactivity and business logic to complete the 3D visualization of a business environment. 3D scenes can be consumed in the hosted 3D Scenes Studio, or in custom applications using the embeddable 3D viewer component. Here's an example of the module scenario shown as a scene in 3D Scenes Studio. The 3D model shows a room in a distribution center containing six robotic arms, which are capable of displaying alerts and property details.
 
-:::image type="content" source="../media/2-factory-3d.png" alt-text="Screenshot of 3D Scenes Studio showing a 3D visualization. The scene shows a 3D mesh of a room containing six stations, each with a robotic arm. An alert box displays additional information about one of the arms." border="false" lightbox="../media/2-factory-3d.png":::
+:::image type="content" source="../media/2-factory-3d.png" alt-text="Screenshot of 3D Scenes Studio showing a 3D visualization. The scene shows a 3D mesh of a room containing six stations, each with a robotic arm. An alert box displays additional information about one of the arms." border="true" lightbox="../media/2-factory-3d.png":::
 
 ## Export twin data
 

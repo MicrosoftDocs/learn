@@ -9,6 +9,6 @@ metadata:
   author: baanders
   ms.author: baanders
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/5-query-graph.md)]

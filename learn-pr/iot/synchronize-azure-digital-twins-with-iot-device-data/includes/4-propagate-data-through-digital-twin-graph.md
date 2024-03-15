@@ -1,6 +1,6 @@
 In this unit, you propagate data through the digital twin graph of your smart building. This process involves the resources shown in Flow B in this diagram:
 
-:::image type="content" source="../media/2-3-4-building-scenario.png" alt-text="Graph showing data flowing from a device into Azure Digital Twins, then throughout Azure Digital Twins." border="false" lightbox="../media/2-3-4-building-scenario.png":::
+:::image type="content" source="../media/2-3-4-building-scenario.png" alt-text="Graph showing data flowing from a device into Azure Digital Twins, then throughout Azure Digital Twins." border="true" lightbox="../media/2-3-4-building-scenario.png":::
 
 Data flow follows this path:
 1. The *Thermostat 67* twin produces a notification that its *Temperature* property changed. Azure Digital Twins routes this notification data to Event Grid.

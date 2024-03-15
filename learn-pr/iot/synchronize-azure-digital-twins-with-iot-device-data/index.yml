@@ -17,11 +17,11 @@ abstract: |
   - Describe the flow of data from a connected IoT device through supportive Azure services into Azure Digital Twins
   - Create Azure functions to define how twins should be updated, based on device data and business logic.
 prerequisites: |
-  - Understanding of how models, twins, and relationships are used in an Azure Digital Twins solution
-  - Experience with programming concepts at the intermediate level
-  - An [Azure subscription](https://azure.microsoft.com/free), and permission to manage access to Azure resources in the subscription
+  - Understanding of how models, twins, and relationships are used in an Azure Digital Twins solution.
+  - Experience with programming concepts at the intermediate level.
+  - An [Azure subscription](https://azure.microsoft.com/free), and permission to manage access to Azure resources in the subscription (or cooperation from someone that does have that permission, who can run some commands on your behalf).
   - [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/) with the Azure development workload.
-  - [.NET Core](https://dotnet.microsoft.com/download/dotnet)
+  - [.NET Core](https://dotnet.microsoft.com/download/dotnet).
 iconUrl: /training/achievements/synchronize-azure-digital-twins-with-iot-device-data.svg
 ratingEnabled: false
 levels:
