@@ -14,7 +14,7 @@ The Azure Marketplace also provides preconfigured images that include both an OS
 
 ## Resources used in a Windows VM
 
-When creating a Windows VM in Azure, you also create resources to host the VM. These resources work together to virtualize a computer and run the Windows operating system. These must either exist (and be selected during VM creation), or they will be created with the VM.
+When creating a Windows VM in Azure, you also create resources to host the VM. These resources work together to virtualize a computer and run the Windows operating system. These must either exist (and be selected during VM creation), or they'll be created with the VM.
 
 - A virtual machine that provides CPU and memory resources
 - An Azure Storage account to hold the virtual hard disks
