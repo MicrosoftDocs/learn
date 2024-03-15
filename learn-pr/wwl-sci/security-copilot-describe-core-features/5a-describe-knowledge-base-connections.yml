@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
-  ms.service: security-copilot
 durationInMinutes: 8
 content: |
   [!include[](includes/5a-describe-knowledge-base-connections.md)]
