@@ -1,9 +1,9 @@
 
 Congratulations!
 
-We're excited to see what you created through this ideation session. This exercise taught some basic prompt creation techniques, highlighted some Bing Chat capabilities, and provided an introduction to the capabilities of Generative AI. 
+We're excited to see what you created through this ideation session. This exercise taught some basic prompt creation techniques, highlighted some Microsoft Copilot capabilities, and provided an introduction to the capabilities of Generative AI.
 
-Generative AI can be used for:
+Generative AI (Microsoft Copilot) can be used for:
 - Completion
 - Transformation
 - Conversation
