@@ -2,7 +2,7 @@ So far, you've developed routes to read data for the Tailwind Traders products A
 
 ## Write data to the API
 
-To write data, use an HTTP method to indicate if the data is new or and update to existing data. 
+To write data, use an HTTP method to indicate if the data is new or an update to existing data. 
 
 Common HTTP methods are:
 
