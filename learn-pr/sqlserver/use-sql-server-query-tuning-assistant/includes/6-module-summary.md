@@ -10,5 +10,4 @@ For more information about using the Query Store and the QTA, see the following 
 - [Upgrade databases using the Query Tuning Assistant](/sql/relational-databases/performance/upgrade-dbcompat-using-qta)
 - [Change the database compatibility level and use the Query Store](/sql/database-engine/install-windows/change-the-database-compatibility-mode-and-use-the-query-store)
 - [Cardinality Estimation (SQL Server)](/sql/relational-databases/performance/cardinality-estimation-sql-server)
-- [Overview of the Data Migration Assistant (DMA)](/sql/dma/dma-overview)
 - [Azure SQL migration extension for Azure Data Studio](/sql/azure-data-studio/extensions/azure-sql-migration-extension)

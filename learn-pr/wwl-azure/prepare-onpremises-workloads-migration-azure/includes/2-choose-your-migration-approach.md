@@ -8,7 +8,7 @@ In this unit, you’ll compare Azure Migrate and Azure Site Recovery as options 
 
 Several tools and services are available in Azure to help you migrate your resources to Azure. Many of these tools are consolidated in the Azure Migrate service which acts as a hub for migration tools, letting you centralize the different migration tasks in one place.
 
-The choice of tool depends on the type of workload you plan to migrate. For database workloads, tools like Azure Database Migration Service and Data Migration Assistant help you manage the whole process of moving database workloads to Azure.
+The choice of tool depends on the type of workload you plan to migrate. For database workloads, a tool like Azure Database Migration Service (Azure DMS) helps you manage the whole process of moving database workloads to Azure.
 
 ### Plan a migration pilot
 
