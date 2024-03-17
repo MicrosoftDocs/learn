@@ -1,4 +1,6 @@
-Your car manufacturing organization has offices and production sites across the globe, with a network linking them together. In earlier phases, the deployment team onboarded a sensor to Defender for IoT and the connectivity team set-up the site networking. For this module, you have a virtual machine (VM) ready to act as the operational technology (OT) sensor. Your task is to deploy the sensor by installing the OT monitoring software and activate the sensor to send data to the Azure portal. This unit provides an overview of this process.
+Your car manufacturing organization has offices and production sites across the globe, with a network linking them together. In earlier phases, the deployment team onboarded a sensor to Defender for IoT and the connectivity team set-up the site networking. 
+
+For this module, you have a virtual machine (VM) ready to act as the operational technology (OT) sensor. Your task is to deploy the sensor by installing the OT monitoring software and activating the sensor to send data to the Azure portal. This unit provides an overview of this process.
 
 ## Your organization's OT sensor deployment plan
 
@@ -14,7 +16,7 @@ The first stage in deploying the OT sensor monitoring software is to check that 
 
 We use the VMware ESXi virtual machine, but you can use other systems, such as HyperV. You might need to refer to your VM documentation for more details.
 
-## Install OT sensor monitoring software
+## Download and install OT sensor monitoring software
 
 Complete the following steps to install the monitoring software on the VM sensor:
 
@@ -24,7 +26,7 @@ Complete the following steps to install the monitoring software on the VM sensor
 
 Once the installation completes, the default network details are displayed in the VM. <!-- check with Theo where this is displayed?-->
 
-## Activate and set up the sensor
+## Activate and intial set up
 
 Configure the sensor in a browser, and provide the sensor administrator username and password.
 

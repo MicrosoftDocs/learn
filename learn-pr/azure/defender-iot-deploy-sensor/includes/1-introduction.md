@@ -15,7 +15,7 @@ In this module you'll complete the following tasks:
 - **Check the virtual machine**: Ensure that the VM is configured correctly and runs the OT sensor.
 - **Download the monitoring software**: Download the ISO file from the Azure portal.
 - **Install monitoring software**: Install the ISO file on the sensor.
-- **Set up the interface**: Define the interface settings for each sensor end point to be monitored.
+- **Set up the sensor**: Define the sensor's network and interface settings.
 - **Activate the sensor**: Run the activation file and assign security signatures.
 
 ## What is the main goal?
