@@ -8,10 +8,10 @@ metadata:
   ms.author: ceperezb
   ms.topic: module-standard-task-based
   ms.service: security-copilot
+  ai-usage: ai-assisted
 title: Describe the embedded experiences of Microsoft Copilot for Security
 summary: |
   Microsoft Copilot for Security is accessible directly from some Microsoft security products, this is referred to as the embedded experience. Learn about the scenarios supported by the Copilot embedded experience in Microsoft’s security solutions.
-  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   By the end of this module, you'll be able to:
   - Describe Microsoft Copilot in Microsoft Defender XDR.
