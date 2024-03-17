@@ -4,20 +4,24 @@ This unit lists the site items that you must check are configured before startin
 
 Before you start the exercise, check that:
 
-- The firewall is properly configured, ensuring that your sensor can access the cloud on port 443, and connect to each of the endpoints.
-- The VM, VMware ESXi 5.5 or later, is configured to either of the following specifications:
+1. The firewall is properly configured, ensuring that your sensor can access the cloud on port 443, and connect to each of the endpoints.
+1. The VM, VMware ESXi 5.5 or later, is configured to either of the following specifications:
 
     | Type |Memory  | Storage  | CPU Processor |
     |----|-----|---------|----|
     | Enterprise | 32 MB RAM | 1/1.8 TB |  4 Core/ 8 Threads |
     | Line | 8 MB RAM | 100/ 500 GB |  4 Core/ 4 Threads |
 
-- The network adapter port groups for the internet and SNAP switch are configured, so that the VM is able to communicate with them. You may need to use Promiscuous mode in the VM to connect with the switches.
-- The traffic mirroring is configured correctly.
+1. The network adapter port groups for the internet and SNAP switch are configured, so that the VM is able to communicate with them.
+1. The traffic mirroring is configured correctly.
+
+> [!NOTE]
+> You may need to use Promiscuous mode in the VM to connect with the switches. Promiscuous mode is an operating mode and a security monitoring technique for a VM's interfaces in the same port group level as the virtual switch to view the switch's network traffic. Promiscuous mode is disabled by default but can be defined at the virtual switch or port group level.
+>
 
 ## Install the monitoring software
 
-First, download the software from Defender for IoT and then install the software on your VM.
+First download the software from Defender for IoT and then install the software on your VM.
 
 ### Download the monitoring software file
 
@@ -42,8 +46,8 @@ Connect to your VM to install the software.
 
     The installation boots and a wizard opens, for example:
 
-    :::image type="content" source="../media/4-iot-iso-boot.png" alt-text="Screenshot of the installation wizard for mounting the ISO file on the OT sensor virtual machine" :::<!-- change width of the image, is it ok now?-->
-
+    :::image type="content" source="../media/4-iot-iso-boot.png" alt-text="Screenshot of the installation wizard for mounting the ISO file on the OT sensor virtual machine" :::
+<!-- change width of the image, is it ok now?-->
 1. Select **Install iot-sensor_<version_number>**.
 
     The installation process takes 20-30 minutes. When the wizard completes the installation, it shows the default network details.
@@ -91,12 +95,12 @@ Open a browser in the VM.
 
 1. Select **Login**.
 
-The **Defender for IoT | Overview** <!-- I think this is the sensor Overview page?!--> page opens to the **Management interface** tab. Now you start to configure the settings.
+The **Defender for IoT | Overview** page opens to the **Management interface** tab. Now you start to configure the settings.
 <!-- add screenshot of the Overview page here - can we get from THeo or Ariel or just leave this out?-->
 
 ### Define network details
 
-Enter your sensor's network details <!-- what connects to what here? -->so that it can send data to the Azure portal. In the **Management interface** tab:
+In the **Management interface** tab:
 
 1. Define the network details for the sensor. It's best practice to give different names or settings for security purposes, even though you were given default network values after the monitoring software installation. For example:
 
