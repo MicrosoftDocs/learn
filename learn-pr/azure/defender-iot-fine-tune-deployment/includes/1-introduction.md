@@ -1,4 +1,3 @@
-<!-- Should title of LM be Fine tune your OT sensor for Microsoft Defender for IoT? -->
 Microsoft Defender for IoT provides comprehensive threat detection for IoT/OT networks, with multiple deployment options that include cloud-connected, fully on-premises, or hybrid environments.
 
 This module describes the steps required to fine-tune and calibrate a cloud-connected sensor on Defender for IoT for operational technology (OT) monitoring.
@@ -19,4 +18,4 @@ In this module, you'll:
 
 ## What is the main goal?
 
-By the end of this session, you'll be able to fine tune and calibrate your OT sensor, ensuring that it sends accurate and filtered data. You'll also be able to triage the network alerts, making sure that they are created when suspicious traffic is detected. This completes your deployment of the sensor to Defender for IoT. <!-- are we deploying a sensor or D4IoT? deployment of the sensor to Defender for IoT-->
+By the end of this session, you'll be able to fine tune and calibrate your OT sensor, ensuring that it sends accurate and filtered data. You'll also be able to triage the network alerts, making sure that they are created when suspicious traffic is detected. This completes the deployment process of the sensor to Defender for IoT. <!-- are we deploying a sensor or D4IoT? deployment of the sensor to Defender for IoT-->

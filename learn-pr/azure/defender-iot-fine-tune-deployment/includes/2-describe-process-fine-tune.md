@@ -7,12 +7,11 @@ Once these checks are complete, you have a full and accurate list of devices tha
 The following diagram shows the complete Operational Technology (OT) deployment path, with the team responsible for each phase:
 
 :::image type="content" source="../media/2-ot-deploy.png" alt-text="Diagram of the complete OT deployment process" border="false":::
-OR
-:::image type="content" source="../media/2-ot-deploy-box.png" alt-text="Diagram of the complete OT deployment process boxed" border="false":::
 
 This Learn Module is divided into two sections.
 
 Section 1: units 2, 3 and 4 dealing with calibrating and fine-tuning your sensor.
+
 Section 2: units 5, 6 and 7 dealing with triaging the alerts.
 
 Units 2, 3 and 4 describe the fifth phase in the deployment: *Calibrate and fine-tune*. In a real-life scenario, the deployment and connectivity teams ensure that the sensor is already onboarded, activated, and sending data to Defender for IoT.
