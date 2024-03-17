@@ -23,7 +23,7 @@ From the home menu, the user can navigate as follows:
 
     :::image type="content" source="../media/my-sessions-v2.png" lightbox="../media/my-sessions-v2.png" alt-text="Screen capture listing a user's session.":::
 
-- The promptbook library, which includes promptbooks builtin and custom promptbooks. Information about each promptbook is provided, including the description, the required inputs, the number of prompts, the owner, and more.  From the promptbook library you can run the selected promptbook by selecting the run icon.  You can also select the ellipses for more options.
+- The promptbook library, which includes promptbooks builtin and custom promptbooks. Information about each promptbook is provided, including the description, the required inputs, the number of prompts, the owner, and more. From the promptbook library you can run the selected promptbook by selecting the run icon. You can also select the ellipses for more options.
 
     :::image type="content" source="../media/promptbook-library.png" lightbox="../media/promptbook-library.png" alt-text="Screen capture listing the promptbook library.":::
 
@@ -37,23 +37,23 @@ From the home menu, the user can navigate as follows:
   
     :::image type="content" source="../media/role-assignment.png" lightbox="../media/role-assignment.png" alt-text="Screen capture showing the role assignment settings.":::
   
-  - Usage monitoring, which provides a dashboard showing how SCU's are consumed over a period of time by your Microsoft Copilot for Security workloads. When an analyst is in the middle of an investigation and the usage is nearing the provisioned capacity limit (90%), a notification is displayed to the analyst while entering the prompt. The notification informs the analyst to contact the owner to increase the capacity or limit the number of prompts to avoid disruptions. These notifications are also shown in Copilot for Security embedded experiences.
+  - Usage monitoring, which provides a dashboard showing how SCUs are consumed over a period of time by your Microsoft Copilot for Security workloads. When an analyst is in the middle of an investigation and the usage is nearing the provisioned capacity limit (90%), a notification is displayed to the analyst while entering the prompt. The notification informs the analyst to contact the owner to increase the capacity or limit the number of prompts to avoid disruptions. These notifications are also shown in Copilot for Security embedded experiences.
   
-    When the provisioned capacity is crossed, the analyst will see an error message stating that due to high usage in organization, they cannot submit additional prompts.The analyst is asked to contact the owner to increase the provisioned SCUs.
+    When the provisioned capacity is crossed, the analyst sees an error message stating that due to high usage in organization, they cannot submit additional prompts. The analyst is asked to contact the owner to increase the provisioned SCUs.
 
     :::image type="content" source="../media/usage-monitoring.png" lightbox="../media/usage-monitoring.png" alt-text="Screen capture showing the usage monitoring dashboard.":::
 
-- Settings, which include preferences along with data and privacy statements. The preferences settings allows users to configure the theme.  Users with admin settings can configure who can add and manage custom plugins.
+- Settings, which include preferences along with data and privacy statements. The preferences settings allow users to configure the theme. Users with admin settings can configure who can add and manage custom plugins.
 
     :::image type="content" source="../media/settings-preferences-v2.png" lightbox="../media/usage-monitoring.png" alt-text="Screen capture showing the preferences that can be configured.":::
 
-- The tenant for which Copilot is provisioned. The tenant, which is provisioned for Copilot doesn't need to be the tenant your security analyst logs in from. In the screenshot that follows, security analyst Angus MacGregor uses a Fabrikam account to sign in. Copilot is provisioned in the Contoso tenant.  By selecting the down arrow, Angus MacGregor is able to select the Contoso tenant.
+- The tenant for which Copilot is provisioned. The tenant, which is provisioned for Copilot doesn't need to be the tenant your security analyst logs in from. In the screenshot that follows, security analyst Angus MacGregor uses a Fabrikam account to sign in. Copilot is provisioned in the Contoso tenant. By selecting the down arrow, Angus MacGregor is able to select the Contoso tenant.
 
     :::image type="content" source="../media/tenant-switcher-v3.png" lightbox="../media/tenant-switcher-v3.png" alt-text="Screen capture showing the tenant switching window, with multiple tenants listed.":::
 
 ### Plugins
 
-The manage plugins icon is located on the bottom left corner of the Copilot landing page. Selecting this icon opens the Manage plugins menu that lists preinstalled plugins for Microsoft security services and other commonly used services and websites that you can use. You can also add your own custom plugins. The subsequent units provides more details on Microsoft plugins and non-Microsoft plugins.
+The Manage plugins icon is located on the bottom left corner of the Copilot landing page. Selecting this icon opens the Manage plugins menu that lists preinstalled plugins for Microsoft security services and other commonly used services and websites that you can use. You can also add your own custom plugins. The subsequent units provide more details on Microsoft plugins and non-Microsoft plugins.
 
 :::image type="content" source="../media/plugin-icon-plugin-list.png" lightbox="../media/plugin-icon-plugin-list.png" alt-text="Screen capture showing the plugin icon and the plugin window showing a subset of the plugins.":::
 
@@ -73,7 +73,7 @@ Even though the prompt bar is at the bottom of the landing page, it really is th
 
 #### Prompt suggestions and system capabilities
 
-Prompt suggestions are specific, single prompts that you can use in Copilot. The available prompt suggestions are displayed by typing the forward slash (the "/" symbol) at the prompt bar. The list displayed is a small subset of all the available system capabilities available to you, based on the plugins you enabled. To view all the system capabilities available to you, select See all system capabilities. Each system capability is itself a prompt suggestion that you can run in the standalone experience.  
+Prompt suggestions are specific, single prompts that you can use in Copilot. The available prompt suggestions are displayed by typing the forward slash (the "/" symbol) at the prompt bar. The list displayed is a small subset of all the available system capabilities available to you, based on the plugins you enabled. To view all the system capabilities available to you, select See all system capabilities. Each system capability is itself a prompt suggestion that you can run in the standalone experience. 
 
 :::image type="content" source="../media/prompt-suggestions-see-all-capabilities.png" lightbox="../media/prompt-suggestions-see-all-capabilities.png" alt-text="Screen capture of the prompt suggestions that can be run in the standalone experience.":::
 
