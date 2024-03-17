@@ -16,9 +16,11 @@ abstract: |
   By the end of this module, you'll be able to:
   - Describe Microsoft Copilot in Microsoft Defender XDR.
   - Describe Microsoft Copilot in Microsoft Purview.
+  - Describe Microsoft Copilot in Microsoft Entra.
 prerequisites: |
-  - A basic understanding of Microsoft Defender for XDR
-  - A basic understanding of Microsoft Purview
+  - Working knowledge of Microsoft Defender for XDR
+  - Working knowledge of Microsoft Purview
+  - Working knowledge of Microsoft Entra
 iconUrl: /learn/achievements/generic-badge.svg
 hidden: true
 levels: 
@@ -37,6 +39,7 @@ units:
 - learn.security-copilot-embedded-experiences.introduction
 - learn.security-copilot-embedded-experiences.copilot-for-defender
 - learn.security-copilot-embedded-experiences.copilot-for-purview
+- learn.security-copilot-embedded-experiences.copilot-for-entra
 - learn.security-copilot-embedded-experiences.knowledge-check
 - learn.security-copilot-embedded-experiences.summary
 badge:

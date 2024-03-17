@@ -1,10 +1,11 @@
 
-In this module, you learned about the embedded experience for Microsoft Copilot. You explored features of Copilot in Microsoft Defender XDR, such as summarize incidents, guided responses, script analysis, and others. You learned about Copilot in Microsoft Purview and the use cases supported withData Loss Prevention, Insider Risk Management, communication compliance, and eDiscovery.
+In this module, you learned about the embedded experience for Microsoft. You explored features of Copilot in Microsoft Defender XDR, Microsoft Purview, and Microsoft Entra. The embedded experience is also a great place to start a security investigation, while enabling analysts the ability to pivot to the standalone experience to pursue a more detailed, cross product investigation that brings to bear all the Copilot capabilities enabled for your role.
 
 Now that you completed this module, you can:
 
 - Describe Microsoft Copilot in Microsoft Defender XDR.
 - Describe Microsoft Copilot in Microsoft Purview.
+- Describe Microsoft Copilot in Microsoft Entra.
 
 #### Learn more
 
