@@ -7,9 +7,11 @@ metadata:
   author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: module
-  ms.service: azure
+  ms.service: security
+  ai-usage: ai-assisted
 title: Design solutions for securing Microsoft 365
-summary: "You learn how to design security solutions for Exchange, Sharepoint, OneDrive and Teams."
+summary: |
+  You learn how to design security solutions for Exchange, Sharepoint, OneDrive and Teams.
 abstract: |
   By the end of this module, you are able to:
   -   Evaluate security posture for collaboration and productivity workloads

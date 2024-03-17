@@ -4,11 +4,10 @@ title: Host-based encryption on Azure Kubernetes Service
 metadata:
   title: Host-based encryption on Azure Kubernetes Service
   description: "Host-based encryption on Azure Kubernetes Service"
-  ms.date: 11/14/2023
+  ms.date: 03/08/2024
   author: wwlpublish
   ms.author: bradj
-  ms.topic: module
-  ms.prod: azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/5-host-based-encryption-azure-kubernetes-service.md)]

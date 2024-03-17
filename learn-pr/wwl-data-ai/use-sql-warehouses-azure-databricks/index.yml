@@ -15,7 +15,7 @@ abstract: |
   - Create databases and tables.
   - Create queries and dashboards.
 prerequisites: |
-  Before starting this module, you should have a basic knowledge of Azure Databricks. Consider completing the previous modules in the [Data Engineering with Azure Databricks](/learn/paths/data-engineer-azure-databricks?azure-portal=true) learning path before this one.
+  Before starting this module, you should have a basic knowledge of Azure Databricks. Consider completing the [Explore Azure Databricks](/training/modules/explore-azure-databricks) module before this one.
 iconUrl: /learn/achievements/describe-azure-databricks-delta-lake-architecture.svg
 levels:
 - intermediate
@@ -26,8 +26,7 @@ products:
 subjects:
 - data-analytics
 - data-engineering
-- data-lake
-- data-warehousing
+- data-storage
 units:
 - learn.wwl.use-sql-warehouses-azure-databricks.introduction
 - learn.wwl.use-sql-warehouses-azure-databricks.get-started

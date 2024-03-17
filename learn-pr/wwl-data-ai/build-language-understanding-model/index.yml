@@ -6,7 +6,7 @@ metadata:
   ms.date: 08/31/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure-ai-language
   ms.subservice: azure-ai-clu
 title: Build a conversational language understanding model
@@ -34,7 +34,6 @@ products:
 subjects:
 - artificial-intelligence
 - cloud-computing
-- data-ai
 units:
 - learn.wwl.build-language-understanding-model.introduction
 - learn.wwl.build-language-understanding-model.understand-prebuilt-capabilities

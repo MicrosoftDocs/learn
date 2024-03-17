@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.develop-on-remote-machine.exercise-set-up-ssh-server
+title: Exercise - Set up SSH server
+metadata:
+  title: Exercise - Set up SSH server
+  description: "Learn how to set up SSH on an Azure virtual machine."
+  ms.date: 01/22/2024
+  author: olguzzar
+  ms.author: olguzzar
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-exercise-set-up-ssh-server.md)]

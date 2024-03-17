@@ -6,8 +6,7 @@ metadata:
   ms.date: 01/03/2024
   author: marlenaklein-msft
   ms.author: marlenaklein
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.topic: module
 title: Create a Holographic Remoting app to visualize 3D content on HoloLens 2
 summary: Learn about PC holographic remoting to enhance your learning experience.
 abstract: |

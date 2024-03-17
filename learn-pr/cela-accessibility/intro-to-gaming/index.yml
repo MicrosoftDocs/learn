@@ -28,7 +28,7 @@ roles:
 products:
 - xbox
 subjects:
-- gaming-innovation
+- game-development
 units:
 - learn.intro-to-gaming.introduction
 - learn.intro-to-gaming.approach-gameplay

@@ -1,8 +1,12 @@
 You can configure how GitHub scans the code in your project for vulnerabilities and errors. When you choose your own configuration, you save time and decide the best frequency of code scanning for your project. In this unit, you learn the basics of code scanning configuration. You also learn how to configure the frequency of scans and schedule them to best fit your repository and development needs. 
 
-As we discussed in the previous units, you can run code scanning on GitHub, using GitHub Actions, or from your continuous integration (CI) system. Before you can configure code scanning for a repository, you must set up code scanning by adding a GitHub Actions workflow to the repository. You usually don't need to edit this workflow. However, if necessary, you can customize some of the settings. 
+As we discussed in the previous units, you can run code scanning on GitHub, using GitHub Actions, or from your continuous integration (CI) system. Selecting the *advanced setup* option on GitHub will generate a customizable workflow file that you can then commit directly to your repository. You usually don't need to edit this workflow. However, if necessary, you can customize some of the settings. 
 
 For example, you can edit GitHub's CodeQL analysis workflow to specify the frequency of scans, the languages or directories to scan, and what CodeQL code scanning looks for in your code. You might also need to edit the CodeQL analysis workflow if you use a specific set of commands to compile your code. CodeQL analysis is just one type of code scanning you can perform in GitHub. The GitHub Marketplace contains several other code scanning workflows.
+
+### Switching from Default to Advanced Code Scanning Setup
+
+If you already have a repository setup to use code scanning using the default setup method you can switch to using the advanced setup in the settings. Navigate to the Code scanning section under **Settings > Code security and analysis** and then click the three dots overflow icon. In the dropdown select "Switch to advanced," follow the prompts to disable CodeQL and re-enable it with the advanced setup's generated workflow file.
 
 ## Edit code scanning workflow
 
@@ -18,7 +22,7 @@ Follow these steps to edit a workflow file:
 
 3. After you have edited the file, select **Start commit** and complete the "Commit changes" form. You can choose to commit directly to the current branch, or create a new branch and start a pull request.
 
-    :::image type="content" source="../media/3-start-commit-button-screenshot.png" alt-text="screenshot of the start commit button":::
+    :::image type="content" source="../media/2-security-tab-screenshot.png" alt-text="Screenshot of the start commit button.":::
 
 Review the following sections for some common code scanning configuration options. 
 
@@ -71,7 +75,7 @@ on:
 
 ### Adjust scanning schedule
 
-If you use the default CodeQL analysis workflow, the workflow scans the code in your repository once a week, in addition to the scans triggered by events. To adjust this schedule, edit the `cron` value in the workflow. 
+If you use the default CodeQL analysis workflow, the workflow scans the code in your repository once a week at a randomly generated day and time, in addition to the scans triggered by events. To adjust this schedule, edit the `cron` value in the workflow. 
 
 The following example shows a CodeQL analysis workflow for a repository with a default branch called `main` and one protected branch called `protected`.
 

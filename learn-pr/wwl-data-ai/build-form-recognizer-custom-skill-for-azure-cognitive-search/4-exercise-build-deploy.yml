@@ -4,12 +4,12 @@ title: 'Exercise: Build and deploy an Azure AI Document Intelligence custom skil
 metadata:
   title: 'Exercise: Build and deploy an Azure AI Document Intelligence custom skill'
   description: "Exercise: Build and deploy an Azure AI Document Intelligence custom skill"
-  ms.date: 10/18/2023
+  ms.date: 03/12/2024
   author: wwlpublish
-  ms.author: berryivor
+  ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-build-deploy.md)]

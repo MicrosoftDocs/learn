@@ -8,8 +8,8 @@ metadata:
   author: pablonunes
   ms.author: pablolopes
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.service: bing
+  ms.topic: unit
+  ms.service: microsoft-copilot
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"

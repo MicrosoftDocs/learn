@@ -4,10 +4,10 @@ title: Identify use cases for the Microsoft Purview governance portal
 metadata:
   title: Identify use cases for the Microsoft Purview governance portal
   description: "Implement data discovery and classification​"
-  ms.date: 12/27/2023
+  ms.date: 02/16/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/4-microsoft-purview-governance-portal-use-cases.md)]
