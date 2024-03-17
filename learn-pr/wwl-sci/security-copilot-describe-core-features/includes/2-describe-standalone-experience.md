@@ -14,18 +14,38 @@ There are some key landmarks on the Copilot landing page (portal) to which the u
 
 The home menu is accessed by selecting the hamburger icon located on the top left corner of the Copilot landing page.
 
-:::image type="content" source="../media/home-icon-home-page-v2.png" lightbox="../media/home-icon-home-page-v2.png" alt-text="Screen capture showing the hamburger icon and the page it opens when selected.":::
+:::image type="content" source="../media/home-icon-home-page-v4.png" lightbox="../media/home-icon-home-page-v4.png" alt-text="Screen capture showing the hamburger icon and the page it opens when selected.":::
 
 From the home menu, the user can navigate as follows:
 
 - Back to the landing page by selecting the Home icon.
 - My sessions, which list past sessions created. The user can manage past sessions with search and filter options along with the ability to rename, duplicate, or delete sessions as needed.
 
-    :::image type="content" source="../media/my-sessions.png" lightbox="../media/my-sessions.png" alt-text="Screen capture listing a user's session.":::
+    :::image type="content" source="../media/my-sessions-v2.png" lightbox="../media/my-sessions-v2.png" alt-text="Screen capture listing a user's session.":::
 
-- Settings, which include preferences along with data and privacy settings, described in the previous unit.
+- The promptbook library, which includes promptbooks builtin and custom promptbooks. Information about each promptbook is provided, including the description, the required inputs, the number of prompts, the owner, and more.  From the promptbook library you can run the selected promptbook by selecting the run icon.  You can also select the ellipses for more options.
 
-    :::image type="content" source="../media/preferences-and-privacy-v2.png" lightbox="../media/preferences-and-privacy-v2.png" alt-text="Screen capture showing the options available on the settings page, which include tabs for preferences and data and privacy.":::
+    :::image type="content" source="../media/promptbook-library.png" lightbox="../media/promptbook-library.png.png" alt-text="Screen capture listing the promptbook library.":::
+
+- Owner specific options, for users configured as owners:
+
+  - Owner settings, which include a link to manage the billing in Azure, the option to change the Security Compute Units (SCUs), configuration of data sharing options, and information on where data is stored.
+
+    :::image type="content" source="../media/owner-settings.png" lightbox="../media/owner-settings.png" alt-text="Screen capture showing the owner settings.":::
+
+  - Role assignments, where admins can view existing role assignments and assign Copilot roles to users.
+  
+    :::image type="content" source="../media/role-assignment.png" lightbox="../media/role-assignment.png" alt-text="Screen capture showing the role assignment settings.":::
+  
+  - Usage monitoring, which provides a dashboard showing how SCU's are consumed over a period of time by your Microsoft Copilot for Security workloads. When an analyst is in the middle of an investigation and the usage is nearing the provisioned capacity limit (90%), a notification is displayed to the analyst while entering the prompt. The notification informs the analyst to contact the owner to increase the capacity or limit the number of prompts to avoid disruptions. These notifications are also shown in Copilot for Security embedded experiences.
+  
+    When the provisioned capacity is crossed, the analyst will see an error message stating that due to high usage in organization, they cannot submit additional prompts.The analyst is asked to contact the owner to increase the provisioned SCUs.
+
+    :::image type="content" source="../media/usage-monitoring.png" lightbox="../media/usage-monitoring.png" alt-text="Screen capture showing the usage monitoring dashboard.":::
+
+- Settings, which include preferences along with data and privacy statements. The preferences settings allows users to configure the theme.  Users with admin settings can configure who can add and manage custom plugins.
+
+    :::image type="content" source="../media/settings-preferences-v2.png" lightbox="../media/usage-monitoring.png" alt-text="Screen capture showing the usage monitoring dashboard.":::
 
 - The tenant for which Copilot is provisioned. The tenant, which is provisioned for Copilot doesn't need to be the tenant your security analyst logs in from. In the screenshot that follows, security analyst Angus MacGregor uses a Fabrikam account to sign in. Copilot is provisioned in the Contoso tenant.  By selecting the down arrow, Angus MacGregor is able to select the Contoso tenant.
 
@@ -33,7 +53,7 @@ From the home menu, the user can navigate as follows:
 
 ### Plugins
 
-The manage plugins icon is located on the bottom left corner of the Copilot landing page. Selecting this icon opens the Manage plugins menu that lists preinstalled plugins for Microsoft security services and other commonly used services and websites that you can use. You can also add your own custom plugins. The subsequent unit provides more details on plugins.
+The manage plugins icon is located on the bottom left corner of the Copilot landing page. Selecting this icon opens the Manage plugins menu that lists preinstalled plugins for Microsoft security services and other commonly used services and websites that you can use. You can also add your own custom plugins. The subsequent units provides more details on Microsoft plugins and non-Microsoft plugins.
 
 :::image type="content" source="../media/plugin-icon-plugin-list.png" lightbox="../media/plugin-icon-plugin-list.png" alt-text="Screen capture showing the plugin icon and the plugin window showing a subset of the plugins.":::
 
