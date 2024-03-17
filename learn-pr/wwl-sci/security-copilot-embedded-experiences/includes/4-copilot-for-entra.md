@@ -5,15 +5,15 @@ Before you get started with Copilot in Microsoft Entra, your organization must b
 
 To view and investigate a user’s risky sign-ins:
 
-- Sign in to the Microsoft Entra admin.
+1. Sign in to the Microsoft Entra admin.
 
-- Navigate to Protection > Identity Protection and then to the Risky users report.
+1. Navigate to Protection > Identity Protection and then to the Risky users report.
 
     :::image type="content" source="../media/entra-risky-users-v2.png" lightbox="../media/entra-risky-users-v2.png" alt-text="Screen capture of the risky users list in Identity Protection.":::
 
-- Select a user from the risky users report.
+1. Select a user from the risky users report.
 
-- Select the Summarize tab in the Risky User Details window.
+1. Select the Summarize tab in the Risky User Details window.
 
      :::image type="content" source="../media/entra-risky-users-summarize-v2.png" lightbox="../media/entra-risky-users-summarize-v2.png" alt-text="Screen capture showing the Copilot generated summary.":::
 
