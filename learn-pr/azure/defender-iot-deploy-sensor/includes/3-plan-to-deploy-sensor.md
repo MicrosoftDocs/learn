@@ -14,9 +14,9 @@ The first stage in deploying the OT sensor monitoring software is to check that 
 
 We use the VMware ESXi virtual machine, but you can use other systems, such as HyperV. You might need to refer to your VM documentation for more details.
 
-## Install Defender for IoT software
+## Install OT sensor monitoring software
 
-In the next unit, you complete the following steps to install software in the VM:
+Complete the following steps to install the monitoring software on the VM sensor:
 
 1. Download and save the OT monitoring software installation file from the Defender for IoT setup page.
 
@@ -52,7 +52,7 @@ Select and enable each interface to be monitored. If you're unsure which interfa
 
 ### Upload activation file
 
-In the **Activation** tab upload the activation file you received from the deployment team. <!-- deployment team - team that handles deployment?? consitencey keep as is-->
+In the **Activation** tab upload the activation file you received from the deployment team.
 
 ### Define certificate settings
 

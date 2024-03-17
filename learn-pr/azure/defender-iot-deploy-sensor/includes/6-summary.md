@@ -1,4 +1,4 @@
-In this module, you learned how to deploy an OT sensor and check that the data appears in Microsoft Defender for IoT. In particular you learned:
+In this module, you learned how to deploy an operational technology (OT) sensor and check that the data appears in Microsoft Defender for IoT. In particular you learned:
 
 - How to upload and install the monitoring software to the OT sensor.
 - How to define the sensor network settings so that it can connect to the interfaces at the site.
