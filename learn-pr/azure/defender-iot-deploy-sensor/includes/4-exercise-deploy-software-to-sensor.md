@@ -63,7 +63,7 @@ Connect to your VM to install the software.
 
 Validate your installation using the sensor's own system health checks, available to the default *admin* user.
 
-1. Sign in to the OT sensor as the `admin` user. <!-- should this be in code highlight? -->
+1. Sign in to the OT sensor as the `admin` user.
 
 1. Select **System Settings** > **Sensor management** > **System Health Check**.
 
