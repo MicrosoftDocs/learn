@@ -5,7 +5,7 @@ Microsoft Copilot for Security integrates with various sources, including Micros
 
 Microsoft plugins give Copilot access to information and capabilities from within your organization's Microsoft products. The image that follows shows only a subset of the available Microsoft plugins.
 
-:::image type="content" source="../media/plugins-microsoft-updated-list-v2.png" lightbox="../media/manage-plugins-microsoft-v2.png" alt-text="Screen capture of the Manage plugins window that shows the Microsoft services.":::
+:::image type="content" source="../media/plugins-microsoft-updated-list-v2.png" lightbox="../media/plugins-microsoft-updated-list-v2.png" alt-text="Screen capture of the Manage plugins window that shows the Microsoft services.":::
 
 For Microsoft plugins, Copilot uses the OBO (on behalf of) model – meaning that Copilot knows that a customer has licenses to specific products and is automatically signed into those products. Copilot can then access the specific products when the plugin is enabled and, where applicable, parameters are configured.
 
@@ -123,7 +123,7 @@ The screen capture that follows shows only a subset of the capabilities supporte
 
 To use this plugin, it is necessary to configure parameters to identify your organization's subscription to Defender EASM.
 
-:::image type="content" source="../media/easm-settings-icon-to-parameters.png" lightbox="../media/asm-settings-icon-to-parameters.png" alt-text="Screen capture of the EASM prompt suggestions that can be run in the standalone experience.":::
+:::image type="content" source="../media/easm-settings-icon-to-parameters.png" lightbox="../media/easm-settings-icon-to-parameters.png" alt-text="Screen capture of the EASM plugin settings that must be configured.":::
 
 For more information, visit [Microsoft Copilot for Security and Defender EASM](/azure/external-attack-surface-management/easm-copilot).
 

@@ -25,7 +25,7 @@ From the home menu, the user can navigate as follows:
 
 - The promptbook library, which includes promptbooks builtin and custom promptbooks. Information about each promptbook is provided, including the description, the required inputs, the number of prompts, the owner, and more.  From the promptbook library you can run the selected promptbook by selecting the run icon.  You can also select the ellipses for more options.
 
-    :::image type="content" source="../media/promptbook-library.png" lightbox="../media/promptbook-library.png.png" alt-text="Screen capture listing the promptbook library.":::
+    :::image type="content" source="../media/promptbook-library.png" lightbox="../media/promptbook-library.png" alt-text="Screen capture listing the promptbook library.":::
 
 - Owner specific options, for users configured as owners:
 
@@ -45,7 +45,7 @@ From the home menu, the user can navigate as follows:
 
 - Settings, which include preferences along with data and privacy statements. The preferences settings allows users to configure the theme.  Users with admin settings can configure who can add and manage custom plugins.
 
-    :::image type="content" source="../media/settings-preferences-v2.png" lightbox="../media/usage-monitoring.png" alt-text="Screen capture showing the usage monitoring dashboard.":::
+    :::image type="content" source="../media/settings-preferences-v2.png" lightbox="../media/usage-monitoring.png" alt-text="Screen capture showing the preferences that can be configured.":::
 
 - The tenant for which Copilot is provisioned. The tenant, which is provisioned for Copilot doesn't need to be the tenant your security analyst logs in from. In the screenshot that follows, security analyst Angus MacGregor uses a Fabrikam account to sign in. Copilot is provisioned in the Contoso tenant.  By selecting the down arrow, Angus MacGregor is able to select the Contoso tenant.
 
