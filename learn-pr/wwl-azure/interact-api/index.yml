@@ -20,13 +20,9 @@ abstract: |
 
   -   Interact with an API by using the Swagger interface
 prerequisites: |
-  -
+  -   Knowledge of RESTful services and HTTP action verbs
 
-  Knowledge of RESTful services and HTTP action verbs
-
-  -
-
-  Experience with JSON at a beginner level
+  -   Experience with JSON at a beginner level
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
