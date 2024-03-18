@@ -1,4 +1,4 @@
-Azure provides different types of storage that are suitable for Azure VMs that are running SAP HANA. The **SAP HANA certified Azure storage types** that can be considered for SAP HANA deployments are:
+Azure provides different types of storage that are suitable for Azure Virtual Machines that are running SAP HANA. The **SAP HANA certified Azure storage types** that can be considered for SAP HANA deployments are:
 
 - Azure Premium SSD
 - [Ultra disk](/azure/virtual-machines/linux/disks-enable-ultra-ssd)
@@ -10,7 +10,7 @@ Azure offers two deployment methods for VHDs on Azure Standard and Premium Stora
 
 For a list of storage types and their SLAs in IOPS and storage throughput, review the [Azure documentation for managed disks](https://azure.microsoft.com/pricing/details/managed-disks/).
 
-Azure provides different types of storage suitable for Azure VMs running SAP HANA. The SAP HANA certified Azure storage types that you can consider for SAP HANA deployments are:
+Azure provides different types of storage suitable for Azure Virtual Machines running SAP HANA. The SAP HANA certified Azure storage types that you can consider for SAP HANA deployments are:
 
 - **Azure Premium SSD** \- **/hana/log** is required to be cached with Azure [Write Accelerator](/azure/virtual-machines/linux/how-to-enable-write-accelerator). The **/hana/data** volume can be placed on Premium SSD without Azure Write Accelerator or on Ultra disk.
 - **Azure Ultra disk** \- Azure Ultra disk for the **/hana/log** volume. The **/hana/data** volume can be placed on a Premium SSD without Azure Write Accelerator or an Ultra disk for faster restart times.
@@ -24,7 +24,7 @@ In the on-premises world, you rarely had to care about the I/O subsystems and th
 - Enable read activity of at least 400 MB/sec for **/hana/data** for 16 MB and 64 MB I/O sizes
 - Enable write activity of at least 250 MB/sec for **/hana/data** with 16 MB and 64 MB I/O sizes
 
-Given that low storage latency is critical for DBMS systems, even as DBMS, like SAP HANA, keep data in-memory. The critical path in storage is usually around the transaction log writes of the DBMS systems. But also operations like writing savepoints or loading data in-memory after crash recovery can be critical. Therefore, it's **mandatory** to leverage Azure Premium Disks for **/hana/data** and **/hana/log** volumes. In order to achieve the minimum throughput of **/hana/log** and **/hana/data** as desired by SAP, you need to build a RAID 0 using MDADM or LVM over multiple Azure Premium Storage disks. And use the RAID volumes as **/hana/data** and **/hana/log** volumes.
+Given that low storage latency is critical for DBMS systems, even as DBMS, like SAP HANA, keep data in-memory. The critical path in storage is usually around the transaction log writes of the DBMS systems. But also operations like writing savepoints or loading data in-memory after crash recovery can be critical. Therefore, it's **mandatory** to use Azure Premium Disks for **/hana/data** and **/hana/log** volumes. In order to achieve the minimum throughput of **/hana/log** and **/hana/data** as desired by SAP, you need to build a RAID 0 using MDADM or LVM over multiple Azure Premium Storage disks. And use the RAID volumes as **/hana/data** and **/hana/log** volumes.
 
 > [!TIP]
 > As stripe sizes for the RAID 0 the recommendation is to use 64 KB or 128 KB for **/hana/data**, and 32 KB for **/hana/log**.
@@ -34,4 +34,4 @@ Given that low storage latency is critical for DBMS systems, even as DBMS, like 
 
 Accumulating a number of Azure VHDs underneath a RAID, is accumulative from an IOPS and storage throughput side. So, if you put a RAID 0 over 3 x P30 Azure Premium Storage disks, it should give you three times the IOPS and three times the storage throughput of a single Azure Premium Storage P30 disk.
 
-Also, keep the overall VM I/O throughput in mind when sizing or deciding for a VM. Overall VM storage throughput is documented in the article [Memory optimized virtual machine sizes](/azure/virtual-machines/linux/sizes-memory).
+Also, keep the overall virtual machine I/O throughput in mind when sizing or deciding for a virtual machine. Overall virtual machine storage throughput is documented in the article [Memory optimized virtual machine sizes](/azure/virtual-machines/linux/sizes-memory).
