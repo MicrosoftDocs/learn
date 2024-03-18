@@ -46,7 +46,7 @@ The recommended configurations for production scenarios look like:
 | M416s\_v2 | 5,700 GiB | 2,000 MBps | 4 x P40 | 1,000 MBps | no bursting | 30,000 | no bursting |
 | M416ms\_v2 | 11,400 GiB | 2,000 MBps | 4 x P50 | 1,000 MBps | no bursting | 30,000 | no bursting |
 
-### For the **/hana/log** volume. the configuration would look like
+### For the **/hana/log** volume. The configuration would look like
 
 | VM SKU | RAM | Max. VM I/O throughput | /hana/log volume | Provisioned throughput | Maximum burst throughput | IOPS | Burst IOPS |
 |-|-|-|-|-|-|-|-|
