@@ -8,8 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
-  ms.prod: security
-  ms.service: security-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/8-summary.md)]

@@ -66,3 +66,4 @@ If any errors or issues were faced during the installation, make sure you visit 
 ## Next steps
 
 In the next unit, you'll create your first Bicep template and deploy it to Azure.
+
