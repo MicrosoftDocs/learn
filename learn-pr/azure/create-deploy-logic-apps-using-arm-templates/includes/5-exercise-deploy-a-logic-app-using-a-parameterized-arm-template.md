@@ -58,7 +58,7 @@ There are two ways to supply parameters to our template during deployment using 
 
    ```azurecli
    az deployment group validate \
-   --resource-group <rgn>[sandbox resource group name]</rgn> \
+   --resource-group "<rgn>[sandbox resource group name]</rgn>" \
    --template-file template-with-params.json \
    --parameters @params.json
    ```
@@ -77,7 +77,7 @@ There are two ways to supply parameters to our template during deployment using 
 
    ```azurecli
    az deployment group create \
-   --resource-group <rgn>[sandbox resource group name]</rgn> \
+   --resource-group "<rgn>[sandbox resource group name]</rgn>" \
    --template-file template-with-params.json \
    --parameters @params.json
    ```
@@ -94,7 +94,7 @@ Instead of editing a parameters file every time we want to deploy from the comma
 
    ```azurecli
    az deployment group create \
-   --resource-group <rgn>[sandbox resource group name]</rgn> \
+   --resource-group "<rgn>[sandbox resource group name]</rgn>" \
    --template-file template-with-params.json \
    --parameters '{ "logicAppName": {"value":"MyLogicApp2"}, "location": {"value":"East US"}}'
    ```
@@ -107,7 +107,7 @@ Instead of editing a parameters file every time we want to deploy from the comma
 
    ```azurecli
    az resource list \
-   --resource-group <rgn>[sandbox resource group name]</rgn> \
+   --resource-group "<rgn>[sandbox resource group name]</rgn>" \
    --resource-type Microsoft.Logic/workflows \
    --query [*].[name,location] --output tsv
    ```
@@ -146,7 +146,7 @@ Let's now turn our attention to making our app do a little more than just sendin
 
    ```azurecli
    az deployment group validate \
-   --resource-group <rgn>[sandbox resource group name]</rgn> \
+   --resource-group "<rgn>[sandbox resource group name]</rgn>" \
    --template-file template-with-params.json \
    --parameters '{ "logicAppName": {"value":"CalculateArea"}}'
    ```
@@ -155,7 +155,7 @@ Let's now turn our attention to making our app do a little more than just sendin
 
    ```azurecli
    az deployment group create \
-   --resource-group <rgn>[sandbox resource group name]</rgn> \
+   --resource-group "<rgn>[sandbox resource group name]</rgn>" \
    --template-file template-with-params.json \
    --parameters '{ "logicAppName": {"value":"CalculateArea"}}'
    ```
@@ -172,7 +172,7 @@ Let's now turn our attention to making our app do a little more than just sendin
 
    ```azurecli
    az resource list \
-   --resource-group <rgn>[sandbox resource group name]</rgn> \
+   --resource-group "<rgn>[sandbox resource group name]</rgn>" \
    --resource-type Microsoft.Logic/workflows \
    --query [*].[name,location] --output tsv
    ```
