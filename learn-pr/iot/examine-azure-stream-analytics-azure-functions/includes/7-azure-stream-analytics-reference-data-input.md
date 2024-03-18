@@ -1,6 +1,6 @@
 Reference data (also known as a lookup table) is a finite data set that is static or slowly changing in nature, used to perform a lookup or to augment your data streams. For example, in an IoT scenario, you could store metadata about sensors (which don’t change often) in reference data and join it with real-time IoT data streams. Azure Stream Analytics loads reference data in memory to achieve low latency stream processing. To make use of reference data in your Azure Stream Analytics job, you will generally use a Reference Data Join in your query.
 
-Stream Analytics supports Azure Blob storage and Azure SQL Database as the storage layer for Reference Data. You can also transform and/or copy reference data to Blob storage from Azure Data Factory to use any number of cloud-based and on-premises data stores.
+Stream Analytics supports Azure Blob storage, Azure Data Lake Storage Gen2, and Azure SQL Database as the storage layer for Reference Data. You can also transform and/or copy reference data to Blob storage from Azure Data Factory to use any number of cloud-based and on-premises data stores.
 
 ## Static reference data
 

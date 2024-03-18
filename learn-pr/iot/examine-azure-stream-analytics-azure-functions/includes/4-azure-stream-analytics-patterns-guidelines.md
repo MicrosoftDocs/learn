@@ -1,10 +1,10 @@
 ## Azure Stream Analytics solution patterns
 
-Azure Stream Analytics is key component of the larger IoT solution. Several simple architectural patterns for Azure Stream Analytics can be used to develop more complex solutions in a wide variety of scenarios.
+Azure Stream Analytics is a key component of the larger IoT solution. Several simple architectural patterns for Azure Stream Analytics can be used to develop more complex solutions in a wide variety of scenarios.
 
 ### Create a Stream Analytics job to power real-time dashboarding experience
 
-With Azure Stream Analytics, you can quickly stand up real-time dashboards and alerts. A simple solution ingests events from Event Hubs or IoT Hub, and feeds the Power BI dashboard with a streaming data set. For more information, see the detailed tutorial Analyze phone call data with Stream Analytics and visualize results in Power BI dashboard.
+With Azure Stream Analytics, you can quickly stand up real-time dashboards and alerts. A simple solution ingests events from Event Hubs or IoT Hub, and feeds the Power BI dashboard with a streaming data set. For more information, see the detailed tutorial [Analyze fraudulent call data with Stream Analytics and visualize results in Power BI dashboard](/azure/stream-analytics/stream-analytics-real-time-fraud-detection).
 
 :::image type="content" source="../media/m04-l05-asa-pattern-pbi-dashboard-5efcfd46.png" alt-text="Diagram that illustrates a Stream Analytics job that could be used to power a real-time dashboarding experience.":::
 
@@ -17,12 +17,12 @@ This solution pattern offers the lowest latency from the event source to the Pow
 
 The second most popular use of Stream Analytics is to generate real-time alerts. In this solution pattern, business logic in Stream Analytics can be used to detect temporal and spatial patterns or anomalies, then produce alerting signals. However, unlike the dashboard solution where Stream Analytics uses Power BI as a preferred endpoint, various intermediate data sinks can be used. These sinks include Event Hubs, Service Bus, and Azure Functions. You, as the application builder, need to decide which data sink works best for your scenario.
 
-Downstream event consumer logic must be implemented to generate alerts in your existing business workflow. Because you can implement custom logic in Azure Functions, Azure Functions is the fastest way you can perform this integration. A tutorial for using Azure Function as the output for a Stream Analytics job can be found in Run Azure Functions from Azure Stream Analytics jobs. Azure Functions also supports various types of notifications including text and email. Logic App may also be used for such integration, with Event Hubs between Stream Analytics and Logic App.
+Downstream event consumer logic must be implemented to generate alerts in your existing business workflow. Because you can implement custom logic in Azure Functions, Azure Functions is the fastest way you can perform this integration. A tutorial for using Azure Function as the output for a Stream Analytics job can be found in [Run Azure Functions from Azure Stream Analytics jobs](/azure/stream-analytics/stream-analytics-with-azure-functions). Azure Functions also supports various types of notifications including text and email. Logic App may also be used for such integration, with Event Hubs between Stream Analytics and Logic App.
 
 :::image type="content" source="../media/m04-l05-asa-pattern-event-messaging-app-93858b75.png" alt-text="Diagram that illustrates a Stream Analytics job that could be used to generate real-time alerts.":::
 
 
-Event Hubs, on the other hand, offers the most flexible integration point. Many other services, like Azure Data Explorer and Time Series Insights can consume events from Event Hubs. Services can be connected directly to the Event Hubs sink from Azure Stream Analytics to complete the solution. Event Hubs is also the highest throughput messaging broker available on Azure for such integration scenarios.
+Event Hubs, on the other hand, offers the most flexible integration point. Many other services, like Azure Data Explorer can consume events from Event Hubs. Services can be connected directly to the Event Hubs sink from Azure Stream Analytics to complete the solution. Event Hubs is also the highest throughput messaging broker available on Azure for such integration scenarios.
 
 ## How to monitor Azure Stream Analytics jobs
 

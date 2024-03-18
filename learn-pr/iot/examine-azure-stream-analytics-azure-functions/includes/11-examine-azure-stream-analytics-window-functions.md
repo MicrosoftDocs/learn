@@ -6,13 +6,11 @@ All the windowing operations output results at the end of the window. The output
 
 :::image type="content" source="../media/m04-l05-stream-analytics-window-functions-conceptual-59acfa20.png" alt-text="Diagram that illustrates the concept of Azure Stream Analytics window functions.":::
 
-
 ## Tumbling window
 
 Tumbling window functions are used to segment a data stream into distinct time segments and perform a function against them, such as the example below. The key differentiators of a Tumbling window are that they repeat, do not overlap, and an event cannot belong to more than one tumbling window.
 
 :::image type="content" source="../media/m04-l05-stream-analytics-window-functions-tumbling-intro-9fe56f7f.png" alt-text="Diagram that shows the key differentiators of a Tumbling window.":::
-
 
 ## Hopping window
 
@@ -20,20 +18,17 @@ Hopping window functions hop forward in time by a fixed period. It may be easy t
 
 :::image type="content" source="../media/m04-l05-stream-analytics-window-functions-hopping-intro-e43153ec.png" alt-text="Diagram that shows the key differentiators of a Hopping window.":::
 
-
 ## Sliding window
 
-Sliding window functions, unlike Tumbling or Hopping windows, produce an output only when an event occurs. Every window will have at least one event and the window continuously moves forward by an € (epsilon). Like hopping windows, events can belong to more than one sliding window.
+Sliding windows, unlike tumbling or hopping windows, output events only for points in time when the content of the window actually changes — in other words, when an event enters or exits the window. So, every window has at least one event. Similar to hopping windows, events can belong to more than one sliding window.
 
 :::image type="content" source="../media/m04-l05-stream-analytics-window-functions-sliding-intro-b6ea8ae0.png" alt-text="Diagram that shows the key differentiators of a Sliding window.":::
-
 
 ## Session window
 
 Session window functions group events that arrive at similar times, filtering out periods of time where there is no data. It has three main parameters: timeout, maximum duration, and partitioning key (optional).
 
 :::image type="content" source="../media/m04-l05-stream-analytics-window-functions-session-intro-61f52077.png" alt-text="Diagram that shows the key differentiators of a Session window.":::
-
 
 A session window begins when the first event occurs. If another event occurs within the specified timeout from the last ingested event, then the window extends to include the new event. Otherwise if no events occur within the timeout, then the window is closed at the timeout.
 
