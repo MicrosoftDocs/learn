@@ -3,7 +3,7 @@ uid: learn.wwl.register-apps-use-microsoft-entra-id
 metadata:
   title: Register apps using Microsoft Entra ID
   description: "In this module, we explore the process of creating an app registration in Microsoft Entra ID. Then explore the settings and configuration options. You create a single page app, register multitenant app, and other options. As part of this process, we dig into granting user access to apps and configure how and when they can use the app and its data."
-  ms.date: 03/15/2024
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: module
