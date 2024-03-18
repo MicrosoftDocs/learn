@@ -1,9 +1,9 @@
 
 To start using Microsoft Copilot for Security, organizations need to take steps to onboard the service and users. These include:
 
-- Provision Copilot capacity
-- Set up the default environment
-- Assign role permissions
+1. Provision Copilot capacity
+2. Set up the default environment
+3. Assign role permissions
 
 ### Provision capacity
 
