@@ -12,7 +12,7 @@ First you must analyze the traffic being monitored by the OT sensor.
 1. Select **System setting** > **Deployment**.
 1. Select **Analyze** to start the subnet analysis process.
 
-This tracks each interface and devicethe sensor is monitoring and lists the subnet associated with each one. When the analysis is complete, you need to check that each interface is monitoring the correct traffic. <!-- what is the difference between interface and device? Theo -->
+This tracks each interface and device the sensor is monitoring and lists the subnet associated with each one. When the analysis is complete, you need to check that each interface is monitoring the correct traffic. <!-- what is the difference between interface and device? Theo -->
 <!-- example of changing interfaces and sensor location -need to get proper feedback for how this is done, below is a placeholder -->
 If you find a device incorrectly configured, make the following changes:
 
@@ -85,9 +85,7 @@ We need to update several of the fields.
 1. Make the changes.
 1. Select **Save**.
 
-## Important devices
-
-Assign a unique device as **Important**. In the Device map:
+## Important devicesAssign a unique device as **Important**. In the Device map:
 
 1. Select a device and right-click to open the menu options
 1. Select **Important**

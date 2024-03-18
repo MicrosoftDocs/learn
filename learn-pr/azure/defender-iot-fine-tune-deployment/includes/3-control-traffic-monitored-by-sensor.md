@@ -20,8 +20,6 @@ It's important to identify any public IP addresses that are used internally. The
 
 The OT sensor software identifies the subnets within your system. However, you might need to correct some of the subnet settings or update the list of subnets. Any subnets that aren't listed and configured are considered external networks. All of the devices connected to a listed subnet are called *local* devices, while the devices connected to unlisted subnets are called *routed*.
 
-You can update the subnet settings using a .CSV file containing a new and complete list of all subnets, with the data formatted in a specific order. This update method requires the uploading of a .CSV file and is beyond the scope of this Learn Module. <!-- this can be removed, if it is beyond scope. what do you think? remove - LW-->
-
 The subnet settings are changed manually, either by changing the subnet data or adding a new subnet. To make changes, you need the subnet:
 
 - IP address <!-- <https://youtu.be/FbLhJZN1LdQ?si=xMBscEGQxGspzMSR&t=4635> this is class B, what does that mean?-->
