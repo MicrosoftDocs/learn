@@ -19,29 +19,17 @@ summary: |
 abstract: |
   In this module, you'll practice how to:
 
-  -
+  -   Create a GitHub account and an initial repository.
 
-  Create a GitHub account and an initial repository.
+  -   Configure software to interact with GitHub.
 
-  -
+  -   Use software to create a local version of your repository.
 
-  Configure software to interact with GitHub.
+  -   Update files locally, and then update the web-based repository.
 
-  -
+  -   Resolve conflicts in your repository.
 
-  Use software to create a local version of your repository.
-
-  -
-
-  Update files locally, and then update the web-based repository.
-
-  -
-
-  Resolve conflicts in your repository.
-
-  -
-
-  Merge all updates to a single repository branch.
+  -   Merge all updates to a single repository branch.
 prerequisites: A personal computer running Windows, macOS, or Linux.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
