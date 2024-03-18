@@ -39,7 +39,7 @@ products:
 - azure-sqlserver-vm
 - azure-sql-virtual-machines
 subjects:
-- database
+- databases
 units:
 - learn.wwl.sort-and-filter-queries.introduction
 - learn.wwl.sort-and-filter-queries.sort-your-data-as-its-returned
