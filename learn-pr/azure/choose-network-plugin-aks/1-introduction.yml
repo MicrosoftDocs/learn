@@ -4,7 +4,7 @@ title: Introduction
 metadata:
   unitType: introduction
   title: Introduction
-  description: "Learn how to choose an AKS network plugin"
+  description: "Learn how to choose an Azure Kubernetes Service (AKS) network plugin"
   ms.date: 03/18/2024
   author: schaffererin
   ms.author: schaffererin
