@@ -1,9 +1,9 @@
 
 To start using Microsoft Copilot for Security, organizations need to take steps to onboard the service and users. These include:
 
-1. Provision Copilot capacity
-1. Set up the default environment
-1. Assign role permissions
+- Provision Copilot capacity
+- Set up the default environment
+- Assign role permissions
 
 ### Provision capacity
 
@@ -67,7 +67,7 @@ During the setup of Copilot for Security, you are prompted to configure settings
 
 ### Role permissions
 
-To ensure that the users can access the fetaures of Copilot, they need to have the appropriate role permissions.
+To ensure that the users can access the features of Copilot, they need to have the appropriate role permissions.
 
 Permissions can be assigned using Microsoft Entra ID roles or Copilot for Security roles. As a best practice, provide the least privileged role applicable for each user.
 
