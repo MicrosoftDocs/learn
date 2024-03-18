@@ -29,7 +29,7 @@ products:
 - azure-sdks
 - ms-graph
 subjects:
-- data-ai
+- data-management
 units:
 - learn.wwl.microsoft-graph.introduction
 - learn.wwl.microsoft-graph.discover

@@ -30,7 +30,7 @@ products:
 - azure-sqlserver-vm
 - sql-server
 subjects:
-- database
+- databases
 units:
 - learn.wwl.understand-data-roles-services-products.introduction
 - learn.wwl.understand-data-roles-services-products.describe-data-product-categories

@@ -27,7 +27,7 @@ products:
 - azure-database-mysql
 - active-directory
 subjects:
-- database
+- databases
 units:
 - learn.wwl.secure-mysql.introduction
 - learn.wwl.secure-mysql.describe-authentication

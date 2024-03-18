@@ -24,7 +24,7 @@ roles:
 products:
 - azure-database-postgresql
 subjects:
-- database
+- databases
 units:
 - learn.wwl.understand-write-ahead-logging.introduction
 - learn.wwl.understand-write-ahead-logging.describe
