@@ -31,7 +31,7 @@ products:
 - azure-sqlserver-vm
 - sql-server
 subjects:
-- database
+- databases
 units:
 - learn.wwl.get-started-data-concepts.introduction
 - learn.wwl.get-started-data-concepts.get-started-data
