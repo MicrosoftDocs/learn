@@ -3,11 +3,11 @@ uid: learn.choose-best-networking-plugin-for-aks.analyze-decision-criteria
 title: Decision criteria
 metadata:
   unitType: learning-content
-  title: analyze-decision-criteria
-  description: "Learn about the decision criteria, tradeoffs, and considerations when choosing an AKS networking plugin."
-  ms.date: 03/23/2022
-  author: nickomang
-  ms.author: nickoman
+  title: Analyze decision criteria
+  description: "Learn about the decision criteria, tradeoffs, and considerations when choosing an Azure Kubernetes Service (AKS) networking plugin."
+  ms.date: 03/18/2024
+  author: schaffererin
+  ms.author: schaffererin
   ms.topic: unit
 durationInMinutes: 8
 content: |
