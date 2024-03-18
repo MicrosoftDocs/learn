@@ -28,7 +28,7 @@ roles:
 products:
 - azure
 subjects:
-- database
+- databases
 units:
 - learn.wwl.explore-provision-deploy-relational-database-offerings-azure.introduction
 - learn.wwl.explore-provision-deploy-relational-database-offerings-azure.describe-azure-sql
