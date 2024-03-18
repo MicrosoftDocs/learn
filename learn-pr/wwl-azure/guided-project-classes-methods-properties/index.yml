@@ -12,7 +12,7 @@ metadata:
   ms.service: dotnet-csharp
   ai-usage: ai-assisted
 title: 'Guided project: Implement, classes, methods, and properties'
-summary: This module guides you through the steps required to begin building the LangtonsAnts demonstration. It sets up the application and then begins adding the classes, methods, and properties the application requires. [!INCLUDE [](../../includes/wwl/guided-project-notes.md)] [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
+summary: This module guides you through the steps required to begin building the LangtonsAnts demonstration. It sets up the application and then begins adding the classes, methods, and properties the application requires. [!INCLUDE [](../../includes/wwl/guided-project-notes.md)]
 abstract: |
   After completing this module, you will be able to:
 
