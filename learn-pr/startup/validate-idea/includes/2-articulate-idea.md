@@ -18,9 +18,9 @@ Any product can be viewed as a thing that gets a specific job done for customers
 
 It's tempting to think of a product in terms of features, but it can be more useful to look at the jobs that it's going to do. Customers are more interested in what outcome your product can achieve for them than what the product itself is.
 
-This concept was pioneered by the late Professor Clayton Christensen from Harvard University. He studied a wide range of products and asked, "What valuable job is this doing for the customer?"
+The late Professor Clayton Christensen from Harvard University pioneered this concept by studying a wide range of products and asking, "What valuable job is this doing for the customer?"
 
-A classic example: If you buy a drill, the job you're interested in getting done is creating holes, which in turn might be because you want to mount a bookshelf on your wall. The job to be done by the drill is to create holes, which enables you to mount your bookshelf. As a customer, you're more interested in the outcome than the tool by which you achieve it.
+A classic example: If you buy a drill, the job you're interested in getting done is creating holes, which in turn might be because you want to mount a bookshelf on your wall. The job to be done by the drill is to create holes that enable you to mount your bookshelf. As a customer, you're more interested in the outcome than the tool by which you achieve it.
 
 The same concept can be applied to startups. If you think about your product from the customer's perspective, you can ask, "What job is it going to do for my customer?"
 
@@ -75,15 +75,15 @@ If you deliver a significant gain to customers, and it occurs quickly after they
 
 ## Task: Identify pains and gains
 
-Create a customer pains matrix and a customer gains matrix for your target customers. Talk to some customers and populate the matrices with the pains and gains they've told you about. Which pains or gains do you think you should try to address?
+Create a customer pains matrix and a customer gains matrix for your target customers. Talk to some customers and populate the matrices with the pains and gains they tell you about. Which pains or gains do you think you should try to address?
 
-Completing this quick task helps you get a feel for whether your product is viewed by customers as more of a pain reliever or a gain creator. This information is extremely useful when you start writing copy for your website or for other places where you describe your product and its value proposition.
+Completing this quick task helps you get a feel for whether customers view your product as more of a pain reliever or a gain creator. This information is extremely useful when you start writing copy for your website or for other places where you describe your product and its value proposition.
 
 ## Case study: Tylenol
 
-Let's use Tylenol as a brief case study to help us delve deeper into pains and gains. Of course, Tylenol is literally a pain reliever. The job that it does for customers is taking away a physical pain. At its most basic, the value proposition for Tylenol is pain relief.
+To help us delve deeper into pains and gains, let's use Tylenol as a brief case study. Tylenol is literally a pain reliever. The job that it does for customers is taking away a physical pain. At its most basic, the value proposition for Tylenol is pain relief.
 
-If you ask customers why they want the pain taken away, they'll often tell you that pain stops them from being productive in their day or makes it harder for them to be fully present with friends and family. Therefore, we could argue that Tylenol's real job is giving people back their day.
+If you ask customers why they want the pain taken away, they often tell you that pain stops them from being productive in their day. Or, it makes it harder for them to be fully present with friends and family. Therefore, we could argue that Tylenol's real job is giving people back their day.
 
 In the context of your own startup, make sure you're asking customers not just what functionality they want from your product, but also what outcome they want. Ask why they want the outcome, and how important the functionality is to them.
 
@@ -95,11 +95,11 @@ The purpose of the Value Proposition Canvas is to help you understand the needs 
 
 :::image type="content" source="../media/value-proposition-canvas.png" alt-text="Diagram that shows a gift box in a square with pain relievers, products, and gain creators. A circle next to the square has gains, pains, and customer jobs.":::
 
-To use the canvas, start by describing the customer segment that you're focusing on in the upper-right box. Then move down and populate each of the three segments with responses from customers about what jobs they need to get done, what pains they want to have relieved, and what gains they want to achieve.
+To use the canvas, start by describing the customer segment that you're focusing on in the upper-right box. Then move down and populate each of the three segments with responses from customers. Record their comments about what jobs they need to get done, what pains they want relieved, and what gains they want to achieve.
 
-After you've interviewed customers, you might start to see some trends in the jobs to be done, pains, and gains they describe, and in how important they perceive each of these elements to be. These trends should give you insights that will help you focus on the most important outcomes as you begin designing your value proposition.
+After you interview your customers, you might start to see some trends in the jobs to be done, pains, and gains they describe, and in how important they perceive each of these elements to be. These trends should give you insights that help you focus on the most important outcomes as you begin designing your value proposition.
 
-Now move to the left side of the canvas and design your value proposition. Populate each of the three segments by describing the product that you believe will get customers' key jobs done, how it will relieve their most important pains, and how it will achieve their most important gains.
+Now move to the left side of the canvas and design your value proposition. Populate each of the three segments by describing the product that you believe will get customers' key jobs done. Describe how it relieves their most important pains, and how it achieves their most important gains.
 
 ## Task: Complete your own Value Proposition Canvas
 

@@ -1,4 +1,4 @@
-So far in this module, we've focused on capturing and prioritizing your assumptions. In this unit and the next one, we'll focus on testing critical assumptions by using customer interviews and experiments.
+So far in this module, we focused on capturing and prioritizing your assumptions. In this unit and the next one, we focus on testing critical assumptions by using customer interviews and experiments.
 
 ## Planning and conducting customer interviews
 
@@ -12,7 +12,7 @@ To get the most out of customer interviews, it's important that you construct we
 
 - Ask open questions. For example: "How do you currently manage your finances across multiple bank accounts?"
 - Ask for stories. For example: "Can you tell me about the last time you tried to do this? How easy was it? Was there anything you wished you could do more easily?"
-- Let them do 80 percent of the talking. (That means you do 20 percent of the talking and a lot of listening.)
+- Let them do 80 percent of the talking. (That means you do 20 percent of the talking and much listening.)
 - Reflect back. For example: "It sounds like you generally export your bank feeds into a spreadsheet and manually combine them. Have I understood that correctly?"
 - Have a prepared set of interview questions that you ask every customer.
 - Delve into unexpected responses. For example: "That's interesting. Why did you decide to do it that way?"
