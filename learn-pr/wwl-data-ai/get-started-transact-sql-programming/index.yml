@@ -39,7 +39,7 @@ products:
 - sql-server
 subjects:
 - data-analytics
-- database
+- databases
 units:
 - learn.wwl.get-started-transact-sql-programming.introduction
 - learn.wwl.get-started-transact-sql-programming.describe-t-sql-for-programming

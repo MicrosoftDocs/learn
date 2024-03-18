@@ -9,7 +9,7 @@ Microsoft Copilot for Security is embedded in Microsoft Defender XDR to enable s
 - Analyze files
 - Device summary
 
-There are also some options that are common across all these features, including the ability to provide feedback on prompt responses and seamlessly moving to the standalone experience. 
+There are also some options that are common across all these features, including the ability to provide feedback on prompt responses and seamlessly moving to the standalone experience.
 
 As described in the introduction unit, in the embedded experience Copilot is able to invoke the product specific capabilities directly, providing processing efficiency. That said, to ensure access to these Microsoft Copilot for Security features, the Microsoft Defender XDR plugin needs to be enabled and this is done through the standalone experience. To learn more, refer to [Describe the features available in the standalone experience of Microsoft Copilot for Security](/training/modules/security-copilot-describe-core-features/2-describe-standalone-experience).
 
