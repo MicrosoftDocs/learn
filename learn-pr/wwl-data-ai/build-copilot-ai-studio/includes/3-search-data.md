@@ -13,7 +13,7 @@ Though there are different approaches to creating an index, the integration of A
 How you configure your search index depends on the data you have and the context you want your language model to use. For example, **keyword search** enables you to retrieve information that exactly matches the search query. **Semantic search** already takes it one step further by retrieving information that matches the meaning of the query instead of the exact keyword, using semantic models. Currently, the most advanced technique is **vector search**, which creates embeddings to represent your data.
 
 > [!Tip]
-> Learn more about [vector search](https://learn.microsoft.com/azure/search/vector-search-overview?azure-portal=true).
+> Learn more about [vector search](/azure/search/vector-search-overview?azure-portal=true).
 
 ### Understand embeddings
 
@@ -37,7 +37,7 @@ By representing words and their meanings with vectors, you can extract relevant 
 When you want to be able to use vector search to search your data, you need to create embeddings when creating your search index. To create embeddings for your search index, you can use an Azure OpenAI embedding model available in the Azure AI Studio.
 
 > [!Tip]
-> Learn more about [embeddings in the Azure OpenAI Service](https://learn.microsoft.com/azure/ai-services/openai/concepts/understand-embeddings?azure-portal=true).
+> Learn more about [embeddings in the Azure OpenAI Service](/azure/ai-services/openai/concepts/understand-embeddings?azure-portal=true).
 
 ### Understand hybrid search
 
@@ -46,6 +46,6 @@ When you create a search index in the Azure AI Studio, you're guided to configur
 Hybrid search is a combination of keyword (and full text), and vector search, to which semantic ranking is optionally added. When you create an index that is compatible with hybrid search, the retrieved information is precise when exact matches are available (using keywords), and still relevant when only conceptually similar information can be found (using vector search).
 
 > [!Tip]
-> Learn more about [hybrid search](https://learn.microsoft.com/azure/search/hybrid-search-overview?azure-portal=true).
+> Learn more about [hybrid search](/azure/search/hybrid-search-overview?azure-portal=true).
 
 After uploading data to the Azure AI Studio and creating an index on your data using the integration with Azure AI Search, you can add RAG to your chat by designing the copilot with prompt flow.

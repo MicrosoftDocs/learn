@@ -34992,6 +34992,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-azure/get-started-cloud-storage-for-iot/8-knowledge-check.md",
+      "redirect_url": "/training/modules/get-started-cloud-storage-for-iot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-started-cloud-storage-for-iot/9-summary.md",
+      "redirect_url": "/training/modules/get-started-cloud-storage-for-iot/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/10-microsoft-entra-id-authentication-verification-methods.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/manage-authentication-microsoft-entra-id/11-microsoft-entra-id-authentication-verification-methods",
       "redirect_document_id": false
@@ -35134,6 +35144,31 @@
     {
       "source_path": "learn-pr/azure/migrate-java-app-azure-app-service/8-summary.yml",
       "redirect_url": "https://azure.microsoft.com/resources/developers/java/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/5-security-alerts-incidents.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/15-security-alerts-incidents",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/6-automate-responses-microsoft-defender-cloud-triggers.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/16-automate-responses-microsoft-defender-cloud-triggers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/7-view-remediate-findings-from-vulnerability-assessments.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/17-view-remediate-findings-from-vulnerability-assessments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/18-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/19-summary",
       "redirect_document_id": false
     }
   ]

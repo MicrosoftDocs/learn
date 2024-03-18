@@ -29,7 +29,7 @@ Then, once you’re in the main branch, you can merge your updates into the main
 
 If you’re the only person that’s made updates to the file you’re attempting to merge, the process should go seamlessly (it’s a good idea to run a `git pull` before starting work).
 
-If other changes have been made, you’ll need to manage the conflict. Any files with a conflict will be updated to include both versions of content in a single file. If you open the file, you'll see your changes and current version of content (as it exists in the repo). You can manually update and re-commit the file, which will effectively complete the merge.<br>
+If other changes have been made, you’ll need to manage the conflict. Any files with a conflict will be updated to include both versions of content in a single file. If you open the file, you'll see your changes and current version of content (as it exists in the repo). You can manually update and re-commit the file, which will effectively complete the merge.
 
 :::image type="content" source="../media/git-merge-conflict-648b07bf.png" alt-text="Screenshot of the git merge command with conflict.":::
 
@@ -40,6 +40,10 @@ This is a training document.
 =======
 This is a note from a different branch in the same document.
 <p>:::blockquote-begin:::>>>>>> training:::blockquote-end:::</p>
+
+
+
+
 
 
 
