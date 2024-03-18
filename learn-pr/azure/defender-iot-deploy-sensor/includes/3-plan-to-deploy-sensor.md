@@ -31,7 +31,7 @@ Once the installation completes, the default network details are displayed in th
 Configure the sensor in a browser, and provide the sensor administrator username and password.
 
 The browser displays the **Defender for IoT | Overview** page, which leads you through the four stages of setting up the sensor. Each stage is displayed in its own tab.
-<!-- Ask to have this stage checked as I havent seen it yet.  where can we see a proper screen shot of this? check the titles of each section and how best to write these items based on that - add screenshot of the overview screen -->
+<!-- Ask to have this stage checked as I havent seen it yet.  where can we see a proper screen shot of this? check the titles of each section and how best to write these items based on that - add screenshot of the overview screen - send to theo-->
 
 ### Define network details
 

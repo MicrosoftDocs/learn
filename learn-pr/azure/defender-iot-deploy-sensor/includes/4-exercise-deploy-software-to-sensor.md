@@ -91,8 +91,8 @@ Open a browser in the VM.
 
 1. Select **Login**.
 
-The **Defender for IoT | Overview** <!-- I think this is the sensor Overview page?!--> page opens to the **Management interface** tab. Now you start to configure the settings.
-<!-- add screenshot of the Overview page here - can we get from THeo or Ariel or just leave this out?-->
+The **Sensor | Overview** <!-- I think this is the sensor Overview page?!--> page opens to the **Management interface** tab. Now you start to configure the settings.
+<!-- add screenshot of the Overview page here - can we get from THeo or Ariel or just leave this out? Ask QA - mark t. lawrence -->
 
 ### Define network details
 
