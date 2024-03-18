@@ -20,7 +20,7 @@ It's important to identify any public IP addresses that are used internally. The
 
 The OT sensor software identifies the subnets within your system. However, you might need to correct some of the subnet settings or update the list of subnets. Any subnets that aren't listed and configured are considered external networks. All of the devices connected to a listed subnet are called *local* devices, while the devices connected to unlisted subnets are called *routed*.
 
-You can update the subnet settings using a .CSV file containing a new and complete list of all subnets, with the data formatted in a specific order. This update method requires the uploading of a .CSV file and is beyond the scope of this Learn Module. <!-- this can be removed, if it is beyond scope. what do you think? - LW-->
+You can update the subnet settings using a .CSV file containing a new and complete list of all subnets, with the data formatted in a specific order. This update method requires the uploading of a .CSV file and is beyond the scope of this Learn Module. <!-- this can be removed, if it is beyond scope. what do you think? remove - LW-->
 
 The subnet settings are changed manually, either by changing the subnet data or adding a new subnet. To make changes, you need the subnet:
 
@@ -47,18 +47,18 @@ The *Important* setting is also useful to differentiate between similar types of
 The device appears in the device map with a star on it.
 
 ## Update device details
-<!-- is the authorized stuff relevant here? we wont be showing how to change it. maybe it should be removed? - LW -->
+<!-- is the authorized stuff relevant here? we wont be showing how to change it. maybe it should be removed? - LW this will be relevant for a later stage. but not for exercise. just a mention. -->
 When the sensor first receives network traffic it enters a state called the *Learning* stage. During the *learning* stage, all devices detected are identified as *authorized*. Meaning that the device was checked and approved as a recognized part of your system. Once the learning stage is completed, any new devices detected are logged as *unauthorized*, and must be fully checked before you update the status to *authorized*.
 
-You can also customize other parts of the data, such as the names assigned to the detected ports, the VLAN names, and the DHCP addresses. <!-- I am not sure about some of this, <https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/device-inventory#device-inventory-column-data> this seems a list of possible detail changes, which , if any should we choose, and how many should be update? -->
+You can also customize other parts of the data, such as the names assigned to the detected ports, the VLAN names, and the DHCP addresses. <!-- I am not sure about some of this, <https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/device-inventory#device-inventory-column-data> this seems a list of possible detail changes, which , if any should we choose, and how many should be update? Theo which of these would be typical to be changed for a user-->
 
 ## Merge devices
 
 In some cases, a device might be listed more than once. This could happen when a device has two or more connectors to the sensor, for example a laptop with both Wifi and a physical network card. In such a situation, you need to merge them together, using the **Merge** option. The new merged device listing contains all of the data from both merged devices.
-<!-- <https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-control-what-traffic-is-monitored#manually-define-a-subnet-as-ics> why would i define something as ICS, it doesnt explain here?-->
+<!-- <https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-control-what-traffic-is-monitored#manually-define-a-subnet-as-ics> why would i define something as ICS, it doesnt explain here? theo -->
 
 ## Smart IT learning
-<!-- not sure if this is worth keeping. -->
+<!-- not sure if this is worth keeping. mention for the future but not in exercise -->
 There's also a setting to continue a form of tracking the traffic even after the *Learning* stage is turned off, and *operational* mode starts. Activating the *Smart IT Learning* makes Defender for IoT send alerts when new suspicious traffic is tracked.
 <!-- <https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-manage-individual-sensors?tabs=ca-signed#turn-off-learning-mode-manually> -->
 <!-- also re read and make adjustments, also where will the items needed in the exercise unit be explained? THey should be here somewhere in the doc. Can use this page <https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/update-device-inventory#edit-device-properties-per-device> for images -->

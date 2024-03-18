@@ -12,8 +12,8 @@ First you must analyze the traffic being monitored by the OT sensor.
 1. Select **System setting** > **Deployment**.
 1. Select **Analyze** to start the subnet analysis process.
 
-This tracks each interface and devicethe sensor is monitoring and lists the subnet associated with each one. When the analysis is complete, you need to check that each interface is monitoring the correct traffic. <!-- what is the difference between interface and device? -->
-<!-- example of changing interfaces and sensor location -need to get proper feedback for how this is done, below is a placeholder-->
+This tracks each interface and devicethe sensor is monitoring and lists the subnet associated with each one. When the analysis is complete, you need to check that each interface is monitoring the correct traffic. <!-- what is the difference between interface and device? Theo -->
+<!-- example of changing interfaces and sensor location -need to get proper feedback for how this is done, below is a placeholder -->
 If you find a device incorrectly configured, make the following changes:
 
 1. Type new name
@@ -24,28 +24,21 @@ If you find a device incorrectly configured, make the following changes:
 
 ## Modify subnet data
 
-In the **Device inventory**, you can view the subnets grouped as either *local* or *routed*. All of the devices connected to a listed subnet are called *local* devices, while the devices connected to unlisted subnets are called *routed*. <!-- is this really important, and how do we find this in the filters?-->
+In the **Device inventory**, you can view the subnets grouped as either *local* or *routed*. All of the devices connected to a listed subnet are called *local* devices, while the devices connected to unlisted subnets are called *routed*. <!-- is this really important, theo-->
 
 1. Choose **Add filter**
 1. Choose **Network Location**
 1. Choose either **Local** or **Routed**
 
-<!--updating the subnets listed, where do they find this data? they should have it from the original network map!?-->
+<!--updating the subnets listed, where do they find this data? they should have it from the original network map!? theo-->
 
 To update the subnet data, adjust the subnet settings. These adjustments involve changing subnet addresses that change the location of a device within the sensor's device map.
 
 **To adjust subnet settings**
 
-1. Select **System settings > Basic > Subnets** <!-- I dont have to start with this - In the Sensor portal, ?? -LW-->
+1. Select **System settings > Basic > Subnets**
 1. In the **Subnets** pane, update a subnet by typing the new settings for each field, using the following options:
-<!-- I have removed the extra options that are not relevant for changing data, but for other actions etc. ANy other Options to remove?
-|**Import subnets**     | Import a .CSV file of subnet definitions. The subnet information is updated with the information that you imported. If you import an empty field, you lose the data in that field.       |
-|**Export subnets**     |  Export the currently listed subnets to a .CSV file.       |
-|**Clear all**     |  Clear all currently defined subnets.      |
-|**Resolve all Internet traffic as internal/private**     | Select to consider all public IP addresses as private, local addresses. If selected, public IP addresses are treated as local addresses, and alerts aren't sent about unauthorized internet activity.  <br><br>This option reduces notifications and alerts received about external addresses.      |
-|**Auto subnet learning**     |  Selected by default. Clear this option to prevent the sensor from detecting your subnets automatically. |
-| **Remove subnet** | Select to remove any subnets that aren't related to your IoT/OT network scope.|
--->
+
 |Name  |Description  |
 |---------|---------|
 | **IP address** | < Value > |
@@ -66,7 +59,7 @@ Once all changes are made, return to **System setting** > **Deployment** and run
 
 ## View detected devices
 
-All of the devices detected by the OT sensor appear in the Device inventory. Check the devices listed. To make changes to a device detail, select a specific item and then select **Edit**. <!-- this needs to be fixed, but need to discuss with LW first. how will we show this? -->
+All of the devices detected by the OT sensor appear in the Device inventory. Check the devices listed. To make changes to a device detail, select a specific item and then select **Edit**. <!-- this needs to be fixed, but need to discuss with LW first. how will we show this? Ask THeo for example -->
 You can update the following fields:
 
 1. Authorized device
@@ -80,7 +73,7 @@ You can update the following fields:
 
 Select **Save**.
 
-It's important to review the data for the **Name**, **Class**, **Type**, and **Subtype**, **Authorized device**, **Scanner device**, and **Programming device** columns.<!-- what does this refer to? the names of the settings do not match and the multiple choice option doesnt exist either?  Should Class be OS platform- this is the list in the Azure portal. not the sensor! So this is incorrect in the documentation and doesnt apply to the page about OT sensors!! <https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/update-device-inventory#view-your-device-inventory-on-the-azure-portal> Not all of the column fields are available. see screenshots.... I also dont know what this line in that section means?? 3. Understand the devices that the OT sensor's detected, and identify any sensors where you'll need to identify device properties. -->
+It's important to review the data for the **Name**, **Class**, **Type**, and **Subtype**, **Authorized device**, **Scanner device**, and **Programming device** columns.<!-- what does this refer to? the names of the settings do not match and the multiple choice option doesnt exist either?  Should Class be OS platform- this is the list in the Azure portal. not the sensor! So this is incorrect in the documentation and doesnt apply to the page about OT sensors!! <https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/update-device-inventory#view-your-device-inventory-on-the-azure-portal> Not all of the column fields are available. see screenshots.... I also dont know what this line in that section means?? 3. Understand the devices that the OT sensor's detected, and identify any sensors where you'll need to identify device properties. LW - put into new USer Story-->
 
 ## Update selected details - example exercise
 <!-- go over this, how to give examples of this??-->

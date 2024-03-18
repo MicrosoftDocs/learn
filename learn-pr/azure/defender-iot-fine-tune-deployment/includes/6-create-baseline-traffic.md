@@ -7,13 +7,12 @@ Defender for IoT is automatically set to the *Learning* mode as soon as it start
 To create the alert baseline, follow the triage process:
 
 1. Filter the alerts - by time, severity, or another parameter.
-<!--1. Group alerts - a different filter option based on the groups created in the device map or inventory sections. (Although we haven't mentioned this properly) - remove for LM -->
 1. Choose an alert, open the alert details pane, and analyze the alert information.
 1. Follow the **Remediation steps** to triage according to type of alert, and save your changes.
-<!-- 1. Optionally, check the raw data PCAP files. The files can be downloaded and assessed and then changes to the alerts made accordingly. - remove for LM add create suppression rules instead? -->
+<!-- 1. Optionally, check the raw data PCAP files. The files can be downloaded and assessed and then changes to the alerts made accordingly. - remove for LM add create suppression rules instead? ask Amit/Meir - how often are pcap files used? is it important to demonstrate. -->
 
 ## Triage your alerts
-<!-- How do we triage the alerts, just describe doing this with an example we have in screenshots, and tell them to look for their own and ones on their system - LW-->
+<!-- How do we triage the alerts, just describe doing this with an example we have in screenshots, and tell them to look for their own and ones on their system - LW - decide the skill and then show the alert - Amit-->
 In the **Alert details** page, a set of remediation steps are listed in order to triage the alert. When the alert is correct and requires a security response the remediation steps set out the best options available. If this isn't a real problem, select the Learn button, and the sensor learns that this network traffic shouldn't trigger an alert again. Making these changes is called the triage process.
 
 ### Filter and group alerts
