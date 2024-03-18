@@ -34,7 +34,7 @@ Note this object since you'll need to add it to your GitHub secrets.
 
 ## Creating a GitHub secret
 
-In your GitHub repository, navigate to **Settings** > **Secrets** > **Actions**. Create a new secret called `AZURE_CREDENTIALS` and paste the entire JSON object you got from the previous step.
+In your GitHub repository, navigate to **Settings** &gt; **Secrets** &gt; **Actions**. Create a new secret called `AZURE_CREDENTIALS` and paste the entire JSON object you got from the previous step.
 
 Create another secret for the name of the resource group with a name such as `AZURE_RG` and one for the subscription.
 
@@ -43,11 +43,11 @@ Create another secret for the name of the resource group with a name such as `AZ
 
 ## Creating a GitHub action
 
-1. First, navigate to your repository and select the Actions menu. Then, set up a workflow to create an empty workflow in your repository. You can rename the file to a different name if you prefer.
+1.  First, navigate to your repository and select the Actions menu. Then, set up a workflow to create an empty workflow in your repository. You can rename the file to a different name if you prefer.
     
     :::image type="content" source="../media/github-new-file-f123693e.jpg" alt-text="Screenshot of GitHub new file creation, edit and preview.":::
     
-1. Replace the content of the file with the following snippet:
+2.  Replace the content of the file with the following snippet:
     
     ```YAML
     on: [push]
@@ -79,15 +79,15 @@ Create another secret for the name of the resource group with a name such as `AZ
     
     > [!NOTE]
     > The first part of the workflow defines the trigger and its name. The rest defines a job and uses a few tasks to check out the code, sign in to Azure, and deploy the Bicep file.
-1. Select **Start commit**, and enter a title and a description in the pop-up dialog. Then select **Commit directly to the main branch**, followed by **Commit a new file**.
+3.  Select **Start commit**, and enter a title and a description in the pop-up dialog. Then select **Commit directly to the main branch**, followed by **Commit a new file**.
     
     :::image type="content" source="../media/github-commit-action-ee701105.jpg" alt-text="Screenshot of GitHub commits a new file to the main branch.":::
     
-1. Navigate to the Actions tab and select the newly created action that should be running.
+4.  Navigate to the Actions tab and select the newly created action that should be running.
     
     :::image type="content" source="../media/github-action-run-caf8225d.jpg" alt-text="Screenshot of GitHub action running and deploying.":::
     
-1. Monitor the status and when the job is finished, check the Azure portal to see if the storage account is being created.
+5.  Monitor the status and when the job is finished, check the Azure portal to see if the storage account is being created.
     
     :::image type="content" source="../media/github-success-job-eb496fe9.jpg" alt-text="Screenshot of GitHub action successful executed job.":::
     
