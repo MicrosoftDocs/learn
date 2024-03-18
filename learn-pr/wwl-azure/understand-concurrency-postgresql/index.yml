@@ -26,7 +26,7 @@ roles:
 products:
 - azure-database-postgresql
 subjects:
-- database
+- databases
 units:
 - learn.wwl.understand-concurrency-postgresql.introduction
 - learn.wwl.understand-concurrency-postgresql.understand-multi-version-concurrency-control-snapshots
