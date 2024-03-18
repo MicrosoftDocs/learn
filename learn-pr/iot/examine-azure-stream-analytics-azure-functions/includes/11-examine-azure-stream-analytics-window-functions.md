@@ -20,7 +20,7 @@ Hopping window functions hop forward in time by a fixed period. It may be easy t
 
 ## Sliding window
 
-Sliding windows, unlike tumbling or hopping windows, output events only for points in time when the content of the window actually changes. In other words, when an event enters or exits the window. So, every window has at least one event. Similar to hopping windows, events can belong to more than one sliding window.
+Sliding windows, unlike tumbling or hopping windows, output events only for points in time when the content of the window actually changes — in other words, when an event enters or exits the window. So, every window has at least one event. Similar to hopping windows, events can belong to more than one sliding window.
 
 :::image type="content" source="../media/m04-l05-stream-analytics-window-functions-sliding-intro-b6ea8ae0.png" alt-text="Diagram that shows the key differentiators of a Sliding window.":::
 
