@@ -4,12 +4,10 @@ title: Use Common Table Expressions
 metadata:
   title: Use Common Table Expressions
   description: "Use Common Table Expressions"
-  ms.date: 04/12/2023
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
-labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/5-use-common-table-expressions.md)]
