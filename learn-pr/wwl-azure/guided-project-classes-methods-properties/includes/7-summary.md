@@ -9,3 +9,4 @@ You should now be able to do the following:
 - Read user input using a loop.
 
 By following along, breaking down the problem, and thinking about the goals of the application you were able to use some of your newly acquired skills to get started building Langton's Ant. Congratulations on taking this first big step!
+  

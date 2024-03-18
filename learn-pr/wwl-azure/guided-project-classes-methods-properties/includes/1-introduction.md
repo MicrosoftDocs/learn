@@ -11,9 +11,3 @@ By the end of this module, you'll be able to write code that uses classes, prope
 
 > [!NOTE]
 > This is a guided project module where you complete an end-to-end project by following step-by-step instructions.
-
-## Learning objectives in this module
-
-- Create a console application.
-- Create an Ant class, add properties and methods, and a constructor.
-- Read user input in a loop.
