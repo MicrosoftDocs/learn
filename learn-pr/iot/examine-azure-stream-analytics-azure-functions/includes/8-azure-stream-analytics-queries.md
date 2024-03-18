@@ -95,7 +95,7 @@ For this example, the input stream includes the make of the car, the time when t
 
 #### Explanation
 
-We use a CAST statement in the Weight field to specify its data type.
+We use a CAST statement in the `Weight` field to specify its data type.
 
 ### Pattern 2 - Send data to multiple outputs
 
@@ -156,6 +156,6 @@ In this example, the input stream includes the make of a car and the time when t
 
 #### Explanation
 
-The INTO clause tells Stream Analytics the outputs to write the data to from this statement. The first query is a pass-through of the data received to an output named ArchiveOutput. The second query does some simple aggregation and filtering, and it sends the results to a downstream alerting system, AlertOutput.
+The INTO clause tells Stream Analytics the outputs to write the data to from this statement. The first query is a pass-through of the data received to an output named `ArchiveOutput`. The second query does some simple aggregation and filtering, and it sends the results to a downstream alerting system, `AlertOutput`.
 
 The full Stream Analytics query language reference guide can be found here: [Stream Analytics Query Language Reference](/stream-analytics-query/stream-analytics-query-language-reference).
