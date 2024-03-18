@@ -18,7 +18,7 @@ quiz:
   questions:
   - content: "Which of the security rules defined by the infrastructure team takes precedence?"
     choices:
-    - content: "The allow rule takes precedence."
+    - content: "The allowed rule takes precedence."
       isCorrect: false
       explanation: "Incorrect. Rules are processed according to the specified priority."
     - content: "The deny rule takes precedence."
@@ -31,13 +31,13 @@ quiz:
     choices:
     - content: "By encrypting virtual network traffic."
       isCorrect: false
-      explanation: "incorrect choice"
+      explanation: "Incorrect. ASGs don't encrypt network traffic."
     - content: "By applying anti-virus software."
       isCorrect: false
       explanation: "Incorrect. ASGs don't install anti-virus software."
     - content: "By grouping virtual machines according to their functions."
       isCorrect: true
-      explanation: "Correct. ASGs allow administrators to group VMs based on their roles or functions, enabling more efficient and targeted security rule application, thus improving overall security posture and management efficiency."
+      explanation: "Correct. ASGs allow administrators to group VMs based on their roles or functions."
   - content: "What happens to network traffic that doesn't match any NSG rules?"
     choices:
     - content: "It's allowed by default."
@@ -45,7 +45,7 @@ quiz:
       explanation: "Incorrect. Allowing traffic by default would pose a security risk."
     - content: "It's denied by default."
       isCorrect: false
-      explanation: "Correct. By default, network traffic that doesn't match any Network Security Group (NSG) rules is denied. This ensures that any traffic not explicitly allowed is blocked and helps maintain a secure network environment."
-    - content: "It's logged for analysis"
+      explanation: "Correct. By default, network traffic that doesn't match any Network Security Group (NSG) rules is denied."
+    - content: "It's postponed until the rules change."
       isCorrect: false
-      explanation: "Incorrect. NSGs don't log traffic by default, but logging can be enabled for further analysis."
+      explanation: "Incorrect. NSGs don't postpone network traffic."
