@@ -4,14 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/14/2021
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
-labModal: false
 durationInMinutes: 4
 quiz:
+  title: ""
   questions:
   - content: "Which elements do you need to provide to the PIVOT operator?"
     choices:
@@ -39,10 +38,10 @@ quiz:
     choices:
     - content: "Unpivoting can't restore the original data."
       isCorrect: true
-      explanation: "Correct."
+      explanation: "Correct. The original data won't be restored."
     - content: "The data is unpivoted, and the original detail rows are restored."
       isCorrect: false
       explanation: "Incorrect. This won't restore the original data."
-    - content: "The data is unpivoted, but you will then need to use CUBE  to restore the original detail rows."
+    - content: "The data is unpivoted, but you'll then need to use CUBE  to restore the original detail rows."
       isCorrect: false
       explanation: "Incorrect. Using CUBE won't restore the original data."

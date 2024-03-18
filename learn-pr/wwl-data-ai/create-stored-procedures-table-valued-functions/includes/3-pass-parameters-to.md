@@ -42,7 +42,7 @@ Check that parameters are of the correct data type. For example, if a procedure 
 
 You can view parameter names and data types in Azure Data Studio or SQL Server Management Studio (SSMS). Expand the list of database objects until you see the **Stored Procedures** folder, beneath the **Programmability** folder.
 
-:::image type="content" source ="../media/parameter.png" alt-text ="Expand the Programming folder to view stored procedures and parameter data types":::
+:::image type="content" source ="../media/parameter.png" alt-text ="Diagram showing the Expand the Programming folder to view stored procedures and parameter data types.":::
 
 Stored procedures two-part names are displayed, together with a Parameters folder that contains for each parameter:
 
