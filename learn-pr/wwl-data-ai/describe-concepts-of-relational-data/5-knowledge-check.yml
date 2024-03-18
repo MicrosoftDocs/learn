@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: "All data must be stored as character strings."
       isCorrect: false
-      explanation: "That's incorrect. Relational databases enable you store text, numeric, and other types of data."
+      explanation: "That's incorrect. Relational databases enable you to store text, numeric, and other types of data."
     - content: "A row in a table represents a set of related data."
       isCorrect: true
       explanation: "That's correct. Each row in a table contains the data for a single entity in that table."
