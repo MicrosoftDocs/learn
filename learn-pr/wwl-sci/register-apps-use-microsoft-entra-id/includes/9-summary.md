@@ -1,4 +1,4 @@
-App registration in Microsoft Entra ID is the process of ensuring that your identity system is aware of what applications are used. Registering an app provides an identity configuration for your application that allows it to integrate with the Microsoft identity platform. Benefits of registering an app include:
+App registration in Microsoft Entra ID, is the process of ensuring that your identity system is aware of what applications are used. Registering an app provides an identity configuration for your application that allows it to integrate with the Microsoft identity platform. Benefits of registering an app include:
 
  -  Customizing the branding of your application within the sign-in dialog box.
  -  Deciding if you want to allow users to sign in only if they belong to your organization.
