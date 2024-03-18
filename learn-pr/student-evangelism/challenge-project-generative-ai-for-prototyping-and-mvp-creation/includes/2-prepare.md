@@ -1,15 +1,15 @@
 
 ## Use 'Split Screen' to work side by side.
 
-Put the Challenge project on one side and Bing chat on the other  to work simultaneously. We set up the two browser windows to work side by side throughout this challenge.
+Put the Challenge project on one side and Copilot with Bing on the other  to work simultaneously. We set up the two browser windows to work side by side throughout this challenge.
 
 ![Screenshot showing a split screen between two browser windows being used to work side by side throughout a challenge.](./media/split-screen.png)
 
-## Go to Bing Chat
+## Go to Copilot with Bing
 
-Open Bing Chat in your personal profile [https://www.bing.com/new](https://www.bing.com/new).
+Open Copilot with Bing in your personal profile [https://www.bing.com/new](https://www.bing.com/new).
 
-![Screenshot showing Bing chat interface.](./media/bing-chat.png)
+![Screenshot showing Copilot with Bing interface.](./media/bing-chat.png)
 
 Click  **Chat now.**
 
