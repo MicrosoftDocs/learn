@@ -1,5 +1,5 @@
 
-Knowledge base (KB) connections, a feature of Microsoft Copilot for Security currently in preview, allows you to integrate your organization’s knowledge base as an another source of information. The inclusion of knowledge bases gives Copilot more context, resulting in responses that are more relevant, specific, and customized to your organization.
+Knowledge base (KB) connections, a feature of Microsoft Copilot for Security currently in preview, allows you to integrate your organization’s knowledge base as another source of information. The inclusion of knowledge bases gives Copilot more context, resulting in responses that are more relevant, specific, and customized to your organization.
 
 There are two ways to integrate KBs into Copilot:
 
@@ -35,7 +35,7 @@ Azure AI Search is a service that enables you to effectively search, retrieve in
 
 Through the Azure AI Search plugin, you can bring own index as a searchable source that you can query using prompts in the Copilot prompt bar.
 
-Before you setup the connection to your existing Azure AI index, verify the following:
+Before you set up the connection to your existing Azure AI index, verify the following:
 
 - The Azure AI Search index is set up for vectorization using the text-embedding-ada-002 model. Refer to [Quickstart: Integrated vectorization (preview)](/azure/search/search-get-started-portal-import-vectors)
 - The text field in your index must be searchable.
@@ -49,13 +49,13 @@ To create the connection to an existing Azure AI Search index, configure the Azu
 
 1. The parameters that you configure for the plugin map to information for the Azure AI Search instance, the index within search instance that will be searched, and the fields associated with the index.
 
-    1. Azure AI Search instance – the name of your search instance.
-    1. Index – the name of the index, within your Azure AI search instance, that will be searched.
-    1. Vector – the name of the field in the index containing the vector of embeddings.
-    1. Text – the name of the field in the index containing the text to search.
-    1. Title – the title of each document to display as a source (optional).
-    1. URL – the URL of each document to display as a source (optional).
-    1. Value – the access identifier for API authentication.
+    - Azure AI Search instance – the name of your search instance.
+    - Index – the name of the index, within your Azure AI search instance, that will be searched.
+    - Vector – the name of the field in the index containing the vector of embeddings.
+    - Text – the name of the field in the index containing the text to search.
+    - Title – the title of each document to display as a source (optional).
+    - URL – the URL of each document to display as a source (optional).
+    - Value – the access identifier for API authentication.
 
    :::image type="content" source="../media/azure-ai-search-plugin-settings.png" lightbox="../media/azure-ai-search-plugin-settings.png" alt-text="Screen capture of the Azure AI Search plugin parameters.":::
 

@@ -17,11 +17,11 @@ To view the system capabilities supported by the enabled plugins, you enter the 
 
 As described in the previous unit, each system capability is itself a prompt suggestion. The list is extensive and also includes some capabilities that aren't associated with any of the plugins listed on the Manage plugins menu. These capabilities are generally available and are grouped by their descriptor, such as Generic capabilities and Fusion capabilities.
 
-The sections that follow provide brief descriptions for many of the available Microsoft plugins.  Microsoft Copilot for Security is continually adding support for Microsoft products.
+The sections that follow provide brief descriptions for many of the available Microsoft plugins. Microsoft Copilot for Security is continually adding support for Microsoft products.
 
 #### Azure AI Search (Preview)
 
-The Azure AI Search plugin allows you to connect your company’s knowledge bases or repositories to Microsoft Copilot for Security.  Details on this plugin and connections to knowledge bases is described in a subequent unit of this module.
+The Azure AI Search plugin allows you to connect your company’s knowledge bases or repositories to Microsoft Copilot for Security. Details on this plugin and connections to knowledge bases is described in a subsequent unit of this module.
 
 #### Entra
 
@@ -86,7 +86,7 @@ The Microsoft Defender XDR plugin includes capabilities that enable users to:
 - Analyze files
 - more...
 
-With the plugin enabled, Copilot integration with Defender XDR can be experienced through the standalone or embedded experiences.  The scenarios supported through the embedded experience are described in more detail in the module titled, "Describe Microsoft Copilot in Microsoft Defender XDR."
+With the plugin enabled, Copilot integration with Defender XDR can be experienced through the standalone or embedded experiences. The scenarios supported through the embedded experience are described in more detail in the module titled, "Describe Microsoft Copilot in Microsoft Defender XDR."
 
 ***Natural language to KQL Defender plugin***
 
@@ -153,7 +153,7 @@ Some sample prompts include:
 - Share the technologies that are susceptible to the vulnerability - CVE-2021-44228.
 - Summarize the vulnerability CVE-2021-44228.
 
-For more information, visit [Microsoft Copilot for Security and Microsoft Defender Threat Intelligence](/defender/threat-intelligence/security-copilot-and-defender-threat-intelligence)
+For more information, visit [Microsoft Copilot for Security and Microsoft Defender Threat Intelligence](/defender/threat-intelligence/security-copilot-and-defender-threat-intelligence).
 
 #### Microsoft Purview
 
@@ -163,7 +163,7 @@ The Purview plugin in Copilot for Security, enables you to gain valuable data an
 
 The screen capture that follows shows only a subset of the capabilities supported by the Purview plugin.
 
-:::image type="content" source="../media/purview-plugin-capabilities.png" lightbox="../media/purview-plugin-capabilities.png" alt-text="Screen capture of the Purview capabilities..":::
+:::image type="content" source="../media/purview-plugin-capabilities.png" lightbox="../media/purview-plugin-capabilities.png" alt-text="Screen capture of the Purview capabilities.":::
 
 With the plugin enabled, Copilot integration with Purview can be experienced through the standalone or embedded experiences. In either case and because Microsoft  Copilot assumes the permissions of the user when it tries to access the data to answer the queries, you need to have the required permissions to access the data. Also, your organization must be licensed and onboarded to the applicable Microsoft Purview solutions. 
 

@@ -25,7 +25,7 @@ From the home menu, the user can navigate as follows:
 
 - The promptbook library, which includes promptbooks builtin and custom promptbooks. Information about each promptbook is provided, including the description, the required inputs, the number of prompts, the owner, and more. From the promptbook library you can run the selected promptbook by selecting the run icon. You can also select the ellipses for more options.
 
-    :::image type="content" source="../media/promptbook-library.png" lightbox="../media/promptbook-library.png" alt-text="Screen capture listing the promptbook library.":::
+    :::image type="content" source="../media/promptbook-library-v2.png" lightbox="../media/promptbook-library-v2.png" alt-text="Screen capture listing the promptbook library.":::
 
 - Owner specific options, for users configured as owners:
 
