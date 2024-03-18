@@ -40,7 +40,7 @@ products:
  - vs-code
 
 subjects:
-  - digital-application-innovation
+  - app-development
 
 units:
 - learn.edit-code-using-any-device.introduction
