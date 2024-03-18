@@ -8,8 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
-  ms.custom:
-  - N/A
 durationInMinutes: 9
 content: |
   [!include[](includes/7-create-triggers-data-activator.md)]

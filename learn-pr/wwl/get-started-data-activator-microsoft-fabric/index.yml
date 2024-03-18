@@ -7,12 +7,10 @@ metadata:
   author: wwlpublish
   ms.author: calopez
   ms.topic: module-standard-task-based
-  ms.custom:
-  - N/A
   ms.service: fabric
   ai-usage: ai-assisted
 title: Get started with Data Activator in Microsoft Fabric
-summary: Use Data Activator in Microsoft Fabric to easily monitor and take action on your data. [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
+summary: Use Data Activator in Microsoft Fabric to easily monitor and take action on your data.
 abstract: |
   -   Understand Data Activator
 
