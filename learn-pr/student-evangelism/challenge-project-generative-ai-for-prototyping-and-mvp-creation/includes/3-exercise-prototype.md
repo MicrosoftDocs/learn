@@ -5,7 +5,7 @@ Now that you completed your brainstorming/ideation and used Microsoft Copilot in
 
 ### Steps
 
-1. Copy the sample prompt provided and edit it to add your refined idea one-paragraph summary from [unit 4](https://learn.microsoft.com/en-us/training/modules/challenge-project-ideate-business-with-ai/4-refine-your-idea-with-ai) of the previous challenge.
+1. Copy the sample prompt provided and edit it to add your refined idea one-paragraph summary from [unit 4](https://learn.microsoft.com/training/modules/challenge-project-ideate-business-with-ai/4-refine-your-idea-with-ai) of the previous challenge.
 1. Paste it into Microsoft Copilot.
 
 **Sample prompt**
