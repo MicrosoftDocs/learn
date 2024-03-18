@@ -26,7 +26,7 @@ roles:
 products:
 - azure
 subjects:
-- database
+- databases
 units:
 - learn.wwl.describe-concepts-of-relational-data.introduction
 - learn.wwl.describe-concepts-of-relational-data.explore-characteristics
