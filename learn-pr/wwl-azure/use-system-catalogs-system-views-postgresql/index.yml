@@ -25,7 +25,7 @@ roles:
 products:
 - azure-database-postgresql
 subjects:
-- database
+- databases
 units:
 - learn.wwl.use-system-catalogs-system-views-postgresql.introduction
 - learn.wwl.use-system-catalogs-system-views-postgresql.overview-of-system-catalogs-views
