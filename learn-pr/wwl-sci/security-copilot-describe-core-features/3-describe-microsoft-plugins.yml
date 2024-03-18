@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
-  ms.service: security-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/3-describe-microsoft-plugins.md)]
