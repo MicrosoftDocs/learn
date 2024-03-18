@@ -37,7 +37,7 @@ Through the Azure AI Search plugin, you can bring own index as a searchable sour
 
 Before you set up the connection to your existing Azure AI index, verify the following:
 
-- The Azure AI Search index is set up for vectorization using the text-embedding-ada-002 model. Refer to [Quickstart: Integrated vectorization (preview)](/azure/search/search-get-started-portal-import-vectors)
+- The Azure AI Search index is set up for vectorization for use with the text-embedding-ada-002 model. Refer to [Quickstart: Integrated vectorization (preview)](/azure/search/search-get-started-portal-import-vectors)
 - The text field in your index must be searchable.
 - The title field in your index must be filterable.
 
@@ -52,7 +52,7 @@ To create the connection to an existing Azure AI Search index, configure the Azu
     - Azure AI Search instance – the name of your search instance.
     - Index – the name of the index, within your Azure AI search instance, that will be searched.
     - Vector – the name of the field in the index containing the vector of embeddings.
-    - Text – the name of the field in the index containing the text to search.
+    - Text – the name of the field in the index containing the text to search.  If your index was created using the Import and vectorize data wizard, the name of the field containing the text to search may be referred to as chunk, as a default. The reason is that the wizard will chunk your data so that it does not exceed the token limit size of the embedding model.  The default index field name, chunk, is referring to a chunk of text.
     - Title – the title of each document to display as a source (optional).
     - URL – the URL of each document to display as a source (optional).
     - Value – the access identifier for API authentication.
@@ -79,7 +79,7 @@ To create the connection to an existing Azure AI Search index, configure the Azu
 
 1. Select the index whose name you entered in plugin settings page. this opens the index page. From here, select the fields tab.
 
-1. The fields tab shows the field names for the index. What is shown here may be different than what is shown for your index. Work with the admin who manages your Azure AI Search service for guidance, as needed.
+1. The fields tab shows the field names for the index. The field names for the example index named "knowledge-base-bloc-index" and shown in the image that follows may be different than what is shown for your index. Work with the admin who manages your Azure AI Search service for guidance, as needed.
 
       :::image type="content" source="../media/chunk-vector-title-settings.png" lightbox="../media/chunk-vector-title-settings.png" alt-text="Screen capture of the Azure AI Search index field names pointing to the corresponding fields in the plugin parameters window.":::
 
