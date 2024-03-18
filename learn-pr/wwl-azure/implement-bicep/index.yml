@@ -10,6 +10,7 @@ metadata:
   ms.custom:
   - N/A
   ms.service: azure
+  ai-usage: human-only
 title: Implement Bicep
 summary: This module explains Bicep and how it integrates with different tools such as Azure CLI and Visual Studio Code for environment deployment configuration.
 abstract: |
