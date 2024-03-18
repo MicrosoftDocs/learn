@@ -4,10 +4,12 @@ title: Explore analytical data stores
 metadata:
   title: Explore analytical data stores
   description: "Explore analytical data stores"
-  ms.date: 12/19/2023
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/4-analytical-data-stores.md)]
