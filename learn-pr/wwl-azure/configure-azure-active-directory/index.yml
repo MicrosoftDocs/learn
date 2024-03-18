@@ -16,25 +16,16 @@ summary: Learn how to configure Microsoft Entra ID, including features like Micr
 abstract: |
   In this module, you learn how to:
 
-  -
+  - Define Microsoft Entra concepts, including identities, accounts, and tenants.
 
-  Define Microsoft Entra concepts, including identities, accounts, and tenants.
+  - Describe Microsoft Entra features to support different configurations.
 
-  -
+  - Understand differences between Microsoft Entra ID and Active Directory Domain Services (AD DS).
 
-  Describe Microsoft Entra features to support different configurations.
+  - Choose between supported editions of Microsoft Entra ID.
 
-  -
-
-  Understand differences between Microsoft Entra ID and Active Directory Domain Services (AD DS).
-
-  -
-
-  Choose between supported editions of Microsoft Entra ID.
-
-  -
-
-  Use the Microsoft Entra self-service password reset feature.
+  - Use the Microsoft Entra self-service password reset feature.
+  
 prerequisites: None
 iconUrl: /training/achievements/azure-active-directory.svg
 levels:
