@@ -20,7 +20,7 @@ prerequisites: |
   -	A Defender for IoT license with an [OT plan](/azure/defender-for-iot/organizations/getting-started)
   - Knowledge of deployment planning concepts for Defender for IoT, such as sites and zones OT sensor parameters
   - Details of the specific site and zone needed to assign to the sensor 
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/defender-for-iot/defender-iot-onboard-sensor.svg
 levels: 
   - intermediate
 roles:
