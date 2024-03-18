@@ -8,8 +8,7 @@ metadata:
   ms.date: 03/18/2024
   author: schaffererin
   ms.author: schaffererin
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
 quiz:

@@ -9,7 +9,6 @@ metadata:
   author: schaffererin
   ms.author: schaffererin
   ms.topic: unit
-  ms.service: azure
 durationInMinutes: 2
 content: |
   [!include[](includes/4-use-scenario.md)]
