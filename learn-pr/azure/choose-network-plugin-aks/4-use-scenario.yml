@@ -4,10 +4,10 @@ title: Usage scenarios
 metadata:
   unitType: learning-content
   title: use-scenario
-  description: "Learn about when to use the kubenet and Azure CNI network plugin for AKS."
-  ms.date: 03/23/2022
-  author: nickomang
-  ms.author: nickoman
+  description: "Learn about when to use the kubenet and Azure CNI network plugins for AKS."
+  ms.date: 03/18/2024
+  author: schaffererin
+  ms.author: schaffererin
   ms.topic: unit
   ms.service: azure
 durationInMinutes: 2

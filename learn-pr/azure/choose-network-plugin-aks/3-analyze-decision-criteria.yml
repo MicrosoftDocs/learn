@@ -5,9 +5,9 @@ metadata:
   unitType: learning-content
   title: analyze-decision-criteria
   description: "Learn about the decision criteria, tradeoffs, and considerations when choosing an AKS networking plugin."
-  ms.date: 03/23/2022
-  author: nickomang
-  ms.author: nickoman
+  ms.date: 03/18/2024
+  author: schaffererin
+  ms.author: schaffererin
   ms.topic: unit
 durationInMinutes: 8
 content: |

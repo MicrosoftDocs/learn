@@ -5,9 +5,9 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: "Check your knowledge on choosing an AKS networking plugin."
-  ms.date: 03/23/2022
-  author: nickomang
-  ms.author: nickoman
+  ms.date: 03/18/2024
+  author: schaffererin
+  ms.author: schaffererin
   ms.topic: interactive-tutorial
   ms.service: azure
 durationInMinutes: 2
