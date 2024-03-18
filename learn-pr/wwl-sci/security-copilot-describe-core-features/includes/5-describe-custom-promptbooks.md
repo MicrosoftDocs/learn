@@ -4,9 +4,11 @@ You can create your own promptbook with the promptbook builder to automate inves
 
 ### Create a promptbook from an existing session
 
-To create your own promptbook, you can start with an existing session that contains the prompts you want to work with.
+To create your own promptbook, you can start with an existing session that contains the prompts you want to work with.  For this example, the session titled, "Show the last three failed login attempts," is used.
 
-Select the boxes beside the prompts to include them or select the top box to include all prompts in the session. Selecting any or all of the prompts light up the Create promptbook button.
+:::image type="content" source="../media/select-session.png" lightbox="../media/select-session.png" alt-text="Screen capture showing the session to use as the basis for your custom promptbook.":::
+
+After selecting the desired session, select the boxes beside the prompts to include them or select the top box to include all prompts in the session. Selecting any or all of the prompts light up the Create promptbook button.
 
 :::image type="content" source="../media/select-create-promptbook-v4.png" lightbox="../media/select-create-promptbook-v4.png" alt-text="Screen capture of the create promptbook icon.":::
 
