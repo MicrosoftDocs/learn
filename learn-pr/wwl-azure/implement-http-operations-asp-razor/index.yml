@@ -33,8 +33,6 @@ roles:
 products:
 - aspnet-core
 - dotnet
-subjects:
-- development-tools
 units:
 - learn.wwl.implement-http-operations-asp-razor.introduction
 - learn.wwl.implement-http-operations-asp-razor.explore-http-clients

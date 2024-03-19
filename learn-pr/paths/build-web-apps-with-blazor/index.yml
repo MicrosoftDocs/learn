@@ -23,8 +23,6 @@ products:
 - blazor
 - aspnet-core
 - dotnet
-subjects:
-- development-tools
 modules:
 - learn.intro-to-blazor
 - learn.build-web-app-blazor-webassembly-vscode

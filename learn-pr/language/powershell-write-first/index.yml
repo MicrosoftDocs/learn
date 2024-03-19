@@ -26,8 +26,6 @@ products:
 - dotnet
 languages:
 - powershell
-subjects:
-- development-tools
 units:
 - learn.languages.powershell-write-first.introduction
 - learn.languages.powershell-write-first.exercise-hello-world
