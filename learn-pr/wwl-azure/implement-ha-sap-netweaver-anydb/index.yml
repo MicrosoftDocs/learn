@@ -12,7 +12,7 @@ metadata:
 title: Implement high availability in SAP NetWeaver with AnyDB on Azure virtual machines
 summary: SAP professionals need to evaluate deploying SAP solutions on Azure. This module explores the preparation for SAP NetWeaver high availability AnyDB deployment on Azure.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
 
   -   Examine single SID 3-tier SAP NetWeaver high availability AnyDB deployment.
 
