@@ -50,7 +50,7 @@ If the service doesn't exist, the Azure Extension for SAP isn't installed correc
 
 ### Issue
 
-The **AzureEnhancedMonitoring** Windows service exists and is enabled, but fails to start. For more information, check the application event log.
+The **AzureEnhancedMonitoring** Windows service exists and is enabled, but fails to start. For more information, check the Application event log.
 
 ### Solution
 
