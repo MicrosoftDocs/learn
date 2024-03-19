@@ -1,10 +1,8 @@
 When creating visually engaging training plans, Microsoft Designer can play a pivotal role. This AI-powered tool can improve your training sessions through visuals. This tool allows you to create engaging, interactive, content that can help simplify complex concepts. By incorporating diagrams, infographics, and animations, Microsoft Designer can transform written materials into visuals helping visual learners.
 
-**Task:** In this activity, you use Microsoft Designer to create an appealing and informative poster.
+**Task:** In this exercise, you'll create an appealing and information poster on *Essential things to boost productivity at work* using Microsoft Designer and then document your reflections on using Microsoft Designer.
 
-**Poster title:** "Essential things to boost productivity at work"
-
-## Instructions
+## Create a poster
 
 1. Open [Microsoft Designer](https://designer.microsoft.com/) and click Generate on the **Design Creator** tile.
 
@@ -20,7 +18,7 @@ When creating visually engaging training plans, Microsoft Designer can play a pi
 
 :::image type="content" source="../media/choose-visually-appealing-background-for-poster.jpg" alt-text="Screenshot of Microsoft Designer option to choose a background.":::
 
-5. Add text boxes to the poster to include information about "Essential things to boost productivity at work." Some topics you might want to include are:
+5. Add text boxes to the poster to include information about "Essential things to boost productivity at work." You can brainstorm with your partner or use Microsoft Copilot to come up with the ideas for content/layout. Some topics you might want to include are:
    - Managing energy, not just time
    - Building a better to-do list
    - Tuning out distractions
