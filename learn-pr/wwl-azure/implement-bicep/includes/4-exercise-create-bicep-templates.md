@@ -73,3 +73,4 @@ When the deployment finishes, you'll be getting a message indicating the deploym
 ## Next steps
 
 Now that you've learned how to create a basic template and deploy it, head over to the next unit to learn more about the constructs in a Bicep file.
+

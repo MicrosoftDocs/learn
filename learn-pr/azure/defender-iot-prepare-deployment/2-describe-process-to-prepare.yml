@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-prepare-deployment.describe-process-to-prepare
+title: Describe the prepare phase for Defender for IoT
+metadata:
+  title: Describe the prepare phase for Defender for IoT
+  description: "Describe where the preparing process fits in the overall deployment of Microsoft Defender for IoT for operational technology monitoring."
+  ms.date: 03/04/2024
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: unit
+  ms.service: defender-for-iot
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-describe-process-to-prepare.md)]

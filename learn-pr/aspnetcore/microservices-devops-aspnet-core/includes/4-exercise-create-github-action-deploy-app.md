@@ -1,4 +1,4 @@
-In this unit, you'll complete the following tasks:
+In this exercise, you'll complete the following tasks:
 
 - Enhance the existing GitHub action to include a deployment job.
 - Verify that the changes deploy to the Azure Kubernetes Service (AKS) cluster.
@@ -6,10 +6,10 @@ In this unit, you'll complete the following tasks:
 
 ## Update the Kubernetes manifest for the product service
 
-To deploy new versions of the eShop product service, you'll need to edit the **product.yml** file to point at the ACR you used in the previous unit.
+To deploy new versions of the eShop product service, edit the **product.yml** file to point at the Azure Container Registry (ACR) you used in the previous unit.
 
-1. In your forked repository, on the **:::no-loc text="code tab":::**, select the **:::no-loc text="product.yml":::** file.
-1. Select the edit icon (pencil) to edit the file.
+1. In your forked repository, select the **:::no-loc text="code tab":::**, then select the *:::no-loc text="product.yml":::* file.
+1. To edit the file, select the edit icon (pencil).
 1. Edit the line:
 
     ```yml
@@ -18,6 +18,7 @@ To deploy new versions of the eShop product service, you'll need to edit the **p
     ```  
 
     Replace the `[replace with your ACR name]` with the name of your ACR; for example, **acseshop186748394**.
+
 1. In the top right, select **Commit changes...** then, in the dialog, select **Commit changes**.
 
 ## Create the deployment action
@@ -35,8 +36,8 @@ Has one step that deploys new images. Here's the steps in an `ubuntu-latest` run
 Complete the following steps to create a GitHub action that deploys the coupon service:
 
 1. In your forked repository, on the **:::no-loc text="code tab":::**, select the **:::no-loc text=".github/workflows":::** tab.
-1. Select **:::no-loc text="azure-kubernetes-service.yml":::**.
-1. Select the edit icon (pencil) to edit the file.
+1. Select *:::no-loc text="azure-kubernetes-service.yml":::*.
+1. To edit the file, select the edit icon (pencil).
 1. At the bottom of the file, paste the following YAML code into the editor:
 
     ```yaml
@@ -85,23 +86,24 @@ Complete the following steps to create a GitHub action that deploys the coupon s
     
     ```
 
-1. In the top right, select **Commit changes...**, then, in the dialog, select **Commit changes**.
+1. In the top right, select **Commit changes...**, then in the dialog select **Commit changes**.
 
 ## Trigger a deployment
 
-Updating the **:::no-loc text="azure-kubernetes-service.yml":::** file and committing the changes automatically triggers another deployment. You'll now make a code change to trigger another deployment.
+Updating the **:::no-loc text="azure-kubernetes-service.yml":::** file and committing the changes automatically triggers another deployment. Now see how making a code change triggers another deployment.
 
 You have a new product your marketing team would like to add to the catalog.
 
 1. In your forked repository, on the **:::no-loc text="code tab":::**, select the **:::no-loc text="Products":::** folder.
 1. Select the **:::no-loc text="Data":::** folder.
 1. Select the **:::no-loc text="ProductDataContext.c":::** file.
-1. Select the edit icon (pencil) to edit the file.
+1. To edit the file, select the edit icon (pencil).
 1. At the bottom of the file, add a new product to the **products** array:
 
     ```csharp
     new Product {  Name = "Camping Tent 2", Description = "This updated tent is improved and cheaper, perfect for your next trip.", Price = 79.99m, ImageUrl = "product9.png" },
     ```
+
 1. In the top right, select **Commit changes...** then, in the dialog, select **Commit changes**.
 
 ## Monitor the deployment
@@ -118,9 +120,9 @@ You have a new product your marketing team would like to add to the catalog.
     ```bash
     kubectl get pods --selector=app=productservice --watch
     ```
-    
+
     During the deployment, a variation of the following output appears:
-    
+
     ```console
     NAME                             READY   STATUS    RESTARTS   AGE
     productservice-7979d4c47-xlcrr   1/1     Running   0          17m
@@ -130,9 +132,8 @@ You have a new product your marketing team would like to add to the catalog.
     productservice-ff98b6d8d-7wmsh   1/1     Running             0          4s
     productservice-7979d4c47-xlcrr   1/1     Terminating         0          19m
     ```
-    
-    In the preceding output, notice that a new **productservice** pod is created. When the new pod is ready, the old one is terminated. This process makes the transition to the new version as smooth as possible.
 
+    In the preceding output, notice that a new **productservice** pod is created. When the new pod is ready, the old one is terminated. This process makes the transition to the new version as smooth as possible.
 
 ## Verify the app
 
@@ -144,7 +145,7 @@ Complete the following steps to verify that your app still works:
     echo "http://$(kubectl get services --namespace ingress-nginx ingress-nginx-controller --output jsonpath='{.status.loadBalancer.ingress[0].ip}')"
     ```
 
-    The above command returns the external IP address for the web app. Hold <kbd>CTRL</kbd> and click the link to open the app in a new tab.
+    The above command returns the external IP address for the web app. Hold <kbd>CTRL</kbd> and select the link to open the app in a new tab.
 
 Go to the products page to view the new tent listed at the bottom of the page.
 

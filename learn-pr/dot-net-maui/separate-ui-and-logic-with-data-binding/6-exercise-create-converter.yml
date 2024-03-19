@@ -10,6 +10,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.service: dotnet-mobile
   ms.subservice: dotnet-maui
+  ms.custom: devx-track-dotnet
 durationInMinutes: 10
 content: |
   [!include[](./includes/6-exercise-create-converter.md)]

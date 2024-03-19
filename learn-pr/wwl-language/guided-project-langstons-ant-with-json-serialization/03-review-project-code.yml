@@ -4,10 +4,12 @@ title: Review the project code
 metadata:
   title: Review the project code
   description: "Review the project code"
-  ms.date: 02/27/2024
+  ms.date: 03/12/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/03-review-project-code.md)]

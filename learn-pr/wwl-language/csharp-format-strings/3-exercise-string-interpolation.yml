@@ -4,10 +4,12 @@ title: Exercise - Explore string interpolation
 metadata:
   title: Exercise - Explore string interpolation
   description: "Exercise - Explore string interpolation"
-  ms.date: 02/21/2024
+  ms.date: 03/07/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/3-exercise-string-interpolation.md)]

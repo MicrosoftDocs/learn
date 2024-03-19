@@ -8,10 +8,10 @@ metadata:
   ms.author: ceperezb
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: security-copilot
+  ai-usage: ai-assisted
 title: Describe the core features of Microsoft Copilot for Security
 summary: |
   Microsoft Copilot for Security has a rich set of features. Learn about available plugins, promptbooks, the ways you can export and share information from Copilot, and much more.
-  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   By the end of this module, you'll be able to:
     - Describe the features available in the standalone experience.
@@ -43,6 +43,7 @@ units:
 - learn.security-copilot-describe-core-features.describe-microsoft-plugins
 - learn.security-copilot-describe-core-features.describe-non-microsoft-plugins
 - learn.security-copilot-describe-core-features.describe-custom-promptbooks
+- learn.security-copilot-describe-core-features.describe-knowledge-base-connections
 - learn.security-copilot-describe-core-features.knowledge-check
 - learn.security-copilot-describe-core-features.summary
 badge:

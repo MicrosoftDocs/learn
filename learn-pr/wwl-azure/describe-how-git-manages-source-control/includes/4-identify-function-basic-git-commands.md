@@ -72,7 +72,7 @@ To create a new branch based on the current branch you’re working within, you 
 `git branch training` would create a new branch in your repo named training.
 
 > [!IMPORTANT]
-> Using branches effectively is critical to your success using Git. You seldom want to be working on the main or primary branch. Instead, you work on a targeted or focused branch (such as bug fixes or feature development) and then move the changes back to the main branch after the updated code is tested.<br>
+> Using branches effectively is critical to your success using Git. You seldom want to be working on the main or primary branch. Instead, you work on a targeted or focused branch (such as bug fixes or feature development) and then move the changes back to the main branch after the updated code is tested.
 
 ## git checkout
 

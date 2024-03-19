@@ -29,8 +29,8 @@ products:
 - azure-container-instances
 - azure-container-registry
 subjects:
-- container
-- database
+- containers
+- databases
 - data-engineering
 units:
 - learn.azure-container-registry.introduction

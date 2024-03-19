@@ -1,22 +1,20 @@
-:::image type="content" source="../media/15-working-remotely.jpg" alt-text="Photo of Woman Working.":::
+:::image type="content" source="../media/15-working-remotely.jpg" alt-text="Photo of woman working outdoors.":::
 
-It’s common these days that people work remotely, from their home, a coffee shop, or a similar establishment. Regardless of where you work, you want a secure connection between your machine and your company’s resources. It’s important that these connections are secure and encrypted to protect your company. Additionally, it’s advantageous to use tools that make setting up and configuring such connections easier.
+It's common these days that people work remotely from their home, a coffee shop, or a similar establishment. Regardless of where you work, you want a secure connection between your machine and your company's resources. These connections must be secure and encrypted to protect your company. It's also advantageous to use tools that make setting up and configuring such connections easier.
 
+## Scenario: Access company resources from home
 
-## Scenario: Accessing company resources from home 
-
-Your company has hired their first workers to work remotely. It’s important that these new hires can access company resources from their chosen places of work and can do so safely and securely. You also want to ensure that these employees can use best-in-class tools.  
-
+Your company hired its first workers to work remotely. It's important that these new hires can access company resources from their chosen places of work and can do so safely and securely. You also want to ensure that these employees can use best-in-class tools.
 
 ## What will I learn?
 
 By the end of this module, you'll be able to:
 
-- Explain tunneling and the features of Visual Studio Code (VS Code) Remote - Tunnels extension.
-- Use the VS Code Remote - Tunnels extension to tunnel into a remote host.
-- Configure remote tunnel access via VS Code UI and code CLI.
+- Explain tunneling and the features of the Visual Studio Code Remote - Tunnels extension.
+- Use the Visual Studio Code Remote - Tunnels extension to tunnel into a remote host.
+- Configure remote tunnel access via the Visual Studio Code user interface and the code command-line interface.
 
 ## What is the main objective?
-By the end of this module, you understand the basics of tunneling and have a solid foundation for using Remote - Tunnels extension, all within VS Code.
+By the end of this module, you'll understand the basics of tunneling and have a solid foundation for using the Remote - Tunnels extension, all within Visual Studio Code.
 
-Let's get started on this journey to familiarize yourself how to use tunneling to connect to remote hosts.
+Let's get started on this journey to learn how to use tunneling to connect to remote hosts.

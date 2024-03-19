@@ -9,7 +9,7 @@ In this exercise, you'll create a virtual machine and generalize it. You'll then
 1. Set the default resource group to work with by typing the following command into the Cloud Shell on the right. This allows you to omit the resource group name from all the commands.
 
     ```azurecli
-    az configure --defaults group=<rgn>[Sandbox resource group name]</rgn>
+    az configure --defaults group="<rgn>[Sandbox resource group name]</rgn>"
     ```
 
 ## Create a virtual machine

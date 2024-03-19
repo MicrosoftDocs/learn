@@ -38,8 +38,6 @@ products:
   - azure-container-registry
   - azure-kubernetes-service
   - github
-subjects:
-- development-tools
 units:
   - learn.microservices-devops-aspnet-core.introduction
   - learn.microservices-devops-aspnet-core.exercise-manually-deploy-cloud-native-application

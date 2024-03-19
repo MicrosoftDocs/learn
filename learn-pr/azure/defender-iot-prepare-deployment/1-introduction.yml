@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-prepare-deployment.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction to the Defender for IoT deployment preparation scenario."
+  ms.date: 03/04/2024
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: unit
+  ms.service: defender-for-iot
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

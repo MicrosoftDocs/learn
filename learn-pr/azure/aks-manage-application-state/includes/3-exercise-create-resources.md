@@ -2,8 +2,7 @@ Now that we've reviewed the basic concepts of external states and how to deal wi
 
 ## Create a resource group
 
-> [!NOTE]
-> The Learn sandbox system that enables you to complete these modules without using your own subscription is currently down for maintenance. This module can still be completed using a subscription you own, but please be aware that the steps might skip some instructions necessary for you to deploy, such as logging into your subscription or cleaning up the deployment at the end of the module.
+[!INCLUDE [azure-exercise-subscription-prerequisite](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 1. Sign into [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your own subscription.
 2. Open the Cloud Shell and select **Bash**.
@@ -42,7 +41,7 @@ To solve that problem, we'll externalize the state to an application that specia
 3. Create a new database using the `az cosmosdb mongodb database create` command. In this example, the database is named *contoso-ship-manager*.
 
     ```azurecli-interactive
-    az cosmosdb mongodb database create ---account-name $COSMOSDB_ACCOUNT_NAME --resource-group $RESOURCE_GROUP --name contoso-ship-manager
+    az cosmosdb mongodb database create --account-name $COSMOSDB_ACCOUNT_NAME --resource-group $RESOURCE_GROUP --name contoso-ship-manager
     ```
 
 4. Verify the database was successfully created using the `az cosmosdb mongodb database list` command.
@@ -77,12 +76,14 @@ Now that you've created an external state to store all the data from the ship ma
         --node-count 3 \
         --generate-ssh-keys \
         --node-vm-size Standard_B2s \
-        --enable-app-routing
+        --enable-addons http_application_routing
     ```
 
     The creation process can take a few moments to complete.
 
-3. Download the kubectl configuration using the `az aks get-credentials` command.
+    [!INCLUDE [aks-regional-quota](../../includes/aks-regional-quota.md)]
+
+4. Download the kubectl configuration using the `az aks get-credentials` command.
 
    ```azurecli-interactive
    az aks get-credentials --name $AKS_CLUSTER_NAME --resource-group $RESOURCE_GROUP
@@ -97,7 +98,7 @@ Now that you've created an external state to store all the data from the ship ma
 
    Enter `y` to overwrite.
 
-4. Test the configuration using the `kubectl get nodes` command.
+5. Test the configuration using the `kubectl get nodes` command.
 
     ```azurecli-interactive
     kubectl get nodes

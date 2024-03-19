@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-prepare-deployment.review-appliance-options
+title: Review appliance options
+metadata:
+  title: Review appliance options
+  description: "Describes the process of choosing appropriate appliances and hardware profiles for your Microsoft Defender for IoT sensors."
+  ms.date: 03/04/2024
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: unit
+  ms.service: defender-for-iot
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-review-appliance-options.md)]
+
+quiz:
+
+  questions:
+  
+  - content: "What advantage does a pre-configured appliance have for your system?"
+    choices:
+    - content: "Pre-configured appliances have advantages like cost effectiveness, ease of customization, and possible component reuse."
+      isCorrect: false
+      explanation: "Cost effectiveness, ease of customization, and possible component reuse are advantages of self-configured systems."
+    - content: "Pre-configured appliances have advantages like performance, stability, and long term world-wide availability."
+      isCorrect: true 
+      explanation: "Performance, stability, and reuse are advantages of self-configured appliances."
+    - content: "Pre-configured appliances have advantages like ease of testing, quick deployment, and ease of backup."
+      isCorrect: false
+      explanation: "Ease of testing, quick deployment, and backup aren't advantages of pre-configured appliances."
+
+  - content: "Which of the following pre-configured appliances would be a good choice for your large automotive enterprise?"
+    choices:
+    - content: "YS-Techsystems YS-FIT2 (Rugged MIL-STD-810G)" 
+      isCorrect: false
+      explanation: "While the YS-Techsystems YS-FIT2 (Rugged MIL-STD-810G) would be a good choice for your production lines, it might not be the best choice for your large automotive enterprise."
+    - content: "HPE ProLiant DL360"
+      isCorrect: false
+      explanation: "While the YS-Techsystems YS-FIT2 (Rugged MIL-STD-810G) would be a good choice for a corporate environment, it might not be the best choice for your large automotive enterprise."
+    - content: "HPE ProLiant DL20 Gen10 Plus (4SFF)"
+      isCorrect: true
+      explanation: "The HPE ProLiant DL20 Gen10 Plus (4SFF) is a good choice for a large automotive enterprise."

@@ -1,3 +1,5 @@
+When using Blob storage, you should consider the following security recommendations:
+
 ## Data protection
 
 - Use the Azure Resource Manager deployment model.
@@ -12,7 +14,7 @@
 ## Identity and access management
 
 - Use Microsoft Entra ID to authorize access to blob data.
-- Keep in mind the principle of least privilege when assigning permissions to a Microsoft Entra security principle via Azure RBAC.
+- Keep in mind the principle of least privilege when assigning permissions to a Microsoft Entra ID security principle via Azure RBAC.
 - Use a user delegation SAS to grant limited access to blob data to clients.
 - Secure your account access keys with Azure Key Vault.
 - Regenerate your account keys periodically.
@@ -29,7 +31,7 @@
 - Enable firewall rules.
 - Allow trusted Microsoft services to access the storage account.
 - Use private endpoints.
-- Use VNet service tags.
+- Use virtual network service tags.
 - Limit network access to specific networks.
 - Configure network routing preference.
 

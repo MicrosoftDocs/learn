@@ -31,7 +31,7 @@ prerequisites: |
   - Familiarity with .NET
   - A basic understanding of what an API is
 subjects:
-- database
+- databases
 units:
   - learn.aspnetcore.build-web-api-minimal-database.introduction
   - learn.aspnetcore.build-web-api-minimal-database.what-is-entity-framework-core
