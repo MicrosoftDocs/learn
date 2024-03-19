@@ -12,7 +12,8 @@ Here are some examples of areas that computer scientists have had to think about
 
 People with low vision may need to enlarge the text on the screen. Doing so may impact everything else that's being shown. Suppose the text on a button gets bigger, but the button doesn't. The text may go outside the button, making it hard to read. So the program needs to adjust everything when some parts are enlarged.
 
-![Diagram showing an eyeball.](../media/eyeball.png)
+:::image type="content" source="../media/eyeball-b8fae00e.png" alt-text="Diagram showing an eyeball.":::
+
 
 Color is another consideration. People with color vision deficiency can't rely on color alone to tell the difference between things on a screen. Programmers shouldn't rely on color alone to communicate important information.
 
@@ -24,7 +25,8 @@ Individuals that are visually impaired also rely on screen readers to access con
 
 While people may tend to think of computing as mainly visual, modern devices use a lot of audio too. Programmers should never rely on audio only to communicate to the user. For example, most modern phones will have the option to vibrate and ring when a call comes in. This vibration option is called *haptics*.
 
-![Diagram showing a vibrating mobile phone.](../media/mobile-phone.png)
+:::image type="content" source="../media/mobile-phone-3a109d3d.png" alt-text="Diagram showing a vibrating mobile phone.":::
+
 
 Some devices enable haptics for other types of things too. Pressing a button on a keyboard may include a slight vibration. This gives people with hearing loss a connection to the keys they're pressing.
 

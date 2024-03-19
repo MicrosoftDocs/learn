@@ -27,8 +27,6 @@ roles:
 - student
 products:
 - azure
-subjects:
-- development-tools
 units:
 - learn.languages.rust-memory-management.0-introduction
 - learn.languages.rust-memory-management.1-what-is-ownership

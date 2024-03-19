@@ -28,8 +28,6 @@ roles:
 - student
 products:
 - azure
-subjects:
-- development-tools
 units:
 - learn.student-evangelism.use-apis-discover-museum-art.1-introduction
 - learn.student-evangelism.use-apis-discover-museum-art.2-what-is-api
