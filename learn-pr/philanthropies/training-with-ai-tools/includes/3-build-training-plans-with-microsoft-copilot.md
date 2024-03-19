@@ -1,8 +1,8 @@
 Microsoft Copilot, an AI tool, can significantly support you in creating learning-centered training plans. It can help you create personalized plans by generating content tailored to individual learners' needs and preferences. This customized approach can engage learners with improved materials that enhance their understanding. It can also complement existing pedagogical approaches and introduce innovative methods for training. By using Microsoft Copilot, you can create comprehensive, effective, and learner-centered training plans.
 
-In this exercise, you'll use Microsoft Copilot to write a formal training plan. Once you're created your plan, you'll document your reflections on using Microsoft Copilot.
+In this exercise, you use Microsoft Copilot to write a formal training plan. Once you're created your plan, you document your reflections on using Microsoft Copilot.
 
-You'll need a computer or mobile device with internet access, and a pen and paper or word processor to complete this exercise.
+You need a computer or mobile device with internet access, and a pen and paper or word processor to complete this exercise.
 
 ## Create a personalized training plan
 
