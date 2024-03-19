@@ -40,8 +40,6 @@ roles:
 products:
 - azure
 - azure-resource-manager
-subjects:
-- development-tools
 modules:
 - learn.azure.child-extension-bicep-templates
 - learn.azure.manage-changes-bicep-code-git

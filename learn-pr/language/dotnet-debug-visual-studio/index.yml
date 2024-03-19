@@ -27,8 +27,6 @@ products:
 - vs-ide
 prerequisites: |
   - [Visual Studio](https://visualstudio.com) with a .NET workload installed (for example, ASP.NET and web development workload)
-subjects:
-- development-tools
 units:
 - learn.dotnet-debug-visual-studio.introduction
 - learn.dotnet-debug-visual-studio.debugger

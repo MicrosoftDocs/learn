@@ -2,7 +2,7 @@ Data analytics is concerned with examining, transforming, and arranging data so 
 
 The term *data analytics* is a catch-all that covers a range of activities, each with its own focus and goals. You can categorize these activities as *descriptive*, *diagnostic*, *predictive*, *prescriptive*, and *cognitive* analytics.
 
-:::image type="content" source="../media/4-analytics-table.png" alt-text="Categories of analytics":::
+:::image type="content" source="../media/4-analytics-table.png" alt-text="Diagram of Categories of analytics.":::
 
 In this unit, you'll learn about these categories of data analytics.
 

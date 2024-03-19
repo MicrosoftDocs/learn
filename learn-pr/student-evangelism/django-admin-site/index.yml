@@ -37,8 +37,6 @@ roles:
 products:
   - azure
   - azure-app-service
-subjects:
-- development-tools
 units:
 - learn.django.admin-site.introduction
 - learn.django.admin-site.exercise-setup

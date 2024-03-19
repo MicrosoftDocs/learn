@@ -33,8 +33,6 @@ roles: # TBC
 - student
 products: 
 - azure
-subjects:
-- development-tools
 units:
 - learn.language.go-control-flow.0-introduction
 - learn.language.go-control-flow.1-use-if-else-statements

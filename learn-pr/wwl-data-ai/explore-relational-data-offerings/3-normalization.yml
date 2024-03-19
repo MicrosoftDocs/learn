@@ -4,12 +4,12 @@ title: Understand normalization
 metadata:
   title: Understand normalization
   description: "Understand normalization"
-  ms.date: 03/08/2023
+  ms.date: 03/15/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/3-normalization.md)]
