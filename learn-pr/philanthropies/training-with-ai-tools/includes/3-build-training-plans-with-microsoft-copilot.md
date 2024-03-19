@@ -1,12 +1,14 @@
 Microsoft Copilot, an AI tool, can significantly support you in creating learning-centered training plans. It can help you create personalized plans by generating content tailored to individual learners' needs and preferences. This customized approach can engage learners with improved materials that enhance their understanding. It can also complement existing pedagogical approaches and introduce innovative methods for training. By using Microsoft Copilot, you can create comprehensive, effective, and learner-centered training plans.
 
-## Task
+In this exercise, you'll use Microsoft Copilot to write a formal training plan. Once you're created your plan, you'll document your reflections on using Microsoft Copilot.
 
-This activity involves using Microsoft Copilot to design a personalized training plan. Think of a topic you would like to teach in an upcoming training session. This topic is used to create your plans. After using Microsoft Copilot, you'll write up a formal training program for your specific training topic. This task requires a computer or mobile device with internet access, and a pen and paper or word processor for reflection afterward.
+You'll need a computer or mobile device with internet access, and a pen and paper or word processor to complete this exercise.
 
-To open Microsoft Copilot visit: [https://copilot.microsoft.com](https://copilot.microsoft.com)
+## Create a personalized training plan
 
-The learning design should follow the following format. Follow each step in the table that follows to create your personal training plan.
+1. Think of a topic you'd like to teach in an upcoming training session.
+1. Open [Microsoft Copilot](https://copilot.microsoft.com).
+1. Use Microsoft Copilot to create the following lesson design elements for your topic:
 
 | Lesson design element | Explanation |
 | --------------------- | ----------- |
@@ -53,7 +55,7 @@ Use the lesson design template that follows to create a formal guide for your tr
 | ____________________________________________________________________________________________________________ |
 | ____________________________________________________________________________________________________________ |
 
-| Post-assessment *[Write a brief description of a post-assessment that evaluates learners’ progress and improvement in knowledge and skills related to the task.]* |
+| Post-assessment *[Write a brief description of a post-assessment that evaluates learners' progress and improvement in knowledge and skills related to the task.]* |
 | ------------------------------------------------------------------------------------------------------------ |
 | ____________________________________________________________________________________________________________ |
 | ____________________________________________________________________________________________________________ |
@@ -69,7 +71,7 @@ Use the lesson design template that follows to create a formal guide for your tr
 | ____________________________________________________________________________________________________________ |
 | ____________________________________________________________________________________________________________ |
 
-| Evaluation *[Write a short description of how you evaluate the effectiveness and impact of your learning activity based on learners’ performance and satisfaction.]* |
+| Evaluation *[Write a short description of how you evaluate the effectiveness and impact of your learning activity based on learners' performance and satisfaction.]* |
 | ------------------------------------------------------------------------------------------------------------ |
 | ____________________________________________________________________________________________________________ |
 | ____________________________________________________________________________________________________________ |
