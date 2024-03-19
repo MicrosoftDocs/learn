@@ -8,7 +8,9 @@ You need a computer or mobile device with internet access, and a pen and paper o
 
 1. Think of a topic you'd like to teach in an upcoming training session.
 1. Open [Microsoft Copilot](https://copilot.microsoft.com).
-1. Use Microsoft Copilot to create the following lesson design elements for your topic:
+1. Use Microsoft Copilot to create the following lesson design elements for your topic.
+1. Open Microsoft Word or any other editor of your choice.
+1. Create the following **lesson design elements** for your chosen topic using Microsoft Copilot. Refer to the *explanation* for each design element in the table below for guidance.
 
 | Lesson design element | Explanation |
 | --------------------- | ----------- |
