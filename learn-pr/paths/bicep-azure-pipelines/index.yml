@@ -36,8 +36,6 @@ roles:
 products:
 - azure
 - azure-resource-manager
-subjects:
-- development-tools
 modules:
 - learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines
 - learn.azure.authenticate-azure-deployment-pipeline-service-principals

@@ -32,8 +32,6 @@ prerequisites: |
   - GitHub account for development in browser.
   - Visual Studio Code for local development.
   - Working knowledge of the web, especially on request and responses in HTTP.
-subjects:
-- development-tools
 units:
   - learn.aspnetcore.build-web-api-minimal-spa.introduction
   - learn.aspnetcore.build-web-api-minimal-spa.design-front-end

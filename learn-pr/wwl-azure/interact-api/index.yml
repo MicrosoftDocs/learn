@@ -32,8 +32,6 @@ products:
 - aspnet-core
 - dotnet
 - aspnet
-subjects:
-- development-tools
 units:
 - learn.wwl.interact-api.introduction
 - learn.wwl.interact-api.explore-asp-net-core-api
