@@ -12,74 +12,15 @@ You'll need a computer or mobile device with internet access, and a pen and pape
 
 | Lesson design element | Explanation |
 | --------------------- | ----------- |
+| Title | Write a title for the topic you're going to teach. Try to make your title engaging and task-based. |
 | Learning objective | Create a learning objective to solve the problem. The learning objective should follow the SMART principle (Specific, Measurable, Achievable, Relevant, and Time-Bound).<br><br>Use these prompts in Microsoft Copilot:<br>- Create a learning objective for a learner-centered [insert topic] training session. Use the SMART format.<br>- Evaluate this learning objective: [insert the learning objective]. Make sure it's aligned with the SMART format. |
-| Preassessment questions | The Preassessment measures learners' strengths, weaknesses, prior knowledge, and experience in time management. It also provides data to guide personalization of the learning experience.<br><br>Use these prompts in Microsoft Copilot:<br>- What are good Preassessment questions to use for a [insert topic] training program?<br>- Create Preassessment questions for a learner-centered [insert topic] training session. Here's the learning objective: [insert the learning objective]. |
-| Learning activities | The learning activities should engage learners with active and meaningful examples relevant to the scenario, problem, or challenge. They should also provide opportunities for learners to practice and apply their knowledge and skills in authentic contexts. These learning activities should require learners to use AI tools such as Microsoft Copilot or Microsoft Teams.<br><br>Use these prompts in Microsoft Copilot:<br>- Provide activity ideas for a learner-centered [insert topic] training program.<br>- What AI tools can I utilize to help run the program?<br>- How would you incorporate [insert AI tools you want to use] into [insert the activity you want to do]? |
-| Post-assessment questions | The post-assessment should evaluate learners' achievement of the learning objective and their task performance. It should also provide feedback and recognize their accomplishments and challenges.<br><br>Use these prompts in Microsoft Copilot:<br>- What are good post-assessment questions to use for a [insert topic] training program?<br>- Create post-assessment questions for a learner-centered [insert topic] training session. Here's the learning objective [insert the learning objective]. |
-| Reflection | Reflection should guide learners in identifying their strengths, areas for improvement, emotions, and attitudes related to the task. This section should also help learners set goals for future learning and advancement.<br><br>Use these prompts in Microsoft Copilot:<br>- Can you share examples of reflection questions for a learner-centered [insert topic] training session?<br>- Evaluate this question list for me; is it already a good reflection question? [insert the question list]. |
-| Evaluation | Evaluation is a strategy for measuring the effectiveness and impact of your training program.<br><br>Use these prompts in Microsoft Copilot:<br>- What evaluation format should I use to measure the efficacy of a training program whose learning objective is: [insert the learning objective]?<br>- What data should I gather to run the evaluation? |
+| Preassessment questions | Write a realistic and engaging scenario that sets the context and background for the learning activity.<br>The Preassessment measures learners' strengths, weaknesses, prior knowledge, and experience in time management. It also provides data to guide personalization of the learning experience.<br><br>Use these prompts in Microsoft Copilot:<br>- What are good Preassessment questions to use for a [insert topic] training program?<br>- Create Preassessment questions for a learner-centered [insert topic] training session. Here's the learning objective: [insert the learning objective]. |
+| Learning activities | Write a list of activities involving different strategies and resources to help learners achieve the learning objective.<br>The learning activities should engage learners with active and meaningful examples relevant to the scenario, problem, or challenge. They should also provide opportunities for learners to practice and apply their knowledge and skills in authentic contexts. These learning activities should require learners to use AI tools such as Microsoft Copilot or Microsoft Teams.<br><br>Use these prompts in Microsoft Copilot:<br>- Provide activity ideas for a learner-centered [insert topic] training program.<br>- What AI tools can I utilize to help run the program?<br>- How would you incorporate [insert AI tools you want to use] into [insert the activity you want to do]? |
+| Post-assessment questions | Write a brief description of a post-assessment that evaluates learners’ progress and improvement in knowledge and skills related to the task.<br>The post-assessment should evaluate learners' achievement of the learning objective and their task performance. It should also provide feedback and recognize their accomplishments and challenges.<br><br>Use these prompts in Microsoft Copilot:<br>- What are good post-assessment questions to use for a [insert topic] training program?<br>- Create post-assessment questions for a learner-centered [insert topic] training session. Here's the learning objective [insert the learning objective]. |
+| Reflection | Write a list of reflection questions that guide learners to assess their learning process and outcomes.<br>Reflection should guide learners in identifying their strengths, areas for improvement, emotions, and attitudes related to the task. This section should also help learners set goals for future learning and advancement.<br><br>Use these prompts in Microsoft Copilot:<br>- Can you share examples of reflection questions for a learner-centered [insert topic] training session?<br>- Evaluate this question list for me; is it already a good reflection question? [insert the question list]. |
+| Evaluation | Write a short description of how you evaluate the effectiveness and impact of your learning activity based on learners' performance and satisfaction.<br>Evaluation is a strategy for measuring the effectiveness and impact of your training program.<br><br>Use these prompts in Microsoft Copilot:<br>- What evaluation format should I use to measure the efficacy of a training program whose learning objective is: [insert the learning objective]?<br>- What data should I gather to run the evaluation? |
 
-Use the lesson design template that follows to create a formal guide for your training program and plans.
-
-**Lesson design template**
-
-| Title *[Write an engaging training title.]* |
-| ------------------------------------------------------------------------------------------------------------ |
-| ____________________________________________________________________________________________________________ |
-| ____________________________________________________________________________________________________________ |
-| ____________________________________________________________________________________________________________ |
-| ____________________________________________________________________________________________________________ |
-| ____________________________________________________________________________________________________________ |
-
-| Learning objective *[Write a SMART learning objective.]* |
-| ------------------------------------------------------------------------------------------------------------ |
-| ____________________________________________________________________________________________________________ |
-| ____________________________________________________________________________________________________________ |
-| ____________________________________________________________________________________________________________ |
-| ____________________________________________________________________________________________________________ |
-| ____________________________________________________________________________________________________________ |
-
-| Preassessment questions *[Write a realistic and engaging scenario that sets the context and background for the learning activity.]* |
-| ------------------------------------------------------------------------------------------------------------ |
-| ____________________________________________________________________________________________________________ |
-| ____________________________________________________________________________________________________________ |
-| ____________________________________________________________________________________________________________ |
-| ____________________________________________________________________________________________________________ |
-| ____________________________________________________________________________________________________________ |
-
-| Learning activities *[Write a list of activities involving different strategies and resources to help learners achieve the learning objective.]* |
-| ------------------------------------------------------------------------------------------------------------ |
-| ____________________________________________________________________________________________________________ |
-| ____________________________________________________________________________________________________________ |
-| ____________________________________________________________________________________________________________ |
-| ____________________________________________________________________________________________________________ |
-| ____________________________________________________________________________________________________________ |
-
-| Post-assessment *[Write a brief description of a post-assessment that evaluates learners' progress and improvement in knowledge and skills related to the task.]* |
-| ------------------------------------------------------------------------------------------------------------ |
-| ____________________________________________________________________________________________________________ |
-| ____________________________________________________________________________________________________________ |
-| ____________________________________________________________________________________________________________ |
-| ____________________________________________________________________________________________________________ |
-| ____________________________________________________________________________________________________________ |
-
-| Reflection questions *[Write a list of reflection questions that guide learners to assess their learning process and outcomes.]* |
-| ------------------------------------------------------------------------------------------------------------ |
-| ____________________________________________________________________________________________________________ |
-| ____________________________________________________________________________________________________________ |
-| ____________________________________________________________________________________________________________ |
-| ____________________________________________________________________________________________________________ |
-| ____________________________________________________________________________________________________________ |
-
-| Evaluation *[Write a short description of how you evaluate the effectiveness and impact of your learning activity based on learners' performance and satisfaction.]* |
-| ------------------------------------------------------------------------------------------------------------ |
-| ____________________________________________________________________________________________________________ |
-| ____________________________________________________________________________________________________________ |
-| ____________________________________________________________________________________________________________ |
-| ____________________________________________________________________________________________________________ |
-| ____________________________________________________________________________________________________________ |
-
-## Reflection questions
+## Document your reflection on using Microsoft Copilot
 
 Answer these questions to reflect the use of Microsoft Copilot in designing a training program.
 
