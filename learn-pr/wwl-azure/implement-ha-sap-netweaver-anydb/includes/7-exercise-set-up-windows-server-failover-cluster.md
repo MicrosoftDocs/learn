@@ -58,10 +58,10 @@ When configuring a Cloud Witness as a quorum witness for your Failover Cluster, 
 
 ## Configure failover detection parameters
 
-After you successfully install the Windows failover cluster, you need to change some thresholds so they adapt failover detection to conditions in Azure. Assuming that your two VMs that make up the Windows cluster configuration for ASCS/SCS are in the same subnet, change the following parameters to these values:
+After you successfully install the Windows failover cluster, you need to change some thresholds so they adapt failover detection to conditions in Azure. Assuming that your two virtual machines that make up the Windows cluster configuration for ASCS/SCS are in the same subnet, change the following parameters to these values:
 
 - **SameSubNetDelay** = 2000
 - **SameSubNetThreshold** = 15
 - **RoutingHistoryLength** = 30
 
-These settings were tested with customers. They're resilient enough, but they also provide failover that's fast enough in real error conditions on an SAP software or in a node or VM failure.
+These settings were tested with customers. They're resilient enough, but they also provide failover that's fast enough in real error conditions on an SAP software or in a node or virtual machine failure.
