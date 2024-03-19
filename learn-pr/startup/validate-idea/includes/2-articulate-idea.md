@@ -71,13 +71,13 @@ Similar to painkillers, you can use feedback from customers to plot gains on a c
 
 :::image type="content" source="../media/learning-path-gain-matrix.png" alt-text="Chart that shows the relationship between the significance and immediacy of gains. A point indicates that a high significance, now, is ideal.":::
 
-If you deliver a significant gain to customers, and it occurs quickly after they use your product, they're more likely to want to use it than if you deliver only a minor gain that takes a while for them to achieve. Focus your attention on the gains in the upper-right quadrant.
+If you deliver a significant gain to customers that occurs quickly after they use your product, they're more likely to want to use it than if you deliver only a minor gain that takes a while for them to achieve. Focus your attention on the gains in the upper-right quadrant.
 
 ## Task: Identify pains and gains
 
 Create a customer pains matrix and a customer gains matrix for your target customers. Talk to some customers and populate the matrices with the pains and gains they tell you about. Which pains or gains do you think you should try to address?
 
-Completing this quick task helps you get a feel for whether customers view your product as more of a pain reliever or a gain creator. This information is extremely useful when you start writing copy for your website or for other places where you describe your product and its value proposition.
+Completing this quick task helps you get a feel for whether customers view your product as more of a pain reliever or a gain creator. This information is useful when you start writing copy for your website or for other places where you describe your product and its value proposition.
 
 ## Case study: Tylenol
 
@@ -99,7 +99,7 @@ To use the canvas, start by describing the customer segment that you're focusing
 
 After you interview your customers, you might start to see some trends in the jobs to be done, pains, and gains they describe, and in how important they perceive each of these elements to be. These trends should give you insights that help you focus on the most important outcomes as you begin designing your value proposition.
 
-Now move to the left side of the canvas and design your value proposition. Populate each of the three segments by describing the product that you believe will get customers' key jobs done. Describe how it relieves their most important pains, and how it achieves their most important gains.
+Now move to the left side of the canvas and design your value proposition. Populate each of the three segments by describing the product that you believe gets the customers' key jobs done. Describe how it relieves their most important pains, and how it achieves their most important gains.
 
 ## Task: Complete your own Value Proposition Canvas
 
