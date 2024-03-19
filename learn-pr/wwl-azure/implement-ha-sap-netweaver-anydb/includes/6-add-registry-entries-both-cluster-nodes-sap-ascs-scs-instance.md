@@ -2,56 +2,9 @@ Azure load balancer has an internal load balancer that closes connections when t
 
 To add registry entries on both cluster nodes of the SAP ASCS/SCS instance, first add these Windows registry entries on both Windows cluster nodes for SAP ASCS/SCS:
 
-:::row:::
-  :::column:::
-    **Path**
-  :::column-end:::
-  :::column:::
-    **Variable name**
-  :::column-end:::
-  :::column:::
-    **Variable type**
-  :::column-end:::
-  :::column:::
-    **Value**
-  :::column-end:::
-  :::column:::
-    **Documentation**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    HKLM\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters
-  :::column-end:::
-  :::column:::
-    KeepAliveTime
-  :::column-end:::
-  :::column:::
-    REG\_DWORD (Decimal)
-  :::column-end:::
-  :::column:::
-    120000
-  :::column-end:::
-  :::column:::
-    [KeepAliveTime](/previous-versions/windows/it-pro/windows-2000-server/cc957549%28v=technet.10%29)
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    HKLM\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters
-  :::column-end:::
-  :::column:::
-    KeepAliveInterval
-  :::column-end:::
-  :::column:::
-    REG\_DWORD (Decimal)
-  :::column-end:::
-  :::column:::
-    120000
-  :::column-end:::
-  :::column:::
-    [KeepAliveInterval](/previous-versions/windows/it-pro/windows-2000-server/cc957548%28v=technet.10%29)
-  :::column-end:::
-:::row-end:::
+| Path | Variable name | Variable type | Value | Documentation |
+|--|--|--|--|--|
+| HKLM\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters | KeepAliveTime | REG\_DWORD (Decimal) | 120000 | [KeepAliveTime](/previous-versions/windows/it-pro/windows-2000-server/cc957549%28v=technet.10%29) |
+| HKLM\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters | KeepAliveInterval | REG\_DWORD (Decimal) | 120000 |[KeepAliveInterval](/previous-versions/windows/it-pro/windows-2000-server/cc957548%28v=technet.10%29) |
 
 To apply the changes, restart both cluster nodes.
