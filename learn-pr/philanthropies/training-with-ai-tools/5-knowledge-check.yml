@@ -35,7 +35,7 @@ quiz:
           explanation: "Incorrect. Reading Coach isn't designed to teach a learner a new language."
         - content: "I would use Reading Coach to create targeted practice exercises for the learner."
           isCorrect: true
-          explanation: "Correct. Creating targeted practice exerciese for the learner is an effective use of Reading Coach."
+          explanation: "Correct. Creating targeted practice exercises for the learner is an effective use of Reading Coach."
     - content: "How would you use Microsoft Designer to create custom content for a training session?"
       choices:
         - content: "I would use Microsoft Designer to help code debugging for training materials."
