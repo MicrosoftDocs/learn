@@ -27,8 +27,6 @@ roles:
 products:
 - azure
 - azure-service-bus
-subjects:
-- development-tools
 units:
 - learn.azure.cloud-scale-messaging-jms-service-bus.1-introduction
 - learn.azure.cloud-scale-messaging-jms-service-bus.2-create-your-service-bus-premium-namespace

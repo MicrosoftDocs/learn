@@ -30,8 +30,6 @@ products:
   - blazor
   - dotnet
   - aspnet-core
-subjects:
-- development-tools
 units:
 - learn.intro-to-blazor.introduction
 - learn.intro-to-blazor.what-is-blazor

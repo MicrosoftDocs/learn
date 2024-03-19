@@ -35,8 +35,6 @@ roles:
 products:
 - aspnet-core
 - dotnet
-subjects:
-- development-tools
 units:
 - learn.wwl.render-api-responses-razor-pages.introduction
 - learn.wwl.render-api-responses-razor-pages.explore-asp-core-razor-pages
