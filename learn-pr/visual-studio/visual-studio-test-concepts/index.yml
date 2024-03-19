@@ -29,7 +29,6 @@ products:
   - vs
 subjects:
 - devops
-- development-tools
 units:
 - learn.visual-studio-test-concepts.1-introduction
 - learn.visual-studio-test-concepts.2-what-is-testing

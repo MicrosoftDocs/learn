@@ -23,8 +23,6 @@ roles:
 products:
 - aspnet-core
 - dotnet
-subjects:
-- development-tools
 modules:
 - learn.wwl.interact-api
 - learn.wwl.implement-http-operations-asp-razor
