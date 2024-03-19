@@ -13017,6 +13017,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/migrate-sql-workloads-azure-sql-database/index.yml",
+      "redirect_url": "/training/modules/migrate-sql-workloads-azure-sql-databases/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/deploy-mariadb-mysql-postgresql-azure/5-explain-database-migration-options.md",
       "redirect_url": "/training/modules/deploy-mariadb-mysql-postgresql-azure/",
       "redirect_document_id": false
