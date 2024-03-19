@@ -31,8 +31,6 @@ roles:
 - data-scientist
 products:
 - azure
-subjects:
-- development-tools
 modules:
 - learn.student-evangelism.introduction-python-nasa
 - learn.student-evangelism.install-code-tools-python-nasa
