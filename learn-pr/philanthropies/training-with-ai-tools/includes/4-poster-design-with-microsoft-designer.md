@@ -41,7 +41,7 @@ When creating visually engaging training plans, Microsoft Designer can play a pi
 
 9. Review and polish your poster until you're satisfied with the result.
 
-10. Once ready promote the poster on social media and encourage audience feedback through comments and/or messages.
+10. Once ready, promote the poster on social media and encourage audience feedback through comments and/or messages.
 
 ## Document your reflection on using Microsoft Designer
 
