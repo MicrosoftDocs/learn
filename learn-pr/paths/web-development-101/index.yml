@@ -19,7 +19,6 @@ roles:
 products:
 - azure
 subjects:
-- development-tools
 - accessibility
 modules:
 - learn.student-evangelism.web-development-101.introduction-to-programming

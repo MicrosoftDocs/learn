@@ -24,8 +24,6 @@ products:
 - azure
 - dotnet
 - vs-ide
-subjects:
-- development-tools
 modules:
 #- learn.visual-studio.visual-studio-intro
 #- learn.visual-studio-github-push
