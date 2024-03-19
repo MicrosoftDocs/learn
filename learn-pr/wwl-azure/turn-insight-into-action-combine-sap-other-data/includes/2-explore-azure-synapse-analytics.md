@@ -4,7 +4,7 @@ Azure Synapse Analytics is an integrated analytics platform. Within one environm
 
 The following figure provides a rough overview of the components that comprise Azure Synapse Analytics. Potential data sources display on the left feeding into Azure Synapse. To the right are some of the Azure services that are deeply integrated with Azure Synapse. This module focuses on the highlighted components.
 
-:::image type="content" source="../media/azure-synapse-analytics-highlights.png" alt-text="Diagram displaying components of Azure Synapse Analytics, along with potential data sources on the left, and Azure services that are deeply integrated with Azure Synapse on the right. Highlighted components: S A P and Cosmos D B, Synapse Studio, SQL, Azure Machine Learning, Power B I, Power Apps, and Power Automate.":::
+:::image type="content" source="../media/azure-synapse-analytics-highlights.png" alt-text="Diagram displaying components of Azure Synapse Analytics, along with potential data sources on the left, and Azure services that are deeply integrated with Azure Synapse on the right. Highlighted components: S A P and Cosmos DB, Synapse Studio, SQL, Azure Machine Learning, Power BI, Power Apps, and Power Automate.":::
 
 ## When to use Azure Synapse Analytics
 

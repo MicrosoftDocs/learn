@@ -26,7 +26,7 @@ Azure Cosmos DB is a NoSQL database for modern app development. As a fully manag
 
 To link to Cosmos DB, choose New linked service and search for Cosmos DB. Select the tile to configure the service, providing your Cosmos DB details when requested.
 
-:::image type="content" source="../media/new-linked-service-search-results.png" alt-text=Screenshot of "Azure Synapse Studio search results for Cosmos D B linked services.":::
+:::image type="content" source="../media/new-linked-service-search-results.png" alt-text="Screenshot of Azure Synapse Studio search results for Cosmos DB linked services.":::
 
 Azure Synapse simplifies your ability to connect to the required data sources.
 
