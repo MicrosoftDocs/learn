@@ -13,12 +13,13 @@ summary: "After onboarding a sensor and deployed Defender for IoT, control the t
 abstract: |
   By the end of this module, you're able to:
     - Control the traffic monitored by your sensor by fine-tuning the subnets defined and detected device details
-    - Create a baseline of OT network traffic for your sensor to compare against when learning mode is completed.
+    - Create a baseline of OT network traffic for your sensor to compare against when learning mode is completed
 prerequisites: |
-  - Knowledge of what Defender for IoT is and how it works at a beginner level. 
-  - Access to an [Azure subscription](https://azure.microsoft.com/free) as a Security Admin, Contributor, or Owner.
+  - Knowledge of what Defender for IoT is and how it works at a beginner level
+  - Access to an [Azure subscription](https://azure.microsoft.com/free) as a Security Admin, Contributor, or Owner
   - A Defender for IoT license with an [OT plan](/azure/defender-for-iot/organizations/getting-started)
   - Access to an installed sensor that's receiving network traffic
+  - Access to the full list of IP and subnet addresses for your OT network from the planning document
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - intermediate

@@ -20,16 +20,13 @@ The OT calibration and fine-tuning is the phase where you check that all of the 
 
 ## In this phase
 
-### Validate the list of devices in Defender for IoT
+### Validate the list of devices
 <!-- should this title be calibrate the list? -->
 Using Defender for IoT, compare the list of devices displayed by your sensor with the list in the network diagram. The number and type of devices must match exactly to ensure that the correct data is sent to Defender for IoT and that all of the devices are protected. If there are differences between the two lists, you must check and identify the reasons for the differences. Check that all of the devices are properly connected to the sensor, and that the monitoring settings are set correctly.
 
 ### Fine-tune your sensor subnets
 
 Now that all of the devices are properly connected to Defender for IoT, you must check that the settings for each device are assigned correctly. Defender for IoT automatically assigns settings for each device as it detects them. Most of the time these settings are correct, however, they must all be checked and in some cases you might need to update and change them. These checks ensure that the sensor processes the data correctly. If the settings aren't corrected, false alerts are sent that could leave other vulnerabilities on your devices, compromising your most critical assets<!-- could remove this last part? -->. Devices are also set to different safety or importance levels, which affect attack vector and risk assessment reports.
-
-<!-- What are managed and unmanaged devices?  check that all the assigned settings are correct. -->
-<!-- When does this categorization of devices occur, who does it? <https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/device-inventory#supported-devices>-->
 
 ## Outcome
 

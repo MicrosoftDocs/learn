@@ -18,4 +18,4 @@ In this module, you'll:
 
 ## What is the main goal?
 
-By the end of this session, you'll be able to fine tune and calibrate your OT sensor, ensuring that it sends accurate and filtered data. You'll also be able to triage the network alerts, making sure that they are created when suspicious traffic is detected. This completes the deployment process of the sensor to Defender for IoT. <!-- are we deploying a sensor or D4IoT? deployment of the sensor to Defender for IoT-->
+By the end of this session, you'll be able to fine tune and calibrate your OT sensor, ensuring that it sends accurate and filtered data. You'll also be able to triage the network alerts, making sure that they are created when suspicious traffic is detected. This completes the deployment process of the sensor to Defender for IoT. <!-- are we deploying a sensor or D4IoT? deployment of the sensor to Defender for IoT - theo-->
