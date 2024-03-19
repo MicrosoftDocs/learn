@@ -1,6 +1,6 @@
-You work at a company that tracks professional sports statistics and provides an API to query results. The API helps fans track and review games and scores, both live and historical. Users can also request team statistics using a natural language search, such as "How many times has John Smith hit a home run against a left-handed pitcher?".
+You work at a company that tracks professional sports statistics and provides an API to query results. The API helps fans track and review games and scores, both live and historical. Users can also request team statistics using a natural-language search, such as "How many times has John Smith hit a home run against a left-handed pitcher?"
 
-During times of peak demand, such as during playoffs, the response time of your service slows down because the back-end service doesn't have the capacity to meet demand. You want to improve performance for your users and reduce the workload on your back-end and data storage services. Your metrics show that 50% to 80% of the data returned is for read-only or recently requested values. Implementing a cache of commonly used data could improve performance and reduce latency.
+During times of peak demand, such as during playoffs, your service's response time slows down because the back-end service doesn't have the capacity to meet demand. You want to improve performance for your users and reduce the workload on your back-end and data storage services. Your metrics show that 50% to 80% of the data returned is for read-only or recently requested values. Implementing a cache of commonly used data could improve performance and reduce latency.
 
 ## Learning objectives
 
