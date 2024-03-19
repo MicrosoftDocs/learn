@@ -14,7 +14,7 @@ In this example of registering an app in Microsoft Entra ID uses a single-page a
 
 Follow these steps to add a redirect URI for an app that uses MSAL.js 2.0 or later. MSAL.js 2.0+ supports the authorization code flow with PKCE and CORS in response to browser third party cookie restrictions. The implicit grant flow isn't supported in MSAL.js 2.0+.
 
-1.  In the **Microsoft Entra admin center**, select the app registration you created in the previous step.
+1.  In the **Entra admin center**, select the app registration you created in the previous step.
 2.  Under **Manage**, select **Authentication**
 3.  Select **+ Add a platform**.
 4.  Under Web applications, select the Single-page application tile.

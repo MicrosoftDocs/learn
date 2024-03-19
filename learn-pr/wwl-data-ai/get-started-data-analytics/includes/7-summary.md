@@ -8,7 +8,7 @@ By completing this module, you've learned how to:
 
 ## Resources
 
-Use the following resources to discover more:
+Use the following resources to discover more: 
 
 - [Get started with Microsoft data analytics](/training/paths/data-analytics-microsoft/)
 - [Create and use analytics reports with Power BI](/training/paths/create-use-analytics-reports-power-bi/)

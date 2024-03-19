@@ -1,71 +1,41 @@
-An application has various resources, like products or orders. Divide your application into sections for the resources. Using sections helps you maintain and extend the app.
+An application has a variety of data it manages, like products or orders. As a developer for Tailwind Traders, organize your APIs into sections for the type of data. Using sections helps you maintain and extend the app.
 
-An easy way to extend a web app is to make sure that resources are accessible through dedicated URLs. Two URLs trigger two different parts of code in your web app.  
+An easy way to extend a web app is to make sure that data is accessible through dedicated URLs. Two different URLs trigger two different parts of code in your web app.  
 
-This unit describes understand what a URL is, along with other concepts for creating an API.
-
-## URL
-
-A URL is an address that a user enters into a client, like a browser, to locate a specific server and a specific resource. Knowing how the URL works helps you organize your app around it. 
-
-Here's a typical URL:
-
-```bash
-http://localhost:8000/products/1?page=1&pageSize=20
 ```
+https://tailwindtraders.com/products
+https://tailwindtraders.com/orders
+```
+
+This unit describes what a URL is in order to create an API.
+
+## URL path 
+
+A URL is an address that a user enters into a client, like a browser, to locate a specific server and a specific functionality. Knowing how the URL works helps you organize your app around it. 
+
+Here's a typical URL: `http://localhost:8000/products/1?page=1&pageSize=20`
 
 The URL conforms to a syntax that looks like this:
 
-```bash
-scheme:[//authority]path[?query][#fragment]
-```
+`scheme:[//authority]path[?query][#fragment]`
 
-Let's explain the parts.
+Let's explain the parts for the example URL: `https://tailwindtraders.com/products/1?page=1&pageSize=20#sort=asc`.
 
-### Scheme
+| URL Component | Example | Description |
+| --- | --- | --- |
+| Scheme | `https` |The protocol used, such as `http`, `https`, `ftp`, `irc`, or `file`. |
+| Authority | `tailwindtraders.com` |Consists of optional user info and a host, which is usually a domain name. |
+| Path | `/products/1` |Zero to many segments separated by a slash (`/`), specifying the resources you're interested in. |
+| Query | `page=1&pageSize=20` |Optional part defined after the `?` character, consisting of parameter/value pairs to filter data further. |
+| Fragment | `sort=asc` |Helps you be even more specific, such as sorting the data in a particular order. |
 
-The scheme part of a URL indicates the protocol. In the preceding example of a typical URL, the scheme is `http`. Other examples of schemes are `https`, `ftp`, `irc`, and `file`.
+Each route can have actions such as create, read, update, and delete (known as CRUD). The action is indicated by the route method, and combined with additional information sent in the HTTP headers and body. 
 
-### Authority
+## HTTP handlers
 
-The authority consists of optional user info (*username@password*) and a host. In the example URL, `localhost` is the host part and points to your own machine as the web server. On the web, the host part is usually a domain name, like `google` or `microsoft`.
+Express is a web framework that helps you create HTTP APIs. Use it to create routes that handle HTTP requests.
 
-The host is a friendly name that you specify instead of an IP address. The IP address is the actual web address. It's a series of numbers, such as `127.0.0.1`. An IP address makes it easy for routers to route requests from one part of the web to another. However, it's not human friendly. Hosts and domain names exist so that we can remember them.
-
-### Path
-
-The path portion of the URL consists of zero to many segments. Each segment is separated by a slash (`/`). In the example URL, the only segment is `/products`. A segment filters down the exact resources you're interested in.
-
-### Query
-
-A query is an optional part of the URL that's defined after the question mark (`?`) character. It consists of query parameter/value pairs delimited by either an ampersand (`&`) or a semicolon (`;`). It filters data further by asking for many records from a specific page.
-
-The query in the example URL is `?page=1&pageSize=20`. Imagine that you have 2 million records on a resource. It would take a long time to return all those records. If you specify that you want 20 records, the data returns quickly and is small in size.
-
-### Fragment
-
-The fragment part of the URL helps you be even more specific. For example, a fragment can sort the data that you ask for in a particular order.
-
-## Route
-
-A route is a subsection of a URL that usually points to a specific resource. Express handles the following concepts for routes that help you be more intentional.
-
-### Route parameter
-
-A route parameter in a URL signals that you want to access a specific resource from a collection.
-
-Look at the route `/orders/1/items/2`. The route parameters are `1` and `2`. The `1` signals that you want a specific order with the unique key `1`. The `2` asks for a specific order item with the unique key `2`. These route parameters return a specific resource rather than all resources of a specific type.
-
-Express defines routes and associates different *handlers* with them. Handlers are code that's invoked when a certain path is matched. Express has a pattern-handling mechanism to manage different-looking routes. The following table shows different routes expressed as route patterns.
-
-| Route                        | Express route pattern         |
-|------------------------------|-------------------------------|
-| /products                    | products/                     |
-| /products/1 and products/114 | products/:id                  |
-| /orders/1/items/2            | orders/:orderId/items/:itemId |
-| xyz                          | **                            |
-
-Write code to match the table for `/products/114`, like this:
+Here's an example of code that handles HTTP requests for the URL `/products/114`:
 
 ```javascript
 app.get('/products/:id', (req, res) => {
@@ -73,57 +43,75 @@ app.get('/products/:id', (req, res) => {
 })
 ```
 
-Route parameters are written to a `params` property on the `req` request object. A request of `/products/114` would have `req.params.id` that contains `114`.
+The format of the handler is `app.<method>(<route>, <callback>)`. The request for the route `/products/114` with the GET method runs the code in the function which has access to the incoming request (`req`) and returns the response (`res`). 
 
-### Query parameter
-
-The query part of the URL is a set of key/value pairs that exist after the `?` character. The route example, `/products?page=1&pageSize=20`, shows the query parameters `page` and `pageSize`. These two parameters work in tandem to help you filter down the size of a returned response. 
-  
-Imagine if the route `/products` returned 2 million records from a database. That response would be huge, and it would take a long time to appear. That time creates a poor user experience and a strain on the app. A better approach is to use query parameters to limit the size of the response.
-
-Express has an easy way of handling query parameters. Given the route `/products?page=1&pageSize=20`, the query parameters are written to a query object on the `res` request object, like the following example:
+This code can be rewritten to make it easier to read:
 
 ```javascript
-app.get('/products', (req, res) => {
-  // handle this request `req.query.page` and `req.query.pageSize`
+const routeHandler = (incomingRequest, outgoingResponse) => {
+  // handle this request
+}
+
+app.get('/products/:id', routeHandler)
+```
+
+In your work at Tailwind Traders, you may have to work in Express apps with either style of code.
+
+## Incoming data
+
+Data can be sent into the API in several ways: 
+
+| Data | Location | Explanation | 
+| --- | --- | --- |
+| Route parameter |  `/products/:id`, where `:id` is the parameter | Route parameters are part of the URL. They're used to identify a specific resource. The data length is confined to the allowed length of the URL so it is typically short such as an ID or a name. A route can have multiple parameters.|
+| Query parameter | `/products?page=1&pageSize=20`, where `?page=1&pageSize=20` is the parameter | Query parameters are part of the URL. They're used to filter data. The data length is confined to the allowed length of the URL so it is typically short such as an ID or a name. A route can have multiple query parameters.|
+| Request body | `POST /products` | The request body is part of the HTTP request. It's used to send data to the API. The data length isn't confined to the allowed length of the URL so it can be long. The HTTP header indicates to the API the type of data such as text, JSON, or binary.|
+
+Incoming data usually matches the following methods based on the purpose of the action: 
+
+| Action | Method | Data |
+| --- | --- | --- |
+| Create | POST | Request body |
+| Read | GET | Route and query parameters |
+| Update | PUT | Request body |
+| Delete | DELETE | Route and query parameters |
+
+> [!TIP]
+> The first letter of each method spells CRUD. That terms is used in the industry to describe the four basic types of operations that can be performed on data.
+
+## Route parameter example with req.params
+
+Assume the request URL is `/products/20`. The Express route to handle this request is:
+
+```javascript
+app.get('/products/:id', (req, res) => {
+    const id = req.params.id
+
+    // get product that matches id from database
 })
 ```
 
-To create a request with the route `/products?page=1&pageSize=20`, `req.query` has the following value:
+## Query string example with req.query
+
+Assume the request URL is `/products?page=1&pageSize=20`. The Express route to handle this request is:
 
 ```javascript
-{
-  page: 1,
-  pageSize: 20
-}
+app.get('/products', (req, res) => {
+    const page = req.query.page
+    const pageSize = req.query.pageSize
+
+    // get next page of products from database
+})
 ```
 
-### General pattern management
+## Request body example with req.body
 
-So far, you've seen simple routes like `/products` and `/orders/1/items/2`. There are other patterns, like `**`, which can mean *catch-all*. You would normally define such a route to make sure that unexpected requests, like typos, are handled in a graceful way. This route helps provide a good user experience.
+Assume the request URL is `/products` and the request body is `{ "name": "Product 1" }`. The Express route to handle this request is:
 
-### HTTP verb
+```javascript
+app.post('/products', (req, res) => {
+    const name = req.body.name
 
-An HTTP verb expresses the *what*. HTTP verbs like `get` and `post` represent different intentions. By using the verb `get`, you're saying that you want to read data from the resource. The verb `post` means that you want to write data toward the resource.
-
-Express has specific methods that let you associate code with a specific URL fragment and HTTP verb.
-
-## Use Development container for consistent development environment
-
-A development container is a configured environment, which includes all tools and applications needed to complete a development task. This allows development teams to focus on writing code instead of chasing issues stemming from working in an environment (perhaps multiple environments) different than the production environment. 
-
-A development container can run:
-
-* **Remotely**: In the browser, you can use GitHub Codespaces and Visual Studio Code for the Web, using free compute time available with your GitHub account.
-*  **Locally**: On your local computer, you can use Visual Studio Code [] with a configured container environment or you can start with the default environment. Docker Community edition is required.
-
-### Remote development
-
-[GitHub Codespaces](https://docs.github.com/codespaces) runs a development container managed by GitHub with [Visual Studio Code for the Web](https://code.visualstudio.com/docs/editor/vscode-web) as the user interface. For the most straightforward development environment, use GitHub Codespaces so that you have the correct developer tools and dependencies preinstalled to complete this training module.
-
-> [!IMPORTANT]
-> All GitHub accounts can use Codespaces for up to 60 hours free each month with 2 core instances. For more information, see [GitHub Codespaces monthly included storage and core hours](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts).
-
-### Local development
-
-The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) for Visual Studio Code requires [Docker](https://docs.docker.com/) to be installed on your local machine. The extension hosts the development container locally using the Docker host with the correct developer tools and dependencies preinstalled to complete this training module.
+    // add new product to database
+})
+```

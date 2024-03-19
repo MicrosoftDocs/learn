@@ -12,7 +12,7 @@ If you don't specify an argument to the OVER clause, the window functions will b
 
 The following diagram shows the relationship between SELECT, OVER, and PARTITION BY:
 
-:::image type="content" source="../media/partition-by.png" alt-text="An image of a diagram showing how PARTITION BY further sub-divides the rows defined in the OVER clause.":::
+:::image type="content" source="../media/partition-by.png" alt-text="Diagram showing how PARTITION BY further sub-divides the rows defined in the OVER clause.":::
 
 ## PARTITION BY
 

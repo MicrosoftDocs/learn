@@ -116,3 +116,4 @@ There are many other features available within a Bicep file such as loops, condi
 ## Next steps
 
 In the next unit, you'll learn how to use Bicep in an Azure Pipeline.
+

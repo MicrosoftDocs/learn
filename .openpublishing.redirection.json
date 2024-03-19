@@ -32632,6 +32632,61 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/advocates/replace-faces-with-emojis-matching-emotion/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-bot-conversation-flow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/replace-faces-with-emojis-matching-emotion/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-bot-conversation-flow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/replace-faces-with-emojis-matching-emotion/2-conceptual-overview.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-bot-conversation-flow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/replace-faces-with-emojis-matching-emotion/3-setup.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-bot-conversation-flow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/replace-faces-with-emojis-matching-emotion/4-create-an-azure-function-project.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-bot-conversation-flow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/replace-faces-with-emojis-matching-emotion/5-create-the-mojifyimage-azure-function.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-bot-conversation-flow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/replace-faces-with-emojis-matching-emotion/6-create-the-respondtoslackcommand-function.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-bot-conversation-flow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/replace-faces-with-emojis-matching-emotion/7-deploy-to-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-bot-conversation-flow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/replace-faces-with-emojis-matching-emotion/8-integrate-with-slack.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-bot-conversation-flow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/replace-faces-with-emojis-matching-emotion/9-optionally-calibrate-emojis.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-bot-conversation-flow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/replace-faces-with-emojis-matching-emotion/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-bot-conversation-flow/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/automate-deployments-github-actions-azure/index.yml" ,
       "redirect_url": "https://learn.microsoft.com/training/modules/github-actions-cd",
       "redirect_document_id": false
@@ -35139,6 +35194,86 @@
     {
       "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/9-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/19-summary",
+      "redirect_document_id": false
+    },
+       {
+      "source_path": "learn-pr/wwl-data-ai/teach-ai-102-design-implement-microsoft-azure-ai-solution/10-explore-best-practices-for-solution-module-7.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/teach-ai-102-design-implement-microsoft-azure-ai-solution/",
+      "redirect_document_id": false
+    },
+       {
+      "source_path": "learn-pr/wwl-data-ai/teach-ai-102-design-implement-microsoft-azure-ai-solution/11-explore-best-practices-for-solution-module-8.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/teach-ai-102-design-implement-microsoft-azure-ai-solution/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/teach-ai-102-design-implement-microsoft-azure-ai-solution/12-explore-best-practices-for-solution-module-9.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/teach-ai-102-design-implement-microsoft-azure-ai-solution/",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-data-ai/teach-ai-102-design-implement-microsoft-azure-ai-solution/13-explore-best-practices-for-solution-module-10.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/teach-ai-102-design-implement-microsoft-azure-ai-solution/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-data-ai/teach-ai-102-design-implement-microsoft-azure-ai-solution/14-explore-best-practices-for-solution-module-11.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/teach-ai-102-design-implement-microsoft-azure-ai-solution/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/teach-ai-102-design-implement-microsoft-azure-ai-solution/15-explore-best-practices-for-solution-module-12.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/teach-ai-102-design-implement-microsoft-azure-ai-solution/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-data-ai/teach-ai-102-design-implement-microsoft-azure-ai-solution/16-bring-it-together.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/teach-ai-102-design-implement-microsoft-azure-ai-solution/10-bring-it-together/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-data-ai/teach-ai-102-design-implement-microsoft-azure-ai-solution/17-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/teach-ai-102-design-implement-microsoft-azure-ai-solution/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-data-ai/teach-ai-102-design-implement-microsoft-azure-ai-solution/18-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/teach-ai-102-design-implement-microsoft-azure-ai-solution/12-summary/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/teach-ai-102-design-implement-microsoft-azure-ai-solution/3-learn-module-best-practices.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/teach-ai-102-design-implement-microsoft-azure-ai-solution/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/teach-ai-102-design-implement-microsoft-azure-ai-solution/4-explore-best-practices-for-solution-module-1.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/teach-ai-102-design-implement-microsoft-azure-ai-solution/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-data-ai/teach-ai-102-design-implement-microsoft-azure-ai-solution/5-explore-best-practices-for-solution-module-2.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/teach-ai-102-design-implement-microsoft-azure-ai-solution/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/teach-ai-102-design-implement-microsoft-azure-ai-solution/6-explore-best-practices-for-solution-module-3.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/teach-ai-102-design-implement-microsoft-azure-ai-solution/",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-data-ai/teach-ai-102-design-implement-microsoft-azure-ai-solution/7-explore-best-practices-for-solution-module-4.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/teach-ai-102-design-implement-microsoft-azure-ai-solution/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-data-ai/teach-ai-102-design-implement-microsoft-azure-ai-solution/8-explore-best-practices-for-solution-module-5.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/teach-ai-102-design-implement-microsoft-azure-ai-solution/",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-data-ai/teach-ai-102-design-implement-microsoft-azure-ai-solution/9-explore-best-practices-for-solution-module-6.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/teach-ai-102-design-implement-microsoft-azure-ai-solution/",
       "redirect_document_id": false
     }
   ]
