@@ -2,7 +2,7 @@ Your sensor now sends data to Microsoft Defender for IoT. You need to check that
 
 ## Check public IP addresses
 
-What do we do here? give example of how this is done? 
+What do we do here? give example of how this is done?
 
 ## View the subnets detected by your sensor
 
@@ -13,6 +13,8 @@ First you must analyze the traffic being monitored by the OT sensor.
 1. Select **Analyze** to start the subnet analysis process
 
 This tracks each interface and device the sensor is monitoring and lists the subnet associated with each one. When the analysis is complete, you need to check that each interface is monitoring the correct traffic. Use the OT network plan, from the planning team, to compare the subnet information with the results of the Analyze process.
+
+## Modify subnet data
 
 If you find a device incorrectly configured, make the following changes:
 
@@ -25,14 +27,7 @@ If you find a device incorrectly configured, make the following changes:
 
 We recommend giving a meaningful name that specifies the subnet's network role. Subnet names can have up to 60 characters.
 
-## Modify subnet data
-
-In the **Device inventory**, you can view the subnets grouped as either *local* or *routed*. All of the devices connected to a listed subnet are called *local* devices, while the devices connected to unlisted subnets are called *routed*. <!-- is this really important, theo-->
-
-1. Choose **Add filter**
-1. Choose **Network Location**
-1. Choose either **Local** or **Routed**
-
+Once all changes are made, return to **System setting** > **Deployment** and run the **Analyze** feature again and review the results to ensure the set up is now correct.  
 <!--updating the subnets listed, where do they find this data? they should have it from the original network map!? 
 
 To update the subnet data, adjust the subnet settings. These adjustments involve changing subnet addresses that change the location of a device within the sensor's device map.
@@ -51,11 +46,17 @@ We recommend giving a meaningful name that specifies the subnet's network role. 
 
 When all of the subnets are correctly set up, select **Save**.
 <!-- end of section-->
-Once all changes are made, return to **System setting** > **Deployment** and run the **Analyze** feature again and review the results to ensure the set up is now correct.  
 
-## View detected devices
+## View and update detected devices
 
-All of the devices detected by the OT sensor appear in the Device inventory. Check the devices listed.
+All of the devices detected by the OT sensor appear in the Device inventory.
+
+In the **Device inventory**, you can view the subnets grouped as either *local* or *routed*. All of the devices connected to a listed subnet are called *local* devices, while the devices connected to unlisted subnets are called *routed*. <!-- is this really important, theo-->Check through all of the devices listed.
+
+1. Select **Device inventory**
+1. Select **Add filter**
+1. Select **Network Location**
+1. Select either **Local** or **Routed**
 
 To make changes to a device detail:
 
@@ -64,21 +65,20 @@ To make changes to a device detail:
 
 You can update the following fields:
 
-1. Authorized device
-1. Name
-1. Description
-1. OS platform
-1. Type
-1. Purdue level
-1. Scanner
-1. Programming device
+    - Authorized device
+    - Name
+    - Description
+    - OS platform
+    - Type
+    - Purdue level
+    -  Scanner
+    - Programming device
 
 Select **Save**.
 :::image type="content" source="../media/device settings edit.png" alt-text="screenshot of hte edit pane for device settings":::
 <!-- It's important to review the data for the **Name**, **Class**, **Type**, and **Subtype**, **Authorized device**, **Scanner device**, and **Programming device** columns. - I think this is incorrect as per the user story <https://dev.azure.com/msft-skilling/Content/_workitems/edit/232468/> -->
-
-## Update selected details
 <!-- how to give examples of this?? how to choose a device, what will they see? should be supply a PCAP file to upload, seems too much. So how do we demonstrate the updating?-->
+
 After checking the details of the devices, we'll update the details for one listed device. Devices can also be marked *Authorize* or *Unauthorize*. This is found in the device properties settings.
 
 We need to update several of the fields.
@@ -97,7 +97,7 @@ Assign a unique device as **Important**. In the Device map:
 
 ## Add DHCP address ranges
 
-Add the DHCP address ranges for a device.<!-- if we think this is relevant take the info from here for instructions. <https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-control-what-traffic-is-monitored#configure-dhcp-address-ranges> -->
+Add the DHCP address ranges for a device.<!-- if we think this is relevant take the info from here for instructions. <https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-control-what-traffic-is-monitored#configure-dhcp-address-ranges> Theo needs to send this to me-->
 
 ## Merge devices
 
