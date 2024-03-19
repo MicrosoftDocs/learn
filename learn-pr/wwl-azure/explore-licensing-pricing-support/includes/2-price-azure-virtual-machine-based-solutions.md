@@ -13,7 +13,7 @@ The options that you can configure in the Pricing calculator vary between produc
 - **Region**: A region is the geographical location in which you can provision a service. Southeast Asia, Central Canada, Western United States, and Northern Europe are a few examples.
 - **Tier**: Tiers, such as the Free tier or Basic tier, have different levels of availability or performance and different associated costs.
 - **Billing options**: Billing options highlight the different ways you can pay for a service. Options can vary based on your customer type and subscription type and can include options to save costs.
-- **Support option**s: These options enable you to select additional support pricing options for certain services.
+- **Support option**s: These options enable you to select extra support pricing options for certain services.
 - **Programs and offers**: Your customer or subscription type might enable you to choose from specific licensing programs or other offers.
 - **Azure Dev/Test pricing**: This option lists the available prices for development and test workloads. Dev/Test pricing applies when you run resources within an Azure subscription that's based on a Dev/Test offer.
 
@@ -23,6 +23,6 @@ Keep in mind that the Pricing calculator provides estimates and *not* actual pri
 
 The [Azure TCO calculator](https://azure.microsoft.com/pricing/tco/calculator/) helps you estimate the cost savings of operating your solution on Azure over time, instead of in your on-premises datacenter.
 
-The term *total cost of ownership* (TCO) is commonly used in finance. It can be hard to see all the hidden costs related to operating a technology capability on-premises. Software licenses and hardware are additional costs.
+The term *total cost of ownership* (TCO) is commonly used in finance. It can be hard to see all the hidden costs related to operating a technology capability on-premises. Software licenses and hardware are extra costs.
 
 With the TCO calculator, you enter the details of your on-premises workloads. Then you review the suggested industry average cost (which you can adjust) for related operational costs. These costs include electricity, network maintenance, and IT labor. You're then presented with a side-by-side report. Using the report, you can compare those costs with the same workloads running on Azure.
