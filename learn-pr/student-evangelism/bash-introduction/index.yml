@@ -31,7 +31,6 @@ products:
 - azure
 - azure-clis
 subjects:
-- development-tools
 - it-management-monitoring
 units:
 - learn.student-evangelism.bash-introduction.0-introduction

@@ -29,8 +29,6 @@ roles:
   - developer
 products:
   - azure
-subjects:
-- development-tools
 units:
 - learn.beginner-python.python-loops.introduction
 - learn.beginner-python.python-loops.while-loops

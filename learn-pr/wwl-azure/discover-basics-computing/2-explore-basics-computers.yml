@@ -4,12 +4,10 @@ title: Explore the basics of computers
 metadata:
   title: Explore the basics of computers
   description: "Explore the basics of computers"
-  ms.date: 12/22/2022
+  ms.date: 03/19/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: robbarefoot
   ms.topic: unit
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/2-explore-basics-computers.md)]
