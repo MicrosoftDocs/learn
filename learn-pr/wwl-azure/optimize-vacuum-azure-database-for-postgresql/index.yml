@@ -25,7 +25,7 @@ roles:
 products:
 - azure-database-postgresql
 subjects:
-- database
+- databases
 units:
 - learn.wwl.optimize-vacuum-azure-database-for-postgresql.introduction
 - learn.wwl.optimize-vacuum-azure-database-for-postgresql.explain-purpose-vacuum-autovacuum

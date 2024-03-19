@@ -103,7 +103,7 @@ You can now test the new authentication policy with and without the certificate.
 1. To test the API without the certificate, run the following command in Cloud Shell, replacing the placeholder values with your API gateway name and subscription key.
 
     ```PowerShell
-    curl -X GET https://[api-gateway-name].azure-api.net/api/Weather/53/-1 \
+    curl -X -v GET https://[api-gateway-name].azure-api.net/api/Weather/53/-1 \
       -H 'Ocp-Apim-Subscription-Key: [Subscription Key]' 
     ```
 
