@@ -25,7 +25,6 @@ subjects:
 modules:
 - learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics
 - learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db
-- learn.wwl.implement-synapse-link-dataverse
 - learn.wwl.implement-synapse-link-for-sql
 trophy:
   uid: learn.wwl.work-hybrid-transactional-analytical-processing-solutions.trophy
