@@ -3,10 +3,11 @@ uid: learn.data-ai.implement-data-streaming-with-asa
 metadata:
   title: Implement a Data Streaming Solution with Azure Stream Analytics
   description: Implement a Data Streaming Solution with Azure Stream Analytics
-  ms.date: 12/13/2022
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: jamesh
   ms.topic: learning-path
+  ms.service: stream-analytics
 title: Implement a Data Streaming Solution with Azure Stream Analytics
 prerequisites: |
   Before starting this learning path, you should have a fundamental understanding of cloud computing and data analytics.
