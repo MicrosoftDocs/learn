@@ -6,7 +6,7 @@ For this module, you have a virtual machine (VM) ready to act as the operational
 
 The OT sensor deployment plan is shown in the following diagram:
 
-:::image type="content" source="../media/3-deploy-sensors.png" alt-text="Diagram of the sensor deployment path" border="false":::
+:::image type="content" source="../media/3-deploy-sensors.png" alt-text="Diagram of the sensor deployment path." border="false":::
 
 This module deals with installing and activating the monitoring software on the OT sensor.
 
@@ -26,7 +26,7 @@ Complete the following steps to install the monitoring software on the VM sensor
 
 Once the installation completes, the default network details are displayed in the VM. <!-- check with Theo where this is displayed?-->
 
-## Activate and intial set up
+## Activate and initial setup
 
 Configure the sensor in a browser, and provide the sensor administrator username and password.
 

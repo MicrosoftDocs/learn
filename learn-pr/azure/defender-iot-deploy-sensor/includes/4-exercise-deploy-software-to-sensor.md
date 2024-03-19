@@ -26,7 +26,7 @@ To get started, download the software from Defender for IoT.
 1. In Defender for IoT select **Getting started > Sensor**.
 1. Select the latest software version and select **Download**.
 
-    :::image type="content" source="../media/4-download-iso-file.png" alt-text="screenshot of Downloading ISO monitoring file from Defender for IoT" lightbox="../media/4-download-iso-file.png":::
+    :::image type="content" source="../media/4-download-iso-file.png" alt-text="Screenshot of Downloading ISO monitoring file from Defender for IoT." lightbox="../media/4-download-iso-file.png":::
 
 1. Save the downloaded ISO file in a location that's accessible from your VM.
 
@@ -42,7 +42,7 @@ Connect to your VM to install the software.
 
     The installation boots and a wizard opens, for example:
 
-    :::image type="content" source="../media/4-iot-iso-boot.png" alt-text="Screenshot of the installation wizard for mounting the ISO file on the OT sensor virtual machine" :::
+    :::image type="content" source="../media/4-iot-iso-boot.png" alt-text="Screenshot of the installation wizard for mounting the ISO file on the OT sensor virtual machine." :::
 
 1. Select **Install iot-sensor_<version_number>**.
 
@@ -73,7 +73,7 @@ Validate your installation using the sensor's own system health checks, availabl
     - **Version** to verify that you have the correct version installed.
     - **ifconfig** to verify that all input interfaces configured during installation are running.
 
-## Activate and intial set up
+## Activate and initial setup
 
 Sign in to the sensor to configure your sensor's initial settings. The setup has four stages.
 
