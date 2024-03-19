@@ -32632,6 +32632,61 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/advocates/replace-faces-with-emojis-matching-emotion/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-bot-conversation-flow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/replace-faces-with-emojis-matching-emotion/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-bot-conversation-flow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/replace-faces-with-emojis-matching-emotion/2-conceptual-overview.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-bot-conversation-flow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/replace-faces-with-emojis-matching-emotion/3-setup.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-bot-conversation-flow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/replace-faces-with-emojis-matching-emotion/4-create-an-azure-function-project.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-bot-conversation-flow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/replace-faces-with-emojis-matching-emotion/5-create-the-mojifyimage-azure-function.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-bot-conversation-flow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/replace-faces-with-emojis-matching-emotion/6-create-the-respondtoslackcommand-function.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-bot-conversation-flow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/replace-faces-with-emojis-matching-emotion/7-deploy-to-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-bot-conversation-flow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/replace-faces-with-emojis-matching-emotion/8-integrate-with-slack.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-bot-conversation-flow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/replace-faces-with-emojis-matching-emotion/9-optionally-calibrate-emojis.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-bot-conversation-flow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/replace-faces-with-emojis-matching-emotion/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-bot-conversation-flow/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/automate-deployments-github-actions-azure/index.yml" ,
       "redirect_url": "https://learn.microsoft.com/training/modules/github-actions-cd",
       "redirect_document_id": false

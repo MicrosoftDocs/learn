@@ -30,8 +30,6 @@ products:
 - azure
 - azure-clis
 - aspnet-core
-subjects:
-- development-tools
 units:
 - learn.azure.improve-developer-experience-of-an-api-with-swagger-documentation.introduction
 - learn.azure.improve-developer-experience-of-an-api-with-swagger-documentation.publish-openapi-documentation
