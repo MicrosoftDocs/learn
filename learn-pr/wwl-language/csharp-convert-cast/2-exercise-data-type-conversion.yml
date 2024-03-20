@@ -3,8 +3,8 @@ uid: learn.languages.csharp-convert-cast.exercise-data-type-conversion
 title: Exercise - Explore data type casting and conversion
 metadata:
   title: Exercise - Explore data type casting and conversion
-  description: "Exercise - Explore data type casting and conversion"
-  ms.date: 03/08/2024
+  description: "Explore different techniques that can be used for data type conversion."
+  ms.date: 03/20/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
