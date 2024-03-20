@@ -8,11 +8,7 @@ The OT sensor analyzes your system and assigns subnet settings and attempts to u
 
 ## Fine tuning
 
-The first stage of fine-tuning your sensor is to run the **Analyze** feature in the **Deployment** section of the OT sensor. When the analysis function is completed, check the information about each interface. If it isn't what you expected, you need to check the subnet and device settings and make any needed changes.
-
-## Check public IP addresses
-
-It's important to identify any public IP addresses that are used internally. These IP addresses must be listed **and add how to do this , is it in the System settings > sensor management > advanced configurations - Theo**.<!--what do we need to do? remove, reassign an IP, define as authorized? Theo--> If a public IP address isn't listed as a subnet, the sensor treats it as a public network for security settings.
+The first stage of fine-tuning your sensor is to run the **Analyze** feature in the **Deployment** section of the OT sensor. When the analysis function is completed, check the information about each interface. If the information isn't what you expected, you need to check the subnet and device settings and make any needed changes.
 
 ## Check and modify the subnet settings
 
@@ -22,7 +18,7 @@ The subnet settings are changed manually, either by changing the subnet data or 
 
 - IP address
 - Mask
-- A Name to assign
+- Name to assign
 
 We recommend giving a meaningful name that specifies the subnet's network role. Subnet names can have up to 60 characters.
 
@@ -32,7 +28,18 @@ Changes are made and then the new subnet settings are saved.
 
 ## Update device details
 
-**DHCP address ranges**: devices that have an IP address allocated by a DHCP server, which change dynamically, must define the address ranges used. This is an important step, which can affect the way your data is assessed for security risks.
+Check the device details are correct using the **Device inventory**. To check the device details you'll need the following information for each device:
+
+    - Authorized device
+    - Name
+    - Description
+    - OS platform
+    - Type
+    - Purdue level
+    - Scanner
+    - Programming device
+
+**Merge devices**: in some cases, a device might be listed more than once. This could happen when a device has two or more connectors to the sensor, for example a laptop with both Wifi and a physical network card. In such a situation, you need to merge them together, using the **Merge** option in the **Device inventory** page. The new merged device listing contains all of the data from both merged devices.
 
 **Important devices**: devices can also be assigned as *Important*, which gives the device a greater security rating for features such as running an Attack vector or Risk assessment. So that the device is considered more important than other devices for these reports.
 
@@ -40,7 +47,9 @@ The *Important* setting is also useful to differentiate between similar types of
 
 The device appears in the device map with a star on it.
 
-**Merge devices**: in some cases, a device might be listed more than once. This could happen when a device has two or more connectors to the sensor, for example a laptop with both Wifi and a physical network card. In such a situation, you need to merge them together, using the **Merge** option. The new merged device listing contains all of the data from both merged devices.
+**Check public IP addresses**: it's important to identify any public IP addresses that are used internally. These IP addresses must be listed **and add how to do this , is it in the System settings > sensor management > advanced configurations - Theo**.<!--what do we need to do? remove, reassign an IP, define as authorized? Theo--> If a public IP address isn't listed as a subnet, the sensor treats it as a public network for security settings.
+
+**DHCP address ranges**: devices that have an IP address allocated by a DHCP server, which change dynamically, must define the address ranges used. This is an important step, which can affect the way your data is assessed for security risks.
 
 ## Operational mode
 <!-- is it learning / operation stage or mode??? Theo-->

@@ -1,9 +1,5 @@
 Your sensor now sends data to Microsoft Defender for IoT. You need to check that the devices are recognized and configured correctly in the Operational Technology (OT) sensor software. The sensor initially scans the entire network and tries to identify where all of the devices should be located within the Purdue levels.
 
-## Check public IP addresses
-
-What do we do here? Give example of how this is done?
-
 ## View the subnets detected by your sensor
 
 First you must analyze the traffic monitored by the OT sensor.
@@ -51,7 +47,7 @@ When all of the subnets are correctly set up, select **Save**.
 
 All of the devices detected by the OT sensor appear in the Device inventory.
 
-In the **Device inventory**, you can view the subnets grouped as either *local* or *routed*. All of the devices connected to a listed subnet are called *local* devices, while the devices connected to unlisted subnets are called *routed*. <!-- is this really important, theo-->Check through all of the devices listed.
+In the **Device inventory**, you can view the subnets grouped as either *local* or *routed*. Check through all of the devices listed.
 
 1. Select **Device inventory**
 1. Select **Add filter**
@@ -71,15 +67,25 @@ You can update the following fields:
     - OS platform
     - Type
     - Purdue level
-    -  Scanner
+    - Scanner
     - Programming device
 
 Select **Save**.
-:::image type="content" source="../media/device settings edit.png" alt-text="screenshot of hte edit pane for device settings":::
-<!-- It's important to review the data for the **Name**, **Class**, **Type**, and **Subtype**, **Authorized device**, **Scanner device**, and **Programming device** columns. - I think this is incorrect as per the user story <https://dev.azure.com/msft-skilling/Content/_workitems/edit/232468/> -->
-<!-- how to give examples of this?? how to choose a device, what will they see? should be supply a PCAP file to upload, seems too much. So how do we demonstrate the updating?-->
 
-After checking the details of the devices, we'll update the details for one listed device. Devices can also be marked *Authorize* or *Unauthorize*. This is found in the device properties settings.
+:::image type="content" source="../media/device settings edit.png" alt-text="screenshot of the edit pane for device settings.":::
+
+## Merge devices
+
+You might identify two or more devices listed that are really the same device. To merge two devices:
+
+1. Select **Device inventory**
+1. Select the devices you need to merge by clicking the checkboxes for those rows
+1. Select **Merge**
+1. Select **Confirm**
+
+<!-- how to give examples of this?? how to choose a device, what will they see? should be supply a PCAP file to upload, seems too much. So how do we demonstrate the updating?-->
+<!-- is this section needed? Isnt it just a copy of the section above? -->
+After checking the details of the devices, we'll update the details for one listed device.
 
 We need to update several of the fields.
 
@@ -90,24 +96,25 @@ We need to update several of the fields.
 
 ## Important devices
 
-Assign a unique device as **Important**. In the Device map:
+Assign a unique device as **Important**. In the **Device map**:
 
 1. Select a device and right-click to open the menu options
 1. Select **Important**
 
+## Check public IP addresses
+
+Select **System setting** > **Deployment**
+What do we do here? Give example of how this is done?
+
 ## Add DHCP address ranges
 
-Add the DHCP address ranges for a device.<!-- if we think this is relevant take the info from here for instructions. <https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-control-what-traffic-is-monitored#configure-dhcp-address-ranges> Theo needs to send this to me-->
+Add the DHCP address ranges for a device.
 
-## Merge devices
-
-You might identify two or more devices listed that are really the same device. To merge two devices:
-
-1. Select **System setting** > **Subnets**
-1. Select the devices you need to merge by clicking the checkboxes for those rows
-1. Select **Merge**
-1. Select **Confirm**
+Select **System setting** > **DHCP ......**
+<!-- if we think this is relevant take the info from here for instructions. <https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-control-what-traffic-is-monitored#configure-dhcp-address-ranges> Theo needs to send this to me-->
 
 ## Check your work
 
 You now have an updated and more accurate set of devices listed in the Device inventory.
+
+<!-- It's important to review the data for the **Name**, **Class**, **Type**, and **Subtype**, **Authorized device**, **Scanner device**, and **Programming device** columns. - I think this is incorrect as per the user story <https://dev.azure.com/msft-skilling/Content/_workitems/edit/232468/> -->
