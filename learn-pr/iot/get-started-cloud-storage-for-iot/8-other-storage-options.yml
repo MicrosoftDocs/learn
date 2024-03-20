@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-cloud-storage-for-iot.examine-other-storage-options
+title: Examine other Azure storage options
+metadata:
+  title: Examine other Azure storage options
+  description: "Examine other Azure storage options"
+  ms.date: 02/16/2024
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-other-storage-options.md)]
