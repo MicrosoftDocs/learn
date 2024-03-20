@@ -3,17 +3,20 @@ uid: learn.wwl.plan-resource-requirements
 metadata:
   title: Plan Resource Requirements
   description: "Familiarize yourself with the various configuration options for a new Azure Cosmos DB for NoSQL account."
-  ms.date: 10/17/2022
+  ms.date: 03/20/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: cosmos-db
+  ms.subservice: nosql
+  ai-usage: human-only
 title: Plan Resource Requirements
 summary: Familiarize yourself with the various configuration options for a new Azure Cosmos DB for NoSQL account.
 abstract: |
   After completing this module, you'll be able to:
-  - Evaluate various requirements of your application
-prerequisites: |
-  Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
+
+  -   Evaluate various requirements of your application
+prerequisites: Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
 iconUrl: /training/achievements/resource-requirements-plan.svg
 levels:
 - intermediate
