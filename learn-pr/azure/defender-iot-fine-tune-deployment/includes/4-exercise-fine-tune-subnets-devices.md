@@ -110,7 +110,7 @@ What do we do here? Give example of how this is done?
 
 Add the DHCP address ranges for a device.
 
-Select **System setting** > **DHCP ......**
+Select **System setting** > **DHCP ranges**
 <!-- if we think this is relevant take the info from here for instructions. <https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-control-what-traffic-is-monitored#configure-dhcp-address-ranges> Theo needs to send this to me-->
 
 ## Check your work
