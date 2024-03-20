@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/19/2021
   author: drguthals
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
 title: Data collection and manipulation
 summary: Learn about the steps to import data into Python and clean the data for use in creating machine learning models.
