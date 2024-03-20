@@ -12,7 +12,7 @@ In this second challenge exercise, you need to update the search animation to re
 - You can design the "searching" animation to display "spinning" to work differently than displayed in the animated image
 - The "searching..." animation, should continue to be overwritten, after each animation completes so it stays on the same line, and so that it doesn't display after the animation stops.
 
-    :::image type="content" source="../media/pet-search-animation.gif" alt-text="Example of application searching dog descriptions with four user submitted terms":::
+    :::image type="content" source="../media/pet-search-animation.gif" alt-text="Animated Screenshot of an example of application searching dog descriptions with four user submitted terms.":::
 
 
 ### Add a countdown to the "searching" animation
