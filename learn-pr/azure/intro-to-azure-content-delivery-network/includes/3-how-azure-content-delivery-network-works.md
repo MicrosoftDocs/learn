@@ -1,8 +1,8 @@
 A content delivery network is a distributed network of servers that can efficiently deliver web content to users. Azure Content Delivery Network works in the following manner:
 
-:::image type="content" source="../images/azure-content-delivery-network-overview.png" alt-text="Diagram that shows how Azure Content Delivery Network works." border="false":::
+:::image type="content" source="../images/azure-content-delivery-network-overview.png" alt-text="Diagram that shows how Azure Content Delivery Network works." lightbox="../images/azure-content-delivery-network-overview.png" border="false":::
 
-1. A user, Alice, requests a file (also called an asset) by using a URL with a special domain name, such as `<endpoint name>.azureedge.net`. This domain name can be an endpoint host name or a custom domain. The DNS routes the request to the best performing POP location, which is usually the POP that is geographically closest to the user.
+1. A user, Alice, requests a file (also called an asset) by using a URL with a special domain name, such as `<endpoint name>.azureedge.net`. This domain name can be an endpoint host name or a custom domain. The DNS routes the request to the best performing POP location, which is usually the POP geographically closest to the user.
 1. If no edge servers in the POP have the file in their cache, the POP requests the file from the origin server. The origin server can be an Azure web app, Azure Cloud Service, Azure Storage account, Azure IaaS virtual machine, or any publicly accessible web server.
 1. The origin server returns the file to an edge server in the POP.
 1. An edge server in the POP caches the file and returns the file to the original requestor (Alice). The file remains cached on the edge server in the POP until the time-to-live (TTL) specified by its HTTP headers expires. If the origin server didn't specify a TTL, the default TTL is seven days.
@@ -17,7 +17,7 @@ Creating a content delivery network requires specifying a new content delivery n
 
 A serverless web app in Azure requires no deployment, configuration, or management of servers. A serverless web app can contain the following components that can be used with Azure Content Delivery Network:
 
-- **Blob Storage**: Static web files (HTML, CSS, and JavaScript) are stored in Azure Blob Storage, which implements static website hosting. Any dynamic interaction is through JavaScript calls to back-end APIs. In consequence, there's no server-side code to render the webpage.
+- **Blob Storage**: Static web files (HTML, CSS, and JavaScript) are stored in Azure Blob Storage, which implements static website hosting. Any dynamic interaction is through JavaScript calls to back-end APIs. No server-side code is needed to render the webpage.
 - **Function apps**: Function apps use an event-driven model to invoke functions (pieces of code) by using triggers (events). With a serverless app, the trigger might be an HTTP GET request.
 - **API Management**: The API Management component provides an API gateway that publishes and manages the APIs that client functions use. The gateway also helps to decouple the front-end applications from the APIs. API Management can translate URLs, apply transforms to data requests between front and back ends, and configure response headers.
 
