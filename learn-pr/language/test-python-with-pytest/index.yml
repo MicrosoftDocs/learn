@@ -28,8 +28,6 @@ roles:
   - student
 products:
   - azure
-subjects:
-- development-tools
 units:
 - learn.test-python-with-pytest.introduction
 - learn.test-python-with-pytest.pytest-basics

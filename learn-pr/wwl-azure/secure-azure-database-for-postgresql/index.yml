@@ -27,7 +27,7 @@ roles:
 products:
 - azure-database-postgresql
 subjects:
-- database
+- databases
 units:
 - learn.wwl.secure-azure-database-for-postgresql.introduction
 - learn.wwl.secure-azure-database-for-postgresql.describe-security

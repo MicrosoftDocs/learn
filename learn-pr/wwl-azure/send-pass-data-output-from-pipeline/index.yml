@@ -39,7 +39,6 @@ products:
 - entra-id
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

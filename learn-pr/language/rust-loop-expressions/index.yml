@@ -28,7 +28,6 @@ roles:
 products:
 - azure
 subjects:
-- development-tools
 - data-management
 units:
 - learn.language.rust-loop-expressions.0-introduction

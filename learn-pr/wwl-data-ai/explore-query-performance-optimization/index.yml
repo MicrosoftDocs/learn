@@ -30,7 +30,7 @@ products:
 - azure-sql-database
 - sql-server
 subjects:
-- database
+- databases
 units:
 - learn.wwl.explore-query-performance-optimization.introduction
 - learn.wwl.explore-query-performance-optimization.understand-query-plans

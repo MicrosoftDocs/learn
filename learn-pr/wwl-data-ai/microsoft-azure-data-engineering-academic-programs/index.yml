@@ -29,7 +29,7 @@ roles:
 products:
 - azure
 subjects:
-- data-ai
+- data-management
 units:
 - learn.wwl.microsoft-azure-data-engineering-academic-programs.introduction
 - learn.wwl.microsoft-azure-data-engineering-academic-programs.objective-domains

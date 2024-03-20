@@ -12,7 +12,7 @@ Hosting a relational database on-premises requires that an enterprise not only p
 
 A cloud-based approach uses virtual technology to host a company’s applications offsite. There are no capital expenses, data can be backed up regularly, and companies only have to pay for the resources they use. For those organizations that plan aggressive expansion on a global basis, the cloud has even greater appeal because it allows you to connect with customers, partners, and other businesses anywhere with minimal effort. Additionally, cloud computing gives you nearly instant provisioning because everything is already configured. Thus, any new software that is integrated into your environment is ready to use immediately once a company has subscribed. With instant provisioning, any time spent on installation and configuration is eliminated and users can access the application right away.
 
-:::image type="content" source="../media/4-on-premises-cloud.png" alt-text="Compare on-premises with cloud":::
+:::image type="content" source="../media/4-on-premises-cloud.png" alt-text="Diagram of compare on-premises with cloud.":::
 
 ## Understand IaaS and PaaS
 
@@ -31,4 +31,4 @@ Azure offers several PaaS solutions for relational databases, include Azure SQL 
 The image below illustrates the benefits and tradeoffs when running a database management system (in this case, SQL Server) on-premises, using virtual machines in Azure (IaaS), or using Azure SQL Database (PaaS). The same generalized considerations are true for other database management systems.
 
 > [!div class="mx-imgBorder"]
-> ![Various options of database workloads in Azure](../media/4-choose-platform.png)
+> ![Diagram of various options of database workloads in Azure.](../media/4-choose-platform.png)

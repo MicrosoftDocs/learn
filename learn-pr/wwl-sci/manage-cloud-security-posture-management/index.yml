@@ -3,15 +3,16 @@ uid: learn.wwl.manage-cloud-security-posture-management
 metadata:
   title: Manage your cloud security posture management​
   description: "Manage your cloud security posture management​"
-  ms.date: 02/22/2023
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: defender-for-cloud
 title: Manage your cloud security posture management​
 summary: Microsoft Defender for Cloud, Cloud Security Posture Management (CSPM) provides visibility into vulnerable resources and provides hardening guidance.
 abstract: |
   In this module, you'll learn how Microsoft Defender for Cloud provides security posture management.
-  Upon completion you'll be able to:
+  Upon completion you're able to:
   - Describe Microsoft Defender for Cloud features.
   - Explain the Microsoft Defender for Cloud security posture management protections for your resources.
 prerequisites: |

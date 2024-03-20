@@ -8,8 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
-  ms.prod: security
-  ms.service: security-copilot
 durationInMinutes: 4
 content: |
   [!include[](includes/2-describe-security-copilot.md)]
