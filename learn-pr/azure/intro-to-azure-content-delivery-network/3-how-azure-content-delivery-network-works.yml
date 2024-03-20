@@ -9,6 +9,6 @@ metadata:
   ms.author: orthomas
   ms.custom: team=cloud_advocates
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 15
 content: |
   [!include[](includes/3-how-azure-content-delivery-network-works.md)]

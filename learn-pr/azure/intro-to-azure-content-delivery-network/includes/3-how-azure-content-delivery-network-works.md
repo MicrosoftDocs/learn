@@ -65,6 +65,10 @@ Azure Content Delivery Network dynamically compresses uncompressed files on the 
 
 Geo-filtering lets you allow or block content in specific countries or regions based on the country code. In the Azure Content Delivery Network Standard for Microsoft tier, you can only allow or block an entire website. With the Verizon and Akamai tiers, you can also set up restrictions on directory paths. For more information, see the resource list in the **Summary** unit of this module.
 
-To configure geo-filtering, in the properties of the respective endpoint, select **Geo-filtering**. On the **Geo-filtering** pane, select either **Allow** or **Block**. In the **Country codes** list, select the countries or regions you want to allow or block.
+To configure geo-filtering, complete the following steps.
+
+1. In the properties of the respective endpoint, select **Geo-filtering**.
+1. On the **Geo-filtering** pane, select either **Allow** or **Block**.
+1. In the **Country codes** list, select the countries or regions you want to allow or block.
 
 The **Allow** setting is more restrictive than the **Block** setting. **Allow** gives access only for the selected countries or regions. **Block** allows access from all countries and regions except for those countries or regions that are blocked.
