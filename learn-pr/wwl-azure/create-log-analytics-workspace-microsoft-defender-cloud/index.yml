@@ -6,7 +6,7 @@ metadata:
   ms.date: 01/03/2024
   author: wwlpublish
   ms.author: serlingdavis
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure
 title: Create a Log Analytics workspace for Microsoft Defender for Cloud
 summary: In this module, you'll discover how to create a Log Analytics workspace in the Azure portal for Microsoft Defender for Cloud, improving data collection and security analysis.

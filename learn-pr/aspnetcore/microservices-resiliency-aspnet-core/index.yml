@@ -7,7 +7,7 @@ metadata:
   ms.author: masoucou
   ms.date: 11/06/2023
   ms.service: aspnet-core
-  ms.topic: module
+  ms.topic: module-standard-task-based
 title: Implement resiliency in a cloud-native .NET microservice
 summary: Learn how to make your cloud-native .NET Core microservices app fault-tolerant with minimal impact on the user.
 abstract: |
@@ -33,7 +33,7 @@ products:
   - azure-container-registry
   - azure-kubernetes-service
 subjects:
-- serverless-compute
+- serverless-computing
 units:
   - learn.microservices-resiliency-aspnet-core.1-introduction
   - learn.microservices-resiliency-aspnet-core.2-application-infrastructure-resiliency

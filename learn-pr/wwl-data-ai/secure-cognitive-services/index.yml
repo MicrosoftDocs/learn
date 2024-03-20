@@ -6,8 +6,8 @@ metadata:
   ms.date: 04/05/2022
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: module
-  ms.service: cognitive-services
+  ms.topic: module-standard-task-based
+  ms.service: azure-ai-services
 title: Secure Azure AI Services
 summary: Securing Azure AI Services can help prevent data loss and privacy violations for user data that may be a part of the solution.
 abstract: |

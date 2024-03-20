@@ -3,13 +3,13 @@ uid: learn.challenge-project-use-generative-ai-to-ideate.define-idea
 title: Define your idea
 metadata:
   title: Define your idea
-  description: "Start to define and create your idea with AI and Bing chat, with the “Brain writing Technique”"
+  description: "Start to define and create your idea with Microsoft Copilot, using the “Brain writing Technique”"
   ms.date: 12/7/2023
   author: pablonunes
   ms.author: pablolopes
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.service: bing
+  ms.topic: unit
+  ms.service: microsoft-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/2-define-idea.md)]

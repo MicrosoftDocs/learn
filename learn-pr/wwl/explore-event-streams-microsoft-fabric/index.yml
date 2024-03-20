@@ -6,7 +6,7 @@ metadata:
   ms.date: 11/01/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: fabric
 title: Use real time eventstreams in Microsoft Fabric
 summary: This module is an introduction to the Microsoft Fabric Eventstream within Real-Time Analytics (RTA)
@@ -25,7 +25,7 @@ roles:
 products:
 - fabric
 subjects:
-- data-ai
+- data-management
 - data-engineering
 - data-integration
 units:

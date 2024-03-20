@@ -31,7 +31,6 @@ products:
 - github
 - azure
 subjects:
-- development-tools
 - collaboration
 units:
 - learn.github.upload-project-github.1-introduction
