@@ -3,8 +3,8 @@ uid: learn.languages.csharp-arrays-operations.exercise-split-join
 title: Exercise - Discover Split() and Join()
 metadata:
   title: Exercise - Discover Split() and Join()
-  description: "Exercise - Discover Split() and Join()"
-  ms.date: 03/18/2024
+  description: "Explore using Split() and Join() to split or combine elements in an array."
+  ms.date: 03/20/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
