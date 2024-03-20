@@ -56,9 +56,9 @@ Update the status level using the table:
 |Status / triage action | Description  |
 |---------|---------|
 |**New**     |     *New* alerts are alerts that the team needs to triage or investigate. |
-|**Active**     |     Set an alert to *Active* to indicate that an investigation is underway, but that the alert can't yet be closed or otherwise triaged. <br><br>This status has no effect elsewhere in Defender for IoT.  <!-- remove this sentence?-->    |
-|**Closed**     | Set and alert to *Close* to indicate that the investigation is complete, and to alert you again the next time the same traffic is detected.<br><br>Closing an alert adds it to the sensor event timeline. <!-- remove this i think --> |
-<!-- note the in brackets comments in the table above-->
+|**Active**     |     Set an alert to *Active* to indicate that an investigation is underway, but that the alert can't yet be closed or otherwise triaged. |
+|**Closed**     | Set and alert to *Close* to indicate that the investigation is complete, and to alert you again the next time the same traffic is detected. |
+
 Update the severity level using the table:
 
 | Defender for IoT  |  Description  |
@@ -72,7 +72,7 @@ Update the severity level using the table:
 Do we want to write about this - check out how to do this. Why would we do this? <!--<https://learn.microsoft.com/microsoft-365/security/defender-endpoint/manage-alerts#suppress-alerts> -->
 
 ## Save changes
-<!-- does this need a title? I gave it because it is listed in the intro triage list!-->
+
 Save each change and the baseline alerts are updated. As the learning process continues, you receive less new alerts as the sensor learns the normal flow of traffic in your system.
 
 <!-- A nice definition. may use it more.

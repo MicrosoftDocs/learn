@@ -7,7 +7,7 @@ First, identify which alerts are important to triage.
 1. In Defender for IoT, open **Alerts**.
 1. Use the **Search** box or **Add filter** to filter/ display a set of alerts.
 1. Select the alert by ticking the checkbox for that row.
-1. Select **View full details** to drill down further and see the remediation suggestions.<!-- with this last few words, the image should be of the remediation?? but here is a different image. and the remediation is in the next section. What should I do for this? --> For example:
+1. Select **View full details** to drill down further and see the remediation suggestions.<!-- with this last few words, the image should be of the remediation?? but here is a different image. and the remediation is in the next section. What should I do for this? LW --> For example:
 
     :::image type="content" source="../media/7-alert-detected.png" alt-text="screenshot of a chosen alert to view the full alert details" lightbox="../media/7-alert-detected.png":::
 
@@ -49,7 +49,7 @@ What to write here?
 <https://learn.microsoft.com/azure/defender-for-iot/organizations/how-to-view-alerts#manage-alert-status-and-triage-alerts>-->
 
 ## End Learning mode
-<!-- Should this be part of the LM? Even though this will be done at a later time in real life, as part of the exercise it should be added to this unit.-->
+<!-- Should this be part of the LM? Even though this will be done at a later time in real life, as part of the exercise it should be added to this unit. LW -->
 After a week or two Defender for IoT learns to identify suspicious traffic and not send false alerts, you can turn off the *Learn* status.
 
 In the Sensor:
