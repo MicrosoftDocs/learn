@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/11/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Deploy a model to a managed online endpoint
 summary: Learn how to deploy models to a managed online endpoint for real-time inferencing.
 abstract: |
