@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.unit-4-knowledge-check
+title: "Unit 4: Knowledge Check"
+metadata:
+  title: "Unit 4: Knowledge Check"
+  description: TBD
+  ms.date: 03/13/2024
+  author: Benjamin George
+  ms.author: Benjamin George
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-unit-4-knowledge-check.md)]

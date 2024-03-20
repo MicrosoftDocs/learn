@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.unit-5-summary
+title: "Unit 5: Summary"
+metadata:
+  title: "Unit 5: Summary"
+  description: TBD
+  ms.date: 03/13/2024
+  author: Benjamin George
+  ms.author: Benjamin George
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-unit-5-summary.md)]

@@ -1,0 +1,29 @@
+### YamlMime:Module
+uid: learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm
+metadata:
+  ms.author: Benjamin George
+  author: Benjamin George
+  ms.date: 03/13/2024
+  title: Optimize AI Training workloads using Azure CycleCloud and Slurm
+  description: TBD
+  ms.topic: interactive-tutorial
+title: Optimize AI Training workloads using Azure CycleCloud and Slurm
+summary: TBD
+abstract: TBD
+prerequisites: TBD
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm
+- learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.unit-1-introduction
+- learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.unit-2-node-health-checks-using-azure-cyclecloud
+- learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.unit-3-cluster-requirements-for-ai-training-workloads
+- learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.unit-4-knowledge-check
+- learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.unit-5-summary
+badge:
+  uid: learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm-badge
