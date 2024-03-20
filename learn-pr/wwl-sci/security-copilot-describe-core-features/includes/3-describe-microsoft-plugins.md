@@ -15,8 +15,6 @@ To view the system capabilities supported by the enabled plugins, you enter the 
 
 :::image type="content" source="../media/prompt-suggestions-see-all-capabilities.png" lightbox="../media/prompt-suggestions-see-all-capabilities.png" alt-text="Screen capture of the prompt suggestions that can be run in the standalone experience.":::
 
-As described in the previous unit, each system capability is itself a prompt suggestion. The list is extensive and also includes some capabilities that aren't associated with any of the plugins listed on the Manage plugins menu. These capabilities are generally available and are grouped by their descriptor, such as Generic capabilities and Fusion capabilities.
-
 The sections that follow provide brief descriptions for many of the available Microsoft plugins. Microsoft Copilot for Security is continually adding support for Microsoft products.
 
 #### Azure AI Search (Preview)
