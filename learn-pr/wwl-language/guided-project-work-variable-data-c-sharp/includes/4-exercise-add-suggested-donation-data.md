@@ -63,12 +63,13 @@ You need to create a new variable to hold suggested donations and expand the `ou
             break;
     ```
 
-1. Insert a `suggestedDonation` value above the `break` statement for `case 0;` through `case 3:` with the following values:
+1. Insert a `suggestedDonation` value above the `break` statement for `case 0;` through `default:` with the following values:
 
     - Case 0: `suggestedDonation = "85.00";`
     - Case 1: `suggestedDonation = "49.99";`
     - Case 2: `suggestedDonation = "40.00";`
     - Case 3: `suggestedDonation = "";`
+    - default: `suggestedDonation = "";`
 
     The following code shows `case 0:` code with the addition of 'suggestedDonation':
 
