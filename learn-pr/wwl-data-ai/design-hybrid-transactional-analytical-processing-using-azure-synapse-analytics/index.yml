@@ -6,7 +6,7 @@ metadata:
   ms.date: 06/26/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Plan hybrid transactional and analytical processing using Azure Synapse Analytics
 summary: Learn how hybrid transactional / analytical processing (HTAP) can help you perform operational analytics with Azure Synapse Analytics.
 abstract: |
