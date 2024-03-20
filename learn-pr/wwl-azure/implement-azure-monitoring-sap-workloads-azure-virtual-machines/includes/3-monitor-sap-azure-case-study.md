@@ -11,7 +11,7 @@ Microsoft’s own internal SAP infrastructure monitoring is based on an architec
 
 This image depicts the SAP monitoring multilayer telemetry structure.
 
-:::image type="content" source="../media/multilayer-telemetry-approach.png" alt-text="Diagram showing the multilayer telemetry approach to S A P monitoring":::
+:::image type="content" source="../media/multilayer-telemetry-approach.png" alt-text="Diagram showing the multilayer telemetry approach to S A P monitoring.":::
 
 ## Solution architecture
 
@@ -31,7 +31,7 @@ The Microsoft SAP solution architecture relies on Azure Monitor and supporting c
 
 This image depicts the SAP monitoring architecture:
 
-:::image type="content" source="../media/sap-monitoring-architecture.png" alt-text="Diagram showing the S A P monitoring architecture":::
+:::image type="content" source="../media/sap-monitoring-architecture.png" alt-text="Diagram showing the S A P monitoring architecture.":::
 
 ## Considerations and best practices
 

@@ -99,7 +99,7 @@ We recommend that you enable data sharing, as it helps Microsoft provide improve
 
 At a high level, the following diagram explains how Azure Monitor for SAP Solutions collects telemetry from SAP HANA databases.
 
-:::image type="content" source="../media/azure-monitor-sap-solutions-telemetry.png" alt-text="Diagram showing how Azure Monitor for S A P Solutions collects telemetry from S A P HANA databases":::
+:::image type="content" source="../media/azure-monitor-sap-solutions-telemetry.png" alt-text="Diagram showing how Azure Monitor for S A P Solutions collects telemetry from S A P HANA databases.":::
 
 ### Key components of the architecture
 

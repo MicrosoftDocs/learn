@@ -3,7 +3,7 @@ Start Log Analytics from the Azure portal by selecting **Azure Monitor** > **Log
 
 Wherever you start it from, it will be the same Log Analytics tool. However, the menu you use to start Log Analytics determines the data that will be available. If you start it from the **Azure Monitor** menu or the **Log Analytics workspaces** menu, you'll have access to all of the records in a workspace. If you select **Logs** from another type of resource, then your data will be limited to log data for that resource. See [Log query scope and time range in Azure Monitor Log Analytics](/azure/azure-monitor/log-query/scope) for details.
 
-:::image source="../media/start-log-analytics.png" lightbox="../media/start-log-analytics.png" alt-text="Screenshot of the start screen of Log Analytics":::
+:::image source="../media/start-log-analytics.png" lightbox="../media/start-log-analytics.png" alt-text="Screenshot of the start screen of Log Analytics.":::
 
 When you start Log Analytics, you'll see a dialog box containing [example queries](/azure/azure-monitor/log-query/example-queries). These are categorized by solution, and you can browse or search for queries that match your requirements. You may be able to find one that does exactly what you need, or load one into the editor and modify it as required. Browsing through example queries is a great way to learn how to write your own queries.
 
@@ -24,7 +24,7 @@ At its core, a Kusto query is a read-only request. The request processes data, a
 
 The following image identifies the different components of Log Analytics with the numbers listed below.
 
-:::image type="content" source="../media/log-analytics.png" alt-text="Screenshot of the Log Analytics U I":::
+:::image type="content" source="../media/log-analytics.png" alt-text="Screenshot of the Log Analytics U I.":::
 
 ### 1. Top action bar
 

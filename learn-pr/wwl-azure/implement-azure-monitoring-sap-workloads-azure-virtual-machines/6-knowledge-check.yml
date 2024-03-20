@@ -32,7 +32,7 @@ quiz:
       explanation: "Incorrect. Collector VM is automatically deployed in the managed resource group that is part of the Azure Monitor for SAP Solutions resource deployment."
     - content: "Log Analytics Workspace"
       isCorrect: false
-      explanation: "Incorrect. Log Analytics Workspace is automatically deployed in the managed resource group that is part of the Azure Monitor for SAP Solutions resource deployment.."
+      explanation: "Incorrect. Log Analytics Workspace is automatically deployed in the managed resource group that is part of the Azure Monitor for SAP Solutions resource deployment."
     - content: "SAP Monitor resource"
       isCorrect: true
       explanation: "Correct. SAP Monitor resource isn't located in the managed resource group that is part of the Azure Monitor for SAP Solutions resource deployment."

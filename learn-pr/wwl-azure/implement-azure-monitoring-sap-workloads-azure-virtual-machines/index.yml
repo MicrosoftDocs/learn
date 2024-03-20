@@ -10,7 +10,7 @@ metadata:
   ms.service: azure
   ai-usage: human-only
 title: Implement Azure Monitoring for SAP workloads on Azure VMs
-summary: In this module, you will learn to select and configure monitoring for SAP on Azure, as well as navigate the Log Analytics interface in Azure Monitor.
+summary: In this module, you'll learn to select and configure monitoring for SAP on Azure, and navigate the Log Analytics interface in Azure Monitor.
 abstract: |
   In this module, you will:
 
@@ -21,7 +21,7 @@ abstract: |
   -   Configure a Log Analytics workspace.
 
   -   Navigate the Log Analytics interface in Azure Monitor.
-prerequisites: Knowledge of Azure virtual machine creation, administration, and maintenance. Basic knowledge of operational concepts, such as monitoring, logging, and alerts. Familiarity with querying datasets to filter and extract information
+prerequisites: Knowledge of Azure virtual machine creation, administration, and maintenance. Basic knowledge of operational concepts, such as monitoring, logging, and alerts. Familiarity with querying datasets to filter and extract information.
 iconUrl: /learn/achievements/azure-monitoring-sap-workloads.svg
 levels:
 - intermediate
