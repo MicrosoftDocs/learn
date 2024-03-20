@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: "`0`"
       isCorrect: true
-      explanation: "Correct. `\"C\"` is the first item in `myString` and matches at position `0`"
+      explanation: "Correct. `\"C\"` is the first item in `myString` and matches at position `0`."
     - content: "`1`"
       isCorrect: false
       explanation: "Incorrect. `1` is the second item in `myString`, the character `\"#\"`."
