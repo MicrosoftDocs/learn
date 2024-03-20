@@ -3,17 +3,17 @@ uid: learn.wwl.configure-manage-hyper-v-virtual-machines
 metadata:
   title: Configure and manage Hyper-V virtual machines
   description: "Configure and manage Hyper-V virtual machines"
-  ms.date: 12/12/2022
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
   ms.service: windows-server
   ms.subservice: hyper-v
 title: Configure and manage Hyper-V virtual machines
-summary: Learn about configuring and managing Hyper-V virtual machines in Windows Server 2019.
+summary: Learn about configuring and managing Hyper-V virtual machines in Windows Server.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe settings, configuration, and generation versions available for VMs in Windows Server 2019.
+  - Describe settings, configuration, and generation versions available for VMs in Windows Server.
   - Identify virtual hard disk (VHD) formats and types.
   - Create and configure a VM.
   - Determine storage options for VMs.
@@ -21,7 +21,7 @@ abstract: |
   - Describe host and guest clustering with shared VHDs.
 prerequisites: |
   To get the best learning experience from this module, you should have knowledge and experience of:
-  - Windows Server 2012 or Windows Server 2016.
+  - Windows Server.
   - Working with virtualization technologies.
 iconUrl: /training/achievements/configure-and-manage-hyper-v-virtual-machines.svg
 levels:
