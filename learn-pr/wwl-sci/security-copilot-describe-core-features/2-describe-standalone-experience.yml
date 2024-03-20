@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-describe-core-features.describe-standalone-experience
+title: Describe the features available in the standalone experience of Microsoft Copilot for Security
+metadata:
+  title: Describe the features available in the standalone experience of Microsoft Copilot for Security
+  description: "Describe the features available in the standalone experience of Microsoft Copilot for Security"
+  ms.date: 02/22/2024
+  author: wwlpublish  
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-describe-standalone-experience.md)]

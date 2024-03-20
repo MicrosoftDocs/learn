@@ -4,12 +4,10 @@ title: Use the Microsoft Defender portal
 metadata:
   title: Use the Microsoft Defender portal
   description: "Use the Microsoft Defender portal"
-  ms.date: 02/27/2023
+  ms.date: 01/24/2024
   author: wwlpublish
   ms.author: kelawson
   ms.topic: unit
-azureSandbox: false
-labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/2-use-microsoft-security-center-portal.md)]

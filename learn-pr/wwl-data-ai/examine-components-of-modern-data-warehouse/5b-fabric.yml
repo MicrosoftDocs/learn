@@ -4,13 +4,12 @@ title: Explore Microsoft Fabric
 metadata:
   title: Explore Microsoft Fabric
   description: "Explore Microsoft Fabric"
-  ms.date: 10/03/2023
+  ms.date: 03/18/2024
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/5b-fabric.md)]

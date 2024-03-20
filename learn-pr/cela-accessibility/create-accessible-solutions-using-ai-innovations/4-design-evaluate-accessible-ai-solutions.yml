@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.create-accessible-solutions-using-ai-innovations.design-evaluate-accessible-ai-solutions
+title: Design and evaluate accessible AI solutions
+metadata:
+  title: Design and evaluate accessible AI solutions
+  description: Understand the challenges and risks for accessibility that AI solutions pose when they're not built responsibly, especially related to biases and ableism.
+  ms.date: 03/01/2024
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-design-evaluate-accessible-ai-solutions.md)]

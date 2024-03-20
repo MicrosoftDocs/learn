@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/10/2022
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: mysql
 title: Explore MySQL Architecture
 summary: Explore the component parts of MySQL, and learn how to find your way around Azure Database for MySQL.
@@ -27,7 +27,7 @@ products:
 - azure-database-mysql
 - azure-storage
 subjects:
-- database
+- databases
 units:
 - learn.wwl.explore-mysql-architecture.introduction
 - learn.wwl.explore-mysql-architecture.explore-mysql-architecture

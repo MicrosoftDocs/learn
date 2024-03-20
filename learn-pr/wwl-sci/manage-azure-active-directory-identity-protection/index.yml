@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: roberts
   ms.topic: module
-  ms.prod: azure
+  ms.service: azure
 title: Manage Microsoft Entra Identity Protection
 summary: Protecting a user's identity by monitoring their usage and sign-in patterns ensure a secure cloud solution. Explore how to design and implement Microsoft Entra Identity protection.
 abstract: |

@@ -26,8 +26,6 @@ To set up Visual Studio Code for .NET debugging, we'll first need a .NET project
 
     The terminal window displays "Hello World!" as output.
 
-    :::image source="../media/new-dotnet-project.png" alt-text="Screenshot of Visual Studio Code with a new console application.":::
-
 ## Set up Visual Studio Code for .NET debugging
 
 1. Open **Program.cs** by selecting it.

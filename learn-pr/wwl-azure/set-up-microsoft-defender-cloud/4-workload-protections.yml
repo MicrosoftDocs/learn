@@ -4,10 +4,10 @@ title: Workload protections
 metadata:
   title: Workload protections
   description: "Workload protections"
-  ms.date: 10/11/2023
+  ms.date: 02/23/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/4-workload-protections.md)]

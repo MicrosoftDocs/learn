@@ -4,12 +4,10 @@ title: Understand question answering
 metadata:
   title: Understand question answering
   description: "Understand question answering"
-  ms.date: 07/19/2023
+  ms.date: 01/22/2024
   author: wwlpublish
-  ms.author: berryivor
+  ms.author: gmalc
   ms.topic: unit
-  ms.service: azure-ai-language
-  ms.subservice: azure-ai-qna-maker
 durationInMinutes: 3
 content: |
   [!include[](includes/2-understand.md)]

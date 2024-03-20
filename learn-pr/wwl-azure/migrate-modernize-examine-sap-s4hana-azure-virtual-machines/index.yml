@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.migrate-modernize-examine-sap-s4hana-azure-virtual-machines
+metadata:
+  title: Modernize and examine SAP S/4HANA on Azure Virtual Machines
+  description: "Explore SAP S/4HANA on Azure virtual machines and learn to recognize the architecture's components. The module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud."
+  ms.date: 01/08/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: module
+  ms.service: azure
+title: Modernize and examine SAP S/4HANA on Azure Virtual Machines
+summary: Examine the Microsoft Azure architecture, and components used, when deploying SAP S/4HANA workloads and in-memory SAP HANA databases, running on Azure Virtual Machines infrastructure.
+abstract: |
+  After completing this module, you will be able to:
+  - Explore SAP S/4HANA on Azure virtual machines and learn to recognize the architecture's components.
+  - Examine a sample functional workflow.
+prerequisites: |
+  Before taking this training, you should complete:
+  *   Azure Administrator (AZ-104) or Azure Solutions Architect Expert (AZ-305) exam.
+  *   SAP HANA or NetWeaver training.
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.migrate-modernize-examine-sap-s4hana-azure-virtual-machines.introduction
+- learn.wwl.migrate-modernize-examine-sap-s4hana-azure-virtual-machines.explore-sap-s4-hana-azure-virtual-machines
+- learn.wwl.migrate-modernize-examine-sap-s4hana-azure-virtual-machines.recognize-architectural-components
+- learn.wwl.migrate-modernize-examine-sap-s4hana-azure-virtual-machines.examine-sample-functional-workflow
+- learn.wwl.migrate-modernize-examine-sap-s4hana-azure-virtual-machines.knowledge-check
+- learn.wwl.migrate-modernize-examine-sap-s4hana-azure-virtual-machines.summary
+badge:
+  uid: learn.wwl.migrate-modernize-examine-sap-s4hana-azure-virtual-machines.badge

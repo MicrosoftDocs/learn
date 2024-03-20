@@ -2,11 +2,11 @@
 
 The Azure Storage library allows you to programmatically control file storage in an Azure Storage account.
 
-In this exercise, we'll enhance our app to upload videos to blob storage. 
+In this exercise, we'll enhance our app to upload videos to blob storage.
 
 ## Add the storage account connection details
 
-1. In the Cloud Shell, add the Azure Blob storage NuGet package.
+1. In the Cloud Shell, add the Azure Blob storage NuGet package:
 
     ```bash
     dotnet add package Microsoft.Azure.Storage.Blob
@@ -18,7 +18,7 @@ In this exercise, we'll enhance our app to upload videos to blob storage.
     code Program.cs
     ```
 
-1. Add the following using statements to the top of **Program.cs** to include the libraries our storage work needs. 
+1. Add the following using statements to the top of **Program.cs** to include the libraries our storage work needs:
 
     ```csharp
     using Microsoft.Azure.Storage.Blob;
@@ -29,7 +29,7 @@ In this exercise, we'll enhance our app to upload videos to blob storage.
      `Microsoft.Azure.Storage.Blob` and `Microsoft.Azure.Storage` give the app access to the Azure Storage account.
     `System.IO` gives the app access to the file system for file handling.
 
-1. Add variables for the Azure Storage credentials to the `Program` class in **Program.cs**.
+1. Add variables for the Azure Storage credentials to the `Program` class in **Program.cs**:
 
     ```csharp
     // Storage account credentials
@@ -41,7 +41,7 @@ In this exercise, we'll enhance our app to upload videos to blob storage.
 
 ## Create an input and output container
 
-1. Replace `Main()` in **Program.cs** with the following update, which adds code to manage the storage account. 
+1. Replace `Main()` in **Program.cs** with the following update, which adds code to manage the storage account:
 
     ```csharp
     static async Task Main(string[] args)
@@ -99,11 +99,11 @@ In this exercise, we'll enhance our app to upload videos to blob storage.
     }
     ```
 
-    In the above code, a `CloudStorageAccount` object is created to enable the app to create a blob client. The client is used to create the storage containers, upload the files, and give access to the job to write to the output container.
+    In the preceding code, a `CloudStorageAccount` object is created to enable the app to create a blob client. The client is used to create the storage containers, upload the files, and give access to the job to write to the output container.
 
 ## Create storage containers for the input and output of files
 
-1. Add the following method, `CreateContainerIfNotExistAsync()`  to create a container with the given name.
+1. Add the following method, `CreateContainerIfNotExistAsync()`, to create a container with the given name:
 
     ```csharp
     private static async Task CreateContainerIfNotExistAsync(CloudBlobClient blobClient, string containerName)
@@ -114,11 +114,11 @@ In this exercise, we'll enhance our app to upload videos to blob storage.
     }
     ```
 
-    The above code uses the `CloudBlobClient` created in the `Main` method to create containers.
+    The preceding code uses the `CloudBlobClient` created in the `Main` method to create containers.
 
 ## Process the list of all the files to upload
 
-1. Add the following method, `UploadFilesToContainerAsync()` to upload a list of input files to the container.
+1. Add the following method, `UploadFilesToContainerAsync()`, to upload a list of input files to the container:
 
     ```csharp
     private static async Task<List<ResourceFile>> UploadFilesToContainerAsync(CloudBlobClient blobClient, string inputContainerName, List<string> filePaths)
@@ -134,11 +134,11 @@ In this exercise, we'll enhance our app to upload videos to blob storage.
     }
     ```
 
-    The above code uses the created list of file paths to call a method to upload them, and store the produced ResourceFile reference for use by the Batch job.
+    The preceding code uses the created list of file paths to call a method to upload them and store the produced ResourceFile reference for use by the Batch job.
 
 ## Upload the files
 
-1. Add a method to upload the local files to Azure storage.
+1. Add a method to upload the local files to Azure storage:
 
     ```csharp
     private static async Task<ResourceFile> UploadResourceFileToContainerAsync(CloudBlobClient blobClient, string containerName, string filePath)
@@ -168,11 +168,11 @@ In this exercise, we'll enhance our app to upload videos to blob storage.
     }
     ```
 
-    The above code uses the `CloudBlobClient` to asynchronously upload the files. It builds a resource file that is added to a list that will be used by the task added in the next exercise.
+    The preceding code uses the `CloudBlobClient` to asynchronously upload the files. It builds a resource file that's added to a list that the task added in the next exercise will use.
 
 ## Enable access to the output folder
 
-1. Create a Shared Access Signature (SAS) reference to the output container for tasks to write their files to.
+1. Create a Shared Access Signature (SAS) reference to the output container for tasks to write their files to:
 
     ```csharp
     private static string GetContainerSasUrl(CloudBlobClient blobClient, string containerName, SharedAccessBlobPermissions permissions)
@@ -194,13 +194,13 @@ In this exercise, we'll enhance our app to upload videos to blob storage.
     }
     ```
 
-    The above code creates a SAS url with limited access (2 hours) for the task to enable it to write the converted animated GIFs to the Blob storage.
+    The preceding code creates a SAS url with limited access (two hours) for the task to enable it to write the converted animated GIFs to the Blob storage.
 
-1. In the code editor, right-click and select **Save**, and then select **Quit**.
+1. In the code editor, right-click and select **Save**, then right-click and select **Quit**.
 
 ## Test the file uploads
 
-1. In the Cloud Shell, create an InputFiles folder in your app directory. 
+1. In the Cloud Shell, create an InputFiles folder in your app directory:
 
     ```bash
     mkdir InputFiles
@@ -217,14 +217,14 @@ In this exercise, we'll enhance our app to upload videos to blob storage.
     curl -L https://github.com/MicrosoftDocs/mslearn-apps-and-batch/raw/master/cutifypets/InputFiles/6.mp4 > ./InputFiles/6.mp4
     ```
 
-1. Save the Azure Storage credentials to environment variables. The second command is using the *RESOURCE_GROUP* environment variable that we defined in the **Set up connection details for the application** section of the earlier exercise, **Exercise - Access your Batch account using the .NET client library**. The value is the name of the resource group you selected when you created your Batch account. 
+1. Save the Azure Storage credentials to environment variables. The second command is using the *RESOURCE_GROUP* environment variable that we defined in the **Set up connection details for the application** section of the earlier exercise, **Exercise - Access your Batch account using the .NET client library**. The value is the resource group name you selected when you created your Batch account.
 
     ```bash
     export STORAGE_NAME=$(az storage account list --query "[?contains(name,'cuti')].name" --output tsv)
     export STORAGE_KEY=$(az storage account keys list --account-name $STORAGE_NAME --query [0].value --output tsv --resource-group $RESOURCE_GROUP)
     ```
 
-1. Build and run the app.
+1. Build and run the app:
 
     ```bash
     dotnet run
@@ -232,7 +232,7 @@ In this exercise, we'll enhance our app to upload videos to blob storage.
 
 1. The program should run and write the following messages to the terminal:
 
-    ```bash
+    ```output
     BATCH URL: [your batch url], Name: [your batch account name], Key: [your batch key]
     Storage Name: [your storage account name], Key: [your storage key]
     Creating container [input].
@@ -249,11 +249,11 @@ In this exercise, we'll enhance our app to upload videos to blob storage.
 
 ## Check the files uploaded using the Azure portal
 
-1. Return to the Azure portal, on the left select Storage accounts, then select the storage account your created in the first exercise.
+1. Return to the Azure portal. In the menu on the left, select **Storage accounts**, then select the storage account your created in the first exercise.
 
     :::image type="content" source="../media/8-storage-accounts.png" alt-text="Screenshot that shows a user's storage accounts." lightbox="../media/8-storage-accounts.png":::
 
-1. In the Azure portal, on the left select **Containers**, then select the input folder.
+1. In the menu on the left, select **Containers** under **Data storage**, then select the **input** folder.
 
     :::image type="content" source="../media/8-storage-account-input-container.png" alt-text="Screenshot that shows the created containers in blob storage." lightbox="../media/8-storage-account-input-container.png":::
 

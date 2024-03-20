@@ -1,5 +1,3 @@
-
-
 In this exercise you create a console app to perform the following operations in Azure Cosmos DB:
 
 * Connect to an Azure Cosmos DB account
@@ -15,6 +13,8 @@ In this exercise you create a console app to perform the following operations in
 * [.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0) is the target framework for the exercise.
 
 * The [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code.
+  
+*  The latest [Azure CLI](/cli/azure/install-azure-cli) tools, installed locally.
 
 ## Setting up
 
@@ -215,3 +215,4 @@ You can now safely delete the *az204-cosmos-rg* resource group from your account
 ```
 az group delete --name az204-cosmos-rg --no-wait
 ```
+

@@ -28,7 +28,7 @@ products:
 - azure-openai
 subjects:
 - artificial-intelligence
-- data-ai
+- data-management
 units:
 - learn.wwl.define-microsoft-ai-strategy-manufacturing.introduction
 - learn.wwl.define-microsoft-ai-strategy-manufacturing.explore-ai-goals-challenges-manufacturing

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.separate-ui-and-logic-with-data-binding.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Move app logic to objects that are bound to the apps UI. Data bindings can make your code faster to read, easier to maintain, and more testable.
+  ms.date: 02/15/2024
+  author: adegeo
+  ms.author: adegeo
+  ms.topic: unit
+  ms.service: dotnet-mobile
+  ms.subservice: dotnet-maui
+durationInMinutes: 2
+content: |
+  [!include[](./includes/1-introduction.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.introduction-to-ai-for-trainers.ai-and-future-of-education
+title: AI and the future of education
+metadata:
+  title: AI and the future of education
+  description: AI can shape the future of learning, promoting innovation and increasing effectiveness. Its impact is evident in multiple aspects of education, as AI's continuous technological growth can propel learning towards greater adaptability, accessibility, and personalization.
+  ms.date: 01/24/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+  ms.service: artificial-intelligence
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-ai-and-future-of-education.md)]

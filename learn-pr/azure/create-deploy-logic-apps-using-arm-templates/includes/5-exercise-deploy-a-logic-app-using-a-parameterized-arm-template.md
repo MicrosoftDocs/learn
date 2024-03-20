@@ -14,7 +14,7 @@ In the preceding exercise, we deployed a logic app using a basic Azure Resource 
    code template-with-params.json
    ```
 
-   The first thing to do is add parameters so that we can easily customize the app's name and location where the app runs.
+   The first step is add parameters so that we can easily customize the app's name and location where the app runs.
 
 1. Replace the `parameters` section in the template with the following code snippet, which adds two new parameters, `logicAppName` and `location`:
 
@@ -26,7 +26,7 @@ In the preceding exercise, we deployed a logic app using a basic Azure Resource 
 
    Now that we defined two new parameters, we'll use them in the template by replacing hardcoded values with references to the new parameters.
 
-1. Replace the `name` and `location` fields in the resources section of the template to use our new parameters as shown in the following snippet.
+1. Replace the `name` and `location` fields in the resources section of the template to use our new parameters as shown in the following snippet:
 
    [!code-json[](../code/basic-template-with-params/template.json?range=24-25)]
 
@@ -34,7 +34,7 @@ In the preceding exercise, we deployed a logic app using a basic Azure Resource 
 
    [!code-json[](../code/basic-template-with-params/template.json?range=60-65)]
 
-1. Press **<kbd>Ctrl</kbd> + <kbd>S</kbd>** to save all changes to **template-with-params.json**.
+1. Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save all changes to **template-with-params.json**.
 
 ## Deploy logic app resource with the parameterized template
 
@@ -48,28 +48,28 @@ There are two ways to supply parameters to our template during deployment using 
    code params.json
    ```
 
-1. Paste the following JSON into **params.json**, and press **<kbd>Ctrl</kbd> + <kbd>S</kbd>** to save your changes.
+1. Paste the following JSON into **params.json**, and press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your changes.
 
    [!code-json[](../code/basic-template-with-params/params.json?range=1-5)]
 
 ### Validate our template
 
-1. From the Cloud Shell, run `az deployment group validate` to validate the template.
+1. From the Cloud Shell, run `az deployment group validate` to validate the template:
 
    ```azurecli
    az deployment group validate \
-   --resource-group <rgn>[sandbox resource group name]</rgn> \
+   --resource-group "<rgn>[sandbox resource group name]</rgn>" \
    --template-file template-with-params.json \
    --parameters @params.json
    ```
 
-   The `--template-file` argument points to the local template. The template's filename is **template-with-params.json**. 
+   The `--template-file` argument points to the local template. The template's filename is **template-with-params.json**.
 
-   You see a large JSON block as output, which tells you that the template passed validation.
+   You'll see a large JSON block as output, which tells you that the template passed validation.
 
    Azure Resource Manager fills in the template parameters and checks whether the template would successfully run in your subscription.
 
-   If validation failed, you would see a detailed description of the failure in the output.
+   If validation failed, you'd see a detailed description of the failure in the output.
 
 ## Deploy template with parameters from a local file
 
@@ -77,46 +77,46 @@ There are two ways to supply parameters to our template during deployment using 
 
    ```azurecli
    az deployment group create \
-   --resource-group <rgn>[sandbox resource group name]</rgn> \
+   --resource-group "<rgn>[sandbox resource group name]</rgn>" \
    --template-file template-with-params.json \
    --parameters @params.json
    ```
 
-   Deployment will take a few seconds and you can watch the progress in the Cloud Shell command line. When deployment is finished, you should see `provisioningState` in the JSON result with the value `Succeeded`.
+   Deployment will take a few moments, and you can watch the progress in the Cloud Shell command line. When deployment is finished, you should see `provisioningState` in the JSON result with the value `Succeeded`.
 
-1. To see the app in action, find the **logicAppUrl** value in the JSON result. Select the URL, or copy and paste it into a new browser window. The page will display the *Hello Azure Logic Apps Template!* message.
+1. To see the app in action, find the **logicAppUrl** value in the JSON result. Select the URL or copy and paste it into a new browser window. The page will display the *Hello Azure Logic Apps Template!* message.
 
 ## Deploy template with parameters from the command line
 
 Instead of editing a parameters file every time we want to deploy from the command line, we can supply the parameters in a JSON string on the command line.
 
-1. Run the following command in the Cloud Shell to deploy the logic app resource with the name of the app and its location fed in as a JSON string on the command line.
+1. Run the following command in the Cloud Shell to deploy the logic app resource with the name of the app and its location fed in as a JSON string on the command line:
 
    ```azurecli
    az deployment group create \
-   --resource-group <rgn>[sandbox resource group name]</rgn> \
+   --resource-group "<rgn>[sandbox resource group name]</rgn>" \
    --template-file template-with-params.json \
    --parameters '{ "logicAppName": {"value":"MyLogicApp2"}, "location": {"value":"East US"}}'
    ```
-    
-   Deployment will take a few seconds and you can watch the progress in the Cloud Shell command line. When deployment is finished, you should see `provisioningState` in the JSON result with the value `Succeeded`.
+
+   Deployment will take a few moments, and you can watch the progress in the Cloud Shell command line. When deployment is finished, you should see `provisioningState` in the JSON result with the value `Succeeded`.
 
 1. To see the app in action, find the **logicAppUrl** value in the JSON result. Select the URL and paste it into a new browser window. The page will display the *Hello Azure Logic Apps Template!* message.
 
-1. Run the following command to list all Azure Logic Apps workflows we've deployed so far.
+1. Run the following command to list all Azure Logic Apps workflows we've deployed so far:
 
    ```azurecli
    az resource list \
-   --resource-group <rgn>[sandbox resource group name]</rgn> \
+   --resource-group "<rgn>[sandbox resource group name]</rgn>" \
    --resource-type Microsoft.Logic/workflows \
    --query [*].[name,location] --output tsv
    ```
 
-   This command will list the three Azure Logic Apps workflows we've deployed so far, all from a template.
+   This command lists the three Azure Logic Apps workflows we've deployed so far, all from a template.
 
 ## Update the app action in the Azure Resource Manager template
 
-Let's now turn our attention to making our app do a little more than just sending back a static message to us. We'll keep the app as an HTTP-triggered workflow, which will still return an HTTP response. But let's pass in some values with the request, and have the app do a calculation for us. We'll do a basic area calculation. Assuming the inputs we pass in are height and width of a rectangle, we'll return the area. We'll then deploy the new app and watch it run.
+Let's now turn our attention to making our app do a little more than just sending back a static message to us. We'll keep the app as an HTTP-triggered workflow, which will still return an HTTP response. Let's pass in some values with the request, and have the app do a calculation for us. We'll do a basic area calculation. Assuming the inputs we pass in are height and width of a rectangle, we'll return the area. We'll then deploy the new app and watch it run.
 
 1. Open **template-with-params.json** in the built-in editor by running the following command in the Cloud Shell:
 
@@ -140,39 +140,39 @@ Let's now turn our attention to making our app do a little more than just sendin
 
    - Returns the product of the integer equivalents for the height and width string values from the URL parameters. This task uses the `mul()` function and `int()` conversion function.
 
-1. Press **<kbd>Ctrl</kbd> + <kbd>S</kbd>** to save all changes to **template-with-params.json**.
+1. Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save all changes to **template-with-params.json**.
 
-1. Validate our template after these changes with the `az deployment group validate` command in the Cloud Shell. In this example, we set the app's name to *CalculateArea* by using an inline parameter.
+1. Validate the template after these changes with the `az deployment group validate` command in the Cloud Shell. In this example, we set the app's name to *CalculateArea* by using an inline parameter.
 
    ```azurecli
    az deployment group validate \
-   --resource-group <rgn>[sandbox resource group name]</rgn> \
+   --resource-group "<rgn>[sandbox resource group name]</rgn>" \
    --template-file template-with-params.json \
    --parameters '{ "logicAppName": {"value":"CalculateArea"}}'
    ```
 
-1. Run the following command to deploy our changes to a logic app named **CalculateArea**. We'll omit a value for the `location` parameter, and just use the default.
+1. Run the following command to deploy our changes to a logic app named **CalculateArea**. We'll omit a value for the `location` parameter and just use the default.
 
    ```azurecli
    az deployment group create \
-   --resource-group <rgn>[sandbox resource group name]</rgn> \
+   --resource-group "<rgn>[sandbox resource group name]</rgn>" \
    --template-file template-with-params.json \
    --parameters '{ "logicAppName": {"value":"CalculateArea"}}'
    ```
 
-   Deployment will take a few seconds, but you can watch the progress in the Cloud Shell command line. When deployment is finished, you should see `provisioningState` in the JSON result with the value `Succeeded`.
+   Deployment will take a few moments, but you can watch the progress in the Cloud Shell command line. When deployment is finished, you should see `provisioningState` in the JSON result with the value `Succeeded`.
 
 1. To see the app in action, find the **logicAppUrl** value in the JSON result. Select the URL and paste it into a new browser window.
 
-1. Update the URL in the browser, changing `/triggers/manual/paths/invoke?api` to `/triggers/manual/paths/invoke/{width}/{height}?api`, where **{width}** and **{height}** are integer values for the width and height of the area we want to calculate. For example, `/triggers/manual/paths/invoke/6/7?api`. The response from the app will list the name of the workflow and the calculated area, as shown in the following screenshot.
+1. Update the URL in the browser, changing `/triggers/manual/paths/invoke?api` to `/triggers/manual/paths/invoke/{width}/{height}?api`, where **{width}** and **{height}** are integer values for the width and height of the area we want to calculate. For example, `/triggers/manual/paths/invoke/6/7?api`. The response from the app will list the name of the workflow and the calculated area, as shown in the following screenshot:
 
-    :::image type="content" source="../media/calculate-area-response.png" alt-text="Web browser displaying response from our app called calculate area." loc-scope="other"::: <!-- no-loc -->
+    :::image type="content" source="../media/calculate-area-response.png" alt-text="Sceenshot of web browser displaying response from our app called calculate area." loc-scope="other"::: <!-- no-loc -->
 
-1. Run the following command to list all Azure Logic Apps workflows we've deployed so far. 
+1. Run the following command to list all Azure Logic Apps workflows we've deployed so far:
 
    ```azurecli
    az resource list \
-   --resource-group <rgn>[sandbox resource group name]</rgn> \
+   --resource-group "<rgn>[sandbox resource group name]</rgn>" \
    --resource-type Microsoft.Logic/workflows \
    --query [*].[name,location] --output tsv
    ```

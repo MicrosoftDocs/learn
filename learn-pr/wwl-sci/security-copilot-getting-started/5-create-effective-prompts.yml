@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.security-copilot-getting-started.create-effective-prompts
+title: Describe the elements of an effective prompt
+metadata:
+  title: Describe the elements of an effective prompt
+  description: "Describe the elements of an effective prompt"
+  ms.date: 10/31/2023
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-create-effective-prompts.md)]

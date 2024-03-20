@@ -37,14 +37,14 @@ Console.WriteLine(quantity);
 Console.WriteLine(output);
 ```
 
-This code is merely "*one possible solution*". As long as your code produces the following output, you were successful.
+This code is merely "*one possible solution.*" As long as your code produces the following output, you were successful.
 
 ```Output
 Quantity: 5000
 Output: <h2>Widgets &reg;</h2><span>5000</span>
 ```
 
-If you were successful, congratulations! Continue on to the knowledge check in the next unit.
+If successful, congratulations! Continue on to the knowledge check in the next unit.
 
 > [!IMPORTANT]
 > If you had trouble completing this challenge, maybe you should review the previous units before you continue on.

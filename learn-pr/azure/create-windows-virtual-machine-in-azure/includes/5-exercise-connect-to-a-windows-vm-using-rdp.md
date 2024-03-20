@@ -1,6 +1,6 @@
 We have our Windows VM deployed and running, but it's not configured to do any work.
 
-Recall our scenario is a video-processing system. Our platform receives files through FTP. The traffic cameras upload video clips to a known URL, which is mapped to a folder on the server. The custom software on each Windows VM runs as a service and watches the folder and processes each uploaded clip. It then passes the normalized video to our algorithms running on other Azure services.
+Recall that our scenario is a video-processing system. Our platform receives files through FTP. The traffic cameras upload video clips to a known URL, which is mapped to a folder on the server. The custom software on each Windows VM runs as a service and watches the folder and processes each uploaded clip. It then passes the normalized video to our algorithms running on other Azure services.
 
 There are a few things we'd need to configure to support this scenario:
 
@@ -8,7 +8,7 @@ There are a few things we'd need to configure to support this scenario:
 - Install the proprietary video codec unique to the city's camera system
 - Install our transcoding service that processes uploaded videos
 
-Many of these are typical administrative tasks we won't actually cover here, and we don't have software to install. Instead, we will walk through the steps and show you how you *could* install custom or third-party software using Remote Desktop. Let's start by getting the connection information.
+Many of these are typical administrative tasks we won't actually cover here, and we don't have software to install. Instead, we'll walk through the steps and show you how you *could* install custom or third-party software using Remote Desktop. Let's start by getting the connection information.
 
 ## Connect to the VM with Remote Desktop Protocol
 
@@ -24,14 +24,14 @@ You can enter this information into the RDP client, or download a pre-configured
 
 ### Download the RDP file
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), ensure the **Overview** pane for the virtual machine that you created earlier is open. You can also find the VM on the Azure **home** page under **All Resources** if you need to open it. The **Overview** pane has a lot of information about the VM.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), ensure the **Overview** pane for the virtual machine that you created earlier is open. You can also find the VM on the Azure **Home** page under **All Resources** if you need to open it. The **Overview** pane has a lot of information about the VM. You can:
 
     - Determine whether the VM is running
     - Stop or restart it
     - Get the public IP address to connect to the VM
     - Get the activity of the CPU, disk, and network
 
-1. In the top menu bar, select **Connect**, and select the **RDP** tab. The **Connect with RDP** pane appears for your virtual machine.
+1. In the top menu bar, select **Connect**, then select **Connect** in the drop-down. 
 
 1. Note the **IP address** and **Port number** settings, then select **Download RDP File** and save it to your computer.
 
@@ -40,31 +40,31 @@ You can enter this information into the RDP client, or download a pre-configured
 1. You can adjust a variety of settings to control the experience in connecting to the Azure VM. The settings you'll want to examine are:
 
     - **Display**: By default, it'll be full screen. You can change this to a lower resolution, or use all your monitors if you have more than one.
-    - **Local Resources**: You can share local drives with the VM, allowing you to copy files from your PC to the VM. Click the **More** button under **Local devices and resources** to select what is shared.
+    - **Local Resources**: You can share local drives with the VM, allowing you to copy files from your PC to the VM. Select the **More** button under **Local devices and resources** to select what is shared.
     - **Experience**: Adjust the visual experience based on your network quality.
 
 1. Share your Local C: drive so it will be visible to the VM.
 
-1. Switch back to the **General** tab, and select **Save** to save the changes. You can always come back and edit this file later to try other settings.
+1. Switch back to the **General** tab and select **Save** to save the changes. You can always come back and edit this file later to try other settings.
 
 ### Connect to the Windows VM
 
 1. Select **Connect**.
 
-1. On the **Remote Desktop Connection** dialog box, note the security warning and the remote computer IP address, and then select **Connect** to start the connection to the VM.
+1. On the **Remote Desktop Connection** dialog box, note the security warning and the remote computer IP address, then select **Connect** to start the connection to the VM.
 
 1. In the **Windows Security** dialog box, enter your username and password that you created in the previous exercise.
 
     > [!NOTE]
-    > If you are using a Windows client to connect to the VM, it will default to known identities on your machine. Select the **More choices** option, and then select **Use a different account** that lets you enter a different username/password combination.
+    > If you're using a Windows client to connect to the VM, it will default to known identities on your machine. Select the **More choices** option, and then select **Use a different account** that lets you enter a different username/password combination.
 
-1. In the second **Remote Desktop Connection** dialog box, note the certificate errors, and then select **Yes**.
+1. In the second **Remote Desktop Connection** dialog box, note the certificate errors, then select **Yes**.
 
 ### Install worker roles
 
-The first time you connect to a Windows server VM, it will launch Server Manager. This allows you to assign a worker role for common web or data tasks. You can also launch the Server Manager through the Start Menu.
+The first time you connect to a Windows server VM, it launches Server Manager. This allows you to assign a worker role for common web or data tasks. You can also launch the Server Manager through the **Start** menu.
 
-This is where we'd add the Web Server role to the server. This will install IIS and as part of the configuration you'd turn off HTTP requests and enable the FTP server. Or, we could ignore IIS and install a third-party FTP server. We'd then configure the FTP server to allow access to a folder on our big data drive we added to the VM.
+This is where we'd add the Web Server role to the server. This installs IIS, and as part of the configuration, you'd turn off HTTP requests and enable the FTP server. We could also ignore IIS and install a third-party FTP server. We'd then configure the FTP server to allow access to a folder on our big data drive we added to the VM.
 
 Because we aren't going to actually configure that here, just close Server Manager.
 
@@ -82,13 +82,13 @@ We have two approaches we can use to install software. First, this VM is connect
 
 With access to your local drive, you can copy the files for the custom software onto the VM and install the software. We won't actually do that because it's just a simulated scenario, but you can imagine how it would work.
 
-The more interesting thing to observe in the list of drives is what is *missing*. Notice that our **Data** drive is not present. Azure added a VHD but didn't initialize it.
+The more interesting thing to observe in the list of drives is what is *missing*. Notice that our **Data** drive is not present. Azure added a VHD, but didn't initialize it.
 
 ## Initialize data disks
 
 Any additional drives you create from scratch will need to be initialized and formatted. The process for doing this is identical to a physical drive.
 
-1. Launch the Disk Management tool from the **Start** menu. You may have to go to the **Computer Management** tool first, then **Disk Management**, or try searching for *Disk Management* in the **Start** Menu.
+1. Launch the Disk Management tool from the **Start** menu. You might have to go to the **Computer Management** tool first, then **Disk Management**, or try searching for *Disk Management* in the **Start** Menu.
 
 1. The Disk Management tool will display a warning that it has detected an uninitialized disk.
 

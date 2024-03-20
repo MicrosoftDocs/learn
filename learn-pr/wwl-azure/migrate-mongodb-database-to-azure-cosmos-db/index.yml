@@ -6,7 +6,7 @@ metadata:
   ms.date: 02/06/2023
   author: wwlpublish
   ms.author: calopez
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: cosmos-db
   ms.subservice: mongodb
 title: Migrate a MongoDB database to Azure Cosmos DB
@@ -25,7 +25,7 @@ roles:
 products:
 - azure-cosmos-db
 subjects:
-- database
+- databases
 units:
 - learn.wwl.migrate-mongodb-database-to-azure-cosmos-db.introduction
 - learn.wwl.migrate-mongodb-database-to-azure-cosmos-db.vcore-to-rus

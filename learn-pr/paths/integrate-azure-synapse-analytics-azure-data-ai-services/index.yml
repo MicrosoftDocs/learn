@@ -1,19 +1,21 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.integrate-azure-synapse-analytics-azure-data-ai-services
 metadata:
-  title: <learning path title|
+  title: Integrate Azure Synapse Analytics with Azure Data and AI services
   description: Integrate Azure Synapse Analytics with Azure Data and AI services
-  ms.date: 03/31/2021
+  ms.date: 03/19/2024
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: learning-path
+  ms.service: synapse-analytics
+  ms.subservice: business-intelligence
 title: Integrate Azure Synapse Analytics with Azure Data and AI services
 prerequisites: |
-  - It is recommended that students have completed Data Fundamentals before starting this learning path.
-  - It is recommended that students understand how Azure Synapse Analytics and its components work.
+  -   It's recommended that students have completed Data Fundamentals before starting this learning path.
+  -   It's recommended that students understand how Azure Synapse Analytics and its components work.
 summary: |
   Learn how Azure Synapse Analytics integrates with other Azure Data and AI services.
-iconUrl: /training/achievements/azure-synapse-analytics-data-ai-services.svg
+iconUrl: /learn/achievements/azure-synapse-analytics-data-ai-services.svg
 levels:
 - intermediate
 roles:
@@ -24,8 +26,6 @@ products:
 - azure-machine-learning
 - power-bi
 - azure-synapse-analytics
-subjects:
-- data-ai
 modules:
 - learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics
 - learn.wwl.integrate-machine-learning-within-azure-synapse-analytics

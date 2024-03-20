@@ -4,11 +4,12 @@ title: Create user-defined functions
 metadata:
   title: Create user-defined functions
   description: "Create user-defined functions"
-  ms.date: 09/20/2023
+  ms.date: 03/15/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/6-create-inline.md)]

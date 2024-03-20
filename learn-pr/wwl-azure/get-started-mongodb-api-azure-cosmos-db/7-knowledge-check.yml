@@ -4,10 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/17/2023
+  ms.date: 03/20/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 quiz:
   title: ""
@@ -16,16 +18,16 @@ quiz:
     choices:
     - content: "Use the *GetCollection* function and assign *ProductID* to the *shardKey* parameter."
       isCorrect: false
-      explanation: "Incorrect. *GetCollection* is not a function in all programing languages and for those languages that have this method, there is no *shardKey* parameter"
-    - content: "Use the extended database run command function with the respective customAction, collection and shardKey parameters."
+      explanation: "Incorrect. *GetCollection* isn't a function in all programing languages and for those languages that have this method, there's no *shardKey* parameter."
+    - content: "Use the extended database run command function with the respective customAction, collection, and shardKey parameters."
       isCorrect: true
-      explanation: "Correct. To define the creation of a collection with a specific shardKey, the programmers would need to use extended commands"
+      explanation: "Correct. To define the creation of a collection with a specific shardKey, the programmers would need to use extended commands."
     - content: "Use the *CreateCollection* function and assign *ProductID* to the *shardKey* parameter."
       isCorrect: false
-      explanation: "Incorrect. *CreateCollection* is not a function in all programing languages and for those languages that have this method, there is no *shardKey* parameter"
+      explanation: "Incorrect. *CreateCollection* isn't a function in all programing languages and for those languages that have this method, there's no *shardKey* parameter."
   - content: "Which of the following statements is true?"
     choices:
-    - content: "Since an Azure Cosmos DB for MongoDB account doesn't have a MongoDB engine, developers will need to use different tools and drivers than they currently use to connect to their current MongoDB 3.2, 3.6, 4.0 and 4.2 databases."
+    - content: "Since an Azure Cosmos DB for MongoDB account doesn't have a MongoDB engine, developers need to use different tools and drivers than they currently use to connect to their current MongoDB 3.2, 3.6, 4.0 and 4.2 databases."
       isCorrect: false
       explanation: "Incorrect. Developers should be able to use their current drivers and tools."
     - content: "Upgrading between Azure Cosmos DB for MongoDB Server versions could take several hours depending on the databases sizes."

@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: rstearman
   ms.topic: learning-path
-  ms.prod: learning-azure
 title: MD-102 Examine application management
 prerequisites: |
   *   Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later
@@ -24,8 +23,6 @@ products:
 - windows
 - configuration-manager
 - intune
-subjects:
-- development-tools
 modules:
 - learn.wwl.execute-mobile-application-management
 - learn.wwl.deploy-applications

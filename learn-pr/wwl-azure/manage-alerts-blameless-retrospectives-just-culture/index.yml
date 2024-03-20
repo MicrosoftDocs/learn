@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.service: azure
 title: Manage alerts, blameless retrospectives and a just culture
 summary: This module examines alerts, blameless retrospectives and creates a just culture. It helps improving application performance, reducing meaningless and nonactionable alerts, and explains server response-time degradation.
 abstract: |

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-design-object-oriented-structure.exercise-improve-generalized-ant-exception-handling
+title: Exercise - Improve generalized ant exception handling
+metadata:
+  title: Exercise - Improve generalized ant exception handling
+  description: "This unit describes exception handling in Langton's Ant"
+  ms.date: 03/19/2024
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/04-exercise-improve-generalized-ant-exception-handling.md)]

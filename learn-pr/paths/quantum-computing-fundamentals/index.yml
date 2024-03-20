@@ -4,9 +4,10 @@ metadata:
   title: Get started with Azure Quantum
   description: Intrigued by quantum computing but don't know where to start? This learning path helps prepare you for this exciting next generation of computing.
   brand: azure
-  ms.date: 10/20/2023
+  ms.date: 12/20/2023
   author: SoniaLopezBravo
   ms.author: sonialopez
+  manager: tedhudek
   ms.topic: learning-path
 title: Get started with Azure Quantum
 summary: |
@@ -39,9 +40,8 @@ subjects:
 - cloud-computing
 modules:
 - learn.quantum.intro-to-azure-quantum
+- learn.quantum.choose-the-best-azure-quantum
 - learn.quantum.qsharp-create-first-quantum-development-kit
-- learn.quantum.qsharp-explore-key-concepts-quantum-computing
 - learn.quantum.estimate-resources-quantum-algorithms
-- learn.quantum.use-qsharp-libraries
 trophy:
   uid: learn.quantum-computing-fundamentals.trophy

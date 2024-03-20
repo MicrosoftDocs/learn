@@ -1,6 +1,6 @@
 ## Azure Policy concepts
 
-Here, we'll cover some concepts you need to understand in advance to work with Azure Policy.
+Here, we cover some concepts you need to understand in advance to work with Azure Policy.
 
 **Policy:** A policy is the business rule to be applied within your organization.
 
@@ -8,7 +8,7 @@ Here, we'll cover some concepts you need to understand in advance to work with A
 
 **Definitions:** The definitions are the list of built-in or custom initiatives and policies available to be assigned.
 
-**Assignments:** The assignments are the associations of initiatives or policies with scopes. A scope for Azure Policy could be a Management Group, an Azure Subscription or a Resource Group. Assignments are inherited by all child resources.
+**Assignments:** The assignments are the associations of initiatives or policies with scopes. A scope for Azure Policy could be a Management Group, an Azure Subscription or a Resource Group. All child resources inherit the assignments of the parent resource.
 
 **Exemptions:**: The exemptions are used to exempt a resource hierarchically or an individual resource from the evaluation of initiatives or definitions.
 
@@ -16,7 +16,7 @@ Here, we'll cover some concepts you need to understand in advance to work with A
 
 ## Resources covered
 
-Azure policy covers all Azure resources, including Arc-enabled resources. This means that you can extend the coverage of your controls over Windows and Linux physical servers, virtual machines hosted outside of Azure, on your corporate network, or other cloud providers (as examples). Using Azure Policy is free for Azure resources, but there's a fee associated for an Arc resource.
+Azure policy covers all Azure resources, including Arc-enabled resources. For example, you can extend the coverage of your controls over Windows and Linux physical servers, and virtual machines hosted outside of Azure, on your corporate network, or other cloud providers. Using Azure Policy is free for Azure resources, but there's a fee associated for an Arc resource.
 
 ## Related services
 
@@ -24,10 +24,9 @@ Azure policy covers all Azure resources, including Arc-enabled resources. This m
 * **Azure Resource Graph:** Through Azure Resource Graph, you can run queries to get information about compliance details by assignments and resource types, list all noncompliant resources, summarize resource compliance by state, and more.
 * **Azure Security Center:** The recommendations from Azure Security Center come from built-in security policies initiatives.
 
-
 ## Costs of Azure Policy
 
-If you're using Azure Policy on **Azure Resources**, there are **no costs** associated. However, if you plan use the capabilities of Azure Policy to cover an **Azure Arc Resource**, there are **specific scenarios** where you'll be **charged**. Refer to the [Azure Policy Pricing](https://azure.microsoft.com/pricing/details/azure-policy/) page for reference.
+If you're using Azure Policy on **Azure Resources**, there are **no costs** associated. However, if you plan use the capabilities of Azure Policy to cover an **Azure Arc Resource**, there are **specific scenarios** where you're **charged**. Refer to the [Azure Policy Pricing](https://azure.microsoft.com/pricing/details/azure-policy/) page for reference.
 
 * Azure Policy guest configuration (includes Azure Automation change tracking, inventory, state configuration): $6/Server/Month
 * Kubernetes Configuration: First 6 vCPUs are free, $2/vCPU/month
@@ -39,3 +38,4 @@ If you're using Azure Policy on **Azure Resources**, there are **no costs** asso
 >* Kubernetes clusters
 >* Azure data services such as Azure SQL Managed Instance
 >* SQL Server
+>* Provision, resize, delete and manage virtual machines based on VMware vSphere or Azure Stack HCI and enable VM self-service through role-based access.

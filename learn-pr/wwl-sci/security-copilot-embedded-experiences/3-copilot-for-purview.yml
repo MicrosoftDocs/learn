@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-embedded-experiences.copilot-for-purview
+title: Microsoft Copilot in Microsoft Purview
+metadata:
+  title: Microsoft Copilot in Microsoft Purview
+  description: "Microsoft Copilot in Microsoft Purview."
+  ms.date: 03/12/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-copilot-for-purview.md)]

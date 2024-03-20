@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.query-data-warehouse-microsoft-fabric.use-client-tools
+title: Use client tools to query a warehouse
+metadata:
+  title: Use client tools to query a warehouse
+  description: "Learn how to use client tools to query a warehouse in Microsoft Fabric."
+  ms.date: 12/19/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric 
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-use-client-tools.md)]

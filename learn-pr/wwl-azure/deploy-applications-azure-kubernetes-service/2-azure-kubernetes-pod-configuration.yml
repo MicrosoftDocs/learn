@@ -4,11 +4,10 @@ title: Configure Azure Kubernetes pods using Azure Policy
 metadata:
   title: Configure Azure Kubernetes pods using Azure Policy
   description: "Configure Azure Kubernetes pods using Azure Policy"
-  ms.date: 11/14/2023
+  ms.date: 03/04/2024
   author: wwlpublish
   ms.author: bradj
-  ms.topic: module
-  ms.prod: azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-azure-kubernetes-pod-configuration.md)]

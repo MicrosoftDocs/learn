@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.separate-ui-and-logic-with-data-binding.4-exercise-replace-code-with-data-bindings
+title: Exercise - Replace code with .NET MAUI bindings
+metadata:
+  title: Exercise - Replace code with .NET MAUI bindings
+  description: Learn how to convert a XAML UI that uses event handlers to display data, to a UI that uses data binding.
+  ms.date: 02/15/2024
+  author: adegeo
+  ms.author: adegeo
+  ms.topic: unit
+  ms.service: dotnet-mobile
+  ms.subservice: dotnet-maui
+  ms.custom: devx-track-dotnet
+durationInMinutes: 10
+content: |
+  [!include[](./includes/4-exercise-replace-code-with-data-bindings.md)]

@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.create-accessible-solutions-using-ai-innovations.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge on how to create accessible solutions by using AI innovations.
+  ms.date: 02/29/2024
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the benefit of allowing keyboard interaction for AI copilots?"
+    choices:
+    - content: "It allows users to use voice commands instead of typing."
+      isCorrect: false
+      explanation: "Voice commands aren't the same as keyboard interaction. Allowing keyboard interaction for AI copilots doesn't imply that users can use voice commands instead of typing."
+    - content: "It allows users to access the system without downloading any software."
+      isCorrect: false
+      explanation: "Keyboard interaction is a feature of the user interface, not the installation process. Users might still need to download software to access the system, depending on the platform and the device."
+    - content: "It allows users to navigate and interact with the system by using the keyboard."
+      isCorrect: true
+      explanation: "People with disabilities might use assistive technology to navigate these systems. Providing keyboard access helps ensure that people who use the keyboard can easily use the AI tools."
+    - content: "It allows users to customize the appearance and layout of the system."
+      isCorrect: false
+      explanation: "Keyboard interaction doesn't change the visual appearance of the AI system."
+  - content: "What is the benefit of providing simple and clear prompt suggestions for AI copilots?"
+    choices:
+    - content: "It reduces the amount of data and bandwidth that the system requires."
+      isCorrect: false
+      explanation: "Reducing the amount of data and bandwidth that the system requires isn't a benefit of providing simple and clear prompt suggestions. Rather, it's a technical feature of the system. Prompt suggestions are designed to help users generate content that meets their needs, not to optimize the system's performance."
+    - content: "It increases the accuracy and reliability of the system's output."
+      isCorrect: false
+      explanation: "Increasing the accuracy and reliability of the system's output isn't the main purpose of user testing and evaluation. Rather, it's a possible outcome of it."
+    - content: "It makes the system understandable by a global audience and avoids complex terms."
+      isCorrect: true
+      explanation: "Clear prompt suggestions help people with disabilities to generate clear content that meets their needs. Providing clear prompt suggestions enhances the security and privacy of the system and the users' data."
+    - content: "It enhances the security and privacy of the system and the users' data."
+      isCorrect: false
+      explanation: "Enhancing the security and privacy of the system and the users' data isn't the main purpose of user testing and evaluation. Rather, it's a design principle that should be followed throughout the development process."
+  - content: "What is the main purpose of user testing and evaluation of an accessible and inclusive AI solution?"
+    choices:
+    - content: "To ensure that the solution meets user expectations and requirements, and that it doesn't produce any unintended consequence or harm."
+      isCorrect: true
+      explanation: "User testing and evaluation can help identify and address any potential problems or risks related to usability, accessibility, inclusion, fairness, accountability, and transparency of the solution."
+    - content: "To compare the performance of the solution with other existing solutions on the market."
+      isCorrect: false
+      explanation: "Comparing the solution with other solutions might be useful for benchmarking or marketing purposes, but it doesn't necessarily reflect the user satisfaction or acceptance of the solution."
+    - content: "To showcase the features and benefits of the solution to potential customers and investors."
+      isCorrect: false
+      explanation: "Your main priority should be the users of your system. Customers and investors also benefit from this priority."
+    - content: "To comply with the ethical and legal standards and regulations for AI solutions."
+      isCorrect: false
+      explanation: "User testing should aim to evaluate the solution from a broader perspective. It should consider the needs, expectations, and values of various user groups and not just the individual preferences of some users."
+  - content: "Why is it important to involve a diverse and representative sample of users in user testing and evaluation of an accessible and inclusive AI solution?"
+    choices:
+    - content: "To gain a competitive advantage over other AI solutions."
+      isCorrect: false
+      explanation: "Involving a diverse representative sample of users doesn't necessarily give a competitive advantage over other AI solutions."
+    - content: "To persuade customers and investors to buy or support the solution."
+      isCorrect: false
+      explanation: "Persuading customers and investors to buy or support the solution isn't the main goal of involving a diverse representative sample of users. Rather, it's a possible outcome of creating a more user-centered and trustworthy solution."
+    - content: "To satisfy the personal preferences and opinions of the developers."
+      isCorrect: false
+      explanation: "The developers' personal preferences and opinions might not reflect the needs and expectations of the target user group. They might introduce bias or discrimination in the design and development of the solution."
+    - content: "To avoid any bias or discrimination in the design and development of the solution."
+      isCorrect: true
+      explanation: "Involving a diverse representative sample of users helps avoid bias or discrimination in the design and development of the solution. It also helps ensure that the solution meets the needs and preferences of all potential users. This approach can also enhance the accessibility, usability, and trustworthiness of the solution."

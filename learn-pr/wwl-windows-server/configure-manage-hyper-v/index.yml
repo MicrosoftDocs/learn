@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
-  ms.prod: learning-azure
+  ms.service: azure
 title: Configure and manage Hyper-V
 summary: Learn about virtualization and the Microsoft Hyper-V role with Windows Server. Learn about best practices for preparing Hyper-V hosts, in addition to Hyper-V networking features and implementing nested virtualization.
 abstract: |
@@ -30,8 +30,6 @@ roles:
 - solution-architect
 products:
 - windows-server
-subjects:
-- development-tools
 units:
 - learn.wwl.configure-manage-hyper-v.introduction
 - learn.wwl.configure-manage-hyper-v.define

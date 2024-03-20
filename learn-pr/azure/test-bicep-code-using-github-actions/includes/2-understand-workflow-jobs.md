@@ -60,7 +60,7 @@ You can specify the dependencies between jobs by using the `needs` keyword:
 When you use the `needs` keyword, the workflow waits for the dependent job to finish successfully before it starts the next job. If the workflow detects that all of the dependencies for multiple jobs have been satisfied, it can run those jobs in parallel.
 
 > [!NOTE]
-> In reality, jobs run in parallel only if you have enough runners to run multiple jobs at the same time. The number of GitHub-hosted runners you can use depends on the type of GitHib account you have. You can purchase another GitHub account plan if you need more parallel jobs.
+> In reality, jobs run in parallel only if you have enough runners to run multiple jobs at the same time. The number of GitHub-hosted runners you can use depends on the type of GitHub account you have. You can purchase another GitHub account plan if you need more parallel jobs.
 
 Sometimes, you want to run a job when a previous job fails. For example, here's a different workflow. If the deployment fails, a job called **rollback** runs immediately afterward:
 

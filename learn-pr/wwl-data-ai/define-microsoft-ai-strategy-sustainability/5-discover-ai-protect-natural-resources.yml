@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.define-microsoft-ai-strategy-sustainability.discover-ai-protect-natural-resources
-title: Discover how Microsoft AI protects natural resources – A State Department success story
+title: Discover how Microsoft AI protects natural resources – A Department of Natural Resources success story
 metadata:
-  title: Discover how Microsoft AI protects natural resources – A State Department success story
-  description: "Discover how Microsoft AI protects natural resources – A State Department success story"
-  ms.date: 11/28/2023
+  title: Discover how Microsoft AI protects natural resources – A Department of Natural Resources success story
+  description: "Discover how Microsoft AI protects natural resources – A Department of Natural Resources success story"
+  ms.date: 01/30/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-  ms.service: azure-ai-services
 durationInMinutes: 3
 content: |
   [!include[](includes/5-discover-ai-protect-natural-resources.md)]

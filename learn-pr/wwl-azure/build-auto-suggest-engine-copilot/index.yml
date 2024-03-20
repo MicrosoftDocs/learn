@@ -3,29 +3,38 @@ uid: learn.wwl.build-auto-suggest-engine-copilot
 metadata:
   title: Guided project - Build auto suggest engine with Copilot
   description: "Use GitHub Copilot to interpret, debug, and extend project code for a Trie data structure that supports autocomplete and spelling suggestion features."
-  ms.date: 10/26/2023
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: buzahid
-  ms.topic: module
+  ms.topic: module-guided-project
   ms.custom:
   - N/A
   ms.service: artificial-intelligence
   ms.devlang: csharp
+  ai-usage: human-only
 title: Guided project - Build auto suggest engine with Copilot
 summary: |
   Use GitHub Copilot to interpret, debug, and extend project code for a Trie data structure that supports autocomplete and spelling suggestion features.
+
   [!INCLUDE [](../../includes/wwl/guided-project-notes.md)]
 abstract: |
   In this module, you will:
-  - Interpret code with Copilot
-  - Author code with Copilot
-  - Debug and test code with Copilot
+
+  -   Interpret code with Copilot
+
+  -   Author code with Copilot
+
+  -   Debug and test code with Copilot
 prerequisites: |
-  - Visual Studio Code
-  - GitHub Copilot extension
-  - GitHub Copilot Chat extension
-  - Basic understanding of the C# programming language
-  - Familiarity with classes, methods, variables, and logic statements
+  -   Visual Studio Code
+
+  -   GitHub Copilot extension
+
+  -   GitHub Copilot Chat extension
+
+  -   Basic understanding of the C# programming language
+
+  -   Familiarity with classes, methods, variables, and logic statements
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

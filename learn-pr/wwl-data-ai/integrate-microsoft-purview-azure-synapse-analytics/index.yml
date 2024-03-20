@@ -6,7 +6,7 @@ metadata:
   ms.date: 07/20/2023
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: synapse-analytics
   ms.subservice: purview
 title: Integrate Microsoft Purview and Azure Synapse Analytics
@@ -31,7 +31,7 @@ products:
 - azure-synapse-analytics
 - microsoft-purview
 subjects:
-- data-ai
+- data-management
 - data-engineering
 units:
 - learn.wwl.integrate-microsoft-purview-azure-synapse-analytics.introduction
