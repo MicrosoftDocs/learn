@@ -47,7 +47,7 @@ Follow the **Remediation steps**. If available you might be asked to *Select Lea
 
 Then update the **severity** or **status** levels, which are automatically set when the alert is created and might now need changing.
 
-In Defender for IoT, the sensor assigns three **Severity** levels, they are: *High*, *Medium* and *Low*. The sensor also assigns three **Status** levels, they are *New*, *Active* and *Closed*. We recommend that you start triaging the critical level alerts first.
+In Defender for IoT, the sensor assigns three **Severity** levels, they are: *High*, *Medium* and *Low*. The sensor also assigns three **Status** levels, they're *New*, *Active* and *Closed*. We recommend that you start triaging the critical level alerts first.
 
 :::image type="content" source="../media/alerts-main-1.png" alt-text="Screenshot of the alerts screen" lightbox="../media/alerts-main-1.png":::
 

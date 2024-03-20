@@ -2,11 +2,11 @@ Your sensor now sends data to Microsoft Defender for IoT. You need to check that
 
 ## Check public IP addresses
 
-What do we do here? give example of how this is done?
+What do we do here? Give example of how this is done?
 
 ## View the subnets detected by your sensor
 
-First you must analyze the traffic being monitored by the OT sensor.
+First you must analyze the traffic monitored by the OT sensor.
 
 1. Log in to your sensor
 1. Select **System setting** > **Deployment**

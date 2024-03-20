@@ -4,9 +4,9 @@ This module describes the steps required to fine-tune and calibrate a cloud-conn
 
 ## Example scenario
 
-Suppose you work for a car manufacturer that has offices and production sites across the globe. You're tasked with implementing a system to monitor traffic and secure your manufacturing automation systems, from the access panels to the pneumatic and packaging systems. To take your organizations's OT security visibility to a whole new level, your team chooses to use Microsoft Defender for IoT.
+Suppose you work for a car manufacturer that has offices and production sites across the globe. You're tasked with implementing a system to monitor traffic and secure your manufacturing automation systems, from the access panels to the pneumatic and packaging systems. To take your organization's OT security visibility to a whole new level, your team chooses to use Microsoft Defender for IoT.
 
-The OT sensor is activated and the devices are now mirroring data to the sensor. You're tasked with fine-tuning the OT sensor. You need to check and fine-tune your sensor settings to ensure that it detects the interfaces and traffic you want to monitor and alerts you correctly for risky network activity. When your sensor has identified a baseline of network traffic, you’re ready to switch out of learning mode into operation mode.
+The OT sensor is activated and the devices are now mirroring data to the sensor. You're tasked with fine-tuning the OT sensor. You need to check and fine-tune your sensor settings to ensure that it detects the interfaces and traffic you want to monitor and alerts you correctly for risky network activity. When your sensor identifies a baseline of network traffic, you’re ready to switch out of learning mode into operation mode.
 
 ## What will we be doing?
 
@@ -18,4 +18,4 @@ In this module, you'll:
 
 ## What is the main goal?
 
-By the end of this session, you'll be able to fine tune and calibrate your OT sensor, ensuring that it sends accurate and filtered data. You'll also be able to triage the network alerts, making sure that they are created when suspicious traffic is detected. This completes the deployment process of the sensor to Defender for IoT. <!-- are we deploying a sensor or D4IoT? deployment of the sensor to Defender for IoT - theo-->
+By the end of this session, you're able to fine tune and calibrate your OT sensor, ensuring that it sends accurate and filtered data. You're also able to triage the network alerts, making sure that they're created when suspicious traffic is detected. This completes the sensor deployment process to Defender for IoT. <!-- are we deploying a sensor or D4IoT? deployment of the sensor to Defender for IoT - theo-->
