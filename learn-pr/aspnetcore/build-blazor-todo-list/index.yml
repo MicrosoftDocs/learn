@@ -29,8 +29,6 @@ products:
 - aspnet-core
 - blazor
 - dotnet
-subjects:
-- development-tools
 units:
 - learn.build-blazor-todo-list.introduction
 - learn.build-web-app-blazor-webassembly-vscode.6-csharp-razor-binding

@@ -32,7 +32,10 @@ Next, generate a new endpoint with GitHub Copilot by adding the comment:
 
 ### Step 3: Add necessary imports
 
-The generated code causes the application to crash. The crash happens because the `base64` and `os` modules aren't imported. Add the following lines to the top of the file:
+The generated code causes the application to crash. The crash happens because the `base64` and `os` modules aren't imported. Use GitHub Copilot Chat to ask Copilot to help you add the missing imports.
+
+
+Alternatively add the following lines to the top of the file:
 
 ```python
 import base64

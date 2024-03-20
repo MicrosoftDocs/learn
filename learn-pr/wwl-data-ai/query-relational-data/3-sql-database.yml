@@ -4,11 +4,10 @@ title: Query relational data in Azure SQL Database
 metadata:
   title: Query relational data in Azure SQL Database
   description: "Query relational data in Azure SQL Database"
-  ms.date: 08/12/2021
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
 durationInMinutes: 6
 content: |
   [!include[](includes/3-sql-database.md)]

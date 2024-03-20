@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-cloud-storage-for-iot.review-options-for-azure-iot-solutions
+title: Review cloud storage options for Azure IoT solutions
+metadata:
+  title: Review cloud storage options for Azure IoT solutions
+  description: "Review cloud storage options for Azure IoT solutions"
+  ms.date: 02/16/2024
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-common-storage-options-azure-iot-solutions.md)]
