@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/17/2022
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Migrate consolidating and secure artifacts
 summary: This module details package migration, consolidation, and configuration to secure access to package feeds and artifact repositories.
 abstract: |
