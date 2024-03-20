@@ -40,8 +40,6 @@ There are two modes of migration to Azure SQL Managed Instance: **online** and *
 
 - [**Native backup and restore**](/azure/azure-sql/managed-instance/restore-sample-database-quickstart?azure-portal=true). Backup and restore are a simple migration method favored by many SQL Server professionals. It's the easiest migration option for customers who can provide full database backups to Azure Storage.
 
-- [**Data Migration Assistant (DMA)**](/sql/dma/dma-overview?azure-portal=true). Use the Data Migration Assistant in the planning and assessment stage of a data platform modernization project. You can check for compatibility issues that impact database functionality in SQL Managed Instance. Also, you can review performance and reliability improvements for a target environment before you do the migration. You can then incorporate these improvements into your plan.
-
 - [**Transactional replication**](/sql/relational-databases/replication/transactional/transactional-replication?azure-portal=true). Transactional replication is a way to move data between continuously connected database servers. It’s best to be used for online or offline migration of large and complex databases.
 
 While most of the tools facilitate [migration to Azure SQL Database](/training/modules/migrate-sql-workloads-azure-sql-databases/?azure-portal=true) as well, there are some that are exclusively supported by SQL Managed Instance. In the next units, we'll learn about a few of them in more detail.

@@ -10,7 +10,7 @@ A _pull request_ is a _request_ from you, the developer of a feature, to the mai
 
 ### Pull requests and branch protections
 
-When you configure branch protections, you can require the owners of your code to review the pull request. For example, you might include the project leads as reviewers for all of your pull requests. Or, you might specify that a certain number of people must review every pull request.
+When you configure branch protections, you can require your code owners to review the pull request. For example, you might include the project leads as reviewers for all of your pull requests, or you might specify that a certain number of people must review every pull request.
 
 ::: zone-end
 
@@ -18,7 +18,7 @@ When you configure branch protections, you can require the owners of your code t
 
 ### Pull requests and branch policies
 
-When you configure branch policies, you can require specific people or a group of people to review the pull request. For example, you might include the project leads as reviewers for all of your pull requests. Or, you might specify that a certain number of people must review every pull request.
+When you configure branch policies, you can require specific people or a group of people to review the pull request. For example, you might include the project leads as reviewers for all of your pull requests, or you might specify that a certain number of people must review every pull request.
 
 You can also require that each pull request is linked to a work item. By using this configuration, you can trace from a work item that contains a feature request to the code that implements the change, all the way to deployment to your production environment.
 
@@ -38,9 +38,9 @@ You can create a pull request by using the Azure DevOps web interface. You selec
 
 ::: zone-end
 
-When you create a pull request, you need to give it a name. It's a good practice to make your pull request names clear and understandable. This practice helps your team members understand the context of what they're being asked to review. If they have different areas of expertise, a good name can help them find pull requests where they can contribute meaningful feedback, and skip the pull requests that aren't relevant.
+When you create a pull request, you need to give it a name. It's a good practice to make your pull request names clear and understandable. This practice helps your team members understand the context of what they're being asked to review. If they have different areas of expertise, a good name can help them find pull requests where they can contribute meaningful feedback and skip the pull requests that aren't relevant.
 
-Also, pull request names often become part of your Git repository's history. So it's a good idea to make them understandable when somebody looks back at the history.
+Also, pull request names often become part of your Git repository's history, so it's a good idea to make them understandable when somebody looks back at the history.
 
 ::: zone pivot="github"
 
@@ -50,7 +50,7 @@ You can also give pull requests a description. You can mention specific people o
 
 ::: zone pivot="azurerepos"
 
-You can also give pull requests a description. You can mention specific people, or refer to work items, in your descriptions. Many teams create standardized templates for pull request descriptions so that it's clear what each change is.
+You can also give pull requests a description. You can mention specific people or refer to work items in your descriptions. Many teams create standardized templates for pull request descriptions so that it's clear what each change is.
 
 ::: zone-end
 
@@ -62,7 +62,7 @@ Even after you've created a pull request, you can keep making changes to the cod
 
 ## Review a pull request
 
-When you review a pull request, you can see all of the changes. You can comment on the entire pull request or just on specific parts of the files that have been changed. The pull request author can respond to comments, and other reviewers can participate in discussions. These commenting features make collaborating on pull requests an interactive experience.
+When you review a pull request, you can see all of the changes. You can comment on the entire pull request, or just on specific parts of the files that have been changed. The pull request author can respond to comments, and other reviewers can participate in discussions. These commenting features make collaborating on pull requests an interactive experience.
 
 When you review Bicep code, look for these key elements:
 
@@ -80,13 +80,13 @@ After the pull request is approved, it can be _completed_. That means the conten
 
 ::: zone pivot="github"
 
-In some teams, the author of the pull request should also complete it. This process helps ensure that the author controls when the merge happens and can be available to monitor any automated deployments. In other teams, approvers complete the pull request. Your team should decide who merges pull requests and when.
+In some teams, the pull request author should also complete it. This process helps ensure that the author controls when the merge happens and can be available to monitor any automated deployments. In other teams, approvers complete the pull request. Your team should decide who merges pull requests and when.
 
 ::: zone-end
 
 ::: zone pivot="azurerepos"
 
-In some teams, the author of the pull request should also complete it. This process helps ensure that the author controls when the merge happens and can be available to monitor any automated deployments. In other teams, approvers complete the pull request. You can even use Azure DevOps to automatically complete a pull request when it meets the approval criteria. Your team should decide who merges pull requests and when.
+In some teams, the pull request author should also complete it. This process helps ensure that the author controls when the merge happens and can be available to monitor any automated deployments. In other teams, approvers complete the pull request. You can even use Azure DevOps to automatically complete a pull request when it meets the approval criteria. Your team should decide who merges pull requests and when.
 
 ::: zone-end
 
@@ -102,7 +102,7 @@ After you start to use feature branches and pull requests, your team's process m
    Other team members review the changes. When they're satisfied, they approve the pull request and it's merged to the shared repository's main branch.
 1. They delete the branches in the shared repository and in their local copy of the repository.
 
-   In some scenarios, the remote repository's push triggers an automated pipeline to verify, test and deploy the code. You'll learn more about pipelines in other Microsoft Learn modules.
+   In some scenarios, the remote repository's push triggers an automated pipeline to verify, test, and deploy the code. You'll learn more about pipelines in other Microsoft Learn modules.
 
 The following diagram illustrates this revised process.
 
