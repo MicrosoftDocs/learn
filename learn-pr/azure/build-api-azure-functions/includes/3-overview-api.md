@@ -12,6 +12,6 @@ Right now, these are the Product Manager application's parts:
 
 In this module, you'll build the layer that sits between the front end and the database, safely storing the connection string. This layer is the API. You are using Azure Functions, so it'll be serverless. This means that instead of paying for a full server or virtual machine, you deploy just your code and only pay when it's executed.
 
-When you finish this module, you'll have created the API that allows the front end and the back end to safely communicate. The Product Manager Application will looks like this:
+When you finish this module, you'll have created the API that allows the front end and the back end to safely communicate. The Product Manager Application will look like this:
 
 :::image type="content" source="../media/product-manager-all-parts.svg" alt-text="Diagram displaying the parts of the application: web site, the API using Azure Functions, and the database with the products data":::
