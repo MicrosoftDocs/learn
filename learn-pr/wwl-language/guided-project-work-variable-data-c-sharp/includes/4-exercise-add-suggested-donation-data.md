@@ -128,7 +128,7 @@ The variable `suggestedDonation` is intended to be a numeric value, but is colle
 
 1. Ensure that your validation code is in the right place!
 
-    The two lines you added should appear in the code as the top two lines of the following code :
+    The two lines you added should appear in the code as the top two lines of the following code:
 
     ```csharp
         if (!decimal.TryParse(suggestedDonation, out decimalDonation)){
