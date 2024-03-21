@@ -2,8 +2,8 @@
 uid: learn.wwl.implement-azure-monitoring-for-sap-workloads-azure-vms
 metadata:
   title: Implement Azure Monitoring for SAP workloads on Azure VMs
-  description: "Implement Azure Monitoring for SAP workloads on Azure VMs"
-  ms.date: 03/20/2024
+  description: "Explore Azure Monitoring for SAP workloads configuration on Azure Virtual Machines."
+  ms.date: 03/21/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module
