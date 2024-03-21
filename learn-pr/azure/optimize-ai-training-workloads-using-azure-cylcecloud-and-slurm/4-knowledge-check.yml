@@ -24,7 +24,7 @@ quiz:
       isCorrect: true
       explanation: "Correct."
   - content: "When can a user run a Node Health Check in an Azure CycleCloud cluster?"
-      choices:
+    choices:
     - content: "During cluster creation via the CycleCloud Web Portal."
       isCorrect: false
       explanation: " "
