@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/18/2024
+  ms.date: 03/21/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -42,10 +42,10 @@ quiz:
     choices:
     - content: "It's allowed by default."
       isCorrect: true
-      explanation: "Incorrect. Allowing traffic by default would pose a security risk."
+      explanation: "Correct. Allowing traffic by default would pose a security risk."
     - content: "It's denied by default."
       isCorrect: false
-      explanation: "Correct. By default, network traffic that doesn't match any Network Security Group (NSG) rules is denied."
+      explanation: "Incorrect. By default, network traffic that doesn't match any Network Security Group (NSG) rules is denied."
     - content: "It's postponed until the rules change."
       isCorrect: false
       explanation: "Incorrect. NSGs don't postpone network traffic."
