@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.node-health-checks-using-azure-cyclecloud
+uid: learn.azure.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.node-health-checks-using-azure-cyclecloud
 title: Node health checks using Azure CycleCloud
 metadata:
   unitType: learning-content
