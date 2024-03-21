@@ -21,26 +21,6 @@
         "redirect_document_id": false
       },
       {
-        "source_path_from_root": "learn-pr/paths/work-data-azure-machine-learning/index.yml",
-        "redirect_url": "https://learn.microsoft.com/training/paths/explore-azure-machine-learning-workspace/",
-        "redirect_document_id": false
-      },
-      {
-        "source_path_from_root": "learn-pr/paths/work-compute-azure-machine-learning/index.yml",
-        "redirect_url": "https://learn.microsoft.com/training/paths/explore-azure-machine-learning-workspace/",
-        "redirect_document_id": false
-      },
-      {
-        "source_path_from_root": "learn-pr/paths/use-notebooks-for-experimentation-azure-machine-learning/index.yml",
-        "redirect_url": "https://learn.microsoft.com/training/paths/automate-machine-learning-model-selection-azure-machine-learning/",
-        "redirect_document_id": false
-      },
-      {
-        "source_path_from_root": "learn-pr/paths/train-models-scripts-azure-machine-learning/index.yml",
-        "redirect_url": "https://learn.microsoft.com/training/paths/use-azure-machine-learning-pipelines-for-automation/",
-        "redirect_document_id": false
-      },
-      {
         "source_path_from_root": "/learn-pr/azure/aks-network-design-azure-container-network-interface/3-estimate-cluster-size-pods.yml",
         "redirect_url": "/training/modules/aks-network-design-azure-container-network-interface/4-estimate-cluster-size-pods",
         "redirect_document_id": true
