@@ -6,7 +6,7 @@ metadata:
   ms.date: 06/06/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Track model training in Jupyter notebooks with MLflow
 summary: Learn how to use MLflow for model tracking when experimenting in notebooks.
 abstract: |
