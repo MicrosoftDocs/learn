@@ -25,7 +25,7 @@ quiz:
     - content: "A tool for analyzing source code for security vulnerabilities."
       isCorrect: false
       explanation: "Incorrect. This describes the purpose of code scanning, which is a part of GHAS, but not the full definition of GHAS itself."
-   - content: "A platform for tracking the full impact of changes to dependencies in a project."
+    - content: "A platform for tracking the full impact of changes to dependencies in a project."
       isCorrect: false
       explanation: Incorrect. This describes the purpose of Dependency Review, a feature of Dependabot within GHAS, but not the full definition of GHAS."
   - content: "How does code scanning contribute to the security of a software development project?"
