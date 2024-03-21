@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm
+uid: learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm
 metadata:
   moduleType: standard
   title: Optimize AI Training workloads using Azure CycleCloud and Slurm
