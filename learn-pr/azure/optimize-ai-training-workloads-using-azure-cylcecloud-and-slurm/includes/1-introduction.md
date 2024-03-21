@@ -27,12 +27,8 @@ By the end of this module, you're able to:
 ![NOTE:]
 To complete the optional exercises, you need to use your own subscription, which might incur charges. A trial subscription or a subscription to which you already have access will work to follow along.
 
-Completion of: [Exercise - Create an HPC cluster from built-in templates - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/azure-cyclecloud-high-performance-computing/5-exercise-create-cluster)
-
 Image 1: CycleCloud Marketplace Offering 
-
-![A screenshot of a computer  Description automatically generated](../media/image1.png)
 
 Image 2: CycleCloud Cluster Creation Web Portal 
 
-![A screenshot of a computer  Description automatically generated](../media/image2.jpeg)
+
