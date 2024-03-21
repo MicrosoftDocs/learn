@@ -34,7 +34,7 @@ There are two options for provisioning capacity:
 
 Regardless of the approach you choose to provision capacity, the process takes the information and establishes a resource group for the Microsoft Copilot for Security service, within your Azure subscription. The SCUs are an Azure resource within that resource group. Deployment of the Azure resource can take a few minutes.
 
-Once admins complete the steps to onboard to Copilot, they can manage capacity by increasing or decreasing provisioned SCUs within the Azure portal or the Security Copilot product itself. Copilot for Security provides a usage monitoring dashboard for capacity owners allowing them to track usage over time and make informed decisions about capacity provisioning. More information is provided in the module [Describe core features of Microsoft Copilot for Security](/training/modules/security-copilot-describe-core-features/2-describe-standalone-experience)
+Once admins complete the steps to onboard to Copilot, they can manage capacity by increasing or decreasing provisioned SCUs within the Azure portal or the Security Copilot product itself. Copilot for Security provides a usage monitoring dashboard for capacity owners allowing them to track usage over time and make informed decisions about capacity provisioning. More information is provided in the module [Describe core features of Microsoft Copilot for Security](/training/modules/security-copilot-describe-core-features/2-describe-standalone-experience).
 
 :::image type="content" source="../media/usage-monitoring.png" lightbox="../media/usage-monitoring.png" alt-text="Screen capture showing the usage monitoring dashboard.":::
 
@@ -45,7 +45,7 @@ To set up the default environment, you need to have one of the following Microso
 - Global administrator
 - Security administrator
 
-During the setup of Copilot for Security, you are prompted to configure settings. These include:
+During the setup of Copilot for Security, you're prompted to configure settings. These include:
 
 - SCU capacity - Select the capacity of SCUs previously provisioned.
 
@@ -57,17 +57,19 @@ During the setup of Copilot for Security, you are prompted to configure settings
 
   - Allow Microsoft to capture and human review data from Copilot for Security to build and validate Microsoft's security AI model: When turned on, customer data is shared with Microsoft for Copilot AI improvement. Opting in does NOT allow Microsoft to use customer data to train foundational models. Prompts and responses are evaluated to enhance responses and to ensure they're what's expected and useful to you.
   
-  For more information about how Microsoft handles your data, see [Data security and privacy](/security-copilot/privacy-data-security).
+      For more information about how Microsoft handles your data, see [Data security and privacy](/security-copilot/privacy-data-security).
   
     :::image type="content" source="../media/organization-data-settings.png" lightbox="../media/organization-data-settings.png" alt-text="Screen capture showing the settings for how you can configure data sharing to help improve Copilot.":::
 
 - Decide where your prompts are evaluated - You can restrict the evaluation within your geo or allow evaluation anywhere in the world. For more information on the list of mapped locations for your geo, see Data security and privacy.
 
-- Roles - You'll be informed of the required roles that need to be assigned for users in your organization to use Copilot for Security.
+- Roles - You are informed of the required roles that need to be assigned for users in your organization to use Copilot for Security.
 
 ### Role permissions
 
 To ensure that the users can access the features of Copilot, they need to have the appropriate role permissions.
+
+  :::image type="content" source="../media/role-assignment.png" lightbox="../media/role-assignment.png" alt-text="Screen capture showing the role assignment settings.":::
 
 Permissions can be assigned using Microsoft Entra ID roles or Copilot for Security roles. As a best practice, provide the least privileged role applicable for each user.
 
@@ -85,6 +87,13 @@ The Microsoft Copilot for Security roles are:
 - Copilot workspace owner
 - Copilot workspace contributor
 - Copilot workspace reader
+
+Security Copilot will add “All Users” in the tenants to the Workspace Contributor Role, by default as part of the first run experience or initial setup.  
+- Any user within a licensed tenant (purchased security copilot via the consumption model) will be allowed to create a session/prompt by default.
+- If the admin doesn't wish to provide access to everyone in the licensed tenant to be able to run prompts, they can restrict access to run prompts by removing “All users” from the Workspace Contributor Role assignments and adding an existing security group from the Copilot for Security portal.
+- All experiences where Copilot for Security is used (embedded or standalone) will follow the updates made by the admin.
+-	Admin/Owner permissions are required for any privileged operations like associating the workspace to SCU capacity, owner settings, plugin settings, and more.
+-	Provisioning Capacity operations continue to require Azure owner or Azure contributor roles, enabled through Azure IAM.
 
 For a detailed listing of the permissions granted for each of these roles, refer to the Assign roles article in the Summary and resources unit of this module.
 

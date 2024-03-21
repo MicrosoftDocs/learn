@@ -6,7 +6,7 @@ metadata:
   ms.date: 07/13/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Configure Azure Kubernetes Service
 summary: Learn how to configure Azure Kubernetes Service including networking, storage, and scaling.
 abstract: |

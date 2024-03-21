@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/11/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Create and manage SQL Agent jobs
 summary: Explore SQL automation for scheduled tasks, and automatic alerts for SQL Server and Azure SQL Managed Instance.
 abstract: |

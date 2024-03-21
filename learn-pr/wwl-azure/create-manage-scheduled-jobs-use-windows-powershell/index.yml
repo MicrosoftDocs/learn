@@ -6,7 +6,7 @@ metadata:
   ms.date: 07/03/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Create and manage scheduled jobs using Windows PowerShell
 summary: This module covers how to use scheduled jobs. In Windows PowerShell, scheduled jobs are essentially scheduled tasks. They follow the same rules for actions, triggers, and other features, and run Windows PowerShell scripts by design.
 abstract: |
