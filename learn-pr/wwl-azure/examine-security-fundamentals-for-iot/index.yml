@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/09/2023
   author: wwlpublish
   ms.author: serlingdavis
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Examine security fundamentals for IoT
 summary: This module introduces you to the IoT security infrastructure, security best practices, threat modeling, and the security tasks that are assigned to the various roles that contribute to an IoT solution.
 abstract: |

@@ -9,4 +9,4 @@ You can learn more by reviewing the following documents:
 - [Configure and manage quorum](/windows-server/failover-clustering/manage-cluster-quorum?azure-portal=true)
 - [Stretch Cluster Replication Using Shared Storage](/windows-server/storage/storage-replica/stretch-cluster-replication-using-shared-storage?azure-portal=true)
 - [Cluster sets](/windows-server/storage/storage-spaces/cluster-sets?azure-portal=true)
-- [Course WS-011T00-A: Windows Server 2019 Administration](/certifications/courses/ws-011t00?azure-portal=true)
+
