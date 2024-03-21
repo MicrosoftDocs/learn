@@ -6,8 +6,8 @@ metadata:
   title: "Understand GHAS and its Role in the Security Ecosystem"
   description: "In this unit, you'll learn the importance of responding to security alerts and what that response should look like. You'll also see GitHub functionality that enables you to quickly react to these alerts." # user input: a description for site search and SEO
   ms.date: 3/20/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: unit
 durationInMinutes: 3
 content: |
