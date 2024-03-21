@@ -22,5 +22,5 @@ To run your AI training workload smoothly you must incorporate NHC’s, monitori
 
 ## Additional Resources to optimize your AI Workloads.
 
-- [Azure CycleCloud Documentation - Azure CycleCloud | Microsoft Learn](https://learn.microsoft.com/en-us/azure/cyclecloud/?view=cyclecloud-8)
+- [Azure CycleCloud Documentation - Azure CycleCloud | Microsoft Learn](https://learn.microsoft.com/azure/cyclecloud/?view=cyclecloud-8)
 - [Help + support - Microsoft Azure](https://ms.portal.azure.com/) 
