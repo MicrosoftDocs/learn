@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/26/2022
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Work with linting and unit testing in GitHub Actions
 summary: Learn how to automate code checks whenever you update code for machine learning workloads.
 abstract: |
