@@ -4,11 +4,12 @@ title: Create variable names in Windows PowerShell scripts
 metadata:
   title: Create variable names in Windows PowerShell scripts
   description: "Create variable names in Windows PowerShell scripts"
-  ms.date: 11/10/2022
+  ms.date: 03/21/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
   ms.custom:
+  - N/A
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
