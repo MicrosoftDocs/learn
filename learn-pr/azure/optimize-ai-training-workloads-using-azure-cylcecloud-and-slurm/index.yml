@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm
+uid: learn.azure.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm
 metadata:
   ms.author: begeorge
   author: begeorge
@@ -34,11 +34,10 @@ products:
 subjects:
 - ai-cyclecloud-slurm
 units:
-- learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm
-- learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.introduction
-- learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.node-health-checks-using-azure-cyclecloud
-- learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.cluster-requirements-for-ai-training-workloads
-- learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.knowledge-check
-- learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.summary
+- learn.azure.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.introduction
+- learn.azure.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.node-health-checks-using-azure-cyclecloud
+- learn.azure.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.cluster-requirements-for-ai-training-workloads
+- learn.azure.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.knowledge-check
+- learn.azure.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.summary
 badge:
   uid: learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm-badge
