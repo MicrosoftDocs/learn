@@ -45,7 +45,7 @@ The prerequisites for implementing stretched clusters include:
 
 - Cluster nodes must be members of the same or trusted AD DS forest.
 - Each cluster node should have at least 2 GB of RAM and two CPU cores per server.
-- Each cluster node should be running Windows Server 2019 Datacenter or Windows Server 2016 Datacenter edition. It's possible to use Windows Server 2019 Standard edition, but such configuration supports replication of a single volume of up to 2 terabytes (TB) in size only.
+- Each cluster node should be running Windows Server 2025 Datacenter or Windows Server 2016 Datacenter edition. It's possible to use Windows Server 2025 Standard edition, but such configuration supports replication of a single volume of up to 2 terabytes (TB) in size only.
 - Each cluster node should have at minimum 1 Gigabit Ethernet adapter for synchronous replication, although Remote Direct Memory Access (RDMA) is preferable.
 - Two sets of volumes (one for data and the other for logs) at the primary and the secondary site, with the following settings:
 
