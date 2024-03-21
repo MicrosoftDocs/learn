@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/08/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Design a machine learning operations solution
 summary: Learn about machine learning operations or MLOps to bring a model from development to production. Identify options for monitoring and retraining when preparing a model for production.
 abstract: |

@@ -6,7 +6,7 @@ metadata:
   ms.date: 06/07/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Design a data ingestion strategy for machine learning projects
 summary: Learn how to design a data ingestion solution for training data used in machine learning projects.
 abstract: |

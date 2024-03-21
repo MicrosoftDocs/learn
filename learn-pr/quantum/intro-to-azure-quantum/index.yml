@@ -7,7 +7,7 @@ metadata:
   author: SoniaLopezBravo
   ms.author: sonialopez
   manager: tedhudek
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-quantum
 title: Introduction to quantum computing with Azure Quantum
 summary: What makes quantum computing so special? Learn about the qubit, the building blocks of a quantum computer, and how Azure Quantum can help you write quantum algorithms using Q#, a quantum programming language.

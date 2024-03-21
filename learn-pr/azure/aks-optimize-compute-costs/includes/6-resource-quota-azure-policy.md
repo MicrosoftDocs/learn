@@ -50,7 +50,7 @@ There are a few steps to registering the Azure Policy Add-on for AKS feature. We
 
 1. Register two resource providers by using the `az provider register` command:
 
-    - **Microsoft.ContainerService** and **Microsoft.PolicyInsights**: These resource providers support actions such as querying information about policy events and managing containers. In addiThese are actions to query, create, update, or delete policy remediation.
+    - **Microsoft.ContainerService** and **Microsoft.PolicyInsights**: These resource providers support actions such as querying information about policy events and managing containers. These are actions to query, create, update, or delete policy remediation.
 
     Here's an example of the two registration commands:
 

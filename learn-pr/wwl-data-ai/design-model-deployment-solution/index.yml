@@ -6,7 +6,7 @@ metadata:
   ms.date: 01/03/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Design a model deployment solution
 summary: Learn how to design a model deployment solution and how the requirements of the deployed model can affect the way you train a model.
 abstract: |
