@@ -31,10 +31,8 @@ roles:
   - developer
   - student
 products:
-  - azure-ai
+  - artificial-intelligence
   - azure-cyclecloud
-subjects:
-- artificial-intelligence
 units:
 - learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.1-introduction
 - learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.2-node-health-checks-using-azure-cyclecloud
