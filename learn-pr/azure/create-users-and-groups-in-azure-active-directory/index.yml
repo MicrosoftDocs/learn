@@ -18,7 +18,7 @@ abstract: |
   - Manage app and resource access by using Microsoft Entra groups.
   - Give guest users access in Microsoft Entra business to business (B2B).
 prerequisites: | 
-  - An Azure account with an [active subscription](https://azure.microsoft.com/free)
+  - An Azure account with an active subscription
 iconUrl: /training/achievements/create-users-and-groups-in-azure-active-directory.svg
 levels:
 - beginner
