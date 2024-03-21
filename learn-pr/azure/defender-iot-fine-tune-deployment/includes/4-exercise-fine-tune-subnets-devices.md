@@ -108,10 +108,15 @@ What do we do here? Give example of how this is done?
 
 ## Add DHCP address ranges
 
-Add the DHCP address ranges for a device.
+For a device which automatically refreshes its IP address, add the DHCP address ranges for that device.
 
-Select **System setting** > **DHCP ranges**
-<!-- if we think this is relevant take the info from here for instructions. <https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-control-what-traffic-is-monitored#configure-dhcp-address-ranges> Theo needs to send this to me-->
+1. Select **System setting** > **DHCP ranges**
+1. Select **Add range**
+1. Type the IP address ranges
+1. Type a name
+1. Select **Save**
+
+:::image type="content" source="../media/4-dhcp-ranges.png" alt-text="Screenshot adding new DHCP ranges for changing IP addresses":::
 
 ## Check your work
 

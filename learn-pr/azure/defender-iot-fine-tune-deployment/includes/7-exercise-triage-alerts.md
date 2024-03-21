@@ -1,7 +1,7 @@
 Your sensor is now fine-tuned so that the devices are correctly identified, configured, and located within the device map and system hierarchy. The final action for setting up the sensor is to triage the alerts that Microsoft Defender for IoT creates during the *Learning* mode.
 
 ## View your alerts
-
+<!-- is this supposed to be in portal or sensor? -->
 First, identify which alerts are important to triage.
 
 1. In Defender for IoT, open **Alerts**.
@@ -42,11 +42,10 @@ What to write here?
 ## Select a few to triage and learn to add them to your learned network baseline
 
  how do we do this? Who to speak to? Vhathek?
-<!--<https://learn.microsoft.com/azure/defender-for-iot/organizations/ot-deploy/create-learned-baseline#triage-alerts>
-
-<https://learn.microsoft.com/azure/defender-for-iot/organizations/how-to-view-alerts#prerequisites> not important!
-
-<https://learn.microsoft.com/azure/defender-for-iot/organizations/how-to-view-alerts#manage-alert-status-and-triage-alerts>-->
+Filter alerts
+choose type of alert
+view full details
+<!-- <https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-manage-cloud-alerts> <https://learn.microsoft.com/azure/defender-for-iot/organizations/how-to-view-alerts#manage-alert-status-and-triage-alerts>-->
 
 ## End Learning mode
 <!-- Should this be part of the LM? Even though this will be done at a later time in real life, as part of the exercise it should be added to this unit. LW -->
