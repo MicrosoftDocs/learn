@@ -7,7 +7,7 @@ metadata:
   description: Check your knowledge of how to optimize ai training workloads using Azure CycleCloud and slurm.
   ms.date: 03/20/2024
   author: begeorge
-  ms.author: begeorge
+  ms.author: padmalathas
   ms.topic: unit
 durationInMinutes: 5
 quiz:
@@ -16,10 +16,10 @@ quiz:
     choices:
     - content: "The user must resubmit the job."
       isCorrect: false
-      explanation: " "
+      explanation: "Wrong"
     - content: "The user must terminate the cluster and recreate it."
       isCorrect: false
-      explanation: " "
+      explanation: "Wrong"
     - content: "Overprovisioning will allocate a healthy node to the cluster in place."
       isCorrect: true
       explanation: "Correct."
@@ -27,13 +27,13 @@ quiz:
     choices:
     - content: "During cluster creation via the CycleCloud Web Portal."
       isCorrect: false
-      explanation: " "
+      explanation: "Wrong"
     - content: "After submitting a job to the cluster."
       isCorrect: false
-      explanation: " "  
+      explanation: "Wrong"  
     - content: "Whenever a node experiences downtime."
       isCorrect: false
-      explanation: " "
+      explanation: "Wrong"
     - content: "Node health checks will run automatically when new nodes are added to the cluster."
       isCorrect: true
       explanation: "Correct."
@@ -47,10 +47,10 @@ quiz:
       explanation: " "  
     - content: "Azure Managed Lustre File System (AMLFS)."
       isCorrect: false
-      explanation: " "
+      explanation: "Wrong"
     - content: "Azure Blob Storage."
       isCorrect: false
-      explanation: " "
+      explanation: "Wrong"
     - content: "B & C"
       isCorrect: true
       explanation: "Correct."      
@@ -61,27 +61,27 @@ quiz:
       explanation: "Correct."
     - content: "Single-node environments are sufficient for AI training workloads."
       isCorrect: false
-      explanation: " "  
+      explanation: "Wrong"  
     - content: "Premium SSDs are not necessary for OS disks."
       isCorrect: false
-      explanation: " "
+      explanation: "Wrong"
     - content: "InfiniBand connectivity is optional for AI training clusters."
       isCorrect: false
-      explanation: " "
+      explanation: "Wrong"
   - content: "What are the benefits of choosing a Premium SSD option for your AI training workload?"
     choices:
     - content: "Faster data access and reduced latency."
       isCorrect: false
-      explanation: " "
+      explanation: "Wrong"
     - content: "Shorter training times and faster model convergence."
       isCorrect: false
-      explanation: " "  
+      explanation: "Wrong"  
     - content: "Improved scalability and parallelism."
       isCorrect: false
-      explanation: " "
+      explanation: "Wrong"
     - content: "Enhanced support for generative AI and large language models."
       isCorrect: false
-      explanation: " "
+      explanation: "Wrong"
     - content: "All of the Above."
       isCorrect: true
       explanation: "Correct."
