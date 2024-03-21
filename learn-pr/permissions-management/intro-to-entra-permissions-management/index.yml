@@ -7,8 +7,7 @@ metadata:
   author: jenniferf-skc
   ms.author: jfields
   ms.topic: module-intro-to-product
-  ms.service: multicloud-permissions-management
-  ms.subservice: ciem
+  ms.service: entra-permissions-management
 title: Introduction to Microsoft Entra Permissions Management 
 summary: Microsoft Entra Permissions Management gives security operation administrators insight into over-privileged workload and user identities, actions, and resources across multicloud infrastructures.
 abstract: |
