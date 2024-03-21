@@ -21,20 +21,20 @@ prerequisites: |
   - Basic knowledge of HPC.
   - Understand the concepts of Azure Virtual Machines, subscription, resource groups, and virtual networks.
   - Ability to deploy VM, mounting shared file systems.
-iconUrl: /training/achievements/azure-cyclecloud-high-performance-computing.svg
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
 levels:
   - beginner
 roles:
   - solution-architect
+  - data-scientist
   - developer
   - student
 products:
-  - azure
+  - azure-ai
   - azure-cyclecloud
-  - slurm
-  - ai
 subjects:
-- ai-cyclecloud-slurm
+- artificial-intelligence
 units:
 - learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.1-introduction
 - learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.2-node-health-checks-using-azure-cyclecloud
@@ -42,4 +42,4 @@ units:
 - learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.4-knowledge-check
 - learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.5-summary
 badge:
-  uid: learn.azure.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm-badge
+  uid: learn.azure.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.badge
