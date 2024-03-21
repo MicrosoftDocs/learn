@@ -7,7 +7,7 @@ metadata:
   ms.date: 10/11/2023
   author: IEvangelist
   ms.author: dapine
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.devlang: csharp
 title: Null safety in C#
 summary: Learn coding practices to help prevent the occurrence of `NullReferenceException`.

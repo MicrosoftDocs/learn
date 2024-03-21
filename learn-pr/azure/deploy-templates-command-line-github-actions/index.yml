@@ -3,21 +3,21 @@ uid: learn.azure.deploy-templates-command-line-github-actions
 metadata:
   title: Automate the deployment of JSON ARM templates by using GitHub Actions
   description: Learn how to deploy JSON Azure Resource Manager (ARM) templates by using Azure PowerShell, the Azure CLI, and GitHub Actions.
-  ms.date: 02/24/2024
+  ms.date: 03/13/2024
   author: pierreroman
   ms.author: pierrer
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=cloud_advocates
   ms.contributors: pierrer-06212021
   ms.service: azure
 title: Automate the deployment of JSON ARM templates by using GitHub Actions
 summary: Learn how to deploy JSON Azure Resource Manager (ARM) templates by using Azure PowerShell, the Azure CLI, and GitHub Actions. Use linked templates to break down complex templates into templates that are more modular. 
 abstract: |
-  After completing this module, you'll be able to:
+  After completing this module, you're able to:
 
   - Choose the best way to deploy JSON ARM templates, based on your needs.
   - Modularize your templates by using linked templates.
-  - Create GitHub Actions to deploy templates.
+  - Deploy templates from a GitHub Actions workflow.
 prerequisites: |
   - Ability to go to the Azure the portal
   - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true&preserve-view=true)
