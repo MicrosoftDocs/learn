@@ -40,4 +40,4 @@ units:
 - learn.azure.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.knowledge-check
 - learn.azure.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.summary
 badge:
-  uid: learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm-badge
+  uid: learn.azure.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm-badge
