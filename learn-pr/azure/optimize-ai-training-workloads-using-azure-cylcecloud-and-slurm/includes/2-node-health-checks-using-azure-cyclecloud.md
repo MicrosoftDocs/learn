@@ -2,19 +2,15 @@
 
 Azure CycleCloud aims to simplify the management of large scale, dynamic HPC environments. As compute sizes increase, and customer workloads become more scalable, it’s essential to ensure that all the VMs deployed for the cluster are available for jobs. 
 
-Instead of doing this with job prologues and custom scheduler integration, which can be too slow and run after the nodes have registered with the scheduler, health checks will run as nodes join the cluster to verify that network interfaces are set up correctly, InfiniBand connectivity is working, and GPUs are healthy before the nodes are added to the scheduler. This can also happen during the overprovisioning process, so the user does not have to deal with failures when they occur. 
-
-The way to enable Node Health checks can be done when creating the Cluster via the CycleCloud Web Portal. 
+Instead of doing this with job prologues and custom scheduler integration, which can be too slow and run after the nodes have registered with the scheduler, health checks will run as nodes join the cluster to verify that network interfaces are set up correctly, InfiniBand connectivity is working, and GPUs are healthy before the nodes are added to the scheduler. This can also happen during the overprovisioning process, so the user does not have to deal with failures when they occur. The way to enable Node Health checks can be done when creating the Cluster via the CycleCloud Web Portal. 
 
 On cluster set up, under “Advanced Settings”, check the Node Health Checks box to enable the NHC feature. 
 
- 
-
-![A screenshot of a computer  Description automatically generated](../media/image3.png)
+![Description](../media/image3.png)
 
 If nodes fail their health checks, a diagnostic report is sent back to CycleCloud to avoid the need for keeping bad nodes around for debugging.
 
-![thumbnail image 1 of blog post titled                                              CycleCloud 8.5 Release Announcement](../media/image4.png)
+![CycleCloud 8.5 Release Announcement](../media/image4.png)
 
 Image 3: Enable NHC on Startup, screenshot from the CC Web Portal
 
@@ -35,29 +31,18 @@ Image 3: Enable NHC on Startup, screenshot from the CC Web Portal
   - NCv3-series
   - NDv2-serries
 
-**!NOTE**: for more information, please see [GPU optimized virtual machine sizes](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes-gpu).
+For more information, see [GPU optimized virtual machine sizes](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes-gpu).
 
 ## Minimum Requirements for Node Health Checks
 
 | **Requirement** | **Details** |
-|---|---|
-| **Operating System** | |
-| **CUDA (for GPU SKUs)** | |
-| **AMD Clang Compiler (for Non-GPU SKUs)** | |
-| **Mellanox OFED Drivers (For IB Related SKUs)** | |
-| **HPC-X MPI (Default in Azure AI/HPC Marketplace Image)** | |
-| **NCCL-Tests** | |
-
-- Ubuntu 20.04, 22.04
-- AlmaLinux >= 8.6
-- Version >= 12
-- Version >= 4.0.0
-- Required for InfiniBand support
-- Version >= v2.11 
-- Automatically installed in the Azure AI/HPC marketplace image
-- Clone and build in `/opt/` or modify environment variable paths in `azure_nccl_allreduce.nhc` and `azure_nccl_allreduce_ib_loopback.nhc`. 
-
-- NCCL-Tests are pre-installed in the Azure AI/HPC marketplace image.
+| :------------------- | :-------------------  | 
+| **Operating System** | Ubuntu 20.04, 22.04 <br> AlmaLinux >= 8.6 |
+| **CUDA (for GPU SKUs)** | Version >= 12 |
+| **AMD Clang Compiler (for Non-GPU SKUs)** | Version >= 4.0.0 |
+| **Mellanox OFED Drivers (For IB Related SKUs)** | Required for InfiniBand support |
+| **HPC-X MPI (Default in Azure AI/HPC Marketplace Image)** | Version >= v2.11 <br> Automatically installed in the Azure AI/HPC marketplace image |
+| **NCCL-Tests** | Clone and build in `/opt/` OR modify environment variable paths in <br> `azure_nccl_allreduce.nhc` and <br> `azure_nccl_allreduce_ib_loopback.nhc` <br> NCCL-Tests are pre-installed in the Azure AI/HPC marketplace image. | 
 
 > [!NOTE]
 > Other distributions may work but are not supported.
@@ -69,7 +54,7 @@ Many of the hardware checks are part of the default NHC project. If you would li
 The following are Azure custom checks added to the existing NHC suite of tests:
 
 | **Check** | **Component Tested** | **nd96asr_v4 expected** | **nd96amsr_a100_v4 expected** | **nd96isr_h100_v5 expected** | **hx176rs expected** | **hb176rs_v4 expected** |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|:---|:---|:---|:---|:---|:---|:---|
 | **check_gpu_count** | GPU count | 8 | 8 | 8 | NA | NA |
 | **check_nvlink_status** | NVlink | no inactive links | no inactive links | no inactive links | NA | NA |
 | **check_gpu_xid** | GPU XID errors | not present | not present | not present | NA | NA |
@@ -85,11 +70,10 @@ The following are Azure custom checks added to the existing NHC suite of tests:
 | **check_ib_link_flapping** | IB link flap occurrence | not present | not present | not present | not present | not present |
 | **check_cpu_stream** | CPU compute/memory bandwidth | NA | NA | NA | 665500 MB/s | 665500 MB/s |
 
-Notes:
+Table does not list all the supported SKUs. The scripts for all tests can be found in the [custom test directory](https://github.com/Azure/azurehpc-health-checks/blob/main/customTests).
 
-The scripts for all tests can be found in the [custom test directory](https://github.com/Azure/azurehpc-health-checks/blob/main/customTests)
-
-Not all supported SKUs are listed in the above table
+> [!NOTE]
+> 
 
 ## _References_
 
