@@ -7,7 +7,7 @@ metadata:
   ms.date: 12/27/2022
   author: mumian
   ms.author: jgao
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.devlang: bicep
 title: Test your Bicep code by using GitHub Actions
 summary: |

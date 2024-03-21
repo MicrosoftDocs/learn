@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/02/2022
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Design processes to automate application analytics
 summary: This module helps designing process to Application Insights, explores telemetry and monitoring tools and technologies.
 abstract: |
