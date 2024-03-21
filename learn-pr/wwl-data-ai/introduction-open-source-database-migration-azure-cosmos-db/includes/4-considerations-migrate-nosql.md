@@ -158,7 +158,7 @@ If you plan to migrate database servers to Azure Cosmos DB, use a virtual networ
 
 ### Authentication and authorization
 
-In most databases, you need to closely control who accesses and modifies which data. This control requires that users are positively identified when they connect to the database. This process is called **authentication** and can be performed in a number of ways with Azure Cosmos DB. Most authentication is for an individual user and is provided by Microsoft Entra ID. You can also grant access to service principals which can include objects such as apps and virtual machines.
+In most databases, you need to closely control who accesses and modifies which data. This control requires that users are positively identified when they connect to the database. This process is called **authentication** and can be performed in a number of ways with Azure Cosmos DB. Most authentication is for an individual user and is provided by Azure Active Directory. You can also grant access to service principals which can include objects such as apps and virtual machines.
 
 Once a user is authenticated and you are certain of their identity, you can add **authorization** to resources. In Cosmos DB, authorization is applied by adding users, groups, or service principals to roles.
 
