@@ -6,9 +6,11 @@ metadata:
   ms.date: 03/21/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.custom:
   - N/A
+  ms.service: powershell
+  ms.subservice: cmdlets
   ai-usage: human-only
 title: Enumerate objects in the pipeline
 summary: This module explains how to enumerate objects in the pipeline so that you can work with one object at a time during automation.
