@@ -4,32 +4,9 @@ Running AI training workloads require significant computing and storage requirem
 
 | **Requirement** | **Details** |
 |---|---|
-| **Distributed Training** | |
-| **Marketplace Images** | Pre-installed with: |
-| **Premium SSDs for OS Disks** | |
-| **Accelerated Networking** | |
-| **User Home Directories** | |
-| **Optional Requirements** | **Container Support** |
-
-- Requires a multi-node environment with a minimum of 4 GPUs. 
-- Each node can accommodate a maximum of 8 GPUs. 
-- Distribute processing power across multiple GPUs. 
-- Large models necessitate substantial memory.
-- InfiniBand drivers 
-- GPU drivers 
-- NCCL libraries/tests 
-- MPI libraries
-- Utilizes premium SSDs with a larger capacity (60 GB) for OS disks.
-  - Faster data access and reduced latency: Premium SSDs enhance read and write speeds, minimizing latency.
-  - Shorter training times and faster model convergence: High-speed performance accelerates training iterations.
-  - Improved scalability and parallelism: Efficiently handle increased data volumes and parallel processing.
-  - Enhanced support for generative AI and large language models: Premium SSDs meet intensive storage requirements.
-- Enabled for improved network performance.
-- Mounted on either:
-  - Azure NetApp Files – single node file storage solution 
-  - AMLFS – multi node file storage (high bandwidth, and IOPS workloads)
-- Automatic node recovery after reboot. 
-- Utilizes local NVMe SSDs.
-- Enables GPU persistence mode and GPU app clock frequencies. 
-- Local NVMe SSD capacity: 7 TB.
-- **Pyxis+enroot integration for GPU container support with the SLURM scheduler.**
+| **Distributed Training** |- Requires a multi-node environment with a minimum of 4 GPUs. <br> - Each node can accommodate a maximum of 8 GPUs.  <br> - Distribute processing power across multiple GPUs. <br> - Large models necessitate substantial memory. |
+| **Marketplace Images** | Pre-installed with: <br> - InfiniBand drivers <br> - GPU drivers  <br> - NCCL libraries/tests <br> - MPI libraries|
+| **Premium SSDs for OS Disks** |- Utilizes premium SSDs with a larger capacity (60 GB) for OS disks. <br>   - Faster data access and reduced latency: Premium SSDs enhance read and write speeds, minimizing latency. br>  - Shorter training times and faster model convergence: High-speed performance accelerates training iterations. <br>   - Improved scalability and parallelism: Efficiently handle increased data volumes and parallel processing. <br>  - Enhanced support for generative AI and large language models: Premium SSDs meet intensive storage requirements. |
+| **Accelerated Networking** |- Enabled for improved network performance. |
+| **User Home Directories** | - Mounted on either: <br>   - Azure NetApp Files – single node file storage solution <br>  - AMLFS – multi node file storage (high bandwidth, and IOPS workloads)|
+| **Optional Requirements** | - Automatic node recovery after reboot. <br> - Utilizes local NVMe SSDs. <br> - Enables GPU persistence mode and GPU app clock frequencies. <br> - Local NVMe SSD capacity: 7 TB. <br> **Container Support** <br> - Pyxis+enroot integration for GPU container support with the SLURM scheduler.|
