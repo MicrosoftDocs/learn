@@ -81,10 +81,6 @@ Selecting a prompt suggestion (a system capability) typically requires more inpu
 
 :::image type="content" source="../media/get-defender-incidents-prompt-suggestion.png" lightbox="../media/get-defender-incidents-prompt-suggestion.png" alt-text="Screen capture showing the required inputs for the Get Defender incident prompt suggestions.":::
 
-When you select the option to see all system capabilities. The list is extensive and includes some capabilities that aren't associated with any of the plugins listed on the Manage plugins menu. These capabilities are available by default and are grouped by their descriptor, such as Generic capabilities and Fusion capabilities.
-
-:::image type="content" source="../media/generic-skills.png" lightbox="../media/generic-skills.png" alt-text="Screen capture showing a subset of the generic system capabilities.":::
-
 #### Promptbooks
 
 Promptbooks are a collection of prompts designed to accomplish specific security-related tasks. Each promptbook requires a specific input (for example, a code snippet or a threat actor name) and then runs a series of prompts in sequence, with one prompt building on the one before it.
