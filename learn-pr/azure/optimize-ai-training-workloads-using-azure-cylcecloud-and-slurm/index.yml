@@ -12,15 +12,15 @@ metadata:
 title: Optimize AI Training workloads using Azure CycleCloud and Slurm
 summary: Azure AI training workloads are crucial for achieving optimal model performance which enables to enhance your AI training workflows
 abstract: |
-By the end of this module, you're able to:
+  By the end of this module, you're able to:
 
-- Be able to deploy a Slurm cluster using Azure CycleCloud.
-- Learn how to ensure your cluster is healthy through Node Health Checks.
-- Learn how to optimize your cluster for AI training workloads.
+  - Be able to deploy a Slurm cluster using Azure CycleCloud.
+  - Learn how to ensure your cluster is healthy through Node Health Checks.
+  - Learn how to optimize your cluster for AI training workloads.
 prerequisites: |
-- Basic knowledge of HPC.
-- Understand the concepts of Azure Virtual Machines, subscription, resource groups, and virtual networks.
-- Ability to deploy VM, mounting shared file systems.
+  - Basic knowledge of HPC.
+  - Understand the concepts of Azure Virtual Machines, subscription, resource groups, and virtual networks.
+  - Ability to deploy VM, mounting shared file systems.
 iconUrl: /training/achievements/azure-cyclecloud-high-performance-computing.svg
 levels:
   - beginner
