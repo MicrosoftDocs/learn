@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.5-summary
+uid: learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.summary
 title: Summary  
 metadata:
   unitType: summary  
   title: Summary
   description: Summarize performance criteria, and review service-level selection considerations.
   ms.date: 03/20/2024
-  author: padmalathas  
-  ms.author: padmalathas  
+  author: begeorge  
+  ms.author: begeorge  
   ms.topic: unit
 durationInMinutes: 3
 content: |
