@@ -66,3 +66,4 @@ If you want to remove an item from an array list based on the index number, you 
 ```powershell
 $computers.RemoveAt(1)
 ```
+
