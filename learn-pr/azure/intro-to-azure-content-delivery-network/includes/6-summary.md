@@ -1,4 +1,8 @@
-In this module, you learned about Azure Content Delivery Network, a service that allows you to improve the speed at which content is accessed by client hosts around the world by placing website content files closer to where those files are accessed. You learned about Azure Content Delivery Network caching options, how you can configure geo-filtering for files to restrict POP access to specific locales, and how Azure Content Delivery Network can automatically compress files to reduce the size of content that's transmitted to client hosts. You learned about the types of scenarios in which Azure Content Delivery Network is an appropriate solution for your organization and how Azure Content Delivery Network is likely able to meet Adatum's needs.
+In this module, you learned about the Azure Content Delivery Network service. This Azure service can improve website content access speed for client hosts around the world by placing content files closer to where those files are accessed. You also learned about the following:
+- Azure Content Delivery Network caching options
+- How you can configure geo-filtering for files to restrict POP access to specific locales
+- How Azure Content Delivery Network can automatically compress files to reduce the size of content that's transmitted to client hosts
+Finally, you learned about the types of scenarios in which Azure Content Delivery Network is an appropriate solution for your organization and how Azure Content Delivery Network is likely able to meet Adatum's needs.
 
 ## Learn more
 
