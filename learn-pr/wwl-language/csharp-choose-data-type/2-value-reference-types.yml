@@ -4,7 +4,7 @@ title: Discover value types and reference types
 metadata:
   title: Discover value types and reference types
   description: "Learn about data types, and how data and data types work in C# and .NET."
-  ms.date: 03/20/2024
+  ms.date: 03/21/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -18,12 +18,12 @@ quiz:
   questions:
   - content: "Which choice best represents how bits represent on and off?"
     choices:
-    - content: "Bits are represented by \"x\" or \"o\"."
+    - content: "Bits are represented using \"x\" or \"o\" character."
       isCorrect: false
       explanation: "Incorrect. Bits are binary and represented using the \"1\" or \"0\" digit."
-    - content: "Bits are represented by \"+bit\" or \"-bit\"."
+    - content: "Bits are represented using \"+bit\" or \"-bit\" notation."
       isCorrect: false
       explanation: "Incorrect. Bits are binary and represented using the \"1\" or \"0\" digit."
-    - content: "Bits are binary and represented by \"1\" or \"0\"."
+    - content: "Bits are binary and represented using \"1\" or \"0\" digit."
       isCorrect: true
       explanation: "Correct. Bits are represented using the \"1\" or \"0\" digit."

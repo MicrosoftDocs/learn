@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Check what you've learned in this module."
-  ms.date: 03/20/2024
+  ms.date: 03/21/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -14,7 +14,7 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "A piece of code must store whole numeric values between negative and positive `1,000,000`. Which data type should you choose?"
+  - content: "A piece of code must store whole numeric values between negative and positive `1,000,000`. Which is the best data type to be used?"
     choices:
     - content: "float"
       isCorrect: false
