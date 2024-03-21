@@ -6,7 +6,7 @@ metadata:
   ms.date: 06/12/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Create a lake database in Azure Synapse Analytics
 summary: Why choose between working with files in a data lake or a relational database schema? With lake databases in Azure Synapse Analytics, you can combine the benefits of both.
 abstract: |

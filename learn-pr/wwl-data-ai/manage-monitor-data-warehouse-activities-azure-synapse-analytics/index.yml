@@ -6,7 +6,7 @@ metadata:
   ms.date: 06/12/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Manage and monitor data warehouse activities in Azure Synapse Analytics
 summary: Learn how to manage and monitor Azure Synapse Analytics.
 abstract: |

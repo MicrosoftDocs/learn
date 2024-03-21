@@ -7,7 +7,7 @@ metadata:
   ms.date: 03/27/2023
   author: mumian
   ms.author: jgao
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: engagement-fy23
   ms.devlang: bicep
 title: Create composable Bicep files by using modules

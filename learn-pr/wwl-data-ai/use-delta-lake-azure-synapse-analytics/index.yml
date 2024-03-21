@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/11/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom:
   - N/A
 title: Use Delta Lake in Azure Synapse Analytics
