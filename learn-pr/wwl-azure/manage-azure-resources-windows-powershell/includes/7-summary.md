@@ -6,7 +6,10 @@ In this module, you learned how to create and manage Azure VMs by using PowerShe
 
 - You can use Azure PowerShell to manage Azure-related storage. Before you start managing your storage, you should first create a storage account, if you don't have one. Usually, storage accounts are created automatically when you create other Azure resources such as Azure virtual machines (VMs).
 
-- Most Azure users will only ever have a single subscription. However, if you're part of more than one organization or your organization has divided up access to certain resources across groupings, you might have multiple subscriptions within Azure.
+- Generally, most Azure users only have a single subscription. However, you might have multiple subscriptions within Azure for any of the following reasons:
+
+    - You're part of more than one organization.
+    - Your organization has divided up access to certain resources across groupings.
 
 ## Additional reading
 
