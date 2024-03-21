@@ -13,7 +13,7 @@ durationInMinutes: 4
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
-  title: Check your knowledge
+  
   questions:
     - content: Applications based on which of the following Azure services are most likely to benefit from deploying and configuring Azure Content Delivery Network?
       choices:
