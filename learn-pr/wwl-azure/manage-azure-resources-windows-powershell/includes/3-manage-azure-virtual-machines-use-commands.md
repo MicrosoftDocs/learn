@@ -67,3 +67,4 @@ $vm = Add-AzVMDataDisk -VM $vm -Name "myDataDisk" -CreateOption Attach -ManagedD
 Update-AzVM -ResourceGroupName "myResourceGroupDisk" -VM $vm
 
 ```
+

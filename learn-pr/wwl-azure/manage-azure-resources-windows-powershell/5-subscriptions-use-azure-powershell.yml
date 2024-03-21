@@ -10,8 +10,6 @@ metadata:
   ms.topic: unit
   ms.custom:
   - N/A
-azureSandbox: false
-labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/5-subscriptions-use-azure-powershell.md)]

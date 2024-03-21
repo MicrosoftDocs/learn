@@ -10,8 +10,6 @@ metadata:
   ms.topic: unit
   ms.custom:
   - N/A
-azureSandbox: false
-labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/3-manage-azure-virtual-machines-use-commands.md)]

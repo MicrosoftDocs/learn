@@ -45,3 +45,4 @@ The next example depicts how to get a subscription in the currently active tenan
 $context = Get-AzSubscription -SubscriptionId ...
 Set-AzContext $context
 ```
+
