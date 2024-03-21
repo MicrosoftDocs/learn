@@ -7,7 +7,6 @@ metadata:
   author: madiepev
   ms.author: madiepev
   ms.topic: learning-path
-  ms.prod: learning-power-bi
 title: Implement a data science and machine learning solution for AI in Microsoft Fabric
 prerequisites: |
   You should be familiar with basic data concepts and terminology.
