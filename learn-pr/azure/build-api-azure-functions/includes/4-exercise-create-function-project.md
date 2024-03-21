@@ -1,6 +1,6 @@
-Tailwind Traders had planned on building a traditional API, but you deftly pointed out that serverless is perfect for APIs that experience unexpected traffic spikes. It can also be done without disturbing their existing codebase. You're already doing so well. You have a long career in online hardware sales in your future.
+Tailwind Traders planned on building a traditional API, but you deftly pointed out that serverless is perfect for APIs that experience unexpected traffic spikes. It can also be done without disturbing their existing codebase. You're already doing so well. You have a long career in online hardware sales in your future.
 
-It's time to deliver on those lofty buzzwords. Now, you need to create a new project in Azure Functions that will be the HTTP API for the *Products Manager* app. That means creating the Azure Functions project, complete with all of the endpoints that the Products Manager app is going to need to be able to create, read, update, and delete products.
+It's time to deliver on those lofty buzzwords. Now, you need to create a new project in Azure Functions that will be the HTTP API for the *Products Manager* app. That means creating the Azure Functions project, complete with all the endpoints that the Products Manager app is going to need to be able to create, read, update, and delete products.
 
 ## Create a project with existing code
 
@@ -66,7 +66,7 @@ You can run and debug Azure Functions projects locally from within Visual Studio
   
 1. Select **Attach to Node Functions**.
 
-   The Azure Functions project will launch. Note that the terminal shows you the function app URL.
+   The Azure Functions project will launches. Note that the terminal shows you the function app URL.
 
    :::image type="content" source="../media/functions-in-terminal.png" alt-text="Screenshot of the Visual Studio Code integrated terminal showing functions URLs." loc-scope="other"::: <!-- no-loc -->
 
