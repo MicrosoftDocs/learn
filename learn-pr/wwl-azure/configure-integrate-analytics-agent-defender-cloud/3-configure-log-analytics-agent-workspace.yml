@@ -4,10 +4,10 @@ title: Configure the Log Analytics agent and workspace
 metadata:
   title: Configure the Log Analytics agent and workspace
   description: "Configure the Log Analytics agent and workspace"
-  ms.date: 10/09/2023
+  ms.date: 01/16/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/3-configure-log-analytics-agent-workspace.md)]

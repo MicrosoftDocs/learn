@@ -1,4 +1,4 @@
-Now let's explore generative AI with Bing copilot. 
+Now let's explore generative AI with Microsoft Copilot. 
 
 > [!NOTE]
 > To complete this exercise, use a personal Microsoft account. You can create one for free at [https://signup.live.com/](https://signup.live.com/).

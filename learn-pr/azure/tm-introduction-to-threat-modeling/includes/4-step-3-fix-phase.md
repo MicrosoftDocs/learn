@@ -38,7 +38,7 @@ Next, add each threat in a bug-management solution like Azure DevOps Services. S
 - Effectively tracks history
 - Gives you the ability to use standardized templates for priority and resolution exercises
 
-## Rate threat effectiveness and cost
+## Rate security control effectiveness and cost
 
 Visit each security control recommendation mapped to STRIDE threats. Write down the ones that are most effective and least expensive to implement. Here are a few examples:
 

@@ -7,7 +7,7 @@ metadata:
   ms.date: 03/01/2021
   author: GeekTrainer
   ms.author: chrhar
-  ms.topic: interactive-tutorial
+  ms.topic: learning-path
 title: Take your first steps with Vue.js
 summary: |
   Vue.js is a progressive web framework allowing developers to get up and running quickly, with the addition of a `script` tag. However, Vue.js can also grow with you, and can be used to create large scalable applications.
@@ -26,8 +26,6 @@ roles:
 - student
 products:
 - static-web-apps
-subjects:
-- development-tools
 modules:
 - learn.language.vue-get-started
 - learn.language.vue-dynamic-rendering

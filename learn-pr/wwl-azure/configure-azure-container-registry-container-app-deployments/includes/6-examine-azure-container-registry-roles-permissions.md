@@ -1,6 +1,6 @@
 Azure role-based access control (Azure RBAC) is the authorization system you use to manage access to Azure resources.
 
-The Azure Container Registry service supports a set of built-in Azure roles that provide different levels of permissions to an Azure container registry. Azure role-based access control (Azure RBAC) is used to assign specific permissions to users, service principals, or other identities that need to interact with a registry. For example, you can assign a role for pushing or pulling container images.
+The Azure Container Registry service supports a set of built-in Azure roles that provide different levels of permissions to an Azure container registry. Azure role-based access control is used to assign specific permissions to users, service principals, or other identities that need to interact with a registry. For example, you can assign a role for pushing or pulling container images.
 
 ![Screenshot showing Azure Container Registry roles and permissions.](../media/container-registry-roles-permissions.png)
 

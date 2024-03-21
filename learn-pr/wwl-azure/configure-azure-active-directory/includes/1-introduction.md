@@ -18,8 +18,6 @@ In this module, you learn how to:
 
 - Choose between supported editions of Microsoft Entra ID.
 
-- Understand Microsoft Entra join.
-
 - Understand Microsoft Entra self-service password reset.
 
 ## Skills measured

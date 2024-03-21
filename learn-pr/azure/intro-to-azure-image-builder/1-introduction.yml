@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Introduction to Azure Image Builder service.
   ms.date: 06/05/2023
-  author: ericd-mst-github
-  ms.author: erd
+  author: ju-shim
+  ms.author: jushiman
   ms.reviewer: mimckitt
   ms.topic: unit
 durationInMinutes: 4

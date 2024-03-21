@@ -5,7 +5,7 @@ Suppose you want to display different information to the end user depending on s
 By the end of this module, you'll be able to write code that can change the flow of your code's execution based on some criteria.
 
 > [!IMPORTANT]
-> This module includes hands-on activities that require Visual Studio Code. You'll need access to a development environment that has Visual Studio Code installed and configured for C# application development.
+> This module includes coding activities that require Visual Studio Code. You'll need access to a development environment that has Visual Studio Code installed and configured for C# application development.
 
 ## Learning objectives
 

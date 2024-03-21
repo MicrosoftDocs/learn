@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/04/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Work with arrays and hash tables in Windows PowerShell scripts
 summary: This module explains how to use arrays and hash tables in Windows PowerShell scripts.
 abstract: |
@@ -38,7 +38,6 @@ products:
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

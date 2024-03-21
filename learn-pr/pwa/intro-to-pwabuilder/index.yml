@@ -1,4 +1,4 @@
-﻿### YamlMime:Module
+### YamlMime:Module
 uid: learn.edge.intro-to-pwabuilder
 title: Introduction to PWABuilder
 metadata:
@@ -8,7 +8,7 @@ metadata:
   author: beth-panx
   ms.author: xupa
   ms.topic: module-intro-to-product
-  ms.prod: microsoft-edge
+  ms.service: microsoft-edge
 summary: >
   Discover how PWABuilder can streamline creating and deploying your applications as PWA. Evaluate if PWA is the best fit for your business in accelerating product growth and decreasing the cost of developing native applications.
 abstract: |

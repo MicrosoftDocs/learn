@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: Summarizes what you have learned about the management capabilities of Azure Private 5G Core.
   ms.date: 11/29/2022
-  author: rmcmurray
-  ms.author: robmcm
+  author: lnyswonger
+  ms.author: lnyswonger
   ms.topic: unit
 durationInMinutes: 1
 content: |

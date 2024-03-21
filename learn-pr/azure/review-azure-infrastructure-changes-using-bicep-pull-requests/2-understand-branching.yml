@@ -6,8 +6,8 @@ metadata:
   title: Understand branching
   description: Learn about branching strategies and branch protection.
   ms.date: 02/28/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
   ms.custom:
     - devx-track-bicep

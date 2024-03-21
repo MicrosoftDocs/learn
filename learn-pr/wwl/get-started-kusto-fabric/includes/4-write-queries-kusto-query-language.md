@@ -1,4 +1,4 @@
-To query data from a table in a KQL database, you can use the **Kusto Query Language (KQL)**, which is used to write queries in Azure Data Explorer, Azure Monitor Log Analytics, Azure Sentinel, and Azure Fabric. KQL is a read-only request to process data and return results. KQL queries are made of one or more query statements.
+To query data from a table in a KQL database, you can use the **Kusto Query Language (KQL)**, which is used to write queries in Azure Data Explorer, Azure Monitor Log Analytics, Azure Sentinel, and Microsoft Fabric. KQL is a read-only request to process data and return results. KQL queries are made of one or more query statements.
 
 A query statement consists of a table name followed by one or more operators that `take`, `filter`, `transform`, `aggregate`, or `join` data. For example:
 
@@ -76,7 +76,7 @@ This time, the results include five rows:
 
 In KQL, `where` is a clause that is used to filter the rows of a table based on a specified condition. The `where` clause is followed by a Boolean expression that evaluates to `true` or `false` for each row in the table. Rows for which the expression evaluates to `true` are included in the result, while rows for which the expression evaluates to `false` are excluded.
 
-The `contains` operator is used in the `where` clause of the query to filter the rows of the ***Customer*** table based on whether the **Item** column contains the string "Mountain-100".
+The `contains` operator is used in the `where` clause of the query to filter the rows of the ***sales*** table based on whether the **Item** column contains the string "Mountain-100".
 
 ```kql
 sales

@@ -2,12 +2,12 @@ After you have created and populated an index, you can query it to search for in
 
 ## Full text search
 
-Full text search describes search solutions that parse text-based document contents to find query terms. Full text search queries in Azure Cognitive Search are based on the *Lucene* query syntax, which provides a rich set of query operations for searching, filtering, and sorting data in indexes. Azure Cognitive Search supports two variants of the Lucene syntax:
+Full text search describes search solutions that parse text-based document contents to find query terms. Full text search queries in Azure AI Search are based on the *Lucene* query syntax, which provides a rich set of query operations for searching, filtering, and sorting data in indexes. Azure AI Search supports two variants of the Lucene syntax:
 
 - **Simple** - An intuitive syntax that makes it easy to perform basic searches that match literal query terms submitted by a user.
 - **Full** - An extended syntax that supports complex filtering, regular expressions, and other more sophisticated queries.
 
-Client applications submit queries to Azure Cognitive Search by specifying a search expression along with other parameters that determine how the expression is evaluated and the results returned. Some common parameters submitted with a query include:
+Client applications submit queries to Azure AI Search by specifying a search expression along with other parameters that determine how the expression is evaluated and the results returned. Some common parameters submitted with a query include:
 
 - **search** - A search expression that includes the terms to be found.
 - **queryType** - The Lucene syntax to be evaluated (*simple* or *full*).
@@ -23,4 +23,4 @@ Query processing consists of four stages:
 4. *Scoring* - A relevance score is assigned to each result based on a term frequency/inverse document frequency (TF/IDF) calculation.
 
 > [!NOTE]
-> For more information about querying an index, and details about **simple** and **full** syntax, see [Query types and composition in Azure Cognitive Search](/azure/search/search-query-overview) in the Azure Cognitive Search documentation.
+> For more information about querying an index, and details about **simple** and **full** syntax, see [Query types and composition in Azure AI Search](/azure/search/search-query-overview) in the Azure AI Search documentation.

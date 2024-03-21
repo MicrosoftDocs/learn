@@ -6,9 +6,8 @@ metadata:
   description: Use a workflow automation to automate responses
   ms.date: 09/30/2019
   author: elazark
-  ms.author: memildin
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: elkrieger
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/5-use-a-playbook.md)]

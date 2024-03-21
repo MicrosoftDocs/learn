@@ -21,7 +21,7 @@ There are two broad categories of activity in a pipeline.
 - **Control flow activities** - activities that you can use to implement loops, conditional branching, or manage variable and parameter values. The wide range of control flow activities enables you to implement complex pipeline logic to orchestrate data ingestion and transformation flow.
 
 > [!TIP]
-> For details about the complete set of pipeline activities available in Microsoft Fabric, see [Activity overview](https://learn.microsoft.com/fabric/data-factory/activity-overview) in the Microsoft Fabric documentation.
+> For details about the complete set of pipeline activities available in Microsoft Fabric, see [Activity overview](/fabric/data-factory/activity-overview) in the Microsoft Fabric documentation.
 
 ### Parameters
 

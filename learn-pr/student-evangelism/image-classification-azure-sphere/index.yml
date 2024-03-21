@@ -2,7 +2,7 @@
 uid: learn.oxford.image-classification-azure-sphere
 metadata:
   title: "Image classification using Azure Sphere"
-  description: "University of Oxford"
+  description: "Learn how to implement image classification on a microcontroller device. Also, learn how Azure Sphere components work."
   ms.date: 06/19/2020
   author: leestott
   ms.author: chnoring

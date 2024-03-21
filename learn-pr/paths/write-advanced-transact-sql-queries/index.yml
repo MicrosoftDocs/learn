@@ -30,8 +30,6 @@ products:
 - azure-sql-virtual-machines
 - azure-sqlserver-vm
 - sql-server
-subjects:
-- development-tools
 modules:
 - learn.wwl.create-tables-views-temporary-objects
 - learn.wwl.combine-query-results-set-operators

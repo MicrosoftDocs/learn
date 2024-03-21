@@ -3,7 +3,7 @@ uid: learn.azdo.deploy-kubernetes.6-summary
 title: Summary
 metadata:
   title: Summary
-  description: Summary
+  description: Review what you learned about deploying multiple containers to AKS cluster with Azure Pipelines.
   ms.date: 05/15/2023
   author: ramiMSFT
   ms.author: rabououn

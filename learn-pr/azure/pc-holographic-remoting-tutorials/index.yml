@@ -3,15 +3,14 @@ uid: learn.azure.pc-holographic-remoting-tutorials-mrtk
 metadata:
   title: Create a Holographic Remoting app to visualize 3D content on HoloLens 2
   description: This course explores the use of PC holographic remoting by integrating to a HoloLens 2 application.
-  ms.date: 06/26/2023
+  ms.date: 01/03/2024
   author: marlenaklein-msft
   ms.author: marlenaklein
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.topic: module
 title: Create a Holographic Remoting app to visualize 3D content on HoloLens 2
 summary: Learn about PC holographic remoting to enhance your learning experience.
 abstract: |
-  By the end of this module you will be able to:
+  By the end of this module, you'll be able to:
   - Build a mixed reality experience demonstrating UI elements, 3D model manipulation, model clipping, and eye-tracking features.
   - Create a Holographic Remoting remote app and connect to HoloLens 2 at any point, providing a way to visualize 3D content in mixed reality.
 iconUrl: /training/achievements/pc-holographic-remoting-tutorials-mrtk.svg

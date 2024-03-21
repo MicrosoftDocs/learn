@@ -1,4 +1,4 @@
-In this unit, you learn how to create and publish sensitivity labels. You use a labeling admin center such as the Microsoft Purview Compliance Portal, Microsoft 365 Defender portal, or Exchange admin center.
+In this unit, you learn how to create and publish sensitivity labels. You use a labeling admin center such as the Microsoft Purview Compliance Portal, Microsoft Defender portal, or Exchange admin center.
 
 First, you create and configure the sensitivity labels that you want to make available for apps and other services. For example, you configure the labels you want users to choose and apply in Office apps. Then you create one or more *label policies* that contain the labels and policy settings that you configured. The label policy publishes the labels and settings to your chosen users and locations.
 

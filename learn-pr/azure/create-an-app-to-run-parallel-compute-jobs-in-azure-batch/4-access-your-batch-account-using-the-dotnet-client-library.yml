@@ -6,7 +6,7 @@ metadata:
   description: Understand how the three Azure Batch related libraries are used in your app, Microsoft.Azure.Batch, Microsoft.Azure.Storage.Blob, and Microsoft.Azure.Management.Batch.
   ms.date: 06/01/2019
   author: lauradolan
-  ms.author: ladolan
+  ms.author: jushiman
   ms.topic: unit
   ms.custom:
     - devx-track-dotnet

@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/08/2023
   author: Erikre
   ms.author: erikre
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: microsoft-intune
 title: Understand device management using Microsoft Intune
 summary: As part of device management, Intune helps you protect device data, manage policy assignments, ensure proper device access, implement device security rules, and resolve device compliance issues.

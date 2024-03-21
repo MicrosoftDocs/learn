@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/15/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Plan for disaster recovery
 summary: You can replicate your virtual machines (VMs) to the secondary location for Azure Virtual Desktop. You use Azure Site Recovery to manage replicating VMs in other Azure locations.
 abstract: |
@@ -25,7 +25,7 @@ products:
 - azure-virtual-desktop
 - azure-virtual-machines
 subjects:
-- business-continuity
+- site-reliability-engineering
 units:
 - learn.wwl.plan-implement-business-continuity-disaster-recovery.introduction
 - learn.wwl.plan-implement-business-continuity-disaster-recovery.disaster-recovery-for-azure-virtual-desktop

@@ -8,7 +8,6 @@ metadata:
   author: msakande
   ms.author: mopeakande
   ms.topic: unit
-  ms.prod: learning-azure
 durationInMinutes: 8
 sandbox: true
 notebook: notebooks/1-3-exercise-create-ml-model.ipynb

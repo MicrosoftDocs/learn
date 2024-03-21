@@ -32,8 +32,6 @@ roles:
 - student
 products:
 - azure
-subjects:
-- development-tools
 units:
 - learn.language.go-methods-interfaces.0-introduction
 - learn.language.go-methods-interfaces.1-methods

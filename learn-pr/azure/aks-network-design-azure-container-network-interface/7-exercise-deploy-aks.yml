@@ -4,10 +4,9 @@ metadata:
   title: Exercise - Deploy an Azure Kubernetes Service cluster with Azure CNI
   description: Exercise - Deploy an Azure kubernetes service cluster with Azure CNI
   ms.date: 10/31/2023
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-azurecli
-  ms.prod: learning-azure
   ms.author: schaffererin
   author: schaffererin
 title: Exercise - Deploy an Azure Kubernetes Service cluster with Azure CNI

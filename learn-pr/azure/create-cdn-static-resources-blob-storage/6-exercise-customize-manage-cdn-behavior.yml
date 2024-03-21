@@ -8,7 +8,7 @@ metadata:
   author: duongau
   ms.author: duau
   ms.topic: unit
-azureSandbox: true
+azureSandbox: True
 durationInMinutes: 12
 content: |
   [!include[](includes/6-exercise-customize-manage-cdn-behavior.md)]

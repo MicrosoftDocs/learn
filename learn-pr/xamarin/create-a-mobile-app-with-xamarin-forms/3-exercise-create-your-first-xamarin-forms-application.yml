@@ -5,7 +5,7 @@ durationInMinutes: 5
 metadata:
   title: Exercise - Create your first Xamarin.Forms application
   description: "In this exercise, you will create a new Xamarin.Forms application by using the project templates in Visual Studio. We will then walk through the project and explore all the parts."
-  ms.date: 05/01/2019
+  ms.date: 02/20/2024
   author: codemillmatt
   ms.author: masoucou
   ms.topic: unit

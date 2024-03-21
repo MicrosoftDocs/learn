@@ -20,8 +20,8 @@ roles:
 products: 
 - azure
 subjects:
-- high-availability-system
-- workloads
+- site-reliability-engineering
+- infrastructure
 - solution-design
 modules:
 - learn.azure-mission-critical

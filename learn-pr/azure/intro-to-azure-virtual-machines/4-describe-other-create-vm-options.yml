@@ -5,8 +5,8 @@ metadata:
   title: Describe the options available to create and manage an Azure Virtual Machine
   description: Describe the options available to create and manage an Azure Virtual Machine
   ms.date: 09/13/2022
-  author: cynthn
-  ms.author: cynthn
+  author: ju-shim
+  ms.author: jushiman
   ms.topic: unit
   ms.custom:
     - devx-track-azurecli

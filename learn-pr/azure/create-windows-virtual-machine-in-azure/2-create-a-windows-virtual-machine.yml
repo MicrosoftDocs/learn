@@ -5,8 +5,8 @@ metadata:
   title: Create a Windows virtual machine in Azure
   description: Create a Windows virtual machine in Azure
   ms.date: 09/24/2018
-  author: cynthn
-  ms.author: cynthn
+  author: ju-shim
+  ms.author: jushiman
   ms.topic: unit
 durationInMinutes: 10
 content: |

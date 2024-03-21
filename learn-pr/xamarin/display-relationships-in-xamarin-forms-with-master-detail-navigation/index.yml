@@ -3,10 +3,10 @@ uid: learn-xamarin.display-relationships-in-xamarin-forms-with-master-detail-nav
 metadata:
   title: Display relationships in Xamarin.Forms with master-detail navigation
   description: This module guides you through implementing drawer navigation and split view by using Xamarin.Forms MasterDetailPage and its MasterBehavior property.
-  ms.date: 05/01/2019
+  ms.date: 02/20/2024
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: xamarin
   ms.subservice: xamarin-forms
 title: Display relationships in Xamarin.Forms with master-detail navigation

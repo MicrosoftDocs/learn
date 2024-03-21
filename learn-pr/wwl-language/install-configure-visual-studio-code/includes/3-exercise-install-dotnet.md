@@ -20,16 +20,16 @@ The .NET runtime is the code library that's required to run your C# applications
 
     If a version of .NET is installed, you should see a response message listing the version number similar to the following:
 
-    `7.0.306`
+    `8.0.100`
 
 1. Close the command prompt window.
 
-## Install the .NET 7 Software Development Kit
+## Install the .NET 8 Software Development Kit
 
-If the .NET 7 Software Development Kit isn't already installed, install it now. Having the latest supported version of the .NET platform installed is recommended. Although .NET 6 is also supported, .NET 7 includes improvements that you may find helpful.
+If the .NET 8 Software Development Kit isn't already installed, install it now. Having the latest supported version of the .NET platform installed is recommended. Although .NET 6 and 7 are also supported, .NET 8 includes improvements that you may find helpful.
 
 > [!NOTE]
-> The C# training series that's available on Microsoft Learn uses .NET 7. Ensure that you have .NET 7 installed if you plan on completing this training.
+> The C# training series that's available on Microsoft Learn uses .NET 8. Ensure that you have .NET 8 installed if you plan on completing this training.
 
 1. Open a new Internet browser window.
 
@@ -37,7 +37,7 @@ If the .NET 7 Software Development Kit isn't already installed, install it now. 
 
     [https://dotnet.microsoft.com/download](https://dotnet.microsoft.com/download)
 
-1. On the **Download .NET** page, select the *recommended* version of the .NET SDK.
+1. On the **Download .NET** page, select the .NET 8 version of the .NET SDK.
 
     Your browser downloads the .NET SDK installer file.
 
@@ -63,10 +63,10 @@ If the .NET 7 Software Development Kit isn't already installed, install it now. 
 
     You need to open a new command prompt window after installing the .NET SDK to ensure that it's detected.
 
-1. Verify that a .NET 7 version number is listed.
+1. Verify that a .NET 8 version number is listed.
 
-    The version number displayed should be similar to: `7.0.306`
+    The version number displayed should be similar to: `8.0.100`
 
-    You're likely to see a more recent version number. But it should begin with `7.` if you installed the .NET 7 SDK.
+    You're likely to see a more recent version number. But it should begin with `8.` if you installed the .NET 8 SDK.
 
 Congratulations on getting .NET installed. You're now ready to start working in Visual Studio Code.

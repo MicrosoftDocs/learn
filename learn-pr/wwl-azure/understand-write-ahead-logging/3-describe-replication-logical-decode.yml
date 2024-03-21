@@ -4,12 +4,10 @@ title: Describe replication and logical decoding
 metadata:
   title: Describe replication and logical decoding
   description: "Describe replication and logical decoding"
-  ms.date: 10/03/2022
+  ms.date: 03/14/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
-labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/3-describe-replication-logical-decode.md)]

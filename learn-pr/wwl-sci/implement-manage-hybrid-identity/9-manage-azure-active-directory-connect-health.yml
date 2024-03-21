@@ -4,10 +4,10 @@ title: Manage Microsoft Entra Health
 metadata:
   title: Manage Microsoft Entra Health
   description: "Manage Microsoft Entra Health"
-  ms.date: 10/19/2023
+  ms.date: 01/04/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-durationInMinutes: 315
+  ms.topic: unit
+durationInMinutes: 7
 content: |
   [!include[](includes/9-manage-azure-active-directory-connect-health.md)]

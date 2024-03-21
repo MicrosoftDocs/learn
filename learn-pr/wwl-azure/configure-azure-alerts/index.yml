@@ -3,12 +3,17 @@ uid: learn.wwl.configure-azure-alerts
 metadata:
   title: Configure Azure alerts
   description: "Configure Azure alerts"
-  ms.date: 02/20/2023
+  ms.date: 11/23/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure-monitor
+  ai-usage: ai-assisted
 title: Configure Azure alerts
-summary: Learn how to configure Azure alerts including action groups.
+summary: |
+  Learn how to configure Azure alerts including action groups.
 abstract: |
   In this module, you learn how to:
   - Identify Azure Monitor alerts, including alert types and alert states.

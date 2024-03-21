@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.a-guide-to-artifical-intelligence.foundational-concepts-of-ai
+title: Foundational concepts of AI
+metadata:
+  title: Foundational concepts of AI
+  description: This module explores fundamental concepts in artificial intelligence (AI) and machine learning.
+  ms.date: 01/23/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+  ms.service: artificial-intelligence
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-foundational-concepts-of-ai.md)]

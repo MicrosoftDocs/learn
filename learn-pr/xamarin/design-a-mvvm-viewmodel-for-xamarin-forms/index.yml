@@ -3,10 +3,10 @@ uid: learn-xamarin.design-a-mvvm-viewmodel-for-xamarin-forms
 metadata:
   title: Design an MVVM viewmodel for Xamarin.Forms
   description: Discover how to improve your code testability through business logic and user interface code by using the MVVM design pattern.
-  ms.date: 05/01/2019
+  ms.date: 02/20/2024
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: xamarin
   ms.subservice: xamarin-forms
 title: Design an MVVM viewmodel for Xamarin.Forms

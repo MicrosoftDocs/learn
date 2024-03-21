@@ -14,7 +14,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which Microsoft 365 Defender solution can detect an Active Directory Domain compromise?"
+  - content: "Which Microsoft Defender XDR solution can detect an Active Directory Domain compromise?"
     choices:
     - content: "Microsoft Defender for Identity"
       isCorrect: true
@@ -25,7 +25,7 @@ quiz:
     - content: "Microsoft Defender for Office 365"
       isCorrect: false
       explanation: "Incorrect. Domain compromise isn't detected by Microsoft Defender for Office 365."
-  - content: "Which Microsoft 365 Defender solution can detect a phishing email?"
+  - content: "Which Microsoft Defender XDR solution can detect a phishing email?"
     choices:
     - content: "Microsoft Defender for Identity"
       isCorrect: false
@@ -36,7 +36,7 @@ quiz:
     - content: "Microsoft Defender for Office 365"
       isCorrect: true
       explanation: "Correct. Phishing email is detected by Microsoft Defender for Office 365."
-  - content: "Which Microsoft 365 Defender solution can detect a malware installation?"
+  - content: "Which Microsoft Defender XDR solution can detect a malware installation?"
     choices:
     - content: "Microsoft Defender for Identity"
       isCorrect: false

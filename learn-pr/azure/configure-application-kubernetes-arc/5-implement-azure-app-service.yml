@@ -7,10 +7,9 @@ metadata:
   ms.date: 05/01/2021
   author: mijacobs
   ms.author: mijacobs
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-azurecli
-  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/5-implement-azure-app-service.md)]

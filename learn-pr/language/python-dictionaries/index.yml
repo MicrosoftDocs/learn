@@ -30,8 +30,6 @@ roles:
   - developer
 products:
   - azure
-subjects:
-- development-tools
 units:
 - learn.beginner-python.python-dictionaries.introduction
 - learn.beginner-python.python-dictionaries.dictionary-basics

@@ -4,11 +4,10 @@ title: Analyze Microsoft Entra role permissions
 metadata:
   title: Analyze Microsoft Entra role permissions
   description: "Analyze Microsoft Entra role permissions"
-  ms.date: 10/25/2023
+  ms.date: 11/21/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
-  ms.prod: azure
 durationInMinutes: 3
 content: |
   [!include[](includes/6-analyze-azure-ad-role-permissions.md)]

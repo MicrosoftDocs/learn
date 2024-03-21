@@ -1,10 +1,10 @@
 From reading docs to writing code to submitting pull requests and beyond, GitHub is working to personalize GitHub Copilot for every team, project, and repository in which it's used, creating a radically improved software development lifecycle. Together with [Microsoft’s knowledge model](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/), GitHub is harnessing the reservoir of data and insights that exist in every organization to strengthen the connection between all workers and developers. These insights allow every idea to go from code to reality without friction. At the same time, GitHub continues to innovate and update the heart of GitHub Copilot, the AI pair programmer that started it all.
 
-GitHub Copilot X is on the horizon, and with it a new generation of more productive, fulfilled, and happy developers who ship better software for everyone.
+GitHub Copilot is heralding a new generation of more productive, fulfilled, and happy developers who ship better software for everyone.
 
 Now that you've finished this module, you should be able to:
 
-- Understand the differences between GitHub Copilot, GitHub Copilot X, and GitHub Copilot for Business.
+- Understand the differences between GitHub Copilot, GitHub Copilot's Features, and GitHub Copilot Individual, Business, and Enterprise.
 - Learn how to get started with and configure GitHub Copilot.
 - Develop using GitHub Copilot and Visual Studio Code.
 

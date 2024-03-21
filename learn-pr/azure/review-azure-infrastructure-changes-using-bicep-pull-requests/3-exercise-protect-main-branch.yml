@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Protect your main branch
   description: Add branch protection or branch policies to your repository's main branch.
   ms.date: 02/28/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
   ms.custom:
     - devx-track-bicep

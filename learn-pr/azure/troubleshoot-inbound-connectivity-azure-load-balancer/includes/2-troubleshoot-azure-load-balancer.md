@@ -2,7 +2,7 @@ Azure Load Balancer operates at the transport layer of the network stack. Load B
 
 Load Balancer uses a health probe to determine the availability of each VM in the back-end pool. Load Balancer only sends requests to VMs that indicate they're healthy.
 
-In the example scenario, you've gotten alerts indicating that Load Balancer can't direct requests to VMs in the back-end pool. You suspect a recent change in network configuration might be causing the problem. But you need to understand how network changes effect the operation of Load Balancer.
+In the example scenario, you've gotten alerts indicating that Load Balancer can't direct requests to VMs in the back-end pool. You suspect a recent change in network configuration might be causing the problem. But you need to understand how network changes affect the operation of Load Balancer.
 
 By the end of this unit, you're able to:
 
@@ -21,7 +21,7 @@ Azure Load Balancer includes many components:
 
 The following diagram shows how the various elements used by Load Balancer operate together.
 
-![Diagram that shows the components of Azure Load Balancer.](../media/2-LoadBalancer.png)
+:::image type="content" source="../media/2-LoadBalancer.png" alt-text="Diagram that shows the components of Azure Load Balancer.":::
 
 ### Front-end IP address and back-end pool
 
@@ -59,7 +59,7 @@ If you don't provide a health probe, Load Balancer doesn't know whether a VM is 
 
 ### Virtual network
 
-The VMs referenced by the back-end pool are typically in a virtual network subnet, hosted by Azure. You protect the VMs in this network by configuring a network security group (NSG). An NSG implements inbound and outbound security rules that can limit the traffic entering and exiting the virtual network to a set of well-defined endpoints.
+The VMs referenced by the back-end pool are hosted in an Azure Virtual Network subnet. You protect the VMs in this network by configuring a network security group (NSG). An NSG implements inbound and outbound security rules that can limit the traffic entering and exiting the virtual network to a set of well-defined endpoints.
 
 For example, the VMs in the back-end pool of Load Balancer typically allow inbound traffic on port 80 (HTTP) and port 443 (HTTPS) that arrives from outside the virtual network. But VMs might block traffic that appears on other ports.
 

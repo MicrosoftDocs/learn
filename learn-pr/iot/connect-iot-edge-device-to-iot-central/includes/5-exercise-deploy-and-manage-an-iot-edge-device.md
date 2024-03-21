@@ -4,6 +4,8 @@ Recall that to test the solution before deploying it to your stores, you'll run 
 
 Here, you'll deploy the IoT Edge runtime to a Linux VM to test the behavior of your modules with your IoT Central application.
 
+[!INCLUDE [learn-pr/includes/azure-optional-exercise-subscription-note](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 ## Configure and deploy the IoT Edge device
 
 In the previous module, you learned that an IoT Edge device needs the connection information from the IoT Central application. Set the following environment variables in your Cloud Shell sandbox:

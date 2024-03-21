@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-with-devops.what-is-agile
+title: 'What is Agile?'
+metadata:
+  title: 'What is Agile?'
+  description: "Explore the characteristics of Agile and its correlation with DevOps."
+  ms.date: 02/06/2024
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-what-is-agile.md)]

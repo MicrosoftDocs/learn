@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/27/2022
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Implement open-source software
 summary: This module explores open-source software and corporate concerns with software components. Also, it explains common open-source licenses, license implications, and ratings.
 abstract: |
@@ -38,8 +38,6 @@ products:
 - azure-repos
 - azure-test-plans
 - github
-subjects:
-- development-tools
 units:
 - learn.wwl.implement-open-source-software-azure.introduction
 - learn.wwl.implement-open-source-software-azure.explore-how-software-built

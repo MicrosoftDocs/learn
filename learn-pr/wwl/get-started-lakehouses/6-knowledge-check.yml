@@ -16,7 +16,7 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is a Microsoft Fabric Lakehouse?"
+  - content: "What is a Microsoft Fabric lakehouse?"
     choices:
     - content: "A relational database based on the Microsoft SQL Server database engine."
       isCorrect: false
@@ -43,9 +43,9 @@ quiz:
     - content: "Create a notebook."
       isCorrect: true
       explanation: "Correct. A notebook enables interactive Spark coding."
-    - content: "Switch to the SQL Endpoint mode."
+    - content: "Switch to the SQL analytics endpoint mode."
       isCorrect: false
-      explanation: "Incorrect. The SQL Endpoint mode doesn't support interactive Spark code."
+      explanation: "Incorrect. The SQL analytics endpoint mode doesn't support interactive Spark code."
     - content: "Create a Dataflow (Gen2)."
       isCorrect: false
       explanation: "Incorrect. A dataflow doesn't provide an interactive Spark coding interface."

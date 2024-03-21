@@ -151,9 +151,9 @@ Users often create passwords that use common local words such as a school, sport
 
 Microsoft Entra Password Protection detects and blocks known weak passwords and their variants, and can also block additional weak terms that are specific to your organization. On-premises deployment of Microsoft Entra Password Protection uses the same global and custom banned password lists that are stored in Microsoft Entra ID, and performs the same checks for on-premises password changes as Microsoft Entra ID does for cloud-based changes. These checks take place during password changes and password reset events against on-premises Active Directory domain controllers.
 
-### Are there any Microsoft 365 Defender services that help enhance identity protection in hybrid scenarios?
+### Are there any Microsoft Defender XDR services that help enhance identity protection in hybrid scenarios?
 
-Microsoft Defender for Identity is a cloud-based security solution included in the Microsoft 365 Defender product suite that leverages AD DS signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your AD DS domain environments.
+Microsoft Defender for Identity is a cloud-based security solution included in the Microsoft Defender XDR product suite that leverages AD DS signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your AD DS domain environments.
 
 Defender for Identity enables SecOps analysts and security professionals struggling to detect advanced attacks in hybrid environments to:
 - Monitor users, entity behavior, and activities with learning-based analytics.
@@ -216,7 +216,7 @@ The InfoSec team of Contoso wants to leverage Microsoft Entra capabilities to en
 
 In addition, when providing access to on-premises web applications to its remote users and Fabrikam users, Contoso will be able to leverage Microsoft Entra application proxy. With Microsoft Entra application proxy, after a SSO to Microsoft Entra ID, users and guests will be able to access on-premises applications through an external URL or an internal application portal. 
 
-### Which Microsoft 365 Defender services would allow Contoso to enhance security of their on-premises AD DS environment? 
+### Which Microsoft Defender XDR services would allow Contoso to enhance security of their on-premises AD DS environment? 
 
 Contoso will be able to take advantage of Defender for Identity in order to enhance security of their on-premises AD DS environment. By installing Defender for Identity sensors on their on-premises domain controllers, they will be able to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at their AD DS-based environment.
 

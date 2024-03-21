@@ -11,7 +11,7 @@ metadata:
   ms.author: sidandrews
   manager: jroth
   ms.reviewer: jonels
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: cosmos-db
   ms.subservice: postgresql
 title: Ingest and query data using Azure Cosmos DB for PostgreSQL

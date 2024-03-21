@@ -6,7 +6,8 @@ metadata:
   ms.date: 05/15/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: github
 title: "Manage an InnerSource program by using GitHub"
 summary: Learn to manage a successful InnerSource program on GitHub through effective discoverability, guidance, and maintenance.
 abstract: |

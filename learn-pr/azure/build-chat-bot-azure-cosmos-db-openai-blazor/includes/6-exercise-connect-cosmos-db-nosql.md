@@ -15,7 +15,7 @@ The [`Microsoft.Azure.Cosmos`](https://www.nuget.org/packages/Microsoft.Azure.Co
 1. Import the `Microsoft.Azure.Cosmos` package from NuGet with `dotnet add package`.
 
     ```bash
-    dotnet add package Microsoft.Azure.Cosmos
+    dotnet add package Microsoft.Azure.Cosmos --version 3.*
     ```
 
 1. Build the .NET project one more time.

@@ -22,7 +22,7 @@ Understand and know how to use:
 
 - Basic knowledge of data protection and security concepts and technologies.
 - Basic experience with Microsoft Azure and Microsoft 365 or Office 365 services.
-- To create and publish sensitivity labels: Administrative access to a labeling admin center such as the [Microsoft Purview Compliance Portal](https://compliance.microsoft.com?azure-portal=true), Microsoft 365 Defender portal, or Exchange admin center.
+- To create and publish sensitivity labels: Administrative access to a labeling admin center such as the [Microsoft Purview Compliance Portal](https://compliance.microsoft.com?azure-portal=true), Microsoft Defender portal, or Exchange admin center.
 - To use the Information Protection scanner: An Azure tenant ID, a Microsoft Entra account, and administrative access to a Windows Server client computer with a SQL Server instance.
 
 >[!NOTE]

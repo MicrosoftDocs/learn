@@ -1,4 +1,3 @@
-
 Effective management of an organization’s network security perimeter requires the right combination of tools and systems. Microsoft Sentinel is a scalable, cloud-native SIEM/SOAR solution that delivers intelligent security analytics and threat intelligence across the enterprise. It provides a single solution for alert detection, threat visibility, proactive hunting, and threat response.
 
 :::image type="content" source="../media/3-four-aspects-azure-sentinel.png" alt-text="Diagram showing the four aspects of Microsoft Sentinel: collect, detect, investigate, and respond.":::
@@ -14,7 +13,7 @@ Microsoft Sentinel helps enable end-to-end security operations, in a modern Secu
 
 ### Connect Sentinel to your data
 
-To on-board Microsoft Sentinel, you first need to connect to your security sources. Microsoft Sentinel comes with many connectors for Microsoft solutions, available out of the box and providing real-time integration. Included are Microsoft 365 Defender solutions, and Microsoft 365 sources, including Office 365, Microsoft Entra, and more.  In addition, there are built-in connectors to the broader security ecosystem of non-Microsoft solutions. You can also connect your data sources using community-built data connectors listed in the Microsoft Sentinel GitHub repository or by following generic deployment procedures for how to connect your data source to Microsoft Sentinel. Links to information are included in the Learn more section of the summary and resources unit.
+To on-board Microsoft Sentinel, you first need to connect to your security sources. Microsoft Sentinel comes with many connectors for Microsoft solutions, available out of the box and providing real-time integration. Included are Microsoft Defender XDR solutions, and Microsoft 365 sources, including Office 365, Microsoft Entra, and more.  In addition, there are built-in connectors to the broader security ecosystem of non-Microsoft solutions. You can also connect your data sources using community-built data connectors listed in the Microsoft Sentinel GitHub repository or by following generic deployment procedures for how to connect your data source to Microsoft Sentinel. Links to information are included in the Learn more section of the summary and resources unit.
 
 ### Workbooks
 

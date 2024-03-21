@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Your pipeline includes many tests and quality checks that take several minutes to finish. Which kind of trigger is best for running tests only on code that a peer has reviewed?"
+  - content: "Your pipeline includes many tests and quality checks that take several minutes to finish. Which kind of trigger is best for running tests only on code that was peer reviewed?"
     choices:
     - content: "A build completion trigger"
       isCorrect: false

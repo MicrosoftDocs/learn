@@ -136,7 +136,7 @@ Complete the following steps to install Visual Studio Code with Docker and Azure
 
 Complete the following steps install Azure CLI and the `containerapp` extension.
 
-1. Open a browser window, and then navigate to: [https://learn.microsoft.com/cli/azure/install-azure-cli](/cli/azure/install-azure-cli).
+1. Open a browser window, and then navigate to: [/cli/azure/install-azure-cli](/cli/azure/install-azure-cli).
 
     You can use any browser, such as the Microsoft Edge browser or the Chrome browser.
 
@@ -156,7 +156,7 @@ Complete the following steps install Azure CLI and the `containerapp` extension.
 
 Complete the following steps to install Microsoft PowerShell.
 
-1. Open a browser window, and then navigate to: [https://learn.microsoft.com/powershell/scripting/install/installing-powershell](/powershell/scripting/install/installing-powershell).
+1. Open a browser window, and then navigate to: [/powershell/scripting/install/installing-powershell](/powershell/scripting/install/installing-powershell).
 
 1. In the browser window, follow the instructions for installing/updating PowerShell for your computer's operating system.
 
@@ -543,6 +543,6 @@ Complete the following steps to deploy a self-hosted Windows agent:
 
     A message informing you that the agent started successfully is displayed.
 
-    For extra help, see the following documentation: [https://learn.microsoft.com/azure/devops/pipelines/agents/windows-agent](/azure/devops/pipelines/agents/windows-agent)
+    For extra help, see the following documentation: [/azure/devops/pipelines/agents/windows-agent](/azure/devops/pipelines/agents/windows-agent)
 
 You're now ready to begin the Guided project exercises. Good luck!

@@ -4,10 +4,10 @@ title: Azure Private Link
 metadata:
   title: Azure Private Link
   description: "Azure Private Link"
-  ms.date: 10/09/2023
+  ms.date: 01/16/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/3-azure-private-link.md)]

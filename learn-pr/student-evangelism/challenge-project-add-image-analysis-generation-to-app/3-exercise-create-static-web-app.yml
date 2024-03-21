@@ -8,8 +8,7 @@ metadata:
   author: carlottac94
   ms.author: cacaste
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.prod: static-web-apps
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-create-static-web-app.md)]

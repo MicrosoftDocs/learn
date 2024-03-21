@@ -12,7 +12,7 @@ Understanding when to assign the correct type of role to the right user is a fun
 
 Administrator roles in Microsoft Entra ID allow users elevated access to control who is allowed to do what. You assign these roles to a limited group of users to manage identity tasks in a Microsoft Entra organization. You can assign administrator roles that allow a user to create or edit users, assign administrative roles to others, reset user passwords, manage user licenses, and more.
 
-If your user account has the User Administrator or Global Administrator role, you can create a new user in Microsoft Entra ID by using the Azure portal, the Azure CLI, or PowerShell. In PowerShell, run the cmdlet `New-AzureADUser`. In the Azure CLI, use `az ad user create`.
+If your user account has the User Administrator or Global Administrator role, you can create a new user in Microsoft Entra ID by using the Azure portal, the Azure CLI, or PowerShell. In PowerShell, run the cmdlet `New-MgUser`. In the Azure CLI, use `az ad user create`.
 
 ## Member users
 
@@ -43,7 +43,7 @@ For Azure PowerShell, run the following cmdlet:
 
 ```powershell
 # create a new user
-New-AzureADUser
+New-MgUser
 ```
 
 You can bulk create member users and guests accounts. The following example shows how to bulk invite guest users.
@@ -51,25 +51,23 @@ You can bulk create member users and guests accounts. The following example show
 ```powershell
 $invitations = import-csv c:\bulkinvite\invitations.csv
 
-$messageInfo = New-Object Microsoft.Open.MSGraph.Model.InvitedUserMessageInfo
-
-$messageInfo.customizedMessageBody = "Hello. You are invited to the Contoso organization."
+$messageInfo = [Microsoft.Graph.PowerShell.Models.MicrosoftGraphInvitation]@{ `
+   CustomizedMessageBody = "Hello. You are invited to the Contoso organization." }
 
 foreach ($email in $invitations)
-   {New-AzureADMSInvitation `
-      -InvitedUserEmailAddress $email.InvitedUserEmailAddress `
+   {New-MgInvitation `
+      -InviteRedirectUrl https://myapps.microsoft.com ` 
       -InvitedUserDisplayName $email.Name `
-      -InviteRedirectUrl https://myapps.microsoft.com `
+      -InvitedUserEmailAddress $email.InvitedUserEmailAddress `
       -InvitedUserMessageInfo $messageInfo `
-      -SendInvitationMessage $true
+      -SendInvitationMessage 
    }
-
 ```
 
 You create the comma-separated values (CSV) file with the list of all the users you want to add. An invitation is sent to each user in that CSV file.
 
 ## Delete user accounts
 
-You can also delete user accounts through the Azure portal, Azure PowerShell, or the Azure CLI. In PowerShell, run the cmdlet `Remove-AzADUser`. In the Azure CLI, run the cmdlet `az ad user delete`.
+You can also delete user accounts through the Azure portal, Azure PowerShell, or the Azure CLI. In PowerShell, run the cmdlet `Remove-MgUser`. In the Azure CLI, run the cmdlet `az ad user delete`.
 
 When you delete a user, the account remains in a suspended state for 30 days. During that 30-day window, the user account can be restored.

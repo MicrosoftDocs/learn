@@ -8,8 +8,7 @@ metadata:
   ms.date: 11/07/2023
   author: yenchiho
   ms.author: yenchiho
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/3-how-red-hat-on-azure-works.md)]

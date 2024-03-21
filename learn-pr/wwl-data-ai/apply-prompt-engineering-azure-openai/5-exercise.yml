@@ -12,5 +12,8 @@ metadata:
     - build-2023
     - build-2023-dataai
 durationInMinutes: 25
+azureSandbox: false
+labId: 152391
+labModal: true
 content: |
   [!include[](includes/5-exercise.md)]

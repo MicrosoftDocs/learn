@@ -59,7 +59,7 @@ For example, assume that you want to increase the number of instances of your ap
 
 ### What is the backing store?
 
-The backing store is a persistent storage that your Kubernetes cluster saves it's complete configuration inside. Kubernetes uses a high-availability, distributed, and reliable key-value store called `etcd`. This key-value store stores the current state and the desired state of all objects within your cluster.
+The backing store is a persistent storage in which your Kubernetes cluster saves its completed configuration. Kubernetes uses a high-availability, distributed, and reliable key-value store called `etcd`. This key-value store stores the current state and the desired state of all objects within your cluster.
 
 In a production Kubernetes cluster, the official Kubernetes guidance is to have three to five replicated instances of the `etcd` database for high availability.
 
@@ -74,11 +74,11 @@ The scheduler is the component that's responsible for the assignment of workload
 
 The controller manager launches and monitors the controllers configured for a cluster through the API server.
 
-Kubernetes uses controllers to track object states in the cluster. Each controller runs in a non-terminating loop while watching and responding to events in the cluster. For example, there are controllers to monitor nodes, containers, and endpoints.
+Kubernetes uses controllers to track object states in the cluster. Each controller runs in a nonterminating loop while watching and responding to events in the cluster. For example, there are controllers to monitor nodes, containers, and endpoints.
 
 The controller communicates with the API server to determine the object's state. If the current state is different from the wanted state of the object, the controller takes action to ensure the wanted state.
 
-Suppose that one of three containers running in your cluster stops responding and has died. In this case, a controller decides whether you need to launch new containers to ensure that your apps are always available. If the desired state is to run three containers at any time, then a new container is scheduled to run.
+Suppose that one of three containers running in your cluster stops responding and fails. In this case, a controller decides whether you need to launch new containers to ensure that your apps are always available. If the desired state is to run three containers at any time, then a new container is scheduled to run.
 
 ### What is the cloud controller manager?
 
@@ -156,11 +156,11 @@ Here are the phases in a pod's lifecycle:
 
 | Phase | Description |
 |---|---|
-| Pending | The cluster has been accepted the pod, but not all containers aren't set up or ready to run. The Pending status indicates the time a pod is waiting to be scheduled and the time spent downloading container images. |
+| Pending | The pod accepts the cluster, but not all containers in the cluster are set up or ready to run. The Pending status indicates the time a pod is waiting to be scheduled and the time spent downloading container images. |
 | Running | The pod transitions to a running state after all of the resources within the pod are ready. |
 | Succeeded | The pod transitions to a succeeded state after the pod completes its intended task and runs successfully. |
-| Failed | Pods can fail for various reasons. A container in the pod might have failed, leading to the termination of all other containers, or maybe an image wasn't found during preparation of the pod containers. In these types of cases, the pod can go to a Failed state. Pods can transition to a failed state from either a Pending state or a Running state. A specific failure can also place a pod back in the pending state. |
-| Unknown | If the state of the pod can't be determined, the pod is an Unknown state. |
+| Failed | Pods can fail for various reasons. A container in the pod might fail, leading to the termination of all other containers, or maybe an image wasn't found during preparation of the pod containers. In these types of cases, the pod can go to a Failed state. Pods can transition to a failed state from either a Pending state or a Running state. A specific failure can also place a pod back in the pending state. |
+| Unknown | If the state of the pod can't be determined, the pod is in an Unknown state. |
 
 Pods are kept on a cluster until a controller, the control plane, or a user explicitly removes them. When a pod is deleted,  a new pod is created immediately after. The new pod is considered an entirely new instance based on the pod manifest isn't an exact copy, so it differs from the deleted pod.
 

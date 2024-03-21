@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
-  ms.prod: azure
+  ms.service: azure
 title: Describe the business benefits of Azure
 summary: This module explores various business benefits of Azure, including cost-efficiency, innovation, agility, and security.
 abstract: |

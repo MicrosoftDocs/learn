@@ -8,9 +8,9 @@ Though training the model is important, it's not the only task in a data science
 
 The purpose of machine learning is to train models that can identify patterns in large amounts of data. You can then use the patterns to make predictions that provide you with new insights on which you can take actions.
 
-The possibilities with machine learning may appear endless, so let's begin by understanding the three common types of machine learning models:
+The possibilities with machine learning may appear endless, so let's begin by understanding the four common types of machine learning models:
 
-:::image type="content" source="../media/machine-learning-tasks.png" alt-text="Diagram of the three common types of machine learning models.":::
+:::image type="content" source="../media/machine-learning-tasks.png" alt-text="Diagram of the four common types of machine learning models.":::
 
 1. **Classification**: Predict a categorical value like whether a customer may churn.
 1. **Regression**: Predict a numerical value like the price of a product.
@@ -36,3 +36,4 @@ As a data scientist, most of your time is spent on preparing the data and traini
 You can prepare and train a model by using open-source libraries available for the language of your choice. For example, if you work with Python, you can prepare the data with Pandas and Numpy, and train a model with libraries like [Scikit-Learn](https://scikit-learn.org/stable/?azure-portal=true), [PyTorch](https://pytorch.org/?azure-portal=true), or [SynapseML](https://microsoft.github.io/SynapseML/?azure-portal=true).
 
 When experimenting, you want to keep an overview of all the different models you've trained. You want to understand how your choices influence the model's success. By tracking your experiments with MLflow in Microsoft Fabric, you're able to easily manage and deploy the models you've trained.
+

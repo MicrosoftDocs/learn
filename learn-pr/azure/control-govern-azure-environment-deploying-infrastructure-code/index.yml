@@ -5,9 +5,9 @@ metadata:
   title: Control and govern your Azure environment by deploying your infrastructure as code
   description: Learn how to enforce controls over your Azure changes and deployments, to ensure that your infrastructure is deployed through an approved process.
   ms.date: 07/18/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
+  author: mumian
+  ms.author: jgao
+  ms.topic: module
 title: Control and govern your Azure environment by deploying your infrastructure as code
 summary: |
   Plan how to harden and help secure your Azure environment, along with the controls to apply to your configuration changes and deployments. Require your infrastructure be defined as code, and protect your environment against manual changes.

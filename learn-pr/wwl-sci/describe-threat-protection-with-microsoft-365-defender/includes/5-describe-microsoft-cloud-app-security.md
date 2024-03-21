@@ -42,7 +42,7 @@ Cloud apps continue to be a target for adversaries trying to exfiltrate corporat
 
 Defender for Cloud Apps offers built-in adaptive access control (AAC), provides user and entity behavior analysis (UEBA), and helps you mitigate these types of attacks.
 
-Defender for Cloud Apps is also integrated directly into Microsoft 365 Defender, correlating eXtended detection and response (XDR) signals from the Microsoft Defender suite and providing incident-level detection, investigation, and powerful response capabilities. Integrating SaaS security into Microsoft's XDR experience gives SOC teams full kill chain visibility and improves operational efficiency and effectivity.
+Defender for Cloud Apps is also integrated directly into Microsoft Defender XDR, correlating eXtended detection and response (XDR) signals from the Microsoft Defender suite and providing incident-level detection, investigation, and powerful response capabilities. Integrating SaaS security into Microsoft's XDR experience gives SOC teams full kill chain visibility and improves operational efficiency and effectivity.
 
 ### App to app protection with app governance
  OAuth, an open standard for token-based authentication and authorization, enables a user's account information to be used by third-party services, without exposing the user's password. Apps that use OAuth often have extensive permissions to access data in other apps on behalf of a user, making OAuth apps susceptible to a compromise.
@@ -50,8 +50,3 @@ Defender for Cloud Apps is also integrated directly into Microsoft 365 Defender,
 Defender for Cloud Apps closes the gap on OAuth app security, helping you protect inter-app data exchange with application governance. With Defender for Cloud Apps, you can watch for unused apps and monitor both current and expired credentials to govern the apps used in your organization and maintain app hygiene.
 
 :::image type="content" source="../media/microsoft-cloud-app-security-v2-inline.png" lightbox="../media/microsoft-cloud-app-security-v2-expanded.png" alt-text="Screenshot of Microsoft Defender for Cloud Apps dashboard.":::
-
-In this interactive guide, you’ll get an introduction to the capabilities available with Microsoft Defender for Cloud Apps. Select the image to get started and follow the prompts on the screen.
-
-[![Interactive guide](../media/5-defender-cloud-apps-interactive-guide.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/mcas-revised-2048x1080-v2-november-2022-update/index.html?azure-portal=true)
-

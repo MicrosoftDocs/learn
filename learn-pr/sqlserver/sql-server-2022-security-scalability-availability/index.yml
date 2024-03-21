@@ -6,10 +6,10 @@ metadata:
   ms.date: 05/23/2023
   author: VanMSFT
   ms.author: vanto
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom:
     - build-2023
-  ms.prod: learning-sqlserver
+  ms.service: sql
 title: Explore new capabilities in security, scalability, and availability in SQL Server 2022 
 summary: "Learn about the new capabilities in security, scalability, and availability in SQL Server 2022."
 abstract: |
@@ -33,8 +33,6 @@ roles:
   - database-administrator
 products:
   - sql-server
-subjects:
-  - data-ai
 units:
 - learn.sql-server-2022-security-scalability-availability.introduction
 - learn.sql-server-2022-security-scalability-availability.ledger

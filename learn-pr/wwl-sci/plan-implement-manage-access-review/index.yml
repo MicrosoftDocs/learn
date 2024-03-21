@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: roberts
   ms.topic: module
-  ms.prod: azure
   ms.service: access
 title: Plan, implement, and manage access review
 summary: Once identity is deployed, proper governance using access reviews is necessary for a secure solution. Explore how to plan for and implement access reviews.

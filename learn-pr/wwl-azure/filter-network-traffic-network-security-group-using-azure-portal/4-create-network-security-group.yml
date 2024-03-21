@@ -4,11 +4,13 @@ title: How network security groups filter network traffic
 metadata:
   title: How network security groups filter network traffic
   description: "How network security groups filter network traffic"
-  ms.date: 10/09/2023
+  ms.date: 03/08/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
-durationInMinutes: 3
+  ms.custom:
+  - N/A
+durationInMinutes: 10
 content: |
   [!include[](includes/4-create-network-security-group.md)]
 interactive: bash

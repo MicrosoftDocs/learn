@@ -23,7 +23,7 @@ roles:
 products:
 - microsoft-sentinel
 - defender-for-cloud
-- mdatp
+- defender-endpoint
 - microsoft-defender
 - microsoft-purview
 subjects:

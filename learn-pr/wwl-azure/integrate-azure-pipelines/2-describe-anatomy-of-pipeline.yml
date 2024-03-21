@@ -7,7 +7,7 @@ metadata:
   ms.date: 06/20/2023
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/2-describe-anatomy-of-pipeline.md)]

@@ -12,5 +12,3 @@ The **Azure Video Indexer** service is designed to help you extract information 
 The Video Analyzer service provides a portal website that you can use to upload, view, and analyze videos interactively.
 
 ![The Video Analyzer portal](../media/video-indexer-portal.png)
-
-You can use a free, standalone version of the Video Analyzer service (with some limitations), or you can connect it to an **Azure Media Services** resource in your Azure subscription for full functionality.

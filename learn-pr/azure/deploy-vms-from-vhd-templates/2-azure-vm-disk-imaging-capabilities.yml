@@ -5,8 +5,8 @@ metadata:
   title: Disk image capabilities for Azure virtual machines
   description: Disk image capabilities for Azure virtual machines
   ms.date: 8/31/2019
-  author: cynthn
-  ms.author: cynthn
+  author: ju-shim
+  ms.author: jushiman
   ms.topic: unit
 durationInMinutes: 10
 content: |

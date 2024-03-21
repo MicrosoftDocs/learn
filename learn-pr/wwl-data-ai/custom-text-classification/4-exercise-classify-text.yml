@@ -10,7 +10,8 @@ metadata:
   ms.topic: unit
   ms.service: azure-ai-language
 azureSandbox: false
-labModal: false
 durationInMinutes: 35
+labId: 152403
+labModal: true
 content: |
   [!include[](includes/4-exercise-classify-text.md)]

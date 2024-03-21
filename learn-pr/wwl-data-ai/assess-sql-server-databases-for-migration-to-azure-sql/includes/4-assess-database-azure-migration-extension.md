@@ -5,7 +5,7 @@ The extension also provides a secure and improved user experience for migrating 
 
 ## Install Azure migration extension for Azure Data Studio
 
-As a prerequisite, you need to install [Azure Data Studio](https://learn.microsoft.com/sql/azure-data-studio/download-azure-data-studio) first. The extension is available in Azure Data Studio marketplace.
+As a prerequisite, you need to install [Azure Data Studio](/sql/azure-data-studio/download-azure-data-studio) first. The extension is available in Azure Data Studio marketplace.
 
 :::image type="content" border="false" source="../media/4-install-migration-extension.png" alt-text="Screenshot of the Azure migration extension for Azure Data Studio available in the marketplace.":::
 
@@ -62,4 +62,4 @@ Alternatively, you can perform the same task using Azure CLI.
 az datamigration get-assessment --connection-string "Data Source=localhost;Initial Catalog=AdventureWorks;Integrated Security=True" --output-folder "C:\Output" --overwrite
 ```
 
-To learn more about the Azure migration extension PowerShell and Azure CLI commands available, refer to the following links: [PowerShell module for data migration extension](https://learn.microsoft.com/powershell/module/az.datamigration) and [Azure CLI for data migration extension](https://learn.microsoft.com/cli/azure/datamigration).
+To learn more about the Azure migration extension PowerShell and Azure CLI commands available, refer to the following links: [PowerShell module for data migration extension](/powershell/module/az.datamigration) and [Azure CLI for data migration extension](/cli/azure/datamigration).

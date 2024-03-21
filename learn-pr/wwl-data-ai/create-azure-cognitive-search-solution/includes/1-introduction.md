@@ -6,9 +6,9 @@ For example, suppose *Margie's Travel* is a travel agency that specializes in or
 
 To address this challenge, Margie's Travel can implement a solution in which the documents are indexed and made easy to search. This solution enables agents and customers to query the index to find relevant documents and extract information from them.
 
-## Azure Cognitive Search
+## Azure AI Search
 
-Azure Cognitive Search provides a cloud-based solution for indexing and querying a wide range of data sources, and creating comprehensive and high-scale search solutions. With Azure Cognitive Search, you can:
+Azure AI Search provides a cloud-based solution for indexing and querying a wide range of data sources, and creating comprehensive and high-scale search solutions. With Azure AI Search, you can:
 
 - Index documents and data from a range of sources.
 - Use cognitive skills to enrich index data.
@@ -16,5 +16,5 @@ Azure Cognitive Search provides a cloud-based solution for indexing and querying
 
 By the end of this module, you'll learn how to:
 
-- Create an Azure Cognitive Search solution
+- Create an Azure AI Search solution
 - Develop a search application

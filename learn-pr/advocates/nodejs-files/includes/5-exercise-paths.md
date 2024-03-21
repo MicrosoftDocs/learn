@@ -1,12 +1,8 @@
-The Node.js *path* module and `__dirname` global variable are two ways to define and compose file system paths.
-
-In the previous exercise, you wrote a program that iterates through a folder to find any of the *sales.json* files inside.
-
-In this exercise, you use the *path* module and `__dirname` global variable to improve the program so that it finds any file with a .json extension.
+As a developer at Tailwind Traders, you're about to enhance a program by using the Node.js **path** module and `__dirname` global variable. This will allow the program to dynamically locate and process any .json files, regardless of where the program is run from.
 
 ## Include the path module
 
-At the top of the *index.js* file, include the *path* module.
+At the top of your existing *index.js* file, include the **path** module.
 
 ```javascript
 const path = require("path");
@@ -27,8 +23,6 @@ In the current index.js code, you're passing the static location of the *stores*
    }
    ```
 
-1. Press <kbd>Ctrl+S</kbd> or <kbd>Cmd+S</kbd> to save the file.
-
 1. Run the program from the command line.
 
    ```bash
@@ -39,10 +33,10 @@ In the current index.js code, you're passing the static location of the *stores*
 
    ```bash
    [
-     '/home/username/node-essentials/nodejs-files/stores/201/sales.json',
-     '/home/username/node-essentials/nodejs-files/stores/202/sales.json',
-     '/home/username/node-essentials/nodejs-files/stores/203/sales.json',
-     '/home/username/node-essentials/nodejs-files/stores/204/sales.json',
+      '/workspaces/node-essentials/nodejs-files/stores/201/sales.json',
+      '/workspaces/node-essentials/nodejs-files/stores/202/sales.json',
+      '/workspaces/node-essentials/nodejs-files/stores/203/sales.json',
+      '/workspaces/node-essentials/nodejs-files/stores/204/sales.json'
    ]
    ```
 
@@ -53,11 +47,12 @@ Instead of concatenating folder names to make a new path to search, you change t
 1. Change the `findFiles` method to use `path.join`.
 
    ```javascript
-   // search this directory for files (this is recursion!)
-   await findFiles(path.join(folderName, item.name));
-   ```
+   // previous code - with string concatentation
+   const resultsReturned = await findSalesFiles(`${folderName}/${item.name}`);
 
-1. Press <kbd>Ctrl+S</kbd> or <kbd>Cmd+S</kbd> to save the file.
+   // current code - with path.join
+   const resultsReturned = await findSalesFiles(path.join(folderName,item.name));
+   ```
 
 1. Run the program from the command line.
 
@@ -77,16 +72,13 @@ Instead of looking for just *sales.json* files, the program needs to search for 
    mv stores/201/sales.json stores/201/totals.json
    ```
 
-1. In the `findFiles` method, change the `if` statement to check just the filename extension. Use the `path.join` method to compose the full path to the file.
+1. In the `findSalesFiles` function, change the `if` statement to check just the filename extension.
 
    ```javascript
    if (path.extname(item.name) === ".json") {
-     // store the file path in the salesFiles array
-     await salesFiles.push(path.join(folderName, item.name));
+     results.push(`${folderName}/${item.name}`);
    }
    ```
-
-1. Press <kbd>Ctrl+S</kbd> or <kbd>Cmd+S</kbd> to save the file.
 
 1. Run the program from the command line.
 
@@ -105,7 +97,7 @@ Instead of looking for just *sales.json* files, the program needs to search for 
    ]
    ```
 
-Great job! You've used the *path* module and the `__dirname` constant to make the program much more robust. In the next section, you'll learn how to create directories and move files between locations.
+Great job! You've used the **path** module and the `__dirname` constant to make the program much more robust. In the next section, you'll learn how to create directories and move files between locations.
 
 ### Got stuck?
 
@@ -116,32 +108,31 @@ const fs = require("fs").promises;
 const path = require("path");
 
 async function findSalesFiles(folderName) {
-  // this array will hold sales files as they are found
-  let salesFiles = [];
 
-  async function findFiles(folderName) {
-    // read all the items in the current folder
-    const items = await fs.readdir(folderName, { withFileTypes: true });
+  // (1) Add an array at the top, to hold the paths to all the sales files that the program finds.
+  let results = [];
 
-    // iterate over each found item
-    for (item of items) {
-      // if the item is a directory, it will need to be searched
-      if (item.isDirectory()) {
-        // call this method recursively, appending the folder name to make a new path
-        await findFiles(path.join(folderName, item.name));
-      } else {
-        // Make sure the discovered file is a .json file
-        if (path.extname(item.name) === ".json") {
-          // store the file path in the salesFiles array
-          await salesFiles.push(path.join(folderName, item.name));
-        }
-      }
+  // (2) Read the currentFolder with the `readdir` method. 
+  const items = await fs.readdir(folderName, { withFileTypes: true });
+
+  // (3) Add a block to loop over each item returned from the `readdir` method using the asynchronous `for...of` loop. 
+  for (const item of items) {
+
+    // (4) Add an `if` statement to determine if the item is a file or a directory. 
+    if (item.isDirectory()) {
+
+      // (5) If the item is a directory,  recursively call the function `findSalesFiles` again, passing in the path to the item. 
+      const resultsReturned = await findSalesFiles(path.join(folderName, item.name));
+      results = results.concat(resultsReturned);
+    } else {
+      // (6) If it's not a directory, add a check to make sure the item name matches *sales.json*.
+      if (path.extname(item.name) === ".json")
+        results.push(`${folderName}/${item.name}`);
     }
   }
 
-  await findFiles(folderName);
 
-  return salesFiles;
+  return results;
 }
 
 async function main() {

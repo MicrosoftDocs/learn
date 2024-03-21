@@ -8,7 +8,7 @@ This exercise is optional. To complete it, you need access to an Azure subscript
 
 1. Sign in to the [Azure portal](<https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true>) as Microsoft Entra Global Administrator.
 
-1. Select **Microsoft Entra ID** > **Properties**.
+1. Select **Microsoft Entra ID**, then select the **Properties** tab.
 
     ![Screenshot of the Microsoft Entra Properties pane.](../media/4-azure-ad-properties.png)
 
@@ -38,9 +38,9 @@ Because you're using your own subscription, you might want to walk through the f
 1. At the bottom of the page, select **Next**.
 1. On the **Members** tab, select **+ Select members**.
 
-    :::image type="content" source="../media/4-add-owner-role.png" alt-text="Screenshot of the member tab on the add role assignment page. ":::
+    :::image type="content" source="../media/4-add-owner-role.png" alt-text="Screenshot of the Member tab on the Add role assignment page. ":::
 
-1. On the **Select members** page, enter the username or email address of the user you want to grant access to and select **Select**.
+1. On the **Select members** page, enter the username or email address of the user to whom you want to grant access and select **Select**.
 1. Select **Next**.
 1. Select **Review + Assign**.
 1. If you want to complete the Owner role assignment, select **Review + Assign**. Otherwise, close the page.

@@ -5,7 +5,7 @@ metadata:
   description: Exercise - Monitor and visualize your batch job in Batch Explorer
   ms.date: 05/06/2019
   author: lauradolan
-  ms.author: ladolan
+  ms.author: jushiman
   ms.topic: unit
   ms.custom:
     - devx-track-azurecli

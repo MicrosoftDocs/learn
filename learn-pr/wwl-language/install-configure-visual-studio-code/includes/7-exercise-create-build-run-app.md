@@ -62,7 +62,7 @@ To begin, you create a console application in a folder location that's easy to f
 
 1. In the EXPLORER panel, expand the **CsharpProjects** folder.
 
-    You should see the TestProject folder and two files, a C# program file named Program.cs and a C# project file named TestProject.csproj. The CLI command uses the folder name when it creates to project file (TestProject.csproj). The Program.cs file is the file containing your C# code.
+    You should see the TestProject folder and two files, a C# program file named Program.cs and a C# project file named TestProject.csproj. The CLI command uses the folder name when it creates the project file (TestProject.csproj). The Program.cs file is the file containing your C# code.
 
 1. In the EXPLORER panel, to view the C# code in the Editor panel, select **Program.cs**.
 

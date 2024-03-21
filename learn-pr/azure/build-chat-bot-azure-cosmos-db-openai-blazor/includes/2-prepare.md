@@ -11,14 +11,58 @@ The key tasks you need to do are:
 1. Open the starter solution in Visual Studio Code.
 1. Use the .NET SDK to implement Azure Cosmos DB for NoSQL as a data storage service.
 1. Use the .NET SDK to implement Azure OpenAI as a conversational interface.
-1. Validate that the application works successfully.
+1. Check the application's operation.
 
 ## Setup
 
 To complete this project, you need an Azure Cosmos DB for NoSQL account and an Azure OpenAI account. To streamline this process, deploy a Bicep template to Azure with both of these accounts.
 
-> [!NOTE]
-> To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true). You will also need to sign up for [Azure OpenAI access](/legal/cognitive-services/openai/limited-access?azure-portal=true) to create an Azure OpenAI account.
+### Configure dev environment
+
+A [development container](https://containers.dev/) environment is available with all dependencies required to complete every exercise in this project. [GitHub Codespaces](https://docs.github.com/codespaces) runs a development container managed by GitHub with [Visual Studio Code for the Web](https://code.visualstudio.com/docs/editor/vscode-web) as the user interface. For the most straightforward development environment, use GitHub Codespaces so that you have the correct developer tools and dependencies preinstalled to complete this training module.
+
+> [!IMPORTANT]
+> All GitHub accounts can use Codespaces for up to 60 hours free each month with 2 core instances. For more information, see [GitHub Codespaces monthly included storage and core hours](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts).
+
+1. Start the process to create a new GitHub Codespace by selecting the **Active Codespaces** option at the beginning of this unit.
+
+1. On the **Create codespace** page, review the codespace configuration settings, and then select **Create new codespace**.
+
+    ![Screenshot of the confirmation screen before creating a new codespace.](../media/codespace-configuration.png)
+
+1. Wait for the codespace to start. This startup process can take a few minutes.
+
+1. Open a new terminal in the codespace.
+
+    > [!TIP]
+    > You can use the main menu to navigate to the **Terminal** menu option and then select the **New Terminal** option.
+    >
+    > :::image type="content" source="../media/open-terminal-option.png" lightbox="../media/open-terminal-option.png" alt-text="Screenshot of the codespaces menu option to open a new terminal.":::
+
+1. Validate that the Azure CLI is installed in your environment.
+
+    ```bash
+    az --version
+    ```
+
+1. Validate that .NET 8 is installed in your environment.
+
+    ```bash
+    dotnet --list-sdks
+    ```
+
+1. Build the .NET project.
+
+    ```bash
+    dotnet build
+    ```
+
+1. Close the terminal.
+
+1. The remaining exercises in this project take place in the context of this development container.
+
+    > [!IMPORTANT]
+    > Leave the GitHub Codespace running for the remainder of this training module.
 
 ### Deploy infrastructure from template
 
@@ -26,6 +70,12 @@ This project uses the [azure-samples/cosmosdb-chatgpt](https://github.com/Azure-
 
 > [!TIP]
 > This "zero-touch" Bicep template also includes the final application running in Azure App Service. You can always check this out if you want to see a fully working solution.
+
+1. Sign in to the Azure CLI.
+
+    ```azurecli
+    az login --use-device-code
+    ```
 
 1. Create a new shell variable named **resourceGroupName** with the name of the Azure resource group that you create (`mslearn-cosmos-openai`).
 
@@ -41,13 +91,13 @@ This project uses the [azure-samples/cosmosdb-chatgpt](https://github.com/Azure-
       --location "eastus"
     ```
 
-1. Deploy the [azuredeploy.json](https://github.com/Azure-Samples/cosmosdb-chatgpt/blob/main/azuredeploy.json) template file to the resource group using [`az group deployment create`](/cli/azure/group/deployment#az-group-deployment-create).
+1. Deploy the [azuredeploy.json](https://github.com/Azure-Samples/cosmosdb-chatgpt/blob/start/azuredeploy.json) template file to the resource group using [`az group deployment create`](/cli/azure/group/deployment#az-group-deployment-create).
 
     ```azurecli
     az deployment group create \
       --resource-group $resourceGroupName \
       --name zero-touch-deployment \
-      --template-uri https://raw.githubusercontent.com/Azure-Samples/cosmosdb-chatgpt/main/azuredeploy.json
+      --template-uri https://raw.githubusercontent.com/Azure-Samples/cosmosdb-chatgpt/start/azuredeploy.json
     ```
 
 1. Wait for the deployment to complete before proceeding with this project.
@@ -57,11 +107,7 @@ This project uses the [azure-samples/cosmosdb-chatgpt](https://github.com/Azure-
 
 ### Get Azure Cosmos DB for NoSQL and Azure OpenAI account credentials
 
-Your template deployed Azure Cosmos DB for NoSQL and Azure OpenAI accounts and then stored their credentials in the Azure App Service web app's configuration. Now, you have the choice of using the Azure portal or Azure CLI to retrieve the credentials for each service.
-
-#### [Azure CLI](#tab/azure-cli)
-
-Use `az webapp config` from the Azure CLI to get the Azure OpenAI and Azure Cosmos DB credentials to use in your local development environment. In this section, you filter the output of the various commands to return your endpoint and connection string to use with the .NET SDKs of both Azure OpenAI and Azure Cosmos DB for NoSQL.
+Your template deployed Azure Cosmos DB for NoSQL and Azure OpenAI accounts and then stored their credentials in the Azure App Service web app's configuration. Now, you have the choice of using the Azure portal or Azure CLI to retrieve the credentials for each service. Use `az webapp config` from the Azure CLI to get the Azure OpenAI and Azure Cosmos DB credentials to use in your local development environment. In this section, you filter the output of the various commands to return your endpoint and connection string to use with the .NET libraries of both Azure OpenAI and Azure Cosmos DB for NoSQL.
 
 1. First, get a list of all running web applications in your resource group using [`az webapp list`](/cli/azure/webapp#az-webapp-list).
 
@@ -69,14 +115,6 @@ Use `az webapp config` from the Azure CLI to get the Azure OpenAI and Azure Cosm
     az webapp list \
       --resource-group $resourceGroupName \
       --query "[?state=='Running'].name"
-    ```
-
-    Assuming the name of the Azure App Service web app is **nybncrsna76fo-web**, an example output would be:
-
-    ```output
-    [
-      "nybncrsna76fo-web"
-    ]
     ```
 
 1. Now, run the same query again but only return the first result from the array in tab-separated value (`tsv`) format.
@@ -127,139 +165,3 @@ Use `az webapp config` from the Azure CLI to get the Azure OpenAI and Azure Cosm
     ```
 
 1. Record the value of the endpoint and key for both the Azure Cosmos DB for NoSQL and Azure OpenAI accounts. You use these credentials later in this project to connect to each account.
-
-#### [Azure portal](#tab/azure-portal)
-
-Use the [Azure portal](/azure/azure-portal) to get the credentials from the Azure OpenAI and Azure Cosmos DB resources.
-
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
-
-1. Select **Resource Groups** and then select the **mslearn-cosmos-openai** resource group.
-
-    :::image type="content" source="../media/portal-resource-group.png" lightbox="../media/portal-resource-group.png" alt-text="Screenshot of the resource group page with an Azure Cosmos DB and Azure OpenAI resource.":::
-
-1. On the **Resource Groups** page, expand the **Essentials** panel and observe the **Deployments** header. The status for the deployment should be **Succeeded** at this point.
-
-1. Now, select the **Azure Cosmos DB** account to navigate to the resource's page.
-
-    :::image type="content" source="../media/portal-database-account.png" alt-text="Screenshot of the Azure Cosmos DB for NoSQL resource page.":::
-
-1. Select the **Keys** option in the **Settings** section of the resource navigation menu. Record the value of the **URI** and **PRIMARY KEY** fields. You use these values later.
-
-    :::image type="content" source="../media/portal-database-account-credentials.png" alt-text="Screenshot of the credentials for an Azure Cosmos DB for NoSQL account.":::
-
-1. Return to the **Resource Groups** page. Select the **Azure OpenAI** account.
-
-    :::image type="content" source="../media/portal-openai-account.png" alt-text="Screenshot of the Azure OpenAI resource page.":::
-
-1. In the **Settings** section of the resource navigation menu, select **Keys and Endpoint**. Record the value of the **LANGUAGE APIS ENDPOINT** and **KEY 1** fields. You also use these values later.
-
-    :::image type="content" source="../media/portal-openai-account-credentials.png" alt-text="Screenshot of the credentials for an Azure OpenAI account.":::
-
----
-
-### Configure dev environment
-
-A [development container](https://containers.dev/) environment is available with all dependencies required to complete every exercise in this project. You can run the development container in GitHub Codespaces or locally using Visual Studio Code.
-
-#### [GitHub Codespaces](#tab/github-codespaces)
-
-[GitHub Codespaces](https://docs.github.com/codespaces) runs a development container managed by GitHub with [Visual Studio Code for the Web](https://code.visualstudio.com/docs/editor/vscode-web) as the user interface. For the most straightforward development environment, use GitHub Codespaces so that you have the correct developer tools and dependencies preinstalled to complete this training module.
-
-> [!IMPORTANT]
-> All GitHub accounts can use Codespaces for up to 60 hours free each month with 2 core instances. For more information, see [GitHub Codespaces monthly included storage and core hours](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts).
-
-1. Start the process to create a new GitHub Codespace on the `start` branch of the [`azure-samples/cosmosdb-chatgpt`](https://github.com/Azure-Samples/cosmosdb-chatgpt/tree/start) GitHub repository:
-
-    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Azure-Samples/cosmosdb-chatgpt/tree/start?template=false&quickstart=1)
-
-1. On the **Create codespace** page, review the codespace configuration settings and then select **Create new codespace**
-
-    :::image type="content" source="../media/codespace-configuration.png" alt-text="Screenshot of the confirmation screen before creating a new codespace.":::
-
-1. Wait for the codespace to start. This startup process can take a few minutes.
-
-1. Open a new terminal in the codespace.
-
-    > [!TIP]
-    > You can use the main menu to navigate to the **Terminal** menu option and then select the **New Terminal** option.
-    >
-    > :::image type="content" source="../media/open-terminal-option.png" lightbox="../media/open-terminal-option.png" alt-text="Screenshot of the codespaces menu option to open a new terminal.":::
-
-1. Validate that .NET 8 is installed in your environment:
-
-    ```bash
-    dotnet --list-sdks
-    ```
-
-    ```output
-    8.0.<patch> [/usr/share/dotnet/sdk]
-    ```
-
-1. Build the .NET project
-
-    ```bash
-    dotnet build
-    ```
-
-1. Close the terminal.
-
-1. The remaining exercises in this project take place in the context of this development container.
-
-#### [Visual Studio Code](#tab/visual-studio-code)
-
-The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) for Visual Studio Code requires [Docker](https://docs.docker.com/) to be installed on your local machine. The extension hosts the development container locally using the Docker host with the correct developer tools and dependencies preinstalled to complete this training module.
-
-1. Open **Visual Studio Code** in the context of an empty directory.
-
-1. Ensure that you have the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) installed in Visual Studio Code.
-
-1. Open a new terminal in the editor.
-
-    > [!TIP]
-    > You can use the main menu to navigate to the **Terminal** menu option and then select the **New Terminal** option.
-    >
-    > :::image type="content" source="../media/open-terminal-option.png" lightbox="../media/open-terminal-option.png" alt-text="Screenshot of the menu option to open a new terminal.":::
-
-1. Clone the [`azure-samples/cosmosdb-chatgpt`](https://github.com/azure-samples/cosmosdb-chatgpt) GitHub repository into the current directory.
-
-    ```bash
-    git clone https://github.com/Azure-Samples/cosmosdb-chatgpt.git .
-    ```
-
-1. Switch to the `start` branch of the repository.
-
-    ```bash
-    git checkout start
-    ```
-
-1. Open the **Command Palette**, search for the **Dev Containers** commands, and then select **Dev Containers: Reopen in Container**.
-
-    :::image type="content" source="../media/reopen-container-command-palette.png" alt-text="Screenshot of the Command Palette option to reopen the current folder within the context of a development container.":::
-
-    > [!TIP]
-    > Visual Studio Code may automatically prompt you to reopen the existing folder within a development container. This is functionally equivalent to using the command palette to reopen the current workspace in a container.
-    >
-    > :::image type="content" source="../media/reopen-container-toast.png" alt-text="Screenshot of a toast notification to reopen the current folder within the context of a development container.":::
-
-1. Validate that .NET 8 is installed in your environment:
-
-    ```bash
-    dotnet --list-sdks
-    ```
-
-    ```output
-    8.0.<patch> [/usr/share/dotnet/sdk]
-    ```
-
-1. Build the .NET project
-
-    ```bash
-    dotnet build
-    ```
-
-1. Close the terminal.
-
-1. The remaining exercises in this project take place in the context of this development container.
-
----

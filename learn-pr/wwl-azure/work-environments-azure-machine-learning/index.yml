@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/08/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Work with environments in Azure Machine Learning
 summary: Learn how to use environments in Azure Machine Learning to run scripts on any compute target.
 abstract: |

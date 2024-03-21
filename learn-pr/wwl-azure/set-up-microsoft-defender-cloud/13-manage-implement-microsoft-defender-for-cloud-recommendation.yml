@@ -4,10 +4,10 @@ title: Manage and implement Microsoft Defender for Cloud recommendations
 metadata:
   title: Manage and implement Microsoft Defender for Cloud recommendations
   description: "Manage and implement Microsoft Defender for Cloud recommendations"
-  ms.date: 10/11/2023
+  ms.date: 02/23/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/13-manage-implement-microsoft-defender-for-cloud-recommendation.md)]

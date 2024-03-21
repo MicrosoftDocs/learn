@@ -16,8 +16,7 @@ metadata:
   author: justinyoo
   ms.author: juyoo
   manager: jmartens
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/8-summary.md)]

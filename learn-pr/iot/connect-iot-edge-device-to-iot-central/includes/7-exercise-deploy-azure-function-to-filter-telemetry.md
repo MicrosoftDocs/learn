@@ -4,6 +4,8 @@ Recall that you want to minimize the amount of data sent from each store. To red
 
 Here, you'll use Azure Functions running on the IoT Edge device to implement a filter. The filter ensures that the device only sends telemetry when the ambient temperature is above 21&deg;C.
 
+[!INCLUDE [learn-pr/includes/azure-optional-exercise-subscription-note](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 ## Configure a container registry
 
 Your IoT Edge device will need to download and install the custom Azure Functions module that implements the filter. IoT Edge modules are packaged as Docker-compatible images that you can store in a container repository. You decide to use the Azure Container Registry (ACR) to store your new module. You'll also use ACR to build the container from a source project.

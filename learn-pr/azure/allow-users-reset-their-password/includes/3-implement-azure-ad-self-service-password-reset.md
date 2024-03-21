@@ -25,7 +25,7 @@ There are three settings for the **Self-service password reset enabled** propert
 
 Here are the high-level steps to configure SSPR:
 
-1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true), go to **Active Directory** > **Password reset**.
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true), go to **Microsoft Entra ID** > **Password reset**.
 1. Properties:
    - Enable SSPR.
    - You can enable it for all users in the Microsoft Entra organization or for selected users.

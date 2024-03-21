@@ -2,19 +2,20 @@
 uid: learn.wwl.describe-basic-cybersecurity-threats-attacks-mitigations
 metadata:
   title: Describe basic cybersecurity threats, attacks, and mitigations
-  description: "Describe basic cybersecurity threats, attacks, and mitigations"
-  ms.date: 01/19/2023
+  description: "Describe basic cybersecurity threats, attacks, and mitigations."
+  ms.date: 03/12/2024
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: security 
 title: Describe basic cybersecurity threats, attacks, and mitigations
-summary: Cyberattacks are impacting individuals and businesses at alarming rates.  Being informed about the evolving threat landscape and common types of attacks are key to learning how to protect against attacks.
+summary: Cyberattacks are impacting individuals and businesses at alarming rates. Being informed about the evolving threat landscape and common types of attacks are key to learning how to protect against attacks.
 abstract: |
-  After completing this module, you will be able to:
-  *   Define what is cybersecurity
-  *   Describe the basic threat landscape
-  *   Describe different types of Malware
-  *   Describe basic mitigation strategies
+  After completing this module, you'll be able to:
+  - Define what is cybersecurity.
+  - Describe the basic threat landscape.
+  - Describe different types of Malware.
+  - Describe basic mitigation strategies.
 prerequisites: ""
 iconUrl: /training/achievements/cybersecurity-threats-attacks.svg
 levels:

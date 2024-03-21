@@ -3,10 +3,10 @@ uid: learn.azure.intro-to-app-center
 metadata:
   title: "Introduction to App Center"
   description: Explore Azure App services to find ways to simplify creation and integration as you build, distribute, test, and analyze usage of yours apps.
-  ms.date: 9/30/2019
+  ms.date: 02/20/2024
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: "Introduction to App Center"
 summary: "Characterize the types of services offered by App Center. Describe the use of App Center to build, distribute, test, and analyze usage of apps."
 abstract: |

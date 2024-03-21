@@ -6,7 +6,7 @@ metadata:
   ms.date: 11/24/2022
   author: wwlpublish
   ms.author: shlindsay
-  ms.topic: interactive-tutorial
+  ms.topic: module-standard-task-based
   ms.service: powerbi
 title: Understand scalability in Power BI
 summary: Scalable data models enable enterprise-scale analytics in Power BI. Implement data modeling best practices, use large dataset storage format, and practice building a star schema to design analytics solutions that can scale.

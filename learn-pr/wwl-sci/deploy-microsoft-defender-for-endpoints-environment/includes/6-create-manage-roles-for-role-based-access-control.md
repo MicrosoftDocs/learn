@@ -1,6 +1,6 @@
-The following steps guide you on how to create roles in the Microsoft 365 Defender portal. It assumes that you have already created Microsoft Entra user groups.
+The following steps guide you on how to create roles in the Microsoft Defender portal. It assumes that you have already created Microsoft Entra user groups.
 
-1. Access the Microsoft 365 Defender portal using an account with a Security administrator or Global administrator role assigned.
+1. Access the Microsoft Defender portal using an account with a Security administrator or Global administrator role assigned.
 1. In the navigation pane, select **Settings** then select **Endpoints**. Under the **Permissions** category, select **Roles**.
 1. Select the **Turn on roles** button.
 1. Select **+ Add item**.

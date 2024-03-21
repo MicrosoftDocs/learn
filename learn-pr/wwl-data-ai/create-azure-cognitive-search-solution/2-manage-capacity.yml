@@ -4,10 +4,10 @@ title: Manage capacity
 metadata:
   title: Manage capacity
   description: Manage capacity
-  ms.date: 09/27/2023
+  ms.date: 12/11/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.service: cognitive-search
 azureSandbox: false
 labModal: false

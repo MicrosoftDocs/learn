@@ -2,9 +2,7 @@ A substantial allocation of resources is required to develop and maintain real-w
 
 ## Examine an Azure Container Apps solution
 
-Azure Container Apps is a fully managed environment that enables you to run microservices and containerized applications on a serverless platform. Container Apps offers an app-centric abstraction built on Azure Kubernetes Service (AKS) and incorporates native features like KEDA and Dapr.
-
-The following sections examine a reference scenario for Azure Container Apps. Your team begins with a workload structured in a microservices architecture and hosted on Azure Kubernetes Service. After an internal assessment, the team decides to migrate the solution to Azure Container Apps.
+The following sections examine a reference scenario for Azure Container Apps. The team begins with a workload structured in a microservices architecture and hosted on Azure Kubernetes Service. After an internal assessment, the team decides to migrate the solution to Azure Container Apps.
 
 ### Reference scenario
 
@@ -14,7 +12,7 @@ The team identifies an opportunity to simplify their implementation and enhance 
 
 ### Solution architecture
 
-The Fabrikam Drone Delivery app that was previously running in Azure Kubernetes Services is now run in a newly created Azure Container Apps environment. This environment is optimized for running apps that span multiple microservices. Notable features include:
+Your operations team completes the planned migration. The Drone Delivery app that was running in Azure Kubernetes Services is now run in a newly created Azure Container Apps environment. This environment is optimized for running apps that span multiple microservices. Notable features include:
 
 - Containers accessible via HTTPS ingress for external connections.
 - Internal accessibility through DNS-based service discovery.

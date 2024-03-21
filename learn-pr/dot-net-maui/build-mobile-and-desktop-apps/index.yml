@@ -8,8 +8,8 @@ metadata:
   author: codemillmatt 
   ms.author: masoucou 
   ms.topic: module
-  ms.prod: dotnet-mobile
-  ms.technology: dotnet-maui
+  ms.service: dotnet-mobile
+  ms.subservice: dotnet-maui
 title: Create a cross-platform app with .NET MAUI
 summary: "Learn how to use Visual Studio with .NET MAUI to create a cross-platform app." 
 abstract: | 

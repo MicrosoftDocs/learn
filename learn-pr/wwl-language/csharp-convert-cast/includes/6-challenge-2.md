@@ -33,7 +33,7 @@ The following challenge helps you to understand the implications of casting valu
     ```Output
     Divide value1 by value2, display the result as an int: 2
     Divide value2 by value3, display the result as a decimal: 1.4418604651162790697674418605
-    Divide value3 by value1, display the result as a float: 0.3583333
+    Divide value3 by value1, display the result as a float: 0.35833335
     ```
 
 1. On the Visual Studio Code **File** menu, select **Save**.
@@ -51,7 +51,7 @@ The following challenge helps you to understand the implications of casting valu
     ```Output
     Divide value1 by value2, display the result as an int: 2
     Divide value2 by value3, display the result as a decimal: 1.4418604651162790697674418605
-    Divide value3 by value1, display the result as a float: 0.3583333
+    Divide value3 by value1, display the result as a float: 0.35833335
     ```
 
     > [!NOTE]

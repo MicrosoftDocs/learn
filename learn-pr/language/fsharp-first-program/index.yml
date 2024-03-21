@@ -30,7 +30,6 @@ prerequisites: |
   - Know how to run commands at the console.
   - Have F# (.NET Core) installed.
 subjects:
-- development-tools
 - storage
 units:
   - learn.fsharp-first-program.1-introduction

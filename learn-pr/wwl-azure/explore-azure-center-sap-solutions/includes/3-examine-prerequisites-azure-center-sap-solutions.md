@@ -50,4 +50,3 @@ Use one of these options:
 ## Further details
 
 - Review the article [Prepare network for infrastructure deployment](/azure/sap/center-sap-solutions/prepare-network) to complete steps necessary for deploying your SAP system on Azure.
-- Detailed steps are available in AZ-120 GitHub lab Module 4: Design and implement an infrastructure to support SAP workloads on Azure - [Exercise 1: Implement prerequisites for deploying SAP workloads in Azure by using Azure Center for SAP solutions](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/polichtm-acss-lab1/Instructions/AZ-120_Lab04-ACSS_Deployment.md#exercise-1-implement-prerequisites-for-deploying-sap-workloads-in-azure-by-using-azure-center-for-sap-solutions).

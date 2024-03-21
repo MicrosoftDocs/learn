@@ -4,11 +4,10 @@ title: Query relational data in Azure Database for PostgreSQL
 metadata:
   title: Query relational data in Azure Database for PostgreSQL
   description: "Query relational data in Azure Database for PostgreSQL"
-  ms.date: 08/12/2021
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
 durationInMinutes: 3
 content: |
   [!include[](includes/4-azure-database-for-postgresql.md)]

@@ -5,8 +5,8 @@ metadata:
   title: Summary and cleanup
   description: Clean up the resources we used in this module
   ms.date: 09/24/2018
-  author: cynthn
-  ms.author: cynthn
+  author: ju-shim
+  ms.author: jushiman
   ms.topic: unit
   ms.custom:
     - devx-track-azurecli

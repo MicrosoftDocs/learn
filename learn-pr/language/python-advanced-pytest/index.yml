@@ -7,7 +7,7 @@ metadata:
   ms.date: 1/31/2022
   author: alfredodeza
   ms.author: alfredodeza
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Advanced testing with Pytest
 summary: Create custom Pytest fixtures for reusable code and improve multi-input tests with parametrize. 
 abstract: |
@@ -28,8 +28,6 @@ roles:
   - student
 products:
   - azure
-subjects:
-- development-tools
 units:
 - learn.python-advanced-pytest.introduction
 - learn.python-advanced-pytest.parametrize

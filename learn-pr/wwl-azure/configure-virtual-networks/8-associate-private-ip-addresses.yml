@@ -4,10 +4,12 @@ title: Allocate or assign private IP addresses
 metadata:
   title: Allocate or assign private IP addresses
   description: "Allocate or assign private IP addresses"
-  ms.date: 11/18/2023
+  ms.date: 03/08/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 1
 content: |
   [!include[](includes/8-associate-private-ip-addresses.md)]

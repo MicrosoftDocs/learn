@@ -6,8 +6,8 @@ metadata:
   title: Summary
   description: Summary for controlling and governing your Azure environment by deploying your infrastructure as code.
   ms.date: 04/28/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
 durationInMinutes: 2
 content: |

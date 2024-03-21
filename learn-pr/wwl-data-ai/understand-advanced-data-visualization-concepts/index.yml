@@ -3,10 +3,11 @@ uid: learn.wwl.understand-advanced-data-visualization-concepts
 metadata:
   title: Understand advanced data visualization concepts
   description: "Create cohesive, inclusive, and efficient Power BI reports to effectively communicate results."
-  ms.date: 08/17/2022
+  ms.date: 03/13/2024
   author: wwlpublish
   ms.author: anrudduc
-  ms.topic: interactive-tutorial
+  ms.service: powerbi
+  ms.topic: module-standard-task-based
 title: Understand advanced data visualization concepts
 summary: Create cohesive, inclusive, and efficient Power BI reports to effectively communicate results.
 abstract: |

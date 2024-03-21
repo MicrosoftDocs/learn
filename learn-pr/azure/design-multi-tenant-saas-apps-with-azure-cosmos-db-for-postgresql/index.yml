@@ -7,13 +7,12 @@ metadata:
   ms.date: 02/22/2023
   author: kylebunting
   ms.author: jonels
-  ms.topic: interactive-tutorial
+  ms.topic: module-standard-task-based
   ms.service: cosmos-db
   ms.subservice: postgresql
   ms.custom:
     - build-2023
     - build-2023-dataai
-  ms.prod: learning-azure
 title: Design multitenant SaaS apps by using Azure Cosmos DB for PostgreSQL
 summary: |
   Azure Cosmos DB for PostgreSQL provides a powerful data platform for multitenant software as a service (SaaS) applications. Starting from a single-node instance, a multitenant database can be horizontally scaled to a multi-node distributed cluster of up to 20 servers to meet the demands of tenant growth.

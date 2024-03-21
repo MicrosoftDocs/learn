@@ -6,7 +6,7 @@ metadata:
   description: In this hands-on exercise, you'll add a pool to your Batch account using the .NET client library.
   ms.date: 06/01/2019
   author: lauradolan
-  ms.author: ladolan
+  ms.author: jushiman
   ms.topic: unit
   ms.custom:
     - devx-track-dotnet

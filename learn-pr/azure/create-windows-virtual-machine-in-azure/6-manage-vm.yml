@@ -5,8 +5,8 @@ metadata:
   title: Configure Azure virtual machine network settings
   description: Configure Azure virtual machine network settings
   ms.date: 09/24/2018
-  author: cynthn
-  ms.author: cynthn
+  author: ju-shim
+  ms.author: jushiman
   ms.topic: unit
 durationInMinutes: 5
 content: |

@@ -29,7 +29,7 @@ With Load Balancer, you can use availability sets and availability zones to ensu
 
 ### Availability sets
 
-An availability set is a logical grouping that you use to isolate virtual machine resources from each other when they're deployed. Azure ensures that the virtual machines you put in an availability set run across multiple physical servers, compute racks, storage units, and network switches. If there's a hardware or software failure, only a subset of your virtual machines is affected. Your overall solution stays operational. Availability sets are essential for building reliable cloud solutions.
+An availability set is a logical grouping used to isolate virtual machine resources from each other when they're deployed. Azure ensures that the virtual machines you put in an availability set run across multiple physical servers, compute racks, storage units, and network switches. If there's a hardware or software failure, only a subset of your virtual machines is affected. Your overall solution stays operational. Availability sets are essential for building reliable cloud solutions.
 
 :::image type="content" source="../media/2-availability-sets.svg" alt-text="Diagram showing an overview of availability sets in Azure." border="false":::
 

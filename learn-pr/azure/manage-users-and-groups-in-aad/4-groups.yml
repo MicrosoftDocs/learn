@@ -9,6 +9,7 @@ metadata:
   ms.author: sarahlipsey
   ms.topic: unit
   ms.manager: amycollanino
+  ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 durationInMinutes: 8
 content: |
   [!include[](includes/4-groups.md)]

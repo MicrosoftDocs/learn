@@ -8,8 +8,7 @@ metadata:
   author: cyz
   ms.author: cyzanon
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-create-the-game-logic.md)]

@@ -6,8 +6,8 @@ metadata:
   title: Branch and merge your changes
   description: Learn how Git enables you to maintain multiple versions of files by using branches, and how to merge branches together.
   ms.date: 01/23/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
   ms.custom:
     - devx-track-bicep

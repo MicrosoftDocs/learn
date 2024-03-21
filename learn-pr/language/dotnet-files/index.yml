@@ -7,8 +7,8 @@ metadata:
   author: codemillmatt
   ms.author: masoucou
   ms.manager: markl
-  ms.topic: interactive-tutorial
-  ms.prod: .net
+  ms.topic: module
+  ms.service: dotnet
   ms.custom:
   - team=cloud_advocates
   ms.contributors:
@@ -36,8 +36,6 @@ roles:
 - developer
 products:
 - dotnet
-subjects:
-- development-tools
 units:
 - learn.dotnet-files.1-introduction
 - learn.dotnet-files.2-file-system

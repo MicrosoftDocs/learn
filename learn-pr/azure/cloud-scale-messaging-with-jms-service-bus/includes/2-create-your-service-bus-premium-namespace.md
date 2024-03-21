@@ -58,7 +58,7 @@ Next, add a queue for messages about individual sales to your namespace:
 1. Select **+ Queue** on the command bar.  
 1. In the **Create queue** pane, for **Name**, enter **test-queue-jms**, and then select **Create**.  
   
-When the message queue has been created, **test-queue-jms** is listed under **Queues** at the bottom of the Service Bus namespace pane.
+When the message queue is created, **test-queue-jms** is listed under **Queues** at the bottom of the Service Bus namespace pane.
 
 ## Get connection string to the namespace
 
@@ -66,5 +66,5 @@ You use the connection string for this namespace later in this training, to conn
 
 1. On the **Service Bus Namespace** page, select **Shared access policies** under **Settings** on the left menu.
 1. Select **RootManageSharedAccessKey** on the **Shared access policies** page. 
-1. On the **SAS Policy** page, select the **Copy** button next to **Primary connection string** field.
+1. On the **SAS Policy** page, select the **Copy** button next to **Primary Connection String** field.
 1. Copy it and save it so that you can use it later in the training.

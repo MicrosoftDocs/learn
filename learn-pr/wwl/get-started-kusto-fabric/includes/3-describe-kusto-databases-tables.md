@@ -5,7 +5,7 @@ Let's explore the core elements of Synapse Real-Time Analytics (RTA) in Microsof
 ![Screenshot of Fabric Real-Time Analytics components.]( ../media/real-time-analytics-core-components.png)
 
 - A **KQL database** is a Kusto database and an upper-level entity that hosts a collection of tables, stored functions, materialized views, shortcuts, and datastreams.
-- Use the **KQL Queryset** to run queries, and view and manipulate query results on data from your Data Explorer database. The KQL Queryset allows you to save queries for future use, or export and share queries with others. In addition, the KQL Queryset uses the Kusto Query language for query creation, and also supports some SQL functions. For more information about the query language, see [Kusto Query Language overview](/azure/data-explorer/kusto/query/?branch=release-public-preview).
+- Use the **KQL Queryset** to run queries, and view and manipulate query results on data from your KQL database. The KQL Queryset allows you to save queries for future use, or export and share queries with others. In addition, the KQL Queryset uses the Kusto Query language for query creation, and also supports T-SQL and some T-SQL functions. For more information about the query language, see [Kusto Query Language overview](/azure/data-explorer/kusto/query/?branch=release-public-preview).
 - The **Eventstream** feature allows you to integrate streaming data from multiple source types, which include Event hubs, custom apps, and sample data. Once you've established your source(s), you can then send the streaming data to multiple destinations including a Lakehouse, KQL Database, or a custom app.
 
 ## KQL Database objects

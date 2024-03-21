@@ -29,9 +29,13 @@ If the source data for the CETAS statement is in files in the same data lake pat
 To create an external data source, use the `CREATE EXTERNAL DATA SOURCE` statement, as shown in this example:
 
 ```sql
+-- Create an external data source for the Azure storage account
 CREATE EXTERNAL DATA SOURCE files
 WITH (
-    LOCATION = 'https://mydatalake.blob.core.windows.net/data/files/'
+    LOCATION = 'https://mydatalake.blob.core.windows.net/data/files/',
+    TYPE = HADOOP, -- For dedicated SQL pool
+    -- TYPE = BLOB_STORAGE, -- For serverless SQL pool
+    CREDENTIAL = storageCred
 );
 ```
 

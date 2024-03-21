@@ -6,7 +6,8 @@ metadata:
   ms.date: 11/17/2022
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: github
 title: Authenticate and authorize user identities on GitHub
 summary: This module provides an overview of the authentication and authorization options available to you in your GitHub organization or GitHub Enterprise.
 abstract: |

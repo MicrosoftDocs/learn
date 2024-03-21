@@ -10,7 +10,7 @@ Azure SQL is a collective term for a family of Microsoft SQL Server based databa
 
 ## Compare Azure SQL services
 
-| | SQL Server on Azure VMs | Azure SQL Managed Instance | Azure SQL Database |
+| -- | SQL Server on Azure VMs | Azure SQL Managed Instance | Azure SQL Database |
 | - | - | - | - |
 | |![SQL Server Azure VM logo](../media/azure-sql-vm.png) | ![Azure SQL Managed Instance logo](../media/azure-sql-managed-instance.png) | ![Azure SQL Database logo](../media/azure-sql-database.png) |
 | Type of cloud service | IaaS | PaaS | PaaS |

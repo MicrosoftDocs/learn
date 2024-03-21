@@ -14,7 +14,7 @@ Here are some scenarios where using vertical scaling can be advantageous:
 
 ### Things to know about horizontal scaling
 
-Horizontal scaling, also referred to as _scale out and scale in_, is used to adjust the **number** of virtual machines in your configuration to support the changing workload. When you implement horizontal scaling, there's an increase (scale out) or decrease (scale in) in the number of virtual machine instances.
+Horizontal scaling is used to adjust the **number** of virtual machines in your configuration to support the changing workload. When you implement horizontal scaling, there's an increase (scale out) or decrease (scale in) in the number of virtual machine instances.
 
 :::image type="content" source="../media/horizontal-scaling-3e457e75.png" alt-text="Illustration that shows horizontal scaling where virtual machines are added to scale out the system to support the workload." border="false":::
 

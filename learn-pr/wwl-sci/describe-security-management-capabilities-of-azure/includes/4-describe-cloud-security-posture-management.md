@@ -16,10 +16,6 @@ Microsoft Defender for Cloud also provides hardening recommendations based on an
 
 :::image type="content" source="../media/3-security-center-recommendations-inline.png" lightbox="../media/3-security-center-recommendations-expanded.png" alt-text="Screenshot showing part of Microsoft Defender for Cloud with recommendations as to what needs to be fixed to maintain maximum protection.":::
 
-The following interactive click-through demonstrates how you use secure score and the hardening recommendations in Microsoft Defender for Cloud.  Select the image to get started and follow the prompts on the screen.
-
-[![Interactive guide](../media/2-defender-cloud-interactive-guide.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/LP03M02-Use-Azure-secure-score-to-improve-your-security-posture/index.html?azure-portal=true)
-
 ### Defender CSPM plan options
 
 Defender for Cloud offers foundational multicloud CSPM capabilities for free. These capabilities are automatically enabled by default on any subscription or account that has onboarded to Defender for Cloud. The foundational CSPM includes asset discovery, continuous assessment and security recommendations for posture hardening, compliance with Microsoft Cloud Security Benchmark (MCSB), and secure score.

@@ -18,7 +18,9 @@ Secrets are defined as a set of name/value pairs. The value of each secret is sp
 
 ### Store secret value in Container Apps
 
-When you define secrets through the portal, or via different command line options.
+Secrets can be defined via the Azure portal or by using a command line tool.
+
+To define secrets through the portal:
 
 1. Open your container app in the Azure portal.
 
@@ -38,7 +40,7 @@ When you define secrets through the portal, or via different command line option
 
 When you define a secret, you create a reference to a secret stored in Azure Key Vault. Container Apps automatically retrieves the secret value from Key Vault and makes it available as a secret in your container app.
 
-To reference a secret from Key Vault, you must first enable managed identity in your container app and grant the identity access to the Key Vault secrets.
+To reference a secret from Key Vault, you must first enable a managed identity in your container app and grant the identity access to the Key Vault secrets.
 
 To grant access to Key Vault secrets, create an access policy in Key Vault for the managed identity you created. Enable the "Get" secret permission on this policy.
 

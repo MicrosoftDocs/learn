@@ -5,8 +5,8 @@ metadata:
   title: What is the Azure CLI?
   description: What is the Azure CLI?
   ms.date: 09/24/2018
-  author: cynthn
-  ms.author: cynthn
+  author: ju-shim
+  ms.author: jushiman
   ms.topic: unit
   ms.custom:
     - devx-track-azurecli

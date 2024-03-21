@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-explore-azure-governance-manageability.explore-azure-policy
+title: Explore Azure Policy
+metadata:
+  title: Explore Azure Policy
+  description: "Explore Azure Policy"
+  ms.date: 01/11/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-explore-azure-policy.md)]

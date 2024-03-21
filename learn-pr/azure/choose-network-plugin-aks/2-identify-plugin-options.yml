@@ -3,11 +3,11 @@ uid: learn.choose-best-networking-plugin-for-aks.identify-plugin-options
 title: Identify plugin options
 metadata:
   unitType: learning-content
-  title: identify-plugin-options
-  description: "Learn about the available AKS networking plugin options."
-  ms.date: 03/23/2022
-  author: nickomang
-  ms.author: nickoman
+  title: Identify plugin options
+  description: "Learn about the available Azure Kubernetes Service (AKS) networking plugin options."
+  ms.date: 03/18/2024
+  author: schaffererin
+  ms.author: schaffererin
   ms.topic: unit
 durationInMinutes: 5
 content: |

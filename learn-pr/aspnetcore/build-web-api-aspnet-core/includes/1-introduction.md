@@ -1,6 +1,6 @@
 This module explores creating a cross-platform RESTful service by using ASP.NET Core web API controllers with .NET and C#.
 
-In this module, we use the [.NET CLI (command-line interface)](/dotnet/core/tools/) and [Visual Studio Code](https://code.visualstudio.com) for local development. After you complete this module, you can apply its concepts by using a development environment like Visual Studio (Windows) and Visual Studio for Mac (macOS). You can also apply the concepts to continued development through Visual Studio Code (Windows, Linux, and macOS).
+In this module, we use the [.NET CLI (command-line interface)](/dotnet/core/tools/) and [Visual Studio Code](https://code.visualstudio.com) for local development. After you complete this module, you can apply its concepts by using a development environment like Visual Studio (Windows). You can also apply the concepts to continued development through Visual Studio Code (Windows, Linux, and macOS).
 
 ## Example scenario
 

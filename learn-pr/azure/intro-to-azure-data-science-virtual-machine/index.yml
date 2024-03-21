@@ -7,7 +7,7 @@ metadata:
   author: jesscioffi
   ms.author: jcioffi
   ms.reviewer: franksolomon 
-  ms.topic: tutorial
+  ms.topic: module
   ms.service: data-science-vm
 title: Create and connect to a Data Science Virtual Machine
 summary: Create, connect to, and share data among users on a Data Science Virtual Machine (DSVM) that's preloaded with data science and machine learning tools.
@@ -24,7 +24,6 @@ products:
   - azure-machine-learning 
   - azure-data-science-vm
 subjects:
-- data-ai
 - virtual-machine
 units:
   - learn.azure.intro-to-data-science-virtual-machine.introduction

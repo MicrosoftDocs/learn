@@ -2,6 +2,6 @@ Azure Cloud Services is an example of a platform as a service (PaaS). Like Azure
 
 Suppose you're developing a Mixed Reality application that needs an enormous amount of resources from time to time. You plan to store these resources using Azure Cloud services. Unfortunately, you have a minimal idea about how to implement Azure Cloud services in your application.
 
-In this five-part module series, you'll learn how to integrate several **Azure Cloud** services into a **Unity** project for **HoloLens 2**. With each consecutive chapter, you'll add new **Azure Cloud** services to expand the application features and user experience, while teaching you the fundamentals of each **Azure Cloud** service.
+In this five-part module series, you'll learn how to integrate several Azure Cloud services into a Unity project for HoloLens 2. With each consecutive chapter, you'll add new Azure Cloud services to expand the application features and user experience, while teaching you the fundamentals of each Azure Cloud service.
 
-A completed example of this tutorial can be found [here](https://github.com/microsoft/MixedRealityLearning/tree/development/MRTK3%20Tutorials).
+You can find a [completed example of this tutorial here](https://github.com/microsoft/MixedRealityLearning/tree/development/MRTK3%20Tutorials).

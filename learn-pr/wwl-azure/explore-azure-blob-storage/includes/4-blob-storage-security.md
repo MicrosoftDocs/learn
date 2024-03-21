@@ -1,4 +1,3 @@
-
 Azure Storage provides a comprehensive set of security capabilities that together enable developers to build secure applications:
 
 * All data (including metadata) written to Azure Storage is automatically encrypted using Storage Service Encryption (SSE).
@@ -28,7 +27,7 @@ You can rely on Microsoft-managed keys for the encryption of your storage accoun
 
 The following table compares key management options for Azure Storage encryption.
 
-|  | Microsoft-managed keys | Customer-managed keys | Customer-provided keys |
+| -- | Microsoft-managed keys | Customer-managed keys | Customer-provided keys |
 |--|--|--|--|
 | Encryption/decryption operations | Azure | Azure | Azure |
 | Azure Storage services supported | All | Blob storage, Azure Files | Blob storage |

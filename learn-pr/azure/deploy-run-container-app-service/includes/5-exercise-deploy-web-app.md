@@ -14,7 +14,7 @@ You'll use Docker to log in to the registry and pull the web image that you want
 
 1. In the left menu pane, under **Settings**, select **Access keys**. The **Access keys** pane appears for your container registry.
 
-1. Set the **Admin user** option to **Enabled**. This change saves automatically.
+1. Check the **Admin user** box. This change saves automatically.
 
 You're now ready to create your web app.
 
@@ -46,7 +46,7 @@ You're now ready to create your web app.
     | **Zone redundancy** |
     | Zone redundancy | Use the default. |
 
-1. Select **Next: Docker**.
+1. Select the **Docker** tab at the top of the screen.
 
 1. On the **Docker** tab, enter the following values for each setting.
 

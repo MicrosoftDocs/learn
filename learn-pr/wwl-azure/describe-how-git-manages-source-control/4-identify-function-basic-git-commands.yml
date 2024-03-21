@@ -4,10 +4,12 @@ title: Identify the function of basic Git commands
 metadata:
   title: Identify the function of basic Git commands
   description: "Identify the function of basic Git commands"
-  ms.date: 08/23/2023
+  ms.date: 03/13/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/4-identify-function-basic-git-commands.md)]

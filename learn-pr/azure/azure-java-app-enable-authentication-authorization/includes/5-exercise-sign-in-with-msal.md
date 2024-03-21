@@ -1,6 +1,6 @@
-In this exercise, you will use the Microsoft Authentication Library for Java (MSAL4J) to add authentication in a sample Java web application and enable users to sign in with their Microsoft Entra accounts.
+In this exercise, you'll use the Microsoft Authentication Library for Java (MSAL4J) to add authentication in a sample Java web application and allow users to sign in with their Microsoft Entra accounts.
 
-The sample application used in this exercise is a Java servlet application that allows users to sign in and displays the user name and basic profile information. It also allows you to call the Microsoft Graph API to show some user information.
+The sample application you'll in this exercise is a Java servlet application that allows users to sign in and displays the user name and basic profile information. It also allows you to call the Microsoft Graph API to show some user information.
 
 ## Create a Java web application
 
@@ -8,20 +8,20 @@ From your shell or command line:
 
 1. Create a folder for the application.
 
-    ``` 
+    ```bash
     mkdir ~/javawebapp
     ```
 
 2. Clone the sample application from the GitHub repository into the new folder.
 
-    ```console
+    ```bash
     git clone https://github.com/Azure-Samples/ms-identity-java-servlet-webapp-authentication.git ~/javawebapp
     ```
 
 3. Change into the folder where the sample application for this exercise is located.
 
-    ```
-    cd ~/javawebapp/2-Authorization-I/call-graph
+    ```bash
+    cd ~/javawebapp/ms-identity-java-servlet-webapp-authentication/2-Authorization-I/call-graph
     ```
 
 ## Configure the application
@@ -30,9 +30,9 @@ To configure the code, open the application project in your preferred IDE like I
 
 1. Open the `./src/main/resources/authentication.properties` file.
 
-2. Find the string `{enter-your-tenant-id-here}`. Replace the existing value with the **Microsoft Entra tenant ID** (as shown in the image below), since the app was registered with the **Accounts in this organizational directory only** option.
+2. Find the string `{enter-your-tenant-id-here}`. Replace the existing value with the **Directory (tenant) ID** (as shown in the following image), because the app was registered with the **Accounts in this organizational directory only** option.
 
-3. Find the string `{enter-your-client-id-here}` and replace the existing value with the **application ID** (clientId) of the registered application copied from the Azure portal.
+3. Find the string `{enter-your-client-id-here}` and replace the existing value with the **Application (client) ID** (clientId) of the registered application copied from the Azure portal.
 
    :::image type="content" source="../media/app-registration-blade.png" alt-text="Screenshot highlighting the App ID of an app registered with Microsoft Entra ID on Azure portal.":::
 
@@ -51,20 +51,21 @@ To configure the code, open the application project in your preferred IDE like I
 
 3. Find the resulting `.war` file in `./target/msal4j-servlet-graph.war`. To deploy to Tomcat, copy this `.war` file to the `/webapps/` directory in your Tomcat installation directory and start the Tomcat server.
 
-4. Open your browser and navigate to `http://localhost:8080/msal4j-servlet-graph/`. You will be redirected to login with Microsoft Entra ID. On successful login, you should see a page as shown in the below image.
+4. Open your browser and navigate to `http://localhost:8080/msal4j-servlet-graph/`. You'll be redirected to sign in with Microsoft Entra ID. On successful sign-in, you should see a page like the following:
 
     :::image type="content" source="../media/app-sign-in.png" alt-text="Screenshot showing user name displayed on the page after successfully signing in to sample application.":::
 
-5. Click on the **ID Token Details** button to see some of the ID token's decoded claims.
+5. Select the **ID Token Details** button to see some of the ID token's decoded claims.
 
 ## Overview of authentication code
 
-Most of the authentication code in the sample application can be found under the `java/com/microsoft/azuresamples/msal4j/` directory of the project. It contains multiple servlets that provide the authentication endpoints in the application for sign in, sign out and handling the redirect callback from Microsoft Entra ID. These servlets use the helper classes in the directory `java/com/microsoft/azuresamples/msal4j/helpers/` to call the authentication methods provided by MSAL. There is a servlet filter defined in `AuthenticationFilter.java` which redirects unauthenticated requests to protected routes to a 401 unauthorized HTTP error page.
-To add authentication to your application, you will need to include the servlet classes under `java/com/microsoft/azuresamples/msal4j/authservlets` and `java/com/microsoft/azuresamples/msal4j/authwebapp` directories, the helper classes in the directory `java/com/microsoft/azuresamples/msal4j/helpers/` and the authentication servlet filter `AuthenticationFilter.java` in your projects. Here are more details of the MSAL authentication code.
-  
-1. MSAL4J is available on Maven. You will need to add MSAL4J as a dependency in the `pom.xml` file of the project.
+You can find most of the authentication code in the sample application under the project's `java/com/microsoft/azuresamples/msal4j/` directory. It contains multiple servlets that provide the authentication endpoints in the application for signing in, signing out, and handling the redirect callback from Microsoft Entra ID. These servlets use the helper classes in the directory `java/com/microsoft/azuresamples/msal4j/helpers/` to call the authentication methods provided by MSAL. There's a servlet filter defined in `AuthenticationFilter.java` that redirects unauthenticated requests to protected routes to a 401 unauthorized HTTP error page.
 
-    ```
+To add authentication to your application, you'll need to include the servlet classes under `java/com/microsoft/azuresamples/msal4j/authservlets` and `java/com/microsoft/azuresamples/msal4j/authwebapp` directories, the helper classes in the directory `java/com/microsoft/azuresamples/msal4j/helpers/` and the authentication servlet filter `AuthenticationFilter.java` in your projects. Here are more details of the MSAL authentication code.
+  
+1. MSAL4J is available on Maven. You'll need to add MSAL4J as a dependency in the project's `pom.xml` file:
+
+    ```xml
     <dependency>
         <groupId>com.microsoft.azure</groupId>
         <artifactId>msal4j</artifactId>
@@ -72,7 +73,7 @@ To add authentication to your application, you will need to include the servlet 
     </dependency>
     ```
 
-1. The first step of the sign-in process is to send a request to the `/authorize` endpoint of the Microsoft Entra tenant. The MSAL4J `ConfidentialClientApplication` instance is leveraged to construct an authorization request URL. The app redirects the browser to this URL, which is where the user will sign in.
+1. The first step of the sign-in process is to send a request to the Microsoft Entra tenant's `/authorize` endpoint. The MSAL4J `ConfidentialClientApplication` instance is leveraged to construct an authorization request URL. The app redirects the browser to this URL, which is where the user will sign in.
 
     ```Java
     final ConfidentialClientApplication client = getConfidentialClientInstance();

@@ -1,4 +1,3 @@
-
 To use Azure Files, you need an Azure storage account. After you have a storage account, you can create and configure a file share by using Azure Files in the Azure portal.
 
 :::image type="content" source="../media/create-file-shares-bf2e2f1d.png" alt-text="Screenshot that shows how to configure a new SMB Azure file share using the Azure portal.":::
@@ -22,3 +21,4 @@ You can connect to your Azure file share with Windows or Windows Server in the A
 You can also connect to Azure file shares from Linux machines. From your virtual machine page, select **Connect**. SMB Azure file shares can be mounted in Linux distributions by using the CIFS kernel client. File mounting can be done on-demand with the `mount` command or on-boot (persistent) by creating an entry in /etc/fstab.
 
 :::image type="content" source="../media/map-file-shares-linux-1639a49a.png" alt-text="Screenshot that shows how to connect to an Azure file share with Linux in the Azure portal.":::
+

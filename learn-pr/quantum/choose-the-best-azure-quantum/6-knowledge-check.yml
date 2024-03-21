@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.choose-the-best-azure-quantum.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your understanding so far.
+  author: SoniaLopezBravo
+  ms.author: sonialopez
+  ms.date: 12/13/2023
+  ms.topic: unit
+  show_latex: true
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+
+quiz:
+  questions:
+
+  - content: "If you want to start using Azure Quantum, but you don't have an Azure account, what should you do?"
+    choices:
+    - content: "You can use the Azure Quantum website or install the Azure Quantum Development Kit (Modern QDK) extension for Visual Studio Code without an Azure account. You can also create an Azure account and benefit from the free Azure Quantum Credits."
+      isCorrect: true
+      explanation: "An Azure account is not required to start using Azure Quantum, but it's recommended if you want to have access to all the features."
+    - content: "You need to create an Azure account and have a valid subscription in order to start using Azure Quantum."
+      isCorrect: false
+      explanation: "Without an Azure account you can go to the Azure Quantum website and run your programs in the Copilot, or install the QDK extension for Visual Studio Code. An Azure account is not required to start using Azure Quantum, but it's recommended if you want to have access to all the features."
+    - content: "If you don't have an account, you can still use the notebooks in Azure portal to run your programs."
+      isCorrect: false
+      explanation: "To access the Azure portal and the notebooks, you need to have an Azure account."
+
+  - content: 'Although anyone can install it, select which of these users would be best suited to install the Modern QDK extension.'
+    choices:
+    - content: 'A professor who wants to host a quantum hackathon for their students.'
+      isCorrect: false
+      explanation: 'To host a hackathon, the professor should use the Azure portal. With the Azure portal, they can grant their students access to a Quantum workspace and the notebooks, and manage the credits usage.'
+    - content: 'A developer who wants to expand their programming skills and learn to write quantum programs locally.'
+      isCorrect: true
+      explanation: "This user may benefit from installing the QDK, as they're familiar with local development, debugging and testing."
+    - content: 'A physics student who wants to learn the basic concepts of quantum computing.'
+      isCorrect: false
+      explanation: "This user may benefit more from the Azure Quantum website, which provides the tutorials of Quantum Katas and the Copilot."
+
+  - content: "If you want to manage your subscription, workspaces, credits consumption, etc., which service should you use?"
+    choices:
+    - content: "You can manage Azure Quantum from any of the developing options: Azure Quantum website, Azure portal and QDK in Visual Studio Code."
+      isCorrect: false
+      explanation: "Managing Azure Quantum is only possible from the Azure portal."
+    - content: 'You can manage Azure Quantum from the Azure portal and the QDK in Visual Studio Code.'
+      isCorrect: false
+      explanation: "Managing Azure Quantum is only possible from the Azure portal."
+    - content: "You can only manage Azure Quantum from the Azure portal."
+      isCorrect: true
+      explanation: "From the Azure portal you can manage your subscriptions, workspaces, quantum jobs, credits consumption, and quotas, and grant a group of users access to a workspace."

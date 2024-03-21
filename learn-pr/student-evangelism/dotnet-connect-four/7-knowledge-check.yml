@@ -22,7 +22,7 @@ quiz:
     - content: Use onclick="handler".
       isCorrect: false
       explanation: Incorrect. You should type @onclick="handler" not onclick="handler".
-    - content: Use click="handler"
+    - content: Use @onclick="handler"
       isCorrect: true
       explanation: Correct.
   - content: In what component method would you place logic that would initialize your component?

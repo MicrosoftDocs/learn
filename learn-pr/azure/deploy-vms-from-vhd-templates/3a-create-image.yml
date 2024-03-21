@@ -5,8 +5,8 @@ metadata:
   title: Create an image from a generalized VM
   description: Create an image of a VM
   ms.date: 03/18/2020
-  author: cynthn
-  ms.author: cynthn
+  author: ju-shim
+  ms.author: jushiman
   ms.topic: unit
 durationInMinutes: 5
 content: |

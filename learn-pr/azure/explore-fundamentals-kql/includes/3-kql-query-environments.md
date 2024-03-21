@@ -1,6 +1,6 @@
 Now that you're introduced to KQL, let's see the different query environments where you can use KQL in Microsoft products.
 
-The environments described in this unit are [Azure Data Explorer](#azure-data-explorer), [Synapse Real-Time Analytics in Microsoft Fabric (Preview)](#synapse-real-time-analytics-in-microsoft-fabric-preview), [Azure Monitor](#azure-monitor), [Microsoft Sentinel](#microsoft-sentinel), [Azure Resource Graph](#azure-resource-graph), [Microsoft 365 Defender](#microsoft-365-defender), and [Configuration Manager](#configuration-manager).
+The environments described in this unit are [Azure Data Explorer](#azure-data-explorer), [Synapse Real-Time Analytics in Microsoft Fabric (Preview)](#synapse-real-time-analytics-in-microsoft-fabric-preview), [Azure Monitor](#azure-monitor), [Microsoft Sentinel](#microsoft-sentinel), [Azure Resource Graph](#azure-resource-graph), [Microsoft Defender XDR](#microsoft-defender-xdr), and [Configuration Manager](#configuration-manager).
 
 ## Azure Data Explorer
 
@@ -56,15 +56,15 @@ Azure Resource Graph supports a subset of KQL data types, scalar functions, scal
 
 For more product information, see [What is Azure Resource Graph?](/azure/governance/resource-graph/overview)
 
-## Microsoft 365 Defender
+## Microsoft Defender XDR
 
-Microsoft 365 Defender is a unified pre- and post-breach enterprise defense suite that provides integrated protection against sophisticated attacks. It natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications. Your security operations team receives an alert within the Microsoft 365 Defender portal whenever a malicious or suspicious activity or artifact is detected. But, it's not enough to respond to attacks as they occur. For extended, multi-phase attacks such as ransomware, you must proactively search for the evidence of an attack in progress and take action to stop it before it completes.
+Microsoft Defender XDR is a unified pre- and post-breach enterprise defense suite that provides integrated protection against sophisticated attacks. It natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications. Your security operations team receives an alert within the Microsoft Defender portal whenever a malicious or suspicious activity or artifact is detected. But, it's not enough to respond to attacks as they occur. For extended, multi-phase attacks such as ransomware, you must proactively search for the evidence of an attack in progress and take action to stop it before it completes.
 
-:::image type="content" source="../media/7-defender.png" alt-text="Screenshot of Microsoft 365 Defender threat hunting environment." lightbox="../media/7-defender.png":::
+:::image type="content" source="../media/7-defender.png" alt-text="Screenshot of Microsoft Defender XDR threat hunting environment." lightbox="../media/7-defender.png":::
 
-Advanced hunting is a query-based threat hunting tool that lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate threat indicators and entities. The flexible access to data enables unconstrained hunting for both known and potential threats. For more information, see [Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview).
+Advanced hunting is a query-based threat hunting tool that lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate threat indicators and entities. The flexible access to data enables unconstrained hunting for both known and potential threats. For more information, see [Proactively hunt for threats with advanced hunting in Microsoft Defender XDR](/microsoft-365/security/defender/advanced-hunting-overview).
 
-For more product information, see [What is Microsoft 365 Defender?](/microsoft-365/security/defender/microsoft-365-defender)
+For more product information, see [What is Microsoft Defender XDR?](/microsoft-365/security/defender/microsoft-365-defender)
 
 ## Configuration Manager
 

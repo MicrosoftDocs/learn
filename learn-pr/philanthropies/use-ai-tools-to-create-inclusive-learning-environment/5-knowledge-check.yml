@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.use-ai-tools-to-create-inclusive-learning-environment.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is a part of the 'Use AI tools to create an inclusive learning environment' module.
+  ms.date: 03/11/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz: 
+  title: Check your knowledge
+  questions: 
+    - content: "How can AI tools enhance the quality of group discussions in collaborative learning, and what kind of support can it provide for group activities?"
+      choices:
+        - content: "AI tools enhance the quality of group discussions by replacing the need for human interaction and can provide support by ensuring all learners agree on discussion points."
+          isCorrect: false
+          explanation: "Incorrect. AI is designed to enhance human interaction, not replace human interaction, and it enhances the quality of discussions by generating activity suggestions and instructions, not by ensuring agreement."
+        - content: "AI enhances the quality of group discussions by generating activity suggestions and instructions and can provide support by enriching group discussions and providing ideas for projects."
+          isCorrect: true
+          explanation: "Correct. AI enhances the quality of group discussions by generating activity suggestions and instructions. It provides support by enriching group discussions and providing ideas for projects."
+        - content: "AI enhances the quality of group discussions by ensuring all learners have the same level of understanding and can provide support by ensuring everyone learns at the same pace."
+          isCorrect: false
+          explanation: "Incorrect. AI doesn't ensure the same level of understanding or learning pace, but rather enhances the quality of discussions by generating activity suggestions and instructions."
+    - content: "How do applications like Microsoft Outlook, Microsoft Edge, and Microsoft PowerPoint utilize text-to-speech technology, and who benefits from this functionality?"
+      choices:
+        - content: "They utilize text-to-speech technology to provide read-aloud functionality and this functionality benefits learner with low vision, ADHD, dyslexia, or autism."
+          isCorrect: true
+          explanation: "Correct. These applications utilize text-to-speech technology to provide read-aloud functionality. This functionality benefits learner with low vision, ADHD, dyslexia, or autism."
+        - content: "They utilize text-to-speech technology by ensuring all users have the same level of understanding and this functionality benefits user who struggle the most."
+          isCorrect: false
+          explanation: "Incorrect. These applications utilize text-to-speech technology to provide features such as read-aloud functionality, not to ensure the same level of understanding."
+        - content: "They utilize text-to-speech technology by replacing the need for users to read and this functionality benefits all users equally."
+          isCorrect: false
+          explanation: "Incorrect. These applications utilize text-to-speech technology to provide features such as read-aloud functionality, not to replace reading."
+    - content: "How does the integration of AI into Microsoft Teams enhance accessibility for learners with person with a hearing disability, ADHD, or individuals operating in noisy environments?"
+      choices:
+        - content: "It enhances accessibility by replacing the need for listening and benefits learners by ensuring they can maintain focus in real-time."
+          isCorrect: false
+          explanation: "Incorrect. AI enhances accessibility by providing features such as speech transcription and captioning, not by replacing listening."
+        - content: "It enhances accessibility by ensuring all learners have the same level of understanding and benefits learners by guaranteeing high grades."
+          isCorrect: false
+          explanation: "Incorrect. AI enhances accessibility by providing features such as speech transcription and captioning, not by ensuring the same level of understanding or guaranteeing high grades."
+        - content: "It enhances accessibility by transcribing and captioning meetings and calls, and benefits learners by relieving the pressure to maintain focus in real-time."
+          isCorrect: true
+          explanation: "Correct. AI enhances accessibility by transcribing and captioning meetings and calls. Benefits for learners are achieved by relieving the pressure to maintain focus in real-time."

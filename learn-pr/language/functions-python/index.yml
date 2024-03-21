@@ -27,8 +27,6 @@ roles:
   - student
 products: 
   - azure
-subjects:
-- development-tools
 units:
 - learn.beginner-python.functions-python.introduction
 - learn.beginner-python.functions-python.function-basics

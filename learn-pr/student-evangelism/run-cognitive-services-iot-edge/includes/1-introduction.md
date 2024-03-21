@@ -6,7 +6,7 @@ Suppose you're assigned to an earthquake-affected area, and you're tasked with c
 
 ![The illustration shows how to run Azure AI services on the IoT Edge device based on the scenario.](../media/scenario-image.png)
 
-Previously, the doctors had to wait until the appropriate person who spoke the language became available. It wasn't always easy to find the appropriate person in a disaster situation. So, you would like to use an app/service that could run offline if needed. The app would identify the language of medicine. If such a device were available, you could create a safer solution, which also optimizes precious time. The solution needs to employ Azure AI services (language detection) on edge devices as a part of the broader ‘AI for Good’ effort in the disaster zone.
+Previously, the doctors had to wait until the appropriate person who spoke the language became available. It wasn't always easy to find the appropriate person in a disaster situation. So, you would like to use an app/service that could run offline if needed. The app would identify the language of medicine. If such a device were available, you could create a safer solution, which also optimizes precious time. The solution needs to employ Azure AI services (language detection) on edge devices as a part of the broader *AI for Good* effort in the disaster zone.
 
 ## Learning objectives
 

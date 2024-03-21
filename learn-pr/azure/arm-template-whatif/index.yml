@@ -4,9 +4,9 @@ metadata:
   title: Preview Azure deployment changes by using what-if
   description: Apply the what-if command to see the effect of a deployment before it's applied.
   ms.date: 08/22/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
+  author: mumian
+  ms.author: jgao
+  ms.topic: module
   ms.custom: team=nextgen
 title: Preview Azure deployment changes by using what-if
 summary: |

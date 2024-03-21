@@ -7,7 +7,7 @@ metadata:
   author: juliakm
   ms.author: jukullam
   ms.custom: devdivchpfy22
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-devops
   manager: mijacobs
 title: Implement a code workflow in your build pipeline by using Git and GitHub
@@ -35,8 +35,6 @@ roles:
 - solution-architect
 products:
 - azure-devops
-subjects:
-- development-tools
 units:
 - learn.azdo.implement-code-workflow.1-introduction
 - learn.azdo.implement-code-workflow.2-choose-a-code-flow-strategy

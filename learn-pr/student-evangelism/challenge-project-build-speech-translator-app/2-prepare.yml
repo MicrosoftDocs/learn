@@ -3,12 +3,12 @@ uid: learn.student-evangelism.challenge-project-build-speech-translator-app.prep
 title: Prepare
 metadata:
   title: Prepare
-  description: "Prepare"
-  ms.date: 10/2/2023
+  description: "Prepare."
+  ms.date: 12/13/2023
   author: theoyinbooke
-  ms.author: ooyinbooke
+  ms.author: somelezediko
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/2-prepare.md)]

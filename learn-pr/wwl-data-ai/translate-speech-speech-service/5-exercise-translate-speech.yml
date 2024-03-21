@@ -6,10 +6,10 @@ metadata:
   description: "Exercise - Translate speech"
   ms.date: 08/31/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: unit
   ms.service: azure-ai-speech
-labId: 96281
+labId: 152399
 labModal: true
 durationInMinutes: 30
 content: |

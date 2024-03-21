@@ -7,4 +7,4 @@ In this exercise, you’ll learn how to preprocess data using Data Wrangler in M
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/08b-data-science-preprocess-data-wrangler.html?azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2259793&azure-portal=true)

@@ -6,7 +6,7 @@ metadata:
   ms.date: 07/11/2023
   author: dlepow
   ms.author: danlep
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: api-management
 title: Improve the performance of an API by adding a caching policy in Azure API Management
 summary: |

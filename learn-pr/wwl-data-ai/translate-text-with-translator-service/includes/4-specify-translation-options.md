@@ -1,4 +1,3 @@
-
 The **Translate** function of the API supports numerous parameters that affect the output.
 
 ## Word alignment

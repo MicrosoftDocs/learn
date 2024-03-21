@@ -15,8 +15,8 @@ This module guides you through implementing a feature flags library. This librar
 
 ## Prerequisites
 
-- Familiarity with C# and ASP.NET Core development at the beginner level
-- Familiarity with RESTful service concepts at the beginner level
-- Conceptual knowledge of containers
-- Access to an Azure subscription with **Owner** privilege
-- Ability to run development containers in Visual Studio Code or GitHub Codespaces
+- Familiarity with C# and ASP.NET Core development at the beginner level.
+- Familiarity with RESTful service concepts at the beginner level.
+- Conceptual knowledge of containers.
+- Access to an Azure subscription with **Owner** privilege.
+- Ability to run development containers in Visual Studio Code or GitHub Codespaces.

@@ -8,8 +8,7 @@ metadata:
   ms.date: 03/08/2023
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/2-what-is-azure-advisor.md)]

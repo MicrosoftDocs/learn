@@ -4,11 +4,12 @@ title: Examine agents and agent pools for pipelines
 metadata:
   title: Examine agents and agent pools for pipelines
   description: "Examine agents and agent pools for pipelines"
-  ms.date: 11/07/2023
+  ms.date: 02/29/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: module
-  ms.prod: azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 9
 content: |
   [!include[](includes/5-examine-agents-agent-pools-pipelines.md)]

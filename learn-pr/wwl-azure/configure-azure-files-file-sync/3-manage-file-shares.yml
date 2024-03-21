@@ -4,10 +4,12 @@ title: Manage Azure file shares
 metadata:
   title: Manage Azure file shares
   description: "Manage Azure file shares"
-  ms.date: 10/04/2023
+  ms.date: 02/29/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/3-manage-file-shares.md)]

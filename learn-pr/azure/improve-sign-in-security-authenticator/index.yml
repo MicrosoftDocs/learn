@@ -4,20 +4,21 @@ metadata:
   moduleType: standard
   title: Improve sign-in security with Microsoft Authenticator
   description: "Improve Microsoft Entra sign-in security by running a registration campaign to nudge users to set up Microsoft Authenticator push notifications as their default sign-in method."
-  ms.date: 7/27/2022
+  ms.date: 02/29/2024
   author: Justinha
   ms.author: Justinha
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: azure
 title: Improve sign-in security with Microsoft Authenticator
-summary: Make it easy for users who sign in with less secure methods like voice calls or SMS to set up Microsoft Authenticator. Walk through the user experience and validate that push notifications are their new default sign-in method.
+summary: In this module, you'll learn how to make it easy for users who sign in with less secure methods like voice calls or SMS to set up Microsoft Authenticator. You'll also walk through the user experience and validate that push notifications are their new default sign-in method.
 abstract: |
   By the end of this module, you'll be able to:
     - Explain why Microsoft Authenticator provides better security than authentication methods like SMS or voice call.
     - Create a policy to help users register Microsoft Authenticator.
     - Confirm Microsoft Authenticator is the default sign-in method for users.
 prerequisites: |
-  - Experience using the Microsoft Entra admin center.
-  - Knowledge of Microsoft Entra fundamentals, including multifactor authentication (MFA).
+  - Experience using the Microsoft Entra admin center
+  - Knowledge of Microsoft Entra fundamentals, including multifactor authentication (MFA)
 iconUrl: /training/achievements/generic-badge.svg
 levels: 
   - beginner

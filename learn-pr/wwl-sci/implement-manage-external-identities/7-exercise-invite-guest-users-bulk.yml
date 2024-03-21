@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
-  ms.prod: azure
+  ms.service: azure
 durationInMinutes: 7
 content: |
   [!include[](includes/7-exercise-invite-guest-users-bulk.md)]

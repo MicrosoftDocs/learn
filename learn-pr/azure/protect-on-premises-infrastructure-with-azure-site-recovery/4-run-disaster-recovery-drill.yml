@@ -22,7 +22,7 @@ quiz:
     - content: The measure of the time between the disaster starting and the business recovering from the disaster.
       isCorrect: false
       explanation: This measurement has no bearing on an RTO.
-    - content: The measure of the maximum amount of data loss that's acceptable after a disaster.
+    - content: The measure of the maximum amount of time your business can survive after a disaster until normal service must be restored.
       isCorrect: true
       explanation: An RTO is the amount of time that data can be lost via an outage before it impacts the company significantly.
     - content: The measure of the maximum amount of data that's recoverable from a backup.

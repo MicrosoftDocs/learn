@@ -4,6 +4,10 @@ A container orchestrator is a system that automatically deploys and manages cont
 
 In this module, you learned how to take a .NET application that was already partitioned into containerized microservices and deploy it into a Kubernetes environment. You first pushed the Docker images to Docker Hub to make the images available to the Kubernetes instance to download, then created deployment files to describe declaratively what Kubernetes should do to each microservice. You also learned how straightforward it is to scale a containerized microservice using Kubernetes.
 
+## Cleanup Codespace
+
+You can delete the codespace on [GitHub](https://github.com/codespaces) under **By repository** where you see **MicrosoftDocs/mslearn-dotnet-cloudnative**.
+
 ## References
 
 The following are great resources to learn more about deploying .NET microservices:

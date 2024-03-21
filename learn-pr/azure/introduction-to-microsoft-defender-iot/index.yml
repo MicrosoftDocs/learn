@@ -8,7 +8,7 @@ metadata:
   author: batamig
   manager: raynew
   ms.author: bagol
-  ms.topic: module
+  ms.topic: module-intro-to-product
   ms.service: defender-for-iot
 title: Introduction to Microsoft Defender for IoT
 summary: "Evaluate whether Microsoft Defender for IoT is the right service for your organization's business scenarios. Learn about Defender for IoT components and features and how they support operational technology (OT) and IoT device security monitoring."

@@ -1,5 +1,4 @@
-
-Often, when you write code, you need to consult official documentation, or other web pages, to remember syntax or how to solve a problem. You can also spend hours trying to resolve a problem when the code isn't working. Additionally, you also spend time writing tests and documentation. All these tasks are time consuming and to be more efficient you could use code snippets or rely on tooling in your IDE, integrated development environment, but is there a better way?
+Often, when you write code, you need to consult official documentation or other web pages to remember syntax or how to solve a problem. You can also spend hours trying to resolve a problem when the code isn't working. Additionally, you also spend time writing tests and documentation. All these tasks are time consuming and to be more efficient you could use code snippets or rely on tooling in your IDE, integrated development environment, but is there a better way?
 
 ## How does it work?
 
@@ -30,20 +29,19 @@ Type text in a markdown file and wait for Copilot to return a response within a 
 
 ## Accepting suggestions
 
-What’s you’re getting back from Copilot is a suggestion, text that shows itself as grey code, if you use black as your text color. To accept the suggestion, you need to press the “Tab” key.
+What you’re getting back from Copilot is a suggestion, text that shows itself as grey code, if you use black as your text color. To accept the suggestion, you need to press the “Tab” key.
 
-Copilot might suggest more than one thing and it’s possible to cycle between suggestion using “ctrl + enter” key and select the most appropriate one.
-
+Copilot might suggest more than one thing, and you can to cycle between suggestion using <kbd>Ctrl + Enter</kbd> key and select the most appropriate one.
 
 ## How to set up GitHub Copilot
 
 To use GitHub Copilot, you need the following:
 
-Create a GitHub account, as Copilot is a GitHub service, you need a GitHub account to use the service.
+Create a GitHub account: as Copilot is a GitHub service, you need a GitHub account to use the service.
 
-Sign up, you need to sign up for Copilot via its web page.
+Sign up: you need to sign up for Copilot via its web page.
 
-In GitHub select on your profile then head over to settings where under Copilot you can enable access or sign up for a free trial.
+In GitHub, select your profile, then select **Settings**. Under **Copilot**, you can enable access or sign up for a free trial.
 
 To use GitHub Copilot, you need to install it as an extension into your IDE.
 

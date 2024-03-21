@@ -8,7 +8,6 @@ metadata:
   author: msakande
   ms.author: mopeakande
   ms.topic: unit
-  ms.prod: learning-azure
 durationInMinutes: 10
 sandbox: true
 notebook: notebooks/1-5-exercise-improve-models.ipynb

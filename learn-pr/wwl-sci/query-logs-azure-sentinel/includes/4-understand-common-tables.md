@@ -6,7 +6,7 @@ When Sentinel ingests data from the Data Connectors, the following table lists t
 | AzureDiagnostics| Stores resource logs for Azure services that use Azure Diagnostics mode. Resource logs describe the internal operation of Azure resources.|
 | AuditLogs| Audit log for Microsoft Entra ID. Includes system activity information about user and group management, managed applications, and directory activities.|
 | CommonSecurityLog| Syslog messages using the Common Event Format (CEF).|
-| McasShadowItReporting| Microsoft Cloud App Security logs|
+| McasShadowItReporting| Microsoft Defender for Cloud Apps logs|
 | OfficeActivity| Audit logs for Office 365 tenants collected by Microsoft Sentinel. Including Exchange, SharePoint and Teams logs.|
 | SecurityEvent| Security events collected from windows machines by Azure Security Center or Microsoft Sentinel|
 | SigninLogs| Azure Activity Directory Sign-in logs|

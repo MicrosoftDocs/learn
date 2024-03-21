@@ -1,8 +1,8 @@
-To create an Azure Cognitive Search solution, you need to create an **Azure Cognitive Search** resource in your Azure subscription. Depending on the specific solution you intend to build, you may also need Azure resources for data storage and other application services.
+To create an Azure AI Search solution, you need to create an **Azure AI Search** resource in your Azure subscription. Depending on the specific solution you intend to build, you may also need Azure resources for data storage and other application services.
 
 ## Service tiers and capacity management
 
-When you create an Azure Cognitive Search resource, you must specify a *pricing tier*. The pricing tier you select determines the capacity limitations of your search service and the configuration options available to you, as well as the cost of the service. The available pricing tiers are:
+When you create an Azure AI Search resource, you must specify a *pricing tier*. The pricing tier you select determines the capacity limitations of your search service and the configuration options available to you, as well as the cost of the service. The available pricing tiers are:
 
 - **Free (F)**. Use this tier to explore the service or try the tutorials in the product documentation.
 - **Basic (B)**: Use this tier for small-scale search solutions that include a maximum of 15 indexes and 2 GB of index data.
@@ -10,7 +10,7 @@ When you create an Azure Cognitive Search resource, you must specify a *pricing 
 - **Storage Optimized (L)**: Use a storage optimized tier (**L1** or **L2**) when you need to create large indexes, at the cost of higher query latency.
 
 > [!NOTE]
-> It's important to select the most suitable pricing tier for your solution, because you can't change it later. If you find that the pricing tier you have chosen is no longer suitable for your solution, you must create a new Azure Cognitive Search resource and recreate all indexes and objects.
+> It's important to select the most suitable pricing tier for your solution, because you can't change it later. If you find that the pricing tier you have chosen is no longer suitable for your solution, you must create a new Azure AI Search resource and recreate all indexes and objects.
 
 ### Replicas and partitions
 
@@ -23,4 +23,4 @@ Depending on the pricing tier you select, you can optimize your solution for sca
 The combination of replicas and partitions you configure determines the *search units* used by your solution. Put simply, the number of search units is the number of replicas multiplied by the number of partitions (R x P = SU). For example, a resource with four replicas and three partitions is using 12 search units.
 
 > [!TIP]
-> You can learn more about pricing tiers and capacity management in the [Azure Cognitive Search documentation](/azure/search/search-sku-tier).
+> You can learn more about pricing tiers and capacity management in the [Azure AI Search documentation](/azure/search/search-sku-tier).

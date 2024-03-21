@@ -8,7 +8,9 @@ metadata:
   author: graememalcolm
   ms.author: gmalc
   ms.topic: unit
-  ms.prod: learning-azure
 durationInMinutes: 25
+azureSandbox: false
+labId: 152389
+labModal: true
 content: |
   [!include[](includes/5-exercise-use-dall-e.md)]

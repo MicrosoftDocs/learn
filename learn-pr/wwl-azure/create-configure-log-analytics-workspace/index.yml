@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
-  ms.prod: learning-azure
+  ms.service: azure
 title: Create and configure a Log Analytics workspace
 summary: Understand how to create and configure a Log Analytics workspace, and how to configure data retention and health status alerts for the workspace.
 abstract: |

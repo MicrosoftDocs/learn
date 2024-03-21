@@ -6,8 +6,8 @@ metadata:
   title: Publish your repository to enable collaboration
   description: Learn how to publish your Git repository to GitHub or Azure Repos.
   ms.date: 01/23/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
   ms.custom:
     - devx-track-bicep

@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: module
-  ms.prod: azure
   ms.service: azure-devops-pipelines
   ms.subservice: azure-devops-pipelines-release
 title: Create a release pipeline

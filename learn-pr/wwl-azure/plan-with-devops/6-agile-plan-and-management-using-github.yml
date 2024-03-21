@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-with-devops.agile-plan-and-management-using-github
+title: Agile plan and management using GitHub
+metadata:
+  title: Agile plan and management using GitHub
+  description: "This lab gives you the opportunity to create a GitHub repo, associated milestones and issues, a project, and project board."
+  ms.date: 2/22/2024
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 40
+content: |
+  [!include[](includes/6-agile-plan-and-management-using-github.md)]

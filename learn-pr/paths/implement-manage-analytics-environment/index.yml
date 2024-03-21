@@ -25,12 +25,8 @@ subjects:
 - data-management
 modules:
 - learn-bizapps.power-bi-admin-governance
-- learn-bizapps.power-bi-admin-collaboration
 - learn-bizapps.power-bi-admin-monitor
-- learn-bizapps.power-bi-admin-premium
-- learn-bizapps.power-bi-admin-infrastructure
 - learn-bizapps.power-bi-admin-reach
-- learn-bizapps.power-bi-admin-automate
 - learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics
 trophy:
   uid: learn.wwl.implement-manage-analytics-environment.trophy

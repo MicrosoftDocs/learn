@@ -4,11 +4,10 @@ title: Explore AI goals and challenges in healthcare
 metadata:
   title: Explore AI goals and challenges in healthcare
   description: "Explore AI goals and challenges in healthcare"
-  ms.date: 10/06/2023
+  ms.date: 11/30/2023
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.service: azure-ai-services
-durationInMinutes: 3
+  ms.topic: unit
+durationInMinutes: 9
 content: |
   [!include[](includes/2-explore-ai-goals-challenges-healthcare.md)]

@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/20/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Manage Azure resources with Windows PowerShell
 summary: This module explains how to install the necessary modules for cloud services management and use PowerShell commands to perform simple administrative tasks on cloud resources like Azure virtual machines, Azure subscriptions and Azure storage accounts.
 abstract: |
@@ -38,7 +38,6 @@ products:
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

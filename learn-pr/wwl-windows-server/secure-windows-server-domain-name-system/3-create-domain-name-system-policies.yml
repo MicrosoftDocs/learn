@@ -4,12 +4,10 @@ title: Create DNS policies
 metadata:
   title: Create DNS policies
   description: "Create DNS policies"
-  ms.date: 10/20/2021
+  ms.date: 12/12/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-azureSandbox: false
-labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/3-create-domain-name-system-policies.md)]

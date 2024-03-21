@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-copilot-ai-studio.search-data
+title: Make your data searchable
+metadata:
+  title: Make your data searchable
+  description: "Learn how to use Azure AI Search to make your data searchable and create an index."
+  ms.date: 02/21/2024
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-search-data.md)]

@@ -37,8 +37,6 @@ roles:
 products:  
   - azure
   - azure-app-service
-subjects:
-- development-tools
 units:
 - learn.django.views-templates.introduction 
 - learn.django.views-templates.exercise-setup 

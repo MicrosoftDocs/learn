@@ -16,6 +16,3 @@ Review the following characteristics of the network topology capability in Azure
 
 - To generate a topology, you need an Azure Network Watcher instance in the same region as the virtual network.
 
-### How to troubleshoot the most common issues on Azure resources
-
-> [!Video https://www.youtube.com/embed/FgfcSdHErus]

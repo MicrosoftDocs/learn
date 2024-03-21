@@ -5,6 +5,11 @@ achievements:
 #  title: Module template
 #  summary: Module template badge.
 #  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.monitor-vm-performance-using-azure-monitor-for-vms.badge
+  type: badge
+  title: Monitor performance of virtual machines by using Azure Monitor VM Insights
+  summary: Monitor performance of virtual machines by using Azure Monitor VM Insights
+  iconUrl: /training/achievements/monitor-performance-using-azure-monitor-for-vms.svg
 - uid: learn.make-your-virtual-machines-highly-available.badge
   type: badge
   title: Make your virtual machines highly available
@@ -15,6 +20,16 @@ achievements:
   title: Scale and size Virtual Machines in Azure
   summary: Scale and size Virtual Machines in Azure
   iconUrl: /training/achievements/scale-and-size-virtual-machines.svg
+- uid: learn.quantum.qsharp-explore-key-concepts-quantum-computing.badge
+  type: badge
+  title: Explore the key concepts of quantum computing by using Q#
+  summary: Explore the key concepts of quantum computing by using Q#
+  iconUrl: /training/achievements/quantum/qsharp-explore-key-concepts-quantum-computing.svg
+- uid: learn.quantum.use-qsharp-libraries.badge
+  type: badge
+  title: Use the Q# libraries
+  summary: Use the Q# libraries
+  iconUrl: /training/achievements/quantum/use-quantum-libraries.svg
 - uid: learn.authenticate-browser-based-apps-with-azure-app-services.badge
   type: badge
   title: Authenticate browser-based apps with Azure App Services
@@ -225,12 +240,12 @@ achievements:
 - uid: learn.wwl.distinguish-types-cloud-models.badge
   type: badge
   title: Distinguish types of cloud models
-  summary: There are three different cloud deployment models 'Public Cloud, Private Cloud, and Hybrid Cloud'. This module will enable you to decide how to work with different types of cloud deployments.
+  summary: There are three different cloud deployment models 'Public Cloud, Private Cloud, and Hybrid Cloud'. This module enables you to decide how to work with different types of cloud deployments.
   iconUrl: /training/achievements/distinguish-types-cloud-models.svg
 - uid: learn.wwl.explore-types-cloud-services.badge
   type: badge
   title: Explore types of cloud services
-  summary: When talking about cloud computing, there are three major categories 'IaaS, SaaS, and PaaS'. This module will assist with using them in conversation, documentation, and training.
+  summary: When talking about cloud computing, there are three major categories 'IaaS, SaaS, and PaaS'. This module assists with using them in conversation, documentation, and training.
   iconUrl: /training/achievements/explore-types-cloud-services.svg
 - uid: learn.wwl.discuss-core-azure-architectural-components.badge
   type: badge
@@ -240,17 +255,17 @@ achievements:
 - uid: learn.wwl.define-core-azure-services-products.badge
   type: badge
   title: Define core Azure services and products
-  summary: In this module we'll learn about compute services, the use of virtual machines, and containers. We'll identify networking services such as Virtual Network, Azure Load Balancer, VPN Gateway, Application Gateway, and Azure Content Delivery Network.
+  summary: In this module we learn about compute services, the use of virtual machines, and containers. We identify networking services such as Virtual Network, Azure Load Balancer, VPN Gateway, Application Gateway, and Azure Content Delivery Network.
   iconUrl: /training/achievements/define-core-azure-services-products.svg
 - uid: learn.wwl.identify-azure-solutions.badge
   type: badge
   title: Identify Azure solutions
-  summary: In this module we’ll discuss solutions such as IoT, Azure IoT Hub, and Microsoft IoT Central. We’ll also explore big data analytics services (Azure SQL Data Warehouse, HDInsight, Azure Data Lake Analytics).
+  summary: In this module we discuss solutions such as IoT, Azure IoT Hub, and Microsoft IoT Central. We also explore big data analytics services (Azure SQL Data Warehouse, HDInsight, Azure Data Lake Analytics).
   iconUrl: /training/achievements/identify-azure-solutions.svg
 - uid: learn.wwl.differentiate-azure-management-tools.badge
   type: badge
   title: Differentiate Azure management tools
-  summary: In this module, we'll showcase Azure portal, Azure PowerShell, Azure CLI, and Azure Cloud Shell. We'll also look at Azure Advisor, which provides recommendations on high availability, security, performance, and cost.
+  summary: In this module, we'll showcase Azure portal, Azure PowerShell, Azure CLI, and Azure Cloud Shell. We also look at Azure Advisor, which provides recommendations on high availability, security, performance, and cost.
   iconUrl: /training/achievements/differentiate-azure-management-tools.svg
 - uid: learn.store-and-share-with-azure-files.badge
   type: badge
@@ -275,7 +290,7 @@ achievements:
 - uid: learn.wwl.explore-azure-service-level-agreements.badge
   type: badge
   title: Explore Azure service level agreements (SLAs)
-  summary: You are placing an application into a cloud-providers hardware versus on-premises.  How reliable will your solution be?
+  summary: You're placing an application into a cloud-providers hardware versus on-premises.  How reliable will your solution be?
   iconUrl: /training/achievements/explore-azure-service-level-agreements.svg
 - uid: learn.wwl.examine-service-lifecycle-azure.badge
   type: badge
@@ -285,7 +300,7 @@ achievements:
 - uid: learn.wwl.review-security-tools-features.badge
   type: badge
   title: Review security tools and features
-  summary: Discuss the basic concepts for protecting your infrastructure and data when you work in the cloud. This module will help you understand the core security tools available to support you.
+  summary: Discuss the basic concepts for protecting your infrastructure and data when you work in the cloud. This module helps you understand the core security tools available to support you.
   iconUrl: /training/achievements/review-security-tools-features.svg
 - uid: learn.wwl.describe-azure-governance-methodologies.badge
   type: badge
@@ -295,7 +310,7 @@ achievements:
 - uid: learn.wwl.explore-monitoring-reporting.badge
   type: badge
   title: Explore monitoring and reporting
-  summary: Monitoring your solutions once you have built and deployed them in Azure is a necessary work item.  Azure provides a solid set of tools to support you in the process.
+  summary: Monitoring your solutions once you build and deploy them in Azure is a necessary work item.  Azure provides a solid set of tools to support you in the process.
   iconUrl: /training/achievements/explore-monitoring-reporting.svg
 - uid: learn.wwl.examine-privacy-compliance-data-protection-standards.badge
   type: badge
@@ -325,7 +340,7 @@ achievements:
 - uid: learn.intro-to-data-in-azure.badge
   type: badge
   title: Core Cloud Services - Azure data storage options
-  summary: In this module, we'll explore the benefits of Azure data storage versus on-premises storage.
+  summary: In this module, we explore the benefits of Azure data storage versus on-premises storage.
   iconUrl: /training/achievements/intro-to-data-in-azure.svg
 - uid: learn.intro-to-governance.badge
   type: badge
@@ -430,7 +445,7 @@ achievements:
 - uid: learn.data-ai.intro-to-azure-dsvm
   type: badge
   title: Introduction to the Azure Data Science Virtual Machine
-  summary: Azure provides some pre-configured virtual machine images specifically designed for data science.  Learn how you can use these to get a jump start on your data science work.
+  summary: Azure provides some preconfigured virtual machine images specifically designed for data science.  Learn how you can use these to get a jump start on your data science work.
   iconUrl: /training/achievements/data-ai/intro-to-azure-dsvm-badge.svg
 - uid: learn.wwl.synthesize-text-input-speech.badge
   type: badge
@@ -450,7 +465,7 @@ achievements:
 - uid: learn.data-ai.get-started-with-azure-dsvm.trophy
   type: trophy
   title: Get started with Machine Learning with an Azure Data Science Virtual Machine
-  summary: Azure includes a pre-configured virtual machine service for performing Data Science tasks. Learn how to use the Azure Data Science Virtual Machine to do common data analysis and machine learning tasks.
+  summary: Azure includes a preconfigured virtual machine service for performing Data Science tasks. Learn how to use the Azure Data Science Virtual Machine to do common data analysis and machine learning tasks.
   iconUrl: /training/achievements/data-ai/get-started-with-azure-dsvm-trophy.svg
 - uid: learn.data-science.trophy
   type: trophy
@@ -464,8 +479,8 @@ achievements:
   iconUrl: /training/achievements/modern-data-warehouse.svg
 - uid: learn.data-ai.publish-experiment-with-ml-studio.trophy
   type: trophy
-  title: Publish a Machine Learning Experiment with Microsoft Azure Machine Learning Studio
-  summary: Machine Learning plays a big role in applications that leverage artificial intelligence. Microsoft provides the Machine Learning Studio and Machine Learning Services that help you take advantage of pre-built models or create your own custom machine learning models. Learn how to create an account in Azure Machine Learning Studio, create a sample experiment, and then publish and deploy the experiment for consumption as a web service.
+  title: Publish a Machine Learning Experiment with Microsoft Azure Machine Learning studio
+  summary: Machine Learning plays a significant role in applications that leverage artificial intelligence. Microsoft provides the Machine Learning Studio and Machine Learning Services that help you take advantage of prebuilt models or create your own custom machine learning models. Learn how to create an account in Azure Machine Learning studio, create a sample experiment, and then publish and deploy the experiment for consumption as a web service.
   iconUrl: /training/achievements/data-ai/publish-experiment-with-ml-studio.svg
 - uid: learn.data-ai.explore-data-science-tools-in-azure.trophy
   type: trophy
@@ -500,7 +515,7 @@ achievements:
 - uid: learn.performing-text-analytics-with-azure-databricks
   type: badge
   title: Perform text analytics with Azure Databricks
-  summary: In this module, you'll investigate techniques for developing machine learning models used in text analytics. You'll do this by applying two different text analytics scenarios demonstrating some of its most important aspects - movie classification and claim classification.
+  summary: In this module, you investigate techniques for developing machine learning models used in text analytics. You do this by applying two different text analytics scenarios demonstrating some of its most important aspects - movie classification and claim classification.
   iconUrl: /training/achievements/performing-text-analytics-with-azure-databricks.svg
 - uid: learn.data-ingestion-with-azure-data-factory
   type: badge
@@ -510,7 +525,7 @@ achievements:
 - uid: learn.deep-learning-in-azure-databricks
   type: badge
   title: Deep learning with Azure Databricks
-  summary: In this module, you'll investigate techniques for developing machine-learning models based on neural networks. The main purpose of this module is to build your understanding of deep learning.
+  summary: In this module, you investigate techniques for developing machine-learning models based on neural networks. The main purpose of this module is to build your understanding of deep learning.
   iconUrl: /training/achievements/deep-learning-in-azure-databricks.svg
 - uid: learn.streaming-in-azure-databricks
   type: badge
@@ -539,13 +554,13 @@ achievements:
   iconUrl: /training/achievements/perform-advanced-data-transformation-in-azure-databricks.svg
 - uid: learn.data-ai.create-an-experiment-in-ml-studio
   type: badge
-  title: Create an Experiment in Azure Machine Learning Studio
-  summary: Learn how to use Microsoft Azure Machine Learning Studio to create an experiment, test it, and then publish it as a web service.
+  title: Create an Experiment in Azure Machine Learning studio
+  summary: Learn how to use Microsoft Azure Machine Learning studio to create an experiment, test it, and then publish it as a web service.
   iconUrl: /training/achievements/data-ai/create-an-experiment-in-ml-studio.svg
 - uid: learn.data-ai.create-machine-learning-studio-account
   type: badge
-  title: Create an Azure Machine Learning Studio Account
-  summary: Get a high-level overview of machine learning and Microsoft Azure Machine Learning Studio.
+  title: Create an Azure Machine Learning studio account
+  summary: Get a high-level overview of machine learning and Microsoft Azure Machine Learning studio.
   iconUrl: /training/achievements/data-ai/create-machine-learning-studio-account.svg
 - uid: learn.data-ai.choose-azure-data-science-option
   type: badge
@@ -555,12 +570,12 @@ achievements:
 - uid: learn.data-ai.intro-to-data-science-in-azure
   type: badge
   title: Introduction to Data Science in Azure
-  summary: In this module, you'll learn about the Data Science process from end to end.  You'll see that there are several specialized roles involved.
+  summary: In this module, you learn about the Data Science process from end to end.  You see that there are several specialized roles involved.
   iconUrl: /training/achievements/data-ai/intro-to-data-science-in-azure-badge.svg
 - uid: learn.data-ai.explore-azure-dsvm-types
   type: badge
   title: Explore the types of Azure Data Science Virtual Machines
-  summary: You learn about the types of Azure Data Science Virtual Machines (DSVM) and when to use each type.  You'll learn about the Windows-based and Linux-based DSVMs which each support different needs.
+  summary: You learn about the types of Azure Data Science Virtual Machines (DSVM) and when to use each type.  You learn about the Windows-based and Linux-based DSVMs which each support different needs.
   iconUrl: /training/achievements/data-ai/explore-azure-dsvm-types-badge.svg
 - uid: learn.data-ai.provision-and-use-azure-dsvm
   type: badge
@@ -720,7 +735,7 @@ achievements:
 - uid: learn.data-ai.create-and-publish-a-luis-model.badge
   type: badge
   title: Add conversational intelligence to your apps by using Language Understanding Intelligent Service (LUIS)
-  summary: In this module, we'll introduce you to Language Understanding Intelligent Service (LUIS) and show how to create a LUIS application.
+  summary: In this module, we introduce you to Language Understanding Intelligent Service (LUIS) and show how to create a LUIS application.
   iconUrl: /training/achievements/data-ai/create-and-publish-a-luis-model.svg
 - uid: learn.wwl.build-chat-bot-with-azure-portal.badge
   type: badge
@@ -762,6 +777,11 @@ achievements:
   title: Java on Azure
   summary: Start here and learn how you can build, migrate, and scale Java applications on Azure using Azure services. Use tools and frameworks that you know and love - Spring, Tomcat, WildFly, JBoss, WebLogic, WebSphere, Maven, Gradle, IntelliJ, Eclipse, Jenkins, Terraform and more.
   iconUrl: /training/achievements/java-on-azure.svg
+- uid: learn.visual-studio.visual-studio-intro.badge
+  type: badge
+  title: Introduction to Visual Studio
+  summary: Evaluate what Visual Studio can add to your development experience with tools like the advanced editor, debugger, code-sharing, and publishing tools.
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.develop-solutions-with-azure-iot-central.trophy
   type: trophy
   title: Develop IoT solutions with Azure IoT Central
@@ -817,6 +837,16 @@ achievements:
   title: Set up an IoT Edge Gateway
   summary: Set up an IoT Edge Gateway
   iconUrl: /training/achievements/set-up-iot-edge-gateway.svg
+- uid: learn.wwl.monitor-troubleshoot-iot-solution-by-using-azure-monitor.trophy
+  type: trophy
+  title: Monitor and troubleshoot an IoT solution by using Azure Monitor
+  summary: You will learn about the solution monitoring tools available in Azure and how to apply them to the IoT Hub service, and how to create event logs that can be used to help troubleshoot your solution.
+  iconUrl: /training/achievements/azure-monitor-troubleshoot-solution.svg
+- uid: learn.wwl.manage-iot-devices-by-using-iot-hub-apps.trophy
+  type: trophy
+  title: Manage IoT devices by using IoT Hub and apps
+  summary: You will learn about device management patterns and the capabilities for device management, including bulk device management that can be implemented using features of IoT Hub and by developing code.
+  iconUrl: /training/achievements/iot-hub-devices-apps.svg
 - uid: learn.iot.automate-iot-devices-management-with-azure-iot-hub.badge
   type: badge
   title: Automate IoT devices management with Azure IoT Hub
@@ -882,6 +912,16 @@ achievements:
   title: Explore the Azure portal
   summary: This module introduces you to features of the Azure portal and provides you with experience configuring, navigating, and customizing the Azure portal UI.
   iconUrl: /training/achievements/azure-portal-explore.svg
+- uid: learn.advocates.responsible-bots.badge
+  type: badge
+  title: Create a chatbot to help students learn geography
+  summary: Learn how to build a basic bot that helps students with geography facts.
+  iconUrl: /training/achievements/advocates/responsible-bots.svg
+- uid: learn.advocates.responsible-bots-introduction.badge
+  type: badge
+  title: Introduction to responsible bots
+  summary: Find out how to make a bot responsible. Learn about responsible conversational AI. Discover Azure AI services tools that help make bots engaging and trustworthy.
+  iconUrl: /training/achievements/responsible-bots-introduction.svg
 - uid: learn.wwl.explore-azure-iot-services.badge
   type: badge
   title: Explore Azure IoT services
@@ -890,7 +930,7 @@ achievements:
 - uid: learn.wwl.create-azure-iot-services-azure-portal.trophy
   type: trophy
   title: Create Azure IoT services in the Azure portal
-  summary: Learners will become familiar with the Azure portal to the Azure resources that are available for an IoT solution. Learners will step through the process of creating IoT Hub and Device Provisioning Service resources.
+  summary: Learners become familiar with the Azure portal to the Azure resources that are available for an IoT solution. Learners step through the process of creating IoT Hub and Device Provisioning Service resources.
   iconUrl: /training/achievements/azure-iot-azure-portal.svg
 - uid: learn.wwl.examine-iot-hub-properties.badge
   type: badge
@@ -915,7 +955,7 @@ achievements:
 - uid: learn.wwl.implement-iot-device-communication-by-using-azure-iot-sdks.trophy
   type: trophy
   title: Implement IoT device communication by using the Azure IoT SDKs
-  summary:  You will learn about the IoT Hub service properties and limitations, the IoT device lifecycle, Azure IoT developer tools, and then you will implement communication between an IoT device and IoT Hub.
+  summary:  Learn about the IoT Hub service properties and limitations, the IoT device lifecycle, Azure IoT developer tools, and implement communication between an IoT device and IoT Hub.
   iconUrl: /training/achievements/iot-device-communication.svg
 - uid: learn.wwl.examine-business-integration-for-iot-solutions.badge
   type: badge
@@ -945,7 +985,7 @@ achievements:
 - uid: learn.wwl.develop-data-insights-business-integrations.trophy
   type: trophy
   title: Develop data insights and business integrations
-  summary: You will learn about the tools and services that can be used to develop data insights and implement business integration, including Azure Event Grid, Azure Logic Apps, and Azure Time Series Insights.
+  summary: Learn about the tools and services that can be used to develop data insights and implement business integration, including Azure Event Grid, Azure Logic Apps, and Azure Time Series Insights.
   iconUrl: /training/achievements/data-insights-business-integration.svg
 - uid: learn.wwl.examine-azure-iot-edge-environment.badge
   type: badge
@@ -975,7 +1015,7 @@ achievements:
 - uid: learn.wwl.deploy-azure-iot-edge-devices-modules.trophy
   type: trophy
   title: Deploy Azure IoT Edge devices and modules
-  summary:   You will learn about the benefits provided by Azure IoT Edge, the IoT Edge runtime environment, IoT Edge device deployments, and IoT Edge gateway device patterns and capabilities.
+  summary:   Learn about the benefits provided by Azure IoT Edge, the IoT Edge runtime environment, IoT Edge device deployments, and IoT Edge gateway device patterns and capabilities.
   iconUrl: /training/achievements/iot-edge-deploy-devices-modules.svg
 - uid: learn.wwl.examine-iot-edge-module-development.badge
   type: badge
@@ -1140,7 +1180,7 @@ achievements:
 - uid: learn.wwl.describe-endpoint-security-with-microsoft-intune.badge
   type: badge
   title: Describe endpoint security with Microsoft Intune
-  summary: Learn how Microsoft Intune provides endpoint security. Topics include security baselines, compliance policies, integration with Microsoft 365 Defender for Endpoint, more.  Also, explore the Microsoft Endpoint Manager admin portal.
+  summary: Learn how Microsoft Intune provides endpoint security. Topics include security baselines, compliance policies, integration with Microsoft Defender XDR for Endpoint, more.  Also, explore the Microsoft Endpoint Manager admin portal.
   iconUrl: /training/achievements/describe-endpoint-security-with-microsoft-intune.svg
 - uid: learn.wwl.evaluate-strategies-for-migrating-sql-databases-to-azure.badge
   type: badge
@@ -1649,7 +1689,7 @@ achievements:
   iconUrl: /training/achievements/serve-the-data-from-azure-synapse-serverless-sql-pool.svg
 - uid: learn.train-package-azure-ml-model.badge
   type: badge
-  title: Train and package an Azure machine Learning module for deployment to IoT Edge device
+  title: Train and package an Azure Machine Learning module for deployment to IoT Edge device
   summary: Deploy a trained machine learning module to the edge using a container. The machine learning module you create will be deployed to an IoT Edge device. You'll check that your container image was successfully created and stored in the Azure container registry. You'll view the data from the deployed module from the IoT Edge.
   iconUrl: /training/achievements/student-evangelism/train-and-package-an-azure-machine-learning-module-for-deployment-to-iot-edge.svg
 - uid: learn.azure.advanced-modeling-patterns-azure-cosmos-db.badge
@@ -1847,6 +1887,11 @@ achievements:
   title: Work with data in Azure Databricks
   summary: To work with data in Azure Databricks, you can use the *dataframe* object.
   iconUrl: /training/achievements/work-with-data-in-azure-databricks.svg
+- uid: learn.advocates.deploy-responsible-bot.badge
+  type: badge
+  title: Deploy a customer service bot
+  summary: Learn how to deploy a bot that can collect user input. Improve customer service by making the bot responsible.
+  iconUrl: /training/achievements/deploy-responsible-bot.svg
 - uid: learn.wwl.train-machine-learning-model-azure-databricks.badge
   type: badge
   title: Train a machine learning model with Azure Databricks
@@ -1952,6 +1997,12 @@ achievements:
   title: Deploy Node.js server with MongoDB database to Azure App Service
   summary: Learn how to create, configure and deploy an Node.js (Express.js) server app with a MongoDB database to Azure App Service.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.publish-express-node-app-service-vscode.badge
+  type: badge
+  title: Create and publish a web application with Azure App Service and Visual Studio Code
+  summary: Create a web application with Visual Studio Code and publish it to Azure App Service.
+  iconUrl: /training/achievements/publish-express-node-app-service-vscode.svg
+
 - uid: learn.azure.intro-to-azure-linux.badge
   type: badge
   title: Introduction to Linux on Azure
@@ -1982,6 +2033,11 @@ achievements:
   title: 'SC-100: Design a strategy for data and applications'
   summary: Learn how to design a cybersecurity strategy for data and applications.
   iconUrl: /training/achievements/sc-100-design-a-strategy-for-data-and-applications.svg
+- uid: learn.responsible-bots.trophy
+  type: trophy
+  title: Responsible bots
+  summary: Responsible chatbots imitate human behavior but are also useful, reliable, unbiased, and culturally aware. They respect privacy and welcome diverse users.
+  iconUrl: /training/achievements/responsible-bots.svg  
 - uid: learn.wwl.sc-100-design-security-for-infrastructure.trophy
   type: trophy
   title: 'SC-100: Design security for infrastructure'
@@ -2272,6 +2328,61 @@ achievements:
   title: Choose the best AI service for your needs
   summary: Examine Azure's AI services, and choose the right one for your company.
   iconUrl: /training/achievements/ai-machine-learning-fundamentals.svg
+- uid: learn.wwl.prepare-for-ai-engineering.trophy
+  type: trophy
+  title: Prepare for AI engineering
+  summary: AI Engineers design and develop intelligent solutions that encapsulate artificial intelligence (AI) capabilities. As an aspiring Azure AI Engineer, it's important to understand some of the key foundational concepts on which AI is based, and the various services in Microsoft Azure that you can use to build AI solutions.
+  iconUrl: /training/achievements/ai-prepare-for-engineering.svg
+- uid: learn.wwl.process-translate-speech-azure-cognitive-speech-services.trophy
+  type: trophy
+  title: Process and Translate Speech with Azure AI Speech Services
+  summary: Learn how to develop speech-enabled applications by using the Speech service.
+  iconUrl: /training/achievements/process-translate-speech-azure-cognitive-speech-services.svg
+- uid: learn.wwl.provision-manage-azure-cognitive-services.trophy
+  type: trophy
+  title: Provision and manage Azure AI Services
+  summary: Azure AI Services are building blocks of AI functionality that you can integrate into your applications. In this learning path, you'll learn how to provision, secure. monitor, and deploy Azure AI Services resources and use them to build intelligent solutions.
+  iconUrl: /training/achievements/provision-and-manage-azure-cognitive-services.svg
+- uid: learn.wwl.process-translate-text-azure-cognitive-services.trophy
+  type: trophy
+  title: Process and translate text with Azure AI Services
+  summary: A large volume of the data that applications need to process is in text format. Using Azure AI Services, you can create apps that extract semantic meaning from text and translate it between languages.
+  iconUrl: /training/achievements/process-and-translate-text-with-azure-cognitive-services.svg
+- uid: learn.wwl.build-custom-text-analytics.trophy
+  type: trophy
+  title: Build custom text analytics solutions
+  summary: Build solutions with newer text analytics services such as custom text classification and custom name entity recognition. These services allow for customizing the built-in features available in the Language service for exactly what your application needs.
+  iconUrl: /training/achievements/build-custom-text-analytics-solutions.svg
+- uid: learn.wwl.build-qna-solution.trophy
+  type: trophy
+  title: Build a question answering solution
+  summary: A common pattern for intelligent apps is to enable users to ask questions using natural language, and receive appropriate answers. This kind of solution brings conversational intelligence to a traditional frequently asked questions (FAQ) publication.
+  iconUrl: /training/achievements/qna-maker-build-solution.svg
+- uid: learn.wwl.create-computer-vision-solutions-azure-cognitive-services.trophy
+  type: trophy
+  title: Create computer vision solutions with Azure AI Vision
+  summary: Computer vision is an area of artificial intelligence that deals with visual perception. Azure AI Vision includes multiple services that support common computer vision scenarios.
+  iconUrl: /training/achievements/cognitive-services-computer-vision.svg
+- uid: learn.wwl.create-language-solution-azure-cognitive-services.trophy
+  type: trophy
+  title: Create a Language Understanding solution with Azure AI Language
+  summary: Natural language processing (NLP) solutions use language models to interpret the semantic meaning of written or spoken language. You can use the Language Understanding service to build language models for your applications.
+  iconUrl: /training/achievements/create-language-solution-azure-cognitive-services.svg
+- uid: learn.wwl.extract-data-from-forms-by-using-form-recognizer.trophy
+  type: trophy
+  title: Extract data from forms by using Azure AI Document Intelligence
+  summary: In this learning path, you'll see how Azure Forms Analyzer solutions can enable you to capture data from typed or hand-written forms. You'll also learn how to build a solution for your custom form types and integrate that solution into an Azure Cognitive Search pipeline.
+  iconUrl: /training/achievements/extract-data-from-forms-use-form-recognizer.svg
+- uid: learn.wwl.extract-text-from-images-documents.trophy
+  type: trophy
+  title: Extract text from images and documents
+  summary: Learn how to implement text extraction solutions with images and documents using Azure AI Document Intelligence service's OCR Test Tool, pre-built models, and custom models.
+  iconUrl: /training/achievements/extract-text-documents.svg
+- uid: learn.wwl.create-manage-cognitive-services.badge
+  type: badge
+  title: Create and consume Azure AI Services
+  summary: Azure AI Services enable developers to easily add AI capabilities into their applications. Learn how to create and consume these services.
+  iconUrl: /training/achievements/create-and-manage-cognitive-services.svg
 - uid: learn.azure.azure-devops-devtest-labs.badge
   type: badge
   title: Choose the best tools to help organizations build better solutions
@@ -2502,6 +2613,11 @@ achievements:
   title: Describe resource governance capabilities in Azure
   summary: Azure governance capabilities provide mechanisms and processes for organizations to maintain control over their applications and resources. Learn how Azure policy, Blueprints, and Microsoft Purview help organizations govern their resources and applications.
   iconUrl: /training/achievements/describe-resource-governance-capabilities-in-azure.svg
+- uid: learn-windows.develop-web-apps-with-vs-code.badge
+  type: badge
+  title: Develop web applications with Visual Studio Code
+  summary: Learn how to develop apps with Visual Studio Code, and use its features to create and test a basic web application.
+  iconUrl: /training/achievements/introducing-vs-code.svg
 - uid: learn.create-azure-account.badge
   type: badge
   title: Create an Azure account
@@ -2558,7 +2674,7 @@ achievements:
 - uid: learn.enable-external-access-with-b2c.badge
   type: badge
   title: Enable secure access to apps for external users with Azure AD B2C
-  summary:  Use Azure AD B2C as the full-featured identity system for your application, and ensure that users are required to sign in securely by using multi-factor authentication.
+  summary:  Use Azure AD B2C as the full-featured identity system for your application, and ensure that users are required to sign in securely by using multifactor authentication.
   iconUrl: /training/achievements/enable-external-access-with-b2c.svg
 - uid: learn.wwl.enable-business-users-with-key-ai-uses-cases.badge
   type: badge
@@ -2590,3 +2706,385 @@ achievements:
   title: Deploy IoT solutions with Azure SQL Database
   summary: By the end of this module, you'll be able to create scalable IoT solutions using Azure SQL Database, and use the template provided for many IoT use cases.
   iconUrl: /training/achievements/deploy-iot-solution-azure-sql-database.svg
+- uid: learn.msgraph-extensions.badge
+  type: badge
+  title: Add custom data to your app by using extensions in Microsoft Graph
+  summary: "Add custom data to Microsoft Graph resources by using Microsoft Graph extensions. Query and update the custom data to build unique experiences for your applications."
+  iconUrl: /training/achievements/msgraph-extensions.svg
+- uid: learn.wwl.challenge-project-classes-methods-properties.badge
+  type: badge
+  title: Challenge project
+  summary: >-
+    In this challenge project the student is asked to create an application that can take in, and display, information as properties on a car class.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.implement-classes-properties-methods.trophy
+  type: trophy
+  title: Implement classes, properties, and methods
+  summary: >-
+    Your goal was to learn about the differences between a class and an object and how a class is the blueprint for an object. You then went on to learn about encapsulation (or data hiding in a class) and an object's lifecycle. The term lifecycle refers to the allocation and deallocation of memory for an object. You learned about constructors and that they're used to initialize values in an object. Finally, you learned that namespaces are used to organize your classes into groups to avoid collisions of resources that may have the same name.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.create-classes.badge
+  type: badge
+  title: Create classes and objects in C#
+  summary: The purpose of this module is to learn about classes and objects and to understand the differences between the two.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.implement-properties-within-class.badge
+  type: badge
+  title: Implement properties within a class
+  summary: This module discusses the use of properties and the concepts of read-write, read-only, and write-only properties. The concepts of declaring and passing variable by reference and by value are also introduced.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.use-classes-properties-method.badge
+  type: badge
+  title: Use classes, properties, and methods
+  summary: This lesson shows how to use a class and access the properties and the methods of that class. Aside from instantiating objects, properties and methods are the primary way one interacts with objects.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.introduction-to-microsoft-graph-powershell.badge
+  type: badge
+  title: Introduction to Microsoft Graph PowerShell
+  summary: Characterize the types of business processes that Microsoft Graph PowerShell can automate. Describe the commands and permissions needed to automate processes with Microsoft Graph PowerShell.
+  iconUrl: /training/achievements/introduction-to-microsoft-graph-powershell-learn-module.svg
+- uid: learn.enable-external-collaboration-with-b2b.badge
+  type: badge
+  title: Enable secure external collaboration for your applications with Microsoft Entra B2B
+  summary: "Collaborate securely with partners, vendors, and other external users with **Microsoft Entra B2B collaboration**. Use a simple invitation process to let partners use their own work, school, or social identities to access your resources, and add security with **multi-factor authentication**."
+  iconUrl: /training/achievements/enable-external-collaboration-with-b2b.svg
+- uid: learn.secure-collaboration-cross-tenant-access.badge
+  type: badge
+  title: Secure B2B collaboration by using cross-tenant access settings
+  summary: "Define your inbound and outbound B2B collaboration with other Microsoft Entra tenants by using cross-tenant access settings. You can decide whether to allow or block B2B collaboration with other Microsoft Entra organizations by default, and then set individual policies for specific organizations. You have granular control over who can use B2B collaboration and which applications can be accessed. You can also trust multi-factor authentication from a user’s home tenant so they don’t have to repeat the process in your tenant."
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.create-no-code-predictive-models-with-azure-machine-learning.trophy
+  type: trophy
+  title: 'Microsoft Azure AI Fundamentals: Explore visual tools for machine learning'
+  summary: Machine learning is at the core of artificial intelligence, and many modern applications and services depend on predictive machine learning models. Learn how to use Azure Machine Learning to create and publish models without writing code.
+  iconUrl: /training/achievements/create-no-code-predictive-models-with-azure-machine-learning.svg
+- uid: learn.wwl.create-classification-model-with-azure-machine-learning-designer.badge
+  type: badge
+  title: Create a classification model with Azure Machine Learning designer
+  summary: Classification is a supervised machine learning technique used to predict categories or *classes*. Learn how to create classification models using Azure Machine Learning designer.
+  iconUrl: /training/achievements/create-classification-model-azure-machine-learning-designer.svg
+- uid: learn.wwl.create-regression-model-azure-machine-learning-designer.badge
+  type: badge
+  title: Create a regression model with Azure Machine Learning designer
+  summary: Regression is a supervised machine learning technique used to predict numeric values. Learn how to create regression models using Azure Machine Learning designer.
+  iconUrl: /training/achievements/create-regression-model-azure-machine-learning-designer.svg
+- uid: learn.microservices-logging-aspnet-core.badge
+  type: badge
+  title: Instrument a cloud-native ASP.NET Core microservice
+  summary: Learn how to instrument your cloud-native ASP.NET Core microservices app to diagnose problems and monitor performance.
+  iconUrl: /training/achievements/aspnetcore/microservices-logging-aspnet-core-social.png
+- uid: learn.microservices-data-aspnet-core.badge
+  type: badge
+  title: Use managed data stores in a cloud-native ASP.NET Core microservices app
+  summary: Modify a cloud-native ASP.NET Core microservices app to use managed data stores in Azure.
+  iconUrl: /training/achievements/aspnetcore/microservices-data-aspnet-core-social.png
+- uid: learn.microservices-aspnet-core.badge
+  type: badge
+  title: Create and deploy a cloud-native ASP.NET Core microservice
+  summary: Create and deploy an ASP.NET Core microservice to AKS.
+  iconUrl: /training/achievements/aspnetcore/microservices-aspnet-core-social.png
+- uid: learn.microservices-apigateway-aspnet-core.badge
+  type: badge
+  title: Understand API gateways in a cloud-native ASP.NET Core microservices app
+  summary: Learn to modify cloud-native ASP.NET Core microservices app to understand API gateways in Azure.
+  iconUrl: /training/achievements/aspnetcore/microservices-apigateway-aspnet-core-social.png
+- uid: learn.azure.deploy-elastic-cloud-kubernetes-azure.badge
+  type: badge
+  title: Deploy Elastic Cloud on Kubernetes on Azure Kubernetes Service
+  summary: Learn how to deploy Elastic Cloud on Kubernetes on Azure Kubernetes Service (AKS).
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azdo.deploy-java-containers.badge
+  type: badge
+  title: Automate Java container deployments with Azure Pipelines
+  summary: Implement an Azure Pipelines continuous integration and continuous deployment (CI/CD) pipeline for Java containers.
+  iconUrl: /training/achievements/azure-devops/deploy-java-containers.svg
+- uid: learn.azdo.deploy-nodejs.badge
+  type: badge
+  title: Guided project - Automate Node.js deployments with Azure Pipelines
+  summary: Implement CI/CD pipeline for Node.js applications. Automate deployment of Vue, React, Angular or Webpack apps with Azure Pipelines.
+  iconUrl: /training/achievements/azure-devops/deploy-nodejs.svg
+- uid: learn.wwl.challenge-project-create-rock-paper-scissors-game-with-github-copilot.badge
+  type: badge
+  title: Challenge project - Develop foreach and if-elseif-else structures to process array data in C#
+  summary: Demonstrate your ability to update a console app that implements arrays, foreach loops, and if statements in response to a user requested feature update.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.create-azure-active-directory-test-environment.badge
+  type: badge
+  title: Set up a test environment for application testing in Microsoft Entra ID
+  summary: Evaluate whether you need a dedicated test tenant for your application test environment. Create a test tenant in Microsoft Entra ID for use in a continuous integration/continuous deployment (CI/CD) pipeline or for testing applications.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.azure.introduction-to-app-provisioning.badge
+  type: badge
+  title: Introduction to application provisioning
+  summary: Introduction to application provisioning
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.azure.set-up-cors-website-storage.badge
+  type: badge
+  title: Core Cloud Services - Set up CORS for your website and storage assets
+  summary: In this module, you'll set up Cross-Origin Resource Sharing (CORS) for your Azure website and storage assets in order to allow cross-domain access to your resources.
+  iconUrl: /training/achievements/setup-cors-for-your-website-and-storage-assets.svg
+- uid: learn.build-azure-bot-services-bot.badge
+  type: badge
+  title: Build a chat bot with the Azure Bot Service
+  summary: The Azure Bot Service, combined with Microsoft QnA Maker, provides the tools developers need to build and publish intelligent bots that interact naturally with users using a range of services.
+  iconUrl: /training/achievements/build-chat-bot-with-azure-bot-service.svg
+- uid: learn.azure.choose-bot-building-tool.badge
+  type: badge
+  title: Choose a bot-building tool
+  summary: Identify the different tools available from Microsoft that you can use to create bots. Learn about Azure Bot Service, Microsoft Power Visual Agents, QnA Maker, and Bot Framework Composer and Azure Bot Service. 
+  iconUrl: /training/achievements/choose-bot-building-tool.svg
+- uid: learn.wwl.azure-active-directory.badge
+  type: badge
+  title: Secure Azure solutions with Microsoft Entra ID
+  summary: Explore how to securely configure and administer your Microsoft Entra instance.
+  iconUrl: /training/achievements/azure-active-directory.svg
+- uid: learn.wwl.azure-ad-identity-protection.badge
+  type: badge
+  title: Deploy Microsoft Entra ID Protection
+  summary: Protect identities in Microsoft Entra ID using Conditional Access, MFA, access reviews, and other capabilities.
+  iconUrl: /training/achievements/azure-ad-identity-protection.svg
+- uid: learn.wwl.azure-ad-privileged-identity-management.badge
+  type: badge
+  title: Configure Microsoft Entra Privileged Identity Management
+  summary: Ensure that your privileged identities have extra protection and are accessed only with the least amount of access needed to do the job.
+  iconUrl: /training/achievements/azure-ad-privileged-identity-management.svg
+- uid: learn.wwl.hybrid-identity.badge
+  type: badge
+  title: Implement Hybrid identity
+  summary: Explore how to deploy and configure Microsoft Entra Connect to create a hybrid identity solution for your company.
+  iconUrl: /training/achievements/identity-hybrid.svg
+- uid: learn.wwl.manage-identity-access.trophy
+  type: trophy
+  title: 'AZ-500: Manage Identity and Access'
+  summary: Explore how identity is the starting point for all security within your company. Learn to authenticate and authorize users and apps with Microsoft Entra ID.
+  iconUrl: /training/achievements/management-identity-access.svg
+- uid: learn.wwl.enterprise-governance.badge
+  type: badge
+  title: Design an enterprise governance strategy
+  summary: Learn to use RBAC and Azure Policy to limit access to your Azure solutions, and determine which method is right for your security goals.
+  iconUrl: /training/achievements/enterprise-governance.svg
+- uid: learn.wwl.host-security.badge
+  type: badge
+  title: Configure and manage host security
+  summary: Learn to lock down the devices, virtual machines, and other components that run your applications in Azure.
+  iconUrl: /training/achievements/security-host.svg
+- uid: learn.wwl.implement-platform-protection.trophy
+  type: trophy
+  title: 'AZ-500: Implement platform protection'
+  summary: Security has to happen at all levels. Learn how to lock down the infrastructure and network resources that are running in your Azure environment.
+  iconUrl: /training/achievements/platform-implement-protection.svg
+- uid: learn.wwl.network-security.badge
+  type: badge
+  title: Configure network security
+  summary: Use Azure network capabilities to secure your network and applications from external and internal attacks.
+  iconUrl: /training/achievements/azure-network-security.svg
+- uid: learn.wwl.perimeter-security.badge
+  type: badge
+  title: Implement perimeter security
+  summary: Prevent attacks before they get to your Azure solutions. Use the concepts of defense in depth and zero trust to secure Azure perimeter.
+  iconUrl: /training/achievements/perimeter-security.svg
+- uid: learn.wwl.application-security.badge
+  type: badge
+  title: Configure application security features
+  summary: Register your company applications then use Azure security features to configure and monitor secure access to the application.
+  iconUrl: /training/achievements/application-security.svg
+- uid: learn.wwl.azure-key-vault.badge
+  type: badge
+  title: Deploy and secure Azure Key Vault
+  summary: Protect your keys, certificates, and secrets in Azure Key Vault. Learn to configure key vault for the most secure deployment.
+  iconUrl: /training/achievements/azure-key-vault.svg
+- uid: learn.wwl.enable-containers-security.badge
+  type: badge
+  title: Enable Containers security
+  summary: Explore how to secure your applications running within containers and how to securely connect to them.
+  iconUrl: /training/achievements/container-security.svg
+- uid: learn.wwl.manage-security-operation.trophy
+  type: trophy
+  title: 'AZ-500: Manage security operation'
+  summary: Once you have deployed and secured your Azure environment, learn to monitor, operate, and continuously improve the security of your solutions.
+  iconUrl: /training/achievements/operation-manage-security.svg
+- uid: learn.wwl.secure-your-data-applications.trophy
+  type: trophy
+  title: 'AZ-500: Secure your data and applications'
+  summary: Application running within Azure access your confidential data need to be locked down. Learn to secure your applications, storage, databases, and key vaults.
+  iconUrl: /training/achievements/security-data-applications.svg
+- uid: learn.wwl.azure-monitor.badge
+  type: badge
+  title: Configure and manage Azure Monitor
+  summary: Use Azure Monitor, Log Analytics, and other Azure tools to monitor the secure operation of your Azure solutions.
+  iconUrl: /training/achievements/azure-monitor.svg
+- uid: learn.wwl.azure-security-center.badge
+  type: badge
+  title: Enable and manage Microsoft Defender for Cloud
+  summary: Use Microsoft Defender for Cloud to strengthen security posture and protect workloads against modern threats in Azure.
+  iconUrl: /training/achievements/azure-security-center.svg
+- uid: learn.wwl.azure-sentinel.badge
+  type: badge
+  title: Configure and monitor Microsoft Sentinel
+  summary: Use Microsoft Sentinel to discover, track, and respond to security breaches within your Azure environment.
+  iconUrl: /training/achievements/azure-sentinel.svg
+- uid: learn.wwl.sql-database-security.badge
+  type: badge
+  title: Configure and manage SQL database security
+  summary: Configure and lock down your SQL database on Azure to protect your corporate data while it's stored.
+  iconUrl: /training/achievements/sql-database-security.svg
+- uid: learn.wwl.storage-security.badge
+  type: badge
+  title: Implement storage security
+  summary: Ensure your data is stored, transferred, and accessed in a secure way using Azure storage and file security features.
+  iconUrl: /training/achievements/storage-security.svg
+- uid: learn.wwl.create-clustering-model-azure-machine-learning-designer.badge
+  type: badge
+  title: Create a clustering model with Azure Machine Learning designer
+  summary: Clustering is an unsupervised machine learning technique used to group similar entities based on their features. Learn how to create clustering models using Azure Machine Learning designer.
+  iconUrl: /training/achievements/create-clustering-model-azure-machine-learning-designer.svg
+- uid: learn.wwl.use-automated-machine-learning.badge
+  type: badge
+  title: Use Automated Machine Learning in Azure Machine Learning
+  summary: Training a machine learning model is an iterative process that requires time and compute resources. Automated machine learning can help make it easier.
+  iconUrl: /training/achievements/use-automated-machine-learning.svg
+- uid: learn.iot.azure-rtos-threadx.trophy
+  type: trophy
+  title: Azure RTOS ThreadX
+  summary: Learn about Real-time Operating System (RTOS), and Azure RTOS ThreadX, a high-performance RTOS that is one of the most widely used RTOSes in the world.
+  iconUrl: /training/achievements/iot/azure-rtos-threadx.svg
+- uid: learn.iot.introduction-azure-rtos.badge
+  type: badge
+  title: Introduction to Azure RTOS
+  summary: Learn the basics of RTOS.
+  iconUrl: /training/achievements/iot/introduction-azure-rtos.svg
+- uid: learn.iot.azure-rtos-threadx-fundamentals.badge
+  type: badge
+  title: Azure RTOS ThreadX fundamentals
+  summary: Learn the fundamentals of Azure RTOS ThreadX.
+  iconUrl: /training/achievements/iot/azure-rtos-threadx-fundamentals.svg
+- uid: learn.iot.threadx-memory-management.badge
+  type: badge
+  title: Azure RTOS ThreadX memory management
+  summary: Learn about the memory management options that are available in Azure RTOS ThreadX.
+  iconUrl: /training/achievements/iot/threadx-memory-management.svg
+- uid: learn.iot.create-first-threadx-project.badge
+  type: badge
+  title: Azure RTOS ThreadX first project
+  summary: Learn how to create a Hello World project by using Azure RTOS ThreadX.
+  iconUrl: /training/achievements/iot/create-first-threadx-project.svg
+- uid: learn.iot.azure-rtos-analyze-thread-behavior.badge
+  type: badge
+  title: Azure RTOS ThreadX — Analyze thread behavior with timing facilities
+  summary: Now that you have created your first Hello World project, have you thought about analyzing the behavior of your system? If so, this is the module you should investigate.
+  iconUrl: /training/achievements/iot/azure-rtos-analyze-thread-behavior.svg
+- uid: learn.iot.threadx-break-thread-suspension.badge
+  type: badge
+  title: Use Wait Abort to break thread suspension
+  summary: Learn how to use Wait Abort to break thread suspension in Azure RTOS ThreadX.
+  iconUrl: /training/achievements/iot/threadx-break-thread-suspension.svg
+- uid: learn.iot.threadx-event-notification.badge
+  type: badge
+  title: Use a counting semaphore for event notification in Azure RTOS ThreadX
+  summary: Learn when to use a mutex and a counting semaphore and consolidate your understanding of the differences.
+  iconUrl: /training/achievements/iot/threadx-event-notification.svg
+- uid: learn.iot.threadx-event-flags-group-sync-threads.badge
+  type: badge
+  title: Use an event flags group to sync threads in ThreadX
+  summary: Learn how to use an event flags group to sync threads in Azure RTOS ThreadX.
+  iconUrl: /training/achievements/iot/threadx-event-flags-group-sync-threads.svg
+- uid: learn.iot.threadx-message-queues.badge
+  type: badge
+  title: Use message queues for inter-thread communication in Azure RTOS ThreadX
+  summary: Learn how to have threads send messages to other threads.
+  iconUrl: /training/achievements/iot/threadx-message-queues.svg
+- uid: learn.iot.threadx-event-chain-suspend-objects.badge
+  type: badge
+  title: Use event-chaining to suspend multiple objects in ThreadX
+  summary: Learn how to use event-chaining to suspend multiple objects in Azure RTOS ThreadX.
+  iconUrl: /training/achievements/iot/threadx-event-chain-suspend-objects.svg
+- uid: learn.iot.threadx-priority-inversion-solutions.badge
+  type: badge
+  title: ThreadX priority inversion solutions
+  summary: Learn how preemption threshold and priority inheritance work as solutions to priority inversion in Azure RTOS ThreadX.
+  iconUrl: /training/achievements/iot/threadx-priority-inversion-solutions.svg
+- uid: learn.iot.threadx-next-steps.badge
+  type: badge
+  title: Azure RTOS ThreadX next steps
+  summary: Learn the next steps for Azure RTOS ThreadX.
+  iconUrl: /training/achievements/iot/threadx-next-steps.svg
+- uid: learn.iot.azure-rtos-netx-duo.trophy
+  type: trophy
+  title: Azure RTOS NetX Duo
+  summary: Learn about basics of TCP/IP and related network concepts, and Azure RTOS NetX Duo, an industrial grade dual IPv4 and IPv6 TCP/IP network stack that is designed specifically for deeply embedded, real-time, and IoT applications.
+  iconUrl: /training/achievements/iot/azure-rtos-netx-duo.svg
+- uid: learn.iot.introduction-azure-rtos-netx-duo.badge
+  type: badge
+  title: Introduction to Azure RTOS NetX Duo
+  summary: Learn the basics of Azure RTOS NetX Duo.
+  iconUrl: /learn/achievements/iot/introduction-azure-rtos-netx-duo.svg
+- uid: learn.iot.azure-rtos-netx-duo-fundamentals.badge
+  type: badge
+  title: Fundamentals of Azure RTOS NetX Duo
+  summary: Learn the fundamentals of Azure RTOS NetX Duo. 
+  iconUrl: /learn/achievements/iot/azure-rtos-netx-duo-fundamentals.svg
+- uid: learn.iot.create-first-netx-duo-project.badge
+  type: badge
+  title: Create the first Azure RTOS NetX Duo project
+  summary: The first Azure RTOS NetX Duo project is built and run.
+  iconUrl: /learn/achievements/iot/create-first-netx-duo-project.svg
+- uid: learn.iot.build-a-udp-echo-client.badge
+  type: badge
+  title: Building and running a UDP echo client
+  summary: Design, build, and run a UDP echo client.
+  iconUrl: /training/achievements/iot/netx-duo-build-a-udp-echo-client.svg
+- uid: learn.iot.build-a-udp-echo-server.badge
+  type: badge
+  title: Building and running a UDP echo server
+  summary: Design, build, and run a UDP echo server.
+  iconUrl: /training/achievements/iot/netx-duo-build-a-udp-echo-server.svg
+- uid: learn.iot.build-a-tcp-echo-client.badge
+  type: badge
+  title: Building and running a TCP echo client
+  summary: Design, build, and run a TCP echo client.
+  iconUrl: /training/achievements/iot/netx-duo-build-a-tcp-echo-client.svg
+- uid: learn.design-your-migration-to-azure.badge
+  type: badge
+  summary: Minimize the time and resources required to migrate your on-premises environment to Azure. Assess your current systems with Azure Migrate, and migrate them with Azure Migrate and Azure Database Migration Service.
+  title: Design your migration to Azure
+  iconUrl: /training/achievements/design-your-migration-to-azure.svg
+- uid: learn.azure.deploy-backend-apis.badge
+  type: badge
+  title: Deploy serverless APIs with Azure Functions, Logic Apps, and Azure SQL Database
+  summary: In the language of your choice (Node.js, Python, or .NET), learn how to deploy an Azure Function that adds real-time data to an Azure SQL Database and triggers an Azure Logic App for notifications.
+  iconUrl: /training/achievements/deploy-backend-apis.svg
+- uid: learn.azure.build-full-stack-apps.badge
+  type: badge
+  title: Build full stack applications with Azure Static Web Apps and Azure SQL Database
+  summary: In the language of your choice, deploy an Azure Static Web App, which combines the power of Azure Functions and Azure Web Apps into one service managed by GitHub Actions.
+  iconUrl: /training/achievements/build-full-stack-apps.svg
+- uid: learn.azure.automate-deployments-github-actions-azure.badge
+  type: badge
+  title: Architect full-stack applications and automate deployments with GitHub
+  summary: Deploy an end-to-end solution to solve the real-world scenario of catching the bus. You'll learn how to architect a solution that uses Azure SQL Database, Azure Functions, Azure Static Web Apps, Logic Apps, Visual Studio Code, and GitHub Actions.
+  iconUrl: /training/achievements/automate-deployments-github-actions-azure.svg
+- uid: learn.build-serverless-full-stack-apps-azure.trophy
+  type: trophy
+  title: Build serverless, full stack applications in Azure
+  summary: Learn how to create, build, and deploy modern full stack applications in Azure by using the language of your choice (Python, Node.js, or .NET) and with a Vue.js frontend. Using a real-world scenario of trying to catch the bus, you will learn how to build a solution that uses Azure SQL Database, Azure Functions, Azure Static Web Apps, Logic Apps, Visual Studio Code, and GitHub Actions.
+  iconUrl: /training/achievements/build-serverless-full-stack-apps-azure.svg
+- uid: learn.azure.cna-deploy-maintain-cloud-native-apps.badge
+  type: badge
+  title: Deploy and maintain cloud-native apps with GitHub actions and Azure Pipelines
+  summary: Implement DevOps in cloud-native application scenarios. Use GitHub actions and Azure Pipelines to build and deploy infrastructure and applications.
+  iconUrl: /training/achievements/cna-deploy-maintain.svg
+- uid: learn.azure.migrate-java-app-azure-app-service.badge
+  type: badge
+  summary: In this module, you learn to use the Azure Migrate App Containerization tool to containerize and migrate Java web applications to Azure App Service.
+  title: Migrate Java web applications to Azure App Service
+  iconUrl: /training/achievements/java-on-azure-badge.svg
+- uid: learn.the-mojifier.badge
+  type: badge
+  title: The Mojifier
+  summary: Learn how to get images, calculate emotion, match emotions to emojis, and replace faces with emoji.
+  iconUrl: /training/achievements/replace-faces-with-emojis-matching-emotion.svg
+- uid: learn.azure.migrate-java-app-azure-kubernetes-service.badge
+  type: badge
+  title: Migrate Java web applications to Azure Kubernetes Service
+  summary: In this module, you'll learn to use the Azure Migrate App Containerization tool to containerize and migrate Java web applications to Azure Kubernetes Service.
+  iconUrl: /training/achievements/java-on-azure-badge.svg

@@ -6,8 +6,8 @@ metadata:
   title: Understand Git
   description: Learn how version control and Git can help support your Bicep authoring workflow and solve some common problems that you might face.
   ms.date: 01/23/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
   ms.custom:
     - devx-track-bicep

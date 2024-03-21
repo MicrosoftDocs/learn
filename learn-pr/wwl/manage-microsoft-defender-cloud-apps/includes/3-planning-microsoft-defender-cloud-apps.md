@@ -4,7 +4,7 @@
 This unit will guide you to use Microsoft Defender for Cloud Apps. By using Microsoft Defender for Cloud Apps, you can enjoy the advantages of cloud applications while retaining control over your corporate resources. The tool enhances visibility into cloud activities and increases corporate data protection. This unit will guide you through setting up and using Microsoft Defender for Cloud Apps.
 
 >[!Note]
->Microsoft Defender for Cloud Apps (previously known as Microsoft Cloud App Security) is now part of Microsoft 365 Defender. The Microsoft 365 Defender portal allows security admins to perform their security tasks in one location. This will simplify workflows, and add the functionality of the other Microsoft 365 Defender services. Microsoft 365 Defender will be the home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure. For more information about these changes, see Microsoft Defender for Cloud Apps in Microsoft 365 Defender.
+>Microsoft Defender for Cloud Apps (previously known as Microsoft Cloud App Security) is now part of Microsoft Defender XDR. The Microsoft Defender portal allows security admins to perform their security tasks in one location. This will simplify workflows, and add the functionality of the other Microsoft Defender XDR services. Microsoft Defender XDR will be the home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure. For more information about these changes, see Microsoft Defender for Cloud Apps in Microsoft Defender XDR.
 
 ### Prerequisites
 

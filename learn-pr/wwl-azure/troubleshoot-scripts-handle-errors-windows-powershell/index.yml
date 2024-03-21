@@ -6,7 +6,7 @@ metadata:
   ms.date: 11/11/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Troubleshoot scripts and handle errors in Windows PowerShell
 summary: This module covers troubleshooting PowerShell scripts and understanding error messages.
 abstract: |
@@ -38,7 +38,6 @@ products:
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

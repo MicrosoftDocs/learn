@@ -85,7 +85,7 @@ You must decide whether to use the Variable Groups or the pipeline UI variables.
 
 For more information about secret variables, see:
 
-- [Manage and modularize tasks and templates.](https://learn.microsoft.com/training/modules/manage-modularize-tasks-templates/)
-- [Set secret variables.](https://learn.microsoft.com/azure/devops/pipelines/process/set-secret-variables)
-- [Add & use variable groups.](https://learn.microsoft.com/azure/devops/pipelines/library/variable-groups)
-- [Set pipeline permissions.](https://learn.microsoft.com/azure/devops/pipelines/policies/permissions)
+- [Manage and modularize tasks and templates.](/training/modules/manage-modularize-tasks-templates/)
+- [Set secret variables.](/azure/devops/pipelines/process/set-secret-variables)
+- [Add & use variable groups.](/azure/devops/pipelines/library/variable-groups)
+- [Set pipeline permissions.](/azure/devops/pipelines/policies/permissions)

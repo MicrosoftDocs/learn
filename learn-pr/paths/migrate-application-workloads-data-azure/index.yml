@@ -32,7 +32,6 @@ subjects:
 - migration
 - cloud-computing
 modules:
-- learn.design-your-migration-to-azure
 - learn.wwl.prepare-onpremises-workloads-migration-azure
 - learn.wwl.migrate-onpremises-workloads-azure
 - learn-wwl.migrate-sql-workloads-azure-sql-databases

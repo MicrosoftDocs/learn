@@ -18,15 +18,15 @@ Admission webhooks are available in two kinds: either a *validating webhook* or 
 
 ## What is the Open Policy Agent (OPA)?
 
-The *Open Policy Agent (OPA)* is an open-source, general-purpose policy engine that gives you a high-level declarative language to author policies. These policies enable you to define rules that oversee how your system should behave.
+The *Open Policy Agent (OPA)* is an open-source, general-purpose policy engine that gives you a high-level declarative language to author policies. These policies allow you to define rules that oversee how your system should behave.
 
 ## What is the OPA Gatekeeper?
 
 The *OPA Gatekeeper* is an open-source, validating, Kubernetes admission-controller webhook that enforces Custom Resource Definition (CRD)-based policies that follow the OPA syntax.
 
-The goal of the OPA Gatekeeper is to enable you to customize admission policies by using configuration instead of hard-coded policy rules for services. It also gives you a full view of your cluster to identify policy-violating resources.
+The goal of the OPA Gatekeeper is to allow you to customize admission policies by using configuration instead of hard-coded policy rules for services. It also gives you a full view of your cluster to identify policy-violating resources.
 
-You use the OPA Gatekeeper to define organization-wide policies with rules:
+Use the OPA Gatekeeper to define organization-wide policies with rules:
 
 - The maximum resource limits, such as CPU and memory limits, are enforced for all configured pods.
 
@@ -46,11 +46,11 @@ To set up resource limits, you can apply resource quotas at the namespace level 
 
 ## How to enable the Azure Policy Add-on for AKS
 
-There are a few steps to registering the Azure Policy Add-on for AKS feature.
+There are a few steps to registering the Azure Policy Add-on for AKS feature. We'll provide examples here, but you'll actually complete the steps in the next unit.
 
 1. Register two resource providers by using the `az provider register` command:
 
-    - **Microsoft.ContainerService** and **Microsoft.PolicyInsights**: These resource providers support actions such as querying information about policy events and managing containers. In addiThese are actions to query, create, update, or delete policy remediation.
+    - **Microsoft.ContainerService** and **Microsoft.PolicyInsights**: These resource providers support actions such as querying information about policy events and managing containers. These are actions to query, create, update, or delete policy remediation.
 
     Here's an example of the two registration commands:
 
@@ -65,13 +65,13 @@ There are a few steps to registering the Azure Policy Add-on for AKS feature.
     az feature register --namespace Microsoft.ContainerService --name AKS-AzurePolicyAutoApprove
     ```
 
-1. After you confirm the successful registration of the feature, run the `az provider register` command with the `--namespace` parameter to propagate the new feature registration. Here's an example of the command:
+1. After you confirm the successful feature registration, run the `az provider register` command with the `--namespace` parameter to propagate the new feature registration. Here's an example of the command:
 
     ```azurecli
     az provider register -n Microsoft.ContainerService
     ```
 
-1. Enable the azure-policy addon
+1. Enable the azure-policy add-on:
 
     ```azurecli
     az aks enable-addons \
@@ -84,7 +84,7 @@ There are a few steps to registering the Azure Policy Add-on for AKS feature.
 
 ## Assign a built-in policy definition
 
-You manage your Azure environment's policies by using the Azure policy compliance dashboard. The dashboard enables you to drill down to a per-resource, per-policy level of detail. It helps you bring your resources to compliance by using bulk remediation for existing resources and automatic remediation for new resources.
+You manage your Azure environment's policies by using the Azure policy compliance dashboard. The dashboard allows you to drill down to a per-resource, per-policy level of detail. It helps you bring your resources to compliance by using bulk remediation for existing resources and automatic remediation for new resources.
 
 For each policy, the following overview information is listed:
 
@@ -97,13 +97,13 @@ For each policy, the following overview information is listed:
 | **Non-compliant resources** | The number of unique resources that violate one or more policy rules. | 3 |
 | **Non-compliant policies** | The number of non-compliant policies. | 5 |
 
-From here, you drill down into the per-resource and per-policy details for the events triggered. For example, you can examine details of a denied workload deployment.
+From here, you can drill down into the per-resource and per-policy details for the events triggered. For example, you can examine details of a denied workload deployment.
 
 ### Assigning policies
 
 To assign a policy, select the **Assignments** option under the **Authoring section** in the Azure Policy navigation panel.
 
-You assign Azure policies in one of two ways: as a group of policies, called an *initiative*, or as a single policy.
+You assign Azure policies in one of two ways: as a group of policies called an *initiative*, or as a single policy.
 
 ### Initiative assignment
 
@@ -129,12 +129,12 @@ The first step requires you to select and enter basic information that defines t
 
 | Item | Description |
 | --- | --- |
-| **Scope** | The scope determines what resources, or group of resources, the policy assignment is enforced on. This value is based on a subscription or a management group. You can exclude resources from your selection at one level lower than the scope level.|
+| **Scope** | The scope determines on what resources or group of resources the policy assignment is enforced. This value is based on a subscription or a management group. You can exclude resources from your selection at one level lower than the scope level.|
 | **Policy Definition** | The policy you want to apply. You can choose from several built-in policy options. |
 | **Assignment name** | The name used to identify the assigned policy. |
 | **Description** | A free-text description that describes the policy. |
-| **Policy enforcement** | This option switches between **Enabled** and **Disabled**. If the option is **Disabled**, the policy isn't applied and requests aren't denied with non-compliance. |
-| **Assigned by** | A free-text value that defaults to the registered user. This value can be changed. |
+| **Policy enforcement** | You can choose **Enabled** and **Disabled**. If the option is **Disabled**, the policy isn't applied and requests aren't denied with non-compliance. |
+| **Assigned by** | A free-text value that defaults to the registered user. You can change this value. |
 
 ### Policy parameters
 
@@ -142,27 +142,27 @@ Policies require you to configure the business rules that apply to each specific
 
 For example, the **Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster** policy requires you to set three parameters:
 
-- The maximum CPU units allowed for a container.
-- The maximum memory bytes allowed for a container.
-- A list of Kubernetes namespaces to exclude from the policy.
+- The maximum CPU units allowed for a container
+- The maximum memory bytes allowed for a container
+- A list of Kubernetes namespaces to exclude from the policy
 
 Compare that policy with the **Web Application should only be accessible over HTTPS** policy, which has no custom parameters to configure.
 
-All policies have an **Effect** setting. This setting enables or disables the execution of the policy. As with parameters, policies can also have different **Effect** options.
+All policies have an **Effect** setting. This setting enables or disables the policy execution. As with parameters, policies can also have different **Effect** options.
 
-For example, for the resource-management policy, you can select **audit**, **deny**, or **disable** as the value for **Effect**. For the web-application policy, you can select only **audit** or **disable**.
+For example, for the resource-management policy, you can select **audit**, **deny**, or **disable** as the **Effect** value. For the web-application policy, you can select only **audit** or **disable**.
 
 This table lists all the effects currently supported in policy definitions:
 
 | Effect | Description |
 | --- | --- |
-| **Append** | Adds more fields to the requested resource. |
-| **Audit** | Creates a warning event in the activity log. |
-| **AuditIfNotExists** |  Enables auditing of resources related to the resource that matches the condition. |
-| **Deny** | Prevents a resource request that doesn't match defined standards through a policy definition, and fails the request. |
-| **DeployIfNotExists** | Executes a template deployment when the condition is met. |
-| **Disabled** | Useful for testing situations or for when the policy definition has parameterized the effect, and you want to disable a single assignment. |
-| **Modify** | Adds, updates, or removes tags on a resource during creation or update. |
+| **Append** | Adds more fields to the requested resource |
+| **Audit** | Creates a warning event in the activity log |
+| **AuditIfNotExists** |  Enables auditing of resources related to the resource that matches the condition |
+| **Deny** | Prevents a resource request that doesn't match defined standards through a policy definition, and fails the request |
+| **DeployIfNotExists** | Executes a template deployment when the condition is met |
+| **Disabled** | Useful for testing situations or for when the policy definition has parameterized the effect, and you want to disable a single assignment |
+| **Modify** | Adds, updates, or removes tags on a resource during creation or update |
 
 ### Policy remediation
 

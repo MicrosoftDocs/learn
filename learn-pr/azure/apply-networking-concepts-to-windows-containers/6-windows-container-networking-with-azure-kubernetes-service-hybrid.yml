@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.apply-networking-concepts-to-windows-containers.windows-container-networking-with-azure-kubernetes-service-hybrid
+title: Windows container networking with Azure Kubernetes Service Hybrid
+metadata:
+  unitType: learning-content
+  title: Windows container networking with Azure Kubernetes Service Hybrid
+  description: Azure Kubernetes Service (AKS) Hybrid is a feature that enables you to extend your AKS cluster to run on-premises or on other clouds. With AKS Hybrid, you can run Windows containers on any Kubernetes cluster.
+  ms.date: 02/12/2024
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-windows-container-networking-with-azure-kubernetes-service-hybrid.md)]

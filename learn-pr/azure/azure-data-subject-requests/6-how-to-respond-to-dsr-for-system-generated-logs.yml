@@ -6,7 +6,7 @@ metadata:
   description:  Explore scenarios for DSR in Azure and Office 365 for system-generated logs and learn about tools to use for DSR for system-generated logs
   ms.date: 11/13/2020
   author: micrum
-  ms.author: micrum
+  ms.author: robmcm
   ms.topic: unit
 durationInMinutes: 6
 content: |

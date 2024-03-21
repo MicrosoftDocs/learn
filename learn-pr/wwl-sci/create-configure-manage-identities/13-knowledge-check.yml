@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/20/2023
+  ms.date: 01/31/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/13-knowledge-check.md)]
@@ -19,10 +18,10 @@ quiz:
     choices:
     - content: "As non-connected users."
       isCorrect: false
-      explanation: "Sorry, that's incorrect. Microsoft Entra ID does not define users as non-connected users."
+      explanation: "Sorry, that's incorrect. Microsoft Entra ID doesn't define users as non-connected users."
     - content: "As transitional users."
       isCorrect: false
-      explanation: "Sorry, that's incorrect. Microsoft Entra ID does not define users as transitional users."
+      explanation: "Sorry, that's incorrect. Microsoft Entra ID doesn't define users as transitional users."
     - content: "As directory-synchronized identities."
       isCorrect: true
       explanation: "Correct - Microsoft Entra ID defines users as cloud identities, guest users, and as directory-synchronized identities."
@@ -41,10 +40,10 @@ quiz:
     choices:
     - content: "Distribution groups, which are used for communications purposes via applications such as Teams and Exchange."
       isCorrect: false
-      explanation: "Sorry, that's incorrect. Distribution groups are not a feature in Microsoft Entra ID."
+      explanation: "Sorry, that's incorrect. Distribution groups aren't a feature in Microsoft Entra ID."
     - content: "Licensing groups, which are used to make it easier to administer software licenses."
       isCorrect: false
-      explanation: "Sorry, that's incorrect. Licensing groups are not a feature in Microsoft Entra ID."
+      explanation: "Sorry, that's incorrect. Licensing groups aren't a feature in Microsoft Entra ID."
     - content: "Microsoft 365 groups, which provide access to shared mailboxes, calendars, SharePoint sites, and so on."
       isCorrect: true
       explanation: "Correct - Microsoft Entra ID allows for the definition of Security groups and Microsoft 365 groups."

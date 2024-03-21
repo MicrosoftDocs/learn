@@ -21,7 +21,7 @@ It's recommended to follow the principle of least privilege, granting users only
 4. Select the group you want to add users.
 
     >[!NOTE]
-    > To understand the different types of groups and permissions, see [Security groups, service accounts, and permissions in Azure DevOps](https://learn.microsoft.com/azure/devops/organizations/security/permissions/).
+    > To understand the different types of groups and permissions, see [Security groups, service accounts, and permissions in Azure DevOps](/azure/devops/organizations/security/permissions/).
 
 5. Select the "Members" tab to view the list of users in the group.
 6. Click on the "+ Add" button, then select the user or group you want to add.
@@ -57,7 +57,7 @@ Team A should be able to create and manage projects but can't delete or rename t
 
 For more information about permissions, security groups, and accounts, see:
 
-- [Security groups, service accounts, and permissions in Azure DevOps](https://learn.microsoft.com/azure/devops/organizations/security/permissions/)
-- [Add organization users and manage access](https://learn.microsoft.com/azure/devops/organizations/accounts/add-organization-users)
-- [About access levels](https://learn.microsoft.com/azure/devops/organizations/security/access-levels)
-- [Troubleshoot access and permission issues](https://learn.microsoft.com/azure/devops/organizations/security/troubleshoot-permissions)
+- [Security groups, service accounts, and permissions in Azure DevOps](/azure/devops/organizations/security/permissions/)
+- [Add organization users and manage access](/azure/devops/organizations/accounts/add-organization-users)
+- [About access levels](/azure/devops/organizations/security/access-levels)
+- [Troubleshoot access and permission issues](/azure/devops/organizations/security/troubleshoot-permissions)

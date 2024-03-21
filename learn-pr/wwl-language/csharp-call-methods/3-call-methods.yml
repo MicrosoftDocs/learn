@@ -4,11 +4,11 @@ title: Exercise - Call the methods of a .NET Class
 metadata:
   title: Exercise - Call the methods of a .NET Class
   description: "Exercise - Call the methods of a .NET Class"
-  ms.date: 11/07/2023
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: module
-  ms.prod: dotnet-csharp
+  ms.topic: unit
+  ms.custom: N/A, devx-track-dotnet
 durationInMinutes: 12
 content: |
   [!include[](includes/3-call-methods.md)]

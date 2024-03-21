@@ -6,10 +6,9 @@ metadata:
   ms.date: 10/10/2023
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-azurecli
-  ms.prod: learning-azure
 title: Exercise - Back up an Azure virtual machine
 durationInMinutes: 10
 content: |

@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.implement-interfaces-c-sharp
+metadata:
+  title: Implement interfaces
+  description: "In this module, you'll learn to extend classes with multiple interfaces, use interfaces as a type, and understand interface design practices."
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: module
+  ms.service: dotnet-csharp
+title: Implement interfaces
+summary: In this module, you'll learn to extend classes with multiple interfaces, use interfaces as a type, and understand interface design practices.
+abstract: |
+  In this module, you will:
+  *   Understand the difference between abstract classes and interfaces
+  *   Learn how to combine multiple interfaces
+  *   Understand how polymorphism applies to interfaces
+  *   Use interfaces as a type
+prerequisites: |
+  - Visual Studio Community installed
+  - A GitHub account to clone code repositories
+  - Basic knowledge of the Visual Studio IDE and project structure
+  - Basic understanding of the C# programming language
+  - Familiarity with classes, abstract classes, and inheritance
+iconUrl: /training/achievements/implement-interfaces.svg
+hidden: true
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- dotnet
+- vs-ide
+units:
+- learn.wwl.implement-interfaces-c-sharp.introduction
+- learn.wwl.implement-interfaces-c-sharp.examine-interfaces-abstract-classes
+- learn.wwl.implement-interfaces-c-sharp.when-use-interfaces
+- learn.wwl.implement-interfaces-c-sharp.exercise-implement-multiple-interfaces
+- learn.wwl.implement-interfaces-c-sharp.exercise-use-interfaces-type
+- learn.wwl.implement-interfaces-c-sharp.exercise-challenge-get-craftable-items
+- learn.wwl.implement-interfaces-c-sharp.review-solution-get-craftable-items
+- learn.wwl.implement-interfaces-c-sharp.knowledge-check
+- learn.wwl.implement-interfaces-c-sharp.summary
+badge:
+  uid: learn.wwl.implement-interfaces-c-sharp.badge

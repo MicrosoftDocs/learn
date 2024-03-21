@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/26/2023
+  ms.date: 12/05/2023
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.service: azure-ai-services
+  ms.topic: unit
 durationInMinutes: 3
 quiz:
   questions:
@@ -42,6 +41,6 @@ quiz:
     - content: "An AI service to recognize faces"
       isCorrect: false
       explanation: "Incorrect. The Azure AI Face resource is one of many Azure AI services."
-    - content: "A single-service resource for Azure Cognitive Search"
+    - content: "A single-service resource for Azure AI Search"
       isCorrect: false
-      explanation: "Incorrect. Azure Cognitive Search is the single-service resource for Azure Cognitive Search."
+      explanation: "Incorrect. Azure AI Search is the single-service resource for Azure AI Search."

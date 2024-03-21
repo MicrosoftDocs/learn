@@ -6,7 +6,7 @@ metadata:
   description: Learn about the components of an Azure Batch workload, from pools, nodes, jobs and tasks.
   ms.date: 06/01/2019
   author: lauradolan
-  ms.author: ladolan
+  ms.author: jushiman
   ms.topic: unit
   ms.custom:
     - devx-track-dotnet

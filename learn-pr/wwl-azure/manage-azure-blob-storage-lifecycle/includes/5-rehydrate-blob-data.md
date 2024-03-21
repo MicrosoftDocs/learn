@@ -23,11 +23,11 @@ Copying an archived blob to an online destination tier is supported within the s
 
 The following table shows the behavior of a blob copy operation, depending on the tiers of the source and destination blob.
 
-|  | Hot tier source | Cool tier source | Archive tier source |
+| Blob copy destination | Hot tier source | Cool tier source | Archive tier source |
 |--|--|--|--|
-| Hot tier destination | Supported | Supported | Supported within the same account. Requires blob rehydration. |
-| Cool tier destination | Supported | Supported | Supported within the same account. Requires blob rehydration. |
-| Archive tier destination | Supported | Supported | Unsupported |
+| Hot tier  | Supported | Supported | Supported within the same account. Requires blob rehydration. |
+| Cool tier | Supported | Supported | Supported within the same account. Requires blob rehydration. |
+| Archive tier | Supported | Supported | Unsupported |
 
 ## Change a blob's access tier to an online tier
 

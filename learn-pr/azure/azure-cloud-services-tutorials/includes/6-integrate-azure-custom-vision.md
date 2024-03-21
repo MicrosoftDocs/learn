@@ -4,4 +4,4 @@ Azure Custom Vision is an image-recognition service that lets you build, deploy,
 
 ## Azure AI services
 
-Azure AI services are a set of machine learning algorithms that Microsoft has developed to solve problems in the field of Artificial Intelligence (AI). The goal of Azure AI services is to democratize AI by packaging it into discrete components that are easy for developers to use in their own apps. Web and Universal Windows Platform developers can consume these algorithms through standard REST calls over the Internet to the Azure AI services APIs.
+Azure AI services are a set of machine-learning algorithms that Microsoft has developed to solve problems in the field of Artificial Intelligence (AI). The goal of Azure AI services is to democratize AI by packaging it into discrete components that are easy for developers to use in their own apps. Web and Universal Windows Platform developers can consume these algorithms through standard REST calls over the Internet to the Azure AI services APIs.

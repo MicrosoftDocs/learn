@@ -3,10 +3,10 @@ uid: learn.wwl.get-started-kusto-fabric
 metadata:
   title: Get started with Real-Time Analytics in Microsoft Fabric
   description: "Get started with Real-Time Analytics in Microsoft Fabric"
-  ms.date: 08/30/2023
+  ms.date: 01/09/2024
   author: wwlpublish
-  ms.author: shlindsay
-  ms.topic: module
+  ms.author: anrudduc
+  ms.topic: module-standard-task-based
   ms.custom:
   - build-2023
   - build-2023-dataai

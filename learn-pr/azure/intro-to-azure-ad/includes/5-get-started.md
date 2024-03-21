@@ -1,10 +1,10 @@
-Your organization has decided to use Microsoft Entra ID to manage secure access. Users include doctors, external healthcare partners, and all internal staff members. You've been asked to look into implementing secure access for your organization.
+Your organization decides to use Microsoft Entra ID to manage secure access. Users include doctors, external healthcare partners, and all internal staff members. You're asked to look into implementing secure access for your organization.
 
-Here, you'll learn how to take a phased approach to deploying Microsoft Entra ID for your organization. You'll learn how to lay a foundation, deploy Microsoft Entra ID by creating a tenant, and associate a subscription with it.
+Here, you learn how to take a phased approach to deploying Microsoft Entra ID for your organization. You learn how to lay a foundation, deploy Microsoft Entra ID by creating a tenant, and associate a subscription with it.
 
 ## Deploy in phases
 
-A good way to deploy Microsoft Entra ID is in phases. Your deployment is split into several stages. Each stage addresses a key aspect of Microsoft Entra ID. A phase includes tasks you'll need to complete before you go to the next stage. This approach lays a secure foundation for your Microsoft Entra instance.
+A good way to deploy Microsoft Entra ID is in phases. Your deployment is split into several stages. Each stage addresses a key aspect of Microsoft Entra ID. A phase includes the  tasks you need to complete before you go to the next stage. This approach lays a secure foundation for your Microsoft Entra instance.
 
 ### Stage 1: Build a secure foundation
 
@@ -34,8 +34,8 @@ Now you can add users and plan how to handle external guest-user access. The fol
 |**Use Microsoft Entra Connect Health**|  Use Microsoft Entra Connect Health to monitor the health statistics for your Microsoft Entra Connect environment. | Microsoft Entra ID P1                                          |
 |**Give users the licenses they need at a group level**| When you assign licenses at a group level, you control licensing for many users simultaneously. This action saves your organization time and reduces complexity.|Free|
 |**Use Microsoft Entra B2B Collaboration for guest-user access**| Use this resource to ensure that external healthcare partner users can use their own work or social identities to access your applications and services. You don't need to manage their credentials for them. | Required licenses depend on which features you want the guest users to access|
-|**Prepare a device-management strategy** | Put together a plan based on which devices your company allows. For example, will you permit Bring Your Own Device (BYOD), or will the company accept only devices it has given to users? |Free|
-|**Provide authentication methods that don't require passwords**| Make authentication more convenient. For example, if users have installed Microsoft Authenticator on their phones, they can receive a notification that provides a code to enter at sign-in, along with a PIN or a biometric attribute like their fingerprint. | Microsoft Entra ID P1
+|**Prepare a device-management strategy** | Put together a plan based on which devices your company allows. For example, are you going to permit Bring Your Own Device (BYOD), or is the company only accepting its own devices given to users? |Free|
+|**Provide authentication methods that don't require passwords**| Make authentication more convenient. For example, if users install Microsoft Authenticator on their phones, they can receive a notification that provides a code to enter at sign-in, along with a PIN or a biometric attribute like their fingerprint. | Microsoft Entra ID P1
 
 ### Stage 3: Manage your applications
 
@@ -49,7 +49,7 @@ You can now integrate your applications with Microsoft Entra ID. The following t
 
 ### Stage 4: Monitor your administrators, do access reviews, and automate user life cycles
 
-Now you can address how much privilege your admins should have, and you can complete access reviews. In this stage, you'll also configure how to automate common user life-cycle tasks. The following table describes your tasks in this stage.
+Now you can address how much privilege your admins should have, and you can complete access reviews. In this stage, you also configure how to automate common user life-cycle tasks. The following table describes your tasks in this stage.
 
 | Task | Description | License needed |
 |---|---|---|

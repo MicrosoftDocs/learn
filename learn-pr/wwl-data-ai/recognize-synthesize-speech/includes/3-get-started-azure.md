@@ -36,7 +36,7 @@ The text to speech API enables you to convert text input to audible speech, whic
 
 When you use the text to speech API, you can specify the voice to be used to vocalize the text. This capability offers you the flexibility to personalize your speech synthesis solution and give it a specific character.
 
-The service includes multiple pre-defined voices with support for multiple languages and regional pronunciation, including *standard* voices as well as *neural* voices that leverage *neural networks* to overcome common limitations in speech synthesis with regard to intonation, resulting in a  more natural sounding voice. You can also develop custom voices and use them with the text to speech API
+The service includes multiple pre-defined voices with support for multiple languages and regional pronunciation, including *neural* voices that leverage *neural networks* to overcome common limitations in speech synthesis with regard to intonation, resulting in a more natural sounding voice. You can also develop custom voices and use them with the text to speech API
 
 ## Supported Languages
 

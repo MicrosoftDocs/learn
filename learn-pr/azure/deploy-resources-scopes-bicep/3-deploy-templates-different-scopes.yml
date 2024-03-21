@@ -6,8 +6,8 @@ metadata:
   title: Deploy templates at various scopes
   description: Learn how to create Bicep files that deploy resources to a subscription, management group, or tenant.
   ms.date: 10/14/2021
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
   ms.custom:
     - devx-track-bicep

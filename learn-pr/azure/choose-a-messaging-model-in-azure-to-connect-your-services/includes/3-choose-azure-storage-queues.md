@@ -53,10 +53,6 @@ In this case, we want to make sure _all_ messages get processed, or none of them
 
 Having understood that the communication strategy for this architecture should be a message, you must choose whether to use Azure Storage queues or Azure Service Bus. You can use both technologies to store and deliver messages between your components. Each has a slightly different feature set, which means you can choose one or the other, or use both, depending on the problem you're solving.
 
-#### Use Service Bus topics if you:
-
-- Need multiple receivers to handle each message.
-
 #### Use Service Bus queues if you:
 
 - Need an At-Most-Once delivery guarantee.
@@ -67,6 +63,10 @@ Having understood that the communication strategy for this architecture should b
 - Need to handle messages larger than 64 KB but less than 100 MB. The maximum message size supported by the standard tier is 256 KB and the premium tier is 100 MB.
 - Queue size won't grow larger than 1 TB. The maximum queue size for the standard tier is 80 GB and for the premium tier, it's 1 TB.
 - Want to publish and consume batches of messages.
+
+#### Use Service Bus topics if you:
+
+- Need all the features provided by Service Bus queues, and in addition implement a pub-sub pattern where messages can be routed to one of multiple subscriptions, each with its own independent receivers
 
 Queue storage isn't quite as feature rich, but if you don't need any of those features, it can be a simpler choice. In addition, it's the best solution if your app has any of the following requirements.
 

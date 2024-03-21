@@ -1,6 +1,6 @@
-The Visual Studio Code IDE provides tools for developers who are just starting out, but is also extensible and advanced enough for professional developers.
+Visual Studio Code provides tools for developers who are just starting out, but is also extensible and advanced enough for professional developers.
 
-In this exercise, you open Visual Studio Code and complete a quick tour of the IDE.
+In this exercise, you open Visual Studio Code and complete a quick tour of the user interface.
 
 ## Open Visual Studio Code and examine the Welcome page
 
@@ -98,7 +98,7 @@ In this exercise, you open Visual Studio Code and complete a quick tour of the I
 
 1. Take a minute to read about the formatting options.
 
-    You'll be using code formatting commands during hands-on activities as you learn more about C# programming.
+    You'll be using code formatting commands during activities as you learn more about C# programming.
 
 1. Close the Editor Playground document.
 

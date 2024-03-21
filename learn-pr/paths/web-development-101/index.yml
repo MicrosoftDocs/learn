@@ -5,8 +5,8 @@ metadata:
   description: Learn the basics of web development using HTML, JavaScript and CSS.
   ms.date: 04/26/2021
   author: softchris
-  ms.author: jelooper
-  ms.topic: interactive-tutorial
+  ms.author: chnoring 
+  ms.topic: learning-path
 title: Web Development for Beginners
 prerequisites: none
 summary: |
@@ -19,7 +19,6 @@ roles:
 products:
 - azure
 subjects:
-- development-tools
 - accessibility
 modules:
 - learn.student-evangelism.web-development-101.introduction-to-programming

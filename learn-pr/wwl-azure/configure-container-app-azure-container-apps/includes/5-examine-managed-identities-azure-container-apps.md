@@ -16,7 +16,7 @@ With managed identities:
 - System-assigned identities are automatically created and managed. They're deleted when your container app is deleted.
 - You can add and delete user-assigned identities and assign them to multiple resources. They're independent of your container app's life cycle.
 - You can use managed identity to authenticate with a private Azure Container Registry without a username and password to pull containers for your Container App.
-- You can use managed identity to create connections for Dapr-enabled applications via Dapr components
+- You can use managed identity to create connections for Dapr-enabled applications via Dapr components.
 
 ### Common use cases
 

@@ -16,13 +16,13 @@ To check the exact system procedure names, use the catalog views:
 
 `sys.system_parameters`
 
-System stored procedures are prefixed with **sp_**. System stored procedures are not created by users, but are part of all user-defined and system-defined databases. They do not require a fully qualified name to be executed, but it is best practice to include the **sys** schema name. For example:
+System stored procedures are prefixed with **sp_**. System stored procedures aren't created by users, but are part of all user-defined and system-defined databases. They don't require a fully qualified name to be executed, but it's best practice to include the **sys** schema name. For example:
 
 `EXEC sys.sp_who;`
 
 ## Automatically execute a stored procedure
 
-You can run a stored procedure every time SQL Server starts. You might want to carry out database maintenance operations, or run a procedure as a background process. Stored procedures that run automatically cannot contain input or output parameters.
+You can run a stored procedure every time SQL Server starts. You might want to carry out database maintenance operations, or run a procedure as a background process. Stored procedures that run automatically can't contain input or output parameters.
 
 Use the **sp_procoption** to run a stored procedure every time an instance of SQL Server is started. The syntax is:
 

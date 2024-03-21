@@ -6,4 +6,4 @@ Now that you've completed this module, you can:
 - Analyze an image.
 - Generate a smart cropped thumbnail.
 
-To learn more about the Azure AI Vision service, see the [Azure AI Vision documentation](/azure/cognitive-services/computer-vision/).
+To learn more about the Azure AI Vision service, see the [Azure AI Vision documentation](/azure/ai-services/computer-vision/).

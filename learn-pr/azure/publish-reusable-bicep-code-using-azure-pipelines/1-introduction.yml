@@ -6,8 +6,8 @@ metadata:
   title: Introduction
   description: Introduction to publishing template specs and Bicep modules by using Azure Pipelines.
   ms.date: 06/29/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
   ms.custom:
     - devx-track-bicep

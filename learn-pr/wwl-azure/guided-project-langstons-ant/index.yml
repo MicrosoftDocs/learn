@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project-langstons-ant
+metadata:
+  title: Guided project langstons ant
+  description: "This module will guide you through the steps required to develop your own Langston's Ant project. Your code will use interfaces to represent the functions the ants can perform."
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: module
+  ms.service: dotnet-csharp
+title: Guided project langstons ant
+summary: This module will guide you through the steps required to develop your own Langston's Ant project. Your code will use interfaces to represent the functions the ants can perform.
+abstract: |
+  In this module, you'll practice how to:
+  - Create and implement interfaces
+  - Use interfaces as a type
+prerequisites: |
+  - Visual Studio Community installed
+  - A GitHub account to clone code repositories
+  - Basic knowledge of the Visual Studio IDE and project structure
+  - Basic understanding of the C# programming language
+  - Familiarity with classes, abstract classes, and inheritance
+iconUrl: /training/achievements/guided-project-langstons-ant.svg
+hidden: true
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- dotnet
+- vs
+- vs-code
+- vs-ide
+units:
+- learn.wwl.guided-project-langstons-ant.introduction
+- learn.wwl.guided-project-langstons-ant.prepare
+- learn.wwl.guided-project-langstons-ant.exercise-create-interface
+- learn.wwl.guided-project-langstons-ant.exercise-use-interface-type
+- learn.wwl.guided-project-langstons-ant.knowledge-check
+- learn.wwl.guided-project-langstons-ant.summary
+badge:
+  uid: learn.wwl.guided-project-langstons-ant.badge

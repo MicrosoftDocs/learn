@@ -4,10 +4,10 @@ title: Add registry entries on both cluster nodes of the SAP ASCS-SCS instance
 metadata:
   title: Add registry entries on both cluster nodes of the SAP ASCS-SCS instance
   description: "Add registry entries on both cluster nodes of the SAP ASCS-SCS instance"
-  ms.date: 10/18/2023
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/6-add-registry-entries-both-cluster-nodes-sap-ascs-scs-instance.md)]

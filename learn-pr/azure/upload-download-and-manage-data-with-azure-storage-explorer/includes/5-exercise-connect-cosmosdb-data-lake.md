@@ -33,7 +33,7 @@ Now that you've created a Gen2 enabled storage account, Storage Explorer should 
     > [!NOTE]
     > It might take several minutes for the storage account to display in Storage Explorer. If you don't see the storage account, wait a few moments and select **Refresh all**.
 
-1. You'll see the **dlsstoragetest001 (ADLS Gen2)** storage account displayed under the storage accounts. Your account will have a different number suffix.
+1. You'll see the **dlstoragetest001 (ADLS Gen2)** storage account displayed under the storage accounts. Your account will have a different number suffix.
 
    ![Screenshot that shows the Azure Data Lake Storage Gen2 account.](../media/5-azure-data-lake-gen2-storage-account.png)
 
@@ -41,7 +41,7 @@ Now that you've created a Gen2 enabled storage account, Storage Explorer should 
 
 All containers in a Data Lake Gen2 enabled storage account are blobs. To create a new container:
 
-1. Right-click the **dlsstoragetest001** storage account, and select **Create Blob Container** from the shortcut menu.
+1. Right-click the **dlstoragetest001** storage account, and select **Create Blob Container** from the shortcut menu.
 
     ![Screenshot that shows the shortcut menu for adding a container.](../media/5-data-lake-create-blob-container.png)
 

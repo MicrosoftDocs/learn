@@ -7,8 +7,7 @@ metadata:
   author: ivorb
   ms.author: berryivor
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
-  ms.service: azure
-  ms.subservice: openai 
+  ms.service: azure-ai-openai
   ms.custom:
     - build-2023
     - build-2023-dataai
@@ -37,7 +36,6 @@ products:
   - azure
 subjects: 
   - cloud-computing
-  - data-ai
 units:
 - learn.wwl.apply-prompt-engineering-azure-openai.introduction
 - learn.wwl.apply-prompt-engineering-azure-openai.understand-prompt-engineering

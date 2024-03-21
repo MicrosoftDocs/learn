@@ -10,9 +10,12 @@ Additionally, you can use SSH with Microsoft Entra credentials. With SSH you can
 ## Supported Linux environments
 
 - CentOS: CentOS 7, CentOS 8
-- RedHat Enterprise Linux (RHEL): RHEL 7.4 to RHEL 7.10, RHEL 8.3+
+- RedHat Enterprise Linux (RHEL): RHEL 7.4 to RHEL 7.9, RHEL 8.3+
 - SUSE Linux Enterprise Server (SLES): SLES 12, SLES 15.1+
-- Ubuntu Server: Ubuntu Server 16.04 to Ubuntu Server 20.04
+- Ubuntu Server: Ubuntu Server 16.04 to Ubuntu Server 22.04
+- Common Base Linux Mariner (CBL-Mariner): CBL-Mariner 1, CBL-Mariner 2
+- Debian: Debian 9, Debian 10, Debian 11
+- openSUSE: openSUSE Leap 42.3, openSUSE Leap 15.1+
 
 ## Enabling SSH functionality
 

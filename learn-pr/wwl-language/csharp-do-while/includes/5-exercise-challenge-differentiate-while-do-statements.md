@@ -122,7 +122,7 @@ Here are the conditions that your second coding project must implement:
 
   - Your solution must use a `Console.ReadLine()` statement to obtain input from the user.
   - Your solution must ensure that the value entered matches one of the three role options.
-  - Your solution should use the `Trim()` method on the input value to ignore leading and training space characters.
+  - Your solution should use the `Trim()` method on the input value to ignore leading and trailing space characters.
   - Your solution should use the `ToLower()` method on the input value to ignore case.
   - If the value entered isn't a match for one of the role options, your code must use a `Console.WriteLine()` statement to prompt the user for a valid entry.
 

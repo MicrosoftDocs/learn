@@ -3,8 +3,8 @@ uid: learn.oxford.run-cognitive-services-iot-edge
 metadata:
   title: "Run Azure AI services on IoT Edge"
   description: Implement a cognitive service for performing language detection on an IoT Edge device.
-  ms.date: 6/12/2020
-  author: leestott
+  ms.date: 11/28/2023
+  author: PatAltimore
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.custom: team=nextgen
@@ -17,7 +17,6 @@ abstract: |
     - Implement a cognitive service for performing language detection on an edge device
     - Describe how the components and services of a solution to deploy a cognitive service on an edge device work together to solve the problem of language detection on an edge device.  
 
-    "***Produced in partnership with the University of Oxford – Ajit Jaokar, Artificial Intelligence: Cloud and Edge Implementations course.***"
 prerequisites: |
     - Basic knowledge of Azure IoT Edge
     - Basic knowledge of Azure IoT Hub

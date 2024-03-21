@@ -36,13 +36,7 @@ When you create a storage account in Azure, it's automatically configured to sen
 
 ## Storage account metrics and classic storage metrics
 
-Originally, Azure Storage collected metrics and stored them in **$Metric** tables within the same storage account. These metrics are known as old metrics or classic metrics, and they included capacity measurements for Blob Storage, and transaction measurements for blob, table, file, and queue storage.
-
-In the Azure portal, classic storage metrics are shown on pages with **(classic)** appended to the title:
-
-![Screenshot of the Azure Portal with the Monitoring (classic) navigation options highlighted.](../media/2-classic-metrics-in-portal.png)
-
-Old storage metrics still work, but they're deprecated, and support for them is likely to end in the future. If you're using old metrics, you should migrate them to the new storage metrics as soon as possible.
+Originally, Azure Storage collected metrics and stored them in **$Metric** tables within the same storage account. These metrics are known as old metrics or classic metrics, and they included capacity measurements for Blob Storage, and transaction measurements for blob, table, file, and queue storage. Old storage metrics are deprecated.
 
 For new storage metrics, Azure Storage sends the data to the Azure Monitor backend in order to unify the metrics from Azure Storage with the metrics of other Azure services. You get the same monitoring experience regardless of the data source in Azure Monitor, and you can integrate metrics from different sources into the same displays.
 

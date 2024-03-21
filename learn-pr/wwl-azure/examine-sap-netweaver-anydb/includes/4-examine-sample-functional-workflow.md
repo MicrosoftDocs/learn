@@ -2,7 +2,7 @@ This workflow illustrates how a user request flows through an SAP landscape buil
 
 :::image type="content" source="../media/sap-netweaver-anydb-workflow-example-e1119375.gif" alt-text="Diagram of S A P Net Weaver with Any D B on Azure virtual machines sample functional workflow.":::
 
-1. Using **Azure Active Directory synchronized with on-premises Active Directory**, SAP application user authenticates from on-premises to SAP landscape on Azure with single sign-on credentials.<br>
+1. Using **Microsoft Entra ID synchronized with on-premises Active Directory**, SAP application user authenticates from on-premises to SAP landscape on Azure with single sign-on credentials.
 2. Azure high-speed **Express Route Gateway connects on-premises network to Azure virtual machines** and other resources securely.
 3. Sales order request flows into highly available SAP ABAP SAP Central Services (ASCS), and then through SAP application servers running on Azure Virtual Machines scale out file server in an Azure VM.
 4. The request moves from the SAP app server to SQL Server running on a primary high-performance Azure VM.

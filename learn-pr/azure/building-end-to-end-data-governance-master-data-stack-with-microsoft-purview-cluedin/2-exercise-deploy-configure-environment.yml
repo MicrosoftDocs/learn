@@ -8,6 +8,6 @@ metadata:
   author: whhender
   ms.author: whhender
   ms.topic: unit
-durationInMinutes: 15
+durationInMinutes: 30
 content: |
   [!include[](includes/2-exercise-deploy-configure-environment.md)]

@@ -16,8 +16,8 @@ After completing this module, students and professionals can:
 
 For some exercises, you must create an Azure DevOps Organization and a Team Project. If you don't have them yet, see the following:
 
-- [Create an organization - Azure DevOps.](https://learn.microsoft.com/azure/devops/organizations/accounts/create-organization)
-- [Create a project in Azure DevOps.](https://learn.microsoft.com/azure/devops/organizations/projects/create-project)
+- [Create an organization - Azure DevOps.](/azure/devops/organizations/accounts/create-organization)
+- [Create a project in Azure DevOps.](/azure/devops/organizations/projects/create-project)
 
 We recommend you understand Azure DevOps and pipeline management to get the most out of this course.
 

@@ -47,7 +47,7 @@ roles:
 products:
 - azure
 subjects:
-- database
+- databases
 units:
 - learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.0-introduction
 - learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.1-apache-hbase

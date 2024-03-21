@@ -1,5 +1,3 @@
-
-
 Intune provides built-in tools for reporting and monitoring compliance. These reports enable administrators to focus on situations and take action. Device compliance reports are meant to be broad in nature and provide a more traditional reporting view of data to identify aggregated metrics.
 
 ### Device compliance summary report

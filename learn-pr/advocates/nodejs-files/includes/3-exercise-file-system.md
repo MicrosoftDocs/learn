@@ -1,5 +1,3 @@
-You can use Node.js to find and return information about files and folders.
-
 Tailwind Traders has many physical stores all over the world. Each night, these stores create a file called *sales.json* that contains the total for all their sales for the previous day. These files are organized in folders named by store ID.
 
 In this exercise, you write a Node.js program that can search for files called *sales.json* in a folder.
@@ -91,13 +89,13 @@ Expand the *stores* folder and each of the numbered folders inside.
 
 1. In the `./nodejs-files` subfolder, create a *index.js* file to open it in the editor.
 
-1. At the top of the file, add the following code in include the *fs* module is available to the code in the file.
+1. At the top of the file, add the following code to include the **fs** module in the file.
 
    ```javascript
    const fs = require("fs").promises;
    ```
 
-1. Next, create tnode he `main` method is the entry point for your code. The last line of code in this file invokes the `main` method.
+1. Next, create the `main` function which is the entry point for your code. The last line of code in this file invokes the `main` method.
 
    ```javascript
    const fs = require("fs").promises;
@@ -107,9 +105,11 @@ Expand the *stores* folder and each of the numbered folders inside.
    main();
    ```
 
-### Write a method to find the sales.json files
+   This is typical CommonJS boilerplate code to call an asynchronous function. 
 
-1. Create a new method called `findSalesFiles` that takes a `folderName` parameter.
+### Write a function to find the `sales.json` files
+
+1. Create a new function called `findSalesFiles` that takes a `folderName` parameter.
 
    ```javascript
    async function findSalesFiles(folderName) {
@@ -117,134 +117,99 @@ Expand the *stores* folder and each of the numbered folders inside.
    }
    ```
 
-1. Add an array at the top, to hold the paths to all the sales files that the program finds.
+1. Inside the `findSalesFiles` function, add the following code to complete these tasks:
+
+    * (1) Add an array at the top, to hold the paths to all the sales files that the program finds.
+    * (2) Read the currentFolder with the `readdir` method. 
+    * (3) Add a block to loop over each item returned from the `readdir` method   using the asynchronous `for...of` loop. 
+    * (4) Add an `if` statement to determine if the item is a file or a directory. 
+    * (5) If the item is a directory, _recursively_ call the function `findSalesFiles` again, passing in the path to the item. 
+    * (6) If it's not a directory, add a check to make sure the item name matches *sales.json*.
 
    ```javascript
    async function findSalesFiles(folderName) {
-     // this array will hold sales files as they are found
-     let salesFiles = [];
 
-     // FIND SALES FILES
+      // (1) Add an array at the top, to hold the paths to all the sales files that the program finds.
+      let results = [];
+    
+      // (2) Read the currentFolder with the `readdir` method. 
+      const items = await fs.readdir(folderName, { withFileTypes: true });
+    
+      // (3) Add a block to loop over each item returned from the `readdir` method using the asynchronous `for...of` loop. 
+      for (const item of items) {
+    
+        // (4) Add an `if` statement to determine if the item is a file or a directory. 
+        if (item.isDirectory()) {
+    
+          // (5) If the item is a directory, recursively call the function `findSalesFiles` again, passing in the path to the item. 
+          const resultsReturned = await findSalesFiles(`${folderName}/${item.name}`);
+          results = results.concat(resultsReturned);
+        } else {
+          // (6) If it's not a directory, add a check to make sure the item name matches *sales.json*.
+          if (item.name === "sales.json") {
+            results.push(`${folderName}/${item.name}`);
+          }
+        }
+      }
+    
+      return results;
    }
    ```
 
-1. Create a method within this function called `findFiles`, which also takes a `folderName` parameter.
-
-   ```javascript
-   async function findSalesFiles(folderName) {
-     // this array will hold sales files as they are found
-     let salesFiles = [];
-
-     async function findFiles(folderName) {
-       // FIND SALES FILES
-     }
-   }
-   ```
-
-   This new method `findFiles` is created inside the main `findSalesFiles` method so that it can run as many times as necessary to find all the sales files and populate the `salesFiles` array. The `folderName` value is the path to the current folder.
-
-1. Inside the `findFiles` method, read the `currentFolder` path with the `readdirsync` method.
-
-   ```javascript
-   async function findSalesFiles(folderName) {
-     // this array will hold sales files as they are found
-     let salesFiles = [];
-
-     async function findFiles(folderName) {
-       // read all the items in the current folder
-       const items = await fs.readdir(folderName, { withFileTypes: true });
-
-       // FIND SALES FILES
-     }
-   }
-   ```
-
-1. Add a block to loop over each item returned from the `readdirsync` method.
-
-   ```javascript
-   async function findSalesFiles(folderName) {
-     // this array will hold sales files as they are found
-     let salesFiles = [];
-
-     async function findFiles(folderName) {
-       // read all the items in the current folder
-       const items = await fs.readdir(folderName, { withFileTypes: true });
-
-       // iterate over each found item
-       for (item of items) {
-         // FIND SALES FILES
-       }
-     }
-   }
-   ```
-
-1. Add an `if` statement to determine if the item is a file or a directory.
-
-   ```javascript
-   async function findSalesFiles(folderName) {
-     // this array will hold sales files as they are found
-     let salesFiles = [];
-
-     async function findFiles(folderName) {
-       // read all the items in the current folder
-       const items = await fs.readdir(folderName, { withFileTypes: true });
-
-       // iterate over each found item
-       for (item of items) {
-         if (item.isDirectory()) {
-           // FIND SALES FILES IN THIS FOLDER
-         } else {
-           // FIND SALES FILES
-         }
-       }
-     }
-   }
-   ```
-
-1. If the item is a directory, call the `findFiles` method again, passing in the path to the item. If it's not, add a check to make sure the item name matches *sales.json*.
-
-   ```javascript
-   async function findSalesFiles(folderName) {
-     // this array will hold sales files as they are found
-     let salesFiles = [];
-
-     async function findFiles(folderName) {
-       // read all the items in the current folder
-       const items = await fs.readdir(folderName, { withFileTypes: true });
-
-       // iterate over each found item
-       for (item of items) {
-         if (item.isDirectory()) {
-           // search this directory for files (this is recursion!)
-           await findFiles(`${folderName}/${item.name}`);
-         } else {
-           // Make sure the discovered file is a sales.json file
-           if (item.name === "sales.json") {
-             // store the file path in the salesFiles array
-             await salesFiles.push(`${folderName}/${item.name}`);
-           }
-         }
-       }
-     }
-     await findFiles(folderName);
-     return salesFiles;
-   }
-   ```
 
 1. Call this new `findSaleFiles` function from the `main` method. Pass in the *stores* folder name as the location to search for files.
 
    ```javascript
-   async function main() {
-     const salesFiles = await findSalesFiles("stores");
-     console.log(salesFiles);
-   }
+    async function main() {
+      const results = await findSalesFiles("stores");
+      console.log(results);
+    }
    ```
 
-1. Press <kbd>Ctrl-S</kbd> to save the file, and press <kbd>Ctrl-Q</kbd> to close the editor.
+1. The full application looks like: 
+
+    ```javascript
+    const fs = require("fs").promises;
+    
+    async function findSalesFiles(folderName) {
+    
+      // (1) Add an array at the top, to hold the paths to all the sales files that the program finds.
+      let results = [];
+    
+      // (2) Read the currentFolder with the `readdir` method. 
+      const items = await fs.readdir(folderName, { withFileTypes: true });
+    
+      // (3) Add a block to loop over each item returned from the `readdir` method using the asynchronous `for...of` loop. 
+      for (const item of items) {
+    
+        // (4) Add an `if` statement to determine if the item is a file or a directory. 
+        if (item.isDirectory()) {
+    
+          // (5) If the item is a directory, recursively call the function `findSalesFiles` again, passing in the path to the item. 
+          const resultsReturned = await findSalesFiles(`${folderName}/${item.name}`);
+          results = results.concat(resultsReturned);
+        } else {
+          // (6) If it's not a directory, add a check to make sure the item name matches *sales.json*.
+          if (item.name === "sales.json") {
+            results.push(`${folderName}/${item.name}`);
+          }
+        }
+      }
+    
+      return results;
+    }
+    
+    async function main() {
+      const results = await findSalesFiles("stores");
+      console.log(results);
+    }
+    
+    main();
+    ```
 
 ## Run the program
 
-1. Enter the following command into Cloud Shell to run the program.
+1. Enter the following command at the terminal to run the program.
 
    ```bash
    node index.js
@@ -265,7 +230,7 @@ Excellent! You've successfully written a command-line program that can traverse 
 
 However, the way that the path to subfolders was constructed in this example is a little clumsy because it requires concatenating strings together. Also, you might run into issues on other operating systems (like Windows) that use different path separators. 
 
-In the next section, you'll learn how to construct paths that work across operating systems by using the *path* module.
+In the next section, you'll learn how to construct paths that work across operating systems by using the **path** module.
 
 ### Got stuck?
 
@@ -275,39 +240,36 @@ If you got stuck at any point in this exercise, here's the completed code. Remov
 const fs = require("fs").promises;
 
 async function findSalesFiles(folderName) {
-  // this array will hold sales files as they are found
-  let salesFiles = [];
 
-  async function findFiles(folderName) {
-    // read all the items in the current folder
-    const items = await fs.readdir(folderName, { withFileTypes: true });
+  // (1) Add an array at the top, to hold the paths to all the sales files that the program finds.
+  let results = [];
 
-    // iterate over each found item
-    for (item of items) {
-      // if the item is a directory, it will need to be searched for files
-      if (item.isDirectory()) {
-        // search this directory for files (this is recursion!)
-        await findFiles(`${folderName}/${item.name}`);
-      } else {
-        // Make sure the discovered file is a sales.json file
-        if (item.name === "sales.json") {
-          // store the file path in the salesFiles array
-          await salesFiles.push(`${folderName}/${item.name}`);
-        }
+  // (2) Read the currentFolder with the `readdir` method. 
+  const items = await fs.readdir(folderName, { withFileTypes: true });
+
+  // (3) Add a block to loop over each item returned from the `readdir` method using the asynchronous `for...of` loop. 
+  for (const item of items) {
+
+    // (4) Add an `if` statement to determine if the item is a file or a directory. 
+    if (item.isDirectory()) {
+
+      // (5) If the item is a directory, recursively call the function `findSalesFiles` again, passing in the path to the item. 
+      const resultsReturned = await findSalesFiles(`${folderName}/${item.name}`);
+      results = results.concat(resultsReturned);
+    } else {
+      // (6) If it's not a directory, add a check to make sure the item name matches *sales.json*.
+      if (item.name === "sales.json") {
+        results.push(`${folderName}/${item.name}`);
       }
     }
   }
 
-  // find the sales files
-  await findFiles(folderName);
-
-  // return the array of found file paths
-  return salesFiles;
+  return results;
 }
 
 async function main() {
-  const salesFiles = await findSalesFiles("stores");
-  console.log(salesFiles);
+  const results = await findSalesFiles("stores");
+  console.log(results);
 }
 
 main();

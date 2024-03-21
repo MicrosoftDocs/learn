@@ -13,9 +13,9 @@ In a real-world application, you would store your data in a backing store, like 
 
 ## Videos for learning more
 
-- [.NET 101](/shows/NET-Core-101/?WT.mc_id=Educationaldotnet-c9-scottha&azure-portal=true)
-- [ASP.NET Core Web API 101](/shows/Beginners-Series-to-Web-APIs/)
-- [ASP.NET Core 101](/shows/ASPNET-Core-101/?WT.mc_id=Educationaspnet-c9-niner&azure-portal=true)
+- [.NET for Beginners](/shows/dotnet-for-beginners/)
+- [C# for Beginners](/shows/csharp-for-beginners/)
+- [All .NET Beginner Videos](https://dotnet.microsoft.com/learn/videos)
 
 ## Articles for learning more
 

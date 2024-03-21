@@ -6,7 +6,7 @@ metadata:
   ms.date: 06/07/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Configure resources with Azure Resource Manager templates
 summary: You'll learn how to use Azure Resource Manager templates to consistently deploy assets.
 abstract: |

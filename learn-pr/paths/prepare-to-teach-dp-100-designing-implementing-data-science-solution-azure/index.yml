@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/08/2023
   author: wwlpublish
   ms.author: tsheppard
-  ms.topic: interactive-tutorial
+  ms.topic: learning-path
 title: Prepare to teach DP-100 Designing and Implementing a Data Science Solution on Azure
 prerequisites: |
   none
@@ -20,7 +20,7 @@ roles:
 products:
 - azure
 subjects:
-- data-ai
+- data-management
 modules:
 - learn.wwl.introduction-microsoft-learn-educators-program
 - learn.wwl.onboard-microsoft-learn-educators-program

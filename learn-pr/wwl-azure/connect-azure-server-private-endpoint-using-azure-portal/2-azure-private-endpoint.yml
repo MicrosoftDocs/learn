@@ -4,10 +4,10 @@ title: Azure Private Endpoint
 metadata:
   title: Azure Private Endpoint
   description: "Azure Private Endpoint"
-  ms.date: 10/09/2023
+  ms.date: 01/16/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/2-azure-private-endpoint.md)]

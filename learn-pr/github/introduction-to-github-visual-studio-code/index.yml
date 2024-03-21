@@ -7,7 +7,7 @@ metadata:
   author: kjo-msft
   ms.author: karinjohnson
   ms.topic: module-intro-to-product
-  ms.prod: vs-code
+  ms.service: vs-code
   manager: jmartens
 title: "Introduction to GitHub in Visual Studio Code"
 summary: Get started with the basics of using GitHub in Visual Studio Code through hands-on exercises. Create a simple project in Visual Studio Code to publish to GitHub. Clone an existing GitHub repo to Visual Studio Code and review the repo timeline.
@@ -32,8 +32,6 @@ roles:
 products:
 - github
 - azure
-subjects:
-- development-tools
 units:
 - learn.github.introduction-to-github-vs-code.1-introduction
 - learn.github.introduction-to-github-vs-code.2-lesson-authentication

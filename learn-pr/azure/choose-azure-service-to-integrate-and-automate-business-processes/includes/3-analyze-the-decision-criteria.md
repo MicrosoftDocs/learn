@@ -1,14 +1,14 @@
 There are several different business processes that run your bicycle rental business. For example, there's the bike rental process, a return process, a bike booking process, and processes that don't directly relate to bikes, such as holiday booking for the staff.
 
-We've introduced an array of Azure technology that could be used to help build these processes. Let's try to be more concrete about how we make the decision for a given process.
+We've introduced an array of Azure technologies that could be used to help build these processes. Let's try to be more concrete about how we make the decision for a given process.
 
 ## How to choose a service
 
 The following diagram shows a simplified flow chart that you can use to choose the best technology to use for your business process:
 
-:::image type="content" source="../media/3-service-choice-flow-diagram.png" alt-text="Diagram of decision flow chart that will be described in depth in the text that follows.":::
+:::image type="content" source="../media/3-service-choice-flow-diagram.png" alt-text="Diagram of decision flow chart described in depth in the text that follows.":::
 
-The first question to ask is whether you prefer to design the workflow in a GUI designer tool or by writing code. Valid reasons for using a design-first tool, include:
+The first question to ask is whether you prefer to design the workflow in a GUI designer tool or by writing code. Valid reasons for using a design-first tool include:
 
 - People who design the workflow have no coding experience.
 - Later designers and users can consult the graphical design to clearly understand how the workflow proceeds.
@@ -24,7 +24,7 @@ If you choose to use a design-first approach, you must also choose from Microsof
 
 The principal question here is who will design the workflow: will it be developers or users?
 
-In Logic Apps, there is a GUI designer on which you draw out the workflow. It's intuitive and easy to use but you also have the opportunity to look under the hood and edit the source code for a workflow. This tool is designed for people with development skills.
+In Logic Apps, there is a visual designer on which you draw out the workflow. It's intuitive and easy to use but you also have the opportunity to look under the hood and edit the source code for a workflow. This tool is designed for people with development skills.
 
 In Microsoft Power Automate, extra help and templates are provided for common types of workflow. There's no way to edit the source code that the tool creates. This tool is designed for users who have a good understanding of the business process but no coding skills.
 

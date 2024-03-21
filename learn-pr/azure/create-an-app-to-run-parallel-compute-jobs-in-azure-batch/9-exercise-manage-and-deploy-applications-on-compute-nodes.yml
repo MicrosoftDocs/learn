@@ -6,7 +6,7 @@ metadata:
   description: In this hands-on exercise, you'll add code to run tasks on compute nodes.
   ms.date: 06/01/2019
   author: lauradolan
-  ms.author: ladolan
+  ms.author: jushiman
   ms.topic: unit
 durationInMinutes: 10
 content: |

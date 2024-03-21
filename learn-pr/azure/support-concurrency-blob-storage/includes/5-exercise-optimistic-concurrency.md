@@ -1,6 +1,7 @@
 ﻿In the previous exercise, you saw how the newsroom chief only saw Reporter A's edit. The app allowed reporters to overwrite Reporter B's story. In this exercise, you implement the optimistic approach to resolving concurrency so that Reporter B doesn't lose their work.
 
-In this exercise you will:
+In this exercise, you will:
+
 - Change the `SimulateReporter` method to use an ETag
 - Test the updated app
 
@@ -8,13 +9,13 @@ In this exercise you will:
 
 [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
-1. Open **Program.cs**: 
+1. Open **Program.cs**:
 
     ```console
     code Program.cs
     ```
 
-1. In the code editor, add the code to capture the current ETag value. Scroll down to the `SimulateReporter` method and find the line of code that reads `Console.WriteLine($"{authorName} begins writing their story...");`. Immediately before this line, insert the following code:
+1. In the code editor, add the code to capture the current ETag value. Scroll down to the `SimulateReporter` method and find the line of code that reads `Console.WriteLine($"{authorName} begins writing their story...");`. Immediately before that line, insert the following code:
 
     ```csharp
     // Store the current ETag
@@ -25,7 +26,7 @@ In this exercise you will:
     This code modifies the simulated news editor application to record the ETag of the blob at the time it's read.
 
 1. In `SimulateReporter`, change the call to `UploadAsync` to set a request condition as part of a `BlobUploadOptions` instance. When passed to the upload method, this condition confirms the ETag before saving the changes. This change modifies the simulated news editor application to enforce optimistic concurrency.
-    
+
     **Remove** the following code from the method:
 
     ```csharp
@@ -100,7 +101,7 @@ In this exercise you will:
     [[REPORTER B'S STORY]]
     ```
 
-    This time, when Reporter A has finished writing the story and tries to save their changes, the app doesn't let them. The save fails because the file was changed by Reporter B since the last time they viewed it.
+    This time, when Reporter A has finished writing the story and tries to save their changes, the app doesn't let them. The save fails because Reporter B changed the file since the last time Reporter A viewed it.
 
 > [!TIP]
-> If you have been unable to complete this unit, you can find a fully working version in the OptimisticNewsEditor directory. You can run the app with `dotnet run`.
+> If you've been unable to complete this unit, you can find a fully working version in the *OptimisticNewsEditor* directory. You can run the app with `dotnet run`.

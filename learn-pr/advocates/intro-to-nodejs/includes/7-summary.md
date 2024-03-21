@@ -48,8 +48,7 @@ Companies using Node.js in production include:
 - [Walmart](https://medium.com/walmartlabs/migrating-large-enterprise-to-nodejs-6c38523d2b33?azure-portal=true)
 - [Uber](https://eng.uber.com/uber-tech-stack-part-two/?azure-portal=true)
 - [eBay](https://tech.ebayinc.com/engineering/how-we-built-ebays-first-node-js-application/?azure-portal=true)
-- [NASA](https://openjsf.org/wp-content/uploads/sites/84/2020/02/Case_Study-Node.js-NASA.pdf?azure-portal=true)
-
+- 
 ## Sample code
 
 * [GitHub repository](https://github.com/MicrosoftDocs/node-essentials)

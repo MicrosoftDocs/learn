@@ -6,7 +6,7 @@ metadata:
   ms.date: 11/22/2022
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: machine-learning 
 title: Use MLflow with Azure Machine Learning jobs submitted with CLI (v2)
 summary: Use MLflow to track model metrics and artifacts when training and registering models with the Azure Machine Learning CLI (v2).

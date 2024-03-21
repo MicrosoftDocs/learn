@@ -6,8 +6,7 @@ metadata:
   ms.date: 09/03/2019
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Design HA applications to handle disaster recovery
 durationInMinutes: 8
 content: |

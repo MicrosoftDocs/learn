@@ -8,12 +8,12 @@ Detailed resources:
 
 - Cloud-Native Applications | Microsoft Azure [https://azure.microsoft.com/solutions/cloud-native-apps/](https://azure.microsoft.com/solutions/cloud-native-apps/)
 
-- Introduction to cloud-native applications - .NET | Microsoft Learn [https://learn.microsoft.com/dotnet/architecture/cloud-native/introduction](/dotnet/architecture/cloud-native/introduction)
+- Introduction to cloud-native applications - .NET | Microsoft Learn [/dotnet/architecture/cloud-native/introduction](/dotnet/architecture/cloud-native/introduction)
 
-- Comparing Container Apps with other Azure container options | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/compare-options](/azure/container-apps/compare-options)
+- Comparing Container Apps with other Azure container options | Microsoft Learn [/azure/container-apps/compare-options](/azure/container-apps/compare-options)
 
 - Azure Containers—Services and Management | Microsoft Azure [https://azure.microsoft.com/products/category/containers/](https://azure.microsoft.com/products/category/containers/)
 
-- Deploy microservices with Azure Container Apps - [https://learn.microsoft.com/azure/architecture/example-scenario/serverless/microservices-with-container-apps](/azure/architecture/example-scenario/serverless/microservices-with-container-apps)
+- Deploy microservices with Azure Container Apps - [/azure/architecture/example-scenario/serverless/microservices-with-container-apps](/azure/architecture/example-scenario/serverless/microservices-with-container-apps)
 
 - Azure Container Apps example scenario - [https://github.com/mspnp/container-apps-fabrikam-dronedelivery#expected-results](https://github.com/mspnp/container-apps-fabrikam-dronedelivery#expected-results)
