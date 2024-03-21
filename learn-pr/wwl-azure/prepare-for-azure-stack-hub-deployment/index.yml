@@ -6,7 +6,7 @@ metadata:
   ms.date: 06/02/2023
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Prepare for Azure Stack Hub deployment
 summary: |
   This module provides the information for Azure Stack Hub deployment including networking, security, and identity.
