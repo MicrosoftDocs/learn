@@ -2,8 +2,8 @@
 uid: learn.languages.csharp-format-strings
 metadata:
   title: Format alphanumeric data for presentation in C#
-  description: "Format alphanumeric data for presentation in C#"
-  ms.date: 03/20/2024
+  description: "Explore basic methods in C# to format alphanumeric data."
+  ms.date: 03/21/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module
