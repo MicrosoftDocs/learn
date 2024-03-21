@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.introduction
+uid: learn.azure.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.introduction
 title: Introduction  
 metadata:
   unitType: introduction  
   title: Introduction
   description: Overview of the module including a scenario, goals, and prerequisites.
   ms.date: 03/20/2024
-  author: padmalathas
-  ms.author: padmalathas
+  author: begeorge
+  ms.author: begeorge
   ms.topic: unit
 durationInMinutes: 3
 content: |
