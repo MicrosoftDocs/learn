@@ -10,8 +10,6 @@ metadata:
   ms.topic: unit
   ms.custom:
   - N/A
-azureSandbox: false
-labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/4-assign-values-types-variables.md)]

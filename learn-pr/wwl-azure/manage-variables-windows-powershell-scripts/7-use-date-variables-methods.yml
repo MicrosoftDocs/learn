@@ -10,8 +10,6 @@ metadata:
   ms.topic: unit
   ms.custom:
   - N/A
-azureSandbox: false
-labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/7-use-date-variables-methods.md)]
