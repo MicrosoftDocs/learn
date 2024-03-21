@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.unit-2-node-health-checks-using-azure-cyclecloud
-title: "Unit 2: Node Health Checks using Azure CycleCloud"
+title: Node health checks using Azure CycleCloud
 metadata:
-  title: "Unit 2: Node Health Checks using Azure CycleCloud"
-  description: TBD
+  unitType: learning-content
+  title: Node health checks using Azure CycleCloud
+  description: Understand ways to enable node health checks when creating the cluster using the CycleCloud web portal
   ms.date: 03/13/2024
-  author: Benjamin George
-  ms.author: Benjamin George
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: padmalathas
+  ms.author: padmalathas
+  ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/3-unit-2-node-health-checks-using-azure-cyclecloud.md)]
+  [!include[](includes/2-node-health-checks-using-azure-cyclecloud.md)]
+  
