@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.cluster-requirements-for-ai-training-workloads
+uid: learn.azure.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.cluster-requirements-for-ai-training-workloads
 title: Cluster requirements for AI training workloads
 metadata:
   unitType: learning-content
