@@ -20,13 +20,13 @@ quiz:
     choices:
     - content: "Kerberos authentication only"
       isCorrect: false
-      explanation: "Incorrect. Kerberos is a valid authentication method when Hyper-V primary and replica serves are members of the same AD DS forest; however, it isn't the only authentication type that can be used."
+      explanation: "Incorrect. Kerberos is a valid authentication method when Hyper-V primary and replica servers are members of the same AD DS forest; however, it isn't the only authentication type that can be used."
     - content: "Certificate-based authentication only"
       isCorrect: false
-      explanation: "Incorrect. Certificate is a valid authentication when Hyper-V primary and replica serves are members of the same AD DS forest; however, it isn't the only authentication type that can be used."
+      explanation: "Incorrect. Certificate is a valid authentication when Hyper-V primary and replica servers are members of the same AD DS forest; however, it isn't the only authentication type that can be used."
     - content: "Either Kerberos or Certificate-based authentication"
       isCorrect: true
-      explanation: "Correct. Either Kerberos or Certificate-based authentication can be used when Hyper-V primary and replica serves are members of the same AD DS forest."
+      explanation: "Correct. Either Kerberos or Certificate-based authentication can be used when Hyper-V primary and replica servers are members of the same AD DS forest."
   - content: "Performing extended replication involves replicating a VM from which Hyper-V VM?"
     choices:
     - content: "The primary VM"
