@@ -4,16 +4,17 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/21/2022
+  ms.date: 03/21/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
+  title: ""
   questions:
   - content: "When you perform a wildcard match in a filter for a Common Information Model (CIM) or Windows Management Instrumentation (WMI) cmdlet, which character is used as the wildcard?"
     choices:
