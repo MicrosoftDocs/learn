@@ -6,7 +6,7 @@ metadata:
   ms.date: 01/26/2023
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Develop monitor and status dashboards
 summary: This module explains steps to develop monitoring with Azure Dashboards, work with View Designer and Azure Monitor, and create Azure Monitor Workbooks. Also, explore tools to supports monitoring with Power BI.
 abstract: |

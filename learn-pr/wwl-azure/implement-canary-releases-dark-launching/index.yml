@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/02/2022
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Implement canary releases and dark launching
 summary: This module describes deployment strategies around canary releases and dark launching and examines traffic managers.
 abstract: |

@@ -6,7 +6,7 @@ metadata:
   ms.date: 06/28/2023
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Explore query performance optimization
 summary: Read and understand various forms of execution plans. Compare estimated vs actual plans. Learn how and why plans are generated. Understand the purpose and benefits of the Query Store.
 abstract: |
