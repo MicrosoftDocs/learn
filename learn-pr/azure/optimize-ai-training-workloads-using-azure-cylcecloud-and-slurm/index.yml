@@ -36,10 +36,10 @@ products:
 subjects:
 - ai-cyclecloud-slurm
 units:
-- learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.introduction
-- learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.node-health-checks-using-azure-cyclecloud
-- learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.cluster-requirements-for-ai-training-workloads
-- learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.knowledge-check
-- learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.summary
+- learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.1-introduction
+- learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.2-node-health-checks-using-azure-cyclecloud
+- learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.3-cluster-requirements-for-ai-training-workloads
+- learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.4-knowledge-check
+- learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.5-summary
 badge:
   uid: learn.azure.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm-badge
