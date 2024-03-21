@@ -45,7 +45,7 @@ modules:
 - learn.github.introduction-to-github-copilot
 - learn.github.introduction-prompt-engineering-with-github-copilot
 - learn.github.introduction-to-github-copilot-for-business
-- learn.github.introduction-to-github-copilot-enterprise
+- learn.github.intro-github-copilot-enterprise
 - learn.github-copilot-with-javascript
 - learn.github-copilot-with-python
 trophy:
