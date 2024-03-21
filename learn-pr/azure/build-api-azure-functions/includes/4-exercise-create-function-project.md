@@ -1,12 +1,12 @@
 Tailwind Traders planned on building a traditional API, but you deftly pointed out that serverless is perfect for APIs that experience unexpected traffic spikes. It can also be done without disturbing their existing codebase. You're already doing so well. You have a long career in online hardware sales in your future.
 
-It's time to deliver on those lofty buzzwords. Now, you need to create a new project in Azure Functions that will be the HTTP API for the *Products Manager* app. That means creating the Azure Functions project, complete with all the endpoints that the Products Manager app is going to need to be able to create, read, update, and delete products.
+It's time to deliver on those lofty buzzwords. Now, you need to create a new project in Azure Functions to be the HTTP API for the *Products Manager* app. That means creating the Azure Functions project, complete with all the endpoints that the Products Manager app is going to need to be able to create, read, update, and delete products.
 
 ## Create a project with existing code
 
-This exercise provides you with a partially completed code base. When you create the new Azure Functions app, you need to leave the existing **`package.json`** file in place. The **`package.json`** file is the file that contains the project's dependencies. If you overwrite it, you'll lose the existing dependencies.
+This exercise provides you with a partially completed code base. When you create the new Azure Functions app, you need to leave the existing **`package.json`** file in place. The **`package.json`** file is the file that contains the project's dependencies. If you overwrite it, you lose the existing dependencies.
 
-This workflow was selected to give you a head start on the project. You'll be able to focus on the serverless code and the database integration code, rather than setting up the project from scratch.
+This workflow was selected to give you a head start on the project. You can focus on the serverless code and the database integration code, rather than setting up the project from scratch.
 
 ## Create a new Azure Functions project
 
@@ -50,7 +50,7 @@ This workflow was selected to give you a head start on the project. You'll be ab
 
 ## Examine the Create, Update, and Delete functions
 
-The Create, Update and Delete functions were already created for you. They were created with the same process that you used to create the *GetProducts* function and, they already contain database access code.
+The Create, Update, and Delete functions were already created for you. They were created with the same process that you used to create the *GetProducts* function and, they already contain database access code.
 
 - Notice that the *api* project already contains *CreateProduct*, *DeleteProduct* and *UpdateProduct* functions.
 
@@ -66,8 +66,8 @@ You can run and debug Azure Functions projects locally from within Visual Studio
   
 1. Select **Attach to Node Functions**.
 
-   The Azure Functions project will launches. Note that the terminal shows you the function app URL.
+   The Azure Functions project launches. The terminal shows you the function app URL.
 
    :::image type="content" source="../media/functions-in-terminal.png" alt-text="Screenshot of the Visual Studio Code integrated terminal showing functions URLs." loc-scope="other"::: <!-- no-loc -->
 
-Visual Studio Code generates the following error, "Cannot read property 'endpoint' of undefined". That's OK! That's because you haven't set up the database connection string yet. Notice that the four endpoints are listed above that error, and that if you select any of them, you'll get the same error.
+Visual Studio Code generates the following error, "Cannot read property 'endpoint' of undefined". That's OK! That's because you haven't set up the database connection string yet. Notice that the four endpoints are listed above that error, and that if you select any of them, you get the same error.
