@@ -6,11 +6,11 @@ Instead of doing this with job prologues and custom scheduler integration, which
 
 On cluster set up, under “Advanced Settings”, check the Node Health Checks box to enable the NHC feature. 
 
-![Description](../media/image3.png)
+IMAGE
 
 If nodes fail their health checks, a diagnostic report is sent back to CycleCloud to avoid the need for keeping bad nodes around for debugging.
 
-![CycleCloud 8.5 Release Announcement](../media/image4.png)
+IMAGE
 
 Image 3: Enable NHC on Startup, screenshot from the CC Web Portal
 
@@ -31,7 +31,7 @@ Image 3: Enable NHC on Startup, screenshot from the CC Web Portal
   - NCv3-series
   - NDv2-serries
 
-For more information, see [GPU optimized virtual machine sizes](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes-gpu).
+For more information, see [GPU optimized virtual machine sizes](../virtual-machines/sizes-gpu).
 
 ## Minimum Requirements for Node Health Checks
 
