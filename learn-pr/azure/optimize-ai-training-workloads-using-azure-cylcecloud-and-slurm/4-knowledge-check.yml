@@ -6,8 +6,8 @@ metadata:
   title: Knowledge check
   description: Check your knowledge of how to optimize ai training workloads using Azure CycleCloud and slurm.
   ms.date: 03/20/2024
-  author: padmalathas
-  ms.author: padmalathas
+  author: begeorge
+  ms.author: begeorge
   ms.topic: unit
 durationInMinutes: 5
 quiz:
