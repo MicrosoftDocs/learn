@@ -6,8 +6,8 @@ metadata:
   title: Introduction                                ## Title of unit
   description: This module introduces the Introduction to GitHub Advanced Security module   ## description of unit content
   ms.date: 01/28/2022                               ## date unit was published
-  author: rmcmurray
-  ms.author: robmcm
+  author: a-a-ron
+  ms.author: a-a-ron
   ms.topic: unit
 durationInMinutes: 2                                ## approximate time to complete unit 
 content: |
