@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/14/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Manage single and multiple computers by using Windows PowerShell remoting
 summary: This module explains how to use remoting to perform administration on remote computers.
 abstract: |

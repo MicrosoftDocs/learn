@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/26/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Filter objects out of the pipeline
 summary: This module explains how to filter objects out of the pipeline by using the Where-Object cmdlet to specify various criteria.
 abstract: |

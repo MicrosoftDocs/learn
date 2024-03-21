@@ -6,7 +6,7 @@ metadata:
   ms.date: 07/13/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Implement Group Policy Objects
 summary: Learn to implement Group Policy Objects (GPOs) in Active Directory Domain Services (AD DS) in Windows Server 2019.
 abstract: |

@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/27/2022
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: OWASP and Dynamic Analyzers
 summary: This module explores OWASP and Dynamic Analyzers for penetration testing, results, and bugs.
 abstract: |
