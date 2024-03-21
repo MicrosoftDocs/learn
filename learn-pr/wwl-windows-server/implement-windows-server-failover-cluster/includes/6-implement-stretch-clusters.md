@@ -36,7 +36,7 @@ The main features of Storage Replica are listed in the following table.
 |Simplicity|You can rely on Windows Admin Center to guide you through the process of creating a replication partnership between two servers. To deploy a stretch cluster, you can use a Failover Cluster Manager-based wizard.|
 |Use of Server Message Block (SMB) 3.0|Storage Replica relies on SMB 3.x, introduced in Windows Server 2012 and considerably enhanced in subsequent versions of Windows Server. All of SMB's advanced characteristics, such as SMB Multichannel and SMB Direct, are available to Storage Replica.|
 |Security|Storage Replica features a wide range of security mechanisms, including packet signing, AES-128-GCM full data encryption, support for third-party encryption acceleration, and pre-authentication integrity man-in-the-middle attack prevention. Storage Replica also relies on Kerberos AES256 for all authentication between nodes.|
-|Network constraints|In cases where there are multiple network paths between replicated volumes, you can configure Storage Replica traffic to use designated network adapters. This allows you minimize potential impact of the replication traffic on production workloads.|
+|Network constraints|In cases where there are multiple network paths between replicated volumes, you can configure Storage Replica traffic to use designated network adapters. This allows you to minimize potential impact of the replication traffic on production workloads.|
 |Thin provisioning|You have the option of implementing thin provisioning in Storage Spaces Direct, minimizing initial replication times.|
 
 ## Prerequisites for deploying stretch clusters
