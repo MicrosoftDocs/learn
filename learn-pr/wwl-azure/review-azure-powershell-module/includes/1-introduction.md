@@ -8,7 +8,7 @@ After completing this module, you'll be able to:
 - Describe the Azure Az PowerShell module.
 - Install the Azure Az PowerShell module.
 - Migrate Azure PowerShell from AzureRM to Az.
-- Describe the Azure Active Directory Module for Windows PowerShell and Azure Active Directory PowerShell for Graph modules.
+- Describe the Azure Active Directory module for Windows PowerShell and Azure Active Directory PowerShell for Graph modules.
 
 ## Prerequisites
 

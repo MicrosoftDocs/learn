@@ -6,9 +6,9 @@ In this module, you learned about the Azure PowerShell environment and the Az mo
 
 - The Azure Az PowerShell module is a rollup module. Installing it downloads the available Az PowerShell modules and makes their cmdlets available for use. The Azure Az PowerShell module works with PowerShell 7.x and newer versions on all platforms.
 
-- The Azure Active Directory Module for Windows PowerShell provides cmdlets that you can use for Azure Active Directory (Azure AD) administrative tasks such as user management, domain management, and configuring single sign-on. 
+- The Azure Active Directory module for Windows PowerShell provides cmdlets that you can use for Azure Active Directory (Azure AD) administrative tasks such as user management, domain management, and configuring single sign-on. 
 
-- Currently, the Azure Active Directory PowerShell for Graph module doesn't completely replace the functionality of the Azure Active Directory Module for Windows PowerShell module for user, group, and license administration. In some cases, you need to use both versions. You can safely install both versions on the same computer.
+- Currently, the Azure Active Directory PowerShell for Graph module doesn't completely replace the functionality of the Azure Active Directory module for Windows PowerShell module for user, group, and license administration. In some cases, you need to use both versions. You can safely install both versions on the same computer.
 
 - The Azure AD PowerShell for Graph module has two versions: a Public Preview version and a General Availability version. It isn't recommended to use the Public Preview version for production scenarios.
 
