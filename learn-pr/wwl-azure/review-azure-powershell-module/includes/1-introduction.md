@@ -1,4 +1,4 @@
-You can manage Microsoft Azure resources by using the Azure portal, which is usually the most common way of administration. However, for some tasks, Azure PowerShell is more convenient. In this module, you'll learn about the Azure PowerShell environment and the Az module for Windows PowerShell. Also, you'll learn about ways to manage Azure Active Directory (Azure AD) by using PowerShell modules.
+You can manage Microsoft Azure resources by using the Azure portal, which is usually the most common way of administration. However, for some tasks, Azure PowerShell is more convenient. In this module, you'll learn about the Azure PowerShell environment and the Az module for Windows PowerShell. Also, you'll learn about ways to manage Microsoft Entra ID by using PowerShell modules.
 
 ## Learning objectives
 

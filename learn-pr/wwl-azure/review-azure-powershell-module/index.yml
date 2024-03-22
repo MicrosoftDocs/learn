@@ -3,13 +3,12 @@ uid: learn.wwl.review-azure-powershell-module
 metadata:
   title: Review Azure PowerShell module
   description: "This module explains the Azure PowerShell environment and the Az module for Windows PowerShell. It also explains how to manage Microsoft Entra ID by using PowerShell modules."
-  ms.date: 03/21/2024
+  ms.date: 03/22/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: module-standard-task-based
+  ms.topic: module
   ms.custom:
   - N/A
-  ms.service: azure-powershell
   ai-usage: human-only
 title: Review Azure PowerShell module
 summary: This module explains the Azure PowerShell environment and the Az module for Windows PowerShell. It also explains how to manage Microsoft Entra ID by using PowerShell modules.
