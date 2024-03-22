@@ -6,11 +6,9 @@ metadata:
   ms.date: 03/22/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: module-standard-task-based
+  ms.topic: module
   ms.custom:
   - N/A
-  ms.service: powershell
-  ms.subservice: cmdlets
   ai-usage: human-only
 title: Pass pipeline objects
 summary: This module explains how the Windows PowerShell command-line interface passes objects from one command to another in the pipeline.
