@@ -15,7 +15,7 @@ Ensuring the security of applications and the software supply chain has never be
 
 Incorporating security into your software development process may seem like a daunting process, so let's go over 3 key features of GHAS and how they help your team stay on top of the latest security threats: Secret scanning, Code scanning, and Dependabot. 
 
-:::image type="content" source="../media/2-security-scanning.png" alt-text="Image representing the different stages of the software development lifecycle with GitHub Advanced Security.":::
+:::image type="content" source="../media/ghas-intro.png" alt-text="Image representing the different stages of the software development lifecycle with GitHub Advanced Security.":::
 
 ### Secret scanning 
 
