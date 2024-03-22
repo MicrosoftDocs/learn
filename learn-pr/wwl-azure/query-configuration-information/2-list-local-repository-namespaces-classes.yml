@@ -4,12 +4,14 @@ title: List local repository namespaces and classes by using CIM and WMI
 metadata:
   title: List local repository namespaces and classes by using CIM and WMI
   description: "List local repository namespaces and classes by using CIM and WMI"
-  ms.date: 03/21/2024
+  ms.date: 03/22/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
   ms.custom:
   - N/A
+azureSandbox: false
+labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/2-list-local-repository-namespaces-classes.md)]
