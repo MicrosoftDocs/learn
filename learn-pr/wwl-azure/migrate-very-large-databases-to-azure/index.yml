@@ -28,7 +28,7 @@ roles:
 products:
 - azure
 subjects:
-- database
+- databases
 units:
 - learn.wwl.migrate-very-large-databases-vldb-to-azure.introduction
 - learn.wwl.migrate-very-large-databases-vldb-to-azure.explore-database-migration

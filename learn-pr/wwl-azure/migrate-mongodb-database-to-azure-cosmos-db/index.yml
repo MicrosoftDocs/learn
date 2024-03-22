@@ -25,7 +25,7 @@ roles:
 products:
 - azure-cosmos-db
 subjects:
-- database
+- databases
 units:
 - learn.wwl.migrate-mongodb-database-to-azure-cosmos-db.introduction
 - learn.wwl.migrate-mongodb-database-to-azure-cosmos-db.vcore-to-rus

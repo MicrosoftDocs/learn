@@ -2,18 +2,18 @@ When you set up an Azure Kubernetes Service (AKS) cluster, it's important to con
 
 ## Example scenario
 
-Suppose you're a network administrator for Tailwind Traders, a traditional brick-and-mortar retailer. You've shifted to selling online and have built your site on Azure. The company sees several opportunities to improve its e-commerce website; for example, converting from a traditional monolithic application to a microservices architecture.
+Let's say you're a network administrator for Tailwind Traders, a traditional brick-and-mortar retailer. You've shifted to selling online and have built your site on Azure. The company sees several opportunities to improve its e-commerce website, including converting from a traditional monolithic application to a microservices architecture.
 
 Tailwind Traders suspects that deploying the microservices in AKS clusters can help with container orchestration. However, you're unsure of which network plugin to choose for your AKS clusters.
 
 ## What is covered?
 
-By the end of this module, you understand:
+By the end of this module, you'll understand:
 
 * What a Kubernetes network plugin is
-* The pros, cons, and limitations of the kubenet (basic) network
-* The pros, cons, and limitations of the Azure CNI
-* Important key decision criteria
+* The pros, cons, and limitations of kubenet (basic)
+* The pros, cons, and limitations of Azure CNI (advanced)
+* Key decision criteria for choosing a network plugin
 
 ## What is the main goal?
 

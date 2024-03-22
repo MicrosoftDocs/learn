@@ -26,8 +26,6 @@ roles:
 products:
   - dotnet
 prerequisites: None
-subjects:
-- development-tools
 units:
   - learn.fsharp-conditional.introduction
   - learn.fsharp-conditional.if-else

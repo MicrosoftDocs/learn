@@ -33,7 +33,7 @@ products:
   - azure-kubernetes-service
   - azure-container-registry
 subjects:
-- container
+- containers
 - data-engineering
 units:
   - learn.aks-deploy-container-app.1-introduction

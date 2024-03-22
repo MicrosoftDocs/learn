@@ -30,7 +30,7 @@ products:
   - azure
 subjects: 
   - cloud-computing
-  - data-ai
+  - data-management
 units:
 - learn.wwl.generate-images-azure-openai.introduction
 - learn.wwl.generate-images-azure-openai.what-is-dall-e

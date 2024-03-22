@@ -4,9 +4,9 @@ In this module, learned about the core features of Microsoft Copilot for Securit
 Now that you completed this module, you can:
 
 - Describe the features available in the standalone Copilot experience.
-- Describe the Microsoft plugins available in Copilot.
-- Describe the non-Microsoft plugins supported by Copilot.
+- Describe the plugins available in Copilot.
 - Describe custom promptbooks.
+- Describe knowledge base connections.
 
 #### Learn more
 
@@ -21,3 +21,4 @@ Now that you completed this module, you can:
 - [What is Microsoft Defender Threat Intelligence (Defender TI)?](/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti)
 - [What is Microsoft Sentinel?](/azure/sentinel/overview)
 - [Microsoft Entra](/entra/)
+- [What's Azure AI Search?](/azure/search/search-what-is-azure-search)

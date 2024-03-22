@@ -30,7 +30,7 @@ products:
 - azure-functions
 - dotnet
 subjects:
-- serverless-compute
+- serverless-computing
 units:
 - learn.wwl.explore-azure-functions.introduction
 - learn.wwl.explore-azure-functions.discover

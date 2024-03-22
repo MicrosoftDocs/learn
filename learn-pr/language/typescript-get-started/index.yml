@@ -27,8 +27,6 @@ roles:
 - student
 products:
 - azure
-subjects:
-- development-tools
 units:
 - learn.language.typescript-get-started.1-introduction
 - learn.language.typescript-get-started.2-typescript-overview

@@ -8,8 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
-  ms.prod: security
-  ms.service: security-copilot
 durationInMinutes: 2
 
 content: |
@@ -17,36 +15,36 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: What is Microsoft Copilot for Security and what use cases does it support?
+  - content: What are the steps required to onboard organizations and users to Microsoft Copilot for Security?
     choices:
-    - content: Microsoft Copilot for Security is a cloud-based security analysis tool that only supports security posture management.
+    - content: Enable Copilot plugins, and procure Microsoft Entra Premium 1 licensing.
       isCorrect: false
-      explanation: Incorrect. Microsoft Copilot for Security also supports incident response and security reporting.
-    - content: Microsoft Copilot for Security is an AI-powered, cloud-based security analysis tool that enables analysts to respond to threats quickly, process signals at machine speed, and assess risk exposure more quickly than may otherwise be possible. It supports security posture management, incident response, and security reporting.
+      explanation: Incorrect. To onboard the organization and users, an admin must Provision SCUs, set up the default environment, and assign role permission.  
+    - content: Procure Microsoft Entra Premium 1 licensing.
+      isCorrect: false
+      explanation: Incorrect. Entra Premium 1 licensing isn't required. To onboard the organization and users to Copilot, The admin must provision and allocate security compute units (SCUs), set up the default environment, and assign role permissions to user.
+    - content: Provision SCUs, set up the default environment, and assign role permission.
       isCorrect: true
-      explanation: Correct. This is the definition of Microsoft Copilot for Security and the use cases it supports according to the training material.
-    - content: Microsoft Copilot for Security is a standalone experience that cannot be embedded within other Microsoft security products.
-      isCorrect: false
-      explanation: Incorrect. Microsoft Copilot for Security can be embedded within other Microsoft security products, such as Microsoft 365 Defender.
-  - content: What is the orchestrator in Microsoft Copilot for Security?
+      explanation: Correct. The admin must provision and allocate security compute units (SCUs), set up the default environment, and assign role permissions to user.
+  - content: A security analyst is crafting a prompt to investigate an incident involving the Pearl Sleet actor. Which prompt will likely yield the most comprehensive results?
     choices:
-    - content: Copilot’s system for composing capabilities (skills) together to answer a user’s prompt.
+    - content: Can you give me information about Pearl Sleet activity, including a list of known indicators of compromise and tools, tactics, and procedures (TTPs)?
       isCorrect: true
-      explanation: Correct. The orchestrator is Copilot’s system for composing capabilities (skills) together to answer a user’s prompt.
-    - content: A collection of skills by a particular resource.
+      explanation: Correct. This prompt is clear, specific, and includes elements such as goal and expectations for a detailed response.
+    - content: Describe Pearl Sleet.
       isCorrect: false
-      explanation: Incorrect. A plugin/skillset is a collection of skills by a particular resource.
-    - content: A tool used to generate customizable reports.
+      explanation: Incorrect. This prompt lacks specificity in goal, context, and the format of the expected response.
+    - content: List Pearl Sleet activities.
       isCorrect: false
-      explanation: Incorrect. The orchestrator is not a tool used to generate customizable reports.
-  - content: What are the minimal licensing requirements to start using Microsoft Copilot for Security?
+      explanation: Incorrect. This prompt is too vague and doesn't provide specific elements like context or expectations.
+  - content: An admin is tasked with setting up Microsoft Copilot for Security and needs to provision capacity. After reviewing the options, which method should the admin choose to provision capacity for their organization?
     choices:
-    - content: Microsoft Copilot for Security licensing and Microsoft Intune licensing.
+    - content: Provision capacity through a third-party vendor
       isCorrect: false
-      explanation: Incorrect. The minimal licensing requirements include Microsoft Copilot for Security licensing and Microsoft Entra Premium 1.
-    - content: Microsoft Copilot for Security licensing and Microsoft Sentinel licensing.
-      isCorrect: false
-      explanation: Incorrect. The minimal licensing requirements include Microsoft Copilot for Security licensing and Microsoft Entra Premium 1.
-    - content: Microsoft Copilot for Security licensing and Microsoft Entra Premium 1.
+      explanation: Incorrect. Microsoft Copilot for Security capacity must be provisioned either within Copilot itself or through Azure, not via third-party vendors.
+    - content: Provision capacity within Copilot for Security
       isCorrect: true
-      explanation: Correct. The minimal licensing requirements include Microsoft Copilot for Security licensing and Microsoft Entra Premium 1.
+      explanation: Correct. Provisioning capacity within Copilot for Security is recommended and guided by a wizard for ease of set up.
+    - content: Provision capacity by directly purchasing SCUs from a software retailer
+      isCorrect: false
+      explanation: Incorrect. SCUs for Microsoft Copilot for Security are provisioned through Azure or within the Copilot service, not through software retailers.

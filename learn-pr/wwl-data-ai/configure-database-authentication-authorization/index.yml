@@ -6,7 +6,7 @@ metadata:
   ms.date: 04/26/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Configure database authentication and authorization
 summary: Contrast authentication using Microsoft Entra ID, Windows Active Directory, and SQL Server authentication. Implement various security principals and configure permissions.
 abstract: |
@@ -28,7 +28,7 @@ roles:
 products:
 - azure
 subjects:
-- database
+- databases
 units:
 - learn.wwl.configure-database-authentication-authorization.introduction
 - learn.wwl.configure-database-authentication-authorization.describe-active-directory-azure-active-directory

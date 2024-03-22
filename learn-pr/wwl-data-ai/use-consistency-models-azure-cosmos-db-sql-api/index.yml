@@ -25,7 +25,7 @@ roles:
 products:
 - azure-cosmos-db
 subjects:
-- database
+- databases
 units:
 - learn.wwl.use-consistency-models-azure-cosmos-db-sql-api.introduction
 - learn.wwl.use-consistency-models-azure-cosmos-db-sql-api.understand

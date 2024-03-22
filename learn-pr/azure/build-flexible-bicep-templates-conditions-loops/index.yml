@@ -7,7 +7,7 @@ metadata:
   ms.date: 11/14/2023
   author: mumian
   ms.author: jgao
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: module
   ms.devlang: bicep
 title: Build flexible Bicep templates by using conditions and loops
 summary: |
