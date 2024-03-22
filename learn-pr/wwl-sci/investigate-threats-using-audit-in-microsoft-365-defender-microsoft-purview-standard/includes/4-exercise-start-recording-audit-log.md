@@ -1,5 +1,5 @@
 
-You have already learned that Audit (Standard) is enabled by default for all organizations with the appropriate subscription, but you still have to start the recording. In this exercise you'll explore the following:
+You have learned that Audit (Standard) is enabled by default for all organizations with the appropriate subscription, but you still have to start the recording. In this exercise you'll perform the following tasks:
 
 - Enable recording by using the Purview Compliance portal Audit Search interface.
 - Use Exchange PowerShell to check the status and enable or disable recording.
