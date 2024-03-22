@@ -32,7 +32,7 @@ quiz:
       explanation: "That's incorrect. The Cassandra API is the most suitable API to access wide column store NoSQL data."
     - content: "Azure Table"
       isCorrect: false
-      explanation: "That's incorrect. The Azure Table API is the most suitable API if you are using data in Azure Table Storage."
+      explanation: "That's incorrect. The Azure Table API is the most suitable API if you're using data in Azure Table Storage."
     - content: "Gremlin"
       isCorrect: true
       explanation: "That's correct. Gremlin is the Apache TinkerPop graph traversal language. The Gremlin API enables you to create graph entities in Cosmos DB."
