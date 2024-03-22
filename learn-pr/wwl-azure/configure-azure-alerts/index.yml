@@ -32,7 +32,6 @@ subjects:
 - cloud-computing
 - communication
 units:
-- learn.wwl.configure-azure-alerts.manage-azure-monitor-alerts
 - learn.wwl.configure-azure-alerts.summary-resources
 badge:
   uid: learn.wwl.configure-azure-alerts.badge
