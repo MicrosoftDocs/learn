@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: riswinto
   ms.topic: interactive-tutorial
-  ms.service: microsoft-purview
+  ms.service: purview
 title: Create and manage sensitive information types
 summary: Learn how to use sensitive information types to support your information protection strategy.
 abstract: |
