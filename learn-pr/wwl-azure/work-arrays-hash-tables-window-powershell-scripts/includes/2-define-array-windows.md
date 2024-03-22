@@ -30,4 +30,3 @@ You also can force an array to be created when adding a single value to a variab
 ```powershell
 [array]$computers="LON-DC1"
 ```
-
