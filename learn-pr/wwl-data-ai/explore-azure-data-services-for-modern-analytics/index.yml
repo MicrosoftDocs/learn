@@ -6,7 +6,7 @@ metadata:
   ms.date: 02/08/2023
   author: wwlpublish
   ms.author: shlindsay
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Explore Azure data services for modern analytics
 summary: Understand analytics solutions in the Azure data ecosystem. Explore the architecture of a scalable analytics solution to meet business needs.
 abstract: |

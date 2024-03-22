@@ -8,8 +8,7 @@ metadata:
   author: jenniferf-skc
   ms.author: jfields
   ms.topic: module-standard-task-based
-  ms.service: multicloud-permissions-management
-  ms.subservice: ciem
+  ms.service: entra-permissions-management
 title: Explore the many features of Microsoft Entra Permissions Management
 summary: While diving deeper into the features of Microsoft Entra Permissions Management, we use the framework of discover, remediate, monitor as a guide to help walkthrough how the Permissions Management features set can benefit your organization.
 

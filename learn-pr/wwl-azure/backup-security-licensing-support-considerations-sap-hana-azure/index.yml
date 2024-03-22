@@ -6,7 +6,7 @@ metadata:
   ms.date: 12/08/2021
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure
 title: Examine backup security licensing and support considerations for SAP HANA on Azure (Large Instances)
 summary: Considerations for backup, security, licensing, and support of SAP HANA on Azure (Large Instances).

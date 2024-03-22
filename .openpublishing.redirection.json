@@ -35310,6 +35310,146 @@
       "source_path": "learn-pr/wwl-data-ai/teach-ai-102-design-implement-microsoft-azure-ai-solution/9-explore-best-practices-for-solution-module-6.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/teach-ai-102-design-implement-microsoft-azure-ai-solution/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-java-app-azure-kubernetes-service/index.yml",
+      "redirect_url": "https://learn.microsoft.com/java/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-java-app-azure-kubernetes-service/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/java/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-java-app-azure-kubernetes-service/2-migrate-app-containerization-overview.yml",
+      "redirect_url": "https://learn.microsoft.com/java/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-java-app-azure-kubernetes-service/3-exercise-setup-host-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/java/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-java-app-azure-kubernetes-service/4-exercise-discover-aspnet-app.yml",
+      "redirect_url": "https://learn.microsoft.com/java/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-java-app-azure-kubernetes-service/5-exercise-build-app-container-image.yml",
+      "redirect_url": "https://learn.microsoft.com/java/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-java-app-azure-kubernetes-service/6-deploy-app-container-aks.yml",
+      "redirect_url": "https://learn.microsoft.com/java/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-java-app-azure-kubernetes-service/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/java/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-java-app-azure-kubernetes-service/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/java/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-alerts/index.md",
+      "redirect_url": "/training/modules/incident-response-with-alerting-on-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-alerts/4-create-action-groups.md",
+      "redirect_url": "/training/modules/incident-response-with-alerting-on-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-alerts/3-create-alert-rules.md",
+      "redirect_url": "/training/modules/incident-response-with-alerting-on-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-alerts/2a-describe-alerts.md",
+      "redirect_url": "/training/modules/incident-response-with-alerting-on-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-alerts/1-introduction.md",
+      "redirect_url": "/training/modules/incident-response-with-alerting-on-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-alerts/5-knowledge-check.md",
+      "redirect_url": "/training/modules/incident-response-with-alerting-on-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-alerts/2b-manage-azure-monitor-alerts.md",
+      "redirect_url": "/training/modules/incident-response-with-alerting-on-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-alerts/6-summary-resources.md",
+      "redirect_url": "/training/modules/incident-response-with-alerting-on-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-kubernetes-service/index.md",
+      "redirect_url": "/training/modules/intro-to-kubernetes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-kubernetes-service/4-kubernetes-networking.md",
+      "redirect_url": "/training/modules/intro-to-kubernetes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-kubernetes-service/6-kubernetes-scale-options.md",
+      "redirect_url": "/training/modules/intro-to-kubernetes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-kubernetes-service/7-kubernetes-container-scale-options.md",
+      "redirect_url": "/training/modules/intro-to-kubernetes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-kubernetes-service/5-kubernetes-storage.md",
+      "redirect_url": "/training/modules/intro-to-kubernetes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-kubernetes-service/3-kubernetes-clusters.md",
+      "redirect_url": "/training/modules/intro-to-kubernetes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-kubernetes-service/2-kubernetes-terminology.md",
+      "redirect_url": "/training/modules/intro-to-kubernetes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-kubernetes-service/8-simulation-kubernetes.md",
+      "redirect_url": "/training/modules/intro-to-kubernetes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-kubernetes-service/1-introduction.md",
+      "redirect_url": "/training/modules/intro-to-kubernetes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-kubernetes-service/9-knowledge-check.md",
+      "redirect_url": "/training/modules/intro-to-kubernetes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-kubernetes-service/10-summary-resources.md",
+      "redirect_url": "/training/modules/intro-to-kubernetes/",
+      "redirect_document_id": false
     }
   ]
 }
