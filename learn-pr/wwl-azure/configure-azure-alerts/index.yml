@@ -33,7 +33,6 @@ subjects:
 - communication
 units:
 - learn.wwl.configure-azure-alerts.introduction
-- learn.wwl.configure-azure-alerts.describe-azure-monitor-alerts
 - learn.wwl.configure-azure-alerts.manage-azure-monitor-alerts
 - learn.wwl.configure-azure-alerts.knowledge-check
 - learn.wwl.configure-azure-alerts.summary-resources
