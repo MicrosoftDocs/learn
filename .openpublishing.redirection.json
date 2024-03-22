@@ -35355,6 +35355,11 @@
       "source_path": "learn-pr/azure/migrate-java-app-azure-kubernetes-service/8-summary.yml",
       "redirect_url": "https://learn.microsoft.com/java/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-alerts/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/incident-response-with-alerting-on-azure/",
+      "redirect_document_id": false
     }
   ]
 }
