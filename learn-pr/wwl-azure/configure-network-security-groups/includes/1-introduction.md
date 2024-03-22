@@ -15,7 +15,6 @@ In this module, you learn how to:
 - Implement and evaluate network security group rules.
 - Describe the function of application security groups. 
 
-
 ## Skills measured
 
 The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). 
