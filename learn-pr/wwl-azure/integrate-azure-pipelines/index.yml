@@ -6,7 +6,7 @@ metadata:
   ms.date: 06/20/2023
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Integrate with Azure Pipelines
 summary: This module details Azure Pipelines anatomy and structure, templates, YAML resources, and how to use multiple repositories in your pipeline.
 abstract: |
