@@ -32,7 +32,7 @@ quiz:
     choices:
     - content: "By preventing unauthorized access to sensitive information."
       isCorrect: false
-      explanation: "Incorrect. This is more related to secret scanning, not code scanning.
+      explanation: "Incorrect. This is more related to secret scanning, not code scanning."
     - content: "By automating the management of project dependencies."
       isCorrect: true
       explanation: "Incorrect. This describes the purpose of Dependabot, not code scanning."
