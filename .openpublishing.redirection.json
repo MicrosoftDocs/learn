@@ -35425,6 +35425,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-kubernetes-service/3-kubernetes-clusters.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-kubernetes/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-kubernetes-service/2-kubernetes-terminology.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-kubernetes/",
+      "redirect_document_id": false
     }
   ]
 }
