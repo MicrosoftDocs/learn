@@ -28,7 +28,6 @@ products:
 subjects:
 - infrastructure
 units:
-- learn.wwl.configure-azure-kubernetes-service.knowledge-check
 - learn.wwl.configure-azure-kubernetes-service.summary-resources
 badge:
   uid: learn.wwl.configure-azure-kubernetes-service.badge
