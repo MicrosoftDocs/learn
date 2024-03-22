@@ -1,6 +1,6 @@
 In this unit we'll review:
 
-- Understaning the dependacy graph
+- Understanding the dependency graph
 - Acting on GHAS alerts
 - Who has access to alerts
 
@@ -8,23 +8,24 @@ Let’s take a closer look at how Dependabot works, starting with the dependency
 
 The dependency graph is central to supply chain security. The dependency graph identifies all upstream dependencies and public downstream dependents of a repository or package. You can see your repository’s dependencies and some of their properties, like vulnerability information, on the dependency graph for the repository.
 
-To generate the dependency graph, GitHub looks at a repository’s explicit dependencies declared in the manifest and lockfiles. When enabled, the dependency graph automatically parses all known package manifest files in the repository and uses this to construct a graph with known dependency names and versions.
+To generate the dependency graph, GitHub looks at a repository’s explicit dependencies declared in the manifest and lockfiles. When enabled, the dependency graph automatically parses all known package manifest files in the repository and uses this scan to construct a graph with known dependency names and versions.
 
 Key points about the dependency graph include:
 
 - Includes information on your direct dependencies and transitive dependencies.
-- Automatically updated when you push a commit to GitHub that changes or adds a supported manifest or lock file to the default branch, and when anyone pushes a change to the repository of one of your dependencies.
+- Dependency graph is automatically updated when you push a commit to GitHub that changes or adds a supported manifest or lock file to the default branch. It's also automatically updated when anyone pushes a change to the repository of one of your dependencies as well.
 - You can see the dependency graph by opening the repository's main page on GitHub and navigating to the Insights tab.
 - If you have at least read access to the repository, you can export the dependency graph for the repository as an SPDX-compatible, Software Bill of Materials (SBOM), via the GitHub UI or GitHub REST API. For more information, see "Exporting a software bill of materials for your repository."
 
-Additionally, you can use the Dependency submission API (beta) to submit dependencies from the package manager or ecosystem of your choice, even if the ecosystem is not supported by dependency graph for manifest or lock file analysis. Dependencies submitted to a project using the Dependency submission API (beta) will show which detector was used for their submission and when they were submitted.
+Additionally, you can use the Dependency submission API (beta) to submit dependencies from the package manager or ecosystem of your choice, even if the ecosystem isn't supported by dependency graph for manifest or lock file analysis. Dependencies submitted to a project using the Dependency submission API (beta) shows which detector was used for their submission and when they were submitted.
 
-Other supply chain features on GitHub rely on the information provided by the dependency graph.
+Other supply chain features on GitHub rely on the information provided by the dependency graph, which include the following:
 
 - **Dependency review**: uses the dependency graph to identify dependency changes and help you understand the security impact of these changes when you review pull requests.
-- **Dependabot alerts**: Dependabot cross-references dependency data provided by the dependency graph with the list of advisories published in the GitHub Advisory Database, scans your dependencies and generates Dependabot alerts when a potential vulnerability is detected.
-- **Dependabot security updates**: use the dependency graph and Dependabot alerts to help you update dependencies with known vulnerabilities in your repository.
-- **Dependabot version updates**: don't use the dependency graph and rely on the semantic versioning of dependencies instead. Dependabot version updates help you keep your dependencies updated, even when they don’t have any vulnerabilities.
+- **Dependabot alerts**: Dependabot cross-references dependency data provided by the dependency graph with the list of advisories published in the GitHub Advisory Database. The dependency graph scans your dependencies and generates Dependabot alerts when a potential vulnerability is detected.
+- **Dependabot security updates**: Uses the dependency graph and Dependabot alerts to help you update dependencies with known vulnerabilities in your repository.
+
+Although **Dependabot version updates** don't use the dependency graph, it's still worth mentioning. Dependabot version updates rely on the semantic versioning of dependencies instead. Dependabot version updates help you keep your dependencies updated, even when they don’t have any vulnerabilities. 
 
 ### Acting on GHAS Alerts
 
@@ -51,15 +52,15 @@ Security Overview Alerts:
 
 - The Security Overview provides a comprehensive dashboard summarizing the security status of the repository.
 
-3rd Party Alerts: 
+Third Party Alerts: 
 
-- You can integrate third-party code analysis tools with GitHub code scanning by uploading data as SARIF files. Learn more about this at the end of the module with a link to “Integrating with code scanning.”
+- You can integrate third-party code analysis tools with GitHub code scanning by uploading data as SARIF files. Learn more about this topic at the end of the module with a link to 'Integrating with code scanning.'
 
 #### Implications of Ignoring an Alert
 
 Ignoring a security alert poses significant risks to the project. Vulnerabilities may be exploited by malicious actors, leading to data breaches, service disruptions, or other security incidents. Ignoring alerts can also result in increased remediation efforts, potentially impacting project timelines and the overall trustworthiness of the software.
 
-The long-term consequences of ignoring alerts may include reputational damage, regulatory non-compliance, and financial losses. It is crucial for development teams to prioritize and address security alerts promptly to mitigate these risks and maintain the integrity of the software.
+The long-term consequences of ignoring alerts may include reputational damage, regulatory noncompliance, and financial losses. It's crucial for development teams to prioritize and address security alerts promptly to mitigate these risks and maintain the integrity of the software.
 
 When developers discover a security alert, their immediate role is to investigate the nature and severity of the alert. This involves understanding the impact on the codebase, potential exploit scenarios, and any necessary steps for remediation.
 
@@ -75,7 +76,7 @@ Access management is role-based, with different roles having varying levels of a
 - Secret scanning alerts can be seen and modified by anyone with the `Admin` repository role
 - Any person or team can be granted access to see and modify all alerts on a repository, regardless of their repository role, by modifying the repo's "Access to alerts" settings
 
-Now that we’ve reviewed which alerts can be seen by specific roles, it is worth noting that effective access management enhances collaboration by providing the right level of visibility to each team member. This ensures that stakeholders can focus on the security aspects relevant to their roles, facilitating a streamlined and efficient response to security alerts.
+Now that we’ve reviewed which alerts can be seen by specific roles, it's worth noting that effective access management enhances collaboration by providing the right level of visibility to each team member. This ensures that stakeholders can focus on the security aspects relevant to their roles, facilitating a streamlined and efficient response to security alerts.
 
 By understanding the intricacies of identifying vulnerabilities, responding to alerts, acknowledging the implications of inaction, and defining roles and access controls, development teams can leverage GitHub Advanced Security to its fullest potential, creating a more resilient and secure development environment.
 
