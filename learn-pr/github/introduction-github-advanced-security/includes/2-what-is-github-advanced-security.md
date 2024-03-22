@@ -9,13 +9,14 @@ Let’s start with a quick review of GHAS.
 
 ### What is GHAS?
 
+:::image type="content" source="../media/ghas-intro.png" alt-text="Image representing the different stages of the software development lifecycle with GitHub Advanced Security.":::
+
 GitHub Advanced Security (or GHAS) is an application security solution that empowers developers. Advanced Security is embedded right into your workflow to help prevent vulnerabilities and credential leaks without slowing development. GitHub Advanced Security is like having your personal security consultant review every line of code with insights from security experts from around the world. 
 
 Ensuring the security of applications and the software supply chain has never been more important. Gartner predicts that 45% of global organizations will be impacted by a supply chain attack by 2025. According to the 2022 Verizon Data Breach Investigation Report, applications continue to be a top attack vector and are at the center of more than 40% of all data breaches. 
 
 Incorporating security into your software development process may seem like a daunting process, so let's go over 3 key features of GHAS and how they help your team stay on top of the latest security threats: Secret scanning, Code scanning, and Dependabot. 
 
-:::image type="content" source="../media/ghas-intro.png" alt-text="Image representing the different stages of the software development lifecycle with GitHub Advanced Security.":::
 
 ### Secret scanning 
 
