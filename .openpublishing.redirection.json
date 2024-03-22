@@ -35415,6 +35415,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-kubernetes-service/7-kubernetes-container-scale-options.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-kubernetes/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-kubernetes-service/5-kubernetes-storage.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-kubernetes/",
+      "redirect_document_id": false
     }
   ]
 }
