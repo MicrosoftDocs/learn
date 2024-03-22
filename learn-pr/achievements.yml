@@ -3083,3 +3083,13 @@ achievements:
   title: Migrate Java web applications to Azure Kubernetes Service
   summary: In this module, you'll learn to use the Azure Migrate App Containerization tool to containerize and migrate Java web applications to Azure Kubernetes Service.
   iconUrl: /training/achievements/java-on-azure-badge.svg
+- uid: learn.wwl.configure-azure-alerts.badge
+  type: badge
+  title: Configure Azure alerts
+  summary: Learn how to configure Azure alerts including action groups.
+  iconUrl: /training/achievements/azure-alerts-configure.svg
+- uid: learn.wwl.configure-azure-kubernetes-service.badge
+  type: badge
+  title: Configure Azure Kubernetes Service
+  summary: Learn how to configure Azure Kubernetes Service including networking, storage, and scaling.
+  iconUrl: /training/achievements/azure-kubernetes-configure.svg
