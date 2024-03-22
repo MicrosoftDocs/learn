@@ -29,3 +29,4 @@ Switch -WildCard ($ip) {
 For values of `$ip` on the London or Vancouver networks, two messages will be displayed. If `$ip` includes an IP address on the 10.x.x.x network, the messages will indicate that the computer is on the internal network and that the computer is in either London or Vancouver. If `$ip` is not an IP address on the 10.x.x.x network, the message indicates that it's not on the internal network.
 
 If you provide multiple values in an array to a **Switch** construct, each item in the array is evaluated. In the previous example, if the variable `$ip` was an array with two IP addresses, then both IP addresses would be processed. The actions appropriate for each item in the array would be performed.
+
