@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/22/2024
   author: wwlpublish
   ms.author: riswinto
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: purview
 title: Apply and manage sensitivity labels
 summary: Learn about how sensitivity labels are used to classify and protect business data while making sure that user productivity and their ability to collaborate aren't hindered.
