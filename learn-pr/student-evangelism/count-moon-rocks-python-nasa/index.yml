@@ -6,7 +6,7 @@ metadata:
   ms.date: 01/27/2023
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen, py-fresh-zinc, engagement-fy23
   ms.service: azure-python
   ms.devlang: python

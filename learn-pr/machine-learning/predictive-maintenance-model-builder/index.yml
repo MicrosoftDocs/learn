@@ -8,7 +8,7 @@ metadata:
   author: luisquintanilla
   ms.author: chnoring
   ms.manager: markl
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: dotnet-ml
   ms.custom: nextgen
 title: Train a machine learning model for predictive maintenance by using ML.NET Model Builder
