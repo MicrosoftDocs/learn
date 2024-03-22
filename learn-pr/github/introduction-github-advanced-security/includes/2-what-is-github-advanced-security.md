@@ -1,4 +1,4 @@
-In this unit we will be covering:
+In this unit we'll be covering:
 
 -	Secret scanning
 -	Code scanning
@@ -11,7 +11,7 @@ Let’s start with a quick review of GHAS.
 
 GitHub Advanced Security (or GHAS) is an application security solution that empowers developers. Advanced Security is embedded right into your workflow to help prevent vulnerabilities and credential leaks without slowing development. GitHub Advanced Security is like having your personal security consultant review every line of code with insights from security experts from around the world. 
 
-Ensuring the security of applications and the software supply chain has never been more important. While the cost of application security products and services has increased, Gartner predicts that 45% of global organizations will be impacted in some way by a supply chain attack by 2025. According to the 2022 Verizon Data Breach Investigation Report, applications continue to be a top attack vector and are at the center of more than 40%of all data breaches. 
+Ensuring the security of applications and the software supply chain has never been more important. Gartner predicts that 45% of global organizations will be impacted by a supply chain attack by 2025. According to the 2022 Verizon Data Breach Investigation Report, applications continue to be a top attack vector and are at the center of more than 40% of all data breaches. 
 
 Incorporating security into your software development process may seem like a daunting process, so let's go over 3 key features of GHAS and how they help your team stay on top of the latest security threats: Secret scanning, Code scanning, and Dependabot. 
 
@@ -51,7 +51,7 @@ Dependabot is an automated dependency management tool, responsible for keeping p
 
 In a secure software development life cycle, managing dependencies is crucial to minimizing the risk of exploiting known vulnerabilities. Dependabot streamlines the process of updating dependencies, ensuring that projects benefit from the latest security patches and improvements. By automating this aspect of security, Dependabot contributes to creating a resilient and secure foundation for the entire development process.
 
-With GitHub Advanced Security, Dependabot’s functionality is extended to include Dependency Review, a feature which allows you to check for vulnerable dependencies within a pull request. This check will enable you to address vulnerabilities before they are merged into a shared branch.
+With GitHub Advanced Security, Dependabot’s functionality is extended to include Dependency Review, allowing you to check for vulnerable dependencies within a pull request. This check enables you to address vulnerabilities before they are merged into a shared branch.
 
 ### Where to enable Secret scanning, Code scanning, and Dependabot alerts
 
@@ -67,7 +67,7 @@ Now that we’ve reviewed and enabled all 3 of GHAS’s integral features, let's
 
 ### Creating a More Secure Software Development Life Cycle with all 3 Features
 
-Secret scanning, code scanning, and Dependabot collectively contribute to creating a more secure software development life cycle. Secret scanning prevents inadvertent exposure of sensitive information, Code scanning identifies and addresses security vulnerabilities in the codebase, Dependabot automates dependency management. 
+Secret scanning, code scanning, and Dependabot collectively contribute to creating a more secure software development life cycle. Secret scanning prevents inadvertent exposure of sensitive information. Code scanning identifies and addresses security vulnerabilities in the codebase. And Dependabot automates dependency management. 
 
 By integrating these features, development teams can proactively address security concerns at every stage of the development life cycle. This proactive approach minimizes the likelihood of security incidents reaching production, resulting in a more resilient, secure, and efficient software development process.
 
