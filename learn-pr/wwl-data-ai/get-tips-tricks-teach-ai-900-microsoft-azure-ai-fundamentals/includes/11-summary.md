@@ -1,5 +1,5 @@
 
-AI-900 Microsoft Azure AI Fundamentals gives students the opportunity to learn a digital skillset that improves their career prospects. Educators can facilitate the AI-900 Microsoft Azure AI Fundamentals courseware and exams as part of academic courses and programs. 
+AI-900 Microsoft Azure AI Fundamentals give students the opportunity to learn a digital skill set that improves their career prospects. Educators can facilitate the AI-900 Microsoft Azure AI Fundamentals courseware and exams as part of academic courses and programs. 
 
 Supplemental Resources: 
 
@@ -8,8 +8,7 @@ Supplemental Resources:
 - [Microsoft Technical Documentation](https://aka.ms/docs) 
 - [Microsoft Learn for Educators](https://aka.ms/msle)  
 - [Create an Azure Machine Learning workspace](https://aka.ms/CreateAzureWorkspace) 
-- [Facial Recognition](https://azure.microsoft.com/pricing/details/cognitive-services/face-api/) 
-- [AI Demos](https://aka.ms/demosai) 
+- [Facial Recognition](https://aka.ms/faceapi) 
 - [Azure Cognitive Services](https://aka.ms/cognitiveservices) 
 - [What is Language Understanding (LUIS)?](https://aka.ms/whatisLUIS) 
 - [Microsoft AI Business School](https://aka.ms/AIBS) 
