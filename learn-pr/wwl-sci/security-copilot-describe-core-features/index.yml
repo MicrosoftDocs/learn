@@ -17,8 +17,8 @@ abstract: |
     - Describe the features available in the standalone experience.
     - Describe the services to which Microsoft Copilot for Security can integrate.
 prerequisites: |
-  - Working knowledge of security operations and incident response.
-  - Working knowledge of Microsoft security products and services.
+  - Working knowledge of security operations and incident response
+  - Working knowledge of Microsoft security products and services
 iconUrl: /learn/achievements/generic-badge.svg
 hidden: false
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
