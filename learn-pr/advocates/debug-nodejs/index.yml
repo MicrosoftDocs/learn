@@ -6,7 +6,7 @@ metadata:
   author: GitHubber17
   ms.author: chnoring
   ms.date: 06/01/2023
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-javascript
   ms.custom: team=nextgen
 title: Interactively debug Node.js apps with the built-in and Visual Studio Code debuggers

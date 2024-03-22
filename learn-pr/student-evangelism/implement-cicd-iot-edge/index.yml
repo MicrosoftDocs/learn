@@ -6,7 +6,7 @@ metadata:
   ms.date: 06/19/2020
   author: leestott
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
   ms.service: iot-edge
 title: "Implement CI/CD for IoT Edge"
