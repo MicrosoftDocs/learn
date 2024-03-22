@@ -30,7 +30,6 @@ subjects:
 units:
 - learn.wwl.configure-azure-kubernetes-service.introduction
 - learn.wwl.configure-azure-kubernetes-service.explore-aks-terminology
-- learn.wwl.configure-azure-kubernetes-service.explore-aks-cluster-node-architecture
 - learn.wwl.configure-azure-kubernetes-service.interactive-lab-simulation-kubernetes
 - learn.wwl.configure-azure-kubernetes-service.knowledge-check
 - learn.wwl.configure-azure-kubernetes-service.summary-resources
