@@ -3,13 +3,14 @@ uid: learn.wwl.guided-project-work-variable-data-c-sharp
 metadata:
   title: Guided project - Work with variable data in C#
   description: "Guided project - Work with variable data in C#"
-  ms.date: 03/06/2024
+  ms.date: 03/21/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module-guided-project
   ms.custom:
   - N/A
-  ms.service: azure
+  ms.service: dotnet-csharp
+  ms.subservice: fundamentals
   ms.devlang: csharp
   ai-usage: human-only
 title: Guided project - Work with variable data in C#
