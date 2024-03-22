@@ -3093,3 +3093,8 @@ achievements:
   title: Configure Azure alerts
   summary: Learn how to configure Azure alerts including action groups.
   iconUrl: /training/achievements/azure-alerts-configure.svg
+- uid: learn.wwl.configure-azure-kubernetes-service.badge
+  type: badge
+  title: Configure Azure Kubernetes Service
+  summary: Learn how to configure Azure Kubernetes Service including networking, storage, and scaling.
+  iconUrl: /training/achievements/azure-kubernetes-configure.svg
