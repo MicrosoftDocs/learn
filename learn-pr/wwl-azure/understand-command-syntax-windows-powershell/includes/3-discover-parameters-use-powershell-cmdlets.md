@@ -20,3 +20,4 @@ In some cases, entering the parameter name is optional and you can just enter th
 ## Switches
 
 *Switches* are a special case. They're basically parameters that accept a Boolean value (**true** or **false**). They differ from actual Boolean parameters in that the value is only set to **true** if the switch is included when running the command. An example is the *-Recurse* parameter or switch of the **Get-ChildItem** cmdlet. The command **Get-ChildItem c:\ -Recurse** will return not just the items in the C:\ directory, but also those in all of its subdirectories. Without the **-Recurse** switch, only the items in the C:\ directory are returned.
+
