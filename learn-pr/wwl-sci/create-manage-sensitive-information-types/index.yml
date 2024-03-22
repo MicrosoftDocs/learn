@@ -3,10 +3,11 @@ uid: learn.wwl.create-manage-sensitive-information-types
 metadata:
   title: Create and manage sensitive information types
   description: "Create and manage sensitive information types"
-  ms.date: 10/04/2023
+  ms.date: 03/22/2024
   author: wwlpublish
   ms.author: riswinto
   ms.topic: interactive-tutorial
+  ms.service: microsoft-purview
 title: Create and manage sensitive information types
 summary: Learn how to use sensitive information types to support your information protection strategy.
 abstract: |

@@ -3,10 +3,11 @@ uid: learn.wwl.apply-manage-sensitivity-labels
 metadata:
   title: Apply and manage sensitivity labels
   description: "Apply and manage sensitivity labels"
-  ms.date: 06/17/2022
+  ms.date: 03/22/2024
   author: wwlpublish
   ms.author: riswinto
   ms.topic: interactive-tutorial
+  ms.service: microsoft-purview
 title: Apply and manage sensitivity labels
 summary: Learn about how sensitivity labels are used to classify and protect business data while making sure that user productivity and their ability to collaborate are not hindered.
 abstract: |
