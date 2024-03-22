@@ -3,7 +3,7 @@ uid: learn.philanthropies.introduction-to-microsofts-responsible-ai-approach.kno
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: This content is a part of the “Introduction to Microsoft's Responsible AI Approach” module.
+  description: This content is a part of the "Introduction to Microsoft's Responsible AI Approach" module.
   ms.date: 03/22/2024
   author: yoosunee
   ms.author: andreapark
@@ -19,17 +19,17 @@ quiz:
         - content: "To prevent the AI system from evolving with user needs."
           isCorrect: false
           explanation: "Incorrect. Adaptive learning is meant to ensure the AI system evolves with user needs."
-        - content: "To make the AI system completely autonomous without user input."
+        - content: "To make the AI system autonomous without user input."
           isCorrect: false
           explanation: "Incorrect. User feedback is essential for guiding the AI system's learning process."
-        - content: "To allow the AI system to learn from user feedback and provide customizable experiences."
+        - content: "To allow the AI system to learn from user feedback, and provide customizable experiences."
           isCorrect: true
           explanation: "Correct: Adaptive learning enables the AI system to improve and tailor its functionality based on user input."
     - content: "What is the primary purpose of the Microsoft Responsible AI Standard?"
       choices:
         - content: "To limit the capabilities of AI systems."
           isCorrect: false
-          explanation: "Incorrect. The standard aims to guide AI development, not limit it."
+          explanation: "Incorrect. The standard aims to guide AI development, not to limit it."
         - content: "To provide a practical framework for responsible AI development."
           isCorrect: true
           explanation: "Correct. The standard offers clear and actionable guidelines for creating AI systems with ethical considerations at the forefront."
@@ -40,7 +40,7 @@ quiz:
       choices:
         - content: "To ensure the AI system operates without user oversight."
           isCorrect: false
-          explanation: "Incorrect. The purpose is not to eliminate user oversight but to foster understanding and trust."
+          explanation: "Incorrect. The purpose isn't to eliminate user oversight but to foster understanding and trust."
         - content: "To guarantee the AI system's infallibility."
           isCorrect: false
           explanation: "Incorrect. The goal is to set realistic expectations, not to promise perfection."
