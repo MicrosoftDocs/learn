@@ -31,7 +31,6 @@ units:
 - learn.wwl.configure-azure-kubernetes-service.introduction
 - learn.wwl.configure-azure-kubernetes-service.explore-aks-terminology
 - learn.wwl.configure-azure-kubernetes-service.explore-aks-cluster-node-architecture
-- learn.wwl.configure-azure-kubernetes-service.configure-aks-networking
 - learn.wwl.configure-azure-kubernetes-service.configure-aks-storage
 - learn.wwl.configure-azure-kubernetes-service.configure-aks-scaling
 - learn.wwl.configure-azure-kubernetes-service.configure-aks-scaling-to-aci
