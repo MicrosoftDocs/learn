@@ -85,4 +85,3 @@ mstsc /v:<publicIpAddress>
 ```
 
 When you run this command, you'll be prompted for credentials to connect to the VM. In the Windows Security window, select **More choices**, and then select **Use a different account**. Enter the username and password you created for the VM, and then select **OK**. After you connect to your Azure VM through Remote Desktop Protocol (RDP), you'll be able to manage it the same way as any other computer.
-

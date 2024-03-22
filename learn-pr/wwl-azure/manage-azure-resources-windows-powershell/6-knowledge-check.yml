@@ -4,17 +4,18 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/21/2024
+  ms.date: 03/22/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
   ms.custom:
   - N/A
+azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
-  title: ""
   questions:
   - content: "In which sequence should a user perform the following steps to access the operating system running in an Azure VM?1. Create an Azure VM.2. Create a resource group.3. Connect to the Azure VM."
     choices:
