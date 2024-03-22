@@ -1,4 +1,4 @@
-In this demonstration, you'll learn to:
+In this demonstration, you learn to:
 
 - Create a virtual network.
 - Configure and create the gateway.

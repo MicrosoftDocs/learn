@@ -35,7 +35,7 @@ quiz:
       explanation: "That's correct. A P2S VPN connection enables users to connect to your organization from a remote network, such as their home or a public Wi-Fi hotspot."
     - content: "She should implement a multi-site VPN."
       isCorrect: false
-      explanation: "That's incorrect. A multi-site connection is a variation of the S2S connection. You use both S2S and multi-site connections to support cross-premises and hybrid configurations"
+      explanation: "That's incorrect. A multi-site connection is a variation of the S2S connection. You use both S2S and multi-site connections to support cross-premises and hybrid configurations."
   - content: "What is Microsoft peering?"
     choices:
     - content: "It provides a direct connection from your on-premises network to an Azure datacenter."
