@@ -1,5 +1,5 @@
 
-:::image type="content" source="../media/7-security-built-into-dev-lifecycle.png" alt-text="Image of a GitHub pull request next to a developer lifecycle circle.":::
+:::image type="content" source="../media/security-lifecycle.png" alt-text="Image of a GitHub pull request next to a developer lifecycle circle.":::
 
 Gone are the days when security is isolated and treated as a separate phase or gate in the software development lifecycle. As we learned, this approach may lead to delayed identification and remediation of vulnerabilities, as issues are only discovered late in the development process. It can result in increased time and resources spent on fixing security issues, potentially impacting project timelines.
 
