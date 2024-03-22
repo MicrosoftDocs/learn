@@ -35365,6 +35365,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-alerts/4-create-action-groups.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/incident-response-with-alerting-on-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-alerts/3-create-alert-rules.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/incident-response-with-alerting-on-azure/",
+      "redirect_document_id": false
     }
   ]
 }
