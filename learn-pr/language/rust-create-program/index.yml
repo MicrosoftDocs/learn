@@ -7,8 +7,8 @@ metadata:
   author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
+  ms.devlang: rust
 title: Create your first Rust program
 summary: Learn about Rust concepts, including variables, data types, and functions.
 abstract:  |

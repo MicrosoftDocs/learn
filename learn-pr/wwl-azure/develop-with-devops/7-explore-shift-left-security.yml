@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-with-devops.explore-shift-left-security
+title: 'Explore shift-left security'
+metadata:
+  title: 'Explore shift-left security'
+  description: "In this unit, explore the importance of the shift-left approach to security and learn how to implement it effectively."
+  ms.date: 02/06/2024
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-explore-shift-left-security.md)]

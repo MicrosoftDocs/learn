@@ -4,13 +4,12 @@ title: Use the UNION operator
 metadata:
   title: Use the UNION operator
   description: "Use the UNION operator"
-  ms.date: 10/11/2022
+  ms.date: 03/14/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/2-use-union-operator.md)]

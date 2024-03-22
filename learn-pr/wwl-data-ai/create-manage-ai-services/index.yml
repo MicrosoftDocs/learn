@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.create-manage-ai-services
+metadata:
+  title: Create and consume Azure AI services
+  description: "Learn to create and consume Azure AI services."
+  ms.date: 09/28/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: module-standard-task-based
+  ms.service: azure-ai-services
+title: Create and consume Azure AI services 
+summary: Azure AI services enable developers to easily add AI capabilities into their applications. Learn how to create and consume these services.
+abstract: |
+  After completing this module, you'll able to:
+  - Create Azure AI services resources in an Azure subscription.
+  - Identify endpoints, keys, and locations required to consume an Azure AI services resource.
+  - Use a REST API and an SDK to consume Azure AI services.
+prerequisites: |
+  Before starting this module, you should have:
+  - Experience of provisioning and managing Azure services in the Azure portal.
+  - A knowledge of C# or Python.
+iconUrl: /training/achievements/create-and-manage-cognitive-services.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+- student
+products:
+- ai-services
+subjects:
+- artificial-intelligence
+units:
+- learn.wwl.create-manage-ai-services.introduction
+- learn.wwl.create-manage-ai-services.create-resource
+- learn.wwl.create-manage-ai-services.identify-keys-endpoints
+- learn.wwl.create-manage-ai-services.use-rest
+- learn.wwl.create-manage-ai-services.use-sdk
+- learn.wwl.create-manage-ai-services.exercise-ai-services
+- learn.wwl.create-manage-ai-services.knowledge-check
+- learn.wwl.create-manage-ai-services.summary
+badge:
+  uid: learn.wwl.create-manage-ai-services.badge

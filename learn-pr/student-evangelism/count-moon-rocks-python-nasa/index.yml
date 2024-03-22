@@ -7,8 +7,9 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen, py-fresh-zinc, engagement-fy23
+  ms.service: azure-python
+  ms.devlang: python
 title: Count the number of Moon rocks by type using Python
 summary: Use Python to make a simple program to count the number of each type of space rock.
 abstract: |

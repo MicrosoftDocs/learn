@@ -4,13 +4,10 @@ title: Track data lineage in pipelines
 metadata:
   title: Track data lineage in pipelines
   description: "Track data lineage in pipelines"
-  ms.date: 04/04/2023
+  ms.date: 07/20/2023
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.author: rcaper
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/05-track-data-lineage.md)]

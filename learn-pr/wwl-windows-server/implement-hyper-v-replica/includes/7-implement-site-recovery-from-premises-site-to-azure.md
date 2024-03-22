@@ -65,7 +65,7 @@ The following graphic illustrates the replication of virtual machines from an on
 
     |Name|URL|Purpose|
     |---|---|---|
-    |Azure Active Directory|`login.microsoftonline.com`|Used for access control and identity management.|
+    |Microsoft Entra ID|`login.microsoftonline.com`|Used for access control and identity management.|
     |Backup|`*.backup.windowsazure.com`|Used for replication data transfer and coordination.|
     |Replication|`*.hypervrecoverymanager.windowsazure.com`|Used for replication management operations and coordination.|
     |Storage|`*.blob.core.windows.net`|Used for access to the storage account that stores replicated data.|

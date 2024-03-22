@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-code-to-cloud.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introductory unit of the Introduction to Code to Cloud module
+  ms.date: 09/04/2023
+  author: juliamuiruri4
+  ms.author: juliamuiruri
+  ms.topic: unit
+  ms.service: azure
+  ms.custom: team=nextgen
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

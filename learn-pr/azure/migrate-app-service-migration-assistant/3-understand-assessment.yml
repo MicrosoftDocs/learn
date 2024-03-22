@@ -5,10 +5,9 @@ metadata:
   title: Assess a web app with the Azure App Service Migration Assistant
   description: Explore the reasons why you should move your web application to Azure App Service, potential migration hurdles, and the value of an assessment.
   ms.date: 05/21/2020
-  author: v-ksreedevan
-  ms.author: v-ksreedevan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 5
 azureSandbox: false
 content: |

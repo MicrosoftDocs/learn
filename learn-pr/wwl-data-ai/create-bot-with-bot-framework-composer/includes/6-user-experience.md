@@ -15,7 +15,7 @@ Text input from users is parsed to determine the intent. The ability to add natu
 
 Careful planning could reveal a better design option where the bot is specific in the prompt. Your bot could prompt the user with "What is your first name?". It doesn't completely eliminate ambiguity but it leans toward a more appropriate response that may not require extensive parsing logic.
 
-Your bot can integrate different cognitive services to aid in language understanding, keyword, or phrase detection, and sentiment analysis. These features make your bot more "intelligent" but they also lead to response time delays if too many services are integrated for each response. Essentially, the less processing required on the user input, the less chance for misinterpretation or bot performance.  The following are recommended considerations for text input, from Microsoft.
+Your bot can integrate different Azure AI services to aid in language understanding, keyword, or phrase detection, and sentiment analysis. These features make your bot more "intelligent" but they also lead to response time delays if too many services are integrated for each response. Essentially, the less processing required on the user input, the less chance for misinterpretation or bot performance.  The following are recommended considerations for text input, from Microsoft.
 
 - Whenever possible, ask specific questions that do not require natural language understanding capabilities to parse the response. It will simplify your bot and increase the success with which your bot understands the user
 - Designing a bot to require specific commands from the user can often provide a good user experience while also eliminating the need for natural language understanding capability.
@@ -26,7 +26,7 @@ Your bot can integrate different cognitive services to aid in language understan
 
 You can design your bot to take advantage of speech input and output. You may decide that your bot application needs to support speech if it will be accessed from devices that do not contain keyboards or monitors. You may also design your bot for users with differing abilities to interact with computing devices.
 
-Using speech will require your bot to interact with the Speech cognitive services to transcribe the spoken word to text, for actions by the bot, and then synthesize the text responses to speech as the output.
+Using speech will require your bot to interact with the Azure AI Speech to transcribe the spoken word to text, for actions by the bot, and then synthesize the text responses to speech as the output.
 
 ## Rich user controls
 

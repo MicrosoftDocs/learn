@@ -1,23 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.maintain-azure-cognitive-search-solution
 metadata:
-  title: Maintain an Azure Cognitive Search solution
-  description: "Maintain the performance, cost, and reliability of your Azure Cognitive Search solutions."
-  ms.date: 09/21/2022
+  title: Maintain an Azure AI Search solution
+  description: "Maintain the performance, cost, and reliability of your Azure AI Search solutions."
+  ms.date: 09/27/2023
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Maintain an Azure Cognitive Search solution
-summary: Maintain the performance, cost, and reliability of your Azure Cognitive Search solutions.
+  ms.author: berryivor
+  ms.topic: module-standard-task-based
+  ms.service: cognitive-search
+title: Maintain an Azure AI Search solution
+summary: Maintain the performance, cost, and reliability of your Azure AI Search solutions.
 abstract: |
   In this module, you'll learn how to:
-  *   Use Language Studio to enrich Azure Cognitive Search indexes
-  *   Enrich a cognitive search index with custom classes
+  *   Use Language Studio to enrich Azure AI Search indexes
+  *   Enrich an AI Search index with custom classes
 prerequisites: |
   *   Familiarity with Microsoft Azure
   *   Application development experience with C# or Python
-  *   Experience of building a basic search solution with Azure Cognitive Search. If you've not completed the [Create an Azure Cognitive Search](/training/modules/create-azure-cognitive-search-solution) solution module, you should do so before starting this module.
+  *   Experience of building a basic search solution with Azure AI Search. If you've not completed the [Create an Azure AI Search](/training/modules/create-azure-cognitive-search-solution) solution module, you should do so before starting this module.
 iconUrl: /training/achievements/maintain-azure-cognitive-search-solution.svg
 levels:
 - intermediate
@@ -39,7 +39,7 @@ units:
 - learn.wwl.maintain-azure-cognitive-search-solution.improve-reliability-of-azure-cognitive-search-solution
 - learn.wwl.maintain-azure-cognitive-search-solution.monitor-azure-cognitive-search-solution
 - learn.wwl.maintain-azure-cognitive-search-solution.debug-search-issues-use-azure-portal
-- learn.wwl.maintain-azure-cognitive-search-solution.exercise-debug-search-issues
+- learn.wwl.maintain-azure-cognitive-search-solution.exercise-debug-search
 - learn.wwl.maintain-azure-cognitive-search-solution.knowledge-check
 - learn.wwl.maintain-azure-cognitive-search-solution.summary
 badge:

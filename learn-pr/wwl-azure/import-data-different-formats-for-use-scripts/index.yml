@@ -6,8 +6,9 @@ metadata:
   ms.date: 11/11/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: powershell
+  ms.subservice: cmdlets
 title: Import data in different formats for use in scripts by using Windows PowerShell cmdlets
 summary: This module explains how to import data from a text file, CSV file, XML file, and JavaScript Object Notation (JSON) file.
 abstract: |
@@ -32,14 +33,13 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-cloud-shell
 - azure-powershell
 - azure-virtual-machines
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

@@ -4,11 +4,10 @@ title: Create a new Xamarin.Forms element with renderers
 metadata:
   title: Create a new Xamarin.Forms element with renderers
   description: Create a new Xamarin.Forms element with renderers
-  ms.date: 05/01/2019
+  ms.date: 02/20/2024
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-xamarin
+  ms.topic: unit
   
 durationInMinutes: 5 
 content: |

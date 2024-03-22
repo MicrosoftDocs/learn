@@ -157,7 +157,7 @@ It can take up to 3 hours to create and remove a certificate IoC.
 
 ### Create an indicator for certificates:
 
-1. In the Microsoft 365 Defender portal, select **Settings > Endpoints > Indicators**.
+1. In the Microsoft Defender portal, select **Settings > Endpoints > Indicators**.
 
 1. Select the Certificate tab.
 
@@ -179,7 +179,7 @@ You can also choose to upload a CSV file that defines the attributes of indicato
 
 Download the sample CSV to know the supported column attributes.
 
-1. In the Microsoft 365 Defender portal, select **Settings > Endpoints > Indicators**.
+1. In the Microsoft Defender portal, select **Settings > Endpoints > Indicators**.
 
 1. Select the tab of the entity type you'd like to import indicators for.
 

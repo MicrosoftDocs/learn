@@ -7,8 +7,10 @@ metadata:
   ms.date: 06/14/2022
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 azureSandbox: false
 labModal: false
 durationInMinutes: 1

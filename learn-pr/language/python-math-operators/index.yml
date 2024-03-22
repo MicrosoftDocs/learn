@@ -2,15 +2,16 @@
 uid: learn.beginner-python.use-math-operators
 metadata:
   title: Use mathematical operations in Python
-  description: Almost every application a developer creates involves some level of math. This module will explore the core functionality in Python and arithmetic operators.
-  ms.date: 12/07/2022
+  description: Almost every application a developer creates involves some level of math. This module explores the core functionality in Python and arithmetic operators.
+  ms.date: 06/05/2023
   author: geektrainer
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-language
+  ms.service: azure-python
+  ms.devlang: python
 title: Use mathematical operations in Python
-summary: Almost every application a developer creates involves some level of math. This module will explore the core functionality in Python and arithmetic operators. You will also explore how to perform more manipulations of data and numbers. You will put this knowledge to use to create a project to determine the distance between planets.
+summary: Almost every application a developer creates involves some level of math. This module explores the core functionality in Python and arithmetic operators. You'll also explore how to perform more manipulations of data and numbers. You'll put this knowledge to use to create a project to determine the distance between planets.
 abstract: | 
   By the end of this module, you'll be able to:
   - Use arithmetic operators in Python.

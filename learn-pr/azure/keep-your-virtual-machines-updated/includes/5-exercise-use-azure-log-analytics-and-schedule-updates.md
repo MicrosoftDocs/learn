@@ -1,4 +1,4 @@
-Recently your department moved all of their infrastructure to Azure. There are many virtual machines (VMs) serving up web sites and email functions. You have been tasked to keep these VMs up-to-date with the latest patches and security releases. You decide to roll out the Update Management solution to all of the VMs in your enterprise. 
+Recently, your department moved all of their infrastructure to Azure. There are many virtual machines (VMs) serving up web sites and email functions. You have been tasked to keep these VMs up to date with the latest patches and security releases. You decide to roll out the Update Management solution to all of the VMs in your enterprise. 
 
 In the following exercise you will review the agent connectivity to log analytics and, learn how to schedule update deployments.
 
@@ -10,7 +10,7 @@ Perform the following steps in the Azure portal to assess if connectivity betwee
 1. Select **Virtual machines** > **MediaWebServer**.
 1. On the VM **Overview** page, make note of the **Public IP Address**.
    :::image type="content" source="../media/5-public-ip-address.png" alt-text="Screenshot that highlights the public IP address that's on the VM's overview page.":::
-1. On the **Overview** page, select **Connect** > **RDP**.
+1. On the **Overview** page, select **Connect** > **Native RDP** > **Select**.
 1. Select **Download RDP file**.
 1. From the browser, select **Open file** and **Connect**.
 1. In **Windows security**, select **More choices** > **Use different account**.
@@ -38,7 +38,7 @@ Perform the following steps in the Azure portal to assess if connectivity betwee
 
 ## Schedule Update Deployments
 
-Here you will learn how to schedule updates for the virtual machine.
+Here, you'll learn how to schedule updates for the virtual machine.
 
 1. In the Azure portal, go to the VM **MediaWebServer** and select **Guest + host updates** > **Go to Update management**.
 1. Select the tab **Schedule update deployment**.

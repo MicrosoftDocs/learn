@@ -1,15 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.build-operate-machine-learning-solutions-azure-databricks
 metadata:
-  title: Machine learning with Azure Databricks
+  title: Implement a Machine Learning solution with Azure Databricks
   description: Azure Databricks is a cloud-scale platform for data analytics and machine learning. Data scientists and machine learning engineers can use Azure Databricks to implement machine learning solutions at scale.
-  ms.date: 03/29/2023
+  ms.date: 02/08/2024
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.service: azure-databricks
-title: Machine learning with Azure Databricks
+  ms.topic: learning-path
+  ms.service: azure
+title: Implement a Machine Learning solution with Azure Databricks
 prerequisites: |
   This learning path assumes that you  have experience of using Python to explore data and train machine learning models with common open source frameworks, like Scikit-Learn, PyTorch, and TensorFlow.
   Consider completing the [Create machine learning models](/training/paths/create-machine-learn-models/) learning path before starting this one.
@@ -24,7 +23,7 @@ products:
 - azure-databricks
 subjects:
 - artificial-intelligence
-- data-science
+- data-management
 - machine-learning
 modules:
 - learn.wwl.explore-azure-databricks

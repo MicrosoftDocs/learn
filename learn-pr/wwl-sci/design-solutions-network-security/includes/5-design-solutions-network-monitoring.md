@@ -6,15 +6,15 @@ This section explores key considerations and recommended approaches for capturin
 
 ## Design considerations
 
-_Azure VPN Gateway -_ VPN Gateway lets you run a packet capture on a VPN gateway, a specific connection, multiple tunnels, one-way traffic, or bi-directional traffic. A maximum of five packet captures can run in parallel per gateway. They can be gateway-wide and per-connection packet captures. For more information, see [VPN packet capture](https://learn.microsoft.com/azure/vpn-gateway/packet-capture).
+_Azure VPN Gateway -_ VPN Gateway lets you run a packet capture on a VPN gateway, a specific connection, multiple tunnels, one-way traffic, or bi-directional traffic. A maximum of five packet captures can run in parallel per gateway. They can be gateway-wide and per-connection packet captures. For more information, see [VPN packet capture](/azure/vpn-gateway/packet-capture).
 
 _Azure Network Watcher_ has multiple tools you should consider if you're using infrastructure-as-a-service (IaaS) solutions:
 
--   _Packet capture -_ Network Watcher lets you create temporary capture packet sessions on traffic headed to and from a virtual machine. Each packet capture session has a time limit. When the session ends, packet capture creates a `pcap` file that you can download and analyze. Network Watcher packet capture can't give you continuous port mirroring with these time constraints. For more information, see [packet capture overview](https://learn.microsoft.com/azure/network-watcher/network-watcher-packet-capture-overview).
+-   _Packet capture -_ Network Watcher lets you create temporary capture packet sessions on traffic headed to and from a virtual machine. Each packet capture session has a time limit. When the session ends, packet capture creates a `pcap` file that you can download and analyze. Network Watcher packet capture can't give you continuous port mirroring with these time constraints. For more information, see [packet capture overview](/azure/network-watcher/network-watcher-packet-capture-overview).
     
--   _Network Security Group (NSG) flow logs -_ NSG flow logs capture information about IP traffic flowing through your NSGs. Network Watcher stores NSG flow logs as JSON files in Azure Storage account. You can export the NSG flow logs to an external tool for analysis. For more information, see NSG flow logs [overview](https://learn.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-overview) and [data analysis options](https://learn.microsoft.com/azure/network-watcher/network-watcher-visualize-nsg-flow-logs-power-bi).
+-   _Network Security Group (NSG) flow logs -_ NSG flow logs capture information about IP traffic flowing through your NSGs. Network Watcher stores NSG flow logs as JSON files in Azure Storage account. You can export the NSG flow logs to an external tool for analysis. For more information, see NSG flow logs [overview](/azure/network-watcher/network-watcher-nsg-flow-logging-overview) and [data analysis options](/azure/network-watcher/network-watcher-visualize-nsg-flow-logs-power-bi).
     
--   _Traffic Analytics -_ Traffic Analytics ingests and analyzes NSG flow logs. It creates a dashboard of insights on the NSG flow logs and generates a geo-map view of your resources for easy analysis. For more information, see [Traffic Analytics overview](https://learn.microsoft.com/azure/network-watcher/traffic-analytics).
+-   _Traffic Analytics -_ Traffic Analytics ingests and analyzes NSG flow logs. It creates a dashboard of insights on the NSG flow logs and generates a geo-map view of your resources for easy analysis. For more information, see [Traffic Analytics overview](/azure/network-watcher/traffic-analytics).
     
 
 ## Design recommendations

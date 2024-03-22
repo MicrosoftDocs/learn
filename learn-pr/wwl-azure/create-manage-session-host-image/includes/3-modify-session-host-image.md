@@ -52,6 +52,6 @@ For Azure Virtual Desktop session host that use Windows 10 Enterprise or Windows
 You can also change the setting with the registry by running the following command:
 
 ```
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\StorageSense\Parameters\StoragePolicy" /v 01 /t REG_DWORD /d 0 /f
+reg add "HKLM\Software\Microsoft\Windows\CurrentVersion\StorageSense\Parameters\StoragePolicy" /v 01 /t REG_DWORD /d 0 /f
 
 ```

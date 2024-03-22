@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-deploy-configure-azure-monitor.exercise-configure-alerts
+title: Exercise - Configure alerts
+metadata:
+  title: Exercise - Configure alerts
+  description: "Exercise - Configure alerts"
+  ms.date: 10/06/2023
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-exercise-configure-alerts.md)]

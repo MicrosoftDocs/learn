@@ -4,7 +4,7 @@ Let's say your company is now ready to implement virtual network peering. You wa
 - The **Marketing** virtual network is deployed in **North Europe**. Marketing systems use this virtual network. Members of the Marketing team regularly chat with the Sales team. To share their data with the Sales team, they must download it because the Sales and Marketing systems aren't connected.
 - The **Research** virtual network is deployed in **West Europe**. Research systems use this virtual network. Members of the Research team have a logical working relationship with Marketing, but they don't want the Sales team to have direct access to their data.
 
-![A diagram of virtual networks you need to create.](../media/3-prepare-vnets.svg)
+:::image type="content" source="../media/3-prepare-vnets.svg" alt-text="A diagram of virtual networks you need to create.":::
 
 You'll create the following resources:
 
@@ -86,7 +86,7 @@ Now, you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual net
         --location northeurope \
         --vnet-name SalesVNet \
         --subnet Apps \
-        --image UbuntuLTS \
+        --image Ubuntu2204 \
         --admin-username azureuser \
         --admin-password <password>
     ```
@@ -104,7 +104,7 @@ Now, you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual net
         --location northeurope \
         --vnet-name MarketingVNet \
         --subnet Apps \
-        --image UbuntuLTS \
+        --image Ubuntu2204 \
         --admin-username azureuser \
         --admin-password <password>
     ```
@@ -119,7 +119,7 @@ Now, you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual net
         --location westeurope \
         --vnet-name ResearchVNet \
         --subnet Data \
-        --image UbuntuLTS \
+        --image Ubuntu2204 \
         --admin-username azureuser \
         --admin-password <password>
     ```

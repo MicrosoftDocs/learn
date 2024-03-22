@@ -1,8 +1,8 @@
-In this module, you will create a Mixed Reality application that explores the use of Azure Speech Services with the HoloLens 2. When you complete this series, you will be able to use your device's microphone to transcribe speech to text in real-time, translate your speech into other languages, and use the Intent recognition feature to understand voice commands using artificial intelligence.
+In this module, you'll create a Mixed Reality application that explores the use of Azure Speech Services with the HoloLens 2. When you complete this series, you'll be able to use your device's microphone to transcribe speech to text in real time, translate your speech into other languages, and use the Intent recognition feature to understand voice commands using artificial intelligence.
 
 ## Create and prepare the Unity project
 
-In this section, you will create a new Unity project and get it ready for MRTK development.
+In this section, you'll create a new Unity project and get it ready for MRTK development.
 
 As a prerequisite, make sure you've completed the steps below to initialize your project and application:
 
@@ -11,20 +11,10 @@ As a prerequisite, make sure you've completed the steps below to initialize your
 3. Importing the TextMeshPro Essential Resources
 4. Importing the Mixed Reality Toolkit
 5. Configuring the Unity project
-6. Creating and configuring the scene and give the scene a suitable name, for example, *AzureSpeechServices*
-
-Then, follow the Changing the Spatial Awareness Display Option instructions to ensure the MRTK configuration profile for your scene is **DefaultHoloLens2ConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
+6. Creating and configuring the scene and giving it a suitable name; for example, *AzureSpeechServices*
 
 > [!NOTE]
 > You can learn how to set up your mixed-reality project in the [Introduction to Mixed Reality Toolkit](/training/modules/learn-mrtk-tutorials/) module.
-
-## Configure the speech commands start behavior
-
-Because you will use the Speech SDK for speech recognition and transcription, you need to configure the MRTK Speech Commands so they do not interfere with the Speech SDK functionality. To achieve this, you can change the speech commands start behavior from Auto Start to Manual Start.
-
-1. With the **MixedRealityToolkit** object selected in the Hierarchy window, in the Inspector window, select the **Input** tab, clone the **DefaultHoloLens2InputSystemProfile** and the **DefaultMixedRealitySpeechCommandsProfile**, and then change the speech commands **Start Behavior** to **Manual Start**:
-
-    :::image type="content" source="../media/change-speech-commands.png" alt-text="Screenshot that describes Change the speech commands." lightbox="../media/change-speech-commands.png":::
 
 ## Configure the capabilities
 
@@ -32,64 +22,64 @@ Because you will use the Speech SDK for speech recognition and transcription, yo
 
     :::image type="content" source="../media/configure-capabilities.png" alt-text="Screenshot of Configuring capabilities." lightbox="../media/configure-capabilities.png":::
 
-2. In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone**, and **SpatialPerception** capabilities (which you enabled when you created the project at the beginning of the tutorial) are still enabled. Then enable the **InternetClientServer** and **PrivateNetworkClientServer** capabilities:
+2. In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone**, and **SpatialPerception** capabilities (which you enabled when you created the project at the beginning of the tutorial) are still enabled. Then, enable the **InternetClientServer** and **PrivateNetworkClientServer** capabilities.
 
     :::image type="content" source="../media/enable-capabilities.png" alt-text="Screenshot of Enable the capabilities." lightbox="../media/enable-capabilities.png":::
 
 ## Import the tutorial assets
 
-1. Download and **import** the following Unity custom packages **in the order they are listed**:
+1. Download and *import* the following Unity custom packages *in the order they're listed*:
 
     * [Microsoft.CognitiveServices.Speech.N.N.N.unitypackage](https://aka.ms/csspeech/unitypackage) (latest version)
-    * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.3.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.3.0.3/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.3.unitypackage)
-    * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.2.5.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/2.5.1/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.2.5.1.unitypackage)
+    * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.3.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v3.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.3.0.0.unitypackage)
+    * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.3.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-speech-services-v3.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.3.0.0.unitypackage)
 
-2. Once you import the tutorial assets your Project window should look like this:
+2. Once you import the tutorial assets, your Project window should look like this:
 
-    :::image type="content" source="../media/project-window.png" alt-text="Screenshot of Project window must look similar to this." lightbox="../media/project-window.png":::
+    :::image type="content" source="../media/project-window.png" alt-text="Screenshot of Project window after importing the requisite assets." lightbox="../media/project-window.png":::
 
 ## Prepare the scene
 
-In this section, you will prepare the scene by adding the tutorial prefab and configure the Lunarcom Controller (Script) component to control your scene.
+In this section, you'll prepare the scene by adding the tutorial prefab and configure the Lunarcom Controller (Script) component to control your scene.
 
-1. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.AzureSpeechServices** > **Prefabs** folder and drag the **Lunarcom** prefab into the Hierarchy window to add it to your scene:
+1. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.AzureSpeechServices** > **Prefabs** folder and drag the **Lunarcom** prefab into the Hierarchy window to add it to your scene.
 
-    :::image type="content" source="../media/prepare-scene.png" alt-text="Screenshot of Preparing the scene." lightbox="../media/prepare-scene.png":::
+    :::image type="content" source="../media/prepare-scene.png" alt-text="Screenshot of preparing the scene." lightbox="../media/prepare-scene.png":::
 
-2. With the **Lunarcom** object still selected in the Hierarchy window, in the Inspector window, use the **Add Component** button to add the **Lunarcom Controller (Script)** component to the Lunarcom object:
+2. With the **Lunarcom** object still selected in the Hierarchy window, in the Inspector window, use the **Add Component** button to add the **Lunarcom Controller (Script)** component to the Lunarcom object.
 
-    :::image type="content" source="../media/lunarcom-controller.png" alt-text="Screenshot of Adding Lunarcom controller (Script)." lightbox="../media/lunarcom-controller.png":::
+    :::image type="content" source="../media/lunarcom-controller.png" alt-text="Screenshot of adding Lunarcom controller (Script)." lightbox="../media/lunarcom-controller.png":::
 
-3. With the **Lunarcom** object still selected, expand it to reveal its child objects, then drag the **Terminal** object into the Lunarcom Controller (Script) component's **Terminal** field:
+3. With the **Lunarcom** object still selected, expand it to reveal its child objects, then drag the **Terminal** object into the Lunarcom Controller (Script) component's **Terminal** field.
 
-    :::image type="content" source="../media/terminal-field.png" alt-text="Screenshot of Terminal field." lightbox="../media/terminal-field.png":::
+    :::image type="content" source="../media/terminal-field.png" alt-text="Screenshot of the Terminal field." lightbox="../media/terminal-field.png":::
 
-4. With the **Lunarcom** object still selected, expand the Terminal object to reveal its child objects, then drag the **ConnectionLight** object into the Lunarcom Controller (Script) component's **Connection Light** field and the **OutputText** object into the **Output Text** field:
+4. With the **Lunarcom** object still selected, expand the Terminal object to reveal its child objects, then drag the **ConnectionLight** object into the Lunarcom Controller (Script) component's **Connection Light** field and the **OutputText** object into the **Output Text** field.
 
-    :::image type="content" source="../media/output-text-field.png" alt-text="Screenshot of Output text field." lightbox="../media/output-text-field.png":::
+    :::image type="content" source="../media/output-text-field.png" alt-text="Screenshot of the Output text field." lightbox="../media/output-text-field.png":::
 
-5. With the **Lunarcom** object still selected, expand the Buttons object to reveal its child objects, and then in the Inspector window, expand the **Buttons** list, set its **Size** to 3, and drag the **MicButton**, **SatelliteButton**, and **RocketButton** objects into the **Element** 0, 1, and 2 fields respectively:
+5. With the **Lunarcom** object still selected, expand the Buttons object to reveal its child objects, and then in the Inspector window, expand the **Buttons** list, set the **Buttons** field to **3**, and drag the **MicButton**, **SatelliteButton**, and **RocketButton** objects into the **Element** 0, 1, and 2 fields respectively.
 
-    :::image type="content" source="../media/configure-buttons.png" alt-text="Screenshot of Configure the buttons." lightbox="../media/configure-buttons.png":::
+    :::image type="content" source="../media/configure-buttons.png" alt-text="Screenshot of configuring the buttons." lightbox="../media/configure-buttons.png":::
 
 ## Connect the Unity project to the Azure resource
 
-To use Azure Speech Services, you need to create an Azure resource and obtain an API key for the Speech Service. Follow the [Try the Speech service for free](/azure/cognitive-services/speech-service/get-started) instructions and make a note of your service region (also known as Location) and API key (also known as Key1 or Key2).
+To use Azure Speech Services, you need to create an Azure resource and obtain an API key for the Speech Service. Follow the [quickstart](/azure/ai-services/multi-service-resource) instructions and make a note of your service region (also known as *Location*) and API key (also known as *Key1* or *Key2*).
 
 1. In the Hierarchy window, select the **Lunarcom** object, then in the Inspector window, locate the **Lunarcom Controller (Script)** component's **Speech SDK Credentials** section and configure it as follows:
 
-    * In the **Speech Service API Key** field, enter your API key (Key1 or Key2)
-    * In the **Speech Service Region** field, enter your service region (Location) using lowercase letters and spaces removed
+    * In the **Speech Service API Key** field, enter your API key (Key1 or Key2).
+    * In the **Speech Service Region** field, enter your service region (Location) using lowercase letters and spaces removed.
 
-    :::image type="content" source="../media/configure-speech-sdk-credentials.png" alt-text="Screenshot of Configure Speech SDK Credentials." lightbox="../media/configure-speech-sdk-credentials.png":::
+    :::image type="content" source="../media/configure-speech-sdk-credentials.png" alt-text="Screenshot of configuring Speech SDK Credentials." lightbox="../media/configure-speech-sdk-credentials.png":::
 
 ## Use speech recognition to transcribe speech
 
-1. In the Hierarchy window, select the **Lunarcom** object, then in the Inspector window, use the **Add Component** button to add the **Lunarcom Speech Recognizer (Script)** component to the Lunarcom object:
+1. In the Hierarchy window, select the **Lunarcom** object, then in the Inspector window, use the **Add Component** button to add the **Lunarcom Speech Recognizer (Script)** component to the Lunarcom object.
 
-    :::image type="content" source="../media/lunarcom-speech-recognize.png" alt-text="Screenshot of Add Lunarcom Speech Recognizer (Script)." lightbox="../media/lunarcom-speech-recognize.png":::
+    :::image type="content" source="../media/lunarcom-speech-recognize.png" alt-text="Screenshot of adding the Lunarcom Speech Recognizer (Script)." lightbox="../media/lunarcom-speech-recognize.png":::
 
-2. If you now enter Game mode, you can test the speech recognition by first pressing the microphone button:
+2. If you now enter Game mode and select the **Play** button, you can test the speech recognition by first pressing the microphone button:
 
     :::image type="content" source="../media/enter-game-mode.png" alt-text="Screenshot of Enter game mode." lightbox="../media/enter-game-mode.png":::
 

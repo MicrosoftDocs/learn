@@ -1,3 +1,4 @@
+
 This module explores ways to rethink application configuration data and the separation of concerns method. It helps you understand configuration patterns and how to integrate Azure Key Vault with Azure Pipelines.
 
 ## Learning objectives

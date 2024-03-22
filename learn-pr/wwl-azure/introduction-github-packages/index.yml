@@ -6,8 +6,7 @@ metadata:
   ms.date: 08/09/2022
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
 title: Introduction to GitHub Packages
 summary: This module introduces you to GitHub Packages. It explores ways to control permissions and visibility, publish, install, delete and restore packages using GitHub.
 abstract: |

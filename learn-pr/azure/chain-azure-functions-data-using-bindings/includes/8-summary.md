@@ -1,4 +1,4 @@
-This module was about integrating data and services into your functions. We started with a quick tour of the binding types that show up when you add them to a function, then we looked at reading data from an Azure Cosmos DB by using an input binding. Azure Functions takes care of managing connection strings, and we saw how easy it is to read data in our code by using the binding. Finally, we focused our attention on writing data to different sources with the help of output bindings.
+This module was about integrating data and services into your functions. We started with a quick tour of the binding types that show up when you add them to a function. Then, we looked at reading data from an Azure Cosmos DB by using an input binding. Azure Functions takes care of managing connection strings, and we saw how it's easy to read data in our code by using the binding. Finally, we focused our attention on writing data to different sources with the help of output bindings.
 
 This journey is summarized in the following table, which shows the different bindings that you used in each of the units listed.
 
@@ -14,7 +14,7 @@ You can apply the approaches you've learned here to add and test bindings in you
 
 * Create another function to write to more destinations by using other supported output binding types.
 
-* In the preceding unit, we introduced a queue and posted messages to it with an output binding. As a next step, consider adding another function that reads the messages in the queue and prints out the **MESSAGE TEXT** to the console with `console.log()`.
+* In the preceding unit, we introduced a queue and posted messages to it with an output binding. As a next step, consider adding another function that reads the messages in the queue and prints the **MESSAGE TEXT** to the console with `console.log()`.
 
 As we saw in this module, the Azure portal offers easy-to-use features to start building functions and connecting them to data and other services.
 
@@ -24,7 +24,7 @@ If you're interested in doing serverless integrations like these with visual wor
 
 ## Additional resources
 
-Although this isn't intended to be an exhaustive list, the following are some resources related to the topics covered in this module that you might find interesting:
+The following resources are related to the subjects covered in this module that you might find interesting:
 
 * [Azure Functions documentation](/azure/azure-functions/)
 * [Azure Serverless Computing Cookbook](https://azure.microsoft.com/resources/azure-serverless-computing-cookbook/)

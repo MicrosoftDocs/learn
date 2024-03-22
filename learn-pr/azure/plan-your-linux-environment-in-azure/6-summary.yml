@@ -5,10 +5,9 @@ metadata:
   title: Summary
   description: Review the most important aspects of planning Linux environments in Azure
   ms.date: 04/07/2023
-  author: rmcmurray
-  ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: chasecrum
+  ms.author: chasecrum
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]

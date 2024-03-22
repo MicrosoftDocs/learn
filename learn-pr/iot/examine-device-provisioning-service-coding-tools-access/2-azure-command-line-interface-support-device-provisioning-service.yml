@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-device-provisioning-service-coding-tools-access.examine-azure-cli-support-for
+title: Examine Azure CLI support for device provisioning
+metadata:
+  title: Examine Azure CLI support for device provisioning
+  description: "Examine Azure CLI support for device provisioning"
+  ms.date: 01/08/2024
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: unit
+  ms.custom: devx-track-azurecli
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-azure-command-line-interface-support-device-provisioning-service.md)]

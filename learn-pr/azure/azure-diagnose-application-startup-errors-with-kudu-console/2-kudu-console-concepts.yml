@@ -7,8 +7,7 @@ metadata:
   ms.date: 05/09/2022
   author: patridge
   ms.author: adpatrid
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/2-kudu-console-concepts.md)]

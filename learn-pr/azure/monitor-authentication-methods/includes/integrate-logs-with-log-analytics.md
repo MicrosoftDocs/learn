@@ -1,19 +1,19 @@
 
-The activity logs in Azure AD store the information you need to determine how your system is doing. You've seen how to manually access the activity logs to do a quick investigation. For all other scenarios, you can route your Azure AD activity logs to different endpoints. 
+The activity logs in Microsoft Entra ID store the information you need to determine how your system is doing. You've seen how to manually access the activity logs to do a quick investigation. For all other scenarios, you can route your Microsoft Entra activity logs to different endpoints. 
 
 
 Currently, you can route the logs to:
 
-- **An Azure storage account** - To retain the logs data for longer than the default retention period in Azure AD.
+- **An Azure storage account** - To retain the logs data for longer than the default retention period in Microsoft Entra ID.
 
 - **An Azure event hub** -  To integrate the logs data with third-party SIEM tools like Sumologic and Splunk.
 
 - **An Azure Log Analytics workspace** - To analyze the logs data, create dashboard, and alert on specific events.
 
 
-With the integration of Azure AD activity to an Azure Log Analytics, you can perform tasks like:
+With the integration of Microsoft Entra activity to an Azure Log Analytics, you can perform tasks like:
 
-- Compare your Azure AD sign-in logs against security logs published by Microsoft Defender for Cloud.
+- Compare your Microsoft Entra sign-in logs against security logs published by Microsoft Defender for Cloud.
 
 - Troubleshoot performance bottlenecks on your application’s sign-in page by correlating application performance data from Azure Application Insights.
 
@@ -24,13 +24,13 @@ With the integration of Azure AD activity to an Azure Log Analytics, you can per
 
 ## Prerequisites
 
-To use a Log Analytics workspace to view and analyze Azure Active Directory logs, make sure that you have the following items available or set up:
+To use a Log Analytics workspace to view and analyze Microsoft Entra logs, make sure that you have the following items available or set up:
 
 - Access to a Log Analytics workspace.
-- Access to Azure Active Directory logs.
-- Access to Azure Active Directory diagnostics settings.
-- An Azure Active Directory Premium 1 or Premium 2 subscription.
-- Any of the following Azure Active Directory roles:
+- Access to Microsoft Entra logs.
+- Access to Microsoft Entra diagnostics settings.
+- A Microsoft Entra ID P1 or P2 or Premium 2 subscription.
+- Any of the following Microsoft Entra roles:
   - Security Administrator
   - Security Reader
   - Report Reader
@@ -69,7 +69,7 @@ To put that into perspective, if your tenant has 1,000 users, your audit log wou
 
 ## Send logs to the Log Analytics workspace
 
-Now that you've created a Log Analytics workspace, you assign the user audit logs and sign-in logs. All the data you want to use in Azure Monitor logs must be stored in a Log Analytics workspace. In the Azure portal, go to your Azure Active Directory instance. Select the **Monitoring** tab, and then select **Diagnostics settings**.
+Now that you've created a Log Analytics workspace, you assign the user audit logs and sign-in logs. All the data you want to use in Azure Monitor logs must be stored in a Log Analytics workspace. In the Azure portal, go to your Microsoft Entra instance. Select the **Monitoring** tab, and then select **Diagnostics settings**.
 
 To create a connection between the two log files and your Log Analytics workspace, select **Add diagnostic setting**.
 

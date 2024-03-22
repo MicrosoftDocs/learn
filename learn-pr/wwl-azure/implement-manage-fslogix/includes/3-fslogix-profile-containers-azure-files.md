@@ -4,9 +4,11 @@ FSLogix addresses many profile container challenges. Key among them are:
  -  **OneDrive**: Without FSLogix profile containers, OneDrive for Business is not supported in non-persistent RDSH or VDI environments.
  -  **Additional folders**: FSLogix extends user profiles to include additional folders.
 
-## Azure Files integration with Azure Active Directory Domain Service
+<a name='azure-files-integration-with-azure-active-directory-domain-service'></a>
 
-FSLogix profile containers' performance and features take advantage of the cloud using Azure Files authentication with Azure Active Directory Domain Service (AD DS). By addressing both cost and administrative overhead, Azure Files with Azure AD DS Authentication is a premium solution for user profiles in the Azure Virtual Desktop service.
+## Azure Files integration with Microsoft Entra Domain Service
+
+FSLogix profile containers' performance and features take advantage of the cloud using Azure Files authentication with Microsoft Entra Domain Service (AD DS). By addressing both cost and administrative overhead, Azure Files with Microsoft Entra Domain Services Authentication is a premium solution for user profiles in the Azure Virtual Desktop service.
 
 :::image type="content" source="../media/azure-file-sync-f695525c.png" alt-text="Diagram of Azure file sync with Azure storage.":::
 

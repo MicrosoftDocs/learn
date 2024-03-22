@@ -10,7 +10,7 @@ You have two options when you create a Service Fabric cluster. You either use th
 - Username and password for your cluster's administrator account
 - Initial number of virtual machines
 
-The initial number of virtual machines is handled differently between the standard and managed models. In the standard cluster model, this is called the *Initial virtual machine scale set capacity*. For production scenarios, the initial virtual machine scale set capacity is 5 or greater. For testing purposes, less than 5 is acceptable. For the managed cluster model, you determine the initial number of virtual machines through the *Cluster SKU*. There are two options: Basic and Standard. Basic provides 3 initial virtual machines, while Standard provides 5. Similar to the standard cluster model, Standard is recommended for production scenarios, and Basic is only recommended for testing purposes.
+The initial number of virtual machines is handled differently between the standard and managed models. In the standard cluster model, this is called the *initial virtual machine scale set capacity*. For production scenarios, the initial virtual machine scale set capacity is five or greater. For testing purposes, less than five is acceptable. For the managed cluster model, you determine the initial number of virtual machines through the *cluster SKU*. There are two options: basic and standard. Basic provides three initial virtual machines, while standard provides five. Similar to the standard cluster model, standard is recommended for production scenarios, and basic is only recommended for testing purposes.
 
 Unless specified, the Azure service creation workflow creates a Service Fabric cluster using default configuration for scaling, authentication, networking and monitoring. Creating a Service Fabric cluster typically takes 10-15 minutes. Once complete, access and management of your cluster can be done through the Azure portal, Azure CLI, or through the Service Fabric Explorer.
 
@@ -27,9 +27,9 @@ Service Fabric Tools included in Azure Development workload in Visual Studio.
 
 The Microsoft Azure Service Fabric SDK supports both Windows and Linux development environments.
 
-Service Fabric offers a variety of productive programming models, including guest executables, containers, and Reliable Services and Actors.
+Service Fabric offers various productive programming models, including guest executables, containers, and Reliable Services and Actors.
 
-You can develop in a variety of languages, including .NET Core 2.0, C#, and Java.
+You can develop in various languages, including .NET Core 2.0, C#, and Java.
 
 ### Deployment tools
 
@@ -37,6 +37,6 @@ You can deploy workloads to your cluster using PowerShell, Azure Resource Manage
 
 ## Azure Service integration
 
-Azure Service Fabric allows you to integrate with many Azure service offerings.
+Service Fabric allows you to integrate with many Azure service offerings.
 
 For example, you can set up continuous integration and deployment to your nodes using Azure Pipelines. You can also use Azure Monitor to monitor cluster and container infrastructure events.

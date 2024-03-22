@@ -4,10 +4,9 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 10/17/2022
-  author: JefferyMitchell
-  ms.author: jemitche
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 title: Summary
 durationInMinutes: 2
 content: |

@@ -3,11 +3,12 @@ uid: learn-xamarin.design-consistent-xaml-pages-with-shared-resources-and-styles
 metadata:
   title: Design consistent Xamarin.Forms XAML pages by using shared resources and styles
   description: Learn how to use Xamarin.Forms to design and share XAML resources and styles for a consistent look and feel across your entire UI.
-  ms.date: 05/01/2019
+  ms.date: 02/20/2024
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-xamarin
+  ms.topic: module
+  ms.service: xamarin
+  ms.subservice: xamarin-forms
 title: Design consistent Xamarin.Forms XAML pages by using shared resources and styles
 summary: "Define resources and styles in page-level and application-wide ResourceDictionary objects. Apply resources and styles by using the StaticResource and DynamicResource markup extensions."
 abstract: |
@@ -17,6 +18,7 @@ abstract: |
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
 iconUrl: /training/achievements/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles-badge.svg
+hidden: true
 levels:
 - beginner
 roles:

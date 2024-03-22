@@ -3,20 +3,26 @@ uid: learn.wwl.get-started-mongodb-api-azure-cosmos-db
 metadata:
   title: Get started with the MongoDB API in Azure Cosmos DB
   description: "Learn Azure Cosmos DB for MongoDB basics."
-  ms.date: 02/06/2023
+  ms.date: 03/20/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: cosmos-db
+  ms.subservice: mongodb
+  ai-usage: human-only
 title: Get started with the MongoDB API in Azure Cosmos DB
-summary: This Module will introduce Azure Cosmos DB for MongoDB accounts. It will help you get started, create your first objects and connect to your account.
+summary: This Module introduces Azure Cosmos DB for MongoDB accounts. It helps you get started, create your first objects and connect to your account.
 abstract: |
-  *   Estimate RU/s using the Azure Cosmos DB capacity planner for the Azure Cosmos DB for MongoDB.
-  *   Learn about support for different MongoDB features.
-  *   Learn how to create accounts, databases and collections using the Azure Cosmos DB for MongoDB.
-  *   Learn how to connect and query using the Azure Cosmos DB for MongoDB.
-prerequisites: |
-  Before starting this module, you should have experience of building cloud applications with Microsoft JavaScript, Java, Python, C# or a similar programming language.
+  -   Estimate RU/s using the Azure Cosmos DB capacity planner for the Azure Cosmos DB for MongoDB.
+
+  -   Learn about support for different MongoDB features.
+
+  -   Learn how to create accounts, databases, and collections using the Azure Cosmos DB for MongoDB.
+
+  -   Learn how to connect and query using the Azure Cosmos DB for MongoDB.
+prerequisites: '- Before starting this module, you should have experience of building cloud applications with Microsoft JavaScript, Java, Python, C# or a similar programming language.'
 iconUrl: /training/achievements/get-started-mongodb-api-azure-cosmos-db.svg
 levels:
 - intermediate
@@ -25,7 +31,7 @@ roles:
 products:
 - azure-cosmos-db
 subjects:
-- database
+- databases
 units:
 - learn.wwl.get-started-mongodb-api-azure-cosmos-db.introduction-mongodb-api-azure-cosmos-db
 - learn.wwl.get-started-mongodb-api-azure-cosmos-db.api-for-mongodb-api-versions

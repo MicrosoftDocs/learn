@@ -7,8 +7,7 @@ metadata:
   ms.date: 04/13/2021
   author: juliakm
   ms.author: jukullam
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 40
 content: |
   [!include[](includes/3-exercise-ci-workflow-github.md)]

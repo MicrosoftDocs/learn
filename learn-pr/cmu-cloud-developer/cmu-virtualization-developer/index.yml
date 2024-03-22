@@ -7,7 +7,6 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Understand virtualization
 summary: Take a deep dive into virtualization by understanding its formal definition as well as the different types of virtual machines.

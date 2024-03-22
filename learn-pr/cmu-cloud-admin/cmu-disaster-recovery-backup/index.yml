@@ -7,7 +7,6 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   showCreativeCommonsFooter: true
   ms.custom: team=nextgen
 title: Disaster recovery and backup
@@ -44,7 +43,7 @@ roles:
 products:
 - azure
 subjects:
-- business-continuity
+- site-reliability-engineering
 units:
 - learn.cmu-cloud-admin.cmu-disaster-recovery-backup.0-introduction
 - learn.cmu-cloud-admin.cmu-disaster-recovery-backup.1-failures-fault-tolerance

@@ -7,8 +7,8 @@ metadata:
   author: leestott
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-central
   ms.custom: team=nextgen
+  ms.service: azure-sphere
 title: "Develop secure IoT solutions for Azure Sphere, Azure RTOS and Azure IoT Central"
 summary: "Deploy an Azure Sphere application to monitor ambient conditions for a laboratory. The application will monitor the room environment, connect to Azure IoT Central, and send telemetry data from the device to the cloud. You'll control cloud-to-device communications and undertake actions as needed."
 abstract: | 
@@ -21,7 +21,7 @@ abstract: |
   - Deploy a new more sensitive room sensor onto an Azure Sphere real-time core running Azure RTOS
   - Read the data from the new sensor running on the real-time core and send the data to IoT Central
      
-  "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
+  "***Produced in partnership with the University of Oxford – Ajit Jaokar, Artificial Intelligence: Cloud and Edge Implementations course.***"
 
 prerequisites: |
   - Azure Sphere kit

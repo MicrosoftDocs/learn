@@ -3,11 +3,11 @@ uid: learn.wwl.create-azure-resources-using-azure-resource-manager-templates
 metadata:
   title: Create Azure resources using Azure Resource Manager templates
   description: "Create Azure resources using Azure Resource Manager templates"
-  ms.date: 01/10/2023
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Create Azure resources using Azure Resource Manager templates
 summary: This module explores Azure Resource Manager templates and their components and details dependencies and modularized templates with secrets.
 abstract: |
@@ -41,7 +41,7 @@ products:
 - azure-test-plans
 - github
 subjects:
-- serverless-compute
+- serverless-computing
 units:
 - learn.wwl.create-azure-resources-using-azure-resource-manager-templates.introduction
 - learn.wwl.create-azure-resources-using-azure-resource-manager-templates.why-use-azure-resource-manager-templates

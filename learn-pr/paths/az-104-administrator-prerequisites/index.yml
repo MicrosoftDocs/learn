@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/12/2022
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: 'AZ-104: Prerequisites for Azure administrators'
 prerequisites: |
   - [Microsoft Azure Fundamentals: Describe cloud concepts](/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)
@@ -61,7 +60,7 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-clis
 - azure-container-instances
 - azure-container-registry

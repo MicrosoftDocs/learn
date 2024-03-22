@@ -6,8 +6,7 @@ metadata:
   ms.date: 03/10/2021
   author: softchris
   ms.author: chnoring 
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: 'Exercise - Data manipulation part 2 - Impute missing values for columns'
 durationInMinutes: 3

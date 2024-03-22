@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-cloud-native-apps-containerized-deployments.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/26/2024
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 4
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary business advantage of using cloud-native applications?"
+    choices:
+    - content: "They're always free to deploy."
+      isCorrect: false
+      explanation: "Incorrect. There can be a cost associated with deployment."
+    - content: "They're inherently more secure than traditional apps."
+      isCorrect: false
+      explanation: "Incorrect. Cloud-native apps share many of the same security issues as other app types."
+    - content: "They can efficiently scale and adapt to changing workloads."
+      isCorrect: true
+      explanation: "Correct. Cloud-native apps are designed for the cloud, and therefore gain the benefits provided by the cloud platform, such as scaling."
+  - content: "What are the runtime benefits of cloud-native applications?"
+    choices:
+    - content: "Cloud-native applications aren't resilient to failure and can't scale to meet demand."
+      isCorrect: false
+      explanation: "Incorrect. Cloud-native applications are designed to be resilient to failure and can scale to meet demand."
+    - content: "Cloud-native applications are built to take advantage of cloud computing models to increase speed, flexibility, and quality, while reducing deployment risks."
+      isCorrect: true
+      explanation: "Correct. Cloud-native applications offer many advantages, including increased speed, flexibility, and quality, while reducing deployment risks."
+    - content: "Cloud-native applications aren't automated, so you can't build, test, and deploy them quickly and reliably."
+      isCorrect: false
+      explanation: "Incorrect. Cloud-native applications are automated, so you can build, test, and deploy them quickly and reliably."
+  - content: "What is the distinctive feature of Azure Container Apps?"
+    choices:
+    - content: "Provides direct access to the underlying Kubernetes APIs."
+      isCorrect: false
+      explanation: "Incorrect. Azure Kubernetes Service provides direct access to the underlying Kubernetes APIs."
+    - content: "Optimized for running web applications."
+      isCorrect: false
+      explanation: "Incorrect. Azure App Service is optimized for web applications."
+    - content: "Enables event-driven application architectures by supporting scale based on traffic and pulling from event sources like queues, including scale to zero."
+      isCorrect: true
+      explanation: "Correct. Azure Container Apps enables event-driven application architectures by supporting scale based on traffic and pulling from event sources like queues, including scale to zero."
+  - content: "What is the purpose of a Container registry in Azure Container Apps?"
+    choices:
+    - content: "To store and manage container images."
+      isCorrect: true
+      explanation: "Correct. A container registry is used to store and manage container images, which can then be deployed to a container app."
+    - content: "To manage DNS zones."
+      isCorrect: false
+      explanation: "Incorrect. A private DNS zone is used to resolve the IP addresses of resources within a virtual network."
+    - content: "To store virtual machines."
+      isCorrect: false
+      explanation: "Incorrect. A container registry is used to store and manage container images."

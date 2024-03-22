@@ -10,7 +10,7 @@ Enable the Memory Content Analysis capability if you would like Microsoft Defend
 
 To configure file settings:
 
-- In the navigation pane for Microsoft 365 Defender, select **Settings > Endpoints**.  Under the Rules section, select **Automation uploads**.
+- In the navigation pane for Microsoft Defender XDR, select **Settings > Endpoints**.  Under the Rules section, select **Automation uploads**.
 
 - Toggle the content analysis setting between On and Off.
 
@@ -44,7 +44,7 @@ You can specify the file names that you want to be excluded in a specific direct
 
 To manage folder exclusions:
 
-- In the navigation pane for Microsoft 365 Defender, select **Settings > Endpoints**.  Under the Rules section, select **Automation folder exclusions**.
+- In the navigation pane for Microsoft Defender XDR, select **Settings > Endpoints**.  Under the Rules section, select **Automation folder exclusions**.
 
 - Select New folder exclusion.
 

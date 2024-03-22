@@ -6,10 +6,9 @@ metadata:
   title: Plan for SDN infrastructure on Azure Stack HCI
   description: This unit describes how to plan for deploying SDN infrastructure on Azure Stack HCI.
   ms.date: 11/23/2021
-  author: LBN-commits
-  ms.author: v-lanai
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: JasonGerend
+  ms.author: jgerend
+  ms.topic: unit
 durationInMinutes: 11
 content: |
   [!include[](includes/4-plan-sdn-infrastructure-on-azure-stack-hci.md)]

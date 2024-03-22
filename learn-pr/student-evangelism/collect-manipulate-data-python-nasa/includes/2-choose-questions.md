@@ -28,6 +28,6 @@ Throughout this learning path, you'll use artificial intelligence and machine le
 
 This module walks you through a specific way of solving this problem. You're encouraged to pause for a moment here to make predictions, and to think about other data or questions you might ask about the safety of rocket launches.
 
-For example, do you think temperature is a more important indicator of launch safety than precipitation? Can you use [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services?azure-portal=true) to take real-time satellite images and use image classification to determine the types of clouds and how they relate to the likelihood of a safe launch?
+For example, do you think temperature is a more important indicator of launch safety than precipitation? Can you use [Azure AI services](https://azure.microsoft.com/services/cognitive-services?azure-portal=true) to take real-time satellite images and use image classification to determine the types of clouds and how they relate to the likelihood of a safe launch?
 
 What ideas do you have?

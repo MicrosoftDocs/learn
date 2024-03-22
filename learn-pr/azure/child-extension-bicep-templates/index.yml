@@ -4,25 +4,25 @@ metadata:
   moduleType: standard
   title: Deploy child and extension resources by using Bicep
   description: Learn how to deploy child and extension resources, and refer to existing resources, within your Bicep code.
-  ms.date: 01/23/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 12/15/2023
+  author: mumian
+  ms.author: jgao
+  ms.topic: module
+  ms.devlang: bicep
 title: Deploy child and extension resources by using Bicep
 summary: |
-  Deploy a variety of Azure resources in your Bicep code. Define and use child and extension resources. Work with resources that you created outside a Bicep template or module.
+  Deploy various Azure resources in your Bicep code. Define and use child and extension resources. Work with resources that you created outside a Bicep template or module.
 abstract: |
   After completing this module, you'll be able to:
     - Explain resource types and resource IDs
     - Deploy child and extension resources
-    - Represent and use preexisting resources in a Bicep template
+    - Represent and use pre-existing resources in a Bicep template
 prerequisites: |
   You should be familiar with:
   - Creating and deploying basic Bicep templates.
   - Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 
-  To follow along with the exercises in the module, you'll need:
+  To follow along with the exercises in the module, you need:
   - [Visual Studio Code](https://code.visualstudio.com), installed locally.
   - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed.
   - Either:

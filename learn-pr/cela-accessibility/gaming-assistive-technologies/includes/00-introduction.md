@@ -4,14 +4,14 @@ In gaming, players with disabilities might use hardware and software-based techn
 
 Consider the following scenario. A player with low vision uses a high-contrast setting on their PC to enhance the readability of text. When they launch a new game title, many of the elements in the game title's UI are missing or obscured. It's apparent that the game is displaying incorrectly because of an incompatibility with the player's platform-level high-contrast settings.
 
-This player requires a high-contrast display for play. They search the game title's menu but can't find an in-game high-contrast setting. Disappointed, the player abandons the game. They know they won't be able to play it without compatible AT to support their visual needs. As a developer, you hear about this experience and are hoping to learn more about the AT that players with disabilities use to ensure that the future products and experiences you create support players in using these tools.
+This player requires a high-contrast display for play. They search the game title's menu but can't find an in-game high-contrast setting. Disappointed, the player abandons the game. They know they can't play it without compatible AT to support their visual needs. As a developer, you hear about this experience and hope to learn more about the AT that players with disabilities use. This way, you can ensure that the future products and experiences you create support players in using these tools.
 
-In this module, you'll be introduced to common hardware and software AT that players with disabilities might use to improve access to gaming experiences. You'll learn about the impact of AT on player experiences and the importance of supporting AT compatibility within your title, platform, or hardware device.
+In this module, you're introduced to common hardware and software AT that players with disabilities might use to improve access to gaming experiences. Learn about the effect of AT on player experiences and the importance of supporting AT compatibility within your title, platform, or hardware device.
 
 ## Learning objectives
 
-By the end of this module, you'll be able to:
+By the end of this module, you can:
 
- - Describe common gaming software-based features and tools and how their use can affect player experiences.
- - Describe common hardware-based gaming assistive technologies and how their use can affect player experiences.
- - Determine appropriate methods to support assistive technology users when you're developing games and platforms.
+- Describe common gaming software-based features and tools and how their use can affect player experiences.
+- Describe common hardware-based gaming assistive technologies and how their use can affect player experiences.
+- Determine appropriate methods to support assistive technology users when you're developing games and platforms.

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.open-ai-dotnet-text-completions.4-exercise-install-sdk-create-completion
+title: Exercise - Install the .NET SDK for Azure OpenAI and create your first app
+metadata:
+  title: Exercise - Install the .NET SDK for Azure OpenAI and create your first app
+  description: Install the .NET SDK for Azure OpenAI and create your first app with text completions
+  zone_pivot_groups: azure-shell-interface
+  ms.date: 02/15/2024
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: unit
+  ms.custom: devx-track-dotnet, devx-track-azurecli
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-install-sdk-create-completion.md)]

@@ -4,11 +4,12 @@ title: Implement a public load balancer
 metadata:
   title: Implement a public load balancer
   description: "Implement a public load balancer"
-  ms.date: 03/27/2023
+  ms.date: 03/15/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/3-implement-public.md)]

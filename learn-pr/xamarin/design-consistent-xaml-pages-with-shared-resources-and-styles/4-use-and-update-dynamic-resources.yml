@@ -3,11 +3,10 @@ uid: learn-xamarin.design-consistent-xaml-pages-with-shared-resources-and-styles
 metadata:
   title: Use and update dynamic resources
   description: Learn how to use and update dynamic resources.
-  ms.date: 05/01/2019
+  ms.date: 02/20/2024
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-xamarin
+  ms.topic: unit
   
 title: Use and update dynamic resources
 durationInMinutes: 3

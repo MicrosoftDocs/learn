@@ -3,12 +3,13 @@ uid: learn.wwl.deploy-single-instance-implementations-2-tier-3-tier.discover-key
 title: Discover key steps for SAP HANA installation using SAP SWPM
 metadata:
   title: Discover key steps for SAP HANA installation using SAP SWPM
-  description: "Discover key steps for SAP HANA installation using SAP SWPM"
-  ms.date: 04/25/2023
+  description: "Discover key steps for SAP HANA installation using SAP SWPM."
+  ms.date: 03/07/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/6-discover-key-steps-sap-hana-installation-sap-swpm.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-langstons-ant-with-json-serialization.exercise-deserialize-load-state
+title: Exercise - Deserialize and load the state
+metadata:
+  title: Exercise - Deserialize and load the state
+  description: "Exercise - Deserialize and load the state"
+  ms.date: 03/12/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/06-exercise-deserialize-load-state.md)]

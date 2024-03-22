@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.introduction-to-aks-edge-essentials
+metadata:
+  title: Introduction to Azure Kubernetes Service (AKS) Edge Essentials
+  description: Evaluate whether AKS Edge Essentials is appropriate to automate and run your containerized applications and the opportunities it can create for your business.
+  ms.date: 11/3/2023
+  author: asergaz
+  ms.author: sergaz
+  manager: lizross
+  ms.topic: module-intro-to-product
+  ms.service: azure-kubernetes-service
+title: Introduction to Azure Kubernetes Service (AKS) Edge Essentials
+summary: |
+  Determine when to use AKS Edge Essentials to automate and run your containerized applications. 
+  Describe how AKS Edge Essentials uses Windows IoT Enterprise to deploy a lightweight Kubernetes platform.
+abstract: |
+  After you complete this module, you'll be able to:
+    - Evaluate whether AKS Edge Essentials is appropriate to automate and run your containerized applications and the opportunities it can create for your business.
+    - Describe how AKS Edge Essentials provides cloud-native best practices to your edge application by using a lightweight Kubernetes platform with a small footprint and simple installation experience on a Windows IoT Enterprise machine.
+prerequisites: |
+  - Knowledge about [Kubernetes core concepts for AKS](/azure/aks/hybrid/kubernetes-concepts)
+iconUrl: /training/achievements/iot/introduction-to-aks-edge-essentials.svg
+levels:
+- beginner
+roles:
+- administrator
+- business-owner
+- developer
+- solution-architect
+- student
+products:
+- azure
+- aks-edge-essentials
+- windows-iot
+subjects:
+- iot
+- containers
+units:
+- learn.introduction-to-aks-edge-essentials.introduction
+- learn.introduction-to-aks-edge-essentials.what-is-aks-edge-essentials
+- learn.introduction-to-aks-edge-essentials.how-aks-edge-essentials-works
+- learn.introduction-to-aks-edge-essentials.when-to-use-aks-edge-essentials
+- learn.introduction-to-aks-edge-essentials.knowledge-check
+- learn.introduction-to-aks-edge-essentials.summary
+badge:
+  uid: learn.introduction-to-aks-edge-essentials.badge

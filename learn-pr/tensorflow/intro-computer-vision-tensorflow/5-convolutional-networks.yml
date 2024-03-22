@@ -6,9 +6,8 @@ metadata:
   description: Learn special convolutional architecture of neural networks for image recognition tasks
   ms.date: 07/07/2021
   author: shwars
-  ms.author: dmitryso
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: chnoring
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 15
 sandbox: true

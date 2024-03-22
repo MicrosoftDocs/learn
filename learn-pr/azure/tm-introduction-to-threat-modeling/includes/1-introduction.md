@@ -5,7 +5,7 @@ Threat modeling uses a data-flow diagram that graphically shows how the system w
 Systems released without first being threat modeled place your customers and organization at risk.
 
 > [!NOTE]
-> To make things easier, this learning path will refer to systems, applications, and services as just systems.
+> To make things easier, this learning path refer to systems, applications, and services as just *systems*.
 
 ## When to use threat modeling
 
@@ -19,12 +19,12 @@ Use threat modeling whenever you design new systems or update existing ones. Exa
 
 Anyone with a working knowledge of the system and a basic understanding of security can work with threat modeling. This technique can be applied across any:
 
-- Software delivery approach (for example, Agile or Waterfall)
-- Deployment cadence (hourly, monthly, yearly)
+- Software delivery approach, for example, Agile or Waterfall
+- Deployment cadence, such as hourly, monthly, or annually
 
 ## Learning objectives
 
-In this module, you'll explore the four high-level steps of threat modeling and be able to:
+In this module, you explore the four high-level steps of threat modeling and be able to:
 
 - Understand the importance of capturing requirements and assumptions to help create a data-flow diagram
 - Read about the framework that helps you find security issues in a system

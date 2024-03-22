@@ -1,20 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-threat-protection-with-microsoft-365-defender
 metadata:
-  title: Describe threat protection with Microsoft 365 Defender
-  description: "Describe threat protection with Microsoft 365 Defender"
-  ms.date: 03/01/2023
+  title: Describe threat protection with Microsoft Defender XDR
+  description: "Describe threat protection with Microsoft Defender XDR"
+  ms.date: 01/03/2024
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
-title: Describe threat protection with Microsoft 365 Defender
-summary: Protect against cyber threats with Microsoft 365 Defender across endpoints, identities, email, and applications.
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: microsoft-365-security
+  ms.subservice: m365d
+title: Describe threat protection with Microsoft Defender XDR
+summary: Protect against cyber threats with Microsoft Defender XDR across endpoints, identities, email, and applications.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe the Microsoft 365 Defender service.
-  - Describe how Microsoft 365 Defender provides integrated protection against sophisticated attacks.
-  - Describe and explore Microsoft 365 Defender portal.
+  - Describe the Microsoft Defender XDR service.
+  - Describe how Microsoft Defender XDR provides integrated protection against sophisticated attacks.
+  - Describe and explore Microsoft Defender portal.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
@@ -29,8 +32,9 @@ products:
 - defender-for-cloud-apps
 - defender-identity
 - defender-office365
-- mdatp
+- defender-endpoint
 - microsoft-defender
+- defender-for-threat-intelligence
 subjects:
 - threat-protection
 units:
@@ -40,6 +44,8 @@ units:
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-microsoft-defender-for-endpoint-formerly-microsoft-defender-atp
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-microsoft-cloud-app-security
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-microsoft-defender-for-identity-formerly-azure-atp
+- learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-defender-vulnerability-management
+- learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-defender-threat-intelligence
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-microsoft-defender-portal
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.knowledge-check
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.summary-resources

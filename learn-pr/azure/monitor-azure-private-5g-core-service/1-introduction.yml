@@ -5,10 +5,9 @@ metadata:
   title: Introduction
   description: Introduces the monitoring capabilities of Azure Private 5G Core.
   ms.date: 10/27/2022
-  author: michael-weizhong-shan
-  ms.author: michaelshan
-  ms.topic: interactive-tutorial
-  ms.service: learning-private-5g-core
+  author: lnyswonger
+  ms.author: lnyswonger
+  ms.topic: unit
 durationInMinutes: 12
 content: |
   [!include[](includes/1-introduction.md)]

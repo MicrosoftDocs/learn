@@ -6,8 +6,8 @@ metadata:
   ms.date: 12/09/2020
   author: sethmanheim
   ms.author: sethm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  manager: femila
+  ms.topic: unit
   ms.custom: e2e-hybrid
 title: What is Azure Stack?
 durationInMinutes: 4

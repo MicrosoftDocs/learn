@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-device-provisioning-service.get-started-symmetric-key-attestation
+title: Examine symmetric key attestation
+metadata:
+  title: Examine symmetric key attestation
+  description: "Examine symmetric key attestation"
+  ms.date: 12/15/2023
+  author: kgremban
+  ms.author: kgremban
+  manager: lizross
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-symmetric-key-attestation.md)]

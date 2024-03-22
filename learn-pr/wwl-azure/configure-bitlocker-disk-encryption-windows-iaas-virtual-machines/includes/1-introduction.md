@@ -32,7 +32,7 @@ In order to get the best learning experience from this module, you should have k
 - Core Microsoft compute, storage, networking, and virtualization technologies
 - On-premises resiliency Windows Server-based compute and storage technologies
 - Implementing and managing IaaS services in Microsoft Azure
-- Azure Active Directory (Azure AD)
+- Microsoft Entra ID
 - Security-related technologies (firewalls, encryption, multi-factor authentication)
 - Windows PowerShell scripting
 - Automation and monitoring

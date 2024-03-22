@@ -3,7 +3,7 @@ Electronic discovery, or eDiscovery, is the process of identifying and deliverin
 
 Microsoft Purview provides three eDiscovery solutions: Content search, eDiscovery (Standard), and eDiscovery (Premium).
 
-:::image type="content" source="../media/m365-ediscovery-solution-inline.png" lightbox="../media/m365-ediscovery-solution-expanded.png" alt-text="Microsoft Purview eDiscovery solution components, Search, eDiscovery (Standard), and eDiscovery (Premium).":::
+:::image type="content" source="../media/m365-ediscovery-solution-inline.png" lightbox="../media/m365-ediscovery-solution-expanded.png" alt-text="A table that shows the two Microsoft Purview eDiscovery solutions: eDiscovery (Standard), and eDiscovery (Premium).":::
 
 - **Content Search**. Use the Content search tool to search for content across Microsoft 365 data sources and then export the search results to a local computer.
 

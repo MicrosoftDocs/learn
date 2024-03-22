@@ -4,13 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/15/2023
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/7-knowledge-check.md)]
@@ -43,7 +40,7 @@ quiz:
     choices:
     - content: "A nonrelational database optimized for read and write operations"
       isCorrect: false
-      explanation: "That's incorrect. a database that is optimized for read and write operations is more likely to be used to support a line of business application."
+      explanation: "That's incorrect. A database that is optimized for read and write operations is more likely to be used to support a line of business application."
     - content: "A relational database optimized for read operations"
       isCorrect: true
       explanation: "That's correct. A data warehouse is a relational database in which the schema is optimized for queries that read data."

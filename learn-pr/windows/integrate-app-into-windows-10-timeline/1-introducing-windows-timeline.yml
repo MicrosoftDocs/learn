@@ -6,10 +6,9 @@ metadata:
   description: Learn how to display Windows 10 Timeline, and understand how to use an attractive adaptive card to replace the default graphics.
   ms.date: 1/10/2019
   displayType: one-Column
-  author: PeterTurcan
-  ms.author: v-pettur
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  author: alvinashcraft
+  ms.author: aashcraft
+  ms.topic: unit
   
 durationInMinutes: 10
 content: |

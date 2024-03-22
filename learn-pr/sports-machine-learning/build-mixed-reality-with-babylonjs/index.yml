@@ -32,7 +32,6 @@ products:
 - windows-mixed-reality
 subjects:
 - mixed-reality
-- development-tools
 - cross-development
 units:
 - learn.sports-machine-learning.build-mixed-reality-with-babylonjs.introduction

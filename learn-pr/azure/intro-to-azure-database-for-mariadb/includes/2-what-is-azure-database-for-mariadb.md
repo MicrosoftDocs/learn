@@ -1,4 +1,4 @@
-Let's start with a quick overview of MariaDB and Azure Database for MariaDB. This should help you evaluate whether using Azure Database for MariaDB can address your business requirements.
+To help you evaluate whether using Azure Database for MariaDB can address your business requirements, let's start with a quick overview of MariaDB and Azure Database for MariaDB. 
 
 MariaDB is a popular open-source database that independent software vendors and developers use to build web apps. Many large enterprise-level organizations also use it to host mission-critical applications. Azure Database for MariaDB is based on the MariaDB Community Edition. The older edition is available under the GNU General Public License, version 2 (GPLv2). It's a fully managed relational DBaaS platform.
 
@@ -16,7 +16,7 @@ Why use a DBaaS delivery platform for your relational database apps? It enables 
 
 Azure Database for MariaDB is a fully managed, relational DBaaS platform hosted in Azure. It provides:
 
-- Built-in high-availability at no additional cost.
+- Built-in high-availability at no extra cost.
 - Data protection.
 
    > [!NOTE]
@@ -50,7 +50,7 @@ Let's examine these deployments more closely.
 
 #### Azure Database for MariaDB
 
-This option provides for a fully-managed database service that requires minimal user configuration and control. This option:
+This option provides for a fully managed database service that requires minimal user configuration and control. This option:
 
 - Has minimal requirements for database customizations.
 - Is designed to handle most database-management functions, such as:
@@ -71,9 +71,9 @@ Consider this deployment mode to support cloud native apps that:
 
 #### MariaDB on Azure VMs
 
-This option isn't a fully-managed database service. Rather, it's an IaaS. However, this option does enable you to run MariaDB Server, inside a managed VM on the Azure cloud platform.
+This option isn't a fully managed database service. Rather, it's an IaaS. However, this option does enable you to run MariaDB Server, inside a managed VM on the Azure cloud platform.
 
 > [!TIP]
 > You can install all recent MariaDB versions and editions in your hosted VM.
 
-Consider this option only when you don't want the benefits that a DBaaS platform offers. In the next unit, let's examine Azure Database for MariaDB in more detail.
+Consider this option only when you don't want the benefits that a DBaaS platform offers. In the next unit, we examine Azure Database for MariaDB in more detail.

@@ -4,11 +4,12 @@ title: Exercise - Explore data type casting and conversion
 metadata:
   title: Exercise - Explore data type casting and conversion
   description: "Exercise - Explore data type casting and conversion"
-  ms.date: 04/26/2023
+  ms.date: 03/08/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 30
 content: |
   [!include[](includes/2-exercise-data-type-conversion.md)]
@@ -22,18 +23,18 @@ quiz:
       explanation: "Correct. `decimal` to `int` is a narrowing conversion so `cast` is the best answer."
     - content: "narrowing"
       isCorrect: false
-      explanation: "That’s incorrect. \"Narrowing\" describes the data precision change in a conversion."
+      explanation: "Incorrect. \"Narrowing\" describes the data precision change in a conversion."
     - content: "implicit conversion"
       isCorrect: false
-      explanation: "That’s incorrect. `decimal` to `int` is a narrowing conversion and implicit conversion can't be used because data loss is possible."
+      explanation: "Incorrect. `decimal` to `int` is a narrowing conversion and implicit conversion can't be used because data loss is possible."
   - content: "Which of the following conversion rounds the value (versus truncate)?"
     choices:
     - content: "`int cost = (int)3.75m;`"
       isCorrect: false
-      explanation: "That’s incorrect. Casting truncates all decimals."
+      explanation: "Incorrect. Casting truncates all decimals."
     - content: "`int cost = Convert.ToInt32(3.75m);`"
       isCorrect: true
-      explanation: "That’s correct. `Convert.ToInt32()` rounds values with fractional precision"
+      explanation: "Correct. `Convert.ToInt32()` rounds values with fractional precision."
     - content: "`uint cost = (uint)3.75m;`"
       isCorrect: false
-      explanation: "That’s incorrect. Casting truncates all decimals."
+      explanation: "Incorrect. Casting truncates all decimals."

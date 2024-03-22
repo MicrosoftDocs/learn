@@ -5,10 +5,9 @@ metadata:
   title: How Immersive Reader works
   description: How Immersive Reader works
   ms.date: 03/14/2021
-  author: tomreidnz
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: nitinme
+  ms.author: nitinme
+  ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-how-immersive-reader-works.md)]
+  [!INCLUDE[](includes/3-how-immersive-reader-works.md)]

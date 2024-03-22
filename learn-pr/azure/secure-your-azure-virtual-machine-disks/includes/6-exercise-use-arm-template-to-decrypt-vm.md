@@ -2,13 +2,13 @@ In this unit, you'll use an Azure Resource Manager template to decrypt the Windo
 
 ## Decrypt a VM using an Azure Resource Manager template
 
-You're going to use a template Microsoft has published on GitHub that is specifically designed to decrypt a running Windows VM.
+You're going to use a template that Microsoft published on GitHub that's specifically designed to decrypt a running Windows VM.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you used to activate the sandbox.
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
-1. In the search box, enter **Template**.
+1. In the search box, enter **Template deployment**.
 
 1. From the resulting list, select **Template deployment (deploy using custom templates)**. The **Template deployment (deploy using custom templates)** appears.
 
@@ -22,9 +22,9 @@ You're going to use a template Microsoft has published on GitHub that is specifi
     |---------|---------|
     | **Start with a quickstart template or template spec** |
     | Template source | Quickstart template |
-    | Quickstart template (disclaimer) | Select the field, then enter *decrypt-running-windows-vm-without-aad*, and select the *decrypt-running-windows-vm-without-aad* template |
+    | Quickstart template (disclaimer) | Select the field, then enter *decrypt-running-windows-vm-without-aad* and select the **decrypt-running-windows-vm-without-aad** template |
 
-    :::image type="content" source="../media/6-custom-deployment.png" alt-text="Screenshot showing the Select a Template search box with auto-completion.":::
+    :::image type="content" source="../media/6-custom-deployment.png" alt-text="Screenshot showing the Select a Template search box with autocompletion.":::
 
 1. To launch the template runner, select **Select template**. The **Disable encryption on Windows VM encrypted without AAD** pane appears.
 
@@ -34,9 +34,9 @@ You're going to use a template Microsoft has published on GitHub that is specifi
     |---------|---------|
     | **Project details** |
     | Subscription |  Concierge Subscription |
-    | Resource group | Select sandbox resource group <rgn>Sandbox RG</rgn>. This will auto-select the region as well. |
+    | Resource group | Select sandbox resource group <rgn>Sandbox RG</rgn>. This autoselects the region as well. |
     | **Instance details** |
-    | Region | Auto-selected from *Resource group* selection |
+    | Region | Autoselected from *Resource group* selection |
     | Vm Name | Enter *fmdata-vm01* |
     | Volume Type | Accept default *All* |
     | Force Update Tag | Accept default |

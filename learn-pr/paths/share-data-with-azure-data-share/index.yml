@@ -3,25 +3,23 @@ uid: learn.wwl.sharing-data-with-azure-data-share
 metadata:
   title: Share data with Azure Data Share
   description: Share data with Azure Data Share
-  ms.date: 01/05/2022
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
+  ms.service: data-share
 title: Share data with Azure Data Share
 prerequisites: |
-  - It is recommended that students have completed Data Fundamentals before starting this learning path.
+  -   It's recommended that students have completed Data Fundamentals before starting this learning path.
 summary: |
   Learn how Azure Data Share enables you to send and receive data between departments and external organizations.
-iconUrl: /training/achievements/sharing-data-with-azure-data-share.svg
+iconUrl: /learn/achievements/sharing-data-with-azure-data-share.svg
 levels:
 - intermediate
 roles:
 - data-engineer
 products:
 - azure-data-share
-subjects:
-- data-ai
 modules:
 - learn.wwl.introduction-to-azure-data-share
 - learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory

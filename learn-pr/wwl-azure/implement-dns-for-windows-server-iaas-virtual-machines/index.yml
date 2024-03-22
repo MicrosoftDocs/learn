@@ -6,8 +6,8 @@ metadata:
   ms.date: 08/14/2020
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: windows-server
 title: Implement DNS for Windows Server IaaS VMs
 summary: In this module, you’ll learn to configure DNS for Windows Server IaaS VMs, choose the appropriate DNS solution for your organization’s needs, and run a DNS server in a Windows Server Azure IaaS VM.
 abstract: |
@@ -23,7 +23,7 @@ prerequisites: |
   - Common Windows Server management tools.
   - Core Microsoft compute, storage, networking, and virtualization technologies.
   - Implementing and managing IaaS services in Microsoft Azure.
-  - Azure Active Directory (Azure AD).
+  - Microsoft Entra ID.
   - Security-related technologies (firewalls, encryption, multi-factor authentication).
   - Windows PowerShell scripting.
   - Automation and monitoring.

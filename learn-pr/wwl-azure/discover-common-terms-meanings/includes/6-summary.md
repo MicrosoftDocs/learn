@@ -1,5 +1,3 @@
-
-
 You discovered common terms and their meanings for SAP, Azure, and for SAP deployments on Azure.
 
 ## Learn more

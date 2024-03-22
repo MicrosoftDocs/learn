@@ -7,7 +7,6 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Discover commands in PowerShell
 summary: PowerShell comes with a built-in help system. Use help to read more about a command, what the command does, and how to call it. Also, if you inspect what a command returns, you can use that information to customize the output, determine what commands are logically grouped, and determine how to use the commands together. 

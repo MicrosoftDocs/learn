@@ -6,8 +6,7 @@ metadata:
   ms.date: 11/01/2022
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
 title: Implement a versioning strategy
 summary: This module explains versioning strategies for packaging, best practices for versioning, and package promotion.
 abstract: |

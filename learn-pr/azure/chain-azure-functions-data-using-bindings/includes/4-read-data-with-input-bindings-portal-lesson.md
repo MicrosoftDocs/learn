@@ -2,7 +2,7 @@ To connect to a data source, you need to configure an *input binding*. An input 
 
 ## Input binding types
 
-Azure chain functions can have multiple types of input. However, not all types support both input and output. You'll use an input function whenever you want to ingest data of that type. Here, we'll look at the input function types that support input bindings and when to use them.
+Azure chain functions can have multiple types of input. However, not all types support both input and output. Use an input function whenever you want to ingest data of that type. Here, we look at the input function types that support input bindings and when to use them.
 
 - **Azure Blob Storage** - Blob Storage bindings allow you to read from a blob.
 
@@ -14,7 +14,7 @@ Azure chain functions can have multiple types of input. However, not all types s
 
 A full listing of supported bindings is available [here](/azure/azure-functions/functions-triggers-bindings?tabs=csharp#supported-bindings)
 
-To create a binding as an input, you must define `direction` as `in`. The parameters for each type of binding may vary.
+To create a binding as an input, you must define `direction` as `in`. The parameters for each type of binding might vary.
 
 ## What is a binding expression?
 

@@ -1,3 +1,4 @@
+
 Azure App Configuration stores configuration data as key-value pairs.
 
 ## Keys

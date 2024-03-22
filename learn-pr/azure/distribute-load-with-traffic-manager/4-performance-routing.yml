@@ -3,11 +3,10 @@ uid: learn.distribute-load-with-traffic-manager.4-performance-routing
 metadata:
   title: Optimize applications across regions by using performance routing
   description: Learn how to route traffic to the best endpoint for performance
-  ms.date: 04/15/2019
-  author: KumudD
-  ms.author: kumud
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/31/2024
+  author: greg-lindsay
+  ms.author: greglin
+  ms.topic: unit
 title: Optimize applications across regions by using performance routing
 durationInMinutes: 2
 content: |

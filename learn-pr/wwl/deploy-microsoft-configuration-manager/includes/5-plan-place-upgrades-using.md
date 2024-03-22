@@ -1,4 +1,5 @@
 
+
 Whether performed manually or through an automated process, in-place upgrade consists of using the Windows setup. The setup engine runs several small pre-installation checks, looking for known compatibility issues. It also preserves the user state and applications and only removes what isn’t compatible with the version of Windows being installed. With this option, previously installed applications and user state are preserved. In-place upgrade also allows you to roll back to the previous OS installed if needed for troubleshooting purposes.
 
 Running setup manually isn't a scalable solution, even when using an unattended file. A task sequence is the recommended approach for large-scale deployments.

@@ -27,4 +27,4 @@ Hadoop supports Pig and HiveQL languages. In Spark, data engineers use Spark SQL
 
 ## Data security
 
-Hadoop supports encryption, Secure Shell (SSH), shared access signatures, and Azure Active Directory security.
+Hadoop supports encryption, Secure Shell (SSH), shared access signatures, and Microsoft Entra security.

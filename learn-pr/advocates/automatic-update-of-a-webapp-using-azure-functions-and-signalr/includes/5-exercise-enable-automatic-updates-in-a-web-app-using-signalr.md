@@ -2,9 +2,9 @@ To support the new functionality, you need to create a few new functions and upd
 
 ## Create a SignalR account
 
-You'll need to add a SignalR account to your sandbox subscription. 
+You need to add a SignalR account to your sandbox subscription.
 
-1. The first step is to run the following command in the Cloud Shell to create a new SignalR account in the sandbox resource group. This command can take a couple of minutes to complete, so please wait for it to finish before proceeding to the next step. 
+1. The first step is to run the following command in the Cloud Shell to create a new SignalR account in the sandbox resource group. This command can take a couple of minutes to complete, so wait for it to finish before proceeding to the next step. 
 
     ```bash
     SIGNALR_SERVICE_NAME=msl-sigr-signalr$(openssl rand -hex 5)
@@ -157,9 +157,9 @@ First, you need to create a new function that listens for changes in the databas
         context.done();
     }
     ```
-    
-    An array of changes is prepared by creating an object formatted to be read by SignalR. Every updated stock is provided to the `arguments` array along with a `target` property set to `updated`.
-    
+
+    An array of changes is prepared by creating an object that's formatted for SignalR to read. Every updated stock is provided to the `arguments` array along with a `target` property set to `updated`.
+
     The value of the `target` property is used on the client when listening for specific messages broadcast by SignalR.
 
 ## Update the web application
@@ -268,7 +268,7 @@ const getAPIBaseUrl = () => {
 }
 ```
 
-The `getAPIBaseUrl` function returns the appropriate URL depending on whether the app is running locally or deployed to Azure. The placeholder `<REMOTE_BASE_URL>` is replaced by the storage account endpoint in a coming exercise when you deploy this application to the cloud.
+The `getAPIBaseUrl` function returns the appropriate URL depending on whether the app is running locally or deployed to Azure. In an upcoming exercise, the storage account endpoint replaces the placeholder `<REMOTE_BASE_URL>` when you deploy this application to the cloud.
 
 <!-- 
 
@@ -379,6 +379,6 @@ After the database is updated, the UI looks something like the following screens
 
 When you're done, stop the running processes:
 
-- To stop the web server, click the **kill process** (trash can icon) on the terminal window that is running the web server.
+- To stop the web server, select the **kill process** (trash can icon) on the terminal window that is running the web server.
 
-- To stop the functions app, click the **Stop** button or press **Shift + F5**.
+- To stop the functions app, select the **Stop** button or press **Shift + F5**.

@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-plan-deployment.identify-sites-zones
+title: Identify the sites and zones for your network topology
+metadata:
+  title: Identify the sites and zones for your network topology
+  description: Identify the sites and zones for your network topology
+  ms.date: 11/29/2023
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: unit
+  ms.service: defender-for-iot
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-identify-sites-zones.md)]
+
+quiz:
+
+  questions:
+  
+  - content: "Figure A represents a map of your company network. How would you organize this network into sites and zones for Defender for IoT?"
+    choices:
+    - content: "Six sites, one for each floor. Two zones, one for the Paris site and one for the Bengaluru site." 
+      isCorrect: false
+      explanation: "In Defender for IoT, sites group devices by geographical location and zones define a functional area within a site."
+    - content: "Two sites, one for each office. Three zones in the Paris site and three zones in the Bengaluru site, one for each functional area."
+      isCorrect: true
+      explanation: "The two geographical locations would be divided into sites and each site has zones based on a functional area in the site."
+    - content: "Three sites, one for each office, including the global office. Three zones in the Paris site, two zones in the Bengaluru site, and one site in the global location."
+      isCorrect: false
+      explanation: "In Defender for IoT, sites group devices by geographical location and zones define a functional area within a site. A global site isn't necessary for the example."
+
+  - content: "The sites in figure B have six network segments, currently allocated across two sites and zones. If site 2 has two network segments with the same IP addresses from different production lines, how many zones should you have in total between the two sites?"
+    choices:
+    - content: "1"
+      isCorrect: false
+      explanation: "Sites are divided into zones. One site could have one zone but it can't be shared across two sites."
+    - content: "2"
+      isCorrect: false
+      explanation: "Site 1 can have one zone. However, if Site 2 has one zone, devices with recurring IP addresses can be consolidated incorrectly in the device inventory."
+    - content: "3"
+      isCorrect: true
+      explanation: "Site 1 can have one zone. Site 2 should be separated into two zones. That way devices in the segments with recurring IP addresses can consolidate correctly, and are identified as separate and unique devices in the device inventory."
+
+  - content: "Why is it important to segment a network into sites and zones when planning an OT security deployment?"
+    choices:
+    - content: "In Defender for IoT, site and zone segmentation are superficial layers that allow security analysts to manage data in smaller amounts at a time."
+      isCorrect: false
+      explanation: "Sites and zones are important security features for OT security in Defender for IoT that help you implement a Zero Trust security strategy."
+    - content: "Segmenting a network into sites and zones allows deployment teams to implement Zero Trust principles and configure  Defender for IoT to monitor for unauthorized traffic crossing segments."
+      isCorrect: true
+      explanation: "Defender for IoT supports Zero Trust with sites and zones and other security strategies."
+    - content: "In Defender for IoT, zones allow security analysts to identify traffic coming from different regions around the world. Sites help to organize that traffic further into specific locations."
+      isCorrect: false
+      explanation: "In Defender for IoT, sites group devices by geographical location and zones define a functional area within a site."

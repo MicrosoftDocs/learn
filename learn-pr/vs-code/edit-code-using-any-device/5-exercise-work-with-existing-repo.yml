@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.edit-code-using-any-device.exercise-work-with-existing-repo
+title: Exercise - Work with an existing repo in Visual Studio Code for the Web
+metadata:
+  title: Exercise - Work with an existing repo in Visual Studio Code for the Web
+  description: "Learn how to open a remote repository, edit code, and use source control with Visual Studio Code for the Web."
+  ms.date: 01/22/2024
+  author: olguzzar
+  ms.author: olguzzar
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-exercise-work-with-existing-repo.md)]

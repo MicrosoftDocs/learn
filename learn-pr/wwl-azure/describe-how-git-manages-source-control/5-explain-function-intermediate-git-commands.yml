@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-how-git-manages-source-control.explain-function-intermediate-git-commands
+title: Explain the function of intermediate Git commands
+metadata:
+  title: Explain the function of intermediate Git commands
+  description: "Explain the function of intermediate Git commands"
+  ms.date: 03/13/2024
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-explain-function-intermediate-git-commands.md)]
+interactive: bash

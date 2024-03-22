@@ -32,7 +32,7 @@ AzureDiagnostics
      -  **Allow DNS.** Traffic from your AD DS private IP address to `*` for TCP and UDP ports 53.
      -  **Allow KMS.** Traffic from your Azure Virtual Desktop virtual machines to Windows Activation Service TCP port 1688.
 
-Some deployments may not need DNS rules, for example Azure Active Directory Domain controllers forward DNS queries to Azure DNS at 168.63.129.16.
+Some deployments may not need DNS rules, for example Microsoft Entra Domain controllers forward DNS queries to Azure DNS at 168.63.129.16.
 
 ## Host pool outbound access to the Internet
 

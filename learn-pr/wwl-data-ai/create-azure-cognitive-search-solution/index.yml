@@ -1,21 +1,21 @@
 ### YamlMime:Module
 uid: learn.wwl.create-azure-cognitive-search-solution
 metadata:
-  title: Create an Azure Cognitive Search solution
-  description: "Create an Azure Cognitive Search solution"
-  ms.date: 07/30/2021
+  title: Create an Azure AI Search solution
+  description: "Create an Azure AI Search solution"
+  ms.date: 12/11/2023
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Create an Azure Cognitive Search solution
-summary: Unlock the hidden insights in your data with Azure Cognitive Search.
+  ms.author: berryivor
+  ms.topic: module-standard-task-based
+  ms.service: cognitive-search
+title: Create an Azure AI Search solution
+summary: Unlock the hidden insights in your data with Azure AI Search.
 abstract: |
-  In this module you will learn how to:
-  - Create an Azure Cognitive Search solution
+  In this module you'll learn how to:
+  - Create an Azure AI Search solution
   - Develop a search application
 prerequisites: |
-  - Familiarity with with Microsoft Azure
+  - Familiarity with Microsoft Azure
   - Application development experience with C# or Python
 iconUrl: /training/achievements/create-an-azure-cognitive-search-solution.svg
 levels:
@@ -30,7 +30,7 @@ subjects:
 - artificial-intelligence
 units:
 - learn.wwl.create-azure-cognitive-search-solution.introduction
-- learn.wwl.create-azure-cognitive-search-solution.get-ready-to-develop
+- learn.wwl.create-azure-cognitive-search-solution.manage-capacity
 - learn.wwl.create-azure-cognitive-search-solution.resources-for-search
 - learn.wwl.create-azure-cognitive-search-solution.create-data-source
 - learn.wwl.create-azure-cognitive-search-solution.search-index

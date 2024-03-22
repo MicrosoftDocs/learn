@@ -7,8 +7,8 @@ metadata:
   author: GeekTrainer
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
+  ms.devlang: typescript
 title: 'Implement interfaces in TypeScript'
 summary: JavaScript doesn't support interfaces so, as a JavaScript developer, you may or may not have experience with them. In TypeScript, you can use interfaces as you would in traditional object-oriented programming. You can also use interfaces to define object types and this is the primary focus of this module.
 abstract:  | 

@@ -4,13 +4,11 @@ title: Exercise - Push a microservice image to Docker Hub
 metadata:
   title: Exercise - Push a microservice image to Docker Hub
   description: Kubernetes needs to be able to download a Docker image to use it. Learn how to push an image to Docker Hub.
-  ms.date: 08/13/2021
+  ms.date: 11/06/2023
   author: codemillmatt
-  ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom:
-  - team=cloud_advocates
+  ms.author: masoucou  
+  ms.topic: unit  
+  ms.custom: team=cloud_advocates, devx-track-dotnet
   ms.contributors:
   - masoucou-09032021
 durationInMinutes: 5

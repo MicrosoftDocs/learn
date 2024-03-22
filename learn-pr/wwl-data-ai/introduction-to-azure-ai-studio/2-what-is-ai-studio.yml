@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-azure-ai-studio.what-is-ai-studio
+title: What is Azure AI Studio?
+metadata:
+  title: What is Azure AI Studio?
+  description: "Discover core features and capabilities of Azure AI Studio (preview)."
+  ms.date: 10/16/2023
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: unit
+  ms.service: azure-ai-services
+  ms.custom:
+    - ignite-2023
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-what-is-ai-studio.md)]

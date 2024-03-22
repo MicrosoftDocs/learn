@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-design-object-oriented-structure.exercise-work-with-exceptions
+title: Exercise - Work with exceptions
+metadata:
+  title: Exercise - Work with exceptions
+  description: "This module describes how to create and work with exceptions"
+  ms.date: 03/19/2024
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/03-exercise-work-with-exceptions.md)]
