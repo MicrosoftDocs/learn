@@ -35445,6 +35445,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-kubernetes-service/9-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-kubernetes/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-kubernetes-service/10-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-kubernetes/",
+      "redirect_document_id": false
     }
   ]
 }
