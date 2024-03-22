@@ -35380,6 +35380,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-alerts/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/incident-response-with-alerting-on-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-alerts/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/incident-response-with-alerting-on-azure/",
+      "redirect_document_id": false
     }
   ]
 }
