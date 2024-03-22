@@ -117,4 +117,4 @@ By default, most browsers will use a serif font such as Times New Roman. You wan
 
 The following screenshot is the result of the CSS you applied in this exercise. If you wish to experiment with different fonts and sizes, you can modify the CSS as you wish.
 
-:::image type="content" source="../media/fonts-final.png" alt-text="Screenshot of final page as rendered in browser":::
+:::image type="content" source="../media/fonts-final.png" alt-text="Screenshot of final page as rendered in browser.":::
