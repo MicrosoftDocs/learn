@@ -89,3 +89,4 @@ Get-Acl -Path C:\Folder1|Set-ACL -Path C:\Folder2
 ```
 
 These commands copy the values from the security descriptor of **C:\\Folder1** to the security descriptor of **Folder2**. When the commands complete, the security descriptors for both folders are identical.
+
