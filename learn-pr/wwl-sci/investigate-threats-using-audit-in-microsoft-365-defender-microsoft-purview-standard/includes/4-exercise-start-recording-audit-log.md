@@ -28,7 +28,7 @@ To start recording in the [Microsoft Purview compliance portal](https://complian
 
 To start recording using Exchange PowerShell, perform the following steps:
 
-1. In the [Microsoft Azure portal](https://portal.azure.com.com/), select the **Cloud Shell** icon to open a new **PowerShell** session. If Cloud Shell opens with a Bash prompt, you'll need to switch to PowerShell.
+1. In the [Microsoft Azure portal](https://portal.azure.com/), select the **Cloud Shell** icon to open a new **PowerShell** session. If Cloud Shell opens with a Bash prompt, you'll need to switch to PowerShell.
 1. From the PowerShell /home/xxx command prompt, enter the **Connect-EXOPSSession** cmdlet and wait for it to complete. It loads all the Exchange PowerShell cmdlets you need and you can ignore any warning messages.
 1. Next, enter the **Get-AdminAuditLogConfig | Format-List UnifiedAuditLogIngestionEnabled** cmdlets. If recording isn't enabled, you see the following response: **UnifiedAuditLogIngestionEnabled : False** (it responds with **True** if enabled).
 1. To enable recording, enter the **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true** cmdlet. You'll receive the following response: **WARNING: The admin audit log configuration change you specified could take up to 60 minutes to take effect.**.
