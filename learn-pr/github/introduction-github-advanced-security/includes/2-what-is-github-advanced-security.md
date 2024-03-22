@@ -57,11 +57,11 @@ With GitHub Advanced Security, Dependabot’s functionality is extended to inclu
 
 To enable any of the alerts from a repository level first navigate to your repository’s security tab. 
 
-:::image type="content" source="../media/5-security-tab.png" alt-text="Image of the security tab boxed by red highlight in the GitHub navigation bar.":::
+:::image type="content" source="../media/security-tab.png" alt-text="Image of the security tab boxed by red highlight in the GitHub navigation bar.":::
 
 Next, enable your alerts in the Security overview. 
 
-:::image type="content" source="../media/6-security-overview.png" alt-text="Image of the security tab page with enabled Secret scanning, Code scanning and Dependabot alerts enabled.":::
+:::image type="content" source="../media/security-overview-page.png" alt-text="Image of the security tab page with enabled Secret scanning, Code scanning and Dependabot alerts enabled.":::
  
 Now that we’ve reviewed and enabled all 3 of GHAS’s integral features, let's talk about how to implement all of them to create a more secure software development life cycle.  
 
