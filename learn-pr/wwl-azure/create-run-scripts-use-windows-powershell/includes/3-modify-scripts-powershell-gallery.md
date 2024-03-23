@@ -11,3 +11,4 @@ Microsoft provides an organized set of scripts and modules in the PowerShell Gal
 ## The internet
 
 There are websites and blogs not associated with Microsoft that provide scripts and code samples. These resources are typically found by using a search engine with which you can search for how to complete a specific task by using Windows PowerShell. There are some useful resources in the blogs and articles, but you should be very careful in your testing.
+
