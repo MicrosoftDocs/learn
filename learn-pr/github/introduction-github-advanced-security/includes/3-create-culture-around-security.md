@@ -27,7 +27,7 @@ Other supply chain features on GitHub rely on the information provided by the de
 
 Although **Dependabot version updates** don't use the dependency graph, it's still worth mentioning. Dependabot version updates rely on the semantic versioning of dependencies instead. Dependabot version updates help you keep your dependencies updated, even when they don’t have any vulnerabilities. 
 
-### Acting on GHAS Alerts
+### Acting On GHAS Alerts
 
 With its comprehensive set of tools GHAS provides holistic visibility into an organization's security posture and the ability to enforce security adoption, enabling precise and effective prioritization and management of security risks.
 
