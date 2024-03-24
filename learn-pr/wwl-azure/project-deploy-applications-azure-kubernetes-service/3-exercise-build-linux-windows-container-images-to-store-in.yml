@@ -9,6 +9,7 @@ metadata:
   ms.author: bradj
   ms.topic: unit
   ms.service: azure
+  ms.custom: linux-related-content
 azureSandbox: false
 labModal: false
 durationInMinutes: 13

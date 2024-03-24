@@ -9,6 +9,7 @@ metadata:
   ms.author: eric
   ms.topic: unit
   ms.service: sap-on-azure
+  ms.custom: linux-related-content
 durationInMinutes: 8
 content: |
   [!include[](includes/4-explore-application-backup.md)]
