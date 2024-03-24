@@ -66,7 +66,7 @@ Next, enable your alerts in the Security overview.
  
 Now that we’ve reviewed and enabled all 3 of GHAS’s integral features, let's talk about how to implement all of them to create a more secure software development life cycle.  
 
-### Creating a More Secure Software Development Life Cycle with all 3 Features
+### Creating a More Secure Software Development Life Cycle With All 3 Features
 
 Secret scanning, code scanning, and Dependabot collectively contribute to creating a more secure software development life cycle. Secret scanning prevents inadvertent exposure of sensitive information. Code scanning identifies and addresses security vulnerabilities in the codebase. And Dependabot automates dependency management. 
 
