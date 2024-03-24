@@ -57,7 +57,7 @@ quiz:
     - content: "It sends larger block sizes to the NFS server."
       isCorrect: false 
       explanation: "Using the `sync` mount option reduces overall performance due to the order of `WRITE`` operations."
-  - content: "How many WRITE operations would be sent to an Azure NetApp Files volume if creating a 1 GiB file using an 8K block size on an NFS mount with 256K wsize and async mount options?"
+  - content: "How many WRITE operations would be sent to an Azure NetApp Files volume if creating a 1-GiB file using an 8K block size on an NFS mount with 256K wsize and async mount options?"
     choices:
     - content: "4096 (1048576/256)"
       isCorrect: true

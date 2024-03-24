@@ -15,9 +15,9 @@ Enable accelerated networking on your client VMs if it's supported, to provide u
 - [Azure NetApp Files performance benchmarks for Linux](/azure/azure-netapp-files/solutions-benefits-azure-netapp-files-electronic-design-automation)
 - [Azure NetApp Files large volumes performance benchmarks](/azure/azure-netapp-files/performance-benchmarks-linux)
 
-Accelerated networking helps lower the latency from client VMs to Azure NetApp Files, whicho boosts overall performance, especially on the distributed multi-scenario analysis (DMSA) type of simulation.
+Accelerated networking helps lower the latency from client VMs to Azure NetApp Files, which boosts overall performance, especially on the distributed multi-scenario analysis (DMSA) type of simulation.
 
-You should run the latest patch version available for the operating system. You should also update the Network File System (NFS) utilities to their latest releases,to get the newest bug fixes and feature functionality. These updates help ensure optimal performance and system stability.
+You should run the latest patch version available for the operating system. You should also update the Network File System (NFS) utilities to their latest releases to get the newest bug fixes and feature functionality. These updates help ensure optimal performance and system stability.
 
 For example, run these commands when using yum as your repository (such as RedHat):
 
@@ -32,7 +32,7 @@ EDA workloads are mostly comprised of a high number of metadata calls, high file
 
 Azure NetApp Files offers large volumes (up to 500 TiB) that enable EDA workloads to perform at a higher level than regular volumes by providing greater capacity, parallel compute, and even distribution of files and folders across multiple storage resources at low latency in Azure cloud deployments. Large volumes also provide the opportunity to lower costs in high metadata workloads by allowing workloads that require lower throughput with higher IOPS to leverage lower service levels. For instance, if your EDA workload doesn’t require 1 0GiB/s but does need parallel processing of write metadata operations, a large volume at Premium service level might do the job that would normally require Ultra service levels on regular volumes.
 
-If you are deploying EDA in Azure NetApp Files, you should strongly consider using large volumes for the best possible performance experience.
+If you're deploying EDA in Azure NetApp Files, you should strongly consider using large volumes for the best possible performance experience.
 
 
 ## Quotas to control capacity usage of Azure NetApp Files volumes

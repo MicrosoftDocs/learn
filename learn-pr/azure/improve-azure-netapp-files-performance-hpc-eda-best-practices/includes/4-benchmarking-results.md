@@ -100,10 +100,10 @@ This section describes performance thresholds of a single large volume using the
 
 The graph represents a 256 KiB sequential workload and a 1 TiB working set. It shows that a single Azure NetApp Files large volume can handle between approximately 8,518 MiB/s pure sequential writes and 9,970 MiB/s pure sequential reads. 
 
-:::image type="content" source="./media/performance-large-volumes-linux/04-256-kib-sequential-reads.png" alt-text="Bar chart of a 256-KiB sequential workload on a large volume." lightbox="./media/performance-large-volumes-linux/04-256-kib-sequential-reads.png":::
+:::image type="content" source="../media/04-256-kib-sequential-reads.png" alt-text="Bar chart of a 256-KiB sequential workload on a large volume." lightbox="../media/04-256-kib-sequential-reads.png":::
 
 ### 8-KiB random workload (IOPS)
 
 The graph represents an 8-KiB random workload and a 1 TiB working set. The graph shows that an Azure NetApp Files large volume can handle between approximately 474,000 pure random writes and approximately 709,000 pure random reads.
 
-:::image type="content" source="./media/performance-large-volumes-linux/04-random-workload-chart.png" alt-text="Bar chart of a random workload on a large volume." lightbox="./media/performance-large-volumes-linux/04-random-workload-chart.png":::
+:::image type="content" source="../media/04-random-workload-chart.png" alt-text="Bar chart of a random workload on a large volume." lightbox="../media/04-random-workload-chart.png":::
