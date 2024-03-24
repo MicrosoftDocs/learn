@@ -3,13 +3,12 @@ uid: learn.aks-application-autoscaling-native.2-concepts-scaling
 metadata:
   title: Concepts of scalability
   description: In this module, learn the core principles of scalability
-  ms.date: 03/04/2021
+  ms.date: 01/05/2024
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 title: Concepts of scalability
-durationInMinutes: 2
+durationInMinutes: 5
 content: |
   [!include[](includes/2-concepts-scaling.md)]
 quiz:
@@ -17,9 +16,9 @@ quiz:
   questions:
     - content: "What is horizontal scaling?"
       choices:
-        - content: "When the application is replicated in order to sustain a heavier load."
+        - content: "When an application is replicated in order to sustain a heavier load."
           isCorrect: true
-          explanation: "Correct. When you scale an application horizontally, you're duplicating and balancing the load among several copies of it."
+          explanation: "Correct. When you scale an application horizontally, you're duplicating and balancing the load across several copies of the application."
         - content: "Adding more RAM to the VM."
           isCorrect: false
           explanation: "Adding more resources isn't a part of horizontal scaling."

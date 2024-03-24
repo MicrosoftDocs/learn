@@ -4,11 +4,12 @@ title: Explore site recovery
 metadata:
   title: Explore site recovery
   description: "Explore site recovery"
-  ms.date: 04/20/2023
+  ms.date: 10/18/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.service: sap-on-azure
+  ms.subservice: sap-vm-workloads
 durationInMinutes: 12
 content: |
   [!include[](includes/5-explore-site-recovery.md)]

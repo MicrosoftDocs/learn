@@ -19,7 +19,7 @@ Most incidents are generated because of an analytics rule alert. Examples of ale
 - Detection of suspicious user activities.
 - Attempted elevation of privilege.
 
-Analytics rules generate alerts based either on Kusto Query Language (KQL) queries or direct connection to Microsoft Security solutions like Microsoft Defender for Cloud or Microsoft 365 Defender. If you enable alert grouping, Microsoft Sentinel includes any related alert evidence for the incident.
+Analytics rules generate alerts based either on Kusto Query Language (KQL) queries or direct connection to Microsoft Security solutions like Microsoft Defender for Cloud or Microsoft Defender XDR. If you enable alert grouping, Microsoft Sentinel includes any related alert evidence for the incident.
 
 ### Bookmarks
 

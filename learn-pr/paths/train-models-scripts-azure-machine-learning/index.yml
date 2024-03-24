@@ -6,8 +6,7 @@ metadata:
   ms.date: 06/06/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Train models with scripts in Azure Machine Learning
 prerequisites: |
   None

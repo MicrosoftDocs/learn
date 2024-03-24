@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/26/2022
   author: wwlpublish
   ms.author: shlindsay
-  ms.topic: interactive-tutorial
+  ms.topic: module-standard-task-based
   ms.service: powerbi
 title: Create and manage scalable Power BI dataflows
 summary: Create Power BI transformation logic for reuse across your organization with Power BI dataflows.  Learn how to combine Power BI dataflows with Power BI Premium for scalable ETL, and practice creating and consuming dataflows.

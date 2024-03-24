@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/20/2023
+  ms.date: 12/29/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -30,10 +29,10 @@ quiz:
     choices:
     - content: "SAP Web Dispatcher pool"
       isCorrect: false
-      explanation: "That’s incorrect. The SAP Web Dispatcher pool isn't normally a potential single point of failure when deployed to a single virtual machine."
+      explanation: "Incorrect. The SAP Web Dispatcher pool isn't normally a potential single point of failure when deployed to a single virtual machine."
     - content: "Database services"
       isCorrect: true
-      explanation: "That’s correct. Database services are a potential single point of failure when deployed to a single VM, a typical deployment when high availability isn't a requirement."
+      explanation: "Correct. Database services are a potential single point of failure when deployed to a single VM, a typical deployment when high availability isn't a requirement."
     - content: "Application servers pool"
       isCorrect: false
-      explanation: "That’s incorrect. The application servers pool isn't normally a potential single point of failure when deployed to a single virtual machine."
+      explanation: "Incorrect. The application servers pool isn't normally a potential single point of failure when deployed to a single virtual machine."

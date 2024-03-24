@@ -12,7 +12,7 @@ A number of Azure Arc benefits are independent of the resource type, because the
   - Role Based Access Control (RBAC) for viewing logs and server inventory data
   - VM extensions to deploy software agents and run scripts on your server
   - Azure Policy guest configuration to audit operating system and software configuration
-  - An Azure Active Directory system assigned managed identity for apps running on the server to use when authenticating to other Azure services
+  - A Microsoft Entra system assigned managed identity for apps running on the server to use when authenticating to other Azure services
 
 ![Screenshot of the Access control (IAM) page in the Azure portal for the selected VM: ContosoVM1. The details pane displays a number of tabs: Check access (selected), Role assignments, Deny assignments, Classic administrators, and Roles.](../media/3-access-control.png)
 

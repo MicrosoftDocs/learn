@@ -4,10 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/28/2023
+  ms.date: 03/14/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -21,7 +23,7 @@ quiz:
       explanation: "Incorrect. All team members should participate in AI, not just those to whom it's delegated."
     - content: "Utilizes generative AI."
       isCorrect: false
-      explanation: "Incorrect. Generative AI may be one of the AI technologies used to implement AI in an organization, but it isn't a factor in building an AI-ready culture."
+      explanation: "Incorrect. Generative AI might be one of the AI technologies used to implement AI in an organization, but it isn't a factor in building an AI-ready culture."
     - content: "Provides access to data."
       isCorrect: true
       explanation: "Correct. Different factions in an organization tend to protect and defend their data. Successful AI at an organization level requires that everyone share their data."
@@ -36,14 +38,14 @@ quiz:
     - content: "Innovation"
       isCorrect: false
       explanation: "Incorrect. Encouraging innovation in using AI at the company could only come after a fundamental change in AI-ready culture."
-  - content: "The leaders of a regional law firm have been studying AI. The CEO is impressed that many companies have integrated it into their products, customer service, and their day-to-day work activities. One month ago, the CEO actually presented the basic concepts to top-level management. Since then, the CEO has received some good feedback from several vice presidents on its potential benefits. According to the maturity assessment seen in this module, which answer describes the level of AI maturity that this company has reached, and what will they move onto next?"
+  - content: "The leaders of a regional law firm have been studying AI. The CEO is impressed that many companies have integrated it into their products, customer service, and their day-to-day work activities. One month ago, the CEO actually presented the basic concepts to top-level management. Since then, the CEO has received some good feedback from several vice presidents on its potential benefits. According to the maturity assessment seen in this module, which answer describes the stage of AI success that this company has reached, and what will they move onto next?"
     choices:
-    - content: "First level, next employees will begin experimenting with pretrained models."
+    - content: "First level, next employees will begin experimenting with AI in some parts of the company."
       isCorrect: true
-      explanation: "Correct. The company is currently on the first level where they're just thinking about using AI in their business. The next level is where employees are experimenting with it."
-    - content: "Second level, employees will next start using AI for innovation and transformation."
+      explanation: "Correct. The company is currently on the first stage where they're just exploring AI. The next level is where the organization plans an AI strategy."
+    - content: "Second level, employees will next start defining an AI strategy."
       isCorrect: false
-      explanation: "Incorrect. Using AI for innovation and transformation is the third level of AI maturity. The company is currently on the first level."
-    - content: "Third level, next the company will create a strategy for using AI in their business."
+      explanation: "Incorrect. Defining an AI strategy is the second stage of AI success. The company is currently on the first level."
+    - content: "Third level, next the company will formalize and execute on their AI strategy."
       isCorrect: false
-      explanation: "Incorrect. Creating an AI strategy is the top level (fourth level) of AI maturity. The company is currently on the first level."
+      explanation: "Incorrect. Formalizing an AI strategy is the third stage of AI success. The company is currently on the first level."

@@ -3,18 +3,21 @@ uid: learn.wwl.configure-azure-files-file-sync
 metadata:
   title: Configure Azure Files and Azure File Sync
   description: "Learn how to configure Azure Files and Azure File Sync."
-  ms.date: 05/19/2023
+  ms.date: 02/29/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
 title: Configure Azure Files and Azure File Sync
 summary: Learn how to configure Azure Files and Azure File Sync.
 abstract: |
   In this module, you learn how to:
   - Identify storage for file shares and blob data.
-  - Configure Azure Files shares and file share snapshots.
-  - Identify features and usage cases of Azure File Sync.
+  - Configure Azure file shares and file share snapshots.
+  - Identify features and use cases of Azure File Sync.
   - Identify Azure File Sync components and configuration steps.
 prerequisites: |
   None
@@ -24,6 +27,7 @@ levels:
 roles:
 - administrator
 products:
+- azure
 - azure-files
 subjects:
 - cloud-computing

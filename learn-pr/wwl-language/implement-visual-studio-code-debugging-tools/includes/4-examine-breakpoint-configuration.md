@@ -1,9 +1,3 @@
-
-
-
-
-
-
 Debuggers are used to help you to analyze your code and can be used to control your program's runtime execution. When you start the Visual Studio Code debugger, it immediately begins executing your code. Because your code executes in micro-seconds, effective code debugging depends on your ability to pause the program on any statement within your code. Breakpoints are used to specify where code execution pauses.
 
 ## Set breakpoints

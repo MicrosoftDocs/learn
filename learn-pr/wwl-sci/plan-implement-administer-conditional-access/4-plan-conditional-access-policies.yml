@@ -4,13 +4,11 @@ title: Plan Conditional Access policies
 metadata:
   title: Plan Conditional Access policies
   description: "Plan Conditional Access policies"
-  ms.date: 02/03/2023
+  ms.date: 10/19/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.service: azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/4-plan-conditional-access-policies.md)]

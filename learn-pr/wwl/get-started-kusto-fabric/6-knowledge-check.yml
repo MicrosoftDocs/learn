@@ -4,18 +4,17 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/10/2023
+  ms.date: 01/09/2024
   author: wwlpublish
-  ms.author: shlindsay
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.service: powerbi
+  ms.author: anrudduc
+  ms.topic: unit
   ms.custom:
-    - build-2023
-    - build-2023-dataai
-    - build-2023-fabric
+  - build-2023
+  - build-2023-dataai
+  - build-2023-fabric
 durationInMinutes: 3
 quiz:
+  title: ""
   questions:
   - content: "Which KQL keyword is used to limit the results of a query to a specified number of rows?"
     choices:

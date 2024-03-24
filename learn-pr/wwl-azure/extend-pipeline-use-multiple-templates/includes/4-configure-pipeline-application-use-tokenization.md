@@ -11,7 +11,7 @@ Azure Key Vault, Service Principal and YAML Pipeline. Follow the steps to create
 One way to use Azure Key Vault with YAML pipeline templates is to create a variable group that references the Key Vault. Here are the steps:
 
 1. In Azure DevOps, click on Library under Pipelines.
-2. Create a new variable group, or use existing groups.
+2. Create a new variable group or use existing groups.
 3. Give the variable group a name and description.
 4. Under Variables, add a new variable and set its value to `$(keyVaultSecret)`. Use this variable to retrieve the secret from Azure Key Vault.
 5. Under Link secrets, link the variable group to your Azure Key Vault and grant read access to the service principal that will be used to access the Key Vault.
@@ -118,12 +118,12 @@ A third way to use Azure Key Vault with YAML pipeline templates is to combine va
 
 Create a new YAML pipeline that deploys an Azure Resource Manager template that references a secret stored in Azure Key Vault. Use the AzureKeyVault task to retrieve the secret and pass it as a parameter to the template. Verify that the pipeline can successfully deploy the template without exposing the secret in plain text.
 
-**Suggested Lab:** [Integrate Azure Key Vault with Azure DevOps](https://learn.microsoft.com/training/modules/manage-application-configuration-data/11-integrate-azure-key-vault-with-azure-devops/)
+**Suggested Lab:** [Integrate Azure Key Vault with Azure DevOps](/training/modules/manage-application-configuration-data/11-integrate-azure-key-vault-with-azure-devops/)
 
 For more information about Azure Key Vault and YAML pipelines, see:
 
-- [Manage application configuration data.](https://learn.microsoft.com/training/modules/manage-application-configuration-data/)
-- [Use Azure Key Vault secrets in Azure Pipelines.](https://learn.microsoft.com/azure/devops/pipelines/release/azure-key-vault/)
-- [Use Azure Key Vault in your YAML Pipeline.](https://learn.microsoft.com/azure/devops/pipelines/release/key-vault-in-own-project/)
-- [Azure Key Vault recovery management with soft delete and purge protection.](https://learn.microsoft.com/azure/key-vault/general/key-vault-recovery)
-- [Add & use variable groups.](https://learn.microsoft.com/azure/devops/pipelines/library/variable-groups)
+- [Manage application configuration data.](/training/modules/manage-application-configuration-data/)
+- [Use Azure Key Vault secrets in Azure Pipelines.](/azure/devops/pipelines/release/azure-key-vault/)
+- [Use Azure Key Vault in your YAML Pipeline.](/azure/devops/pipelines/release/key-vault-in-own-project/)
+- [Azure Key Vault recovery management with soft delete and purge protection.](/azure/key-vault/general/key-vault-recovery)
+- [Add & use variable groups.](/azure/devops/pipelines/library/variable-groups)

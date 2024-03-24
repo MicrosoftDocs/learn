@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/01/2021
   author: mijacobs
   ms.author: mijacobs
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-arc
   ms.subservice: azure-arc-kubernetes
   manager: mijacobs

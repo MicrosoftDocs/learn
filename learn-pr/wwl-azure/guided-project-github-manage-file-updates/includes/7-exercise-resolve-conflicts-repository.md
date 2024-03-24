@@ -1,4 +1,3 @@
-
 Since you’re the only person working in this repository, either locally or on GitHub, you won't run into conflicts if you’re consistent with pushing your branches to your remote repo. However, for this unit, you’re going to force a conflict between the remote repository and your local repository. Suppose that the teacher you're helping out had a new student join the class for project 2, 3, and 4. The teacher goes into the GitHub repository and updates the grade files to add the student's name. To simulate this, follow the steps.
 
 Start by logging into GitHub at [https://github.com](https://github.com?azure-portal=true).
@@ -61,6 +60,11 @@ The explorer view should update to show your README.md file and your grade-tempa
 Because you pushed the project2 branch to GitHub when you were done making changes, the remote had the most up-to-date files. Updating project2 should be straightforward. All you'll need to do is get the latest files from the remote, update Monty's grade, and then re-commit and re-push the updates you make.
 
 1.  From the Git command line in Visual Studio Code, issue the following commands:
+    
+    | **Command**             | **Action**                                                                    |
+    | ----------------------- | ----------------------------------------------------------------------------- |
+    | `git checkout project2` | Changes the working branch to the project2 branch.                            |
+    | `git pull`              | Updates your local repository with the content in the GitHub project2 branch. |
 2.  Update Monty's grade to give them 16 points for project 2 in the project2.md file.
 3.  Save the file, then update your local repository and your remote repository with the following commands:
     

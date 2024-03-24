@@ -7,10 +7,8 @@ metadata:
   ms.date: 06/21/2022
   author: juliakm
   ms.author: jukullam
-  ms.topic: interactive-tutorial
-  ms.service: azure
-  ms.custom:
-    - devx-track-python
+  ms.topic: unit
+  ms.custom: devx-track-python
 durationInMinutes: 15
 content: |
   [!include[](includes/4-deploy-python.md)]

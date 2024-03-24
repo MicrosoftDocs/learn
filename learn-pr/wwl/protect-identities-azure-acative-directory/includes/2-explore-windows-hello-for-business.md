@@ -13,7 +13,7 @@ With Windows Hello, users can authenticate to:
 
  -  A Microsoft account
  -  An Active Directory account
- -  A Microsoft Azure Active Directory (Azure AD) account
+ -  A Microsoft Entra account
  -  Identity Provider Services or Relying Party Services that support Fast ID Online (FIDO) v2.0 authentication (in progress)
 
 After an initial two-step verification of the user during enrollment, Windows Hello is set up on the user's device and Windows asks the user to set a gesture, which can be biometric, such as a fingerprint, or a PIN. The user provides the gesture to verify their identity. Windows then uses Windows Hello to authenticate users.

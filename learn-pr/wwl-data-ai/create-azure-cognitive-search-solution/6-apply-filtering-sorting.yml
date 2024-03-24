@@ -4,11 +4,11 @@ title: Apply filtering and sorting
 metadata:
   title: Apply filtering and sorting
   description: "Apply filtering and sorting"
-  ms.date: 05/04/2023
+  ms.date: 12/11/2023
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.author: berryivor
+  ms.topic: unit
+  ms.service: cognitive-search
 azureSandbox: false
 labModal: false
 durationInMinutes: 4

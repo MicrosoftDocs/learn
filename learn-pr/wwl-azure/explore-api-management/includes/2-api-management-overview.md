@@ -41,7 +41,7 @@ Groups are used to manage the visibility of products to developers. API Manageme
 * **Developers** - Authenticated developer portal users that build applications using your APIs. Developers are granted access to the developer portal and build applications that call the operations of an API.
 * **Guests** - Unauthenticated developer portal users. They can be granted certain read-only access, like the ability to view APIs but not call them.
 
-In addition to these system groups, administrators can create custom groups or use external groups in associated Azure Active Directory tenants. 
+In addition to these system groups, administrators can create custom groups or use external groups in associated Microsoft Entra tenants. 
 
 ## Developers
 

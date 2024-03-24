@@ -56,8 +56,8 @@ ExpressRoute Global Reach must be enabled to route traffic to and from the on-pr
 There are a few prerequisites before you configure ExpressRoute Global Reach.
 
 - A separate, customer-provided ExpressRoute circuit is required. This circuit is used to connect on-premises environments to Azure.
-- If you are an AVS customer and need Global Reach, a /29 non-overlapping network-address block is required for ExpressRoute Global Reach peering.
-- All gateways, including the ExpressRoute provider's service, must support 4-byte ASN. Azure VMware Solution uses 4-byte public ASNs for advertising network routes.
+- If you are an Azure VMware Solution customer and need Global Reach, a /29 non-overlapping network-address block is required for ExpressRoute Global Reach peering.
+- All gateways, including the ExpressRoute provider's service, must support 4-byte Autonomous System Number (ASN). Azure VMware Solution uses 4-byte public ASNs for advertising network routes.
 
 ## Required network ports
 

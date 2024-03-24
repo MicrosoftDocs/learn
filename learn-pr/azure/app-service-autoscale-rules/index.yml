@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/04/2022
   author: cephalin
   ms.author: cephalin
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: app-service
   manager: mijacobs
 title: Dynamically meet changing web app performance requirements with autoscale rules

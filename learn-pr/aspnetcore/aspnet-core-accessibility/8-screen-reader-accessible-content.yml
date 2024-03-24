@@ -7,8 +7,7 @@ metadata:
   author: jongalloway
   ms.author: jogallow
   ms.manager: markl
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.topic: unit
   
 title: Find and fix screen reader accessibility issues
 durationInMinutes: 5
@@ -21,10 +20,10 @@ quiz:
       choices:
       - content: "Describe the decoration."
         isCorrect: false
-        explanation: "Decorative images should not be described."
+        explanation: "Decorative images shouldn't be described."
       - content: "Use a GUID."
         isCorrect: false
-        explanation: "Don't use GUIDs for alt text."
+        explanation: "Don't use globally unique identifiers (GUIDs) for alt text."
       - content: "Use `alt=\u0022\u0022`."
         isCorrect: true
         explanation: "Correct. You should use a blank `alt` value for decorative images."

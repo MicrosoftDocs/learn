@@ -1,5 +1,3 @@
-
-
 - **NetWeaver**. Deployment of an SAP NetWeaver system on Azure.
 - **HANA**. Deployment of SAP HANA system on Azure using SAP HANA Certified VMs.
 

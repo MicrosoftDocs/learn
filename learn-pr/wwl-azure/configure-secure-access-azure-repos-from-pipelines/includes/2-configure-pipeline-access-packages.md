@@ -4,7 +4,7 @@ In this unit, learn how to configure pipeline access to packages stored in Azure
 
 1. Navigate to your Azure DevOps organization and select the project that contains the Azure Artifacts repository you want to configure.
 2. In the left-side menu, select Artifacts.
-3. If you don't have any feed, [Create a feed](https://learn.microsoft.com/azure/devops/artifacts/get-started-nuget).
+3. If you don't have any feed, [Create a feed](/azure/devops/artifacts/get-started-nuget).
 4. In the Artifacts menu, select Feed Settings.
 5. Click on the Permissions tab.
 6. Add users or groups to the repository.
@@ -22,7 +22,7 @@ Example: Implement security through a pipeline using DevOps Build Service (conto
 
 ## Consume packages from Azure Artifacts in a pipeline
 
-In Azure Pipelines, you can use the classic editor or the YAML tasks to publish your NuGet, or other packages within your pipeline to your Azure Artifacts feed or public registries such as nuget.org.
+In Azure Pipelines, you can use the classic editor or the YAML tasks to publish your NuGet or other packages within your pipeline to your Azure Artifacts feed or public registries such as nuget.org.
 
 To configure pipeline access to packages stored in Azure Artifacts repositories using YAML:
 
@@ -37,7 +37,7 @@ steps:
 
 ```
 
-Replace to your Azure Artifacts feed name with the name of your Azure Artifacts feed and your solution file.sln with the name of your solution file.
+Replace your Azure Artifacts feed name with the name of your Azure Artifacts feed and your solution file.sln with the name of your solution file.
 
 ![Screenshot of Azure Pipelines showing how to add the task to restore NuGet from Azure Artifacts.](../media/package-restore-artifacts.png)
 
@@ -47,6 +47,6 @@ If you want to take your learning to the next level, try setting up a pipeline t
 
 For more information about Artifacts, see:
 
-- [Create and target an environment.](https://learn.microsoft.com/azure/devops/artifacts/start-using-azure-artifacts)
-- [Configure permissions.](https://learn.microsoft.com/azure/devops/artifacts/feeds/feed-permissions)
-- [Set pipeline permissions.](https://learn.microsoft.com/azure/devops/pipelines/policies/permissions)
+- [Create and target an environment.](/azure/devops/artifacts/start-using-azure-artifacts)
+- [Configure permissions.](/azure/devops/artifacts/feeds/feed-permissions)
+- [Set pipeline permissions.](/azure/devops/pipelines/policies/permissions)

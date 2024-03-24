@@ -1,4 +1,4 @@
-Developers integrating applications with on-premises, external or cloud services face the issue of authentication. In the past, accessing resources like databases frequently involved options that could compromise security. For example, storing credentials, tokens, or secret keys in configuration files accessible to your applications isn’t recommended from a security standpoint. This approach requires ongoing updates to modify and redistribute applications each time credentials change.
+Developers integrating applications with on-premises, external, or cloud services face the issue of authentication. In the past, accessing resources like databases frequently involved options that could compromise security. For example, storing credentials, tokens, or secret keys in configuration files accessible to your applications isn’t recommended from a security standpoint. This approach requires ongoing updates to modify and redistribute applications each time credentials change.
 
 Azure provides a better solution using authentication tools. These tools include *service principals* and *managed identities*.
 
@@ -17,6 +17,6 @@ In this module, you'll:
 
 ## Prerequisites
 
-- Familiarity with Azure Active Directory (Azure AD) concepts
+- Familiarity with Microsoft Entra concepts
 - Familiarity with general concepts of authorization and authentication
 - Experience with developing and deploying infrastructure as a service (IaaS) applications

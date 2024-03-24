@@ -6,7 +6,8 @@ metadata:
   ms.date: 04/26/2023
   author: jknightly
   ms.author: joknight
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: caf
 title: Network design principles for enterprise-scale architecture
 summary: This training examines key design considerations and recommendations surrounding networking and connectivity to, from, and within Microsoft Azure for the enterprise customer.
 abstract: | 

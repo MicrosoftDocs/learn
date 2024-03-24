@@ -6,8 +6,8 @@ metadata:
   ms.date: 05/31/2023
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Explore package dependencies
 summary: This module explores dependency management concepts and helps to identify project dependencies. You will learn how to decompose your system, identify dependencies, and package componentization.
 abstract: |

@@ -4,9 +4,9 @@ metadata:
   title: Enhance security and implement monitoring of Azure Arc-enabled SQL Managed Instance
   description: Learn how to enhance security and implement monitoring of Azure Arc-enabled SQL Managed Instance
   ms.date: 12/23/2022
-  author: tchristiani
-  ms.author: terrychr
-  ms.topic: interactive-tutorial
+  author: MikeRayMSFT
+  ms.author: mikeray
+  ms.topic: module-standard-task-based
   ms.service: azure-arc
   ms.subservice: azure-arc-data-sqlmi
 title: Monitor Azure Arc-enabled SQL Managed Instance security performance

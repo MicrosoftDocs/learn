@@ -62,7 +62,7 @@ If the built-in Azure roles don't meet the specific needs of your organization, 
 > [!TIP]
 > Applications and services use a *security identity* to access specific Azure resources. Think of it as a user identity (username and password or certificate) for an application. *Scope* is the set of resources to which the access applies.
 
-Subscriptions that trust the same Azure AD directory can share custom roles between them. There's a limit of 5,000 custom roles per directory. Custom roles can be created by using the Azure portal, Azure PowerShell, Azure CLI, or the REST API.
+Subscriptions that trust the same Microsoft Entra directory can share custom roles between them. There's a limit of 5,000 custom roles per directory. Custom roles can be created by using the Azure portal, Azure PowerShell, Azure CLI, or the REST API.
 
 > [!NOTE]
 > For Azure Germany and Azure China 21Vianet, the limit is 2,000 custom roles.

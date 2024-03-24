@@ -4,11 +4,10 @@ title: Use AI embedded in everyday applications
 metadata:
   title: Use AI embedded in everyday applications
   description: "Use AI embedded in everyday applications"
-  ms.date: 06/29/2023
+  ms.date: 01/09/2024
   author: Adriamen
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.service: microsoft-365
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/4-use-ai-embedded-everyday-applications.md)]

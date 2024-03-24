@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-implement-cosmos-db-nosql-service
+title: Exercise - Implement the Azure Cosmos DB for NoSQL service
+metadata:
+  unitType: exercise
+  title: Exercise - Implement the Azure Cosmos DB for NoSQL service
+  description: |
+    Implement the service methods created to connect to Azure Cosmos DB for NoSQL. In those methods, create items, query containers, and perform transactional batch operations.
+  author: seesharprun
+  manager: jroth
+  ms.author: sidandrews
+  ms.reviewer: mjbrown
+  ms.topic: unit
+  ms.date: 03/07/2024
+durationInMinutes: 25
+content: |
+  [!include[](includes/7-exercise-implement-cosmos-db-nosql-service.md)]

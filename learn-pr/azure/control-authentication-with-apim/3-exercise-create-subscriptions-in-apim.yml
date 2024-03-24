@@ -6,8 +6,7 @@ metadata:
   ms.date: 06/14/2023
   author: dlepow
   ms.author: danlep
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Exercise - Create subscriptions in Azure API Management
 durationInMinutes: 10
 interactive: bash

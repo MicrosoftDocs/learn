@@ -1,5 +1,3 @@
-
-
 When troubleshooting Windows Autopilot, it's important to verify the following key factors:
 
  -  **Configuration:** Has Azure AD and Microsoft Intune (or an equivalent MDM service) been configured as specified in Windows Autopilot configuration requirements?
@@ -16,7 +14,7 @@ You can use the Event Tracing for Windows (ETW) can be used to capture detailed 
 
 Information about the Autopilot profile settings is stored in the registry on the device after they're received from the Autopilot deployment service. These settings can be found at HKLM\\SOFTWARE\\Microsoft\\Provisioning\\Diagnostics\\Autopilot.
 
-To see details related to the Autopilot profile settings and OOBE flow, Windows adds event log entries. These logs can be viewed using Event Viewer, navigating to the log at Application and Services Logs –> Microsoft –> Windows –> Provisioning-Diagnostics-Provider –> Autopilot. The following events may be recorded, depending on the scenario and profile configuration.
+To see details related to the Autopilot profile settings and OOBE flow, Windows adds event log entries. These logs can be viewed using Event Viewer, navigating to the log at Application and Services Logs –> Microsoft –> Windows –> Provisioning-Diagnostics-Provider –> Autopilot. The following events might be recorded, depending on the scenario and profile configuration.
 
 | Event ID | Type   | Description                                                                                                        |
 |----------|--------|--------------------------------------------------------------------------------------------------------------------|
@@ -52,6 +50,6 @@ When encountering the error code 80180018, it's accompanied by an error page tit
 
 ### Troubleshoot Device Import
 
-If you experience a scenario where importing a device CSV file results in no action and a *'400' error appears in network trace with error body "Cannot convert the literal '\[DEVICEHASH\]' to the expected type 'Edm.Binary'* error appears, the device hash within the file is either corrupted or the hash may not be properly padded in the file. To resolve this issue, a minor edit to the file might be necessary to ensure the device hash is in the correct format.
+If you experience a scenario where importing a device CSV file results in no action and a *'400' error appears in network trace with error body "Cannot convert the literal '\[DEVICEHASH\]' to the expected type 'Edm.Binary'* error appears, the device hash within the file is either corrupted or the hash might not be properly padded in the file. To resolve this issue, a minor edit to the file might be necessary to ensure the device hash is in the correct format.
 
 For more information, see [Troubleshooting Windows Autopilot (level100/200)](https://aka.ms/AA6d57a) and [Troubleshooting Windows Autopilot](https://aka.ms/AA80h34).

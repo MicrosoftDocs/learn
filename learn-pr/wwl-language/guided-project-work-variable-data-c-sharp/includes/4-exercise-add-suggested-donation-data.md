@@ -1,7 +1,3 @@
-
-
-
-
 In this step of the development process, you update the code provided in the starter project folder, adding features for "suggested donation" to the application. The starter project.cs file should be open in Visual Studio Code. Return to the previous prepare unit if you need instructions for getting started.
 
 ## Create the "Suggested Donation" features
@@ -67,12 +63,13 @@ You need to create a new variable to hold suggested donations and expand the `ou
             break;
     ```
 
-1. Insert a `suggestedDonation` value above the `break` statement for `case 0;` through `case 3:` with the following values:
+1. Insert a `suggestedDonation` value above the `break` statement for `case 0;` through `default:` with the following values:
 
     - Case 0: `suggestedDonation = "85.00";`
     - Case 1: `suggestedDonation = "49.99";`
     - Case 2: `suggestedDonation = "40.00";`
     - Case 3: `suggestedDonation = "";`
+    - default: `suggestedDonation = "";`
 
     The following code shows `case 0:` code with the addition of 'suggestedDonation':
 
@@ -113,6 +110,10 @@ You need to create a new variable to hold suggested donations and expand the `ou
 
 The variable `suggestedDonation` is intended to be a numeric value, but is collected and stored as a `string`. In the future you may have to validate `suggestedDonation` represents a decimal, and that you can convert it to a decimal so it's available to use for billing calculations. To avoid an error trying to use an entry like `twenty` you need to use `TryParse` validation.
 
+> [!NOTE]
+> The code samples in this exercise are designed based on en-US culture settings, and use a period (`.`) as the decimal separator. Building and running the code with a culture setting that uses a different decimal separators (such as a comma `,`) may give unexpected results or errors. To fix this issue, replace the period decimal separators in the code samples with your local decimal separator (such as `,`).
+> Alternatively, to run a program using the en-US culture setting, add the following code to the top of your program: `using System.Globalization;` and after any other `using` statements add `CultureInfo.CurrentCulture = new CultureInfo("en-US");`.
+
 1. Before comment #5, inside the end of the code block, add the code to validate that `suggestedDonation` can be cast as a decimal.
 
     You add the following:
@@ -127,7 +128,7 @@ The variable `suggestedDonation` is intended to be a numeric value, but is colle
 
 1. Ensure that your validation code is in the right place!
 
-    The two lines you added should appear in the code as the top two lines of the following code :
+    The two lines you added should appear in the code as the top two lines of the following code:
 
     ```csharp
         if (!decimal.TryParse(suggestedDonation, out decimalDonation)){

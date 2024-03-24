@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-inheritance-abstraction-polymorphism.exercise-ant-class-generalized-ant
+title: Exercise - Implement GeneralizedAnt
+metadata:
+  title: Exercise - Implement GeneralizedAnt
+  description: "The purpose of this lesson is to explain the basic use of inheritance and code reuse."
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-exercise-ant-class-generalized-ant.md)]

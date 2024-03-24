@@ -7,11 +7,10 @@ metadata:
   ms.date: 02/22/2023
   author: kylebunting
   ms.author: jonels
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - build-2023
     - build-2023-dataai
-  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/2-prep-tables-for-multi-tenant-data-architecture.md)]

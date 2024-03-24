@@ -13,7 +13,7 @@ You can scope a savings plan to a shared scope, a management group, a subscripti
 
 You have four options to scope a savings plan, depending on your expected resource usage:
 
-- **Shared scope**: Applies savings to all qualified resources in eligible subscriptions that are in the same billing context (enrollment for EA and billing profile for MCA). For EA customers, the shared scope could include subscriptions associated with different Azure Active Directory tenants provided these subscriptions are part of the same enrollment. If a subscription is moved to a different billing context, the benefit no longer applies to the subscription. It continues to apply to other subscriptions that remain in the current billing context.
+- **Shared scope**: Applies savings to all qualified resources in eligible subscriptions that are in the same billing context (enrollment for EA and billing profile for MCA). For EA customers, the shared scope could include subscriptions associated with different Microsoft Entra tenants provided these subscriptions are part of the same enrollment. If a subscription is moved to a different billing context, the benefit no longer applies to the subscription. It continues to apply to other subscriptions that remain in the current billing context.
 - **Single subscription scope**: Applies savings to the matching resources in the selected subscription.
 - **Management group**: Applies savings to the matching resources in the subscriptions that are a part of both the same management group and billing scope.
 - **Single resource group scope**: Applies savings to the matching resources in the selected resource group only.

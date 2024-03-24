@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-images-computer-vision.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/22/2024
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: unit
+durationInMinutes: 2
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Computer vision is based on the manipulation and analysis of what kinds of values in an image?"
+    choices:
+    - content: "Timestamps in photograph metadata"
+      isCorrect: false
+      explanation: "Incorrect. Timestamps in the image metadata do not enable computer vision."
+    - content: "Pixels"
+      isCorrect: true
+      explanation: "Correct. Pixels are numeric values that represent shade intensity for points in the image."
+    - content: "Image file names"
+      isCorrect: false
+      explanation: "Incorrect. While file names might offer some clues as the image subject, they do not inherently enable computer vision."
+  - content: "You want to use the Azure AI Vision service to analyze images. You also want to use the Azure AI Language service to analyze text. You want developers to require only one key and endpoint to access all of your services. What kind of resource should you create in your Azure subscription?"
+    choices:
+    - content: "Azure AI Vision"
+      isCorrect: false
+      explanation: "Incorrect. This resource type only supports image analysis. A separate Azure AI Language resource (with its own key and endpoint) would be required for text analytics."
+    - content: "Azure AI services"
+      isCorrect: true
+      explanation: "Correct. An Azure AI Services resource supports both Azure AI Vision and Azure AI Language."
+    - content: "Azure OpenAI service"
+      isCorrect: false
+      explanation: "Incorrect. The Azure AI OpenAI service is used for generative AI scenarios."
+  - content: "You want to use the Azure AI Vision service to identify the location of individual items in an image. Which of the following features should you retrieve?"
+    choices:
+    - content: "Objects"
+      isCorrect: true
+      explanation: "Correct. Azure AI Vision returns objects with a bounding box to indicate their location in the image."
+    - content: "Visual Tags"
+      isCorrect: false
+      explanation: "Incorrect. Tags indicate metadata terms that are relevant to an image, but not their location."
+    - content: "Dense Captions"
+      isCorrect: false
+      explanation: "Incorrect. Categories provide suggested categorizations for the image as a whole, not individual items in it."

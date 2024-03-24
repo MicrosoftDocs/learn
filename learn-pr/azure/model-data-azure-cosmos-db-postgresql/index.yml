@@ -11,7 +11,7 @@ metadata:
   ms.author: sidandrews
   manager: jroth
   ms.reviewer: jonels
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: cosmos-db
   ms.subservice: postgresql
 title: Model data for Azure Cosmos DB for PostgreSQL

@@ -1,10 +1,6 @@
-
-
-
-
 The throughput of an Azure NetApp volume is a function of the volume size and Service level, as documented in [Service level for Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-service-levels).
 
-It is important to understand the performance relationship between the volume size and the physical limits for an Logical Interface (LIF) of the Storage Virtual Machine (SVM).
+It is important to understand the performance relationship between the volume size and the physical limits for a Logical Interface (LIF) of the Storage Virtual Machine (SVM).
 
 The table below demonstrates that it could make sense to create a large “Standard” volume to store backups and that it does not make sense to create an “Ultra” volume larger than 12 TB because the physical bandwidth capacity of a single LIF would be exceeded.
 
@@ -91,7 +87,7 @@ The maximum throughput for a Logical Interface and a single Linux session is bet
     960 MB/sec
   :::column-end:::
   :::column:::
-    1,400 MB/sec
+    1,400 MB/sec*
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -105,7 +101,7 @@ The maximum throughput for a Logical Interface and a single Linux session is bet
     1,280 MB/sec
   :::column-end:::
   :::column:::
-    1,400 MB/sec
+    1,400 MB/sec*
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -116,12 +112,15 @@ The maximum throughput for a Logical Interface and a single Linux session is bet
     640 MB/sec
   :::column-end:::
   :::column:::
-    1,400 MB/sec
+    1,400 MB/sec*
   :::column-end:::
   :::column:::
-    1,400 MB/sec
+    1,400 MB/sec*
   :::column-end:::
 :::row-end:::
+
+> [!NOTE]
+> write or single session read throughput limits (in case NFS mount option nconnect isn't used)
 
 It is important to understand that the data is written to the same SSDs in the storage backend. The performance quota from the capacity pool was created to be able to manage the environment. The Storage KPIs are equal for all HANA database sizes. In almost all cases, this assumption does not reflect the reality and the customer expectation. The size of HANA systems does not necessarily mean that a small system requires low storage throughput, or that a large system requires high storage throughput. But generally, we can expect higher throughput requirements for larger HANA database instances. As a result of SAP's sizing rules for the underlying hardware, such larger HANA instances also provide more CPU resources and higher parallelism in tasks like loading data after an instance's restart. As a result, the volume sizes should be adapted to the customer expectations and requirements, and not only driven by pure capacity requirements.
 
@@ -186,7 +185,7 @@ As you design the infrastructure for SAP in Azure, you should be aware of SAP's 
 
 Since all three KPIs are demanded, the **/hana/data** volume needs to be sized toward the larger capacity to fulfill the minimum read requirements.
 
-For HANA systems, which are not requiring high bandwidth, the ANF volume sizes can be smaller. And in case a HANA system requires more throughput the volume could be adapted by resizing the capacity online. No KPIs are defined for backup volumes. However, the backup volume throughput is essential for a well-performing environment. Log – and Data volume performance must be designed to the customer expectations.
+For HANA systems, which aren't requiring high bandwidth, the ANF volume sizes can be smaller. And in case a HANA system requires more throughput the volume could be adapted by resizing the capacity online. No KPIs are defined for backup volumes. However, the backup volume throughput is essential for a well-performing environment. Log – and Data volume performance must be designed to the customer expectations.
 
 > [!IMPORTANT]
 > Independent of the capacity you deploy on a single NFS volume, the throughput, is expected to plateau in the range of 1.2-1.4 GB/sec bandwidth leveraged by a consumer in a virtual machine. This has to do with the underlying architecture of the ANF offer and related Linux session limits around NFS. The performance and throughput numbers as documented in the article [Azure NetApp Files performance benchmarks for Linux](/azure/azure-netapp-files/performance-benchmarks-linux) were conducted against one shared NFS volume with multiple client VMs and as a result with multiple sessions. That scenario is different from the scenario we measure in SAP, where we measure throughput from a single VM against an NFS volume hosted on ANF.

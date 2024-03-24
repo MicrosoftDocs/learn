@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/23/2023
   author: rodsan
   ms.author: rodsan
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Approach your data-flow diagram with the right threat model focus
 summary: Threat modeling is an effective technique to help you identify threats and ways to reduce or eliminate risk. We start by deciding to focus on either what needs to be protected or who it needs protection from.
 abstract: |
@@ -25,9 +25,9 @@ roles:
 - solution-architect
 products:
 - azure
-- azure-security-center
+- defender-for-cloud
 - m365-security-center
-- m365-ems-cloud-app-security
+- defender-for-cloud-apps
 subjects:
 - threat-protection
 units:

@@ -3,10 +3,11 @@ uid: learn.wwl.implement-non-relational-data-model
 metadata:
   title: Implement a non-relational data model
   description: "Implement a non-relational data model"
-  ms.date: 02/06/2023
+  ms.date: 02/06/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: azure
 title: Implement a non-relational data model
 summary: Identify an application’s key access patterns. Define the entities’ data model, along with containers to store the data with a partition key that will result in an efficient and scalable data store for the application.
 abstract: |

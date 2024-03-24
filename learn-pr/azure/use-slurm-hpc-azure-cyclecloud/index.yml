@@ -1,4 +1,4 @@
-﻿### YamlMime:Module
+### YamlMime:Module
 uid: learn.azure.azure.use-slurm-hpc-azure-cyclecloud
 title: Use Slurm for HPC on Azure CycleCloud
 metadata:
@@ -7,8 +7,8 @@ metadata:
   ms.date: 05/17/2023
   author: Orin-Thomas
   ms.author: orthomas
-  ms.topic: interactive-tutorial
-  ms.prod: azure-cyclecloud
+  ms.topic: module
+  ms.service: cyclecloud
 summary: >
   This module helps you understand how to use SLURM to manage HPC jobs running with Azure CycleCloud and how to troubleshoot common issues.
 abstract: |

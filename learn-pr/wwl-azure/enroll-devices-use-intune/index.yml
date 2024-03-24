@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.wwl.enroll-devices-use-intune
 metadata:
-  title: Understand Azure Active Directory
+  title: Understand Microsoft Entra ID
   description: "Students will learn how to configure and setup Intune to more easily manage Windows, Android, and iOS devices."
-  ms.date: 05/09/2023
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
-  ms.service: active-directory
+  ms.topic: module
+  ms.service: windows
 title: Enroll devices using Microsoft Intune
 summary: Students will learn how to configure and setup Intune to more easily manage Windows, Android, and iOS devices.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   - Prepare Microsoft Intune for device enrollment.
   - Configure Microsoft Intune for automatic enrollment.
-  - Explain how to enroll Windows, Android and iOS devices in Intune.
+  - Explain how to enroll Windows, Android, and iOS devices in Intune.
   - Explain when and how to use Intune Enrollment Manager.
   - Understand how to monitor and perform remote actions on enrolled devices.
 prerequisites: |
@@ -27,7 +27,7 @@ levels:
 roles:
 - administrator
 products:
-- azure-active-directory
+- entra-id
 units:
 - learn.wwl.enroll-devices-use-intune.introduction
 - learn.wwl.enroll-devices-use-intune.manage-mobile-devices-intune

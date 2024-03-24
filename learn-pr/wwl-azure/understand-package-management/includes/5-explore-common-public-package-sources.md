@@ -1,3 +1,4 @@
+
 The various package types have a standard source that is commonly used for public use.
 
 It's a go-to place for developers to find and consume publically available components as software dependencies. These sources are package feeds.
@@ -17,7 +18,7 @@ Public and free package sources that offer feeds at no expense will usually requ
 | **Package type** | **Package source**   | **URL**                                              |
 | ---------------- | -------------------- | ---------------------------------------------------- |
 | NuGet            | NuGet Gallery        | [https://nuget.org](https://nuget.org)               |
-| Npm              | NPMjs                | [https://npmjs.org](https://npmjs.org)               |
+| npm              | npmjs                | [https://npmjs.org](https://npmjs.org)               |
 | Maven            | Maven                | [https://search.maven.org](https://search.maven.org) |
 | Docker           | Docker Hub           | [https://hub.docker.com](https://hub.docker.com)     |
 | Python           | Python Package Index | [https://pypi.org](https://pypi.org)                 |

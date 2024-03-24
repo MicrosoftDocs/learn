@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-describe-core-features.describe-custom-promptbooks
+title: Describe custom promptbooks
+metadata:
+  title: Describe custom promptbooks
+  description: "Learn about custom promptbooks and how you can create them."
+  ms.date: 02/22/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-describe-custom-promptbooks.md)]

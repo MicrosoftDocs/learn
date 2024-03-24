@@ -141,7 +141,7 @@ It also supports both managed and unmanaged disks. If you experience problems en
 | VM size| Azure Disk Encryption isn't available on Basic, A-series VMs. It's also not available on Lsv2-series VMs.|
 | VM generation| Azure Disk Encryption isn't available on Generation 2 VMs.|
 | Memory| Azure Disk Encryption isn't available on VMs with less than 2 gigabytes (GB) of memory.|
-| Networking| To get a token to connect to your key vault, the Windows VM must be able to connect to an Azure AD endpoint, login.microsoftonline.com. To write the encryption keys to your key vault, the Windows VM must be able to connect to the key vault endpoint.|
+| Networking| To get a token to connect to your key vault, the Windows VM must be able to connect to a Microsoft Entra endpoint, login.microsoftonline.com. To write the encryption keys to your key vault, the Windows VM must be able to connect to the key vault endpoint.|
 | Group Policy| Azure Disk Encryption uses the BitLocker external key protector for Windows VMs. For domain-joined VMs, don't push any Group Policy Object (GPO) settings that enforce Trusted Platform Module (TPM) protectors. BitLocker policy on domain-joined VMs with custom GPO must include the following setting: Configure user storage of BitLocker recovery information -> Allow 256-bit recovery key. Azure Disk Encryption fails when custom GPO settings for BitLocker are incompatible. Azure Disk Encryption also fails if domain-level GPOs block the AES-CBC algorithm, which is used by BitLocker.|
 | Encryption key storage| Azure Disk Encryption requires a key vault to control and manage disk encryption keys and secrets. Your key vault and VMs must reside in the same Azure region and subscription.|
 
@@ -160,7 +160,7 @@ You might encounter the following message: *Extension status not available on th
 | Restriction| Solution|
 | :--- | :--- |
 | NSG| Any NSG settings that are applied must still allow the endpoint to meet the documented network configuration prerequisites for disk encryption.|
-| Azure Key Vault behind a firewall| When encryption is being enabled with Azure AD credentials, the target VM must allow connectivity to both Azure Active Directory (Azure AD) endpoints and Key Vault endpoints.|
+| Azure Key Vault behind a firewall| When encryption is being enabled with Microsoft Entra credentials, the target VM must allow connectivity to both Microsoft Entra endpoints and Key Vault endpoints.|
 | Azure Instance Metadata Service| Your VM must be able to access the Azure Instance Metadata service endpoint (`169.254.169.254`) and the virtual public IP address (`168.63.129.16`) used for communication with Azure platform resources. Proxy configurations that alter local HTTP traffic to these addresses (for example, adding an X-Forwarded-For header) are not supported.|
 
 ### Review encryption status

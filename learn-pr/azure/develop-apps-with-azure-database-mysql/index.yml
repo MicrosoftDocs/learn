@@ -9,8 +9,8 @@ metadata:
   ms.author: shaithal
   ms.reviewer: maghan
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: module-standard-task-based
+  ms.service: mysql
   ms.subservice: flexible-server
   ms.custom:
     - build-2023

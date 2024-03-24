@@ -3,11 +3,11 @@ uid: learn.intro-to-defender-cloud
 metadata:
   moduleType: introduction
   title: Introduction to Microsoft Defender for Cloud
-  description: Learn all about Microsoft Defender for Cloud and how it can protect your multicloud environment which can consist of Azure, AWS, GCP, Hybrid and on-premises servers, databases and more.
-  ms.date: 06/21/2022
+  description: Learn all about Microsoft Defender for Cloud and how it can protect your multicloud environment, which can consist of Azure, AWS, GCP, Hybrid and on-premises servers, databases and more.
+  ms.date: 10/20/2023
   author: ElazarK
   ms.author: elkrieger
-  ms.topic: interactive-tutorial
+  ms.topic: module-intro-to-product
   ms.service: defender-for-cloud
 
 title: Introduction to Microsoft Defender for Cloud

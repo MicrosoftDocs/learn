@@ -33,7 +33,7 @@ This command might take a minute to run.
 
 ## Additional resources
 
-For more information about Spring Data Java Database Connectivity (JDBC), see Spring's [reference documentation](https://docs.spring.io/spring-data/jdbc/docs/current/reference/html/#reference&WT.mc_id=java-10785-ropreddy?azure-portal=true).
+For more information about Spring Data Java Database Connectivity (JDBC), see Spring's [reference documentation](https://spring.io/learn).
 
 For more information about Application Insights for monitoring, see [Azure Application Insights](/azure/developer/java/spring-framework/configure-spring-boot-java-applicationinsights/?azure-portal=true&WT.mc_id=java-10785-ropreddy).
 

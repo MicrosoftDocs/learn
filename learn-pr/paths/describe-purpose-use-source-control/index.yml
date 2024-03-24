@@ -6,8 +6,7 @@ metadata:
   ms.date: 06/13/2023
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
-  ms.service: azure-devops
+  ms.topic: learning-path
 title: Describe the purpose and use of source control
 prerequisites: |
   A personal computer running Windows, macOS, or Linux
@@ -21,8 +20,6 @@ roles:
 products:
 - azure
 - github
-subjects:
-- development-tools
 modules:
 - learn.wwl.explain-control-system-helps-manage-files
 - learn.wwl.describe-how-git-manages-source-control

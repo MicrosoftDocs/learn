@@ -8,8 +8,7 @@ metadata:
   ms.date: 4/24/2020
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
   zone_pivot_groups: platform
 
 durationInMinutes: 15

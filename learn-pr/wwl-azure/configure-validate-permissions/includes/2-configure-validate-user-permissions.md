@@ -5,7 +5,7 @@ There are many ways to configure user permissions in Azure DevOps. You can use t
 When you decide how to add permissions, you should consider the following factors:
 
 - The number of users and groups you need to add to your project.
-- The users need temporary access to a specific resource or pipeline.
+- The users who need temporary access to a specific resource or pipeline.
 - Whether you want to add users and groups to a specific project or the entire organization.
 - Whether you want to add users and groups to a specific pipeline, resource, approval, branch check, audit, environment, etc.
 
@@ -21,17 +21,17 @@ It's recommended to follow the principle of least privilege, granting users only
 4. Select the group you want to add users.
 
     >[!NOTE]
-    > To understand the different types of groups and permissions, see [Security groups, service accounts, and permissions in Azure DevOps](https://learn.microsoft.com/azure/devops/organizations/security/permissions/).
+    > To understand the different types of groups and permissions, see [Security groups, service accounts, and permissions in Azure DevOps](/azure/devops/organizations/security/permissions/).
 
 5. Select the "Members" tab to view the list of users in the group.
 6. Click on the "+ Add" button, then select the user or group you want to add.
-7. To specify permissions to the user, you can open the new added user and make changes to the default inherited permissions.
+7. To specify permissions for the user, you can open the new added user and make changes to the default inherited permissions.
 
     ![Screenshot of Azure Pipelines showing how to add new users to the contributors group.](../media/add-project-user-contributors.png)
 
 ## Add users to specific teams
 
-You can create teams or groups based on your organizational structure if you have many users and groups. Teams is a collection of users and groups with access to a specific project. You can add users to a team and then add the team to a particular pipeline. This way, you can manage permissions for many users and groups in a single place.
+You can create teams or groups based on your organizational structure if you have many users and groups. Teams are a collection of users and groups with access to a specific project. You can add users to a team and then add the team to a particular pipeline. This way, you can manage permissions for many users and groups in a single place.
 
 1. Open the Azure DevOps project and select the Project settings.
 2. In the Project Settings menu, select the Teams option under General.
@@ -39,7 +39,7 @@ You can create teams or groups based on your organizational structure if you hav
 4. Select the team you want to add users.
 5. Select the "Members" tab to view the list of users in the team.
 6. Click on the "+ Add" button, then select the user or group you want to add.
-7. To specify permissions to the user, you can open the new added user and make changes to the default inherited permissions.
+7. To specify permissions for the user, you can open the new added user and make changes to the default inherited permissions.
 
     ![Screenshot of Azure Pipelines showing how to add new users to a team.](../media/add-project-user-teams.png)
 
@@ -57,7 +57,7 @@ Team A should be able to create and manage projects but can't delete or rename t
 
 For more information about permissions, security groups, and accounts, see:
 
-- [Security groups, service accounts, and permissions in Azure DevOps](https://learn.microsoft.com/azure/devops/organizations/security/permissions/)
-- [Add organization users and manage access](https://learn.microsoft.com/azure/devops/organizations/accounts/add-organization-users)
-- [About access levels](https://learn.microsoft.com/azure/devops/organizations/security/access-levels)
-- [Troubleshoot access and permission issues](https://learn.microsoft.com/azure/devops/organizations/security/troubleshoot-permissions)
+- [Security groups, service accounts, and permissions in Azure DevOps](/azure/devops/organizations/security/permissions/)
+- [Add organization users and manage access](/azure/devops/organizations/accounts/add-organization-users)
+- [About access levels](/azure/devops/organizations/security/access-levels)
+- [Troubleshoot access and permission issues](/azure/devops/organizations/security/troubleshoot-permissions)

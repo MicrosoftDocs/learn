@@ -4,7 +4,7 @@ Now that you've created a custom connector for the Printer Framer API, you want 
 
 If you've created and used a custom connector in a logic app workflow, by default, that connector is available to other Azure Logic Apps users in your organization. They can add the connector to workflows in logic app regions if they meet the following criteria:
 
-- They share the same Azure Active Directory (Azure AD) tenant with you.
+- They share the same Microsoft Entra tenant with you.
 - They share the same Azure subscription with you.
 
 Azure Logic Apps automatically shares custom connectors, which other users can see when they select connectors for their workflows. However, you might want to inform them about the new connector, its purpose, how to use it, and so on.

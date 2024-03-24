@@ -1,12 +1,10 @@
-
-
-Azure OpenAI Service is the latest addition to Azure Cognitive Services. It's evidence of Microsoft commitment to offer state-of-the-art AI models in a way that's accessible to business users.
+Azure OpenAI Service is the latest addition to Azure AI Services. It's evidence of Microsoft commitment to offer state-of-the-art AI models in a way that's accessible to business users.
 
 ## What is Azure OpenAI Service?
 
 OpenAI is a successful AI company that has lately developed some of the most famous generative AI models. ChatGPT and DALL-E are some of their creations. These models are available via a public API. As all generative AI, OpenAI models receive prompts or instructions from the user and send back AI-generated content.
 
-Azure OpenAI Service is a Microsoft product that enables users to leverage OpenAI models via **Azure Cognitive Services**. In other words, it allows you to access OpenAI models directly from Azure, instead of the public API. Keep in mind that Azure OpenAI Service isn't the only Microsoft product delivering  this kind of models to users. In previous units, we've already discussed generative AI included in Microsoft 365 Copilot and Copilot in Power Platform. These copilot features are powered by GPT, the OpenAI model for text generation.
+Azure OpenAI Service is a Microsoft product that enables users to leverage OpenAI models via **Azure AI Services**. In other words, it allows you to access OpenAI models directly from Azure, instead of the public API. Keep in mind that Azure OpenAI Service isn't the only Microsoft product delivering  this kind of models to users. In previous units, we've already discussed generative AI included in Microsoft 365 Copilot and Copilot in Power Platform. These copilot features are powered by GPT, the OpenAI model for text generation.
 
 ## What can you do with Azure OpenAI Service?
 
@@ -24,7 +22,7 @@ OpenAI models evolve continuously, and so does Azure OpenAI Service. You can che
 
 ## Benefits of using Azure OpenAI Service instead of connecting directly to the OpenAI API
 
-Many business leaders aren't sure about the difference between consuming OpenAI models directly from their API or via Azure OpenAI Service. There are clear reasons for organizations to prefer the Azure IoenAI Service:
+Many business leaders aren't sure about the difference between consuming OpenAI models directly from their API or via Azure OpenAI Service. There are clear reasons for organizations to prefer the Azure OpenAI Service:
 
 * **Same models**: Given a specific model and version, Azure delivers exactly the same as the API. Azure users aren't missing any updates. The AI is just as good.
 
@@ -42,7 +40,7 @@ Let's imagine how an organization could develop a virtual assistant with Azure O
 
 Customers could interact with the assistant to ask for information about their orders, purchases, or warranties. They could talk to this assistant by chat or call. Previous generations of virtual assistants required designing the conversation flows, and this approach made conversations rigid to some extent. An assistant powered by a GPT model wouldn't suffer from this obstacle. It would require no workflow design and it could engage in more flexible, natural conversations. This perk implies that the assistant would be able to solve questions and tasks without specific training, as long as it's provided the information. This approach saves time and resources from the development team.
 
-The AI team should feed the virtual assistant personal data and internal documentation to answer doubts about the refund policy, shipment status, and so on. Azure OpenAI Service allows you to do this operation safely, without risk of misusing data. Ensuring client data privacy is key, especially when the business deals with sensible information such as credit card numbers.
+The AI team should feed the virtual assistant personal data and internal documentation to answer doubts about the refund policy, shipment status, and so on. Azure OpenAI Service allows you to do this operation safely, without risk of misusing data. Ensuring client data privacy is key, especially when the business deals with sensitive information such as credit card numbers.
 
 Customers often dislike the user experience provided by chatbots because they perceive them as cold and distant. To create a friendlier, more human-like experience, the AI team could generate with DALL-E avatars for the virtual assistant or even the client's profile. This feature would reinforce the more natural conversation flow achieved by the GPT model. In general, customers would benefit from a warmer, more natural post-sales experience.
 

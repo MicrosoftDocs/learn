@@ -4,13 +4,11 @@ title: Solution
 metadata:
   title: Solution
   description: Study a solution to the challenge issued in the preceding unit.
-  ms.date: 03/29/2023
+  ms.date: 10/04/2023
   author: michaeltlombardi
   ms.author: mlombardi
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
-    - devx-track-azurepowershell
-  ms.prod: learning-azure
 durationInMinutes: 1
 azureSandbox: false
 interactive: powershell

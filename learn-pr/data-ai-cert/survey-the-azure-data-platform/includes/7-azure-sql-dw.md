@@ -26,4 +26,4 @@ As a data engineer, you can use the familiar Transact-SQL to query the contents 
 
 ## Data security
 
-Azure Synapse Analytics supports both SQL Server authentication and Azure Active Directory. For high-security environments, set up multifactor authentication. From a data perspective, Azure Synapse Analytics supports security at the level of both columns and rows.
+Azure Synapse Analytics supports both SQL Server authentication and Microsoft Entra ID. For high-security environments, set up multifactor authentication. From a data perspective, Azure Synapse Analytics supports security at the level of both columns and rows.

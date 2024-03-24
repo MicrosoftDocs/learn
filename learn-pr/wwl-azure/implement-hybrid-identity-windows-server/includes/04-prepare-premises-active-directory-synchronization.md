@@ -1,5 +1,5 @@
 
-Before IT staff at Contoso deploys Azure AD Connect, it's essential that they check the on-premises AD DS and related technologies for potential issues, and any issues that are discovered are remediated. This is especially important if they implement directory synchronization as an identity service for Microsoft 365.
+Before IT staff at Contoso deploys Microsoft Entra Connect, it's essential that they check the on-premises AD DS and related technologies for potential issues, and any issues that are discovered are remediated. This is especially important if they implement directory synchronization as an identity service for Microsoft 365.
 
 ## Pre-deployment checks
 
@@ -8,10 +8,10 @@ Pre-deployment checks should include:
 - Analyzing the on-premises environment for invalid characters in AD DS object attributes, and for incorrect user principal names (UPNs).
 - Performing domain email discovery and user counts.
 - Identifying domain-functional levels and schema extensions, and identifying custom attributes in use.
-- Identifying proxy servers used for Microsoft Exchange or Skype for Business, if you deploy Azure AD Connect as a part of a Microsoft 365 deployment.
-- Identifying Microsoft SharePoint domains, if you deploy Azure AD Connect as part of a Microsoft 365 deployment.
+- Identifying proxy servers used for Microsoft Exchange or Skype for Business, if you deploy Microsoft Entra Connect as a part of a Microsoft 365 deployment.
+- Identifying Microsoft SharePoint domains, if you deploy Microsoft Entra Connect as part of a Microsoft 365 deployment.
 - Evaluating client for SSO readiness.
-- Recording network port use, and DNS records related to Office 365 (if you deploy Azure AD Connect as part of a Office 365 deployment).
+- Recording network port use, and DNS records related to Office 365 (if you deploy Microsoft Entra Connect as part of a Office 365 deployment).
 
 After you complete these checks, key remediation tasks include:
 - Removing duplicate `proxyAddress` and `userPrincipalName` attributes.
@@ -41,4 +41,4 @@ For errors such as format issues, you can make changes to specific attributes ob
 ### Additional reading
 To learn more, review the following document.
 
-- [Prerequisites for Azure AD Connect](https://aka.ms/connect-install-prerequisites?azure-portal=true).
+- [Prerequisites for Microsoft Entra Connect](https://aka.ms/connect-install-prerequisites?azure-portal=true).

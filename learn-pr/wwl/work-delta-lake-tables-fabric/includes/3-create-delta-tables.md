@@ -1,7 +1,3 @@
----
-ms.custom:
-  - build-2023
----
 When you create a table in a Microsoft Fabric lakehouse, a delta table is defined in the metastore for the lakehouse and the data for the table is stored in the underlying Parquet files for the table.
 
 With most interactive tools in the Microsoft Fabric environment, the details of mapping the table definition in the metastore to the underlying files are abstracted. However, when working with Apache Spark in a lakehouse, you have greater control of the creation and management of delta tables.
@@ -102,7 +98,7 @@ df.write.format("delta").save(delta_path)
 
 After saving the delta file, the path location you specified includes Parquet files containing the data and a **_delta_log** folder containing the transaction logs for the data. Any modifications made to the data through the delta lake API or in an external table that is subsequently created on the folder will be recorded in the transaction logs.
 
-You can replace the contents of an existing folder the data in a dataframe by using the **overwrite** mode, as shown here:
+You can replace the contents of an existing folder with the data in a dataframe by using the **overwrite** mode, as shown here:
 
 ```python
 new_df.write.format("delta").mode("overwrite").save(delta_path)

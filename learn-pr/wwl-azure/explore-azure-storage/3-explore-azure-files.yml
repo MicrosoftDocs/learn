@@ -4,11 +4,10 @@ title: Explore Azure Files
 metadata:
   title: Explore Azure Files
   description: "Explore Azure Files"
-  ms.date: 06/02/2023
+  ms.date: 10/17/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.service: sap-on-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/3-explore-azure-files.md)]

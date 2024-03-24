@@ -6,8 +6,7 @@ metadata:
   ms.date: 04/22/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Exercise - Set an alert in your Log Analytics workspace and view alerts
 durationInMinutes: 10
 content: |

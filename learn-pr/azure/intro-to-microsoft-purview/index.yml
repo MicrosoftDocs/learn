@@ -4,10 +4,10 @@ metadata:
   moduleType: introduction        
   title: Introduction to Microsoft Purview          
   description: "Introduction to Microsoft Purview"
-  ms.date: 01/19/2023 
+  ms.date: 09/30/2023 
   author: whhender 
   ms.author: whhender
-  ms.topic: interactive-tutorial 
+  ms.topic: module-intro-to-product
   ms.service: purview
 
 title: Introduction to Microsoft Purview

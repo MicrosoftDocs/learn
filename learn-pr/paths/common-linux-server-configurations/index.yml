@@ -9,8 +9,7 @@ metadata:
   ms.date: 06/07/2023
   author: ChaseCrum
   ms.author: chasecrum
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Common Linux server configurations
 
 summary: |
@@ -33,7 +32,6 @@ roles:
 - solution-architect
 products:
 - azure
-- azure-linux-vm
 - azure-virtual-machines
 subjects:
 - cloud-computing

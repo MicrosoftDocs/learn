@@ -5,10 +5,9 @@ metadata:
   ms.date: 6/1/2020
   author: PeterTurcan
   ms.author: cahowd
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-js
-  ms.prod: learning-azure
 title: Learn about Azure Map route finding
 durationInMinutes: 5
 content: |

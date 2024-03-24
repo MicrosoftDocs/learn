@@ -10,7 +10,7 @@ metadata:
 title: Introduction to Linux on Azure
 summary: This module helps you understand the types of services and platforms Azure provides for Linux environments. Perhaps you're exploring the migration of Linux-based workloads to the cloud or you're looking at rearchitecting Linux-based applications to increase agility and reduce time to market. After reviewing this material, you should be able to choose which types of services you'll need to start planning your Linux environment.
 abstract: |
-  By the end of this module, you'll be able to 
+  By the end of this module, you'll be able to: 
   - Identify the Azure infrastructure as a service (IaaS) and platform as a service (PaaS) resources and services available for Linux deployments.  
   - Determine which virtual machine images will be most suitable for your IaaS deployment.
   - Identify Microsoft-supported Linux distributions.

@@ -5,12 +5,11 @@ metadata:
   title: Exercise - Explore data with NumPy and Pandas
   description: "Exercise - Explore data with NumPy and Pandas"
   ms.date: 12/22/2022
-  author: TomReidNZ
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
+  author: s-polly
+  ms.author: scottpolly
+  ms.topic: unit
   ms.custom:
     - devx-track-python
-  ms.prod: learning-azure
 durationInMinutes: 12
 sandbox: true
 notebook: notebooks/01-numpy-and-pandas.ipynb

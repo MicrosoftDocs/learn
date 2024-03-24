@@ -1,4 +1,3 @@
-
 If you've got many agents intended for different teams or purposes, you might want to create more pools, as explained below.
 
 ## Create agent pools

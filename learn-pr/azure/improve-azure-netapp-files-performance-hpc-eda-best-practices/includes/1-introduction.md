@@ -4,14 +4,14 @@ Suppose you work for a semiconductor company. You're tasked with designing the c
 
 Management wants this project to be completed in a timely and cost-effective way. You choose Azure NetApp Files as the back-end storage solution because it provides an on-premises-like performance in an easy-to-deploy volumes as a service model. You need to know the performance tips and best practices to optimize Azure NetApp Files performance for your EDA applications.
 
-In this module, we'll introduce performance suggestions for reference architecture, client virtual machines (VMs), and network. We'll then discuss performance tips, including mount options and client VM configurations. Finally, we'll examine the benchmark results to verify the performance tips that we discussed.
+In this module, we introduce performance suggestions for reference architecture, client virtual machines (VMs), and network. Then, we discuss performance tips, including mount options and client VM configurations. Finally, we examine the benchmark results to verify the performance tips that we discussed.
 
 ## Learning objectives
 
-By the end of this module, you'll be able to:
+By the end of this module, you're able to:
 
 - List the best practices that improve Azure NetApp Files performance.
-- Describe the performance impact of the best practices on FIO and EDA benchmark suites.
+- Describe the effect of these Azure NetApp Files performance best practices on FIO and EDA benchmark suites.
 
 ## Prerequisites
 

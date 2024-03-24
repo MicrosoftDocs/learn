@@ -2,13 +2,12 @@
 uid: learn.github.introduction-to-github-copilot.summary
 title: Summary
 metadata:
-  title: summary
+  title: Summary
   description: Review what you've learned.
-  ms.date: 5/2/2023
+  ms.date: 12/5/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: github
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]

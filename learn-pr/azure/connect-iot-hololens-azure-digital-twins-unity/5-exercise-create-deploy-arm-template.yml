@@ -7,11 +7,10 @@ metadata:
   ms.date: 05/12/2021
   author: JBrentJ
   ms.author: jejacks
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-arm-template
     - devx-track-azurecli
-  ms.prod: learning-azure
 durationInMinutes: 20
 content: |
   [!include[](includes/5-exercise-create-deploy-arm-template.md)]

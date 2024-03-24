@@ -4,11 +4,12 @@ title: Exercise - Return values and input parameters of methods
 metadata:
   title: Exercise - Return values and input parameters of methods
   description: "Exercise - Return values and input parameters of methods"
-  ms.date: 05/05/2023
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 18
 content: |
   [!include[](includes/4-return-values-input-parameters.md)]
@@ -44,7 +45,7 @@ quiz:
       explanation: "Incorrect. Returning a value does not make a method an overloaded method."
     - content: "A method with more than five parameters."
       isCorrect: false
-      explanation: "Incorrect. An overloaded method may include more than five parameters."
+      explanation: "Incorrect. An overloaded method might include more than five parameters."
     - content: "It is a method that supports several implementations of the method, each with a unique method signature."
       isCorrect: true
       explanation: "Correct! This is the correct definition of an overloaded method."

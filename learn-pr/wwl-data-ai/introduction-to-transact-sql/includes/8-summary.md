@@ -10,3 +10,6 @@ In this module, you learned how to:
 Here is a **[video tutorial](/shows/programming-databases-with-t-sql-for-beginners/introduction-to-transact-sql-2-of-7-programming-databases-with-t-sql-for-beginners)** accompanying this training module to enhance your learning experience.
 
 For more detailed information about Transact-SQL syntax, refer to the [Transact-SQL reference documentation](/sql/t-sql/language-reference).
+
+> [!NOTE]
+> If you're ready to get started with Azure SQL Database, [try Azure SQL Database free of charge](/azure/azure-sql/database/free-offer) for the life of your subscription.

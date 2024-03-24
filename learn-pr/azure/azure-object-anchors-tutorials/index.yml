@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/29/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-object-anchors
 title: Use Azure Object Anchors to detect an object in the physical world
 summary: This course explores the fundamentals of Azure Object Anchors and how it can be used to detect an object in physical world. 

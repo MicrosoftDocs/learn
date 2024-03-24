@@ -32,9 +32,11 @@ To configure, run and view your best practices assessment, go to your Arc-enable
 
 You can also change the default schedule for the assessment, which gives the option to schedule it in a more preferable timeframe.
 
-### Azure Active Directory authentication
+<a name='azure-active-directory-authentication'></a>
 
-SQL Server 2022 introduces a new feature that allows you to use Azure Active Directory for authentication. Use this feature to create a secure connection with Azure Arc-enabled SQL Server for authentication purposes.
+### Microsoft Entra authentication
+
+SQL Server 2022 introduces a new feature that allows you to use Microsoft Entra ID for authentication. Use this feature to create a secure connection with Azure Arc-enabled SQL Server for authentication purposes.
 
 ### Secure Azure Arc-enabled SQL Server with Microsoft Defender for Cloud
 

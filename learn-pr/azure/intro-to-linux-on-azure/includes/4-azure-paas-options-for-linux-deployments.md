@@ -4,7 +4,7 @@ IaaS is like having a box of parts. You can build anything, but you must assembl
 
 Azure managed platforms allow you to take advantage of the benefits of PaaS while retaining the Linux-based technology foundation you're already familiar with. Some of the popular managed platforms for Linux include:
 
-- **Azure App Service** is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite language, be it .NET, .NET Core, Java, Ruby, Node.js, PHP, or Python. Applications run and scale with ease on both Windows and Linux-based environments. App Service automatically patches and maintains the OS and language frameworks for you, giving you more time to write apps.
+- **Azure App Service** is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite language, such as .NET, .NET Core, Java, Ruby, Node.js, PHP, or Python. Applications run and scale with ease on both Windows and Linux-based environments. App Service automatically patches and maintains the OS and language frameworks for you, giving you more time to write apps.
 
 - **Azure Functions** allows you to implement your system's logic into readily available blocks of code called functions. Functions can run anytime you need to respond to critical events. Azure Functions automatically provides as many or as few compute resources as needed to meet the demands of workloads that use them.
 

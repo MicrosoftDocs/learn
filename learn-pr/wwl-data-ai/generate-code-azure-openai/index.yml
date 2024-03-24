@@ -7,8 +7,7 @@ metadata:
   author: ivorb
   ms.author: berryivor
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
-  ms.service: azure
-  ms.subservice: openai
+  ms.service: azure-ai-openai
 title: Generate code with Azure OpenAI Service
 summary: This module shows engineers how to use the Azure OpenAI Service to generate and improve code.
 abstract: |
@@ -34,7 +33,6 @@ products:
   - azure
 subjects: 
   - cloud-computing
-  - data-ai
 units:
 - learn.wwl.generate-code-azure-openai.introduction
 - learn.wwl.generate-code-azure-openai.construct-code-natural-language

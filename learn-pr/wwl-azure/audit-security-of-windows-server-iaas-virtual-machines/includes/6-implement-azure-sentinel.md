@@ -32,8 +32,8 @@ Sentinel can connect natively to Security Center, providing coverage for your cl
 
 - Native service-to-service connections. Sentinel integrates natively to these Azure and non-Azure services:
   - Azure activity logs
-  - Azure AD audit logs
-  - Azure AD Identity Protection
+  - Microsoft Entra audit logs
+  - Microsoft Entra ID Protection
   - Azure Advanced Threat Protection (Azure ATP)
   - AWS CloudTrail
   - Microsoft Cloud App Security

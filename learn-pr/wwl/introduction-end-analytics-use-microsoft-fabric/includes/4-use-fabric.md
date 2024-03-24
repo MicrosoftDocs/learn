@@ -1,5 +1,3 @@
-
-
 Before you can explore the end-to-end capabilities of Microsoft Fabric, it must be enabled for your organization. You may need to work with your IT department to enable Fabric for your organization. The permissions required to enable Fabric are either:
 
 - *Fabric admin*
@@ -24,7 +22,7 @@ If you'd like to check to see if you have access to Fabric in your organization'
 
 If you have admin privileges, you can access the **Admin center** from the **Settings** menu in the upper right corner of the Power BI service. From here, you enable Fabric in the **Tenant settings.**
 
-Admins can make Fabric available to either the entire organization or specific groups of users, who can be organized based on their Microsoft 365 or Azure Active Directory security groups. Admins can also *delegate* the ability to enable Fabric to other users, at the capacity level.
+Admins can make Fabric available to either the entire organization or specific groups of users, who can be organized based on their Microsoft 365 or Microsoft Entra security groups. Admins can also *delegate* the ability to enable Fabric to other users, at the capacity level.
 
 ![Screenshot of the Enable Fabric settings in the Fabric admin portal, with the option toggled to enabled for specific security groups.](../media/enable-fabric.png)
 

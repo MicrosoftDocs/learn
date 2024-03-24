@@ -5,11 +5,10 @@ durationInMinutes: 7
 metadata:
   title: Use data binding in Xamarin.Forms
   description: "Use data binding in Xamarin.Forms"
-  ms.date: 05/01/2019
+  ms.date: 02/20/2024
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-xamarin
+  ms.topic: unit
   
 content: |
   [!include[](includes/2-use-databinding-in-xamarin-forms.md)]

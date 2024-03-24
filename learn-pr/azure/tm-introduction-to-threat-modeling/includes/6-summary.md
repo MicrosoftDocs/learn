@@ -9,12 +9,12 @@ In this module, you:
 
 ## What's next
 
-In the next few modules of this learning path, we'll visit each concept introduced throughout the four phases and discuss them in detail:
+In the next few modules of this learning path, learn about each concept introduced in the four phases in detail:
 
 |Module|Title|Description|
 |------|-----|-----------|
 |2|Create a threat model using data-flow diagram elements|Learn about each element in a data-flow diagram, including when to use them and what context to include|
-|3|Provide context with the right depth layer|Learn the differences between each context-depth layer and when to use them before creating your data-flow diagram|
+|3|Provide context with the right depth layer|Learn the differences between each context-depth layer and when to use them before you create a data-flow diagram|
 |4|Approach your data-flow diagram with the right threat model focus|Learn about the different ways to focus your threat-modeling activities|
 |5|Use a framework to identify threats and find ways to reduce or eliminate risk|Deep-dive into STRIDE and learn more about what's at risk and how to protect your system|
 |6|Prioritize your issues and apply security controls|Learn to prioritize threats and understand the different types and functions of security controls for your system|

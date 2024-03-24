@@ -6,7 +6,7 @@ metadata:
   ms.date: 11/10/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Use advanced Windows PowerShell remoting techniques
 summary: This module covers some useful advanced techniques that will help overcome the limitations of basic Windows PowerShell remoting.
 abstract: |
@@ -31,14 +31,13 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-cloud-services
 - azure-powershell
 - azure-virtual-machines
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

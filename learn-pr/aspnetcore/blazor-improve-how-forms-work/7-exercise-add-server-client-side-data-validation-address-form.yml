@@ -9,8 +9,7 @@ metadata:
   author: csharpfritz
   ms.author: jefritz
   ms.manager: markl
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/7-exercise-add-server-client-side-data-validation-address-form.md)]

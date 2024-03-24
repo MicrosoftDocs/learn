@@ -6,8 +6,7 @@ metadata:
   ms.date: 05/09/2023
   author: ankitaduttaMSFT
   ms.author: ankitadutta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: What is Azure Site Recovery
 durationInMinutes: 4
 content: |

@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/02/2023
+  ms.date: 10/17/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.service: sap-on-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/20-knowledge-check.md)]
@@ -91,4 +90,4 @@ quiz:
       explanation: "Incorrect. Azure E-series VMs can't take advantage of Azure Write Accelerator."
     - content: "M-series VMs only"
       isCorrect: true
-      explanation: "Correct. Azure Write Accelerator is a functionality that is available for Azure M-Series VMs exclusively."
+      explanation: "Correct. Azure Write Accelerator is a functionality that's available for Azure M-Series VMs exclusively."

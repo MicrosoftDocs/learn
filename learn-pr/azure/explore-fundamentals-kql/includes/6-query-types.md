@@ -1,4 +1,4 @@
-You've learned about the structure of a KQL query. In this unit, you'll dive deeper into the different parts and types of KQL queries.
+You learned about the structure of a KQL query in the previous unit. Now, let's dive deeper into the different parts and types of KQL queries.
 
 This unit provides an overview of query statements and functions. In KQL, all queries consist of one or more query statements. These statements only affect the specific query in which they're used, unless explicitly stored for future use. The most common types of query statements are [tabular expression statements](#tabular-expression-statements) and [let statements](#let-statements). In addition to its extensive library of [built-in functions](#built-in-functions), KQL allows for [user-defined functions](#user-defined-functions) that can be either stored or defined for use in a single query.
 
@@ -6,7 +6,7 @@ This unit provides an overview of query statements and functions. In KQL, all qu
 
 Most queries use at least one *tabular expression statement*, which means both its input and output consist of tables or tabular datasets. These statements usually contain operators, each of which starts with a tabular input and returns a tabular output.
 
-There is a wide range of operators provided by KQL, ranging from simple operators (such as `count`, `sort`, and `where`) to more complex (such as `parse`, `join`, and `render`) ones. 
+There's a wide range of operators provided by KQL, ranging from simple operators (such as `count`, `sort`, and `where`) to more complex ones (such as `parse`, `join`, and `render`).
 
 For example, the following query contains four tabular expression statements:
 
@@ -19,9 +19,9 @@ StormEvents // tabular expression statement 1
 
 ## Let statements
 
-A *let statement* defines a binding between a name and an expression. Let statements can be used to break a long query into small named parts that are easier to understand.
+A `let` statement defines a binding between a name and an expression. Let statements can be used to break a long query into small named parts that are easier to understand.
 
-For example, the following query uses a let statement to define scalar values:
+For example, the `let` statements in the following query are used to define scalar values:
 
 ```kusto
 let n = 10;  // number
@@ -56,7 +56,7 @@ User-defined functions are, as their name suggests, defined by the user. User-de
      MyFunction2(myLimit: long)  {StormEvents | take myLimit}
     ```
 
-    In other environment, such as Azure Monitor and Microsoft Sentinel, queries can be saved through the UI.
+    In other environments, such as Azure Monitor and Microsoft Sentinel, queries can be saved through the UI.
 
 * **Query-defined functions**: User-defined functions that are defined and used within the scope of a single query. The definition of such functions is done through a let statement.
 

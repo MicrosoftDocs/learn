@@ -2,7 +2,7 @@ Parameters and variables are essential components for customizing pipeline behav
 
 ## Parameter and variable types
 
-Parameters and variables are critical to pipeline customization, as they allow for flexibility and enable pipeline scripts to be more dynamic. You can use it to store values such as connection strings, environment variables, and other sensitive data. Properly defining their data types is also essential to avoid unexpected errors or vulnerabilities arising from incorrect usage.
+Parameters and variables are critical to pipeline customization, as they allow for flexibility and enable pipeline scripts to be more dynamic. You can use them to store values such as connection strings, environment variables, and other sensitive data. Properly defining their data types is also essential to avoid unexpected errors or vulnerabilities arising from incorrect usage.
 
 ## Add a parameter or variable to your pipeline
 
@@ -92,9 +92,9 @@ Also, try to create a YAML pipeline that includes a parameter with an incorrect 
 
 For more information about variables and parameters, see:
 
-- [Securing Azure Pipelines.](https://learn.microsoft.com/azure/devops/pipelines/security/overview/)
-- [How to securely use variables and parameters in your pipeline.](https://learn.microsoft.com/azure/devops/pipelines/security/inputs/)
-- [Recommendations to secure shared infrastructure in Azure Pipelines.](https://learn.microsoft.com/azure/devops/pipelines/security/infrastructure/)
-- [Runtime parameters.](https://learn.microsoft.com/azure/devops/pipelines/process/runtime-parameters/)
-- [Use a variable group's secret and nonsecret variables in an Azure Pipeline.](https://learn.microsoft.com/azure/devops/pipelines/scripts/cli/pipeline-variable-group-secret-nonsecret-variables)
-- [Define variables.](https://learn.microsoft.com/azure/devops/pipelines/process/variables/)
+- [Securing Azure Pipelines.](/azure/devops/pipelines/security/overview/)
+- [How to securely use variables and parameters in your pipeline.](/azure/devops/pipelines/security/inputs/)
+- [Recommendations to secure shared infrastructure in Azure Pipelines.](/azure/devops/pipelines/security/infrastructure/)
+- [Runtime parameters.](/azure/devops/pipelines/process/runtime-parameters/)
+- [Use a variable group's secret and nonsecret variables in an Azure Pipeline.](/azure/devops/pipelines/scripts/cli/pipeline-variable-group-secret-nonsecret-variables)
+- [Define variables.](/azure/devops/pipelines/process/variables/)

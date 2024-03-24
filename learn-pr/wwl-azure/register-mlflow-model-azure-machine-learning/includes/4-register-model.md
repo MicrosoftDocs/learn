@@ -1,5 +1,3 @@
-
-
 In Azure Machine Learning, models are trained in jobs. When you want to find the model's artifacts, you can find it in the job's outputs. To more easily manage your models, you can also store a model in the Azure Machine Learning **model registry**.
 
 The model registry makes it easy to organize and keep track of your trained models. When you register a model, you store and version your model in the workspace.

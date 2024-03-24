@@ -3,11 +3,10 @@ uid: learn-xamarin.explore-cross-platform-design-patterns.3-use-an-interface-to-
 metadata:
   title: Use an interface to create an abstraction
   description: "Learn how to use an interface to create an abstraction."
-  ms.date: 05/01/2019
+  ms.date: 02/20/2024
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-xamarin
+  ms.topic: unit
   
 title: Use an interface to create an abstraction
 durationInMinutes: 3

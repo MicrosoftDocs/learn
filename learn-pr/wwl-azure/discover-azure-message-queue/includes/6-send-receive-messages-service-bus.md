@@ -2,6 +2,7 @@
 
 
 
+
 In this exercise you learn how to:
 
 * Create a Service Bus namespace, and queue, using the Azure CLI.

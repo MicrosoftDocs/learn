@@ -1,4 +1,4 @@
-In this unit, we create an Azure Function app that's invoked every 20 seconds using a timer trigger.
+In this unit, we'll create an Azure Function app that's invoked every 20 seconds using a timer trigger.
 
 ## Create an Azure Function App
 
@@ -20,7 +20,7 @@ Let’s start by creating an Azure Function App in the portal.
     |---|---|
     | **Project Details** |
     | Subscription | Select the **Concierge Subscription** for this exercise  |
-    | Resource Group | Select '<rgn>[Sandbox resource group name]</rgn>' resource group from the dropdown list. |
+    | Resource Group | Select the **<rgn>[Sandbox resource group name]</rgn>** resource group from the dropdown list. |
     | **Instance Details** |
     | Function App name | *\<your-webapp-name\>*. Enter a globally unique name for your function app. |
     | Publish | Code |
@@ -39,7 +39,7 @@ Let’s start by creating an Azure Function App in the portal.
     | **Storage** |
     | Storage account |  Defaults to (New) and a unique storage account name. You can change the name if you like. |
 
-1. Select **Review + create** to validate your input, and then select **Create**. Deployment progress displays the items that are created. It may take a minute or two for deployment to complete.
+1. Select **Review + create** to validate your input, and then select **Create**. The deployment progress displays the items that are created. It might take a minute or two for deployment to complete.
 
 1. When deployment is complete, select **Go to resource**. The **Overview** pane for your *Function App* appears.
 
@@ -47,9 +47,9 @@ Let’s start by creating an Azure Function App in the portal.
 
 Let's create a timer trigger in your function.
 
-1. In the **Function App** menu, under **Functions**, select **Functions**. The **Functions** pane for your *Function App* appears.
+1. In the **Function App** menu, select the **Functions** tab in the center of the screen. 
 
-1. On the command bar, select **Create**. It may take a few moments for your permissions to propagate to use this service. The **Create function** pane appears.
+1. Select the **Create in Azure portal** button. It may take a few moments for your permissions to propagate to use this service. The **Create function** pane appears.
 
 1. Under **Select a template**, select **Timer trigger**.
 
@@ -76,6 +76,6 @@ Now that we've configured the timer, it will invoke the function on the interval
 
 1. Observe that a new message arrives every 20 seconds in the log pane.
 
-1. To stop the function, select **Stop** in the command bar of the *Logs* pane.
+1. To stop the function, select **Stop** in the **Logs** pane command bar.
 
-1. To disable the function, in the **TimerTrigger1** menu, select **Overview**, and then in the command bar, select **Disable**.
+1. To disable the function, in the **TimerTrigger1** menu, select **Overview**, then select **Disable** in the command bar.

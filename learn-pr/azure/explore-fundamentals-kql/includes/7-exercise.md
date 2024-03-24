@@ -1,4 +1,4 @@
-You've learned about the structure and use of different types of query statements. Now, let's use that knowledge to write some queries.
+Now, let's take what you learned about the structure and use of different types of query statements and write some queries.
 
 ## Query with tabular expression statements
 
@@ -26,7 +26,7 @@ The following steps demonstrate how to build a query by applying operators to a 
 
     **Output:** The complete tabular dataset from the `StormEvents` table.
 
-1. Apply a filter using the `where` operator to select specific events, such as "Flood" events. The `where` operator filters the tabular dataset and preserves the tabular structure.
+1. Apply a filter using the `where` operator to select specific events, such as *Flood* events. The `where` operator filters the tabular dataset and preserves the tabular structure.
 
     > [!div class="nextstepaction"]
     > <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVCC5JLElVsLVVUHLz8Q/ydHFUAgCymHm6JgAAAA==" target="_blank">Run the query</a>
@@ -36,7 +36,7 @@ The following steps demonstrate how to build a query by applying operators to a 
     | where State == "FLORIDA"
     ```
 
-    **Output**: A tabular dataset of `StormEvents` records in the state of "FLORIDA".
+    **Output**: A tabular dataset of `StormEvents` records in the state of *FLORIDA*.
 
 1. Use another operator to further manipulate the tabular output.
 
@@ -49,11 +49,11 @@ The following steps demonstrate how to build a query by applying operators to a 
     | sort by InjuriesDirect desc
     ```
 
-    **Output:** A tabular dataset of `StormEvents` records in "FLORIDA" sorted in descending order based on the `InjuriesDirect` column.
+    **Output:** A tabular dataset of `StormEvents` records in *FLORIDA* sorted in descending order based on the `InjuriesDirect` column.
 
 ### [Azure Monitor/Microsoft Sentinel](#tab/azure-monitor)
 
-Microsoft Sentinel and Log Analytics in Azure Monitor both use the demo environment that is accessed through the **Logs** blade in the Azure portal.
+Microsoft Sentinel and Log Analytics in Azure Monitor both use the demo environment that is accessed by searching for and selecting **Logs** in the Azure portal.
 
 > [!div class="nextstepaction"]
 > <a href="https://portal.azure.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade" target="_blank">Log Analytics demo environment</a>
@@ -72,7 +72,7 @@ The following steps demonstrate how to build a query by applying operators to a 
 
     **Output:** The complete tabular dataset from the `LAQueryLogs` table.
 
-1. Apply a filter using the `where` operator to select specific events, such as "Flood" events. The `where` operator filters the tabular dataset and preserves the tabular structure.
+1. Apply a filter using the `where` operator to select specific events. The `where` operator filters the tabular dataset and preserves the tabular structure.
 
     > [!div class="nextstepaction"]
     > <a href="https://ms.portal.azure.com#@72f988bf-86f1-41af-91ab-2d7cd011db47/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA%252FNxDCxNLar0yU8v5qpRKM9ILUpVCEotLsjPK051zk9JVVC0VTAyMAAA0cFyMicAAAA%253D/timespan/P1D" target="_blank">Run the query</a>
@@ -82,7 +82,7 @@ The following steps demonstrate how to build a query by applying operators to a 
     | where ResponseCode != 200
     ```
 
-    **Output**: A tabular dataset of `LAQueryLogs` records whose response code isn't `200`.
+    **Output**: A tabular dataset of `LAQueryLogs` records whose response code isn't *200*.
 
 1. Use another operator to further manipulate the tabular output.
 
@@ -95,11 +95,11 @@ The following steps demonstrate how to build a query by applying operators to a 
     | sort by ResponseDurationMs desc
     ```
 
-    **Output:** A tabular dataset of `LAQueryLogs` records whose response code isn't `200` sorted in descending order based on the `ResponseDurationMs`.
+    **Output:** A tabular dataset of `LAQueryLogs` records whose response code isn't *200* sorted in descending order based on the `ResponseDurationMs`.
 
 ### [Azure Resource Graph](#tab/azure-resource-grid)
 
-The Azure Resource Graph Explorer is accessed through the **Resource Graph Explorer** blade in the Azure portal.
+The Azure Resource Graph Explorer is accessed by searching for and selecting **Resource Graph Explorer** in the Azure portal.
 
 > [!div class="nextstepaction"]
 > <a href="https://portal.azure.com/#view/HubsExtension/ArgQueryBlade/query/" target="_blank">Azure Resource Graph Explorer</a>
@@ -114,14 +114,14 @@ The following steps demonstrate how to build a query by applying operators to a 
 
     **Output:** The complete tabular dataset from the `resources` table.
 
-1. Apply a filter using the `where` operator to select specific events, such as "Flood" events. The `where` operator filters the tabular dataset and preserves the tabular structure.
+1. Apply a filter using the `where` operator to select specific events. The `where` operator filters the tabular dataset and preserves the tabular structure.
 
     ```kusto
     resources
     | where location == "eastus"
     ```
 
-    **Output**: A tabular dataset of `resources` in the "eastus" region.
+    **Output**: A tabular dataset of `resources` in the *eastus* region.
 
 1. Use another operator to further manipulate the tabular output.
 
@@ -131,7 +131,7 @@ The following steps demonstrate how to build a query by applying operators to a 
     | distinct subscriptionId
     ```
 
-    **Output:**  A tabular dataset of subscription IDs with `resources` in the "eastus" region.
+    **Output:**  A tabular dataset of subscription IDs with `resources` in the *eastus* region.
 
 ---
 

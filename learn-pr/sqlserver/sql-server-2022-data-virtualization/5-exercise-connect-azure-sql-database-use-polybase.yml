@@ -7,10 +7,9 @@ metadata:
   ms.date: 05/23/2023
   author: HugoMSFT
   ms.author: hudequei
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - build-2023
-  ms.prod: learning-sqlserver
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-connect-azure-sql-database-use-polybase.md)]

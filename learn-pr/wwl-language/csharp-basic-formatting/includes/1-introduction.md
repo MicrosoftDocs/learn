@@ -1,6 +1,5 @@
 
 
-
 As a software developer, you'll need to write C# code to combine and format literal and variable data to create a new value. That value might be displayed, saved to file, or sent across the network. Fortunately, C# provides many ways to combine and format data.
 
 Suppose you want to display the output of a command-line application you're writing. You want to display values including literal text, text in variables, numeric data, and textual data in other languages. How would you format it correctly so that the user can understand what your application is communicating to them?

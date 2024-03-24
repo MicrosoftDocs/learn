@@ -27,7 +27,7 @@ The process of preparing the destination computer isn't unlike deploying a new c
 
 ### In-place upgrades
 
-Modern desktop deployment with Windows Autopilot helps you easily deploy the latest version of Windows to your existing devices. You can adapt this method for an existing legacy device (such as Windows 7/8.1) to both transform a traditional domain joined endpoint into an Azure AD managed device and perform a rebuild, all within the same piece of automation. Alternatively, you must build devices from fresh using Autopilot from a vanilla Windows 11 PC.
+Modern desktop deployment with Windows Autopilot helps you easily deploy the latest version of Windows to your existing devices. You can adapt this method for an existing legacy device (such as Windows 7/8.1) to both transform a traditional domain joined endpoint into a Microsoft Entra ID managed device and perform a rebuild, all within the same piece of automation. Alternatively, you must build devices from fresh using Autopilot from a vanilla Windows 11 PC.
 
 :::image type="content" source="../media/autopilot-for-existing-devices-task-sequence-editor-21352361.png" alt-text="Screenshot of Task Sequence Editor showing Autopilot for existing devices options.":::
 

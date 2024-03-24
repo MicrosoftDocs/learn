@@ -26,14 +26,14 @@ To configure permissions for Microsoft-hosted agent pools:
 
 1. In Azure DevOps, navigate to the Organization settings.
 2. Under Pipelines, select Agent pools.
-3. Select on the agent pool for which you want to configure permissions.
-4. Select on the Security tab.
+3. Select the agent pool for which you want to configure permissions.
+4. Select the Security tab.
 5. Here, you can add users or groups and assign them specific roles like "Administrator," "User," or "Reader." Make sure to grant the least privilege necessary for each team member to perform their tasks.
 6. You can also configure permissions for specific pipelines by clicking on the Pipelines tab and selecting the pipeline for which you want to configure permissions.
 
 ## Using Azure Pipelines agent pool in your pipelines
 
-To use a specific agent pool in your Azure Pipelines, you need to specify the name of the image, using the YAML VM Image Label from [this](https://learn.microsoft.com/azure/devops/pipelines/agents/hosted) table. For example, consider the following YAML file:
+To use a specific agent pool in your Azure Pipelines, you need to specify the name of the image, using the YAML VM Image Label from [this](/azure/devops/pipelines/agents/hosted) table. For example, consider the following YAML file:
 
 ```YAML
 trigger:
@@ -63,6 +63,6 @@ To practice configuring permissions for Microsoft-hosted agent pools and pipelin
 
 For more information about Microsoft-hosted agents and pools, see:
 
-- [Azure Pipelines agents.](https://learn.microsoft.com/azure/devops/pipelines/agents/agents/)
-- [Microsoft-hosted agents.](https://learn.microsoft.com/azure/devops/pipelines/agents/hosted/)
-- [Create and manage agent pools.](https://learn.microsoft.com/azure/devops/pipelines/agents/pools-queues/)
+- [Azure Pipelines agents.](/azure/devops/pipelines/agents/agents/)
+- [Microsoft-hosted agents.](/azure/devops/pipelines/agents/hosted/)
+- [Create and manage agent pools.](/azure/devops/pipelines/agents/pools-queues/)

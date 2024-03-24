@@ -1,4 +1,4 @@
-In this exercise you're going to add Swagger and Swagger UI to an ASP.NET Core web API application. The Swagger tooling will assist in creating the OpenAPI document describing your web API.
+In this exercise, you're going to add Swagger and Swagger UI to an ASP.NET Core web API application. The Swagger tooling assists you in creating the OpenAPI document that describes your web API.
 
 > [!NOTE]
 > Download the source code to your local computer to complete this exercise. After downloading the file, you will need to unzip it.
@@ -23,7 +23,7 @@ In this exercise you're going to add Swagger and Swagger UI to an ASP.NET Core w
 
     :::image type="content" source="../media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-03.png" alt-text="NuGet Package Manager.":::
 
-   The NuGet package has now been installed. Then close the **NuGet Package Manager** tab.
+   The NuGet package has now been installed. Close the **NuGet Package Manager** tab.
 
 
 ## Configure Swashbuckle to generate an OpenAPI document ##
@@ -68,14 +68,14 @@ In this exercise you're going to add Swagger and Swagger UI to an ASP.NET Core w
         /* === SwaggerUI END === */
     ```
 
-   You've just completed activating the OpenAPI document feature to your ASP.NET Core Web API app. Save the `Startup.cs` file. Your changes might look like the following screenshot.
+   You've now completed activating the OpenAPI document feature to your ASP.NET Core Web API app. Save the `Startup.cs` file. Your changes might look like the following screenshot.
 
     :::image type="content" source="../media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-05.png" alt-text="File Modified: Startup.cs":::
 
 
 ## Generate the OpenAPI document file ##
 
-1. Click the debug button at the top-middle of Visual Studio.
+1. Select the debug button at the top-middle of Visual Studio.
 
     :::image type="content" source="../media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-06.png" alt-text="Debug in Visual Studio.":::
 
@@ -83,11 +83,11 @@ In this exercise you're going to add Swagger and Swagger UI to an ASP.NET Core w
 
     :::image type="content" source="../media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-07.png" alt-text="Swagger UI Page.":::
 
-   You may see the 404 error page. In this case, enter the URL, `https://localhost:<port_number>/swagger`, to your browser's address bar. In the screenshot below, the URL is `https://localhost:44371/swagger`, for example.
+   You may see the 404 error page. In this case, enter the URL, `https://localhost:<port_number>/swagger`, to your browser's address bar. In the following screenshot, the URL is `https://localhost:44371/swagger`, for example.
 
     :::image type="content" source="../media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-08.png" alt-text="Page Not Found.":::
 
-1. Click the link to open the OpenAPI document page.
+1. Select the link to open the OpenAPI document page.
 
     :::image type="content" source="../media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-09.png" alt-text="Swagger UI Page for OpenAPI.":::
 
@@ -96,7 +96,6 @@ In this exercise you're going to add Swagger and Swagger UI to an ASP.NET Core w
     :::image type="content" source="../media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-10.png" alt-text="OpenAPI Document.":::
 
 Your ASP.NET Core Web API app is now ready to produce the OpenAPI document.
-
 
 [az apim]: /azure/api-management/api-management-key-concepts
 

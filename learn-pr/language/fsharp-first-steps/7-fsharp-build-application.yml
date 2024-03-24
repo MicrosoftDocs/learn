@@ -9,10 +9,9 @@ metadata:
   author: luisquintanilla
   ms.author: luquinta
   ms.manager: markl
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-dotnet
-  ms.prod: learning-dotnet
 durationInMinutes: 4
 content: |
   [!include[](includes/7-fsharp-build-application.md)]

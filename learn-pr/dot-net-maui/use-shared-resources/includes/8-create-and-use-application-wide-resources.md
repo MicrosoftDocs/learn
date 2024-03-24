@@ -1,4 +1,4 @@
-Defining resources and styles on a XAML page is a great way to reduce repeated code. There's a problem, though. Those resources and styles are available only on that specific XAML page. Page-level resource dictionaries aren't sufficient to let you avoid repeated code across an application when you have multiple pages. In this unit, you'll see how to share resources and styles across all the pages in your application.
+Defining resources and styles on a XAML page is a great way to reduce repeated code. There's a problem, though. Those resources and styles are available only on that specific XAML page. Page-level resource dictionaries aren't sufficient to let you avoid repeated code across an application when you have multiple pages. In this unit, you see how to share resources and styles across all the pages in your application.
 
 ## Where resource dictionaries are available
 
@@ -6,7 +6,7 @@ The **VisualElement** class defines the **Resources** property. Controls, pages,
 
 The **Application** class also defines a **Resources** property. **Application** doesn't inherit from **VisualElement**, so the property is defined as part of this class.
 
-The following illustration shows the structure of a typical application. Each of the elements shown has a **Resources** property that can hold a resource dictionary. 
+The following illustration shows the structure of a typical application. Each of the elements shown has a **Resources** property that can hold a resource dictionary.
 
 > [!NOTE]
 > This diagram shows a much simplified depiction of how the items in an application are organized. In this diagram, the term *View* refers to a singleton control such as **Button** or **Label** that doesn't act as a container for any child controls. Also, the term *Layout* implies a container that is responsible for organizing the layout of its child controls. A layout can be nested. For example a **Grid** control could be held within a **StackLayout** control.
@@ -52,7 +52,7 @@ In practice, most developers ignore the **Resources** property in views and layo
 
 ## Duplicate keys
 
-Each **ResourceDictionary** instance is independent, which means that the same **x:Key** value can be used in more than one dictionary. Having the same **x:Key** identifier in multiple dictionaries on the search path won't cause an error. The resource associated with the first matching **x:Key** value on the path is the one that will be used.
+Each **ResourceDictionary** instance is independent, which means that the same **x:Key** value can be used in more than one dictionary. Having the same **x:Key** identifier in multiple dictionaries on the search path doesn't cause an error. The resource associated with the first matching **x:Key** value on the path is the one used.
 
 For example, suppose you have the following resource defined in your **Application** class:
 
@@ -72,7 +72,7 @@ Then you define the following resource in a **ContentPage** and apply it to a **
 <Label Text="{StaticResource msg}">
 ```
 
-Because the first matching **x:Key** value is used, the **Text** property will be set to **One**.
+Because the first matching **x:Key** value is used, the **Text** property is set to **One**.
 
 <!-- REMOVE THE REMAINING CONTENT IF DICTIONARY MERGING IS NOT IMPLEMENTED IN .NET MAUI -->
 <!-- ## How to merge dictionaries

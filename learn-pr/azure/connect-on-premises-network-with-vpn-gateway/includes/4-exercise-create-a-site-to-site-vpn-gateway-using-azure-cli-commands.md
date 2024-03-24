@@ -12,7 +12,7 @@ First, you create the VPN gateway for the Azure end of the connection. It can ta
     az network public-ip create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name PIP-VNG-Azure-VNet-1 \
-        --allocation-method Dynamic
+        --allocation-method Static
     ```
 
 1. Run the following command in Cloud Shell to create the **VNG-Azure-VNet-1** virtual network.
@@ -48,7 +48,7 @@ Next, you create a VPN gateway to simulate an on-premises VPN device.
     az network public-ip create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name PIP-VNG-HQ-Network \
-        --allocation-method Dynamic
+        --allocation-method Static
     ```
 
 1. Run the following command in Cloud Shell to create the **VNG-HQ-Network** virtual network.
@@ -214,4 +214,4 @@ Let's confirm that the VPN tunnels are connected.
 
 The site-to-site configuration is now complete. Your final topology, including the subnets, and connections, with logical connection points, appears in the following diagram. Virtual machines deployed in the **Services** and **Applications** subnets can now communicate with each other, now that the VPN connections have been successfully established.
 
-![Resources deployed during unit 4 exercise.](../media/4-resources-deployed-during-exercise-final.svg)
+:::image type="content" source="../media/4-resources-deployed-during-exercise-final.svg" alt-text="Diagram of resources deployed during unit 4 exercise.":::

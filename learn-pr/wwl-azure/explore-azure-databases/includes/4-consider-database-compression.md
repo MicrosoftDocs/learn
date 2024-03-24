@@ -1,5 +1,3 @@
-
-
 In configurations where I/O bandwidth can become a limiting factor, every measure that reduces IOPS might help to stretch the workload one can run in IaaS scenarios. Applying SQL Server PAGE compression is recommended by both SAP and Microsoft before uploading an existing SAP database to Azure.
 
 The recommendation for database compression before uploading to Azure is provided for the following reasons:

@@ -6,7 +6,7 @@ metadata:
   ms.date: 06/19/2023
   author: juliakm
   ms.author: jukullam
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-devops-pipelines
   manager: mijacobs
 title: Automate Azure Functions deployments with Azure Pipelines

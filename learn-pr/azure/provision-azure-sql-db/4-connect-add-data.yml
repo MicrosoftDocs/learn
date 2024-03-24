@@ -8,8 +8,8 @@ metadata:
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: devx-track-azurecli
 interactive: bash
 azureSandbox: false
 durationInMinutes: 15

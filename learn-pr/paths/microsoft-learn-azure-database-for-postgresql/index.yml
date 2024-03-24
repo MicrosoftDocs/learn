@@ -6,8 +6,7 @@ metadata:
   ms.date: 08/24/2022
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: learning-path
 title: Work with Azure Database for PostgreSQL
 prerequisites: |
   - Demonstrate an understanding of relational databases.
@@ -23,7 +22,7 @@ roles:
 products:
 - azure-database-postgresql
 subjects:
-- database
+- databases
 modules:
 - learn.wwl.explore-postgresql-architecture
 - learn.wwl.understand-client-server-communication-postgresql

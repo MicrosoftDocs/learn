@@ -14,17 +14,15 @@ As we described in the preceding unit, Azure provides templates that help you bu
 
 1. In the previous exercise, you deployed your function app and opened it. If it isn't already open, you can open it from the Home page by selecting **All resources**, and then selecting your function app, named something like **escalator-functions-xxx**.
 
-1. In the Function App menu, under **Functions**, select **Functions**. The **Functions** pane appears. This pane lists any functions you defined for your function app.
-
-1. In the command bar, select **Create**. The **Create function** pane appears.
+1. On the Function App screen under the **Functions** tab, select **Create in Azure portal**. The **Create function** pane appears.
 
 1. Under **Select a template**, select *HTTP trigger*.
 
 ::: zone pivot="javascript"
 
-5. Select **Create**. The **HttpTrigger1** is created and displays in the **HttpTrigger1** Function pane.
+4. Select **Create**. The **HttpTrigger1** is created and displays in the **HttpTrigger1** Function pane.
 
-1. In the Developer menu on the left, select **Code + Test**. The code editor opens, displaying the contents of the *index.js* code file for your function. The default code that the HTTP template generated appears in the following snippet.
+5. In the Developer menu on the left, select **Code + Test**. The code editor opens, displaying the contents of the *index.js* code file for your function. The default code that the HTTP template generated appears in the following snippet.
 
     ```javascript
     module.exports = async function (context, req) {
@@ -74,9 +72,9 @@ As we described in the preceding unit, Azure provides templates that help you bu
 
 ::: zone pivot="powershell"
 
-5. In the **Template details** section, in the **New Function** field, enter *DriveGearTemperatureService*. Leave the **Authorization level** as *Function*, and then select **Create** to create the function. The Overview pane for your *DriveGearTemperatureService* Function appears.
+4. In the **Template details** section, in the **New Function** field, enter *DriveGearTemperatureService*. Leave the **Authorization level** as *Function*, and then select **Create** to create the function. The Overview pane for your *DriveGearTemperatureService* Function appears.
 
-1. In the Function menu, select **Code + Test**. The code editor opens with the contents of the *run.ps1* code file. The default code that the template generated for us is listed in the following snippet.
+5. In the Function menu, select **Code + Test**. The code editor opens with the contents of the *run.ps1* code file. The default code that the template generated for us is listed in the following snippet.
 
     ```powershell
     using namespace System.Net
@@ -108,7 +106,7 @@ As we described in the preceding unit, Azure provides templates that help you bu
 
     Our function expects a name to be passed in either through the HTTP request query string, or as part of the request body. HTTP functions must generate a response by writing to their output binding, which is accomplished in PowerShell Functions with the `Push-OutputBinding` cmdlet. This function returns the message **Hello, $name**, echoing back the name that was sent in the request.
 
-1. From the source dropdown list, select **function.json** to view the configuration of the function, which should look like the following.
+6. From the source dropdown list, select **function.json** to view the configuration of the function, which should look like the following.
 
     ```json
     {
@@ -184,17 +182,17 @@ To test the function, you can send an HTTP request to the function URL using cUR
 
 ### Secure HTTP triggers
 
-HTTP triggers let you use API keys to block unknown callers by requiring a key as part of the request. When you create a function, you select the _authorization level_. By default, it's set to *Function*, which requires a function-specific API key. It can also be set to *Admin* to use a global "master" key, or *Anonymous* to indicate that no key is required. You can also change the authorization level through the function properties after creation.
+HTTP triggers let you use API keys to block unknown callers by requiring a key as part of the request. When you create a function, you select the *authorization level*. By default, it's set to *Function*, which requires a function-specific API key. It can also be set to *Admin* to use a global "master" key, or *Anonymous* to indicate that no key is required. You can also change the authorization level through the function properties after creation.
 
-Because you specified *Function* when you created this function, you need to supply the key when you send the HTTP request. You can send it as a query string parameter named `code`, or as an HTTP header (preferred) named `x-functions-key`.
+Because you specified *Function* when you created this function, you need to supply the key when you send the HTTP request. You can send it as a query string parameter named `code`. Or, use the preferred method and pass it as an HTTP header named `x-functions-key`.
 
 1. To find the function and master keys, in the Function App menu, under **Developer**, select **Function Keys**. The Function Keys pane for your function opens.
 
-1. By default the function key value is hidden. Show the default function key value by selecting *Hidden value. Click to show value* in the **Value**. Copy the value to the clipboard, and then store this key in Notepad or a similar app for later use.
+1. By default the function key value is hidden. Show the default function key value by selecting **Show value**. Copy the contents of the **Value** field to the clipboard, and then store this key in Notepad or a similar app for later use.
 
     :::image type="content" source="../media/5-get-function-key.png" alt-text="Screenshot showing the Function Keys pane with the revealed function key highlighted." lightbox="../media/5-get-function-key.png" :::
 
-1. To test the function with the function key, open a command prompt and run cURL to send an HTTP request to the function URL. Replace `<your-function-key>` with the function key value you saved, and replacing `<your-https-url>` with the URL of your function.
+1. To test the function with the function key, open a command prompt and run cURL to send an HTTP request to the function URL. Replace `<your-function-key>` with the function key value you saved, and replace `<your-https-url>` with the URL of your function.
 
     ```bash
     curl --header "Content-Type: application/json" --header "x-functions-key: <your-function-key>" --request POST --data "{\"name\": \"Azure Function\"}" <your-https-url>
@@ -211,23 +209,22 @@ Because you specified *Function* when you created this function, you need to sup
 
     The **Code + Test** pane should open a session displaying log file output (ensure **Filesystem Logs** is selected in the drop-down at the top of the **Logs** pane). The log file updates with the status of your request, which should look something like this:
 ::: zone pivot="javascript"
+
     ```output
     2022-02-16T22:34:10.473 [Information] Executing 'Functions.HttpTrigger1' (Reason='This function was programmatically called via the host APIs.', Id=4f503b35-b944-455e-ba02-5205f9e8b47a)
     2022-02-16T22:34:10.539 [Information] JavaScript HTTP trigger function processed a request.
     2022-02-16T22:34:10.562 [Information] Executed 'Functions.HttpTrigger1' (Succeeded, Id=4f503b35-b944-455e-ba02-5205f9e8b47a, Duration=114ms)
     ```
+
 ::: zone-end
 ::: zone pivot="powershell"
+
     ```output
     2022-02-16T21:07:11.340 [Information] INFORMATION: PowerShell HTTP trigger function processed a request.
     2022-02-16T21:07:11.449 [Information] Executed 'Functions.DriveGearTemperatureService' (Succeeded, Id=25e2edc3-542f-4629-a152-cf9ed99680d8, Duration=1164ms)
     ```
+
 ::: zone-end
-
-    Under the **Output** pane, for **HTTP response code**, the function responds with the text `200 OK`.
-
-    > [!NOTE]
-    > The **Code/Test** function may open an *Input/Output* pane in a different configuration, with the log file appearing on the side of a selected function. If so, you won't be able to verify the function key system is working, as it is not required. Add the appropriate header and parameter values in the Test interface, and select **Run** to see the test output.
 
 ## Add business logic to the function
 
@@ -298,7 +295,7 @@ module.exports = function (context, req) {
 
 The logic we added is straightforward. We iterate through the array and set the status as **OK**, **CAUTION**, or **DANGER** based on the value of the temperature field. We then send back the array of readings with a status field added to each entry.
 
-Notice the `Log` statements when you expand **Logs** at the bottom of the pane. When the function runs, these statements will add messages in the Logs window.
+Notice the `Log` statements when you expand **Logs** at the bottom of the pane. When the function runs, these statements add messages in the Logs window.
 
 ::: zone-end
 
@@ -345,7 +342,7 @@ Push-OutputBinding -Name Response -Value ([HttpResponseContext]@{
 
 The logic we added is straightforward. We iterate through the array and set the status as **OK**, **CAUTION**, or **DANGER** based on the value of the temperature field. We then send back the array of readings with a status field added to each entry.
 
-Note the calls to the `Write-Host` cmdlet. When the function runs, these statements will add messages in the Logs window.
+Note the calls to the `Write-Host` cmdlet. When the function runs, these statements add messages in the Logs window.
 
 ::: zone-end
 
@@ -385,8 +382,4 @@ We're going to use the **Test/Run** feature in *Developer* > *Code + Test* to te
 
 1. In the Developer menu on the left, select **Monitor** to see that the request has been logged to Application Insights. The **Monitor** pane appears for your function.
 
-1. Select **Configure**. The **Application Insights** pane appears for your trigger function. Select **Turn on Application Insights**.
-
-1. In the **New resource name** field, select your function app, and in the **Location** field, select the region you initially associated with your function app.
-
-1. Select **Apply**, then select **Yes**.
+   The **Invocations Tab** of the pane displays **Invocation Traces** for each of your function invocations. Select the **Date(UTC)** value for one of the invocations and view the detail about the execution of your function.

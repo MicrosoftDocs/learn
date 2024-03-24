@@ -3,10 +3,10 @@ uid: learn-xamarin.use-effects-in-xamarin-forms
 metadata:
   title: Use effects in Xamarin.Forms
   description: Learn how to use effects to customize and add functionality to Xamarin.Forms elements to make good use of native features in iOS and Android.
-  ms.date: 05/01/2019
+  ms.date: 02/20/2024
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: xamarin
   ms.subservice: xamarin-forms
 title: Use effects in Xamarin.Forms

@@ -29,100 +29,80 @@ To complete this project, you need an API for NoSQL account.
 
 The API for NoSQL account is used to store the data you create in this project and to execute queries. This section guides you through the steps to creating a new account using the Azure CLI directly in the Azure Cloud Shell terminal.
 
-1. Create a new shell variable named **suffix** with a random number and then output the number to the console.
+1. Create a new shell variable named **suffix** with a random number. Create a new API for NoSQL account within the **<rgn>[sandbox resource group name]</rgn>** resource group.
 
     ```azurecli
     let suffix=$RANDOM*$RANDOM
-    
-    echo $suffix
-    ```
 
-1. Create another shell variable named **accountName** that appends the randomly generated suffix to `mslearn-` and then outputs the result.
-
-    ```azurecli
-    accountName="mslearn-$suffix"
-    
-    echo $accountName
-    ```
-
-1. Create two more shell variables for `resourceGroup` and `location` with the values prescribed here.
-
-    ```azurecli
-    resourceGroup="<rgn>[sandbox resource group name]</rgn>"
-    location="westus"
+    az cosmosdb create \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --name "mslearn-$suffix" \
+        --locations "regionName=westus"
     ```
 
     > [!IMPORTANT]
-    > The sandbox will automatically create a resource group for you with the name specified in this code sample.
-
-1. Create a new API for NoSQL account using the three shell variables you created.
-
-    ```azurecli
-    az cosmosdb create \
-        --resource-group $resourceGroup \
-        --name $accountName \
-        --locations regionName=$location
-    ```
+    > This resource group was already created by the sandbox.
 
 1. Wait for the command to complete once the new account is created. Creating a new account can take a couple of minutes.
 
+    > [!TIP]
+    > You can navigate to your new API for NoSQL account using the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+
 ### Get account connection string
 
-Now that you have an API for NoSQL account, you can use the `az cosmosdb keys list` command from the Azure CLI to get credentials. In this section, you filter the output of the command to only return a single connection string.
+Now that you have an API for NoSQL account, you can use the `az cosmosdb keys list` command from the Azure CLI to get the account's credentials. In this section, you filter the output of the command to only return a single connection string.
 
-1. First, list all of the credentials available for this account. Use the `--type` parameter to only return connection strings.
+1. First, get the name of the most recently created API for NoSQL accounts.
 
     ```azurecli
-    az cosmosdb keys list \
+    let resourceGroup="<rgn>[sandbox resource group name]</rgn>"
+    
+    az cosmosdb list \
         --resource-group $resourceGroup \
-        --name $accountName \
-        --type connection-strings \
+        --query "sort_by([].{name:name,created:systemData.createdAt}, &created)" \
         --output table
     ```
 
-1. Now, add the `--query` parameter to filter to specifically the `Primary SQL Connection String`.
+1. Now, get the `Primary SQL Connection String` credential for the first account from the list of recently created accounts.
 
     ```azurecli
+    let resourceGroup="<rgn>[sandbox resource group name]</rgn>"
+
     az cosmosdb keys list \
         --resource-group $resourceGroup \
-        --name $accountName \
+        --name $(az cosmosdb list \
+            --resource-group $resourceGroup \
+            --query "sort_by([].{name:name,created:systemData.createdAt}, &created)[0].name" \
+            --output tsv) \
         --type connection-strings \
         --query "connectionStrings[?description=='Primary SQL Connection String'].connectionString" \
         --output tsv
     ```
 
-1. Record the value of this connection string. You'll use the connection string later in this project to connect to this account.
+1. Record the value of this connection string. You use the connection string later in this project to connect to this account.
 
 ### Configure dev environment
 
-A [development container](https://containers.dev/) environment is available with all dependencies required to complete every exercise in this project. You can run the development container in GitHub Codespaces or locally using Visual Studio Code.
+A development container environment is available with all dependencies required to complete every exercise in this project. You can run the development container in GitHub Codespaces or locally using Visual Studio Code.
 
-#### [GitHub Codespaces](#tab/github-codespaces)
+#### [Develop in browser](#tab/github-codespaces)
 
-[GitHub Codespaces](https://docs.github.com/codespaces) runs a development container managed by GitHub with [Visual Studio Code for the Web](https://code.visualstudio.com/docs/editor/vscode-web) as the user interface. For the most straightforward development environment, use GitHub Codespaces so that you have the correct developer tools and dependencies preinstalled to complete this training module.
+GitHub Codespaces runs a development container managed by GitHub with Visual Studio Code for the Web as the browser-based user interface. For the most straightforward development environment, use GitHub Codespaces so that you have the correct developer tools and dependencies preinstalled to complete this training module.
 
 > [!IMPORTANT]
-> All GitHub accounts can use Codespaces for up to 60 hours free each month with 2 core instances. For more information, see [GitHub Codespaces monthly included storage and core hours](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts).
+> All GitHub accounts can use Codespaces for up to 60 hours free each month with 2 core instances.
 
-1. Start the process to create a new GitHub Codespace on the `main` branch of the [`azure-samples/dotnet-env-azure-cosmos-db`](https://github.com/azure-samples/dotnet-env-azure-cosmos-db) GitHub repository.
+1. Create a new GitHub Codespace using the `azure-samples/cosmos-db-dotnet` template.
 
-    > [!div class="nextstepaction"]
-    > [Open this project in GitHub Codespaces](https://github.com/codespaces/new?azure-portal=true&hide_repo_select=true&ref=main&repo=621314195)
+    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/azure-samples/cosmos-db-dotnet?quickstart=1&azure-portal=true)
 
-1. On the **Create codespace** page, review the codespace configuration settings and then select **Create new codespace**
-
-    :::image type="content" source="../media/codespace-configuration.png" alt-text="Screenshot of the confirmation screen before creating a new codespace.":::
+1. On the **Create codespace** page, review the codespace configuration settings, and then select **Create new codespace**.
 
 1. Wait for the codespace to start. This startup process can take a few minutes.
 
 1. Open a new terminal in the codespace.
 
-    > [!TIP]
-    > You can use the main menu to navigate to the **Terminal** menu option and then select the **New Terminal** option.
-    >
-    > :::image type="content" source="../media/open-terminal-option.png" lightbox="../media/open-terminal-option.png" alt-text="Screenshot of the codespaces menu option to open a new terminal.":::
-
-1. Validate that .NET 7 is installed in your environment:
+1. Validate that .NET 8 is installed in your environment:
 
     ```bash
     dotnet --list-sdks
@@ -130,40 +110,19 @@ A [development container](https://containers.dev/) environment is available with
 
 1. Close the terminal.
 
-1. The remaining exercises in this project take place in the context of this development container.
+The remaining exercises in this project take place in the context of this development container.
 
-#### [Visual Studio Code](#tab/visual-studio-code)
+#### [Develop locally](#tab/visual-studio-code)
 
-The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) for Visual Studio Code requires [Docker](https://docs.docker.com/) to be installed on your local machine. The extension hosts the development container locally using the Docker host with the correct developer tools and dependencies preinstalled to complete this training module.
+The Dev Containers extension for Visual Studio Code requires Docker to be installed on your local machine. The extension hosts the development container locally using the Docker host with the correct developer tools and dependencies preinstalled to complete this training module.
 
-1. Open **Visual Studio Code** in the context of an empty directory.
+1. Open the `azure-samples/cosmos-db-dotnet` template repository from GitHub within Visual Studio Code.
 
-1. Ensure that you have the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) installed in Visual Studio Code.
+    [![Open in Dev Container](https://img.shields.io/static/v1?style=for-the-badge&label=Open+in+Visual+Studio+Code&message=Dev+container&color=blue&logo=visualstudiocode)](vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/azure-samples/cosmos-db-dotnet)
 
-1. Open a new terminal in the editor.
+1. Open a new terminal.
 
-    > [!TIP]
-    > You can use the main menu to navigate to the **Terminal** menu option and then select the **New Terminal** option.
-    >
-    > :::image type="content" source="../media/open-terminal-option.png" lightbox="../media/open-terminal-option.png" alt-text="Screenshot of the menu option to open a new terminal.":::
-
-1. Clone the [`azure-samples/dotnet-env-azure-cosmos-db`](https://github.com/azure-samples/dotnet-env-azure-cosmos-db) GitHub repository into the current directory.
-
-    ```bash
-    git clone https://github.com/azure-samples/dotnet-env-azure-cosmos-db.git .
-    ```
-
-1. Open the folder into which you cloned the GitHub repository.
-1. Open the **Command Palette**, search for the **Dev Containers** commands, and then select **Dev Containers: Reopen in Container**.
-
-    :::image type="content" source="../media/reopen-container-command-palette.png" alt-text="Screenshot of the Command Palette option to reopen the current folder within the context of a development container.":::
-
-    > [!TIP]
-    > Visual Studio Code might automatically prompt you to reopen the existing folder within a development container. This is functionally equivalent to using the command palette to reopen the current workspace in a container.
-    >
-    > :::image type="content" source="../media/reopen-container-toast.png" alt-text="Screenshot of a toast notification to reopen the current folder within the context of a development container.":::
-
-1. Validate that .NET 7 is installed in your environment:
+1. Validate that .NET 8 is installed in your environment:
 
     ```bash
     dotnet --list-sdks
@@ -171,6 +130,6 @@ The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemNa
 
 1. Close the terminal.
 
-1. The remaining exercises in this project take place in the context of this development container.
+The remaining exercises in this project take place in the context of this development container.
 
 ---

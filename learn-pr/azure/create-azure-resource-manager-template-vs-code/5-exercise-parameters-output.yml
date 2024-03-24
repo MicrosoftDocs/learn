@@ -7,10 +7,9 @@ metadata:
   ms.date: 07/08/2020
   author: tfitzmac
   ms.author: tomfitz
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-arm-template
-  ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface
 azureSandbox: true
 durationInMinutes: 12

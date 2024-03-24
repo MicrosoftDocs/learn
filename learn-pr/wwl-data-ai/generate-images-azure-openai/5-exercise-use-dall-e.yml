@@ -7,10 +7,10 @@ metadata:
   ms.date: 6/14/2023
   author: graememalcolm
   ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.service: cognitive-services
-  ms.subservice: openai
+  ms.topic: unit
 durationInMinutes: 25
+azureSandbox: false
+labId: 152389
+labModal: true
 content: |
   [!include[](includes/5-exercise-use-dall-e.md)]

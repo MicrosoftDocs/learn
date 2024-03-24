@@ -7,11 +7,10 @@ metadata:
   ms.date: 03/23/2023
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-azurecli
     - devx-track-extended-java
-  ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-java
 durationInMinutes: 10
 interactive: bash

@@ -4,11 +4,10 @@ title: Discover the business value of applying DevOps practices to machine learn
 metadata:
   title: Discover the business value of applying DevOps practices to machine learning
   description: "Discover the business value of applying DevOps practices to machine learning"
-  ms.date: 06/29/2023
+  ms.date: 01/09/2024
   author: Adriamen
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.service: microsoft-365
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/7-discover-business-value-applying-devops.md)]

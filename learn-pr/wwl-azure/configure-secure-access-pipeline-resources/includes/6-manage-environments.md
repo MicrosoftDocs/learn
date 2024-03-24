@@ -4,7 +4,7 @@ In this unit, learn how to create, manage and consume environments in Azure DevO
 
 ## Why use environments in Azure DevOps?
 
-Using Environments in Azure DevOps provides traceability from code to the physical deployment targets, improve resource health/availability visibility, and support zero downtime deployments using deployment strategies (runOnce, canary, blueGreen, and rolling). Also, you can easily manage the deployment of the application to different stages.
+Using Environments in Azure DevOps provides traceability from code to the physical deployment targets, improves resource health and visibility, and supports zero downtime deployments using deployment strategies (runOnce, canary, blueGreen, and rolling). Also, you can easily manage the deployment of the application to different stages.
 
 ## Configure environments
 
@@ -59,5 +59,5 @@ It allows you to deploy the application to different environments by changing th
 
 For more information about Environments, see:
 
-- [Create and target an environment.](https://learn.microsoft.com/azure/devops/pipelines/process/environments)
-- [Manage multiple environments by using Bicep and Azure Pipelines](https://learn.microsoft.com/training/modules/manage-multiple-environments-using-bicep-azure-pipelines/)
+- [Create and target an environment.](/azure/devops/pipelines/process/environments)
+- [Manage multiple environments by using Bicep and Azure Pipelines](/training/modules/manage-multiple-environments-using-bicep-azure-pipelines/)

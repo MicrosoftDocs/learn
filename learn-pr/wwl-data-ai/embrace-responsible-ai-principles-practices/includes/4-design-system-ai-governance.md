@@ -1,5 +1,3 @@
-
-
 Each organization has their own guiding principles, but ultimately these principles need to be part of a larger responsible AI strategy to be effective. This strategy should encompass how your organization brings these principles to life both within your organization and beyond.
 
 We recommend establishing a governance system that is tailored to your organization’s unique characteristics, culture, guiding principles, and level of engagement with AI. The tasks of the board should include designing responsible AI policies and measures; attending they're being followed, and ensuring compliance.

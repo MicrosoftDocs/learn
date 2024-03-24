@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/07/2022
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: app-service 
   ms.subservice: web-apps
 title: Migrate a web app to Azure App Service
@@ -30,7 +30,7 @@ products:
 - azure
 - azure-key-vault
 - azure-migrate
-- azure-spring-cloud
+- azure-spring-apps
 subjects:
 - cloud-computing
 units:

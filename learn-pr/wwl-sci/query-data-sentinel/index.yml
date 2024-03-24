@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/20/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: microsoft-sentinel
 title: Query, visualize, and monitor data in Microsoft Sentinel
 summary: This module describes how to query, visualize, and monitor data in Microsoft Sentinel.

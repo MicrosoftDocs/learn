@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-azure-cognitive-search-solution.resources-for-search
-title: Search components
+title: Understand search components
 metadata:
-  title: Search components
-  description: "Search components"
-  ms.date: 05/04/2023
+  title: Understand search components
+  description: "Understand search components"
+  ms.date: 12/11/2023
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.author: berryivor
+  ms.topic: unit
+  ms.service: cognitive-search
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

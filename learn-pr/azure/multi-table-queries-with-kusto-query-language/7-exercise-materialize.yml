@@ -8,8 +8,7 @@ metadata:
   ms.date: 09/22/2022
   author: shsagir
   ms.author: shsagir
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/7-exercise-materialize.md)]

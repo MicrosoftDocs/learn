@@ -10,7 +10,7 @@ In this exercise, you'll add the `azure-webapp-maven-plugin` plugin to your proj
     cd ~/MyWebApp
     mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
     ```
-    
+
     Enter the following values for each of the interactive prompts:
 
     | Prompt | Value |
@@ -29,7 +29,7 @@ In this exercise, you'll add the `azure-webapp-maven-plugin` plugin to your proj
     code pom.xml
     ```
 
-1. The `<build>` section of your `pom.xml` file should resemble the following example.
+1. The `<build>` section of your `pom.xml` file should resemble the following example:
 
     ```xml
     <build>
@@ -59,7 +59,7 @@ In this exercise, you'll add the `azure-webapp-maven-plugin` plugin to your proj
 
 ## Configure the plugin to use sandbox resource group
 
-1. For this exercise, you'll need to determine the name and location of the resource group for your sandbox. To do so, use the following command.
+1. For this exercise, you'll need to determine the name and location of the resource group for your sandbox. To do so, use the following command:
 
     ```azurecli
     az group list --query [0].name
@@ -89,7 +89,7 @@ In this exercise, you'll add the `azure-webapp-maven-plugin` plugin to your proj
 
 ## Deploy and test the web app
 
-1. Use Maven to build and deploy your web app to Azure App Service.
+1. Use Maven to build and deploy your web app to Azure App Service:
 
     ```bash
     mvn package azure-webapp:deploy

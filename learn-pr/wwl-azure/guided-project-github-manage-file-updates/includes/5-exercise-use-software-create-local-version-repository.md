@@ -1,4 +1,3 @@
-
 In this exercise, you're going to clone your GitHub repository from the web to your local computer. Because we've just started with this repository, it will be a quick process. However, when working with large repositories the process could take a while. Remember, when you clone a repository you're downloading the full repository to your computer.
 
 ## Open the terminal window

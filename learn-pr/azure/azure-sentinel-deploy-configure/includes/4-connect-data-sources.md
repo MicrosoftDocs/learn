@@ -9,14 +9,14 @@ There are over 200 out-of-the-box data connectors to support common data source 
 Microsoft Sentinel natively interoperates with many Azure and non-Azure services and products like the following:
 
 - Azure Activity
-- Azure Active Directory (Azure AD) (audit logs and sign-in logs)
+- Microsoft Entra ID (audit logs and sign-in logs)
 - Microsoft Defender for Cloud
-- Azure AD Identity Protection
+- Microsoft Entra ID Protection
 - Amazon Web Services CloudTrail
 - Microsoft Defender for Cloud Apps
 - Windows DNS
 - Office 365
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 - Azure Web Application Firewall
 - Windows Defender Firewall
 - Windows security events
@@ -33,30 +33,32 @@ Some data sources are connected by using APIs that the connected data source pro
 - Symantec ICDx
 - Zimperium Mobile Threat Defense
 
-### Connect to Azure AD
+<a name='connect-to-azure-ad'></a>
+
+### Connect to Microsoft Entra ID
 
 The most direct way to collect data is to use the data connectors available as part of a solution or as standalone content from the content hub in Microsoft Sentinel. 
 
-In this example, we'll connect to Azure AD from Microsoft Sentinel:
+In this example, we'll connect to Microsoft Entra ID from Microsoft Sentinel:
 
 1. In the Azure portal, search for and select **Microsoft Sentinel**.
 1. In Microsoft Sentinel, under the **Content management** section, select **Content hub**.
-1. Find and select the solution for **Azure Active Directory**.
+1. Find and select the solution for **Microsoft Entra ID**.
 
-    :::image type="content" source="../media/4-content-hub.png" alt-text="Screenshot of the content hub page with Azure Active Directory selected." border="true":::
+    :::image type="content" source="../media/4-content-hub.png" alt-text="Screenshot of the content hub page with Microsoft Entra ID selected." border="true":::
 
 1. On the top toolbar, select  :::image type="icon" source="../media/install-update-button.png"::: **Install/Update**.
 1. From the menu on the left-hand side, under the **Configuration** section, select **Data Connectors**. This page lists all the data connectors installed and their status.
 
     :::image type="content" source="../media/sentinel-azure-ad-connector-page.png" alt-text="Screenshot of the Microsoft Sentinel connector page with the list of connectors." border="true":::
 
-1. On the **Data Connectors** page, select the **Azure Active Directory** tile. The Microsoft Sentinel **Azure Active Directory** connector page opens.
+1. On the **Data Connectors** page, select the **Microsoft Entra ID** tile. The Microsoft Sentinel **Microsoft Entra ID** connector page opens.
 
-    :::image type="content" source="../media/sentinel-azure-ad-connector-2.png" alt-text="Screenshot of the Microsoft Sentinel Azure Active Directory connector page." border="true":::
+    :::image type="content" source="../media/sentinel-azure-ad-connector-2.png" alt-text="Screenshot of the Microsoft Sentinel Microsoft Entra connector page." border="true":::
 
 1. Read the prerequisites and make sure you've fulfilled them. Then follow the instructions to connect the data source.
 
-1. Select both **Azure Active Directory Sign-in logs** and **Azure Active Directory Audit logs**.
+1. Select both **Microsoft Entra sign-in logs** and **Microsoft Entra audit logs**.
 
     :::image type="content" source="../media/sentinel-azure-ad-connector-3.png" alt-text="Screenshot of the Microsoft Sentinel connector configuration options." border="true":::
 
@@ -88,6 +90,6 @@ Microsoft Sentinel uses a fusion technology to correlate the alerts that these r
 
 Microsoft Sentinel gives you workbooks that provide analytics for your logs and queries. They use the tools that are already available in Azure, in addition to built-in tables and charts. You can use out-of-the-box workbooks, customize an existing workbook, or create a new workbook from scratch.
 
-The out-of-the-box workbooks provide integrated data from your connected data sources. They let you examine the events that those services generate. The workbooks include Azure AD, Azure activity events, and on-premises events. These on-premises events can include data from Windows events from servers or from Microsoft alerts.
+The out-of-the-box workbooks provide integrated data from your connected data sources. They let you examine the events that those services generate. The workbooks include Microsoft Entra ID, Azure activity events, and on-premises events. These on-premises events can include data from Windows events from servers or from Microsoft alerts.
 
 Events can also be gathered from any non-Microsoft services. These events include firewall traffic logs, Office 365, and protocols that aren't secure and that are based on Windows events.

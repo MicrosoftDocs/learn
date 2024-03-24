@@ -7,8 +7,7 @@ metadata:
   ms.date: 10/23/2019
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Architect secure infrastructure in Azure
 summary: Learn about the tools and services available on Azure to ensure your resources are secure.
 prerequisites: None

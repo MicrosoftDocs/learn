@@ -1,25 +1,9 @@
-Use the web as a platform to run your application. This platform lets anyone reach your application by using a browser, client, or software that speaks HTTP.
+As a developer for Tailwind Traders, an online retailer, you're tasked with building a new set of HTTP APIs for their platform using Node.js. Your primary goal is to construct an API that provides access to the product data.
 
-In this module, you're a developer for an online retailer. The retailer is building a new set of HTTP APIs for their application. The application is built on Node.js. Your job is to build an API that lists the products they sell. The API you build lets applications work with the product data.
+Webpages are typically constructed using HTML, JavaScript, and CSS. Node.js offers a core module, HTTP, which facilitates the creation of a server to host web applications. This HTTP module supports various operations such as reading, writing, and handling different types of content.
 
-You can construct a webpage by using HTML pages, JavaScript, and CSS. Node.js has a core module called HTTP that helps you construct web applications. It supports requests for reading, writing, and working with different types of content.
+While the HTTP module in Node.js is capable of using HTTP, it operates at a low level, making the process of building web applications somewhat slow. To expedite the development process, developers often use a higher-level framework like Express.js. Express.js utilizes the HTTP module internally but offers more efficient patterns for building a web server. For complex operations like authentication and authorization, a Node.js server framework is also used.
 
-Even though the HTTP module in Node.js is capable, it's not as fast as using a framework. To build an efficient API that can handle complex operations like authentication and authorization, you'll also use a framework.
+There are several web frameworks available for Node.js, including Hapi, Fastify, Koa, and Express. Express is widely used due to its longevity, well-designed APIs, and prompt security patches.
 
-There are many web frameworks for Node.js, such as Hapi, Fastify, Koa, and Express. Express is used by many developers. It's been around for a long time. The APIs are well thought out, security issues are patched, and so on.
-
-In this module, you'll learn how to handle HTTP requests with Node.js. You'll also learn about the Express framework, which helps you build websites and HTTP APIs.
-
-## Learning objectives
-
-By the end of this module, you'll be able to:
-
-- Describe the core concepts of the web framework Express.
-- Configure middleware to control how a request is handled.
-
-## Prerequisites
-
-- [Git](https://git-scm.com/?azure-portal=true) and [Node.js](https://nodejs.org/en/?azure-portal=true) installed on your computer
-- Familiarity with editing text and code files in any text editor
-- Basic familiarity with HTTP
-- Experience using the command line, including Git operations
+In this module, you'll learn how to handle HTTP requests with Node.js using the Express framework, a tool that simplifies the process of building websites and HTTP APIs.

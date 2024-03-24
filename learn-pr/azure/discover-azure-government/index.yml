@@ -6,7 +6,7 @@ metadata:
   ms.date: 02/15/2023
   author: anaharris-ms
   ms.author: anaharris
-  ms.topic: interactive-tutorial
+  ms.topic: module
   manager: eliotgra
   ms.service: azure-government
 title: Discover the potential of Azure for government
@@ -29,7 +29,7 @@ products:
 - azure-blueprints
 - azure-iot-hub
 - azure-stack-hub
-- azure-farmbeats
+- data-manager-for-agri
 subjects:
 - cloud-computing
 - migration

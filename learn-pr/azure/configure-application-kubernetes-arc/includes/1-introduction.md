@@ -31,4 +31,4 @@ To get the best learning experience from this module, you should have:
 To complete exercises in this module, you'll need:
 
 - An Azure subscription.
-- A Microsoft account or an Azure Active Directory (Azure AD) account that has an Owner role in the Azure subscription.
+- A Microsoft account or a Microsoft Entra account that has an Owner role in the Azure subscription.

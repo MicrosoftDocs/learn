@@ -4,12 +4,11 @@ title: Store data locally with SQLite
 metadata:
   title: Store data locally with SQLite
   description: Store data locally with SQLite.
-  ms.date: 3/19/2019
+  ms.date: 02/20/2024
   author: codemillmatt
   ms.author: masoucou
   ms.manager: markl
-  ms.topic: interactive-tutorial
-  ms.prod: learning-xamarin
+  ms.topic: unit
   
 durationInMinutes: 15
 content: |

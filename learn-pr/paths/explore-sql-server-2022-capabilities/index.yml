@@ -6,8 +6,7 @@ metadata:
   ms.date: 05/23/2023
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Explore SQL Server 2022 capabilities
 prerequisites: |
   - Basic working knowledge of SQL Server, including deployment, security, query processing, and high availability

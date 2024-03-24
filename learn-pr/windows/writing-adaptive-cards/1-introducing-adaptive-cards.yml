@@ -8,8 +8,7 @@ metadata:
   displayType: one-Column
   author: alvinashcraft
   ms.author: aashcraft
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  ms.topic: unit
   
   zone_pivot_groups: platform-apps-uwp-wpf
 durationInMinutes: 15

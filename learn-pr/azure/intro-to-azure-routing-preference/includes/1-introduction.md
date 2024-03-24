@@ -1,4 +1,4 @@
-Routing preference in Azure controls how traffic flows from Azure to the public Internet. With routing preference, data transfer traffic is routed over the Microsoft global network or over the public Internet.
+Routing preference in Azure controls how traffic flows from Azure to the public internet. With routing preference, data transfer traffic is routed over the Microsoft global network or over the public internet.
 
 ## Example scenario
 
@@ -8,7 +8,7 @@ After completing this module, you'll know more about routing preference and how 
 
 ## What are we doing?
 
-In this module, you learn about how routing from Azure to the public Internet works by default. You learn about routing preference and how you can change how traffic is transferred between the Azure and the Internet. You explore scenarios where it may be appropriate to change how data is transferred between Azure and the Internet. Finally, we discuss routing preference unmetered and how it differs from routing preference.
+In this module, you learn about how routing from Azure to the public internet works by default. You learn about routing preference and how you can change how traffic is transferred between the Azure and the internet. You explore scenarios where it might be appropriate to change how data is transferred between Azure and the internet. Finally, we discuss routing preference unmetered and how it differs from routing preference.
 
 ## What is the main goal?
 

@@ -4,17 +4,18 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/07/2023
+  ms.date: 11/23/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.service: fabric
   ms.custom:
-    - build-2023
-    - build-2023-dataai
-    - build-2023-fabric
+  - build-2023
+  - build-2023-dataai
+  - build-2023-fabric
 durationInMinutes: 3
 quiz:
+  title: ""
   questions:
   - content: "You have access to a historical dataset that contains the monthly expenses of the marketing department. You want to generate predictions of the expenses for the coming month. Which type of machine learning model is needed?"
     choices:
@@ -38,14 +39,14 @@ quiz:
     - content: "Models"
       isCorrect: false
       explanation: "Incorrect. Metrics are only shown when a model is saved."
-  - content: "You want to log the accuracy of a model, which logging function should you use?"
+  - content: "Which feature in Microsoft Fabric should you use to accelerate data exploration and cleansing?"
     choices:
-    - content: "`mlflow.log_param()`"
+    - content: "Dataflows"
       isCorrect: false
-      explanation: "Incorrect. `log_param()` logs a single key-value input parameter."
-    - content: "`mlflow.log_metric()`"
+      explanation: "Incorrect. Dataflows are used for data ingestion and transformation."
+    - content: "Data Wrangler"
       isCorrect: true
-      explanation: "Correct. `log_metric()` logs a single key-value metric."
-    - content: "`mlflow.log_artifact()`"
+      explanation: "Correct. Use Data Wrangler to visualize and clean your data."
+    - content: "Lakehouse"
       isCorrect: false
-      explanation: "Incorrect. `log_artifact()` logs a file."
+      explanation: "Incorrect. Store your files in the lakehouse."

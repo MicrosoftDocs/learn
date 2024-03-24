@@ -2,7 +2,7 @@ Now that you understand the baseline SaaS offer concepts, we’ll review some in
 
 The commercial marketplace leverages APIs to manage the entire lifecycle of SaaS subscriptions purchased through the marketplace. Subscription activation, usages, updates, and cancellations are facilitated through a set of SaaS subscription APIs. You’ll have to integrate with these APIs to sell your SaaS offer through Microsoft.
 
-To facilitate communication about subscription statuses and events between your organization and the commercial marketplace, you’ll need to provide a **landing page URL**, a **connection webhook**, and the **Azure Active Directory identity** that your application will use when communicating with the marketplace. If you decide to use the marketplace metering service to add a consumption-based pricing element to your offer, you’ll also need to integrate with the marketplace metered billing APIs.
+To facilitate communication about subscription statuses and events between your organization and the commercial marketplace, you’ll need to provide a **landing page URL**, a **connection webhook**, and the **Microsoft Entra identity** that your application will use when communicating with the marketplace. If you decide to use the marketplace metering service to add a consumption-based pricing element to your offer, you’ll also need to integrate with the marketplace metered billing APIs.
 
 :::image type="content" source="../media/7-technical-configuration.png" alt-text="Screenshot of the technical configuration fields required to publish a transact offer.":::
 
@@ -10,7 +10,7 @@ To facilitate communication about subscription statuses and events between your 
 
 Your SaaS offer’s landing page is the URL to which customers will be redirected after getting your offer from Microsoft AppSource or Azure Marketplace. The landing page has two technical requirements:
 
-- It must be integrated with Azure Active Directory (Azure AD) to log customers in before using your application.
+- It must be integrated with Microsoft Entra ID to log customers in before using your application.
 
 - It should collect any additional customer information you need before activating the customer’s SaaS subscription. Additional information might include supplemental customer contact information, user preferences, or user configurations that your company needs to activate the subscription.
 
@@ -26,11 +26,13 @@ Your offer’s connection webhook facilitates communication between the commerci
 | **Unsubscribe**       | Customer has either deleted their subscription or customer payment is >30 days past due. | Terminate the customer’s subscription and perform any necessary cleanup.                                                                                                                                                          |
 | **Reinstate**         | After suspension, a customer payment is received to resolve billing issue.               | Reinstate the customer subscription. Mark the operation as successful.                                                                                                                                                            |
 
-### Azure Active Directory (Azure AD) integration
+<a name='azure-active-directory-azure-ad-integration'></a>
 
-Azure Active Directory (Azure AD) is the Microsoft cloud-based identity- and access-management service. Azure AD makes SaaS offer purchases from the commercial marketplace easier and more secure. By integrating your offer with Azure AD, you’ll be able to automate the process of provisioning users to your SaaS application.
+### Microsoft Entra integration
 
-You’ll need to provide your Azure AD tenant ID and your Azure AD application ID when you publish your offer in Partner Center. The two identities work together to provide controlled, permission-based access to your application. You can find both required Azure AD IDs in the Azure portal. For additional details on Azure AD and where to find your tenant and application IDs, you can reference our [documentation on adding technical details for your SaaS offer](/azure/marketplace/create-new-saas-offer-technical).
+Microsoft Entra ID is the Microsoft cloud-based identity- and access-management service. Microsoft Entra ID makes SaaS offer purchases from the commercial marketplace easier and more secure. By integrating your offer with Microsoft Entra ID, you’ll be able to automate the process of provisioning users to your SaaS application.
+
+You’ll need to provide your Microsoft Entra tenant ID and your Microsoft Entra application ID when you publish your offer in Partner Center. The two identities work together to provide controlled, permission-based access to your application. You can find both required Microsoft Entra IDs in the Azure portal. For additional details on Microsoft Entra ID and where to find your tenant and application IDs, you can reference our [documentation on adding technical details for your SaaS offer](/azure/marketplace/create-new-saas-offer-technical).
 
 ### Marketplace metered billing API integration
 

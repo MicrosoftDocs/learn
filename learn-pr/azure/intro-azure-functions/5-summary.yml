@@ -5,10 +5,9 @@ metadata:
   title: Summary
   description: This unit contains a summary of Azure Functions and what you have learned so far.
   ms.date: 04/27/2020
-  author: rmcmurray
-  ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: ggailey777
+  ms.author: glenga
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/5-summary.md)]

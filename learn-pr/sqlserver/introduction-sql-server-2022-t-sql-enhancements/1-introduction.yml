@@ -8,10 +8,9 @@ metadata:
   author: MScalopez
   ms.author: calopez
   ms.reviewer: vanto
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - build-2023
-  ms.prod: learning-sqlserver
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

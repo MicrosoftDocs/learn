@@ -18,7 +18,7 @@ In this lab, you'll see how you can integrate Azure Key Vault with an Azure Pipe
 
 After completing this lab, you'll be able to:
 
- -  Create an Azure Active Directory (Azure AD) Service Principal.
+ -  Create a Microsoft Entra service principal.
  -  Create an Azure Key Vault.
 
 ## Requirements
@@ -26,7 +26,7 @@ After completing this lab, you'll be able to:
  -  This lab requires **Microsoft Edge** or an [Azure DevOps-supported browser](/azure/devops/server/compatibility).
  -  **Set up an Azure DevOps organization:** If you don't already have an Azure DevOps organization that you can use for this lab, create one by following the instructions available at [Create an organization or project collection](/azure/devops/organizations/accounts/create-organization).
  -  Identify an existing Azure subscription or create a new one.
- -  Verify that you have a Microsoft or Azure AD account with the Owner role in the Azure subscription and the Global Administrator role in the Azure AD tenant associated with the Azure subscription. For details, refer to [List Azure role assignments using the Azure portal](/azure/active-directory/roles/manage-roles-portal) and [View and assign administrator roles in Azure Active Directory](/azure/active-directory/roles/manage-roles-portal#view-my-roles).
+ -  Verify that you have a Microsoft or Microsoft Entra account with the Owner role in the Azure subscription and the Global Administrator role in the Microsoft Entra tenant associated with the Azure subscription. For details, refer to [List Azure role assignments using the Azure portal](/azure/active-directory/roles/manage-roles-portal) and [View and assign administrator roles in Microsoft Entra ID](/azure/active-directory/roles/manage-roles-portal#view-my-roles).
 
 ## Exercises
 

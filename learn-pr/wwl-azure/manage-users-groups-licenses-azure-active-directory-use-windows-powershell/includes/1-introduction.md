@@ -1,4 +1,4 @@
-Microsoft 365 includes multiple cloud services, but the core of Microsoft 365 is Azure AD. Azure AD provides identity management for all the services in Microsoft 365. To give access to the services in Microsoft 365, you need to create user accounts and then assign licenses that provide access to the services. Within Microsoft 365, you can use roles to give users permissions to manage Microsoft 365 services.
+Microsoft 365 includes multiple cloud services, but the core of Microsoft 365 is Microsoft Entra ID. Microsoft Entra ID provides identity management for all the services in Microsoft 365. To give access to the services in Microsoft 365, you need to create user accounts and then assign licenses that provide access to the services. Within Microsoft 365, you can use roles to give users permissions to manage Microsoft 365 services.
 
 ## Learning objectives
 

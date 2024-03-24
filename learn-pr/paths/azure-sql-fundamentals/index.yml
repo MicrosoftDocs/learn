@@ -7,8 +7,7 @@ metadata:
   ms.date: 03/15/2023
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Azure SQL fundamentals
 summary: "Learn how to translate your existing SQL Server expertise to Azure SQL including Azure SQL Database and Azure SQL managed instance. After completing this learning path, you will have a foundational knowledge of what to use when, as well as how to configure, secure, monitor, and troubleshoot Azure SQL."
 prerequisites: |

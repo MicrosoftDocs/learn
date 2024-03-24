@@ -20,7 +20,7 @@ This injects the contents of the `_ValidationScriptsPartial.cshtml` file into a 
 <label asp-for="Foo.Id" class="control-label"></label>
 ```
 
-This extends the standard HTML `<label>` element. As is common for many tag helpers, it uses an `asp-for` attribute. The attribute accepts a property from the `PageModel`. In this case, the name of the `PageModel`'s `Foo.Id` property (specifically, the string `"Id"`) will be rendered as the content for an HTML `<label>` element.
+This extends the standard HTML `<label>` element. Like many tag helpers, it uses an `asp-for` attribute. The attribute accepts a property from the `PageModel`. In this case, the name of the `PageModel`'s `Foo.Id` property (specifically, the string `"Id"`) will be rendered as the content for an HTML `<label>` element.
 
 ### Input tag helper
 
@@ -45,6 +45,6 @@ The Validation Summary Tag Helper displays a validation message for a single pro
 
 The `PageModel` class defines page handlers for HTTP requests and data used to render the page. In the previous exercise, the `PizzaListModel` class handled the HTTP GET request by setting the value of the `PizzaList` property to the value of `_service.GetPizzas()`.
 
-Common handlers include `OnGet` for page initialization and `OnPost` for form submissions. To handle an HTTP POST, a page handler might verify the user-submitted data, presents the input form page again if invalid, or send the valid data to a service or database for persistence.
+Common handlers include `OnGet` for page initialization and `OnPost` for form submissions. To handle an HTTP POST, a page handler might verify the user-submitted data, present the input form page again if invalid, or send the valid data to a service or database for persistence.
 
 In the next unit, you'll add a form to create new pizzas using several tag helpers. You'll also add page handlers to handle the form submission and deletion of pizzas.

@@ -1,4 +1,4 @@
-﻿### YamlMime:Module
+### YamlMime:Module
 uid: learn.github.manage-work-github-projects
 title: Manage your work with GitHub Projects
 metadata:
@@ -7,8 +7,8 @@ metadata:
   ms.date: 05/05/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-github
+  ms.topic: module
+  ms.service: github
 summary: >
   Learn to use GitHub Projects to create issues, break them into tasks, track relationships, add custom fields, and have conversations.
 abstract: |
@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   - A GitHub account
   - Access to an organization
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/manage-work-github-projects.svg
 ratingEnabled: true
 levels: 
 - beginner

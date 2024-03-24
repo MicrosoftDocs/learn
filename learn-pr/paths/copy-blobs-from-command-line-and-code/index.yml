@@ -7,8 +7,7 @@ metadata:
   ms.date: 04/24/2023
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Copy blobs between Azure Storage accounts from the command line or by using code
 summary:  |
   Learn how to use the Azure CLI, AzCopy, and .NET code to copy blobs between storage accounts. 

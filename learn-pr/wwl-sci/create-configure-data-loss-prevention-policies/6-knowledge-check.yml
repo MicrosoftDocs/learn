@@ -7,8 +7,7 @@ metadata:
   ms.date: 08/18/2022
   author: wwlpublish
   ms.author: bneeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -47,6 +46,6 @@ quiz:
     - content: "Policies can be created in the Microsoft Defender for Cloud Apps portal."
       isCorrect: true
       explanation: "This is correct.  These policies are created in the Microsoft Defender for Cloud Apps portal."
-    - content: "Policies can be created in the Microsoft 365 Defender portal."
+    - content: "Policies can be created in the Microsoft Defender portal."
       isCorrect: false
-      explanation: "This isn't correct. These policies aren't created in the Microsoft 365 Defender portal."
+      explanation: "This isn't correct. These policies aren't created in the Microsoft Defender portal."

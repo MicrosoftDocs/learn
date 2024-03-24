@@ -3,10 +3,10 @@ uid: learn-xamarin.create-custom-controls-with-forms-renderers
 metadata:
   title: Create custom controls with Xamarin.Forms renderers
   description: Extend the built-in functionality of Xamarin.Forms by modifying existing controls and creating new custom controls.
-  ms.date: 05/01/2019
+  ms.date: 02/20/2024
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: xamarin
   ms.subservice: xamarin-forms
 title: Create custom controls with Xamarin.Forms renderers

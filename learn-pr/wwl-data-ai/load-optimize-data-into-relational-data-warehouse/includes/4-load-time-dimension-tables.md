@@ -1,5 +1,3 @@
-
-
 Time dimension tables store a record for each time interval based on the *grain* by which you want to aggregate data over time. For example, a time dimension table at the *date* grain contains a record for each date between the earliest and latest dates referenced by the data in related fact tables.
 
 The following code example shows how you can generate a sequence of time dimension values based on a *date* grain.

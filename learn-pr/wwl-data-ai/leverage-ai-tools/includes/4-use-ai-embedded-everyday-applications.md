@@ -1,9 +1,8 @@
-
 To truly realize the potential of AI, it’s essential to bring AI to every employee in ways that are relevant and meaningful to their work. Microsoft makes this possible by embedding AI in the applications people use in their everyday routine. No code or data science expertise is required because AI is delivered as just another feature of a SaaS product. The result is a wide range of intelligent applications for business users.
 
 In this unit, we'll discuss how these intelligent business applications weave relevant AI capabilities into their existing workflows. Dynamics 365 helps workers from specific business lines and functions automate and improve certain tasks. Microsoft 365 does the same by addressing a more general audience. Let’s take a look at some examples of these applications that can help anyone use AI to get more done.
 
-## Business function AI
+## Business functions
 
 Some AI solutions are specialized in helping solve problems and gain insight in some specific horizontal functions and sectors.
 
@@ -48,12 +47,10 @@ When you're not speaking in person, some nuances are missing and misunderstandin
 
 Nowadays, workers' routines are too often interrupted by distractions, calls, and multitasking. AI can also help cope with this problem and enable employees to focus their time and attention on what matters most.
 
-For instance, the Briefing email from Cortana compiles valuable information about upcoming meetings and outstanding tasks in Outlook. It also enables employees to set aside daily “focus time” to work uninterrupted with notifications silenced. In Outlook mobile, employees can use natural language to ask Cortana to read out their new emails and share any changes to their schedule—so they can catch up even when their hands are busy with other things.
-
 > [!NOTE] 
 > 68 percent of workers complain of their lack of uninterrupted focus time during their working routines.<sup>1</sup>
 
-Copilot adds more features for focus to make sure users don't forget any important issues. In OneNote, for example, it identifies unanswered questions all across existing notes and grouping them in one centralized location. In Teams, Copilot can extract action points from the conversation in real time.
+For instance, Microsoft 365 Copilot includes features for focus to make sure users don't forget any important issues. In OneNote, for example, it identifies unanswered questions all across existing notes and grouping them in one centralized location. In Teams, Copilot can extract action points from the conversation in real time.
 
 ### Everyday AI for productivity
 

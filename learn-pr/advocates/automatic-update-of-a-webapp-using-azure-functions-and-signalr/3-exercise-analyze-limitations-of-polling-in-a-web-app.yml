@@ -6,10 +6,9 @@ metadata:
   ms.date: 05/31/2019
   author: craigshoemaker
   ms.author: cshoe
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-azurecli
-  ms.prod: learning-azure
 title: Exercise - Analyze the limitations of a polling-based web app
 interactive: bash
 azureSandbox: true

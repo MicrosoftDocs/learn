@@ -17,7 +17,7 @@ The journey isn't over yet. Consider following up on these industry-based use ca
 - Explore the [mixed reality developer documentation](/windows/mixed-reality/?utm_source=developermscom).
 - Get started on your mixed reality [design journey](/windows/mixed-reality/design/design).
 - Get started on your mixed reality [development journey](/windows/mixed-reality/develop/development?tabs=unity).
-- Learn about the mixed reality Toolkit SDK for [Unity](https://github.com/microsoft/MixedRealityToolkit-Unity) and [Unreal Engine](https://github.com/microsoft/MixedReality-UXTools-Unreal).
+- Learn about the mixed reality Toolkit SDK for [Unity](https://github.com/MixedRealityToolkit/MixedRealityToolkit-Unity) and [Unreal Engine](https://github.com/microsoft/MixedReality-UXTools-Unreal).
 - Explore [Azure Cloud Services](/windows/mixed-reality/develop/mixed-reality-cloud-services).
 - Get started with [Dynamics 365 features](/dynamics365/mixed-reality).
 - Read [A Taxonomy of Mixed Reality Visual Displays](https://search.ieice.org/bin/summary.php?id=e77-d_12_1321).

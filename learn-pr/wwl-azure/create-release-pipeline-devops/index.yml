@@ -6,8 +6,7 @@ metadata:
   ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.topic: module
   ms.service: azure-devops-pipelines
   ms.subservice: azure-devops-pipelines-release
 title: Create a release pipeline

@@ -1,5 +1,4 @@
 
-
 You can let users enroll their personal devices for Intune management (BYOD). Once you've completed the prerequisites and assigned users licenses, they can download the Intune Company Portal app from the App Store, and follow enrollment instructions in the app.
 
 Enroll your iOS device using Company Portal

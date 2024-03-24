@@ -5,10 +5,9 @@ metadata:
   title: Key features
   description: "Lists the key features of Azure Private 5G Core"
   ms.date: 10/10/2022
-  author: rmcmurray
-  ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.service: learning-private-5g-core
+  author: lnyswonger
+  ms.author: lnyswonger
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/5-key-features.md)]

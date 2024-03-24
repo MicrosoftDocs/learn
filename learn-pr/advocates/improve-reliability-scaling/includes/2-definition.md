@@ -68,9 +68,9 @@ Later in this module, we look at other ways to design theses service to be more 
 
 Let's take a look at another issue that could prove troublesome. Here are the services/components that require us to pre-provision capacity:
 
-:::image type="content" source="../media/application-diagram-provisioned.png" alt-text="Full architecture diagram of application with Azure Cognitive Services, Cosmos DB, and SQL DB highlighted":::
+:::image type="content" source="../media/application-diagram-provisioned.png" alt-text="Full architecture diagram of application with Azure AI services, Cosmos DB, and SQL DB highlighted":::
 
-For example, with Cosmos DB, we pre-provision the throughput. If we exceed those limits, we’re going to start returning error messages to our customers. With Cognitive services, we select the tier and that tier has a maximum number of requests per second. After we reach either of limits, clients are going to be throttled.
+For example, with Cosmos DB, we pre-provision the throughput. If we exceed those limits, we’re going to start returning error messages to our customers. With Azure AI services, we select the tier and that tier has a maximum number of requests per second. After we reach either of limits, clients are going to be throttled.
 
 Will a significant spike in traffic, like launching a new product, make us hit these limits? Right now, we don’t know. This matter is another that we review later in this module.
 

@@ -42,7 +42,7 @@ To see a detailed report for a user, follow these steps:
 1.  Sign into **Microsoft Intune admin center**.
 2.  Select **Apps** > **Monitor** > **App protection status**.
 3.  Select either the **User status for iOS** tile or the **User status for Android** tile.
-4.  On the **App reporting** page, select **Select user** to search for an Azure AD user.
+4.  On the **App reporting** page, select **Select user** to search for a Microsoft Entra user.
 5.  Select a user from the list i.e **Debra Berger** and then select **Select**. You can see the user name, if the user has a license for Intune and details of the compliance status for that user:
 
 :::image type="content" source="../media/intune-user-app-license-7b7d1c74.png" alt-text="Screenshot of the app reporting screen in the Intune app protection pane.":::

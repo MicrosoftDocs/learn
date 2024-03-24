@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.saas-technical-foundations.microservices-on-azure
+title: Microservices on Azure
+metadata:
+  title: Microservices on Azure
+  description: "In this module, you discover the key Azure tools for microservices. We cover the main computing services used in microservices and take a closer look at your data storage choices."
+  ms.date: 2/9/2024
+  author: kostinams
+  ms.author: irkostin
+  ms.topic: unit
+  ms.service: architecture-center
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-microservices-on-azure.md)]

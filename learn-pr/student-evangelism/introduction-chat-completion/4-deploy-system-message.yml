@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.chat-completions.deploy-system-messages
+title: "Deploy system messages"
+metadata:
+  title: "Deploy system messages"
+  description: Learn about inputting system messages.
+  ms.date: 12/11/2023
+  author: softchris
+  ms.author: chnoring
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-deploy-system-message.md)]

@@ -4,13 +4,12 @@ title: Integrate private endpoint with DNS
 metadata:
   title: Integrate private endpoint with DNS
   description: "Integrate private endpoint with DNS"
-  ms.date: 04/27/2023
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 17
 content: |
   [!include[](includes/4-integrate-private-link-dns.md)]

@@ -1,6 +1,7 @@
 
 
 
+
 The messaging entities that form the core of the messaging capabilities in Service Bus are **queues**, **topics and subscriptions**, and rules/actions.
 
 ## Queues

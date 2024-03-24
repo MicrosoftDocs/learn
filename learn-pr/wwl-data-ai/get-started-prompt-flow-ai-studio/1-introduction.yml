@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.get-started-prompt-flow-ai-studio.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introducing prompt flow as a feature of Azure Machine Learning and Azure AI Studio."
+  ms.date: 01/25/2024
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

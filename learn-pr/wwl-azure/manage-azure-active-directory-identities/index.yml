@@ -1,22 +1,22 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-azure-active-directory-identities
 metadata:
-  title: Manage Azure Active Directory identities
-  description: "This module enables you to handle Azure AD tasks, including RBAC, user/group management, PowerShell cmdlets, and AD DS object synchronization. You'll effectively utilize and manage Azure AD in your organization after completing this module."
-  ms.date: 05/12/2023
+  title: Manage Microsoft Entra identities
+  description: "This module enables you to handle Microsoft Entra ID tasks, including RBAC, user/group management, PowerShell cmdlets, and AD DS object synchronization. You'll effectively utilize and manage Microsoft Entra ID in your organization after completing this module."
+  ms.date: 09/01/2023
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
-  ms.service: active-directory
-title: Manage Azure Active Directory identities
-summary: This module teaches how to use Azure AD effectively. You'll learn about RBAC, user roles, creating and managing users and groups, using PowerShell cmdlets, and synchronizing objects from AD DS to Azure AD.
+  ms.topic: module
+  ms.service: windows
+title: Manage Microsoft Entra identities
+summary: This module teaches how to use Microsoft Entra ID effectively. You'll learn about RBAC, user roles, creating and managing users and groups, using PowerShell cmdlets, and synchronizing objects from AD DS to Microsoft Entra ID.
 abstract: |
   After this module, you should be able to:
-  - Describe RBAC and user roles in Azure AD.
-  - Create and manage users in Azure AD.
-  - Create and manage groups in Azure AD.
-  - Use Windows PowerShell cmdlets to manage Azure AD.
-  - Describe how you can synchronize objects from AD DS to Azure AD.
+  - Describe RBAC and user roles in Microsoft Entra ID.
+  - Create and manage users in Microsoft Entra ID.
+  - Create and manage groups in Microsoft Entra ID.
+  - Use Windows PowerShell cmdlets to manage Microsoft Entra ID.
+  - Describe how you can synchronize objects from AD DS to Microsoft Entra ID.
 prerequisites: |
   - Strong technical skills installing, maintaining, and troubleshooting the Windows 11 OS or later.
   - Strong understanding of computer networking, client security, and application concepts.
@@ -31,10 +31,7 @@ roles:
 products:
 - azure-powershell
 - mem
-- mem-configuration-manager
-- mem-intune
 - active-directory
-- azure-active-directory-connect
 units:
 - learn.wwl.manage-azure-active-directory-identities.introduction
 - learn.wwl.manage-azure-active-directory-identities.examine-role-based-access-control-user-roles-azure-active-directory

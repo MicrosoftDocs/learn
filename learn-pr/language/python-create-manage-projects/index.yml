@@ -7,7 +7,7 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-python
   ms.devlang: python
 title: Create and manage projects in Python
@@ -31,8 +31,6 @@ roles:
   - student
 products:
   - azure
-subjects:
-- development-tools
 units:
   - learn.beginner-python.create-manage-projects.introduction
   - learn.beginner-python.create-manage-projects.set-up-project

@@ -1,4 +1,3 @@
-
 ## Authentication
 
 To register an agent, you need to be a member of the administrator role in the agent pool.

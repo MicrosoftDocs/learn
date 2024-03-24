@@ -105,10 +105,10 @@ This challenge helps reinforce your understanding of log files in Azure Pipeline
 
 For more information about Azure Key Vault and pipeline integration, see:
 
-- [Manage application configuration data.](https://learn.microsoft.com/training/modules/manage-application-configuration-data/)
-- [Use Azure Key Vault secrets in Azure Pipelines.](https://learn.microsoft.com/azure/devops/pipelines/release/azure-key-vault/)
-- [Azure Key Vault keys, secrets and certificates overview.](https://learn.microsoft.com/azure/key-vault/general/about-keys-secrets-certificates)
-- [Repository protection](https://learn.microsoft.com/azure/devops/pipelines/security/repos/)
-- [Plan how to secure your YAML pipelines](https://learn.microsoft.com/azure/devops/pipelines/security/approach)
-- [Other security considerations](https://learn.microsoft.com/azure/devops/pipelines/security/misc)
-- [Recommendations to securely structure projects in your pipeline](https://learn.microsoft.com/azure/devops/pipelines/security/projects/)
+- [Manage application configuration data.](/training/modules/manage-application-configuration-data/)
+- [Use Azure Key Vault secrets in Azure Pipelines.](/azure/devops/pipelines/release/azure-key-vault/)
+- [Azure Key Vault keys, secrets and certificates overview.](/azure/key-vault/general/about-keys-secrets-certificates)
+- [Repository protection](/azure/devops/pipelines/security/repos/)
+- [Plan how to secure your YAML pipelines](/azure/devops/pipelines/security/approach)
+- [Other security considerations](/azure/devops/pipelines/security/misc)
+- [Recommendations to securely structure projects in your pipeline](/azure/devops/pipelines/security/projects/)

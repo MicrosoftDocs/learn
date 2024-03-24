@@ -2,17 +2,17 @@ In this module, you learned to implement a release based workflow on GitHub usin
 
 You learned about:
 
-- Building a project board to manage your next release
-- Creating and commit changes on a release branch
-- Creating a Git tag and a release on GitHub
-- Resolving bugs after a release
-- Automating and better documenting your release changes
+- Building a project board to manage your next release.
+- Creating and committing changes on a release branch.
+- Creating a Git tag and a release on GitHub.
+- Resolving bugs after a release.
+- Automating and better documenting your release changes.
 
-Now that you have learned about release based workflows, learn to [Manage repository changes by using pull requests on GitHub](/training/modules/manage-changes-pull-requests-github?azure-portal=true).
+Now that you learned about release based workflows, learn to [Manage repository changes by using pull requests on GitHub](/training/modules/manage-changes-pull-requests-github?azure-portal=true).
 
 ## Learn more
 
-Here are some links to more information on the topics we discussed in this module.
+Here are some links to more information about the subjects we discussed in this module.
 
 - [Managing project boards](https://help.github.com/github/managing-your-work-on-github/managing-project-boards?azure-portal=true)
 - [Tracking the progress of your work with project boards](https://help.github.com/github/managing-your-work-on-github/tracking-the-progress-of-your-work-with-project-boards?azure-portal=true)

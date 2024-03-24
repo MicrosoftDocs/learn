@@ -42,7 +42,7 @@ The Resize remote action lets you upgrade a Cloud PC’s RAM, CPU, and storage s
 
 To resize a Cloud PC, the following are required:
 
- -  The admin must have either Global Admin or the Intune Service Admin Azure AD role
+ -  The admin must have either Global Admin or the Intune Service Admin Microsoft Entra role
  -  The Cloud PC must have a status of provisioned.
  -  The user must be signed out with all work saved as resizing disconnects their session.
 

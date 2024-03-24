@@ -5,10 +5,9 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 09/22/2020
-  author: martinekuan
-  ms.author: martinek
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/5-summary.md)]

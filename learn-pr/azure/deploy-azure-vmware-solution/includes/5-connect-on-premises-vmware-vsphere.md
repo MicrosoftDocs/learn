@@ -2,7 +2,7 @@ After the Azure VMware Solution is deployed, network connectivity is the next st
 
 ## Create an Azure Bastion resource
 
-After the Azure VMware Solution is deployed, you'll create an Azure Bastion resource. The Azure Bastion resource provides secure RDP connectivity to your Azure infrastructure as a service (IaaS) environment. You use Azure Bastion initially to connect to the jump host that will allow you to log into the Azure VMware Solution vCenter and NSX environments.
+After the Azure VMware Solution is deployed, you'll create an Azure Bastion resource. The Azure Bastion resource provides secure Remote Desktop connectivity to your Azure infrastructure as a service (IaaS) environment. You use Azure Bastion initially to connect to the jump host that will allow you to log in to the Azure VMware Solution vCenter and NSX environments.
 
 When the ExpressRoute circuits and ExpressRoute Global Reach have been configured for hybrid connectivity, you no longer need the Azure Bastion resource. Your company might still want to keep the resource as a backup in case you have connectivity issues with the ExpressRoute circuits in the future.
 
@@ -24,18 +24,18 @@ To create an Azure Bastion resource:
     | **Instance Count** | Defaults to 2 when **Basic** is chosen. |
     | **Virtual network** | Select the virtual network that was created when you deployed Azure VMware Solution. |
     | **Subnet** | Azure Bastion requires a dedicated subnet. For the virtual network created during the Azure VMware Solution deployment, select **Manage subnet configuration** to create the dedicated subnet. Select **+Subnet**, and then create a subnet with the name **AzureBastionSubnet** and at /27 or higher. |
-    | **Public IP address** | The public IP allows RDP and SSH over port 443 to Azure Bastion. Create a new public IP and place the resource in the same region as both Azure VMware Solution and Azure Bastion. This new public IP is separate from the Azure VMware Solution deployment. |
+    | **Public IP address** | The public IP allows Remote and SSH over port 443 to Azure Bastion. Create a new public IP and place the resource in the same region as both Azure VMware Solution and Azure Bastion. This new public IP is separate from the Azure VMware Solution deployment. |
     | **Public IP address name** | Provide a name for the public IP-address resource. |
     | **Public IP address SKU** | By default, this setting is prepopulated to **Standard** because Azure Bastion supports only the Standard Public IP SKU. |
     | **Assignment** | By default, this setting is pre-populated to **Static**. The best practice is to leave assignment at static. |
 
 ## Create an Azure VM to use as a jump host
 
-After Azure VMware Solution and the Azure Bastion resource are deployed, create a jump host to access to the private cloud. The jump host must be located in the same virtual network and subscription as Azure VMware Solution and the Azure Bastion resource. The jump host can be either a desktop or server version of Windows. The jump host will be deployed behind the Azure Bastion resource. You'll use Azure Bastion to access to the jump host via RDP in the Azure portal over TLS.
+After Azure VMware Solution and the Azure Bastion resource are deployed, create a jump host to access to the private cloud. The jump host must be located in the same virtual network and subscription as Azure VMware Solution and the Azure Bastion resource. The jump host can be either a desktop or server version of Windows. The jump host will be deployed behind the Azure Bastion resource. You'll use Azure Bastion to access to the jump host via Remote Desktop in the Azure portal over Transport Layer Security (TLS).
 
-## Use Azure Bastion and sign into vCenter and NSX-T Manager
+## Use Azure Bastion and sign in to vCenter and NSX-T Manager
 
-Use Azure Bastion to sign into the jump-host VM. Then, open a web browser, go to both vCenter and NSX-T Manager, and sign into each. The Azure portal will provide the vCenter IP address, the NSX-T Manager console's IP addresses, and credentials used for deployment. Accessing the jump host through Azure Bastion will allow you to configure NSX-T and vCenter.
+Use Azure Bastion to sign in to the jump-host VM. Then, open a web browser, go to both vCenter and NSX-T Manager, and sign in to each. The Azure portal will provide the vCenter IP address, the NSX-T Manager console's IP addresses, and credentials used for deployment. Accessing the jump host through Azure Bastion will allow you to configure NSX-T and vCenter.
 
 :::image type="content" source="../media/5-login-credentials-vcenter-nsxt.png" alt-text="Screenshot of the Azure portal page, showing where login credentials are displayed after Azure VMware Solution has been deployed.":::
 

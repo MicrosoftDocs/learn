@@ -1,5 +1,3 @@
-
-
 After deploying a real-time service, you can consume it from client applications to predict labels for new data cases.
 
 ## Use the Azure Machine Learning studio

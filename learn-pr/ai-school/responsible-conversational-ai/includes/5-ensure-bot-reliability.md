@@ -22,7 +22,7 @@ Inevitably, some (if not quite a few!) problems can’t be solved through user-b
 
 This is especially important for bots that work in sensitive or critical areas. Human users need to be assured that the bot can call for help, and the call will be answered. Users will feel much more comfortable with bots, and will have a much higher level of trust, if they know a human is just around the corner.
 
-Being able to gauge a user’s sentiment from moment to moment is invaluable for good bot interaction. For sentiment analysis, feedback, and to identify human handoff points, you could integrate Azure Cognitive Services like [Text Analytics](/azure/bot-service/bot-service-design-pattern-handoff-human?view=azure-bot-service-4.0 "Text Analytics") or [Content Moderator](https://azure.microsoft.com/services/cognitive-services/content-moderator/ "Content Moderator").
+Being able to gauge a user’s sentiment from moment to moment is invaluable for good bot interaction. For sentiment analysis, feedback, and to identify human handoff points, you could integrate Azure AI services like [Text Analytics](/azure/bot-service/bot-service-design-pattern-handoff-human?view=azure-bot-service-4.0 "Text Analytics") or [Content Moderator](https://azure.microsoft.com/services/cognitive-services/content-moderator/ "Content Moderator").
 
 ## Build traceability into your bot
 

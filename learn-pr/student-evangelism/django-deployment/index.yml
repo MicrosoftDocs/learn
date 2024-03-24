@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/01/2021
   author: GeekTrainer
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
   ms.service: postgresql
 title: Deploy a Django application to Azure by using PostgreSQL
@@ -33,7 +33,7 @@ roles:
 - student
 - developer
 products:
-- azure-app-service-web
+- azure-app-service
 - vs-code
 subjects:
 - data-engineering

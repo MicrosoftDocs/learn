@@ -58,31 +58,40 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 > [!NOTE]
 > The resources deployed and configuration steps completed in this exercise are required in the next exercise. If you intended completing the next exercise, do not delete the resources from this exercise.
 
-## Task 3: Configure Microsoft Sentinel connectors
+## Task 3: Configure Microsoft Sentinel Data connectors
 
-In this task, you deploy a Microsoft Sentinel connector to Azure Activity.
+In this task, you deploy a Microsoft Sentinel Data connector to detect Azure Activity.
 
 1. In the Azure portal, select **Home**, and then search for and select **Microsoft Sentinel**.
 
 1. In the list of Sentinel workspace names, select the Microsoft Sentinel workspace you created in Task 2. The **Overview** pane for your Sentinel workspace appears.
 
-1. In the middle menu pane, under **Configuration**, select **Data connectors**. The **Data connectors** pane appears.
+1. In the menu pane, under **Content management**, select **Content hub**. The **Content hub** pane appears.
 
-1. In the *Search by name or provider* search box, search for and select **Azure Activity**. The **Azure Activity** details pane appears.
+1. In the *Search* box, search for and select the **Azure Activity** Solution. On the **Azure Activity** details pane, select **Install**.
 
-1. Select **Open connector page**.
+1. Wait for the install to complete and them select **Manage**.
 
-1. In the Configuration area, scroll down and under "2. Connect your subscriptions..." select **Launch Azure Policy Assignment Wizard>**.
+1. In the *Search* box, search for and select the **Azure Activity** Data connector. 
 
-1. In the **Basics** tab, select the ellipsis button (...) under **Scope** and select your "Azure subscription" from the drop-down list and click **Select**.
+1. On the **Azure Activity** details pane, select **Open connector page**.
+
+1. In the *Instructions* tab, *Configuration* area, scroll down and under "2. Connect your subscriptions..." select **Launch Azure Policy Assignment Wizard>**.
+
+1. In the **Basics** tab, select the ellipsis button (...) under **Scope** and select your "Azure subscription" from the drop-down list and select **Select**.
 
 1. Select the **Parameters** tab, choose your *yourName-sentinel* workspace from the **Primary Log Analytics workspace** drop-down list.
 
 1. Select the **Remediation** tab and select the **Create a remediation task** checkbox. This action applies the subscription configuration to send the information to the Log Analytics workspace.
 
+   > [!NOTE]
+   > To apply the policy to your existing resources, you need to create a remediation task.
+
 1. Select the **Review + Create** button to review the configuration.
 
 1. Select **Create** to finish.
+
+1. Once the deployment is complete, you'll see the **Connected** status (green bar) for the Azure Activity connector in the *Configuration/Data connectors* pane.
 
 :::image type="content" source="../media/07-azure-sentinel-connector.png" alt-text="Screenshot of the Microsoft Sentinel connector." border="true":::
 

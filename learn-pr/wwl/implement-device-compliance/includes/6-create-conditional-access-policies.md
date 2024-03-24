@@ -1,5 +1,3 @@
-
-
 You use conditions and controls to create conditional access policies.
 
 ### Conditions
@@ -42,7 +40,7 @@ You can configure advanced settings in conditional access for more granular cont
  -  Allow or block certain platforms.
  -  Immediately block devices that aren't managed by Intune.
 
-Any device used to access Exchange on-premises is checked for compliance when device compliance and conditional access policies are applied. When devices don't meet the conditions set, the end user is guided through the process of enrolling the device via the Azure AD Device Registration Server (DRS) to fix the issue that is making the device noncompliant.
+Any device used to access Exchange on-premises is checked for compliance when device compliance and conditional access policies are applied. When devices don't meet the conditions set, the end user is guided through the process of enrolling the device via the Microsoft Entra Device Registration Server (DRS) to fix the issue that is making the device noncompliant.
 
 The Intune Exchange connector pulls in all the Exchange ActiveSync records that exist at the Exchange server so Intune can take these EAS records and map them to Intune device records. These records are devices enrolled and recognized by Intune. This process allows or blocks e-mail access.
 

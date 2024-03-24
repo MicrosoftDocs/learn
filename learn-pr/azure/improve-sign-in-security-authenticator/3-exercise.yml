@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.improve-sign-in-security-authenticator.exercise.prepare-azure-ad-environment 
-title: Practice preparing your Azure AD environment
+title: Practice preparing your Microsoft Entra environment
 metadata:
   unitType: exercise
-  title: exercise
+  title: Practice preparing your Microsoft Entra environment
   description: "Enable remote employees for Microsoft Authenticator and enable a registration campaign to nudge them to set up Microsoft Authenticator when they sign in."
   ms.date: 7/27/2022
   author: Justinha
   ms.author: Justinha
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise.md)]

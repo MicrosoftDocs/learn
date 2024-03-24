@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.explore-oracle-high-availability
+title: Explore Oracle high availability for SAP in Azure
+metadata:
+  title: Explore Oracle high availability for SAP in Azure
+  description: "Explore Oracle high availability for SAP in Azure"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/10-explore-oracle-high-availability.md)]

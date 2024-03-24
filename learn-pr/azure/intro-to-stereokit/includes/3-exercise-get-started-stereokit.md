@@ -43,9 +43,7 @@ There are two templates provided:
 
    :::image type="content" source="../media/stereokit-templates-visual-studio.png" alt-text="Screenshot of downloaded stereoKit templates in Visual Studio." lightbox="../media/stereokit-templates-visual-studio.png":::
 
-3. **[Cross-Platform Template (in development)](https://github.com/StereoKit/StereoKit/tree/master/Templates)**: This is an early version that's still in project format. It works with .NET Core, UWP, and Xamarin (Android/Quest) all at once via a DLL shared between multiple platform-specific projects.
-
-4. **[Native C++ Template (in development)](https://github.com/StereoKit/StereoKit/tree/master/StereoKit/Native)**: StereoKit does provide a C API, but experienced developers should only choose this if the benefits outweigh the lack of C API documentation.
+3. **[Native C++ Template (in development)](https://github.com/StereoKit/StereoKit/tree/master/StereoKit/Native)**: StereoKit does provide a C API, but experienced developers should only choose this if the benefits outweigh the lack of C API documentation.
 
 > [!Note]
 > Iteration is slower with Universal Windows Platform, so use it only if HoloLens is essential to you. Building for ARM instead of ARM64 can save some time, as it can skip the .NET Native compile required by ARM64.

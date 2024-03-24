@@ -32,12 +32,14 @@ You can quickly and easily grab a secret from your key vault using scripting lan
 ```
 az keyvault secret show --name "mySC300keyvaultSecret" --vault-name "<your-unique-keyvault-name>" --query "value"
 
+
 ```
 
 ***PowerShell***
 
 ```
 $secret = Get-AzKeyVaultSecret -VaultName "<your-unique-keyvault-name>" -Name "mySC300keyvaultSecret" -AsPlainText
+
 
 ```
 

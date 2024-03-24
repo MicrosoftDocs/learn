@@ -1,4 +1,3 @@
-
 As discussed in the previous unit, Microsoft has developed and refined its own internal process to govern AI responsibly. This unit explains how this governance system works in a real situation. While every organization needs its own unique governance frameworks and review processes, we believe that our sensitive use framework can serve as a helpful starting point. One of Microsoft's early steps in our responsible AI governance process was to use a sensitive uses review trigger. The framework helped our internal and customer-facing teams identify when specific use cases need more guidance.
 
 ## Microsoft sensitive use case framework

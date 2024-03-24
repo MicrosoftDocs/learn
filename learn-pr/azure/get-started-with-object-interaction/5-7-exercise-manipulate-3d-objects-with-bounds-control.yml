@@ -4,14 +4,11 @@ title: Exercise - Manipulate 3D objects using bounds control
 
 metadata:
   title: Exercise - Manipulate 3D objects using bounds control
-
   description: Introduction for Manipulate 3D objects using bounds control
-
-  ms.date: 09/09/2021
-  author: Sean-Kerawala
-  ms.author: sekerawa
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.date: 06/26/2023
+  author: marlenaklein-msft
+  ms.author: marlenaklein
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/5-7-exercise-manipulate-3d-objects-with-bounds-control.md)]

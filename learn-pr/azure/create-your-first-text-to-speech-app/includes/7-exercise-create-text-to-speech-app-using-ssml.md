@@ -1,4 +1,4 @@
-In this exercise, you'll create an XML file that contains Speech Synthesis Markup Language (SSML), which you'll use to customize the audio output from the Azure Cognitive Services speech APIs.
+In this exercise, you'll create an XML file that contains Speech Synthesis Markup Language (SSML), which you'll use to customize the audio output from the Azure AI speech APIs.
 
 ## Create an SSML file for your application to read
 
@@ -12,7 +12,7 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
 
     ```xml
     <speak xmlns="http://www.w3.org/2001/10/synthesis" version="1.0" xml:lang="en-US">
-   
+
     </speak>
     ```
 
@@ -30,7 +30,7 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
 
     This code excerpt defines a `<voice>` element that specifies a different voice than the default, and wraps the text within a `<prosody>` element that slows the speaking rate by 10% and lowers the pitch by 5%.
 
-1. Add the following xml after the previous `<voice>` element to define text that the `en-GB-RyanNeural` voice will read.
+1. Add the following XML after the previous `<voice>` element to define text that the `en-GB-RyanNeural` voice will read.
 
     ```xml
     <voice name="en-GB-RyanNeural">
@@ -48,7 +48,7 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
 
     Like the previous code excerpt, this excerpt defines a `<voice>` element that specifies a different voice and wraps the text within a `<prosody>` element that alters the speaking rate and pitch. However, this excerpt also contains `<break>` elements that add pauses between phrases.
 
-1. Add the following xml after the previous `<voice>` element to define text that the `en-IE-ConnorNeural` voice will read.
+1. Add the following XML after the previous `<voice>` element to define text that the `en-IE-ConnorNeural` voice will read.
 
     ```xml
     <voice name="en-IE-ConnorNeural">
@@ -63,19 +63,19 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
     </voice>
     ```
 
-    Like the last two code excerpts, this excerpt defines a `<voice>` element that specifies a different voice and wraps the text within a `<prosody>` element that alters the speaking rate and pitch, and also contains `<break>` elements that add a pause between phrases. However, this excerpt also contains a `<phoneme>` element that helps the text-to-speech engine to pronounce an older English word that it might not know how to pronounce.
+    Like the last two code excerpts, this excerpt defines a `<voice>` element that specifies a different voice and wraps the text within a `<prosody>` element that alters the speaking rate and pitch, and also contains `<break>` elements that add a pause between phrases. However, this excerpt also contains a `<phoneme>` element that helps the text to speech engine to pronounce an older English word that it might not know how to pronounce.
 
 1. When you've finished adding all of the code, your XML file should resemble the following example:
 
     ```xml
     <speak xmlns="http://www.w3.org/2001/10/synthesis" version="1.0" xml:lang="en-US">
-      
+
       <voice name="en-GB-LibbyNeural">
         <prosody rate="-10%" pitch="-5%">
         The following quotes are from act 2, scene 7, of William Shakespeare's play "As You Like It."
         </prosody>
       </voice>
-    
+
       <voice name="en-GB-RyanNeural">
         <break time="1s" />
         <prosody rate="-5%" pitch="-10%">
@@ -98,13 +98,13 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
         Wherein we play in.
         </prosody>
       </voice>
-    
+
     </speak>
     ```
 
-1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file, and then press <kbd>Ctrl-Q</kbd> to exit the editor.
+1. To save your changes, press <kbd>Ctrl+S</kbd> to save the file, and then press <kbd>Ctrl+Q</kbd> to exit the editor.
 
-## Update the code for your text-to-speech application for SSML
+## Update the code for your text to speech application for SSML
 
 1. In the Cloud Shell on the right, open the *Program.cs* file:
 
@@ -147,12 +147,12 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
     using System.Text;
     using Microsoft.CognitiveServices.Speech;
     using Microsoft.CognitiveServices.Speech.Audio;
-    
+
     string azureKey = "ENTER YOUR KEY FROM THE FIRST EXERCISE";
     string azureLocation = "ENTER YOUR LOCATION FROM THE FIRST EXERCISE";
     string ssmlFile = "Shakespeare.xml";
     string waveFile = "Shakespeare.wav";
-    
+
     try
     {
         FileInfo fileInfo = new FileInfo(ssmlFile);
@@ -169,13 +169,13 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
     catch (Exception ex)
     {
         Console.WriteLine(ex.Message);
-                 
+
     }
     ```
 
     As with the previous exercise, make sure that you update the values for the `azureKey` and `azureLocation` variables with your key and location from the first exercise.
 
-1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file, and then press <kbd>Ctrl-Q</kbd> to exit the editor.
+1. To save your changes, press <kbd>Ctrl+S</kbd> to save the file, and then press <kbd>Ctrl+Q</kbd> to exit the editor.
 
 ## Run your application
 
@@ -205,4 +205,4 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
 
 ## Optional: Listen to your WAV file
 
-[!include[](listen-to-your-wave-file.md)]
+[!INCLUDE[](listen-to-your-wave-file.md)]

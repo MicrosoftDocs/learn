@@ -7,8 +7,8 @@ metadata:
   ms.date: 06/12/2023
   author: obrocki
   ms.author: dawidobrocki
-  ms.topic: interactive-tutorial
-  ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
+  ms.topic: unit
+  ms.custom: devx-track-dotnet
 durationInMinutes: 2
 content: |
   [!include[](includes/8-vulnerable-outdated-components.md)]

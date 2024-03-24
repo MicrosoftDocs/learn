@@ -4,13 +4,11 @@ title: Describe feature toggle maintenance
 metadata:
   title: Describe feature toggle maintenance
   description: "Describe feature toggle maintenance"
-  ms.date: 06/08/2023
+  ms.date: 10/13/2023
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.topic: unit
+  ms.service: azure
+durationInMinutes: 2
 content: |
   [!include[](includes/6-describe-feature-toggle-maintenance.md)]

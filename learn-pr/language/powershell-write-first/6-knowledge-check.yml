@@ -4,13 +4,11 @@ title: Knowledge check
 metadata:
   title: Check your knowledge
   description: Review what you've learned in this module.
-  ms.date: 03/29/2023
+  ms.date: 10/04/2023
   author: michaeltlombardi
   ms.author: mlombardi
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
-    - devx-track-azurepowershell
-  ms.prod: learning-languages
 durationInMinutes: 2
 quiz:
   title: Check your knowledge

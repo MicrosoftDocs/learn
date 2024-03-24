@@ -4,100 +4,97 @@ Labeling, or tagging, your data correctly is an important part of the process to
 - **Precision** - Label your entities consistently, without unnecessary extra words. Precision ensures only the correct data is included in your extracted entity.
 - **Completeness** - Label your data completely, and don't miss any entities. Completeness helps your model always recognize the entities present.
 
-![Screenshot of labeling an entity in Language Studio.](../media/ner-tag-entity-screenshot.png#lightbox)
+:::image type="content" source="../media/tag-entity-screenshot.png" alt-text="Screenshot of labeling an entity in Language Studio." lightbox="../media/tag-entity-screenshot.png":::
 
 ## How to label your data
 
 Language Studio is the most straight forward method for labeling your data. Language Studio allows you to see the file, select the beginning and end of your entity, and specify which entity it is.
 
-Each label that you identify gets saved into a file that lives in your storage account with your dataset, in an auto-generated JSON file. This file then gets used by the model to learn how to extract custom entities. It's possible to provide this file when creating your project (if you're importing the same labels from a different project, for example) however it must be in the approved format.
+Each label that you identify gets saved into a file that lives in your storage account with your dataset, in an auto-generated JSON file. This file then gets used by the model to learn how to extract custom entities. It's possible to provide this file when creating your project (if you're importing the same labels from a different project, for example) however it must be in the [Accepted custom NER data formats](/azure/ai-services/language-service/custom-named-entity-recognition/concepts/data-formats).
+For example:
 
 ```json
+
 {
-    "entityNames": [
-        "ItemForSale",
-        "Price",
-        "Location"
+  "projectFileVersion": "{DATE}",
+  "stringIndexType": "Utf16CodeUnit",
+  "metadata": {
+    "projectKind": "CustomEntityRecognition",
+    "storageInputContainerName": "{CONTAINER-NAME}",
+    "projectName": "{PROJECT-NAME}",
+    "multilingual": false,
+    "description": "Project-description",
+    "language": "en-us",
+    "settings": {}
+  },
+  "assets": {
+    "projectKind": "CustomEntityRecognition",
+    "entities": [
+      {
+        "category": "Entity1"
+      },
+      {
+        "category": "Entity2"
+      }
     ],
     "documents": [
-        {
-            "location": "Ad 1.txt",
-            "culture": "en-us",
-            "entities": [
-                {
-                    "regionStart": 0,
-                    "regionLength": 137,
-                    "labels": [
-                        {
-                            "entity": 0,
-                            "start": 0,
-                            "length": 23,
-                            "autoTagged": false
-                        },
-                        {
-                            "entity": 2,
-                            "start": 115,
-                            "length": 10,
-                            "autoTagged": false
-                        },
-                        {
-                            "entity": 1,
-                            "start": 134,
-                            "length": 3,
-                            "autoTagged": false
-                        }
-                    ]
-                }
-            ],
-            "datasets": [
-                "Train"
+      {
+        "location": "{DOCUMENT-NAME}",
+        "language": "{LANGUAGE-CODE}",
+        "dataset": "{DATASET}",
+        "entities": [
+          {
+            "regionOffset": 0,
+            "regionLength": 500,
+            "labels": [
+              {
+                "category": "Entity1",
+                "offset": 25,
+                "length": 10
+              },
+              {
+                "category": "Entity2",
+                "offset": 120,
+                "length": 8
+              }
             ]
-        },
-        {
-            "location": "Ad 10.txt",
-            "culture": "en-us",
-            "entities": [
-                {
-                    "regionStart": 0,
-                    "regionLength": 163,
-                    "labels": [
-                        {
-                            "entity": 0,
-                            "start": 0,
-                            "length": 29
-                        },
-                        {
-                            "entity": 2,
-                            "start": 33,
-                            "length": 12
-                        },
-                        {
-                            "entity": 1,
-                            "start": 159,
-                            "length": 4
-                        }
-                    ]
-                }
-            ],
-            "datasets": [
-                "Train"
+          }
+        ]
+      },
+      {
+        "location": "{DOCUMENT-NAME}",
+        "language": "{LANGUAGE-CODE}",
+        "dataset": "{DATASET}",
+        "entities": [
+          {
+            "regionOffset": 0,
+            "regionLength": 100,
+            "labels": [
+              {
+                "category": "Entity2",
+                "offset": 20,
+                "length": 5
+              }
             ]
-        }
+          }
+        ]
+      }
     ]
+  }
 }
+
 ```
 
 | Field | Description |
 |-------|-------------|
-| `entityNames` | Array of entities to extract |
 | `documents` | Array of labeled documents |
 | `location` | Path to file within container connected to the project |
-| `culture` | Language of the file |
+| `language` | Language of the file |
 | `entities` | Array of present entities in the current document |
-| `regionStart` | Inclusive character position for start of text |
+| `regionOffset` | Inclusive character position for start of text |
 | `regionLength` | Length in characters of the data used in training |
+| `category` |Name of entity to extract |
 | `labels` | Array of labeled entities in the files |
-| `entity` | Which entity this label references, by index in `entityNames` |
-| `start` | Inclusive character position for start of entity |
+| `offset` | Inclusive character position for start of entity |
 | `length` | Length in characters of the entity |
-| `datasets` | Which dataset the file is assigned to |
+| `dataset` | Which dataset the file is assigned to |

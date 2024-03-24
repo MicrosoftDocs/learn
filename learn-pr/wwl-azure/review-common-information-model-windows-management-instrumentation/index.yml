@@ -6,7 +6,7 @@ metadata:
   ms.date: 12/21/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Review CIM and WMI
 summary: This module covers CIM and WMI technologies to connect to a common information repository that contains management information that you can query and manipulate.
 abstract: |
@@ -28,14 +28,13 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-cloud-shell
 - azure-powershell
 - azure-virtual-machines
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

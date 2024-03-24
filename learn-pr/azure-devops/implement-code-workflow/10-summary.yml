@@ -8,8 +8,7 @@ metadata:
   author: juliakm
   ms.author: jukullam
   ms.custom: devdivchpfy22
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/10-summary.md)]

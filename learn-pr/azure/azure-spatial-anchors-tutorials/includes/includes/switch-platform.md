@@ -1,4 +1,4 @@
-## [Unity 2020 + OpenXR](#tab/openxr)
+## [Unity 2021 + OpenXR](#tab/openxr)
 
 1. On the menu bar, select **Window** > **Package Manager**. 
 
@@ -12,8 +12,8 @@
 
 2. Download and import the following Unity custom packages in this order:
 
-    * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
-    * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.XRplugginManagement.2.5.3.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.5.3.1/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.XRplugginManagement.2.5.3.unitypackage)
+    * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.3.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v3.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.3.0.0.unitypackage)
+    * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.3.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v3.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.3.0.0.unitypackage)
 
     After you've imported the tutorial assets, your **Project** pane should look similar to this image:
 

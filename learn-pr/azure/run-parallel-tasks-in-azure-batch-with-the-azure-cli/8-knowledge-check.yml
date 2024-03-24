@@ -5,9 +5,8 @@ metadata:
   description: Knowledge check
   ms.date: 05/06/2019
   author: lauradolan
-  ms.author: ladolan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: jushiman
+  ms.topic: unit
 title: Knowledge check
 durationInMinutes: 4
 quiz:

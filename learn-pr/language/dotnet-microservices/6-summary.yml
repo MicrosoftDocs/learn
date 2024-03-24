@@ -3,12 +3,11 @@ uid: learn.languages.dotnet-microservices.summary
 title: Summary
 metadata:
   title: Summary
-  description: In this module you learned how to build a microservice in .NET.
-  ms.date: 05/10/2021
+  description: In this module, you learned how to build container images and microservices in .NET.
+  ms.date: 01/22/2024
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
   ms.custom:
     - team=cloud_advocates
     - devx-track-dotnet

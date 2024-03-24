@@ -7,10 +7,9 @@ metadata:
   ms.date: 04/19/2023
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - build-2023
-  ms.prod: learning-azure
 durationInMinutes: 8
 content: |
   [!include[](includes/7-knowledge-check.md)]
@@ -43,10 +42,10 @@ quiz:
     choices:
     - content: "Creating a login and mapping it to a Purview policy"
       isCorrect: false
-      explanation: "That's incorrect. One way is creating a policy in Purview based on an Azure Active Directory (Azure AD) account."
-    - content: "Creating a policy in Purview based on an Azure Active Directory (Azure AD) account"
+      explanation: "That's incorrect. One way is creating a policy in Purview based on a Microsoft Entra account."
+    - content: "Creating a policy in Purview based on a Microsoft Entra account"
       isCorrect: true
-      explanation: "That's correct. One way is creating a policy in Purview based on an Azure Active Directory (Azure AD) account."
+      explanation: "That's correct. One way is creating a policy in Purview based on a Microsoft Entra account."
     - content: "Creating a role in SQL Server that maps to a Purview policy"
       isCorrect: false
-      explanation: "That's incorrect. One way is creating a policy in Purview based on an Azure Active Directory (Azure AD) account."
+      explanation: "That's incorrect. One way is creating a policy in Purview based on a Microsoft Entra account."

@@ -6,7 +6,7 @@ metadata:
   ms.date: 11/11/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Use methods to accept user inputs in Windows PowerShell scripts
 summary: This method explains multiple methods for accepting user input in a Windows PowerShell script.
 abstract: |
@@ -33,14 +33,13 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-cloud-services
 - azure-powershell
 - azure-virtual-machines
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

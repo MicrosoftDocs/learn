@@ -3,10 +3,10 @@ uid: learn-xamarin.separate-your-ui-and-code-with-xamarin-forms-data-binding
 metadata:
   title: Separate your UI and code with Xamarin.Forms data binding
   description: Explore ways to keep your UI properties synchronized when data changes by using Xamarin.Forms, while also improving code readability and reducing maintenance.
-  ms.date: 05/01/2019
+  ms.date: 02/20/2024
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: xamarin
   ms.subservice: xamarin-forms
 title: Separate your UI and code with Xamarin.Forms data binding

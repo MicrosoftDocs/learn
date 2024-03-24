@@ -15,7 +15,7 @@ In this unit, you'll do the following activities:
 > [!NOTE]
 > Make sure you have the most recent compiled version of the microservices by running a separate build, by running **mvn clean package -DskipTests**
 
-In the [Lab repository Extra folder](https://github.com/MicrosoftLearning/Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps/tree/master/Extra), the messaging-emulator microservice is already prepared to send messages to an Azure Service Bus namespace. You can add this microservice to your current Spring Petclinic project, deploy it as an extra microservice in your Azure Spring Apps service and use this microservice's public endpoint to send messages to your Service Bus namespace. Test this functionality and inspect whether messages end up in the Service Bus namespace you created by using the Service Bus Explorer for the visits-requests queue.
+In the Lab repository Extra folder, the messaging-emulator microservice is already prepared to send messages to an Azure Service Bus namespace. You can add this microservice to your current Spring Petclinic project, deploy it as an extra microservice in your Azure Spring Apps service and use this microservice's public endpoint to send messages to your Service Bus namespace. Test this functionality and inspect whether messages end up in the Service Bus namespace you created by using the Service Bus Explorer for the visits-requests queue.
 
 Do the following procedure to test and send messages to an Azure Service Bus.
 

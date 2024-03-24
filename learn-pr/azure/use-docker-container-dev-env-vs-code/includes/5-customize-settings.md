@@ -15,7 +15,7 @@ The `image` property defines how the container will be created, based on what's 
 },
 ```
 
-This image is hosted in the [devcontainers/images repo](https://github.com/devcontainers/images/tree/main/src/python), where you can check it out further.
+This image is hosted in the [devcontainers/images repo](https://github.com/devcontainers/images/tree/main/src/python), where you can check it out further. The images in this repo are all [pre-built images](https://containers.dev/guide/prebuild), which speed up your workflow and result in a simpler `.devcontainer/devcontainer.json` configuration. 
 
 You can also use files known as a Dockerfile or a Docker Compose file to configure your setup. These files can live in your `.devcontainer` folder and allow you to further configure certain setup requirements, like installing additional software. You can learn more in our [dev container documentation](https://containers.dev/guide/dockerfile).
 
@@ -35,7 +35,7 @@ As an example, you can set `vscode.settings` to copy machine-specific settings i
 
 In this Python container, you can [see these settings](https://github.com/devcontainers/images/blob/main/src/python/.devcontainer/devcontainer.json#L22) in its base image `mcr.microsoft.com/devcontainers/python:0-3.11`. They give the user an improved Python editing experience.
 
-- You can use the `extensions` array to specify which Visual Studio Code extensions should be installed in Visual Studio Code when it connects to the container. Your normal Visual Studio Code setup and all the extensions that you already have won't be present when you're using Dev Containers. Extensions are specified here with their IDs.
+- You can use the `extensions` array within the `customizations.vscode` property to specify which Visual Studio Code extensions should be installed in Visual Studio Code when it connects to the container. Your normal Visual Studio Code setup and all the extensions that you already have won't be present when you're using Dev Containers. Extensions are specified here with their IDs.
 
 ### postCreateCommand
 

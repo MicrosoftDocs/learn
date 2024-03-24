@@ -1,4 +1,3 @@
-
 In this unit, we discuss the importance of machine learning operations (MLOps). MLOps applies the methodology of DevOps (development and operations) to manage the machine learning lifecycle more efficiently. It enables a more agile, productive collaboration in AI teams among all stakeholders. These collaborations involve data scientists, AI engineers, app developers, and other IT teams.
 
 There are many available products to help teams implement MLOps. Microsoft offers Azure Machine Learning, Azure DevOps, and GitHub.
@@ -59,6 +58,6 @@ No matter where you deploy the model, the workflow is similar. First, you regist
 
 Although this is the end of the development process, this is just the beginning of the maintenance cycle. Models need to be monitored and periodically retrained to correct performance issues and take advantage of newer training data. To set yourself up for success, you want to create a retraining loop—or a systematic and iterative process to continually refine and ensure the accuracy of the model.
 
-This process may seem overly complicated. Keep in mind that it can be greatly simplified by using prebuilt models. MLOps tools like Azure Machine Learning don't necessarily need to be populated with custom models, they also accept prebuilt models. In this sense, Azure Cognitive Services is a great alternative, as it offers faster results with less data science expertise required.
+This process may seem overly complicated. Keep in mind that it can be greatly simplified by using prebuilt models. MLOps tools like Azure Machine Learning don't necessarily need to be populated with custom models, they also accept prebuilt models. In this sense, Azure AI Services is a great alternative, as it offers faster results with less data science expertise required.
 
-In the next unit, let's discuss the opportunities of Azure Cognitive Services.
+In the next unit, let's discuss the opportunities of Azure AI Services.

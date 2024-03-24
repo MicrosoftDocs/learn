@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/01/2023
   author: SandraAhlgrimm
   ms.author: sakriema
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom:
   - team=cloud_advocates
   ms.contributors:
@@ -32,8 +32,6 @@ roles:
 - administrator
 products:
 - azure
-subjects:
-- development-tools
 units:
 - learn.azure.intro-to-java-azure.1-introduction
 - learn.azure.intro-to-java-azure.2-role

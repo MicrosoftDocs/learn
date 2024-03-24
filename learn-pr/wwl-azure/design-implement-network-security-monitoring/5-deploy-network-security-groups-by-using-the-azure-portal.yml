@@ -4,11 +4,10 @@ title: Deploy Network Security Groups by using the Azure portal
 metadata:
   title: Deploy Network Security Groups by using the Azure portal
   description: "Deploy Network Security Groups by using the Azure portal"
-  ms.date: 06/12/2023
+  ms.date: 02/08/2024
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 14

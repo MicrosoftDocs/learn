@@ -4,12 +4,11 @@ title: Understand the Fabric administrator role
 metadata:
   title: Understand the Fabric administrator role
   description: "Understand the Fabric administrator role"
-  ms.date: 05/10/2023
+  ms.date: 01/31/2024
   author: wwlpublish
-  ms.author: shlindsay
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.service: powerbi
+  ms.author: anrudduc
+  ms.service: fabric
+  ms.topic: unit
   ms.custom:
     - build-2023
 durationInMinutes: 6

@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/09/2023
   author: rodanthi-alexiou
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
   ms.service: healthbot
 title: Azure Health Bot case studies
@@ -30,7 +30,7 @@ products:
 - azure
 prerequisites: Introduction to Azure Health Bot
 subjects:
-- data-ai
+- data-management
 - compliance
 units:
 - learn.health-bot-case-studies.1-introduction

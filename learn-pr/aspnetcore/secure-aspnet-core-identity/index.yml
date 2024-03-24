@@ -7,8 +7,8 @@ metadata:
   author: camsoper
   ms.author: casoper
   ms.manager: markl
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.topic: module
+  ms.service: aspnet-core
 title: Secure a .NET web app with the ASP.NET Core Identity framework
 summary: Add authentication and authorization to a web app using ASP.NET Core Identity, ASP.NET Core's native security framework.
 abstract: |
@@ -35,7 +35,6 @@ products:
 - ef-core
 subjects:
 - identity-access
-- development-tools
 units:
 - learn.secure-aspnet-core-identity.1-introduction
 - learn.secure-aspnet-core-identity.2-understand-aspnetcore-identity

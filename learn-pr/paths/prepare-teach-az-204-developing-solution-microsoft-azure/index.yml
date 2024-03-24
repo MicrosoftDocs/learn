@@ -2,12 +2,11 @@
 uid: learn.wwl.prepare-teach-az-204-developing-solution-microsoft-azure
 metadata:
   title: Prepare to teach AZ-204 Developing Solution for Microsoft Azure
-  description: Learn about the Microsoft Learn for Educators program and how to best deliver its content to your students. Prepare to deliver Developing solution for Microsoft Azure solutions in the classroom.
+  description: Learn about the Microsoft Learn for Educators program. Also, learn and how to best deliver its content to your students. Prepare to deliver Developing solution for Microsoft Azure solutions in the classroom.
   ms.date: 06/02/2023
   author: wwlpublish
   ms.author: tsheppard
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Prepare to teach AZ-204 Developing Solution for Microsoft Azure
 prerequisites: |
   None

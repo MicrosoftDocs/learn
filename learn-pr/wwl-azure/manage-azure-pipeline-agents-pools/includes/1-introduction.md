@@ -1,4 +1,3 @@
-
 This module explores the differences between Microsoft-hosted and self-hosted agents, detail job types, and introduces agent pool configuration. Understand typical situations to use agent pools and how to manage their security.
 
 ## Learning objectives

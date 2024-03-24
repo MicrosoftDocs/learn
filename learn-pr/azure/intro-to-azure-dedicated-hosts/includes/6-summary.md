@@ -4,8 +4,8 @@ You looked at using Azure Dedicated Hosts for your IT organization to provide cl
 
 ## Learn more
 
-- Read [an overview of Azure Dedicated Hosts](https://learn.microsoft.com/azure/virtual-machines/dedicated-hosts).
+- Read [an overview of Azure Dedicated Hosts](/azure/virtual-machines/dedicated-hosts).
  
-- Learn how to [deploy VMs and Scale Sets to dedicated hosts](https://learn.microsoft.com/azure/virtual-machines/dedicated-hosts-how-to)
+- Learn how to [deploy VMs and Scale Sets to dedicated hosts](/azure/virtual-machines/dedicated-hosts-how-to)
 
-- Explore more Azure features (many with ADH compatibility) using the [compute decision chart](https://learn.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree)
+- Explore more Azure features (many with ADH compatibility) using the [compute decision chart](/azure/architecture/guide/technology-choices/compute-decision-tree)
