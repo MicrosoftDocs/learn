@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
-  ms.service: azure
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-install-azure-infrastructures.md)]
