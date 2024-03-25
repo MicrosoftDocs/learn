@@ -66,7 +66,7 @@ Next, enable your alerts in the Security overview.
  
 Now that we’ve reviewed and enabled all 3 of GHAS’s integral features, let's talk about how to implement all of them to create a more secure software development life cycle.  
 
-### Creating a More Secure Software Development Life Cycle With All 3 Features
+### Creating a more secure software development life cycle with all 3 features
 
 Secret scanning, code scanning, and Dependabot collectively contribute to creating a more secure software development life cycle. Secret scanning prevents inadvertent exposure of sensitive information. Code scanning identifies and addresses security vulnerabilities in the codebase. And Dependabot automates dependency management. 
 
@@ -76,7 +76,7 @@ The combined impact of these integral features ensures that security is not a st
 
 Next, let’s review the differences between GitHub’s security features for open-source projects and GHAS on GitHub Enterprise Cloud.
 
-### Security Features for Open Source Projects
+### Security features for open source projects
 
 Public projects on GitHub benefit from certain default security features, such as secret scanning and dependency graphs. GitHub automatically scans public repositories for partner patterns and provides alerts to repository administrators. Public projects can also choose to enable code scanning, Dependabot, and Dependency Review without a GitHub Advanced Security license.
 
