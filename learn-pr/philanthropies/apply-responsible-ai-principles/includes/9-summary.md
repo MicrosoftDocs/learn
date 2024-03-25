@@ -32,7 +32,7 @@ To continue your learning journey for this topic, go to:
 
 1. Unit 7. [AI tools for educators and accessibility](/training/modules/empower-educators-explore-potential-artificial-intelligence/ai-tools-educators-accessibility). in: *Empower educators to explore the potential of artificial intelligence*. Microsoft. Publication date unavailable.
 
-1. [Using Microsoft Teams and Microsoft Translator to host a multilingual parent-teacher conference](/translator/education/microsoft-teams-multilingual-meeting/). Microsoft. Publication date unavailable.
+1. [Using Microsoft Teams and Microsoft Translator to host a multilingual parent-teacher conference](https://www.microsoft.com/translator/education/microsoft-teams-multilingual-meeting/). Microsoft. Publication date unavailable.
 
 1. Beatman A. [Six ways to improve accessibility with Azure AI](https://azure.microsoft.com/blog/6-ways-to-improve-accessibility-with-azure-ai/). Microsoft. Publication date unavailable.
 
