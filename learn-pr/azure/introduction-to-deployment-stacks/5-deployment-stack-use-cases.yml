@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.introduction-to-deployment-stacks.deployment-stack-use-cases
+title: Deployment stack use cases
+metadata:
+  title: Deployment stack use cases
+  description: Evaluate the use cases for deployment stacks.
+  ms.date: 08/01/2023
+  author: joshuawaddell
+  ms.author: jowaddel
+  ms.topic: unit
+durationInMinutes: 1
+content: | 
+  [!include[](includes/5-deployment-stack-use-cases.md)]
