@@ -18,11 +18,12 @@ abstract: |
   - Describe Microsoft Copilot in Microsoft Purview.
   - Describe Microsoft Copilot in Microsoft Entra.
 prerequisites: |
+  - Working knowledge of security operations and incident response
   - Working knowledge of Microsoft Defender for XDR
   - Working knowledge of Microsoft Purview
   - Working knowledge of Microsoft Entra
 iconUrl: /learn/achievements/generic-badge.svg
-hidden: true
+hidden: false
 levels: 
   - beginner
 roles: 

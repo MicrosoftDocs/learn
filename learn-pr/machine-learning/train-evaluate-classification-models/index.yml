@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/05/2023
   author: s-polly
   ms.author: scottpolly
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Train and evaluate classification models
 summary: Classification is a kind of machine learning used to categorize items into classes.
 abstract: |
