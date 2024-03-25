@@ -9,7 +9,7 @@ Because we're using the Azure sandbox, you don't need to create a resource group
 Let's create a new Azure VM with PowerShell.
 
 1. Use the `New-AzVm` cmdlet to create a VM.
-    - Use the **<rgn>[sandbox resource group name]</rgn>** resource group .
+    - Use the **<rgn>[sandbox resource group name]</rgn>** resource group.
     - Give the VM a name. Typically, you want to use something meaningful that identifies the purposes of the VM, location, and (if there's more than one) instance number. We use "testvm-eus-01" for "Test VM in East US, instance 1." Come up with your own name based on where you place the VM.
     - Select a location close to you from the following list, available in the Azure sandbox. Make sure to change the value in the following example command if you're using copy and paste.
 
