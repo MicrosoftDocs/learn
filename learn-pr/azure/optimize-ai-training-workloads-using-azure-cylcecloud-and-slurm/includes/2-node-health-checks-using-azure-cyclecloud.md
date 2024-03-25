@@ -31,7 +31,7 @@ Image 3: Enable NHC on Startup, screenshot from the CC Web Portal
   - NCv3-series
   - NDv2-serries
 
-For more information, see [GPU optimized virtual machine sizes](https://learn.microsoft.com/azure/virtual-machines/sizes-gpu).
+For more information, see [GPU optimized virtual machine sizes](/azure/virtual-machines/sizes-gpu)
 
 ## Minimum Requirements for Node Health Checks
 
