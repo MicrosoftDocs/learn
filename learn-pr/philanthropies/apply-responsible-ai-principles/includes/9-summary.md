@@ -18,7 +18,7 @@ To continue your learning journey for this topic, go to:
 
 ## Bibliography
 
-1. [Model performance and fairness](/azure/machine-learning/concept-fairness-ml?view=azureml-api-2). Microsoft. Published February 27, 2023.
+1. [Model performance and fairness](/azure/machine-learning/concept-fairness-ml). Microsoft. Published February 27, 2023.
 
 1. Unit 3. [Examine Microsoft AI principles – Fairness](/training/modules/examine-microsoft-committed-responsible-ai/3-examine-microsoft-ai-principles-fairness). in: *Examine how Microsoft is committed to responsible AI*. Microsoft. Publication date unavailable.
 
