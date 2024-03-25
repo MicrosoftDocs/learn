@@ -51,15 +51,17 @@ During the setup of Copilot for Security, you're prompted to configure settings.
 
 - Data storage - When an organization onboards to Copilot, the admin must confirm the geographic location of the tenant as the customer data collected by the services is stored there. Microsoft Copilot for Security operates in the Microsoft Azure data centers in the European Union (EUDB), the United Kingdom, the United States, Australia and New Zealand, Japan, Canada, and South America.
 
-- Your organization's data - The admin must also opt in or opt out of sharing their customer data with Microsoft. Turn the toggles on or off for any of the following options:
+- Your organization's data - The admin must also opt in or opt out of data sharing options. Turn the toggles on or off for any of the following options:
 
   - Allow Microsoft to capture data from Copilot for Security to validate product performance using human review: When turned on, customer data is shared with Microsoft for product improvement. Prompts and responses are evaluated to understand whether the right plugins were selected, if the output is what was expected, how responses, latency, and output format can be improved.
 
   - Allow Microsoft to capture and human review data from Copilot for Security to build and validate Microsoft's security AI model: When turned on, customer data is shared with Microsoft for Copilot AI improvement. Opting in does NOT allow Microsoft to use customer data to train foundational models. Prompts and responses are evaluated to enhance responses and to ensure they're what's expected and useful to you.
   
+  - Allow Copilot for Security to access data from your Microsoft 365 services. If this option is turned off, your organization won't be able to use plugins that access Microsoft 365 services. Currently, this option is required for use of the Microsoft Purview plugin. Setting and/or changing this setting requires a user with a Global administrator role.
+  
       For more information about how Microsoft handles your data, see [Data security and privacy](/security-copilot/privacy-data-security).
   
-    :::image type="content" source="../media/organization-data-settings.png" lightbox="../media/organization-data-settings.png" alt-text="Screen capture showing the settings for how you can configure data sharing to help improve Copilot.":::
+    :::image type="content" source="../media/owner-settings-with-microsoft-365-slider.png" lightbox="../media/owner-settings-with-microsoft-365-slider.png" alt-text="Screen capture showing the settings for how you can configure data sharing to help improve Copilot.":::
 
 - Decide where your prompts are evaluated - You can restrict the evaluation within your geo or allow evaluation anywhere in the world. For more information on the list of mapped locations for your geo, see Data security and privacy.
 
