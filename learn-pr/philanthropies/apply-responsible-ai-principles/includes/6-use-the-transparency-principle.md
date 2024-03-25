@@ -26,4 +26,4 @@ By ensuring that the AI systems you use are transparent, you can better understa
 
 :::image type="icon" source="../media/ensuring-transparency-in-ai.png":::
 
-Grasping the essence of transparency in AI is merely the first step. As we move beyond transparency, it’s essential to understand that It's deeply connected with accountability. These elements aren't standalone; they're connected. In the next unit, you'll explore the principle of accountability. you'll examine how this principle is crucial to ensuring that AI systems aren't just transparent, but also adhere to the highest standards of ethical responsibility and answerability in every situation.
+Grasping the essence of transparency in AI is merely the first step. As we move beyond transparency, it’s essential to understand that this is deeply connected with accountability. These elements aren't standalone; they're connected. In the next unit, you explore the principle of accountability. You examine how this principle is crucial to ensuring that AI systems are transparent, and adhere to the highest standards of ethical responsibility in every situation.
