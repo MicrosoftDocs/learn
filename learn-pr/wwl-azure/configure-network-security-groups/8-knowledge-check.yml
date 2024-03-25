@@ -42,10 +42,10 @@ quiz:
     choices:
     - content: "It's allowed by default."
       isCorrect: true
-      explanation: "Incorrect. Allowing traffic by default would pose a security risk."
+      explanation: "Correct. Allowing traffic by default would pose a security risk."
     - content: "It's denied by default."
       isCorrect: false
-      explanation: "Correct. By default, network traffic that doesn't match any Network Security Group (NSG) rules is denied."
+      explanation: "Incorrect. By default, network traffic that doesn't match any Network Security Group (NSG) rules is denied."
     - content: "It's postponed until the rules change."
       isCorrect: false
       explanation: "Incorrect. NSGs don't postpone network traffic."
