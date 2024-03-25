@@ -8,3 +8,5 @@ Additionally, neural networks are structured so that they can continue to learn 
 To continue your learning journey, go to:
 - [https://learn.microsoft.com/en-us/training/modules/introduction-to-machine-learning/](/training/modules/introduction-to-machine-learning/)
 - [https://learn.microsoft.com/en-us/training/modules/leverage-ai-tools/](/training/modules/leverage-ai-tools/)
+
+<sup>6</sup>: See the *Bibliography* in this module's **Summary** section.
