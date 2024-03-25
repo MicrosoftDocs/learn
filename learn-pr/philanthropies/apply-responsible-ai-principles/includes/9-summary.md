@@ -43,4 +43,3 @@ To continue your learning journey for this topic, go to:
 1. Lee P. [Harnessing big data in pediatric research to reimagine healthcare](https://blogs.microsoft.com/blog/2019/05/21/harnessing-big-data-in-pediatric-research-to-reimagine-healthcare/). Microsoft. Published May 21, 2019.
 
 1. [Collaborating to bring AI innovation to education](https://educationblog.microsoft.com/2023/06/collaborating-to-bring-ai-innovation-to-education). Microsoft. Published June 26, 2023.
-  
