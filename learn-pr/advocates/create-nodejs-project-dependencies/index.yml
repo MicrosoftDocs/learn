@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/30/2023
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
   ms.service: azure-javascript
 title: Create a new Node.js project and work with dependencies  
