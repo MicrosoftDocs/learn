@@ -9,7 +9,7 @@ To create the alert baseline, follow the triage process:
 1. Filter the alerts - by time, severity, or another parameter.
 1. Choose an alert, open the alert details pane, and analyze the alert information.
 1. Follow the **Remediation steps** to triage according to type of alert, and save your changes.
-<!-- 1. Optionally, check the raw data PCAP files. The files can be downloaded and assessed and then changes to the alerts made accordingly. - remove for LM add create suppression rules instead? ask Amit/Meir - how often are pcap files used? is it important to demonstrate. -->
+1. add create suppression rules.
 
 ## Triage your alerts
 <!-- How do we triage the alerts, just describe doing this with an example we have in screenshots, and tell them to look for their own and ones on their system - LW - decide the skill and then show the alert - Amit-->
@@ -41,7 +41,7 @@ You can also download the PCAP files of the raw traffic data and analyze them us
 
 ### Update alerts
 
-Follow the **Remediation steps**. If available you might be asked to *Select Learn*.
+In the **Take action** tab, follow the **Remediation steps**. Sometimes a list of multiple actions are listed, sometimes a choice of options are listed. If available you might be asked to *Select Learn*.
 
 **Learn** an alert when you want to close it, and add it as allowed traffic so that you aren't alerted the next time the same traffic is detected. For example, when the sensor detects firmware version changes following standard maintenance procedures, or when a new, expected device is added to the network. Learning an alert closes the alert and adds an item to the sensor event timeline. Learning alerts is available for selected alerts only, mostly alerts triggered by *Policy* and *Anomaly* engine alerts.
 
@@ -77,10 +77,7 @@ Save each change and the baseline alerts are updated. As the learning process co
 
 <!-- A nice definition. may use it more.
 Baseline - creates an environmental baseline for the normal communication behaviour of devices in your network is known. going forward, anything that is unseen traffic will create an alert to be followed up with. -->
-
 <!-- generally I find that links go to various places, all over documentation, and are hard to know where or why you are now in a different section -->
-
 <!-- can use this article for screenshots as well /organizations/how-to-manage-cloud-alerts -->
-
 <!--at num3  https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-view-alerts#view-details-and-remediate-a-specific-alert this starts with 1. sign into the OT sensor. I suggest removing this line, we are already there, as mentioned above. Why would we add this here?  -->
 <!-- at end! https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-view-alerts#manage-alert-status-and-triage-alerts the first sentence is confusing. Does this mean save any changes i have made to the alert? Or something else. If it does then I would put it near the end of the entire section of article. but not at the beginning, or it is it at the beginning that it is clear it relates to actions for when you have finished your work-->

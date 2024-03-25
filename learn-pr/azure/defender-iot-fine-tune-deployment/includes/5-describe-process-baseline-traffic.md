@@ -1,4 +1,3 @@
-<!-- can use this article for screenshots as well /organizations/how-to-manage-cloud-alerts -->
 Your sensor is now fine tuned and almost fully operational. The final stage is to create a baseline of alerts so that Microsoft Defender for IoT understands the normal type of traffic flow through your system. Then, Defender for IoT is able to identify which traffic is most dangerous or suspicious and produces accurate alerts. This *learning* process can take a week or two as you define correct alerts for Defender for IoT to flag.
 
 Once the learning stage is complete, Defender for IoT moves to the operational stage with an accurate baseline of alerts to work from and protect your devices. New alerts still appear, but occur less regularly, and you apply the triage process to them. <!-- is this all out of the scope of the LM? Probably-->  
@@ -45,3 +44,4 @@ When you complete the triage process, the **Alerts** page shows the updated stat
 
 OR
 When you complete the triage process and the operational mode is enabled, your deployment of the OT sensor to Defender for IoT is complete. The sensor now has a verified baseline of alerts and understands the types of traffic that are considered safe and secure. <!-- do we need to add anything to this? Is there a list we can show that looks different from the original alerts list, or should we show a shortened list? Or a list of the baseline alerts? Or for this LM should the OUtcome be a shortened alert list? AN empty list? Amit LW- add filter to show differences with new alerts. -->
+<!-- can use this article for screenshots as well /organizations/how-to-manage-cloud-alerts -->
