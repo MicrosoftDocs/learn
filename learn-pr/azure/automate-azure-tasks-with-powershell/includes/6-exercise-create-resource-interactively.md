@@ -86,7 +86,7 @@ Let's create a new Azure VM with PowerShell.
 1. Now, run the following command to get your public IP address:
 
     ```powershell
-    Get-AzPublicIpAddress -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -Name "testvm-eus-01"
+    az vm list-ip-addresses -n testvm-eus-01 -g <rgn>[sandbox resource group name]</rgn>
     ```
 
 1. With the IP address, you can connect to the VM with SSH. For example, if you used the username `bob`, and the IP address is `205.22.16.5`, running this command would connect to the Linux machine:
