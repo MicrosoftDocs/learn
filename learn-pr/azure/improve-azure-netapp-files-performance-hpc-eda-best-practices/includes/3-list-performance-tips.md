@@ -118,28 +118,28 @@ Azure NetApp Files supports both NFSv3 and NFSv4.1. You should validate what ver
 
 ## Choose the proper values for the rsize and wsize mount options 
 
-The mount options `rsize` and `wsize` determine how much data is sent between the NFS client and server for each packet sent. For instance, setting `rsize` or  `wsize` to 65,536 means that up to 64K of data can be sent per packet. If an application sends data in smaller chunks (such as 8K), then the amount of data sent depends on the mount options used (such as `sync`).
+The mount options `rsize` (read size) and `wsize` (write size) determine how much data is sent between the NFS client and server for each packet sent. For instance, setting `rsize` or  `wsize` to 65,536 means that up to 64 K of data can be sent per packet. If an application sends data in smaller chunks (such as 8 K), then the amount of data sent depends on the mount options used (such as `sync`).
 
-The best practice for Azure NetApp Files is to set `rsize` and `wsize` to the same value. We generally recommend that you set both `rsize` and `wsize` values as `262144(256 K)` in the mount options.
+The best practice for Azure NetApp Files is to set `rsize` and `wsize` to the same value. We generally recommend that you set both `rsize` and `wsize` values as `262144 (256 K)` in the mount options.
 
 ### Understand sync and async mount options 
 
 If `sync` is used, then each `WRITE` call is sent with a `FILE_SYNC` command. This means every WRITE must be acknowledged by the server and committed to disk before the next `WRITE` can occur. `Sync` is used when an application must guarantee that all data is committed to disk. `WRITE` calls send only the amount of data specified by the application’s block size, which means smaller block sizes generate more NFS traffic regardless of the `wsize` and `rsize` values of the mount, causing a performance impact.
 
-If you use the (default) `async` mount operation, a client can send multiple `WRITE` calls over NFS with the `UNSTABLE` command. In this scenario, data gets flushed to disk after a timeout period. Because the NFS client is not always waiting on the server to commit data to disk before starting the next WRITE, job completion times for writes to async mounts is much lower than with sync. When smaller block sizes are used with larger `rsize` and `wsize` values, the `WRITE` calls send as much data as allowed in a single NFS call. For instance, if 8K block sizes are used with a 64K `wsize`/`rsize`, then each NFS WRITE call sends eight blocks per packet (64K/8K). When the write is flushed to disk, the NFS server send a `FILE_SYNC` reply back to the NFS client. This reduces the total number of `WRITE` calls and replies over a network needed to complete a job, which improves performance.  
+If you use the (default) `async` mount operation, a client can send multiple `WRITE` calls over NFS with the `UNSTABLE` command. In this scenario, data gets flushed to disk after a timeout period. Because the NFS client isn't always waiting on the server to commit data to disk before starting the next WRITE, job completion times for writes to async mounts is much lower than with sync. When smaller block sizes are used with larger `rsize` and `wsize` values, the `WRITE` calls send as much data as allowed in a single NFS call. For instance, if 8 K block sizes are used with a 64 K `wsize`/`rsize`, then each NFS WRITE call sends eight blocks per packet (64 K/8 K). When the write is flushed to disk, the NFS server sends a `FILE_SYNC` reply back to the NFS client. This reduces the total number of `WRITE` calls and replies over a network needed to complete a job, which improves performance.  
 
-For example, in a test where a 1-GiB file was created using an 8K-block size generated 262,144 `WRITE` calls and replies and finished in 70 seconds when using the `sync` mount option. The same file creation using an 8K-block size and the `async` mount option sent only 16,384 WRITE calls and replies, completing in 6 seconds.
+For example, in a test where a 1-GiB file was created using an 8 K block size generated 262,144 `WRITE` calls and replies and finished in 70 seconds when using the `sync` mount option. The same file creation using an 8 Kblock size and the `async` mount option sent only 16,384 WRITE calls and replies, completing in six seconds.
 
 Azure NetApp Files makes use of battery-backed NVRAM storage as a buffer cache for incoming NFS writes. Data in NVRAM is flushed to disk every 10 seconds or until the buffer cache is filled (whichever comes first). Since the NVRAM is backed by a battery, it can survive unexpected outages for a minimum of 72 hours while retaining data, such as the unlikely event of an Azure datacenter losing power. The combination of the data resiliency of Azure NetApp Files and the performance impact of using `sync` mount option makes async the preferred choice in nearly all use cases.
 
-### Understand the impact of wsize and rsize values 
+### Understand the impact of wsize and rsize values
 
-When mounting over NFS, the wsize (write size) and rsize (read size) values determine how much data can be sent per NFS call to an NFS server. If unspecified in the mount options, then the values are set to whatever the NFS server has been configured with. Azure NetApp Files uses a maximum transfer size for both wsize and rsize of 1 MB (1048576). This value cannot be changed in Azure NetApp Files. This means if NFS mounts do not specify the wsize and rsize values, the mounts will default to 1 MB. The recommended wsize and rsize values for NFS mounts in EDA workloads is 256K.  
+When mounting over NFS, the `wsize` and `rsize` values determine how much data can be sent per NFS call to an NFS server. If unspecified in the mount options, then the values are set to whatever the NFS server has been configured with. Azure NetApp Files uses a maximum transfer size for both `wsize` and `rsize` of 1 MB (1048576). This value can't be changed in Azure NetApp Files. This means if NFS mounts don't specify the `wsize` and `rsize` values, the mounts default to 1 MB. The recommended `wsize` and `rsize` values for NFS mounts in EDA workloads is 256 K.  
 
 If an application needs to create a 1-GiB file on an Azure NetApp Files NFS mount, it needs to write 1048,576 KiB to storage. A math exercise can show why performance might improve with more efficient `wsize` or `rsize` values.  
 
-* If the wsize is set to 64K, then the number of operations/packets required to write the 1-GiB file is 1048576/64=16384.
-* If the wsize is set to 256K, then the number of operations/packets required to write the 1-GiB file is 1048576/256=4096. 
+* If the `wsize` is set to 64 K, then the number of operations/packets required to write the 1-GiB file is 1048576/64=16384.
+* If the `wsize` is set to 256 K, then the number of operations/packets required to write the 1-GiB file is 1048576/256=4096. 
 
 Fewer packets/operations mean network latency (which impacts RTT) less impact on workloads, which can be critical in cloud deployments. However, if the application writes files that are smaller than the `wsize`/`rsize` values, then the larger `wsize`/`rsize` values have no effect on performance.
 
