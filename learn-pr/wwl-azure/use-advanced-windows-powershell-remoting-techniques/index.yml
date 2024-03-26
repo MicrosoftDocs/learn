@@ -2,18 +2,20 @@
 uid: learn.wwl.use-advanced-windows-powershell-remoting-techniques
 metadata:
   title: Use advanced Windows PowerShell remoting techniques
-  description: "This module covers some useful advanced techniques that will help overcome the limitations of basic Windows PowerShell remoting."
+  description: "This module covers some useful advanced techniques that help overcome the limitations of basic Windows PowerShell remoting."
   ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.custom:
   - N/A
+  ms.service: powershell
+  ms.subservice: cmdlets
   ai-usage: human-only
 title: Use advanced Windows PowerShell remoting techniques
-summary: This module covers some useful advanced techniques that will help overcome the limitations of basic Windows PowerShell remoting.
+summary: This module covers some useful advanced techniques that help overcome the limitations of basic Windows PowerShell remoting.
 abstract: |
-  Upon completion of this module, the learner will be able to:
+  Upon completion of this module, the learner is able to:
 
   -   Configure common remoting options.
 
@@ -33,7 +35,7 @@ prerequisites: |
 
   -   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
 
-  -   Familiarity with Windows PowerShell pipeline, PSProviders and PSDrives
+  -   Familiarity with Windows PowerShell pipeline, PSProviders, and PSDrives
 
   -   Familiarity with CIM and WMI technologies
 
