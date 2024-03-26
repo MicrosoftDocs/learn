@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: berryivor
   ms.topic: unit
-  ms.service: azure-ai-personalizer
 durationInMinutes: 3
 content: |
 quiz:

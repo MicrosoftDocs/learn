@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: unit
-  ms.service: synapse-analytics
 durationInMinutes: 40
 content: |
   [!include[](includes/8-exercise-load-data-into-relational-data-warehouse.md)]
