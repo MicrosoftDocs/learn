@@ -24,7 +24,7 @@ quiz:
     - content: "Narrowing"
       isCorrect: false
       explanation: "Incorrect. \"Narrowing\" describes the data precision change in a conversion."
-    - content: "Iimplicit conversion"
+    - content: "Implicit conversion"
       isCorrect: false
       explanation: "Incorrect. `decimal` to `int` is a narrowing conversion and implicit conversion can't be used because data loss is possible."
   - content: "Which of the following conversion rounds the value (versus truncate)?"
