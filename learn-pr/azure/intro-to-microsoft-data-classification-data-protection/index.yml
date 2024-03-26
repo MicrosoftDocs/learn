@@ -6,7 +6,7 @@ metadata:
   ms.date: 08/08/2023
   author: cwatson-cat
   ms.author: cwatson
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Introduction to Microsoft data classification and protection 
 summary: Understand data classification and protection technologies like information protection, sensitivity labels, and service and message encryption.
 abstract: |
