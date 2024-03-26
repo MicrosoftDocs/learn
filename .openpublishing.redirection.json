@@ -35490,7 +35490,11 @@
       "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals/9-knowledge-check.md",
       "redirect_url": "/training/modules/get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals/10-knowledge-check",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/azure-for-the-data-engineer/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "redirect_document_id": false
     }
-    
   ]
 }
