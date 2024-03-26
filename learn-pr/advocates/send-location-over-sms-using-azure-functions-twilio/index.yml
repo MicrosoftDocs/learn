@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/06/2022
   author: softchris 
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
   ms.service: azure-functions
 title: Share your location as a text message using Azure Functions and Twilio
