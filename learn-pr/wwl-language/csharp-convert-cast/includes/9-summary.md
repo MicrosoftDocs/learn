@@ -1,6 +1,3 @@
-
-
-
 Your goal was to use several different techniques to change the data type of a given value.
 
 You used *implicit conversion*, relying on the C# compiler to perform *widening conversions*. When the compiler was unable to perform an implicit conversion, you used *explicit conversions*. You used the `ToString()` method to explicitly convert a numeric data type into a `string`.
@@ -16,3 +13,7 @@ Without this wealth of options, it would be difficult to work in a typed program
 - [Casting and type conversions (C# programming guide)](/dotnet/csharp/programming-guide/types/casting-and-type-conversions)
 - [Built-in types (C# reference)](/dotnet/csharp/language-reference/builtin-types/built-in-types)
 - [Default values of C# types (C# reference)](/dotnet/csharp/language-reference/builtin-types/default-values)
+
+## Get a free verified certification
+
+Microsoft has partnered with freeCodeCamp.org to offer a training and certification program on foundational C#. By completing this Microsoft Learn module, you're already one step closer to being certified. To explore the foundational C# certification offered by freeCodeCamp, visit: [https://aka.ms/csharp-certification](https://aka.ms/csharp-certification).

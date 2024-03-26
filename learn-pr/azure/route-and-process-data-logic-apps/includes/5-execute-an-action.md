@@ -20,7 +20,7 @@ The most common action type helps you access and run specific tasks using servic
 
 When you use an action to connect from your workflow to an external service or system, you typically provide connection and authorization information. This information might include a username, a password, a connection string, or an account key. The details differ and vary for each service or system.
 
-For example, to create a connection to Azure Cognitive Services, you provide the **Site URL** so that your workflow knows where to send the request. You provide your **Account Key** to authorize your access to the service. You can get both values from your Azure Cognitive Services account. Typically, you'll copy these values into connection information box when you add the **Sentiment** action to your workflow.
+For example, to create a connection to Azure AI services, you provide the **Site URL** so that your workflow knows where to send the request. You provide your **Account Key** to authorize your access to the service. You can get both values from your Azure AI services account. Typically, you'll copy these values into connection information box when you add the **Sentiment** action to your workflow.
 
 This action type helps your workflow send data for processing or pull data into your workflow. But how do you actually work with that data inside your workflow? The next action type helps with this task.
 
@@ -28,7 +28,7 @@ This action type helps your workflow send data for processing or pull data into 
 
 This action type helps you run operations or process data that you pull into your workflow. For example, you have actions that can concatenate multiple values into a single string, parse JSON data, select specific values from an array, and so on.
 
-Let's examine an example. If you've used Twitter, you might be familiar with their URL pattern that links to a specific tweet:
+Let's examine an example. If you've used X, you might be familiar with their URL pattern that links to a specific tweet:
 
 ```language-plaintext
 https://twitter.com/<username>/status/<id>
@@ -36,7 +36,7 @@ https://twitter.com/<username>/status/<id>
 
 You can use this link type in your social media monitoring app. For example, you might want to store the URL link in a database so that you can access the tweet later. Or, you might want to include the URL link in an email so that your coworkers can review the tweet in the original format.
 
-Unfortunately, the data returned by the Twitter trigger doesn't include the complete URL link. However, the data does include the username in the **TweetedBy** property and the ID in the **TweetId** property. So, you can use the **Compose** action to combine these pieces into the URL. Conceptually, the operation has this logical format:
+Unfortunately, the data returned by the X trigger doesn't include the complete URL link. However, the data does include the username in the **TweetedBy** property and the ID in the **TweetId** property. So, you can use the **Compose** action to combine these pieces into the URL. Conceptually, the operation has this logical format:
 
 ```language-plaintext
 Compose: "https://twitter.com/" + [TweetedBy] + "/status/" + [TweetId]
@@ -48,7 +48,7 @@ This action type helps you manage the data flow through your logic app by using 
 
 ## Action parameters and return values
 
-Consider action operations as function calls that have *parameters* and *return values*. Action parameters let you pass values into the operation. Some operations use both required and optional paramters. For example, the Azure Cognitive Services action named **Sentiment** has a required parameter called **Text**. This parameter represents the string that you want to analyze. The **Sentiment** action also has an optional parameter named **Language** that lets you provide a hint about the language used for the **Text** parameter.
+Consider action operations as function calls that have *parameters* and *return values*. Action parameters let you pass values into the operation. Some operations use both required and optional paramters. For example, the Azure AI services action named **Sentiment** has a required parameter called **Text**. This parameter represents the string that you want to analyze. The **Sentiment** action also has an optional parameter named **Language** that lets you provide a hint about the language used for the **Text** parameter.
 
 Action return values are the results from the operation. For example, the **Sentiment** action returns a numeric score between `0` and `1`. Scores close to `1` indicate positive sentiment, while scores close to `0` indicate negative sentiment. The following diagram summarizes the data flow for the **Sentiment** action as used by our example social media monitoring app:
 
@@ -72,6 +72,6 @@ You can add an action at the end of your workflow or between existing steps. Aft
 
 While you can manually add static parameter values, the designer has a different way for you to enter dynamic parameter values. Whenever you select inside an edit box, the designer opens a dynamic content list that shows any data or outputs available from the preceding steps. You can select the data that you need, and the designer automatically populates the edit box in your action with your selection. The following screenshot shows the dynamic tweet data from the social media monitoring logic app workflow in the designer:
 
-:::image type="content" source="../media/dynamic-content-designer.png" alt-text="Screenshot shows the workflow designer with the dynamic content list. The example shows the dynamic content list with the Twitter trigger outputs, such as the **Created at**, **Description**, and **Location** dynamic parameter values. You can select a dynamic parameter from the list to use in an action for your workflow." border="false":::
+:::image type="content" source="../media/dynamic-content-designer.png" alt-text="Screenshot shows the workflow designer with the dynamic content list. The example shows the dynamic content list with the X trigger outputs, such as the **Created at**, **Description**, and **Location** dynamic parameter values. You can select a dynamic parameter from the list to use in an action for your workflow." border="false":::
 
 The workflow designer makes adding dynamic content so easy, you don't need to remember parameter names and return values, nor do you need to worry about syntax details.

@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/14/2022
-  author: wwlpublish
-  ms.author: lola
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/27/2023
+  author: fabianomira
+  ms.author: famira
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -25,20 +24,20 @@ quiz:
     - content: "Passwords must be updated in both on-premises Directory Services and Azure Directory Services to avoid account lock-outs."
       isCorrect: false
       explanation: "That's incorrect. Passwords don't have to be updated in both on-premises Directory Services and Azure Directory Services."
-    - content: "The password hasn't had enough time to synchronize with Azure AD and the user is using a different password to the value stored in Azure AD."
+    - content: "The password hasn't had enough time to synchronize with Microsoft Entra ID and the user is using a different password to the value stored in Microsoft Entra ID."
       isCorrect: true
-      explanation: "That's correct. The password might not have had enough time to synchronize with Azure AD and the user is using a different password to the value stored in Azure AD."
-  - content: "When should the Azure AD Connect Administration Agent be installed?"
+      explanation: "That's correct. The password might not have had enough time to synchronize with Microsoft Entra ID and the user is using a different password to the value stored in Microsoft Entra ID."
+  - content: "When should the Microsoft Entra Connect Administration Agent be installed?"
     choices:
     - content: "Before errors occur."
       isCorrect: true
-      explanation: "That's correct. The Azure AD Connect Administration Agent only starts logging once it has been installed."
+      explanation: "That's correct. The Microsoft Entra Connect Administration Agent only starts logging once it has been installed."
     - content: "Soon after errors occur."
       isCorrect: false
-      explanation: "That's incorrect. If you install Azure AD Connect Administration Agent soon after errors occur it will not report on the errors."
-    - content: "The Azure AD Connect Administration Agent doesn't need to be installed"
+      explanation: "That's incorrect. If you install Microsoft Entra Connect Administration Agent soon after errors occur it will not report on the errors."
+    - content: "The Microsoft Entra Connect Administration Agent doesn't need to be installed"
       isCorrect: false
-      explanation: "That's incorrect. The Azure AD Connect Administration Agent needs to be installed and isn't installed by default."
+      explanation: "That's incorrect. The Microsoft Entra Connect Administration Agent needs to be installed and isn't installed by default."
   - content: "How long is audit log data held by default for conditional access policy changes?"
     choices:
     - content: "five days"

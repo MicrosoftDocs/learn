@@ -4,11 +4,10 @@ title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 09/28/2021
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

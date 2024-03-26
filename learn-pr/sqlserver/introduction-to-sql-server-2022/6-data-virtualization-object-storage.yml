@@ -9,8 +9,7 @@ metadata:
   author: rgward
   ms.author: bobward
   ms.reviewer: vanto
-  ms.topic: interactive-tutorial
-  ms.prod: learning-sqlserver
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/6-data-virtualization-object-storage.md)]
@@ -24,7 +23,7 @@ quiz:
       explanation: "SQL Server 2022 provides built-in REST API support for S3 compatible object storage providers"
     - content: "Oracle data sources using ODBC"
       isCorrect: false
-      explanation: "SQL Server 2022 does support Oracle data sources, but uses ODBC with Polybase services and not REST API."
+      explanation: "SQL Server 2022 does support Oracle data sources, but uses ODBC with Polybase services and not the REST API."
     - content: "Hadoop data sources using Java"
       isCorrect: false
       explanation: "Polybase support for Hadoop using Java has been removed in SQL Server 2022."

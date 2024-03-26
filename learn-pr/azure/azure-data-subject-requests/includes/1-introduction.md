@@ -19,5 +19,5 @@ After completing this module, you’ll know more about:
 
 - The GDPR protects the privacy of all data subjects within the territorial reach of the GDPR
 - Basic knowledge of the CCPA, which protects the privacy rights of California consumers
-- Intermediate experience with Azure AD services
+- Intermediate experience with Microsoft Entra services
 - Intermediate experience with Office 365 or Microsoft 365

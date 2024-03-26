@@ -1,35 +1,36 @@
-Your company was experiencing a huge delay in simple day-to-day operations like deployments and image builds. You thought it would be a good idea to solve this problem by using CI/CD with GitHub Actions.
+You're now able to automate application image building and deployment by using CI/CD with GitHub Actions. You created a workflow that triggers when a developer on your team pushes a code change to the main branch. The workflow builds and pushes the application image to the Contoso Azure Container Registry instance.
 
-By using these concepts, you were able to automate image building and application deployment. First, you created a workflow that triggers when a developer on your team pushes a code change to the main branch. The workflow builds and pushes the application image to the company's Azure Container Registry instance. Then, when someone on your team creates a release out of that push, a new pipeline triggers and deploys the application to the AKS cluster without manual effort.
-
-Without this solution, your team would be losing time by manually building and deploying application images for every new feature on the website. In the end, you've saved the company thousands of dollars in time.
+Then, when someone on your development team creates a release from that push, a new pipeline triggers and deploys the application to your Azure Kubernetes Service (AKS) cluster without manual effort. This solution means your team doesn't have to spend time and effort on manually building and deploying application images for every new feature on the Contoso Video website.
 
 ## Clean up resources
 
-In this module, you created resources by using your Azure subscription. The following steps show you how to clean up these resources so that there's no continued charge against your account.
+In this module, you created resources in your Azure subscription. Use the following procedures to clean up these resources so there's no continued charge against your account.
 
-1. Go to the Azure portal.
+### Azure resources
 
-    > [!div class="nextstepaction"]
-    > [Azure portal](https://portal.azure.com?azure-portal=true)
+1. In the [Azure portal](https://portal.azure.com?azure-portal=true), search for and select *resource groups*, and then select the resource group you used for this module from the list.
 
-1. In the left menu, select **Resource groups**.
+1. On the **Overview** page, select **Delete resource group**.
 
-1. Select the resource group name that starts with **mslearn-gh-pipelines** or the resource group name you used.
+1. To confirm the deletion and delete all the resources you created in this module, enter the name of the resource group, and select **Delete**.
 
-1. On the **Overview** tab, select **Delete resource group**.
+1. Repeat the preceding steps for the corresponding resource group that starts with **MC_mslearn-gh-pipelines**.
 
-1. To confirm the deletion, enter the name of the resource group. To delete all the resources you created in this module, select **Delete**.
+1. Go to [App registrations](https://ms.portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) and select your app from the list.
 
-1. Repeat the steps for the resource group name that starts with **MC_mslearn-gh-pipelines**.
+1. On the **Overview** page, select **Delete**.
 
-1. Go to your GitHub account and find your fork of the Contoso website.
+1. On the **Delete app registration** page, select **Delete**, which also deletes the federated credentials.
 
-1. To delete the fork, select the **Settings** tab.
+### GitHub
+
+1. Go to your fork of the Contoso Video repository.
+
+1. Select the **Settings** tab.
 
 1. Scroll down and select the red **Delete this repository** button. To confirm the deletion, enter the full name of the repository.
 
-1. To delete the PAT created previously, select your profile photo, then select **Settings**.
+1. To delete the PAT you created, select your profile photo, then select **Settings**.
 
 1. Select **Developer settings**.
 
@@ -39,7 +40,7 @@ In this module, you created resources by using your Azure subscription. The foll
 
 ## Learn more
 
-To learn more about Azure Kubernetes Service and GitHub Actions, see the following articles and Microsoft Learn modules:
+To learn more about AKS and GitHub Actions, see the following articles and Microsoft Learn modules:
 
 - [AKS documentation](/azure/aks/?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
 - [Introduction to AKS](/training/modules/intro-to-azure-kubernetes-service/?WT.mc_id=deploycontainerapps_summary-learn-ludossan)

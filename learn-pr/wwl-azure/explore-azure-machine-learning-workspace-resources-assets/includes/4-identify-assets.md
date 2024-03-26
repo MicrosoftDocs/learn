@@ -1,5 +1,3 @@
-
-
 As a data scientist, you'll mostly work with **assets** in the Azure Machine Learning workspace. Assets are created and used at various stages of a project and include:
 
 - Models

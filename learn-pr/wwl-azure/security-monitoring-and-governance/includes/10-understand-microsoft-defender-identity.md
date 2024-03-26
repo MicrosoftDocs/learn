@@ -14,9 +14,9 @@ Microsoft Defender consists of the following components:
 
 You can also use the Microsoft Defender portal to monitor, manage, and investigate threats to your network environment.
 
-You can sign into the Microsoft Defender portal at [https://securitycenter.windows.com](https://securitycenter.windows.com/).
+You can sign into the Microsoft Defender portal at [https://security.microsoft.com/](https://security.microsoft.com/).
 
-Sign in with a user account assigned to an Azure AD security group with access to the Microsoft Defender portal.
+Sign in with a user account assigned to a Microsoft Entra security group with access to the Microsoft Defender portal.
 
  -  Microsoft Defender sensor. Microsoft Defender sensors are installed directly on your domain controllers. The sensors monitor domain controller traffic without requiring a dedicated server or port mirroring configurations.
  -  Microsoft Defender cloud service. The Microsoft Defender cloud service runs on the Azure infrastructure and is deployed in the United States, Europe, and Asia. The Microsoft Defender cloud service is connected to the Microsoft Intelligent Security Graph.
@@ -54,4 +54,4 @@ Microsoft Defender is available as part of the Microsoft *Enterprise Mobility + 
 You can acquire a license directly from the [Enterprise Mobility + Security pricing options](https://www.microsoft.com/cloud-platform/enterprise-mobility-security-pricing) page or the Cloud Solution Provider (CSP) licensing model.
 
 > [!NOTE]
-> Microsoft Defender isn't available for purchase via the Azure portal. For more information about Microsoft Defender, review the [Azure Defender \| Microsoft Azure](https://azure.microsoft.com/services/azure-defender/) webpage.
+> Microsoft Defender isn't available for purchase via the Azure portal. For more information about Microsoft Defender review the [Azure Defender \| Microsoft Azure](https://azure.microsoft.com/services/azure-defender/) webpage.

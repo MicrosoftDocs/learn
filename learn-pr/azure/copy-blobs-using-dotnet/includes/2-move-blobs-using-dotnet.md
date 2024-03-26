@@ -8,7 +8,7 @@ The library is available as individual packages for the different storage produc
 
 ## Connect to Azure Blob Storage
 
-The first task is to create a *service client* object for Azure Blob Storage by instantiating the `BlobServiceClient` class, which takes a connection string as a parameter. You can find the connection string for the Storage Account from the Azure portal.
+The first task is to create a *service client* object for Azure Blob Storage by instantiating the `BlobServiceClient` class, which takes a connection string as a parameter. You can find the connection string for the storage account from the Azure portal.
 
 The following code example shows how to perform this task. The relevant types are defined in several namespaces including `Azure`, `Azure.Storage.Blobs`, `Azure.Storage.Blobs.Models`, and `Azure.Storage.Sas`.
 

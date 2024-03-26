@@ -6,9 +6,8 @@ metadata:
   description: Learn how image data can be represented as tensors for neural network training
   ms.date: 07/07/2021
   author: shwars
-  ms.author: dmitryso
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: chnoring
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 10
 sandbox: true

@@ -4,11 +4,10 @@ title: 'Discover common terms and meanings: SAP deployments on Azure'
 metadata:
   title: 'Discover common terms and meanings: SAP deployments on Azure'
   description: "Discover common terms and meanings: SAP deployments on Azure"
-  ms.date: 04/20/2023
+  ms.date: 10/17/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/3-discover-common-terms-meanings-sap-on-azure.md)]

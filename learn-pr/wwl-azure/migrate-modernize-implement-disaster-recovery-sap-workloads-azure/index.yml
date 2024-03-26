@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.migrate-modernize-implement-disaster-recovery-sap-workloads-azure
+metadata:
+  title: Modernize and implement disaster recovery for SAP workloads in Azure
+  description: "Explore disaster recovery support of Azure for SAP workloads, including deployments within single and multiple Azure regions, multi-tier SAP NetWeaver. Prepare for AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud."
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: module
+  ms.service: azure
+title: Modernize and implement disaster recovery for SAP workloads in Azure
+summary: This module explores disaster recovery support of Azure for SAP workloads, including deployments within single and multiple Azure regions, multi-tier SAP NetWeaver app deployment in Azure, and Azure services, such as Active Directory and DNS.
+abstract: |
+  After completing this module, you will be able to:
+  - Explore disaster recovery of SAP workloads.
+  - Explore simple availability between two Azure regions.
+  - Combine availability within one region and across regions.
+  - Explore site recovery.
+  - Implement disaster recovery for SAP deployments across Azure regions with Azure Site Recovery.
+  - Set up site recovery for virtual machines in proximity placement groups - Azure to Azure.
+  - Set up disaster recovery for Active Directory and DNS.
+prerequisites: |
+  Before taking this training, you should complete:
+  - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+  - SAP HANA or NetWeaver training.
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.migrate-modernize-implement-disaster-recovery-sap-workloads-azure.introduction
+- learn.wwl.migrate-modernize-implement-disaster-recovery-sap-workloads-azure.explore-disaster-recovery-sap-workloads
+- learn.wwl.migrate-modernize-implement-disaster-recovery-sap-workloads-azure.explore-simple-availability-between-two-azure-regions
+- learn.wwl.migrate-modernize-implement-disaster-recovery-sap-workloads-azure.combine-availability-within-one-region-across-regions
+- learn.wwl.migrate-modernize-implement-disaster-recovery-sap-workloads-azure.explore-site-recovery
+- learn.wwl.migrate-modernize-implement-disaster-recovery-sap-workloads-azure.implement-disaster-recovery-sap-deployments-azure-site-recovery
+- learn.wwl.migrate-modernize-implement-disaster-recovery-sap-workloads-azure.exercise-set-up-disaster-recovery-active-directory-dns
+- learn.wwl.migrate-modernize-implement-disaster-recovery-sap-workloads-azure.knowledge-check
+- learn.wwl.migrate-modernize-implement-disaster-recovery-sap-workloads-azure.summary
+badge:
+  uid: learn.wwl.migrate-modernize-implement-disaster-recovery-sap-workloads-azure.badge

@@ -1,3 +1,4 @@
+
 It's an example of a basic continuous integration workflow created by using actions:
 
 ```YAML

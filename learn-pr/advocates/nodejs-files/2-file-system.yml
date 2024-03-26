@@ -7,9 +7,10 @@ metadata:
   author: burkeholland
   ms.author: buhollan
   ms.date: 04/20/2020
-  ms.topic: interactive-tutorial
-  ms.prod: vs
-  ms.custom: team=cloud_advocates
+  ms.topic: unit
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-js
   ms.contributors: buhollan-09032021
 durationInMinutes: 6
 content: |

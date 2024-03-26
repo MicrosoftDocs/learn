@@ -1,3 +1,4 @@
+
 Using Resource Manager templates will make your deployments faster and more repeatable.
 
 For example, you no longer must create a VM in the portal, wait for it to finish, and then create the next VM. The Resource Manager takes care of the entire deployment for you.

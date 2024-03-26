@@ -2,16 +2,16 @@ You can use the Web Apps, Mobile Apps, or API Apps features of Azure App Service
 
 Watch the following video to learn how to create an app with Azure App Service. 
 
-#### <!-- Video -->
+### How to create App Services in the Azure portal
 
-<iframe width="854" height="480" src="https://www.youtube.com/embed/dHTzv-zY17I" title="How to create an app with Azure App Service in the Azure portal | Azure Portal Series" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/dHTzv-zY17I]
 
 
 ### Things to know about configuration settings
 
 Let's examine some of the basic configuration settings you need to create an app with App Service.
 
-- **Name**: The name for your app must be unique because it's used to identify and locate your app in Azure. An example name is `webappces1.azurewebsites.net`. You can map a custom domain name, if you prefer to use that option instead.
+- **Name**: The name for your app must be unique. The name identifies and locates your app in Azure. An example name is `webappces1.azurewebsites.net`. You can map a custom domain name, if you prefer to use that option instead.
 
 - **Publish**: App Service hosts (publishes) your app as code or as a Docker Container.
 

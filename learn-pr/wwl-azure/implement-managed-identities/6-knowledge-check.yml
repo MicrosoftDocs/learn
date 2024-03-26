@@ -4,11 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/24/2023
+  ms.date: 03/13/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -24,7 +25,7 @@ quiz:
     - content: "Can only be associated with a single Azure resource"
       isCorrect: false
       explanation: "Incorrect. The same user-assigned managed identity can be associated with more than one Azure resource."
-  - content: "A client app requests managed identities for an access token for a given resource. Which of the below is the basis for the token?"
+  - content: "A client app requests managed identities for an access token for a given resource. Which of the following options is the basis for the token?"
     choices:
     - content: "Oauth 2.0"
       isCorrect: false

@@ -9,7 +9,7 @@ The numbered steps below show what’s happening to the network traffic that Tim
 
 2. Before the browser connects to the applications, it authenticates Tim’s identity. The browser request enters the edge of the Azure regional network and passes inspection by the **Azure Distributed Denial of Service Protection services**. The Azure Distributed Denial of Service Protection services help ensure the traffic isn't part of a larger attack.
 
-3. The request moves to the **Azure Active Directory authentication service**, which adds multifactor authentication for extra security.
+3. The request moves to the **Microsoft Entra authentication service**, which adds multifactor authentication for extra security.
 
 4. Once authenticated, Tim’s request proceeds through an **Azure Firewall**. The firewall ensures Tim is asking for the right ports and confirms Tim's IP address is added to the allowlist to enable access to the web servers. Like Amita's request, Tim's request is still in the hub Azure Virtual Network and the Azure network security group.
 

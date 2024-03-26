@@ -3,11 +3,10 @@ uid: learn-xamarin.xamarin-forms-accessibility.7-exercise-keyboard-accessibility
 metadata:
   title: Exercise - Order content for accessibility
   description: Exercise - Optimize content ordering for accessibility
-  ms.date: 04/20/2021
+  ms.date: 02/20/2024
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-xamarin
+  ms.topic: unit
   
 title: Exercise - Order content for accessibility
 durationInMinutes: 5

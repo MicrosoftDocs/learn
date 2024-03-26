@@ -3,25 +3,25 @@ uid: learn.azure.build-api-azure-functions
 metadata:
   title: Build Serverless APIs with Azure Functions
   description: Use Visual Studio Code to build a JavaScript and Vue.js dashboard with a Serverless API powered by Azure Functions and Node.js.
-  ms.date: 12/04/2020
+  ms.date: 02/27/2024
   author: burkeholland
   ms.author: buhollan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
   ms.custom: team=cloud_advocates
   ms.contributors: buhollan-01092020
+  ms.service: azure-functions
+  manager: mijacobs
 title: Build Serverless APIs with Azure Functions
 summary: Use Visual Studio Code and Azure Functions to rapidly create a serverless API, implement a RESTful architecture and safely store secure information like connection strings.
 abstract: |
   In this module, you will:
   - Establish a solid understanding of Application Programming Interfaces (API).
-  - Create an API with Azure Functions.
+  - Create an API with Azure Functions v4 programming model for Node.js.
   - Connect to Azure Cosmos DB from an Azure Function.
   - Discern the benefits of REST and how to implement a RESTful API.
   - Distinguish the different types of security for Azure Functions and web-based APIs.
   - Deploy an Azure Functions application.
 prerequisites: |
-  - Must have a working knowledge of Azure Functions
   - Must be familiar with fundamental API concepts
   - Must have [Node.js](https://nodejs.org/en/) installed
   - Must have [Visual Studio Code](https://code.visualstudio.com/) installed
@@ -36,7 +36,7 @@ products:
   - azure
   - azure-functions
 subjects:
-- serverless-compute
+- serverless-computing
 units:
   - learn.azure.build-api-azure-functions.1-introduction
   - learn.azure.build-api-azure-functions.2-exercise-setup-project

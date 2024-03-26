@@ -67,7 +67,7 @@ The Department of Homeland Security includes the following organizational struct
 
 ### Cybersecurity
 
-As it relates to the US Government’s cloud strategy, DHS includes the National Cyber Security Division (NCSD). NCSD is responsible for the national response system, risk management program, and U.S. cybersecurity requirements.
+As it relates to the US Government’s cloud strategy, DHS includes the National Cyber Security Division (NCSD). NCSD is responsible for the response system, risk management program, and U.S. cybersecurity requirements.
 
 NCSD includes US-CERT operations and the National Cyber Alert System. US-CERT is the United States Computer Emergency Readiness Team. US-CERT is responsible for analyzing and reducing cyber threats, vulnerabilities, disseminating cyber threat warning information, and coordinating incident response activities.
 

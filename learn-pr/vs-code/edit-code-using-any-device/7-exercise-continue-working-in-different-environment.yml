@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.edit-code-using-any-device.exercise-continue-working-in-different-environment
+title: Exercise - Continue working in a different environment
+metadata:
+  title: Exercise - Continue working in a different environment
+  description: "Learn how to use the Continue Working On... command in Visual Studio Code for the Web to move to a more powerful environment and preserve your code edits."
+  ms.date: 01/22/2024
+  author: olguzzar
+  ms.author: olguzzar
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-exercise-continue-working-in-different-environment.md)]

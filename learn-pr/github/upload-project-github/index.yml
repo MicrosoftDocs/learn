@@ -3,11 +3,11 @@ uid: learn.github.upload-project-github
 metadata:
   title: "Upload your project by using GitHub best practices"
   description: Learn to upload your existing project to GitHub.
-  ms.date: 10/19/2022
+  ms.date: 11/30/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: github
 title: "Upload your project by using GitHub best practices"
 summary: Learn to upload your existing project to GitHub.
 abstract: |
@@ -31,7 +31,6 @@ products:
 - github
 - azure
 subjects:
-- development-tools
 - collaboration
 units:
 - learn.github.upload-project-github.1-introduction

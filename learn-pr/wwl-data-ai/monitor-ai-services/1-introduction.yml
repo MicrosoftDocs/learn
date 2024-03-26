@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-ai-services.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction to monitoring Azure AI services."
+  ms.date: 09/28/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

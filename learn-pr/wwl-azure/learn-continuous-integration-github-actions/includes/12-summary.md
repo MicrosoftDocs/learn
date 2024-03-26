@@ -1,3 +1,4 @@
+
 This module detailed continuous integration using GitHub Actions. It described environment variables, artifacts, best practices, and how to secure your pipeline using encrypted variables and secrets.
 
 You learned how to describe the benefits and usage of:

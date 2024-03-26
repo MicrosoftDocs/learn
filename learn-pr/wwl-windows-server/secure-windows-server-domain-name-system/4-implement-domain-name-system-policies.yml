@@ -4,13 +4,10 @@ title: Implement DNS policies
 metadata:
   title: Implement DNS policies
   description: "Implement DNS policies"
-  ms.date: 10/20/2021
+  ms.date: 12/12/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/4-implement-domain-name-system-policies.md)]
@@ -24,7 +21,7 @@ quiz:
       explanation: "That's incorrect. To create a DNS server zone scope, use the `Add-DnsServerZoneScope` cmdlet."
     - content: "It adds a host record to the zone that is specific to the zone scope."
       isCorrect: true
-      explanation: "That's correct. You'll need to create a host record for each zone scope."
-    - content: "It add a DNS server query resolution policy."
+      explanation: "That's correct. You need to create a host record for each zone scope."
+    - content: "It adds a DNS server query resolution policy."
       isCorrect: false
       explanation: "That's incorrect. To create a DNS server query resolution policy, use the `Add-DnsServerQueryResolutionPolicy` cmdlet."

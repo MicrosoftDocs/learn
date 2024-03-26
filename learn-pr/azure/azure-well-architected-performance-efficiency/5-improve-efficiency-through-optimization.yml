@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-performance-efficiency.improve-efficiency-through-optimization
+title: Improve efficiency through optimization
+metadata:
+  title: Improve efficiency through optimization
+  description: Learn how to continuously improve your workload's efficiency through optimization.
+  ms.date: 12/13/2023
+  author: claytonsiemens77
+  ms.author: csiemens
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-improve-efficiency-through-optimization.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'How did the Contoso team change their development process to address ongoing performance issues?'
+    choices:
+    - content: 'They removed their team from internal messaging groups.'
+      isCorrect: false
+      explanation: 'Incorrect. The team needed to dedicate time to address performance issues, not remove themselves from internal messaging groups.'
+    - content: 'They dedicated time during each cycle to address performance issues.'
+      isCorrect: true
+      explanation: 'By dedicating time during each cycle to address performance issues, the team was able to address longstanding issues and continuously improve the efficiency of their workload.'
+    - content: 'They added more developers to the team.'
+      isCorrect: false
+      explanation: "Incorrect. In this case, the team needed to dedicate time to address performance issues, not add more developers to the team."
+    - content: 'They stopped development of new functions'
+      isCorrect: false
+      explanation: "Incorrect. Stopping the development of new functions would be a drastic and unnecessary measure."
+  - content: 'Which of the following is a good strategy to improve the efficiency of your workload?'
+    choices:
+    - content: 'Implement new design patterns and components.'
+      isCorrect: true
+      explanation: 'Correct. New design patterns and components can boost performance in ways that may not be possible with your current design.'
+    - content: 'Relax the security requirements of your workload.'
+      isCorrect: false
+      explanation: "Incorrect. Relaxing security requirements isn't a good strategy to improve the efficiency of your workload, as it puts your workload at risk of a security incident."
+    - content: 'Add more developers to your team.'
+      isCorrect: false
+      explanation: "Incorrect. Adding more developers to your team doesn't address the root cause of any performance issues."
+    - content: 'Use services in public preview.'
+      isCorrect: false
+      explanation: "Incorrect. Using services in public preview isn’t recommended as they aren’t intended to be used in production systems."
+  - content: 'What type of tool can help you analyze performance trends and identify execution bottlenecks?'
+    choices:
+    - content: 'A security information and event management tool'
+      isCorrect: false
+      explanation: 'Incorrect. A security information and event management tool is used to monitor security events, not performance events.'
+    - content: 'A log management tool'
+      isCorrect: false
+      explanation: 'Incorrect. A log management tool is used to collect and analyze log data, not performance data.'
+    - content: 'An application performance monitoring tool'
+      isCorrect: true
+      explanation: "Correct. An application performance monitoring tool can help you analyze performance trends and identify execution bottlenecks."
+    - content: 'A network performance monitoring tool'
+      isCorrect: false
+      explanation: "Incorrect. A network performance monitoring tool is used to monitor network performance, not application performance."

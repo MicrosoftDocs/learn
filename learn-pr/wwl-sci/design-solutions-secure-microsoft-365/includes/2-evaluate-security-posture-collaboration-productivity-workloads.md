@@ -1,13 +1,13 @@
-Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more recommended actions taken. It can be found at [https://security.microsoft.com/securescore](https://security.microsoft.com/securescore) in the [Microsoft 365 Defender portal](https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender-portal?view=o365-worldwide).
+Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more recommended actions taken. It can be found at [https://security.microsoft.com/securescore](https://security.microsoft.com/securescore) in the [Microsoft Defender portal](/microsoft-365/security/defender/microsoft-365-defender-portal?view=o365-worldwide).
 
-Following the Secure Score recommendations can protect your organization from threats. From a centralized dashboard in the Microsoft 365 Defender portal, organizations can monitor and work on the security of their Microsoft 365 identities, apps, and devices.
+Following the Secure Score recommendations can protect your organization from threats. From a centralized dashboard in the Microsoft Defender portal, organizations can monitor and work on the security of their Microsoft 365 identities, apps, and devices.
 
 ### Products included in Secure Score
 
 Currently there are recommendations for the following products:
 
 -   Microsoft 365 (including Exchange Online)
--   Azure Active Directory
+-   Microsoft Entra ID
 -   Microsoft Defender for Endpoint
 -   Microsoft Defender for Identity
 -   Microsoft Defender for Cloud Apps
@@ -27,14 +27,14 @@ Some recommended actions only give points when fully completed. Some give partia
 
 To help you find the information you need more quickly, Microsoft recommended actions are organized into groups:
 
--   Identity (Azure Active Directory accounts & roles)
--   Device (Microsoft Defender for Endpoint, known as [Microsoft Secure Score for Devices](https://learn.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
+-   Identity (Microsoft Entra accounts & roles)
+-   Device (Microsoft Defender for Endpoint, known as [Microsoft Secure Score for Devices](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
 -   Apps (email and cloud apps, including Office 365 and Microsoft Defender for Cloud Apps)
 -   Data (through Microsoft Information Protection)
 
 In the Microsoft Secure Score overview page, view how points are split between these groups and what points are available. You can also get an all-up view of the total score, historical trend of your secure score with benchmark comparisons, and prioritized recommended actions that can be taken to improve your score.
 
-:::image type="content" source="../media/secure-score-home-page.png" alt-text="Screenshot showing the Secure Score homepage in the Microsoft 365 Defender portal." border="true" lightbox="../media/secure-score-home-page.png":::
+:::image type="content" source="../media/secure-score-home-page.png" alt-text="Screenshot showing the Secure Score homepage in the Microsoft Defender portal." border="true" lightbox="../media/secure-score-home-page.png":::
 
 ### Check your current score
 
@@ -50,7 +50,7 @@ The following are scores you can add to your view of your overall score to give 
 
 This view is what it will look like if you've included all possible score views:
 
-:::image type="content" source="../media/secure-score-achievable.png" alt-text="Screenshot showing your secure score including planned score, current license score, and achievable score in the Microsoft 365 Defender portal." border="true":::
+:::image type="content" source="../media/secure-score-achievable.png" alt-text="Screenshot showing your secure score including planned score, current license score, and achievable score in the Microsoft Defender portal." border="true":::
 
 ### Take action to improve your score
 
@@ -66,11 +66,11 @@ Ranking is based on the number of points left to achieve, implementation difficu
 
 When you select a specific recommended action, a full page flyout appears.
 
-:::image type="content" source="../media/secure-score-improvement-action-details.png" alt-text="Screenshot that shows the flyout of a recommended action in the Microsoft 365 Defender portal." border="true":::
+:::image type="content" source="../media/secure-score-improvement-action-details.png" alt-text="Screenshot that shows the flyout of a recommended action in the Microsoft Defender portal." border="true":::
 
 To complete the action, you have a few options:
 
--   Select **Manage in Microsoft 365 Defender** to go to the configuration screen and make the change. You'll then gain the points that the action is worth, visible in the flyout. Points generally take about 24 hours to update.
+-   Select **Manage in Microsoft Defender XDR** to go to the configuration screen and make the change. You'll then gain the points that the action is worth, visible in the flyout. Points generally take about 24 hours to update.
     
 -   Select **Share** to copy the direct link to the recommended action. You can also choose the platform to share the link, such as email, Microsoft Teams, or Microsoft Planner.
     

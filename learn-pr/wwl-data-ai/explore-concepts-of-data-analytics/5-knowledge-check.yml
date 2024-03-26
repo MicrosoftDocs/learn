@@ -4,13 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/07/2022
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -24,7 +21,7 @@ quiz:
       explanation: "That's incorrect. This is the description of data processing."
     - content: "Analyzing data for anomalies"
       isCorrect: false
-      explanation: "That's incorrect. This is part of the role that a data analysts performs once data has been ingested and transformed into a set of analytical models"
+      explanation: "That's incorrect. This is part of the role that a data analyst performs once data has been ingested and transformed into a set of analytical models."
     - content: "Capturing raw data streaming from various sources and storing it"
       isCorrect: true
       explanation: "That's correct. The purpose of data ingestion is to receive raw data and save it as quickly as possible. The data can then be processed and analyzed."

@@ -1,16 +1,17 @@
-In this module, you'll create a build pipeline that produces a package that can be used by multiple apps.
+In this module, you'll create a build pipeline that produces a package that multiple apps can use.
 
-It's likely that you've used open source or other third-party components in your software. Using components that are popular in the community and have already been built and tested is often the fastest way to get things done.
+It's likely that you've used open-source or other third-party components in your software. Using components that are popular in the community and have already been built and tested is often the fastest way to get things done.
 
-You might also have your own app code that you can move into a library or package so that others can use it. This might be an open source project, or software that only your team can access.
+You might also have your own app code that you can move into a library or package so that others can use it. This might be an open-source project, or software that only your team can access.
 
 There are many ways to build and host your packages. The right solution depends both on the kinds of programming languages and frameworks you use and who you want to access your packages. Here, you'll continue your work with the Tailspin web team by creating a NuGet package for .NET that's hosted on Azure Artifacts.
+
 After completing this module, you'll be able to:
 
-- Create and share packages that can be used by multiple applications
-- Create a build pipeline for your package and publish your package to Azure Artifacts
-- Connect an application to your package and build the application in Azure Pipelines
-- Push changes to your package and update your application to use them
+- Create and share packages that multiple applications can use.
+- Create a build pipeline for your package and publish your package to Azure Artifacts.
+- Connect an application to your package and build the application in Azure Pipelines.
+- Push changes to your package and update your application to use them.
 
 ## Prerequisites
 

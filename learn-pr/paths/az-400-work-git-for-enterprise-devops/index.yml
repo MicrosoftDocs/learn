@@ -6,8 +6,7 @@ metadata:
   ms.date: 05/24/2022
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: 'AZ-400: Development for enterprise DevOps'
 prerequisites: |
   None

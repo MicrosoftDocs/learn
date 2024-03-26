@@ -1,0 +1,33 @@
+### YamlMime:LearningPath
+uid: learn-wwl.work-with-data-warehouses-using-microsoft-fabric
+metadata:
+  title: Implement a data warehouse with Microsoft Fabric
+  description: Implement a data warehouse with Microsoft Fabric.
+  ms.date: 12/20/2023
+  author: jupadrao
+  ms.author: jupadrao
+  ms.topic: learning-path
+title: Implement a data warehouse with Microsoft Fabric
+prerequisites: |
+  You should be familiar with basic data concepts and terminology.
+summary: |
+  Explore the data warehousing process and learn how to load, monitor, and query a warehouse in Microsoft Fabric.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- data-analyst
+- data-engineer
+products:
+- fabric
+subjects:
+- data-analytics
+- data-engineering
+- data-integration
+modules:
+- learn.wwl.get-started-data-warehouse
+- learn-wwl.load-data-into-microsoft-fabric-data-warehouse
+- learn-wwl.query-data-warehouse-microsoft-fabric
+- learn.wwl.monitor-fabric-data-warehouse
+trophy:
+  uid: learn-wwl.work-with-data-warehouses-using-microsoft-fabric.trophy

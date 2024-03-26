@@ -3,11 +3,10 @@ uid: learn.improve-app-scalability-resiliency-with-load-balancer.2-load-balancer
 metadata:
   title: Azure Load Balancer features and capabilities
   description: Azure Load Balancer features and capabilities
-  ms.date: 08/31/2019
-  author: asudbring
-  ms.author: allensu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 03/10/2024
+  author: mbender-ms
+  ms.author: mbender
+  ms.topic: unit
 title: Azure Load Balancer features and capabilities
 durationInMinutes: 10
 content: |

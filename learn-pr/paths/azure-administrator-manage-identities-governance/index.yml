@@ -7,8 +7,7 @@ metadata:
   ms.date: 05/15/2020
   author: cwatson-cat
   ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Manage identities and governance for Azure administrators
 summary: |
   Learn how to manage users, subscriptions, role-based access control (RBAC), and governance in Azure. 
@@ -61,7 +60,7 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-rbac
 - azure-resource-manager
 - azure-cost-management
@@ -75,7 +74,6 @@ modules:
 - learn.secure-azure-resources-with-rbac
 - learn.azure.create-custom-roles-rbac
 - learn.control-and-organize-with-resource-manager
-- learn.azure.plan-manage-azure-costs
 - learn.azure.analyze-costs-create-budgets-azure-cost-management
 - learn.azure.move-azure-resources-to-another-resource-group
 - learn.azure.manage-device-identity-ad-join

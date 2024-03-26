@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.organize-and-inventory-machines-through-arc-enabled-servers.5-knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: "A knowledge check for the organize and inventory hybrid and multicloud machines through Arc-enabled Servers, Learn module. This tests your understanding of the module."
+  ms.date: 12/01/2023
+  author: johnmarco
+  ms.author: johnmarc
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+quiz:
+  questions:
+  - content: "Which of the following management levels is used for the deployment and management of resources such as web apps, databases, and storage accounts?"
+    choices:
+    - content: "Subscriptions"
+      isCorrect: false
+      explanation: "Subscriptions are used by Azure to associate user accounts with the resources they create. Organizations can use subscriptions to manage costs and the resources that are created by users, teams, and projects."
+    - content: "Resource groups"
+      isCorrect: true
+      explanation: "In Azure, a resource group is a fundamental organizational container that helps you manage and organize resources. Resource groups are used to logically group and manage related Azure resources like web apps, storage accounts, networking components, and more."
+    - content: "Management groups"
+      isCorrect: false
+      explanation: "Management groups help you manage access, policy, and compliance for multiple subscriptions. All subscriptions in a management group automatically inherit the conditions that are applied to the management group."
+  - content: "What Azure service allows you to query at scale across a set of subscriptions, helping you to govern your environment?"
+    choices:
+    - content: "Azure Resource Graph"
+      isCorrect: true
+      explanation: "Azure Resource Graph is an Azure service that enables you to efficiently explore and query your Azure resources on a large scale. It offers a robust and effective method for searching, analyzing, and visualizing your resource data across numerous Azure subscriptions and resource groups."
+    - content: "Azure Policy"
+      isCorrect: false
+      explanation: "Azure Policy is a service that helps you enforce organizational standards and compliance in your hybrid and multicloud environments. It allows you to define and apply a set of rules, called policy definitions, to your Azure resources."
+    - content: "Tags"
+      isCorrect: false
+      explanation: "Tags are metadata elements you apply to your Azure resources. They are key-value pairs that help identify resources, based on settings relevant to your organization."
+  - content: "When using Azure Policy to deploy VM extensions, which Policy component is used to specify the extension to be installed and managed?"
+    choices:
+    - content: "Definition"
+      isCorrect: true
+      explanation: "Azure Policy uses definitions to enforce certain requirements on your virtual machines. Azure Policy has many built-in definitions you can apply to your hybrid and multicloud VMs that install extensions and make sure your VMs remain in compliance."
+    - content: "Scope."
+      isCorrect: false
+      explanation: "When creating a Policy assignment, the scope is used to define the actual machines to which the policy will be applied."
+    - content: "Assignment."
+      isCorrect: false
+      explanation: "Policy assignments are used by Azure Policy to define which resources are assigned which policies or initiatives. Definitions and scope are parts of policy assignments."
+    

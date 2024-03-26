@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.create-first-aks-edge-essentials.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is a part of Create your first Azure Kubernetes Service (AKS) Edge Essentials single machine cluster.
+  ms.date: 01/17/2024
+  author: asergaz
+  ms.author: sergaz
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "What is a characteristic of AKS Edge Essentials?"
+    choices:
+    - content: "Is a Microsoft-supported Kubernetes platform that automates running containerized applications at scale."
+      isCorrect: true
+      explanation: "Correct. AKS Edge Essentials is a Microsoft-supported Kubernetes platform that automates running containerized applications at scale."
+    - content: "Can have multiple Linux VMs per each machine, depending on the RAM, storage, and physical CPU cores available."
+      isCorrect: false
+      explanation: "AKS Edge Essentials has only one Linux VM per each machine, along with a Windows VM if needed."
+    - content: "Enables dynamic VM creation and cluster lifecycle management."
+      isCorrect: false
+      explanation: "AKS Edge Essentials is for static configurations and doesn't enable dynamic VM creation/deletion or cluster lifecycle management, unlike AKS in the cloud or AKS HCI."
+  - content: "What is the purpose of the `nodeSelector` tag in the deployment manifest for the Linux and Windows applications?"
+    choices:
+    - content: "It specifies the container image of the application."
+      isCorrect: false
+      explanation: "The `image` tag specifies the container image of the application."
+    - content: "It specifies the type of node where the application will be deployed."
+      isCorrect: true
+      explanation: "Correct. The `nodeSelector` tag specifies the type of node where the application will be deployed, either `linux` or `windows`."
+    - content: "It specifies the number of replicas for the application."
+      isCorrect: false
+      explanation: "The `replicas` tag specifies the number of replicas for the application."
+  - content: "What command is used to deploy the Linux and Windows applications?"
+    choices:
+    - content: "kubectl apply -f app.yaml"
+      isCorrect: true
+      explanation: "Correct. Use kubectl apply command to parse the manifest file and create the defined Kubernetes objects."
+    - content: "kubectl get pods -o wide"
+      isCorrect: false
+      explanation: "This command is used to check that the pods are running."
+    - content: "kubectl get nodes -o wide"
+      isCorrect: false
+      explanation: "This command is used to check that Linux and Windows nodes are ready."

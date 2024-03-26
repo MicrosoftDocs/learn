@@ -1,7 +1,3 @@
-
-
-
-
 In this exercise, you'll add a string array to hold the student names, and then implement a nested `foreach` structure that iterates through the student names in an outer loop and student scores in the inner loop. You'll begin by constructing the `studentNames` array and a `foreach` loop that iterates through the array elements. Next, you'll move the code that's used to calculate Sophia's grades into the code block of the "names" loop. Finally, you'll implement the code logic that uses the student's name to access their scores array, calculate their average score, and write their grade to the console. The detailed tasks that you'll complete during this exercise are:
 
 1. Create names array: Create a student names array.
@@ -157,7 +153,7 @@ In this task, you'll relocate the code that calculates and reports Sophia's scor
 1. Update your code to display proper code line indentation.
 
     > [!TIP]
-    > Visual Studio Code provides a `Format Document` command that can be used to keep your code formatting updated. Right-click inside the Visual Studio Code Editor, and then select **Format Document** from the popup menu. The keyboard shortcut for this command is: `Shift + Alt + F`.
+    > Visual Studio Code provides a `Format Document` command that can be used to keep your code formatting updated. Right-click inside the Visual Studio Code Editor, and then select **Format Document** from the popup menu. On Windows computers, the keyboard shortcut for this command is: `Shift + Alt + F`. Linux and macOS computers use alternative shortcuts when necessary to avoid conflicts with OS supplied shortcuts.
 
 1. Ensure that your updates match the following code:
 
@@ -215,15 +211,13 @@ In this task, you'll relocate the code that calculates and reports Sophia's scor
 1. Update your code to display proper code line indentation.
 
     > [!TIP]
-    > Visual Studio Code provides a `Format Document` command that can be used to keep your code formatting updated. Right-click inside the Visual Studio Code Editor panel, and then select **Format Document** from the popup menu. The keyboard shortcut for this command is: `Shift + Alt + F`.
+    > Use the `Format Document` command to keep your code formatting updated. Right-click inside the Visual Studio Code Editor panel, and then select **Format Document** from the popup menu.
 
 1. Take a minute to review your code.
 
     Your code should match the following code:
 
     ```csharp
-    using System;
-    
     // initialize variables - graded assignments 
     int currentAssignments = 5;
     
@@ -380,7 +374,7 @@ In this task, you'll update the code that performs student score calculations us
 
 1. Create another `else if` statement to assign the `emmaScores` array to `studentScores` when `currentStudent == "Emma"`.
 
-1. Create an `else` statement to assign the `loganScores` array to `studentScores` when `currentStudent == "Logan"`.
+1. Create an `else if` statement to assign the `loganScores` array to `studentScores` when `currentStudent == "Logan"`.
 
 1. Ensure that your `foreach` code block matches the following code:
 
@@ -522,8 +516,6 @@ In this task, you'll update the code that performs student score calculations us
     Your full application should now match the following code:
 
     ```csharp
-    using System;
-    
     // initialize variables - graded assignments 
     int currentAssignments = 5;
     

@@ -4,11 +4,13 @@ Now that all the requirements are in place, you can write code that creates a ne
 
 The sample program contains a `SendMessageAsync` method. In this step, you write code to implement this method.
 
+1. Open the `Program.cs` file in your code editor.
+
 1. Locate the `SendMessageAsync` method.
 
 1. Remove the line that throws a `NotImplementedException`.
 
-1. Add the following code at the start of the `SendMessageAsync` to get the details of the new article from the user.
+1. Add the following code at the start of the `SendMessageAsync` method to get the details of the new article from the user.
 
     ```csharp
     // Get input from user
@@ -19,7 +21,7 @@ The sample program contains a `SendMessageAsync` method. In this step, you write
     NewsArticle article = new NewsArticle() { Headline = headline, Location = location };
     ```
 
-1. This code creates a NewsArticle object that we want to store in our queue.  To do so, serialize the object to JSON and then use the `SendMessageAsync` method to send the message to our queue. Add this code into the `SendMessageAsyc` method after the line that instantiates a `NewsArticle` object.
+1. This code creates a NewsArticle object that we want to store in our queue. To do so, serialize the object to JSON and then use the `SendMessageAsync` method to send the message to our queue. Add this code into the `SendMessageAsyc` method after the line that instantiates a `NewsArticle` object.
 
     ```csharp
     // Build and send the message to the queue
@@ -28,10 +30,10 @@ The sample program contains a `SendMessageAsync` method. In this step, you write
     SendReceipt sendReceipt = response.Value;
     ```
 
-1. Finally, we're going to print to the console some information about the `SendReceipt` that was included in the response from sending the message. For our application, these fields purely informational, but could be used in an actual application to log or track data about the message submitted to the queue.
+1. Finally, we're going to print to the console some information about the `SendReceipt` that was included in the response from sending the message. For our application, these fields are purely informational, but could be used in an actual application to log or track data about the message submitted to the queue.
 
     ```csharp
-    Console.WriteLine($"Message sent.  Message id={sendReceipt.MessageId}  Expiration time={sendReceipt.ExpirationTime}");
+    Console.WriteLine($"Message sent. Message id={sendReceipt.MessageId}  Expiration time={sendReceipt.ExpirationTime}");
     Console.WriteLine();
     ```
 
@@ -53,22 +55,22 @@ The sample program contains a `SendMessageAsync` method. In this step, you write
         SendReceipt sendReceipt = response.Value;
 
         // Print out the send receipt
-        Console.WriteLine($"Message sent.  Message id={sendReceipt.MessageId}  Expiration time={sendReceipt.ExpirationTime}");
+        Console.WriteLine($"Message sent. Message id={sendReceipt.MessageId}  Expiration time={sendReceipt.ExpirationTime}");
         Console.WriteLine();
     }
     ```
 
 ## Execute the application
 
-You're now ready to build and run the program to send your first message to the queue.
+Now you're ready to build and run the program to send your first message to the queue.
 
-1. Make sure you've saved the file in the code editor and then use the `dotnet build` command in the Cloud Shell to build the application.
+1. Make sure that you save the file in the code editor, and then use the `dotnet build` command in the Cloud Shell to build the application.
 
     ```dotnetcli
     dotnet build
     ```
 
-1. Run the application
+1. Run the application.
 
     ```dotnetcli
     dotnet run
@@ -90,7 +92,7 @@ You're now ready to build and run the program to send your first message to the 
     World leaders to meet at economic summit
     Enter location:
     Paris, France
-    Message sent.  Message id=638160c9-f136-49b3-a06c-d2a45739fc4e  Expiration time=10/14/2021 3:49:42 PM +00:00
+    Message sent. Message id=638160c9-f136-49b3-a06c-d2a45739fc4e  Expiration time=10/14/2021 3:49:42 PM +00:00
     
     What operation would you like to perform?
       1 - Send message
@@ -102,15 +104,15 @@ You're now ready to build and run the program to send your first message to the 
 
 ## Check your results
 
-You can check queues in the Azure portal using the Azure CLI, or using Azure PowerShell.  For this example, we'll use the Azure CLI to check the state of our queue.
+You can check queues in the Azure portal using the Azure CLI, or using Azure PowerShell. For this example, we use the Azure CLI to check the state of our queue.
 
-Run the following command in the Cloud Shell environment.\
+Run the following command in the Cloud Shell environment.
 
 ```azurecli
 az storage message peek --queue-name newsqueue --connection-string $MY_STORAGE_CONNECTION_STRING 
 ```
 
-This command should dump the information for your message, which looks something like this:
+This command should output the information for your message, which looks something like this:
 
 ```json
 [

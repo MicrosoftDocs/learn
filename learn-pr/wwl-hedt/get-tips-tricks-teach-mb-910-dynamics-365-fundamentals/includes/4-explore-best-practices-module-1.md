@@ -11,7 +11,7 @@ This module consists of two lessons:
 - Lesson 1 – Navigate Dynamics 365 customer engagement apps
 - Lesson 2 – Explore common Dynamics 365 activities and integration options
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dNzR]  
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4UbRg]  
 
 Module 1 Tips and Tricks
 
@@ -23,8 +23,3 @@ Module 1 Tips and Tricks
 - Prepare and practice the demos before class
 Module 1 Demos
 - No demos for this module
-
-Module 1 Labs 
-
-- Lab 1.1: [Work with customer engagement apps](https://github.com/MicrosoftLearning/MB-910T00A-Microsoft-Dynamics-365-Fundamentals-Customer-Engagement-Apps/blob/master/Instructions/Labs/LAB%5BMB-910%5D_M01_Lab1_Work_with_customer_engagement_apps.md)
-- Lab 1.2: [Manage customers and activities](https://github.com/MicrosoftLearning/MB-910T00A-Microsoft-Dynamics-365-Fundamentals-Customer-Engagement-Apps/blob/master/Instructions/Labs/LAB%5BMB-910%5D_M01_Lab2_Manage_Customers_and_Activities.md)

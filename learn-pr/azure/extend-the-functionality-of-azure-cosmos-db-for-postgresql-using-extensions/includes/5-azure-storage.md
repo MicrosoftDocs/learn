@@ -2,11 +2,11 @@ Woodgrove Bank has decided to use Azure Blob Storage to store its historical dat
 
 Microsoft developed the `pg_azure_storage` extension to allow working with data stored in files hosted in [Azure Blob Storage](https://azure.microsoft.com/services/storage/blobs/#overview). Using the extension, you can operate on files in a blob storage account directly from an Azure Cosmos DB for PostgreSQL database. The extension allows you to:
 
-- Securely connect to an Azure Blob Storage account directly from your database
-- Fetch data from publicly shared Blob Storage resources
-- List files in Blob Storage container
-- Retrieve data from files
-- Import CSV file data directly into a table using the COPY PostgreSQL command
+- Securely connect to an Azure Blob Storage account directly from your database.
+- Fetch data from publicly shared Blob Storage resources.
+- List files in Blob Storage container.
+- Retrieve data from files.
+- Import CSV file data directly into a table using the COPY PostgreSQL command.
 
 ## Migrate files to a storage account
 
@@ -65,9 +65,9 @@ In addition to each file's path, content type, and size (in bytes), you can also
 
 ## Bulk load data from blobs
 
-Woodgrove has expressed the desire to have the historical data stored in CSV files in their Azure Blob Storage account. The data then should be loaded directly into distributed tables in the Azure Cosmos DB for PostgreSQL database. To bulk load data from files in blob storage, `pg_azure_storage` extends the native PostgreSQL `COPY` command to make it capable of handling Azure Blob Storage resource URLs. This feature is enabled by default and can be managed using the `pg_azure_storage.enable_copy_command` setting.
+Woodgrove has expressed the desire to have the historical data stored in CSV files in their Azure Blob Storage account. The data then should be loaded directly into distributed tables in the Azure Cosmos DB for PostgreSQL database. To bulk load data from files in blob storage, `pg_azure_storage` extends the native PostgreSQL `COPY` command to make it capable of handling Azure Blob Storage resource URLs. This feature is enabled by default, and you can manage it using the `pg_azure_storage.enable_copy_command` setting.
 
-Using the `COPY` command, you can run the following to ingest user data into the `payment_users` table:
+By using the `COPY` command, you can run the following to ingest user data into the `payment_users` table:
 
 ```sql
 -- Bulk load data from the user.csv file in Blob Storage into the payment_users table

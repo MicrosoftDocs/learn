@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/20/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
 title: Understand the Windows PowerShell pipeline
 summary: This module explains about the Windows PowerShell pipeline and some basic techniques for running multiple commands in it.
 abstract: |
@@ -30,14 +29,13 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-cloud-shell
 - azure-powershell
 - azure-virtual-machines
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

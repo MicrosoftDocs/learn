@@ -7,8 +7,8 @@ metadata:
   ms.date: 01/10/2023
   author: yenchiho
   ms.author: yenchiho
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: virtual-machines
 title: Deploy Elastic on Azure virtual machines
 summary: In this module, we will demonstrate how to deploy Elastic on Azure virtual machines.
 abstract: |
@@ -28,7 +28,6 @@ roles:
 products:
   - azure
   - azure-virtual-machines
-  - azure-linux-vm
 subjects:
 - virtual-machine
 units:

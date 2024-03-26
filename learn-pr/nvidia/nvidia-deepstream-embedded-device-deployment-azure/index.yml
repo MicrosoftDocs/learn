@@ -7,8 +7,8 @@ metadata:
   author: toolboc
   ms.author: chnoring
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: NVIDIA DeepStream embedded device deployment with Azure
 summary: In this module, you'll publish and deploy an ARM-based DeepStream container workload to NVIDIA embedded hardware by using Azure IoT Edge.
 abstract: |
@@ -39,7 +39,6 @@ products:
 - azure-iot-hub
 subjects:
 - iot
-- development-tools
 units:
 - learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure.1-introduction
 - learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure.2-introduction-artificial-intelligence-edge

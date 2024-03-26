@@ -9,7 +9,7 @@ To obtain the keys, the guarded host must provide the following to the KPS:
 - Health certificate. The guarded host must obtain a clean certificate of health from the HGS Attestation service.
 - Encrypted secret. The secret or Key Protector (KP) is encrypted using other secure keys that only the KPS knows. The KPS uses the encrypted secret to obtain the keys that are needed unlock and power on a shielded VM.
 
-When a guarded host starts a shielded VM, the HGS sends the guarded host's health certificate and encrypted secret to the KPS. The certificate and secret are sent to the to the *Key Protection Server URL* (KPS URL) using HTTP or secure HTTP 1.1 as transport.
+When a guarded host starts a shielded VM, the HGS sends the guarded host's health certificate and encrypted secret to the KPS. The certificate and secret are sent to the *Key Protection Server URL* (KPS URL) using HTTP or secure HTTP 1.1 as transport.
 
 To decide whether the keys for a shielded VM should be released to the guarded host, the KPS examines the guarded host's health certificate to determine its validity. The certificate must not be expired, and the KPS must trust the HGS Attestation service that issued the certificate.
 

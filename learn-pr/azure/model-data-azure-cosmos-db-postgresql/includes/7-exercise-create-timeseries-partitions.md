@@ -1,6 +1,6 @@
 Woodgrove Bank only shows six months of transactions within their contactless payment app. After six months, those transactions are deleted for the context of this application. By using time-partitioning, it's easy to identify which data needs to show and which data needs pruned when it's no longer needed.
 
-Users of the Woodgrove Bank app also have shown that they query data within a couple weeks. With this revelation, it makes sense to partition the data in intervals of seven days.
+The Woodgrove Bank app's users also have shown that they query data within a couple weeks. With this revelation, it makes sense to partition the data in intervals of seven days.
 
 In this exercise, you'll create the partitions for the `payment_events` table. These partitions will break up the data as seen in the diagram below.
 
@@ -70,7 +70,7 @@ The `PARTITION BY` clause indicates how the data should be partitioned, but it d
 
 ## Drop partitions
 
-When data is no longer needed, `drop_old_time_partitions()` can be used to remove unnecessary data. For this example, you'll see how `drop_old_time_partitions()` can work by deleting the partitions older than now.
+When data is no longer needed, you can use `drop_old_time_partitions()` to remove unnecessary data. For this example, you'll see how `drop_old_time_partitions()` works by deleting the partitions older than now.
 
 1. To remove the data no longer needed from one month ago, run the following command:
 
@@ -96,4 +96,4 @@ When data is no longer needed, `drop_old_time_partitions()` can be used to remov
 
     The partition for the past month shouldn't appear in the list of partitions.
 
-While `create_time_partitions()` and `drop_old_time_partitions()` can be run manually, an extension called `pg_cron` can be used to schedule this maintenance. Learn more from [scaling time series data and scheduling partition maintenance](https://docs.citusdata.com/en/stable/use_cases/timeseries.html#scaling-timeseries-data-on-citus).
+While you can run `create_time_partitions()` and `drop_old_time_partitions()` manually, you can use an extension called `pg_cron` to schedule this maintenance. Learn more from [scaling time series data and scheduling partition maintenance](https://docs.citusdata.com/en/stable/use_cases/timeseries.html#scaling-timeseries-data-on-citus).

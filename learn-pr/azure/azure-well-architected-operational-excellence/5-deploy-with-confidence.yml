@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-operational-excellence.deploy-with-confidence
+title: Deploy with confidence
+metadata:
+  title: Deploy with confidence
+  description: Learn how to deploy with confidence to improve your operational excellence.
+  ms.date: 12/05/2023
+  author: claytonsiemens77
+  ms.author: csiemens
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-deploy-with-confidence.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'How can deploying infrastructure as code help you deploy with confidence?'
+    choices:
+    - content: "Infrastructure that's deployed as code doesn't have to be patched."
+      isCorrect: false
+      explanation: 'Incorrect. Infrastructure as code is still subject to the same patching requirements as any other infrastructure.'
+    - content: "Infrastructure that's deployed as code can be consistently and repeatedly deployed."
+      isCorrect: true
+      explanation: 'Correct. Deploying infrastructure as code allows you to consistently and repeatedly deploy your workload, cutting down the risk of human error.'
+    - content: "Infrastructure that's deployed as code is less prone to security vulnerabilities."
+      isCorrect: false
+      explanation: "Incorrect. Infrastructure as code is still vulnerable to the same security vulnerabilities as any other infrastructure."
+    - content: 'Infrastructure that is deployed as code relieves compliance requirements.'
+      isCorrect: false
+      explanation: "Incorrect. Infrastructure as code is still subject to the same compliance requirements as any other infrastructure."
+  - content: 'How did moving the IaC code to the same repository as the application code help the Contoso team deploy with confidence?'
+    choices:
+    - content: 'It allowed them to bypass their QA testing processes for the IaC code.'
+      isCorrect: false
+      explanation: 'Incorrect. The Contoso team still had to test the IaC code, but they were able to do so in the same repository as the application code.'
+    - content: 'It allowed them to remove large portions of their IaC code due to overlap with the application code.'
+      isCorrect: false
+      explanation: "Incorrect. Moving the IaC code to the same repository as the application code didn't affect the amount of code that needed to be maintained."
+    - content: 'It allowed them to apply the same governance and security standards across both codebases.'
+      isCorrect: true
+      explanation: "Correct. By moving the IaC code to the same repository as the application code, the Contoso team cut down the risk of security or governance issues by applying the same standards across both codebases."
+    - content: 'It allowed them to remove large sections of the application code due to overlap with the IaC code.'
+      isCorrect: false
+      explanation: "Incorrect. Moving the IaC code to the same repository as the application code didn't affect the amount of code that needed to be maintained."
+  - content: 'Which of the following can help ensure that deploying a DR environment will go efficiently?'
+    choices:
+    - content: 'A common deployment manifest'
+      isCorrect: true
+      explanation: 'Correct. Using a common deployment manifest across your workload environments ensures that your DR environment mirrors your primary environment and can be deployed quickly.'
+    - content: 'A manual deployment process'
+      isCorrect: false
+      explanation: 'Incorrect. A manual deployment process is prone to human error and can be time consuming.'
+    - content: 'A different deployment manifest for each environment'
+      isCorrect: false
+      explanation: "Incorrect. Using a different deployment manifest for each environment can lead to inconsistencies between environments, which can cause issues when deploying your DR environment."
+    - content: 'Maintaining a separate repository for your DR environment'
+      isCorrect: false
+      explanation: "Incorrect. Maintaining a separate repository for your DR environment can lead to inconsistencies between environments, which can cause issues when deploying your DR environment."

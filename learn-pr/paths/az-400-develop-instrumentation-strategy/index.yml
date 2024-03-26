@@ -7,8 +7,7 @@ metadata:
   ms.date: 06/25/2020
   author: chcomley
   ms.author: chcomley
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: "Develop an instrumentation strategy"
 summary: |
   Learn how logging, telemetry, and monitoring give you full visibility into what's happening in your environment.
@@ -25,11 +24,10 @@ products:
 - azure
 - azure-portal
 - azure-resource-manager
-- azure-application-insights
 - azure-monitor
 - azure-event-grid
-- azure-sentinel
-- azure-security-center
+- microsoft-sentinel
+- defender-for-cloud
 - azure-service-health
 - vs-app-center
 - azure-virtual-machines
@@ -46,8 +44,8 @@ modules:
 - learn.azure-well-architected-performance-efficiency
 - learn.azure-well-architected-operational-excellence
 - learn.analyze-infrastructure-with-azure-monitor-logs
-- learn.capture-page-load-times-application-insights
-- learn.instrument-web-app-code-with-application-insights
+# - learn.capture-page-load-times-application-insights
+# - learn.instrument-web-app-code-with-application-insights
 - learn.cmu-cloud-admin.cmu-monitor-cloud-resources
 - learn.react-to-state-changes-using-event-grid
 - learn.design-monitoring-strategy-on-azure

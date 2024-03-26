@@ -2,20 +2,20 @@
 uid: learn.wwl.create-manage-sensitive-information-types
 metadata:
   title: Create and manage sensitive information types
-  description: "Create and manage sensitive information types"
-  ms.date: 04/18/2023
+  description: "Create and manage sensitive information types."
+  ms.date: 03/22/2024
   author: wwlpublish
   ms.author: riswinto
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.topic: module
+  ms.service: purview
 title: Create and manage sensitive information types
 summary: Learn how to use sensitive information types to support your information protection strategy.
 abstract: |
-  After completing this module, you will be able to:
-  - Recognize the difference between built-in and custom sensitivity labels
-  - Configure sensitive information types with exact data match-based classification
-  - Implement document fingerprinting
-  - Create custom keyword dictionaries
+  After completing this module, you'll be able to:
+  - Recognize the difference between built-in and custom sensitivity labels.
+  - Configure sensitive information types with exact data match-based classification.
+  - Implement document fingerprinting.
+  - Create custom keyword dictionaries.
 prerequisites: |
   - Basic understanding of the Microsoft 365 services
   - Basic understanding information protection and governance in Microsoft 365
@@ -28,7 +28,6 @@ roles:
 - risk-practitioner
 products:
 - m365
-- m365-information-protection
 subjects:
 - information-protection-governance
 units:
@@ -37,6 +36,7 @@ units:
 - learn.wwl.create-manage-sensitive-information-types.create-manage-custom
 - learn.wwl.create-manage-sensitive-information-types.describe-custom-with-exact-data-match
 - learn.wwl.create-manage-sensitive-information-types.implement-document-fingerprinting
+- learn.wwl.create-manage-sensitive-information-types.describe-named-entities
 - learn.wwl.create-manage-sensitive-information-types.create-keyword-dictionary
 - learn.wwl.create-manage-sensitive-information-types.knowledge-check
 - learn.wwl.create-manage-sensitive-information-types.summary-resources

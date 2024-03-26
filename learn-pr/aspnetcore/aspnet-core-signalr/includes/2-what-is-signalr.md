@@ -1,8 +1,8 @@
 All internet-connected applications are composed of servers and clients. Clients rely on servers for data, and their primary mechanism for receiving data is through making Hypertext Transfer Protocol (HTTP) requests. Some client applications require data that changes frequently.
 
-ASP.NET Core SignalR provides an API for creating server-to-client remote procedure calls (RPCs). RPCs invoke functions on clients from the server-side .NET Core code. There are several supported platforms, each with its own client SDK. Because of this, the programming language being invoked by RPC calls varies.
+ASP.NET Core SignalR provides an API for creating server-to-client remote procedure calls (RPCs). RPCs invoke functions on clients from the server-side .NET Core code. There are several supported platforms, each with its own client SDK. Therefore, the programming language being invoked by RPC calls can vary.
 
-It's helpful to familiarize yourself with the common terminology that's associated with SignalR. In this unit, you'll learn what SignalR components are required in a server application versus those in client applications. Additionally, you'll gain an understanding of the various duplex communication mechanisms. SignalR encapsulates multiple real-time protocols and abstracts away the complexities of each implementation. For more information, see the [ASP.NET Core SignalR](/aspnet/core/signalr/introduction) documentation.
+It's helpful to familiarize yourself with the common terminology that's associated with SignalR. In this unit, you'll learn what SignalR components are required in a server application, versus those in client applications. Additionally, you'll gain an understanding of the various duplex communication mechanisms. SignalR encapsulates multiple real-time protocols, and abstracts away the complexities of each implementation. For more information, see the [ASP.NET Core SignalR](/aspnet/core/signalr/introduction) documentation.
 
 The principal terms that are used in SignalR are discussed in the following sections.
 
@@ -10,15 +10,15 @@ The principal terms that are used in SignalR are discussed in the following sect
 
 SignalR supports the following techniques, or *transports*, for handling real-time communication:
 
-- WebSockets
-- Server-Sent Events
-- Long Polling
+1. WebSockets
+2. Server-Sent Events
+3. Long Polling
 
-The order in which the transports are listed here signifies their graceful fallback order. In other words, WebSockets is preferred over Server-Sent Events, and Server-Sent Events is preferred over Long Polling, though any one of them could be used. SignalR automatically chooses the best transport method that's within the capabilities of the server and client. For more information, see the official specification for [SignalR Transport Protocols](https://github.com/dotnet/aspnetcore/blob/068797e16a1bfe66461e15c8a2ffa864369d384d/src/SignalR/docs/specs/TransportProtocols.md).
+The order in which the transports are listed here signifies their graceful fallback order. In other words, WebSockets is preferred over Server-Sent Events, and Server-Sent Events is preferred over Long Polling, although any one of these transports could be used. SignalR automatically chooses the best transport method that's within the capabilities of the server and the client. For more information, see the official specification for [SignalR Transport Protocols](https://github.com/dotnet/aspnetcore/blob/068797e16a1bfe66461e15c8a2ffa864369d384d/src/SignalR/docs/specs/TransportProtocols.md).
 
 ### Server
 
-The server is responsible for exposing a SignalR endpoint. The endpoint maps to a <xref:Microsoft.AspNetCore.SignalR.Hub> or <xref:Microsoft.AspNetCore.SignalR.Hub%601> subclass. The server can exist on-premises, in a cloud provider (such as Azure), or with [Azure SignalR Service](/azure/azure-signalr). The server exposes both the hub methods, which can be called from clients, and the events that clients can subscribe to. These are considered remote procedures.
+The server is responsible for exposing a SignalR endpoint. The endpoint maps to a <xref:Microsoft.AspNetCore.SignalR.Hub> or <xref:Microsoft.AspNetCore.SignalR.Hub%601> subclass. The server can exist on-premises, in a cloud provider (such as Azure), or with the [Azure SignalR Service](/azure/azure-signalr). The server exposes both the hub methods, which can be called from clients, and the events that clients can subscribe to. These are considered remote procedures.
 
 #### Hub
 
@@ -35,11 +35,11 @@ To use the *MessagePack* protocol, both server and client need to opt in to conf
 
 #### Users
 
-A user in the system acts as an individual, but it can also be part of a group. Messages can be sent to [groups](#groups), and all group members will be notified. A single user can connect from multiple client applications. For example, the same user can use a mobile device and a web browser and get real-time updates on both at the same time.
+A user in the system acts as an individual, but can also be part of a group. Messages can be sent to [groups](#groups), and all group members are notified. A single user can connect from multiple client applications. For example, the same user can use a mobile device and a web browser and get real-time updates on both at the same time.
 
 #### Groups
 
-A group consists of one or more [connections](#connections). The server can create groups, add connections to a group, and remove connections from a group. A group has a specified name, which acts as its unique identifier. Groups serve as a scoping mechanism to help target messages. That is, real-time functionality can be sent only to users within a named group.
+A group consists of one or more [connections](#connections). The server can create groups, add connections to a group, and remove connections from a group. A group has a specified name, which acts as its unique identifier. Groups serve as a scoping mechanism to help target messages. That is, real-time functionality can only be sent to users within a named group.
 
 #### Connections
 
@@ -58,4 +58,4 @@ The client is responsible for establishing a connection to the server's endpoint
 
 For more information, see [ASP.NET Core SignalR supported platforms](/aspnet/core/signalr/supported-platforms).
 
-When a hub connection instance is started successfully, messages flow freely in both directions. Users are free to both communicate notifications to the server and receive notifications from the server. A client is any connected application, such as, but not limited to, a web browser, a mobile app, or a desktop app.
+When a hub connection instance is started successfully, messages flow freely in both directions. Users are free to both communicate notifications to the server and receive notifications from the server. A client is any connected application, for example, a web browser, a mobile app, or a desktop app, among others.

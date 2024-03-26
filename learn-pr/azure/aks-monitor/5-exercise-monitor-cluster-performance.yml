@@ -7,8 +7,7 @@ metadata:
   ms.date: 08/10/2022
   author: bwren
   ms.author: bwren
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/5-exercise-monitor-cluster-performance.md)]

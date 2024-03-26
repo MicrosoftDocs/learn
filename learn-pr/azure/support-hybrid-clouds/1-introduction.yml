@@ -5,10 +5,9 @@ metadata:
   title: Introduction
   description: Introduction to Support data classification with private and hybrid clouds.
   ms.date: 02/23/2021
-  author: Adriamen
-  ms.author: micrum
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 1 
 content: |
   [!include[](includes/1-introduction.md)] 

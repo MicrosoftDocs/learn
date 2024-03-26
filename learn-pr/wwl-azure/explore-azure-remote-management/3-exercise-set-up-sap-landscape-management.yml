@@ -4,11 +4,10 @@ title: Set up the Azure connector for SAP Landscape Management
 metadata:
   title: Set up the Azure connector for SAP Landscape Management
   description: "Set up the Azure connector for SAP Landscape Management"
-  ms.date: 04/21/2023
+  ms.date: 10/17/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/3-exercise-set-up-sap-landscape-management.md)]

@@ -4,11 +4,10 @@ title: Implement stack navigation with NavigationPage
 metadata:
   title: Implement stack navigation with NavigationPage
   description: "Use NavigationPage and the navigation methods to implement stack navigation in Xamarin.Forms."
-  ms.date: 05/01/2019
+  ms.date: 02/20/2024
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-xamarin
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-implement-stack-navigation.md)]

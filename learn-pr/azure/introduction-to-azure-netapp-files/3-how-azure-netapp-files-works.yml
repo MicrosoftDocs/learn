@@ -8,8 +8,7 @@ metadata:
   ms.date: 06/18/2021
   author: mengruts
   ms.author: mengtsai
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/3-how-azure-netapp-files-works.md)]

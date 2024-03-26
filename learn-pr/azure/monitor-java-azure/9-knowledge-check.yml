@@ -4,13 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check of what you've learned
-  ms.date: 07/07/2021
+  ms.date: 01/07/2024
   author: roryp
   ms.author: ropreddy
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom:
-  - team=cloud_advocates
+    - team=cloud_advocates
+    - devx-track-extended-java
   ms.contributors:
   - ropreddy-07092021
 durationInMinutes: 2

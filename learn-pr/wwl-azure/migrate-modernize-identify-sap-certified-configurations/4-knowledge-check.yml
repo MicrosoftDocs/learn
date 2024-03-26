@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-identify-sap-certified-configurations.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Providing an easy way to deploy and test pre-configured SAP solutions offered by SAP without having to deploy underlying infrastructure is the primary benefit of which SAP on Azure deployment option?"
+    choices:
+    - content: "Azure VMs"
+      isCorrect: false
+      explanation: "Incorrect. Providing an easy way to deploy and test pre-configured SAP solutions offered by SAP without having to deploy underlying infrastructure isn't a primary benefit of Azure VMs."
+    - content: "SAP S4/HANA"
+      isCorrect: false
+      explanation: "Incorrect. Providing an easy way to deploy and test pre-configured SAP solutions offered by SAP without having to deploy underlying infrastructure isn't a primary benefit of SAP S4/HANA."
+    - content: "SAP Cloud Appliance Library"
+      isCorrect: true
+      explanation: "Correct. SAP Cloud Appliance Library allows the deployment of pre-configured software appliances on different public clouds, including Azure."
+  - content: "Which SAP Note provides an up-to-date listing of Azure VM SKUs supported for non-HANA RDBMS platforms serving SAP workloads?"
+    choices:
+    - content: "SAP Note \\#2553235"
+      isCorrect: false
+      explanation: "Incorrect. SAP Note \\#1928533 provides an up-to-date listing of Azure VM SKUs supported for non-HANA RDBMS platforms serving SAP workloads."
+    - content: "SAP Note \\#1928533"
+      isCorrect: true
+      explanation: "Correct. SAP Note \\#1928533 provides an up-to-date listing of Azure VM SKUs supported for non-HANA RDBMS platforms serving SAP workloads."
+    - content: "SAP Note \\#2288344"
+      isCorrect: false
+      explanation: "Incorrect. SAP Note \\#1928533 provides an up-to-date listing of Azure VM SKUs supported for non-HANA RDBMS platforms serving SAP workloads."
+  - content: "What is the definition of the SAP Application Performance Standard metric (SAPS)?"
+    choices:
+    - content: "100 SAPS = 1,000 fully business processed order line items per hour"
+      isCorrect: false
+      explanation: "Incorrect. 100 SAPS is defined as 2,000 fully business processed order line items per hour. In the Sales and Distribution Benchmark, fully business-processed means the full business process of an order line item, which includes creating the order, creating a delivery note for the order, displaying the order, changing the delivery, posting a goods issue, listing orders, and creating an invoice."
+    - content: "100 SAPS = 2,000 fully business processed order line items per hour"
+      isCorrect: true
+      explanation: "Correct. 100 SAPS is defined as 2,000 fully business processed order line items per hour. In the Sales and Distribution Benchmark, fully business-processed means the full business process of an order line item, which includes creating the order, creating a delivery note for the order, displaying the order, changing the delivery, posting a goods issue, listing orders, and creating an invoice."
+    - content: "100 SAPS = 5,000 fully business processed order line items per hour"
+      isCorrect: false
+      explanation: "Incorrect. 100 SAPS is defined as 2,000 fully business processed order line items per hour. In the Sales and Distribution Benchmark, fully business-processed means the full business process of an order line item, which includes creating the order, creating a delivery note for the order, displaying the order, changing the delivery, posting a goods issue, listing orders, and creating an invoice."

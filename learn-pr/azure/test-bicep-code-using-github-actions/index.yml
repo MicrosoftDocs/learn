@@ -5,10 +5,10 @@ metadata:
   title: Test your Bicep code by using GitHub Actions
   description: Build a deployment workflow for Bicep infrastructure as code templates. Lint, validate, preview, and test your Bicep code by using GitHub and GitHub Actions.
   ms.date: 12/27/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: mumian
+  ms.author: jgao
+  ms.topic: module
+  ms.devlang: bicep
 title: Test your Bicep code by using GitHub Actions
 summary: |
   Validate and test your Bicep code in your deployment workflow. You'll use linting, preflight validation, and the what-if operation to validate your Azure changes before you deploy, and you'll test your resources after each deployment.
@@ -28,7 +28,7 @@ prerequisites: |
 
   To work through the exercises in the module, you'll need:
 
-  - An Azure account, with the ability to create resource groups and Azure Active Directory applications.
+  - An Azure account, with the ability to create resource groups and Microsoft Entra applications.
   - A GitHub account.
 
   You'll also need the following software installed locally:

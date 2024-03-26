@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-azure-stream-analytics-azure-functions.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: This content is part of Examine Azure Stream Analytics and Azure Functions in Azure IoT Hub solutions.
+  ms.date: 03/13/2024
+  author: asergaz
+  ms.author: sergaz
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

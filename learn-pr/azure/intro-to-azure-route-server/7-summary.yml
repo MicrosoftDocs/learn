@@ -5,11 +5,10 @@ metadata:
   unitType: summary
   title: Summary
   description: This is a summary unit.
-  ms.date: 11/23/2021
-  author: LBN-commits
-  ms.author: v-lanai
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 12/08/2023
+  author: halkazwini
+  ms.author: halkazwini
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/7-summary.md)]

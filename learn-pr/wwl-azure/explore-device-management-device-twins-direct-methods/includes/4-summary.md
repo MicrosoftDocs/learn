@@ -1,1 +1,0 @@
-Your team will be responsible for managing the devices that have been deployed as part of the company's IoT solution. The experience that you have gained implementing device twins and direct methods in a test environment will help to ensure that your device management tasks go smoothly.

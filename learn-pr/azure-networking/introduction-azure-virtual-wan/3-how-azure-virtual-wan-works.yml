@@ -4,11 +4,10 @@ title: How Azure Virtual WAN works
 metadata:
   title: How Azure Virtual WAN works
   description: Here we dive into the components and features of Azure Virtual WAN
-  ms.date: 11/16/2022
+  ms.date: 12/06/2023
   author: cherylmc
   ms.author: cherylmc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/3-how-azure-virtual-wan-works.md)]

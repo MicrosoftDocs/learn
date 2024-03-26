@@ -1,6 +1,7 @@
 
 
 
+
 Azure supports two types of queue mechanisms: **Service Bus queues** and **Storage queues**.
 
 Service Bus queues are part of a broader Azure messaging infrastructure that supports queuing, publish/subscribe, and more advanced integration patterns. They're designed to integrate applications or application components that may span multiple communication protocols, data contracts, trust domains, or network environments.

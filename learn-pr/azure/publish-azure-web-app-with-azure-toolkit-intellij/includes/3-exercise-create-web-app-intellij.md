@@ -10,15 +10,18 @@ Before you can examine your Azure resources with the Azure Explorer, you must cr
 
 1. In the **Welcome to IntelliJ IDEA** window, select **Create new project**.
 
-1. In the menu on the left, select **Maven** and then select **Create from archetype**.
+1. In the menu on the left, select **Maven Archetype**.
 
-1. In the list of archetypes, select **maven-archetype-webapp**, and then select **Next**.
+1. In the list of archetypes, search for and select **maven-archetype-webapp**.
 
     ![Select an archetype.](../media/3-select-archetype.png)
 
-1. Type **webapp** in the **Name** textbox, then click **Next**.
+1. Type **webapp** in the **Name** field.
 
-1. To accept the default Maven settings, click **Finish**.
+1. To accept the default Maven settings, select **Create**.
+
+> [!NOTE]
+> Creating your project takes a few moments.
 
 ## Complete the web app
 

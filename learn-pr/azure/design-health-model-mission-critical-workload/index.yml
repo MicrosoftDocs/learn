@@ -6,8 +6,7 @@ metadata:
   ms.date: 01/12/2022
   author: msimecek
   ms.author: prwilk
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
 title: Design a health model for your mission-critical workload
 summary: A well-designed application **health model** gives you contextualized observability by using metrics and thresholds, which _you_ consider important for your mission-critical workload.
 abstract:  | 
@@ -33,7 +32,7 @@ roles:
 products:
 - azure #TBD
 subjects:
--	high-availability-system
+-	site-reliability-engineering
 -	architecture
 -	solution-design
 -	data-visualization

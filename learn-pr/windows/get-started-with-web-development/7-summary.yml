@@ -5,10 +5,9 @@ metadata:
   title: Summary
   description: Review what you've learned and where to learn more.
   ms.date: 2/8/2023
-  author: mmpadget
-  ms.author: quradic
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  author: kjo-msft
+  ms.author: karinjohnson
+  ms.topic: unit
 durationInMinutes: 2
 content: |
     [!include[](includes/7-summary.md)]

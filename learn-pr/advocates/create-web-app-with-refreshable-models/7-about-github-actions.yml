@@ -3,11 +3,10 @@ uid: learn.advocates.create-web-app-with-refreshable-models.7-about-github-actio
 metadata:
   title: About GitHub Actions
   description: What is a GitHub Action?
-  author: jlooper
+  author: GitHubber17
   ms.date: 02/10/2020
-  ms.author: jelooper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: chnoring
+  ms.topic: unit
   ms.custom: team=nextgen
 title: About GitHub Actions
 durationInMinutes: 5

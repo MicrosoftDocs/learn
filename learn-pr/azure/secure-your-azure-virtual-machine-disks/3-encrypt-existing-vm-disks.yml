@@ -7,8 +7,10 @@ metadata:
   ms.date: 09/24/2018
   author: roygara
   ms.author: rogarana
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
+    - devx-track-azurepowershell
 durationInMinutes: 10
 content: |
   [!include[](includes/3-encrypt-existing-vm-disks.md)]

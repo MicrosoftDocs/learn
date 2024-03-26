@@ -3,11 +3,12 @@ uid: learn-xamarin.create-a-mobile-app-with-xamarin-forms
 metadata:
   title: Create a mobile app with Xamarin.Forms
   description: "Use Visual Studio with Xamarin.Forms to create a mobile app that runs on Android and iOS, with no previous experience necessary."
-  ms.date: 05/01/2019
+  ms.date: 02/20/2024
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-xamarin
+  ms.topic: module
+  ms.service: xamarin
+  ms.subservice: xamarin-forms
 title: Create a mobile app with Xamarin.Forms
 summary: "Use Visual Studio with Xamarin.Forms to create a mobile app that runs on Android and iOS, with no previous experience necessary."
 abstract: |
@@ -20,6 +21,7 @@ prerequisites: |
   - Visual Studio 2019 (any edition)
   - Familiarity with C# and .NET
 iconUrl: /training/achievements/xamarin/create-a-mobile-app-with-xamarin-forms-badge.svg
+hidden: true
 levels:
 - beginner
 roles:

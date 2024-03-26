@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-explore-azure-sap-workloads.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/08/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which item describes a benefit of running SAP applications on Azure?"
+    choices:
+    - content: "Hyper-V snapshot support"
+      isCorrect: false
+      explanation: "Incorrect. Hyper-V snapshot support isn't one of the benefits of running SAP applications on Azure."
+    - content: "Guaranteed 100 percent uptime"
+      isCorrect: false
+      explanation: "Incorrect. Running SAP applications on Azure doesn't guarantee 100 percent uptime."
+    - content: "Lower TCO"
+      isCorrect: true
+      explanation: "Correct. Azure provides for a 60 percent cost reduction when compared to traditional, on-premises storage systems. By using SAP technologies on Azure, customers can realize 40-75 percent TCO cost savings in Dev and Test environments."
+  - content: "Which of the following terms is defined as \"One or more SAP components logically grouped to perform a business function, such as development, quality assurance, training, disaster recovery, or production\"?"
+    choices:
+    - content: "Landscape"
+      isCorrect: false
+      explanation: "Incorrect. \"Landscape\" refers to the entire SAP assets in a user's IT landscape. The SAP landscape includes all production and non-production environments."
+    - content: "System"
+      isCorrect: false
+      explanation: "Incorrect. \"System\" refers to the combination of DBMS layer and application layer of, for example, an SAP ERP development system, an SAP BW test system, and an SAP CRM production system."
+    - content: "Environment"
+      isCorrect: true
+      explanation: "Correct. The SAP term is \"environment\"."
+  - content: "Which of the following categories do Business Warehouse and Solution Manager fall into?"
+    choices:
+    - content: "Landscape"
+      isCorrect: false
+      explanation: "Incorrect. Both are individual SAP applications. SAP components can be based on traditional ABAP or Java technologies or a non-NetWeaver based application such as Business Objects."
+    - content: "Component"
+      isCorrect: true
+      explanation: "Correct. Both are individual SAP applications. SAP components can be based on traditional ABAP or Java technologies or a non-NetWeaver based application such as Business Objects."
+    - content: "Environment"
+      isCorrect: false
+      explanation: "Incorrect. Both are individual SAP applications. SAP components can be based on traditional ABAP or Java technologies or a non-NetWeaver based application such as Business Objects."

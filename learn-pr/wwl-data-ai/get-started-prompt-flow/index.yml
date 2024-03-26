@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.get-started-prompt-flow
+metadata:
+  title: Get started with prompt flow to develop Large Language Model (LLM) apps
+  description: Get started with prompt flow to develop Large Language Model (LLM) apps.
+  ms.date: 11/30/2023
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.service: machine-learning
+title: Get started with prompt flow to develop Large Language Model (LLM) apps
+summary: Learn about how to use prompt flow to develop applications that leverage Large Language Models (LLMs).
+abstract: |
+  By the end of this module, you'll be able to:
+    - Understand the development lifecycle when creating LLM applications.
+    - Understand what a flow is in prompt flow.
+    - Explore the core components when working with prompt flow.
+prerequisites: |
+  - Familiarity with Azure and the Azure portal.
+iconUrl: /learn/achievements/generic-badge.svg
+levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+  - intermediate
+roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+  - data-scientist
+products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+  - azure-machine-learning
+subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+  - cloud-computing
+  - artificial-intelligence
+  - machine-learning
+  - natural-language-processing
+units:
+- learn.get-started-prompt-flow.introduction
+- learn.get-started-prompt-flow.understand-lifecycle
+- learn.get-started-prompt-flow.understand-flows
+- learn.get-started-prompt-flow.connections-runtimes
+- learn.get-started-prompt-flow.variants-monitor
+- learn.get-started-prompt-flow.exercise
+- learn.get-started-prompt-flow.knowledge-check
+- learn.get-started-prompt-flow.summary
+badge:
+  uid: learn.get-started-prompt-flow.badge

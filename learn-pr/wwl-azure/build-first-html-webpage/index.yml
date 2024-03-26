@@ -6,8 +6,7 @@ metadata:
   ms.date: 03/01/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
 title: Build your first HTML webpage
 summary: Illustrates basic programming techniques using Visual Studio Code to write HTML.
 abstract: |

@@ -6,8 +6,7 @@ metadata:
   ms.date: 11/16/2022
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
 title: Identify technical debt
 summary: This module examines technical debt, complexity, quality metrics, and plans for effective code reviews and code quality validation.
 abstract: |

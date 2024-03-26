@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.explore-data-with-data-wrangler
+title: Perform data exploration
+metadata:
+  title: Perform data exploration
+  description: "Learn how to perform data exploration in Data Wrangler."
+  ms.date: 09/19/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric 
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-explore-data-with-data-wrangler.md)]

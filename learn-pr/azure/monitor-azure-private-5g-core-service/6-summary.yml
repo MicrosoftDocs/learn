@@ -5,10 +5,9 @@ metadata:
   title: Summary
   description: Summarizes what you have learned about the monitoring capabilities of Azure Private 5G Core.
   ms.date: 10/27/2022
-  author: michael-weizhong-shan
-  ms.author: michaelshan
-  ms.topic: interactive-tutorial
-  ms.service: learning-private-5g-core
+  author: lnyswonger
+  ms.author: lnyswonger
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]

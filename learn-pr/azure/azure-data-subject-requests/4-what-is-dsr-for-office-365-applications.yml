@@ -6,9 +6,8 @@ metadata:
   description:  Learn about DSR scope and response processes for Office 365 applications.
   ms.date: 11/13/2020
   author: micrum
-  ms.author: micrum
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-what-is-dsr-for-office-365-applications.md)]

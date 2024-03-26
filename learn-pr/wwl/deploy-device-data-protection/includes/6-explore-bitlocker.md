@@ -1,4 +1,3 @@
-
 BitLocker provides protection for an operating system and the data that an operating system volume stores in addition to other volumes on the computer. It helps ensure that data stored on a computer remains encrypted, even if someone tampers with the computer when the operating system is not running. BitLocker provides a closely integrated solution in Windows to address the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned computers.
 
 Data on a lost or stolen computer can become vulnerable to unauthorized access when a malicious user runs a software-attack tool against it or transfers the computer’s hard disk to a different computer. BitLocker helps mitigate unauthorized data access by enhancing file and system protections. Additionally, BitLocker helps render data inaccessible when you decommission or recycle BitLocker-protected computers.

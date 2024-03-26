@@ -6,8 +6,8 @@ metadata:
   ms.date: 10/20/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: windows-server
 title: Manage Windows Server settings using PowerShell cmdlets
 summary: This module covers cmdlets that are used to configure settings related to Group Policy, Server Manager, Hyper-V, and Internet Information Services (IIS).
 abstract: |
@@ -27,14 +27,13 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-cloud-shell
 - azure-powershell
 - azure-virtual-machines
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

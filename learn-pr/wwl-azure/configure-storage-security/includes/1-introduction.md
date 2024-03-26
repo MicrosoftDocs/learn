@@ -20,7 +20,7 @@ Implement and manage storage (15–20%)
 - Secure storage
    - Generate shared access signature (SAS) tokens
    - Manage access keys
-   - Configure Azure Active Directory authentication for an Azure storage account
+   - Configure Microsoft Entra authentication for an Azure storage account
 
 ## Prerequisites
 

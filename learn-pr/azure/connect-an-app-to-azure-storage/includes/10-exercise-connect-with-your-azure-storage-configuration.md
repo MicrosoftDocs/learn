@@ -2,9 +2,9 @@ Let's add code to upload an image to our Azure Storage account. In this example,
 
 ![An image of the Docs mascot and the Azure mascot taking a selfie.](../media/docs-and-friends-selfie-stick.png)
 
-If you're working on your local machine, right-click on this image, and save it to the same folder as where you have your application.
+If you're working on your local machine, right-click this image and save it to the same folder as where you have your application.
 
-1. If you're working in the Microsoft Learn Sandbox environment, run the following command in the same folder as you have your application to download the image into your sandbox.
+1. If you're working in the Microsoft Learn Sandbox environment, run the following command in the application folder to download the image into your sandbox:
 
     ```bash
     wget https://github.com/MicrosoftDocs/mslearn-connect-app-to-azure-storage/blob/main/images/docs-and-friends-selfie-stick.png?raw=true -O docs-and-friends-selfie-stick.png
@@ -16,9 +16,9 @@ If you're working on your local machine, right-click on this image, and save it 
 
 ## Upload an image to blob storage
 
-To work with individual blob objects in your Azure Storage account, you use a `BlobClient` object. To get a `BlobClient` object is, call the `GetBlobClient` method on the `BlobContainerClient` object of the container where the blob will be stored. When calling the `GetBlobClient` method, you also supply a name for the blob in the container. For our example, the name of the blob will be the same as the name of our file.
+To work with individual blob objects in your Azure Storage account, you use a `BlobClient` object. To get a `BlobClient` object, call the `GetBlobClient` method on the `BlobContainerClient` object of the container where the blob will be stored. When calling the `GetBlobClient` method, you also supply a name for the blob in the container. For our example, the name of the blob will be the same as the name of our file.
 
-1. After you have a `BlobClient` object, you can call the `Upload` method to upload a file to Azure Blob Storage.
+1. After you have a `BlobClient` object, you can call the `Upload` method to upload a file to Azure Blob Storage. Add the following code to your _Program.cs_ file:
 
     ```csharp
     string blobName = "docs-and-friends-selfie-stick";
@@ -33,7 +33,7 @@ To work with individual blob objects in your Azure Storage account, you use a `B
 
 To validate that our program worked, we'll exercise another capability of the **Azure Storage Blobs SDK** to list the objects stored in a container in blob storage. This can be done by calling the `GetBlobs` method on a `BlobContainerClient` object. The `GetBlobs` method returns a pageable list of `BlobItem` objects that contain data about each blob in the container.
 
-1. Add the following code to your program after the code you previously added.
+1. Add the following code to your program after the code you previously added, then save the file:
 
     ```csharp
     var blobs = container.GetBlobs();
@@ -45,7 +45,7 @@ To validate that our program worked, we'll exercise another capability of the **
 
     This code calls `GetBlobs` on the `BlobContainerClient` object for the _photos_ container. It then iterates through each blob, printing out the name of the blob, the date and time the blob was created, and the size of the blob. When you run your program, this code should appear as a single line for the one image that has been uploaded.
 
-1. The final **Program.cs** file should look like this if you want to check your work.
+1. The final _Program.cs_ file should look like this if you want to check your work.
 
     ```csharp
     using System;
@@ -64,9 +64,7 @@ To validate that our program worked, we'll exercise another capability of the **
                     .AddJsonFile("appsettings.json");
 
                 var configuration = builder.Build();
-    
-                Console.WriteLine("Hello World!");
-    
+        
                 // Get a connection string to our Azure Storage account.
                 var connectionString = configuration.GetConnectionString("StorageAccount");
     
@@ -117,9 +115,9 @@ You've learned the essentials of working with **Azure Storage Blobs** SDK packag
 
 ## Upload an image to blob storage
 
-To work with blob objects in your Azure Storage container, you use a `BlockBlobClient` object. The `BlockBlobClient` object has methods to upload, download, list, and delete blob objects in a container. To get a `BlockBlobObject`, call the method `getBlockBlobClient` on the `ContainerClient` object.  Then, you can use the `uploadFile` method to upload your image to Azure Storage.
+To work with blob objects in your Azure Storage container, you use a `BlockBlobClient` object. The `BlockBlobClient` object has methods to upload, download, list, and delete blob objects in a container. To get a `BlockBlobObject`, call the method `getBlockBlobClient` on the `ContainerClient` object. Then, you can use the `uploadFile` method to upload your image to Azure Storage.
 
-1. Add this code to your *index.js* program immediately after the code that creates the container.
+1. Add this code to your _index.js_ program file immediately after the code that creates the container:
 
     ```javascript
     const filename = 'docs-and-friends-selfie-stick.png';
@@ -129,7 +127,7 @@ To work with blob objects in your Azure Storage container, you use a `BlockBlobC
 
 ## List objects in an Azure Blob Storage container
 
-1. To verify that our code is working, we can call the `listBlobsFlat` method on the `ContainerClient` object in our program.
+1. To verify that our code is working, we can call the `listBlobsFlat` method on the `ContainerClient` object in our program. Add this code to the _index.js_ file, then save the file:
 
     ```javascript
     let blobs = containerClient.listBlobsFlat();
@@ -140,7 +138,7 @@ To work with blob objects in your Azure Storage container, you use a `BlockBlobC
     }
     ```
 
-    This code will print all the blobs in our Azure Blob Storage container with the date the blob was created and its size.  For our program, this code should print one row representing the single image we've uploaded.
+    This code will print all the blobs in our Azure Blob Storage container with the date the blob was created and its size. For our program, this code should print one row representing the single image we've uploaded.
 
 1. The final file should look like this.
 
@@ -198,6 +196,6 @@ To work with blob objects in your Azure Storage container, you use a `BlockBlobC
 
 ## Congratulations
 
-You've learned the essentials of working the **Azure Storage Blob Client Library for JavaScript** and Azure Blob Storage. If you want, explore further by creating another container, uploading more images to your storage account or deleting an image. The [Azure Storage Blob Client Library for JavaScript npm.js page](https://www.npmjs.com/package/@azure/storage-blob) gives many examples of how to use the library.
+You've learned the essentials of working the **Azure Storage Blob Client Library for JavaScript** and Azure Blob Storage. If you want, explore further by creating another container, uploading more images to your storage account or deleting an image. The [Azure Storage Blob Client Library for JavaScript npm.js page](https://www.npmjs.com/package/@azure/storage-blob) has many examples of how to use the library.
 
 ::: zone-end

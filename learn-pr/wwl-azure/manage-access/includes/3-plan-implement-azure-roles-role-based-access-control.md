@@ -27,14 +27,14 @@ Azure Virtual Desktop delegated access supports the following values for each el
 
 Azure Virtual Desktop uses Azure role-based access control (RBAC) while publishing app groups to users or user groups. The Desktop Virtualization User role is assigned to the user or user group and the scope is the app group. This role gives the user special data access on the app group.
 
-Run the following cmdlet to add Azure Active Directory users to an app group:
+Run the following cmdlet to add Microsoft Entra users to an app group:
 
 ```powershell
-New-AzRoleAssignment -SignInName -RoleDefinitionName
+New-AzRoleAssignment -SignInName <userupn> -RoleDefinitionName "Desktop Virtualization User" -ResourceName <appgroupname> -ResourceGroupName <resourcegroupname> -ResourceType 'Microsoft.DesktopVirtualization/applicationGroups'
 ```
 
-Run the following cmdlet to add Azure Active Directory user group to an app group:
+Run the following cmdlet to add Microsoft Entra user group to an app group:
 
 ```powershell
-New-AzRoleAssignment -ObjectId -RoleDefinitionName
+New-AzRoleAssignment -ObjectId <usergroupobjectid> -RoleDefinitionName "Desktop Virtualization User" -ResourceName <appgroupname> -ResourceGroupName <resourcegroupname> -ResourceType 'Microsoft.DesktopVirtualization/applicationGroups'
 ```

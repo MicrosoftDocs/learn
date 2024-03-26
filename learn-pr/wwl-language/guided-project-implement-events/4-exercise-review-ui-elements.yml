@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-implement-events.exercise-review-ui-elements
+title: Exercise - Review UI elements
+metadata:
+  title: Exercise - Review UI elements
+  description: "The purpose of this lesson is to review the use of UI elements."
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-exercise-review-ui-elements.md)]

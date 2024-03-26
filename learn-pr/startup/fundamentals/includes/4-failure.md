@@ -1,28 +1,28 @@
 The unfortunate reality is that the majority of startups fail. The good news is that in many cases, these common causes of failure are avoidable. As long as founders are aware of the most common startup pitfalls, they can take steps to mitigate situations before they worsen.
 
-Bear in mind that failure of your startup doesn't need to spell the end of your entrepreneurial career! Failing can be a great opportunity to learn what customers really want. Moreover, if the failure happens quickly and cheaply, you can pick yourself up and move onto another idea, applying the learnings you've had from your first attempt.
+Bear in mind that your startup failing doesn't need to spell the end of your entrepreneurial career! Failing can be a great opportunity to learn what customers really want. Moreover, if the failure happens quickly and cheaply, you can pick yourself up and move onto another idea, applying the lessons you've learned from your first attempt.
 
 In this unit, you'll learn about the most common causes of startup failure, and some of the relatively simple actions you can take (or avoid taking) in the early days to maximize the chances of your startup being successful.
 
-At the end of this unit, you can work through a checklist that allows you to score your startup against the indicators of startup failure. This list helps you identify any issues that you might need to address.
+At the end of this unit, you can work through a checklist to score your startup against the indicators of startup failure. This list helps you identify any issues that you might need to address.
 
 ## Building a product that nobody wants
 
-By far the most common reason that startups fail is they build products that nobody wants. In reality, nearly every startup can find someone who will use their product. But, it's essential that you find not only a common problem that people are having, but also that the problem is sufficiently intense or frequent for them. Such people will actively seek out a solution and pay for it.
+By far the most common reason that startups fail is they build products that nobody wants. In reality, nearly every startup can find someone who will use their product. However, it's essential that you find not only a common problem that people are having, but also that the problem is sufficiently intense or frequent for them. Such people will actively seek out a solution and pay for it.
 
 Without proven demand from customers, it's likely that you'll build either entirely the wrong product or a product that's not exactly what your target customer needs. This prevents you from creating a viable, scalable business.
 
-In another module, we'll discuss methods for validating your idea with customers before you spend significant amounts of time or money building your product. This is a vital step to confirm that customers will want your product, and that it will solve a real problem for them.
+In another module, we'll discuss methods for validating your idea with customers before you spend significant amounts of time or money building your product. This is a vital step to confirm that customers will want your product and that it will solve a real problem for them.
 
 ## A derivative idea
 
 Chances are you've encountered startups that are based on a derivative idea. These companies are modeled on successful existing products, but tweaked slightly to create something that's more useful to a narrower set of users or a narrower geography, or that has a slightly different feature set. In some cases, the startup is essentially an alternatively branded version of the original product with no substantive changes.
 
-For example, derivative startups might include, say, a social network just for pet owners, a rideshare company that operates in one specific city, or a voice chat product that's invite-only instead of open to anyone.
+For example, derivative startups might include, say, a social network just for pet owners, a rideshare company that operates in one specific city, or a voice-chat product that's invite-only instead of open to anyone.
 
 Often founders with derivative ideas believe that the market is big enough to accommodate multiple, similar competitors. It's true that startups based on derivative ideas can be successful, especially if the original idea has overlooked a certain segment of users by trying to cater to a very broad audience.
 
-However, in most cases, startups based on derivative ideas have a tough time achieving real scale. It's usually not difficult to acquire some users and generate some revenue. But it's much more difficult to take significant market share from existing companies that already have product-market fit and a recognized brand.
+However, in most cases, startups based on derivative ideas have a tough time achieving real scale. It's usually not difficult to acquire some users and generate some revenue, but it's much more difficult to take significant market share from existing companies that already have product-market fit and a recognized brand.
 
 A good example of derivative brands is the recent surge in "mattress-in-a-box" e-commerce companies. These companies produce mattresses, sell them via online stores, and ship them in space-saving, rolled-up packaging to customers. They don't have a physical retail presence. This is a fundamentally sound business model, because it enables the company to have lower overheads and lower prices than traditional retailers. This business model also provides a more convenient shopping experience for customers.
 
@@ -59,11 +59,11 @@ A helpful way to think about the early days of your startup is to adopt Steve Bl
 
 > ["A startup is a temporary organization that's designed to search for a repeatable and scalable business model."](https://hbr.org/2013/05/why-the-lean-start-up-changes-everything?azure-portal=true)
 
-A business model is a high-level plan for how the company will create, deliver, and capture value. It includes consideration of the customer, the value proposition, product or service, revenue streams, channels, activities, resources, partners, and costs. For a great primer on business models, reference [Business model canvas](https://www.businessmodelsinc.com/about-bmi/tools/business-model-canvas/?azure-portal=true).
+A business model is a high-level plan for how the company will create, deliver, and capture value. It includes consideration of the customer, the value proposition, product or service, revenue streams, channels, activities, resources, partners, and costs. For a great primer on business models, reference the [Business model canvas](https://www.businessmodelsinc.com/about-bmi/tools/business-model-canvas/?azure-portal=true).
 
 Although it seems counterintuitive, startup founders should set out to not build a business initially, and should resist the temptation to acquire users and make revenues. Instead, they should set out on a mission to search for a really good problem to solve, that's experienced by a large number of people, for which they could build a compelling solution, and around which they can build a scalable business model.
 
-Achieving *problem-solution fit* is at the heart of this process. You'll know you have achieved problem-solution fit when customers tell you unequivocally that they care about the job your product can do for them, and that it would either alleviate a major pain point or create a significant gain for them.
+Achieving *problem-solution fit* is at the heart of this process. You'll know you've achieved problem-solution fit when customers tell you unequivocally that they care about the job your product can do for them, and that it would either alleviate a major pain point or create a significant gain for them.
 
 Only when you have this evidence should you stop searching for the right business model and start executing on building your business.
 
@@ -77,7 +77,7 @@ Many first-time founders are concerned that someone will steal their idea and us
 
 The reality is that it's extremely rare for someone to copy another person's startup idea. In fact, in most cases the best thing you can do is tell everyone about your startup idea to get as much feedback as possible, especially from potential customers.
 
-The real value in your startup comes from the execution of your idea. It relies on your unique combination of skills and insights coming together to create the best possible solution to the problem you're trying to solve.
+The real value in your startup comes from executing your idea. It relies on your unique combination of skills and insights coming together to create the best possible solution to the problem you're trying to solve.
 
 There are plenty of reasons why it's generally better to tell people what you're working on rather than keep it a secret. Let's briefly discuss a few.
 
@@ -108,7 +108,7 @@ Similarly, investors are always on the lookout for promising startups. Good inve
 Make a wish list of people with whom you'd like to connect. Start with your local startup community, but also look further afield. Reach out through mutual contacts, by using LinkedIn, or by sending an email or direct message. Have a specific question that you believe that individual is well-positioned to address; nobody likes to hear "I just want to pick your brains!"
 
 > [!TIP]
-> Need help finding quality mentors? The Microsoft for Startups mentor network has hundreds of subject-area experts ready to help you overcome obstacles and hit your next milestone. For more information, check out [Microsoft for Startups mentor network](https://startups.microsoft.com/en-US/blog/mentorshipprimer?azure-portal=true). For existing Microsoft for Startups Founders Hub members, to learn how to access the benefit, check out [About mentorship offer details](https://foundershubsupportcenter.powerappsportals.com/article/KA-01083/?azure-portal=true).
+> Need help finding quality mentors? The Microsoft for Startups mentor network has hundreds of subject-area experts ready to help you overcome obstacles and hit your next milestone. For more information, check out the [Microsoft for Startups mentor network](https://startups.microsoft.com/en-US/blog/mentorshipprimer?azure-portal=true). 
 
 ## Cofounder conflict
 
@@ -124,11 +124,11 @@ Cofounder conflict can be particularly acute if any or all of the following cond
 - There's a lack of clarity about the respective roles that each will play in the business.
 
 > [!TIP]
-> Ask yourself: Do the cofounders know each other sufficiently well? Have they developed an ability to work through difficult discussions and reach agreement? Is there any misalignment of interests? If you haven't already, review the Founder Alignment Worksheet discussed in [Should you found a startup?](../2-found-startup.yml?azure-portal=true#are-the-cofounders-aligned) and use it as an input to this process.
+> Ask yourself: Do the cofounders know each other sufficiently well? Have they developed an ability to work through difficult discussions and reach agreement? Is there any misalignment of interests? If you haven't already, review the Founder Alignment Worksheet we discussed in [Should you found a startup?](../2-found-startup.yml?azure-portal=true#are-the-cofounders-aligned) and use it as an input to this process.
 
 ## Worksheet
 
-In this unit, we've discussed seven factors that can be early indicators of eventual startup failure. These are only indicators, and of course they don't mean that your startup is definitely going to fail. Nor are they an exhaustive list of all the things that can go wrong in your startup. However, they're a good starting point for identifying some of the most common mistakes made in early-stage startups.
+In this unit, we've discussed seven factors that can be early indicators of eventual startup failure. These are only indicators, and of course they don't mean that your startup is definitely going to fail, nor are they an exhaustive list of all the things that can go wrong in your startup. However, they're a good starting point for identifying some of the most common mistakes made in early-stage startups.
 
 Complete the following checklist to score your startup against these seven indicators. The ideal outcome is to get as low a score as possible. If you get zero, that's fantastic, but don't be concerned if you answer "yes" to some. By completing the remaining modules in the Founders Hub, you'll have an opportunity to explore ways to "un-fail" your startup by addressing any issues that you've identified.
 

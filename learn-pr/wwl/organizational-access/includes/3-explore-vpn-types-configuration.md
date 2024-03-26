@@ -1,4 +1,5 @@
 
+
 Virtual private networks (VPNs) are point-to-point connections across a private or public network, such as the internet. A VPN client uses special TCP/IP or UDP-based protocols, called tunneling protocols, to make a virtual call to a virtual port on a VPN server. In a typical VPN deployment, a client initiates a virtual point-to-point connection to a remote access server over the internet. The remote access server answers the call, authenticates the caller, and transfers data between the VPN client and the organization’s private network.
 
 There are many options for VPN clients. In Windows, the built-in plug-in and the Universal Windows Platform (UWP) VPN plug-in platform are built on top of the Windows VPN platform.

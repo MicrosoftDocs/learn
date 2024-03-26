@@ -6,8 +6,9 @@ metadata:
   ms.date: 01/06/2023
   author: jongalloway
   ms.author: jogallow
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.manager: markl
+  ms.topic: module
+  ms.service: aspnet-core
 title: Modernize ASP.NET Framework to ASP.NET Core with the .NET Upgrade Assistant
 summary: In this module, you'll learn to modernize an ASP.NET Framework app to ASP.NET Core using the Upgrade Assistant.
 abstract: | 
@@ -29,8 +30,6 @@ products:
 - dotnet
 - aspnet
 - aspnet-core
-subjects:
-- development-tools
 units:
 - learn.modernize-aspnet-framework-to-core.1-introduction
 - learn.modernize-aspnet-framework-to-core.2-why-modernize-to-aspnet-core

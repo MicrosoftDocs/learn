@@ -4,12 +4,14 @@ title: What is Blazor?
 metadata:
   unitType: learning-content
   title: What is Blazor?
-  description: "Blazor is built with Razor and composed of Pages and Components."
-  ms.date: 9/29/2021
-  author: csharpfritz
-  ms.author: jefritz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: "Blazor is a modern frontend web framework based on HTML and C# that helps you build web apps faster."
+  ms.date: 1/19/2024
+  author: danroth27
+  ms.author: daroth
+  ms.manager: markl
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 5
 content: |
   [!include[](includes/2-what-is-blazor.md)]

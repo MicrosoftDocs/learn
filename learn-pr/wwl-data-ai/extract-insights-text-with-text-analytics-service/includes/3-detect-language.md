@@ -1,4 +1,4 @@
-The Language Detection API evaluates text input and, for each document submitted, returns language identifiers with a score indicating the strength of the analysis. The Language service recognizes up to 120 languages.
+The Azure AI Language Detection API evaluates text input and, for each document submitted, returns language identifiers with a score indicating the strength of the analysis. The Azure AI Language service recognizes up to 120 languages.
 
 This capability is useful for content stores that collect arbitrary text, where language is unknown. Another scenario could involve a chat bot.  If a user starts a session with the chat bot, language detection can be used to determine which language they are using and allow you to configure your bot responses in the appropriate language.
 

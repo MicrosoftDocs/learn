@@ -3,21 +3,20 @@ uid: learn.github.introduction-to-github
 metadata:
   title: "Introduction to GitHub"
   description: Learn to use key GitHub features, including issues, notifications, branches, commits, and pull requests.
-  ms.date: 07/08/2022
+  ms.date: 10/27/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: github
 title: "Introduction to GitHub"
 summary: Learn to use key GitHub features, including issues, notifications, branches, commits, and pull requests.
 abstract: |
   In this module, you will:
-  - Communicate with the project community in issues
-  - Manage notifications for project events
-  - Create branches to manage work in parallel
-  - Make commits to update project source
-  - Introduce changes with pull requests
-  - Deploy a web page to GitHub Pages
+  -	Identify the fundamental features of GitHub
+  -	Learn about repository management
+  -	Gain an understanding of the GitHub flow, including branches, commits, and pull requests
+  -	Explore the collaborative features of GitHub by reviewing issues and discussions
+  -	Recognize how to manage your GitHub notifications and subscriptions
 prerequisites: |
   - A GitHub account
 iconUrl: /training/achievements/github/introduction-to-github.svg
@@ -38,6 +37,9 @@ subjects:
 units:
 - learn.github.introduction-to-github.1-introduction
 - learn.github.introduction-to-github.2-what-is-github
+- learn.github.introduction-to-github.components-of-github-flow
+- learn.github.introduction-to-github.collaborative-platform
+- learn.github.introduction-to-github.platform-management
 - learn.github.introduction-to-github.3-introduction-to-github
 - learn.github.introduction-to-github.4-knowledge-check
 - learn.github.introduction-to-github.5-summary

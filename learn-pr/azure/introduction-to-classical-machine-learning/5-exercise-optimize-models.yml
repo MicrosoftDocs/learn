@@ -5,10 +5,9 @@ metadata:
   title: Exercise - Optimize a model by using cost functions
   description: Exercise unit about optimizing a model by using cost functions.
   ms.date: 05/25/2021
-  author: TomReidNZ
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: lgayhardt
+  ms.author: lagayhar
+  ms.topic: unit
 durationInMinutes: 10
 sandbox: true
 notebook: notebooks/2-5-exercise-optimize-models.ipynb

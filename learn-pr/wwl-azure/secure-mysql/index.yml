@@ -2,12 +2,12 @@
 uid: learn.wwl.secure-mysql
 metadata:
   title: Secure MySQL
-  description: "Learn about Azure Database for MySQL security, encryption in Azure Database for MySQL, and how to configure Azure AD authentication."
+  description: "Learn about Azure Database for MySQL security, encryption in Azure Database for MySQL, and how to configure Microsoft Entra authentication."
   ms.date: 11/08/2022
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: sql-db-mi
 title: Secure MySQL
 summary: Learn about security and encryption in Azure Database for MySQL.
 abstract: |
@@ -27,7 +27,7 @@ products:
 - azure-database-mysql
 - active-directory
 subjects:
-- database
+- databases
 units:
 - learn.wwl.secure-mysql.introduction
 - learn.wwl.secure-mysql.describe-authentication

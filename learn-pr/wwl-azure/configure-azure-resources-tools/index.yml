@@ -6,8 +6,8 @@ metadata:
   ms.date: 10/26/2022
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure 
 title: Configure Azure resources with tools
 summary: You will learn how to select a tooling option such as Azure portal, Azure PowerShell, Azure CLI, or Azure Cloud Shell.
 abstract: |
@@ -25,8 +25,6 @@ roles:
 - administrator
 products:
 - azure
-subjects:
-- development-tools
 units:
 - learn.wwl.configure-azure-resources-tools.introduction
 - learn.wwl.configure-azure-resources-tools.use-azure-portal

@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.consider-message-processing-options-constraints
+metadata:
+  title: Consider Azure IoT Hub message processing options and constraints
+  description: "This module introduces you to services and service features that can be used with, or as an alternative to, IoT Hub message routing to process messages. It also examines IoT Hub message processing limits."
+  ms.date: 02/22/2024
+  author: kgremban
+  ms.author: kgremban
+  manager: lizross
+  ms.topic: module-standard-task-based
+  ms.service: iot-hub
+title: Consider Azure IoT Hub message processing options and constraints
+summary: This module introduces you to services and service features that can be used with, or as an alternative to, IoT Hub message routing to process messages. It also examines IoT Hub message processing limits.
+abstract: |
+  After you complete this module, you'll be able to:
+  - Describe IoT Hub message routing with Event Grid integration.
+  - Describe IoT Hub message enrichment.
+  - Describe the IoT Hub messaging quotas and throttling limits.
+prerequisites: |
+  Ability to:
+  - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
+  - Describe the features and capabilities of IoT Hub.
+  - Describe how an IoT Hub solution uses message routing to process message and event data.
+iconUrl: /training/achievements/messaging-processing-options.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-event-grid
+- azure-iot-hub
+subjects:
+- iot
+units:
+- learn.wwl.consider-message-processing-options-constraints.introduction
+- learn.wwl.consider-message-processing-options-constraints.compare-iot-hub-message-routing-event-grid-integration
+- learn.wwl.consider-message-processing-options-constraints.examine-message-enrichments-for-d2c-messages
+- learn.wwl.consider-message-processing-options-constraints.examine-iot-hub-quotas-throttling
+- learn.wwl.consider-message-processing-options-constraints.knowledge-check
+- learn.wwl.consider-message-processing-options-constraints.summary
+badge:
+  uid: learn.wwl.consider-message-processing-options-constraints.badge

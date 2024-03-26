@@ -5,10 +5,9 @@ metadata:
   description: Learn how to protect and harden your virtual machines in Azure 
   brand: azure
   ms.date: 10/1/2019
-  author: adrianstevens
-  ms.author: adsteven
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: learning-path
 title: Implement virtual machine host security in Azure
 summary: |
   Learn how to protect and harden your virtual machines in Azure. This learning path can help you prepare for the [Microsoft Certified: Azure Security Engineer Associate certification](/certifications/azure-security-engineer). 
@@ -32,7 +31,8 @@ subjects:
 modules:
 - learn.azure-well-architected-security
 - learn.azure-security.create-security-baselines
-- learn.create-linux-vm-in-azure
+- learn.plan-your-linux-environment-in-azure
+- learn.provision-linux-virtual-machine-in-azure
 - learn.create-a-windows-vm-in-azure
 - learn.secure-your-azure-virtual-machine-disks
 - learn.azure-security.secure-vms-with-security-center
