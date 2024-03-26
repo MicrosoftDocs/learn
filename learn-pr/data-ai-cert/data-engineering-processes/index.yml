@@ -27,6 +27,5 @@ subjects:
 - architecture
 - cloud-computing
 units:
-- learn.data-ai.data-engineering-processes.summary
 badge:
   uid: learn.data-ai.data-engineering-processes.badge
