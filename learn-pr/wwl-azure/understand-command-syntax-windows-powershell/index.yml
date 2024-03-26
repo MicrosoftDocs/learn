@@ -3,7 +3,7 @@ uid: learn.wwl.understand-command-syntax-windows-powershell
 metadata:
   title: Understand the command syntax in Windows PowerShell
   description: "This module covers the cmdlet structure and parameters for using Windows PowerShell cmdlets. It also explains how to use tab completion and how to display About files content."
-  ms.date: 03/22/2024
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module-standard-task-based
