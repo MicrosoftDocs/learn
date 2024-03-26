@@ -8,6 +8,6 @@ In this module, you learn how to use Microsoft Copilot for Security to enhance y
 After completing this module, you'll be able to:
 
 - Describe the features available in the standalone Copilot experience.
-- Describe the Microsoft plugins available in Copilot.
-- Describe the non-Microsoft plugins supported by Copilot.
+- Describe the plugins available in Copilot.
 - Describe custom promptbooks.
+- Describe knowledge base connections.

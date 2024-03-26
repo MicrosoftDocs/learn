@@ -4,10 +4,12 @@ title: How does Azure Cosmos DB for NoSQL work
 metadata:
   title: How does Azure Cosmos DB for NoSQL work
   description: "How does Azure Cosmos DB for NoSQL work"
-  ms.date: 05/18/2023
+  ms.date: 03/21/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
+  ms.custom:
+  - N/A
 azureSandbox: false
 labModal: false
 durationInMinutes: 4

@@ -35,3 +35,4 @@ Tailwind Traders plans to use Microsoft Entra ID in its identity management solu
 - **Consider single sign-on (SSO)**. Enable SSO to reduce the need for multiple passwords. Multiple passwords increase the likelihood of users reusing passwords or using weak passwords. With SSO, users provide their primary work or school account for their domain-joined devices and company resources. Their application access can be automatically provisioned (or deprovisioned) based on their Tailwind Traders organization group memberships and their status as an employee. 
 
 - **Consider overhead of managing separate identities**. Calculate the overhead of not integrating the Tailwind Traders on-premises identity with their cloud identity. Separate identities can result in extra account management. This overhead increases the likelihood of mistakes and security breaches.
+

@@ -3,10 +3,10 @@ uid: learn.wwl.implement-hyper-v-replica
 metadata:
   title: Implement Hyper-V Replica
   description: "Implement Hyper-V Replica"
-  ms.date: 07/29/2022
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Implement Hyper-V Replica
 summary: Learn about Hyper-V Replica, scenarios for its use, and prerequisites to use it. Learn about Azure Site Recovery and the benefits of using it, focusing on implementing Site Recovery in on-premises scenarios.
 abstract: |

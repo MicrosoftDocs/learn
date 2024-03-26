@@ -25,7 +25,7 @@ roles:
 products:
 - azure-database-postgresql
 subjects:
-- database
+- databases
 units:
 - learn.wwl.understand-postgresql-query-process.introduction
 - learn.wwl.understand-postgresql-query-process.identify-components

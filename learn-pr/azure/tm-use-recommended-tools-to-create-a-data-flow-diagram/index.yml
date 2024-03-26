@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/31/2023
   author: rodsan
   ms.author: rodsan
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Use recommended tools to create a data-flow diagram
 summary: You can use any canvas, physical or virtual, to create a data-flow diagram. Engineers at Microsoft recommend a few tools to help you in your threat modeling journey.
 abstract: |

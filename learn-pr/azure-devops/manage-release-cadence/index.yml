@@ -37,7 +37,7 @@ products:
 - azure
 - azure-devops
 subjects:
-- development-tools
+- app-development
 - data-engineering
 units:
 - learn.azdo.manage-release-cadence.1-introduction

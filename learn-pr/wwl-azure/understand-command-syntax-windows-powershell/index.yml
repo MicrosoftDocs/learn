@@ -6,7 +6,7 @@ metadata:
   ms.date: 11/09/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Understand the command syntax in Windows PowerShell
 summary: This module covers the cmdlet structure and parameters for using Windows PowerShell cmdlets. It also explains how to use tab completion and how to display About files content.
 abstract: |
@@ -32,7 +32,6 @@ products:
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:
