@@ -30,7 +30,6 @@ units:
 - learn.data-ai.data-engineering-processes.introduction
 - learn.data-ai.data-engineering-processes.roles-and-responsibilities
 - learn.data-ai.data-engineering-processes.data-engineering-practices
-- learn.data-ai.data-engineering-processes.architecturing-project
 - learn.data-ai.data-engineering-processes.summary
 badge:
   uid: learn.data-ai.data-engineering-processes.badge
