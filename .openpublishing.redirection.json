@@ -35565,6 +35565,11 @@
       "source_path": "learn-pr/data-ai-cert/survey-the-azure-data-platform/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/survey-the-azure-data-platform/5-azure-cosmos-db.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "redirect_document_id": false
     }
   ]
 }
