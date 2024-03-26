@@ -6,9 +6,11 @@ metadata:
   ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.custom:
   - N/A
+  ms.service: powershell
+  ms.subservice: cmdlets
   ai-usage: human-only
 title: Manage settings for a local Windows machine using PowerShell cmdlets
 summary: This module covers common PowerShell cmdlets that can be used to perform tasks on a local Windows 10 computer.
