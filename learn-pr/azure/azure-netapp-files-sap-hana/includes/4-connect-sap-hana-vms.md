@@ -1,4 +1,4 @@
-AFter configuring your proximity placement group, you can prepare for the deployment of your SAP HANA volumes to Azure NetApp Files.
+After configuring your proximity placement group, you can prepare for the deployment of your SAP HANA volumes to Azure NetApp Files.
 
 ## Requirements for using application volume groups
 
