@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/10/2021
   author: drguthals
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: vs-code
   ms.custom: team=nextgen
 title: Predict basketball player efficiency ratings by using machine learning and Visual Studio Code
