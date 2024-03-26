@@ -1,5 +1,3 @@
-
-
 Before the Contoso IT team can modernize the current operational model, they'll need to configure networking between their on-premises environment and any Windows Server IaaS VMs running in Azure.
 
 In this module, you learned how to connect your on-premises environment to Azure so that workloads in each location can communicate with each other. You also learned how to implement subnets and routing between your on-premises and cloud environments. Finally, you learned how to ensure that workloads in the cloud and on-premises can perform DNS resolution to locate each other.
@@ -7,7 +5,7 @@ In this module, you learned how to connect your on-premises environment to Azure
 Now that you can connect your on-premises environment to Azure, you can assist the IT Team in modernizing Contoso's current operational model.
 ## Learn more
 
-You can learn more by reviewing the following documents: 
+You can learn more by reviewing the following documents:
 
 - [Tutorial: Create and manage Azure virtual networks for Windows virtual machines with Azure PowerShell](https://aka.ms/tutorial-virtual-network?azure-portal=true)
 - [ExpressRoute overview](https://aka.ms/expressroute-introduction?azure-portal=true)
