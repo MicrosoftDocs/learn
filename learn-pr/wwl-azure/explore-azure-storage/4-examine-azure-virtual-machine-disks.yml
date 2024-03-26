@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-azure-storage.examine-azure-virtual-machine-disks
-title: Examine Azure virtual machine disks
+title: Examine Azure Virtual Machine disks
 metadata:
-  title: Examine Azure virtual machine disks
-  description: "Examine Azure virtual machine disks"
-  ms.date: 10/17/2023
+  title: Examine Azure Virtual Machine disks
+  description: "Examine the three type of Azure Virtual Machine disks - operating system disks, temporary disks, and data disks."
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

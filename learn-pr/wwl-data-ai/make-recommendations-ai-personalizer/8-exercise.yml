@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: berryivor
   ms.topic: unit
-  ms.service: azure-ai-personalizer
 durationInMinutes: 30
 content: |
   [!include[](includes/8-exercise.md)]
