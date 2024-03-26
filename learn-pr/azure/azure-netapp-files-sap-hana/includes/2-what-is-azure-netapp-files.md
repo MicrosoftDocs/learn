@@ -29,19 +29,19 @@ The following diagram illustrates the snapshot process:
 
 :::image type="content" source="../media/2-what-is-azure-netapp-files-snapshots.png" alt-text="Diagram depicting how Azure NetApp Files snapshots work." lightbox="../media/2-what-is-azure-netapp-files-snapshots.png":::
 
-1. Time A. A snapshot (Snapshot 1) is created.
-2. Time B. Changed data (B is now B1) is written to a new block and the pointer is updated. However, the snapshot pointer still points to the previously written block, giving you both a live view and a historical view of the data.
-3. Time C. Another snapshot (Snapshot 2) is created. Now you have access to three generations of the data: the live data, Snapshot 2, and Snapshot 1, in descending order of age, without taking up the volume space that three full copies would require.
+1. Time A: A snapshot (Snapshot 1) is created.
+2. Time B: Changed data (B is now B1) is written to a new block and the pointer is updated. However, the snapshot pointer still points to the previously written block, giving you both a live view and a historical view of the data.
+3. Time C: Another snapshot (Snapshot 2) is created. Now you have access to three generations of the data: the live data, Snapshot 2, and Snapshot 1, in descending order of age, without taking up the volume space that three full copies would require.
 
 An Azure NetApp Files snapshot only manipulates block pointers, creating a "frozen," read-only view of a volume. By design snapshots cannot be modified, only deleted once they expire useful life on the system.
 
 Actual data blocks aren't copied, which leads to two efficiencies:
 
-- **Speed**. Creating a snapshot is near-instantaneous. No matter the volume size, creating a snapshot takes only a few seconds. Reverting a volume to a snapshot is also near-instantaneous, supporting fast data recovery in case of a corruption or malicious hijack event.
-- **Space**. A snapshot consumes minimal storage space because it doesn't copy the data blocks of the entire volume. Two snapshots taken in sequence differ only by the blocks added or changed in the time interval between the two.
+- **Speed**: Creating a snapshot is near-instantaneous. No matter the volume size, creating a snapshot takes only a few seconds. Reverting a volume to a snapshot is also near-instantaneous, supporting fast data recovery in case of a corruption or malicious hijack event.
+- **Space**: A snapshot consumes minimal storage space because it doesn't copy the data blocks of the entire volume. Two snapshots taken in sequence differ only by the blocks added or changed in the time interval between the two.
 You can create up to 255 snapshots per volume. Creating a snapshot doesn't impact volume performance. You can create and maintain snapshots in two ways:
-- **Manual**. Create on-demand snapshots by using the Azure portal, Azure CLI, Azure PowerShell, or Azure REST API.
-- **Automatic**. Automated snapshot creation. You can set up snapshot policies by using the Azure portal, Azure CLI, Azure PowerShell, or Azure REST API.
+- **Manual**: Create on-demand snapshots by using the Azure portal, Azure CLI, Azure PowerShell, or Azure REST API.
+- **Automatic**: Automated snapshot creation. You can set up snapshot policies by using the Azure portal, Azure CLI, Azure PowerShell, or Azure REST API.
 
 ### Cross-region replication
 
@@ -61,6 +61,6 @@ The point of creating volume snapshots is to recover data that has been corrupte
 
 ## Application volume groups
 
-Azure NetApp Files offers application volume groups designed effectively facilitate SAP HANA workloads on Azure NetApp Files. Application volumes group enables you to simplify the deployment process for SAP HANA while also benefitting from increased storage performance and lowest possible latency by applying logic to select optimal volume locations and storage endpoints as well as setting per-volume QoS values to meet SAP HANA performance KPIs.
+Azure NetApp Files offers application volume groups designed effectively facilitate SAP HANA workloads on Azure NetApp Files. Application volumes group enables you to simplify the deployment process for SAP HANA while also benefitting from increased storage performance and lowest possible latency by applying logic to select optimal volume locations and storage endpoints as well as setting per volume QoS values to meet SAP HANA performance KPIs.
 
 Azure NetApp Files application volume group for SAP HANA allows you to focus on your application demands instead of managing technical settings such as individual QoS or sizes for volumes.

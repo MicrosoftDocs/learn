@@ -8,4 +8,4 @@ Using Azure NetApp Files application volume groups for SAP HANA offers:
 * Simplified, one-step deployment for all SAPA HANA volumes
 * Configuration for data replication using cross-region replication and/or HANA system replication
 
-This guide explains key concepts for planning to use SAP HANA with Azure NetApp Files including proximity placement groups to help you prepare for deploying your SAP HANA system to Azure NetApp Files.
+This guide explains key concepts for planning to use SAP HANA with Azure NetApp Files including proximity placement groups to help you prepare for deploying your SAP HANA system with Azure NetApp Files.
