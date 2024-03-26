@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: unit
-  ms.service: stream-analytics
 durationInMinutes: 3
 content: |
   [!include[](includes/5-run-job-ingest.md)]
