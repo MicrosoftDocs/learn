@@ -18,13 +18,13 @@ quiz:
   questions:
   - content: "Which is the best technique to convert a decimal type to an int type in C#?"
     choices:
-    - content: "cast"
+    - content: "Cast"
       isCorrect: true
       explanation: "Correct. `decimal` to `int` is a narrowing conversion so `cast` is the best answer."
-    - content: "narrowing"
+    - content: "Narrowing"
       isCorrect: false
       explanation: "Incorrect. \"Narrowing\" describes the data precision change in a conversion."
-    - content: "implicit conversion"
+    - content: "Iimplicit conversion"
       isCorrect: false
       explanation: "Incorrect. `decimal` to `int` is a narrowing conversion and implicit conversion can't be used because data loss is possible."
   - content: "Which of the following conversion rounds the value (versus truncate)?"
