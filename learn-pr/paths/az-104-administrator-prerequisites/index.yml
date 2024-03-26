@@ -13,7 +13,7 @@ prerequisites: |
   -   [Azure Fundamentals: Describe Azure architecture and services](https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/)
   -   [Azure Fundamentals: Describe Azure management and governance](https://learn.microsoft.com/training/paths/describe-azure-management-governance/)
 summary: |
-  Learn the basic Azure concepts you'll need to know as an Azure administrator.
+  Learn the basic Azure concepts you need to know as an Azure administrator.
   Here are the learning paths in the AZ-104 Azure Administrator series:
   :::row:::
   :::column:::
@@ -40,7 +40,7 @@ summary: |
   :::column-end:::
   :::column:::
    ![The trophy for the AZ-104 Monitor and back up Azure resources learning path.](/learn/achievements/az-104-monitor-backup-resources.svg)
-   [AZ-104: Monitor and back up Azure resources](/learn/paths/az-104-monitor-backup-resources/)
+   [AZ-104: Monitor and backup Azure resources](/learn/paths/az-104-monitor-backup-resources/)
   :::column-end:::
   :::row-end:::
 iconUrl: /training/achievements/az-104-administrator-prerequisites.svg
