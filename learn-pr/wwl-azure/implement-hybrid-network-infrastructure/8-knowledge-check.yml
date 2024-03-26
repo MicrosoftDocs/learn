@@ -3,13 +3,13 @@ uid: learn.wwl.implement-hybrid-network-infrastructure.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Knowledge check
-  ms.date: 09/24/2020
+  description: "Knowledge check"
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-  ms.custom: e2e-hybrid
-azureSandbox: false
+  ms.custom:
+  - e2e-hybrid
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -35,7 +35,7 @@ quiz:
       explanation: "That's correct. A P2S VPN connection enables users to connect to your organization from a remote network, such as their home or a public Wi-Fi hotspot."
     - content: "She should implement a multi-site VPN."
       isCorrect: false
-      explanation: "That's incorrect. A multi-site connection is a variation of the S2S connection. You use both S2S and multi-site connections to support cross-premises and hybrid configurations"
+      explanation: "That's incorrect. A multi-site connection is a variation of the S2S connection. You use both S2S and multi-site connections to support cross-premises and hybrid configurations."
   - content: "What is Microsoft peering?"
     choices:
     - content: "It provides a direct connection from your on-premises network to an Azure datacenter."
@@ -43,7 +43,7 @@ quiz:
       explanation: "That's incorrect. Microsoft peering enables you to connect your on-premises network to Microsoft 365 services and Dynamics 365."
     - content: "It enables you to connect your on-premises network to Microsoft 365 services and Dynamics 365."
       isCorrect: true
-      explanation: "That's correct."
+      explanation: "That's correct. Microsoft peering enables you to connect your on-premises network to Microsoft 365 services and Dynamics 365."
     - content: "It provides a connection between your on-premises network and an ExpressRoute provider."
       isCorrect: false
       explanation: "That's incorrect. Microsoft peering enables you to connect your on-premises network to Microsoft 365 services and Dynamics 365."

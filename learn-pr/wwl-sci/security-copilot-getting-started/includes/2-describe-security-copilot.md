@@ -8,11 +8,21 @@ Organizations need to act quickly to address all the security challenges they fa
 
 Microsoft Copilot for Security is an AI-powered, cloud-based security analysis tool that enables analysts to respond to threats quickly, process signals at machine speed, and assess risk exposure more quickly than may otherwise be possible.
 
+### Use cases
+
+Microsoft Copilot for Security supports many use cases, including:
+
+- Security posture management. Copilot delivers information on anything that might expose an organization to a known threat. It then gives the analyst prescriptive guidance on how to protect against those potential vulnerabilities.
+- Incident response. Copilot can quickly surface an incident. For a surfaced incident, Copilot can enrich it with context from other data sources, assess its scale and impact, and provide information on what the source might be. Copilot can then guide the analyst through the response and remediation steps with guided recommendations. Copilot provides a single pane of glass visibility by pulling in data from other sources like Defender XDR and Sentinel and then correlating and analyzing that data all together.
+- Security reporting. Copilot can deliver customizable reports that are ready to share and easy to consume, allowing analysts to focus more on high value tasks pertinent for securing the organization.
+
+These use cases represent just a few of the capabilities that Copilot delivers and that helps make analysts more productive and also helps up-level them.
+
 ### Standalone and embedded experience
 
 You can experience Copilot through the dedicated site, also referred to as the standalone experience. Users interact with Copilot through the prompt bar. In the prompt bar, users make requests in natural language and receive response outputs as text, images, or documents.
 
-:::image type="content" source="../media/copilot-home-v2.png" lightbox="../media/copilot-home-v2.png" alt-text="Diagram that shows the landing page for the Microsoft Copilot for Security standalone experience. The prompt bar is at the bottom center of the page.":::
+:::image type="content" source="../media/copilot-standalone-landing-page-prompt-bar-v2.png" lightbox="../media/copilot-standalone-landing-page-prompt-bar-v2.png" alt-text="Screenshot that shows the landing page for the Microsoft Copilot for Security standalone experience. The prompt bar is at the bottom center of the page.":::
 
 Additionally, some Microsoft security products embed Copilot capabilities directly within the products’ user interface. This experience is referred to as the embedded experience. Microsoft Defender XDR, for example, enables Copilot capabilities including summarizing incidents, analyzing scripts, generating KQL queries, and more.
 

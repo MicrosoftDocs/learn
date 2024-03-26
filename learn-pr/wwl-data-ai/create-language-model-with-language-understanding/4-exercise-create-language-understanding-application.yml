@@ -8,8 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit
-  ms.service: azure-ai-language
-  ms.subservice: azure-ai-luis
 durationInMinutes: 30
 content: |
   [!include[](includes/4-exercise-create-language-understanding-application.md)]

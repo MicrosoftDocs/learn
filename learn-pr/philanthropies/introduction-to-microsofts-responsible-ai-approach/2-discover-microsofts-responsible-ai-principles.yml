@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.introduction-to-microsofts-responsible-ai-approach.discover-microsofts-responsible-ai-principles
+title: Discover Microsoft's responsible AI principles
+metadata:
+  title: Discover Microsoft's responsible AI principles
+  description: This content is a part of the “Introduction to Microsoft's Responsible AI Approach” module.
+  ms.date: 03/22/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-discover-microsofts-responsible-ai-principles.md)]
