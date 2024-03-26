@@ -34,4 +34,4 @@ In this module, you learned how to:
 
 - [Azure Monitor for SAP solutions FAQ](/azure/virtual-machines/workloads/sap/azure-monitor-faq)
 
-- [Overview of Log Analytics in Azure Monitor](/azure/azure-monitor/logs/log-analytics-overview)
+- [Overview of Log Analytics in Azure Monitor](/azure/azure-monitor/logs/log-analytics-overview) 
