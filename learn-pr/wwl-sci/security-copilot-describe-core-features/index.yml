@@ -41,6 +41,7 @@ subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribu
 units:
 - learn.security-copilot-describe-core-features.introduction
 - learn.security-copilot-describe-core-features.describe-standalone-experience
+- learn.security-copilot-describe-core-features.describe-session-features
 - learn.security-copilot-describe-core-features.describe-microsoft-plugins
 - learn.security-copilot-describe-core-features.describe-non-microsoft-plugins
 - learn.security-copilot-describe-core-features.describe-custom-promptbooks
