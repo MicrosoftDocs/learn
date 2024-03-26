@@ -42,7 +42,7 @@ Your request body will be similar to the following JSON.
 The call when using your own data needs to be sent to a different endpoint than is used when calling a base model, which includes `extensions`. Your call will be sent to a URL similar to the following.
 
 ```http
-<your_azure_openai_resource>/openai/deployments/<deployment_name>/extensions/chat/completions?api-version=<version>
+<your_azure_openai_resource>/openai/deployments/<deployment_name>/chat/completions?api-version=<version>
 ```
 
 The request will also need to include the `Content-Type` and `api-key`.
