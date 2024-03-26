@@ -8,6 +8,7 @@ metadata:
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 6
 content: |
   [!include[](includes/3-exercise-create-virtual-machine.md)]
