@@ -8,8 +8,9 @@ To create the alert baseline, follow the triage process:
 
 1. Filter the alerts - by time, severity, or another parameter.
 1. Choose an alert, open the alert details pane, and analyze the alert information.
-1. Follow the **Remediation steps** to triage according to type of alert, and save your changes.
-1. add create suppression rules.
+1. Follow the **Remediation steps** to triage and fix according to type of alert.
+1. For less important alerts you might want to create a suppression rule.
+1. Apply your changes.
 
 ## Triage your alerts
 <!-- How do we triage the alerts, just describe doing this with an example we have in screenshots, and tell them to look for their own and ones on their system - LW - decide the skill and then show the alert - Amit-->
@@ -67,13 +68,13 @@ Update the severity level using the table:
 | **Medium**  |  Indicates a security threat that's important to address.        |
 | **Low**     |  Indicates some deviation from the baseline behavior that might contain a security threat, or contains no security threats.        |
 
-## Create suppression rule
+**Suppression rules** help you filter out unwanted alerts, either permanantly or for a limited time period, so that they will not appear in the **Alerts** list even if they are triggered. This feature allows you to focus on dealing with more important alerts and not seeing minor ones.
 
-Do we want to write about this - check out how to do this. Why would we do this? <!--<https://learn.microsoft.com/microsoft-365/security/defender-endpoint/manage-alerts#suppress-alerts> -->
+To creat a suppression rule you need to assign a name, a time range for the rule to apply or let it be unending, and choose which sensors the rule applies to. You can also apply a filter based on IP address, MAC id, subnet or host address.
 
 ## Save changes
 
-Save each change and the baseline alerts are updated. As the learning process continues, you receive less new alerts as the sensor learns the normal flow of traffic in your system.
+When you make these alert changes the baseline alerts are updated. As the learning process continues, you receive less new alerts as the sensor learns the normal flow of traffic in your system.
 
 <!-- A nice definition. may use it more.
 Baseline - creates an environmental baseline for the normal communication behaviour of devices in your network is known. going forward, anything that is unseen traffic will create an alert to be followed up with. -->

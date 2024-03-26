@@ -61,14 +61,14 @@ To make changes to a device detail:
 
 You can update the following fields:
 
-    - Authorized device
-    - Name
-    - Description
-    - OS platform
-    - Type
-    - Purdue level
-    - Scanner
-    - Programming device
+- Authorized device
+- Name
+- Description
+- OS platform
+- Type
+- Purdue level
+- Scanner
+- Programming device
 
 Select **Save**.
 
