@@ -85,4 +85,3 @@ JEA is a feature included in PowerShell 5.0 and newer. For full functionality, y
 When creating a JEA endpoint, you need to define one or more role capabilities that describe what someone can do in a JEA session. A *role capability* is a PowerShell data file with the .psrc extension that lists all the cmdlets, functions, providers, and external programs that are made available to connecting users.
 
 You can create a new PowerShell role capability file with the **New-PSRoleCapabilityFile** cmdlet. You should then edit the resulting role capability file to allow the commands required for the role. The PowerShell help documentation contains several examples of how you can configure the file.
-

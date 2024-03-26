@@ -30,4 +30,3 @@ $ps = "Windows PowerShell"
 
 Invoke-Command -Sessions $s -ScriptBlock {Get-WinEvent -LogName $Using:ps}
 ```
-

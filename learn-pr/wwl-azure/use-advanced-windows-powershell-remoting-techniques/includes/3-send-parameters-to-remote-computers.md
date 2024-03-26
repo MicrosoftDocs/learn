@@ -31,4 +31,3 @@ Invoke-Command –ScriptBlock { Do-Something $Using:variable } –ComputerName R
 ```
 
 The `$Using:` prefix is properly processed by the local and remote computers, resulting in the `$Using:variable` being replaced with the contents of the local variable `$variable`.
-
