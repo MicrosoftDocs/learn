@@ -8,7 +8,7 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-python
   ms.devlang: python
 title: Introduction to lists in Python
