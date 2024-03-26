@@ -4,17 +4,18 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/22/2024
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
   ms.custom:
   - N/A
+azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
-  title: ""
   questions:
   - content: "What's the best way to find documentation for WMI and CIM object classes?"
     choices:
