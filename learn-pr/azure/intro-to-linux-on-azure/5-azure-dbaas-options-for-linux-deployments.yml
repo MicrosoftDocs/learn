@@ -8,6 +8,7 @@ metadata:
   author: chasecrum
   ms.author: chasecrum
   ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 1
 content: |
   [!include[](includes/5-azure-dbaas-options-for-linux-deployments.md)]
