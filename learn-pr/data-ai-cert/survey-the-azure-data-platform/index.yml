@@ -31,7 +31,6 @@ units:
 - learn.data-ai.survey-the-azure-data-platform.structured-vs-non-structured
 - learn.data-ai.survey-the-azure-data-platform.store-data-using-azure-store-account
 - learn.data-ai.survey-the-azure-data-platform.store-data-using-azure-data-lake
-- learn.data-ai.survey-the-azure-data-platform.azure-sql-dw
 - learn.data-ai.survey-the-azure-data-platform.stream-analytics
 - learn.data-ai.survey-the-azure-data-platform.summary
 badge:
