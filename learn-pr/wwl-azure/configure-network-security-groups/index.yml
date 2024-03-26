@@ -16,33 +16,19 @@ summary: Learn how to implement network security groups, and ensure network secu
 abstract: |
   In this module, you learn how to:
 
-  -
+  -   Determine when to use network security groups.
 
-  Determine when to use network security groups.
+  -   Create network security groups.
 
-  -
+  -   Implement and evaluate network security group rules.
 
-  Create network security groups.
-
-  -
-
-  Implement and evaluate network security group rules.
-
-  -
-
-  Describe the function of application security groups.
+  -   Describe the function of application security groups.
 prerequisites: |
-  -
+  -   Familiarity with Azure virtual networks and resources such as virtual machines.
 
-  Familiarity with Azure virtual networks and resources such as virtual machines.
+  -   Working knowledge of the Azure portal so you can configure the network security groups.
 
-  -
-
-  Working knowledge of the Azure portal so you can configure the network security groups.
-
-  -
-
-  Basic understanding of traffic routing and traffic control strategies.
+  -   Basic understanding of traffic routing and traffic control strategies.
 iconUrl: /training/achievements/network-security-groups.svg
 levels:
 - intermediate
