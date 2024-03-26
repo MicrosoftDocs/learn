@@ -44,7 +44,7 @@ You can use either the Azure portal or the CLI to create a metric alert. In this
 
 1. Open the **+ Create** menu, and select **Alert rule**
 1. On the **Select a resource pane**, set the scope for your alert rule. You can filter by subscription, resource type, or resource location.
-1. In the **Resource type** drop-down,start to type "virtual machines", and select **Virtual machines**.
+1. In the **Resource type** drop-down, start to type "virtual machines", and select **Virtual machines**.
 1. Check the box next to **vm1**, then select **Apply** at the bottom of the pane.
 
     :::image type="content" source="../media/4-select-resource-scope.png" alt-text="Screenshot that shows the 'Select a resource' pane, with `vm1` selected.":::
