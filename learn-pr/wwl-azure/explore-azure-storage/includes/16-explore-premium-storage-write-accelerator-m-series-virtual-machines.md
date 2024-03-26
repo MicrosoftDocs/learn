@@ -111,10 +111,10 @@ The following table shows a configuration of virtual machine types that customer
 | VM SKU | RAM | Max. VM I/O throughput | /hana/data and /hana/log striped with LVM or MDADM | /hana/shared | /root volume | /usr/sap | Comments |
 |-|-|-|-|-|-|-|-|
 | DS14v2 | 112 GiB | 768 MB/s | 4 x P6 | 1 x E10 | 1 x E6 | 1 x E6 | Will not achieve less than 1 ms storage latency<sup>1</sup> |
-| E16v3 | 128 GiB | 384 MB/s | 4 x P6 | 1 x E10 | 1 x E6 | 1 x E6 | Virtual machine type not HANA certified | Will not achieve less than 1 ms storage latency<sup>1</sup> |
+| E16v3 | 128 GiB | 384 MB/s | 4 x P6 | 1 x E10 | 1 x E6 | 1 x E6 | Virtual machine type not HANA certified<sup>1</sup> |
 | M32ts | 192 GiB | 500 MB/s | 3 x P10 | 1 x E15 | 1 x E6 | 1 x E6 | Using Write Accelerator for combined data and log volume will limit IOPS rate to 5,000<sup>2</sup> |
 | E20ds\_v4 | 160 GiB | 480 MB/s | 4 x P6 | 1 x E15 | 1 x E6 | 1 x E6 | Will not achieve less than 1 ms storage latency<sup>1</sup> |
-| E32v3 | 256 GiB | 768 MB/s | 4 x P10 | 1 x E15 | 1 x E6 | 1 x E6 | Virtual machine type not HANA certified | Will not achieve less than 1 ms storage latency<sup>1</sup> |
+| E32v3 | 256 GiB | 768 MB/s | 4 x P10 | 1 x E15 | 1 x E6 | 1 x E6 | Virtual machine type not HANA certified<sup>1</sup> |
 | E32ds\_v4 | 256 GiB | 768 MBps | 4 x P10 | 1 x E15 | 1 x E6 | 1 x E6 | Will not achieve less than 1 ms storage latency<sup>1</sup> |
 | M32ls | 256 GiB | 500 MB/s | 4 x P10 | 1 x E15 | 1 x E6 | 1 x E6 | Using Write Accelerator for combined data and log volume will limit IOPS rate to 5,000<sup>2</sup> |
 | E48ds\_v4 | 384 GiB | 1,152 MBps | 6 x P10 | 1 x E20 | 1 x E6 | 1 x E6 | Will not achieve less than 1 ms storage latency<sup>1</sup> |
