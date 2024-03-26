@@ -3,13 +3,13 @@ uid: learn.wwl.implement-hybrid-network-infrastructure.implement-dns-hybrid-envi
 title: Implement DNS in hybrid environments
 metadata:
   title: Implement DNS in hybrid environments
-  description: Implement DNS in hybrid environments
-  ms.date: 09/24/2020
+  description: "Implement DNS in hybrid environments"
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-  ms.custom: e2e-hybrid
-azureSandbox: false
+  ms.custom:
+  - e2e-hybrid
 durationInMinutes: 9
 content: |
   [!include[](includes/7-implement-domain-name-system-hybrid-environments.md)]
