@@ -22,4 +22,3 @@ Familiarity with:
 - Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
 - CIM and WMI technologies
 - The use of variables, arrays, and hash tables in Windows PowerShell
-

@@ -14,4 +14,3 @@ The script block inside the braces is run each time the loop is processed. In th
 
 > [!NOTE]
 > When you're processing an array of objects, using the **ForEach** construct is preferred because you don't need to calculate the number of items in the array before processing.
-
