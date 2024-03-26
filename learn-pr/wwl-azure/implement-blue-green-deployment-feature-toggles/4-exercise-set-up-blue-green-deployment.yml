@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-  ms.service: azure
 durationInMinutes: 60
 content: |
   [!include[](includes/4-exercise-set-up-blue-green-deployment.md)]
