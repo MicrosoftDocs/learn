@@ -6,7 +6,7 @@ metadata:
   ms.date: 06/21/2023
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Describe high availability and disaster recovery strategies
 summary: Plan an appropriate high availability and disaster recovery strategy based on recovery time objective and recovery point objective. Choose the best solution for IaaS or PaaS deployments or hybrid workloads.
 abstract: |

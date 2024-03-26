@@ -23,8 +23,6 @@ roles:
 products:
 - azure
 - github
-subjects:
-- development-tools
 modules:
 - learn.github.introduction-to-github
 - learn.github.migrate-repository-github

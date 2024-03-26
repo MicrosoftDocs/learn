@@ -6,7 +6,7 @@ metadata:
   ms.date: 07/17/2023
   author: bstollnitz
   ms.author: bstollnitz
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=cloud_advocates
   ms.contributors: bstollnitz-08202021
 title: Introduction to TensorFlow using Keras

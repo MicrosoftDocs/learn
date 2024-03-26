@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/12/2022
   author: ttorble
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
 title: Contribute to an open-source project on GitHub
 summary: Learn how to use GitHub to find open-source projects and tasks to contribute to. Discover how to create pull requests and communicate with project maintainers effectively to get your changes accepted. Learn about the benefits of getting involved with open-source communities.
@@ -37,8 +37,6 @@ products:
 prerequisites: |
   - A [GitHub account](https://github.com/?azure-portal=true)
   - The ability to navigate and edit files in GitHub
-subjects:
-- development-tools
 units:
   - learn.github.contribute-opensource.1-introduction
   - learn.github.contribute-opensource.2-identify

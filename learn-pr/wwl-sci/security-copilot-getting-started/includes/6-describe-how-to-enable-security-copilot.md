@@ -1,88 +1,104 @@
 
-To start using Microsoft Copilot for Security, organizations need to ensure the following are configured:
+To start using Microsoft Copilot for Security, organizations need to take steps to onboard the service and users. These include:
 
-- Licensing
-- Assigning role permissions
-- Configuring the geographic location for data storage
-- Opt-in or opt-out of data sharing
+1. Provision Copilot capacity
+2. Set up the default environment
+3. Assign role permissions
 
-### Licensing
+### Provision capacity
 
-To start using Copilot, your environment must have the following licenses deployed  as a minimal requirement:
+Microsoft Copilot for Security is sold as a consumptive offering, meaning that customers are billed monthly based on a provisioned capacity that is billed by the hour. The capacity that is provisioned is referred to as a security compute unit (SCU). An SCU is the unit of measure of computing power used to run Copilot in both the standalone and embedded experiences.
 
-- Copilot licensing: Copilot licensing is tenant wide (not per user). If users have the right role permissions and the environment licensing requirements are satisfied they can get access to Copilot.
-- Microsoft Entra: To access Copilot, configure settings, or perform tasks, appropriate permissions must be assigned. Role permissions are configured through Microsoft Entra.
+Before users can start using Copilot, admins need to provision and allocate capacity. To provision capacity:
 
-The minimal requirements are just that, the minimum requirements. The value really lies in augmenting the data sources used by Copilot. The augmenting of data sources occurs by enabling plugins that widen the insights that are available to Copilot. Use of Microsoft and non-Microsoft plugins generally requires customers to have licenses on the corresponding solutions. More details on plugins are covered in the subsequent module.
+- You must have an Azure subscription.
+- You must be assigned one of the following roles:
+  - Azure owner
+  - Azure contributor
 
-### Assign Role permissions
+There are two options for provisioning capacity:
 
-To access the Copilot, configure settings, or perform tasks, appropriate permissions must be assigned. Admins with any of the following roles can perform the task of assigning the appropriate permissions to allow access to Copilot.
+- Provision capacity within Copilot for Security (recommended)
+- Provision capacity through Azure
 
-- Groups Administrator
-- User Administrator
-- Privileged Role Administrator
-- Global Administrator
+> [!NOTE]
+> Regardless of the method you choose, you will need to purchase a minimum of 1 and a maximum of 100 SCUs.
 
-For users to access Copilot they must be assigned one of the following roles. The role determines what the user can do within Copilot. As a best practice, provide the least privileged role applicable for each user.
+  ***Provision capacity within Copilot for Security***. When you first open Copilot for Security as an admin, a wizard guides you through the steps in setting up capacity for your organization. The wizard prompts you for information including your Azure subscription, resource group, region, capacity name, and the quantity of SCUs.
 
-- Global administrator - Global admins can perform all kinds of tasks. They have the keys to the kingdom. The person who signed up your organization for Microsoft Copilot for Security is a global administrator by default and can access to the following administrative, and session creation functionalities:
-  - Manage plugins.
-  - Opt in or opt out on product improvements and model improvements.
-  - Configure Microsoft security product availability for users in the tenant.
-- Global reader - A Global reader role is the read-only version of the Global administrator role. Users in this role can read settings and administrative information but can't take management actions. This role has access to the session creation functionality such as asking questions and invoking prompts.
-- Security administrator - Security administrators have access to the following administrative and session creation functionalities:
-  - Manage plugins.
-  - Opt in or opt out on product improvements and model improvements.
-  - Configure Microsoft security product availability for users in the tenant.
-- Security operator or security reader - Security operators or readers have access to session creation functionality such as asking questions and invoking prompts.
+   :::image type="content" source="../media/copilot-capacity-provisioning-v2.png" lightbox="../media/copilot-capacity-provisioning-v2.png" alt-text="Screen capture showing the page for capacity provisioning through Copilot.":::
 
-Copilot doesn't go beyond the access you have. Additionally, individual Microsoft plugins may have their own role requirements for accessing the service and data it represents.  
+  ***Provision capacity through Azure***. The Azure portal now includes Copilot for Security as a service. Selecting the service, opens the page where you input information including your Azure subscription, resource group, region, capacity name, and the quantity of SCUs.
 
-As an example, an analyst that has been assigned a Security Reader role is able to access the Copilot portal, but to utilize the Microsoft Sentinel plugin would need an appropriate role like Microsoft Sentinel Reader to access incidents in the workspace. To access the devices, privileges, and policies available through the Microsoft Intune plugin, that same analyst would need another service-specific role like the Intune Endpoint Security Manager role.
+  :::image type="content" source="../media/azure-capacity-provisioning-v2.png" lightbox="../media/azure-capacity-provisioning-v2.png" alt-text="Screen capture showing the page for capacity provisioning through Azure.":::
 
-### Configure settings
+Regardless of the approach you choose to provision capacity, the process takes the information and establishes a resource group for the Microsoft Copilot for Security service, within your Azure subscription. The SCUs are an Azure resource within that resource group. Deployment of the Azure resource can take a few minutes.
 
-When an organization onboards to Copilot, the admin (global administrator or security administrator) must configure certain settings. These settings include the preferences associated with custom plugins and data and privacy settings. The settings page is accessed by selecting the home menu icon on the top-right corner of the Copilot landing page and then selecting settings from the side panel that opens.
+Once admins complete the steps to onboard to Copilot, they can manage capacity by increasing or decreasing provisioned SCUs within the Azure portal or the Security Copilot product itself. Copilot for Security provides a usage monitoring dashboard for capacity owners allowing them to track usage over time and make informed decisions about capacity provisioning.
 
-:::image type="content" source="../media/home-menu-settings.png" lightbox="../media/home-menu-settings.png" alt-text="Screen capture showing the home menu icon that when selected opens a side panel that includes the settings option.":::
+:::image type="content" source="../media/usage-monitoring.png" lightbox="../media/usage-monitoring.png" alt-text="Screen capture showing the usage monitoring dashboard.":::
 
-#### Preferences
+### Set up the default environment
 
-Copilot preferences that can be configured include theme preferences and configuring who can add and manage custom plugins. Theme preferences are configured by the end-user, but only admins can configure who can add and manage plugins, which have a tenant-wide scope. The options are:
+To set up the default environment, you need to have one of the following Microsoft Entra ID roles:
 
-- Allow only Global administrators and Security administrators the permission to add and manage plugins.
-- Allow anyone with access to Copilot to add and manage custom plugins.
+- Global administrator
+- Security administrator
 
-In the case where anyone with access to Copilot can add and manage custom plugins, the user who adds a custom plugin has the option to make it private or available to anyone in the organization.
+During the setup of Copilot for Security, you're prompted to configure settings. These include:
 
-Any configuration that is required of a custom plugin must be done by the user of that plugin, unless an admin configures it organization-wide.
+- SCU capacity - Select the capacity of SCUs previously provisioned.
 
-:::image type="content" source="../media/preferences-v2.png" lightbox="../media/preferences-v2.png" alt-text="Screen capture showing preferences that can be configured. These are theme settings and custom plugin settings.":::
+- Data storage - When an organization onboards to Copilot, the admin must confirm the geographic location of the tenant as the customer data collected by the services is stored there. Microsoft Copilot for Security operates in the Microsoft Azure data centers in the European Union (EUDB), the United Kingdom, the United States, Australia and New Zealand, Japan, Canada, and South America.
 
-#### Data and privacy
+- Your organization's data - The admin must also opt in or opt out of data sharing options. Turn the toggles on or off for any of the following options:
 
-The data and privacy settings is where admins configure options for:
+  - Allow Microsoft to capture data from Copilot for Security to validate product performance using human review: When turned on, customer data is shared with Microsoft for product improvement. Prompts and responses are evaluated to understand whether the right plugins were selected, if the output is what was expected, how responses, latency, and output format can be improved.
 
-- Data storage
-- Your organization's data
-
-***Data storage***. When an organization onboards to Copilot, the admin (global administrator or security administrator) must confirm the geographic location of the tenant as the customer data collected by the services is stored there. This setting is configured by  Microsoft Copilot for Security operates in the Microsoft Azure data centers in the European Union (EUDB), the United Kingdom, the United States, Australia and New Zealand, Japan, Canada, and South America.
-
-:::image type="content" source="../media/secruity-copilot-geo-location.png" alt-text="A screen capture of the Microsoft Copilot for Security setting for geographic location where data is stored.":::
-
-***Your organization's data***. The admin (global administrator or security administrator) must also opt in or opt out of sharing their customer data with Microsoft. Turn the toggles on or off for any of the following options:
-
-- Allow Microsoft to use data gathered to improve Copilot: When turned on, customer data is shared with Microsoft for product improvement. Prompts and responses are evaluated by automatic tools or manual methods to understand:
+  - Allow Microsoft to capture and human review data from Copilot for Security to build and validate Microsoft's security AI model: When turned on, customer data is shared with Microsoft for Copilot AI improvement. Opting in does NOT allow Microsoft to use customer data to train foundational models. Prompts and responses are evaluated to enhance responses and to ensure they're what's expected and useful to you.
   
-  - Whether the right plugins were selected
-  - If the output is what was expected
-  - How responses, latency, and output format can be improved
+  - Allow Copilot for Security to access data from your Microsoft 365 services. If this option is turned off, your organization won't be able to use plugins that access Microsoft 365 services. Currently, this option is required for use of the Microsoft Purview plugin. Setting and/or changing this setting requires a user with a Global administrator role.
+  
+      For more information about how Microsoft handles your data, see [Data security and privacy](/security-copilot/privacy-data-security).
+  
+    :::image type="content" source="../media/owner-settings-with-microsoft-365-slider.png" lightbox="../media/owner-settings-with-microsoft-365-slider.png" alt-text="Screen capture showing the settings for how you can configure data sharing to help improve Copilot.":::
 
-  Sharing this data helps Microsoft personnel to access information faster when addressing bugs and resolving specific issues.
+- Decide where your prompts are evaluated - You can restrict the evaluation within your geo or allow evaluation anywhere in the world. For more information on the list of mapped locations for your geo, see Data security and privacy.
 
-- Allow Microsoft to use data gathered to train the security AI model: When turned on, customer data is shared with Microsoft for Copilot AI improvement. Opting in does NOT allow Microsoft to use customer data to train foundational models. Prompts and responses are evaluated to enhance responses and to ensure they're what's expected and useful to you.
+- Roles - You are informed of the required roles that need to be assigned for users in your organization to use Copilot for Security.
 
-:::image type="content" source="../media/secruity-copilot-data-sharing.png" alt-text="A screen capture of the setting in Copilot for sharing your organization's data. Settings can be enabled or disabled to allow Microsoft to use data gathered to improve Copilot and to train the security AI model.":::
+### Role permissions
 
-For more information about how Microsoft handles your data, see [Data security and privacy](/security-copilot/privacy-data-security).
+To ensure that the users can access the features of Copilot, they need to have the appropriate role permissions.
+
+  :::image type="content" source="../media/role-assignment.png" lightbox="../media/role-assignment.png" alt-text="Screen capture showing the role assignment settings.":::
+
+Permissions can be assigned using Microsoft Entra ID roles or Copilot for Security roles. As a best practice, provide the least privileged role applicable for each user.
+
+The Microsoft Entra ID roles are:
+
+- Global administrator
+- Security administrator
+- Security operator
+- Security reader
+
+Although these roles grant users varying levels of access to Copilot, the scope of these roles extends beyond Copilot. For this reason, Copilot for Security roles were defined. The Copilot roles are defined and managed within Copilot and grant access only to Copilot for Security features.
+
+The Microsoft Copilot for Security roles are:
+
+- Copilot workspace owner
+- Copilot workspace contributor
+- Copilot workspace reader
+
+Security Copilot will add “All Users” in the tenants to the Workspace Contributor Role, by default as part of the first run experience or initial setup.  
+- Any user within a licensed tenant (purchased security copilot via the consumption model) will be allowed to create a session/prompt by default.
+- If the admin doesn't wish to provide access to everyone in the licensed tenant to be able to run prompts, they can restrict access to run prompts by removing “All users” from the Workspace Contributor Role assignments and adding an existing security group from the Copilot for Security portal.
+- All experiences where Copilot for Security is used (embedded or standalone) will follow the updates made by the admin.
+-	Admin/Owner permissions are required for any privileged operations like associating the workspace to SCU capacity, owner settings, plugin settings, and more.
+-	Provisioning Capacity operations continue to require Azure owner or Azure contributor roles, enabled through Azure IAM.
+
+For a detailed listing of the permissions granted for each of these roles, refer to the Assign roles article in the Summary and resources unit of this module.
+
+Your role controls what activities you have access to, such as configuring settings, assigning permissions, or performing tasks. Copilot doesn't go beyond the access you have. Additionally, individual Microsoft plugins may have their own role requirements for accessing the service and data it represents. As an example, an analyst that has been assigned a security operator role or a Copilot workspace contributor role is able to access the Copilot portal and create sessions, but to utilize the Microsoft Sentinel plugin would need an appropriate role like Microsoft Sentinel Reader to access incidents in the workspace. To access the devices, privileges, and policies available through the Microsoft Intune plugin, that same analyst would need another service-specific role like the Intune Endpoint Security Manager role.
+
+For Microsoft plugins, Copilot uses the OBO (on behalf of) model – meaning that  Copilot knows that a customer has licenses to specific products and is automatically signed into those products. Security Copilot can then access the specific products when the plugin is enabled and, where applicable, parameters are configured.

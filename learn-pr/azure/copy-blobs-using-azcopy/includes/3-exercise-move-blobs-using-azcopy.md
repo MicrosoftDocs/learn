@@ -22,7 +22,7 @@ First, create two accounts by using the Azure CLI.
     az storage account create \
       --location $LOCATION \
       --name $HOT_STORAGE_NAME \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group "<rgn>[Sandbox resource group name]</rgn>" \
       --sku Standard_RAGRS \
       --kind BlobStorage \
       --access-tier Hot
@@ -34,7 +34,7 @@ First, create two accounts by using the Azure CLI.
     az storage account create \
       --location $LOCATION \
       --name $COOL_STORAGE_NAME \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group "<rgn>[Sandbox resource group name]</rgn>" \
       --sku Standard_RAGRS \
       --kind BlobStorage \
       --access-tier Cool

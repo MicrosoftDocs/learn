@@ -2,31 +2,34 @@
 uid: learn.wwl.investigate-history-app-development
 metadata:
   title: Investigate the history of app development
-  description: "Investigate the history of app development"
-  ms.date: 12/16/2022
+  description: "Explores the history of computing and programming and surveys how modern programming evolved from the early days."
+  ms.date: 03/19/2024
   author: wwlpublish
-  ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.author: robbarefoot
+  ms.topic: module
+  ms.service: learn
+  ai-usage: human-only
 title: Investigate the history of app development
 summary: Explores the history of computing and programming and surveys how modern programming evolved from the early days.
 abstract: |
   After completing this module, you'll be able to:
-  - Outline computing history
-  - Survey the early days of programming
-  - Explain modern programming techniques
-  - Summarize the importance of accessibility
-prerequisites: |
-  General knowledge of computer terminology.
+
+  -   Outline computing history
+
+  -   Survey the early days of programming
+
+  -   Explain modern programming techniques
+
+  -   Summarize the importance of accessibility
+prerequisites: General knowledge of computer terminology.
 iconUrl: /learn/achievements/investigate-history-app-development.svg
 levels:
 - beginner
 roles:
-- administrator
-- developer
 - k-12-educator
 - student
 products:
-- industry-solutions
+- consumer
 subjects:
 - cloud-computing
 units:

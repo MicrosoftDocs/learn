@@ -6,7 +6,7 @@ metadata:
   ms.date: 3/13/2024
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: purview-audit
 title: Investigate threats by using audit features in Microsoft Defender XDR and Microsoft Purview Standard
 summary: This module examines how to search for audited activities using the Microsoft Purview Audit (UAL) solution, including how to export, configure, and view the audit log records that were retrieved from an audit log search.

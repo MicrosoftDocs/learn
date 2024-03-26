@@ -1,4 +1,4 @@
-AOAI offers a REST API for interacting and generating responses that developers can use to add AI functionality to their applications. This unit covers example usage, input and output from the API.
+Azure OpenAI offers a REST API for interacting and generating responses that developers can use to add AI functionality to their applications. This unit covers example usage, input and output from the API.
 
 > [!NOTE]
 > Before interacting with the API, you must create an Azure OpenAI resource in the Azure portal, deploy a model in that resource, and retrieve your endpoint and keys. Check out the [Getting started with Azure OpenAI Service](/training/modules/get-started-openai/) to learn how to do that.
@@ -11,44 +11,9 @@ For each call to the REST API, you need the endpoint and a key from your Azure O
 | `YOUR_API_KEY` | Keys are found in the **Keys & Endpoint** section in the Azure portal. You can use either key for your resource. |
 | `YOUR_DEPLOYMENT_NAME` | This deployment name is the name provided when you deployed your model in the Azure OpenAI Studio. |
 
-## Completions
-
-Once you've deployed a model in your AOAI resource, you can send a prompt to the service using a `POST` request. One endpoint is `completions`, which generates the completion of your prompt.
-
-```rest
-curl https://YOUR_ENDPOINT_NAME.openai.azure.com/openai/deployments/YOUR_DEPLOYMENT_NAME/completions?api-version=2022-12-01\
-  -H "Content-Type: application/json" \
-  -H "api-key: YOUR_API_KEY" \
-  -d "{
-  \"prompt\": \"Your favorite Shakespeare is\",
-  \"max_tokens\": 5
-}"
-```
-
-The response from the API will be similar to the following JSON:
-
-```json
-{
-    "id": "<id>",
-    "object": "text_completion",
-    "created": 1679001781,
-    "model": "text-davinci-003",
-    "choices": [
-        {
-            "text": "Macbeth",
-            "index": 0,
-            "logprobs": null,
-            "finish_reason": "stop"
-        }
-    ]
-}
-```
-
-The completion response to look for is within `choices[].text`. Notice that also included in the response is `finish_reason`, which in this example is `stop`. Other possibilities for `finish_reason` include `length`, which means it used up the `max_tokens` specified in the request, or `content_filter`, which means the system detected harmful content was generated from the prompt. If harmful content is included in the prompt, the API request returns an error.
-
 ## Chat completions
 
-Similar to `completions`, `chat/completions` generates a completion to your prompt, but works best when that prompt is a chat exchange.
+Once you've deployed a model in your Azure OpenAI resource, you can send a prompt to the service using a `POST` request.
 
 ```rest
 curl https://YOUR_ENDPOINT_NAME.openai.azure.com/openai/deployments/YOUR_DEPLOYMENT_NAME/chat/completions?api-version=2023-03-15-preview \
@@ -87,7 +52,7 @@ The response from the API will be similar to the following JSON:
 }
 ```
 
-Both completion endpoints allow for specifying other optional input parameters, such as `temperature`, `max_tokens` and more. If you'd like to include any of those parameters in your request, add them to the input data with the request.
+REST endpoints allow for specifying other optional input parameters, such as `temperature`, `max_tokens` and more. If you'd like to include any of those parameters in your request, add them to the input data with the request.
 
 ## Embeddings
 
@@ -100,7 +65,7 @@ curl https://YOUR_ENDPOINT_NAME.openai.azure.com/openai/deployments/YOUR_DEPLOYM
   -d "{\"input\": \"The food was delicious and the waiter...\"}"
 ```
 
-When generating embeddings, be sure to use a model in AOAI meant for embeddings. Those models start with `text-embedding` or `text-similarity`, depending on what functionality you're looking for.
+When generating embeddings, be sure to use a model in Azure OpenAI meant for embeddings. Those models start with `text-embedding` or `text-similarity`, depending on what functionality you're looking for.
 
 The response from the API will be similar to the following JSON:
 
