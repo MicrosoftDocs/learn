@@ -6,7 +6,7 @@ metadata:
   ms.date: 11/03/2023
   author: lgayhardt
   ms.author: lagayhar
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: machine-learning
   ms.subservice: rai 
 title: Train a model and debug it with Responsible AI dashboard
