@@ -27,7 +27,6 @@ products:
 subjects:
 - data-engineering
 units:
-- learn.data-ai.survey-the-azure-data-platform.structured-vs-non-structured
 - learn.data-ai.survey-the-azure-data-platform.summary
 badge:
   uid: learn.data-ai.survey-the-azure-data-platform.badge
