@@ -6,7 +6,7 @@ metadata:
   ms.date: 06/07/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
 title: Validate Azure resources by using the ARM Template Test Toolkit
 summary: This module teaches you how to create valid templates and gives you recommendations that you can follow by using the ARM Template Test Toolkit.

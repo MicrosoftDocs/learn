@@ -8,8 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: berryivor
   ms.topic: unit
-  ms.service: azure-ai-language
-  ms.subservice: azure-ai-clu
 azureSandbox: false
 labModal: false
 durationInMinutes: 2
