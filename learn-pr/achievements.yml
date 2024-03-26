@@ -3113,3 +3113,8 @@ achievements:
   title: Understand the evolving world of data
   summary: Learn how data systems are evolving and how the changes affect data professionals. Explore the differences between on-premises and cloud data solutions, and consider sample business cases that apply cloud technologies.
   iconUrl: /learn/achievements/data-ai/evolving-world-of-data-badge.svg
+- uid: learn.data-ai.survey-the-azure-data-platform.badge
+  type: badge
+  title: Survey the services on the Microsoft Intelligent Data Platform
+  summary: Learn about Azure technologies that analyze text and images and relational, nonrelational, or streaming data. See how data engineers can choose the technologies that meet their business needs and scale to meet demand securely.
+  iconUrl: /training/achievements/data-ai/survey-the-azure-data-platform-badge.svg
