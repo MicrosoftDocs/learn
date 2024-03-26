@@ -3,12 +3,11 @@ uid: learn.wwl.implement-azure-backup-for-sap-workloads-azure-vms.knowledge-chec
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 03/15/2021
+  description: "Check what you learn in this module."
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
-azureSandbox: false
 durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -26,7 +25,7 @@ quiz:
     - content: "24 hours"
       isCorrect: false
       explanation: "Incorrect. The Recovery Point Object isn't 24 hours."
-  - content: "What Azure CLI command can you use to create a Recovery Services vault?"
+  - content: "Which of these Azure CLI commands creates a Recovery Services vault?"
     choices:
     - content: "`az backup vault create`"
       isCorrect: true
