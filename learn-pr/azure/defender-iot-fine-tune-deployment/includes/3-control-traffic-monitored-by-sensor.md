@@ -30,14 +30,14 @@ Changes are made and then the new subnet settings are saved.
 
 Check the device details are correct using the **Device inventory**. To check the device details you'll need the following information for each device:
 
-    - Authorized device
-    - Name
-    - Description
-    - OS platform
-    - Type
-    - Purdue level
-    - Scanner
-    - Programming device
+- Authorized device
+- Name
+- Description
+- OS platform
+- Type
+- Purdue level
+- Scanner
+- Programming device
 
 **Merge devices**: in some cases, a device might be listed more than once. This could happen when a device has two or more connectors to the sensor, for example a laptop with both Wifi and a physical network card. In such a situation, you need to merge them together, using the **Merge** option in the **Device inventory** page. The new merged device listing contains all of the data from both merged devices.
 

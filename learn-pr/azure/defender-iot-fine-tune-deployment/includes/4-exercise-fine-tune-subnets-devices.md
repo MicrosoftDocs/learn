@@ -57,7 +57,7 @@ In the **Device inventory**, you can view the subnets grouped as either *local* 
 To make changes to a device detail:
 
 1. Select a specific item
-1. Select **Edit**. <!-- this needs to be fixed, but need to discuss with LW first. how will we show this? Ask THeo for example -->
+1. Select **Edit**. <!-- this needs to be fixed, but need to discuss with LW first.  how will we show this? Ask THeo for example -->
 
 You can update the following fields:
 
