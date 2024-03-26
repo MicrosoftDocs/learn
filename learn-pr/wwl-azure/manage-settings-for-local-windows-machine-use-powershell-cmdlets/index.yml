@@ -3,14 +3,12 @@ uid: learn.wwl.manage-settings-for-local-windows-machine-use-powershell-cmdlets
 metadata:
   title: Manage settings for a local Windows machine using PowerShell cmdlets
   description: "This module covers common PowerShell cmdlets that can be used to perform tasks on a local Windows 10 computer."
-  ms.date: 03/22/2024
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: module-standard-task-based
+  ms.topic: module
   ms.custom:
   - N/A
-  ms.service: powershell
-  ms.subservice: cmdlets
   ai-usage: human-only
 title: Manage settings for a local Windows machine using PowerShell cmdlets
 summary: This module covers common PowerShell cmdlets that can be used to perform tasks on a local Windows 10 computer.
