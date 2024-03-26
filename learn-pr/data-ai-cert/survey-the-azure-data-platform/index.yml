@@ -34,7 +34,6 @@ units:
 - learn.data-ai.survey-the-azure-data-platform.azure-sql-db
 - learn.data-ai.survey-the-azure-data-platform.azure-sql-dw
 - learn.data-ai.survey-the-azure-data-platform.stream-analytics
-- learn.data-ai.survey-the-azure-data-platform.azure-other-data-platform-services
 - learn.data-ai.survey-the-azure-data-platform.summary
 badge:
   uid: learn.data-ai.survey-the-azure-data-platform.badge
