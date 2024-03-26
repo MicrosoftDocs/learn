@@ -6,9 +6,11 @@ metadata:
   ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.custom:
   - N/A
+  ms.service: powershell
+  ms.subservice: cmdlets
   ai-usage: human-only
 title: Review CIM and WMI
 summary: This module covers CIM and WMI technologies to connect to a common information repository that contains management information that you can query and manipulate.
