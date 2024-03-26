@@ -25,6 +25,5 @@ roles:
 products:
 - azure
 units:
-- learn.data-ai.evolving-world-of-data.use-cases-for-cloud
 badge:
   uid: learn.data-ai.evolving-world-of-data.badge
