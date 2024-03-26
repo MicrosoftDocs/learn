@@ -1,12 +1,12 @@
 Azure DNS is a hosting service for DNS domains that provides name resolution by using Microsoft Azure infrastructure.
 
-In this unit, you'll learn what DNS is and how it works. You will also learn about Azure DNS, and why you would use it.
+In this unit, you'll learn what DNS is and how it works. You will also learn about Azure DNS and why you'd use it.
 
 ## What is DNS?
 
-DNS, or the Domain Name System, is a protocol within the TCP/IP standard. DNS serves an essential role of translating the human-readable domain names, for example: `www.wideworldimports.com`, into a known IP address. IP addresses enable computers and network devices to identify and route requests between themselves.
+DNS, or the Domain Name System, is a protocol within the TCP/IP standard. DNS serves an essential role of translating the human-readable domain names—for example: `www.wideworldimports.com`—into a known IP address. IP addresses enable computers and network devices to identify and route requests among themselves.
 
-DNS uses a global directory hosted on servers around the world. Microsoft is part of that network that provides a DNS service through Azure DNS.
+DNS uses a global directory hosted on servers around the world. Microsoft is part of the network that provides a DNS service through Azure DNS.
 
 A DNS server is also known as a DNS name server, or just a name server.
 
@@ -21,11 +21,11 @@ A DNS server carries out one of two primary functions:
 
 In order for a computer, server, or other network-enabled device to access web-based resources, it must reference a DNS server.
 
-When you connect by using your on-premises network, the DNS settings come from your server. When you connect by using an external location, like a hotel, the DNS settings come from the internet service provider (ISP).
+When you connect by using your on-premises network, the DNS settings come from your server. When you connect by using an external location like a hotel, the DNS settings come from the internet service provider (ISP).
 
 ### Domain lookup requests
 
-Here's a simplified overview of the process a DNS server uses when it resolves a domain name lookup request:
+Here's a simplified overview of the process a DNS server uses when it resolves a domain-name lookup request:
 
 - Checks to see if the domain name is stored in the short-term cache. If so, the DNS server resolves the domain request.
 - If the domain isn't in the cache, it contacts one or more DNS servers on the web to see if they have a match. When a match is found, the DNS server updates the local cache and resolves the request.
@@ -35,9 +35,9 @@ Here's a simplified overview of the process a DNS server uses when it resolves a
 
 Every computer, server, or network-enabled device on your network has an IP address. An IP address is unique within your domain. There are two standards of IP address: IPv4 and IPv6.
 
-- **IPv4** is composed of four sets of numbers, in the range 0 to 255, each separated by a dot. Example: 127.0.0.1. Today, IPv4 is the most commonly used standard. Yet, with the increase in IoT devices, the IPv4 standard will eventually be unable to keep up.
+- **IPv4** is composed of four sets of numbers, in the range 0 to 255, each separated by a dot; for example: 127.0.0.1. Today, IPv4 is the most commonly used standard. Yet, with the increase in IoT devices, the IPv4 standard will eventually be unable to keep up.
 
-- **IPv6** is a relatively new standard and will eventually replace IPv4. It's made up of eight groups of hexadecimal numbers, each separated by a colon. Example: fe80:11a1:ac15:e9gf:e884:edb0:ddee:fea3.
+- **IPv6** is a relatively new standard and will eventually replace IPv4. It's made up of eight groups of hexadecimal numbers, each separated by a colon; for example: fe80:11a1:ac15:e9gf:e884:edb0:ddee:fea3.
 
 Many network devices are now provisioned with both an IPv4 and an IPv6 address. The DNS name server can resolve domain names to both IPv4 and IPv6 addresses.
 
@@ -52,7 +52,7 @@ As the administrator for your company, you want to set up a DNS server by using 
 Configuration information for your DNS server is stored as a file within a zone on your DNS server. Each file is called a record. The following record types are the most commonly created and used:
 
 - **A** is the host record, and is the most common type of DNS record. It maps the domain or host name to the IP address.
-- **CNAME** is a Canonical Name record that's used to create an alias from one domain name to another domain name. If you had different domain names that all accessed the same website, you would use CNAME.
+- **CNAME** is a Canonical Name record that's used to create an alias from one domain name to another domain name. If you had different domain names that all accessed the same website, you'd use CNAME.
 - **MX** is the mail exchange record. It maps mail requests to your mail server, whether hosted on-premises or in the cloud.
 - **TXT** is the text record. It's used to associate text strings with a domain name. Azure and Microsoft 365 use TXT records to verify domain ownership.
 
@@ -69,7 +69,7 @@ The SOA and NS records are created automatically when you create a DNS zone by u
 
 ### Record sets
 
-Some record types support the concept of record sets, or resource record sets. A record set allows for multiple resources to be defined in a single record. For example, here is an A record that has one domain with two IP addresses:
+Some record types support the concept of record sets, or resource record sets. A record set allows for multiple resources to be defined in a single record. For example, here's an A record that has one domain with two IP addresses:
 
     www.wideworldimports.com.     3600    IN    A    127.0.0.1
     www.wideworldimports.com.     3600    IN    A    127.0.0.2
@@ -78,11 +78,11 @@ SOA and CNAME records can't contain record sets.
 
 ## What is Azure DNS?
 
-Azure DNS allows you to host and manage your domains by using a globally distributed name server infrastructure. It allows you to manage all of your domains by using your existing Azure credentials.
+Azure DNS allows you to host and manage your domains by using a globally distributed name-server infrastructure. It allows you to manage all of your domains by using your existing Azure credentials.
 
 Azure DNS acts as the SOA for the domain.
 
-You can't use Azure DNS to register a domain name. You use a third-party domain registrar to register your domain.
+You can't use Azure DNS to register a domain name; you need to use a third-party domain registrar for that.
 
 ## Why use Azure DNS to host your domain?
 
@@ -101,17 +101,17 @@ Azure DNS provides the following security features:
 
 - Role-based access control, which gives you fine-grained control over users' access to Azure resources. You can monitor their usage and control the resources and services to which they have access.
 - Activity logs, which let you track changes to a resource and pinpoint where faults occurred.
-- Resource locking, which gives a greater level of control to restrict or remove access to resource groups, subscriptions, or any Azure resources.
+- Resource locking, which gives you a greater level of control to restrict or remove access to resource groups, subscriptions, or any Azure resources.
 
 ### Ease of use
 
-Azure DNS can manage DNS records for your Azure services, and provide DNS for your external resources. Azure DNS uses the same Azure credentials, support contract, and billing as your other Azure services.
+Azure DNS can manage DNS records for your Azure services and provide DNS for your external resources. Azure DNS uses the same Azure credentials, support contract, and billing as your other Azure services.
 
 You can manage your domains and records by using the Azure portal, Azure PowerShell cmdlets, or the Azure CLI. Applications that require automated DNS management can integrate with the service by using the REST API and SDKs.
 
 ### Private domains
 
-Azure DNS handles the translation of external domain names to an IP address. Azure DNS lets you create private zones. These provide name resolution for virtual machines (VMs) within a virtual network, and between virtual networks, without having to create a custom DNS solution. This allows you to use your own custom domain names rather than the Azure-provided names.
+Azure DNS handles translating external domain names to IP addresses. Azure DNS lets you create private zones. These provide name resolution for virtual machines (VMs) within a virtual network and between virtual networks without having to create a custom DNS solution. This allows you to use your own custom domain names rather than the Azure-provided names.
 
 To publish a private DNS zone to your virtual network, you'll specify the list of virtual networks that are allowed to resolve records within the zone.
 

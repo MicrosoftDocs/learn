@@ -5,8 +5,7 @@ metadata:
   ms.date: 6/1/2020
   author: PeterTurcan
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Create your Azure Maps account
 azureSandbox: true
 durationInMinutes: 10

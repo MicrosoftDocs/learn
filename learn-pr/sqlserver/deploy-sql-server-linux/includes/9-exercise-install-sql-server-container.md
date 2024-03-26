@@ -2,27 +2,28 @@ You can run SQL Server on a container host by using the Microsoft SQL Server 201
 
 You're a database administrator at the wholesale company Wide World Importers and want to benefit from SQL Server without having to change the server operating systems. You've decided to deploy SQL Server in a container and use Docker to deploy and manage it.
 
-In this unit, you'll see how to deploy SQL Server on a container with Docker.
+In this exercise, you see how to deploy SQL Server on a container with Docker.
 
 ## Connect to the Ubuntu VM
 
-Before you can run any containers, you begin by installing the Docker container host software. Follow these steps:
+Before you can run any containers, begin by installing the Docker container host software. Follow these steps:
 
-1. If you haven't completed the exercise in unit 3, then start by installing a new Ubuntu 18.04 LTS server. This will take a couple of minutes to complete. If you have completed unit 3, then you can skip this step:
+1. If you haven't completed the exercise in unit 3, then start by installing a new Ubuntu 18.04 LTS server. This command takes a couple of minutes to complete. If you have completed unit 3, you can skip this section:
 
     ```azurecli
     export UBUNTUPASSWORD=$(openssl rand -base64 32)
     az vm create \
         --name UbuntuServer \
-        --image "Canonical:UbuntuServer:18.04-LTS:latest" \
-        --size Standard_D2s_v3 \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
         --admin-username ubuntuadmin \
         --admin-password $UBUNTUPASSWORD \
+        --image "Canonical:UbuntuServer:18.04-LTS:latest" \
         --nsg-rule SSH \
-        --resource-group <rgn>[sandbox resource group name]</rgn>
+        --public-ip-sku Standard \
+        --size Standard_D2s_v3   
     ```
 
-1. In the Cloud Shell on the right, enter these commands.
+1. In the Cloud Shell, enter these commands.
 
     ```bash
     export IPADDRESS=$(az vm show -d \
@@ -33,8 +34,8 @@ Before you can run any containers, you begin by installing the Docker container 
     ssh ubuntuadmin@$IPADDRESS
     ```
 
-1. When asked if you're sure, type **yes**, and then press Enter.
-1. For the password, use the displayed password, and then press Enter. SSH connects to the VM and shows a bash shell.
+1. When asked if you're sure, enter *yes*.
+1. For the password, use the displayed password, and then press **Enter**. SSH connects to the virtual machine (VM) and shows a bash shell.
 
 ## Install Docker
 
@@ -42,7 +43,7 @@ To install Docker, add the Docker repository, and then use the `apt-get` tool.
 
 1. To add the Docker GPG key to your Ubuntu system, run this command:
 
-    ```bash    
+    ```bash
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
     ```
 
@@ -66,7 +67,7 @@ To install Docker, add the Docker repository, and then use the `apt-get` tool.
 
 ## Pull and run the container image
 
-To use SQL Server in Docker containers, the easiest method is to use the Microsoft SQL Server on Linux image as a parent. In the following steps, you'll download and run that image:
+To use SQL Server in Docker containers, the easiest method is to use the Microsoft SQL Server on Linux image as a parent. In the following steps, download and run that image:
 
 1. To check that Docker is running, run this command:
 
@@ -80,7 +81,7 @@ To use SQL Server in Docker containers, the easiest method is to use the Microso
     sudo docker pull mcr.microsoft.com/mssql/server:2019-latest
     ```
 
-1. If you're asked for a password, use the password displayed above, and then press Enter.
+1. If you're asked for a password, use the password displayed previously, and then press **Enter**.
 1. To run the SQL Server Docker image, run this command:
 
     ```bash
@@ -125,4 +126,4 @@ Now that SQL Server is running in the container, you can create a database in it
     quit
     ```
 
-1. To exit the container and SSH, run the command `exit` twice.
+1. To exit the container and SSH, run the command *exit* twice.

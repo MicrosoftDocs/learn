@@ -4,10 +4,9 @@ metadata:
   title: Considerations for N-tier architectures
   description: Considerations for N-tier architectures
   ms.date: 01/15/2019
-  author: jboeshart
-  ms.author: jaboes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 title: Considerations for N-tier architectures
 durationInMinutes: 7
 content: |

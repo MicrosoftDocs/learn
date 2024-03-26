@@ -1,10 +1,10 @@
-Because you just created the virtual machine, it will already be running. You should have noted the public IP address of the virtual machine in the last exercise. If you didn't, use the Azure portal to find it.
+Because you just created the virtual machine, it's already running. You should have noted the public IP address of the VM in the last exercise. If you didn't, use the Azure portal to find it.
 
-## Connect to your Ubuntu Data Science Virtual Machine by using X2Go
+## Connect to your Ubuntu DSVM by using X2Go
 
-The Linux virtual machine (VM) is already provisioned with X2Go Server, and is ready to accept client connections. To connect to the Linux VM graphical desktop, complete the following procedure on your client:
+The Linux VM is already provisioned with X2Go Server, and is ready to accept client connections. To connect to the Linux VM graphical desktop, complete the following procedure on your client:
 
-1. Download and install the X2Go Client for your client platform from [X2Go](https://wiki.x2go.org/doku.php/doc:installation:x2goclient?portal=true).
+1. Download and install the [X2Go Client](https://wiki.x2go.org/doku.php/doc:installation:x2goclient?portal=true) for your client platform.
 
 1. Run X2Go Client. If the **New Session** window doesn't appear automatically, go to **Session** > **New Session**.
 
@@ -17,7 +17,7 @@ The Linux virtual machine (VM) is already provisioned with X2Go Server, and is r
    - **Media tab**: You can turn off sound support and client printing if you don't need to use them.
    - **Shared folders**: You can mount client machine directories to the virtual machine. Add the client machine directories that you want to share with the VM on this tab. 
 
-   ![Screenshot of the X2Go configuration window.](../media/x2go-ubuntu.png)
+   :::image type="content" source="../media/x2go-ubuntu.png" alt-text="Screenshot of the X2Go configuration window.":::
 
 1. Select **OK**.
 1. Select the box in the right pane of the X2Go window to bring up the sign-in screen for your VM.
@@ -27,4 +27,4 @@ The Linux virtual machine (VM) is already provisioned with X2Go Server, and is r
 
 You should now see the graphical interface for your Ubuntu DSVM.
 
-X2Go Client defaults to opening at 800 x 600 resolution. If you drag the corner of the window, you can also resize the remote desktop.
+X2Go Client defaults to opening at 800 x 600 resolution. If you drag the corner of the window, you can resize the remote desktop.

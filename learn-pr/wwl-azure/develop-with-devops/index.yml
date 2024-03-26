@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.wwl.develop-with-devops
+metadata:
+  title: "Develop with DevOps"
+  description: "Streamline updates to your software development projects by applying version control with Git and GitHub. Your software lifecycle improves through the implementation of continuous integration, shift-left testing, and shift-left security."
+  ms.date: 02/06/2024
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: module
+  ms.service: azure-devops
+title: Develop with DevOps
+summary: Streamline updates to your software development projects by applying version control with Git and GitHub. Your software lifecycle improves through the implementation of continuous integration, shift-left testing, and shift-left security.
+abstract: |
+  Upon completion of this module, you'll be able to:
+  *   Define source control and version control.
+  *   Describe how to manage source control with Git.
+  *   Describe how to manage source control with GitHub Flow.
+  *   Define the concept of continuous integration.
+  *   Explore DevOps shift-left testing scenarios.
+  *   Explore DevOps shift-left security scenarios.
+prerequisites: |
+  *   Basic familiarity with IT terms and concepts
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - developer
+  - devops-engineer
+  - security-engineer
+  - security-operations-analyst
+  - solution-architect
+  - student
+  - support-engineer
+products:
+  - azure
+  - azure-cloud-services
+  - github
+  - azure-devops
+subjects:
+  - devops
+  - cloud-computing
+units:
+- learn.wwl.develop-with-devops.introduction
+- learn.wwl.develop-with-devops.explore-source-control-version-control
+- learn.wwl.develop-with-devops.explore-version-control-using-git
+- learn.wwl.develop-with-devops.explore-github-flow
+- learn.wwl.develop-with-devops.explore-continuous-integration
+- learn.wwl.develop-with-devops.explore-shift-left-testing
+- learn.wwl.develop-with-devops.explore-shift-left-security
+- learn.wwl.develop-with-devops.implement-flow-of-work-with-github
+- learn.wwl.develop-with-devops.knowledge-check
+- learn.wwl.develop-with-devops.summary
+badge:
+  uid: learn.wwl.develop-with-devops.badge

@@ -6,8 +6,7 @@ metadata:
   ms.date: 01/20/2021
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Add third-party crates to your project
 durationInMinutes: 3

@@ -5,9 +5,10 @@ metadata:
   description: Exercise - Create an Azure Batch job in the CLI to run your parallel task
   ms.date: 05/06/2019
   author: lauradolan
-  ms.author: ladolan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: jushiman
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 title: Exercise - Create an Azure Batch job in the CLI to run your parallel task
 durationInMinutes: 7
 content: |

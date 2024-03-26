@@ -7,8 +7,7 @@ metadata:
   ms.date: 04/14/2021
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/create-custom-github-action.md)]

@@ -4,13 +4,12 @@ title: Customize Remote Desktop Protocol (RDP) properties for a host pool
 metadata:
   title: Customize Remote Desktop Protocol (RDP) properties for a host pool
   description: "Customize Remote Desktop Protocol (RDP) properties for a host pool"
-  ms.date: 08/01/2022
+  ms.date: 09/25/2023
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/4-customize-remote-desktop-properties-for-host-pool.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.implement-observability-cloud-native-app-with-opentelemetry.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 12/20/2023
+  author: codemillmatt  
+  ms.author: masoucou
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]

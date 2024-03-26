@@ -7,8 +7,7 @@ metadata:
   ms.date: 11/13/2022
   author: AbbyMSFT
   ms.author: abbyweisberg
-  ms.topic: interactive-tutorial
-  ms.prod: azure-monitor
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/6-compare-and-analyze-data.md)]

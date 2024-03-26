@@ -4,18 +4,19 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/09/2023
+  ms.date: 11/23/2023
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 1
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "As the lead admin, it's important to convince your team to start using Microsoft Sentinel. You’ve put together a presentation. What are the four security operation areas of Microsoft Sentinel that cover this area?"
+  - content: "As the lead admin, it's important to convince your team to start using Microsoft Sentinel. You’ve put together a presentation. What are the four security operation areas of Microsoft Sentinel?"
     choices:
     - content: "Collect, Detect, Investigate, and Redirect."
       isCorrect: false
@@ -34,6 +35,6 @@ quiz:
     - content: "Playbooks."
       isCorrect: false
       explanation: "Incorrect. Playbooks allow you to automate your common tasks and simplify security orchestration."
-    - content: "Microsoft 365 Defender."
+    - content: "Microsoft Defender XDR."
       isCorrect: false
-      explanation: "Incorrect. Microsoft 365 Defender provides protection for email, client endpoints, enterprise IoT, Identity, Apps, and Cloud apps."
+      explanation: "Incorrect. Microsoft Defender XDR provides protection for email, client endpoints, enterprise IoT, Identity, Apps, and Cloud apps."

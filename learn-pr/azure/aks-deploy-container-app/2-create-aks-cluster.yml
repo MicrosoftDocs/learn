@@ -7,8 +7,7 @@ metadata:
   ms.date: 03/01/2022
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Create an Azure Kubernetes Service cluster
 durationInMinutes: 10
 content: |

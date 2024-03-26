@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-group-enrollment-tasks.exercise-deprovision-single-device-from-group-enrollment
+title: Exercise - Deprovision a single device from the group enrollment
+metadata:
+  title: Exercise - Deprovision a single device from the group enrollment
+  description: "Deprovision a single device from the group enrollment"
+  ms.date: 10/11/2023
+  sandbox: true
+  interactive: bash
+  author: kgremban
+  ms.author: kgremban
+  manager: lizross
+  ms.custom: engagement-fy23
+  ms.topic: unit
+  ms.service: iot-dps
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-exercise-deprovision-single-device-from-group-enrollment.md)]

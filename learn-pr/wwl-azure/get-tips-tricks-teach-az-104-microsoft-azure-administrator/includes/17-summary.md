@@ -32,7 +32,7 @@ AZ-104: Microsoft Azure Administrator gives students the opportunity to learn a 
 
 - [Certification Overview Page](https://aka.ms/Certifications) 
 
-- [What is Azure Active Directory?](https://azure.microsoft.com/resources/videos/) 
+- [What is Microsoft Entra ID?](https://azure.microsoft.com/resources/videos/) 
 
 - [Azure Community Support](https://aka.ms/azurecommunitysupport) 
 

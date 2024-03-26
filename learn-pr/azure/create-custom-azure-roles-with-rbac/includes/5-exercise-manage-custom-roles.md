@@ -60,7 +60,7 @@ We need to update the Virtual Machine Operator role to add permissions for a mon
    ```
 
 1. Select **Save** from the three-dot menu on the top right-hand side of the Cloud Shell pane (or press <kbd>CTRL + S</kbd> in Windows or <kbd>CMD + S</kbd> in macOS).
-1. Enter **vm-operator-role-new.json** as the filename.
+1. Enter **vm-operator-role-new.json** as the filename, then select **Save**.
 1. Select **Close Editor** from the three-dot menu on the top right-hand side of the Cloud Shell pane (or press <kbd>CTRL + Q</kbd> in Windows or <kbd>CMD + Q</kbd> in macOS).
 1. Run the following command to update the Virtual Machine Operator custom role:
 

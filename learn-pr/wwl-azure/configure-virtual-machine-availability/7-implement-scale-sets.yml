@@ -4,13 +4,12 @@ title: Implement Azure Virtual Machine Scale Sets
 metadata:
   title: Implement Azure Virtual Machine Scale Sets
   description: "Implement Azure Virtual Machine Scale Sets"
-  ms.date: 02/06/2023
+  ms.date: 03/13/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/7-implement-scale-sets.md)]

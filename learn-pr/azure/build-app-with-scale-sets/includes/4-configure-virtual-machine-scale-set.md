@@ -1,6 +1,6 @@
 When you scale, you add instances to your Virtual Machine Scale Set. In the shipping-company scenario, scaling is a good way to handle the changing number of requests over time. Scaling adjusts the number of virtual machines that run the web application as the number of users changes. In this way, the system maintains an even response time, regardless of the current load.
 
-In this unit, you'll learn how to scale a Virtual Machine Scale Set. You can scale manually by explicitly setting the number of virtual machine instances in the scale set, or you can configure autoscaling by defining scale rules that trigger the allocation and deallocation of virtual machines. These scale rules determine when to scale the system by monitoring various performance metrics.
+In this unit, you learn how to scale a Virtual Machine Scale Set. You can scale manually by explicitly setting the number of virtual machine instances in the scale set. You can configure autoscaling by defining scale rules that trigger the allocation and deallocation of virtual machines. These scale rules determine when to scale the system by monitoring various performance metrics.
 
 ## Manually scale Virtual Machine Scale Sets
 
@@ -8,11 +8,11 @@ You scale a Virtual Machine Scale Set manually by increasing or decreasing the i
 
 The following code uses the Azure CLI to change the number of instances in a Virtual Machine Scale Set:
 
-```bash
+```azurecli
 az vmss scale \
-    --name MyVMScaleSet \
-    --resource-group MyResourceGroup \
-    --new-capacity 6
+  --name webServerScaleSet \
+  --resource-group MyResourceGroup \
+  --new-capacity 6
 ```
 
 ## Autoscale Virtual Machine Scale Sets
@@ -21,8 +21,8 @@ Manual scaling is useful in some circumstances. But in many situations, autoscal
 
 You can base the autoscale on:
 
-- **Schedule**: Use this approach if you know you'll have an increased workload on a specified date or time period.
-- **Metrics**: Adjust scaling by monitoring performance metrics associated with the scale set. When these metrics exceed a specified threshold, the scale set can automatically start new virtual machine instances. When the metrics indicate that the additional resources are no longer required, the scale set can stop any excess instances.
+- **Schedule**: Use this approach if you know that you have an increased workload on a specified date or time period.
+- **Metrics**: Adjust scaling by monitoring performance metrics associated with the scale set. When these metrics exceed a specified threshold, the scale set can automatically start new virtual machine instances. When the metrics indicate that the extra resources are no longer required, the scale set can stop any excess instances.
 
 ### Define autoscale conditions, rules, and limits
 
@@ -30,7 +30,7 @@ Autoscaling is based on a set of scale conditions, rules, and limits. A scale co
 
 In the shipping-company scenario, you can add scale rules that monitor the CPU usage across the scale set. If the CPU usage exceeds the 75 percent threshold, the scale rule can increase the number of virtual machine instances. A second scale rule can also monitor CPU usage, but reduce the number of virtual machine instances when usage falls below 50 percent. Because the application is global, these rules should be active all the time rather than just at specific hours.
 
-A Virtual Machine Scale Set can contain many scale conditions. Each matching scale condition is acted on. A scale set can also contain a default scale condition that's used if no other scale conditions match the current time and performance metrics. The default scale condition is always active. It contains no scale rules, effectively acting like a *null* scale condition that doesn't scale in or out. However, you can modify the default scale condition to set a default instance count, or you can add a pair of scale rules that scale out and back in again.
+A Virtual Machine Scale Set can contain many scale conditions. Each matching scale condition is acted on. A scale set can also contain a default scale condition to use if no other scale conditions match the current time and performance metrics. The default scale condition is always active. It contains no scale rules, effectively acting like a *null* scale condition that doesn't scale in or out. However, you can modify the default scale condition to set a default instance count, or you can add a pair of scale rules that scale out and back in again.
 
 ### Use schedule-based autoscaling
 
@@ -38,7 +38,7 @@ Schedule-based scaling specifies a start and end time and the number of instance
 
 In this case, the default rule scales the system back down to two instances. This value is the **Maximum** in this default scale condition.
 
-![Screenshot showing an example of a schedule-based scale condition.](../media/4-schedule-based-scale-rule.png)
+:::image type="content" source="../media/4-schedule-based-scale-rule.png" alt-text="Screenshot showing an example of a schedule-based scale condition." lightbox="../media/4-schedule-based-scale-rule.png":::
 
 ### Use metrics-based autoscaling
 
@@ -57,9 +57,9 @@ A scale rule aggregates the values retrieved for a metric for all instances. It 
 
 A one-minute interval is too short to determine whether any change in the metric is long-lasting enough to make autoscaling worthwhile. A scale rule takes a second step, further aggregating the time aggregation's value over a longer, user-specified period. This period is called the *duration*. The minimum duration is five minutes. For example, if the duration is set to 10 minutes, the scale rule aggregates the 10 values calculated for the time grain.
 
-The duration's aggregation calculation can differ from the time grain's aggregation calculation. For example, let's say the time aggregation is *average* and the statistic gathered is *percentage CPU* across a one-minute time grain. For every minute, the average CPU percentage usage across all instances during that minute will be calculated. If the time-grain statistic is set to *maximum* and the rule's duration is set to 10 minutes, the maximum of the 10 average values for the CPU usage percentage determines whether the rule threshold has been crossed.
+The duration's aggregation calculation can differ from the time grain's aggregation calculation. For example, let's say the time aggregation is *average* and the statistic gathered is *percentage CPU* across a one-minute time grain. For every minute, the average CPU percentage usage across all instances during that minute is calculated. If the time-grain statistic is set to *maximum* and the rule's duration is set to 10 minutes, the maximum of the 10 average values for the CPU usage percentage determines whether the rule threshold has been crossed.
 
-When a scale rule detects that a metric has crossed a threshold, it can do a scale action. A scale action can be a *scale-out* or a *scale-in*. A scale-out action increases the number of instances. A scale-in action reduces the instance count.
+When a scale rule detects that a metric crosses a threshold, it can do a scale action. A scale action can be a *scale-out* or a *scale-in*. A scale-out action increases the number of instances. A scale-in action reduces the instance count.
 
 A scale action uses an operator such as *less than*, *greater than*, or *equal to* to determine how to react to the threshold. Scale-out actions typically use the *greater than* operator to compare the metric value to the threshold. Scale-in actions tend to compare the metric value to the threshold by using the *less than* operator. A scale action also sets the instance count to a specific level rather than increasing or decreasing the number available.
 
@@ -69,4 +69,4 @@ Finally, you should plan for a scale-in when a workload decreases. Consider defi
 
 The following image shows a scale rule defined in the Azure portal.
 
-![Screenshot of a metrics-based scale rule in the Azure portal.](../media/4-example-scale-rule.png)
+:::image type="content" source="../media/4-example-scale-rule.png" alt-text="Screenshot of a metrics-based scale rule in the Azure portal.":::

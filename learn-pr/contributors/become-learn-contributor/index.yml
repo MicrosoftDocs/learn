@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: $learn.become-learn-contributor
+metadata:
+  title: Become a Microsoft Learn contributor
+  description: Discover how to contribute to Microsoft Learn! Become a contributor by improving documentation content, posting in Microsoft Q&A, creating a Collection, and sharing Microsoft Learn resources.
+  ms.date: 10/4/2023
+  author: sgaspari815
+  ms.author: v-sgaspari
+  ms.topic: module-standard-task-based
+  ms.service: learn
+title: Become a Microsoft Learn contributor
+summary: Discover how to contribute to Microsoft Learn! Become a contributor by improving documentation content, posting in Microsoft Q&A, creating a Collection, and sharing Microsoft Learn resources.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe four ways to contribute to Microsoft Learn.
+    - Define the impact of a Microsoft Learn contributor. 
+prerequisites: |
+  - Awareness of contributions to open-source projects at the beginner level.
+  - Familiarity with GitHub, including repo storage, collaboration methods, and working with issues or pull requests at the beginner level.
+  - A GitHub account.
+  - A Microsoft Learn account. 
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - technical-writer
+  - developer
+  - student
+products: 
+- github
+- vs-code
+units:
+- learn.become-learn-contributor.introduction
+- learn.become-learn-contributor.what-is-learn-contributor
+- learn.become-learn-contributor.review-documentation-github-issues
+- learn.become-learn-contributor.contribute-microsoft-q-and-a
+- learn.become-learn-contributor.create-learn-collection
+- learn.become-learn-contributor.share-learn-resources
+- learn.become-learn-contributor.knowledge-check
+- learn.become-learn-contributor.summary
+badge:
+  uid: |
+    learn.become-learn-contributor.badge

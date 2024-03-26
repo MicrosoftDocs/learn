@@ -7,8 +7,9 @@ metadata:
   ms.date: 2/27/2023
   author: sherzyang
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 2
 content: |
   [!include[](includes/2-access-azure-openai.md)]

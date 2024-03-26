@@ -4,11 +4,11 @@ title: Exercise - Deploy a container instance by using the Azure CLI
 metadata:
   title: Exercise - Deploy a container instance by using the Azure CLI
   description: "Exercise - Deploy a container instance by using the Azure CLI"
-  ms.date: 04/24/2023
+  ms.date: 12/11/2023
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: N/A, devx-track-azurecli
 durationInMinutes: 10
 content: |
   [!include[](includes/3-run-azure-container-instances-cloud-shell.md)]

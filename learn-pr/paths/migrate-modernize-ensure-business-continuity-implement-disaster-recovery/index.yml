@@ -1,0 +1,30 @@
+### YamlMime:LearningPath
+uid: learn.wwl.migrate-modernize-ensure-business-continuity-implement-disaster-recovery
+metadata:
+  title: Modernize, ensure business continuity, and implement disaster recovery for SAP solutions on Azure​
+  description: Modernize, ensure business continuity, and implement disaster recovery for SAP solutions on Azure​
+  ms.date: 01/10/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: learning-path
+  ms.service: azure
+title: Modernize, ensure business continuity, and implement disaster recovery for SAP solutions on Azure​
+prerequisites: |
+  Before taking this training, you should complete the Azure Administrator (AZ-104) or Azure Solutions Architect Expert (AZ-305) exam, and SAP HANA or NetWeaver training.
+summary: |
+  SAP professionals need to ensure business continuity and implement disaster recovery for SAP solutions on Azure​. These modules explore high availability, disaster recovery, and backup and restore of SAP workloads on Azure.
+iconUrl: /training/achievements/generic-trophy.svg
+hidden: true
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+modules:
+- learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure
+- learn.wwl.migrate-modernize-implement-disaster-recovery-sap-workloads-azure
+- learn.wwl.migrate-modernize-perform-backups-restores
+trophy:
+  uid: learn.wwl.migrate-modernize-ensure-business-continuity-implement-disaster-recovery.trophy

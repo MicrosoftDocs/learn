@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.implement-observability-cloud-native-app-with-opentelemetry.exercise-extend-telemetry
+title: Exercise - Extend telemetry in .NET 8
+metadata:
+  title: Exercise - Extend telemetry in .NET 8
+  description: "Exercise to add a custom metric to a cloud-native application by using OpenTelemetry."
+  ms.date: 12/20/2023
+  author: codemillmatt  
+  ms.author: masoucou
+  ms.topic: unit
+  ms.custom: devx-track-dotnet
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-exercise-extend-telemetry.md)]

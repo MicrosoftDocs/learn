@@ -4,13 +4,12 @@ title: Secure storage endpoints
 metadata:
   title: Secure storage endpoints
   description: "Secure storage endpoints"
-  ms.date: 02/24/2023
+  ms.date: 03/08/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 1
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
 content: |
   [!include[](includes/7-secure-storage-endpoints.md)]

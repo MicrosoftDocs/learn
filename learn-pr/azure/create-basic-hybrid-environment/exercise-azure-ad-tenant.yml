@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-basic-hybrid-environment.exercise-azure-ad-tenant
-title: Create an Azure AD tenant
+title: Create a Microsoft Entra tenant
 metadata:
   unitType: exercise
-  title: Create an Azure AD tenant
-  description: "This exercise will guide you through creating an Azure AD tenant"
+  title: Create a Microsoft Entra tenant
+  description: "This exercise will guide you through creating a Microsoft Entra tenant"
   ms.date: 5/31/2022
   author: billmath
   ms.author: billmath
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/exercise-azure-ad-tenant.md)]

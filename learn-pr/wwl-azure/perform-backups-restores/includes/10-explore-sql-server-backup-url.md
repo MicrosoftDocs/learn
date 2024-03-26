@@ -1,5 +1,3 @@
-
-
 Creating an Azure Storage account within your Azure subscription is the first step in this process. SQL Server can either use the Azure storage account name and its access key value to authenticate and write and read blobs to the Microsoft Azure Blob storage service or use a Shared Access Signature token granting read and write permissions to individual containers. The SQL Server Credential stores this authentication information and uses it during the backup or restore operations.
 
 To implement SQL Server Backup to URL, you can use the following methods:
@@ -18,7 +16,7 @@ Automated Backup v2 works with SQL Server 2016 or higher. If you're using SQL Se
 
 - Target databases must use the full recovery model. For more information about the impact of the full recovery model on backups, see Backup Under the Full Recovery Model.
 - System databases don't have to use full recovery model. However, if you require log backups to be taken for Model or MSDB, you must use the full recovery model.
-- Target databases must be on either the default SQL Server instance, or a named instance installed by following the procedure described in [Frequently asked questions for SQL Server on Azure VMs](/azure/azure-sql/virtual-machines/windows/frequently-asked-questions-faq?view=azuresql).
+- Target databases must be on either the default SQL Server instance, or a named instance installed by following the procedure described in [Frequently asked questions for SQL Server on Azure VMs](/azure/azure-sql/virtual-machines/windows/frequently-asked-questions-faq).
 
 You can use the Azure portal or Az PowerShell module to configure Automated Backup v2 during provisioning or existing SQL Server 2016/2017 VMs.
 
@@ -44,8 +42,8 @@ Regardless of the choice of the implementation method, the process involves sett
 
 ## File-backup set maintenance
 
-- **Deleting a file-snapshot backup set**: You can't overwrite a file-snapshot backup set using the FORMAT argument. The FORMAT argument isn't permitted to avoid leaving orphaned file-snapshots that were created with the original file-snapshot backup. To delete a file-snapshot backup set, use the sys.sp\_delete\_backup system stored procedure. This stored procedure deletes the backup file and the file-snapshots that comprise the backup set. Using another method to delete a file-snapshot backup set may delete the backup file without deleting the file-snapshots in the backup set.
-- **Deleting orphaned backup file-snapshot**s: You may have orphaned file-snapshots if the backup file was deleted without using the sys.sp\_delete\_backup system stored procedure or if a database or database file was dropped while the blob(s) containing the database or database file had backup file-snapshots associated with them. To identify file-snapshots that may be orphaned, use the sys.fn\_db\_backup\_file\_snapshots system function to list all file-snapshots of the database files. To identify the file-snapshots that are part of a specific file-snapshot backup set, use the RESTORE FILELISTONLY system stored procedure. You can then use the sys.sp\_delete\_backup\_file\_snapshot system stored procedure to delete an individual backup file-snapshot that was orphaned. You can find examples using this system function and these system stored procedures at the bottom of this page.
+- **Deleting a file-snapshot backup set**: You can't overwrite a file-snapshot backup set using the FORMAT argument. The FORMAT argument isn't permitted to avoid leaving orphaned file-snapshots that were created with the original file-snapshot backup. To delete a file-snapshot backup set, use the sys.sp\_delete\_backup system stored procedure. This stored procedure deletes the backup file and the file-snapshots that comprise the backup set. Using another method to delete a file-snapshot backup set might delete the backup file without deleting the file-snapshots in the backup set.
+- **Deleting orphaned backup file-snapshot**s: You might have orphaned file-snapshots if the backup file was deleted without using the sys.sp\_delete\_backup system stored procedure or if a database or database file was dropped while the blob(s) containing the database or database file had backup file-snapshots associated with them. To identify file-snapshots that might be orphaned, use the sys.fn\_db\_backup\_file\_snapshots system function to list all file-snapshots of the database files. To identify the file-snapshots that are part of a specific file-snapshot backup set, use the RESTORE FILELISTONLY system stored procedure. You can then use the sys.sp\_delete\_backup\_file\_snapshot system stored procedure to delete an individual backup file-snapshot that was orphaned. You can find examples using this system function and these system stored procedures at the bottom of this page.
 
 ## Restore using file-snapshot backups
 
@@ -124,7 +122,7 @@ select * from sys.fn_db_backup_file_snapshots ('AdventureWorks2016') ;
 To delete an individual backup file-snapshot of a database base blob, use the sys.sp\_delete\_backup\_file\_snapshot system stored procedure. A primary use case for this system stored procedure is to delete orphaned file-snapshot files that remain after a backup file was deleted using a method other than the sys.sp\_delete\_backup system stored procedure.
 
 > [!WARNING]
-> Deleting an individual file-snapshot that is part of a file-snapshot backup set will invalidate the backup set.
+> Deleting an individual file-snapshot that's part of a file-snapshot backup set will invalidate the backup set.
 
 The following example deletes the specified backup file-snapshot. The URL for the specified backup was obtained using the sys.fn\_db\_backup\_file\_snapshots system function.
 

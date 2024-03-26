@@ -4,30 +4,30 @@ Before you set up Azure HPC Cache, you'll need to meet some prerequisites. In th
 
 Azure HPC Cache has three network requirements:
 
-- Set up a custom DNS server.
-- Define a dedicated subnet.
-- Verify TCP/UDP port access.
+- Set up a custom DNS server
+- Define a dedicated subnet
+- Verify TCP/UDP port access
 
 ### Set up custom DNS for HPC Cache
 
 If you plan to use servers in your datacenter, you'll need to configure a DNS server so that Azure resources can resolve your internal storage server names.
 
-If you plan to use Azure-based storage, such as Azure NetApp Files, or you plan to copy your data into Azure Blob Storage, then you don't need to configure a separate DNS server.
+If you plan to use Azure-based storage such as Azure NetApp Files, or you plan to copy your data into Azure Blob Storage, then you don't need to configure a separate DNS server.
 
 In the Azure portal:
 
-- Create the virtual network that will host the Azure HPC Cache.
-- Create the DNS server.
-- Add the DNS server to the cache's virtual network.
+- Create the virtual network that will host the Azure HPC Cache
+- Create the DNS server
+- Add the DNS server to the cache's virtual network
 
 Follow these steps to add the DNS server to the virtual network in the Azure portal:
 
 1. Open the virtual network in the Azure portal.
-1. Select **DNS servers** from the **Settings** menu in the sidebar.
+1. Select **DNS servers** from the **Settings** menu in the sidebar (you might need to expand the **Settings** menu).
 1. Select **Custom**.
 1. Enter the DNS server's IP address in the field.
 
-:::image type="content" source="../media/3-identity-requirements-01-custom-dns-steps.png" alt-text="Screenshot showing how to add a custom D N S server to an existing virtual network.":::
+:::image type="content" source="../media/3-identity-requirements-01-custom-dns-steps.png" alt-text="Screenshot showing how to add a custom DNS server to an existing virtual network.":::
 
 ### Define a dedicated subnet for HPC Cache
 
@@ -45,7 +45,7 @@ We highly recommend having a high-speed network connection like Azure ExpressRou
 
 Ensure firewall rules and Azure network security groups enable traffic between storage server ports and your internal network.
 
-Different storage servers use different TCP/UDP ports to access data. Use a tool like `rpcinfo` to identify which TCP and UDP ports are used on your storage server. Commonly used TCP/UDP ports include:
+Different storage servers use different TCP/UDP ports to access data. You can use a tool like `rpcinfo` to identify which TCP and UDP ports are used on your storage server. Commonly used TCP/UDP ports include:
 
 - 111
 - 2049

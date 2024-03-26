@@ -1,7 +1,7 @@
-In this exercise, you use the `pg_azure_storage` extension to ingest data from files securely stored in a private container in Azure Blob Storage.
+In this exercise, you'll use the `pg_azure_storage` extension to ingest data from files securely stored in a private container in Azure Blob Storage.
 
 > [!IMPORTANT]
-> This exercise relies on the Azure Cosmos DB for PostgreSQL database and distributed tables created in Unit 3 - Exercise - Explore how Citus distributes tables.
+> This exercise relies on the Azure Cosmos DB for PostgreSQL database and distributed tables you created in Unit 3.
 
 ## Create an Azure Blob Storage account
 
@@ -18,7 +18,7 @@ To complete this exercise, you must create an Azure Storage account, retrieve it
     | Parameter            | Value |
     | -------------------- | ----- |
     | **Project details**  |       |
-    | Subscription         | Leave as the default subscription for the sandbox environment.  |
+    | Subscription         | Choose your Azure subscription.  |
     | Resource group       | Select the `learn-cosmosdb-postgresql` resource group you created in the previous exercise. |
     | **Instance details** |       |
     | Storage account name | _Enter a globally unique name_, such as `stlearnpostgresql`. |
@@ -26,9 +26,9 @@ To complete this exercise, you must create an Azure Storage account, retrieve it
     | Performance          | Select **Standard**. |
     | Redundancy           | Select **Locally-redundant storage (LRS)**. |
 
-    :::image type="content" source="../media/create-storage-account-basics-tab.png" alt-text="Screenshot of the Basics tab of the Create a storage account dialog, and the fields are populated with the values specified in the exercise.":::
+    :::image type="content" source="../media/create-storage-account-basics-tab.png" alt-text="Screenshot of the Basics tab of the Create a storage account dialog. The fields are populated with the values specified in the exercise.":::
 
-4. The default settings will be used for the remaining tabs of the storage account configuration, so select the **Review** button.
+4. You'll use the default settings for the remaining tabs of the storage account configuration, so select the **Review** button.
 
 5. Select the **Create** button on the **Review** tab to create the storage account.
 
@@ -42,7 +42,7 @@ Woodgrove Bank has provided you with their historical data files in CSV format. 
 
     :::image type="content" source="../media/storage-account-add-container.png" alt-text="Screenshot of the Storage account page where Containers is selected and highlighted under Data storage in the left-hand navigation menu, and + Container is highlighted on the Containers page.":::
 
-3. In the **New container** dialog, enter `historical-data` in the **Name** field and leave **Private (no anonymous access)** selected for the **Public access level** setting, then select **Create**.
+3. In the **New container** dialog, enter `historical-data` in the **Name** field, leave **Private (no anonymous access)** selected for the **Public access level** setting, and select **Create**.
 
     :::image type="content" source="../media/storage-account-new-container.png" alt-text="Screenshot of the New container dialog, with the name set to historical-data and the public access level set to private (no anonymous access).":::
 
@@ -71,7 +71,7 @@ Woodgrove Bank has provided you with their historical data files in CSV format. 
 
     :::image type="content" source="../media/storage-account-name.png" alt-text="Screenshot of the Copy to clipboard button and the ACCOUNT_NAME variable declaration line in the Cloud Shell.":::
 
-    Now, execute the following command to create a variable for your storage account name, replacing the `{your_storage_account_name}` token with your storage account name.
+    Now, execute the following command to create a variable for your storage account name, replacing the `{your_storage_account_name}` token with your storage account name:
 
     ```bash
     ACCOUNT_NAME={your_storage_account_name}
@@ -81,13 +81,13 @@ Woodgrove Bank has provided you with their historical data files in CSV format. 
 
     :::image type="content" source="../media/storage-account-key.png" alt-text="Screenshot of the Copy to clipboard button next to the key1 Key value, and the ACCOUNT_KEY variable declaration line is highlighted in the Cloud Shell.":::
 
-    Then, run the following, replacing the `{your_storage_account_key}` token with the key value you copied.
+    Then, run the following command, replacing the `{your_storage_account_key}` token with the key value you copied:
 
     ```bash
     ACCOUNT_KEY={your_storage_account_key}
     ```
 
-8. To upload the files, you'll use the [`az storage blob upload`](/cli/azure/storage/blob#az-storage-blob-upload) command from the Azure CLI. Run the following commands to upload the files to your storage account's `historical-data` container.
+8. To upload the files, you'll use the [`az storage blob upload`](/cli/azure/storage/blob#az-storage-blob-upload) command from the Azure CLI. Run the following commands to upload the files to your storage account's `historical-data` container:
 
     ```bash
     az storage blob upload --account-name $ACCOUNT_NAME --account-key $ACCOUNT_KEY --container-name historical-data --file users.csv --name users.csv --overwrite
@@ -95,7 +95,7 @@ Woodgrove Bank has provided you with their historical data files in CSV format. 
     az storage blob upload --account-name $ACCOUNT_NAME --account-key $ACCOUNT_KEY --container-name historical-data --file events.csv --name events.csv --overwrite
     ```
 
-    In this exercise, you're working with a few files. You'll most likely work with many more files in real-world scenarios. In those circumstances, you can review different methods for [migrating files to an Azure Storage account](/azure/storage/common/storage-use-azcopy-migrate-on-premises-data), and select the technique that will work best for your situation.
+    In this exercise, you're working with a few files. You'll most likely work with many more files in real-world scenarios. In those circumstances, you can review different methods for [migrating files to an Azure Storage account](/azure/storage/common/storage-use-azcopy-migrate-on-premises-data) and select the technique that will work best for your situation.
 
 9. To verify the files uploaded successfully, you can navigate to the **Containers** page of your storage account by selecting **Containers** from the left-hand navigation menu. Select the `historical-data` container from the list of containers and observe the container now contains files named `events.csv` and `users.csv`.
 
@@ -111,7 +111,7 @@ With the files now securely stored in blob storage, it's time to set up the `pg_
 
     :::image type="content" source="../media/cosmos-db-postgresql-connection-strings-psql.png" alt-text="Screenshot of the Connection strings page of the Azure Cosmos DB Cluster resource. On the Connection strings page, the copy to clipboard button to the right of the psql connection string is highlighted.":::
 
-3. Paste the connection string into a text editor, such as Notepad.exe, and replace the `{your_password}` token with the password you assigned to the `citus` user when creating your cluster. Copy the updated connection string for use below.
+3. Paste the connection string into a text editor such as Notepad and replace the `{your_password}` token with the password you assigned to the `citus` user when creating your cluster. Copy the updated connection string for use below.
 
 4. In your open Cloud Shell pane, ensure **Bash** is selected for the environment, then use the psql command-line utility to connect to your database. Paste your updated connection string (the one containing your correct password) at the prompt in the Cloud Shell, and then run the command, which should look similar to the following command:
 
@@ -161,7 +161,7 @@ The next step is to grant access to your storage account after installing the `p
     (stlearnpostgresql,{})
     ```
 
-    Note, you can remove accounts from the database using the `account_remove('ACCOUNT_NAME')` function, but don't do there here, as you need the account connected for the remainder of the exercise.
+    Note that you can remove accounts from the database using the `account_remove('ACCOUNT_NAME')` function; but don't do there here, because you need the account connected for the remainder of the exercise.
 
 ## List files in a blob storage container
 
@@ -191,13 +191,13 @@ Before attempting to ingest data from any file, you must understand the structur
 
     :::image type="content" source="../media/storage-browser-blob-containers.png" alt-text="Screnshot of the Storage browser menu item highlighted on the Storage account page. On the Storage browser window, Blob containers are highlighted in the navigation tree.":::
 
-2. From the list of containers, select **historical-data**`.
+2. From the list of containers, select **historical-data**.
 
 3. Select the ellipsis (...) button to the right of the `users.csv` file and select **Download** from the context menu.
 
     :::image type="content" source="../media/storage-browser-users-download.png" alt-text="Screenshot of the users.csv file in the historical-data container, and the ellipsis button is highlighted. In the context menu for the file, Download is highlighted.":::
 
-4. After the download completes, open the file using Microsoft Excel or another text editor that can open CSV files and observe the structure of the data contained within the file, which resembles the following example of the first 10 rows of the `users.csv` file.
+4. After the download completes, open the file using Microsoft Excel (or another text editor that can open CSV files) and observe the structure of the data contained within the file, which resembles the following example of the first 10 rows of the `users.csv` file.
 
     | `user_id` | `url` | `login` | `avatar_url` |
     | --- | --- | --- | --- |
@@ -214,7 +214,7 @@ Before attempting to ingest data from any file, you must understand the structur
 
     Notice the file contains four columns. The first column contains integer values, and the remaining columns contain text. It's also crucial to note that the file doesn't include a header row. This information will change how you set up the `COPY` command to ingest the file's data into your database.
 
-    You created the `payment_users` table in Unit 3 - Exercise - Explore how Citus distributes tables. As a reminder, the structure of that table is as follows:
+    You created the `payment_users` table in Unit 3. As a reminder, the structure of that table is as follows:
 
     ```sql
     /*
@@ -231,13 +231,13 @@ Before attempting to ingest data from any file, you must understand the structur
     */
     ```
 
-    Based on the observed structure of the `users.csv` file, the data appears to align with what is expected, and you should be able to load the `payment_users` table without issue.
+    Based on the observed structure of the `users.csv` file, the data appears to align with what's expected, and you should be able to load the `payment_users` table without issue.
 
 ## Extract data from files in blob storage
 
-Now that you understand the data contained in the file, you can fulfill Woodgrove Bank's request to bulk load their historical data from files in an Azure Blob Storage account. The `pg_azure_storage` extension provides bulk load capabilities by extending the native PostgreSQL `COPY` command to make it capable of handling Azure Blob Storage resource URLs. This feature is enabled by default and can be managed using the `azure_storage.enable_copy_command` setting.
+Now that you understand the data contained in the file, you can fulfill Woodgrove Bank's request to bulk load their historical data from files in an Azure Blob Storage account. The `pg_azure_storage` extension provides bulk load capabilities by extending the native PostgreSQL `COPY` command to make it capable of handling Azure Blob Storage resource URLs. This feature is enabled by default, and you can manage it using the `azure_storage.enable_copy_command` setting.
 
-1. Using the extended `COPY` command, run the following to ingest data from the `users.csv` into the `payment_users` table, making sure to replace the `{STORAGE_ACCOUNT_NAME}` token with the unique name of the storage account you created above.
+1. Using the extended `COPY` command, run the following command to ingest data from the `users.csv` into the `payment_users` table, making sure to replace the `{STORAGE_ACCOUNT_NAME}` token with the unique name of the storage account you created above.
 
     ```sql
     -- Bulk load data from the user.csv file in Blob Storage into the payment_users table
@@ -264,7 +264,7 @@ Now that you understand the data contained in the file, you can fulfill Woodgrov
 
     Congratulations! You've successfully extended your Azure Cosmos DB for PostgreSQL database and used the `pg_azure_storage` extension to ingest file data from a secure container in Azure Blob Storage into a distributed table.
 
-3. In the Cloud Shell, run the following command to disconnect from your database.
+3. In the Cloud Shell, run the following command to disconnect from your database:
 
     ```sql
     \q
@@ -272,12 +272,14 @@ Now that you understand the data contained in the file, you can fulfill Woodgrov
 
 ## Clean up
 
-It's crucial that you clean up any unused resources. You're charged for the configured capacity, not how much the database is used. If you didn't delete your resource group in Unit 7 - Exercise - Data distribution, follow these instructions:
+It's crucial that you clean up any unused resources. You're charged for the configured capacity, not how much the database is used. Use the following procedure to delete your resource group along with the resources you created for this module.
 
 1. Open a web browser and navigate to the [Azure portal](https://portal.azure.com/).
 
-2. In the left-hand navigation menu, select **Resource Groups**, and then select the resource group you created as part of the exercise in Unit 4.
+1. In the left-hand navigation menu, select **Resource Groups**, and then select the resource group you created as part of the exercise in Unit 4.
 
-3. In the **Overview** pane, select **Delete resource group**.
+1. In the **Overview** pane, select **Delete resource group**.
 
-4. Enter the name of the resource group you created to confirm and then select **Delete**.´
+1. Enter the name of the resource group you created to confirm and then select **Delete**.
+
+1. Select **Delete** again to confirm deletion.

@@ -6,8 +6,8 @@ metadata:
   ms.date: 10/15/2020
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: windows-server
 title: Customize Windows Server IaaS Virtual Machine images
 summary: You'll be able to create new VMs from generalized images and use Azure Image Builder templates to create and manage images in Azure.
 abstract: |
@@ -25,7 +25,7 @@ prerequisites: |
   - Core Microsoft compute, storage, networking, and virtualization technologies.
   - On-premises resiliency Windows Server-based compute and storage technologies.
   - Implementing and managing infrastructure as a service (IaaS) services in Azure.
-  - Azure Active Directory (Azure AD).
+  - Microsoft Entra ID.
   - Security-related technologies (firewalls, encryption, multi-factor authentication).
   - Windows PowerShell scripting.
   - Automation and monitoring.

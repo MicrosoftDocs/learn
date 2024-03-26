@@ -4,10 +4,9 @@ metadata:
   title: Capture strategic motivation
   description: Capture strategic motivation.
   ms.date: 04/25/2022
-  author: BrianBlanchard
-  ms.author: brblanch
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 title: Capture strategic motivation
 durationInMinutes: 10
 content: |

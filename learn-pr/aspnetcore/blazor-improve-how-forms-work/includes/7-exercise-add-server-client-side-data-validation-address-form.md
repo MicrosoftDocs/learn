@@ -1,5 +1,4 @@
-
-Blazor can bind forms to models in your application. If you decorate those models with data annotations, you can get client and server-side validations without writing more code.
+Blazor can bind forms to models in your application. If you decorate those models with data annotations, you can get client- and server-side validations without writing more code.
 
 The app correctly doesn't place orders when a client doesn't enter a name and some address fields. The team would like you to enhance the validations to include more of the fields. They'd also like to have some minimum lengths and character validation.
 
@@ -14,7 +13,7 @@ In this exercise, you'll replace the current server-side validation to use data 
     using System.ComponentModel.DataAnnotations;
     ```
 
-1. For each field that needs to be required add a data annotation.
+1. For each required field, add a data annotation.
 
     ```csharp
     public class Address
@@ -62,9 +61,9 @@ In this exercise, you'll replace the current server-side validation to use data 
 
 ## Test the new data annotation validations
 
-1. In Visual Studio Code press <kbd>F5</kbd>, or from the **Run** menu select **Start Debugging**.
+1. In Visual Studio Code, press <kbd>F5</kbd> or select **Run** > **Start Debugging**.
 
-    Try to order some pizzas without entering any information. Observe the detailed error messages for each field.
+    Try to order some pizzas without entering any information, then with incomplete information. Observe the detailed error messages for each field.
 
     :::image type="content" source="../media/7-show-validation-errors.png" alt-text="Screenshot of the error messages for each field.":::
 
@@ -84,7 +83,7 @@ In this exercise, you'll replace the current server-side validation to use data 
     ```
 
 1. In the file explorer, expand **Shared**, then select **AddressEditor.razor**.
-1. Below each field add a custom validation message.
+1. Below each field, add a custom validation message.
 
     ```razor
     <div class="form-field">
@@ -166,7 +165,7 @@ In this exercise, you'll replace the current server-side validation to use data 
 
 ## Test the new data annotation validations
 
-1. In Visual Studio Code press <kbd>F5</kbd>, or from the **Run** menu select **Start Debugging**.
+1. In Visual Studio Code, press <kbd>F5</kbd> or select **Run** > **Start Debugging**.
 
     :::image type="content" source="../media/7-active-validation-error-messages.gif" alt-text="Animated gif showing the error messages for each field being displayed when the data is invalid.":::
 
@@ -207,7 +206,7 @@ In this exercise, you'll replace the current server-side validation to use data 
     } 
     ```
 
-1. In Visual Studio Code press <kbd>F5</kbd>, or from the **Run** menu select **Start Debugging**.
+1. In Visual Studio Code, press <kbd>F5</kbd> or select **Run** > **Start Debugging**.
 
     :::image type="content" source="../media/7-restored-generic-error-message.png" alt-text="Screenshot of the overall error message being shown.":::
 
@@ -285,7 +284,7 @@ Would a better user experience be a customer can't submit their order until they
     }    
     ```
 
-1. In Visual Studio Code press <kbd>F5</kbd>, or from the **Run** menu select **Start Debugging**.
+1. In Visual Studio Code, press <kbd>F5</kbd> or select **Run** > **Start Debugging**.
 
     :::image type="content" source="../media/7-disabled-button.gif" alt-text="Animated gif showing that the Place order button is disabled until all the fields have correct values.":::
 

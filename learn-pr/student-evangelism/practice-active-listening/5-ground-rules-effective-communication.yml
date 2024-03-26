@@ -6,9 +6,8 @@ metadata:
   description: In this unit, you'll learn to set ground rules for effective communication and to avoid friction and misunderstanding.
   ms.date: 09/07/2021
   author: interurban
-  ms.author: jadenyer
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: chnoring
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 12
 content: |

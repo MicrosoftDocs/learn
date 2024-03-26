@@ -1,23 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.build-azure-machine-learn-custom-skill-for-azure-cognitive-search
 metadata:
-  title: Build an Azure Machine Learning custom skill for Azure Cognitive Search
-  description: "Build an Azure Machine Learning custom skill for Azure Cognitive Search"
-  ms.date: 11/15/2022
+  title: Build an Azure Machine Learning custom skill for Azure AI Search
+  description: "Build an Azure Machine Learning custom skill for Azure AI Search."
+  ms.date: 09/27/2023
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Build an Azure Machine Learning custom skill for Azure Cognitive Search
+  ms.author: berryivor
+  ms.topic: module-standard-task-based
+  ms.service: cognitive-search
+title: Build an Azure Machine Learning custom skill for Azure AI Search
 summary: Custom skills allow you to enhance datasets as they pass through the enrichment pipeline. Azure Machine Learning can build custom models for regression or classification to enrich your search indexes.
 abstract: |
   In this module, you'll learn how to:
-  - Understand how to use a custom Azure Machine Learning skillset
-  - Use Azure Machine Learning to enrich Azure Cognitive Search indexes
+  - Understand how to use a custom Azure Machine Learning skillset.
+  - Use Azure Machine Learning to enrich Azure AI Search indexes.
 prerequisites: |
   *   Familiarity with Microsoft Azure
   *   Application development experience with Python
-  *   Experience of building a basic search solution with Azure Cognitive Search. If you haven't completed the [Create an Azure Cognitive Search](/training/modules/create-azure-cognitive-search-solution) solution module, you should do so before starting this module
+  *   Experience of building a basic search solution with Azure AI Search. If you haven't completed the [Create an Azure AI Search](/training/modules/create-azure-cognitive-search-solution) solution module, you should do so before starting this module.
 iconUrl: /training/achievements/build-azure-machine-learn-custom-skill-for-azure-cognitive-search.svg
 levels:
 - intermediate

@@ -1,1 +1,0 @@
-Your team will be responsible for developing and deploying custom code to Azure IoT Edge devices as part of the company's IoT solution. Understanding of the offline and local storage capabilities of the Azure IoT Edge environment helps to ensure that your team is prepared for their upcoming development tasks.

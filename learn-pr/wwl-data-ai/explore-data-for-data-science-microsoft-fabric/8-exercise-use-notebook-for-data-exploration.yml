@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.explore-data-for-data-science-microsoft-fabric.exercise-use-notebook-for-data-exploration
+title: 'Exercise: Use notebook for data exploration in Microsoft Fabric'
+metadata:
+  title: 'Exercise: Use notebook for data exploration in Microsoft Fabric'
+  description: "Learn how to perform data exploration using Microsoft Fabric notebook."
+  ms.date: 09/19/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric 
+durationInMinutes: 30
+content: |
+  [!include[](includes/8-exercise-use-notebook-for-data-exploration.md)]

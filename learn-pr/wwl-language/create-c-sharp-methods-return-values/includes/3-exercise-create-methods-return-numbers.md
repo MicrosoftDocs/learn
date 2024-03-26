@@ -1,7 +1,4 @@
-
-
-
-You may often need to return numbers from methods and use the results for other tasks. In this brief exercise, you'll practice returning `int` and `double` data types, and capturing the return values.
+You might often need to return numbers from methods and use the results for other tasks. In this brief exercise, you'll practice returning `int` and `double` data types, and capturing the return values.
 
 ## Create a method that returns an integer
     
@@ -109,7 +106,7 @@ In this task, you'll run our application from the Integrated Terminal and verify
 
     double VndToUsd(int vnd) 
     {
-        int rate = 23500;
+        double rate = 23500;
         return vnd / rate;
     }
     ```

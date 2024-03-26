@@ -7,8 +7,7 @@ metadata:
   ms.date: 05/19/2020
   author: dnblankedelman
   ms.author: dnb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
   ms.contributors:
   - dnb-06032020
   ms.custom:
@@ -27,7 +26,7 @@ roles:
 products: 
 - azure
 subjects:
-- modern-work
+- business-applications
 modules:
 - learn.improve-reliability-introduction
 - learn.improve-reliability-monitoring

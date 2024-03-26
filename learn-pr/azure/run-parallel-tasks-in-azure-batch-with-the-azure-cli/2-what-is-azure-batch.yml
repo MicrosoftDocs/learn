@@ -5,9 +5,9 @@ metadata:
   description: What is Azure Batch?
   ms.date: 04/30/2019
   author: lauradolan
-  ms.author: ladolan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: jushiman
+  ms.topic: unit
+  ms.custom:
 title: What is Azure Batch?
 durationInMinutes: 6
 content: |

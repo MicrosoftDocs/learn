@@ -3,22 +3,23 @@ uid: learn.intro-to-blazor
 metadata:
   moduleType: introduction        # Do not edit: type must be 'introduction'
   title: Introduction to Web Development with Blazor          # Do not edit: title must be "Introduction to (product)"
-  description: "Evaluate whether Blazor is appropriate to build your next web application, learn how pages and components of Blazor work to build a web application and evaluate when to use Blazor WebAssembly or Blazor Server"             # Copy your 'evaluate' Learning Objective here (see below)
-  ms.date: 09/01/2022             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  description: "Evaluate whether Blazor is appropriate for your next web development project and learn how Blazor works."             # Copy your 'evaluate' Learning Objective here (see below)
+  ms.date: 01/12/2024             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: csharpfritz      # GitHub ID of the Microsoft employee either authoring or project-managing this content
-  ms.author: jefritz           # Alias     of the Microsoft employee either authoring or project-managing this content
-  ms.topic: interactive-tutorial  # Do not edit: value must be "interactive-tutorial"
-  ms.prod: learning-blazor         # Edit as appropriate for your portfolio area
+  ms.author: jefritz           # Alias of the Microsoft employee either authoring or project-managing this content
+  ms.manager: markl
+  ms.topic: module
+  ms.service: dotnet # Edit as appropriate for your portfolio area
+  ms.technology: blazor 
 title: Introduction to Web Development with Blazor
-summary: "Discover the key features of the Blazor framework, pages, and components to make your next application.  "
+summary: "Discover the key features of Blazor for building your next web app."
 abstract: |
   By the end of this module, you'll be able to:
-    - Evaluate whether Blazor is appropriate to build your next web application.
-    - Describe how Pages and Components of Blazor work to build a web application.
-    - Evaluate when to use Blazor WebAssembly or Blazor Server
+    - Evaluate whether Blazor is appropriate for your next web development project.
+    - Describe how Blazor works for building web apps.
 prerequisites: |
   - Ability to write HTML at a novice level
-  - Familiarity with C# and Razor templates from ASP.NET or ASP.NET Core
+  - Familiarity with basic C#
   - Familiarity with web server and browser interactions
 iconUrl: /training/achievements/intro-to-blazor.svg
 levels:
@@ -29,11 +30,10 @@ products:
   - blazor
   - dotnet
   - aspnet-core
-subjects:
-- development-tools
 units:
 - learn.intro-to-blazor.introduction
 - learn.intro-to-blazor.what-is-blazor
+- learn.intro-to-blazor.how-blazor-works
 - learn.intro-to-blazor.when-to-use-blazor
 - learn.intro-to-blazor.knowledge-check
 - learn.intro-to-blazor.summary

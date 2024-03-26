@@ -2,14 +2,14 @@
 uid: learn.wwl.plan-sap-hana-azure-large-instances-deployments
 metadata:
   title: Plan SAP HANA on Azure (Large Instances) deployments
-  description: "This module covers deploying SAP HANA on Azure (Large Instances) using Azure resources that include virtual machines, virtual networks, storage accounts, and Azure AD. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
+  description: "This module covers deploying SAP HANA on Azure (Large Instances) using Azure resources that include virtual machines, virtual networks, storage accounts, and Microsoft Entra ID. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
   ms.date: 12/08/2021
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Plan SAP HANA on Azure (Large Instances) deployments
-summary: Deploy SAP HANA on Azure (Large Instances) using Azure resources that include virtual machines, virtual networks, storage accounts, and Azure AD.
+summary: Deploy SAP HANA on Azure (Large Instances) using Azure resources that include virtual machines, virtual networks, storage accounts, and Microsoft Entra ID.
 abstract: |
   After completing this module, you will be able to:
   - Explore SAP HANA on Azure (Large Instances) IaaS considerations.
@@ -30,7 +30,7 @@ products:
 subjects:
 - cloud-computing
 - data-engineering
-- data-warehousing
+- data-storage
 units:
 - learn.wwl.plan-sap-hana-azure-large-instances-deployments.introduction
 - learn.wwl.plan-sap-hana-azure-large-instances-deployments.explore-compute-considerations

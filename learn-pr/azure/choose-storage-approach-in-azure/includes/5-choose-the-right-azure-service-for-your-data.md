@@ -31,7 +31,7 @@ Even with data that's replicated around the world, you can choose from one of fi
 
 Azure SQL Database would be an excellent choice for this dataset if you could identify the subset of properties that are common for most of the products and the variable properties that might not exist in some products. You can use Azure SQL Database to combine structured data in the columns and semi-structured data stored as JSON columns that can be easily extended. Azure SQL Database can provide many of the same benefits of Azure Cosmos DB, but it provides little benefit if the structure of your data is changing in different entities and you can't predefine a set of common properties that are repeated in most of the entities. Unlike Azure Cosmos DB, which indexes every property in the documents, in Azure SQL Database, you need to explicitly define what properties in semi-structured documents should be indexed. Azure Cosmos DB is a better choice for highly unstructured and variable data in which you can't predict what properties should be indexed. Azure SQL Database supports OLTP.
 
-Other Azure services, like Azure Table Storage, Apache HBase as a part of Azure HDInsight, and Azure Cache for Redis, can also store NoSQL data. In this scenario, users will want to query on multiple fields, so Azure Cosmos DB is a better fit. Azure Cosmos DB indexes every field by default, whereas other Azure services are limited in the data they index. Querying on non-indexed fields results in reduced performance.
+Other Azure services, like Azure Table storage, Apache HBase in Azure HDInsight, and Azure Cache for Redis, can also store NoSQL data. In this scenario, users will want to query on multiple fields, so Azure Cosmos DB is a better fit. Azure Cosmos DB indexes every field by default, whereas other Azure services are limited in the data they index. Querying on non-indexed fields results in reduced performance.
 
 ## Photos and videos
 
@@ -41,7 +41,7 @@ Other Azure services, like Azure Table Storage, Apache HBase as a part of Azure 
 
 - Retrieve only by ID.
 - Customers require a high number of read operations with low latency.
-- Create operations and update operations will be somewhat infrequent and can have higher latency than read operations.
+- Create operations and update operations will be less frequent and can have higher latency than read operations.
 
 **Latency and throughput**: Retrievals by ID need to support low latency and high throughput. Create operations and update operations can have higher latency than read operations.
 
@@ -49,13 +49,13 @@ Other Azure services, like Azure Table Storage, Apache HBase as a part of Azure 
 
 ### Recommended service: Azure Blob Storage
 
-Azure Blob Storage supports storing files like photos and videos. It also works with Azure Content Delivery Network by caching the most frequently used content, and then storing it on edge servers. Azure Content Delivery Network reduces latency in serving up those images to your users.
+Azure Blob Storage supports storing files like photos and videos. It also works with Azure Content Delivery Network by caching the most frequently used content, and then storing it on edge servers. Azure Content Delivery Network reduces latency when serving those images to your users.
 
-In Azure Blob Storage, you also can move images from the hot storage tier to the cool storage tier or archive storage tier, to reduce costs and focus throughput on the most frequently viewed images and videos.
+In Azure Blob Storage, you can also move images from the hot storage tier to the cool storage tier or archive storage tier, to reduce costs and focus throughput on the most frequently viewed images and videos.
 
 #### Why not other Azure services?
 
-You could upload your images to Azure App Service, so that the same server that's running your app serves up your images. This solution would work if you didn't have many files. But if you have lots of files and a global audience, you'll get better performance results by using Azure Blob Storage with Azure Content Delivery Network.
+You could upload your images to Azure App Service, so that the same server that's running your app serves up your images. This solution would work if you didn't have many files. But if you have lots of files and a global audience, you'll get better performance by using Azure Blob Storage with Azure Content Delivery Network.
 
 ## Business data
 
@@ -73,6 +73,6 @@ Business data most likely will be queried by business analysts, who are more lik
 
 #### Why not other Azure services?
 
-Azure Synapse supports OLAP solutions and SQL queries, but your business analysts will need to perform cross-database queries, which Azure Synapse doesn't support.
+Azure Synapse Analytics supports OLAP solutions and SQL queries, but your business analysts will need to perform cross-database queries, which Azure Synapse Analytics doesn't support.
 
 Azure Stream Analytics is a great way to analyze data and transform it into actionable insights, but its focus is on real-time data that is streaming in. In this scenario, the business analysts are looking at historical data only.

@@ -1,6 +1,6 @@
 When you consider a move to the cloud, it's essential in your role as an Azure developer, solution architect, or administrator to know the fundamentals of how your network works. The next step in understanding the composition of a network is to take a detailed look at the interoperability of your network. This knowledge applies whether it's your organization's network, or more extensive networks like the web. All networks are built on the same principles. 
 
-In this unit, you'll learn about the main aspects of network communications and why networks are built by using the Transmission Control Protocol/Internet Protocol (TCP/IP). You'll understand the differences between Internet Protocol address standards. Finally, you'll explore subnetting, the Domain Name System (DNS), ports, and the use and role of private IP addresses.
+In this unit, we examine the main aspects of network communications and why networks are built by using the Transmission Control Protocol/Internet Protocol (TCP/IP). Then, we discuss the differences between Internet Protocol address standards. Finally, we explore subnetting, the Domain Name System (DNS), ports, and the use and role of private IP addresses.
 
 ## What is the Address Resolution Protocol?
 
@@ -10,13 +10,13 @@ There's also the Reverse Address Resolution Protocol (RARP), which retrieves an 
 
 ## What is TCP/IP?
 
-The Transmission Control Protocol/Internet Protocol is a collection of different communication protocols that support and define how network-enabled devices interconnect with each other over an IP-based network. At its heart are two key protocols: TCP and IP. TCP/IP makes the internet possible, as well as private and public networks like intranets and extranets.
+The Transmission Control Protocol/Internet Protocol is a collection of different communication protocols that support and define how network-enabled devices interconnect with each other over an IP-based network. At its heart are two key protocols: TCP and IP. TCP/IP makes the internet possible, and private and public networks like intranets and extranets.
 
 TCP/IP defines the way data is shared between network-enabled devices by defining the end-to-end communication process. It manages how the message is broken down into packets of data, which are sometimes known as datagrams. TCP/IP also determines how the packet is addressed and transmitted, routed, and received. TCP/IP can determine the most efficient route across a network.
 
 The TCP/IP model is designed to be stateless. This design means the network stack treats each request as new because it isn't related to the previous request. One part of the TCP/IP model isn't stateless. The transport layer operates in a stateful mode because it maintains a connection until all the packets in the message are received.
 
-TCP/IP is an open standard. It's governed, but it's not owned by any one organization, so it works with all operating systems, networks, and hardware.
+TCP/IP is an open standard. It's governed, but no single organization owns it, so it works with all operating systems, networks, and hardware.
 
 ### TCP/IP model layers
 
@@ -24,12 +24,12 @@ The TCP/IP model is made up of four distinct layers. Each layer uses a different
 
 - **Application layer**: The application layer is responsible for determining which communication protocols are used. This layer includes HyperText Transfer Protocol (HTTP), DNS, File Transfer Protocol (FTP), Internet Message Access Protocol (IMAP), Lightweight Directory Access Protocol (LDAP), Post Office Protocol (POP), Simple Mail Transfer Protocol (SMTP), Simple Network Management Protocol (SNMP), Secure Shell (SSH), Telnet, and TLS/SSL.
 - **Transport layer**: This layer splits the application data into manageable ordered chunks by using the right port for the application protocol that's used. The protocols associated with this layer are TCP and the User Datagram Protocol (UDP).
-- **Internet layer**: Also known as the network layer, this layer ensures the data packet gets to its destination. The protocols associated with this layer are IP, IPv4, IPv6, Internet Control Message Protocol (ICMP), and Internet Protocol Security (IPsec).
+- **Internet layer**: Also called the network layer, this layer ensures the data packet gets to its destination. The protocols associated with this layer are IP, IPv4, IPv6, Internet Control Message Protocol (ICMP), and Internet Protocol Security (IPsec).
 - **Network access layer**: This layer is responsible for defining how the data is sent across the network. The protocols associated with this layer are ARP, MAC, Ethernet, digital subscriber line (DSL), and Integrated Services Digital Network (ISDN).
 
 ## What are the Internet Protocol standards?
 
-Recall from earlier that the Internet Protocol isn't concerned about the order in which the packets are sent or received. It also doesn't guarantee that a packet will be delivered. The Internet Protocol only provides a logical addressing system that's used to route and forward messages to their destinations.
+Recall from earlier that the Internet Protocol isn't concerned about the order in which the packets are sent or received. It also doesn't guarantee a packet's delivery. The Internet Protocol only provides a logical addressing system that's used to route and forward messages to their destinations.
 
 Today, there are two Internet Protocol versions that work within networks.
 
@@ -45,7 +45,7 @@ The structure of an IPv4 address is four decimal numbers in the range of 0 to 25
 
 There are two parts to an IP address, the network and the host. Let's use the address `192.168.0.1` as an example.
 
-The network part of an IP address covers the first set of decimal numbers. In the example, that's `192.168.0`. This number is unique to the network and specifies the class of the network. There are a number of network classes available, described next.
+The network part of an IP address covers the first set of decimal numbers. In the example, that's `192.168.0`. This number is unique to the network and specifies the class of the network. There are many network classes available, as described in the following section.
 
 The host part of the IP address covers the next set of decimal numbers. In the example, that's `1`. This number represents the device and has to be unique within the network to avoid address conflicts. Each device on a network segment must have a unique address.
 
@@ -63,9 +63,9 @@ The Internet Protocol's local address space is split into five logical classes o
 
 For classes A, B, and C, the start and end IP addresses are reserved and shouldn't be used. Class D is reserved for multicast traffic only. Class E is reserved and can't be used on public networks like the internet.
 
-In the previous table, the last column is marked as a subnet mask. The subnet mask uses the same format of the IP address, but its purpose is to identify valid IP addresses in an IP range.
+In the previous table, the last column is marked as a subnet mask. The subnet mask uses the same format as the IP address, but its purpose is to identify valid IP addresses in an IP range.
 
-For example, assume you have an IP address range that starts at `192.168.0.1`, and you have a subnet of `255.255.255.0`. You'll apply the subnet mask in the following way. For each address segment value specified as 255 in the mask, the corresponding address segment is static. When you want to pick an IP address, you have to pick an address that matches `192.168.0`. Where the segment has a value of `0`, you're allowed to use any value between 0 to 255. A subnet mask of `255.255.255.0` gives an IP address range of `192.168.0.0` to `192.168.0.255`, which are valid values to select.
+For example, assume you have an IP address range that starts at `192.168.0.1`, and you have a subnet of `255.255.255.0`. You apply the subnet mask in the following way. For each address segment value specified as 255 in the mask, the corresponding address segment is static. When you want to pick an IP address, you have to pick an address that matches `192.168.0`. Where the segment has a value of `0`, you're allowed to use any value between 0 to 255. A subnet mask of `255.255.255.0` gives an IP address range of `192.168.0.0` to `192.168.0.255`, which are valid values to select.
 
 ### What is a subnet?
 
@@ -102,7 +102,7 @@ Several solutions were introduced to mitigate the threat of running out of IP ad
 
 ## Private IP addressing
 
-In classes A, B, and C, a range of IP addresses are set aside for private networks. These IP ranges aren't accessible via the internet. All public routers ignore any packets sent to them that contain such an address.
+In classes A, B, and C, a range of IP addresses are set aside for private networks. These IP ranges aren't accessible via the internet. All public routers ignore any packets sent to them containing such an address.
 
 | Name | CIDR block | Address range | Number of addresses | Classful description |
 | ------------ | ------------------------------------------------------------ | ----------------------------- | ------------------- | ------------------------------------------------------------ |
@@ -116,7 +116,7 @@ The only way to connect two private networks in different geographical areas is 
 
 ### IPv6
 
-Internet Protocol version 6 is the latest version of the IP standard. IPv6 was designed and developed by the Internet Engineering Task Force (IETF) to address the problem of IPv4 logical address exhaustion and to eventually replace the IPv4 standard. It was adopted as a recognized internet standard in July 2017.
+Internet Protocol version 6 is the latest version of the IP standard. The Internet Engineering Task Force (IETF), designed and developed IPv6 to address the problem of IPv4 logical address exhaustion. It was intended to eventually replace the IPv4 standard. It was adopted as a recognized internet standard in July 2017.
 
 IPv6 uses a 128-bit address space, which allows 2<sup>128</sup> addresses. This amount is approximately 7.9x10<sup>28</sup> times more than IPv4.
 
@@ -144,7 +144,7 @@ The shortened version of the IPv6 example is `2001:db8::8a2e:370:7334`. Notice t
 
 The Domain Name System is a decentralized lookup service that translates a human-readable domain name or URL into the IP address of the server that's hosting the site or service. The worldwide distributed nature of DNS is a vital component of the internet. DNS has been in use since its inception in 1985.
 
-A DNS server serves two purposes. The first is to maintain a cache of recently searched-for domain names, which improves performance and reduces network traffic. The second is to act as the start of authority (SOA) for all the domains under it. When a DNS server is looking to resolve a domain name that isn't held in its cache, it starts with the highest level, the dot, and then works down the subdomains until it finds the DNS server acting as the SOA. Once found, it stores the IP address of the domain in its local cache.
+A DNS server serves two purposes. The first is to maintain a cache of recently searched-for domain names, which improves performance and reduces network traffic. The second is to act as the start of authority (SOA) for all the domains under it. When a DNS server is looking to resolve a domain name that isn't held in its cache. It starts with the highest level, the dot, and then works down the subdomains until it finds the DNS server acting as the SOA. Once found, it stores the IP address of the domain in its local cache.
 
 The DNS also holds specific records that relate to the domain. These records include the SOA, IP addressing (A and AAAA), SMTP email (MX), name servers (NS), and domain name alias (CNAME) records.
 
@@ -154,9 +154,9 @@ While many of the concepts discussed here are technical, Azure builds and extend
 
 ### Azure DNS
 
-Azure DNS is a service for hosting registered domain names by using the Azure infrastructure. You can use Azure DNS to manage your DNS records, such as A, AAAA, CNAME, SOA, NS, and MX, by using your regular Azure sign-in credentials.
+Azure DNS is a service for hosting registered domain names by using the Azure infrastructure. You can use Azure DNS to manage your DNS records. By using your regular Azure sign-in credentials, you can manage records such as A, AAAA, CNAME, SOA, NS, and MX.
 
-Azure DNS won't replace domain registrars, where you register and purchase domains.
+Azure DNS doesn't replace domain registrars, where you register and purchase domains.
 
 One of the core benefits provided by Azure DNS is the alias record, which can use either an A, AAAA, or CNAME record. By using the alias, you can route traffic to an Azure resource.
 

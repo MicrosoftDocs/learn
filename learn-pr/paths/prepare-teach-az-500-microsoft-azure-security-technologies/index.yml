@@ -6,8 +6,7 @@ metadata:
   ms.date: 11/15/2022
   author: wwlpublish
   ms.author: tsheppard
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Prepare to teach AZ-500 Microsoft Azure Security Technologies
 prerequisites: |
   * None

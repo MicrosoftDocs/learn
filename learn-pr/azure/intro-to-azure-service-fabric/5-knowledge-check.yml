@@ -4,12 +4,11 @@ title: Knowledge check
 
 metadata:
   title: Knowledge check
-  description: Knowledge check
-  ms.date: 4/11/2022
+  description: Check what you learned about Azure Service Fabric.
+  ms.date: 01/03/2024
   author: tomvcassidy
   ms.author: tomcassidy
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 
 durationInMinutes: 5
 content: |
@@ -18,7 +17,7 @@ quiz:
 
   questions:
   
-  - content: "Service Fabric supports:"
+  - content: "Azure Service Fabric supports:"
     choices:
     - content: "Stateless services"
       isCorrect: false
@@ -30,7 +29,7 @@ quiz:
       isCorrect: true
       explanation: "Service Fabric provides a sophisticated, lightweight runtime that supports stateless and stateful microservices."
 
-  - content: "Suppose an event management company's website needs persisted storage. Which feature of Service Fabric should the company use?"
+  - content: "Suppose an event management company's website needs persisted storage. Which feature of Azure Service Fabric should the company use?"
     choices:
     - content: "Use Azure Monitor"
       isCorrect: false
@@ -42,7 +41,7 @@ quiz:
       isCorrect: false
       explanation: "Scaling horizontally will add more nodes to your Service Fabric cluster."
 
-  - content: "What environments does Service Fabric support?"
+  - content: "What environments does Azure Service Fabric support?"
     choices:
     - content: "Service Fabric supports building on Azure, on-premises in Windows and Linux, and other cloud platforms, including AWS."
       isCorrect: true

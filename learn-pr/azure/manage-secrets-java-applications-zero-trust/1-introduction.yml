@@ -6,11 +6,11 @@ metadata:
   description: An overview of managing secrets in a Java application.
   author: judubois
   ms.author: judubois
-  ms.date: 12/23/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 02/20/2024
+  ms.topic: unit
   ms.custom:
-  - team=cloud_advocates
+    - team=cloud_advocates
+    - devx-track-extended-java
   ms.contributors:
   - judubois-12292021
 durationInMinutes: 3

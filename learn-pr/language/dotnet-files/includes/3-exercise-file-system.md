@@ -1,6 +1,6 @@
 You can use .NET to find and return information about files and folders.
 
-Tailwind Traders has many physical stores all over the world. Every night, each store creates a file named *sales.json* that contains the total for all sales for that day. These files are organized in folders by store ID.
+Tailwind Traders has many physical stores all over the world. Every night, each store creates a file named *sales.json* that contains the total of all sales for that day. These files are organized in folders named with the store ID.
 
 > [!NOTE]
 > This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools) and [Visual Studio Code](https://code.visualstudio.com/) for local development. After completing this module, you can apply the concepts you've learned by using a development environment like Visual Studio (Windows) or Visual Studio for Mac (macOS), or continue development in Visual Studio Code (Windows, Linux, & macOS).
@@ -9,9 +9,9 @@ Tailwind Traders has many physical stores all over the world. Every night, each 
 
 ## Clone the project
 
-In this exercise, you'll write a .NET program that searches a directory and its subdirectories for files named *sales.json*.
+In this exercise, you write a .NET program that searches a directory and its subdirectories for files named *sales.json*.
 
-A starter project has already been created for you. You'll clone it using the integrated terminal in Visual Studio Code.
+A starter project has already been created for you. You clone it using the integrated terminal in Visual Studio Code.
 
 1. Open Visual Studio Code.
 
@@ -50,7 +50,7 @@ A starter project has already been created for you. You'll clone it using the in
 
 ## Find the sales.json files
 
-The following tasks will create a program to find all the sales.json files in all folders of the `mslearn-dotnet-files` project.
+The following tasks create a program to find all the sales.json files in all folders of the `mslearn-dotnet-files` project.
 
 ### Include the System.IO namespace
 

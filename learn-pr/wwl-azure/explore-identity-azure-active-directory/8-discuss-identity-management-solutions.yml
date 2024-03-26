@@ -4,11 +4,10 @@ title: Discuss identity management solutions
 metadata:
   title: Discuss identity management solutions
   description: "Discuss identity management solutions"
-  ms.date: 03/16/2023
+  ms.date: 01/31/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/8-discuss-identity-management-solutions.md)]

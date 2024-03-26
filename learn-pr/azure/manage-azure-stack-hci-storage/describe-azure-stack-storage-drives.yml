@@ -5,10 +5,9 @@ metadata:
   title: Describe Azure Stack HCI storage drives 
   description: Understand Azure Stack HCI architecture and explore its main components, beginning with storage drives.
   ms.date: 03/30/2022
-  author: mpolicht
-  ms.author: nedelgad
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: JasonGerend
+  ms.author: jgerend
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/describe-azure-stack-storage-drives.md)]

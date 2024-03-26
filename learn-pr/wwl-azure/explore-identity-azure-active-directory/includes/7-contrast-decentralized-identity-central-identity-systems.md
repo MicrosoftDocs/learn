@@ -1,5 +1,3 @@
-
-
 ### Centralized Identity
 
 Centralized Identity Management or Central Identity System is a single identity tool where credentials are stored and managed, to provide authentication and authorization capabilities. This system can be on-premises or cloud based.  The system is centrally managed by an identity authority or administrator. The central identity system can then be used to offer verified access to tools, data, and other resources.
@@ -10,7 +8,7 @@ Centralized Identity Management or Central Identity System is a single identity 
 - Management is by single authority
    - Admin or Admin group
 - Used for identity and access management
-- Example: Azure Active Directory (Azure AD)
+- Example: Microsoft Entra ID
 
 **Secure adaptive access** - Protect access to resources and data using strong authentication and risk-based adaptive access policies without compromising user experience.
 

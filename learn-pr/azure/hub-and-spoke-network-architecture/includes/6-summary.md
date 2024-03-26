@@ -1,4 +1,4 @@
-In this module, you've explored migrating your on-premises infrastructure to Azure by using the hub and spoke model. You know the components you need to create hub-spoke networks and how to secure them in Azure.
+In this module, you explored migrating your on-premises infrastructure to Azure by using the hub and spoke model. You learned the components you need to create hub-spoke networks and how to secure them in Azure.
 
 A hub-spoke architecture in Azure allows your business to quickly and easily adapt to new requirements. You can add spokes to segregate workloads with network security groups and Azure Firewall.
 

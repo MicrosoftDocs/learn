@@ -6,8 +6,7 @@ metadata:
   ms.date: 03/18/2022
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
 title: Describe pipelines and concurrency
 summary: This module describes parallel jobs and how to estimate their usage. Also, it presents Azure Pipelines for open-source projects, explores Visual Designer and YAML pipelines.
 abstract: |

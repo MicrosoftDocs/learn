@@ -1,19 +1,21 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-knowledge-mining-azure-cognitive-search
 metadata:
-  title: Implement knowledge mining with Azure Cognitive Search
-  description: Implement knowledge mining with Azure Cognitive Search
-  ms.date: 07/06/2022
+  title: Implement knowledge mining with Azure AI Search
+  description: Implement knowledge mining with Azure AI Search
+  ms.date: 10/12/2022
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Implement knowledge mining with Azure Cognitive Search
+  ms.author: berryivor
+  ms.topic: learning-path
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+title: Implement knowledge mining with Azure AI Search
 prerequisites: |
   - Familiarity with Microsoft Azure
   - Application development experience with C# or Python
 summary: |
-  Do you have information locked up in structured and unstructured data sources?  Using Azure Cognitive Search, you can extract key insights from this data, and enable applications to search and analyze them.
+  Do you have information locked up in structured and unstructured data sources?  Using Azure AI Search, you can extract key insights from this data, and enable applications to search and analyze them.
 iconUrl: /training/achievements/implement-knowledge-mining-with-azure-cognitive-search.svg
 levels:
 - intermediate
@@ -36,5 +38,7 @@ modules:
 - learn.wwl.build-azure-machine-learn-custom-skill-for-azure-cognitive-search
 - learn.wwl.search-data-outside-azure-platform-cognitive-search
 - learn.wwl.maintain-azure-cognitive-search-solution
+- learn.use-semantic-search
+- learn.improve-search-results-vector-search
 trophy:
   uid: learn.wwl.implement-knowledge-mining-azure-cognitive-search.trophy

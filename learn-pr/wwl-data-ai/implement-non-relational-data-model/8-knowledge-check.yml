@@ -4,15 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/06/2023
+  ms.date: 02/06/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 5
 quiz:
+  title: ""
   questions:
   - content: "Which of the following criteria would define a good candidate to embed two entities in a single document schema?"
     choices:

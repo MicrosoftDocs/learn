@@ -1,10 +1,10 @@
 In this module, you've learned how Microsoft Intune uses Conditional Access to make sure that only trusted users can access organizational resources on trusted devices using trusted apps. Here are some of the things you covered:
 
-- Adding assigned groups and dynamic groups to manually or automatically assign groups in Microsoft Intune.
-- The difference between user groups and device groups.
-- How trusted users can access organizational resources on trusted devices using trusted apps.
-- The common ways to use Conditional Access.
-- Configuring device security and managing security tasks for devices.
+- Adding assigned groups and dynamic groups to manually or automatically assign groups in Microsoft Intune
+- The difference between user groups and device groups
+- How trusted users can access organizational resources on trusted devices using trusted apps
+- The common ways to use Conditional Access
+- Configuring device security and managing security tasks for devices
 
 ## Next steps
 
@@ -24,4 +24,4 @@ For additional information about Microsoft Intune, see the following resources:
 - [Microsoft Intune documentation](/mem/?azure-portal=true)
 - [Conditional access with Intune](/mem/intune/protect/conditional-access)
 - [Conditional Access with co-management](/mem/configmgr/comanage/quickstart-conditional-access)
-- [Azure AD Conditional Access documentation](/azure/active-directory/conditional-access/)
+- [Microsoft Entra Conditional Access documentation](/azure/active-directory/conditional-access/)

@@ -1,5 +1,3 @@
-
-
 In this exercise, you'll calculate and store the average of the assignment scores from each student. Since you know the number of scored assignments for each student, the average is calculated by dividing the sum of the assignment scores by the number of assignments. To store the averages, you'll be using the Decimal data type.
 
 ## Create variables to store the average
@@ -20,7 +18,7 @@ In this task, you'll create a variable for each student that can be used to stor
 
     ```
 
-    Notice that you're only declaring the `decimal` variables and not initializing them. You chose the `decimal` type because you're representing an average grade and want to include a decimal place that wouldn't be available if you used an integer. This way, you can see if a student made a score of 89.9 and bump them up from a B to an A.
+    Notice that you're only declaring the `decimal` variables and not initializing them. You chose the `decimal` type because you were representing an average grade and want to include a decimal place that wouldn't be available if you used an integer. This way, you can see if a student made a score of 89.9 and bump them up from a B to an A.
 
     In the previous exercise, you initialized the integer variables so that you could immediately use them in your console output. In this case, these `decimal` variables will be initialized in the next step using calculations with your existing data, starting with Sophia's score.
 

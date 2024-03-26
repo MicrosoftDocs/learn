@@ -4,11 +4,10 @@ title: Examine a sample functional workflow
 metadata:
   title: Examine a sample functional workflow
   description: "Examine a sample functional workflow"
-  ms.date: 04/20/2023
+  ms.date: 12/29/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/4-examine-sample-functional-workflow.md)]

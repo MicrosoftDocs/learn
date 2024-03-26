@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.explore-availability-zones
+title: Explore availability zones
+metadata:
+  title: Explore availability zones
+  description: "Explore availability zones"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/12-explore-availability-zones.md)]

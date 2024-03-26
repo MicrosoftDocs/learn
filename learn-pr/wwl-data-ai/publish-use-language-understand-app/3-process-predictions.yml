@@ -4,11 +4,10 @@ title: Process predictions
 metadata:
   title: Process predictions
   description: "Process predictions"
-  ms.date: 10/12/2022
+  ms.date: 11/7/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

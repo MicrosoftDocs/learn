@@ -8,8 +8,7 @@ metadata:
   ms.date: 01/12/2022
   author: PageWriter-MSFT
   ms.author: prwilk
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 prerequisites: |
  - Experience designing a workload that includes core infrastructure technology such as data storage, compute, and networking
  - Good understanding of the quality principles provided in Azure Well-Architected Framework
@@ -21,8 +20,8 @@ roles:
 products: 
 - azure
 subjects:
-- high-availability-system
-- workloads
+- site-reliability-engineering
+- infrastructure
 - solution-design
 modules:
 - learn.azure-mission-critical

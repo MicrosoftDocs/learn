@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/20/2023
+  ms.date: 10/17/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -30,10 +29,10 @@ quiz:
     choices:
     - content: "Landscape"
       isCorrect: false
-      explanation: "That's incorrect. Both are individual SAP applications. SAP components can be based on traditional ABAP or Java technologies or a non-NetWeaver based application such as Business Objects."
+      explanation: "Incorrect. Both are individual SAP applications. SAP components can be based on traditional ABAP or Java technologies or a non-NetWeaver based application such as Business Objects."
     - content: "Component"
       isCorrect: true
-      explanation: "That's correct. Both are individual SAP applications. SAP components can be based on traditional ABAP or Java technologies or a non-NetWeaver based application such as Business Objects."
+      explanation: "Correct. Both are individual SAP applications. SAP components can be based on traditional ABAP or Java technologies or a non-NetWeaver based application such as Business Objects."
     - content: "Environment"
       isCorrect: false
-      explanation: "That's incorrect. Both are individual SAP applications. SAP components can be based on traditional ABAP or Java technologies or a non-NetWeaver based application such as Business Objects."
+      explanation: "Incorrect. Both are individual SAP applications. SAP components can be based on traditional ABAP or Java technologies or a non-NetWeaver based application such as Business Objects."

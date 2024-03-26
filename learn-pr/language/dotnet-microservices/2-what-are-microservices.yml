@@ -3,14 +3,14 @@ uid: learn.languages.dotnet-microservices.what-are-microservices
 title: What are microservices?
 metadata:
   title: What are microservices?
-  description: Today's application development and IT system management is driven by the cloud. Learn how microservices power cloud development.
-  ms.date: 05/03/2021
+  description: Learn how microservices power cloud-native development.
+  ms.date: 01/22/2024
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom:
-  - team=cloud_advocates
+    - team=cloud_advocates
+    - devx-track-dotnet
   ms.contributors:
   - masoucou-05122021
 durationInMinutes: 7
@@ -20,37 +20,38 @@ quiz:
   questions:
   - content: "Which of the following scenarios would be a candidate to become a microservice?"
     choices:
-    - content: "A web API that returns a list of pizzas"
+    - content: "A web API that returns a list of pizzas."
       isCorrect: true
-      explanation: "Correct, a microservice is a service that performs a single business purpose. In this case only returning a list of pizzas."
-    - content: "A web API and a website that return and display a list of pizzas"
+      explanation: "A microservice is a service that performs a single business purpose. In this case, returning only a list of pizzas."
+    - content: "A web API and a website that return and display a list of pizzas."
       isCorrect: false
-      explanation: "A microservice performs only a single business purpose. Here there are 2 business purposes being performed."
-    - content: "GitHub Actions used to deploy a website"
+      explanation: "A microservice performs only a single business purpose. Here, two business purposes are being performed."
+    - content: "A website that's deployed by using GitHub Actions."
       isCorrect: false
-      explanation: "A microservice is a service that is part of a larger application that serve a business need. While GitHub Actions help with deployment they do not fit as a microservice."
-    - content: "A Docker image"
+      explanation: "A microservice is a service that is part of a larger application that serves a business need. Although GitHub Actions helps with deployment, it doesn't fit as a microservice."
+    - content: "A Docker image."
       isCorrect: false
-      explanation: "A docker image is a static representation of a microservice, not the microservice itself."
-  - content: "What purpose does a Docker image have in a microservice architecture pattern?"
+      explanation: "A Docker image is a static representation of a microservice, not the microservice itself."
+  - content: "What purpose does a Docker image have in a microservices architecture pattern?"
     choices:
-    - content: "A text file with instructions on how to build the microservice."
+    - content: "It's a text file with instructions for how to build the microservice."
       isCorrect: false
-      explanation: "The dockerfile is the text file with instructions on how to build the microservice."
-    - content: "A docker image is a static representation of a microservice, its configuration, and its dependencies."
+      explanation: "The Dockerfile is the text file with instructions on how to build the microservice."
+    - content: "A Docker image is a static representation of a microservice, its configuration, and its dependencies."
       isCorrect: true
-      explanation: "A developer creates an app or service and packages it and its dependencies into a container image"
+      explanation: "A developer creates an app or service, and then packages it and its dependencies in a container image."
     - content: "Docker images allow hosts to perform load-balancing and routing."
       isCorrect: false
       explanation: "Orchestrators allow hosts to perform load-balancing and routing."
-  - content: "Why would a developer write a Dockerfile?"
+  - content: "What's the difference between a container and an image?"
     choices:
-    - content: "To create the initialization routine for the Docker engine."
+    - content: "The container hosts multiple images as they're created."
       isCorrect: false
-      explanation: "A Dockerfile is used to create the image."
-    - content: "To create a text file with instructions on how to build a Docker image."
+      explanation: "A container doesn't host images."
+    - content: "The container is a template that describes what images are."
+      isCorrect: false
+      explanation: "A container isn't a template."
+    - content: "The container can be thought of as running an instance of an image."
       isCorrect: true
-      explanation: "The Dockerfile is used to create the Docker image."
-    - content: "To create the code to run the microservice."
-      isCorrect: false
-      explanation: "The code to create the microservice is created in the tool that is best suited for the job. Any language and framework will work."
+      explanation: "Multiple containers can be created from the same image. Each container has its own unique state and data."
+

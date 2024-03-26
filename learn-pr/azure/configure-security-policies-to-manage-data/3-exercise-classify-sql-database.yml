@@ -3,12 +3,11 @@ uid: learn.azure-security.configure-security-policies-to-manage-data.exercise-cl
 title: Exercise - Classify an Azure SQL Database
 metadata:
   title: Exercise - Classify an Azure SQL Database
-  description: Exercise - Classify an Azure SQL Database
-  ms.date: 09/30/2019
+  description: Use this exercise to learn how to classify an Azure SQL Database.
+  ms.date: 01/04/2024
   author: VanMSFT
   ms.author: vanto
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 azureSandbox: true
 content: |

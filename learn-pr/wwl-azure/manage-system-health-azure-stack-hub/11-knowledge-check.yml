@@ -7,8 +7,7 @@ metadata:
   ms.date: 08/10/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -36,6 +35,6 @@ quiz:
     - content: "The Azure Partner Network (MPN) number"
       isCorrect: false
       explanation: "Incorrect. The Azure Partner Network (MPN) number is the unique identification for an Azure Partner."
-    - content: "The Azure Active Directory tenant ID"
+    - content: "The Microsoft Entra tenant ID"
       isCorrect: false
-      explanation: "Incorrect. The Azure Active Directory tenant ID is the trust relationship between Azure subscriptions and Azure Active Directory (Azure AD)."
+      explanation: "Incorrect. The Microsoft Entra tenant ID is the trust relationship between Azure subscriptions and Microsoft Entra ID."

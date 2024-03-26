@@ -3,30 +3,46 @@ uid: learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals
 metadata:
   title: Get tips and tricks for teaching AI-900 Microsoft Azure AI Fundamentals
   description: "Get tips and tricks for teaching AI-900 Microsoft Azure AI Fundamentals"
-  ms.date: 11/21/2022
+  ms.date: 03/22/2024
   author: wwlpublish
   ms.author: tsheppard
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
 title: Get tips and tricks for teaching AI-900 Microsoft Azure AI Fundamentals
 summary: Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials.
 abstract: |
-  After completing this module, you will be able to:
-  *  Understand how to utilize the tips and tricks for teaching AI-900 Microsoft Azure AI Fundamentals in the classroom.
-  *  Leverage the lab environment during the instructional portion of the class.
-  *  Explain foundational course terminology and technical topics.
-  *  Discover additional resources and materials to prepare students for success on their Microsoft certification exams.
+  After completing this module, you'll be able to:
+
+  -   Understand how to utilize the tips and tricks for teaching AI-900 Microsoft Azure AI Fundamentals in the classroom.
+
+  -   Leverage the lab environment during the instructional portion of the class.
+
+  -   Explain foundational course terminology and technical topics.
+
+  -   Discover additional resources and materials to prepare students for success on their Microsoft certification exams.
 prerequisites: |
-  - Understand the Microsoft Learn for Educators program benefits
-  - Navigate the Microsoft Learn for Educators portal
-  - Understand how to access the Microsoft Learning Download Center and download content
-  - Understand the resources available through the Microsoft curriculum and teaching materials
-  - Understand the resources available to you help you get prepared to teach Microsoft Fundamentals or Advanced Role-Based curriculum in your classes
-  - Explain the different approaches to curriculum integration
-  - Understand the Microsoft technical training program
-  - Understand how to utilize the built-in accessibility features
-  - Understand using the objective domains when preparing to teach
-  - Understand the exam structure
+  -   Understand the Microsoft Learn for Educators program benefits
+
+  -   Navigate the Microsoft Learn for Educators portal
+
+  -   Understand how to access the Microsoft Learning Download Center and download content
+
+  -   Understand the resources available through the Microsoft curriculum and teaching materials
+
+  -   Understand the resources available to you help you get prepared to teach Microsoft Fundamentals or Advanced Role-Based curriculum in your classes
+
+  -   Explain the different approaches to curriculum integration
+
+  -   Understand the Microsoft technical training program
+
+  -   Understand how to utilize the built-in accessibility features
+
+  -   Understand using the objective domains when preparing to teach
+
+  -   Understand the exam structure
 iconUrl: /training/achievements/get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.svg
 levels:
 - beginner
@@ -37,11 +53,12 @@ products:
 units:
 - learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.introduction
 - learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.objective-domains
-- learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.learn-module-best-practices
+- learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.learn-learning-path-best-practices
 - learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.explore-best-practices-for-module-1
-- learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.explore-best-practices-for-module-2
-- learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.explore-best-practices-for-module-3
-- learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.explore-best-practices-for-module-4
+- learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.explore-best-practices-for-learning-path-2
+- learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.explore-best-practices-for-learning-path-3
+- learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.explore-best-practices-for-learning-path-4
+- learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.explore-best-practices-for-learning-path-5
 - learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.bring-it-together
 - learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.knowledge-check
 - learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.summary

@@ -3,17 +3,17 @@ uid: learn.intro-to-azure-service-fabric
 metadata:
   title: Introduction to Azure Service Fabric
   description: Get acquainted with the Azure Service Fabric distributed systems management platform.
-  ms.date: 4/11/2022
+  ms.date: 01/03/2024
   author: tomvcassidy
   ms.author: tomcassidy
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-intro-to-product
+  ms.service: service-fabric
 title: Introduction to Azure Service Fabric
-summary: Determine the types of business problems that can be solved using Azure Service Fabric. Describe Service Fabric's features, such as Azure service integration, stateless and stateful service support, and automatic scaling.
+summary: This module describes the features of Azure Service Fabric, such as Azure service integration, stateless and stateful service support, and automatic scaling.
 abstract: |
   In this module, you will:
-  - Evaluate whether Azure Service Fabric is an appropriate distributed systems management platform for you
-  - Describe how the components of Azure Service Fabric work to support distributed systems solutions
+  - Evaluate whether Azure Service Fabric is an appropriate distributed systems management platform for you.
+  - Describe how the components of Azure Service Fabric work to support distributed systems solutions.
 prerequisites: |
   - Basic understanding of containers and container orchestration
   - Basic understanding of microservices

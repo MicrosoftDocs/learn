@@ -5,10 +5,9 @@ metadata:
   title: Define IoT service architecture
   description: Description of IoT service architecture
   ms.date: 04/24/2021
-  author: mpolicht
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 12
 content: |
   [!include[](includes/2-define-iot-service-architecture.md)]

@@ -1,5 +1,4 @@
-
-When you create an Azure load balancer in the Azure portal, you select the type of load balancer to create (internal or public) and the SKU. Azure Load Balancer supports three SKU options: Basic, Standard, and Gateway. Each SKU provides different features, scenario scaling, and pricing.
+When you create an Azure load balancer in the Azure portal, you select the type of load balancer to create (internal or public) and the Stock Keeping Unit (SKU). Azure Load Balancer supports three SKU options: Basic, Standard, and Gateway. Each SKU provides different features, scenario scaling, and pricing.
 
 :::image type="content" source="../media/load-balancer-types-a4c0eceb.png" alt-text="Screenshot that shows how to create an Azure load balancer in the Azure portal.":::
 
@@ -21,7 +20,6 @@ The following table provides a brief comparison of how features are implemented 
 
 | Feature | Basic SKU | Standard SKU |
 | --- | --- | --- |
-| **Back-end pools** | Up to 300 instances | Up to 1,000 instances |
 | **Health probes** | HTTP, TCP | HTTPS, HTTP, TCP |
 | **Availability zones** | Not available | Zone-redundant and zonal frontends for inbound and outbound traffic |
 | **Multiple frontends** | Inbound only | Inbound and outbound |

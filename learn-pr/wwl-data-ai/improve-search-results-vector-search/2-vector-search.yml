@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-search-results-vector-search.vector-search
+title: What is vector search?
+metadata:
+  title: What is vector search?
+  description: "Learn about vector search."
+  ms.date: 9/29/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-vector-search.md)]

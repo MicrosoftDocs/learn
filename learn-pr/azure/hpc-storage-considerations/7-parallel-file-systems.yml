@@ -6,9 +6,8 @@ metadata:
   description: After you complete this unit, you'll be more familiar with the main parallel file-system features.
   ms.date: 12/29/2020
   author: scjescho
-  ms.author: scjescho
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: padmalathas
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/7-parallel-file-systems.md)]

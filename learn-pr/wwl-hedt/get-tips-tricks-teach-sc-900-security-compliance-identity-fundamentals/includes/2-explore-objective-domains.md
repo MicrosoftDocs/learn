@@ -7,7 +7,7 @@ All topics covered in the [SC-900: Microsoft Security, Compliance, and Identity 
 Become familiar with the objective domains, which are a comprehensive set of specific and measurable knowledge, skills, and abilities that are the basis for the development of both this course and the certification exam:
 
 - Module 1: Describe the concepts of security, compliance, and identity
-- Module 2: Describe the capabilities of Microsoft Azure Active Directory (Azure AD), part of Microsoft Entra
+- Module 2: Describe the capabilities of Microsoft Entra ID, part of Microsoft Entra
 - Module 3: Describe the capabilities of Microsoft Security Solutions
 - Module 4: Describe the capabilities of Microsoft Compliance Solutions
 

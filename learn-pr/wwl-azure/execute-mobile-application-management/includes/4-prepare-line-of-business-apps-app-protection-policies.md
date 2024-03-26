@@ -1,4 +1,5 @@
 
+
 You can enable your apps to use app protection policies by using either the Intune App Wrapping Tool or the Intune App SDK.
 
 #### Intune App Wrapping Tool

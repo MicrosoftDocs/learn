@@ -7,8 +7,10 @@ metadata:
   ms.date: 03/28/2019
   author: msangapu-msft
   ms.author: msangapu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
+    - devx-track-js
   zone_pivot_groups: dev-lang-csharp-javascript
 durationInMinutes: 10
 content: |

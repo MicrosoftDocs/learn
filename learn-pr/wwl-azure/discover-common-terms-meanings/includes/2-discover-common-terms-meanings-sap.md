@@ -1,5 +1,3 @@
-
-
 - **Landscape**. Refers to the entire SAP assets in your IT landscape. The SAP landscape includes all production and non-production environments.
 - **System**. The combination of DBMS layer and application layer of, for example, an SAP ERP development system, an SAP BW test system, and an SAP CRM production system.
 - **Environment**. One or more SAP components logically grouped to perform a business function, such as development, quality assurance, training, disaster recovery, or production.

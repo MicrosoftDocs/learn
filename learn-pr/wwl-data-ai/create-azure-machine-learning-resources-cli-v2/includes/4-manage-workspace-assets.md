@@ -144,7 +144,7 @@ As the data is uploaded to the default datastore, the progress of uploading the 
 az ml dataset list
 ```
 
-Learn more about the commands to [manage Azure ML dataset assets](https://learn.microsoft.com/cli/azure/ml(v1)/dataset?view=azure-cli-latest).
+Learn more about the commands to [manage Azure ML dataset assets](/cli/azure/ml(v1)/dataset?view=azure-cli-latest).
 
 The dataset is now available for anyone with access to the workspace. When you train a model by running a job, you can refer to the dataset to use it as input for the job.
 

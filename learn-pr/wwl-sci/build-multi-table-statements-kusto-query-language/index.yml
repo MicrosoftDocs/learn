@@ -6,8 +6,8 @@ metadata:
   ms.date: 06/20/2022
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: kusto
 title: Build multi-table statements using KQL
 summary: Learn how to work with multiple tables using KQL.
 abstract: |

@@ -4,11 +4,10 @@ title: Exercise - Complete a challenge activity using conditional operators
 metadata:
   title: Exercise - Complete a challenge activity using conditional operators
   description: "Exercise - Complete a challenge activity using conditional operators"
-  ms.date: 04/11/2023
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/4-challenge-1.md)]

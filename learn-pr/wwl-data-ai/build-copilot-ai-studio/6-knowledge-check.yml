@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-copilot-ai-studio.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check to test your knowledge on grounding models with RAG."
+  ms.date: 02/21/2024
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "What does Retrieval Augmented Generation (RAG) refer to in the context of a language model application?"
+    choices:
+    - content: "RAG helps you fine-tune a language model."
+      isCorrect: false
+      explanation: "Incorrect. RAG doesn't fine-tune a language model."
+    - content: "RAG helps you to integrate a language model in a chat-based application."
+      isCorrect: false
+      explanation: "Incorrect. RAG's purpose isn't to integrate a language model."
+    - content: "RAG helps you ground your language model."
+      isCorrect: true
+      explanation: "Correct. RAG allows you to retrieve context that helps ground your language model."
+  - content: "Which search method is most likely to yield the most accurate results when integrating it with a copilot?"
+    choices:
+    - content: "Keyword search."
+      isCorrect: false
+      explanation: "Incorrect. Keyword search relies solely on predefined terms or phrases, potentially missing relevant information that doesn't match the exact keywords used."
+    - content: "Vector search."
+      isCorrect: false
+      explanation: "Incorrect. Vector search uses mathematical representations of documents, which can capture semantic relationships and similarities between documents, but it can still miss context-specific information."
+    - content: "Hybrid search."
+      isCorrect: true
+      explanation: "Correct. Hybrid search combines the strengths of both keyword and vector search methods, allowing for a more comprehensive and accurate retrieval of relevant information by using both keyword matching and semantic similarity."
+  - content: "When integrating RAG and a language model in a chat flow to build a copilot, what is the purpose of using prompt variants?"
+    choices:
+    - content: "To modify the user's query with historical data."
+      isCorrect: false
+      explanation: "Incorrect. Modifying the user's query with historical data is achieved through the Large Language Model (LLM) node, not through prompt variants."
+    - content: "To generate prompt context by retrieving relevant information from the data source."
+      isCorrect: false
+      explanation: "Incorrect. Generating prompt context is done by parsing the output of the Index Lookup tool, not through prompt variants."
+    - content: "To provide multiple system messages in the prompt."
+      isCorrect: true
+      explanation: "Correct. Prompt variants allow for the inclusion of different system messages in the prompt, exploring which content provides the most groundedness."

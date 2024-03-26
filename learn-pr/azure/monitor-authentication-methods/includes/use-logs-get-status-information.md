@@ -1,4 +1,4 @@
-As an IT administrator, you want to know how your identity and access management (IAM) environment is doing. The information about your system’s health enables you to assess whether and how you need to respond to potential issues. With the activity logs, Azure Active Directory (Azure AD) provides you with a comprehensive view of activity in your environment. The provided data enables you to:
+As an IT administrator, you want to know how your identity and access management (IAM) environment is doing. The information about your system’s health enables you to assess whether and how you need to respond to potential issues. With the activity logs, Microsoft Entra ID provides you with a comprehensive view of activity in your environment. The provided data enables you to:
 
 - Determine how your apps, services, and AD features are utilized by your users
 
@@ -9,9 +9,11 @@ As an IT administrator, you want to know how your identity and access management
 
 
 
-## Azure AD activity logs
+<a name='azure-ad-activity-logs'></a>
 
-To help you assess how your environment is doing, the Azure Active Directory portal gives you access to three activity logs:
+## Microsoft Entra activity logs
+
+To help you assess how your environment is doing, the Microsoft Entra admin center gives you access to three activity logs:
 
 - **Sign-ins** – Information about sign-ins and how your resources are used by your users, services and apps.
 
@@ -21,7 +23,7 @@ To help you assess how your environment is doing, the Azure Active Directory por
 
 ### Sign-in logs
 
-Each sign-in of a user to your Azure AD tenant generates a record in your sign-in log. You can use the data in your sign-ins log to find answers to questions like:
+Each sign-in of a user to your Microsoft Entra tenant generates a record in your sign-in log. You can use the data in your sign-in log to find answers to questions like:
 
 - What is the sign-in pattern of a user?
 
@@ -34,7 +36,7 @@ Each sign-in of a user to your Azure AD tenant generates a record in your sign-i
  
 ### Audit logs 
 
-With the audit logs in Azure AD, you get access to records of system activities for compliance. The most common views of this log are based on the following categories:
+With the audit logs in Microsoft Entra ID, you get access to records of system activities for compliance. The most common views of this log are based on the following categories:
 
 - User management
 
@@ -91,7 +93,7 @@ You can use the provisioning logs to find answers to questions like:
 
 ## How to access activity logs 
 
-To cover a broad range of scenarios, Azure AD provides you with various options to work with your activity log data. As an IT administrator, you need to understand the intended uses cases for these options, so that you can select the right access method for your scenario.
+To cover a broad range of scenarios, Microsoft Entra ID provides you with various options to work with your activity log data. As an IT administrator, you need to understand the intended uses cases for these options, so that you can select the right access method for your scenario.
 
 There are three options you have to access your activity logs:
 
@@ -101,7 +103,7 @@ There are three options you have to access your activity logs:
 
 ### Access through Azure portal 
 
-You can access activity logs in the **Monitoring** section of the **Azure Active Directory** Page in the Azure portal. 
+You can access activity logs in the **Monitoring** section of the **Microsoft Entra ID** Page in the Azure portal. 
 
 
 :::image type="content" source="../media/activity-logs-azure-portal.png" alt-text="Screenshot that shows the location of the activity logs.":::
@@ -135,7 +137,7 @@ The right access method for accessing activity logs from code depends on the sco
 
 The **Microsoft Graph API**:
 
-- Provides a RESTful way to query sign-in data from Azure AD in Azure AD Premium tenants.
+- Provides a RESTful way to query sign-in data from Microsoft Entra ID in Microsoft Entra ID P1 or P2 tenants.
 
 - Doesn't require an administrator or developer to set up extra infrastructure to support your script or app.
 
@@ -145,18 +147,18 @@ Another method for accessing activity logs from your code is to use Azure Event 
 
 **Use:**
 
-- **The Microsoft Graph API** - For scoped queries (a limited set of users or time). For more information, see access Azure AD logs with the Microsoft Graph API.
+- **The Microsoft Graph API** - For scoped queries (a limited set of users or time). For more information, see access Microsoft Entra logs with the Microsoft Graph API.
 
 - **Azure Event Hubs** - For pulling large sets of sign-in data. 
 
 ### Access from a different endpoint
 
 If you can't solve your business problems by accessing your activity logs through the portal, or code, the solution might be using a different endpoint.
-Azure AD provides support for activity logs in the following three endpoints:
+Microsoft Entra ID provides support for activity logs in the following three endpoints:
 
 - **Azure storage account** - To create a long-term backup of your activity logs.
 
-- **Microsoft Sentinel** – To integrate your activity logs with the Sentinel SIEM using the native Sentinel connector to Azure AD.  
+- **Microsoft Sentinel** – To integrate your activity logs with the Sentinel SIEM using the native Sentinel connector to Microsoft Entra ID.  
 
 - **Azure Event Hub** - To integrate your activity logs with SIEM tools such as Sumologic, or Splunk.
 
@@ -172,23 +174,21 @@ By routing logs to an Azure storage account, you can retain it for longer than t
 
 #### Send logs to Microsoft Sentinel
 
-Microsoft Sentinel is a SIEM tool that provides advanced log analysis across enterprise workloads, including Azure AD. Sentinel’s native connector with Azure AD makes transferring data from Azure AD simple. It can combine your Azure AD log data with telemetry from across your enterprise for analysis, threat hunting, and security detections.  
+Microsoft Sentinel is a SIEM tool that provides advanced log analysis across enterprise workloads, including Microsoft Entra ID. Sentinel’s native connector with Microsoft Entra ID makes transferring data from Microsoft Entra simple. It can combine your Microsoft Entra ID log data with telemetry from across your enterprise for analysis, threat hunting, and security detections.  
 
 
 #### Stream logs to Event Hubs
 
-Routing logs to an Azure Event Hub allows you to integrate with third-party SIEM tools like Sumologic and Splunk. This integration allows you to combine Azure AD activity log data with other data managed by your SIEM, to provide richer insights into your environment.
+Routing logs to an Azure Event Hub allows you to integrate with third-party SIEM tools like Sumologic and Splunk. This integration allows you to combine Microsoft Entra activity log data with other data managed by your SIEM, to provide richer insights into your environment.
 
 #### Send logs to Azure Monitor logs
 
-Azure Monitor logs is a solution that consolidates monitoring data from different sources and provides a query language and analytics engine that gives you insights into the operation of your applications and resources. By sending Azure AD activity logs to Azure Monitor logs, you can quickly retrieve, monitor and alert on collected data.
+Azure Monitor logs is a solution that consolidates monitoring data from different sources and provides a query language and analytics engine that gives you insights into the operation of your applications and resources. By sending Microsoft Entra activity logs to Azure Monitor logs, you can quickly retrieve, monitor and alert on collected data.
 
-You can also install the pre-built views for Azure AD activity logs to monitor common scenarios involving sign-ins and audit events.
+You can also install the pre-built views for Microsoft Entra activity logs to monitor common scenarios involving sign-ins and audit events.
 
 
 
 ## Summary
 
-Using the activity logs, you can get an understanding of how your Azure AD is doing. For basic scenarios, accessing your activity logs in the Azure portal, or by code might be good enough. For advanced analysis and reporting, you need to route your logs to a remote endpoint.
-
-
+Using the activity logs, you can get an understanding of how your Microsoft Entra ID is doing. For basic scenarios, accessing your activity logs in the Azure portal, or by code might be good enough. For advanced analysis and reporting, you need to route your logs to a remote endpoint.

@@ -5,10 +5,9 @@ metadata:
   title: Exercise - Add basic HTML to your web app
   description: Learn how to add the basic HTML to your web app.
   ms.date: 2/8/2023
-  author: mmpadget
-  ms.author: quradic
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  author: kjo-msft
+  ms.author: karinjohnson
+  ms.topic: unit
 durationInMinutes: 10
 content: |
     [!include[](includes/3-html-basics.md)]

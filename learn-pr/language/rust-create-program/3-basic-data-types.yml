@@ -6,8 +6,7 @@ metadata:
   ms.date: 09/20/2021
   author: GitHubber17
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Explore data types for numbers, text, and true/false values
 durationInMinutes: 7

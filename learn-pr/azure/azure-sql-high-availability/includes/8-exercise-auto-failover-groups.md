@@ -14,11 +14,11 @@ To configure auto-failover groups for one or more databases and view the results
 1. Initiate a failover.
 1. Fail back.
 
-This exercise will guide you through configuring auto-failover groups for your AdventureWorks database. You'll then use a simple command-line application to understand where reads and writes occur and the importance of retry logic in your applications. Finally, you'll do a fun exercise to determine how many read replicas are associated with a Business Critical database that also has an auto-failover group.  
+This exercise guides you through configuring auto-failover groups for your AdventureWorks database. You'll then use a simple command-line application to understand where reads and writes occur and the importance of retry logic in your applications. Finally, you'll do a fun exercise to determine how many read replicas are associated with a Business Critical database that also has an auto-failover group.  
 
 ### Configure the environment
 
-1. Copy the following code into Notepad or another text editor. Provide your information. Add your SQL authentication password. For `$drLocation`, supply the region where you want your failover group to be. Ideally, choose a region that's paired to the region of your current server. You can check the [list of paired regions](/azure/best-practices-availability-paired-regions?azure-portal=true). At a minimum, it can't be the region where your original database is. Finally, add the IP address of your local computer. If you need to determine the IP address, open PowerShell on the local computer and run `(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content`.
+1. Copy the following code into Notepad or another text editor. Provide your information. Add your SQL authentication password. For `$drLocation`, supply the region where you want your failover group to be. Ideally, choose a region that's paired to your current server's region. You can check the [list of paired regions](/azure/best-practices-availability-paired-regions?azure-portal=true). At a minimum, it can't be the region where your original database is. Finally, add the IP address of your local computer. If you need to determine the IP address, open PowerShell on the local computer and run `(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content`.
 
     ```powershell
     # Add your info
@@ -79,7 +79,7 @@ This exercise will guide you through configuring auto-failover groups for your A
         -EndIpAddress $ipAddress;
     ```
 
-    For purpose of illustrating auto-failover groups, this network setup is sufficient. It's slightly different from what you'd do in an enterprise environment. In an enterprise environment, the machine that needs access would probably be a set of resources that make up some type of application. If your database fails over, you might want to fail over your application, VMs, or other resources to the new region as well. Both sets of resources will need access to the resources, servers, and databases in the other region. To do this, you can use virtual network peering, virtual-network-to-virtual-network connections, or potentially something else (like Azure ExpressRoute). It will depend on your scenario.
+    For purpose of illustrating auto-failover groups, this network setup is sufficient. It's slightly different from what you'd do in an enterprise environment. In an enterprise environment, the machine that needs access would probably be a set of resources that make up some type of application. If your database fails over, you might want to fail over your application, VMs, or other resources to the new region as well. Both sets of resources will need access to the resources, servers, and databases in the other region. To do this, you can use virtual network peering, virtual-network-to-virtual-network connections, or potentially something else (like Azure ExpressRoute). It depends on your scenario.
 
 1. Add one or more databases to the failover group by running this script in Azure Cloud Shell:
 
@@ -93,7 +93,7 @@ This exercise will guide you through configuring auto-failover groups for your A
     Write-Host "AdventureWorks database added to the auto-failover group"
     ```
 
-    It will take some time for this script to run. You're restoring the database in the other region, which involves copying the data from the original region to the disaster recovery region. You can work on the steps in the next section and then check back to see if this script has completed.  
+    It'll take some time for this script to run. You're restoring the database in the other region, which involves copying the data from the original region to the disaster recovery region. You can work on the steps in the next section and then check back to see if this script has completed.  
 
 You've now deployed and configured an auto-failover group for your AdventureWorks database.
 
@@ -124,15 +124,15 @@ In this section, you'll use two ostress workloads to check the `Updateability` (
     ostress.exe -S"<server-name>-fg.secondary.database.windows.net" -Q"SELECT DATABASEPROPERTYEX(DB_NAME(),'Updateability')" -U"cloudadmin" -d"AdventureWorks" -P"password" -n1 -r5000 -osecondary
     ```
 
-The result of the first command should be `READ_WRITE` because it checks the primary failover group server and you haven't initiated any failovers.  
+The result of the first command should be `READ_WRITE`, because it checks the primary failover group server and you haven't initiated any failovers.  
 
-The result of the second command should be `READ_ONLY` because it checks the disaster recovery or secondary server that you configured. You should only be able to write from one of the servers at any given time.  
+The result of the second command should be `READ_ONLY`, because it checks the disaster recovery or secondary server that you configured. You should only be able to write from one of the servers at any given time.  
 
 In the next steps, you'll see what happens to both servers when a failover occurs.  
 
 ### Initiate a failover and view the results
 
-1. Use the Azure Cloud Shell terminal on the right side of this page to check the status of the secondary server:
+1. Use the Azure Cloud Shell terminal on the right side of this page to check the secondary server's status:
 
     ```powershell
     (Get-AzSqlDatabaseFailoverGroup -FailoverGroupName $failoverGroup `
@@ -148,7 +148,7 @@ In the next steps, you'll see what happens to both servers when a failover occur
      -ServerName $drServer -FailoverGroupName $failoverGroup
     ```
 
-    When the failover occurs, you might notice that the connections are dropped for a moment. But because the app keeps retrying, the application doesn't fail entirely. After the failover finishes, you should notice that the `READ_WRITE` and `READ_ONLY` results resume and that they don't change.
+    When the failover occurs, you might notice that the connections are dropped for a moment, but because the app keeps retrying, the application doesn't fail entirely. After the failover finishes, you should notice that the `READ_WRITE` and `READ_ONLY` results resume and that they don't change.
 
     One of the benefits of auto-failover groups in Azure SQL Database and Azure SQL Managed Instance is that you don't have to update the connection strings after a failover. You continue to connect to the primary (`<failover-group>.database.windows.net`) for write workloads and the secondary (`<failover-group>.secondary.database.windows.net`) for read workloads. Azure takes care of routing you to the appropriate database in the corresponding region/server.
 

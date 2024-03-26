@@ -1,4 +1,4 @@
-In this module, you explored the benefits of using Azure Cognitive Search to create a scalable and rich search experience. 
+In this module, you explored the benefits of using Azure AI Search to create a scalable and rich search experience. 
 
 ## Clean up
 

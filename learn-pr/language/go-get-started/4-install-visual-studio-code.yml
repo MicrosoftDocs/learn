@@ -6,8 +6,7 @@ metadata:
   ms.date: 04/14/2021
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
   zone_pivot_groups: os
 title: Exercise - Install Visual Studio Code and the Go extension

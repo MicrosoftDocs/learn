@@ -1,6 +1,6 @@
 In this module, you set up your development environment to create and build a Blazor Hybrid app with .NET MAUI for mobile and desktop. You then:
 
-- Re-used a Razor component.
+- Reused a Razor component.
 - Added HTML and C# to the Razor file.
 - Used binding to sync user input to the todo list logic.
 - Accessed platform features to load and save the todo list.
@@ -26,7 +26,7 @@ You now understand the fundamentals of building Blazor Hybrid apps. You can use 
 
 ## Get more practice
 
-- [Build a Blazor to-do list](/aspnet/core/tutorials/build-a-blazor-app)
+- [Build a Blazor to-do list](/aspnet/core/blazor/tutorials/build-a-blazor-app)
 - [Blazor Pizza Store workshop](https://aka.ms/blazorworkshop)
 - [Blazor on Microsoft Learn](/training/paths/build-web-apps-with-blazor/)
 - [.NET MAUI on Microsoft Learn](/training/paths/build-apps-with-dotnet-maui/)

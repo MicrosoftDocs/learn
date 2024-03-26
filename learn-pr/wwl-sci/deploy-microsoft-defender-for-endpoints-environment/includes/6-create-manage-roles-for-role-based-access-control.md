@@ -1,12 +1,12 @@
-The following steps guide you on how to create roles in the Microsoft 365 Defender portal. It assumes that you have already created Azure Active Directory user groups.
+The following steps guide you on how to create roles in the Microsoft Defender portal. It assumes that you have already created Microsoft Entra user groups.
 
-1. Access the Microsoft 365 Defender portal using an account with a Security administrator or Global administrator role assigned.
-1. In the navigation pane, select **Settings** then select **Endpoints**.  Under the Permissions area, select **Roles**.
+1. Access the Microsoft Defender portal using an account with a Security administrator or Global administrator role assigned.
+1. In the navigation pane, select **Settings** then select **Endpoints**. Under the **Permissions** category, select **Roles**.
 1. Select the **Turn on roles** button.
 1. Select **+ Add item**.
 1. Enter the role name, description, and permissions you'd like to assign to the role.
-1. Select **Next** to assign the role to an Azure AD Security group.
-1. Use the filter to select the Azure AD group that you would like to add this role to.
+1. Select **Next** to assign the role to a Microsoft Entra Security group.
+1. Use the filter to select the Microsoft Entra group that you would like to add this role to.
 1. Select **Save**.
 
 
@@ -60,4 +60,3 @@ The permission options:
     - View a script from the files library
 
     - Execute a script on the remote device from the files library
-

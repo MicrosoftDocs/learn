@@ -6,8 +6,8 @@ metadata:
   ms.date: 11/18/2022
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-devops
 title: Choose the DevOps tools
 summary: This module explores Azure DevOps and GitHub tools and helps organizations define their work management tool and licensing strategy.
 abstract: |

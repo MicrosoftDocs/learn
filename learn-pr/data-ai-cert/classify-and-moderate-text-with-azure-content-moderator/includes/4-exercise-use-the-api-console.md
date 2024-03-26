@@ -34,7 +34,7 @@ You'll see that the email, IP address, phone, and address values are under a JSO
 1. Study the JSON response and the Request URL syntax to see how your custom applications can call this API.
 
 > [!TIP]
-> To test this API by using a C# application, see [Quickstart: Analyze text content for objectionable material in C#](/azure/cognitive-services/content-moderator/text-moderation-quickstart-dotnet).
+> To test this API by using a C# application, see [Quickstart: Analyze text content for objectionable material in C#](/azure/ai-services/content-safety/quickstart-text?tabs=visual-studio%2Cwindows&pivots=programming-language-csharp).
 
 ## Clean up resources
 

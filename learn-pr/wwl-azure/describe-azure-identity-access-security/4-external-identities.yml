@@ -4,13 +4,12 @@ title: Describe Azure external identities
 metadata:
   title: Describe Azure external identities
   description: "Describe Azure external identities"
-  ms.date: 01/04/2023
+  ms.date: 01/05/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/4-external-identities.md)]

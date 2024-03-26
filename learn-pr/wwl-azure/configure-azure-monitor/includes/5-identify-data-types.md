@@ -1,4 +1,3 @@
-
 Azure Monitor can collect data from various sources. You can think of the collected data as being categorized by tier. Tiers can include data collected from many sources, such as:
 - Your application
 - The operating system
@@ -31,4 +30,4 @@ The following table summarizes the tiers of monitoring data that are collected b
 | **Guest OS** | Monitoring data about the operating system on which your application is running is organized into the Guest OS tier. Your application can run in Azure, another cloud, or on-premises. |
 | **Azure resource** | The Azure resource tier holds monitoring data about the operation of any Azure resource you utilize, including consumption details for the resource. |
 | **Azure subscription** | The Azure subscription tier contains monitoring data about the operation and management of your Azure subscription. The tier also contains data about the health and operation of Azure itself. |
-| **Azure tenant** | Data about the operation of your tenant-level Azure services, such as Azure Active Directory, is organized into the Azure tenant tier. |
+| **Azure tenant** | Data about the operation of your tenant-level Azure services, such as Microsoft Entra ID, is organized into the Azure tenant tier. |

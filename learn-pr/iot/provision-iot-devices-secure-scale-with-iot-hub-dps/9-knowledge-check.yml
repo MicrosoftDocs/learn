@@ -1,0 +1,57 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-group-enrollment-tasks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/11/2023
+  author: kgremban
+  ms.author: kgremban
+  manager: lizross
+  ms.custom: engagement-fy23
+  ms.topic: unit
+  ms.service: iot-dps
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How should you handle a potentially compromised device that's part of a group enrollment?"
+    choices:
+    - content: "Delete the group enrollment and update all of the devices with a new certificate chain of trust."
+      isCorrect: false
+      explanation: "Incorrect. This would unnecessarily disable all devices within the enrollment group and certificate chain of trust. All devices would have to be re-enrolled with the new certificate."
+    - content: "Create an individual enrollment to disallow the potentially compromised device, then delete the device from IoT hub."
+      isCorrect: true
+      explanation: "Correct. The disabled individual enrollment blocks DPS from reprovisioning the device, and deleting or disabling the device from IoT Hub prevents the device from connecting to the IoT hub."
+    - content: "Delete the CA certificate from DPS."
+      isCorrect: false
+      explanation: "Incorrect. This would disable all devices that were enrolled under this CA certificate. Instead, disable the device in DPS and delete the device from IoT hub."
+    - content: "Delete the potentially compromised device from IoT hub."
+      isCorrect: false
+      explanation: "Incorrect. The device could re-enroll in this case. You must both create a disabled DPS individual enrollment record and delete the device from IoT hub."
+  - content: "Group enrollments include the option to specify an initial configuration of a device. What mechanism is used to apply this configuration?"
+    choices:
+    - content: "The enrollment process instructs IoT Hub to trigger a direct method."
+      isCorrect: false
+      explanation: "Incorrect. The enrollment process includes a device twin state field that contains desired properties for the device."
+    - content: "The enrollment process uses a security token to request device access permission and pushes the configuration to the device."
+      isCorrect: false
+      explanation: "Incorrect. The enrollment process includes a device twin state field that contains desired properties for the device."
+    - content: "The enrollment process includes a device twin state field that contains desired properties for the device."
+      isCorrect: true
+      explanation: "Correct. The device twin state field can be used to set the initial desired properties for the device."
+  - content: "What needs to be completed in order to deprovision a single device from a group enrollment?"
+    choices:
+    - content: "Disable or delete the device from the IoT hub's identity registry."
+      isCorrect: false
+      explanation: "Incorrect. This action doesn't prevent the device from being reprovisioned as part of the DPS group enrollment."
+    - content: "Create a DPS disabled individual enrollment for the device's name and leaf certificate, disable or delete the device from the IoT hub's identity registry, and then delete the DPS disabled individual enrollment for the device."
+      isCorrect: false
+      explanation: "Incorrect. Deleting the DPS disabled enrollment for the device would allow the device to re-enroll through the enrollment group. The DPS disabled individual enrollment must be retained."
+    - content: "Create a DPS disabled individual enrollment for the device's name and leaf certificate and then disable or delete the device from the IoT hub's identity registry."
+      isCorrect: true
+      explanation: "Correct. The disabled individual enrollment blocks DPS from reprovisioning the device, and deleting or disabling the device from IoT Hub prevents the device from connecting to the IoT hub."

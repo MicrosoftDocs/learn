@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-ai-fundamentals.understand-generative-ai
+title: Understand generative AI
+metadata:
+  title: Understand generative AI
+  description: "Understand generative AI"
+  ms.date: 12/05/2023
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-understand-generative-ai.md)]

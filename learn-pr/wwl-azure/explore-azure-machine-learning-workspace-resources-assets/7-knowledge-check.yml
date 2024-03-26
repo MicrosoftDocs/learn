@@ -4,25 +4,27 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/05/2023
+  ms.date: 10/09/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 quiz:
+  title: ""
   questions:
   - content: "A data scientist needs access to the Azure Machine Learning workspace to run a script as a job. Which role should be used to give the data scientist the necessary access to the workspace?"
     choices:
     - content: "Reader."
       isCorrect: false
-      explanation: "Incorrect. An AzureML Data Scientist is allowed to submit a job."
-    - content: "AzureML Data Scientist."
+      explanation: "Incorrect. An Azure Machine Learning Data Scientist is allowed to submit a job."
+    - content: "Azure Machine Learning Data Scientist."
       isCorrect: true
-      explanation: "Correct. An AzureML Data Scientist is allowed to submit a job."
-    - content: "AzureML Compute Operator."
+      explanation: "Correct. An Azure Machine Learning Data Scientist is allowed to submit a job."
+    - content: "Azure Machine Learning Compute Operator."
       isCorrect: false
-      explanation: "Incorrect. An AzureML Data Scientist is allowed to submit a job."
+      explanation: "Incorrect. An Azure Machine Learning Data Scientist is allowed to submit a job."
   - content: "The data scientist wants to run a single script to train a model. What type of job is the best fit to run a single script?"
     choices:
     - content: "Command"

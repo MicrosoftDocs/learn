@@ -3,11 +3,13 @@ uid: learn.improve-app-scalability-resiliency-with-load-balancer.4-exercise-conf
 metadata:
   title: Exercise - Configure a public load balancer
   description: Exercise - Configure a public load balancer
-  ms.date: 08/31/2019
-  author: asudbring
-  ms.author: allensu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 03/10/2024
+  author: mbender-ms
+  ms.author: mbender
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
+    - devx-track-azurepowershell
   zone_pivot_groups: azure-interface
 title: Exercise - Configure a public load balancer
 durationInMinutes: 10

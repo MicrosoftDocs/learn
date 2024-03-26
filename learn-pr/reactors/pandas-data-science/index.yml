@@ -6,8 +6,7 @@ metadata:
   ms.date: 04/07/2022
   author: sguthals
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-reactors
+  ms.topic: module
   ms.custom: team=nextgen
 title: Introduction to the pandas library for data science
 summary: Learn about the pandas library for data science. Run statements and scripts, declare variables, and create a basic pandas app.
@@ -35,7 +34,7 @@ roles:
 products:
 - azure
 subjects:
-- data-ai
+- data-management
 units:
 - learn.reactors.pandas-data-science.1-introduction
 - learn.reactors.pandas-data-science.2-data-structures-series

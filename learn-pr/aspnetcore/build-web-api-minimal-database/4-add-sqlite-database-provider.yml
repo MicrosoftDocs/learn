@@ -7,9 +7,9 @@ metadata:
   ms.date: 10/26/2021
   author: jongalloway
   ms.author: chnoring
+  ms.manager: markl
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/4-add-sqlite-database-provider.md)]

@@ -6,8 +6,7 @@ metadata:
   ms.date: 09/23/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
 title: Use PowerShell drives in PowerShell
 summary: This module explains how to work with PowerShell drives.
 abstract: |
@@ -33,14 +32,13 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-cloud-shell
 - azure-powershell
 - azure-virtual-machines
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

@@ -1,38 +1,39 @@
-In this unit, you create the Azure Resource Group that contains all our resources, and set up the PostgreSQL database using the Azure CLI.
-Then, you configure the Quarkus application to access the remote PostgreSQL database. Use a terminal of your choice to run the commands.
+In this unit, you create an Azure resource group that contains the resources for the application. You then set up the PostgreSQL database by using the Azure CLI. Finally, you configure the Quarkus application to access the remote PostgreSQL database. Use a terminal of your choice to run the commands.
 
 ## Prepare the working environment
 
-We need to set up some environment variables:
-
-```bash
-AZ_PROJECT="azure-deploy-quarkus"
-AZ_RESOURCE_GROUP="rg-${AZ_PROJECT}"
-AZ_LOCATION="eastus"
-AZ_CONTAINERAPP="ca-${AZ_PROJECT}"
-AZ_CONTAINERAPP_ENV="cae-${AZ_PROJECT}"
-AZ_POSTGRES_DB_NAME="postgres"
-AZ_POSTGRES_USERNAME="postgres"
-AZ_POSTGRES_PASSWORD="postgres"
-AZ_POSTGRES_SERVER_NAME="psql<unique-identifier>"
-```
-
-> [!NOTE]
-> You can name your Azure resources the way you want, but we recommend to check [this documentation](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations) that gives you abbreviations for many Azure resources (for example, `rg` for Resource Groups or `ca` for Azure Container Apps).
-
-Make sure to replace the placeholders when needed. These environment variables are used throughout this module.
+You need to set up some environment variables. Here are some notes about the variables you'll create:
 
 | Variable | Description |
 |-|-|
-| `AZ_PROJECT` | The name of the project |
-| `AZ_RESOURCE_GROUP` | The name of the group holding all the other resources |
-| `AZ_LOCATION` | The Azure region you use. We recommend that you use a region close to where you live. To see the full list of available regions, enter `az account list-locations` |
-| `AZ_CONTAINERAPP` | The name of the Azure Container Apps holding all the containers |
-| `AZ_CONTAINERAPP_ENV` | The name of the Azure Container Apps environment |
-| `AZ_POSTGRES_SERVER_NAME` | The name of your PostgreSQL server (nonalphanumeric characters aren't allowed (-, _, !, $, #, %)). It **should be unique across Azure make sure to use a unique-identifier** |
-| `AZ_POSTGRES_DB_NAME` | The name of the default PostgreSQL database is `postgres` |
-| `AZ_POSTGRES_USERNAME` | The default username of your PostgreSQL database server |
-| `AZ_POSTGRES_PASSWORD` | The default password of your PostgreSQL database server |
+| `AZ_PROJECT` | The name of the project. To keep this value unique, we recommend that you use `AZ_PROJECT_<your initials>`. |
+| `AZ_RESOURCE_GROUP` | The name of the resource group that holds the resources. |
+| `AZ_LOCATION` | The Azure region. We recommend that you use a region that's close to where you live. To see the list of available regions, enter `az account list-locations` at a command prompt. |
+| `AZ_CONTAINERAPP` | The name of the Azure Container Apps instance that holds the containers. |
+| `AZ_CONTAINERAPP_ENV` | The name of the Azure Container Apps environment. |
+| `AZ_POSTGRES_SERVER_NAME` | The name of your PostgreSQL server. Nonalphanumeric characters aren't allowed: -, _, !, $, #, %. The name should be unique across Azure. Be sure to use a unique identifier. |
+| `AZ_POSTGRES_DB_NAME` | The PostgreSQL database name. The default name of the PostgreSQL database is `postgres`. |
+| `AZ_POSTGRES_USERNAME` | The default admin user name for your PostgreSQL database server. |
+| `AZ_POSTGRES_PASSWORD` | The default password for your PostgreSQL database server. Use a secure password. |
+
+> [!NOTE]
+> You can name your Azure resources in any way that you want, but we recommend that you review [Abbreviation examples for Azure resources](/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations). This article provides example abbreviations for many Azure resources (for example, `rg` for resource groups and `ca` for container apps).
+
+Use the following commands to set up the variables. Be sure to modify the values as described in the preceding table.
+
+```bash
+export AZ_PROJECT_<your initials>="azure-deploy-quarkus"
+export AZ_RESOURCE_GROUP="rg${AZ_PROJECT_<your initials>}"
+export AZ_LOCATION="eastus"
+export AZ_CONTAINERAPP="ca${AZ_PROJECT_<your initials>}"
+export AZ_CONTAINERAPP_ENV="cae${AZ_PROJECT_<your initials>}"
+export AZ_POSTGRES_DB_NAME="postgres${AZ_PROJECT_<your initials>}"
+export AZ_POSTGRES_USERNAME="<user-name>"
+export AZ_POSTGRES_PASSWORD="<secure-password>"
+export AZ_POSTGRES_SERVER_NAME="psql${AZ_PROJECT_<your initials>}"
+```
+
+These environment variables are used throughout the rest of this module.
 
 Next, create a resource group:
 
@@ -44,7 +45,7 @@ az group create \
 
 ## Create an instance of Azure Database for PostgreSQL
 
-Now you create a managed PostgreSQL server. Run the following command to create a small instance of Azure Database for PostgreSQL.
+You'll now create a managed PostgreSQL server. Run the following command to create a small instance of Azure Database for PostgreSQL:
 
 ```bash
 az postgres flexible-server create \
@@ -54,22 +55,22 @@ az postgres flexible-server create \
     --database-name "$AZ_POSTGRES_DB_NAME" \
     --admin-user "$AZ_POSTGRES_USERNAME" \
     --admin-password "$AZ_POSTGRES_PASSWORD" \
-    --public all \
+    --public-access "All" \
     --tier "Burstable" \
     --sku-name "Standard_B1ms" \
-    --storage-size 256 \
-    --version "14"
+    --storage-size 32 \
+    --version "16"
 ```
 
-This command creates a small PostgreSQL server that uses the variables you set up earlier.
+This command creates a small PostgreSQL server that uses the variables that you set up earlier.
 
 ## Configure Quarkus to access the PostgreSQL database
 
-Now let's connect the Quarkus application to the PostgreSQL database. To do this, you first need to know the connection String of the database. For that, execute the following command:
+You'll now connect the Quarkus application to the PostgreSQL database. To do so, you first need to obtain the connection string for the database:
 
 ```bash
-POSTGRES_CONNECTION_STRING=$(
-az postgres flexible-server show-connection-string \
+export POSTGRES_CONNECTION_STRING=$(
+    az postgres flexible-server show-connection-string \
     --server-name "$AZ_POSTGRES_SERVER_NAME" \
     --database-name "$AZ_POSTGRES_DB_NAME" \
     --admin-user "$AZ_POSTGRES_USERNAME" \
@@ -78,25 +79,32 @@ az postgres flexible-server show-connection-string \
     --output tsv
 )
 
-echo "POSTGRES_CONNECTION_STRING=$POSTGRES_CONNECTION_STRING"
+export POSTGRES_CONNECTION_STRING_SSL="$POSTGRES_CONNECTION_STRING&ssl=true&sslmode=require"
+
+echo "POSTGRES_CONNECTION_STRING_SSL=$POSTGRES_CONNECTION_STRING_SSL"
 ```
+
+Note the connection string that's returned.
 
 ## Configure the Quarkus application to connect to the PostgreSQL database
 
-Update the `application.properties` file in the `src/main/resources` folder of the project to configure the connection String to the PostgreSQL database. For that, set the `quarkus.datasource.jdbc.url` property with the value of the `$POSTGRES_CONNECTION_STRING` and append `&ssl=true&sslmode=require` to the end of the connection string to force the driver to use ssl. This is required for Azure Database for PostgreSQL.
+Update the `application.properties` file in the `src/main/resources` folder of the project to configure the connection string to the PostgreSQL database. To do so, set the `quarkus.datasource.jdbc.url` property to the previously output `$POSTGRES_CONNECTION_STRING_SSL` value. The `&ssl=true&sslmode=require` part of the connection string forces the driver to use SSL, a requirement for Azure Database for PostgreSQL.
 
 ```properties
 quarkus.hibernate-orm.database.generation=update
-quarkus.datasource.jdbc.url=<the value of the POSTGRES_CONNECTION_STRING appended with>&ssl=true&sslmode=require
+quarkus.datasource.jdbc.url=<the POSTGRES_CONNECTION_STRING_SSL value>
 ```
 
-## Execute the Quarkus application locally to test the remote database connection
+## Run the Quarkus application locally to test the remote database connection
+
+Use this command to run the application locally: 
 
 ```shell
-./mvnw clean quarkus:dev
+./mvnw clean quarkus:dev    # On Mac or Linux
+mvnw.cmd clean quarkus:dev  # On Windows
 ```
 
-Once Quarkus is up and running, create a few to-dos with the following `cURL` commands in a separate terminal window:
+When Quarkus is running, create a few to-dos by using the following cURL commands in a separate terminal window:
 
 ```bash
 curl --header "Content-Type: application/json" \
@@ -110,25 +118,29 @@ curl --header "Content-Type: application/json" \
     http://127.0.0.1:8080/api/todos
 ```
 
-Now check that the to-dos are in the database with the following Azure CLI command:
+Next, check that the to-dos are in the database by accessing the GET endpoint that's defined in the to-do app:
 
 ```bash
-az postgres flexible-server execute \
-    --name "$AZ_POSTGRES_SERVER_NAME" \
-    --database-name "$AZ_POSTGRES_DB_NAME" \
-    --admin-user "$AZ_POSTGRES_USERNAME" \
-    --admin-password "$AZ_POSTGRES_PASSWORD" \
-    --querytext "select * from Todo" \
-    --output table
+curl http://127.0.0.1:8080/api/todos
 ```
 
-You should have the following output:
+You should see the following output:
 
-```bash
-Createdat                   Description                         Details                                                         Done
---------------------------  ----------------------------------  --------------------------------------------------------------  ------
-2022-12-30T16:50:56.182820  Take Quarkus MS Learn               Take the MS Learn on deploying Quarkus to Azure Container Apps  True
-2022-12-30T16:51:08.789207  Take Azure Container Apps MS Learn  Take the ACA Learn module                                       False
+```json
+[
+   {
+      "description" : "Take Quarkus MS Learn",
+      "details" : "Take the MS Learn on deploying Quarkus to Azure Container Apps",
+      "done" : true,
+      "id" : 1
+   },
+   {
+      "description" : "Take Azure Container Apps MS Learn",
+      "details" : "Take the ACA Learn module",
+      "done" : false,
+      "id" : 2
+   }
+]
 ```
 
-If you have the following output, then you've successfully executed the Quarkus application and connected to the remote PostgreSQL database.
+If you see this output, you have successfully run the Quarkus application and connected to the remote PostgreSQL database.

@@ -6,8 +6,8 @@ metadata:
   ms.date: 01/07/2021
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: cosmos-db
 title: Introduction to open source database migration to Azure Cosmos DB
 summary: In this module, you will gain an understanding of Cosmos DB and the main considerations when migrating to Cosmos DB.
 abstract: |
@@ -28,7 +28,7 @@ products:
 - azure
 - azure-cosmos-db
 subjects:
-- database
+- databases
 units:
 - learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.introduction
 - learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.cosmos-db-overview

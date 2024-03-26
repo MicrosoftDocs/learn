@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/17/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Create server-side programming constructs in Azure Cosmos DB for NoSQL
 prerequisites: |
   Before starting this learning path, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
@@ -20,8 +19,6 @@ roles:
 - developer
 products:
 - azure-cosmos-db
-subjects:
-- development-tools
 modules:
 - learn.wwl.build-multi-item-transactions-azure-cosmos-db-sql-api
 - learn.wwl.expand-query-transaction-functionality-azure-cosmos-db-sql-api

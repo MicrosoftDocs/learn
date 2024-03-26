@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-your-kernel.exercise-create-your-endpoint
+title: Exercise - Create your endpoint
+metadata:
+  title: Exercise - Create your endpoint
+  description: "Exercise - Create your endpoint"
+  ms.date: 02/27/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-create-your-endpoint.md)]

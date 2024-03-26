@@ -107,7 +107,7 @@ Identify the subtasks of *Design you site recovery solution on Azure*
     **Knowledge check**
 
     - You can't lose any data in your online transactional SQL database, how should you architect its resilience?
-        - Geo-replication (https://learn.microsoft.com/azure/sql-database/sql-database-designing-cloud-solutions-for-disaster-recovery#scenario-2-azure-regions-for-business-continuity-with-maximum-data-preservation)
+        - Geo-replication (/azure/sql-database/sql-database-designing-cloud-solutions-for-disaster-recovery#scenario-2-azure-regions-for-business-continuity-with-maximum-data-preservation)
     - What are the benefits of moving your data workloads to Azure Cosmos DB now that your online store is moving to multiple regions?
 
 1. **Summary**

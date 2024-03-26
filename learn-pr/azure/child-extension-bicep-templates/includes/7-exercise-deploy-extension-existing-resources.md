@@ -1,4 +1,4 @@
-Now that you've finished creating the database for your R&D team to use, you need to ensure that access to the database is logged. You have an existing Log Analytics workspace that you want these logs to be sent to. You also need to send the logs from the R&D team's storage account to the same Log Analytics workspace. In this exercise, you'll update your Bicep file to meet these requirements.
+Now that you finished creating the database for your R&D team to use, you need to ensure that access to the database is logged. You have an existing Log Analytics workspace that you want these logs to be sent to. You also need to send the logs from the R&D team's storage account to the same Log Analytics workspace. In this exercise, you update your Bicep file to meet these requirements.
 
 During the process, you'll:
 
@@ -46,9 +46,9 @@ New-AzOperationalInsightsWorkspace `
 
 Your R&D team needs to log all requests to the Azure Cosmos DB account. You decide to use the [Azure Monitor integration for Azure Cosmos DB](/azure/cosmos-db/cosmosdb-monitor-resource-logs) to collect the *DataPlaneRequests* log, which contains information about requests to Azure Cosmos DB.
 
-Now that you've created your simulated pre-existing Log Analytics workspace, you can reference it from within your Bicep template as an existing resource. You can use it as the destination for the Azure Cosmos DB logs.
+Now that you created your simulated pre-existing Log Analytics workspace, you can reference it from within your Bicep template as an existing resource. You can use it as the destination for the Azure Cosmos DB logs.
 
-To add diagnostics settings, do the following:
+To add diagnostics settings, use the following steps:
 
 1. In Visual Studio Code, open the *main.bicep* file in the editor and then, below the existing variable definitions, add the following code:
 
@@ -99,7 +99,7 @@ New-AzStorageAccount `
 
 ## Add diagnostics settings for storage account
 
-Your R&D team wants you to log all successful requests to the storage account they've created. You decide to use the [Azure Storage integration with Azure Monitor logs](/azure/storage/blobs/monitor-blob-storage) to achieve this. You decide to log all read, write, and delete activities within blob storage on the R&D team's storage account.
+Your R&D team wants you to log all successful requests to the storage account they created. You decide to use the [Azure Storage integration with Azure Monitor logs](/azure/storage/blobs/monitor-blob-storage) to achieve this goal. You decide to log all read, write, and delete activities within blob storage on the R&D team's storage account.
 
 You need to update your Bicep template to reference the storage account you created in the previous step.
 
@@ -111,13 +111,13 @@ You need to update your Bicep template to reference the storage account you crea
 
    :::code language="bicep" source="code/7-complete.bicep" range="11" :::
 
-1. At the bottom of the file, under the resource definitions, add the following:
+1. At the bottom of the file, under the resource definitions, add the following definition:
 
    :::code language="bicep" source="code/7-complete.bicep" range="73-79" :::
 
    Notice that both of these resources use the `existing` keyword.
 
-1. At the bottom of the file, below the storage account definition you've just added, add the following:
+1. At the bottom of the file, below the storage account definition that you added in the previous step, add the following code:
 
    :::code language="bicep" source="code/7-complete.bicep" range="81-101" :::
 
@@ -157,7 +157,7 @@ New-AzResourceGroupDeployment `
 
 ### Check your deployment
 
-1. In your browser, go back to the Azure portal. Go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment.
+1. In your browser, go back to the Azure portal. Go to your resource group. You still see one successful deployment, because the deployment used the same name as the first deployment.
 
 1. Select the **1 Succeeded** link.
 
@@ -165,13 +165,13 @@ New-AzResourceGroupDeployment `
 
     :::image type="content" source="../media/7-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with the Azure Cosmos DB resources as well as two resources with type Microsoft.Insights/diagnosticSettings." border="true":::
 
-   Notice that there are two resources listed with a type of `Microsoft.Insights/diagnosticSettings`. These are the extension resources you deployed. One of the resources was attached to the storage account and the other was attached to the Azure Cosmos DB account. Now you will verify that the Azure Cosmos DB diagnostic settings are configured correctly.
+   Notice that there are two resources listed with a type of `Microsoft.Insights/diagnosticSettings`. These resources are the extension resources you deployed. One of the resources was attached to the storage account and the other was attached to the Azure Cosmos DB account. Now you can verify that the Azure Cosmos DB diagnostic settings are configured correctly.
 
-1. Select the Azure Cosmos DB account resource. The portal will open to the Azure Cosmos DB account.
+1. Select the Azure Cosmos DB account resource. The portal opens to the Azure Cosmos DB account.
 
     :::image type="content" source="../media/7-deployment-details-cosmos-db-selected.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with the Azure Cosmos DB account highlighted." border="true":::
 
-1. In the **Search** box in the top left, enter _Diagnostic settings_, and select the **Diagnostic settings** menu item.
+1. In the **Search** box in the top left, enter *Diagnostic settings*, and select the **Diagnostic settings** menu item.
 
     :::image type="content" source="../media/7-cosmos-db-search.png" alt-text="Screenshot of the Azure portal interface for the Azure Cosmos DB account, showing the search field with 'Diagnostic settings' entered and the 'Diagnostic settings' menu item highlighted." border="true":::
 
@@ -179,7 +179,7 @@ New-AzResourceGroupDeployment `
 
    :::image type="content" source="../media/7-cosmos-db-enable-full-text-query.png" alt-text="Screenshot of the Azure portal interface for the Azure Cosmos DB account showing Diagnostic settings page with prompt to enable full-text query." border="true":::
 
-1. Notice that there is a diagnostic setting named **route-logs-to-log-analytics**, which is configured to route the logs to the **ToyLogs** workspace.
+1. Notice that there's a diagnostic setting named **route-logs-to-log-analytics**, which is configured to route the logs to the **ToyLogs** workspace.
 
     :::image type="content" source="../media/7-cosmos-db-diagnostic-settings.png" alt-text="Screenshot of the Azure portal interface for the Azure Cosmos DB account, showing the diagnostic settings." border="true":::
 

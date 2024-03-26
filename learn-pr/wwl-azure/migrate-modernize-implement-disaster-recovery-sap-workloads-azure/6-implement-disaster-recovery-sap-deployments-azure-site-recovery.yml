@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-implement-disaster-recovery-sap-workloads-azure.implement-disaster-recovery-sap-deployments-azure-site-recovery
+title: Implement disaster recovery for SAP deployments across Azure regions with Azure Site Recovery
+metadata:
+  title: Implement disaster recovery for SAP deployments across Azure regions with Azure Site Recovery
+  description: "Implement disaster recovery for SAP deployments across Azure regions with Azure Site Recovery"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-implement-disaster-recovery-sap-deployments-azure-site-recovery.md)]

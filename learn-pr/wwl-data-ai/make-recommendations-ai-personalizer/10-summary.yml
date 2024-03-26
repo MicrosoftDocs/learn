@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.make-recommendations-ai-personalize.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 9/27/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/10-summary.md)]

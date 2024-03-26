@@ -2,20 +2,20 @@
 uid: learn.wwl.describe-concepts-of-cryptography
 metadata:
   title: Describe concepts of cryptography
-  description: "Describe concepts of cryptography"
-  ms.date: 10/27/2022
+  description: "Describe concepts of cryptography."
+  ms.date: 03/12/2024
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: security
 title: Describe concepts of cryptography
-summary: Cryptography is foundational to protecting the confidentiality, integrity, and availability of information; and defending against cyberattacks.  Throughout this module, you'll learn about the different elements of cryptography and their application in cybsecurity.
+summary: Cryptography is foundational to protecting the confidentiality, integrity, and availability of information; and defending against cyberattacks. Throughout this module, you'll learn about the different elements of cryptography and their application in cybsecurity.
 abstract: |
   After completing this module, you'll be able to:
-  *   Describe some of the basic concepts of cryptography
-  *   Describe encryption and is uses in cybersecurity
-  *   Describe hashing and digital signing
-  *   Describe the concept and use of digital certificates
+  - Describe some of the basic concepts of cryptography.
+  - Describe encryption and is uses in cybersecurity.
+  - Describe hashing and digital signing.
+  - Describe the concept and use of digital certificates.
 prerequisites: ""
 iconUrl: /training/achievements/cryptography-describe-concepts.svg
 levels:

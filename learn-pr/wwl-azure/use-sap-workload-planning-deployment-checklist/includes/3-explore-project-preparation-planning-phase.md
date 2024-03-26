@@ -68,7 +68,6 @@ Data reduction and data migration plan for transferring SAP data into Azure (in 
 The goal of automation in infrastructure deployments on Azure is to ensure deterministic results. Many customers use PowerShell or Azure CLI based scripts and Azure Resource Manager templates. But there are other open-source technologies (such as Terraform and Ansible) that can be used to deploy Azure infrastructure for SAP and even install SAP software. Examples can be found on GitHub at:
 
 - [SAP on Azure Deployment Automation Framework](https://github.com/Azure/sap-automation)
-- [SAP HANA Azure Resource Manager Installation](https://github.com/AzureCAT-GSI/SAP-HANA-ARM)
-
+  
 > [!NOTE]
 > Define a regular design and deployment review cadence between you as a customer, system integrator, Microsoft, and other involved parties.

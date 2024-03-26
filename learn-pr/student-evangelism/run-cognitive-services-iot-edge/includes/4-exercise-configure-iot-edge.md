@@ -37,7 +37,7 @@ az iot hub create --resource-group <resource-group> --name {hub_name} --sku F1 -
 
 Create a device identity for your IoT Edge device.
 
-Since IoT Edge devices behave and can be managed differently than typical IoT devices, declare this identity to be for an IoT Edge device with the --edge-enabled flag.
+Since IoT Edge devices behave and can be managed differently than typical IoT devices, declare this identity to be for an IoT Edge device with the *--edge-enabled* flag.
 
 > [!NOTE]
 > If you get an error because there's already one free hub in your subscription, change the SKU to **S1**. Each subscription can only have one free IoT hub. If you get an error that the IoT hub name isn't available, it means that someone else already has a hub with that name. 
@@ -80,7 +80,10 @@ az deployment group create \
 
 Make sure that your password(**adminPasswordOrKey**) must be at least 12 characters long and have three of four of the following: lowercase characters, uppercase characters, digits, and special characters.
 
-It may take a few minutes to create and start the new virtual machine. Once the deployment is complete, you should receive JSON-formatted output in the CLI that contains the SSH information to connect to the virtual machine. Copy the value of the **public SSH** entry of the **outputs** section:
+It may take a few minutes to create and start the new virtual machine. Once the deployment is complete, you should receive JSON-formatted output in the CLI that contains the SSH information to connect to the virtual machine. Copy the value of the **public SSH** entry of the **outputs** section.
+
+> [!IMPORTANT]
+> The IoT Edge language detection module requires your virtual machine to have at least 8 GB of memory and 16 GB of disk storage. The module fails if you use the default VM size defined in the deployment template. Resize of your virtual machine to at least size **D2s_v3**. For information resizing virtual machines, see [Change the size of a virtual machine](/azure/virtual-machines/resize-vm). For more information expanding disk storage, see [How to expand virtual hard disks attached to a Windows virtual machine](/azure/virtual-machines/windows/expand-os-disk).
 
 ## Viewing the IoT Edge runtime status
 
@@ -93,7 +96,7 @@ ssh {admin username}@{DNS name}
 To find your DNS name:
 
 1. Go to the resource group you created
-2. Click on the virtual machine resource
+2. Select on the virtual machine resource
 3. In the **Overview** page, you'll find your DNS name
 
 ## Checking if the IoT Edge device is configured

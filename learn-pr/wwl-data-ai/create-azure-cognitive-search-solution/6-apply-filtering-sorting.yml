@@ -4,12 +4,12 @@ title: Apply filtering and sorting
 metadata:
   title: Apply filtering and sorting
   description: "Apply filtering and sorting"
-  ms.date: 07/30/2021
+  ms.date: 12/11/2023
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.topic: unit
 azureSandbox: false
+labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/6-apply-filtering-sorting.md)]

@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.chat-completions.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Answer the questions to see what you learned.
+  ms.date: 12/11/2023
+  author: softchris
+  ms.author: chnoring
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  Answer the following questions to see what you learned. 
+quiz:
+  questions:
+  - content: A customer wants to interact with an LLM by using chat. What are the two main approaches they can take?
+    choices:
+    - content: Carrying out a chat and simulating a chat.
+      isCorrect: true
+      explanation: Correct. The two main approaches to interact with an LLM using chat are carrying out a chat and simulating a chat.
+    - content: Sending an email to the LLM and receiving a response via email.
+      isCorrect: false
+      explanation: Incorrect. This approach involves sending an email, not a chat.
+    - content: Sending a voice message to the LLM and receiving a text response.
+      isCorrect: false
+      explanation: Incorrect. This approach involves sending a voice message, not a chat.
+  - content: A customer wants to interact with an Azure AI Studio deployment in the chat playground. What are the steps they need to follow to complete this exercise?
+    choices:
+    - content: The customer needs an AWS subscription to access Azure OpenAI Service.
+      isCorrect: false
+      explanation: Incorrect. An AWS subscription isn't required to access Azure OpenAI Service.
+    - content: The customer needs to apply for access to Azure OpenAI Service by completing a form on the Azure portal.
+      isCorrect: false
+      explanation: Incorrect. The customer needs to apply for access to Azure OpenAI Service by completing a form, but not on the Azure portal.
+    - content: The customer needs an Azure subscription, access to Azure OpenAI Service, and an Azure OpenAI resource with a model deployed. They can then open the Studio chat playground and select a model deployment. From there, they can use basic prompts to interact with the deployment.
+      isCorrect: true
+      explanation: Correct. The customer needs an Azure subscription, access to Azure OpenAI Service, and an Azure OpenAI resource with a model deployed. They can then open the Studio chat playground and select a model deployment. From there, they can use basic prompts to interact with the deployment.
+  - content: A retail company is deploying a chatbot to help with customer service. Which of the following actions is NOT a function of the system message?
+    choices:
+    - content: Defining the model's profile, capabilities, and limitations for the scenario.
+      isCorrect: false
+      explanation: Incorrect. The system message can define the model's profile, capabilities, and limitations for the scenario.
+    - content: Generating responses to customer inquiries based on the chatbot's personal preferences.
+      isCorrect: true
+      explanation: Correct. The system message isn't used to generate responses to customer inquiries based on the chatbot's personal preferences. Rather, it guides the AI system's behavior and improves system performance.
+    - content: Providing examples to demonstrate the intended behavior of the model.
+      isCorrect: false
+      explanation: Incorrect. The system message can provide examples to demonstrate the intended behavior of the model.
+
