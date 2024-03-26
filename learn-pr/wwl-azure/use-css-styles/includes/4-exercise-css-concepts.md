@@ -4,7 +4,7 @@ This module uses [vscode.dev](https://vscode.dev/) - a web-based version of Visu
 
 ## Create a Project
 
-You'll start by creating a folder, setting up your tooling, and creating a "swing" using CodeSwing in vscode.dev. A swing will automatically display the results of your code in vscode.dev. Using VSCode with CodeSwing allows you to quickly make modifications with a preview of updates happening in real time.
+You'll start by creating a folder, setting up your tooling, and creating a "swing" using CodeSwing in vscode.dev. A swing will automatically display the results of your code in vscode.dev. Using Microsoft Visual Studio Code with CodeSwing allows you to quickly make modifications with a preview of updates happening in real time.
 
 1. Create a folder on your desktop named **resume**.
 1. Open [vscode.dev](https://vscode.dev).
