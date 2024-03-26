@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-  ms.service: azure
 durationInMinutes: 60
 content: |
   [!include[](includes/12-configure-pipelines-code-with-yaml.md)]

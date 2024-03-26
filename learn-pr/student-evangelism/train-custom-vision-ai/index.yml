@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/10/2021
   author: sguthals
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
   ms.service: azure-ai-custom-vision
 title: Use AI to recognize objects in images by using the Custom Vision service
