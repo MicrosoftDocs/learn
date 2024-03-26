@@ -8,9 +8,7 @@ metadata:
   author: roygara
   ms.author: rogarana
   ms.topic: unit
-  ms.custom:
-    - devx-track-azurecli
-    - devx-track-azurepowershell
+  ms.custom: devx-track-azurecli, devx-track-azurepowershell, linux-related-content
   zone_pivot_groups: platform-cloud
 azureSandbox: false
 # azureSandbox: true
