@@ -5,3 +5,4 @@ Over time, you'll likely find that you need to use variations of your scripts. F
 In these examples, there are items in the script that are changing. The first and simplest way to address this is to put values that are likely to change in a variable. By placing that variable at the beginning of the script where it's easily accessible, you make it easier to modify the script. However, this still requires modification of the script.
 
 In an environment where many administrators share a common set of scripts, it's better not to modify scripts that'll go through an approval process. If scripts are digitally signed, each modification requires that the script be signed again. It's preferable to accept user input for values that change, rather than modify scripts.
+
