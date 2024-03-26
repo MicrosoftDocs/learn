@@ -3,12 +3,14 @@ uid: learn.wwl.create-run-scripts-use-windows-powershell
 metadata:
   title: Create and run scripts by using Windows PowerShell
   description: "This module explains how to create and run scripts."
-  ms.date: 03/23/2024
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.custom:
   - N/A
+  ms.service: powershell
+  ms.subservice: cmdlets
   ai-usage: human-only
 title: Create and run scripts by using Windows PowerShell
 summary: This module explains how to create and run scripts.
