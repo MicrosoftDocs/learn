@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: berryivor
   ms.topic: unit
-  ms.service: azure-ai-personalizer
 durationInMinutes: 6
 content: |
   [!include[](includes/6-use-inference-explainability.md)]
