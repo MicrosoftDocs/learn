@@ -23,7 +23,7 @@ This VM will run a specific configuration that stresses the CPU and generates th
 
     ```azurecli
     az vm create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name vm1 \
         --location eastUS \
         --image Ubuntu2204 \
@@ -97,7 +97,7 @@ Let's create a new metric alert similar to the one you set up in the Azure porta
 
     ```bash
     VMID=$(az vm show \
-            --resource-group <rgn>[sandbox resource group name]</rgn> \
+            --resource-group "<rgn>[sandbox resource group name]</rgn>" \
             --name vm1 \
             --query id \
             --output tsv)
@@ -108,7 +108,7 @@ Let's create a new metric alert similar to the one you set up in the Azure porta
     ```azurecli
     az monitor metrics alert create \
         -n "Cpu80PercentAlert" \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --scopes $VMID \
         --condition "max percentage CPU > 80" \
         --description "Virtual machine is running at or greater than 80% CPU utilization" \
