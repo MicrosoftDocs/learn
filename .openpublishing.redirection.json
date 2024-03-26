@@ -35510,6 +35510,11 @@
       "source_path": "learn-pr/data-ai-cert/data-engineering-processes/3-data-engineering-practices.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/data-engineering-processes/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "redirect_document_id": false
     }
   ]
 }
