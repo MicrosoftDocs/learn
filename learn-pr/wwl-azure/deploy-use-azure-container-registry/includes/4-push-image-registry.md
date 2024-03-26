@@ -11,7 +11,8 @@ To push an image to an Azure Container registry, you must first have an image. I
 
 Pull the `hello-world` image from Microsoft Container Registry.
 
-```
+```azurecli
+docker pull mcr.microsoft.com/hello-world
 
 ```
 
@@ -20,13 +21,18 @@ Before you can push an image to your registry, you must tag it with the fully qu
 
 Tag the image using the [docker tag](https://docs.docker.com/engine/reference/commandline/tag/) command. Replace `<login-server>` with the login server name of your ACR instance.
 
-```
+```azurecli
+docker tag mcr.microsoft.com/hello-world 
+  
+   /hello-world:v1
 
+  
 ```
 
 For example:
 
-```
+```azurecli
+docker tag mcr.microsoft.com/hello-world newregistryapl.azurecr.io/hello-world:v1
 
 ```
 
@@ -35,13 +41,18 @@ For example:
 
 Use [docker push](https://docs.docker.com/engine/reference/commandline/push/) to push the image to the registry instance. Replace `<login-server>` with the sign-in server name of your registry instance. This example creates the **hello-world** repository, containing the `hello-world:v1 image`.<br>
 
+```azurecli
+docker push 
+  
+   /hello-world:v1
+
+  
 ```
 
-```
+For example
 
-For example:
-
-```
+```azurecli
+docker push newregistryapl.azurecr.io/hello-world:v1
 
 ```
 
@@ -50,6 +61,10 @@ For example:
 
 After pushing the image to your container registry, remove the `hello-world:v1 image` from your local Docker environment. The [docker rmi](https://docs.docker.com/engine/reference/commandline/rmi/) command doesn't remove the image from the **hello-world** repository in your Azure container registry.
 
-```
+```azurecli
+docker rmi 
+  
+   /hello-world:v1
 
+  
 ```
