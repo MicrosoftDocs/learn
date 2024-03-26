@@ -2,7 +2,7 @@ To control traffic flow within your virtual network, you must learn the purpose 
 
 ## Azure routing
 
-Network traffic in Azure is automatically routed across Azure subnets, virtual networks, and on-premises networks. This routing is controlled by system routes, which are assigned by default to each subnet in a virtual network. With these system routes, any Azure virtual machine that gets deployed into a virtual network can communicate with any other in the network. These virtual machines are also potentially accessible from on-premises through a hybrid network or the internet.
+Network traffic in Azure is automatically routed across Azure subnets, virtual networks, and on-premises networks. System routes control this routing. They're assigned by default to each subnet in a virtual network. With these system routes, any Azure virtual machine that is deployed into a virtual network can communicate with any other in the network. These virtual machines are also potentially accessible from on-premises through a hybrid network or the internet.
 
 You can't create or delete system routes, but you can override the system routes by adding custom routes to control traffic flow to the next hop.
 
@@ -27,7 +27,7 @@ The following diagram shows an overview of system routes and shows how traffic f
 
 :::image type="content" source="../media/2-system-routes-subnets-internet.svg" alt-text="Diagram of traffic flowing among subnets and the internet.":::
 
-Within Azure, there are other system routes. Azure will create these routes if the following capabilities are enabled:
+Within Azure, there are other system routes. Azure creates these routes if the following capabilities are enabled:
 
 - Virtual network peering
 - Service chaining
@@ -54,7 +54,7 @@ Virtual network endpoints extend your private address space in Azure by providin
 
 ## Custom routes
 
-System routes might make it easy for you to quickly get your environment up and running, but there are many scenarios in which you'll want to more closely control the traffic flow within your network. For example, you might want to route traffic through an NVA or through a firewall. This control is possible with custom routes.
+System routes might make it easy for you to quickly get your environment up and running. However, there are many scenarios in which you want to more closely control the traffic flow within your network. For example, you might want to route traffic through an NVA or through a firewall. This control is possible with custom routes.
 
 You have two options for implementing custom routes: create a user-defined route, or use Border Gateway Protocol (BGP) to exchange routes between Azure and on-premises networks.
 
@@ -66,7 +66,7 @@ For example, you might have a network with two subnets and want to add a virtual
 
 When creating user-defined routes, you can specify these next hop types:
 
-- **Virtual appliance**: A virtual appliance is typically a firewall device used to analyze or filter traffic that is entering or leaving your network. You can specify the private IP address of a NIC attached to a virtual machine so that IP forwarding can be enabled. Or you can provide the private IP address of an internal load balancer.
+- **Virtual appliance**: A virtual appliance is typically a firewall device used to analyze or filter traffic that is entering or leaving your network. You can specify the private IP address of a Network Interface Card (NIC) attached to a virtual machine so that IP forwarding can be enabled. Or you can provide the private IP address of an internal load balancer.
 - **Virtual network gateway**: Use to indicate when you want routes for a specific address to be routed to a virtual network gateway. The virtual network gateway is specified as a VPN for the next hop type.
 - **Virtual network**: Use to override the default system route within a virtual network.
 - **Internet**: Use to route traffic to a specified address prefix that is routed to the internet.
@@ -80,9 +80,9 @@ You can specify a service tag as the address prefix for a user-defined route ins
 
 ### Border gateway protocol
 
-A network gateway in your on-premises network can exchange routes with a virtual network gateway in Azure by using BGP. BGP is the standard routing protocol that is normally used to exchange routing and information among two or more networks. BGP is used to transfer data and information between different host gateways like on the internet or between autonomous systems.
+A network gateway in your on-premises network can exchange routes with a virtual network gateway in Azure by using BGP. BGP is the standard routing protocol that is normally used to exchange routing information among two or more networks. BGP is used to transfer data and information between autonomous systems on the internet, such as different host gateways.
 
-You'll typically use BGP to advertise on-premises routes to Azure when you're connected to an Azure datacenter through Azure ExpressRoute. You can also configure BGP if you connect to an Azure virtual network by using a VPN site-to-site connection.
+Typically, you use BGP to advertise on-premises routes to Azure when you're connected to an Azure datacenter through Azure ExpressRoute. You can also configure BGP if you connect to an Azure virtual network by using a VPN site-to-site connection.
 
 The following diagram shows a topology with paths that can pass data between Azure VPN Gateway and on-premises networks:
 
@@ -92,7 +92,7 @@ BGP offers network stability, because routers can quickly change connections to 
 
 ## Route selection and priority
 
-If multiple routes are available in a route table, Azure uses the route with the longest prefix match. For example, if a message gets sent to the IP address 10.0.0.2, but two routes are available with the 10.0.0.0/16 and 10.0.0.0/24 prefixes, Azure selects the route with the 10.0.0.0/24 prefix because it's more specific.
+If multiple routes are available in a route table, Azure uses the route with the longest prefix match. For example, a message is sent to the IP address 10.0.0.2, but two routes are available with the 10.0.0.0/16 and 10.0.0.0/24 prefixes. Azure selects the route with the 10.0.0.0/24 prefix because it's more specific.
 
 The longer the route prefix, the shorter the list of IP addresses available through that prefix. When you use longer prefixes, the routing algorithm can select the intended address more quickly.
 

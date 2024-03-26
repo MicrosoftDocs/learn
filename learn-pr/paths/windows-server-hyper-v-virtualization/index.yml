@@ -10,7 +10,7 @@ metadata:
 title: Windows Server Hyper-V and Virtualization
 prerequisites: |
   To get the best experience from this learning path, you should have knowledge and experience of:
-  - Windows Server 2012 or later.
+  - Windows Server 2012 R2 or later.
   - Working with virtualization technologies.
 summary: |
   Learn to implement and manage Windows Server virtual machines (VMs) and container workloads using Windows Server Hyper-V.

@@ -6,7 +6,7 @@ metadata:
   ms.date: 01/25/2023
   author: GitHubber17
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
 title: Use control flows in Go
 summary: Learn how to use control flows in Go.

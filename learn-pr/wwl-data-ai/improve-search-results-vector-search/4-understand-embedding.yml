@@ -1,6 +1,5 @@
 ### YamlMime:ModuleUnit
 uid: learn.improve-search-results-vector-search.understand-embedding
-
 title: Understand embedding
 metadata:
   title: Understand embedding
@@ -9,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: berryivor
   ms.topic: unit
-  ms.service: cognitive-search
 durationInMinutes: 4
 content: |
   [!include[](includes/4-understand-embedding.md)]
