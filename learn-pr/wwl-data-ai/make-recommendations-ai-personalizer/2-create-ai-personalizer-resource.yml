@@ -1,6 +1,5 @@
 ### YamlMime:ModuleUnit
 uid: learn.make-recommendations-ai-personalize.create-ai-personalizer-resource
-
 title: Create Azure AI Personalizer resource
 metadata:
   title: Create Azure AI Personalizer resource
@@ -9,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: berryivor
   ms.topic: unit
-  ms.service: azure-ai-personalizer
   ms.custom: devx-track-azurecli
 durationInMinutes: 6
 content: |
