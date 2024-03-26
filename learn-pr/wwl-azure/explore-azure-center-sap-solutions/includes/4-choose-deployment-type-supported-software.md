@@ -32,7 +32,7 @@ You can use `latest` if you want to use the latest image and not a specific olde
   Get-AzVMImage -Location $locName -PublisherName $pubName -Offer $offerName -Sku $skuName | Select Version
   ```
   
-  where, for example:
+  Where, for example:
 
   ```Powershell
   $locName = "eastus"
