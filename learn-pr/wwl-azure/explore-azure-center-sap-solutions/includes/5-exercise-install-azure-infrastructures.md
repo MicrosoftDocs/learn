@@ -2,6 +2,7 @@ To create a deployment with Azure Center for SAP solutions (ACSS) Azure infrastr
 
 Supplemental options for this lesson include:
 
+- A detailed set of lab steps are available in AZ-120 GitHub lab Module 4: Design and implement an infrastructure to support SAP workloads on Azure - [Exercise 2: Deploy the infrastructure that will host SAP workloads in Azure by using Azure Center for SAP solutions](https://go.microsoft.com/fwlink/?linkid=2261024&clcid=0x409).
 - Interactive Guides including clickable simulations are available for:
   - [Installing ACSS prerequisites](https://mslearn.cloudguides.com/guides/Azure%20Center%20for%20SAP%20solutions%20-%20Complete%20the%20prerequisites%20for%20deploying%20and%20registering%20SAP%20systems).
   - [Infrastructure deployment](https://mslearn.cloudguides.com/guides/Azure%20Center%20for%20SAP%20solutions%20-%20Deploy%20an%20SAP%20system) and the installation of the SAP software.
@@ -66,7 +67,7 @@ Supplemental options for this lesson include:
 
     - For **SAP Transport Options**, you can choose to **Create a new SAP transport Directory** or **Use an existing SAP transport Directory** or completely skip the creation of transport directory by choosing **Don't include SAP transport directory** option. Currently, only NFS on AFS storage account fileshares is supported.
 
-    - If you choose to **Create a new SAP transport Directory**, this will create and mount a new transport fileshare on the SID. By default, this option creates an NFS on AFS storage account and a transport fileshare in the resource group where the SAP system will be deployed. However, you can choose to create this storage account in a different resource group by providing the resource group name in **Transport Resource Group**. You can also provide a custom name for the storage account to be created under the **Storage account name** section. Leaving the **Storage account name** blank creates the storage account with the service default name **""SIDname""nfs""random characters""** in the chosen transport resource group. Creating a new transport directory creates a ZRS-based replication for zonal deployments and LRS-based replication for nonzonal deployments. If your region doesn't support ZRS replication, deploying a zonal VIS leads to a failure. In such cases, you can deploy a transport fileshare outside ACSS with ZRS replication, and then create a zonal VIS where you select **Use an existing SAP transport Directory** to mount the precreated fileshare.
+    - If you choose to **Create a new SAP transport Directory**, this will create and mount a new transport fileshare on the SID. By default, this option creates an NFS on AFS storage account and a transport fileshare in the resource group where the SAP system will be deployed. However, you can choose to create this storage account in a different resource group by providing the resource group name in **Transport Resource Group**. You can also provide a custom name for the storage account to be created under the **Storage account name** section. Leaving the **Storage account name** blank creates the storage account with the service default name **`"SIDname""nfs""random characters"`** in the chosen transport resource group. Creating a new transport directory creates a ZRS-based replication for zonal deployments and LRS-based replication for nonzonal deployments. If your region doesn't support ZRS replication, deploying a zonal VIS leads to a failure. In such cases, you can deploy a transport fileshare outside ACSS with ZRS replication, and then create a zonal VIS where you select **Use an existing SAP transport Directory** to mount the precreated fileshare.
 
     - If you choose to **Use an existing SAP transport Directory**, select the pre-existing NFS fileshare under the **File share name** option. The existing transport fileshare is mounted only on this SID. The selected fileshare must be in the same region as that of the SAP system being created. Currently, file shares existing in a different region can't be selected. Under the **Private Endpoint** option, provide the associated private endpoint of the storage account where the selected fileshare exists.
 
@@ -82,7 +83,7 @@ Supplemental options for this lesson include:
 
 1. Select **Next: Virtual machines**.
 
-1. In the **Virtual machines** tab, generate SKU size and total VM count recommendations for each SAP instance from ACSS:
+1. In the **Virtual machines** tab, generate SKU size and total virtual machine count recommendations for each SAP instance from ACSS:
 
     - For **Generate Recommendation based on**, under **Get virtual machine recommendations**, select **SAP Application Performance Standard (SAPS)**.
 
@@ -92,16 +93,16 @@ Supplemental options for this lesson include:
 
     - Select **Generate Recommendation**.
 
-    - Review the VM size and count recommendations for ASCS, Application Server, and Database instances.
+    - Review the virtual machine size and count recommendations for ASCS, Application Server, and Database instances.
 
     - To change a SKU size recommendation, select the drop-down menu or select **See all sizes**. Filter the list or search for your preferred SKU.
 
-    - To change the Application server count, enter a new count for **Number of VMs** under **Application virtual machines**.
+    - To change the Application server count, enter a new count for **Number of virtual machines** under **Application virtual machines**.
 
         >[!NOTE]
-        >The number of VMs for ASCS and Database instances isn't editable. The default number for each is **2**.
+        >The number of virtual machines for ASCS and Database instances isn't editable. The default number for each is **2**.
         >
-        >ACSS automatically configures a database disk layout for the deployment. To view the layout for a single database server, make sure to select a VM SKU. Then, select **View disk configuration**. If there's more than one database server, the layout applies to each server.
+        >ACSS automatically configures a database disk layout for the deployment. To view the layout for a single database server, make sure to select a virtual machine SKU. Then, select **View disk configuration**. If there's more than one database server, the layout applies to each server.
 
 1. Select **Next: Visualize Architecture**.
 
@@ -128,7 +129,7 @@ Supplemental options for this lesson include:
 
 1. Select **Next: Tags**.
 
-1. Optionally, enter tags to apply to all resources created by the ACSS process. These resources include the VIS, ASCS instances, Application Server instances, Database instances, VMs, disks, and NICs.
+1. Optionally, enter tags to apply to all resources created by the ACSS process. These resources include the VIS, ASCS instances, Application Server instances, Database instances, virtual machines, disks, and NICs.
 
 1. Select **Review + Create**.
 

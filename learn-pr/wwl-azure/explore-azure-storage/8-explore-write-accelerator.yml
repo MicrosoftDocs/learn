@@ -3,8 +3,8 @@ uid: learn.wwl.explore-azure-storage.explore-write-accelerator
 title: Explore Write Accelerator
 metadata:
   title: Explore Write Accelerator
-  description: "Explore Write Accelerator"
-  ms.date: 10/17/2023
+  description: "Improve the I/O latency of writes with Write Accelerator."
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

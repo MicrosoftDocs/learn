@@ -8,8 +8,7 @@ metadata:
   author: mikefrobbins
   ms.author: mirobb
   ms.topic: unit
-  ms.custom:
-    - devx-track-azurepowershell
+  ms.custom: devx-track-azurepowershell, linux-related-content
 durationInMinutes: 15
 interactive: powershell
 azureSandbox: true

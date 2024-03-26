@@ -4,12 +4,12 @@ title: Diagnose IP configuration issues
 metadata:
   title: Diagnose IP configuration issues
   description: "Diagnose IP configuration issues"
-  ms.date: 04/28/2023
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 9
 content: |
   [!include[](includes/4-diagnose-ip-configuration-issues.md)]
