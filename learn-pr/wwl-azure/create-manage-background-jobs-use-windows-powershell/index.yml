@@ -3,7 +3,7 @@ uid: learn.wwl.create-manage-background-jobs-use-windows-powershell
 metadata:
   title: Create and manage background jobs using Windows PowerShell
   description: "This module explains the three types of jobs: local jobs, Windows PowerShell remote jobs, and Common Information Model (CIM)/Windows Management Instrumentation (WMI) jobs. These job types form the basis of the Windows PowerShell job system."
-  ms.date: 03/23/2024
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module-standard-task-based
