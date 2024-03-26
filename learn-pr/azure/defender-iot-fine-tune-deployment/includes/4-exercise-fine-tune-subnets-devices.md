@@ -24,24 +24,6 @@ If you find a device incorrectly configured, make the following changes:
 We recommend giving a meaningful name that specifies the subnet's network role. Subnet names can have up to 60 characters.
 
 Once all changes are made, return to **System setting** > **Deployment** and run the **Analyze** feature again and review the results to ensure the set up is now correct.  
-<!--updating the subnets listed, where do they find this data? they should have it from the original network map!? 
-
-To update the subnet data, adjust the subnet settings. These adjustments involve changing subnet addresses that change the location of a device within the sensor's device map.
-
-1. Select **System settings > Basic > Subnets**
-1. In the **Subnets** pane, update a subnet by typing the new settings for each field, using the following options:
-
-|Name  |Description  |
-|---------|---------|
-| **IP address** | < Value > |
-| **Mask**| < Value > |
-| **Name**| < Value >|
-| **Segregated**     |   Select to show this subnet separately when displaying the device map according to Purdue level.  |
-
-We recommend giving a meaningful name that specifies the subnet's network role. Subnet names can have up to 60 characters.
-
-When all of the subnets are correctly set up, select **Save**.
-<!-- end of section-->
 
 ## View and update detected devices
 
@@ -60,7 +42,7 @@ To make changes to a device detail:
 1. Select **Edit**. <!-- this needs to be fixed, but need to discuss with LW first.  how will we show this? Ask THeo for example -->
 
 You can update the following fields:
-
+<!-- why does this come out formatted as a code box??-->
 - Authorized device
 - Name
 - Description

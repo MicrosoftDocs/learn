@@ -29,7 +29,7 @@ Changes are made and then the new subnet settings are saved.
 ## Update device details
 
 Check the device details are correct using the **Device inventory**. To check the device details you'll need the following information for each device:
-
+<!-- why does this come out formatted as a code box??-->
 - Authorized device
 - Name
 - Description
