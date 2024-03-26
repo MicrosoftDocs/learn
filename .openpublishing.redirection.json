@@ -35495,6 +35495,131 @@
       "source_path": "learn-pr/paths/azure-for-the-data-engineer/index.md",
       "redirect_url": "/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/data-engineering-processes/index.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/data-engineering-processes/4-architecturing-project.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/data-engineering-processes/3-data-engineering-practices.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/data-engineering-processes/1-introduction.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/data-engineering-processes/2-roles-and-responsibilities.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/data-engineering-processes/5-summary.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/evolving-world-of-data/index.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/evolving-world-of-data/2-data-abundance.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/evolving-world-of-data/1-introduction.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/evolving-world-of-data/6-summary.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/evolving-world-of-data/3-systems-on-premise-vs-cloud.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/evolving-world-of-data/4-understand-job-responsibility.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/evolving-world-of-data/5-use-cases-for-cloud.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/survey-the-azure-data-platform/index.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/survey-the-azure-data-platform/5-azure-cosmos-db.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/survey-the-azure-data-platform/9-azure-hdinsight.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/survey-the-azure-data-platform/10-azure-other-data-platform-services.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/survey-the-azure-data-platform/6-azure-sql-db.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/survey-the-azure-data-platform/7-azure-sql-dw.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/survey-the-azure-data-platform/1-introduction.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/survey-the-azure-data-platform/4-store-data-using-azure-data-lake.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/survey-the-azure-data-platform/3-store-data-using-azure-store-account.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/survey-the-azure-data-platform/8-stream-analytics.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/survey-the-azure-data-platform/2-structured-vs-non-structured.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/survey-the-azure-data-platform/11-summary.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "redirect_document_id": false
     }
   ]
 }
