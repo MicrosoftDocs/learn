@@ -29,6 +29,5 @@ subjects:
 - cloud-computing
 - migration
 units:
-- learn.wwl.create-app-migration-plan.summary
 badge:
   uid: learn.wwl.create-app-migration-plan.badge
