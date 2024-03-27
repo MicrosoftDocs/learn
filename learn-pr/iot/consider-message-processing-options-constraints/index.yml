@@ -34,7 +34,6 @@ subjects:
 - iot
 units:
 - learn.wwl.consider-message-processing-options-constraints.introduction
-- learn.wwl.consider-message-processing-options-constraints.compare-iot-hub-message-routing-event-grid-integration
 - learn.wwl.consider-message-processing-options-constraints.examine-message-enrichments-for-d2c-messages
 - learn.wwl.consider-message-processing-options-constraints.examine-iot-hub-quotas-throttling
 - learn.wwl.consider-message-processing-options-constraints.knowledge-check
