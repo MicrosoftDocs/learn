@@ -29,6 +29,5 @@ products:
 subjects:
 - cloud-computing
 units:
-- learn.wwl.monitor-health-performance-of-your-web-applications.summary
 badge:
   uid: learn.wwl.monitor-health-performance-of-your-web-applications.badge
