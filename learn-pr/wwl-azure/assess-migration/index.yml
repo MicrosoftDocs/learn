@@ -31,7 +31,6 @@ subjects:
 units:
 - learn.wwl.create-app-migration-plan.introduction
 - learn.wwl.create-app-migration-plan.explore-reasons-migrate
-- learn.wwl.create-app-migration-plan.assess-your-workload
 - learn.wwl.create-app-migration-plan.examine-migration-cost
 - learn.wwl.create-app-migration-plan.identify-priorities-dependencies
 - learn.wwl.create-app-migration-plan.discover-optimization-secure-manage
