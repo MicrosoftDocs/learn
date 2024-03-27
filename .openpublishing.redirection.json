@@ -35690,6 +35690,11 @@
       "source_path": "learn-pr/wwl-azure/move-web-application-to-app-services/2-examine-hosting-options.md",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/move-web-application-to-app-services/7-exercise-migrate-dotnet-app.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
