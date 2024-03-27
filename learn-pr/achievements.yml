@@ -3143,3 +3143,8 @@ achievements:
   title: Move app data to the cloud
   summary: Learn about Azure's data solutions and perform a data migration.
   iconUrl: /learn/achievements/move-application-data-to-cloud.svg
+- uid: learn.wwl.consider-message-processing-options-constraints.badge
+  type: badge
+  title: Consider Azure IoT Hub message processing options and constraints
+  summary: This module introduces you to services and service features that can be used with, or as an alternative to, IoT Hub message routing to process messages. It also examines IoT Hub message processing limits.
+  iconUrl: /training/achievements/messaging-processing-options.svg
