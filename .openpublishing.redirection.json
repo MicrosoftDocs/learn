@@ -35620,6 +35620,11 @@
       "source_path": "learn-pr/data-ai-cert/survey-the-azure-data-platform/11-summary.md",
       "redirect_url": "/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/modernize-net-java/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
