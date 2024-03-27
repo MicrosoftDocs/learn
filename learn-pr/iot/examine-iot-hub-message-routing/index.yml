@@ -33,9 +33,6 @@ subjects:
 units:
 - learn.wwl.examine-iot-hub-message-routing.introduction
 - learn.wwl.examine-iot-hub-message-routing.review-message-processing-concepts
-- learn.wwl.examine-iot-hub-message-routing.examine-common-message-format
-- learn.wwl.examine-iot-hub-message-routing.examine
-- learn.wwl.examine-iot-hub-message-routing.examine-query-syntax
 - learn.wwl.examine-iot-hub-message-routing.knowledge-check
 - learn.wwl.examine-iot-hub-message-routing.summary
 badge:
