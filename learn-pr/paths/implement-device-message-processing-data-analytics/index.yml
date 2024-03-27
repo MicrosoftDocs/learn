@@ -31,7 +31,6 @@ products:
 subjects:
 - iot
 modules:
-- learn.wwl.get-started-cloud-storage-for-iot
 - learn.wwl.explore-message-processing-tasks
 trophy:
   uid: learn.wwl.implement-device-message-processing-data-analytics.trophy
