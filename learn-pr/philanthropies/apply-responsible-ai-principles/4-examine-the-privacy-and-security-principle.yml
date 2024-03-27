@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.apply-responsible-ai-principles.examine-the-privacy-and-security-principle
+title: Examine the privacy and security principle
+metadata:
+  title: Examine the privacy and security principle
+  description: This content is a part of the 'Apply responsible AI principles in learning environments' module.
+  ms.date: 03/25/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-examine-the-privacy-and-security-principle.md)]
