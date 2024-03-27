@@ -4,13 +4,10 @@ title: Write queries that pivot and unpivot result sets
 metadata:
   title: Write queries that pivot and unpivot result sets
   description: "Write queries that pivot and unpivot result sets"
-  ms.date: 10/14/2021
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/2-write-queries-that-pivot-unpivot-result-sets.md)]

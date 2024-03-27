@@ -8,8 +8,7 @@ metadata:
   author: ggailey777
   ms.author: glenga
   manager: jmartens
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/7-summary.md)]

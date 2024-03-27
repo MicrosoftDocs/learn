@@ -6,8 +6,7 @@ metadata:
   ms.date: 05/17/2022
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
 title: Implement a pipeline strategy
 summary: This module describes pipeline strategies, configuring them, implementing multi-agent builds, and what source controls Azure Pipelines supports.
 abstract: |

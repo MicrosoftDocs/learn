@@ -2,6 +2,4 @@ In this module, you learned about Azure role-based access control (Azure RBAC) a
 
 ## Further reading
 
-Here's another resource you can use to continue learning about Azure RBAC:
-
-- [What is Azure role-based access control (Azure RBAC)?](/azure/role-based-access-control/overview)
+To continue learning about Azure RBAC, check out [What is Azure role-based access control (Azure RBAC)?](/azure/role-based-access-control/overview).

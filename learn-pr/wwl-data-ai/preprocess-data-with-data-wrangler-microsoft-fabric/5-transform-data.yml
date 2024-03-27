@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.transform-data
+title: Transform data with operators
+metadata:
+  title: Transform data with operators
+  description: "Learn how to transform data with operators in Data Wrangler."
+  ms.date: 09/19/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric 
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-transform-data.md)]

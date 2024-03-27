@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.permissions-management.explore-features-of-permissions-management.knowledge-check-insights
+title: Knowledge check - Insights
+metadata:
+  title: Knowledge check - Insights
+  description: Multiple-choice questions
+  ms.date: 09/27/2023
+  author: jenniferf-skc
+  ms.author: jfields
+  ms.topic: unit
+  ms.service: multicloud-permissions-management
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check-insights.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What sections of the dashboard give you a quick glance at the status of your cloud environment?
+    choices:
+    - content: "Highest PCI Change list view and the Permissions Creep Index (PCI) Heat Map"
+      isCorrect: true
+      explanation: "Correct. The sections of the dashboard that give you a quick glance at the status of your cloud environments are the Highest PCI Change list view and the Permissions Creep Index (PCI) Heat map."
+    - content: "PCI Change Index and the Permissions List View."
+      isCorrect: false
+      explanation: "Incorrect. PCI Change Index and Permissions List View aren't features of Permissions Management."
+    - content: "PCI Identity Heat Map and Authorization System View"
+      isCorrect: false
+      explanation: "Incorrect. PCI Identity Heat Map and Authorization System View aren't features of Permissions Management."

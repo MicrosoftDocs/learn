@@ -1,10 +1,11 @@
+
 ## Use GitHub, track work in Azure Boards
 
 Use Azure Boards to plan and track your work and GitHub as source control for software development.
 
 Connect Azure Boards with GitHub repositories, enabling linking GitHub commits, pull requests, and issues to work items in Boards.
 
-:::image type="content" source="../media/board-view-github-links-1914d559.png" alt-text="Screenshot of GitHub and Azure Boards integration.":::
+:::image type="content" source="../media/board-view-github-links-1914d559-1c89b671-048672dd.png" alt-text="Screenshot of GitHub and Azure Boards integration.":::
 
 
 ## Azure Boards App
@@ -15,7 +16,7 @@ To install the app, you must be an administrator or owner of the GitHub reposito
 
 The app is installed from the GitHub Marketplace. [Azure Boards App](https://github.com/marketplace/azure-boards)
 
-:::image type="content" source="../media/azure-boards-app-b8c1f43c.png" alt-text="Screenshot of Azure Boards App integration.":::
+:::image type="content" source="../media/azure-boards-app-b8c1f43c-c1570da0-de81d1b3.png" alt-text="Screenshot of Azure Boards App integration.":::
 
 
 ## Authenticating to GitHub

@@ -1,4 +1,3 @@
-
 Microsoft Defender Application Guard (Application Guard) is designed to help prevent old and newly emerging attacks to help keep employees productive. Using Microsoft's unique hardware isolation approach, the goal of Application Guard is to destroy the playbook that attackers use by rendering current attack methods obsolete.
 
 Designed for Windows and Microsoft Edge, Application Guard helps to isolate enterprise-defined untrusted sites, protecting your company while your employees browse the internet. As an enterprise administrator, you define what is among trusted websites, cloud resources, and internal networks. Everything not on your list is considered untrusted.

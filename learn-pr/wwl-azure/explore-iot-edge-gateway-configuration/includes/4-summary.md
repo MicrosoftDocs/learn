@@ -1,1 +1,0 @@
-Your team will be responsible for implementing an Azure IoT Edge device-side architecture as part of the company's IoT solution. By deploying an IoT Edge gateway device that implements the transparent gateway pattern and communicates with a downstream IoT device, you have gained the experience that you will need to implement the company's production solution.

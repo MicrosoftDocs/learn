@@ -1,16 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-app-registration.register-application
-title: Exercise register an application
+title: Register an application
 metadata:
-  title: Exercise register an application
-  description: "Exercise register an application"
-  ms.date: 04/03/2023
+  title: Register an application
+  description: "Register an application"
+  ms.date: 10/23/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 5
+  ms.topic: unit
+durationInMinutes: 12
 content: |
   [!include[](includes/4-register-application.md)]

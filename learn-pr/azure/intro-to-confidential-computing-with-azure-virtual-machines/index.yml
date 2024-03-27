@@ -1,12 +1,13 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-confidential-computing-with-azure-virtual-machines
 metadata:
-  ms.author: cynthn
-  author: cynthn
-  ms.date: 03/22/2023
+  ms.author: jushiman
+  author: ju-shim
+  ms.date: 03/15/2024
   title: Intro to confidential computing with Azure Virtual Machines
   description: Learn to use Microsoft Azure confidential computing for virtual machines.
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: virtual-machines
 title: Intro to confidential computing with Azure Virtual Machines
 summary: This module helps you understand Microsoft Azure confidential computing concepts for virtual machines, including confidential virtual machines and application enclaves, and which approach to use.
 abstract: |

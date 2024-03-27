@@ -8,8 +8,7 @@ metadata:
   ms.date: 12/30/2021
   author: shsagir
   ms.author: shsagir
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/2-multi-table-queries.md)]

@@ -1,3 +1,6 @@
+
+
+
 In this first hands-on exercise, you'll use C# to print a hallowed programmer's phrase to the standard output of a console.
 
 ## Write your first line of code
@@ -101,7 +104,7 @@ In this task, you'll comment out the previous line of code, then add new lines o
     ```
 
     You can create a code comment by prefixing a line of code with two forward slashes `//`. This prefix instructs the compiler to ignore all the instructions on that line. 
-
+    
     Code comments are helpful when you're not ready to delete the code yet, but you want to ignore it for now. You can also use code comments to add messages to yourself or others who may later read the code, reminding you of what the code is doing.
 
 1. Add new lines of code to match the following code snippet:
@@ -115,7 +118,9 @@ In this task, you'll comment out the previous line of code, then add new lines o
 1. Press the green Run button again. This time, you should get the following output.
 
     ```Output
-    Congratulations! You wrote your first lines of code.
+    Congratulations! 
+    
+    You wrote your first lines of code.
     ```
 
 ### The difference between Console.Write and Console.WriteLine

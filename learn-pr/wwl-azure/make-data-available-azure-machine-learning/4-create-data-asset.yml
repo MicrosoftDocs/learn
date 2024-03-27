@@ -4,11 +4,10 @@ title: Create a data asset
 metadata:
   title: Create a data asset
   description: "Create a data asset"
-  ms.date: 01/13/2023
+  ms.date: 05/18/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 12
 content: |
   [!include[](includes/4-create-data-asset.md)]

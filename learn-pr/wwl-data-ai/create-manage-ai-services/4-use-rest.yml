@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-ai-services.use-rest
+title: Use a REST API
+metadata:
+  title: Use a REST API
+  description: "Use a REST API."
+  ms.date: 09/28/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-use-rest.md)]

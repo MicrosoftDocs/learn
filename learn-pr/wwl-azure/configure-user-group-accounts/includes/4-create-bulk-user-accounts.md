@@ -1,8 +1,8 @@
-Azure Active Directory (Azure AD) supports several bulk operations, including bulk create and delete for user accounts. The most common approach for these operations is to use the Azure portal. Azure PowerShell can be used for bulk upload of user accounts.
+Microsoft Entra ID supports several bulk operations, including bulk create and delete for user accounts. The most common approach for these operations is to use the Azure portal. Azure PowerShell can be used for bulk upload of user accounts.
 
 ### Things to know about bulk account operations
 
-Let's examine some characteristics of bulk operations in the Azure portal. Here's an example that shows the **Bulk create user** option for new user accounts in Azure AD:
+Let's examine some characteristics of bulk operations in the Azure portal. Here's an example that shows the **Bulk create user** option for new user accounts in Microsoft Entra ID:
 
 :::image type="content" source="../media/bulk-user-accounts-224ad1b7.png" alt-text="Screenshot that shows the Bulk create user option for new user accounts in Azure AD.":::
 
@@ -10,7 +10,7 @@ Let's examine some characteristics of bulk operations in the Azure portal. Here'
 
 - To complete bulk create or delete operations, the admin fills out a comma-separated values (CSV) template of the data for the user accounts.
 
-- Bulk operation templates can be downloaded from the Azure AD portal.
+- Bulk operation templates can be downloaded from the Microsoft Entra admin center.
 
 - Bulk lists of user accounts can be downloaded.
 

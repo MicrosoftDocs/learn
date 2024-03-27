@@ -4,11 +4,12 @@ title: Exercise - Create decision logic with if statements
 metadata:
   title: Exercise - Create decision logic with if statements
   description: "Exercise - Create decision logic with if statements"
-  ms.date: 02/24/2023
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 19
 content: |
   [!include[](includes/2-exercise-if.md)]

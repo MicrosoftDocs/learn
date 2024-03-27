@@ -7,8 +7,9 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.date: 03/15/2023
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 4
 content: |
   [!include[](includes/2-blazor.md)]

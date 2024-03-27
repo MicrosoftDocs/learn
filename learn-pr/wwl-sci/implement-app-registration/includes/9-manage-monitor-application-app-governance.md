@@ -14,7 +14,7 @@ App governance provides you with comprehensive:
 To enable app governance sync with Defender for Cloud Apps, follow these steps:
 
 1.  Ensure Office 365 is connected in Defender for Cloud Apps.
-2.  Ensure Office 365 Azure AD apps are enabled.
+2.  Ensure Office 365 Microsoft Entra ID apps are enabled.
 3.  Go to your Defender for Cloud Apps portal – `https://portal.cloudappsecurity.com`
 4.  Select the gear icon (top-right corner) and select Settings.
 5.  Under Threat Protection, select App Governance.

@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/20/2023
+  ms.date: 10/18/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/10-knowledge-check.md)]
@@ -22,7 +21,7 @@ quiz:
       explanation: "That’s incorrect. For Active Directory virtual machines, Active Directory replication is recommended."
     - content: "SAP Central Services cluster"
       isCorrect: true
-      explanation: "That's correct. It's recommended to use Azure Site Recovery to protect the SAP Web Dispatcher Pool, SAP Application server pool, and the SAP Central Services cluster. For Active Directory virtual machines, Active Directory replication is recommended, and for SQL Server databases, SQL Always On replication is recommended."
+      explanation: "Correct. It's recommended to use Azure Site Recovery to protect the SAP Web Dispatcher Pool, SAP Application server pool, and the SAP Central Services cluster. For Active Directory virtual machines, Active Directory replication is recommended, and for SQL Server databases, SQL Always On replication is recommended."
     - content: "SQL Server databases"
       isCorrect: false
       explanation: "That’s incorrect. For SQL Server databases, SQL Always On replication is recommended."
@@ -36,7 +35,7 @@ quiz:
       explanation: "That’s incorrect. This component of the SAP application stack doesn't persist business data. A VM can be built in the secondary region to run the Central Services role. To synchronize the two servers, users can use either Azure Site Recovery, to replicate the cluster nodes, or use a regularly scheduled copy job to copy /sapmnt to the DR side."
     - content: "Database servers"
       isCorrect: true
-      explanation: "That's correct. Use DBMS-specific mechanisms such as SQL Server Always On Availability Group or HANA System Replication to facilitate disaster recovery requirements. These mechanisms support multi-tier, asynchronous replication to a node in a separate Azure region, in addition to a local, two-node high availability setup with synchronous replication."
+      explanation: "Correct. Use DBMS-specific mechanisms such as SQL Server Always On Availability Group or HANA System Replication to facilitate disaster recovery requirements. These mechanisms support multi-tier, asynchronous replication to a node in a separate Azure region, in addition to a local, two-node high availability setup with synchronous replication."
   - content: "Which configuration is recommended to implement SAP HANA high availability with RPO = 0 and resistance to natural catastrophes that affect large areas?"
     choices:
     - content: "Simple availability between two Azure regions"
@@ -44,7 +43,7 @@ quiz:
       explanation: "That’s incorrect. Simple availability between two regions doesn't allow for RPO = 0, because of asynchronous replication."
     - content: "SAP HANA multi-tier system replication"
       isCorrect: true
-      explanation: "That's correct. Simple availability between two regions doesn't allow for RPO = 0, because of asynchronous replication. Multi-tier system replication allows RPO = 0 with synchronous replication and auto-failover within Region 1, while still maintaining a Region 2 secondary site at a sufficient distance to be unaffected by regional disasters."
+      explanation: "Correct. Simple availability between two regions doesn't allow for RPO = 0, because of asynchronous replication. Multi-tier system replication allows RPO = 0 with synchronous replication and auto-failover within Region 1, while still maintaining a Region 2 secondary site at a sufficient distance to be unaffected by regional disasters."
     - content: "Either configuration is suitable"
       isCorrect: false
       explanation: "That’s incorrect. Simple availability between two regions doesn't allow for RPO = 0, because of asynchronous replication. Multi-tier system replication allows RPO = 0 with synchronous replication and auto-failover within Region 1, while still maintaining a Region 2 secondary site at a sufficient distance to be unaffected by regional disasters."

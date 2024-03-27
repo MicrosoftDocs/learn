@@ -4,12 +4,11 @@ title: Exercise - Plan a sprint using Delivery Plans
 metadata:
   title: Exercise - Plan a sprint using Delivery Plans
   description: Create a delivery plan, add teams, and optimize sprints to meet milestones.
-  ms.date: 07/20/2022
+  ms.date: 10/06/2023
   ms.custom: devdivchpfy22
   author: chcomley
   ms.author: chcomley
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/5-plan-sprint-delivery-plans.md)]

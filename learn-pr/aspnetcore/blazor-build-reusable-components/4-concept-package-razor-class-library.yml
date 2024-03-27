@@ -5,11 +5,11 @@ metadata:
   unitType: learning-content
   title: Package a Razor class library
   description: "In this unit, you'll learn how Razor class libraries are packaged when they're shared with other developers."
-  ms.date: 10/13/2021
+  ms.date: 01/26/2024
   author: csharpfritz
   ms.author: jefritz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/4-concept-package-razor-class-library.md)]

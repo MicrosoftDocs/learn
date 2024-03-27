@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-reliability.design-for-operations
+title: Design for operations
+metadata:
+  title: Design for operations
+  description: Learn strategies for designing your Azure workload to support operations.
+  ms.date: 12/18/2023
+  author: claytonsiemens77
+  ms.author: csiemens
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-design-for-operations.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "True or false: an example of making a workload observable is instrumenting the application to emit telemetry data."
+    choices:
+    - content: "True."
+      isCorrect: true
+      explanation: "Correct. Application Insights is capable of instrumenting an application to emit telemetry data for observability."
+    - content: "False."
+      isCorrect: false
+      explanation: "Incorrect. Application Insights is capable of instrumenting an application to emit telemetry data for observability."
+  - content: "What is an attribute of a well-designed alerting strategy?"
+    choices:
+    - content: "Alerts are sent to a single person."
+      isCorrect: false
+      explanation: "Incorrect. Alerts should be sent to a group of people to ensure that someone is available to respond."
+    - content: "Most alerts are informational only and do not require action."
+      isCorrect: false
+      explanation: "Incorrect. Alerts should be actionable."
+    - content: "Alerts are actionable."
+      isCorrect: true
+      explanation: "Correct. Alerts should be actionable to ensure that the right people are notified and can respond quickly."
+    - content: "Only critical alerts have email notifications enabled."
+      isCorrect: false
+      explanation: "Incorrect. All alerts should have email notifications enabled to ensure that the proper teams are aware of potential and active issues."
+  - content: "What is one way Contoso can prove that their workload can operate in a degraded state?"
+    choices:
+    - content: "By running a tabletop disaster recovery exercise."
+      isCorrect: false
+      explanation: "Incorrect. A tabletop disaster recovery exercise is a good way to ensure that the team is knowledgeable about the disaster recovery plan, but won't prove that the workload can operate in a degraded state."
+    - content: "By simulating a component failure in production."
+      isCorrect: true
+      explanation: "Correct. Simulating a component failure in production is a good way to ensure that the workload can operate in a degraded state."
+    - content: "By running a load test."
+      explanation: "Incorrect. A load test is a good way to ensure that the workload can handle the expected load, but won't prove that the workload can operate in a degraded state."
+      isCorrect: false
+    - content: "By running a security audit."
+      isCorrect: false
+      explanation: "Incorrect. A security audit is a good way to ensure that the workload is secure, but won't prove that the workload can operate in a degraded state."
+

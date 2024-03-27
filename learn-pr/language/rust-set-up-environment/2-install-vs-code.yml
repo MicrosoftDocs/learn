@@ -6,9 +6,8 @@ metadata:
   ms.date: 09/26/2021
   author: GitHubber17
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.custom: team=nextgen, linux-related-content
   zone_pivot_groups: os
 title: Install Visual Studio Code
 durationInMinutes: 4

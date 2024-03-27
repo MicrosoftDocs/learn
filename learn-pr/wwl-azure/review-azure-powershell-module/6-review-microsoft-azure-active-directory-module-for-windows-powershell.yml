@@ -4,11 +4,12 @@ title: Review Microsoft Azure Active Directory module for Windows PowerShell and
 metadata:
   title: Review Microsoft Azure Active Directory module for Windows PowerShell and Azure Active Directory PowerShell for Graph modules
   description: "Review Microsoft Azure Active Directory module for Windows PowerShell and Azure Active Directory PowerShell for Graph modules"
-  ms.date: 10/19/2022
+  ms.date: 03/22/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 azureSandbox: false
 labModal: false
 durationInMinutes: 8

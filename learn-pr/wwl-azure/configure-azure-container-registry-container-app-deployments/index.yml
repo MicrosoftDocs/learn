@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.configure-azure-container-registry-container-app-deployments
+metadata:
+  title: Configure Azure Container Registry for container app deployments
+  description: "Learn how to create and configure an Azure Container Registry, the process of pushing container images to Azure Container Registry and explore different authentication methods and security features for Azure Container Registry."
+  ms.date: 11/22/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: module
+  ms.service: azure
+title: Configure Azure Container Registry for container app deployments
+summary: |
+  This module teaching users how to set up and configure an Azure Container Registry for deploying containerized applications to Azure Container Apps.
+  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
+abstract: |
+  - Examine Azure Container Registry and its role in container app deployments.
+  - Learn how to create and configure an Azure Container Registry.
+  - Examine the process of pushing container images to Azure Container Registry.
+  - Explore different authentication methods and security features for Azure Container Registry.
+prerequisites: |
+  *   Basic understanding of cloud computing concepts and Azure services.
+  *   Familiarity with containerization concepts and technologies, such as Docker.
+  *   Knowledge of Azure container services, including Azure Container Registry, would be beneficial.
+  *   Experience with Azure portal or Azure CLI for managing Azure resources.
+  *   Understanding of networking concepts and protocols.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- devops-engineer
+products:
+- azure-container-registry
+subjects:
+- devops
+units:
+- learn.wwl.configure-azure-container-registry-container-app-deployments.introduction
+- learn.wwl.configure-azure-container-registry-container-app-deployments.review-azure-container-registry-service
+- learn.wwl.configure-azure-container-registry-container-app-deployments.create-container-registry-instance-azure-portal
+- learn.wwl.configure-azure-container-registry-container-app-deployments.examine-registry-operations-image-management
+- learn.wwl.configure-azure-container-registry-container-app-deployments.examine-authentication-managed-identity
+- learn.wwl.configure-azure-container-registry-container-app-deployments.examine-azure-container-registry-roles-permissions
+- learn.wwl.configure-azure-container-registry-container-app-deployments.examine-secure-communications-virtual-networks
+- learn.wwl.configure-azure-container-registry-container-app-deployments.knowledge-check
+- learn.wwl.configure-azure-container-registry-container-app-deployments.summary
+badge:
+  uid: learn.wwl.configure-azure-container-registry-container-app-deployments.badge

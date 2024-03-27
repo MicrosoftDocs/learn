@@ -8,7 +8,7 @@ To meet these objectives, you'll:
 >
 > - Set up a GitHub repository for this module.
 > - Clone the project's repository to your computer.
-> - Create two workload identities in Azure Active Directory.
+> - Create two workload identities in Microsoft Entra ID.
 > - Create two resource groups in Azure.
 > - Create secrets and environments in GitHub.
 
@@ -118,7 +118,7 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
 ## Create two workload identities
 
-Next, create two workload identities in Azure AD: one for your test environment and another for your production environment.
+Next, create two workload identities in Microsoft Entra ID: one for your test environment and another for your production environment.
 
 ::: zone pivot="cli"
 

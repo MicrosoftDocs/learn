@@ -2,7 +2,7 @@ Properly organizing your subscriptions will play a key role in governance for yo
 
 ## Define a management group hierarchy
 
-Management-group structures within an Azure Active Directory (Azure AD) tenant support organizational mapping must be considered thoroughly when an organization plans Azure adoption at scale.
+Management-group structures within a Microsoft Entra tenant support organizational mapping must be considered thoroughly when an organization plans Azure adoption at scale.
 
 :::image type="content" source="../media/4-subscription-organization.png" alt-text="Diagram that shows management group hierarchy." lightbox="../media/4-subscription-organization-large.png":::
 
@@ -37,7 +37,7 @@ Subscriptions also serve as a scale unit so that component workloads can scale w
 When defining your subscription organization and governance, treat subscriptions as a democratized unit of management aligned with business needs and priorities.
 Make subscription owners aware of their roles and responsibilities:
 
-  - Perform an access review in Azure AD Privileged Identity Management quarterly or twice a year to ensure that privileges don't proliferate as users move within the customer organization.
+  - Perform an access review in Microsoft Entra Privileged Identity Management quarterly or twice a year to ensure that privileges don't proliferate as users move within the customer organization.
   - Take full ownership of budget spending and resource utilization.
   - Ensure policy compliance and remediate when necessary.
 

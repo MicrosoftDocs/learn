@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.become-learn-contributor.contribute-microsoft-q-and-a
+title: Contribute to Microsoft Q&A
+metadata:
+  title: Contribute to Microsoft Q&A
+  description: This unit explains how to contribute to Microsoft Q&A and why it's important.
+  ms.date: 10/4/2023
+  author: sgaspari815
+  ms.author: v-sgaspari
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-contribute-microsoft-q-and-a.md)]

@@ -4,7 +4,7 @@ Our goal was to help you decide whether Firewall Manager is a good choice for yo
 - Need for centralized management.
 - Number of virtual networks.
 
-We applied these criteria to your fictional company. You determined that as your needs evolve, you have the option of implementing additional Azure Firewall instances. Each will have similar rules governing traffic flow. However, it's complicated to manage a complex virtual network, virtual WAN, and firewall settings.
+We applied these criteria to your fictional company. You determined that as your needs evolve, you have the option of implementing more Azure Firewall instances. Each instance has similar rules governing traffic flow. However, it's complicated to manage a complex virtual network, virtual WAN, and firewall settings.
 
 Our criteria helped you evaluate whether your company requires Firewall Manager. You considered the complexity of your virtual-network structure, how many virtual networks you must manage, and whether you require centralized management capability. You now have enough information to decide whether Firewall Manager meets your company's growing requirements for virtual networks and firewalls.
 

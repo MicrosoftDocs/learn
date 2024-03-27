@@ -1,22 +1,20 @@
-Before we discuss using KEDA to scale our service, let's first review how a deployment behaves and how with our scenario it will be difficult to process the increased number of events.
+Before you deploy your application to Kubernetes, let's review Kubernetes Deployments and discuss their limitations in our scenario.
 
-## What is Kubernetes Deployment and what's missing?
+## What are Kubernetes Deployments?
 
 :::image type="content" source="../media/4-1-deployments-diagram.png" alt-text="A diagram that shows a Kubernetes Deployment with a label and three pods.":::
 
-A Kubernetes Deployment is an evolution of pods. A Deployment wraps the pods into an intelligent object that allows them to *scale out*. You can easily duplicate and scale your application to support more load without the need to configure complex networking rules.
+A Kubernetes Deployment is an evolution of pods. Deployments wrap pods into an intelligent object that allows them to *scale out*. You can easily duplicate and scale your application to support more load without the need to configure complex networking rules.
 
-Deployments allow users to update applications just by changing the image tag without downtime. When you update a Deployment, instead of deleting all apps and creating new ones, the Deployment turns off the online apps one by one and replaces them with the newest version. This aspect means any Deployment can update the pods inside it with no visible effect in availability.
+Deployments allow you to update your applications without downtime just by changing the image tag. Updating a Deployment turns off the online apps one by one and replaces them with the newest version instead of deleting all apps and creating new ones, which means that Deployment can update the pods inside of it with no visible effect on availability.
 
-While the above is all a benefit of a Deployment over using pods, it doesn't adequately handle our scenario.  
+While there are many benefits to using Deployments over pods, they aren't able to adequately handle our scenario.  
 
-To review, in our use case the application is event driven and receives a significant number of events at various times.  
+This scenario involves an event-driven application that receives a large number of events at various times. Without a KEDA Scaler object or HPA, you'd need to manually adjust the number of replicas to process the number of events and *scale down* the Deployment when the load returns to normal.
 
-Without any Horizontal Pod Autoscaler (HPA) or KEDA Scaler Object, an engineer would manually adjust the number of replicas available to process sufficiently the number of events. They would also have to *scale down* the Deployment when the load returns to normal.
+### Sample Deployment manifest
 
-## Statically setting replicas
-
-Here's a snippet of our Deployment manifest:
+Here's a sample snippet of our Deployment manifest:
 
 ```yaml
 apiVersion: apps/v1
@@ -24,11 +22,11 @@ kind: Deployment
 metadata:
   name: contoso-microservice
 spec:
-  replicas: 10                     # Here we are telling K8S the number of pods to process the Redis list items
+  replicas: 10                      # Tells K8S the number of pods needed to process the Redis list items
   selector:                         # Define the wrapping strategy
     matchLabels:                    # Match all pods with the defined labels
       app: contoso-microservice     # Labels follow the `name: value` template
-  template:                         # This is the template of the pod inside the deployment
+  template:                         # Template of the pod inside the deployment
     metadata:
       labels:
         app: contoso-microservice
@@ -38,8 +36,8 @@ spec:
           name: contoso-microservice
 ```
 
-As you can see, `replicas` is set to 10, the ceiling of the number of necessary replicas available to process the peak number of events. However, during non-peak times, we're consuming too many resources, potentially starving other Deployments within the cluster.
+In the sample manifest, `replicas` is set to 10, which is the highest number we can set for necessary replicas available for processing the peak number of events. However, this causes the application to consume too many resources during nonpeak times, which might starve other Deployments within the cluster.
 
-One option would be to use a standalone HPA to monitor the CPU usage of the pods. Although this is a better option than manually scaling in both directions, using a HPA won't focus on the number of events received to the Redis list.
+One solution is to use a standalone HPA to monitor the CPU usage of the pods, which is a better option than manually scaling in both directions. However, the HPA doesn't focus on the number of events received to the Redis list.
 
-The best choice is to use KEDA and a Redis scaler to query the list and determine if more or less pods are needed to process the events.
+The best solution is to **use KEDA and a Redis scaler** to query the list and determine if more or fewer pods are needed to process the events.

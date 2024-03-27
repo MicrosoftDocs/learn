@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-resiliency-aspnet-core.5-implement-infrastructure-resiliency
+metadata:
+  title: Implement infrastructure resiliency with Kubernetes
+  description: Learn how to use Linkerd to configure infrastructure-based resiliency in your microservices app.
+  author: codemillmatt
+  ms.author: masoucou
+  ms.date: 11/06/2023
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
+title: Implement infrastructure resiliency with Kubernetes
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-implement-infrastructure-resiliency.md)]

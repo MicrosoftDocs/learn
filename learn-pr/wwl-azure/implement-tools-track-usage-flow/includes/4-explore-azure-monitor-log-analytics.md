@@ -1,4 +1,5 @@
-When you run at a cloud-scale, you need intelligent logging and monitoring tools that scale to your needs and provide insight into your data in real-time.
+
+When you run at a cloud scale, you need intelligent logging and monitoring tools that scale to your needs and provide real-time insight into your data.
 
 Azure Monitor is Microsoft's native cloud monitoring solution. Azure Monitor collects monitoring telemetry from different kinds of on-premises and Azure sources.
 
@@ -8,20 +9,20 @@ The service aggregates and stores this telemetry in a log data store optimized f
 
 With Azure Monitor, you can analyze data, set up alerts, and get end-to-end views of your applications. And use machine-learning-driven insights to identify and resolve problems quickly.
 
-:::image type="content" source="../media/azure-monitor-68847a2c.png" alt-text="Azure Monitor":::
+:::image type="content" source="../media/azure-monitor-68847a2c.png" alt-text="Screenshot of Azure Monitor and services covering Insights, Visualize, Analyze, Respond and Integrate monitoring.":::
 
 
 In this tutorial, we'll focus on the Log Analytics part of Azure Monitor. We'll learn how to:
 
  -  Set up Log Analytics workspace.
- -  Connect virtual machines into a log analytics workspace.
+ -  Connect virtual machines to a log analytics workspace.
  -  Configure Log Analytics workspace to collect custom performance counters.
  -  Analyze the telemetry-using Kusto Query Language.
 
 ## Getting started
 
-1. You'll need a resource group with one or more virtual machines that you have access to RDP to follow along.
-1. Log into [Azure Shell](https://shell.azure.com/powershell). Execute the command below. It will create a new resource group and create a new log analytics workspace. Take a record of the workspaceid of the log analytics workspace as we'll be using it again.
+1.  You'll need a resource group with one or more virtual machines that you have access to RDP to follow along.
+2.  Log into [Azure Shell](https://shell.azure.com/powershell). Execute the command below. It will create a new resource group and log analytics workspace. Take a record of the workspaceid of the log analytics workspace as we'll be using it again.
     
     ```powershell
     $ResourceGroup = "azwe-rg-devtest-logs-001"
@@ -61,7 +62,7 @@ In this tutorial, we'll focus on the Log Analytics part of Azure Monitor. We'll 
     
     ```
 
-1. Retrieve the Log Analytics workspace secure key.
+3.  Retrieve the Log Analytics workspace secure key.
     
     ```powershell
     Get-AzOperationalInsightsWorkspaceSharedKey `
@@ -70,7 +71,7 @@ In this tutorial, we'll focus on the Log Analytics part of Azure Monitor. We'll 
     
     ```
 
-1. Map existing virtual machines with the Log Analytics workspace. The following query uses the wokspaceid and workspace-secret key of the log analytics workspace to install the Microsoft Enterprise Cloud Monitoring extension onto an existing VM.
+4.  Map existing virtual machines with the Log Analytics workspace. The following query uses the wokspaceid and workspace-secret key of the log analytics workspace to install the Microsoft Enterprise Cloud Monitoring extension onto an existing VM.
     
     ```powershell
     
@@ -90,7 +91,7 @@ In this tutorial, we'll focus on the Log Analytics part of Azure Monitor. We'll 
     
     ```
 
-1. Run the script to configure the below-listed performance counters to be collected from the virtual machine.
+5.  Run the script to configure the below-listed performance counters to be collected from the virtual machine.
     
     ```powershell
     #Login-AzureRmAccount
@@ -175,7 +176,7 @@ In this tutorial, we'll focus on the Log Analytics part of Azure Monitor. We'll 
     $CounterSystem = "Processor Queue Length"
     
     #########################################################
-    $global:number = 1 #Name parameter needs to be unique that why we will use number ++ in fuction
+    $global:number = 1 #Name parameter needs to be unique that why we will use number ++ in function
     #########################################################
     
     function AddPerfCounters ($PerfObject, $PerfCounters, $Instance)
@@ -215,14 +216,14 @@ In this tutorial, we'll focus on the Log Analytics part of Azure Monitor. We'll 
     
     ```
 
-1. To generate some interesting performance statistics. Download [HeavyLoad utility](https://www.jam-software.com/heavyload/) (a free load testing utility) and run it on the virtual machine to simulate high CPU, Memory, and IOPS consumption.
+6.  To generate some interesting performance statistics. Download the [HeavyLoad utility](https://www.jam-software.com/heavyload/) (a free load testing utility) and run it on the virtual machine to simulate high CPU, Memory, and IOPS consumption.
 
 ## How it works
 
-1. Log Analytics works by running the Microsoft Monitoring Agent service on the machine. The service locally captures and buffers the events and pushes them securely out to the Log Analytics workspace in Azure.
-1. Log into the virtual machine and navigate to the C:\\Program Files\\Microsoft Monitoring Agent\\MMA and open the control panel. It will show you the details of the log analytics workspace connected. You also can add multiple log analytics workspaces to publish the log data into various workspaces.
+1.  Log Analytics works by running the Microsoft Monitoring Agent service on the machine. The service locally captures and buffers the events and pushes them securely out to the Log Analytics workspace in Azure.
+2.  Log into the virtual machine, navigate to the C:\\Program Files\\Microsoft Monitoring Agent\\MMA, and open the control panel. It will show you the details of the log analytics workspace connected. You also can add multiple log analytics workspaces to publish the log data into various workspaces.
 
-    :::image type="content" source="../media/microsoft-monitoring-agent-properties-c1189ab6.png" alt-text="Microsoft Monitoring Agent Properties":::
+    :::image type="content" source="../media/microsoft-monitoring-agent-properties-c1189ab6.png" alt-text="Screenshot of the Microsoft Monitoring Agent Properties with computer name, property name, and product version information.":::
 
 
 ## Summary
@@ -231,6 +232,6 @@ So far, we've created a log analytics workspace in a resource group.
 
 The log analytics workspace has been configured to collect performance counters, event logs, and IIS Logs.
 
-A virtual machine has been mapped to the log analytics workspace using the Microsoft Enterprise cloud monitoring extension.
+The Microsoft Enterprise cloud monitoring extension has mapped a virtual machine to the log analytics workspace.
 
 HeavyLoad has been used to simulate high CPU, memory, and IOPS on the virtual machine.

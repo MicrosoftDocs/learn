@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-center-sap-solutions.discover-azure-center-sap-solutions
+title: Discover Azure Center for SAP solutions
+metadata:
+  title: Discover Azure Center for SAP solutions
+  description: "Discover what Azure Center for SAP solutions (ACSS) is and what it can be used for."
+  ms.date: 03/26/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-discover-azure-center-sap-solutions.md)]

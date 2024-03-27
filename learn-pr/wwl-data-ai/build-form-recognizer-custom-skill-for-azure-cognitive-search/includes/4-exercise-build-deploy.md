@@ -1,4 +1,4 @@
-In this exercise, you'll create and deploy a web service that acts as a custom skill in a Cognitive Search pipeline. The web skill calls Form Recognizer to extract invoice fields, such as customer names, so that they can be included in the index.
+In this exercise, you'll create and deploy a web service that acts as a custom skill in a AI Search pipeline. The web skill calls Azure AI Document Intelligence to extract invoice fields, such as customer names, so that they can be included in the index.
 
 ## Run Cloud Shell
 
@@ -8,25 +8,29 @@ To start the exercise, let's connect to Cloud Shell, which you'll use to run the
 
     :::image type="content" source="../media/4-open-cloud-shell.png" alt-text="Screenshot showing how to open Cloud Shell in the Azure portal.":::
 
-1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **Bash**. If you don't see this option, skip the step.
+1. The first time you open the Cloud Shell, you might be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **Bash**. If you don't see this option, skip the step.
 1. If you're prompted to create storage for your Cloud Shell, ensure your subscription is specified and select **Create storage**. Then wait a minute or so for the storage to be created.
 1. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *Bash*. If it's *PowerShell*, switch to *Bash* by using the drop-down menu.
 1. Wait for Bash to start.
 
 ## Set up resources
 
-We'll use a script to create the Azure Forms Recognizer resource, a resource group, and the Cognitive Search resource:
+We'll use a script to create the Azure Forms Recognizer resource, a resource group, and the AI Search resource:
 
 1. In the Cloud Shell, to clone the code repository, enter this command:
 
-    ``` bash
-    git clone https://github.com/MicrosoftLearning/mslearn-formrecognizer.git
+    ```bash
+    rm -r doc-intelligence -f
+    git clone https://github.com/MicrosoftLearning/mslearn-ai-document-intelligence doc-intelligence
     ```
+  
+    > [!TIP]
+    > If you recently used this command in another lab to clone the *doc-intelligence* repository, you can skip this step.
 
-1. Change to the **Mod5** directory and then execute the setup script:
+1. Change to the `04-custom-skill` directory and then execute the setup script:
 
    ``` bash
-   cd mslearn-formrecognizer/Mod5/
+   cd doc-intelligence/Labfiles/04-custom-skill/
    bash setup.sh
    ```
 
@@ -52,14 +56,14 @@ You'll host your custom skill in an Azure Function App. Let's create that Functi
 
 ## Configure the deployed Function
 
-The Python code that you'll deploy needs to know the endpoint and API key for your Form Recognizer resource. We'll obtain those values from the Azure portal and use the Function Apps application settings to configure them:
+The Python code that you'll deploy needs to know the endpoint and API key for your Azure AI Document Intelligence resource. We'll obtain those values from the Azure portal and use the Function Apps application settings to configure them:
 
 1. In the Azure portal, select **All resources** and then select **FormsRecognizer**.
-1. Select **Keys and Enpoint** tab. To the right of the **Endpoint** textbox, select the **Copy to clipboard** button.
+1. Select **Keys and Endpoint** tab. To the right of the **Endpoint** textbox, select the **Copy to clipboard** button.
 1. Open Notepad and paste the endpoint value.
 1. In the Azure portal, to the right of the **KEY 1** textbox, select the **Copy to clipboard** button.
 1. Switch to Notepad and paste the key on a new line.
-1. In the Azure portal, select **All resources** and then select the function app you created above.
+1. In the Azure portal, select **All resources** and then select the function app you created in the previous section.
 1. Under **Settings**, select **Configuration** and then select **+ New application setting**.
 1. In the **Add/Edit application setting** dialog, in the **Name** textbox, type **FORMS_RECOGNIZER_ENDPOINT**.
 1. Copy the endpoint value from Notepad, paste it in the **Value** textbox, and then select **OK**.
@@ -74,10 +78,10 @@ The Python code that you'll deploy needs to know the endpoint and API key for yo
 
 Next, deploy the Python code for the Function App:
 
-1. In the Cloud Shell, change to the **customskill** folder:
+1. In the Cloud Shell, change to the `customskill` folder:
 
     ```bash
-    cd ~/mslearn-formrecognizer/Mod5/customskill
+    cd ~/doc-intelligence/Labfiles/04-custom-skill/customskill
     ```
 
 1. To use the Azure Functions Core Tools to deploy the Python code to your Function App, type this command and substitute `<FunctionName>` for the name you used when you created the Function App:
@@ -95,10 +99,10 @@ Next, deploy the Python code for the Function App:
 
 ## Test the Function
 
-We can use the Azure portal **Code + Test** tool to submit a test invoice to the function and see whether the inputs and output are as expected by Cognitive Search:
+We can use the Azure portal **Code + Test** tool to submit a test invoice to the function and see whether the inputs and output are as expected by AI Search:
 
 1. In a new browser tab, browse to the sample invoice and examine the PDF file:
-https://raw.githubusercontent.com/MicrosoftLearning/mslearn-formrecognizer/master/Mod5/SampleInvoices/Invoice_1.pdf
+https://github.com/MicrosoftLearning/mslearn-ai-document-intelligence/blob/main/Labfiles/04-custom-skill/SampleInvoices/Invoice_1.pdf
 1. In the Azure portal, in the Function App, under **Functions** select **Functions** and then select **AnalyzeInvoice**.
 1. Under **Developer** select **Code + Test**.
 1. At the top of the code window, select **Test/Run**.
@@ -111,7 +115,7 @@ https://raw.githubusercontent.com/MicrosoftLearning/mslearn-formrecognizer/maste
             {
                 "recordId": "record1",
                 "data": { 
-                    "formUrl": "https://raw.githubusercontent.com/MicrosoftLearning/mslearn-formrecognizer/master/Mod5/SampleInvoices/Invoice_1.pdf",
+                    "formUrl": "https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-document-intelligence/main/Labfiles/04-custom-skill/SampleInvoices/Invoice_1.pdf",
                     "formSasToken": "?st=sasTokenThatWillBeGeneratedByCognitiveSearch"
                 }
             }
@@ -121,24 +125,24 @@ https://raw.githubusercontent.com/MicrosoftLearning/mslearn-formrecognizer/maste
 
 1. If the function is configured correctly, the output displayed includes values for **CustomerAddress**, **CustomerAddressRecipient**, and other keys. Compare the values returned with the original PDF file you opened above.
 
-## Add the Function to the Cognitive Search skillset
+## Add the Function to the AI Search skillset
 
-To configure Cognitive Services to use the new Azure Function that calls Form Recognizer, you must add a skillset:
+To configure Azure AI Services to use the new Azure Function that calls Azure AI Document Intelligence, you must add a skillset:
 
-1. In the Azure portal, select **All resources** and then select the Azure Function App you created above.
+1. In the Azure portal, select **All resources** and then select the Azure Function App you created in the previous section.
 1. Next to the **URL** field, select the **Copy to clipboard** button.
 1. Switch to Notepad and paste the URL on a new line.
 1. In the Azure portal, under **Functions**, select **App keys** and then select **Show values**.
 1. To the right of the **default** host key, select the **Copy to clipboard** button.
 1. Switch to Notepad and paste the key on a new line.
 1. In the Azure portal, select **All resources** and then select **enrichedcognitivesearch**.
-1. On the **Overview** page for the Cognitive Search resource, select the **Skillsets** tab and then select **Add skillset**.
+1. On the **Overview** page for the AI Search resource, select the **Skillsets** tab and then select **Add skillset**.
 1. Copy the following JSON code and then paste it into the **Skillset definition (JSON)** textbox, replacing the default content:
 
     ```json
     { 
         "name": "[SkillsetName]",
-        "description":"Skillset that calls a Form Recognizer custom skill",
+        "description":"Skillset that calls an Azure AI Document Intelligence custom skill",
         "skills":[ 
             { 
                 "@odata.type":"#Microsoft.Skills.Custom.WebApiSkill",
@@ -178,9 +182,9 @@ To configure Cognitive Services to use the new Azure Function that calls Form Re
     ```
 
 1. Replace `[SkillsetName]` with a unique name for your skillset.
-1. From Notepad, copy the Function App URL and paste it into the above JSON code, replacing `[EndpointUrl]`.
-1. From Notepad, copy the default host key and paste it into the above JSON code, replacing `[AzureFunctionDefaultHostKey]`.
-1. At the top left, select **Save**. You've completed the integration of Cognitive Search with Forms Recognizer.
+1. From Notepad, copy the Function App URL and paste it into the JSON code, replacing `[EndpointUrl]`.
+1. From Notepad, copy the default host key and paste it into the JSON code, replacing `[AzureFunctionDefaultHostKey]`.
+1. At the top left, select **Save**. You've completed the integration of AI Search with Forms Recognizer.
 
 ## Clean up
 
@@ -188,10 +192,10 @@ Let's remove the exercise resources from your Azure subscription:
 
 1. In Azure portal, select **Resource groups**.
 1. Select **FormsRecognizerResources** and then select **Delete resource group**.
-1. In the **TYPE RESOURCE GROUP NAME** textbox, type **FormsRecognizerResources** and then select **Delete**. Azure removes the resource group, the Form Recognizer resource, the Cognitive Search resource, and their associated resources.
+1. In the **TYPE RESOURCE GROUP NAME** textbox, type **FormsRecognizerResources** and then select **Delete**. Azure removes the resource group, the Azure AI Document Intelligence resource, the AI Search resource, and their associated resources.
 
 ## Learn more
 
-- [Example: Create a Form Recognizer custom skill](/azure/search/cognitive-search-custom-skill-form)
-- [Create a skillset in Azure Cognitive Search](/azure/search/cognitive-search-defining-skillset)
-- [Form Analyzer custom skill sample code](https://github.com/Azure-Samples/azure-search-power-skills/tree/main/Vision/AnalyzeFormV2)
+- [Example: Create an Azure AI Document Intelligence custom skill](/azure/search/cognitive-search-custom-skill-form)
+- [Create a skillset in Azure AI Search](/azure/search/cognitive-search-defining-skillset)
+- [Document intelligence custom skill sample code](https://github.com/Azure-Samples/azure-search-power-skills/tree/main/Vision/AnalyzeFormV2)

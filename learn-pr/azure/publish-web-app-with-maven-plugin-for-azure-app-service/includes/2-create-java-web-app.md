@@ -1,21 +1,21 @@
-Your company is currently running several Java web apps on internal servers. To reduce the high costs that are associated with maintaining those servers, your company wants to migrate your web apps to Azure App Service.
+Your company is currently running several Java web apps on internal servers. To reduce the high costs associated with maintaining those servers, your company wants to migrate your web apps to Azure App Service.
 
 Your development team has experience using Maven to create desktop apps, and you already use Maven to automate the build process for your Java projects. You understand that Maven uses plugins for projects to add extra functionality, and you want to use an archetype to create a web app that you can deploy to Azure App Service.
 
-In this unit, you'll revisit how Maven and archetypes can help create Java web apps. You'll learn how to create a small Java web app and run it locally, then you'll see what to add to the Project Object Model (POM) file to enable local testing for your new app.
+In this unit, you'll revisit how Maven and archetypes can help create Java web apps. You'll learn how to create a small Java web app and run it locally. Then, you'll learn what to add to the Project Object Model (POM) file to enable local testing for your new app.
 
 ## Using Maven to automate building Java web apps
 
-Maven is the most used Java build tool that can be used for building and managing any Java-based project. It helps streamline the processes for how developers build Java projects with a standard way to build the projects, a clear definition of what the project consisted of, an easy way to publish project information, and a way to share JARs across several projects. Maven's goals are to:
+Maven is the most used Java build tool, and you can use it for building and managing any Java-based project. It helps streamline the processes for how developers build Java projects with a standard way to build the projects, a clear definition of what the project consisted of, an easy way to publish project information, and a way to share JARs across several projects. Maven's goals are to:
 
-- Make the build process easier
-- Transparently migrate to new features
-- Provide a uniform build system
-- Implement guidelines about best practice in development
+- Make the build process easier.
+- Transparently migrate to new features.
+- Provide a uniform build system.
+- Implement guidelines about best practice in development.
 
 ### What are archetypes?
 
-The creators of Maven needed a way to provide a consistent best practice to follow when developers structure new projects, and they discovered that there are several similarities between different kinds of projects. The creators used this information to define these project types as templates - called _archetypes_ - which Maven uses to create the scaffolding for new projects quickly. Here are several examples of common archetypes:
+Maven's creators needed a way to provide a consistent best practice to follow when developers structure new projects, and they discovered that there are several similarities between different kinds of projects. The creators used this information to define these project types as templates called _archetypes_, which Maven uses to create the scaffolding for new projects quickly. Here are several examples of common archetypes:
 
 | Archetype | Description |
 |---|---|
@@ -29,7 +29,7 @@ The creators of Maven needed a way to provide a consistent best practice to foll
 | `maven-archetype-site-simple` | Generates a simple Maven site |
 | **`maven-archetype-webapp`** |  Generates a Maven web app project |
 
-In the next exercise, you'll create a web app that you can deploy to Azure. For example, to create a new Java web app using Maven, you would use the following syntax:
+In the next exercise, you'll create a web app that you can deploy to Azure. For example, to create a new Java web app using Maven, you'd use the following syntax:
 
 ```bash
 mvn archetype:generate \
@@ -39,9 +39,9 @@ mvn archetype:generate \
   -DinteractiveMode=false
 ```
 
-Running the above command creates a project directory structure with these contents:
+Running the preceding command creates a project directory structure with these contents:
 
-:::image type="content" source="../media/2-project-tree.png" alt-text="Project folder and file hierarchy." loc-scope="other"::: <!-- no-loc -->
+:::image type="content" source="../media/2-project-tree.png" alt-text="Screenshot of the project folder and file hierarchy." loc-scope="other"::: <!-- no-loc -->
 
 [//]: # (NOTE: The following code is used to generate the preceding image)
 
@@ -82,9 +82,9 @@ The following example illustrates the `pom.xml` file contents that were generate
 
 ### How to add plugins to a Maven project
 
-To add a plugin to your Maven project, you need to add the specific XML for that plugin to the `pom.xml` file. There are two useful plugins that allow developers to run web apps locally on their machines: _Eclipse Jetty_ and _Apache Tomcat_. Both of these web servers are supported by the Azure App Service plugin. To add one of these servers to your project, you would add the requisite XML for the plugin to the `<build>` tag.
+To add a plugin to your Maven project, you need to add the specific XML for that plugin to the `pom.xml` file. There are two useful plugins that allow developers to run web apps locally on their machines: _Eclipse Jetty_ and _Apache Tomcat_. The Azure App Service plugin supports both of these web servers. To add one of these servers to your project, you'd add the requisite XML for the plugin to the `<build>` tag.
 
-For example, to add the Tomcat plugin, you would add XML like the following example:
+For example, to add the Tomcat plugin, you'd add XML like the following example:
 
 ```xml
 <plugins>
@@ -95,6 +95,7 @@ For example, to add the Tomcat plugin, you would add XML like the following exam
   </plugin>
 </plugins>  
 ```
+
 > [!NOTE]
 > To find a plugin and its related information, you can search the Central Repository at <https://search.maven.org/>.)
 

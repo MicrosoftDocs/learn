@@ -1,3 +1,4 @@
+
 Security scanning used to be thought of as an activity that was completed once per release by a dedicated security team whose members had little involvement with other groups.
 
 This practice creates a dangerous pattern in which security specialists find large batches of issues at the exact time when developers are under the most pressure to release a software product.

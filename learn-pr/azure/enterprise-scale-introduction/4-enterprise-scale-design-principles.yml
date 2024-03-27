@@ -2,12 +2,11 @@
 uid: learn.azure.enterprise-scale-introduction.4-enterprise-scale-design-principles
 metadata:
   title: Enterprise-scale design principles
-  description: Enterprise-scale design principles
+  description: Enterprise-scale design principles.
   ms.date: 10/17/2022
-  author: JefferyMitchell
-  ms.author: jemitche
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 title: Enterprise-scale design principles
 durationInMinutes: 10
 content: |
@@ -16,18 +15,18 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: Which of the following is one of the five design area principles?
+  - content: Which of the following principles is one of the five enterprise-scale design area principles?
     choices:
-    - content: Resource group democratization
+    - content: Resource group democratization.
       isCorrect: false
       explanation: Subscriptions should be used as a unit of management and scale aligned with business needs.
-    - content: Azure-native design and platform roadmap alignment
+    - content: Azure-native design and platform roadmap alignment.
       isCorrect: true
       explanation: The enterprise-scale architecture approach favors using Azure-native platform services and capabilities whenever possible.
-    - content: Adaptive governance
+    - content: Adaptive governance.
       isCorrect: false
       explanation: Azure Policy should be used to provide guardrails and ensure continued compliance with your organization's platform.
-    - content: Application-specific and archetype-bias
+    - content: Application-specific and archetype-bias.
       isCorrect: false
       explanation: Enterprise-scale architecture should focus on application-centric migrations and development rather than pure infrastructure lift-and-shift migrations, such as moving virtual machines.
 

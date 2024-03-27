@@ -22,7 +22,7 @@ MSE and log loss are similar metrics. There are some complex reasons why log-los
 
 ![Diagram showing a log loss versus mse graph.](../media/4-mse-graph.png)
 
-Having higher cost in this way helps the model learn faster due to the steeper slope of the line. Similarly, log-loss helps models become more confident at giving the correct answer. Notice in the previous plot, that the MSE cost for values smaller than 0.2 are small and the slope is almost flat. This relationship makes training slow for models that are near to correct. Log loss has a steeper slope for these values, which helps the model learn faster.
+Having higher cost in this way helps the model learn faster due to the steeper gradient of the line. Similarly, log-loss helps models become more confident at giving the correct answer. Notice in the previous plot, that the MSE cost for values smaller than 0.2 are small and the gradient is almost flat. This relationship makes training slow for models that are near to correct. Log loss has a steeper gradient for these values, which helps the model learn faster.
 
 ## Limitations of cost functions
 

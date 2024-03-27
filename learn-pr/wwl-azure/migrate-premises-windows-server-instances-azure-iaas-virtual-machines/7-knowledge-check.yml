@@ -4,11 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/24/2020
+  ms.date: 08/15/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.contributors: orthomas-08152023
 azureSandbox: false
 durationInMinutes: 3
 quiz:
@@ -22,9 +22,9 @@ quiz:
     - content: "Assess Azure readiness, obtain VM size recommendations, and migrate with confidence."
       isCorrect: true
       explanation: "That's correct. All three are valid reasons to use Azure Migrate."
-    - content: "Obtain VM size recommendations, assess Azure readiness, and replicate identities to Azure AD."
+    - content: "Obtain VM size recommendations, assess Azure readiness, and replicate identities to Microsoft Entra ID."
       isCorrect: false
-      explanation: "That's incorrect. Azure Migrate isn't used to replicate identities to Azure AD. You can use Azure AD Connect to replicate your Active Directory to Azure AD."
+      explanation: "That's incorrect. Azure Migrate isn't used to replicate identities to Microsoft Entra ID. You can use Microsoft Entra Connect to replicate your Active Directory to Microsoft Entra ID."
   - content: "Which of these source server configurations are supported by Azure Migrate: Server Migration?"
     choices:
     - content: "VMware VMs, physical Unix, and physical Windows Server."

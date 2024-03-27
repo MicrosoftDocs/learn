@@ -4,11 +4,10 @@ title: Combine availability within one region and across regions
 metadata:
   title: Combine availability within one region and across regions
   description: "Combine availability within one region and across regions"
-  ms.date: 04/20/2023
+  ms.date: 10/18/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 9
 content: |
   [!include[](includes/4-combine-availability-within-one-region-across-regions.md)]

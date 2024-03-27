@@ -6,8 +6,7 @@ metadata:
   ms.date: 03/16/2021
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-git
+  ms.topic: module
   ms.custom: team=nextgen
 title: Edit code through branching and merging in Git
 summary: Level up your Git knowledge by learning how to keep code separate in branches, and how to merge them later.

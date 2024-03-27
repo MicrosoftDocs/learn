@@ -3,15 +3,14 @@ uid: learn.create-basic-hybrid-environment
 metadata:
   moduleType: guided-project
   title: Create a basic hybrid environment
-  description: "This module will demonstrate how to create an Active Directory and Azure AD tenant environment that will be used in subsequent learn modules."
+  description: "This module will demonstrate how to create an Active Directory and Microsoft Entra tenant environment that will be used in subsequent learn modules."
   ms.date: 5/31/2022
   author: billmath
   ms.author: billmath
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: module
 title: Create a basic hybrid environment
 summary: |
-  Create an on-premises Active Directory environment and an Azure AD tenant.  This environment will be the basis for more guided projects that will demonstrate how to deploy hybrid environments and use the cloud.
+  Create an on-premises Active Directory environment and a Microsoft Entra tenant.  This environment will be the basis for more guided projects that will demonstrate how to deploy hybrid environments and use the cloud.
   > [!NOTE]
   > This is a **_Guided Project_** module where you complete an end-to-end project by following step-by-step instructions.
 abstract: |
@@ -20,8 +19,8 @@ abstract: |
     - Create a Virtual Machine
     - Deploy Active Directory
     - Create a user in Active Directory
-    - Create an Azure AD tenant
-    - Create a global administrator account in Azure AD
+    - Create a Microsoft Entra tenant
+    - Create a global administrator account in Microsoft Entra ID
 prerequisites: | 
   - None
 iconUrl: /training/achievements/generic-badge.svg

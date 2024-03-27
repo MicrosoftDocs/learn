@@ -4,10 +4,9 @@ metadata:
   title: Analyze an application and identify decomposition boundaries
   description: Analyze an application and identify decomposition boundaries
   ms.date: 08/30/2019
-  author: davidcberry13
-  ms.author: daberry
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 title: Analyze an application and identify decomposition boundaries
 durationInMinutes: 10
 content: |

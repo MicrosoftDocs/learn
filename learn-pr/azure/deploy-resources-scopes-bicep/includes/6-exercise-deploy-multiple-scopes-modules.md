@@ -45,7 +45,7 @@ Next, you'll create a Bicep module for the R&D team's virtual network. You'll de
 
    Notice that you haven't specified a `targetScope` for this module. You don't need to specify a target scope when the Bicep file is targeting a resource group.
 
-2. Save the changes to the file.
+1. Save the changes to the file.
 
 ## Use the module in the subscription deployment
 

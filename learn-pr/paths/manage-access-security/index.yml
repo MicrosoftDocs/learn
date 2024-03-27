@@ -6,8 +6,7 @@ metadata:
   ms.date: 08/04/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Manage access and security for Azure Virtual Desktop
 prerequisites: |
   *  Familiarity with server and client management concepts and tools

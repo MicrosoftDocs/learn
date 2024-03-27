@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-device-provisioning-service-coding-tools-access.examine-how-to-control-access-to-dps
+title: Examine how to control access to Device Provisioning Service
+metadata:
+  title: Examine how to control access to Device Provisioning Service
+  description: "Examine how to control access to Device Provisioning Service"
+  ms.date: 01/08/2024
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-control-access-device-provisioning-service.md)]

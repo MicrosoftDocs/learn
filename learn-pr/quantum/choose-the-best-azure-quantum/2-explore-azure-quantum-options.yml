@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.choose-the-best-azure-quantum.explore-azure-quantum-options
+title: Explore the different Azure Quantum options
+metadata:
+  title: Explore the different Azure Quantum options
+  description: Explore the different Azure Quantum options
+  ms.date: 12/13/2023
+  author: SoniaLopezBravo
+  ms.author: sonialopez
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-explore-azure-quantum-options.md)]

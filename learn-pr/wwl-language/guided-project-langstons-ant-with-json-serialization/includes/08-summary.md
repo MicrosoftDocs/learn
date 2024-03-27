@@ -1,0 +1,1 @@
+In this module, you practiced how to serialize and deserialize data to and from JSON. You used JSON serialization to save and load game states in a Langston's Ant simulation. You also learned how to specify options for JSON serialization and how to handle null values during serialization.

@@ -3,12 +3,11 @@ uid: learn.azure.cna-orchestrate-containers.2-run-containers-with-aks
 title: Running containers with Kubernetes
 metadata:
   title: Running containers with Kubernetes
-  description: An overview of how Kubernetes runs containers
-  ms.date: 10/23/2020
-  author: tomreidnz
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: An overview of how Kubernetes runs containers.
+  ms.date: 12/28/2023
+  author: rayoef
+  ms.author: rayoflores
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-run-containers-with-aks.md)]

@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/10/2022
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
+  ms.topic: learning-path
 title: Build mobile and desktop apps with .NET MAUI
 summary: "Learn how to use .NET MAUI to build apps that run on mobile devices and on the desktop using C# and Visual Studio. You'll learn the fundamentals of building an app with .NET MAUI and more advanced topics such as local data storage and invoking REST-based web services."
 prerequisites: | 

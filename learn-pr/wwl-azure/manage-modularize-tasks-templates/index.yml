@@ -6,8 +6,7 @@ metadata:
   ms.date: 11/01/2022
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
 title: Manage and modularize tasks and templates
 summary: This module describes the creation of task and variable groups and using release variables and stage variables in your pipeline.
 abstract: |

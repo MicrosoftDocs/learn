@@ -1,48 +1,27 @@
-A Remote Rendering service resource must be created in Azure to get access to the service. The Remote Rendering service resource will later be used to render a model in the app. Here, you'll learn how to create a Remote Rendering resource and locate the account ID, account domain, and Primary key.
+Azure Remote Rendering provides the [session management REST API](/azure/remote-rendering/how-tos/session-rest-api?azure-portal=true) to manage interactions with the cloud server and query information about Remote Rendering sessions. In C# and C++, you can create, update, and stop sessions through the `RemoteRenderingClient` and `RenderingSession` classes. This unit describes how to manage Remote Rendering sessions.
 
-## Create a Remote Rendering service resource
+## Create a session
 
-1. After the sandbox at the top of this page has completed activation, sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
-1. On the Azure portal menu or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource.
-1. The portal takes you to the **Marketplace** page. In the **Search the Marketplace** box, type **remote rendering** and press the Enter key.
-1. Select **Remote Rendering** from the results.
+The following command requests creation of a session.
 
-    :::image type="content" source="../media/marketplace-results.png" alt-text="A screenshot of the Azure Marketplace results. There's a red box around the Remote Rendering service.":::
+```powershell
+Invoke-WebRequest -Uri "$endPoint/v1/accounts/$accountId/sessions/create" -Method Post -ContentType "application/json" -Body "{ 'maxLeaseTime': '4:0:0', 'models': [], 'size': 'standard' }" -Headers @{ Authorization = "Bearer $token" }
+```
+When you create a new session, you use the `maxLeaseTime` parameter to specify a maximum lease time, typically in the range of one to eight hours. The maximum lease time is the duration during which the host accepts input. You can extend the lease time of an active session if necessary.
 
-1. On the page for the Remote Rendering service resource, select **Create**.
-1. Fill out the wizard with the following values:
+The response from the request returns a `sessionId`, which allows you to query information about the session. This UUID and some basic information about the session persist for 30 days, so you can query the information even after the session has stopped.
 
-    |Field  |Value  |Details  |
-    |---------|---------|---------|
-    |**Resource Name**     |    Enter a unique name     |   Choose a globally unique name for the resource. For example, you might name the resource *remote-rendering-xxx*, where the x's are replaced with your initials. If the name isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9, and -.      |
-    |**Subscription**    |   *Concierge Subscription*      |    The resource you're creating must belong to a resource group. Here, *Concierge Subscription* is the name of the subscription to which you have access in the Azure Sandbox.     |
-    |**Resource group**     |   *<rgn>[Sandbox resource group name]</rgn>*      |    The resource group to which the Remote Rendering service will belong. All Azure resources must belong to a resource group. The resource group specified here has been created for you by the Azure Sandbox.     |
-    |**Location**     |    Geographical location near you     |   The geographical location where your app will be used.      |
+## Connect to a session
 
-   :::image type="content" source="../media/create-remote-rendering-resource.png" alt-text="A screenshot of the values provided for the Remote Rendering Account wizard.":::
+Once a session is ready, a client device can connect to it and can send commands to load and modify models. When `RenderingSession.IsConnected` is `true`, `RenderingSession.Connection` returns an instance of `RenderingConnection`, which contains the functions to load models, manipulate entities, and query information about the rendered scene.
 
-1. Select **Create**.
+You can create, observe, and shut down as many sessions as you want from a single application, but only one device can connect to a Remote Rendering session at a time. Attempts to connect to the session by other devices fail. Another device can connect only after the session stops.
 
-> [!NOTE]
-> It can take a few seconds to get your Remote Rendering service resource created and ready for use.
+Because a Remote Rendering host serves only one client device at a time, the client connected to a session has exclusive control over the rendered content. The single client connection also means that rendering performance never varies for reasons outside your control.
 
-A notification will appear after deployment is complete. Your new Remote Rendering service resource and API keys will then be available for use.
+## Stop a session
 
-## View the subscription keys and endpoint
+The session stops when the maximum lease time expires or you stop the session manually. To manually stop a session, you can call `RenderingSession.StopAsync`. The session might also stop because of some failure. Once the session stops, you're no longer billed, and all previous states such as loaded models are discarded.
 
-1. On the Azure portal menu or from the **Home** page, select **All resources**.
-1. Select the Remote Rendering service resource from the list.
+After a session stops, you can query the persistent session ID by using `RenderingSession.SessionUuid()`. An application can call `RemoteRenderingClient.OpenRenderingSessionAsync` with the session ID to bind to that session and cache it locally.
 
-    :::image type="content" source="../media/all-resources.png" alt-text="A screenshot of the list of all resources. There's a red box around the remote dash rendering dash demo resource." lightbox="../media/all-resources.png":::
-
-1. In the **Overview** tab, note the **Account Domain**.
-
-    :::image type="content" source="../media/account-domain.png" alt-text="A screenshot of the remote rendering service resource page. There's a red box around the account domain." lightbox="../media/account-domain.png":::
-
-1. In the **Overview** tab, note the **Account ID**.
-
-    :::image type="content" source="../media/account-id.png" alt-text="A screenshot of the remote rendering service resource page. There's a red box around the account ID." lightbox="../media/account-id.png":::
-
-1. In the **Settings** section, select **Access Keys**. In the next exercise, you'll need the value for **Primary key** to render the model in the app.
-
-    :::image type="content" source="../media/access-keys.png" alt-text="A screenshot of the remote rendering service resource page. There's a red box around access keys within the settings section. There's also a red box around the primary key." lightbox="../media/access-keys.png":::

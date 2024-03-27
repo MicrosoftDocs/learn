@@ -6,15 +6,15 @@ This unit provides an overview of the content within the XAGs. It also has gener
 
 ## What are the Xbox Accessibility Guidelines?
 
-The [Xbox Accessibility Guidelines](https://aka.ms/xags) are a set of game accessibility best practices that have been developed in partnership with industry experts and members of the Gaming & Disability Community. They were initially released by Microsoft in January 2020.
+The [Xbox Accessibility Guidelines](https://aka.ms/xags) are a set of game accessibility best practices that have been developed in partnership with industry experts and members of the Gaming & Disability Community. Microsoft initially released the XAGs in January 2020.
 
 :::image type="content" source="../media/xags-landing.png" alt-text="Screenshot that shows the Xbox Accessibility Guidelines V2.5 website shown in Microsoft Edge.":::
 
 The XAGs are intended for the following audiences and use cases:
 
- - For designers to use as a catalyst for generating ideas
- - For developers to use as guardrails when they develop their games
- - For test teams to use as a checklist to validate the accessibility of their titles
+- For designers to use as a catalyst for generating ideas
+- For developers to use as guardrails when they develop their games
+- For test teams to use as a checklist to validate the accessibility of their titles
 
 > [!NOTE]
 > The XAGs aren't intended to function as a checklist to validate any type of compliance or legal requirements. Instead, they seek to ensure that the user experience in a game offers a base level of accessible support that makes games enjoyable and playable for as many players as possible.
@@ -39,7 +39,7 @@ The guidelines are separated into 23 individual sections that focus on specific 
 - [XAG 116: Time limits](/gaming/accessibility/xbox-accessibility-guidelines/116)
 - [XAG 117: Visual distractions](/gaming/accessibility/xbox-accessibility-guidelines/117)
 - [XAG 118: Photosensitivity](/gaming/accessibility/xbox-accessibility-guidelines/118)
-- [XAG 119: Speech-to-text/Text-to-speech chat](/gaming/accessibility/xbox-accessibility-guidelines/119)
+- [XAG 119: Speech to text/Text-to-speech chat](/gaming/accessibility/xbox-accessibility-guidelines/119)
 - [XAG 120: Communication experiences](/gaming/accessibility/xbox-accessibility-guidelines/120)
 - [XAG 121: Accessible feature documentation](/gaming/accessibility/xbox-accessibility-guidelines/121)
 - [XAG 122: Accessible customer support](/gaming/accessibility/xbox-accessibility-guidelines/122)

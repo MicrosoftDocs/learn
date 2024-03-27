@@ -1,0 +1,3 @@
+
+
+Microsoft Learn for Educators believes in higher education and you as an instructor play a pivotal role in empowering students for future success. Your journey in teaching official Microsoft curriculum to your students will help ensure your students are prepared for the DP-100: Designing and Implementing a Data Science Solution on Azure certification exam. We have provided you with a number of learning resources that not only prepare you as an instructor but also give your students the confidence they need to tackle the exam. Now that you have all the necessary tools, you're ready to go.

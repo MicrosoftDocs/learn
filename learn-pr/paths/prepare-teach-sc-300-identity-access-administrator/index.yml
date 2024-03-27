@@ -3,18 +3,17 @@ uid: learn.wwl.prepare-teach-sc-300-identity-access-administrator
 metadata:
   title: Prepare to teach SC-300 Microsoft Identity and Access Administrator
   description: Learn about the Microsoft Learn for Educators program and how to best deliver its content to your students. Prepare to deliver Microsoft’s security solutions, SC-900 Microsoft Security, Compliance, and Identity Fundamentals in academic program.
-  ms.date: 04/10/2023
+  ms.date: 12/01/2023
   author: wwlpublish
-  ms.author: Trinity Sheppard
-  ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.author: tsheppard
+  ms.topic: learning-path
   ms.service: azure
 title: Prepare to teach SC-300 Microsoft Identity and Access Administrator
 prerequisites: |
   None
 summary: |
   Learn about the Microsoft Learn for Educators program and how to best deliver its content to your students. Prepare to deliver Microsoft’s security solutions, SC-900 Microsoft Security, Compliance, and Identity Fundamentals in academic program.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/prepare-teach-sc-300-identity-access-administrator.svg
 levels:
 - beginner
 roles:

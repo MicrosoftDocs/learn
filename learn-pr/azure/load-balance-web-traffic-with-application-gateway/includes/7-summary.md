@@ -10,6 +10,7 @@ The Azure resources that you created in this module can incur ongoing costs. To 
 1. Enter the resource group name in the *Filter for any field* search box.
 1. Select the resource group name.
 1. Select **Delete resource group** in the top menu. Enter the resource group name to confirm, then select **Delete**.
+1. Select **Delete** again to confirm deletion.
 
 ## Learn more
 

@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-use-sap-workload-planning-deployment-checklist.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/08/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "When initiating a project to deploy an SAP workload to Azure, which of the following tasks is part of the project preparation and planning phase in the SAP workload planning and deployment checklist?"
+    choices:
+    - content: "Perform technical validation."
+      isCorrect: false
+      explanation: "Incorrect. Technical validation takes place during the pilot phase."
+    - content: "Data reduction and data migration plan for transferring SAP data into Azure (in migration scenarios)."
+      isCorrect: true
+      explanation: "Correct. The project preparation phase includes data reduction and data migration plan for transferring SAP data into Azure (in migration scenarios)."
+    - content: "Optimizing price/performance ratio of Azure compute and storage resources."
+      isCorrect: false
+      explanation: "Incorrect. Optimizing price/performance ratio of Azure compute and storage resources takes place during the post-production phase."
+  - content: "Approximately how long would the data transfer component of a fully optimized very large database (VLDB) migration to Azure take, if the database size is 30 TB?"
+    choices:
+    - content: "3 hours."
+      isCorrect: false
+      explanation: "Incorrect. A throughput of 10 TB per hour (needed to migrate 30 TB in 3 hours) is unlikely."
+    - content: "15 hours."
+      isCorrect: true
+      explanation: "Correct. A fully optimized VLDB migration should achieve around 2 TB per hour migration throughput or possibly more. A throughput of 10 TB per hour (needed to migrate 30 TB in 3 hours) is unlikely."
+    - content: "30 hours."
+      isCorrect: false
+      explanation: "Incorrect. A fully optimized VLDB migration should achieve around 2 TB per hour migration throughput or possibly more."
+  - content: "When initiating a project to deploy an SAP workload to Azure, which of the following tasks is part of the production preparation phase in the SAP workload planning and deployment checklist?"
+    choices:
+    - content: "Create a playbook that facilitates Azure planned maintenance events."
+      isCorrect: true
+      explanation: "Correct. The playbook should define the order in which the systems and Azure VMs should be taken offline and brought back online for planned maintenance."
+    - content: "Create an inventory of all SAP interfaces."
+      isCorrect: false
+      explanation: "Incorrect. This step should be carried out during the project preparation and planning phase."
+    - content: "Create a detailed inventory of OS, DB, Kernel, and SAP support pack versions."
+      isCorrect: false
+      explanation: "Incorrect. This step should be carried out during the project preparation and planning phase."

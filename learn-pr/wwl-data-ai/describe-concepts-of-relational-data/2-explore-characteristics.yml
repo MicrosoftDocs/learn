@@ -4,14 +4,12 @@ title: Explore the characteristics of relational data
 metadata:
   title: Explore the characteristics of relational data
   description: "Explore the characteristics of relational data"
-  ms.date: 09/13/2021
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-sandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/2-explore-characteristics.md)]

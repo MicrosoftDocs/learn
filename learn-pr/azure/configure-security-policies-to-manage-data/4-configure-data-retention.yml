@@ -3,12 +3,11 @@ uid: learn.azure-security.configure-security-policies-to-manage-data.configure-d
 title: Explore data recovery, retention, and disposal
 metadata:
   title: Explore data recovery, retention, and disposal
-  description: Explore data recovery, retention, and disposal
-  ms.date: 09/30/2019
+  description: Learn about the importance of a data-retention policy to define principles for data recovery and disposal.
+  ms.date: 01/04/2024
   author: VanMSFT
   ms.author: vanto
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 9
 content: |
   [!include[](includes/4-configure-data-retention.md)]

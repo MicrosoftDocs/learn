@@ -76,7 +76,7 @@ A Microsoft Teams Administrator can change or select a sensitivity label at the 
 
 ### Microsoft Teams creation controls for sensitivity labeling
 
-If sensitivity labels are created with a Group & site setting and the user has an Azure AD P1 license, then it´s possible to control the creation of Microsoft Teams with sensitivity Labeling.
+If sensitivity labels are created with a Group & site setting and the user has a Microsoft Entra ID P1 license, then it´s possible to control the creation of Microsoft Teams with sensitivity Labeling.
 
 1. Open the Teams desktop client.
 

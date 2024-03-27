@@ -71,7 +71,7 @@ Your *database.bicep* file should look like this example:
 
 ::: code language="bicep" source="code/8-database.bicep" highlight="68-70" :::
 
-If it doesn't, either copy the example or adjust your template to match the example.
+If they don't, either copy the examples or adjust your templates to match the examples.
 
 ## Deploy the Bicep template to Azure
 
@@ -96,7 +96,7 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 ::: zone-end
 
 > [!CAUTION]
-> Be sure to use the same login and password that you used previously, or else the deployment won't finish successfully.
+> Be sure to use the same login and password that you used previously, or the deployment won't finish successfully.
 
 Wait for the deployment to finish.
 

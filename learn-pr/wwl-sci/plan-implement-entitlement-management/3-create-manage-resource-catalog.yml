@@ -1,16 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.plan-implement-entitlement-management.create-manage-resource-catalog-with-azure-ad-entitlement
-title: Exercise create and manage a resource catalog with Azure AD entitlement
+title: Exercise create and manage a resource catalog with Microsoft Entra entitlement management
 metadata:
-  title: Exercise create and manage a resource catalog with Azure AD entitlement
-  description: "Exercise create and manage a resource catalog with Azure AD entitlement"
-  ms.date: 02/07/2023
+  title: Exercise create and manage a resource catalog with Microsoft Entra entitlement management
+  description: "Exercise create and manage a resource catalog with Microsoft Entra entitlement management"
+  ms.date: 01/18/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 12
 content: |
   [!include[](includes/3-create-manage-resource-catalog.md)]

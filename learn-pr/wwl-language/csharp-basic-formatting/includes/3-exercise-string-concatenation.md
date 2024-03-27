@@ -1,6 +1,5 @@
 
 
-
 Often, you'll need to combine data from many different sources, including literal strings and variables containing both text and numeric data. In this unit, you'll use string concatenation to combine two or more values into a new string.
 
 ## What is string concatenation?

@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.enable-windows-server-extended-security-updates-using-azure-arc.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Answer the questions to determine what you learned in the module.
+  ms.date: 01/03/2024
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ms.service: windows-server
+  ms.custom: team=cloud_advocates
+durationInMinutes: 5
+content: Choose the best response for each question. Then select **Check your answers**.
+quiz:
+  questions:
+    - content: "You want to delegate the task of creating and assigning ESUs to Azure Arc enabled Windows Server 2012 computers to your subordinate. You want to follow the principle of least privilege. Which Azure RBAC role should you assign to the subordinate so the are able to create and assign ESUs to these Arc enabled servers?"
+      choices:
+        - content: "Contributor role"
+          isCorrect: true
+          explanation: "To create and assign ESUs to Arc-enabled servers, you'll need the Contributor Azure RBAC role."
+        - content: "Reader role"
+          isCorrect: false
+          explanation: "To create and assign ESUs to Arc-enabled servers, you'll need the Contributor Azure RBAC role. The Reader role doesn't have the required permissions."
+        - content: "Owner role"
+          isCorrect: false
+          explanation: "Whilst you could use the Owner role to create and assign ESUs to Arc-enabled servers, this role includes more permissions than is necessary. The most appropriate role to use is the Contributor Azure RBAC role."
+    - content: "You have 20 Windows Server 2012 R2 servers that are hosted on an isolated subnet that has no connectivity to the internet. You want to activate these servers for extended security updates and then deploy the updates manually. Which of the following tools could you use to accomplish this goal?"
+      choices:
+        - content: "Windows Deployment Services"
+          isCorrect: false
+          explanation: "You can't use Windows Deployment Services to deploy software updates."
+        - content: "Windows Server Update Services"
+          isCorrect: false
+          explanation: "Whilst Windows Server Update Services can be used to deploy software updates, you can't use Windows Server Update Services to activate ESUs."
+        - content: "Volume Activation Management Tool"
+          isCorrect: true
+          explanation: "For computers that are unable to directly communicate with the Internet, you can activate ESUs using the Volume Activation Management Tool (VAMT) in conjunction with the VAMT ESU configuration file."
+        - content: "Azure Arc"
+          isCorrect: false
+          explanation: "Azure Arc requires that the servers be connected to the internet."
+    - content: "What is the minimum number of physical cores that you can license when obtaining an ESU license?"
+      choices:
+        - content: "4 cores"
+          isCorrect: false
+          explanation: "If you choose to license based on physical cores, the licensing requires a minimum of 16 physical cores per license. If you choose to license based on virtual cores, the licensing requires a minimum of eight virtual cores per Virtual Machine."
+        - content: "8 cores"
+          isCorrect: false
+          explanation: "If you choose to license based on physical cores, the licensing requires a minimum of 16 physical cores per license. If you choose to license based on virtual cores, the licensing requires a minimum of eight virtual cores per Virtual Machine."
+        - content: "16 cores"
+          isCorrect: true
+          explanation: "If you choose to license based on physical cores, the licensing requires a minimum of 16 physical cores per license. If you choose to license based on virtual cores, the licensing requires a minimum of eight virtual cores per Virtual Machine."
+        - content: "2 cores"
+          isCorrect: false
+          explanation: "If you choose to license based on physical cores, the licensing requires a minimum of 16 physical cores per license. If you choose to license based on virtual cores, the licensing requires a minimum of eight virtual cores per Virtual Machine."
+ 

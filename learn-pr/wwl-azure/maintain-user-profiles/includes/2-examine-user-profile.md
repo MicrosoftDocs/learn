@@ -1,4 +1,5 @@
 
+
 In Windows, a user profile contains a user state. A user profile is a set of files and folders. It's personal to each user who has signed in to the computer, and it’s stored in the Users folder. Windows requires each user who signs in to have a user profile. The Windows operating system creates a user profile when a user signs in for the first time. The initial user profile is based on the default user profile and is used for all subsequent sign-ins. User profiles contain details about the user environment, such as Start menu settings, desktop settings, user documents, and the user hive of the registry. By default, a user profile is located on the same drive as the Windows operating system in the C:\\Users folder. The user profile is only applicable when a user logs in to the same device, but you can alter the user profile type if you wish to use it for multiple computers.
 
 User profiles provide the following advantages:

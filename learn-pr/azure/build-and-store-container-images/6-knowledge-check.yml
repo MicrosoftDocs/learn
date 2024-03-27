@@ -4,19 +4,18 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Azure Container Registry knowledge check.
-  ms.date: 09/24/2018
+  ms.date: 11/09/2023
   author: tejaswikolli
   ms.author: tejaswikolli
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 quiz:
   title: Check your knowledge
   questions:
 
-  - content: "Which of the following options isn't a benefit of using Azure Container Registry?"
+  - content: "Which of the following options *isn't* a benefit of using Azure Container Registry?"
     choices:
-    - content: "Replicate container images to multiple Azure datacenters."
+    - content: "Replicate container images to multiple Azure data centers."
       isCorrect: false
       explanation: "The Azure Container Registry provides a geo-replication feature."
     - content: "Pull container images using any Docker container-related technology."
@@ -29,29 +28,29 @@ quiz:
       isCorrect: false
       explanation: "Container images can be built in the cloud using Azure Container Registry Build."
   
-  - content: "What is the recommended authentication method for Azure Container Registry?"
+  - content: "What's the recommended authentication method for Azure Container Registry?"
     choices:
     - content: "Admin account"
       isCorrect: false
-      explanation: "An admin account can be created for Azure Container Registry; however, this authentication method isn't the recommended option."
+      explanation: "You can use an admin account, but it isn't the recommended authentication option."
     - content: "Username and password"
       isCorrect: false
-      explanation: "An admin-account with username and password can be enabled for an Azure Container Registry; however, this authentication method isn't the recommended option."
+      explanation: "You can enable an admin account with a username and password, but it isn't the recommended authentication option."
     - content: "Azure service principal"
       isCorrect: true
-      explanation: "Azure service principals are the recommended authentication method. They provide granular access to container images in Azure Container Registry; for example, you can specify read-only access or full access to the container registry."
+      explanation: "Azure service principals are the recommended authentication method. They provide granular access to container images in Azure Container Registry. For example, you can specify read-only access or full access to the container registry."
     - content: "No authentication"
       isCorrect: false
       explanation: "Azure Container Registry is a private registry and can't be accessed without authentication."
  
-  - content: "Suppose you use container images to run compute workloads in multiple regions throughout the world. You plan to enable the geo-replication feature of Azure Container Registry to decrease the time required to provision an instance. In which regions should you configure the Azure Container Registry geo-replication feature?"
+  - content: "Let's say you use container images to run compute workloads in multiple regions throughout the world. You plan to enable the geo-replication feature of Azure Container Registry to decrease the time required to provision an instance. In which regions should you configure the Azure Container Registry geo-replication feature?"
     choices:
     - content: "Place a container registry in the region closest to your development team."
       isCorrect: false
       explanation: "The goal is to place the registries close to the execution locations, not near the development team."
     - content: "Place a container registry in each region where images are run."
       isCorrect: true
-      explanation: "Placing a registry in each region that runs the images will ensure network-close registry access everywhere it's needed."
+      explanation: "Placing a registry in each region that runs the images ensures network-close registry access everywhere it's needed."
     - content: "Place a container registry in every Azure region."
       isCorrect: false
-      explanation: "This will increase costs but won't increase performance."
+      explanation: "This increases costs and doesn't improve performance."

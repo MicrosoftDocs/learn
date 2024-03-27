@@ -1,5 +1,3 @@
-
-
 In Azure Machine Learning, you can tune hyperparameters by running a **sweep job**.
 
 ## Create a training script for hyperparameter tuning
@@ -55,7 +53,7 @@ from azure.ai.ml import command
 # configure command job as base
 job = command(
     code="./src",
-    command="python train.py --regularization ${{inputs.regularization}}",
+    command="python train.py --regularization ${{inputs.reg_rate}}",
     inputs={
         "reg_rate": 0.01,
     },
@@ -104,4 +102,4 @@ You can monitor sweep jobs in Azure Machine Learning studio. The sweep job will 
 Additionally, you can evaluate and compare models by visualizing the trials in the studio. You can adjust each chart to show and compare the hyperparameter values and metrics for each trial.
 
 > [!Tip]
-> Learn more about how to [visualize hyperparameter tuning jobs](//azure/machine-learning/how-to-tune-hyperparameters#visualize-hyperparameter-tuning-jobs?azure-portal=true).
+> Learn more about how to [visualize hyperparameter tuning jobs](/azure/machine-learning/how-to-tune-hyperparameters#visualize-hyperparameter-tuning-jobs?azure-portal=true).

@@ -7,10 +7,11 @@ metadata:
   title: Exercise - Publish a module to your registry
   description: Publish a Bicep module to your container registry.
   ms.date: 03/06/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 3
 content: |

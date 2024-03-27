@@ -1,23 +1,23 @@
 ### YamlMime:Module
 uid: learn.microservices-resiliency-aspnet-core
 metadata:
-  title: Implement resiliency in a cloud-native ASP.NET Core microservice
-  description: This module guides you through implementing resiliency in an ASP.NET Core microservices app in Azure Kubernetes Service.
-  author: camsoper
-  ms.author: casoper
-  ms.date: 07/12/2020
-  ms.prod: aspnet-core
-  ms.topic: interactive-tutorial
-title: Implement resiliency in a cloud-native ASP.NET Core microservice
-summary: Learn how to make your cloud-native ASP.NET Core microservices app fault-tolerant with minimal impact on the user.
+  title: Implement resiliency in a cloud-native microservice
+  description: This module guides you through implementing resiliency in an .NET microservices app in a Kubernetes Service.
+  author: codemillmatt
+  ms.author: masoucou
+  ms.date: 11/06/2023
+  ms.service: aspnet-core
+  ms.topic: module-standard-task-based
+title: Implement resiliency in a cloud-native .NET microservice
+summary: Learn how to make your cloud-native .NET Core microservices app fault-tolerant with minimal impact on the user.
 abstract: |
   In this module, you will:
   - Understand foundational resiliency concepts.
   - Observe the behavior of a microservice with no resiliency strategy.
   - Implement failure handling code for HTTP requests in one microservice.
-  - Deploy an infrastructure-based resiliency solution to an AKS cluster.
+  - Deploy an infrastructure-based resiliency solution to an Azure Kubernetes Service (AKS) cluster.
 prerequisites: |
-  - Familiarity with C# and ASP.NET Core development at the beginner level
+  - Familiarity with C# and .NET development at the beginner level
   - Familiarity with RESTful service concepts
   - Conceptual knowledge of containers and AKS at the intermediate level
   - Access to an Azure subscription with **Owner** privilege
@@ -28,21 +28,19 @@ roles:
   - developer
   - solution-architect
 products:
-  - dotnet
   - aspnet-core
-  - dotnet-core
   - azure
   - azure-container-registry
   - azure-kubernetes-service
 subjects:
-- serverless-compute
+- serverless-computing
 units:
   - learn.microservices-resiliency-aspnet-core.1-introduction
-  - learn.microservices-resiliency-aspnet-core.2-environment-setup
-  - learn.microservices-resiliency-aspnet-core.3-review-resiliency-concepts
-  - learn.microservices-resiliency-aspnet-core.4-verify-deployment
-  - learn.microservices-resiliency-aspnet-core.5-implement-polly-resiliency
-  - learn.microservices-resiliency-aspnet-core.6-implement-linkerd-resiliency
+  - learn.microservices-resiliency-aspnet-core.2-application-infrastructure-resiliency
+  - learn.microservices-resiliency-aspnet-core.3-implement-application-resiliency
+  - learn.microservices-resiliency-aspnet-core.4-exercise-implement-resiliency
+  - learn.microservices-resiliency-aspnet-core.5-implement-infrastructure-resiliency
+  - learn.microservices-resiliency-aspnet-core.6-exercise-implement-infrastructure-resiliency
   - learn.microservices-resiliency-aspnet-core.7-knowledge-check
   - learn.microservices-resiliency-aspnet-core.8-summary
 iconUrl: /training/achievements/aspnetcore/microservices-resiliency-aspnet-core.svg

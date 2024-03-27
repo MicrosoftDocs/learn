@@ -39,10 +39,10 @@ Here *\<LocalMonitoringIP\>* is the IP address for accessing the local monitorin
 
 Azure Private 5G Core provides two authentication methods for the packet core dashboards:
 
-- Azure active directory (AD): The [Azure AD method](/azure/private-5g-core/enable-azure-active-directory) allows users to sign in with their Azure accounts.
+- Microsoft Entra ID: The [Microsoft Entra method](/azure/private-5g-core/enable-azure-active-directory) allows users to sign in with their Azure accounts.
 - Username and password: The username/password method allows users to sign in with a default account.
 
-Whenever possible, use the Azure AD method, as it's more secure. Only use the username and password method when you don't have a stable connection to Azure. You can choose your preferred authentication method when you deploy or modify a site. For detailed instructions on configuring and using these authentication methods, see [Packet core dashboards](/azure/private-5g-core/packet-core-dashboards).
+Whenever possible, use the Microsoft Entra method, as it's more secure. Only use the username and password method when you don't have a stable connection to Azure. You can choose your preferred authentication method when you deploy or modify a site. For detailed instructions on configuring and using these authentication methods, see [Packet core dashboards](/azure/private-5g-core/packet-core-dashboards).
 
 Access to the packet core dashboards is secured by HTTPS. You can use a self-signed certificate or provide your own to authenticate access to the dashboards. The article [Modify the local access configuration in a site](/azure/private-5g-core/modify-local-access-configuration) provides detailed instructions on checking or modifying the access certificate.
 

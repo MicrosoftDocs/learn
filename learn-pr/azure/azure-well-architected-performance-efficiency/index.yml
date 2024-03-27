@@ -2,16 +2,16 @@
 uid: learn.azure-well-architected-performance-efficiency
 metadata:
   title: 'Microsoft Azure Well-Architected Framework - Performance efficiency'
-  description: Learn how to adjust your capacity based on workload and how to optimize network performance, storage, and database performance.
-  ms.date: 04/26/2022
+  description: Learn how to optimize your workload to meet performance requirements while balancing costs, reliability, and security.
+  ms.date: 12/13/2023
   author: martinekuan
   ms.author: martinek
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: waf
 title: 'Microsoft Azure Well-Architected Framework - Performance efficiency'
 summary: Scaling your system to handle load, identifying network bottlenecks, and optimizing your storage performance are important to ensure your users have the best experience. Learn how to make your application perform at its best.
 abstract:  | 
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
   - Scale your capacity based on workload.
   - Optimize network performance.
   - Optimize storage and database performance.
@@ -43,10 +43,10 @@ subjects:
 - architecture
 units:
 - learn.azure-well-architected-performance-efficiency.1-introduction
-- learn.azure-well-architected-performance-efficiency.2-scaling-up-and-scaling-out
-- learn.azure-well-architected-performance-efficiency.3-optimize-network-performance
-- learn.azure-well-architected-performance-efficiency.4-optimize-storage-performance
-- learn.azure-well-architected-performance-efficiency.5-identify-performance-bottlenecks-in-your-application
+- learn.azure-well-architected-performance-efficiency.negotiate-realistic-performance-targets
+- learn.azure-well-architected-performance-efficiency.design-to-meet-capacity-requirements
+- learn.azure-well-architected-performance-efficiency.achieve-and-sustain-performance
+- learn.azure-well-architected-performance-efficiency.improve-efficiency-through-optimization
 - learn.azure-well-architected-performance-efficiency.6-summary
 badge:
   uid: learn.azure-well-architected-performance-efficiency.badge

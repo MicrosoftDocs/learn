@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.separate-ui-and-logic-with-data-binding.6-exercise-create-converter
+title: Exercise - Create a .NET MAUI converter
+metadata:
+  title: Exercise - Create a .NET MAUI converter
+  description: Learn how to implement a converter that converts an enumeration to an image resource.
+  ms.date: 02/15/2024
+  author: adegeo
+  ms.author: adegeo
+  ms.topic: unit
+  ms.service: dotnet-mobile
+  ms.subservice: dotnet-maui
+  ms.custom: devx-track-dotnet
+durationInMinutes: 10
+content: |
+  [!include[](./includes/6-exercise-create-converter.md)]

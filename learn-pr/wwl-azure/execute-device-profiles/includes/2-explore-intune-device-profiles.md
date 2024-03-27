@@ -1,4 +1,5 @@
 
+
 Microsoft Intune includes settings and features that you can enable or disable on different devices within your organization. These settings and features are managed using profiles. Some profile examples include:
 
  -  A Wi-Fi profile that gives different devices access to your corporate Wi-Fi.

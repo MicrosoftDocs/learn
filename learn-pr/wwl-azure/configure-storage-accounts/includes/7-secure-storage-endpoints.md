@@ -1,4 +1,4 @@
-In the Azure portal, each Azure service has required steps to configure the service endpoints and restrict network access for the service.
+In the Azure portal, each Azure service requires certain steps to configure the service endpoints and restrict network access.
 
 To access these settings for your storage account, you use the **Firewalls and virtual networks** settings. You add the virtual networks that should have access to the service for the account.
 
@@ -16,3 +16,7 @@ Here are some points to consider about configuring service access settings:
 
 > [!Important]
 > Be sure to test the service endpoint and verify the endpoint limits access as expected.
+
+### How to connect to a storage account using private link
+
+<iframe width="854" height="480" src="https://www.youtube.com/embed/vM7yDwHSc_o" title="How to move Azure Storage Blobs between containers" allowfullscreen></iframe>

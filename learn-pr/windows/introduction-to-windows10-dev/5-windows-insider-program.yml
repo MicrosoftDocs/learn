@@ -5,10 +5,9 @@ metadata:
   title: The Windows Insider Program
   description: Learn how the Windows Insider Program can keep you in the know.
   ms.date: 03/03/2023
-  author: JohnKennedy
-  ms.author: jken
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  author: alvinashcraft
+  ms.author: aashcraft
+  ms.topic: unit
   
 durationInMinutes: 10
 content: |

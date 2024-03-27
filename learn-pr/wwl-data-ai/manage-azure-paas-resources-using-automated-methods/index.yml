@@ -6,8 +6,7 @@ metadata:
   ms.date: 06/10/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
 title: Manage Azure PaaS tasks using automation
 summary: Explore automation for Azure SQL platform. Configure elastic jobs, explore Azure Automation, and evaluate different strategies for monitoring automation tasks.
 abstract: |
@@ -35,7 +34,7 @@ products:
 subjects:
 - cloud-computing
 - data-engineering
-- database
+- databases
 units:
 - learn.wwl.manage-azure-paas-resources-using-automated-methods.introduction
 - learn.wwl.manage-azure-paas-resources-using-automated-methods.explore-elastic-jobs

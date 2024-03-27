@@ -1,5 +1,3 @@
-
-
 Azure Monitor is one of the core components in the comprehensive collection for Microsoft cloud-based monitoring. It provides a solution for SAP workloads running in Azure, and for your on-premises datacenter. Other Azure manageability features that belong in the same category include:
 
 - **Azure Advisor**. Uses resource usage data to make recommendations for optimizing performance, security, and availability.
@@ -22,7 +20,9 @@ Monitoring the performance, availability, and usage of web-based applications, r
   - **DNS Analytics**
   - **Service Endpoint Monitor**
 
-Tasks like configuring alerts, designing custom dashboards, and analyzing metrics are carried out similarly in core and deep monitoring services. This means that you can view and configure performance-related settings for a wide range of Azure resources in the same consistent manner. With Azure Monitor, you have a single point of reference for the most relevant configuration settings and monitoring data. This not only improves your user experience but also helps you maintain a consistent configuration across your entire subscription.
+Tasks like configuring alerts, designing custom dashboards, and analyzing metrics are carried out similarly in core and deep monitoring services. This means that you can view and configure performance-related settings for a wide range of Azure resources in the same consistent manner. With Azure Monitor, you have a single point of reference for the most relevant configuration settings and monitoring data. Thisn't only improves your user experience but also helps you maintain a consistent configuration across your entire subscription.
+
+Additionally, many customers use SAP Landscape Management (LaMa) to operate and monitor their SAP landscape. Since version 3.0 SP05, SAP LaMa includes a connector to Azure by default.
 
 ## Explore Azure Monitor support for alerting
 
@@ -35,7 +35,7 @@ Azure Monitor also offers comprehensive support for alerting. It allows you to c
   - Alerts that consider conditions of two or more metrics.
   - Multi-dimensional metric-based alerts that allow you to generate alerts based on one or more dimensions of a metric. A dimension identifies a subset of related metrics based on a key-value pair. For example, for a Windows Server, the metric “Available disk space” can have a dimension named “Drive”, with its values representing individual drive letters.
   - Alerts that support such conditions as average and total, in addition to minimum, and maximum values available with classic metric alerts.
-- **Classic activity log alerts** parsing streaming log data, responding to events such as a Service Health incident or deletion of an Azure VM.
+- **Classic activity log alerts** parsing streaming log data, responding to events such as a Service Health incident or deletion of an Azure Virtual Machine.
 - **Activity log alerts**, which function similarly to classic activity log alerts but support configuration by using Azure Resource Manager templates.
 
 ## Optional demo

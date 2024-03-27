@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-langstons-ant.exercise-create-interface
+title: Exercise - Create an interface
+metadata:
+  title: Exercise - Create an interface
+  description: "Exercise - Create an interface"
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/03-exercise-create-interface.md)]

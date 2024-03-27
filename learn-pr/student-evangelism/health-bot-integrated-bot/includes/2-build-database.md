@@ -104,15 +104,15 @@ Follow these steps to give access to another user:
 
     :::image type="content" source="../media/2-sql-server.png" alt-text="Screenshot showing the selected sequel server." lightbox="../media/2-sql-server.png":::
     
-1. In the menu on the left side of the page, select **Azure Active Directory**.
+1. In the menu on the left side of the page, select **Microsoft Entra ID**.
 
-   :::image type="content" source="../media/2-azure-active-directory.png" alt-text="Screenshot showing the Azure Active Directory selection. The Set admin tab is also selected." lightbox="../media/2-azure-active-directory.png":::
+   :::image type="content" source="../media/2-azure-active-directory.png" alt-text="Screenshot showing the Microsoft Entra selection. The Set admin tab is also selected." lightbox="../media/2-azure-active-directory.png":::
 
-1. Select **Set admin** to open the **Azure Active Directory** pane.
+1. Select **Set admin** to open the **Microsoft Entra ID** pane.
 
 1. Search for the user who needs access. Then choose **Select**.
 
-   :::image type="content" source="../media/2-set-admin.png" alt-text="Screenshot showing the Azure Active Directory pane." lightbox="../media/2-set-admin.png":::
+   :::image type="content" source="../media/2-set-admin.png" alt-text="Screenshot showing the Microsoft Entra pane." lightbox="../media/2-set-admin.png":::
 
 ## Visualize the database as a table
 

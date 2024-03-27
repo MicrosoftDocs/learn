@@ -4,15 +4,15 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/11/2022
+  ms.date: 03/14/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 quiz:
+  title: ""
   questions:
   - content: "When combining the output of two sets, how does UNION and UNION all treat NULL values?"
     choices:
@@ -29,13 +29,13 @@ quiz:
     choices:
     - content: "EXCEPT"
       isCorrect: false
-      explanation: "That's incorrect. The EXCEPT set operator will return rows that are in one result set, but not the other."
+      explanation: "That's incorrect. The EXCEPT set operator returns rows that are in one result set, but not the other."
     - content: "INTERSECT"
       isCorrect: true
-      explanation: "That's correct. The INTERSECT set operator will return rows that are in both result sets."
+      explanation: "That's correct. The INTERSECT set operator returns rows that are in both result sets."
     - content: "OUTER APPLY"
       isCorrect: false
-      explanation: "That's incorrect. OUTER APPLY is a table operator will return rows from two result sets."
+      explanation: "That's incorrect. OUTER APPLY is a table operator returns rows from two result sets."
   - content: "What type of result does the APPLY operator return?"
     choices:
     - content: "Table-valued"

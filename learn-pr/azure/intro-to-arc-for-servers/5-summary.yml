@@ -4,10 +4,9 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 01/04/2023
-  author: JnHs
-  ms.author: jenhayes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: johnmarco
+  ms.author: johnmarc
+  ms.topic: unit
   ms.custom: e2e-hybrid
 title: Summary
 durationInMinutes: 2

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.migrate-sql-workloads-azure-sql-databases.migrate-sql-server-azure-sql-database-online
+title: Use an online method to migrate to Azure SQL Database
+metadata:
+  title: Use an online method to migrate to Azure SQL Database
+  description: "Learn how to use transactional replication to migrate to Azure SQL Database."
+  ms.date: 10/31/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 9
+content: |
+  [!include[](includes/6-migrate-sql-server-azure-sql-database-online.md)]

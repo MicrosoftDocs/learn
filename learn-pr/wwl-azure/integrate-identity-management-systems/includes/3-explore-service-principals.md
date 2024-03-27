@@ -1,8 +1,10 @@
-Azure AD offers different kinds of mechanisms for authentication. In DevOps Projects, though, one of the most important is the use of Service Principals.
+Microsoft Entra ID offers different kinds of mechanisms for authentication. In DevOps Projects, though, one of the most important is the use of Service Principals.
 
-## Azure AD applications
+<a name='azure-ad-applications'></a>
 
-Applications are registered with an Azure AD tenant within Azure Active Directory. Registering an application creates an identity configuration. You also determine who can use it:
+## Microsoft Entra applications
+
+Applications are registered with a Microsoft Entra tenant within Microsoft Entra ID. Registering an application creates an identity configuration. You also determine who can use it:
 
  -  Accounts in the same organizational directory.
  -  Accounts in any organizational directory.
@@ -24,7 +26,7 @@ Once the application is created, you then should create at least one client secr
 
 ## Grant permissions
 
-The application identity can then be granted permissions within services and resources that trust Azure Active Directory.
+The application identity can then be granted permissions within services and resources that trust Microsoft Entra ID.
 
 ## Service principal
 

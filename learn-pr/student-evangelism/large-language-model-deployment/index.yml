@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.large-language-model-deployment
+metadata:
+  ms.author: chnoring
+  author: softchris
+  ms.date: 12/04/2023
+  title: Create a large language model deployment
+  description: Lean how to create a large language model deployment. 
+  ms.topic: module
+title: "Create a large language model deployment"
+summary: "This module provides a step-by-step guide on how to provision an Azure OpenAI cloud resource, create a deployment for a specific large language model (LLM), and experiment with different prompts to explore the capabilities of an LLM in various scenarios."
+abstract: |
+ In this module, you'll learn how to: 
+  - Provision an Azure OpenAI cloud resource.
+  - Create a deployment for a specific LLM model.
+  - Experiment with different prompts to see what type of results an LLM can provide in different situations.
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.large-language-model-deployment.introduction
+- learn.large-language-model-deployment.resource-provisioning
+- learn.large-language-model-deployment.provision-resource-exercise
+- learn.large-language-model-deployment.deploy-model
+- learn.large-language-model-deployment.deployment-exercise
+- learn.large-language-model-deployment.azure-openai-studio
+- learn.large-language-model-deployment.try-model-exercise
+- learn.large-language-model-deployment.knowledge-check
+- learn.large-language-model-deployment.summary
+badge:
+  uid: learn.module-2-create-an-llm-deployment-badge

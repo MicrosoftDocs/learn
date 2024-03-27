@@ -5,10 +5,9 @@ metadata:
   title: Summary
   description: Review the important concepts that you learned in this module.
   ms.date: 05/21/2020
-  author: v-ksreedevan
-  ms.author: v-ksreedevan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/8-summary.md)]

@@ -10,7 +10,7 @@ Now that you've reviewed this module, you should be able to:
 
 Use these resources to discover more:
 
- -  [What is single-sign-on in Azure Active Directory?](/azure/active-directory/manage-apps/what-is-single-sign-on)
+ -  [What is single-sign-on in Microsoft Entra ID?](/azure/active-directory/manage-apps/what-is-single-sign-on)
  -  [Connected apps with Microsoft Defender for Cloud Apps](/defender-cloud-apps/enable-instant-visibility-protection-and-governance-actions-for-your-apps)
  -  [Quickstart: Enable single-sign-on for an enterprise application](/azure/active-directory/manage-apps/add-application-portal-setup-sso)
  -  [Microsoft Defender for Cloud Apps OAuth Policy creation](/defender-cloud-apps/app-permission-policy)

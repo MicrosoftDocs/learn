@@ -1,5 +1,3 @@
-
-
 - **VMs**. Azure IaaS virtual machines.
 - **HANA (VMs)**. Azure IaaS virtual machines certified to run SAP HANA.
 - **Azure Region**. Group of Azure data centers providing Azure cloud services.

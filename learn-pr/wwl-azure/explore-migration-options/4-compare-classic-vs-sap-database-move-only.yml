@@ -7,8 +7,7 @@ metadata:
   ms.date: 04/21/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/4-compare-classic-vs-sap-database-move-only.md)]
