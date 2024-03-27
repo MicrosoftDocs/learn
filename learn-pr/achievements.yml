@@ -3138,3 +3138,8 @@ achievements:
   title: Monitor the health and performance of your web apps
   summary: Learn how to monitor your solution for performance and issues.
   iconUrl: /learn/achievements/monitor-health-performance-of-your-web-applications.svg
+- uid: learn.wwl.move-application-data-to-cloud.badge
+  type: badge
+  title: Move app data to the cloud
+  summary: Learn about Azure's data solutions and perform a data migration.
+  iconUrl: /learn/achievements/move-application-data-to-cloud.svg
