@@ -9,7 +9,6 @@ metadata:
   ms.author: patricka
   ms.topic: unit
   ms.custom: team=nextgen
-  ms.service: iot-edge
 durationInMinutes: 15
 content: |
   [!include[](includes/4-exercise-create-ci-pipeline-iot-edge.md)]
