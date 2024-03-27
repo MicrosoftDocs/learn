@@ -35945,6 +35945,11 @@
       "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/3-azure-stream-analytics-other-stream-process-technologies.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
     }
   ]
 }
