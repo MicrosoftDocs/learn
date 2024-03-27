@@ -3153,3 +3153,8 @@ achievements:
   title: Examine Azure Stream Analytics and Azure Functions in Azure IoT Hub solutions
   summary: This module introduces you to processing IoT data with Azure Stream Analytics and Azure Functions, the capabilities provided by the Stream Analytics service, and the configuration options for Stream Analytics inputs, outputs, and queries.
   iconUrl: /training/achievements/azure-stream-analytics.svg
+- uid: learn.wwl.examine-iot-hub-message-routing.badge
+  type: badge
+  title: Examine Azure IoT Hub message routing
+  summary: This module introduces you to Azure IoT Hub message routing, the common set of message features implemented by Azure IoT Hub, Azure IoT Hub's service-facing endpoints, and the message routing query syntax.
+  iconUrl: /training/achievements/iot-hub-message-routing.svg
