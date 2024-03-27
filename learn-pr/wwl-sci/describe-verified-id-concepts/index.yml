@@ -7,8 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: module
-  ms.service: decentralized-identity
-  ms.subservice: verifiable-credentials
+  ms.service: entra-verified-id
 title: Describe the concepts behind Microsoft Entra Verified ID
 summary: "Gain an understanding of decentralized identifiers and how they're used to issue and verify credentials, in a way that delivers on the promise of a decentralized identity system where users control their identities."
 abstract: |
