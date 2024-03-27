@@ -3,13 +3,13 @@ uid: learn.philanthropies.responsible-use-of-artificial-intelligence-in-educatio
 title: Responsible Use of Artificial Intelligence in Education
 metadata:
   title: Responsible Use of Artificial Intelligence in Education
-  description: In this learning path, you will embark on an insightful exploration of Microsoft’s Responsible AI framework, learning how to apply ethical principles to the development and use of AI technologies. You’ll start by learning the frameworks that shape Microsoft’s approach to responsible AI, focusing on the commitment to the six responsible AI principles. As you progress, you’ll discover practical ways to integrate these principles into educational environments, ensuring that AI tools not only enhance learning experiences but also uphold values of fairness and privacy.
-   The learning path concludes with hands-on exercises, translating theoretical knowledge into real-world practice. This learning path will equip you with the necessary skills to implement responsible AI systems responsibly in any learning environment.
+  description: In this learning path, you'll embark on an insightful exploration of Microsoft’s Responsible AI framework, learning how to apply ethical principles to the development and use of AI technologies. You start by learning the frameworks that shape Microsoft’s approach to responsible AI, focusing on the commitment to the six responsible AI principles. As you progress, you discover practical ways to integrate these principles into educational environments, ensuring that AI tools not only enhance learning experiences but also uphold values of fairness and privacy.
+   The learning path concludes with hands-on exercises, translating theoretical knowledge into real-world practice. This learning path equips you with the necessary skills to implement responsible AI systems responsibly in any learning environment.
   ms.date: 03/26/2024
   author: yoosunee
   ms.author: andreapark
   ms.topic: learning-path
-summary: This learning path offers a journey through Microsoft’s Responsible AI framework, emphasizing the importance of ethical considerations in AI development and application. You will gain a foundational understanding of Microsoft’s approach to AI, which prioritizes fairness, reliability & safety, privacy & security, inclusiveness, transparency, accountability, and practical usage.
+summary: This learning path offers a journey through Microsoft’s Responsible AI framework, emphasizing the importance of ethical considerations in AI development and application. You'll gain a foundational understanding of Microsoft’s approach to AI, which prioritizes fairness, reliability & safety, privacy & security, inclusiveness, transparency, accountability, and practical usage.
 prerequisites: None
 iconUrl: /achievements/generic-trophy.svg
 levels: 
