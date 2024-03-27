@@ -3123,3 +3123,23 @@ achievements:
   title: Modernize .NET and Java apps
   summary: Migrate app workloads to the cloud by learning how to assess your migration and move your app and data to the cloud. Learn how to monitor the health and performance of your app.
   iconUrl: /training/achievements/modernize-net-java.svg
+- uid: learn.wwl.create-app-migration-plan.badge
+  type: badge
+  title: Create an app migration plan
+  summary: Learn how to plan an app workload migration to Azure.
+  iconUrl: /learn/achievements/create-app-migration-plan.svg
+- uid: learn.wwl.migrate-web-application-to-app-service.badge
+  type: badge
+  title: Migrate a web app to Azure App Service
+  summary: Learn about the different app hosting options in Azure and perform an app migration.
+  iconUrl: /learn/achievements/migrate-web-application-to-app-service.svg
+- uid: learn.wwl.monitor-health-performance-of-your-web-applications.badge
+  type: badge
+  title: Monitor the health and performance of your web apps
+  summary: Learn how to monitor your solution for performance and issues.
+  iconUrl: /learn/achievements/monitor-health-performance-of-your-web-applications.svg
+- uid: learn.wwl.move-application-data-to-cloud.badge
+  type: badge
+  title: Move app data to the cloud
+  summary: Learn about Azure's data solutions and perform a data migration.
+  iconUrl: /learn/achievements/move-application-data-to-cloud.svg
