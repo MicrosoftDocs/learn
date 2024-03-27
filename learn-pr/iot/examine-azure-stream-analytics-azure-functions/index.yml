@@ -40,10 +40,8 @@ subjects:
 - iot
 units:
 - learn.wwl.examine-azure-stream-analytics-azure-functions.introduction
-- learn.wwl.examine-azure-stream-analytics-azure-functions.get-started
 - learn.wwl.examine-azure-stream-analytics-azure-functions.use-cases
 - learn.wwl.examine-azure-stream-analytics-azure-functions.review-asa-patterns-guidelines
-- learn.wwl.examine-azure-stream-analytics-azure-functions.get-started-asa-input-types
 - learn.wwl.examine-azure-stream-analytics-azure-functions.parse-complex-data-types-asa-queries
 - learn.wwl.examine-azure-stream-analytics-azure-functions.knowledge-check
 - learn.wwl.examine-azure-stream-analytics-azure-functions.summary
