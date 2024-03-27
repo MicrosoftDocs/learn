@@ -29,7 +29,7 @@ Azure Backup can restore SAP HANA databases that are running on Azure VMs as fol
 To restore a database, you need the following permissions:
 
 - **Backup Operator** permissions in the vault where you're doing the restore.
-- **Contributor (write)** access to the source VM fo the backup.
+- **Contributor (write)** access to the source VM for the backup.
 - **Contributor (write)** access to the target VM. If you're restoring to the same VM, this is the source VM. If you're restoring to an alternate location, this is the new target VM.
 
 When setting the restore configuration, you can specify where (or how) to restore data:
