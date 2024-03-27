@@ -35635,6 +35635,11 @@
       "source_path": "learn-pr/wwl-azure/assess-migration/3-assess-your-workload.md",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/assess-migration/6-discover-optimization-secure-manage.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
