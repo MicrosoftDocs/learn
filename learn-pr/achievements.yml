@@ -3158,3 +3158,8 @@ achievements:
   title: Examine Azure IoT Hub message routing
   summary: This module introduces you to Azure IoT Hub message routing, the common set of message features implemented by Azure IoT Hub, Azure IoT Hub's service-facing endpoints, and the message routing query syntax.
   iconUrl: /training/achievements/iot-hub-message-routing.svg
+- uid: learn.wwl.get-started-cloud-storage-for-iot.badge
+  type: badge
+  title: Examine Cloud storage options for Azure IoT Hub solutions
+  summary: This module introduces you to the Azure data storage options that are often used in Azure IoT solutions, and the hot and cold storage paths that can be implemented in support of various business requirements.
+  iconUrl: /training/achievements/iot-cloud-storage.svg
