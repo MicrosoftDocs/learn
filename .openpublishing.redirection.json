@@ -35710,6 +35710,11 @@
       "source_path": "learn-pr/wwl-azure/move-web-application-to-app-services/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/move-web-application-to-app-services/9-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
