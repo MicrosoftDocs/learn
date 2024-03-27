@@ -8,8 +8,7 @@ metadata:
   author: chasecrum
   ms.author: chasecrum
   ms.topic: unit
-  ms.custom:
-    - devx-track-terraform
+  ms.custom: devx-track-terraform, linux-related-content
 durationInMinutes: 20
 content: |
   [!include[](includes/4-provision-linux-virtual-machine-using-terraform.md)]

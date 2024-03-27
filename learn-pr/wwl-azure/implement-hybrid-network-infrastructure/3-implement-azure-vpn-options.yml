@@ -3,13 +3,13 @@ uid: learn.wwl.implement-hybrid-network-infrastructure.implement-azure-vpn-optio
 title: Implement Azure VPN options
 metadata:
   title: Implement Azure VPN options
-  description: Implement Azure VPN options
-  ms.date: 09/24/2020
+  description: "Implement Azure VPN options"
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-  ms.custom: e2e-hybrid
-azureSandbox: false
+  ms.custom:
+  - e2e-hybrid
 durationInMinutes: 13
 content: |
   [!include[](includes/3-implement-azure-vpn-options.md)]

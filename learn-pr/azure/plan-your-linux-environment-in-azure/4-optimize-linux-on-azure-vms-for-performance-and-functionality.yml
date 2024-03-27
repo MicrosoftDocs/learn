@@ -8,6 +8,7 @@ metadata:
   author: chasecrum
   ms.author: chasecrum
   ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 7
 content: |
   [!include[](includes/4-optimize-linux-on-azure-vms-for-performance-and-functionality.md)]
