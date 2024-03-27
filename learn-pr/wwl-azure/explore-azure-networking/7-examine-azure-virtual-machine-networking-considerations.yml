@@ -4,11 +4,10 @@ title: Examine Azure virtual machine networking considerations
 metadata:
   title: Examine Azure virtual machine networking considerations
   description: "Examine Azure virtual machine networking considerations"
-  ms.date: 04/21/2023
+  ms.date: 10/17/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/7-examine-azure-virtual-machine-networking-considerations.md)]

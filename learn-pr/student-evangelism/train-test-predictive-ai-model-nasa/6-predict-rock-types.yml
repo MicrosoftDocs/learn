@@ -6,8 +6,7 @@ metadata:
   ms.date: 04/28/2021
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Exercise - Predict the type of space rock in a random photo
 durationInMinutes: 5

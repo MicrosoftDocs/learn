@@ -3,15 +3,15 @@ uid: learn.azure.intro-to-azure-vpn-gateway
 metadata:
   title: Introduction to Azure VPN Gateway
   description: Learn what Azure VPN Gateway does, how it works, and when you should choose to use Azure VPN Gateway as a solution to meet your organization's needs.
-  ms.date: 01/06/2023
+  ms.date: 02/24/2024
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom:
   - team=cloud_advocates
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-intro-to-product
   ms.contributors:
   - orthomas-01082022
+  ms.service: vpn-gateway
 title: Introduction to Azure VPN Gateway
 summary: This module describes what Azure VPN Gateway does, how it works, and when you should choose to use Azure VPN Gateway as a solution to meet your organization's needs.
 abstract: |

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-implement-disaster-recovery-sap-workloads-azure.explore-site-recovery
+title: Explore site recovery
+metadata:
+  title: Explore site recovery
+  description: "Explore site recovery"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-explore-site-recovery.md)]

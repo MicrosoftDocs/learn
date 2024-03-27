@@ -26,7 +26,7 @@ The registered server object represents a trust relationship between your server
 
 ### Azure File Sync agent
 
-The Azure File Sync agent is a downloadable package that enables Windows Server to be synced with an Azure Files share. The Azure File Sync agent has three main components:
+The Azure File Sync agent is a downloadable package that enables Windows Server to be synced with an Azure file share. The Azure File Sync agent has three main components:
 
 - **FileSyncSvc.exe**: This file is the background Windows service that's responsible for monitoring changes on server endpoints, and for initiating sync sessions to Azure.
 
@@ -42,10 +42,10 @@ A server endpoint represents a specific location on a registered server, such as
 
 ### Cloud endpoint
 
-A cloud endpoint is an Azure Files share that's part of a sync group. As part of a sync group, the entire cloud endpoint (Azure Files share) syncs.
+A cloud endpoint is an Azure file share that's part of a sync group. As part of a sync group, the entire cloud endpoint (Azure file share) syncs.
 
-- An Azure Files share can be a member of one cloud endpoint only.
+- An Azure file share can be a member of one cloud endpoint only.
 
-- An Azure Files share can be a member of one sync group only.
+- An Azure file share can be a member of one sync group only.
 
 - Consider the scenario where you have a share with existing files. If you add the share as a cloud endpoint to a sync group, the files in the share are merged with files on other endpoints in the sync group.

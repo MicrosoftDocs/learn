@@ -4,11 +4,10 @@ title: Recognize architectural components
 metadata:
   title: Recognize architectural components
   description: "Recognize architectural components"
-  ms.date: 04/20/2023
+  ms.date: 12/29/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/3-recognize-architectural-components.md)]

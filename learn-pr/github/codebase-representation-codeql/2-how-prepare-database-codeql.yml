@@ -6,10 +6,9 @@ metadata:
   title: How to prepare a database for CodeQL
   description: In this unit, you'll learn how to create a database.
   ms.date: 02/10/2022
-  author: sterling463
-  ms.author: csterling
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-how-prepare-database-codeql.md)]

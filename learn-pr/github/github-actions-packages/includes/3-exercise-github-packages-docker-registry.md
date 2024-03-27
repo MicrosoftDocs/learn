@@ -17,4 +17,4 @@ This exercise is a challenge based on content covered in this module, and there 
 When you've finished the exercise in GitHub, return here for your next unit.
 
 > [!div class="nextstepaction"]
-> [Start the exercise on GitHub](https://github.com/githubtraining/exercise-publish-package?azure-portal=true)
+> [Start the exercise on GitHub](https://github.com/skills/publish-packages)

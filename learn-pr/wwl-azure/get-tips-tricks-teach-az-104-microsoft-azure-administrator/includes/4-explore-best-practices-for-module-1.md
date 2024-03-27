@@ -1,8 +1,8 @@
-As you're preparing to teach this module, get familiar with what the students will learn during the module – the concepts and methodologies they'll be working through. In this module, students will become familiar with identity best practices including Azure Active Directory (Azure AD). Students will also explore creating and managing user and group accounts in Azure AD.  
+As you're preparing to teach this module, get familiar with what the students will learn during the module – the concepts and methodologies they'll be working through. In this module, students will become familiar with identity best practices including Microsoft Entra ID. Students will also explore creating and managing user and group accounts in Microsoft Entra ID.  
 
 This module consists of two lessons: 
 
-- **Lesson 1** – Configure Azure AD 
+- **Lesson 1** – Configure Microsoft Entra ID 
 
 - **Lesson 2** – Configure User and Group Accounts 
 
@@ -10,11 +10,11 @@ This module consists of two lessons:
 
 ### Module 1 Tips and Tricks 
 
-- Use real-world applications of Azure AD 
+- Use real-world applications of Microsoft Entra ID 
 
-- Emphasize the difference between Active Directory Domain Services and Azure AD 
+- Emphasize the difference between Active Directory Domain Services and Microsoft Entra ID 
 
-- Explain that Azure AD is an Internet service 
+- Explain that Microsoft Entra ID is an Internet service 
 
 - Consider using real-word examples  
 

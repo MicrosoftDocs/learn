@@ -1,8 +1,8 @@
-Recall from the example scenario that your customers use one of the company's websites to manage and check the status of their shipments. This website is deployed to VMs and hosted on-premises. 
+Recall from the example scenario that your customers use one of the company's websites to manage and check the status of their shipments. This website is deployed to virtual machines and hosted on-premises. 
 
-You've noticed that users of the website have significant delays in response times when the overall CPU usage of the VMs exceeds 75 percent. You need the Virtual Machine Scale Set that hosts your web application to scale when the system hits this threshold. To save costs, you also want to scale back in when demand falls and the overall CPU usage across the scale set drops below 50 percent.
+You notice that users of the website have significant delays in response times when the overall CPU usage of the virtual machines exceeds 75 percent. You need the Virtual Machine Scale Set that hosts your web application to scale when the system hits this threshold. To save costs, you also want to scale back in when demand falls and the overall CPU usage across the scale set drops below 50 percent.
 
-In this exercise, you'll configure autoscaling. You'll define scale rules that scale out and in again, according to the system's CPU usage.
+In this exercise, you configure autoscaling. Define scale rules that scale out and in again, according to the system's CPU usage.
 
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account, you can read through the instructions to understand how to use the REST API to retrieve metrics.
@@ -17,7 +17,7 @@ In this exercise, you'll configure autoscaling. You'll define scale rules that s
 
 1. Select **Custom autoscale**. In the **Default** scale rule, ensure that the **Scale mode** is set to **Scale based on a metric**. Then select **Add a rule**.
 
-   ![Screenshot of the Virtual Machine Scale Set page with a callout featuring the Scale based on a metric option and the Add a rule link.](../media/5-add-rule.png)
+   :::image type="content" source="../media/5-add-rule.png" alt-text="Screenshot of the Virtual Machine Scale Set page with a callout featuring the Scale based on a metric option and the Add a rule link." lightbox="../media/5-add-rule.png":::
 
 1. On the **Scale rule** page, specify the following settings, then select **Add**:
 
@@ -25,14 +25,14 @@ In this exercise, you'll configure autoscaling. You'll define scale rules that s
     |---|---|
     | Metric source | Current resource (webServerScaleSet) |
     | Metric name | Percentage CPU |
-    | Time aggregation | Average  |
-    | Time grain statistic | Average |
     | Operator | Greater than |
     | Threshold | 75 |
     | Duration | 10 |
+    | Time grain statistic | Average |
+    | Time aggregation | Average  |
     | Operation | Increase count by |
-    | Instance count | 1 |
     | Cool down (minutes) | 5 |
+    | Instance count | 1 |
 
 ## Create a scale-in rule
 
@@ -44,17 +44,17 @@ In this exercise, you'll configure autoscaling. You'll define scale rules that s
     |---|---|
     | Metric source | Current resource (webServerScaleSet) |
     | Metric name | Percentage CPU |
-    | Time aggregation | Average  |
-    | Time grain statistic | Average |
     | Operator | Less than |
     | Threshold | 50 |
     | Duration | 10 |
+    | Time grain statistic | Average |
+    | Time aggregation | Average  |
     | Operation | Decrease count by |
-    | Instance count | 1 |
     | Cool down (minutes) | 5 |
+    | Instance count | 1 |
 
 1. Select **Save**.
 
     The **Default** scale condition now contains two scale rules. One rule scales the number of instances out. Another rule scales the number of instances back in.
 
-    ![Screenshot of the Virtual Machine Scale Set page with a callout featuring the rules section and the save button.](../media/5-scale-rules.png)
+    :::image type="content" source="../media/5-scale-rules.png" alt-text="Screenshot of the Virtual Machine Scale Set page with a callout featuring the rules section and the save button." lightbox="../media/5-scale-rules.png":::

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.introduction-to-ai-for-trainers.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: The impact of AI is evident in multiple aspects of the upskilling journey, with its continuous growth propelling learning towards greater adaptability, accessibility, and personalization.
+  ms.date: 01/24/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+  ms.service: artificial-intelligence
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

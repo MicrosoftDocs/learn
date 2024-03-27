@@ -4,11 +4,10 @@ title:  Exercise - Reviewing pull requests
 metadata:
   title:  Exercise - Reviewing pull requests
   description: Learn how to manage changes to your repository source by using pull requests.
-  ms.date: 06/26/2020
+  ms.date: 11/21/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 35
 content: |
   [!include[](includes/3-review-pull-requests.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-azure-files-azure-blobs.exercise4
+title: Exercise - Provide shared file storage for the company offices
+metadata:
+  title: Exercise - Provide shared file storage for the company offices
+  description: "Exercise - Provide shared file storage for the company offices"
+  ms.date: 02/28/2024
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-file-share-storage.md)]

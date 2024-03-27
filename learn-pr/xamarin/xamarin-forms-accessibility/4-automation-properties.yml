@@ -3,11 +3,10 @@ uid: learn-xamarin.xamarin-forms-accessibility.4-automation-properties
 metadata:
   title: Add Xamarin.Forms automation properties
   description: Learn how to improve accessibility with automation properties in Xamarin.Forms.
-  ms.date: 04/20/2021
+  ms.date: 02/20/2024
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-xamarin
+  ms.topic: unit
 title: Add Xamarin.Forms automation properties
 durationInMinutes: 5
 content: |

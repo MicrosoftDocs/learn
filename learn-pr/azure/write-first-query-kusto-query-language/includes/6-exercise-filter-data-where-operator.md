@@ -4,7 +4,7 @@ Recall that you've filtered certain columns in or out of the displayed results. 
 
 Up to this point, all the operators you've used have returned selected columns. Now, let's take a look at specific rows of the data.
 
-The `where` operator filters results that satisfy a certain condition. In this first example, you'll compare an integer column to a minimum value by using the numerical operator *greater than* (`>`). Specifically, you only want to see storms that damaged property. So you'll look at rows of data where the damage to property is greater than zero.
+The `where` operator filters results that satisfy a certain condition. In this first example, you'll compare an integer column to a minimum value by using the numerical operator *greater than* (`>`). Specifically, you only want to see storms that damaged property, so you'll look at rows of data where the damage to property is greater than zero.
 
 1. Run the following query:
 
@@ -59,7 +59,7 @@ It looks like quite a few types of storms have caused damage all over the US. Le
 
 ## Filter by using the `has` operator
 
-One of the event types in the results of the last query is called **Thunderstorm Wind**. Let's see if there are any other kinds of wind that caused property damage in Florida. We'll search on a string match of `wind` by using the `has` operator. The `has` operator is a case-insensitive search that matches on a full [term](/azure/data-explorer/kusto/query/datatypes-string-operators#what-is-a-term).
+One of the event types in the last query's results is called **Thunderstorm Wind**. Let's see if there are any other kinds of wind that caused property damage in Florida. We'll search on a string match of `wind` by using the `has` operator. The `has` operator is a case-insensitive search that matches on a full [term](/azure/data-explorer/kusto/query/datatypes-string-operators#what-is-a-term).
 
 1. Run the following query:
 
@@ -114,4 +114,4 @@ The syntax for constructing this date range is as follows:
 
     :::image type="content" source="../media/5-where-3.png" alt-text="Screenshot of query results for where operators that include a time range.":::
 
-1. Notice that all the dates are within the first half of the year, months 1 to 6. You might also notice that even though you've selected events from the state of Florida, the state doesn't appear as an output column, because it wasn't specified in the `project` operator.
+1. Notice that all the dates are within the first half of the year, months one to six. You might also notice that even though you've selected events from the state of Florida, the state doesn't appear as an output column, because it wasn't specified in the `project` operator.

@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/04/2022
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
 title: Create an app migration plan
 summary: Learn how to plan an app workload migration to Azure.
 abstract: |

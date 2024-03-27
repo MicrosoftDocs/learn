@@ -1,10 +1,10 @@
-This module explained key concepts about managing, classifying, and protection sensitive data. You’ve also learned about common data-classification types and methods. Additionally, you reviewed, and learned when to use, Microsoft technologies for data classification, data protection, and DLP. You should have enough information to alleviate the legal department's concerns.
+This module explained key concepts about managing, classifying, and protecting sensitive data. You also learned about common data-classification types and methods. Additionally, you reviewed, and learned when to use, Microsoft technologies for data classification, data protection, and DLP. You should have enough information to alleviate the legal department's concerns.
 
 ## Learn more
 
 Learn more by reviewing the following articles:
 
-- [Microsoft Information Protection in Microsoft 365](/microsoft-365/compliance/information-protection?azure-portal=true)
+- [Protect your sensitive data with Microsoft Purview](/microsoft-365/compliance/information-protection?azure-portal=true)
 
 - [Protect your sensitive information](https://www.microsoft.com/security/business/information-protection?azure-portal=true)
 

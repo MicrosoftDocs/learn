@@ -7,9 +7,9 @@ metadata:
   author: seesharprun
   ms.author: sidandrews
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom: vscode-azure-extension-update-completed, engagement-fy23
+  ms.service: cosmos-db
 title: Build a Node.js app for Azure Cosmos DB Core (SQL) in Visual Studio Code
 summary: Build a database app to store and query data in Azure Cosmos DB Core (SQL) by using Visual Studio Code and Node.js.
 abstract: | 
@@ -31,8 +31,7 @@ products:
 - azure-cosmos-db
 - vs-code
 subjects:
-- database
-- development-tools
+- databases
 units:
 - learn.azure.build-node-cosmos-app-vscode.1-introduction
 - learn.azure.build-node-cosmos-app-vscode.2-create-cosmosdb-instance

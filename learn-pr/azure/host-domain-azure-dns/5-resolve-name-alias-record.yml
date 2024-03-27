@@ -4,11 +4,10 @@ title: Dynamically resolve resource name by using alias record
 metadata:
   title: Dynamically resolve resource name by using alias record
   description: Dynamically resolve resource name by using alias record
-  ms.date: 03/20/2020
-  author: asudbring
-  ms.author: allensu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/31/2024
+  author: greg-lindsay
+  ms.author: greglin
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/5-resolve-name-alias-record.md)]

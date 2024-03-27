@@ -6,8 +6,7 @@ metadata:
   ms.date: 02/09/2023
   author: iankensey
   ms.author: socuff
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   products:
     - azure
     - azure-lighthouse

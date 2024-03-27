@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.make-recommendations-ai-personalizer.use-inference-explainability
+title: Use inference explainability
+metadata:
+  title: Use inference explainability
+  description: "Learn how to enable inference explainability and interpret feature scores."
+  ms.date: 9/27/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-use-inference-explainability.md)]

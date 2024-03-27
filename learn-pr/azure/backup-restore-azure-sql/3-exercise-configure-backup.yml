@@ -2,13 +2,12 @@
 uid: learn.backup-restore-azure-sql.3-exercise-configure-backup
 metadata:
   title: Exercise - Configure backups for Azure SQL Database
-  description: In this unit, you'll set up a database and configure automated backups for it.
-  ms.date: 03/10/2022
+  description: Learn how to set up an Azure SQL database and configure automated backups for it.
+  ms.date: 12/11/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Exercise - Configure backups for Azure SQL Database
 durationInMinutes: 7
 interactive: powershell

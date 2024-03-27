@@ -5,10 +5,10 @@ metadata:
   title: Test your Bicep code by using Azure Pipelines
   description: Build a deployment pipeline for Bicep infrastructure as code templates. Lint, validate, preview, and test your Bicep code by using Azure DevOps and Azure Pipelines.
   ms.date: 10/31/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: mumian
+  ms.author: jgao
+  ms.topic: module
+  ms.service: azure-devops-pipelines
 title: Test your Bicep code by using Azure Pipelines
 summary: |
   Validate and test your Bicep code in your deployment pipeline. You'll use linting, preflight validation, and the what-if operation to validate your Azure changes before you deploy, and you'll test your resources after each deployment.
@@ -28,7 +28,7 @@ prerequisites: |
 
   To work through the exercises in the module, you'll need:
 
-  - An Azure account, with the ability to create resource groups, Azure Active Directory applications, and service principals.
+  - An Azure account, with the ability to create resource groups, Microsoft Entra applications, and service principals.
   - An Azure DevOps organization and account.
 
   You'll also need the following installed locally:

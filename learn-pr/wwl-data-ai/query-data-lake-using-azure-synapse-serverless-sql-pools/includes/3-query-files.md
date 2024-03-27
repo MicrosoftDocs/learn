@@ -65,7 +65,7 @@ Additional parameters you might require when working with delimited text files i
 - FIELDQUOTE - the character used to enclose quoted string values. For example, to ensure that the comma in the address field value *126 Main St, apt 2* isn't interpreted as a field delimiter, you might enclose the entire field value in quotation marks like this: *"126 Main St, apt 2"*. The double-quote (") is the default field quote character.
 
 > [!TIP]
-> For details of additional parameters when working with delimted text files, refer to the [Azure Synapse Analytics documentation](/azure/synapse-analytics/sql/develop-openrowset#syntax).
+> For details of additional parameters when working with delimited text files, refer to the [Azure Synapse Analytics documentation](/azure/synapse-analytics/sql/develop-openrowset#syntax).
 
 ### Specifying the rowset schema
 

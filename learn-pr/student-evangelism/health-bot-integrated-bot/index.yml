@@ -6,9 +6,9 @@ metadata:
   ms.date: 03/17/2023
   author: Meghana-ch
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom: team=nextgen
+  ms.service: healthbot
 title: Integrate Azure Health Bot with a database
 summary: Learn how to integrate an advanced bot with a database.
 abstract: |
@@ -26,7 +26,7 @@ products:
   - azure
 prerequisites: Complete the module titled "Enhanced health bot."
 subjects:
-- chatbot
+- chatbots
 units:
   - learn.health-bot-integrated-bot.1-introduction
   - learn.health-bot-integrated-bot.2-build-database

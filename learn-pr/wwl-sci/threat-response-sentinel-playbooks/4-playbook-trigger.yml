@@ -7,8 +7,7 @@ metadata:
   ms.date: 01/25/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 12
 content: |
   [!include[](includes/4-playbook-trigger.md)]
@@ -28,7 +27,7 @@ quiz:
       explanation: "Dynamic content displays any available outputs from the previous step, which you can use as inputs for the current action."
   - content: "An administrator creates a new playbook to receive a notification each time a user is delegated the role of Global Administrator. Which connector should the administrator select in the logic app?"
     choices:
-    - content: "Azure Active Directory connector."
+    - content: "Microsoft Entra connector."
       isCorrect: false
       explanation: "No, the logic app should start with the trigger from Microsoft Sentinel Connector."
     - content: "Connector for Office 365."

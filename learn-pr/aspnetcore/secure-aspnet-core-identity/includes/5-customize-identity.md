@@ -1,4 +1,4 @@
-In the previous unit, you learned how customization works in ASP.NET Core Identity. In this unit, you will extend the Identity data model and make the corresponding UI changes.
+In the previous unit, you learned how customization works in ASP.NET Core Identity. In this unit, you extend the Identity data model and make the corresponding UI changes.
 
 ## Customize the user account data
 
@@ -15,14 +15,11 @@ In this section, you're going to create and customize the Identity UI files to b
     * The `--dbContext` option provides the tool with knowledge of the existing `DbContext`-derived class named `RazorPagesPizzaAuth`.
     * The `--files` option specifies a semicolon-delimited list of unique files to be added to the *Identity* area.
     * The `--userClass` option results in the creation of an `IdentityUser`-derived class named `RazorPagesPizzaUser`.
-    * The `--force` option causes existing files in the *:::no-loc text="Identity":::* area to be overwritten.
+    * The `--force` option causes existing files in the *Identity* area to be overwritten.
 
     > [!TIP]
     > Run the following command from the project root to view valid values for the `--files` option:
-    >
-    > ```dotnetcli
-    > dotnet aspnet-codegenerator identity --listFiles
-    > ```
+    > `dotnet aspnet-codegenerator identity --listFiles`
 
     The following files are added to the *:::no-loc text="Areas/Identity":::* directory:
 
@@ -51,7 +48,7 @@ In this section, you're going to create and customize the Identity UI files to b
     public class RazorPagesPizzaAuth : IdentityDbContext<RazorPagesPizzaUser>
     ```
 
-    The *:::no-loc text="EnableAuthenticator":::* and *:::no-loc text="ConfirmEmail":::* Razor pages were scaffolded, though they won't be modified until later in the module.
+    The *:::no-loc text="EnableAuthenticator":::* and *:::no-loc text="ConfirmEmail":::* Razor pages were scaffolded, though they aren't modified until later in the module.
 
 1. In *:::no-loc text="Program.cs":::*, the call to `AddDefaultIdentity` needs to be made aware of the new Identity user type. Incorporate the following highlighted changes. (Example reformatted for readability.)
 
@@ -63,10 +60,10 @@ In this section, you're going to create and customize the Identity UI files to b
 
     The preceding changes update the user type passed to both `SignInManager<T>` and `UserManager<T>` in the `@inject` directives. Instead of the default `IdentityUser` type, `RazorPagesPizzaUser` user is now referenced. The `@using` directive was added to resolve the `RazorPagesPizzaUser` references.
 
-    *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* is physically located outside of the *:::no-loc text="Identity":::* area. Consequently, the file wasn't updated automatically by the scaffold tool. The appropriate changes had be made manually.
+    *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* is physically located outside of the *:::no-loc text="Identity":::* area. So the file wasn't updated automatically by the scaffold tool. The appropriate changes must be made manually.
 
     > [!TIP]
-    > As an alternative to manually editing the *:::no-loc text="_LoginPartial.cshtml":::* file, it can be deleted prior to running the scaffold tool. The *:::no-loc text="_LoginPartial.cshtml":::* file will be recreated with references to the new `RazorPagesPizzaUser` class.
+    > As an alternative to manually editing the *:::no-loc text="_LoginPartial.cshtml":::* file, it can be deleted prior to running the scaffold tool. The *:::no-loc text="_LoginPartial.cshtml":::* file is recreated with references to the new `RazorPagesPizzaUser` class.
 
 1. Update *:::no-loc text="Areas/Identity/Data/RazorPagesPizzaUser.cs":::* to support storage and retrieval of the additional user profile data. Make the following changes:
     1. Add the `FirstName` and `LastName` properties:
@@ -87,7 +84,7 @@ In this section, you're going to create and customize the Identity UI files to b
 
 Now that the model changes have been made, accompanying changes must be made to the database.
 
-1. Ensure all your changes are saved.
+1. Ensure that all your changes are saved.
 1. Create and apply an EF Core migration to update the underlying data store:
 
     ```dotnetcli
@@ -106,11 +103,11 @@ Now that the model changes have been made, accompanying changes must be made to 
         ALTER TABLE [AspNetUsers] ADD [LastName] nvarchar(100) NOT NULL DEFAULT N'';
     ```
 
-1. Examine the database to analyze the impact of the `UpdateUser` EF Core migration on the `AspNetUsers` table's schema.
+1. Examine the database to analyze the effect of the `UpdateUser` EF Core migration on the `AspNetUsers` table's schema.
 
     In the **SQL Server** pane, expand the **Columns** node on the **dbo.AspNetUsers** table.
 
-    :::image type="content" source="../media/aspnetusers-custom.png" alt-text="The schema of the AspNetUsers table" lightbox="../media/aspnetusers-custom.png":::
+    :::image type="content" source="../media/aspnetusers-custom.png" alt-text="Screenshot of the schema of the AspNetUsers table." lightbox="../media/aspnetusers-custom.png":::
 
     The `FirstName` and `LastName` properties in the `RazorPagesPizzaUser` class correspond to the `FirstName` and `LastName` columns in the preceding image. A data type of `nvarchar(100)` was assigned to each of the two columns because of the `[MaxLength(100)]` attributes. The non-null constraint was added because `FirstName` and `LastName` in the class are non-nullable strings. Existing rows show empty strings in the new columns.
 
@@ -170,7 +167,7 @@ You've added the new fields to the user registration form, but you should also a
 
 ## Configure the confirmation email sender
 
-In order to send the confirmation email, you need to create an implementation of <xref:Microsoft.AspNetCore.Identity.UI.Services.IEmailSender> and register it in the dependency injection system. To keep things simple, your implementation won't actually send email to an SMTP server. It'll just write the email content to the console.
+In order to send the confirmation email, you need to create an implementation of <xref:Microsoft.AspNetCore.Identity.UI.Services.IEmailSender> and register it in the dependency injection system. To keep things simple, your implementation doesn't actually send email to an SMTP server. It just writes the email content to the console.
 
 1. Since you're going to view the email in plain text in the console, you should change the generated message to exclude HTML-encoded text. In *Areas/Identity/Pages/Account/Register.cshtml.cs*, find the following code:
 
@@ -245,7 +242,10 @@ That's everything! Let's test the changes to the registration form and confirmat
 
     Navigate to the URL with <kbd>Ctrl</kbd>+*click*. The confirmation screen displays.
 
-1. Click **Login** and log in with the new user. The app's header now contains **Hello, [First name] [Last name]!**.
+    > [!NOTE]
+    > If you're using GitHub Codespaces, you might need to add `-7192` to the first part of the forwarded URL. For example, `scaling-potato-5gr4j4-7192.preview.app.github.dev`.
+
+1. Select **Login** and sign in with the new user. The app's header now contains **Hello, [First name] [Last name]!**.
 1. In the **SQL Server** pane in VS Code, right-click on the **RazorPagesPizza** database and select **New query**. In the tab that appears, enter the following query and press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd> to run it.
 
     ```sql
@@ -260,15 +260,15 @@ That's everything! Let's test the changes to the registration form and confirmat
     | kai.klein@contoso.com     | kai.klein@contoso.com     |           |          |
     | jana.heinrich@contoso.com | jana.heinrich@contoso.com | Jana      | Heinrich |
 
-    The first user registered prior to adding `FirstName` and `LastName` to the schema. Consequently, the associated `AspNetUsers` table record doesn't have data in those columns.
+    The first user registered prior to adding `FirstName` and `LastName` to the schema. So the associated `AspNetUsers` table record doesn't have data in those columns.
 
 ## Test the changes to the profile management form
 
 You should also test the changes you made to the profile management form.
 
-1. In the web app, log in with the first user you created.
+1. In the web app, sign in with the first user you created.
 
-1. Click the **Hello, !** link to navigate to the profile management form.
+1. Select the **Hello, !** link to navigate to the profile management form.
 
     > [!NOTE]
     > The link doesn't display correctly because the `AspNetUsers` table's row for this user doesn't contain values for `FirstName` and `LastName`.

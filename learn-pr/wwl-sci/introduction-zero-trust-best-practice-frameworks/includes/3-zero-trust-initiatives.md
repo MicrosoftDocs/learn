@@ -14,7 +14,7 @@ The Zero Trust Rapid Modernization Plan (RaMP) is included in the Microsoft Cybe
 :::image type="content" source="../media/zero-trust-rapid-modernization-plan.png" alt-text="A diagram depicting the three Zero Trust principles and the five security modernization initiatives." border="true" lightbox="../media/zero-trust-rapid-modernization-plan.png":::
 
 The Zero Trust RaMP aligns to the recommended security modernization initiatives, including the following:
-- **Secure Identities and Access** - These quick wins focus on using cloud-based security capabilities like Azure AD, Intune, Microsoft Defender for Endpoints, and Azure AD App Proxy to rapidly modernize access control to increase productivity and security assurances.
+- **Secure Identities and Access** - These quick wins focus on using cloud-based security capabilities like Microsoft Entra ID, Intune, Microsoft Defender for Endpoints, and Microsoft Entra application proxy to rapidly modernize access control to increase productivity and security assurances.
 - **Data Security and Governance, Risk, Compliance (GRC)** - These quick wins focus on ensuring the organization can rapidly recover from a ransomware/extortion attack without paying attackers and protecting the most valuable business critical data.
 - **Modern Security Operations** - These quick wins focus on streamlining responses to common attacks, getting end to end visibility across the enterprise, and automating manual tasks that slow down analysts and cause exhaustion/burnout.
 - **Infrastructure and Development Security** - These quick wins focus on security hygiene, reducing legacy risk, integrating security into DevOps and development processes, and applying the microsegmentation concepts to identity and network access control.

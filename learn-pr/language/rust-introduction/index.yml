@@ -6,9 +6,9 @@ metadata:
   ms.date: 12/02/2022
   author: GitHubber17
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom: team=nextgen
+  ms.devlang: rust
 title: What is Rust
 summary: A quick introduction to Rust language features and how Rust compares with other programming languages.
 abstract: |
@@ -27,8 +27,6 @@ roles:
 - developer
 products:
 - azure
-subjects:
-- development-tools
 units:
 - learn.language.rust-introduction.1-introduction
 - learn.language.rust-introduction.2-rust-overview

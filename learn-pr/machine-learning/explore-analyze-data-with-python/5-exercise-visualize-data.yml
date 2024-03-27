@@ -5,10 +5,11 @@ metadata:
   title: Exercise - Visualize data with Matplotlib
   description: "Exercise - Visualize data with Matplotlib"
   ms.date: 12/22/2022
-  author: TomReidNZ
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: s-polly
+  ms.author: scottpolly
+  ms.topic: unit
+  ms.custom:
+    - devx-track-python
 durationInMinutes: 10
 sandbox: true
 notebook: notebooks/02-visualize-data.ipynb

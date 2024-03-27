@@ -1,12 +1,12 @@
 To present Azure Functions to users as parts of a single API, you can add them to Azure API Management.
 
-In your online store company, your developers have created multiple Azure Functions as microservices. Each function implements a small part of the store's functionality. You want to assemble these functions into a single API.
+In your online store company, your developers created multiple Azure Functions as microservices. Each function implements a small part of the store's functionality. You want to assemble these functions into a single API.
 
-In this exercise, you'll create a new API Management instance and then add a Product Details function to it.
+In this exercise, you create a new API Management instance and then add a Product Details function to it.
 
 ## Create functions
 
-In the following steps, you'll add an Azure Function app to Azure API Management. Later, you'll add a second function app to the same API Management instance to create a single serverless API from multiple functions. Let's start by using a script to create the functions:
+In the following steps, you add an Azure Function app to Azure API Management. Later, you add a second function app to the same API Management instance to create a single serverless API from multiple functions. Let's start by using a script to create the functions:
 
 1. To clone the functions project, run the following command in Azure Cloud Shell on the right.
 
@@ -21,11 +21,11 @@ In the following steps, you'll add an Azure Function app to Azure API Management
     bash setup.sh
     ```
 
-    The `setup.sh` script creates the two function apps in the sandbox resource group that we've activated for this module. As the following graphic illustrates, each app hosts a single function - `OrderDetails` and `ProductDetails`. The script also sets up a storage account for  the functions. The functions both have URLs in the **azurewebsites.net** domain. The function names include random numbers for uniqueness. The script takes a few minutes to complete.
+    The `setup.sh` script creates the two function apps in the sandbox resource group that are activated for this module. As the following graphic illustrates, each app hosts a single function - `OrderDetails` and `ProductDetails`. The script also sets up a storage account for  the functions. The functions both have URLs in the **azurewebsites.net** domain. The function names include random numbers for uniqueness. The script takes a few minutes to complete.
 
     :::image type="content" source="../media/3-script-results.png" alt-text="Diagram illustrating the results of the setup.sh script and how the functions relate to the overall application's design." border="false":::
 
-## Test the product details function
+## Test the ProductDetails function
 
 Now, let's test the ProductDetails function to see how it behaves before we add it to API Management.
 
@@ -33,11 +33,9 @@ Now, let's test the ProductDetails function to see how it behaves before we add 
 
 1. On the Azure portal menu or from the **Home** page, select **All resources**. The **All resources** pane appears.
 
-1. Select the Function App whose name begins with **ProductFunction**. The Function App pane appears.
+1. Select the Function App whose name begins with **ProductFunction**. The Function App pane appears with the **Overview** tab selected.
 
-1. In the Function App menu, under **Functions**, select **Functions**. The **Functions** pane appears for your Function App.
-
-    :::image type="content" source="../media/3-select-function.png" alt-text="Screenshot of menu selections to open ProductDetails function.":::
+   :::image type="content" source="../media/3-select-function.png" alt-text="Screenshot of menu selections to open ProductDetails function.":::
 
 1. From the list of functions for your function app, select **ProductDetails**. The **ProductDetails** Function pane appears.
   
@@ -70,7 +68,7 @@ Now, let's test the ProductDetails function to see how it behaves before we add 
 
 ## Expose function app as an API using Azure API Management
 
-After the function app has been deployed and tested, let's export it as an API using Azure API Management so that it can be called from other apps and services.
+After the function app is deployed and tested, let's export it as an API using Azure API Management so that it can be called from other apps and services.
 
 1. In the resource menu, select **All resources**. The **All resources** pane appears.
 
@@ -78,7 +76,7 @@ After the function app has been deployed and tested, let's export it as an API u
  
 1. Select the **ProductFunction** function app.
 
-1. In the Function App menu, scroll to **API** category, and then select **API Management**. The **API Management** pane for ProductFunction function app appears.
+1. In the Function App menu, scroll to the **API** category, and then select **API Management**. The **API Management** pane for ProductFunction function app appears.
 
     :::image type="content" source="../media/3-create-api.png" alt-text="Screenshot showing menu selection to open the API Management app service.":::
 

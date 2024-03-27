@@ -5,10 +5,10 @@ metadata:
   title: Automate the installation of a virtual machine
   description: Learn how to automate the installation of a virtual machine.
   ms.date: 05/15/2020
-  author: cynthn
-  ms.author: cynthn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: ju-shim
+  ms.author: jushiman
+  ms.topic: unit
+  ms.custom: devx-track-azurecli, linux-related-content
   zone_pivot_groups: platform-cloud
 durationInMinutes: 6
 content: |

@@ -1,6 +1,6 @@
 In the previous unit, you saw how to use GitHub Actions to build and publish container images.
 
-In this unit, we'll take a look at the other packages supported by GitHub Packages. GitHub Packages work with your current project's ecosystem tooling: npm for npm packages; nuget.exe, or the dotnet CLI for NuGet packages, etc.
+In this unit, we'll take a look at the other packages supported by GitHub Packages. GitHub Packages work with your current project's ecosystem tooling: npm for npm packages, nuget.exe or the dotnet CLI for NuGet packages, etc.
 
 ## Authenticate to GitHub Packages
 
@@ -41,8 +41,8 @@ When you're authenticated, you can easily use published packages in your project
 
 ### Manage packages
 
-GitHub Packages offer you several ways to easily manage your packages lifecycle and workflows.
+GitHub Packages offer you several ways to easily manage your package lifecycles and workflows.
 
 You can manage GitHub Packages through the GitHub API and the GraphQL API. These APIs allows you to support advanced integrations scenarios. For example, with GitHub's Webhook feature, you can run code when a new package is published. Imagine you're a maintainer of an open-source project. With webhooks, you could automatically publish a new Tweet or a blog post when a new package is published.
 
-Last but not least, you can use GitHub Actions to automate package management. With the [delete-package-versions](https://github.com/marketplace/actions/delete-package-versions?azure-portal=true) action, you can automatically prune the oldest version of your packages while publishing a new version.
+You can also use GitHub Actions to automate package management. With the [delete-package-versions](https://github.com/marketplace/actions/delete-package-versions?azure-portal=true) action, you can automatically prune the oldest version of your packages while publishing a new version.

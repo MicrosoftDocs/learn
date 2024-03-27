@@ -1,17 +1,17 @@
 Although the process of adding a custom domain name is simple, you might face a few problems.
 
-Unknown to you, some members of your sales department have started using Power BI. They signed up with their @proseware.com work email addresses. This action created an unmanaged Azure Active Directory (Azure AD) organization with users in that team.
+Unknown to you, some members of your sales department have started using Power BI. They signed up with their @proseware.com work email addresses. This action created an unmanaged Microsoft Entra organization with users in that team.
 
-In this unit, you'll resolve the unmanaged Azure AD organization problem, explore other problems, and see how to resolve them.
+In this unit, you'll resolve the unmanaged Microsoft Entra organization problem, explore other problems, and see how to resolve them.
 
 ## A custom domain name is under an unmanaged organization
 
-If members of your organization sign up for another Microsoft service like OneDrive or Power BI, their email domain is used to create an unmanaged Azure AD organization. This organization or directory is useable for only that service. You can't add it as a custom domain in Azure AD.
+If members of your organization sign up for another Microsoft service like OneDrive or Power BI, their email domain is used to create an unmanaged Microsoft Entra organization. This organization or directory is useable for only that service. You can't add it as a custom domain in Microsoft Entra ID.
 
 You have two options to resolve this problem. Which option you use depends on the service they signed up for.
 
 - **Internal admin takeover**: Add yourself as the global administrator for the unmanaged organization.
-- **External admin takeover**: Add the Domain Name System (DNS) domain name to your managed Azure AD organization.
+- **External admin takeover**: Add the Domain Name System (DNS) domain name to your managed Microsoft Entra organization.
 
 The best solution is external admin takeover. Unfortunately, that's not an option for some services. The following table lists your option for each service:
 
@@ -19,7 +19,7 @@ The best solution is external admin takeover. Unfortunately, that's not an optio
 |----|----|
 |SharePoint              | Internal admin takeover |
 |OneDrive                | Internal admin takeover |
-|Microsoft 365              | Internal admin takeover |
+|Microsoft 365           | Internal admin takeover |
 |Power BI                | External admin takeover |
 |Azure Rights Management | External admin takeover |
 |Exchange Online         | External admin takeover |
@@ -27,7 +27,7 @@ The best solution is external admin takeover. Unfortunately, that's not an optio
 
 Because the sales team signed up for Power BI in this scenario, you can do an external admin takeover. The steps are the same as for adding a custom domain. The unmanaged organization won't stop you from completing those steps.
 
-After you add your custom domain to your managed organization, all the following items are moved into your Azure AD organization:
+After you add your custom domain to your managed organization, all the following items are moved into your Microsoft Entra organization:
 
 - Domain name users
 - Subscriptions
@@ -47,7 +47,7 @@ Resolve-DnsName -Name proseware.com -Type TXT
 
 You should get something like this:
 
-```PowerShell
+```output
 Name                                     Type   TTL   Section    Strings
 ----                                     ----   ---   -------    -------
 proseware.com                            TXT    3600  Answer     {MS=ms94126796}
@@ -55,4 +55,4 @@ proseware.com                            TXT    3600  Answer     {MS=ms94126796}
 
 ## A domain name is already in use
 
-A domain name created in one Azure AD organization won't be verified in a new organization. Delete the custom domain name from the old Azure AD organization. Also delete any created users or apps that use the domain name in their app ID URI. After you delete these resources and the domain name, you can then add the custom domain name to the new Azure AD organization.
+A domain name created in one Microsoft Entra organization won't be verified in a new organization. Delete the custom domain name from the old Microsoft Entra organization. Also delete any created users or apps that use the domain name in their app ID URI. After you delete these resources and the domain name, you can then add the custom domain name to the new Microsoft Entra organization.

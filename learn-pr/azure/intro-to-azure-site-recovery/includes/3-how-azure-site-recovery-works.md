@@ -1,6 +1,6 @@
 Azure Site Recovery manages the orchestration of disaster recovery. Azure Site Recovery is designed to replicate workloads from a primary location or region to a secondary location. 
 
-You can perform a failover if you wish to shift where your workloads are running, or if there's an issue that's causing disruption at the primary location. After you perform a failover, the workloads that were running in the primary location or region can run in the secondary location. Once the issue at the primary location is resolved, you can fail back the workloads to the primary location.
+You can perform a failover if you wish to shift where your workloads are running                                    or if there's an issue that's causing disruption at the primary location. After you perform a failover, the workloads that were running in the primary location or region can run in the secondary location. Once the issue at the primary location is resolved, you can fail back the workloads to the primary location.
 
 [![Diagram showing source and target replication.](../media/source-and-target-environments-smaller.png)](../media/source-and-target-environments.png#lightbox)
 
@@ -45,7 +45,7 @@ The frequency of replication data transmission between primary and secondary loc
 > [!NOTE]
 > You can't perform an offline replication using Azure Data Box or other storage technologies for the initial replication to Azure.
 
-For scenarios where you're replicating from one Azure region to another, it's possible to replicate between Azure subscriptions if those subscriptions are associated with the same Azure AD tenant.
+For scenarios where you're replicating from one Azure region to another, it's possible to replicate between Azure subscriptions if those subscriptions are associated with the same Microsoft Entra tenant.
 
 ## Recovery points
 
@@ -89,7 +89,7 @@ A failover occurs when a decision is made to execute a disaster-recovery plan fo
 
 The target environment becomes the de facto production environment in which your organization's production services run. After the target region is active, the source environment should no longer be used.
 
-A production failover in Azure Site Recovery is similar a test drill. There are some exceptions: for product failover, the option is **Failover**; whereas for test, it's **Test failover**.
+A production failover in Azure Site Recovery is similar a test drill. There are some exceptions: for product failover, the option is **Failover**; whereas, for test, it's **Test failover**.
 
 You can choose to shut down the source VM before starting the failover so that no data is lost during the switch.
 

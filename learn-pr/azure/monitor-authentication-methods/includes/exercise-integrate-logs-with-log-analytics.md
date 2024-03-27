@@ -1,4 +1,4 @@
-In this exercise, you view your Azure Active Directory sign-in logs, select columns and filter data for the logs, and then download the logs. You also view your Azure Active Directory instance audit logs through the **Users** menu.
+In this exercise, you view your Microsoft Entra sign-in logs, select columns and filter data for the logs, and then download the logs. You also view your Microsoft Entra instance audit logs through the **Users** menu.
 
 In this exercise, you'll:
 

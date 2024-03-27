@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check.
-  ms.date: 12/22/2021
+  ms.date: 02/24/2024
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom:
   - team=cloud_advocates
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.contributors:
   - orthomas-01072022
 durationInMinutes: 4

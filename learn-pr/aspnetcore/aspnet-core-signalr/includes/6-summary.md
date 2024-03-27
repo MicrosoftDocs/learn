@@ -1,6 +1,6 @@
-By using SignalR, you can replace client-side polling and solve the loss of orders issue for Contoso Pizza. 
+By using SignalR, you can replace client-side polling and solve the loss of orders issue for Contoso Pizza.
 
-In this module, you learned about SignalR, how it works, and whether and when to use it. You explored its capabilities, how its moving parts function together, and the common terminology associated with it. And you saw C# code examples that reinforce the learning objectives.
+In this module, you learned about SignalR, how it works, and whether and when to use it. You explored its capabilities, how its moving parts function together, and the common terminology associated with it. And you saw C# code examples that reinforce these learning objectives.
 
 ## References
 

@@ -3,12 +3,11 @@ uid: learn.align-requirements-in-azure.2-public-private-hybrid
 title: Azure solutions for public, private, and hybrid cloud
 metadata:
   title: Azure solutions for public, private, and hybrid cloud
-  description: Azure solutions for public, private, and hybrid cloud
-  ms.date: 09/24/2018
-  author: jboeshart
-  ms.author: jaboes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Learn about Azure solutions for public, private, and hybrid cloud.
+  ms.date: 10/13/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/2-public-private-hybrid.md)]

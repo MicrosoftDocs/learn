@@ -6,8 +6,7 @@ metadata:
   ms.date: 12/29/2022
   author: ryanmesches
   ms.author: ryanmesches
-  ms.topic: interactive-tutorial
-  ms.prod: learning-consumer
+  ms.topic: module
 title: The path to revenue
 summary: >
   This module explains the most common startup revenue models and gives practical tips on how to generate your first customer revenues in your startup.
@@ -30,7 +29,7 @@ roles:
 products:
 - consumer
 subjects:
-- modern-work
+- business-applications
 units:
 - learn.startups.revenue.introduction
 - learn.startups.revenue.revenue-models

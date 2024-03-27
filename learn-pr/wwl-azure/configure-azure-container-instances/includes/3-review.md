@@ -12,8 +12,6 @@ Let's review some of the benefits of using Azure Container Instances. As you rev
 
 - **Public IP connectivity and DNS names**. Containers can be directly exposed to the internet with an IP address and FQDN (fully qualified domain name).
 
-- **Hypervisor-level security**. Container applications are as isolated in a container as they would be in a virtual machine.
-
 - **Custom sizes**. Container nodes can be scaled dynamically to match actual resource demands for an application.
 
 - **Persistent storage**. Containers support direct mounting of Azure Files file shares.

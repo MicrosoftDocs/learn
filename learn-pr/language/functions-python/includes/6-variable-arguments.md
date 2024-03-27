@@ -2,7 +2,7 @@ In Python, you can use any number of arguments and keyword arguments without dec
 
 ## Variable arguments
 
-Arguments in functions are required. But when you're using variable arguments, the function allows any number of arguments (including `0`) to be passed in. The syntax for using variable arguments is prefixing a single asterisk (`*`) before the argument's name. 
+Arguments in functions are required. But when you're using variable arguments, the function allows any number of arguments (including `0`) to be passed in. The syntax for using variable arguments is prefixing a single asterisk (`*`) before the argument's name.
 
 The following function prints the received arguments:
 
@@ -17,11 +17,11 @@ def variable_length(*args):
 In this case, `*args` is instructing the function to accept any number of arguments (including `0`). Within the function, `args` is now available as the variable that holds all arguments as a tuple. Try out the function by passing any number or type of arguments: 
 
 ```python
->>> variable_length()
+variable_length()
 ()
->>> variable_length("one", "two")
+variable_length("one", "two")
 ('one', 'two')
->>> variable_length(None)
+variable_length(None)
 (None,)
 ```
 
@@ -38,13 +38,22 @@ def sequence_time(*args):
         return f"Total time to launch is {total_minutes/60} hours"
 ```
 
-Try out the function by passing any number of minutes: 
+Try out the function by passing any number of minutes:
 
 ```python
->>> sequence_time(4, 14, 18)
-'Total time to launch is 36 minutes' 
->>> sequence_time(4, 14, 48)
-'Total time to launch is 1.1 hours'
+sequence_time(4, 14, 18)
+```
+
+```Output
+Total time to launch is 36 minutes.
+```
+
+```python
+sequence_time(4, 14, 48)
+```
+
+```Output
+Total time to launch is 1.1 hours.
 ```
 
 > [!NOTE]
@@ -62,11 +71,11 @@ def variable_length(**kwargs):
 Try the example function, which prints the names and values passed in as `kwargs`:
 
 ```python
->>> variable_length(tanks=1, day="Wednesday", pilots=3)
+variable_length(tanks=1, day="Wednesday", pilots=3)
 {'tanks': 1, 'day': 'Wednesday', 'pilots': 3}
 ```
 
-If you're already familiar with Python dictionaries, you'll notice that variable-length keyword arguments are assigned as a dictionary. To interact with the variables and values, use the same operations as a dictionary.
+If you're already familiar with [Python dictionaries](../../python-dictionaries/index.yml), you'll notice that variable-length keyword arguments are assigned as a dictionary. To interact with the variables and values, use the same operations as a dictionary.
 
 > [!NOTE]
 > As with variable arguments, you're not required to use `kwargs` when you're using variable keyword arguments. You can use any valid variable name. Although it's common to see `**kwargs` or `**kw`, you should try to use the same convention throughout a project.
@@ -83,17 +92,17 @@ def crew_members(**kwargs):
 Try it out with the crew of the Apollo 11:
 
 ```python
->>> crew_members(captain="Neil Armstrong", pilot="Buzz Aldrin", command_pilot="Michael Collins")
+crew_members(captain="Neil Armstrong", pilot="Buzz Aldrin", command_pilot="Michael Collins")
 3 astronauts assigned for this mission:
 captain: Neil Armstrong
 pilot: Buzz Aldrin
 command_pilot: Michael Collins
 ```
 
-Because you can pass any combination of keyword arguments, make sure to avoid repeated keywords. Repeated keywords will result in an error:
+Because you can pass any combination of keyword arguments, make sure to avoid repeated keywords. Repeated keywords result in an error:
 
 ```python
->>> crew_members(captain="Neil Armstrong", pilot="Buzz Aldrin", pilot="Michael Collins")
+crew_members(captain="Neil Armstrong", pilot="Buzz Aldrin", pilot="Michael Collins")
   File "<stdin>", line 1
 SyntaxError: keyword argument repeated: pilot
 ```

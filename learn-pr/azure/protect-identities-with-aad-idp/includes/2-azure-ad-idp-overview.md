@@ -1,12 +1,14 @@
-Azure Active Directory (Azure AD) Identity Protection helps you to automatically detect, remediate, and investigate identity-based risks for your organization.
+Microsoft Entra ID Protection helps you to automatically detect, remediate, and investigate identity-based risks for your organization.
 
 The retail company you work for is conscious about its reputation. Compromised identities have previously enabled malicious users to obtain customer information fraudulently. These attacks have affected your organization's reputation, and ultimately its profitability. Your manager has asked you to investigate Identity Protection as a solution. You've been asked to report back on what the service does and how it's used.
 
-In this unit, you'll learn what Identity Protection is and the risks involved in using it. You'll explore the different workflows you can use in Identity Protection to protect your identities.
+In this unit, you learn what Identity Protection is and the risks involved in using it. You explore the different workflows you can use in Identity Protection to protect your identities.
 
-## What is Azure Active Directory Identity Protection?
+<a name='what-is-azure-active-directory-identity-protection'></a>
 
-Identity Protection is a solution built into Azure AD that's designed to protect your identities through a three-part process.
+## What is Microsoft Entra ID Protection?
+
+Identity Protection is a solution built into Microsoft Entra that's designed to protect your identities through a three-part process.
 
 ![Diagram of the Identity Protection overview.](../media/2-identity-protection-overview.svg)
 
@@ -14,7 +16,7 @@ Your company's specialist expertise is in retail, not in identity protection. It
 
 ## What are risks?
 
-Risks can be described as suspicious activity and actions by users when they sign in, or when they take actions after signing in. That's why risks are categorized in two ways: as user risks and sign-in risks.
+Risks are categorized in two ways: as *user risks* and *sign-in risks*. We can describe user risks as actions that users take after signing in, and sign-in risks as suspicious activity and actions by users when they sign in.
 
 ### User risk
 
@@ -27,22 +29,24 @@ A user risk is caused when a user's identity or account is compromised. User ris
 
 ### Sign-in risk
 
-Here, Identity Protection scrutinizes each authentication request to judge whether it was authorized by the owner of the identity. Sign-in risks can include:
+Here, Identity Protection scrutinizes each authentication request to judge whether the owner of the identity authorized it. Sign-in risks can include:
 
 | Risk  | Description |
 | --- | --- |
 | Unfamiliar sign-in properties | Identity Protection remembers and learns a particular user's sign-in history. For example, when a sign-in occurs from a location that's unusual for the user, a risk detection is triggered. |
 | Atypical travel | For example, when two or more sign-ins occur from distant locations in an unrealistically short time period, a risk detection is raised. |
-| Malware-linked IP address | For example, if the IP address where the sign-in originates is known to have been in contact with an active bot server, a risk detection is raised. |
-| Anonymous IP address | For example, a sign-in originates from an anonymous IP address. Because these details can be used by attackers to hide their real IP address or location, a risk detection is raised. |
+| Malware-linked IP address | For example, if it's known that the IP address where the sign-in originates has been in contact with an active bot server, a risk detection is raised. |
+| Anonymous IP address | For example, a sign-in originates from an anonymous IP address. Because attackers can use these details to hide their real IP address or location, a risk detection is raised. |
 
-## Azure Active Directory Identity Protection workflow
+<a name='azure-active-directory-identity-protection-workflow'></a>
+
+## Microsoft Entra ID Protection workflow
 
 There are two different ways to detect and handle identity risks: self-remediation workflow and administrator remediation workflow.
 
 - **Self-remediation workflow**
 
-    Identity Protection uses risk policies to automatically respond to detected threats for you. You can configure a risk policy to decide how you want Identity Protection to respond to a particular type of risk. You'll then choose the action the user is asked to complete. The action could be a self-service password reset or multifactor authentication enforcement. Using policies in this way helps save time and gives you peace of mind.
+    Identity Protection uses risk policies to automatically respond to detected threats for you. You can configure a risk policy to decide how you want Identity Protection to respond to a particular type of risk. Then you choose the action the user is asked to complete. The action could be a self-service password reset or multifactor authentication enforcement. Using policies in this way helps save time and gives you peace of mind.
 
     ![Diagram of automated remediation.](../media/2-identity-protection-flow.svg)
 
@@ -50,7 +54,7 @@ There are two different ways to detect and handle identity risks: self-remediati
 
 - **Administrator remediation workflow**
 
-   You can also have admins decide how a risk should be remediated when it's been detected by your risk policies. This type of remediation workflow helps you make more tailored decisions. The admin understands the context in which the risks were detected.
+   You can also have admins decide how a risk should be remediated when your risk policies detect it. This type of remediation workflow helps you make more tailored decisions. The admin understands the context in which the risks were detected.
 
     ![Diagram of admin remediation.](../media/2-admin-remediation.svg)
 

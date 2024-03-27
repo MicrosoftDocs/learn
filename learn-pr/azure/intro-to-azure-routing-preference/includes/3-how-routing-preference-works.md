@@ -1,8 +1,8 @@
 To determine if routing preference can realize cost savings for the factory network traffic project, you must first understand the routing preference alternatives in Azure.
 
-When you create an internet facing service in Azure, such as an Azure Load Balancer, you assign a public IP address to the resource. When the public IP address is created, you have the option of keeping the default setting of "Microsoft network" or change the setting to "Internet". These options for the public IP address determine the behavior of how traffic is routed from external user connections to the service in Azure.
+When you create an internet facing service in Azure, such as an Azure Load Balancer, you assign a public IP address to the resource. When the public IP address is created, you have the option of keeping the default setting of **Microsoft network** or change the setting to **Internet**. These options for the public IP address determine the behavior of how traffic is routed from external user connections to the service in Azure.
 
-As we learned from previous units, you have the option of routing traffic across the Microsoft global network or by the public Internet. The following information explains how the traffic routes for the different routing preference options.
+As we learned from previous units, you have the option of routing traffic across the Microsoft global network or by the public internet. The following information explains how the traffic routes for the different routing preference options.
 
 ## Routing preference Microsoft network
 
@@ -45,6 +45,6 @@ As we learned in the previous unit, the routing preference unmetered service is 
 
 Your outbound traffic from an origin in Azure destined to a CDN provider benefits from the direct connectivity. The data transfer bill for traffic leaving your Azure resources routed through the direct links is free.
 
-A direct connection between a CDN provider and an origin in Azure enables optimal performance by eliminating network "hops" between the connections. The CDN workload that frequently fetches data from the origin benefits from the "hop" elimination.
+A direct connection between a CDN provider and an origin in Azure enables optimal performance by eliminating network *hops* between the connections. The CDN workload that frequently fetches data from the origin benefits from the *hop* elimination.
 
-With the service, CDN providers have the opportunity to directly connect their network to Microsoft's global network edge routers at various locations. To take advantage of Routing Preference unmetered, your CDN providers must be part of the program. If your CDN provider isn't part of the program, contact your CDN provider.
+With the service, CDN providers have the opportunity to directly connect their network to Microsoft's global network edge routers at various locations. To take advantage of Routing Preference unmetered, your CDN providers must be part of the program. Contact your CDN provider to check if it's part of the program.

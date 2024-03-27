@@ -2,9 +2,9 @@ Woodgrove Bank expanded their application to Europe, as they've opened a corpora
 
 ## What are read replicas?
 
-Read replicas are read-only clusters, complete with their own set of coordinator and worker nodes. Write operations should be sent to the primary replica, whereas analytics systems can be configured to connect directly to the read replica cluster. Read replicas are updated asynchronously with eventual consistency, so this data isn't immediately in sync with the primary cluster. There's some lag time between the primary cluster and its read replicas.
+Read replicas are read-only clusters, complete with their own set of coordinator and worker nodes. Write operations should be sent to the primary replica, whereas analytics systems can be configured to connect directly to the read replica cluster. Read replicas are updated asynchronously with eventual consistency, so this data isn't immediately in sync with the primary cluster. There's some lag time between the primary cluster and any associated read replica clusters.
 
-When replicas are created, the read replica cluster is created then filled with data from the primary cluster. The duration of creating a read replica will vary, depending on how much data is in your primary cluster. This process could be as little as minutes to upwards of hours.
+When replicas are created, the read replica cluster is created then filled with data from the primary cluster. The duration of creating a read replica varies, depending on how much data is in your primary cluster. This process could be as little as minutes to upwards of hours.
 
 There are other costs associated with the read replicas. You're billed for the compute and storage costs for the read replicas.
 

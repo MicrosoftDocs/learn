@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.cosmos-db-apis
-title: A list of the Cosmos DB APIs
+title: A List of the Cosmos DB APIs
 metadata:
-  title: list of the Cosmos DB APIs
-  description: "list of the Cosmos DB APIs"
-  ms.date: 01/07/2021
+  title: List of the Cosmos DB APIs
+  description: "List of the Cosmos DB APIs"
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/3-apis.md)]

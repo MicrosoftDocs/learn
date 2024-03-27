@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.azure.introduction-to-azure-developer-cli
+metadata:
+  moduleType: introduction
+  title: Introduction to Azure Developer CLI
+  description: Evaluate whether Azure Developer CLI is appropriate for enhancing your apps.
+  ms.date: 02/29/2024
+  author: alexwolfmsft
+  ms.author: alexwolf
+  ms.topic: module-intro-to-product
+  ms.custom: engagement-fy23
+  ms.service: azure-dev-cli
+title: Introduction to Azure Developer CLI
+summary: "Learn how the Azure Developer CLI can accelerate the time it takes for you to get your application from local development environment to Azure."
+abstract: |
+  By the end of this module, you're able to:
+    - Evaluate whether The Azure Developer CLI is an appropriate fit for your project.
+    - Describe core Azure Developer workflows and features and how they're integrated with an app.
+prerequisites: |
+  - Basic knowledge of fundamental cloud concepts
+  - Basic knowledge of software development workflows, such as building, provisioning, and deploying code
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - devops-engineer
+  - solution-architect
+products:
+  - azure-clis
+units:
+- learn.azure.introduction-to-azure-developer-cli.introduction
+- learn.azure.introduction-to-azure-developer-cli.what-is-azure-developer-cli
+- learn.azure.introduction-to-azure-developer-cli.how-azure-developer-cli-works
+- learn.azure.introduction-to-azure-developer-cli.when-to-use-azure-developer-cli
+- learn.azure.introduction-to-azure-developer-cli.knowledge-check
+- learn.azure.introduction-to-azure-developer-cli.summary
+badge:
+  uid: learn.azure.introduction-to-azure-developer-cli.badge

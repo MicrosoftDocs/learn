@@ -6,8 +6,7 @@ metadata:
   ms.date: 05/16/2021
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Define shared behavior with traits
 durationInMinutes: 3

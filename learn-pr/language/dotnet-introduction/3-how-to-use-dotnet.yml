@@ -4,11 +4,13 @@ title: How to use .NET
 metadata:
   title: How to use .NET
   description: An overview of the workflow that developers use to build .NET applications.
-  ms.date: 10/12/2020
+  ms.date: 10/12/2023
   author: camsoper
   ms.author: casoper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 6
 azureSandbox: false
 content: |

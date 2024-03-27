@@ -2,16 +2,16 @@
 uid: learn.wwl.apply-manage-sensitivity-labels
 metadata:
   title: Apply and manage sensitivity labels
-  description: "Apply and manage sensitivity labels"
-  ms.date: 06/17/2022
+  description: "Apply and manage sensitivity labels."
+  ms.date: 03/22/2024
   author: wwlpublish
   ms.author: riswinto
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.topic: module
+  ms.service: purview
 title: Apply and manage sensitivity labels
-summary: Learn about how sensitivity labels are used to classify and protect business data while making sure that user productivity and their ability to collaborate are not hindered.
+summary: Learn about how sensitivity labels are used to classify and protect business data while making sure that user productivity and their ability to collaborate aren't hindered.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   - Apply sensitivity labels to Microsoft Teams, Microsoft 365 groups, and SharePoint sites.
   - Monitor label usage using label analytics.
   - Configure on-premises labeling.
@@ -30,7 +30,6 @@ roles:
 products:
 - microsoft-purview
 - m365
-- m365-information-protection
 subjects:
 - information-protection-governance
 units:

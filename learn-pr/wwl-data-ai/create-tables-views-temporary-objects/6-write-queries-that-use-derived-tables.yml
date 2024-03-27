@@ -4,13 +4,10 @@ title: Write queries that use derived tables
 metadata:
   title: Write queries that use derived tables
   description: "Write queries that use derived tables"
-  ms.date: 04/12/2023
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/6-write-queries-that-use-derived-tables.md)]

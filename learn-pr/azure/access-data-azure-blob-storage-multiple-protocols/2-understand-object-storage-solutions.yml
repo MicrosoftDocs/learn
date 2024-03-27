@@ -6,10 +6,9 @@ metadata:
   title: Understand object storage solutions
   description: This unit provides an overview of object storage solutions.
   ms.date: 12/27/2021
-  author: AnuSridhar-25
-  ms.author: v-anursr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/2-understand-object-storage-solutions.md)]

@@ -1,6 +1,6 @@
-In this exercise, you'll use Pytest to test a function. Then, you'll find and fix some potential problems with the function that cause failing tests. Looking at failures and using Pytest's rich error reporting is essential to identify and fix problematic test or bugs in production code.
+In this exercise, you use Pytest to test a function. Then, you find and fix some potential problems with the function that cause failing tests. Looking at failures and using Pytest's rich error reporting is essential to identify and fix problematic tests or bugs in production code.
 
-For this exercise, we’ll use a function called `admin_command()` that accepts a system command as input, and optionally prefixes it with the `sudo` tool. The function has a bug, which you'll discover by writing tests. 
+For this exercise, we use a function called `admin_command()` that accepts a system command as input, and optionally prefixes it with the `sudo` tool. The function has a bug, that you discover by writing tests.
 
 ## Step 1 - Add a file with tests for this exercise
 
@@ -8,13 +8,13 @@ For this exercise, we’ll use a function called `admin_command()` that accepts 
 
     ```python
     def admin_command(command, sudo=True):
-    """
-    Prefix a command with `sudo` unless it is explicitly not needed. Expects
-    `command` to be a list.
-    """
-    if sudo:
-        ["sudo"] + command
-    return command
+        """
+        Prefix a command with `sudo` unless it is explicitly not needed. Expects
+        `command` to be a list.
+        """
+        if sudo:
+            ["sudo"] + command
+        return command
     ```
 
     The function `admin_command()` takes a list as input using the `command` argument, and optionally can prefix the list with `sudo`. If the `sudo` keyword argument is set to `False`, then it returns the same command given as input.
@@ -38,7 +38,7 @@ For this exercise, we’ll use a function called `admin_command()` that accepts 
     ```
 
 > [!NOTE]
-> It isn't common to have tests within the same file as actual code. For simplicity, the examples in this exercise will have actual code in the same file. In real-world Python projects you'll find that tests are separated by files and directories from the code it's testing. 
+> It isn't common to have tests within the same file as actual code. For simplicity, the examples in this exercise will have actual code in the same file. In real-world Python projects, tests are typically separated by files and directories from the code that they're testing.
 
 ## Step 2 - Run the tests and identify the failure
 
@@ -77,7 +77,7 @@ Now that the test file has a function to test and a couple of tests to verify it
 
 ## Step 3 - Fix the bug and make the tests pass
 
-Before making any changes, you must understand why there's a failure in the first place. Although we know that the expectation isn’t being met (`sudo` isn’t in the result), you have to find out why.
+Before making any changes, you must understand why there's a failure in the first place. Although you can see that the expectation isn’t being met (`sudo` isn’t in the result), you have to find out why.
 
 Look at the following lines of code from the `admin_command()` function when the `sudo=True` condition is met:
 
@@ -93,13 +93,13 @@ The operation of the lists isn’t being used to return the value. Since it isn'
 
     ```python
     def admin_command(command, sudo=True):
-    """
-    Prefix a command with `sudo` unless it is explicitly not needed. Expects
-    `command` to be a list.
-    """
-    if sudo:
-        return ["sudo"] + command
-    return command
+        """
+        Prefix a command with `sudo` unless it is explicitly not needed. Expects
+        `command` to be a list.
+        """
+        if sudo:
+            return ["sudo"] + command
+        return command
     ```
 
 2. Rerun the test with Pytest. Try increasing the verbosity of the output by using the `-v` flag with Pytest:
@@ -108,7 +108,7 @@ The operation of the lists isn’t being used to return the value. Since it isn'
     $ pytest -v test_exercise.py
     ```
 
-3. Now verify the output.  It should show two passing tests now:
+3. Now verify the output. It should show two passing tests now:
 
     ```bash
     ============================= test session starts ==============================
@@ -124,23 +124,23 @@ The operation of the lists isn’t being used to return the value. Since it isn'
     ```
 
 > [!NOTE]
-> Since the function is able to work with more values of different casing, more tests should be added to cover those variations. This would prevent in the future that changes to the function cause a different (unexpected) behavior.
+> Since the function is able to work with more values of different casing, more tests should be added to cover those variations. This would prevent future changes to the function from causing a different (unexpected) behavior.
 
 ## Step 4 - Add new code with tests
 
-Now that you've added tests, you should feel comfortable having more changes to the function and verify them with tests. Even if the changes aren't covered by existing tests, you can feel confident that you aren't breaking any previous assumptions.
+After adding tests in the previous steps, you should feel comfortable making more changes to the function and verifying them with tests. Even if the changes aren't covered by existing tests, you can feel confident that you aren't breaking any previous assumptions.
 
 In this case, the `admin_command()` function is trusting blindly that the `command` argument is always a list. Let's improve that by ensuring that an exception with a useful error message gets raised.
 
-1. First, create a test that captures the behavior. Although the function hasn't been updated yet, you'll try a test-first approach (also known as Test Driven Development or TDD).
+1. First, create a test that captures the behavior. Although the function isn't updated yet, try a test-first approach (also known as Test Driven Development or TDD).
 
-    - Update the _test_exercise.py_ file so that it imports `pytest` at the top. This test will use an internal helper from the `pytest` framework:
+    - Update the *test_exercise.py* file so that it imports `pytest` at the top. This test uses an internal helper from the `pytest` framework:
 
     ```python
     import pytest
     ```
-    
-    - Now append a new test to the class to check on the exception. This test should expect a `TypeError` from the function when a non-list value is passed to the function:
+
+    - Now append a new test to the class to check on the exception. This test should expect a `TypeError` from the function when the value passed to it is not a list:
 
     ```python
         def test_non_list_commands(self):
@@ -162,22 +162,23 @@ In this case, the `admin_command()` function is trusting blindly that the `comma
     ============================== 3 passed in 0.00s ===============================
     ```
 
-    The test is good enough to check for `TypeError` but it would be good to add the code with a useful error message. 
+    The test is good enough to check for `TypeError` but it would be good to add the code with a useful error message.
 
 3. Update the function to raise a `TypeError` explicitly with a helpful error message:
 
     ```python
     def admin_command(command, sudo=True):
-    """
-    Prefix a command with `sudo` unless it is explicitly not needed. Expects
-    `command` to be a list.
-    """
-    if not isinstance(command, list):
-        raise TypeError(f"was expecting command to be a list, but got a {type(command)}")
-    if sudo:
-        return ["sudo"] + command
-    return command
+        """
+        Prefix a command with `sudo` unless it is explicitly not needed. Expects
+        `command` to be a list.
+        """
+        if not isinstance(command, list):
+            raise TypeError(f"was expecting command to be a list, but got a {type(command)}")
+        if sudo:
+            return ["sudo"] + command
+        return command
     ```
+
 4. Finally, update the `test_non_list_commands()` method to check for the error message:
 
     ```python
@@ -189,12 +190,12 @@ In this case, the `admin_command()` function is trusting blindly that the `comma
 
     The updated test uses `error` as a variable that holds all the exception information. Using `error.value.args`, you’re able to look into the arguments of the exception. In this case, the first argument has the error string that the test can check.
 
-## Check your work 
+## Check your work
 
-At this point you should have a Python test file named *test_exercise.py* with the following:
+At this point you should have a Python test file named *test_exercise.py* that includes:
 
 - An `admin_command()` function that accepts an argument, and a keyword argument.
 - A `TypeError` exception with a helpful error message in the `admin_command()` function.
 - A `TestAdminCommand()` test class that has a `command()` helper method and three test methods that check the `admin_command()` function.
 
-All tests should be passing when running them in the terminal, with no errors.
+All tests should be passing with no errors when you run them in the terminal.

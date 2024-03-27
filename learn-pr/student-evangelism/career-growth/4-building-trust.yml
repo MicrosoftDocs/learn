@@ -6,10 +6,9 @@ metadata:
   title: Build trust to improve your professional brand
   description: In this unit, you learn about building trust to growth-hack your career.
   ms.date: 08/23/2021 
-  author: jlooper 
-  ms.author: jelooper 
-  ms.topic: interactive-tutorial # do we need ms.topic?
-  ms.prod: learning-azure
+  author: GitHubber17 
+  ms.author: chnoring 
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 5
 content: |

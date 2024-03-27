@@ -1,4 +1,3 @@
-
 In the Azure portal, you can filter your Azure Monitor activity logs so you can view specific information. The filters enable you to review only the activity log data that meets your criteria. You might set filters to review monitoring data about critical events for your primary subscription and production virtual machine during peak business hours.
 
 :::image type="content" source="../media/query-activity-log-a92271d9.png" alt-text="Screenshot that shows filter options for activity logs in the Azure portal.":::
@@ -34,7 +33,7 @@ The following table summarizes the categories of events that you can review in y
 | Event category | Event data | Examples |
 | --- | --- | --- |
 | **Administrative** | All create, update, delete, and action operations performed through Azure Resource Manager, and any changes to role-based access control (RBAC) in your filtered subscriptions | `create virtual machine` <br><br> `delete network security group` |
-| **Service Health** | All service health events for Azure services and resources connected with your filtered subscriptions, including _Action Required_, _Assisted Recovery_, _Incident_, _Maintenance_, _Information_, or _Security_ | `SQL Azure in East US is experiencing downtime` <br><br> `Azure SQl Data Warehouse Scheduled Maintence Complete` | 
+| **Service Health** | All service health events for Azure services and resources connected with your filtered subscriptions, including _Action Required_, _Assisted Recovery_, _Incident_, _Maintenance_, _Information_, or _Security_ | `SQL Azure in East US is experiencing downtime` <br><br> `Azure SQL Data Warehouse Scheduled Maintence Complete` | 
 | **Resource Health** | All resource health events for your filtered Azure resources, including _Available_, _Unavailable_, _Degraded_, or _Unknown_, and identified as _Platform Initiated_ or _User Initiate_ | `Virtual Machine health status changed to unavailable` <br><br> `Web App health status changed to available` |
 | **Alert** | All activations of Azure alerts for your filtered subscriptions and resources | `CPU % on devVM001 has been over 80 for the past 5 minutes` <br><br> `Disk read LessThan 100000 in the last 5 minutes` |
 | **Autoscale** | All events related to the operation of the autoscale engine based on any autoscale settings defined for your filtered subscriptions | `Autoscale scale up action failed` |

@@ -4,11 +4,10 @@ title: Examine the built-in security alerts
 metadata:
   title: Examine the built-in security alerts
   description: "Examine the built-in security alerts"
-  ms.date: 07/14/2022
+  ms.date: 10/09/2023
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

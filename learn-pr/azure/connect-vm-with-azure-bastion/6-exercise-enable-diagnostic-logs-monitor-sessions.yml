@@ -4,11 +4,10 @@ title: Exercise - Enable diagnostic logs and monitor remote sessions
 metadata:
   title: Exercise - Enable diagnostic logs and monitor remote sessions
   description: Exercise - Enable diagnostic logs and monitor remote sessions
-  ms.date: 11/12/2020
+  ms.date: 12/06/2023
   author: cherylmc
   ms.author: cherylmc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 azureSandbox: false
 content: |

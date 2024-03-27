@@ -1,0 +1,34 @@
+### YamlMime:Module
+uid: learn.chat-completions
+metadata:
+  ms.author: chnoring
+  author: softchris
+  ms.date: 12/11/2023
+  title: Introduction to chat completion
+  description: Learn how to use chat completions via the Azure AI Studio playground.
+  ms.topic: module
+title: Introduction to chat completion
+summary: "This module introduces you to prompt engineering techniques, such as chat completion and system messages, and how to use them in the Azure AI Studio playground."
+abstract: | 
+ In this module, you'll learn how to:
+ - Create a chat completion.
+ - Explain how a chat completion works to produce better responses.
+ - Use system messages to protect your model and chat from security risks.  
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.chat-completions.introduction
+- learn.chat-completions.explore-chat-completion
+- learn.chat-completions.basic-prompts-exercise
+- learn.chat-completions.deploy-system-messages
+- learn.chat-completions.system-message-exercise
+- learn.chat-completions.knowledge-check
+- learn.chat-completions.summary
+badge:
+  uid: learn.chat-completions-badge

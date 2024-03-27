@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.student-evangelism.challenge-project-build-speech-translator-app
+metadata:
+  title: Challenge project - Build a speech translator app
+  description: "Learn how to build a speech translation app by using Microsoft Power Apps and integrate it with AI."
+  ms.date: 12/13/2023
+  author: theoyinbooke
+  ms.author: somelezediko
+  ms.custom: team=nextgen
+  ms.topic: module-challenge-project
+  ms.service: azure-ai-services
+title: Challenge project - Build a speech translator app
+summary: |
+  This challenge project helps you demonstrate your ability to analyze project requirements, translate them into a solution, and showcase your technical skills in Power Apps and Microsoft Azure AI services.
+  > [!NOTE]
+  > This is a **_challenge project_** module where you complete an end-to-end project by using high-level guidance. There are no step-by-step instructions.
+abstract: |
+  In this module, you'll demonstrate your ability to:
+  - Create a data model by using Microsoft Dataverse for a Power Apps project.
+  - Set up Microsoft Azure AI services on Azure.
+  - Create a Power Apps canvas app based on specifications provided.
+  - Integrate and consume Microsoft Azure AI services within Power Apps.
+prerequisites: |
+  - Experience creating custom tables and columns in Dataverse
+  - Experience building Power Apps canvas apps
+  - Basic knowledge of Power Fx formulas
+  - Fundamental understanding of Microsoft Azure AI services
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles: 
+  - student
+  - business-user
+  - developer
+  - higher-ed-educator
+products:
+- m365
+- azure
+- power-platform
+subjects:
+  - data-management
+units:
+- learn.student-evangelism.challenge-project-build-speech-translator-app.introduction
+- learn.student-evangelism.challenge-project-build-speech-translator-app.prepare
+- learn.student-evangelism.challenge-project-build-speech-translator-app.exercise-create-data-model-and-canvas-app
+- learn.student-evangelism.challenge-project-build-speech-translator-app.exercise-create-microsoft-azure-ai-service
+- learn.student-evangelism.challenge-project-build-speech-translator-app.exercise-integrate-ai-service-to-power-apps
+- learn.student-evangelism.challenge-project-build-speech-translator-app.knowledge-check
+- learn.student-evangelism.challenge-project-build-speech-translator-app.summary
+badge:
+  uid: learn.student-evangelism.challenge-project-build-speech-translator-app.badge

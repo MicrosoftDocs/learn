@@ -1,23 +1,23 @@
 In the last unit, you wrote a function app in Azure that passes each photo that's uploaded to a blob container to the Custom Vision service to determine whether the photo contains a polar bear. The only output from the function app was a log output that shows the verdict that was rendered by the Custom Vision service, and the ID and location of the camera that captured the photo.
 
-Now, you'll use Azure SQL Database to create a SQL database and modify the function app to write to the database. The SQL database sets the stage for visualizing polar bear sightings in Power BI, which draws information from the database.
+Now, you'll use Azure SQL Database to create a SQL database and modify the function app to write to the database. The SQL Database sets the stage for visualizing polar bear sightings in Power BI, which draws information from the database.
 
 ## Create a SQL database
 
-Let's begin by using Azure Cloud Shell to create a SQL database in Azure SQL Database. The database collects output from the function app you deployed. Later, you'll connect the SQL database to Power BI to show where cameras are capturing photos of polar bears.
+Let's begin by using Azure Cloud Shell to create a SQL database in Azure SQL Database. The database collects output from the function app you deployed. Later, you'll connect the SQL Database to Power BI to show where cameras are capturing photos of polar bears.
 
 1. In a browser, go to the [Azure portal](https://portal.azure.com?azure-portal=true). In the global controls, select Azure Cloud Shell.
 
     :::image type="content" source="../media/cloud-shell.png" alt-text="Screenshot of the global controls in the Azure portal with the Azure Cloud Shell icon highlighted.":::
 
-    _Open Azure Cloud Shell_
+    *Open Azure Cloud Shell*
 
    You also can open Cloud Shell by going to [https://shell.azure.com](https://shell.azure.com?azure-portal=true) in a separate browser window.
 
-1. Run the following code to create values for the SQL database server, the admin username, the admin password, and the database name. Replace `<server-name>`, `<admin-username>`, `<admin-password>`, and `<database-name>` in the code example with your own values.
+1. Run the following code to create values for the SQL Database server, the admin username, the admin password, and the database name. Replace `<server-name>`, `<admin-username>`, `<admin-password>`, and `<database-name>` in the code example with your own values.
 
     Keep in mind the following constraints when you choose the values:
-    
+
     - `SERVER_NAME` must be unique in Azure. The server name can use only lowercase letters, numbers, and hyphens. The first character and the last character in the name can't be a hyphen.
     - `ADMIN_USERNAME`  can't be a name that's reserved in SQL Server, such as `admin` or `sa`. You can use the name `adminuser`.
     - `ADMIN_PASSWORD`  must be at least eight characters in length.
@@ -29,7 +29,7 @@ Let's begin by using Azure Cloud Shell to create a SQL database in Azure SQL Dat
     DATABASE_NAME="<database-name>"
     ```
 
-    > [!Note]
+    > [!NOTE]
     > Copy and save the admin username and password values to use later.
 
 1. In Cloud Shell, run the following command to create a SQL database server in the `polar-bear-rg` resource group. To paste commands in Cloud Shell, you can select Shift+Insert.
@@ -44,7 +44,7 @@ Let's begin by using Azure Cloud Shell to create a SQL database in Azure SQL Dat
     az sql db create --resource-group polar-bear-rg --server $SERVER_NAME --name $DATABASE_NAME --service-objective S0
     ```
 
-1. In the [Azure portal](https://portal.azure.com?azure-portal=true), open your new SQL database server. Then, in the resource menu, under **Security**, select **Networking**:
+1. In the [Azure portal](https://portal.azure.com?azure-portal=true), open your new SQL Database server. Then, in the resource menu, under **Security**, select **Networking**:
 
     1. So you can connect to the database from Power BI Desktop later, select **Add your client IPv4 address**.
     1. Select the checkbox **Allow Azure services and resources to access this server**.
@@ -52,7 +52,7 @@ Let's begin by using Azure Cloud Shell to create a SQL database in Azure SQL Dat
 
     :::image type="content" source="../media/configure-database-server.png" alt-text="Screenshot that highlights networks settings to select for the s q l database server.":::
 
-    _Configure the SQL database server_
+    *Configure the SQL database server*
 
 1. Next, open the database. Then, in the resource menu, select **Query editor**, and enter the admin username and password you set in step 2. Select **OK**.
 
@@ -88,13 +88,13 @@ Let's begin by using Azure Cloud Shell to create a SQL database in Azure SQL Dat
 
     :::image type="content" source="../media/polar-bears-table.png" alt-text="Image that shows the Tables folder above the d b o dot Polar Bears table.":::
 
-    _The dbo.PolarBears table_
+    *The dbo.PolarBears table*
 
     In the table, the `IsPolarBear` column is set to `1` or `0` to indicate whether the image in a row contains a polar bear. A value of `1` (True) means that the image shows a polar bear.
 
 ## Modify the function app
 
-The next step is to modify the function app you created to write output to the SQL database.
+The next step is to modify the function app you created to write output to the SQL Database.
 
 1. In the [Azure portal](https://portal.azure.com?azure-portal=true), go to your function app. In the resource menu, under **Development Tools**, select **Console**.
 
@@ -178,7 +178,7 @@ The next step is to modify the function app you created to write output to the S
                 dbConnection.close();
                 context.done();
             });
-  
+
             dbConnection.execSql(dbRequest);
         }
         else {
@@ -189,7 +189,7 @@ The next step is to modify the function app you created to write output to the S
         context.log('dbConnection.connect()');
         dbConnection.connect();
         context.log('after dbConnection.connect()');
-    
+
     ```
 
     These statements connect to the database and execute an `INSERT` command to record the latest polar bear sighting. The row added to the database includes the ID, latitude, and longitude of the camera that took the photograph, the URL of the blob that contains the photograph, the current date and time, and an `IsPolarBear` value that indicates whether the photograph contains a polar bear.
@@ -220,7 +220,7 @@ The next step is to modify the function app you created to write output to the S
 
     :::image type="content" source="../media/query-results.png" alt-text="Screenshot that shows the rows written to the database by the function app.":::
 
-    _Rows written to the database by the function app_
+    *Rows written to the database by the function app*
 
 1. Return to the Command Prompt or terminal window, and select Ctrl+C to stop *run.js*.
 

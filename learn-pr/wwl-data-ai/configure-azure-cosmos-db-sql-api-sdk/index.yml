@@ -6,8 +6,9 @@ metadata:
   ms.date: 10/17/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: cosmos-db
+  ms.subservice: nosql
 title: Configure the Azure Cosmos DB for NoSQL SDK
 summary: Learn how to configure the Azure Cosmos DB for NoSQL SDK in various ways including how to integrate with the emulator, implement parallelism, and create a custom logger.
 abstract: |
@@ -26,7 +27,7 @@ roles:
 products:
 - azure-cosmos-db
 subjects:
-- database
+- databases
 units:
 - learn.wwl.configure-azure-cosmos-db-sql-api-sdk.introduction
 - learn.wwl.configure-azure-cosmos-db-sql-api-sdk.enable-offline-development

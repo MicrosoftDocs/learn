@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-applications-azure-kubernetes-service.deploy-application-azure-kubernetes-cluster
+title: Deploy an application to an Azure Kubernetes Service cluster
+metadata:
+  title: Deploy an application to an Azure Kubernetes Service cluster
+  description: "Deploy an application to an Azure Kubernetes Service cluster"
+  ms.date: 03/04/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-deploy-application-azure-kubernetes-cluster.md)]

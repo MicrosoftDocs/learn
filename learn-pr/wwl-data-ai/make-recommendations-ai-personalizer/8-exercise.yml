@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.make-recommendations-ai-personalize.exercise
+title: Use AI Personalizer with Visual Studio Code Notebooks to simulate a loop
+metadata:
+  title: Use AI Personalizer with Visual Studio Code Notebooks to simulate a loop
+  description: "Learn how to configure Azure AI Personalizer resource, and use Visual Studio Code notebooks to create and run a learning loop."
+  ms.date: 9/27/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/8-exercise.md)]

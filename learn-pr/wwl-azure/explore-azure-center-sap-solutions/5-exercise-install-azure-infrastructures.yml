@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-center-sap-solutions.exercise-install-azure-infrastructures
+title: Exercise - Deploy S/4HANA infrastructure with Azure Center for SAP solutions
+metadata:
+  title: Exercise - Deploy S/4HANA infrastructure with Azure Center for SAP solutions
+  description: "Carry out the steps to deploy S/4HANA infrastructure with Azure Center for SAP solutions."
+  ms.date: 03/26/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-install-azure-infrastructures.md)]

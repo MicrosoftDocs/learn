@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.modernize-explore-azure-network.examine-azure-virtual-machine-network-considerations
+title: Examine Azure virtual machine networking considerations
+metadata:
+  title: Examine Azure virtual machine networking considerations
+  description: "Examine Azure virtual machine networking considerations"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-examine-azure-virtual-machine-network-considerations.md)]

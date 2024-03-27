@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-examine-sap-s4hana-azure-virtual-machines.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/08/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following is a potential single point of failure when deployed to a single virtual machine?"
+    choices:
+    - content: "SAP Web Dispatcher pool"
+      isCorrect: false
+      explanation: "Incorrect. The SAP Web Dispatcher pool isn't normally a potential single point of failure when deployed to a single virtual machine."
+    - content: "Central Services"
+      isCorrect: true
+      explanation: "Correct. The Central Services is a potential single point of failure when deployed to a single VM, a typical deployment when high availability isn't a requirement. To implement a high availability solution, deploy multiple Central Services instances and configure them as members of a failover cluster with a shared disk or a file share providing highly available storage accessible by all cluster nodes."
+    - content: "Application servers pool"
+      isCorrect: false
+      explanation: "Incorrect. The application servers pool isn't normally a potential single point of failure when deployed to a single virtual machine."
+  - content: "Which of the following architectural groups includes the Fiori Front-end Server pool?"
+    choices:
+    - content: "Application tier"
+      isCorrect: true
+      explanation: "Correct. The application tier includes the Fiori Front-end Server pool, SAP Web Dispatcher pool, application server pool, and SAP Central Services cluster."
+    - content: "NFS cluster"
+      isCorrect: false
+      explanation: "Incorrect. The application tier includes the Fiori Front-end Server pool, SAP Web Dispatcher pool, application server pool, and SAP Central Services cluster."
+    - content: "SAP HANA"
+      isCorrect: false
+      explanation: "Incorrect. The application tier includes the Fiori Front-end Server pool, SAP Web Dispatcher pool, application server pool, and SAP Central Services cluster."
+  - content: "A virtual gateway facilitates extending an on-premises network to the Azure virtual network. What is the recommended virtual gateway service for cross-premises connectivity of SAP deployments in Azure?"
+    choices:
+    - content: "Site-to-Site VPN"
+      isCorrect: false
+      explanation: "Incorrect. Site-to-Site VPN can provide cross-premises connectivity of SAP deployments in Azure, but it isn't the recommended solution."
+    - content: "ExpressRoute"
+      isCorrect: true
+      explanation: "Correct. A virtual gateway facilitates extending a user's on-premises network to the Azure virtual network. ExpressRoute is the recommended service for cross-premises connectivity of SAP deployments in Azure, but a Site-to-Site VPN or Virtual WAN can serve as alternatives."
+    - content: "Virtual WAN"
+      isCorrect: false
+      explanation: "Incorrect. A virtual WAN can provide cross-premises connectivity of SAP deployments in Azure, but it isn't the recommended solution."

@@ -50,10 +50,10 @@ Review these design recommendations and considerations for designing your enterp
 - An organization can have a variety of structures, such as functional, divisional, geographic, matrix, or team structure. Use organizational structure to map your organization structure to your enrollment hierarchy.
 - Create a new department for IT if business domains have independent IT capabilities.
 - Restrict and minimize the number of account owners within the enrollment to avoid the proliferation of privileged access to subscriptions and associated Azure resources.
-- If you use multiple Azure Active Directory (Azure AD) tenants, verify that the account owner is associated with the same tenant in which subscriptions for the account are provisioned.
+- If you use multiple Microsoft Entra tenants, verify that the account owner is associated with the same tenant in which subscriptions for the account are provisioned.
 - Set up enterprise dev/test and production environments at an EA account level to support holistic isolation.
 - Don't ignore notification emails sent to the notification account email address. Microsoft sends important EA-wide communications to this account.
-- Don't move or rename an EA account in Azure AD.
+- Don't move or rename an EA account in Microsoft Entra ID.
 - Periodically audit the EA portal to review who has access, and avoid using a Microsoft account when possible.
 
 **Considerations**
@@ -66,28 +66,32 @@ Review these design recommendations and considerations for designing your enterp
 - A subscription can belong to only one account at any given time
 - A subscription can be suspended based on a specified set of criteria
 
-## Azure AD tenants
+<a name='azure-ad-tenants'></a>
 
-An Azure AD tenant provides identity and access management, which is an important part of your security posture. An Azure AD tenant ensures that authenticated and authorized users have access to only the resources for which they have access permissions. Azure AD provides these services to applications and services deployed in Azure, and also to services and applications deployed outside of Azure (such as on-premises or third-party cloud providers).
+## Microsoft Entra tenants
 
-Azure AD is also used by software as a service (SaaS) applications such as Microsoft 365 and Azure Marketplace. Organizations already using on-premises Active Directory can use their existing infrastructure and extend authentication to the cloud by integrating with Azure AD. Each Azure AD directory has one or more domains. A directory can have many subscriptions associated with it but only one Azure AD tenant.
+A Microsoft Entra tenant provides identity and access management, which is an important part of your security posture. A Microsoft Entra tenant ensures that authenticated and authorized users have access to only the resources for which they have access permissions. Microsoft Entra ID provides these services to applications and services deployed in Azure, and also to services and applications deployed outside of Azure (such as on-premises or third-party cloud providers).
 
-Ask basic security questions during the Azure AD design phase, such as how your organization manages credentials, and how it controls human, application, and programmatic access.
+Microsoft Entra ID is also used by software as a service (SaaS) applications such as Microsoft 365 and Azure Marketplace. Organizations already using on-premises Active Directory can use their existing infrastructure and extend authentication to the cloud by integrating with Microsoft Entra ID. Each Microsoft Entra directory has one or more domains. A directory can have many subscriptions associated with it but only one Microsoft Entra tenant.
 
-### Azure AD tenants design recommendations and considerations
+Ask basic security questions during the Microsoft Entra ID design phase, such as how your organization manages credentials, and how it controls human, application, and programmatic access.
 
-Review these design recommendations and considerations for designing your Azure AD tenants:
+<a name='azure-ad-tenants-design-recommendations-and-considerations'></a>
+
+### Microsoft Entra tenants design recommendations and considerations
+
+Review these design recommendations and considerations for designing your Microsoft Entra tenants:
 
 **Recommendations**
 
-- Use Azure AD seamless single sign-on based on the selected planning topology.
-- If your organization doesn't have an identity infrastructure, start by implementing an Azure AD-only identity deployment. Such a deployment with Azure Active Directory Domain Services and Microsoft Enterprise Mobility + Security provides end-to-end protection for SaaS applications, enterprise applications, and devices.
+- Use Microsoft Entra seamless single sign-on based on the selected planning topology.
+- If your organization doesn't have an identity infrastructure, start by implementing a Microsoft Entra-only identity deployment. Such a deployment with Microsoft Entra Domain Services and Microsoft Enterprise Mobility + Security provides end-to-end protection for SaaS applications, enterprise applications, and devices.
 - Multifactor authentication provides another layer of security the second barrier of authentication. Enforce multifactor authentication and Conditional Access policies for all privileged accounts for greater security.
 - Plan for and implement emergency-access or break-glass accounts to prevent tenant-wide account lockout.
-- Use Azure AD Privileged Identity Management for identity and access management.
+- Use Microsoft Entra Privileged Identity Management for identity and access management.
 - If dev/test and production are going to be isolated environments from an identity perspective, separate them at a tenant level via multiple tenants.
-- Avoid creating a new Azure AD tenant unless there's a strong identity and access management justification and processes are already in place.
+- Avoid creating a new Microsoft Entra tenant unless there's a strong identity and access management justification and processes are already in place.
 
 **Considerations**
 
-- Multiple Azure AD tenants can function in the same enrollment
+- Multiple Microsoft Entra tenants can function in the same enrollment

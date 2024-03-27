@@ -6,8 +6,7 @@ metadata:
   ms.date: 06/08/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Automate database tasks for Azure SQL
 prerequisites: |
   - Ability to use tools for running queries against a Microsoft SQL database, either on-premises on cloud-based
@@ -27,7 +26,7 @@ products:
 - azure-sql-database
 - sql-server
 subjects:
-- database
+- databases
 modules:
 - learn.wwl.configure-automatic-deployment-for-azure-sql-database
 - learn.wwl.schedule-tasks-using-sql-server-agent

@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.use-css-styles.exercise-css-concepts
-title: 'Exercise: Use CSS concepts'
+title: Exercise - Use CSS concepts
 metadata:
-  title: 'Exercise: Use CSS concepts'
-  description: "Exercise: Use CSS concepts"
-  ms.date: 04/21/2023
+  title: Exercise - Use CSS concepts
+  description: "Use CSS concepts to begin styling your resume web page."
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/4-exercise-css-concepts.md)]

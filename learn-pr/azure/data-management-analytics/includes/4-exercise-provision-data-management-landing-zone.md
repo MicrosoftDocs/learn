@@ -30,7 +30,7 @@ In this page, provide the following information
 
 ### Step 3 - Obtain ObjectId of Azure Purview Root collection admin ID
 
-This step is required only if a user other than yourself has to be added as a collection admin in the Purview instance. To add a user, navigate to Azure Active Directory and in the list of users, select the relevant user to find the Object ID. Select on the Copy to Clipboard icon.
+This step is required only if a user other than yourself has to be added as a collection admin in the Purview instance. To add a user, navigate to Microsoft Entra ID and in the list of users, select the relevant user to find the Object ID. Select on the Copy to Clipboard icon.
 
 [![Obtain User Object Id](../media/user-object-id.png)](../media/user-object-id.png)
 

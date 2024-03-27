@@ -6,11 +6,11 @@ Before you begin, there are two changes you need to make to Visual Studio Code.
 
 The first change grants Visual Studio Code access to the Azure subscription used by the sandbox.  This subscription was created when you activate the sandbox and allows you to use Azure services without incurring any costs.
 
-The second customization tells the Azure Functions extension to use the advanced creation process. If you skip this step, the extension uses default values and won't create your function to work with the sandbox.
+The second customization tells the Azure Functions extension to use the advanced creation process. If you skip this step, the extension uses default values and doesn't create your function to work with the sandbox.
 
 ### Add concierge tenant to Visual Studio Code
 
-The following steps associate the free Azure subscription created for you with Visual Studio Code. At the end of the tutorial you'll follow steps to restore Visual Studio Code back to its original settings.
+The following steps associate the free Azure subscription created for you with Visual Studio Code. At the end of the tutorial, you follow steps to restore Visual Studio Code back to its original settings.
 
 1. In the Cloud Shell, run the following command and copy the tenant ID to your clipboard.
 
@@ -77,7 +77,7 @@ Now Visual Studio Code is configured to use the sandbox resources and avoid any 
 
 1. Open **public/index.html.js** and replace `<FUNCTION_APP_ENDPOINT>` with the function's endpoint.
 
-1. Next, upload your local settings to Azure by opening the command palette via **F1** and select **Azure Functions: Upload local settings**. When prompted, choose the function app you just created, and choose to overwrite all settings.
+1. Next, upload your local settings to Azure by opening the command palette via **F1** and select **Azure Functions: Upload local settings**. When prompted, choose the function app that you created, and choose to overwrite all settings.
 
 ## Configure static websites in Azure Storage
 
@@ -93,7 +93,7 @@ Use the following steps to configure the Azure Storage account to host a static 
    | Default file      | Select **index.html** as the index document name for the account. |
    | Error document    | Enter **index.html** for the default 404 error document path.     |
 
-The error document path is the page the browser will load when a routing error occurs. This is important for JavaScript frameworks like Vue.js which have client-side routing.
+The error document path is the page the browser loads when a routing error occurs. This path is important for JavaScript frameworks like Vue.js, which have client-side routing.
 
 ## Deploy the web application to Azure Storage
 
@@ -110,11 +110,11 @@ After the extension is done deploying your application, a notification appears t
 
 ## Determine the primary endpoint address of the static website
 
-1. In the command palette, search for **Azure Storage: Browse static website** and choose your Storage account. The site opens in the browser. At this point, the app won't run because of CORS requirements of Azure Functions.
+1. In the command palette, search for **Azure Storage: Browse static website** and choose your Storage account. The site opens in the browser. At this point, the app doesn't run because of the CORS requirements of Azure Functions.
 
 1. Copy the URL in the browser, which is the endpoint of the static site hosted in your Storage account. You use the endpoint value to set up CORS settings for the function app in the next section.
 
-Keep this browser window open. You will return refresh this window once the CORS settings are updated in your function app.
+Keep this browser window open. Once the CORS settings are updated in your function app, you return and refresh this window.
 
 ## Set up CORS in the function app
 
@@ -128,7 +128,7 @@ Keep this browser window open. You will return refresh this window once the CORS
 
 1. Add an entry with the *static website* **primary endpoint** as the value (make sure to remove the trailing `/`). You can paste this value in from your clipboard.
 
-1. Click **Save** to persist the CORS settings.
+1. Select **Save** to persist the CORS settings.
 
     ![Enable CORS support for Azure Functions app.](../media/serverless-app-function-cors.png)
 
@@ -138,7 +138,7 @@ Now you can make change to the application's data and observe how to the data is
 
 1. Arrange Visual Studio Code on one side of the screen and the web browser running the static site on the other. This way you can see the UI update as changes are made to the database.
 
-1. Refresh the browser. It may take a moment for stocks to appear as the serverless functions are running for the first time.
+1. Refresh the browser. It might take a moment for stocks to appear as the serverless functions are running for the first time.
 
 1. In Visual Studio integrated terminal, enter the following command and watch as the UI is automatically updated.
 

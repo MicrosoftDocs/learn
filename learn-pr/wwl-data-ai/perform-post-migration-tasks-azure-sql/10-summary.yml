@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.perform-post-migration-tasks-azure-sql.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 09/14/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-summary.md)]

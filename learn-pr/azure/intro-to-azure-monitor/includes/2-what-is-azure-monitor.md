@@ -1,51 +1,69 @@
-Let's start with an introduction to Azure Monitor. This overview will help you understand what Azure Monitor is and why it's an important part of your Azure deployments.
+This unit gives you an overview of monitoring and Azure Monitor. You learn about Azure Monitor capabilities that are important for the successful operation of your Azure and hybrid resources and applications.
 
-## What is monitoring?
+## Introduction to monitoring
 
-Monitoring is a task that involves collecting and reviewing data about the activity of some process or behavior. In the world of Azure, monitoring is used to collect insights into the operation, performance, and behavior of your applications and services.
+Your IT environment might contain many resources, services, networks, and other infrastructure. Monitoring tracks the state, health, behavior, and performance of your applications and IT environment. One goal of monitoring is to ensure that your applications and environment are operating optimally, securely, and reliably. Another goal is to detect and help address any issues.
 
-You can perform monitoring as a near-real-time event or review the data later. You can also review metrics later, as they're stored for 93 days by default. Whatever your preferred method, Azure Monitor is ready to help you collect the necessary information that you need.
+Monitoring includes the following key activities:
 
-:::image type="content" source="../media/monitoring.png" alt-text="Diagram of data sources on the left feeding into a metrics and/or log database destinations on the right.":::
+- **Data collection** of metrics, logs, and log traces to provide insights into the functioning and performance of monitored components.
+- **Data analysis** to understand current state, identify patterns, trends, and anomalies, and predict potential issues.
+- **Alerts** that trigger when specific conditions are met, such as high CPU usage or low disk space, to notify administrators or trigger automated responses.
+- **Visualizations** that present collected data in user-friendly visual formats to help administrators quickly assess system and resource status.
+- **Diagnostics and troubleshooting** to help identify the root causes of problems and make informed decisions to address them.
 
-## Azure Monitor definition
+Monitoring provides the following important benefits:
 
-Azure Monitor is a service for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments. IT Operations, DevOps, and developer teams use Azure Monitor to maximize the availability and performance of applications and services.
+- **Performance and cost optimization**. Identifies performance bottlenecks and areas for improving resource utilization, efficiency, and costs.
+- **Proactive management.** Lets you take proactive rather than reactive measures to prevent downtime, disruptions, and other problems.
+- **Reliability**. Provides quick identification, troubleshooting, and recovery when problems occur.
+- **Capacity planning.** Helps you analyze historical usage patterns to aid in forecasting, planning, and infrastructure scaling.
+- **Security monitoring**. Detects and responds to security threats, breaches, and suspicious activities to help maintain your system's security posture.
+- **Compliance and governance monitoring**. Can monitor adherence to standards, regulations, and policies.
 
-Azure Monitor provides a broad set of capabilities with a varying set of prerequisites depending on your specific monitoring goal. On one end of the spectrum, getting started with Azure Monitor metrics requires no incoming experience, because metric collection is on by default for Azure resources. Viewing metrics in Metric Explorer is straightforward in the Azure portal UI. However, when using Azure Monitor Log Analytics for trend analysis and pattern recognition, familiarity with query languages is helpful.
+## Overview of Azure Monitor
 
-Key aspects of Azure Monitor:
+When you run applications built on various services and resources, a key element of monitoring is the ability to relate your applications' performance and health to the components they're built on. This *observability* lets you analyze and troubleshoot application issues effectively.
 
-* Azure Monitor can collect performance and availability telemetry for all of the layers in your stack from applications, infrastructure, the Azure platform, and any custom sources you integrate.
+Azure Monitor provides features and tools for collecting, managing, and analyzing IT data from all of your Azure, other cloud, and on-premises resources. The following diagram shows a high-level architectural view of Azure Monitor.
 
-* The collected data is stored in one of two data stores: Azure Monitor Metrics for numerical time-series values and Azure Monitor Logs for storing log data.
+:::image type="content" source="../media/overview-simple.png" alt-text="Diagram that shows an overview of Azure Monitor with data sources on the left and features that use the collected data at right." border="false" lightbox="../media/overview-blowout.svg":::
 
-* Azure Monitor metrics are automatically collected and stored for Azure resources, but user configuration is required to send and store resource logs in Azure Monitor Logs.
+### Data collection and storage
 
-* Azure Monitor includes Insights, which are out-of-the box monitoring and troubleshooting experiences for Azure resources. Available Insights include Azure Monitor VM insights, Azure Monitor application insights, and Azure Monitor container insights.
+As soon as you add resources to an Azure subscription, Azure Monitor starts collecting data about the resources. Azure Monitor provides the following capabilities for collecting, storing, and managing monitoring data:
 
-* You can use Azure Monitor to visualize data with workbooks and dashboards, as well as analyze data with custom charts and analytics. Azure Monitor lets you receive notifications and take automated actions based on performance and availability criteria.
+- Native monitoring of your entire Azure deployment.
+- Tools such as data collection agents and APIs for monitoring all layers in your stack, including applications and infrastructure, in and outside of Azure.
+- Integration with the Azure Event Hubs data streaming service.
+- Data transformations during ingestion to let you filter out data you don't need.
+- Configurable data retention periods, archiving, and restore options.
+- Pricing tier discounts based on data volume.
+- A low-cost Basic logs plan for collecting and storing high-volume verbose logs you use for debugging, troubleshooting, and auditing, but not for analytics and alerts.
 
-:::image type="content" source="../media/azure-monitor.png" alt-text="Diagram of Azure monitor capabilities showing data sources feeding into metrics and logs, providing insights, visualizations, and analysis options from the data collected.":::
+### Data analysis and response
 
-## How to monitor your web application
+Azure Monitor offers a broad set of tools and capabilities to help you analyze and gain insights from your monitoring data. Azure Monitor includes the following features to support data analysis and response:
 
-Evaluating performance of a web application requires monitoring where and when the web app experiences demand. For the back-to-school campaign, we want to evaluate the impact on user demand. Azure Monitor can collect performance and availability telemetry for all of the layers in your stack, from applications, infrastructure, the Azure platform, and any custom sources you integrate.
+- An easy-to-use portal UI that lets you view, filter, and manipulate monitoring data.
+- Kusto Query Language (KQL), a powerful query language that's optimized for ad-hoc queries, data exploration, and near-real time analysis of large volumes of data streamed from multiple sources.
+- A range of tools for customizing your analysis, visualizations, alerting, and responses.
+- Out-of-the-box recommended alerts.
+- Ready-to-use monitoring experiences with advanced, built-in analysis and visualizations of your deployment.
+- Autoscale to automatically add and remove resources according to the load on your application.
+- Native machine learning and artificial intelligence capabilities that help you detect and respond to anomalies.
 
-Azure Monitor is enabled by default. As soon as you create an Azure subscription and start adding resources such as web apps, Azure Monitor starts collecting data. Activity logs record when resources are created or modified. You can use the information in the activity logs to trace the history of the resource creation and modifications. Metrics tell you how the resource is performing and any other resources that it's consuming.
+### Alerts, workbooks, and visualizations
 
-As an example, the following **Contoso-web-sales Metrics** chart demonstrates the ability to select the **Requests** metric for our web app. The chart displays the sum aggregation of the requests for the web app, using a line chart format. The list of metrics is available automatically for your resource. There's no requirement to install other software or services. You can find **Metrics** under the **Monitoring** category in each resource panel that you have in your Azure subscription.
+Interactive monitoring is one way to monitor your application. Another option is to configure alerts to send text messages or email to a person or team for further investigation, or to trigger response actions in certain situations.
 
-:::image type="content" source="../media/web-app-metrics.png" alt-text="Screenshot of the Monitoring option selected in the Azure portal for a web app, showing chart of requests for the web app.":::
+Azure Monitor workbooks provide a flexible canvas for analyzing data and creating rich visual reports in the Azure portal. Workbooks can tap into multiple Azure data sources and combine them into unified interactive experiences. You can use the ready-made workbooks that Azure Monitor provides, or create your own workbooks from predefined templates.
 
-### Other monitoring considerations
+The following image shows three types of workbooks that display logged data in different chart and table formats.
 
-Interactive monitoring is just one way to use Azure Monitor's features. Many situations can benefit from a strategy involving alerts. You can configure alerts that will proactively respond to critical conditions. These alerts can be sent over text message or email to have a person investigate. You may also consider configurations that can take actions based on an alert. By using **action groups**, which contain a set of recipients and actions to take, you can simplify administration across multiple rules.
+:::image type="content" source="../media/workbooks.png" alt-text="Screenshots of three workbooks displaying logged data in various chart and table formats." border="false":::
 
-Azure Monitor has its own features for visualizing monitoring data and uses other Azure services for publishing it to different audiences. Azure dashboards allow you to combine different kinds of data into a single pane in the Azure portal.
+You can add the visualizations you create in Azure Monitor to Azure dashboards, which let you combine different kinds of data into a single pane in the Azure portal.
 
-:::image type="content" source="../media/dashboard.png" alt-text="Screenshot of an Azure dashboard displaying metrics in graph format for application performance metrics on the left and security incidents on the right.":::
+:::image type="content" source="../media/dashboard.png" alt-text="Screenshot of an Azure dashboard that displays metrics in graph format for application performance metrics at left and security incidents at right.":::
 
-Workbooks provide a flexible canvas for data analysis and creating rich visual reports in the Azure portal. They allow you to tap into multiple data sources from across Azure and combine them into unified interactive experiences. You can use workbooks provided with Insights or create your own from predefined templates.
-
-:::image type="content" source="../media/workbooks.png" alt-text="Screenshots of three workbooks displaying logged data in various chart formats and table formats.":::

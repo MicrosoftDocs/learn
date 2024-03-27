@@ -14,15 +14,12 @@ Diagram of a flowchart showing steps to authenticate the client. The flowchart t
 
 The key tasks you need to do are:
 
-01. Create an Azure Cosmos DB account and retrieve the connection string.
-01. Create a .NET console application and add a package reference to the [Microsoft.Azure.Cosmos](https://www.nuget.org/packages/Microsoft.Azure.Cosmos) SDK.
-01. Create database and container resources.
-01. Add a single item as a simple operation.
-01. Create a transactional batch to add four items.
-01. Execute and observe the results of a query.
-
-> [!IMPORTANT]
-> All steps in this project are designed to be completed within Visual Studio Code either locally or through GitHub Codespaces.
+1. Create an Azure Cosmos DB account and retrieve the connection string.
+1. Create a .NET console application and add a package reference to the [Microsoft.Azure.Cosmos](https://www.nuget.org/packages/Microsoft.Azure.Cosmos) SDK.
+1. Create database and container resources.
+1. Add a single item as a simple operation.
+1. Create a transactional batch to add four items.
+1. Execute and observe the results of a query.
 
 ## Setup
 
@@ -32,96 +29,107 @@ To complete this project, you need an API for NoSQL account.
 
 The API for NoSQL account is used to store the data you create in this project and to execute queries. This section guides you through the steps to creating a new account using the Azure CLI directly in the Azure Cloud Shell terminal.
 
-01. Create a new shell variable named **suffix** with a random number and then output the number to the console.
+1. Create a new shell variable named **suffix** with a random number. Create a new API for NoSQL account within the **<rgn>[sandbox resource group name]</rgn>** resource group.
 
     ```azurecli
     let suffix=$RANDOM*$RANDOM
-    
-    echo $suffix
-    ```
 
-01. Create another shell variable named **accountName** that appends the randomly generated suffix to `mslearn-` and then outputs the result.
-
-    ```azurecli
-    accountName="mslearn-$suffix"
-    
-    echo $accountName
-    ```
-
-01. Create two more shell variables for `resourceGroup` and `location` with the values prescribed here.
-
-    ```azurecli
-    resourceGroup="<rgn>[sandbox resource group name]</rgn>"
-    location="westus"
+    az cosmosdb create \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --name "mslearn-$suffix" \
+        --locations "regionName=westus"
     ```
 
     > [!IMPORTANT]
-    > The sandbox will automatically create a resource group for you with the name specified in this code sample.
+    > This resource group was already created by the sandbox.
 
-01. Create a new API for NoSQL account using the three shell variables you created.
+1. Wait for the command to complete once the new account is created. Creating a new account can take a couple of minutes.
 
-    ```azurecli
-    az cosmosdb create \
-        --resource-group $resourceGroup \
-        --name $accountName \
-        --locations regionName=$location
-    ```
-
-01. Wait for the command to complete once the new account is created. Creating a new account can take a couple of minutes.
+    > [!TIP]
+    > You can navigate to your new API for NoSQL account using the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
 ### Get account connection string
 
-Now that you have an API for NoSQL account, you can use the `az cosmosdb keys list` command from the Azure CLI to get credentials. In this section, you filter the output of the command to only return a single connection string.
+Now that you have an API for NoSQL account, you can use the `az cosmosdb keys list` command from the Azure CLI to get the account's credentials. In this section, you filter the output of the command to only return a single connection string.
 
-01. First, list all of the credentials available for this account. Use the `--type` parameter to only return connection strings.
+1. First, get the name of the most recently created API for NoSQL accounts.
 
     ```azurecli
-    az cosmosdb keys list \
+    let resourceGroup="<rgn>[sandbox resource group name]</rgn>"
+    
+    az cosmosdb list \
         --resource-group $resourceGroup \
-        --name $accountName \
-        --type connection-strings \
+        --query "sort_by([].{name:name,created:systemData.createdAt}, &created)" \
         --output table
     ```
 
-01. Now, add the `--query` parameter to filter to specifically the `Primary SQL Connection String`.
+1. Now, get the `Primary SQL Connection String` credential for the first account from the list of recently created accounts.
 
     ```azurecli
+    let resourceGroup="<rgn>[sandbox resource group name]</rgn>"
+
     az cosmosdb keys list \
         --resource-group $resourceGroup \
-        --name $accountName \
+        --name $(az cosmosdb list \
+            --resource-group $resourceGroup \
+            --query "sort_by([].{name:name,created:systemData.createdAt}, &created)[0].name" \
+            --output tsv) \
         --type connection-strings \
         --query "connectionStrings[?description=='Primary SQL Connection String'].connectionString" \
         --output tsv
     ```
 
-01. Record the value of this connection string. You use the connection string later in this project to connect to this account.
+1. Record the value of this connection string. You use the connection string later in this project to connect to this account.
 
 ### Configure dev environment
 
-All your development work in this project is done directly in [Visual Studio Code](https://code.visualstudio.com). You have the option of using Visual Studio Code locally or with GitHub Codespaces.
+A development container environment is available with all dependencies required to complete every exercise in this project. You can run the development container in GitHub Codespaces or locally using Visual Studio Code.
 
-#### [GitHub Codespaces](#tab/github-codespaces)
+#### [Develop in browser](#tab/github-codespaces)
 
-GitHub Codespaces runs your development environment in a container hosted by GitHub. For the most straightforward development environment, use GitHub Codespaces so that you have the correct developer tools and dependencies preinstalled on your machine to complete this training module.
+GitHub Codespaces runs a development container managed by GitHub with Visual Studio Code for the Web as the browser-based user interface. For the most straightforward development environment, use GitHub Codespaces so that you have the correct developer tools and dependencies preinstalled to complete this training module.
 
-1. Create a new GitHub Codespace on the `main` branch of the [`azure-samples/dotnet-env-azure-cosmos-db`](https://github.com/azure-samples/dotnet-env-azure-cosmos-db) GitHub repository.
+> [!IMPORTANT]
+> All GitHub accounts can use Codespaces for up to 60 hours free each month with 2 core instances.
 
-    > [!div class="nextstepaction"]
-    > [Open this project in GitHub Codespaces](https://github.com/codespaces/new?azure-portal=true&hide_repo_select=true&ref=main&repo=621314195)
+1. Create a new GitHub Codespace using the `azure-samples/cosmos-db-dotnet` template.
+
+    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/azure-samples/cosmos-db-dotnet?quickstart=1&azure-portal=true)
+
+1. On the **Create codespace** page, review the codespace configuration settings, and then select **Create new codespace**.
 
 1. Wait for the codespace to start. This startup process can take a few minutes.
 
 1. Open a new terminal in the codespace.
 
-    > [!TIP]
-    > You can use the main menu to navigate to the **Terminal** menu option and then select the **New Terminal** option.
-    >
-    > :::image type="content" source="../media/open-terminal-option.png" lightbox="../media/open-terminal-option.png" alt-text="Screenshot of the codespaces menu option to open a new terminal.":::
+1. Validate that .NET 8 is installed in your environment:
 
-#### [Visual Studio Code](#tab/visual-studio-code)
+    ```bash
+    dotnet --list-sdks
+    ```
 
-Optionally, you can walk through this training module using Visual Studio Code installed on your local machine. To run this project locally, you must have the following software installed:
+1. Close the terminal.
 
-- [.NET 7 or later](https://dotnet.microsoft.com/download)
+The remaining exercises in this project take place in the context of this development container.
+
+#### [Develop locally](#tab/visual-studio-code)
+
+The Dev Containers extension for Visual Studio Code requires Docker to be installed on your local machine. The extension hosts the development container locally using the Docker host with the correct developer tools and dependencies preinstalled to complete this training module.
+
+1. Open the `azure-samples/cosmos-db-dotnet` template repository from GitHub within Visual Studio Code.
+
+    [![Open in Dev Container](https://img.shields.io/static/v1?style=for-the-badge&label=Open+in+Visual+Studio+Code&message=Dev+container&color=blue&logo=visualstudiocode)](vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/azure-samples/cosmos-db-dotnet)
+
+1. Open a new terminal.
+
+1. Validate that .NET 8 is installed in your environment:
+
+    ```bash
+    dotnet --list-sdks
+    ```
+
+1. Close the terminal.
+
+The remaining exercises in this project take place in the context of this development container.
 
 ---

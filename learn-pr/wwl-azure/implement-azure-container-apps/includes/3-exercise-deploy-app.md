@@ -1,4 +1,5 @@
 
+
 In this exercise you create a secure Container Apps environment and deploy container app.
 
 ## Prerequisites
@@ -38,12 +39,6 @@ In this exercise you create a secure Container Apps environment and deploy conta
 
     > [!NOTE]
     > Registering the `Microsoft.App` namespace and `Microsoft.OperationalInsights` can each take a few minutes to complete. 
-
-1. Create a new resource group with the name **az204-aci-rg** so that it's easier to identify and clean up these resources when you're finished with the module. Replace `<myLocation>` with a region near you.
-
-    ```bash
-    az group create --name az204-aci-rg --location <myLocation>
-    ```
 
 1. Set environment variables used later in this exercise. Replace `<location>` with a region near you.
 

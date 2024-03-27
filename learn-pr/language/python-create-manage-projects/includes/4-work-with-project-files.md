@@ -45,10 +45,10 @@ You can check for the latest available version of a package and install that as 
 > [!IMPORTANT]
 > Check that any new version is compatible with other dependencies that you might be using.
 
-To install a specific version, use `===` between the package name and the version number. Here's an example command:
+To install a specific version, use `==` between the package name and the version number. Here's an example command:
 
 ```console
-pip install python-dateutil===1.4
+pip install python-dateutil==1.4
 ```
 
 The preceding command would install version 1.4, if it's available.
@@ -57,14 +57,14 @@ The preceding command would install version 1.4, if it's available.
 There are many ways to find out what versions are available. One way is to specify a version that you know *doesn't* exist. The resulting error will tell you what version does exist. Here's an example command that uses the nonsense string `randomwords`:
 
 ```console
-pip install python-dateutil===randomwords
+pip install python-dateutil==randomwords
 ```
 
 Here's the resulting output, with a list of existing versions:
 
 ```output
-ERROR: Could not find a version that satisfies the requirement python-dateutil===randomwords (from versions: 1.4, 1.4.1, 1.5, 2.1, 2.2, 2.3, 2.4.0, 2.4.1, 2.4.1.post1, 2.4.2, 2.5.0, 2.5.1, 2.5.2, 2.5.3, 2.6.0, 2.6.1, 2.7.0, 2.7.1, 2.7.2, 2.7.3, 2.7.4, 2.7.5, 2.8.0, 2.8.1, 2.8.2)
-ERROR: No matching distribution found for python-dateutil===randomwords
+ERROR: Could not find a version that satisfies the requirement python-dateutil==randomwords (from versions: 1.4, 1.4.1, 1.5, 2.1, 2.2, 2.3, 2.4.0, 2.4.1, 2.4.1.post1, 2.4.2, 2.5.0, 2.5.1, 2.5.2, 2.5.3, 2.6.0, 2.6.1, 2.7.0, 2.7.1, 2.7.2, 2.7.3, 2.7.4, 2.7.5, 2.8.0, 2.8.1, 2.8.2)
+ERROR: No matching distribution found for python-dateutil==randomwords
 ```
 
 Another way is to call `pip freeze`: 
@@ -80,7 +80,7 @@ python-dateutil==2.8.2
 six==1.16.0
 ```
 
-The preceding example shows that version 2.8.2 is installed. If you want to change that to an earlier version (because another package that you have requires it), you can use a command like this example: `pip install python-dateutil===2.8.0`.
+The preceding example shows that version 2.8.2 is installed. If you want to change that to an earlier version (because another package that you have requires it), you can use a command like this example: `pip install python-dateutil==2.8.0`.
 
 ### Upgrade a package
 

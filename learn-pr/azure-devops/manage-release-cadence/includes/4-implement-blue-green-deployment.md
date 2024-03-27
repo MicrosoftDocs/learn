@@ -72,7 +72,7 @@ To add the slot:
 
 1. As an optional step, go to your site in a browser. You see the default home page because you haven't yet deployed your code to this slot.
 
-    :::image type="content" source="../../shared/media/app-service-default.png" alt-text="Screenshot of the default home page in Azure App Service.":::
+    :::image type="content" source="../media/4-app-service-default-tailspin.png" alt-text="Screenshot of the default home page in Azure App Service.":::
 
 By default, a deployment slot is accessible from the internet. In practice, you could configure an Azure virtual network that places your *swap* slot in a network that's not routable from the internet but that only your team can access. Your *production* slot would remain reachable from the internet.
 

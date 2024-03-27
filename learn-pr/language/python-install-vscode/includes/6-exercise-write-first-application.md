@@ -4,7 +4,9 @@ With Python and Python tools installed, you can create your first Python applica
 
 Many projects start with an empty folder, which is how you'll start yours.
 
-1. Using a command prompt or terminal, create an empty folder called "hello-world", navigate into it, and open VS Code (code) in that folder (.) by entering the following commands:
+1. In Visual Studio Code, open a new Terminal window by selecting **Terminal** > **New Terminal**.
+
+1. Create an empty folder called "hello-world", navigate into it, and open VS Code (code) in that folder (.) by entering the following commands:
 
     ::: zone pivot="windows"
 

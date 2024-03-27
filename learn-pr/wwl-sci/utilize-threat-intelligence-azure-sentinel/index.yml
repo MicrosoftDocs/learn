@@ -6,8 +6,8 @@ metadata:
   ms.date: 06/21/2022
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: microsoft-sentinel
 title: Utilize threat intelligence in Microsoft Sentinel
 summary: Learn how the Microsoft Sentinel Threat Intelligence page enables you to manage threat indicators.
 abstract: |

@@ -7,8 +7,7 @@ metadata:
   ms.date: 04/06/2023
   author: sbkuehn
   ms.author: shkuehn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
   ms.contributors:
   - shkuehn-01272022
   ms.custom:
@@ -37,5 +36,6 @@ modules:
 - learn.migrate-vmware-workloads-on-premises-azure-vmware-solution
 - learn.azure.deploy-disaster-recovery-vmware-srm-azure-vmware-solution
 - learn.azure.azure-vmware-solution
+- learn.azure-netapp-files-with-vmware-solution
 trophy:
   uid: learn.run-vmware-workloads-azure-vmware-solution.trophy

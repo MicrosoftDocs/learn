@@ -1,6 +1,6 @@
 Your company plans to migrate most of its on-premises resources to Azure. However, a small datacenter must remain on-premises for integration into the Azure network. The architectural model needs to consider using Azure network connectivity for several satellite offices. You want to use a hybrid network architecture that grants access to both your on-premises and cloud-based resources.
 
-To handle the migration, you'll produce a network integration plan for Azure that includes a selection of the best hybrid network options available in Azure. The options must meet the organization's requirements for hybrid connectivity.
+To handle the migration, you produce a network integration plan for Azure that includes a selection of the best hybrid network options available in Azure. The options must meet the organization's requirements for hybrid connectivity.
 
 In this unit, you explore on-premises connectivity on the Azure platform. You also get an overview of Azure Virtual Network, and see how to use Azure VPN Gateway to secure traffic to an on-premises network.
 
@@ -80,9 +80,9 @@ You can connect your virtual networks in any of several ways. You can use Azure 
 
 When you're working toward integrating your on-premises network with Azure, you need a bridge between them. VPN Gateway is an Azure service that provides this functionality. A VPN gateway can send encrypted traffic between the two networks. VPN gateways support multiple connections, which enable them to route VPN tunnels that use any available bandwidth. A virtual network can have only one gateway assigned. VPN gateways can also be used for connections between virtual networks in Azure.
 
-Implementing a VPN gateway requires you to deploy two or more virtual machines to the subnet that you create when you set up the virtual network. In this instance, the subnet is also called the *gateway subnet*. Each virtual machine is assigned a default configuration for routing and gateway services, explicit to the provisioned gateway. You can't configure these virtual machines directly.
+When you implement a VPN gateway, you're required to deploy two or more virtual machines to the subnet you created when you set up the virtual network. In this instance, the subnet is also called the *gateway subnet*. Each virtual machine is assigned a default configuration for routing and gateway services, explicit to the provisioned gateway. You can't configure these virtual machines directly.
 
-When you create a gateway, several topologies are available. These topologies, also known as *gateway types*, determine what's configured and the expected connection type.
+When you create a gateway, several topologies are available. These topologies, also known as *gateway types*, determine what elements are configured and the expected connection type.
 
 #### Site-to-site
 
@@ -94,7 +94,7 @@ A multisite connection is similar to a site-to-site connection, but with a sligh
 
 #### Point-to-site
 
-A point-to-site connection is suited to a remote individual client device that connects to your network. You must authenticate the client device either through Azure Active Directory or by using Azure certificate authentication. This model suits home working scenarios.
+A point-to-site connection is suited to a remote individual client device that connects to your network. You must authenticate the client device either through Microsoft Entra ID or by using Azure certificate authentication. This model suits home working scenarios.
 
 #### Network-to-network
 
@@ -102,7 +102,7 @@ You use a network-to-network connection to create connections between multiple A
 
 ### ExpressRoute
 
-ExpressRoute creates a direct connection between your on-premises network and the Azure virtual network that doesn't use the internet. You use ExpressRoute to seamlessly extend your local network across to the Azure virtual network space. Many third-party connectivity providers offer the ExpressRoute service. There are three different ExpressRoute connection types:
+ExpressRoute creates a direct connection between your on-premises network and the Azure virtual network that doesn't use the internet. You use ExpressRoute to seamlessly extend your local network across to the Azure virtual network space. Many non-Microsoft connectivity providers offer the ExpressRoute service. There are three different ExpressRoute connection types:
 
 - CloudExchange colocation
 - Point-to-point Ethernet connection
@@ -112,7 +112,7 @@ ExpressRoute creates a direct connection between your on-premises network and th
 
 ### Peering
 
-Virtual networks can peer across subscriptions and Azure regions. After the virtual networks are peered, resources in these networks communicate with each other as if they're in the same network. The traffic is routed between resources in a peered virtual network by using only private IP addresses. Routing is achieved by routing traffic through the Azure network and keeping the connection private as part of the Azure backbone network. The backbone network provides low latency and high-bandwidth network connections.
+Virtual networks can peer across subscriptions and Azure regions. After the virtual networks are peered, resources in these networks communicate with each other as if they're in the same network. The traffic is routed between resources by using only private IP addresses. A peered virtual network routes traffic through the Azure network and keeps the connection private as part of the Azure backbone network. The backbone network provides low latency and high-bandwidth network connections.
 
 ## Site-to-site VPN gateway reference architecture
 
@@ -125,18 +125,18 @@ The architecture features several components:
 - The **on-premises network** represents your on-premises Active Directory and any data or resources.
 - The **gateway** is responsible for sending encrypted traffic to a virtual IP address when it uses a public connection.
 - The **Azure virtual network** holds all your cloud applications and any Azure VPN gateway components.
-- An **Azure VPN gateway** provides the encrypted link between the Azure virtual network and your on-premises network. An Azure VPN gateway consists of these elements:
+- An **Azure VPN gateway** provides the encrypted link between the Azure virtual network and your on-premises network. An Azure VPN gateway consists of these elements.
   - Virtual network gateway
   - Local network gateway
   - Connection
   - Gateway subnet
-- **Cloud applications** are the ones you've made available through Azure.
+- **Cloud applications** are the ones you made available through Azure.
 - An **internal load balancer**, located in the front end, routes cloud traffic to the correct cloud-based application or resource.
 
 Using this architecture offers several benefits, including:
 
-- Configuration and maintenance are simplified.
-- Having a VPN gateway helps ensure that all data and traffic are encrypted between the on-premises gateway and the Azure gateway.
+- The configuration and maintenance are simplified.
+- The use of a VPN gateway helps ensure that all data and traffic are encrypted between the on-premises gateway and the Azure gateway.
 - The architecture can be scaled and extended to meet your organization's networking needs.
 
 This architecture isn't applicable in all situations, because it uses an existing internet connection as the link between the two gateway points. Bandwidth constraints can cause latency issues that result from reuse of the existing infrastructure.

@@ -2,13 +2,13 @@ Woodgrove Bank's contactless payment application needs to be available all the t
 
 ## Implicit availability
 
-Azure Cosmos DB for PostgreSQL has its own locally redundant storage (LRS) with three synchronous replicas maintained by Azure Storage. If there's a replica failure, Azure Storage will recreate the replica. This functionality is a feature of Azure Cosmos DB for PostgreSQL.
+Azure Cosmos DB for PostgreSQL has its own locally redundant storage (LRS) with three synchronous replicas maintained by Azure Storage. If there's a replica failure, Azure Storage recreates the replica. This functionality is a feature of Azure Cosmos DB for PostgreSQL.
 
 ## Considerations
 
-Standby replicas are created for each node in the cluster when enabling high availability in the Azure Cosmos DB for PostgreSQL account. The replicas double the number of servers in the group, which will also double the cost of the service.
+Standby replicas are created for each node in the cluster when enabling high availability in the Azure Cosmos DB for PostgreSQL account. The replicas double the number of servers in the group, which also doubles the cost of the service.
 
-It takes a few minutes to fail over. However, when high availability is enabled, the failover is automatically initiated and managed by Azure Cosmos DB for PostgreSQL. There's no need to manually manage failovers.
+It takes a few minutes to fail over. However, when high availability is enabled, Azure Cosmos DB for PostgreSQL automatically initiates the failover and manages it. There's no need to manually manage failovers.
 
 Standby replicas are provisioned for a different availability zone than the primary cluster. The portal displays the availability zone for the cluster in addition to the High Availability status.
 
@@ -20,13 +20,13 @@ As a database administrator, you sometimes have to talk with the developers on p
 
 There are three stages to recovering in a high availability setup in Azure Cosmos DB for PostgreSQL.
 
-1. **Detection** - Periodic health checks are run on every now, and after the fourth failed check, the node is declared down.
+1. **Detection** - Periodic health checks are run on every node, and after the fourth failed check, the node is declared down.
 1. **Failover** - Once a node is declared down, Azure Cosmos DB for PostgreSQL promotes the standby to primary status. Once the standby is promoted to primary, a new standby is created.
 1. **Full recovery** - Once all data has been replicated between the newly promoted node and the new standby, the node has reached full recovery.
 
 ## High availability states
 
-The High Availability state appears in the Overview for each of the nodes in the cluster. The state you observe will come from this list of values:
+The High Availability state appears in the Overview for each of the nodes in the cluster. The state you observe is one of the following values:
 
 * **No**: High Availability isn't enabled.
 * **Healthy**: The node is fully replicated to its standby.

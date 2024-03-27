@@ -1,8 +1,8 @@
-To train an image classification model with the Custom Vision service, you can use the Custom Vision portal, the Custom Vision REST API or SDK, or a combination of both approaches.
+To train an image classification model with the Azure AI Custom Vision service, you can use the Azure AI Custom Vision portal, the Azure AI Custom Vision REST API or SDK, or a combination of both approaches.
 
-In most cases, you'll typically use the Custom Vision portal to train your model.
+In most cases, you'll typically use the Azure AI Custom Vision portal to train your model.
 
-![The Custom Vision portal](../media/custom-vision-portal.png)
+![The Azure AI Custom Vision portal](../media/custom-vision-portal.png)
 
 The portal provides a graphical interface that you can use to:
 

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.permissions-management.explore-features-of-permissions-management.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary of the goal of this module.
+  ms.date: 09/27/2023
+  author: jenniferf-skc
+  ms.author: jfields
+  ms.topic: unit
+  ms.service: multicloud-permissions-management 
+durationInMinutes: 2
+content: |
+  [!include[](includes/15-summary.md)]

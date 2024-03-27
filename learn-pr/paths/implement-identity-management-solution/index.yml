@@ -2,17 +2,16 @@
 uid: learn.wwl.implement-identity-management-solution
 metadata:
   title: 'SC-300: Implement an identity management solution'
-  description: Learn to create and manage your initial Azure Active Directory (Azure AD) implementation and configure the users, groups, and external identities you‘ll use to run your solution. Aligned to SC-300 Exam.
+  description: Learn to create and manage your initial Microsoft Entra implementation and configure the users, groups, and external identities you‘ll use to run your solution. Aligned to SC-300 Exam.
   ms.date: 02/03/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: 'SC-300: Implement an identity management solution'
 prerequisites: |
   None
 summary: |
-  Learn to create and manage your initial Azure Active Directory (Azure AD) implementation and configure the users, groups, and external identities you’ll use to run your solution. Aligned to SC-300 Exam.
+  Learn to create and manage your initial Microsoft Entra implementation and configure the users, groups, and external identities you’ll use to run your solution. Aligned to SC-300 Exam.
 iconUrl: /training/achievements/implement-an-identity-management-solution.svg
 levels:
 - intermediate
@@ -22,10 +21,9 @@ roles:
 - security-engineer
 products:
 - azure
-- azure-active-directory
-- azure-active-directory-b2c
-- azure-active-directory-domain
-- azure-active-directory-connect
+- entra-id
+- entra-external-id
+- entra
 - entra-workload-identities
 subjects:
 - identity-access

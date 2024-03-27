@@ -6,9 +6,9 @@ metadata:
   ms.date: 01/14/2022
   author: GitHubber17
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom: team=nextgen
+  ms.devlang: rust
 title: Test conditions with if/else expressions in Rust
 summary: Explore Rust compound data types like arrays and vectors. Discover how to use if/else statements to test conditions.
 abstract:  |
@@ -27,8 +27,6 @@ roles:
 - developer
 products:
 - azure
-subjects:
-- development-tools
 units:
 - learn.language.rust-if-else-expressions.0-introduction
 - learn.language.rust-if-else-expressions.1-arrays

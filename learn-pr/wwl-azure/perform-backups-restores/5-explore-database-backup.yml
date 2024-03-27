@@ -4,11 +4,10 @@ title: Explore database backup
 metadata:
   title: Explore database backup
   description: "Explore database backup"
-  ms.date: 04/25/2023
+  ms.date: 10/27/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/5-explore-database-backup.md)]

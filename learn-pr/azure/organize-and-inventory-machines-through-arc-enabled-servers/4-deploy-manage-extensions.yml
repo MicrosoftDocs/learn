@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.organize-and-inventory-machines-through-arc-enabled-servers.4-deploy-manage-extensions
+title: Deploy and manage virtual machine extensions through Azure Policy
+metadata:
+  unitType: learning-content
+  title: Deploy and manage virtual machines extensions through Azure Policy
+  description: "Describes how to deploy and manage virtual machine extensions through Azure Policy."
+  ms.date: 12/01/2023
+  author: johnmarco
+  ms.author: johnmarc
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-deploy-manage-extensions.md)]

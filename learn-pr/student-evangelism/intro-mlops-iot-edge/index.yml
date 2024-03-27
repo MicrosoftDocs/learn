@@ -2,13 +2,13 @@
 uid: learn.oxford.intro-mlops-iot-edge
 metadata:
   title: "Introduction to MLOps for IoT Edge"
-  description: "University of Oxford"
-  ms.date: 03/17/2023
-  author: leestott
+  description: "Analyze the significance of MLOps in the development and deployment of machine learning models for IoT Edge. Describe the components of the MLOps pipeline and show how you can combine them to create models that can be retrained automatically for IoT Edge devices."
+  ms.date: 11/28/2023
+  author: PatAltimore
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
+  ms.topic: module
   ms.custom: team=nextgen
+  ms.service: iot-edge
 title: "Introduction to MLOps for IoT Edge"
 summary: "Analyze the significance of MLOps in the development and deployment of machine learning models for IoT Edge. Describe the components of the MLOps pipeline and show how you can combine them to create models that can be retrained automatically for IoT Edge devices."
 abstract: |
@@ -16,7 +16,6 @@ abstract: |
     - Evaluate whether MLOps is appropriate to automate your machine learning model building and deployment processes for edge devices.
     - Describe how the MLOps pipeline and components work together to deploy and retrain machine learning models on edge devices.
 
-    "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
 prerequisites: |
     - Basic knowledge of DevOps
     - Basic knowledge of IoT Edge

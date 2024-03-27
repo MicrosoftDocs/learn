@@ -3,11 +3,11 @@ uid: learn.wwl.use-prebuilt-form-recognizer-models
 metadata:
   title: Use prebuilt Form Recognizer models
   description: "Learn what data you can analyze by choosing prebuilt Forms Analyzer models and how to deploy these models in a Form Analyzer solution."
-  ms.date: 11/01/2022
+  ms.date: 02/06/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: azure
 title: Use prebuilt Form Recognizer models
 summary: Learn what data you can analyze by choosing prebuilt Forms Analyzer models and how to deploy these models in a Form Analyzer solution.
 abstract: |
@@ -23,8 +23,7 @@ levels:
 roles:
 - ai-engineer
 products:
-- azure-cognitive-services
-- azure-form-recognizer
+- ai-services
 subjects:
 - artificial-intelligence
 units:

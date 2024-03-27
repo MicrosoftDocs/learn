@@ -21,9 +21,9 @@ In this module, you will:
 
 ## Prerequisites
 
-- Intermediate knowledge of .NET.
-- Basic understanding of Raspberry Pi and Raspberry Pi OS.
-- .NET SDK 7 or later.
+- Intermediate knowledge of .NET
+- Basic understanding of Raspberry Pi and Raspberry Pi OS
+- .NET SDK 7 or later
 - The following hardware components:
   - A Raspberry Pi device (2 or greater) configured as described in the *Important* callout below.
   - BME280 humidity/barometric pressure/temperature sensor breakout ([example](https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout))
@@ -33,15 +33,15 @@ In this module, you will:
   - Full-sized breadboard ([example](https://www.adafruit.com/product/239))
   - Raspberry Pi GPIO breakout board ([example](https://www.adafruit.com/product/2028))
 
-All of the required hardware components are available from various retailers. Most of the components can be found bundled in convenient kits.
+All of the required hardware components are available from various retailers. You can find most of the components bundled in convenient kits.
 
 > [!IMPORTANT]
-> The .NET IoT Libraries support a wide range of hardware platforms. Raspberry Pi was selected for this module due to its wide availability and affordable price point.
+> The .NET IoT Libraries support a wide range of hardware platforms. We selected Raspberry Pi for this module due to its wide availability and affordable price point.
 >
 > Ensure your device has a recent version of [Raspberry Pi OS](https://www.raspberrypi.com/documentation/computers/getting-started.html) installed. Note the following:
 >
-> - A 64-bit version of Raspberry Pi OS is recommended.
-> - A desktop environment is not required, so you may select the *Lite* variant to conserve space and bandwidth.
+> - We recommend a 64-bit version of Raspberry Pi OS.
+> - A desktop environment isn't required, so you can select the *Lite* variant to conserve space and bandwidth.
 > - The 64-bit and Lite variants are located under **Raspberry Pi OS (Other)** in Raspberry Pi Imager's list of available operating systems.
 >
 > After installing Raspberry Pi OS, use the `raspi-config` command to ensure the following two services are enabled:
@@ -49,13 +49,13 @@ All of the required hardware components are available from various retailers. Mo
 > - `SSH`
 > - `I2C`
 >
-> For more information, see the [Raspberry Pi documentation](https://www.raspberrypi.org/documentation/configuration/raspi-config.md).
+> For more information, see the [Raspberry Pi documentation](https://www.raspberrypi.com/documentation/computers/configuration.html).
 
 ## Learn the scenario
 
 Suppose you manage a gourmet cheese making company in a southern location. The company is proud of its cheese, and is careful to maintain the perfect temperature and humidity as it ages. To maintain the perfect conditions, they age the cheese in a natural cave.
 
-  [![Close up photograph of matured cheese.](../media/cheese-rect.png)](../media/cheese-rect.png#lightbox)
+  [![Photograph, close-up, of matured cheese.](../media/cheese-rect.png)](../media/cheese-rect.png#lightbox)
 
 Your company's accepted ideal temperature for aging cheese is 50°F (10°C), with up to ±5°F (2.78°C) acceptable variance. Humidity is also important. A humidity level between 75-95% is acceptable.
 

@@ -6,7 +6,7 @@ Recall that you've looked at arbitrary rows of data to get a sense of its struct
 
 If you remember, the meteorological data example has quite a few columns. Not all of these columns are meaningful for this exploration. You'll choose just a few columns to view. You'll use the `project` operator to define which columns you want to see in the output. Column names are separated by commas.
 
-1. Run the following query. This query names the columns to return, and their order, within the `project` operator.
+1. Run the following query. This query names the columns to return and their order within the `project` operator.
     
     <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKCjKz0pNLlEAC4RUFqTqKASXJJYAKZfE3MT01ICi/ILUopJKGN8ZyC/WUfDMyyotykwtdsksAupG8D3zUsAiQJNLErNTFQwNAObMrGFvAAAA" target="_blank">Run the query</a>
 
@@ -16,7 +16,7 @@ If you remember, the meteorological data example has quite a few columns. Not al
     | take 10
     ```
 
-1. You should get results that look like the following image: 
+1. You should get results that look like the following image:
 
     :::image type="content" source="../media/4-project-operator.png" alt-text="Screenshot of project operator results with six columns.":::
 
@@ -54,7 +54,7 @@ For example, there are other countries/regions with states. It might be helpful 
     | take 10
     ```
 
-1.  You should get results that look like the following image:
+1. You should get results that look like the following image:
 
     :::image type="content" source="../media/4-project-rename.png" alt-text="Screenshot of query results for a project operator that renames columns.":::
 

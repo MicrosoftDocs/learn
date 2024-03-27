@@ -8,7 +8,7 @@ You can think of a model as a function that accepts data as an input and produce
 
 ![Diagram showing a model without parameters.](../media/1-2-a.jpg)
 
-Note that harness size and dog boot size are data; they are not part of the model. Harness size is our input, dog boot size is the output.
+Harness size and dog boot size are data; they aren't part of the model. Harness size is our input, dog boot size is the output.
 
 ## Models are often simple code
 
@@ -24,24 +24,24 @@ If parameter_1 here was 2.5, our model would multiply harness size by 2.5 and re
 
 There are many model types, some simple and some complex.
 
-Like all code, simpler models are often the most reliable and easy to understand, while complex models can potentially perform impressive feats. Which kind of model you should choose depends on your goal. For example, medical scientists often work with models that are relatively simple, because they are reliable and intuitive. By contrast, AI-based robots typically rely on very complex models.
+Like all code, simpler models are often the most reliable and easy to understand, while complex models can potentially perform impressive feats. Which kind of model you should choose depends on your goal. For example, medical scientists often work with models that are relatively simple, because they're reliable and intuitive. By contrast, AI-based robots typically rely on complex models.
 
-The first step in machine learning is selecting the kind of model that you'd like to use. This means we're choosing a model based on its internal logic. For example, we might select a two-parameter model to estimate dog boot size from harness size:
+The first step in machine learning is selecting the kind of model that you'd like to use. So, we're choosing a model based on its internal logic. For example, we might select a two-parameter model to estimate dog boot size from harness size:
 
 ![Diagram showing a model with two unspecified parameters.](../media/1-2-d.jpg)
 
-Notice how we selected a model based on how it works logically, but not based on its parameter values. In fact, at this point the parameters have not yet been set to any particular value.
+Notice how we selected a model based on how it works logically, but not based on its parameter values. In fact, at this point, the parameters haven't been set to any particular value.
 
 ## Parameters are discovered during training
 
 The human designer doesn't select parameter values. Instead, parameter values are set to an initial guess, then adjusted during an automated learning process called training.
 
-Given our selection of a two-parameter model (above), we'll now provide random guesses for our parameters:
+Given our selection of a two-parameter model, we start by providing random guesses for our parameters:
 
 ![Diagram showing a model with 0.2 and 1.2 as the parameters.](../media/1-2-e.jpg)
 
-These random parameters will mean the model isn’t good at estimating boot size, so we'll perform training. During training, these parameters are automatically changed to two new values that give better results:
+These random parameters mean the model isn’t good at estimating boot size, so we perform training. During training, these parameters are automatically changed to two new values that give better results:
 
 ![Diagram showing a model with 1.5 and 4 as the parameters.](../media/1-2-f.jpg)
 
-Exactly how this process works is something we'll progressively explain throughout your learning journey.
+Exactly how this process works is something we progressively explain throughout your learning journey.
