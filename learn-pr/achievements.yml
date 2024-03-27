@@ -3118,3 +3118,8 @@ achievements:
   title: Survey the services on the Microsoft Intelligent Data Platform
   summary: Learn about Azure technologies that analyze text and images and relational, nonrelational, or streaming data. See how data engineers can choose the technologies that meet their business needs and scale to meet demand securely.
   iconUrl: /training/achievements/data-ai/survey-the-azure-data-platform-badge.svg
+- uid: learn.wwl.modernize-net-java.trophy
+  type: trophy
+  title: Modernize .NET and Java apps
+  summary: Migrate app workloads to the cloud by learning how to assess your migration and move your app and data to the cloud. Learn how to monitor the health and performance of your app.
+  iconUrl: /training/achievements/modernize-net-java.svg
