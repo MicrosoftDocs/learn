@@ -35640,6 +35640,11 @@
       "source_path": "learn-pr/wwl-azure/assess-migration/6-discover-optimization-secure-manage.md",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/assess-migration/4-examine-migration-cost.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
