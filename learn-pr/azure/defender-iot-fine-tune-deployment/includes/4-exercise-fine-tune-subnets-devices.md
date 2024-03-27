@@ -40,9 +40,9 @@ To make changes to a device detail:
 
 1. Select a specific item
 1. Select **Edit**. <!-- this needs to be fixed, but need to discuss with LW first.  how will we show this? Ask THeo for example -->
-
-You can update the following fields:
 <!-- why does this come out formatted as a code box??-->
+You can update the following fields:
+
 - Authorized device
 - Name
 - Description
@@ -54,7 +54,7 @@ You can update the following fields:
 
 Select **Save**.
 
-:::image type="content" source="../media/device settings edit.png" alt-text="screenshot of the edit pane for device settings.":::
+:::image type="content" source="../media/4-device-settings-edit.png" alt-text="screenshot of the edit pane for device settings.":::
 
 ## Merge devices
 
