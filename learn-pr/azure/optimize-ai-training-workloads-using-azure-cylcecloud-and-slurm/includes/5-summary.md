@@ -8,7 +8,7 @@ NHCs are crucial for maintaining the health of the nodes in a cluster, especiall
  
 **Monitoring:**
 
-Prometheus is an open-source monitoring system that Grafana supports out-of-the-box. It allows you to create dashboards to display system metrics for a server monitored by Prometheus. It helps visualize and understand the metrics of your cluster as it runs your AI workloads. Dashboards and built-in monitoring tools are helpful check for issues, including Failed Node Health Checks and gathered metrics exceeding workload-specific metrics.
+Prometheus is an open-source monitoring system that Grafana supports out-of-the-box. It allows you to create dashboards to display system metrics for a server monitored by Prometheus. It helps visualize and understand the metrics of your cluster as it runs your AI workloads. Dashboards and built-in monitoring tools are helpful check for issues, including failed NHC and gathered metrics exceeding workload-specific metrics.
 
 Slurm accounting is enabled (The scheduler deploys and accesses MariaDB via a private endpoint) and configured to collect accounting information for every job and job step executed. Accounting records are written to a simple text file or a database, providing information about both currently executing jobs and terminated jobs. It's useful for tracking resource usage and monitoring job performance.
 
