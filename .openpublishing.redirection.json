@@ -35785,6 +35785,11 @@
       "source_path": "learn-pr/wwl-azure/move-application-data-to-cloud/9-exercise-migrate-postgresql-data.md",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/move-application-data-to-cloud/8-exercise-migrate-sql-data.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
