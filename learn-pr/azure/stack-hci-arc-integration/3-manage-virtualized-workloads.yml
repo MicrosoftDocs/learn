@@ -7,9 +7,7 @@ metadata:
   author: JasonGerend
   ms.author: jgerend
   ms.topic: unit
-  ms.custom:
-    - e2e-hybrid
-    - devx-track-arm-template
+  ms.custom: e2e-hybrid, devx-track-arm-template, linux-related-content
 title: Manage Azure Stack HCI-based virtualized workloads with Azure Arc
 durationInMinutes: 5
 content: |

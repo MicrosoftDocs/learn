@@ -12,9 +12,9 @@ You can upload a file in Microsoft Copilot for Security to allow Copilot to refe
 
 To upload a file, the steps are as follows:
 
-1. Navigate to the file upload page by selecting the sources icon then selecting files from the Manage sources page.
+1. Navigate to the file upload page by selecting the sources icon in the promp bar then selecting files from the Manage sources page.
 
-      :::image type="content" source="../media/files-upload.png" lightbox="../media/files-upload.png" alt-text="Screen capture of the files upload page.":::
+      :::image type="content" source="../media/manage-sources-files-new.png" lightbox="../media/manage-sources-files-new.png" alt-text="Screen capture of the files upload page.":::
 
 1. Drag the file to the upload section or select click to upload to look for your file. Make sure the file you're about to upload is a common text file type like PDF, DOC, DOCX, HTML, HTM, and TXT, or EML formats, and that the file size doesn't exceed the given capacity.
 

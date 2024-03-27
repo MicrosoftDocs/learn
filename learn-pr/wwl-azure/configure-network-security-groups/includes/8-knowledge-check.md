@@ -1,3 +1,4 @@
+
 Your company is migrating several sites to Azure. You're responsible for implementing network security groups and designing effective security rules to control network traffic. You need to ensure that virtual machine networking and Azure services networking are both secure. 
 
 - The infrastructure team has two network security group security rules for inbound traffic to the back-end web servers. There's an allow rule with a priority of 200, and a deny rule with a priority of 150.

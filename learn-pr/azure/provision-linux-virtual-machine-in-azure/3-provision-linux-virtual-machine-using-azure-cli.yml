@@ -8,8 +8,7 @@ metadata:
   author: chasecrum
   ms.author: chasecrum
   ms.topic: unit
-  ms.custom:
-    - devx-track-azurecli
+  ms.custom: devx-track-azurecli, linux-related-content
 durationInMinutes: 13
 content: |
   [!include[](includes/3-provision-linux-virtual-machine-using-azure-cli.md)]
