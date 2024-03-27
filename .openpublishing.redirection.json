@@ -35995,6 +35995,11 @@
       "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/4-azure-storage-options.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
     }
   ]
 }
