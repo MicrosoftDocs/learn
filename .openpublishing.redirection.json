@@ -35660,6 +35660,11 @@
       "source_path": "learn-pr/wwl-azure/assess-migration/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/assess-migration/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
