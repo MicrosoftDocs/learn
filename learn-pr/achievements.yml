@@ -3163,3 +3163,8 @@ achievements:
   title: Examine Cloud storage options for Azure IoT Hub solutions
   summary: This module introduces you to the Azure data storage options that are often used in Azure IoT solutions, and the hot and cold storage paths that can be implemented in support of various business requirements.
   iconUrl: /training/achievements/iot-cloud-storage.svg
+- uid: learn.wwl.implement-device-message-processing-data-analytics.trophy
+  type: trophy
+  title: Implement message processing for data storage and analytics by using Azure IoT Hub
+  summary: You'll learn about the message processing and data analytics capabilities that must be implemented within your Azure IoT solution by using Azure IoT Hub, and the storage options that are often configured as part of your solution.
+  iconUrl: /training/achievements/message-device-processing.svg
