@@ -37,7 +37,6 @@ units:
 - learn.wwl.move-application-data-to-cloud.optimize-sql-query-performance
 - learn.wwl.move-application-data-to-cloud.optimize-cost-migrated-resources
 - learn.wwl.move-application-data-to-cloud.exercise-migrate-sql-data
-- learn.wwl.move-application-data-to-cloud.exercise-migrate-postgresql-data
 - learn.wwl.move-application-data-to-cloud.knowledge-check
 - learn.wwl.move-application-data-to-cloud.summary
 badge:
