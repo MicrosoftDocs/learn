@@ -102,9 +102,9 @@ az stack group create \
 
 The following Azure PowerShell parameters are used to customize the `actionOnUnmange` property:
 
-- The `--actionOnUnmanage DeleteResources` parameter deletes resources and detaches resource groups and management groups.
-- The `--actionOnUnmanage DeleteAll` parameter deletes resources, resource groups, and management groups.
-- The `--actionOnUnmanage DetachAll` parameter detaches resources, resource groups, and management groups.
+- The `-ActionOnUnmanage DeleteResources` parameter deletes resources and detaches resource groups and management groups.
+- The `-ActionOnUnmanage DeleteAll` parameter deletes resources, resource groups, and management groups.
+- The `-ActionOnUnmanage DetachAll` parameter detaches resources, resource groups, and management groups.
 
 Here's an example of an Azure PowerShell command with `actionOnUnmanage` on a deployment stack scoped to a resource group.
 
