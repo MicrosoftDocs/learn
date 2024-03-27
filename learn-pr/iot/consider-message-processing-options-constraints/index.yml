@@ -35,7 +35,6 @@ subjects:
 units:
 - learn.wwl.consider-message-processing-options-constraints.introduction
 - learn.wwl.consider-message-processing-options-constraints.examine-message-enrichments-for-d2c-messages
-- learn.wwl.consider-message-processing-options-constraints.examine-iot-hub-quotas-throttling
 - learn.wwl.consider-message-processing-options-constraints.knowledge-check
 - learn.wwl.consider-message-processing-options-constraints.summary
 badge:
