@@ -17,7 +17,7 @@ Image 3: Enable NHC on Startup, screenshot from the CC Web Portal
 > [!NOTE]
 > Running NHC will add startup time to healthy nodes which can take up to 10 minutes. 
 
-- As of CycleCloud 8.6 the supported offerings are:
+CycleCloud 8.6 supported offerings are:
   - NDm H100 v5-series
   - NCads H100 v5-series
   - NDm A100 v4-series
@@ -31,7 +31,7 @@ Image 3: Enable NHC on Startup, screenshot from the CC Web Portal
   - NCv3-series
   - NDv2-serries
 
-For more information, see [GPU optimized virtual machine sizes](/azure/virtual-machines/sizes-gpu)
+For more information, see [GPU optimized virtual machine sizes](/azure/virtual-machines/sizes-gpu).
 
 ## Minimum Requirements for Node Health Checks
 
@@ -77,6 +77,6 @@ Table does not list all the supported SKUs. The scripts for all tests can be fou
 
 ## _References_
 
-[LBNL Node Health Checks](https://github.com/mej/nhc)
+[LBNL Node Health Checks](https://github.com/mej/nhc).
 
-[Azure HPC Images](https://github.com/Azure/azhpc-images)
+[Azure HPC Images](https://github.com/Azure/azhpc-images).
