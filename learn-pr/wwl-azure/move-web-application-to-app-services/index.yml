@@ -37,7 +37,6 @@ units:
 - learn.wwl.migrate-web-application-to-app-service.introduction
 - learn.wwl.migrate-web-application-to-app-service.examine-hosting-options
 - learn.wwl.migrate-web-application-to-app-service.monitor-application-insights
-- learn.wwl.migrate-web-application-to-app-service.discover-azure-key-vault
 - learn.wwl.migrate-web-application-to-app-service.discover-custom-domains-azure
 - learn.wwl.migrate-web-application-to-app-service.explore-app-scaling
 - learn.wwl.migrate-web-application-to-app-service.exercise-migrate-dotnet-app
