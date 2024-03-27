@@ -4,12 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/06/2022
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/9-knowledge-check.md)]
@@ -20,18 +18,18 @@ quiz:
     choices:
     - content: "Descriptive and associative analytics."
       isCorrect: false
-      explanation: "Incorrect. Associative is not an analytics offering."
+      explanation: "Incorrect. Associative isn't an analytics offering."
     - content: "Prescriptive and predictive analytics."
       isCorrect: true
       explanation: "Correct. Synapse offers both of these plus descriptive and diagnostic analytics."
     - content: "Diagnostic and exploratory analytics."
       isCorrect: false
-      explanation: "Incorrect. Exploratory is not an analytics offering."
+      explanation: "Incorrect. Exploratory isn't an analytics offering."
   - content: "Which of the following statements best describes an offering of Azure Synapse Studio linked services?"
     choices:
     - content: "Custom linked service can be created in Synapse."
       isCorrect: true
-      explanation: "Correct. Synapse offers the capability to create your own linked service if you cannot find what you need among the available linked services."
+      explanation: "Correct. Synapse offers the capability to create a linked service if none of the available linked services are suitable."
     - content: "More than 2000 linked services are available for data sources and applications."
       isCorrect: false
       explanation: "Incorrect. Synapse offers more than 200 linked services."
@@ -42,21 +40,21 @@ quiz:
     choices:
     - content: "Power BI reports must be created separately from Azure Synapse Studio."
       isCorrect: false
-      explanation: "Incorrect. You can link your Power BI workspace report to Synapse Studio to view your Power BI reports."
+      explanation: "Incorrect. A Power BI workspace report can be linked to Synapse Studio to view Power BI reports."
     - content: "Managing and monitoring of jobs or pipelines can be done in Azure Synapse Studio."
       isCorrect: false
-      explanation: "Incorrect. You can manage and monitor jobs and pipelines in Synapse Studio."
+      explanation: "Incorrect. Jobs and pipelines can be managed and monitored in Synapse Studio."
     - content: "T-SQL scripts and custom notebooks can both be used to interact with the analytical engines in Azure Synapse Studio."
       isCorrect: true
-      explanation: "Correct. The module scenario used a T-SQL script, but you could also use custom notebooks."
+      explanation: "Correct. The module scenario used a T-SQL script, but custom notebooks can also be used."
   - content: "Which best describes data options in Synapse Analytics?"
     choices:
     - content: "Synapse Analytics enables data import from multiple data sources."
       isCorrect: true
-      explanation: "Correct. The module scenario involves two data sources, but you could add others."
+      explanation: "Correct. The module scenario involves two data sources, but others could be added."
     - content: "Synapse Analytics can combine data from a maximum of two sources."
       isCorrect: false
-      explanation: "Incorrect. The module scenario involves two data sources, but you could add others."
+      explanation: "Incorrect. The module scenario involves two data sources, but others could be added."
     - content: "Synapse Analytics only works with data contained in SQL Pools."
       isCorrect: false
       explanation: "Incorrect. The module scenario involves a dedicated SQL Pool, but Synapse also natively supports Data Explorer, Spark Pools, and Data Lake storage."

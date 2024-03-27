@@ -13,5 +13,5 @@ You now have a good understanding of how to connect to Azure from IntelliJ IDEA,
 
 - [Azure Toolkit for IntelliJ](/azure/developer/java/toolkit-for-intellij/)
 - [App Service overview](/azure/app-service/overview)
-- [Quickstart: Create a Java app on Azure App Service on Windows](/azure/app-service/app-service-web-get-started-java)
+- [Quickstart: Create a Java app on Azure App Service](/azure/app-service/quickstart-java)
 - [Set up staging environments in Azure App Service](/azure/app-service/deploy-staging-slots)

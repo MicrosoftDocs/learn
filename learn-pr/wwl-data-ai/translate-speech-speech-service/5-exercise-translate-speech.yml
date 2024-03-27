@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: berryivor
   ms.topic: unit
-  ms.service: azure-ai-speech
 labId: 152399
 labModal: true
 durationInMinutes: 30

@@ -4,12 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/21/2022
+  ms.date: 03/15/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -20,10 +20,10 @@ quiz:
     choices:
     - content: "Azure SQL Database (single database)"
       isCorrect: false
-      explanation: "Incorrect. Azure SQL Database supports many of the core database features of SQL Server, but some features are not supported."
+      explanation: "Incorrect. Azure SQL Database supports many of the core database features of SQL Server, but some features aren't supported."
     - content: "Azure SQL Database (elastic pool)"
       isCorrect: false
-      explanation: "Incorrect. Azure SQL Database supports many of the core database features of SQL Server, but some features are not supported."
+      explanation: "Incorrect. Azure SQL Database supports many of the core database features of SQL Server, but some features aren't supported."
     - content: "Azure SQL Managed Instance"
       isCorrect: true
       explanation: "Correct. Azure SQL Managed Instance offers near 100% compatibility with SQL Server."
@@ -34,7 +34,7 @@ quiz:
       explanation: "Correct. Azure SQL Database automates most maintenance tasks."
     - content: "You must purchase a SQL Server license"
       isCorrect: false
-      explanation: "Incorrect. You do not need a SQL Server license to use Azure SQL Database - you pay by usage."
+      explanation: "Incorrect. You don't need a SQL Server license to use Azure SQL Database - you pay by usage."
     - content: "It can only support one database"
       isCorrect: false
       explanation: "Incorrect. You can use an elastic pool to support multiple databases."

@@ -29,7 +29,7 @@ roles:
 products:
 - azure
 subjects:
-- database
+- databases
 units:
 - learn.wwl.explore-non-relational-data-stores-azure.introduction
 - learn.wwl.explore-non-relational-data-stores-azure.azure-cosmos-db

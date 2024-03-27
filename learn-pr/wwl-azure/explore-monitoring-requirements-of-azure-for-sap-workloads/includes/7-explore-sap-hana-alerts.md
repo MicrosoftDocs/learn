@@ -24,7 +24,7 @@ An alert triggered due to high CPU utilization could be caused by several events
 
 ## Operating system
 
-One of the most important checks for SAP HANA on Linux is to make sure that Transparent Huge Pages are disabled, see [SAP Note \#2131662](https://launchpad.support.sap.com/#/notes/2131662).
+One of the most important checks for SAP HANA on Linux is to make sure that Transparent Huge Pages are disabled, see [SAP Note \#2131662](https://me.sap.com/notes/2131662).
 
 You can check if Transparent Huge Pages are enabled through the Linux command: `cat /sys/kernel/mm/transparent_hugepage/enabled`
 
@@ -46,7 +46,7 @@ When you observe the amount of memory allocated by the SAP HANA database is high
 
 ## Network
 
-Refer to [SAP Note \#2081065](https://launchpad.support.sap.com/#/notes/2081065) and perform the network troubleshooting steps in this SAP Note.
+Refer to [SAP Note \#2081065](https://me.sap.com/notes/2081065) and perform the network troubleshooting steps in this SAP Note.
 
 - Analyze round-trip time between server and client. Run the SQL script HANA\_Network\_Clients.
 - Analyze internode communication. Run the SQL script HANA\_Network\_Services.
@@ -55,7 +55,7 @@ Refer to [SAP Note \#2081065](https://launchpad.support.sap.com/#/notes/2081065)
 
 Also, use the open-source IPERF tool (or similar) to measure real application network performance.
 
-[SAP Note \#2081065](https://launchpad.support.sap.com/#/notes/2081065) offers SAP HANA network troubleshooting procedures that help you determine the extent to which network latency contributes to performance degradation in an SAP landscape by analyzing the round trip time (RTT) between server, client, and internode communication.
+[SAP Note \#2081065](https://me.sap.com/notes/2081065) offers SAP HANA network troubleshooting procedures that help you determine the extent to which network latency contributes to performance degradation in an SAP landscape by analyzing the round trip time (RTT) between server, client, and internode communication.
 
 ## Storage
 

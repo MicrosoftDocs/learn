@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/17/2023
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Design a geographically distributed application
 summary: Build an application that spans multiple geographic locations for high availability and resiliency.
 abstract: | 

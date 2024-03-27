@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
-  ms.service: azure
 durationInMinutes: 2
 content: |
   [!include[](includes/6-analyze-azure-active-directory-workbooks-reporting.md)]

@@ -9,6 +9,7 @@ metadata:
   ms.author: randolphwest
   manager: jroth
   ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 15
 interactive: bash
 azureSandbox: true

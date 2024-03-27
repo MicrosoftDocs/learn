@@ -4,10 +4,12 @@ title: 'Exercise: Explore data analytics in Azure with Azure Synapse Analytics'
 metadata:
   title: 'Exercise: Explore data analytics in Azure with Azure Synapse Analytics'
   description: "Exercise: Explore data analytics in Azure with Azure Synapse Analytics"
-  ms.date: 12/19/2023
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise-azure-synapse.md)]

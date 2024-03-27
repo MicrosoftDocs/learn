@@ -4,10 +4,12 @@ title: Exercise - Use classes
 metadata:
   title: Exercise - Use classes
   description: "How to introduce incremental enhancements to your application."
-  ms.date: 01/29/2024
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/5-exercise-use-classes.md)]

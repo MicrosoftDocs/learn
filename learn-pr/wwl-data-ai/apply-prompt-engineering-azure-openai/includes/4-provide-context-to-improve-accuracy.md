@@ -68,12 +68,12 @@ The `ChatCompletion` endpoint enables including the system message by using the 
 ::: zone pivot="csharp"
 
 ```csharp
-var ChatCompletionsOptions = new ChatCompletionsOptions()
+var chatCompletionsOptions = new ChatCompletionsOptions()
 {
     Messages =
     {
-        new ChatMessage(ChatRole.System, "You are a casual, helpful assistant. You will talk like an American old western film character."),
-        new ChatMessage(ChatRole.User, "Can you direct me to the library?")
+        new ChatRequestSystemMessage("You are a casual, helpful assistant. You will talk like an American old western film character."),
+        new ChatRequestUserMessage("Can you direct me to the library?")
     }
 };
 ```
@@ -82,12 +82,21 @@ var ChatCompletionsOptions = new ChatCompletionsOptions()
 
 ```code
 {
-    "role": "assistant", 
-    "content": "Well howdy there, stranger! The library, huh?
-                Y'all just head down the main road till you hit the town 
-                square. Once you're there, take a left and follow the street 
-                for a spell. You'll see the library on your right, can’t 
-                miss it. Happy trails!"
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Well howdy there, stranger! The library, huh?
+                    Y'all just head down the main road till you hit the town 
+                    square. Once you're there, take a left and follow the street 
+                    for a spell. You'll see the library on your right, can’t 
+                    miss it. Happy trails!",
+        "role": "assistant"
+      }
+    }
+  ],
+  ...
 }
 ```
 
@@ -97,7 +106,7 @@ var ChatCompletionsOptions = new ChatCompletionsOptions()
 
 ```python
 response = openai.ChatCompletion.create(
-    engine="gpt-35-turbo",
+    model="gpt-35-turbo",
     messages=[
         {"role": "system", "content": "You are a casual, helpful assistant. You will talk like an American old western film character."},
         {"role": "user", "content": "Can you direct me to the library?"}
@@ -109,18 +118,25 @@ response = openai.ChatCompletion.create(
 
 ```code
 {
-    "role": "assistant", 
-    "content": "Well howdy there, stranger! The library, huh?
-                Y'all just head down the main road till you hit the town 
-                square. Once you're there, take a left and follow the street 
-                for a spell. You'll see the library on your right, can’t 
-                miss it. Happy trails!"
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Well howdy there, stranger! The library, huh?
+                    Y'all just head down the main road till you hit the town 
+                    square. Once you're there, take a left and follow the street 
+                    for a spell. You'll see the library on your right, can’t 
+                    miss it. Happy trails!",
+        "role": "assistant"
+      }
+    }
+  ],
+  ...
 }
 ```
 
 ::: zone-end
-
-If using the `Completion` endpoint, similar functionality can be achieved by including the system message at the start of the prompt. This is called a *meta prompt*, and serves as a base prompt for the rest of the prompt content.
 
 System messages can significantly change the response, both in format and content. Try defining a clear system message for the model that explains exactly what kind of response you expect, and what you do or don't want it to include.
 
@@ -158,18 +174,18 @@ In practical terms, conversation history and few shot learning are sent to the m
 
 ::: zone pivot="csharp"
 ```csharp
-var ChatCompletionsOptions = new ChatCompletionsOptions()
+var chatCompletionsOptions = new ChatCompletionsOptions()
 {
     Messages =
     {
-        new ChatMessage(ChatRole.System, "You are a helpful assistant."),
-        new ChatMessage(ChatRole.User, "That was an awesome experience"),
-        new ChatMessage(ChatRole.Assistant, "positive"),
-        new ChatMessage(ChatRole.User, "I won't do that again"),
-        new ChatMessage(ChatRole.Assistant, "negative"),
-        new ChatMessage(ChatRole.User, "That was not worth my time"),
-        new ChatMessage(ChatRole.Assistant, "negative"),
-        new ChatMessage(ChatRole.User, "You can't miss this")
+        new ChatRequestSystemMessage("You are a helpful assistant."),
+        new ChatRequestUserMessage("That was an awesome experience"),
+        new ChatRequestAssistantMessage("positive"),
+        new ChatRequestUserMessage("I won't do that again"),
+        new ChatRequestAssistantMessage("negative"),
+        new ChatRequestUserMessage("That was not worth my time"),
+        new ChatRequestAssistantMessage("negative"),
+        new ChatRequestUserMessage("You can't miss this")
     }
 };
 ```
@@ -178,7 +194,7 @@ var ChatCompletionsOptions = new ChatCompletionsOptions()
 ::: zone pivot="python"
 ```python
 response = openai.ChatCompletion.create(
-    engine="gpt-35-turbo",
+    model="gpt-35-turbo",
     messages=[
         {"role": "system", "content": "You are a helpful assistant."},
         {"role": "user", "content": "That was an awesome experience"},
@@ -192,8 +208,6 @@ response = openai.ChatCompletion.create(
 )
 ```
 ::: zone-end
-
-While not ideal, similar results can be achieved with the `Completion` endpoint by including the conversation exchange within the single prompt, much like we saw with system messages. If you do need to include multiple messages in a single prompt with `Completion`, you can make it clear to the model by putting each message on a new line and labeling each line with the role. Formatting this prompt would be similar to how the conversation was presented at the top of this section.
 
 ## Break down a complex task
 
