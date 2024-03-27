@@ -35680,6 +35680,11 @@
       "source_path": "learn-pr/wwl-azure/move-web-application-to-app-services/4-discover-azure-key-vault.md",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/move-web-application-to-app-services/5-discover-custom-domains-azure.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
