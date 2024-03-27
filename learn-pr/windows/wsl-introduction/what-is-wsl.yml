@@ -9,6 +9,7 @@ metadata:
   author: mattwojo
   ms.author: mattwoj
   ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 2
 content: |
   [!include[](includes/2-what-is-wsl.md)]
