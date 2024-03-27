@@ -37,7 +37,6 @@ units:
 - learn.wwl.get-started-cloud-storage-for-iot.introduction
 - learn.wwl.get-started-cloud-storage-for-iot.examine-iot-lambda-architecture
 - learn.wwl.get-started-cloud-storage-for-iot.review-options-for-azure-iot-solutions
-- learn.wwl.get-started-cloud-storage-for-iot.examine-azure-blob-storage-storage-accounts
 - learn.wwl.get-started-cloud-storage-for-iot.examine-azure-data-lake-gen-2
 - learn.wwl.get-started-cloud-storage-for-iot.examine-azure-cosmos-db
 - learn.wwl.get-started-cloud-storage-for-iot.examine-azure-sql-database
