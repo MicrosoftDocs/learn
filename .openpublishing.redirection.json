@@ -35855,6 +35855,11 @@
       "source_path": "learn-pr/iot/consider-message-processing-options-constraints/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/consider-message-processing-options-constraints/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
     }
   ]
 }
