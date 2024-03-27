@@ -33,6 +33,5 @@ products:
 subjects:
 - iot
 units:
-- learn.wwl.consider-message-processing-options-constraints.summary
 badge:
   uid: learn.wwl.consider-message-processing-options-constraints.badge
