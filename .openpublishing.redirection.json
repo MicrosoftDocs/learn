@@ -35910,6 +35910,11 @@
       "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/2-what-azure-stream-analytics.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/5-azure-stream-analytics-input-types.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
     }
   ]
 }
