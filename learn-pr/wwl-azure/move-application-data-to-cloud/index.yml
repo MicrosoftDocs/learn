@@ -32,7 +32,6 @@ subjects:
 units:
 - learn.wwl.move-application-data-to-cloud.introduction
 - learn.wwl.move-application-data-to-cloud.investigate-azure-database-options
-- learn.wwl.move-application-data-to-cloud.explore-security-options
 - learn.wwl.move-application-data-to-cloud.optimize-sql-query-performance
 - learn.wwl.move-application-data-to-cloud.optimize-cost-migrated-resources
 - learn.wwl.move-application-data-to-cloud.knowledge-check
