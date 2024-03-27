@@ -97,7 +97,7 @@ We recommend that you enable data sharing, as it helps Microsoft provide improve
 
 ## Architecture overview
 
-The following diagram shows, at a high level, how Azure Monitor for SAP solutions collects data from the SAP HANA database. The architecture is the same if SAP HANA is deployed on Azure Virtual Machines or Azure Large Instances.
+The following diagram shows, at a high level, how Azure Monitor for SAP solutions collects data from the SAP HANA database. The architecture is the same whether SAP HANA is deployed on Azure Virtual Machines or Azure Large Instances.
 
 :::image type="content" source="../media/azure-monitor-sap-architecture.png" alt-text="Diagram that shows the architecture of Azure Monitor for S A P solutions.":::
 
