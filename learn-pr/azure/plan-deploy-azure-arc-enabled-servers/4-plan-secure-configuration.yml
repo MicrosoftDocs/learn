@@ -4,7 +4,7 @@ title: Planning considerations for a secure configuration
 metadata:
   title: Planning considerations for a secure configuration
   description: Description of the identity, policy, and networking considerations for a secure deployment to Azure Arc-enabled servers. 
-  ms.date: 09/21/2021
+  ms.date: 03/22/2023
   author: aurnovcy
   ms.author: aurnovc
   ms.topic: unit

@@ -3,7 +3,7 @@ uid: learn.design-a-geographically-distributed-application.4-geo-distributed-app
 metadata:
   title: Design a geographically distributed application architecture
   description: In this unit, you learn how to ensure that web requests sent to a secondary region during an outage are satisfied by application services in that region.
-  ms.date: 11/07/2019
+  ms.date: 03/17/2023
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit
