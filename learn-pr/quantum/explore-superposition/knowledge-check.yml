@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.explore-superposition.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your understanding so far.
+  author: SoniaLopezBravo
+  ms.author: sonialopez
+  manager: tedhudek
+  ms.date: 03/25/2024
+  ms.topic: unit
+  show_latex: true
+durationInMinutes: 7
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
