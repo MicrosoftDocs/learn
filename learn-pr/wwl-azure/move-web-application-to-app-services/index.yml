@@ -34,7 +34,6 @@ products:
 subjects:
 - cloud-computing
 units:
-- learn.wwl.migrate-web-application-to-app-service.monitor-application-insights
 - learn.wwl.migrate-web-application-to-app-service.summary
 badge:
   uid: learn.wwl.migrate-web-application-to-app-service.badge
