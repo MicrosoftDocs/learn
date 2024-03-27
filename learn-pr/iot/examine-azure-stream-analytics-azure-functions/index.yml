@@ -45,7 +45,6 @@ units:
 - learn.wwl.examine-azure-stream-analytics-azure-functions.review-asa-patterns-guidelines
 - learn.wwl.examine-azure-stream-analytics-azure-functions.get-started-asa-input-types
 - learn.wwl.examine-azure-stream-analytics-azure-functions.examine-asa-streaming-data-input
-- learn.wwl.examine-azure-stream-analytics-azure-functions.examine-asa-reference-data-input
 - learn.wwl.examine-azure-stream-analytics-azure-functions.parse-complex-data-types-asa-queries
 - learn.wwl.examine-azure-stream-analytics-azure-functions.examine-time-handling-considerations-for-asa-queries
 - learn.wwl.examine-azure-stream-analytics-azure-functions.examine-asa-windowing-functions
