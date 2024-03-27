@@ -35925,6 +35925,11 @@
       "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/14-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/9-azure-stream-analytics-queries-parse-complex-data-types.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
     }
   ]
 }
