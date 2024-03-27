@@ -9,6 +9,7 @@ metadata:
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: defender-for-iot
 title: Fine-tune your Microsoft Defender for IoT OT sensor
+
 summary: "After onboarding a sensor and deployed Defender for IoT, control the traffic monitored by your sensor and create a baseline of the OT network traffic. Fine-tune the defined subnets and devices. Then triage alerts while in learning mode to create a baseline."
 abstract: |
   By the end of this module, you're able to:
@@ -17,6 +18,7 @@ abstract: |
 prerequisites: |
   - Knowledge of what Defender for IoT is and how it works at a beginner level
   - Access to an [Azure subscription](https://azure.microsoft.com/free) as a Security Admin, Contributor, or Owner
+
   - A Defender for IoT license with an [OT plan](/azure/defender-for-iot/organizations/getting-started)
   - Access to an installed sensor that's receiving network traffic
 iconUrl: /learn/achievements/defender-for-iot/defender-iot-fine-tune-deployment.svg

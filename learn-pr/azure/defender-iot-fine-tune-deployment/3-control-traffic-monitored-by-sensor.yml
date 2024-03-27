@@ -19,6 +19,8 @@ metadata:
 ### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
 ### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
   ms.service: defender-for-iot
+
 durationInMinutes: 5
+
 content: |
   [!include[](includes/3-control-traffic-monitored-by-sensor.md)]

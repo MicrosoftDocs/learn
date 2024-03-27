@@ -8,6 +8,7 @@ Suppose you work for a car manufacturer that has offices and production sites ac
 
 The OT sensor is activated and the devices are now mirroring data to the sensor. You're tasked with fine-tuning the OT sensor. You need to check and fine-tune your sensor settings to ensure that it detects the interfaces and traffic you want to monitor and alerts you correctly for risky network activity. When your sensor identifies a baseline of network traffic, you’re ready to switch out of learning mode into operation mode.
 
+
 ## What will we be doing?
 
 In this module, you'll:
