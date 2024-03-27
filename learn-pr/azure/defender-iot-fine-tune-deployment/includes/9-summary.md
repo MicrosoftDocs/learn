@@ -1,4 +1,4 @@
-In this module, you learned how to fine-tune, calibrate and triage the alerts that are listed to Defender for IoT in the Azure portal. In particular, you learned:
+In this module, you learned how to fine-tune, calibrate, and triage the alerts that are listed to Defender for IoT in the Azure portal. In particular, you learned:
 
 - How to fine-tune and calibrate alerts in Defender for IoT on the Azure portal.
 - How to view and modify subnet data listed in Defender for IoT.

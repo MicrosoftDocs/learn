@@ -8,7 +8,7 @@ The OT sensor analyzes your system and assigns subnet settings and attempts to u
 
 ## Fine tuning
 
-The first stage of fine-tuning your sensor is to run the **Analyze** feature in the **Deployment** section of the OT sensor. When the analysis function is completed, check the information about each interface. If the information isn't what you expected, you need to check the subnet and device settings and make any needed changes.
+The first stage of fine-tuning your sensor is to run the **Analyze** feature in the **Deployment** section of the OT sensor. When the analysis function is completed, check the information about each interface. If the information isn't what you expected, you need to check the subnet and device settings and make any changes needed.
 
 ## Check and modify the subnet settings
 
