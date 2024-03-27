@@ -34,8 +34,6 @@ roles:
 products:
   - blazor
   - aspnet
-subjects:
-- development-tools
 units:
 - learn.use-pages-routing-layouts-improve-blazor-navigation.introduction
 - learn.use-pages-routing-layouts-improve-blazor-navigation.use-router-component-control-apps-navigation

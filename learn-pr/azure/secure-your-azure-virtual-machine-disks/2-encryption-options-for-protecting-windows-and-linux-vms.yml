@@ -8,6 +8,7 @@ metadata:
   author: roygara
   ms.author: rogarana
   ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 8
 content: |
   [!include[](includes/2-encryption-options-for-protecting-windows-and-linux-vms.md)]

@@ -2,7 +2,7 @@ Let's create an Azure Cache for Redis instance to store and return commonly used
 
 ## Create a Redis cache in Azure
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
 1. On the Azure portal menu, select **Create a resource**.
 
@@ -24,20 +24,21 @@ Let's create an Azure Cache for Redis instance to store and return commonly used
    | ----- | ----------- |
    | Subscription | Concierge Subscription |
    | Resource group | <rgn>[sandbox resource group name]</rgn> |
-   | DNS name | Select the  **New** link to create a globally unique name such as **ContosoSportsApp[nnn]**, where `[nnn]` is replaced with random numbers. |
-   | Location | Normally, you would select a location near your customers; in this case, the East Coast. For this exercise, you can select any available location. |
-   | Cache type | Select Basic C0, which is the lowest tier you can use. Production apps would likely want to store more data and utilize some of the Premium features such as clustering, which would require a higher tier selection |
+   | DNS name | Enter a globally unique name such as **ContosoSportsApp[nnn]**, where `[nnn]` is replaced with random numbers. |
+   | Location | Normally, you'd select a location near your customers; in this case, the East Coast. For this exercise, you can select any available location. |
+   | Cache SKU  | Select **Standard** |
+   | Cache size | Select **Basic C0**, which is the lowest tier you can use. Production apps would likely want to store more data and utilize some of the Premium features such as clustering, which would require a higher tier selection |
 
    :::image type="content" source="../media/4-configure-redis-cache.png" alt-text="Configure an Azure Cache for Redis in the  Azure portal.":::
 
-1. Select **Review + Create**, then select **Create**. Azure will create and deploy the Redis Cache instance for you. 
+1. Select **Review + Create**, then select **Create**. Azure will create and deploy the Redis Cache instance for you.
 
    > [!IMPORTANT]
-   > Usually, the Redis cache resource will be created and viewable in the Azure portal quickly, but the cache itself will not be available for a few minutes. The next steps show how to check the status of your cache once deployment is finished.
+   > Usually, the Redis cache resource will be created and viewable in the Azure portal quickly, but the cache itself won't be available for a few minutes. The next steps show how to check the status of your cache once deployment is finished.
 
 ## Use your cache
 
-You can use the **Console** feature in the Azure portal to issue commands to your Redis cache instance after it has been deployed.
+You can use the **Console** feature in the Azure portal to issue commands to your Redis cache instance after it's been deployed.
 
 1. Locate and select your Redis cache by selecting **Go to resource** in the **Notification** popup when it finishes deployment. Alternatively, you can select **All Resources** in the left-hand sidebar and use the filter box on the left to select Redis Cache instances, or use the search box at the top of the page and type the name of the cache.
 
@@ -57,13 +58,13 @@ You can use the **Console** feature in the Azure portal to issue commands to you
     get test
     ```
 
-Switch back to the **Overview** pane through the breadcrumb bar on the top, or by using the scrollbar to slide the view back to the left.
+Switch back to the **Overview** pane through the breadcrumb bar on the top, or by using the scroll bar to slide the view back to the left.
 
 ## Retrieve the access keys and host name
 
 ::: zone pivot="csharp"
 
-1. In the left menu under **Settings**, select **Access keys**.
+1. In the left menu under **Settings**, select **Authentication**.
 
 1. Copy the **Primary connection string (StackExchange.Redis)** to a safe place, you'll need it for the next exercise.
 
@@ -77,7 +78,7 @@ Next, let's learn about some of the commands we can use to interrogate the cache
 
 For the next exercise, you'll need the host name, port, and primary access key of the cache.
 
-1. In the left menu under **Settings**, select **Access keys**.
+1. In the left menu under **Settings**, select **Authentication**.
 
 1. Copy the **Primary** access key (not the Primary connection string) to a text editor.
 

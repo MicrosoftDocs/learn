@@ -8,6 +8,7 @@ metadata:
   author: chasecrum
   ms.author: chasecrum
   ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 10
 content: |
   [!include[](includes/2-plan-for-sizing-and-networking-of-azure-vms-running-linux.md)]

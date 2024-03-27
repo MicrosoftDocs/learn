@@ -9,6 +9,7 @@ metadata:
   author: asergaz
   ms.author: sergaz
   ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise-deploy-application-aks-edge-essentials.md)]

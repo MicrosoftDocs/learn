@@ -31,8 +31,6 @@ products:
   - blazor
   - dotnet
   - aspnet-core
-subjects:
-- development-tools
 units:
 - learn.blazor-build-reusable-components.introduction
 - learn.blazor-build-reusable-components.concepts-razor-class-library

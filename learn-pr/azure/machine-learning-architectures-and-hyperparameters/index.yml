@@ -6,7 +6,7 @@ metadata:
   ms.date: 04/17/2023
   author: s-polly
   ms.author: scottpolly
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Select and customize architectures and hyperparameters using random forest
 summary: More complex models often can be manually customized to improve how effective they are. Through exercises and explanatory content, we explore how altering the architecture of more complex models can bring about more effective results.
 abstract: | 

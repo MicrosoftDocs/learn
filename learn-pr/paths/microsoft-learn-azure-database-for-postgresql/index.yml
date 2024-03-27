@@ -22,7 +22,7 @@ roles:
 products:
 - azure-database-postgresql
 subjects:
-- database
+- databases
 modules:
 - learn.wwl.explore-postgresql-architecture
 - learn.wwl.understand-client-server-communication-postgresql

@@ -34,5 +34,6 @@ modules:
   - learn.philanthropies.implement-ai-tools-into-training-environment
   - learn.philanthropies.streamline-training-plans-with-ai-tools
   - learn.philanthropies.use-ai-tools-to-create-inclusive-learning-environment
+  - learn.philanthropies.training-with-ai-tools
 trophy:
     uid: learn.philanthropies.ai-toolbox-for-trainers.trophy

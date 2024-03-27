@@ -3,30 +3,49 @@ uid: learn.wwl.manage-single-multiple-computers-use-windows-powershell-remoting
 metadata:
   title: Manage single and multiple computers by using Windows PowerShell remoting
   description: "This module explains how to use remoting to perform administration on remote computers."
-  ms.date: 10/14/2022
+  ms.date: 03/21/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: powershell
+  ms.subservice: cmdlets
+  ai-usage: human-only
 title: Manage single and multiple computers by using Windows PowerShell remoting
 summary: This module explains how to use remoting to perform administration on remote computers.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  *   Describe the Windows PowerShell remoting architecture.
-  *   Explain the difference between Windows PowerShell remoting and other forms of remote administration.
-  *   Describe Windows PowerShell remoting security and privacy features.
-  *   Enable remoting on a computer.
-  *   Use Windows PowerShell remoting for single-computer management.
-  *   Use Windows PowerShell remoting for multiple-computer management.
-  *   Use Windows PowerShell remoting.
-  *   Explain the difference between local output and remoting output.
+
+  -   Describe the Windows PowerShell remoting architecture.
+
+  -   Explain the difference between Windows PowerShell remoting and other forms of remote administration.
+
+  -   Describe Windows PowerShell remoting security and privacy features.
+
+  -   Enable remoting on a computer.
+
+  -   Use Windows PowerShell remoting for single-computer management.
+
+  -   Use Windows PowerShell remoting for multiple-computer management.
+
+  -   Use Windows PowerShell remoting.
+
+  -   Explain the difference between local output and remoting output.
 prerequisites: |
-  *   Familiarity with Windows networking technologies and implementation
-  *   Familiarity with Windows Server administration, maintenance, and troubleshooting
-  *   Familiarity with Windows PowerShell and its commands to perform specific tasks
-  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
-  *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
-  *   Familiarity with CIM and WMI technologies
-  *   Familiarity to use variables, arrays, hash tables, and scripting constructs in Windows PowerShell
+  -   Familiarity with Windows networking technologies and implementation
+
+  -   Familiarity with Windows Server administration, maintenance, and troubleshooting
+
+  -   Familiarity with Windows PowerShell and its commands to perform specific tasks
+
+  -   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
+
+  -   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
+
+  -   Familiarity with CIM and WMI technologies
+
+  -   Familiarity to use variables, arrays, hash tables, and scripting constructs in Windows PowerShell
 iconUrl: /training/achievements/manage-single-multiple-computers-use-windows-powershell-remoting.svg
 levels:
 - intermediate
@@ -40,7 +59,6 @@ products:
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.introduction-to-microsofts-responsible-ai-approach.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is a part of the “Introduction to Microsoft's Responsible AI Approach” module.
+  ms.date: 03/22/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

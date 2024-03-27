@@ -4,18 +4,19 @@ Safety and security have never been more important. Part of computer safety is k
 
 When you want to access a computer or a private website, the first thing you may be asked to do is sign in. A sign-in is a way computers verify users. Many of us know the username and password pair we need to access email or our phones. This is called "authentication" or "AuthN."
 
-![Illustration of a username and password pair on a computer screen.](../media/username-password.png)
+:::image type="content" source="../media/username-password-46349b2c.png" alt-text="Illustration of a username and password pair on a computer screen.":::
+
 
 There has been a lot of discussion about how secure usernames and passwords actually are. They generally fit the bill for basic security. However, computer engineers have been working on building something stronger. Authentication can occur using fingerprints and being able to recognize faces. It's now possible to sign into a computer or website with just a smile.
 
 There are different levels of authentication. Programmers may use one or more depending on what they want to secure. Here are some of the levels used in general computing.
 
-|Type |Description |
-|-|-|
-|Basic |Username and password. This is used mainly to secure resources like websites that don't involve personal information or information that is likely to cause harm if it were leaked. |
-|Multi-factor |Username and password plus another method for verification. Another method could be a text message with a code sent to a phone. Or it could be a code emailed to the user, which they have to enter into a form.
-|Passwordless |Using a fingerprint or face to identify a person (also called biometrics). Because fingerprints and faces tend to be hard to fake, this type of authentication usually doesn't require a username and password. |
-|Passkey |A variety of passwordless authentication. It's a relatively new standard being adopted by large tech companies. It uses devices (like a phone) and cryptography to authenticate a person. |
+| **Type**     | **Description**                                                                                                                                                                                                  |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Basic        | Username and password. This is used mainly to secure resources like websites that don't involve personal information or information that is likely to cause harm if it were leaked.                              |
+| Multi-factor | Username and password plus another method for verification. Another method could be a text message with a code sent to a phone. Or it could be a code emailed to the user, which they have to enter into a form. |
+| Passwordless | Using a fingerprint or face to identify a person (also called biometrics). Because fingerprints and faces tend to be hard to fake, this type of authentication usually doesn't require a username and password.  |
+| Passkey      | A variety of passwordless authentication. It's a relatively new standard being adopted by large tech companies. It uses devices (like a phone) and cryptography to authenticate a person.                        |
 
 In the future, it may be possible to sign in with the unique pattern in your eyeball or other ways. These work because they're hard to fake but easy to use.
 

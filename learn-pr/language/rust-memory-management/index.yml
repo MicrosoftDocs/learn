@@ -6,7 +6,7 @@ metadata:
   ms.date: 01/17/2023
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
   ms.devlang: rust
 title: Understand how Rust manages memory
@@ -27,8 +27,6 @@ roles:
 - student
 products:
 - azure
-subjects:
-- development-tools
 units:
 - learn.languages.rust-memory-management.0-introduction
 - learn.languages.rust-memory-management.1-what-is-ownership

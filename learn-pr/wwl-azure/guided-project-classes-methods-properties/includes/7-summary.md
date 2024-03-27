@@ -1,5 +1,3 @@
-
-
 In this guided project, you created a console application, a Game and an Ant class, and developed a few properties and methods that create the grid for Langton's Ant.
 
 You should now be able to do the following:

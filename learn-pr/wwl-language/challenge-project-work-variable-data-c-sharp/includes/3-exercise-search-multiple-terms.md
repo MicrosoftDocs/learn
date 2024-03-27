@@ -39,7 +39,7 @@ In this first challenge exercise, you need to update the single term search feat
   - Notice the order the terms appear in search is now in alphanumeric
   - Notice the messages for matches persist (example: "`Our dog lola is a chase match!`")
   
-    :::image type="content" source="../media/pet-search-animation.gif" alt-text="Example of application searching dog descriptions with four user submitted terms":::
+    :::image type="content" source="../media/pet-search-animation.gif" alt-text="Animated Screenshot of an example of application searching dog descriptions with four user submitted terms.":::
 
 - Review the sample output in the following section, "How to check your work", to further clarify how to implement features
 

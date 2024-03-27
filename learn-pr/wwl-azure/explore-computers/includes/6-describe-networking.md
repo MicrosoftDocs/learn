@@ -10,7 +10,8 @@ The network adapter in a computer is what talks to the other computers. Well, it
 
 A local network is a set of computers joined together. A router is a special computer that controls who can join and how those computers talk to each other. It's "local" because the network only includes those computers that are allowed to join it.
 
-![Illustration of a network and router. Includes a transparent home and computers in each room with a router connecting them all.](../media/router.jpeg)
+:::image type="content" source="../media/router-40d74470.jpeg" alt-text="Illustration of a network and router. Includes a transparent home and computers in each room with a router connecting them all.":::
+
 
 Think of a local network like your home refrigerator. Only certain people can get food out of it. They have to be allowed in your home and given access to it. It's "local" in that sense. Your grocery store is "open" in that anyone can go in and buy items.
 

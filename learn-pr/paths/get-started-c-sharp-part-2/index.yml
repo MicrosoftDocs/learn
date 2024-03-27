@@ -60,8 +60,6 @@ roles:
 products:
 - dotnet
 - vs-code
-subjects:
-- development-tools
 modules:
 - learn.wwl.install-configure-visual-studio-code
 - learn.languages.csharp-call-methods
