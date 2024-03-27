@@ -8,6 +8,7 @@ metadata:
   author: MGoedtel
   ms.author: magoedte
   ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 10
 content: |
   [!include[](includes/2-deploy-docker-image-locally.md)]

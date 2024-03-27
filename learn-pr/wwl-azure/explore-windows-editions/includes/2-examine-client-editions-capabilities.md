@@ -1,4 +1,4 @@
-It's essential that you select the most suitable edition for your organization before you install Windows. The different editions of Windows address the needs of consumers, from individuals to large enterprises. This unit describes the various features of each edition available for Windows and later.
+It's essential that you select the most suitable edition for your organization before you install Windows. The different editions of Windows address the needs of consumers, from individuals to large enterprises. This unit describes the various features of each edition available for Windows 10 and later.
 
 | **Windows 10 / Windows 11 Edition** | **Audience**                                                                      | **Availability**                                                    |
 | ----------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
