@@ -35760,6 +35760,11 @@
       "source_path": "learn-pr/wwl-azure/monitor-health-performance-of-your-web-applications/4-investigate-log-analytics.md",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/monitor-health-performance-of-your-web-applications/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
