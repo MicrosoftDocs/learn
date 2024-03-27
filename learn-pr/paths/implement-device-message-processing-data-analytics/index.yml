@@ -31,7 +31,6 @@ products:
 subjects:
 - iot
 modules:
-- learn.wwl.examine-iot-hub-message-routing
 - learn.wwl.get-started-cloud-storage-for-iot
 - learn.wwl.explore-message-processing-tasks
 trophy:
