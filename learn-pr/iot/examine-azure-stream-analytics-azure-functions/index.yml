@@ -39,6 +39,5 @@ products:
 subjects:
 - iot
 units:
-- learn.wwl.examine-azure-stream-analytics-azure-functions.use-cases
 badge:
   uid: learn.wwl.examine-azure-stream-analytics-azure-functions.badge
