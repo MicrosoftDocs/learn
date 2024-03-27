@@ -34,7 +34,7 @@ There are two options for provisioning capacity:
 
 Regardless of the approach you choose to provision capacity, the process takes the information and establishes a resource group for the Microsoft Copilot for Security service, within your Azure subscription. The SCUs are an Azure resource within that resource group. Deployment of the Azure resource can take a few minutes.
 
-Once admins complete the steps to onboard to Copilot, they can manage capacity by increasing or decreasing provisioned SCUs within the Azure portal or the Security Copilot product itself. Copilot for Security provides a usage monitoring dashboard for capacity owners allowing them to track usage over time and make informed decisions about capacity provisioning.
+Once admins complete the steps to onboard to Copilot, they can manage capacity by increasing or decreasing provisioned SCUs within the Azure portal or the Microsoft Copilot for Security product itself. Copilot for Security provides a usage monitoring dashboard for capacity owners allowing them to track usage over time and make informed decisions about capacity provisioning.
 
 :::image type="content" source="../media/usage-monitoring.png" lightbox="../media/usage-monitoring.png" alt-text="Screen capture showing the usage monitoring dashboard.":::
 
@@ -90,8 +90,8 @@ The Microsoft Copilot for Security roles are:
 - Copilot workspace contributor
 - Copilot workspace reader
 
-Security Copilot will add “All Users” in the tenants to the Workspace Contributor Role, by default as part of the first run experience or initial setup.  
-- Any user within a licensed tenant (purchased security copilot via the consumption model) will be allowed to create a session/prompt by default.
+Copilot for Security will add “All Users” in the tenants to the Workspace Contributor Role, by default as part of the first run experience or initial setup.  
+- Any user within a licensed tenant (purchased Copilot via the consumption model) will be allowed to create a session/prompt by default.
 - If the admin doesn't wish to provide access to everyone in the licensed tenant to be able to run prompts, they can restrict access to run prompts by removing “All users” from the Workspace Contributor Role assignments and adding an existing security group from the Copilot for Security portal.
 - All experiences where Copilot for Security is used (embedded or standalone) will follow the updates made by the admin.
 -	Admin/Owner permissions are required for any privileged operations like associating the workspace to SCU capacity, owner settings, plugin settings, and more.
@@ -101,4 +101,4 @@ For a detailed listing of the permissions granted for each of these roles, refer
 
 Your role controls what activities you have access to, such as configuring settings, assigning permissions, or performing tasks. Copilot doesn't go beyond the access you have. Additionally, individual Microsoft plugins may have their own role requirements for accessing the service and data it represents. As an example, an analyst that has been assigned a security operator role or a Copilot workspace contributor role is able to access the Copilot portal and create sessions, but to utilize the Microsoft Sentinel plugin would need an appropriate role like Microsoft Sentinel Reader to access incidents in the workspace. To access the devices, privileges, and policies available through the Microsoft Intune plugin, that same analyst would need another service-specific role like the Intune Endpoint Security Manager role.
 
-For Microsoft plugins, Copilot uses the OBO (on behalf of) model – meaning that  Copilot knows that a customer has licenses to specific products and is automatically signed into those products. Security Copilot can then access the specific products when the plugin is enabled and, where applicable, parameters are configured.
+For Microsoft plugins, Copilot uses the OBO (on behalf of) model – meaning that  Copilot knows that a customer has licenses to specific products and is automatically signed into those products. Copilot can then access the specific products when the plugin is enabled and, where applicable, parameters are configured.
