@@ -35960,6 +35960,11 @@
       "source_path": "learn-pr/iot/examine-iot-hub-message-routing/4-introduction-to-message-routing.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/3-iot-hub-common-message-format.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
     }
   ]
 }
