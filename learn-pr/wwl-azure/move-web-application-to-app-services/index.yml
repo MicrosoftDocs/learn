@@ -37,7 +37,6 @@ units:
 - learn.wwl.migrate-web-application-to-app-service.introduction
 - learn.wwl.migrate-web-application-to-app-service.monitor-application-insights
 - learn.wwl.migrate-web-application-to-app-service.explore-app-scaling
-- learn.wwl.migrate-web-application-to-app-service.exercise-migrate-spring-app
 - learn.wwl.migrate-web-application-to-app-service.knowledge-check
 - learn.wwl.migrate-web-application-to-app-service.summary
 badge:
