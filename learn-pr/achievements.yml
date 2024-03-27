@@ -3133,3 +3133,8 @@ achievements:
   title: Migrate a web app to Azure App Service
   summary: Learn about the different app hosting options in Azure and perform an app migration.
   iconUrl: /learn/achievements/migrate-web-application-to-app-service.svg
+- uid: learn.wwl.monitor-health-performance-of-your-web-applications.badge
+  type: badge
+  title: Monitor the health and performance of your web apps
+  summary: Learn how to monitor your solution for performance and issues.
+  iconUrl: /learn/achievements/monitor-health-performance-of-your-web-applications.svg
