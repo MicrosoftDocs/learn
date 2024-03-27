@@ -30,6 +30,5 @@ products:
 subjects:
 - cloud-computing
 units:
-- learn.wwl.move-application-data-to-cloud.summary
 badge:
   uid: learn.wwl.move-application-data-to-cloud.badge
