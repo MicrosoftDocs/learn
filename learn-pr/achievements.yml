@@ -3148,3 +3148,8 @@ achievements:
   title: Consider Azure IoT Hub message processing options and constraints
   summary: This module introduces you to services and service features that can be used with, or as an alternative to, IoT Hub message routing to process messages. It also examines IoT Hub message processing limits.
   iconUrl: /training/achievements/messaging-processing-options.svg
+- uid: learn.wwl.examine-azure-stream-analytics-azure-functions.badge
+  type: badge
+  title: Examine Azure Stream Analytics and Azure Functions in Azure IoT Hub solutions
+  summary: This module introduces you to processing IoT data with Azure Stream Analytics and Azure Functions, the capabilities provided by the Stream Analytics service, and the configuration options for Stream Analytics inputs, outputs, and queries.
+  iconUrl: /training/achievements/azure-stream-analytics.svg
