@@ -35815,6 +35815,11 @@
       "source_path": "learn-pr/wwl-azure/move-application-data-to-cloud/10-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/move-application-data-to-cloud/7-optimize-cost-migrated-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
