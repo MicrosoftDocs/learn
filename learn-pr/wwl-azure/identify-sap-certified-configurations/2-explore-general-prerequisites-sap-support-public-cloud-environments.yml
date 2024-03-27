@@ -4,11 +4,10 @@ title: Explore general prerequisites for SAP support in public cloud environment
 metadata:
   title: Explore general prerequisites for SAP support in public cloud environments
   description: "Explore general prerequisites for SAP support in public cloud environments"
-  ms.date: 04/21/2023
+  ms.date: 02/14/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/2-explore-general-prerequisites-sap-support-public-cloud-environments.md)]

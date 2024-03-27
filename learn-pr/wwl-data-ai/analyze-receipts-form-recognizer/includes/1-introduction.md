@@ -1,21 +1,9 @@
 
-A common problem in many organizations is the need to process receipt or invoice data. For example, a company might require expense claims to be submitted electronically with scanned receipts, or invoices might need to be digitized and routed to the correct accounts department. Typically after a document is scanned, someone will still need to manually enter the extracted text into a database. 
 
-Increasingly, organizations with large volumes of receipts and invoices to process are looking for artificial intelligence (AI) solutions that can not only extract the text data from receipts, but also intelligently interpret the information they contain.
+Document intelligence describes AI capabilities that support processing text and making sense of information in text. As an extension of optical character recognition (OCR), document intelligence takes the next step a person might after reading a form or document. It automates the process of extracting, understanding, and saving the data in text.  
 
-Azure's Form Recognizer service can solve for this issue by digitizing fields from forms using optical character recognition (OCR). Azure's OCR technologies extract the contents and structure from forms, such as key, value pairs (eg. Quantity: 3). 
+Consider an organization that needs to process large numbers of receipts for expenses claims, project costs, and other accounting purposes. Suppose someone needs to manually enter the information into a database. The manual process is relatively slow and potentially error-prone. 
 
-![A scanned receipt for the purchase of a Surface Pro and a Surface Pen](../media/contoso-receipt-small.png)
+Using document intelligence, the company can take a scanned image of a receipt, digitize the text with OCR, and pair the field items with their field names in a database. Document intelligence can identify specific data such as the merchant's name, merchant's address, total value, and tax value.  
 
-Using the Form Recognizer service, we can input an image of a receipt like the one above, and return useful information that might be required for an expense claim, including:   
-
-- The name, address, and telephone number of the merchant.
-- The date and time of the purchase.
-- The quantity and price of each item purchased.
-- The subtotal, tax, and total amounts.
-
-In this module you will: 
- 
-- Identify suitable Azure services for processing receipts
-- Provision a Form Recognizer resource
-- Use a Form Recognizer resource to extract information from a receipt
+**Azure AI Document Intelligence** supports features that can analyze documents and forms with prebuilt and custom models. In this module, you explore how Azure AI services provide access to document intelligence capabilities. 

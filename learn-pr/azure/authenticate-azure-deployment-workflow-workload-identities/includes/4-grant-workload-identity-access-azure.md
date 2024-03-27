@@ -2,12 +2,12 @@ By itself, a workload identity can't do anything in your Azure environment. It's
 
 ## Workload identity authorization
 
-Until now, you've focused on what workload identities are and how they can be used to prove the identity of a deployment workflow to Azure Active Directory (Azure AD). This is all about _authentication_.
+Until now, you've focused on what workload identities are and how they can be used to prove the identity of a deployment workflow to Microsoft Entra ID. This is all about _authentication_.
 
-After Azure AD has authenticated a workload identity, the next question becomes: what can this workload identity do? This is the concept of _authorization_. It's the responsibility of the Azure role-based access control (RBAC) system, sometimes called identity and access management (IAM). By using Azure RBAC, you can grant a workload identity access to a specific resource group, subscription, or management group.
+After Microsoft Entra ID has authenticated a workload identity, the next question becomes: what can this workload identity do? This is the concept of _authorization_. It's the responsibility of the Azure role-based access control (RBAC) system, sometimes called identity and access management (IAM). By using Azure RBAC, you can grant a workload identity access to a specific resource group, subscription, or management group.
 
 > [!NOTE]
-> Everything you're doing here is using the Azure RBAC system to grant access to create and manage Azure resources, like your storage accounts, Azure App Service plan, and virtual networks. Azure AD also has its own role system, which is sometimes called _directory roles_. You use these roles to grant permissions for workload identities to manage Azure AD. This module doesn't discuss this subject in depth, but be aware that the term _role_ can be used for both situations in some documentation.
+> Everything you're doing here is using the Azure RBAC system to grant access to create and manage Azure resources, like your storage accounts, Azure App Service plan, and virtual networks. Microsoft Entra ID also has its own role system, which is sometimes called _directory roles_. You use these roles to grant permissions for workload identities to manage Microsoft Entra ID. This module doesn't discuss this subject in depth, but be aware that the term _role_ can be used for both situations in some documentation.
 
 ## Select the right role assignment for your workflow
 

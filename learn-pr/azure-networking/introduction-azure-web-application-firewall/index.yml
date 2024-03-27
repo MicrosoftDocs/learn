@@ -2,16 +2,16 @@
 uid: introduction-azure-web-application-firewall
 metadata:
   title: "Introduction to Azure Web Application Firewall"
-  description: Describe how Azure Web Application Firewall protects Azure web applications from common attacks, including its features, how it’s deployed, and its common use cases.
-  ms.date: 03/10/2023
+  description: Describe how Azure Web Application Firewall protects Azure web applications from common attacks, including its features, how it's deployed, and its common use cases.
+  ms.date: 02/14/2024
   author: vhorne
   ms.author: victorh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-intro-to-product
+  ms.service: web-application-firewall
 title: "Introduction to Azure Web Application Firewall"
-summary: Describe how Azure Web Application Firewall protects Azure web applications from common attacks, including its features, how it’s deployed, and its common use cases.
+summary: Describe how Azure Web Application Firewall protects Azure web applications from common attacks, including the features, how it's deployed, and common use cases.
 abstract: |
-  After completing this module, you’ll be able to:
+  After completing this module, you'll be able to:
   - Explain how Azure Web Application Firewall works to protect Azure web apps from known threats. 
   - Evaluate whether Azure Web Application Firewall is the right solution to protect your Azure web apps from malicious exploits. 
   - Identify and describe use cases for Azure Web Application Firewall.  

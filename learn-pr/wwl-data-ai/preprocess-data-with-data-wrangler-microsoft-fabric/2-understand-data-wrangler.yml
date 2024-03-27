@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.understand-data-wrangler
+title: Understand Data Wrangler
+metadata:
+  title: Understand Data Wrangler
+  description: "Learn how Data Wrangler works in Microsoft Fabric and how it can be used for preprocessing purposes."
+  ms.date: 09/19/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric 
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-understand-data-wrangler.md)]

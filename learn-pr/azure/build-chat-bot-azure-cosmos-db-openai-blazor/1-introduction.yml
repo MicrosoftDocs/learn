@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: |
+    Introduction to the guided project, the goals of the project, and the hypothetical scenario for the project.
+  author: seesharprun
+  manager: jroth
+  ms.author: sidandrews
+  ms.reviewer: mjbrown
+  ms.topic: unit
+  ms.date: 03/07/2024
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

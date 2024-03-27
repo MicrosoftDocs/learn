@@ -4,12 +4,12 @@ title: Design API integration
 metadata:
   title: Design API integration
   description: "Design API integration"
-  ms.date: 03/14/2023
-  author: benjiang
+  ms.date: 02/28/2024
+  author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/7-design-api-integration.md)]

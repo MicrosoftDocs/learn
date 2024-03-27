@@ -3,11 +3,10 @@ uid: learn-xamarin.prepare-to-publish-your-xamarin-application.6-publish-your-ap
 metadata:
   title: Publish your app
   description: "Learn about the options for publishing your app."
-  ms.date: 05/01/2019
+  ms.date: 02/20/2024
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-xamarin
+  ms.topic: unit
   
 title: Publish your application
 durationInMinutes: 4

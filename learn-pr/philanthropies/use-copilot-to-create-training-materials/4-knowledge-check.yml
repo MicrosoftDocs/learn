@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.use-copilot-to-create-training-materials.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is a part of the 'Use Microsoft Copilot to create training materials' module.
+  ms.date: 03/06/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz: 
+  title: Check your knowledge
+  questions: 
+    - content: "What's the primary purpose of using Microsoft Copilot in the creation of training materials?"
+      choices:
+        - content: "To replace the need for a trainer."
+          isCorrect: false
+          explanation: "Incorrect. Microsoft Copilot is a tool to assist the trainer, not to replace them."
+        - content: "To generate content."
+          isCorrect: false
+          explanation: "Incorrect. While Microsoft Copilot can generate content, it serves a broader purpose."
+        - content: "To assist in various steps of material creation."
+          isCorrect: true
+          explanation: "Correct. Microsoft Copilot is used throughout the process of creating training materials."
+    - content: "What's the first step in using Microsoft Copilot for creating a new training program?"
+      choices:
+        - content: "Generating content."
+          isCorrect: false
+          explanation: "Incorrect. The first step is identifying the topic and objectives."
+        - content: "Identifying the topic and objectives."
+          isCorrect: true
+          explanation: "Correct. The first step involves identifying the topic and objectives of the training materials."
+        - content: "Evaluating AI-generated content."
+          isCorrect: false
+          explanation: "Incorrect. Evaluation comes after generating the content."
+    - content: "What's the importance of critically evaluating the AI-generated content?"
+      choices:
+        - content: "To ensure the AI is functioning correctly."
+          isCorrect: false
+          explanation: "Incorrect. While this could be a byproduct, the main reason is to ensure the relevance and accuracy of the content."
+        - content: "To reflect on its relevance and accuracy."
+          isCorrect: true
+          explanation: "Correct. The AI-generated content must be evaluated for its relevance and accuracy."
+        - content: "To decide on the images to be used."
+          isCorrect: false
+          explanation: "Incorrect. Deciding on the images is a separate step."

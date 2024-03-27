@@ -20,7 +20,7 @@ The table below indicates what you should do based on the SIEM tool(s) you're us
 
 Today, Azure Monitor’s SIEM integration capabilities can’t do everything the Azure Log Integration tool could do. Below is our roadmap for addressing known gaps between what you could accomplish with Azure Log Integration and what you can accomplish with Azure Monitor.
 
-**Azure Active Directory logs** – Azure Active Directory logs are the only log type directly integrated with AzLog that aren’t yet available in Azure Monitor.
+**Microsoft Entra logs** – Microsoft Entra logs are the only log type directly integrated with AzLog that aren’t yet available in Azure Monitor.
 
 **Integrate Azure VM logs** – AzLog provided the option to integrate your Azure VM guest operating system logs (e.g., Windows Security Events) with select SIEMs. Azure Monitor has agents available for Linux and Windows that are capable of routing OS logs to an Azure Event Hubs, but end-to-end integration with SIEMs is nontrivial.
 

@@ -1,31 +1,27 @@
 In the previous exercise, you loaded data into two distributed tables and one reference table in Azure Cosmos DB for PostgreSQL. In this exercise, you'll examine table colocation's effects and its impacts on data movement during query execution.
 
 > [!IMPORTANT]
-> This exercise relies on the Azure Cosmos DB for PostgreSQL database and distributed tables created in Unit 3 - Exercise - Load data into distributed tables with Azure Cosmos DB for PostgreSQL.
+> This exercise relies on the Azure Cosmos DB for PostgreSQL database and distributed tables you created in Unit 3.
 
 ## Connect to the database using psql in the Azure Cloud Shell
 
-1. Once your cluster has finished provisioning, navigate to the resource in the Azure portal.
+1. In the Azure portal, navigate to the *learn-cosmosdb-postgresql* cluster you created in Unit 3.
 
 1. From the left-hand navigation menu, select **Connection strings** under **Settings** and copy the connection string labeled **psql**.
 
-    :::image type="content" source="../media/cosmos-db-postgresql-connection-strings-psql.png" alt-text="Screenshot of the Connection strings page of the Azure Cosmos DB Cluster resource. On the Connection strings page, the copy to clipboard button to the right of the psql connection string is highlighted.":::
+    :::image type="content" source="../media/cosmos-db-postgresql-connection-strings-psql.png" alt-text="Screenshot of the Connection strings page of the Azure Cosmos DB Cluster resource; the copy to clipboard button to the right of the psql connection string is highlighted.":::
 
-1. Paste the connection string into a text editor, such as Notepad.exe, and replace the `{your_password}` token with the password you assigned to the `citus` user when creating your cluster. Copy the updated connection string for use below.
+1. Paste the connection string into a text editor, such as Notepad, and replace the `{your_password}` token with the password you assigned to the `citus` user when creating your cluster. Copy the updated connection string for use below.
 
 1. From the **Connection strings** page in the Azure portal, open an Azure Cloud Shell dialog by selecting the Cloud Shell icon on the toolbar in the Azure portal.
 
-    :::image type="content" source="../media/azure-cloud-shell.png" alt-text="Screenshot of the Cloud Shell icon on the Azure portal toolbar and a Cloud Shell dialog is open at the bottom of the browser window.":::
+    :::image type="content" source="../media/azure-cloud-shell.png" alt-text="Screenshot of the Cloud Shell icon on the Azure portal toolbar. A Cloud Shell dialog is open at the bottom of the browser window.":::
 
     The Cloud Shell will open as an embedded panel at the bottom of your browser window.
 
 1. If necessary, select **Bash** as the environment in the Cloud Shell window.
 
     :::image type="content" source="../media/azure-cloud-shell-welcome.png" alt-text="Screenshot of the welcome page of Azure Cloud Shell with a prompt to choose an environment between Bash or PowerShell. Bash is highlighted.":::
-
-1. If you have never opened Cloud Shell before, you may be prompted to mount a storage account. Select the subscription you used for your database account, then select **Create storage**.
-
-    :::image type="content" source="../media/azure-cloud-shell-mount-storage.png" alt-text="Screenshot of the Azure Cloud Shell wizard showing no storage mounted. Azure Subscription (the current subscription) is showing in the Subscription dropdown.":::
 
 1. Now, use the `psql` command-line utility to connect to your database. Paste your updated connection string (the one containing your correct password) at the prompt in the Cloud Shell, and then run the command, which should look similar to the following sample command:
 
@@ -35,13 +31,13 @@ In the previous exercise, you loaded data into two distributed tables and one re
 
 ## Identify the distribution column for each table
 
-1. In the Cloud Shell, run the following query to determine the distribution column defined for each of your distributed tables.
+1. In the Cloud Shell, run the following query to determine the distribution column defined for each of your distributed tables:
 
     ```sql
     SELECT table_name, distribution_column FROM citus_tables;
     ```
 
-1. Note the distribution column for each table in the query output.
+1. Note the distribution column for each table in the query output:
 
     ```output
         table_name     | distribution_column 
@@ -55,7 +51,7 @@ In the previous exercise, you loaded data into two distributed tables and one re
 
 In the previous exercise, you used the same column as the shard key for both the `payment_events` and `payment_users` tables.
 
-1. Attempt to do a complex join between the `payment_events` and `payment_users` table, using the `user_id` field.
+1. Attempt to do a complex join between the `payment_events` and `payment_users` table using the `user_id` field:
 
     ```sql
     SELECT login, event_id
@@ -63,7 +59,7 @@ In the previous exercise, you used the same column as the shard key for both the
     LEFT JOIN payment_users u ON e.user_id = u.user_id;
     ```
 
-1. Run the same query with `EXPLAIN` and review the output.
+1. Run the same query with `EXPLAIN` and review the output:
 
     ```sql
     EXPLAIN VERBOSE
@@ -72,7 +68,7 @@ In the previous exercise, you used the same column as the shard key for both the
         LEFT JOIN payment_users u ON e.user_id = u.user_id;
     ```
 
-1. The output of that query shows it was fragmented and executed across each of the 32 shards in the cluster.
+1. The output of that query shows it was fragmented and executed across each of the 32 shards in the cluster:
 
     ```output
     Custom Scan (Citus Adaptive)  (cost=0.00..0.00 rows=100000 width=40)
@@ -83,14 +79,14 @@ In the previous exercise, you used the same column as the shard key for both the
 
 ## Repartition joins across non-distribution columns
 
-1. Next, you'll look at a complex join between tables whose data isn't colocated. You'll temporarily revert the `payment_merchants` table to a distributed table. Run the following statements to change the `payment_merchants` table from a reference table to a distributed one.
+1. Next, you'll look at a complex join between tables whose data isn't colocated. You'll temporarily revert the `payment_merchants` table to a distributed table. Run the following statements to change the `payment_merchants` table from a reference table to a distributed one:
 
     ```sql
     SELECT undistribute_table('payment_merchants');
     SELECT create_distributed_table('payment_merchants', 'merchant_id');
     ```
 
-1. Now that you have a table to work with that has a different distribution column, run the following query and observe the results.
+1. Now that you have a table to work with that has a different distribution column, run the following query and observe the results:
 
     ```sql
     SELECT name, event_id
@@ -99,13 +95,13 @@ In the previous exercise, you used the same column as the shard key for both the
     LIMIT 5;
     ```
 
-1. You'll receive the following error because complex joins (any joins other than an inner join) between non-colocated tables aren't supported.
+1. You'll receive the following error, because complex joins (any joins other than an inner join) between non-colocated tables aren't supported:
 
     ```output
     ERROR: complex joins are only supported when all distributed tables are co-located and joined on their distribution columns
     ```
 
-1. Now, attempt the same query using an `INNER JOIN`.
+1. Now, attempt the same query using an `INNER JOIN`:
 
     ```sql
     SELECT name, event_id
@@ -119,13 +115,13 @@ In the previous exercise, you used the same column as the shard key for both the
     HINT: Set citus.enable_repartition_joins to on to enable repartitioning
     ```
 
-1. Based on the error and hint, you now know that this join requires dynamically repartitioning the tables so that the coordinator can execute the query. Run the following command to enable repartitioning joins.
+1. Based on the error and hint, you now know that this join requires dynamically repartitioning the tables so that the coordinator can execute the query. Run the following command to enable repartitioning joins:
 
     ```sql
     SET citus.enable_repartition_joins to on;
     ```
 
-1. Execute the `INNER JOIN` query again and observe the results.
+1. Execute the `INNER JOIN` query again and observe the results:
 
     ```sql
     SELECT name, event_id
@@ -162,7 +158,7 @@ In the previous exercise, you used the same column as the shard key for both the
 
 ## Join distributed tables on a non-distribution column
 
-You discovered in the previous task that you couldn't perform complex joins when data is dispersed across different workers. When a SQL query is unsupported, one way to work around it's using common table expressions (CTEs), which use what is referred to as pull-push execution.
+You discovered in the previous task that you couldn't perform complex joins when data is dispersed across different workers. When a SQL query is unsupported, one way to work around it is by using common table expressions (CTEs), which use what is referred to as pull-push execution.
 
 > [!IMPORTANT]
 > The use of CTEs to perform push-pull query execution is considered an anti-pattern and is being used here only to demonstrate the performance impact of running such a query.
@@ -192,7 +188,7 @@ You discovered in the previous task that you couldn't perform complex joins when
 
     This approach allows you to successfully execute the join between your non-colocated tables. However, it's an expensive query to run, and you should avoid this approach.
 
-1. Run an `EXPLAIN` on the query to view the execution plan.
+1. Run an `EXPLAIN` on the query to view the execution plan:
 
     ```sql
     EXPLAIN
@@ -233,7 +229,7 @@ You discovered in the previous task that you couldn't perform complex joins when
     \q
     ```
 
-    **Congratulations**! You have executed multiple queries against your Azure Cosmos DB for PostgreSQL distributed tables and explored the details of how the coordinator optimizes query execution.
+    **Congratulations**! You've executed multiple queries against your Azure Cosmos DB for PostgreSQL distributed tables and explored the details of how the coordinator optimizes query execution.
 
 ## Clean up
 
@@ -245,4 +241,6 @@ It's crucial that you clean up any unused resources. You're charged for the conf
 
 1. In the **Overview** pane, select **Delete resource group**.
 
-1. Enter the name of the resource group you created to confirm and then select **Delete**.
+1. Enter the name of the resource group you created to confirm, then select **Delete**.
+
+1. Select **Delete** again to confirm the deletion.

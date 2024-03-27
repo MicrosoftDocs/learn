@@ -3,20 +3,27 @@ uid: learn.wwl.implement-shared-access-signatures
 metadata:
   title: Implement shared access signatures
   description: "Implement shared access signatures"
-  ms.date: 04/24/2023
+  ms.date: 03/13/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
 title: Implement shared access signatures
 summary: Learn how to use shared access signatures to authorize access to storage resources.
 abstract: |
   After completing this module, you'll be able to:
+
   *   Identify the three types of shared access signatures.
+
   *   Explain when to implement shared access signatures.
+
   *   Create a stored access policy.
 prerequisites: |
   *   You should be familiar with developer concepts and terminology.
+
   *   An understanding of cloud computing and some experience with the Azure portal.
 iconUrl: /training/achievements/signatures-shared-access.svg
 levels:

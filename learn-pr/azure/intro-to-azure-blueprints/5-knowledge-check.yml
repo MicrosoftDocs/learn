@@ -4,12 +4,11 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: "Knowledge check for intro to Azure Blueprints."
-  ms.date: 6/30/2021
-  author: ricmmartins
-  ms.author: ricmart
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  description: Check what you learned about Azure Blueprints.
+  ms.date: 1/2/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 5
 content: |
 quiz:
@@ -19,7 +18,7 @@ quiz:
     - content: "A configuration management tool to deploy Azure Resources."
       isCorrect: false
       explanation: "Incorrect: Azure Blueprints isn't a configuration management tool."
-    - content: "Azure Blueprints are a declarative way to orchestrate the deployment of specific artifacts on Azure."
+    - content: "Azure Blueprints is a declarative way to orchestrate the deployment of specific artifacts on Azure."
       isCorrect: true
       explanation: "Correct: This is the statement which best describes Azure Blueprints"
     - content: "Azure Blueprints is a version control tool for your environment."
@@ -27,15 +26,15 @@ quiz:
       explanation: "Incorrect: Azure Blueprints isn't a version control tool."
   - content: "What are the four artifacts which can be deployed using Azure Blueprints?"
     choices:
-    - content: "Role Assignments, Policy Assignments, ARM Templates, Resource Groups"
+    - content: "Role assignments, policy assignments, ARM templates, resource groups"
       isCorrect: true
       explanation: "Correct: Those are four artifacts which can be deployed using Azure Blueprints."
-    - content: "Network Security Groups, Virtual Machines, Virtual Networks, SQL Databases"
+    - content: "Network security groups, virtual machines, virtual networks, SQL databases"
       isCorrect: false
       explanation: "Incorrect: Those resources can be deployed only through ARM Templates on Azure Blueprints."
     - content: "Azure Kubernetes Services, Azure App Services, Cosmos DB, Azure Container Instances"
       isCorrect: false
-      explanation: "Incorrect: Those resources can be deployed only through ARM Templates on Azure Blueprints."
+      explanation: "Incorrect: Those resources can be deployed only through ARM templates on Azure Blueprints."
   - content: "Azure Blueprints are capable of:"
     choices:
     - content: "Providing recommendations for Azure resources"

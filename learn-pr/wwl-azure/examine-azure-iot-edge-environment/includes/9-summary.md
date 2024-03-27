@@ -1,1 +1,0 @@
-Your team will be responsible for implementing key portions of the company's IoT solution directly on edge devices using Azure IoT Edge technologies. Understanding the features, capabilities, and components of the Azure IoT Edge environment will help the team to work more efficiently once implementation begins.

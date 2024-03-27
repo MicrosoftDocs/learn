@@ -21,7 +21,7 @@ az vm create \
     --name postgresqlvm \
     --admin-username azureuser \
     --admin-password Pa55w.rdDemo \
-    --image UbuntuLTS \
+    --image Ubuntu2204 \
     --public-ip-address-allocation static \
     --public-ip-sku Standard \
     --vnet-name postgresqlvnet \

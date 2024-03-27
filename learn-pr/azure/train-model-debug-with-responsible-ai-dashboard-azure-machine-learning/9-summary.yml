@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.summary
+title: Summary
+metadata:
+  title: Introduction
+  description: "Summary"
+  ms.date: 11/03/2023
+  author: lgayhardt
+  ms.author: lagayhar
+  ms.topic: unit
+  ms.service: machine-learning
+  ms.subservice: responsible-ai  
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]

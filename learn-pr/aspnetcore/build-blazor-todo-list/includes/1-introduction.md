@@ -1,0 +1,3 @@
+To build interactive user interfaces, you need to be able to handle UI events from the browser and update the UI accordingly. Blazor components can handle different kinds of UI events using C# and then render updates based on the events using Razor syntax. Blazor provides several patterns for defining event callbacks, including both synchronous and asynchronous callbacks. Blazor also makes it easy to create two-way data bindings between the values of UI elements and your code.
+
+By the end of this module you'll understand the basics of event handling and data binding in Blazor. You'll use what you learned to build a basic to-do list using Blazor.

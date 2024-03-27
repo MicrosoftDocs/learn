@@ -5,10 +5,9 @@ metadata:
   title: Policy control
   description: Describes the tasks for using services and SIM policies to control the network traffic in a private mobile network.
   ms.date: 11/29/2022
-  author: michael-weizhong-shan
-  ms.author: michaelshan
-  ms.topic: interactive-tutorial
-  ms.service: learning-private-5g-core
+  author: lnyswonger
+  ms.author: lnyswonger
+  ms.topic: unit
 durationInMinutes: 12
 content: |
   [!include[](includes/3-policy-control.md)]

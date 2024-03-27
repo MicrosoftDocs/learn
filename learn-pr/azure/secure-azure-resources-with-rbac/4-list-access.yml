@@ -8,8 +8,7 @@ metadata:
   ms.date: 09/30/2022
   author: rolyon
   ms.author: rolyon
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/4-list-access.md)]

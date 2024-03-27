@@ -1,4 +1,4 @@
-The **Advanced features** page in the **General** area of the **Settings - Endpoints** menu of the Microsoft 365 Defender portal provides the following alert and detection-related settings:
+The **Advanced features** page in the **General** area of the **Settings - Endpoints** menu of the Microsoft Defender portal provides the following alert and detection-related settings:
 
 The Advanced features area in General Settings area provides many an on/off switch for features within the product. The following are settings that are alert focused.
 

@@ -3,11 +3,10 @@ uid: learn-xamarin.xamarin-forms-accessibility.3-exercise-enable-screen-readers
 metadata:
   title: Exercise - Enable your system's screen reader
   description: Enable your system's screen reader to experience the accessibility features you'll implement later in this module.
-  ms.date: 04/20/2021
+  ms.date: 02/20/2024
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-xamarin
+  ms.topic: unit
   
 title: Exercise - Enable your system's screen reader
 durationInMinutes: 5

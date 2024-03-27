@@ -2,7 +2,7 @@
 ## Install Active Directory and create a test user
 In this exercise, you'll install Active Directory and create a user.  This user can be used for testing purposes. 
 
-![Diagram that shows a basic Azure AD environment.](../media/4-exercise-1.png)
+![Diagram that shows a basic Microsoft Entra environment.](../media/4-exercise-1.png)
 
 ## Change the ISO file in Hyper-V
 Now that we have the virtual machine up and the operating system installed, we want to change the ISO file that VM is using.  We're taking this action so we can run the remaining scripts from within the VM.  To change the ISO file, do the following tasks:
@@ -112,7 +112,7 @@ Do the following tasks:
     ```
 
 ## Create a Windows Server AD user
-Now that you've our Active Directory environment, you need to a test account.  This account will be created in our on-premises AD environment and then synchronized to Azure AD.  
+Now that you've our Active Directory environment, you need to a test account.  This account will be created in our on-premises AD environment and then synchronized to Microsoft Entra ID.  
 
 The PowerShell script below can be used to accomplish this task.  The script contains the following variables and these can be changed to suit your environment or preferences.
 
@@ -171,5 +171,3 @@ To verify this exercise, we'll connect to the virtual machine.
 
 
 > [!VIDEO https://msit.microsoftstream.com/embed/video/6aae0840-98dc-b478-91f5-f1ecf1b8ddd0?autoplay=false&amp;showinfo=true]
-
-

@@ -1,5 +1,3 @@
-
-
 You can use Azure Site Recovery to orchestrate the failover of full SAP deployment across Azure regions. This unit details the steps for replicating virtual machines for disaster recovery for a multi-tier SAP NetWeaver app deployment, and is part 1 of the setup for disaster recovery using Azure Site Recovery. When relying on Azure Site Recovery to implement disaster recovery for SAP deployments across Azure regions, you would use the following, full sequence of steps:
 
 1. Replicate virtual machines
@@ -67,7 +65,7 @@ For Site Recovery to work as expected, you need to allow outbound network connec
 :::row-end:::
 :::row:::
   :::column:::
-    Azure Active Directory
+    Microsoft Entra ID
   :::column-end:::
   :::column:::
     `login.microsoftonline.com`
@@ -133,7 +131,7 @@ Azure Site Recovery provides three built-in RBAC roles to control Site Recovery 
 1. In **Recovery Services vaults**, select the vault name &gt; **+Replicate**.
 2. In **Source**, select **Azure**.
 3. In **Source location**, select the source Azure region where your VMs are currently running.
-4. Select the **Source subscription** where the virtual machines are running. This can be any subscription within the same Azure Active Directory tenant where your recovery services vault exists.
+4. Select the **Source subscription** where the virtual machines are running. This can be any subscription within the same Microsoft Entra tenant where your recovery services vault exists.
 5. Select the **Source resource group**, and select **OK** to save the settings.
 
 #### Select the VMs
@@ -164,7 +162,7 @@ Site Recovery creates default settings and replication policy for the target reg
         **Target subscription**
       :::column-end:::
       :::column:::
-        By default, the target subscription is the same as the source subscription. Select **Customize** to select a different target subscription within the same Azure Active Directory tenant.
+        By default, the target subscription is the same as the source subscription. Select **Customize** to select a different target subscription within the same Microsoft Entra tenant.
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -281,7 +279,7 @@ Site Recovery creates default settings and replication policy for the target reg
       :::column:::
         By default, Site Recovery takes an app-consistent snapshot every 4 hours. You can configure any value between 1 and 12 hours.
 
-    An app-consistent snapshot is a point-in-time snapshot of the application data inside the VM. Volume Shadow Copy Service (VSS) ensures that app on the VM are in a consistent state when the snapshot is taken.
+    An app-consistent snapshot is a point-in-time snapshot of the application data inside the VM. Volume Shadow Copy Service (VSS) ensures that apps on the VM are in a consistent state when the snapshot is taken.
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -289,7 +287,7 @@ Site Recovery creates default settings and replication policy for the target reg
         **Replication group**
       :::column-end:::
       :::column:::
-        If your application needs multi-VM consistency across VMs, you can create a replication group for those VMs. By default, the selected VMs are not part of any replication group.
+        If your application needs multi-VM consistency across VMs, you can create a replication group for those VMs. By default, the selected VMs aren't part of any replication group.
       :::column-end:::
     :::row-end:::
 
@@ -307,12 +305,12 @@ If the source VM has Azure disk encryption (ADE) enabled, review the settings.
 
 1. Verify the settings:
 
-     - **Disk encryption key vaults**: By default, Site Recovery creates a new key vault on the source VM disk encryption keys, with an `asr` suffix. If the key vault already exists, it is reused.
+     - **Disk encryption key vaults**: By default, Site Recovery creates a new key vault on the source VM disk encryption keys, with an `asr` suffix. If the key vault already exists, it's reused.
      - **Key encryption key vaults**: By default, Site Recovery creates a new key vault in the target region. The name has an `asr` suffix and is based on the source VM encryption keys. If the key vault created by Site Recovery already exists, it's reused.
 2. Select **Customize** to select custom key vaults.
 
 > [!NOTE]
-> Only Azure VMs running Windows operating systems and enabled for encryption with Azure AD app are currently supported by Azure Site Recovery.
+> Only Azure VMs running Windows operating systems and enabled for encryption with Microsoft Entra app are currently supported by Azure Site Recovery.
 
 ### Track replication status
 

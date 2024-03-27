@@ -1,5 +1,6 @@
 
 
+
 Azure Container Apps implements container app versioning by creating revisions. A revision is an immutable snapshot of a container app version. You can use revisions to release a new version of your app, or quickly revert to an earlier version of your app. New revisions are created when you update your application with [revision-scope changes](/azure/container-apps/revisions#revision-scope-changes). You can also update your container app based on a specific revision.
 
 You can control which revisions are active, and the external traffic that is routed to each active revision. Revision names are used to identify a revision, and in the revision's URL. You can customize the revision name by setting the revision suffix.

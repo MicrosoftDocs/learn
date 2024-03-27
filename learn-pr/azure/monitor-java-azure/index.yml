@@ -4,15 +4,15 @@ metadata:
   moduleType: standard
   title: Monitoring Java applications on Azure
   description: Learn how to use monitoring for your Java applications on Azure
-  ms.date: 07/07/2021
+  ms.date: 01/07/2024
   author: roryp
   ms.author: ropreddy
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.contributors:
   - ropreddy-07092021
   ms.custom:
   - team=cloud_advocates
+  ms.service: azure 
 title: Monitoring Java applications on Azure
 summary: Learn how to use monitoring for your Java applications on Azure
 abstract: |
@@ -38,8 +38,6 @@ products:
 - azure
 - azure-database-mysql
 - azure-spring-apps
-subjects:
-- development-tools
 units:
 - learn.monitor-java-azure.learning-content
 - learn.monitor-java-azure.exercise-setup

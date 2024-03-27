@@ -2,18 +2,19 @@ The potential of quantum computers to solve important scientific problems extend
 
 Given these requirements, resource estimation becomes crucial as you develop quantum computers and quantum solutions for commercial uses. It's important to  understand the impact of architectural design choices and QEC schemes as you plan your quantum computing solution.
 
-So, get ready! Azure Quantum has a tool that you can use to analyze the impact of various choices for architectural parameters like physical qubit and QEC models on overall physical resource estimates. In this module, you learn some basic concepts about resource estimation in fault-tolerant quantum computing, and you explore the Azure Quantum Resource Estimator.
+You can use the Azure Quantum Resource Estimator to analyze the impact of various choices for architectural parameters like physical qubit and QEC models on overall physical resource estimates. In this module, you learn some basic concepts about resource estimation in fault-tolerant quantum computing, and you explore the Azure Quantum Resource Estimator.
 
 ## Learning objectives
 
-After you complete this module, you'll be able to:
+By the end of this module, you'll be able to:
 
-- Identify what resource estimation is and why it's important.
-- Use the Azure Quantum Resource Estimator.
-- Estimate the resources of an algorithm for practical quantum advantage.
+- Explain what the Azure Quantum Resource Estimator is.
+- Define the target parameters of the Azure Quantum Resource Estimator.
+- Estimate the resources of a quantum algorithm using the Azure Quantum Resource Estimator.
 
 ## Prerequisites
 
-- An Azure Quantum workspace
-
-If you don't have a workspace yet, we recommend that you complete the [Get started with Azure Quantum](/training/modules/get-started-azure-quantum/?azure-portal=true) module first.
+- The latest version of [Visual Studio Code](https://code.visualstudio.com/download) or open [VS Code on the Web](https://vscode.dev/).
+- The latest version of the [Azure Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) extension.
+- A Python environment with [Python and Pip](https://apps.microsoft.com/detail/9NRWMJP3717K) installed.
+- VS Code with [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python), and [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) extensions installed.

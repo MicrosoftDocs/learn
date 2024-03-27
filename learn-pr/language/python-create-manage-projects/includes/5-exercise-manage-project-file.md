@@ -106,7 +106,7 @@ Let's first simulate being on an earlier version of `python-dateutil`.
 1. Run `pip install`:
 
    ```console
-   pip install python-dateutil===2.7.4
+   pip install python-dateutil==2.7.4
    ```
 
    Other versions will be uninstalled before the specified version is installed:

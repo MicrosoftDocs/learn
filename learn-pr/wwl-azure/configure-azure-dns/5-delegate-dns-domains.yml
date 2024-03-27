@@ -4,13 +4,12 @@ title: Delegate DNS domains
 metadata:
   title: Delegate DNS domains
   description: "Delegate DNS domains"
-  ms.date: 01/10/2023
+  ms.date: 11/20/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/5-delegate-dns-domains.md)]

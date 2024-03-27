@@ -1,5 +1,3 @@
-
-
 In this module, you've learned how to:
 
 - Define a hyperparameter search space.

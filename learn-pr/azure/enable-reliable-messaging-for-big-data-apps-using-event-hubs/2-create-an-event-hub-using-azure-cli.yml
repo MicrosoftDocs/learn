@@ -7,8 +7,9 @@ metadata:
   ms.date: 04/04/2023
   author: spelluru
   ms.author: spelluru
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 10
 content: |
   [!include[](includes/2-create-an-event-hub-using-azure-cli.md)]

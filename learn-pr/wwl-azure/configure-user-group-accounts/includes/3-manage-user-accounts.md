@@ -1,8 +1,8 @@
-There are several ways to add cloud identity user accounts in Azure Active Directory (Azure AD). A common approach is by using the Azure portal. User accounts can also be added to Azure AD through Microsoft 365 Admin Center, Microsoft Intune admin console, and the Azure CLI.
+There are several ways to add cloud identity user accounts in Microsoft Entra ID. A common approach is by using the Azure portal. User accounts can also be added to Microsoft Entra ID through Microsoft 365 Admin Center, Microsoft Intune admin console, and the Azure CLI.
 
 ### Things to know about cloud identity accounts
 
-Let's review how cloud identity user accounts are defined in Azure AD. Here's an example of the new **User** page in the Azure portal. The administrator can **Create** a user within the organization or **Invite** a guest user to provide access to organization resources:
+Let's review how cloud identity user accounts are defined in Microsoft Entra ID. Here's an example of the new **User** page in the Azure portal. The administrator can **Create** a user within the organization or **Invite** a guest user to provide access to organization resources:
 
 :::image type="content" source="../media/add-user-accounts-133b7dbf.png" alt-text="Screenshot of the User page in the Azure portal.":::
 
@@ -24,4 +24,4 @@ There are several points to consider about managing user accounts. As you review
 
 - **Consider restore options for deleted accounts**. Include restore scenarios in your account management plan. Restore operations for a deleted account are available up to 30 days after an account is removed. After 30 days, a deleted user account can't be restored.
 
-- **Consider gathered account data**. Collect sign-in and audit log information for user accounts. Azure AD lets you gather this data to help you analyze and improve your infrastructure.
+- **Consider gathered account data**. Collect sign-in and audit log information for user accounts. Microsoft Entra ID lets you gather this data to help you analyze and improve your infrastructure.

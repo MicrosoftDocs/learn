@@ -4,12 +4,11 @@ title: What are delivery plans?
 metadata:
   title: What are delivery plans?
   description: Learn how to manage delivery schedules across multiple Agile teams.
-  ms.date: 06/24/2022
+  ms.date: 10/06/2023
   ms.custom: devdivchpfy22
   author: chcomley
   ms.author: chcomley
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/2-what-are-delivery-plans.md)]

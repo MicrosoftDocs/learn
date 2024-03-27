@@ -6,8 +6,7 @@ metadata:
   ms.date: 02/07/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: module
 title: Introduction to data engineering on Azure
 summary: Microsoft Azure provides a comprehensive platform for data engineering; but what is data engineering? Complete this module to find out.
 abstract: |

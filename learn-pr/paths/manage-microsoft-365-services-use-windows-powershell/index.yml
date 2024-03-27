@@ -2,12 +2,11 @@
 uid: learn.wwl.manage-microsoft-365-services-use-windows-powershell
 metadata:
   title: Manage Microsoft 365 services by using Windows PowerShell
-  description: This learning path explains how to efficiently manage the most commonly used services in Microsoft 365, such as Microsoft Azure Active Directory (Azure AD), Microsoft Exchange Online, Microsoft SharePoint Online, and Microsoft Teams.
+  description: This learning path explains how to efficiently manage the most commonly used services in Microsoft 365, such as Microsoft Entra ID, Microsoft Exchange Online, Microsoft SharePoint Online, and Microsoft Teams.
   ms.date: 12/21/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Manage Microsoft 365 services by using Windows PowerShell
 prerequisites: |
   *   Familiarity with Windows networking technologies and implementation
@@ -20,7 +19,7 @@ prerequisites: |
   *   Familiarity to administer remote computers with Windows PowerShell
   *   Familiarity to manage Azure resources with Windows PowerShell
 summary: |
-  This learning path explains how to efficiently manage the most commonly used services in Microsoft 365, such as Microsoft Azure Active Directory (Azure AD), Microsoft Exchange Online, Microsoft SharePoint Online, and Microsoft Teams.
+  This learning path explains how to efficiently manage the most commonly used services in Microsoft 365, such as Microsoft Entra ID, Microsoft Exchange Online, Microsoft SharePoint Online, and Microsoft Teams.
 iconUrl: /training/achievements/manage-microsoft-365-services-use-windows-powershell.svg
 levels:
 - intermediate
@@ -28,14 +27,13 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-cloud-shell
 - azure-powershell
 - azure-virtual-machines
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 modules:

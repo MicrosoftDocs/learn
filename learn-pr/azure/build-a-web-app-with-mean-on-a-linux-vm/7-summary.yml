@@ -5,10 +5,10 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 06/10/2022
-  author: ericd-mst-github
-  ms.author: erd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: ju-shim
+  ms.author: jushiman
+  ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 3
 content: |
   [!include[](includes/7-summary.md)]

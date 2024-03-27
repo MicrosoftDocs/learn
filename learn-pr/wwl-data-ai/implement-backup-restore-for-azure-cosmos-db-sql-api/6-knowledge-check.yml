@@ -4,22 +4,21 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/18/2022
+  ms.date: 02/27/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 quiz:
   questions:
   - content: "To restore a periodic backup you must?"
     choices:
-    - content: "In the Azure portal Azure Cosmos DB page, select *Restore*"
+    - content: "In the Azure portal Azure Cosmos DB page, select *Restore*."
       isCorrect: false
       explanation: "That's incorrect. This option allows you to restore a deleted Azure Cosmos DB account."
-    - content: "Open a ticket with the Azure support team to restore the backup for you"
+    - content: "Open a ticket with the Azure support team to restore the backup for you."
       isCorrect: true
       explanation: "That's correct. You can't restore an Azure Cosmos DB account or any of its data, only the Azure support team can do that, so a support ticket must be opened to restore the data."
     - content: "Under Azure Cosmos DB account Data Explorer, run the SQL Query **restore from \"AZUREBLOBSTORAGEPATH\"**, replace AZUREBLOBSTORAGEPATH for the URL of your backup file."

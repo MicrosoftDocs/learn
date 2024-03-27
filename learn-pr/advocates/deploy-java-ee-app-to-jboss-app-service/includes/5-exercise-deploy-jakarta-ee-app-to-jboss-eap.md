@@ -1,4 +1,4 @@
-In this exercise, you deploy a Java EE (Jakarta EE) application to JBoss EAP on Azure App Service. You use the Maven plug-in to configure the project, compile and deploy the application, and configure a data source.
+In this exercise, you'll deploy a Java EE (Jakarta EE) application to JBoss EAP on Azure App Service. You use the Maven plug-in to configure the project, compile and deploy the application, and configure a data source.
 
 ## Configure the app with the Maven Plugin for Azure App Service
 
@@ -22,9 +22,9 @@ Let's configure the application by executing the configuration goal in the Maven
 |  `Define value for pricingTier [P1v3]:`  |  `P1v3`  |
 |  `Confirm (Y/N) [Y]:` | `Y` |
 
-After you run the command, you'll see look like the following messages in the terminal.
+After you run the command, you'll get messages like the following in the terminal:
 
-```bash
+```output
 $ ./mvnw com.microsoft.azure:azure-webapp-maven-plugin:2.9.0:config
 [INFO] Scanning for projects...
 [INFO] 
@@ -129,8 +129,7 @@ After the command finishes, you can see that following entry is added in your Ma
 > [!IMPORTANT]
 > Check the `<region>` element. If it's not the same installation location as MySQL, change it to the same location.
 
-After adding the above configuration for deploying to the Azure, add the following XML entries to deploy the startup file.  
-The resource `<type>startup</type>` deploys the specified script as `startup.sh` (Linux) or `startup.cmd` (Windows) to `/home/site/scripts/`. We configure the startup script in the following step.
+After adding the above configuration for deploying to the Azure, add the following XML entries to deploy the startup file. The resource `<type>startup</type>` deploys the specified script as `startup.sh` (Linux) or `startup.cmd` (Windows) to `/home/site/scripts/`. We configure the startup script in the following step.
 
 ```xml
               <!-- Please add following lines -->
@@ -145,7 +144,7 @@ The resource `<type>startup</type>` deploys the specified script as `startup.sh`
 ```
 
 > [!NOTE]  
-> You can specify the following resource to deploy in the XML.
+> You can specify the following resource to deploy in the XML:
 > - `type=<war|jar|ear|lib|startup|static|zip>`
 > 
 >    - `type=war` will deploy the war file to `/home/site/wwwroot/app.war` if `path` is _not_ specified  
@@ -164,7 +163,7 @@ Now, check the values for the resource group name and application name from the 
 <appName>jakartaee-app-on-jboss-1625038814881</appName>
 ```
 
-If you're using Bash, configure the environment variables with the following command. These values are used later.
+If you're using Bash, configure the environment variables with the following command. You'll use these values later.
 
 ```bash
 export RESOURCEGROUP_NAME=jakartaee-app-on-jboss-1625038814881-rg
@@ -173,7 +172,7 @@ export WEBAPP_NAME=jakartaee-app-on-jboss-1625038814881
 
 ## Compile and build the Java EE app
 
-After you configured the Azure App Service deployment settings, compile and package the source code.
+After you configure the Azure App Service deployment settings, compile and package the source code.
 
 ```bash
 ./mvnw clean package
@@ -181,7 +180,7 @@ After you configured the Azure App Service deployment settings, compile and pack
 
 The following output appears in the terminal:
 
-```text
+```output
 [INFO] Packaging webapp
 [INFO] Assembling webapp [jakartaee-app-on-jboss] in [/private/tmp/mslearn-jakarta-ee-azure/target/ROOT]
 [INFO] Processing war project
@@ -207,7 +206,7 @@ After you compile and package the code, deploy the application:
 
 The following message appears in the terminal:
 
-```text
+```output
 [INFO] Creating resource group jakartaee-app-on-jboss-1625038814881-rg in region westeurope...
 [INFO] Successfully created resource group jakartaee-app-on-jboss-1625038814881-rg.
 [INFO] Creating app service plan...
@@ -225,9 +224,9 @@ The following message appears in the terminal:
 [INFO] ------------------------------------------------------------------------
 ```
 
-Note down the URL of the deployed application, particularly the following line in the Maven output:
+Note the URL of the deployed application, particularly the following line in the Maven output:
 
-```text
+```output
 [INFO] Successfully deployed the artifact to https://jakartaee-app-on-jboss-1625038814881.azurewebsites.net
 ```
 
@@ -260,7 +259,7 @@ To create a MySQL `DataSource` object in JBoss EAP, we created the following sta
 > [!NOTE]
 > In the script, we bind the MySQL DataSource by using a JBoss CLI command. The connection string, username, and password use the environment variables `MYSQL_CONNECTION_URL`, `MYSQL_USER`, and `MYSQL_PASSWORD`.
 
-The source of the script file is shown next.  This script file has already been uploaded to App Service, but it hasn't yet been configured to be invoked.
+The source of the script file is shown next. This script file has already been uploaded to App Service, but it hasn't yet been configured to be invoked.
 
 ```shell
 #!/usr/bin/bash
@@ -290,7 +289,7 @@ exit
 EOF
 ```
 
-Now configure your App Service instance to invoke the startup script:
+Now, configure your App Service instance to invoke the startup script:
 
 # [Linux/Mac OS X](#tab/linux)
 
@@ -300,7 +299,7 @@ az webapp config set --startup-file '/home/site/scripts/startup.sh' \
 -g ${RESOURCEGROUP_NAME}
 ```
 
-# [Git BASH for Windows](#tab/windows)
+# [Git-bash for Windows](#tab/windows)
 
 ```azurecli
 export MSYS_NO_PATHCONV=1
@@ -310,7 +309,7 @@ az webapp config set --startup-file '/home/site/scripts/startup.sh' \
 ```
 ---
 
-After the script runs, it will be invoked every time the application server is restarted.
+After the script runs, it'll be invoked every time the application server is restarted.
 
 > [!NOTE]
 > If your deployment artifact isn't `ROOT.war`, you need to change the `--driver-name=YOUR_ARTIFACT.war_com.mysql.cj.jdbc.Driver_8_0` value too.
@@ -347,8 +346,7 @@ Access the following file:
 │   │   │       └── persistence.xml
 ```
 
-Check if the `DataSource` name matches the name used in the configuration.
-The code already created the JNDI name as `java:jboss/datasources/JPAWorldDataSource`:
+Check if the `DataSource` name matches the name used in the configuration. The code already created the JNDI name as `java:jboss/datasources/JPAWorldDataSource`:
 
 ```xml
   <persistence-unit name="JPAWorldDatasourcePU" transaction-type="JTA">
@@ -375,12 +373,11 @@ public class CityService {
 
 ## Access the application
 
-In the sample application, we implemented three REST endpoints.
-You can access the application and validate these endpoints by using a web browser or a `curl` command.
+In the sample application, we implemented three REST endpoints. You can access the application and validate these endpoints by using a web browser or a `curl` command.
 
 To access the application, you need to reference the application URL, which you got from an earlier section:
 
-```text
+```output
 [INFO] Successfully deployed the artifact to  
 https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net
 ```
@@ -397,7 +394,7 @@ $ curl https://${WEBAPP_NAME}.azurewebsites.net/area
 ["North America","Asia","Africa","Europe","South America","Oceania","Antarctica"]$ 
 ```
 
-And if you specify the continent in the URL, you can get all the countries in the specified continent.
+If you specify the continent in the URL, you can get all the countries/regions in the specified continent.
 
 :::image type="content" source="../media/rest-endpoint-continent.png" alt-text="Screenshot that shows continent as the REST endpoint.":::
 
@@ -432,7 +429,7 @@ $ curl https://${WEBAPP_NAME}.azurewebsites.net/area/Asia | jq '.[] | { name: .n
 ....
 ```
 
-Finally, if you specify a country code after `/countries`, you can get all the cities that have population greater than 1 million within the country/region.
+Finally, if you specify a country/region code after `/countries`, you can get all the cities that have population greater than 1 million within the country/region.
 
 :::image type="content" source="../media/rest-endpoint-cities.png" alt-text="Screenshot that shows cities as the REST endpoint.":::
 
@@ -461,4 +458,4 @@ $ curl https://${WEBAPP_NAME}.azurewebsites.net/countries/JPN | jq '.[].name'
 
 You've now validated the application REST endpoints and tested that your application can get data from your MySQL database.
 
-In the next unit, examine the server logs.
+In the next unit, you'll examine the server logs.

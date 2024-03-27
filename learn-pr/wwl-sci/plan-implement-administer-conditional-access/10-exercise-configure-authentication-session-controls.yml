@@ -4,13 +4,10 @@ title: Exercise - Configure authentication session controls
 metadata:
   title: Exercise - Configure authentication session controls
   description: "Exercise - Configure authentication session controls"
-  ms.date: 02/03/2023
+  ms.date: 10/19/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/10-exercise-configure-authentication-session-controls.md)]

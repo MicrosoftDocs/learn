@@ -4,11 +4,10 @@ title: Explore backup and restore of Azure virtual machines
 metadata:
   title: Explore backup and restore of Azure virtual machines
   description: "Explore backup and restore of Azure virtual machines"
-  ms.date: 04/25/2023
+  ms.date: 10/27/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/2-explore-backup-restore-azure-virtual-machines.md)]

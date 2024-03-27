@@ -1,22 +1,21 @@
 ### YamlMime:Module
 uid: learn.design-monitoring-strategy-on-azure
 metadata:
-  title: Design a holistic monitoring strategy on Azure
-  description: Use monitoring services on Azure to bring operational excellence to your applications and infrastructure.
-  ms.date: 09/07/2022
-  author: kayodeprinceMS
-  ms.author: kaprince
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Design a holistic monitoring strategy on Azure
-summary: Use monitoring services on Azure to bring operational excellence to your applications and infrastructure.
+  title: Design a full-stack monitoring strategy on Azure
+  description: Use monitoring services on Azure to help bring operational excellence and security to your applications and infrastructure.
+  ms.date: 11/13/2023
+  author: bwren
+  ms.author: bwren
+  ms.topic: module
+  ms.service: azure
+title: Design a full-stack monitoring strategy on Azure
+summary: Use monitoring services on Azure to help bring operational excellence and security to your applications and infrastructure.
 abstract: | 
-  In this module, you will:
-  - Select the appropriate monitoring solution based on use case
-  - Integrate monitoring solutions to create a unified monitoring strategy
+  - Select the appropriate monitoring solutions based on use cases.
+  - Choose a combination of monitoring solutions to create a unified full-stack monitoring strategy.
 prerequisites: | 
-  - Basic knowledge of Azure services
-  - Basic knowledge of operational concepts, such as monitoring, logging, and alerting
+  - Basic knowledge of Azure application, virtualization, and container services
+  - Basic knowledge of operational concepts like monitoring, logging, and alerting
 iconUrl: /training/achievements/design-monitoring-strategy-on-azure.svg
 levels:
 - intermediate
@@ -26,9 +25,8 @@ roles:
 products:
 - azure
 - azure-monitor
-- azure-sentinel
-- azure-security-center
-- azure-application-insights
+- microsoft-sentinel
+- defender-for-cloud
 subjects:
 - it-management-monitoring
 units:

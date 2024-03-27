@@ -3,11 +3,11 @@ uid: learn.wwl.examine-azure-security-center-azure-defender-for-iot
 metadata:
   title: Examine Microsoft Defender for Cloud and Microsoft Defender for IoT
   description: "This module introduces you to various Azure services that can be used to monitor and enhance the security of your solution and examines the features and capabilities of Microsoft Defender for IoT."
-  ms.date: 07/14/2022
+  ms.date: 10/09/2023
   author: wwlpublish
-  ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: serlingdavis
+  ms.topic: module
+  ms.service: defender-for-iot
 title: Examine Microsoft Defender for Cloud and Microsoft Defender for IoT
 summary: This module introduces you to various Azure services that can be used to monitor and enhance the security of your solution and examines the features and capabilities of Microsoft Defender for IoT.
 abstract: |
@@ -21,7 +21,7 @@ prerequisites: |
   - Explain the features and capabilities of IoT Hub and implement secure device-to-cloud communication between an IoT device and an IoT hub instance.
   - Describe the Azure IoT SDKs for devices and services, and how Visual Studio Code, Azure CLI, and the Azure Cloud Shell can be used to configure and develop components of an IoT solution.
   - Describe the features and capabilities of Azure IoT Edge.
-iconUrl: /training/achievements/security-center-defender-examine.svg
+iconUrl: /learn/achievements/security-center-defender-examine.svg
 levels:
 - intermediate
 roles:

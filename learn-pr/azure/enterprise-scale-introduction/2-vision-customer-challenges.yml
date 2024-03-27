@@ -4,10 +4,9 @@ metadata:
   title: Vision and top customer challenges
   description: Vision and top customer challenges
   ms.date: 10/17/2022
-  author: JefferyMitchell
-  ms.author: jemitche
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 title: Vision and top customer challenges
 durationInMinutes: 10
 content: |
@@ -44,4 +43,4 @@ quiz:
       explanation: An organization should develop a cloud security strategy before it implements a landing zone.
     - content: Adopting a skills readiness plan.
       isCorrect: false
-      explanation: This should happen during the Plan phase of the Cloud Adoption Framework.
+      explanation: This task should happen during the Plan phase of the Cloud Adoption Framework.

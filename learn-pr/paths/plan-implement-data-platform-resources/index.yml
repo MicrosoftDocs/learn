@@ -6,8 +6,7 @@ metadata:
   ms.date: 04/26/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Plan and implement data platform resources
 prerequisites: |
   - Familiarity with on-premises virtualization technologies, including: VMs, virtual networking, and virtual hard disks.

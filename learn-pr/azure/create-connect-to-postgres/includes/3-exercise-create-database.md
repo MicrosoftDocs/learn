@@ -1,59 +1,56 @@
-We want to have a large, high-performance database for the trial of our payment app.
+You want to have a large, high-performance database for the trial of your payment app.
 
-In this exercise, we'll:
+In this exercise:
 
-* Create an Azure Database for PostgreSQL instance in the Azure portal
-* Change the pricing tier and backup options
+- Create an Azure Database for PostgreSQL instance in the Azure portal
+- Change the pricing tier and backup options
 
-The Azure Sandbox gives you a safe, sandboxed environment to use Azure resources to complete the exercises, for free.
+[!INCLUDE[azure-exercise-subscription-prerequisite](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
-1. Sign in to the Azure portal by using the same account that you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com).
 
-    > [!div class="nextstepaction"]
-    > [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+1. Select **Create a resource** > **Databases** > **Azure Database for PostgreSQL**. You can also use the **Search** functionality to find this category. Select **Create**.
 
-1. Select **Create a resource** > **Databases** > **Azure Database for PostgreSQL**. You can also use the **Search** functionality to find this category.
+    :::image type="content" source="../media/3a-create.png" alt-text="Screenshot shows the create option for Azure Database for PostgreSQL.":::
 
-    :::image type="content" source="../media/3a-create.png" alt-text="Create Azure Database for PostgreSQL.":::
+1. Under **Azure Database for PostgreSQL**, for **Resource type**, select **Single server**, and then select **Create**.
 
-1. In the **Single server** box, select **Create**.
+    :::image type="content" source="../media/3b-create-single-server.png" alt-text="Screenshot shows the Single server Resource type.":::
 
-    :::image type="content" source="../media/3b-create-single-server.png" alt-text="Create single server deployment.":::
-     > The portal will display a PostgreSQL server configuration screen. Enter the following information.
+1. The Azure portal displays a PostgreSQL server configuration screen. Enter the following information.
 
-    |Parameter  |Value  |
-    |---------|---------|
-    | On the **Basics** tab, under **Project details** section: |
-    |**Subscription**     |  Leave as **Concierge subscription**      |
-    |**Resource group**     | learn-xxx       |
-    | Under **Server details** section: |
-    |**Server name** |  *Choose a unique name*, such as payment-server-demo |
-    |**Data source** |  Leave as **none**.  |
-    |**Location**| Leave the default, or use a region that's close to you. |
-    |**Version**| Leave the default version. |
-    |**Compute + storage**     |  Leave the default of **General Purpose**.       |
-    | Under **Administrator account** section: |
-    |**Admin username**| **paymentadmin** |
-    |**Password/Confirm password**|  Choose and confirm a password. |
+    | Parameter | Value |
+    |:----------|:------|
+    | On the **Basics** tab, under **Project details**: |
+    | **Subscription**   | Leave as **Concierge subscription**. |
+    | **Resource group** | learn-xxxxx (xxxxx = any name you choose) |
+    | Under **Server details**:                                                       |
+    | **Server name**       | Choose a unique name, such as *payment-server-demo*.    |
+    | **Data source**       | Leave as **none**.                                      |
+    | **Location**          | Leave the default, or use a region that's close to you. |
+    | **Version**           | Leave the default version.                              |
+    | **Compute + storage** |  Leave the default of **General Purpose**.              |
+    | Under **Administrator account**:                                |
+    | **Admin username**            | **paymentadmin**                |
+    | **Password/Confirm password** |  Choose and confirm a password. |
 
-1. Note the password and server name down for later use.
+    > [!NOTE]
+    > You need the resource group, server name, username and password for later use.
 
 1. Under the **Compute + storage** option, select **Configure server**.
 
-    :::image type="content" source="../media/3d-form.png" alt-text="Configuration form.":::
+    :::image type="content" source="../media/3d-form.png" alt-text="Screenshot shows the Basics tab with the Configure server option highlighted.":::
 
 1. On the **Configure** page:
 
-    1. Select **35 days** in the **Backup Retention Period** section.
+   - Select **35 days** in the **Backup Retention Period** section.
 
-    1. Select **Geo-Redundant** in the **Backup Redundancy Options** section. Feel free to increase compute power and storage size, if you like.
+   - Select **Geo-Redundant** in the **Backup Redundancy Options** section. Feel free to increase compute power and storage size, if you like.
 
-    1. Select **OK**.
+   - Select **OK**.
 
-    1. Select **Review + create**.
+    :::image type="content" source="../media/3e-form.png" alt-text="Screenshot shows the Configure page for the server with the Backup Retention Period slider set to 35 days.":::
 
-    :::image type="content" source="../media/3e-form.png" alt-text="Configure server options form.":::
+1. Select **Review + create**, then select **Create**.
 
-1. Select **Create**.
-
-Congratulations! Your database is being deployed to Azure.
+**Congratulations! Your database is being deployed to Azure.**

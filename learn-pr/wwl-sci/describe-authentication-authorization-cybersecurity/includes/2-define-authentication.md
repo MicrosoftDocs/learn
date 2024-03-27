@@ -4,7 +4,7 @@ When you want to access a computer or device, you'll encounter the same type of 
 
 Strong authentication methods are essential to maintaining good cybersecurity and ensure that only authorized users can gain access to confidential data and resources.
 
-While authentication will verifying the user, it doesn't govern what a user can do once they've been authenticated. Control over what a user can do is called authorization and we'll cover that later in this module.
+While authentication will verify the user, it doesn't govern what a user can do once they've been authenticated. Control over what a user can do is called authorization and we'll cover that later in this module.
 
 ## Authentication methods
 
@@ -33,7 +33,7 @@ Biometric identification is comprised of physical characteristics that uniquely 
 
 Single-factor authentication is a system where only one authentication type is used, making it the least secure but simplest method.
 
-An example of a this system is when the user provides something they know, such as a password, to authenticate. Simple passwords are straightforward to remember but easy for criminals to hack. Complex passwords might seem more secure, but they'll be impossible to remember. It's more likely that someone will write down this type of password, making it much less secure.
+An example of this system is when the user provides something they know, such as a password, to authenticate. Simple passwords are straightforward to remember but easy for criminals to hack. Complex passwords might seem more secure, but they'll be impossible to remember. It's more likely that someone will write down this type of password, making it much less secure.
 
 Another single-factor authentication method is to use something you have. For example, using your cell phone to pay for an item. A tap-to-pay service authenticates the user through something that they have but doesn't require another verification method.
 

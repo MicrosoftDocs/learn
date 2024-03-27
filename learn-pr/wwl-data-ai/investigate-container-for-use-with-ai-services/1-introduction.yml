@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.investigate-container-for-use-with-ai-services.introduction-to-containerization-of
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 09/11/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -1,3 +1,4 @@
+
 Previously you learned about packaging dependencies and the various packaging formats, feeds, sources, and package managers.
 
 Now, you'll know more about package management, creating a feed, and publishing packages.
@@ -18,12 +19,12 @@ The artifact management is called `Azure Artifacts` and was previously known as 
 Azure Artifacts currently supports feeds that can store five different package types:
 
  -  NuGet packages
- -  NPM packages
+ -  npm packages
  -  Maven
  -  Universal packages
  -  Python
 
-Previously, we discussed the package types for NuGet, NPM, Maven, and Python. Universal packages are an Azure Artifacts-specific package type. In essence, it's a versioned package containing multiple files and folders.
+Previously, we discussed the package types for NuGet, npm, Maven, and Python. Universal packages are an Azure Artifacts-specific package type. In essence, it's a versioned package containing multiple files and folders.
 
 A single Azure Artifacts feed can contain any combination of such packages. You can connect to the feed using the package managers and the corresponding tooling for the package types. For Maven packages, this can also be the Gradle build tool.
 

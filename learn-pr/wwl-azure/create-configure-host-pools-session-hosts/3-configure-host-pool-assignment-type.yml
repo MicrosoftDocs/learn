@@ -4,13 +4,11 @@ title: Configure host pool assignment type
 metadata:
   title: Configure host pool assignment type
   description: "Configure host pool assignment type"
-  ms.date: 08/01/2022
+  ms.date: 09/25/2023
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom: N/A, devx-track-azurepowershell
 durationInMinutes: 9
 content: |
   [!include[](includes/3-configure-host-pool-assignment-type.md)]

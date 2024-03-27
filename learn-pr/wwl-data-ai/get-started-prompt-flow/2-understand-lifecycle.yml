@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.get-started-prompt-flow.understand-lifecycle
+title: Understand the development lifecycle of a large language model (LLM) app
+metadata:
+  title: Understand the development lifecycle of a large language model (LLM) app
+  description: "Learn about the stages and steps you need to perform when creating an application that uses a large language model (LLM)."
+  ms.date: 11/30/2023
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-understand-lifecycle.md)]

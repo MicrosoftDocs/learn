@@ -4,7 +4,7 @@ A common approach is to work with **feature branches**, where a branch is used t
 
 Working with branches and pull requests allows you to verify any changes to your code before merging them with the main branch. Pull requests can also be used as a trigger for GitHub Actions to automate tasks that need to follow a proposed update to the code, like automatic code quality checks.
 
-To use trunk-based development together with automation, you'll need to:
+To use feature-based development together with automation, you'll need to:
 
 - Create a branch protection rule to block direct pushes to main.
 - Create a branch to update the code.
@@ -30,7 +30,7 @@ To protect the main branch, enable a **branch protection rule** in GitHub:
 Whenever you want to edit the code, you'll have to create a branch and work in there. Once you want to make your changes final, you can create a pull request to merge the feature branch with the main branch. 
 
 > [!Tip]
-> Learn more about [source control for machine learning projects and working with trunk-based development.](/training/modules/source-control-for-machine-learning-projects)
+> Learn more about [source control for machine learning projects and working with feature-based development.](/training/modules/source-control-for-machine-learning-projects)
 
 ## Trigger a GitHub Actions workflow
 

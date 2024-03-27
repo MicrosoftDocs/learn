@@ -1,21 +1,21 @@
 ### YamlMime:Module
 uid: learn.azure-introduction-to-azure-search
 metadata:
-  title: Introduction to Azure Cognitive Search
-  description: "Explore Azure Cognitive Search to discover how to create an index, import data, and query the index for better search results."
-  ms.date: 09/02/2022
+  title: Fundamentals of Knowledge Mining and Azure AI Search
+  description: "Explore Azure AI Search to discover how to create an index, import data, and query the index for better search results."
+  ms.date: 12/07/2023
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Introduction to Azure Cognitive Search
-summary: Use Azure Cognitive Search to make your data searchable.
+  ms.topic: module
+  ms.service: azure
+title: Fundamentals of Knowledge Mining and Azure AI Search
+summary: Use Azure AI Search to make your data searchable.
 abstract: |
   In this module, you will:
-    - Explore Azure Cognitive Search
-    - Create an Azure Cognitive Search index
+    - Explore Azure AI Search
+    - Create an Azure AI Search index
     - Import data to the index
-    - Query the Azure Cognitive Search index
+    - Query the Azure AI Search index
 prerequisites: ""
 iconUrl: /training/achievements/azure-introduction-to-azure-search.svg
 levels:

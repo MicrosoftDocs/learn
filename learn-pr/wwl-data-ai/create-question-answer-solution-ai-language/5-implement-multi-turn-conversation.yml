@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-question-answer-solution-ai-language.implement-multi-turn-conversation
+title: Implement multi-turn conversation
+metadata:
+  title: Implement multi-turn conversation
+  description: "Implement multi-turn conversation"
+  ms.date: 08/31/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-implement-multi-turn-conversation.md)]

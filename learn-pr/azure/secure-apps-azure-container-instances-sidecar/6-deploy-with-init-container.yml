@@ -7,8 +7,9 @@ metadata:
   ms.date: 04/27/2022
   author: erjosito
   ms.author: jomore
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 10
 content: |
   [!include[](includes/6-deploy-with-init-container.md)]

@@ -1,28 +1,30 @@
+In this module, you learned about Azure Load Balancer and its features. Azure Load Balancer distributed workloads and network traffic across virtual machines, making applications more resilient and scalable. You learned about load balancer SKUs, back-end pools, load-balancing rules, session persistence, and health probes.
 
-Applications need to be resilient to failures and easily scale to support changes in workload demands. Administrators use Azure Load Balancer to distribute workloads and network traffic across virtual machines. Load Balancer enables you to build solutions to provide improved resiliency and scalability.
+The main takeaways from this module are:
 
-In this module, you identified the features and usage cases for Azure Load Balancer. You discovered how to implement public and internal Azure load balancers. You reviewed the different features and configuration details for load balancer SKUS. You explored how to create back-end pools, load-balancing rules, session persistence, and health probes.
+- Azure Load Balancer helps distribute network traffic across servers and resources.
 
-## Learn more
+- Load balancing can be used for inbound and outbound scenarios.
 
-- Peruse [Azure Load Balancer documentation](/azure/load-balancer/).
+- There are public and internal load balancers.
 
-- Read about [Azure Load Balancer](/azure/load-balancer/load-balancer-overview).
+- Load-balancing rules specify how traffic is distributed to your back-end pools. 
 
-- Create a [public load balancer for virtual machines in the Azure portal](/azure/load-balancer/quickstart-load-balancer-standard-public-portal).
+- Back-end pools contain the IP addresses of the virtual NICs that are connected to your load balancer. 
 
-- Create an [internal load balancer for virtual machines in the Azure portal](/azure/load-balancer/quickstart-load-balancer-standard-internal-portal).
+- Health probes dynamically add or remove virtual machines based on virtual machine health checks.
 
-- Compare [Azure Load Balancer SKUs](/azure/load-balancer/skus).
 
-- Explore the [Gateway Load Balancer](/azure/load-balancer/gateway-overview).
+## Learn more with documentation
+
+- [Azure Load Balancer documentation](/azure/load-balancer/). This collection of articles is your starting point for all things load balancer. 
+
+- [Create a public load balancer for virtual machines in the Azure portal](/azure/load-balancer/quickstart-load-balancer-standard-public-portal). This article reviews creating a public load balancer for a backend pool with two virtual machines.
 
 ## Learn more with self-paced training
 
-- Complete an [introduction to Azure Load Balancer](/training/modules/intro-to-azure-load-balancer/).
+- [Introduction to Azure Load Balancer](/training/modules/intro-to-azure-load-balancer/). Learn what Azure Load Balancer does, how it works, and when you should choose to use Load Balancer as a solution
 
-## Learn more with optional hands-on exercises
+- [Improve application scalability and resiliency by using Azure Load Balancer (sandbox)](/training/modules/improve-app-scalability-resiliency-with-load-balancer/). Learn about the different load balancers in Azure and how to choose the right Azure load balancer solution.
 
-- Improve [application scalability and resiliency by using Azure Load Balancer (sandbox)](/training/modules/improve-app-scalability-resiliency-with-load-balancer/).
-
-- Discover how to [load balance non-HTTP(S) traffic in Azure](/training/modules/load-balancing-non-https-traffic-azure/). _Azure subscription required_.
+- [Load balance non-HTTP(S) traffic in Azure](/training/modules/load-balancing-non-https-traffic-azure/). Learn the different load balancer options in Azure and how to choose and implement the right Azure solution for non-HTTP(S) traffic.

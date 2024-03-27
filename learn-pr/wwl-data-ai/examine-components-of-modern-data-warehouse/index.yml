@@ -1,25 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.examine-components-of-modern-data-warehouse
 metadata:
-  title: Explore fundamentals of large-scale data warehousing
-  description: "Explore fundamentals of large-scale data warehousing"
-  ms.date: 08/31/2022
+  title: Explore fundamentals of large-scale data analytics
+  description: "Organizations use analytics platforms to build large scale data analytics solutions that generate insights and drive success. Microsoft provides multiple technologies that you can combine to build a large scale data analytics solution."
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Explore fundamentals of large-scale data warehousing
-summary: |
-  Organizations use modern data warehousing to build large scale data analytics solutions that generate insights and drive success.
-  Microsoft Azure includes multiple technologies that you can combine to build a modern data warehousing solution.
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: fabric
+  ai-usage: human-only
+title: Explore fundamentals of large-scale analytics
+summary: Organizations use analytics platforms to build large scale data analytics solutions that generate insights and drive success. Microsoft provides multiple technologies that you can combine to build a large scale data analytics solution.
 abstract: |
-  In this module, you will learn how to:
-  - Identify common elements of a modern data warehousing solution
-  - Describe key features for data ingestion pipelines
-  - Identify common types of analytical data store and related Azure services
-  - Provision Azure Synapse Analytics and use it to ingest, process, and query data
-prerequisites: |
-  Before starting this module, you should have a conceptual understanding of data and databases, and be familiar with Microsoft Azure services for data workloads such as Azure Storage, Azure SQL Database, and Azure Cosmos DB.
+  In this module, you learn how to:
+
+  -   Identify common elements of a data analytics solution
+
+  -   Describe key features for data ingestion pipelines
+
+  -   Identify common types of analytical data store and related Azure services
+
+  -   Describe platform-as-a-service (PaaS) data analytics solutions in Azure
+
+  -   Provision Azure Synapse Analytics and use it to ingest, process, and query data
+
+  -   Describe features of Microsoft Fabric - a software-as-a-service (SaaS) solution for data analytics
+
+  -   Use Microsoft Fabric to ingest and analyze data
+prerequisites: Before starting this module, you should have a conceptual understanding of data and databases, and be familiar with Microsoft Azure services for data workloads such as Azure Storage, Azure SQL Database, and Azure Cosmos DB.
 iconUrl: /training/achievements/examine-components-of-modern-data-warehouse.svg
 levels:
 - beginner
@@ -30,13 +40,16 @@ roles:
 products:
 - azure
 subjects:
-- data-warehousing
+- data-storage
 units:
 - learn.wwl.examine-components-of-modern-data-warehouse.introduction
 - learn.wwl.examine-components-of-modern-data-warehouse.describe-warehousing
 - learn.wwl.examine-components-of-modern-data-warehouse.explore-ingestion-pipelines
 - learn.wwl.examine-components-of-modern-data-warehouse.analytical-stores
+- learn.wwl.examine-components-of-modern-data-warehouse.platform-services
 - learn.wwl.examine-components-of-modern-data-warehouse.exercise-azure-synapse
+- learn.wwl.examine-components-of-modern-data-warehouse.fabric
+- learn.wwl.examine-components-of-modern-data-warehouse.exercise-fabric
 - learn.wwl.examine-components-of-modern-data-warehouse.exercise-explore-azure-data-services-azure-portal
 - learn.wwl.examine-components-of-modern-data-warehouse.summary
 badge:

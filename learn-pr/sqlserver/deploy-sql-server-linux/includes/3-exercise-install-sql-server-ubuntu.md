@@ -1,25 +1,26 @@
-To install SQL Server on Ubuntu, you use the `apt-get` tool.
+To install SQL Server on Ubuntu, use the `apt-get` tool.
 
-You're a database administrator at the wholesale company Wide World Importers. You want to benefit from SQL Server without having to change the server operating systems. Now you've decided to deploy SQL Server on an Ubuntu server. So that SQL Server is ready to be used by your developers, you'll configure the SQL Server package and install command-line tools.
+You're a database administrator at the wholesale company Wide World Importers. You want to benefit from SQL Server without having to change the server operating systems. Now you've decided to deploy SQL Server on an Ubuntu server. So that SQL Server is ready to be used by your developers, configure the SQL Server package and install command-line tools.
 
-Here, you'll see how to deploy SQL Server on Ubuntu, install command-line tools and Azure Data Studio, and create a database on SQL Server.
+In this exercise, you see how to deploy SQL Server on Ubuntu, install command-line tools, and create a database on SQL Server.
 
-## Create an Ubuntu Virtual Machine 
+## Create an Ubuntu virtual machine
 
-Start by creating an Ubuntu Virtual Machine (VM) in Azure. Later, you'll install SQL Server 2019 on that VM:
+Start by creating an Ubuntu virtual machine (VM) in Azure. Later, install SQL Server 2019 on that VM.
 
-1. Using the cloud shell on the right, enter Azure CLI commands to create an Ubuntu 18.04 LTS server. This can take a couple of minutes to complete.
+1. Using the Cloud Shell sandbox, enter Azure CLI commands to create an Ubuntu 18.04 LTS server. The [az vm create](/cli/azure/vm#az-vm-create) command can take a couple of minutes to complete.
 
     ```azurecli
     export UBUNTUPASSWORD=$(openssl rand -base64 32)
     az vm create \
         --name UbuntuServer \
-        --image "Canonical:UbuntuServer:18.04-LTS:latest" \
-        --size Standard_D2s_v3 \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
         --admin-username ubuntuadmin \
         --admin-password $UBUNTUPASSWORD \
+        --image "Canonical:UbuntuServer:18.04-LTS:latest" \
         --nsg-rule SSH \
-        --resource-group <rgn>[sandbox resource group name]</rgn>
+        --public-ip-sku Standard \
+        --size Standard_D2s_v3   
     ```
 
 1. Store the public IP address of your server, and display the password.
@@ -34,40 +35,40 @@ Start by creating an Ubuntu Virtual Machine (VM) in Azure. Later, you'll install
 
 ## Connect to the Ubuntu VM
 
-Now you have an Ubuntu VM, ready to install a SQL Server, you connect to it by using Secure Shell (SSH):
+Now you have an Ubuntu VM, you're ready to install SQL Server. Connect to the VM by using Secure Shell (SSH):
 
-1. In the Cloud Shell on the right, enter this command.
+1. In the Cloud Shell, run this command.
 
     ```bash
     ssh ubuntuadmin@$IPADDRESS
     ```
 
-1. When asked if you're sure, type **yes**, and then press Enter.
-1. For the password, use displayed password from above, and then press Enter. SSH connects to the VM and shows a bash shell.
+1. When asked if you're sure, type *yes*.
+1. For the password, enter the displayed password from the earlier command, and then press **Enter**. SSH connects to the VM and shows a bash shell.
 
 ## Install the SQL Server package
 
-Now install and configure SQL Server:
+Now install and configure SQL Server.
 
-1. To install the Microsoft repository GPG key, type the following command, and then press Enter:
+1. To install the Microsoft repository GPG key, run the following command:
 
     ```bash
     wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
     ```
 
-1. To register the Microsoft SQL Server Ubuntu repository, type the following command, and then press Enter:
+1. To register the Microsoft SQL Server Ubuntu repository, run the following command:
 
     ```bash
     sudo add-apt-repository "$(wget -qO- https://packages.microsoft.com/config/ubuntu/18.04/mssql-server-2019.list)"
     ```
 
-1. To get an updated package list, type the following command, and then press Enter:
+1. To get an updated package list, run the following command:
 
     ```bash
     sudo apt-get update
     ```
 
-1. To install SQL Server, type the following command, and then press Enter:
+1. To install SQL Server, run the following command:
 
     ```bash
     sudo apt-get install -y mssql-server
@@ -79,17 +80,16 @@ Now install and configure SQL Server:
 
 Before you start SQL Server, you must specify the edition you want and the system administrator password:
 
-1. To configure SQL Server, in the Terminal window, type the following command, and then press Enter:
+1. To configure SQL Server, in the terminal window, run the following command:
 
     ```bash
     sudo /opt/mssql/bin/mssql-conf setup
     ```
 
-1. To select the **Evaluation edition**, press 1, and then press Enter.
-1. Type **Yes** and press Enter to accept the license terms.
-1. For the system administrator password, type **Pa$$w0rd**, and then press Enter.
-1. Confirm the password, and then press Enter.
-1. To confirm that SQL Server 2019 is running, type this command:
+1. To select the **Evaluation edition**, enter *1*.
+1. Type *Yes* to accept the license terms.
+1. For the system administrator password, type *Pa$$w0rd*. Confirm the password.
+1. To confirm that SQL Server 2019 is running, run this command:
 
     ```bash
     systemctl status mssql-server --no-pager
@@ -99,27 +99,27 @@ Before you start SQL Server, you must specify the edition you want and the syste
 
 SQL Server is now installed. Next, install tools to work with SQL Server.
 
-1. To register the repository for the Microsoft SQL Server tools package, type the following command, and then press Enter:
+1. To register the repository for the Microsoft SQL Server tools package, run the following command:
 
     ```bash
     sudo add-apt-repository "$(curl https://packages.microsoft.com/config/ubuntu/18.04/prod.list)"
     ```
 
-1. To get an updated package list, type the following command, and then press Enter:
+1. To get an updated package list, run the following command:
 
     ```bash
     sudo apt-get update
     ```
 
-1. To install SQL Server command-line tools, type the following command, and then press Enter:
+1. To install SQL Server command-line tools, run the following command:
 
    ```bash
    sudo apt-get install -y mssql-tools unixodbc-dev
    ```
 
-1. Press Tab and Enter to accept the license terms.
-1. Press Tab and Enter to accept the ODBC license terms.
-1. To add the tools to the **PATH** environment variable, type the following command, and then press Enter:
+1. Press **Tab** and **Enter** to accept the license terms.
+1. Press **Tab** and **Enter** to accept the ODBC license terms.
+1. To add the tools to the `PATH` environment variable, run the following command:
 
     ```bash
     echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile
@@ -129,7 +129,7 @@ SQL Server is now installed. Next, install tools to work with SQL Server.
 
 ## Create a database
 
-Finally, you create a database in SQL Server.
+Finally, create a database in SQL Server.
 
 1. To check whether SQL Server is running, run this command:
 
@@ -143,7 +143,7 @@ Finally, you create a database in SQL Server.
     sudo systemctl start mssql-server
     ```
 
-1. To start the `sqlcmd` tool, enter this command:
+1. To start the `sqlcmd` tool, run this command:
 
     ```bash
     sqlcmd -S localhost -U sa -P 'Pa$$w0rd'
@@ -163,4 +163,4 @@ Finally, you create a database in SQL Server.
     GO
     ```
 
-1. To exit the `sqlcmd` tool and SSH, run the command `exit` twice.
+1. To exit the `sqlcmd` tool and SSH, run the command *exit* twice.

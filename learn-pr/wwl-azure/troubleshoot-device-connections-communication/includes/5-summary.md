@@ -1,1 +1,0 @@
-Your team will be responsible for troubleshooting device connection/communication issues for the company's IoT solution. By understanding the issues that affect device connections/communication and the best practices that will help you to avoid these issues, you are better able to support the company's reliability requirement.

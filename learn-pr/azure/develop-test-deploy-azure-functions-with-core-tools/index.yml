@@ -3,15 +3,16 @@ uid: learn-pr.develop-test-deploy-azure-functions-core-tools
 metadata:
   title: Develop, test, and publish Azure Functions by using Azure Functions Core Tools
   description: Find out how to develop an Azure Function in Visual Studio with a test framework to create, deploy, and test this scalable and secure service.
-  ms.date: 11/13/2019
+  ms.date: 11/13/2023
   author: ggailey777
   ms.author: glenga
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: azure-functions
+  manager: mijacobs
 title: Develop, test, and publish Azure Functions by using Azure Functions Core Tools
 summary: Use the Azure Functions Core Tools to create and run functions on a development computer and publish them to Azure.
 abstract: |
-  By the end of this module, you will be able to use the Azure Functions Core Tools to:
+  By the end of this module, you'll be able to use the Azure Functions Core Tools to:
   - Create new functions projects and functions
   - Run and test functions locally
   - Publish functions to Azure
@@ -27,7 +28,8 @@ products:
 - azure
 - azure-functions
 subjects:
-- development-tools
+- serverless-computing
+- cloud-computing
 units:
 - learn-pr.develop-test-deploy-azure-functions-core-tools.1-introduction
 - learn-pr.develop-test-deploy-azure-functions-core-tools.2-create-run-functions-locally-core-tools

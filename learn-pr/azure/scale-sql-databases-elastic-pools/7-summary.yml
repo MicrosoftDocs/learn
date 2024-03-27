@@ -3,12 +3,14 @@ uid: learn.azure-scale-azure-sql-databases-elastic-pools.summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 5/03/2019
+  ms.date: 12/15/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 title: Summary
 durationInMinutes: 3
 content: |

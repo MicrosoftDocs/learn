@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.perform-post-migration-tasks-azure-sql.protect-azure-sql-security-features
+title: Implement security to protect Azure SQL
+metadata:
+  title: Implement security to protect Azure SQL
+  description: "Learn how to implement security to protect Azure SQL."
+  ms.date: 09/14/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-protect-azure-sql-security-features.md)]

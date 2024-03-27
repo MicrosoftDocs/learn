@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-machine-learning.regression
+title: Regression
+metadata:
+  title: Regression
+  description: "Regression"
+  ms.date: 09/24/2023
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-regression.md)]

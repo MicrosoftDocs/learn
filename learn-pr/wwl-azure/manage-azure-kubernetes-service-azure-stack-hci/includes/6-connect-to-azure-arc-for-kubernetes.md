@@ -45,7 +45,7 @@ To simplify the onboarding process, use Windows Admin Center. Such onboarding ha
 If you choose the scripting approach to connect Kubernetes clusters on an Azure Stack HCI cluster to Azure Arc, run the following sequence of steps from an on-premises computer with connectivity to the Azure Stack HCI cluster and to Azure:
 
 1. Install the current version of the Azure CLI version with the Azure Arc-enabled Kubernetes CLI extensions and the AKS on Azure Stack HCI PowerShell module.
-1. Use Azure CLI to sign in to Microsoft Azure Active Directory (Azure AD) to access the Azure subscription where you've at least the Contributor role and where you intend to register your Kubernetes clusters.
+1. Use Azure CLI to sign in to Microsoft Entra ID to access the Azure subscription where you've at least the Contributor role and where you intend to register your Kubernetes clusters.
 1. Use Azure CLI to register the Microsoft.Kubernetes and Microsoft.KubernetesConfiguration Azure Resource Manager resource providers. This step is necessary to implement Azure Arc-enabled Kubernetes. Using Azure CLI is a one-time only setup for a given subscription.
 1. Use Azure CLI to create a resource group that will host the connected cluster resources in an Azure region that supports Azure Arc-enabled Kubernetes.
 1. Use Azure CLI to create a service principal with the Contributor role in the resource group you created in the previous step and record its credentials.

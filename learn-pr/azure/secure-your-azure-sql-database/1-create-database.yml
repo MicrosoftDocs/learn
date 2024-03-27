@@ -7,8 +7,8 @@ metadata:
   author: VanMSFT
   ms.author: vanto
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: linux-related-content
 interactive: bash
 azureSandbox: true
 title: Exercise - Set up sandbox environment

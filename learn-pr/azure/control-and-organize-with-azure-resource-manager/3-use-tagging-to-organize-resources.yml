@@ -7,8 +7,7 @@ metadata:
   ms.date: 07/28/2022
   author: tfitzmac
   ms.author: tomfitz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/3-use-tagging-to-organize-resources.md)]

@@ -3,12 +3,12 @@ uid: learn.languages.powershell-write-first.summary
 title: Summary
 metadata:
   title: Summary
-  description: This unit provides a quick recap of what you learned in this module and what you should learn next.
-  ms.date: 03/29/2023
+  description: Review what you learned in this module and what you should learn next.
+  ms.date: 10/04/2023
   author: michaeltlombardi
   ms.author: mlombardi
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]

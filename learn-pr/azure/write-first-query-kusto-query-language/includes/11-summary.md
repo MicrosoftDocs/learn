@@ -4,5 +4,5 @@ You used the `count`, `take`, `where`, `project`, `sort`, and other operators to
 
 ## References
 
-* [Kusto Query Language quick reference guide](/azure/data-explorer/kql-quick-reference)
+* [Kusto Query Language quick reference guide](/azure/data-explorer/kusto/query/kql-quick-reference)
 * [Kusto Query Language operators](/azure/data-explorer/kusto/query/queries)

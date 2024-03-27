@@ -39,11 +39,11 @@ Managed identities for Azure resources are, in general, the recommended form of 
 
 ### Application running on a non-Azure machine that is domain-joined
 
-For non-Azure machines, using managed identities is not an option. Integrated authentication via Azure Active Directory (Azure AD) is the recommended authentication method for apps running on domain-joined machines outside Azure, assuming that the domain has been federated with Azure AD. 
+For non-Azure machines, using managed identities is not an option. Integrated authentication via Microsoft Entra ID is the recommended authentication method for apps running on domain-joined machines outside Azure, assuming that the domain has been federated with Microsoft Entra ID. 
 
 If the non-Azure machine is not domain-joined, you can:
 
-1. Create an application identity for your application in Azure AD.
+1. Create an application identity for your application in Microsoft Entra ID.
 1. Associate a certificate with the application identity.
 1. Modify your application to acquire a token for Azure SQL Database by providing a client ID and a certificate. 
 
@@ -51,9 +51,9 @@ Although the certificate must contain a private key and it must be deployed on t
 
 ### DBAs or other users of SQL admin tools from a non-Azure machine that is not domain-joined
 
-For users outside Azure, eliminating the use of passwords is best if possible. You can eliminate the use passwords with SQL tools by using Azure AD integrated authentication. However, the tools must run on a domain-joined machine, and the domain must have been federated with Azure AD, which is not the case for this scenario. 
+For users outside Azure, eliminating the use of passwords is best if possible. You can eliminate the use passwords with SQL tools by using Microsoft Entra integrated authentication. However, the tools must run on a domain-joined machine, and the domain must have been federated with Microsoft Entra ID, which is not the case for this scenario. 
 
-Since the environment doesn't meet the prerequisites for integrated authentication, we recommend that you use Azure AD interactive authentication with multifactor authentication, which most SQL tools support.
+Since the environment doesn't meet the prerequisites for integrated authentication, we recommend that you use Microsoft Entra interactive authentication with multifactor authentication, which most SQL tools support.
 
 ### Older applications running on a non-Azure machine where you can't change the driver or connection string
 

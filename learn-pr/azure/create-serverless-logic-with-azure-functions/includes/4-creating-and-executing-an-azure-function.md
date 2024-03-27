@@ -4,7 +4,7 @@ Now that we've created a function app, let's look at how to build, configure, an
 
 Functions are event driven, which means they run in response to an event. The type of event that starts a function is called a **trigger**. Each function must be configured with exactly one trigger.
 
-Function execution can be triggered by HTTP requests, a scheduled timer, and events from the following Azure services:
+You can trigger function execution by using HTTP requests, a scheduled timer, and events from the following Azure services:
 
 | Azure Service | Trigger description |
 |---------|---------|
@@ -17,7 +17,7 @@ Function execution can be triggered by HTTP requests, a scheduled timer, and eve
 
 ### Bindings
 
-A binding is a declarative way to connect data and services to your function. Bindings interact with various data sources, which means you don't have to write the code in your function to connect to data sources and manage connections. The platform takes care of that complexity for you as part of the binding code. Each binding has a direction--your code reads data from *input* bindings, and writes data to *output* bindings. Each function can have zero or more bindings to manage the input and output data processed by the function.
+A binding is a declarative way to connect data and services to your function. Bindings interact with various data sources, which means you don't have to write the code in your function to connect to data sources and manage connections. The platform takes care of that complexity for you as part of the binding code. Each binding has a direction: Your code reads data from *input* bindings, and writes data to *output* bindings. Each function can have zero or more bindings to manage the input and output data processed by the function.
 
 A trigger is a type of input binding that has the ability to initiate execution of some code.
 
@@ -54,7 +54,7 @@ Our JSON configuration specifies that our function is triggered when a message i
 :::zone pivot="powershell"
 For PowerShell functions, output bindings are explicitly written to with the `Push-OutputBinding` cmdlet.
 :::zone-end
-This example is a simple illustration of how we configure bindings for a function. We could change the output to be an email using a SendGrid binding, or put an event onto a Service Bus to notify some other component in our architecture, or even have multiple output bindings to push data to various services.
+This example is a simple illustration of how we configure bindings for a function. We could change the output to be an email using a SendGrid binding, or put an event onto a Service Bus to notify some other component in our architecture. We could even have multiple output bindings to push data to various services.
 
 > [!TIP]
 > To view and edit the contents of *function.json* in the Azure portal, from the Home page, select your function app, and in the right pane, select **JSON View**. The Resource JSON view displays the Resource ID and the editable JSON code. To close the JSON view, select the **X** in the top right corner of the pane.
@@ -63,7 +63,7 @@ Not all languages supported by Functions use the function.json file to define fu
 
 ## Create a function in the Azure portal
 
-Functions provides predefined function templates, which are based on a specific type of trigger. These templates, in your chosen language, make it easy to get started creating your first function. 
+Azure Functions has predefined function templates, which are based on a specific type of trigger. These templates, in your chosen language, make it easy to get started creating your first function.
 
 This module isn't supported for all languages supported by Functions, and the portal itself doesn't support creating functions in all languages supported by Functions. 
 
@@ -73,7 +73,7 @@ For supported languages that use the function.json file to define functions, you
 
 When you create your first function in the portal, you can select a predefined trigger for your function. Based on your selections, Azure generates default code and configuration information, such as creating an event log entry when input data is received.
 
-Selecting a template from the **Add function** pane provides easy access to the most common development environments, triggers, dependencies. When you create a function in the Azure portal, you can choose from more than 20 templates. Once created you can further customize the code.
+Selecting a template from the **Add function** pane provides easy access to the most common development environments, triggers, and dependencies. When you create a function in the Azure portal, you can choose from more than 20 templates. Once created, you can further customize the code.
 
 ## Navigate to your function and its files
 
@@ -85,7 +85,7 @@ When you select a function that you created in your function app, the Function p
 
 :::image type="content" source="../media/4-file-navigation.png" alt-text="Screenshot of the function code and test editor showing the expanded Test/Run view, with menu options highlighted." lightbox="../media/4-file-navigation.png":::
 
-In the previous image, the pane on the right has **Input** and **Output** tabs. Selecting the **Input** tab enables you to build and test the function by adding query parameters and supplying values for your query string. The **Output** tab displays the results of the request.
+In the previous image, the right-hand pane has **Input** and **Output** tabs. Selecting the **Input** tab enables you to build and test the function by adding query parameters and supplying values for your query string. The **Output** tab displays the results of the request.
 
 ## Test your Azure function
 

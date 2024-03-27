@@ -4,10 +4,9 @@ metadata:
   title: Summary of threat modeling a client application to be used in the PAW
   description: Review what you learned about adding a client application to your Privileged Access Workstation (PAW).
   ms.date: 05/27/2021
-  author: rodrigosantos
-  ms.author: micrum
-  ms.topic: interactive-tutorial
-  ms.prod: learning-threat-modeling
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 title: Summary
 durationInMinutes: 2
 content: |

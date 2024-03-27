@@ -12,7 +12,7 @@ In this exercise, you'll:
 
 ## Add your website's Bicep file to the GitHub repository
 
-You've already prepared your website's Bicep file, which can be used to deploy different configurations of the website resources depending on the environment and configuration. Here, you add your Bicep file to your repository.
+You've already prepared your website's Bicep file, which you can use to deploy different configurations of the website resources depending on the environment and configuration. Here, you'll add your Bicep file to your repository.
 
 1. Open the Visual Studio Code Explorer.
 
@@ -42,7 +42,7 @@ Next, update your workflow definition to deploy your Bicep file to Azure.
 
 1. In Visual Studio Code, open the _.github/workflows/workflow.yml_ file.
 
-1. At the top of the file, between `on:` and `jobs:` add a `permissions:` section.
+1. At the top of the file, between `on:` and `jobs:`, add a `permissions:` section.
 
    :::code language="yaml" source="code/6-workflow.yml" range="1-8, 13" highlight="5-7" :::
 
@@ -129,7 +129,7 @@ Now, you're ready to run your workflow!
 
    :::image type="content" source="../media/6-portal-resource-group.png" alt-text="Screenshot of the Azure portal that shows the resource group with one successful deployment.":::
 
-1. Select **1 Succeeded** to see the details of the deployment.
+1. Select the **1 Succeeded** link to see the details of the deployment.
 
    :::image type="content" source="../media/6-portal-deployment-list.png" alt-text="Screenshot of the Azure portal that shows the resource group deployment history, with the deployment highlighted.":::
 

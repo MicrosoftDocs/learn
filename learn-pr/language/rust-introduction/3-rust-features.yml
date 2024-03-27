@@ -6,8 +6,7 @@ metadata:
   ms.date: 09/29/2021
   author: GitHubber17
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Unique features of Rust
 durationInMinutes: 6

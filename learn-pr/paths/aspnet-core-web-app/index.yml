@@ -6,8 +6,7 @@ metadata:
   ms.date: 05/16/2022
   author: katiesavage
   ms.author: katiesavage
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.topic: learning-path
 title: Build web apps with ASP.NET Core for beginners
 summary: Get started with web development using ASP.NET Core. In this beginner-friendly pathway, you'll learn the basics of C#, HTML, Razor Pages, and more! 
 prerequisites: |

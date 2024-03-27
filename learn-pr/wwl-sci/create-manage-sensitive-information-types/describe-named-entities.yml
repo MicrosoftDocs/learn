@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-sensitive-information-types.describe-named-entities
+title: Describe named entities
+metadata:
+  title: Describe named entities
+  description: "Describe named entities"
+  ms.date: 10/04/2023
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/describe-named-entities.md)]

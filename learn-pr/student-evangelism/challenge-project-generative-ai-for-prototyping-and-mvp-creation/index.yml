@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.challenge-project-generative-ai-for-prototyping-and-mvp-creation
+metadata:
+  title: Challenge project - Microsoft Copilot for Prototyping and MVP Creation
+  description: "In this challenge project, Microsoft Copilot guides you on how to create prototypes/ mock-ups of your solution and on implementing the project."
+  ms.date: 12/04/2023
+  author: bethanyjep
+  ms.author: bethanycheum
+  ms.custom: team=nextgen
+  ms.topic: module-challenge-project
+  ms.service: microsoft-copilot
+title: Challenge project - Microsoft Copilot for Prototyping and MVP Creation
+summary: In this challenge project, Microsoft Copilot guides you on how to create prototypes/ mock-ups of your solution and on implementing the project.
+abstract: |
+  - In this module you develop the following skills: Lateral thinking, Visual reading, Out-of-the-box thinking, Problem-solving, Artistic creativity, and Analytical mind
+prerequisites: |
+  - Personal account for [Microsoft Copilot](https://copilot.microsoft.com/).
+  - Use [Edge Browser Profiles](https://support.microsoft.com/topic/sign-in-and-create-multiple-profiles-in-microsoft-edge-df94e622-2061-49ae-ad1d-6f0e43ce6435) to sign in to [Microsoft Copilot](https://copilot.microsoft.com/) and [Copilot Designer](https://copilot.microsoft.com/images/create)
+  - Pen and paper for your sketch prototype
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- ms-copilot
+units:
+- learn.wwl.challenge-project-generative-ai-for-prototyping-and-mvp-creation.introduction
+- learn.wwl.challenge-project-generative-ai-for-prototyping-and-mvp-creation.prepare
+- learn.wwl.challenge-project-generative-ai-for-prototyping-and-mvp-creation.exercise-prototype
+- learn.wwl.challenge-project-generative-ai-for-prototyping-and-mvp-creation.exercise-mvp
+- learn.wwl.challenge-project-generative-ai-for-prototyping-and-mvp-creation.knowledge-check
+- learn.wwl.challenge-project-generative-ai-for-prototyping-and-mvp-creation.summary
+badge:
+  uid: learn.wwl.challenge-project-generative-ai-for-prototyping-and-mvp-creation.badge

@@ -7,8 +7,7 @@ metadata:
   ms.date: 05/15/2020
   author: cwatson-cat
   ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Monitor and back up resources for Azure administrators
 summary: |
   Learn how to monitor resources by using Azure Monitor and implement backup and recover in Azure. 
@@ -63,20 +62,19 @@ products:
 - azure
 - azure-virtual-machines
 - azure-monitor
-- azure-application-insights
 - azure-backup
 - azure-site-recovery
 subjects:
 - cloud-computing
 - it-management-monitoring
-- business-continuity
+- site-reliability-engineering
 modules:
 - learn.design-monitoring-strategy-on-azure
 - learn.azure.monitor-azure-vm-using-diagnostic-data
 - learn.analyze-infrastructure-with-azure-monitor-logs
-- learn.monitor-vm-performance-using-azure-monitor-for-vms
+- learn.azure.monitor-azure-vm-using-diagnostic-data
 - learn.incident-response-with-alerting-on-azure
-- learn.capture-page-load-times-application-insights
+# - learn.capture-page-load-times-application-insights
 - learn.protect-virtual-machines-with-azure-backup
 - learn.protect-infrastructure-with-azure-site-recovery
 - learn.azure-well-architected-reliability

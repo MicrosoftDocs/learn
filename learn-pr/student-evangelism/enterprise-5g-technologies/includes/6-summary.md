@@ -1,3 +1,0 @@
-In this module, you explored the scenario of caring for patients with dementia and Alzheimer’s disease and the unique challenges that patients with degenerative mental conditions present for carers. You identified specific challenges, such as providing reminders and catering for memory loss. You saw how combining Azure private multi-access edge compute (MEC) and 5G helps provide solutions to cope with the need for rapid responses and unpredictable challenges.
-
-A video analytics solution based on Azure private MEC and 5G is beneficial for monitoring, tracking, and preventative diagnostics. The rapid intervention that's possible through this solution helps to improve safety and provide a scalable solution.

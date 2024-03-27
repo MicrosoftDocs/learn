@@ -1,7 +1,3 @@
-
-
-
-
 There are built-in diagnostics to assist with debugging an App Service app. In this lesson, you learn how to enable diagnostic logging and add instrumentation to your application, and how to access the information logged by Azure.
 
 The following table shows the types of logging, the platforms supported, and where the logs can be stored and located for accessing the information.

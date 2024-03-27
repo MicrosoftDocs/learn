@@ -4,11 +4,10 @@ title: Understand URIs
 metadata:
   title: Understand URIs
   description: "Understand URIs"
-  ms.date: 01/13/2023
+  ms.date: 05/18/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-understand-uris.md)]

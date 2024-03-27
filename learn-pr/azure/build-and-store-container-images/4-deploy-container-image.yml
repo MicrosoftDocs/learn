@@ -3,12 +3,13 @@ uid: learn.azure-container-registry.deploy-image
 metadata:
   title: Exercise - Deploy images from Azure Container Registry
   description: Deploy images from Azure Container Registry
-  ms.date: 09/24/2018
+  ms.date: 11/09/2023
   author: tejaswikolli
   ms.author: tejaswikolli
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 title: Exercise - Deploy images from Azure Container Registry
-durationInMinutes: 20
+durationInMinutes: 15
 content: |
   [!include[](includes/4-deploy-image.md)]

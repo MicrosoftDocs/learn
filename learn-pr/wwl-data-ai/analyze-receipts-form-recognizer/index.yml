@@ -1,17 +1,17 @@
 ### YamlMime:Module
 uid: learn.wwl.analyze-receipts-form-recognizer
 metadata:
-  title: Analyze receipts with the Form Recognizer service
-  description: "Analyze receipts with the Form Recognizer service"
-  ms.date: 02/07/2023
+  title: Fundamentals of Azure AI Document Intelligence
+  description: "Use Azure AI Document Intelligence to automate data extraction."
+  ms.date: 11/02/2023
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Analyze receipts with the Form Recognizer service
-summary: Processing invoices and receipts is a common task in many business scenarios. Increasingly, organizations are turning to artificial intelligence (AI) to automate data extraction from scanned receipts.
+  ms.topic: module
+  ms.service: azure-ai-document-intelligence
+title: Fundamentals of Azure AI Document Intelligence
+summary: Document processing is a common task in many business scenarios. Organizations can use Azure AI Document Intelligence to automate data extraction across document types, such as receipts, invoices, and more.
 abstract: |
-  Learn how to use the built-in receipt processing capabilities of the Form Recognizer service
+  Learn how to use the prebuilt receipt processing capabilities of Azure AI Document Intelligence.
 prerequisites: |
   Ability to navigate the Azure portal
 iconUrl: /training/achievements/analyze-receipts-form-recognizer.svg
@@ -24,11 +24,12 @@ roles:
 - solution-architect
 - student
 products:
-- azure-cognitive-services
+- ai-services
 subjects:
 - classification-analysis
 units:
 - learn.wwl.analyze-receipts-form-recognizer.introduction
+- learn.wwl.analyze-receipts-form-recognizer.document-intelligence-capabilities
 - learn.wwl.analyze-receipts-form-recognizer.get-started
 - learn.wwl.analyze-receipts-form-recognizer.exercise
 - learn.wwl.analyze-receipts-form-recognizer.knowledge-check

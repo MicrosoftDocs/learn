@@ -8,7 +8,7 @@ Before we take a look at some of your pipeline's analytics, let's listen in on t
 
 It's the following morning. At the team meeting, Andy and Mara have finished demonstrating the build and release pipeline that they set up.
 
-**Amita:** This is fantastic! The build pipeline was a great start, but I still had to manually install the build artifact in my lab, so I could test it. If I can get these releases to my test environment on a regular schedule, I can move new features through QA much faster.
+**Amita:** This is fantastic! The build pipeline was a great start, but I still had to manually install the build artifact in my lab so I could test it. If I can get these releases to my test environment on a regular schedule, I can move new features through QA much faster.
 
 **Mara:** Exactly! And remember, we can always expand our release pipeline to include more stages. The goal is to create a complete deployment workflow.
 
@@ -36,7 +36,7 @@ Reports include:
 
 * The overall pass rate of your pipeline.
 * The pass rate of any tests in your pipeline.
-* The average duration of your pipeline runs, including the build tasks, which take the most time to complete.
+* The average duration of your pipeline runs; including the build tasks, which take the most time to complete.
 
 Here's a sample report that shows the pipeline failures, test failures, and pipeline duration.
 

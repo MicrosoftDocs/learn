@@ -7,8 +7,8 @@ metadata:
   ms.date: 09/13/2019
   author: cwatson-cat
   ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-use-powershell-dsc.md)]

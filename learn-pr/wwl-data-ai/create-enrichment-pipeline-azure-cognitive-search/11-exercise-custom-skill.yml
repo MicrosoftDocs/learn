@@ -4,13 +4,12 @@ title: Exercise - Implement a custom skill
 metadata:
   title: Exercise - Implement a custom skill
   description: "Exercise - Implement a custom skill"
-  ms.date: 05/17/2022
+  ms.date: 12/11/2023
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.topic: unit
 azureSandbox: false
-labId: 93860
+labId: 152397
 labModal: true
 durationInMinutes: 30
 content: |

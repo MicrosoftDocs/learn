@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-identity-services.integrate-aad-sap-cloud-platform-identity-authentication
-title: Integrate Azure Active Directory with SAP Cloud Platform Identity Authentication
+title: Integrate Microsoft Entra ID with SAP Cloud Platform Identity Authentication
 metadata:
-  title: Integrate Azure Active Directory with SAP Cloud Platform Identity Authentication
-  description: "Integrate Azure Active Directory with SAP Cloud Platform Identity Authentication"
-  ms.date: 04/21/2023
+  title: Integrate Microsoft Entra ID with SAP Cloud Platform Identity Authentication
+  description: "Integrate Microsoft Entra ID with SAP Cloud Platform Identity Authentication"
+  ms.date: 03/05/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 9
 content: |
   [!include[](includes/5-exercise-azure-active-directory-sap-cloud-platform-identity-authentication.md)]

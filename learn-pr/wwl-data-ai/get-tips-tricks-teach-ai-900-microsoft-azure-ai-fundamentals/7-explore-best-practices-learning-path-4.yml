@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.explore-best-practices-for-learning-path-4
+title: Explore module best practices for learning path 4
+metadata:
+  title: Explore module best practices for learning path 4
+  description: "Explore module best practices for learning path 4"
+  ms.date: 03/22/2024
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-explore-best-practices-learning-path-4.md)]

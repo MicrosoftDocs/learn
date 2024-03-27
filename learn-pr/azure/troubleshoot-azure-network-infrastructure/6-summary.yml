@@ -3,11 +3,10 @@ uid: learn.troubleshoot-azure-network-infrastructure.6-summary
 metadata:
   title: Summary
   description: In this unit, you'll review what you have learned about Network Watcher.
-  ms.date: 09/03/2019
-  author: jboeshart
-  ms.author: jaboes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/16/2024
+  author: halkazwini
+  ms.author: halkazwini
+  ms.topic: unit
 title: Summary
 durationInMinutes: 5
 content: |

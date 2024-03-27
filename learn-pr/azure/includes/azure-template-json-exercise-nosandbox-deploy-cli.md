@@ -1,9 +1,8 @@
 ---
-author: davidsmatlak
-ms.prod: learning-azure
+author: mumian
 ms.topic: include
 ms.date: 11/14/2021
-ms.author: davidsmatlak
+ms.author: jgao
 ---
 [!INCLUDE [Introduction (CLI)](azure-template-exercise-nosandbox-intro-cli.md)]
 

@@ -4,11 +4,13 @@ title: Exercise - Manage dependency updates in your .NET project
 metadata:
   title: Exercise - Manage dependency updates in your .NET project
   description: Exercise on how to update dependencies and configure the project (.csproj) file so that updates happen in a predictable way.
-  ms.date: 10/28/2020
+  ms.date: 10/12/2023
   author: jamesmontemagno
   ms.author: jamont
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 4
 content: |
   [!include[](includes/5-exercise-dependency-management.md)]

@@ -1,42 +1,42 @@
 ## Change group license assignment
 
-1. Browse to the Azure Active Directory page of the [Azure portal](https://portal.azure.com/).
-1. In the left navigation, under **Manage**, select **Groups**.
-1. Select one of the available groups. For example, Marketing.
-1. In the left navigation, under **Manage**, select **Licenses**.
-1. Review the current assignments and then, on the menu, select **+ Assignments**.
+1.  Browse to the Identity - Groups page of the Microsoft Entra admin center.
+2.  In the left navigation, under **Groups**.
+3.  Select one of the available groups. For example, Marketing.
+4.  In the left navigation, under **Manage**, select **Licenses**.
+5.  Review the current assignments and then, on the menu, select **+ Assignments**.
     
-    :::image type="content" source="../media/change-group-license-4fac5a1d.png" alt-text="Screenshot of the group license page in Azure A D. The plus Assignments option is selected with the current licenses for Office 365 and Windows 10 being added to the group.":::
+    :::image type="content" source="../media/change-group-license-4fac5a1d.png" alt-text="Screenshot of the group license page in Microsoft Entra ID. The plus Assignments option is selected with the current licenses for Office 365 and Windows 10 being added to the group.":::
     
-1. On the Update license assignments page, select another license, clear the selection of an existing license, add or remove license options, or any combination.
-1. When complete, select **Save**.
-1. On the group’s Licenses page, review the change.
+6.  On the Update license assignments page, select another license, clear the selection of an existing license, add or remove license options, or any combination.
+7.  When complete, select **Save**.
+8.  On the group’s Licenses page, review the change.
 
-## Identify and resolve license assignment problems for a group in Azure Active Directory
+## Identify and resolve license assignment problems for a group in Microsoft Entra ID
 
-Group-based licensing in Azure Active Directory (Azure AD) introduces the concept of users in a licensing error state. In this section, we explain the reasons why users might end up in this state.
+Group-based licensing in Microsoft Entra ID introduces the concept of users in a licensing error state. In this section, we explain the reasons why users might end up in this state.
 
-When you assign licenses directly to individual users, without using group-based licensing, the assignment operation might fail. For example, when you execute the PowerShell cmdlet `Set-MsolUserLicense` on a user object, the cmdlet can fail for many reasons that are related to business logic. For example, there might be an insufficient number of licenses or a conflict between two service plans that can't be assigned at the same time. The problem is immediately reported back to you.
+When you assign licenses directly to individual users, without using group-based licensing, the assignment operation might fail. For example, when you execute the PowerShell cmdlet `Set-MgUserLicense` on a user object, the cmdlet can fail for many reasons that are related to business logic. For example, there might be an insufficient number of licenses or a conflict between two service plans that can't be assigned at the same time. The problem is immediately reported back to you.
 
-When you're using group-based licensing the same errors can occur, but they happen in the background while the Azure AD service is assigning licenses. For this reason, the errors can't be communicated to you immediately. Instead, they're recorded on the user object and then reported via the administrative portal. The original intent to license the user is never lost, but it's recorded in an error state for future investigation and resolution.
+When you're using group-based licensing the same errors can occur, but they happen in the background while the Microsoft Entra service is assigning licenses. For this reason, the errors can't be communicated to you immediately. Instead, they're recorded on the user object and then reported via the administrative portal. The original intent to license the user is never lost, but it's recorded in an error state for future investigation and resolution.
 
 ## Find license assignment errors
 
 ### To find users in an error state in a group
 
-1. Open the group to its overview page and select **Licenses**. A notification appears if there are any users in an error state.
+1.  Open the group to its overview page and select **Licenses**. A notification appears if there are any users in an error state.
     
     :::image type="content" source="../media/group-error-notification-919e1667.png" alt-text="Screenshot of the Group and error notifications message.  There is a yellow message bar at the top of screen announcing that two users in the group have license assignment errors.  There is an arrow to select to get more information.":::
     
-1. Select the notification to open a list of all affected users. You can select each user individually to see more details.
+2.  Select the notification to open a list of all affected users. You can select each user individually to see more details.
     
     :::image type="content" source="../media/list-of-users-with-errors-381fee9b.png" alt-text="Screenshot of the list of users in group licensing error state. This dialog was opened by selecting the more information arrow from the previous dialog. Conflicting service plan is listed as the most likely cause of the error.":::
     
-1. To find all groups that contain at least one error, on the **Azure Active Directory** page menu select **Licenses**, and then select **Overview**. An information box is displayed when groups require your attention.
+3.  To find all groups that contain at least one error, on the **Microsoft Entra - Identity - Billing** menu select **Licenses**, and then select **Overview**. An information box is displayed when groups require your attention.
     
-    :::image type="content" source="../media/group-errors-widget-3f3842a5.png" alt-text="Screenshot of the Azure A D licenses Overview page.  This dialog shows information about license and if any group licenses are in error state.  The dialog shows one group license in error, and that can be selected.":::
+    :::image type="content" source="../media/group-errors-widget-3f3842a5.png" alt-text="Screenshot of the Microsoft Entra ID licenses Overview page.  This dialog shows information about license and if any group licenses are in error state.  The dialog shows one group license in error, and that can be selected.":::
     
-1. Select the box to see a list of all groups with errors. You can select each group for more details.
+4.  Select the box to see a list of all groups with errors. You can select each group for more details.
     
     :::image type="content" source="../media/list-of-groups-with-errors-416fb081.png" alt-text="Screenshot of the group license assignment error page that is displayed after selecting the error in the previous dialog. There is one error listed for Office 365 E1.":::
     
@@ -47,7 +47,7 @@ The following sections give descriptions of each potential problem and the way t
 
 **Problem**: There aren't enough available licenses for one of the products that's specified in the group. You need to either purchase more licenses for the product or free up unused licenses from other users or groups.
 
-To see how many licenses are available, go to **Azure Active Directory**, then **Licenses**, then **All products**.
+To see how many licenses are available, go to **Microsoft Entra - Identity - Billing** , then **Licenses**, then **All products**.
 
 To see which users and groups are consuming licenses, select a product. Under **Licensed users**, you see a list of all users who have had licenses assigned directly or via one or more groups. Under **Licensed groups**, you see all groups with product licenses assigned.
 
@@ -64,13 +64,13 @@ Consider the following example. A user has a license for Office 365 Enterprise *
 
 To solve this conflict, you need to disable two of the plans. You can disable the E1 license that's directly assigned to the user. Or, you need to modify the entire group license assignment and disable the plans in the E3 license. Alternatively, you might decide to remove the E1 license from the user if it's redundant in the context of the E3 license.
 
-The decision about how to resolve conflicting product licenses always belongs to the administrator. Azure AD doesn't automatically resolve license conflicts.
+The decision about how to resolve conflicting product licenses always belongs to the administrator. Microsoft Entra ID doesn't automatically resolve license conflicts.
 
 **PowerShell**: PowerShell cmdlets report this error as *MutuallyExclusiveViolation*.
 
 ## Other products depend on this license
 
-**Problem**: One of the products that's specified in the group contains a service plan that must be enabled for another service plan, in another product, to function. This error occurs when Azure AD attempts to remove the underlying service plan. For example, this can happen when you remove the user from the group.
+**Problem**: One of the products that's specified in the group contains a service plan that must be enabled for another service plan, in another product, to function. This error occurs when Microsoft Entra ID attempts to remove the underlying service plan. For example, this can happen when you remove the user from the group.
 
 To solve this problem, you need to make sure that the required plan is still assigned to users through some other method or that the dependent services are disabled for those users. After doing that, you can properly remove the group license from those users.
 
@@ -80,14 +80,14 @@ To solve this problem, you need to make sure that the required plan is still ass
 
 **Problem**: Some Microsoft services aren't available in all locations because of local laws and regulations. Before you can assign a license to a user, you must specify the **Usage location** property for the user. You can specify the location under the **User**, then **Profile**, then **Edit** the section in the Azure portal.
 
-When Azure AD attempts to assign a group license to a user whose usage location isn't supported, it fails and records an error on the user.
+When Microsoft Entra ID attempts to assign a group license to a user whose usage location isn't supported, it fails and records an error on the user.
 
 To solve this problem, remove users from unsupported locations from the licensed group. Alternatively, if the current usage location values don't represent the actual user location, you can modify them so that the licenses are correctly assigned next time (if the new location is supported).
 
 **PowerShell**: PowerShell cmdlets report this error as *ProhibitedInUsageLocationViolation*.
 
 > [!NOTE]
-> When Azure AD assigns group licenses, any users without a specified usage location inherit the location of the directory. We recommend that administrators set the correct usage location values on users before using group-based licensing to comply with local laws and regulations.
+> When Microsoft Entra ID assigns group licenses, any users without a specified usage location inherit the location of the directory. We recommend that administrators set the correct usage location values on users before using group-based licensing to comply with local laws and regulations.
 
 ## Duplicate proxy addresses
 
@@ -95,21 +95,21 @@ If you use Exchange Online, some users in your organization might be incorrectly
 
 After you resolve any proxy address problems for the affected users, make sure to force license processing on the group to ensure that the licenses can now be applied.
 
-## Azure AD Mail and ProxyAddresses attribute change
+## Microsoft Entra Mail and ProxyAddresses attribute change
 
-**Problem**: While updating license assignment on a user or a group, you might see that the Azure AD Mail and ProxyAddresses attribute of some users are changed.
+**Problem**: While updating license assignment on a user or a group, you might see that the Microsoft Entra Mail and ProxyAddresses attribute of some users are changed.
 
 Updating license assignment on a user causes the proxy address calculation to be triggered, which can change user attributes.
 
 ## LicenseAssignmentAttributeConcurrencyException in audit logs
 
-**Problem**: User has LicenseAssignmentAttributeConcurrencyException for license assignment in audit logs. When group-based licensing tries to process concurrent license assignment of the same license to a user, this exception is recorded on the user. This typically happens when a user is a member of more than one group with same assigned license. Azure AD will retry processing the user license and will resolve the issue. There is no action required from the customer to fix this issue.
+**Problem**: User has LicenseAssignmentAttributeConcurrencyException for license assignment in audit logs. When group-based licensing tries to process concurrent license assignment of the same license to a user, this exception is recorded on the user. This typically happens when a user is a member of more than one group with same assigned license. Microsoft Entra ID will retry processing the user license and will resolve the issue. There is no action required from the customer to fix this issue.
 
 ## More than one product license assigned to a group
 
 You can assign more than one product license to a group. For example, you can assign Office 365 Enterprise E3 and Enterprise Mobility + Security to a group to easily enable all included services for users.
 
-Azure AD attempts to assign all licenses that are specified in the group to each user. If Azure AD can't assign one of the products because of business logic problems, it won't assign the other licenses in the group either. An example is if there aren't enough licenses for all, or if there are conflicts with other services that are enabled on the user.
+Microsoft Entra ID attempts to assign all licenses that are specified in the group to each user. If Microsoft Entra ID can't assign one of the products because of business logic problems, it won't assign the other licenses in the group either. An example is if there aren't enough licenses for all, or if there are conflicts with other services that are enabled on the user.
 
 You can see the users who failed to get assigned and check which products are affected by this problem.
 
@@ -164,51 +164,51 @@ Keep in mind that you should avoid a situation in which migrating to group-based
 
 ### Recommended migration process
 
-1. You have existing automation (for example, PowerShell) managing license assignment and removal for users. Leave it running as is.
-1. Create a new licensing group (or decide which existing groups to use) and make sure that all required users are added as members.
-1. Assign the required licenses to those groups; your goal should be to reflect the same licensing state your existing automation (for example, PowerShell) is applying to those users.
-1. Verify that licenses have been applied to all users in those groups. This application can be done by checking the processing state on each group and by checking Audit Logs.
+1.  You have existing automation (for example, PowerShell) managing license assignment and removal for users. Leave it running as is.
+2.  Create a new licensing group (or decide which existing groups to use) and make sure that all required users are added as members.
+3.  Assign the required licenses to those groups; your goal should be to reflect the same licensing state your existing automation (for example, PowerShell) is applying to those users.
+4.  Verify that licenses have been applied to all users in those groups. This application can be done by checking the processing state on each group and by checking Audit Logs.
     
     
      -  You can perform a random check of a few individual users by looking at their license details. You will see that they have the same licenses assigned “directly” and “inherited” from groups.
      -  You can run a PowerShell script to [verify how licenses are assigned to users](/azure/active-directory/enterprise-users/licensing-group-advanced).
      -  When the same product license is assigned to the user both directly and through a group, only one license is consumed by the user. Hence no additional licenses are required to perform migration.
-1. Verify that no license assignments failed by checking each group for users in error state.
+5.  Verify that no license assignments failed by checking each group for users in error state.
 
 Consider removing the original direct assignments. We recommend that you do it gradually, and monitor the outcome on a subset of users first. If you leave the original direct assignments on users, when the users leave their licensed groups they retain the directly assigned licenses, which might not be what you want.
 
 ### An example
 
-An organization has 1,000 users. All users require Office 365 Enterprise E3 licenses. Currently the organization has a PowerShell script running on premises, adding and removing licenses from users as they come and go. However, the organization wants to replace the script with group-based licensing so licenses can be managed automatically by Azure AD.
+An organization has 1,000 users. All users require Office 365 Enterprise E3 licenses. Currently the organization has a PowerShell script running on premises, adding and removing licenses from users as they come and go. However, the organization wants to replace the script with group-based licensing so licenses can be managed automatically by Microsoft Entra ID.
 
 Here is what the migration process could look like:
 
-1. Using the Azure portal, assign the Office 365 E3 license to the **All users** group in Azure AD.
-1. Confirm that license assignment has completed for all users. Go to the overview page for the group, select **Licenses**, and check the processing status at the top of the **Licenses** page.
+1.  Using the Azure portal, assign the Office 365 E3 license to the **All users** group in Microsoft Entra ID.
+2.  Confirm that license assignment has completed for all users. Go to the overview page for the group, select **Licenses**, and check the processing status at the top of the **Licenses** page.
     
     
      -  Look for “Latest license changes have been applied to all users" to confirm processing has completed.
      -  Look for a notification on top about any users for whom licenses may have not been successfully assigned. Did we run out of licenses for some users? Do some users have conflicting license plans that prevent them from inheriting group licenses?
-1. You need to check a few users to verify that they have both the direct and group licenses applied. Go to the profile page for a user, select Licenses, and examine the state of licenses.
+3.  You need to check a few users to verify that they have both the direct and group licenses applied. Go to the profile page for a user, select Licenses, and examine the state of licenses.
     
     
      -  This is the expected user state during migration:
         
-        :::image type="content" source="../media/expected-user-state-45157e0a.png" alt-text="Screenshot of the Licenses page in Azure A D.  The Office 365 E3 license is highlighted.  In the assignment paths column the license has direct assignments to some users, and that it has inherited users from a group named AniGroup). This is the expected user state during migration.":::
+        :::image type="content" source="../media/expected-user-state-45157e0a.png" alt-text="Screenshot of the Licenses page in Microsoft Entra ID.  The Office 365 E3 license is highlighted.  In the assignment paths column the license has direct assignments to some users, and that it has inherited users from a group named AniGroup). This is the expected user state during migration.":::
         
-1. After confirming that both direct and group licenses are equivalent, you can start removing direct licenses from users. You can test this by removing them for individual users in the portal and then run automation scripts to have them removed in bulk. Here is an example of the same user with the direct licenses removed through the portal. Notice that the license state remains unchanged, but we no longer see direct assignments.
+4.  After confirming that both direct and group licenses are equivalent, you can start removing direct licenses from users. You can test this by removing them for individual users in the portal and then run automation scripts to have them removed in bulk. Here is an example of the same user with the direct licenses removed through the portal. Notice that the license state remains unchanged, but we no longer see direct assignments.
     
-    :::image type="content" source="../media/direct-licenses-removed-d550929e.png" alt-text="Screenshot of the Licenses page in Azure A D after the migration is completed.  Office 365 E3 license is highlighted. We have confirmation that direct licenses are removed.":::
+    :::image type="content" source="../media/direct-licenses-removed-d550929e.png" alt-text="Screenshot of the Licenses page in Microsoft Entra ID after the migration is completed.  Office 365 E3 license is highlighted. We have confirmation that direct licenses are removed.":::
     
 
-## Change license assignments for a user or group in Azure Active Directory
+## Change license assignments for a user or group in Microsoft Entra ID
 
-This section describes how to move users and groups between service license plans in Azure Active Directory (Azure AD). The goal Azure AD's approach is to ensure that there's no loss of service or data during the license change. Users should switch between services seamlessly. The license plan assignment steps in this section describe changing a user or group on Office 365 E1 to Office 365 E3, but the steps apply to all license plans. When you update license assignments for a user or group, the license assignment removals and new assignments are made simultaneously so that users do not lose access to their services during license changes or see license conflicts between plans.
+This section describes how to move users and groups between service license plans in Microsoft Entra ID. The goal is to ensure that there's no loss of service or data during the license change. Users should switch between services seamlessly. The license plan assignment steps in this section describe changing a user or group on Office 365 E1 to Office 365 E3, but the steps apply to all license plans. When you update license assignments for a user or group, the license assignment removals and new assignments are made simultaneously so that users do not lose access to their services during license changes or see license conflicts between plans.
 
 Before you update the license assignments, verify certain assumptions are true for all of the users or groups to be updated. If the assumptions aren't true for all of the users in a group, the migration might fail for some. As a result, some of the users might lose access to services or data. Ensure that:
 
  -  Users have the current license plan that's assigned to a group and inherited by the user and not assigned directly.
  -  You have enough available licenses for the license plan you're assigning. If you don't have enough licenses, some users might not be assigned the new license plan. You can check the number of available licenses.
  -  Always confirm users don't have assigned service licenses that can conflict with the desired license or prevent removal of the current license. For example, a license from a service such as Workplace Analytics or Project Online that has a dependency on other services.
- -  If you manage groups on-premises and sync them into Azure AD via Azure AD Connect, then you add or remove users by using your on-premises system. It can take some time for the changes to sync with Azure AD to be picked up by group licensing.
- -  If you're using Azure AD dynamic group memberships, you add or remove users by changing their attributes, but the update process for license assignments remains the same.
+ -  If you manage groups on-premises and sync them into Microsoft Entra ID via Microsoft Entra Connect, then you add or remove users by using your on-premises system. It can take some time for the changes to sync with Microsoft Entra ID to be picked up by group licensing.
+ -  If you're using Microsoft Entra dynamic group memberships, you add or remove users by changing their attributes, but the update process for license assignments remains the same.

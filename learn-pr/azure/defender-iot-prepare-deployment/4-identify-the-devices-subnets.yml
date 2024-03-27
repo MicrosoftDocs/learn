@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-prepare-deployment.identify-the-devices-and-subnets
+title: Identify the devices and subnets to monitor with Defender for IoT
+metadata:
+  title: Identify the devices and subnets to monitor with Defender for IoT
+  description: "Describes the planning process for Defender for IoT, to identify devices and subnets to monitor."
+  ms.date: 03/04/2024
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: unit
+  ms.service: defender-for-iot
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-identify-the-devices-subnets.md)]
+
+quiz:
+
+  questions:
+  
+  - content: "Figure 1 shows a network diagram depicting three floors, each with endpoints and switches. Floor three also houses  firewalls, core switches, a server, and routers. The blue dotted line depicts traffic traveling outside of the IP segment and the red line depicts interesting traffic. At which point should you put a Defender for IoT sensor - at point A, B, or C?"
+    choices:
+    - content: "A" 
+      isCorrect: true
+      explanation: "We recommend placing your sensors in locations where they can stream interesting traffic to Defender for IoT. Interesting traffic is commonly located at the interfaces connecting between the default gateway entity to the core or distribution switch."
+    - content: "B"
+      isCorrect: false
+      explanation: "While it could be useful to capture traffic traveling outside of the IP segment, placing a sensor in location B wouldn't transfer interesting traffic to Defender for IoT."
+    - content: "C"
+      isCorrect: false
+      explanation: "While it could be useful to capture traffic traveling outside of the IP segment, placing a sensor in location C wouldn't transfer interesting traffic to Defender for IoT."  
+
+  - content: "Which would be an interesting traffic point to identify?"
+    choices:
+    - content: "Traffic that is multi-directional."
+      isCorrect: true
+      explanation: "Traffic that travels in two directions is interesting to monitor."
+    - content: "Traffic that is unicast."
+      isCorrect: false 
+      explanation: "Unicast only covers part of the traffic and is less interesting to monitor. Broadcast and multicast traffic are considered interesting points of traffic to monitor."
+    - content: "Traffic that doesn't pose a risk to the network."
+      isCorrect: false
+      explanation: "You're interested in monitoring traffic that could pose a risk to your network."

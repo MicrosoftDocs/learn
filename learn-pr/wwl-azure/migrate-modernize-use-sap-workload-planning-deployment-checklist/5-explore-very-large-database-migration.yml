@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-use-sap-workload-planning-deployment-checklist.explore-very-large-database-migration
+title: Explore very large database migration
+metadata:
+  title: Explore very large database migration
+  description: "Explore very large database migration"
+  ms.date: 01/08/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-explore-very-large-database-migration.md)]

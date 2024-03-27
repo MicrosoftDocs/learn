@@ -10,8 +10,8 @@ In this module, you learned how you can use Azure Networking and security servic
 - Azure Front Door 
 - Azure Network Watcher 
 - Azure Sentinel 
-- Azure Active Directory 
-- Azure Active Directory Multi-Factor Authentication 
+- Microsoft Entra ID 
+- Microsoft Entra multifactor authentication 
 
 ## Resources
 
@@ -21,5 +21,4 @@ Use these resources to discover more:
 - [Azure network security groups](/azure/virtual-network/network-security-groups-overview)
 - [What is Azure Network Watcher?](/azure/network-watcher/network-watcher-monitoring-overview)
 - [Azure Sentinel documentation](/azure/sentinel/)
-- [Azure Active Directory documentation](/azure/active-directory/)
-
+- [Microsoft Entra documentation](/azure/active-directory/)

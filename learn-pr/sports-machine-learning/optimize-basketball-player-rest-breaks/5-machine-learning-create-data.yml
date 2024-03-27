@@ -6,8 +6,7 @@ metadata:
   ms.date: 03/10/2021
   author: softchris
   ms.author: chnoring 
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Exercise - Use machine learning and standard deviation to create fictional game data
 durationInMinutes: 5

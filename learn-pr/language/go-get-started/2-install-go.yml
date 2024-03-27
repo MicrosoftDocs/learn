@@ -6,9 +6,8 @@ metadata:
   ms.date: 10/06/2021
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.custom: team=nextgen, linux-related-content
   zone_pivot_groups: os
 title: Exercise - Install Go
 durationInMinutes: 5

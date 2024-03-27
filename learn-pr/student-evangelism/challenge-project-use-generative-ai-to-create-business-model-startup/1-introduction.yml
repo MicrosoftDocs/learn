@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.challenge-project-use-generative-ai-to-create-business-model-startup.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Use Microsoft Copilot, Your Everyday AI companion, to Create a Business Model for your Startup or business"
+  ms.date: 12/4/2023
+  author: juliamuiruri4
+  ms.author: juliamuiruri
+  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.service: microsoft-copilot
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -7,8 +7,9 @@ metadata:
   ms.date: 12/19/2022
   author: tchristiani
   ms.author: terrychr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 10
 content: |
   [!include[](includes/exercise-manage-azure-arc-data-controller.md)]

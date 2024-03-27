@@ -1,4 +1,3 @@
-
 Application deployment planning consists of three phases: managing application inventory and compatibility, packaging applications, and providing life-cycle support.
 
 ### **Application inventory and compatibility**
@@ -12,7 +11,7 @@ Newer applications might supersede many older applications that provide similar 
 ### **Application packaging**
 
 Application packaging and automated installation involve using silent installation commands from vendors. You can find these commands in installation guides, on Internet forums, or by launching the setup application with the /help or /? Command-line options.
-Silent installation commands may not be available for applications that you develop in-house. If this occurs, you'll either need to package or repackage those applications if the installer package doesn't work. You can create Windows Installer packages. Microsoft Application Virtualization (App-V) provides a packaging mechanism with the application sequencing it uses to create virtual applications. 
+Silent installation commands might not be available for applications that you develop in-house. If this occurs, you'll either need to package or repackage those applications if the installer package doesn't work. You can create Windows Installer packages. Microsoft Application Virtualization (App-V) provides a packaging mechanism with the application sequencing it uses to create virtual applications. 
  
 >[!Note]
 >Application Virtualization will be **end of life in April 2026**. We recommend looking at Azure Virtual Desktop with MSIX app attach. We'll cover Azure virtual Desktop later in this course.

@@ -4,7 +4,7 @@
 
 #### What is data store?
 
-Data store refers to either permanent and temporary storing of data.
+Data store refers to permanent and temporary storing of data.
 
 #### Data store context to include
 

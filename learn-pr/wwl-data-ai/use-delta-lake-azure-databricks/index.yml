@@ -6,8 +6,8 @@ metadata:
   ms.date: 08/26/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: azure-databricks
 title: Use Delta Lake in Azure Databricks
 summary: Delta Lake is an open source relational storage area for Spark that you can use to implement a data lakehouse architecture in Azure Databricks.
 abstract: |
@@ -17,7 +17,7 @@ abstract: |
   - Create Spark catalog tables for Delta Lake data.
   - Use Delta Lake tables for streaming data.
 prerequisites: |
-  Before starting this module, you should have a basic knowledge of Azure Databricks. Consider completing the previous modules in the [Data Engineering with Azure Databricks](/training/paths/data-engineer-azure-databricks?azure-portal=true) learning path before this one.
+  Before starting this module, you should know how to use Apache Spark in Azure Databricks. Consider completing the [Use Apache Spark in Azure Databricks](/training/modules/use-apache-spark-azure-databricks) module before this one.
 iconUrl: /training/achievements/work-dataframes-azure-databricks.svg
 levels:
 - intermediate
@@ -28,8 +28,7 @@ products:
 subjects:
 - data-analytics
 - data-engineering
-- data-lake
-- data-warehousing
+- data-storage
 units:
 - learn.wwl.use-delta-lake-azure-databricks.introduction
 - learn.wwl.use-delta-lake-azure-databricks.get-started

@@ -4,12 +4,11 @@ title: When to use Azure Service Fabric
 
 metadata:
   title: When to use Azure Service Fabric
-  description: When to use Azure Service Fabric
-  ms.date: 4/11/2022
+  description: Learn about when to use Azure Service Fabric.
+  ms.date: 01/03/2024
   author: tomvcassidy
   ms.author: tomcassidy
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 
 durationInMinutes: 7
 content: |

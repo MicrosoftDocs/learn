@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.interact-api.exercise-explore-api-documentation
+title: Exercise - Interact with an API
+metadata:
+  title: Exercise - Interact with an API
+  description: "Exercise - Interact with an API"
+  ms.date: 03/18/2024
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/4-exercise-explore-api-documentation.md)]

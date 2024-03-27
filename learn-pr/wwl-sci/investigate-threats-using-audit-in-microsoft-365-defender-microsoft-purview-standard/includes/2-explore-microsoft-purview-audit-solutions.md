@@ -10,8 +10,7 @@ Microsoft Purview auditing solutions provide an integrated solution to help orga
 
 Microsoft Purview provides two auditing solutions: Audit (Standard) and Audit (Premium).
 
-:::image type="content" source="../media/audit-solutions-comparison-0934065e.png" alt-text="Diagram showing the key capabilities of Audit (Standard) and Audit (Premium).":::
-
+Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. Audit records for these events are searchable by security ops, IT admins, insider risk teams, and compliance and legal investigators in your organization. This capability provides visibility into the activities performed across your Microsoft 365 organization.
 
 ### Audit (Standard)
 
@@ -30,8 +29,8 @@ Microsoft Purview Audit (Standard) provides organizations with the ability to lo
      -  [Search-UnifiedAuditLog cmdlet reference](/powershell/module/exchange/search-unifiedauditlog?azure-portal=true)
      -  [Use a PowerShell script to search the audit log](/microsoft-365/compliance/audit-log-search-script?azure-portal=true)
  -  **Export audit records to a CSV file**. After an organization runs the Audit log search tool in the Microsoft Purview compliance portal, it can export the audit records returned by the search to a CSV file. By doing so, Microsoft Excel can sort and filter on different audit record properties. Excel Power Query can also be used to transform functionality to split each property in the AuditData JSON object into its own column. This process enables you to effectively view and compare similar data for different events.
- -  **Access to audit logs via Office 365 Management Activity API**. A third method for accessing and retrieving audit records is to use the Office 365 Management Activity API. This API lets organizations retain auditing data for longer periods than the default 90 days. It also lets them import their auditing data into a SIEM solution. For more information, see [Office 365 Management Activity API reference](/office/office-365-management-api/office-365-management-activity-api-reference?azure-portal=true).
- -  **90-day audit log retention**. When an audited activity is performed by a user or admin, an audit record is generated and stored in the audit log for the organization. In Microsoft Purview Audit (Standard), records are retained for 90 days. As such, organizations can search for activities that occurred within the past three months.
+ -  **Access to audit logs via Office 365 Management Activity API**. A third method for accessing and retrieving audit records is to use the Office 365 Management Activity API. This API lets organizations retain auditing data for longer periods than the default 180 days. It also lets them import their auditing data into a SIEM solution. For more information, see [Office 365 Management Activity API reference](/office/office-365-management-api/office-365-management-activity-api-reference?azure-portal=true).
+ -  **180-day audit log retention**. When an audited activity is performed by a user or admin, an audit record is generated and stored in the audit log for the organization. In Microsoft Purview Audit (Standard), records are retained for 180 days. As such, organizations can search for activities that occurred within the past three months.
 
 ### Audit (Premium)
 
@@ -41,7 +40,7 @@ Audit (Premium) builds on the capabilities of Audit (Standard) by providing audi
      -  the service where the audited activities occurred.
      -  specific audited activities.
      -  the user who performed an audited activity.
- -  **Longer retention of audit records**. Exchange, SharePoint, and Azure Active Directory audit records are retained for one year by default. Audit records for all other activities are retained for 90 days by default. With Audit (Premium), organizations can use audit log retention policies to configure longer retention periods.
+ -  **Longer retention of audit records**. Exchange, SharePoint, and Microsoft Entra audit records are retained for one year by default. Audit records for all other activities are retained for 180 days by default. With Audit (Premium), organizations can use audit log retention policies to configure longer retention periods.
  -  **High-value, crucial Audit (Premium) events**. Audit records for crucial events can help an organization conduct forensic and compliance investigations. It does so by providing visibility to events such as:
      -  When mail items were accessed.
      -  When mail items were replied to and forwarded.
@@ -65,7 +64,7 @@ The following table compares the key capabilities available in Audit (Standard) 
 | Search-UnifiedAuditLog cmdlet                                   |          X           |          X          |
 | Export audit records to CSV file                                |          X           |          X          |
 | Access to audit logs via Office 365 Management Activity API (1) |          X           |          X          |
-| 90-day audit log retention                                      |          X           |          X          |
+| 180-day audit log retention                                      |          X           |          X          |
 | One-year audit log retention                                    |                      |          X          |
 | 10-year audit log retention (2)                                 |                      |          X          |
 | Audit log retention policies                                    |                      |          X          |

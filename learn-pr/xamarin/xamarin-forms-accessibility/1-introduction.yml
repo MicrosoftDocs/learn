@@ -3,11 +3,10 @@ uid: learn-xamarin.xamarin-forms-accessibility.1-introduction
 metadata:
   title: Introduction
   description: Learn about Xamarin.Forms accessibility features and how to integrate them into your app.
-  ms.date: 04/20/2021
+  ms.date: 02/20/2024
   author: jamont
   ms.author: jamont
-  ms.topic: interactive-tutorial
-  ms.prod: learning-xamarin
+  ms.topic: unit
   
 title: Introduction
 durationInMinutes: 1

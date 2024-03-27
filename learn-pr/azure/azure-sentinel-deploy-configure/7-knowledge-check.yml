@@ -6,8 +6,7 @@ metadata:
   ms.date: 03/01/2023
   author: cwatson-cat
   ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Knowledge check
 durationInMinutes: 5
 content: |
@@ -68,14 +67,14 @@ quiz:
       explanation: "That's incorrect. The Microsoft Sentinel Reader role can review data, incidents, workbooks, and other Microsoft Sentinel resources. But, it can't edit them."
 
 
-  - content: "Which of the following is required to connect Microsoft Sentinel to Azure AD?"
+  - content: "Which of the following is required to connect Microsoft Sentinel to Microsoft Entra ID?"
     choices:
-    - content: "You need an Azure AD P1 or P2 license"
+    - content: "You need a Microsoft Entra ID P1 or P2 license"
       isCorrect: true
-      explanation: "That's correct. If you want to export sign-in data from Azure AD to Microsoft Sentinel, you must have an Azure AD P1 or P2 license."
-    - content: "You must use Azure AD Connect"
+      explanation: "That's correct. If you want to export sign-in data from Microsoft Entra ID to Microsoft Sentinel, you must have a Microsoft Entra ID P1 or P2 license."
+    - content: "You must use Microsoft Entra Connect"
       isCorrect: false
-      explanation: "That's incorrect. Azure AD Connect is a tool for connecting on-premises identity infrastructure to Microsoft Azure AD."
-    - content: "Azure AD Domain Services must be enabled"
+      explanation: "That's incorrect. Microsoft Entra Connect is a tool for connecting on-premises identity infrastructure to Microsoft Azure AD."
+    - content: "Microsoft Entra Domain Services must be enabled"
       isCorrect: false
-      explanation: "That's incorrect. Although Azure AD Domain Services works with Azure AD, it isn't a requirement for connecting Microsoft Sentinel and Azure AD."
+      explanation: "That's incorrect. Although Microsoft Entra Domain Services works with Microsoft Entra ID, it isn't a requirement for connecting Microsoft Sentinel and Microsoft Entra ID."

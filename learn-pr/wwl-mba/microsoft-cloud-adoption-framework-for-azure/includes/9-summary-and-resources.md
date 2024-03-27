@@ -72,8 +72,6 @@ Use these resources to discover more.
 
 **Cloud governance:**
 
-- [Governance benchmark tool](https://cafbaseline.com)
-
 - [Governance in the Cloud Adoption Framework](/azure/cloud-adoption-framework/govern/)
 
 - [Azure Blueprints samples](/azure/governance/blueprints/samples/)

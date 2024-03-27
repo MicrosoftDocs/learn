@@ -6,8 +6,8 @@ metadata:
   ms.date: 09/16/2022
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: postgresql
 title: Understand concurrency in PostgreSQL
 summary: Azure Database for PostgreSQL is a multi-user relational database solution. The increase in users brings a risk of conflicts and so it is important to understand the concurrency systems that are in place.
 abstract: |
@@ -26,7 +26,7 @@ roles:
 products:
 - azure-database-postgresql
 subjects:
-- database
+- databases
 units:
 - learn.wwl.understand-concurrency-postgresql.introduction
 - learn.wwl.understand-concurrency-postgresql.understand-multi-version-concurrency-control-snapshots

@@ -3,13 +3,17 @@ uid: learn.wwl.configure-file-folder-backups
 metadata:
   title: Configure file and folder backups
   description: "Configure file and folder backups"
-  ms.date: 03/06/2023
+  ms.date: 10/30/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: ai-assisted
 title: Configure file and folder backups
-summary: Learn how to configure backup and restore policies that meet your company's regulatory needs.
+summary: |
+  Learn how to configure backup and restore policies that meet your company's regulatory needs.
 abstract: |
   In this module, you learn how to:
   - Identify features and usage cases for Azure Backup.
@@ -26,7 +30,7 @@ roles:
 products:
 - azure-backup
 subjects:
-- business-continuity
+- site-reliability-engineering
 units:
 - learn.wwl.configure-file-folder-backups.introduction
 - learn.wwl.configure-file-folder-backups.describe-azure-backup-benefits

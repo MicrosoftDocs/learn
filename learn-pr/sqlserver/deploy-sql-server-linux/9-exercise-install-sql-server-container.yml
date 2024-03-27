@@ -8,8 +8,8 @@ metadata:
   author: rwestmsft
   ms.author: randolphwest
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-sqlserver
+  ms.topic: unit
+  ms.custom: linux-related-content
 interactive: bash
 azureSandbox: true
 durationInMinutes: 10

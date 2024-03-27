@@ -5,9 +5,8 @@ metadata:
   description: Knowledge check
   ms.date: 12/15/2020
   author: micrum
-  ms.author: micrum
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: robmcm
+  ms.topic: unit
 title: Knowledge check
 durationInMinutes: 4
 content: |
@@ -49,9 +48,9 @@ quiz:
     - content: "A user that subscribed to Azure outside of an enterprise customer should use the data privacy dashboard to submit their DSR."
       isCorrect: true
       explanation: "That's correct. A user that uses their own managed service account outside of an enterprise customer will need to contact Microsoft directly with their DSR."
-    - content: "A data subject's customer data can only reside in a single Azure AD tenant."
+    - content: "A data subject's customer data can only reside in a single Microsoft Entra tenant."
       isCorrect: false
-      explanation: "That's incorrect. The data subject may participate in multiple Azure AD tenants."
+      explanation: "That's incorrect. The data subject may participate in multiple Microsoft Entra tenants."
 
   - content: "Based on Microsoft's estimation, where in Microsoft online services is 90 percent of organizational data stored?"
     choices:
@@ -69,7 +68,7 @@ quiz:
     choices:
     - content: "A part-time employee uses their account to access OneDrive for Business."
       isCorrect: false
-      explanation: "That's incorrect. Whether a user is a part-time or full-time employee, when they sign in with their employer's Azure AD tenant, the employer will be the data controller."
+      explanation: "That's incorrect. Whether a user is a part-time or full-time employee, when they sign in with their employer's Microsoft Entra tenant, the employer will be the data controller."
     - content: "A customer sends an email to their financial institution, which is a Microsoft enterprise customer, regarding their loan."
       isCorrect: false
       explanation: "That's incorrect. The email received from the customer containing personal information is stored in the enterprise customer's Exchange Online mailbox."

@@ -1,6 +1,6 @@
 Before you begin, make sure you have the following software installed on your machine:
 
-- [Node.js](https://nodejs.org/download/)
+- [Node.js](https://nodejs.org/en/download)
 - [Visual Studio Code](https://code.visualstudio.com/download)
 - [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) (min. version 2.6.666)
 - [Azure Functions extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)
@@ -33,7 +33,7 @@ Before you begin, make sure you have the following software installed on your ma
 
 ## Create a Storage account
 
-Azure Functions requires a storage account, and you'll need it when you deploy the web app to the cloud later in the module.
+Azure Functions requires a storage account, and you need it when you deploy the web app to the cloud later in the module.
 
 1. Run the following command in Cloud Shell to define a name for your Azure Storage account.
 
@@ -58,7 +58,7 @@ Azure Functions requires a storage account, and you'll need it when you deploy t
 
 ## Create an Azure Cosmos DB account
 
-You store stock prices in an Azure Cosmos DB database, so you'll set that up in the sandbox account.
+You store stock prices in an Azure Cosmos DB database. So, set that up in the sandbox account.
 
 1. Run the following `az cosmosdb create` command in Cloud Shell to create a new Azure Cosmos DB account in your sandbox resource group.
 

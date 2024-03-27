@@ -1,6 +1,6 @@
-You've learned about the capabilities of Azure Automation State Configuration. You've deployed a desired state to a server so that the Windows IIS feature is consistently deployed across a set of nodes.
+In this module, you learned about the capabilities of Azure Automation State Configuration. You also deployed a desired state to a server so that the Windows IIS feature was consistently deployed across a set of nodes.
 
-In particular, you've seen how to:
+In particular, you learned how to:
 
 - Identify the capabilities of Azure Automation State Configuration.
 - Enable and register virtual machines for management by Azure Automation.
@@ -10,7 +10,7 @@ In particular, you've seen how to:
 
 ## Learn more
 
-- [Install and configure WMF 5.1](/powershell/scripting/wmf/setup/install-configure)
-- [Troubleshoot DSC - WinRM dependency](/powershell/scripting/dsc/troubleshooting/troubleshooting?view=powershell-6#winrm-dependency)
+- [Install and configure WMF 5.1](/powershell/scripting/windows-powershell/wmf/setup/install-configure)
+- [Troubleshoot DSC - WinRM dependency](/powershell/scripting/dsc/troubleshooting/troubleshooting#winrm-dependency)
 - [PowerShell DSC for Linux](https://github.com/Microsoft/PowerShell-DSC-for-Linux)
 - [DSC Resource Kit](https://www.powershellgallery.com/packages?q=Tags%3A%22DSCResourceKit%22)

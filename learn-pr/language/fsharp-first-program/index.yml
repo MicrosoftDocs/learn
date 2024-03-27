@@ -6,9 +6,10 @@ metadata:
   ms.date: 02/24/2023
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.manager: markl
+  ms.topic: module
   ms.custom: team=nextgen
+  ms.devlang: fsharp
 title: Store and retrieve data by using F#
 summary: Write your first F# programs, and learn to work with input and output, data type conversions, and operators.
 abstract: |
@@ -29,7 +30,6 @@ prerequisites: |
   - Know how to run commands at the console.
   - Have F# (.NET Core) installed.
 subjects:
-- development-tools
 - storage
 units:
   - learn.fsharp-first-program.1-introduction

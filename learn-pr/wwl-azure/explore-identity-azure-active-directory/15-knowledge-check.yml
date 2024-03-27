@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/16/2023
+  ms.date: 01/31/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/15-knowledge-check.md)]
@@ -22,29 +21,29 @@ quiz:
       explanation: "Correct. Build your systems where you're always verifying the identity. Only grant the permissions needed to do the job. And assume there has been a breach."
     - content: "Verify explicitly - Least privilege - Conditional access"
       isCorrect: false
-      explanation: "Incorrect. Conditional access is a tool to help implement Zero Trust within your identity solutions using Azure AD."
+      explanation: "Incorrect. Conditional access is a tool to help implement Zero Trust within your identity solutions using Microsoft Entra ID."
     - content: "Multifactor authentication - Conditional access - Privilege identity management"
       isCorrect: false
-      explanation: "Incorrect. The terms listed are tools and capabilities in Azure AD to help you reach a Zero Trust configuration."
+      explanation: "Incorrect. The terms listed are tools and capabilities in Microsoft Entra ID to help you reach a Zero Trust configuration."
   - content: "What is decentralized identity?"
     choices:
-    - content: "Storing all your user and device identities in Active Directory on-premises and then using Azure AD Connect to apply them in the cloud."
+    - content: "Storing all your user and device identities in Active Directory on-premises and then using Microsoft Entra Connect to apply them in the cloud."
       isCorrect: false
       explanation: "Incorrect. Hybrid Identity is sharing existing identities from on-premises."
     - content: "An identity provider that provides verified identities provided in a blockchain store."
       isCorrect: true
       explanation: "Correct. There are external companies where users can configure verified credentials."
-    - content: "Azure Active Directory (Azure AD)"
+    - content: "Microsoft Entra ID"
       isCorrect: false
-      explanation: "Incorrect. Azure AD is an example of a centralized identity system."
+      explanation: "Incorrect. Microsoft Entra ID is an example of a centralized identity system."
   - content: "What is claims-based authentication?"
     choices:
-    - content: "When a user signs in, Azure AD creates and sends an ID token that contains a set of claims about the user."
+    - content: "When a user signs in, Microsoft Entra ID creates and sends an ID token that contains a set of claims about the user."
       isCorrect: true
       explanation: "Correct. A Jason web token is used to establish a user's identity and the services they want to access."
     - content: "When a user doesn't need to sign in, but sends a claim directly to a cloud resource to access it.  The claim is in the form of a Jason Web Token, and provides the user sign-in information."
       isCorrect: false
       explanation: "Incorrect. Claims-based authentication issues the token after the user is verified."
-    - content: "When a user signs in, Azure AD writes every access privilege the user has into a token and shares it with each application."
+    - content: "When a user signs in, Microsoft Entra ID writes every access privilege the user has into a token and shares it with each application."
       isCorrect: false
       explanation: "Incorrect. The token and claims are issued on a per request basis."

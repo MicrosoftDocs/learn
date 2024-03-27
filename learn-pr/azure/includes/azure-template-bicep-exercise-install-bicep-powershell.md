@@ -1,9 +1,8 @@
 ---
-author: davidsmatlak
-ms.prod: learning-azure
+author: mumian
 ms.topic: include
 ms.date: 04/11/2023
-ms.author: davidsmatlak
+ms.author: jgao
 ---
 
 ### Install the Bicep CLI

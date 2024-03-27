@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/16/2020
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Exercise - Set up a new project and integrate OpenZeppelin
 durationInMinutes: 8

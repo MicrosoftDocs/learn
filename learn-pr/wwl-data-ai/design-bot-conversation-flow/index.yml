@@ -3,11 +3,11 @@ uid: learn.wwl.design-bot-conversation-flow
 metadata:
   title: Create a bot with the Bot Framework SDK
   description: "Learn how to build a bot by using the Microsoft Bot Framework SDK."
-  ms.date: 09/16/2022
+  ms.date: 05/25/2023
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.topic: module-standard-task-based
+  ms.service: azure-ai-services
 title: Create a bot with the Bot Framework SDK
 summary: Learn how to build a bot by using the Microsoft Bot Framework SDK.
 abstract: |
@@ -31,7 +31,7 @@ products:
 - azure
 - azure-bot-service
 subjects:
-- chatbot
+- chatbots
 units:
 - learn.wwl.design-bot-conversation-flow.introduction
 - learn.wwl.design-bot-conversation-flow.introduce-principles-of-bot-design
