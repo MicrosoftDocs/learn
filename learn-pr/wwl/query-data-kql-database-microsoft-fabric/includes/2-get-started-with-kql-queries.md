@@ -76,11 +76,11 @@ As mentioned, T-SQL can be run to a limit extent against a Microsoft Fabric KQL 
                  END;
     ```
      generates the following KQL Syntax. This is a powerful feature within the KQL Engine
-
+p
     ```kusto
     
     Trips
-    | summarize ['Total Trip Distance']=sum(trip_distance) by groupByExpression1=iff((isnull(pickup_boroname) or (pickup_boroname == "")), "Unidentified", > > ickup_boroname)
+    | summarize ['Total Trip Distance']=sum(trip_distance) by groupByExpression1=iff((isnull(pickup_boroname) or (pickup_boroname == "")), "Unidentified", pickup_boroname)
     | project Borough=groupByExpression1, ['Total Trip Distance']
     
     ```
