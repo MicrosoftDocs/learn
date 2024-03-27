@@ -35900,6 +35900,11 @@
       "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/13-azure-functions.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/10-azure-stream-analytics-queries-time-considerations.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
     }
   ]
 }
