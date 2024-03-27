@@ -35,7 +35,6 @@ subjects:
 - iot
 units:
 - learn.wwl.get-started-cloud-storage-for-iot.introduction
-- learn.wwl.get-started-cloud-storage-for-iot.examine-iot-lambda-architecture
 - learn.wwl.get-started-cloud-storage-for-iot.review-options-for-azure-iot-solutions
 - learn.wwl.get-started-cloud-storage-for-iot.examine-other-storage-options
 - learn.wwl.get-started-cloud-storage-for-iot.knowledge-check
