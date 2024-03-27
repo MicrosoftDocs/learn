@@ -64,8 +64,7 @@ You might identify two or more devices listed that are really the same device. T
 1. Select the devices you need to merge by clicking the checkboxes for those rows
 1. Select **Merge**
 1. Select **Confirm**
-
-<!-- how to give examples of this?? how to choose a device, what will they see? should be supply a PCAP file to upload, seems too much. So how do we demonstrate the updating?-->
+<!-- how to give examples of this?? how to choose a device, what will they see? should be supply a PCAP file to upload, seems too much. So how do we demonstrate the updating? -->
 <!-- is this section needed? Isnt it just a copy of the section above? -->
 After checking the details of the devices, we'll update the details for one listed device.
 
@@ -86,7 +85,8 @@ Assign a unique device as **Important**. In the **Device map**:
 ## Check public IP addresses
 
 Select **System setting** > **Deployment**
-What do we do here? Give example of how this is done?
+
+**What do we do here? Give example of how this is done? Theo**
 
 ## Add DHCP address ranges
 
