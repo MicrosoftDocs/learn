@@ -34,7 +34,6 @@ subjects:
 - cloud-security
 - iot
 units:
-- learn.wwl.get-started-cloud-storage-for-iot.review-options-for-azure-iot-solutions
 - learn.wwl.get-started-cloud-storage-for-iot.summary
 badge:
   uid: learn.wwl.get-started-cloud-storage-for-iot.badge
