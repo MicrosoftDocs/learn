@@ -3128,3 +3128,8 @@ achievements:
   title: Create an app migration plan
   summary: Learn how to plan an app workload migration to Azure.
   iconUrl: /learn/achievements/create-app-migration-plan.svg
+- uid: learn.wwl.migrate-web-application-to-app-service.badge
+  type: badge
+  title: Migrate a web app to Azure App Service
+  summary: Learn about the different app hosting options in Azure and perform an app migration.
+  iconUrl: /learn/achievements/migrate-web-application-to-app-service.svg
