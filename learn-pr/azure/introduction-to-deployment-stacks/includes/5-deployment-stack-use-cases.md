@@ -6,7 +6,7 @@ In this unit, you review a scenario that uses deployment stacks for grouping res
 
 Suppose your community bank has an Azure environment with multiple subscriptions. The platform team manages a shared services subscription while the applications team manages a subscription for the bank's user facing applications.
 
-The shared services subscription contains a resource group that contains an Azure Front Door profile. This profile is shared by application teams for public access to their web apps.
+The shared services subscription contains a resource group that contains an Azure Front Door profile. The application teams share this profile for public access to their web apps.
 
 ![a graphic representing a deployment stack scenario, step 1](../media/scenario_1.png)
 
@@ -16,7 +16,7 @@ The application is composed of an App Service app, Cosmos DB account, and an Azu
 
 ![a graphic representing a deployment stack scenario, step 2](../media/scenario_2.png)
 
-The deposits application team creates the deployment stack scoped at the subscription level triggering a deployment of the application's resources. The application's resources are managed by the deployment stack, including the child resources of the Front Door profile in the shared services subscription.
+The deposits application team creates the deployment stack scoped at the subscription level triggering a deployment of the application's resources. The deployment stack now manages the application's resources, including the child resources of the Front Door profile in the shared services subscription.
 
 ![a graphic representing a deployment stack scenario, step 3](../media/scenario_3.png)
 
@@ -24,9 +24,9 @@ The deployment stack is created or modified with deny settings that prevent any 
 
 ![a graphic representing a deployment stack scenario, step 4](../media/scenario_4.png)
 
-The loans applicaion, similar to the deposits application, is composed of an App Service app, Cosmos DB account, and an Azure Front Door endpoint, route, and origin group.
+The loans application, similar to the deposits application, is composed of an App Service app, Cosmos DB account, and an Azure Front Door endpoint, route, and origin group.
 
-The loans application team creates the deployment stack scoped at the subscription level.  The stack triggers a the deployment of a test version of the application's resources. The application's resources are managed by the deployment stack, including the child resources of the Front Door profile in the shared services subscription.
+The loans application team creates the deployment stack scoped at the subscription level. The stack triggers the deployment of a test version of the application's resources. The deployment stack now manages the application's resources, including the child resources of the Front Door profile in the shared services subscription.
 
 ![a graphic representing a deployment stack scenario, step 5](../media/scenario_5.png)
 
