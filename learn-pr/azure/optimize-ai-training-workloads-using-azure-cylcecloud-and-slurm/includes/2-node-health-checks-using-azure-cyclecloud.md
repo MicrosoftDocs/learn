@@ -19,21 +19,7 @@ Image 3: Enable NHC on Startup, screenshot from the CC Web Portal
 > [!NOTE]
 > Running NHC will add startup time to healthy nodes which can take up to 10 minutes. 
 
-CycleCloud 8.6 supported offerings are:
-  - NDm H100 v5-series
-  - NCads H100 v5-series
-  - NDm A100 v4-series
-  - ND A100 v4-series
-  - NC A100 v4-series
-  - ND MI300x v5-series
-  - HBv4-series
-  - HX-series
-  - HBv3-series
-  - HBv2-series
-  - NCv3-series
-  - NDv2-serries
-
-For more information, see [GPU optimized virtual machine sizes](/azure/virtual-machines/sizes-gpu).
+Azure CycleCloud supports the new H-series VMs out of the box and N-series, but for the best experience and performance, follow the guidelines and best practices. For more information about CycleCloud supported VMs, see [GPU optimized virtual machine sizes](/azure/virtual-machines/sizes-gpu) and [HPC optimized virtual machine sizes](/azure/virtual-machines/sizes-hpc).
 
 ## Minimum Requirements for Node Health Checks
 
