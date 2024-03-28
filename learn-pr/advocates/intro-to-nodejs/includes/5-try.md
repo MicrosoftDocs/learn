@@ -114,7 +114,7 @@ The following top-level asynchronous code requests an HTTP JSON data source then
     console.log(`start`);
     
     try{
-        const response = await https.get('https://nodejs.org/dist/index.json';
+        const response = await https.get('https://nodejs.org/dist/index.json');
 
         console.log(res.statusCode);
     } catch( error ){
