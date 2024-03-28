@@ -12,7 +12,7 @@ metadata:
   ms.service: active-directory
   ai-usage: ai-assisted
 title: Configure Microsoft Entra ID
-summary: Learn how to configure Microsoft Entra ID, including features like Microsoft Entra ID join and self-service password reset.
+summary: Learn how to configure Microsoft Entra ID, including features like Microsoft Entra join and self-service password reset.
 abstract: |
   In this module, you learn how to:
 
