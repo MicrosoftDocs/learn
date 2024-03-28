@@ -3,7 +3,7 @@ In this exercise, you utilize the knowledge you gain about the six AI principles
 **Steps to complete the exercise**:
 
 1. Open the text editor or Word Document you created earlier.
-1. Create a new section and title it Design AI systems responsibly.
+1. Create a new section and title it *Design AI systems responsibly*.
 1. Under this new section, create a table to document summary and impact for each Microsoft's AI principle. Refer to the following table as an example.
 1. For each principle, write a summary in your own words and the importance of the principle in the design of AI systems. See the first principle as an example.
 
