@@ -35620,6 +35620,436 @@
       "source_path": "learn-pr/data-ai-cert/survey-the-azure-data-platform/11-summary.md",
       "redirect_url": "/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/modernize-net-java/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/assess-migration/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/assess-migration/3-assess-your-workload.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/assess-migration/6-discover-optimization-secure-manage.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/assess-migration/4-examine-migration-cost.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/assess-migration/2-explore-reasons-migrate.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/assess-migration/5-identify-priorities-dependencies.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/assess-migration/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/assess-migration/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/assess-migration/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/move-web-application-to-app-services/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/move-web-application-to-app-services/4-discover-azure-key-vault.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/move-web-application-to-app-services/5-discover-custom-domains-azure.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/move-web-application-to-app-services/2-examine-hosting-options.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/move-web-application-to-app-services/7-exercise-migrate-dotnet-app.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/move-web-application-to-app-services/8-exercise-migrate-spring-app.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/move-web-application-to-app-services/6-explore-app-scaling.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/move-web-application-to-app-services/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/move-web-application-to-app-services/9-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/move-web-application-to-app-services/3-monitor-application-insights.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/move-web-application-to-app-services/10-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/monitor-health-performance-of-your-web-applications/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/monitor-health-performance-of-your-web-applications/2-discover-azure-monitor.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/monitor-health-performance-of-your-web-applications/6-discover-snapshot-debugger.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/monitor-health-performance-of-your-web-applications/5-exercise-log-analytics.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/monitor-health-performance-of-your-web-applications/3-explore-application-insights.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/monitor-health-performance-of-your-web-applications/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/monitor-health-performance-of-your-web-applications/4-investigate-log-analytics.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/monitor-health-performance-of-your-web-applications/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/monitor-health-performance-of-your-web-applications/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/move-application-data-to-cloud/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/move-application-data-to-cloud/3-determine-data-requirements.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/move-application-data-to-cloud/9-exercise-migrate-postgresql-data.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/move-application-data-to-cloud/8-exercise-migrate-sql-data.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/move-application-data-to-cloud/2-explore-migration-tools.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/move-application-data-to-cloud/5-explore-security-options.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/move-application-data-to-cloud/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/move-application-data-to-cloud/4-investigate-azure-database-options.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/move-application-data-to-cloud/10-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/move-application-data-to-cloud/7-optimize-cost-migrated-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/move-application-data-to-cloud/6-optimize-sql-query-performance.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/move-application-data-to-cloud/11-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/consider-message-processing-options-constraints/index.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/consider-message-processing-options-constraints/2-message-routing-event-grid.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/consider-message-processing-options-constraints/4-iot-hub-quotas-throttle.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/consider-message-processing-options-constraints/3-message-enrichments.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/consider-message-processing-options-constraints/1-introduction.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/consider-message-processing-options-constraints/5-knowledge-check.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/consider-message-processing-options-constraints/6-summary.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/index.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/12-azure-stream-analytics-outputs.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/8-azure-stream-analytics-queries.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/7-azure-stream-analytics-reference-data-input.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/6-azure-stream-analytics-streaming-data-input.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/11-examine-azure-stream-analytics-window-functions.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/13-azure-functions.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/10-azure-stream-analytics-queries-time-considerations.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/2-what-azure-stream-analytics.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/5-azure-stream-analytics-input-types.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/1-introduction.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/14-knowledge-check.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/9-azure-stream-analytics-queries-parse-complex-data-types.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/4-azure-stream-analytics-patterns-guidelines.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/15-summary.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/3-azure-stream-analytics-other-stream-process-technologies.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/index.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/5-iot-hub-built-in-end-point.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/4-introduction-to-message-routing.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/3-iot-hub-common-message-format.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/6-message-routing-query-syntax.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/1-introduction.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/7-knowledge-check.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/2-what-is-message-processing.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/8-summary.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/index.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/4-azure-storage-options.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/6-azure-cosmos-database.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/5-azure-data-lake.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/7-azure-sql-database.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/2-introduction-lambda-architecture.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/8-other-storage-options.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/1-introduction.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/9-knowledge-check.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/3-common-storage-options-azure-iot-solutions.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/10-summary.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/implement-device-message-processing-data-analytics/index.md",
+      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
+      "redirect_document_id": false
     }
   ]
 }

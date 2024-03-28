@@ -3,7 +3,7 @@ uid: learn.language.vue-get-started.4-attribute-binding
 metadata:
   title: Attribute binding
   description: Beyond displaying data on the page, you can also bind data to attributes. Explore the available options and syntax.
-  ms.date: 03/01/2021 
+  ms.date: 01/10/2023 
   author: GeekTrainer
   ms.author: chrhar
   ms.topic: unit
