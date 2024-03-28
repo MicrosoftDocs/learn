@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.philanthropies.embrace-responsible-ai.review-responsible-ai-implications-on case-studies
+uid: learn.philanthropies.embrace-responsible-ai.review-responsible-ai-implications-on-case-studies
 title: Review responsible AI implications on case studies
 metadata:
   title: Review responsible AI implications on case studies
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-review-responsible-ai-implications-on case-studies.md)]
+  [!include[](includes/4-review-responsible-ai-implications-on-case-studies.md)]
