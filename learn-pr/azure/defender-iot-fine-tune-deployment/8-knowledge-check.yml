@@ -92,17 +92,17 @@ quiz:
     - content: "Following the remediation steps listed in the device alert pane."
       isCorrect: true
       explanation: "Correct, making changes based on the remediation steps presented."
-  - content: "What is reason for choosing the **Learn** option in the **Take action** tab?"
+  - content: "What is reason for choosing the Learn option in the Take action tab?"
     choices:
-    - content: "The alert you are analyzing will be added to the baseline alerts and the type of network traffic won't generate future alerts."
+    - content: "So that the sensor learns that this type of traffic is normal and wont generate an alert in the future. / The alert you are analyzing will be added to the baseline alerts and the type of network traffic won't generate future alerts."
       isCorrect: true
-      explanation: "Correct, the same traffic will not trigger an alert in future."
-    - content: ""
+      explanation: "Correct, the sensor learns not to trigger an alert for this traffic in the future."
+    - content: "So that the sensor learns that this type of traffic is suspicious and should generate alerts in the future."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect, the sensor learns not to trigger an alert for this traffic in the future."
+    - content: "So that the sensor learns that the subnet linked to this traffic needs to be reconfigured."
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect, the sensor will learn not to trigger an alert for this traffic in the future."
   - content: ""
     choices:
     - content: ""

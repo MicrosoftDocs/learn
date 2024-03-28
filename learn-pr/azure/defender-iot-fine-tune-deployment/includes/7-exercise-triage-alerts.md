@@ -21,7 +21,7 @@ The **Alerts** page provides more details about an alert.
     1. If the alert is normal network traffic, choose **Select Learn**.
     1. If the alert requires a security response, consult a relevant Control Systems Engineer to validate the origin of the alert.
 
-    :::image type="content" source="../media/7-alert-full-details.png" alt-text="Screenshot of the alert details with the Take Action box highlighted" lightbox="../media/7-alert-full-details.png" :::
+        :::image type="content" source="../media/7-alert-full-details.png" alt-text="Screenshot of the alert details with the Take Action box highlighted" lightbox="../media/7-alert-full-details.png" :::
 
     1. If you want to suppress the alert, select **Create Suppression Rule** and the suppression rule pane opens.
         1. Type a Name and a description.
