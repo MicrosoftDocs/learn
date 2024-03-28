@@ -4,7 +4,7 @@ title: Describe Route Reflector on Azure Stack HCI
 metadata:
   title: Describe Route Reflector on Azure Stack HCI 
   description: Determine the role of Route Reflector in optimizing the routing functionality in multitenant scenarios.
-  ms.date: 03/30/2022
+  ms.date: 12/28/2022
   author: JasonGerend
   ms.author: jgerend
   ms.topic: unit

@@ -6,7 +6,7 @@ metadata:
   description: In many cases, meaning of text can be represented by a set of words that contained in the text. We will see if taking word distribution into account can yield good classification results, and how it can be improved taking into account word frequency.
   author: shwars
   ms.author: chnoring
-  ms.date: 04/14/2020
+  ms.date: 06/04/2020
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 10

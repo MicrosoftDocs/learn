@@ -4,7 +4,7 @@ title: Create table constraints and indexes with Azure Data Studio
 metadata:
   title: Create table constraints and indexes with Azure Data Studio
   description: "Create primary and foreign keys on the tables in the database. Also implement default values and check constraints in columns."
-  ms.date: 12/29/2022
+  ms.date: 03/05/2024
   author: JetterMcTedder
   ms.author: bspendolini
   ms.topic: unit
