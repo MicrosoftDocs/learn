@@ -1,4 +1,4 @@
-Protecting users' identity by monitoring their usage and sign-in patters ensures a secure cloud solution. Explore how to design and implement Microsoft Entra Identity Protection.
+Protecting users' identity by monitoring their usage and sign-in patterns ensures a secure cloud solution. Explore how to design and implement Microsoft Entra Identity Protection.
 
 ### Watch this video
 
