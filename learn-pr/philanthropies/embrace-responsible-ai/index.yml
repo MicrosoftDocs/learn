@@ -2,16 +2,16 @@
 uid: learn.philanthropies.embrace-responsible-ai
 metadata:
   title: Guided project - Embrace responsible AI
-  description: Go beyond theory and learn how to implement Responsible AI framework into a learning environment.  Learn through real-world examples and interactive exercises. This module is designed to help integrate AI systems into various work environments.
+  description: Go beyond theory and learn how to implement Responsible AI framework into a learning environment. Learn through real-world examples and interactive exercises. This module is designed to help integrate AI systems into various work environments.
   ms.date: 03/28/2024
   author: yoosunee
   ms.author: andreapark
   ms.topic: module
   ms.service: artificial-intelligence
 title: Guided project - Embrace responsible AI
-summary: This module offers an in-depth exploration of the Responsible AI framework, tailored for trainers and educators seeking to implement AI ethically in their learning environments. You will engage with interactive exercises that illustrate the application of responsible AI framework in scenarios like college training programs, enhancing your practical understanding.
+summary: This module offers an in-depth exploration of the Responsible AI framework, tailored for trainers, and educators seeking to implement AI ethically in their learning environments. You engage with interactive exercises that illustrate the application of responsible AI framework in scenarios like college training programs, enhancing your practical understanding.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you are able to:
   - Evaluate the risks of utilizing AI for personalized learning to identify potential setbacks.
   - Assess the considerations necessary to ensure fairness when implementing AI systems in educational settings.
   - Analyze privacy measures that are essential for protecting personal information within AI systems used in education.
