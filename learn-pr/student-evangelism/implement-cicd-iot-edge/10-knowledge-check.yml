@@ -3,13 +3,12 @@ uid: learn.oxford.implement-cicd-iot-edge.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: In this section, we create interactive questions that validate if the learner has understood the learning objectives.
+  description: In this section, we create interactive questions that validate if the learner understands the learning objectives.
   ms.date: 06/24/2020
-  author: leestott
-  ms.author: leestott
+  author: PatAltimore
+  ms.author: patricka
   ms.topic: unit
   ms.custom: team=nextgen
-  ms.service: iot-edge
 durationInMinutes: 4
 content: |
 quiz:
@@ -19,7 +18,7 @@ quiz:
     - content: "Unit testing"
       isCorrect: false
       explanation: "CI/CD isn't mainly concerned with unit testing."
-    - content: "Regularly and consistently test, build, and ship code"
+    - content: "Regularly and consistently test, build, and ship code."
       isCorrect: true
       explanation: "CI/CD manages the code build, test, and shipping process in a seamless way."
     - content: "Regression testing"
@@ -32,7 +31,7 @@ quiz:
       explanation: "CI/CD isn't necessarily implemented using Spark."
     - content: "Datastores"
       isCorrect: false
-      explanation: "CI/CD is not necessarily implemented using datastores."
+      explanation: "CI/CD isn't necessarily implemented using datastores."
     - content: "Pipelines"
       isCorrect: true
       explanation: "CI/CD is implemented using pipelines."
