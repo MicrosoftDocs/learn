@@ -129,7 +129,7 @@ You can also use Kusto Query Language (KQL) to [run log queries](/azure/azure-mo
 
 ## Monitoring requirements of Azure for SAP Workloads
 
-According to SAP Note #2015553, â€œ*for full support, you must enable built-in SAP monitors to retrieve information about configuration and resource utilization from the underlying Azure infrastructure.*â€' You must set up every Azure instance that hosts SAP software and related DBMS systems such that:
+According to SAP Note #2015553, for full support, you must enable built-in SAP monitors to retrieve information about configuration and resource utilization from the underlying Azure infrastructure. You must set up every Azure instance that hosts SAP software and related DBMS systems such that:
 
 - The **Azure Monitoring Extension for SAP** is deployed and correctly configured.
 

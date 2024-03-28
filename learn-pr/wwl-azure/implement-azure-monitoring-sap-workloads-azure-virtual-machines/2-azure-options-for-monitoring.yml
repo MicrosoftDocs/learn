@@ -4,7 +4,7 @@ title: Azure options for monitoring SAP workloads in Azure
 metadata:
   title: Azure options for monitoring SAP workloads in Azure
   description: "Examine monitoring, logging, and alerting services provided by Microsoft cloud-based monitoring, including Azure Monitor, Azure Advisor, Azure Service Health, and Azure Activity Log."
-  ms.date: 03/27/2024
+  ms.date: 03/28/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
