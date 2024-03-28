@@ -8,8 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.custom: N/A, devx-track-arm-template
 durationInMinutes: 15
 content: |
   [!include[](includes/3-deploy-via-azure-resource-manager-templates.md)]

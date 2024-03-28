@@ -3,7 +3,7 @@ uid: learn.authenticate-apps-with-managed-identities.2-service-principals
 metadata:
   title: Authentication with service principals in Microsoft Entra ID
   description: Learn about Azure service principals, the concept behind them, and how to implement them to gain access to Azure resources.
-  ms.date: 03/31/2022
+  ms.date: 12/27/2023
   author: barclayn
   ms.author: barclayn
   ms.topic: unit
