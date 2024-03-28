@@ -103,14 +103,14 @@ quiz:
     - content: "So that the sensor learns that the subnet linked to this traffic needs to be reconfigured."
       isCorrect: false
       explanation: "Incorrect, the sensor will learn not to trigger an alert for this traffic in the future."
-  - content: ""
+  - content: "Why is it important to define the range of IP addresses for a DHCP server?"
     choices:
-    - content: ""
+    - content: "The server can only run once the full range of IP addresses are defined."
+      isCorrect: false
+      explanation: "Incorrect, the sensor must know the range of IP addresses so that it can correctly identify a device."
+    - content: "The server dynamically changes the device IP address which can result in misleading data."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct, when the sensor knows the range of IP addresses it can correctly identify a device."
+    - content: "The user is able to choose which IP address they use for their device."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Incorrect, the sensor must know the range of IP addresses so that it can correctly identify a device."

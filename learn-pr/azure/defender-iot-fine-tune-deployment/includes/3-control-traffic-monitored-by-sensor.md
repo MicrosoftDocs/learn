@@ -1,4 +1,4 @@
-Data is now flowing from your sensor to Microsoft Defender for IoT. The Operational Technology (OT) monitoring software initially identifies the interfaces and device endpoints. The OT software builds a map of the devices in the system, the subnets they're connected to and gives security settings to each one.
+<!-- change unit title to: Fine tune and calibrate your OT sensor -->Data is now flowing from your sensor to Microsoft Defender for IoT. The Operational Technology (OT) monitoring software initially identifies the interfaces and device endpoints. The OT software builds a map of the devices in the system, the subnets they're connected to and gives security settings to each one.
 
 However, it's possible that some of these device settings might not be correctly identified, so you need to check each one. In some cases, you need to reassign the settings or location of the device in the Perdue levels by updating the subnet. The IP and subnet addresses should be available from your IT team or be listed in the planning document.<!-- should be / are available LW-->
 
@@ -8,7 +8,7 @@ The OT sensor analyzes your system and assigns subnet settings and attempts to u
 
 ## Fine tuning
 
-The first stage of fine-tuning your sensor is to run the **Analyze** feature in the **Deployment** section of the OT sensor. When the analysis function is completed, check the information about each interface. If the information isn't what you expected, you need to check the subnet and device settings and make any changes needed.
+The first stage of fine-tuning your sensor is to run the **Analyze** feature in the **Deployment** section of the OT sensor. When the analysis function is completed, check the information for each interface. If the information isn't what you expected, you need to check the <!-- span configuration -->subnet and device settings and make any changes needed.
 
 ## Check and modify the subnet settings
 
@@ -39,6 +39,8 @@ Check the device details are correct using the **Device inventory**. To check th
 - Scanner
 - Programming device
 
+Other actions available when updating device details are:
+
 **Merge devices**: in some cases, a device might be listed more than once. This could happen when a device has two or more connectors to the sensor, for example a laptop with both Wifi and a physical network card. In such a situation, you need to merge them together, using the **Merge** option in the **Device inventory** page. The new merged device listing contains all of the data from both merged devices.
 
 **Important devices**: devices can also be assigned as *Important*, which gives the device a greater security rating for features such as running an Attack vector or Risk assessment. So that the device is considered more important than other devices for these reports.
@@ -49,7 +51,7 @@ The device appears in the device map with a star on it.
 
 **Check public IP addresses**: it's important to identify any public IP addresses that are used internally. These IP addresses must be listed **and add how to do this , is it in the System settings > sensor management > advanced configurations - Theo**.<!--what do we need to do? remove, reassign an IP, define as authorized? Theo--> If a public IP address isn't listed as a subnet, the sensor treats it as a public network for security settings.
 
-**DHCP address ranges**: devices that have an IP address allocated by a DHCP server, which change dynamically, must define the address ranges used. This is an important step, which can affect the way your data is assessed for security risks.
+**DHCP address ranges**: devices with an IP address allocated by a DHCP server, which change dynamically, must define the range of IP addresses. This is an important step, which can affect the way your data is assessed for security risks. When the device IP address changes dynamically the device is logged as a new device, which might give misleading information about your system.
 
 ## Operational mode
 <!-- is it learning / operation stage or mode??? Theo-->
