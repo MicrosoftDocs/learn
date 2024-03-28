@@ -32,10 +32,10 @@ Deny settings are a specific type of permission that are assigned to a deploymen
 
 The following Azure CLI parameters are used to customize the deny settings:
 
-- The `deny-settings-mode` parameter defines which operations are denies on resources managed by the stack. There are three allowed values: `denyDelete`, `denyWriteAndDelete`, and `none`.
-- The `deny-settings-apply-to-child-scopes` parameter applies the deny settings mode to child scopes and nested resources.
-- The `deny-settings-excluded-actions` parameter defines a list of role-based access control operations excluded from the deny settings mode.
-- The d`eny-settings-excluded-principals` parameter defines a list of Microsoft Entra ID principal IDs excluded from the deny settings mode.
+- The `--deny-settings-mode` parameter defines which operations are denies on resources managed by the stack. There are three allowed values: `--denyDelete`, `--denyWriteAndDelete`, and `--none`.
+- The `--deny-settings-apply-to-child-scopes` parameter applies the deny settings mode to child scopes and nested resources.
+- The `--deny-settings-excluded-actions` parameter defines a list of role-based access control operations excluded from the deny settings mode.
+- The `--deny-settings-excluded-principals` parameter defines a list of Microsoft Entra ID principal IDs excluded from the deny settings mode.
 
 Here's an example of an AZ CLI command with deny settings on a deployment stack scoped to a resource group.
 
@@ -55,10 +55,10 @@ az stack group create \
 
 The following Azure PowerShell parameters are used to customize the deny settings:
 
-- The `DenySettingsMode` parameter defines which operations are denies on resources managed by the stack. There are three allowed values: `DenyDelete`, `DenyWriteAndDelete`, and `None`.
-- The `DenySettingsApplyToChildScopes` parameter applies the deny settings mode to child scopes and nested resources.
-- The `DenySettingsExcludedAction` parameter defines a list of role-based access control operations excluded by the deny settings mode.
-- The `DenySettingsExcludedPrincipal` parameter defines a list of Microsoft Entra ID principal IDs excluded from the deny settings mode.
+- The `-DenySettingsMode` parameter defines which operations are denies on resources managed by the stack. There are three allowed values: `-DenyDelete`, `-DenyWriteAndDelete`, and `-None`.
+- The `-DenySettingsApplyToChildScopes` parameter applies the deny settings mode to child scopes and nested resources.
+- The `-DenySettingsExcludedAction` parameter defines a list of role-based access control operations excluded by the deny settings mode.
+- The `-DenySettingsExcludedPrincipal` parameter defines a list of Microsoft Entra ID principal IDs excluded from the deny settings mode.
 
 Here's an example of an Azure PowerShell command with deny settings on a deployment stack scoped to a resource group.
 

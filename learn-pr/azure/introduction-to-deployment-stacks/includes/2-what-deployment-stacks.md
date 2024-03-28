@@ -14,7 +14,7 @@ There are times when using a single resource group for your application makes se
 
 A resource group is frequently used as a security boundary for permissions. You can manage a single role-based access control (RBAC) assignment at the resource group scope if your security requirements aren't strict.
 
-Let's say your application consists of an app service plan, app service, application insights, and an SQL database deployed to a single resource group. Your organization has separate teams for managing compute, web applications, and databases. If your organization's security policy requires granular RBAC, it's necessary to scope permissions at the resource scope instead of the resource group scope.
+Let's say your application consists of an app service, application insights, and an SQL database deployed to a single resource group. Your organization has separate teams for managing compute, web applications, and databases. If your organization's security policy requires granular RBAC, it's necessary to scope permissions at the resource scope instead of the resource group scope.
 
 ![a graphic representing an application deployed to a single resource group](../media/single_rg_app.png)
 
