@@ -7,7 +7,7 @@ metadata:
   ms.date: 09/07/2023
   author: baanders
   ms.author: baanders
-  ms.topic: training-path
+  ms.topic: learning-path
 summary: >
   Learn about the Azure Digital Twins platform for IoT. This learning path will teach you what Azure Digital Twins is and how it works, with hands-on exercises to practice building out a data-driven Azure Digital Twins solution.
 prerequisites:  |
