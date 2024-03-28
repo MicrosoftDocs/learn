@@ -45,7 +45,7 @@ quiz:
     - content: No. Models must be written from scratch specifically for use in Azure Digital Twins.
       isCorrect: false
       explanation: Incorrect. Developers are encouraged to incorporate industry standards into their modeling, including using Microsoft's existing industry ontologies or converting existing industry models to DTDL.
-  - content: A facilities operator in a processing plant needs a cloud IoT solution that allows them to visualize the floor, identify at a glance when a machine is overheating, and send a command to shut down the machine. Is Azure Digital Twins a good solution for this scenario?
+  - content: A facilities operator in a processing plant needs a cloud IoT solution that allows them to visualize the floor, identify at a glance when a machine is overheating, and send a command to shut down the machine. Is Azure Digital Twins alone a good solution for this scenario?
     choices:
     - content: No, because Azure Digital Twins can't update devices directly.
       isCorrect: true
