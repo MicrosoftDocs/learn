@@ -3,11 +3,11 @@ uid: learn.language.rust-set-up-environment.5-exercise-hello-world
 metadata:
   title: 'Exercise: Hello World'
   description: Write your first Rust program and use Cargo.
-  ms.date: 07/26/2021
+  ms.date: 03/30/2023
   author: GitHubber17
   ms.author: chnoring
   ms.topic: unit
-  ms.custom: team=nextgen
+  ms.custom: team=nextgen, linux-related-content
   zone_pivot_groups: os
 title: 'Exercise: Hello World'
 durationInMinutes: 3

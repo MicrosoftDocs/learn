@@ -4,7 +4,7 @@ title: Exercise - Use the string's IndexOfAny() and LastIndexOf() helper methods
 metadata:
   title: Exercise - Use the string's IndexOfAny() and LastIndexOf() helper methods
   description: "Use the IndexOfAny() and LastIndexOf() helper methods to find the first and last instances of a sub-string within a larger string."
-  ms.date: 03/21/2024
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

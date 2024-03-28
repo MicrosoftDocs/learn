@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-arc-enabled-data-services.3-fundamentals
 metadata:
   title: Enable hybrid computing with Azure Arc-enabled data services
   description: In this unit, you learn about the basics and architecture of Azure Arc-enabled data services.
-  ms.date: 06/28/2021
+  ms.date: 03/07/2023
   author: MikeRayMSFT
   ms.author: mikeray
   ms.topic: unit

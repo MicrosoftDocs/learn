@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: "Exercise - Write your first line of F# code"
   description: "Use F# Interactive to print Hello World to the console"
-  ms.date: 07/20/2021
+  ms.date: 02/22/2023
   author: luisquintanilla
   ms.author: luquinta
   ms.manager: markl

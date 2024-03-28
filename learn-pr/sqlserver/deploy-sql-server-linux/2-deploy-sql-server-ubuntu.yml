@@ -4,11 +4,12 @@ title: Deploy SQL Server on Ubuntu
 metadata:
   title: Deploy SQL Server on Ubuntu
   description: In this unit, you'll learn about the requirements for SQL Server on Ubuntu and the tools that you can use to administer it.
-  ms.date: 06/11/2019
+  ms.date: 05/15/2023
   author: rwestmsft
   ms.author: randolphwest
   manager: jroth
   ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 3
 content: |
   [!include[](includes/2-deploy-sql-server-ubuntu.md)]

@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: berryivor
   ms.topic: unit
-  ms.service: cognitive-search	
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise.md)]

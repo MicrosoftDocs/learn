@@ -3,7 +3,7 @@ uid: learn.optimize-costs-data-analysis-powerbi.data-connector-power-bi
 metadata:
   title: Import data into Power BI Desktop with the Cost Management data connector to better understand your Azure spending
   description: Import data into Power BI Desktop with the Cost Management data connector to better understand your Azure spending
-  ms.date: 11/01/2021
+  ms.date: 07/07/2023
   author: bandersmsft
   ms.author: banders
   ms.topic: unit

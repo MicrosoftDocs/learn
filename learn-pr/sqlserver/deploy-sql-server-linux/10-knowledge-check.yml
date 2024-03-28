@@ -4,10 +4,11 @@ title: Knowledge check - client tools
 metadata:
   title: Knowledge check - client tools
   description: In this unit, you will test your understanding of SQL Server on Linux by answering questions.
-  ms.date: 06/11/2019
+  ms.date: 05/15/2023
   author: rwestmsft
   ms.author: randolphwest
   ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 5
 quiz:
   title: "Check your knowledge"

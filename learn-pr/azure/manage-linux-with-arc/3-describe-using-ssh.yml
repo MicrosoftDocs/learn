@@ -8,6 +8,7 @@ metadata:
   author: johnmarco
   ms.author: johnmarc
   ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 10
 content: |
   [!include[](includes/3-describe-using-ssh.md)]

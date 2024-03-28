@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: "Attach C# code to DOM events with Blazor event handlers"
   description: "Create handlers to process DOM events using C#"
-  ms.date: 08/31/2021
+  ms.date: 11/09/2023
   author: csharpfritz
   ms.author: jefritz
   ms.manager: markl

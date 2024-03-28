@@ -20,7 +20,7 @@ The first task is to create a new routing table and then add a custom route for 
 ```azurecli
     az network route-table create \
         --name publictable \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --disable-bgp-route-propagation false
 ```
 
@@ -29,7 +29,7 @@ The first task is to create a new routing table and then add a custom route for 
 ```azurecli
     az network route-table route create \
         --route-table-name publictable \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name productionsubnet \
         --address-prefix 10.0.1.0/24 \
         --next-hop-type VirtualAppliance \
@@ -45,7 +45,7 @@ The next task is to create the **vnet** virtual network and the three subnets yo
 ```azurecli
     az network vnet create \
         --name vnet \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --address-prefixes 10.0.0.0/16 \
         --subnet-name publicsubnet \
         --subnet-prefixes 10.0.0.0/24
@@ -57,7 +57,7 @@ The next task is to create the **vnet** virtual network and the three subnets yo
     az network vnet subnet create \
         --name privatesubnet \
         --vnet-name vnet \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --address-prefixes 10.0.1.0/24
 ```
 
@@ -67,7 +67,7 @@ The next task is to create the **vnet** virtual network and the three subnets yo
     az network vnet subnet create \
         --name dmzsubnet \
         --vnet-name vnet \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --address-prefixes 10.0.2.0/24
 ```
 
@@ -75,7 +75,7 @@ The next task is to create the **vnet** virtual network and the three subnets yo
 
 ```azurecli
     az network vnet subnet list \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --vnet-name vnet \
         --output table
 ```
@@ -90,6 +90,6 @@ Run the following command to associate the route table with the public subnet.
     az network vnet subnet update \
         --name publicsubnet \
         --vnet-name vnet \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --route-table publictable
 ```

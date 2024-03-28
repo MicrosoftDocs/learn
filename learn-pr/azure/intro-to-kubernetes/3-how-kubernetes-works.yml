@@ -5,7 +5,7 @@ title: How Kubernetes works
 metadata:
   title: How Kubernetes works
   description: Learn about the Kubernetes cluster configuration and the services that make up a Kubernetes cluster.
-  ms.date: 4/24/2020
+  ms.date: 10/25/2023
   author: nickomang
   ms.author: nickoman
   ms.topic: unit
