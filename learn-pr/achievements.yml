@@ -3138,3 +3138,28 @@ achievements:
   title: Move app data to the cloud
   summary: Learn about Azure's data solutions and perform a data migration.
   iconUrl: /learn/achievements/move-application-data-to-cloud.svg
+- uid: learn.wwl.consider-message-processing-options-constraints.badge
+  type: badge
+  title: Consider Azure IoT Hub message processing options and constraints
+  summary: This module introduces you to services and service features that can be used with, or as an alternative to, IoT Hub message routing to process messages. It also examines IoT Hub message processing limits.
+  iconUrl: /training/achievements/messaging-processing-options.svg
+- uid: learn.wwl.examine-azure-stream-analytics-azure-functions.badge
+  type: badge
+  title: Examine Azure Stream Analytics and Azure Functions in Azure IoT Hub solutions
+  summary: This module introduces you to processing IoT data with Azure Stream Analytics and Azure Functions, the capabilities provided by the Stream Analytics service, and the configuration options for Stream Analytics inputs, outputs, and queries.
+  iconUrl: /training/achievements/azure-stream-analytics.svg
+- uid: learn.wwl.examine-iot-hub-message-routing.badge
+  type: badge
+  title: Examine Azure IoT Hub message routing
+  summary: This module introduces you to Azure IoT Hub message routing, the common set of message features implemented by Azure IoT Hub, Azure IoT Hub's service-facing endpoints, and the message routing query syntax.
+  iconUrl: /training/achievements/iot-hub-message-routing.svg
+- uid: learn.wwl.get-started-cloud-storage-for-iot.badge
+  type: badge
+  title: Examine Cloud storage options for Azure IoT Hub solutions
+  summary: This module introduces you to the Azure data storage options that are often used in Azure IoT solutions, and the hot and cold storage paths that can be implemented in support of various business requirements.
+  iconUrl: /training/achievements/iot-cloud-storage.svg
+- uid: learn.wwl.implement-device-message-processing-data-analytics.trophy
+  type: trophy
+  title: Implement message processing for data storage and analytics by using Azure IoT Hub
+  summary: You'll learn about the message processing and data analytics capabilities that must be implemented within your Azure IoT solution by using Azure IoT Hub, and the storage options that are often configured as part of your solution.
+  iconUrl: /training/achievements/message-device-processing.svg

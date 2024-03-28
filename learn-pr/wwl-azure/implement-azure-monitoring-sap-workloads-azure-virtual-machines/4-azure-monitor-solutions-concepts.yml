@@ -4,10 +4,12 @@ title: Azure Monitor for SAP Solutions concepts
 metadata:
   title: Azure Monitor for SAP Solutions concepts
   description: "Review the capabilities of Azure Monitor for SAP Solutions."
-  ms.date: 03/21/2024
+  ms.date: 03/28/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/4-azure-monitor-solutions-concepts.md)]

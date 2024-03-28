@@ -4,7 +4,7 @@ title: Exercise - Check File Sync
 metadata:
   title: Exercise - Check File Sync
   description: In this exercise, you'll map a drive to the Azure file share and check that the file sync works.
-  ms.date: 08/29/2023
+  ms.date: 11/17/2023
   author: khdownie
   ms.author: kendownie
   ms.topic: unit

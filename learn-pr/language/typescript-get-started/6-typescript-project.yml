@@ -4,7 +4,7 @@ title: Exercise - Set up a TypeScript project
 metadata:
   title: Exercise - Set up a TypeScript project
   description: Set up a new TypeScript project in Visual Studio Code, generate a tsconfig.json file, compile TypeScript to JavaScript, and add an HTML file to test the JavaScript code.
-  ms.date: 02/10/2021
+  ms.date: 01/06/2023
   author: GeekTrainer
   ms.author: chnoring
   ms.topic: unit
