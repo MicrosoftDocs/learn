@@ -57,7 +57,7 @@ After ensuring that the dataset is complete and clean, you can start to prepare 
     | *Blue* | 0 | 0 | 1 |
     | *Red* | 0 | 1 | 0 |
 
-- **Scaling (normalizing) numeric values**: Numerical data values are often on different scales or units of measurement from one another. Machine learning algorithms process them all as absolute numeric values, and features larger values can often dominate the training of the model. To resolve this problem, it's common to scale all of the numeric columns so that the individual values for a single column maintain the same proportional relationship to one another, but all of the numeric columns are on a similar scale. For example, suppose a dataset contains *length* and *weight* values measured in meters and kilograms. You could convert both of these features to a scaled value between 0 and 1 like this:
+- **Scaling (normalizing) numeric values**: Numerical data values are often on different scales or units of measurement from one another. Machine learning algorithms process them all as absolute numeric values, and features with larger values can often dominate the training of the model. To resolve this problem, it's common to scale all of the numeric columns so that the individual values for a single column maintain the same proportional relationship to one another, but all of the numeric columns are on a similar scale. For example, suppose a dataset contains *length* and *weight* values measured in meters and kilograms. You could convert both of these features to a scaled value between 0 and 1 like this:
 
     | length | weight | scaled_length | scaled_weight |
     |--|--|--|--|

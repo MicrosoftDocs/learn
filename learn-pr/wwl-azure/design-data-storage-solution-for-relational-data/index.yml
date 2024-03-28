@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/19/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Design a data storage solution for relational data
 summary: Azure Architects design and recommend relational data storage solutions.
 abstract: |

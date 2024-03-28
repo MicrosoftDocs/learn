@@ -9,7 +9,6 @@ metadata:
   ms.author: cacaste
   ms.custom: team=nextgen
   ms.topic: unit
-  ms.prod: azure-ai-vision
 durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise-add-image-analysis.md)]

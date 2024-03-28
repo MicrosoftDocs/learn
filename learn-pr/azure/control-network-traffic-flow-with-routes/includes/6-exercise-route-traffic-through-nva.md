@@ -27,7 +27,7 @@ The next steps deploy a VM into the public and private subnets.
 
     ```azurecli
     az vm create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name public \
         --vnet-name vnet \
         --subnet publicsubnet \
@@ -42,7 +42,7 @@ The next steps deploy a VM into the public and private subnets.
 
     ```azurecli
     az vm create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name private \
         --vnet-name vnet \
         --subnet privatesubnet \
@@ -57,7 +57,7 @@ The next steps deploy a VM into the public and private subnets.
 
     ```bash
     watch -d -n 5 "az vm list \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --show-details \
         --query '[*].{Name:name, ProvisioningState:provisioningState, PowerState:powerState}' \
         --output table"
@@ -69,7 +69,7 @@ The next steps deploy a VM into the public and private subnets.
 
     ```azurecli
     PUBLICIP="$(az vm list-ip-addresses \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name public \
         --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
         --output tsv)"
@@ -81,7 +81,7 @@ The next steps deploy a VM into the public and private subnets.
 
     ```azurecli
     PRIVATEIP="$(az vm list-ip-addresses \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name private \
         --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
         --output tsv)"

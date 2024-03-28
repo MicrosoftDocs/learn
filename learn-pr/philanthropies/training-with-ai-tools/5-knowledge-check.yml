@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.training-with-ai-tools.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is a part of the 'Training with AI tools' module.
+  ms.date: 03/15/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz: 
+  title: Check your knowledge
+  questions: 
+    - content: "How could Copilot in Excel change the way we approach data analysis?"
+      choices:
+        - content: "It would require more complex formulas as the data becomes more complicated."
+          isCorrect: false
+          explanation: "Incorrect. Copilot simplifies data analysis in Excel."
+        - content: "It would simplify the data analysis process by providing insights and recommendations."
+          isCorrect: true
+          explanation: "Correct. Simplifying the data analysis process is the primary function of Copilot."
+        - content: "It wouldn't change the approach to data analysis but share broad findings."
+          isCorrect: false
+          explanation: "Incorrect. Copilot provides new capabilities for data analysis."
+    - content: "How would you use Reading Coach to personalize learning for a struggling reader?"
+      choices:
+        - content: "I wouldn't use Reading Coach for this reason because it doesn't provide individualized coaching and feedback."
+          isCorrect: false
+          explanation: "Incorrect. Reading Coach does provide individualized coaching and feedback."
+        - content: "I would use Reading Coach to help a learner grasp a new language."
+          isCorrect: false
+          explanation: "Incorrect. Reading Coach isn't designed to teach a learner a new language."
+        - content: "I would use Reading Coach to create targeted practice exercises for the learner."
+          isCorrect: true
+          explanation: "Correct. Creating targeted practice exercises for the learner is an effective use of Reading Coach."
+    - content: "How would you use Microsoft Designer to create custom content for a training session?"
+      choices:
+        - content: "I would use Microsoft Designer to help code debugging for training materials."
+          isCorrect: false
+          explanation: "Incorrect. Microsoft Designer does offer these features. Microsoft Copilot can help with code debugging."
+        - content: "I would use Microsoft Designer to generate new images and layout suggestions for the training materials."
+          isCorrect: true
+          explanation: "Correct. Generating new images and layout suggestions is an effective use of Microsoft Designer."
+        - content: "I would use Microsoft Designer to help in the creation of a new software program that I can implement in my training sessions."
+          isCorrect: false
+          explanation: "Incorrect. Microsoft Designer isn't designed to create software programs."

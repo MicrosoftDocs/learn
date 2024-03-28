@@ -6,7 +6,7 @@ metadata:
   ms.date: 07/07/2021
   author: shwars
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-ai-services
   ms.custom: team=nextgen
 title: Introduction to computer vision with TensorFlow

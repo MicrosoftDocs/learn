@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check - Introduction to GitHub Advanced Security
   description: Knowledge check - Introduction to GitHub Advanced Security module
-  ms.date: 1/28/2022
+  ms.date: 07/13/2023
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit
@@ -14,69 +14,59 @@ content: |
 quiz:
   title: Check your knowledge 
   questions:
-  - content: To which area of focus does GitHub dependency management belong?
+  - content: What is GitHub Advanced Security (GHAS)?
     choices:
-    - content: "Code scanning"
+    - content: "An automated tool for managing project dependencies."
       isCorrect: false
-      explanation: "Code scanning refers to security functionality discover vulnerabilities directly in the codebase."
-    - content: "Policies"
-      isCorrect: false
-      explanation: "Policies establish guidelines for contributors."
-    - content: "Supply chain"
+      explanation: "Incorrect. This describes the purpose of Dependabot, not GHAS."
+    - content: "An application security solution that empowers developers."
       isCorrect: true
-      explanation: "Dependency management ensures safe contributions from third-party plugins."
-  - content: "What's the purpose of security advisories?"
+      explanation: "Correct. GHAS is a security solution that empowers developers by embedding security features into their workflow to help prevent vulnerabilities and credential leaks in source code."
+    - content: "A tool for analyzing source code for security vulnerabilities."
+      isCorrect: false
+      explanation: "Incorrect. This describes the purpose of code scanning, which is a part of GHAS, but not the full definition of GHAS itself."
+    - content: "A platform for tracking the full impact of changes to dependencies in a project."
+      isCorrect: false
+      explanation: "Incorrect. This describes the purpose of Dependency Review, a feature of Dependabot within GHAS, but not the full definition of GHAS."
+  - content: "How does code scanning contribute to the security of a software development project?"
     choices:
-    - content: "To gather suggestions from the public on how to best repair a bug."
+    - content: "By preventing unauthorized access to sensitive information."
       isCorrect: false
-      explanation: "Code maintainers aim to fix errors before they become public knowledge."
-    - content: "To keep a list of vulnerabilities found in dependencies that have been used in the project."
+      explanation: "Incorrect. This is more related to secret scanning, not code scanning."
+    - content: "By automating the management of project dependencies."
       isCorrect: false
-      explanation: "Code maintainers aim to fix errors before they become public knowledge."
-    - content: "To provide a safe space for code maintainers to discuss how to best address errors and vulnerabilities found in the codebase."
+      explanation: "Incorrect. This describes the purpose of Dependabot, not code scanning."
+    - content: "By identifying and addressing security vulnerabilities in the codebase."
       isCorrect: true
-      explanation: "After the error has been fixed, security advisories are then published so that external developers can take any necessary action within their projects."
-  - content: "Which GitHub feature is powered by CodeQL?"
+      explanation: "Correct. Code scanning analyzes source code for security vulnerabilities and coding errors, helping developers address these issues early in the development process."
+    - content: "By analyzing source code for potential coding errors."
+      isCorrect: false
+      explanation: "Incorrect. This is a general description of static analysis, which is a technique used in code scanning, but it does not fully describe the contribution of code scanning to security."
+  - content: "How does Dependabot use the dependency graph in GitHub Advanced Security (GHAS)?"
     choices:
-    - content: "Code scanning"
+    - content: "To identify and address security vulnerabilities in the codebase."
+      isCorrect: false
+      explanation: "Incorrect. This describes the purpose of code scanning, not how Dependabot uses the dependency graph."
+    - content: "To automatically update project dependencies to their latest, secure versions."
+      isCorrect: false
+      explanation: "Incorrect. While Dependabot updates project dependencies, this answer does not specifically mention how it uses the dependency graph."
+    - content: "To generate alerts for potential security vulnerabilities in project dependencies."
+      isCorrect: false
+      explanation: "Incorrect. This describes the purpose of Dependabot alerts, not how Dependabot uses the dependency graph."
+    - content: "To cross-reference dependency data with the GitHub Advisory Database."
       isCorrect: true
-      explanation: "CodeQL runs queries that scan code for errors."
-    - content: "Dependabot"
-      isCorrect: false
-      explanation: "Dependabot ensures the reliability of dependencies."
-    - content: "The GitHub Advisory Database"
-      isCorrect: false
-      explanation: "The GitHub Advisory Database keeps track of vulnerabilities in dependencies."
-  - content: "What does the term 'shifting left' mean?"
+      explanation: "Correct. Dependabot uses the dependency graph to cross-reference dependency data with the GitHub Advisory Database and generate alerts for potential vulnerabilities in project dependencies."
+  - content: "How does GitHub Advanced Security (GHAS) help integrate security into each step of the software development life cycle?"
     choices:
-    - content: "Embedding security team members into development teams."
+    - content: "By providing a comprehensive dashboard summarizing the security status of the repository."
       isCorrect: false
-      explanation: "Although security teams should collaborate with other teams, this isn't the meaning of 'shifting left' ."
-    - content: "Implementing security best practices after reviews are completed."
-      isCorrect: false
-      explanation: "Security shouldn't be considered as an isolated, post-development exercise."
-    - content: "Incorporating security principles early in the software development lifecycle"
+      explanation: "Incorrect. This describes the purpose of the Security Overview, not how GHAS integrates security into each step of the software development life cycle."
+    - content: "By automating security checks with every pull request, surfacing issues in the context of the development workflow."
       isCorrect: true
-      explanation: "Security should be considered at each development phase."
-  - content: "Which technology does GitHub use to authenticate one application with another?"
-    choices:
-    - content: "Branches"
+      explanation: "Correct. GHAS automates security checks with every pull request, surfacing issues in the context of the development workflow, which helps integrate security into each step of the software development life cycle."
+    - content: "By generating alerts for outdated dependencies in a project."
       isCorrect: false
-      explanation: "Branches are a copy of the repository for a developer to use."
-    - content: "Secrets"
-      isCorrect: true
-      explanation: "Secrets are encrypted authentication keys."
-    - content: "Environment variable"
+      explanation: "Incorrect. This describes the purpose of Dependabot alerts, not how GHAS integrates security into each step of the software development life cycle."
+    - content: "By providing access to curated security intelligence from millions of developers and security researchers around the world."
       isCorrect: false
-      explanation: "Environment variables aren't used for authentication."
-  - content: "What's a common cause of security breaches?"
-    choices:
-    - content: "Users remove packages from projects."
-      isCorrect: false
-      explanation: "Package removal isn't a common cause of security breaches."
-    - content: "Developers share their code with other developers outside their organization."
-      isCorrect: false
-      explanation: "Sharing code isn't a common cause of security breaches."
-    - content: "Administrators delay patching a system after updates are available."
-      isCorrect: true
-      explanation: "Failing to promptly patch a system leaves it vulnerable to attacks or exploits."
+      explanation: "Incorrect. While GHAS provides access to curated security intelligence, this answer does not specifically mention how it integrates security into each step of the software development life cycle."

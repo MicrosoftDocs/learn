@@ -4,11 +4,12 @@ title: Introduction
 metadata:
   title: Introduction
   description: In this unit, you will learn what kind of business problems can be addressed by installing SQL Server on Linux servers and containers.
-  ms.date: 06/11/2019
+  ms.date: 04/25/2023
   author: rwestmsft
   ms.author: randolphwest
   manager: jroth
   ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]

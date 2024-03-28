@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 90
 content: |
   [!include[](includes/11-implement-linux-clustering-for-sap-on-azure-virtual-machines.md)]

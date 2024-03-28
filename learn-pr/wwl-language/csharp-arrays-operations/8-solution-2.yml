@@ -3,8 +3,8 @@ uid: learn.languages.csharp-arrays-operations.solution-2
 title: Review a solution to parse a string of orders, sort orders and tag possible errors
 metadata:
   title: Review a solution to parse a string of orders, sort orders and tag possible errors
-  description: "Review a solution to parse a string of orders, sort orders and tag possible errors"
-  ms.date: 03/18/2024
+  description: "Review a solution to parse a string of orders, sort orders and tag possible errors."
+  ms.date: 03/27/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

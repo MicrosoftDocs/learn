@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/25/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure
 title: Manage user authentication
 summary: There are multiple options for authentication in Microsoft Entra ID. Learn how to implement and manage the right authentications for users based on business needs.
