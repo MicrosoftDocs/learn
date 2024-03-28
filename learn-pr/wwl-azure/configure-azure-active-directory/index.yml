@@ -12,29 +12,19 @@ metadata:
   ms.service: active-directory
   ai-usage: ai-assisted
 title: Configure Microsoft Entra ID
-summary: Learn how to configure Microsoft Entra ID, including features like Microsoft Entra join and self-service password reset.
+summary: Learn how to configure Microsoft Entra ID, including features like self-service password reset.
 abstract: |
   In this module, you learn how to:
 
-  -
+  -   Define Microsoft Entra concepts, including identities, accounts, and tenants.
 
-  Define Microsoft Entra concepts, including identities, accounts, and tenants.
+  -   Describe Microsoft Entra features to support different configurations.
 
-  -
+  -   Understand differences between Microsoft Entra ID and Active Directory Domain Services (AD DS).
 
-  Describe Microsoft Entra features to support different configurations.
+  -   Choose between supported editions of Microsoft Entra ID.
 
-  -
-
-  Understand differences between Microsoft Entra ID and Active Directory Domain Services (AD DS).
-
-  -
-
-  Choose between supported editions of Microsoft Entra ID.
-
-  -
-
-  Use the Microsoft Entra self-service password reset feature.
+  -   Use the Microsoft Entra self-service password reset feature.
 prerequisites: None
 iconUrl: /training/achievements/azure-active-directory.svg
 levels:
