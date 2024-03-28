@@ -1,12 +1,12 @@
 ## Overview:
 
-Azure CycleCloud aims to simplify the management of large scale, dynamic HPC environments. As compute sizes increase, and customer workloads become more scalable, it’s essential to ensure that all the VMs deployed for the cluster are available for jobs. 
+Azure CycleCloud aims to simplify the management of large scale, dynamic High Performance Computing (HPC) environments. As compute sizes increase, and customer workloads become more scalable, it’s essential to ensure that all the VMs deployed for the cluster are available for jobs. 
 
 Node Health checks (NHCs) checks ensure network interfaces, InfiniBand connectivity, and GPUs are functioning properly. It avoids the delays associated with job prologues and custom scheduler integration. This proactive approach prevents users from encountering failures later on.
 
-It'll will be conducted as nodes join the cluster and the process also includes checks during overprovisioning. This verification occurs before the nodes are registered with the scheduler.
+NHCs are conducted as nodes join the cluster and the process also includes checks during overprovisioning. This verification occurs before the nodes are registered with the scheduler.
  
-NHC can be enabled through the CycleCloud web portal during cluster creation. On the cluster set up page, under “Advanced Settings”, choose the NHC to enable the feature.   
+NHC can be enabled through the CycleCloud web portal during cluster creation. On the cluster setup page, under **Advanced Settings**, choose the NHC to enable the feature.   
 
 IMAGE
 
