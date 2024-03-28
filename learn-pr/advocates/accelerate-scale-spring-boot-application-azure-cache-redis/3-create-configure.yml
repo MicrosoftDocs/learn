@@ -6,7 +6,7 @@ metadata:
   description: Learn about Redis, Azure Cache for Redis, and Spring Data Redis, and how to use them with Java and Spring Boot applications.
   author: judubois
   ms.author: judubois
-  ms.date: 01/20/2021
+  ms.date: 06/05/2023
   ms.topic: unit
   ms.custom:
     - team=cloud_advocates

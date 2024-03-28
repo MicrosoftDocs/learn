@@ -4,7 +4,7 @@ title: Exercise - Create an Azure Batch job and virtual network
 metadata:
   title: Exercise - Create an Azure Batch job and virtual network
   description: Create a Batch account, a virtual network, and a Batch pool.
-  ms.date: 02/01/2021
+  ms.date: 12/21/2022
   author: prkannap
   ms.author: prkannap
   ms.topic: unit

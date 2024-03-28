@@ -3,7 +3,7 @@ uid: learn.authenticate-apps-with-managed-identities.3-managed-identities
 metadata:
   title: Authentication with managed identities
   description: Explore and define managed identity in Azure, see how it works, and find out what services support it.
-  ms.date: 03/29/2022
+  ms.date: 12/27/2023
   author: barclayn
   ms.author: barclayn
   ms.topic: unit
