@@ -1,6 +1,6 @@
-SAP HANA workloads are performance demanding and require sub-millisecond latency and high throughput numbers. These performance requirements coupled with the detailed system architecture of SAP HANA systems require thorough planning to shift SAP HANA workloads to the cloud. 
+SAP HANA workloads are performance demanding and require submillisecond latency and high throughput numbers. These performance requirements coupled with the detailed system architecture of SAP HANA systems require thorough planning to shift SAP HANA workloads to the cloud. 
 
-Azure NetApp Files is designed to enable shifting even the most demanding workloads to the cloud, but SAP HANA still presents challenges. With the introduction of Azure NetApp Files application volume groups for SAP HANA, there is now a solution to streamline storage volume deployments for SAP HANA. Instead of having to create storage volumes (data, log, shared, log-backup, file-backup) individually, and configure their specific placements, the application volume group feature enables you to create these volumes in a single “atomic” operation. 
+Azure NetApp Files is designed to enable shifting even the most demanding workloads to the cloud, but SAP HANA still presents challenges. With the introduction of Azure NetApp Files application volume groups for SAP HANA, there's now a solution to streamline storage volume deployments for SAP HANA. Instead of having to create storage volumes (data, log, shared, log-backup, file-backup) individually, and configure their specific placements, the application volume group feature enables you to create these volumes in a single “atomic” operation. 
 
 Using Azure NetApp Files application volume groups for SAP HANA offers:
 

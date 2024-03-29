@@ -35,7 +35,7 @@ The following diagram illustrates the snapshot process:
 
    [![Diagram showing two file changes.](../media/2-single-file-snapshot-restore-two.png)](./media/2-single-file-snapshot-restore-two.png#lightbox)
 
-3. Another snapshot (`Snapshot2`) is created, providing access to three generations of data: the live data, `Snapshot2` and `Snapshot1`. The snapshots are presented in descending order of age without taking up the volume space that three full copies require.
+3. Another snapshot (`Snapshot2`) is created, providing access to three generations of data: the live data, `Snapshot2`, and `Snapshot1`. The snapshots are presented in descending order of age without taking up the volume space that three full copies require.
 
    [![Diagram showing changes captured with Snapshot2.](../media/2-single-file-snapshot-restore-three.png)](../media/2-single-file-snapshot-restore-three.png#lightbox)
 
