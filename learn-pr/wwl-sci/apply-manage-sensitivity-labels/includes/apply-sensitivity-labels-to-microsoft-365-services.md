@@ -32,7 +32,7 @@ You can apply sensitivity labels to SharePoint sites to manage access and protec
 1. On the Active sites page, select the site you'd like to modify.
 1. On the site's properties page, select **Settings**.
 1. Under the Settings tab, select the desired sensitivity label then select **Save**.
-:::image type="content" source="../media/sharepoint-settings-site.png" alt-text="Screenshot showing the Library settings menu within SharePoint." lightbox="../media/sharepoint-settings-site.png":::
+:::image type="content" source="../media/sharepoint-settings-site.png" alt-text="Screenshot showing where to set sensitivity labels for SharePoint sites." lightbox="../media/sharepoint-settings-site.png":::
 
 You can also apply sensitivity labels to new sites upon creation. To do this:
 
@@ -42,7 +42,7 @@ You can also apply sensitivity labels to new sites upon creation. To do this:
 1. Select the desired site type and template if necessary.
 1. Enter your SharePoint site settings for name, description, site address, and site owner.
 1. On the **Set language and other options** page under **Sensitivity** select the desire sensitivity label, then select **Create site**.
-:::image type="content" source="../media/sharepoint-sensitivity-label-new-site.png" alt-text="Screenshot showing the Library settings menu within SharePoint." lightbox="../media/sharepoint-sensitivity-label-new-site.png":::
+:::image type="content" source="../media/sharepoint-sensitivity-label-new-site.png" alt-text="Screenshot showing where to set sensitivity labels when creating a new SharePoint site." lightbox="../media/sharepoint-sensitivity-label-new-site.png":::
 
 ## Apply sensitivity labels to SharePoint document libraries
 
@@ -56,7 +56,7 @@ You can also use sensitivity labels on SharePoint document libraries to control 
    1. Select the gear on the top left to open the **Settings** menu, then select **Library settings**.
    1. On the Library settings flyout page under Default sensitivity labels,** select the desired sensitivity label.
 
-    :::image type="content" source="../media/sharepoint-settings-sensitivity-label.png" alt-text="Screenshot showing the Library settings menu within SharePoint." lightbox="../media/sharepoint-settings-sensitivity-label.png":::
+    :::image type="content" source="../media/sharepoint-settings-sensitivity-label.png" alt-text="Screenshot showing where to set sensitivity labels within a SharePoint library." lightbox="../media/sharepoint-settings-sensitivity-label.png":::
 
 ## Apply sensitivity labels to Teams from the admin center
 
