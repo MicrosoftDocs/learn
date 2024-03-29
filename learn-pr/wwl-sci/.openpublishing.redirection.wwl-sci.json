@@ -9,6 +9,11 @@
         "source_path_from_root": "/learn-pr/wwl-sci/apply-manage-sensitivity-labels/1-introduction.md",
         "redirect_url": "/training/modules/apply-manage-sensitivity-labels/introduction",
         "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/apply-manage-sensitivity-labels/2-apply-sensitivity-labels-to-microsoft-teams.md",
+        "redirect_url": "/training/modules/apply-manage-sensitivity-labels/apply-sensitivity-labels-to-microsoft-365-workloads",
+        "redirect_document_id": false
       }
     ]
 }
