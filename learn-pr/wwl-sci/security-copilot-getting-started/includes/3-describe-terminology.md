@@ -4,11 +4,11 @@ In this unit, we introduce you to some basic terminology.
 
 The following terms are important for understanding the way Copilot works:
 
-- Session – a particular conversation within Copilot. Copilot maintains context within a session.
-- Prompt – a specific statement or question within a session. A user enters a prompt in the prompt bar.
-- Capability/Skill – a function Copilot uses to solve part of a problem
-- Plugin/Skillset – A collection of skills by a particular resource
-- Orchestrator – Copilot’s system for composing capabilities (skills) together to answer a user’s prompt
+- Session – A particular conversation within Copilot. Copilot maintains context within a session.
+- Prompt – A specific statement or question within a session. A user enters a prompt in the prompt bar.
+- Capability – A function Copilot uses to solve part of a problem.
+- Plugin – A collection of capabilities by a particular resource.
+- Orchestrator – Copilot’s system for composing capabilities together to answer a user’s prompt.
 
 ***Prompt bar and sessions***
 
@@ -20,7 +20,7 @@ As you make requests and as Copilot responds, you may have some follow-up reques
 
 ***Plugins and capabilities***
 
-In the previous unit, we mentioned that Copilot integrates with various sources through plugins, including Microsoft's own security products such as Microsoft Sentinel, Microsoft Defender XDR, and Microsoft Intune, non-Microsoft solutions, and open-source intelligence feeds. The integration enabled by the plugin, for any specific data source, provides Copilot with a collection of capabilities (skills). Each capability (skill) is like a function in software, it’s designed to do a specialized task within the scope of the data source. For example, the plugin to Microsoft Defender XDR includes a collection of individual capabilities that are used only by Microsoft Defender XDR. These include:
+In the previous unit, we mentioned that Copilot integrates with various sources through plugins, including Microsoft's own security products such as Microsoft Sentinel, Microsoft Defender XDR, and Microsoft Intune, non-Microsoft solutions, and open-source intelligence feeds. The integration enabled by the plugin, for any specific data source, provides Copilot with a collection of capabilities. Each capability is like a function in software, it’s designed to do a specialized task within the scope of the data source. For example, the plugin to Microsoft Defender XDR includes a collection of individual capabilities that are used only by Microsoft Defender XDR. These include:
 
 - The ability to summarize an incident.
 - Support incident response teams in resolving incidents through guided responses (a set of recommended actions based on the specific incident).
@@ -40,4 +40,4 @@ Some plugins require setup and configuration, as depicted by the Set up button o
 
 ***Orchestrator***
 
-The orchestrator is Copilot’s system for composing capabilities (skills) together to answer a user’s prompt. This function is illustrated in more detail in the subsequent unit that describes how Copilot processes prompt requests.
+The orchestrator is Copilot’s system for composing capabilities together to answer a user’s prompt. This function is illustrated in more detail in the subsequent unit that describes how Copilot processes prompt requests.
