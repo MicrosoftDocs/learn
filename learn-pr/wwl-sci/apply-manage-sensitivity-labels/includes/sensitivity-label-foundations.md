@@ -23,11 +23,11 @@ When you use a sensitivity label for containers like Teams, Microsoft 365 Groups
 
 Before you enable and configure sensitivity labels for containers, users can see and apply sensitivity labels in their apps. For example, from Word:
 
-:::image type="content" source="../media/sensitivity-label-word.png" alt-text="A sensitivity label displayed in the Word desktop app." lightbox="../media/sensitivity-label-word.png":::
+:::image type="content" source="../media/sensitivity-label-word.png" alt-text="Screenshot showing s sensitivity label displayed in the Word desktop app." lightbox="../media/sensitivity-label-word.png":::
 
 After you enable and configure sensitivity labels for containers, users can also see and apply sensitivity labels to Microsoft team sites, Microsoft 365 groups, and SharePoint sites. For example, when you create a new team site from SharePoint:
 
-:::image type="content" source="../media/sensitivity-labels-new-team-site.png" alt-text="A sensitivity label when creating a team site from SharePoint." lightbox="../media/sensitivity-labels-new-team-site.png":::
+:::image type="content" source="../media/sensitivity-labels-new-team-site.png" alt-text="Screenshot showing a sensitivity label when creating a team site from SharePoint." lightbox="../media/sensitivity-labels-new-team-site.png":::
 
 After a sensitivity label is applied to a site, you must have the following role to change that label in SharePoint or Teams:
 
@@ -46,7 +46,7 @@ When you enable sensitivity labels for containers like Microsoft Teams, Microsof
 After sensitivity labels are enabled for containers, you can then configure protection settings for groups and sites in the sensitivity labeling configuration. Until sensitivity labels are enabled for containers, the settings are visible but you can't configure them.
 
 1. Navigate to the Microsoft Purview compliance portal to create or edit a sensitivity label. Select **Groups & sites** for the label's scope:
-:::image type="content" source="../media/groups-and-sites-scope-options-sensitivity-label.png" alt-text="Sensitivity label scope option for Groups & sites." lightbox="../media/groups-and-sites-scope-options-sensitivity-label.png":::
+:::image type="content" source="../media/groups-and-sites-scope-options-sensitivity-label.png" alt-text="Screenshot showing sensitivity label scope option for Groups & sites." lightbox="../media/groups-and-sites-scope-options-sensitivity-label.png":::
 1. On the **Define protection settings for groups and sites** page, choose the settings to configure:
    1. **Privacy and external user access settings** for privacy and external users access.
    1. **External sharing and Conditional Access settings** for controlling external sharing from SharePoint sites and using Conditional Access to protect labeled sites.
