@@ -1,6 +1,6 @@
 ## Overview:
 
-Azure CycleCloud aims to simplify the management of large scale, dynamic High Performance Computing (HPC) environments. As compute sizes increase, and customer workloads become more scalable, it’s essential to ensure that all the VMs deployed for the cluster are available for jobs. 
+Azure CycleCloud aims to simplify the management of large scale, dynamic HPC environments. As compute sizes increase, and customer workloads become more scalable, it’s essential to ensure that all the VMs deployed for the cluster are available for jobs. 
 
 Node Health checks (NHCs) checks ensure network interfaces, InfiniBand connectivity, and GPUs are functioning properly. It avoids the delays associated with job prologues and custom scheduler integration. This proactive approach prevents users from encountering failures later on.
 
