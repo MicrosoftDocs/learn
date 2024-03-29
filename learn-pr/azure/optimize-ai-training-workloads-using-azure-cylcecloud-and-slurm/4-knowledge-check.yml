@@ -16,10 +16,10 @@ quiz:
     choices:
     - content: "The user must resubmit the job."
       isCorrect: false
-      explanation: "Wrong"
+      explanation: "Resubmitting the job will not fix the unhealthy nodes."
     - content: "The user must terminate the cluster and recreate it."
       isCorrect: false
-      explanation: "Wrong"
+      explanation: "Terminating and recreating the cluster is not necessary as Overprovisioning will allocate a healthy node to the cluster."
     - content: "Overprovisioning will allocate a healthy node to the cluster in place."
       isCorrect: true
       explanation: "Correct."
@@ -27,13 +27,13 @@ quiz:
     choices:
     - content: "During cluster creation via the CycleCloud Web Portal."
       isCorrect: false
-      explanation: "Wrong"
+      explanation: "Users can not manually run the NHC during cluster creation as NHC will automatically run when new nodes are added to the cluster."
     - content: "After submitting a job to the cluster."
       isCorrect: false
-      explanation: "Wrong"  
+      explanation: "Users cannot manually run the NHC after submitting a job to the cluster as NHC will automatically run when new nodes are added to the cluster."  
     - content: "Whenever a node experiences downtime."
       isCorrect: false
-      explanation: "Wrong"
+      explanation: "Users can not manually run a NHC when nodes are down as NHC will automatically run when new nodes are added to the cluster."
     - content: "Node health checks will run automatically when new nodes are added to the cluster."
       isCorrect: true
       explanation: "Correct."
@@ -50,7 +50,7 @@ quiz:
       explanation: "Wrong"
     - content: "Azure Blob Storage."
       isCorrect: false
-      explanation: "Wrong"
+      explanation: "Azure Blob Storage primarily serves as an object storage solution for unstructured data, such as images, videos, and backups."
     - content: "B & C"
       isCorrect: true
       explanation: "Correct."      
@@ -61,13 +61,13 @@ quiz:
       explanation: "Correct."
     - content: "Single-node environments are sufficient for AI training workloads."
       isCorrect: false
-      explanation: "Wrong"  
+      explanation: "AI Training workloads require multi node environments due to the compute requirements of these workloads."  
     - content: "Premium SSDs are not necessary for OS disks."
       isCorrect: false
-      explanation: "Wrong"
+      explanation: "Premium SSDs are required for OS disks as they provide low latency solutions for your high performance workloads."
     - content: "InfiniBand connectivity is optional for AI training clusters."
       isCorrect: false
-      explanation: "Wrong"
+      explanation: "InfiniBand is essential for HPC and AI workloads due to its low latency, high bandwidth, and RDMA (Remote Direct Memory Access) capability."
   - content: "What are the benefits of choosing a Premium SSD option for your AI training workload?"
     choices:
     - content: "Faster data access and reduced latency."
