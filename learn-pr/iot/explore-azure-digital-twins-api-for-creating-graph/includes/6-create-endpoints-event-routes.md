@@ -5,7 +5,7 @@ Then, you'll use the Event Routes API to create a new **event route** that direc
 
 ## Understand event handling in Azure Digital Twins
 
-In a fully-connected Azure Digital Twins solution, endpoints and event routes are used to send twin data both inside and outside of Azure Digital Twins.
+In a fully connected Azure Digital Twins solution, endpoints and event routes are used to send twin data both inside and outside of Azure Digital Twins.
 
 The first step is to create an Azure Digital Twins endpoint, powered by one of these Azure event handling services:
 * Event Hubs
