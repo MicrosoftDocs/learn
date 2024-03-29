@@ -4,24 +4,14 @@ Azure CycleCloud aims to simplify the management of large scale, dynamic High Pe
 
 Node Health checks (NHCs) checks ensure network interfaces, InfiniBand connectivity, and GPUs are functioning properly. It avoids the delays associated with job prologues and custom scheduler integration. This proactive approach prevents users from encountering failures later on.
 
-NHCs are conducted as nodes join the cluster and the process also includes checks during overprovisioning. This verification occurs before the nodes are registered with the scheduler.
- 
-NHC can be enabled through the CycleCloud web portal during cluster creation. On the cluster setup page, under **Advanced Settings**, choose the NHC to enable the feature.   
-
-IMAGE
-
-If nodes fail their health checks, a diagnostic report is sent back to CycleCloud to avoid the need for keeping bad nodes around for debugging.
-
-IMAGE
-
-Image 3: Enable NHC on Startup, screenshot from the CC Web Portal
+NHCs are conducted as nodes join the cluster and the process also includes checks during overprovisioning. This verification occurs before the nodes are registered with the scheduler. 
 
 > [!NOTE]
-> Running NHC will add startup time to healthy nodes which can take up to 10 minutes. 
+> Starting from CycleCloud v8.5, NHCs can be configured from the CycleCloud Slurm cluster web portal under the _Advanced Settings_ tab. Running NHC will add startup time to healthy nodes which can take up to 10 minutes. For more information on how to enable the NHC, see [Node Health Checks](/azure/cyclecloud/how-to/healthcheck).
 
 Azure CycleCloud supports the new H-series VMs out of the box and N-series, but for the best experience and performance, follow the guidelines and best practices. For more information about CycleCloud supported VMs, see [GPU optimized virtual machine sizes](/azure/virtual-machines/sizes-gpu) and [HPC optimized virtual machine sizes](/azure/virtual-machines/sizes-hpc).
 
-## Minimum Requirements for Node Health Checks
+### Minimum requirements for Node Health Checks
 
 | **Requirement** | **Details** |
 | :------------------- | :-------------------  | 
@@ -35,7 +25,7 @@ Azure CycleCloud supports the new H-series VMs out of the box and N-series, but 
 > [!NOTE]
 > Other distributions may work but are not supported.
 
-## Health Checks
+### Health checks
 
 Many of the hardware checks are part of the default NHC project. If you would like to learn more, check out the [Node Health Checks project](https://github.com/mej/nhc).
 
@@ -60,11 +50,7 @@ The following are Azure custom checks added to the existing NHC suite of tests:
 
 Table doesn't list all the supported SKUs. The scripts for all tests can be found in the [custom test directory](https://github.com/Azure/azurehpc-health-checks/blob/main/customTests).
 
-> [!NOTE]
-> 
+### Other references
 
-## _References_
-
-[LBNL Node Health Checks](https://github.com/mej/nhc).
-
-[Azure HPC Images](https://github.com/Azure/azhpc-images).
+- [LBNL Node Health Checks](https://github.com/mej/nhc).
+- [Azure HPC Images](https://github.com/Azure/azhpc-images).
