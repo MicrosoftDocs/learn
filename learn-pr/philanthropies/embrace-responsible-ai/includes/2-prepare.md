@@ -1,4 +1,4 @@
-## Project Overview
+## Project overview
 
 In this module, you actively engage in a series of exercises designed to deepen your understanding of the Responsible AI framework. Through these exercises, you explore the ethical considerations and best practices for implementing AI systems, with the aim of bridging the gap between theoretical knowledge and practical application. This ensures that you can effectively integrate the Responsible AI framework into your learning environments.
 
