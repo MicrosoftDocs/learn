@@ -27,9 +27,9 @@ For an in-depth walkthrough and step-by-step guidance, see the resources titled 
 
 ### Codespace creation process
 
-:::image type="content" source="../media/codespace-connection-editor.png" alt-text="Diagram of a github codespace and how it connects from your code editor and into a docker container.":::
+:::image type="content" source="../media/codespace-connection-editor.png" alt-text="Diagram of a GitHub codespace and how it connects from your code editor and into a docker container.":::
 
-When creating a GitHub Codespace, four processes occur:
+When you create a GitHub Codespace, four processes occur:
 
 1. VM and storage are assigned to your Codespace.
 1. A container is created.
