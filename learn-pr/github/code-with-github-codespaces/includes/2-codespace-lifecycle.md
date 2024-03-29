@@ -50,8 +50,7 @@ To resume an existing Codespace you can either go to the repository where the Co
 
 ### Timeouts for a Codespace
 
-If a Codespace is inactive, or if you exit your Codespace without explicitly stopping, the application times out after a period of inactivity and stops running. The default timeout is after 30 minutes of inactivity. You can't customize the duration of the timeout period for new Codespaces.
-When a Codespace times out, your data is kept from the last time your changes were saved.
+If a Codespace is inactive, or if you exit your Codespace without explicitly stopping, the application times out after a period of inactivity and stops running. The default timeout is after 30 minutes of inactivity. When a Codespace times out, your data is kept from the last time your changes were saved.
 
 ### Internet connection while using GitHub Codespaces
 
