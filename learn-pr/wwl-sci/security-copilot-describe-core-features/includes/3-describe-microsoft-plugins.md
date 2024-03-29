@@ -148,7 +148,7 @@ Copilot also includes builtin promptbooks that deliver information from Defender
 - Vulnerability impact assessment - Generates a report summarizing the intelligence for a known vulnerability, including steps on how to address it.
 - Threat actor profile - Generates a report profiling a known activity group, including suggestions to defend against their common tools and tactics.
 
-:::image type="content" source="../media/threat-intellegence-promptbooks.png" lightbox="../media/defender-ti-promptbooks.png" alt-text="Screen capture of the Defender TI promptbooks that can be run in the standalone experience.":::
+:::image type="content" source="../media/threat-intelligence-promptbooks.png" lightbox="../media/threat-intelligence-promptbooks.png" alt-text="Screen capture of the Defender TI promptbooks that can be run in the standalone experience.":::
 
 Some sample prompts include:
 
