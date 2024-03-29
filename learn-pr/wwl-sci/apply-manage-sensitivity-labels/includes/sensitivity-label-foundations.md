@@ -23,7 +23,7 @@ When you use a sensitivity label for containers like Teams, Microsoft 365 Groups
 
 Before you enable and configure sensitivity labels for containers, users can see and apply sensitivity labels in their apps. For example, from Word:
 
-:::image type="content" source="../media/sensitivity-label-word.png" alt-text="Screenshot showing s sensitivity label displayed in the Word desktop app." lightbox="../media/sensitivity-label-word.png":::
+:::image type="content" source="../media/sensitivity-label-word.png" alt-text="Screenshot showing a sensitivity label displayed in the Word desktop app." lightbox="../media/sensitivity-label-word.png":::
 
 After you enable and configure sensitivity labels for containers, users can also see and apply sensitivity labels to Microsoft team sites, Microsoft 365 groups, and SharePoint sites. For example, when you create a new team site from SharePoint:
 
@@ -48,10 +48,10 @@ After sensitivity labels are enabled for containers, you can then configure prot
 1. Navigate to the Microsoft Purview compliance portal to create or edit a sensitivity label. Select **Groups & sites** for the label's scope:
 :::image type="content" source="../media/groups-and-sites-scope-options-sensitivity-label.png" alt-text="Screenshot showing sensitivity label scope option for Groups & sites." lightbox="../media/groups-and-sites-scope-options-sensitivity-label.png":::
 1. On the **Define protection settings for groups and sites** page, choose the settings to configure:
-   1. **Privacy and external user access settings** for privacy and external users access.
-   1. **External sharing and Conditional Access settings** for controlling external sharing from SharePoint sites and using Conditional Access to protect labeled sites.
-   1. **Private teams discoverability and shared channel controls** for managing how private teams and shared channels are discovered and accessed.
-   1. If applicable, select a default label for channel meetings and chats.
+   - **Privacy and external user access settings** for privacy and external users access.
+   - **External sharing and Conditional Access settings** for controlling external sharing from SharePoint sites and using Conditional Access to protect labeled sites.
+   - **Private teams discoverability and shared channel controls** for managing how private teams and shared channels are discovered and accessed.
+   - If applicable, select a default label for channel meetings and chats.
 1. If **Privacy and external user access settings** was selected:
    1. Set the **Privacy** setting for the group or site to **Public**, **Private**, or **None** for user-defined privacy settings. Specify **External user access** rules to control whether the group owner can add guests to the group.
 1. If **External sharing and Conditional Access settings** was selected, then:
