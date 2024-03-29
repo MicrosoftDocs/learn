@@ -27,12 +27,21 @@ Azure NetApp Files snapshots are point-in-time images of a volume. These snapsho
 
 The following diagram illustrates the snapshot process:
 
-:::image type="content" source="../media/2-what-is-azure-netapp-files-snapshots.png" alt-text="Diagram depicting how Azure NetApp Files snapshots work." lightbox="../media/2-what-is-azure-netapp-files-snapshots.png":::
+1. A snapshot (`Snapshot1`) is created.
 
-1. Time A: A snapshot (Snapshot 1) is created.
-2. Time B: Changed data (B is now B1) is written to a new block and the pointer is updated. However, the snapshot pointer still points to the previously written block, giving you both a live view and a historical view of the data.
-3. Time C: Another snapshot (Snapshot 2) is created. Now you have access to three generations of the data: the live data, Snapshot 2, and Snapshot 1, in descending order of age, without taking up the volume space that three full copies would require.
+   [![Diagram showing snapshot creation.](../media/2-single-file-snapshot-restore-one.png)](../media/2-single-file-snapshot-restore-one.png#lightbox)
 
+2. Changed data (`file2` is updated and `file4` is added) is written to a new block; the pointer is updated. The snapshot pointer still points to the previously written block, giving you both a live view and a historical view of the data.
+
+   [![Diagram showing two file changes.](../media/2-single-file-snapshot-restore-two.png)](./media/2-single-file-snapshot-restore-two.png#lightbox)
+
+3. Another snapshot (`Snapshot2`) is created, providing access to three generations of data: the live data, `Snapshot2` and `Snapshot1`. The snapshots are presented in descending order of age without taking up the volume space that three full copies require.
+
+   [![Diagram showing changes captured with Snapshot2.](../media/2-single-file-snapshot-restore-three.png)](../media/2-single-file-snapshot-restore-three.png#lightbox)
+
+4. A new snapshot `Snapshot2` is taken to capture the changes and additions:
+
+   [ ![The latest changes are captured in Snapshot2 for a second point in time view of the volume (and the files within).](./media/snapshots-introduction/single-file-snapshot-restore-four.png) ](./media/snapshots-introduction/single-file-snapshot-restore-four.png#lightbox)
 An Azure NetApp Files snapshot only manipulates block pointers, creating a "frozen," read-only view of a volume. By design snapshots cannot be modified, only deleted once they expire useful life on the system.
 
 Actual data blocks aren't copied, which leads to two efficiencies:
