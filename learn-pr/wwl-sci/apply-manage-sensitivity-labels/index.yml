@@ -1,14 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.apply-manage-sensitivity-labels
 metadata:
-  title: Apply and manage sensitivity labels
-  description: "Apply and manage sensitivity labels."
-  ms.date: 03/22/2024
+  title: Apply sensitivity labels for data protection
+  description: "Apply sensitivity labels for data protection."
+  ms.date: 03/28/2024
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
   ms.service: purview
-title: Apply and manage sensitivity labels
+  ai-usage: ai-assisted
+title: Apply sensitivity labels for data protection
 summary: Learn about how sensitivity labels are used to classify and protect business data while making sure that user productivity and their ability to collaborate aren't hindered.
 abstract: |
   After completing this module, you'll be able to:
@@ -34,7 +35,8 @@ subjects:
 - information-protection-governance
 units:
 - learn.wwl.apply-manage-sensitivity-labels.introduction
-- learn.wwl.apply-manage-sensitivity-labels.describe-role-lifecycle-of
+- learn.wwl.apply-manage-sensitivity-labels.sensitivity-label-foundations
+- learn.wwl.apply-manage-sensitivity-labels.apply-sensitivity-labels-to-microsoft-365-services
 - learn.wwl.apply-manage-sensitivity-labels.create
 - learn.wwl.apply-manage-sensitivity-labels.configure-label-polices
 - learn.wwl.apply-manage-sensitivity-labels.apply-to-microsoft-teams-microsoft-365-groups-sharepoint-sites
