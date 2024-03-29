@@ -72,10 +72,6 @@ Select the title of the promptbook to open a page with more detailed information
 
 For a complete listing of all the available promptbooks, select View promptbook library.
 
-
-
-
-
 ### Prompt bar
 
 You use the prompt bar to tell Copilot what insights you want from your security data, in natural language, then select the run icon.
