@@ -7,7 +7,8 @@ In this exercise, you identify factors your organization must consider for each 
 1. Open the text editor or Word Document you created earlier.
 1. Create a new section and title it *Implement an AI system into an organization*.
 1. Under this new section, create a table to document the factors you'd consider for each area to properly anticipate and manage the impact of using an AI system.
-1. Complete the activity by filling in the table with your answers.
+1. Copy the content from the following table and paste it into your newly created table.
+1. Populate the *Factors to consider* column for each **Key area**. *Role of AI* and its *Benefit* for each **Key Area** is already provided for your guidance.
 
 | Key area | Role of AI | Benefit | Factors to consider |
 | -------- | ---------- | ------- | ------------------- |
