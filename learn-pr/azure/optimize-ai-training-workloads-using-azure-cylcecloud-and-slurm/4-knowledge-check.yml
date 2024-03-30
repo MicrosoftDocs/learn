@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: Check your knowledge of how to optimize ai training workloads using Azure CycleCloud and slurm.
+  description: Check your knowledge of how to optimize AI training workloads using Azure CycleCloud and Slurm.
   ms.date: 03/20/2024
   author: begeorge
   ms.author: padmalathas
@@ -16,25 +16,25 @@ quiz:
     choices:
     - content: "The user must resubmit the job."
       isCorrect: false
-      explanation: "Resubmitting the job will not fix the unhealthy nodes."
+      explanation: "Resubmitting the job won't fix the unhealthy nodes."
     - content: "The user must terminate the cluster and recreate it."
       isCorrect: false
-      explanation: "Terminating and recreating the cluster is not necessary as Overprovisioning will allocate a healthy node to the cluster."
-    - content: "Overprovisioning will allocate a healthy node to the cluster in place."
+      explanation: "Terminating and recreating the cluster isn't necessary as overprovisioning will allocate a healthy node to the cluster."
+    - content: "Overprovisioning allocates a healthy node to the cluster in place."
       isCorrect: true
       explanation: "Correct."
-  - content: "When can a user run a Node Health Check in an Azure CycleCloud cluster?"
+  - content: "When can a user run the Node Health Check in an Azure CycleCloud cluster?"
     choices:
-    - content: "During cluster creation via the CycleCloud Web Portal."
+    - content: "During Slurm cluster creation via the CycleCloud web portal."
       isCorrect: false
-      explanation: "Users can not manually run the NHC during cluster creation as NHC will automatically run when new nodes are added to the cluster."
+      explanation: "Users can't manually run the NHC during cluster creation as NHC automatically run when new nodes are added to the cluster."
     - content: "After submitting a job to the cluster."
       isCorrect: false
-      explanation: "Users cannot manually run the NHC after submitting a job to the cluster as NHC will automatically run when new nodes are added to the cluster."  
+      explanation: "Users can't manually run the NHC after submitting a job to the cluster as NHC  automatically run when new nodes are added to the cluster."  
     - content: "Whenever a node experiences downtime."
       isCorrect: false
-      explanation: "Users can not manually run a NHC when nodes are down as NHC will automatically run when new nodes are added to the cluster."
-    - content: "Node health checks will run automatically when new nodes are added to the cluster."
+      explanation: "Users can't manually run the NHC when nodes are down as NHC automatically run when new nodes are added to the cluster."
+    - content: "Node health checks run automatically when new nodes are added to the cluster."
       isCorrect: true
       explanation: "Correct."
   - content: "Which Azure service is designed for handling the most demanding, high-performance, low-latency workloads requiring advanced data management capabilities?"
@@ -62,7 +62,7 @@ quiz:
     - content: "Single-node environments are sufficient for AI training workloads."
       isCorrect: false
       explanation: "AI Training workloads require multi node environments due to the compute requirements of these workloads."  
-    - content: "Premium SSDs are not necessary for OS disks."
+    - content: "Premium SSDs aren'tt necessary for OS disks."
       isCorrect: false
       explanation: "Premium SSDs are required for OS disks as they provide low latency solutions for your high performance workloads."
     - content: "InfiniBand connectivity is optional for AI training clusters."
