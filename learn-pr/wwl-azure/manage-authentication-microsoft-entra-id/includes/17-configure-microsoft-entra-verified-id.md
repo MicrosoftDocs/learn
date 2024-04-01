@@ -1,4 +1,4 @@
-In areal-world scenario, where the issuer and verifier are separate organizations, the verifier uses their own Microsoft Entra tenant to perform the verification of the credential that was issued by the other organization.
+In a real-world scenario, where the issuer and verifier are separate organizations, the verifier uses their own Microsoft Entra tenant to perform the verification of the credential that was issued by the other organization.
 
 As a verifier, you unlock privileges to subjects that possess verified credential expert cards. In this example, a sample application is executed from a local computer that asks you to present a verified credential expert card, and then verifies it.
 
@@ -8,7 +8,7 @@ As a verifier, you unlock privileges to subjects that possess verified credentia
  -  If you want to clone the repository that hosts the sample app, install Git.
  -  Visual Studio Code, Visual Studio or similar code editor.
  -  .NET 7.0.
- -  Download ngrok and sign up for a free account.
+ -  Download [ngrok](https://ngrok.com/) and sign up for a free account.
  -  A mobile device with the latest version of Microsoft Authenticator.
 
 ## Gather tenant details to set up your sample application
