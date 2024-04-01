@@ -41,13 +41,13 @@ quiz:
     choices:
     - content: "Azure Files."
       isCorrect: false
-      explanation: " "
+      explanation: "Azure files is not suitable for hpc, low latency workloads. Azure Files provide cloud-based file storage, allowing users to create and manage file shares accessible over  SMB and NFS, suitable for replacing on-premises file servers or simplifying cloud development projects."
     - content: "Azure NetApp Files (ANF)."
       isCorrect: false
-      explanation: " "  
+      explanation: "Answers B & C both apply."  
     - content: "Azure Managed Lustre File System (AMLFS)."
       isCorrect: false
-      explanation: "Wrong"
+      explanation: "Answers B & C both apply."
     - content: "Azure Blob Storage."
       isCorrect: false
       explanation: "Azure Blob Storage primarily serves as an object storage solution for unstructured data, such as images, videos, and backups."
@@ -72,16 +72,16 @@ quiz:
     choices:
     - content: "Faster data access and reduced latency."
       isCorrect: false
-      explanation: "Wrong"
+      explanation: "All of the answers A, B, C & D apply to be benefits for choosing a Premium SSD for your AI training workload."
     - content: "Shorter training times and faster model convergence."
       isCorrect: false
-      explanation: "Wrong"  
+      explanation: "All of the answers A, B, C & D apply to be benefits for choosing a Premium SSD for your AI training workload."  
     - content: "Improved scalability and parallelism."
       isCorrect: false
-      explanation: "Wrong"
+      explanation: "All of the answers A, B, C & D apply to be benefits for choosing a Premium SSD for your AI training workload."
     - content: "Enhanced support for generative AI and large language models."
       isCorrect: false
-      explanation: "Wrong"
+      explanation: "All of the answers A, B, C & D apply to be benefits for choosing a Premium SSD for your AI training workload."
     - content: "All of the Above."
       isCorrect: true
       explanation: "Correct."
