@@ -24,11 +24,7 @@ By the end of this module, you're able to:
 - Understand the concepts of Azure Virtual Machines, subscription, resource groups, and virtual networks.
 - Ability to deploy VM, mounting shared file systems.
 
-![NOTE:]
-To complete the optional exercises, you need to use your own subscription, which might incur charges. A trial subscription or a subscription to which you already have access will work to follow along.
-
-Image 1: CycleCloud Marketplace Offering 
-
-Image 2: CycleCloud Cluster Creation Web Portal 
+> ![NOTE]
+> To complete the optional exercises, you need to use your own subscription, which might incur charges. A trial subscription or a subscription to which you already have access will work to follow along.
 
 
