@@ -37,6 +37,7 @@ units:
 - learn.wwl.apply-manage-sensitivity-labels.introduction
 - learn.wwl.apply-manage-sensitivity-labels.sensitivity-label-foundations
 - learn.wwl.apply-manage-sensitivity-labels.apply-sensitivity-labels-to-microsoft-365-services
+- learn.wwl.apply-manage-sensitivity-labels.protect-meetings-with-sensitivity-labels
 - learn.wwl.apply-manage-sensitivity-labels.create
 - learn.wwl.apply-manage-sensitivity-labels.configure-label-polices
 - learn.wwl.apply-manage-sensitivity-labels.apply-to-microsoft-teams-microsoft-365-groups-sharepoint-sites
