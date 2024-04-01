@@ -3,7 +3,7 @@ uid: learn.azure-sql-high-availability.8-exercise-auto-failover-groups
 metadata:
   title: Exercise - Geo-distributed auto-failover groups with read-scale
   description: Exercise - Geo-distributed auto-failover groups with read-scale
-  ms.date: 03/15/2023
+  ms.date: 11/29/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   ms.topic: unit

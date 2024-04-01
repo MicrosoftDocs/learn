@@ -3,7 +3,7 @@ uid: learn.azure-security.secure-aad-users-with-mfa.planning-mfa
 metadata:
   title: Plan your multifactor authentication deployment
   description: Learn the things to consider as you plan to turn on Microsoft Entra multifactor authentication.
-  ms.date: 01/03/2021
+  ms.date: 11/03/2023
   author: Justinha
   ms.author: justinha
   ms.topic: unit

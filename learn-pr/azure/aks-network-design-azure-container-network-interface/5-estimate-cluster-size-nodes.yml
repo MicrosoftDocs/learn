@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Estimating cluster size - Nodes
   description: Once you know how many pods your application needs, you need to determine what type of virtual machines to use for the nodes and how many of them you need.
-  ms.date: 10/31/2023
+  ms.date: 02/15/2024
   ms.topic: unit
   ms.author: schaffererin
   author: schaffererin
