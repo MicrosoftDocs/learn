@@ -20,21 +20,21 @@ The following procedure creates a virtual network with a resource subnet:
 2.  On the **Virtual networks** page, select **Create**.
 3.  On the **Basics** tab of **Create virtual network**, enter or select the following information:
     
-    | **Setting**          | **Value**                                                              |
-    | -------------------- | ---------------------------------------------------------------------- |
-    | **Project details**  |                                                                        |
-    | Subscription         | Select your subscription.                                              |
-    | Resource group       | Select **Create new**.<br>Enter **RG\_AKS** in Name.<br>Select **OK**. |
-    | **Instance details** |                                                                        |
-    | Name                 | Enter **VNet1**.                                                       |
-    | Region               | Select **West US**.                                                    |
+    | **Setting**          | **Value**                                                          |
+    | -------------------- | ------------------------------------------------------------------ |
+    | **Project details**  |                                                                    |
+    | Subscription         | Select your subscription.                                          |
+    | Resource group       | Select **Create new**.<br>Enter **RG\_AKS** in Name.Select **OK**. |
+    | **Instance details** |                                                                    |
+    | Name                 | Enter **VNet1**.                                                   |
+    | Region               | Select **West US**.                                                |
     
     :::image type="content" source="../media/new-virtual-network-second-890aff28.png" alt-text="Diagram showing how to create a basic virtual network.":::
     
 4.  Select **Next** and accept the default settings for the **Security** tab. Select **Next** at the bottom of the page.
 5.  In the **IP Addresses** tab, under **IPv4 address space**, accept the default for **10.0.0.0/16**.
-6.  Edit the **default** subnet by clicking on the pencil icon to its right.
-7.  Modify the name of the subnet from **default** to **subnet1** and click **Save** so that it leaves a single subnet with the following details:
+6.  Select **+ Add subnet**.
+7.  Enter or select the following information in **Add subnet**:
     
     | **Setting**          | **Value**              |
     | -------------------- | ---------------------- |

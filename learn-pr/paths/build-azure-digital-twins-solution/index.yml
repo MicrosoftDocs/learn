@@ -13,7 +13,7 @@ summary: >
 prerequisites:  |
   - Beginner level experience with IoT concepts such as devices and event data
   - To complete hands-on exercises: An [Azure subscription](https://azure.microsoft.com/free), and permission to manage access to Azure resources in the subscription
-iconUrl: /training/achievements/built-out-an-azure-digital-twins-solution.svg
+iconUrl: /training/achievements/build-out-an-azure-digital-twins-solution.svg
 levels:
   - beginner
   - intermediate

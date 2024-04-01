@@ -2,11 +2,11 @@ In our global consultancy firm, the marketing team is preparing to launch a new 
 
 As part of this effort, you're tasked with deploying sensitivity labels throughout our Microsoft 365 environment for the new service launch. This project requires teamwork from around the world, including remote workers. Your main goals are to keep client information safe and make sure teams can work together smoothly.
 
-You're tasked with:
+This unit guides you on how to:
 
-1. **Protecting client data**: You apply sensitivity labels to all launch-related documents, such as plans and client data. You set labels like 'Confidential - Project Team Only' to make sure only the right people can access and edit these files, no matter where they're working.
-1. **Securing team tools**: Since the team uses Outlook and Teams, you put labels on emails and meeting invites to encrypt them and keep unauthorized people out.
-1. **Education and monitoring**: You run training for the team on data protection and how to use sensitivity labels correctly. You also use the Microsoft Purview compliance portal to check that everyone is following the rules.
+- **Identify the function of sensitivity labels**: Describe how sensitivity labels secure critical data in Microsoft 365 environments like Teams, Groups, and SharePoint Sites.
+- **Apply sensitivity labels for your organization**: Demonstrate the process to enable and implement sensitivity labels across Microsoft 365 services for data protection.
+- **Configure settings in the Microsoft Purview compliance portal**: Modify protection settings for groups and sites to enhance data security within your organization.
 
 ## Understand sensitivity labels in Microsoft 365
 

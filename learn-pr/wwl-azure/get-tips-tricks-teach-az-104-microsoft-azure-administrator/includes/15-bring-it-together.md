@@ -1,3 +1,0 @@
-As an educator, you play a pivotal role in empowering students for future success. Your journey in teaching the official Microsoft curriculum to your students will help ensure your students are prepared for future jobs in need of talent with Azure skills across a range of disciplines and industries. Further, you're preparing your students for the AZ-104: Microsoft Azure Administrator Certification exam. We've provided you with many learning resources that not only prepare you as an instructor but also give your students the confidence they need to tackle the exam. Now that you have all the necessary tools, you're ready to go.  
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Y1PZ]
