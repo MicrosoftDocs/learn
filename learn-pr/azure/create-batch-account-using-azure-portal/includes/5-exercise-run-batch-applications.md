@@ -50,7 +50,7 @@ In the Azure portal, Batch tasks can run directly on virtual machines in a Batch
 
 1. In the **Add job** window, enter **Job ID** value for your new job.
 
-1. Select the **Select pool** link, select the pool that you created in previous steps and selectthe **Select** button.
+1. Select the **Select pool** link, select the pool that you created in previous steps and select the **Select** button.
 
 1. Keep **Job manager, preparation, and release tasks** as **None**.
 
