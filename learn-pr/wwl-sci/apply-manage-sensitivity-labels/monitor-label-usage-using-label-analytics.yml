@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.apply-manage-sensitivity-labels.configure-publish-automatic-labeling-policies
+uid: learn.wwl.apply-manage-sensitivity-labels.monitor-label-usage-using-label-analytics
 title: Monitor label performance using label analytics
 metadata:
   title: Monitor label performance using label analytics
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 9
 content: |
-  [!include[](includes/6-monitor-label-usage-using-label-analytics.md)]
+  [!include[](includes/monitor-label-usage-using-label-analytics.md)]

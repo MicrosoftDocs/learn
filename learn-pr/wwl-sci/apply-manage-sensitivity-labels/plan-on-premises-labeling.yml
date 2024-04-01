@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.apply-manage-sensitivity-labels.create
+uid: learn.wwl.apply-manage-sensitivity-labels.plan-on-premises-labeling
 title: Plan on-premises labeling
 metadata:
   title: Plan on-premises labeling
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-plan-on-premises-labeling.md)]
+  [!include[](includes/plan-on-premises-labeling.md)]
