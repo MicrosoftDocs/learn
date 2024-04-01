@@ -35820,6 +35820,76 @@
       "source_path": "learn-pr/wwl-azure/move-application-data-to-cloud/11-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/get-tips-tricks-teach-az-104-microsoft-azure-administrator/10-explore-best-practices-for-module-7.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-az-104-microsoft-azure-administrator/",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/get-tips-tricks-teach-az-104-microsoft-azure-administrator/11-explore-best-practices-for-module-8.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-az-104-microsoft-azure-administrator/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/get-tips-tricks-teach-az-104-microsoft-azure-administrator/12-explore-best-practices-for-module-9.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-az-104-microsoft-azure-administrator/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/get-tips-tricks-teach-az-104-microsoft-azure-administrator/13-explore-best-practices-for-module-10.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-az-104-microsoft-azure-administrator/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-tips-tricks-teach-az-104-microsoft-azure-administrator/14-explore-best-practices-for-module-11.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-az-104-microsoft-azure-administrator/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-tips-tricks-teach-az-104-microsoft-azure-administrator/15-bring-it-together.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-az-104-microsoft-azure-administrator/15-bring-it-all-together",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-tips-tricks-teach-az-104-microsoft-azure-administrator/2-objective-domains.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-az-104-microsoft-azure-administrator/2-explore-objective-domains",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/get-tips-tricks-teach-az-104-microsoft-azure-administrator/3-learn-module-best-practices.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-az-104-microsoft-azure-administrator/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-tips-tricks-teach-az-104-microsoft-azure-administrator/4-explore-best-practices-for-module-1.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-az-104-microsoft-azure-administrator/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-tips-tricks-teach-az-104-microsoft-azure-administrator/5-explore-best-practices-for-module-2.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-az-104-microsoft-azure-administrator/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-tips-tricks-teach-az-104-microsoft-azure-administrator/6-explore-best-practices-for-module-3.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-az-104-microsoft-azure-administrator/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/get-tips-tricks-teach-az-104-microsoft-azure-administrator/7-explore-best-practices-for-module-4.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-az-104-microsoft-azure-administrator/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-tips-tricks-teach-az-104-microsoft-azure-administrator/8-explore-best-practices-for-module-5.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-az-104-microsoft-azure-administrator/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/get-tips-tricks-teach-az-104-microsoft-azure-administrator/9-explore-best-practices-for-module-6.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-az-104-microsoft-azure-administrator/",
+      "redirect_document_id": false
     }
   ]
 }
