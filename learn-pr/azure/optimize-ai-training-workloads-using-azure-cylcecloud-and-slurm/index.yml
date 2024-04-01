@@ -2,14 +2,14 @@
 uid: learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm
 metadata:
   moduleType: standard
-  title: Optimize AI Training workloads using Azure CycleCloud and Slurm
+  title: Optimize AI training workloads using Azure CycleCloud and Slurm
   description: In this module, we examine the intersection of cloud computing, HPC, and AI. Then, by utilizing Azure CycleCloud and Slurm, you explore methods to deploy and manage clusters, confirm node health, and optimize performance tailored for AI training tasks.
   ms.author: padmalathas
   author: begeorge
   ms.date: 03/13/2024
   ms.topic: module
   ms.service: cyclecloud
-title: Optimize AI Training workloads using Azure CycleCloud and Slurm
+title: Optimize AI training workloads using Azure CycleCloud and Slurm
 summary: Azure AI training workloads are crucial for achieving optimal model performance that enables enhance of your AI training workflows.
 abstract: |
   By the end of this module, you're able to:
