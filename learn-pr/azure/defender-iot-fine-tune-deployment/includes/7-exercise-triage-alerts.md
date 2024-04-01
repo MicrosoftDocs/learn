@@ -53,7 +53,7 @@ Suggested from Amit 'Unauthorised internet connectivity' + 'New Asset Detected'
 
 ## End Learning mode
 <!-- Should this be part of the LM? Even though this will be done at a later time in real life, as part of the exercise it should be added to this unit. LW -->
-After a week or two Defender for IoT learns to identify suspicious traffic and not send false alerts, you can turn off the *Learn* status.
+After a week or two, Defender for IoT learns to identify suspicious traffic and not send false alerts and then you can turn off the *Learn* mode.
 
 In the Sensor:
 
@@ -66,5 +66,4 @@ After this change, any new devices or traffic trigger an alert, which is assesse
 
 ## Check your work
 
-What do we do to show the work is successful?
 When you complete the triage process, the **Alerts** page shows the updated status of the alerts.

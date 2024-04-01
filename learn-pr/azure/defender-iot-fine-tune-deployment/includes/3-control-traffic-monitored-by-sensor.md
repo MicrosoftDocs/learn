@@ -8,7 +8,7 @@ The OT sensor analyzes your system and assigns subnet settings and attempts to u
 
 ## Fine tuning
 
-The first stage of fine-tuning your sensor is to run the **Analyze** feature in the **Deployment** section of the OT sensor. When the analysis function is completed, check the information for each interface. If the information isn't what you expected, you need to check the <!-- span configuration Sagi -->subnet and device settings and make any changes needed.
+The first stage of fine-tuning your sensor is to run the **Analyze** feature in the **Deployment** section of the OT sensor. When the analysis function is completed, check the information for each interface. If the information isn't what you expected, you need to check the <!-- span configuration - we will assume that these are correctly set, in the LM, but if not then you should go to your connection team and get them to fix this - Sagi -->subnet and device settings and make any changes needed.
 
 ## Check and modify the subnet settings
 
@@ -28,18 +28,7 @@ Changes are made and then the new subnet settings are saved.
 
 ## Update device details
 
-Check the device details are correct using the **Device inventory**. To check the device details you'll need the following information for each device:
-
-- Authorized device
-- Name
-- Description
-- OS platform
-- Type
-- Purdue level
-- Scanner
-- Programming device
-
-Other actions available when updating device details are:
+Check the device details in the **Device inventory**. You might need to make some of the following changes:
 
 **Merge devices**: in some cases, a device might be listed more than once. This could happen when a device has two or more connectors to the sensor, for example a laptop with both Wifi and a physical network card. In such a situation, you need to merge them together, using the **Merge** option in the **Device inventory** page. The new merged device listing contains all of the data from both merged devices.
 
@@ -49,14 +38,13 @@ The *Important* setting is also useful to differentiate between similar types of
 
 The device appears in the device map with a star on it.
 
-**Check public IP addresses**: it's important to identify any public IP addresses that are used internally. These IP addresses must be listed **and add how to do this , is it in the System settings > sensor management > advanced configurations - Theo**.<!--what do we need to do? remove, reassign an IP, define as authorized? Theo--> If a public IP address isn't listed as a subnet, the sensor treats it as a public network for security settings.
+**Check public IP addresses**: it's important to identify any public IP addresses that are used internally. These IP addresses must be listed **and add how to do this , is it in the System settings > sensor management > advanced configurations - Ariel**.<!--what do we need to do? remove, reassign an IP, define as authorized? Ariel--> If a public IP address isn't listed as a subnet, the sensor treats it as a public network for security settings.
 
 **DHCP address ranges**: devices with an IP address allocated by a DHCP server, which change dynamically, must define the range of IP addresses. This is an important step, which can affect the way your data is assessed for security risks. When the device IP address changes dynamically the device is logged as a new device, which might give misleading information about your system.
 
 ## Operational mode
-<!-- is it learn / operation mode??? Theo-->
 <!-- is the authorized stuff relevant here? we wont be showing how to change it. maybe it should be removed? - LW this will be relevant for a later stage. but not for exercise. just a mention. LW-->
 <!-- give this a different title to reflect this is about things after the scope of the LM but still important to know about....LW -->
-When the sensor first receives network traffic, it enters a state called the *Learning* stage. During the *learning* stage, all devices detected are identified as *authorized*. Meaning that the device was checked and approved as a recognized part of your system. Once the learning stage is completed, any new devices detected are logged as *unauthorized*, and must be fully checked before you update the status to *authorized*.
+When the sensor first receives network traffic, it enters a state called the *Learning* mode. While in *learning* mode, all devices detected are identified as *authorized*. Meaning that the device was checked and approved as a recognized part of your system. Once the learning mode is complete, any new devices detected are logged as *unauthorized*, and must be fully checked before you update the status to *authorized*.
 
-There's also a setting to continue a form of tracking the traffic even after the *Learning* stage is turned off, and *operational* mode starts. Activating the *Smart IT Learning* makes Defender for IoT send alerts when new suspicious traffic is tracked.
+Even after *Learning* mode is turned off, and *operational* mode starts traffic can be tracked. Activating the *Smart IT Learning* makes Defender for IoT send alerts when new suspicious traffic is tracked.

@@ -28,7 +28,7 @@ Once the sensor is set up and sending data, Defender for IoT starts to identify 
 
 The new alerts, listed in Defender for IoT, must be checked and in some cases you need to adjust their status. This way Defender for IoT learns which alerts are real cases of harmful traffic and which are normal, unrecognized traffic that can be added to the baseline. The learning process can take several weeks to complete.
 
-As alerts arrive, you check that they're correctly assigned. In some cases during this phase, the alerts will be incorrect and you'll need to change the automatic settings so that the sensor learns that future traffic like this is safe. You may even want to assign supression alerts to 
+As alerts arrive, you check that they're correctly assigned. In some cases during this phase, the alerts will be incorrect and you'll need to change the automatic settings so that the sensor learns that future traffic like this is safe. You might want to assign supression alerts to exclude minor alerts so that the alert page isnt filled with unwanted alerts.
 
 In the early stages, you need to spend more time checking the alerts. Depending on the size and complexity of the system the learning mode could last from 2-6 weeks, and automatically turn offs when the sensor detects a decrease in newly detected alerts. However, you can also manually turn off the learning mode if you think that alerts produced accurately represent the network activity.
 

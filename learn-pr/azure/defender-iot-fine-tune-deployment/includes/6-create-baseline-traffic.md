@@ -70,7 +70,7 @@ Update the severity level using the table:
 
 **Suppression rules** help you filter out unwanted alerts, either permanantly or for a limited time period, so that they will not appear in the **Alerts** list even if they are triggered. This feature allows you to focus on dealing with more important alerts and not seeing minor ones.
 
-To creat a suppression rule you need to assign a name, a time range for the rule to apply or let it be unending, and choose which sensors the rule applies to. You can also apply a filter based on IP address, MAC id, subnet or host address.
+To create a suppression rule you need to assign a name, a time range for it, and choose which sensors the rule applies to. You can also apply a filter, based on IP address, MAC id, subnet or host address.
 
 ## Save changes
 

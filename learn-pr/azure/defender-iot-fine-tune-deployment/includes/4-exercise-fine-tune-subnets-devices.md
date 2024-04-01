@@ -36,25 +36,7 @@ In the **Device inventory**, you can view the subnets grouped as either *local* 
 1. Select **Network Location**
 1. Select either **Local** or **Routed**
 
-To make changes to a device detail:
-
-1. Select a specific item
-1. Select **Edit**. <!-- this needs to be fixed, but need to discuss with LW first.  how will we show this? Ask THeo for example should be ok  and no need to update - may be better to remove this, REMOVE!!!!!!!!!!!-->
-
-You can update the following fields:
-
-- Authorized device
-- Name
-- Description
-- OS platform
-- Type
-- Purdue level
-- Scanner
-- Programming device
-
-Select **Save**.
-
-:::image type="content" source="../media/4-device-settings-edit.png" alt-text="screenshot of the edit pane for device settings.":::
+You can now look through the list of devices and check the details of all of the devices.
 
 ## Merge devices
 
@@ -65,7 +47,6 @@ You might identify two or more devices listed that are really the same device. T
 1. Select **Merge**
 1. Select **Confirm**
 <!-- how to give examples of this?? how to choose a device, what will they see? So how do we demonstrate the updating? -->
-<!-- is this section needed? Isnt it just a copy of the section above? -->
 After checking the details of the devices, we'll update the details for one listed device.
 
 We need to update several of the fields.
@@ -86,7 +67,7 @@ Assign a unique device as **Important**. In the **Device map**:
 
 Select **System setting** > **Deployment**
 
-**What do we do here? Give example of how this is done? Theo**
+**What do we do here? Give example of how this is done? Ariel**
 
 ## Add DHCP address ranges
 
@@ -103,5 +84,3 @@ For a device which automatically refreshes its IP address, add the DHCP address 
 ## Check your work
 
 You now have an updated and more accurate set of devices listed in the Device inventory.
-
-<!-- It's important to review the data for the **Name**, **Class**, **Type**, and **Subtype**, **Authorized device**, **Scanner device**, and **Programming device** columns. - I think this is incorrect as per the user story <https://dev.azure.com/msft-skilling/Content/_workitems/edit/232468/> -->
