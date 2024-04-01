@@ -6,7 +6,7 @@ metadata:
   ms.date: 06/09/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Design a solution for backup and disaster recovery
 summary: Learn how to select appropriate backup solutions and disaster recovery solutions for Azure workloads.
 abstract: |

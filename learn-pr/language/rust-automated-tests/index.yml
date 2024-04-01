@@ -6,7 +6,7 @@ metadata:
   ms.date: 06/14/2021
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
   ms.devlang: rust
 title: Write automated tests
@@ -29,8 +29,6 @@ roles:
 - student
 products:
 - azure
-subjects:
-- development-tools
 units:
 - learn.language.rust-automated-tests.introduction
 - learn.language.rust-automated-tests.unit-tests

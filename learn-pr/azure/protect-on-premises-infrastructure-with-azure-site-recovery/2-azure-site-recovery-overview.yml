@@ -3,7 +3,7 @@ uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery.2-azure-s
 metadata:
   title: Azure Site Recovery overview
   description: Investigate how Azure Site Recovery can help achieve these goals by harnessing the power of the cloud. Then, study the tools that can make the failover and recovery of resources possible.
-  ms.date: 08/01/2019
+  ms.date: 05/25/2023
   author: ankitaduttaMSFT
   ms.author: ankitadutta
   ms.topic: unit

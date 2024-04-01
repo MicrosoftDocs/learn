@@ -7,11 +7,11 @@ When a user submits a prompt, Copilot processes that prompt to generate the best
 
 :::image type="content" source="../media/process-prompts-figma-updated-logo-numbered.png" lightbox="../media/process-prompts-figma-updated-logo-numbered.png" alt-text="Diagram illustrating how Microsoft Copilot for Security processes a prompt request.":::
 
-1. The process starts when a user submits a prompt in the prompt bar. Once the user submits their prompt, it's sent to the Copilot backend referred to as the orchestrator.  The orchestrator is Copilot’s system for composing capabilities (skills) together to answer a user’s prompt.
+1. The process starts when a user submits a prompt in the prompt bar. Once the user submits their prompt, it's sent to the Copilot backend referred to as the orchestrator.  The orchestrator is Copilot’s system for composing capabilities together to answer a user’s prompt.
 
 1. Copilot bundles the user prompt and a full list of Copilot capabilities for the enabled sources (plugins and knowledge bases) and then sends it to Azure OpenAI with the request to make a plan for fulfilling the user’s request
 
-1. Azure OpenAI, runs advanced LLMs to match the prompt with the available capabilities (skills) and creates a plan (set of steps) for fulfilling the user’s request.  That plan is sent back to the orchestrator.
+1. Azure OpenAI, runs advanced LLMs to match the prompt with the available capabilities and creates a plan (set of steps) for fulfilling the user’s request.  That plan is sent back to the orchestrator.
     1. If no capability is matched, the response to the user’s prompt is generated using the general knowledge LLM, and the process jumps to step 7.
     1. The general knowledge LLM is good at general knowledge and problem solving but isn't uniquely focused on security so there's a greater chance that the response provided isn't accurate.  For this reason, it's beneficial to enable plugins and connect to knowledge bases to bring a collection of resource specific capabilities to Copilot.  
 
@@ -31,6 +31,6 @@ When a user submits a prompt, Copilot processes that prompt to generate the best
 
 #### Process log
 
-During this process, Copilot generates a process log that is visible to the user. The user can see what capability (skill) is used to generate the response. This is important because it enables the user to determine whether the response was generated from a trusted source. In the screenshot that follows, the process log shows that Copilot chose the Microsoft Sentinel plugin and lists the selected capability (skill). The process log also shows that the final output went through safety checks, which is part of Microsoft’s commitment to responsible AI.
+During this process, Copilot generates a process log that is visible to the user. The user can see what capability is used to generate the response. This is important because it enables the user to determine whether the response was generated from a trusted source. In the screenshot that follows, the process log shows that Copilot chose the Microsoft Sentinel plugin and lists the selected capability. The process log also shows that the final output went through safety checks, which is part of Microsoft’s commitment to responsible AI.
 
-:::image type="content" source="../media/process-log-ver-2b.png" lightbox="../media/process-log-ver-2b.png"alt-text="Screen capture of the process log that highlights the skill selected and the text indicating that Copilot ran safety checks as part of the process to compose the response message.":::
+:::image type="content" source="../media/process-log-new.png" lightbox="../media/process-log-new.png"alt-text="Screen capture of the process log that highlights the capability selected and the text indicating that Copilot ran safety checks as part of the process to compose the response message.":::

@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
-  ms.service: virtual-desktop
   ms.custom: N/A, devx-track-azurepowershell
 durationInMinutes: 9
 content: |

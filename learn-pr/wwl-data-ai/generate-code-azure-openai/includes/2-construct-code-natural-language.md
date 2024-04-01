@@ -2,9 +2,7 @@ One of the capabilities of Azure OpenAI models is to generate code from natural 
 
 ## AI models for code generation
 
-Most of the language models available can help with code, with some performing better than others. In the base *GPT-3* family, the standard text model (such as `text-davinci-002`) has a good base understanding of code. *Codex* (such as `code-davinci-002`) has expanded coding capabilities on top of the standard text model.
-
-As new generations of models evolve, the base models drastically improve their performance and understanding of both language and code, which results in not needing specific *Codex* models. This improvement results in just a single model for more recent generations (such as `gpt-35-turbo` and `gpt-4`) that can be used for both natural language and code.
+In previous generations of `gpt` models, some were trained specifically for use with code (often called *codex* models). As new generations of models evolve, the base models drastically improve their performance and understanding of both language and code, which results in not needing specific code models. This improvement results in just a single model for more recent generations (such as `gpt-35-turbo` and `gpt-4`) that can be used for both natural language and code.
 
 The examples in this module are using `gpt-35-turbo`.
 

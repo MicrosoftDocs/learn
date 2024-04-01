@@ -7,7 +7,7 @@ metadata:
   ms.date: 03/29/2023
   author: mumian
   ms.author: jgao
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.devlang: bicep
 title: Automate Azure infrastructure change reviews by using Bicep and GitHub
 summary: |

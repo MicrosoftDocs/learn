@@ -24,10 +24,8 @@ products:
 prerequisites: |
   - Have a free [GitHub account](https://github.com/login)
   - Familiarity with editing text and code files in any text editor
-  - Beginner-level experience writing JavaScript code
-  - Experience using the command line
-subjects:
-- development-tools
+  - Basic familiarity with the HTTP protocol
+  - Experience using the command line, including Git operations
 units:
 - learn.student-evangelism.node-web-routes.introduction
 - learn.student-evangelism.node-web-routes.manage-routes

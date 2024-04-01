@@ -3,7 +3,7 @@ uid: learn.languages.aspnetcore-accessibility.6-visual-accessibility
 metadata:
   title: Find and fix common visual accessibility errors
   description: Find and fix issues that make web applications inaccessible for people with visual impairments.
-  ms.date: 04/20/2021
+  ms.date: 02/13/2024
   author: jongalloway
   ms.author: jogallow
   ms.manager: markl

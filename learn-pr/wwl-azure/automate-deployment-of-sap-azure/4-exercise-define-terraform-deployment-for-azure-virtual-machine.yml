@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
-  ms.custom: devx-track-terraform
+  ms.custom: devx-track-terraform, linux-related-content
 durationInMinutes: 9
 content: |
   [!include[](includes/4-exercise-define-terraform-deployment-for-azure-virtual-machine.md)]

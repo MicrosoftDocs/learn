@@ -8,6 +8,7 @@ metadata:
   author: chasecrum
   ms.author: chasecrum
   ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 15
 content: |
   [!include[](includes/3-azure-iaas-options-for-linux-deployments.md)]

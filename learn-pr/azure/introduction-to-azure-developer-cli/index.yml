@@ -28,8 +28,6 @@ roles:
   - solution-architect
 products:
   - azure-clis
-subjects:
-- development-tools
 units:
 - learn.azure.introduction-to-azure-developer-cli.introduction
 - learn.azure.introduction-to-azure-developer-cli.what-is-azure-developer-cli

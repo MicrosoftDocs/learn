@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/23/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Use PowerShell drives in PowerShell
 summary: This module explains how to work with PowerShell drives.
 abstract: |
@@ -39,7 +39,6 @@ products:
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

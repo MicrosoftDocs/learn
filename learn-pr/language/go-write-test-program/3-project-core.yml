@@ -3,7 +3,7 @@ uid: learn.language.go-write-test-program.3-project-core
 metadata:
   title: Write the bank core package
   description: Create the methods and supporting tests for the project's core package.
-  ms.date: 02/02/2021
+  ms.date: 01/23/2023
   author: meaghanlewis
   ms.author: chnoring
   ms.topic: unit

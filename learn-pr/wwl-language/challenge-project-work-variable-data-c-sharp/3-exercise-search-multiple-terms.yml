@@ -3,11 +3,13 @@ uid: learn.wwl.challenge-project-work-variable-data-c-sharp.exercise-search-mult
 title: Add multiple term search support
 metadata:
   title: Add multiple term search support
-  description: "Add multiple term search support"
-  ms.date: 02/21/2024
+  description: "Add support for entering multiple search terms at once."
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 20
 content: |
   [!include[](includes/3-exercise-search-multiple-terms.md)]

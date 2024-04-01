@@ -5,7 +5,7 @@ metadata:
   unitType: summary 
   title: Summary
   description: The goal of this module was to explain how you can use GitHub Dependabot to help manage your dependencies and identify vulnerabilities that can affect the security of your project.
-  ms.date: 1/5/2022
+  ms.date: 02/08/2024
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit

@@ -28,8 +28,6 @@ roles:
   - solution-architect
 products:
   - azure-clis
-subjects:
-- development-tools
 units:
 - learn.azure.build-first-azure-developer-cli-template.introduction
 - learn.azure.build-first-azure-developer-cli-template.create-template-structure
