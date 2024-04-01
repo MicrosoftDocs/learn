@@ -29,7 +29,7 @@ The following tools are required:
 
 ### .NET SDK
 
-[!include[](../../../includes/dotnet7-sdk-version.md)]
+[!include[](../../../includes/dotnet8-sdk-version.md)]
 
 ### GitHub CLI
 
@@ -37,4 +37,4 @@ To clone the sample app from GitHub, you'll need the [GitHub CLI](https://cli.gi
 
 ### Visual Studio Code
 
-Ensure you have latest versions of [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true) and the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp&azure-portal=true).
+Ensure you have latest versions of [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true) and the [C# Dev Kit](https://code.visualstudio.com/docs/csharp/get-started) installed.

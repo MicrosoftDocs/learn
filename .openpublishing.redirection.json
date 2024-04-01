@@ -9877,43 +9877,43 @@
     },
     {
       "source_path": "learn-pr/iot/develop-with-azure-digital-twins/introduction-to-azure-digital-twins/1-introduction.md",
-      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/1-introduction",
-      "redirect_document_id": true
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/iot/develop-with-azure-digital-twins/introduction-to-azure-digital-twins/2-definition.md",
-      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/2-definition",
-      "redirect_document_id": true
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/iot/develop-with-azure-digital-twins/introduction-to-azure-digital-twins/3-benefits.md",
-      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/3-benefits",
-      "redirect_document_id": true
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/iot/develop-with-azure-digital-twins/introduction-to-azure-digital-twins/4-use-cases.md",
-      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/4-use-cases",
-      "redirect_document_id": true
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/iot/develop-with-azure-digital-twins/introduction-to-azure-digital-twins/5-explore.md",
-      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/5-explore",
-      "redirect_document_id": true
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/iot/develop-with-azure-digital-twins/introduction-to-azure-digital-twins/6-consortium.md",
-      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/6-consortium",
-      "redirect_document_id": true
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/iot/develop-with-azure-digital-twins/introduction-to-azure-digital-twins/7-knowledge-check.md",
-      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/7-knowledge-check",
-      "redirect_document_id": true
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/iot/develop-with-azure-digital-twins/introduction-to-azure-digital-twins/8-summary.md",
-      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/8-summary",
-      "redirect_document_id": true
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/iot/develop-with-azure-digital-twins/route-output-from-azure-digital-twins-to-downstream-services/index.md",
@@ -13727,48 +13727,38 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/index.md",
-      "redirect_url": "/training/modules/examine-components-azure-digital-twins-solution/",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/3-benefits.md",
-      "redirect_url": "/training/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/6-consortium.md",
-      "redirect_url": "/training/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/2-definition.md",
-      "redirect_url": "/training/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/5-explore.md",
-      "redirect_url": "/training/modules/examine-components-azure-digital-twins-solution/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/1-introduction.md",
-      "redirect_url": "/training/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/7-knowledge-check.md",
-      "redirect_url": "/training/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/8-summary.md",
-      "redirect_url": "/training/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/4-use-cases.md",
-      "redirect_url": "/training/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/",
       "redirect_document_id": false
     },
     {
@@ -35829,226 +35819,6 @@
     {
       "source_path": "learn-pr/wwl-azure/move-application-data-to-cloud/11-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/consider-message-processing-options-constraints/index.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/consider-message-processing-options-constraints/2-message-routing-event-grid.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/consider-message-processing-options-constraints/4-iot-hub-quotas-throttle.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/consider-message-processing-options-constraints/3-message-enrichments.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/consider-message-processing-options-constraints/1-introduction.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/consider-message-processing-options-constraints/5-knowledge-check.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/consider-message-processing-options-constraints/6-summary.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/index.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/12-azure-stream-analytics-outputs.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/8-azure-stream-analytics-queries.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/7-azure-stream-analytics-reference-data-input.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/6-azure-stream-analytics-streaming-data-input.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/11-examine-azure-stream-analytics-window-functions.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/13-azure-functions.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/10-azure-stream-analytics-queries-time-considerations.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/2-what-azure-stream-analytics.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/5-azure-stream-analytics-input-types.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/1-introduction.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/14-knowledge-check.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/9-azure-stream-analytics-queries-parse-complex-data-types.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/4-azure-stream-analytics-patterns-guidelines.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/15-summary.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/3-azure-stream-analytics-other-stream-process-technologies.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/index.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/5-iot-hub-built-in-end-point.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/4-introduction-to-message-routing.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/3-iot-hub-common-message-format.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/6-message-routing-query-syntax.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/1-introduction.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/7-knowledge-check.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/2-what-is-message-processing.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/8-summary.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/index.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/4-azure-storage-options.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/6-azure-cosmos-database.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/5-azure-data-lake.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/7-azure-sql-database.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/2-introduction-lambda-architecture.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/8-other-storage-options.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/1-introduction.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/9-knowledge-check.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/3-common-storage-options-azure-iot-solutions.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/10-summary.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/paths/implement-device-message-processing-data-analytics/index.md",
-      "redirect_url": "/training/paths/manage-monitor-devices-iot-hub-azure-monitor/",
       "redirect_document_id": false
     }
   ]
