@@ -39,8 +39,8 @@ In the **Device inventory**, you can view the subnets grouped as either *local* 
 To make changes to a device detail:
 
 1. Select a specific item
-1. Select **Edit**. <!-- this needs to be fixed, but need to discuss with LW first.  how will we show this? Ask THeo for example -->
-<!-- why does this come out formatted as a code box??-->
+1. Select **Edit**. <!-- this needs to be fixed, but need to discuss with LW first.  how will we show this? Ask THeo for example should be ok  and no need to update - may be better to remove this, REMOVE!!!!!!!!!!!-->
+
 You can update the following fields:
 
 - Authorized device
@@ -64,7 +64,7 @@ You might identify two or more devices listed that are really the same device. T
 1. Select the devices you need to merge by clicking the checkboxes for those rows
 1. Select **Merge**
 1. Select **Confirm**
-<!-- how to give examples of this?? how to choose a device, what will they see? should be supply a PCAP file to upload, seems too much. So how do we demonstrate the updating? -->
+<!-- how to give examples of this?? how to choose a device, what will they see? So how do we demonstrate the updating? -->
 <!-- is this section needed? Isnt it just a copy of the section above? -->
 After checking the details of the devices, we'll update the details for one listed device.
 
