@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.apply-manage-sensitivity-labels.configure-label-polices
+uid: learn.wwl.apply-manage-sensitivity-labels.configure-on-premises-labeling-for-unified-labeling-scanner
 title: Configure on-premises labeling for the Unified Labeling Scanner
 metadata:
   title: Configure on-premises labeling for the Unified Labeling Scanner
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-configure-on-premises-labeling-for-unified-labeling-scanner.md)]
+  [!include[](includes/configure-on-premises-labeling-for-unified-labeling-scanner.md)]
