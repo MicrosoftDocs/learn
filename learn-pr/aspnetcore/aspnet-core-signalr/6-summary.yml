@@ -5,7 +5,7 @@ metadata:
   unitType: summary
   title: Summary
   description: This unit summarizes what you've learned about ASP.NET Core SignalR, and it provides links to resources and additional references.
-  ms.date: 10/06/2023
+  ms.date: 10/25/2023
   author: IEvangelist
   ms.author: dapine
   ms.manager: markl

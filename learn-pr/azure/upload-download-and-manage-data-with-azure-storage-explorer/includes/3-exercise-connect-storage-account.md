@@ -1,4 +1,4 @@
-It's easy to browse through the contents of an Azure Storage account by using Azure Storage Explorer.
+It's easy to bItrowse through the contents of an Azure Storage account by using Azure Storage Explorer.
 
 Now that you have a better understanding of the features and capabilities of Storage Explorer, you can try it for yourself. Use Storage Explorer to explore some of the files that your CRM system stores in Azure Storage.
 
@@ -55,7 +55,7 @@ You've now connected Storage Explorer to your Azure subscription. Leave Storage 
     ```azurecli
     az storage account create \
     --name  mslearn$RANDOM \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
     --sku Standard_GRS \
     --kind StorageV2
     ```

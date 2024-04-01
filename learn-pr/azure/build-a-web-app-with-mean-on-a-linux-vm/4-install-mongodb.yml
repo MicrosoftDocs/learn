@@ -4,10 +4,11 @@ title: Exercise - Install MongoDB
 metadata:
   title: Exercise - Install MongoDB
   description: Exercise - Install MongoDB
-  ms.date: 06/10/2022
+  ms.date: 05/11/2023
   author: ju-shim
   ms.author: jushiman
   ms.topic: unit
+  ms.custom: linux-related-content
 interactive: bash
 azureSandbox: true
 durationInMinutes: 5

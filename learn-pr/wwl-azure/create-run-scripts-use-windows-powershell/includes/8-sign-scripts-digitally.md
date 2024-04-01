@@ -10,3 +10,4 @@ You add a digital signature by using the **Set-AuthenticodeSignature** cmdlet, a
 $cert =  Get-ChildItem -Path "Cert:\CurrentUser\My" -CodeSigningCert
 Set-AuthenticodeSignature -FilePath "C:\Scripts\MyScript.ps1" -Certificate $cert
 ```
+

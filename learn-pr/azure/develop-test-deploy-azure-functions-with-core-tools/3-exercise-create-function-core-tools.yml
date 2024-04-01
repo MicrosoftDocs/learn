@@ -3,7 +3,7 @@ uid: learn-pr.develop-test-deploy-azure-functions-core-tools.3-exercise-create-f
 metadata:
   title: Exercise - Create a function locally using Core Tools
   description: In this exercise, we'll create and run our first function from the Cloud Shell command line using the Core Tools.
-  ms.date: 12/11/2021
+  ms.date: 11/13/2023
   author: ggailey777
   ms.author: glenga
   ms.topic: unit
