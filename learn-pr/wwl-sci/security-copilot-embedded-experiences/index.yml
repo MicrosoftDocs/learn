@@ -3,24 +3,27 @@ uid: learn.security-copilot-embedded-experiences
 metadata:
   title: Describe the embedded experiences of Microsoft Copilot for Security
   description: "Microsoft Copilot for Security is accessible directly from some Microsoft security products, this is referred to the embedded experience. Learn about the scenarios supported by the Copilot embedded experience in Microsoft’s security solutions."
-  ms.date: 02/01/2024
+  ms.date: 03/12/2024
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: module-standard-task-based
   ms.service: security-copilot
+  ai-usage: ai-assisted
 title: Describe the embedded experiences of Microsoft Copilot for Security
 summary: |
   Microsoft Copilot for Security is accessible directly from some Microsoft security products, this is referred to as the embedded experience. Learn about the scenarios supported by the Copilot embedded experience in Microsoft’s security solutions.
-  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   By the end of this module, you'll be able to:
   - Describe Microsoft Copilot in Microsoft Defender XDR.
   - Describe Microsoft Copilot in Microsoft Purview.
+  - Describe Microsoft Copilot in Microsoft Entra.
 prerequisites: |
-  - A basic understanding of Microsoft Defender for XDR
-  - A basic understanding of Microsoft Purview
+  - Working knowledge of security operations and incident response
+  - Working knowledge of Microsoft Defender for XDR
+  - Working knowledge of Microsoft Purview
+  - Working knowledge of Microsoft Entra
 iconUrl: /learn/achievements/generic-badge.svg
-hidden: true
+hidden: false
 levels: 
   - beginner
 roles: 
@@ -37,6 +40,7 @@ units:
 - learn.security-copilot-embedded-experiences.introduction
 - learn.security-copilot-embedded-experiences.copilot-for-defender
 - learn.security-copilot-embedded-experiences.copilot-for-purview
+- learn.security-copilot-embedded-experiences.copilot-for-entra
 - learn.security-copilot-embedded-experiences.knowledge-check
 - learn.security-copilot-embedded-experiences.summary
 badge:

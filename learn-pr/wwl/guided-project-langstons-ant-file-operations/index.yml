@@ -3,10 +3,12 @@ uid: learn.wwl.guided-project-langstons-ant-file-operations
 metadata:
   title: Guided project - Langstons ant with file operations
   description: "This is a guided project module where you implement file input and output in an existing Langston's Ant simulation."
-  ms.date: 03/08/2024
+  ms.date: 03/12/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module-guided-project
+  ms.custom:
+  - N/A
   ms.service: dotnet-csharp
   ms.devlang: csharp
   ai-usage: human-only
@@ -35,6 +37,7 @@ prerequisites: |
 
   -   Familiarity with file operations in C#.
 iconUrl: /training/achievements/generic-badge.svg
+hidden: true
 levels:
 - beginner
 roles:

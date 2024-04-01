@@ -30,7 +30,7 @@ products:
 - azure
 - azure-database-postgresql
 subjects:
-- database
+- databases
 - cloud-computing
 units:
 - learn.create-azure-db-for-postgresql.introduction

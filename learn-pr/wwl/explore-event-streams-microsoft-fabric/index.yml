@@ -25,7 +25,7 @@ roles:
 products:
 - fabric
 subjects:
-- data-ai
+- data-management
 - data-engineering
 - data-integration
 units:

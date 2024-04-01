@@ -3,16 +3,17 @@ uid: learn.wwl.work-with-hybrid-transactional-analytical-processing-solutions
 metadata:
   title: Work with Hybrid Transactional and Analytical Processing Solutions using Azure Synapse Analytics
   description: Work with Hybrid Transactional and Analytical Processing Solutions using Azure Synapse Analytics
-  ms.date: 07/01/2022
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: jamesh
   ms.topic: learning-path
+  ms.service: synapse-analytics
 title: Work with Hybrid Transactional and Analytical Processing Solutions using Azure Synapse Analytics
 prerequisites: |
-  Before starting this Learning Path, you should have a basic knowledge of data analytics and Azure services for data. Consider completing the [Azure Data Fundamentals](/certifications/azure-data-fundamentals/?azure-portal=true) certification first.
+  Before starting this Learning Path, you should have a basic knowledge of data analytics and Azure services for data. Consider completing the [Azure Data Fundamentals](https://docs.microsoft.com/learn/certifications/azure-data-fundamentals/?azure-portal=true) certification first.
 summary: |
   Hybrid Transactional and Analytical Processing (HTAP) is a technique for near real time analytics without a complex ETL solution. In Azure Synapse Analytics, HTAP is supported through Azure Synapse Link.
-iconUrl: /training/achievements/work-hybrid-transactional-analytical-processing-solutions.svg
+iconUrl: /learn/achievements/work-hybrid-transactional-analytical-processing-solutions.svg
 levels:
 - intermediate
 roles:

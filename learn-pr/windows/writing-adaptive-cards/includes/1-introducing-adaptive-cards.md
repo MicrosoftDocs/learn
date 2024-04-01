@@ -9,7 +9,7 @@ For example, you can create an Adaptive Card that's not only interactive and fun
 
 First, let's look at some sample JSON scripts for Adaptive Cards. Open another browser window at the following location:
 
-[https://messagecardplayground.azurewebsites.net/](https://messagecardplayground.azurewebsites.net/)
+[https://amdesigner.azurewebsites.net/](https://amdesigner.azurewebsites.net/)
 
 Use the **Select a sample** list to choose a sample, and then examine the JSON script and its visual interpretation. You can see that it was built by using simple graphics and a column type layout. Also note the types of applications you can create: weather updates, requests for approval, flight schedules, surveys, and so on. A singular focus is key to the successful use of Adaptive Cards.
 

@@ -6,7 +6,7 @@ metadata:
   ms.date: 06/25/2023
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Security Monitoring and Governance
 summary: This module describes security monitoring and governance with Microsoft Defender for Cloud and its usage scenarios, Azure Policies, Microsoft Defender for Identity, and security practices related to the tools.
 abstract: |

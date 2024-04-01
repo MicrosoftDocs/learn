@@ -3,11 +3,13 @@ uid: learn.languages.csharp-arrays-operations.solution-1
 title: Review a solution to the reverse words in a sentence challenge
 metadata:
   title: Review a solution to the reverse words in a sentence challenge
-  description: "Review a solution to the reverse words in a sentence challenge"
-  ms.date: 02/21/2024
+  description: "Review a solution to the reverse words in a sentence challenge."
+  ms.date: 03/27/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/6-solution-1.md)]

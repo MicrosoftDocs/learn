@@ -9,10 +9,11 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
+  ms.service: azure
+  ai-usage: ai-assisted
 title: Configure Azure Blob Storage
 summary: |
   Learn how to configure Configure Azure Blob Storage, including tiers and object replication.
-  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   In this module, you learn how to:
   - Understand the purpose and benefits of Azure Blob Storage.

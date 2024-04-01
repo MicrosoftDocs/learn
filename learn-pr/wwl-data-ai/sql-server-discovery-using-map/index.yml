@@ -29,7 +29,7 @@ roles:
 products: 
 - sql-server
 subjects:
-- database
+- databases
 units:
 - learn-sqlserver.sql-server-discovery-using-map.1-introduction
 - learn-sqlserver.sql-server-discovery-using-map.2-decide-map-right-your-task

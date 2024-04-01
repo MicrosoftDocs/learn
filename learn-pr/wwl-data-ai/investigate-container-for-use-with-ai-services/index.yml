@@ -31,7 +31,7 @@ products:
 - ai-services
 - azure-container-instances
 subjects:
-- container
+- containers
 - artificial-intelligence
 units:
 - learn.wwl.investigate-container-for-use-with-ai-services.introduction-to-containerization-of

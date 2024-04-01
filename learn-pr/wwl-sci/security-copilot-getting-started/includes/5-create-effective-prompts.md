@@ -28,7 +28,7 @@ Some things to remember when coming up with your own prompts:
 
 - Provide necessary context to narrow down where Copilot looks for data.
   - Basic prompt: Summarize incident 15134.
-  - Better prompt: Summarize incident 15134 in Microsoft 365 Defender into a paragraph that I can submit to my manager and create a list of entities involved.
+  - Better prompt: Summarize incident 15134 in Microsoft Defender XDR into a paragraph that I can submit to my manager and create a list of entities involved.
 
 - Give positive instructions instead of "what not to do." Copilot is geared toward action, so telling it what you want it to do for exceptions is more productive.
   - Basic prompt: Give me a list of unmanaged devices in my network.

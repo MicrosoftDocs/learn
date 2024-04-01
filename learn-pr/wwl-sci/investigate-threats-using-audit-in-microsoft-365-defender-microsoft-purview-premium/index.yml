@@ -3,10 +3,11 @@ uid: learn.wwl.investigate-threats-using-audit-in-microsoft-365-defender-microso
 metadata:
   title: Investigate threats using audit in Microsoft Defender XDR and Microsoft Purview (Premium)
   description: "This module explores the differences between Microsoft Purview Audit (Standard) and Audit (Premium), plus the key functionality in Audit (Premium), including setup requirements, enabling audit logging, creating audit log retention policies, and performing forensics investigations."
-  ms.date: 3/22/2023
+  ms.date: 3/13/2024
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: purview-audit
 title: Investigate threats using audit in Microsoft Defender XDR and Microsoft Purview (Premium)
 summary: "This module explores the differences between Microsoft Purview Audit (Standard) and Audit (Premium), plus the key functionality in Audit (Premium), including setup requirements, enabling audit logging, creating audit log retention policies, and performing forensics investigations."
 abstract: |

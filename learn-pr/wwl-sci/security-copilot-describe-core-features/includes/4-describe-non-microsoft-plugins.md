@@ -1,10 +1,10 @@
 Microsoft Copilot for Security supports non-Microsoft plugins to extend Copilot's capabilities.  These plugins are categorized as:
+
 - Other
 - Websites
 - Custom
 
 :::image type="content" source="../media/non-microsoft-plugins-resized.png" lightbox="../media/non-microsoft-plugins-resized.png" alt-text="Screen capture of the non-Microsoft plugins.":::
-
 
 #### Other plugins
 

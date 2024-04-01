@@ -3,7 +3,7 @@ uid: learn.azure.migrate-aspnet-app-azure-app-service.exercise-setup-host-enviro
 metadata:
   title: Exercise - Set up host environment
   description: Describes the steps to prepare Azure subscription and source application to be containerized.
-  ms.date: 09/01/2021
+  ms.date: 01/02/2024
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit

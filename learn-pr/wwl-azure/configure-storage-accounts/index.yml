@@ -10,11 +10,10 @@ metadata:
   ms.custom:
   - N/A
   ai-usage: ai-assisted
+  ms.service: azure-storage
 title: Configure storage accounts
 summary: |
   Learn how to configure storage accounts, including replication and endpoints.
-
-  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   In this module, you learn how to:
 

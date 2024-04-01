@@ -52,6 +52,9 @@ A repository is also the unit of privacy for an image. If you don't wish to shar
 
 ## Browse Docker Hub and pull an image
 
+> [!NOTE]
+> You don't need to complete any of the examples or run any of the code in the following sections. You'll do that in the next unit.
+
 Often you'll find there's an image in Docker Hub that closely matches the type of app you want to containerize. You can download such an image and extend it with your application code.
 
 Docker Hub contains many thousands of images. You can search and browse a registry using Docker from the command line or the Docker Hub website. The website allows you to search, filter, and select images by type and publisher. The figure below shows an example of the search page.

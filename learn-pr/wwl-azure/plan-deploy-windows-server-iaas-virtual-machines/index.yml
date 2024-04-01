@@ -45,7 +45,6 @@ products:
 - azure-virtual-machines
 subjects:
 - virtual-machine
-- development-tools
 units:
 - learn.wwl.plan-deploy-windows-server-iaas-vms.introduction
 - learn.wwl.plan-deploy-windows-server-iaas-vms.describe-azure-compute

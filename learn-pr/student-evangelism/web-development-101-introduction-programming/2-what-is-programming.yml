@@ -12,39 +12,3 @@ title: What is programming?
 durationInMinutes: 2
 content: |
   [!include[](includes/2-what-is-programming.md)]
-quiz:
-  title: Check your knowledge
-  questions:
-  - content: "A program can be created by using:"
-    choices:
-    - content: "A text editor"
-      isCorrect: true
-      explanation: "Correct, A text editor is commonly used by developers to create programs."
-    - content: "Pencil and paper"
-      isCorrect: false
-      explanation: "Incorrect. Although programs can be designed by hand with pencil and paper, you can't run a program that's written by hand."
-    - content: "A typewriter"
-      isCorrect: false
-      explanation: "Incorrect. Although you can write a program on a typewriter, a typewriter can't run a program."
-  - content: "Low-level languages are a popular choice for:"
-    choices:
-    - content: "Websites"
-      isCorrect: false
-      explanation: "Incorrect. Websites require a high-level language such as JavaScript."
-    - content: "Hardware"
-      isCorrect: true
-      explanation: "Correct. Low-level languages are most often used with hardware devices."
-    - content: "Video game software"
-      isCorrect: false
-      explanation: "Incorrect. Video games require high-level code to function."
-  - content: "Which one of these tools would most likely be in a web developer's environment?"
-    choices:
-    - content: "Hardware, such as Raspberry Pi"
-      isCorrect: false
-      explanation: "Incorrect. Raspberry Pi is a physical hardware device and can't be a tool in a developer's environment."
-    - content: "Browser development tools"
-      isCorrect: true
-      explanation: "Correct. Developer tools have features that allow developers to collect and capture insights about their application."
-    - content: "Operating system documentation"
-      isCorrect: false
-      explanation: "Incorrect. Although documentation is essential as a developer learns how to use tools and languages, it's not a part of a web developer's environment."

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-cloud-storage-for-iot.examine-azure-sql-database
+title: Examine Azure SQL Database
+metadata:
+  title: Examine Azure SQL Database
+  description: "Examine Azure SQL Database"
+  ms.date: 02/16/2024
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-azure-sql-database.md)]
