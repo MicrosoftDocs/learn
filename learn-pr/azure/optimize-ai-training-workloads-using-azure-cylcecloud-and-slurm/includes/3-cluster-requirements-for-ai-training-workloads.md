@@ -1,6 +1,6 @@
 Running AI training workloads require significant computing and storage requirements to ensure that the environment can support intense workloads. 
 
-## Requirements for running AI Training Workloads
+## Requirements for running AI training workloads
 
 | **Requirement** | **Details** |
 |---|---|
