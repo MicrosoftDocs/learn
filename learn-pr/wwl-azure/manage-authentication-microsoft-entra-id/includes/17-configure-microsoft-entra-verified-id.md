@@ -30,9 +30,13 @@ The following screenshot demonstrates how to copy the required values:
 
 The sample application is available in .NET, and the code is maintained in a GitHub repository. Download the sample code from the GitHub repo, or clone the repository to your local computer:
 
-**Bash** 
+<!--- raw content start --->
+Bash 
+<!--- raw content end --->
 
-`git clone git@github.com:Azure-Samples/active-directory-verifiable-credentials-dotnet.git`
+<!--- raw content start --->
+git clone git@github.com:Azure-Samples/active-directory-verifiable-credentials-dotnet.git 
+<!--- raw content end --->
 
 ## Configure the verifiable credentials app
 
@@ -77,35 +81,65 @@ Now make modifications to the sample app's issuer code to update it with your ve
 
 The following JavaScript Object Notation (JSON) demonstrates a complete *appsettings.json* file:
 
-**JSON**
+```javascript
+JSON
+```
 
-`{`
+```javascript
+{
+```
 
-`"VerifiedID": {`
+```javascript
+  "VerifiedID": {
+```
 
-`"Endpoint": "https://verifiedid.did.msidentity.com/v1.0/verifiableCredentials/",`
+```javascript
+    "Endpoint": "https://verifiedid.did.msidentity.com/v1.0/verifiableCredentials/",
+```
 
-`"VCServiceScope": "3db474b9-6a0c-4840-96ac-1fceb342124f/.default",`
+```javascript
+    "VCServiceScope": "3db474b9-6a0c-4840-96ac-1fceb342124f/.default",
+```
 
-`"Instance": "https://login.microsoftonline.com/",`
+```javascript
+    "Instance": "https://login.microsoftonline.com/",
+```
 
-`"TenantId": "12345678-0000-0000-0000-000000000000",`
+```javascript
+    "TenantId": "12345678-0000-0000-0000-000000000000",
+```
 
-`"ClientId": "33333333-0000-0000-0000-000000000000",`
+```javascript
+    "ClientId": "33333333-0000-0000-0000-000000000000",
+```
 
-`"ClientSecret": "123456789012345678901234567890",`
+```javascript
+    "ClientSecret": "123456789012345678901234567890",
+```
 
-`"CertificateName": "[Or instead of client secret: Enter here the name of a certificate (from the user cert store) as registered with your application]",`
+```javascript
+    "CertificateName": "[Or instead of client secret: Enter here the name of a certificate (from the user cert store) as registered with your application]",
+```
 
-`"DidAuthority": "did:web:...your-decentralized-identifier...",`
+```javascript
+    "DidAuthority": "did:web:...your-decentralized-identifier...",
+```
 
-`"CredentialType": "VerifiedCredentialExpert",`
+```javascript
+    "CredentialType": "VerifiedCredentialExpert",
+```
 
-`"CredentialManifest": "https://verifiedid.did.msidentity.com/v1.0/12345678-0000-0000-0000-000000000000/verifiableCredentials/contracts/VerifiedCredentialExpert"`
+```javascript
+    "CredentialManifest":  "https://verifiedid.did.msidentity.com/v1.0/12345678-0000-0000-0000-000000000000/verifiableCredentials/contracts/VerifiedCredentialExpert"
+```
 
-`}`
+```javascript
+  }
+```
 
-\}
+```javascript
+}
+```
 
 ## Run and test the sample app
 
@@ -115,17 +149,25 @@ Now you are ready to present and verify your first verified credential expert ca
 
 **Bash**
 
-`cd active-directory-verifiable-credentials-dotnet\1-asp-net-core-api-idtokenhint`
+<!--- raw content start --->
+cd active-directory-verifiable-credentials-dotnet\1-asp-net-core-api-idtokenhint
+<!--- raw content end --->
 
-`dotnet build "AspNetCoreVerifiableCredentials.csproj" -c Debug -o .\bin\Debug\net6`
+<!--- raw content start --->
+dotnet build "AspNetCoreVerifiableCredentials.csproj" -c Debug -o .\bin\Debug\net6
+<!--- raw content end --->
 
-`dotnet run`
+<!--- raw content start --->
+dotnet run
+<!--- raw content end --->
 
 2. In another terminal, run the following command. This command runs the ngrok to set up a URL on 5000 and make it publicly available on the internet.
 
 **Bash**
 
-`ngrok http 5000`
+<!--- raw content start --->
+ngrok http 5000
+<!--- raw content end --->
 
 > [!NOTE]
 > On some computers, you might need to run the command in this format: `./ngrok http 5000`.<br>
