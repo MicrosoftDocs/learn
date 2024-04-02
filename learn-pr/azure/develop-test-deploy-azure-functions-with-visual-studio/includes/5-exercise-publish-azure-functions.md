@@ -43,9 +43,9 @@ In this exercise, you use the Azure portal to create an Azure Function App. Then
     | **Plan** |
     | Plan type | Consumption (Serverless) |
 
-1. Select **Next : Hosting**.
+1. Select **Next : Storage**.
 
-1. On the **Hosting** tab, enter the following values for each setting.
+1. On the **Storage** tab, enter the following values for each setting.
 
     | Setting | Value |
     | ------- | ----- |
