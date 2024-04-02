@@ -3,7 +3,7 @@ uid: learn.wwl.apply-manage-sensitivity-labels
 metadata:
   title: Apply sensitivity labels for data protection
   description: "Apply sensitivity labels for data protection."
-  ms.date: 03/28/2024
+  ms.date: 04/01/2024
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
@@ -38,10 +38,10 @@ units:
 - learn.wwl.apply-manage-sensitivity-labels.sensitivity-label-foundations
 - learn.wwl.apply-manage-sensitivity-labels.apply-sensitivity-labels-to-microsoft-365-services
 - learn.wwl.apply-manage-sensitivity-labels.protect-meetings-with-sensitivity-labels
-- learn.wwl.apply-manage-sensitivity-labels.create
-- learn.wwl.apply-manage-sensitivity-labels.configure-label-polices
-- learn.wwl.apply-manage-sensitivity-labels.apply-to-microsoft-teams-microsoft-365-groups-sharepoint-sites
-- learn.wwl.apply-manage-sensitivity-labels.configure-publish-automatic-labeling-policies
+- learn.wwl.apply-manage-sensitivity-labels.plan-on-premises-labeling
+- learn.wwl.apply-manage-sensitivity-labels.configure-on-premises-labeling-for-unified-labeling-scanner
+- learn.wwl.apply-manage-sensitivity-labels.apply-protections-restrictions-to-email-files
+- learn.wwl.apply-manage-sensitivity-labels.monitor-label-usage-using-label-analytics
 - learn.wwl.apply-manage-sensitivity-labels.knowledge-check
 - learn.wwl.apply-manage-sensitivity-labels.summary-resources
 badge:
