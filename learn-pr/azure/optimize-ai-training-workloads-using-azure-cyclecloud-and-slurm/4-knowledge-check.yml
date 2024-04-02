@@ -62,7 +62,7 @@ quiz:
     - content: "Single-node environments are sufficient for AI training workloads."
       isCorrect: false
       explanation: "AI Training workloads require multi node environments due to the compute requirements of these workloads."  
-    - content: "Premium SSDs aren'tt necessary for OS disks."
+    - content: "Premium SSDs aren't necessary for OS disks."
       isCorrect: false
       explanation: "Premium SSDs are required for OS disks as they provide low latency solutions for your high performance workloads."
     - content: "InfiniBand connectivity is optional for AI training clusters."
