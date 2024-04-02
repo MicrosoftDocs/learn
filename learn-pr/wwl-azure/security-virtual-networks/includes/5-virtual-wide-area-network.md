@@ -31,19 +31,18 @@ Before you can create a virtual wan, you have to create a resource group to host
 
 This example creates a new resource group named **TestRG** in the **East US** location. If you want to use an existing resource group instead, you can modify the `$resourceGroup = Get-AzResourceGroup -ResourceGroupName "NameofResourceGroup"`command, and then complete the steps in this exercise using your own values.<br>
 
-1. Create a resource group.
-
-**Azure PowerShell**
-
-```powershell
-New-AzResourceGroup -Location "East US" -Name "TestRG"
-```
-
-2. Create the virtual wan using the `New-AzVirtualWan`cmdlet.
-
-**Azure PowerShell**
-
-`$virtualWan = New-AzVirtualWan -ResourceGroupName TestRG -Name TestVWAN1 -Location "East US"`
+1.  Create a resource group.
+    
+    **Azure PowerShell**
+    
+    ```powershell
+    New-AzResourceGroup -Location "East US" -Name "TestRG"
+    ```
+2.  Create the virtual wan using the `New-AzVirtualWan`cmdlet.
+    
+    **Azure PowerShell**
+    
+    `$virtualWan = New-AzVirtualWan -ResourceGroupName TestRG -Name TestVWAN1 -Location "East US"`
 
 ## Create the hub and configure hub settings
 
@@ -59,115 +58,108 @@ $virtualHub = New-AzVirtualHub -VirtualWan $virtualWan -ResourceGroupName "TestR
 
 In this section, you create a site-to-site VPN gateway in the same location as the referenced virtual hub. When you create the VPN gateway, you specify the scale units that you want. It takes about 30 minutes for the gateway to create.
 
-1. If you closed Azure Cloud Shell or your connection timed out, you may need to declare the variable again for $virtualHub.
-
-**Azure PowerShell**
-
-```powershell
-$virtualHub = Get-AzVirtualHub -ResourceGroupName "TestRG" -Name "Hub1"
-```
-
-2. Create a VPN gateway using the `New-AzVpnGateway` cmdlet.
-
-**Azure PowerShell**
-
-```powershell
-New-AzVpnGateway -ResourceGroupName "TestRG" -Name "vpngw1" -VirtualHubId $virtualHub.Id -VpnGatewayScaleUnit 2
-```
-
-3. Once your VPN gateway is created, you can view it using the following example.
-
-**Azure PowerShell**
-
-```powershell
-Get-AzVpnGateway -ResourceGroupName "TestRG" -Name "vpngw1"
-```
+1.  If you closed Azure Cloud Shell or your connection timed out, you may need to declare the variable again for $virtualHub.
+    
+    **Azure PowerShell**
+    
+    ```powershell
+    $virtualHub = Get-AzVirtualHub -ResourceGroupName "TestRG" -Name "Hub1"
+    ```
+2.  Create a VPN gateway using the `New-AzVpnGateway` cmdlet.
+    
+    **Azure PowerShell**
+    
+    ```powershell
+    New-AzVpnGateway -ResourceGroupName "TestRG" -Name "vpngw1" -VirtualHubId $virtualHub.Id -VpnGatewayScaleUnit 2
+    ```
+3.  Once your VPN gateway is created, you can view it using the following example.
+    
+    **Azure PowerShell**
+    
+    ```powershell
+    Get-AzVpnGateway -ResourceGroupName "TestRG" -Name "vpngw1"
+    ```
 
 ## Create a site and connections
 
 In this section, you create sites that correspond to your physical locations and the connections. These sites contain your on-premises VPN device endpoints, you can create up to 1000 sites per virtual hub in a virtual WAN. If you have multiple hubs, you can create 1000 per each of those hubs.
 
-1. Set the variable for the VPN gateway and for the IP address space that is located on your on-premises site. Traffic destined for this address space is routed to your local site. This is required when BGP isn't enabled for the site.
-
-**Azure PowerShell**
-
-```powershell
-$vpnGateway = Get-AzVpnGateway -ResourceGroupName "TestRG" -Name "vpngw1"
-```
-
-```powershell
-$vpnSiteAddressSpaces = New-Object string[] 2
-```
-
-```powershell
-$vpnSiteAddressSpaces[0] = "192.168.2.0/24"
-```
-
-```powershell
-$vpnSiteAddressSpaces[1] = "192.168.3.0/24"
-```
-
-2. Create links to add information about the physical links at the branch including metadata about the link speed, link provider name, and the public IP address of the on-premises device.
-
-**Azure PowerShell**
-
-```powershell
-$vpnSiteLink1 = New-AzVpnSiteLink -Name "TestSite1Link1" -IpAddress "15.25.35.45" -LinkProviderName "SomeTelecomProvider" -LinkSpeedInMbps "10"
-```
-
-```powershell
-$vpnSiteLink2 = New-AzVpnSiteLink -Name "TestSite1Link2" -IpAddress "15.25.35.55" -LinkProviderName "SomeTelecomProvider2" -LinkSpeedInMbps "100"
-```
-
-3. Create the VPN site, referencing the variables of the VPN site links you just created.
-
-If you closed Azure Cloud Shell or your connection timed out, redeclare the virtual WAN variable:<br>
-
-**Azure PowerShell**
-
-```powershell
-$virtualWan = Get-AzVirtualWAN -ResourceGroupName "TestRG" -Name "TestVWAN1"
-```
-
-4. Create the VPN site using the `New-AzVpnSite` cmdlet.
-
-5. Create the site link connection. The connection is composed of two active-active tunnels from a branch/site to the scalable gateway.
-
-**Azure PowerShell**
-
-```powershell
-$vpnSiteLinkConnection1 = New-AzVpnSiteLinkConnection -Name "TestLinkConnection1" -VpnSiteLink $vpnSite.VpnSiteLinks[0] -ConnectionBandwidth 100
-```
-
-`$vpnSiteLinkConnection2 = New-AzVpnSiteLinkConnection -Name "testLinkConnection2" -VpnSiteLink $vpnSite.VpnSiteLinks[1] -ConnectionBandwidth 10`
+1.  Set the variable for the VPN gateway and for the IP address space that is located on your on-premises site. Traffic destined for this address space is routed to your local site. This is required when BGP isn't enabled for the site.
+    
+    **Azure PowerShell**
+    
+    ```powershell
+    $vpnGateway = Get-AzVpnGateway -ResourceGroupName "TestRG" -Name "vpngw1"
+    ```
+    
+    ```powershell
+    $vpnSiteAddressSpaces = New-Object string[] 2
+    ```
+    
+    ```powershell
+    $vpnSiteAddressSpaces[0] = "192.168.2.0/24"
+    ```
+    
+    ```powershell
+    $vpnSiteAddressSpaces[1] = "192.168.3.0/24"
+    ```
+2.  Create links to add information about the physical links at the branch including metadata about the link speed, link provider name, and the public IP address of the on-premises device.
+    
+    **Azure PowerShell**
+    
+    ```powershell
+    $vpnSiteLink1 = New-AzVpnSiteLink -Name "TestSite1Link1" -IpAddress "15.25.35.45" -LinkProviderName "SomeTelecomProvider" -LinkSpeedInMbps "10"
+    ```
+    
+    ```powershell
+    $vpnSiteLink2 = New-AzVpnSiteLink -Name "TestSite1Link2" -IpAddress "15.25.35.55" -LinkProviderName "SomeTelecomProvider2" -LinkSpeedInMbps "100"
+    ```
+3.  Create the VPN site, referencing the variables of the VPN site links you just created.
+    
+    If you closed Azure Cloud Shell or your connection timed out, redeclare the virtual WAN variable:<br>
+    
+    **Azure PowerShell**
+    
+    ```powershell
+    $virtualWan = Get-AzVirtualWAN -ResourceGroupName "TestRG" -Name "TestVWAN1"
+    ```
+4.  Create the VPN site using the `New-AzVpnSite` cmdlet.
+5.  Create the site link connection. The connection is composed of two active-active tunnels from a branch/site to the scalable gateway.
+    
+    **Azure PowerShell**
+    
+    ```powershell
+    $vpnSiteLinkConnection1 = New-AzVpnSiteLinkConnection -Name "TestLinkConnection1" -VpnSiteLink $vpnSite.VpnSiteLinks[0] -ConnectionBandwidth 100
+    ```
+    
+    `$vpnSiteLinkConnection2 = New-AzVpnSiteLinkConnection -Name "testLinkConnection2" -VpnSiteLink $vpnSite.VpnSiteLinks[1] -ConnectionBandwidth 10`
 
 ## Connect the VPN site to a hub
 
 Connect your VPN site to the hub site-to-site VPN gateway using the New-AzVpnConnection cmdlet.
 
-1. Before running the command, you may need to redeclare the following variables:
-
-**Azure PowerShell**
-
-```powershell
-$virtualWan = Get-AzVirtualWAN -ResourceGroupName "TestRG" -Name "TestVWAN1"
-```
-
-```powershell
-$vpnGateway = Get-AzVpnGateway -ResourceGroupName "TestRG" -Name "vpngw1"
-```
-
-```powershell
-$vpnSite = Get-AzVpnSite -ResourceGroupName "TestRG" -Name "TestSite1"
-```
-
-2. Connect the VPN site to the hub.
-
-**Azure PowerShell**
-
-```powershell
-New-AzVpnConnection -ResourceGroupName $vpnGateway.ResourceGroupName -ParentResourceName $vpnGateway.Name -Name "testConnection" -VpnSite $vpnSite -VpnSiteLinkConnection @($vpnSiteLinkConnection1, $vpnSiteLinkConnection2)
-```
+1.  Before running the command, you may need to redeclare the following variables:
+    
+    **Azure PowerShell**
+    
+    ```powershell
+    $virtualWan = Get-AzVirtualWAN -ResourceGroupName "TestRG" -Name "TestVWAN1"
+    ```
+    
+    ```powershell
+    $vpnGateway = Get-AzVpnGateway -ResourceGroupName "TestRG" -Name "vpngw1"
+    ```
+    
+    ```powershell
+    $vpnSite = Get-AzVpnSite -ResourceGroupName "TestRG" -Name "TestSite1"
+    ```
+2.  Connect the VPN site to the hub.
+    
+    **Azure PowerShell**
+    
+    ```powershell
+    New-AzVpnConnection -ResourceGroupName $vpnGateway.ResourceGroupName -ParentResourceName $vpnGateway.Name -Name "testConnection" -VpnSite $vpnSite -VpnSiteLinkConnection @($vpnSiteLinkConnection1, $vpnSiteLinkConnection2)
+    ```
 
 ## Connect a VNet to your hub
 
@@ -177,73 +169,71 @@ The next step is to connect the hub to the VNet. If you created a new resource g
 
 You can use the following example values to create a VNet. Make sure to substitute the values in the examples for the values you used for your environment.
 
-1. Create a VNet.
-
-**Azure PowerShell**
-
-```powershell
-$vnet = @{
-```
-
-```powershell
-   Name = 'VNet1'
-```
-
-```powershell
-   ResourceGroupName = 'TestRG'
-```
-
-```powershell
-   Location = 'eastus'
-```
-
-```powershell
-   AddressPrefix = '10.21.0.0/16'
-```
-
-```powershell
-}
-```
-
-```powershell
-$virtualNetwork = New-AzVirtualNetwork @vnet
-```
-
-2. Specify subnet settings.
-
-**Azure PowerShell**
-
-```powershell
-$subnet = @{
-```
-
-```powershell
-   Name = 'Subnet-1'
-```
-
-```powershell
-   VirtualNetwork = $virtualNetwork
-```
-
-```powershell
-   AddressPrefix = '10.21.0.0/24'
-```
-
-```powershell
-}
-```
-
-```powershell
-$subnetConfig = Add-AzVirtualNetworkSubnetConfig @subnet
-```
-
-3. Set the VNet.
-
-**Azure PowerShell**
-
-```powershell
-$virtualNetwork | Set-AzVirtualNetwork
-```
+1.  Create a VNet.
+    
+    **Azure PowerShell**
+    
+    ```powershell
+    $vnet = @{
+    ```
+    
+    ```powershell
+      Name = 'VNet1'
+    ```
+    
+    ```powershell
+      ResourceGroupName = 'TestRG'
+    ```
+    
+    ```powershell
+      Location = 'eastus'
+    ```
+    
+    ```powershell
+      AddressPrefix = '10.21.0.0/16'
+    ```
+    
+    ```powershell
+    }
+    ```
+    
+    ```powershell
+    $virtualNetwork = New-AzVirtualNetwork @vnet
+    ```
+2.  Specify subnet settings.
+    
+    **Azure PowerShell**
+    
+    ```powershell
+    $subnet = @{
+    ```
+    
+    ```powershell
+      Name = 'Subnet-1'
+    ```
+    
+    ```powershell
+      VirtualNetwork = $virtualNetwork
+    ```
+    
+    ```powershell
+      AddressPrefix = '10.21.0.0/24'
+    ```
+    
+    ```powershell
+    }
+    ```
+    
+    ```powershell
+    $subnetConfig = Add-AzVirtualNetworkSubnetConfig @subnet
+    ```
+3.  Set the VNet.
+    
+    **Azure PowerShell**
+    
+    ```powershell
+    $virtualNetwork | Set-AzVirtualNetwork
+    ```
 
 ### Connect a VNet to a hub
 
@@ -259,29 +249,28 @@ If VPN gateways are present in the virtual hub, this operation as well as any ot
 
 ### Add a connection
 
-1. Declare the variables for the existing resources, including the existing virtual network.
-
-```powershell
-$resourceGroup = Get-AzResourceGroup -ResourceGroupName "TestRG" 
-```
-
-```powershell
-$virtualWan = Get-AzVirtualWan -ResourceGroupName "TestRG" -Name "TestVWAN1"
-```
-
-```powershell
-$virtualHub = Get-AzVirtualHub -ResourceGroupName "TestRG" -Name "Hub1"
-```
-
-```powershell
-$remoteVirtualNetwork = Get-AzVirtualNetwork -Name "VNet1" -ResourceGroupName "TestRG"
-```
-
-2. Create a connection to peer the virtual network to the virtual hub.
-
-```powershell
-New-AzVirtualHubVnetConnection -ResourceGroupName "TestRG" -VirtualHubName "Hub1" -Name "VNet1-connection" -RemoteVirtualNetwork $remoteVirtualNetwork
-```
+1.  Declare the variables for the existing resources, including the existing virtual network.
+    
+    ```powershell
+    $resourceGroup = Get-AzResourceGroup -ResourceGroupName "TestRG"
+    ```
+    
+    ```powershell
+    $virtualWan = Get-AzVirtualWan -ResourceGroupName "TestRG" -Name "TestVWAN1"
+    ```
+    
+    ```powershell
+    $virtualHub = Get-AzVirtualHub -ResourceGroupName "TestRG" -Name "Hub1"
+    ```
+    
+    ```powershell
+    $remoteVirtualNetwork = Get-AzVirtualNetwork -Name "VNet1" -ResourceGroupName "TestRG"
+    ```
+2.  Create a connection to peer the virtual network to the virtual hub.
+    
+    ```powershell
+    New-AzVirtualHubVnetConnection -ResourceGroupName "TestRG" -VirtualHubName "Hub1" -Name "VNet1-connection" -RemoteVirtualNetwork $remoteVirtualNetwork
+    ```
 
 ### Configure VPN device
 
@@ -315,7 +304,7 @@ The device configuration file contains the settings to use when configuring your
      -  Example:
          -  `"ConnectedSubnets":["10.2.0.0/16","10.3.0.0/16"]`
 
- -  **IP address space o**f the virtual hub vpngateway. Because each vpngateway connection is composed of two tunnels in active-active configuration, you'll see both IP addresses listed in this file. In this example, you see "Instance0" and "Instance1" for each site.
+ -  **IP address space** of the virtual hub vpngateway. Because each vpngateway connection is composed of two tunnels in active-active configuration, you'll see both IP addresses listed in this file. In this example, you see "Instance0" and "Instance1" for each site.
      -  Example:
          -  `"Instance0":"104.45.18.186"`
          -  `"Instance1":"104.45.13.195"`
@@ -325,35 +314,19 @@ The device configuration file contains the settings to use when configuring your
 #### Example device configuration file
 
 ```powershell
-{ 
+{
 ```
 
 ```powershell
-      "configurationVersion":{ 
+      "configurationVersion":{
 ```
 
 ```powershell
-         "LastUpdatedTime":"2018-07-03T18:29:49.8405161Z",
+        "LastUpdatedTime":"2018-07-03T18:29:49.8405161Z",
 ```
 
 ```powershell
-         "Version":"r403583d-9c82-4cb8-8570-1cbbcd9983b5"
-```
-
-```powershell
-      },
-```
-
-```powershell
-      "vpnSiteConfiguration":{ 
-```
-
-```powershell
-         "Name":"testsite1",
-```
-
-```powershell
-         "IPAddress":"73.239.3.208"
+        "Version":"r403583d-9c82-4cb8-8570-1cbbcd9983b5"
 ```
 
 ```powershell
@@ -361,27 +334,43 @@ The device configuration file contains the settings to use when configuring your
 ```
 
 ```powershell
-      "vpnSiteConnections":[ 
+      "vpnSiteConfiguration":{
 ```
 
 ```powershell
-         { 
+        "Name":"testsite1",
 ```
 
 ```powershell
-            "hubConfiguration":{ 
+        "IPAddress":"73.239.3.208"
 ```
 
 ```powershell
-               "AddressSpace":"10.1.0.0/24",
+      },
 ```
 
 ```powershell
-               "Region":"West Europe",
+      "vpnSiteConnections":[
 ```
 
 ```powershell
-               "ConnectedSubnets":[ 
+        {
+```
+
+```powershell
+            "hubConfiguration":{
+```
+
+```powershell
+              "AddressSpace":"10.1.0.0/24",
+```
+
+```powershell
+              "Region":"West Europe",
+```
+
+```powershell
+              "ConnectedSubnets":[
 ```
 
 ```powershell
@@ -393,7 +382,7 @@ The device configuration file contains the settings to use when configuring your
 ```
 
 ```powershell
-               ]
+              ]
 ```
 
 ```powershell
@@ -401,11 +390,11 @@ The device configuration file contains the settings to use when configuring your
 ```
 
 ```powershell
-            "gatewayConfiguration":{ 
+            "gatewayConfiguration":{
 ```
 
 ```powershell
-               "IpAddresses":{ 
+              "IpAddresses":{
 ```
 
 ```powershell
@@ -417,7 +406,7 @@ The device configuration file contains the settings to use when configuring your
 ```
 
 ```powershell
-               }
+              }
 ```
 
 ```powershell
@@ -425,19 +414,19 @@ The device configuration file contains the settings to use when configuring your
 ```
 
 ```powershell
-            "connectionConfiguration":{ 
+            "connectionConfiguration":{
 ```
 
 ```powershell
-               "IsBgpEnabled":false,
+              "IsBgpEnabled":false,
 ```
 
 ```powershell
-               "PSK":"bkOWe5dPPqkx0DfFE3tyuP7y3oYqAEbI",
+              "PSK":"bkOWe5dPPqkx0DfFE3tyuP7y3oYqAEbI",
 ```
 
 ```powershell
-               "IPsecParameters":{ 
+              "IPsecParameters":{
 ```
 
 ```powershell
@@ -449,7 +438,7 @@ The device configuration file contains the settings to use when configuring your
 ```
 
 ```powershell
-               }
+              }
 ```
 
 ```powershell
@@ -457,7 +446,7 @@ The device configuration file contains the settings to use when configuring your
 ```
 
 ```powershell
-         }
+        }
 ```
 
 ```powershell
@@ -465,39 +454,23 @@ The device configuration file contains the settings to use when configuring your
 ```
 
 ```powershell
-   },
+  },
 ```
 
 ```powershell
-   { 
+  {
 ```
 
 ```powershell
-      "configurationVersion":{ 
+      "configurationVersion":{
 ```
 
 ```powershell
-         "LastUpdatedTime":"2018-07-03T18:29:49.8405161Z",
+        "LastUpdatedTime":"2018-07-03T18:29:49.8405161Z",
 ```
 
 ```powershell
-         "Version":"1f33f891-e1ab-42b8-8d8c-c024d337bcac"
-```
-
-```powershell
-      },
-```
-
-```powershell
-      "vpnSiteConfiguration":{ 
-```
-
-```powershell
-         "Name":" testsite2",
-```
-
-```powershell
-         "IPAddress":"66.193.205.122"
+        "Version":"1f33f891-e1ab-42b8-8d8c-c024d337bcac"
 ```
 
 ```powershell
@@ -505,23 +478,39 @@ The device configuration file contains the settings to use when configuring your
 ```
 
 ```powershell
-      "vpnSiteConnections":[ 
+      "vpnSiteConfiguration":{
 ```
 
 ```powershell
-         { 
+        "Name":" testsite2",
 ```
 
 ```powershell
-            "hubConfiguration":{ 
+        "IPAddress":"66.193.205.122"
 ```
 
 ```powershell
-               "AddressSpace":"10.1.0.0/24",
+      },
 ```
 
 ```powershell
-               "Region":"West Europe"
+      "vpnSiteConnections":[
+```
+
+```powershell
+        {
+```
+
+```powershell
+            "hubConfiguration":{
+```
+
+```powershell
+              "AddressSpace":"10.1.0.0/24",
+```
+
+```powershell
+              "Region":"West Europe"
 ```
 
 ```powershell
@@ -529,11 +518,11 @@ The device configuration file contains the settings to use when configuring your
 ```
 
 ```powershell
-            "gatewayConfiguration":{ 
+            "gatewayConfiguration":{
 ```
 
 ```powershell
-               "IpAddresses":{ 
+              "IpAddresses":{
 ```
 
 ```powershell
@@ -545,7 +534,7 @@ The device configuration file contains the settings to use when configuring your
 ```
 
 ```powershell
-               }
+              }
 ```
 
 ```powershell
@@ -553,19 +542,19 @@ The device configuration file contains the settings to use when configuring your
 ```
 
 ```powershell
-            "connectionConfiguration":{ 
+            "connectionConfiguration":{
 ```
 
 ```powershell
-               "IsBgpEnabled":false,
+              "IsBgpEnabled":false,
 ```
 
 ```powershell
-               "PSK":"XzODPyAYQqFs4ai9WzrJour0qLzeg7Qg",
+              "PSK":"XzODPyAYQqFs4ai9WzrJour0qLzeg7Qg",
 ```
 
 ```powershell
-               "IPsecParameters":{ 
+              "IPsecParameters":{
 ```
 
 ```powershell
@@ -577,7 +566,7 @@ The device configuration file contains the settings to use when configuring your
 ```
 
 ```powershell
-               }
+              }
 ```
 
 ```powershell
@@ -585,7 +574,7 @@ The device configuration file contains the settings to use when configuring your
 ```
 
 ```powershell
-         }
+        }
 ```
 
 ```powershell
@@ -593,39 +582,23 @@ The device configuration file contains the settings to use when configuring your
 ```
 
 ```powershell
-   },
+  },
 ```
 
 ```powershell
-   { 
+  {
 ```
 
 ```powershell
-      "configurationVersion":{ 
+      "configurationVersion":{
 ```
 
 ```powershell
-         "LastUpdatedTime":"2018-07-03T18:29:49.8405161Z",
+        "LastUpdatedTime":"2018-07-03T18:29:49.8405161Z",
 ```
 
 ```powershell
-         "Version":"cd1e4a23-96bd-43a9-93b5-b51c2a945c7"
-```
-
-```powershell
-      },
-```
-
-```powershell
-      "vpnSiteConfiguration":{ 
-```
-
-```powershell
-         "Name":" testsite3",
-```
-
-```powershell
-         "IPAddress":"182.71.123.228"
+        "Version":"cd1e4a23-96bd-43a9-93b5-b51c2a945c7"
 ```
 
 ```powershell
@@ -633,23 +606,39 @@ The device configuration file contains the settings to use when configuring your
 ```
 
 ```powershell
-      "vpnSiteConnections":[ 
+      "vpnSiteConfiguration":{
 ```
 
 ```powershell
-         { 
+        "Name":" testsite3",
 ```
 
 ```powershell
-            "hubConfiguration":{ 
+        "IPAddress":"182.71.123.228"
 ```
 
 ```powershell
-               "AddressSpace":"10.1.0.0/24",
+      },
 ```
 
 ```powershell
-               "Region":"West Europe"
+      "vpnSiteConnections":[
+```
+
+```powershell
+        {
+```
+
+```powershell
+            "hubConfiguration":{
+```
+
+```powershell
+              "AddressSpace":"10.1.0.0/24",
+```
+
+```powershell
+              "Region":"West Europe"
 ```
 
 ```powershell
@@ -657,11 +646,11 @@ The device configuration file contains the settings to use when configuring your
 ```
 
 ```powershell
-            "gatewayConfiguration":{ 
+            "gatewayConfiguration":{
 ```
 
 ```powershell
-               "IpAddresses":{ 
+              "IpAddresses":{
 ```
 
 ```powershell
@@ -673,7 +662,7 @@ The device configuration file contains the settings to use when configuring your
 ```
 
 ```powershell
-               }
+              }
 ```
 
 ```powershell
@@ -681,19 +670,19 @@ The device configuration file contains the settings to use when configuring your
 ```
 
 ```powershell
-            "connectionConfiguration":{ 
+            "connectionConfiguration":{
 ```
 
 ```powershell
-               "IsBgpEnabled":false,
+              "IsBgpEnabled":false,
 ```
 
 ```powershell
-               "PSK":"YLkSdSYd4wjjEThR3aIxaXaqNdxUwSo9",
+              "PSK":"YLkSdSYd4wjjEThR3aIxaXaqNdxUwSo9",
 ```
 
 ```powershell
-               "IPsecParameters":{ 
+              "IPsecParameters":{
 ```
 
 ```powershell
@@ -705,7 +694,7 @@ The device configuration file contains the settings to use when configuring your
 ```
 
 ```powershell
-               }
+              }
 ```
 
 ```powershell
@@ -713,7 +702,7 @@ The device configuration file contains the settings to use when configuring your
 ```
 
 ```powershell
-         }
+        }
 ```
 
 ```powershell
@@ -721,7 +710,7 @@ The device configuration file contains the settings to use when configuring your
 ```
 
 ```powershell
-   }
+  }
 ```
 
 #### Configure your VPN device
