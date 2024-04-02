@@ -16,21 +16,13 @@ summary: This module is designed to provide administrators with the knowledge an
 abstract: |
   By the end of this module, participants will be able to:
 
-  -
+  -   Enhance Azure compute resources' security against vulnerabilities and attacks with advanced measures.
 
-  Enhance Azure compute resources' security against vulnerabilities and attacks with advanced measures.
+  -   Secure remote access via Azure Bastion and JIT VM access, and implement network isolation for AKS.
 
-  -
+  -   Strengthen AKS clusters' security, monitor Azure Container Instances and Apps, and manage access to Azure Container Registry.
 
-  Secure remote access via Azure Bastion and JIT VM access, and implement network isolation for AKS.
-
-  -
-
-  Strengthen AKS clusters' security, monitor Azure Container Instances and Apps, and manage access to Azure Container Registry.
-
-  -
-
-  Implement disk encryption methods like ADE and manage API access securely in Azure API Management.
+  -   Implement disk encryption methods like ADE and manage API access securely in Azure API Management.
 prerequisites: '-   None'
 iconUrl: /training/achievements/generic-badge.svg
 levels:

@@ -133,28 +133,24 @@ Instead of manually defining credentials for pods, pod-managed identities reques
 
 When pods request a security token from Microsoft Entra ID to access to an Azure resource, network rules redirect the traffic to the NMI server.
 
-1. The NMI server:
-
- -  Identifies pods requesting access to Azure resources based on their remote address.
- -  Queries the Azure Resource Provider.
-
-2. The Azure Resource Provider checks for Azure identity mappings in the AKS cluster.
-
-3. The NMI server requests an access token from Microsoft Entra ID based on the pod's identity mapping.
-
-4. Microsoft Entra ID provides access to the NMI server, which is returned to the pod.
-
- -  This access token can be used by the pod to then request access to resources in Azure.
+1.  The NMI server:
+    
+    
+     -  Identifies pods requesting access to Azure resources based on their remote address.
+     -  Queries the Azure Resource Provider.
+2.  The Azure Resource Provider checks for Azure identity mappings in the AKS cluster.
+3.  The NMI server requests an access token from Microsoft Entra ID based on the pod's identity mapping.
+4.  Microsoft Entra ID provides access to the NMI server, which is returned to the pod.
+    
+    
+     -  This access token can be used by the pod to then request access to resources in Azure.
 
 In the following example, a developer creates a pod that uses a managed identity to request access to Azure SQL Database:
 
 :::image type="content" source="../media/kubernetes-identities-pod-example-88bc394b.png" alt-text="Diagram showing an example of how a developer creates a pod that uses a managed identity.":::
 
 
-1. Cluster operator creates a service account to map identities when pods request access to resources.
-
-2. The NMI server is deployed to relay any pod requests, along with the Azure Resource Provider, for access tokens to Microsoft Entra ID.
-
-3. A developer deploys a pod with a managed identity that requests an access token through the NMI server.
-
-4. The token is returned to the pod and used to access Azure SQL Database
+1.  Cluster operator creates a service account to map identities when pods request access to resources.
+2.  The NMI server is deployed to relay any pod requests, along with the Azure Resource Provider, for access tokens to Microsoft Entra ID.
+3.  A developer deploys a pod with a managed identity that requests an access token through the NMI server.
+4.  The token is returned to the pod and used to access Azure SQL Database
