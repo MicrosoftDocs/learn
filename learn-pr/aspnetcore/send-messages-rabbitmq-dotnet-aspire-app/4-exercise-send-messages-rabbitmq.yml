@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.send-messages-rabbitmq-dotnet-aspire-app.exercise-send-messages-rabbitmq
+title: Exercise - Send messages between microservices through RabbitMQ
+metadata:
+  title: Exercise - Send messages between microservices through RabbitMQ
+  description: In this unit, you'll add a RabbitMQ backing service to the Northern Mountains website, and use it to exchange messages between microservices.
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-send-messages-rabbitmq.md)]

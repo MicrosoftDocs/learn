@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.send-messages-rabbitmq-dotnet-aspire-app.what-rabbitmq
+title: What is RabbitMQ?
+metadata:
+  title: What is RabbitMQ?
+  description: In this unit, you'll learn about the importance of message queues in cloud-native apps and how the RabbitMQ message broker can help to create robust communications between microservices.
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-what-rabbitmq.md)]

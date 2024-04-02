@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.send-messages-rabbitmq-dotnet-aspire-app.send-messages-rabbitmq
+title: Sending messages with RabbitMQ
+metadata:
+  title: Sending messages with RabbitMQ
+  description: In this unit, you'll learn how to use .NET Aspire to configure and connect to a RabbitMQ service from a cloud-native app.
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-send-messages-rabbitmq.md)]

@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.send-messages-rabbitmq-dotnet-aspire-app.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: In this introductory unit, you'll see a business scenario that can be addressed by using RabbitMQ messaging and the .NET Aspire stack to optimize a cloud-native application.
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
