@@ -93,9 +93,13 @@ After registering the certificate with your application in the application regis
 
 Optionally, you can create a self-signed certificate for *testing purposes only*. To create a self-signed certificate, open Windows PowerShell and run **New-SelfSignedCertificate** with the following parameters to create the certificate in the user certificate store on your computer:
 
-`PowerShell`
+```powershell
+PowerShell
+```
 
-`$cert=New-SelfSignedCertificate -Subject "CN=DaemonConsoleCert" -CertStoreLocation "Cert:\CurrentUser\My" -KeyExportPolicy Exportable -KeySpec Signature`
+```powershell
+$cert=New-SelfSignedCertificate -Subject "CN=DaemonConsoleCert" -CertStoreLocation "Cert:\CurrentUser\My"  -KeyExportPolicy Exportable -KeySpec Signature
+```
 
 Export this certificate to a file using the **Manage User Certificate** MMC snap-in accessible from the Windows Control Panel.
 
