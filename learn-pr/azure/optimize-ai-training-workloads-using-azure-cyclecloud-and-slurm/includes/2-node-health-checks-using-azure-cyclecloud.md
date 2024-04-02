@@ -38,7 +38,7 @@ The following are Azure custom checks added to the existing NHC suite of tests:
 | **check_gpu_xid** | GPU XID errors | not present | not present | not present | NA | NA |
 | **check_nvsmi_healthmon** | Nvidia-smi GPU health check | pass | pass | pass | NA | NA |
 | **check_gpu_bandwidth** | GPU DtH/HtD bandwidth | 23 GB/s | 23 GB/s | 52 GB/s | NA | NA |
-| **check_gpu_ecc** | GPU Mem Errors (ECC) | 20000000 | 20000000 | 20000000 | NA | NA |
+| **check_gpu_ecc** | GPU Memory Errors (ECC) | 20 GB | 20 GB | 20 GB | NA | NA |
 | **check_gpu_clock_throttling** | GPU Throttle codes assertion | not present | not present | not present | NA | NA |
 | **check_nccl_allreduce** | GPU NVLink bandwidth | 228 GB/s | 228 GB/s | 460 GB/s | NA | NA |
 | **check_ib_bw_gdr** | IB device (GDR) bandwidth | 180 GB/s | 180 GB/s | 380 GB/s | NA | NA |
@@ -46,7 +46,7 @@ The following are Azure custom checks added to the existing NHC suite of tests:
 | **check_nccl_allreduce_ib_loopback** | GPU/GPU Direct RDMA(GDR) + IB device bandwidth | 18 GB/s | 18 GB/s | NA | NA | NA |
 | **check_hw_topology** | IB/GPU device topology/PCIE mapping | pass | pass | pass | NA | NA |
 | **check_ib_link_flapping** | IB link flap occurrence | not present | not present | not present | not present | not present |
-| **check_cpu_stream** | CPU compute/memory bandwidth | NA | NA | NA | 665500 MB/s | 665500 MB/s |
+| **check_cpu_stream** | CPU compute/memory bandwidth | NA | NA | NA | 665 GB/s | 665 GB/s |
 
 Table doesn't list all the supported SKUs. The scripts for all tests can be found in the [custom test directory](https://github.com/Azure/azurehpc-health-checks/blob/main/customTests).
 
