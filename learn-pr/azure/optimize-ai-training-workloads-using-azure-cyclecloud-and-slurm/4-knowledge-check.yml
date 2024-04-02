@@ -16,13 +16,13 @@ quiz:
     choices:
     - content: "The user must resubmit the job."
       isCorrect: false
-      explanation: "Resubmitting the job won't fix the unhealthy nodes."
+      explanation: "Resubmitting the job doesn't fix the unhealthy nodes."
     - content: "The user must terminate the cluster and recreate it."
       isCorrect: false
-      explanation: "Terminating and recreating the cluster isn't necessary as overprovisioning will allocate a healthy node to the cluster."
+      explanation: "Terminating and recreating the cluster isn't necessary as overprovisioning allocates a healthy node to the cluster."
     - content: "Overprovisioning allocates a healthy node to the cluster in place."
       isCorrect: true
-      explanation: "The node fails in health checks in an CycleCloud cluster when its allocated overprovisioningly."
+      explanation: "The node fails in health checks in a CycleCloud cluster when it's overprovisioned."
   - content: "When can a user run the Node Health Check in an Azure CycleCloud cluster?"
     choices:
     - content: "During Slurm cluster creation via the CycleCloud web portal."
@@ -36,12 +36,12 @@ quiz:
       explanation: "Users can't manually run the NHC when nodes are down as NHC automatically run when new nodes are added to the cluster."
     - content: "Node health checks run automatically when new nodes are added to the cluster."
       isCorrect: true
-      explanation: "NHCs can't be run manually and are automatically run when new nodes are added to the cluster when its enabled during cluster creation. "
+      explanation: "NHCs can't be run manually and are automatically run when new nodes are added to the cluster when it's enabled during cluster creation."
   - content: "Which Azure service is designed for handling the most demanding, high-performance, low-latency workloads requiring advanced data management capabilities?"
     choices:
     - content: "Azure Files."
       isCorrect: false
-      explanation: "Azure files is not suitable for hpc, low latency workloads. Azure Files provide cloud-based file storage, allowing users to create and manage file shares accessible over  SMB and NFS, suitable for replacing on-premises file servers or simplifying cloud development projects."
+      explanation: "Azure files are not suitable for HPC, low latency workloads. They provide cloud-based file storage, allowing users to create and manage file shares accessible over SMB and NFS, suitable for replacing on-premises file servers."
     - content: "Azure NetApp Files (ANF)."
       isCorrect: false
       explanation: "Answers B & C both apply."  
@@ -58,7 +58,7 @@ quiz:
     choices:
     - content: "Distributed training requires a multi-node environment with a minimum of 4 GPUs."
       isCorrect: true
-      explanation: "Running AI training workloads, requires multi-node environment with a minimum 4 high performing GPUs."
+      explanation: "To run AI training workloads, it requires multi-node environment with a minimum 4 high performing GPUs."
     - content: "Single-node environments are sufficient for AI training workloads."
       isCorrect: false
       explanation: "AI Training workloads require multi node environments due to the compute requirements of these workloads."  
@@ -84,4 +84,4 @@ quiz:
       explanation: "All of the answers A, B, C & D apply to be benefits for choosing a Premium SSD for your AI training workload."
     - content: "All of the Above."
       isCorrect: true
-      explanation: "Choosing Premium SSD option enables faster data access, reduced latency with shorter training times and fater model convergence. It proces improved calability and parallelism with enhanced support for generative AI and LLMs."
+      explanation: "Choosing Premium SSD option enables faster data access, reduced latency with shorter training times, and faster model convergence. It proces improved calability and parallelism with enhanced support for generative AI and LLMs."
