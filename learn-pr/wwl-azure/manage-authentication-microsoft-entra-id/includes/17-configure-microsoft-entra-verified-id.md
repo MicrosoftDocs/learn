@@ -143,7 +143,7 @@ JSON
 
 ## Run and test the sample app
 
-Now you are ready to present and verify your first verified credential expert card by running the sample application.
+Now you're ready to present and verify your first verified credential expert card by running the sample application.
 
 1. From Visual Studio Code, run the *Verifiable\_credentials\_DotNet* project. Or from the command shell, run the following commands:
 
@@ -184,7 +184,7 @@ ngrok http 5000
 
 5. Using Authenticator, scan the QR code, or scan it directly from your mobile camera.
 
-6. When you see the warning message, *This app or website may be risky*, select **Advanced**. You are seeing this warning because your domain isn't verified. For this example, you can skip the domain registration.<br>
+6. When you see the warning message, *This app or website may be risky*, select **Advanced**. You're seeing this warning because your domain isn't verified. For this example, you can skip the domain registration.<br>
 
     :::image type="content" source="../media/at-risk-3e120e91.png" alt-text="Screenshot showing the application or website may be risky.":::
 
