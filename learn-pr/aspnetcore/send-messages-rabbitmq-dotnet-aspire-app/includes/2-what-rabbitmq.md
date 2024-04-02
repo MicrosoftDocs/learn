@@ -6,19 +6,19 @@ In this unit, you'll see how RabbitMQ can create a flexible and resilient commun
 
 ## Why use a message broker in a cloud-native app?
 
-Cloud-native apps consist of independent microservices, often built by separate teams and using different technologies and languages. Teams have their own development sprints and upgrade schedules and may deploy fixes and new features continuously. However, when a request arrives from a user, the microservice that receives it will almost always need to call other microservices and backing services and receive replies from them to formulate the complete response.
+Cloud-native apps consist of independent microservices, often built by separate teams and using different technologies and languages. Each team has its own development sprints and upgrade schedules and may deploy fixes and new features continuously. However, when a request arrives from a user, the microservice that receives it almost always needs to call other microservices and backing services and receive replies from them to formulate the complete response.
 
-Obviously the format and schema of these inter-service requests and responses must be agreed between the development teams and change rarely. They are usually implemented as REST APIs. You should usually implement new features of each interface without altering existing methods and parameters. However, if you choose to have microservices communicate directly, several issues can arise:
+Obviously the format and schema of these inter-service requests and responses must be agreed between the development teams and change rarely. They're usually implemented as REST APIs. You should usually implement new features of each interface without altering existing methods and parameters. However, if you choose to have microservices communicate directly, several issues can arise:
 
 - When a destination microservice is offline or busy, what happens to messages sent to it? What are the consequences of messages being lost?
 - How can you send the same message to more than one destination?
 - If a microservice is running on more than one container, which should you send messages to?
 
-A message broker is middleware that addresses these issues. Services send messages to the message broker instead of directly to a destination. They are stored in queues in the order in which they arrived. Destination services subscribe to these queues and pick up messages, one at a time, for processing.
+A message broker is middleware that addresses these issues. Services send messages to the message broker instead of directly to a destination. They're stored in queues in the order in which they arrived. Destination services subscribe to these queues and pick up messages, one at a time, for processing.
 
-If the destination service is unavailable, the sending microservice can still place messages in the queue. When the destination restarts, it continues to pick up messages from the queue, from the point it had previously reached. No messages are lost, although the sender has to wait for longer.
+If the destination service is unavailable, the sending microservice can still place messages in the queue. When the destination restarts, it continues to pick up messages from the queue, from the same point. No messages are lost, although the sender has to wait for longer.
 
-Because more than one destination can subscribe to a queue, a single message can be received by more than one microservice. Furthermore, when multiple containers host instances of a single microservice, the message is picked up by the first instance that becomes available and the broker automatically distributed messages to instances to spread the load.
+Because more than one destination can subscribe to a queue, a single message can be received by more than one microservice. Furthermore, when multiple containers host instances of a single microservice, the first instance that becomes available picks up the message. The broker automatically distributes messages to instances to spread the load.
 
 ## What is RabbitMQ?
 

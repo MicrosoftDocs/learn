@@ -25,14 +25,14 @@ quiz:
     - content: "Fanout"
       isCorrect: true
       explanation: "Correct. When you use a fanout exchange, messages are copied to all the subscribers."
-  - content: "You've added a RabbitMQ container in your AppHost project and passed it to a consuming project. In the consumer, how can you obtain a connection to the RabbitMQ service?"
+  - content: "You add a RabbitMQ container in your AppHost project and pass it to a consuming project. In the consumer, how can you obtain a connection to the RabbitMQ service?"
     choices:
     - content: "Call the AddRabbitMQ() method and then use dependency injection."
       isCorrect: true
-      explanation: "Correct. Once you've called the AddRabbitMQ() method you can get the connection that the AppHost passed to your consuming project by using dependency injection in the object where you want to send or receive messages."
+      explanation: "Correct. Once you've called the AddRabbitMQ() method, you can get the connection that the AppHost passed to your consuming project by using dependency injection in the object where you want to send or receive messages."
     - content: "Call the AddRabbitMQContainer() method."
       isCorrect: false
       explanation: "Incorrect. You use the AddRabbitMQContainer() method in the AppHost to create a RabbitMQ service, not in the consuming project."
     - content: "Call the CreateModel() method."
       isCorrect: false
-      explanation: "Incorrect. You use the CreateModel() method to set up a messaging channel after you have obtained the connection."
+      explanation: "Incorrect. You use the CreateModel() method to set up a messaging channel after you obtain the connection."

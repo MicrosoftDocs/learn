@@ -53,7 +53,7 @@ var channel = connection.CreateModel();
 
 ## Sending messages
 
-Once you have the messaging channel, you can use it to set up queues, exchanges, and other components of the messaging topology you have designed. For example, to create a simple queue, use this code:
+Once you have the messaging channel, you can use it to set up queues, exchanges, and other components of the your messaging topology. For example, to create a queue, use this code:
 
 ```csharp
 channel.QueueDeclare(queue: "catalogEvents",
@@ -76,7 +76,7 @@ channel.BasicPublish(exchange: string.Empty,
 
 ## Receiving messages
 
-In the receiving component, the messaging channel and the queue is created in the same way as for the sender. Make sure the queue name matches the one you created in the sending component or two separate queues will be created and messages will not arrive at the correct destination.
+In the receiving component, you create the messaging channel and the queue in the same way as for the sender. Make sure the queue name matches the one you created in the sending component. Otherwise you'll create two separate queues and messages won't arrive at the correct destination.
 
 You must create a new `EventingBasicConsumer()` method and register a method to handle the `Received` event:
 

@@ -1,6 +1,6 @@
 RabbitMQ is a reliable message broker that provides flexible messaging exchanges and queues. To send and receive messages through RabbitMQ in a .NET Aspire project, you must add a RabbitMQ container, and then create code that sends messages from one microservice and receives it in another.
 
-In this exercise, you'll send messages to a queue from the Catalog.API project. You'll add a new background service project that receives those messages from the queue and sends them the the console log for display.
+In this exercise, you'll send messages to a queue from the Catalog.API project. You'll add a new background service project that receives those messages from the queue and sends them to the console log for display.
 
 ## Install prerequisites
 
@@ -77,7 +77,7 @@ Install the .NET Aspire workload using the .NET CLI:
     dotnet workload install aspire
     ```
 
-    You should see a message that the Aspire workload has been installed.
+    You should see a message that the Aspire workload is installed.
 
     ```console
     Installing Aspire.Hosting.Sdk.Msi.x64 ...... Done
@@ -121,7 +121,7 @@ Let's use `git` to obtain a sample app, which doesn't yet use a message broker:
 
 ## Create the RabbitMQ container
 
-We'll start by adding RabbitMQ to the AppHost project. When we start the solution, .NET Aspire will add a RabbitMQ container to the app and pass references to the projects that use it:
+Let's start by adding RabbitMQ to the AppHost project. When we start the solution, .NET Aspire adds a RabbitMQ container to the app and passes references to the projects that use it:
 
 1. Start Visual Studio, and select **Open a project or solution**.
 1. Navigate to the folder where you cloned the project.
@@ -161,7 +161,7 @@ We'll start by adding RabbitMQ to the AppHost project. When we start the solutio
 Now, we can install and configure RabbitMQ in the Catalog.API project:
 
 1. In Visual Studio, in **Solution Explorer**, right-click the **Catalog.API** project, and then select **Open in Terminal**.
-1. In the **Developer PowerShell** run this command:
+1. In the **Developer PowerShell**, run this command:
 
     ```dotnetcli
     dotnet add package Aspire.RabbitMQ.Client --version 8.0.0-preview.4.24156.9
@@ -275,7 +275,7 @@ To receive messages from the RabbitMQ queue, let's create a new project:
 Before we can receive messages in the new message consumer project, we must configure it to use the RabbitMQ backing service from the AppHost:
 
 1. In **Solution Explorer**, right-click the **RabbitConsumer** project, and then select **Open in Terminal**.
-1. In the **Developer PowerShell** run this command:
+1. In the **Developer PowerShell**, run this command:
 
     ```dotnetcli
     dotnet add package Aspire.RabbitMQ.Client --version 8.0.0-preview.4.24156.9
@@ -305,11 +305,11 @@ Before we can receive messages in the new message consumer project, we must conf
     host.Run();
     ```
 
-    Notice that the code uses .NET Aspire orchestration to add the RabbitMQ service to the consumer project. We'll use that service to retrieve messages.
+    Notice that the code uses .NET Aspire orchestration to add the RabbitMQ service to the consumer project. You'll use that service to retrieve messages.
 
 ## Receive a RabbitMQ message
 
-To receive a message, we must create a component that runs in the background waiting for messages to arrive. We'll use a `BackgroundService` class for this task:
+To receive a message, we must create a component that runs in the background waiting for messages to arrive. Use a `BackgroundService` class for this task:
 
 1. In **Solution Explorer**, right-click the **RabbitConsumer** project, point to **Add** and then select **Class**.
 1. In the **Name** textbox, type **CatalogProcessingJob.cs** and then select **Add**.
@@ -407,14 +407,14 @@ Let's test our RabbitMQ backing service and the microservices that send and rece
     :::image type="content" source="../media/dashboard-running-rabbitmq.png" lightbox="../media/dashboard-running-rabbitmq.png" alt-text="Screenshot showing a RabbitMQ container displayed in the .NET Aspire dashboard.":::
 
 1. In the navigation on the left, select **Console**.
-1. In the **Select a resource** list, select **messaging**. The page displays the console logs for the RabbitMQ broker. Notice that the last few messages indicate that RabbitMQ completed its start up and accepted one connection. This connection is from the receiving **RabbitConsumer** project.
-1. In the navigaton on the left, select **Resources**.
+1. In the **Select a resource** list, select **messaging**. The page displays the console logs for the RabbitMQ broker. Notice that the last few messages indicate that RabbitMQ completed its startup and accepted one connection. This connection is from the receiving **RabbitConsumer** project.
+1. In the navigation on the left, select **Resources**.
 1. In the line for the **webapp** project, in the **Endpoints** column, select one of the links. The Northern Traders homepage opens and displays the product catalog. This page sends a message to the RabbitMQ queue.
 
     :::image type="content" source="../media/dashboard-select-webapp-endpoint.png" lightbox="../media/dashboard-select-webapp-endpoint.png" alt-text="Screenshot showing how to access the WebApp project endpoint from the .NET Aspire dashboard.":::
 
 1. Switch back to the .NET Aspire dashboard. In the navigation on the left, select **Console**.
 1. In the **Select a resource** list, select **messaging**. Notice that RabbitQ has accepted a second connection. This connection is from the **Catalog.API** project.
-1. In the **Select a resource** list, select **consumers**. This log is for the **RabbitConsumer** project. The final entry displays the message "Getting all items in the catalog". This message has been retrieved from the RabbitMQ and logged.
+1. In the **Select a resource** list, select **consumers**. This log is for the **RabbitConsumer** project. The final entry displays the message "Getting all items in the catalog." This message has been retrieved from the RabbitMQ and logged.
 
     :::image type="content" source="../media/retrieved-message.png" lightbox="../media/retrieved-message.png" alt-text="Screenshot showing the message retrieved from the RabbitMQ queue and displayed in the console logs for the consumer project.":::
