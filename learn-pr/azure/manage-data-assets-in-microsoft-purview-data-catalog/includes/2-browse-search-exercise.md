@@ -18,7 +18,7 @@ In this exercise, we use the Microsoft Purview Data Catalog to search and browse
 
     :::image type="content" source="../media/browse-and-search-exercise/browse-from-homepage-inline.png" alt-text="Screenshot of the data catalog page with the Browse Assets button highlighted in the middle of the page. The browse folder is highlighted in the left menu." lightbox="../media/browse-and-search-exercise/browse-from-homepage.png":::
 
-1. You can return to the data catalog from anywhere in the Microsoft Purview governance portal, by selecting the Data Catalog icon at the top of the left side menu.
+1. You can select the Data Catalog icon at the top of the left side menu, to return to the data catalog from anywhere in the Microsoft Purview governance portal.
 
     :::image type="content" source="../media/browse-and-search-exercise/data-catalog-menu.png" alt-text="Screenshot of the Microsoft Purview Left hand menu, with the top icon, the data catalog icon, highlighted.":::
 
@@ -70,11 +70,11 @@ In this exercise, we use the Microsoft Purview Data Catalog to search and browse
     | Operator | Definition | Example |
     | -------- | ---------- | ------- |
     | OR | Specifies that an asset must have at least one of the two keywords. Must be in all caps. A white space is also an OR operator.  | The query `hive OR database` returns assets that contain 'hive' or 'database' or both. |
-    | AND | Specifies that an asset must have both keywords. Must be in all caps | The query `hive AND database` returns assets that contain both 'hive' and 'database'. |
-    | NOT | Specifies that an asset can't contain the keyword to the right of the NOT clause. Must be in all caps  | The query `hive NOT database` returns assets that contain 'hive', but not 'database'. |
-    | () | Groups a set of keywords and operators together. When you combine multiple operators, parentheses specify the order of operations. | The query `hive AND (database OR warehouse)` returns assets that contain 'hive' and either 'database' or 'warehouse', or both. |
+    | AND | Specifies that an asset must have both keywords. Must be in all caps | The query `hive AND database` returns assets that contain both `hive` and `database`. |
+    | NOT | Specifies that an asset can't contain the keyword to the right of the NOT clause. Must be in all caps  | The query `hive NOT database` returns assets that contain `hive`, but not `database`. |
+    | () | Groups a set of keywords and operators together. When you combine multiple operators, parentheses specify the order of operations. | The query `hive AND (database OR warehouse)` returns assets that contain `hive` and either `database` or `warehouse`, or both. |
     | "" | Specifies exact content in a phrase that the query must match to. | The query `"hive database"` returns assets that contain the phrase "hive database" in their properties |
-    | field: keyword | Searches the keyword in a specific attribute of an asset. Field search is case insensitive and is limited to the following fields at this time:  name, description, entityType, assetType, classification, term, contact | The query `description: German` returns all assets that contain the word "German" in the description. The query `term:Customer` returns all assets with glossary terms that include "Customer" and all glossary terms that match to "Customer". |
+    | field: keyword | Searches the keyword in a specific attribute of an asset. Field search is case insensitive and is limited to the following fields at this time:  name, description, entityType, assetType, classification, term, contact | The query `description: German` returns all assets that contain the word "German" in the description. The query `term:Customer` returns all assets with glossary terms that include `"Customer"` and all glossary terms that match to `"Customer"`. |
 
     > [!TIP]
     > Searching "*" will return all the assets and glossary terms in the catalog.
@@ -88,7 +88,7 @@ When you select an asset in the data catalog, there's much information to look a
 :::image-end:::
 
 1. **Breadcrumbs** at the top of the page leads you back through your selections to the data catalog.
-1. **Assets can be certified** by data stewards in your Microsoft Purview account. This setting means the asset is endorsed by the data steward as ready to be used.
+1. **Assets can be certified** by data steward in your Microsoft Purview account. This setting means the asset is endorsed by the data steward and it's ready to be used.
 1. **The asset action bar** contains several options, that users only have access to depending on their role:
     1. Edit - allows you to edit the fascets of the asset.
     1. Select for bulk edit - allows you to select this asset to be updated alongside others.
@@ -96,14 +96,14 @@ When you select an asset in the data catalog, there's much information to look a
     1. Refresh - refresh this asset page.
     1. Delete - delete the asset.
 1. **The navigation tabs** inside the asset window provide information views for the asset:
-    1. Overview - Provides a summary of basic information about the asset. We'll discuss some of these in the next steps.
+    1. Overview - Provides a summary of basic information about the asset. We'll discuss some of this information in the next steps.
     1. Properties - metadata bout the asset including modified time and related assets.
     1. Schema - provides the schema of the data, like column names with their classifications, sensitivity labels, and related glossary terms.
     1. Lineage - if the Microsoft Purview account is connected to other data processing and analytics systems, like data factory, lineage of a data asset will be displayed here so users can see where it comes from and how it's used.
     1. Contacts - experts and owners can be assigned to a data asset, and found here under the contacts page.
-    1. Related - other data assets related to this one are listed here.
-1. **Asset description** is added by data stewards or owners, and should give a description of the contents.
-1. **Classifications** are annotations that can be used to describe an asset or a column, and can be added by data owners and stewards.
+    1. Related - other data assets related to this asset are listed here.
+1. **Asset description** is added by data flight attendant or owners, and should give a description of the contents.
+1. **Classifications** are annotations that can be used to describe an asset or a column, and can be added by data owners and flight attendant.
 1. **Schema classifications** are applied to a specific column in the asset during the scanning process.
 1. **The collection path and hierarchy** give context to where a data asset is stored.
 1. **Glossary terms** are business terms created by your organization that provide context for an asset.
