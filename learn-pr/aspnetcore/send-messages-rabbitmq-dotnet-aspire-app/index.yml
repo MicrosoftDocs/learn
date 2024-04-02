@@ -5,7 +5,8 @@ metadata:
   description: In this module, you'll learn about the RabbitMQ message broker and how you can use it to decouple microservices while ensuring that they can communicate reliably. You'll also see how .NET Aspire makes it easy to integrate with RabbitMQ.
   author: camsoper
   ms.author: casoper
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: dotnet-aspire
   ms.custom:
   - team=cloud_advocates
 title: Send messages with RabbitMQ in a .NET Aspire app
