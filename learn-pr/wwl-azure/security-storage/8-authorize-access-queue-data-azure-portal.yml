@@ -4,7 +4,7 @@ title: Select and configure an appropriate method for access to Azure Queues
 metadata:
   title: Select and configure an appropriate method for access to Azure Queues
   description: "Select and configure an appropriate method for access to Azure Queues"
-  ms.date: 02/16/2024
+  ms.date: 04/02/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/7-authorize-access-queue-data-azure-portal.md)]
+  [!include[](includes/8-authorize-access-queue-data-azure-portal.md)]

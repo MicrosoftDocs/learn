@@ -51,7 +51,10 @@ You can change the authentication method for individual file shares. By default,
 
 4. The Authentication method indicates whether you're currently using the storage account access key or your Microsoft Entra account to authenticate and authorize file share operations. If you're currently authenticating using the storage account access key, you'll see **Access Key** specified as the authentication method, as in the following image. If you're authenticating using your **Microsoft Entra account**, you'll see Microsoft Entra user account specified instead.
 
-### Authenticate with your Microsoft Entra account
+:::image type="content" source="../media/authorization-method-access-key-page-2fd78c3c.png" alt-text="Screenshot showing the authentication method access key page.":::
+<br>
+
+## Authenticate with your Microsoft Entra account<br>
 
 To switch to using your Microsoft Entra account, select the link highlighted in the image that says Switch to Microsoft Entra user account. If you have the appropriate permissions via the Azure roles that are assigned to you, you'll be able to proceed. However, if you lack the necessary permissions, you'll see an error message that you don't have permissions to list the data using your user account with Microsoft Entra ID.
 
@@ -85,5 +88,8 @@ To update this setting for an existing storage account, follow these steps:
 1. Navigate to the storage account overview in the Azure portal.
 
 2. Under **Settings**, select **Configuration**.
+
+:::image type="content" source="../media/default-authorization-account-create-page-2bca5752.png" alt-text="Screenshot showing the default athentication account create page.":::
+
 
 3. Set **Default to Microsoft Entra authorization** in the **Azure portal** to **Enabled**.

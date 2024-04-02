@@ -4,7 +4,7 @@ title: Select and configure an appropriate method for access to Azure Blob Stora
 metadata:
   title: Select and configure an appropriate method for access to Azure Blob Storage
   description: "Select and configure an appropriate method for access to Azure Blob Storage"
-  ms.date: 02/16/2024
+  ms.date: 04/02/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-select-configure-appropriate-method-access-azure.md)]
+  [!include[](includes/6-select-configure-appropriate-method-access-azure.md)]

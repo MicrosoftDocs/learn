@@ -4,7 +4,15 @@ Microsoft recommends that you use Azure Key Vault to manage your access keys, an
 
 ## Protect your access keys
 
-Storage account access keys provide full access to the configuration of a storage account, as well as the data. Always be careful to protect your access keys. Use Azure Key Vault to manage and rotate your keys securely. Access to the shared key grants a user full access to a storage account’s configuration and its data. Access to shared keys should be carefully limited and monitored. Use SAS tokens with limited scope of access in scenarios where Microsoft Entra ID based authorization can't be used. Avoid hard-coding access keys or saving them anywhere in plain text that is accessible to others. Rotate your keys if you believe they might have been compromised.
+Storage account access keys provide full access to the configuration of a storage account, as well as the data. Always be careful to protect your access keys. Use Azure Key Vault to manage and rotate your keys securely. Access to the shared key grants a user full access to a storage account’s configuration and its data. Access to shared keys should be carefully limited and monitored. Use shared access signature (SAS) tokens with limited scope of access in scenarios where Microsoft Entra ID based authorization can't be used. Avoid hard-coding access keys or saving them anywhere in plain text that is accessible to others. Rotate your keys if you believe they might have been compromised.
+
+Microsoft recommends using Microsoft Entra ID to authorize requests against blob, queue, and table data if possible, rather than using the account keys (Shared Key authorization). Authorization with Microsoft Entra ID provides superior security and ease of use over Shared Key authorization. For Server Message Block (SMB) Azure file shares, Microsoft recommends using on-premises Active Directory Domain Services (AD DS) integration or Microsoft Entra Kerberos authentication.
+
+To prevent users from accessing data in your storage account with Shared Key, you can disallow Shared Key authorization for the storage account. Granular access to data with least privileges necessary is recommended as a security best practice. Microsoft Entra ID based authorization should be used for scenarios that support OAuth. Kerberos or SMTP should be used for Azure Files over SMB. For Azure Files over REST, SAS tokens can be used. Shared key access should be disabled if not required to prevent its inadvertent use.
+
+To protect an Azure Storage account with Microsoft Entra Conditional Access policies, you must disallow Shared Key authorization for the storage account.
+
+If you have disabled shared key access and you are seeing Shared Key authorization reported in the diagnostic logs, this indicates that trusted access is being used to access storage.
 
 ## View account access keys
 
@@ -14,13 +22,16 @@ To view and copy your storage account access keys or connection string from the 
 
 1. In the Azure portal, go to your storage account.<br>
 
-2. Under Security + networking, select Access keys. Your account access keys appear, as well as the complete connection string for each key.<br>
+2. Under **Security + networking**, select **Access keys**. Your account access keys appear, as well as the complete connection string for each key.<br>
 
 3. Select Show keys to show your access keys and connection strings and to enable buttons to copy the values.<br>
 
-4. Under key1, find the Key value. Select the Copy button to copy the account key.<br>
+4. Under **key1**, find the **Key** value. Select the **Copy** button to copy the account key.<br>
 
-5. Alternately, you can copy the entire connection string. Under key1, find the Connection string value. Select the Copy button to copy the connection string.<br>
+5. Alternately, you can copy the entire connection string. Under key1, find the **Connection string** value. Select the **Copy** button to copy the connection string.
+
+:::image type="content" source="../media/portal-connection-c2097b8f.png" alt-text="Screenshot showing an example of the portal connection string.":::
+
 
 You can use either of the two keys to access Azure Storage, but in general it's a good practice to use the first key, and reserve the use of the second key for when you are rotating keys.<br>
 
@@ -36,7 +47,15 @@ Microsoft recommends that you rotate your access keys periodically to help keep 
 
 Two access keys are assigned so that you can rotate your keys. Having two keys ensures that your application maintains access to Azure Storage throughout the process.
 
-To rotate your storage account access keys in the Azure portal:
+Regenerating your access keys can affect any applications or Azure services that are dependent on the storage account key. Any clients that use the account key to access the storage account must be updated to use the new key, including media services, cloud, desktop and mobile applications, and graphical user interface applications for Azure Storage, such as **Azure Storage Explorer.**
+
+Additionally, rotating or regenerating access keys revokes shared access signatures (SAS) that are generated based on that key. After access key rotation, you must regenerate account and service SAS tokens to avoid disruptions to applications. Note that **user delegation** SAS tokens are secured with Microsoft Entra credentials and aren't affected by key rotation.<br>
+
+If you plan to manually rotate access keys, Microsoft recommends that you set a key expiration policy.
+
+After you create the key expiration policy, you can use Azure Policy to monitor whether a storage account's keys have been rotated within the recommended interval.
+
+To rotate your storage account access keys in the Azure portal:<br>
 
 1. Update the connection strings in your application code to reference the secondary access key for the storage account.
 
@@ -44,15 +63,18 @@ To rotate your storage account access keys in the Azure portal:
 
 3. Under **Security + networking**, select **Access keys**.
 
-4. To regenerate the primary access key for your storage account, select the Regenerate button next to the primary access key.
+4. To regenerate the primary access key for your storage account, select the **Regenerate** button next to the primary access key.
 
 5. Update the connection strings in your code to reference the new primary access key.
 
 6. Regenerate the secondary access key in the same manner.
 
-To rotate an account's access keys, the user must either be a Service Administrator, or must be assigned an Azure role that includes the **Microsoft.Storage/storageAccounts/regeneratekey/action**. Some Azure built-in roles that include this action are the **Owner**, **Contributor**, and **Storage Account Key Operator Service Roles**.
+> [!CAUTION]
+> Microsoft recommends using only one of the keys in all of your applications at the same time. If you use Key 1 in some places and Key 2 in others, you will not be able to rotate your keys without some application losing access.
 
-## Create a key expiration policy
+To rotate an account's access keys, the user must either be a Service Administrator, or must be assigned an Azure role that includes the **Microsoft.Storage/storageAccounts/regeneratekey/action**. Some Azure built-in roles that include this action are the **Owner**, **Contributor**, and **Storage Account Key Operator Service Roles**.<br>
+
+## Create a key expiration policy<br>
 
 A key expiration policy enables you to set a reminder for the rotation of the account access keys. The reminder is displayed if the specified interval has elapsed and the keys have not yet been rotated. After you create a key expiration policy, you can monitor your storage accounts for compliance to ensure that the account access keys are rotated regularly.
 
@@ -67,6 +89,8 @@ To create a key expiration policy in the Azure portal:
 4. In Set a reminder to rotate access keys, select the **Enable key rotation reminders** checkbox and set a frequency for the reminder.
 
 5. Select **Save**.
+
+## :::image type="content" source="../media/portal-key-expiration-policy-page-e116b00c.png" alt-text="Screenshot showing how to set a reminder to rotate keys."::: 
 
 ## Check for key expiration policy violations
 
@@ -86,7 +110,12 @@ Follow these steps to assign the built-in policy to the appropriate scope in the
 
 5. For the **Policy definition** field, select the **More** button, and enter *storage account keys* in the **Search** field. Select the policy definition named **Storage account keys should not be expired**.
 
-6. Select **Review + create** to assign the policy definition to the specified scope.
+:::image type="content" source="../media/policy-definition-select-portal-page-40266255.png":::
+
+
+6. Select **Review + create** to assign the policy definition to the specified scope.<br>
+
+## :::image type="content" source="../media/policy-assignment-create-page-53cecf86.png" alt-text="Screenshot showing how to assign the built in policy for a resource scope."::: 
 
 ## Monitor compliance with the key expiration policy
 
@@ -98,4 +127,9 @@ To monitor your storage accounts for compliance with the key expiration policy, 
 
 3. On the **Policy assignment** page for the built-in policy, select **View compliance**. Any storage accounts in the specified subscription and resource group that do not meet the policy requirements appear in the compliance report.
 
-To bring a storage account into compliance, rotate the account access keys.<br>
+To bring a storage account into compliance, rotate the account access keys.
+
+:::image type="content" source="../media/policy-compliance-report-page-238d8b1b.png" alt-text="Screenshot showing the policy compliance report portal.":::
+
+
+To bring a storage account into compliance, rotate the account access keys.

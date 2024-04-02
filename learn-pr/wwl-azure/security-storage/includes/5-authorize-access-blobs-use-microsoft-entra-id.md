@@ -1,13 +1,12 @@
-> [!NOTE]
-> Azure Storage supports using Microsoft Entra ID to authorize requests to blob data. With Microsoft Entra ID, you can use Azure role-based access control (Azure RBAC) to grant permissions to a security principal, which may be a user, group, or application service principal. The security principal is authenticated by Microsoft Entra ID to return an OAuth 2.0 token. The token can then be used to authorize a request against the Blob service.
+Azure Storage supports using Microsoft Entra ID to authorize requests to blob data. With Microsoft Entra ID, you can use Azure role-based access control (Azure RBAC) to grant permissions to a security principal, which may be a user, group, or application service principal. The security principal is authenticated by Microsoft Entra ID to return an OAuth 2.0 token. The token can then be used to authorize a request against the Blob service.
 
-Authorization with Microsoft Entra ID provides superior security and ease of use over Shared Key authorization. Microsoft recommends using Microsoft Entra authorization with your blob applications when possible to assure access with minimum required privileges.
+Authorization with Microsoft Entra ID provides superior security and ease of use over Shared Key authorization. Microsoft recommends using Microsoft Entra authorization with your blob applications when possible to assure access with minimum required privileges.<br>
 
-Authorization with Microsoft Entra ID is available for all general-purpose and Blob storage accounts in all public regions and national clouds. Only storage accounts created with the Azure Resource Manager deployment model support Microsoft Entra authorization.
+Authorization with Microsoft Entra ID is available for all general-purpose and Blob storage accounts in all public regions and national clouds. Only storage accounts created with the Azure Resource Manager deployment model support Microsoft Entra authorization.<br>
 
-Blob storage additionally supports creating shared access signatures (SAS) that are signed with Microsoft Entra credentials.
+Blob storage additionally supports creating shared access signatures (SAS) that are signed with Microsoft Entra credentials.<br>
 
-## Overview of Microsoft Entra ID for blobs
+## Overview of Microsoft Entra ID for blobs<br>
 
 When a security principal (a user, group, or application) attempts to access a blob resource, the request must be authorized, unless it's a blob available for anonymous access. With Microsoft Entra ID, access to a resource is a two-step process:
 
@@ -18,7 +17,9 @@ When a security principal (a user, group, or application) attempts to access a b
 
 ### Use a Microsoft Entra account with portal, PowerShell, or Azure CLI
 
-Use Microsoft Entra ID to authorize access in application code.
+To learn about how to access data in the Azure portal with a Microsoft Entra account, see Data access from the Azure portal. To learn how to call Azure PowerShell or Azure CLI commands with a Microsoft Entra account, see Data access from PowerShell or Azure CLI.
+
+### Use Microsoft Entra ID to authorize access in application code
 
 To authorize access to Azure Storage with Microsoft Entra ID, you can use one of the following client libraries to acquire an OAuth 2.0 token:
 
@@ -33,7 +34,18 @@ An advantage of the Azure Identity client library is that it enables you to use 
 
 The access token returned by the Azure Identity client library is encapsulated in a token credential. You can then use the token credential to get a service client object to use in performing authorized operations against Azure Storage. A simple way to get the access token and token credential is to use the **DefaultAzureCredential** class that is provided by the Azure Identity client library. **DefaultAzureCredential** attempts to get the token credential by sequentially trying several different credential types. **DefaultAzureCredential** works in both the development environment and in Azure.
 
-### Microsoft Authentication Library (MSAL)
+The following table points to additional information for authorizing access to data in various scenarios:
+
+| **Language**                             | **.NET**                                                                                   | **Java**                                          | **JavaScript**                                                                                   | **Python**                                                                                   | **Go**                                                            |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------- | ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| Overview of auth with Microsoft Entra ID | How to authenticate .NET applications with Azure services                                  | Azure authentication with Java and Azure Identity | Authenticate JavaScript apps to Azure using the Azure SDK                                        | Authenticate Python apps to Azure using the Azure SDK                                        |                                                                   |
+| Auth using developer service principals  | Authenticate .NET apps to Azure services during local development using service principals | Azure authentication with service principal       | Auth JS apps to Azure services with service principal                                            | Authenticate Python apps to Azure services during local development using service principals | Azure SDK for Go authentication with a service principal          |
+| Auth using developer or user accounts    | Authenticate .NET apps to Azure services during local development using developer accounts | Azure authentication with user credentials        | Auth JS apps to Azure services with dev accounts                                                 | Authenticate Python apps to Azure services during local development using developer accounts | Azure authentication with the Azure SDK for Go                    |
+| Auth from Azure-hosted apps              | Authenticating Azure-hosted apps to Azure resources with the Azure SDK for .NET            | Authenticate Azure-hosted Java applications       | Authenticating Azure-hosted JavaScript apps to Azure resources with the Azure SDK for JavaScript | Authenticating Azure-hosted apps to Azure resources with the Azure SDK for Python            | Authentication with the Azure SDK for Go using a managed identity |
+| Auth from on-premises apps               | Authenticate to Azure resources from .NET apps hosted on-premises                          |                                                   | Authenticate on-premises JavaScript apps to Azure resources                                      | Authenticate to Azure resources from Python apps hosted on-premises                          |                                                                   |
+| Identity client library overview         | Azure Identity client library for .NET                                                     | Azure Identity client library for Java            | Azure Identity client library for JavaScript                                                     | Azure Identity client library for Python                                                     | Azure Identity client library for Go                              |
+
+### Microsoft Authentication Library (MSAL)<br>
 
 While Microsoft recommends using the Azure Identity client library when possible, the MSAL library may be appropriate to use in certain advanced scenarios. For more information, see Learn about MSAL.
 
@@ -61,8 +73,7 @@ A Microsoft Entra security principal may be a user, a group, an application serv
 
 In some cases you may need to enable fine-grained access to blob resources or to simplify permissions when you have a large number of role assignments for a storage resource. You can use Azure attribute-based access control (Azure ABAC) to configure conditions on role assignments. You can use conditions with a custom role or select built-in roles.
 
-> [!NOTE]
-> When you create an Azure Storage account, you are not automatically assigned permissions to access data via Microsoft Entra ID. You must explicitly assign yourself an Azure role for access to Blob Storage. You can assign it at the level of your subscription, resource group, storage account, or container.
+When you create an Azure Storage account, you are not automatically assigned permissions to access data via Microsoft Entra ID. You must explicitly assign yourself an Azure role for access to Blob Storage. You can assign it at the level of your subscription, resource group, storage account, or container.
 
 ## Resource scope
 
@@ -87,12 +98,13 @@ Azure RBAC provides several built-in roles for authorizing access to blob data u
 
 Only roles explicitly defined for data access permit a security principal to access blob data. Built-in roles such as Owner, Contributor, and Storage Account Contributor permit a security principal to manage a storage account, but don't provide access to the blob data within that account via Microsoft Entra ID. However, if a role includes Microsoft.Storage/storageAccounts/listKeys/action, then a user to whom that role is assigned can access data in the storage account via Shared Key authorization with the account access keys. For more information, see Choose how to authorize access to blob data in the Azure portal.
 
-## Access data with a Microsoft Entra account
+Azure role assignments may take up to 30 minutes to propagate.
 
-Access to blob data via the Azure portal, PowerShell, or Azure CLI can be authorized either by using the user's Microsoft Entra account or by using the account access keys (Shared Key authorization).
+## Access data with a Microsoft Entra account<br>
 
-> [!CAUTION]
-> Authorization with Shared Key is not recommended as it may be less secure. For optimal security, disable authorization via Shared Key for your storage account, as described in **Prevent Shared Key authorization for an Azure Storage account**.
+Access to blob data via the Azure portal, PowerShell, or Azure CLI can be authorized either by using the user's Microsoft Entra account or by using the account access keys (Shared Key authoti
+
+Authorization with Shared Key is not recommended as it may be less secure. For optimal security, disable authorization via Shared Key for your storage account, as described in Prevent Shared Key authorization for an Azure Storage account.
 
 Use of access keys and connection strings should be limited to initial proof of concept apps or development prototypes that don't access production or sensitive data. Otherwise, the token-based authentication classes available in the Azure SDK should always be preferred when authenticating to Azure resources.
 
@@ -107,3 +119,11 @@ When you attempt to access blob data, the Azure portal first checks whether you'
 To access blob data from the Azure portal using your Microsoft Entra account, you need permissions to access blob data, and you also need permissions to navigate through the storage account resources in the Azure portal. The built-in roles provided by Azure Storage grant access to blob resources, but they don't grant permissions to storage account resources. For this reason, access to the portal also requires the assignment of an Azure Resource Manager role such as the Reader role, scoped to the level of the storage account or higher. The **Reader** role grants the most restricted permissions, but another Azure Resource Manager role that grants access to storage account management resources is also acceptable.
 
 The Azure portal indicates which authorization scheme is in use when you navigate to a container.
+
+## Data access from PowerShell or Azure CLI
+
+Azure CLI and PowerShell support signing in with Microsoft Entra credentials. After you sign in, your session runs under those credentials.
+
+## Feature support
+
+Support for this feature might be impacted by enabling Data Lake Storage Gen2, Network File System (NFS) 3.0 protocol, or the SSH File Transfer Protocol (SFTP).

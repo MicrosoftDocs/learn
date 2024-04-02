@@ -48,24 +48,40 @@ The configuration of source HSM is, generally, outside the scope of this specifi
 > [!NOTE]
 > Several of these steps can be performed using other interfaces such as Azure PowerShell and Azure portal. They can also be performed programmatically using equivalent functions in Key Vault SDK.
 
-## Generate KEK
+### Generate KEK
 
-Use the az keyvault key create command to create KEK with key operations set to import.
+Use the **az keyvault key create** command to create KEK with key operations set to import. Note down the key identifier 'kid' returned from the below command.
 
-> [!NOTE]
-> Services support different KEK lengths; Azure SQL, for instance, only supports key lengths of 2048 or 3072 bytes.
+```azurecli
+Azure CLI
+```
 
-## Retrieve the public key of the KEK<br>
+```azurecli
+az keyvault key create --kty RSA-HSM --size 4096 --name KEKforBYOK --ops import --vault-name ContosoKeyVaultHSM
+```
+
+Services support different KEK lengths; Azure SQL, for instance, only supports key lengths of 2048 or 3072 bytes.
+
+### Retrieve the public key of the KEK<br>
 
 Download the public key portion of the KEK and store it into a PEM file.
 
-## Generate key transfer blob using HSM vendor provided BYOK tool
+```azurecli
+Azure CLI
+```
+
+```azurecli
+az keyvault key download --name KEKforBYOK --vault-name ContosoKeyVaultHSM --file KEKforBYOK.publickey.pem
+
+```
+
+## Generate key transfer blob using HSM vendor provided BYOK tool<br>
 
 Customer uses HSM Vendor provided BYOK tool to create a key transfer blob (stored as a ".byok" file). KEK public key as a **.Privacy-Enhanced Mail** (.pem file) will be one of the inputs to this tool.
 
 ### Key Transfer Blob
 
-Long term, Microsoft would like to use **Public Key Cryptography Standards** (PKCS) \#11 **Cryptoki Attribute Mechanism** (CKM)\_**Rivest–Shamir–Adleman** (RSA)\_**Advanced Encryption Standard (AES)**\_**Key Exchange Key** (KEY)\_WRAP mechanism to transfer the target key to Azure Key Vault since this mechanism produces a single blob and, more importantly, the intermediate AES key is handled by the two HSMs and is guaranteed to be ephemeral. This mechanism is not presently available in some HSMs but the combination of protecting the target key with CKM\_AES\_KEY\_WRAP\_PAD using an AES key and protecting the AES key with CKM\_RSA\_PKCS\_**Optimal Asymmetric Encryption Padding** (OAEP) produces an equivalent blob.
+Long term, Microsoft would like to use **Public Key Cryptography Standards** (PKCS) \#11 **Cryptoki Attribute Mechanism** (CKM)\_**Rivest–Shamir–Adleman** (RSA)\_**Advanced Encryption Standard (AES)**\_**Key Exchange Key** (KEY)\_WRAP mechanism to transfer the target key to Azure Key Vault since this mechanism produces a single blob and, more importantly, the intermediate AES key is handled by the two HSMs and is guaranteed to be ephemeral. This mechanism isn't presently available in some HSMs but the combination of protecting the target key with CKM\_AES\_KEY\_WRAP\_PAD using an AES key and protecting the AES key with CKM\_RSA\_PKCS\_**Optimal Asymmetric Encryption Padding** (OAEP) produces an equivalent blob.
 
 The target key plaintext depends on the key type:
 
@@ -81,6 +97,157 @@ The bytes for the plaintext key are then transformed using the CKM\_RSA\_AES\_KE
 
 The format of the transfer blob uses **JavaScript Object Notation** (JSON) Web Encryption compact serialization (RFC7516) primarily as a vehicle for delivering the required metadata to the service for correct decryption.
 
-### Upload key transfer blob to import HSM-key
+## Upload key transfer blob to import HSM-key<br>
 
 Customer transfers the Key Transfer Blob (".byok" file) to an online workstation and then run an az keyvault key import command to import this blob as a new HSM-backed key into Key Vault.
+
+To import an RSA key, use this command:
+
+```azurecli
+Azure CLI
+```
+
+```azurecli
+az keyvault key import --vault-name ContosoKeyVaultHSM --name ContosoFirstHSMkey --byok-file KeyTransferPackage-ContosoFirstHSMkey.byok --ops encrypt decrypt
+```
+
+To import an EC key, you must specify key type and the curve name.
+
+```azurecli
+Azure CLI
+```
+
+```azurecli
+az keyvault key import --vault-name ContosoKeyVaultHSM --name ContosoFirstHSMkey --byok-file --kty EC-HSM --curve-name "P-256" KeyTransferPackage-ContosoFirstHSMkey.byok --ops sign verify
+```
+
+When the above command is executed, it results in sending a REST API request as follows:
+
+<!--- raw content start --->
+PUT https://contosokeyvaulthsm.vault.azure.net/keys/ContosoFirstHSMKey?api-version=7.0
+<!--- raw content end --->
+
+Request body when importing an RSA key:
+
+```javascript
+JSON
+```
+
+```javascript
+{
+```
+
+```javascript
+  "key": {
+```
+
+```javascript
+    "kty": "RSA-HSM",
+```
+
+```javascript
+    "key_ops": [
+```
+
+```javascript
+      "decrypt",
+```
+
+```javascript
+      "encrypt"
+```
+
+```javascript
+    ],
+```
+
+```javascript
+    "key_hsm": "<Base64 encoded BYOK_BLOB>"
+```
+
+```javascript
+  },
+```
+
+```javascript
+  "attributes": {
+```
+
+```javascript
+    "enabled": true
+```
+
+```javascript
+  }
+```
+
+```javascript
+}
+```
+
+```javascript
+Request body when importing an EC key:
+
+```
+
+```javascript
+JSON
+```
+
+```javascript
+{
+```
+
+```javascript
+  "key": {
+```
+
+```javascript
+    "kty": "EC-HSM",
+```
+
+```javascript
+    "crv": "P-256",
+```
+
+```javascript
+    "key_ops": [
+```
+
+```javascript
+      "sign",
+```
+
+```javascript
+      "verify"
+```
+
+```javascript
+    ],
+```
+
+```javascript
+    "key_hsm": "<Base64 encoded BYOK_BLOB>"
+```
+
+```javascript
+  },
+```
+
+```javascript
+  "attributes": {
+```
+
+```javascript
+    "enabled": true
+```
+
+```javascript
+  }
+```
+
+```javascript
+}
+```
+
+“key\_hsm” value is the entire contents of the KeyTransferPackage-ContosoFirstHSMkey.byok encoded in the Base64 format.
