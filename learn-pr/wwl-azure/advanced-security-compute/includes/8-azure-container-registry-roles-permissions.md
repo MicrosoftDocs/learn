@@ -62,11 +62,15 @@ To determine which permissions to apply to a custom role, see the list of Micros
 
 **Azure CLI**
 
-`az provider operation show --namespace Microsoft.ContainerRegistry`
+```azurecli
+az provider operation show --namespace Microsoft.ContainerRegistry
+```
 
 **Azure PowerShell**
 
-`Get-AzProviderOperation -OperationSearchString Microsoft.ContainerRegistry/*`
+```azurecli
+Get-AzProviderOperation -OperationSearchString Microsoft.ContainerRegistry/*
+```
 
 > [!NOTE]
 > In tenants configured with Azure Resource Manager private link, Azure Container Registry supports wildcard actions such as `Microsoft.ContainerRegistry/*/read` or `Microsoft.ContainerRegistry/registries/*/write` in custom roles, granting access to all matching actions. In a tenant without an ARM private link, specify all required registry actions individually in a custom role.
@@ -75,48 +79,92 @@ To determine which permissions to apply to a custom role, see the list of Micros
 
 For example, the following JSON defines the minimum actions for a custom role that permits importing images to a registry.
 
-**JSON**
+```javascript
+JSON
+```
 
-`{`
+```javascript
+{
+```
 
-`"assignableScopes": [`
+```javascript
+   "assignableScopes": [
+```
 
-`"/subscriptions/<optional, but you can limit the visibility to one or more subscriptions>"`
+```javascript
+     "/subscriptions/<optional, but you can limit the visibility to one or more subscriptions>"
+```
 
-`],`
+```javascript
+   ],
+```
 
-`"description": "Can import images to registry",`
+```javascript
+   "description": "Can import images to registry",
+```
 
-`"Name": "AcrImport",`
+```javascript
+   "Name": "AcrImport",
+```
 
-`"permissions": [`
+```javascript
+   "permissions": [
+```
 
-`{`
+```javascript
+     {
+```
 
-`"actions": [`
+```javascript
+       "actions": [
+```
 
-`"Microsoft.ContainerRegistry/registries/push/write",`
+```javascript
+         "Microsoft.ContainerRegistry/registries/push/write",
+```
 
-`"Microsoft.ContainerRegistry/registries/pull/read",`
+```javascript
+         "Microsoft.ContainerRegistry/registries/pull/read",
+```
 
-`"Microsoft.ContainerRegistry/registries/read",`
+```javascript
+         "Microsoft.ContainerRegistry/registries/read",
+```
 
-`"Microsoft.ContainerRegistry/registries/importImage/action"`
+```javascript
+         "Microsoft.ContainerRegistry/registries/importImage/action"
+```
 
-`],`
+```javascript
+       ],
+```
 
-`"dataActions": [],`
+```javascript
+       "dataActions": [],
+```
 
-`"notActions": [],`
+```javascript
+       "notActions": [],
+```
 
-`"notDataActions": []`
+```javascript
+       "notDataActions": []
+```
 
-`}`
+```javascript
+     }
+```
 
-`],`
+```javascript
+   ],
+```
 
-`"roleType": "CustomRole"`
+```javascript
+   "roleType": "CustomRole"
+```
 
-`}`
+```javascript
+ }
+```
 
 To create or update a custom role using the JSON description, use the Azure CLI, Azure Resource Manager template, Azure PowerShell, or other Azure tools. Add or remove role assignments for a custom role in the same way that you manage role assignments for built-in Azure roles.
