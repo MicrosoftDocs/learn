@@ -35,7 +35,9 @@ This example creates a new resource group named **TestRG** in the **East US** lo
 
 **Azure PowerShell**
 
-`New-AzResourceGroup -Location "East US" -Name "TestRG"`
+```powershell
+New-AzResourceGroup -Location "East US" -Name "TestRG"
+```
 
 2. Create the virtual wan using the `New-AzVirtualWan`cmdlet.
 
@@ -49,7 +51,9 @@ A hub is a virtual network that can contain gateways for site-to-site, ExpressRo
 
 **Azure PowerShell**
 
-`$virtualHub = New-AzVirtualHub -VirtualWan $virtualWan -ResourceGroupName "TestRG" -Name "Hub1" -AddressPrefix "10.1.0.0/16" -Location "westus"`
+```powershell
+$virtualHub = New-AzVirtualHub -VirtualWan $virtualWan -ResourceGroupName "TestRG" -Name "Hub1" -AddressPrefix "10.1.0.0/16" -Location "westus"
+```
 
 ## Create a site-to-site VPN gateway
 
@@ -59,19 +63,25 @@ In this section, you create a site-to-site VPN gateway in the same location as t
 
 **Azure PowerShell**
 
-`$virtualHub = Get-AzVirtualHub -ResourceGroupName "TestRG" -Name "Hub1"`
+```powershell
+$virtualHub = Get-AzVirtualHub -ResourceGroupName "TestRG" -Name "Hub1"
+```
 
 2. Create a VPN gateway using the `New-AzVpnGateway` cmdlet.
 
 **Azure PowerShell**
 
-`New-AzVpnGateway -ResourceGroupName "TestRG" -Name "vpngw1" -VirtualHubId $virtualHub.Id -VpnGatewayScaleUnit 2`
+```powershell
+New-AzVpnGateway -ResourceGroupName "TestRG" -Name "vpngw1" -VirtualHubId $virtualHub.Id -VpnGatewayScaleUnit 2
+```
 
 3. Once your VPN gateway is created, you can view it using the following example.
 
 **Azure PowerShell**
 
-`Get-AzVpnGateway -ResourceGroupName "TestRG" -Name "vpngw1"`
+```powershell
+Get-AzVpnGateway -ResourceGroupName "TestRG" -Name "vpngw1"
+```
 
 ## Create a site and connections
 
@@ -81,21 +91,33 @@ In this section, you create sites that correspond to your physical locations and
 
 **Azure PowerShell**
 
-`$vpnGateway = Get-AzVpnGateway -ResourceGroupName "TestRG" -Name "vpngw1"`
+```powershell
+$vpnGateway = Get-AzVpnGateway -ResourceGroupName "TestRG" -Name "vpngw1"
+```
 
-`$vpnSiteAddressSpaces = New-Object string[] 2`
+```powershell
+$vpnSiteAddressSpaces = New-Object string[] 2
+```
 
-`$vpnSiteAddressSpaces[0] = "192.168.2.0/24"`
+```powershell
+$vpnSiteAddressSpaces[0] = "192.168.2.0/24"
+```
 
-`$vpnSiteAddressSpaces[1] = "192.168.3.0/24"`
+```powershell
+$vpnSiteAddressSpaces[1] = "192.168.3.0/24"
+```
 
 2. Create links to add information about the physical links at the branch including metadata about the link speed, link provider name, and the public IP address of the on-premises device.
 
 **Azure PowerShell**
 
-`$vpnSiteLink1 = New-AzVpnSiteLink -Name "TestSite1Link1" -IpAddress "15.25.35.45" -LinkProviderName "SomeTelecomProvider" -LinkSpeedInMbps "10"`
+```powershell
+$vpnSiteLink1 = New-AzVpnSiteLink -Name "TestSite1Link1" -IpAddress "15.25.35.45" -LinkProviderName "SomeTelecomProvider" -LinkSpeedInMbps "10"
+```
 
-`$vpnSiteLink2 = New-AzVpnSiteLink -Name "TestSite1Link2" -IpAddress "15.25.35.55" -LinkProviderName "SomeTelecomProvider2" -LinkSpeedInMbps "100"`
+```powershell
+$vpnSiteLink2 = New-AzVpnSiteLink -Name "TestSite1Link2" -IpAddress "15.25.35.55" -LinkProviderName "SomeTelecomProvider2" -LinkSpeedInMbps "100"
+```
 
 3. Create the VPN site, referencing the variables of the VPN site links you just created.
 
@@ -103,7 +125,9 @@ If you closed Azure Cloud Shell or your connection timed out, redeclare the virt
 
 **Azure PowerShell**
 
-`$virtualWan = Get-AzVirtualWAN -ResourceGroupName "TestRG" -Name "TestVWAN1"`
+```powershell
+$virtualWan = Get-AzVirtualWAN -ResourceGroupName "TestRG" -Name "TestVWAN1"
+```
 
 4. Create the VPN site using the `New-AzVpnSite` cmdlet.
 
@@ -111,7 +135,9 @@ If you closed Azure Cloud Shell or your connection timed out, redeclare the virt
 
 **Azure PowerShell**
 
-`$vpnSiteLinkConnection1 = New-AzVpnSiteLinkConnection -Name "TestLinkConnection1" -VpnSiteLink $vpnSite.VpnSiteLinks[0] -ConnectionBandwidth 100`
+```powershell
+$vpnSiteLinkConnection1 = New-AzVpnSiteLinkConnection -Name "TestLinkConnection1" -VpnSiteLink $vpnSite.VpnSiteLinks[0] -ConnectionBandwidth 100
+```
 
 `$vpnSiteLinkConnection2 = New-AzVpnSiteLinkConnection -Name "testLinkConnection2" -VpnSiteLink $vpnSite.VpnSiteLinks[1] -ConnectionBandwidth 10`
 
@@ -123,17 +149,25 @@ Connect your VPN site to the hub site-to-site VPN gateway using the New-AzVpnCon
 
 **Azure PowerShell**
 
-`$virtualWan = Get-AzVirtualWAN -ResourceGroupName "TestRG" -Name "TestVWAN1"`
+```powershell
+$virtualWan = Get-AzVirtualWAN -ResourceGroupName "TestRG" -Name "TestVWAN1"
+```
 
-`$vpnGateway = Get-AzVpnGateway -ResourceGroupName "TestRG" -Name "vpngw1"`
+```powershell
+$vpnGateway = Get-AzVpnGateway -ResourceGroupName "TestRG" -Name "vpngw1"
+```
 
-`$vpnSite = Get-AzVpnSite -ResourceGroupName "TestRG" -Name "TestSite1"`
+```powershell
+$vpnSite = Get-AzVpnSite -ResourceGroupName "TestRG" -Name "TestSite1"
+```
 
 2. Connect the VPN site to the hub.
 
 **Azure PowerShell**
 
-`New-AzVpnConnection -ResourceGroupName $vpnGateway.ResourceGroupName -ParentResourceName $vpnGateway.Name -Name "testConnection" -VpnSite $vpnSite -VpnSiteLinkConnection @($vpnSiteLinkConnection1, $vpnSiteLinkConnection2)`
+```powershell
+New-AzVpnConnection -ResourceGroupName $vpnGateway.ResourceGroupName -ParentResourceName $vpnGateway.Name -Name "testConnection" -VpnSite $vpnSite -VpnSiteLinkConnection @($vpnSiteLinkConnection1, $vpnSiteLinkConnection2)
+```
 
 ## Connect a VNet to your hub
 
@@ -147,41 +181,69 @@ You can use the following example values to create a VNet. Make sure to substitu
 
 **Azure PowerShell**
 
-`$vnet = @{`
+```powershell
+$vnet = @{
+```
 
-`Name = 'VNet1'`
+```powershell
+   Name = 'VNet1'
+```
 
-`ResourceGroupName = 'TestRG'`
+```powershell
+   ResourceGroupName = 'TestRG'
+```
 
-`Location = 'eastus'`
+```powershell
+   Location = 'eastus'
+```
 
-`AddressPrefix = '10.21.0.0/16'`
+```powershell
+   AddressPrefix = '10.21.0.0/16'
+```
 
-`}`
+```powershell
+}
+```
 
-`$virtualNetwork = New-AzVirtualNetwork @vnet`
+```powershell
+$virtualNetwork = New-AzVirtualNetwork @vnet
+```
 
 2. Specify subnet settings.
 
 **Azure PowerShell**
 
-`$subnet = @{`
+```powershell
+$subnet = @{
+```
 
-`Name = 'Subnet-1'`
+```powershell
+   Name = 'Subnet-1'
+```
 
-`VirtualNetwork = $virtualNetwork`
+```powershell
+   VirtualNetwork = $virtualNetwork
+```
 
-`AddressPrefix = '10.21.0.0/24'`
+```powershell
+   AddressPrefix = '10.21.0.0/24'
+```
 
-`}`
+```powershell
+}
+```
 
-`$subnetConfig = Add-AzVirtualNetworkSubnetConfig @subnet`
+```powershell
+$subnetConfig = Add-AzVirtualNetworkSubnetConfig @subnet
+```
 
 3. Set the VNet.
 
 **Azure PowerShell**
 
-`$virtualNetwork | Set-AzVirtualNetwork`
+```powershell
+$virtualNetwork | Set-AzVirtualNetwork
+```
 
 ### Connect a VNet to a hub
 
@@ -199,17 +261,27 @@ If VPN gateways are present in the virtual hub, this operation as well as any ot
 
 1. Declare the variables for the existing resources, including the existing virtual network.
 
-`$resourceGroup = Get-AzResourceGroup -ResourceGroupName "TestRG"`
+```powershell
+$resourceGroup = Get-AzResourceGroup -ResourceGroupName "TestRG" 
+```
 
-`$virtualWan = Get-AzVirtualWan -ResourceGroupName "TestRG" -Name "TestVWAN1"`
+```powershell
+$virtualWan = Get-AzVirtualWan -ResourceGroupName "TestRG" -Name "TestVWAN1"
+```
 
-`$virtualHub = Get-AzVirtualHub -ResourceGroupName "TestRG" -Name "Hub1"`
+```powershell
+$virtualHub = Get-AzVirtualHub -ResourceGroupName "TestRG" -Name "Hub1"
+```
 
-`$remoteVirtualNetwork = Get-AzVirtualNetwork -Name "VNet1" -ResourceGroupName "TestRG"`
+```powershell
+$remoteVirtualNetwork = Get-AzVirtualNetwork -Name "VNet1" -ResourceGroupName "TestRG"
+```
 
 2. Create a connection to peer the virtual network to the virtual hub.
 
-`New-AzVirtualHubVnetConnection -ResourceGroupName "TestRG" -VirtualHubName "Hub1" -Name "VNet1-connection" -RemoteVirtualNetwork $remoteVirtualNetwork`
+```powershell
+New-AzVirtualHubVnetConnection -ResourceGroupName "TestRG" -VirtualHubName "Hub1" -Name "VNet1-connection" -RemoteVirtualNetwork $remoteVirtualNetwork
+```
 
 ### Configure VPN device
 
@@ -252,205 +324,405 @@ The device configuration file contains the settings to use when configuring your
 
 #### Example device configuration file
 
-`{`
-
-`"configurationVersion":{`
-
-`"LastUpdatedTime":"2018-07-03T18:29:49.8405161Z",`
-
-`"Version":"r403583d-9c82-4cb8-8570-1cbbcd9983b5"`
-
-`},`
-
-`"vpnSiteConfiguration":{`
-
-`"Name":"testsite1",`
-
-`"IPAddress":"73.239.3.208"`
-
-`},`
-
-`"vpnSiteConnections":[`
-
-`{`
-
-`"hubConfiguration":{`
-
-`"AddressSpace":"10.1.0.0/24",`
-
-`"Region":"West Europe",`
-
-`"ConnectedSubnets":[`
-
-`"10.2.0.0/16",`
-
-`"10.3.0.0/16"`
-
-`]`
-
-`},`
-
-`"gatewayConfiguration":{`
-
-`"IpAddresses":{`
-
-`"Instance0":"104.45.18.186",`
-
-`"Instance1":"104.45.13.195"`
-
-`}`
-
-`},`
-
-`"connectionConfiguration":{`
-
-`"IsBgpEnabled":false,`
-
-`"PSK":"bkOWe5dPPqkx0DfFE3tyuP7y3oYqAEbI",`
-
-`"IPsecParameters":{`
-
-`"SADataSizeInKilobytes":102400000,`
-
-`"SALifeTimeInSeconds":3600`
-
-`}`
-
-`}`
-
-`}`
-
-`]`
-
-`},`
-
-`{`
-
-`"configurationVersion":{`
-
-`"LastUpdatedTime":"2018-07-03T18:29:49.8405161Z",`
-
-`"Version":"1f33f891-e1ab-42b8-8d8c-c024d337bcac"`
-
-`},`
-
-`"vpnSiteConfiguration":{`
-
-`"Name":" testsite2",`
-
-`"IPAddress":"66.193.205.122"`
-
-`},`
-
-`"vpnSiteConnections":[`
-
-`{`
-
-`"hubConfiguration":{`
-
-`"AddressSpace":"10.1.0.0/24",`
-
-`"Region":"West Europe"`
-
-`},`
-
-`"gatewayConfiguration":{`
-
-`"IpAddresses":{`
-
-`"Instance0":"104.45.18.187",`
-
-`"Instance1":"104.45.13.195"`
-
-`}`
-
-`},`
-
-`"connectionConfiguration":{`
-
-`"IsBgpEnabled":false,`
-
-`"PSK":"XzODPyAYQqFs4ai9WzrJour0qLzeg7Qg",`
-
-`"IPsecParameters":{`
-
-`"SADataSizeInKilobytes":102400000,`
-
-`"SALifeTimeInSeconds":3600`
-
-`}`
-
-`}`
-
-`}`
-
-`]`
-
-`},`
-
-`{`
-
-`"configurationVersion":{`
-
-`"LastUpdatedTime":"2018-07-03T18:29:49.8405161Z",`
-
-`"Version":"cd1e4a23-96bd-43a9-93b5-b51c2a945c7"`
-
-`},`
-
-`"vpnSiteConfiguration":{`
-
-`"Name":" testsite3",`
-
-`"IPAddress":"182.71.123.228"`
-
-`},`
-
-`"vpnSiteConnections":[`
-
-`{`
-
-`"hubConfiguration":{`
-
-`"AddressSpace":"10.1.0.0/24",`
-
-`"Region":"West Europe"`
-
-`},`
-
-`"gatewayConfiguration":{`
-
-`"IpAddresses":{`
-
-`"Instance0":"104.45.18.187",`
-
-`"Instance1":"104.45.13.195"`
-
-`}`
-
-`},`
-
-`"connectionConfiguration":{`
-
-`"IsBgpEnabled":false,`
-
-`"PSK":"YLkSdSYd4wjjEThR3aIxaXaqNdxUwSo9",`
-
-`"IPsecParameters":{`
-
-`"SADataSizeInKilobytes":102400000,`
-
-`"SALifeTimeInSeconds":3600`
-
-`}`
-
-`}`
-
-`}`
-
-`]`
-
-`}`
+```powershell
+{ 
+```
+
+```powershell
+      "configurationVersion":{ 
+```
+
+```powershell
+         "LastUpdatedTime":"2018-07-03T18:29:49.8405161Z",
+```
+
+```powershell
+         "Version":"r403583d-9c82-4cb8-8570-1cbbcd9983b5"
+```
+
+```powershell
+      },
+```
+
+```powershell
+      "vpnSiteConfiguration":{ 
+```
+
+```powershell
+         "Name":"testsite1",
+```
+
+```powershell
+         "IPAddress":"73.239.3.208"
+```
+
+```powershell
+      },
+```
+
+```powershell
+      "vpnSiteConnections":[ 
+```
+
+```powershell
+         { 
+```
+
+```powershell
+            "hubConfiguration":{ 
+```
+
+```powershell
+               "AddressSpace":"10.1.0.0/24",
+```
+
+```powershell
+               "Region":"West Europe",
+```
+
+```powershell
+               "ConnectedSubnets":[ 
+```
+
+```powershell
+                  "10.2.0.0/16",
+```
+
+```powershell
+                  "10.3.0.0/16"
+```
+
+```powershell
+               ]
+```
+
+```powershell
+            },
+```
+
+```powershell
+            "gatewayConfiguration":{ 
+```
+
+```powershell
+               "IpAddresses":{ 
+```
+
+```powershell
+                  "Instance0":"104.45.18.186",
+```
+
+```powershell
+                  "Instance1":"104.45.13.195"
+```
+
+```powershell
+               }
+```
+
+```powershell
+            },
+```
+
+```powershell
+            "connectionConfiguration":{ 
+```
+
+```powershell
+               "IsBgpEnabled":false,
+```
+
+```powershell
+               "PSK":"bkOWe5dPPqkx0DfFE3tyuP7y3oYqAEbI",
+```
+
+```powershell
+               "IPsecParameters":{ 
+```
+
+```powershell
+                  "SADataSizeInKilobytes":102400000,
+```
+
+```powershell
+                  "SALifeTimeInSeconds":3600
+```
+
+```powershell
+               }
+```
+
+```powershell
+            }
+```
+
+```powershell
+         }
+```
+
+```powershell
+      ]
+```
+
+```powershell
+   },
+```
+
+```powershell
+   { 
+```
+
+```powershell
+      "configurationVersion":{ 
+```
+
+```powershell
+         "LastUpdatedTime":"2018-07-03T18:29:49.8405161Z",
+```
+
+```powershell
+         "Version":"1f33f891-e1ab-42b8-8d8c-c024d337bcac"
+```
+
+```powershell
+      },
+```
+
+```powershell
+      "vpnSiteConfiguration":{ 
+```
+
+```powershell
+         "Name":" testsite2",
+```
+
+```powershell
+         "IPAddress":"66.193.205.122"
+```
+
+```powershell
+      },
+```
+
+```powershell
+      "vpnSiteConnections":[ 
+```
+
+```powershell
+         { 
+```
+
+```powershell
+            "hubConfiguration":{ 
+```
+
+```powershell
+               "AddressSpace":"10.1.0.0/24",
+```
+
+```powershell
+               "Region":"West Europe"
+```
+
+```powershell
+            },
+```
+
+```powershell
+            "gatewayConfiguration":{ 
+```
+
+```powershell
+               "IpAddresses":{ 
+```
+
+```powershell
+                  "Instance0":"104.45.18.187",
+```
+
+```powershell
+                  "Instance1":"104.45.13.195"
+```
+
+```powershell
+               }
+```
+
+```powershell
+            },
+```
+
+```powershell
+            "connectionConfiguration":{ 
+```
+
+```powershell
+               "IsBgpEnabled":false,
+```
+
+```powershell
+               "PSK":"XzODPyAYQqFs4ai9WzrJour0qLzeg7Qg",
+```
+
+```powershell
+               "IPsecParameters":{ 
+```
+
+```powershell
+                  "SADataSizeInKilobytes":102400000,
+```
+
+```powershell
+                  "SALifeTimeInSeconds":3600
+```
+
+```powershell
+               }
+```
+
+```powershell
+            }
+```
+
+```powershell
+         }
+```
+
+```powershell
+      ]
+```
+
+```powershell
+   },
+```
+
+```powershell
+   { 
+```
+
+```powershell
+      "configurationVersion":{ 
+```
+
+```powershell
+         "LastUpdatedTime":"2018-07-03T18:29:49.8405161Z",
+```
+
+```powershell
+         "Version":"cd1e4a23-96bd-43a9-93b5-b51c2a945c7"
+```
+
+```powershell
+      },
+```
+
+```powershell
+      "vpnSiteConfiguration":{ 
+```
+
+```powershell
+         "Name":" testsite3",
+```
+
+```powershell
+         "IPAddress":"182.71.123.228"
+```
+
+```powershell
+      },
+```
+
+```powershell
+      "vpnSiteConnections":[ 
+```
+
+```powershell
+         { 
+```
+
+```powershell
+            "hubConfiguration":{ 
+```
+
+```powershell
+               "AddressSpace":"10.1.0.0/24",
+```
+
+```powershell
+               "Region":"West Europe"
+```
+
+```powershell
+            },
+```
+
+```powershell
+            "gatewayConfiguration":{ 
+```
+
+```powershell
+               "IpAddresses":{ 
+```
+
+```powershell
+                  "Instance0":"104.45.18.187",
+```
+
+```powershell
+                  "Instance1":"104.45.13.195"
+```
+
+```powershell
+               }
+```
+
+```powershell
+            },
+```
+
+```powershell
+            "connectionConfiguration":{ 
+```
+
+```powershell
+               "IsBgpEnabled":false,
+```
+
+```powershell
+               "PSK":"YLkSdSYd4wjjEThR3aIxaXaqNdxUwSo9",
+```
+
+```powershell
+               "IPsecParameters":{ 
+```
+
+```powershell
+                  "SADataSizeInKilobytes":102400000,
+```
+
+```powershell
+                  "SALifeTimeInSeconds":3600
+```
+
+```powershell
+               }
+```
+
+```powershell
+            }
+```
+
+```powershell
+         }
+```
+
+```powershell
+      ]
+```
+
+```powershell
+   }
+```
 
 #### Configure your VPN device
 
