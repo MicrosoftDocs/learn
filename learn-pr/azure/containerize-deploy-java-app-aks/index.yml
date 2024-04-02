@@ -32,7 +32,7 @@ products:
 - azure-kubernetes-service
 
 subjects:
-- container
+- containers
 units:
 - learn.containerize-deploy-java-app-aks.introduction
 - learn.containerize-deploy-java-app-aks.setup

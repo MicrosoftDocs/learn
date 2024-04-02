@@ -25,7 +25,7 @@ The first step in the flow is a Large Language Model (LLM) node that takes the c
 Next, you use the Index Lookup tool to query the search index you created with the integrated Azure AI Search feature and find the relevant information from your data source.
 
 > [!Tip]
-> Learn more about the [Index Lookup tool](https://learn.microsoft.com/azure/machine-learning/prompt-flow/tools-reference/index-lookup-tool?azure-portal=true).
+> Learn more about the [Index Lookup tool](/azure/machine-learning/prompt-flow/tools-reference/index-lookup-tool?azure-portal=true).
 
 ### Generate prompt context
 

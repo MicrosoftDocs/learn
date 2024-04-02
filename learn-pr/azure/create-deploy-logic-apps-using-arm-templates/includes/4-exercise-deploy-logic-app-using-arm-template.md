@@ -54,7 +54,7 @@ To deploy our logic app resource, we'll use the `az deployment group create` com
 
     ```azurecli
     az deployment group validate \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
     --template-file basic-template.json
     ```
 
@@ -71,7 +71,7 @@ To deploy our logic app resource, we'll use the `az deployment group create` com
     ```azurecli
     az deployment group create \
     --name MyDeployment \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
     --template-file basic-template.json
     ```
 
@@ -86,7 +86,7 @@ To deploy our logic app resource, we'll use the `az deployment group create` com
     ```azurecli
     az deployment group show \
     --name MyDeployment \
-    --resource-group <rgn>[sandbox resource group name]</rgn> 
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" 
     ```
 
     You see the same JSON block that you previously saw. You can run this command later if you ever need these details about the deployment. The output is structured as JSON to make it easier to feed into other tools you might use to track your deployments and cloud usage.

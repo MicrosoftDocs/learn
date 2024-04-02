@@ -38,7 +38,7 @@ products:
 subjects:
 - cloud-computing
 - data-engineering
-- database
+- databases
 units:
 - learn.wwl.work-with-cosmos-db.introduction
 - learn.wwl.work-with-cosmos-db.cosmos-db-dotnet-overview

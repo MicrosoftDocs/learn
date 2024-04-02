@@ -99,7 +99,7 @@ Create the Linux VM that to use through some examples.
     echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc
     source ~/.bashrc
     curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
-    curl https://packages.microsoft.com/config/ubuntu/16.04/prod.list | sudo tee /etc/apt/sources.list.d/msprod.list
+    curl https://packages.microsoft.com/config/ubuntu/22.10/prod.list | sudo tee /etc/apt/sources.list.d/msprod.list
     sudo apt-get update
     sudo ACCEPT_EULA=Y apt-get install -y mssql-tools unixodbc-dev
     ```

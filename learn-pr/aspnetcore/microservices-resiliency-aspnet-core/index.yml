@@ -33,7 +33,7 @@ products:
   - azure-container-registry
   - azure-kubernetes-service
 subjects:
-- serverless-compute
+- serverless-computing
 units:
   - learn.microservices-resiliency-aspnet-core.1-introduction
   - learn.microservices-resiliency-aspnet-core.2-application-infrastructure-resiliency

@@ -6,7 +6,7 @@ metadata:
   ms.date: 04/06/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
   ms.devlang: bash
 title: Introduction to Bash
@@ -31,7 +31,6 @@ products:
 - azure
 - azure-clis
 subjects:
-- development-tools
 - it-management-monitoring
 units:
 - learn.student-evangelism.bash-introduction.0-introduction

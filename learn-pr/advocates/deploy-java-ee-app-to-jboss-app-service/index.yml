@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/25/2023
   author: yoshioterada
   ms.author: yoterada
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=cloud_advocates
   ms.contributors: yoterada-03082021
 title: Deploy a Java EE (Jakarta EE) application to Azure

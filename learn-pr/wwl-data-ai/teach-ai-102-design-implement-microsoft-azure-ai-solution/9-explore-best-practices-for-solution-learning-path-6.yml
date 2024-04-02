@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.explore-best-practices-for-solution-learning-path-6
+title: Explore the best practices for Solution Learning Path 6
+metadata:
+  title: Explore the best practices for Solution Learning Path 6
+  description: "Explore the best practices for Solution Learning Path 6"
+  ms.date: 03/18/2024
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/9-explore-best-practices-for-solution-learning-path-6.md)]

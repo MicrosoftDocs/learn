@@ -1,4 +1,3 @@
-
 You can configure an Azure virtual machine with a managed identity during, or after, the creation of the virtual machine. CLI examples showing the commands for both system- and user-assigned identities are used in this unit.
 
 ## System-assigned managed identity
@@ -83,3 +82,4 @@ Azure supports multiple programming platforms through a series of [Azure SDKs](h
 | Node.js | [Create a virtual machine with system-assigned managed identity enabled](https://azure.microsoft.com/resources/samples/compute-node-msi-vm/) |
 | Python | [Create a virtual machine with system-assigned managed identity enabled](https://azure.microsoft.com/resources/samples/compute-python-msi-vm/) |
 | Ruby | [Create Azure virtual machine with an system-assigned identity enabled](https://github.com/Azure-Samples/compute-ruby-msi-vm/) |
+

@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/06/2023
   author: chrispyles
   ms.author: leestott
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Introduction to PyBryt for Classroom Auto-assessment
 summary: Learn how to use PyBryt, an open-source auto-assessment tool, to create assignments with targeted feedback and generalizable grading.
 abstract: |

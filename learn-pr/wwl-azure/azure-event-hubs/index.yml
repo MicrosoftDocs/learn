@@ -26,7 +26,7 @@ roles:
 products:
 - azure-event-hubs
 subjects:
-- data-ai
+- data-management
 units:
 - learn.wwl.azure-event-hubs.introduction
 - learn.wwl.azure-event-hubs.discover

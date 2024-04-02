@@ -10,7 +10,7 @@ In this exercise, you'll set up Traffic Manager to use the United States endpoin
 
     ```azurecli
     az network traffic-manager profile create \
-        --resource-group <rgn>Sandbox resource group </rgn> \
+        --resource-group "<rgn>[Sandbox resource group]</rgn>" \
         --name TM-MusicStream-Priority \
         --routing-method Priority \
         --unique-dns-name TM-MusicStream-Priority-$RANDOM
@@ -27,7 +27,7 @@ In this exercise, you'll set up Traffic Manager to use the United States endpoin
 
     ```azurecli
     az deployment group create \
-        --resource-group <rgn>Sandbox resource group </rgn> \
+        --resource-group "<rgn>[Sandbox resource group]</rgn>" \
         --template-uri  https://raw.githubusercontent.com/MicrosoftDocs/mslearn-distribute-load-with-traffic-manager/master/azuredeploy.json \
         --parameters password="$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 32)"
     ```
@@ -38,13 +38,13 @@ In this exercise, you'll set up Traffic Manager to use the United States endpoin
 
     ```azurecli
     WestId=$(az network public-ip show \
-        --resource-group <rgn>Sandbox resource group </rgn> \
+        --resource-group "<rgn>[Sandbox resource group]</rgn>" \
         --name westus2-vm-nic-pip \
         --query id \
         --output tsv)
 
     az network traffic-manager endpoint create \
-        --resource-group <rgn>Sandbox resource group </rgn> \
+        --resource-group "<rgn>[Sandbox resource group]</rgn>" \
         --profile-name TM-MusicStream-Priority \
         --name "Primary-WestUS" \
         --type azureEndpoints \
@@ -54,13 +54,13 @@ In this exercise, you'll set up Traffic Manager to use the United States endpoin
 
     ```azurecli
     WestId=$(az network public-ip show \
-        --resource-group <rgn>Sandbox resource group </rgn> \
+        --resource-group "<rgn>[Sandbox resource group]</rgn>" \
         --name westeurope-vm-nic-pip \
         --query id \
         --output tsv)
 
     az network traffic-manager endpoint create \
-        --resource-group <rgn>Sandbox resource group </rgn> \
+        --resource-group "<rgn>[Sandbox resource group]</rgn>" \
         --profile-name TM-MusicStream-Priority \
         --name "Failover-WestEurope" \
         --type azureEndpoints \
@@ -74,7 +74,7 @@ In this exercise, you'll set up Traffic Manager to use the United States endpoin
 
     ```azurecli
     az network traffic-manager endpoint list \
-        --resource-group <rgn>Sandbox resource group </rgn> \
+        --resource-group "<rgn>[Sandbox resource group]</rgn>" \
         --profile-name TM-MusicStream-Priority \
         --output table
     ```
@@ -87,7 +87,7 @@ In this exercise, you'll set up Traffic Manager to use the United States endpoin
 
     ```azurecli
     nslookup $(az network public-ip show \
-                --resource-group <rgn>Sandbox resource group </rgn> \
+                --resource-group "<rgn>[Sandbox resource group]</rgn>" \
                 --name westus2-vm-nic-pip \
                 --query dnsSettings.fqdn \
                 --output tsv)
@@ -97,7 +97,7 @@ In this exercise, you'll set up Traffic Manager to use the United States endpoin
 
     ```azurecli
     nslookup $(az network public-ip show \
-            --resource-group <rgn>Sandbox resource group </rgn> \
+            --resource-group "<rgn>[Sandbox resource group]</rgn>" \
             --name westeurope-vm-nic-pip \
             --query dnsSettings.fqdn \
             --output tsv)
@@ -108,7 +108,7 @@ In this exercise, you'll set up Traffic Manager to use the United States endpoin
     ```azurecli
     # Retrieve the address for the Traffic Manager profile
     nslookup $(az network traffic-manager profile show \
-                --resource-group <rgn>Sandbox resource group </rgn> \
+                --resource-group "<rgn>[Sandbox resource group]</rgn>" \
                 --name TM-MusicStream-Priority \
                 --query dnsConfig.fqdn \
                 --output tsv)
@@ -120,7 +120,7 @@ In this exercise, you'll set up Traffic Manager to use the United States endpoin
 
     ```azurecli
     echo http://$(az network traffic-manager profile show \
-        --resource-group <rgn>Sandbox resource group </rgn> \
+        --resource-group "<rgn>[Sandbox resource group]</rgn>" \
         --name TM-MusicStream-Priority \
         --query dnsConfig.fqdn \
         --output tsv)
@@ -136,7 +136,7 @@ In this exercise, you'll set up Traffic Manager to use the United States endpoin
 
     ```azurecli
     az network traffic-manager endpoint update \
-        --resource-group <rgn>Sandbox resource group </rgn>  \
+        --resource-group "<rgn>[Sandbox resource group]</rgn>"  \
         --name "Primary-WestUS" \
         --profile-name TM-MusicStream-Priority \
         --type azureEndpoints \
@@ -149,7 +149,7 @@ In this exercise, you'll set up Traffic Manager to use the United States endpoin
 
     ```azurecli
     nslookup $(az network public-ip show \
-                --resource-group <rgn>Sandbox resource group </rgn> \
+                --resource-group "<rgn>[Sandbox resource group]</rgn>" \
                 --name westus2-vm-nic-pip \
                 --query dnsSettings.fqdn \
                 --output tsv)
@@ -159,7 +159,7 @@ In this exercise, you'll set up Traffic Manager to use the United States endpoin
 
     ```azurecli
     nslookup $(az network public-ip show \
-                --resource-group <rgn>Sandbox resource group </rgn> \
+                --resource-group "<rgn>[Sandbox resource group]</rgn>" \
                 --name westeurope-vm-nic-pip \
                 --query dnsSettings.fqdn \
                 --output tsv)
@@ -169,7 +169,7 @@ In this exercise, you'll set up Traffic Manager to use the United States endpoin
 
     ```azurecli
     nslookup $(az network traffic-manager profile show \
-                --resource-group <rgn>Sandbox resource group </rgn> \
+                --resource-group "<rgn>[Sandbox resource group]</rgn>" \
                 --name TM-MusicStream-Priority \
                 --query dnsConfig.fqdn \
                 --output tsv)

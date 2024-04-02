@@ -17,7 +17,7 @@ With kubenet, the Azure platform automatically creates and configures the virtua
 
 Bear in mind that there are several factors that prevent kubenet from being an acceptable networking option for production. Kubenet shines as a quick method to prototype and test small applications in development. 
 
-Instead, Azure CNI is more suited for production environments for its configurable networking option that includes: 
+Instead, Azure CNI is more suited for production environments for its configurable networking option that includes:
 
 * Reduced latency.
 * Rapid-scaling capability through Virtual Nodes with Azure Container Instances.

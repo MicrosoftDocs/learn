@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/28/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen, devdivchpfy22
   ms.devlang: python
 title: Install coding tools for Python development
@@ -33,8 +33,6 @@ roles:
 - data-scientist
 products: 
 - vs-code
-subjects:
-- development-tools
 units:
 - learn.student-evangelism.install-code-tools-python-nasa.1-introduction
 - learn.student-evangelism.install-code-tools-python-nasa.2-about-programming-language

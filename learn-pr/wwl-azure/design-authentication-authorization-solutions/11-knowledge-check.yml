@@ -4,12 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/24/2023
+  ms.date: 03/06/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/11-knowledge-check.md)]

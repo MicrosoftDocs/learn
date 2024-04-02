@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Share data in Blazor applications
   description: "Learn how to share data between different Blazor components by using component parameters, cascading parameters, and the AppState pattern."
-  ms.date: 8/13/2021
+  ms.date: 02/09/2023
   author: csharpfritz
   ms.author: jefritz
   ms.manager: markl

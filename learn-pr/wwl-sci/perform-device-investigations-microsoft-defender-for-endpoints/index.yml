@@ -3,15 +3,15 @@ uid: learn.wwl.perform-device-investigations-microsoft-defender-for-endpoints
 metadata:
   title: Perform device investigations in Microsoft Defender for Endpoint
   description: "Perform device investigations in Microsoft Defender for Endpoint"
-  ms.date: 11/28/2023
+  ms.date: 03/13/2024
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: module
-  ms.service: azure
+  ms.service: defender-endpoint
 title: Perform device investigations in Microsoft Defender for Endpoint
-summary: Microsoft Defender for Endpoint provides detailed device information, including forensics information. Learn about information available to you through Microsoft Defender for Endpoint that will aid in your investigations.
+summary: Microsoft Defender for Endpoint provides detailed device information, including forensics information. Learn about information available to you through Microsoft Defender for Endpoint that aids in your investigations.
 abstract: |
-  Upon completion of this module, the learner will be able to:
+  Upon completion of this module, the learner is able to:
   - Use the device page in Microsoft Defender for Endpoint
   - Describe device forensics information collected by Microsoft Defender for Endpoint
   - Describe behavioral blocking by Microsoft Defender for Endpoint

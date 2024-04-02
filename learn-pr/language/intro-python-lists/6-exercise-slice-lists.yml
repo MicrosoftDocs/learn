@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Exercise - Work with list data
   description: This exercise will have you use your list skills to work with a list. You'll prompt the user for a planet, and then display the planets closer to and farther from the sun by using slices.
-  ms.date: 12/03/2021
+  ms.date: 06/06/2023
   author: softchris
   ms.author: chnoring
   ms.custom:

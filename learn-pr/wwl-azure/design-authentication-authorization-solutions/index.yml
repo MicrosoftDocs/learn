@@ -3,10 +3,12 @@ uid: learn.wwl.design-authentication-authorization-solutions
 metadata:
   title: Design authentication and authorization solutions
   description: "Azure Architects design and recommend authentication and authorization solutions."
-  ms.date: 03/24/2023
+  ms.date: 03/06/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.custom:
+  - N/A
 title: Design authentication and authorization solutions
 summary: Azure Architects design and recommend authentication and authorization solutions.
 abstract: |
@@ -23,6 +25,7 @@ abstract: |
     - Design for Azure Key Vault.
 prerequisites: |
   - Conceptual knowledge of identity assignment solutions, role-based access control, and identity protection methods.
+
   - Working experience creating, assigning, and securing corporate identities.
 iconUrl: /training/achievements/design-authentication-authorization.svg
 levels:

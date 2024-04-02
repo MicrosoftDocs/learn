@@ -1,41 +1,32 @@
-The Products Manager API is about to get serious style upgrade courtesy of you, fake Tailwind Traders developer. In this exercise, you'll turn all of the functions you created earlier into RESTful ones by modifying their configuration files.
+The Products Manager API is about to get serious style upgrade courtesy of you, the Tailwind Traders developer. In this exercise, you'll turn all of the functions you created earlier into RESTful ones by modifying their configuration files.
 
-1. In Visual Studio Code, open the `api/GetProducts/function.json` file.
+## Make the GetProducts route RESTful
 
-1. Modify the "methods" property so that it only contains the value "get".
+1. In Visual Studio Code, open the `api/src/index.ts` file.
 
-   ```json
-   "methods": ["get"]
-   ```
-
-1. Below the "methods" line, add a line that specifies a route of "products" for the *GetProducts* method.
+1. In the route definition for **GetProducts**, restrict the `methods` property so that it only contains the value `GET`.
 
    ```json
-   "route": "products"
+   methods: ['GET']
    ```
 
-   Your `function.json` file for *GetProducts* should now look like this.
+1. Add the `route` property with a value of `products` for a full route of `/api/products`.
 
-   ```json
-   {
-     "bindings": [
-       {
-         "authLevel": "function",
-         "type": "httpTrigger",
-         "direction": "in",
-         "name": "req",
-         "methods": ["get"],
-         "route": "products"
-       },
-       {
-         "type": "http",
-         "direction": "out",
-         "name": "res"
-       }
-     ],
-     "scriptFile": "../dist/GetProducts/index.js"
-   }
-   ```
+
+    ```json
+    route: 'products',
+    ```
+
+    The full route definition is:
+
+    ```typescript
+    app.http('GetProducts', {
+        methods: ['GET'],
+        route: 'products',       // <- route: /api/products
+        authLevel: 'anonymous',
+        handler: GetProducts
+    });
+    ```
 
 1. Save the file.
 
@@ -44,124 +35,85 @@ The Products Manager API is about to get serious style upgrade courtesy of you, 
 
 ## Make the CreateProduct function RESTful
 
-1. Open the `api/CreateProduct/function.json` file.
-
-1. Restrict the allowed "methods" to just "post".
+1. Still in the `api/src/index.ts` file, restrict the allowed `methods` property to `POST`.
 
    ```json
-   "methods": ["post"]
+   methods: ['POST']
    ```
 
-1. Below the "methods" line, add a line that specifies a new route for the *CreateProduct* method as "product".
+1. Add the `route` property with a value of `products` for a full route of `/api/products`.
 
-   ```json
-   "route": "product"
-   ```
 
-   Your `function.json` file for *CreateProduct* should now look like this.
+    ```json
+    route: 'products',
+    ```
 
-   ```json
-   {
-     "bindings": [
-       {
-         "authLevel": "function",
-         "type": "httpTrigger",
-         "direction": "in",
-         "name": "req",
-         "methods": ["post"],
-         "route": "product"
-       },
-       {
-         "type": "http",
-         "direction": "out",
-         "name": "res"
-       }
-     ],
-     "scriptFile": "../dist/CreateProduct/index.js"
-   }
-   ```
+    The full route definition is:
+
+    ```typescript
+    app.http('CreateProduct',{
+        methods: ['POST'],
+        route: 'products',
+        authLevel: 'anonymous',
+        handler: CreateProduct
+    });
+    ```
 
 1. Save the file.
 
 ## Make the UpdateProduct function RESTful
 
-1. Open the `api/UpdateProduct/function.json` file.
-
-1. Restrict the allowed "methods" to just "put".
+1. Still in the `api/src/index.ts` file, restrict the allowed `methods` property to `PUT`.
 
    ```json
-    "methods": ["put"]
+   methods: ['PUT'],
    ```
 
-1. Below the "methods" line, add a line that specifies a new route for the *UpdateProduct* method as "product".
+1. Add the `route` property with a value of `products` for a full route of `/api/products`.
 
-   ```json
-   "route": "product"
-   ```
 
-   Your `function.json` file for *UpdateProduct* should now look like this.
+    ```json
+    route: 'products',
+    ```
 
-   ```json
-   {
-     "bindings": [
-       {
-         "authLevel": "function",
-         "type": "httpTrigger",
-         "direction": "in",
-         "name": "req",
-         "methods": ["put"],
-         "route": "product"
-       },
-       {
-         "type": "http",
-         "direction": "out",
-         "name": "res"
-       }
-     ],
-     "scriptFile": "../dist/UpdateProduct/index.js"
-   }
-   ```
+    The full route definition is:
+
+    ```typescript
+    app.http('UpdateProduct', {
+        methods: ['PUT'],
+        route: 'products',
+        authLevel: 'anonymous',
+        handler: UpdateProduct
+    });
+    ```
 
 1. Save the file.
 
 ## Make the DeleteProduct function RESTful
 
-1. Open the `api/DeleteProduct/function.json` file.
-
-1. Restrict the allowed "methods" to just "delete".
+1. Still in the `api/src/index.ts` file, restrict the allowed `methods` property to `DELETE`.
 
    ```json
-    "methods": ["delete"]
+    methods: ['DELETE']
    ```
 
-1. Below the "methods" line, add a line that specifies a new route for the *DeleteProduct* method.
+1. Update the route to use the product id as a route parameter.
 
-   ```json
-   "route": "product/{id}"
-   ```
 
-   Your `function.json` file for DeleteProduct should now look like this.
+    ```json
+    route: 'products/{id}',
+    ```
 
-   ```json
-   {
-     "bindings": [
-       {
-         "authLevel": "function",
-         "type": "httpTrigger",
-         "direction": "in",
-         "name": "req",
-         "methods": ["delete"],
-         "route": "product/{id}"
-       },
-       {
-         "type": "http",
-         "direction": "out",
-         "name": "res"
-       }
-     ],
-     "scriptFile": "../dist/DeleteProduct/index.js"
-   }
-   ```
+    The full route definition is:
+
+    ```typescript
+    app.http('DeleteProduct', {
+        methods: ['DELETE'],
+        route: 'products/{id}',
+        authLevel: 'anonymous',
+        handler: DeleteProduct
+    });
+    ```
 
 1. Save the file.
 

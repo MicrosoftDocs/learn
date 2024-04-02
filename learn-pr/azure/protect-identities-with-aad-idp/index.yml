@@ -7,8 +7,7 @@ metadata:
   author: MicrosoftGuyJFlo
   ms.author: joflore
   ms.topic: module
-  ms.service: active-directory
-  ms.subservice: identity-protection
+  ms.service: entra-id-protection
 title: Protect your identities with Microsoft Entra ID Protection
 summary: Use the advanced detection and remediation of identity-based threats to protect your Microsoft Entra identities and applications from compromise.
 abstract: | 

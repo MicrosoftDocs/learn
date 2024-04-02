@@ -5,7 +5,7 @@ metadata:
   unitType: introduction
   title: Introduction
   description: This unit introduces you to managing end-to-end deployment scenarios by using Bicep and Azure Pipelines.
-  ms.date: 12/12/2022
+  ms.date: 02/28/2024
   author: mumian
   ms.author: jgao
   ms.topic: unit

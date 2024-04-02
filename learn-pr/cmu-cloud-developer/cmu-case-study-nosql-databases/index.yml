@@ -7,7 +7,7 @@ metadata:
   ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
   ms.service: cosmos-db
   ms.subservice: nosql
@@ -47,7 +47,7 @@ roles:
 products:
 - azure
 subjects:
-- database
+- databases
 units:
 - learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.0-introduction
 - learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.1-apache-hbase

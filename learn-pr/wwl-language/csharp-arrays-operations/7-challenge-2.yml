@@ -3,11 +3,13 @@ uid: learn.languages.csharp-arrays-operations.challenge-2
 title: Exercise - Complete a challenge to parse a string of orders, sort the orders and tag possible errors
 metadata:
   title: Exercise - Complete a challenge to parse a string of orders, sort the orders and tag possible errors
-  description: "Exercise - Complete a challenge to parse a string of orders, sort the orders and tag possible errors"
-  ms.date: 02/21/2024
+  description: "Use the array manipulations you've learned to help you write code that will parse a string of orders, sort the orders, and tag possible errors."
+  ms.date: 03/27/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/7-challenge-2.md)]

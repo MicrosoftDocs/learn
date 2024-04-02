@@ -24,7 +24,6 @@ roles:
 products:
 - azure-databricks
 subjects:
-- data-ai
 - data-management
 - machine-learning
 units:

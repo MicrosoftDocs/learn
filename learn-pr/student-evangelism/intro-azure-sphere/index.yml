@@ -30,7 +30,7 @@ roles:
 products:
 - azure-iot-edge
 subjects:
-- digital-application-innovation
+- app-development
 units:
 - learn.oxford.intro-azure-sphere.introduction
 - learn.oxford.intro-azure-sphere.what-azure-sphere
