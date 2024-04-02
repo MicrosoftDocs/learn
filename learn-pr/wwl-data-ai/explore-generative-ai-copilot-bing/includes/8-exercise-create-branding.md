@@ -19,7 +19,7 @@ Ask Copilot to suggest some catchy names for your destination, and a short tagli
 ``` 
 Okay. Now given everything we have worked on around this new destination 
 we created, its time to come up with some branding for it. Can you 
-suggest 5 options for a catchy name for this destination along with a 
+suggest a few options for a catchy name for this destination along with a 
 short one sentence tagline.
 
 ```

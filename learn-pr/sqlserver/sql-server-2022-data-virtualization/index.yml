@@ -34,7 +34,7 @@ roles:
 products:
   - sql-server
 subjects:
-  - database
+  - databases
 units:
 - learn.sql-server-2022-data-virtualization.introduction
 - learn.sql-server-2022-data-virtualization.polybase

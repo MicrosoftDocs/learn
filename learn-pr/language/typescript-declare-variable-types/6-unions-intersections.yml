@@ -4,7 +4,7 @@ title: Union and intersection types in TypeScript
 metadata:
   title: Union and intersection types in TypeScript
   description: Learn about the union type and the intersection type, how to combine two or more types and how to define a literal type.
-  ms.date: 02/11/2021
+  ms.date: 01/06/2023
   author: GeekTrainer
   ms.author: chnoring
   ms.topic: unit

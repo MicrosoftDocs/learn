@@ -4,12 +4,12 @@ title: Implement Azure Application Gateway
 metadata:
   title: Implement Azure Application Gateway
   description: "Implement Azure Application Gateway"
-  ms.date: 01/31/2024
+  ms.date: 03/07/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/2-implement.md)]

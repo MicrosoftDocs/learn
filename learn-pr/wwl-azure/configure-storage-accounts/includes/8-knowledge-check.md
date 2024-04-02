@@ -1,3 +1,4 @@
+
 Your organization has diverse requirements for their cloud-hosted data. You're responsible for designing a plan to configure secure access.
 
 - The admin team requests your help with implementing a storage replication strategy. They have questions about how to configure storage accounts. 

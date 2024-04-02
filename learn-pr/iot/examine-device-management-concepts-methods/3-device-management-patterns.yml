@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-device-management-concepts-methods.patterns
+title: Examine the device management patterns for Azure IoT Hub
+metadata:
+  title: Examine the device management patterns for Azure IoT Hub
+  description: This content is part of Examine device management concepts and methods for Azure IoT Hub
+  ms.date: 09/26/2023
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-device-management-patterns.md)]

@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: berryivor
   ms.topic: module-standard-task-based
-  ms.service: cognitive-services
+  ms.service: azure-ai-services
 title: Create a bot with the Bot Framework SDK
 summary: Learn how to build a bot by using the Microsoft Bot Framework SDK.
 abstract: |
@@ -31,7 +31,7 @@ products:
 - azure
 - azure-bot-service
 subjects:
-- chatbot
+- chatbots
 units:
 - learn.wwl.design-bot-conversation-flow.introduction
 - learn.wwl.design-bot-conversation-flow.introduce-principles-of-bot-design

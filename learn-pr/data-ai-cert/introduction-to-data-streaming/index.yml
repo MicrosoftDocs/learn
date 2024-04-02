@@ -27,7 +27,7 @@ products:
 - azure
 - azure-stream-analytics
 subjects:
-- serverless-compute
+- serverless-computing
 units:
 - learn.data-ai.introduction-to-data-streaming.introduction
 - learn.data-ai.introduction-to-data-streaming.data-streams

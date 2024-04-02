@@ -4,10 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/05/2024
+  ms.date: 03/12/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/8-knowledge-check.md)]
@@ -47,17 +49,17 @@ quiz:
     - content: "To act as a distributed denial-of-service (DDoS) protection service."
       isCorrect: false
       explanation: "While DDoS protection is crucial, Application Gateway's main role is in routing and load balancing, not direct DDoS mitigation."
-  - content: "When is Azure DDoS Protection Standard recommended?"
+  - content: "Which Azure service provides protection against Distributed Denial of Service (DDoS) attacks?"
     choices:
-    - content: "For enhancing user interface designs of web applications."
+    - content: "Azure Application Gateway."
       isCorrect: false
-      explanation: "DDoS Protection Standard aims to secure resources against DDoS attacks, unrelated to UI design."
-    - content: "For protecting Azure resources from distributed denial-of-service attacks."
+      explanation: "Incorrect because Azure Application Gateway primarily offers application delivery control, not DDoS protection."
+    - content: "Azure DDoS Protection."
       isCorrect: true
-      explanation: "Azure DDoS Protection Standard provides comprehensive defense mechanisms specifically designed to mitigate the impact of DDoS attacks, ensuring resource availability."
-    - content: "Azure DDoS Protection Standard provides comprehensive defense mechanisms specifically designed to mitigate the impact of DDoS attacks, ensuring resource availability."
+      explanation: "Correct because Azure DDoS Protection offers enhanced DDoS mitigation features to protect Azure resources from DDoS attacks."
+    - content: "Azure Blob Storage."
       isCorrect: false
-      explanation: "DDoS Protection focuses on security, not on data analysis or analytics services."
+      explanation: "Incorrect because Azure Blob Storage is a service for storing large amounts of unstructured object data, such as text or binary data, and is not related to DDoS protection."
   - content: "Why integrate a Web Application Firewall (WAF) with Azure services?"
     choices:
     - content: "To automate the deployment of new virtual machines."

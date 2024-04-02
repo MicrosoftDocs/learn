@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 10
 content: |
   [!include[](includes/3-configure-log-analytics-agent-workspace.md)]

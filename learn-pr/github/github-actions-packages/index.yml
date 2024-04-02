@@ -29,8 +29,6 @@ roles:
 - solution-architect
 products:
 - github
-subjects:
-- development-tools
 units:
 - learn.github.github-actions-packages.introduction
 - learn.github.github-actions-packages.what-is-github-packages

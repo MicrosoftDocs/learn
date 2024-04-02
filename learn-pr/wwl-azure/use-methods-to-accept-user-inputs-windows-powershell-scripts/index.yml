@@ -3,29 +3,47 @@ uid: learn.wwl.use-methods-to-accept-user-inputs-windows-powershell-scripts
 metadata:
   title: Use methods to accept user inputs in Windows PowerShell scripts
   description: "This method explains multiple methods for accepting user input in a Windows PowerShell script."
-  ms.date: 11/11/2022
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: powershell
+  ms.subservice: cmdlets
+  ai-usage: human-only
 title: Use methods to accept user inputs in Windows PowerShell scripts
 summary: This method explains multiple methods for accepting user input in a Windows PowerShell script.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  - Identify values in a script that are likely to change.
-  - Explain how to use Read-Host to accept user input.
-  - Explain how to use Get-Credential to accept user credentials.
-  - Explain how to use Out-GridView to obtain user input.
-  - Obtain user input by using Read-Host, Get-Credential, and Out-GridView.
-  - Explain how to pass parameters to a script.
-  - Obtain user input by using parameters.
+
+  -   Identify values in a script that are likely to change.
+
+  -   Explain how to use Read-Host to accept user input.
+
+  -   Explain how to use Get-Credential to accept user credentials.
+
+  -   Explain how to use Out-GridView to obtain user input.
+
+  -   Obtain user input by using Read-Host, Get-Credential, and Out-GridView.
+
+  -   Explain how to pass parameters to a script.
+
+  -   Obtain user input by using parameters.
 prerequisites: |
-  *   Familiarity with Windows networking technologies and implementation
-  *   Familiarity with Windows Server administration, maintenance, and troubleshooting
-  *   Familiarity with Windows PowerShell and its commands to perform specific tasks
-  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
-  *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
-  *   Familiarity with CIM and WMI technologies
-  *   Familiarity to use variables, arrays, and hash tables in Windows PowerShell
+  -   Familiarity with Windows networking technologies and implementation
+
+  -   Familiarity with Windows Server administration, maintenance, and troubleshooting
+
+  -   Familiarity with Windows PowerShell and its commands to perform specific tasks
+
+  -   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
+
+  -   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
+
+  -   Familiarity with CIM and WMI technologies
+
+  -   Familiarity to use variables, arrays, and hash tables in Windows PowerShell
 iconUrl: /training/achievements/use-methods-to-accept-user-inputs-windows-powershell-scripts.svg
 levels:
 - intermediate
@@ -40,7 +58,6 @@ products:
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

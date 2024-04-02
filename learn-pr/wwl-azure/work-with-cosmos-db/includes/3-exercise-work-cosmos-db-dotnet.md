@@ -1,5 +1,3 @@
-
-
 In this exercise you create a console app to perform the following operations in Azure Cosmos DB:
 
 * Connect to an Azure Cosmos DB account
@@ -217,3 +215,4 @@ You can now safely delete the *az204-cosmos-rg* resource group from your account
 ```
 az group delete --name az204-cosmos-rg --no-wait
 ```
+

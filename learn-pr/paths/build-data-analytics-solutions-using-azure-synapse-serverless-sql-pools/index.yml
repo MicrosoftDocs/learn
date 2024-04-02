@@ -28,7 +28,7 @@ products:
 subjects:
 - data-analytics
 - data-engineering
-- serverless-compute
+- serverless-computing
 modules:
 - learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools
 - learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake

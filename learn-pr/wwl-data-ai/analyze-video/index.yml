@@ -3,7 +3,7 @@ uid: learn.wwl.analyze-video
 metadata:
   title: Analyze video
   description: "Analyze video"
-  ms.service: cognitive-services
+  ms.service: azure-ai-services
   ms.date: 12/01/2023
   author: wwlpublish
   ms.author: berryivor

@@ -7,7 +7,7 @@ metadata:
   ms.date: 01/18/2024  
   author: sairamyeturi
   ms.author: sairamyeturi
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: hdinsight-aks
 title: Configure and manage HDInsight on AKS cluster
 summary: Learn how to set up and control HDInsight on AKS cluster. This guide walks you through the process, making it easy to configure and manage HDInsight within AKS.
@@ -30,7 +30,7 @@ products:
   - azure
   - azure-hdinsight
 subjects:
-- data-ai
+- data-management
 units:
 - learn.intro-configuration-management-hdinsight-aks.1-introduction
 - learn.intro-configuration-management-hdinsight-aks.2-guidelines-for-hdinsight-on-aks-cluster

@@ -1,30 +1,27 @@
-Microsoft Entra ID comes in four editions: **Free**, **Microsoft 365 Apps**, **Premium P1**, and **Premium P2**. The Free edition is included with an Azure subscription. The Premium editions are available through a Microsoft Enterprise Agreement, the Open Volume License Program, and the Cloud Solution Providers program. Azure and Microsoft 365 subscribers can also buy Microsoft Entra ID P1 and P2 online.
+Microsoft Entra ID comes in these editions: **Free**,  **Premium P1**, and **Premium P2**. The Free edition is included with an Azure subscription. The Premium editions are available through a Microsoft Enterprise Agreement, the Open Volume License Program, and the Cloud Solution Providers program. Azure and Microsoft 365 subscribers can also buy Microsoft Entra ID P1 and P2 online.
 
 ### Things to know about Microsoft Entra editions
 
 Consider the following features that distinguish the different editions of Microsoft Entra ID. After you review the features and descriptions, think about which edition works best for your organization. An `X` indicates the feature is supported.
 
-| Feature                                                         |   Free    |   Microsoft 365 Apps   |   Premium P1   |   Premium P2   |
-|:--------------------------------------------------------------- |:---------:|:----------------------:|:--------------:|:--------------:|
-| **Directory Objects**                                           |  500,000  |       Unlimited        |   Unlimited    |   Unlimited    |
-| **Single Sign-on**                                              | Unlimited |       Unlimited        |   Unlimited    |   Unlimited    |
-| **Core Identity and Access Management**                         |    `X`    |          `X`           |      `X`       |      `X`       |
-| **Business-to-business Collaboration**                          |    `X`    |          `X`           |      `X`       |      `X`       |
-| **Identity and Access Management<br>for Microsoft 365 apps**    |           |          `X`           |      `X`       |      `X`       |
-| **Premium Features**                                            |           |                        |      `X`       |      `X`       |
-| **Hybrid Identities**                                           |           |                        |      `X`       |      `X`       |
-| **Advanced Group Access Management**                            |           |                        |      `X`       |      `X`       |
-| **Conditional Access**                                          |           |                        |      `X`       |      `X`       |
-| **Identity Protection**                                         |           |                        |                |      `X`       |
-| **Identity Governance**                                         |           |                        |                |      `X`       |
+| Feature                                                         |   Free    |      Premium P1   |   Premium P2   |
+|:--------------------------------------------------------------- |:---------:|:--------------:|:--------------:|
+| **Directory Objects**                                           |  500,000  |   Unlimited    |   Unlimited    |
+| **Single Sign-on**                                              | Unlimited |   Unlimited    |   Unlimited    |
+| **Core Identity and Access Management**                         |    `X`    |       `X`       |      `X`       |
+| **Business-to-business Collaboration**                          |    `X`    |       `X`       |      `X`       |
+| **Identity and Access Management<br>for Microsoft 365 apps**    |           |       `X`       |      `X`       |
+| **Premium Features**                                            |           |        `X`       |      `X`       |
+| **Hybrid Identities**                                           |           |        `X`       |      `X`       |
+| **Advanced Group Access Management**                            |           |        `X`       |      `X`       |
+| **Conditional Access**                                          |           |       `X`       |      `X`       |
+| **Identity Protection**                                         |           |                |      `X`       |
+| **Identity Governance**                                         |           |                 |      `X`       |
+
 
 #### Microsoft Entra ID Free
 
 The Free edition provides user and group management, on-premises directory synchronization, and basic reports. Single sign-on access is supported across Azure, Microsoft 365, and many popular SaaS apps.
-
-#### Microsoft Entra Microsoft 365 Apps
-
-This edition is included with Microsoft 365. In addition to the Free features, this edition provides Identity and Access Management for Microsoft 365 apps. The extra support includes branding, MFA, group access management, and self-service password reset for cloud users.
 
 #### Microsoft Entra ID P1
 

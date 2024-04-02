@@ -31,7 +31,7 @@ products:
 - azure-synapse-analytics
 - microsoft-purview
 subjects:
-- data-ai
+- data-management
 - data-engineering
 units:
 - learn.wwl.integrate-microsoft-purview-azure-synapse-analytics.introduction

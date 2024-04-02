@@ -46,3 +46,4 @@ Tailwind Traders wants to provide identity management for partners, external ven
 - **Consider integration with identity providers**. Integrate with identity providers so external users can sign in by using an existing account. Microsoft Entra ID supports external identity providers like Facebook, Microsoft accounts, Google, or enterprise identity providers. You can set up federation for Tailwind Traders with identity providers so external users can use their existing social or enterprise account. External users won't have to create a new account just to access your Tailwind Traders apps.
 
 - **Consider self-service sign-up user flow**. Create a self-service sign-up user flow for external users who want to access your Tailwind Traders apps. As part of the sign-up flow, you can provide options for different social or enterprise identity providers, and collect information about the user. You can also customize the onboarding experience for B2B guest users.
+

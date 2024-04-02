@@ -12,13 +12,13 @@ This unit provides an overview of Audit (Premium) capabilities.
 
 ### Organization subscription and user licensing
 
-Audit (Premium) is available for organizations with an Office 365 E5/A5/G5 or Microsoft 365 Enterprise E5/A5/G5 subscription. For organizations with an E5/A5/G5 subscription, eligible customers and users who are assigned the appropriate E5/A5/G5 license have access to Audit (Premium) events. Audit (Premium) events will only be generated for users with E5/A5/G5 licenses once those licenses have been assigned.
+Audit (Premium) is available for organizations with an Office 365 E5/A5/G5 or Microsoft 365 Enterprise E5/A5/G5 subscription. For organizations with an E5/A5/G5 subscription, eligible customers and users who are assigned the appropriate E5/A5/G5 license have access to Audit (Premium) events. Audit (Premium) events are only generated for users with E5/A5/G5 licenses once those licenses are assigned.
 
-To benefit from user-level Audit (Premium) capabilities, a user must be assigned an E5/A5/G5 license. There are some capabilities that check for the appropriate license to expose the feature for the user. For example, if you're trying to retain the audit records for a user who isn't assigned the appropriate license for longer than 90 days, the system returns an error message.
+To benefit from user-level Audit (Premium) capabilities that retain audit logs for longer than 180 days (and up to one year), the user who generates the audit log (by performing an audited activity) must be assigned an Office 365 E5 or Microsoft 365 E5 license or have a Microsoft 365 E5 Compliance or E5 eDiscovery and Audit add-on license. To retain audit logs for 10 years, the user who generates the audit log must also be assigned a 10-year audit log retention add-on license in addition to an E5 license.
 
 ### Long-term retention of audit logs
 
-When an audited activity is performed by a user or admin, an audit record is generated and stored in the audit log for the organization. In Microsoft Purview Audit (Standard), audit log records are retained for 90 days. In comparison, Audit (Premium) retains all Exchange, SharePoint, and Microsoft Entra audit records for one year.
+When an audited activity is performed by a user or admin, an audit record is generated and stored in the audit log for the organization. In Microsoft Purview Audit (Standard), audit log records are retained for 180 days. In comparison, Audit (Premium) retains all Exchange, SharePoint, and Microsoft Entra audit records for one year.
 
 Audit (Premium) provides this extra retention time by implementing a default audit log retention policy. Retaining audit records for longer periods can help with on-going forensic or compliance investigations. For more information, see the "Default audit log retention policy" section in [Manage audit log retention policies](/microsoft-365/compliance/audit-log-retention-policies?azure-portal=true).
 
@@ -27,7 +27,7 @@ Audit (Premium) provides this extra retention time by implementing a default aud
 
 ### Audit log retention policies
 
-All audit records generated in other services that aren't covered by the default audit log retention policy are retained for 90 days. But you can create customized audit log retention policies to retain other audit records for up to 10 years. You can create a policy to retain audit records based on one or more of the following criteria:
+All audit records generated in other services that aren't covered by the default audit log retention policy are retained for 180 days. But you can create customized audit log retention policies to retain other audit records for up to 10 years. You can create a policy to retain audit records based on one or more of the following criteria:
 
 - The Microsoft 365 service where the audited activities occur.
 - Specific audited activities.
@@ -66,7 +66,7 @@ Audit (Premium) provides the following new events, each of which is introduced i
 
 #### MailItemsAccessed event
 
-The MailItemsAccessed event is a mailbox auditing action. It's triggered when mail data is accessed by mail protocols and mail clients. This event can help investigators identify data breaches and determine the scope of messages that may have been compromised. If an attacker gained access to email messages, the MailItemsAccessed action is triggered even if there's no explicit signal that messages were read. In other words, the type of access such as a bind or sync is recorded in the audit record.
+The MailItemsAccessed event is a mailbox auditing action. It's triggered when mail data is accessed by mail protocols and mail clients. This event can help investigators identify data breaches and determine the scope of messages that  have been compromised. If an attacker gained access to email messages, the MailItemsAccessed action is triggered even if there's no explicit signal that messages were read. In other words, the type of access such as a bind or sync is recorded in the audit record.
 
 The MailItemsAccessed event replaces MessageBind in mailbox auditing logging in Exchange Online. It provides the following improvements:
 
@@ -118,7 +118,7 @@ The SearchQueryInitiatedExchange event is triggered when a person uses Outlook t
 - Outlook for Android
 - Mail app for Windows 10
 
-Investigators can use the SearchQueryInitiatedExchange event to determine if an attacker (who may have compromised an account) looked for or tried to access sensitive information in the mailbox. The audit record for a SearchQueryInitiatedExchange event contains information such as the actual text of the search query. The audit record also indicates the Outlook environment the search was performed in. By looking at the search queries that an attacker may have performed, an investigator can better understand the intent of the email data that was searched for.
+Investigators can use the SearchQueryInitiatedExchange event to determine if an attacker (who compromised an account) looked for or tried to access sensitive information in the mailbox. The audit record for a SearchQueryInitiatedExchange event contains information such as the actual text of the search query. The audit record also indicates the Outlook environment the search was performed in. By looking at the search queries that an attacker performed, an investigator can better understand the intent of the email data that was searched for.
 
 To search for SearchQueryInitiatedExchange audit records, you can search for the **Performed email search** activity in the Search activities drop-down list in the audit log search tool in the Microsoft Purview compliance portal.
 
@@ -138,7 +138,7 @@ The SearchQueryInitiatedSharePoint event is similar to searching for mailbox ite
 - Hub sites
 - Sites associated with Microsoft Teams
 
-Investigators can use the SearchQueryInitiatedSharePoint event to determine if an attacker tried to find (and possibly accessed) sensitive information in SharePoint. The audit record for a SearchQueryInitiatedSharePoint event contains the actual text of the search query. The audit record also indicates the type of SharePoint site that was searched. By looking at the search queries that an attacker may have run, an investigator can better understand the intent and scope of the file data the attacker searched for.
+Investigators can use the SearchQueryInitiatedSharePoint event to determine if an attacker tried to find (and possibly accessed) sensitive information in SharePoint. The audit record for a SearchQueryInitiatedSharePoint event contains the actual text of the search query. The audit record also indicates the type of SharePoint site that was searched. By looking at the search queries that an attacker ran, an investigator can better understand the intent and scope of the file data the attacker searched for.
 
 To search for SearchQueryInitiatedSharePoint audit records, you can search for the **Performed SharePoint search** activity in the Search activities drop-down list in the audit log search tool in the Microsoft Purview compliance portal.
 
@@ -161,11 +161,11 @@ Besides the events in Exchange Online and SharePoint Online, there are events in
 
 ### High-bandwidth access to the Office 365 Management Activity API
 
-Organizations that previously accessed auditing logs through the Office 365 Management Activity API were restricted by throttling limits at the publisher level. As a result, for publishers who pulled data on behalf of multiple customers, the limit was shared by all those customers.
+Organizations that previously accessed auditing logs through the Office 365 Management Activity API were restricted by throttling limits at the publisher level. As a result, for publishers who pulled data on behalf of multiple customers, the limit is shared by all those customers.
 
-With the release of Audit (Premium), Microsoft 365 has moved from a publisher-level limit to a tenant-level limit. The result is that each organization gets their own fully allocated bandwidth quota to access their auditing data. The bandwidth isn't a static, predefined limit. Instead, it's modeled on a combination of factors. These factors include the number of seats in the organization, and the fact that E5/A5/G5 organizations get more bandwidth than non-E5/A5/G5 organizations.
+With the release of Audit (Premium), Microsoft 365 moved from a publisher-level limit to a tenant-level limit. The result is that each organization gets their own fully allocated bandwidth quota to access their auditing data. The bandwidth isn't a static, predefined limit. Instead, it's modeled on a combination of factors. These factors include the number of users in the organization, and the fact that E5/A5/G5 organizations get more bandwidth than non-E5/A5/G5 organizations.
 
-All organizations are initially allocated a baseline of 2,000 requests per minute. This limit will dynamically increase depending on an organization's seat count and their licensing subscription. E5/A5/G5 organizations get about twice as much bandwidth as non-E5/A5/G5 organizations. There will also be a cap on the maximum bandwidth to protect the health of the service.
+All organizations are initially allocated a baseline of 2,000 requests per minute. This limit dynamically increases depending on an organization's user count and their licensing subscription. E5/A5/G5 organizations get about twice as much bandwidth as non-E5/A5/G5 organizations. There will be a cap on the maximum bandwidth to protect the health of the service.
 
 **Additional reading**. For more information, see the "API throttling" section in [Office 365 Management Activity API reference](/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling?azure-portal=true). [FAQs for Audit (Premium)](/microsoft-365/compliance/audit-premium#faqs-for-audit-premium)
 

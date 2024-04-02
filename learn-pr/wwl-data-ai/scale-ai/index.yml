@@ -30,7 +30,7 @@ products:
 - m365
 subjects:
 - artificial-intelligence
-- data-ai
+- data-management
 units:
 - learn.wwl.scale-ai.introduction
 - learn.wwl.scale-ai.evaluate-prioritize-ai-investments

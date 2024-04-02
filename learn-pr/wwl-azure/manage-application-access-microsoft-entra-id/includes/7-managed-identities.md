@@ -39,3 +39,26 @@ You can use managed identities by following the steps below:
      -  When using a user-assigned managed identity, you assign the managed identity to the "source" Azure Resource, such as a Virtual Machine, Azure Logic App or an Azure Web App.
 2.  Authorize the managed identity to have access to the "target" service.
 3.  Use the managed identity to access a resource. In this step, you can use the Azure SDK with the Azure.Identity library. Some "source" resources offer connectors that know how to use Managed identities for the connections. In that case, you use the identity as a feature of that "source" resource.
+
+## What Azure services support the feature?
+
+Managed identities for Azure resources can be used to authenticate to services that support Microsoft Entra authentication.
+
+## Which operations can I perform on managed identities?
+
+Resources that support system assigned managed identities allow you to:
+
+ -  Enable or disable managed identities at the resource level.<br>
+ -  Use role-based access control (RBAC) to grant permissions.
+ -  View the create, read, update, and delete (CRUD) operations in Azure Activity logs.
+ -  View sign in activity in Microsoft Entra ID sign in logs.
+
+If you choose a user assigned managed identity instead:
+
+ -  You can create, read, update, and delete the identities.<br>
+ -  You can use RBAC role assignments to grant permissions.
+ -  User assigned managed identities can be used on more than one resource.
+ -  CRUD operations are available for review in Azure Activity logs.
+ -  View sign in activity in Microsoft Entra ID sign in logs.
+
+Operations on managed identities can be performed by using an Azure Resource Manager template, the Azure portal, Azure CLI, PowerShell, and REST APIs.

@@ -30,7 +30,7 @@ products:
   - azure
   - azure-app-configuration
 subjects:
-- serverless-compute
+- serverless-computing
 units:
   - learn.microservices-configuration-aspnet-core.1-introduction
   - learn.microservices-configuration-aspnet-core.2-review-app-configuration

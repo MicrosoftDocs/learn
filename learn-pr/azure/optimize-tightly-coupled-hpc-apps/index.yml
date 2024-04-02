@@ -30,7 +30,7 @@ products:
 - azure
 subjects:
 - virtual-machine
-- high-performance-computing
+- infrastructure
 units:
 - learn.azure.optimize-hpc-application-azure-virtual-machines-series.1-introduction
 - learn.azure.optimize-hpc-application-azure-virtual-machines-series.2-selecting-the-right-hpc-sku

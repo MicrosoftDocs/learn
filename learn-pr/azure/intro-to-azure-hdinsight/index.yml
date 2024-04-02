@@ -30,7 +30,7 @@ products:
   - azure
   - azure-hdinsight
 subjects:
-- data-ai
+- data-management
 units:
 - learn.intro-to-azure-hdinsight.1-introduction
 - learn.intro-to-azure-hdinsight.2-what-is-azure-hdinsight

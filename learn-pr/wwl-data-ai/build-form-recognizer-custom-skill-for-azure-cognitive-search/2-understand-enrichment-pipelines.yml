@@ -4,10 +4,12 @@ title: Understand Azure AI Search enrichment pipelines
 metadata:
   title: Understand Azure AI Search enrichment pipelines
   description: "Understand Azure AI Search enrichment pipelines"
-  ms.date: 02/06/2024
+  ms.date: 03/12/2024
   author: wwlpublish
-  ms.author: berryivor
+  ms.author: rcaper
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/2-understand-enrichment-pipelines.md)]

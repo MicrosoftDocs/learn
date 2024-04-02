@@ -8,8 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: berryivor
   ms.topic: unit
-  ms.service: azure-ai-language
-  ms.subservice: azure-ai-question-answering
 durationInMinutes: 20
 labId: 152405
 labModal: true

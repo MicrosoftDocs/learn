@@ -4,24 +4,23 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/12/2023
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
-labModal: false
 durationInMinutes: 4
 quiz:
+  title: ""
   questions:
   - content: "Which permissions are needed to be able to create a table using Transact-SQL?"
     choices:
-    - content: "The ALTER TABLE, and CREATE SCHEMA permissions"
+    - content: "The ALTER TABLE, and CREATE SCHEMA permissions."
       isCorrect: false
-      explanation: "Incorrect. These are not the right permissions."
-    - content: "The UPDATE TABLE, and MODIFY SCHEMA permissions"
+      explanation: "Incorrect. These aren't the right permissions."
+    - content: "The UPDATE TABLE, and MODIFY SCHEMA permissions."
       isCorrect: false
-      explanation: "Incorrect. These are not the right permissions."
-    - content: "The CREATE TABLE, and ALTER SCHEMA permissions"
+      explanation: "Incorrect. These aren't the right permissions."
+    - content: "The CREATE TABLE, and ALTER SCHEMA permissions."
       isCorrect: true
       explanation: "Correct. These permissions enable you to create tables."
   - content: "Which of the following features is required for a CTE query?"

@@ -81,7 +81,7 @@ Next, deploy the Python code for the Function App:
 1. In the Cloud Shell, change to the `customskill` folder:
 
     ```bash
-    cd ~/doc-intelligence/04-custom-skill/customskill
+    cd ~/doc-intelligence/Labfiles/04-custom-skill/customskill
     ```
 
 1. To use the Azure Functions Core Tools to deploy the Python code to your Function App, type this command and substitute `<FunctionName>` for the name you used when you created the Function App:

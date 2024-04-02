@@ -7,7 +7,7 @@ metadata:
   description: When data needs to be available all the time, high availability can be enabled on an Azure Cosmos DB for PostgreSQL cluster.
   ms.custom:
     - ignite-2022
-  ms.date: 09/22/2022
+  ms.date: 06/14/2023
   author: seesharprun
   ms.author: sidandrews
   ms.reviewer: jonels

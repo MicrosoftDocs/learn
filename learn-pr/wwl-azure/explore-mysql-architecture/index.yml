@@ -27,7 +27,7 @@ products:
 - azure-database-mysql
 - azure-storage
 subjects:
-- database
+- databases
 units:
 - learn.wwl.explore-mysql-architecture.introduction
 - learn.wwl.explore-mysql-architecture.explore-mysql-architecture

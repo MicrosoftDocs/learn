@@ -27,7 +27,7 @@ Follow these steps to enforce a policy to manage the use of GitHub Copilot Enter
 
 ### Enable access to GitHub Copilot for selected users in your organization
 
-First, complete steps 1-2 in the preceding enabling steps. Then follow steps 1-3 below.
+First, complete steps 1-2 in the preceding enforce a policy steps. Then follow steps 1-3 below.
 
 1. To enable GitHub Copilot for select users in your organization, select **Selected teams/users** under **User permissions**.
 1. In the **Confirm seat assignment** dialog, confirm that you want to enable GitHub Copilot for selected teams/users in your organization, then select **Confirm**.

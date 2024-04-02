@@ -30,4 +30,4 @@ After creating your flow, and configuring the necessary connections your tools u
 
 Runtimes (1) are a combination of a **compute instance** (2) providing the necessary compute resources, and an **environment** (3) specifying the necessary packages and libraries that need to be installed before being able to run the flow.
 
-When you use runtimes, you have a controlled environment where flows can be run and validated, ensuring that everything works as intended in a stable setting. A default environment is available for quick development and testing. When you require other packages to be installed, you can [create a custom environment](https://learn.microsoft.com/azure/machine-learning/prompt-flow/how-to-customize-environment-runtime?azure-portal=true).
+When you use runtimes, you have a controlled environment where flows can be run and validated, ensuring that everything works as intended in a stable setting. A default environment is available for quick development and testing. When you require other packages to be installed, you can [create a custom environment](/azure/machine-learning/prompt-flow/how-to-customize-environment-runtime?azure-portal=true).

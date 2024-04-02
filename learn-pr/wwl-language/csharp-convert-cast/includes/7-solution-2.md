@@ -7,7 +7,7 @@ float value3 = 4.3f;
 
 // The Convert class is best for converting the fractional decimal numbers into whole integer numbers
 // Convert.ToInt32() rounds up the way you would expect.
-int result1 = Convert.ToInt32((decimal)value1 / value2);
+int result1 = Convert.ToInt32(value1 / value2);
 Console.WriteLine($"Divide value1 by value2, display the result as an int: {result1}");
 
 decimal result2 = value2 / (decimal)value3;

@@ -28,7 +28,7 @@ products:
 - azure
 - azure-functions
 subjects:
-- serverless-compute
+- serverless-computing
 - cloud-computing
 units:
 - learn-pr.develop-test-deploy-azure-functions-core-tools.1-introduction

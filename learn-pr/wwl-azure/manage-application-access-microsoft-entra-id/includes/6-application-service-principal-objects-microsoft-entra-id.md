@@ -1,6 +1,6 @@
 ## Application registration
 
-To delegate identity and access management functions to Microsoft Entra ID, an application must be registered with a Microsoft Entra tenant. When you register your application with Microsoft Entra ID, you're creating an identity configuration for your application that allows it to integrate with Microsoft Entra ID. When you register an app, you choose whether it's a single tenant, or multitenant, and can optionally set a redirect URI. For step-by-step instructions on registering an app, see the app registration quickstart.
+To delegate identity and access management functions to Microsoft Entra ID, an application must be registered with a Microsoft Entra tenant. When you register your application with Microsoft Entra ID, you're creating an identity configuration for your application that allows it to integrate with Microsoft Entra ID. When you register an app, you choose whether it's a single tenant, or multitenant, and can optionally set a redirect URI.
 
 When you've completed the app registration, you have a globally unique instance of the app (the application object) that lives within your home tenant or directory. You also have a globally unique ID for your app (the app/client ID). You can add secrets or certificates and scopes to make your app work, customize the branding of your app in the sign-in dialog, and more.<br>
 
@@ -17,6 +17,9 @@ The application object describes three aspects of an application:<br>
  -  The actions that the application can take
 
 You can use the **App registrations** page in the Microsoft Entra admin center to list and manage the application objects in your home tenant.
+
+:::image type="content" source="../media/application-registrations-blade-7ec323ae.png" alt-text="Screenshot showing the application registrations page.":::
+
 
 The Microsoft Graph **Application entity** defines the schema for an application object's properties.<br>
 
@@ -38,6 +41,9 @@ The Microsoft Graph **ServicePrincipal entity** defines the schema for a service
 
 You can use the **Enterprise applications** page in the Microsoft Entra admin center to list and manage the service principals in a tenant. You can see the service principal's permissions, user consented permissions, which users have done that consent, sign in information, and more.
 
+:::image type="content" source="../media/enterprise-applications-blade-d3da40f7.png" alt-text="Screenshot showing the enterprise applications page.":::
+
+
 ## Relationship between application objects and service principals
 
 The application object is the global representation of your application for use across all tenants, and the service principal is the local representation for use in a specific tenant. The application object serves as the template from which common and default properties are derived for use in creating corresponding service principal objects.
@@ -53,11 +59,27 @@ A service principal must be created in each tenant where the application is used
 
 You can find the service principals associated with an application object.
 
-Consequences of modifying and deleting applications<br>
+:::image type="content" source="../media/find-service-principal-39e86563.png" alt-text="Screenshot showing an example of the Microsoft Entra administration center page.":::
+
+
+## Consequences of modifying and deleting applications<br>
 
 Any changes that you make to your application object are also reflected in its service principal object in the application's home tenant only (the tenant where it was registered). This means that deleting an application object will also delete its home tenant service principal object. However, restoring that application object through the app registrations UI won't restore its corresponding service principal.
 
-In this example scenario:<br>
+In this example scenario:
+
+### Example
+
+The following diagram illustrates the relationship between an application's application object and corresponding service principal objects in the context of a sample multitenant application called HR app. There are three Microsoft Entra tenants in this example scenario:
+
+ -  **Adatum** \- The tenant used by the company that developed the HR app<br>
+ -  **Contoso** \- The tenant used by the Contoso organization, which is a consumer of the HR app
+ -  **Fabrikam** \- The tenant used by the Fabrikam organization, which also consumes the HR app
+
+:::image type="content" source="../media/application-objects-relationship-08987afd.svg" alt-text="Diagram showing an example of the relationship between applications and objects.":::
+
+
+In this example scenario:
 
 | **Step** | **Description**                                                                                                                                                                                                                                                                                              |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

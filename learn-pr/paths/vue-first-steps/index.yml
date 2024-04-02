@@ -26,8 +26,6 @@ roles:
 - student
 products:
 - static-web-apps
-subjects:
-- development-tools
 modules:
 - learn.language.vue-get-started
 - learn.language.vue-dynamic-rendering

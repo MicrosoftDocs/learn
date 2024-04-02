@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-manage-sensitivity-labels.apply-protections-restrictions-to-email-files
+title: Apply protections and restrictions to email and files
+metadata:
+  title: Apply protections and restrictions to email and files
+  description: "Apply protections and restrictions to email and files"
+  ms.date: 06/17/2022
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/apply-protections-restrictions-to-email-files.md)]

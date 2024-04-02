@@ -40,7 +40,7 @@ products:
  - vs-code
 
 subjects:
-  - digital-application-innovation
+  - app-development
 
 units:
 - learn.develop-on-remote-machine.introduction

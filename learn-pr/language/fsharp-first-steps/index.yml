@@ -8,7 +8,7 @@ metadata:
   author: luisquintanilla
   ms.author: luquinta
   ms.manager: markl
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.devlang: fsharp
 title: Write your first F# code
 summary: "Take your first steps with F# - Set up your development environment, write your first line of code, and build your first application"
@@ -28,8 +28,6 @@ roles:
   - student
 products:
   - dotnet
-subjects:
-- development-tools
 units:
 - learn.fsharp-first-steps.introduction
 - learn.fsharp-first-steps.what-is-fsharp

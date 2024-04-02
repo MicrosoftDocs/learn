@@ -33,8 +33,6 @@ roles:
 products:
 - github
 - azure
-subjects:
-- development-tools
 units:
 - learn.github.create-host-web-sites-github-pages.1-introduction
 - learn.github.create-host-web-sites-github-pages.2-what-is-github-pages

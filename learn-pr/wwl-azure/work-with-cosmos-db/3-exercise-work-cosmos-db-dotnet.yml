@@ -4,12 +4,11 @@ title: 'Exercise: Create resources by using the Microsoft .NET SDK v3'
 metadata:
   title: 'Exercise: Create resources by using the Microsoft .NET SDK v3'
   description: "Exercise: Create resources by using the Microsoft .NET SDK v3"
-  ms.date: 04/25/2023
+  ms.date: 03/06/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
-  ms.custom:
-    - devx-track-dotnet
+  ms.custom: N/A, devx-track-dotnet
 durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-work-cosmos-db-dotnet.md)]

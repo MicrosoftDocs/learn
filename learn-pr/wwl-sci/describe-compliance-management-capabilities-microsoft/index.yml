@@ -2,13 +2,14 @@
 uid: learn.wwl.describe-compliance-management-capabilities-microsoft
 metadata:
   title: Describe Microsoft’s Service Trust portal and privacy capabilities
-  description: "Describe Microsoft’s Service Trust portal and privacy capabilities"
-  ms.date: 06/27/2023
+  description: "Describe Microsoft’s Service Trust portal and privacy capabilities."
+  ms.date: 03/12/2024
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: priva
 title: Describe Microsoft’s Service Trust portal and privacy capabilities
-summary: Microsoft runs on trust! Here you’ll explore the Service Trust Portal for content on how Microsoft delivers on our commitment of trust.  You’ll also learn about Microsoft Priva, a solution to help meet privacy goals.
+summary: Microsoft runs on trust! Here you’ll explore the Service Trust Portal for content on how Microsoft delivers on our commitment of trust. You’ll also learn about Microsoft Priva, a solution to help meet privacy goals.
 abstract: |
   After completing this module, you'll be able to:
   - Describe the offerings of the Service Trust Portal.
