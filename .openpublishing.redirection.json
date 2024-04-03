@@ -35975,6 +35975,11 @@
       "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/9-microsoft-entra-id-governance.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/manage-authorization-microsoft-entra-id/16-microsoft-entra-id-governance",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-app-with-scale-sets/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-app-with-scale-sets/9-summary",
+      "redirect_document_id": false
     }
   ]
 }
