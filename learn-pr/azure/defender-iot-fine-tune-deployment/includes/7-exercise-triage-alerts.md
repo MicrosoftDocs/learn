@@ -49,7 +49,7 @@ Filter alerts
 choose type of alert
 view full details.
 <!-- <https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-manage-cloud-alerts> <https://learn.microsoft.com/azure/defender-for-iot/organizations/how-to-view-alerts#manage-alert-status-and-triage-alerts>-->
-Suggested from Amit 'Unauthorised internet connectivity' + 'New Asset Detected'
+Suggested from Amit 'Unauthorised internet connectivity detected' + 'New Asset Detected' + Unauthorized Siemens S7 Plus Operation
 
 ## End Learning mode
 <!-- Should this be part of the LM? Even though this will be done at a later time in real life, as part of the exercise it should be added to this unit. LW -->
