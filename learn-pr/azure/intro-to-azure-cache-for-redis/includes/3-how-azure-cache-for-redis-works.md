@@ -1,6 +1,6 @@
-Here, you'll review the features of Azure Cache for Redis works and how they work together to help improve app functionality. This knowledge will help you decide whether you can use it in your organization.
+In this unit, you review how the features of Azure Cache for Redis work together to help improve app functionality. This knowledge helps you decide whether you can use it in your organization.
 
-Azure Cache for Redis provides a number of use-cases that help improve the performance and scalability of apps that rely heavily on back-end data stores. You'll learn what the following Azure Cache for Redis use-cases provide:
+Azure Cache for Redis provides a number of use-cases that help improve the performance and scalability of apps that rely heavily on back-end data stores. Here, you learn what the following Azure Cache for Redis use-cases provide:
 
 - Distributed cache
 - Session store
