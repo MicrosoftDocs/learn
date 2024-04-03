@@ -530,7 +530,7 @@ name: '${targetMgId}/${subscriptionId}'
      -  Selecting new will create a new management group.
      -  Selecting an existing will present you with a dropdown list of all the management groups you can move to this management group.
     
-    :::image type="content" source="../media/add-management-group-d4e224a5.png" alt-text="Screenshot showing the add management group page in the Aure portal.":::
+    :::image type="content" source="../media/add-management-group-d4e224a5.png" alt-text="Screenshot showing the add management group page in the Azure portal.":::
     
 6.  Select Save.
 
