@@ -14,15 +14,15 @@ metadata:
 title: Manage Microsoft Entra Identity Protection
 summary: Protecting a user's identity by monitoring their usage and sign-in patterns ensure a secure cloud solution. Explore how to design and implement Microsoft Entra Identity protection.
 abstract: |
-  By the end of this module you are able to:
+  By the end of this module you're able to:
 
-  -   Implement and manage a user risk policy
+  -   Implement and manage a user risk policy.
 
-  -   Implement and manage sign-in risk policies
+  -   Implement and manage sign-in risk policies.
 
-  -   Implement and manage MFA registration policy
+  -   Implement and manage MFA registration policy.
 
-  -   Monitor, investigate, and remediate elevated risky users
+  -   Monitor, investigate, and remediate elevated risky users.
 prerequisites: None
 iconUrl: /learn/achievements/manage-azure-ad-identity-protection.svg
 levels:
