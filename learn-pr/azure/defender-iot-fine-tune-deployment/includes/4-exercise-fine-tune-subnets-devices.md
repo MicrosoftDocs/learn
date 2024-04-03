@@ -36,7 +36,14 @@ In the **Device inventory**, you can view the subnets grouped as either *local* 
 1. Select **Network Location**
 1. Select either **Local** or **Routed**
 
-You can now look through the list of devices and check the details of all of the devices.
+You can now look through the list of devices and check the details of all of the devices. After checking the details of the devices, we'll update the details for one listed device.
+
+We need to update several of the fields.
+
+1. Select a device by clicking the checkbox.
+1. Select **Edit**.
+1. Make the changes.
+1. Select **Save**.
 
 ## Merge devices
 
@@ -46,15 +53,6 @@ You might identify two or more devices listed that are really the same device. T
 1. Select the devices you need to merge by clicking the checkboxes for those rows
 1. Select **Merge**
 1. Select **Confirm**
-<!-- how to give examples of this?? how to choose a device, what will they see? So how do we demonstrate the updating? -->
-After checking the details of the devices, we'll update the details for one listed device.
-
-We need to update several of the fields.
-
-1. Select a device by clicking the checkbox.
-1. Select **Edit**.
-1. Make the changes.
-1. Select **Save**.
 
 ## Important devices
 
@@ -65,14 +63,12 @@ Assign a unique device as **Important**. In the **Device map**:
 
 ## Check public IP addresses
 
-1. Select **System setting** > **Sensor management** > **Advanced configurations**
-1. Select **Internet addresses** from the dropdown list
-1. To add addresses make the following cahnges:
-    1. all_addresses_internal=1
-    1. Add the IP addresses with a comma between each one after allowed_but_vulnerable_internet_addresses=**
-max_internet_addresses=600
-search_for_blocked_internet_connections=1
-clear_datamining_records_every_x_minutes=5
+1. Select **System setting** > **Basic** > **Subnets**
+1. Select **Add subnet**
+1. Type a new IP
+1. Type a new Mask
+1. Type a new name
+1. Select **Save**
 
 ## Add DNS server settings
 

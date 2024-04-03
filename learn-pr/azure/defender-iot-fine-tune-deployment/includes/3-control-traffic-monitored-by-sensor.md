@@ -38,7 +38,7 @@ The *Important* setting is also useful to differentiate between similar types of
 
 The device appears in the device map with a star on it.
 
-**Check public IP addresses**: it's important to identify any public IP addresses that are used internally. These IP addresses must be added to the listed in the Advanced configurations section. If a public IP address isn't listed, the sensor treats it as a public network for security settings.
+**Check public IP addresses**: it's important to identify any public IP addresses that are used internally. These IP addresses must be added as a seperate subnet within the Subnet settings. If a public IP address isn't listed, the sensor treats it as a public network for security settings.
 
 **Schedule DNS lookup**: enhance device data enrichment by configuring multiple DNS servers to carryout reverse lookups and resolve host names or FQDNs associated with the IP addresses detected in network subnets. You will need the DNS server address, server port and the subnet addresses.
 
