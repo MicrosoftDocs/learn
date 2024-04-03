@@ -34,5 +34,6 @@ subjects:
 modules:
   - learn.philanthropies.introduction-to-microsofts-responsible-ai-approach
   - learn.philanthropies.apply-responsible-ai-principles
+  - learn.philanthropies.embrace-responsible-ai
 trophy:
   uid: learn.philanthropies.responsible-use-of-artificial-intelligence-in-education.trophy
