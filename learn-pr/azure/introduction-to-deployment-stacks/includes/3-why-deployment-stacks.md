@@ -10,6 +10,7 @@ There are many benefits that deployment stacks can add to your resource provisio
 - Preventing unauthorized changes
 - Reliable resource cleanup
 - Standardized templates
+- Enhancing existing processes
 
 ### Simplified provisioning
 
@@ -27,7 +28,7 @@ When you create a deployment stack, you can specify a permission that is applied
 
 Deny settings may sound similar in concept to Azure role-based access control (RBAC) and Azure Locks. RBAC is used to assign specific roles to specific users at a specific scope. For example, assigning the contributor role to a user at the resource group scope. Locks are used to prevent modification or deletion of resources at specific scopes, regardless of the user performing the action. For example, placing a read-only lock at the subscription scope prevents any modifications or deletions to all resources even if the user has the RBAC permission to do so.
 
-Deployment stack deny settings allow you to implement controls over a collection of resources across scopes, which supersede any RBAC assignments or locks that may be in place. Options for deny settings include multiple modes, applying deny settings to child scopes, excluding specific RBAC roles, and excluding specific principal IDs.
+Deployment stack deny settings allow you to implement controls over a collection of resources across scopes, which supersede any RBAC assignments or locks that may be in place.
 
 ### Reliable resource cleanup
 
@@ -37,12 +38,16 @@ Deployment stacks allow you to delete the stack and all of its resources through
 
 Another advantage of deleting resources managed by a stack is the potential for cost savings. Deleting an application and its resources not managed by a deployment stack is many times a manual effort that is prone to error. It's possible to accidently forget to delete certain resources, which continue to incur cost. Deployment stacks solve for this problem acting as a cost management tool, especially when dealing with ephemeral environments.
 
-When deleting a deployment stack, you can use the `actionOnUnmanage` property to determine how Azure handles the resources, resource groups, and management groups. You can choose to detach or delete the resources, resource groups, and management groups.
+When deleting a deployment stack, you can use the `actionOnUnmanage` property to determine how Azure handles the resources, resource groups, and management groups contained in the stack. Azure can delete the resources, resource groups, and management groups, or it can *detach* them, which means the the resources aren't deleted but are no longer managed by the stack.
 
 ### Standardized process and templates
 
-Creating and deploying a deployment stack and its resources is nearly identical to a standard Azure deployment For example:
+Creating and deploying a deployment stack and its resources is nearly identical to a standard Azure deployment. For example:
 
 The AZ CLI command to deploy a bicep file to a resource group is `az deployment group create -n myResourceGroup -f main.bicep` while the command to create a deployment stack at the resource group scope is `as stack group create -n myDeploymentStack -g myResourceGroup -f main.bicep`.
 
 Deployment stacks support the use of Bicep files, ARM JSON templates, or template specs for defining resources in a stack. When deploying a deployment stack using the Azure CLI or Azure PowerShell, you're able to point to the specific template file (bicep file or ARM JSON template) or template spec. It isn't necessary to change how you define your resources.
+
+### Enhancing existing processes
+
+If you are already using infrastructure as code to manage the deployments of your resources to Azure, deployment stacks gvies you more control over the process. As discussed in the previous section, the process of creating a deployment stack is not very different from creating a resource group based deployment. The ability to deploy across management groups, subscriptions, and resource groups with a single command is much simpler with deployment stacks. Resource security is now part of your deployment process with stacks.

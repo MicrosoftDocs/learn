@@ -50,7 +50,7 @@ units:
 - learn.azure.introduction-to-deployment-stacks.what-deployment-stacks
 - learn.azure.introduction-to-deployment-stacks.why-deployment-stacks
 - learn.azure.introduction-to-deployment-stacks.deployment-stack-resource
-- learn.azure.introduction-to-deployment-stacks.deployment-stack-use-cases
+- learn.azure.introduction-to-deployment-stacks.deployment-stack-scenario
 - learn.azure.introduction-to-deployment-stacks.knowledge-check
 - learn.azure.introduction-to-deployment-stacks.summary
 badge:

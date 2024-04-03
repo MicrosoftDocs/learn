@@ -1,119 +1,45 @@
 You've developed an understanding of deployment stacks and the benefits it provides for lifecycle management. Before you begin the process of building deployment stacks for your deployments, you want to learn more about the deployment stack resource.
 
-In this unit, you review the core concepts of Azure Resource Manager and learn about the deployment stacks resource.
-
-## Azure Resource Manager concepts
-
-Azure Resource Manager (ARM) is the service that deploys and manages resources in Azure. You can use Resource Manager to create, update, and delete resources in your Azure subscription. You can interact with Resource Manager by using many tools, including the Azure portal, Azure CLI, Azure PowerShell, and the Azure SDK.
-
-### Terminology
-
-As you begin to work with deployment stacks, it's important to understand some terms and concepts:
-
-- **Resource** - A manageable item that is available on the Azure platform. For example, a virtual network.
-- **Resource group** - A logical container that holds related resources for an Azure solution.
-- **Subscription** - A logical container and billing boundary for your resources and resource groups.
-- **Management group** - A logical container that you use to manage more than one subscription. You can define a hierarchy of management groups, subscriptions, resource groups, and resources.
-- **Resource provider** - A resource provider is a collection of REST operations that enable features for a particular Azure service. For example, the Azure SQL Database service consists of a resource provider named `Microsoft.Sql` and its full resource type is `Microsoft.Sql/servers/databases`.
+In this unit, you learn about the deployment stacks resource and some of the operations it can perform.
 
 ## The deployment stacks resource
 
-A deployment stack is a navite Azure resource, which allows for typical ARM operations to be performed on the stack.  A deployment stack can inherit an Azure policy assignment, and Azure role-based access control (RBAC) (RBAC) assignment, or even a Microsoft Defender for Cloud security recommendation. Within a deployment stack are pointers to all of the resources, resource groups, and management groups that are managed by the stack.
+Azure Resource Manager (ARM) is the service that deploys and manages resources in Azure. You can use Resource Manager to create, update, and delete resources in your Azure subscription. 
 
-Deployment stacks are part of the `Microsoft.Resources` resource provider and its full resource type is `Microsoft.Resources/deploymentStacks`. Its REST operations include creating a new stack, listing a stack, updating an existing stack, or deleting a stack. For it's resources, you're able the view the resources in the stack, add and remove resources, and protect resources from deletion.
+A deployment stack is a native Azure resource, which allows for typical ARM operations to be performed on the stack as a whole.  A deployment stack can inherit an Azure policy assignment, and Azure role-based access control (RBAC) assignment, or even a Microsoft Defender for Cloud security recommendation. Within a deployment stack are pointers to all of the resources, resource groups, and management groups that are managed by the stack. The managed resources defined in the stack can easily be created, updated, or deleted with a single operation on the depoyment stack resource.
+
+![a graphic representing an application managed by a deployment stack and deployed to multiple resource groups](../media/deployment_stack_app.png)
+
+## Deployment stacks operations
+
+A resource provider is a collection of REST operations that enable features for a particular Azure service. For example, the Azure SQL Database service consists of a resource provider named `Microsoft.Sql` and its full resource type is `Microsoft.Sql/servers/databases`.
+
+Deployment stacks are part of the `Microsoft.Resources` resource provider and its full resource type is `Microsoft.Resources/deploymentStacks`. Its REST operations include creating a new stack, listing a stack, updating an existing stack, or deleting a stack. For its resources, you're able the view the resources in the stack, add and remove resources, and protect resources from deletion.
 
 Each of these operations has a few key properties that control the behavior of the stack.
 
 ### Deny settings options
 
-Deny settings are a specific type of permission that are assigned to a deployment stack and it's managed resources. These deny settings supersede any Azure role-based access control (RBAC) permissions that may be in place. Options for deny settings include applying deny settings to child scopes, excluding specific RBAC roles, and excluding specific principal IDs.
+*Deny settings* prevent changes to the resources within a stack. They're are a specific type of permission that are assigned to a deployment stack and its managed resources. These deny settings supersede any Azure role-based access control (RBAC) permissions that may be in place.
 
-::: zone pivot="cli"
+When using deny settings, you can set a parameter that defines which operations are allowed on resources managed by the deployment stack. This parameter, known as the *deny settings mode*, determines if resources within the stack can be modified or deleted when managed by the stack. The deny settings mode has three possible values for behavior: deny delete, deny write and delete, and none.
 
-The following Azure CLI parameters are used to customize the deny settings:
+The *deny delete* value allows resources managed by the stack to be modified, but not deleted. The *deny write and delete* value effectively makes the resources managed by the stack read-only. The *none* value allows resources managed by the stack to be modified and deleted.
 
-- The `--deny-settings-mode` parameter defines which operations are denies on resources managed by the stack. There are three allowed values: `--denyDelete`, `--denyWriteAndDelete`, and `--none`.
-- The `--deny-settings-apply-to-child-scopes` parameter applies the deny settings mode to child scopes and nested resources.
-- The `--deny-settings-excluded-actions` parameter defines a list of role-based access control operations excluded from the deny settings mode.
-- The `--deny-settings-excluded-principals` parameter defines a list of Microsoft Entra ID principal IDs excluded from the deny settings mode.
+Deny settings also allow you to apply the settings to childe scopes and nested resources. For example, if a deployment stack, with deny settings, is created at the subscription scope, those deny settings would apply to the resource group scope as well. Additionally, any nested resources defined in Bicep files, ARM JSON templates, or template specs would inherit the values defined in the deny settings.
 
-Here's an example of an AZ CLI command with deny settings on a deployment stack scoped to a resource group.
+It is possible to override the deny settings for specific role based access control roles. Let's say that you have created a deployment stack with the deny settings mode set to deny write and delete. One of the managed resources in the stack is a virtual machine. You don't want changes to be made to the configuration of the virtual machine, but you do want your administrators to be able to power it on and off. To accomplish this, you exclude the "Microsoft.Compute/virtualMachines/start/action" and "Microsoft.Compute/virtualMachines/powerOff/action" actions using the *deny settings excluded actions* parameter.
 
-```azurecli
-az stack group create \
-    --name '<deployment-stack-name>' \
-    --resource-group '<resource-group-name>' \
-    --template-file '<bicep-file-name>' \
-    --deny-settings-mode 'denyDelete' \
-    --deny-settings-excluded-actions 'Microsoft.Compute/virtualMachines/write Microsoft.StorageAccounts/delete' \
-    --deny-settings-excluded-principals '<object-id> <object-id>'
-```
-
-::: zone-end
-
-::: zone pivot="powershell"
-
-The following Azure PowerShell parameters are used to customize the deny settings:
-
-- The `-DenySettingsMode` parameter defines which operations are denies on resources managed by the stack. There are three allowed values: `-DenyDelete`, `-DenyWriteAndDelete`, and `-None`.
-- The `-DenySettingsApplyToChildScopes` parameter applies the deny settings mode to child scopes and nested resources.
-- The `-DenySettingsExcludedAction` parameter defines a list of role-based access control operations excluded by the deny settings mode.
-- The `-DenySettingsExcludedPrincipal` parameter defines a list of Microsoft Entra ID principal IDs excluded from the deny settings mode.
-
-Here's an example of an Azure PowerShell command with deny settings on a deployment stack scoped to a resource group.
-
-```azurepowershell
-New-AzResourceGroupDeploymentStack `
-    -Name "<deployment-stack-name>" `
-    -ResourceGroupName "<resource-group-name>" `
-    -TemplateFile "<bicep-file-name>" `
-    -DenySettingsMode "DenyDelete" `
-    -DenySettingsExcludedAction "Microsoft.Compute/virtualMachines/write Microsoft.StorageAccounts/delete" `
-    -DenySettingsExcludedPrincipal "<object-id> <object-id>"
-```
-
-::: zone-end
+Another scenario that may exist is to override the deny setting for a specific user or service principal. For example, if you are using an infrastructure as code pipeline to create your deployment stacks, the service principal executing the pipeline needs to have permission to make changes to the resources managed by the stack. This behavior is controlled by the *deny settings excluded principals* parameter.
 
 ### Resource detachment and deletion
 
-A resource that is no longer managed by a deployment stack and still exists within Azure, is known as a detached resource. You can use the `actionOnUnmanage` property to determine how Azure handles detached resources, resource groups, and management groups. This property can be defined in either a deployment stack create or delete operation.
+A resource that is no longer managed or tracked by a deployment stack, is known as a detached resource. A detached resource still exists within Azure, but it isn't tracked by the stack. You are able to control how Azure handles detached resources, resource groups, and management groups with a property known as the *action on unmanage* parameter.
 
-::: zone pivot="cli"
+When using this parameter, you choose from three possible options that determine how detached resources are handled:
 
-The following Azure CLI parameters are used to customize the `actionOnUnmange` property:
+- Delete Resources - deletes resources and detaches resource groups and management groups.
+- Delete All  - deletes resources, resource groups, and management groups.
+- Detach All - detaches resources, resource groups, and management groups.
 
-- The `--actionOnUnmanage DeleteResources` parameter deletes resources and detaches resource groups and management groups.
-- The `--actionOnUnmanage DeleteAll` parameter deletes resources, resource groups, and management groups.
-- The `--actionOnUnmanage DetachAll` parameter detaches resources, resource groups, and management groups.
-
-Here's an example of an AZ CLI command with `actionOnUnmanage` on a deployment stack scoped to a resource group.
-
-```azurecli
-az stack group create \
-    --name '<deployment-stack-name>' \
-    --resource-group '<resource-group-name>' \
-    --template-file '<bicep-file-name>' \
-    --actionOnUnmanage DeleteResources
-```
-
-::: zone-end
-
-::: zone pivot="powershell"
-
-The following Azure PowerShell parameters are used to customize the `actionOnUnmange` property:
-
-- The `-ActionOnUnmanage DeleteResources` parameter deletes resources and detaches resource groups and management groups.
-- The `-ActionOnUnmanage DeleteAll` parameter deletes resources, resource groups, and management groups.
-- The `-ActionOnUnmanage DetachAll` parameter detaches resources, resource groups, and management groups.
-
-Here's an example of an Azure PowerShell command with `actionOnUnmanage` on a deployment stack scoped to a resource group.
-
-```azurepowershell
-New-AzResourceGroupDeploymentStack `
-    -Name "<deployment-stack-name>" `
-    -ResourceGroupName "<resource-group-name>" `
-    -TemplateFile "<bicep-file-name>" `
-    -ActionOnUnmanage DeleteResources
-```
-
-::: zone-end
+ The action on unmanage parameter can be set when creating, modifying, or deleting a deployment stack. All three operatione have the ability to set the behavior of the action on unmanage paramter. Let's say that you create a deployment stack using the Azure CLI and set the action on unmanage behavior to detach all. If you delete the stack and specify the behavior as delete all, then that value will take precedence. Consider it an overwrite of the orginal value.
