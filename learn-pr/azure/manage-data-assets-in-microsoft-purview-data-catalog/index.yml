@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Manage data assets in the Microsoft Purview Data Catalog
   description: "This module teaches you how to use the Microsoft Purview Data Catalog to manage your scanned data assets. How to curate a business glossary, and how to browse assets across your entire data estate."
-  ms.date: 04/27/2023
+  ms.date: 04/03/2024
   author: whhender
   ms.author: whhender
   ms.topic: module

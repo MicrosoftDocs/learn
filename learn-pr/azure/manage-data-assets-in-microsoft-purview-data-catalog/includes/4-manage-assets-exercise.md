@@ -6,7 +6,7 @@ You can edit assets both individually and in bulk. We're going to do both in thi
 
 ### Individual
 
-1. In the data catalog, search for one of your data assets. If you completed the 'Deploy Microsoft Purview and Scan ADLS Gen 2' exercise, and uploaded the dataset, you can use the same one as we're using in our example. We searched for the keyword 'country' and selected the **Queries by Country** asset.
+1. In the data catalog, search for one of your data assets. If you completed the exercise **Deploy Microsoft Purview and Scan Azure Data Lake Storage (ADLS) Gen 2**, and uploaded the dataset. You can use the same dataset we're using in our example. We searched for the keyword 'country' and selected the **Queries by Country** asset.
 
 1. Once you open your data asset, select the **Edit** option in the asset action bar.
 

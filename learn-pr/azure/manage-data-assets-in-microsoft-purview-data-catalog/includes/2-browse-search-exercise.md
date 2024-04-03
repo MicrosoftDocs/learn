@@ -18,7 +18,7 @@ In this exercise, we use the Microsoft Purview Data Catalog to search and browse
 
     :::image type="content" source="../media/browse-and-search-exercise/browse-from-homepage-inline.png" alt-text="Screenshot of the data catalog page with the Browse Assets button highlighted in the middle of the page. The browse folder is highlighted in the left menu." lightbox="../media/browse-and-search-exercise/browse-from-homepage.png":::
 
-1. You can select the Data Catalog icon at the top of the left side menu, to return to the data catalog from anywhere in the Microsoft Purview governance portal.
+1. You can select the **Data catalog** icon at the top of the left side menu, to return to the data catalog from anywhere in the Microsoft Purview governance portal.
 
     :::image type="content" source="../media/browse-and-search-exercise/data-catalog-menu.png" alt-text="Screenshot of the Microsoft Purview Left hand menu, with the top icon, the data catalog icon, highlighted.":::
 
@@ -31,7 +31,7 @@ In this exercise, we use the Microsoft Purview Data Catalog to search and browse
 1. You can choose to browse the data catalog either by collection, or by source type.
 
     >[!TIP]
-    >Users can only see data sources and assets in the collections they have access to.
+    >Users can only see the data sources and assets in the collections they have access to.
 
     :::image type="content" source="../media/browse-and-search-exercise/browse-asset-options-inline.png" alt-text="Screenshot of the browse assets page, currently shown sorted by collection with the selection menu highlighted in the middle of the page." lightbox="../media/browse-and-search-exercise/browse-asset-options.png":::
 
@@ -43,9 +43,9 @@ In this exercise, we use the Microsoft Purview Data Catalog to search and browse
 
 1. When you browse by data source type, you select a source type and all the sources of that type that you have access to are listed. Selecting the source lists all the assets available in that source. Also, you can use the breadcrumbs above the asset lists and at the top of the source window, to return to sources or browsing.
 
-    :::image type="content" source="../media/browse-and-search-exercise/browse-by-source-type-list-inline.png" alt-text="Screenshot of browsing by source types, showing all sources under the ADLS Gen 2 source type." lightbox="../media/browse-and-search-exercise/browse-by-source-type-list.png":::
+    :::image type="content" source="../media/browse-and-search-exercise/browse-by-source-type-list-inline.png" alt-text="Screenshot of browsing by source types, showing all sources under the Azure Data Lake Storage (ADLS) Gen 2 source type." lightbox="../media/browse-and-search-exercise/browse-by-source-type-list.png":::
 
-    :::image type="content" source="../media/browse-and-search-exercise/browse-by-source-type-assets-inline.png" alt-text="Screenshot of browsing by source type, showing all assets under an available ADLS Gen 2 source." lightbox="../media/browse-and-search-exercise/browse-by-source-type-assets.png":::
+    :::image type="content" source="../media/browse-and-search-exercise/browse-by-source-type-assets-inline.png" alt-text="Screenshot of browsing by source type, showing all assets under an available Azure Data Lake Storage (ADLS) Gen 2 source type." lightbox="../media/browse-and-search-exercise/browse-by-source-type-assets.png":::
 
 ## Search the data catalog
 
@@ -88,7 +88,7 @@ When you select an asset in the data catalog, there's much information to look a
 :::image-end:::
 
 1. **Breadcrumbs** at the top of the page leads you back through your selections to the data catalog.
-1. **Assets can be certified** by data steward in your Microsoft Purview account. This setting means the asset is endorsed by the data steward and it's ready to be used.
+1. **Assets can be certified** by a data steward in your Microsoft Purview account. This setting means the data steward endorses the asset and it's ready to be used.
 1. **The asset action bar** contains several options, that users only have access to depending on their role:
     1. Edit - allows you to edit the fascets of the asset.
     1. Select for bulk edit - allows you to select this asset to be updated alongside others.
@@ -97,9 +97,9 @@ When you select an asset in the data catalog, there's much information to look a
     1. Delete - delete the asset.
 1. **The navigation tabs** inside the asset window provide information views for the asset:
     1. Overview - Provides a summary of basic information about the asset. We'll discuss some of this information in the next steps.
-    1. Properties - metadata bout the asset including modified time and related assets.
-    1. Schema - provides the schema of the data, like column names with their classifications, sensitivity labels, and related glossary terms.
-    1. Lineage - if the Microsoft Purview account is connected to other data processing and analytics systems, like data factory, lineage of a data asset will be displayed here so users can see where it comes from and how it's used.
+    1. Properties - Provides metadata about the asset including modified time and related assets.
+    1. Schema - Provides the schema of the data, like column names with their classifications, sensitivity labels, and related glossary terms.
+    1. Lineage - Indicates if the Microsoft Purview account is connected to other data processing and analytics systems, like data factory. The lineage of a data asset is displayed here so users can see where the asset comes from, and how the asset is used.
     1. Contacts - experts and owners can be assigned to a data asset, and found here under the contacts page.
     1. Related - other data assets related to this asset are listed here.
 1. **Asset description** is added by data flight attendant or owners, and should give a description of the contents.

@@ -24,7 +24,7 @@ A file is stored in an Azure blob storage account and the file is consumed and t
 Sometimes, different sources connected to Microsoft Purview update the same data asset with similar, but slightly different qualified names. For example:
 
 You scan in an Azure Blob with the qualified name `https://myaccount.file.core.windows.net/myshare/folderA/folderB/my-file.parquet`.
-This blob is also consumed by an Azure Data Factory (ADF) pipeline that will then add lineage information to the asset. The ADF pipeline might be configured to read the file as `https://myAccount.file.core.windows.net//myshare/folderA/folderB/my-file.parquet`.
+An Azure Data Factory (ADF) pipeline also consumes this blob and adds lineage information to the asset. The ADF pipeline might be configured to read the file as `https://myAccount.file.core.windows.net//myshare/folderA/folderB/my-file.parquet`.
 
 The names are different, but ultimately the piece of data is the same. Microsoft Purview uses a normalization process to ensure all metadata from both Azure Storage and Azure Data Factory are included under a single data asset.
 
@@ -34,9 +34,9 @@ Once an asset is ingested to the data catalog, it isn't static: they can be upda
 
 Both column-level and asset-level updates such as adding a description, glossary term or classification don't affect scan updates. Scans update new columns and classifications regardless if these changes are made.
 
-Even so, Microsoft Purview works to reflect the truth of the source system whenever possible. For example, if you edit a column and later it's deleted from the source table, a scan will remove the column metadata from the asset in Microsoft Purview.
+Even so, Microsoft Purview works to reflect the truth of the source system whenever possible. For example, if you edit a column that is later deleted from the source table, a scan removes the column metadata from the asset in Microsoft Purview.
 
-You can also move an asset from one collection to a subcollection of the collection where the source is house. For example, if you have an ADLS Gen 2 account, but a research team only needs access to a subset of the files, you can create a subcollection for that team, and move the files they need into the subcollection.
+You can also move an asset from one collection to a subcollection of the collection where the source is housed. For example, say you have an Azure Data Lake Storage (ADLS) Gen 2 account, but a research team only needs access to a subset of the files. You can create a subcollection for that team, and move the files they need into the subcollection.
 
 Here are the currently editable aspects of an asset:
 
@@ -70,7 +70,7 @@ Contacts should be users that are responsible for maintaining a data asset, or k
 
 Once data is ingested into the Microsoft Purview Data Catalog, it needs to be regularly updated and maintained to ensure it's useful, accurate, and findable by people in the organization.
 
-A well-maintained data catalog won't only give your organization an accurate picture of the data that is stored across the data estate, but will promote better use and security of data across the estate.
+A well-maintained data catalog gives your organization an accurate picture of the data that is stored across the data estate, and promotes better use and security of data across the estate.
 
 Here's what you can do to ensure a good asset lifecycle:
 
