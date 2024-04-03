@@ -109,7 +109,7 @@ If you selected one of the following privileged roles, follow the steps in this 
 
 1.  On the Review + assign tab, review the role assignment settings.
     
-    :::image type="content" source="../media/add-role-assignment-azure-fe46b53a.png" alt-text="Screenshot showing the add role assignment review and assign page.":::
+    :::image type="content" source="../media/add-role-assignment-blank-subscription-b3f62757.png" alt-text="Screenshot showing the add role assignment review and assign page.":::
     
 2.  Click Review + assign to assign the role.
     
