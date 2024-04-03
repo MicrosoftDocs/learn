@@ -75,65 +75,123 @@ You can define a management group as an assignable scope in an Azure custom role
 
 Defining and creating a custom role doesn't change with the inclusion of management groups. Use the full path to define the management group **/providers/Microsoft.Management/managementgroups/\{groupId\}**.
 
-Use the management group's ID and not the management group's display name. This common error happens since both are custom-defined fields when creating a management group.<br>
+Use the management group's ID and not the management group's display name. This common error happens since both are custom-defined fields when creating a management group.
 
-`JSON`
+```javascript
+JSON
+```
 
-`...`
+```javascript
+...
+```
 
-`{`
+```javascript
+{
+```
 
-`"Name": "MG Test Custom Role",`
+```javascript
+  "Name": "MG Test Custom Role",
+```
 
-`"Id": "id",`
+```javascript
+  "Id": "id",
+```
 
-`"IsCustom": true,`
+```javascript
+  "IsCustom": true,
+```
 
-`"Description": "This role provides members understand custom roles.",`
+```javascript
+  "Description": "This role provides members understand custom roles.",
+```
 
-`"Actions": [`
+```javascript
+  "Actions": [
+```
 
-`"Microsoft.Management/managementgroups/delete",`
+```javascript
+    "Microsoft.Management/managementgroups/delete",
+```
 
-`"Microsoft.Management/managementgroups/read",`
+```javascript
+    "Microsoft.Management/managementgroups/read",
+```
 
-`"Microsoft.Management/managementgroup/write",`
+```javascript
+    "Microsoft.Management/managementgroup/write",
+```
 
-`"Microsoft.Management/managementgroup/subscriptions/delete",`
+```javascript
+    "Microsoft.Management/managementgroup/subscriptions/delete",
+```
 
-`"Microsoft.Management/managementgroup/subscriptions/write",`
+```javascript
+    "Microsoft.Management/managementgroup/subscriptions/write",
+```
 
-`"Microsoft.resources/subscriptions/read",`
+```javascript
+    "Microsoft.resources/subscriptions/read",
+```
 
-`"Microsoft.Authorization/policyAssignments/*",`
+```javascript
+    "Microsoft.Authorization/policyAssignments/*",
+```
 
-`"Microsoft.Authorization/policyDefinitions/*",`
+```javascript
+    "Microsoft.Authorization/policyDefinitions/*",
+```
 
-`"Microsoft.Authorization/policySetDefinitions/*",`
+```javascript
+    "Microsoft.Authorization/policySetDefinitions/*",
+```
 
-`"Microsoft.PolicyInsights/*",`
+```javascript
+    "Microsoft.PolicyInsights/*",
+```
 
-`"Microsoft.Authorization/roleAssignments/*",`
+```javascript
+    "Microsoft.Authorization/roleAssignments/*",
+```
 
-`"Microsoft.Authorization/roledefinitions/*"`
+```javascript
+    "Microsoft.Authorization/roledefinitions/*"
+```
 
-`],`
+```javascript
+  ],
+```
 
-`"NotActions": [],`
+```javascript
+  "NotActions": [],
+```
 
-`"DataActions": [],`
+```javascript
+  "DataActions": [],
+```
 
-`"NotDataActions": [],`
+```javascript
+  "NotDataActions": [],
+```
 
-`"AssignableScopes": [`
+```javascript
+  "AssignableScopes": [
+```
 
-`"/providers/microsoft.management/managementGroups/ContosoCorporate"`
+```javascript
+        "/providers/microsoft.management/managementGroups/ContosoCorporate"
+```
 
-`]`
+```javascript
+  ]
+```
 
-`}`
+```javascript
+}
+```
 
-`...`
+```javascript
+...
+```
 
 ### Issues with breaking the role definition and assignment hierarchy path
 
