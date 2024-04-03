@@ -110,7 +110,7 @@ Follow these steps to assign the built-in policy to the appropriate scope in the
 
 5. For the **Policy definition** field, select the **More** button, and enter *storage account keys* in the **Search** field. Select the policy definition named **Storage account keys should not be expired**.
 
-:::image type="content" source="../media/policy-definition-select-portal-page-40266255.png":::
+:::image type="content" source="../media/policy-definition-select-portal-page-40266255.png" alt-text="Screenshot showing how to set a reminder to rotate keys.":::
 
 
 6. Select **Review + create** to assign the policy definition to the specified scope.<br>
