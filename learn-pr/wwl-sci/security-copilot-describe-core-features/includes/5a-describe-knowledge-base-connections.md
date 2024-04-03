@@ -51,14 +51,14 @@ To create the connection to an existing Azure AI Search index, configure the Azu
 
 1. The parameters that you configure for the plugin map to information for the Azure AI Search instance, the index within search instance that will be searched, and the fields associated with the index.
 
-    - Azure AI Search service – the name of your search service.
-    - Index – the name of the index, within your Azure AI search instance, that will be searched.
-    - Vector – the name of the field in the index containing the vector of embeddings.
-    - Text – this is the name of the text field in the index.  The contents of this field, in your index, represents the text to search. If your index was created using the Import and vectorize data wizard, the name of the field containing the text to search may be referred to as chunk, as a default. The reason is that the wizard will chunk your data so that it doesn't exceed the token limit size of the embedding model. The default index field name, chunk, is referring to a chunk of text.
-    - Title – this is the name of the title field in the index and represents the title of each document to display as a source (optional).
-    - Value – the access identifier for API authentication.
+    - Name of Azure AI Search service – This is the name of your search service.
+    - Name of index – This is the name of the index, within your Azure AI search instance, that will be searched.
+    - Name of vector field in index – This is the name of the field in the index containing the vector of embeddings.
+    - Name of text field in index – This is the name of the text field in the index.  The contents of this field, in your index, represents the text to search. If your index was created using the Import and vectorize data wizard, the name of the field containing the text to search may be referred to as chunk, as a default. The reason is that the wizard will chunk your data so that it doesn't exceed the token limit size of the embedding model. The default index field name, chunk, is referring to a chunk of text.
+    - Name of title field in index – This is the name of the title field in the index and represents the title of each document to display as a source (optional).
+    - Value – This is the access identifier for API authentication.
 
-   :::image type="content" source="../media/azure-ai-search-plugin-settings.png" lightbox="../media/azure-ai-search-plugin-settings.png" alt-text="Screen capture of the Azure AI Search plugin parameters.":::
+   :::image type="content" source="../media/ai-search-plugin-settings.png" lightbox="../media/ai-search-plugin-settings.png" alt-text="Screen capture of the Azure AI Search plugin parameters.":::
 
 1. To obtain the information that you'll use for the plugin settings, you need to go to the Azure portal. Open a new browser tab to go to the Azure portal (https://portal.azure.com).
 
@@ -66,7 +66,7 @@ To create the connection to an existing Azure AI Search index, configure the Azu
 
 1. The AI Search page lists the search services. From here, you select the search instance you want the plugin to connect to. Before you select it, copy the name and enter it in Azure AI Search service field for the plugin. Copy the name and enter it in the plugin field select the search service.
 
-   :::image type="content" source="../media/azure-ai-search-instance-setting.png" lightbox="../media/azure-ai-search-instance-setting.png" alt-text="Screen capture that highlights the search instance whose name you copy in the Azure AI search instance field for the plugin.":::  
+   :::image type="content" source="../media/ai-search-plugin-settings-search-service-name-mapping.png" lightbox="../media/ai-search-plugin-settings-search-service-name-mapping.png" alt-text="Screen capture that highlights the search instance whose name you copy in the Azure AI search instance field for the plugin.":::  
 
 1. Select the search service whose name you entered in plugin settings page.
 
@@ -76,19 +76,19 @@ To create the connection to an existing Azure AI Search index, configure the Azu
 
 1. The indexes page lists the available indexes for a given Azure AI Search service. From the indexes page, copy the name of the index you want to Copilot to search and enter it into the index name field for the plugin.
 
-    :::image type="content" source="../media/index-setting-name.png" lightbox="../media/index-setting-name.png" alt-text="Screen capture of the Azure AI Search instance name pointing to the corresponding field in the plugin parameters window.":::  
+    :::image type="content" source="../media/ai-search-plugin-settings-index-name-mapping.png" lightbox="../media/index-setting-name.png" alt-text="Screen capture of the Azure AI Search instance name pointing to the corresponding field in the plugin parameters window.":::  
 
 1. Select the index whose name you entered in plugin settings page. This opens the index page. From here, select the fields tab.
 
 1. The fields tab shows the field names for the index. The field names for the example index named "knowledge-base-bloc-index" and shown in the image that follows may be different than what is shown for your index. Work with the admin who manages your Azure AI Search service for guidance, as needed.
 
-      :::image type="content" source="../media/chunk-vector-title-settings.png" lightbox="../media/chunk-vector-title-settings.png" alt-text="Screen capture of the Azure AI Search index field names pointing to the corresponding fields in the plugin parameters window.":::
+      :::image type="content" source="../media/ai-search-plugin-vector-title-chunk-title-mapping.png" lightbox="../media/ai-search-plugin-vector-title-chunk-title-mapping.png" alt-text="Screen capture of the Azure AI Search index field names pointing to the corresponding fields in the plugin parameters window.":::
 
 1. Close the index fields page. Then From the left navigation pane, select Keys.
 
 1. Copy the "Manage query keys" value for API authentication and enter it in the value field for the plugin, then select save.
 
-      :::image type="content" source="../media/key-mapping.png" lightbox="../media/key-mapping.png" alt-text="Screen capture of the Azure AI Search key that gets copied into the value field of the plugin.":::
+      :::image type="content" source="../media/ai-search-plugin-settings-api-key-mapping.png" lightbox="../media/ai-search-plugin-settings-api-key-mapping.png" alt-text="Screen capture of the Azure AI Search key that gets copied into the value field of the plugin.":::
 
 1. Check that all your parameters are correct for the search instance and index you want to connect to then select save.
 
