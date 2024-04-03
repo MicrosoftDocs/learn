@@ -8,7 +8,7 @@ The OT sensor analyzes your system and assigns subnet settings and attempts to u
 
 ## Fine tuning
 
-The first stage of fine-tuning your sensor is to run the **Analyze** feature in the **Deployment** section of the OT sensor. When the analysis function is completed, check the information for each interface. If the information isn't what you expected, you need to check the <!-- span configuration - we will assume that these are correctly set, in the LM, but if not then you should go to your connection team and get them to fix this - Sagi -->subnet and device settings and make any changes needed.
+The first stage of fine-tuning your sensor is to run the **Analyze** feature in the **Deployment** section of the OT sensor. When the analysis function is completed, check the information for each interface. If the information isn't what you expected, you need to check the subnet and device settings and make any changes needed.<!-- span configuration - we will assume that these are correctly set, in the LM, but if not then you should go to your connection team and get them to fix this - Sagi -->
 
 ## Check and modify the subnet settings
 
@@ -38,7 +38,9 @@ The *Important* setting is also useful to differentiate between similar types of
 
 The device appears in the device map with a star on it.
 
-**Check public IP addresses**: it's important to identify any public IP addresses that are used internally. These IP addresses must be listed **and add how to do this , is it in the System settings > sensor management > advanced configurations - Ariel**.<!--what do we need to do? remove, reassign an IP, define as authorized? Ariel--> If a public IP address isn't listed as a subnet, the sensor treats it as a public network for security settings.
+**Check public IP addresses**: it's important to identify any public IP addresses that are used internally. These IP addresses must be added to the listed in the Advanced configurations section. If a public IP address isn't listed, the sensor treats it as a public network for security settings.
+
+**Schedule DNS lookup**: enhance device data enrichment by configuring multiple DNS servers to carryout reverse lookups and resolve host names or FQDNs associated with the IP addresses detected in network subnets. You will need the DNS server address, server port and the subnet addresses.
 
 **DHCP address ranges**: devices with an IP address allocated by a DHCP server, which change dynamically, must define the range of IP addresses. This is an important step, which can affect the way your data is assessed for security risks. When the device IP address changes dynamically the device is logged as a new device, which might give misleading information about your system.
 

@@ -65,9 +65,24 @@ Assign a unique device as **Important**. In the **Device map**:
 
 ## Check public IP addresses
 
-Select **System setting** > **Deployment**
+1. Select **System setting** > **Sensor management** > **Advanced configurations**
+1. Select **Internet addresses** from the dropdown list
+1. To add addresses make the following cahnges:
+    1. all_addresses_internal=1
+    1. Add the IP addresses with a comma between each one after allowed_but_vulnerable_internet_addresses=**
+max_internet_addresses=600
+search_for_blocked_internet_connections=1
+clear_datamining_records_every_x_minutes=5
 
-**What do we do here? Give example of how this is done? Ariel**
+## Add DNS server settings
+
+1. Select **System setting** > **Network monitoring** > **Reverse DNS lookup**
+1. Toggle **Enable**
+1. In the **Schedule Reverse Lookup**, define the time interval for your scan by typing a number in the second box. Or select **By specific time** and type the time in 24hr format
+1. Select **Add DNS server**
+1. Type the **DNS server address**, **DNS server port** and **Subnets** details
+1. Select **Save**
+1. Optionally, select **Test** at the top to check the settings are correct
 
 ## Add DHCP address ranges
 
