@@ -35980,6 +35980,26 @@
       "source_path": "learn-pr/azure/build-app-with-scale-sets/8-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/build-app-with-scale-sets/9-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-vms-from-vhd-templates/2-azure-vm-disk-imaging-capabilities.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-vms-from-vhd-templates/5-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-vms-from-vhd-templates/3a-create-image.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-vms-from-vhd-templates/3-create-image",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-vms-from-vhd-templates/3-generalize-server-create-image.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-vms-from-vhd-templates/2-generalize-server-create-image",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-vms-from-vhd-templates/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-vms-from-vhd-templates/6-summary",
+      "redirect_document_id": false
     }
   ]
 }
