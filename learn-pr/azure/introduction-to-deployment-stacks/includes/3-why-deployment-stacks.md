@@ -1,4 +1,4 @@
-You are evaluating whether deployment stacks might provide the right features for resource lifecycle management. You've spent some time learning about the features of deployment stacks and how you can use it to manage your applications and Azure resources. You want to learn more about why you should consider deployment stacks and its overall benefits.
+You're evaluating whether deployment stacks might provide the right features for resource lifecycle management. You've spent some time learning about the features of deployment stacks and how you can use it to manage your applications and Azure resources. You want to learn more about why you should consider deployment stacks and its overall benefits.
 
 In this unit, you learn about the benefits of deployment stacks.
 
@@ -36,7 +36,7 @@ Consider a development environment for an application that is deployed across mu
 
 Deployment stacks allow you to delete the stack and all of its resources through a single API call, without needing to understand dependencies. This single operation removes the resources in a reliable way, and improves the speed of removal.
 
-Another advantage of deleting resources managed by a stack is the potential for cost savings. Deleting an application and its resources not managed by a deployment stack is many times a manual effort that is prone to error. It's possible to accidently forget to delete certain resources, which continue to incur cost. Deployment stacks solve for this problem acting as a cost management tool, especially when dealing with ephemeral environments.
+Another advantage of deleting resources managed by a stack is the potential for cost savings. Deleting an application and its resources not managed by a deployment stack is many times a manual effort that is prone to error. It's possible to accidentally forget to delete certain resources, which continue to incur cost. Deployment stacks solve for this problem acting as a cost management tool, especially when dealing with ephemeral environments.
 
 When deleting a deployment stack, you can use the `actionOnUnmanage` property to determine how Azure handles the resources, resource groups, and management groups contained in the stack. Azure can delete the resources, resource groups, and management groups, or it can *detach* them, which means the the resources aren't deleted but are no longer managed by the stack.
 
@@ -50,4 +50,4 @@ Deployment stacks support the use of Bicep files, ARM JSON templates, or templat
 
 ### Enhancing existing processes
 
-If you are already using infrastructure as code to manage the deployments of your resources to Azure, deployment stacks gvies you more control over the process. As discussed in the previous section, the process of creating a deployment stack is not very different from creating a resource group based deployment. The ability to deploy across management groups, subscriptions, and resource groups with a single command is much simpler with deployment stacks. Resource security is now part of your deployment process with stacks.
+If you're already using infrastructure as code to manage the deployments of your resources to Azure, deployment stacks give you more control over the process. As discussed in the previous section, the process of creating a deployment stack isn't very different from creating a resource group based deployment. The ability to deploy across management groups, subscriptions, and resource groups with a single command is much simpler with deployment stacks. Resource security is now part of your deployment process with stacks.

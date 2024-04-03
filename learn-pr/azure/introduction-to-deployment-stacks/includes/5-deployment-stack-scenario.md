@@ -6,7 +6,7 @@ In this unit, you review a scenario that uses deployment stacks for grouping res
 
 Suppose your community bank has an Azure environment with multiple subscriptions. The platform team manages a shared services subscription while the applications team manages a subscription for the bank's user facing applications.
 
-The shared services subscription contains a resource group that contains an Azure Front Door profile. Azure Front Door is a cloud content delivery network (CDN) that provides secure access, HTTP caching, and traffic acceleration to your web content. The profile is managed by the platform team, but the application teams share this profile for public access to their web apps.
+The shared services subscription contains a resource group that contains an Azure Front Door profile. Azure Front Door is a cloud content delivery network (CDN) that provides secure access, HTTP caching, and traffic acceleration to your web content. The platform team manages the profile, but the application teams share this profile for public access to their web apps.
 
 ![a graphic representing a deployment stack scenario, step 1](../media/scenario_1.png)
 
@@ -16,7 +16,7 @@ The team first creates a new resource group in the application subscription for 
 
 ![a graphic representing a deployment stack scenario, step 3](../media/scenario_2_and_5.png)
 
-The deployment stack is created or modified with deny settings that prevent any unauthorized changes to the managed resources in the stack. For example, let's say that one of the members of the deposits application team attempts to modify one of the app services's app setttings. The modification is blocked dues to the `--denyWriteAndDelete` deny setting applied to the stack.
+The deployment stack is created or modified with deny settings that prevent any unauthorized changes to the managed resources in the stack. For example, let's say that one of the members of the deposits application team attempts to modify one of the app service's app settings. The modification is blocked dues to the `--denyWriteAndDelete` deny setting applied to the stack.
 
 ![a graphic representing a deployment stack scenario, step 4](../media/scenario_3.png)
 

@@ -18,7 +18,7 @@ Let's say your application consists of an app service, application insights, and
 
 ![a graphic representing an application deployed to a single resource group](../media/single_rg_app.png)
 
-Over time, it's possible that resources unrelated to the application are also deployed to the same resource group. For example, a colleague of yours deploys a new Azure Key Vault and accidently chooses the wrong resource group at the time of deployment. This scenario may make it tough to determine which resources belong to which application and could potentially lead to issues such as an accidental deletion of a critical resource.
+Over time, it's possible that resources unrelated to the application are also deployed to the same resource group. For example, a colleague of yours deploys a new Azure Key Vault and accidentally chooses the wrong resource group at the time of deployment. This scenario may make it tough to determine which resources belong to which application and could potentially lead to issues such as an accidental deletion of a critical resource.
 
 ### Multi-resource group application
 
@@ -65,9 +65,8 @@ Deployment stacks allow for efficient environment cleanup. Deployment stacks all
 
 When you submit a Bicep file, ARM JSON template, or template spec to a deployment stack, the stack becomes responsible for the management of the resources described in the file. Resources managed by the stack are known as *managed resources*, but those resources are still modified through the original template files.
 
-If a resource no longer needs to be managed by the deployment stack, you can to modify the stack to no longer include the resource. The `actionOnUnmanage` behavior of a deployment stack determines what happens to a resource that is removed from the deployment stack's definition. This behavior, discussed later in the unit, determines if a resource, resource group, or management groups is detached or deleted from the stack.
-Additionally, you're able to configure a "deny setting" to the stack and its resources that prevent unauthorized changes. These deny assignments are customizable. You're able to set the mode to either `denyDelete` or `denyWriteAndDelete`, which may sound similar to Azure locks. Additionally, you can exclude specific actions or service principals from the deny assignments. Consider deny settings an extra layer of protection against accidental modification and deletions.
+If a resource no longer needs to be managed by the deployment stack, you can modify the stack to no longer include the resource. The *action on unmanage* behavior of a deployment stack determines what happens to a resource that is removed from the deployment stack's definition. This behavior, discussed later in the unit, determines if a resource, resource group, or management groups is detached or deleted from the stack.
 
 ### Deny settings
 
-Additionally, you're able to configure a "deny setting" to the stack and its resources that prevent unauthorized changes. These deny assignments are customizable. You're able to set the mode to either no flag, `denyDelete` or `denyWriteAndDelete`, which may sound similar to Azure locks. Additionally, you can exclude specific actions or service principals from the deny assignments. Consider deny settings an extra layer of protection against accidental modification and deletions.
+Additionally, you're able to configure a "deny setting" to the stack and its resources that prevent unauthorized changes. These deny assignments are customizable. You're able to set the mode to either no flag, deny delete, or deny write and delete, which may sound similar to Azure locks. Additionally, you can exclude specific actions or service principals from the deny assignments. Consider deny settings an extra layer of protection against accidental modification and deletions.
