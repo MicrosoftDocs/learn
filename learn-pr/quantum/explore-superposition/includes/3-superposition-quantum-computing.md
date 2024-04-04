@@ -4,7 +4,7 @@ A qubit can be in the state $0$, in the state $1$, and in any superposition of b
 
 ## How can we represent the superposition in a qubit?
 
-Imagine that we draw a circle and a vertical and horizontal axis such the middle point is the center of the circle. We place the state $0$ at the upper point of the vertical axis and the state $1$ at the lower point.
+Imagine that we draw a circle and a vertical and horizontal axis such that the middle point is the center of the circle. We place the state $0$ at the upper point of the vertical axis and the state $1$ at the lower point.
 
 How could we describe this representation? We could say that the state $0$ is an arrow, or a *vector*, pointing up and the state $1$ is a vector pointing down. Therefore a classical bit would be a vector pointing either up or down, but never in another direction.
 
