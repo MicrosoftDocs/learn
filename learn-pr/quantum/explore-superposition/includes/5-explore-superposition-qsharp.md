@@ -201,14 +201,14 @@ instead of measuring one qubit three times.
 
 |Basis|Number|
 |---|---|
-|$\|000\rangle$|0|
-|$\|001\rangle$|1|
-|$\|010\rangle$|2|
-|$\|011\rangle$|3|
-|$\|100\rangle$|4|
-|$\|101\rangle$|5|
-|$\|110\rangle$|6|
-|$\|111\rangle$|7|
+|$\ket{000}$|0|
+|$\ket{001}$|1|
+|$\ket{010}$|2|
+|$\ket{011}$|3|
+|$\ket{100}$|4|
+|$\ket{101}$|5|
+|$\ket{110}$|6|
+|$\ket{111}$|7|
 
 1. Modify *Superposition.qs* like the following example, and then save the file.
 
@@ -273,10 +273,9 @@ instead of measuring one qubit three times.
     > [!NOTE]
     > Your output might differ because the random number generator is probabilistic. The probabilities of the outcomes are not deterministic.
 
-
 1. The `ForEach(M, qubit)` operation measures each qubit in turn, gradually collapsing the state. You can also dump the intermediary states after each measurement. To do so, modify *Superposition.qs* like the following example, and then save the file.
 
-    ````qsharp
+    ```qsharp
     namespace ExploringSuperposition {
         open Microsoft.Quantum.Diagnostics;
         open Microsoft.Quantum.Measurement;
@@ -308,7 +307,7 @@ instead of measuring one qubit three times.
 1. You can see how each consecutive measurement changes the quantum state and therefore the probabilities of obtaining each outcome. For example, if your result is number five, you'll get the following output. Let's look briefly at each step:
 
     1. **State preparation**: After applying `H` to each qubit of the register, we obtain a uniform superposition.
-    
+
         ```output
         The qubit register in a uniform superposition: 
         
@@ -325,9 +324,9 @@ instead of measuring one qubit three times.
          |110⟩ |  0.3536+0.0000𝑖 |    12.5000% |   0.0000
          |111⟩ |  0.3536+0.0000𝑖 |    12.5000% |   0.0000
         ```
-    
+
     1. **First measurement**: In the first measurement, the result was `One`. Therefore, all of the amplitudes of the states whose rightmost qubit is `Zero` are no longer present. The amplitudes are $|0\rangle=|000\rangle, |2\rangle=|010\rangle, |4\rangle=|100\rangle$, and $|6\rangle= |110\rangle$. The rest of the amplitudes increase to fulfill the normalization condition.
-    
+
         ```output
         DumpMachine:
         
@@ -338,9 +337,9 @@ instead of measuring one qubit three times.
          |101⟩ |  0.5000+0.0000𝑖 |    25.0000% |   0.0000
          |111⟩ |  0.5000+0.0000𝑖 |    25.0000% |   0.0000
         ```
-    
+
     1. **Second measurement**: In the second measurement, the result was `Zero`. Therefore, all of the amplitudes of the states whose second rightmost (middle) qubit is `One` vanish. The amplitudes are $|3\rangle=|011\rangle$ and $|7\rangle=|111\rangle$. The rest of the amplitudes increase to fulfill the normalization condition.
-    
+
         ```output
         DumpMachine:
         
@@ -349,12 +348,12 @@ instead of measuring one qubit three times.
          |001⟩ |  0.7071+0.0000𝑖 |    50.0000% |   0.0000
          |101⟩ |  0.7071+0.0000𝑖 |    50.0000% |   0.0000
         ```
-    
+
     1. **Third measurement**: In the third measurement, the result was `One`. Therefore, all of
        the amplitudes of the states whose leftmost qubit is `Zero` clear out. The only
        compatible state is $|5\rangle=|101\rangle$. This state gets an amplitude probability
        of $1$.
-    
+
         ```output
         DumpMachine:
         

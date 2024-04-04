@@ -11,7 +11,7 @@ These six positions are the individual possible configurations of the system "ca
 
 :::image type="content" source="../media/cat-and-box-system.png" alt-text="Picture of a cat and a box and the representation of six different positions of the cat respect of the box.":::
 
-However, just the sum of the individual positions doesn't capture the full picture. You also need to consider the **probability** of finding the cat in each of the individual positions. For example, the cat is more likely to be next to the box than on under of it. So, you need to weight each individual position by its probability.
+However, just the sum of the individual positions doesn't capture the full picture. You also need to consider the **probability** of finding the cat in each of the individual positions. For example, the cat is more likely to be next to the box than under it. So, you need to weight each individual position by its probability.
 
 The state of the *cat and box system* is the sum of the six different positions of the cat respect of the box, weighted by the probability of finding the cat in that position:
 
