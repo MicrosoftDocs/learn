@@ -30,7 +30,9 @@ The following screenshot demonstrates how to copy the required values:
 
 The sample application is available in .NET, and the code is maintained in a GitHub repository. Download the sample code from the GitHub repo, or clone the repository to your local computer:
 
-`git clone https://github.com/Azure-Samples/active-directory-verifiable-credentials-dotnet.git`
+```
+git clone https://github.com/Azure-Samples/active-directory-verifiable-credentials-dotnet.git
+```
 
 ## Configure the verifiable credentials app
 
