@@ -2,7 +2,7 @@ The **Publish** wizard in the Azure Functions template provides the most straigh
 
 In the luxury watch online website scenario, you decided to use Visual Studio 2022 to deploy functions to an Azure Function App in the cloud. First, you create an Azure Function App, and then use the Visual Studio **Publish** wizard to deploy the functions you create.
 
-In this exercise, you use the Azure portal to create an Azure Function App. Then, you deploy the **WatchInfo** function using the Visual Studio project that you created in a previous exercise. Lastly, you test the function to verify that it's correctly deployed.
+Here, you use the Azure portal to create an Azure Function App. Then, you deploy the **WatchInfo** function using the Visual Studio project that you created in a previous exercise. Lastly, you verify that your function is correctly deployed by testing it.
 
 ## Create an Azure Function App using the Azure portal
 
@@ -115,4 +115,4 @@ In this exercise, you use the Azure portal to create an Azure Function App. Then
 
     :::image type="content" source="../media/5-function-success.png" alt-text="Screenshot of web browser showing the details of the watch model." loc-scope="other"::: <!-- no-loc -->
 
-You've now created an Azure Function App in the cloud, and published your functions to this app from Visual Studio.
+In this exercise, you created an Azure Function App in the cloud, and published your functions to this app from Visual Studio.

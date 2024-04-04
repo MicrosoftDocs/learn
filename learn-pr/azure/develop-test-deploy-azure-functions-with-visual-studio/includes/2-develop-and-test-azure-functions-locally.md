@@ -50,7 +50,7 @@ The following table shows the highest level of .NET Core or .NET Framework that 
 
 | Functions runtime version | In-process | Isolated worker process |
 | ---- | ---- | --- |
-| Functions 4.x | .NET 6.0 | .NET 6.0<br/>.NET 7.0<br/>.NET Framework 4.8 |
+| Functions 4.x | .NET 6.0 | .NET 6.0<br/> .NET 7.0<br/> .NET 8.0<br/> .NET Framework 4.8 |
 | Functions 1.x | .NET Framework 4.8 | n/a |
 
 An Azure Function App stores management information, code, and logs in Azure storage. To hold this data, you create a Storage Account. The storage account must support Azure Blob, Queue, Files, and Table storage; use a general Azure Storage account for this purpose. You specify which storage account to use for the function using the dialog previously shown.
