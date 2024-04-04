@@ -306,8 +306,8 @@ The device configuration file contains the settings to use when configuring your
 
  -  **IP address space** of the virtual hub vpngateway. Because each vpngateway connection is composed of two tunnels in active-active configuration, you'll see both IP addresses listed in this file. In this example, you see "Instance0" and "Instance1" for each site.
      -  Example:
-         -  `"Instance0":"104.45.18.186"`
-         -  `"Instance1":"104.45.13.195"`
+         -  `"Instance0":"nnn.nn.nn.nnn"`
+         -  `"Instance1":"nnn.nn.nn.nnn"`
 
  -  **Vpngateway connection configuration details** such as BGP, preshared key etc. The PSK is the preshared key that is automatically generated for you. You can always edit the connection in the **Overview** page for a custom **Pre-Shared Key (PSK)**.
 
@@ -737,6 +737,6 @@ On the **Edit VPN Gateway** page, you can see the following settings:
  -  **Public IP Address**: Assigned by Azure.<br>
  -  **Private IP Address**: Assigned by Azure.<br>
  -  **Default BGP IP Address**: Assigned by Azure.<br>
- -  **Custom BGP IP Address**: This field is reserved for APIPA (Automatic Private IP Addressing). Azure supports BGP IP in the ranges 169.254.21.\* and 169.254.22.\*. Azure accepts BGP connections in these ranges but will dial connection with the default BGP IP. Users can specify multiple custom BGP IP addresses for each instance. The same custom BGP IP address shouldn't be used for both instances.<br>
+ -  **Custom BGP IP Address**: This field is reserved for APIPA (Automatic Private IP Addressing). Azure supports BGP IP in the ranges 169.254.21.\* and 169.254.22.\*. Azure accepts BGP connections in these ranges but will dial connection with the default BGP IP. Users can specify multiple custom BGP IP addresses for each instance. The same custom BGP IP address shouldn't be used for both instances.
 
-:::image type="content" source="../media/edit-gateway-931c0276.png" alt-text="Screenshot showing how to edit virtual private network gateway settings.":::
+:::image type="content" source="../media/edit-virtual-private-network-gateway-example-8cb0ec23.png" alt-text="Screenshot showing how to edit virtual private network gateway settings.":::
