@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/05/2024
+  ms.date: 04/03/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -38,3 +38,14 @@ quiz:
     - content: "Microsoft Entra account"
       isCorrect: false
       explanation: "Incorrect. A Microsoft Entra account is an identity created through Microsoft Entra ID or another Microsoft cloud service, such as Microsoft 365. Identities are stored in Microsoft Entra ID and accessible to the organization's cloud service subscriptions. This account is also sometimes called a work or school account."
+  - content: "Which is true about Microsoft Entra ID?"
+    choices:
+    - content: "Microsoft Entra ID includes federation services."
+      isCorrect: true
+      explanation: "Correct. Microsoft Entra ID includes federation services, including third party services."
+    - content: "Microsoft Entra ID uses Kerberos authentication."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Entra ID uses HTTP and HTTPS authentication."
+    - content: "Microsoft Entra ID organizes users and groups into organization units."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Entra ID creates users and groups in flat structure."

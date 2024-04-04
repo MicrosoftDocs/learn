@@ -4,13 +4,12 @@ title: Assign values and types to variables in Windows PowerShell scripts
 metadata:
   title: Assign values and types to variables in Windows PowerShell scripts
   description: "Assign values and types to variables in Windows PowerShell scripts"
-  ms.date: 11/10/2022
+  ms.date: 03/21/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
   ms.custom:
-azureSandbox: false
-labModal: false
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/4-assign-values-types-variables.md)]

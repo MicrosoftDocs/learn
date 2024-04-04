@@ -25,7 +25,7 @@ products:
 - azure-container-instances
 - azure-container-registry
 subjects:
-- container
+- containers
 modules:
 - learn.wwl.publish-container-image-to-azure-container-registry
 - learn.wwl.create-run-container-images-azure-container-instances

@@ -30,7 +30,6 @@ prerequisites: |
   - [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code
 subjects:
 - devops
-- development-tools
 units:
 - learn.dotnet-debug.1-introduction
 - learn.dotnet-debug.2-debugger

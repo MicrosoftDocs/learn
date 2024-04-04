@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-cloud-storage-for-iot.examine-azure-blob-storage-storage-accounts
+title: Examine Azure Blob storage
+metadata:
+  title: Examine Azure Blob storage
+  description: "Examine Azure Blob storage"
+  ms.date: 02/16/2024
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-azure-storage-options.md)]

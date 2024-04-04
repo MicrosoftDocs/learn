@@ -95,7 +95,9 @@ In this example, configure the access controls to require multifactor authentica
 
 ### Activate the policy
 
-Conditional Access policies can be set to **Report-only** if you want to see how the configuration would affect users, or **Off** if you don't want to the use policy right now.
+Conditional Access policies can be set to **Report-only** if you want to see how the configuration would affect users, or **Off** if you don't want to the use policy right now. Because a test group of users is targeted for this tutorial, let's enable the policy, and then test Microsoft Entra multifactor authentication.
+
+1. Under **Enable policy**, select **On**.
 
 :::image type="content" source="../media/multifactor-enable-policy-control-89c8b9c0.png" alt-text="Screenshot showing an example of how to enable the report only policy.":::
 
@@ -210,12 +212,13 @@ OATH hardware tokens are supported as part of a public preview.
 
 After you acquire tokens, you need to upload them in a comma-separated values (CSV) file format. Include the **User Principal Name (UPN)**, **serial number**, **secret key**, **time interval**, **manufacturer**, and **model**.
 
-`CSV`
-
-`upn,serial number,secret key,time interval,manufacturer,model Helga@contoso.com,1234567,1234567abcdef1234567abcdef,60,Contoso,HardwareKey`
+```
+upn,serial number,secret key,time interval,manufacturer,model
+Helga@contoso.com,1234567,2234567abcdef2234567abcdef,60,Contoso,HardwareKey
+```
 
 > [!NOTE]
-> Be sure to include the header row in your CSV file.
+> Make sure to include the header row in your CSV file.
 
 An administrator can sign in to the Azure portal, go to **Microsoft Entra ID, Security**, **Multifactor authentication**, **OATH tokens**, and **upload the CSV file**.<br>
 

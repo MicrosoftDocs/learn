@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/22/2023
   author: padmalathas
   ms.author: padmalathas
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Introduction to high-performance computing (HPC) on Azure
 summary: Discover the services available on Azure for your high-performance computing workloads.
 abstract: | 

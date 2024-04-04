@@ -4,7 +4,7 @@ title: Named window definition with the SELECT WINDOW clause
 metadata:
   title: Named window definition with the SELECT WINDOW clause
   description: "Named window definition in the WINDOW clause determines the partitioning and ordering of a rowset before the window function which uses the window in OVER clause is applied."
-  ms.date: 5/5/2023
+  ms.date: 02/27/2024
   author: MScalopez
   ms.author: calopez
   ms.reviewer: vanto

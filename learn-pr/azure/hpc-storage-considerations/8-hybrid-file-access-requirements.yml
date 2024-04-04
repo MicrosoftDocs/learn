@@ -4,7 +4,7 @@ title: Hybrid file access requirements
 metadata:
   title: Hybrid file access requirements
   description: A discussion of how data is accessed across wide area networks and the various approaches you can take to move data to and from Azure.
-  ms.date: 12/29/2020
+  ms.date: 05/10/2023
   author: scjescho
   ms.author: padmalathas
   ms.topic: unit

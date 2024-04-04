@@ -3,7 +3,7 @@ uid: learn.language.rust-automated-tests.exercise-unit-tests
 metadata:
   title: Exercise - Write unit tests
   description: Use what you've learned about unit tests to complete two test functions.
-  ms.date: 01/26/2021
+  ms.date: 06/14/2021
   author: meaghanlewis
   ms.author: chnoring
   ms.topic: unit

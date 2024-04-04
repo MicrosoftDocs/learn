@@ -3,7 +3,7 @@ uid: learn.wwl.configure-azure-active-directory
 metadata:
   title: Configure Microsoft Entra ID
   description: "Configure Microsoft Entra ID"
-  ms.date: 03/05/2024
+  ms.date: 04/03/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
@@ -12,8 +12,7 @@ metadata:
   ms.service: active-directory
   ai-usage: ai-assisted
 title: Configure Microsoft Entra ID
-summary: |
-  Learn how to configure Microsoft Entra ID, including features like Microsoft Entra join and self-service password reset.
+summary: Learn how to configure Microsoft Entra ID, including features like Microsoft Entra ID join and self-service password reset.
 abstract: |
   In this module, you learn how to:
 

@@ -8,8 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
-  ms.service: sap-on-azure
-  ms.subservice: sap-vm-workloads
 durationInMinutes: 12
 content: |
   [!include[](includes/5-explore-site-recovery.md)]

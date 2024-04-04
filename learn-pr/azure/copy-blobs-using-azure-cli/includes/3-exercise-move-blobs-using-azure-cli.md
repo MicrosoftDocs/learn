@@ -21,7 +21,7 @@ In this exercise, you use the Azure CLI to migrate blobs that are unchanged in t
     az storage account create \
       --location $LOCATION \
       --name $HOT_STORAGE_NAME \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group "<rgn>[Sandbox resource group]</rgn>" \
       --sku Standard_RAGRS \
       --kind BlobStorage \
       --access-tier Hot
@@ -32,7 +32,7 @@ In this exercise, you use the Azure CLI to migrate blobs that are unchanged in t
     ```azurecli
     az storage account keys list \
       --account-name $HOT_STORAGE_NAME \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group "<rgn>[Sandbox resource group]</rgn>" \
       --output table
     ```
 
@@ -94,7 +94,7 @@ Now we create a second storage account and move data between accounts.
     az storage account create \
       --location $LOCATION \
       --name $COOL_STORAGE_NAME \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group "<rgn>[Sandbox resource group]</rgn>" \
       --sku Standard_RAGRS \
       --kind BlobStorage \
       --access-tier Cool
@@ -105,7 +105,7 @@ Now we create a second storage account and move data between accounts.
     ```azurecli
     az storage account keys list \
       --account-name $COOL_STORAGE_NAME \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group "<rgn>[Sandbox resource group]</rgn>" \
       --output table
     ```
 

@@ -4,6 +4,7 @@ Now that you have finished this module, you should be able to:
 
 - Understand how GitHub Copilot can help you code by offering autocomplete-style suggestions.
 - Apply prompt engineering to various projects by using its good practices.
+- Use GitHub Copilot Chat to ask and receive coding-related questions.
 
 
 ## Delete your Codespaces resources

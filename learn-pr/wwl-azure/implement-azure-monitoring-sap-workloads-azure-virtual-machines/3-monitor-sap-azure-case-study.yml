@@ -3,12 +3,13 @@ uid: learn.wwl.implement-azure-monitoring-for-sap-workloads-azure-vms.monitoring
 title: Monitor SAP on Azure (case study)
 metadata:
   title: Monitor SAP on Azure (case study)
-  description: "Monitor SAP on Azure (case study)"
-  ms.date: 03/09/2021
+  description: "Review a case study of Microsoft's own internal SAP infrastructure monitoring."
+  ms.date: 03/28/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
-azureSandbox: false
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/3-monitor-sap-azure-case-study.md)]

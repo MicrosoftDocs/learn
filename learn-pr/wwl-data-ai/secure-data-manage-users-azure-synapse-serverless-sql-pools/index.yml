@@ -28,7 +28,7 @@ products:
 subjects:
 - data-analytics
 - security
-- serverless-compute
+- serverless-computing
 units:
 - learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools.introduction
 - learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools.choose-authentication-method

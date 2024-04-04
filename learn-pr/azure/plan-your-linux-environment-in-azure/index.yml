@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/16/2023
   title: Plan your Linux environment in Azure
   description: Learn about standards and practices for planning, deploying, managing, and optimizing Linux VMs in Azure.
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Plan your Linux environment in Azure
 summary: Learn about standards and practices for planning, deploying, managing, and optimizing Linux VMs in Azure.
 abstract: |

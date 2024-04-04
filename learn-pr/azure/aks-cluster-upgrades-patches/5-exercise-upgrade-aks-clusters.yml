@@ -10,7 +10,7 @@ metadata:
   author: microsoftmichelle
   sandbox: false
   ms.product: learning-azure
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-azurecli
 durationInMinutes: 30

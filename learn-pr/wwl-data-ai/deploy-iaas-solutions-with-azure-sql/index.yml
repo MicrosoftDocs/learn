@@ -32,7 +32,7 @@ products:
 - azure-sql-database
 - sql-server
 subjects:
-- database
+- databases
 units:
 - learn.wwl.deploy-iaas-solutions-with-azure-sql.introduction
 - learn.wwl.deploy-iaas-solutions-with-azure-sql.explain-iaas-options-deploy-azure

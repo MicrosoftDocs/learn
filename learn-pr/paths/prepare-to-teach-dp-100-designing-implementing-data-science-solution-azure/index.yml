@@ -20,7 +20,7 @@ roles:
 products:
 - azure
 subjects:
-- data-ai
+- data-management
 modules:
 - learn.wwl.introduction-microsoft-learn-educators-program
 - learn.wwl.onboard-microsoft-learn-educators-program
