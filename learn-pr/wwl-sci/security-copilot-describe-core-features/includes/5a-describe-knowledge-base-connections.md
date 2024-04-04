@@ -25,7 +25,9 @@ To upload a file, the steps are as follows:
 
 1. To include the file as a source in your current session, select the toggle button so it's lit up (the circle inside the toggle button is in the rightmost position). If you aren't going to use the file yet, or want to exclude it as a source in your current session, select the toggle button so it's greyed out (the circle inside the toggle button is in the rightmost position).
 
-1. To prompt using the uploaded file, read [Prompting for an uploaded file](connect-org-kb.md#prompting-for-an-uploaded-file).
+1. To prompt using the uploaded file, you need to mention "uploaded files" if you want Copilot to reason over your available files. You can also include the file name if you would like to guide Copilot to reason over a specific file. For example, if you want Copilot to check a user account's actions against your organization's data handling policies to find out if any violations were committed, a sample prompt would be:  
+
+   *Based on the Contoso Data Handling Policy file, list any actions taken by user Preston-123 that might be a violation of the data handling policies. Include a verdict to the action and level of confidence of the verdict. Cite the policy name and section applicable to the verdict*.
 
 #### Delete a file
 

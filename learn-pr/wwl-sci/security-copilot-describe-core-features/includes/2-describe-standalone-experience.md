@@ -30,9 +30,9 @@ From the home menu, the user can navigate as follows:
 
 - Owner specific options, for users configured as owners:
 
-  - Owner settings, which include a link to manage the billing in Azure, the option to change the Security Compute Units (SCUs), configuration of data sharing options, and information on where data is stored.
+  - Owner settings, which include a link to manage the billing in Azure, the option to change the Security Compute Units (SCUs), and configuration of data sharing options.
 
-    :::image type="content" source="../media/owner-settings.png" lightbox="../media/owner-settings.png" alt-text="Screen capture showing the owner settings.":::
+    :::image type="content" source="../media/owner-settings-updated-v2.png" lightbox="../media/owner-settings.png" alt-text="Screen capture showing the owner settings.":::
 
   - Role assignments, where admins can view existing role assignments and assign Copilot roles to users.
   
@@ -44,9 +44,19 @@ From the home menu, the user can navigate as follows:
 
     :::image type="content" source="../media/usage-monitoring.png" lightbox="../media/usage-monitoring.png" alt-text="Screen capture showing the usage monitoring dashboard.":::
 
-- Settings, which include preferences along with data and privacy statements. The preferences settings allow users to configure the theme. Users with admin settings can configure who can add and manage custom plugins.
+- Settings, which include configurable preferences, data and privacy statements, and information about the App version.
 
-    :::image type="content" source="../media/settings-preferences-v2.png" lightbox="../media/usage-monitoring.png" alt-text="Screen capture showing the preferences that can be configured.":::
+  - The preferences settings allow users to configure the theme, language, and time zone. Copilot supports many languages, for detailed information see [Supported languages](/security-copilot/supported-languages#supported-languages).
+   
+    For users with owner role permissions, the preferences page includes more configuration options. Owners can configure options plugins, file upload, and the response debugging level.
+
+    :::image type="content" source="../media/settings-preferences-all-user-settings-v2.png" lightbox="../media/settings-preferences-all-user-settings-v2.png" alt-text="Screen capture showing the preferences that can be configured.":::
+
+    :::image type="content" source="../media/settings-preferences-owner-specific-settings.png" lightbox="../media/settings-preferences-owner-specific-settings.png" alt-text="Screen capture showing the preferences that can be configured.":::
+
+  - The data and privacy page provides links to the privacy statement, terms and conditions, and location information for where data is stored.
+  
+  -  The About page provides information of the app version for Copilot.
 
 - Tenant switcher. The tenant, which is provisioned for Copilot doesn't need to be the tenant your security analyst logs in from. In the screenshot that follows, security analyst Angus MacGregor uses a Fabrikam account to sign in. Copilot is provisioned in the Contoso tenant. By selecting the down arrow, Angus MacGregor is able to select the Contoso tenant.
 
