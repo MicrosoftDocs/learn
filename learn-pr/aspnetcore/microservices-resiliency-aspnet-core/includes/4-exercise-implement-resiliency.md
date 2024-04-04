@@ -42,9 +42,9 @@ To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslear
 
 1. In the bottom panel, select to the **PORTS** tab, then in the Forwarded Address column of the table, select the **Open in Browser** icon for the **Front End (32000**) port. 
 
-    If you're running the app locally, open a browser window to view [http://localhost:32000/products](http://localhost:32000/products).
+    If you're running the app locally, open a browser window to view `http://localhost:32000/products`.
 
-1. The eShop app should be running. Select the **Products** menu item, you should see the list of products.
+2. The eShop app should be running. Select the **Products** menu item, you should see the list of products.
 
     :::image type="content" source="../media/4-eshop-app.png" alt-text="Screenshot showing the eShop app running in a browser.":::
 
