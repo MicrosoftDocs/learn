@@ -12,18 +12,35 @@ You can upload a file in Microsoft Copilot for Security to allow Copilot to refe
 
 To upload a file, the steps are as follows:
 
-1. Navigate to the file upload page by selecting the sources icon in the prompt bar then selecting files from the Manage sources page.
+1. Navigate to the file upload page by selecting the sources icon ![Screenshot of sources icon](../media/sources-icon-from-docs.png) in the prompt bar then selecting files from the Manage sources page.
 
-      :::image type="content" source="../media/manage-sources-files-new.png" lightbox="../media/manage-sources-files-new.png" alt-text="Screen capture of the files upload page.":::
+      :::image type="content" source="../media/manage-sources-files-new-v2.png" lightbox="../media/manage-sources-files-new-v2.png" alt-text="Screen capture of the files upload page.":::
 
-1. Drag the file to the upload section or select click to upload to look for your file. Make sure the file you're about to upload is a common text file type like PDF, DOC, DOCX, HTML, HTM, and TXT, or EML formats, and that the file size doesn't exceed the given capacity.
+1. Select Upload file to look for your file. Check that the file you're about to upload is a common text file type like DOCX, MD, PDF, and TXT formats, and that each file doesn't exceed 3 MB. You can upload files, one at a time, as long as the the maximum capacity for all the uploaded files does not exceed the maximum of 20 MB in total.
 
-1. In Uploads, check the status of the file. Wait for the status to change from Uploading to Uploaded. If the upload failed, correct the problem, and try again.
+1. Wait for the file to appear in Uploads. If an error message appears, correct the problem, and try again.
 
-  > [!NOTE]
-  > Uploaded files are only available to the user account that uploaded it. Uploaded files are stored outside the tenant. To include the file as a source in your current session, toggle the button on the right-hand side of the file until the toggle is lit up. If you are not going to use the file yet, or to exclude the file as a source in your current session, keep the toggle button in grey.
+   > [!NOTE]
+   > Uploaded files are only available to the user account that uploaded it. Uploaded files are stored outside the tenant. To include the file as a source in your current session, toggle the button on the right-hand side of the file until the toggle is lit up. If you are not going to use the file yet, or to exclude the file as a source in your current session, keep the toggle button in grey.
 
-To delete a file, hover the file name in the Files section to make the trash bin icon appear. Select the trash icon to delete the file.
+1. To include the file as a source in your current session, select the toggle button so it is lit up (the circle inside the toggle button is in the rightmost position). If you aren't going to use the file yet, or want to exclude it as a source in your current session, select the toggle button so it is greyed out (the circle inside the toggle button is in the rightmost position).
+
+1. To prompt using the uploaded file, read [Prompting for an uploaded file](connect-org-kb.md#prompting-for-an-uploaded-file).
+
+#### Delete a file
+
+To delete a file, select the trash icon next to the file name to delete the file.
+
+#### Restricting file upload (for owners)
+
+Users assigned the Owner role can choose who are allowed to upload files in owner settings. The options are:
+
+- No one can upload files
+- Contributors and Owners can upload files
+
+By default, file upload is available for all users (Contributors and Owners).
+
+ :::image type="content" source="../media/file-upload-owner-admin-settings.png" alt-text="Screenshot of files upload dialog box." lightbox="../media/file-upload-owner-admin-settings.png":::
 
 ### Azure AI Search plugin
 
