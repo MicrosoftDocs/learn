@@ -14,27 +14,23 @@ To enable infrastructure encryption for a storage account, you must configure a 
 
 To use the Azure portal to create a storage account with infrastructure encryption enabled, follow these steps:
 
-1. In the Azure portal, navigate to the **Storage accounts** page.<br>
-
-2. Choose the **Add** button to add a new general-purpose v2 or premium block blob storage account.<br>
-
-3. On the **Encryption** tab, locate **Enable infrastructure encryption**, and select **Enabled**.<br>
-
-4. Select **Review + create** to finish creating the storage account.
-
-:::image type="content" source="../media/create-account-infrastructure-encryption-page-b7269a77.png" alt-text="Screenshot showing how to create an account with infrastructure encryption enabled.":::
-
+1.  In the Azure portal, navigate to the **Storage accounts** page.<br>
+2.  Choose the **Add** button to add a new general-purpose v2 or premium block blob storage account.<br>
+3.  On the **Encryption** tab, locate **Enable infrastructure encryption**, and select **Enabled**.<br>
+4.  Select **Review + create** to finish creating the storage account.
+    
+    :::image type="content" source="../media/create-account-infrastructure-encryption-page-b7269a77.png" alt-text="Screenshot showing how to create an account with infrastructure encryption enabled.":::
+    
 
 To verify that infrastructure encryption is enabled for a storage account with the Azure portal, follow these steps:<br>
 
-1. Navigate to your storage account in the Azure portal.<br>
-
-2. Under **Settings**, choose **Encryption**.
-
-:::image type="content" source="../media/verify-infrastructure-encryption-page-c9ecb274.png" alt-text="Screenshot showing how to verify that infrastructure encryption is enabled for a storage account.":::
-
-
-Azure Policy provides a built-in policy to require that infrastructure encryption be enabled for a storage account.
+1.  Navigate to your storage account in the Azure portal.<br>
+2.  Under **Settings**, choose **Encryption**.
+    
+    :::image type="content" source="../media/verify-infrastructure-encryption-page-c9ecb274.png" alt-text="Screenshot showing how to verify that infrastructure encryption is enabled for a storage account.":::
+    
+    
+    Azure Policy provides a built-in policy to require that infrastructure encryption be enabled for a storage account.
 
 ## Create an encryption scope with infrastructure encryption enabled
 

@@ -20,18 +20,14 @@ You can view and copy your account access keys with the Azure portal, PowerShell
 
 To view and copy your storage account access keys or connection string from the Azure portal:
 
-1. In the Azure portal, go to your storage account.<br>
-
-2. Under **Security + networking**, select **Access keys**. Your account access keys appear, as well as the complete connection string for each key.<br>
-
-3. Select Show keys to show your access keys and connection strings and to enable buttons to copy the values.<br>
-
-4. Under **key1**, find the **Key** value. Select the **Copy** button to copy the account key.<br>
-
-5. Alternately, you can copy the entire connection string. Under key1, find the **Connection string** value. Select the **Copy** button to copy the connection string.
-
-:::image type="content" source="../media/portal-connection-c2097b8f.png" alt-text="Screenshot showing an example of the portal connection string.":::
-
+1.  In the Azure portal, go to your storage account.<br>
+2.  Under **Security + networking**, select **Access keys**. Your account access keys appear, as well as the complete connection string for each key.<br>
+3.  Select Show keys to show your access keys and connection strings and to enable buttons to copy the values.<br>
+4.  Under **key1**, find the **Key** value. Select the **Copy** button to copy the account key.<br>
+5.  Alternately, you can copy the entire connection string. Under key1, find the **Connection string** value. Select the **Copy** button to copy the connection string.
+    
+    :::image type="content" source="../media/portal-connection-c2097b8f.png" alt-text="Screenshot showing an example of the portal connection string.":::
+    
 
 You can use either of the two keys to access Azure Storage, but in general it's a good practice to use the first key, and reserve the use of the second key for when you are rotating keys.<br>
 
@@ -80,17 +76,14 @@ A key expiration policy enables you to set a reminder for the rotation of the ac
 
 To create a key expiration policy in the Azure portal:
 
-1. In the Azure portal, go to your storage account.
-
-2. Under **Security + networking**, select **Access keys**. Your account access keys appear, as well as the complete connection string for each key.
-
-3. Select the **Set rotation reminder** button. If the **Set rotation reminder** button is grayed out, you will need to rotate each of your keys. Follow the steps described in Manually rotate access keys to rotate the keys.
-
-4. In Set a reminder to rotate access keys, select the **Enable key rotation reminders** checkbox and set a frequency for the reminder.
-
-5. Select **Save**.
-
-## :::image type="content" source="../media/portal-key-expiration-policy-page-e116b00c.png" alt-text="Screenshot showing how to set a reminder to rotate keys."::: 
+1.  In the Azure portal, go to your storage account.
+2.  Under **Security + networking**, select **Access keys**. Your account access keys appear, as well as the complete connection string for each key.
+3.  Select the **Set rotation reminder** button. If the **Set rotation reminder** button is grayed out, you will need to rotate each of your keys. Follow the steps described in Manually rotate access keys to rotate the keys.
+4.  In Set a reminder to rotate access keys, select the **Enable key rotation reminders** checkbox and set a frequency for the reminder.
+5.  Select **Save** .
+    
+    :::image type="content" source="../media/portal-key-expiration-policy-page-e116b00c.png" alt-text="Screenshot showing how to set a reminder to rotate keys.":::
+    
 
 ## Check for key expiration policy violations
 
@@ -100,36 +93,28 @@ You can monitor your storage accounts with Azure Policy to ensure that account a
 
 Follow these steps to assign the built-in policy to the appropriate scope in the Azure portal:
 
-1. In the Azure portal, search for Policy to display the Azure Policy dashboard.
-
-2. In the **Authoring** section, select **Assignments**.
-
-3. Choose **Assign policy**.
-
-4. On the **Basics** tab of the **Assign policy** page, in the **Scope** section, specify the scope for the policy assignment. Select the More button to choose the subscription and optional resource group.
-
-5. For the **Policy definition** field, select the **More** button, and enter *storage account keys* in the **Search** field. Select the policy definition named **Storage account keys should not be expired**.
-
-:::image type="content" source="../media/policy-definition-select-portal-page-40266255.png" alt-text="Screenshot showing how to set a reminder to rotate keys.":::
-
-
-6. Select **Review + create** to assign the policy definition to the specified scope.<br>
-
-## :::image type="content" source="../media/policy-assignment-create-page-53cecf86.png" alt-text="Screenshot showing how to assign the built in policy for a resource scope."::: 
+1.  In the Azure portal, search for Policy to display the Azure Policy dashboard.
+2.  In the **Authoring** section, select **Assignments**.
+3.  Choose **Assign policy**.
+4.  On the **Basics** tab of the **Assign policy** page, in the **Scope** section, specify the scope for the policy assignment. Select the More button to choose the subscription and optional resource group.
+5.  For the **Policy definition** field, select the **More** button, and enter *storage account keys* in the **Search** field. Select the policy definition named **Storage account keys should not be expired**.
+    
+    :::image type="content" source="../media/policy-definition-select-portal-page-40266255.png" alt-text="Screenshot showing a policy definition example of how to ensure storage account keys are not expired.":::
+    
+6.  Select **Review + create** to assign the policy definition to the specified scope.<br>
+    
+    :::image type="content" source="../media/policy-assignment-create-page-53cecf86.png" alt-text="Screenshot showing how to assign the built in policy for a resource scope.":::
+    
 
 ## Monitor compliance with the key expiration policy
 
 To monitor your storage accounts for compliance with the key expiration policy, follow these steps:
 
-1. On the Azure Policy dashboard, locate the built-in policy definition for the scope that you specified in the policy assignment. You can search for *Storage account keys, should not be expired* in the **Search** box to filter for the built-in policy.<br>
-
-2. Select the policy name with the desired scope.<br>
-
-3. On the **Policy assignment** page for the built-in policy, select **View compliance**. Any storage accounts in the specified subscription and resource group that do not meet the policy requirements appear in the compliance report.
-
-To bring a storage account into compliance, rotate the account access keys.
-
-:::image type="content" source="../media/policy-compliance-report-page-238d8b1b.png" alt-text="Screenshot showing the policy compliance report portal.":::
-
-
-To bring a storage account into compliance, rotate the account access keys.
+1.  On the Azure Policy dashboard, locate the built-in policy definition for the scope that you specified in the policy assignment. You can search for *Storage account keys, should not be expired* in the **Search** box to filter for the built-in policy.<br>
+2.  Select the policy name with the desired scope.<br>
+3.  On the **Policy assignment** page for the built-in policy, select **View compliance**. Any storage accounts in the specified subscription and resource group that do not meet the policy requirements appear in the compliance report.
+    
+    To bring a storage account into compliance, rotate the account access keys.
+    
+    :::image type="content" source="../media/policy-compliance-report-page-238d8b1b.png" alt-text="Screenshot showing the policy compliance report portal.":::
+    

@@ -18,7 +18,7 @@ The following are the requirements:
 **Key Exchange Key**: An HSM-backed key that customer generates in the key vault where the BYOK key will be imported. This KEK must have following properties:
 
  -  It’s an RSA-HSM key (4096-bit or 3072-bit or 2048-bit)<br>
- -  It will have fixed key\_ops (ONLY ‘import’), that will allow it to be used ONLY during BYOK
+ -  It will have fixed key\_ops (ONLY ‘import’), that allows it to be used ONLY during BYOK
  -  Must be in the same vault where the Target Key will be imported
 
 ## User steps
