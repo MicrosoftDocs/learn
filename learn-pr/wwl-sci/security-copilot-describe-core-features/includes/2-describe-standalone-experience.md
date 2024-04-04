@@ -20,7 +20,7 @@ The home menu is accessed by selecting the hamburger icon located on the top lef
 From the home menu, the user can navigate as follows:
 
 - Back to the landing page by selecting the Home icon.
-- My sessions, which list past sessions created. The user can manage past sessions with search and filter options along with the ability to rename, duplicate, or delete sessions as needed.
+- My sessions, which list past sessions created. The user can manage past sessions with search and filter options along with the ability to rename, duplicate, or delete sessions as needed.  Currently sessions are kept on the My sessions page until they are manually deleted.
 
     :::image type="content" source="../media/my-sessions-v2.png" lightbox="../media/my-sessions-v2.png" alt-text="Screen capture listing a user's session.":::
 
@@ -32,7 +32,7 @@ From the home menu, the user can navigate as follows:
 
   - Owner settings, which include a link to manage the billing in Azure, the option to change the Security Compute Units (SCUs), and configuration of data sharing options.
 
-    :::image type="content" source="../media/owner-settings-updated-v2.png" lightbox="../media/owner-settings.png" alt-text="Screen capture showing the owner settings.":::
+    :::image type="content" source="../media/owner-settings-updated-v2.png" lightbox="../media/owner-settings-updated-v2.png" alt-text="Screen capture showing the owner settings.":::
 
   - Role assignments, where admins can view existing role assignments and assign Copilot roles to users.
   
@@ -50,9 +50,9 @@ From the home menu, the user can navigate as follows:
    
     For users with owner role permissions, the preferences page includes more configuration options. Owners can configure options plugins, file upload, and the response debugging level.
 
-    :::image type="content" source="../media/settings-preferences-all-user-settings-v2.png" lightbox="../media/settings-preferences-all-user-settings-v2.png" alt-text="Screen capture showing the preferences that can be configured.":::
+    :::image type="content" source="../media/settings-preferences-all-user-settings-v2.png" lightbox="../media/settings-preferences-all-user-settings-v2.png" alt-text="Screen capture showing the preferences that can be configured by any user.":::
 
-    :::image type="content" source="../media/settings-preferences-owner-specific-settings.png" lightbox="../media/settings-preferences-owner-specific-settings.png" alt-text="Screen capture showing the preferences that can be configured.":::
+    :::image type="content" source="../media/settings-preferences-owner-specific-settings.png" lightbox="../media/settings-preferences-owner-specific-settings.png" alt-text="Screen capture showing the preferences that can be configured by owners.":::
 
   - The data and privacy page provides links to the privacy statement, terms and conditions, and location information for where data is stored.
   
