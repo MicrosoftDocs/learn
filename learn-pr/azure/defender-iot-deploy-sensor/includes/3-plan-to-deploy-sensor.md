@@ -24,7 +24,7 @@ Complete the following steps to install the monitoring software on the VM sensor
 
 1. Open the VM, run the installation file, and follow the stages in the installation wizard.
 
-Once the installation completes, the default network details are displayed in the VM. <!-- check with Theo where this is displayed?-->
+Once the installation completes, the default network details are displayed in the VM.
 
 ## Activate and initial setup
 

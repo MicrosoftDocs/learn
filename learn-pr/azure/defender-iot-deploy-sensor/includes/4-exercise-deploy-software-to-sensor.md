@@ -91,7 +91,7 @@ Open a browser in the VM.
 
 1. Select **Login**.
 
-The **Sensor | Overview** page opens to the **Management interface** tab. Now you start to configure the settings.<!-- add screenshot of the Overview page here - can we get from THeo or Ariel or just leave this out? Ask QA - mark t. lawrence -->
+The **Sensor | Overview** page opens to the **Management interface** tab. Now you start to configure the settings.
 
 ### Define network details
 
@@ -148,4 +148,4 @@ Verify that your sensor is connected to Azure by checking its connectivity statu
 1. Check that your sensor is listed and the status is *healthy*.
 1. Check that device data appears by selecting **Device inventory**.
 
-:::image type="content" source="../media/4-device-inventory.png" alt-text="Screenshot of the Defender for IoT Device inventory page showing recent data from the sensor"  lightbox="../media/4-device-inventory.png" :::<!-- image is blurry -->
+:::image type="content" source="../media/4-device-inventory.png" alt-text="Screenshot of the Defender for IoT Device inventory page showing recent data from the sensor"  lightbox="../media/4-device-inventory.png" :::
