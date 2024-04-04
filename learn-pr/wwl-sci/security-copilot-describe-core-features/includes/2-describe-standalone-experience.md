@@ -78,7 +78,7 @@ The landing page of the standalone experience displays cards for a subset of the
 
 Select the title of the promptbook to open a page with more detailed information for the promptbook, including the input required to run the promptbook and a list of the prompts included. From this page, you can start a new session.
 
-:::image type="content" source="../media/promptbook-example.png" lightbox="../media/landing-page-promptbooks-mark-up.png" alt-text="Screen capture showing information for the Vulnerability Impact Assessment promptbook.":::
+:::image type="content" source="../media/promptbook-example.png" lightbox="../media/promptbook-example.png" alt-text="Screen capture showing information for the Vulnerability Impact Assessment promptbook.":::
 
 For a complete listing of all the available promptbooks, select View promptbook library.
 
