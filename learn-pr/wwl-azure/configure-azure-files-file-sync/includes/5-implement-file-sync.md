@@ -1,4 +1,4 @@
-Azure Files offers [soft delete for Server Message Block (SMB) file shares](/azure/storage/files/storage-files-enable-soft-delete?toc=%2Fazure%2Fstorage%2Ffile-sync). Soft delete allows you to recover your file share if it is deleted by an application or other storage account user.
+Azure Files offers [soft delete for Server Message Block (SMB) file shares](/azure/storage/files/storage-files-enable-soft-delete?toc=%2Fazure%2Fstorage%2Ffile-sync). Soft delete lets you recover deleted files and file shares.
 
 :::image type="content" source="../media/files-enable-soft-delete-new-ui.png" alt-text="Illustration that depicts how to enable soft delete on an Azure file share." border="false":::
 
