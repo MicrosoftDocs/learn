@@ -8,7 +8,7 @@ metadata:
   author: leestott
   ms.author: leestott
   ms.topic: unit
-  ms.custom: team=nextgen
+  ms.custom: team=nextgen, linux-related-content
   ms.service: iot-edge
 durationInMinutes: 20 # dummy number at present
 content: |

@@ -26,7 +26,7 @@ roles:
 products:
 - azure-database-postgresql
 subjects:
-- database
+- databases
 units:
 - learn.wwl.procedures-functions-postgesql.introduction
 - learn.wwl.procedures-functions-postgesql.create-stored-procedure-azure-database-for-postgresql

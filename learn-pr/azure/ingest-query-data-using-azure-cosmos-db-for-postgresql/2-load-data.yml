@@ -7,7 +7,7 @@ metadata:
   description: In Azure Cosmos DB for PostgreSQL, there are multiple techniques that can be used to efficiently ingest data into a distributed database.
   ms.custom:
     - ignite-2022
-  ms.date: 09/26/2022
+  ms.date: 06/12/2023
   author: seesharprun
   ms.author: sidandrews
   ms.reviewer: jonels

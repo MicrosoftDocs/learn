@@ -4,7 +4,7 @@ title: Exercise - Receive messages from Azure Service Bus
 metadata:
   title: Exercise - Receive messages from Azure Service Bus
   description: Write a Spring Boot app to receive messages from Azure Service Bus.
-  ms.date: 10/06/2022
+  ms.date: 02/07/2024
   author: spelluru
   ms.author: spelluru
   ms.topic: unit

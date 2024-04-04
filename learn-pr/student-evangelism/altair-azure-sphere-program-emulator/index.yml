@@ -6,7 +6,7 @@ metadata:
   ms.date: 11/16/2021
   author: gloveboxes
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: nextgen
   ms.service: azure-sphere
 title: Program the Altair 8800 emulator

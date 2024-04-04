@@ -4,7 +4,7 @@ title: Understand the .NET IoT Libraries
 metadata:
   title: Understand the .NET IoT Libraries
   description: "This unit introduces the student to the .NET IoT Libraries: System.Device.Gpio and IoT.Device.Bindings."
-  ms.date: 9/15/2021
+  ms.date: 9/9/2022
   author: camsoper
   ms.author: casoper
   ms.manager: markl

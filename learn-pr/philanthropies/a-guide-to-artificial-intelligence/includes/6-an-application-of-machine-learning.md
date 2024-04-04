@@ -7,3 +7,5 @@ Hospitals and healthcare professionals can leverage a machine learning model to 
 With the machine learning model in place, healthcare professionals can input new patient data to predict readmission likelihood. Machine learning can empower healthcare professionals to adopt proactive measures and tailor treatments for individual patients, leading to successful recoveries and fewer readmissions.<sup>4</sup>
 
 As hospitals accumulate data over time, the machine learning model continuously refines its ability to identify risk factors and recommend personalized interventions to improve patient outcomes. Using machine learning technology, healthcare professionals can make data-driven decisions, enhance patients' care, and ultimately save more lives.<sup>4</sup>
+
+<sup>3, 4</sup>: See the *Bibliography* in this module's **Summary** section.

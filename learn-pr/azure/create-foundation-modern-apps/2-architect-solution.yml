@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content  
   title: Architect a solution using Azure
   description: Break down a scenario for an application and build a multi-service architecture using Azure.
-  ms.date: 3/15/2023  
+  ms.date: 02/15/2024  
   author:   WilliamDAssafMSFT
   ms.author: wiassaf 
   ms.topic: unit

@@ -4,7 +4,7 @@ title: Create your virtual machine image for Azure Marketplace
 metadata:
   title: Create your virtual machine image for Azure Marketplace
   description: In this unit, we review the process of creating a VM image for Azure Marketplace using Packer.
-  ms.date: 06/03/2021
+  ms.date: 07/12/2022
   author: marleva
   ms.author: maevan
   ms.topic: unit

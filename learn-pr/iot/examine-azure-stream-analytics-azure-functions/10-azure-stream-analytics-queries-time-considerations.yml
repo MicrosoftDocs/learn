@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-azure-stream-analytics-azure-functions.examine-time-handling-considerations-for-asa-queries
+title: Examine time handling considerations for Azure Stream Analytics queries
+metadata:
+  title: Examine time handling considerations for Azure Stream Analytics queries
+  description: This content is part of Examine Azure Stream Analytics and Azure Functions in Azure IoT Hub solutions.
+  ms.date: 03/13/2024
+  author: asergaz
+  ms.author: sergaz
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/10-azure-stream-analytics-queries-time-considerations.md)]

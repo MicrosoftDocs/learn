@@ -3,18 +3,20 @@ uid: learn.wwl.challenge-project-work-variable-data-c-sharp.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 02/21/2024
+  description: "Check what you learn in this module."
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 quiz:
-  title: ""
+  title: "Check your knowledge"
   questions:
   - content: "To sort a string array, why is it important to use the `String.Trim()` method on each array element before sorting?"
     choices:
-    - content: "Only string arrays with elements trimmed with `String.Trim()` can sort"
+    - content: "Only string arrays with elements trimmed with `String.Trim()` can sort."
       isCorrect: false
       explanation: "Incorrect. `String.Trim()` doesn't prevent or enable sorting of a string array."
     - content: "`String.Trim()` removes leading white space that would sort before numbers and letters."
@@ -25,12 +27,12 @@ quiz:
       explanation: "Incorrect. The array sort isn't noticeably faster using `String.Trim()`."
   - content: "Both `foreach` and `for` are good choices to iterate small single dimension arrays like {\"cat\", \"fox\", \"dog\", \"snake\", \"eagle\"}, but when is it best to use a `for` loop?"
     choices:
-    - content: "When the elements have alphabetical sort order"
+    - content: "When the elements have alphabetical sort order."
       isCorrect: false
-      explanation: "Incorrect. You sort elements effectively with either a `foreach` or `for` loop."
-    - content: "When you need to perform a search on each element in the array"
+      explanation: "Incorrect. It is possible to sort elements effectively with either a `foreach` or `for` loop."
+    - content: "To perform a search on each element in the array."
       isCorrect: false
       explanation: "Incorrect. A search of each element using both `foreach` and `for` is appropriate."
-    - content: "When you need to evaluate a specific range of elements"
+    - content: "To evaluate a specific range of elements."
       isCorrect: true
-      explanation: "Correct. A `for` is better when you want index ranges that aren't the *first* to the *last* index."
+      explanation: "Correct. A `for` is better when index ranges that aren't the *first* to the *last* index are required."
