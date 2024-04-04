@@ -79,92 +79,32 @@ Get-AzProviderOperation -OperationSearchString Microsoft.ContainerRegistry/*
 
 For example, the following JSON defines the minimum actions for a custom role that permits importing images to a registry.
 
-```javascript
+```
 JSON
 ```
 
 ```javascript
 {
-```
-
-```javascript
-   "assignableScopes": [
-```
-
-```javascript
-     "/subscriptions/<optional, but you can limit the visibility to one or more subscriptions>"
-```
-
-```javascript
-   ],
-```
-
-```javascript
-   "description": "Can import images to registry",
-```
-
-```javascript
-   "Name": "AcrImport",
-```
-
-```javascript
-   "permissions": [
-```
-
-```javascript
-     {
-```
-
-```javascript
-       "actions": [
-```
-
-```javascript
-         "Microsoft.ContainerRegistry/registries/push/write",
-```
-
-```javascript
-         "Microsoft.ContainerRegistry/registries/pull/read",
-```
-
-```javascript
-         "Microsoft.ContainerRegistry/registries/read",
-```
-
-```javascript
-         "Microsoft.ContainerRegistry/registries/importImage/action"
-```
-
-```javascript
-       ],
-```
-
-```javascript
-       "dataActions": [],
-```
-
-```javascript
-       "notActions": [],
-```
-
-```javascript
-       "notDataActions": []
-```
-
-```javascript
-     }
-```
-
-```javascript
-   ],
-```
-
-```javascript
-   "roleType": "CustomRole"
-```
-
-```javascript
- }
+"assignableScopes": [
+"/subscriptions/<optional, but you can limit the visibility to one or more subscriptions>"
+],
+"description": "Can import images to registry",
+"Name": "AcrImport",
+"permissions": [
+    {
+      "actions": [
+      "Microsoft.ContainerRegistry/registries/push/write",
+      "Microsoft.ContainerRegistry/registries/pull/read",
+       "Microsoft.ContainerRegistry/registries/read",
+       "Microsoft.ContainerRegistry/registries/importImage/action"
+     ],
+     "dataActions": [],
+     "notActions": [],
+     "notDataActions": []
+   }
+],
+"roleType": "CustomRole"
+}
 ```
 
 To create or update a custom role using the JSON description, use the Azure CLI, Azure Resource Manager template, Azure PowerShell, or other Azure tools. Add or remove role assignments for a custom role in the same way that you manage role assignments for built-in Azure roles.

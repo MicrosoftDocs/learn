@@ -34,15 +34,11 @@ In a container group that contains multiple containers, use a dimension to displ
 
 Metrics for container instances can also be gathered using the Azure CLI. First, get the ID of the container group using the following command. Replace `<resource-group>` with your resource group name and `<container-group>` with the name of your container group.
 
-**Azure CLI**
-
 ```azurecli
 CONTAINER_GROUP=$(az container show --resource-group <resource-group> --name <container-group> --query id --output tsv)
 ```
 
 Use the following command to get **CPU** usage metrics.
-
-**Azure CLI**
 
 ```azurecli
 az monitor metrics list --resource $CONTAINER_GROUP --metric CPUUsage --output table
@@ -52,35 +48,15 @@ az monitor metrics list --resource $CONTAINER_GROUP --metric CPUUsage --output t
 
 ```azurecli
 Timestamp            Name      Average
-```
-
-```azurecli
 -------------------  ---------  ---------
-```
-
-```azurecli
 2020-12-17 23:34:00  CPU Usage
-```
-
-```azurecli
 . . .
-```
-
-```azurecli
 2020-12-18 00:25:00  CPU Usage
-```
-
-```azurecli
 2020-12-18 00:26:00  CPU Usage  0.4
-```
-
-```azurecli
 2020-12-18 00:27:00  CPU Usage  0.0
 ```
 
 Change the value of the `--metric` parameter in the command to get other supported metrics. For example, use the following command to get **memory** usage metrics.
-
-**Azure CLI**
 
 ```azurecli
 az monitor metrics list --resource $CONTAINER_GROUP --metric MemoryUsage --output table
@@ -90,176 +66,54 @@ az monitor metrics list --resource $CONTAINER_GROUP --metric MemoryUsage --outpu
 
 ```azurecli
 Timestamp            Name          Average
-```
-
-```azurecli
 -------------------  ------------  ----------
-```
-
-```azurecli
 2019-04-23 22:59:00  Memory Usage
-```
-
-```azurecli
 2019-04-23 23:00:00  Memory Usage
-```
-
-```azurecli
 2019-04-23 23:01:00  Memory Usage  0.0
-```
-
-```azurecli
 2019-04-23 23:02:00  Memory Usage  8859648.0
-```
-
-```azurecli
 2019-04-23 23:03:00  Memory Usage  9181184.0
-```
-
-```azurecli
 2019-04-23 23:04:00  Memory Usage  9580544.0
-```
-
-```azurecli
 2019-04-23 23:05:00  Memory Usage  10280960.0
-```
-
-```azurecli
 2019-04-23 23:06:00  Memory Usage  7815168.0
-```
-
-```azurecli
 2019-04-23 23:07:00  Memory Usage  7739392.0
-```
-
-```azurecli
 2019-04-23 23:08:00  Memory Usage  8212480.0
-```
-
-```azurecli
 2019-04-23 23:09:00  Memory Usage  8159232.0
-```
-
-```azurecli
 2019-04-23 23:10:00  Memory Usage  8093696.0
 ```
 
-```azurecli
-For a multi-container group, the containerName dimension can be added to return metrics per container.
-```
-
-```azurecli
-Azure CLI
-```
+For a multi-container group, the `containerName` dimension can be added to return metrics per container.
 
 ```azurecli
 az monitor metrics list --resource $CONTAINER_GROUP --metric MemoryUsage --dimension containerName --output table
 ```
 
-```azurecli
-Output
-```
+**Output**
 
 ```azurecli
 Timestamp            Name          Containername            Average
-```
-
-```azurecli
 -------------------  ------------  --------------------  -----------
-```
-
-```azurecli
 2019-04-23 22:59:00  Memory Usage  aci-tutorial-app
-```
-
-```azurecli
 2019-04-23 23:00:00  Memory Usage  aci-tutorial-app
-```
-
-```azurecli
 2019-04-23 23:01:00  Memory Usage  aci-tutorial-app      0.0
-```
-
-```azurecli
 2019-04-23 23:02:00  Memory Usage  aci-tutorial-app      16834560.0
-```
-
-```azurecli
 2019-04-23 23:03:00  Memory Usage  aci-tutorial-app      17534976.0
-```
-
-```azurecli
 2019-04-23 23:04:00  Memory Usage  aci-tutorial-app      18329600.0
-```
-
-```azurecli
 2019-04-23 23:05:00  Memory Usage  aci-tutorial-app      19742720.0
-```
-
-```azurecli
 2019-04-23 23:06:00  Memory Usage  aci-tutorial-app      14786560.0
-```
-
-```azurecli
 2019-04-23 23:07:00  Memory Usage  aci-tutorial-app      14651392.0
-```
-
-```azurecli
 2019-04-23 23:08:00  Memory Usage  aci-tutorial-app      15470592.0
-```
-
-```azurecli
 2019-04-23 23:09:00  Memory Usage  aci-tutorial-app      15450112.0
-```
-
-```azurecli
 2019-04-23 23:10:00  Memory Usage  aci-tutorial-app      15339520.0
-```
-
-```azurecli
 2019-04-23 22:59:00  Memory Usage  aci-tutorial-sidecar
-```
-
-```azurecli
 2019-04-23 23:00:00  Memory Usage  aci-tutorial-sidecar
-```
-
-```azurecli
 2019-04-23 23:01:00  Memory Usage  aci-tutorial-sidecar  0.0
-```
-
-```azurecli
 2019-04-23 23:02:00  Memory Usage  aci-tutorial-sidecar  884736.0
-```
-
-```azurecli
 2019-04-23 23:03:00  Memory Usage  aci-tutorial-sidecar  827392.0
-```
-
-```azurecli
 2019-04-23 23:04:00  Memory Usage  aci-tutorial-sidecar  831488.0
-```
-
-```azurecli
 2019-04-23 23:05:00  Memory Usage  aci-tutorial-sidecar  819200.0
-```
-
-```azurecli
 2019-04-23 23:06:00  Memory Usage  aci-tutorial-sidecar  843776.0
-```
-
-```azurecli
 2019-04-23 23:07:00  Memory Usage  aci-tutorial-sidecar  827392.0
-```
-
-```azurecli
 2019-04-23 23:08:00  Memory Usage  aci-tutorial-sidecar  954368.0
-```
-
-```azurecli
 2019-04-23 23:09:00  Memory Usage  aci-tutorial-sidecar  868352.0
-```
-
-```azurecli
 2019-04-23 23:10:00  Memory Usage  aci-tutorial-sidecar  847872.0
 ```

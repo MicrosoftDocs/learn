@@ -36,55 +36,91 @@ In Kubernetes, you provide granular access control to cluster resources. You def
 
 For example, you create a role with full access to resources in the namespace named *finance-app*, as shown in the following example YAML manifest:
 
-**YAML**
+```
+kind: Role
+```
 
-`kind: Role`
+```
+apiVersion: rbac.authorization.k8s.io/v1
+```
 
-`apiVersion: rbac.authorization.k8s.io/v1`
+```
+metadata:
+```
 
-`metadata:`
+```
+  name: finance-app-full-access-role
+```
 
-`name: finance-app-full-access-role`
+```
+  namespace: finance-app
+```
 
-`namespace: finance-app`
+```
+rules:
+```
 
-`rules:`
+```
+- apiGroups: [""]
+```
 
-`- apiGroups: [""]`
+```
+  resources: ["*"]
+```
 
-`resources: ["*"]`
-
-`verbs: ["*"]`
+```
+  verbs: ["*"]
+```
 
 You then create a *RoleBinding* and bind the Microsoft Entra user developer1@contoso.com to it, as shown in the following YAML manifest:
 
-**YAML**
+```
+kind: RoleBinding
+```
 
-`kind: RoleBinding`
+```
+apiVersion: rbac.authorization.k8s.io/v1
+```
 
-`apiVersion: rbac.authorization.k8s.io/v1`
+```
+metadata:
+```
 
-`metadata:`
+```
+  name: finance-app-full-access-role-binding
+```
 
-`name: finance-app-full-access-role-binding`
+```
+  namespace: finance-app
+```
 
-`namespace: finance-app`
+```
+subjects:
+```
 
-`subjects:`
+```
+- kind: User
+```
 
-`- kind: User`
+```
+  apiGroup: rbac.authorization.k8s.io
+```
 
-`name: developer1@contoso.com`
+```
+roleRef:
+```
 
-`apiGroup: rbac.authorization.k8s.io`
+```
+  kind: Role
+```
 
-`roleRef:`
+```
+  name: finance-app-full-access-role
+```
 
-`kind: Role`
-
-`name: finance-app-full-access-role`
-
-`apiGroup: rbac.authorization.k8s.io`
+```
+  apiGroup: rbac.authorization.k8s.io
+```
 
 When `developer1@contoso.com` is authenticated against the AKS cluster, they have full permissions to resources in the finance-app namespace. In this way, you logically separate and control access to resources. Use Kubernetes RBAC with Microsoft Entra ID-integration.<br>
 
