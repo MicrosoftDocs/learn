@@ -3,7 +3,7 @@ uid: learn.quantum.explore-superposition
 metadata: 
   title: Explore quantum superposition with Q#
   description: Learn one of the fundamental concepts of quantum computing, superposition, how to represent superposition of qubit using the Bloch sphere, and how to create and analyze superposition states with Q#.
-  ms.date: 03/25/2024
+  ms.date: 04/04/2024
   author: SoniaLopezBravo
   ms.author: sonialopez
   manager: tedhudek
@@ -27,7 +27,7 @@ prerequisites: |
   - Basic knowledge of linear algebra and complex numbers.
   - The latest version of [Visual Studio Code](https://code.visualstudio.com/download) or open [VS Code on the Web](https://vscode.dev/).
   - The latest version of the [Azure Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) extension.
-iconUrl: /training/achievements/quantum/.svg
+iconUrl: ../../achievements/quantum/explore-superposition.svg
 ratingEnabled: true
 levels:
 - beginner
