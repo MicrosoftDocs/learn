@@ -21,6 +21,6 @@ The cat and the box are classical objects, so you can only observe them in one o
 
 However, in the quantum world, things are different. A quantum cat and a quantum box could also be in all six states at the same time! This phenomenon is called **superposition**.
 
-Quantum cats don't exist, - as far as we know - but quantum particles do.
+Quantum cats don't exist - as far as we know - but quantum particles do.
 
 In the next unit, you'll explore superposition in quantum computing.
