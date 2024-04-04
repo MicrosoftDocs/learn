@@ -1,0 +1,47 @@
+### YamlMime:LearningPath
+uid: learn.terraform-fundamentals
+metadata:
+  title: Fundamentals of Terraform on Azure
+  description: Learn how Terraform enables you to manage infrastructure deployments on Azure.
+  brand: azure
+  ms.date: 04/04/2024
+  author: jaredholgate
+  ms.author: jaredholgate
+  ms.topic: learning-path
+title: Fundamentals of Terraform on Azure
+summary: |
+  Terraform enables you to deploy Azure resources. Terraform uses a declarative syntax that you treat like application code.
+  Treating your infrastructure as code enables you to track changes to your infrastructure requirements and makes your
+  deployments more consistent and repeatable.
+
+  Terraform provides a concise syntax and type safety for you Azure infrastrcuture declarations.
+
+  Take this learning path to get started with Terraform. In it, you'll:
+
+  * Decide whether Terraform is the right choice for your deployments to Azure.
+  * Understand Terraform's declarative syntax and the structure of a Terraform module.
+  * Apply Terraform features such as variables, outputs, functions and loops to control how your infrastructure is deployed.
+  * Define modules that break down complex deployments into smaller reusable components.
+
+  Each module in this learning path provides examples for use with the Azure CLI. You'll use Visual Studio Code to write and validate your Terraform code.
+ 
+  [!include[](../../includes/terraform-paths.md)]
+prerequisites: Familiarity with Azure Resources and Azure resource groups is recommended, but not required.
+iconUrl: /training/achievements/bicep/terraform-fundamental.svg
+levels:
+- beginner
+roles:
+- developer
+- administrator
+- solution-architect
+products:
+- azure
+- azure-resource-manager
+modules:
+- learn.azure.terraform-introduction-infrastructure-code
+- learn.azure.terraform-deploy-azure-resources
+- learn.azure.terraform-build-reusable-modules
+- learn.azure.terraform-functions-loops
+- learn.azure.terraform-create-composable-modules
+trophy:
+  uid: learn.terraform-fundamentals.trophy
