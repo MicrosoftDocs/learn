@@ -16,14 +16,14 @@ To upload a file, the steps are as follows:
 
       :::image type="content" source="../media/manage-sources-files-new-v2.png" lightbox="../media/manage-sources-files-new-v2.png" alt-text="Screen capture of the files upload page.":::
 
-1. Select Upload file to look for your file. Check that the file you're about to upload is a common text file type like DOCX, MD, PDF, and TXT formats, and that each file doesn't exceed 3 MB. You can upload files, one at a time, as long as the the maximum capacity for all the uploaded files does not exceed the maximum of 20 MB in total.
+1. Select Upload file to look for your file. Check that the file you're about to upload is a common text file type like DOCX, MD, PDF, and TXT formats, and that each file doesn't exceed 3 MB. You can upload files, one at a time, as long as the maximum capacity for all the uploaded files doesn't exceed the maximum of 20 MB in total.
 
 1. Wait for the file to appear in Uploads. If an error message appears, correct the problem, and try again.
 
    > [!NOTE]
    > Uploaded files are only available to the user account that uploaded it. Uploaded files are stored outside the tenant. To include the file as a source in your current session, toggle the button on the right-hand side of the file until the toggle is lit up. If you are not going to use the file yet, or to exclude the file as a source in your current session, keep the toggle button in grey.
 
-1. To include the file as a source in your current session, select the toggle button so it is lit up (the circle inside the toggle button is in the rightmost position). If you aren't going to use the file yet, or want to exclude it as a source in your current session, select the toggle button so it is greyed out (the circle inside the toggle button is in the rightmost position).
+1. To include the file as a source in your current session, select the toggle button so it's lit up (the circle inside the toggle button is in the rightmost position). If you aren't going to use the file yet, or want to exclude it as a source in your current session, select the toggle button so it's greyed out (the circle inside the toggle button is in the rightmost position).
 
 1. To prompt using the uploaded file, read [Prompting for an uploaded file](connect-org-kb.md#prompting-for-an-uploaded-file).
 
@@ -52,7 +52,7 @@ Azure AI Search is a service that enables you to effectively search, retrieve in
 
 Through the Azure AI Search plugin, you can bring your own index as a searchable source that you can query using prompts in the Copilot prompt bar.
 
-Before you set up the connection to your existing Azure AI index, verify the following:
+Before you set up the connection to your existing Azure AI index, verify the following requirements:
 
 - The Azure AI Search index is set up for vectorization for use with the text-embedding-ada-002 model.
 - The text field in your index must be searchable.
