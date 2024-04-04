@@ -141,7 +141,7 @@ using the operation [Ry](/qsharp/api/qsharp/microsoft.quantum.intrinsic.Ry?azure
 
 1. Modify *Superposition.qs* like the following example, and then save the file. This example chooses $\alpha$ to be about $\frac13$.
 
-    ````qsharp
+    ```qsharp
     namespace ExploringSuperposition {
         open Microsoft.Quantum.Diagnostics;
         open Microsoft.Quantum.Math;
