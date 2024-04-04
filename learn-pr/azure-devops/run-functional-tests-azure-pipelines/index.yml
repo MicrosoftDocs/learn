@@ -3,7 +3,7 @@ uid: learn.azdo.run-functional-tests-azure-pipelines
 metadata:
   title: Run functional tests in Azure Pipelines
   description: Run Selenium UI tests, a form of functional testing, in Azure Pipelines.
-  ms.date: 04/12/2023
+  ms.date: 04/02/2024
   author: steved0x
   ms.author: sdanie
   ms.custom: devdivchpfy22

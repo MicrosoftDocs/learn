@@ -3,7 +3,7 @@ uid: learn.react-to-state-changes-using-event-grid.2-respond-using-event-grid
 metadata:
   title: Respond to Azure events by using Event Grid
   description: Learn how Event Grid can orchestrate events from multiple sources and pass them to multiple subscribers.
-  ms.date: 04/04/2023
+  ms.date: 12/01/2023
   author: spelluru
   ms.author: spelluru
   ms.topic: unit
