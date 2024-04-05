@@ -21,7 +21,7 @@ To upload a file, the steps are as follows:
 1. Wait for the file to appear in Uploads. If an error message appears, correct the problem, and try again.
 
    > [!NOTE]
-   > Uploaded files are only available to the user account that uploaded it. Uploaded files are stored like the rest of customer data as described in [Privacy and data security in Microsoft Copilot for Security](/security-copilot/privacy-data-security).
+   > Uploaded files are only available to the user account that uploaded them. Uploaded files are stored like the rest of customer data as described in [Privacy and data security in Microsoft Copilot for Security](/security-copilot/privacy-data-security).
 
 1. To include the file as a source in your current session, select the toggle button so it's lit up (the circle inside the toggle button is in the rightmost position). If you aren't going to use the file yet, or want to exclude it as a source in your current session, select the toggle button so it's greyed out (the circle inside the toggle button is in the rightmost position).
 
