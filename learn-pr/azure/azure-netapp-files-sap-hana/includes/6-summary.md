@@ -5,7 +5,7 @@ The performance requirements of SAP HANA can be challenging to transition to the
 * Efficient primary data protection and replication to another region or zone
 * Configuration support for data replication using cross-region replication or HANA system replication
 
-In this guide, we have gone over the key points for using application volume group including application volume group architecture, proximity placement groups, and SAP HANA Azure NetApp Files planning. Azure NetApp Files application volume group will shorten SAP HANA landscape deployment time and increase overall application performance and stability, including the use of multiple storage endpoints.
+This guide covered the key points for using application volume group including application volume group architecture, proximity placement groups, and SAP HANA Azure NetApp Files planning. Azure NetApp Files application volume group shortens SAP HANA landscape deployment time and increases overall application performance and stability, including the use of multiple storage endpoints.
 
 ## Further learning links  
 	

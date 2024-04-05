@@ -33,7 +33,7 @@ The following diagram illustrates the snapshot process:
 
 2. Changed data (`file2` is updated and `file4` is added) is written to a new block; the pointer is updated. The snapshot pointer still points to the previously written block, giving you both a live view and a historical view of the data.
 
-   [![Diagram showing two file changes.](../media/2-single-file-snapshot-restore-two.png)](./media/2-single-file-snapshot-restore-two.png#lightbox)
+   [![Diagram showing two file changes.](../media/2-single-file-snapshot-restore-two.png)](../media/2-single-file-snapshot-restore-two.png#lightbox)
 
 3. Another snapshot (`Snapshot2`) is created, providing access to three generations of data: the live data, `Snapshot2`, and `Snapshot1`. The snapshots are presented in descending order of age without taking up the volume space that three full copies require.
 
