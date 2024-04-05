@@ -29,22 +29,25 @@ If you're running PowerShell locally, open the PowerShell console with elevated 
 
 Before you can create a virtual wan, you have to create a resource group to host the virtual wan or use an existing resource group. Use one of the following examples.
 
-This example creates a new resource group named **TestRG** in the **East US** location. If you want to use an existing resource group instead, you can modify the `$resourceGroup = Get-AzResourceGroup -ResourceGroupName "NameofResourceGroup"`command, and then complete the steps in this exercise using your own values.<br>
+This example creates a new resource group named **TestRG** in the **East US** location. If you want to use an existing resource group instead, you can modify the `$resourceGroup = Get-AzResourceGroup -ResourceGroupName "NameofResourceGroup"`command, and then complete the steps in this exercise using your own values.
 
-1.  Create a resource group.
-    
-    **Azure PowerShell**
-    
-    ```powershell
-    New-AzResourceGroup -Location "East US" -Name "TestRG"
-    ```
-2.  Create the virtual wan using the `New-AzVirtualWan`cmdlet.
-    
-    **Azure PowerShell**
-    
-    `$virtualWan = New-AzVirtualWan -ResourceGroupName TestRG -Name TestVWAN1 -Location "East US"`
+1. Create a resource group.
 
-## Create the hub and configure hub settings
+Azure PowerShell
+
+```powershell
+New-AzResourceGroup -Location "East US" -Name "TestRG"
+```
+
+2. Create the virtual wan using the New-AzVirtualWan cmdlet.
+
+Azure PowerShell
+
+```powershell
+$virtualWan = New-AzVirtualWan -ResourceGroupName TestRG -Name TestVWAN1 -Location "East US"
+```
+
+## Create the hub and configure hub settings<br>
 
 A hub is a virtual network that can contain gateways for site-to-site, ExpressRoute, or point-to-site functionality. Create a virtual hub with `New-AzVirtualHub`. This example creates a default virtual hub named Hub1 with the specified address prefix and a location for the hub.
 
@@ -58,108 +61,117 @@ $virtualHub = New-AzVirtualHub -VirtualWan $virtualWan -ResourceGroupName "TestR
 
 In this section, you create a site-to-site VPN gateway in the same location as the referenced virtual hub. When you create the VPN gateway, you specify the scale units that you want. It takes about 30 minutes for the gateway to create.
 
-1.  If you closed Azure Cloud Shell or your connection timed out, you may need to declare the variable again for $virtualHub.
-    
-    **Azure PowerShell**
-    
-    ```powershell
-    $virtualHub = Get-AzVirtualHub -ResourceGroupName "TestRG" -Name "Hub1"
-    ```
-2.  Create a VPN gateway using the `New-AzVpnGateway` cmdlet.
-    
-    **Azure PowerShell**
-    
-    ```powershell
-    New-AzVpnGateway -ResourceGroupName "TestRG" -Name "vpngw1" -VirtualHubId $virtualHub.Id -VpnGatewayScaleUnit 2
-    ```
-3.  Once your VPN gateway is created, you can view it using the following example.
-    
-    **Azure PowerShell**
-    
-    ```powershell
-    Get-AzVpnGateway -ResourceGroupName "TestRG" -Name "vpngw1"
-    ```
+1. If you closed Azure Cloud Shell or your connection timed out, you may need to declare the variable again for $virtualHub.
 
-## Create a site and connections
+Azure PowerShell
+
+```powershell
+$virtualHub = Get-AzVirtualHub -ResourceGroupName "TestRG" -Name "Hub1"
+```
+
+2. Create a VPN gateway using the New-AzVpnGateway cmdlet.
+
+```powershell
+New-AzVpnGateway -ResourceGroupName "TestRG" -Name "vpngw1" -VirtualHubId $virtualHub.Id -VpnGatewayScaleUnit 2
+```
+
+3. Once your VPN gateway is created, you can view it using the following example.
+
+Azure PowerShell
+
+```powershell
+Get-AzVpnGateway -ResourceGroupName "TestRG" -Name "vpngw1"
+```
+
+## Create a site and connections<br>
 
 In this section, you create sites that correspond to your physical locations and the connections. These sites contain your on-premises VPN device endpoints, you can create up to 1000 sites per virtual hub in a virtual WAN. If you have multiple hubs, you can create 1000 per each of those hubs.
 
-1.  Set the variable for the VPN gateway and for the IP address space that is located on your on-premises site. Traffic destined for this address space is routed to your local site. This is required when BGP isn't enabled for the site.
-    
-    **Azure PowerShell**
-    
-    ```powershell
-    $vpnGateway = Get-AzVpnGateway -ResourceGroupName "TestRG" -Name "vpngw1"
-    ```
-    
-    ```powershell
-    $vpnSiteAddressSpaces = New-Object string[] 2
-    ```
-    
-    ```powershell
-    $vpnSiteAddressSpaces[0] = "192.168.2.0/24"
-    ```
-    
-    ```powershell
-    $vpnSiteAddressSpaces[1] = "192.168.3.0/24"
-    ```
-2.  Create links to add information about the physical links at the branch including metadata about the link speed, link provider name, and the public IP address of the on-premises device.
-    
-    **Azure PowerShell**
-    
-    ```powershell
-    $vpnSiteLink1 = New-AzVpnSiteLink -Name "TestSite1Link1" -IpAddress "15.25.35.45" -LinkProviderName "SomeTelecomProvider" -LinkSpeedInMbps "10"
-    ```
-    
-    ```powershell
-    $vpnSiteLink2 = New-AzVpnSiteLink -Name "TestSite1Link2" -IpAddress "15.25.35.55" -LinkProviderName "SomeTelecomProvider2" -LinkSpeedInMbps "100"
-    ```
-3.  Create the VPN site, referencing the variables of the VPN site links you just created.
-    
-    If you closed Azure Cloud Shell or your connection timed out, redeclare the virtual WAN variable:<br>
-    
-    **Azure PowerShell**
-    
-    ```powershell
-    $virtualWan = Get-AzVirtualWAN -ResourceGroupName "TestRG" -Name "TestVWAN1"
-    ```
-4.  Create the VPN site using the `New-AzVpnSite` cmdlet.
-5.  Create the site link connection. The connection is composed of two active-active tunnels from a branch/site to the scalable gateway.
-    
-    **Azure PowerShell**
-    
-    ```powershell
-    $vpnSiteLinkConnection1 = New-AzVpnSiteLinkConnection -Name "TestLinkConnection1" -VpnSiteLink $vpnSite.VpnSiteLinks[0] -ConnectionBandwidth 100
-    ```
-    
-    `$vpnSiteLinkConnection2 = New-AzVpnSiteLinkConnection -Name "testLinkConnection2" -VpnSiteLink $vpnSite.VpnSiteLinks[1] -ConnectionBandwidth 10`
+1. Set the variable for the VPN gateway and for the IP address space that is located on your on-premises site. Traffic destined for this address space is routed to your local site. This is required when BGP isn't enabled for the site.
+
+Azure PowerShell
+
+```powershell
+$vpnGateway = Get-AzVpnGateway -ResourceGroupName "TestRG" -Name "vpngw1"
+```
+
+```powershell
+$vpnSiteAddressSpaces = New-Object string[] 2
+```
+
+```powershell
+$vpnSiteAddressSpaces[0] = "192.168.2.0/24"
+```
+
+```powershell
+$vpnSiteAddressSpaces[1] = "192.168.3.0/24"
+```
+
+2. Create links to add information about the physical links at the branch including metadata about the link speed, link provider name, and the public IP address of the on-premises device.
+
+Azure PowerShell
+
+```powershell
+$vpnSiteLink1 = New-AzVpnSiteLink -Name "TestSite1Link1" -IpAddress "15.25.35.45" -LinkProviderName "SomeTelecomProvider" -LinkSpeedInMbps "10"
+```
+
+```powershell
+$vpnSiteLink2 = New-AzVpnSiteLink -Name "TestSite1Link2" -IpAddress "15.25.35.55" -LinkProviderName "SomeTelecomProvider2" -LinkSpeedInMbps "100"
+```
+
+3. Create the VPN site, referencing the variables of the VPN site links you just created. If you closed Azure Cloud Shell or your connection timed out, redeclare the virtual WAN variable:
+
+Azure PowerShell
+
+```powershell
+$virtualWan = Get-AzVirtualWAN -ResourceGroupName "TestRG" -Name "TestVWAN1"
+```
+
+Create the VPN site using the New-AzVpnSite cmdlet.
+
+Azure PowerShell
+
+```powershell
+$vpnSite = New-AzVpnSite -ResourceGroupName "TestRG" -Name "TestSite1" -Location "westus" -VirtualWan $virtualWan -AddressSpace $vpnSiteAddressSpaces -DeviceModel "SomeDevice" -DeviceVendor "SomeDeviceVendor" -VpnSiteLink @($vpnSiteLink1, $vpnSiteLink2)
+```
+
+4. Create the site link connection. The connection is composed of two active-active tunnels from a branch/site to the scalable gateway.
+
+Azure PowerShell
+
+```powershell
+$vpnSiteLinkConnection1 = New-AzVpnSiteLinkConnection -Name "TestLinkConnection1" -VpnSiteLink $vpnSite.VpnSiteLinks[0] -ConnectionBandwidth 100
+```
+
+```powershell
+$vpnSiteLinkConnection2 = New-AzVpnSiteLinkConnection -Name "testLinkConnection2" -VpnSiteLink $vpnSite.VpnSiteLinks[1] -ConnectionBandwidth 10
+```
 
 ## Connect the VPN site to a hub
 
-Connect your VPN site to the hub site-to-site VPN gateway using the New-AzVpnConnection cmdlet.
+1. Before running the command, you may need to redeclare the following variables:
 
-1.  Before running the command, you may need to redeclare the following variables:
-    
-    **Azure PowerShell**
-    
-    ```powershell
-    $virtualWan = Get-AzVirtualWAN -ResourceGroupName "TestRG" -Name "TestVWAN1"
-    ```
-    
-    ```powershell
-    $vpnGateway = Get-AzVpnGateway -ResourceGroupName "TestRG" -Name "vpngw1"
-    ```
-    
-    ```powershell
-    $vpnSite = Get-AzVpnSite -ResourceGroupName "TestRG" -Name "TestSite1"
-    ```
-2.  Connect the VPN site to the hub.
-    
-    **Azure PowerShell**
-    
-    ```powershell
-    New-AzVpnConnection -ResourceGroupName $vpnGateway.ResourceGroupName -ParentResourceName $vpnGateway.Name -Name "testConnection" -VpnSite $vpnSite -VpnSiteLinkConnection @($vpnSiteLinkConnection1, $vpnSiteLinkConnection2)
-    ```
+Azure PowerShell
+
+```powershell
+$virtualWan = Get-AzVirtualWAN -ResourceGroupName "TestRG" -Name "TestVWAN1"
+```
+
+```powershell
+$vpnGateway = Get-AzVpnGateway -ResourceGroupName "TestRG" -Name "vpngw1"
+```
+
+```powershell
+$vpnSite = Get-AzVpnSite -ResourceGroupName "TestRG" -Name "TestSite1"
+```
+
+2. Connect the VPN site to the hub.
+
+Azure PowerShell
+
+```powershell
+New-AzVpnConnection -ResourceGroupName $vpnGateway.ResourceGroupName -ParentResourceName $vpnGateway.Name -Name "testConnection" -VpnSite $vpnSite -VpnSiteLinkConnection @($vpnSiteLinkConnection1, $vpnSiteLinkConnection2)
+```
 
 ## Connect a VNet to your hub
 
@@ -169,73 +181,76 @@ The next step is to connect the hub to the VNet. If you created a new resource g
 
 You can use the following example values to create a VNet. Make sure to substitute the values in the examples for the values you used for your environment.
 
-1.  Create a VNet.
-    
-    **Azure PowerShell**
-    
-    ```powershell
-    $vnet = @{
-    ```
-    
-    ```powershell
-      Name = 'VNet1'
-    ```
-    
-    ```powershell
-      ResourceGroupName = 'TestRG'
-    ```
-    
-    ```powershell
-      Location = 'eastus'
-    ```
-    
-    ```powershell
-      AddressPrefix = '10.21.0.0/16'
-    ```
-    
-    ```powershell
-    }
-    ```
-    
-    ```powershell
-    $virtualNetwork = New-AzVirtualNetwork @vnet
-    ```
-2.  Specify subnet settings.
-    
-    **Azure PowerShell**
-    
-    ```powershell
-    $subnet = @{
-    ```
-    
-    ```powershell
-      Name = 'Subnet-1'
-    ```
-    
-    ```powershell
-      VirtualNetwork = $virtualNetwork
-    ```
-    
-    ```powershell
-      AddressPrefix = '10.21.0.0/24'
-    ```
-    
-    ```powershell
-    }
-    ```
-    
-    ```powershell
-    $subnetConfig = Add-AzVirtualNetworkSubnetConfig @subnet
-    ```
-3.  Set the VNet.
-    
-    **Azure PowerShell**
-    
-    ```powershell
-    $virtualNetwork | Set-AzVirtualNetwork
-    ```
+1. Create a VNet.
 
-### Connect a VNet to a hub
+Azure PowerShell
+
+```powershell
+$vnet = @{
+
+```
+
+```powershell
+  Name = 'VNet1'
+```
+
+```powershell
+  ResourceGroupName = 'TestRG'
+```
+
+```powershell
+  Location = 'eastus'
+```
+
+```powershell
+  AddressPrefix = '10.21.0.0/16'
+```
+
+```powershell
+}
+```
+
+```powershell
+$virtualNetwork = New-AzVirtualNetwork @vnet
+```
+
+2. Specify subnet settings.
+
+Azure PowerShell
+
+```powershell
+$subnet = @{
+```
+
+```powershell
+  Name = 'Subnet-1'
+```
+
+```powershell
+  VirtualNetwork = $virtualNetwork
+```
+
+```powershell
+  AddressPrefix = '10.21.0.0/24'
+```
+
+```powershell
+}
+```
+
+```powershell
+$subnetConfig = Add-AzVirtualNetworkSubnetConfig @subnet
+```
+
+3. Set the VNet.
+
+Azure PowerShell
+
+```powershell
+$virtualNetwork | Set-AzVirtualNetwork
+```
+
+### Connect a VNet to a hub<br>
 
 The following steps enable you to connect your virtual network to your virtual hub using PowerShell. You can also use Azure portal to complete this task. Repeat these steps for each VNet that you want to connect.
 
@@ -249,28 +264,33 @@ If VPN gateways are present in the virtual hub, this operation as well as any ot
 
 ### Add a connection
 
-1.  Declare the variables for the existing resources, including the existing virtual network.
-    
-    ```powershell
-    $resourceGroup = Get-AzResourceGroup -ResourceGroupName "TestRG"
-    ```
-    
-    ```powershell
-    $virtualWan = Get-AzVirtualWan -ResourceGroupName "TestRG" -Name "TestVWAN1"
-    ```
-    
-    ```powershell
-    $virtualHub = Get-AzVirtualHub -ResourceGroupName "TestRG" -Name "Hub1"
-    ```
-    
-    ```powershell
-    $remoteVirtualNetwork = Get-AzVirtualNetwork -Name "VNet1" -ResourceGroupName "TestRG"
-    ```
-2.  Create a connection to peer the virtual network to the virtual hub.
-    
-    ```powershell
-    New-AzVirtualHubVnetConnection -ResourceGroupName "TestRG" -VirtualHubName "Hub1" -Name "VNet1-connection" -RemoteVirtualNetwork $remoteVirtualNetwork
-    ```
+1. Declare the variables for the existing resources, including the existing virtual network.
+
+Azure PowerShell
+
+```powershell
+$resourceGroup = Get-AzResourceGroup -ResourceGroupName "TestRG"
+```
+
+```powershell
+$virtualWan = Get-AzVirtualWan -ResourceGroupName "TestRG" -Name "TestVWAN1"
+```
+
+```powershell
+$virtualHub = Get-AzVirtualHub -ResourceGroupName "TestRG" -Name "Hub1"
+```
+
+```powershell
+$remoteVirtualNetwork = Get-AzVirtualNetwork -Name "VNet1" -ResourceGroupName "TestRG"
+```
+
+2. Create a connection to peer the virtual network to the virtual hub.
+
+Azure PowerShell
+
+```powershell
+New-AzVirtualHubVnetConnection -ResourceGroupName "TestRG" -VirtualHubName "Hub1" -Name "VNet1-connection" -RemoteVirtualNetwork $remoteVirtualNetwork
+```
 
 ### Configure VPN device
 
@@ -309,7 +329,7 @@ The device configuration file contains the settings to use when configuring your
          -  `"Instance0":"nnn.nn.nn.nnn"`
          -  `"Instance1":"nnn.nn.nn.nnn"`
 
- -  **Vpngateway connection configuration details** such as BGP, preshared key etc. The PSK is the preshared key that is automatically generated for you. You can always edit the connection in the **Overview** page for a custom **Pre-Shared Key (PSK)**.
+**Vpngateway connection configuration details** such as BGP, preshared key etc. The PSK is the preshared key that is automatically generated for you. You can always edit the connection in the **Overview** page for a custom **Pre-Shared Key (PSK)**.
 
 #### Example device configuration file
 
