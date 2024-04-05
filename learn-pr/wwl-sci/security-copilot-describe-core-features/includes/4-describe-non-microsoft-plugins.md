@@ -1,27 +1,29 @@
-Microsoft Copilot for Security supports non-Microsoft plugins to extend Copilot's capabilities.  These plugins are categorized as:
+Microsoft Copilot for Security supports non-Microsoft plugins to extend Copilot's capabilities. These plugins are categorized as:
 
 - Other
 - Websites
 - Custom
 
-:::image type="content" source="../media/non-microsoft-plugins-resized.png" lightbox="../media/non-microsoft-plugins-resized.png" alt-text="Screen capture of the non-Microsoft plugins.":::
+:::image type="content" source="../media/plugins-other-web-customer-azure-pass.png" lightbox="../media/plugins-other-azure-pass-tenant-v3.png" alt-text="Screen capture of the non-Microsoft plugins.":::
 
 #### Other plugins
 
-Other plugins give Copilot access to information and capabilities from services beyond Microsoft that your organization uses. Other plugins currently supported include:
+Other plugins give Copilot access to information and capabilities from services beyond Microsoft that your organization uses. The list of Other plugins currently supported is long and continually growing. The list that follows is only a subset of non-Microsoft Plugins currently in preview with Copilot.
 
-- ServiceNow
-- Splunk
+- CIRCL Hash Lookup (Preview)
+- Copilot for Security Plugin for ServiceNow (Preview)
+- Copilot for Security Plugin for Splunk (Preview)
+- CrowdSec Threat Intelligence (Preview)
+- GreyNoise Community (Preview)
+- GreyNoise Enterprise (Preview)
 
-Access to these plugins assumes an account and license to the specific service and a setup that includes authentication.  The type of authentication required is determined by the plugin provided.  For example, the ServiceNow plugin gives you the option to select from a Basic sign-in or OAuth authorization.
+Access to these plugins assumes an account and license to the specific service and a setup that includes authentication. The type of authentication required is determined by the plugin provided. For example, the CrowdSec Threat Intelligence plugin requires an access identifier for API authentication.
 
-:::image type="content" source="../media/service-now-plugin-authentication.png" lightbox="../media/service-now-plugin-authentication.png" alt-text="Screen capture of the authentication options for the ServiceNow plugin.":::
-
-:::image type="content" source="../media/service-now-oauth.png" lightbox="../media/service-now-oauth.png" alt-text="Screen capture of the authentication settings for the ServiceNow plugin when using oauth authentication.":::
+:::image type="content" source="../media/crowd-sec-threat-intelligence-authentication.png" lightbox="../media/crowd-sec-threat-intelligence-authentication" alt-text="Screen capture of the authentication settings for the CrowdSec Threat Intelligence plugin.":::
 
 #### Websites
 
-The websites plugins give Copilot access to industry information from the public web.   Currently, only the public web plugin is supported but additional website plugins are expected.
+The websites plugins give Copilot access to industry information from the public web. Currently, the public web plugin is supported. More website plugins are expected.
 
 The website plugins are accessed using anonymous authentication.
 
@@ -34,10 +36,10 @@ The Microsoft Copilot for Security platform enables developers and users to writ
 
 Regardless of the approach, every Copilot plugin requires a YAML or JSON formatted manifest file (for example: plugin.yaml or plugin.json) which describes metadata about the skill set and how to invoke the skills.
 
-:::image type="content" source="../media/custom-plugin-v2.png" lightbox="../media/custom-plugin-v2.png" alt-text="Screen capture of the manage plugins menu, highlighting the custom plugins.":::
+Owner settings, described in a previous unit, determines who can add and manage their own custom plugins and who can add and manage custom plugins for everyone in the organization. For Copilot users with the contributor role, availability of the option to set "Who can use this plugin" is dependent on how the owner settings for custom plugins are configured.
 
-:::image type="content" source="../media/custom-plugin-options.png" lightbox="../media/custom-plugin-v2.png" alt-text="Screen capture showing the two types of custom plugins.":::
+:::image type="content" source="../media/custom-plugin-options-v2.png" lightbox="../media/custom-plugin-options-v2.png" alt-text="Screen capture showing the two types of custom plugins.":::
 
-Once a custom plugin is added, it can be turned on or off, updated, or deleted.  
+Once a custom plugin is added, it can be turned on or off, updated, or deleted. 
 
 To Learn more about custom plugins, see [Plugins overview Microsoft Copilot for Security](/security-copilot/plugin_overview).
