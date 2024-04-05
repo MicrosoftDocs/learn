@@ -1,6 +1,6 @@
 {
   "redirections": [
-          {
+    {
       "source_path_from_root": "/learn-pr/modules/index.md",
       "redirect_url": "/training/browse/?resource_type=module",
       "redirect_document_id": false
