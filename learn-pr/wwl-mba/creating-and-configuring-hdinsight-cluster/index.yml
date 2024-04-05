@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.service: hdinsight
 title: Creating and configuring a HDInsight cluster.
-summary: In this module, you learn how to create a HDInsight Cluster, monitor a cluster and be aware of common provisioning issues.
+summary: In this module, you learn how to create a HDInsight Cluster, monitor a cluster, and be aware of common provisioning issues.
 abstract: |
   In this module you:
   - Create an HDInsight Spark Cluster.
