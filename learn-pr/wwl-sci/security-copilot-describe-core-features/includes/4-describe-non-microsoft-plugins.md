@@ -4,11 +4,13 @@ Microsoft Copilot for Security supports non-Microsoft plugins to extend Copilot'
 - Websites
 - Custom
 
-:::image type="content" source="../media/plugins-other-web-customer-azure-pass.png" lightbox="../media/plugins-other-azure-pass-tenant-v3.png" alt-text="Screen capture of the non-Microsoft plugins.":::
-
 #### Other plugins
 
-Other plugins give Copilot access to information and capabilities from services beyond Microsoft that your organization uses. The list of Other plugins currently supported is long and continually growing. The list that follows is only a subset of non-Microsoft Plugins currently in preview with Copilot.
+Other plugins give Copilot access to information and capabilities from services beyond Microsoft that your organization uses.
+
+:::image type="content" source="../media/plugins-other.png" lightbox="../media/plugins-other.png" alt-text="Screen capture of the non-Microsoft plugins.":::
+
+The list of Other plugins currently supported is long and continually growing. The list that follows is only a subset of non-Microsoft Plugins currently in preview with Copilot.
 
 - CIRCL Hash Lookup (Preview)
 - Copilot for Security Plugin for ServiceNow (Preview)
@@ -19,7 +21,7 @@ Other plugins give Copilot access to information and capabilities from services 
 
 Access to these plugins assumes an account and license to the specific service and a setup that includes authentication. The type of authentication required is determined by the plugin provided. For example, the CrowdSec Threat Intelligence plugin requires an access identifier for API authentication.
 
-:::image type="content" source="../media/crowd-sec-threat-intelligence-authentication.png" lightbox="../media/crowd-sec-threat-intelligence-authentication" alt-text="Screen capture of the authentication settings for the CrowdSec Threat Intelligence plugin.":::
+:::image type="content" source="../media/crowd-sec-threat-intelligence-authentication.png" lightbox="../media/crowd-sec-threat-intelligence-authentication.png" alt-text="Screen capture of the authentication settings for the CrowdSec Threat Intelligence plugin.":::
 
 #### Websites
 
@@ -27,9 +29,15 @@ The websites plugins give Copilot access to industry information from the public
 
 The website plugins are accessed using anonymous authentication.
 
+:::image type="content" source="../media/plugins-websites.png" lightbox="../media/plugins-websites.png" alt-text="Screen capture of the website plugins.":::
+
 #### Custom
 
-The Microsoft Copilot for Security platform enables developers and users to write their own plugins that can be invoked to perform specialized tasks. There are two types of custom plugins:
+The Microsoft Copilot for Security platform enables developers and users to write their own plugins that can be invoked to perform specialized tasks.
+
+:::image type="content" source="../media/plugins-custom.png" lightbox="../media/plugins-custom.png" alt-text="Screen capture of the custom plugins.":::
+
+There are two types of custom plugins:
 
 - Custom Copilot plugins that you develop
 - Custom plugins developed with OpenAI’s API.
