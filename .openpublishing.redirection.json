@@ -36000,6 +36000,51 @@
       "source_path": "learn-pr/azure/deploy-vms-from-vhd-templates/5-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/deploy-vms-from-vhd-templates/6-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/10-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/11-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/2-authorize-database-access.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/3-authorize-database-access",
+      "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/3-database-audit.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/4-database-audit",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/4-microsoft-purview-governance-portal-use-cases.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/5-microsoft-purview-governance-portal-use-cases",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/5-implement-data-classification-sensitive-information.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/6-implement-data-classification-sensitive-information",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/6-dynamic-data-mask.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/7-dynamic-data-mask",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/7-transparent-data-encryption.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/8-transparent-data-encryption",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/8-always-encrypted.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/9-always-encrypted",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/9-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/10-knowledge-check",
+      "redirect_document_id": false
     }
   ]
 }
