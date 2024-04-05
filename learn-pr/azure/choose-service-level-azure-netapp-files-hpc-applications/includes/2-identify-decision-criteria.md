@@ -33,11 +33,11 @@ The first important concept in determining performance with Azure NetApp Files i
 
 Azure NetApp Files offers three service levels suited to different workload types: Standard, Premium, and Ultra.
 
-| Service level | Performance* | Recommended workloads | 
+| Service level | Performance* | Recommended workloads |
 | - | - | - | 
 | Standard | Good <ul><li>Up to 1,000 IOPS/TiB quota</li><li>Up to 16 MiB/s per TiB quota</li></ul> | <ul><li>Static web content</li><li>File shares/home directories</li><li>Database backups</li></ul> |
 | Premium | Better (SSD class) <ul><li>Up to 4,000 IPS/TiB quota</li>Up to 64 MiB/s per TiB quota</li></ul> | <ul><li>Databases</li><li>Enterprise applications</li><li>Analytics</li><li>Message queues</li></ul> |
-| Ultra |  Best (high performance flash) <ul><li>Up to 8,000 IOPS/TiB quota</li><li>Up to 128 MiB/s per TiB quota</li></ul> | | <ul><li>Performance/throughput intensive applications</li><li>HPC/EDA</li><</ul> |
+| Ultra |  Best (high performance flash) <ul><li>Up to 8,000 IOPS/TiB quota</li><li>Up to 128 MiB/s per TiB quota</li></ul> | <ul><li>Performance/throughput intensive applications</li><li>HPC/EDA</li><</ul> |
 
 \* Performance SLA indexed against volume quota
 
