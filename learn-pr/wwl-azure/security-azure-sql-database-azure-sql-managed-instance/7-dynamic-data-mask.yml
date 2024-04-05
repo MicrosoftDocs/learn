@@ -4,10 +4,12 @@ title: Plan and implement dynamic mask
 metadata:
   title: Plan and implement dynamic mask
   description: "Configure dynamic data masking"
-  ms.date: 02/16/2024
+  ms.date: 04/05/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/6-dynamic-data-mask.md)]
+  [!include[](includes/7-dynamic-data-mask.md)]
