@@ -40,6 +40,6 @@ Owner settings, described in a previous unit, determines who can add and manage 
 
 :::image type="content" source="../media/custom-plugin-options-v2.png" lightbox="../media/custom-plugin-options-v2.png" alt-text="Screen capture showing the two types of custom plugins.":::
 
-Once a custom plugin is added, it can be turned on or off, updated, or deleted. 
+Once a custom plugin is added, it can be turned on or off, updated, or deleted.
 
 To Learn more about custom plugins, see [Plugins overview Microsoft Copilot for Security](/security-copilot/plugin_overview).
