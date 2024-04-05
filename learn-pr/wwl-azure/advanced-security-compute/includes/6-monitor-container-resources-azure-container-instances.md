@@ -16,10 +16,20 @@ Azure Monitor provides the following metrics for Azure Container Instances. Thes
 
 ## Get metrics - Azure portal
 
-When a container group is created, Azure Monitor data is available in the Azure portal. To see metrics for a container group, go to the Overview page for the container group. Here you can see pre-created charts for each of the available metrics.
+When a container group is created, Azure Monitor data is available in the Azure portal. To see metrics for a container group, go to the **Overview** page for the container group. Here you can see pre-created charts for each of the available metrics.
+
+:::image type="content" source="../media/azure-portal-container-image-metrics-example-fecb0bd4.png" alt-text="Screenshot showing an example of how to view container metrics in the Azure portal.":::
+<br>
 
 In a container group that contains multiple containers, use a dimension to display metrics by container. To create a chart with individual container metrics, perform the following steps:<br>
 
 1. In the **Overview** page, select one of the metric charts, such as **CPU**.<br>
 
 2. Select the **Apply splitting** button, and select **Container Name**.
+
+:::image type="content" source="../media/azure-monitoring-metrics-dimension-41c30912.png" alt-text="Screenshot showing an example of how to create a chart with individual container metrics.":::
+
+
+## Get metrics - Azure CLI
+
+Metrics for container instances can also be gathered using the Azure CLI. First, get the ID of the container group using the following command. Replace `<resource-group>` with your resource group name and `<container-group>` with the name of your container group.

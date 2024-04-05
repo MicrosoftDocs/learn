@@ -56,4 +56,4 @@ The ability to sign images, usually assigned to an automated process, which woul
 
 ## Custom roles
 
-As with other Azure resources, you can create custom roles with fine-grained permissions to Azure Container Registry. Then assign the custom roles to users, service principals, or other identities that need to interact with a registry.<br>
+As with other Azure resources, you can create custom roles with fine-grained permissions to Azure Container Registry. Then assign the custom roles to users, service principals, or other identities that need to interact with a registry.
