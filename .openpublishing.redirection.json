@@ -18843,7 +18843,7 @@
     },
     {
       "source_path": "learn-pr/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding/3-exercise-replace-code-with-data-bindings.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/separate-ui-and-logic-with-data-binding/"4-exercise-replace-code-with-data-bindings,
+      "redirect_url": "https://learn.microsoft.com/training/modules/separate-ui-and-logic-with-data-binding/4-exercise-replace-code-with-data-bindings",
       "redirect_document_id": false
     },
     {
@@ -19045,7 +19045,7 @@
       "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/9-summary.md",
       "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/twopaneview",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "learn-pr/wwl-sci/use-threat-vulnerability-management-microsoft-defender-for-endpoint/4-track-emerging-threats-with-threat-analytics.md",
       "redirect_url": "/training/modules/use-threat-vulnerability-management-microsoft-defender-for-endpoint/5-track-emerging-threats-with-threat-analytics",
