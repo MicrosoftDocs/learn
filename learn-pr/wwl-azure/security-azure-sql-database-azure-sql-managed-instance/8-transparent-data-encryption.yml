@@ -4,10 +4,12 @@ title: Implement transparent data encryption​
 metadata:
   title: Implement transparent data encryption​
   description: "Implement transparent data encryption​"
-  ms.date: 02/16/2024
+  ms.date: 04/05/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/7-transparent-data-encryption.md)]
+  [!include[](includes/8-transparent-data-encryption.md)]
