@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions
 metadata:
-  title: Choose the correct HDInsight Configuration to build open source analytics solutions
+  title: Choose the correct HDInsight Configuration to build open source analytics solutions.
   description: "Choose the correct HDInsight Configuration to build open source analytics solutions"
   ms.date: 04/05/2024
   author: wwlpublish
@@ -12,10 +12,10 @@ title: Choose the correct HDInsight Configuration to build open source analytics
 summary: In this module, you learn the different configurations for ensuring optimal use of HDInsight from both a performance and cost perspective.
 abstract: |
   At the end of this module, you understand:
-  - The correct HDInsight configuration options
-  - Decision criteria for selecting the correct HDInsight configuration option
-  - Analyze a scenario and map it to an HDInsight configuration option
-  - Cost Optimization strategies for HDInsight clusters
+  - The correct HDInsight configuration options.
+  - Decision criteria for selecting the correct HDInsight configuration option.
+  - Analyze a scenario and map it to an HDInsight configuration option.
+  - Cost Optimization strategies for HDInsight clusters.
 prerequisites: |
   The following prerequisite should be completed.
   - Successfully log in to the Azure portal.
