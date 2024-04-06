@@ -28,7 +28,7 @@ The Azure NetApp Files Performance Calculator allows you to use volume size and 
 
 The calculator displays your options for this specific configuration and the associated cost. In this case, if we provision a large volume, we can achieve the desired performance using the Premium service level at a lower cost than if we had to use Ultra, giving us the performance needed (with room to grow) at a more desirable price point.
 
-[Screenshot of the performance calculator output.](../media/03-capacity-pool-output.png)
+![Screenshot of the performance calculator output.](../media/03-capacity-pool-output.png)
 
 In this example, the Premium service level is the best choice because it achieves throughput requirements with the lowest capacity pool cost.
 

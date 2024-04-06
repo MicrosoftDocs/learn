@@ -57,7 +57,7 @@ Performance for Azure NetApp Files is simple to design and easy to configure. Th
 - **Volume quota:** Volume quota (size) controls how much of the maximum performance for the service level is allowed for the volume when automatic QoS is used.
 - **Quality of Service (QoS):** QoS controls the total amount of performance allowed. Automatic QoS sets the performance based on the volume quota (size). Manual QoS sets performance based on the capacity pool size and allows custom performance configuration at the volume level.
 
-|[Image showing icons for service level, volume quota, and QoS.](../media/02-decision-equation.png)
+![Image showing icons for service level, volume quota, and QoS.](../media/02-decision-equation.png)
 
 With large volumes, throughput levels are able to exceed the maximums allowed by regular volumes. 
 
