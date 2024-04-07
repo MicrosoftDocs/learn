@@ -3,10 +3,8 @@
 1.  Register
 2.  Scan and Ingest
 3.  Classify
-4.  Label
-    
-    > [!NOTE]
-    > Labeling in the Microsoft Purview Data Map is currently in **PREVIEW**.
+
+Labeling in the Microsoft Purview Data Map is currently in **PREVIEW**.
 
 ### Supplemental Terms of Use for Microsoft Azure Previews
 

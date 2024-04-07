@@ -118,7 +118,7 @@ Copilot integrates with security-specific sources using plugins and files.
 
 - Files - Connections to an organization's knowledge bases gives Copilot more context, resulting in responses that are more relevant, specific, and customized to the user. Uploading a file is one approach that Copilot uses to connect to an organization's knowledge base.
 
-You access and manage sources through the sources icon that is included in the prompt bar. The Manage sources window lists the plugins tab (the default view) and the files tab. 
+You access and manage sources through the sources icon that is included in the prompt bar. The Manage sources window lists the plugins tab (the default view) and the files tab.
 
 :::image type="content" source="../media/manage-sources-icon-mapping-v3.png" lightbox="../media/manage-sources-icon-mapping-v3.png" alt-text="Screen capture showing the sources icon that when selected allows the user to select plugins or files. The default view opens to the plugins page.":::
 
