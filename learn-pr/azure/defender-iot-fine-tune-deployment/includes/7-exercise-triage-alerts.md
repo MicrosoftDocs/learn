@@ -18,7 +18,9 @@ The **Alerts** page provides more details about an alert.
 1. Using the **Alert details** tab and the other information, analyze the alert and decide if it requires a security response or if this is normal network traffic.
 1. The **Take action** tab lists the remediation steps or options needed to fix the problem. Choose which steps to follow depending on your analysis of the alert.
     For example:
-    1. If the alert is normal network traffic, choose **Select Learn**.
+    1. If the alert is normal network traffic
+        1. Choose **Select Learn**.
+        1. Adjust the Status to Closed, and select Apply.
     1. If the alert requires a security response, consult a relevant Control Systems Engineer to validate the origin of the alert.
 
         :::image type="content" source="../media/7-alert-full-details.png" alt-text="Screenshot of the alert details with the Take Action box highlighted" lightbox="../media/7-alert-full-details.png" :::
@@ -40,16 +42,6 @@ You can also select several alerts to triage at the same time, however you aren'
 :::image type="content" source="../media/7-bulk-alert-triage.png" alt-text="Screenshot of bulk update of alerts, in this case updating the severity level for these alerts" lightbox="../media/7-bulk-alert-triage.png":::
 OR
 :::image type="content" source="../media/7-bulk-alert-triage1.png" alt-text="Screenshot of bulk update of alerts, in this case updating the severity level for these alerts thick box" lightbox="../media/7-bulk-alert-triage1.png":::
-
-## Select a few to triage and learn to add them to your learned network baseline
-
-Give example of an alert or two types of alerts with different changes made. And also different severity and status changes.
-How do we do this? Who to speak to? Vhathek?
-Filter alerts
-choose type of alert
-view full details.
-<!-- <https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-manage-cloud-alerts> <https://learn.microsoft.com/azure/defender-for-iot/organizations/how-to-view-alerts#manage-alert-status-and-triage-alerts>-->
-Suggested from Amit 'Unauthorised internet connectivity detected' + 'New Asset Detected' + Unauthorized Siemens S7 Plus Operation
 
 ## End Learning mode
 <!-- Should this be part of the LM? Even though this will be done at a later time in real life, as part of the exercise it should be added to this unit. LW -->

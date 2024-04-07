@@ -13,8 +13,8 @@ To create the alert baseline, follow the triage process:
 1. Apply your changes.
 
 ## Triage your alerts
-<!-- How do we triage the alerts, just describe doing this with an example we have in screenshots, and tell them to look for their own and ones on their system - LW - decide the skill and then show the alert - Amit-->
-In the **Alert details** page, a set of remediation steps are listed in order to triage the alert. When the alert is correct and requires a security response the remediation steps set out the best options available. If this isn't a real problem, select the Learn button, and the sensor learns that this network traffic shouldn't trigger an alert again. Making these changes is called the triage process.
+
+In the **Alert details** page, a set of remediation steps are listed in order to triage the alert. When the alert requires a security response the remediation steps set out the best options available. If you decide that this is regular network traffic, select the Learn button, and the sensor learns that this network traffic shouldn't trigger an alert again. Making these changes is called the triage process.
 
 ### Filter and group alerts
 
