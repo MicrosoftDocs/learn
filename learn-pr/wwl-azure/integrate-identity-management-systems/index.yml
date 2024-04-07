@@ -2,11 +2,12 @@
 uid: learn.wwl.integrate-identity-management-systems
 metadata:
   title: Integrate with identity management systems
-  description: "Integrate with identity management systems"
+  description: Integrate with identity management systems
   ms.date: 11/01/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: module
+  ms.service: azure
 title: Integrate with identity management systems
 summary: This module describes the integration with GitHub and single sign-on (SSO) for authentication, service principals, and managed service identities.
 abstract: |
