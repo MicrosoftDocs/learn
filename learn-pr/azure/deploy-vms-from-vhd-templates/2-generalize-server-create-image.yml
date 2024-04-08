@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.deploy-vms-from-vhd-templates.2-generalize-server-create-image
+title: Generalize a server
+metadata:
+  title: Generalize a server
+  description: Generalize a server
+  ms.date: 04/03/2024
+  author: ju-shim
+  ms.author: jushiman
+  ms.topic: unit
+  ms.custom: linux-related-content
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-generalize-server.md)]

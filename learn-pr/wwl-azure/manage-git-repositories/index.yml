@@ -2,11 +2,12 @@
 uid: learn.wwl.manage-git-repositories
 metadata:
   title: Manage Git repositories
-  description: "This module explores how to work with large repositories, purge repository data and manage and automate release notes using GitHub."
+  description: This module explores how to work with large repositories, purge repository data and manage and automate release notes using GitHub.
   ms.date: 11/01/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: module
+  ms.service: azure
 title: Manage Git repositories
 summary: This module explores how to work with large repositories, purge repository data and manage and automate release notes using GitHub.
 abstract: |

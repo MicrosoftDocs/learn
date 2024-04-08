@@ -2,13 +2,14 @@
 uid: learn.wwl.configure-virtual-machine-backups
 metadata:
   title: Configure virtual machine backups
-  description: "Learn how to configure virtual machine backups including restore operations."
+  description: Learn how to configure virtual machine backups including restore operations.
   ms.date: 10/31/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
   ms.custom:
   - N/A
+  ms.service: azure
 title: Configure virtual machine backups
 summary: Learn how to configure virtual machine backups including restore operations.
 abstract: |
