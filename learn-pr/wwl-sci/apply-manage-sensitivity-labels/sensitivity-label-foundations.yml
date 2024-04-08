@@ -23,8 +23,8 @@ quiz:
       isCorrect: false
       explanation: "Incorrect: If you prevent any sharing outside the company, it can hinder your team's ability to work with clients and partners. It protects your data but also makes it inaccessible when you need to collaborate."
     - content: "Use sensitivity labels on files, emails, and sites with important information."
-      isCorrect: true
+      isCorrect: false
       explanation: "Incorrect: Sensitivity labels don't automate data deletion. They focus on categorizing and safeguarding data based on sensitivity levels across platforms."
     - content: "Start using an extra service outside of Microsoft 365 to encrypt emails and files."
-      isCorrect: false
+      isCorrect: true
       explanation: "Correct: Sensitivity labels help you classify and protect data based on its sensitivity level. They can be applied to emails, documents, and other content across Microsoft 365 and other platforms."
