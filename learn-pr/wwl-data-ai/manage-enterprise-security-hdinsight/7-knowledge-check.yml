@@ -13,7 +13,7 @@ labModal: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "What would you need to enable that traffic leaving an HDInsight subnet securely reaches the Cluster Metastore?"
+  - content: "What would you need to enable to ensure that traffic leaving an HDInsight subnet securely reaches the Cluster Metastore?"
     choices:
     - content: "Network Security Groups."
       isCorrect: false
