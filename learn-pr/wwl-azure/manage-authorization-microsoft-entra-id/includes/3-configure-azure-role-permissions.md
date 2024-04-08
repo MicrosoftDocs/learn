@@ -146,16 +146,6 @@ Azure CLI
 az account management-group show --name 'Contoso' -e -r
 ```
 
-```
-
-```
-
-## 
-
-## 
-
-## 
-
 ## Moving management groups and subscriptions
 
 One reason to create a management group is to bundle subscriptions together. Only management groups and subscriptions can be made children of another management group. A subscription that moves to a management group inherits all user access and policies from the parent management group
