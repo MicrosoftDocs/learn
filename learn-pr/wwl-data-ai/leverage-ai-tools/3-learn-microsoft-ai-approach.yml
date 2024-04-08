@@ -4,10 +4,12 @@ title: Learn the Microsoft AI approach
 metadata:
   title: Learn the Microsoft AI approach
   description: "Learn the Microsoft AI approach"
-  ms.date: 01/09/2024
+  ms.date: 04/08/2024
   author: Adriamen
   ms.author: rcaper
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/3-learn-microsoft-ai-approach.md)]
