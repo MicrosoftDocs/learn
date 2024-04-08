@@ -42,7 +42,7 @@ quiz:
       - content: "Volume quota, capacity pools, user quotas."
         isCorrect: false
         explanation: "Volume quotas impact the throughput per TiB. Capacity pools are how Azure NetApp Files allocates capacity and is billed. User quotas are used to control the capacity utilized by users of the service."
-      - content: "Volume type, volume quota, file."
+      - content: "Volume type, volume quota, file count."
         isCorrect: false 
         explanation: "Volume type can be regular or large and can impact performance, but isn't one of the key components. Volume quotas impact the throughput per TiB. File count refers to the number of files in the volume."
   - content: "An HPC application needs at least 50 TiB size of volume storage and also needs to ensure 5,000 MiB per second in throughput. Which of the following service levels and volume quotas are the best to be configured?"
