@@ -12,7 +12,7 @@ prerequisites: |
   Before starting this module, you should be familiar with fundamental AI concepts and services in Azure. Consider completing the [Get started with artificial intelligence](/training/paths/get-started-with-artificial-intelligence-on-azure) learning path first.
 summary: |
   Generative Artificial Intelligence (AI) is becoming more accessible through easy-to-use platforms like Azure AI Studio. Learn how to build generative AI applications like custom copilots that use language models to provide value to your users.
-iconUrl: /en-us/training/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
