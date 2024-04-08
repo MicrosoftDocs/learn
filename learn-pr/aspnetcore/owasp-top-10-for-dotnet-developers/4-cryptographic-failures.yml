@@ -2,7 +2,7 @@
 uid: learn.owasp-top-10-for-dotnet-developers.cryptographic-failures
 title: Cryptographic failures
 metadata:
-  title: cryptographic-failures
+  title: Cryptographic failures
   description: "OWASP Top 10 for .NET Developers. Cryptographic failures."
   ms.date: 06/12/2023
   author: obrocki
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:   
-  - content: "It's considered to be good practice to come up with your own, home-grown encryption algorithm?"  
+  - content: "It's good practice to come up with your own, home-grown encryption algorithm."  
     choices:
     - content: "Yes."
       isCorrect: false
@@ -26,7 +26,7 @@ quiz:
       explanation: "Correct. Rely on industry standard encryption and hashing implementations. Review the documentation to ensure you're using strong algorithms."    
 
 
-  - content: "Process of converting data to a different format to protect the integrity of data for storage, transmission, compression or decompression best describes"  
+  - content: "The process of converting data to a different format for storage, transmission, compression, or decompression best describes:"  
     choices:    
     - content: "Encryption."
       isCorrect: false
