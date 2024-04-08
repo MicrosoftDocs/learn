@@ -2,9 +2,9 @@ Cryptographic failures are failures related to cryptography, or the lack thereof
 
 First, let's begin by distinguishing between encoding, encryption, and hashing, in general programming terms.
 
-**Encoding** a value helps transmit data in a channel, such as base 64 encoding over HTTP, but it doesn't provide security. It changes the format of a value so that it obstructs detection, but it doesn't protect the value.
-**Encryption** is a reversible operation that translates text into what might seem like a random and meaningless cypher. To decrypt the value, an encryption *key* is needed.
-**Hashing** is a one-way operation of mapping input data into fixed-size values (value hash). There's no way to reverse hash a value.
+- **Encoding** a value helps transmit data in a channel, such as base 64 encoding over HTTP, but it doesn't provide security. It changes the format of a value so that it obstructs detection, but it doesn't protect the value.
+- **Encryption** is a reversible operation that translates text into what might seem like a random and meaningless cypher. To decrypt the value, an encryption *key* is needed.
+- **Hashing** is a one-way operation of mapping input data into fixed-size values (value hash). There's no way to reverse hash a value.
 
 > [!WARNING]
 > Avoid writing your own cryptographic algorithms. Instead, use the strong cryptographic algorithms provided by .NET.
