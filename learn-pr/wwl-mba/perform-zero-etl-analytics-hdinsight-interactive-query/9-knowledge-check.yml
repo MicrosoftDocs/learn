@@ -23,18 +23,18 @@ quiz:
       explanation: "Interactive Query offers SQL-like queries, on structured data, with row and column level controls."
     - content: "When you want to use SQL-like queries on high concurrency data for long running-computations."
       isCorrect: false
-      explanation: "Interactive Query clusters not suitable for long-running computations."
+      explanation: "Interactive Query clusters aren't suitable for long-running computations."
   - content: "What file formats are supported with Interactive Query?"
     choices:
     - content: ".xml, .doc, .log"
       isCorrect: false
-      explanation: ".xml, .doc, and .log files not supported by Interactive Query."
+      explanation: ".xml, .doc, and .log files aren't supported by Interactive Query."
     - content: ".json, .csv, .txt"
       isCorrect: true
-      explanation: ".json, .csv, and .txt files supported by Interactive Query."
-    - content: ".PDF, DBK, MD"
+      explanation: ".json, .csv, and .txt files are supported by Interactive Query."
+    - content: ".PDF, .DBK, .MD"
       isCorrect: false
-      explanation: ".PDF, DBK, MD files nor supported by Interactive Query."
+      explanation: ".PDF, DBK, MD files aren't supported by Interactive Query."
   - content: "Which scenario is best for HDInsight Interactive Query?"
     choices:
     - content: "Batch processing"
