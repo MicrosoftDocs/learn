@@ -26,9 +26,7 @@ You can change the name of the management group by using the portal, PowerShell,
 
 To update the display name use **Update-AzManagementGroup**. For example, to change a management groups display name from "Contoso IT" to "Contoso Group", you run the following command:
 
-```powershell
-Azure Powershell
-```
+Azure PowerShell
 
 ```powershell
 Update-AzManagementGroup -GroupId 'ContosoIt' -DisplayName 'Contoso Group'
@@ -38,11 +36,9 @@ Update-AzManagementGroup -GroupId 'ContosoIt' -DisplayName 'Contoso Group'
 
 For Azure CLI, use the update command.
 
-```azurecli
 Azure CLI
-```
 
-```azurecli
+```powershell
 az account management-group update --name 'Contoso' --display-name 'Contoso Group'
 ```
 
@@ -76,24 +72,21 @@ To delete a management group, the following requirements must be met:
 
 Use the **Remove-AzManagementGroup** command within PowerShell to delete management groups.
 
-```powershell
 Azure PowerShell
-```
 
 ```powershell
 Remove-AzManagementGroup -GroupId 'Contoso'
-
 ```
 
 ### Delete in Azure CLI
 
 With Azure CLI, use the command az account management-group delete.
 
-```azurecli
 Azure CLI
-```
 
-`az account management-group delete --name 'Contoso'`
+```powershell
+az account management-group delete --name 'Contoso'
+```
 
 ## View management groups
 
@@ -104,18 +97,16 @@ You can view any management group you have a direct or inherited Azure role on.
 1.  Log into the Azure portal.
 2.  Select All services &gt; Management groups.
 3.  The management group hierarchy page will load. This page is where you can explore all the management groups and subscriptions you have access to. Selecting the group name takes you to a lower level in the hierarchy. The navigation works the same as a file explorer does.
-4.  To see the details of the management group, select the (details) link next to the title of the management group. If this link isn't available, you don't have permissions to view that management group.
+4.  To see the details of the management group, select the **(details)** link next to the title of the management group. If this link isn't available, you don't have permissions to view that management group.
     
     :::image type="content" source="../media/management-groups-page-401f0680.png" alt-text="Screenshot showing the management group hierarchy page in the Azure portal.":::
     
 
 ### View in PowerShell
 
-You use the Get-AzManagementGroup command to retrieve all groups.
+You use the Get-AzManagementGroup command to retrieve all groups. See [Az.Resources](/powershell/module/az.resources/Get-AzManagementGroup) modules for the full list of management group GET PowerShell commands.
 
-```powershell
 Azure PowerShell
-```
 
 ```powershell
 Get-AzManagementGroup
@@ -123,154 +114,47 @@ Get-AzManagementGroup
 
 For a single management group's information, use the -GroupId parameter
 
-```powershell
 Azure PowerShell
-```
 
 ```powershell
 Get-AzManagementGroup -GroupId 'Contoso'
-```
-
-To return a specific management group and all the levels of the hierarchy under it, use -Expand and -Recurse parameters.
-
-```powershell
-Azure PowerShell
-```
-
-```powershell
-PS C:\> $response = Get-AzManagementGroup -GroupId TestGroupParent -Expand -Recurse
-
-```
-
-```powershell
-PS C:\> $response
-```
-
-```powershell
-Id                : /providers/Microsoft.Management/managementGroups/TestGroupParent
-```
-
-```powershell
-Type              : /providers/Microsoft.Management/managementGroups
-```
-
-```powershell
-Name              : TestGroupParent
-```
-
-```powershell
-TenantId          : 00000000-0000-0000-0000-000000000000
-```
-
-```powershell
-DisplayName      : TestGroupParent
-```
-
-```powershell
-UpdatedTime      : 2/1/2018 11:15:46 AM
-```
-
-```powershell
-UpdatedBy        : 00000000-0000-0000-0000-000000000000
-```
-
-```powershell
-ParentId          : /providers/Microsoft.Management/managementGroups/00000000-0000-0000-0000-000000000000
-```
-
-```powershell
-ParentName        : 00000000-0000-0000-0000-000000000000
-```
-
-```powershell
-ParentDisplayName : 00000000-0000-0000-0000-000000000000
-```
-
-```powershell
-Children          : {TestGroup1DisplayName, TestGroup2DisplayName}
-```
-
-```powershell
-PS C:\> $response.Children[0]
-```
-
-```powershell
-Type        : /managementGroup
-```
-
-```powershell
-Id          : /providers/Microsoft.Management/managementGroups/TestGroup1
-```
-
-```powershell
-Name        : TestGroup1
-```
-
-```powershell
-DisplayName : TestGroup1DisplayName
-```
-
-```powershell
-Children    : {TestRecurseChild}
-```
-
-```powershell
-PS C:\> $response.Children[0].Children[0]
-```
-
-```powershell
-Type        : /managementGroup
-```
-
-```powershell
-Id          : /providers/Microsoft.Management/managementGroups/TestRecurseChild
-```
-
-```powershell
-Name        : TestRecurseChild
-```
-
-```powershell
-DisplayName : TestRecurseChild
-```
-
-```powershell
-Children    :
 ```
 
 ### View in Azure CLI
 
 You use the list command to retrieve all groups.
 
-```azurecli
 Azure CLI
-```
 
-```azurecli
+```powershell
 az account management-group list
 ```
 
 For a single management group's information, use the show command
 
-```azurecli
 Azure CLI
-```
 
-```azurecli
+```powershell
 az account management-group show --name 'Contoso'
-
 ```
 
-To return a specific management group and all the levels of the hierarchy under it, use -Expand and -Recurse parameters.
+To return a specific management group and all the levels of the hierarchy under it, use **-Expand** and **-Recurse** parameters.
 
-```azurecli
 Azure CLI
-```
 
-```azurecli
+```powershell
 az account management-group show --name 'Contoso' -e -r
+```
 
 ```
+
+```
+
+## 
+
+## 
+
+## 
 
 ## Moving management groups and subscriptions
 
@@ -329,21 +213,15 @@ If the Owner role on the subscription is inherited from the current management g
 
 To move a subscription in PowerShell, you use the New-AzManagementGroupSubscription command.
 
-```powershell
 Azure PowerShell
-```
 
 ```powershell
 New-AzManagementGroupSubscription -GroupId 'Contoso' -SubscriptionId '12345678-1234-1234-1234-123456789012'
 ```
 
-```powershell
 To remove the link between the subscription and the management group use the Remove-AzManagementGroupSubscription command.
-```
 
-```powershell
 Azure PowerShell
-```
 
 ```powershell
 Remove-AzManagementGroupSubscription -GroupId 'Contoso' -SubscriptionId '12345678-1234-1234-1234-123456789012'
@@ -353,169 +231,18 @@ Remove-AzManagementGroupSubscription -GroupId 'Contoso' -SubscriptionId '1234567
 
 To move a subscription in CLI, you use the add command.
 
-```azurecli
 Azure CLI
-```
 
-```azurecli
+```powershell
 az account management-group subscription add --name 'Contoso' --subscription '12345678-1234-1234-1234-123456789012'
 ```
 
-```azurecli
 To remove the subscription from the management group, use the subscription remove command.
-```
 
-```azurecli
 Azure CLI
-```
 
-```azurecli
+```powershell
 az account management-group subscription remove --name 'Contoso' --subscription '12345678-1234-1234-1234-123456789012'
-```
-
-### Move subscriptions in ARM template
-
-To move a subscription in an Azure Resource Manager template (ARM template), use the following template and deploy it at tenant level.
-
-```javascript
-JSON
-```
-
-```javascript
-{
-```
-
-```javascript
-    "$schema": "https://schema.management.azure.com/schemas/2019-08-01/managementGroupDeploymentTemplate.json#",
-```
-
-```javascript
-    "contentVersion": "1.0.0.0",
-```
-
-```javascript
-    "parameters": {
-```
-
-```javascript
-        "targetMgId": {
-```
-
-```javascript
-            "type": "string",
-```
-
-```javascript
-            "metadata": {
-```
-
-```javascript
-                "description": "Provide the ID of the management group that you want to move the subscription to."
-```
-
-```javascript
-            }
-```
-
-```javascript
-        },
-```
-
-```javascript
-        "subscriptionId": {
-```
-
-```javascript
-            "type": "string",
-```
-
-```javascript
-            "metadata": {
-```
-
-```javascript
-                "description": "Provide the ID of the existing subscription to move."
-```
-
-```javascript
-            }
-```
-
-```javascript
-        }
-```
-
-```javascript
-    },
-```
-
-```javascript
-    "resources": [
-```
-
-```javascript
-        {
-```
-
-```javascript
-            "scope": "/",
-```
-
-```javascript
-            "type": "Microsoft.Management/managementGroups/subscriptions",
-```
-
-```javascript
-            "apiVersion": "2020-05-01",
-```
-
-```javascript
-            "name": "[concat(parameters('targetMgId'), '/', parameters('subscriptionId'))]",
-```
-
-```javascript
-            "properties": {
-```
-
-```javascript
-            }
-```
-
-```javascript
-        }
-```
-
-```javascript
-    ],
-```
-
-```javascript
-    "outputs": {}
-```
-
-```javascript
-}
-```
-
-Or, the following Bicep file.
-
-```javascript
-Bicep
-```
-
-```javascript
-targetScope = 'managementGroup'
-
-@description('Provide the ID of the management group that you want to move the subscription to.')
-param targetMgId string
-
-@description('Provide the ID of the existing subscription to move.')
-param subscriptionId string
-
-resource subToMG 'Microsoft.Management/managementGroups/subscriptions@2020-05-01' = {
-scope: tenant()
-name: '${targetMgId}/${subscriptionId}'
-}
 ```
 
 ## Move management groups
@@ -538,9 +265,7 @@ name: '${targetMgId}/${subscriptionId}'
 
 Use the Update-AzManagementGroup command in PowerShell to move a management group under a different group.
 
-```powershell
 Azure PowerShell
-```
 
 ```powershell
 $parentGroup = Get-AzManagementGroup -GroupId ContosoIT
@@ -554,15 +279,13 @@ Update-AzManagementGroup -GroupId 'Contoso' -ParentId $parentGroup.id
 
 Use the update command to move a management group with Azure CLI.
 
-```azurecli
 Azure CLI
-```
 
-```azurecli
+```powershell
 az account management-group update --name 'Contoso' --parent ContosoIT
 ```
 
-### Audit management groups using activity logs
+## Audit management groups using activity logs<br>
 
 Management groups are supported within Azure Activity Log. You can query all events that happen to a management group in the same central location as other Azure resources. For example, you can see all Role Assignments or Policy Assignment changes made to a particular management group.
 
@@ -579,20 +302,8 @@ When referencing management groups from other Resource Provider's actions, use t
 
 An example of using this path is when assigning a new role assignment to a management group in PowerShell:
 
-```powershell
 Azure PowerShell
-```
 
 ```powershell
 New-AzRoleAssignment -Scope "/providers/Microsoft.Management/managementGroups/Contoso"
 ```
-
-The same scope path is used when retrieving a policy definition at a management group.
-
-<!--- raw content start --->
-HTTP
-<!--- raw content end --->
-
-<!--- raw content start --->
-GET https://management.azure.com/providers/Microsoft.Management/managementgroups/MyManagementGroup/providers/Microsoft.Authorization/policyDefinitions/ResourceNaming?api-version=2019-09-01
-<!--- raw content end --->
