@@ -31,8 +31,8 @@ subjects:
 - artificial-intelligence
 modules:
 - learn.wwl.leverage-ai-tools
+- learn.wwl.create-business-value
 - learn.wwl.embrace-responsible-ai-principles-practices
 - learn.wwl.scale-ai
-- learn.wwl.create-business-value
 trophy:
   uid: learn.wwl.transform-your-business-with-microsoft-ai.trophy
