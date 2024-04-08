@@ -40,14 +40,14 @@ Before you start your configuration, verify that you meet the following criteria
  -  Obtain an IP address range for your hub region. The hub is a virtual network, and the address range that you specify for the hub region can't overlap with an existing virtual network that you connect to. It also can't overlap with the address ranges that you connect to on-premises. If you're unfamiliar with the IP address ranges located in your on-premises network configuration, coordinate with someone who can provide those details for you.
  -  If you don't have an Azure subscription, create a free account before you begin.
 
-## Create a virtual WAN and hub with gateways
+## 1. Create a virtual WAN and hub with gateways
 
 The following Azure resources and the corresponding on-premises configurations must be in place before you proceed:
 
  -  An Azure virtual WAN.
  -  A virtual WAN hub with an ExpressRoute and a Virtual Private Network gateway.
 
-## Create a site for the on-premises network
+## 2. Create a site for the on-premises network
 
 The site resource is the same as the non-ExpressRoute VPN sites for a virtual WAN. The IP address of the on-premises VPN device can now be either a private IP address, or a public IP address in the on-premises network reachable via the previously created ExpressRoute private peering configuration.
 
@@ -68,7 +68,7 @@ The site resource is the same as the non-ExpressRoute VPN sites for a virtual WA
 
 4. Next, connect the site to the hub. It can take up to 30 minutes to update the gateway.
 
-## Update the VPN connection setting to use ExpressRoute
+## 3. Update the VPN connection setting to use ExpressRoute
 
 After you create the VPN site and connect to the hub, use the following steps to configure the connection to use ExpressRoute private peering:
 
@@ -82,7 +82,7 @@ After you create the VPN site and connect to the hub, use the following steps to
      -  For **Use Azure Private IP Address**, select **Yes**. The setting configures the hub VPN gateway to use private IP addresses within the hub address range on the gateway for this connection, instead of the public IP addresses. This ensures that the traffic from the on-premises network traverses the ExpressRoute private peering paths rather than using the public internet for this VPN connection.
 6.  Click **Create** to update the settings. After the settings have been created, the hub VPN gateway will use the private IP addresses on the VPN gateway to establish the IPsec/IKE connections with the on-premises VPN device over ExpressRoute.
 
-## Get the private IP addresses for the hub VPN gateway
+## 4. Get the private IP addresses for the hub VPN gateway
 
 Download the VPN device configuration to get the private IP addresses of the hub VPN gateway. You need these addresses to configure the on-premises VPN device.
 
@@ -91,7 +91,7 @@ Download the VPN device configuration to get the private IP addresses of the hub
 3.  After the file is created, select the link to download it.
 4.  Apply the configuration to your VPN device.
 
-## VPN device configuration file
+### VPN device configuration file
 
 The device configuration file contains the settings to use when you're configuring your on-premises VPN device. When you view this file, notice the following information:
 
@@ -104,120 +104,23 @@ The device configuration file contains the settings to use when you're configuri
      -  IP addresses of the virtual hub's VPN gateway. Because each connection of the VPN gateway is composed of two tunnels in active-active configuration, you'll see both IP addresses listed in this file. In this example, you see Instance0 and Instance1 for each site, and they're private IP addresses instead of public IP addresses.<br>Example: `"Instance0":"10.51.230.4" "Instance1":"10.51.230.5"`
      -  Configuration details for the VPN gateway connection, such as BGP and preshared key. The preshared key is automatically generated for you. You can always edit the connection on the **Overview** page for a custom preshared key.
 
-## Example device configuration file
+### Configuring your VPN device
 
-`[{`
+If you need instructions to configure your device, you can use the instructions on the VPN device configuration scripts page with the following caveats:
 
-`"configurationVersion":{`
+ -  The instructions on the VPN device page aren't written for a virtual WAN. But you can use the virtual WAN values from the configuration file to manually configure your VPN device.
+ -  The downloadable device configuration scripts that are for the VPN gateway don't work for the virtual WAN, because the configuration is different.
+ -  A new virtual WAN can support both IKEv1 and IKEv2.
+ -  A virtual WAN can use only route-based VPN devices and device instructions.
 
-`"LastUpdatedTime":"2019-10-11T05:57:35.1803187Z",`
+## 5. View your virtual WAN
 
-`"Version":"5b096293-edc3-42f1-8f73-68c14a7c4db3"`
+1. Go to the virtual WAN.
 
-`},`
+2. On the **Overview** page, each point on the map represents a hub.
 
-`"vpnSiteConfiguration":{`
+3. In the **Hubs and connections** section, you can view hub, site, region, and VPN connection status. You can also view bytes in and out.
 
-`"Name":"VPN-over-ER-site",`
+## 6. Monitor a connection
 
-`"IPAddress":"172.24.127.211",`
-
-`"LinkName":"VPN-over-ER"`
-
-`},`
-
-`"vpnSiteConnections":[{`
-
-`"hubConfiguration":{`
-
-`"AddressSpace":"10.51.230.0/24",`
-
-`"Region":"West US 2",`
-
-`"ConnectedSubnets":["10.51.231.0/24"]`
-
-`},`
-
-`"gatewayConfiguration":{`
-
-`"IpAddresses":{`
-
-`"Instance0":"10.51.230.4",`
-
-`"Instance1":"10.51.230.5"`
-
-`}`
-
-`},`
-
-`"connectionConfiguration":{`
-
-`"IsBgpEnabled":false,`
-
-`"PSK":"abc123",`
-
-`"IPsecParameters":{"SADataSizeInKilobytes":102400000,"SALifeTimeInSeconds":3600}`
-
-`}`
-
-`}]`
-
-`},`
-
-`{`
-
-`"configurationVersion":{`
-
-`"LastUpdatedTime":"2019-10-11T05:57:35.1803187Z",`
-
-`"Version":"fbdb34ea-45f8-425b-9bc2-4751c2c4fee0"`
-
-`},`
-
-`"vpnSiteConfiguration":{`
-
-`"Name":"VPN-over-INet-site",`
-
-`"IPAddress":"13.75.195.234",`
-
-`"LinkName":"VPN-over-INet"`
-
-`},`
-
-`"vpnSiteConnections":[{`
-
-`"hubConfiguration":{`
-
-`"AddressSpace":"10.51.230.0/24",`
-
-`"Region":"West US 2",`
-
-`"ConnectedSubnets":["10.51.231.0/24"]`
-
-`},`
-
-`"gatewayConfiguration":{`
-
-`"IpAddresses":{`
-
-`"Instance0":"51.143.63.104",`
-
-`"Instance1":"52.137.90.89"`
-
-`}`
-
-`},`
-
-`"connectionConfiguration":{`
-
-`"IsBgpEnabled":false,`
-
-`"PSK":"abc123",`
-
-`"IPsecParameters":{"SADataSizeInKilobytes":102400000,"SALifeTimeInSeconds":3600}`
-
-`}`
-
-`}]`
-
-`}]`
+Create a connection to monitor communication between an Azure virtual machine (VM) and a remote site.
