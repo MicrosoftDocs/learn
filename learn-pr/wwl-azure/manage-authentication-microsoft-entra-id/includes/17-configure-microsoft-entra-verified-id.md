@@ -67,7 +67,7 @@ Now make modifications to the sample app's issuer code to update it with your ve
 
 2. Under the project root folder, open the appsettings.json file. This file contains information about your credentials in Microsoft Entra Verified ID environment. Update the following properties with the information that you collected during earlier steps.
 
- -  Tenant ID: Your tenant ID
+ -  **Tenant ID**: Your tenant ID
  -  **Client ID**: Your client ID
  -  **Client Secret**: Your client secret
  -  **DidAuthority**: Your decentralized identifier
