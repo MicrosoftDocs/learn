@@ -5,7 +5,7 @@ metadata:
   description: "Register, scan, catalog, and view data assets and their relevant details in Microsoft Purview."
   ms.date: 05/17/2023
   author: wwlpublish
-  ms.author: shlindsay
+  ms.author: anrudduc
   ms.topic: module
   ms.service: purview
 title: Catalog data artifacts by using Microsoft Purview
