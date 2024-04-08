@@ -32,9 +32,9 @@ quiz:
     - content: ".json, .csv, .txt"
       isCorrect: true
       explanation: ".json, .csv, and .txt files supported by Interactive Query."
-    - content: ".pdf,. .Dbk,. .md"
+    - content: ".PDF, DBK, MD"
       isCorrect: false
-      explanation: ".pdf,. .Dbk, and .md files nor supported by Interactive Query."
+      explanation: ".PDF, DBK, MD files nor supported by Interactive Query."
   - content: "Which scenario is best for HDInsight Interactive Query?"
     choices:
     - content: "Batch processing"
