@@ -5,7 +5,7 @@ metadata:
   description: Understand analytics solutions in the Azure data ecosystem. Explore the architecture of a scalable analytics solution to meet business needs.
   ms.date: 02/08/2023
   author: wwlpublish
-  ms.author: shlindsay
+  ms.author: anrudduc
   ms.topic: module
   ms.service: azure
 title: Explore Azure data services for modern analytics
