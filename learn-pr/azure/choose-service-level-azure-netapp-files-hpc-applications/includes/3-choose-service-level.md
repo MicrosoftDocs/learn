@@ -4,7 +4,7 @@ Recall that in the EDA simulation scenario, after we identify the throughput or 
 
 As you learned in the previous unit, a combination of the service level, QoS policy, and the volume quota determines the throughput limit for a volume.
 
-Recall that the limit of maximum throughput of a regular Azure NetApp Files volume is 4,500 MiB per second. At the Premium service level (64 MiB/s per 1 TiB), a volume quota of at least 70.31-TiB is needed to be a throughput limit that's high enough to achieve this level of performance:
+Recall that the limit of maximum throughput of a regular Azure NetApp Files volume is 4,500 MiB per second. At the Premium service level (64 MiB/s per 1 TiB), a volume quota of at least 70.31 TiB is needed to be a throughput limit that's high enough to achieve this level of performance:
 
 - 64MiB/s * 70.31 = 4,500 MiB/s
 

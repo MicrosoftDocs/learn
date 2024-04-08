@@ -37,7 +37,7 @@ Azure NetApp Files offers three service levels suited to different workload type
 | - | - | - | 
 | Standard | Good <ul><li>Up to 1,000 IOPS/TiB quota</li><li>Up to 16 MiB/s per TiB quota</li></ul> | <ul><li>Static web content</li><li>File shares/home directories</li><li>Database backups</li></ul> |
 | Premium | Better (SSD class) <ul><li>Up to 4,000 IPS/TiB quota</li>Up to 64 MiB/s per TiB quota</li></ul> | <ul><li>Databases</li><li>Enterprise applications</li><li>Analytics</li><li>Message queues</li></ul> |
-| Ultra |  Best (high performance flash) <ul><li>Up to 8,000 IOPS/TiB quota</li><li>Up to 128 MiB/s per TiB quota</li></ul> | <ul><li>Performance/throughput intensive applications</li><li>HPC/EDA</li><</ul> |
+| Ultra |  Best (high performance flash) <ul><li>Up to 8,000 IOPS/TiB quota</li><li>Up to 128 MiB/s per TiB quota</li></ul> | <ul><li>Performance/throughput intensive applications</li><li>HPC/EDA</li></ul> |
 
 \* Performance SLA indexed against volume quota
 
@@ -63,8 +63,8 @@ With large volumes, throughput levels are able to exceed the maximums allowed by
 
 Let's walk through an example:
 
-- If I choose the Premium service level, I get 64 MiB per second for every 1 TB of quota within the volume.
-- If I provision a volume with a 2-TB quota, that volume can deliver up to 128 MiB per second of throughput.
+- If I choose the Premium service level, I get 64 MiB per second for every 1 TiB of quota within the volume.
+- If I provision a volume with a 2-TiB quota, that volume can deliver up to 128 MiB per second of throughput.
 
 Consider:
 
