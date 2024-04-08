@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/modules/index.md",
+      "redirect_url": "/training/browse/?resource_type=module",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/index.md",
+      "redirect_url": "/training/browse/?resource_type=learning%20path",
+      "redirect_document_id": false
+    },    
+    {
       "source_path_from_root": "/learn-pr/azure/add-sign-in-support-python-web-app-identity-platform/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/entra/identity-platform/quickstart-web-app-python-sign-in",
       "redirect_document_id": false
@@ -32679,6 +32689,41 @@
     {
       "source_path": "learn-pr/advocates/replace-faces-with-emojis-matching-emotion/10-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-bot-conversation-flow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-personalizer/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-personalizer/2-what-is-personalizer.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-personalizer/3-how-personalizer-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-personalizer/4-when-to-use-personalizer.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-personalizer/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-personalizer/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-personalizer/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
       "redirect_document_id": false
     },
     {
