@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-  ms.service: azure-ai-services
 durationInMinutes: 4
 content: |
   [!include[](includes/4-discover-ai-improves-shopping-experiences.md)]

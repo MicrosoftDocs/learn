@@ -3,7 +3,7 @@ uid: learn.wwl.custom-name-entity-recognition
 metadata:
   title: Custom named entity recognition
   description: "Custom named entity recognition"
-  ms.service: cognitive-services
+  ms.service: azure-ai-services
   ms.date: 2/21/2024
   author: wwlpublish
   ms.author: berryivor

@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/20/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.custom: 
     - build-2023
     - build-2023-dataai
@@ -31,7 +31,7 @@ roles:
 products:
 - fabric
 subjects:
-- data-science
+- data-management
 - machine-learning
 units:
 - learn.wwl.train-track-model-fabric.introduction

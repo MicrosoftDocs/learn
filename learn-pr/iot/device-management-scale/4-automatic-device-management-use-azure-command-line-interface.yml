@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-approaches-to-device-management-at-scale.examine-automatic-using-azure-cli
+title: Examine automatic device management using CLI for Azure IoT Hub
+metadata:
+  title: Examine automatic device management using CLI for Azure IoT Hub
+  description: This content is part of Examine approaches to device management at scale using Azure IoT Hub
+  ms.date: 10/01/2023
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: unit
+  ms.custom: devx-track-azurecli
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-automatic-device-management-use-azure-command-line-interface.md)]

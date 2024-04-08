@@ -30,7 +30,7 @@ products:
 subjects:
 - cloud-computing
 - data-engineering
-- data-warehousing
+- data-storage
 units:
 - learn.wwl.plan-sap-hana-azure-large-instances-deployments.introduction
 - learn.wwl.plan-sap-hana-azure-large-instances-deployments.explore-compute-considerations

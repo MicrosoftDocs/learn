@@ -37,7 +37,7 @@ products:
   - azure-kubernetes-service
   - azure-cosmos-db
 subjects:
-- container
+- containers
 units:
   - learn.aks-manage-application-state.1-introduction
   - learn.aks-manage-application-state.2-understand-state-management

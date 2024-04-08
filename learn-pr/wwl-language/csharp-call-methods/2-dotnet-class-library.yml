@@ -8,8 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.custom: N/A, devx-track-dotnet
 durationInMinutes: 6
 content: |
   [!include[](includes/2-dotnet-class-library.md)]

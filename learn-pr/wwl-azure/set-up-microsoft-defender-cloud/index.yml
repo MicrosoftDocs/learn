@@ -6,7 +6,7 @@ metadata:
   ms.date: 02/23/2024
   author: wwlpublish
   ms.author: serlingdavis
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure
 title: Set up Microsoft Defender for Cloud
 summary: In this module, you'll learn how to implement Microsoft Defender for Cloud using the Azure portal, to strengthen security and threat detection in your Azure environment.

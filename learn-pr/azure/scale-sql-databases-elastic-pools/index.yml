@@ -35,7 +35,7 @@ products:
 - azure-portal
 - azure-sql-database
 subjects:
-- database
+- databases
 units:
 - learn.azure-scale-azure-sql-databases-elastic-pools.introduction
 - learn.azure-scale-azure-sql-databases-elastic-pools.create-elastic-pool

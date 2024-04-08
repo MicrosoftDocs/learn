@@ -4,11 +4,12 @@ title: Register an existing SAP system
 metadata:
   title: Register an existing SAP system
   description: "Register an existing SAP system in Azure Center for SAP solutions."
-  ms.date: 10/20/2023
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/7-register-existing-sap-system.md)]

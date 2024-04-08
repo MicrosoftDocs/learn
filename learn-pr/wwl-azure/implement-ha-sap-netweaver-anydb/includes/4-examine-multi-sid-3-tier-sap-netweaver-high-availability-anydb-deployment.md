@@ -1,4 +1,4 @@
-You can also prepare the infrastructure and configure SAP for multi-SID. For example, you can add an additional SAP ASCS/SCS instance into an existing cluster configuration. If you want to create a new multi-SID cluster, you can use the multi-SID quickstart templates on GitHub. To create a new multi-SID cluster, you must deploy the following three templates:
+You can also prepare the infrastructure and configure SAP for multi-SID. For example, you can add an extra SAP ASCS/SCS instance into an existing cluster configuration. If you want to create a new multi-SID cluster, you can use the multi-SID quickstart templates on GitHub. To create a new multi-SID cluster, you must deploy the following three templates:
 
 - ASCS/SCS template
 - Database template

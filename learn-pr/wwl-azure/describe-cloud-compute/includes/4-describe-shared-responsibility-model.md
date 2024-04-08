@@ -15,7 +15,7 @@ The following diagram highlights how the Shared Responsibility Model informs who
 :::image type="content" source="../media/shared-responsibility-b3829bfe.svg" alt-text="Diagram showing the responsibilities of the shared responsibility model.":::
 
 
-You’ll always be responsible for:
+When using a cloud provider, you’ll always be responsible for:
 
  -  The information and data stored in the cloud
  -  Devices that are allowed to connect to your cloud (cell phones, computers, and so on)

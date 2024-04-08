@@ -9,14 +9,14 @@ An index helps you search for data in a table. Think of an index over a table li
 When you create an index in a database, you specify a column from the table, and the index contains a copy of this data in a sorted order, with pointers to the corresponding rows in the table. When the user runs a query that specifies this column in the *WHERE* clause, the database management system can use this index to fetch the data more quickly than if it had to scan through the entire table row by row. In the example below, the query retrieves all orders for customer C1. The Orders table has an index on the Customer ID column. The database management system can consult the index to quickly find all matching rows in the Orders table.
 
 > [!div class="mx-imgBorder"]
-> ![Example of an index](../media/3-index.png)
+> ![Diagram showing an example of an index where the query retrieves all orders for a customer.](../media/3-index.png)
 
 You can create many indexes on a table. So, if you also wanted to find all orders for a specific product, then creating another index on the Product ID column in the Orders table, would be useful. However, indexes aren't free. An index might consume additional storage space, and each time you insert, update, or delete data in a table, the indexes for that table must be maintained. This additional work can slow down insert, update, and delete operations, and incur additional processing charges. Therefore, when deciding which indexes to create, you must strike a balance between having indexes that speed up your queries versus the cost of performing other operations. In a table that is read only, or that contains data that is modified infrequently, more indexes will improve query performance. If a table is queried infrequently, but subject to a large number of inserts, updates, and deletes (such as a table involved in OLTP), then creating indexes on that table can slow your system down.
 
 Some relational database management systems also support *clustered indexes*. A clustered index physically reorganizes a table by the index key. This arrangement can improve the performance of queries still further, because the relational database management system doesn't have to follow references from the index to find the corresponding data in the underlying table. The image below shows the Orders table with a clustered index on the Customer ID column.
 
 > [!div class="mx-imgBorder"]
-> ![Example of a clustered index](../media/3-clustered-index.png)
+> ![Diagram showing an example of a clustered index.](../media/3-clustered-index.png)
 
 In database management systems that support them, a table can only have a single clustered index.
 

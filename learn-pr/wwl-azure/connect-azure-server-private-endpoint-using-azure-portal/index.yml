@@ -6,7 +6,7 @@ metadata:
   ms.date: 01/16/2024
   author: wwlpublish
   ms.author: serlingdavis
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure
 title: Connect an Azure SQL server using an Azure Private Endpoint using the Azure portal
 summary: This module will guide you on securely connecting an Azure SQL server via Azure Private Endpoint in the Azure portal, enhancing data communication security.

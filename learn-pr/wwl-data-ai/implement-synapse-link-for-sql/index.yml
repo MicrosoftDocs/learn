@@ -6,7 +6,7 @@ metadata:
   ms.date: 02/10/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: synapse-analytics
   ms.subservice: synapse-link
 title: Implement Azure Synapse Link for SQL

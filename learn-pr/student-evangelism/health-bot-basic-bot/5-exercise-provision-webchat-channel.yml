@@ -6,7 +6,7 @@ metadata:
   description: Learn how to create a web chat channel, which allows users to communicate with your Azure Health Bot instance.
   author: Dwitrisha
   ms.author: chnoring
-  ms.date: 07/27/2021
+  ms.date: 04/21/2023
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 15

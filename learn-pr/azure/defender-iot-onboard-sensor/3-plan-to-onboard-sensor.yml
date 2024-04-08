@@ -3,12 +3,11 @@ uid: learn.onboard-sensor-microsoft-defender-io.plan-to-onboard-sensor
 title: 
   Plan to onboard an OT sensor to Microsoft Defender for IoT
 metadata:
-  title: |
-    Plan to onboard an OT sensor to Microsoft Defender for IoT
+  title: Plan to onboard an OT sensor to Microsoft Defender for IoT
   description: "Plan to onboard an OT sensor"
-  ms.date: 12/4/2023
-  author: cwatson-cat
-  ms.author: cwatson
+  ms.date: 02/21/2024
+  author: limwainstein
+  ms.author: lwainstein
   ms.topic: unit
 durationInMinutes: 2
 content: |

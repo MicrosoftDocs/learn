@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: "Check how well you understand security for different authentication methods for Microsoft Entra ID. Test your understanding of how to switch users to Microsoft Authenticator push notifications for better security."
-  ms.date: 8/09/2022
+  ms.date: 02/29/2024
   author: Justinha
   ms.author: Justinha
   ms.topic: unit

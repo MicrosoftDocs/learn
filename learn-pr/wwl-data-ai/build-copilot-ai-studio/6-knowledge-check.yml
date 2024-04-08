@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-copilot-ai-studio.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check to test your knowledge on grounding models with RAG."
+  ms.date: 02/21/2024
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "What does groundedness refer to in the context of generative AI?"
+    choices:
+    - content: "The use of a locally deployed language model."
+      isCorrect: false
+      explanation: "Incorrect. RGroundedness doesn't refer to the location where the model is deployed."
+    - content: "Using data to contextualize prompts and ensure relevant responses."
+      isCorrect: true
+      explanation: Correct. Groundedness involves using a data source to *ground* prompts and ensure accurate, relevant responses."
+    - content: "Using the lowest possible number of tokens in a prompt."
+      isCorrect: false
+      explanation: "Incorrect. Groundedness does not minimize the number of tokens in a prompt."
+  - content: "What pattern can you use to ground prompts?"
+    choices:
+    - content: "Metadata Optimized Prompt (MOP)."
+      isCorrect: false
+      explanation: "Incorrect. There is no MOP pattern for grounding prompts."
+    - content: "Data Understanding Support Text (DUST)."
+      isCorrect: false
+      explanation: "Incorrect. There is no DUST pattern for grounding prompts."
+    - content: "Retrieval Augmented Generation (RAG)."
+      isCorrect: true
+      explanation: "Correct. The RAG pattern is used to add grounding data to prompts."
+  - content: "Which tool enables you to retrieve grounding data in a prompt flow?"
+    choices:
+    - content: "Query tool."
+      isCorrect: false
+      explanation: "Incorrect. There is no Query tool in Promot Flow."
+    - content: "Content Safety tool."
+      isCorrect: false
+      explanation: "Incorrect. The Content Safety tool does not retrieve grounding data."
+    - content: "Index Lookup tool."
+      isCorrect: true
+      explanation: "Correct. You can use the Index lookup tool to retrieve grounding data from an index in Prompt Flow."

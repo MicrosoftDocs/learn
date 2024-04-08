@@ -32,7 +32,7 @@ products:
   - azure-hpc-cache
 subjects:
 - cache
-- high-performance-computing
+- infrastructure
 units:
 - learn.azure.introduction-azure-hpc-cache.introduction
 - learn.azure.introduction-azure-hpc-cache.what

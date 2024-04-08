@@ -2,11 +2,12 @@
 uid: learn-wwl.enable-digital-transformation
 metadata:
   title: 'Enabling digital transformation '
-  description: "Digital transformation is a wave of business innovation fueled by the explosion of technology—data, applications, and devices are everywhere. The cloud, artificial intelligence (AI), and the internet of things (IoT) give organizations new ways to make sense of information and generate insights to transform their business. Realizing the benefits of digital transformation requires business leaders to look beyond technology to reimagine existing business models and embrace a different way of bringing together people, data, and processes to create value for customers."
+  description: Digital transformation is a wave of business innovation fueled by the explosion of technology—data, applications, and devices are everywhere. The cloud, artificial intelligence (AI), and the internet of things (IoT) give organizations new ways to make sense of information and generate insights to transform their business. Realizing the benefits of digital transformation requires business leaders to look beyond technology to reimagine existing business models and embrace a different way of bringing together people, data, and processes to create value for customers.
   ms.date: 10/14/2020
   author: raniabayoumy
   ms.author: rabayoum
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: azure
 title: Enabling digital transformation
 summary: Digital transformation is a business innovation fueled by the explosion of the cloud, artificial intelligence (AI), and the Internet of things (IoT), providing organizations with new ways to understand, manage, and transform their business.
 abstract: |

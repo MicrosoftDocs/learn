@@ -3,9 +3,9 @@ uid: learn.defender-iot-plan-deployment
 metadata:
   title: Plan to deploy Microsoft Defender for IoT to monitor operational technology networks
   description: "Learn how to plan your deployment of Microsoft Defender for IoT to monitor your OT network."
-  ms.date: 7/20/2023
-  author: cwatson-cat
-  ms.author: cwatson
+  ms.date: 11/29/2023
+  author: limwainstein
+  ms.author: lwainstein
   ms.topic: module-standard-task-based
   ms.service: defender-for-iot
 title: Plan to deploy Microsoft Defender for IoT to monitor operational technology (OT) networks
@@ -21,7 +21,7 @@ prerequisites: |
   - Knowledge of operational technology (OT) networks and networking concepts at an intermediate level 
   - Familiarity with the Purdue networking model, like the device types that are included in each networking level
   - Knowledge of what Azure roles and role-based access controls (RBAC) are and how they work at a beginner level
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/defender-for-iot/defender-iot-plan-deployment.svg
 levels: 
   - intermediate
 roles: 

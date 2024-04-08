@@ -3,25 +3,35 @@ uid: learn.wwl.detect-analyze-recognize-faces
 metadata:
   title: Detect, analyze, and recognize faces
   description: "Detect, analyze, and recognize faces"
-  ms.service: cognitive-services
-  ms.date: 07/13/2022
+  ms.date: 03/11/2024
   author: wwlpublish
-  ms.author: berryivor
-  ms.topic: module-standard-task-based
+  ms.author: gmalc
+  ms.topic: module
+  ms.service: azure
+  ai-usage: human-only
 title: Detect, analyze, and recognize faces
 summary: The ability for applications to detect human faces, analyze facial features and emotions, and identify individuals is a key artificial intelligence capability.
 abstract: |
-  After completing this module, you will be able to:
-  - Identify options for face detection, analysis, and identification
-  - Understand considerations for face analysis
-  - Detect faces with the Azure AI Vision service
-  - Understand capabilities of the Face service
-  - Compare and match detected faces
-  - Implement facial recognition
+  After completing this module, you'll be able to:
+
+  - Identify options for face detection, analysis, and identification.
+
+  - Understand considerations for face analysis.
+
+  - Detect faces with the Computer Vision service.
+
+  - Understand capabilities of the Face service.
+
+  - Compare and match detected faces.
+
+  - Implement facial recognition.
 prerequisites: |
   Before starting this module, you should already have:
+
   - Familiarity with Azure and the Azure portal.
+
   - Experience programming with C# or Python.
+
   If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path first.
 iconUrl: /training/achievements/artificial-intelligence-detect-faces.svg
 levels:
@@ -30,7 +40,6 @@ roles:
 - ai-engineer
 - developer
 products:
-- ai-services
 - azure-computer-vision
 - azure-face
 subjects:

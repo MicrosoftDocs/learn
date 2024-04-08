@@ -7,7 +7,7 @@ Securing access to and from the cluster is critical. Think from the cluster's pe
 
 There are two ways to manage AKS to Azure access through Microsoft Entra ID: *service principals* or *managed identities for Azure resources*.
 
-Of the two ways, managed identities are recommended. With service principals, responsibility for managing and rotating secrets, either manually or programmatically. With managed identities, Azure AD manages and performs the authentication and timely rotation of secrets for you.
+Of the two ways, managed identities are recommended. With service principals, responsibility for managing and rotating secrets is done either manually or programmatically. With managed identities, Azure AD manages and performs the authentication and timely rotation of secrets for you.
 
 It's recommended that managed identities are enabled so that the cluster can interact with external Azure resources through Microsoft Entra. You can enable this setting only during cluster creation. Even if Microsoft Entra isn't used immediately, you can incorporate it later.
 

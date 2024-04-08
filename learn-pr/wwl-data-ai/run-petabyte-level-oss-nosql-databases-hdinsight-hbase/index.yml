@@ -34,7 +34,7 @@ roles:
 products:
 - azure-hdinsight
 subjects:
-- data-ai
+- data-management
 units:
 - learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.introduction
 - learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.describe-apache-hbase

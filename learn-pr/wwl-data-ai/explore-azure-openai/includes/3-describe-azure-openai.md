@@ -17,11 +17,9 @@ Using Azure OpenAI allows you to transition between your work with Azure service
 
 ### Understand Azure OpenAI workloads 
 
-Azure OpenAI supports many common AI workloads and solves for some new ones.
+Common AI workloads include machine learning, computer vision, natural language processing, conversational AI, anomaly detection, and knowledge mining.
 
-Common AI workloads include machine learning, computer vision, natural language processing, conversational AI, anomaly detection, and knowledge mining. 
-
-Other AI workloads Azure OpenAI supports can be categorized by tasks they support: 
+Azure OpenAI supports many **generative** AI workloads such as: 
 
 - **Generating Natural Language**
     - *Text completion*: generate and edit text 

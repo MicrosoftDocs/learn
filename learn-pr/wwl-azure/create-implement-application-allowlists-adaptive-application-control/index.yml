@@ -2,11 +2,12 @@
 uid: learn.wwl.create-implement-application-allowlists-with-adaptive-application-control
 metadata:
   title: Create and implement application allowlists with adaptive application control
-  description: "You'll be able to implement Adaptive application controls within your organization to protect your Windows Server IaaS VMs."
+  description: You'll be able to implement Adaptive application controls within your organization to protect your Windows Server IaaS VMs.
   ms.date: 10/15/2020
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: azure
 title: Create and implement application allowlists with adaptive application control
 summary: You'll be able to implement Adaptive application controls within your organization to protect your Windows Server IaaS VMs.
 abstract: |

@@ -9,14 +9,14 @@ metadata:
   ms.topic: module-standard-task-based
   ms.service: azure-ai-language
   ms.subservice: azure-ai-question-answering
-title: Build a question answering solution
+title: Create question answering solutions with Azure AI Language
 summary: The question answering capability of the Azure AI Language service makes it easy to build applications in which users ask questions using natural language and receive appropriate answers.
 abstract: |
   After completing this module, you will be able to:
-  - Understand question answering and how it compares to language understanding
-  - Create, test, publish and consume a knowledge base
-  - Implement multi-turn conversation and active learning
-  - Create a question answering bot to interact with using natural language
+  - Understand question answering and how it compares to language understanding.
+  - Create, test, publish, and consume a knowledge base.
+  - Implement multi-turn conversation and active learning.
+  - Create a question answering bot to interact with using natural language.
 prerequisites: |
   Before starting this module, you should already have:
   - Familiarity with Azure and the Azure portal.

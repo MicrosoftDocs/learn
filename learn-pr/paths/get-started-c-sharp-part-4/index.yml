@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-c-sharp-part-4
 metadata:
   title: Work with variable data in C# console applications (Get started with C#, Part 4)
   description: Work with variable data in C# console applications (Get started with C#, Part 4)
-  ms.date: 02/22/2024
+  ms.date: 03/07/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: learning-path
@@ -33,11 +33,11 @@ products:
 - vs-code
 modules:
 - learn.languages.csharp-choose-data-type
+- learn.languages.csharp-convert-cast
 - learn.languages.csharp-arrays-operations
 - learn.languages.csharp-format-strings
-- learn.wwl.challenge-project-work-variable-data-c-sharp
-- learn.languages.csharp-convert-cast
-- learn.wwl.guided-project-work-variable-data-c-sharp
 - learn.languages.csharp-modify-content
+- learn.wwl.guided-project-work-variable-data-c-sharp
+- learn.wwl.challenge-project-work-variable-data-c-sharp
 trophy:
   uid: learn.wwl.get-started-c-sharp-part-4.trophy

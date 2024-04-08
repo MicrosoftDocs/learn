@@ -3,12 +3,11 @@ uid: learn.onboard-sensor-microsoft-defender-io.exercise-onboard-sensor
 title: 
   Exercise - Onboard an OT sensor to Defender for IoT
 metadata:
-  title: |
-    Exercise - Onboard an OT sensor to Defender for IoT
+  title: Exercise - Onboard an OT sensor to Defender for IoT
   description: "Exercise - Onboard an OT sensor to Defender for IoT"
-  ms.date: 12/4/2023
-  author: cwatson-cat
-  ms.author: cwatson
+  ms.date: 02/21/2024
+  author: limwainstein
+  ms.author: lwainstein
   ms.topic: unit
 durationInMinutes: 5
 content: |

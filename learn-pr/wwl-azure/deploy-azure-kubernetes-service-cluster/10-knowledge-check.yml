@@ -4,10 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/14/2023
+  ms.date: 03/08/2024
   author: wwlpublish
   ms.author: bradj
-  ms.topic: module
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/10-knowledge-check.md)]
@@ -44,14 +46,14 @@ quiz:
     - content: "To limit the number of nodes in the cluster"
       isCorrect: false
       explanation: "Incorrect. The address space should be large enough to accommodate all nodes and their scalability limits."
-    - content: "To ensure that all entities that will receive traffic have an IP address allocated from the subnet address space"
+    - content: "To ensure that all entities that receive traffic have an IP address allocated from the subnet address space"
       isCorrect: true
-      explanation: "Correct. The address space should be large enough to hold all subnets and allocate IP addresses for all entities that will receive traffic, including nodes, pods, and Azure Private Link addresses."
+      explanation: "Correct. The address space should be large enough to hold all subnets and allocate IP addresses for all entities that receive traffic, including nodes, pods, and Azure Private Link addresses."
   - content: "What is the purpose of deploying Private Link endpoints in a dedicated subnet within the spoke virtual network?"
     choices:
     - content: "To keep the resources that belong to the cluster in a separate virtual network."
       isCorrect: false
-      explanation: "Incorrect. While deploying Private Link endpoints in a dedicated subnet within the spoke virtual network does keep the resources that belong to the cluster in the same virtual network, this is not the primary purpose of doing so."
+      explanation: "Incorrect. While deploying Private Link endpoints in a dedicated subnet within the spoke virtual network does keep the resources that belong to the cluster in the same virtual network, this isn't the primary purpose of doing so."
     - content: "To reduce traffic passing the hub virtual network connection."
       isCorrect: false
       explanation: "Incorrect. This answer describes the purpose of deploying Private Link endpoints in the hub virtual network, not in a dedicated subnet within the spoke virtual network."

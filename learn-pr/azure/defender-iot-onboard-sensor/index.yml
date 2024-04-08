@@ -1,12 +1,11 @@
 ### YamlMime:Module
 uid: learn.onboard-sensor-microsoft-defender-iot
 metadata:
-  title: |
-    Onboard your first OT sensor to Microsoft Defender for IoT
+  title: Onboard your first OT sensor to Microsoft Defender for IoT
   description: "Learn how to onboard an OT sensor as part of the deployment of Microsoft Defender for IoT to monitor your OT network."
-  ms.date: 12/4/2023
-  author: cwatson-cat
-  ms.author: cwatson
+  ms.date: 02/21/2024
+  author: limwainstein
+  ms.author: lwainstein
   ms.topic: module-standard-task-based
   ms.service: defender-for-iot
 title: 
@@ -21,7 +20,7 @@ prerequisites: |
   -	A Defender for IoT license with an [OT plan](/azure/defender-for-iot/organizations/getting-started)
   - Knowledge of deployment planning concepts for Defender for IoT, such as sites and zones OT sensor parameters
   - Details of the specific site and zone needed to assign to the sensor 
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/defender-for-iot/defender-iot-onboard-sensor.svg
 levels: 
   - intermediate
 roles:

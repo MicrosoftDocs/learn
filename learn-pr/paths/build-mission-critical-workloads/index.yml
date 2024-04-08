@@ -21,7 +21,7 @@ products:
 - azure
 subjects:
 - site-reliability-engineering
-- workloads
+- infrastructure
 - solution-design
 modules:
 - learn.azure-mission-critical

@@ -2,14 +2,14 @@ Microsoft Defender XDR is a unified pre- and post-breach enterprise defense suit
 
 Here's a list of the different Microsoft Defender XDR products and solutions that Microsoft Defender XDR coordinates with:
 
--   [**Microsoft Defender for Endpoint**](https://learn.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide)
--   [**Microsoft Defender for Office 365**](https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview?view=o365-worldwide)
--   [**Microsoft Defender for Identity**](https://learn.microsoft.com/defender-for-identity/what-is)
--   [**Microsoft Defender for Cloud Apps**](https://learn.microsoft.com/defender-cloud-apps/what-is-defender-for-cloud-apps)
--   [**Microsoft Defender Vulnerability Management**](https://learn.microsoft.com/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management?view=o365-worldwide)
+-   [**Microsoft Defender for Endpoint**](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide)
+-   [**Microsoft Defender for Office 365**](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview?view=o365-worldwide)
+-   [**Microsoft Defender for Identity**](/defender-for-identity/what-is)
+-   [**Microsoft Defender for Cloud Apps**](/defender-cloud-apps/what-is-defender-for-cloud-apps)
+-   [**Microsoft Defender Vulnerability Management**](/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management?view=o365-worldwide)
 -   [**Microsoft Entra ID Protection**](/azure/active-directory/identity-protection/overview-identity-protection)
--   [**Microsoft Data Loss Prevention**](https://learn.microsoft.com/microsoft-365/compliance/dlp-learn-about-dlp)
--   [**App Governance**](https://learn.microsoft.com/defender-cloud-apps/app-governance-manage-app-governance)
+-   [**Microsoft Data Loss Prevention**](/microsoft-365/compliance/dlp-learn-about-dlp)
+-   [**App Governance**](/defender-cloud-apps/app-governance-manage-app-governance)
 
 ## Microsoft Defender XDR interactive guide
 
@@ -23,7 +23,7 @@ Microsoft Defender XDR services protect:
 
 -   **Endpoints with Defender for Endpoint** - Defender for Endpoint is a unified endpoint platform for preventative protection, post-breach detection, automated investigation, and response.
 -   **Assets with Defender Vulnerability Management** - Microsoft Defender Vulnerability Management delivers continuous asset visibility, intelligent risk-based assessments, and built-in remediation tools to help your security and IT teams prioritize and address critical vulnerabilities and misconfigurations across your organization.
--   **Email and collaboration with Defender for Office 365** - Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs) and collaboration tools.
+-   **Email and collaboration with Defender for Office 365** - Defender for Collaboration safeguards your organization against malicious threats posed by email messages, links (URLs) and collaboration tools.
 -   **Identities with Defender for Identity and Microsoft Entra ID Protection** - Microsoft Defender for Identity is a cloud-based security solution that leverages your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Microsoft Entra ID Protection uses the learnings Microsoft has acquired from their position in organizations with Microsoft Entra ID, the consumer space with Microsoft Accounts, and in gaming with Xbox to protect your users.
 -   **Applications with Microsoft Defender for Cloud Apps** - Microsoft Defender for Cloud Apps is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
 

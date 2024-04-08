@@ -9,6 +9,7 @@ metadata:
   author: wwlpublish
   ms.author: berryivor
   ms.topic: unit
+  ms.custom: devx-track-python
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

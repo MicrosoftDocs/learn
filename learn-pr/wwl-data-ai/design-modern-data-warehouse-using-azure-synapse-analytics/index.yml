@@ -6,7 +6,7 @@ metadata:
   ms.date: 08/15/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: synapse-analytics
   ms.custom:
     - build-2023
@@ -33,7 +33,7 @@ roles:
 products:
 - azure-synapse-analytics
 subjects:
-- data-warehousing
+- data-storage
 units:
 - learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.introduction
 - learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.describe

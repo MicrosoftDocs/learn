@@ -8,7 +8,7 @@ The main takeaways from this module are:
 - Microsoft Entra ID provides benefits such as enhanced security, consistent user experience, reduced costs, and improved productivity. 
 - Microsoft Entra ID consists of several key components and concepts, including identities, accounts, tenants, and subscriptions. 
 - Microsoft Entra ID provides a cloud based alternative to Active Directory Domain Services (AD DS). 
-- Microsoft Entra ID comes in four editions, each offering different features and capabilities.
+- Microsoft Entra ID comes in different editions, each edition has different features and capabilities.
 - Self-service password reset gives users the ability to bypass the helpdesk and reset their own passwords.
 
 ## Learn more with Azure documentation

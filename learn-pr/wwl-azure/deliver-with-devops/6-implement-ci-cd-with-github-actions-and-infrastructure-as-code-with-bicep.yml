@@ -8,6 +8,7 @@ metadata:
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
+  ms.custom: devx-track-bicep
 durationInMinutes: 40
 content: |
   [!include[](includes/6-implement-ci-cd-with-github-actions-and-infrastructure-as-code-with-bicep.md)]

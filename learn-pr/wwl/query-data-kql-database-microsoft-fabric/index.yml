@@ -6,7 +6,7 @@ metadata:
   ms.date: 11/17/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure
 title: Query data in a KQL database in Microsoft Fabric
 summary: This tutorial provides a brief introduction to KQL (Kusto Query Language) queries using Querysets and the major differences between KQL and T-SQL when using Querysets.

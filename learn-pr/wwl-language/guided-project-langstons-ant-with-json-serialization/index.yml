@@ -3,10 +3,12 @@ uid: learn.wwl.guided-project-langstons-ant-with-json-serialization
 metadata:
   title: Guided project - Langstons ant with JSON serialization
   description: "This is a guided project that walks you through the steps to implement JSON serialization to save and load Langston's ant simulation states."
-  ms.date: 02/27/2024
+  ms.date: 03/12/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: dotnet-csharp
   ms.devlang: csharp
   ai-usage: human-only
@@ -25,6 +27,7 @@ prerequisites: |
   - Familiarity with classes, abstract classes, and inheritance.
   - Familiarity with JSON and serialization.
 iconUrl: /training/achievements/generic-trophy.svg
+hidden: true
 levels:
 - beginner
 roles:

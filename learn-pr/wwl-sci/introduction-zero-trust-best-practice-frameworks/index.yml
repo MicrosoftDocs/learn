@@ -3,15 +3,15 @@ uid: learn.wwl.introduction-zero-trust-best-practice-frameworks
 metadata:
   title: Introduction to Zero Trust and best practice frameworks
   description: "You learn what best practices are and how cybersecurity architects use them as well as some key best practice frameworks for Microsoft cybersecurity capabilities. You also learn about the concept of Zero Trust, and how to get started with Zero Trust in an organization."
-  ms.date: 04/05/2023
+  ms.date: 03/04/2024
   author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: module
-  ms.service: azure
+  ms.service: security
+  ai-usage: ai-assisted
 title: Introduction to Zero Trust and best practice frameworks
 summary: |
   You learn what best practices are and how cybersecurity architects use them as well as some key best practice frameworks for Microsoft cybersecurity capabilities. You also learn about the concept of Zero Trust, and how to get started with Zero Trust in an organization.
-  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   By the end of this module, you'll be able to:
     - Understand how to use best practices as a cybersecurity architect.

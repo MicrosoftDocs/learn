@@ -2,11 +2,12 @@
 uid: learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics
 metadata:
   title: Manage and monitor data warehouse activities in Azure Synapse Analytics
-  description: "Manage and monitor data warehouse activities in Azure Synapse Analytics"
+  description: Manage and monitor data warehouse activities in Azure Synapse Analytics
   ms.date: 06/12/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: azure
 title: Manage and monitor data warehouse activities in Azure Synapse Analytics
 summary: Learn how to manage and monitor Azure Synapse Analytics.
 abstract: |
@@ -26,7 +27,7 @@ roles:
 products:
 - azure-synapse-analytics
 subjects:
-- data-warehousing
+- data-storage
 units:
 - learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics.introduction
 - learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics.scale-compute-resources

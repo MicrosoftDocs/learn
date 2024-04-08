@@ -2,15 +2,16 @@
 uid: learn-wwl.query-data-warehouse-microsoft-fabric
 metadata:
   title: Query a data warehouse in Microsoft Fabric
-  description: "Learn how to query a data warehouse in Microsoft Fabric using different tools."
+  description: Learn how to query a data warehouse in Microsoft Fabric using different tools.
   ms.date: 12/19/2023
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: module
   ms.custom:
-    - build-2023
-    - build-2023-dataai
-    - build-2023-fabric 
+  - build-2023
+  - build-2023-dataai
+  - build-2023-fabric
+  ms.service: azure
 title: Query a data warehouse in Microsoft Fabric
 summary: Data warehouse in Microsoft Fabric is a comprehensive platform for data and analytics, featuring advanced query processing and full transactional T-SQL capabilities for easy data management and analysis.
 abstract: |
@@ -29,7 +30,7 @@ roles:
 products:
 - fabric
 subjects:
-- data-science
+- data-management
 - machine-learning
 units:
 - learn-wwl.query-data-warehouse-microsoft-fabric.introduction

@@ -6,7 +6,7 @@ metadata:
   ms.date: 12/06/2022
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
   ms.devlang: rust
 title: Implement generic types and traits
@@ -29,8 +29,6 @@ roles:
 - student
 products:
 - azure
-subjects:
-- development-tools
 units:
 - learn.language.rust-generic-types-traits.0-introduction
 - learn.language.rust-generic-types-traits.1-what-are-generic-data-types

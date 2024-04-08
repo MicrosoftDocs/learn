@@ -29,7 +29,7 @@ roles:
 products:
 - windows-server
 subjects:
-- container
+- containers
 units:
 - learn.wwl.orchestrate-containers-windows-server-using-kubernetes.introduction
 - learn.wwl.orchestrate-containers-windows-server-using-kubernetes.define-orchestration

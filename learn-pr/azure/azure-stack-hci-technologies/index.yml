@@ -36,7 +36,7 @@ products:
 - azure-stack-hci
 - windows-server
 subjects:
-- data-warehousing
+- data-storage
 units:
 - learn.azure.azure-stack-hci-technologies.1-introduction
 - learn.azure.azure-stack-hci-technologies.2-hyper-v

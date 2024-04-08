@@ -29,20 +29,20 @@ Each VIS consists of:
 - A database instance.
 - One or more SAP Application Server instances.
 
-:::image type="content" source="../media/virtual-instance-sap.png" alt-text="Diagram of a Virtual Instance for S A P solutions containing an S A P system identifier with A S C S, Application Server and Database instances.":::
+:::image type="content" source="../media/virtual-instance-sap.png" alt-text="Diagram showing a Virtual Instance for S A P solutions containing an S A P system identifier with A S C S, Application Server and Database instances.":::
 
-Inside the VIS, the SID is the parent resource. Your VIS resource is named after the SID of your SAP system. Any ASCS, Application Server, or database instances are child resources of the SID. The child resources are associated with one or more VM resources outside of the VIS. A standalone system has all three instances mapped to a single VM. A distributed system has one ASCS and one Database instance, with each mapped to a VM. High Availability (HA) deployments have the ASCS and Database instances mapped to multiple VMs to enable HA. A distributed or HA type SAP system can have multiple Application Server instances linked to their respective VMs.
+Inside the VIS, the SID is the parent resource. Your VIS resource is named after the SID of your SAP system. Any ASCS, Application Server, or database instances are child resources of the SID. The child resources are associated with one or more virtual machine resources outside of the VIS. A standalone system has all three instances mapped to a single virtual machine. A distributed system has one ASCS and one Database instance, with each mapped to a virtual machine. High Availability (HA) deployments have the ASCS and Database instances mapped to multiple virtual machines to enable HA. A distributed or HA type SAP system can have multiple Application Server instances linked to their respective virtual machines.
 
 ## What can you do with Azure Center for SAP solutions?
 
 After you create a VIS, you can:
 
 - See an overview of the entire SAP system, including the different parts of the VIS.
-- View the SAP system metadata. For example, properties of ASCS, database, and Application Server instances; properties of SAP environment details; and properties of associated VM resources.
+- View the SAP system metadata. For example, properties of ASCS, database, and Application Server instances; properties of SAP environment details; and properties of associated virtual machine resources.
 - Get the latest status and health check for your SAP system.
 - Start and stop the SAP application tier.
 - Get quality checks and insights about your SAP system.
-- Monitor your Azure infrastructure metrics for your SAP system resources. For example, the CPU percentage used for ASCS and Application Server VMs, or disk input/output operations per second (IOPS).
+- Monitor your Azure infrastructure metrics for your SAP system resources. For example, the CPU percentage used for ASCS and Application Server virtual machines, or disk input/output operations per second (IOPS).
 - Analyze the cost of running your SAP System on Azure.
 
 Azure Center for SAP solutions (ACSS) simplifies the deployment and management of SAP workloads on Azure, providing a unified experience for creating and running SAP systems as a top-level workload on Azure.

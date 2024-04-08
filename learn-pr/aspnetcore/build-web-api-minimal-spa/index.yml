@@ -8,7 +8,7 @@ metadata:
   ms.author: chnoring
   ms.manager: markl
   ms.custom: team=nextgen
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: aspnet-core
 title: Create a full stack application by using React and minimal API for ASP.NET Core
 summary: Learn how to create a full stack application by using React and minimal API for ASP.NET Core.
@@ -32,8 +32,6 @@ prerequisites: |
   - GitHub account for development in browser.
   - Visual Studio Code for local development.
   - Working knowledge of the web, especially on request and responses in HTTP.
-subjects:
-- development-tools
 units:
   - learn.aspnetcore.build-web-api-minimal-spa.introduction
   - learn.aspnetcore.build-web-api-minimal-spa.design-front-end

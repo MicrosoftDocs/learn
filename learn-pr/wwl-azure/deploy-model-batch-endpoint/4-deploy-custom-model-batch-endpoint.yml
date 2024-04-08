@@ -7,7 +7,7 @@ metadata:
   ms.date: 09/22/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 9
 content: |
   [!include[](includes/4-deploy-custom-model-batch-endpoint.md)]

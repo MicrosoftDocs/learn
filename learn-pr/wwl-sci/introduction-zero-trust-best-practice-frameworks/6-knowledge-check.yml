@@ -28,7 +28,6 @@ durationInMinutes: 3
 ###########################################################################
 content: |
 quiz:
-
   questions:
   - content: "What is the core principle of Zero Trust security?"
     choices:

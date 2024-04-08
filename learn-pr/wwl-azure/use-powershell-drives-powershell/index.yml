@@ -2,11 +2,12 @@
 uid: learn.wwl.use-powershell-drives-powershell
 metadata:
   title: Use PowerShell drives in PowerShell
-  description: "This module explains how to work with PowerShell drives."
+  description: This module explains how to work with PowerShell drives.
   ms.date: 09/23/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: powershell
 title: Use PowerShell drives in PowerShell
 summary: This module explains how to work with PowerShell drives.
 abstract: |
@@ -39,7 +40,6 @@ products:
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

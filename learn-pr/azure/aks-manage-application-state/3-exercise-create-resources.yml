@@ -12,8 +12,9 @@ metadata:
     - build-2023-dataai
     - devx-track-azurecli
 title: Host a new database using Azure Cosmos DB
-sandbox: true
-interactive: bash
+sandbox: false
+# sandbox: true
+# interactive: bash
 durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-create-resources.md)]

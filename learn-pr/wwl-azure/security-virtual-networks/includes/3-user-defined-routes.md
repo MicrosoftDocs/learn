@@ -32,14 +32,34 @@ To use this feature, specify a Service Tag name for the address prefix parameter
 
 **Azure PowerShell**``
 
-`$param = @{`
+```powershell
+$param = @{
 
-`Name = 'StorageRoute' AddressPrefix = 'Storage' NextHopType = 'VirtualAppliance' NextHopIpAddress = '10.0.100.4' } New-AzRouteConfig @param`
+```
+
+```powershell
+ Name = 'StorageRoute'
+AddressPrefix = 'Storage'
+NextHopType = 'VirtualAppliance'
+NextHopIpAddress = '10.0.100.4'
+}
+New-AzRouteConfig @param
+```
 
 The same command for CLI is as follows:
 
 **Azure CLI**
 
-`az network route-table route create \`
+```azurecli
+az network route-table route create \
 
-`--resource-group MyResourceGroup \ --route-table-name MyRouteTable \ --name StorageRoute \ --address-prefix Storage \ --next-hop-type VirtualAppliance \ --next-hop-ip-address 10.0.100.4`
+```
+
+```azurecli
+ --resource-group MyResourceGroup \
+--route-table-name MyRouteTable \
+--name StorageRoute \
+--address-prefix Storage \
+--next-hop-type VirtualAppliance \
+--next-hop-ip-address 10.0.100.4
+```

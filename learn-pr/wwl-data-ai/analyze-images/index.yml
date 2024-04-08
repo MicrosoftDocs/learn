@@ -3,7 +3,7 @@ uid: learn.wwl.analyze-images
 metadata:
   title: Analyze images
   description: "Analyze images"
-  ms.service: cognitive-services
+  ms.service: azure-ai-services
   ms.date: 02/05/2024
   author: wwlpublish
   ms.author: berryivor

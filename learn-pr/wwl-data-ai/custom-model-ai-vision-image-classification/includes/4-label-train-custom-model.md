@@ -8,7 +8,7 @@ In your dataset within Vision Studio, create a new Azure Machine Learning Data L
 
 ![Screenshot of a new dataset in Vision Studio custom model project.](../media/new-dataset.png)
 
-In Azure Machine Learning Data Labeling, you can add categories for your images or objects (such as apple, orange, banana). Once you have categories, start your project and go to the labeling tab. You need to label 3-5 images per category.
+Once your project has been created, selecting that button will take you to Azure Machine Learning Studio and open up the labeling project. In Azure Machine Learning Data Labeling, you can add categories for your images or objects (such as apple, orange, banana). Once you have categories, start your project and go to the labeling tab. You need to label 3-5 images per category.
 
 ![Screenshot of a labeling fruit in Azure Machine Learning Studio.](../media/aml-studio-data-labeling-apply-labels.png)
 

@@ -42,8 +42,6 @@ The product page needs to be updated to use the new configuration setting. Compl
         saleOn = await FeatureManager.IsEnabledAsync("SeasonalDiscount");
 
         // Simulate asynchronous loading to demonstrate streaming rendering
-        await Task.Delay(500);
-        imagePrefix = Configuration["ImagePrefix"];
         products = await ProductService.GetProducts();
 
         if (saleOn) {
@@ -71,15 +69,20 @@ The product page needs to be updated to display the discounted prices. Complete 
     </td>
     ```
 
-    The above code checks if the seasonal sale is enabled. If it is enabled, the original price is displayed with a strike-through and the discounted price is displayed below it. If the seasonal sale is not enabled, the original price is displayed.
+    The above code checks if the seasonal sale is enabled. If it's enabled, the original price is displayed with a strike-through and the discounted price is displayed below it. If the seasonal sale isn't enabled, the original price is displayed.
 
 ### Build the app
 
-1. Ensure you've saved all your changes, and are in the root directory. In the terminal, run the following commands:
+1. Ensure you've saved all your changes, and are in the **dotnet-feature-flags** directory. In the terminal, run the following command:
+
+    ```dotnetcli
+    dotnet publish /p:PublishProfile=DefaultContainer 
+    ```
+
+1. Run the app using docker:
 
     ```bash
-    docker-compose build
-    docker-compose up
+    docker compose up
     ```  
 
 ## Test the price discount feature
@@ -89,18 +92,22 @@ To verify the feature flag works as expected in a codespace, complete the follow
 1. Switch to the **PORTS** tab, then to the right of the local address for the **Front End** port, select the globe icon. The browser opens a new tab at the homepage.
 1. Select **Products**.
 
-If you are using Visual Studio Code locally, open **http://localhost:32000/products**.
+If you're using Visual Studio Code locally, open **http://localhost:32000/products**.
 
 :::image type="content" source="../media/discounted-prices.png" alt-text="A screenshot of the application showing discounted prices." border="true" lightbox="../media/discounted-prices.png":::
 
 To test the feature flag is controlling the seasonal sale, complete the following steps:
 
 1. In the Azure portal, navigate to the Azure App Configuration resource prefixed with **:::no-loc text="eshop-app-features":::**.
+
 1. In the **Operations** section, select **Feature manager**.
+
 1. Select the **SeasonalDiscount** enabled toggle to switch off this feature.
 
     :::image type="content" source="../media/disable-feature-flag.png" alt-text="A screenshot showing the Azure portal page for App Configuration. The SeasonalDiscount is disabled." border="true" lightbox="../media/disable-feature-flag.png":::
+
 1. In your browser, return to the application.
+
 1. Select the **Home** page, then the **Products** page.
 
     :::image type="content" source="../media/eshoplite-sales-closed.png" alt-text="A screenshot showing the eShopLite app without a sales banner." border="true" lightbox="../media/eshoplite-sales-closed.png":::

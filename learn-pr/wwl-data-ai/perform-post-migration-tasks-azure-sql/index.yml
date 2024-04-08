@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/14/2023
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure
 title: Perform post-migration tasks on Azure SQL
 summary: You'll explore different features and tools to help you maintain Azure SQL environments.

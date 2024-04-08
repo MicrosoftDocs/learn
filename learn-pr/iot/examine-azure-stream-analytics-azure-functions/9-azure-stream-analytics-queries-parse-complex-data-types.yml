@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-azure-stream-analytics-azure-functions.parse-complex-data-types-asa-queries
+title: Parse complex data types with Azure Stream Analytics queries
+metadata:
+  title: Parse complex data types with Azure Stream Analytics queries
+  description: This content is part of Examine Azure Stream Analytics and Azure Functions in Azure IoT Hub solutions.
+  ms.date: 03/13/2024
+  author: asergaz
+  ms.author: sergaz
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/9-azure-stream-analytics-queries-parse-complex-data-types.md)]

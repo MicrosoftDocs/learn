@@ -6,7 +6,7 @@ metadata:
   ms.date: 02/06/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure
 title: Use prebuilt Form Recognizer models
 summary: Learn what data you can analyze by choosing prebuilt Forms Analyzer models and how to deploy these models in a Form Analyzer solution.

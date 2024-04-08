@@ -11,10 +11,10 @@ Azure Files offers two performance tiers:
 
 There are three options for authorizing access to data objects in Azure Storage:
 
-- **Using Microsoft Entra ID** to authorize access to file shares and their content. At the time of authoring of this content, this option is available only when accessing Azure Files from Azure VMs joined to Microsoft Entra Domain Services-based domain.
+- **Using Microsoft Entra ID** to authorize access to file shares and their content. At the time of authoring of this content, this option is available only when accessing Azure Files from Azure Virtual Machines joined to Microsoft Entra Domain Services-based domain.
 - **Using your storage account keys** to authorize access to the entire content of the corresponding storage account.
 - **Using Shared Access Signatures** to grant controlled permissions to specific data objects or containers of objects for a specific amount of time in a target storage account.
 
 ## Optional demo
 
-- [Demonstration: Create and manage file shares and snapshots](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-create-manage-file-shares-snapshots.md)
+- [Demonstration: Create and manage file shares and snapshots](https://go.microsoft.com/fwlink/?linkid=2260472&clcid=0x409)

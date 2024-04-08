@@ -6,7 +6,7 @@ metadata:
   ms.date: 01/16/2024
   author: wwlpublish
   ms.author: serlingdavis
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure
 title: Configure and integrate a Log Analytics agent and workspace in Defender for Cloud
 summary: This module will guide you to configure and integrate a Log Analytics agent with a workspace in Defender for Cloud via the Azure portal, boosting security analysis.

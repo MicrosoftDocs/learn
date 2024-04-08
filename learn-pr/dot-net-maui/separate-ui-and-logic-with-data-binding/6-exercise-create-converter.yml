@@ -7,9 +7,10 @@ metadata:
   ms.date: 02/15/2024
   author: adegeo
   ms.author: adegeo
-  ms.topic: module-standard-task-based
+  ms.topic: unit
   ms.service: dotnet-mobile
   ms.subservice: dotnet-maui
+  ms.custom: devx-track-dotnet
 durationInMinutes: 10
 content: |
   [!include[](./includes/6-exercise-create-converter.md)]

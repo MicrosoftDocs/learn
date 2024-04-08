@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/09/2023
   author: garvct
   ms.author: cogarvey
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Troubleshoot tightly coupled HPC applications on HBv2, HC, and HB series virtual machines
 summary: Provide guidance on troubleshooting runtime failures and performance bottlenecks in tightly coupled HPC applications.
 abstract: |

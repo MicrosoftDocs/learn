@@ -30,7 +30,7 @@ roles:
 products: 
 - sql-server
 subjects:
-- database
+- databases
 units:
 - learn-sqlserver.introduction-upgrading-sql-server.1-introduction
 - learn-sqlserver.introduction-upgrading-sql-server.2-decide-upgrade-right-your-task
