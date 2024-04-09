@@ -113,7 +113,7 @@ Similar to SLES, a small Linux kernel model called *softdog* controls access to 
 
 You can use a shared disk as a shared block storage for an RHEL high availability cluster. Clustered applications running on RHEL highly available VMs access the same storage device on each server in a cluster through Global File System 2 (GFS2). Use Pacemaker for cluster management, Corosync for member communications, and STONITH for fencing and data integrity. 
 
-For detailed information about creating an RHEL cluster with shared disks, see the Red Hat Enterprise Linux documentation for either [RHEL 7.9](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/deploying_red_hat_enterprise_linux_7_on_public_cloud_platforms/configuring-rhel-high-availability-on-azure_cloud-content) or [RHEL 8.3+](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/deploying_rhel_8_on_microsoft_azure/index).
+For detailed information about creating an RHEL cluster with shared disks, see the Red Hat Enterprise Linux documentation for either [RHEL 7.9](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/deploying_red_hat_enterprise_linux_7_on_public_cloud_platforms/configuring-rhel-high-availability-on-azure_cloud-content) or [RHEL 8.3+](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/deploying_rhel_8_on_microsoft_azure/configuring-rhel-high-availability-on-azure_cloud-content-azure#azure-configuring-shared-block-storage_configuring-rhel-high-availability-on-azure).
 
 ### Use Azure shared disks on containers
 
