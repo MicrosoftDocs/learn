@@ -9,6 +9,6 @@ metadata:
   ms.author: sonialopez
   manager: tedhudek
   ms.topic: unit
-durationInMinutes: 7
+durationInMinutes: 12
 content: |
   [!include[](includes/5-explore-superposition-qsharp.md)]
