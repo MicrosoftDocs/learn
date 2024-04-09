@@ -11,4 +11,4 @@ Here are some key takeaways from this module:
 
 - Check out the [Quantum Katas](https://quantum.microsoft.com/experience/quantum-katas), hands-on tutorials that teach quantum computing concepts and the Q# programming language.
 - Go to [Azure Quantum website](https://quantum.microsoft.com/experience/quantum-coding) and try Copilot in Azure Quantum, a tool that helps you write Q# programs.
-- Explore the [Azure Quantum Development Kit documentation](https://learn.microsoft.com/azure/quantum/) to learn more about quantum computing and Q#.
+- Learn more about quantum computing and Q# in the [Azure Quantum Development Kit documentation](https://learn.microsoft.com/azure/quantum/).
