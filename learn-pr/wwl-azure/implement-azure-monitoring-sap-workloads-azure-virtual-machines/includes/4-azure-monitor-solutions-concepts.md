@@ -115,17 +115,17 @@ Important points about the architecture include:
 
 - The managed resource group, which is deployed automatically as part of the Azure Monitor for SAP solutions resource's deployment. Inside the managed resource group, resources like these help collect data:
 
-  - An [Azure Functions resource](/azure/azure-functions/functions-overview.md) hosts the monitoring code. This logic collects data from the source systems and transfers the data to the monitoring framework.
+  - An [Azure Functions resource](/azure/azure-functions/functions-overview) hosts the monitoring code. This logic collects data from the source systems and transfers the data to the monitoring framework.
 
-  - An [Azure Key Vault resource](/azure/key-vault/general/basic-concepts.md) holds the SAP HANA database credentials and stores information about providers.
+  - An [Azure Key Vault resource](/azure/key-vault/general/basic-concepts) holds the SAP HANA database credentials and stores information about providers.
 
-  - A [Log Analytics workspace](/azure/azure-monitor/logs/log-analytics-workspace-overview.md) is the destination for storing data. Optionally, you can choose to use an existing workspace in the same subscription as your Azure Monitor for SAP solutions resource at deployment.
+  - A [Log Analytics workspace](/azure/azure-monitor/logs/log-analytics-workspace-overview) is the destination for storing data. Optionally, you can choose to use an existing workspace in the same subscription as your Azure Monitor for SAP solutions resource at deployment.
 
-  - A [storage account](/azure/storage/common/storage-account-overview.md) is associated with the Azure Functions resource. It's used to manage triggers and executions of logging functions.
+  - A [storage account](/azure/storage/common/storage-account-overview) is associated with the Azure Functions resource. It's used to manage triggers and executions of logging functions.
 
-[Azure Monitor workbooks](/azure/azure-monitor/visualize/workbooks-overview.md) provide customizable visualization of the data in Log Analytics. To automatically refresh your workbooks or visualizations, pin the items to the Azure dashboard. The maximum refresh frequency is every 30 minutes.
+[Azure Monitor workbooks](/azure/azure-monitor/visualize/workbooks-overview) provide customizable visualization of the data in Log Analytics. To automatically refresh your workbooks or visualizations, pin the items to the Azure dashboard. The maximum refresh frequency is every 30 minutes.
 
-You can also use Kusto Query Language (KQL) to [run log queries](/azure/azure-monitor/logs/log-query-overview.md) against the raw tables inside the Log Analytics workspace.
+You can also use Kusto Query Language (KQL) to [run log queries](/azure/azure-monitor/logs/log-query-overview) against the raw tables inside the Log Analytics workspace.
 
 ## Monitoring requirements of Azure for SAP Workloads
 
