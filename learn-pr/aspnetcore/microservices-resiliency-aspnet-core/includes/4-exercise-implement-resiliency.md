@@ -14,11 +14,14 @@ To use a **codespace**, create a preconfigured GitHub Codespace with [this Codes
 
 GitHub takes several minutes to create and configure the codespace. When the process completes, you see the code files for the exercise. The code to use for the remainder of this module is in the **/dotnet-resiliency** directory.
 
-To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative) repository to your own GitHub account. Then:
+To use **Visual Studio Code**, clone the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative) repository to your local machine. Then:
 
-1. Make sure Docker is running. In a new Visual Studio Code window, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
-1. Search for and select **Dev Containers: Clone Repository in Container Volume**.
-1. Select your forked repository. Visual Studio Code creates your development container locally.
+1. Install any [system requiements](https://code.visualstudio.com/docs/devcontainers/containers) to run Dev Container in Visual Studio Code.
+1. Make sure Docker is running. 
+1. In a new Visual Studio Code window open the folder of the cloned repository
+1. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
+1. Search: **>Dev Containers: Rebuild and Reopen in Container**
+1. Select **eShopLite - dotnet-resiliency** from the drop down. Visual Studio Code creates your development container locally.
 
 ### Build and run the app
 
@@ -42,9 +45,9 @@ To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslear
 
 1. In the bottom panel, select to the **PORTS** tab, then in the Forwarded Address column of the table, select the **Open in Browser** icon for the **Front End (32000**) port. 
 
-    If you're running the app locally, open a browser window to view [http://localhost:32000/products](http://localhost:32000/products).
+    If you're running the app locally, open a browser window to view `http://localhost:32000/products`.
 
-1. The eShop app should be running. Select the **Products** menu item, you should see the list of products.
+2. The eShop app should be running. Select the **Products** menu item, you should see the list of products.
 
     :::image type="content" source="../media/4-eshop-app.png" alt-text="Screenshot showing the eShop app running in a browser.":::
 

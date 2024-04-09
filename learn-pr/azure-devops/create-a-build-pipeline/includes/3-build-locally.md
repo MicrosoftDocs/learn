@@ -24,10 +24,10 @@ Mara is going to do exactly that, and by following the procedures, you can do th
 
     :::image type="content" source="../media/3-agent-pools-read-and-manage.png" alt-text="Screenshot of selecting agent pool permissions for a personal access token.":::
 
-1. When you're done, copy the token and store it in a secure location. For your security, it isn't be shown again.
+1. When you're done, copy the token and store it in a secure location. For your security, it won't be shown again.
 
 > [!WARNING]
-> Treat and use a PAT like your password and keep it a secret.
+> Treat and use a PAT like your password and keep it secret.
 
 ### Create a fork
 
