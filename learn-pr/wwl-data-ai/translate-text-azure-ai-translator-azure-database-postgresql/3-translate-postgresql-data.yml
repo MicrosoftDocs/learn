@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql.translate-postgresql-data
+title: XXX
+metadata:
+  title: XXX
+  description: "XXX"
+  ms.date: 04/09/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-translate-postgresql-data.md)]

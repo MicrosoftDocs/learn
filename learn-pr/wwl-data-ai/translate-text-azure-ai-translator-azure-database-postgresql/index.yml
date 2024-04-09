@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql
+metadata:
+  title: Translate Text with Azure AI Translator and Azure Database for PostgreSQL
+  description: "Translate Text with Azure AI Translator and Azure Database for PostgreSQL"
+  ms.date: 04/09/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: module
+  ms.service: postgresql
+  ms.subservice: flexible-server
+  ai-usage: human-only
+title: Translate Text with Azure AI Translator and Azure Database for PostgreSQL
+summary: place-holder.
+abstract: place-holder.
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-database-postgresql
+- ai-services
+subjects:
+- artificial-intelligence
+- databases
+units:
+- learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql.introduction
+- learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql.azure-ai-translation
+- learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql.translate-postgresql-data
+- learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql.exercise-translate-text
+- learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql.knowledge-check
+- learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql.summary
+badge:
+  uid: learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql.badge
