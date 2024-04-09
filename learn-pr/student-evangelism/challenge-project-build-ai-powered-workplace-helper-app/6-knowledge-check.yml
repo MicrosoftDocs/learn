@@ -30,10 +30,10 @@ quiz:
       explanation: "Correct. You can use Copilot Studio to create many topics triggered by different inputs from the user. With Topics, you can create different options and flows of how the conversation progresses."
     - content: "Copilot Studio Generative AI"
       isCorrect: false
-      explanation: "Incorrect. Generative AI provides answers generated with AI from data, and it can't be known exactly what will be said in advance. Power Apps can implement a canvas app, in which you can use Copilot Studio that can use Topics."
+      explanation: "Incorrect. Generative AI provides answers generated with AI from data, and it can't be known exactly what will be said in advance."
     - content: "Power Apps"
       isCorrect: false
-      explanation: "Incorrect. Generative AI provides answers generated with AI from data, and it can't be known exactly what will be said in advance. Power Apps can implement a canvas app, in which you can use Copilot Studio that can use Topics."
+      explanation: "Incorrect. Power Apps can implement a canvas app, in which you can use Copilot Studio that can use Topics."
   - content: "To add a Generative AI node to your Copilot Studio topic flow, you should use which variable to access the question the user asked?"
     choices:
     - content: "System"
