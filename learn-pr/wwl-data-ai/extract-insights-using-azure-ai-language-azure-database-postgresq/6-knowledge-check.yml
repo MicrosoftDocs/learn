@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql.knowledge-check
+title: XXX
+metadata:
+  title: XXX
+  description: "XXX"
+  ms.date: 04/09/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+content: |
+  [!include[](includes/6-knowledge-check.md)]
