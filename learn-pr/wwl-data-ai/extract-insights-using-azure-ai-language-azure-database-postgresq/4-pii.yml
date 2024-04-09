@@ -8,5 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
+durationInMinutes: 1
 content: |
   [!include[](includes/4-pii.md)]
