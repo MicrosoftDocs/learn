@@ -1,12 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.exercise-perform-extractive-and-abstractive-summarization
-title: 'Exercise: Perform Extractive and Abstractive Summarization'
+title: XXX
 metadata:
-  title: 'Exercise: Perform Extractive and Abstractive Summarization'
-  description: "Exercise: Perform Extractive and Abstractive Summarization"
+  title: XXX
+  description: "XXX"
   ms.date: 04/09/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
+durationInMinutes: 1
 content: |
   [!include[](includes/3-exercise-perform-extractive-and-abstractive-summarization.md)]
