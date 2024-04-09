@@ -2,11 +2,12 @@
 uid: learn.wwl.implement-canary-releases-dark-launching
 metadata:
   title: Implement canary releases and dark launching
-  description: "Implement canary releases and dark launching"
+  description: Implement canary releases and dark launching
   ms.date: 03/02/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: module
+  ms.service: azure
 title: Implement canary releases and dark launching
 summary: This module describes deployment strategies around canary releases and dark launching and examines traffic managers.
 abstract: |
