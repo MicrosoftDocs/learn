@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure-netapp-files-with-vmware-solution.what-is-azure-netapp-files
+uid: learn.azure.azure-netapp-files-with-vmware-solution.why-azure-netapp-files-vmware-solution
 title: What is Azure NetApp Files?
 metadata:
   unitType: learning-content
   title: What is Azure NetApp Files?
-  description: "Introduction to using Azure NetApp Files with Azure VMware Solution"
+  description: "Why Azure NetApp Files for Azure VMware Solution?"
   ms.date: 03/09/2023
   author: b-ahibbard
   ms.author: anfdocs
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-what-is-azure-netapp-files.md)]
+  [!include[](includes/2-why-azure-netapp-files-vmware-solutions.md)]
