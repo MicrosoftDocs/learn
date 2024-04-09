@@ -31,7 +31,7 @@ quiz:
     choices:
     - content: "Analyzes both compiled languages and interpreted languages."
       isCorrect: false
-      explanation: "Incorrect. Compiled languages extraction works by monitoring the normal build process and interpreted languages. The extractor runs directly on the source code, so these two different approaches are not the first step for CodeQL when creating a database."
+      explanation: "Incorrect. Compiled languages extraction works by monitoring the normal build process and interpreted languages. The extractor runs directly on the source code, so these two different approaches aren't the first step for CodeQL when creating a database."
     - content: "Extracts a single relational representation of each source file."
       isCorrect: true
       explanation: "Correct. To create a database, CodeQL first extracts a single relational representation of each source file in the codebase."
@@ -42,13 +42,13 @@ quiz:
     choices:
     - content: "`codeql [command] [subcommand]`"
       isCorrect: true
-      explanation: "Correct. The CodeQL CLI includes commands to create and analyze CodeQL databases from the command line using this command"
+      explanation: "Correct. The CodeQL CLI includes commands to create and analyze CodeQL databases from the command line using this command."
     - content: "`codeql [subcommand] [command]`"
       isCorrect: false
-      explanation: "Incorrect. [subcommand] does not come before [command] to create and analyze a CodeQL database from the CLI "
+      explanation: "Incorrect. [subcommand] doesn't come before [command] to create and analyze a CodeQL database from the CLI."
     - content: "`[command] [subcommand] codeql`"
       isCorrect: false
-      explanation: "Incorrect. 'codeql' needs to appear to start the command"
+      explanation: "Incorrect. 'codeql' needs to appear to start the command."
   - content: "What is an extractor?"
     choices:
     - content: "A hierarchical representation of the code."
@@ -67,7 +67,7 @@ quiz:
       explanation: "Incorrect. The siblings are searched, not the parent directories."
     - content: "When manually prompted, looks in sibling directories for the files used in the database creation and analysis."
       isCorrect: false
-      explanation: "Incorrect. A manual prompt does not occur since this is automatic."
+      explanation: "Incorrect. A manual prompt doesn't occur since this is automatic."
     - content: "Automatically looks in all of its sibling directories for the files used in the database creation and analysis."
       isCorrect: true
       explanation: "Correct. The CLI's built-in search operations automatically look in all of its sibling directories for the files used in database creation and analysis."
@@ -75,7 +75,7 @@ quiz:
     choices:
     - content: "Error"
       isCorrect: true
-      explanation: "Correct. By default, only alerts with the severity level of Error or security severity level of Critical or High will cause a pull request check failure, and a check will still succeed with alerts of lower severities."
+      explanation: "Correct. By default, only alerts with the severity level of Error or security severity level of Critical or High causes a pull request check failure, and a check still succeeds with alerts of lower severities."
     - content: "Warning"
       isCorrect: false
       explanation: "Incorrect. `Warning` is a setting, not a severity level."

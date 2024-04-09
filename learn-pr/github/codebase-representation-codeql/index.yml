@@ -2,7 +2,7 @@
 uid: learn.codebase-representation-codeql
 metadata:
   title: "Identify security vulnerabilities in your codebase with CodeQL" # user input: module title for browser tab and search results
-  description: "Learn how CodeQL lets you to analyze the code in your GitHub repository and identify security vulnerabilities." # user input: a description for site search and SEO
+  description: "Learn how CodeQL lets you analyze the code in your GitHub repository and identify security vulnerabilities." # user input: a description for site search and SEO
   ms.date: 04/08/2024
   author: rmcmurray
   ms.author: robmcm

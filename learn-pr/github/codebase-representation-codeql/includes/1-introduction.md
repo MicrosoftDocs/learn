@@ -1,6 +1,6 @@
-Imagine that you're a developer with administrator permissions for a GitHub repository. You want to automate security checks. These steps help you analyze your releases for any vulnerabilities. Luckily, your organization purchased and enabled GitHub Advanced Security. Your advanced security license enables you to accomplish these tasks using CodeQL.
+Imagine that you're a developer with administrator permissions for a GitHub repository. You want to automate security checks. These steps help you analyze your releases for any vulnerabilities. Luckily, your organization purchased and enabled GitHub Advanced Security. Your advanced security license allows you to accomplish these tasks using CodeQL.
 
-CodeQL enables you to analyze the code in your GitHub repository and identify security vulnerabilities. CodeQL is available for public repositories and private repositories owned by your organization. CodeQL supports many languages for analysis including: C/C++, Java, Python, among others.
+CodeQL lets you analyze the code in your GitHub repository and identify security vulnerabilities. CodeQL is available for public repositories and private repositories owned by your organization. CodeQL supports many languages for analysis, including C/C++, Java, and Python.
 
 ## Learning objectives
 
