@@ -133,8 +133,8 @@ Publish the template spec by using this Azure CLI command in the Visual Studio C
    ```azurecli
    id=$(az ts show \
     --name ToyCosmosDBAccount \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --version 2.0 \
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+    --version "2.0" \
     --query "id")
    ```
 

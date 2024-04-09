@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Exercise - Access data from a Blazor component
   description: "Improve the Blazor app to access a database and share data through components."
-  ms.date: 8/13/2021
+  ms.date: 02/09/2023
   author: csharpfritz
   ms.author: jefritz
   ms.manager: markl

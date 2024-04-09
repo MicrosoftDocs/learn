@@ -4,7 +4,7 @@ uid: learn-windows.introducing-visual-studio.3-nuget
 metadata:
   title: Using NuGet to add functionality to your app
   description: Use the NuGet package manager to install new code and features.
-  ms.date: 08/23/2022
+  ms.date: 04/19/2023
   author: alvinashcraft
   ms.author: aashcraft
   manager: jmartens

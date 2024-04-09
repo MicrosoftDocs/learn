@@ -4,7 +4,7 @@ title: Time and series functions enhancements
 metadata:
   title: Time and series functions enhancements
   description: "With the introduction of new and improved time and series functions in SQL Server 2022, Microsoft tackles the challenges of efficiently working with dates, time periods, and generating value series."
-  ms.date: 5/5/2023
+  ms.date: 02/27/2024
   author: MScalopez
   ms.author: calopez
   ms.reviewer: vanto

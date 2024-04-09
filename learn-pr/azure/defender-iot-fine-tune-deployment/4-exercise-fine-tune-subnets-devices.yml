@@ -20,6 +20,7 @@ metadata:
 ### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
   ms.service: defender-for-iot
 
+
 durationInMinutes: 6
 
 content: |

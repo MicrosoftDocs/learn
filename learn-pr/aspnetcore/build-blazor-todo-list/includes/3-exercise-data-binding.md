@@ -1,4 +1,4 @@
-In this exercise, you'll use everything you learned so far to add a basic to-do list page to your Blazor app.
+In this exercise, you use everything you learned so far to add a basic to-do list page to your Blazor app.
 
 ## Create the to-do list page
 
@@ -58,11 +58,9 @@ The new to-do list page doesn't yet appear in the nav menu with the other existi
 
 ## Build a list of to-do items
 
-1. Create a new `TodoItem.cs` file at the root of the project with the following C# class.
+1. Create a new `TodoItem.cs` file at the root of the project (the same level as `Program.cs`) and add the following C# class to it.
 
     ```csharp
-    namespace BlazorApp;
-
     public class TodoItem
     {
         public string? Title { get; set; }
@@ -89,7 +87,7 @@ The new to-do list page doesn't yet appear in the nav menu with the other existi
     </ul>
     ```
 
-    You won't see anything rendered for the to-do list yet, because the list is empty. You need a way to add some to-do items.
+    You don't see anything rendered for the to-do list yet, because the list is empty. You need a way to add some to-do items.
 
 ## Add to-do items
 
@@ -118,7 +116,7 @@ Let's add some UI elements for adding to-do items to our list.
 
     ```razor
     <input @bind="newTodo" />
-    <button>Add todo</button>
+    <button @onclick="AddTodo">Add todo</button>
 
     @code {
         private List<TodoItem> todos = new();

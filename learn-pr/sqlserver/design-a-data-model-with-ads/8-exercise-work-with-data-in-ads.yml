@@ -4,7 +4,7 @@ title: Work with data in Azure Data Studio
 metadata:
   title: Work with data in Azure Data Studio
   description: "Use Azure Data Studio to create tables with data types, indexes, and constraints and link them with foreign keys and primary keys"
-  ms.date: 12/29/2022
+  ms.date: 03/05/2024
   author: JetterMcTedder
   ms.author: bspendolini
   ms.topic: unit

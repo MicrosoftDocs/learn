@@ -5,7 +5,7 @@ metadata:
   unitType: unit
   title: "Consume a REST service with HttpClient"
   description: "Learn how to connect to a REST web service and perform CRUD operations using HttpClient"
-  ms.date: 10/13/2023
+  ms.date: 10/31/2023
   author: codemillmatt 
   ms.author: masoucou
   ms.manager: markl

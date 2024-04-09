@@ -6,7 +6,7 @@ metadata:
   description: Learn how to create a custom JavaScript GitHub action and use it within a workflow.
   author: a-a-ron
   ms.author: aastewar
-  ms.date: 04/14/2021
+  ms.date: 07/24/2023
   ms.topic: unit
   ms.custom:
     - devx-track-js
