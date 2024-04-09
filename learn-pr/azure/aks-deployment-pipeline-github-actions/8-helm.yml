@@ -3,7 +3,7 @@ uid: learn.aks-deployment-pipeline-github-actions.8-helm
 metadata:
   title: Deploy with Helm
   description: Understand Helm, a Kubernetes packaging tool that helps you easily create and deploy AKS applications.
-  ms.date: 10/08/2020
+  ms.date: 01/08/2023
   author: nickomang
   ms.author: nickoman
   ms.topic: unit

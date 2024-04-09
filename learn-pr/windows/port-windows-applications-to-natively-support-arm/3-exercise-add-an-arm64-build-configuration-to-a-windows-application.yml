@@ -4,7 +4,7 @@ title: Exercise - Add an Arm64 build configuration to a Windows application
 metadata:
   title: Exercise - Add an Arm64 build configuration to a Windows application
   description: "Tutorial demonstrating the steps to add an Arm64 build to a Windows application."
-  ms.date: 5/6/2023
+  ms.date: 03/07/2024
   author: mattwojo
   ms.author: mattwoj
   ms.topic: unit

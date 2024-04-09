@@ -4,7 +4,7 @@ title: Optional Exercise - Access Azure Storage Metrics in Code
 metadata:
   title: Optional Exercise - Access Azure Storage Metrics in Code
   description: In this unit, you will write code that retrieves the value of a metric from Azure Monitor.
-  ms.date: 04/12/2019
+  ms.date: 08/29/2023
   author: normesta
   ms.author: normesta
   ms.topic: unit

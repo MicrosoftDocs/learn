@@ -6,7 +6,7 @@ metadata:
   description: In this exercise, you'll address a business requirement in your backup script by using Try and Catch blocks.
   author: softchris
   ms.author: chnoring
-  ms.date: 02/04/2020
+  ms.date: 02/04/2021
   ms.topic: unit
   ms.custom: team=nextgen
 azureSandbox: true
