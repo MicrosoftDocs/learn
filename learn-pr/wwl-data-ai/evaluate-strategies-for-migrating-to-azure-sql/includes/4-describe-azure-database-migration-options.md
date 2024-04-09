@@ -2,9 +2,23 @@ Many organizations are migrating their database platform to Azure SQL to reduce 
 
 There are several tools available to help with the migration process. This next section looks at some of the options and methods for migration.
 
-## Azure Migrate tool
+## Azure Database Migration Service
 
-This migration tool provides a centralized location to assess and migrate on-premises servers, infrastructure, applications, and data to Azure. It will provide discoverability and proper assessments of your servers regardless of whether they are physical or VMWare/Hyper-V virtual machines.
+The Azure Database Migration Service is designed to support a wide mix of different migration scenarios with different source and target databases, and both offline (one-time) and online (continuous data sync) migration scenarios.
+
+For online migrations, Azure Database Migration Service provides a highly resilient and self-healing migration service with reliable outcomes and near-zero downtime. Below are highlighted the main steps involved:
+
+1. Fully load your on-premises database to Azure Database. 
+2. Continuously syncs new database transactions to the Azure target. 
+3. Cut over to the target Azure service when prepared. You can stop the replication, and switch the connection strings in your application to the Azure Database.
+
+The Data Migration Service has a few prerequisites that are common across migration scenarios. You need to create a virtual network in Azure, and if your migration scenarios involve on-premises resources, you will need to create a VPN or ExpressRoute connection from your office to Azure. There are a number of network ports that are required for connectivity. Once the prerequisites are in place, the time to complete migration will depend on the data volume and rate of change in the databases in question.
+
+There are a number of traditional, more manual approaches to migrating databases to Azure including backup and restore, log shipping, replication, and adding an Availability Group replica in Azure. These solutions were not designed primarily for performing migrations, but they can be used for that purpose. The technique you use for physically migrating your data will depend on the amount of downtime you can sustain during the migration process.
+
+## Azure Migrate
+
+Azure Migrate provides a centralized location to assess and migrate on-premises servers, infrastructure, applications, and data to Azure. It will provide discoverability and proper assessments of your servers regardless of whether they are physical or VMWare/Hyper-V virtual machines.
 
 Azure Migrate will also help to ensure that you select the appropriate size of virtual machine so that workloads will have enough resources available. In addition, the tool will provide a cost estimation so that you can budget accordingly.
 
@@ -26,55 +40,21 @@ The MAP toolkit and Database Experimentation assistant can help you identify you
 
 One of the main benefits of the DMA is the ability to assess queries both from Extended Event trace files and SQL queries from an external application, for example T-SQL queries in the C# application code for your application. You can generate a full report using a C# source and upload the migration assessment to the DMA. The DMA mitigates the risk of moving to a newer version of SQL Server or to Azure SQL Database.
 
-## Azure Database Migration Service
+> [!NOTE]
+> While the Database Migration Assistant is a useful tool available, we recommend that you use the [Azure Database Migration Service](/azure/dms/dms-overview) for large migrations and enhanced overall experience, which is available as [Azure SQL Migration an extension in Azure Data Studio](/azure-data-studio/extensions/azure-sql-migration-extension), or via [Azure Portal](https://aka.ms/dmsazureportal), or through [Azure PowerShell and Azure CLI](/azure/dms/migration-dms-powershell-cli).
 
-The Azure Database Migration Service is designed to support a wide mix of different migration scenarios with different source and target databases, and both offline (one-time) and online (continuous data sync) migration scenarios.
+## Additional migration options supported
 
-For online migrations, Azure Database Migration Service provides a highly resilient and self-healing migration service with reliable outcomes and near-zero downtime. Below are highlighted the main steps involved:
+There are two modes of migration to Azure SQL Managed Instance: **online** and **offline**. The online mode has minimal or no downtime, while the offline mode experiences downtime during the migration process.
 
-1. Fully load your on-premises database to Azure Database. 
-2. Continuously syncs new database transactions to the Azure target. 
-3. Cut over to the target Azure service when prepared. You can stop the replication, and switch the connection strings in your application to the Azure Database.
+- [**Log Replay Service**](/azure/azure-sql/managed-instance/log-replay-service-overview?azure-portal=true). It's an online migration option to Azure SQL Managed Instance, and used when you need more control of your database migration project.
 
-The offline source and target pairs are shown in Table 2 below:
+- [**Azure SQL Migration extension for Azure Data Studio**](/sql/azure-data-studio/extensions/azure-sql-migration-extension?azure-portal=true). It's a tool that helps you prepare for migrating your SQL Server databases to Azure. It uses the latest version of Data Migration Services to assess your readiness for migration, recommend the best Azure resources for your needs, and execute the migration. It’s ideal for small to medium-sized databases and supports online migration to SQL Managed Instance.
 
-| **Target**| **Source** |
-| - |-|
-| **Azure SQL Database**| SQL Server |
-| | RDS SQL |
-| | Oracle |
-| **Azure SQL Managed Instance**| SQL Server |
-| | RDS SQL |
-| | Oracle |
-| **Azure SQL Virtual Machine**| SQL Server |
-| | Oracle |
-| **Azure Cosmos Database**| MongoDB |
-| **Azure Database for MySQL**| MySQL |
-| | RDS MySQL |
-| **Azure Database for PostgreSQL**| PostgreSQL |
-| | RDS PostgreSQL |
+- [**Managed Instance link.**](/azure/azure-sql/managed-instance/managed-instance-link-feature-overview?azure-portal=true). The Managed Instance link, using distributed availability groups, securely extends your data estate by replicating data almost instantly (online) between any hosted SQL Server and Azure SQL Managed Instance, and vice versa.
 
-The source and target pairs for online migration are shown in Table 3 below:
+- [**Native backup and restore**](/azure/azure-sql/managed-instance/restore-sample-database-quickstart?azure-portal=true). Backup and restore are a simple migration method favored by many SQL Server professionals. It's the easiest migration option for customers who can provide full database backups to Azure Storage.
 
-| **Target**| **Source** |
-| - | - |
-| **Azure SQL Database**| SQL Server |
-| | RDS SQL |
-| | Oracle |
-| **Azure SQL Managed Instance**| SQL Server |
-| | RDS SQL |
-| | Oracle |
-| **Azure SQL Virtual Machine**| SQL Server |
-| | Oracle |
-| **Azure Cosmos Database**| MongoDB |
-| **Azure Database for MySQL**| MySQL |
-| | RDS MySQL |
-| **Azure Database for PostgreSQL**| PostgreSQL |
-| | RDS PostgreSQL |
-| | Oracle |
-
-The Data Migration Service has a few prerequisites that are common across migration scenarios. You need to create a virtual network in Azure, and if your migration scenarios involve on-premises resources, you will need to create a VPN or ExpressRoute connection from your office to Azure. There are a number of network ports that are required for connectivity. Once the prerequisites are in place, the time to complete migration will depend on the data volume and rate of change in the databases in question.
-
-There are a number of traditional, more manual approaches to migrating databases to Azure including backup and restore, log shipping, replication, and adding an Availability Group replica in Azure. These solutions were not designed primarily for performing migrations, but they can be used for that purpose. The technique you use for physically migrating your data will depend on the amount of downtime you can sustain during the migration process.
+- [**Transactional replication**](/sql/relational-databases/replication/transactional/transactional-replication?azure-portal=true). Transactional replication is a way to move data between continuously connected database servers. It’s best to be used for online or offline migration of large and complex databases.
 
 Learn more about the [tools used to migrate SQL databases to Azure](/sql/tools/overview-sql-tools?#migration-and-other-tools).
