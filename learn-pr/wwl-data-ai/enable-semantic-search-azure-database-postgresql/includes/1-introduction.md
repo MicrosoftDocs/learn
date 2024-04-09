@@ -1,6 +1,6 @@
 Semantic search augments standard keyword search with semantic similarity. This means a query for "sunny" could match the text "bright natural light" even though there is no lexical overlap longer than one letter. Instead of character similarity, semantic search uses embedding vectors produced by artificial intelligence (AI) to measure query and document similarity. This provides more relevant search results.
 
-This learning path shows how to enable semantic search in Azure Database for PostgreSQL Flexible Server, and use Azure OpenAI to generate vector embeddings.
+This learning path shows how to enable semantic search in Azure Database for PostgreSQL Flexible Server, and use Azure OpenAI to generate vector embeddings. 
 
 DIAGRAM:
 
