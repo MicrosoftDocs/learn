@@ -1,4 +1,4 @@
-Now that you've extracted your code to a database, You can analyze it using CodeQL queries. GitHub experts, security researchers, and community contributors write and maintain the default CodeQL queries. You can also write your own queries.
+Now that you've extracted your code to a database, you can analyze it using CodeQL queries. GitHub experts, security researchers, and community contributors write and maintain the default CodeQL queries. You can also write your own queries.
 
 You can use CodeQL queries in code scanning analysis to find problems in your source code and to find potential security vulnerabilities. You can also write custom queries to identify problems for each language that you use in your source code.
 
@@ -111,7 +111,7 @@ Alternatively, you can run queries that don't meet the requirements for being in
 
 ### Use a SARIF file with categories
 
-CodeQL supports Static Analysis Results Interchange Format (SARIF) for sharing static analysis results. SARIF is designed to represent the output of a broad range of static analysis tools. You need to specify a category when using SARIF output for CodeQL analysis. Categories can distinguish multiple analyses performed on the same commit repository and on different languages or different parts of the code. However, SARIF files with the same category overwrite each other.
+CodeQL supports SARIF for sharing static analysis results. SARIF is designed to represent the output of a broad range of static analysis tools. You need to specify a category when using SARIF output for CodeQL analysis. Categories can distinguish multiple analyses performed on the same commit repository and on different languages or different parts of the code. However, SARIF files with the same category overwrite each other.
 
 Each SARIF output file can be scanned with CodeQL to analyze different languages within the same code when the values are consistent between the analysis runs.
 

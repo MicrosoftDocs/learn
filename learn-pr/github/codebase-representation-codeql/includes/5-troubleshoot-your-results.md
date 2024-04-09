@@ -24,7 +24,7 @@ Instead, you can enable automerge for your repository. This means that pull requ
 
 The following are best practices for optimizing your CodeQL queries:
 
-### Eliminate cartesian products
+### Eliminate Cartesian products
 
 Another issue that might affect performance is that you're receiving too many results. You can often determine the performance of a predicate by considering roughly how many results it has. One way of creating badly performing predicates is by using two variables without relating them in any way. Another is by only relating them using a negation. This leads to computing the Cartesian product between the sets of possible values for each variable. This potentially generates a huge table of results, which can occur if you don’t specify restrictions on your variables. The Cartesian product of two sets A and B, denoted A × B, is the set of all ordered pairs (a, b) where a is in A and b is in B.
 
@@ -38,13 +38,13 @@ predicate mayAccess(Method m, Field f) {
 }
 ```
 
-The predicate holds if `m` contains access to `f`. But, also conservatively assumes that methods without bodies (for example, native methods) might access *any* field. However, if `m` is a native method, the table computed by `mayAccess` contains a row `m, f` for all fields `f` in the codebase, making it potentially very large.
+The predicate holds if `m` contains access to `f`. But, also conservatively assumes that methods without bodies (for example, native methods) might access *any* field. However, if `m` is a native method, the table computed by `mayAccess` contains a row `m`, `f` for all fields `f` in the codebase, making it potentially very large.
 
 ### Use specific types
 
 *Types* provide an upper bound on the *size* of a relation. This helps the query optimizer be more effective, so it's good to use the most specific types possible.
 
-For example, `predicate *foo*(LoggingCall e)` is preferred over `predicate *foo*(Expr e)`.
+For example, `predicate foo(LoggingCall e)` is preferred over `predicate foo(Expr e)`.
 
 From the type context, the query optimizer deduces that some parts of the query are redundant and removes or *specializes* them.
 
