@@ -6,7 +6,7 @@ Let's look at some of the more common areas you'll typically use in the Azure po
 
    :::image type="content" source="../media/5-show-portal-icon.png" alt-text="Screenshot of the Show portal menu option in the Azure portal.":::
 
-   Selecting this icon expands the portal menu on the left-hand side of the screen.
+   Selecting this icon expands the portal menu.
 
    ![Screenshot of the portal menu option on the left-hand side of the portal.](../media/5-show-portal-menu.png)
 
@@ -124,7 +124,7 @@ The Azure Cloud Shell is available in the Sandbox environment that we're using f
 
 1. Select your name in the top right-hand corner of the portal.
 
-1. Select "..." then select **My permissions**.
+1. Select "..." and then select **My permissions**.
 
 1. Review the information that appears to see the role you've been assigned on the **Concierge Subscription**.
 

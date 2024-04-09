@@ -11,6 +11,6 @@ metadata:
   ms.custom:
     - devx-track-azurecli
     - devx-track-azurepowershell
-durationInMinutes: 5
+durationInMinutes: 4
 content: |
   [!include[](includes/2-azure-management.md)]

@@ -40,11 +40,11 @@ Select the **Cloud Shell** icon (>_) to create a new Azure Cloud Shell session. 
 
 ### Notifications
 
-Selecting the bell icon displays the **Notifications** pane. This pane lists the most recent actions that have been carried out, along with their status.
+Select the bell icon to display the **Notifications** pane. This pane gives you information about the most recent actions that have been carried out, along with their status.
 
 ### Settings
 
-Select the gear icon to change the Azure portal settings. In the tabs at the left, there are multiple options that let you change settings for:
+Select the gear icon to change the Azure portal settings. In the tabs at the left, there are multiple options that let you change settings such as:
 
 - Directories and subscription management
 - Inactivity sign out delay
@@ -61,7 +61,7 @@ Select the question mark icon to show the **Support + troubleshooting** pane. Th
 
 ### Feedback pane
 
-The **Feedback** icon on the top-right side of the screen opens a pane that lets you send feedback about Azure to Microsoft. You can decide whether or not to allow Microsoft to respond to your feedback by email.
+Select the **Feedback** icon to open a pane that lets you send feedback about Azure to Microsoft. You can decide whether or not to allow Microsoft to respond to your feedback by email.
 
 ### Profile settings
 
@@ -76,8 +76,6 @@ Select the "..." button on the right-hand side for options to:
 - View your bill
 - Submit an idea
 - Update your contact information
-
-If you select "..." and then **View my bill**, Azure takes you to the **Cost Management + Billing - Overview** page, which helps you analyze where Azure is generating costs.
 
 ### Azure Marketplace
 

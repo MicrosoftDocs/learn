@@ -48,4 +48,4 @@ The search box at the top of the **Create a resource** pane defaults to checking
 
 1. Select the **X** at the top right-hand corner to close the **Create a resource** pane.
 
-Many of the principles you have learned in this exercise apply throughout the Azure portal UI experience. In the next unit, you continue your journey in the Azure portal and configure other settings in Azure.
+Many of the principles you have learned in this exercise apply throughout the Azure portal experience. In the next unit, you continue your journey in the Azure portal and configure other settings in Azure.

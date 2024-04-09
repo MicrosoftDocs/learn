@@ -34,7 +34,7 @@ Let's create a new dashboard and add some tiles to it.
 
 1. Select the gray corner on the bottom right-hand side of the tile, and drag it up to resize the tile to about 3.5 squares vertically, keeping the horizontal size the same. When you finish resizing, the tile adjusts to the closest available size, **6 x 4**.
 
-1. From the Tile Gallery, drag the **Resource Groups** tile onto the workspace. Place it underneath the **All resources** tile.
+1. From the Tile Gallery, drag the **Resource groups** tile onto the workspace. Place it underneath the **All resources** tile.
 
 1. From the Tile Gallery, select the **Metrics chart** tile, and drag it onto the workspace. Place it to the right of the **All resources** tile.
 
@@ -44,7 +44,7 @@ Let's create a new dashboard and add some tiles to it.
     - Microsoft Entra quick tasks
     - Marketplace
 
-1. After you've added these tiles, select *Save**. The **Customer Dashboard** dashboard that you created appears as your current dashboard.
+1. After you've added these tiles, select **Save**. The **Customer Dashboard** dashboard that you created appears as your current dashboard.
 
 ## Clone a dashboard
 
