@@ -4,7 +4,7 @@ Azure NetApp Files is an enterprise-class, high-performance, fully managed NAS s
 
 Azure NetApp Files is designed to deliver the highest performance for even the most demanding Windows and Linux workloads. This performance is delivered by Azure NetApp Files using dedicated NetApp engineered platforms running NetApp's proprietary ONTAP operating system, which is optimized for extremely high storage throughput and availability.
 
-A single Azure NetApp Files volume can deliver up to 5,025 MiB/s of throughput at sub-millisecond latencies. Multiple volumes can be deployed to scale up performance as needed. By default, up to 8 Azure NetApp Files volumes can be attached to a single Azure VMware Solution (AVS) software-defined data center (SDDC). This limit can be increased to 256 via a support request.
+A single Azure NetApp Files volume can deliver up to 5,025 MiB/s of throughput at submillisecond latencies. Multiple volumes can be deployed to scale up performance as needed. By default, up to eight Azure NetApp Files volumes can be attached to a single Azure VMware Solution (AVS) software-defined data center (SDDC). This limit can be increased to 256 via a support request.
 
 ## Data management
 
@@ -28,11 +28,11 @@ The following diagram illustrates the snapshot process:
 
    [![Diagram showing changes captured with Snapshot2.](../media/2-single-file-snapshot-restore-three.png)](../media/2-single-file-snapshot-restore-three.png#lightbox)
 
-An Azure NetApp Files snapshot only manipulates block pointers, creating a "frozen," read-only view of a volume. By design snapshots cannot be modified, only deleted once they expire useful life on the system.
+An Azure NetApp Files snapshot only manipulates block pointers, creating a "frozen," read-only view of a volume. By design snapshots can't be modified, only deleted once they expire useful life on the system.
 
 Actual data blocks aren't copied, which leads to two efficiencies:
 
-- **Speed**: Creating a snapshot is near-instantaneous. No matter the volume size, creating a snapshot takes only a few seconds. Reverting a volume to a snapshot is also near-instantaneous, supporting fast data recovery in case of a corruption or malicious hijack event.
+- **Speed**: Creating a snapshot is near-instantaneous. No matter the volume size, creating a snapshot takes only a few seconds. Reverting a volume to a snapshot is also near-instantaneous, supporting fast data recovery if you experience corruption or a malicious hijack event.
 - **Space**: A snapshot consumes minimal storage space because it doesn't copy the data blocks of the entire volume. Two snapshots taken in sequence differ only by the blocks added or changed in the time interval between the two.
 You can create up to 255 snapshots per volume. Creating a snapshot doesn't impact volume performance. You can create and maintain snapshots in two ways:
 - **Manual**: Create on-demand snapshots by using the Azure portal, Azure CLI, Azure PowerShell, or Azure REST API.
@@ -48,6 +48,6 @@ You can create up to 255 snapshots per volume. Creating a snapshot doesn't impac
 
 Azure NetApp Files improves utilization of AVS resources, lowers total cost of ownership (TCO), and delivers advanced data management functionality.
 
-As business needs change, Azure NetApp Files storage can be scaled independently of AVS compute, optimizing TCO. Azure NetApp Files offloads I/O and memory from AVS hosts which can improve AVS performance and free up resources for other VMs.
+As business needs change, Azure NetApp Files storage can be scaled independently of AVS compute, optimizing TCO. Azure NetApp Files offloads I/O and memory from AVS hosts that can improve AVS performance and free up resources for other VMs.
 
-Azure NetApp Files delivers enterprise grade performance, availability and data management. Efficient snapshots and clones can rapidly create copies and protect data. Cross-zonal and cross-region replication enable integrated backup and disaster recovery for AVS VMs.
+Azure NetApp Files delivers enterprise grade performance, availability, and data management. Efficient snapshots and clones can rapidly create copies and protect data. Cross-zonal and cross-region replication enable integrated backup and disaster recovery for AVS VMs.
