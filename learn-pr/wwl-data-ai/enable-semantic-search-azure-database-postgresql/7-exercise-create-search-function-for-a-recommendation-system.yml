@@ -8,5 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
+durationInMinutes: 1
 content: |
   [!include[](includes/7-exercise-create-search-function-for-a-recommendation-system.md)]
