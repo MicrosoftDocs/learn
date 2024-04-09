@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.enable-semantic-search-azure-database-postgresql
+metadata:
+  title: Enable semantic search in Azure Database for PostgreSQL
+  description: "Enable semantic search in Azure Database for PostgreSQL"
+  ms.date: 04/09/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: module
+  ms.service: postgresql
+  ms.subservice: flexible-server
+  ai-usage: human-only
+title: Enable semantic search in Azure Database for PostgreSQL
+summary: place-holder.
+abstract: place-holder.
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-database-postgresql
+subjects:
+- artificial-intelligence
+- databases
+units:
+- learn.wwl.enable-semantic-search-azure-database-postgresql.introduction
+- learn.wwl.enable-semantic-search-azure-database-postgresql.understand-semantic-search
+- learn.wwl.enable-semantic-search-azure-database-postgresql.store-vectors-in-azure-database-for-postgresql-flexible-server
+- learn.wwl.enable-semantic-search-azure-database-postgresql.create-embeddings-with-the-azure_ai-extension
+- learn.wwl.enable-semantic-search-azure-database-postgresql.exercise-generate-vector-embeddings-with-azure-openai
+- learn.wwl.enable-semantic-search-azure-database-postgresql.explore-semantic-search-use-cases
+- learn.wwl.enable-semantic-search-azure-database-postgresql.exercise-create-search-function-for-a-recommendation-system
+- learn.wwl.enable-semantic-search-azure-database-postgresql.knowledge-check
+- learn.wwl.enable-semantic-search-azure-database-postgresql.summary
+badge:
+  uid: learn.wwl.enable-semantic-search-azure-database-postgresql.badge

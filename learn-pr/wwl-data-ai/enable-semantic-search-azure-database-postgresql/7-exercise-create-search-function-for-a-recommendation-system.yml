@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enable-semantic-search-azure-database-postgresql.exercise-create-search-function-for-a-recommendation-system
+title: XXX
+metadata:
+  title: XXX
+  description: "XXX"
+  ms.date: 04/09/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+content: |
+  [!include[](includes/7-exercise-create-search-function-for-a-recommendation-system.md)]
