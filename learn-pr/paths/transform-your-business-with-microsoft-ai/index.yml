@@ -3,7 +3,7 @@ uid: learn.wwl.transform-your-business-with-microsoft-ai
 metadata:
   title: Transform your business with Microsoft AI
   description: In this learning path, business leaders will find the knowledge and resources to adopt AI in their organizations. It explores planning, strategizing, and scaling AI projects in a responsible way.
-  ms.date: 04/08/2024
+  ms.date: 04/09/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: learning-path
@@ -13,6 +13,7 @@ prerequisites: |
   -   Basic understanding of business concepts.
 summary: |
   In this learning path, business leaders will find the knowledge and resources to adopt AI in their organizations. It explores planning, strategizing, and scaling AI projects in a responsible way.
+  
   **Related learning paths**
   - [Discover Microsoft AI for leaders in healthcare](/training/paths/discover-microsoft-ai-healthcare-professionals/)
   - [Discover Microsoft AI for leaders in finance](/training/paths/discover-microsoft-ai-financial-professionals/)
