@@ -1,6 +1,6 @@
 Data is now flowing from your sensor to Microsoft Defender for IoT. The Operational Technology (OT) monitoring software initially identifies the interfaces and device endpoints. The OT software builds a map of the devices in the system, the subnets they're connected to and gives security settings to each one.
 
-However, it's possible that some of these device settings might not be correctly identified, so you need to check each one. In some cases, you need to reassign the settings or location of the device in the Perdue levels by updating the subnet. The IP and subnet addresses should be available from your IT team or be listed in the planning document.<!-- should be / are available LW-->
+However, it's possible that some of these device settings might not be correctly identified, so you need to check each one. In some cases, you need to reassign the settings or location of the device in the Purdue levels by updating the subnet. The IP and subnet addresses should be available from your IT team or be listed in the planning document.<!-- should be / are available LW-->
 
 The OT sensor analyzes the subnets. A subnet is a group of devices or interfaces that have a specific purpose or are located in a specific area, for example all of the printers in the main offices, all of the lights in the manufacturing level, all heating systems in the administrative rooms. Each subnet is assigned its own IP address.
 OR
