@@ -1,4 +1,4 @@
-Recall that in the EDA simulation scenario, after we identify the throughput or IOPS requirements of the application, we can then decide the most optimal and cost-effective Azure NetApp Files service level. In this unit, we use the [Azure NetApp Files Performance Calculator](https://azure.github.io/azure-netapp-files/calc/) to achieve this goal.
+Recall that in the EDA simulation scenario, after we identify the throughput or IOPS requirements of the application, we can then decide the most optimal and cost-effective Azure NetApp Files service level. In this unit, we use the [Azure NetApp Files Performance Calculator](https://aka.ms/anfcalc) to achieve this goal.
 
 ## Performance considerations
 
@@ -16,7 +16,7 @@ Most importantly, we also need to consider the cost structure of different servi
 
 ### Azure NetApp Files Performance Calculator
 
-Use the [Azure NetApp Files Performance Calculator](https://cloud.netapp.com/azure-netapp-files/tco?hs_preview=tIKQbfoF-41214739590) to specify your throughput or IOPS requirements to help you choose the most cost-effective service level.
+Use the [Azure NetApp Files Performance Calculator](https://aka.ms/anfcalc) to specify your throughput or IOPS requirements to help you choose the most cost-effective service level.
 
 ## Throughput requirement example
 

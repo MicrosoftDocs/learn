@@ -1,4 +1,4 @@
-Choosing an Azure NetApp Files service level involves understanding the application and calculating the required bandwidth of your applications. Azure NetApp Files offers a [performance calculator](https://azure.github.io/azure-netapp-files/calc/) to aid in decision making.
+Choosing an Azure NetApp Files service level involves understanding the application and calculating the required bandwidth of your applications. Azure NetApp Files offers a [performance calculator](https://aka.ms/anfcalc) to aid in decision making.
 
 ## Storage hierarchy
 
