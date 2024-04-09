@@ -22,7 +22,7 @@ quiz:
       explanation: "Incorrect. Power Platform is a suite of products, including Copilot Studio and Power Apps. Power Apps allows us to incorporate an existing chatbot we created with Copilot Studio. Azure Open AI Service enables users to create custom AI solutions, which can be incorporated into Copilot Studio and many other things."
     - content: "Azure Open AI Service"
       isCorrect: false
-      explanation: "Incorrect. Power Platform is a suite of products, including Copilot Studio and Power Apps. Power Apps allows us to incorporate an existing chatbot we created with Copilot Studio. Azure Open AI Service enables users to create custom AI solutions, which can be incorporated into Copilot Studio and many other things."
+      explanation: "Incorrect. Azure Open AI Service enables users to create custom AI solutions, which can be incorporated into Copilot Studio and many other things."
   - content: "To create specific answers triggered by particular words or phrases, you should use which of the following?"
     choices:
     - content: "Copilot Studio Topics"
