@@ -22,7 +22,7 @@ To create a resource group in the Azure portal:
 
 1. Choose the region (location) for the resource group. Typically, you'll want a location that's close to you or close to the data you'll work with.
 
-:::image type="content" source="../media/2-create-resource-group.png" alt-text="Screenshot that shows how to create a resource group in the Azure portal.":::
+   :::image type="content" source="../media/2-create-resource-group.png" alt-text="Screenshot that shows how to create a resource group in the Azure portal.":::
 
 1. Select **Review + create**, then select **Create**.
 
