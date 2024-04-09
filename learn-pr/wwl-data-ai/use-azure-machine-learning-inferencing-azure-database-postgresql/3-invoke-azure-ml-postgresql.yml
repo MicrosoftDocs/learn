@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-azure-machine-learning-inferencing-azure-database-postgresql.invoke-azure-ml-postgresql
+title: Invoking Azure Machine Learning models
+metadata:
+  title: Invoking Azure Machine Learning models
+  description: "Invoking Azure Machine Learning models"
+  ms.date: 04/09/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-invoke-azure-ml-postgresql.md)]

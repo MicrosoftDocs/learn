@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-azure-machine-learning-inferencing-azure-database-postgresql.exercise-perform-inference-azure-ml
+title: Exercise-Translate Text
+metadata:
+  title: Exercise-Translate Text
+  description: "Exercise-Translate Text"
+  ms.date: 04/09/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-exercise-perform-inference-azure-ml.md)]
