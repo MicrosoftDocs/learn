@@ -12,7 +12,7 @@ The following resources should be created prior to deploying an Azure NetApp Fil
 
 The diagram below shows the logical connectivity between the AVS private cloud and the dedicated Azure NetApp Files VNet.
 
-:::image type="content" source="../media/3-deployment-diagram.pngg" alt-text="Diagram of storage sample deployment." lightbox="../media/3-deployment-diagram.png":::
+:::image type="content" source="../media/3-deployment-diagram.png" alt-text="Diagram of storage sample deployment." lightbox="../media/3-deployment-diagram.png":::
 
 ## Best practices
 
