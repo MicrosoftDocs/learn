@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn-wwl.perform-sentiment-analysis-opinion-mining-azure-database-postgresql
+metadata:
+  title: Perform sentiment analysis and opinion mining with Azure Database for PostgreSQL
+  description: "Perform sentiment analysis and opinion mining with Azure Database for PostgreSQL"
+  ms.date: 04/09/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: module
+  ms.service: postgresql
+  ms.subservice: flexible-server
+  ai-usage: human-only
+title: Perform sentiment analysis and opinion mining with Azure Database for PostgreSQL
+summary: place-holder.
+abstract: place-holder.
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-database-postgresql
+subjects:
+- artificial-intelligence
+- databases
+units:
+- learn-wwl.perform-sentiment-analysis-opinion-mining-azure-database-postgresql.introduction
+- learn-wwl.perform-sentiment-analysis-opinion-mining-azure-database-postgresql.explore-sentiment-analysis
+- learn-wwl.perform-sentiment-analysis-opinion-mining-azure-database-postgresql.describe-opinion-mining
+- learn-wwl.perform-sentiment-analysis-opinion-mining-azure-database-postgresql.exercise-analyze-sentiment
+- learn-wwl.perform-sentiment-analysis-opinion-mining-azure-database-postgresql.knowledge-check
+- learn-wwl.perform-sentiment-analysis-opinion-mining-azure-database-postgresql.summary
+badge:
+  uid: learn-wwl.perform-sentiment-analysis-opinion-mining-azure-database-postgresql.badge
