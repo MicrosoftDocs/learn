@@ -1,4 +1,4 @@
-Azure AI Language is a cloud-based Natural Language Processing (NLP) service. Use this service to understand and analyze text with features such as: key phrase extraction, entity recognition, personally identifiable information (PII) detection, and more. Learn more here: [What is Azure AI Language?](/azure/ai-services/language-service/overview)
+Azure AI Language is a cloud-based Natural Language Processing (NLP) service. Use this service to understand and analyze text with features such as: key phrase extraction, entity recognition, personally identifiable information (PII) detection, and more. Learn more here: [What is Azure AI Language?](/azure/ai-services/language-service/overview).
 
 The Azure Database for PostgreSQL flexible server `azure_ai` extension integrates the database with the Azure AI Language services. It provides user-defined functions to access the language APIs within SQL. This allows you to extract insights from text directly from the database, without writing natural language processing code in client applications.
 
