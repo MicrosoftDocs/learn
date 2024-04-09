@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/09/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which parameter controls the number of sentences returned in document extractive summarization using the `azure_ai` extension's `summarize_extractive()` function?"
+    choices:
+    - content: "sentenceCount"
+      isCorrect: true
+      explanation: "Correct. The sentenceCount parameter guides how many sentences are returned in the extractive summarization process. The default value is 3, and the range is from 1 to 20."
+    - content: "summaryLength"
+      isCorrect: false
+      explanation: "Incorrect. This parameter does not exist on the `summarize_extractive()` function."
+    - content: "maxSentences"
+      isCorrect: false
+      explanation: "Incorrect. This parameter does not exist on the `summarize_extractive()` function."
+  - content: "What are the two summarization techniques accessible through the `azure_ai` extension for Azure Database for PostgreSQL flexible server?"
+    choices:
+    - content: "Abstractive and query-focused summarization"
+      isCorrect: false
+      explanation: "Incorrect. The Azure AI extension for PostgreSQL does not support the query-focused summarization technique. This requires the use for Azure OpenAI."
+    - content: "Abstractive and extractive summarization"
+      isCorrect: true
+      explanation: "Correct. The Azure AI extension for PosgreSQL supports both abstractive and extractive summarization techniques."
+    - content: "Extractive and query-focused summarization"
+      isCorrect: false
+      explanation: "Incorrect. The Azure AI extension for PostgreSQL does not support the query-focused summarization technique. This requires the use for Azure OpenAI."
+  - content: "What is the primary purpose of query-focused summarization in Azure OpenAI-powered language models?"
+    choices:
+    - content: "To generate concise summaries of call center conversations"
+      isCorrect: false
+      explanation: "Incorrect. Call center conversation summarization is a separate use case, not the primary purpose of query-focused summarization."
+    - content: "To refine the query mechanism using semantic search methods"
+      isCorrect: false
+      explanation: "Incorrect. While semantic search methods are used, the primary goal is to provide relevant content to user queries, not specifically to refine the query mechanism."
+    - content: "To provide relevant content based on user queries"
+      isCorrect: true
+      explanation: "Correct. Query-focused summarization aims to return relevant content based on user queries. It refines the query mechanism by using semantic search methods to find relevant information."

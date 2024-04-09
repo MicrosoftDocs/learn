@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.understand-summarization-techniques
+title: Understand Summarization Techniques
+metadata:
+  title: Understand Summarization Techniques
+  description: "Understand Summarization Techniques"
+  ms.date: 04/09/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-understand-summarization-techniques.md)]

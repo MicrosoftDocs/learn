@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql
+metadata:
+  title: Summarize data with Azure AI Services and Azure database for PostgreSQL
+  description: "Summarize data with Azure AI Services and Azure database for PostgreSQL"
+  ms.date: 04/09/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: module
+  ms.service: postgresql
+  ms.subservice: flexible-server
+  ai-usage: human-only
+title: Summarize data with Azure AI Services and Azure database for PostgreSQL
+summary: place-holder.
+abstract: place-holder.
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-database-postgresql
+- ai-services
+subjects:
+- artificial-intelligence
+- databases
+units:
+- learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.introduction
+- learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.understand-summarization-techniques
+- learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.exercise-perform-extractive-and-abstractive-summarization
+- learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.explore-prompt-engineering-for-summarization
+- learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.exercise-execute-query-focused-summarization
+- learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.knowledge-check
+- learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.summary
+badge:
+  uid: learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.badge

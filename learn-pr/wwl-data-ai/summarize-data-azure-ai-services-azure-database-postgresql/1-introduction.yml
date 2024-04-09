@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.introduction
+title: XXX
+metadata:
+  title: XXX
+  description: "XXX"
+  ms.date: 04/09/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+content: |
+  [!include[](includes/1-introduction.md)]
