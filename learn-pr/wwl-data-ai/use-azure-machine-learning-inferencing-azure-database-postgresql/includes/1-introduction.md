@@ -1,6 +1,6 @@
 
 
-The Azure Extension for Azure Database for PostgreSQL allows you to call custom-built Azure Machine Learning service deployments. This allows you to train your own custom model and use its outputs in PostgreSQL.
+The Azure Extension for Azure Database for PostgreSQL allows you to call custom-built Azure Machine Learning service deployments. This allows you to train your own custom model and use its outputs in PostgreSQL. 
 
 ## Azure Machine Learning
 
