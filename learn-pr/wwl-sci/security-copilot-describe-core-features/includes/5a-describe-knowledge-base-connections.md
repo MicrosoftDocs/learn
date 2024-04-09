@@ -12,18 +12,37 @@ You can upload a file in Microsoft Copilot for Security to allow Copilot to refe
 
 To upload a file, the steps are as follows:
 
-1. Navigate to the file upload page by selecting the sources icon in the prompt bar then selecting files from the Manage sources page.
+1. Navigate to the file upload page by selecting the sources icon ![Screenshot of sources icon](../media/sources-icon-from-docs.png) in the prompt bar then selecting files from the Manage sources page.
 
-      :::image type="content" source="../media/manage-sources-files-new.png" lightbox="../media/manage-sources-files-new.png" alt-text="Screen capture of the files upload page.":::
+      :::image type="content" source="../media/manage-sources-files-new-v2.png" lightbox="../media/manage-sources-files-new-v2.png" alt-text="Screen capture of the files upload page.":::
 
-1. Drag the file to the upload section or select click to upload to look for your file. Make sure the file you're about to upload is a common text file type like PDF, DOC, DOCX, HTML, HTM, and TXT, or EML formats, and that the file size doesn't exceed the given capacity.
+1. Select Upload file to look for your file. Check that the file you're about to upload is a common text file type like DOCX, MD, PDF, and TXT formats, and that each file doesn't exceed 3 MB. You can upload files, one at a time, as long as the maximum capacity for all the uploaded files doesn't exceed the maximum of 20 MB in total.
 
-1. In Uploads, check the status of the file. Wait for the status to change from Uploading to Uploaded. If the upload failed, correct the problem, and try again.
+1. Wait for the file to appear in Uploads. If an error message appears, correct the problem, and try again.
 
-  > [!NOTE]
-  > Uploaded files are only available to the user account that uploaded it. Uploaded files are stored outside the tenant. To include the file as a source in your current session, toggle the button on the right-hand side of the file until the toggle is lit up. If you are not going to use the file yet, or to exclude the file as a source in your current session, keep the toggle button in grey.
+   > [!NOTE]
+   > Uploaded files are only available to the user account that uploaded them. Uploaded files are stored like the rest of customer data as described in [Privacy and data security in Microsoft Copilot for Security](/security-copilot/privacy-data-security).
 
-To delete a file, hover the file name in the Files section to make the trash bin icon appear. Select the trash icon to delete the file.
+1. To include the file as a source in your current session, select the toggle button so it's lit up (the circle inside the toggle button is in the rightmost position). If you aren't going to use the file yet, or want to exclude it as a source in your current session, select the toggle button so it's greyed out (the circle inside the toggle button is in the rightmost position).
+
+1. To prompt using the uploaded file, you need to mention "uploaded files" if you want Copilot to reason over your available files. You can also include the file name if you would like to guide Copilot to reason over a specific file. For example, if you want Copilot to check a user account's actions against your organization's data handling policies to find out if any violations were committed, a sample prompt would be:  
+
+   *Based on the Contoso Data Handling Policy file, list any actions taken by user Preston-123 that might be a violation of the data handling policies. Include a verdict to the action and level of confidence of the verdict. Cite the policy name and section applicable to the verdict*.
+
+#### Delete a file
+
+To delete a file, select the trash icon next to the file name to delete the file.
+
+#### Restricting file upload (for owners)
+
+Users assigned the Owner role can choose who are allowed to upload files in owner settings. The options are:
+
+- No one can upload files
+- Contributors and Owners can upload files
+
+By default, file upload is available for all users (Contributors and Owners).
+
+ :::image type="content" source="../media/file-upload-owner-admin-settings.png" alt-text="Screenshot of files upload dialog box." lightbox="../media/file-upload-owner-admin-settings.png":::
 
 ### Azure AI Search plugin
 
@@ -35,7 +54,7 @@ Azure AI Search is a service that enables you to effectively search, retrieve in
 
 Through the Azure AI Search plugin, you can bring your own index as a searchable source that you can query using prompts in the Copilot prompt bar.
 
-Before you set up the connection to your existing Azure AI index, verify the following:
+Before you set up the connection to your existing Azure AI index, verify the following requirements:
 
 - The Azure AI Search index is set up for vectorization for use with the text-embedding-ada-002 model.
 - The text field in your index must be searchable.
@@ -51,14 +70,14 @@ To create the connection to an existing Azure AI Search index, configure the Azu
 
 1. The parameters that you configure for the plugin map to information for the Azure AI Search instance, the index within search instance that will be searched, and the fields associated with the index.
 
-    - Azure AI Search service – the name of your search service.
-    - Index – the name of the index, within your Azure AI search instance, that will be searched.
-    - Vector – the name of the field in the index containing the vector of embeddings.
-    - Text – this is the name of the text field in the index.  The contents of this field, in your index, represents the text to search. If your index was created using the Import and vectorize data wizard, the name of the field containing the text to search may be referred to as chunk, as a default. The reason is that the wizard will chunk your data so that it doesn't exceed the token limit size of the embedding model. The default index field name, chunk, is referring to a chunk of text.
-    - Title – this is the name of the title field in the index and represents the title of each document to display as a source (optional).
-    - Value – the access identifier for API authentication.
+    - Name of Azure AI Search service – This is the name of your search service.
+    - Name of index – This is the name of the index, within your Azure AI search instance, that will be searched.
+    - Name of vector field in index – This is the name of the field in the index containing the vector of embeddings.
+    - Name of text field in index – This is the name of the text field in the index.  The contents of this field, in your index, represents the text to search. If your index was created using the Import and vectorize data wizard, the name of the field containing the text to search may be referred to as chunk, as a default. The reason is that the wizard will chunk your data so that it doesn't exceed the token limit size of the embedding model. The default index field name, chunk, is referring to a chunk of text.
+    - Name of title field in index – This is the name of the title field in the index and represents the title of each document to display as a source (optional).
+    - Value – This is the access identifier for API authentication.
 
-   :::image type="content" source="../media/azure-ai-search-plugin-settings.png" lightbox="../media/azure-ai-search-plugin-settings.png" alt-text="Screen capture of the Azure AI Search plugin parameters.":::
+   :::image type="content" source="../media/ai-search-plugin-settings.png" lightbox="../media/ai-search-plugin-settings.png" alt-text="Screen capture of the Azure AI Search plugin parameters.":::
 
 1. To obtain the information that you'll use for the plugin settings, you need to go to the Azure portal. Open a new browser tab to go to the Azure portal (https://portal.azure.com).
 
@@ -66,7 +85,7 @@ To create the connection to an existing Azure AI Search index, configure the Azu
 
 1. The AI Search page lists the search services. From here, you select the search instance you want the plugin to connect to. Before you select it, copy the name and enter it in Azure AI Search service field for the plugin. Copy the name and enter it in the plugin field select the search service.
 
-   :::image type="content" source="../media/azure-ai-search-instance-setting.png" lightbox="../media/azure-ai-search-instance-setting.png" alt-text="Screen capture that highlights the search instance whose name you copy in the Azure AI search instance field for the plugin.":::  
+   :::image type="content" source="../media/ai-search-plugin-settings-search-service-name-mapping.png" lightbox="../media/ai-search-plugin-settings-search-service-name-mapping.png" alt-text="Screen capture that highlights the search instance whose name you copy in the Azure AI search instance field for the plugin.":::  
 
 1. Select the search service whose name you entered in plugin settings page.
 
@@ -76,19 +95,19 @@ To create the connection to an existing Azure AI Search index, configure the Azu
 
 1. The indexes page lists the available indexes for a given Azure AI Search service. From the indexes page, copy the name of the index you want to Copilot to search and enter it into the index name field for the plugin.
 
-    :::image type="content" source="../media/index-setting-name.png" lightbox="../media/index-setting-name.png" alt-text="Screen capture of the Azure AI Search instance name pointing to the corresponding field in the plugin parameters window.":::  
+    :::image type="content" source="../media/ai-search-plugin-settings-index-name-mapping.png" lightbox="../media/ai-search-plugin-settings-index-name-mapping.png" alt-text="Screen capture of the Azure AI Search instance name pointing to the corresponding field in the plugin parameters window.":::  
 
 1. Select the index whose name you entered in plugin settings page. This opens the index page. From here, select the fields tab.
 
 1. The fields tab shows the field names for the index. The field names for the example index named "knowledge-base-bloc-index" and shown in the image that follows may be different than what is shown for your index. Work with the admin who manages your Azure AI Search service for guidance, as needed.
 
-      :::image type="content" source="../media/chunk-vector-title-settings.png" lightbox="../media/chunk-vector-title-settings.png" alt-text="Screen capture of the Azure AI Search index field names pointing to the corresponding fields in the plugin parameters window.":::
+      :::image type="content" source="../media/ai-search-plugin-vector-title-chunk-title-mapping.png" lightbox="../media/ai-search-plugin-vector-title-chunk-title-mapping.png" alt-text="Screen capture of the Azure AI Search index field names pointing to the corresponding fields in the plugin parameters window.":::
 
 1. Close the index fields page. Then From the left navigation pane, select Keys.
 
 1. Copy the "Manage query keys" value for API authentication and enter it in the value field for the plugin, then select save.
 
-      :::image type="content" source="../media/key-mapping.png" lightbox="../media/key-mapping.png" alt-text="Screen capture of the Azure AI Search key that gets copied into the value field of the plugin.":::
+      :::image type="content" source="../media/ai-search-plugin-settings-api-key-mapping.png" lightbox="../media/ai-search-plugin-settings-api-key-mapping.png" alt-text="Screen capture of the Azure AI Search key that gets copied into the value field of the plugin.":::
 
 1. Check that all your parameters are correct for the search instance and index you want to connect to then select save.
 

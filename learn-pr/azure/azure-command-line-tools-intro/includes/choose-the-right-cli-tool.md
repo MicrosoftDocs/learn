@@ -79,7 +79,7 @@ public clouds, private clouds, and software as a service (SaaS) services, by usi
 
 When you're picking a tool, consider your prior experience and current work environment. Here's a summary of your options:
 
-- Azure CLI syntax is similar to that of Bash scripting.
+- Azure CLI syntax is similar to Bash scripting.
 - Azure PowerShell is a PowerShell module. Commands follow a `Verb-Noun` naming scheme, and data is
 returned as objects.
 - Bicep is a DSL that uses declarative syntax to deploy Azure resources.

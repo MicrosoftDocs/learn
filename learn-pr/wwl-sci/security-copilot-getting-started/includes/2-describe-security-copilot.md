@@ -10,11 +10,12 @@ Microsoft Copilot for Security is an AI-powered, cloud-based security analysis t
 
 ### Use cases
 
-Microsoft Copilot for Security supports many use cases, including:
+Microsoft Copilot for Security focuses on making the following highlighted use cases easy to use.
 
-- Security posture management. Copilot delivers information on anything that might expose an organization to a known threat. It then gives the analyst prescriptive guidance on how to protect against those potential vulnerabilities.
-- Incident response. Copilot can quickly surface an incident. For a surfaced incident, Copilot can enrich it with context from other data sources, assess its scale and impact, and provide information on what the source might be. Copilot can then guide the analyst through the response and remediation steps with guided recommendations. Copilot provides a single pane of glass visibility by pulling in data from other sources like Defender XDR and Sentinel and then correlating and analyzing that data all together.
-- Security reporting. Copilot can deliver customizable reports that are ready to share and easy to consume, allowing analysts to focus more on high value tasks pertinent for securing the organization.
+- Incident summarization - Gain context for incidents and improve communication across your organization by leveraging generative AI to swiftly distill complex security alerts into concise, actionable summaries, which then enable quicker response times and streamlined decision-making.
+- Impact analysis - Utilize AI-driven analytics to assess the potential impact of security incidents, offering insights into affected systems and data to prioritize response efforts effectively.
+- Reverse engineering of scripts - Eliminate the need to manually reverse engineer malware and enable every analyst to understand the actions executed by attackers. Analyze complex command line scripts and translate them into natural language with clear explanations of actions. Efficiently extract and link indicators found in the script to their respective entities in your environment.
+- Guided response - Receive actionable step-by-step guidance for incident response, including directions for triage, investigation, containment, and remediation. Relevant deep links to recommended actions allow for quicker response.
 
 These use cases represent just a few of the capabilities that Copilot delivers and that helps make analysts more productive and also helps up-level them.
 

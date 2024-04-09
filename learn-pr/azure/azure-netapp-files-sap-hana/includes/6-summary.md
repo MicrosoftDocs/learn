@@ -1,10 +1,11 @@
-The performance requirements of SAP HANA can make it difficult to transition to the cloud. Azure NetApp Files application volume groups enable easy cloud transition of SAP HANA workloads, offering three core benefits:
+The performance requirements of SAP HANA can be challenging to transition to the cloud. Azure NetApp Files application volume groups enable easy cloud transition of SAP HANA workloads, offering core benefits:
  
 * Low latency and high performance
-* Simplified configuration for all SAPA HANA volumes in one step, configuring capacity and throughput options
+* Simplified deployment for all SAP HANA volumes in one step, configuring capacity and throughput options
+* Efficient primary data protection and replication to another region or zone
 * Configuration support for data replication using cross-region replication or HANA system replication
 
-In this guide, we have gone over the key points for using application volume groups including application volume group architecture, proximity placement groups, and Azure NetApp Files planning. Azure NetApp Files application volume group will shorten SAP HANA landscape deployment time and increase overall application performance and stability, including the use of multiple storage endpoints. 
+This guide covered the key points for using application volume group including application volume group architecture, proximity placement groups, and SAP HANA Azure NetApp Files planning. Azure NetApp Files application volume group shortens SAP HANA landscape deployment time and increases overall application performance and stability, including the use of multiple storage endpoints.
 
 ## Further learning links  
 	
