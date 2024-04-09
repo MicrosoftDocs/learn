@@ -38,11 +38,11 @@ Understanding compatibility across document formats is important, as sensitivity
 
 To see the sensitivity bar in Office applications like Word, Excel, and PowerPoint, your Office version needs to meet specific version requirements. This feature, when supported, displays sensitivity labels in a bar next to the file name at the top window bar.
 
-:::image type="content" source="../media/sensitivity-bar-example.png" alt-text="Sensitivity labels on the window title bar." lightbox="../media/sensitivity-bar-example.png":::
+:::image type="content" source="../media/sensitivity-bar-example.png" alt-text="Screenshot of sensitivity labels on the window title bar." lightbox="../media/sensitivity-bar-example.png":::
 
 When Outlook supports this feature, the sensitivity bar is displayed on the **Subject** line of the email in the classic Outlook experience.
 
-:::image type="content" source="../media/sensitivity-bar-example-outlook.png" alt-text="Sensitivity labels on the Outlook Subject line." lightbox="../media/sensitivity-bar-example-outlook.png":::
+:::image type="content" source="../media/sensitivity-bar-example-outlook.png" alt-text="Screenshot of sensitivity labels on the Outlook Subject line." lightbox="../media/sensitivity-bar-example-outlook.png":::
 
 ## Manage sensitivity labels for encryption and collaboration in Office apps
 
