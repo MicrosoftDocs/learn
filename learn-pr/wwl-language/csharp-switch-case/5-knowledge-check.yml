@@ -16,23 +16,23 @@ quiz:
   questions:
   - content: "What is the purpose of a `default` case in a switch statement?"
     choices:
-    - content: "It is used to specify the condition for the switch statement."
+    - content: "It's used to specify the condition for the switch statement."
       isCorrect: false
       explanation: "Incorrect. The default case is not used to specify the condition for the switch statement."
-    - content: "It is used to end the switch statement."
+    - content: "It's used to end the switch statement."
       isCorrect: false
-      explanation: "Incorrect. The default case does not end the switch statement."
-    - content: "It is used to execute a block of code if no case matches the expression."
+      explanation: "Incorrect. The default case doesn't end the switch statement."
+    - content: "It's used to execute a block of code if no case matches the expression."
       isCorrect: true
       explanation: "Correct! The default case executes when no other case matches the switch expression."
   - content: "What happens if a break statement (or alternative keyword that prevents \"fall-through\") is omitted in a switch case?"
     choices:
     - content: "The `default` case will execute."
       isCorrect: false
-      explanation: "Incorrect. The default case will not execute if a break statement is omitted."
+      explanation: "Incorrect. The default case won't execute if a break statement is omitted."
     - content: "The impacted case sections will be removed by the compiler."
       isCorrect: false
-      explanation: "Incorrect. The compiler does not remove case sections that allow “fall through” to the next switch section."
+      explanation: "Incorrect. The compiler doesn't remove case sections that allow “fall through” to the next switch section."
     - content: "The compiler will generate an error."
       isCorrect: true
       explanation: "Correct! Only one switch section is allowed to be executed. If you forget the `break` keyword (or, optionally, the `return` keyword) the compiler will generate an error."
