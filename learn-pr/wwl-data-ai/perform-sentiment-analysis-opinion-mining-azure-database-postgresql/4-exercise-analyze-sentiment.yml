@@ -1,12 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.perform-sentiment-analysis-opinion-mining-azure-database-postgresql.exercise-analyze-sentiment
-title: 'Exercise: Analyze Sentiment'
+title: Exercise-Analyze Sentiment
 metadata:
-  title: 'Exercise: Analyze Sentiment'
-  description: "Exercise: Analyze Sentiment"
+  title: Exercise-Analyze Sentiment
+  description: "Exercise-Analyze Sentiment"
   ms.date: 04/09/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
+durationInMinutes: 1
 content: |
   [!include[](includes/4-exercise-analyze-sentiment.md)]
