@@ -8,13 +8,11 @@ The Azure Database Migration Service is designed to support a wide mix of differ
 
 For online migrations, Azure Database Migration Service provides a highly resilient and self-healing migration service with reliable outcomes and near-zero downtime. Below are highlighted the main steps involved:
 
-1. Fully load your on-premises database to Azure Database. 
+1. Fully load your on-premises database to Azure SQL. 
 2. Continuously syncs new database transactions to the Azure target. 
-3. Cut over to the target Azure service when prepared. You can stop the replication, and switch the connection strings in your application to the Azure Database.
+3. Cut over to the target Azure service when prepared. You can stop the replication, and switch the connection strings in your application to Azure SQL.
 
 The Data Migration Service has a few prerequisites that are common across migration scenarios. You need to create a virtual network in Azure, and if your migration scenarios involve on-premises resources, you will need to create a VPN or ExpressRoute connection from your office to Azure. There are a number of network ports that are required for connectivity. Once the prerequisites are in place, the time to complete migration will depend on the data volume and rate of change in the databases in question.
-
-There are a number of traditional, more manual approaches to migrating databases to Azure including backup and restore, log shipping, replication, and adding an Availability Group replica in Azure. These solutions were not designed primarily for performing migrations, but they can be used for that purpose. The technique you use for physically migrating your data will depend on the amount of downtime you can sustain during the migration process.
 
 ## Azure Migrate
 
@@ -45,7 +43,7 @@ One of the main benefits of the DMA is the ability to assess queries both from E
 
 ## Additional migration options supported
 
-There are two modes of migration to Azure SQL Managed Instance: **online** and **offline**. The online mode has minimal or no downtime, while the offline mode experiences downtime during the migration process.
+There are a number of traditional, more manual approaches to migrating databases to Azure SQL. These solutions were not designed primarily for performing migrations, but they can be used for that purpose. The technique you use for physically migrating your data will depend on the amount of downtime you can sustain during the migration process.
 
 - [**Log Replay Service**](/azure/azure-sql/managed-instance/log-replay-service-overview?azure-portal=true). It's an online migration option to Azure SQL Managed Instance, and used when you need more control of your database migration project.
 
