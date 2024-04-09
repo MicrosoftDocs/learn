@@ -36,10 +36,10 @@ Microsoft Entra Connect Health for AD FS supports AD FS on Windows Server 2012 R
 
 Key benefits and best practices:
 
-| **Key Benefits**                               | **Best Practices**                                                                              |
-| ---------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| Enhanced security                              | Extranet lockout trendsFailed sign-ins reportIn privacy compliant                               |
-| Get alerted on all critical ADFS system issues | Server configuration and availability<br><br>Performance and connectivityRegular maintenance    |
-| Easy to deploy and manage                      | Quick agent installationAgent auto upgrade to the latestData available in portal within minutes |
-| Rich usage metrics                             | Top applications usage<br>Network locations and TCP connection<br>Token requests per server     |
-| Great user experience                          | Dashboard fashion from Microsoft Entra admin center<br><br>Alerts through emails                |
+| **Key Benefits**                               | **Best Practices**                                                                                      |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| Enhanced security                              | Extranet lockout trends<br>Failed sign-ins report<br>In privacy compliant                               |
+| Get alerted on all critical ADFS system issues | Server configuration and availability<br>Performance and connectivity<br>Regular maintenance            |
+| Easy to deploy and manage                      | Quick agent installation<br>Agent auto upgrade to the latest<br>Data available in portal within minutes |
+| Rich usage metrics                             | Top applications usage<br>Network locations and TCP connection<br>Token requests per server             |
+| Great user experience                          | Dashboard fashion from Microsoft Entra admin center<br>Alerts through emails                            |
