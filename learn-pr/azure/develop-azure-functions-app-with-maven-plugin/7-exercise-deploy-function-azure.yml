@@ -4,7 +4,7 @@ title: Exercise - deploy a function to Azure
 metadata:
   title: Exercise - deploy a function to Azure
   description: Prepare your function application for deployment, then deploy it to Azure using Maven. After you have deployed your application, you'll test in in a web browser.
-  ms.date: 04/01/2020
+  ms.date: 01/26/2024
   author: ggailey777
   ms.author: glenga
   ms.topic: unit

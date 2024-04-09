@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Exercise - Deploy Elastic on Azure virtual machines
   description: "This unit is an exercise that guides a user through detailed steps for deploying Elastic on Azure virtual machines."
-  ms.date: 6/15/2021
+  ms.date: 01/10/2023
   author: yenchiho
   ms.author: yenchiho
   ms.topic: unit

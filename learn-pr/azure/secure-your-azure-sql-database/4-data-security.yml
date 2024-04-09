@@ -3,7 +3,7 @@ uid: learn.secure-your-azure-sql-database.4-data-security
 metadata:
   title: Exercise - Secure your data in transit, at rest, and on display
   description: Data security
-  ms.date: 11/09/2018
+  ms.date: 11/07/2023
   author: VanMSFT
   ms.author: vanto
   manager: jroth

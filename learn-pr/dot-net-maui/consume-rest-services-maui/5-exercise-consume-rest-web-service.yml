@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: "Exercise - Consume a REST service with HttpClient"
   description: "Exercise - Consume a REST service with HttpClient"
-  ms.date: 10/13/2023
+  ms.date: 10/31/2023
   author: codemillmatt 
   ms.author: masoucou
   ms.manager: markl
