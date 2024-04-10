@@ -25,7 +25,7 @@ Now that you have the needed information on hand, we’ll walk through how to cr
 | **Field** | **Information needed** | **Description** |
 |---|---|---|
 | **Name** | AQUA Downlink | The name of your satellite contact profile |
-| **Region** | West US 2 | The Azure region you want to use. Each Azure region features datacenters within a latency-defined perimeter connected through a dedicated regional low-latency network. This design provides the best possible performance and security within each region. You can find more information on [Azure regions in Microsoft Docs](/azure/availability-zones/az-overview).  |
+| **Region** | West US 2 | The Azure region you want to use. Each Azure region features datacenters within a latency-defined perimeter connected through a dedicated regional low-latency network. This design provides the best possible performance and security within each region. You can find more information on [Azure regions on Microsoft Learn](/azure/availability-zones/az-overview).  |
 | **Minimum viable Contact duration** | PT1M | The minimum amount of time that the ground station and spacecraft can be in contact. A contact is the period of time that the ground station antenna and satellite are linked. |
 | **Minimum elevation in degrees** | 5.0 | The minimum elevation required for the contact. Elevation is the upward tilt to a satellite antenna measured in degrees. A higher value elevation can decrease the duration of the contact. |
 | **Auto track configuration** | Disabled | The frequency of the band that should be used for auto tracking during the contact. In Azure Orbital, you'll select **X band**, **S band**, or **Disabled**. |

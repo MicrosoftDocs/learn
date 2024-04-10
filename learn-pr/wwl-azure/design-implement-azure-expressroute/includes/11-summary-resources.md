@@ -10,4 +10,4 @@ Now that you have reviewed this module, you should be able to:
 
 Use these resources to discover more.
 
- -  [ExpressRoute documentation \| Microsoft Docs](/azure/expressroute/)
+ -  [ExpressRoute documentation \| Microsoft Learn](/azure/expressroute/)

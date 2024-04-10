@@ -9,7 +9,7 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [About security, authentication, authorization, and security policies - Azure DevOps \| Microsoft Docs](/azure/devops/organizations/security/about-security-identity).
+ -  [About security, authentication, authorization, and security policies - Azure DevOps \| Microsoft Learn](/azure/devops/organizations/security/about-security-identity).
  -  [Azure Identity and Access Management Solutions \| Microsoft Azure](https://azure.microsoft.com/product-categories/identity/).
  -  [About authentication with SAML single sign-on - GitHub Docs](https://docs.github.com/authentication/authenticating-with-saml-single-sign-on/about-authentication-with-saml-single-sign-on).
- -  [Connect to Microsoft Azure - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/library/connect-to-azure).
+ -  [Connect to Microsoft Azure - Azure Pipelines \| Microsoft Learn](/azure/devops/pipelines/library/connect-to-azure).

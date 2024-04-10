@@ -10,5 +10,5 @@ You learned how to describe the benefits and usage of:
 
  -  [Integration of Azure Repos and Git Repositories](https://azure.microsoft.com/services/devops/repos/).
  -  [Integration of Azure Boards and GitHub](/azure/devops/boards/github/).
- -  [Import repositories from TFVC to Git - Azure Repos \| Microsoft Docs](/azure/devops/repos/git/import-from-tfvc).
+ -  [Import repositories from TFVC to Git - Azure Repos \| Microsoft Learn](/azure/devops/repos/git/import-from-tfvc).
  -  [GitHub Codespaces](https://github.com/features/codespaces).

@@ -69,7 +69,7 @@ The backup operation failed due to an issue with the Windows service COM+ System
 
 4. Start the Windows service COM+ System Application. After the COM+ System Application starts, trigger a backup job from the Azure portal.
 
-For an up-to-date list of common error messages and recommended action, see [Troubleshoot Azure VM file recovery - Azure Backup | Microsoft Docs](/azure/backup/backup-azure-vm-file-recovery-troubleshoot).
+For an up-to-date list of common error messages and recommended action, see [Troubleshoot Azure VM file recovery - Azure Backup | Microsoft Learn](/azure/backup/backup-azure-vm-file-recovery-troubleshoot).
 
 ## Troubleshoot restoring using Microsoft Azure Recovery Services (MARS) backup agent
 
@@ -388,4 +388,4 @@ Microsoft recommends creating a network service endpoint in your virtual network
 
 Site Recovery needs the VM to provide outbound connectivity to specific URLs or IP ranges. You might have your VM behind a firewall or use network security group (NSG) rules to/l outbound connectivity. If so, you might experience issues. Make sure all the URLs are connected. For more information, see [Outbound connectivity for URLs](/azure/site-recovery/azure-to-azure-about-networking).
 
-For an up-to-date list of common issues, see: [Troubleshoot replication of Azure VMs with Azure Site Recovery - Azure Site Recovery | Microsoft Docs](/azure/site-recovery/azure-to-azure-troubleshoot-replication).
+For an up-to-date list of common issues, see: [Troubleshoot replication of Azure VMs with Azure Site Recovery - Azure Site Recovery | Microsoft Learn](/azure/site-recovery/azure-to-azure-troubleshoot-replication).

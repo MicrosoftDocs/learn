@@ -197,4 +197,4 @@ ORDER BY number_of_occurrences DESC;
 
 ## View distributed query activity
 
-The Microsoft docs provide many examples of how metadata views can be used to watch queries and locks throughout the cluster. Read the [Distributed query activity documentation](/azure/postgresql/hyperscale/reference-metadata#distributed-query-activity) to learn more about how you can use these views to better understand distributed queries in your database.
+Microsoft Learn provides many examples of how metadata views can be used to watch queries and locks throughout the cluster. Read the [Distributed query activity documentation](/azure/postgresql/hyperscale/reference-metadata#distributed-query-activity) to learn more about how you can use these views to better understand distributed queries in your database.

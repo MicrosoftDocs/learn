@@ -10,5 +10,5 @@ You learned how to describe the benefits and usage of:
 ## Learn more
 
  -  [Technical Debt – The Anti-DevOps Culture - Developer Support (microsoft.com)](https://devblogs.microsoft.com/premier-developer/technical-debt-the-anti-devops-culture/).
- -  [Microsoft Security Code Analysis documentation overview \| Microsoft Docs](/azure/security/develop/security-code-analysis-overview).
- -  [Build Quality Indicators report - Azure DevOps Server \| Microsoft Docs](/azure/devops/report/sql-reports/build-quality-indicators-report).
+ -  [Microsoft Security Code Analysis documentation overview \| Microsoft Learn](/azure/security/develop/security-code-analysis-overview).
+ -  [Build Quality Indicators report - Azure DevOps Server \| Microsoft Learn](/azure/devops/report/sql-reports/build-quality-indicators-report).

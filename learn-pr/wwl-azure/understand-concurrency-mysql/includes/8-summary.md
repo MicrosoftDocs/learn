@@ -11,4 +11,4 @@ Now that you've completed this module, you can:
 
 For more information about the topics in this module, see:
 
-- [Server parameters - Azure Database for MySQL | Microsoft Docs](/azure/mysql/concepts-server-parameters)
+- [Server parameters - Azure Database for MySQL | Microsoft Learn](/azure/mysql/concepts-server-parameters)

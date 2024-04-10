@@ -10,4 +10,4 @@ You learned how to describe the benefits and usage of:
 ## Learn more
 
  -  [Creating a pre-receive hook script - GitHub Docs](https://docs.github.com/enterprise-server@3.1/admin/policies/enforcing-policy-with-pre-receive-hooks/creating-a-pre-receive-hook-script).
- -  [Service hooks event reference - Azure DevOps \| Microsoft Docs](/azure/devops/service-hooks/events).
+ -  [Service hooks event reference - Azure DevOps \| Microsoft Learn](/azure/devops/service-hooks/events).

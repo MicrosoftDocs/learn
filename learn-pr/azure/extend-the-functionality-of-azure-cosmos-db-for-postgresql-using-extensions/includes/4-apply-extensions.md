@@ -9,7 +9,7 @@ Woodgrove Bank asked for extensions allowing geospatial data to be stored in the
 >
 > [`pg_cron`](https://github.com/citusdata/pg_cron) is a cron-based job scheduler that allows you to schedule PostgreSQL commands directly from the database.
 
-The next step you need to take is determining if the extensions you identified are supported in Azure Cosmos DB for PostgreSQL. There are two ways you can accomplish this step. The first is to review the list of [Extensions supported by Azure Cosmos DB for PostgreSQL](/azure/postgresql/hyperscale/reference-extensions#extensions-supported-by-azure-database-for-postgresql) in the Microsoft docs. The second and recommended approach is to execute the following query against your database:
+The next step you need to take is determining if the extensions you identified are supported in Azure Cosmos DB for PostgreSQL. There are two ways you can accomplish this step. The first is to review the list of [Extensions supported by Azure Cosmos DB for PostgreSQL](/azure/postgresql/hyperscale/reference-extensions#extensions-supported-by-azure-database-for-postgresql) on Microsoft Learn. The second and recommended approach is to execute the following query against your database:
 
 ```sql
 SELECT * FROM pg_available_extensions;

@@ -135,7 +135,7 @@ Application Gateway redirection support offers the following capabilities:
  -  **Path-based redirection:** Enables HTTP to HTTPS redirection only on a specific site area, for example a shopping cart area denoted by /cart/\*.
  -  **Redirect to external site:** Requires a new redirect configuration object, which specifies the target listener or external site to which redirection is desired. The configuration element also supports options to enable appending the URI path and query string to the redirected URL. The redirect configuration is attached to the source listener via a new rule.
 
-For more information on configuring redirection in Application Gateway, see [URL path-based redirection using PowerShell - Azure Application Gateway \| Microsoft Docs](/azure/application-gateway/tutorial-url-redirect-powershell).
+For more information on configuring redirection in Application Gateway, see [URL path-based redirection using PowerShell - Azure Application Gateway \| Microsoft Learn](/azure/application-gateway/tutorial-url-redirect-powershell).
 
 ## Application Gateway request routing rules
 
@@ -336,4 +336,4 @@ A rewrite rule set contains:
          -  **URL Query String:** The value to which the query string is to be rewritten to.
          -  **Re-evaluate path map:** Used to determine whether the URL path map is to be re-evaluated or not. If kept unchecked, the original URL path will be used to match the path-pattern in the URL path map. If set to true, the URL path map will be re-evaluated to check the match with the rewritten path. Enabling this switch helps in routing the request to a different backend pool post rewrite.
 
-For more information on Configuring rewrites in application Gateway, see [Rewrite HTTP headers and URL with Azure Application Gateway \| Microsoft Docs](/azure/application-gateway/rewrite-http-headers-url).
+For more information on Configuring rewrites in application Gateway, see [Rewrite HTTP headers and URL with Azure Application Gateway \| Microsoft Learn](/azure/application-gateway/rewrite-http-headers-url).

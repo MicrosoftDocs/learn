@@ -197,7 +197,7 @@ Distributed tables are horizontally partitioned across available worker nodes. T
     SELECT create_distributed_table('payment_events', 'user_id');
     ```
 
-    Both the `payment_events` and `payment_users` tables were assigned the same distribution column, resulting in related data for both tables being colocated on the same node. Details on selecting the correct distribution column are outside the scope of this learning module. Still, you can learn more about it by reading the [Choose distribution columns in Azure Cosmos DB for PostgreSQL](/azure/postgresql/hyperscale/howto-choose-distribution-column) article in the Microsoft docs.
+    Both the `payment_events` and `payment_users` tables were assigned the same distribution column, resulting in related data for both tables being colocated on the same node. Details on selecting the correct distribution column are outside the scope of this learning module. Still, you can learn more about it by reading the [Choose distribution columns in Azure Cosmos DB for PostgreSQL](/azure/postgresql/hyperscale/howto-choose-distribution-column) article on Microsoft Learn.
 
 ## Create a reference table
 
