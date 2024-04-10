@@ -36090,6 +36090,46 @@
       "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/9-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/10-knowledge-check",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/index.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/1-introduction.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/5-knowledge-check.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/6-summary-resources.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/4-use-azcopy.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/2-use-azure-storage-explorer.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/3a-use-import-export-service.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/3b-use-waimportexport-tool.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
     }
   ]
 }
