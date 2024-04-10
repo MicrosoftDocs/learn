@@ -4,12 +4,13 @@ title: Predict what a deployment will do by using what-if
 metadata:
   title: Predict what a deployment will do by using what-if
   description: Deploying and hoping for the best is not the approach you should be taking. The what-if operation is here to address this fact. This unit will cover what it is and how to use it.
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.date: 05/20/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=nextgen
+  author: mumian
+  ms.author: jgao
+  ms.date: 08/22/2023
+  ms.topic: unit
+  ms.custom:
+    - team=nextgen
+    - devx-track-bicep
   zone_pivot_groups: arm-template-language-azure-shell-interface
 durationInMinutes: 4
 content: |

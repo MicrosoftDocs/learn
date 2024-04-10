@@ -4,11 +4,10 @@ title: Understand provisioning
 metadata:
   title: Understand provisioning
   description: Learn about provisioning devices using Microsoft Intune.
-  ms.date: 10/23/2020
+  ms.date: 05/08/2023
   author: Erikre
   ms.author: erikre
-  ms.topic: interactive-tutorial
-  ms.prod: learning-endpoint-manager
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-understand-provisioning.md)]

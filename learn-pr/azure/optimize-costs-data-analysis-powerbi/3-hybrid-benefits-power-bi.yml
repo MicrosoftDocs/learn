@@ -3,11 +3,10 @@ uid: learn.optimize-costs-data-analysis-powerbi.hybrid-benefits-power-bi
 metadata:
   title: Manage hybrid benefits to reduce the licensing cost of Azure VMs
   description: Manage hybrid benefits to reduce the licensing cost of Azure VMs
-  ms.date: 11/01/2021
+  ms.date: 07/07/2023
   author: bandersmsft
   ms.author: banders
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Manage hybrid benefits to reduce the licensing cost of Azure VMs
 durationInMinutes: 5
 content: |

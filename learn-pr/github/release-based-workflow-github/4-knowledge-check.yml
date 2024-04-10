@@ -3,12 +3,11 @@ uid: learn.github.release-based-workflow-github.4-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Check what you've learned.
-  ms.date: 06/26/2020
+  description: Check your knowledge about release based workflow in GitHub.
+  ms.date: 12/05/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/4-knowledge-check.md)]
@@ -30,21 +29,21 @@ quiz:
     choices:
     - content: "`git merge`"
       isCorrect: false
-      explanation: "This command doesn't allow you to specify commits. It will attempt to merge the two branches entirely."
+      explanation: "This command doesn't allow you to specify commits. It attempts to merge the two branches entirely."
     - content: "`git cherry-pick`"
       isCorrect: true
       explanation: "This command allows you to select specific commits to apply to a different branch."
     - content: "`git rebase`"
       isCorrect: false
-      explanation: "This command doesn't allow you to control which commits are applied in the way you need to here. It's also not recommended for public branches because it can cause issues for others working on branches based on them."
-  - content: "Your project team has reached a major milestone and wants everyone to install the latest version of your app. Which option is the **best** way to let interested users know?"
+      explanation: "This command doesn't allow you to control which commits are applied in the way you need to here. Also, it isn't recommended for public branches because it can cause issues for others working on branches based on them."
+  - content: "Your project team reaches a major milestone and wants everyone to install the latest version of your app. Which option is the **best** way to let interested users know?"
     choices:
     - content: "Create a release on GitHub."
       isCorrect: true
-      explanation: "This option will notify everyone who is watching your repository. It also gives you the opportunity to provide binaries for deployment and emphasize the importance of the release through release notes."
+      explanation: "This option notifies everyone who is watching your repository. It also gives you the opportunity to provide binaries for deployment and emphasize the importance of the release through release notes."
     - content: "Create a Git tag."
       isCorrect: false
-      explanation: "This option will only inform the limited number of people who are paying attention to changes in your project's tags. Many may not understand the significance of this specific tag."
+      explanation: "This option only informs the limited number of people who are paying attention to changes in your project's tags. Also, many people might not understand the significance of this specific tag."
     - content: "Merge the changes into `main` using a pull request."
       isCorrect: false
-      explanation: "This option will only inform the limited number of people who are paying attention to changes in your project's source. Many may not understand the significance of this specific pull request."
+      explanation: "This option only informs the limited number of people who are paying attention to changes in your project's source. Also, many people might not understand the significance of this specific pull request."

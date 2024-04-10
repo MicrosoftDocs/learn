@@ -5,15 +5,13 @@ title: Exercise - Analyze the content of a tweet
 metadata:
   title: Exercise - Analyze the content of a tweet
   description: Exercise - Analyze the content of a tweet
-  ms.date: 5/10/2019
+  ms.date: 10/17/2023
   author: ecfan
   ms.author: estfan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ROBOTS: INDEX,FOLLOW
 
 interactive: bash
-azureSandbox: true
 durationInMinutes: 5
 content: |
   [!include[](includes/6-EX-analyze-content-of-tweet.md)]

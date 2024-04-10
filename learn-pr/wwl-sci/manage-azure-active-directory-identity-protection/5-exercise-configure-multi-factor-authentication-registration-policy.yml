@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-azure-ad-identity-protection.implement-manage-sign-risk-policies
-title: Exercise configure Azure Active Directory multi-factor authentication registration policy
+title: Exercise configure Microsoft Entra multifactor authentication registration policy
 metadata:
-  title: Exercise configure Azure Active Directory multi-factor authentication registration policy
-  description: "Exercise configure Azure Active Directory multi-factor authentication registration policy"
-  ms.date: 02/03/2023
+  title: Exercise configure Microsoft Entra multifactor authentication registration policy
+  description: "Exercise configure Microsoft Entra multifactor authentication registration policy"
+  ms.date: 04/03/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/5-exercise-configure-multi-factor-authentication-registration-policy.md)]

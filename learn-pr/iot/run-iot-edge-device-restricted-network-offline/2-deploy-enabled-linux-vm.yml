@@ -6,10 +6,8 @@ metadata:
   ms.date: 05/01/2020
   author: abartolo
   ms.author: abartolo
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom:
-  - team=cloud_advocates
+  ms.topic: unit
+  ms.custom: team=cloud_advocates, linux-related-content
   ms.contributors:
   - abartolo-05192020
 title: Deploy Azure IoT Edge enabled Linux virtual machine

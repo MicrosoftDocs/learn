@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check for discover commands in PowerShell.
-  ms.date: 05/27/2022
+  ms.date: 02/23/2023
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 4
 content: |
@@ -40,4 +39,3 @@ quiz:
         - content: "`'command' Get-Member`"
           isCorrect: false
           explanation: Incorrect. The command needs to be piped with the `Get-Member` cmdlet.
-

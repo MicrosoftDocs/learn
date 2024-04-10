@@ -17,7 +17,7 @@ SELECT * FROM pg_available_extensions;
 
 The [`pg_available_extensions` view](https://www.postgresql.org/docs/current/view-pg-available-extensions.html) provides a list of supported extensions available to install. Reviewing the output reveals that both of the extensions you selected are supported.
 
-Many popular PostgreSQL extensions are preinstalled on every Azure Cosmos DB for PostgreSQL instance. So, before installing any new supported extensions, it's a good idea to view the complete list of preinstalled extensions in your database to avoid conflicts. You can view this list by running the following query:
+Many popular PostgreSQL extensions are preinstalled on each Azure Cosmos DB for PostgreSQL instance. Before installing any new supported extensions, it's a good idea to view the complete list of preinstalled extensions in your database to avoid conflicts. You can view this list by running the following query:
 
 ```sql
 SELECT * FROM pg_extension;
@@ -51,7 +51,7 @@ ERROR: permission denied to create extension "postgis"
 HINT: Must be superuser to create this extension.
 ```
 
-Loading an extension typically requires the same privileges needed to create its component objects. For many extensions, this requirement means superuser privileges are required. For these extensions, it's possible that `CREATE EXTENSION` will fail with a permission denied error, as above. Since Azure Cosmos DB for PostgreSQL is a managed PaaS service in Azure, only Microsoft can sign in with the `postgres` superuser role. However, if the extension is marked trusted in its control file, it can be installed by any user with the `CREATE` privilege on the current database.
+Loading an extension typically requires the same privileges needed to create its component objects. For many extensions, this requirement means superuser privileges are required. For these extensions, it's possible that `CREATE EXTENSION` will fail with a permission-denied error. Because Azure Cosmos DB for PostgreSQL is a managed PaaS service in Azure, only Microsoft can sign in with the `postgres` superuser role. However, if the extension is marked trusted in its control file, any user with the `CREATE` privilege on the current database can install it.
 
 If you receive this error when installing an extension, try the `create_extension()` function instead. When you create an Azure Cosmos DB for PostgreSQL cluster, you provide a password for the `citus` server admin user. This account grants limited administrative access to the database and cluster. The `citus` user is a member of `azure_pg_admin`, which can install PostgreSQL extensions. The `create_extension()` function executes in the context of the `citus` user.
 
@@ -113,7 +113,7 @@ With a record now updated, you can use the `ST_X(point)` and `ST_Y(point)` funct
 SELECT event_id, event_type, ST_X(event_location) AS longitude, ST_Y(event_location) AS latitude FROM payment_events WHERE event_location IS NOT null;
 ```
 
-The Woodgrove Bank database is ready to accept geospatial data from the contactless payments app. The development team has assigned location data to each of their merchants and will handle the bulk update of existing transactions.
+The Woodgrove Bank database is ready to accept geospatial data from the contactless-payments app. The development team has assigned location data to each of their merchants and will handle the bulk update of existing transactions.
 
 ## Set up scheduled jobs
 
@@ -140,7 +140,7 @@ CREATE UNIQUE INDEX rollup_events_unique_idx ON rollup_events(user_id, event_typ
 SELECT create_distributed_table('rollup_events', 'user_id');
 ```
 
-For the rollup, you'll use an `INSERT ... SELECT` command, which will run in parallel across all the nodes in the cluster. This command will load the aggregated data into the rollup table. To simplify calling the query to perform the data aggregation, you can create a function to perform the rollup:
+For the rollup, you'll use an `INSERT ... SELECT` command, which will run in parallel across all the nodes in the cluster. This command loads the aggregated data into the rollup table. To simplify calling the query to perform the data aggregation, you can create a function to perform the rollup:
 
 ```sql
 CREATE OR REPLACE FUNCTION compute_event_rollups(start_time timestamptz, end_time timestamptz)
@@ -194,7 +194,7 @@ Then, unschedule the job using the following, replacing the `{job_id}` token whe
 SELECT cron.unschedule({job_id});
 ```
 
-Extending your database with the `pg_cron` extension allows you to schedule PostgreSQL commands directly from the database. This powerful and simple extension can be used for many tasks, including aggregating data in near-real time, database cleanup and administrative tasks, and much more.
+Extending your database with the `pg_cron` extension allows you to schedule PostgreSQL commands directly from the database. You can use this powerful and simple extension for many tasks, including aggregating data in near-real time, database cleanup and administrative tasks, and much more.
 
 ## Extensions and pg_dump backups
 

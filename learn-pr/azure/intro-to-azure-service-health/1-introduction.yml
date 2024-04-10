@@ -5,11 +5,10 @@ metadata:
   unitType: introduction
   title: Introduction
   description: Introduction to Azure Service Health and and how to get notifications about platform issues.
-  ms.date: 9/1/2021
-  author: ricmmartins
-  ms.author: ricmart
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.date: 02/26/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

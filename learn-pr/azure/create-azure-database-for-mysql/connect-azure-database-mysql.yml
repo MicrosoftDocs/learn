@@ -7,14 +7,13 @@ interactive: bash
 metadata:
   title: Exercise - Connect to an Azure Database for MySQL flexible server
   description: Connect to Azure Database for MySQL flexible server.
-  ms.prod: learning-azure
   author: markingmyname
   ms.author: maghan
   manager: jroth
   ms.reviewer: shreyaanand
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom: event-tier1-build-2022
-  ms.date: 06/08/2022 
+  ms.date: 06/09/2023 
 
 durationInMinutes: 10
 content: |

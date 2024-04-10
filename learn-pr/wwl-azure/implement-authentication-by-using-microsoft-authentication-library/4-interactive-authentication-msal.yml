@@ -4,11 +4,12 @@ title: Exercise - Implement interactive authentication by using MSAL.NET
 metadata:
   title: Exercise - Implement interactive authentication by using MSAL.NET
   description: "Exercise - Implement interactive authentication by using MSAL.NET"
-  ms.date: 04/24/2023
+  ms.date: 03/13/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/4-interactive-authentication-msal.md)]

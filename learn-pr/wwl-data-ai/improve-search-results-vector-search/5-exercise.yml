@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-search-results-vector-search.exercise
+title: Exercise - Use the REST API to run vector search queries
+metadata:
+  title: Exercise - Use the REST API to run vector search queries
+  description: "Learn how to use the REST API to run vector search queries."
+  ms.date: 9/29/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-exercise.md)]

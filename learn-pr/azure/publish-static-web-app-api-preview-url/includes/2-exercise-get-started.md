@@ -1,10 +1,10 @@
-In this exercise, you'll create an Azure Static Web App instance, including a GitHub Action that automatically builds and publishes your web site.
+In this exercise, you create an Azure Static Web App instance, including a GitHub Action that automatically builds and publishes your web site.
 
-This module uses resources made available to you via the sandbox, which provides free, temporary access to an Azure subscription, along with the resources that you need to complete the exercises. Make sure you've activated the sandbox at the top of this page. As you work through the exercises in this module, each unit is dependent on content you created in a previous exercise. For this reason, select a JavaScript framework and use it for all subsequent exercises.
+This module uses resources made available to you via the sandbox, which provides free, temporary access to an Azure subscription, along with the resources that you need to complete the exercises. Make sure to activate the sandbox at the top of this page. As you work through the exercises in this module, each unit is dependent on content you created in a previous exercise. For this reason, select a JavaScript framework and use it for all subsequent exercises.
 
 ## Create a repository
 
-To begin, you'll create a repository by using a GitHub template. A series of repository templates are available, which contain a starter app implemented in various front end frameworks.
+To begin, create a repository by using a GitHub template. A series of repository templates are available, which contain a starter app implemented in various front end frameworks.
 
 1. Go to the GitHub [create from template page](https://github.com/login?return_to=/MicrosoftDocs/mslearn-staticwebapp-api/generate?azure-portal=true) to open the template repository.
 
@@ -18,7 +18,7 @@ To begin, you'll create a repository by using a GitHub template. A series of rep
 
 ## Run your app locally
 
-Now you have a GitHub repository named **my-static-web-app-and-api** in your GitHub account. Next, you'll clone the GitHub repo and run the code locally on your computer.
+Now you have a GitHub repository named **my-static-web-app-and-api** in your GitHub account. Next, you clone the GitHub repo and run the code locally on your computer.
 
 1. Open a terminal window on your computer.
 
@@ -33,7 +33,7 @@ Now you have a GitHub repository named **my-static-web-app-and-api** in your Git
    ```
 
    > [!NOTE]
-   > If you have trouble copying into the command prompt terminal, right click the icon in the title bar, and in the **Properties** tab, ensure that **Use Ctrl+Shift+C/V as Copy/Paste** is checked.
+   > If you have trouble copying into the command prompt terminal, right-click the icon in the title bar, and in the **Properties** tab, ensure that **Use Ctrl+Shift+C/V as Copy/Paste** is checked.
 
 1. Change to the directory for the source code you cloned.
 
@@ -157,7 +157,7 @@ Local host for Vue is `http://localhost:8080`.
 
 ::: zone-end
 
-Your app should say **Loading data ...** because there's no data or API yet. You'll add the API for your web app later in this lesson.
+Your app should say **Loading data ...** because there's no data or API yet. You add the API for your web app later in this lesson.
 
 In the terminal, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop your batch job.
 
@@ -165,7 +165,7 @@ Congratulations! You built your application and saw it running locally in your b
 
 ## Create a static web app
 
-Now that you've created your own GitHub repository, you can create your own static web app using the Azure Static Web Apps extension for Visual Studio Code.
+You created your own GitHub repository. Now you can create your own static web app using the Azure Static Web Apps extension for Visual Studio Code.
 
 ### Install the Azure Static Web Apps extension for Visual Studio Code
 
@@ -218,7 +218,7 @@ When you installed the application dependencies, some of the files in your proje
 
 ### Create the static web app
 
-A current Azure and GitHub authenticated sessions are required to create a static web app. If you aren't already signed in to both providers, the extension will prompt you to sign during the creation process.
+Current Azure and GitHub authenticated sessions are required to create a static web app. If you aren't already signed in to both providers, the extension prompts you to sign in during the creation process.
 
 1. Select <kbd>F1</kbd> to open the Visual Studio Code command palette.
 
@@ -311,16 +311,16 @@ A current Azure and GitHub authenticated sessions are required to create a stati
 
     :::image type="content" source="../media/extension-browse-site.png" alt-text="Screenshot showing how to use the Visual Studio Code extension to browse the static web app.":::
 
-    Your app should say **Loading data ...** because there's no data or API yet. You'll add the API for your web app later on in this module.
+    Your app should say **Loading data ...** because there's no data or API yet. You add the API for your web app later on in this module.
 
-Congratulations! You've deployed your app to Azure Static Web Apps!
+Congratulations! Your app is deployed to Azure Static Web Apps!
 
 > [!NOTE]
 > Don't worry if you see a web page that states the app hasn't been built and deployed yet. Try refreshing the browser in a minute. The GitHub Action service runs automatically when the Azure Static Web App is created. So if you see the splash page, the app is still being deployed.
 
 ### Pull the changes from GitHub
 
-Pull the latest changes from GitHub to bring down the workflow file that was created by Azure Static Web Apps service.
+Pull the latest changes from GitHub to bring down the workflow file created by Azure Static Web Apps service.
 
 1. Open the Command Palette by pressing <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>.
 
@@ -330,4 +330,4 @@ Pull the latest changes from GitHub to bring down the workflow file that was cre
 
 ## Next steps
 
-Next you'll learn how to build and run your API using an Azure Functions project.
+Next you learn how to build and run your API using an Azure Functions project.

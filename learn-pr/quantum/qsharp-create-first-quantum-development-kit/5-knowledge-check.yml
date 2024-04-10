@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.qsharp-create-first-quantum-development-kit.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your understanding so far.
+  author: SoniaLopezBravo
+  ms.author: sonialopez
+  manager: tedhudek
+  ms.date: 01/04/2024
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Which of these statements is true about the random number generator that you built in this module?'
+    choices:
+    - content: "The quantum random number generator takes the current time from the CPU's clock as a seed to generate random numbers."
+      isCorrect: false
+      explanation: "The quantum random number generator doesn't use the CPU's clock to generate random numbers. A classical pseudo-random number generator would do that."
+    - content: "The quantum random number generator creates one qubit, measures it, and the result of the measurement is a random decimal number."
+      isCorrect: false
+      explanation: "The result of the measurement of a qubit is a random bit, not a random decimal number. This isn't the logic behind the random number generator that you built in this module."
+    - content: "The quantum random number generator creates a bit string from the repetition of measurements of a qubit in superposition. Then, it takes the bit string and converts it to a decimal number."
+      isCorrect: true
+      explanation: "This is the logic behind the random number generator that you built in this module."
+
+  - content: 'Which of the following structures are required for a Q# program to run successfully?'
+    choices:
+    - content: 'A Q# program must have a namespace, an operation, and a function.'
+      isCorrect: false
+      explanation: "A function is not required in a Q# program."
+    - content: "A Q# program must have a namespace, an entry point, and an operation."
+      isCorrect: true
+      explanation: "Every Q# program must have a namespace, and an `EntryPoint` followed by an operation so the Q# compiler knows where to start the program."
+    - content: "A Q# program must have a namespace, an entry point, an operation and at least one qubit allocated."
+      isCorrect: false
+      explanation: "You can write Q# programs that don't need to perform operations on a qubit. A Q# program without a qubit allocated can run successfully."
+
+  - content: "Consider a quantum operation `A` that acts on a single qubit. If you want to write a Q# program that applies `A` to a qubit `q`, which of the following statements is true?"
+    choices:
+    - content: "You allocate a qubit using `q = Qubit();` and then apply `A` to `q` using `A(q);`."
+      isCorrect: false
+      explanation: "To allocate a qubit, you must use the `use` keyword, `use q = Qubit();`."
+    - content: "You allocate a qubit using `use q = Qubit();` and then apply `A` to `q` using `A(q);`."
+      isCorrect: true
+      explanation: "You first allocate a qubit using `use` and then apply `A` to the qubit allocated using `A(q);`."
+    - content: "You allocate a qubit using `use q = Qubit();` and then apply `A` to `q` using `A[q];`."
+      isCorrect: false
+      explanation: "To apply an operation to a qubit, you must use parentheses, `A(q);`."

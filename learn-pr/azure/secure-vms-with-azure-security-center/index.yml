@@ -2,18 +2,18 @@
 uid: learn.azure-security.secure-vms-with-security-center
 metadata:
   title: Protect your servers and VMs from brute-force and malware attacks with Microsoft Defender for Cloud
-  description: Stop hackers from getting into your Windows and Linux servers. In this module, you’ll discover how to protect VMs and servers with Microsoft Defender for Cloud
-  ms.date: 07/31/2022
+  description: Stop hackers from getting into your Windows and Linux servers. In this module, you discover how to protect VMs and servers with Microsoft Defender for Cloud.
+  ms.date: 02/23/2024
   author: elazark
   ms.author: elkrieger
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Protect your servers and VMs from brute-force and malware attacks with Microsoft Defender for Cloud
-summary: In this module, you’ll discover how to protect VMs and servers with Microsoft Defender for Cloud
+  ms.topic: module
+  ms.service: defender-for-cloud
+title: Protect your servers and VMs from brute-force and malware attacks with Microsoft Defender for Cloud.
+summary: In this module, you discover how to protect VMs and servers with Microsoft Defender for Cloud.
 abstract: | 
   In this module, you will:
-  - Learn how to protect VM-based resources and networks with Microsoft Defender for Cloud
-  - Install and use malware protection to stop virus attacks on your exposed endpoints
+  - Learn how to protect VM-based resources and networks with Microsoft Defender for Cloud.
+  - Install and use malware protection to stop virus attacks on your exposed endpoints.
 prerequisites: |
   - Basic familiarity with Azure services, particularly Microsoft Defender for Cloud.
   - Familiarity with Azure virtual machines and virtual networking.

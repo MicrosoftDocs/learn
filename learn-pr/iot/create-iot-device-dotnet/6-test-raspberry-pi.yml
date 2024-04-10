@@ -4,11 +4,13 @@ title: "Exercise: Test the app"
 metadata:
   title: "Exercise: Test the app"
   description: "You've built the hardware and the app. Now it's time to test the .NET IoT app you've built for your Raspberry Pi."
-  ms.date: 9/21/2021
+  ms.date: 9/9/2022
   author: camsoper
   ms.author: casoper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.manager: markl
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 5
 content: |
   [!include[](includes/6-test-raspberry-pi.md)]

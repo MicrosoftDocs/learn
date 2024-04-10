@@ -4,13 +4,14 @@ title: Exercise - Work with the file system
 metadata:
   title: Exercise - Work with the file system
   description: Use types in System.IO to read files and folders on the file system.
-  ms.date: 10/28/2020
+  ms.date: 08/29/2023
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.manager: markl
+  ms.topic: unit
   ms.custom:
-  - team=cloud_advocates
+    - team=cloud_advocates
+    - devx-track-dotnet
   ms.contributors:
   - masoucou-06132021
 durationInMinutes: 5

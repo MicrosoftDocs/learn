@@ -3,24 +3,24 @@ uid: learn.aks-secrets-configure-app
 metadata:
   title: Manage application configuration and secrets in Azure Kubernetes Service (AKS)
   description: Learn how to securely store application secrets and configurations using native Kubernetes resources in Azure Kubernetes Service (AKS).
-  ms.date: 12/16/2022
+  ms.date: 01/26/2024
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Manage Application Configuration and Secrets in Azure Kubernetes Service (AKS)
-summary: Learn how to securely store application Secrets and configurations using native Kubernetes resources in Azure Kubernetes Service (AKS). Deploy a complete application using Secrets and ConfigMaps to store relevant data.
+  ms.topic: module
+  ms.service: azure-kubernetes-service
+title: Manage application configuration and secrets in Azure Kubernetes Service (AKS)
+summary: Learn how to securely store application secrets and configurations using native Kubernetes resources in Azure Kubernetes Service (AKS). Deploy a complete application using Secrets and ConfigMaps to store relevant data.
 abstract: |
-  In this module, you will:
-    - Understand configuration concepts behind Kubernetes workloads such as Secrets and ConfigMaps
-    - Deploy a complete application, securely storing application secrets
-    - Deploy workload-based configuration for a web application
+  By the end of this module, you're able to:
+    - Understand configuration concepts behind Kubernetes workloads, such as Secrets and ConfigMaps.
+    - Deploy a complete application, securely storing application secrets.
+    - Deploy a workload-based configuration for a web application.
 prerequisites: |
-  - Access to an Azure subscription
-  - Basic knowledge of executing commands by using the Azure CLI
-  - Knowledge of Kubernetes and its concepts
-  - Basic knowledge of creating Kubernetes YAML manifest files
-  - Basic knowledge of executing commands by using kubectl
+  - Access to an Azure subscription.
+  - Basic knowledge of executing commands using the Azure CLI.
+  - Knowledge of Kubernetes and its concepts.
+  - Basic knowledge of creating Kubernetes YAML manifest files.
+  - Basic knowledge of executing commands using kubectl.
 iconUrl: /training/achievements/aks-secrets-configure-app.svg
 badge:
   uid: learn.aks-secrets-configure-app.badge

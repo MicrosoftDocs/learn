@@ -1,39 +1,38 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-ad.4-essential-features
 metadata:
-  title: Essential features of Azure AD
-  description: Essential features of Azure AD
-  ms.date: 02/25/2020
+  title: Essential features of Microsoft Entra ID
+  description: Essential features of Microsoft Entra ID
+  ms.date: 12/18/2023
   author: MicrosoftGuyJFlo
   ms.author: joflore
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Essential features of Azure AD
+  ms.topic: unit
+title: Essential features of Microsoft Entra ID
 durationInMinutes: 5
 content: |
   [!include[](includes/4-essential-features.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: What does Azure AD B2B provide?
+  - content: What does Microsoft Entra B2B provide?
     choices:
-    - content: Azure AD B2B allows you to manage your customers' identities. It provides access to applications and resources.
+    - content: Microsoft Entra B2B allows you to manage your customers' identities. It provides access to applications and resources.
       isCorrect: false
-      explanation: You use Azure B2C to manage customer identities. You use Azure AD B2B to invite external users to your tenant so that your staff can collaborate with them.
-    - content: Azure AD B2B allows you to let your users access virtual machines by using their company Azure AD credentials.
+      explanation: You use Azure B2C to manage customer identities. You use Microsoft Entra B2B to invite external users to your tenant so that your staff can collaborate with them.
+    - content: Microsoft Entra B2B allows you to let your users access virtual machines by using their company Microsoft Entra credentials.
       isCorrect: false
-      explanation: You use Azure AD B2B to invite external users to your tenant so that your staff can collaborate with them.
-    - content: Azure AD B2B allows you to invite external users to your tenant so that your staff can collaborate with them.
+      explanation: You use Microsoft Entra B2B to invite external users to your tenant so that your staff can collaborate with them.
+    - content: Microsoft Entra B2B allows you to invite external users to your tenant so that your staff can collaborate with them.
       isCorrect: true
       explanation: If your company works with external contractors, those contractors can be invited as guest users. When the work is done, access for those contractors can be revoked.
-  - content: What does Azure AD Application Proxy do?
+  - content: What does Microsoft Entra application proxy do?
     choices:
-    - content: You use it to identify applications in your instance of Azure AD.
+    - content: You use it to identify applications in your instance of Microsoft Entra ID.
       isCorrect: false
-      explanation: You use Application Proxy to add on-premises applications to your instance of Azure AD.
-    - content:  You use it to add on-premises applications to your instance of Azure AD.
+      explanation: You use Application Proxy to add on-premises applications to your instance of Microsoft Entra ID.
+    - content:  You use it to add on-premises applications to your instance of Microsoft Entra ID.
       isCorrect: true
       explanation: By using Application Proxy in this way, you create secure remote access for your on-premises applications.
-    - content: You use it to add Azure AD Gallery applications to your instance of Azure AD.
+    - content: You use it to add Microsoft Entra Gallery applications to your instance of Microsoft Entra ID.
       isCorrect: false
-      explanation: You use Application Proxy to add on-premises applications to your instance of Azure AD.
+      explanation: You use Application Proxy to add on-premises applications to your instance of Microsoft Entra ID.

@@ -5,11 +5,10 @@ title: When to use Kubernetes
 metadata:
   title: When to use Kubernetes
   description: When to use Kubernetes
-  ms.date: 4/24/2020
+  ms.date: 10/25/2023
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 
 durationInMinutes: 4
 content: |

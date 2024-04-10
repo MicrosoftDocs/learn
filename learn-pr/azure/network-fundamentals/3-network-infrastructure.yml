@@ -4,11 +4,10 @@ title: Types of network devices to use when you build a network
 metadata:
   title: Types of network devices to use when you build a network
   description: Explore network standards and the purpose and use of repeaters, hubs, switches, and routers that are used to build networks.
-  ms.date: 01/09/2020
+  ms.date: 05/11/2023
   author: cryophobia
   ms.author: chrvaw
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 11
 content: |
   [!include[](includes/3-network-infrastructure.md)]
@@ -21,7 +20,7 @@ quiz:
     - content: "To ensure that hardware conforms to a minimum standard necessary for a good network development."
       isCorrect: false
       explanation: "Network standards are designed to ensure that hardware and software made by different vendors work seamlessly together."
-    - content: "To ensure that software is tightly constrained and meets the needs of the organization's network."
+    - content: "To ensure that software is tightly constrained, and meets the needs of the organization's network."
       isCorrect: false
       explanation: "Network standards are designed to ensure that hardware and software made by different vendors work seamlessly together."
     - content: "To ensure that hardware and software made by different vendors can work together seamlessly."

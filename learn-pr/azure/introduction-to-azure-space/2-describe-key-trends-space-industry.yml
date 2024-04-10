@@ -4,11 +4,11 @@ title: Describe key trends of the space industry
 metadata:
   title: Describe key trends of the space industry
   description: Learn about the factors that are contributing to the growth of the space industry.
-  ms.date: 09/16/2022
+  ms.date: 03/31/2023
   author: meaghanlewis
   ms.author: mosagie
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  manager: eliotgra
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/2-describe-key-trends-space-industry.md)]

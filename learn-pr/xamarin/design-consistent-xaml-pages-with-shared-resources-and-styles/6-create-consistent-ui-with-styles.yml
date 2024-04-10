@@ -3,11 +3,10 @@ uid: learn-xamarin.design-consistent-xaml-pages-with-shared-resources-and-styles
 metadata:
   title: Create a consistent UI by using styles
   description: "Learn how to create consistent UI by using styles."
-  ms.date: 05/01/2019
+  ms.date: 02/20/2024
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-xamarin
+  ms.topic: unit
   
 title: Create a consistent UI by using styles
 durationInMinutes: 8

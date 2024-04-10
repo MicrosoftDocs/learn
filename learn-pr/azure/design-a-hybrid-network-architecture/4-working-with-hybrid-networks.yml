@@ -3,11 +3,10 @@ uid: learn.design-a-hybrid-network-architecture.4-working-with-hybrid-networks
 metadata:
   title: Work with hybrid networks on Azure
   description: Explore hybrid networking patterns in Azure, learn the features and limitations of individual services, and get an overview of the hub-spoke architecture.
-  ms.date: 01/14/2020
+  ms.date: 02/16/2024
   author: duongau
   ms.author: duau
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: e2e-hybrid
 title: Work with hybrid networks on Azure
 durationInMinutes: 10
@@ -18,18 +17,18 @@ quiz:
   questions:
   - content: 'Why would you implement a VPN gateway in your Azure virtual network?'
     choices:
-    - content: To improve the performance of the ExpressRoute circuit
+    - content: To improve the performance of the ExpressRoute circuit.
       isCorrect: false
       explanation: A VPN gateway would be used to provide extra resiliency should the ExpressRoute circuit be unavailable.
-    - content: To allow the ExpressRoute circuit to connect to your Azure virtual network
+    - content: To allow the ExpressRoute circuit to connect to your Azure virtual network.
       isCorrect: false
       explanation: The ExpressRoute circuit connects to a Microsoft Enterprise edge router, not to a VPN gateway.
-    - content: To allow the ExpressRoute circuit to connect to your on-premises network
+    - content: To allow the ExpressRoute circuit to connect to your on-premises network.
       isCorrect: false
       explanation: The ExpressRoute circuit connects to the local edge routers of a connectivity provider.
-    - content: To provide a redundant failover connection
+    - content: To provide a redundant failover connection.
       isCorrect: true
-      explanation: The VPN gateway provides a direct connection between your on-premises gateway and the Azure virtual network. The VPN gateway can be used if there is an ExpressRoute circuit failure.
+      explanation: The VPN gateway provides a direct connection between your on-premises gateway and the Azure virtual network. The VPN gateway can be used if there's an ExpressRoute circuit failure.
   - content: 'How are VPN gateway connections to an on-premises network routed?'
     choices:
     - content: Through a private VPN connection
@@ -38,23 +37,23 @@ quiz:
     - content: Over the public internet
       isCorrect: true
       explanation: A VPN gateway sends encrypted traffic between an on-premises network and the Azure network over the public internet.
-    - content: Through the Azure datacenter
+    - content: Through the Azure datacenter.
       isCorrect: false
       explanation: VPN gateways are used to connect to an Azure network in your subscription not to an Azure data-center. 
-    - content: By provisioning a traffic manager
+    - content: By provisioning a traffic manager.
       isCorrect: false
       explanation: Traffic managers help with routing and traffic filtering but not for on-premises networks.
   - content: 'What is the underlying reason for implementing a hub-spoke architecture?'
     choices:
-    - content: Greater cost visibility
+    - content: Greater cost visibility.
       isCorrect: false
       explanation: A hub-spoke architecture can help reduce cost, but it doesn't improve cost visibility.
-    - content: Greater security
+    - content: Greater security.
       isCorrect: false
       explanation: A hub-spoke architecture might be more secure, but it isn't normally considered a benefit.
-    - content: Greater business visibility
+    - content: Greater business visibility.
       isCorrect: true
-      explanation: The hub becomes the core of the business and provides the foundations for much deeper business insight.
-    - content: Faster network communications
+      explanation: The hub becomes the core of the business and provides the foundations for deeper business insight.
+    - content: Faster network communications.
       isCorrect: false
       explanation: A hub-spoke architecture might help increase network speed, but it isn't guaranteed to remove network bottlenecks.

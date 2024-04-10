@@ -6,8 +6,8 @@ metadata:
   ms.date: 06/08/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: active-directory
 title: Troubleshoot Active Directory
 summary: Learn how to troubleshoot AD DS service failures or degraded performance. Learn how to recover deleted security objects and the AD DS database, and how to troubleshoot hybrid authentication issues.
 abstract: |
@@ -29,8 +29,8 @@ roles:
 - technology-manager
 products:
 - azure
-- azure-active-directory
-- azure-active-directory-domain
+- entra-id
+- entra
 - windows-server
 subjects:
 - identity-access

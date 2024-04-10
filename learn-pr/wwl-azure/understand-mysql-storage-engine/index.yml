@@ -6,8 +6,8 @@ metadata:
   ms.date: 11/08/2022
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: mysql
 title: Understand the MySQL storage engine
 summary: Learn about MySQL’s pluggable storage engine model, common storage engines, and storage engines supported by Azure Database for MySQL.
 abstract: |
@@ -29,7 +29,7 @@ products:
 - azure-database-mysql
 - azure-storage
 subjects:
-- database
+- databases
 units:
 - learn.wwl.understand-mysql-storage-engine.introduction
 - learn.wwl.understand-mysql-storage-engine.describe-common-storage-engines

@@ -4,11 +4,10 @@ title: About Azure shared disks
 metadata:
   title: About Azure shared disks
   description: This unit describes the features of Azure shared disks and their usage scenarios.
-  ms.date: 06/23/2021
+  ms.date: 09/05/2023
   author: roygara
   ms.author: rogarana
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-define-azure-shared-disks.md)]

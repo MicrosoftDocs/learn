@@ -3,11 +3,10 @@ uid: learn.control-network-traffic-flow-with-routes.2-azure-virtual-network-rout
 metadata:
   title: Identify routing capabilities of an Azure virtual network
   description: Identify routing capabilities of an Azure virtual network
-  ms.date: 03/02/2022
-  author: KumudD
-  ms.author: kumud
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/20/2023
+  author: mbender-ms
+  ms.author: mbender
+  ms.topic: unit
 title: Identify routing capabilities of an Azure virtual network
 durationInMinutes: 10
 content: |

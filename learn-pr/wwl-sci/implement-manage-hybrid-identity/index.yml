@@ -3,23 +3,23 @@ uid: learn.wwl.implement-manage-hybrid-identity
 metadata:
   title: Implement and manage hybrid identity
   description: "Creating a hybrid-identity solution to use your on-premises active directory can be challenging. Explore how to implement a secure hybrid-identity solution."
-  ms.date: 02/03/2023
+  ms.date: 01/04/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: entra
 title: Implement and manage hybrid identity
 summary: Creating a hybrid-identity solution to use your on-premises active directory can be challenging. Explore how to implement a secure hybrid-identity solution.
 abstract: |
   By the end of this module you will be able to:
-  *   Plan, design, and implement Azure Active Directory Connect (AADC)
-  *   Manage Azure Active Directory Connect (AADC)
+  *   Plan, design, and implement Microsoft Entra Connect
+  *   Manage Microsoft Entra Connect
   *   Manage password hash synchronization (PHS)
   *   Manage pass-through authentication (PTA)
   *   Manage seamless single sign-on (seamless SSO)
   *   Manage federation excluding manual ADFS deployments
   *   Troubleshoot synchronization errors
-  *   Implement and manage Azure Active Directory Connect Health
+  *   Implement and manage Microsoft Entra Connect Health
 prerequisites: |
   None
 iconUrl: /training/achievements/implement-and-manage-hybrid-identity.svg
@@ -31,12 +31,9 @@ roles:
 - security-engineer
 products:
 - azure
-- azure-active-directory
-- azure-active-directory-b2c
-- azure-active-directory-domain
-- azure-active-directory-connect
 - entra
-- entra-workload-identities
+- entra-external-id
+- entra-id
 subjects:
 - identity-access
 units:

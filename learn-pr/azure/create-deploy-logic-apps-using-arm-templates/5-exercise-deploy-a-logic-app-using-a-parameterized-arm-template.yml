@@ -4,11 +4,12 @@ title: Exercise - Deploy and export an Azure Logic Apps workflow using an ARM te
 metadata:
   title: Exercise - Deploy and export an Azure Logic Apps workflow using an ARM template
   description: Exercise - Deploy and export an Azure Logic Apps workflow using an ARM template
-  ms.date: 05/03/2019
+  ms.date: 12/12/2022
   author: ecfan
   ms.author: estfan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-arm-template
   ROBOTS: INDEX,FOLLOW
 durationInMinutes: 9
 interactive: bash

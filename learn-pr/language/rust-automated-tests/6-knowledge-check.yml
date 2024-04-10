@@ -3,16 +3,15 @@ uid: learn.language.rust-automated-tests.knowledge-check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 01/26/2021
+  ms.date: 06/14/2021
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Knowledge check
 durationInMinutes: 2
 content: |
-  Answer the following questions to demonstrate what you've learned:
+  Answer the following questions, then select **Check your answers**.
 quiz:
   questions:
   - content: "What is the expected outcome of a test function tagged with the `#[test]` attribute?"
@@ -25,8 +24,8 @@ quiz:
       explanation: "Incorrect. The `$[should_panic]` attribute, which indicates a test should generate a panic, isn't applied to this function."
     - content: "This function should execute a test without any panic."
       isCorrect: true
-      explanation: "Correct. The function marked with this attribute will run without any panic."
-    - content: "This function indicates the function is a test."
+      explanation: "Correct. The function marked with this attribute runs without any panic."
+    - content: "This tag indicates the function is a test and shouldn't be executed."
       isCorrect: false
       explanation: "Incorrect. This statement does indicate a test, but the expected outcome is that the test should be executed."
   - content: "What is the expected outcome of a test function tagged with the `#[test]` and `#[should_panic]` attributes?"

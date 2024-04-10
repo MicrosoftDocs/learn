@@ -3,11 +3,10 @@ uid: learn.language.rust-create-program.4-tuples-structs
 metadata:
   title: Define data collections by using tuples and structs
   description: Explore how to use tuple and struct data types for collections and compound data in Rust.
-  ms.date: 09/20/2021
+  ms.date: 12/05/2022
   author: GitHubber17
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Define data collections by using tuples and structs
 durationInMinutes: 6

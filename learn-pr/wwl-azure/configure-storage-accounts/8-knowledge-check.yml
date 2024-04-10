@@ -4,27 +4,26 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/24/2023
+  ms.date: 03/08/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: ""
   questions:
-  - content: "Which storage solution replicates data to a secondary region, maintains six copies of the data, and is the default replication option?"
+  - content: "Which storage solution replicates data to a secondary region?"
     choices:
     - content: "Locally redundant storage"
       isCorrect: false
       explanation: "Incorrect. Locally redundant storage replicates data three times within a single data center in the primary region."
     - content: "Read-access geo-redundant storage"
       isCorrect: true
-      explanation: "Correct. Read-access geo-redundant storage is the default replication option. Geo-redundant storage (GRS) copies the data synchronously three times within a single physical location in the primary region by using LRS. The data is then copied asynchronously to a single physical location in the secondary region."
+      explanation: "Correct. The data is copied asynchronously to a single physical location in the secondary region."
     - content: "Zone-redundant storage"
       isCorrect: false
       explanation: "Incorrect. Zone-redundant storage replicates Azure Storage data synchronously across three Azure availability zones in the primary region."

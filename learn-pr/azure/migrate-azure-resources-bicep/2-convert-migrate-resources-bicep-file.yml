@@ -5,11 +5,12 @@ metadata:
   unitType: learning-content
   title: Convert and migrate your resources to a Bicep file
   description: Learn about the convert and migrate phases of the recommended workflow for migrating your Azure resources to Bicep.
-  ms.date: 12/01/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.date: 01/19/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 10
 content: |
   [!include[](includes/2-convert-migrate-resources-bicep-file.md)]

@@ -4,11 +4,10 @@ title: Design a strategy for using tiered storage
 metadata:
   title: Design a strategy for using tiered storage
   description: Design a strategy for using tiered storage
-  ms.date: 09/30/2021
+  ms.date: 11/02/2023
   author: tamram
   ms.author: tamram
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/2-design-a-strategy-for-using-tiered-storage.md)]

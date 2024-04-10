@@ -18,9 +18,9 @@ To create your DNS zone:
 
 1. In the *Search services and marketplace* search box, search for and select **DNS zone** by Microsoft. The **DNS zone** pane appears.
 
-1. Select **Create**.
+1. Select **Create** > **DNS zone**.
 
-    ![Screenshot of DNS zone, with Create highlighted.](../media/4-dnszonecreate.png)
+    :::image type="content" source="../media/4-dnszonecreate.png" alt-text="Screenshot of DNS zone, with Create highlighted.":::
 
     The **Create DNS zone** pane appears.
 
@@ -32,13 +32,13 @@ To create your DNS zone:
     | Subscription  |  Concierge subscription  |
     | Resource group  | From the dropdown list, select <rgn>[sandbox resource group]</rgn> |
     | **Instance details** |
-    | Name  |   The name needs to be unique in the sandbox. Use `wideworldimportsXXXX.com` where you replace the Xs with letters or numbers. |
+    | Name  |   The name needs to be unique in the sandbox. Use `wideworldimportsXXXX.com`, replacing the Xs with letters or numbers. |
 
-    ![Screenshot of Create DNS zone page.](../media/4-creatednszone.png)
+    :::image type="content" source="../media/4-creatednszone.png" alt-text="Screenshot of Create DNS zone page.":::
 
 1. Select **Review + create**.
 
-1. After validation passes, select **Create**. It will take a few minutes to create the DNS zone.
+1. After validation passes, select **Create**. It'll take a few minutes to create the DNS zone.
 
 1. When deployment is complete, select **Go to resource**. Your **DNS zone** pane appears.
 
@@ -67,9 +67,9 @@ The primary record set to create is the A record. The A record set is used to po
     | Name     |   www      | The host name that you want to resolve to an IP address. |
     | Type    |     A    |  The **A** record is the most commonly used. If you're using IPv6, select the **AAAA** type.     |
     | Alias record set    | No   | This can only be applied to A, AAAA, and CNAME record types.  |
-    | TTL     |      1  | The time-to-live, which specifies the period of time each DNS server caches the resolution before it's purged.        |
+    | TTL     |      1  | The time to live, which specifies the period of time each DNS server caches the resolution before it's purged.        |
     | TTL unit     |    Hours     |  This value can be seconds, minutes, hours, days, or weeks. Here, you're selecting hours.  |
-    | IP Address    |    10.10.10.10     |  The IP address the record name resolves to. In a real-world scenario, you would enter the public IP address for your web server. |
+    | IP Address    |    10.10.10.10     |  The IP address the record name resolves to. In a real-world scenario, you'd enter the public IP address for your web server. |
 
 1. Select **OK** to add the record to your zone.
 
@@ -79,9 +79,9 @@ Note that it's possible to have more than one IP address set up for your web ser
 
 ## Verify your global Azure DNS
 
-In a real-world scenario, after you create the public DNS zone, you'll update the NS records of the domain-name registrar to delegate the domain to Azure.
+In a real-world scenario, after you create the public DNS zone, you'd update the NS records of the domain-name registrar to delegate the domain to Azure.
 
-Even though we don't have a registered domain, it's still possible to verify that the DNS zone works as expected, by using the `nslookup` tool.
+Even though we don't have a registered domain, it's still possible to verify that the DNS zone works as expected by using the `nslookup` tool.
 
 ### Use nslookup to verify the configuration
 
@@ -101,6 +101,6 @@ Here's how to use `nslookup` to verify the DNS zone configuration.
 
 1. You should see that your host name `www.wideworldimportsXXXX.com` resolves to 10.10.10.10.
 
-   ![Screenshot of Cloud Shell, showing the nslookup results.](../media/4-nslookup.png)
+    :::image type="content" source="../media/4-nslookup.png" alt-text="Screenshot of Cloud Shell, showing the nslookup results.":::
 
-You have successfully set up a DNS zone and created an A record.
+You've successfully set up a DNS zone and created an A record.

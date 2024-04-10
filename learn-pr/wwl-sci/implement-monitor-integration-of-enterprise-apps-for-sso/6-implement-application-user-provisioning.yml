@@ -1,16 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-monitor-integration-of-enterprise-apps-for-sso.implement-application-user-provisioning
-title: Implement application user provisioning
+title: 'Implement application-based user provisioning '
 metadata:
-  title: Implement application user provisioning
-  description: "Implement application user provisioning"
-  ms.date: 02/07/2023
+  title: Implement application-based user provisioning
+  description: "Implement application-based user provisioning"
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 5
+  ms.topic: unit
+durationInMinutes: 1
 content: |
   [!include[](includes/6-implement-application-user-provisioning.md)]

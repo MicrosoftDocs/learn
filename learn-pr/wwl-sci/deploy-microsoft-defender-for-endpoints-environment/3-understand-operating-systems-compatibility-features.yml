@@ -7,8 +7,8 @@ metadata:
   ms.date: 02/17/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.topic: unit
+  ms.custom: linux-related-content
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

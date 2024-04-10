@@ -1,6 +1,5 @@
 
 
-
 The C# compiler works behind the scenes to assist you as you write your code. It can infer your variable's data type by its initialized value. In this unit, you'll learn about this feature, called implicitly typed local variables.
 
 ## What are implicitly typed local variables?

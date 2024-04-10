@@ -1,4 +1,5 @@
 
+
 Azure Cosmos DB approaches data consistency as a spectrum of choices instead of two extremes. Strong consistency and eventual consistency are at the ends of the spectrum, but there are many consistency choices along the spectrum. Developers can use these options to make precise choices and granular tradeoffs with respect to high availability and performance.
 
 Azure Cosmos DB offers five well-defined levels. From strongest to weakest, the levels are:

@@ -1,4 +1,3 @@
-
 Now it's your chance to build an Azure Synapse Analytics pipeline. In this exercise, you'll implement a run an Azure Synapse Analytics pipeline that transfers and transforms data.
 
 > [!NOTE]

@@ -2,23 +2,30 @@
 uid: learn.wwl.introduction-open-source-database-migration-azure-cosmos-db
 metadata:
   title: Introduction to open source database migration to Azure Cosmos DB
-  description: "Introduction to open source database migration to Azure Cosmos DB"
-  ms.date: 01/07/2021
+  description: "Module on the use of Azure Cosmos DB as part of a migration solution."
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: cosmos-db
+  ai-usage: human-only
 title: Introduction to open source database migration to Azure Cosmos DB
 summary: In this module, you will gain an understanding of Cosmos DB and the main considerations when migrating to Cosmos DB.
 abstract: |
   By the end of this module, you'll be able to:
-  - Describe the key features of Cosmos DB.
-  - Describe the Cosmos DB architecture and APIs.
-  - Plan a NoSQL to Cosmos DB migration.
-  - Plan Cosmos DB throughput.
-  - Choose an appropriate partitioning key.
-prerequisites: |
-  Knowledge of the fundamental concepts of partitioning, replication, and resource governance for building and configuring scalable NoSQL applications that are agnostic of a Cosmos DB API.
+
+  -   Describe the key features of Cosmos DB.
+
+  -   Describe the Cosmos DB architecture and APIs.
+
+  -   Plan a NoSQL to Cosmos DB migration.
+
+  -   Plan Cosmos DB throughput.
+
+  -   Choose an appropriate partitioning key.
+prerequisites: Knowledge of the fundamental concepts of partitioning, replication, and resource governance for building and configuring scalable NoSQL applications that are agnostic of a Cosmos DB API.
 iconUrl: /training/achievements/Introduction-to-open-source-database-migration-to-Azure-Cosmos-DB.svg
 levels:
 - intermediate
@@ -28,7 +35,7 @@ products:
 - azure
 - azure-cosmos-db
 subjects:
-- database
+- databases
 units:
 - learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.introduction
 - learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.cosmos-db-overview

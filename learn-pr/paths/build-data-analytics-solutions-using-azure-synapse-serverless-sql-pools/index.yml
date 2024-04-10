@@ -6,8 +6,10 @@ metadata:
   ms.date: 01/24/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 title: Build data analytics solutions using Azure Synapse serverless SQL pools
 prerequisites: |
   Consider completing the [Explore data analytics in Azure](/training/paths/azure-data-fundamentals-explore-data-warehouse-analytics?azure-portal=true) and [Get started querying with Transact-SQL](/training/paths/get-started-querying-with-transact-sql?azure-portal-true) learning paths before starting this learning path. You will need knowledge of:
@@ -26,7 +28,7 @@ products:
 subjects:
 - data-analytics
 - data-engineering
-- serverless-compute
+- serverless-computing
 modules:
 - learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools
 - learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake

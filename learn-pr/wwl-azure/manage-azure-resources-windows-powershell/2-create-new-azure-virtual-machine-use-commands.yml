@@ -4,11 +4,12 @@ title: Create a new Azure virtual machine by using Windows PowerShell commands
 metadata:
   title: Create a new Azure virtual machine by using Windows PowerShell commands
   description: "Create a new Azure virtual machine by using Windows PowerShell commands"
-  ms.date: 10/20/2022
+  ms.date: 03/22/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

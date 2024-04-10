@@ -3,11 +3,10 @@ uid: learn.manage-costs-partner-cost-management.enable-cost-management-for-custo
 metadata:
   title: Enable cost management for customers
   description: Enable cost management for customers
-  ms.date: 11/01/2021
+  ms.date: 05/30/2023
   author: bandersmsft
   ms.author: banders
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Enable cost management for customers
 durationInMinutes: 6
 content: |

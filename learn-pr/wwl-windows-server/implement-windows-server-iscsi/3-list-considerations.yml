@@ -4,11 +4,10 @@ title: List the considerations for implementing iSCSI
 metadata:
   title: List the considerations for implementing iSCSI
   description: "List the considerations for implementing iSCSI"
-  ms.date: 10/20/2021
+  ms.date: 10/10/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

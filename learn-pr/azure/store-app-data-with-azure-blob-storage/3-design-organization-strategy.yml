@@ -4,11 +4,10 @@ title: Design a storage organization strategy
 metadata:
   title: Design a storage organization strategy
   description: Design a storage organization strategy
-  ms.date: 03/23/2023
+  ms.date: 10/23/2023
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/3-design-organization-strategy.md)]

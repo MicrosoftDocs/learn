@@ -4,11 +4,10 @@ title: Exercise - Use Update Management on a virtual machine
 metadata:
   title: Exercise - Use Update Management on a virtual machine
   description: Exercise - Use Update Management on a virtual machine
-  ms.date: 12/21/2018
-  author: cynthn
-  ms.author: cynthn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 03/15/2024
+  author: ju-shim
+  ms.author: jushiman
+  ms.topic: unit
 durationInMinutes: 12
 content: |
   [!include[](includes/3-exercise-use-update-management-on-a-virtual-machine.md)]

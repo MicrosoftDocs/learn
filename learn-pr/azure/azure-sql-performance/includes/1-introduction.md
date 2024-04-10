@@ -15,7 +15,7 @@ At the end of this module, you will be able to:
 * Experience working with, maintaining, and developing with SQL Server.
 * Experience with Azure, such as deploying and managing resources.
 
-For the exercises, a sandbox environment is provided for Azure resources. However, you need to do a few things on your local machine in order to complete the exercises:  
+For the exercises, we provide a sandbox environment for Azure resources. However, you need to do a few things on your local machine in order to complete the exercises:  
 
 * Use a Windows machine or VM (SQL Server Management Studio is only available on Windows).  
 * Download and install [the latest version of SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms?azure-portal=true).

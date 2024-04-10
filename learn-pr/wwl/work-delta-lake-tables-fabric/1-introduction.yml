@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-delta-lake-tables-fabric.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 01/31/2024
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: unit
+  ms.custom:
+  - build-2023
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

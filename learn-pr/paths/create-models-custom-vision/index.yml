@@ -1,0 +1,33 @@
+### YamlMime:LearningPath
+uid: learn.wwl.create-models-custom-vision
+metadata:
+  title: Create vision models with Azure AI Custom Vision
+  description: How to create custom computer vision solutions with Azure AI Custom Vision
+  ms.date: 1/29/2024
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: learning-path
+title: Create vision models with Azure AI Custom Vision
+prerequisites: |
+  Before starting this learning path, you should already have:
+  - Familiarity with Azure and the Azure portal.
+  - Experience programming with C# or Python.
+  If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path before starting this one.
+summary: |
+  Computer vision is an area of artificial intelligence that deals with visual perception. Azure AI Custom Vision enables you to train models on your own images for customized computer vision scenarios.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+products:
+- ai-services
+- azure-custom-vision
+subjects:
+- artificial-intelligence
+modules:
+- learn.wwl.classify-images
+- learn.wwl.detect-objects-images
+trophy:
+  uid: learn.wwl.create-models-custom-vision.trophy

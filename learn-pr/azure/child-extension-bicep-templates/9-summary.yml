@@ -5,11 +5,12 @@ metadata:
   unitType: summary
   title: Summary
   description: This unit summarizes what you learned about using Bicep.
-  ms.date: 01/23/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial # do we need ms.topic?
-  ms.prod: learning-azure
+  ms.date: 12/15/2023
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]

@@ -4,11 +4,10 @@ title: Exercise – Create Container insights alert rules
 metadata:
   title: Exercise – Create Container insights alert rules
   description: In this exercise, you'll practice creating Container insights alert rules.
-  ms.date: 08/10/2022
+  ms.date: 03/13/2024
   author: bwren
   ms.author: bwren
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/7-exercise-create-container-insights-alert-rules.md)]

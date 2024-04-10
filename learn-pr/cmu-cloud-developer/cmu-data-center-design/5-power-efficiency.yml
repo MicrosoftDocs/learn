@@ -4,11 +4,10 @@ title: Power and efficiency
 metadata:
   title: Power and efficiency
   description: Power and efficiency
-  ms.date: 02/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
   show_latex: true
 durationInMinutes: 23

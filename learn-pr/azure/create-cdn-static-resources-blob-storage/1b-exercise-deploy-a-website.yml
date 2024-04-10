@@ -4,12 +4,11 @@ title: Exercise - Deploy a static website to blob storage
 metadata:
   title: Exercise - Deploy a static website to blob storage
   description: Deploy a static website to blob storage
-  ms.date: 9/22/2022
+  ms.date: 01/10/2024
   author: duongau
   ms.author: duau
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: true
+  ms.topic: unit
+azureSandbox: True
 interactive: bash
 durationInMinutes: 8
 content: |

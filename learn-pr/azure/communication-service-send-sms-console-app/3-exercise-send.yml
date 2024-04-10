@@ -6,9 +6,8 @@ metadata:
   description: Send an SMS with an SMS-enabled telephone number provisioned via Azure Communication Services.
   author: softchris
   ms.author: chnoring
-  ms.date: 03/03/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 05/30/2023
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/3-exercise-send.md)]

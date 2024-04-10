@@ -7,8 +7,7 @@ metadata:
   ms.date: 10/27/2022
   author: AbbyMSFT
   ms.author: abbyweisberg
-  ms.topic: interactive-tutorial
-  ms.prod: azure-monitor
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/2-azure-workbooks-overview.md)]

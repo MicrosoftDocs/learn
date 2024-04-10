@@ -5,10 +5,9 @@ metadata:
   title: Describe spatial data with GeoJSON
   description: Learn about the GeoJSON format and how to use it to describe spatial data on a map.
   author: acomfort248
-  ms.author: jabenn
-  ms.date: 06/10/2022
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: chnoring
+  ms.date: 03/01/2023
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 5
 content: |

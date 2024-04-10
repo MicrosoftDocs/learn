@@ -2,12 +2,12 @@
 uid: learn.wwl.examine-azure-defender-for-iot-security-agents
 metadata:
   title: Examine Microsoft Defender for IoT security agents
-  description: "This module introduces you to Microsoft Defender for IoT security agents and how security agents can be used to extend your security monitoring capabilities to the device-side of your IoT solution."
-  ms.date: 07/14/2022
+  description: This module introduces you to Microsoft Defender for IoT security agents and how security agents can be used to extend your security monitoring capabilities to the device-side of your IoT solution.
+  ms.date: 10/09/2023
   author: wwlpublish
-  ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: serlingdavis
+  ms.topic: module
+  ms.service: azure
 title: Examine Microsoft Defender for IoT security agents
 summary: This module introduces you to Microsoft Defender for IoT security agents and how security agents can be used to extend your security monitoring capabilities to the device-side of your IoT solution.
 abstract: |
@@ -22,7 +22,7 @@ prerequisites: |
   - Explain the features and capabilities of IoT Hub and implement secure device-to-cloud communication between an IoT device and an IoT hub instance.
   - Describe the Azure IoT SDKs for devices and services, and how Visual Studio Code, Azure CLI, and the Azure Cloud Shell can be used to configure and develop components of an IoT solution.
   - Describe the Azure IoT Edge runtime support for custom code development, the IoT Edge coding tools, and the IoT Edge coding and debugging processes.
-iconUrl: /training/achievements/azure-defender-iot-security-agents.svg
+iconUrl: /learn/achievements/azure-defender-iot-security-agents.svg
 levels:
 - intermediate
 roles:

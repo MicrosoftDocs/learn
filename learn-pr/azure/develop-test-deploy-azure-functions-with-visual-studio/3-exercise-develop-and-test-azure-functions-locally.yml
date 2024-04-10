@@ -4,12 +4,11 @@ title: Exercise - Create and test a simple Azure Function locally with Visual St
 metadata:
   title: Exercise - Create and test a simple Azure Function locally with Visual Studio
   description: Exercise - Create and test a simple Azure Function locally with Visual Studio
-  ms.date: 04/18/2019
+  ms.date: 03/01/2023
   author: ggailey777
   ms.author: glenga
   manager: jmartens
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 12
 content: |
   [!include[](includes/3-exercise-develop-and-test-azure-functions-locally.md)]

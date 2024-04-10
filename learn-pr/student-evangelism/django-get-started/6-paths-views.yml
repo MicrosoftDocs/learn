@@ -4,11 +4,10 @@ title: Understand paths and views
 metadata:
   title: Understand paths and views
   description: Learn about paths and views in Django.
-  ms.date: 02/25/2021
+  ms.date: 12/30/2022
   author: GeekTrainer
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 2
 content: |

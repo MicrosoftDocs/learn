@@ -2,12 +2,12 @@
 uid: learn.wwl.explore-performance-based-design
 metadata:
   title: Explore performance-based design
-  description: "Explore performance-based design"
+  description: Explore performance-based design
   ms.date: 04/28/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Explore performance-based design
 summary: Explore normalization for relational databases. Investigate the impact of proper datatype usage. Compare types of indexes.
 abstract: |

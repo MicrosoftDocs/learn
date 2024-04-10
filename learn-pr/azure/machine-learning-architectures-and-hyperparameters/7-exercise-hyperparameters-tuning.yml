@@ -4,11 +4,10 @@ title: Exercise - Hyperparameter tuning with random forests
 metadata:
   title: Exercise - Hyperparameter tuning with random forests
   description: Exercise about hyperparameter tuning with random forests
-  ms.date: 05/25/2021
+  ms.date: 04/17/2023
   author: TomReidNZ
   ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 12
 sandbox: true
 notebook: notebooks/7-7-exercise-hyperparameters-tuning.ipynb

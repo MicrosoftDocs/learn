@@ -1,10 +1,12 @@
-Now that you have everything running locally, let's deploy the application to the cloud and test its behavior in production.
+Now that everything runs locally, you can deploy the application to the cloud and test its behavior in production.
 
 ## Create an Azure App Service instance
 
-Let's create an Azure App Service instance to host our application. The following code creates a basic App Service plan that uses Linux and then adds an instance of Java on App Service in that plan:
+Create an Azure App Service instance to host your application. Use the following Azure CLI code to create a basic App Service plan that uses Linux, and then add an instance of Java on App Service in that plan.
 
-```bash
+To use Java 11 or Java 17 instead of Java 8, use `"JAVA|<version>-java<version>"` instead of `"JAVA|8-jre8"` as the web application runtime.
+
+```azurecli
 az appservice plan create \
     --resource-group $AZ_RESOURCE_GROUP \
     --name $AZ_REDIS_NAME-webapp-plan \
@@ -19,80 +21,74 @@ az webapp create \
 ```
 
 > [!NOTE]
-> If you'd rather use Java 11 instead of Java 8, use `"JAVA|11-java11"` as the web application runtime.
+> The preceding code reuses the `$AZ_REDIS_NAME` variable to name the App Service plan and App Service instance, but you can use different names. The App Service instance name is part of the URL, which must be unique across Azure.
 
-> [!NOTE]
-> We're reusing the `$AZ_REDIS_NAME` variable to name the App Service plan and the App Service instance, but you can use your own names here. "AZ" and the App Service instance name will be part of the URL, which needs to be unique across Azure.
-
-You can go to the next section while this command finishes.
+You can do the next step while this deployment finishes.
 
 ## Deploy the Spring Boot application to Azure App Service
 
-In your project's `pom.xml` file, add a new plug-in in the `<plugins>` section:
+1. In your project's *pom.xml* file, add the following new plug-in in the `<plugins>` section:
 
-```xml
-<plugin>
-    <groupId>com.microsoft.azure</groupId>
-    <artifactId>azure-webapp-maven-plugin</artifactId>
-    <version>1.12.0</version>
-    <configuration>
-        <schemaVersion>V2</schemaVersion>
-        <resourceGroup>${env.AZ_RESOURCE_GROUP}</resourceGroup>
-        <appName>${env.AZ_REDIS_NAME}-webapp</appName>
-        <deployment>
-            <resources>
-                <resource>
-                    <directory>${project.basedir}/target</directory>
-                    <includes>
-                        <include>*.jar</include>
-                    </includes>
-                </resource>
-            </resources>
-        </deployment>
-    </configuration>
-</plugin>
-```
+   ```xml
+   <plugin>
+       <groupId>com.microsoft.azure</groupId>
+       <artifactId>azure-webapp-maven-plugin</artifactId>
+       <version>2.11.0</version>
+       <configuration>
+           <schemaVersion>V2</schemaVersion>
+           <resourceGroup>${env.AZ_RESOURCE_GROUP}</resourceGroup>
+           <appName>${env.AZ_REDIS_NAME}-webapp</appName>
+           <deployment>
+               <resources>
+                   <resource>
+                       <directory>${project.basedir}/target</directory>
+                       <includes>
+                           <include>*.jar</include>
+                       </includes>
+                   </resource>
+               </resources>
+           </deployment>
+       </configuration>
+   </plugin>
+   ```
 
-> [!NOTE]
-> In the preceding configuration, you'll reuse the environment variables that you configured earlier. For this configuration to work, your `$AZ_RESOURCE_GROUP` and `$AZ_REDIS_NAME` variables need to be correctly set up.
+   > [!NOTE]
+   > The preceding configuration uses the environment variables that you configured earlier. For this configuration to work, make sure your `$AZ_RESOURCE_GROUP` and `$AZ_REDIS_NAME` variables are correctly set up.
 
-You can now package your application and deploy it to Azure:
+1. After the App Service deployment finishes, run the following command to package your application and deploy it to Azure:
 
-```bash
-./mvnw package azure-webapp:deploy
-```
+   ```bash
+   ./mvnw package azure-webapp:deploy
+   ```
 
-That command will end up with a line like this one:
+1. When the deployment completes successfully, it returns the following line:
 
-```bash
-Successfully deployed the artifact to https://xxxx.azurewebsites.net
-```
+   ```output
+   Successfully deployed the artifact to https://<redisName>-webapp.azurewebsites.net
+   ```
 
-This is the URL of your running application, which we'll use in the next section.
+   Note the URL of your running application, as shown in the preceding output, to use in the next section.
 
 ## Test the application on Azure
 
-By using the URL from the previous section, you can now use the cURL commands that we were using on our local server, but on the cloud:
+Use your application URL to run the same client URL (cURL) commands in the cloud that you used on your local server.
 
-To retrieve data:
+1. To add a data item, run the following command:
 
-```bash
-curl https://$AZ_REDIS_NAME-webapp.azurewebsites.net
-```
+   ```bash
+   curl -d '{"description":"another description", "details":"some more details"}' -H "Content-Type: application/json" -X POST https://$AZ_REDIS_NAME-webapp.azurewebsites.net
+   ```
 
-To add an item:
+1. To retrieve the data, run:
 
-```bash
-curl -d '{"description":"a description", "details":"some details"}' -H "Content-Type: application/json" -X POST https://$AZ_REDIS_NAME-webapp.azurewebsites.net
-```
+   ```bash
+   curl https://$AZ_REDIS_NAME-webapp.azurewebsites.net
+   ```
 
-And to increment your session:
+1. To increment your session, run the following command several times:
 
-```bash
-curl -b cookie.txt -c cookie.txt https://$AZ_REDIS_NAME-webapp.azurewebsites.net/session
-```
+   ```bash
+   curl -b cookie.txt -c cookie.txt https://$AZ_REDIS_NAME-webapp.azurewebsites.net/session
+   ```
 
-> [!NOTE]
-> Your local server and your cloud service use the same Redis instance. So they are, in fact, clustered! Any data that you write in one instance will be available in the other instance.
-> 
->That's also how the cloud service will be able to scale out: by adding more nodes that will all use the same Redis instance to store both business data and session data.
+Your local server and your cloud service use the same Redis instance, so they're clustered. Data that you write in one instance is available in the other instance. The cloud service can scale out by adding more nodes that all use the same Redis instance to store both business data and session data.

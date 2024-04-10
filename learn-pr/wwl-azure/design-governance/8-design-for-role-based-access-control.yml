@@ -4,13 +4,12 @@ title: Design for role-based access control (RBAC)
 metadata:
   title: Design for role-based access control (RBAC)
   description: "Design for role-based access control (RBAC)"
-  ms.date: 10/08/2022
+  ms.date: 11/15/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/8-design-for-role-based-access-control.md)]

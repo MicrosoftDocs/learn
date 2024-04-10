@@ -5,10 +5,9 @@ metadata:
   title: Summary
   description: In this last unit, we briefly recap what we have learnt, and set directions for further learning.
   author: shwars
-  ms.author: dmitryso
-  ms.date: 04/14/2020
-  ms.topic: interactive-tutorial
-  ms.service: machine-learning
+  ms.author: chnoring
+  ms.date: 06/04/2020
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 1
 content: |

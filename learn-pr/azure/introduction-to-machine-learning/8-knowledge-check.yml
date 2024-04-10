@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Multiple-choice questions
-  ms.date: 05/25/2021
-  author: tomreidnz
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/05/2023
+  author: msakande
+  ms.author: mopeakande
+  ms.topic: unit
 durationInMinutes: 3
 quiz:
   title: Check your knowledge
@@ -42,7 +41,7 @@ quiz:
       explanation: "Correct."
     - content: "The training data is used to make changes to the objective. These changes help the objective be more like the model."
       isCorrect: false
-      explanation: "Incorrect. The training data and objective normally are not changed during training."
+      explanation: "Incorrect. The training data and objective aren't normally changed during training."
     - content: "The model is used to make changes to the training data. These changes help the training data get better at achieving the objective."
       isCorrect: false
-      explanation: "Incorrect. The training data and objective normally are not changed during training."
+      explanation: "Incorrect. The training data and objective aren't normally changed during training."

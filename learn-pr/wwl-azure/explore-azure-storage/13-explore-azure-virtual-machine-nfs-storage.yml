@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-azure-storage.virtual-machine-nfs-storage
-title: Explore Azure virtual machine NFS storage
+title: Explore Azure Virtual Machine NFS storage
 metadata:
-  title: Explore Azure virtual machine NFS storage
-  description: "Explore Azure virtual machine NFS storage"
-  ms.date: 04/20/2023
+  title: Explore Azure Virtual Machine NFS storage
+  description: "Explore Azure Virtual Machine NFS storage."
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/13-explore-azure-virtual-machine-nfs-storage.md)]

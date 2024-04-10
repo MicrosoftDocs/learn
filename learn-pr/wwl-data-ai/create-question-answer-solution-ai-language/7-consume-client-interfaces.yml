@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-question-answer-solution-ai-language.consume-client-interfaces
+title: Use a knowledge base
+metadata:
+  title: Use a knowledge base
+  description: "Use a knowledge base"
+  ms.date: 08/31/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-consume-client-interfaces.md)]

@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.configure-continuous-deployment-container-apps
+metadata:
+  title: Configure continuous deployment for container apps
+  description: "This module explores deployment options for containerized apps and delves into the features of Azure DevOps and Azure Pipelines. It guides users in setting up automated pipelines for container apps, covering agent pool configuration and secret variables management."
+  ms.date: 02/29/2024
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: ai-assisted
+title: Configure continuous deployment for container apps
+summary: This module explores deployment options for containerized apps. It reviews the features of Azure DevOps and examines automated deployments to Container Apps using Azure Pipelines.
+abstract: |
+  -   Examine deployment options and strategies for containerized applications.
+  -   Examine the features and capabilities of Azure DevOps and Azure Pipelines.
+  -   Learn how to set up automated build and deployment pipelines for container apps using Azure DevOps.
+  -   Examine how to configure agent pools and secret variables for pipelines.
+prerequisites: |
+  -   Basic understanding of cloud computing concepts and Azure services.
+  -   Familiarity with containerization technologies such as Docker and Kubernetes.
+  -   Knowledge of Azure container services, including Azure Container Registry and Azure Container Apps, would be beneficial.
+  -   Understanding of continuous integration and continuous deployment (CI/CD) concepts.
+  -   Experience with Azure DevOps or other CI/CD tools.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- devops-engineer
+products:
+- azure-pipelines
+subjects:
+- devops
+units:
+- learn.wwl.configure-continuous-deployment-container-apps.introduction
+- learn.wwl.configure-continuous-deployment-container-apps.review-continuous-deployment-options-container-apps
+- learn.wwl.configure-continuous-deployment-container-apps.examine-azure-devops-azure-pipelines
+- learn.wwl.configure-continuous-deployment-container-apps.configure-azure-pipeline-deployment-container-app
+- learn.wwl.configure-continuous-deployment-container-apps.examine-agents-agent-pools-pipelines
+- learn.wwl.configure-continuous-deployment-container-apps.examine-environment-secret-variables-pipelines
+- learn.wwl.configure-continuous-deployment-container-apps.knowledge-check
+- learn.wwl.configure-continuous-deployment-container-apps.summary
+badge:
+  uid: learn.wwl.configure-continuous-deployment-container-apps.badge

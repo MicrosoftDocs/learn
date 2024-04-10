@@ -1,0 +1,79 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-blazor.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge about what Blazor is and when you should use it to build your apps.
+  ms.date: 1/19/2024
+  author: danroth27
+  ms.author: daroth
+  ms.manager: markl
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+    - content: "What is Blazor?"
+      choices:
+        - content: "A way to run .NET code on WebAssembly."
+          isCorrect: false
+          explanation: "Blazor supports running your components on WebAssembly, but it can do much more! Blazor is a complete web UI framework that supports both server and client-side rendering."
+        - content: "A native UI framework for building Windows desktop apps."
+          isCorrect: false
+          explanation: "Blazor is a web UI framework, not a native UI framework, although you can use Blazor components to build native apps using a hybrid of web UI and native functionality."
+        - content: "A modern frontend web framework based on HTML, CSS, and C#"
+          isCorrect: true
+          explanation: "Blazor is a modern frontend web framework based on HTML, CSS, and C#."
+        - content: "A type of jacket resembling a suit jacket, but with a more casual cut."
+          isCorrect: false
+          explanation: "That's a 'blazer'! Blazor is a modern frontend web framework based on HTML, CSS, and C#"
+    - content: "What language do you typically use to author Blazor components?"
+      choices:
+        - content: "JavaScript"
+          isCorrect: false
+          explanation: "You can use JavaScript from Blazor apps, but it's not the primary authoring language."
+        - content: "XAML"
+          isCorrect: false
+          explanation: "Blazor components are written in Razor, not XAML."
+        - content: "Visual Basic"
+          isCorrect: false
+          explanation: "You can use Visual Basic in Blazor apps, but you don't typically author Blazor components with Visual Basic."
+        - content: "Razor"
+          isCorrect: true
+          explanation: "Blazor components are typically built using Razor, a convenient mixture of HTML and C#."
+    - content: "True or False: You can use existing JavaScript libraries with Blazor."
+      choices:
+        - content: "True"
+          isCorrect: true
+          explanation: "Blazor supports JavaScript interop, which lets you call JavaScript libraries and APIs from your Blazor apps."
+        - content: "False"
+          isCorrect: false
+          explanation: "Blazor supports JavaScript interop, which lets you call JavaScript libraries and APIs from your Blazor apps."
+    - content: "Which of the following benefits is not a benefit of using Blazor?"
+      choices:
+        - content: "Build web UI fast with reusable components."
+          isCorrect: false
+          explanation: "Reusable Blazor components make it easy to assemble a web app quickly."
+        - content: "Support for server and client-side rendering"
+          isCorrect: false
+          explanation: "The ability to render Blazor components both from the server and the client enables building various web app architectures and optimizing the user experience."
+        - content: "Build the frontend and backend with one development stack."
+          isCorrect: false
+          explanation: "Building both the frontend and backend with .NET uses a common skillset, enables code sharing, and reduces complexity."
+        - content: "Minimal download size."
+          isCorrect: true
+          explanation: "While server-based Blazor apps can load quickly, running .NET code on the client requires downloading a small .NET runtime with the app."
+    - content: "Which of the following reasons is valid reason to not use Blazor?"
+      choices:
+        - content: "You need to use an existing React component in your web app."
+          isCorrect: false
+          explanation: "You can typically use components from other frontend frameworks in Blazor as HTML custom elements. However, if you need to use many components from other frameworks, then Blazor may not be the best choice."
+        - content: "You need to host your web app on a cheap static site host, like GitHub Pages."
+          isCorrect: false
+          explanation: "Blazor apps can be configured to run fully on the client via WebAssembly and can be deployed as static sites."
+        - content: "You're not a C# expert."
+          isCorrect: false
+          explanation: "Learning C# is worth the investment! With C# in your developer toolbelt you can use .NET to build virtually any type of app, including web apps, native mobile & desktop apps, games, and much more!"
+        - content: "You need to support older browsers."
+          isCorrect: true
+          explanation: "Blazor supports all modern browsers, but if you need to support older browsers that don't support modern web platform features, then Blazor may not be the best choice."

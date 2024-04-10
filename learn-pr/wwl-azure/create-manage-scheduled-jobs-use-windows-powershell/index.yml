@@ -2,12 +2,12 @@
 uid: learn.wwl.create-manage-scheduled-jobs-use-windows-powershell
 metadata:
   title: Create and manage scheduled jobs using Windows PowerShell
-  description: "Create and manage scheduled jobs using Windows PowerShell"
-  ms.date: 11/10/2022
+  description: Create and manage scheduled jobs using Windows PowerShell
+  ms.date: 07/03/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: powershell
 title: Create and manage scheduled jobs using Windows PowerShell
 summary: This module covers how to use scheduled jobs. In Windows PowerShell, scheduled jobs are essentially scheduled tasks. They follow the same rules for actions, triggers, and other features, and run Windows PowerShell scripts by design.
 abstract: |
@@ -36,14 +36,13 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-cloud-shell
 - azure-powershell
 - azure-virtual-machines
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

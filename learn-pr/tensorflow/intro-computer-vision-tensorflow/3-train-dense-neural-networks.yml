@@ -6,9 +6,8 @@ metadata:
   description: Learn how to classify images using one-layer dense neural network
   ms.date: 07/07/2021
   author: shwars
-  ms.author: dmitryso
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: chnoring
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 10
 sandbox: true

@@ -4,11 +4,10 @@ title: Exercise - Create the Kafka producer
 metadata:
   title: Exercise - Create the Kafka producer
   description: "Exercise - Create the Kafka producer"
-  ms.date: 01/05/2022
+  ms.date: 04/07/2024
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

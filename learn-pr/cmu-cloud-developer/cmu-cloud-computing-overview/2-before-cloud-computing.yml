@@ -4,11 +4,10 @@ title: Before the cloud
 metadata:
   title: Before the cloud
   description: An overview of domains and applications prior to the onset of cloud computing.
-  ms.date: 02/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 16
 content: |

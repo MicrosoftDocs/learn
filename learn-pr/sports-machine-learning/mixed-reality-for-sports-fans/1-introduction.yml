@@ -3,11 +3,10 @@ uid: learn.sports-machine-learning.mixed-reality-for-sports-fans.introduction
 metadata:
   title: Introduction to Mixed Reality for sports fans
   description: Introduction to Mixed Reality for sports fans
-  ms.date: 06/15/2021
+  ms.date: 11/04/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Introduction to Mixed Reality for sports fans
 durationInMinutes: 1

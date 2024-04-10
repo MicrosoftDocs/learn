@@ -5,11 +5,10 @@ metadata:
   unitType: introduction
   title: Introduction
   description: Learn how to create, publish, and deploy template specs, which enable you to store and reuse templates across your organization.
-  ms.date: 09/30/2021
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/18/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

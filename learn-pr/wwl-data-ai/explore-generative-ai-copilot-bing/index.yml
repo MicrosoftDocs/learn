@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.wwl.explore-generative-ai-copilot-bing
+metadata:
+  title: Explore generative AI with Copilot in Bing
+  description: "Interact with Copilot in Bing to learn about the capabilities of generative AI. Bring your personal creativity and passion to dream up a novel destination and create the content to help tell its story."
+  ms.date: 04/01/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: module-guided-project
+  ms.custom:
+  - N/A
+  ms.service: bing-search-services
+  ai-usage: ai-assisted
+title: Explore generative AI with Copilot in Bing
+summary: Interact with Microsoft Copilot in Bing to learn about the capabilities of generative AI. Bring your personal creativity and passion to dream up a novel destination and create the content to help tell its story.
+abstract: |
+  In this module, learn how to:
+
+  - Use multimodal features of Copilot in Bing
+
+  - Use features and capabilities of Copilot in Bing
+
+  - Use tips and techniques to write good prompts
+
+  - Ideate with Copilot in Bing
+
+  - Research with Copilot in Bing
+
+  - Apply format and tone
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- business-owner
+- business-user
+- data-scientist
+products:
+- bing
+subjects:
+- artificial-intelligence
+units:
+- learn.wwl.explore-generative-ai-copilot-bing.introduction
+- learn.wwl.explore-generative-ai-copilot-bing.exercise-define-idea-set-context
+- learn.wwl.explore-generative-ai-copilot-bing.exercise-create-hero-image
+- learn.wwl.explore-generative-ai-copilot-bing.exercise-make-grand-entrance
+- learn.wwl.explore-generative-ai-copilot-bing.exercise-brainstorm-destination-features
+- learn.wwl.explore-generative-ai-copilot-bing.exercise-plan-menu
+- learn.wwl.explore-generative-ai-copilot-bing.exercise-ideate-ambience-music
+- learn.wwl.explore-generative-ai-copilot-bing.exercise-create-branding
+- learn.wwl.explore-generative-ai-copilot-bing.knowledge-check
+- learn.wwl.explore-generative-ai-copilot-bing.summary
+badge:
+  uid: learn.wwl.explore-generative-ai-copilot-bing.badge

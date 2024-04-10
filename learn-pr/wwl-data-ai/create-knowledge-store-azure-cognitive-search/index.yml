@@ -1,24 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.create-knowledge-store-with-azure-cognitive-search
 metadata:
-  title: Create a knowledge store with Azure Cognitive Search
-  description: "Create a knowledge store with Azure Cognitive Search"
-  ms.date: 07/30/2021
+  title: Create a knowledge store with Azure AI Search
+  description: "Create a knowledge store with Azure AI Search"
+  ms.date: 12/11/2023
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Create a knowledge store with Azure Cognitive Search
-summary: Persist the output from an Azure Cognitive Search enrichment pipeline for independent analysis or downstream processing.
+  ms.author: berryivor
+  ms.topic: module-standard-task-based
+  ms.service: cognitive-search
+title: Create a knowledge store with Azure AI Search
+summary: Persist the output from an Azure AI Search enrichment pipeline for independent analysis or downstream processing.
 abstract: |
-  In this module you will learn how to:
-  - Create a knowledge store from an Azure Cognitive Search pipeline
+  In this module you'll learn how to:
+  - Create a knowledge store from an Azure AI Search pipeline
   - View data in projections in a knowledge store
 prerequisites: |
-  - Familiarity with with Microsoft Azure
+  - Familiarity with Microsoft Azure
   - Application development experience with C# or Python
-  - Experience of creating an enrichment pipeline with Azure Cognitive Search
-  If you have not completed the [Create an Azure Cognitive Search solution](/training/modules/create-azure-cognitive-search-solution/) module, do so before starting this module.
+  - Experience of creating an enrichment pipeline with Azure AI Search
+  If you haven't completed the [Create an Azure AI Search solution](/training/modules/create-azure-cognitive-search-solution/) module, do so before starting this module.
 iconUrl: /training/achievements/implementing-a-knowledge-store.svg
 levels:
 - intermediate
@@ -32,7 +32,7 @@ subjects:
 - artificial-intelligence
 units:
 - learn.wwl.create-knowledge-store-with-azure-cognitive-search.introduction
-- learn.wwl.create-knowledge-store-with-azure-cognitive-search.define-projection
+- learn.wwl.create-knowledge-store-with-azure-cognitive-search.define-projection-json
 - learn.wwl.create-knowledge-store-with-azure-cognitive-search.define-knowledge-store
 - learn.wwl.create-knowledge-store-with-azure-cognitive-search.exercise-knowledge-store
 - learn.wwl.create-knowledge-store-with-azure-cognitive-search.knowledge-check

@@ -3,19 +3,20 @@ uid: learn.azure.logic-apps-and-custom-connectors
 metadata:
   title: Call an API from an Azure Logic Apps workflow using a custom connector
   description: In this module, learn to create an Azure Logic Apps custom connector to call an API from an Azure Logic Apps workflow.
-  ms.date: 09/30/2022
+  ms.date: 05/02/2023
   author: ecfan
   ms.author: estfan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
   ROBOTS: INDEX,FOLLOW
+  ms.service: logic-apps
+  manager: mijacobs
 title: Call an API from an Azure Logic Apps workflow using a custom connector
 summary: Call any Web API from a logic app workflow using the custom connector.
 abstract: |
   In this module, you will:
-  - Create a custom Azure Logic Apps connector
-  - Define the behavior of the connector using an OpenAPI definition
-  - Use the connector from a logic app workflow
+  - Create a custom Azure Logic Apps connector.
+  - Define the behavior of the connector using an OpenAPI definition.
+  - Use the connector from a logic app workflow.
 prerequisites: |
   - Basic familiarity with the authoring and running of Azure Logic Apps
   - Basic understanding of APIs and REST

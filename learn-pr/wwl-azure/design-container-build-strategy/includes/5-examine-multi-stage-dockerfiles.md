@@ -1,3 +1,4 @@
+
 What are multi-stage Dockerfiles? Multi-stage builds give the benefits of the builder pattern without the hassle of maintaining three separate files.
 
 Let us look at a multi-stage Dockerfile.

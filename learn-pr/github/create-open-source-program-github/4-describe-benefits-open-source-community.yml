@@ -4,11 +4,10 @@ title: Describe the benefits of the open-source community
 metadata:
   title: Describe the benefits of the open-source community
   description: Learn about the benefits of engaging with the open-source community and how to make your project more welcoming.
-  ms.date: 11/23/2020
+  ms.date: 05/15/2023
   author: tallard
-  ms.author: trallard
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: aastewar
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/4-describe-benefits-open-source-community.md)]

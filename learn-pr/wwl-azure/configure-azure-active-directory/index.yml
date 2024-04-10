@@ -1,25 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-azure-active-directory
 metadata:
-  title: Configure Azure Active Directory
-  description: "Learn how to configure Azure Active Directory, including features like Azure AD join and self-service password reset."
-  ms.date: 03/29/2023
+  title: Configure Microsoft Entra ID
+  description: "Configure Microsoft Entra ID"
+  ms.date: 04/03/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Configure Azure Active Directory
-summary: Learn how to configure Azure Active Directory, including features like Azure AD join and self-service password reset.
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: active-directory
+  ai-usage: ai-assisted
+title: Configure Microsoft Entra ID
+summary: Learn how to configure Microsoft Entra ID, including features like Microsoft Entra ID join and self-service password reset.
 abstract: |
   In this module, you learn how to:
-    - Define Azure AD concepts, including identities, accounts, and tenants.
-    - Describe Azure AD features to support different configurations.
-    - Understand differences between Azure AD and Active Directory Domain Services (AD DS).
-    - Choose between supported editions of Azure AD.
-    - Implement the Azure AD join feature.
-    - Use the Azure AD self-service password reset feature.
-prerequisites: |
-  None
+
+  -   Define Microsoft Entra concepts, including identities, accounts, and tenants.
+
+  -   Describe Microsoft Entra features to support different configurations.
+
+  -   Understand differences between Microsoft Entra ID and Active Directory Domain Services (AD DS).
+
+  -   Choose between supported editions of Microsoft Entra ID.
+
+  -   Use the Microsoft Entra self-service password reset feature.
+prerequisites: None
 iconUrl: /training/achievements/azure-active-directory.svg
 levels:
 - intermediate
@@ -35,7 +41,6 @@ units:
 - learn.wwl.configure-azure-active-directory.describe-azure-ad-concepts
 - learn.wwl.configure-azure-active-directory.compare-ad-ds-to
 - learn.wwl.configure-azure-active-directory.select-editions
-- learn.wwl.configure-azure-active-directory.implement-ad-join
 - learn.wwl.configure-azure-active-directory.implement-self-service-password-reset
 - learn.wwl.configure-azure-active-directory.knowledge-check
 - learn.wwl.configure-azure-active-directory.summary-resources

@@ -5,11 +5,10 @@ metadata:
   unitType: exercise
   title: Challenge
   description: Use what you just learned about Kusto Query Language to write a query that answers the challenge question. 
-  ms.date: 11/22/2021
+  ms.date: 10/05/2023
   author: YaelSchuster
   ms.author: yaschust
-  ms.topic: interactive-tutorial 
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2 
 content: |
   [!include[](includes/8-challenge.md)]

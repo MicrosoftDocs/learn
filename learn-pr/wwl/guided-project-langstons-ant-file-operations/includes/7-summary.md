@@ -1,0 +1,1 @@
+In this module, you practiced reading and writing data to and from files. You used file operations to save and load game states in a Langston's Ant simulation. You also practiced checking if a directory or file exists, and create one if it doesn't. Great work!

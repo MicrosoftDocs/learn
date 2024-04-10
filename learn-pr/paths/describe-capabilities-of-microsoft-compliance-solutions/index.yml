@@ -6,15 +6,14 @@ metadata:
   ms.date: 08/08/2022
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.topic: learning-path
 title: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the capabilities of Microsoft compliance solutions'
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
   - General understanding of Microsoft Azure and Microsoft 365.
 summary: |
-  Learn about compliance solutions in Microsoft. Topics covered will include Compliance center, Information protection and governance in Microsoft 365, Insider Risk, audit, and eDiscovery solutions.  Also covered are Azure resources governance capabilities.
+  Learn about compliance solutions in Microsoft. Topics covered will include the Microsoft Purview compliance portal, Information protection and governance in Microsoft 365, Insider Risk, audit, and eDiscovery solutions.  Also covered are Azure resources governance capabilities.
   
   Here are all the learning paths in preparation for the SC-900 exam: Microsoft Security, Compliance, and Identity Fundamentals.
   :::row:::
@@ -24,9 +23,9 @@ summary: |
     [Part 1: Describe the concepts of security, compliance, and identity](../describe-concepts-of-security-compliance-identity/index.yml)
   :::column-end:::
   :::column:::
-    <img src="/training/achievements/describe-capabilities-of-microsoft-identity-access-management-solutions.svg" width="101" alt="Screenshot of the trophy for the Describe the capabilities of Microsoft Azure Active Directory, part of Microsoft Entra learning path." role="presentation"></img>
+    <img src="/training/achievements/describe-capabilities-of-microsoft-identity-access-management-solutions.svg" width="101" alt="Screenshot of the trophy for the Describe the capabilities of Microsoft Entra learning path." role="presentation"></img>
     
-    [Part 2: Describe the capabilities of Microsoft Azure Active Directory, part of Microsoft Entra](../describe-capabilities-of-microsoft-identity-access/index.yml)
+    [Part 2: Describe the capabilities of Microsoft Entra](../describe-capabilities-of-microsoft-identity-access/index.yml)
   :::column-end:::
   :::row-end:::
   :::row:::
@@ -50,9 +49,6 @@ summary: |
     Primer: [Describe the basic concepts of cybersecurity](../describe-basic-concepts-of-cybersecurity/index.yml)
   :::column-end:::
   :::row-end::: 
-video:
-  title: "Introduction video: Describe the capabilities of Microsoft compliance solutions"
-  url: https://www.microsoft.com/videoplayer/embed/RE4Y140
 iconUrl: /training/achievements/describe-the-capabilities-of-microsoft-compliance-solutions.svg
 levels:
 - beginner
@@ -73,6 +69,5 @@ modules:
 - learn.wwl.describe-information-protection-governance-capabilities-microsoft-365
 - learn.wwl.describe-insider-risk-capabilities-microsoft-365
 - learn.wwl.describe-ediscovery-capabilities-of-microsoft-365
-- learn.wwl.describe-resource-governance-capabilities-azure
 trophy:
   uid: learn.wwl.describe-capabilities-of-microsoft-compliance-solutions.trophy

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.custom-model-ai-vision-image-classification.create-custom-project
+title: Create a custom project
+metadata:
+  title: Create a custom project
+  description: "Create a custom project in Azure AI Vision."
+  ms.date: 01/29/2024
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-create-custom-project.md)]

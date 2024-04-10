@@ -6,8 +6,8 @@ metadata:
   ms.date: 09/02/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-storage
 title: Secure your Azure Storage account
 summary: Learn how Azure Storage provides multilayered security to protect your data. Find out how to use access keys, to secure networks, and to use Advanced Threat Protection to proactively monitor your system.
 abstract: |

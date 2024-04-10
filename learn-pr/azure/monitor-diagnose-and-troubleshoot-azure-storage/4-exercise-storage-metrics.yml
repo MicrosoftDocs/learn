@@ -3,14 +3,12 @@ uid: learn.monitor-diagnose-and-troubleshoot-azure-storage.4-exercise-storage-me
 metadata:
   title: Exercise - Enable storage metrics and view metric data
   description: In this exercise, we'll explore how to enable storage metrics and view metric data.
-  ms.date: 05/05/2021
+  ms.date: 12/21/2023
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Exercise - Enabling storage metrics and view metric data
 durationInMinutes: 10
-interactive: powershell
 azureSandbox: true
 content: |
   [!include[](includes/4-exercise-storage-metrics.md)]

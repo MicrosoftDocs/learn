@@ -4,11 +4,10 @@ title: What is Azure confidential computing?
 metadata:
   title: What is Azure confidential computing?
   description: In this unit, you'll learn about Azure confidential computing.
-  ms.date: 03/22/2023
-  author: cynthn
-  ms.author: cynthn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 03/15/2024
+  author: ju-shim
+  ms.author: jushiman
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/what-is-azure-confidential-computing.md)]

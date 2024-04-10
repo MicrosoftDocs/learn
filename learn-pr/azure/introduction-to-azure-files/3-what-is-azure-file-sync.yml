@@ -4,11 +4,10 @@ title: What is Azure File Sync?
 metadata:
   title: What is Azure File Sync?
   description: In this unit, you'll learn about Azure File Sync.
-  ms.date: 08/30/2022
-  author: kendownie
+  ms.date: 11/10/2023
+  author: khdownie
   ms.author: kendownie
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/3-what-is-azure-file-sync.md)]

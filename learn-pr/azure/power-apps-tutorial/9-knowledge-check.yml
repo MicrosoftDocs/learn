@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Four multiple-choice questions
-  ms.date: 10/19/2021
+  ms.date: 01/01/2022
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.topic: unit
 durationInMinutes: 4
 content: Choose the best response for each question. Then select Check your answers.
 quiz:

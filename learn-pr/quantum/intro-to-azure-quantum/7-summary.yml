@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.intro-to-azure-quantum.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 01/09/2024
+  author: SoniaLopezBravo
+  ms.author: sonialopez
+  manager: tedhudek
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

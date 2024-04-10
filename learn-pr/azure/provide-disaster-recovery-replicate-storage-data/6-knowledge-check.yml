@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Summary
-  ms.date: 10/08/2020
+  ms.date: 11/03/2023
   author: tamram
   ms.author: tamram
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 quiz:
   title: Check your knowledge

@@ -4,11 +4,10 @@ title: Exercise – Enable Container insights
 metadata:
   title: Exercise – Enable Container insights
   description: In this exercise, you'll practice enabling Container insights for your cluster.
-  ms.date: 08/10/2022
+  ms.date: 03/13/2024
   author: bwren
   ms.author: bwren
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/3-exercise-enable-container-insights.md)]

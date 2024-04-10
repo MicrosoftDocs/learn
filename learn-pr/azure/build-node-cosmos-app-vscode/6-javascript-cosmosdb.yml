@@ -8,8 +8,9 @@ metadata:
   author: seesharprun
   ms.author: sidandrews
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-js
 durationInMinutes: 15
 content: |
   [!include[](includes/6-javascript-cosmosdb.md)]

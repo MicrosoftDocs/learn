@@ -12,12 +12,11 @@ metadata:
     * Integrate the Web API with Azure API Management through Visual Studio, and
     * Test the API on Azure API Management
 
-  ms.date: 04/16/2021
+  ms.date: 07/11/2023
   author: justinyoo
   ms.author: juyoo
   manager: jmartens
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/8-summary.md)]

@@ -4,11 +4,10 @@ title: How do I use GitHub Actions to deploy to Azure?
 metadata:
   title: Check your knowledge
   description: Check your knowledge
-  ms.date: 05/19/2020
+  ms.date: 11/02/2023
   author: juliakm
   ms.author: jukullam
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/2-deploy-azure.md)]

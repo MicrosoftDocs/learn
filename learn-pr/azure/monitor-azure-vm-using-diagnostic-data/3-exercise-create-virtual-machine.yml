@@ -1,22 +1,39 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.monitor-azure-vm-using-diagnostic-data.exercise-create-virtual-machine
-title: Exercise - Set up a VM with boot diagnostics
+title: Monitor VM host data
 metadata:
-  title: Exercise - Set up a VM with boot diagnostics
-  description: Deploy a Linux virtual machine and enable boot diagnostics. After the VM is created, you'll quickly set up a graph to view the CPU usage and inbound traffic. You'll also check that boot diagnostics are working correctly.
-  ms.date: 02/03/2023
+  title: View VM host monitoring data
+  description: Create a Linux VM with recommended alerts and boot diagnostics enabled, and view built-in metrics graphs, boot diagnostics, and the activity log.
+  ms.date: 11/06/2023
   author: cwatson-cat
   ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-durationInMinutes: 7
+  ms.topic: unit
+  ms.custom: linux-related-content
+durationInMinutes: 6
 content: |
   [!include[](includes/3-exercise-create-virtual-machine.md)]
-# NOTE: Task validation is failing for learners, so that is disabled for now.
-# tasks:
-# - action: exists
-#   environment: azure
-#   hint: "Run the `az vm create` command as shown to create your virtual machine."
-#   azure:
-#     resource:
-#       type: "Microsoft.Compute/virtualMachines"
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What do you need to do to enable recommended alert rules when you create a VM?
+    choices:
+    - content: Nothing, they're enabled by default.
+      isCorrect: false
+      explanation: Recommended alert rules aren't enabled by default, but you can easily enable them during or after VM creation.
+    - content: Go to **Alerts** and select **Create**.
+      isCorrect: false
+      explanation: You can create custom alerts in Alerts, but you can enable recommended alerts at VM creation or after.
+    - content: Select **Enable recommended alert rules** on the **Monitoring** tab.
+      isCorrect: true
+      explanation: You can easily enable recommended alerts at VM creation by selecting **Enable** and configuring the alert parameters on the **Monitoring** tab.
+  - content: Which metrics graph isn't available by default on the **Monitoring** tab when you create a VM?
+    choices:
+    - content: VM Availability
+      isCorrect: false
+      explanation: The VM Availability (preview) metrics graph appears by default after you create a VM.
+    - content: Guest OS Available Memory
+      isCorrect: true
+      explanation: Guest OS metrics charts aren't available until you enable the Azure Monitor Agent to collect client VM metrics.
+    - content: Percentage CPU (average)
+      isCorrect: false
+      explanation: The Percentage CPU (average) metrics graph appears by default after you create a VM.

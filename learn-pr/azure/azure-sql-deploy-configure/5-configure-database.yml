@@ -3,11 +3,10 @@ uid: learn.azure-sql-deploy-configure.5-configure-database
 metadata:
   title: Configure Azure SQL Database and Azure SQL Managed Instance
   description: Configure Azure SQL Database and Azure SQL Managed Instance
-  ms.date: 03/15/2023
+  ms.date: 10/16/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Configure Azure SQL Database and Azure SQL Managed Instance
 durationInMinutes: 10
 content: |

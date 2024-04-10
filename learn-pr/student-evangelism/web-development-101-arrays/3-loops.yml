@@ -6,8 +6,7 @@ metadata:
   ms.date: 05/25/2021
   author: chloecodesthings
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Iterate over items in an array by using loops
 durationInMinutes: 4

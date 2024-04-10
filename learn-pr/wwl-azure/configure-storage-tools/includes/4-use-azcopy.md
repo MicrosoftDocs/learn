@@ -24,7 +24,7 @@ There are two options to authenticate your transferred data when using AzCopy.
 
 | Authentication | Support | Description |
 | --- | --- | --- |
-| **Azure Active Directory (Azure AD)** | Azure Blob Storage and Azure Data Lake Storage Gen2 | The user enters the `.\\azcopy` sign-in command to sign in by using Azure AD. The user should have the *Storage Blob Data Contributor* role assigned, which allows them to write to Blob Storage by using Azure AD authentication. When the user signs in from Azure AD, they provide their credentials only once. This option allows the user to circumvent having to append a SAS token to each command. |
+| **Microsoft Entra ID** | Azure Blob Storage and Azure Data Lake Storage Gen2 | The user enters the `.\\azcopy` sign-in command to sign in by using Microsoft Entra ID. The user should have the *Storage Blob Data Contributor* role assigned, which allows them to write to Blob Storage by using Microsoft Entra authentication. When the user signs in from Microsoft Entra ID, they provide their credentials only once. This option allows the user to circumvent having to append a SAS token to each command. |
 | **SAS tokens** | Azure Blob Storage and Azure Files | On the command line, the user appends a SAS token to the blob or file path for every command they enter. |
 
 #### AzCopy and Azure Storage Explorer

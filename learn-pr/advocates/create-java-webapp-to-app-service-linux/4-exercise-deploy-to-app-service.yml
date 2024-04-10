@@ -6,10 +6,9 @@ metadata:
   description: Package your Java web application and deploy it to Azure App Service.
   author: yoshioterada
   ms.author: yoterada
-  ms.date: 12/04/2020
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
+  ms.date: 05/03/2023
+  ms.topic: unit
+  ms.custom: team=cloud_advocates, devx-track-extended-java, linux-related-content
   ms.contributors: yoterada-12142020
 durationInMinutes: 6
 content: |

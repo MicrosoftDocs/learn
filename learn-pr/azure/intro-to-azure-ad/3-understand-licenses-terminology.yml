@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-ad.3-understand-licenses-terminology
 metadata:
-  title: Understand Azure AD licenses and terminology
-  description: Understand Azure AD licenses and terminology
-  ms.date: 02/25/2020
+  title: Understand Microsoft Entra ID licenses and terminology
+  description: Understand Microsoft Entra ID licenses and terminology
+  ms.date: 12/18/2023
   author: MicrosoftGuyJFlo
   ms.author: joflore
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Understand Azure AD licenses and terminology
+  ms.topic: unit
+title: Understand Microsoft Entra ID licenses and terminology
 durationInMinutes: 3
 content: |
   [!include[](includes/3-understand-licenses-terminology.md)]
@@ -19,7 +18,7 @@ quiz:
     choices:
     - content: Something that can be authenticated. It can be a user, application, service, or anything that needs to be identified.
       isCorrect: true
-      explanation: An identity represents a user, or sometimes a service or an application, that needs access to do something.
+      explanation: An identity represents a user or sometimes a service or an application that needs access to do something.
     - content: A user that can be authenticated. It has to be a user. Applications or services can't be considered as identities.
       isCorrect: false
       explanation: An identity can be a user, application, service, or anything that needs to be identified.
@@ -28,12 +27,12 @@ quiz:
       explanation: An identity is something that can be authenticated. For example, it can be a user, application, or service.
   - content: Which licensing plan supports Identity Protection?
     choices:
-    - content: Azure Active Directory Free
+    - content: Microsoft Entra ID Free
       isCorrect: false
-      explanation: You need Azure Active Directory Premium P2 to use Identity Protection.
-    - content: Azure Active Directory Premium P1
+      explanation: You need Microsoft Entra ID P2 to use Identity Protection.
+    - content: Microsoft Entra ID P1
       isCorrect: false
-      explanation: You need Azure Active Directory Premium P2 to use Identity Protection.
-    - content: Azure Active Directory Premium P2
+      explanation: You need Microsoft Entra ID P2 to use Identity Protection.
+    - content: Microsoft Entra ID P2
       isCorrect: true
       explanation: Identity Protection helps you configure risk-based Conditional Access for your applications to protect them from identity-based risks.

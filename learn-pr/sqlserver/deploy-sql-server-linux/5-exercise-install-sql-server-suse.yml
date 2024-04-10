@@ -4,12 +4,12 @@ title: Exercise - Install SQL Server on SUSE
 metadata:
   title: Exercise - Install SQL Server on SUSE
   description: In this unit, you will use zypper to install SQL Server on SUSE and then configure the database server.
-  ms.date: 06/11/2019
+  ms.date: 05/15/2023
   author: rwestmsft
   ms.author: randolphwest
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-sqlserver
+  ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 15
 interactive: bash
 azureSandbox: true

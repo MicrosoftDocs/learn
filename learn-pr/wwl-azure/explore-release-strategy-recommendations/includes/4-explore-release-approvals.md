@@ -1,3 +1,4 @@
+
 As we've described in the introduction, Continuous Delivery is all about delivering on-demand.
 
 But, as we discussed in the differences between release and deployment, delivery, or deployment, it's only the technical part of the Continuous Delivery process.

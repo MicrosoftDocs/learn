@@ -1,12 +1,13 @@
-Congratulations! You're all done with creating. In this unit, you're going to clean up your Azure resources and Azure DevOps environment.
+Congratulations! You're all done with creating pipelines and resources. In this unit, you're going to clean up your Azure resources and Azure DevOps environment.
 
 ## Clean up Azure resources
 
 1. Navigate to [Azure portal](https://portal.azure.com?azure-portal=true).
 1. Select **Resource groups** from the left panel.
-1. Select your resource group: **tailspin-space-game-rg**.
+1. Select your resource group (**tailspin-space-game-rg**).
 1. Select **Delete resource group**.
 1. Type your resource group name in the text box, and then select **Delete**.
+1. Select **Delete** again to confirm deletion.
 
 ## Disable pipeline or delete project
 

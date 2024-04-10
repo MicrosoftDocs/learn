@@ -3,11 +3,10 @@ uid: learn.azure.intro-to-content-moderator.2-what-is-content-moderator
 metadata:
   title: What is Content Moderator?
   description: Content
-  ms.date: 01/29/2021
+  ms.date: 03/13/2023
   author: gerryo
-  ms.author: gerryo
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: nitinme
+  ms.topic: unit
 title: What is Content Moderator?
 durationInMinutes: 5
 content: |

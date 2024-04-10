@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check.
-  ms.date: 01/10/2023
+  ms.date: 12/19/2023
   author: johnmarco
   ms.author: johnmarc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 quiz:
   questions:
@@ -17,10 +16,10 @@ quiz:
     choices:
     - content: "Windows Server machines."
       isCorrect: false
-      explanation: "This answer is incorrect. Azure Automanage can be enabled on both Windows Server and Linux virtual machines."
+      explanation: "Incorrect. Azure Automanage can be enabled on both Windows Server and Linux virtual machines."
     - content: "Linux machines."
       isCorrect: false
-      explanation: "This is answer incorrect. Azure Automanage can be enabled on both Windows Server and Linux virtual machines."
+      explanation: "Incorrect. Azure Automanage can be enabled on both Windows Server and Linux virtual machines."
     - content: "Both Windows Server and Linux virtual machines."
       isCorrect: true
       explanation: "Correct! Azure Automanage can be enabled on both Windows Server and Linux virtual machines."
@@ -29,25 +28,25 @@ quiz:
     choices:
     - content: "Tell you the status of your virtual machines."
       isCorrect: false
-      explanation: "This answer is incorrect. A configuration profile defines which Azure services and the settings for these services are applied to Automanage-enabled machines."
+      explanation: "Incorrect. A configuration profile defines which Azure services and the settings for these services are applied to Automanage-enabled machines."
     - content: "Defines the services and settings applied to Automanage-enabled machines."
       isCorrect: true
       explanation: "Correct! A configuration profile defines which Azure services and the settings for these services are applied to Automanage-enabled machines."
     - content: "Allows you to use Automanage on virtual machines hosted outside of Azure."
       isCorrect: false
-      explanation: "This answer is incorrect. A configuration profile defines which Azure services and the settings for these services are applied to Automanage-enabled machines."
+      explanation: "Incorrect. A configuration profile defines which Azure services and the settings for these services are applied to Automanage-enabled machines."
 
   - content: "In Azure Automanage, what does a machine status of Conformant mean?"
     choices:
     - content: "The virtual machine is using a default configuration profile."
       isCorrect: false
-      explanation: "This answer is incorrect. A machine status of Conformant means that the virtual machine is in compliance with its assigned configuration profile. This can be an Automanage default configuration profile or a custom configuration file."
+      explanation: "Incorrect. A machine status of Conformant means that the virtual machine is in compliance with its assigned configuration profile. The profile can be an Automanage default configuration profile or a custom configuration file."
     - content: "The configuration file for the virtual machine is using the Azure Backup service."
       isCorrect: false
-      explanation: "This answer is incorrect. A machine status of Conformant means that the virtual machine is in compliance with its assigned configuration profile. This can be an Automanage default configuration profile or a custom configuration file."
+      explanation: "Incorrect. A machine status of Conformant means that the virtual machine is in compliance with its assigned configuration profile. The profile can be an Automanage default configuration profile or a custom configuration file."
     - content: "The virtual machine is in compliance with its assigned configuration file."
       isCorrect: true
-      explanation: "Correct! A machine status of Conformant means that the virtual machine is in compliance with its assigned configuration profile. This can be an Automanage default configuration profile or a custom configuration file."
+      explanation: "Correct! A machine status of Conformant means that the virtual machine is in compliance with its assigned configuration profile. The profile can be an Automanage default configuration profile or a custom configuration file."
 
   - content: "What Azure service can be used to extend the capabilities of Automanage to machines hosted outside of Azure?"
     choices:
@@ -56,7 +55,7 @@ quiz:
       explanation: "Correct! A Windows Server or Linux machine hosted outside of Azure can be registered with Azure Arc and use many of the capabilities available on Azure, including Azure Automanage."
     - content: "Microsoft Defender."
       isCorrect: false
-      explanation: "This answer is incorrect. Azure Arc is the service used for extending Azure services such as Automanage to machines hosted outside of Azure."
+      explanation: "Incorrect. Azure Arc is the service used for extending Azure services such as Automanage to machines hosted outside of Azure."
     - content: "Azure Policy."
       isCorrect: false
-      explanation: "This answer is incorrect. Azure Arc is the service used for extending Azure services such as Automanage to machines hosted outside of Azure."
+      explanation: "Incorrect. Azure Arc is the service used for extending Azure services such as Automanage to machines hosted outside of Azure."

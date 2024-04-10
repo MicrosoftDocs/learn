@@ -4,11 +4,12 @@ title: Use Show-Command and Get-Help in PowerShell
 metadata:
   title: Use Show-Command and Get-Help in PowerShell
   description: "Use Show-Command and Get-Help in PowerShell"
-  ms.date: 10/18/2022
+  ms.date: 03/21/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

@@ -2,12 +2,12 @@
 uid: learn.wwl.deploy-model-github-actions
 metadata:
   title: Deploy a model with GitHub Actions
-  description: "machine learning operations, MLOps, model deployment, online endpoint"
+  description: machine learning operations, MLOps, model deployment, online endpoint
   ms.date: 09/26/2022
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Deploy a model with GitHub Actions
 summary: Learn how to automate and test model deployment with GitHub Actions and the Azure Machine Learning CLI (v2).
 abstract: |

@@ -1,13 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn-pr.develop-test-deploy-azure-functions-core-tools.5-exercise-publish-function-core-tools
 metadata:
-  title: Exercise - Publish a function to Azure using Core Tools
+  title: Exercise - Publish to Azure using Core Tools
   description: In this exercise, we'll create a function app in Azure and publish our project.
-  ms.date: 12/11/2021
+  ms.date: 11/13/2023
   author: ggailey777
   ms.author: glenga
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Exercise - Publish a function to Azure using Core Tools
 interactive: bash
 azureSandbox: true

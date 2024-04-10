@@ -4,11 +4,10 @@ title: Publish your SaaS offer in Partner Center
 metadata:
   title: Publish your SaaS offer in Partner Center
   description: Overview of the SaaS offer publishing process in Partner Center
-  ms.date: 01/25/2021
+  ms.date: 12/09/2022
   author: marleva
   ms.author: maevan
-  ms.topic: interactive-tutorial
-  ms.service: marketplace
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/5-publish-saas-offer-partner-center.md)]

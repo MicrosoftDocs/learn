@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-deployment-pipeline-github-actions.9-exercise-set-up-helm-chart
 metadata:
-  title: Create and set up a Helm chart for deployment
+  title: Exercise - Create a Helm Chart for Deployment
   description: Put all the concepts together to create a new Helm chart and use it to deploy the application.
-  ms.date: 10/08/2020
+  ms.date: 01/08/2023
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: github
-title: Create and set up a Helm chart for deployment
+  ms.topic: unit
+title: Exercise - Create a Helm chart for deployment
 durationInMinutes: 10
 content: |
   [!include[](includes/9-exercise-set-up-helm-chart.md)]

@@ -59,7 +59,7 @@ The requirements for Azure Disk Encryption are described in the following table.
 |VM size|Azure Disk Encryption isn't available on Basic, A-series VMs. It's also not available on Lsv2-series VMs.|
 |VM generation|Azure Disk Encryption isn't available on Generation 2 VMs.|
 |Memory|Azure Disk Encryption isn't available on VMs with less than 2 gigabytes (GB) of memory.|
-|Networking|To get a token to connect to your key vault, the Windows VM must be able to connect to an Azure AD endpoint, `login.microsoftonline.com`. To write the encryption keys to your key vault, the Windows VM must be able to connect to the key vault endpoint.|
+|Networking|To get a token to connect to your key vault, the Windows VM must be able to connect to a Microsoft Entra endpoint, `login.microsoftonline.com`. To write the encryption keys to your key vault, the Windows VM must be able to connect to the key vault endpoint.|
 |Group Policy|Azure Disk Encryption uses the BitLocker external key protector for Windows VMs. For domain-joined VMs, don't push any Group Policy Object (GPO) settings that enforce Trusted Platform Module (TPM) protectors. BitLocker policy on domain-joined VMs with custom GPO must include the following setting: `Configure user storage of BitLocker recovery information -> Allow 256-bit recovery key`. Azure Disk Encryption fails when custom GPO settings for BitLocker are incompatible. Azure Disk Encryption also fails if domain-level GPOs block the AES-CBC algorithm, which is used by BitLocker.|
 |Encryption key storage |Azure Disk Encryption requires a key vault to control and manage disk encryption keys and secrets. your key vault and VMs must reside in the same Azure region and subscription.|
 

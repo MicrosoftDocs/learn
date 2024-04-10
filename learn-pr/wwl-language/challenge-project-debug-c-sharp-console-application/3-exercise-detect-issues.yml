@@ -4,11 +4,12 @@ title: 'Exercise - Use the test data to expose logic issues in a C# console appl
 metadata:
   title: Exercise - Use the test data to expose logic issues in a C# console application
   description: "Exercise - Use the test data to expose logic issues in a C# console application"
-  ms.date: 03/20/2023
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-detect-issues.md)]

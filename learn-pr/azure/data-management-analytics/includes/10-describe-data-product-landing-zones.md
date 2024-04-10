@@ -13,7 +13,7 @@ Examples of Data Products include:
 - App Service
 - Logic Apps
 - Azure Analysis Services
-- Cognitive Services
+- Azure AI services
 - Azure Machine Learning
 - Azure SQL DB
 - Azure MySQL

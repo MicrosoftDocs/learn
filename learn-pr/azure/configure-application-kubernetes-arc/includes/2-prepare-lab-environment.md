@@ -35,7 +35,7 @@ Prefer to install at least the below version on your system if you are not using
 
 Azure App Service on Kubernetes with Azure Arc currently available in public preview. [App Service, Functions, and Logic Apps on Azure Arc](/azure/app-service/overview-arc-integration#public-preview-limitations) contains more about various limitations on this public preview feature. Your Azure subscription may not have necessary resources providers registered to be able to test all these capabilities. You must explicitly enable these providers in your subscription before continuing.
 
-1. Start any Azure Cloud Shell-compatible web browser, navigate to [Azure Cloud Shell](https://shell.azure.com), and, if prompted, authenticate with a Microsoft account or an Azure AD account that has an Owner role in the Azure subscription.
+1. Start any Azure Cloud Shell-compatible web browser, navigate to [Azure Cloud Shell](https://shell.azure.com), and, if prompted, authenticate with a Microsoft account or a Microsoft Entra account that has an Owner role in the Azure subscription.
 1. If prompted to select either **Bash** or **PowerShell**, select **Bash**.
 
     > [!NOTE]

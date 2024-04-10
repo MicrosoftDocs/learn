@@ -44,7 +44,8 @@ public interface IUrlShortenerGrain
 To implement the `IUrlShortenerGrain` interface, consider the following `UrlShortenerGrain` class:
 
 ```csharp
-public sealed class UrlShortenerGrain : Grain, IGrainWithStringKey, IUrlShortenerGrain
+public sealed class UrlShortenerGrain
+    : Grain, IGrainWithStringKey, IUrlShortenerGrain
 {
     public Task SetUrl(string shortenedRouteSegment, string url)
     {

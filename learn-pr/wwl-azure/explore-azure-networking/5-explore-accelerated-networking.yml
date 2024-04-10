@@ -4,11 +4,10 @@ title: Explore accelerated networking
 metadata:
   title: Explore accelerated networking
   description: "Explore accelerated networking"
-  ms.date: 04/21/2023
+  ms.date: 10/17/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/5-explore-accelerated-networking.md)]

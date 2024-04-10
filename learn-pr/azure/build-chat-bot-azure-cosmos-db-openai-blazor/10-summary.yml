@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: |
+    Summarize what you learned in this training module updating a Blazor web application that connects to Azure Cosmos DB for NoSQL and Azure OpenAI.
+  author: seesharprun
+  manager: jroth
+  ms.author: sidandrews
+  ms.reviewer: mjbrown
+  ms.topic: unit
+  ms.date: 03/07/2024
+durationInMinutes: 2
+content: |
+  [!include[](includes/10-summary.md)]

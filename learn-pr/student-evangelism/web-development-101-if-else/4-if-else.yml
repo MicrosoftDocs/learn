@@ -3,12 +3,13 @@ uid: learn.student-evangelism.web-development-101-if-else.if-else
 metadata:
   title: If...else statements
   description: Learn how to use if/else in JavaScript.
-  ms.date: 06/04/2021
+  ms.date: 02/03/2023
   author: chloecodesthings
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.custom:
+    - team=nextgen
+    - devx-track-js
 title: If...else statements
 durationInMinutes: 2
 content: |

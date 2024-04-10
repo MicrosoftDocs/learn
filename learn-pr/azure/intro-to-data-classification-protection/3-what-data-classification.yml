@@ -4,11 +4,10 @@ title: What is data classification?
 metadata:
   title: What is data classification?
   description: What is data classification?
-  ms.date: 03/25/2021
+  ms.date: 05/03/2023
   author: cwatson-cat
   ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/3-what-data-classification.md)]

@@ -4,11 +4,10 @@ title: What is reliability engineering?
 metadata:
   title: What is reliability engineering?
   description: Learn about the skills needed for a site reliability engineer.
-  ms.date: 12/20/2019
+  ms.date: 04/21/2023
   author: tpetchel
   ms.author: thpetche
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/2-site-reliability-engineering.md)]

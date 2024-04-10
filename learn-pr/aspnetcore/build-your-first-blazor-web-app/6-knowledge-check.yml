@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.build-your-first-blazor-web-app.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge about building and using Blazor components.
+  ms.date: 01/26/2024
+  author: danroth27
+  ms.author: daroth
+  ms.manager: markl
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What do you need to install *at a minimum* to create and run Blazor apps?"
+    choices:
+    - content: "Visual Studio"
+      isCorrect: false
+      explanation: "Visual Studio is a great tool for building Blazor apps, but only the .NET SDK is required."
+    - content: "Node.js"
+      isCorrect: false
+      explanation: "You create and build Blazor apps using the .NET SDK."
+    - content: "Visual Studio Code"
+      isCorrect: false
+      explanation: "Visual Studio Code with the C# Dev Kit is a great editor for working with Blazor apps, but only the .NET SDK is required."
+    - content: ".NET SDK"
+      isCorrect: true
+      explanation: "You only need the .NET SDK to create, build, and run Blazor apps. Tools like Visual Studio and Visual Studio Code can then help you be much more productive."
+  - content: "Blazor components are typically authored using what coding language?"
+    choices:
+    - content: "Razor"
+      isCorrect: true
+      explanation: "You typically write Blazor components in Razor, a convenient mixture of HTML and C#."
+    - content: "C#"
+      isCorrect: false
+      explanation: "You can write Blazor components in C#, but typically you write them using Razor." 
+    - content: "JavaScript"
+      isCorrect: false
+      explanation: "You write Blazor components in Razor, not JavaScript."
+    - content: "XAML"
+      isCorrect: false
+      explanation: "You write Blazor components in Razor, not XAML."
+  - content: "Razor files are compiled into what C# language feature?"
+    choices:
+    - content: "A C# method"
+      isCorrect: false
+      explanation: "Razor files are compiled into C# classes, not C# methods." 
+    - content: "A C# class"
+      isCorrect: true
+      explanation: "Razor files are compiled into C# classes."
+    - content: "A C# property"
+      isCorrect: false
+      explanation: "Razor files are compiled into C# classes, not C# properties."
+  - content: "How are Blazor component parameters defined?"
+    choices:
+    - content: "Using constructor parameters."
+      isCorrect: false
+      explanation: "Blazor component parameters are defined using public properties and the [Parameter] attribute, not using constructor parameters."
+    - content: "Using the @param Razor directive."
+      isCorrect: false
+      explanation: "Blazor component parameters are defined using public properties and the [Parameter] attribute, not using a Razor directive."
+    - content: "Using public properties and the [Parameter] attribute."
+      isCorrect: true
+      explanation: "Blazor component parameters are defined using public properties and the [Parameter] attribute."
+    - content: "Using HTML attributes."
+      isCorrect: false
+      explanation: "Blazor component parameters are defined using public properties and the [Parameter] attribute, not by HTML attributes."

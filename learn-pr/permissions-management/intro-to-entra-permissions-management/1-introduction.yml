@@ -3,12 +3,12 @@ uid: learn.permissions-management.intro-to-entra-permissions-management.introduc
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction to Entra Permissions Management
-  ms.date: 12/16/2022
+  description: Introduction to Microsoft Entra Permissions Management
+  ms.date: 03/15/2023
   author: jenniferf-skc
   ms.author: jfields
-  ms.topic: interactive-tutorial
-  ms.prod: learning-entra-permissions-management
+  ms.topic: unit
+  ms.service: multicloud-permissions-management
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

@@ -3,11 +3,10 @@ uid: learn.improve-app-scalability-resiliency-with-load-balancer.5-internal-load
 metadata:
   title: Internal load balancers
   description: Internal load balancers
-  ms.date: 08/31/2019
-  author: asudbring
-  ms.author: allensu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 03/10/2024
+  author: mbender-ms
+  ms.author: mbender
+  ms.topic: unit
 title: Internal load balancer
 durationInMinutes: 10
 content: |
@@ -17,7 +16,7 @@ quiz:
   questions:
   - content: "Which configuration is required to configure an internal load balancer?"
     choices:
-    - content: "Virtual machines should be in the same virtual network."
+    - content: "Virtual machines must be in the same virtual network."
       isCorrect: true
       explanation: "The virtual machines that you use a load balancer to distribute a load to must be in the same virtual network."
     - content: "Virtual machines must be publicly accessible."

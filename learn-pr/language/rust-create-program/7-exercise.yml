@@ -3,11 +3,10 @@ uid: learn.language.rust-create-program.7-exercise
 metadata:
   title: 'Exercise: Write a function to build a car'
   description: Fix problems in source code that uses functions, structs, and enums.
-  ms.date: 09/20/2021
+  ms.date: 12/05/2022
   author: GitHubber17
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: 'Exercise: Write a function to build a car'
 durationInMinutes: 6

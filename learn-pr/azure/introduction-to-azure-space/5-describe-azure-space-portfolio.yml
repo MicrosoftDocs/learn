@@ -4,11 +4,11 @@ title: Describe the Azure Space portfolio
 metadata:
   title: Describe the Azure Space portfolio
   description: Understand the principles that are foundational to the Azure Orbital offerings.
-  ms.date: 09/16/2022
+  ms.date: 03/31/2023
   author: meaghanlewis
   ms.author: mosagie
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  manager: eliotgra
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/5-describe-azure-space-portfolio.md)]

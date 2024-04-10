@@ -6,9 +6,9 @@ metadata:
   description: Add loop constructs to iterate through a collection of playing cards.
   author: softchris
   ms.author: chnoring
-  ms.date: 07/23/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.manager: markl
+  ms.date: 11/23/2022
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 2
 content: |

@@ -4,11 +4,12 @@ title: Implement an internal load balancer
 metadata:
   title: Implement an internal load balancer
   description: "Implement an internal load balancer"
-  ms.date: 03/27/2023
+  ms.date: 03/15/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/4-implement-internal.md)]

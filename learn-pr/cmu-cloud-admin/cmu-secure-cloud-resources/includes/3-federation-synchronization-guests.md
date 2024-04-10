@@ -30,7 +30,7 @@ _Figure 3.5: Synchronized identity flow._
 
 A key operational difference between federation and synchronization is that the latter is more resilient to disruptions in connectivity. Synchronization doesn't require access to the on-premises directory every time a user accesses a cloud resource; it only requires access when synchronization occurs. The primary downside to synchronization is that changes made to the on-premises directory take time to propagate to the cloud. If an administrator adds Alice to the on-premises directory but synchronization occurs just once an hour, Alice won't be able to access secured cloud resources for up to one hour after the change is made.
 
-Tools such as Azure Active Directory Connect (AADC) are available for synchronizing directories. AADC synchronizes information stored on-premises in Active Directory with information stored in the cloud in Azure Active Directory. Amazon provides a similar offering in the form of AD Connector, as does Google with Google Cloud Directory Sync (GCDS).
+Tools such as Microsoft Entra Connect are available for synchronizing directories. AADC synchronizes information stored on-premises in Active Directory with information stored in the cloud in Microsoft Entra ID. Amazon provides a similar offering in the form of AD Connector, as does Google with Google Cloud Directory Sync (GCDS).
 
 Synchronization solutions are generally preferred to federation-based approaches. They typically incur less management overhead and do not require an always-available connection between directory services. This recommendation is echoed by the UK's National Cyber Security Centre<sup>[1][^1]</sup>.
 

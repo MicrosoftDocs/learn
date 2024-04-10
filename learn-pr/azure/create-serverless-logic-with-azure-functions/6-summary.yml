@@ -4,11 +4,10 @@ title: Summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 04/19/2023
+  ms.date: 10/05/2023
   author: ggailey777
   ms.author: glenga
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/6-summary.md)]
@@ -31,22 +30,22 @@ quiz:
     choices: 
     - content: Resource group 
       isCorrect: false
-      explanation: A function app is a way to organize and collectively manage your functions. A function app is comprised of one or more individual functions that are managed together by Azure App Service. All the functions in a function app share the same pricing plan, continuous deployment, and runtime version. 
+      explanation: A function app is a way to organize one or more individual functions and collectively manage them with Azure App Service. All the functions in a function app, share the same pricing plan, continuous deployment, and runtime version. 
     - content: Function app
       isCorrect: true
-      explanation: A function app is a way to organize and collectively manage your functions. A function app is comprised of one or more individual functions that are managed together by Azure App Service. All the functions in a function app share the same pricing plan, continuous deployment, and runtime version. 
+      explanation: A function app is a way to organize one or more individual functions and collectively manage them with Azure App Service. All the functions in a function app, share the same pricing plan, continuous deployment, and runtime version.  
     - content: Function collection
       isCorrect: false
-      explanation: A function app is a way to organize and collectively manage your functions. A function app is comprised of one or more individual functions that are managed together by Azure App Service. All the functions in a function app share the same pricing plan, continuous deployment and runtime version. 
+      explanation: A function app is a way to organize one or more individual functions and collectively manage them with Azure App Service. All the functions in a function app, share the same pricing plan, continuous deployment, and runtime version.  
 
-  - content: We secured our function against unknown HTTP callers by requiring a function-specific API key be passed with each call. Which of the following fields is the name header in the HTTP requests that needs to contain this key?
+  - content: We secured our function against unknown HTTP callers by requiring a function-specific API key be passed with each call. Which of the following fields is the header name in the HTTP requests that needs to contain this key?
     choices: 
     - content: "x-functions-key"
       isCorrect: true
-      explanation:  The API can be included in a query string variable named "code",  or it can be included in an x-functions-key HTTP header.
+      explanation: The API key can be included as a query string parameter named `code`, or as an HTTP header named `x-functions-key`.
     - content: "x-requested-with"
       isCorrect: false
-      explanation: The API can be included in a query string variable named "code",  or it can be included in an x-functions-key HTTP header.
+      explanation: The API key can be included as a query string parameter named `code`, or as an HTTP header named `x-functions-key`.
     - content: "x-csrf-token"
       isCorrect: false
-      explanation: The API can be included in a query string variable named "code",  or it can be included in an x-functions-key HTTP header.
+      explanation: The API key can be included as a query string parameter named `code`, or as an HTTP header named `x-functions-key`.

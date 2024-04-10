@@ -3,11 +3,10 @@ uid: learn-xamarin.prepare-to-publish-your-xamarin-application.4-link-your-appli
 metadata:
   title: Link your application
   description: "Learn what the Mono Linker does and how this affects your app."
-  ms.date: 05/01/2019
+  ms.date: 02/20/2024
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-xamarin
+  ms.topic: unit
   
 title: Link your application
 durationInMinutes: 5

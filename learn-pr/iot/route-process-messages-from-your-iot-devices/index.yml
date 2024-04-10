@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.explore-message-processing-tasks
+metadata:
+  title: Guided project - Route and process messages from your Azure IoT Hub devices
+  description: "This module provides you with experience analyzing and processing IoT device messages using IoT Hub message routing and the Azure Stream Analytics services, and experience configuring Azure Blob Storage for your device data."
+  ms.date: 10/25/2023
+  author: kgremban
+  ms.author: kgremban
+  manager: lizross
+  ms.custom: engagement-fy23
+  ms.topic: module-guided-project
+  ms.service: iot-hub
+title: Guided project - Route and process messages from your Azure IoT Hub devices
+summary: This module provides you with experience analyzing and processing IoT device messages using IoT Hub message routing and the Azure Stream Analytics services, and experience configuring Azure Blob Storage for your device data.
+abstract: |
+  After you complete this module, you will be able to:
+  - Connect a simulated device to Azure IoT Hub and verify that IoT Hub is receiving telemetry.
+  - Configure an Azure IoT Hub message route that outputs selected message data to Azure Blob Storage.
+  - Configure an Azure Stream Analytics job that analyzes message data and routes the selected information to Azure Blob Storage.
+prerequisites: |
+  Ability to:
+  - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
+  - Explain the features and capabilities of IoT Hub and implement secure device-to-cloud communication between an IoT device and an IoT hub instance.
+  - Describe the Azure IoT SDKs for devices and services, and how Visual Studio Code, Azure CLI, and the Azure Cloud Shell can be used to configure and develop components of an IoT solution.
+  - Describe how an IoT solution uses message routing and other message processing options to process message and event data.
+  - Describe the hot and cold storage path options for an Azure IoT solution.
+  - Describe how Azure Stream Analytics is used in an IoT solution.
+iconUrl: /training/achievements/message-process-explore-tasks.svg
+levels:
+- intermediate
+roles:
+- developer
+- solution-architect
+products:
+- azure-iot-hub
+- azure-iot-sdk
+subjects:
+- iot
+units:
+- learn.wwl.explore-message-processing-tasks.introduction
+- learn.wwl.explore-message-processing-tasks.prepare
+- learn.wwl.explore-message-processing-tasks.exercise-write-code-generate-vibration-telemetry
+- learn.wwl.explore-message-processing-tasks.exercise-create-message-route-azure-blob-storage
+- learn.wwl.explore-message-processing-tasks.exercise-create-azure-stream-analytics-job
+- learn.wwl.explore-message-processing-tasks.knowledge-check
+- learn.wwl.explore-message-processing-tasks.summary
+badge:
+  uid: learn.wwl.explore-message-processing-tasks.badge

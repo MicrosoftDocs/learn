@@ -2,12 +2,12 @@
 uid: learn.wwl.learn-best-practices-from-microsoft-technical-trainers-for-az-104
 metadata:
   title: Learn best practices from Microsoft Technical Trainers
-  description: "Becoming familiar with the Microsoft technical training program will provide direction when preparing to implement the fundamentals course materials in your classroom."
+  description: Becoming familiar with the Microsoft technical training program will provide direction when preparing to implement the fundamentals course materials in your classroom.
   ms.date: 08/16/2022
   author: wwlpublish
   ms.author: tsheppard
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Learn best practices from Microsoft Technical Trainers
 summary: Becoming familiar with the Microsoft technical training program will provide direction when preparing to implement the fundamentals course materials in your classroom.
 abstract: |

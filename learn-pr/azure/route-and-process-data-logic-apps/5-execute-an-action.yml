@@ -5,11 +5,10 @@ title: Execute an action
 metadata:
   title: Execute an action
   description: Execute an action
-  ms.date: 5/10/2019
+  ms.date: 10/17/2023
   author: ecfan
   ms.author: estfan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ROBOTS: INDEX,FOLLOW
 
 durationInMinutes: 5

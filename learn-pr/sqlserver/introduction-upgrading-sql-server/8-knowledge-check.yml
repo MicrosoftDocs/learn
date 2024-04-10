@@ -4,12 +4,11 @@ title: Knowledge check - upgrade SQL Server tools
 metadata:
   title: Knowledge check - upgrade SQL Server tools
   description: Knowledge check - upgrade SQL Server tools
-  ms.date: 01/31/2019
+  ms.date: 05/10/2023
   author: rwestmsft
   ms.author: randolphwest
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-sqlserver
+  ms.topic: unit
 durationInMinutes: 6
 quiz:
   title: Check your knowledge

@@ -3,11 +3,10 @@ uid: learn.azure.enterprise-scale-introduction.3-enterprise-scale-architecture-a
 metadata:
   title: Enterprise-scale architecture approach
   description: Enterprise-scale architecture approach
-  ms.date: 10/17/2022
-  author: JefferyMitchell
-  ms.author: jemitche
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 03/04/2024
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 title: Enterprise-scale architecture approach
 durationInMinutes: 10
 content: |

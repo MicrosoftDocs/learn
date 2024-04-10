@@ -4,11 +4,12 @@ title: Exercise - Implement the foreach statement
 metadata:
   title: Exercise - Implement the foreach statement
   description: "Exercise - Implement the foreach statement"
-  ms.date: 02/24/2023
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 12
 content: |
   [!include[](includes/3-exercise-foreach.md)]

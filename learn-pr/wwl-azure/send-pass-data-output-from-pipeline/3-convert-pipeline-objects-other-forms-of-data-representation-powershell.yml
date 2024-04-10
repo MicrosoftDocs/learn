@@ -4,13 +4,10 @@ title: Convert pipeline objects to other forms of data representation in PowerSh
 metadata:
   title: Convert pipeline objects to other forms of data representation in PowerShell
   description: "Convert pipeline objects to other forms of data representation in PowerShell"
-  ms.date: 10/14/2022
+  ms.date: 01/29/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/3-convert-pipeline-objects-other-forms-of-data-representation-powershell.md)]

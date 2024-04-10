@@ -2,12 +2,12 @@
 uid: learn.wwl.review-windows-powershell
 metadata:
   title: Review Windows PowerShell
-  description: "Review Windows PowerShell"
-  ms.date: 11/10/2022
+  description: Review Windows PowerShell
+  ms.date: 07/04/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: powershell
 title: Review Windows PowerShell
 summary: This module introduces you to Windows PowerShell and its versions. It discusses commonly used host applications. It explains how to use Microsoft Visual Studio Code (VS Code) to develop PowerShell scripts.
 abstract: |
@@ -28,13 +28,12 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-cloud-shell
 - azure-powershell
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

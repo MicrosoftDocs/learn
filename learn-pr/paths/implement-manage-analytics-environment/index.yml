@@ -6,8 +6,7 @@ metadata:
   ms.date: 09/01/2022
   author: wwlpublish
   ms.author: anrudduc
-  ms.topic: interactive-tutorial
-  ms.service: powerbi
+  ms.topic: learning-path
 title: Implement and manage an analytics environment
 prerequisites: |
   Familiarity with Power BI and governance practices in a BI environment.
@@ -26,12 +25,8 @@ subjects:
 - data-management
 modules:
 - learn-bizapps.power-bi-admin-governance
-- learn-bizapps.power-bi-admin-collaboration
 - learn-bizapps.power-bi-admin-monitor
-- learn-bizapps.power-bi-admin-premium
-- learn-bizapps.power-bi-admin-infrastructure
 - learn-bizapps.power-bi-admin-reach
-- learn-bizapps.power-bi-admin-automate
 - learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics
 trophy:
   uid: learn.wwl.implement-manage-analytics-environment.trophy

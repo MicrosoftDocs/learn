@@ -4,12 +4,11 @@ title: Exercise - Publish an update to your site
 metadata:
   title: Exercise - Publish an update to your site
   description: Publish an update to your site
-  ms.date: 05/02/2020
+  ms.date: 09/27/2023
   author: mikejo5000
   ms.author: mikejo
   manager: jmartens
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/7-exercise-publish-an-update-to-your-site.md)]

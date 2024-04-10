@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.challenge-project-create-mini-game-with-copilot.exercise-create-the-game-logic
+title: Exercise - Create the game logic
+metadata:
+  title: Exercise - Create the game logic
+  description: "Exercise - Create the game logic"
+  ms.date: 08/22/2023
+  author: cyz
+  ms.author: cyzanon
+  ms.custom: team=nextgen
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-create-the-game-logic.md)]

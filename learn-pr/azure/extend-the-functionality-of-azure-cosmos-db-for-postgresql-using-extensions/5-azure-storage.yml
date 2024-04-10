@@ -7,12 +7,11 @@ metadata:
   description: The pg_azure_storage extension for PostgreSQL allows you to interact with files stored in Azure Blob Storage directly from your Azure Cosmos DB for PostgreSQL database.
   ms.custom:
     - ignite-2022
-  ms.date: 09/27/2022
+  ms.date: 06/14/2023
   author: seesharprun
   ms.author: sidandrews
   ms.reviewer: jonels
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/5-azure-storage.md)]

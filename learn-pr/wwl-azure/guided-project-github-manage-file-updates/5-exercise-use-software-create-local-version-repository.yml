@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-github-manage-file-updates.exercise-use-software-create-local-version-repository
+title: Exercise – Use software to create a local version of your repository
+metadata:
+  title: Exercise – Use software to create a local version of your repository
+  description: "Exercise – Use software to create a local version of your repository"
+  ms.date: 04/08/2024
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-exercise-use-software-create-local-version-repository.md)]

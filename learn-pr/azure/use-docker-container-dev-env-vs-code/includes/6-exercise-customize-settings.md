@@ -1,6 +1,6 @@
 The devcontainer.json file helps you configure various settings in your containerized Visual Studio Code setup. So far, you've configured a dev container for a Python project. However, there are still some rough edges and setup tasks that you can further automate.
 
-In this exercise, you'll use the devcontainer.json file to smooth these edges and make the project work with no setup steps from the developer.
+In this exercise, you'll use the `devcontainer.json` file to smooth these edges and make the project work with no setup steps from the developer.
 
 ## Install Visual Studio Code extensions
 
@@ -10,8 +10,7 @@ The container comes with the Microsoft Python extension ([as you can see in its 
 1. Type **extension** and select **Extensions: Install Extensions**.
 1. In the extension explorer on the right, search for **jinja**.
 1. Select **Install**.
-1. Right-click the **Jinja** extension from **wholroyd** and select **Copy extension ID**.
-1. Add the extension ID to the `extensions` option in your devcontainer.json.
+1. Right-click the **Jinja** extension from **wholroyd** and select **Add to devcontainer.json**.
 1. Return to the devcontainer.json file and notice that the Jinja extension has been added to the `extensions` section.
 1. Save the devcontainer.json file.
 
@@ -41,7 +40,7 @@ The container will be rebuilt with the changes you've specified in the devcontai
 
 ## Examine syntax highlighting provided by the Jinja extension
 
-1. Open the template/index.html file.
+1. Open the `templates/index.html` file.
 1. Scroll down to line 33 and notice that syntax highlighting is on the `for` loop. This syntax highlighting is enabled by the Jinja extension.
 
    :::image type="content" source="../media/for-loop.jpg" alt-text="Screenshot of a Jinja template, emphasizing a for loop with syntax highlighting.":::

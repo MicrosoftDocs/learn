@@ -2,12 +2,12 @@
 uid: learn.wwl.get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals
 metadata:
   title: Get tips and tricks for teaching AZ-900 Microsoft Azure Fundamentals
-  description: "Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials."
+  description: Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials.
   ms.date: 01/16/2023
   author: wwlpublish
   ms.author: tsheppard
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Get tips and tricks for teaching AZ-900 Microsoft Azure Fundamentals
 summary: Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials.
 abstract: |

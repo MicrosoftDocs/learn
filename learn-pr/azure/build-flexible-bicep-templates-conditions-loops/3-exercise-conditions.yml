@@ -6,11 +6,11 @@ metadata:
   unitType: exercise
   title: Exercise - Deploy resources conditionally
   description: Learn how to deploy resources conditionally, based on Boolean values and expressions.
-  ms.date: 07/25/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/14/2023
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom: devx-track-bicep
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 8
 content: |

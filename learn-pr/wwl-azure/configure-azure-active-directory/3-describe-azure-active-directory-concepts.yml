@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-active-directory.describe-azure-ad-concepts
-title: Describe Azure Active Directory concepts
+title: Describe Microsoft Entra concepts
 metadata:
-  title: Describe Azure Active Directory concepts
-  description: "Describe Azure Active Directory concepts"
-  ms.date: 03/29/2023
+  title: Describe Microsoft Entra concepts
+  description: "Describe Microsoft Entra concepts"
+  ms.date: 04/03/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/3-describe-azure-active-directory-concepts.md)]

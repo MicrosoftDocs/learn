@@ -4,11 +4,10 @@ title: Back up and restore your App Service app
 metadata:
   title: Back up and restore your App Service app
   description: "Back up and restore your App Service app"
-  ms.date: 01/18/2023
+  ms.date: 11/14/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 4

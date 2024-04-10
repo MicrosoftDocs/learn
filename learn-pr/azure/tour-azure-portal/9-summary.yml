@@ -4,31 +4,30 @@ title: Summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 09/24/2018
+  ms.date: 04/08/2024
   author: JnHs
   ms.author: jenhayes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-durationInMinutes: 3  
+  ms.topic: unit
+durationInMinutes: 2  
 content: |
   [!include[](includes/9-summary.md)]
 quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'An Azure dashboard is stored as which type of file?'
+  - content: "Which global control option lets you change the visual theme displayed in the Azure portal?"
     choices:
-    - content: XML
-      isCorrect: false
-      explanation: "Azure dashboards are stored as JSON files, which allow them to be uploaded and downloaded to share with other members of the Azure directory."
-    - content: JSON
+    - content: "Settings"
       isCorrect: true
-      explanation: "Azure dashboards are stored as JSON files, which allow them to be uploaded and downloaded to share with other members of the Azure directory."
-    - content: PNG
+      explanation: "The **Appearance + startup views** tab of **Settings** lets you apply different themes to the portal."
+    - content: "Support + troubleshooting"
       isCorrect: false
-      explanation: "Azure dashboards are stored as JSON files, which allow them to be uploaded and downloaded to share with other members of the Azure directory."
+      explanation: "The **Support + troubleshooting** pane lets you create support requests and find helpful info, but it doesn't let you apply different themes."
+    - content: "Notifications"
+      isCorrect: false
+      explanation: "The **Notifications** pane lets you view notifications, but it doesn't let you apply different themes."
 
-  - content: "Azure Advisor provides advice on which of these topics:"
+  - content: "Azure Advisor provides advice on which of these topics?"
     choices:
     - content: "Creating an Azure account"
       isCorrect: false
@@ -36,15 +35,18 @@ quiz:
     - content: "Best practices and security for your services"
       isCorrect: true
       explanation: "Azure Advisor is a free service built into Azure that provides recommendations on high availability, security, performance, and cost."
-    - content: "Using the Azure portal effectively"
+    - content: "Using the Azure portal to create resources"
       isCorrect: false
       explanation: "Azure Advisor is accessed from the Azure portal, but doesn't provide guidance on using the portal."
 
-  - content: 'True or false: Azure Cloud Shell is an interactive, browser-accessible shell for managing Azure resources?'
+  - content: "An Azure dashboard is stored as which type of file?"
     choices:
-    - content: "True"
-      isCorrect: true
-      explanation: "Azure Cloud Shell is an interactive shell for managing Azure resources. You can control and administer all of your Azure resources in the current subscription through a command-line interface built right into the portal."
-    - content: "False"
+    - content: XML
       isCorrect: false
-      explanation: "Azure Cloud Shell is an interactive shell for managing Azure resources. You can control and administer all of your Azure resources in the current subscription through a command-line interface built right into the portal."
+      explanation: "Azure dashboards aren't stored as XML files."
+    - content: JSON
+      isCorrect: true
+      explanation: "Azure dashboards are stored as JSON files, which allow them to be uploaded and downloaded to share with other members of the Azure directory."
+    - content: HTML
+      isCorrect: false
+      explanation: "Azure dashboards aren't stored as HTML files."

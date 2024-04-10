@@ -9,8 +9,7 @@ metadata:
   author: vrapolinario
   ms.author: viniap
   #ms.learn-contact: smmark
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 prerequisites: |
   - Basic knowledge of Windows Server virtualization
   - An Azure subscription 
@@ -32,7 +31,7 @@ products:
 - windows-server
 subjects:
 - infrastructure
-- container
+- containers
 modules:
 - learn.intro-to-docker-containers
 - learn.wwl.run-containers-windows-server
@@ -41,5 +40,7 @@ modules:
 - learn.intro-to-azure-kubernetes-service
 - learn.wwl.manage-azure-kubernetes-service-azure-stack-hci
 - learn.aks-deploy-container-app
+- learn.azure.apply-storage-concepts-to-windows-containers
+- learn.azure.apply-networking-concepts-to-windows-containers
 trophy:
   uid: learn.deploy-manage-monitor-wincontainers-aks.trophy

@@ -2,12 +2,11 @@
 uid: learn.monitor-report-aad-security-events.3-integrate-activity-logs-with-monitor
 metadata:
   title: Integrate logs with a Log Analytics workspace
-  description: Integrate Azure Active Directory logs with a Log Analytics workspace.
-  ms.date: 04/22/2022
+  description: Integrate Microsoft Entra logs with a Log Analytics workspace.
+  ms.date: 03/01/2023
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Integrate logs with a Log Analytics workspace
 durationInMinutes: 7
 content: |
@@ -15,7 +14,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'What are the two types of queries you can write to view your Azure Active Directory logs?'
+  - content: 'What are the two types of queries you can write to view your Microsoft Entra logs?'
     choices:
     - content: Kusto and search-based
       isCorrect: false

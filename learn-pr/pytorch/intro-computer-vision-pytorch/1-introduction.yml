@@ -5,10 +5,9 @@ metadata:
   title: Introduction
   description: Introduction to Computer Vision Using PyTorch
   author: shwars
-  ms.author: dmitryso
-  ms.date: 04/14/2020
-  ms.topic: interactive-tutorial
-  ms.service: machine-learning
+  ms.author: chnoring
+  ms.date: 06/04/2020
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 2
 content: |

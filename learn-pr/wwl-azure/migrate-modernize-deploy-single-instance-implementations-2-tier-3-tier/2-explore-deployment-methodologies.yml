@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-deploy-single-instance-implementations-2-tier-3-tier.explore-deployment-methodologies
+title: Explore deployment methodologies
+metadata:
+  title: Explore deployment methodologies
+  description: "Explore deployment methodologies"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+  ms.custom: devx-track-azurecli, devx-track-azurepowershell, devx-track-terraform
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-explore-deployment-methodologies.md)]

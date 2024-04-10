@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-secrets-configure-app.4-concept-configmaps
 metadata:
-  title: Understand Kubernetes Secrets
+  title: Understand Kubernetes ConfigMaps
   description: Explore the concepts behind how to decouple application configuration using ConfigMaps.
-  ms.date: 12/16/2020
+  ms.date: 01/26/2024
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Understand Kubernetes Secrets
+  ms.topic: unit
+title: Understand Kubernetes ConfigMaps
 durationInMinutes: 10
 content: |
   [!include[](includes/4-concept-configmaps.md)]
@@ -19,21 +18,21 @@ quiz:
       choices:
         - content: "To decouple our configuration from our application."
           isCorrect: true
-          explanation: "ConfigMaps allow us to make our configuration abstract and remove them from our applications."
-        - content: "To map configuration so it's easily accessible."
+          explanation: "ConfigMaps allow us to abstract our configurations and remove them from our applications."
+        - content: "To map configuration, so it's easily accessible."
           isCorrect: false
           explanation: "Although the name is a map, the ConfigMap object is meant to hold chunks of configuration entirely."
         - content: "To avoid losing data."
           isCorrect: false
-          explanation: "This is not the objective of the ConfigMaps."
+          explanation: "Avoiding data loss isn't the objective of ConfigMaps."
     - content: "How can you use ConfigMaps in an application?"
       choices:
-        - content: "Injecting them into variables or mounting them into the filesystem."
+        - content: "Inject them into variables or mount them into the filesystem."
           isCorrect: true
           explanation: "Correct. ConfigMaps, just like secrets, can be loaded directly into environment variables or mounted into a pod's file system."
         - content: "As an API accessed by the container inside the pod."
           isCorrect: false
-          explanation: "Containers cannot access ConfigMaps via API."
+          explanation: "Containers can't access ConfigMaps via API."
         - content: "Only through kubectl."
           isCorrect: false
           explanation: "ConfigMaps can be used from within the pods."
@@ -44,7 +43,7 @@ quiz:
           explanation: "Correct. ConfigMaps are namespaced resources."
         - content: "No, ConfigMaps are cluster-wide."
           isCorrect: false
-          explanation: "ConfigMaps cannot be accessed cluster-wide. The are created in and can only be accessed within a namespace."
-        - content: "ConfigMaps are not part of any namespace."
+          explanation: "ConfigMaps can't be accessed cluster-wide. They can only be accessed within a namespace."
+        - content: "ConfigMaps aren't part of any namespace."
           isCorrect: false
           explanation: "ConfigMaps are part of the namespace they're created in and are scoped to it."

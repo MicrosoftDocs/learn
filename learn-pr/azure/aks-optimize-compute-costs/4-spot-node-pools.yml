@@ -5,11 +5,10 @@ title: Configure multiple node pools by using AKS spot node pools with the clust
 metadata:
   title: Configure multiple node pools by using AKS spot node pools with the cluster autoscaler
   description: Use spot VMs for user nodes with your AKS cluster to take advantage of unused capacity in Azure and to optimize costs. Here you'll explore how to configure a spot node pool and enable the autoscaler on the node pool. You'll also see how to deploy a workload that uses the node pool's taint information to schedule the workload on the node pool's nodes.
-  ms.date: 7/10/2020
+  ms.date: 12/20/2023
   author: Nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 
 durationInMinutes: 11
 content: |

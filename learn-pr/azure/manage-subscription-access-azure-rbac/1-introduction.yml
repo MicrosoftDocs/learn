@@ -4,11 +4,10 @@ title: Introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 01/13/2020
+  ms.date: 11/20/2023
   author: rolyon
   ms.author: rolyon
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

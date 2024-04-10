@@ -3,11 +3,10 @@ uid: learn.sports-machine-learning.mixed-reality-for-sports-fans.knowledge-check
 metadata:
   title: Knowledge check
   description: Check to see how much you understood about the tools and frameworks for Mixed Reality.
-  ms.date: 06/15/2021
+  ms.date: 11/04/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Knowledge check
 durationInMinutes: 2

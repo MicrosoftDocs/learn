@@ -4,11 +4,10 @@ title: Data-flow diagram elements
 metadata:
   title: Data-flow diagram elements
   description: Explore each element in a data-flow diagram, made up of distinct shapes, functions, and recommended context
-  ms.date: 02/28/2020
+  ms.date: 08/03/2023
   author: rodsan
   ms.author: rodsan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-threat-modeling
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/1b-elements.md)]

@@ -1,12 +1,12 @@
 You're now familiar with some of the common software-based assistive technologies (AT) used by players. AT also includes hardware and physical devices.
 
-In this unit, you'll learn about some common hardware AT devices used for gaming access. This unit also offers important insights to consider when you develop game experiences that support players who use these devices.
+In this unit, learn about some common hardware AT devices used for gaming access. This unit also offers you important insights to consider when you develop game experiences that support players who use these devices.
 
 ## What are the common types of hardware assistive technologies used in gaming?
 
 Many hardware AT devices might be referred to as "adaptive" input devices or "adaptive controllers." In general, these devices provide an accessible alternative for players who have difficulty using standard input devices like commercial controllers, a mouse, and a keyboard.
 
-In the following video, you'll learn about some common AT devices like the Xbox Adaptive Controller, switch buttons, and mouth-operated joysticks.
+In the following video, learn about some common AT devices like the Xbox Adaptive Controller, switch buttons, and mouth-operated joysticks.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPOy2]
 

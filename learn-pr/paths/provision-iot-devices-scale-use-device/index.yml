@@ -1,14 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.provision-iot-devices-at-scale-by-using-device
 metadata:
-  title: Provision IoT devices at scale by using the Device Provisioning Service
-  description: Provision IoT devices at scale by using the Device Provisioning Service
-  ms.date: 12/15/2021
-  author: wwlpublish
-  ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Provision IoT devices at scale by using the Device Provisioning Service
+  title: Provision IoT devices at scale by using Azure IoT Hub Device Provisioning Service (DPS)
+  description: Learn about DPS properties and capabilities, attestation mechanisms, lifecycle tasks, and implement device enrollment using group enrollment processes.
+  ms.date: 02/28/2024
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: learning-path
+title: Provision IoT devices at scale by using Azure IoT Hub Device Provisioning Service (DPS)
 prerequisites: |
   Ability to:
   *   Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
@@ -16,25 +15,24 @@ prerequisites: |
   *   Explain the features and capabilities of IoT Hub and implement secure device-to-cloud communication between an IoT device and an IoT hub instance.
   *   Describe the Azure IoT SDKs for devices and services, and how Visual Studio Code, Azure CLI, and the Azure Cloud Shell can be used to configure and develop components of an IoT solution.
 summary: |
-  You will learn about the Device Provisioning Service properties and capabilities, device attestation mechanisms, device provisioning lifecycle tasks, and you will implement device enrollment (and disenrollment) using individual and group enrollment processes.
+  You'll learn about the Device Provisioning Service properties and capabilities, device attestation mechanisms, device provisioning lifecycle tasks, and you'll implement device enrollment (and disenrollment) using group enrollment processes.
 iconUrl: /training/achievements/iot-provisions-device-scale.svg
 levels:
 - intermediate
 roles:
 - developer
+- solution-architect
 products:
 - azure
-- azure-iot-dps
+- azure-iot
 - azure-iot-hub
 - azure-iot-sdk
-- azure-portal
 subjects:
 - iot
 modules:
-- learn.wwl.examine-device-provisioning-service-terms-concepts
+- learn.introduction-to-device-provisioning-service
 - learn.wwl.examine-device-provisioning-service-coding-tools-access
 - learn.wwl.examine-device-provisioning-lifecycle-tasks
-- learn.wwl.explore-individual-enrollment-tasks
 - learn.wwl.explore-group-enrollment-tasks
 trophy:
   uid: learn.wwl.provision-iot-devices-at-scale-by-using-device.trophy

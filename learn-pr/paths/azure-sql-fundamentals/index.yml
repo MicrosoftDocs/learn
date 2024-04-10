@@ -5,10 +5,9 @@ metadata:
   description: Learn how to deploy, secure, monitor and troubleshoot Azure SQL database.
   brand: azure
   ms.date: 03/15/2023
-  author: jboeshart
-  ms.author: jaboes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: learning-path
 title: Azure SQL fundamentals
 summary: "Learn how to translate your existing SQL Server expertise to Azure SQL including Azure SQL Database and Azure SQL managed instance. After completing this learning path, you will have a foundational knowledge of what to use when, as well as how to configure, secure, monitor, and troubleshoot Azure SQL."
 prerequisites: |

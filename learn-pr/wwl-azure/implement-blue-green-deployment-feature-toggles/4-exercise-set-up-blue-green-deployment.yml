@@ -1,16 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-blue-green-deployment-feature-toggles.exercise-set-up-blue-green-deployment
-title: Exercise - set up a blue–green deployment
+title: Exercise - set up a blue-green deployment
 metadata:
-  title: Exercise - set up a blue–green deployment
-  description: "Exercise - set up a blue–green deployment"
-  ms.date: 11/01/2022
+  title: Exercise - set up a blue-green deployment
+  description: "Exercise - set up a blue-green deployment"
+  ms.date: 10/13/2023
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 7
+  ms.topic: unit
+durationInMinutes: 60
 content: |
   [!include[](includes/4-exercise-set-up-blue-green-deployment.md)]

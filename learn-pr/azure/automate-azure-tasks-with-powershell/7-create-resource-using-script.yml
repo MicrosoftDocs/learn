@@ -4,11 +4,12 @@ title: Create and save scripts in Azure PowerShell
 metadata:
   title: Create and save scripts in Azure PowerShell
   description: Create and save scripts in Azure PowerShell
-  ms.date: 09/24/2018
+  ms.date: 09/05/2023
   author: mikefrobbins
   ms.author: mirobb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurepowershell
 durationInMinutes: 10
 content: |
   [!include[](includes/7-create-resource-using-script.md)]

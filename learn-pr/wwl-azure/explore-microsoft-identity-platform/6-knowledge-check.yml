@@ -4,11 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/24/2023
+  ms.date: 12/11/2023
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -34,4 +35,4 @@ quiz:
       explanation: "Correct. Apps performing the on-behalf-of flow require code to handle Conditional Access challenges."
     - content: "Apps performing the Integrated Windows authentication flow"
       isCorrect: false
-      explanation: "Incorrect. The Integrated Windows authentication flow allows applications on domain or Azure Active Directory (Azure AD) joined computers to acquire a token silently."
+      explanation: "Incorrect. The Integrated Windows authentication flow allows applications on domain or Microsoft Entra joined computers to acquire a token silently."

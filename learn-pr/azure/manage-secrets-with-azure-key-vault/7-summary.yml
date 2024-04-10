@@ -4,11 +4,10 @@ title: Summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 09/24/2018
+  ms.date: 11/06/2023
   author: msmbaldwin
   ms.author: mbaldwin
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/7-summary.md)]
@@ -33,9 +32,9 @@ quiz:
       isCorrect: false
     - content: Applications and users authenticate to a vault with a Microsoft account and are authorized to access specific secrets.
       isCorrect: false
-    - content: Applications and users authenticate to a vault with their Azure Active Directory identities and are authorized to perform actions on all secrets in the vault.
+    - content: Applications and users authenticate to a vault with their Microsoft Entra identities and are authorized to perform actions on all secrets in the vault.
       isCorrect: true
-      explanation: Authentication to Key Vault uses Azure Active Directory identities. Access policies are used to provide authorization for actions that apply to every secret in the vault.
+      explanation: Authentication to Key Vault uses Microsoft Entra identities. Access policies are used to provide authorization for actions that apply to every secret in the vault.
     - content: Applications authenticate to a vault with the username and password of a user that signs in to the web app, and is granted access to secrets owned by that user.
       isCorrect: false
 

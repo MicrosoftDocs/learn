@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.create-first-aks-edge-essential.exercise-deploy-application-aks-edge-essentials
+title: Exercise - Deploy a sample Linux and Windows application to AKS Edge Essentials cluster
+sandbox: true
+metadata:
+  title: Exercise - Deploy a sample Linux and Windows application to AKS Edge Essentials cluster
+  description: This content is a part of Create your first Azure Kubernetes Service (AKS) Edge Essentials single machine cluster.
+  ms.date: 01/17/2024
+  author: asergaz
+  ms.author: sergaz
+  ms.topic: unit
+  ms.custom: linux-related-content
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise-deploy-application-aks-edge-essentials.md)]

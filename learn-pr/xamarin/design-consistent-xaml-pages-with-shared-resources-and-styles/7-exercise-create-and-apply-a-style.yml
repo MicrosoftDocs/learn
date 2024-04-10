@@ -5,11 +5,10 @@ durationInMinutes: 6
 metadata:
   title: Exercise - Create and apply a style
   description: Exercise - Create and apply a style in XAML pages.
-  ms.date: 05/01/2019
+  ms.date: 02/20/2024
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-xamarin
+  ms.topic: unit
   
 content: |
   [!include[](includes/7-exercise-create-and-apply-a-style.md)]

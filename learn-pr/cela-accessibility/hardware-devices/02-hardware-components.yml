@@ -4,11 +4,10 @@ title: Hardware component accessibility
 metadata:
   title: Implement accessible hardware components
   description: This content is part of the accessibility best practices for gaming hardware module.
-  ms.date: 11/14/2021
+  ms.date: 04/30/2023
   author: kaitlynjones
   ms.author: kaitlynjones
-  ms.topic: interactive-tutorial
-  ms.prod: learning-hardware-devices
+  ms.topic: unit
 durationInMinutes: 12
 content: |
   [!include[](includes/02-hardware-components.md)]

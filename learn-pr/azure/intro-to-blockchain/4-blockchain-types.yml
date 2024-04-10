@@ -3,11 +3,10 @@ uid: learn.azure-intro-to-blockchain.blockchain-types
 metadata:
   title: Blockchain types
   description: The different types of blockchain and protocols
-  ms.date: 05/15/2020
+  ms.date: 05/15/2023
   author: PatAltimore
   ms.author: patricka
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Blockchain types
 durationInMinutes: 5
 content: |

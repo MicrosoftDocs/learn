@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-language-model-with-luis.exercise-create-luis-application
+title: Exercise - Use Conversational Language Understanding with Language Studio
+metadata:
+  title: Exercise - Use Conversational Language Understanding with Language Studio
+  description: "Exercise - Use Conversational Language Understanding with Language Studio"
+  ms.date: 11/01/2023
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/4-exercise-create-language-understanding-application.md)]

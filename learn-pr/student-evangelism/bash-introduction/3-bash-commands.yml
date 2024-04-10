@@ -4,11 +4,10 @@ title: Bash commands and operators
 metadata:
   title: Bash commands and operators
   description: Learn key Bash commands and I/O operators, like ls, cat, and ps.
-  ms.date: 03/19/2021
+  ms.date: 04/06/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-bash
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 10
 content: |

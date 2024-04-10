@@ -5,11 +5,10 @@ metadata:
   unitType: summary
   title: summary
   description: "In this module, you learned how to combine data from several tables to gain further insights from the enriched data."
-  ms.date: 12/30/2021
+  ms.date: 01/03/2024
   author: shsagir
   ms.author: shsagir
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/9-summary.md)]

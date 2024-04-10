@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.implement-observability-cloud-native-app-with-opentelemetry.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 12/20/2023
+  author: codemillmatt  
+  ms.author: masoucou
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following lists are the three pillars of observability?"
+    choices:
+    - content: "Debugging, logging, and tracing"
+      isCorrect: false
+      explanation: "Incorrect. Debugging, logging, and tracing aren't the three pillars of observability."
+    - content: "Logs, tracking, and metrics"
+      isCorrect: false
+      explanation: "Incorrect. Logs, tracking, and metrics aren't the three pillars of observability."
+    - content: "Logs, metrics, and distributed tracing"
+      isCorrect: true
+      explanation: "Correct. Logs, metrics, and distributed tracing are the three pillars of observability."
+  - content: "Which of the following apps lets you view distributed tracing data?"
+    choices:
+    - content: "Prometheus"
+      isCorrect: false
+      explanation: "Incorrect. Prometheus is a metrics app."
+    - content: "Zipkin or Jaeger"
+      isCorrect: true
+      explanation: "Correct. Zipkin and Jaeger are both distributed tracing apps."
+    - content: "Grafana"
+      isCorrect: false
+      explanation: "Incorrect. Grafana is a metrics app."
+       
+

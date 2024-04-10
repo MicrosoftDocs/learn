@@ -5,11 +5,10 @@ azureSandbox: true
 metadata:
   title: Exercise - Train the model
   description: Train the model
-  ms.date: 01/19/2021
+  ms.date: 12/22/2022
   author: cassiebreviu
   ms.author: cassieb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen, team=cloud_advocates
   ms.contributors: cassieb-09032021
 durationInMinutes: 15

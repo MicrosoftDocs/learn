@@ -1,3 +1,4 @@
+
 It's essential to follow best practices when creating actions:
 
  -  Create chainable actions. Don't create large monolithic actions. Instead, create smaller functional actions that can be chained together.

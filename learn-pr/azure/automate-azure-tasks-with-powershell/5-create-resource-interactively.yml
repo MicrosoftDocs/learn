@@ -4,11 +4,11 @@ title: Create an Azure Resource using scripts in Azure PowerShell
 metadata:
   title: Create an Azure Resource using scripts in Azure PowerShell
   description: Create an Azure Resource using scripts in Azure PowerShell
-  ms.date: 09/24/2018
+  ms.date: 09/05/2023
   author: mikefrobbins
   ms.author: mirobb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: devx-track-azurepowershell, linux-related-content
   zone_pivot_groups: platform
 durationInMinutes: 5
 content: |

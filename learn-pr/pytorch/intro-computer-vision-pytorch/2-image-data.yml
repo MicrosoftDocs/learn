@@ -5,10 +5,9 @@ metadata:
   title: Introduction to processing image data
   description: In this unit, we learn how computer images can be represented as tensors in PyTorch, and how to do handle image datasets
   author: shwars
-  ms.author: dmitryso
-  ms.date: 04/14/2020
-  ms.topic: interactive-tutorial
-  ms.service: machine-learning
+  ms.author: chnoring
+  ms.date: 06/04/2020
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 5
 sandbox: true

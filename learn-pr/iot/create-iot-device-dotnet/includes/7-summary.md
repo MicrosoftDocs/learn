@@ -7,11 +7,7 @@ In this module, you learned how to:
 - Write code to use GPIO pins to activate an LED or relay module.
 - Deploy and test the code.
 
-## Next steps
-
-
-
-## Learn more about IoT and .NET!
+## Learn more about IoT and .NET
 
 - [.NET IoT Libraries documentation hub](/dotnet/iot)
 - [.NET IoT Libraries GitHub](https://github.com/dotnet/iot)

@@ -4,25 +4,24 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check.
-  ms.date: 03/19/2021
-  author: sbkuehn
-  ms.author: shkuehn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 08/09/2023
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
   ms.custom: team=cloud_advocates
-  ms.contributors: shkuehn-03222021
+  ms.contributors: shkuehn-03222021, orthomas-08092023
 durationInMinutes: 5
 quiz:
   title: Check your knowledge
   questions:
-  - content: When you try to deploy Azure VMware Solution (AVS), you receive an error stating "NoRegisteredProviderFound". What should you try next?
+  - content: When you try to deploy Azure VMware Solution, you receive an error stating "NoRegisteredProviderFound". What should you try next?
     choices:  
     - content: Try to redeploy and see if the same error message displays.
       isCorrect: false
-      explanation: Redeploying AVS won't help your AVS environment. The error is about a specific configuration component.
+      explanation: Redeploying Azure VMware Solution won't help your Azure VMware Solution environment. The error is about a specific configuration component.
     - content: Register the Microsoft.AVS resource provider for the subscription.
       isCorrect: true
-      explanation: To deploy AVS, the Microsoft.AVS resource provider must be registered with the subscription for deployment.
+      explanation: To deploy Azure VMware Solution, the Microsoft.AVS resource provider must be registered with the subscription for deployment.
     - content: Try deploying Azure VMware Solution in a different region.
       isCorrect: false
       explanation: Switching regions won't help your deployment. The error doesn't relate to a regional issue.
@@ -33,51 +32,51 @@ quiz:
       explanation: Redeploying the service with the same configuration won't ensure that you have network connectivity to your on-premises VMware environment.
     - content: Ensure all gateways, including the Azure ExpressRoute provider's service, support 4-byte autonomous system number (ASN).
       isCorrect: true
-      explanation: AVS uses 4-byte public ASNs for advertising routes between the on-premises ExpressRoute circuit and the AVS ExpressRoute circuit.
+      explanation: Azure VMware Solution uses 4-byte public ASNs for advertising routes between the on-premises ExpressRoute circuit and the Azure VMware Solution ExpressRoute circuit.
     - content: Check permissions on the subscription and resource group.
       isCorrect: false
-      explanation: If you're able to deploy AVS, you already have the right permissions assigned.
+      explanation: If you're able to deploy Azure VMware Solution, you already have the right permissions assigned.
   - content: When you try to deploy Azure VMware Solution, you receive an error message indicating that there are steps to take before node deployment. How do you resolve the error so you can continue with the deployment?
     choices:  
     - content: Use a different region.
       isCorrect: false
-      explanation: Picking a different region will result in the same error message. There's a step you forgot before deploying your AVS environment.
+      explanation: Picking a different region will result in the same error message. There's a step you forgot before deploying your Azure VMware Solution environment.
     - content: Check permissions on the subscription and resource group.
       isCorrect: false
       explanation: If you're able to deploy the service without issues, you already have the right permissions assigned.
     - content: Open a new support ticket to have host quota allocated.
       isCorrect: true
-      explanation: To deploy AVS, you must open a support request to have bare-metal hosts provisioned in your subscription.
+      explanation: To deploy Azure VMware Solution, you must open a support request to have bare-metal hosts provisioned in your subscription.
   - content: "At a minimum, which CIDR network-address block does an Azure VMware Solution private cloud require?"
     choices:
     - content: "/22"
       isCorrect: true
-      explanation: "AVS needs a /22 CIDR network-address block for IP segments."
+      explanation: "Azure VMware Solution needs a /22 CIDR network-address block for IP segments."
     - content: "/30"
       isCorrect: false
-      explanation: "AVS needs a bigger CIDR network-address block allocated for IP segments."
+      explanation: "Azure VMware Solution needs a bigger CIDR network-address block allocated for IP segments."
     - content: "/31"
       isCorrect: false
-      explanation: "AVS needs a bigger CIDR network-address block allocated for IP segments."
+      explanation: "Azure VMware Solution needs a bigger CIDR network-address block allocated for IP segments."
   - content: "What type of interconnectivity provides network connectivity into Azure resources and services?"
     choices:
     - content: "Full interconnectivity"
       isCorrect: false
-      explanation: "Full interconnectivity establishes connectivity between your on-premises VMware environment and AVS."
+      explanation: "Full interconnectivity establishes connectivity between your on-premises VMware environment and Azure VMware Solution."
     - content: "Half interconnectivity"
       isCorrect: false
-      explanation: "Half interconnectivity isn't a valid type of interconnectivity for AVS configuration."
+      explanation: "Half interconnectivity isn't a valid type of interconnectivity for Azure VMware Solution configuration."
     - content: "Basic interconnectivity"
       isCorrect: true
       explanation: "Basic interconnectivity establishes connectivity between the bare-metal hosts and Azure resources."
-  - content: "What is one of the gateways deployed with AVS?"
+  - content: "What is one of the gateways deployed with Azure VMware Solution?"
     choices:
     - content: "NSX-T Tier-1 gateway"
       isCorrect: true
-      explanation: "AVS deploys with an NSX-T Tier-1 gateway in active-standby mode. The NSX-T Tier-0 and Tier-1 gateways connect network segments as logical switches and provide East-West and North-South connectivity."
+      explanation: "Azure VMware Solution deploys with an NSX-T Tier-1 gateway in active-standby mode. The NSX-T Tier-0 and Tier-1 gateways connect network segments as logical switches and provide East-West and North-South connectivity."
     - content: "Application gateway"
       isCorrect: false
-      explanation: "An Azure application gateway is a web-traffic load balancer that enables you to manage traffic to your web applications. This gateway isn't deployed with AVS."
+      explanation: "An Azure application gateway is a web-traffic load balancer that enables you to manage traffic to your web applications. This gateway isn't deployed with Azure VMware Solution."
     - content: "Virtual network gateway"
       isCorrect: false
-      explanation: "A virtual network gateway is a PaaS resource that routes tables and runs specific gateway services for site-to-site connectivity. This gateway isn't deployed with AVS."
+      explanation: "A virtual network gateway is a PaaS resource that routes tables and runs specific gateway services for site-to-site connectivity. This gateway isn't deployed with Azure VMware Solution."

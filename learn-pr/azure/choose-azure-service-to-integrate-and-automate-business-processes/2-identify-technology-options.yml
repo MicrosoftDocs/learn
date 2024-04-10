@@ -4,11 +4,10 @@ title: Identify the technology options
 metadata:
   title: Identify the technology options
   description: Identify the technology options
-  ms.date: 04/10/2019
+  ms.date: 10/03/2023
   author: ggailey777
   ms.author: glenga
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-identify-technology-options.md)]

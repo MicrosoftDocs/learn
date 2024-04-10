@@ -5,8 +5,9 @@ metadata:
   description: "Monitor data in real-time with Power BI"
   ms.date: 12/20/2022
   author: wwlpublish
-  ms.author: shlindsay
-  ms.topic: interactive-tutorial
+  ms.author: anrudduc
+  ms.topic: module-standard-task-based
+  ms.service: powerbi
 title: Monitor data in real-time with Power BI
 summary: Describe real-time analytics in Power BI using automatic page refresh, real-time dashboards, and auto-refresh in paginated reports.
 abstract: |
@@ -25,7 +26,6 @@ roles:
 products:
 - power-bi
 subjects:
-- data-ai
 - data-analytics
 - data-visualization
 units:

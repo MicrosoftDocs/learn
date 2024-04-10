@@ -7,8 +7,7 @@ metadata:
   ms.date: 2/17/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/5-search-audit-log.md)]
@@ -17,9 +16,9 @@ quiz:
   questions:
   - content: "As the Enterprise Administrator for Fabrikam, Holly Spencer just completed running a search using the Microsoft Purview Audit (Standard) solution. When Holly reviewed the search results, she noticed that several records displayed a null value in the IP address field. Why wouldn't an IP address be displayed in these records?"
     choices:
-    - content: "The records were for administrator activities for Azure AD-related events"
+    - content: "The records were for administrator activities for Microsoft Entra ID-related events"
       isCorrect: true
-      explanation: "Correct. For administrator activity (or activity performed by a system account) for Azure Active Directory-related events, the IP address isn't logged. As a result, the value displayed in this field is null."
+      explanation: "Correct. For administrator activity (or activity performed by a system account) for Microsoft Entra ID-related events, the IP address isn't logged. As a result, the value displayed in this field is null."
     - content: "The records were for activities performed by external users"
       isCorrect: false
       explanation: "Incorrect. These activities would still capture the IP address of the external user."

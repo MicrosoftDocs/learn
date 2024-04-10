@@ -3,11 +3,10 @@ uid: learn.azure.azure-sentinel-deploy-connect.8-summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 03/01/2023
+  ms.date: 06/19/2023
   author: cwatson-cat
   ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Summary
 durationInMinutes: 2
 content: |

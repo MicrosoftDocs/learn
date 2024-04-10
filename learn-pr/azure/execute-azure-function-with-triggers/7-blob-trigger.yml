@@ -4,11 +4,10 @@ title: Execute an Azure function when a blob is created
 metadata:
   title: Execute an Azure function when a blob is created
   description: Execute an Azure function when a blob is created
-  ms.date: 09/24/2018
+  ms.date: 09/25/2023
   author: ggailey777
   ms.author: glenga
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/7-blob-trigger.md)]

@@ -3,11 +3,10 @@ uid: learn.azure.intro-to-content-moderator.3-how-content-moderator-works
 metadata:
   title: How Content Moderator works
   description: Content
-  ms.date: 01/29/2021
+  ms.date: 03/13/2023
   author: gerryo
-  ms.author: gerryo
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: nitinme
+  ms.topic: unit
 title: How Content Moderator works
 durationInMinutes: 10
 content: |

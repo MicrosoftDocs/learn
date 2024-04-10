@@ -13,7 +13,7 @@ To register a new job by using an option object in `$opt` and a trigger object i
 ```powershell
 PS C:\> $opt = New-ScheduledJobOption -WakeToRun
 
-PS C:\> $trigger = New-ScheduledTaskTrigger -Once -At (Get-Date).AddMinutes(5)
+PS C:\> $trigger = New-JobTrigger -Once -At (Get-Date).AddMinutes(5)
 
 PS C:\> Register-ScheduledJob -Trigger $trigger -ScheduledJobOption $opt -ScriptBlock { Dir C:\ } -MaxResultCount 5 -Name "LocalDir"
 

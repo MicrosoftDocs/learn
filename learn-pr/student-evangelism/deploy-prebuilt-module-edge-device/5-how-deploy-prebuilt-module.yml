@@ -4,12 +4,12 @@ title: Deploy a prebuilt module to an IoT Edge device
 metadata:
   title: Deploy a prebuilt module to an IoT Edge device
   description: In this unit, we explain submitting a new deployment to an IoT Edge device
-  ms.date: 12/5/2019
-  author: leestott
+  ms.date: 11/27/2023
+  author: PatAltimore
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
+  ms.topic: unit
   ms.custom: team=nextgen
+  ms.service: iot-hub
 durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/5-how-deploy-prebuilt-module.md)]

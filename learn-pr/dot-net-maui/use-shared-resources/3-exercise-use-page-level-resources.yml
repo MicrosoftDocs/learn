@@ -5,11 +5,12 @@ metadata:
   unitType: exercise
   title: "Exercise: Use page-level resources"
   description: "Create page-level resources and use them to replace repeated XAML mark-up"
-  ms.date: 04/29/2022
+  ms.date: 11/08/2023
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial 
-  ms.prod: learning-languages
+  ms.manager: markl
+  ms.topic: unit
+  ms.custom: devx-track-dotnet
 durationInMinutes: 5
 content: |
   [!include[](includes/3-exercise-use-page-level-resources.md)]

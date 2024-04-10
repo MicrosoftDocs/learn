@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.explore-data-for-data-science-microsoft-fabric.explore-notebooks
+title: Explore notebooks
+metadata:
+  title: Explore notebooks
+  description: "Learn how notebooks work in Microsoft Fabric."
+  ms.date: 09/19/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric 
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-explore-notebooks.md)]

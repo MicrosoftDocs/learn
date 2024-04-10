@@ -5,11 +5,10 @@ title: Detect an external event using a trigger
 metadata:
   title: Detect an external event using a trigger
   description: Detect an external event using a trigger
-  ms.date: 5/10/2019
+  ms.date: 10/17/2023
   author: ecfan
   ms.author: estfan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ROBOTS: INDEX,FOLLOW
 
 durationInMinutes: 8

@@ -3,11 +3,10 @@ uid: learn.run-docker-containers-aci.3-restart-policy
 metadata:
   title: Exercise - Control Azure Container Instances restart behavior
   description: Control Container Instances restart behavior.
-  ms.date: 04/28/2022
+  ms.date: 04/03/2024
   author: v-tcassi
   ms.author: tomcassidy
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Exercise - Control restart behavior
 durationInMinutes: 6
 content: |

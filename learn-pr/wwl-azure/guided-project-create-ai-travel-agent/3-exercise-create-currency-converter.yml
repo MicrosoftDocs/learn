@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-create-ai-travel-agent.exercise-create-currency-converter
+title: Exercise - Create a currency converter
+metadata:
+  title: Exercise - Create a currency converter
+  description: "Exercise - Create a currency converter"
+  ms.date: 02/28/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-create-currency-converter.md)]

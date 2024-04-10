@@ -4,11 +4,13 @@ title: Azure management options
 metadata:
   title: Azure management options
   description: Azure management options
-  ms.date: 01/1/2019
+  ms.date: 04/08/2024
   author: JnHs
   ms.author: jenhayes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-durationInMinutes: 7
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
+    - devx-track-azurepowershell
+durationInMinutes: 4
 content: |
   [!include[](includes/2-azure-management.md)]

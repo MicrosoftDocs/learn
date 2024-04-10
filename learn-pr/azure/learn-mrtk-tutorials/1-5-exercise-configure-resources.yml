@@ -3,12 +3,11 @@ uid: learn.azure.learn-introduction-tutorials-mrtk.1-5-exercise-configure-resour
 title: Exercise - Import and configure resources
 metadata:
   title: Exercise - Import and configure resources
-  description: Introduction for Import and configure resources
-  ms.date: 09/09/2021
-  author: Sean-Kerawala
-  ms.author: sekerawa
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  description: Exercise for Importing and configuring resources
+  ms.date: 09/30/2023
+  author: marlenaklein-msft
+  ms.author: marlenaklein
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/1-5-exercise-import-resources.md)]

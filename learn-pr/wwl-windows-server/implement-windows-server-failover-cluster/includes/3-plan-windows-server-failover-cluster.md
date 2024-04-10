@@ -79,4 +79,4 @@ In Windows Server, you don't need to have a cluster service account. Instead, th
 
 ### Software requirements for a failover cluster implementation
 
-As a best practice, each cluster node should run the same edition of Windows Server, either Windows Server 2019 Standard or Windows Server 2019 Datacenter. The nodes should have the same software updates installed. You have the option of using Server Core installation of Windows Server 2019 as cluster nodes, although that depends on the workloads and server roles you intend to deploy.
+As a best practice, each cluster node should run the same edition of Windows Server, either Windows Server 2025 Standard or Windows Server 2025 Datacenter. The nodes should have the same software updates installed. You have the option of using Server Core installation of Windows Server 2025 as cluster nodes, although that depends on the workloads and server roles you intend to deploy.

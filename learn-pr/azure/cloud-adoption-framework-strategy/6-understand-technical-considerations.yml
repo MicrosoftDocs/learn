@@ -3,11 +3,10 @@ uid: learn.cloud-adoption-framework-strategy.6-understand-technical-consideratio
 metadata:
   title: Understand technical considerations
   description: Understand technical considerations.
-  ms.date: 04/25/2022
-  author: BrianBlanchard
-  ms.author: brblanch
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/10/2023
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 title: Understand technical considerations
 durationInMinutes: 10
 content: |

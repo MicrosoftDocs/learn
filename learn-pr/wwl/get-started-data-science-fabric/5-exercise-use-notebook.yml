@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-data-science-fabric.exercise-use-notebook
+title: Exercise - Explore data science in Microsoft Fabric
+metadata:
+  title: Exercise - Explore data science in Microsoft Fabric
+  description: "Exercise - Explore data science in Microsoft Fabric"
+  ms.date: 11/23/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+  ms.custom:
+  - build-2023
+  - build-2023-dataai
+  - build-2023-fabric
+durationInMinutes: 20
+content: |
+  [!include[](includes/5-exercise-use-notebook.md)]

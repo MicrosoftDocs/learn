@@ -4,14 +4,15 @@ title: Exercise - Deploy clustered VMs by using Azure shared disks
 metadata:
   title: Exercise - Deploy clustered VMs by using Azure shared disks
   description: In this exercise, you use Azure shared disks with virtual machines.
-  ms.date: 06/23/2021
+  ms.date: 02/08/2023
   author: roygara
   ms.author: rogarana
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: devx-track-azurecli, devx-track-azurepowershell, linux-related-content
   zone_pivot_groups: platform-cloud
-azureSandbox: true
-interactive: bash
+azureSandbox: false
+# azureSandbox: true
+# interactive: bash
 durationInMinutes: 25
 content: |
   [!include[](includes/5-exercise-deploy-clustered-vms-azure-shared-disks.md)]

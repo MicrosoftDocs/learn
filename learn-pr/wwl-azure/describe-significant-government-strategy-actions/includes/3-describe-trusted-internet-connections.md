@@ -37,4 +37,4 @@ The TIC memorandum also notes that those POA&Ms need to be sent to the Departmen
 
 TIC has evolved quite a lot since 2007, moving away from heavy hardware-focused devices to more software-defined networking and guidance. TIC implementations are covered in greater detail in a separate module, but it’s important to understand the intent of this memorandum.
 
-More information on the Trusted Internet Connection initiative may be found on CISA's [Trusted Internet Connections site](https://www.cisa.gov/trusted-internet-connections).
+More information on the Trusted Internet Connection initiative may be found on CISA's [Trusted Internet Connections site](https://www.cisa.gov/resources-tools/programs/trusted-internet-connections-tic).
