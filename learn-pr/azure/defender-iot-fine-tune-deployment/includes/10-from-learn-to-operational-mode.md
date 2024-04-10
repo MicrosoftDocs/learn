@@ -16,3 +16,10 @@ After this change, any new devices or traffic trigger an alert, which is assesse
 ## Check your work
 
 When you complete the triage process, the **Alerts** page shows the updated status of the alerts.
+
+from unit 3
+## Operational mode
+
+When the sensor first receives network traffic, it enters a state called *Learning* mode. While in *learning* mode, all devices detected are identified as *authorized*. Meaning that the device was checked and approved as a recognized part of your system. Once the learning mode is complete, any new devices detected are logged as *unauthorized*, and must be fully checked before you update the status to *authorized*.
+
+Even after *Learning* mode is turned off, and *operational* mode starts traffic can be tracked. Activating the *Smart IT Learning* makes Defender for IoT send alerts when new suspicious traffic is tracked.
