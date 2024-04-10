@@ -61,7 +61,7 @@ To enable security features using security overview:
 
 As you make changes, the Apply changes button will report the number of security features you have edited. To confirm the changes, click Apply changes NUMBER. To close the panel without making any changes, click  “X”.
 
-:::image type="content" source="../mediafeatures-apply-changes-org.png" alt-text="Screenshot of the features and apply changes sidebar at the organization level.":::
+:::image type="content" source="../media/features-apply-changes-org.png" alt-text="Screenshot of the features and apply changes sidebar at the organization level.":::
 
 > [!NOTE]
 > Enabling code scanning default setup will not override any existing configurations of advanced setup for the selected repositories, but it will override any existing configurations of default setup. 
