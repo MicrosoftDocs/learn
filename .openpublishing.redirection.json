@@ -36125,6 +36125,11 @@
       "source_path": "learn-pr/wwl-azure/configure-storage-tools/3a-use-import-export-service.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/3b-use-waimportexport-tool.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
     }
   ]
 }
