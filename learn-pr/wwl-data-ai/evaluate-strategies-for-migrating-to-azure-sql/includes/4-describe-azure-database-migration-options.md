@@ -9,7 +9,7 @@ There are several tools available to help with the migration process. This next 
 For online migrations to Azure SQL, Azure Database Migration Service provides a highly resilient and self-healing migration service with reliable outcomes and near-zero downtime. Below are highlighted the main steps involved:
 
 1. Fully load your on-premises database to Azure SQL. 
-2. Continuously syncs new database transactions to the Azure target. 
+2. Continuously sync new database transactions to the Azure target. 
 3. Cut over to the target Azure service when prepared. You can stop the replication, and switch the connection strings in your application to Azure SQL.
 
 ### Azure SQL Migration extension for Azure Data Studio
@@ -30,7 +30,7 @@ As shown above, the Azure Migrate experience can be kicked off from the portal t
 
 There are several other tools you can use to map your server estate and identify compatibility with your target Azure platform:
 
-- MAP Toolkit—The Microsoft Assessment and Planning Toolkit automatically collects and provide a report containing the inventory of all SQL Servers in your network, version, and server information.
+- MAP Toolkit—The Microsoft Assessment and Planning Toolkit automatically collects and provides a report containing the inventory of all SQL Servers in your network, version, and server information.
 
 - Database Experimentation Assistant—This tool can be used to evaluate version upgrades of SQL Server by checking syntax compatibility and provides a platform to evaluate query performance on the target version.
 
@@ -39,7 +39,7 @@ There are several other tools you can use to map your server estate and identify
 The MAP toolkit and Database Experimentation assistant can help you identify your databases and highlight any incompatibilities or potential performance issues in your database, but the Data Migration Assistant (DMA) is a comprehensive toolkit that assesses, identifies new features you can use to benefit your application, and ultimately performs the migration. This tool can be used to migrate between versions of SQL Server, from on-premises to an Azure Virtual Machine or Azure SQL Database or Azure SQL Managed Instance.
 
 > [!NOTE]
-> While the Database Migration Assistant is a useful tool available, we recommend that you use the [Azure Database Migration Service](/azure/dms/dms-overview) for large migrations and enhanced overall experience, which is available as [Azure SQL Migration an extension in Azure Data Studio](/azure-data-studio/extensions/azure-sql-migration-extension), or via [Azure Portal](https://aka.ms/dmsazureportal), or through [Azure PowerShell and Azure CLI](/azure/dms/migration-dms-powershell-cli).
+> While the Database Migration Assistant is a useful tool available, we recommend that you use the [Azure Database Migration Service](/azure/dms/dms-overview) for large migrations and enhanced overall experience, which is available as [Azure SQL Migration extension for Azure Data Studio](/azure-data-studio/extensions/azure-sql-migration-extension), or via [Azure Portal](https://aka.ms/dmsazureportal), or through [Azure PowerShell and Azure CLI](/azure/dms/migration-dms-powershell-cli).
 
 ## Additional migration options supported
 
