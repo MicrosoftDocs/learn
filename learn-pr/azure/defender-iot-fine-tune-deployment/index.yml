@@ -32,7 +32,7 @@ subjects:
 units:
 - learn.defender-iot-fine-tune-deployment.introduction
 - learn.defender-iot-fine-tune-deployment.describe-process-fine-tune
-- learn.defender-iot-fine-tune-deployment.control-traffic-monitored-by-sensor
+- learn.defender-iot-fine-tune-deployment.calibrate-and-fine-tune-your-sensor
 - learn.defender-iot-fine-tune-deployment.exercise-fine-tune-subnets-devices
 - learn.defender-iot-fine-tune-deployment.describe-process-baseline-traffic
 - learn.defender-iot-fine-tune-deployment.create-baseline-traffic
