@@ -31,6 +31,5 @@ units:
 - learn.wwl.configure-storage-tools.use-azure-storage-explorer
 - learn.wwl.configure-storage-tools.use-import-export-service
 - learn.wwl.configure-storage-tools.use-waimportexport-tool
-- learn.wwl.configure-storage-tools.use-azcopy
 badge:
   uid: learn.wwl.configure-storage-tools.badge
