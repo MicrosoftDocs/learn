@@ -26,7 +26,8 @@ GitHub also offers an advanced Code scanning feature called autofix (currently i
 ### Disabling Autofix for an Organization
 
 If autofix is allowed at the enterprise level, organization administrators have the option to disable autofix for an organization. If you disable autofix for an organization, autofix cannot be enabled for any repositories within the organization. 
-> [!Note] Disabling autofix at the organization level will remove all open autofix comments from open pull requests across all repositories in the organization.
+> [!NOTE]
+> Disabling autofix at the organization level will remove all open autofix comments from open pull requests across all repositories in the organization.
 
 Follow the steps below to disable Autofix for your organization:
 1. In the upper-right corner of GitHub.com, select your profile photo, then click  Your organizations. 
