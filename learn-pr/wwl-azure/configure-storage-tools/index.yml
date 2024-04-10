@@ -28,6 +28,5 @@ products:
 subjects:
 - storage
 units:
-- learn.wwl.configure-storage-tools.use-waimportexport-tool
 badge:
   uid: learn.wwl.configure-storage-tools.badge
