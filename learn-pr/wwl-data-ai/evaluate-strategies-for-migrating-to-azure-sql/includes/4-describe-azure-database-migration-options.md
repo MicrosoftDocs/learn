@@ -4,13 +4,17 @@ There are several tools available to help with the migration process. This next 
 
 ## Azure Database Migration Service
 
-[Azure Database Migration Service](/azure/dms/dms-overview) helps you simplify, guide, and automate your database migration to Azure. Easily migrate your data, schema, and objects from multiple sources to the cloud at scale.
+[Azure Database Migration Service](/azure/dms/dms-overview) helps you simplify, guide, and automate your database migration to Azure. DMS migrates your data, schema, and objects from multiple sources to the cloud at scale.
 
 For online migrations to Azure SQL, Azure Database Migration Service provides a highly resilient and self-healing migration service with reliable outcomes and near-zero downtime. Below are highlighted the main steps involved:
 
 1. Fully load your on-premises database to Azure SQL. 
 2. Continuously syncs new database transactions to the Azure target. 
 3. Cut over to the target Azure service when prepared. You can stop the replication, and switch the connection strings in your application to Azure SQL.
+
+### Azure SQL Migration extension for Azure Data Studio
+
+[**Azure SQL Migration extension for Azure Data Studio**](/sql/azure-data-studio/extensions/azure-sql-migration-extension?azure-portal=true) is a tool that helps you prepare for migrating your SQL Server databases to Azure. It uses the latest version of Azure Data Migration Service to assess your readiness for migration, recommend the best Azure resources for your needs, and execute the migration. It’s ideal for small to medium-sized databases and supports online migration to SQL Managed Instance.
 
 ## Azure Migrate
 
@@ -39,13 +43,11 @@ The MAP toolkit and Database Experimentation assistant can help you identify you
 
 ## Additional migration options supported
 
-There are a number of traditional, more manual approaches to migrating databases to Azure SQL. These solutions were not designed primarily for performing migrations, but they can be used for that purpose. The technique you use for physically migrating your data will depend on the amount of downtime you can sustain during the migration process.
+There are a number of different approaches to migrating databases to Azure SQL. These solutions were not designed primarily for performing migrations, but they can be used for that purpose. The technique you use for physically migrating your data will depend on the amount of downtime you can sustain during the migration process.
 
 - [**Log Replay Service**](/azure/azure-sql/managed-instance/log-replay-service-overview?azure-portal=true). It's an online migration option to Azure SQL Managed Instance, and used when you need more control of your database migration project.
 
-- [**Azure SQL Migration extension for Azure Data Studio**](/sql/azure-data-studio/extensions/azure-sql-migration-extension?azure-portal=true). It's a tool that helps you prepare for migrating your SQL Server databases to Azure. It uses the latest version of Azure Data Migration Service to assess your readiness for migration, recommend the best Azure resources for your needs, and execute the migration. It’s ideal for small to medium-sized databases and supports online migration to SQL Managed Instance.
-
-- [**Managed Instance link.**](/azure/azure-sql/managed-instance/managed-instance-link-feature-overview?azure-portal=true). The Managed Instance link, using distributed availability groups, securely extends your data estate by replicating data almost instantly (online) between any hosted SQL Server and Azure SQL Managed Instance, and vice versa.
+- [**Managed Instance link**](/azure/azure-sql/managed-instance/managed-instance-link-feature-overview?azure-portal=true). The Managed Instance link, using distributed availability groups, securely extends your data estate by replicating data almost instantly (online) between any hosted SQL Server and Azure SQL Managed Instance, and vice versa.
 
 - [**Native backup and restore**](/azure/azure-sql/managed-instance/restore-sample-database-quickstart?azure-portal=true). Backup and restore are a simple migration method favored by many SQL Server professionals. It's the easiest migration option for customers who can provide full database backups to Azure Storage.
 
