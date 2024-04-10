@@ -113,6 +113,13 @@ Perform the following steps to migrate a database by using the dump and restore 
 
 ## Perform online migration
 
-DMS also supports online migration to Azure Database for MySQL. For the migration, select General Purpose 16 vCores compute for the target flexible server for faster migrations. Scale back to the desired compute size for the target server after migration is complete by following the compute size recommendation in the Performing post-migration activities section later in this article.
+DMS also supports online migration to Azure Database for MySQL. For the online migration, we recommend you select General Purpose 16 vCores compute for the target flexible server for faster migrations. Scale back to the desired compute size for the target server after migration is complete, based on the detail in the following table.
+
+| Single Server Pricing Tier | Single Server VCores | Flexible Server Compute Size | Flexible Server Compute Tier |
+| ------------- | ------------- |:-------------:|:-------------:|
+| Basic | 1 | Burstable | Standard_B1s |
+| Basic | 2 | Burstable | Standard_B2s |
+| General Purpose | 4 | General Purpose | Standard_D4ds_v4 |
+| General Purpose | 8 | General Purpose | Standard_D8ds_v4 |
 
 To learn more about online migration to Azure Database for MySQL, see [Tutorial: Migrate Azure Database for MySQL - Single Server to Flexible Server online using DMS via the Azure portal](/azure/dms/tutorial-mysql-azure-single-to-flex-online-portal).
