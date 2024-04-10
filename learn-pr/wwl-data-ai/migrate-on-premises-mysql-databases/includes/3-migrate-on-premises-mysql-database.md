@@ -4,8 +4,6 @@ Having explored how Azure Database for MySQL supports and scales MySQL on Azure,
 
 In this unit, you'll see how to create an instance of the Azure Database for MySQL service using the Azure portal. If you need to create many instances of this service, you can script the process by using the Azure CLI.
 
-> [!NOTE]
-> The online migration for MySQL is not currently supported in Azure Data Migration Service (DMS).
 ### Create an Azure Database for MySQL using the portal
 
 In the Azure portal, select the **Databases** command in **Azure Marketplace**, and select **Azure Database for MySQL**.
@@ -81,8 +79,9 @@ For more information on **mysqldump**, see [mysqldump — A Database Backup Prog
 > [!NOTE]
 > You also use **mysqldump** to export specific tables by listing their names after the database name.
 
-> [!NOTE]
-> You can't currently use the Azure Database Migration Service to perform an offline migration of a MySQL database.
+#### Azure Database Migration Service (DMS) 
+
+In addition to offline migrations to Azure Database for MySQL, DMS supports cross-region, cross-resource group, and cross-subscription migrations, so you can select a region, resource group, and subscription for the target server that is different than what is specified for your source server.
 
 ### Migrate by using dump and restore
 
@@ -111,3 +110,9 @@ Perform the following steps to migrate a database by using the dump and restore 
     ```bash
     mysql -h [host name] -u [username] -p[password] [database name] < db_data.sql
     ```
+
+## Perform online migration
+
+DMS also supports online migration to Azure Database for MySQL. For the migration, select General Purpose 16 vCores compute for the target flexible server for faster migrations. Scale back to the desired compute size for the target server after migration is complete by following the compute size recommendation in the Performing post-migration activities section later in this article.
+
+To learn more about online migration to Azure Database for MySQL, see [Tutorial: Migrate Azure Database for MySQL - Single Server to Flexible Server online using DMS via the Azure portal](/azure/dms/tutorial-mysql-azure-single-to-flex-online-portal).
