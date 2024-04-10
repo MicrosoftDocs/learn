@@ -47,7 +47,8 @@ Follow the steps below to disable Autofix for your repository:
 3. In the "Security" section of the sidebar, click  Code security and analysis. 
 4. In the "Code scanning" section, deselect Autofix for CodeQL.
 
-> [!NOTE] Disabling autofix at any level will close all open autofix comments from all open pull requests at the level that was disabled. If autofix is disabled and then subsequently enabled, autofix won't automatically suggest any fixes for pull requests that are already open.
+> [!NOTE]
+> Disabling autofix at any level will close all open autofix comments from all open pull requests at the level that was disabled. If autofix is disabled and then subsequently enabled, autofix won't automatically suggest any fixes for pull requests that are already open.
 
 
 ## Enable GitHub Advanced security for Enterprise Server
