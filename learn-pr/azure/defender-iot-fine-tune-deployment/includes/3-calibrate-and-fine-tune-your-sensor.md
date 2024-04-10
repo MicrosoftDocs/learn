@@ -6,9 +6,13 @@ The OT sensor analyzes the subnets. A subnet is a group of devices or interfaces
 OR
 The OT sensor analyzes your system and assigns subnet settings and attempts to understand the architecture of your system and fit each device into the Purdue model setup. In some cases, the device map produced needs to be corrected. You might need to change device settings that are associated with the wrong subnet and ensure that they have the correct IP address.
 
+## Calibration
+
+Calibrate the sensor by running the **Analyze** feature in the **Deployment** section of the OT sensor to get an initial . When the analysis is complete, check the information for each interface. If the information isn't what you expected, you need to check the subnet and device settings and make any changes needed.<!-- span configuration - we will assume that these are correctly set, in the LM, but if not then you should go to your connection team and get them to fix this - Sagi -->
+
 ## Fine tuning
 
-Start fine-tuning your sensor by running the **Analyze** feature in the **Deployment** section of the OT sensor. When the analysis is complete, check the information for each interface. If the information isn't what you expected, you need to check the subnet and device settings and make any changes needed.<!-- span configuration - we will assume that these are correctly set, in the LM, but if not then you should go to your connection team and get them to fix this - Sagi -->
+gdgfdgd
 
 ### Check and modify the subnet settings
 <!-- highlight this is the most important piece, every thing after is secondary  -->

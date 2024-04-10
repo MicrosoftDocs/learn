@@ -61,10 +61,10 @@ quiz:
   questions:
   - content: "What is a subnet?"
     choices:
-    - content: "A group of servers that are in the lowest purdue level."
+    - content: "A group of servers that are in the lowest Purdue level."
       isCorrect: false
       explanation: "Incorrect, a subnet is a group of devices or interfaces that have a specific purpose or are located in a specific area."
-    - content: "A subnet is a group of devices or interfaces that have a specific purpose or are located in a specific area."
+    - content: "A group of devices or interfaces that have a specific purpose or are located in a specific area."
       isCorrect: true
       explanation: "Correct, the subnet is a group of devices controlling a specific area or purpose."
     - content: "A set of lower quality devices that might not pass accurate data to the sensor."
@@ -72,7 +72,7 @@ quiz:
       explanation: "Incorrect, a subnet is a group of devices or interfaces that have a specific purpose or are located in a specific area."
   - content: "When might you need to merge 2 or more devices?"
     choices:
-    - content: "If a device is listed more than once because of multiple ports connecting to a sensor, i.e. wifi and a wired connection."
+    - content: "If a device is listed more than once because of multiple ports connecting to a sensor, for example, linked by wifi and a wired connection."
       isCorrect: true
       explanation: "Correct, a device can be listed several times and then you might want to merge them into one listing."
     - content: "If Defender for IoT has mistakenly identified a device and you want to make a group of devices that are similar."
@@ -94,7 +94,7 @@ quiz:
       explanation: "Correct, making changes based on the remediation steps presented."
   - content: "What is reason for choosing the Learn option in the Take action tab?"
     choices:
-    - content: "So that the sensor learns that this type of traffic is normal and wont generate an alert in the future. / The alert you are analyzing will be added to the baseline alerts and the type of network traffic won't generate future alerts."
+    - content: "So that the sensor learns that this type of traffic is normal and won't generate an alert in the future."
       isCorrect: true
       explanation: "Correct, the sensor learns not to trigger an alert for this traffic in the future."
     - content: "So that the sensor learns that this type of traffic is suspicious and should generate alerts in the future."
