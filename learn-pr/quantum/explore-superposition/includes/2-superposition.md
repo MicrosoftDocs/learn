@@ -9,13 +9,13 @@ Let's say that there are six possible configurations: "the cat on top of the box
 
 These six positions are the individual possible configurations of the system "cat and box." How could you describe the state of the *cat and box system*? You could **sum up** the individual positions, like this:
 
-:::image type="content" source="../media/cat-and-box-system.png" alt-text="Picture of a cat and a box and the representation of six different positions of the cat respect of the box.":::
+:::image type="content" source="../media/cat-and-box-system.png" alt-text="Diagram of a cat and a box and the representation of six different positions of the cat respect of the box.":::
 
 However, just the sum of the individual positions doesn't capture the full picture. You also need to consider the **probability** of finding the cat in each of the individual positions. For example, the cat is more likely to be next to the box than under it. So, you need to weight each individual position by its probability.
 
 The state of the *cat and box system* is the sum of the six different positions of the cat respect of the box, weighted by the probability of finding the cat in that position:
 
-:::image type="content" source="../media/cat-and-box-system-probabilities.png" alt-text="Picture showing the state of the global system, which is the sum of the six different positions of the cat respect of the box, weighted by the probability of finding the cat in that position.":::
+:::image type="content" source="../media/cat-and-box-system-probabilities.png" alt-text="Diagram showing the state of the global system, which is the sum of the six different positions of the cat respect of the box, weighted by the probability of finding the cat in that position.":::
 
 The cat and the box are classical objects, so you can only observe them in one of the six possible configurations at a time. Cats and boxes live in the classical world, where objects can only be in one state at a time.
 

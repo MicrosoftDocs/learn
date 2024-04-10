@@ -1,5 +1,5 @@
 
-In this unit, you'll learn explore quantum superposition and probabilities in Q# by using the `DumpMachine` function. 
+In this unit, you'll learn to explore quantum superposition and probabilities in Q# by using the `DumpMachine` function. 
 
 The `DumpMachine` function dumps information about the current status of the target machine at the point where it's called.
 
@@ -53,10 +53,10 @@ Let's start with a simple program that generates a random bit using a qubit in s
 
     Here, you call `DumpMachine` four times:
 
-    1. After the qubit is allocated.
-    1. After you place the qubit in superposition.
-    1. After you measure the qubit's state.
-    1. After you reset the qubit.
+    - After the qubit is allocated.
+    - After you place the qubit in superposition.
+    - After you measure the qubit's state.
+    - After you reset the qubit.
 
     You split the operation `MResetZ` into two operations: `M` and `Reset`. You do so because you want to inspect the state after the measurement.
 
