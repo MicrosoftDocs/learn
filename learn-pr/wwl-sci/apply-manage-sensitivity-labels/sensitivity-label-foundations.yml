@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Your team is starting a project that uses important client information, like financial details. You need to keep this information safe in tools like SharePoint, Teams, and Outlook. What's the first important step to protect this information?"
+  - content: "Imagine a team is starting a project that uses important client information, like financial details. The team needs to keep this information safe in tools like SharePoint, Teams, and Outlook. What's the first important step to protect this information?"
     choices:
     - content: "Stop all sharing of files outside the company in the settings."
       isCorrect: false
