@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-implement-network-security-monitoring.exercise-secure-your-virtual-hub-using-azure-firewall-manager
-title: 'Exercise: secure your virtual hub using Azure Firewall Manager'
+title: 'Exercise: Secure your Virtual Hub using Azure Firewall Manager'
 metadata:
-  title: 'Exercise: secure your virtual hub using Azure Firewall Manager'
-  description: "Exercise: secure your virtual hub using Azure Firewall Manager"
+  title: 'Exercise: Secure your Virtual Hub using Azure Firewall Manager'
+  description: "Exercise: Secure your Virtual Hub using Azure Firewall Manager"
   ms.date: 02/08/2024
   author: wwlpublish
   ms.author: jileary
