@@ -36110,6 +36110,11 @@
       "source_path": "learn-pr/wwl-azure/configure-storage-tools/6-summary-resources.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/4-use-azcopy.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
     }
   ]
 }
