@@ -58,7 +58,7 @@ For example, a fact table containing details of sales orders might contain the f
 | 20220101 | 123 | 5 | 765 | 1001 | 2 | 1 | 2.00 | 0.20 | 2.20 |
 | 20220102 | 125 | 2 | 723 | 1002 | 1 | 1 | 4.99 | 0.49 | 5.48 |
 | 20220103 | 126 | 1 | 823 | 1003 | 1 | 1 | 7.99 | 0.80 | 8.79 |
-| ... | ... | ... | ... | ... | ... | ... | ... |  | ... | ... |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 A fact table's dimension key columns determine its grain. For example, the sales orders fact table includes keys for dates, customers, stores, and products. An order might include multiple products, so the grain represents line items for individual products sold in stores to customers on specific days.
 
