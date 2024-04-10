@@ -6,6 +6,6 @@ In today’s connected world, access to technology is central to the way we oper
 - A person with a **temporary** disability, such as a family emergency, might choose to adjust how notifications are received, filter messages by type, or set temporary notification-free periods.
 - A person with a **situational** disability, such as heightened stress, might temporarily turn off notifications during an overwhelming work period. 
 
-<img type="content" src="../media/3-disability-category-examples.png" alt="Drawing that provides an example of a permanent, temporary, and situational disability."/>
+:::image type="content" source="../media/3-disability-category-examples.png" alt-text="Drawing that provides an example of a permanent, temporary, and situational disability.":::
 
 Ultimately, accessibility is about providing people with the opportunity to use the technology in the way that works for them.
