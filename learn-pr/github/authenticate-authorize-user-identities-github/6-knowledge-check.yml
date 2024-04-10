@@ -15,7 +15,7 @@ quiz:
       choices:
         - content: "Two-factor authentication (2FA)"
           isCorrect: false
-          explanation: "Two-Factor authentication is an additional level of security available to GitHub Enterprise accounts."
+          explanation: "Two-Factor authentication is another level of security available to GitHub Enterprise accounts."
         - content: "Time-based One-time Password (TOTP)"
           isCorrect: false
           explanation: "GitHub recommends using a cloud-based TOTP app to configure 2FA."
@@ -43,7 +43,7 @@ quiz:
       choices:
         - content: "With a GitHub login"
           isCorrect: false
-          explanation: "GitHub login is a different form of authentication"
+          explanation: "GitHub login is a different form of authentication."
         - content: "With the organization credentials"
           isCorrect: false
           explanation: "Organization credentials are a different form of authentication."
