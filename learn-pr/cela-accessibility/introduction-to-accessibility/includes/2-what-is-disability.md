@@ -2,4 +2,4 @@ In the past, disability was defined as a personal attribute or lack of ability. 
 
 And at some point, we all may experience some form of disability. Disability can include and intersect across the following segments: vision, hearing, mobility, mental health, neurodiversity, and speech and can be categorized as either permanent, temporary, or situational. 
 
-<img type="content" src="../media/2-disability-definition.png" alt="Drawing that provides an example of a permanent, temporary, and situational disability."/>
+:::image type="content" source="../media/2-disability-definition.png" alt-text="Drawing that provides an example of a permanent, temporary, and situational disability.":::
