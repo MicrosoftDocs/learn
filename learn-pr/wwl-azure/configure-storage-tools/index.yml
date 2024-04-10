@@ -32,7 +32,6 @@ units:
 - learn.wwl.configure-storage-tools.use-import-export-service
 - learn.wwl.configure-storage-tools.use-waimportexport-tool
 - learn.wwl.configure-storage-tools.use-azcopy
-- learn.wwl.configure-storage-tools.knowledge-check
 - learn.wwl.configure-storage-tools.summary-resources
 badge:
   uid: learn.wwl.configure-storage-tools.badge
