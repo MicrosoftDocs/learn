@@ -30,8 +30,10 @@ If autofix is allowed at the enterprise level, organization administrators have 
 
 Follow the steps below to disable Autofix for your organization:
 1. In the upper-right corner of GitHub.com, select your profile photo, then click  Your organizations. 
-2. Next to the organization, click Settings
+2. Next to the organization, click Settings.
+   
 :::image type="content" source="../media/open-repo-settings-autofix.png" alt-text="Screenshot of the screen for clicking the repository settings icon for autofix.":::
+
 3. In the "Security" section of the sidebar, click  Code security and analysis.
 4. Under the "Code scanning" section, deselect Autofix for CodeQL.
 
