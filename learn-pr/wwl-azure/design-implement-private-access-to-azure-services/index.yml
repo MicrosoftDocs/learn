@@ -2,7 +2,7 @@
 uid: learn.wwl.design-implement-private-access-to-azure-services
 metadata:
   title: Design and implement private access to Azure Services
-  description: "You'll learn to design and implement private access to Azure Services with Azure Private Link, and virtual network service endpoints."
+  description: "You learn to design and implement private access to Azure Services with Azure Private Link, and virtual network service endpoints."
   ms.date: 04/10/2024
   author: wwlpublish
   ms.author: jileary
