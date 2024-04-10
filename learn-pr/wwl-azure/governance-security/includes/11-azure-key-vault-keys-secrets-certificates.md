@@ -29,7 +29,7 @@ The following table lists supported key types.
 | RSA-HSM      | HSM-protected RSA key (Premium SKU only)            | FIPS 140-2 Level 2 HSM |
 | EC           | Software-protected elliptic curve key               | FIPS 140-2 Level 1     |
 | EC-HSM       | HSM-protected elliptic curve key (Premium SKU only) | FIPS 140-2 Level 2 HSM |
-| oct          | Software-protected octet key                        | FIPS 140-2 Level 1     |
+| octet        | Software-protected octet key                        | FIPS 140-2 Level 1     |
 
 Exportable keys are allowed only with RSA and EC. HSM keys are non-exportable.
 
@@ -73,7 +73,7 @@ At a high level, a certificate policy contains the following information:
 
  -  X.509 certificate properties, which include subject name, subject alternate names, and other properties that are used to create an X.509 certificate request.
  -  Key properties, which include key type, key length, exportable, and `ReuseKeyOnRenewal` fields. These fields instruct Key Vault on how to generate a key.
-     -  **Supported key types are** RSA, RSA-HSM, EC, EC-HSM, and oct.
+     -  **Supported key types are** RSA, RSA-HSM, EC, EC-HSM, and octet.
  -  Secret properties, such as the content type of an addressable secret to generate the secret value, for retrieving a certificate as a secret.
  -  Lifetime actions for the Key Vault certificate. Each lifetime action contains:
  -  Trigger: Specified as days before expiration or lifetime span percentage.
