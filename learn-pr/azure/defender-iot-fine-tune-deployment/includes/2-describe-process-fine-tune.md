@@ -5,7 +5,7 @@ Once these checks are complete, you have a full and accurate list of devices tha
 ## OT sensor deployment path
 
 The following diagram shows the complete Operational Technology (OT) deployment path, with the team responsible for each phase:
-
+<!-- change the image, remove ends-->
 :::image type="content" source="../media/2-ot-deploy.png" alt-text="Diagram of the complete OT deployment process" border="false":::
 
 This learn module is divided into two sections.
