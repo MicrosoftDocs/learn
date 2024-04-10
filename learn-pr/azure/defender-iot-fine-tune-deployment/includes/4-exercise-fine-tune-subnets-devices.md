@@ -16,9 +16,9 @@ This tracks each interface and device the sensor is monitoring and lists the sub
 If you find a device incorrectly configured, make the following changes:
 
 1. Select **System setting** > **Subnets**
-1. Type a new IP address
-1. Type a new Mask address
-1. Type a new name
+1. Type a new **IP** address
+1. Type a new **Mask** address
+1. Type a new **name**
 1. Select the **Segregated** checkbox if this subnet is on a different Purdue level
 1. Select **Save**
 
@@ -64,9 +64,9 @@ Assign a unique device as **Important**. In the **Device map**:
 
 1. Select **System setting** > **Basic** > **Subnets**
 1. Select **Add subnet**
-1. Type a new IP
-1. Type a new Mask
-1. Type a new name
+1. Type a new **IP** address
+1. Type a new **Mask** address
+1. Type a new **name**
 1. Select **Save**
 
 ## Add DNS server settings

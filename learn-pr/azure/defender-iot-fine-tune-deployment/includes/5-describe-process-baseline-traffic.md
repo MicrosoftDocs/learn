@@ -1,23 +1,25 @@
-Your sensor is now fine tuned and almost fully operational. The final stage is to create a baseline of alerts so that Microsoft Defender for IoT understands the normal type of traffic flow through your system. Then, Defender for IoT is able to identify which traffic is most dangerous or suspicious and produces accurate alerts. This *learning* process can take a week or two as you define correct alerts for Defender for IoT to flag.
-
-Once the learning stage is complete, Defender for IoT moves to the operational stage with an accurate baseline of alerts to work from and protect your devices. New alerts still appear, but occur less regularly, and you apply the triage process to them. <!-- is this all out of the scope of the LM? Probably-->  
+Your sensor is now fine tuned and almost fully operational. The final stage is to create a baseline of alerts so that Microsoft Defender for IoT understands the normal type of traffic flow through your system. Then, Defender for IoT is able to identify which traffic is most dangerous or suspicious and produces accurate alerts. Creating the baseline is called the learning stage, as based on your triaging of the alerts, Defender for IoT learns which alerts are regular, safe network traffic. This learning stage can take a week or two, depending on the size of your system, as you define which alerts Defender for IoT should flag.
 
 ## OT sensor deployment path
 
 The following diagram shows the complete OT deployment path, with the team responsible for each phase:
 
 :::image type="content" source="../media/5-ot-deploy.png" alt-text="Diagram of the complete OT deployment process" border="false":::
+This learn module is divided into two sections.
 
-This Learn Module is divided into two sections.
-
-Section 1: units 3 and 4 dealing with calibrating and fine-tuning your sensor.
-Section 2: units 6 and 7 dealing with triaging the alerts.
-
-Units 6 and 7 describe the sixth and final phase in the deployment: *Baseline learning ends*. In a real-life scenario, the deployment and connectivity teams ensure that the sensor is already activated, sending data to Defender for IoT, and is fine-tuned.
+- Section 1 describe the fifth phase in the deployment, *Calibrate and fine-tune*, and deals with calibrating and fine-tuning your sensor. It includes these units:
+    - Unit 2 describes the general overview of the calibration and fine tuning phase of the sensor deployment.
+    - Unit 3 describes the information and preparations you need to complete the exercise unit.
+    - Unit 4 is the exercise unit to practice the calibration and fine tuning activities.
+<!-- I think it is better to only have section 2 written about here?? What do you think? LW -->
+- Section 2 describe the sixth phase in the deployment, *Baseline learning*, and deals with triaging the alerts. It includes these units:
+    - Unit 5 describes the general overview of the baseline learning phase of the sensor deployment.
+    - Unit 6 describes the information and preparations you need to complete the exercise unit.
+    - Unit 7 is the exercise unit to practive the alert triaging activities to create the baseline.
 
 ## Learning mode
 
-The sensor baseline learning is the phase where Defender for IoT identifies suspicious or harmful traffic and creates alerts for them. When this traffic is identified in the future, alerts are sent to Defender for IoT, and you're able to contain and protect your devices. You must monitor these alerts and in some cases adjust them to be more accurate. These alerts form the baseline of OT alerts for tracking activity when the system moves to the *operational* mode. This process can take anywhere from a few days to several weeks, depending on the complexity and size of your network.
+When the sensor first connects to Defender for IoT it enters the learning phase where the sensor learns to identify the difference between suspicious, harmful network traffic and safe traffic. creates alerts for them. When this traffic is identified in the future, alerts are sent to Defender for IoT, and you're able to contain and protect your devices. You must monitor these alerts and in some cases adjust them to be more accurate. These alerts form the baseline of OT alerts for tracking activity when the system moves to the *operational* mode. This process can take anywhere from a few days to several weeks, depending on the complexity and size of your network.
 <!--Over a period of weeks Defender for IoT reaches a mature stage and doesn't need regular assessment, and then ends the *Learning* mode and moves to the *operational* mode. -->check and adjust this....
 Once the sensor is set up and sending data, Defender for IoT starts to identify normal and irregular traffic flow within the network. This state is called the learning mode, where Defender for IoT identifies regular file transfers or data flows between devices. This regular activity is logged and won't trigger an alert in the future. Any network traffic that doesn't match these, triggers an alert.
 
@@ -40,8 +42,6 @@ Even in *operational* mode, you could still receive new alerts, and must check a
 ## Outcome
 
 When you complete the triage process, the **Alerts** page shows the updated status of the alerts.
-at he end o
-OR
+In a real life scenario this triage process must be done each day until the level of alerts reduces to a 'reasonable' daily level<!-- ask ariel or meir what is a possible percentage, or at what stage the system automatically moves on? -->. The sensor now has a verified baseline of alerts that are considered safe and secure and won't trigger them.
 
-When you complete the triage process and the operational mode is enabled, your deployment of the OT sensor to Defender for IoT is complete. The sensor now has a verified baseline of alerts and understands the types of traffic that are considered safe and secure. <!-- do we need to add anything to this? Is there a list we can show that looks different from the original alerts list, or should we show a shortened list? Or a list of the baseline alerts? Or for this LM should the OUtcome be a shortened alert list? AN empty list? Amit LW- add filter to show differences with new alerts. -->
-<!-- can use this article for screenshots as well /organizations/how-to-manage-cloud-alerts -->
+Once the operational mode is enabled your deployment of the OT sensor to Defender for IoT is complete.

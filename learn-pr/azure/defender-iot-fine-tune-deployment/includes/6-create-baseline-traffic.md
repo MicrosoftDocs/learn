@@ -14,7 +14,12 @@ To create the alert baseline, follow the triage process:
 
 ## Triage your alerts
 
-In the **Alert details** page, a set of remediation steps are listed in order to triage the alert. When the alert requires a security response the remediation steps set out the best options available. If you decide that this is regular network traffic, select the Learn button, and the sensor learns that this network traffic shouldn't trigger an alert again. Making these changes is called the triage process.
+In the **Alert details** page, a set of remediation steps are listed in order to triage the alert.
+
+- When the alert requires a security response the remediation steps set out the best options available.
+- If you decide that this is regular network traffic, select **Learn**, and the sensor learns that this network traffic shouldn't trigger an alert again.
+
+Making these changes is called the triage process.
 
 ### Filter and group alerts
 
@@ -43,7 +48,7 @@ You can also download the PCAP files of the raw traffic data and analyze them us
 
 ### Update alerts
 
-In the **Take action** tab, follow the **Remediation steps**. Sometimes a list of multiple actions are listed, sometimes a choice of options are listed. If available you might be asked to *Select Learn*.
+In the **Take action** tab, follow the **Remediation steps**. Sometimes a list of multiple actions are listed, sometimes a choice of options are listed. If available you might be asked to **Select Learn**.
 
 **Learn** an alert when you want to close it, and add it as allowed traffic so that you aren't alerted the next time the same traffic is detected. For example, when the sensor detects firmware version changes following standard maintenance procedures, or when a new, expected device is added to the network. Learning an alert closes the alert and adds an item to the sensor event timeline. Learning alerts is available for selected alerts only, mostly alerts triggered by *Policy* and *Anomaly* engine alerts.
 
