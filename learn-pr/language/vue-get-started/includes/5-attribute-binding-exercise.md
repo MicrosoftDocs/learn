@@ -1,4 +1,4 @@
-Let's say you want to display an image of the space cruise for your customers. Because each type of cruise adventure will have a different image, and maybe a different style, you want to add the image properties to the data object for your application.
+Let's say you want to display an image of the space cruise for your customers. Because each type of cruise adventure has a different image, and maybe a different style, you want to add the image properties to the data object for your application.
 
 ## Add the properties to the data object
 
@@ -36,7 +36,7 @@ const app = Vue.createApp({
 
 ## Add the HTML
 
-Now update the HTML to include the image. You'll set the attributes and style by using attribute binding.
+Now update the HTML to include the image. You set the attributes and style by using attribute binding.
 
 1. Open the *index.html* file.
 1. Immediately after the line `<div>{{ productDescription }}</div>`, add the following HTML.

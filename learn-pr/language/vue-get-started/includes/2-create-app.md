@@ -4,12 +4,12 @@ Let's get started.
 
 ## Add Vue.js to a page
 
-You can add Vue.js to an application in a few ways. In this module, you'll add a `script` element to import Vue from a content delivery network (CDN). By using a CDN, you can add Vue to existing applications without rewriting them.
+You can add Vue.js to an application in a few ways. In this module, you add a `script` element to import Vue from a content delivery network (CDN). By using a CDN, you can add Vue to existing applications without rewriting them.
 
 To add Vue to a page by using a CDN, you add the following `script` element to your page.
 
 ```html
-<script src="https://unpkg.com/vue@next"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 ```
 
 This element tells the browser to run the script file that the `src` directive references. After the script runs, the Vue APIs become available.
@@ -28,7 +28,7 @@ const App = Vue.createApp({
 
 ## Add data
 
-Now that you've created your app, you can add properties that give your app more functionality. An important method that most apps use is `data()`. Vue.js uses this method to access any information you need to make available to your application.
+Now that you created your app, you can add properties that give your app more functionality. An important method that most apps use is `data()`. Vue.js uses this method to access any information you need to make available to your application.
 
 > [!NOTE]
 > You'll use the `data()` method throughout this module.
@@ -57,7 +57,7 @@ At this point, the data is exposed so it can be displayed for the user.
 
 ## Mount the app
 
-The created app object must be *mounted* before Vue.js can use it. By mounting the app, you indicate the portion of the page the app controls, allowing it to display information or even HTML. 
+The created app object must be *mounted* before Vue.js can use it. By mounting the app, you indicate the portion of the page the app controls, allowing it to display information or even HTML.
 
 To mount the application, you reference the `id` of an ordinary HTML element.
 
@@ -66,7 +66,7 @@ To mount the application, you reference the `id` of an ordinary HTML element.
 <div id='app'>
 </div>
 
-<script src="https://unpkg.com/vue@next"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script>
     const App = Vue.createApp({
         data() {
@@ -97,7 +97,7 @@ If you want to display the first name, you can use the syntax `{{ firstName }}`.
     {{ lastName }}, {{ firstName }}
 </div>
 
-<script src="https://unpkg.com/vue@next"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script>
     const App = Vue.createApp({
         data() {

@@ -4,8 +4,8 @@ title: Manage assets exercise
 metadata:
   unitType: exercise
   title: Manage assets exercise
-  description: "This guide will take you through all the steps needed to edit and manage assets that have been scanned into your Microsoft Purview Data Catalog."
-  ms.date: 04/27/2023
+  description: "This guide takes you through all the steps needed to edit and manage assets that were scanned into your Microsoft Purview Data Catalog."
+  ms.date: 04/03/2024
   author: whhender
   ms.author: whhender
   ms.topic: unit

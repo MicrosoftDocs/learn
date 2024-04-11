@@ -1,5 +1,4 @@
-
-In this unit, we'll discuss how you can determine if Azure Cache for Redis is a suitable caching solution for your organization. We'll evaluate Azure Cache for Redis against the following criteria:
+In this unit, we discuss how you can determine if Azure Cache for Redis is a suitable caching solution for your organization, by evaluating Azure Cache for Redis against the following criteria:
 
 - Simplicity
 - Reliability
@@ -12,7 +11,7 @@ To determine whether to use Azure Cache for Redis, the following table provides 
 | Criteria    | Analysis     |
 | ------------------------- | ---------------------------- |
 | Simplicity | A managed service offers several benefits, including provisioning, setup, scaling, updates, and patching. |
-| Reliability | It's vital that any caching solution is highly available. This helps ensure that your apps can deliver at peak performance, even if component failures occur. |
+| Reliability | It's vital that any caching solution is highly available, to help ensure that your apps can deliver at peak performance, even if component failures occur. |
 | Scaling | It's important that the system can respond to changes in load. Scaling should be automatic and occur without downtime. |
 
 ## Apply the criteria
@@ -21,10 +20,10 @@ Review the following questions when considering Azure Cache for Redis as your da
 
 ### Do you want a managed service approach?
 
-When you use Azure Cache for Redis, you're implementing a fully managed service. This provides many benefits, including:
+When you use Azure Cache for Redis, you're implementing a fully managed service that provides many benefits, including:
 
 - Automatically managed patching, updates, provisioning, configuration, setup, and scaling.
-- Implementation of Azure Monitor to track parameters and metrics within the cache, infrastructure, and network.
+- Implementing Azure Monitor to track parameters and metrics within the cache, infrastructure, and network.
 - Use of any Redis client to connect to the service.
 
 ### Is reliability critical?
@@ -50,7 +49,7 @@ It's important that the system can respond to changes in load. Sudden changes in
 
 In summary, consider implementing Azure Cache for Redis when you:
 
-- Want to implement an app-caching solution that's based on industry standard technologies.
+- Want to implement an app-caching solution based on industry standard technologies.
 - Don't want to worry about underlying VMs or infrastructure and want the simplicity of a fully managed service.
 - Consider high availability critical to your organization's business goals.
 - Want a system that can respond automatically to both anticipated and unanticipated changes in demand.
