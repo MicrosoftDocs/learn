@@ -1,6 +1,6 @@
 In this module, you learned about the meaning and significance of the concepts of accessibility and disability, and why accessibility is important for people with disabilities. Here's the content that we covered:
 
-- Why is accessibility important for creating inclusive and equitable environments.
+- Why accessibility is important for creating inclusive and equitable environments.
 - How disability is dependent on context and defined as a mismatch between the person and the environment, rather than a personal attribute or lack of ability. 
 - Examples of permanent, temporary, and situational disabilities. 
 - How people with disabilities can utilize assistive technology to better interact with technology.
