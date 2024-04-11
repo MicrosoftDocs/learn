@@ -1,6 +1,6 @@
 Tailwind Traders has several workloads that are being migrated to Azure. It's important that you design logging and monitoring for the workloads based on the following requirements: 
 
-- **Host all logs in a single location**. Tailwind Traders has one team that's responsible for designing the logging and monitoring strategy for all workloads in Azure. This team needs a solution that's easy to manage, enables them to search across resources, and let's them cross-correlate logs.
+- **Host all logs in a single location**. Tailwind Traders has one team that's responsible for designing the logging and monitoring strategy for all workloads in Azure. This team needs a solution that's easy to manage, enables them to search across resources, and lets them cross-correlate logs.
 
 - **Report user sign-in activity**. The security team requires a report of all user sign-in activity. 
 

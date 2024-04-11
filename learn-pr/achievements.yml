@@ -3143,3 +3143,8 @@ achievements:
   title: Introduction to Personalizer
   summary: Discover the services available on Azure to personalize experiences for your users.
   iconUrl: /training/achievements/intro-to-personalizer.svg
+- uid: learn.wwl.configure-storage-tools.badge
+  type: badge
+  title: Configure Azure Storage with tools
+  summary: Learn how to configure Azure Storage with tools like Azure Storage Explorer and AZCopy.
+  iconUrl: /training/achievements/storage-tools-configure.svg
