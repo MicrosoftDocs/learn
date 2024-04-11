@@ -13,7 +13,7 @@ To meet these objectives, you'll do the following tasks:
 
 ## Get the GitHub repository
 
-Here you make sure that your GitHub repository is set up to complete the rest of this module. You set it up by creating a new repository based on a template repository. The template repository contains the files you need to get started for this module.
+Set up your GitHub repository to complete the rest of this module by creating a new repository based on a template repository. The template repository contains the files you need to get started for this module.
 
 The modules in this learning path are part of a progression. For learning purposes, each module has an associated GitHub template repository.
 
