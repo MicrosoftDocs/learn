@@ -3,7 +3,7 @@ uid: learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads
 metadata:
   title: Analyze data in a relational data warehouse
   description: "&lt;div|Relational data warehouses are a core element of most enterprise Business Intelligence (BI) solutions, and are used as the basis for data models, reports, and analysis. &lt;/div|&lt;div| &lt;/div|"
-  ms.date: 04/10/2024
+  ms.date: 04/11/2024
   author: wwlpublish
   ms.author: jamesh
   ms.topic: module-standard-task-based
