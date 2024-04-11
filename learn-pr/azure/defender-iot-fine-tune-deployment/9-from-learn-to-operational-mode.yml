@@ -21,4 +21,4 @@ metadata:
   ms.service: defender-for-iot
 durationInMinutes: 2
 content: |
-  [!include[](includes/10-from-learn-to-operational-mode.md)]
+  [!include[](includes/9-from-learn-to-operational-mode.md)]
