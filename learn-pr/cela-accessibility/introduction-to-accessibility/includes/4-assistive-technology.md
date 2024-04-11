@@ -6,7 +6,7 @@ Microsoft's Windows operating system has several built-in accessibility features
 
 :::image type="content" source="../media/4-magnifier.png" alt-text="Screenshot of the adjustment pointer on the Display and Vision screen.":::
 
-- A blind person may choose to use **Narrator**, the Windows built-in screen reader.
+- A person who is blind may choose to use **Narrator**, the Windows built-in screen reader.
 
 :::image type="content" source="../media/4-narrator.png" alt-text="Screenshot of the natural voice options on the Accessibility Narrator screen.":::
 
