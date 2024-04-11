@@ -28,9 +28,8 @@ Typically, management services over commonly used ports are used when guessing p
 
 These programs can be used individually or in combination to launch a successful brute force attack on a target network or system. There are several types of brute force attack programs used by attackers, including:
 
-| **Types of Brute Force Attack Programs and Use Case**                                 ||
-| -------------------------------- | --------------------------------------------------- |
 | Password crackers                | used for guessing passwords and encryption keys.    |
+| -------------------------------- | --------------------------------------------------- |
 | Port scanners                    | used to identify open ports on a network or system. |
 | Network mappers                  | used to map the topology of a network.              |
 | Web application servers          | used to test web applications for vulnerabilities.  |
