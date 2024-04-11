@@ -68,7 +68,7 @@ In most transactional databases that are used in business applications, the data
 
 Often, a data warehouse is organized as a *star* schema, in which a fact table is directly related to the dimension tables, as shown in this example:
 
-![A diagram showing a star schema.](../media/star-schema.png)]
+![A diagram showing a star schema.](../media/star-schema.png)
 
 The attributes of an entity can be used to aggregate measures in fact tables over multiple hierarchical levels - for example, to find total sales revenue by country or region, city, postal code, or individual customer. The attributes for each level can be stored in the same dimension table. However, when an entity has a large number of hierarchical attribute levels, or when some attributes can be shared by multiple dimensions (for example, both customers and stores have a geographical address), it can make sense to apply some normalization to the dimension tables and create a *snowflake* schema, as shown in the following example:
 
