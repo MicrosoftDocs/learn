@@ -36,7 +36,7 @@ quiz:
         - content: "Ensuring web content is easy to navigate, clear, and consistent."
           isCorrect: true
           explanation: "Correct. In addition to following the accessibility principles and guidelines, ensuring that content is easy to navigate, clear, and consistent, makes it possible for people with disabilities to access your products and services."
-        - content: "Focusing on the needs of only users who have accessed your prior content."
+        - content: "Focusing on the needs of only users who accessed your prior content."
           isCorrect: false
           explanation: "Incorrect. Web content should be accessible to everyone, regardless of their previous experience or familiarity with the content."
         - content: "Completing this training and relying on others to address accessibility issues."
@@ -46,39 +46,39 @@ quiz:
       choices:
         - content: "Powerful, Objective, Uniform, and Realistic."
           isCorrect: false
-          explanation: "Incorrect. These aren't the POUR web accessibility principles."
+          explanation: "Incorrect. These items aren't the POUR web accessibility principles."
         - content: "Presentable, Obtainable, Useful, and Respectful."
           isCorrect: false
-          explanation: "Incorrect. These aren't the POUR web accessibility principles."
+          explanation: "Incorrect. These items aren't the POUR web accessibility principles."
         - content: "Perceivable, Operable, Understandable, and Robust."
           isCorrect: true
-          explanation: "Correct. These are the four principles of web accessibility."
+          explanation: "Correct. These items are the four principles of web accessibility."
         - content: "Punctual, Observable, Unmistakable, and Reversible."
           isCorrect: false
-          explanation: "Incorrect. These aren't the POUR web accessibility principles."
-    - content: "Which of the following is an example of the POUR principle: Perceivable?"
+          explanation: "Incorrect. These items aren't the POUR web accessibility principles."
+    - content: "Which of the following options is an example of the POUR principle: Perceivable?"
       choices:
         - content: "Captions for podcasts."
           isCorrect: true
           explanation: "Correct. Captions for audio files is a perceivable principle."
         - content: "Maximize compatibility with future user agents."
           isCorrect: false
-          explanation: "Incorrect. This is a Robust principle."
+          explanation: "Incorrect. This option is a Robust principle."
         - content: "You can use keyboard to access content."
           isCorrect: false
           explanation: "Incorrect. Making something operable from the keyboard is an Operable principle."
-    - content: "Which of the following is an example of the POUR principle: Operable?"
+    - content: "Which of the following options is an example of the POUR principle: Operable?"
       choices:
         - content: "Captions for podcasts."
           isCorrect: false
-          explanation: "Incorrect. This is Perceivable principle."
+          explanation: "Incorrect. This option is Perceivable principle."
         - content: "Maximize compatibility with future user agents."
           isCorrect: false
-          explanation: "Incorrect. This is a Robust principle."
+          explanation: "Incorrect. This option is a Robust principle."
         - content: "You can use keyboard to access content."
           isCorrect: true
           explanation: "Correct. Making something operable from the keyboard is an Operable principle."
-    - content: "Which is the recommended WCAG level of compliance for most web content?"
+    - content: "Which is the recommended Web Content Accessibility Guidelines (WCAG) level of compliance for most web content?"
       choices:
         - content: "A: minimum level of accessibility."
           isCorrect: false
@@ -88,5 +88,5 @@ quiz:
           explanation: "Correct. Level AA is the intermediate level of accessibility and ensures your content is accessible to many users."
         - content: "AAA: maximum level of accessibility."
           isCorrect: false
-          explanation: "Incorrect. While meeting level AAA would make your product more accessible to people with disabilities, it’s not required. Adopting some of the level AAA standards can enhance the accessibility of your product."
+          explanation: "Incorrect. Even though meeting level AAA would make your product more accessible to people with disabilities, it's not required. Adopting some of the level AAA standards can enhance the accessibility of your product."
 
