@@ -2,6 +2,7 @@ Your sensor is now fine-tuned so that the devices are correctly identified, conf
 unit 5:
 Once the learning phase is complete, Defender for IoT moves to the operational stage with an accurate baseline of alerts to work from and protect your devices. New alerts still appear, but occur less regularly, and you apply the triage process to them. <!-- is this all out of the scope of the LM? Probably-->  
 
+At the end of the learning period, Defender for IoT enters the regular *operational* mode.
 ### End learning mode
 <!-- Should this be part of the LM? Even though this will be done at a later time in real life, as part of the exercise should it be added to this unit?-->
 The learning mode will turn off when the sensor detects a decrease in the number of new alerts produced, which is typically 2-6 weeks after deployment. Alternatively, you can also turn off the learning mode manually when you see that the alerts accurately reflect your network activity. Going forward, anything that is new traffic creates an alert to be followed up with.
