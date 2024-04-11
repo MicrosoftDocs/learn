@@ -61,7 +61,7 @@ In Defender for IoT, the sensor assigns three **Severity** levels, which are: *H
 
 :::image type="content" source="../media/alerts-main-1.png" alt-text="Screenshot of the alerts screen" lightbox="../media/alerts-main-1.png":::
 
-You should update the status level based on the following descriptions:
+You should update the status level based on the following descriptions:   OR
 You use the following descriptions to update the status level:
 
 | Status | Description  |
@@ -70,7 +70,7 @@ You use the following descriptions to update the status level:
 |**Active**  |  Set an alert to *Active* to indicate that an investigation is underway, but that the alert can't yet be closed or otherwise triaged. |
 |**Closed**  |  Set and alert to *Close* to indicate that the investigation is complete, and to alert you again the next time the same traffic is detected. |
 
-You should update the severity level based on the following descriptions:
+You should update the severity level based on the following descriptions:   OR
 You use the following descriptions to update the severity level:
 
 | Severity  |  Description  |
@@ -86,10 +86,3 @@ To create a suppression rule you need to assign a name, a time range for it, and
 ## Save changes
 
 When you make these alert changes the baseline alerts are updated. As the learning process continues, you receive less new alerts as the sensor learns the normal flow of traffic in your system.
-
-<!-- A nice definition. may use it more.
-Baseline - creates an environmental baseline for the normal communication behaviour of devices in your network is known. going forward, anything that is unseen traffic will create an alert to be followed up with. -->
-<!-- generally I find that links go to various places, all over documentation, and are hard to know where or why you are now in a different section -->
-<!-- can use this article for screenshots as well /organizations/how-to-manage-cloud-alerts -->
-<!--at num3  https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-view-alerts#view-details-and-remediate-a-specific-alert this starts with 1. sign into the OT sensor. I suggest removing this line, we are already there, as mentioned above. Why would we add this here?  -->
-<!-- at end! https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-view-alerts#manage-alert-status-and-triage-alerts the first sentence is confusing. Does this mean save any changes i have made to the alert? Or something else. If it does then I would put it near the end of the entire section of article. but not at the beginning, or it is it at the beginning that it is clear it relates to actions for when you have finished your work-->

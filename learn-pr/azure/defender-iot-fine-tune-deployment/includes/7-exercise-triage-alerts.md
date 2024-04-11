@@ -18,43 +18,21 @@ The **Alerts** page provides more details about an alert.
 1. Using the **Alert details** tab and the other information, analyze the alert and decide if it requires a security response or if this is normal network traffic.
 1. The **Take action** tab lists the remediation steps or options needed to fix the problem. Choose which steps to follow depending on your analysis of the alert.
     For example:
-    1. If the alert is normal network traffic
-        1. Choose **Select Learn**.
-        1. Adjust the Status to Closed, and select Apply.
-    1. If the alert requires a security response, consult a relevant Control Systems Engineer to validate the origin of the alert.
-
-        :::image type="content" source="../media/7-alert-full-details.png" alt-text="Screenshot of the alert details with the Take Action box highlighted" lightbox="../media/7-alert-full-details.png" :::
-
-    1. If you want to suppress the alert, select **Create Suppression Rule** and the suppression rule pane opens.
-        1. Type a Name and a description.
-        1. If this rule has a time range, select the **Expiration date** toggle button and enter the dates.
-        1. Choose which sensors this alert applies to.
-        1. Select **Next**, and **Confirm** in the pop-up box.
-        1. You might also add a filter based on IP address, MAC ID, subnet, or host address, but for this Module we aren't adding one. Select **Next**.
-        1. Review the details of the rule and then select **Create**.
+    | Alert Response |  Action |
+    |---|---|
+    | - If the alert indicates normal network traffic |  1. Select **Select Learn**.<br> 1. Adjust the Status to **Closed**, and select **Apply**.|
+    | - If the alert requires a security response | Consult a relevant Control Systems Engineer to validate the origin of the alert.<br>        :::image type="content" source="../media/7-alert-full-details.png" alt-text="Screenshot of the alert details with the Take Action box highlighted" lightbox="../media/7-alert-full-details.png" :::|
+    | - If you want to suppress the alert| Select **Create Suppression Rule** and the suppression rule pane opens.<br>1. Type a **Name** and a **Description**.<br>1. If this rule has a time range, select **Expiration date** and enter the dates.<br>1. Choose which sensors this alert applies to.<br>1. Select **Next**, and **Confirm** in the pop-up box.<br>1. Select **Next**.<br>1. Review the details of the rule and then select **Create**.|
 
 1. To complete the triage, update the alert severity and alert status. Select **Apply** to keep the changes.
 
 ### Select multiple alerts
 
-You can also select several alerts to triage at the same time, however you aren't able to see their details together. You're able to make bulk changes to their severity or status levels or apply the *learn* setting using the Alerts page menu bar. <!-- highlight in image below -->
+You can also select several alerts to triage at the same time, however you aren't able to see their details together. You're able to make bulk changes to their severity or status levels or apply the *learn* setting using the **Alerts** page menu bar. <!-- highlight in image below -->
 
 :::image type="content" source="../media/7-bulk-alert-triage.png" alt-text="Screenshot of bulk update of alerts, in this case updating the severity level for these alerts" lightbox="../media/7-bulk-alert-triage.png":::
 OR
 :::image type="content" source="../media/7-bulk-alert-triage1.png" alt-text="Screenshot of bulk update of alerts, in this case updating the severity level for these alerts thick box" lightbox="../media/7-bulk-alert-triage1.png":::
-
-## End Learning mode
-<!-- Should this be part of the LM? Even though this will be done at a later time in real life, as part of the exercise it should be added to this unit. LW -->
-After a week or two, Defender for IoT learns to identify suspicious traffic and not send false alerts and then you can turn off the *Learn* mode.
-
-In the Sensor:
-
-1. Select **System settings**.
-1. Select **Detection Engines and Network Modeling**.
-1. Under **Network modeling**, toggle the **Learning** button to **Enabled**.
-1. Select **Close**.
-
-After this change, any new devices or traffic trigger an alert, which is assessed like other alerts.
 
 ## Check your work
 
