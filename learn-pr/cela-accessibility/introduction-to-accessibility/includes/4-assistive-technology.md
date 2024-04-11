@@ -12,7 +12,7 @@ Microsoft's Windows operating system has several built-in accessibility features
 
 - **Captions** can support people who are deaf or hard of hearing consume audio and video content.
 
-:::image type="content" source="../media/4-captions.png" alt-text="Screenshot of a man with a disability.":::
+:::image type="content" source="../media/4-captions.png" alt-text="Screenshot of a man with a disability" alt text to "Screenshot of the Accessibility pane in Windows with the Live captions setting turned on.":::
 
 - **Voice Access** can be used by people with mobility disabilities to control their device, author text, and interact with UI elements using only their voice.
 
