@@ -18,11 +18,11 @@ The **Alerts** page provides more details about an alert.
 1. Using the **Alert details** tab and the other information, analyze the alert and decide if it requires a security response or if this is normal network traffic.
 1. The **Take action** tab lists the remediation steps or options needed to fix the problem. Choose which steps to follow depending on your analysis of the alert.
     For example:
-    | Alert Response |  Action |
-    |---|---|
-    | - If the alert indicates normal network traffic |  1. Select **Select Learn**.<br> 1. Adjust the Status to **Closed**, and select **Apply**.|
-    | - If the alert requires a security response | Consult a relevant Control Systems Engineer to validate the origin of the alert.<br>        :::image type="content" source="../media/7-alert-full-details.png" alt-text="Screenshot of the alert details with the Take Action box highlighted" lightbox="../media/7-alert-full-details.png" :::|
-    | - If you want to suppress the alert| Select **Create Suppression Rule** and the suppression rule pane opens.<br>1. Type a **Name** and a **Description**.<br>1. If this rule has a time range, select **Expiration date** and enter the dates.<br>1. Choose which sensors this alert applies to.<br>1. Select **Next**, and **Confirm** in the pop-up box.<br>1. Select **Next**.<br>1. Review the details of the rule and then select **Create**.|
+| Alert Response |  Action |
+|---|---|
+| - If the alert indicates normal network traffic |  1. Select **Select Learn**.<br> 1. Adjust the Status to **Closed**, and select **Apply**.|
+| - If the alert requires a security response | Consult a relevant Control Systems Engineer to validate the origin of the alert.<br>        :::image type="content" source="../media/7-alert-full-details.png" alt-text="Screenshot of the alert details with the Take Action box highlighted" lightbox="../media/7-alert-full-details.png" :::|
+| - If you want to suppress the alert| Select **Create Suppression Rule** and the suppression rule pane opens.<br>1. Type a **Name** and a **Description**.<br>1. If this rule has a time range, select **Expiration date** and enter the dates.<br>1. Choose which sensors this alert applies to.<br>1. Select **Next**, and **Confirm** in the pop-up box.<br>1. Select **Next**.<br>1. Review the details of the rule and then select **Create**.|
 
 1. To complete the triage, update the alert severity and alert status. Select **Apply** to keep the changes.
 
