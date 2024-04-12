@@ -4,7 +4,7 @@ An important way to ensure your multimedia is accessible to people with disabili
 
 Captions are the text of the spoken content and sound effects in a video or audio file. Captions can be either open or closed. Consider your audience and purpose when deciding whether to use open or closed captions for your multimedia.
 
-- **Open captions** are always visible on the screen and can’t be turned off. These are useful when you want to ensure everyone can read the captions regardless of their device or settings, such as when in a public display or a social media post.
+- **Open captions** are always visible on the screen and can't be turned off. These are useful when you want to ensure everyone can read the captions regardless of their device or settings, such as when in a public display or a social media post.
 
 - **Closed captions** can be turned on or off by the user. These are useful when you want to give the user the option to choose whether they need captions or not, such as in an online course or a video player.
 
@@ -24,4 +24,4 @@ Follow these steps to increase multimedia accessibility in PowerPoint by adding 
 2. Select the video on the slide, and then select **Playback > Video Options > Insert Captions.**
 3. Once you select a caption file, the captions will appear below the video when you play it.
 
-   :::image type="content" source="../media/5-2-playback.png" alt-text="Screenshot of a video with captions on the bottom of the video.":::
+   :::image type="content" source="../media/5-2-playback.png" alt-text="Screenshot of the Insert Captions button on the Video Options ribbon in PowerPoint.":::
