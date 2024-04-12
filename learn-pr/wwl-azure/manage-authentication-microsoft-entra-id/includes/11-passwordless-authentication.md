@@ -45,14 +45,16 @@ As part of this deployment plan, we recommend that passwordless authentication b
 
 The prerequisites are determined by your selected passwordless authentication methods.
 
-| **rerequisite**                                                                                                                                                                            | **Microsoft Authenticator** | **FIDO2 Security Keys** |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------- | ----------------------- |
-| Combined registration for Microsoft Entra multifactor authentication and self-service password reset (SSPR) is enabled                                                                     | √                           | √                       |
-| Users can perform Microsoft Entra multifactor authentication                                                                                                                               | √                           | √                       |
-| Users have registered for Microsoft Entra multifactor authentication and SSPR                                                                                                              | √                           | √                       |
-| Users have registered their mobile devices to Microsoft Entra ID                                                                                                                           | √                           |                         |
-| Windows 10 version 1809 or higher using a supported browser like Microsoft Edge or Mozilla Firefox (version 67 or higher). Microsoft recommends version 1903 or higher for native support. |                             | √                       |
-| Compatible security keys. Ensure that you're using a Microsoft-tested and verified FIDO2 security key, or other compatible FIDO2 security key.                                             |                             | √                       |
+| **Prerequisite**                                                                                                                                                                                                                                      | **Microsoft Authenticator** | **FIDO2 Security Keys** |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | ----------------------- |
+| [Combined registration for Microsoft Entra multifactor authentication and self-service password reset (SSPR)](/entra/identity/authentication/howto-registration-mfa-sspr-combined) is enabled                        | √                           | √                       |
+| [Users can perform Microsoft Entra multifactor authentication](/entra/identity/authentication/howto-mfa-getstarted)                                                                                                  | √                           | √                       |
+| [Users have registered for Microsoft Entra multifactor authentication and SSPR](/entra/identity/authentication/howto-registration-mfa-sspr-combined)                                                                 | √                           | √                       |
+| [Users have registered their mobile devices to Microsoft Entra ID](/entra/identity/devices/overview)                                                                                                                 | √                           |                         |
+| Windows 10 version 1809 or higher using a supported browser like Microsoft Edge or Mozilla Firefox (version 67 or higher). Microsoft recommends version 1903 or higher for native support.                                                            |                             | √                       |
+| Compatible security keys. Ensure that you're using a [Microsoft-tested and verified FIDO2 security key](/entra/identity/authentication/concept-authentication-passwordless), or other compatible FIDO2 security key. |                             | √                       |
+
+|
 
 ### Windows Hello for Business
 
@@ -115,19 +117,19 @@ Follow the steps in the article, Enable passwordless sign-in with Microsoft Auth
 
 The following are sample test cases for passwordless authentication with the Authenticator app:
 
-| **Scenario**                                                                                                                                                                                    | **Expected results**                                                                    |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| User can register the Authenticator app.                                                                                                                                                        | User registers the app.                                                                 |
-| User can enable phone sign-in                                                                                                                                                                   | Phone sign-in configured for work account.                                              |
-| User can access an app with phone sign-in.                                                                                                                                                      | User goes through phone sign-in flow and reaches application.                           |
-| Test rolling back phone sign-in registration by turning off passwordless sign-in in the Authenticator app. Do this within the Authentication methods screen in the Microsoft Entra admin center | Previously enabled users unable to use passwordless sign-in from the Authenticator app. |
-| Removing phone sign-in from the Authenticator app                                                                                                                                               | Work account no longer available on the Authenticator app.                              |
+| **Scenario**                                                                                                                                                                                                                    | **Expected results**                                                                       |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| User can register the Authenticator app.                                                                                                                                                                                        | User can register app from [https://aka.ms/mysecurityinfo](https://aka.ms/mysecurityinfo). |
+| User can enable phone sign-in                                                                                                                                                                                                   | Phone sign-in configured for work account.                                                 |
+| User can access an app with phone sign-in.                                                                                                                                                                                      | User goes through phone sign-in flow and reaches application.                              |
+| Test rolling back phone sign-in registration by turning off passwordless sign-in in the Authenticator app. Do this within the Authentication methods screen in the [Microsoft Entra admin center](https://entra.microsoft.com/) | Previously enabled users unable to use passwordless sign-in from the Authenticator app.    |
+| Removing phone sign-in from the Authenticator app                                                                                                                                                                               | Work account no longer available on the Authenticator app.                                 |
 
 ### Troubleshoot phone sign-in
 
 | **Scenario**                                                                                                                         | **Solution**                                                                                                                                                                                                                                                          |
 | ------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| User cannot perform combined registration.                                                                                           | Ensure combined registration is enabled.                                                                                                                                                                                                                              |
+| User cannot perform combined registration.                                                                                           | Ensure [combined registration](/entra/identity/authentication/concept-registration-mfa-sspr-combined) is enabled.                                                                                                                    |
 | User cannot enable phone sign-in authenticator app.                                                                                  | Ensure user is in scope for deployment.                                                                                                                                                                                                                               |
 | User is NOT in scope for passwordless authentication, but is presented with passwordless sign-in option, which they cannot complete. | Occurs when user has enabled phone sign in in the application prior to the policy being created. To enable sign in, add the user to a group of users enabled for passwordless sign-in. To block sign in: have the user remove their credential from that application. |
 
@@ -151,13 +153,12 @@ Prepare for and plan the key lifecycle.
 
 There are three types of passwordless sign-in deployments available with security keys:
 
-Microsoft Entra web apps on a supported browser
-
-Microsoft Entra joined Windows 10 devices
-
-Microsoft Entra hybrid joined Windows 10 devices
-
-Provides access to both cloud-based and on premises resources. For more information about access to on-premises resources, see SSO to on-premises resources using FIDO2 keys
+1.  Microsoft Entra web apps on a supported browser
+2.  Microsoft Entra joined Windows 10 devices
+3.  Microsoft Entra hybrid joined Windows 10 devices
+    
+    
+     -  Provides access to both cloud-based and on premises resources. For more information about access to on-premises resources, see [SSO to on-premises resources using FIDO2 keys](/entra/identity/authentication/howto-authentication-passwordless-security-key-on-premises)
 
 #### For Microsoft Entra web apps and Microsoft Entra joined Windows devices, use:
 
@@ -204,6 +205,8 @@ When you deploy the security key, you can optionally restrict the use of FIDO2 k
 
 ## Deploy FIDO2 security key sign-in
 
+Follow the steps in the article [Enable passwordless security key sign-in](/entra/identity/authentication/howto-authentication-passwordless-security-key) to enable FIDO2 security key as a passwordless authentication method in your organization.
+
 ### Testing security keys
 
 Here are the sample test cases for passwordless authentication with security keys
@@ -228,3 +231,15 @@ Here are the sample test cases for passwordless authentication with security key
 | The user can sign in to OneDrive online using FIDO2 device using Microsoft Edge                                                                            | Sign-in should succeed                                                                                                                                                                                                                                                                                                               |
 | The user can sign in to OneDrive online using FIDO2 device using Firefox                                                                                   | Sign-in should succeed                                                                                                                                                                                                                                                                                                               |
 | Test rolling back FIDO2 device registration by turning off FIDO2 Security Keys within the Authentication method window in the Microsoft Entra admin center | Users will:  be prompted to sign in using their security key  successfully sign in and see an error: "Your company policy requires that you use a different method to sign in".  be able to select a different method and successfully sign in. Close the window and sign in again to verify they do not see the same error message. |
+
+### Troubleshoot security key sign-in
+
+| **Scenario**                                                                               | **Solution**                                                                                                                                                                                                                                                                                                                          |
+| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| User can't perform combined registration.                                                  | Ensure [combined registration](/entra/identity/authentication/concept-registration-mfa-sspr-combined) is enabled.                                                                                                                                                                                    |
+| User can't add a security key in their [security settings](https://aka.ms/mysecurityinfo). | Ensure that [security keys](/entra/identity/authentication/howto-authentication-passwordless-security-key) are enabled.                                                                                                                                                                              |
+| User can't add security key in Windows 10 sign-in options.                                 | [Ensure that security keys for Windows sign in](/entra/identity/authentication/concept-authentication-passwordless) are enabled                                                                                                                                                                      |
+| Error message: We detected that this browser or OS doesn't support FIDO2 security keys.    | Passwordless FIDO2 security devices can only be registered in supported browsers (Microsoft Edge, Firefox version 67) on Windows 10 version 1809 or higher.                                                                                                                                                                           |
+| Error message: Your company policy requires that you use a different method to sign in.    | Ensure security keys are enabled in the tenant.                                                                                                                                                                                                                                                                                       |
+| User unable to manage my security key on Windows 10 version 1809                           | Version 1809 requires that you use the security key management software provided by the FIDO2 key vendor. Contact the vendor for support.                                                                                                                                                                                             |
+| I think my FIDO2 security key may be defective—how can I test it.                          | Navigate to [https://webauthntest.azurewebsites.net/](https://webauthntest.azurewebsites.net/), enter credentials for a test account, plug in the suspect security key, select the + button at the top right of the screen, select create, and go through the creation process. If this scenario fails, your device may be defective. |
