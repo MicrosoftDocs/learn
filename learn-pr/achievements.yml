@@ -3148,3 +3148,8 @@ achievements:
   title: Configure Azure Storage with tools
   summary: Learn how to configure Azure Storage with tools like Azure Storage Explorer and AZCopy.
   iconUrl: /training/achievements/storage-tools-configure.svg
+- uid: learn.wwl.empower-workforce-copilot-use-cases.trophy
+  type: trophy
+  title: Empower your workforce with Copilot for Microsoft 365 Use Cases
+  summary: This Learning Path enables students to perform a series of Use Case exercises that build their Copilot for Microsoft 365 skills in various business-related scenarios. Use cases include Executives, Sales, Marketing, Finance, IT, HR, and Operations.
+  iconUrl: /training/achievements/generic-trophy.svg
