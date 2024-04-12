@@ -12,10 +12,31 @@ The optional Defender CSPM plan provides advanced posture management capabilitie
 
 The following table summarizes each plan and its cloud availability.
 
-:::image type="content" source="../media/defender-cspm-plans-f0ad4520.png" alt-text="Table showing Defender Cloud Security Poster Management plan options.":::
+| **Feature**                                                                | **Foundational CSPM** | **Defender CSPM** | **Cloud availability**       |
+| -------------------------------------------------------------------------- | --------------------- | ----------------- | ---------------------------- |
+| Security recommendations                                                   | Yes                   | Yes               | Azure, AWS, GCP, on-premises |
+| Asset inventory                                                            | Yes                   | Yes               | Azure, AWS, GCP, on-premises |
+| Secure score                                                               | Yes                   | Yes               | Azure, AWS, GCP, on-premises |
+| Data visualization and reporting with Azure Workbooks                      | Yes                   | Yes               | Azure, AWS, GCP, on-premises |
+| Data exporting                                                             | Yes                   | Yes               | Azure, AWS, GCP, on-premises |
+| Workflow automation                                                        | Yes                   | Yes               | Azure, AWS, GCP, on-premises |
+| Tools for remediation                                                      | Yes                   | Yes               | Azure, AWS, GCP, on-premises |
+| Microsoft Cloud Security Benchmark                                         | Yes                   | Yes               | Azure, AWS, GCP              |
+| Security governance                                                        | -                     | Yes               | Azure, AWS, GCP, on-premises |
+| Regulatory compliance standards                                            | -                     | Yes               | Azure, AWS, GCP, on-premises |
+| Cloud security explorer                                                    | -                     | Yes               | Azure, AWS, GCP              |
+| Attack path analysis                                                       | -                     | Yes               | Azure, AWS, GCP              |
+| Agentless scanning for machines                                            | -                     | Yes               | Azure, AWS, GCP              |
+| Agentless container security posture                                       | -                     | Yes               | Azure, AWS, GCP              |
+| Container registries vulnerability assessment, including registry scanning | -                     | Yes               | Azure, AWS, GCP              |
+| Data aware security posture                                                | -                     | Yes               | Azure, AWS, GCP              |
+| EASM insights in network exposure                                          | -                     | Yes               | Azure, AWS, GCP              |
+| Permissions management (Preview)                                           | -                     | Yes               | Azure, AWS, GCP              |
 
+> [!NOTE]
+> <br>Starting March 7, 2024, Defender CSPM must be enabled to have premium DevOps security capabilities that include code-to-cloud contextualization powering security explorer and attack paths and pull request annotations for Infrastructure-as-Code security findings.
 
-### Enhanced features
+### Enhanced features<br>
 
 If you want to try out the enhanced security features, enable enhanced security features for free for the first 30 days. At the end of 30 days, if you decide to continue using the service, we'll automatically start charging for usage.
 
