@@ -10,7 +10,8 @@ We've also learned how to configure of Azure NetApp Files with AVS, covering:
 - How to appropriately size volumes based on workload demands.
 - How to connect Azure NetApp Files volumes as datastores to AVS hosts.
 - How to connect your Azure NetApp Files volumes to an AVS VM.
- 
+
+
 Azure NetApp Files can support your most demanding enterprise workloads by providing excellent storage performance, maximum availability, and the flexibility to scale as your requirements change.
 
 ## Further learning links
