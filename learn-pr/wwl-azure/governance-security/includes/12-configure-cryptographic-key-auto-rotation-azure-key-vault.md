@@ -37,7 +37,8 @@ Key rotation policy settings:
 
 Key rotation generates a new key version of an existing key with new key material. Target services should use versionless key uri to automatically refresh to latest version of the key. Ensure that your data encryption solution stores versioned key uri with data to point to the same key material for decrypt/unwrap as was used for encrypt/wrap operations to avoid disruption to your services. All Azure services are currently following that pattern for data encryption.
 
-## :::image type="content" source="../media/key-rotation-example-1-86820625.png" alt-text="Screenshot showing an example of the key rotation policy configuration page."::: 
+:::image type="content" source="../media/key-rotation-example-1-86820625.png" alt-text="Screenshot showing an example of the key rotation policy configuration page.":::
+
 
 ## Configure key rotation policy
 
@@ -85,7 +86,7 @@ az keyvault key rotation-policy update --vault-name <vault-name> --name <key-nam
 
 ### Azure PowerShell
 
-Set rotation policy using Azure Powershell [Set-AzKeyVaultKeyRotationPolicy](/powershell/module/az.keyvault/set-azkeyvaultkeyrotationpolicy) cmdlet.
+Set rotation policy using Azure PowerShell [Set-AzKeyVaultKeyRotationPolicy](/powershell/module/az.keyvault/set-azkeyvaultkeyrotationpolicy) cmdlet.
 
 ```powershell
 Set-AzKeyVaultKeyRotationPolicy -VaultName <vault-name> -KeyName <key-name> -ExpiresIn (New-TimeSpan -Days 720) -KeyRotationLifetimeAction @{Action="Rotate";TimeAfterCreate= (New-TimeSpan -Days 540)}
@@ -99,7 +100,8 @@ Key rotation can be invoked manually.
 
 Click 'Rotate Now' to invoke rotation.
 
-### :::image type="content" source="../media/key-rotation-options-0cb50e09.png"::: 
+:::image type="content" source="../media/key-rotation-options-0cb50e09.png":::
+
 
 ### Azure CLI
 
@@ -121,6 +123,7 @@ Invoke-AzKeyVaultKeyRotation -VaultName <vault-name> -Name <key-name>
 
 Configuration of expiry notification for Event Grid key near expiry event. In case when automated rotation cannot be used, like when a key is imported from local HSM, you can configure near expiry notification as a reminder for manual rotation or as a trigger to custom automated rotation through integration with Event Grid. You can configure notification with days, months and years before expiry to trigger near expiry event.
 
-### :::image type="content" source="../media/key-rotation-notification-57cf441f.png" alt-text="Screenshot showing an example of a key rotation policy notification."::: 
+:::image type="content" source="../media/key-rotation-notification-57cf441f.png" alt-text="Screenshot showing an example of a key rotation policy notification.":::
+
 
 For more information about Event Grid notifications in Key Vault, see [Azure Key Vault as Event Grid source](/azure/event-grid/event-schema-key-vault?tabs=event-grid-event-schema)
