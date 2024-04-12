@@ -8,7 +8,7 @@ Choose deploying a vCore-based Azure Cosmos DB for MongoDB cluster for advanced 
 - **High availability**: Supports applications requiring 99.995% uptime.
 - **Vector search**: Includes native support for vector embeddings.
 
-## MongoDB Compatibility
+## MongoDB compatibility
 
 A vCore-based Azure Cosmos DB for MongoDB ensures seamless integration using the MongoDB wire protocol, allowing the use of familiar tools and SDK. The cluster also supports most MongoDB commands and query language constructs. To learn more MongoDB compatibility info, visit the [MongoDB compatibility and feature support with vCore-based Azure Cosmos DB for MongoDB](/azure/cosmos-db/mongodb/vcore/compatibility) documentation.
 
@@ -26,7 +26,7 @@ To create a vCore-based Azure Cosmos DB for MongoDB cluster, you can use the Azu
 
 - **CLI deployment**: Use `az deployment group create` with a Bicep, Azure Resource Manager JSON, or Terraform template. This method is used in later modules to deploy resources programmatically.
 
-### Example CLI Command:
+### Example CLI command
 
 Next, is an example of deploying a vCore-based Azure Cosmos DB for MongoDB cluster using the Azure CLI:
 

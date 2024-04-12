@@ -2,7 +2,7 @@ In this module, you learned how to set up a vCore-based Azure Cosmos DB for Mong
 
 The main takeaways include understanding the compatibility of vCore-based Azure Cosmos DB with MongoDB, which allows seamless integration and use of familiar tools and SDKs. You also learned the requirements and methods for creating your cluster, either through the Azure portal or using Azure CLI commands. The module provided an example CLI command and a Bicep template for deploying a vCore-based Azure Cosmos DB for MongoDB cluster, demonstrating the practical steps involved in setting up the cluster.
 
-Additional Reading:
+Additional reading:
 
 - [What is Azure Cosmos DB for MongoDB vCore?](/azure/cosmos-db/mongodb/vcore/introduction)
 - [MongoDB compatibility and feature support with vCore-based Azure Cosmos DB for MongoDB](/azure/cosmos-db/mongodb/vcore/compatibility)

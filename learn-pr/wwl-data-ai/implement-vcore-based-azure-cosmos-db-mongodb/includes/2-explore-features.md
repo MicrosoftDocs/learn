@@ -1,6 +1,6 @@
 vCore-based Azure Cosmos DB for MongoDB is a fully managed MongoDB-compatible database service, offering seamless Azure integration, and a low total cost of ownership. vCore-based Azure Cosmos DB for MongoDB is perfect for developers planning to migrate existing applications or build new ones. vCore-based Azure Cosmos DB for MongoDB provides a familiar architecture along with the scalability and flexibility Azure is known for.
 
-## AI-Driven applications simplified
+## AI-driven applications simplified
 
 The integrated Vector Search feature in vCore-based Azure Cosmos DB for MongoDB empowers developers to build AI applications more efficiently. It simplifies data indexing and querying for AI, keeping everything within the database and removing the need for external integrations. This feature is even available in the free tier, making advanced AI capabilities accessible to developers without extra costs.
 
