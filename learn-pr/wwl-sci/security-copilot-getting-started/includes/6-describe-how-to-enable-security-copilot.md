@@ -80,21 +80,24 @@ The Microsoft Entra ID roles are:
 - Security operator
 - Security reader
 
-Although these roles grant users varying levels of access to Copilot, the scope of these roles extends beyond Copilot. For this reason, Copilot for Security roles were defined. The Copilot roles are defined and managed within Copilot and grant access only to Copilot for Security features.
+Although these roles grant users varying levels of access to Copilot, the scope of these roles extends beyond Copilot. For this reason, Copilot for Security introduces two roles that function like access groups but aren't Microsoft Entra ID roles. Instead, they only control access to the capabilities of the Copilot for Security platform.
 
 The Microsoft Copilot for Security roles are:
 
 - Copilot owner
 - Copilot contributor
 
-Copilot for Security will add “All Users” in the tenants to the Workspace Contributor Role, by default as part of the first run experience or initial setup.  
+The Security Administrator and Global Administrator roles in Microsoft Entra automatically inherit Copilot owner access.
+
+By default, all users in the Microsoft Entra tenant are given Copilot contributor access.
+  
 - Any user within a licensed tenant (purchased Copilot via the consumption model) will be allowed to create a session/prompt by default.
 - If the admin doesn't wish to provide access to everyone in the licensed tenant to be able to run prompts, they can restrict access to run prompts by removing “All users” from the Workspace Contributor Role assignments and adding an existing security group from the Copilot for Security portal.
 - All experiences where Copilot for Security is used (embedded or standalone) will follow the updates made by the admin.
 - Admin/Owner permissions are required for any privileged operations like associating the workspace to SCU capacity, owner settings, plugin settings, and more.
 - Provisioning Capacity operations continue to require Azure owner or Azure contributor roles, enabled through Azure IAM.
 
-For a detailed listing of the permissions granted for each of these roles, refer to the Assign roles article in the Summary and resources unit of this module.
+For a detailed listing of the permissions granted for each of these roles, refer to the Assign roles section in [Understand authentication in Microsoft Copilot for Security](/security-copilot/authentication).
 
 Your role controls what activities you have access to, such as configuring settings, assigning permissions, or performing tasks. Copilot doesn't go beyond the access you have. Additionally, individual Microsoft plugins may have their own role requirements for accessing the service and data it represents. As an example, an analyst that has been assigned a security operator role or a Copilot workspace contributor role is able to access the Copilot portal and create sessions, but to utilize the Microsoft Sentinel plugin would need an appropriate role like Microsoft Sentinel Reader to access incidents in the workspace. To access the devices, privileges, and policies available through the Microsoft Intune plugin, that same analyst would need another service-specific role like the Intune Endpoint Security Manager role.
 

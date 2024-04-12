@@ -7,7 +7,11 @@ The scenarios supported as part of the embedded experience are:
 - Gain contextual summary of Communication Compliance policy matches.
 - Gain contextual summary of evidence collected in eDiscovery review sets (Preview).
 
-For all use cases supported through the embedded experience, as is the case with the standalone experience, your organization must be onboarded to Microsoft Copilot for Security, the Purview plugin must be enabled in Copilot, and your organization must be licensed and onboarded to the applicable Microsoft Purview solutions. Additionally, users must have the appropriate role permissions for both Copilot and the Purview solutions. For Copilot, users need, at a minimum, the Copilot workspace contributor role or the Entra Security operator role. For Microsoft Purview, as is true for a Microsoft solution enabled via a plugin, Copilot assumes the permissions of the user when it tries to access the data to answer the queries, so you need to have the required permissions to access the data.
+For all use cases supported through the embedded experience, as is the case with the standalone experience, your organization must be onboarded to Microsoft Copilot for Security, the Purview plugin must be enabled in Copilot, and your organization must be licensed and onboarded to the applicable Microsoft Purview solutions. To enable the Microsoft Purview, the option to allow Copilot for Security to access data from your Microsoft 365 services must be enabled, as part of the owner settings.
+
+:::image type="content" source="../media/purview-plugin-requirement.png" lightbox="../media/purview-plugin-requirement.png" alt-text="Screen capture of the setting to allow Copilot for Security to access data from your Microsoft 365 services, which is required to enable the Microsoft Purview plugin.":::
+
+Additionally, users must have the appropriate role permissions for both Copilot and the Purview solutions. For Copilot, users need, at a minimum, the Copilot workspace contributor role or the Entra Security operator role. For Microsoft Purview, as is true for a Microsoft solution enabled via a plugin, Copilot assumes the permissions of the user when it tries to access the data to answer the queries, so you need to have the required permissions to access the data.
 
 ### Gain comprehensive summary of alerts
 
