@@ -8,11 +8,11 @@ You can change the name of the management group by using the portal, PowerShell,
 
 ### Change the name in the portal
 
-1.  Log into the Azure portal.
-2.  Select All services &gt; Management groups.
+1.  Log into the [Azure portal](https://portal.azure.com/).
+2.  Select **All services** &gt; **Management groups.**
 3.  Select the management group you would like to rename.
-4.  Select details.
-5.  Select the Rename group option at the top of the page.
+4.  Select **details**.
+5.  Select the **Rename group** option at the top of the page.
     
     :::image type="content" source="../media/detail-action-small-4c3e9c4c.png" alt-text="Screenshot showing the rename group control bar in the Azure portal.":::
     
@@ -20,13 +20,11 @@ You can change the name of the management group by using the portal, PowerShell,
     
     :::image type="content" source="../media/rename-group-92580662.png" alt-text="Screenshot showing the rename group menu tab in the Azure portal.":::
     
-7.  Select Save.
+7.  Select **Save**.
 
 ### Change the name in PowerShell
 
 To update the display name use **Update-AzManagementGroup**. For example, to change a management groups display name from "Contoso IT" to "Contoso Group", you run the following command:
-
-Azure PowerShell
 
 ```powershell
 Update-AzManagementGroup -GroupId 'ContosoIt' -DisplayName 'Contoso Group'
@@ -36,9 +34,7 @@ Update-AzManagementGroup -GroupId 'ContosoIt' -DisplayName 'Contoso Group'
 
 For Azure CLI, use the update command.
 
-Azure CLI
-
-```powershell
+```azurecli
 az account management-group update --name 'Contoso' --display-name 'Contoso Group'
 ```
 
@@ -46,33 +42,37 @@ az account management-group update --name 'Contoso' --display-name 'Contoso Grou
 
 To delete a management group, the following requirements must be met:
 
- -  There are no child management groups or subscriptions under the management group. To move a subscription or management group to another management group, see Moving management groups and subscriptions in the hierarchy.
- -  You need write permissions on the management group ("Owner", "Contributor", or "Management Group Contributor"). To see what permissions you have, select the management group and then select **IAM**.
+ -  There are no child management groups or subscriptions under the management group. To move a subscription or management group to another management group, see [Moving management groups and subscriptions in the hierarchy](/azure/governance/management-groups/manage#moving-management-groups-and-subscriptions).
+ -  You need write permissions on the management group ("Owner", "Contributor", or "Management Group Contributor"). To see what permissions you have, select the management group and then select IAM. To learn more on Azure roles, see [Azure role-based access control (Azure RBAC)](/azure/role-based-access-control/overview).
 
 ### Delete in the portal
 
-1.  Log into the Azure portal.
-2.  Select All services &gt; Management groups.
-3.  Select the management group you would like to delete.
-4.  Select details.
-5.  Select Delete
-    
-    :::image type="content" source="../media/azure-portal-delete-page-5eb815f7.png" alt-text="Screenshot showing how to delete a management group.":::
-    
-    
-    > [!TIP]
-    > If the icon is disabled, hovering your mouse selector over the icon shows you the reason.
-6.  There's a window that opens confirming you want to delete the management group.
-    
-    :::image type="content" source="../media/delete-confirm-8cc86988.png" alt-text="Screenshot showing the delete group confirmation tab in the Azure portal.":::
-    
-7.  Select Yes.
+1. Log into the [Azure portal](https://portal.azure.com/).
 
-### Delete in PowerShell
+2. Select **All services** &gt; **Management groups**.
+
+3. Select the management group you would like to delete.
+
+4. Select **details**.
+
+5. Select **Delete.**
+
+:::image type="content" source="../media/azure-portal-delete-page-5eb815f7.png" alt-text="Screenshot showing how to delete a management group.":::
+<br>
+
+> [!TIP]
+> If the icon is disabled, hovering your mouse selector over the icon shows you the reason.
+
+6. There's a window that opens confirming you want to delete the management group.
+
+:::image type="content" source="../media/delete-confirm-8cc86988.png" alt-text="Screenshot showing the delete group confirmation tab in the Azure portal.":::
+<br>
+
+7. Select **Yes**.
+
+### Delete in PowerShell<br>
 
 Use the **Remove-AzManagementGroup** command within PowerShell to delete management groups.
-
-Azure PowerShell
 
 ```powershell
 Remove-AzManagementGroup -GroupId 'Contoso'
@@ -82,9 +82,7 @@ Remove-AzManagementGroup -GroupId 'Contoso'
 
 With Azure CLI, use the command az account management-group delete.
 
-Azure CLI
-
-```powershell
+```azurecli
 az account management-group delete --name 'Contoso'
 ```
 
@@ -94,8 +92,8 @@ You can view any management group you have a direct or inherited Azure role on.
 
 ### View in the portal
 
-1.  Log into the Azure portal.
-2.  Select All services &gt; Management groups.
+1.  Log into the [Azure portal](https://portal.azure.com/).
+2.  Select **All services** &gt; **Management groups**.
 3.  The management group hierarchy page will load. This page is where you can explore all the management groups and subscriptions you have access to. Selecting the group name takes you to a lower level in the hierarchy. The navigation works the same as a file explorer does.
 4.  To see the details of the management group, select the **(details)** link next to the title of the management group. If this link isn't available, you don't have permissions to view that management group.
     
@@ -106,15 +104,11 @@ You can view any management group you have a direct or inherited Azure role on.
 
 You use the Get-AzManagementGroup command to retrieve all groups. See [Az.Resources](/powershell/module/az.resources/Get-AzManagementGroup) modules for the full list of management group GET PowerShell commands.
 
-Azure PowerShell
-
 ```powershell
 Get-AzManagementGroup
 ```
 
 For a single management group's information, use the -GroupId parameter
-
-Azure PowerShell
 
 ```powershell
 Get-AzManagementGroup -GroupId 'Contoso'
@@ -124,25 +118,19 @@ Get-AzManagementGroup -GroupId 'Contoso'
 
 You use the list command to retrieve all groups.
 
-Azure CLI
-
-```powershell
+```azurecli
 az account management-group list
 ```
 
 For a single management group's information, use the show command
 
-Azure CLI
-
-```powershell
+```azurecli
 az account management-group show --name 'Contoso'
 ```
 
 To return a specific management group and all the levels of the hierarchy under it, use **-Expand** and **-Recurse** parameters.
 
-Azure CLI
-
-```powershell
+```azurecli
 az account management-group show --name 'Contoso' -e -r
 ```
 
@@ -173,45 +161,41 @@ If the Owner role on the subscription is inherited from the current management g
 
 ### Add an existing Subscription to a management group in the portal
 
-1.  Log into the Azure portal.
-2.  Select All services &gt; Management groups.
+1.  Log into the [Azure portal](https://portal.azure.com/).
+2.  Select **All services** &gt; **Management groups**.
 3.  Select the management group you're planning to be the parent.
-4.  At the top of the page, select Add subscription.
+4.  At the top of the page, select **Add subscription**.
 5.  Select the subscription in the list with the correct ID.
     
     :::image type="content" source="../media/add-subscription-2d348364.png" alt-text="Screenshot showing the add subscription page in the Azure portal.":::
     
-6.  Select "Save".
+6.  Select **Save**.
 
 ### Remove a subscription from a management group in the portal
 
-1.  Log into the Azure portal.
-2.  Select All services &gt; Management groups.
+1.  Log into the [Azure portal](https://portal.azure.com/).
+2.  Select **All services** &gt; **Management groups**.
 3.  Select the management group you're planning that is the current parent.
 4.  Select the ellipse at the end of the row for the subscription in the list you want to move.
     
     :::image type="content" source="../media/move-role-a2255228.png" alt-text="Screenshot showing how to remove a subscription from a management group in the portal.":::
     
-5.  Select Move.
-6.  On the menu that opens, select the Parent management group.<br>
+5.  Select **Move**.
+6.  On the menu that opens, select the **Parent management group**.<br>
     
     :::image type="content" source="../media/move-parent-management-group-c86a4fbd.png" alt-text="Screenshot showing the parent management group tab in the Azure portal.":::
     
-7.  Select Save.
+7.  Select **Save**.
 
 ### Move subscriptions in PowerShell
 
 To move a subscription in PowerShell, you use the New-AzManagementGroupSubscription command.
-
-Azure PowerShell
 
 ```powershell
 New-AzManagementGroupSubscription -GroupId 'Contoso' -SubscriptionId '12345678-1234-1234-1234-123456789012'
 ```
 
 To remove the link between the subscription and the management group use the Remove-AzManagementGroupSubscription command.
-
-Azure PowerShell
 
 ```powershell
 Remove-AzManagementGroupSubscription -GroupId 'Contoso' -SubscriptionId '12345678-1234-1234-1234-123456789012'
@@ -221,17 +205,13 @@ Remove-AzManagementGroupSubscription -GroupId 'Contoso' -SubscriptionId '1234567
 
 To move a subscription in CLI, you use the add command.
 
-Azure CLI
-
-```powershell
+```azurecli
 az account management-group subscription add --name 'Contoso' --subscription '12345678-1234-1234-1234-123456789012'
 ```
 
 To remove the subscription from the management group, use the subscription remove command.
 
-Azure CLI
-
-```powershell
+```azurecli
 az account management-group subscription remove --name 'Contoso' --subscription '12345678-1234-1234-1234-123456789012'
 ```
 
@@ -239,23 +219,21 @@ az account management-group subscription remove --name 'Contoso' --subscription 
 
 ### Move management groups in the portal
 
-1.  Log into the Azure portal.
-2.  Select All services &gt; Management groups.
+1.  Log into the [Azure portal](https://portal.azure.com/).
+2.  Select **All services** &gt; **Management groups**.
 3.  Select the management group you're planning to be the parent.
-4.  At the top of the page, select Add management group.
+4.  At the top of the page, select **Add management group**.
 5.  In the menu that opens, select if you want a new or use an existing management group.
      -  Selecting new will create a new management group.
      -  Selecting an existing will present you with a dropdown list of all the management groups you can move to this management group.
     
     :::image type="content" source="../media/add-management-group-d4e224a5.png" alt-text="Screenshot showing the add management group page in the Azure portal.":::
     
-6.  Select Save.
+6.  Select **Save**.
 
 ### Move management groups in PowerShell
 
 Use the Update-AzManagementGroup command in PowerShell to move a management group under a different group.
-
-Azure PowerShell
 
 ```powershell
 $parentGroup = Get-AzManagementGroup -GroupId ContosoIT
@@ -269,15 +247,13 @@ Update-AzManagementGroup -GroupId 'Contoso' -ParentId $parentGroup.id
 
 Use the update command to move a management group with Azure CLI.
 
-Azure CLI
-
-```powershell
+```azurecli
 az account management-group update --name 'Contoso' --parent ContosoIT
 ```
 
 ## Audit management groups using activity logs<br>
 
-Management groups are supported within Azure Activity Log. You can query all events that happen to a management group in the same central location as other Azure resources. For example, you can see all Role Assignments or Policy Assignment changes made to a particular management group.
+Management groups are supported within [Azure Activity Log](/azure/azure-monitor/essentials/platform-logs-overview). You can query all events that happen to a management group in the same central location as other Azure resources. For example, you can see all Role Assignments or Policy Assignment changes made to a particular management group.
 
 :::image type="content" source="../media/azure-activity-log-fd3a4948.png" alt-text="Screenshot showing the audit management group activity logs in the Azure portal.":::
 
@@ -292,8 +268,10 @@ When referencing management groups from other Resource Provider's actions, use t
 
 An example of using this path is when assigning a new role assignment to a management group in PowerShell:
 
-Azure PowerShell
-
 ```powershell
 New-AzRoleAssignment -Scope "/providers/Microsoft.Management/managementGroups/Contoso"
 ```
+
+The same scope path is used when retrieving a policy definition at a management group.
+
+`GET https://management.azure.com/providers/Microsoft.Management/managementgroups/MyManagementGroup/providers/Microsoft.Authorization/policyDefinitions/ResourceNaming?api-version=2019-09-01`
