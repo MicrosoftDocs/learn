@@ -23,6 +23,6 @@ When a user submits a prompt, Copilot processes that prompt to generate the best
 
 #### Process log
 
-During this process, Copilot generates a process log that is visible to the user. The user can see what capability is used to generate the response. This is important because it enables the user to determine whether the response was generated from a trusted source. In the screenshot that follows, the process log shows that Copilot chose the Microsoft Sentinel plugin and lists the selected capability. The process log also shows that the final output went through safety checks, which is part of Microsoft’s commitment to responsible AI.
+During this process, Copilot generates a process log that is visible to the user. The user can see what capability is used to generate the response. This is important because it enables the user to determine whether the response was generated from a trusted source. In the screenshot that follows, the process log shows that Copilot chose the Incident Analysis capability. The process log also shows that the final output went through safety checks, which is part of Microsoft’s commitment to responsible AI.
 
 :::image type="content" source="../media/process-log-new.png" lightbox="../media/process-log-new.png"alt-text="Screen capture of the process log that highlights the capability selected and the text indicating that Copilot ran safety checks as part of the process to compose the response message.":::
