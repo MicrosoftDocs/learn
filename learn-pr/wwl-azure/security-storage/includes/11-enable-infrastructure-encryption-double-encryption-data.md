@@ -1,4 +1,4 @@
-Azure Storage automatically encrypts all data in a storage account at the service level using 256-bit AES encryption, one of the strongest block ciphers available, and is FIPS 140-2 compliant. Customers who require higher levels of assurance that their data is secure can also enable 256-bit AES encryption at the Azure Storage infrastructure level for double encryption. Double encryption of Azure Storage data protects against a scenario where one of the encryption algorithms or keys may be compromised. In this scenario, the additional layer of encryption continues to protect your data.
+Azure Storage automatically encrypts all data in a storage account at the service level using 256-bit AES encryption, which is one of the strongest block ciphers available, and is FIPS 140-2 compliant. Customers who require higher levels of assurance that their data is secure can also enable 256-bit AES encryption at the Azure Storage infrastructure level for double encryption. Double encryption of Azure Storage data protects against a scenario where one of the encryption algorithms or keys may be compromised. In this scenario, the additional layer of encryption continues to protect your data.
 
 Infrastructure encryption can be enabled for the entire storage account, or for an encryption scope within an account. When infrastructure encryption is enabled for a storage account or an encryption scope, data is encrypted twice — once at the service level and once at the infrastructure level — with two different encryption algorithms and two different keys.<br>
 
@@ -14,7 +14,7 @@ To enable infrastructure encryption for a storage account, you must configure a 
 
 To use the Azure portal to create a storage account with infrastructure encryption enabled, follow these steps:
 
-1.  In the Azure portal, navigate to the **Storage accounts** page.<br>
+1.  In the [Azure portal](https://portal.azure.com/), navigate to the **Storage accounts** page.<br>
 2.  Choose the **Add** button to add a new general-purpose v2 or premium block blob storage account.<br>
 3.  On the **Encryption** tab, locate **Enable infrastructure encryption**, and select **Enabled**.<br>
 4.  Select **Review + create** to finish creating the storage account.
@@ -24,7 +24,7 @@ To use the Azure portal to create a storage account with infrastructure encrypti
 
 To verify that infrastructure encryption is enabled for a storage account with the Azure portal, follow these steps:<br>
 
-1.  Navigate to your storage account in the Azure portal.<br>
+1.  Navigate to your storage account in the [Azure portal](https://portal.azure.com/),<br>
 2.  Under **Settings**, choose **Encryption**.
     
     :::image type="content" source="../media/verify-infrastructure-encryption-page-c9ecb274.png" alt-text="Screenshot showing how to verify that infrastructure encryption is enabled for a storage account.":::

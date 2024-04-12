@@ -3,7 +3,7 @@ uid: learn.wwl.security-storage
 metadata:
   title: Plan and implement security for storage
   description: "This module is designed to provide administrators with the knowledge and skills required to plan and implement comprehensive security measures for Azure storage resources, safeguarding data integrity, confidentiality, and availability."
-  ms.date: 04/04/2024
+  ms.date: 04/12/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
@@ -44,8 +44,8 @@ units:
 - learn.wwl.security-storage.azure-storage
 - learn.wwl.security-storage.authorize-requests-azure-storage
 - learn.wwl.security-storage.manage-storage-account-access-keys
+- learn.wwl.security-storage.select-configure-access-azure-files
 - learn.wwl.security-storage.authorize-access-blobs-use-microsoft-entra-id
-- learn.wwl.security-storage.select-configure-appropriate-method-access-azure
 - learn.wwl.security-storage.authorize-access-tables-use-microsoft-entra-id
 - learn.wwl.security-storage.authorize-access-queue-data-azure-portal
 - learn.wwl.security-storage.recommendations-basic-data-protection
