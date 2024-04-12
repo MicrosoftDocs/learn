@@ -10,7 +10,7 @@ You can upload the results using the code-scanning API, the CodeQL CLI, or GitHu
 
 #### Code-scanning API
 
-The code-scanning API lets you retrieve information on code scanning alerts, analyses, databases, and default setup configuration from a repository. Addtionally, you can update code-scanning alerts and the default setup configuration. You can use the endpoints to create automated reports for the code-scanning alerts in an organization or upload analysis results generated using offline code-scanning tools.
+The code-scanning API lets you retrieve information on code scanning alerts, analyses, databases, and default setup configuration from a repository. Additionally, you can update code-scanning alerts and the default setup configuration. You can use the endpoints to create automated reports for the code-scanning alerts in an organization or upload analysis results generated using offline code-scanning tools.
 
 You can access the GitHub API over HTTPS from `https://api.github.com`. All data is sent and received as JSON. The API uses custom media types to let consumers choose the format of the data they wish to receive. Media types are specific to resources, allowing them to change independently and support formats that other resources don't.
 
