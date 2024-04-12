@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/modules/index.md",
+      "redirect_url": "/training/browse/?resource_type=module",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/index.md",
+      "redirect_url": "/training/browse/?resource_type=learning%20path",
+      "redirect_document_id": false
+    },    
+    {
       "source_path_from_root": "/learn-pr/azure/add-sign-in-support-python-web-app-identity-platform/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/entra/identity-platform/quickstart-web-app-python-sign-in",
       "redirect_document_id": false
@@ -32682,6 +32692,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/intro-to-personalizer/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-personalizer/2-what-is-personalizer.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-personalizer/3-how-personalizer-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-personalizer/4-when-to-use-personalizer.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-personalizer/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-personalizer/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-personalizer/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/automate-deployments-github-actions-azure/index.yml" ,
       "redirect_url": "https://learn.microsoft.com/training/modules/github-actions-cd",
       "redirect_document_id": false
@@ -35999,6 +36044,131 @@
     {
       "source_path": "learn-pr/azure/deploy-vms-from-vhd-templates/5-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/deploy-vms-from-vhd-templates/6-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/10-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/11-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/2-authorize-database-access.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/3-authorize-database-access",
+      "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/3-database-audit.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/4-database-audit",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/4-microsoft-purview-governance-portal-use-cases.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/5-microsoft-purview-governance-portal-use-cases",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/5-implement-data-classification-sensitive-information.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/6-implement-data-classification-sensitive-information",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/6-dynamic-data-mask.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/7-dynamic-data-mask",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/7-transparent-data-encryption.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/8-transparent-data-encryption",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/8-always-encrypted.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/9-always-encrypted",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/9-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/10-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/index.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/1-introduction.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/5-knowledge-check.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/6-summary-resources.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/4-use-azcopy.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/2-use-azure-storage-explorer.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/3a-use-import-export-service.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/3b-use-waimportexport-tool.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/10-azure-key-vault-backup-restore.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/governance-security/13-azure-key-vault-backup-restore",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/11-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/governance-security/14-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/12-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/governance-security/15-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/5-create-key-vault-use-azure-portal.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/governance-security/8-create-key-vault-use-azure-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/6-azure-dedicated-hardware-security-module.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/governance-security/9-azure-dedicated-hardware-security-module",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/7-provide-access-key-vault-keys-certificates-secrets.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/governance-security/10-provide-access-key-vault-keys-certificates-secrets",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/8-azure-key-vault-keys-secrets-certificates.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/governance-security/11-azure-key-vault-keys-secrets-certificates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/9-configure-cryptographic-key-auto-rotation-azure-key-vault.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/governance-security/12-configure-cryptographic-key-auto-rotation-azure-key-vault",
       "redirect_document_id": false
     }
   ]

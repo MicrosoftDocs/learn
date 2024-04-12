@@ -335,7 +335,7 @@ Azure will return a JSON response that resembles the following excerpt:
 ]
 ```
 
-The various fields in the JSON response will describe the manufacturer and version for the available virtual machine operating systems; for example: the Linux variants that are listed are in the above excerpt are:
+The various fields in the JSON response will describe the manufacturer and version for the available virtual machine operating systems. For example: the Linux variants that are listed are in the above excerpt are:
 
 | Description | URN Alias |
 | --- | --- |
@@ -396,7 +396,7 @@ If you run the above command, you'll notice that there are far more parameters t
 
 ### Choose your virtual machine authentication options
 
-Azure supports several authentication methods to access virtual machines; for example: just-in-time access, simple usernames and passwords, or SSH keys. If your company decided to deploy and access virtual machines with SSH keys, you would need to add the `--generate-ssh-keys` parameter from the preceding example and remove `--admin-password` parameter:
+Azure supports several authentication methods to access virtual machines. For example, just-in-time access, simple usernames and passwords, or SSH keys. If your company decided to deploy and access virtual machines with SSH keys, you would need to add the `--generate-ssh-keys` parameter from the preceding example and remove `--admin-password` parameter:
 
 ```azurecli
 az vm create \
@@ -468,7 +468,7 @@ Azure will return a JSON response that resembles the following example:
 ]
 ```
 
-The various fields in the JSON response will describe the version information for each of the available virtual machine operating systems; for example: the Windows variants that are listed are in the above excerpt are:
+The various fields in the JSON response will describe the version information for each of the available virtual machine operating systems. For example, the Windows variants that are listed are in the above excerpt are:
 
 | Description | URN Alias |
 | --- | --- |
@@ -530,7 +530,7 @@ For example, if your company had purchased *Azure Hybrid Benefit*, you could cho
 
 ### Choose your virtual machine authentication options
 
-Azure supports several authentication methods to access virtual machines; for example: just-in-time access, simple usernames and passwords, or Windows Remote Management (WinRM).
+Azure supports several authentication methods to access virtual machines. For example, just-in-time access, simple usernames and passwords, or Windows Remote Management (WinRM).
 
 ::: zone-end
 
