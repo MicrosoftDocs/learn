@@ -57,13 +57,9 @@ You now have a copy of the template repository in your own account. You'll clone
 
 1. Open Visual Studio Code.
 
-1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
+1. Open a Visual Studio Code terminal window by selecting **View** > **Terminal**. The window usually opens at the bottom of the screen.
 
-1. Navigate in the terminal to the directory where you want to clone the GitHub repository on your local computer. For example, to clone the repository to the _toy-website-test_ folder, run the following command:
-
-   ```bash
-   cd toy-website-test
-   ```
+1. Navigate in the terminal to the directory where you want to clone the GitHub repository on your local computer.
 
 1. Type `git clone` and then paste the URL you copied earlier, which looks something like this:
 
@@ -245,7 +241,7 @@ You've created a workload identity, and a resource group that it can deploy to. 
 
 1. In your browser, navigate to your GitHub repository.
 
-1. Select **Settings** > **Secrets** > **Actions**.
+1. Select **Settings** > **Secrets and variables** > **Actions**.
 
 1. Select **New repository secret**.
 

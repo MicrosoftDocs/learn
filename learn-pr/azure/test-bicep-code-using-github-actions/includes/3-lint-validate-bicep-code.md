@@ -4,7 +4,7 @@ Now that you know what workflow jobs are for, let's consider the first set of va
 
 A valid Bicep file doesn't contain any syntax errors. Also, the definitions for the Azure resources that you plan to deploy are valid. And when the resources defined in the file are deployed, they stay within the quotas and limits that exist in your Azure subscription.
 
-Some of the checks are performed on your Bicep file in isolation, like the checks for syntax errors, for valid Azure resource definitions, and for code quality. These steps are part of a process called _linting_. To check for other problems, you need to request that the Azure Resource Manager (ARM) service validates your template and takes your Azure environment into consideration.
+Some of the checks are performed on your Bicep file in isolation, like the checks for syntax errors, for valid Azure resource definitions, and for code quality. These steps are part of a process called _linting_. To check for other problems, you need to request that the Azure Resource Manager service validates your template and takes your Azure environment into consideration.
 
 A valid Bicep template has a greater chance of deploying successfully. You get feedback without actually deploying your Bicep template. Validation is a good practice because if you deploy a Bicep file that isn't valid, Azure might deploy or change only a subset of the resources described in your template. A partial deployment could mean that the state of your environment is inconsistent and might not behave the way you expect.
 
