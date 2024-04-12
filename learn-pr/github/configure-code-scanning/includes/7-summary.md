@@ -1,4 +1,4 @@
-In this module, you learned how to enable and configure code scanning for your repository. Code scanning works with the integrated GitHub CodeQL action or with third party tools. It can be scheduled or triggered based on specific events, which saves time and ensures your code stays free of errors and security vulnerabilities. Without code scanning, you'd need to manually verify the code base, which can take a lot of time and has a higher potential for mistakes. Code scanning alerts you of any problems and lets you review these issues in a single location. 
+In this module, you learned how to enable and configure code scanning for your repository. Code scanning works with the integrated GitHub CodeQL action or with third party tools. You can schedule or trigger it based on specific events, saving time and ensuring your code stays free of errors and security vulnerabilities. Without code scanning, you'd need to manually verify the code base, which can take a lot of time and has a higher potential for mistakes. Code scanning alerts you of any problems and lets you review these issues in a single location. 
 
 ## Learn More
 
