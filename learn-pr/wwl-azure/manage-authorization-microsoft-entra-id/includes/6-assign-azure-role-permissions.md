@@ -33,8 +33,10 @@ The following shows an example resource group.
     :::image type="content" source="../media/resource-group-access-control-a5addda3.png" alt-text="Screenshot showing an example of the Identity and Access Management controls in the Azure portal.":::
     
 2.  Click the **Role assignments** tab to view the role assignments at this scope.
-3.  Click **Add** &gt; **Add role assignment**. If you don't have permissions to assign roles, the Add role assignment option will be disabled.
-4.  :::image type="content" source="../media/add-role-assignment-menu-example-f69cae06.png" alt-text="Screenshot showing an example of how to add role assignments.":::
+3.  Click **Add** &gt; **Add role assignment**.
+4.  If you don't have permissions to assign roles, the Add role assignment option will be disabled.
+    
+    :::image type="content" source="../media/add-role-assignment-menu-example-f69cae06.png" alt-text="Screenshot showing an example of how to add role assignments.":::
     
 
 ## Step 3: Select the appropriate role<br>
