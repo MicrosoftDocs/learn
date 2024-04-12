@@ -77,7 +77,7 @@ When you use a custom linter configuration, Bicep writes log data that GitHub Ac
 
    :::code language="yaml" source="code/5-workflow.yml" highlight="14, 18-42, 46, 58" :::
 
-   If it doesn't, update it to match this example, and then save it.
+   If your file looks different, update it to match this example, and then save it.
 
 1. Commit and push your changes to your Git repository by running the following commands in the Visual Studio Code terminal:
 
@@ -89,7 +89,7 @@ When you use a custom linter configuration, Bicep writes log data that GitHub Ac
 
 1. This commit is the first time you pushed to this repository, so you might be prompted to sign in.
 
-   On Windows, type <kbd>1</kbd> to authenticate using a web browser, and select <kbd>Enter</kbd>.
+   On Windows, type *1* to authenticate using a web browser, and select **Enter**.
 
    On macOS, select **Authorize**.
 
