@@ -24,7 +24,7 @@ Accessibility Checker can automatically identify any issues that might make your
 
      :::image type="content" source="../media/6-3-suggestions.png" alt-text="Screenshot showing how to select an issue in the Accessibility Checker list and review suggestions.":::
 
-### **Handle accessibility ‘as you go’ with Accessibility Assistant** 
+**Handle accessibility ‘as you go’ with Accessibility Assistant** 
 
 The [Accessibility Assistant in Microsoft 365](https://www.microsoft.com/en-us/microsoft-365/blog/2023/03/08/create-inclusive-content-with-the-new-accessibility-assistant-in-microsoft-365/) is a powerful set of tools that will help creators produce more accessible content with less effort—within your natural flow of work – flagging issues as they occur and providing simple fixes ‘in the moment.’ This workflow helps creators avoid getting to the end of a project only to find a huge list of issues that’ll take time and energy to fix.
 
