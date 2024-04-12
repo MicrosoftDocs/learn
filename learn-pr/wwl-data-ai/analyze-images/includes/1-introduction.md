@@ -6,5 +6,5 @@ After completing this module, you’ll be able to:
 
 - Provision an Azure AI Vision resource.
 - Analyze an image.
-- Generate a matte background.
+- Remove an image background.
 - Generate a smart cropped thumbnail.
