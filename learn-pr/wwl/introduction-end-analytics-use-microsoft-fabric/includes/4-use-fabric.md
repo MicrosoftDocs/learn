@@ -4,16 +4,16 @@ Before you can explore the end-to-end capabilities of Microsoft Fabric, it must 
 - *Power Platform admin*
 - *Microsoft 365 admin*
 
-Fabric can be enabled at the tenant level or capacity level, meaning that it can be enabled for the entire organization or for specific groups of users. If you don't have access to Fabric, contact your Fabric administrator to find out if it's available to you. Note that the Fabric administrator is a new role as of June 2023. This was formerly the Power BI administrator role.
+Fabric can be enabled at the tenant level or capacity level, meaning that it can be enabled for the entire organization or for specific groups of users. If you don't have access to Fabric, contact your Fabric administrator to find out if it's available to you. The Fabric administrator is a new role as of June 2023. This role was formerly the Power BI administrator role.
 
 > [!IMPORTANT]
 > You'll need a trial license to use Fabric. See [Get a trial license](/fabric/get-started/fabric-trial) for more information.
 
 ## Check your access
 
-If you'd like to check to see if you have access to Fabric in your organization's tenant, sign-in to Power BI and look for the **Power BI icon** in the bottom of the left navigation pane. If you see the Power BI icon, select to see the experiences available within Fabric. If the icon isn't present, Fabric is not available to you.
+To verify if Fabric is enabled in your Power BI tenant, select the workload switcher at the bottom of the left navigation pane. If you only see Power BI in the workload switcher, then Fabric isn't currently available to you.  
 
-![Screenshot of Power BI interface with the Power BI icon highlighted in the bottom left corner of the user interface.](../media/check-fabric-access.png)
+![Screenshot of Power BI interface with the Power BI icon highlighted in the bottom left corner of the user interface with Fabric workloads visible.](../media/check-fabric-access.png)
 
 > [!NOTE]
 > To find out if Fabric is available to you, contact your Fabric administrator. For more information about how admins can enable Fabric, see [Enable Microsoft Fabric for your organization](/fabric/admin/fabric-switch).
@@ -39,7 +39,7 @@ Workspaces must be in Premium capacity to use Fabric. If you don't have access t
 
 ## Create resources in Fabric
 
-After you've created your Fabric enabled workspace, you can start creating resources in Fabric. You can create resources in Fabric using the **Create** menu in the upper left corner of the Power BI service.
+After you create your Fabric enabled workspace, you can start creating resources in Fabric. You can create resources in Fabric using the **Create** menu in the upper left corner of the Power BI service.
 
 ![Screenshot of the Power BI service with the Create menu highlighted in the upper left corner of the user interface.](../media/fabric-create.png)
 
