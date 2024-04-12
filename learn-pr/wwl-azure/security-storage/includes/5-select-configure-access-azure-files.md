@@ -81,6 +81,6 @@ To update this setting for an existing storage account, follow these steps:
 1.  Navigate to the storage account overview in the Azure portal.
 2.  Under **Settings**, select **Configuration**.
     
-    :::image type="content" source="../media/default-authorization-account-create-page-2bca5752.png" alt-text="Screenshot showing the default athentication account create page.":::
+    :::image type="content" source="../media/default-authorization-account-create-page-2bca5752.png" alt-text="Screenshot showing the default authentication account create page.":::
     
 3.  Set **Default to Microsoft Entra authorization** in the **Azure portal** to **Enabled**.

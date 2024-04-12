@@ -72,7 +72,7 @@ Use the HSM Vendor provided BYOK tool to create a key transfer blob (stored as a
 
 ### Key Transfer Blob
 
-Long term, Microsoft would like to use PKCS\#11 CKM\_RSA\_AES\_KEY\_WRAP mechanism to transfer the target key to Azure Key Vault since this mechanism produces a single blob and, more importantly, the intermediate AES key is handled by the two HSMs and is guaranteed to be ephemeral. This mechanism is not presently available in some HSMs but the combination of protecting the target key with CKM\_AES\_KEY\_WRAP\_PAD using an AES key and protecting the AES key with CKM\_RSA\_PKCS\_OAEP produces an equivalent blob.
+Long term, Microsoft would like to use PKCS\#11 CKM\_RSA\_AES\_KEY\_WRAP mechanism to transfer the target key to Azure Key Vault since this mechanism produces a single blob and, more importantly, the intermediate AES key is handled by the two HSMs and is guaranteed to be ephemeral. This mechanism isn't presently available in some HSMs but the combination of protecting the target key with CKM\_AES\_KEY\_WRAP\_PAD using an AES key and protecting the AES key with CKM\_RSA\_PKCS\_OAEP produces an equivalent blob.
 
 The target key plaintext depends on the key type:
 
