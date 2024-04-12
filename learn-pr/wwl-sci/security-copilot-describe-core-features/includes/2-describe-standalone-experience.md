@@ -142,4 +142,4 @@ By selecting the help icon, you can link to documentation, or if you encounter i
 
 ***Submit a support case to the Microsoft support team***. To open support cases, you must have, at a minimum, a Service Support Administrator OR Helpdesk Administrator role. You can also view your support history.
 
-:::image type="content" source="../media/contact-support-tab.png" lightbox="../media/contact-support-tab.png" alt-text="Screen capture showing the self-help prompt bar and articles related to the entered prompt.":::
+:::image type="content" source="../media/contact-support-tab.png" lightbox="../media/contact-support-tab.png" alt-text="Screen capture showing the form to get support from an agent.":::
