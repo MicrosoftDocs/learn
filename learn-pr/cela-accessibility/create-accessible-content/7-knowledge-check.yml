@@ -16,7 +16,7 @@ quiz:
   questions: 
   - content: "What is the purpose of alt text for images in a document?"
     choices:
-    - content: "To provide a description of the image for people who use screen readers or have low vision"
+    - content: "To provide a description of the image for people who use screen readers or have low vision."
       isCorrect: true
       explanation: "Correct. Adding a description allows people using screen readers to understand the meaning and context of the image."
     - content: "To provide a caption for the image that appears below it."

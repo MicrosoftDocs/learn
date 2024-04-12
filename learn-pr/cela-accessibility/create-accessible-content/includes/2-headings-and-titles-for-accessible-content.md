@@ -1,8 +1,8 @@
-When creating your content, you’ll want to provide an overview and context for the content you share. Headings and titles make text stand out, so people can understand how your document is organized, and screen readers can understand navigational structure. 
+When creating your content, you'll want to provide an overview and context for the content you share. Headings and titles make text stand out, so people can understand how your document is organized, and screen readers can understand navigational structure. 
 
 People using screen readers and other assistive technologies may navigate your content by using keyboard shortcuts to move from heading to heading. A title is usually the first thing a screen reader will read as the highest-level heading, followed by subheadings for other sections or topics. 
 
-Here’s how to apply headings in Word, PowerPoint, and Outlook.
+Here's how to apply headings in Word, PowerPoint, and Outlook.
 
 - **Exercise – Apply headings in Word**
 
