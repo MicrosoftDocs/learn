@@ -50,7 +50,7 @@ quiz:
     - content: "Standard service level with a 75-TiB regular volume size."
       isCorrect: false
       explanation: "This configuration can't meet throughput requirements."
-    - content: "Premium service level with a 100-TiB large volume size."
+    - content: "Premium service level with a 50-TiB large volume size."
       isCorrect: true
       explanation: "This configuration meets throughput requirements with the lowest capacity pool cost."
     - content: "Ultra service level with a 100-TiB large volume size."
