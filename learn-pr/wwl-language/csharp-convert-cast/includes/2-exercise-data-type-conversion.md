@@ -229,11 +229,11 @@ If you're unsure whether you lose data in the conversion, write code to perform 
 
 1. Save your code file, and then use Visual Studio Code to run your code.
 
-    You should see the following output:
+    You should see output similar to:
 
     ```Output
     Decimal: 1.23456789
-    Float:   1.234568
+    Float  : 1.2345679
     ```
 
     You can observe from the output that casting a `decimal` into a `float` is a narrowing conversion because you're losing precision.
