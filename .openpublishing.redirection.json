@@ -36170,6 +36170,11 @@
       "source_path": "learn-pr/wwl-azure/governance-security/9-configure-cryptographic-key-auto-rotation-azure-key-vault.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/governance-security/12-configure-cryptographic-key-auto-rotation-azure-key-vault",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/empower-workforce-copilot-use-cases/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
