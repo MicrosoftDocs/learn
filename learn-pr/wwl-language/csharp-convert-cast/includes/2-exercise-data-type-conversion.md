@@ -350,7 +350,7 @@ The following example demonstrates what happens when you attempt to cast a `deci
 
 ### Casting truncates and converting rounds
 
-When you're casting `int value = (int)1.5m;`, the value of the float is truncated so the result is `1`, meaning the value after the decimal is ignored completely. you could change the literal float to `1.999m` and the result of casting would be the same.
+When you're casting `int value = (int)1.5m;`, the value of the float is truncated so the result is `1`, meaning the value after the decimal is ignored completely. You could change the literal float to `1.999m` and the result of casting would be the same.
 
 When you're converting using `Convert.ToInt32()`, the literal float value is properly rounded up to `2`. If you changed the literal value to `1.499m`, it would be rounded down to `1`.
 
