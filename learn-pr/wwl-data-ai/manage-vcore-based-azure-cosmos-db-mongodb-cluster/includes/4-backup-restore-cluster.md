@@ -1,12 +1,12 @@
 Azure Cosmos DB for MongoDB vCore includes an automatic backup feature that enables point-in-time recovery (PITR) of your data. This feature is crucial for restoring your database to any specific moment within a defined retention period.
 
-## Backup process
+## Explore the backup process
 
 Backups in vCore-based Azure Cosmos DB for MongoDB are handled automatically and continuously without impacting the database performance. These backups are encrypted using AES (Advanced Encryption Standard) 256-bit encryption to ensure data security. The backups are retained for up to 35 days for active clusters and 7 days for deleted clusters.
 
 In Azure regions that support availability zones, backup snapshots are stored in three zones. This redundancy ensures that, as long as one availability zone remains operational, your cluster can be restored.
 
-## Restore process
+## Explore the restore process
 
 The restore process requires initiating a *support request* with Azure. When a backup is restored, the restore creates a new cluster with the same configuration in the same Azure region, subscription, and resource group.
 

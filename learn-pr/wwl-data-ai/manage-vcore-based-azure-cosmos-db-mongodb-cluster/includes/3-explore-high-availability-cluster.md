@@ -1,6 +1,6 @@
 High availability is key to ensuring your vCore-based Azure Cosmos DB for MongoDB operates smoothly, particularly in handling disruptions from events like earthquakes, floods, fires, or hardware failures. By using redundancy and logical isolation of Azure services, high availability helps maintain continuous operation across different regions.
 
-## Availability zone support
+## Understand availability zone support
 
 Azure availability zones are at least three physically separate groups of datacenters within each Azure region. Azure availability zone-enabled services can be configured in two ways:
 
@@ -9,7 +9,7 @@ Azure availability zones are at least three physically separate groups of datace
 
 You must enable the vCore-based Azure Cosmos DB for MongoDB's *high availability* setting to support availability zones.
 
-## High availability and disaster recovery
+## Implement high availability and disaster recovery
 
 Activating high availability maintains standby replicas of data shards. If a primary shard fails, the system redirects operations to a standby replica in another zone, minimizing downtime. Without high availability, each shard uses locally redundant storage (LRS) with three synchronous replicas in one zone, risking downtime during regional failures.
 

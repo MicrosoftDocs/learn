@@ -1,6 +1,6 @@
 Monitoring your vCore-based Azure Cosmos DB for MongoDB helps maintain its health and performance. Azure Monitor, combined with either an Azure Log Analytics workspace or an Azure Storage account, allows you to capture and store diagnostic logs that provide clarity on your database operations.
 
-## Use Azure Monitor with Azure Log Analytics or Azure Storage
+## Utilize Azure Monitor with Azure Log Analytics or Azure Storage
 
 Azure Log Analytics workspace and Azure Storage account provide different benefits for monitoring your vCore-based Azure Cosmos DB for MongoDB:
 
@@ -14,21 +14,21 @@ Azure Log Analytics workspace and Azure Storage account provide different benefi
 - Securely storing logs for extended periods, supporting compliance, and historical analysis.
 - Accessing historical data to analyze performance trends and conduct audits.
 
-## Monitoring with Azure Monitor
+## Monitor cluster with Azure Monitor
 
 Azure Monitor's diagnostic logs detail the operations within your vCore-based Azure Cosmos DB for MongoDB. These logs are instrumental for:
 
 - Tracking requests and analyzing performance metrics.
 - Identifying and resolving operational or performance anomalies.
 
-## Utilizing Diagnostic Logs
+## Utilize diagnostic logs
 
 With either a Log Analytics workspace or an Azure Storage account setup, you can configure diagnostic settings to channel logs to these services, enabling you to:
 
 - Continuously monitor and maintain the performance and health of your vCore-based Azure Cosmos DB for MongoDB cluster.
 - Proactively respond to changes in database behavior and usage patterns.
 
-### Examples of Monitoring with Kusto Queries
+### Explore Kusto monitor queries
 
 Use Kusto Query Language (KQL) within the Log Analytics workspace for thorough analysis. You can run these queries in the Azure portal on the cluster's *Monitoring* **Logs** page.
 
@@ -36,7 +36,7 @@ Use Kusto Query Language (KQL) within the Log Analytics workspace for thorough a
 
 Let's review some example KQL queries:
 
-1. **Count of Failed Requests by Error Code**:
+1. **Count of failed requests by error code**:
 
     ```kusto
     VCoreMongoRequests
@@ -44,14 +44,14 @@ Let's review some example KQL queries:
     | summarize count() by bin(TimeGenerated, 5m), ErrorCode=tostring(ErrorCode)
     ```
 
-1. **API Requests Performance**:
+1. **API requests performance**:
 
     ```kusto
     VCoreMongoRequests
     | summarize percentile(DurationMs, 99) by bin(TimeGenerated, 1h), OperationName
     ```
 
-1. **Distribution of Requests by User Agent**:
+1. **Distribution of requests by user agent**:
 
     ```kusto
     VCoreMongoRequests

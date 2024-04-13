@@ -1,6 +1,6 @@
 This unit explores the importance of scaling and configuring your vCore-based Azure Cosmos DB for MongoDB cluster to adapt to both increasing and decreasing demands. Adjusting your database infrastructure is essential to ensure it continues to perform well under varying workloads.
 
-## Assess when to scale your cluster
+## Determine when to scale your cluster
 
 Scaling your cluster is essential for maintaining performance and accommodating the growth of your applications:
 
