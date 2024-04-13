@@ -2,7 +2,7 @@
 uid: learn.wwl.manage-vcore-based-azure-cosmos-db-mongodb-cluster
 metadata:
   title: Manage a vCore-based Azure Cosmos DB for MongoDB cluster
-  description: "Manage a vCore-based Azure Cosmos DB for MongoDB cluster"
+  description: "Manage a vCore-based Azure Cosmos DB for MongoDB cluster."
   ms.date: 04/12/2024
   author: wwlpublish
   ms.author: calopez
@@ -11,13 +11,13 @@ metadata:
   ms.subservice: mongodb-vcore
   ai-usage: human-only
 title: Manage a vCore-based Azure Cosmos DB for MongoDB cluster
-summary: In this module you'll learn to manage a vCore-based Azure Cosmos DB for MongoDB clusters by focusing on scaling, high availability, backup/restoration processes, and diagnostics monitoring.
+summary: In this module, you learn to manage a vCore-based Azure Cosmos DB for MongoDB clusters by focusing on scaling, high availability, backup/restoration processes, and diagnostics monitoring.
 abstract: |
   -   Explore strategies for scaling a vCore-based Azure Cosmos DB for MongoDB clusters, adjusting cluster tiers and storage sizes.
   -   Set up and manage high availability to ensure minimal downtime in clusters.
   -   Learn the backup and restore process, with point-in-time recovery features.
   -   Monitor and diagnose clusters using Azure Monitor, including managing diagnostic settings and queries.
-prerequisites: Before starting this module, you should be familiar with the Azure Portal.
+prerequisites: Before starting this module, you should be familiar with the Azure portal.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

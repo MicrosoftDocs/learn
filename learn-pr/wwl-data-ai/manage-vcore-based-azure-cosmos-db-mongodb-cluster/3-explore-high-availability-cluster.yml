@@ -3,7 +3,7 @@ uid: learn.wwl.manage-vcore-based-azure-cosmos-db-mongodb-cluster.explore-high-a
 title: Explore high availability in a vCore-based Azure Cosmos DB for MongoDB cluster
 metadata:
   title: Explore high availability in a Azure Cosmos DB for MongoDB cluster
-  description: "Explore high availability in a vCore-based Azure Cosmos DB for MongoDB cluster"
+  description: "Explore high availability in a vCore-based Azure Cosmos DB for MongoDB cluster."
   ms.date: 04/12/2024
   author: wwlpublish
   ms.author: calopez

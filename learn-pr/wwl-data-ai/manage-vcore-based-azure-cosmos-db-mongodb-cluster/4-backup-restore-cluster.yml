@@ -3,7 +3,7 @@ uid: learn.wwl.manage-vcore-based-azure-cosmos-db-mongodb-cluster.backup-restore
 title: Backup and restore a vCore-based Azure Cosmos DB for MongoDB cluster
 metadata:
   title: Backup and restore a vCore-based Azure Cosmos DB for MongoDB cluster
-  description: "Backup and restore a vCore-based Azure Cosmos DB for MongoDB cluster"
+  description: "Backup and restore a vCore-based Azure Cosmos DB for MongoDB cluster."
   ms.date: 04/12/2024
   author: wwlpublish
   ms.author: calopez

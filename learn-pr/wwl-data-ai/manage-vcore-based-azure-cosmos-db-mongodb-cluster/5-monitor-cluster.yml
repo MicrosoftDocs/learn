@@ -3,7 +3,7 @@ uid: learn.wwl.manage-vcore-based-azure-cosmos-db-mongodb-cluster.monitor-cluste
 title: Monitor a vCore-based Azure Cosmos DB for MongoDB cluster
 metadata:
   title: Monitor a vCore-based Azure Cosmos DB for MongoDB cluster
-  description: "Monitor a vCore-based Azure Cosmos DB for MongoDB cluster"
+  description: "Monitor a vCore-based Azure Cosmos DB for MongoDB cluster."
   ms.date: 04/12/2024
   author: wwlpublish
   ms.author: calopez
