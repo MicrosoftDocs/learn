@@ -58,6 +58,6 @@ Let's review some example KQL queries:
     | summarize count() by bin(TimeGenerated, 1h), UserAgent
     ```
 
-These queries provide actionable insights, helping you to optimize operations and troubleshoot issues effectively. For more information on the Kusto Query Language, review the [Kusto Query Language documentation](azure/data-explorer/kusto/query/).
+These queries provide actionable insights, helping you to optimize operations and troubleshoot issues effectively. For more information on the Kusto Query Language, review the [Kusto Query Language documentation](/azure/data-explorer/kusto/query/).
 
 Effective monitoring is crucial for managing your vCore-based Azure Cosmos DB for MongoDB. Using Azure Monitor helps ensure your database runs efficiently. Setting up diagnostic logs through Azure Log Analytics or Azure Storage allows you to maintain optimal performance.
