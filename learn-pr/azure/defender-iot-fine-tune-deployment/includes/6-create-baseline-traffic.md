@@ -29,14 +29,14 @@ In Defender for IoT, select the **Alerts** page that lists all of the alerts gen
 
     :::image type="content" source="../media/alerts-main-group-by.png" alt-text="Screenshot of the alerts screen filtering with group by setting" lightbox="../media/alerts-main-group-by.png":::
     OR
-    :::image type="content" source="../media/6-alerts-main-group-by.png" alt-text="Screenshot of the alerts screen filtering with group by setting with box" lightbox="../media/6-alerts-main-group-by.png":::
+    :::image type="content" source="../media/6-alerts-main-group-by-box.png" alt-text="Screenshot of the alerts screen filtering with group by setting with box" lightbox="../media/6-alerts-main-group-by-box.png":::
 
 1. Select an alert and the details appear in the alert pane, including the alert description, traffic source, traffic destination and more.
 1. To analyze the alert in greater detail, select **View full details**. Choosing multiple alerts allows you to make bulk changes to the status, severity, or learn levels using the alerts menu bar.<!-- does this have another name? LW--> <!-- Should bulk changes be placed lower down the article, because it is about making changes, we havent spoken about that yet!! but it is also here with choosing the number of alerts!!! - LW-->
 
 :::image type="content" source="../media/alerts-main-bulk-status.png" alt-text="Screenshot of the alerts screen making a bulk status change" lightbox="../media/alerts-main-bulk-status.png":::
 OR
-:::image type="content" source="../media/6-alerts-main-bulk-status.png" alt-text="Screenshot of the alerts screen making a bulk status change with box" lightbox="../media/6-alerts-main-bulk-status.png":::
+:::image type="content" source="../media/6-alerts-main-bulk-status-boxed.png" alt-text="Screenshot of the alerts screen making a bulk status change with box" lightbox="../media/6-alerts-main-bulk-status-boxed.png":::
 
 ### Analyze an alert
 
