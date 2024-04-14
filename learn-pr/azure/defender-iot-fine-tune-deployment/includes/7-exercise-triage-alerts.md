@@ -15,7 +15,7 @@ First, identify which alerts are important to triage.
 
 The **Alerts** page provides more details about an alert.
 
-1. Using the **Alert details** tab and the other information, analyze the alert and decide if it requires a security response or if this is normal network traffic.
+1. Using the **Alert details** tab and the other information, analyze the alert and decide if it requires a security response or if the alert is normal network traffic.
 1. The **Take action** tab lists the remediation steps or options needed to fix the problem. Choose which steps to follow depending on your analysis of the alert.
     For example:
 

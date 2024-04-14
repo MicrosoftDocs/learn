@@ -8,13 +8,13 @@ In some cases, the device map produced needs to be corrected. You might need to 
 
 ## Calibration
 
-Once your OT sensor is receiving data, make an initial check to see that the sensor has identified each device with the correct subnet. This is called calibration. In the **Deployment** section of the OT sensor run the **Analyze** feature. When the analysis is complete, check the information. If the information isn't what you expected, you need to check the subnet and device settings and make any changes needed.
+Once your OT sensor is receiving data, make an initial check to see that the sensor identifies each device with the correct subnet, this is called calibration. In the **Deployment** section of the OT sensor run the **Analyze** feature. When the analysis is complete, check the information. If the information isn't what you expect, check the subnet and device settings and make any changes to the settings.
 
-In a real life scenario, this could be caused by incorrect span configuration, which should be reported to the connection team. However, this is outside the scope of the learn module.<!-- keep this or remove? LW -->
+In a real life scenario, incorrect subnet settings could be due to incorrect span configuration, which should be reported to the connection team. However, this is outside the scope of the learn module.<!-- keep this or remove? LW -->
 
 ## Fine tuning
 
-Now that you have a calibrated sensor, you need to check the information and fine tune any items that the sensor has misidentified, such as the device details, or which subnet a device is connected to.  
+Now that the sensor is calibrated, check the data and fine tune any items that the sensor has misidentified, such as the device details, or which subnet a device is connected to.  
 
 ### Check and modify the subnet settings
 
@@ -38,8 +38,8 @@ Check the device details in the **Device inventory**. You might need to make som
 |----|----|
 |**Merge devices** | In some cases, a device might be listed more than once. This could happen when a device has two or more connectors to the sensor, for example a laptop with both Wifi and a physical network card. In such a situation, you need to merge them together, using the **Merge** option in the **Device inventory** page. The new merged device listing contains all of the data from both merged devices.|
 |**Important devices**| Devices can also be assigned as *Important*, which gives the device a greater security rating for features such as running an Attack vector or Risk assessment. So that the device is considered more important than other devices for these reports.<br><br>The *Important* setting is also useful to differentiate between similar types of devices, where some of the devices are important to your system, but the others aren't. For example, if you have a vital cooling system and a set of air conditioning units, only set the cooling system as *important*.<br><br>The device appears in the device map with a star on it.|
-|**Check public IP addresses**| It's important to identify any public IP addresses that are used internally. These IP addresses must be added as a seperate subnet within the Subnet settings. If a public IP address isn't listed, the sensor treats it as a public network for security settings.|
-|**Schedule DNS lookup**| Enhance device data enrichment by configuring multiple DNS servers to carryout reverse lookups and resolve host names or FQDNs associated with the IP addresses detected in network subnets. You will need the DNS server address, server port and the subnet addresses.|
-|**DHCP address ranges**| Devices with an IP address allocated by a DHCP server, which change dynamically, must define the range of IP addresses. This is an important step, which can affect the way your data is assessed for security risks. When the device IP address changes dynamically the device is logged as a new device, which might give misleading information about your system.|
+|**Check public IP addresses**| It's important to identify any public IP addresses that are used internally. These IP addresses must be added as a separate subnet within the Subnet settings. If a public IP address isn't listed, the sensor treats it as a public network for security settings.|
+|**Schedule DNS lookup**| Enhance device data enrichment by configuring multiple DNS servers to carryout reverse lookups and resolve host names or FQDNs associated with the IP addresses detected in network subnets. You need the DNS server address, server port and the subnet addresses.|
+|**DHCP address ranges**| Devices with an IP address allocated by a DHCP server, which changes dynamically, must define the range of IP addresses. This is an important step, which can affect the way your data is assessed for security risks. When the device IP address changes dynamically the device is logged as a new device, which might give misleading information about your system.|
 
-When you have checked and updated the devices the fine tuning phase is complete.
+After checking and updating the devices the fine tuning phase is complete.

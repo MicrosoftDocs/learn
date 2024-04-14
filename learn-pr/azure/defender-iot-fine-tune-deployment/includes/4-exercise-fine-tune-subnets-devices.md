@@ -1,5 +1,5 @@
 Your sensor now sends data to Microsoft Defender for IoT. You need to check that the devices are recognized and configured correctly in the Operational Technology (OT) sensor software. The sensor initially scans the entire network and tries to identify where all of the devices should be located within the Purdue levels.
-The following exercises show all of the stages of fine tuning your sensor. Depending on the data available in your system you might only be able to do some of these exercises but not all of them.
+The following exercises show all of the stages of fine tuning your sensor. Depending on the data available in your system, you might only be able to do some of these exercises but not all of them.
 
 ## View the subnets detected by your sensor
 
@@ -75,7 +75,7 @@ Assign a unique device as **Important**. In the **Device map**:
 1. Toggle **Enable**
 1. DEfine the time interval, either:
     1. In the **Schedule Reverse Lookup**, define the time interval for your scan by typing a number in the second box. 
-    1. Or select **By specific time** and type the time in 24hr format
+    1. Or select **By specific time** and type the time in 24 hr format
 1. Select **Add DNS server**
 1. Type the **DNS server address**, **DNS server port** and **Subnets** details
 1. Select **Save**
@@ -83,7 +83,7 @@ Assign a unique device as **Important**. In the **Device map**:
 
 ## Add DHCP address ranges
 
-For a device which automatically refreshes its IP address, add the DHCP address ranges for that device.
+For a device that automatically refreshes its IP address, add the DHCP address ranges for that device.
 
 1. Select **System setting** > **DHCP ranges**
 1. Select **Add range**

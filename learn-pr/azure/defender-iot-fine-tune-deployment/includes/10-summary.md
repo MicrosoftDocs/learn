@@ -5,9 +5,10 @@ In this module, you learned how to fine-tune, calibrate, and triage the alerts t
 - How to update device information and merge devices.
 - How to check public IP addresses and assign the IP addresses for DHCP ranges.
 - How to triage alerts to create an alert baseline.
-- How to analyze the alert details
+- How to analyze the alert details.
 - How to follow the Take Action instructions and to update the alert status and severity levels.
 - How to create a suppression rule.
+- How to change from learning mode to operational mode.
 
 The learn module is now complete and you know all the stages for deploying a new Operational Technology sensor to Defender for IoT on the Azure portal.<!-- write anything else??-->  
 <!-- what links should go below? -->

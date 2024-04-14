@@ -12,7 +12,7 @@ The OT sensor is activated and the devices are now mirroring data to the sensor.
 
 In this module, you'll:
 
-- Calibrate the sensor using the Analyze feature to detech the subnets and devices
+- Calibrate the sensor using the Analyze feature to detect the subnets and devices
 - Fine-tune the defined subnets by reviewing the subnets detected by your sensor and updating the subnet data to match your network
 - Fine-tune the devices by reviewing the detected devices and updating the details for selected devices
 - Create a baseline of OT network traffic by triaging alerts and adding them to your network baseline
