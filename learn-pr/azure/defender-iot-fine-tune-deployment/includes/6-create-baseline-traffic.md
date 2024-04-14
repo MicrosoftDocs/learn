@@ -1,6 +1,6 @@
 Your car manufacturing organization has offices and production sites across the globe, with a network linking them together. A sensor at one site is connected and sending data to Microsoft Defender for IoT. The deployment team has already fine-tuned the sensor settings ensuring that all the devices are correctly identified. Now your task is to set up the alert baseline to ensure that normal traffic doesn't trigger alerts within the system and instead only reports suspicious activity. Checking and updating the alerts is called the triage process.
 
-Defender for IoT is automatically set to *Learning* mode as soon as it starts to receive data from the sensor. In this mode, Defender for IoT starts building a baseline of alerts to help identify suspicious network traffic that might affect the security of your devices. When suspicious traffic is identified Defender for IoT creates an alert. During the *learning* mode, you need to check all of the alerts and confirm if the traffic is potentially dangerous. If the traffic is normal network traffic assign the *learn* status and the sensor will learn not to flag this type of traffic in the future.
+Defender for IoT is automatically set to *Learning* mode as soon as it starts to receive data from the sensor. In this mode, Defender for IoT starts building a baseline of alerts to help identify suspicious network traffic that might affect the security of your devices. When suspicious traffic is identified Defender for IoT creates an alert. During the *learning* mode, you need to check all of the alerts and confirm if the traffic is potentially dangerous. If the traffic is normal network traffic assign the *learn* status, and the sensor will learn not to flag this type of traffic in the future.
 
 ## Creating the alerts baseline
 
@@ -43,17 +43,17 @@ OR
 Alerts are categorized according to the type of security problem identified. These categories are called **Names** in the alerts page.
 <!-- i think it is better for this to be written as a paragraph and not as a list, as this is the descriptive page, not the list of the exercise. -->
 - Analyze the alert in greater depth in the **Alert full details** page, which has two tabs, the **Alerts details** and the **Take action** tab.
-- When you view the alert details page there is also a list of recommended steps to take to deal with the alert, which differ based on the alert. These are called **Remediation steps** and are found in the **Take action** tab.
+- When you view the alert details page there's also a list of recommended steps to take to deal with the alert, which differ based on the alert. These are called **Remediation steps** and are found in the **Take action** tab.
 - Some of the **Remediation steps** can be done immediately and directly in Defender for IoT. While others need you to check aspects of your system, and then update the alert another time.
-- Remediation steps can sometimes involve a list of multiple actions that must all be done, or sometimes a choice of options are listed where only one can be done.
+- Remediation steps can sometimes involve a list of multiple actions that must all be done, or sometimes a choice of options is listed where only one can be done.
 
 You can also download the PCAP files of the raw traffic data and analyze them using a PCAP file reader, which might also give you more information about the alert. This is outside the scope of this module.
 
 ### Update alerts
 
-After following the remediation steps, if available for the alert, you have the option to **Select Learn**.
+After following the remediation steps, if available for the alert, you can **Select Learn**.
 
-You will choose **Learn** for an alert triggered by normal network traffic that you want to add to the alert baseline so that you aren't alerted the next time this type of network traffic is detected. For example, when the sensor detects firmware version changes following standard maintenance procedures, or when a new, expected device is added to the network. Learning an alert closes the alert and adds an item to the sensor event timeline. Learning alerts is available for selected alerts only, mostly alerts triggered by *Policy* and *Anomaly* engine alerts.
+You'll choose **Learn** for an alert triggered by normal network traffic that you want to add to the alert baseline so that you aren't alerted the next time this type of network traffic is detected. For example, when the sensor detects firmware version changes following standard maintenance procedures, or when a new, expected device is added to the network. Learning an alert closes the alert and adds an item to the sensor event timeline. Learning alerts is available for selected alerts only, mostly alerts triggered by *Policy* and *Anomaly* engine alerts.
 
 Then update the **severity** or **status** levels, which are automatically set when the alert is created and might now need changing.
 
@@ -79,9 +79,9 @@ You use the following descriptions to update the severity level:
 | **Medium**  |  Indicates a security threat that's important to address.        |
 | **Low**     |  Indicates some deviation from the baseline behavior that might contain a security threat, or contains no security threats.        |
 
-**Suppression rules** help you filter out unwanted alerts, either permanantly or for a limited time period, so that they will not appear in the **Alerts** list even if they are triggered. This feature allows you to focus on dealing with more important alerts and not seeing minor ones.
+**Suppression rules** help you filter out unwanted alerts, either permanently or for a limited time period, so that they won't appear in the **Alerts** list even if they're triggered. This feature allows you to focus on dealing with more important alerts and not seeing minor ones.
 
-To create a suppression rule you need to assign a name, a time range for it, and choose which sensors the rule applies to. You can also apply a filter, based on IP address, MAC id, subnet or host address.
+To create a suppression rule you need to assign a name, a time range for it, and choose which sensors the rule applies to. You can also apply a filter, based on IP address, MAC id, subnet, or host address.
 
 ## Save changes
 
