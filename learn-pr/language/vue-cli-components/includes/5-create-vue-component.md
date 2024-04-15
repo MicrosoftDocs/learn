@@ -4,7 +4,7 @@ We want to create an application that allows a user to create bookings on a crui
 
 Visual Studio Code has numerous extensions in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vscode/?azure-portal=true) to help in your development endeavors. We'll take advantage of two:
 
-- [Vetur](https://marketplace.visualstudio.com/items/?itemName=octref.vetur&azure-portal=true) enables support for *.vue* files in Visual Studio Code.
+- [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) enables support for *.vue* files in Visual Studio Code.
 - [Vue VSCode Snippets](https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets&azure-portal=true) from Sarah Drasner enables snippets in Visual Studio Code.
 
 1. In Visual Studio Code, open the **Extensions** workbench.
@@ -12,7 +12,7 @@ Visual Studio Code has numerous extensions in the [Visual Studio Marketplace](ht
     ![Screenshot of the Extensions icon.](../media/extensions.png)
 
 1. Enter **Vue VSCode Snippets** in the search box.
-1. Select **Install** under **Vue VSCode Snippets** to install both Vue VSCode Snippets and Vetur.
+1. Select **Install** under **Vue VSCode Snippets** to install both Vue VSCode Snippets and Volar.
 
     ![Screenshot of search results for Vue VSCode Snippets.](../media/snippets.png)
 
