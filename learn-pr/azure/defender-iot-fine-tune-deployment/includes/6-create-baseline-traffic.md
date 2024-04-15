@@ -1,6 +1,6 @@
 Your car manufacturing organization has offices and production sites across the globe, with a network linking them together. A sensor at one site is connected and sending data to Microsoft Defender for IoT. The deployment team has already fine-tuned the sensor settings ensuring that all the devices are correctly identified. Now your task is to set up the alert baseline to ensure that normal traffic doesn't trigger alerts within the system and instead only reports suspicious activity. Checking and updating the alerts is called the triage process.
 
-Defender for IoT is automatically set to *Learning* mode as soon as it starts to receive data from the sensor. In this mode, Defender for IoT starts building a baseline of alerts to help identify suspicious network traffic that might affect the security of your devices. When suspicious traffic is identified Defender for IoT creates an alert. During the *learning* mode, you need to check all of the alerts and confirm if the traffic is potentially dangerous. If the traffic is normal network traffic assign the *learn* status, and the sensor will learn not to flag this type of traffic in the future.
+Defender for IoT is automatically set to *learning* mode as soon as it starts to receive data from the sensor. In this mode, Defender for IoT starts building a baseline of alerts to help identify suspicious network traffic that might affect the security of your devices. When suspicious traffic is identified Defender for IoT creates an alert. During the *learning* mode, you need to check all of the alerts and confirm if the traffic is potentially dangerous. If the traffic is normal network traffic assign the *learn* status, and the sensor will learn not to flag this type of traffic in the future.
 
 ## Creating the alerts baseline
 
@@ -80,4 +80,4 @@ To create a suppression rule you need to assign a name, a time range for it, and
 
 ## Save changes
 
-When you make these alert changes the baseline alerts are updated. As the learning process continues, you receive less new alerts as the sensor learns the normal flow of traffic in your system.
+When you make these alert changes the baseline alerts are updated. As the *learning* process continues, you receive less new alerts as the sensor learns the normal flow of traffic in your system.

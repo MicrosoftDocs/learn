@@ -11,15 +11,15 @@ Section 1 described the fifth phase in the deployment, *Calibrate and fine-tune*
 
 Section 2 describes the sixth phase in the deployment, *Baseline learning*, and deals with triaging the alerts. It includes these units:
 
-- Unit 5 describes the general overview of the baseline learning phase of the sensor deployment.
+- Unit 5 describes the general overview of the baseline *learning* mode of the sensor deployment.
 - Unit 6 describes the information and preparations you need to complete the exercise unit.
 - Unit 7 is the exercise unit to practice the alert triaging activities to create the baseline.
 
 ## Learning mode
 
-When the sensor first connects to Defender for IoT it enters the learning phase where the sensor learns the difference between suspicious, harmful network traffic and safe traffic, including regular file transfers or data flows between devices. So that when this suspicious network traffic is identified in the future, alerts are sent to Defender for IoT, and you're able to protect your devices.
+When the sensor first connects to Defender for IoT it enters *learning* mode where the sensor learns the difference between suspicious, harmful network traffic and safe traffic, including regular file transfers or data flows between devices. So that when this suspicious network traffic is identified in the future, alerts are sent to Defender for IoT, and you're able to protect your devices.
 
-In a real life scenario, the learning phase can continue for up to two weeks, and requires regularly, daily triage of the alerts.
+In a real life scenario, the *learning* mode can continue for up to two weeks, and requires regularly, daily triage of the alerts.
 
 ## In this phase
 
@@ -27,9 +27,9 @@ As the sensor monitors your network, it identifies traffic or file transfers tha
 
 ### Triage alerts
 
-Check each of the details of the new alerts listed in Defender for IoT. When you find an alert that is incorrect select the learn setting so that the sensor understands that this type of network traffic is safe. This specific alert configuration will be added to the baseline of normal network traffic and won't produce an alert in the future.
+Check each of the details of the new alerts listed in Defender for IoT. When you find an alert that is incorrect select the *learn* setting so that the sensor understands that this type of network traffic is safe. This specific alert configuration will be added to the baseline of normal network traffic and won't produce an alert in the future.
 
-The alert details pane has an actions taken tab where the learn setting button. It also lists other options and solutions for dealing with the alert, especially in a situation where harmful traffic generates the alert.
+The alert details pane has an **Actions taken** tab where the **Learn** setting button is. It also lists other options and solutions for dealing with the alert, especially in a situation where harmful traffic generates the alert.
 
 You might also want to assign a supression alert to exclude minor level alerts so that only important and severe level alerts appear on the **Alerts** page.
 
