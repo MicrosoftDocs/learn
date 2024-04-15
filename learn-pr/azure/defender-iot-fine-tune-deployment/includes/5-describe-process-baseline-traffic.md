@@ -4,7 +4,7 @@ Your sensor is now fine tuned and almost fully operational. The final stage is t
 
 The following diagram shows the complete OT deployment path, with the team responsible for each phase:
 
-:::image type="content" source="../media/5-ot-deploy.png" alt-text="Diagram of the complete OT deployment process" border="false":::
+:::image type="content" source="../media/5-ot-deploy.png" alt-text="Diagram of the complete OT deployment process." border="false":::
 This learn module is divided into two sections.
 
 Section 1 described the fifth phase in the deployment, *Calibrate and fine-tune*, and deals with calibrating and fine-tuning your sensor.
@@ -31,7 +31,7 @@ Check each of the details of the new alerts listed in Defender for IoT. When you
 
 The alert details pane has an **Actions taken** tab where the **Learn** setting button is. It also lists other options and solutions for dealing with the alert, especially in a situation where harmful traffic generates the alert.
 
-You might also want to assign a supression alert to exclude minor level alerts so that only important and severe level alerts appear on the **Alerts** page.
+You might also want to assign a suppression alert to exclude minor level alerts so that only important and severe level alerts appear on the **Alerts** page.
 
 ## Outcome
 

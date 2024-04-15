@@ -73,9 +73,9 @@ Assign a unique device as **Important**. In the **Device map**:
 
 1. Select **System setting** > **Network monitoring** > **Reverse DNS lookup**
 1. Toggle **Enable**
-1. DEfine the time interval, either:
-    1. In the **Schedule Reverse Lookup**, define the time interval for your scan by typing a number in the second box. 
-    1. Or select **By specific time** and type the time in 24 hr format
+1. Define the time interval, either:
+    - In the **Schedule Reverse Lookup**, define the time interval for your scan by typing a number in the second box.
+    - Or select **By specific time** and type the time in 24 hr format
 1. Select **Add DNS server**
 1. Type the **DNS server address**, **DNS server port** and **Subnets** details
 1. Select **Save**
@@ -91,7 +91,7 @@ For a device that automatically refreshes its IP address, add the DHCP address r
 1. Type a name
 1. Select **Save**
 
-:::image type="content" source="../media/4-dhcp-ranges.png" alt-text="Screenshot adding new DHCP ranges for changing IP addresses":::
+:::image type="content" source="../media/4-dhcp-ranges.png" alt-text="Screenshot adding new DHCP ranges for changing IP addresses.":::
 
 ## Check your work
 
