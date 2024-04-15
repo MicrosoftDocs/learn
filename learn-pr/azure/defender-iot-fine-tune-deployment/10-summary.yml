@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.defender-iot-fine-tune-deployment.exercise-triage-alerts
-title: Exercise - Triage alerts in learning mode 
+uid: learn.defender-iot-fine-tune-deployment.summary
+title: Summary
 metadata:
-  title: Exercise - Triage alerts in learning mode
-  description: "Exercise - Triage alerts in learning mode."
-  ms.date: 1/9/2024
+  title: Summary
+  description: "Summary"
+  ms.date: 4/15/2024
   author: limwainstein
   ms.author: lwainstein
   ms.topic: interactive-tutorial
@@ -19,6 +19,6 @@ metadata:
 ### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
 ### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
   ms.service: defender-for-iot
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
-  [!include[](includes/6-exercise-triage-alerts.md)]
+  [!include[](includes/10-summary.md)]

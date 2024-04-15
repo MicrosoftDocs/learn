@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.defender-iot-fine-tune-deployment.create-baseline-traffic
-title: Create a baseline of OT network traffic 
+uid: learn.defender-iot-fine-tune-deployment.change-from-learn-to-operational-mode
+title: Change from learn to operational mode
 metadata:
-  title: Create a baseline of OT network traffic 
-  description: "Create a baseline of OT network traffic."
-  ms.date: 1/9/2024
+  title: Change from learn to operational mode
+  description: "Change from learn to operational mode."
+  ms.date: 4/15/2024
   author: limwainstein
   ms.author: lwainstein
   ms.topic: interactive-tutorial
@@ -19,6 +19,6 @@ metadata:
 ### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
 ### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
   ms.service: defender-for-iot
-durationInMinutes: 1
+durationInMinutes: 5
 content: |
-  [!include[](includes/5-create-baseline-traffic.md)]
+  [!include[](includes/8-change-from-learn-to-operational-mode.md)]

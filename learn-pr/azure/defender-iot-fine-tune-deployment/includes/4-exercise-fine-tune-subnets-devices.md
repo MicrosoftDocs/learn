@@ -1,104 +1,98 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Your sensor now sends data to Microsoft Defender for IoT. You need to check that the devices are recognized and configured correctly in the Operational Technology (OT) sensor software. The sensor initially scans the entire network and tries to identify where all of the devices should be located within the Purdue levels.
+The following exercises show all of the stages of fine tuning your sensor. Depending on the data available in your system, you might only be able to do some of these exercises but not all of them.
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+## View the subnets detected by your sensor
 
-    Heading: none
+First you must analyze the traffic monitored by the OT sensor.
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+1. Log in to your sensor
+1. Select **System setting** > **Deployment**
+1. Select **Analyze** to start the subnet analysis process
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+This tracks each interface and device the sensor is monitoring and lists the subnet associated with each one. When the analysis is complete, you need to check that each interface is monitoring the correct traffic. Use the OT network plan, from the planning team, to compare the subnet information with the results of the analysis process.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+## Modify subnet data
 
-    Goal: Describe the part of the scenario covered in this exercise
+If you find a device incorrectly configured, make the following changes:
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+1. Select **System setting** > **Subnets**
+1. Type a new **IP** address
+1. Type a new **Mask** address
+1. Type a new **name**
+1. Select the **Segregated** checkbox if this subnet is on a different Purdue level
+1. Select **Save**
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+We recommend giving a meaningful name that specifies the subnet's network role. Subnet names can have up to 60 characters.
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+Once all changes are made, return to **System setting** > **Deployment** and select **Analyze** again to run the process. Review the results to ensure the set up is now correct.  
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+## View and update detected devices
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+All of the devices detected by the OT sensor appear in the **Device inventory**.
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+In the **Device inventory**, you can view the subnets grouped as either *local* or *routed*. Check through all of the devices listed.
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+1. Select **Device inventory**
+1. Select **Add filter**
+1. Select **Network Location**
+1. Select either **Local** or **Routed**
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+Look through the list of devices and check their details. After checking the device details, as an exercise, choose one device and update several of the fields.
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+1. Select a device by clicking the checkbox.
+1. Select **Edit**.
+1. Make the changes.
+1. Select **Save**.
 
-    Goal: List the steps they'll do to complete the exercise.
+## Merge devices
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+You might identify two or more devices listed that are really the same device. To merge two devices:
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
+1. Select **Device inventory**
+1. Select the devices you need to merge by clicking the checkboxes for those rows
+1. Select **Merge**
+1. Select **Confirm**
 
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+## Important devices
 
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+Assign a unique device as **Important**. In the **Device map**:
 
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+1. Select a device and right-click to open the menu options
+1. Select **Important**
 
-<!-- 5. Validation -------------------------------------------------------------------------------------------
+## Check public IP addresses
 
-    Goal: Enables the learner to evaluate if they completed the exercise correctly. Feedback like this is critical for learning.
+1. Select **System setting** > **Basic** > **Subnets**
+1. Select **Add subnet**
+1. Type a new **IP** address
+1. Type a new **Mask** address
+1. Type a new **name**
+1. Select **Save**
 
-    Structure:
-        1. A heading of "## Check your work".
-        2. An introductory paragraph describing how they'll validate their work at a high level.
-        3. Numbered steps (if the learner needs to perform multiple steps to verify if they were successful).
-        4. Video of an expert performing the exact steps of the exercise (optional).
+## Add DNS server settings
 
-    Example:
-         "At this point, the app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
+1. Select **System setting** > **Network monitoring** > **Reverse DNS lookup**
+1. Toggle **Enable**
+1. Define the time interval, either:
+    - In the **Schedule Reverse Lookup**, define the time interval for your scan by typing a number in the second box.
+    - Or select **By specific time** and type the time in 24 hr format
+1. Select **Add DNS server**
+1. Type the **DNS server address**, **DNS server port** and **Subnets** details
+1. Select **Save**
+1. Optionally, select **Test** at the top to check the settings are correct
+
+## Add DHCP address ranges
+
+For a device that automatically refreshes its IP address, add the DHCP address ranges for that device.
+
+1. Select **System setting** > **DHCP ranges**
+1. Select **Add range**
+1. Type the IP address ranges
+1. Type a name
+1. Select **Save**
+
+:::image type="content" source="../media/4-dhcp-ranges.png" alt-text="Screenshot adding new DHCP ranges for changing IP addresses.":::
 
 ## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+You now have an updated and more accurate set of devices listed in the Device inventory.

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.defender-iot-fine-tune-deployment.summary
-title: Summary
+uid: learn.defender-iot-fine-tune-deployment.describe-process-baseline-traffic
+title: Describe the process to create a baseline of OT network traffic 
 metadata:
-  title: Summary
-  description: "Summary"
-  ms.date: 1/9/2024
+  title: Describe the process to create a baseline of OT network traffic 
+  description: "Describe the process to create a baseline of OT network traffic."
+  ms.date: 4/15/2024
   author: limwainstein
   ms.author: lwainstein
   ms.topic: interactive-tutorial
@@ -19,6 +19,6 @@ metadata:
 ### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
 ### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
   ms.service: defender-for-iot
-durationInMinutes: 1
+durationInMinutes: 5
 content: |
-  [!include[](includes/8-summary.md)]
+  [!include[](includes/5-describe-process-baseline-traffic.md)]

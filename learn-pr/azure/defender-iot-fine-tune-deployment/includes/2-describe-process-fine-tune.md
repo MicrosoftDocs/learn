@@ -1,104 +1,39 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Your sensor can now send data to Microsoft Defender for IoT, but you need to make some final checks to ensure that the system runs as it was originally planned. You need to check that all the planned devices are correctly listed and that they're configured properly in the system. 
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+Once these checks are complete, you have a full and accurate list of devices that are set up correctly and can now securely process data.
 
-    Heading: none
+## OT sensor deployment path
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+The following diagram shows the complete Operational Technology (OT) deployment path, with the team responsible for each phase:
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+:::image type="content" source="../media/2-ot-deploy.png" alt-text="Diagram of the complete OT deployment process." border="false":::
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+This learn module is divided into two sections.
 
-    Goal: Describe the part of the scenario covered in this exercise
+Section 1 describes the fifth phase in the deployment, *Calibrate and fine-tune*, and deals with calibrating and fine-tuning your sensor. It includes these units:
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+- Unit 2 describes the general overview of the calibration and fine tuning phase of the sensor deployment.
+- Unit 3 describes the information and preparations you need to complete the exercise unit.
+- Unit 4 is the exercise unit to practice the calibration and fine tuning activities.
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+Section 2 describes the sixth phase in the deployment, *Baseline learning*, and deals with triaging the alerts.
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+## In this phase
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+In a real-life scenario, the deployment and connectivity teams ensure that the sensor is already onboarded, activated, and sending data to Defender for IoT.
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+The OT calibration and fine-tuning is the phase where you check that all of the devices listed in the network plan appear correctly in Defender for IoT. You also check that the settings that Defender for IoT automatically assigns to each device are correct. You might have to adjust some of these device settings.
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+### Calibrate the list of devices
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+Using Defender for IoT, compare the list of devices displayed by your sensor with the list in the network diagram. The number and type of devices must match exactly to ensure that the correct data is sent to Defender for IoT and that all of the devices are protected. If there are differences between the two lists, you must check and identify the reasons for the differences. Check that all of the devices are properly connected to the sensor, and that the monitoring settings are set correctly.
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+### Fine-tune your sensor subnets
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+Now that all of the devices are properly connected to Defender for IoT, you must check that the settings for each device are assigned correctly. Defender for IoT automatically assigns settings for each device as it detects them. Most of the time these settings are correct, however, they must all be checked and in some cases you might need to update and change them. These checks ensure that the sensor processes the data correctly.
 
-    Goal: List the steps they'll do to complete the exercise.
+If the settings aren't corrected, false alerts are sent that could leave other vulnerabilities on your devices, compromising your most critical assets. Devices are also set to different safety or importance levels, which affect attack vector and risk assessment reports.
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+## Outcome
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
-
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-<!-- 5. Validation -------------------------------------------------------------------------------------------
-
-    Goal: Enables the learner to evaluate if they completed the exercise correctly. Feedback like this is critical for learning.
-
-    Structure:
-        1. A heading of "## Check your work".
-        2. An introductory paragraph describing how they'll validate their work at a high level.
-        3. Numbered steps (if the learner needs to perform multiple steps to verify if they were successful).
-        4. Video of an expert performing the exact steps of the exercise (optional).
-
-    Example:
-         "At this point, the app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+Once these steps are completed, Defender for IoT is set up to monitor all of the devices and pass the data to the Azure portal. Defender for IoT now has an accurate list of all the sensors, devices, and their subnets. As well as the correct status for each one so that they're tracked for vulnerabilities and compromises. The device list now matches the original network diagram produced in the deployment planning phase.
