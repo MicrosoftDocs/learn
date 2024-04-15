@@ -2,13 +2,13 @@ Microsoft Entra Connect is an on-premises Microsoft application that's designed 
 
 ## Microsoft Entra Connect features
 
- -  Password hash synchronization - A sign-in method that synchronizes a hash of a users on-premises AD password with Microsoft Entra ID.
- -  Pass-through authentication - A sign-in method that allows users to use the same password on-premises and in the cloud, but doesn't require the additional infrastructure of a federated environment.
- -  Federation integration - Federation is an optional part of Microsoft Entra Connect and can be used to configure a hybrid environment using an on-premises AD FS infrastructure. It also provides AD FS management capabilities such as certificate renewal and additional AD FS server deployments.
- -  Synchronization - Responsible for creating users, groups, and other objects. As well as, making sure identity information for your on-premises users and groups is matching the cloud. This synchronization also includes password hashes.
- -  Health Monitoring - Microsoft Entra Connect Health can provide robust monitoring and provide a central location in the Microsoft Entra admin center to view this activity.
+ -  [Password hash synchronization](/entra/identity/hybrid/connect/whatis-phs) \- A sign-in method that synchronizes a hash of a users on-premises AD password with Microsoft Entra ID.
+ -  [Pass-through authentication](/entra/identity/hybrid/connect/how-to-connect-pta) \- A sign-in method that allows users to use the same password on-premises and in the cloud, but doesn't require the additional infrastructure of a federated environment.
+ -  [Federation integration](/entra/identity/hybrid/connect/how-to-connect-fed-whatis) \- Federation is an optional part of Microsoft Entra Connect and can be used to configure a hybrid environment using an on-premises AD FS infrastructure. It also provides AD FS management capabilities such as certificate renewal and additional AD FS server deployments.
+ -  [Synchronization](/entra/identity/hybrid/connect/how-to-connect-sync-whatis) \- Responsible for creating users, groups, and other objects. As well as, making sure identity information for your on-premises users and groups is matching the cloud. This synchronization also includes password hashes.
+ -  [Health Monitoring](/entra/identity/hybrid/connect/whatis-azure-ad-connect#what-is-azure-ad-connect-health) \- Microsoft Entra Connect Health can provide robust monitoring and provide a central location in the [Microsoft Entra admin center](https://entra.microsoft.com/) to view this activity.
 
-:::image type="content" source="../media/microsoft-entra-connect-12c088d8.png" alt-text="Diagram showing an example of Microsoft Entra connect architecture.":::
+:::image type="content" source="../media/microsoft-entra-connect-features-db6aa18d.png" alt-text="Diagram showing an example of Microsoft Entra Connect features.":::
 
 
 ## What is Microsoft Entra Connect Health?
@@ -17,7 +17,7 @@ Microsoft Entra Connect Health provides robust monitoring of your on-premises id
 
 The information is presented in the Microsoft Entra Connect Health portal. Use the Microsoft Entra Connect Health portal to view alerts, performance monitoring, usage analytics, and other information. Microsoft Entra Connect Health enables the single lens of health for your key identity components in one place.
 
-:::image type="content" source="../media/microsoft-entra-connect-health-32913d4b.png" alt-text="Diagram showing Microsoft Entra connect health portal functionality.":::
+:::image type="content" source="../media/microsoft-entra-connect-health-monitoring-71335e93.png" alt-text="Diagram showing Microsoft Entra connect health portal functionality.":::
 
 
 ## Why use Microsoft Entra Connect?
