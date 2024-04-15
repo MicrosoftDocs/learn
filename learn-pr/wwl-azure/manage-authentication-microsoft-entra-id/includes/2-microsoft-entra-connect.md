@@ -43,3 +43,4 @@ Key benefits and best practices:
 | Easy to deploy and manage                      | Quick agent installation<br>Agent auto upgrade to the latest<br>Data available in portal within minutes |
 | Rich usage metrics                             | Top applications usage<br>Network locations and TCP connection<br>Token requests per server             |
 | Great user experience                          | Dashboard fashion from Microsoft Entra admin center<br>Alerts through emails                            |
+
