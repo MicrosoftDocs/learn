@@ -2,13 +2,12 @@
 uid: learn.defender-iot-deploy-sensor.summary
 title: Summary
 metadata:
-  title: Summary of what you learned from the deployment of the Microsoft Defender for IoT monitoring system on to an operational technology (OT) network sensor training module.
+  title: Summary
   description: "Summary of what you learned from the deployment of the Microsoft Defender for IoT monitoring system on to an operational technology (OT) network sensor training module."
-  ms.date: 1/16/2024
+  ms.date: 4/15/2024
   author: limwainstein
   ms.author: lwainstein
-  ms.topic: interactive-tutorial
-  ms.service: defender-for-iot
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]

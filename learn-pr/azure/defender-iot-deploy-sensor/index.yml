@@ -3,10 +3,10 @@ uid: learn.defender-iot-deploy-sensor
 metadata:
   title: Deploy a sensor to Microsoft Defender for IoT for operational technology network monitoring
   description: "Learn how to deploy an OT sensor to Microsoft Defender for IoT"
-  ms.date: 1/16/2024
+  ms.date: 4/15/2024
   author: limwainstein
   ms.author: lwainstein
-  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.topic: module-standard-task-based
   ms.service: defender-for-iot
 title: Deploy a sensor to Microsoft Defender for IoT for operational technology network monitoring
 summary: "Using the activation file and list of endpoints from the onboarding phase, deploy an OT sensor to Microsoft Defender for IoT. Install monitoring software on the sensor, set up the interface settings, and activate the sensor."
@@ -19,12 +19,12 @@ prerequisites: |
   -	A Defender for IoT license with an [OT plan](/azure/defender-for-iot/organizations/getting-started)
   - A configured firewall and all of the rules and settings for it to connect to port 443, including: IP address, subnet mask, default gateway, DNS and hostname
   - Access to either a virtual or physical OT sensor
-  - Access to a Virtual machine, such as VMware ESXi 5.5 or later
+  - Access to a virtual machine, such as VMware ESXi 5.5 or later
   - A configured network adapter port group that connects to the internet 
   - A configured network adapter port group that connects to the SPAN port on the virtual switch
-  - Access to Wireshark or similar PCAP file reader
+  - Access to Wireshark or similar packet capture (PCAPS) file reader
   - The JSON list of endpoints file
-  - The sensor Activation file for this sensor
+  - The sensor activation file for this sensor
 iconUrl: /learn/achievements/defender-for-iot/defender-iot-deploy-sensor.svg
 levels: 
   - intermediate

@@ -4,11 +4,10 @@ title: Describe the deployment phase for Defender for IoT
 metadata:
   title: Describe the deployment phase for Defender for IoT
   description: "Describe the deployment phase for Defender for IoT"
-  ms.date: 1/16/2024
+  ms.date: 4/15/2024
   author: limwainstein
   ms.author: lwainstein
-  ms.topic: interactive-tutorial
-  ms.service: defender-for-iot
-durationInMinutes: 5
+  ms.topic: unit
+durationInMinutes: 2
 content: |
   [!include[](includes/2-describe-the-deployment-phase.md)]

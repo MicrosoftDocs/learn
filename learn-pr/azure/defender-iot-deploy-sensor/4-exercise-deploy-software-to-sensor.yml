@@ -4,11 +4,10 @@ title: Exercise - Deploy Defender for IoT software to a sensor
 metadata:
   title: Exercise - Deploy Defender for IoT software to a sensor
   description: "Exercise - Deploy Defender for IoT software to a sensor"
-  ms.date: 1/16/2024
+  ms.date: 4/15/2024
   author: limwainstein
   ms.author: lwainstein
-  ms.topic: interactive-tutorial
-  ms.service: defender-for-iot
-durationInMinutes: 7
+  ms.topic: unit
+durationInMinutes: 40
 content: |
   [!include[](includes/4-exercise-deploy-software-to-sensor.md)]
