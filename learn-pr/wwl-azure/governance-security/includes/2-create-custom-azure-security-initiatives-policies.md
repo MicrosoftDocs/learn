@@ -52,7 +52,7 @@ If you don't have an Azure subscription, create a free account before you begin.
 
 The first step in enforcing compliance with Azure Policy is to assign a policy definition. A policy definition defines under what condition a policy is enforced and what effect to take. In this example, assign the built-in policy definition called *Inherit a tag from the resource group if missing adding* the specified tag with its value from the parent resource group to new or updated resources missing the tag.
 
-1. Go to the Azure portal to assign policies. Search for and select **Policy**.
+1. Go to the [Azure portal](https://portal.azure.com/), to assign policies. Search for and select **Policy**.
 
 :::image type="content" source="../media/search-policy-example-1-db7a7fb5.png" alt-text="Screenshot showing how to navigate in the Azure portal to assign a policy.":::
 
