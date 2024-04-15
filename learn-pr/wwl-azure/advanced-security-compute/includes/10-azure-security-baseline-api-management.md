@@ -52,10 +52,10 @@ Configuration Guidance: Disable public network access either using the IP ACL fi
 
 Azure Policy built-in definitions - Microsoft.ApiManagement:
 
-| Name<br>(Azure portal)                                                                     | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | **Effect(s)**              | Version<br>(GitHub) |
-| ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ------------------- |
-| API Management services should use a virtual network                                       | Azure Virtual Network deployment provides enhanced security, isolation and allows you to place your API Management service in a non-internet routable network that you control access to. These networks can then be connected to your on-premises networks using various VPN technologies, which enables access to your backend services within the network and/or on-premises. The developer portal and API gateway, can be configured to be accessible either from the Internet or only within the virtual network. | Audit, Deny, Disabled      | 1.0.2               |
-| API Management should disable public network access to the service configuration endpoints | To improve the security of API Management services, restrict connectivity to service configuration endpoints, like direct access management API, Git configuration management endpoint, or self-hosted gateways configuration endpoint.                                                                                                                                                                                                                                                                                | AuditIfNotExists, Disabled | 1.0.1               |
+| Name<br>(Azure portal)                                                                     | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | **Effect(s)**              | Version<br>(GitHub) |
+| ------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ------------------- |
+| API Management services should use a virtual network                                       | Azure Virtual Network deployment provides enhanced security, isolation and allows you to place your API Management service in a non-internet routable network that you control access to. These networks can then be connected to your on-premises networks using various VPN technologies, which enables access to your backend services within the network and/or on-premises. The developer portal and API gateway can be configured to be accessible either from the Internet or only within the virtual network. | Audit, Deny, Disabled      | 1.0.2               |
+| API Management should disable public network access to the service configuration endpoints | To improve the security of API Management services, restrict connectivity to service configuration endpoints, like direct access management API, Git configuration management endpoint, or self-hosted gateways configuration endpoint.                                                                                                                                                                                                                                                                               | AuditIfNotExists, Disabled | 1.0.1               |
 
  **NS-6**: **Deploy web application firewall**
 
@@ -149,15 +149,15 @@ Feature: Azure RBAC for Data Plane
 
 Description: Azure Role-Based Access Control (Azure RBAC) can be used to managed access to service's data plane actions.
 
-Configuration Guidance:Use Azure role-based access control (Azure RBAC) for controlling access to Azure API Management. Azure API Management relies on Azure role-based access control to enable fine-grained access management for API Management services and entities (for example, APIs and policies).
+Configuration Guidance: Use Azure role-based access control (Azure RBAC) for controlling access to Azure API Management. Azure API Management relies on Azure role-based access control to enable fine-grained access management for API Management services and entities (for example, APIs and policies).
 
 ### PA-8: Determine access process for cloud provider support
 
 Feature: Customer Lockbox
 
-Description:Customer Lockbox can be used for Microsoft support access.<br>
+Description: Customer Lockbox can be used for Microsoft support access.<br>
 
-Configuration Guidance:In support scenarios where Microsoft needs to access your data, use Customer Lockbox to review, then approve or reject each of Microsoft's data access requests.
+Configuration Guidance: In support scenarios where Microsoft needs to access your data, use Customer Lockbox to review, then approve or reject each of Microsoft's data access requests.
 
 ## Data protection
 
@@ -165,17 +165,17 @@ Configuration Guidance:In support scenarios where Microsoft needs to access your
 
 Feature: Sensitive Data Discovery and Classification
 
-Description:Tools (such as Azure Purview or Azure Information Protection) can be used for data discovery and classification in the service.
+Description: Tools (such as Azure Purview or Azure Information Protection) can be used for data discovery and classification in the service.
 
-Configuration Guidance:This feature isn't supported to secure this service.
+Configuration Guidance: This feature isn't supported to secure this service.
 
 ### DP-2: Monitor anomalies and threats targeting sensitive data
 
 Feature: Data Leakage/Loss Prevention
 
-Description:Service supports DLP solution to monitor sensitive data movement (in customer's content).
+Description: Service supports DLP solution to monitor sensitive data movement (in customer's content).
 
-Configuration Guidance:This feature isn't supported to secure this service.
+Configuration Guidance: This feature isn't supported to secure this service.
 
 ### DP-3: Encrypt sensitive data in transit
 
@@ -183,7 +183,7 @@ Feature: Data in Transit Encryption
 
 Description: Service supports data in-transit encryption for data plane.
 
-Configuration Guidance:No additional configurations are required as this is enabled on a default deployment.
+Configuration Guidance: No additional configurations are required as this is enabled on a default deployment.
 
 Other guidance for DP-3: Management plane calls are made through Azure Resource Manager over TLS. A valid JSON web token (JWT) is required. Data plane calls can be secured with TLS and one of supported authentication mechanisms (for example, client certificate or JWT).
 
@@ -191,15 +191,15 @@ Other guidance for DP-3: Management plane calls are made through Azure Resource 
 
 Feature: Key Management in Azure Key Vault
 
-Description:The service supports Azure Key Vault integration for any customer keys, secrets, or certificates.<br>
+Description: The service supports Azure Key Vault integration for any customer keys, secrets, or certificates.<br>
 
-Configuration Guidance:Set up integration of API Management with Azure Key Vault. Ensure that keys used by API Management are stored an Azure Key Vault so they can be securely accessed and updated.
+Configuration Guidance: Set up integration of API Management with Azure Key Vault. Ensure that keys used by API Management are stored an Azure Key Vault so they can be securely accessed and updated.
 
 ### DP-7: Use a secure certificate management process
 
 Feature: Certificate Management in Azure Key Vault
 
-Description:The service supports Azure Key Vault integration for any customer certificates.
+Description: The service supports Azure Key Vault integration for any customer certificates.
 
 Configuration Guidance: Set up integration of API Management with Azure Key Vault. Ensure that secrets for API Management (Named values) are stored an Azure Key Vault so they can be securely accessed and updated.
 
@@ -213,7 +213,7 @@ Feature: Azure Policy Support
 
 Description: Service configurations can be monitored and enforced via Azure Policy.
 
-Configuration Guidance:Use built-in Azure Policy to monitor and enforce secure configuration across API Management resources. Use Azure Policy aliases in the "Microsoft.ApiManagement" namespace to create custom Azure Policy definitions where required.
+Configuration Guidance: Use built-in Azure Policy to monitor and enforce secure configuration across API Management resources. Use Azure Policy aliases in the "Microsoft.ApiManagement" namespace to create custom Azure Policy definitions where required.
 
 ## Logging and threat detection
 
@@ -221,7 +221,7 @@ Configuration Guidance:Use built-in Azure Policy to monitor and enforce secure c
 
 Features: Microsoft Defender for Service / Product Offering
 
-Description:Service has an offering-specific Microsoft Defender solution to monitor and alert on security issues.
+Description: Service has an offering-specific Microsoft Defender solution to monitor and alert on security issues.
 
 Configuration Guidance: This feature isn't supported to secure this service.
 
@@ -229,9 +229,9 @@ Configuration Guidance: This feature isn't supported to secure this service.
 
 Feature: Azure Resource Logs
 
-Description:Service produces resource logs that can provide enhanced service-specific metrics and logging. The customer can configure these resource logs and send them to their own data sink like a storage account or log analytics workspace.
+Description: Service produces resource logs that can provide enhanced service-specific metrics and logging. The customer can configure these resource logs and send them to their own data sink like a storage account or log analytics workspace.
 
-Configuration Guidance:Enable resource logs for API Management, resource logs provide rich information about operations and errors that are important for auditing and troubleshooting purposes. Categories of resource logs for API Management include:
+Configuration Guidance: Enable resource logs for API Management, resource logs provide rich information about operations and errors that are important for auditing and troubleshooting purposes. Categories of resource logs for API Management include:
 
  -  GatewayLogs<br>
  -  WebSocketConnectionLogs
@@ -242,9 +242,9 @@ Configuration Guidance:Enable resource logs for API Management, resource logs pr
 
 Feature: Azure Backup
 
-Description:The service can be backed up by the Azure Backup service.
+Description: The service can be backed up by the Azure Backup service.
 
-Configuration Guidance:This feature isn't supported to secure this service.
+Configuration Guidance: This feature isn't supported to secure this service.
 
 Feature: Service Native Backup Capability
 
