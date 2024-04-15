@@ -112,7 +112,7 @@ Operand type clash: char(11) encrypted with (encryption_type = 'DETERMINISTIC', 
      -  FOR JSON (SQL Server)
  -  After changing the definition of an encrypted column, execute sp\_refresh\_parameter\_encryption to update the Always Encrypted metadata for the object.
  -  Always Encrypted isn't supported for the columns with the below characteristics:<br>
-     -  Columns using one of the following data typ**e**s: xml, timestamp, rowversion, image, ntext, text, sql\_variant, hierarchyid, geography, geometry, alias, user-defined types.<br>
+     -  Columns using one of the following data types: xml, timestamp, rowversion, image, ntext, text, sql\_variant, hierarchyid, geography, geometry, alias, user-defined types.<br>
      -  FILESTREAM columns
      -  Columns with the IDENTITY property.
      -  Columns with ROWGUIDCOL property.
