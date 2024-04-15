@@ -38,7 +38,7 @@ units:
 - learn.defender-iot-fine-tune-deployment.create-baseline-traffic
 - learn.defender-iot-fine-tune-deployment.exercise-triage-alerts
 - learn.defender-iot-fine-tune-deployment.from-learn-to-operational-mode
-- learn.defender-iot-fine-tune-deployment.knowledge-check
 - learn.defender-iot-fine-tune-deployment.summary
+- learn.defender-iot-fine-tune-deployment.knowledge-check
 badge:
   uid: learn.defender-iot-fine-tune-deployment.badge
