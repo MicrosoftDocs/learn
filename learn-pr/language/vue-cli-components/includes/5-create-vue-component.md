@@ -1,4 +1,4 @@
-We want to create an application that allows a user to create bookings on a cruise to the moon. Over the course of a few exercises, you'll create a component for the form the user completes to create a booking, and another to display the list of created bookings. The first component that you'll create will host both child components.
+We want to create an application that allows a user to create bookings on a cruise to the moon. Over the course of a few exercises, you create a component for the form the user completes to create a booking, and another to display the list of created bookings. The first component that you create will host both child components.
 
 ## Install Visual Studio Code extensions
 
@@ -58,7 +58,7 @@ data() {
 
 ```
 
-The `name` field sets the name of the component. The `data()` part registers the `cruise` object as data for the component. We'll use `bookings` later to store a list of cruise bookings. The `TODO` comments will serve as markers for the future.
+The `name` field sets the name of the component. The `data()` part registers the `cruise` object as data for the component. We'll use `bookings` later to store a list of cruise bookings. The `TODO` comments serve as markers for the future.
 
 > [!NOTE]
 > `TODO` comments are a great way to place notes in your code for tasks that need to be completed later.
@@ -153,4 +153,4 @@ With our component created and the script updated, let's test the page.
 
     ![Screenshot of the Host component displaying the name and description of the cruise.](../media/host-component.png)
 
-You've now created your first single-file component in Vue.js!
+You've created your first single-file component in Vue.js!
