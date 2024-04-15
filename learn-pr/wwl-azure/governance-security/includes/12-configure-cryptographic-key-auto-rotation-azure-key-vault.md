@@ -100,7 +100,7 @@ Key rotation can be invoked manually.
 
 Click 'Rotate Now' to invoke rotation.
 
-:::image type="content" source="../media/key-rotation-options-0cb50e09.png" alt-text="Screenhow showing how to invoke a key rotation policy.":::
+:::image type="content" source="../media/key-rotation-options-0cb50e09.png" alt-text="Screenshot showing how to invoke a key rotation policy.":::
 
 
 ### Azure CLI
