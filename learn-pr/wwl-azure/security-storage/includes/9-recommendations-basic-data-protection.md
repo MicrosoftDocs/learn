@@ -30,17 +30,17 @@ The following table summarizes the options available in Azure Storage for common
 
 The following table summarizes the Azure Storage data protection options according to the resources they protect.
 
-| **Data protection option**                                      | **Protects an account from deletion** | **Protects a container from deletion** | **Protects an object from deletion** | **Protects an object from overwrites** |
-| --------------------------------------------------------------- | ------------------------------------- | -------------------------------------- | ------------------------------------ | -------------------------------------- |
-| **Azure Resource Manager lock**                                 | Yes                                   | No                                     | No                                   | No                                     |
-| **Immutability policy on a blob version**                       | Yes                                   | Yes                                    | Yes                                  | Yes                                    |
-| **Immutability policy on a container**                          | Yes                                   | Yes                                    | Yes                                  | Yes                                    |
-| **Container soft delete**                                       | No                                    | Yes                                    | No                                   | No                                     |
-| **Blob versioning**                                             | No                                    | No                                     | Yes                                  | Yes                                    |
-| **Blob soft delete**                                            | No                                    | No                                     | Yes                                  | Yes                                    |
-| **Point-in-time restore**                                       | No                                    | No                                     | Yes                                  | Yes                                    |
-| **Blob snapshot**                                               | No                                    | No                                     | No                                   | Yes                                    |
-| **Roll-your-own solution for copying data to a second account** | No                                    | Yes                                    | Yes                                  | Yes                                    |
+| **Data protection option**                                  | **Protects an account from deletion** | **Protects a container from deletion** | **Protects an object from deletion** | **Protects an object from overwrites** |
+| ----------------------------------------------------------- | ------------------------------------- | -------------------------------------- | ------------------------------------ | -------------------------------------- |
+| Azure Resource Manager lock                                 | Yes                                   | No                                     | No                                   | No                                     |
+| Immutability policy on a blob version                       | Yes                                   | Yes                                    | Yes                                  | Yes                                    |
+| Immutability policy on a container                          | Yes                                   | Yes                                    | Yes                                  | Yes                                    |
+| Container soft delete                                       | No                                    | Yes                                    | No                                   | No                                     |
+| Blob versioning                                             | No                                    | No                                     | Yes                                  | Yes                                    |
+| Blob soft delete                                            | No                                    | No                                     | Yes                                  | Yes                                    |
+| Point-in-time restore                                       | No                                    | No                                     | Yes                                  | Yes                                    |
+| Blob snapshot                                               | No                                    | No                                     | No                                   | Yes                                    |
+| Roll-your-own solution for copying data to a second account | No                                    | Yes                                    | Yes                                  | Yes                                    |
 
 Understanding the nuances of data protection in Azure Storage reveals several operational insights and restrictions:
 

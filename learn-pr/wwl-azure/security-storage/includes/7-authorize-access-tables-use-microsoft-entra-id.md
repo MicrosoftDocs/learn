@@ -35,11 +35,11 @@ Before you assign an Azure RBAC role to a security principal, determine the scop
 
 You can scope access to Azure table resources at the following levels, beginning with the narrowest scope:
 
- -  **An individual table** . At this scope, a role assignment applies to the specified table.
- -  **The storage account**. At this scope, a role assignment applies to all tables in the account.
- -  **The resource group**. At this scope, a role assignment applies to all of the tables in all of the storage accounts in the resource group.
- -  **The subscription**. At this scope, a role assignment applies to all of the tables in all of the storage accounts in all of the resource groups in the subscription.
- -  **A management group**. At this scope, a role assignment applies to all of the tables in all of the storage accounts in all of the resource groups in all of the subscriptions in the management group.
+ -  An individual table . At this scope, a role assignment applies to the specified table.
+ -  The storage account. At this scope, a role assignment applies to all tables in the account.
+ -  The resource group. At this scope, a role assignment applies to all of the tables in all of the storage accounts in the resource group.
+ -  The subscription. At this scope, a role assignment applies to all of the tables in all of the storage accounts in all of the resource groups in the subscription.
+ -  A management group. At this scope, a role assignment applies to all of the tables in all of the storage accounts in all of the resource groups in all of the subscriptions in the management group.
 
 For more information about scope for Azure RBAC role assignments, see [Understand scope for Azure RBAC](/azure/role-based-access-control/scope-overview).
 

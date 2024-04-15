@@ -78,20 +78,20 @@ Before you assign an Azure RBAC role to a security principal, determine the scop
 
 You can scope access to Azure queue resources at the following levels, beginning with the narrowest scope:<br>
 
- -  **An individual queue**. At this scope, a role assignment applies to messages in the queue, and to queue properties and metadata.<br>
- -  **The storage account**. At this scope, a role assignment applies to all queues and their messages.
- -  **The resource group**. At this scope, a role assignment applies to all of the queues in all of the storage accounts in the resource group.
- -  **The subscription**. At this scope, a role assignment applies to all of the queues in all of the storage accounts in all of the resource groups in the subscription.
- -  **A management group**. At this scope, a role assignment applies to all of the queues in all of the storage accounts in all of the resource groups in all of the subscriptions in the management group.
+ -  An individual queue. At this scope, a role assignment applies to messages in the queue, and to queue properties and metadata.<br>
+ -  The storage account. At this scope, a role assignment applies to all queues and their messages.
+ -  The resource group. At this scope, a role assignment applies to all of the queues in all of the storage accounts in the resource group.
+ -  The subscription. At this scope, a role assignment applies to all of the queues in all of the storage accounts in all of the resource groups in the subscription.
+ -  A management group. At this scope, a role assignment applies to all of the queues in all of the storage accounts in all of the resource groups in all of the subscriptions in the management group.
 
 ### Azure built-in roles for queues
 
 Azure RBAC provides several built-in roles for authorizing access to queue data using Microsoft Entra ID and OAuth. Some examples of roles that provide permissions to data resources in Azure Storage include:
 
- -  **Storage Queue Data Contributor**: Use to grant read/write/delete permissions to Azure queues.<br>
- -  **Storage Queue Data Reader**: Use to grant read-only permissions to Azure queues.
- -  **Storage Queue Data Message Processor**: Use to grant peek, retrieve, and delete permissions to messages in Azure Storage queues.
- -  **Storage Queue Data Message Sender**: Use to grant add permissions to messages in Azure Storage queues.
+ -  Storage Queue Data Contributor: Use to grant read/write/delete permissions to Azure queues.<br>
+ -  Storage Queue Data Reader: Use to grant read-only permissions to Azure queues.
+ -  Storage Queue Data Message Processor: Use to grant peek, retrieve, and delete permissions to messages in Azure Storage queues.
+ -  Storage Queue Data Message Sender: Use to grant add permissions to messages in Azure Storage queues.
 
 Only roles explicitly defined for data access permit a security principal to access queue data. Built-in roles such as **Owner**, **Contributor**, and **Storage Account Contributor** permit a security principal to manage a storage account, but don't provide access to the queue data within that account via Microsoft Entra ID. However, if a role includes **Microsoft.Storage/storageAccounts/listKeys/action**, then a user to whom that role is assigned can access data in the storage account via Shared Key authorization with the account access keys.
 

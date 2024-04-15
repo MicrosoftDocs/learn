@@ -4,11 +4,11 @@ The Azure Storage platform is Microsoft's cloud storage solution for modern data
 
 Azure Storage services offer the following benefits for application developers and IT professionals:
 
- -  **Durable and highly available**. Redundancy ensures that your data is safe in the event of transient hardware failures. You can also opt to replicate data across data centers or geographical regions for additional protection from local catastrophe or natural disaster. Data replicated in this way remains highly available in the event of an unexpected outage.<br>
- -  **Secure**. All data written to an Azure storage account is encrypted by the service. Azure Storage provides you with fine-grained control over who has access to your data.
- -  **Scalable**. Azure Storage is designed to be massively scalable to meet the data storage and performance needs of today's applications.
- -  **Managed**. Azure handles hardware maintenance, updates, and critical issues for you.
- -  **Accessible**. Data in Azure Storage is accessible from anywhere in the world over HTTP or HTTPS. Microsoft provides client libraries for Azure Storage in a variety of languages, including .NET, Java, Node.js, Python, Go, and others, as well as a mature REST API. Azure Storage supports scripting in Azure PowerShell or Azure CLI. And the Azure portal and Azure Storage Explorer offer easy visual solutions for working with your data.
+ -  Durable and highly available. Redundancy ensures that your data is safe in the event of transient hardware failures. You can also opt to replicate data across data centers or geographical regions for additional protection from local catastrophe or natural disaster. Data replicated in this way remains highly available in the event of an unexpected outage.<br>
+ -  Secure. All data written to an Azure storage account is encrypted by the service. Azure Storage provides you with fine-grained control over who has access to your data.
+ -  Scalable. Azure Storage is designed to be massively scalable to meet the data storage and performance needs of today's applications.
+ -  Managed. Azure handles hardware maintenance, updates, and critical issues for you.
+ -  Accessible. Data in Azure Storage is accessible from anywhere in the world over HTTP or HTTPS. Microsoft provides client libraries for Azure Storage in a variety of languages, including .NET, Java, Node.js, Python, Go, and others, as well as a mature REST API. Azure Storage supports scripting in Azure PowerShell or Azure CLI. And the Azure portal and Azure Storage Explorer offer easy visual solutions for working with your data.
 
 ## Azure Storage data services
 
@@ -109,7 +109,7 @@ Azure NetApp Files is an enterprise-class, high-performance, metered file storag
 
 Every request to Azure Storage must be authorized. Azure Storage supports the following authorization methods:
 
- -  **Microsoft Entra integration for blob, file, queue, and table data**. Azure Storage supports authentication and authorization with Microsoft Entra ID for the Blob, File, Table, and Queue services via Azure role-based access control (Azure RBAC). Authorizing requests with Microsoft Entra ID is recommended for superior security and ease of use.<br>
+ -  Microsoft Entra integration for blob, file, queue, and table data. Azure Storage supports authentication and authorization with Microsoft Entra ID for the Blob, File, Table, and Queue services via Azure role-based access control (Azure RBAC). Authorizing requests with Microsoft Entra ID is recommended for superior security and ease of use.<br>
  -  Identity-based authentication over SMB for Azure Files. Azure Files supports identity-based authorization over SMB (Server Message Block) through either on-premises Microsoft Entra Domain Services, or Microsoft Entra Kerberos (hybrid user accounts only).
  -  Authorization with Shared Key. The Azure Storage Blob, Files, Queue, and Table services support authorization with Shared Key. A client using Shared Key authorization passes a header with every request that is signed using the storage account access key. pended to the URI for a storage resource. The security token encapsulates constraints such as permissions and the interval of access.
  -  Microsoft Entra Domain Services with Azure NetApp Files. Azure NetApp Files features such as SMB volumes, dual-protocol volumes, and NFSv4.1 Kerberos volumes are designed to be used with Microsoft Entra Domain Services.
