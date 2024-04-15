@@ -8,8 +8,7 @@ Even in *operational* mode, you could still receive new alerts, and must check a
 
 ## Manually end learning mode
 
-In a real life scenario, this triage process must be done daily until the level of alerts reduces to a 'reasonable' daily level.<!-- ask ariel or meir what is a possible percentage, or at what stage the system automatically moves on? -->
-Over time, Defender for IoT learns to identify suspicious traffic and stops sending false alerts and automatically switches to operational mode. However, you can turn off *learning* mode manually, if you think the level of alerts drops to an acceptable level.
+Over time, Defender for IoT learns to identify suspicious traffic, so that most of the alerts are accurate and don't need triaging. Defender for IoT then automatically switches from *learning* mode to *operational* mode. However, you can turn off *learning* mode manually at any time, if you think the level of alerts drops to an acceptable level.
 
 In the Sensor:
 

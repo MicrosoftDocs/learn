@@ -12,9 +12,9 @@ This learn module is divided into two sections.
 
 Section 1 describes the fifth phase in the deployment, *Calibrate and fine-tune*, and deals with calibrating and fine-tuning your sensor. It includes these units:
 
- - Unit 2 describes the general overview of the calibration and fine tuning phase of the sensor deployment.
- - Unit 3 describes the information and preparations you need to complete the exercise unit.
- - Unit 4 is the exercise unit to practice the calibration and fine tuning activities.
+- Unit 2 describes the general overview of the calibration and fine tuning phase of the sensor deployment.
+- Unit 3 describes the information and preparations you need to complete the exercise unit.
+- Unit 4 is the exercise unit to practice the calibration and fine tuning activities.
 
 Section 2 describes the sixth phase in the deployment, *Baseline learning*, and deals with triaging the alerts.
 
