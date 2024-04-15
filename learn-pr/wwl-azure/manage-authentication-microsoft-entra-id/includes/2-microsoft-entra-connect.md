@@ -32,7 +32,7 @@ Integrating your on-premises directories with Microsoft Entra ID makes your user
 
 When authenticating with Microsoft Entra ID, your users are more productive because there's a common identity to access both cloud and on-premises resources. Ensuring the environment is reliable, so that users can access these resources, becomes a challenge. Microsoft Entra Connect Health helps monitor and gain insights into your on-premises identity infrastructure thus ensuring the reliability of this environment. It is as simple as installing an agent on each of your on-premises identity servers.
 
-Microsoft Entra Connect Health for AD FS supports AD FS on Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 and Windows Server 2022. It also supports monitoring the web application proxy servers that provide authentication support for extranet access. With an easy and quick installation of the Health Agent, Microsoft Entra Connect Health for AD FS provides you a set of key capabilities.
+Microsoft Entra Connect Health for AD FS supports AD FS on Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 and Windows Server 2022. It also supports monitoring the web application proxy servers that provide authentication support for extranet access. With an easy and quick installation of the Health Agent, Microsoft Entra Connect Health for AD FS provides you with a set of key capabilities.
 
 Key benefits and best practices:
 
@@ -43,4 +43,3 @@ Key benefits and best practices:
 | Easy to deploy and manage                      | Quick agent installation<br>Agent auto upgrade to the latest<br>Data available in portal within minutes |
 | Rich usage metrics                             | Top applications usage<br>Network locations and TCP connection<br>Token requests per server             |
 | Great user experience                          | Dashboard fashion from Microsoft Entra admin center<br>Alerts through emails                            |
-
