@@ -31,7 +31,7 @@ The **Alerts** page provides more details about an alert.
 
 You can also select several alerts to triage at the same time, however you aren't able to see their details together. You're able to make bulk changes to their severity or status levels or apply the *learn* setting using the **Alerts** page menu bar.
 
-:::image type="content" source="../media/7-bulk-alert-triage1.png" alt-text="Screenshot of bulk update of alerts, in this case updating the severity level for these alerts thick box" lightbox="../media/7-bulk-alert-triage1.png":::
+:::image type="content" source="../media/7-bulk-alert-triage.png" alt-text="Screenshot of bulk update of alerts, in this case updating the severity level for these alerts thick box" lightbox="../media/7-bulk-alert-triage.png":::
 
 ## Check your work
 
