@@ -10,6 +10,7 @@ metadata:
   ms.custom:
   - N/A
   ms.service: cosmos-db
+  ms.subservice: nosql
   ai-usage: human-only
 title: Design a data partitioning strategy
 summary: Identify strategies for managing relationships between data entities, such as customers and sales data. Improve data-model performance and scaling by pre-aggregating and denormalizing your data. Use change-feed to maintain your data's referential integrity.
