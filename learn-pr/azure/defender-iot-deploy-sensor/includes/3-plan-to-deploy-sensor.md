@@ -6,7 +6,7 @@ For this module, you have a virtual machine (VM) ready to act as the operational
 
 The OT sensor deployment plan is shown in the following diagram:
 
-:::image type="content" source="../media/3-deploy-sensors.png" alt-text="Diagram of the sensor deployment path." border="false":::
+:::image type="content" source="../media/3-deploy-sensors.png" alt-text="Diagram of the sensor deployment path that includes the steps to deploy your sensors, install software, and activate and initial setup." border="false":::
 
 This module deals with installing and activating the monitoring software on the OT sensor.
 
@@ -14,7 +14,7 @@ This module deals with installing and activating the monitoring software on the 
 
 The first stage in deploying the OT sensor monitoring software is to check that your VM is correctly configured to act as the OT sensor.
 
-We use the VMware ESXi virtual machine, but you can use other systems, such as HyperV. You might need to refer to your VM documentation for more details.
+We use the VMware ESXi virtual machine, but you can use other systems, such as Hyper-V. Refer to your VM documentation for more details.
 
 ## Download and install OT sensor monitoring software
 
@@ -53,10 +53,10 @@ Select and enable each interface to be monitored. If you're unsure which interfa
 
 ### Upload activation file
 
-In the **Activation** tab upload the activation file you received from the deployment team.
+In the **Activation** tab, upload the activation file you received from the deployment team.
 
 ### Define certificate settings
 
 In the **Certificates** tab, deploy the SSL/TLS certificate settings. It's best practice to use a CA-signed certificate that's more secure, however for this learn module the self-signed certificate is secure enough.
 
-Once you complete these tasks the sensor deployment process is complete and the sensor starts sending data to the Azure portal.
+After you complete these tasks, the sensor deployment process is complete and the sensor starts sending data to the Azure portal.

@@ -1,4 +1,4 @@
-To deploy the Operational Technology (OT) sensors in your car manufacturing organization, install, configure and activate the OT monitoring software on the sensor. In our case, the software is installed on a virtual machine.
+To deploy the Operational Technology (OT) sensors in your car manufacturing organization, install, configure, and activate the OT monitoring software on the sensor. In our case, the software is installed on a virtual machine (VM).
 
 Once you deploy and activate the sensor, Defender for IoT displays traffic data sent by the sensor, including detected devices and triggered alerts.
 
@@ -6,7 +6,7 @@ Once you deploy and activate the sensor, Defender for IoT displays traffic data 
 
 The following diagram shows the complete OT deployment path, with the team responsible for each phase:
 
-:::image type="content" source="../media/2-ot-deploy.png" alt-text="Diagram of the complete OT deployment process" border="false":::
+:::image type="content" source="../media/2-ot-deploy.png" alt-text="Diagram of the complete OT deployment process." border="false":::
 
 This module describes the fourth phase in the deployment: *Deploy sensors*. In a real-life scenario, the deployment and connectivity teams ensure that the sensor is already onboarded, the networks are set up, and the activation file is available.
 

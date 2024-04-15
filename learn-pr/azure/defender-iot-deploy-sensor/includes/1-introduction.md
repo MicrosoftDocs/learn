@@ -6,7 +6,7 @@ This module describes the steps required to deploy an Operational Technology (OT
 
 Suppose you work for a car manufacturer that has offices and production sites across the globe. You're tasked with implementing a system to monitor traffic and secure your manufacturing automation systems (OT), from the access panels to the pneumatic and packaging systems. To take your organization's OT security visibility to a whole new level, your team chooses to use Microsoft Defender for IoT.
 
-You’ve been tasked with installing Defender for IoT monitoring software on your new OT sensors. You have the activation file from the onboarded OT sensor, and the list of your sensor’s required endpoints. You must check that your deployment department has created a virtual machine to run the sensor on and then install the monitoring software on to the sensor. Then, use your activation file to complete your deployment and connect your sensor to Azure.
+You’ve been tasked with installing Defender for IoT monitoring software on your new OT sensors. You have the activation file from the onboarded OT sensor, and the list of your sensor’s required endpoints. You must check that your deployment department created a virtual machine (VM) to run the sensor on and then install the monitoring software on to the sensor. Then, use your activation file to complete your deployment and connect your sensor to Azure.
 
 ## What will we be doing?
 
