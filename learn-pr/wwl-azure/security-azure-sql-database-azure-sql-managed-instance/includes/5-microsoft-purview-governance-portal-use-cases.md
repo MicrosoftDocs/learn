@@ -9,7 +9,7 @@ Microsoft Purview's solutions in the governance portal provide a unified data go
 ### Prerequisites
 
  -  An Active Microsoft Purview account is already created in Azure portal.
- -  The user has permissions to access the **Microsoft Purview governance portal**.
+ -  The user has permissions to access the Microsoft Purview governance portal.
 
 Microsoft Purview's solutions in the governance portal provide a unified data governance service that helps you manage your on-premises, multicloud, and software-as-a-service (SaaS) data.<br>
 
@@ -40,4 +40,4 @@ Microsoft Purview Data Policy is a set of central, cloud-based experiences that 
      -  Search for data assets and grant access only to what is required via fine-grained policies.
      -  Path to support SaaS, on-premises, and multicloud data sources.
      -  Path to create policies that leverage any metadata associated to the data objects.
- -  Based on role definitions that are simple and abstracted (for example: **Read**, **Modify**).
+ -  Based on role definitions that are simple and abstracted (for example: Read, Modify).
