@@ -2,7 +2,7 @@ The Azure security baseline for API Management applies guidance from Microsoft's
 
 You can monitor this security baseline and its recommendations using Microsoft Defender for Cloud. Azure Policy definitions will be listed in the Regulatory Compliance section of the Microsoft Defender for Cloud portal page.<br>
 
-When a feature has relevant Azure Policy Definitions, they are listed in this baseline to help you measure compliance with the Microsoft cloud security benchmark controls and recommendations. Some recommendations might require a paid Microsoft Defender plan to enable certain security scenarios.
+When a feature has relevant Azure Policy Definitions, they're listed in this baseline to help you measure compliance with the Microsoft cloud security benchmark controls and recommendations. Some recommendations might require a paid Microsoft Defender plan to enable certain security scenarios.
 
 ## Network security
 
@@ -34,7 +34,7 @@ Feature: Azure Private Link
 
 Description: Service native IP filtering capability for filtering network traffic (not to be confused with NSG or Azure Firewall).
 
-Configuration Guidance: In instances where you are unable to deploy API Management instances into a virtual network, you should instead deploy a private endpoint to establish a private access point for those resources.
+Configuration Guidance: In instances where you're unable to deploy API Management instances into a virtual network, you should instead deploy a private endpoint to establish a private access point for those resources.
 
 > [!NOTE]
 > To enable private endpoints, the API Management instance can't already be configured with an external or internal virtual network. A private endpoint connection supports only incoming traffic to the API Management instance.
@@ -104,7 +104,7 @@ Feature: Service Principals
 
 Description: Data plane supports authentication using service principals.
 
-Configuration Guidance: There is no current Microsoft guidance for this feature configuration. Please review and determine if your organization wants to configure this security feature.
+Configuration Guidance: There's no current Microsoft guidance for this feature configuration. Please review and determine if your organization wants to configure this security feature.
 
 ### IM-5: Use single sign-on (SSO) for application access
 
@@ -118,7 +118,7 @@ Features: Conditional Access for Data Plane
 
 Description: Data plane access can be controlled using Azure AD Conditional Access Policies.
 
-Configuration Guidance: This feature is not supported to secure this service.
+Configuration Guidance: This feature isn't supported to secure this service.
 
 ### IM-8: Restrict the exposure of credential and secrets
 
@@ -167,7 +167,7 @@ Feature: Sensitive Data Discovery and Classification
 
 Description:Tools (such as Azure Purview or Azure Information Protection) can be used for data discovery and classification in the service.
 
-Configuration Guidance:This feature is not supported to secure this service.
+Configuration Guidance:This feature isn't supported to secure this service.
 
 ### DP-2: Monitor anomalies and threats targeting sensitive data
 
@@ -175,7 +175,7 @@ Feature: Data Leakage/Loss Prevention
 
 Description:Service supports DLP solution to monitor sensitive data movement (in customer's content).
 
-Configuration Guidance:This feature is not supported to secure this service.
+Configuration Guidance:This feature isn't supported to secure this service.
 
 ### DP-3: Encrypt sensitive data in transit
 
@@ -203,7 +203,7 @@ Description:The service supports Azure Key Vault integration for any customer ce
 
 Configuration Guidance: Set up integration of API Management with Azure Key Vault. Ensure that secrets for API Management (Named values) are stored an Azure Key Vault so they can be securely accessed and updated.
 
-Use Azure Key Vault to create and control the certificate lifecycle, including creation, importing, rotation, revocation, storage, and purging of the certificate. Ensure the certificate generation follows defined standards without using any insecure properties, such as: insufficient key size, overly long validity period, insecure cryptography. Setup automatic rotation of the certificate in Azure Key Vault and the Azure service (if supported) based on a defined schedule or when there is a certificate expiration. If automatic rotation is not supported in the application, ensure they are still rotated using manual methods in Azure Key Vault and the application.
+Use Azure Key Vault to create and control the certificate lifecycle, including creation, importing, rotation, revocation, storage, and purging of the certificate. Ensure the certificate generation follows defined standards without using any insecure properties, such as: insufficient key size, overly long validity period, insecure cryptography. Setup automatic rotation of the certificate in Azure Key Vault and the Azure service (if supported) based on a defined schedule or when there's a certificate expiration. If automatic rotation isn't supported in the application, ensure they're still rotated using manual methods in Azure Key Vault and the application.
 
 ## Asset management
 
@@ -223,7 +223,7 @@ Features: Microsoft Defender for Service / Product Offering
 
 Description:Service has an offering-specific Microsoft Defender solution to monitor and alert on security issues.
 
-Configuration Guidance: This feature is not supported to secure this service.
+Configuration Guidance: This feature isn't supported to secure this service.
 
 ### LT-4: Enable logging for security investigation
 
@@ -244,7 +244,7 @@ Feature: Azure Backup
 
 Description:The service can be backed up by the Azure Backup service.
 
-Configuration Guidance:This feature is not supported to secure this service.
+Configuration Guidance:This feature isn't supported to secure this service.
 
 Feature: Service Native Backup Capability
 
