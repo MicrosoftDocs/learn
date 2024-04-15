@@ -153,4 +153,4 @@ With our component created and the script updated, let's test the page.
 
     ![Screenshot of the Host component displaying the name and description of the cruise.](../media/host-component.png)
 
-You've created your first single-file component in Vue.js!
+You just created your first single-file component in Vue.js!
