@@ -83,7 +83,7 @@ You can scope access to Azure blob resources at the following levels, beginning 
 
  -  An individual container. At this scope, a role assignment applies to all of the blobs in the container, and to the container properties and metadata.
  -  The storage account. At this scope, a role assignment applies to all containers and their blobs.
- -  The resource group . At this scope, a role assignment applies to all of the containers in all of the storage accounts in the resource group.
+ -  The resource group. At this scope, a role assignment applies to all of the containers in all of the storage accounts in the resource group.
  -  The subscription. At this scope, a role assignment applies to all of the containers in all of the storage accounts in all of the resource groups in the subscription.
  -  A management group. At this scope, a role assignment applies to all of the containers in all of the storage accounts in all of the resource groups in all of the subscriptions in the management group.
 

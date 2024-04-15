@@ -103,7 +103,7 @@ Follow these steps to assign the built-in policy to the appropriate scope in the
     
 6.  Select **Review + create** to assign the policy definition to the specified scope.<br>
     
-    :::image type="content" source="../media/policy-assignment-create-page-53cecf86.png" alt-text="Screenshot showing how to assign the built in policy for a resource scope.":::
+    :::image type="content" source="../media/policy-assignment-create-page-53cecf86.png" alt-text="Screenshot showing how to assign the built-in policy for a resource scope.":::
     
 
 ## Monitor compliance with the key expiration policy
