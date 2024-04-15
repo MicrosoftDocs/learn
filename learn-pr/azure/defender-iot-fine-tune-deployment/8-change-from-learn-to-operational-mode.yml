@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.defender-iot-fine-tune-deployment.from-learn-to-operational-mode
-title: From learn to operational mode
+title: Change from learn to operational mode
 metadata:
-  title: From learn to operational mode
-  description: "From learn to operational mode."
+  title: Change from learn to operational mode
+  description: "Change from learn to operational mode."
   ms.date: 4/15/2024
   author: limwainstein
   ms.author: lwainstein
@@ -21,4 +21,4 @@ metadata:
   ms.service: defender-for-iot
 durationInMinutes: 5
 content: |
-  [!include[](includes/8-from-learn-to-operational-mode.md)]
+  [!include[](includes/8-change-from-learn-to-operational-mode.md)]
