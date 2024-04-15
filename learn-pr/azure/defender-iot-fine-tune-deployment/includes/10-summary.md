@@ -10,8 +10,8 @@ In this module, you learned how to fine-tune, calibrate, and triage the alerts t
 - How to create a suppression rule.
 - How to change from learning mode to operational mode.
 
-The learn module is now complete and you know all the stages for deploying a new Operational Technology sensor to Defender for IoT on the Azure portal.<!-- write anything else??-->  
-<!-- what links should go below? -->
+The learn module is now complete and you know all the stages for deploying a new Operational Technology sensor to Defender for IoT on the Azure portal.
+
 ## Learn more
 
 - [Deploy Defender for IoT for OT monitoring](/azure/defender-for-iot/organizations/ot-deploy/ot-deploy-path)

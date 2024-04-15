@@ -5,7 +5,7 @@ Once these checks are complete, you have a full and accurate list of devices tha
 ## OT sensor deployment path
 
 The following diagram shows the complete Operational Technology (OT) deployment path, with the team responsible for each phase:
-<!-- change the image, remove ends-->
+
 :::image type="content" source="../media/2-ot-deploy.png" alt-text="Diagram of the complete OT deployment process" border="false":::
 
 This learn module is divided into two sections.
@@ -16,11 +16,7 @@ Section 1 describes the fifth phase in the deployment, *Calibrate and fine-tune*
  - Unit 3 describes the information and preparations you need to complete the exercise unit.
  - Unit 4 is the exercise unit to practice the calibration and fine tuning activities.
 
-Section 2 describes the sixth phase in the deployment, *Baseline learning*, and deals with triaging the alerts. It includes these units:
-
- - Unit 5 describes the general overview of the baseline learning phase of the sensor deployment.
- - Unit 6 describes the information and preparations you need to complete the exercise unit.
- - Unit 7 is the exercise unit to practice the alert triaging activities to create the baseline.
+Section 2 describes the sixth phase in the deployment, *Baseline learning*, and deals with triaging the alerts.
 
 ## In this phase
 

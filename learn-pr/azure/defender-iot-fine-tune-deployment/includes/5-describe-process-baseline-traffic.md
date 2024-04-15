@@ -3,17 +3,13 @@ Your sensor is now fine tuned and almost fully operational. The final stage is t
 ## Operational Technology (OT) sensor deployment path
 
 The following diagram shows the complete OT deployment path, with the team responsible for each phase:
-<!-- change the image, remove ends-->
+
 :::image type="content" source="../media/5-ot-deploy.png" alt-text="Diagram of the complete OT deployment process" border="false":::
 This learn module is divided into two sections.
 
-Section 1 describes the fifth phase in the deployment, *Calibrate and fine-tune*, and deals with calibrating and fine-tuning your sensor. It includes these units:
+Section 1 described the fifth phase in the deployment, *Calibrate and fine-tune*, and deals with calibrating and fine-tuning your sensor.
 
-- Unit 2 describes the general overview of the calibration and fine tuning phase of the sensor deployment.
-- Unit 3 describes the information and preparations you need to complete the exercise unit.
-- Unit 4 is the exercise unit to practice the calibration and fine tuning activities.
-
-Section 2 describes the sixth phase in the deployment, *Baseline learning*, and deals with triaging the alerts. It includes these units:<!-- I think it is better to only have section 2 written about here?? What do you think? LW -->
+Section 2 describes the sixth phase in the deployment, *Baseline learning*, and deals with triaging the alerts. It includes these units:
 
 - Unit 5 describes the general overview of the baseline learning phase of the sensor deployment.
 - Unit 6 describes the information and preparations you need to complete the exercise unit.
@@ -21,7 +17,7 @@ Section 2 describes the sixth phase in the deployment, *Baseline learning*, and 
 
 ## Learning mode
 
-When the sensor first connects to Defender for IoT it enters the learning phase where the sensor <!-- identifies/-->learns to identify the difference between suspicious, harmful network traffic and safe traffic, including regular file transfers or data flows between devices. So that when this suspicious network traffic is identified in the future, alerts are sent to Defender for IoT, and you're able to protect your devices.
+When the sensor first connects to Defender for IoT it enters the learning phase where the sensor learns the difference between suspicious, harmful network traffic and safe traffic, including regular file transfers or data flows between devices. So that when this suspicious network traffic is identified in the future, alerts are sent to Defender for IoT, and you're able to protect your devices.
 
 In a real life scenario, the learning phase can continue for up to two weeks, and requires regularly, daily triage of the alerts.
 
