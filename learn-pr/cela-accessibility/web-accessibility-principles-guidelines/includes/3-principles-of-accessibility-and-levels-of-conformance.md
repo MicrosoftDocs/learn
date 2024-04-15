@@ -24,22 +24,22 @@ Levels are cumulative, meaning intermediate level AA web content must also meet 
 
 Let’s compare the three levels of conformance by reviewing some SAMPLE success criteria for each of the POUR web accessibility principles.
 
-**Perceivable** –
+**Perceivable**
 - A: Provide text alternatives for non-text content (e.g., images, audio, and video)
 - AA: Provide captions for live audio content (e.g., webinars, podcasts, and broadcasts)
 - AAA: Provide sign language interpretation for pre-recorded audio (e.g., videos, animations, and presentations)
 
-**Operable** –
+**Operable**
 - A: Make all functionality available from a keyboard (e.g., links, buttons, and forms).
 - AA: Provide enough time to read and use content (e.g., allow adjusting or extending time limits).
 - AAA: Provide the option to re-authenticate without losing data (e.g. save progress or resume later).
 
-**Understandable** –
+**Understandable**
 - A: Make sites appear and operate predictably (e.g., with consistent navigation and feedback mechanisms).
 - AA: Make text readable and understandable (e.g., use clear, simple language; define unfamiliar words).
 - AAA: Provide a way to expand abbreviations (e.g., by using \<abbr> element, or by providing a glossary).
 
-**Robust** –
+**Robust**
 - A: Maximize compatibility with future user agents (e.g., use valid, well-formed markup; follow standards).
 - AA: Provide name, role, and value for all user interface (UI) components, by using appropriate HTML elements and attributes or WAI-ARIA* roles and properties.
 - AAA: Provide the purpose and meaning of UI components (e.g., by using WAI-ARIA landmarks and labels.)
