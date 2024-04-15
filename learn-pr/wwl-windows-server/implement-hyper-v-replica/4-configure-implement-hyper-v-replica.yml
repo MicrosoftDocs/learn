@@ -16,11 +16,11 @@ content: |
 quiz:
   title: "Quick review"
   questions:
-  - content: "What type of failover initiates a non-disruptive failover from a replica server?"
+  - content: "What type of failover initiates a nondisruptive failover from a replica server?"
     choices:
     - content: "Test Failover"
       isCorrect: true
-      explanation: "Correct. Test Failover is a non-disruptive task that enables you to test a VM on a replica server while the primary VM is running without interrupting the replication. A Test Failover can only be initiated on replica Hyper-V host on the replicated VM."
+      explanation: "Correct. Test Failover is a nondisruptive task that enables you to test a VM on a replica server while the primary VM is running without interrupting the replication. A Test Failover can only be initiated on replica Hyper-V host on the replicated VM."
     - content: "Planned Failover"
       isCorrect: false
       explanation: "Incorrect. Planned Failover can only be initiated on the primary server on the primary VM. No data loss occurs, but the VM will be unavailable for a period of time during its startup."
