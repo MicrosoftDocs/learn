@@ -56,7 +56,7 @@ Then update the **severity** or **status** levels, which are automatically set w
 
 In Defender for IoT, the sensor assigns three **Severity** levels, which are: *High*, *Medium* and *Low*. The sensor also assigns three **Status** levels, which are *New*, *Active* and *Closed*. We recommend that you start triaging the critical level alerts first.
 
-:::image type="content" source="../media/6-alerts-main.png" alt-text="Screenshot of the alerts screen" lightbox="../media/alerts-main-1.png":::
+:::image type="content" source="../media/6-alerts-main.png" alt-text="Screenshot of the alerts screen" lightbox="../media/6-alerts-main.png":::
 
 You should update the status level based on the following descriptions:
 
