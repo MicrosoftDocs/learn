@@ -3,7 +3,7 @@ uid: learn.wwl.microsoft-defender-cloud-threat-protection
 metadata:
   title: Configure and manage threat protection by using Microsoft Defender for Cloud
   description: "This module focuses on configuring and managing security monitoring and automation solutions using Azure Monitor and Microsoft Sentinel, enabling organizations to proactively identify and respond to security incidents in their cloud environment."
-  ms.date: 03/15/2024
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
@@ -16,13 +16,21 @@ summary: This module focuses on configuring and managing security monitoring and
 abstract: |
   By the end of this module, participants will be able to:
 
-  -   Utilize Azure Monitor for comprehensive monitoring of cloud security events.
+  -
 
-  -   Aggregate diverse security data efficiently with data connectors in Microsoft Sentinel.
+  Utilize Azure Monitor for comprehensive monitoring of cloud security events.
 
-  -   Detect threats using customized analytics rules in Microsoft Sentinel.
+  -
 
-  -   Assess and automate incident responses in Microsoft Sentinel for enhanced security management.
+  Aggregate diverse security data efficiently with data connectors in Microsoft Sentinel.
+
+  -
+
+  Detect threats using customized analytics rules in Microsoft Sentinel.
+
+  -
+
+  Assess and automate incident responses in Microsoft Sentinel for enhanced security management.
 prerequisites: None
 iconUrl: /training/achievements/generic-badge.svg
 levels:
@@ -41,11 +49,16 @@ units:
 - learn.wwl.microsoft-defender-cloud-threat-protection.workload-protections
 - learn.wwl.microsoft-defender-cloud-threat-protection.protect-your-servers-with-defender-servers
 - learn.wwl.microsoft-defender-cloud-threat-protection.protect-your-databases-with-defender-databases
-- learn.wwl.microsoft-defender-cloud-threat-protection.managed-kubernetes
 - learn.wwl.microsoft-defender-cloud-threat-protection.container-security-microsoft-defender-containers
+- learn.wwl.microsoft-defender-cloud-threat-protection.managed-kubernetes
 - learn.wwl.microsoft-defender-cloud-threat-protection.defender-containers-architecture
 - learn.wwl.microsoft-defender-cloud-threat-protection.configure-microsoft-defender-containers-components
 - learn.wwl.microsoft-defender-cloud-threat-protection.vulnerability-assessments
+- learn.wwl.microsoft-defender-cloud-threat-protection.defender-for-storage
+- learn.wwl.microsoft-defender-cloud-threat-protection.malware-scanning-in-defender-for-storage
+- learn.wwl.microsoft-defender-cloud-threat-protection.detect-threats-to-sensitive-data
+- learn.wwl.microsoft-defender-cloud-threat-protection.deploy-microsoft-defender-for-storage
+- learn.wwl.microsoft-defender-cloud-threat-protection.configure-azure-built-in-policy
 - learn.wwl.microsoft-defender-cloud-threat-protection.microsoft-defender-cloud-devops-security
 - learn.wwl.microsoft-defender-cloud-threat-protection.devops-security-support-prerequisites
 - learn.wwl.microsoft-defender-cloud-threat-protection.devops-environment-security-posture

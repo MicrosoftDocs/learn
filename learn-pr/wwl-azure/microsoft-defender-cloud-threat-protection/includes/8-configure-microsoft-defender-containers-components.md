@@ -22,7 +22,7 @@ Validate the following endpoints are configured for outbound access so that the 
 
 2. In the Defender plans page, select **Defender for Containers** and select **Settings**.
 
-:::image type="content" source="../media/containers-settings-8873d7bf.png" alt-text="Screenshot showing how to enable Defender for Containers in the Settings page." lightbox="../media/containers-settings-8873d7bf.png" :::
+:::image type="content" source="../media/containers-settings-8873d7bf.png" alt-text="Screenshot showing how to enable Defender for Containers in the Settings page.":::
 
 
 > [!TIP]
@@ -33,7 +33,7 @@ Validate the following endpoints are configured for outbound access so that the 
 
 3. Turn the relevant component on to enable it.
 
-:::image type="content" source="../media/container-components-f83671a3.png" alt-text="Screenshot showing how to turn on the relevant component." lightbox="../media/container-components-f83671a3.png" :::
+:::image type="content" source="../media/container-components-f83671a3.png" alt-text="Screenshot showing how to turn on the relevant component.":::
 
 
  -  Defenders for Containers customers who joined before August 2023 and don't have Agentless discovery for Kubernetes enabled as part of Defender CSPM when they enabled the plan, must manually enable the Agentless discovery for Kubernetes extension within the Defender for Containers plan.
@@ -102,20 +102,18 @@ A dedicated Defender for Cloud recommendation provides:
 
 1. To simulate a security alert, run the following command from the cluster:
 
-    `Console`
-  
-    `kubectl get pods --namespace=asc-alerttest-662jfi039n`
-  
-    The expected response is `No resource found`.
-  
-    Within 30 minutes, Defender for Cloud detects this activity and trigger a security alert.
-  
-    > [!NOTE]
-    > To simulate agentless alerts for Defender for Containers, Azure Arc isn't a prerequisite.
+`kubectl get pods --namespace=asc-alerttest-662jfi039n`
 
-2. In the Azure portal, open Microsoft Defender for Cloud's security alerts page and look for the alert on the relevant resource:
+The expected response is `No resource found`.
 
-:::image type="content" source="../media/sample-kubernetes-security-alert-79455e5a.png" alt-text="Screenshot showing Microsoft Defender for Cloud's security alerts page." lightbox="../media/sample-kubernetes-security-alert-79455e5a.png" :::
+Within 30 minutes, Defender for Cloud detects this activity and trigger a security alert.
+
+> [!NOTE]
+> To simulate agentless alerts for Defender for Containers, Azure Arc isn't a prerequisite.
+
+2. In the [Azure portal](https://portal.azure.com/), open Microsoft Defender for Cloud's security alerts page and look for the alert on the relevant resource:
+
+:::image type="content" source="../media/sample-kubernetes-security-alert-79455e5a.png" alt-text="Screenshot showing Microsoft Defender for Cloud's security alerts page.":::
 
 
 ## Default Log Analytics workspace for AKS
@@ -135,7 +133,7 @@ When you enable the auto-provision option, a default workspace will be automatic
 
 **To check if you have a workspace assigned:**
 
-1. Sign in to the Azure portal.
+1. Sign in to the [Azure portal](https://portal.azure.com/).
 
 2. Search for and select **Policy**.
 
@@ -199,30 +197,30 @@ If the policy has already been assigned to a workspace, you'll see`Assignments (
 
 6. Select **Save**.
 
-## Remove the Defender agent
+## Remove the Defender sensor
 
 To remove this - or any - Defender for Cloud extension, it's not enough to turn off auto provisioning:
 
- -  **Enabling** auto provisioning, potentially impacts existing and future machines.
- -  **Disabling** auto provisioning for an extension, only affects the future machines - nothing is uninstalled by disabling auto provisioning.
+ -  Enabling auto provisioning, potentially impacts *existing* and *future* machines.
+ -  Disabling auto provisioning for an extension, only affects the *future* machines - nothing is uninstalled by disabling auto provisioning.
 
-You can remove the extension using the Azure Command-line interface (CLI) or a Resource Manager template as explained in the tabs below.
+To turn off the Defender for Containers plan entirely, go to Environment settings and disable the Microsoft Defender for Containers plan.
+
+Nevertheless, to ensure the Defender for Containers components aren't automatically provisioned to your resources from now on, disable auto provisioning of the extensions as explained in [Configure auto provisioning for agents and extensions from Microsoft Defender for Cloud](/azure/defender-for-cloud/monitoring-components).
+
+You can remove the extension using the REST API or a Resource Manager template as explained in the tabs below.
+
+### Use Azure CLI to remove the Defender sensor
 
 1. Remove the Microsoft Defender for with the following commands:
 
-`Azure CLI`
-
-`az login`
-
-`az account set --subscription <subscription-id>`
-
-`az aks update --disable-defender --resource-group <your-resource-group> --name <your-cluster-name>`
+```azurecli
+az login az account set --subscription <subscription-id> az aks update --disable-defender --resource-group <your-resource-group> --name <your-cluster-name>
+```
 
 Removing the extension might take a few minutes.
 
 2. To verify that the extension was successfully removed, run the following command:
-
-`Console`
 
 `kubectl get pods -n kube-system | grep microsoft-defender`
 
