@@ -1,8 +1,8 @@
-We want to create an application that allows a user to create bookings on a cruise to the moon. Over the course of a few exercises, you'll create a component for the form that the user will complete to create a booking, and another to display the list of created bookings. The first component that you'll create will host both child components.
+We want to create an application that allows a user to create bookings on a cruise to the moon. Over the course of a few exercises, you'll create a component for the form the user completes to create a booking, and another to display the list of created bookings. The first component that you'll create will host both child components.
 
 ## Install Visual Studio Code extensions
 
-Visual Studio Code has numerous extensions in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vscode/?azure-portal=true) to help in your development endeavors. We'll take advantage of two:
+Visual Studio Code has numerous extensions in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vscode/?azure-portal=true) to help in your development endeavors. Here, we take advantage of two:
 
 - [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) enables support for *.vue* files in Visual Studio Code.
 - [Vue VSCode Snippets](https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets&azure-portal=true) from Sarah Drasner enables snippets in Visual Studio Code.
@@ -25,11 +25,11 @@ Let's create the *Host* component.
 
     ![Screenshot of the snippets menu with the snippet selected.](../media/vue-create.png)
 
-    The snippet will create the default structure.
+    The snippet creates the default structure.
 
 ## Update the script section
 
-The snippet creates the `script` element for us, with `export default` already created. The `export default` command allows this component to be loaded by another component in Vue. We'll add the needed code into this section.
+The snippet creates the `script` element for us, with `export default` already created. The `export default` command allows another component to load this component in Vue. Let's add the needed code into this section.
 
 Inside the curly braces (`{ }`) of `export default`, add the following code to name the component, register the data, and add two comments for the future:
 
@@ -65,7 +65,7 @@ The `name` field sets the name of the component. The `data()` part registers the
 
 ## Add the template
 
-With the data registered, let's add the HTML to the `template` element to display the core information. We'll also add a couple of placeholders for the future.
+With the data registered, let's add the HTML to the `template` element to display the core information. Let's also add a couple of placeholders for the future.
 
 Inside the `template` element in *Host.vue*, add the following HTML to display the name and description of the cruise. The HTML includes a placeholder for two components that we'll create later.
 
@@ -127,11 +127,11 @@ body {
 }
 ```
 
-This CSS will add some structure and color to our application.
+This CSS adds some structure and color to our application.
 
 ## Set the Host component as the entry point into the application
 
-Vue CLI creates a *main.js* file, which loads *App.vue* as the entry point into the application. We created a new component called *Host* for this purpose. We'll update *main.js* to use our component.
+Vue CLI creates a *main.js* file, which loads *App.vue* as the entry point into the application. We created a new component called *Host* for this purpose. Let's update *main.js* to use our component.
 
 Open *main.js* and replace the contents by using the following code:
 
