@@ -18,7 +18,7 @@ When you want to customize your site after creating it with a template, use thes
 
 - **Name/Role/Value**: These attributes are crucial for accessible forms and interactive elements. They ensure screen readers announce the purpose and state of form fields, buttons, and other controls. Use built in buttons or web parts and provide an accessible label.
 
-    :::image type="content" source="../media/toolbox-for-call-to-action-webpart.png" alt-text="Screenshot of the toolbox for the Call to Action webpart for SharePoint sites, showing how to customize the link, button, and alignment of the webpart.":::
+    :::image type="content" source="../media/toolbox-for-call-to-action-webpart.png" alt-text="Screenshot of the toolbox for the Call to Action web part for SharePoint sites, showing how to customize the link, button, and alignment of the web part.":::
 
 - **Focus Order**: A logical focus order improves usability for users by determining the sequence in which interactive elements receive focus when navigating with keyboard or assistive technology. When using an accessible template, logical focus order is embedded from the start.
 
