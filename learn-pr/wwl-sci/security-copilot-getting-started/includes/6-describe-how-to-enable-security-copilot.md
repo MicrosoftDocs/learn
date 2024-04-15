@@ -12,7 +12,7 @@ Microsoft Copilot for Security is sold as a consumptive offering, meaning that c
 Before users can start using Copilot, admins need to provision and allocate capacity. To provision capacity:
 
 - You must have an Azure subscription.
-- You need to be an Azure owner or Azure contributor, at a resource group level, as a minimum.
+- You need to be an Azure owner or Azure contributor, at a resource group level, as a minimum. Note that a global admin doesn't necessarily have the Azure owner or Azure contributor role by default. This can be configured by enabling access management for Azure resources through the Azure portal. For details, see [Elevate access to manage all Azure subscriptions and management groups](/azure/role-based-access-control/elevate-access-global-admin)*
 
 There are two options for provisioning capacity:
 
@@ -63,7 +63,7 @@ During the setup of Copilot for Security, you're prompted to configure settings.
 
 - Decide where your prompts are evaluated - You can restrict the evaluation within your geo or allow evaluation anywhere in the world. For more information on the list of mapped locations for your geo, see Data security and privacy.
 
-- Roles - You are informed of the required roles that need to be assigned for users in your organization to use Copilot for Security.
+- Roles - You're informed of the required roles that need to be assigned for users in your organization to use Copilot for Security.
 
 ### Role permissions
 
