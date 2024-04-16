@@ -103,19 +103,19 @@ paths-ignore:
 
 ## Disable the default queries
 
-If you only want to run custom queries, you can disable the default security queries by using `disable-default-queries: true`. You should also use this flag if you're trying to construct a custom query suite that excludes a particular rule. This is to avoid having all of the queries run twice.
+If you only want to run custom queries, you can disable the default security queries by using `disable-default-queries: true`. You should also use this flag if you're trying to construct a custom query suite that excludes a particular rule. By disabling the default security quries, it avoids having all of the queries run twice.
 
 ## Excluding specific queries from analysis
 
 You can add `exclude` and `include` filters to your custom configuration file, to specify the queries you want to exclude or include in the analysis.
 
-This is useful if you want to exclude the following:
+This is useful if you want to exclude:
 
 * Specific queries from the default suites (`security`, `security-extended` and `security-and-quality`).
 * Specific queries whose results do not interest you.
 * All the queries that generate warnings and recommendations.
 
-You can use `exclude` filters similar to those in the configuration file below to exclude queries that you want to remove from the default analysis. In the example of configuration file below, both the `js/redundant-assignment` and the `js/useless-assignment-to-local` queries are excluded from analysis.
+You can use `exclude` filters similar to those in the configuration the following file to exclude queries that you want to remove from the default analysis. In the example of configuration file below, both the `js/redundant-assignment` and the `js/useless-assignment-to-local` queries are excluded from analysis.
 
 ```yml
 query-filters:
