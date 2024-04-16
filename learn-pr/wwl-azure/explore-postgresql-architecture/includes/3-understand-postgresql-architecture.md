@@ -1,4 +1,4 @@
-PostgreSQL is a client/server relational database management system (RDMS). PostgreSQL also supports a wide range of extensions, such as the Citus extension in Azure database for PostgreSQL Hyperscale Citus option. After an extension is loaded into the database, it functions like any built-in feature.
+PostgreSQL is a client/server relational database management system (RDMS). PostgreSQL also supports a wide range of extensions, such as the Citus extension in the Azure Cosmos DB for PostgreSQL option. After an extension is loaded into the database, it functions like any built-in feature.
 
 PostgreSQL also has its own query language called pgsql. In addition, PostgreSQL supports procedural languages such as Ruby on Rails.
 

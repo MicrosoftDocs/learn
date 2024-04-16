@@ -4,12 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/27/2022
+  ms.date: 04/16/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -24,9 +24,9 @@ quiz:
     - content: "Flexible server."
       isCorrect: false
       explanation: "That's incorrect. Flexible server offers more options to configure the server and can be scaled up. However, this start-up may require more scaling options than flexible server can provide."
-    - content: "Hyperscale Citus."
+    - content: "Azure Cosmos DB for PostgreSQL."
       isCorrect: true
-      explanation: "That's correct. Hyperscale Citus will allow the start-up company to first use the Basic tier and then scale out as they win customers and grow."
+      explanation: "That's correct. Azure Cosmos DB for PostgreSQL will allow the start-up company to first use a single node and then scale out as they win customers and grow."
   - content: "Which of the following best describes the architecture of PostgreSQL?"
     choices:
     - content: "Client/server."
