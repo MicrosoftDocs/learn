@@ -4,7 +4,7 @@ title: Exercise - Return values and input parameters of methods
 metadata:
   title: Exercise - Return values and input parameters of methods
   description: "Exercise - Return values and input parameters of methods"
-  ms.date: 02/22/2024
+  ms.date: 04/16/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
@@ -27,15 +27,15 @@ quiz:
     - content: "It's a string value."
       isCorrect: false
       explanation: "Incorrect. A return value could be a string, but it could also be an int32, a float, a custom type, or something else."
-  - content: "What are input parameters?"
+  - content: "What are method parameters?"
     choices:
-    - content: "Value types (or variables) inside a method."
+    - content: "Variables that are used inside a method."
       isCorrect: true
-      explanation: "Correct! This is the correct definition of an input parameter."
+      explanation: "Correct! Method parameters are the variables used inside the method. The calling statement passes arguments to the method. Arguments are used to assign values to the parameters."
     - content: "Values returned by a method."
       isCorrect: false
-      explanation: "Incorrect. Input values are passed into a method, not returned from a method."
-    - content: "The values passed into a method in the calling statement."
+      explanation: "Incorrect. The term \"return value\" does not refer to one or more method parameters."
+    - content: "Variables that are passed into a method by the calling statement."
       isCorrect: false
       explanation: "Incorrect. The values passed to a method in the calling statement are referred to as arguments."
   - content: "What is an overloaded method?"
