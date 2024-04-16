@@ -103,13 +103,11 @@ paths-ignore:
 
 ## Disable the default queries
 
-If you only want to run custom queries, you can disable the default security queries by using `disable-default-queries: true`. You should also use this flag if you're trying to construct a custom query suite that excludes a particular rule. By disabling the default security quries, it avoids having all of the queries run twice.
+If you only want to run custom queries, you can disable the default security queries by using `disable-default-queries: true`. You should also use this flag if you're trying to construct a custom query suite that excludes a particular rule. This avoids having all of the queries run twice.
 
 ## Excluding specific queries from analysis
 
-You can add `exclude` and `include` filters to your custom configuration file, to specify the queries you want to exclude or include in the analysis.
-
-This is useful if you want to exclude:
+You can add `exclude` and `include` filters to your custom configuration file, to specify the queries you want to exclude or include in the analysis, such as: 
 
 * Specific queries from the default suites (`security`, `security-extended` and `security-and-quality`).
 * Specific queries whose results do not interest you.
