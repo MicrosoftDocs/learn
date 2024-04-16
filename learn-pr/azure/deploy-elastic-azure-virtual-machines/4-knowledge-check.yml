@@ -5,11 +5,10 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: "This unit checks user's understanding of the content in the module for deploying Elastic on Azure virtual machines."
-  ms.date: 6/15/2021
+  ms.date: 01/10/2023
   author: yenchiho
   ms.author: yenchiho
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
 quiz:

@@ -1,5 +1,3 @@
-
-
 Backup of Azure VM-based DBMS is typically performed by using DBMS-specific methods. Backing up a database should facilitate the ability to restore it to any point in time.
 
 Two types of backups must be performed to achieve this capability:

@@ -4,12 +4,11 @@ title: Introduction
 metadata:
   unitType: introduction  
   title: Introduction to Microsoft Azure Cache for Redis
-  description: Evaluate whether Azure Cache for Redis is the appropriate caching solution for your apps
-  ms.date: 04/09/2021  
+  description: Evaluate whether Azure Cache for Redis is the appropriate caching solution for your apps.
+  ms.date: 04/04/2024  
   author: tchristiani
   ms.author: terrychr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]

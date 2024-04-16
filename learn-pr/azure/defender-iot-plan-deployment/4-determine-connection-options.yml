@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-plan-deployment.determine-connection-options
+title: Determine cloud connection options for an OT network sensor
+metadata:
+  title: Determine cloud connection options for an OT network sensor
+  description: Determine cloud connection options for an OT network sensor
+  ms.date: 11/29/2023
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: unit
+  ms.service: defender-for-iot
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-determine-connection-options.md)]
+  
+quiz:
+
+  questions:
+  
+  - content: "What advantage does a cloud connection provide for on-premises sensors?"
+    choices:
+    - content: "Sensor detected data is delivered to Azure for analysis and sharing."
+      isCorrect: true
+      explanation: "Connecting to the cloud allows you to deliver sensor data to Azure for analysis and sharing, and to receive Microsoft threat intelligence package updates automatically."
+    - content: "Sensor detected data is delivered to an on-premises management console for analysis and sharing."
+      isCorrect: false 
+      explanation: "Cloud connected sensors don't use an on-premises management console for centralized analysis and sharing."
+    - content: "Sensor data is isolated from the network and viewed from the sensor console."
+      isCorrect: false
+      explanation: "Connecting to the cloud isn't an air-gapped solution. Sensor data isn't isolated from the network."
+
+  - content: "If you have a cloud connection that requires a private connection between your sensor and Azure, which type of connection should you choose?"
+    choices:
+    - content: "Multicloud connection" 
+      isCorrect: false
+      explanation: "A multicloud connection is used when you have sensors hosted in multiple public clouds."
+    - content: "Proxy connection with an Azure proxy"
+      isCorrect: true
+      explanation: "When you need a private connection between your sensor and Azure, you can connect through a proxy in the Azure virtual network."
+    - content: "Proxy connections with proxy chaining"
+      isCorrect: false
+      explanation: "Proxy chaining allows you to connect your sensors through multiple proxies."

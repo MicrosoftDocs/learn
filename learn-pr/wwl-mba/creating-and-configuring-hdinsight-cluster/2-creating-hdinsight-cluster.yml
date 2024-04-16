@@ -4,11 +4,10 @@ title: Creating an HDInsight cluster
 metadata:
   title: Creating an HDInsight cluster
   description: "Creating an HDInsight cluster"
-  ms.date: 11/22/2022
+  ms.date: 04/05/2024
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

@@ -3,13 +3,14 @@ uid: learn.azure.deploy-java-spring-boot-app-service-mysql.4-deploy
 title: Deploy a Spring Boot application to Azure
 metadata:
   title: Deploy a Spring Boot application to Azure
-  description: Deploy a Spring Boot application to Azure.
-  ms.date: 11/16/2020
+  description: Learn how to deploy a Spring Boot web application to Azure.
+  ms.date: 11/08/2023
   author: roryp
   ms.author: ropreddy
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
+  ms.topic: unit
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-extended-java
   ms.contributors: ropreddy-11202020
 durationInMinutes: 3
 content: |

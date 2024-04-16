@@ -4,11 +4,10 @@ title: Compile a checklist for creating an Azure Virtual Machine
 metadata:
   title: Compile a checklist for creating an Azure Virtual Machine
   description: Compile a checklist for creating an Azure Virtual Machine
-  ms.date: 09/13/2022
-  author: cynthn
-  ms.author: cynthn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 05/19/2023
+  author: ju-shim
+  ms.author: jushiman
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/2-compile-a-checklist-for-creating-a-vm.md)]

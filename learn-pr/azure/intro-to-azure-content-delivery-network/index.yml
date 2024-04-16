@@ -2,20 +2,20 @@
 uid: learn.azure.intro-to-azure-content-delivery-network
 metadata:
   moduleType: introduction
-  title: Introduction to Azure Content Delivery Network (CDN)
-  description: Learn what Azure Content Delivery Network (CDN) does, how it works, and when you should choose to use Azure CDN as a solution to meet your organization's needs.
-  ms.date: 12/22/2022
+  title: Introduction to Azure Content Delivery Network
+  description: Learn what Azure Content Delivery Network does, how it works, and when you should choose to use Azure Content Delivery Network as a solution to meet your organization's needs.
+  ms.date: 03/20/2024
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom: team=cloud_advocates
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Introduction to Azure Content Delivery Network (CDN)
-summary: Azure Content Delivery Network (Azure CDN) allows an organization to deliver content that requires significant bandwidth with a minimum amount of latency to clients all across the world. This module explains what Azure CDN does, how it works, and when you should choose to use Azure CDN as a solution to meet your organization's needs.
+  ms.topic: module-intro-to-product
+  ms.service: azure-cdn
+title: Introduction to Azure Content Delivery Network
+summary: Azure Content Delivery Network allows an organization to deliver content that requires significant bandwidth with a minimum amount of latency to clients all across the world. This module explains what Azure Content Delivery Network does, how it works, and when you should choose Azure Content Delivery Network as a solution to meet your organization's needs.
 abstract: |
   In this module, you will:
-  - Learn what Azure CDN is and the functionality it provides.
-  - Determine whether Azure CDN meets the needs of your organization.
+  - Learn what Azure Content Delivery Network is and the functionality it provides.
+  - Determine whether Azure Content Delivery Network meets the needs of your organization.
 prerequisites: |
   - Understanding of basic networking concepts.
   - Familiarity with how web content is requested and delivered on the internet.

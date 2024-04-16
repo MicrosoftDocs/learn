@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.protect-identities-with-aad-idp.4-investigate-detected-risks
 metadata:
-  title: Investigate and remediate risks detected by Azure AD Identity Protection
-  description: Investigate and remediate risks detected by Azure AD Identity Protection
-  ms.date: 03/23/2019
+  title: Investigate and remediate risks detected by Microsoft Entra ID Protection
+  description: Investigate and remediate risks detected by Microsoft Entra ID Protection
+  ms.date: 07/28/2023
   author: MicrosoftGuyJFlo
   ms.author: joflore
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Investigate and remediate risks detected by Azure AD Identity Protection
+  ms.topic: unit
+title: Investigate and remediate risks detected by Microsoft Entra ID Protection
 durationInMinutes: 10
 content: |
   [!include[](includes/4-investigate-detected-risks.md)]

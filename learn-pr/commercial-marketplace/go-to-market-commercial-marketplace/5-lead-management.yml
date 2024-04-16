@@ -4,11 +4,10 @@ title: Commercial marketplace lead management
 metadata:
   title: Commercial marketplace lead management
   description: Overview of receiving customer leads from your commercial marketplace listing, including resources to configure your CRM
-  ms.date: 11/10/2020
+  ms.date: 04/04/2024
   author: marleva
   ms.author: maevan
-  ms.topic: interactive-tutorial
-  ms.service: marketplace
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/5-lead-management.md)]

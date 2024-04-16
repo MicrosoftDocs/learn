@@ -4,11 +4,10 @@ title: Interaction models
 metadata:
   title:  Interaction models
   description: Introduction for Interaction models
-  ms.date: 09/09/2021
-  author: Sean-Kerawala
-  ms.author: sekerawa
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.date: 09/30/2023
+  author: marlenaklein-msft
+  ms.author: marlenaklein
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/1-6-interaction-models.md)]

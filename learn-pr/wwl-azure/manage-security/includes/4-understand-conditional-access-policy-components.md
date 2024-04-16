@@ -40,5 +40,5 @@ Document the answers to questions for each policy before building it out.
  -  What are the organization’s trusted locations?
  -  What locations will be included in or excluded from the policy?
  -  What client app types (browser, mobile, desktop clients, apps with legacy authentication methods) will be included in or excluded from the policy?
- -  Do you have policies that would drive excluding Azure AD Joined devices or Hybrid Azure AD joined devices from policies?
+ -  Do you have policies that would drive excluding Microsoft Entra joined devices or Microsoft Entra hybrid joined devices from policies?
  -  If using Identity Protection, do you want to incorporate sign-in risk protection?

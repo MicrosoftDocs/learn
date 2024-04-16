@@ -5,10 +5,9 @@ metadata:
   title: Tailor the message for your audience
   description: This unit teaches you how to tailor the message for your audience.
   author: czhu89
-  ms.date: 04/25/2019
+  ms.date: 04/04/2023
   ms.author: cazh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-startups
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/3-tailor-the-message.md)]

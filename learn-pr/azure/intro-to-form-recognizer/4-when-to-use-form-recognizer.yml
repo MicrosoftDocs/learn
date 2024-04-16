@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-form-recognizer.when-to-use-form-recognizer
-title: When to use Form Recognizer
+title: When to use Azure AI Document Intelligence
 metadata:
-  title: When to user Form Recognizer
-  description: When to use Form Recognizer
-  ms.date: 03/14/2021
+  title: When to user Azure AI Document Intelligence
+  description: When to use Azure AI Document Intelligence
+  ms.date: 03/14/2023
   author: laujan
   ms.author: lajanuar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-when-to-use-form-recognizer.md)]
+  [!INCLUDE[](includes/4-when-to-use-form-recognizer.md)]

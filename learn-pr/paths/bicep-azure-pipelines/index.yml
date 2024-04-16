@@ -7,8 +7,7 @@ metadata:
   ms.date: 04/28/2022
   author: johndowns
   ms.author: jodowns
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Deploy Azure resources by using Bicep and Azure Pipelines
 summary: |
   Gain all of the benefits of infrastructure as code by using an automated pipeline to deploy your Bicep templates, 
@@ -37,8 +36,6 @@ roles:
 products:
 - azure
 - azure-resource-manager
-subjects:
-- development-tools
 modules:
 - learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines
 - learn.azure.authenticate-azure-deployment-pipeline-service-principals

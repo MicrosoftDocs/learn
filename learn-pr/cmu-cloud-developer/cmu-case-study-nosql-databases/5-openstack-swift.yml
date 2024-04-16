@@ -4,11 +4,10 @@ title: 'Cloud object storage: OpenStack Swift and Ceph Object Gateway'
 metadata:
   title: 'Cloud object storage: OpenStack Swift and Ceph Object Gateway'
   description: Cloud object storage cases studies for OpenStack Swift and Ceph Object Gateway.
-  ms.date: 03/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 17
 content: |

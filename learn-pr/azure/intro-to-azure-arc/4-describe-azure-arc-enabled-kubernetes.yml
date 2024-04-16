@@ -3,13 +3,12 @@ uid: learn.azure.intro-to-azure-arc.4-describe-azure-arc-enabled-kubernetes
 metadata:
   title: Describe Azure Arc-enabled Kubernetes
   description: Describe Azure Arc-enabled Kubernetes
-  ms.date: 04/10/2023
+  ms.date: 12/07/2023
   author: JnHs
   ms.author: jenhayes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: e2e-hybrid
 title: Describe Azure Arc-enabled Kubernetes
-durationInMinutes: 7
+durationInMinutes: 5
 content: |
   [!include[](includes/4-describe-azure-arc-enabled-kubernetes.md)]

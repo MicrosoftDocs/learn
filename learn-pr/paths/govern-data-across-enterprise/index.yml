@@ -6,8 +6,7 @@ metadata:
   ms.date: 07/19/2022
   author: wwlpublish
   ms.author: shlindsay
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Govern data across an enterprise
 prerequisites: |
   Familiarity with the Azure data ecosystem.

@@ -3,11 +3,10 @@ uid: learn.student-evangelism.optimize-basketball-player-rest-breaks.4-create-ma
 metadata:
   title: Exercise - Create a machine learning model based on player data
   description: Create a machine learning model based on player data
-  ms.date: 03/10/2021
+  ms.date: 10/12/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Exercise - Create a machine learning model based on player data
 durationInMinutes: 5

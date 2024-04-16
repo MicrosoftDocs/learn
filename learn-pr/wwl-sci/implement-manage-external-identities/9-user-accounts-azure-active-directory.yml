@@ -1,16 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-manage-external-identities.user-accounts-azure-active-directory
-title: Manage external user accounts in Azure Active Directory
+title: Manage external user accounts in Microsoft Entra ID
 metadata:
-  title: Manage external user accounts in Azure Active Directory
-  description: "Manage external user accounts in Azure Active Directory"
-  ms.date: 02/03/2023
+  title: Manage external user accounts in Microsoft Entra ID
+  description: "Manage external user accounts in Microsoft Entra ID"
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 9
 content: |
   [!include[](includes/9-user-accounts-azure-active-directory.md)]

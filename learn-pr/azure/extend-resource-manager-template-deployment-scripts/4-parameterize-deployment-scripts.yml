@@ -6,11 +6,12 @@ metadata:
   description: Understand the different ways to provide data to deployment scripts.
   author: smurawski
   ms.author: stmuraws
-  ms.date: 05/12/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 05/03/2023
+  ms.topic: unit
   zone_pivot_groups: arm-template-language-azure-shell-interface
-  ms.custom: team=cloud_advocates
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-bicep
   ms.contributors: stmuraws-05172021
 durationInMinutes: 5
 content: |

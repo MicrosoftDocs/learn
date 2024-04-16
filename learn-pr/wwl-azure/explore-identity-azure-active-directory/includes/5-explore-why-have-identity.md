@@ -1,16 +1,15 @@
-
-We have talked about Zero Trust and about identity as the control plane for accessing resources.  By why use identity?
+We have talked about Zero Trust and about identity as the control plane for accessing resources.  But why use identity?
 
 ### Identity gives the ability:
 
-- To prove who or what we are - **Authentication**
+- To prove who or what, we are - **Authentication**
 - To get permissions to do something - **Authorization**
 - To report on what was done - **Auditing**
 - To IT manage and self administer an identity - **Administration**
 
 | Authentication | Authorization | Administration | Auditing |
 | :------------- | :------------ | :------------- | :------- |
-| :::image type="icon" source="../media/icon-authentication.png" alt-text="Diagram of a thumbprint to represent the authentication of an identity."::: | :::image type="icon" source="../media/icon-authorization.png" alt-text="Diagram of a hand giving items to represent the authorization to access resources."::: | :::image type="icon" source="../media/icon-administration.png" alt-text="Diagram of a hand with a wrench to represent modifying and maintaining access and resources."::: | :::image type="icon" source="../media/icon-audit.png" alt-text="Diagram of checklist with a few items marked to represent the process of checking the usage of resources by an identity"::: |
+| :::image type="icon" source="../media/icon-authentication.png" alt-text="Diagram of a thumbprint to represent the authentication of an identity."::: | :::image type="icon" source="../media/icon-authorization.png" alt-text="Diagram of a hand giving items to represent the authorization to access resources."::: | :::image type="icon" source="../media/icon-administration.png" alt-text="Diagram of a hand with a wrench to represent modifying and maintaining access and resources."::: | :::image type="icon" source="../media/icon-audit.png" alt-text="Diagram of checklist with a few items marked to represent the process of checking the usage of resources by an identity."::: |
 | User sign on experience | User sign on experience | Single view management | Track who does what, when, where and how |
 | Trusted source(s) | Can a user access the resource | Application of business rules | Focused alerting |
 | Federative protocols | What can they do when they access it? | Automated requests, approvals, and access assignment | In-depth collated reporting |
@@ -18,7 +17,7 @@ We have talked about Zero Trust and about identity as the control plane for acce
 
 ### What is an identity provider (IdP)
 
-An identity provider (IdP) is a system that creates, manages and stores digital identities.  Microsoft Azure Active Directory is an example. The capabilities and features of identity providers can vary. The most common components are:
+An identity provider (IdP) is a system that creates, manages and stores digital identities.  Microsoft Entra ID is an example. The capabilities and features of identity providers can vary. The most common components are:
 
 - A repository of user identities
 - An authentication system

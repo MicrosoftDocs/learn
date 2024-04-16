@@ -4,11 +4,10 @@ title: Incrementally increase readiness
 metadata:
   title: exercise
   description: "CluedIn was designed so that you can decide to improve the data in any order that you want. For example, we could either enrich data first and deduplicate the data afterwards or we could clean the data first and then deduplicate the data and then enrich the data afterwards. This means your data can be continually improved without having to rework the entire system."
-  ms.date: 03/28/2023
+  ms.date: 11/29/2023
   author: whhender
   ms.author: whhender
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/11-exercise-incrementally-increase-readiness.md)]

@@ -2,12 +2,12 @@
 uid: learn.wwl.implement-versioning-strategy
 metadata:
   title: Implement a versioning strategy
-  description: "Implement a versioning strategy"
+  description: Implement a versioning strategy
   ms.date: 11/01/2022
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Implement a versioning strategy
 summary: This module explains versioning strategies for packaging, best practices for versioning, and package promotion.
 abstract: |

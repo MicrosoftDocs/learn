@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-azure-ai-services.understand-authentication
+title: Understand authentication for Azure AI services
+metadata:
+  title: Understand authentication for Azure AI services
+  description: "Understand authentication for Azure AI services"
+  ms.date: 12/05/2023
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-understand-authentication.md)]

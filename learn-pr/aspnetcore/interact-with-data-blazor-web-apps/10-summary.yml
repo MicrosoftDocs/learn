@@ -5,11 +5,11 @@ metadata:
   unitType: learning-summary
   title: Summary
   description: "Review what you have learned about Blazor and data interaction."
-  ms.date: 8/13/2021
+  ms.date: 02/09/2023
   author: csharpfritz
   ms.author: jefritz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-blazor
+  ms.manager: markl
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/10-summary.md)]

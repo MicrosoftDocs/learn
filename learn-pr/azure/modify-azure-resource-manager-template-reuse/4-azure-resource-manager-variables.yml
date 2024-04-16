@@ -4,11 +4,12 @@ title: Reuse expressions by using Azure Resource Manager template variables
 metadata:
   title: Reuse expressions by using Azure Resource Manager template variables
   description: Discover how to work with Azure Resource Manager variables to reuse expressions in your template.
-  ms.date: 07/10/2020
+  ms.date: 01/30/2024
   author: tfitzmac
   ms.author: tomfitz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-arm-template
 durationInMinutes: 3
 content: |
   [!include[](includes/4-azure-resource-manager-variables.md)]

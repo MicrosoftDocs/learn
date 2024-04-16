@@ -4,11 +4,10 @@ title: Explore best practices for module 5
 metadata:
   title: Explore best practices for module 5
   description: "Explore best practices for module 5"
-  ms.date: 03/21/2023
+  ms.date: 10/19/2023
   author: wwlpublish
   ms.author: tsheppard
-  ms.topic: interactive-tutorial
-  ms.prod: dynamics-365
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/8-explore-best-practices-module-5.md)]

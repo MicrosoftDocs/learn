@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn-sqlserver.use-sql-server-query-tuning-assistant.4-tune-queries-qta
-title: Tune queries with QTA
+title: Tune queries with the Query Tuning Assistant (QTA)
 metadata:
-  title: Tune queries with QTA
-  description: Tune queries with QTA
-  ms.date: 01/31/2019
+  title: Tune queries with the Query Tuning Assistant (QTA)
+  description: Tune queries with the Query Tuning Assistant (QTA).
+  ms.date: 01/19/2024
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-sqlserver
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-tune-queries-qta.md)]

@@ -4,11 +4,12 @@ title: Exercise - Use Azure Resource Manager functions to create expressions
 metadata:
   title: Exercise - Use Azure Resource Manager functions to create expressions
   description: Use several Azure Resource Manager functions to create an expression for the unique Azure Storage account name.
-  ms.date: 07/10/2020
+  ms.date: 01/30/2024
   author: tfitzmac
   ms.author: tomfitz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-arm-template
   zone_pivot_groups: azure-shell-interface
 azureSandbox: true
 durationInMinutes: 7

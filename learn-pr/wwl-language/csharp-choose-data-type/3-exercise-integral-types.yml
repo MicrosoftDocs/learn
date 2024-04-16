@@ -3,26 +3,27 @@ uid: learn.languages.csharp-choose-data-type.exercise-integral-types
 title: Exercise - Discover integral types
 metadata:
   title: Exercise - Discover integral types
-  description: "Exercise - Discover integral types"
-  ms.date: 02/25/2023
+  description: "Discover integral types, and practice using signed integral types in C#."
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-integral-types.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which data type has a range of whole numbers between 0 and 5000 in C# code?"
+  - content: "Which data type has a range of whole numbers between 0 and 65535 in C# code?"
     choices:
-    - content: "sbyte"
+    - content: "Sbyte"
       isCorrect: false
-      explanation: "That’s incorrect. ushort represents values 0 to 65535."
-    - content: "ushort"
+      explanation: "Incorrect. The sbyte value type represents integers with values ranging from -128 to 127."
+    - content: "Ushort"
       isCorrect: true
-      explanation: "Correct. ushort represents values 0 to 65535."
-    - content: "ubyte"
+      explanation: "Correct, ushort represents values 0 to 65535."
+    - content: "byte"
       isCorrect: false
-      explanation: "Incorrect. ushort represents values 0 to 65535."
+      explanation: "Incorrect. The unsigned byte referred to as \"byte\", only has values 0 to 255."

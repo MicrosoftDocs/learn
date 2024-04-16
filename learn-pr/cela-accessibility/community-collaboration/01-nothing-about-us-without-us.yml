@@ -4,11 +4,10 @@ title: Practice "nothing about us without us"
 metadata:
   title: Practice "nothing about us without us"
   description: This content is part of the "Community collaboration for accessible design" module.
-  ms.date: 10/27/2021
+  ms.date: 05/05/2023
   author: kaitlynjones
   ms.author: kaitlynjones
-  ms.topic: interactive-tutorial
-  ms.prod: learning-gaming-accessibility
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/01-nothing-about-us-without-us.md)]

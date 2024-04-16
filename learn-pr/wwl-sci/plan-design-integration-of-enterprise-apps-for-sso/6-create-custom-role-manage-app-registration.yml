@@ -4,13 +4,12 @@ title: Exercise create a custom role to manage app registration
 metadata:
   title: Exercise create a custom role to manage app registration
   description: "Exercise create a custom role to manage app registration"
-  ms.date: 02/07/2023
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 5
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 8
 content: |
   [!include[](includes/6-create-custom-role-manage-app-registration.md)]

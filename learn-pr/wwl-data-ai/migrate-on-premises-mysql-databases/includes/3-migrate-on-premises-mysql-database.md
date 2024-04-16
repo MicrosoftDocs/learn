@@ -4,8 +4,6 @@ Having explored how Azure Database for MySQL supports and scales MySQL on Azure,
 
 In this unit, you'll see how to create an instance of the Azure Database for MySQL service using the Azure portal. If you need to create many instances of this service, you can script the process by using the Azure CLI.
 
-> [!NOTE]
-> The online migration for MySQL is not currently supported in Azure Data Migration Service (DMS).
 ### Create an Azure Database for MySQL using the portal
 
 In the Azure portal, select the **Databases** command in **Azure Marketplace**, and select **Azure Database for MySQL**.
@@ -17,7 +15,7 @@ Enter the details for the service. These include:
 - **Server name**. This must be a unique name between 3 and 63 characters, containing only lowercase letters, numbers, and hyphens.
 - **Data source**. If you're creating a new server for migration purposes, select **None**. The **Backup** option enables you to restore a backup taken from another instance of Azure Database for MySQL into this service.
 - **Admin username**. This is the name of a user account that will be created with administrative privileges. Azure creates some accounts for its own use, and other names are restricted; you can't use **azure_superuser**, **admin**, **administrator**, **root**, **guest**, or **public**.
-- **Password**. This must be between 8 and 128 characters. It should contain a mixture of uppercase and lowercase letters, numbers, and nonalphanumeric characters. Azure Database for MySQL currently only supports password authentication; integration with Azure Active Directory isn't available yet.
+- **Password**. This must be between 8 and 128 characters. It should contain a mixture of uppercase and lowercase letters, numbers, and nonalphanumeric characters. Azure Database for MySQL currently only supports password authentication; integration with Microsoft Entra ID isn't available yet.
 - **Version**. Select the version that corresponds to the on-premises database that you're migrating.
 - **Compute + storage**. Select **Configure server** to set the pricing tier and specify the resources that you require for the service. The options were covered in Lesson 1. Remember that, if you select the **General purpose** or **Memory optimized** pricing tiers, you scale up and down the number of virtual processor cores later. However, you can't reduce the amount of storage; it can only increase after the server has been created.
 
@@ -81,8 +79,9 @@ For more information on **mysqldump**, see [mysqldump — A Database Backup Prog
 > [!NOTE]
 > You also use **mysqldump** to export specific tables by listing their names after the database name.
 
-> [!NOTE]
-> You can't currently use the Azure Database Migration Service to perform an offline migration of a MySQL database.
+#### Azure Database Migration Service (DMS) 
+
+In addition to offline migrations to Azure Database for MySQL, DMS supports cross-region, cross-resource group, and cross-subscription migrations, so you can select a region, resource group, and subscription for the target server that is different than what is specified for your source server.
 
 ### Migrate by using dump and restore
 
@@ -111,3 +110,16 @@ Perform the following steps to migrate a database by using the dump and restore 
     ```bash
     mysql -h [host name] -u [username] -p[password] [database name] < db_data.sql
     ```
+
+## Perform online migration
+
+DMS also supports online migration to Azure Database for MySQL. For the online migration, we recommend you select General Purpose 16 vCores compute for the target flexible server for faster migrations. Scale back to the desired compute size for the target server after migration is complete, based on the detail in the following table.
+
+| Single Server Pricing Tier | Single Server VCores | Flexible Server Compute Size | Flexible Server Compute Tier |
+| ------------- | ------------- |:-------------:|:-------------:|
+| Basic | 1 | Burstable | Standard_B1s |
+| Basic | 2 | Burstable | Standard_B2s |
+| General Purpose | 4 | General Purpose | Standard_D4ds_v4 |
+| General Purpose | 8 | General Purpose | Standard_D8ds_v4 |
+
+To learn more about online migration to Azure Database for MySQL, see [Tutorial: Migrate Azure Database for MySQL - Single Server to Flexible Server online using DMS via the Azure portal](/azure/dms/tutorial-mysql-azure-single-to-flex-online-portal).

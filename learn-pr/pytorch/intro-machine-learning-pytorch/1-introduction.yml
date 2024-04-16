@@ -6,11 +6,12 @@ metadata:
   description: In this unit we introduce the core PyTorch concepts covered in this course.
   author: cassiebreviu
   ms.author: ruyakubu
-  ms.date: 04/14/2020
-  ms.topic: interactive-tutorial
-  ms.service: machine-learning
+  ms.date: 08/05/2023
+  ms.topic: unit
   ms.custom:
-  - team=cloud_advocates
+    - team=cloud_advocates
+    - build-2023
+    - build-2023-dataai
   ms.contributors:
   - cassieb-04262021
 durationInMinutes: 1

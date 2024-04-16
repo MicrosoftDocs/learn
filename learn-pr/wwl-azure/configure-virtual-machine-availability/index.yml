@@ -3,21 +3,33 @@ uid: learn.wwl.configure-virtual-machine-availability
 metadata:
   title: Configure virtual machine availability
   description: "Learn how to configure virtual machine availability including vertical and horizontal scaling."
-  ms.date: 02/06/2023
+  ms.date: 03/13/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: ai-assisted
 title: Configure virtual machine availability
-summary: Learn how to configure virtual machine availability including vertical and horizontal scaling.
+summary: |
+  Learn how to configure virtual machine availability including vertical and horizontal scaling.
+
+  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   In this module, you learn how to:
+
   - Implement availability sets and availability zones.
+
   - Implement update and fault domains.
+
   - Implement Azure Virtual Machine Scale Sets.
+
   - Autoscale virtual machines.
 prerequisites: |
-  None
+  - Familiarity with creating and managing Azure virtual machines.
+
+  - General knowledge of scaling infrastructure resources in fluctuating workloads.
 iconUrl: /training/achievements/configure-virtual-machine-availability.svg
 levels:
 - intermediate

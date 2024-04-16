@@ -1,5 +1,3 @@
-
-
 Setting up a Windows Server failover cluster for an SAP ASCS/SCS instance involves these tasks:
 
 - Add cluster nodes to the cluster.
@@ -9,7 +7,7 @@ Setting up a Windows Server failover cluster for an SAP ASCS/SCS instance involv
 
 Set up the failover cluster by using Failover Cluster Manager:
 
-1. In Failover Cluster Manager, select **Create Cluster**, and then add only the name of the first cluster (node A). Do not add the second node yet; you add the second node in a later step.
+1. In Failover Cluster Manager, select **Create Cluster**, and then add only the name of the first cluster (node A). Don't add the second node yet; you add the second node in a later step.
 2. Enter the network name (virtual host name) of the cluster.
 3. After you've created the cluster, run a cluster validation test.
 4. You can ignore any warnings about disks at this point in the process. At this stage, you don't need to worry about having a quorum.
@@ -26,14 +24,14 @@ When creating a storage account, keep in mind that:
 
 - You can't use a Blob storage account for a Cloud Witness.
 - You can't use Azure Premium Storage for a Cloud Witness.
-- For Replication, select Locally-redundant storage (LRS). Failover Clustering uses the blob file as the arbitration point, which requires some consistency guarantees when reading the data. Therefore you must select Locally-redundant storage for Replication type.
+- For Replication, select Locally redundant storage (LRS). Failover Clustering uses the blob file as the arbitration point, which requires some consistency guarantees when reading the data. Therefore you must select Locally redundant storage for Replication type.
 
-When you create a storage account, it is associated with two Access Keys that are automatically generated - Primary Access key and Secondary Access key. For a first-time creation of Cloud Witness, use the Primary Access Key. There is no restriction regarding which key to use for Cloud Witness. You can identify the values of a Storage Account keys directly from the Azure portal or programmatically.
+When you create a storage account, it's associated with two Access Keys that are automatically generated - Primary Access key and Secondary Access key. For a first-time creation of Cloud Witness, use the Primary Access Key. There is no restriction regarding which key to use for Cloud Witness. You can identify the values of a Storage Account keys directly from the Azure portal or programmatically.
 
 When you create a Storage Account, the following URLs are generated using the format: `https://[Storage Account Name].[Storage Type].[Endpoint];`. Cloud Witness always uses Blob as the storage type. Azure uses .core.windows.net as the Endpoint. When configuring Cloud Witness, you can configure it with a different endpoint as per your scenario (for example the Microsoft Azure datacenter in China has a different endpoint).
 
 > [!NOTE]
-> The endpoint URL is generated automatically by Cloud Witness resource and there is no extra step of configuration necessary for the URL.
+> The endpoint URL is generated automatically by Cloud Witness resource and there's no extra step of configuration necessary for the URL.
 
 ### To configure Cloud Witness as a Quorum Witness
 
@@ -55,15 +53,15 @@ Upon successful configuration of Cloud Witness, you can view the newly created w
 When configuring a Cloud Witness as a quorum witness for your Failover Cluster, consider the following:
 
 - Instead of storing the Access Key, your Failover Cluster will generate and securely store a Shared Access Security (SAS) token.
-- The generated SAS token is valid as long as the Access Key remains valid. When rotating the Primary Access Key, it is important to first update the Cloud Witness (on all your clusters that are using that Storage Account) with the Secondary Access Key before regenerating the Primary Access Key.
+- The generated SAS token is valid as long as the Access Key remains valid. When rotating the Primary Access Key, it's important to first update the Cloud Witness (on all your clusters that are using that Storage Account) with the Secondary Access Key before regenerating the Primary Access Key.
 - Cloud Witness uses HTTPS REST interface of the Azure Storage Account service. This means it requires the HTTPS port to be open on all cluster nodes.
 
 ## Configure failover detection parameters
 
-After you successfully install the Windows failover cluster, you need to change some thresholds so they adapt failover detection to conditions in Azure. Assuming that your two VMs that make up the Windows cluster configuration for ASCS/SCS are in the same subnet, change the following parameters to these values:
+After you successfully install the Windows failover cluster, you need to change some thresholds so they adapt failover detection to conditions in Azure. Assuming that your two virtual machines that make up the Windows cluster configuration for ASCS/SCS are in the same subnet, change the following parameters to these values:
 
 - **SameSubNetDelay** = 2000
 - **SameSubNetThreshold** = 15
 - **RoutingHistoryLength** = 30
 
-These settings were tested with customers. They are resilient enough, but they also provide failover that is fast enough in real error conditions on an SAP software or in a node or VM failure.
+These settings were tested with customers. They're resilient enough, but they also provide failover that's fast enough in real error conditions on an SAP software or in a node or virtual machine failure.

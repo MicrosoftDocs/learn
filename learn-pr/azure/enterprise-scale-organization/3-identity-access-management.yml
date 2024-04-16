@@ -3,11 +3,10 @@ uid: learn.azure.enterprise-scale-organizational-design-principles.3-identity-ac
 metadata:
   title: Identity and access management
   description: Identity and access management
-  ms.date: 09/21/2020
-  author: kristopherjturner
-  ms.author: krturner
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/18/2022
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 title: Identity and access management
 durationInMinutes: 10
 content: |
@@ -20,7 +19,7 @@ quiz:
     choices:
     - content: By using managed identities for Azure resources
       isCorrect: true
-      explanation: This feature provides Azure services with an automatically managed identity in Azure AD. You can use the identity to authenticate to any service that supports Azure AD authentication, including Azure Key Vault, without any credentials in your code.​
+      explanation: This feature provides Azure services with an automatically managed identity in Microsoft Entra ID. You can use the identity to authenticate to any service that supports Microsoft Entra authentication, including Azure Key Vault, without any credentials in your code.​
     - content: By using password-based authentication
       isCorrect: false
       explanation: Password-based authentication is a static method and not a best practice because securely storing these credentials creates management overhead.​

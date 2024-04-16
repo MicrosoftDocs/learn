@@ -2,14 +2,14 @@
 uid: learn.wwl.configure-database-authentication-authorization
 metadata:
   title: Configure database authentication and authorization
-  description: "Configure database authentication and authorization"
+  description: Configure database authentication and authorization
   ms.date: 04/26/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Configure database authentication and authorization
-summary: Contrast authentication using Azure Active Directory, Windows Active Directory, and SQL Server authentication. Implement various security principals and configure permissions.
+summary: Contrast authentication using Microsoft Entra ID, Windows Active Directory, and SQL Server authentication. Implement various security principals and configure permissions.
 abstract: |
   After completing this module, you will be able to:
   - Learn about authentication options for Azure SQL Database
@@ -29,7 +29,7 @@ roles:
 products:
 - azure
 subjects:
-- database
+- databases
 units:
 - learn.wwl.configure-database-authentication-authorization.introduction
 - learn.wwl.configure-database-authentication-authorization.describe-active-directory-azure-active-directory

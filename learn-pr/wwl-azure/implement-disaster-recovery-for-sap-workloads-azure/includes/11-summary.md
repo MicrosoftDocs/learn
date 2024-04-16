@@ -1,5 +1,3 @@
-
-
 Now you have:
 
 - Explored disaster recovery of SAP workloads.

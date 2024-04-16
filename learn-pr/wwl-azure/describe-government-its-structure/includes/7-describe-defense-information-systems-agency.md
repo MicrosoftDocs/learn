@@ -21,7 +21,7 @@ DISA is composed of military personnel, federal civilians, and contractors.
 
 ## Structure
 
-DISA is headquartered at Fort Meade, Maryland after consolidating a number of its national offices through the Base Realignment and Closure (BRAC) Act of 2005.
+DISA is headquartered at Fort Meade, Maryland after consolidating a number of its national/regional offices through the Base Realignment and Closure (BRAC) Act of 2005.
 
 ### Offices
 

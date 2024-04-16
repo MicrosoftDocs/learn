@@ -4,11 +4,11 @@ title: Use the ConfigurationBuilder type
 metadata:
   title: Use the ConfigurationBuilder type
   description: This unit explains the purpose of the ConfigurationBuilder type, and how to use it in an ASP.NET web app.
-  ms.date: 06/30/2020
+  ms.date: 01/16/2024
   author: coderandhiker
   ms.author: chrisrt
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/3-aspnet-configurationbuilder-overview.md)]

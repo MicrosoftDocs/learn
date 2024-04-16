@@ -4,12 +4,11 @@ title: Assess and convert your databases
 metadata:
   title: Assess and convert your databases
   description: Assess and convert your databases
-  ms.date: 01/31/2019
+  ms.date: 05/10/2023
   author: rwestmsft
   ms.author: randolphwest
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-sqlserver
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-assess-convert-your-databases.md)]

@@ -4,13 +4,12 @@ title: Exercise - Create your Azure SQL database
 metadata:
   title: Exercise - Create your Azure SQL database
   description: Create your Azure SQL database
-  ms.date: 09/24/2018
+  ms.date: 10/17/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: true
+  ms.topic: unit
+azureSandbox: false
 durationInMinutes: 20
 content: |
   [!include[](includes/3-create-your-database.md)]

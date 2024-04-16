@@ -4,11 +4,10 @@ title: Define Windows Server failover clustering
 metadata:
   title: Define Windows Server failover clustering
   description: "Define Windows Server failover clustering"
-  ms.date: 09/28/2021
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 12

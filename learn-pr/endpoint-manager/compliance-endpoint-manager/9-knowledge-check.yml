@@ -3,11 +3,10 @@ uid: learn.compliance-endpoint-manager.9-knowledge-check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 10/26/2020
+  ms.date: 05/04/2023
   author: Erikre 
   ms.author: erikre
-  ms.topic: interactive-tutorial
-  ms.prod: learning-endpoint-manager  
+  ms.topic: unit
 title: Knowledge check
 durationInMinutes: 3
 quiz:
@@ -40,6 +39,6 @@ quiz:
     - content: "The service health dashboard provides the details you need to troubleshoot end user issues."
       isCorrect: false
       explanation: "The service health dashboard provides details for active incidents and advisories. The troubleshooting portal lets help desk operators and Intune administrators view user information to address user help requests."
-    - content: "The troubleshooting portal lets help desk operators and Intune administrators view user information to address end user issues."
+    - content: "The Troubleshoot pane lets help desk operators and Intune administrators view user information to address end user issues."
       isCorrect: true
-      explanation: "The troubleshooting portal lets help desk operators and Intune administrators view details about a user's app assignments, device information, and app protection status."
+      explanation: "The Troubleshoot pane lets help desk operators and Intune administrators view details about a user's app assignments, device information, and app protection status."

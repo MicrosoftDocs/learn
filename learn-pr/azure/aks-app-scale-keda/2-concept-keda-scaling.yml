@@ -4,11 +4,10 @@ title: Scaling with KEDA
 metadata:
   title: Scaling with KEDA
   description: K8S
-  ms.date: 4/9/2021 
-  author: pplavetzki
-  ms.author: paplavet 
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 02/14/2024 
+  author: schaffererin
+  ms.author: schaffererin 
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-concept-keda-scaling.md)]
@@ -17,34 +16,34 @@ quiz:
   questions:
   - content: "What key roles does KEDA play within Kubernetes?"
     choices:
-    - content: "metrics server and configuration manager"
+    - content: "Metrics server and configuration manager."
       isCorrect: false
       explanation: "KEDA acts as a Kubernetes metrics server but not a configuration manager."
-    - content: "agent and metrics server"
+    - content: "Agent and metrics server."
       isCorrect: true
       explanation: "KEDA activates and deactivates Kubernetes Deployments and StatefulSets to scale to and from zero on no events. KEDA acts as a Kubernetes metrics server that exposes rich event data."
-    - content: "agent and configuration manager"
+    - content: "Agent and configuration manager."
       isCorrect: false
       explanation: "KEDA acts as an agent but not a configuration manager."
   - content: "What type of workloads can KEDA scale?"
     choices:
-    - content: "StatefulSets, Deployments, and Pods"
+    - content: "StatefulSets, Deployments, and Pods."
       isCorrect: false
-      explanation: "KEDA does scale StatefulSets and Deployments but not Pods."
-    - content: "Deployment, Pods and Containers"
+      explanation: "KEDA scales StatefulSets and Deployments but not Pods."
+    - content: "Deployment, Pods, and Containers."
       isCorrect: false
-      explanation: "KEDA scales Deployments but not Pods. Containers are not a valid Kubernetes resource."
-    - content: "Deployment, StatefulSets and Custom Resource implementing the scale subresource."
+      explanation: "KEDA scales Deployments but not Pods. Containers aren't a valid Kubernetes resource."
+    - content: "Deployment, StatefulSets, and Custom Resource implementing the scale subresource."
       isCorrect: true
-      explanation: "Although Deployment and StatefulSets are the most common approach to scaling in KEDA any Resource that implements the scale subresource can be scaled using KEDA."
-  - content: "What is the primary reason for using Scaled Jobs?"
+      explanation: "Although Deployment and StatefulSets are the most common approach to scaling in KEDA, any Resource that implements the scale subresource can be scaled using KEDA."
+  - content: "What's the primary reason for using Scaled Jobs?"
     choices:
-    - content: "To handle long running processes."
+    - content: "To handle long-running processes."
       isCorrect: true
       explanation: "Rather than processing multiple events within a deployment, a single job is created per event and runs it to completion."
     - content: "To scale more efficiently."
       isCorrect: false
-      explanation: "Scaled jobs do not affect efficiency of scaling a resource."
-    - content: "To consume less resources."
+      explanation: "Scaled jobs don't affect efficiency of scaling a resource."
+    - content: "To consume fewer resources."
       isCorrect: false
-      explanation: "Scaled jobs do not affect the amount of resources consumed."
+      explanation: "Scaled jobs don't affect the amount of resources consumed."

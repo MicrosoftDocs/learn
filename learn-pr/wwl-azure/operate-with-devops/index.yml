@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.operate-with-devops
+metadata:
+  title: "Operate with DevOps"
+  description: "Achieve operational excellence and enhance developer experience in your organization through DevOps. Your operational and development practices improve by implementing shift-right testing, observability through performance and security monitoring, Site Reliability Engineering and platform engineering."
+  ms.date: 02/06/2024
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: module
+  ms.service: azure-devops
+title: Operate with DevOps
+summary: Achieve operational excellence and enhance developer experience in your organization through DevOps. Your operational and development practices improve by implementing shift-right testing, observability through performance and security monitoring, Site Reliability Engineering and platform engineering.
+abstract: |
+  Upon completion of this module, you'll be able to:
+  *   Explore the concepts of operational excellence.
+  *   Review infrastructure and application monitoring solutions.
+  *   Review infrastructure and application security monitoring solutions.
+  *   Describe the correlation between SRE and DevOps.
+prerequisites: |
+  *   Basic familiarity with IT terms and concepts
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - developer
+  - devops-engineer
+  - security-engineer
+  - security-operations-analyst
+  - solution-architect
+  - student
+  - support-engineer
+products:
+  - azure
+  - azure-cloud-services
+  - github
+  - azure-devops
+subjects:
+  - devops
+  - cloud-computing
+units:
+- learn.wwl.operate-with-devops.introduction
+- learn.wwl.operate-with-devops.explore-operational-excellence
+- learn.wwl.operate-with-devops.explore-shift-right-testing
+- learn.wwl.operate-with-devops.explore-observability-through-performance-monitoring
+- learn.wwl.operate-with-devops.explore-observability-through-security-assessment
+- learn.wwl.operate-with-devops.explore-resiliency-with-site-reliability-engineering
+- learn.wwl.operate-with-devops.improve-developer-experience-with-platform-engineering
+- learn.wwl.operate-with-devops.enhance-workload-resiliency-traffic-manager-and-azure-chaos-studio
+- learn.wwl.operate-with-devops.knowledge-check
+- learn.wwl.operate-with-devops.summary
+badge:
+  uid: learn.wwl.operate-with-devops.badge

@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.create-question-answer-solution-ai-language
+metadata:
+  title: Create question answering solutions with Azure AI Language
+  description: "Create question answering solutions with Azure AI Language"
+  ms.date: 08/31/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: module-standard-task-based
+  ms.service: azure-ai-language
+  ms.subservice: azure-ai-question-answering
+title: Create question answering solutions with Azure AI Language
+summary: The question answering capability of the Azure AI Language service makes it easy to build applications in which users ask questions using natural language and receive appropriate answers.
+abstract: |
+  After completing this module, you will be able to:
+  - Understand question answering and how it compares to language understanding.
+  - Create, test, publish, and consume a knowledge base.
+  - Implement multi-turn conversation and active learning.
+  - Create a question answering bot to interact with using natural language.
+prerequisites: |
+  Before starting this module, you should already have:
+  - Familiarity with Azure and the Azure portal.
+  - Experience programming with C# or Python.
+  If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path first.
+iconUrl: /training/achievements/qna-maker-solution.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+products:
+- ai-services
+subjects:
+- artificial-intelligence
+units:
+- learn.wwl.create-question-answer-solution-ai-language.introduction
+- learn.wwl.create-question-answer-solution-ai-language.understand-question-answer-capability
+- learn.wwl.create-question-answer-solution-ai-language.compare-to-language-understanding
+- learn.wwl.create-question-answer-solution-ai-language.create-knowledge-base
+- learn.wwl.create-question-answer-solution-ai-language.implement-multi-turn-conversation
+- learn.wwl.create-question-answer-solution-ai-language.test-publish-knowledge-base
+- learn.wwl.create-question-answer-solution-ai-language.consume-client-interfaces
+- learn.wwl.create-question-answer-solution-ai-language.implement-active-learning
+- learn.wwl.create-question-answer-solution-ai-language.exercise-create
+- learn.wwl.create-question-answer-solution-ai-language.knowledge-check
+- learn.wwl.create-question-answer-solution-ai-language.summary
+badge:
+  uid: learn.wwl.create-question-answer-solution-ai-language.badge

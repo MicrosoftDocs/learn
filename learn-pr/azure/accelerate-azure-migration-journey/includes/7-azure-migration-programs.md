@@ -1,56 +1,41 @@
-Microsoft provides expert migration and modernization guidance and assistance via programs made available to customers and partners. You can accelerate Azure deployments while building cloud skills and learning from Azure engineers.
 
-As a part of the migration and modernization team at Tailwind Traders, it is essential to learn the programs available to support your Azure migration:
+[Azure Migrate and Modernize (formerly known as Azure Migration and Modernization program) and Azure Innovate](https://aka.ms/azureheroofferings) are two new offerings to help you simplify your journey to cloud. Both offerings provide proactive guidance and the right mix of expert help at every stage of your cloud journey.
 
-- Azure Migration and Modernization Program (AMMP)
-- FastTrack for Azure
-- Azure Expert managed service providers (MSPs)
+Azure Migrate and Modernize will help you migrate and modernize applications, infrastructure, and database to the cloud. Azure Innovate is a new offering designed to help you with your advanced innovation needs such as infusing AI into your apps and experiences, advanced analytics, and building custom cloud native application.
+ 
+All customers can access curated resources and frameworks, help from advanced specialized partners and tools such as Azure Migrate, and Microsoft Cost Management, step-by-step technical guidance, low cost or no cost skilling.
 
-![Graphic showing the path to the Cloud Programs.](../media/path-to-cloud.png)
+Here are some of the benefits available from Azure Migrate and Modernize and Azure Innovate:
 
-## Azure Migration and Modernization Program (AMMP)
+- **Comprehensive resources in one place** - Extensive guidance with assessments, proof of concepts (PoCs), pilots, tooling, deployment assistance to ensure a well architected and optimized approach from start to finish.
+- **Proven technical frameworks** - Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF), helps you to design optimized workloads from the start, with security and cost recommendations built throughout.
+- **Free automated tooling** - Azure Migrate provides you with discovery, assessment, business case analysis, planning, migration, and modernization capabilities.
+- **Access to experts** - Microsoft experts or specialized partners will help you at each step from planning to deployment which includes assessments, total cost of ownership (TCO) analysis, cloud adoption approaches, workshops, pilots, and deployment.
+- **Microsoft-led delivery** - In addition to specialized partners being available for more complex workloads, with Azure Migrate and Modernize, you can also benefit from Microsoft-led delivery for rapid rehost migrations to increase both capacity and capability across the Azure portfolio to get the expert help as needed.
+- **Partner funding for specialized partners** - An increased investment in partner ecosystem to increase both capacity and capability across the Azure portfolio to get the expert help as needed.
+- **Extensive coverage from migration to innovation** - Azure Migrate and Modernize and Azure Innovate helps you across a wide range of your cloud adoption needs which includes migrating or modernize Windows Server & SQL Server, Linux, Oracle, SAP, HPC, analytics AI and more.
 
-The [Azure Migration and Modernization Program (AMMP)](https://azure.microsoft.com/migration/migration-modernization-program/) helps you simplify your journey to the cloud.  Wherever you are in your journey, AMMP can help accelerate your progress. The program offers proactive guidance and the right mix of expert help at every stage to ensure you can migrate and modernize applications, infrastructure, and databases with confidence. All customers can access resources, partners, and tools such as free migration tools, step-by-step technical guidance, training and help in finding a migration partner.  
 
-Here are some of the benefits available from AMMP:
+:::image type="content" source="../media/ammp-phases-2.png" alt-text="Diagram showing the Azure Migration and Modernization Program project phases.":::
 
-- Curated, step-by-step guidance from Microsoft experts and specialized migration partners based on the proven Microsoft Cloud Adoption Framework for Azure.
-- Technical skill building with foundational and role-specific courses to develop new Azure skills and long-term organizational readiness.
-- Free Azure migration tools, including Azure Migrate to assess and migrate workloads, and Microsoft Cost Management to optimize costs.
-- Offers and incentives to offset transition costs, including Azure Hybrid Benefit and free Extended Security Updates for Windows Server and SQL Server 2008.
-
-![Graphic showing the Azure Migration and Modernization Program Project Phases.](../media/ammp-phases-2.png)
-
-### Self-Guided Digital Support
-
-As a part of AMMP, Microsoft provides self-guided support, which will put your team on a path to success. You will gain immediate access to curated resources designed to support your migration and modernization efforts. A call from an Azure sales specialist to help answer questions about Azure and your migration and modernization plans. Along with a short email series with guidance and access to learning cloud skills with Azure technical training through Microsoft Learn and accredited partners.
-
-### Guided Deployments
-
-AMMP includes guided deployments which include expert help from FastTrack for Azure engineers and specialized migration partners. Assistance to deliver your project, including planning, design, and migrating your workloads to Azure, is included. There are also offers to help offset your migration costs (based on eligibility). Your team can learn Azure with included technical training and certifications tailored to your organization's needs.
-
-> [!NOTE]
-> Guided deployments have a minimum project size to qualify. See the application form for details.
-
-Begin your migration journey with [AMMP](https://azure.microsoft.com/migration/migration-modernization-program/#program-form).
 
 ## FastTrack for Azure
 
-FastTrack for Azure is a customer success program that helps with direct assistance and architectural advice from Azure engineers for your move to Azure.
+FastTrack for Azure is a customer success program that helps with direct assistance and architectural advice from Azure engineers.
 
 ### How does FastTrack for Azure work?
 
-Ask your Microsoft account team or Microsoft partner to nominate you. If your project meets the eligibility requirements, you will work with a FastTrack for Azure program manager to identify stakeholders, validate your cloud migration vision, establish goals and requirements, and evaluate the Azure solution's architectural needs. Azure engineers then join the project to assist with strategy and discovery, solution enablement, and rapid deployment.
+Ask your Microsoft account team or Microsoft partner to nominate you. If your project meets the eligibility requirements, you work with a FastTrack for Azure program manager to identify stakeholders, validate your cloud migration vision, establish goals and requirements, and evaluate the Azure solution's architectural needs. Azure engineers then join the project to assist with strategy and discovery, solution enablement, and rapid deployment.
 
 ### How does a project qualify for FastTrack for Azure?
 
 To qualify, customers must be working with a Microsoft partner and meet the criteria of the program:
 
-![Graphic showing the FastTrack program requirements.](../media/fast-track.png)
+:::image type="content" source="../media/fast-track.png" alt-text="Diagram showing the FastTrack program requirements.":::
 
 ### What qualifies as an Azure project?
 
-An Azure project consists of one or more Azure solutions—a group of Azure services, third-party applications, and related products—that help meet the most common business needs and scenarios deployed in production.
+An Azure project consists of one or more Azure solutions that help meet the most common business needs and scenarios deployed in production: a group of Azure services, third-party applications, and related products.
 
 FastTrack for Azure can help with many solutions including:
 
@@ -61,15 +46,15 @@ FastTrack for Azure can help with many solutions including:
 - Data analytics
 - Azure Virtual Desktop
 
-For a complete list of supported solutions, visit azure.com/FastTrack
+For a complete list of supported solutions, visit [azure.com/FastTrack](https://azure.microsoft.com/pricing/offers/azure-fasttrack/).
 
 ## Azure Expert managed service providers (MSPs)
 
-As production systems are migrated to Azure, operations will become critical. Microsoft has built the[Azure Expert managed service providers (MSPs) program](https://www.microsoft.com/azure/partners/azureexpertmsp?filters=all) to ensure customers have a partner to meet their operational needs. You will work with a trusted advisor that can offer repeatable, highly automated solutions to enable and support hyper-scale cloud implementations.
+As production systems are migrated to Azure, operations become critical. Microsoft has built the [Azure Expert managed service providers (MSPs)](https://www.microsoft.com/azure/partners/azureexpertmsp?filters=all) program to ensure customers have a partner to meet their operational needs. You work with a trusted advisor that can offer repeatable, highly automated solutions to enable and support hyper-scale cloud implementations.
 
 ### MSP qualifications
 
-When you see the Azure Expert MSP logo, this means Microsoft has validated that you are connecting with one of our most capable Azure Managed Service Providers. Whether you are working on mission-critical apps, entire data center footprints, or hybrid environments, Azure Expert MSPs have proven their capabilities to help you. These MSPs must meet the following requirements to be a part of the program:
+When you see the Azure Expert MSP logo, this means Microsoft has validated that you're connecting with one of our most capable Azure Managed Service Providers. Whether you're working on mission-critical apps, entire data center footprints, or hybrid environments, Azure Expert MSPs have proven their capabilities to help you. These MSPs must meet the following requirements to be a part of the program:
 
 - Microsoft Gold Cloud Platform Partner
 - Pass an intensive audit performed by Microsoft

@@ -1,4 +1,4 @@
-Ranking and rowset functions aren't scalar functions because they don't return a single value. These functions work accept a set of rows as input and return a set of rows as output.
+Ranking and rowset functions aren't scalar functions because they don't return a single value. These functions accept a set of rows as input and return a set of rows as output.
 
 
 ## Ranking functions

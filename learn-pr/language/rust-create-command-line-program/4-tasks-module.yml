@@ -3,11 +3,10 @@ uid: learn.language.rust-create-command-line-program.tasks-module
 metadata:
   title: Create the tasks module
   description: Implement the module that creates and stores tasks.
-  ms.date: 01/26/2021
+  ms.date: 01/21/2022
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Create the tasks module
 durationInMinutes: 7

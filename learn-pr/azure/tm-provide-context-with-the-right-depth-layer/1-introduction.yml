@@ -4,11 +4,10 @@ title: Introduction
 metadata:
   title: Introduction
   description: Learn how to provide the right context in your data-flow diagrams with depth layers
-  ms.date: 02/28/2020
+  ms.date: 05/05/2023
   author: rodsan
   ms.author: rodsan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-threat-modeling
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

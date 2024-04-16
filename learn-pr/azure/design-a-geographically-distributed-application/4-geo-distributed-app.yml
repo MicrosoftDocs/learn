@@ -3,11 +3,10 @@ uid: learn.design-a-geographically-distributed-application.4-geo-distributed-app
 metadata:
   title: Design a geographically distributed application architecture
   description: In this unit, you learn how to ensure that web requests sent to a secondary region during an outage are satisfied by application services in that region.
-  ms.date: 11/07/2019
-  author: jboeshart
-  ms.author: jaboes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 03/17/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 title: Design a geographically distributed application architecture
 durationInMinutes: 8
 content: |
@@ -17,15 +16,15 @@ quiz:
   questions:
   - content: "Which components of the shipping company architecture should be explicitly copied to another region?"
     choices:
-    - content: "Azure DNS and Azure AD"
+    - content: "Azure DNS and Microsoft Entra ID"
       isCorrect: false
-      explanation: "Both Azure DNS and Azure AD are multi-regional by default, so there's no need to copy them."
+      explanation: "Both Azure DNS and Microsoft Entra ID are multi-regional by default, so there's no need to copy them."
     - content: "Azure App Service, Azure Function App, Redis Cache, queue"
       isCorrect: true
       explanation: "These components should be explicitly copied or replicated in another region."
-    - content: "Azure DNS, Azure AD, Azure Storage"
+    - content: "Azure DNS, Microsoft Entra ID, Azure Storage"
       isCorrect: false
-      explanation: "Both Azure DNS and Azure AD are multi-regional by default, so there's no need to copy them. Don't copy Azure Storage but rather configure it to be present in more than one region."
+      explanation: "Both Azure DNS and Microsoft Entra ID are multi-regional by default, so there's no need to copy them. Don't copy Azure Storage but rather configure it to be present in more than one region."
   - content: "Complete this sentence: If a regional failure takes out Azure Storage, data loss..."
     choices:
     - content: "Can't occur because all data is automatically copied to a secondary region."

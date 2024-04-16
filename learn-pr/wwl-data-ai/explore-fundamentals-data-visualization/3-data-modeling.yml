@@ -4,13 +4,10 @@ title: Describe core concepts of data modeling
 metadata:
   title: Describe core concepts of data modeling
   description: "Describe core concepts of data modeling"
-  ms.date: 08/31/2022
+  ms.date: 03/14/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/3-data-modeling.md)]

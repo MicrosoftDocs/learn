@@ -4,11 +4,10 @@ title: Exercise - Deploy to HoloLens 2, test, and uninstall
 metadata:
   title: Exercise - Deploy to HoloLens 2, test, and uninstall
   description: Learn how to deploy, test, and uninstall the app on a HoloLens 2 device.
-  ms.date: 05/12/2021
+  ms.date: 03/12/2024
   author: JBrentJ
   ms.author: jejacks 
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/6-exercise-deploy.md)]

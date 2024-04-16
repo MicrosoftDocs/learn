@@ -41,7 +41,7 @@ OR
 EXECUTE sp_executesql N'SELECT TOP(10) name, listprice
     FROM SalesLT.Product
     GROUP BY name, listprice
-    ORDER BY listprice DESC;
+    ORDER BY listprice DESC;'
 ```
 
 In this example, a parameter is being passed to the T-SQL statement:

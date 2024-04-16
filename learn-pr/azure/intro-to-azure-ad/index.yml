@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-ad
 metadata:
-  title: Secure your identities by using Azure Active Directory
-  description: Use Azure Active Directory to you secure your internal, external, and customer identities.
-  ms.date: 02/25/2020
+  title: Secure your identities by using Microsoft Entra ID
+  description: Use Microsoft Entra ID to you secure your internal, external, and customer identities.
+  ms.date: 12/18/2023
   author: MicrosoftGuyJFlo
   ms.author: joflore
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Secure your identities by using Azure Active Directory
-summary: Secure internal resources, external resources, SaaS applications, and more by using Azure Active Directory. Learn about the features and capabilities of Azure AD.
+  ms.topic: module
+  ms.service: active-directory
+title: Secure your identities by using Microsoft Entra ID
+summary: Secure internal resources, external resources, SaaS applications, and more by using Microsoft Entra ID. Learn about the features and capabilities of Microsoft Entra ID.
 abstract: | 
   In this module, you will:
-  - Describe the core terminology of Azure AD.
-  - Describe the core features of Azure AD.
-  - Describe the licensing models for Azure AD.
+  - Describe the core terminology of Microsoft Entra ID.
+  - Describe the core features of Microsoft Entra ID.
+  - Describe the licensing models for Microsoft Entra ID.
 prerequisites: | 
   - None
 iconUrl: /training/achievements/intro-to-azure-ad.svg
@@ -26,9 +26,9 @@ roles:
 - developer
 products:
 - azure
-- azure-active-directory
-- azure-active-directory-b2c
-- azure-active-directory-domain
+- entra-id
+- entra-external-id
+- entra
 subjects:
 - cloud-computing
 - identity-access

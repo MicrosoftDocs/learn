@@ -4,11 +4,10 @@ title: Test and troubleshoot Azure File Sync
 metadata:
   title: Test and troubleshoot Azure File Sync
   description: Learn how to test Azure File Sync and troubleshoot a sync issue.
-  ms.date: 05/18/2020
+  ms.date: 11/17/2023
   author: khdownie
   ms.author: kendownie
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/9-test-troubleshoot-azure-file-sync.md)]

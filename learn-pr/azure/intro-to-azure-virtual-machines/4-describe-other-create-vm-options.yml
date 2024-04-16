@@ -4,11 +4,14 @@ title: Describe the options available to create and manage an Azure Virtual Mach
 metadata:
   title: Describe the options available to create and manage an Azure Virtual Machine
   description: Describe the options available to create and manage an Azure Virtual Machine
-  ms.date: 09/13/2022
-  author: cynthn
-  ms.author: cynthn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 05/19/2023
+  author: ju-shim
+  ms.author: jushiman
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
+    - devx-track-azurepowershell
+    - devx-track-terraform
 durationInMinutes: 15
 content: |
   [!include[](includes/4-describe-other-create-vm-options.md)]

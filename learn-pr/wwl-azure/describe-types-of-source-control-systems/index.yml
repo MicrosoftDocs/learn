@@ -2,12 +2,12 @@
 uid: learn.wwl.describe-types-of-source-control-systems
 metadata:
   title: Describe types of source control systems
-  description: "Describe types of source control systems"
+  description: Describe types of source control systems
   ms.date: 11/01/2022
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Describe types of source control systems
 summary: This module describes different source control systems such Git and TFVC and helps with the initial steps for Git utilization.
 abstract: |
@@ -40,8 +40,6 @@ products:
 - azure-repos
 - azure-test-plans
 - github
-subjects:
-- development-tools
 units:
 - learn.wwl.describe-types-of-source-control-systems.introduction
 - learn.wwl.describe-types-of-source-control-systems.understand-centralized

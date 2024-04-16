@@ -89,13 +89,13 @@ If you would like to use serverless SQL pool (preview) the URL should look like:
 If you would like to use dedicated SQL pool the URL should look like:
 - \<Azure Synapse workspace name\>.sql.azuresynapse.net
 
-Choose Windows Authentication, Azure Active Directory, or SQL Login as the Authentication Type.
+Choose Windows Authentication, Microsoft Entra ID, or SQL Login as the Authentication Type.
 
 To use SQL Login as the authentication type, add the username/password parameters:
 - User: Server user in the form \<User\>
 - Password: Password associated with the user
 
-To use Azure Active Directory, you need to choose the needed authentication type.
+To use Microsoft Entra ID, you need to choose the needed authentication type.
  
 ![Azure Synapse SQL pools connection details in Azure Data Studio](../media/connection-details-sql-pools.png)
 

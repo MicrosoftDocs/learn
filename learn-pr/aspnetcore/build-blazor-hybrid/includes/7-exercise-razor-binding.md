@@ -1,16 +1,25 @@
-In this exercise, you'll create a basic todo list component inside our Blazor app.
+In this exercise, you create a basic Todo list component inside your Blazor app.
 
-## Create the ToDo page
-
+## Create the Todo page
 
 1. Create the Todo page:
 
-   In Visual Studio, right-click on the `Pages` folder in **Solution Explorer** and select **Add** > **Razor Component...**. Name the component `Todo.razor`.
+    ::: zone pivot="vstudio"
+   
+    In Visual Studio, right-click the `Pages` folder in **Solution Explorer** and select **Add** > **Razor Component**. Name the component `Todo.razor`.
+
+    ::: zone-end
+
+    ::: zone pivot="vscode"
+   
+    In Visual Studio Code, right-click on the `Pages` folder in **Solution Explorer** and select **Add New File..** > **Razor component**. Name the component `Todo.razor`. The file should be created inside of the `Pages` folder
+   
+    ::: zone-end
 
    > [!IMPORTANT]
-   > Razor component file names require a capitalized first letter. Open the `Pages` folder and confirm that the `Todo` component file name starts with a capital letter `T`. The file name should be `Todo.razor`.
+   > Razor component file names require a capitalized first letter. Expand the `Pages` folder and confirm that the `Todo` component file name starts with a capital letter `T`. The file name should be `Todo.razor`.
 
-2. Open the `Todo` component and add an `@page` Razor directive to the top of the file with a relative URL of `/todo`.
+3. Open the `Todo` component and add an `@page` Razor directive to the top of the file with a relative URL of `/todo`.
 
     ```cshtml
     @page "/todo"
@@ -22,13 +31,13 @@ In this exercise, you'll create a basic todo list component inside our Blazor ap
     }
     ```
 
-3. Save the `Pages/Todo.razor` file
+4. Save the `Pages/Todo.razor` file
 
 ## Add the Todo component to the navigation bar
 
-The `NavMenu` component is used in the app's layout. Layouts are components that allow you to avoid duplication of content in an app. The `NavLink` component renders an HTML anchor tag that can be styled to provide a cue in the app's UI when the app URL matches the link.
+The app's layout uses the `NavMenu` component. Layouts are components that allow you to avoid duplication of content in an app. The `NavLink` component renders an HTML anchor tag that can be styled to provide a cue in the app's UI when the app URL matches the link.
 
-In the `<nav>...</nav>` section of the NavMenu component, add the following new `<div>...</div>` and `NavLink` component for the `Todo` component.
+Expand the **Shared** folder in the Solution Explorer and open the **NavMenu.razor** file. In the `<nav>...</nav>` section of the NavMenu component, add the following new `<div>...</div>` and `NavLink` component for the `Todo` component.
 
 In `Shared/NavMenu.razor`:
 
@@ -53,9 +62,9 @@ Save the `Shared/NavMenu.razor` file. The browser should refresh automatically a
 
 ## Create a Todo Item
 
-Create a new class in the `Data` folder of the project named `TodoItem.cs` to hold a C# class that represents a todo item.
+In the Solution Explorer, right-click the **Data** folder, then select **Add** > **Class**. Name the new class *TodoItem.cs*, then select **Add**. This new class will hold a C# class that represents a todo item.
 
-Use the following C# code for the `TodoItem` class. Declare the `Title` as a nullable string by using `?`.
+Replace the code from Line 7 down with the following C# code for the `TodoItem` class. Declare the `Title` as a nullable string by using `?`. Save the file.
 
 ```csharp
 namespace BlazorHybridApp.Data;
@@ -69,7 +78,7 @@ public class TodoItem
 
 ## Bind a list of TodoItems
 
-You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. We'll accomplish this by making the following changes in the `Pages/Todo.razor` file.
+You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. We'll accomplish this by making the following changes in the `Pages/Todo.razor` file:
 
 - Add the using declaration for `TodoItem` with `@using BlazorHybridApp.Data`.
 - Add a field for the todo items in the `@code` block. The `Todo` component uses this field to maintain the state of the todo list.
@@ -188,7 +197,7 @@ You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. W
 
 1. Save the `Pages/Todo.razor` file. Rebuild and restart the app.
 
-1. The title text for each todo item can be made editable, and a checkbox can help the user keep track of completed items. Add a checkbox input for each todo item and bind its value to the `IsDone` property. Change `@todo.Title` to an `<input>` element bound to `todo.Title` with `@bind`:
+1. You can make the title text for each todo editable, and a checkbox can help the user keep track of completed items. Add a checkbox input for each todo item and bind its value to the `IsDone` property. Change the `@todo.Title` to an `<input>` element bound to `todo.Title` with `@bind`:
 
     ```razor
     <ul class="list-unstyled">
@@ -210,6 +219,6 @@ You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. W
 
 1. Save the `Pages/Todo.razor` file and run the app again.
 
-1. Add items, edit items, and mark todo items done to test the component.
+1. Add items, edit items, and mark items done to test the component.
 
    ![Screenshot of the completed ToDo page](../media/todo-complete.png)

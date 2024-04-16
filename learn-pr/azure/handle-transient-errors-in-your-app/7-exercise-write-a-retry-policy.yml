@@ -4,11 +4,12 @@ title: Exercise - Implement a retry policy in your app
 metadata:
   title: Exercise - Implement a retry policy in your app
   description: In this hands-on lab, you'll use a retry policy to help the chat app recover from transient errors.
-  ms.date: 04/10/2019
+  ms.date: 08/01/2023
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
   zone_pivot_groups: dev-lang-csharp-java-node
 interactive: bash
 azureSandbox: true

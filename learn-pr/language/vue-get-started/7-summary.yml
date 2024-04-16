@@ -3,11 +3,10 @@ uid: learn.language.vue-get-started.7-summary
 metadata:
   title: Summary
   description: You explored how to create a project by using Vue.js. You also saw how to interact with data in a couple of ways.
-  ms.date: 03/01/2021 
+  ms.date: 01/10/2023 
   author: GeekTrainer
   ms.author: chrhar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-vue
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Summary
 durationInMinutes: 1

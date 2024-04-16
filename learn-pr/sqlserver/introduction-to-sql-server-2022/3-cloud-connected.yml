@@ -5,12 +5,11 @@ metadata:
   unitType: learning-content
   title: Build a hybrid data platform with SQL Server 2022
   description: "Learn how to build a hybrid data platform with SQL Server 2022 and Azure through managed disaster recovery, near real-time analytics, and advanced security."
-  ms.date: 04/18/2023
+  ms.date: 10/16/2023
   author: rgward
   ms.author: bobward
   ms.reviewer: vanto
-  ms.topic: interactive-tutorial
-  ms.prod: learning-sqlserver
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/3-cloud-connected.md)]
@@ -21,21 +20,22 @@ quiz:
     choices: 
     - content: "Azure Synapse Analytics"
       isCorrect: false
-      explanation: "Azure Synapse Link for SQL works with Azure Synapse Analytics for near real-time analytics"
+      explanation: "Azure Synapse Link for SQL works with Azure Synapse Analytics for near real-time analytics."
     - content: "Azure SQL Managed Instance"
       isCorrect: true
-      explanation: "The link feature for Azure SQL Managed Instances uses a Distributed Availability Group (DAG) to provide a managed disaster recovery solution"
+      explanation: "The link feature for Azure SQL Managed Instances uses a Distributed Availability Group (DAG) to provide a managed disaster recovery solution."
     - content: "Azure Blob Storage"
       isCorrect: false
-      explanation: "While you can back up a database to Azure Blob Storage, it doesn't provide managed disaster recovery solution like Azure SQL Managed Instance"
+      explanation: "While you can back up a database to Azure Blob Storage, it doesn't provide a managed disaster recovery solution like Azure SQL Managed Instance."
   - content: "What is the software installed with SQL Server 2022 that provides connectivity from on-premises to Azure?"
     choices: 
     - content: "The SQL Server IaaS Agent extension"
       isCorrect: false
-      explanation: "The SQL Server IaaS Agent extension is used with SQL Server on Azure Virtual Machine"
+      explanation: "The SQL Server IaaS Agent extension is used with SQL Server on an Azure Virtual Machine."
     - content: "Self-hosted integrated runtime"
       isCorrect: false
-      explanation: "The self-hosted integrated runtime connects SQL Server to Azure for Azure Synapse Link, but isn't part of SQL Server setup"
+      explanation: "The self-hosted integrated runtime connects SQL Server to Azure for Azure Synapse Link, but isn't part of SQL Server setup."
     - content: "Azure extension for SQL Server"
       isCorrect: true
-      explanation: "The Azure extension for SQL Server can be configured a part of SQL Server 2022 setup and connects SQL Server to Azure for Purview, Azure Active Directory, Microsoft Defender, and pay-as-you-go licensing"
+      explanation: "The Azure extension for SQL Server can be configured a part of SQL Server 2022 setup and connects SQL Server to Azure for Purview, Azure Active Directory, Microsoft Defender, and pay-as-you-go licensing."
+      

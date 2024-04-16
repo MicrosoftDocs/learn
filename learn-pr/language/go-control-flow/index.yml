@@ -6,8 +6,7 @@ metadata:
   ms.date: 01/25/2023
   author: GitHubber17
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom: team=nextgen
 title: Use control flows in Go
 summary: Learn how to use control flows in Go.
@@ -34,8 +33,6 @@ roles: # TBC
 - student
 products: 
 - azure
-subjects:
-- development-tools
 units:
 - learn.language.go-control-flow.0-introduction
 - learn.language.go-control-flow.1-use-if-else-statements

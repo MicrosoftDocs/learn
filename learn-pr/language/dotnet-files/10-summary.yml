@@ -4,13 +4,14 @@ title: Summary
 metadata:
   title: Summary
   description: Summary of working with files using .NET and C#.
-  ms.date: 10/28/2020
+  ms.date: 08/29/2023
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.manager: markl
+  ms.topic: unit
   ms.custom:
-  - team=cloud_advocates
+    - team=cloud_advocates
+    - devx-track-dotnet
   ms.contributors:
   - masoucou-11032020
 durationInMinutes: 2

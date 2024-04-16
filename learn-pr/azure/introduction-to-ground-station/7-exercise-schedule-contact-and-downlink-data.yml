@@ -4,11 +4,11 @@ title: "Exercise: Schedule a contact and downlink data"
 metadata:
   title: "Exercise: Schedule a contact and downlink data"
   description: Demonstrate how to schedule a contact and downlink the data.
-  ms.date: 09/27/2022
+  ms.date: 08/28/2023
   author: meaghanlewis
   ms.author: mosagie
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  manager: eliotgra
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/7-exercise-schedule-contact-and-downlink-data.md)]

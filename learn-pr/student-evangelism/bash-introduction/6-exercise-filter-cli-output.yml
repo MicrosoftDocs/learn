@@ -4,11 +4,10 @@ title: Exercise - Use Bash and grep to filter CLI output
 metadata:
   title: Exercise - Use Bash and grep to filter CLI output
   description: Learn how to use Bash with the Azure CLI and Azure Cloud Shell.
-  ms.date: 03/19/2021
+  ms.date: 04/06/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-bash
+  ms.topic: unit
   ms.custom: team=nextgen, devx-track-azurecli
 durationInMinutes: 3
 interactive: bash

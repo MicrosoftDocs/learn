@@ -4,11 +4,10 @@ title: Describe and manage Azure Blob Storage access tiers
 metadata:
   title: Describe and manage Azure Blob Storage access tiers
   description: Describe and manage Azure Blob Storage access tiers.
-  ms.date: 02/23/2023
-  author: mpolicht
-  ms.author: nedelgad
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/07/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/describe-manage-azure-blob-storage-access-tiers.md)]

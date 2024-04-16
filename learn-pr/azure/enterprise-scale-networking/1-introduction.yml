@@ -3,11 +3,10 @@ uid: learn.azure.enterprise-scale-networking.1-introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 09/21/2020
+  ms.date: 04/26/2023
   author: jknightly
   ms.author: joknight
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Introduction
 durationInMinutes: 2
 content: |

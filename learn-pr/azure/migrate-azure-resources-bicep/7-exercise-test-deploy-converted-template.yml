@@ -5,11 +5,12 @@ metadata:
   unitType: exercise
   title: Exercise - Test and deploy your converted template
   description: Learn how to test your migrated Bicep file by using the what-if operation and how to deploy your Bicep files to production.
-  ms.date: 12/01/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.date: 01/19/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 7
 content: |

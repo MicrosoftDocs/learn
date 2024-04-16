@@ -2,11 +2,10 @@
 uid: learn.iot.create-your-first-app-with-azure-maps.introduction
 metadata:
   description: Outlines the learning objectives, prerequisites, and the route-finding scenario, for this module.
-  ms.date: 6/1/2020
+  ms.date: 9/01/2022
   author: PeterTurcan
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Introduction
 durationInMinutes: 4
 content: |

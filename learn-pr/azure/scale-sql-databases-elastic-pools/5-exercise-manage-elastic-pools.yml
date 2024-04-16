@@ -2,13 +2,15 @@
 uid: learn.azure-scale-azure-sql-databases-elastic-pools.exercise-manage-elastic-pool
 metadata:
   title: Exercise - Manage SQL elastic pools
-  description: Exercise - Manage SQL elastic pools
-  ms.date: 5/03/2019
+  description: Use this exercise to learn how to manage SQL elastic pools.
+  ms.date: 12/15/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 title: Exercise - Manage SQL elastic pools
 azureSandbox: true
 durationInMinutes: 6

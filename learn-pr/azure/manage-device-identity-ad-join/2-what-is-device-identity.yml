@@ -4,39 +4,38 @@ title: What is device identity in Azure?
 metadata:
   title: What is device identity in Azure?
   description: Learn about device identity in Azure.
-  ms.date: 04/16/2020
+  ms.date: 03/17/2023
   author: MicrosoftGuyJFlo
   ms.author: joflore
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/2-what-is-device-identity.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What operating systems do Azure AD registered devices support?"
+  - content: "What operating systems do Microsoft Entra registered devices support?"
     choices:
     - content: "Windows 10, Windows 11, iOS, Android, and macOS"
       isCorrect: true
-      explanation: "The option of Azure AD registered supports devices that run Windows 10, iOS, iPadOS, Android, and macOS."
+      explanation: "The option of Microsoft Entra registered supports devices that run Windows 10, iOS, iPadOS, Android, and macOS."
     - content: "Windows 7, Windows 8.1, and Windows 10 only"
       isCorrect: false
-      explanation: "The option of Azure AD registered supports devices that run Windows 10, iOS, iPadOS, Android, and macOS."
+      explanation: "The option of Microsoft Entra registered supports devices that run Windows 10, iOS, iPadOS, Android, and macOS."
     - content: "Windows 10 and macOS"
       isCorrect: false
-      explanation: "The option of Azure AD registered supports devices that run Windows 10, iOS, iPadOS, Android, and macOS."
-  - content: "What device security sign-in options does Azure AD join support?"
+      explanation: "The option of Microsoft Entra registered supports devices that run Windows 10, iOS, iPadOS, Android, and macOS."
+  - content: "What device security sign-in options does Microsoft Entra join support?"
     choices:
-    - content: "An Azure AD work account with password, PIN, pattern, or Windows Hello"
+    - content: "A Microsoft Entra ID work account with password, PIN, pattern, or Windows Hello"
       isCorrect: false
-      explanation: "No, Azure AD join doesn't support PIN or pattern."
-    - content: "An Azure AD work account with password or Windows Hello, and multifactor authentication"
+      explanation: "No, Microsoft Entra join doesn't support PIN or pattern."
+    - content: "A Microsoft Entra work account with password or Windows Hello, and multifactor authentication"
       isCorrect: true
-      explanation: "Azure AD join supports Windows 10 or Windows Server 2019 devices where users sign in by using their work account with a password or Windows Hello. Azure AD Multi-Factor Authentication is also supported."
+      explanation: "Microsoft Entra join supports Windows 10 or Windows Server 2019 devices where users sign in by using their work account with a password or Windows Hello. Microsoft Entra multifactor authentication is also supported."
     - content: "A Microsoft account with password, Windows Hello, and multifactor authentication"
       isCorrect: false
-      explanation: "No, Azure AD join requires users to access your Azure AD organization through their Azure AD work account."
+      explanation: "No, Microsoft Entra join requires users to access your Microsoft Entra organization through their Microsoft Entra ID work account."
   - content: "When is Conditional Access applied?"
     choices:
     - content: "Before first-factor authentication"

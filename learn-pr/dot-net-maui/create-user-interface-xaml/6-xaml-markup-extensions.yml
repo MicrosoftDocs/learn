@@ -1,22 +1,22 @@
 ### YamlMime:ModuleUnit
 uid: learn.dotnet-maui.create-user-interface-xaml.xaml-markup-extensions
-title: XAML mark-up extensions 
+title: XAML markup extensions 
 metadata:
   unitType: unit
-  title: "XAML mark-up extensions"
-  description: "Describe how to create and use mark-up extensions for XAML"
-  ms.date: 04/29/2022
+  title: "XAML markup extensions"
+  description: "Describe how to create and use markup extensions for XAML"
+  ms.date: 10/13/2023
   author: codemillmatt  
-  ms.author: masoucou  
-  ms.topic: interactive-tutorial
-  ms.prod: learning-languages
+  ms.author: masoucou
+  ms.manager: markl
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/6-xaml-markup-extensions.md)]
 quiz:
   title: Knowledge check
   questions:
-  - content: "Which mark-up extension allows you to set a XAML property to a static value that's defined in a code-behind class?"
+  - content: "Which markup extension allows you to set a XAML property to a static value that's defined in a code-behind class?"
     choices:
     - content: "StaticResource"
       isCorrect: false

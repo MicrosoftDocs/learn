@@ -1,6 +1,3 @@
-
-
-
 It's common for developers to begin a project by developing the features that import or generate application data. Once your application has access to the data it depends on, you can begin developing the features that process data and generate reports.  
 
 Suppose you're a developer who likes to support the local community. You and some of your friends started a business that helps find new homes for stray or abandoned cats and dogs. Your business started off small, with just a couple of strays, but it's starting to grow. You want to create an application that will help you match the animals in your care with people looking for a pet. You've found that it's important to have a detailed description of the animals to share with potential owners. In addition, being able to describe the personality of the dog or cat makes them more appealing to potential owners. You decide to create an application that helps you manage information about the dogs and cats you're caring for.

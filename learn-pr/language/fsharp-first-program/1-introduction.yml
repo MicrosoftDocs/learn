@@ -6,9 +6,9 @@ metadata:
   description: Introduction
   author: softchris
   ms.author: chnoring
-  ms.date: 07/21/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.date: 02/24/2023
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 1
 content: |

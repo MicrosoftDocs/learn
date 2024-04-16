@@ -4,11 +4,11 @@ title: Introduction
 metadata:
   title: Introduction 
   description: Introduction to the Azure Space portfolio.
-  ms.date: 09/16/2022
+  ms.date: 03/31/2023
   author: meaghanlewis
   ms.author: mosagie
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  manager: eliotgra
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

@@ -1,15 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-java-app-enable-authentication-authorization.authentication-authorization
-title: Authentication and authorization in Azure Active Directory
+title: Authentication and authorization in Microsoft Entra ID
 metadata:
   unitType: learning-content
-  title: Authentication and authorization in Azure Active Directory
-  description: Explanation of authentication and authorization concepts in Azure Active Directory
-  ms.date: 06/11/2021
+  title: Authentication and authorization in Microsoft Entra ID
+  description: Explanation of authentication and authorization concepts in Microsoft Entra ID
+  ms.date: 11/21/2023
   author: navyasric
-  ms.author: navyasric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: robmcm
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
 durationInMinutes: 5
 content: |
   [!include[](includes/2-authentication-authorization.md)]

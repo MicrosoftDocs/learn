@@ -4,11 +4,12 @@ metadata:
   title: Run quality tests in your build pipeline by using Azure Pipelines
   description: Find out about automated testing that proves your code to be maintainable, understandable, and functioning without repetitive manual testing.
   ms.custom: devdivchpfy22
-  ms.date: 08/10/2022
+  ms.date: 04/02/2024
   author: steved0x
   ms.author: sdanie
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-devops-pipelines
+  manager: mijacobs
 title: Run quality tests in your build pipeline by using Azure Pipelines
 summary: Set up automated testing in your pipeline to improve code quality.
 abstract: |

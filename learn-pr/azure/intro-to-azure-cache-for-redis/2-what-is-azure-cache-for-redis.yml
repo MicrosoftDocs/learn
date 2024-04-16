@@ -5,11 +5,10 @@ metadata:
   unitType: learning-content  
   title: What is Azure Cache for Redis? 
   description: Quick overview of Azure Cache for Redis
-  ms.date: 04/09/2021  
+  ms.date: 04/04/2024  
   author: tchristiani
   ms.author: terrychr
-  ms.topic: interactive-tutorial 
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 9
 content: |
   [!include[](includes/2-what-is-azure-cache-for-redis.md)]

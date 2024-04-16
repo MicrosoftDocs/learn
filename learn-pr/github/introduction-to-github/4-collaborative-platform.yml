@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.introduction-to-github.collaborative-platform
+title: GitHub is a collaborative platform
+metadata:
+  title: GitHub is a collaborative platform
+  description: In this unit, we're learning about Issues and Discussions, two other pieces that contribute to the collaborative nature of the GitHub platform.
+  ms.date: 10/27/2023
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-collaborative-platform.md)]

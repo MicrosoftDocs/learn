@@ -2,12 +2,12 @@
 uid: learn.wwl.choose-right-project
 metadata:
   title: Choose the right project
-  description: "Choose the right project"
-  ms.date: 03/24/2023
+  description: Choose the right project
+  ms.date: 04/26/2023
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-devops
 title: Choose the right project
 summary: This module helps organizations decide the projects to start applying the DevOps process and tools to minimize initial resistance.
 abstract: |

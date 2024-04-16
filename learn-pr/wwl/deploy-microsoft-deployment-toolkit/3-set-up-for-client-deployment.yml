@@ -7,8 +7,7 @@ metadata:
   ms.date: 04/03/2023
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 11
 content: |
   [!include[](includes/3-set-up-for-client-deployment.md)]

@@ -5,14 +5,11 @@ metadata:
   title: Introduction
   description: Introduction
 
-  ms.date: 03/21/2023
+  ms.date: 07/27/2023
   author: shlipsey3
   ms.author: sarahlipsey
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.manager: amycollanino
-  ms.service: active-directory
-  ms.subservice: fundamentals
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

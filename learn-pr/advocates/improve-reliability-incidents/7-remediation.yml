@@ -4,11 +4,10 @@ title: "Remediation"
 metadata:
   title: "Remediation"
   description: "Remediation"
-  ms.date: 05/07/2020
+  ms.date: 02/28/2024
   author: dnblankedelman
   ms.author: dnb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-06092020
 durationInMinutes: 7
@@ -18,30 +17,30 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'When communicating with stakeholders, which of these items are not part of the formula we suggested?'
+  - content: 'When you communicate with stakeholders, which of these items is unnecessary in the formula we suggested?'
     choices:
     - content: 'This is what we know.'
       isCorrect: false
       explanation: 'This answer is part of the formula for communicating with stakeholders.'
-    - content: 'This is what we’re doing.'
+    - content: 'This is what we are doing.'
       isCorrect: false
       explanation: 'This answer is part of the formula for communicating with stakeholders.'
     - content: 'This is who is staffing the incident response.'
       isCorrect: true
-      explanation: 'This answer is not information that stakeholders necessarily need to know (plus it may change as the incident progresses)'
-    - content: 'We will get back to you in X amount of time'
+      explanation: 'This information might not be what stakeholders necessarily need to know (plus it may change as the incident progresses).'
+    - content: 'We will get back to you in X amount of time.'
       isCorrect: false
       explanation: 'This answer is part of the formula for communicating with stakeholders.'
 
   - content: 'Why are workbooks and troubleshooting guides considered live documents in our description?'
     choices:
-    - content: 'they can be edited at any time'
+    - content: 'They can be edited at any time.'
       isCorrect: false
-      explanation: 'This answer is true, but it is not what makes them live documents.'
-    - content: 'Kusto Query Language (KQL) queries can be embedded and will display their results when the document is read'
+      explanation: 'This answer is true, but not what makes them live documents.'
+    - content: 'Kusto Query Language (KQL) queries can be embedded, and display their results when the document is read.'
       isCorrect: true
       explanation: 'Correct.'
-    - content: 'they are automatically shared to the public as soon as they are written'
+    - content: 'Workbooks are automatically shared to the public immediately upon creation.'
       isCorrect: false
-      explanation: 'They are live because they can have embedded KQL queries, plus workbooks and troubleshooting guides are only shared with people with your explicit permission.'
+      explanation: 'Workbooks are live because they can contain embedded KQL queries, plus workbooks and troubleshooting guides are only shared with people with your explicit permission.'
       

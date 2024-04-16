@@ -3,11 +3,10 @@ uid: learn.azure.enterprise-scale-operations.2-management-monitoring
 metadata:
   title: Management and monitoring
   description: Management and monitoring
-  ms.date: 09/21/2020
+  ms.date: 04/20/2023
   author: ejhenry
   ms.author: erhenry
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Management and monitoring
 durationInMinutes: 20
 content: |

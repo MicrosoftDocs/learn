@@ -3,11 +3,10 @@ uid: learn.student-evangelism.optimize-basketball-player-rest-breaks.3-prepare-d
 metadata:
   title: Exercise - Prepare data by adding row qualifiers
   description: Prepare data by adding row qualifiers
-  ms.date: 03/10/2021
+  ms.date: 10/12/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Exercise - Prepare data by adding row qualifiers
 durationInMinutes: 5

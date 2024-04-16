@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.embrace-responsible-ai-principles-practices.discuss-practices-responsible-ai-microsoft
+title: Discuss practices for responsible AI at Microsoft
+metadata:
+  title: Discuss practices for responsible AI at Microsoft
+  description: "Discuss practices for responsible AI at Microsoft"
+  ms.date: 04/08/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 11
+content: |
+  [!include[](includes/6-discuss-practices-responsible-ai-microsoft.md)]

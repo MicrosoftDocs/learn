@@ -4,11 +4,10 @@ title: Learn about managing and protecting your organization's data
 metadata:
   title: Learn about managing and protecting your organization's data
   description: Learn about managing and protecting your organization's data with Microsoft Intune.
-  ms.date: 10/23/2020
+  ms.date: 05/05/2023
   author: Erikre
   ms.author: erikre
-  ms.topic: interactive-tutorial
-  ms.prod: learning-endpoint-manager
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/4-manage-protect-data.md)]

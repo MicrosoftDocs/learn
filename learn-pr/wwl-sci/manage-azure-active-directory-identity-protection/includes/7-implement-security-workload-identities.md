@@ -1,8 +1,8 @@
-Azure AD Identity Protection has historically protected users in detecting, investigating, and remediating identity-based risks. Identity protection has extended these capabilities to workload identities to protect applications, service principals, and Managed Identities.<br>
+Microsoft Entra Identity Protection has historically protected users in detecting, investigating, and remediating identity-based risks. Identity protection has extended these capabilities to workload identities to protect applications, service principals, and Managed Identities.
 
 A workload identity is an identity that allows an application or service principal access to resources, sometimes in the context of a user. These workload identities differ from traditional user accounts as they:
 
- -  Can’t perform multi-factor authentication.
+ -  Can’t perform multifactor authentication.
  -  Often have no formal lifecycle process.
  -  Need to store their credentials or secrets somewhere.
 
@@ -12,7 +12,7 @@ These differences make workload identities harder to manage and put them at high
 
 To make use of workload identity risk, including the new Risky workload identities (preview) blade and the Workload identity detections tab in the Risk detections blade, in the Azure portal you must have the following.
 
- -  Azure AD Premium P2 licensing
+ -  Microsoft Entra ID Premium P2 licensing
  -  Logged in user must be assigned either:
     
     
@@ -25,7 +25,7 @@ To make use of workload identity risk, including the new Risky workload identiti
 
 | **Detection name**                              | **Detection type** | **Description**                                                                                                                                                                                                                                                                                                                |
 | ----------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Azure AD threat intelligence                    | Offline            | This risk detection indicates some activity that is consistent with known attack patterns based on Microsoft's internal and external threat intelligence sources.                                                                                                                                                              |
+| Microsoft Entra threat intelligence             | Offline            | This risk detection indicates some activity that is consistent with known attack patterns based on Microsoft's internal and external threat intelligence sources.                                                                                                                                                              |
 | Suspicious Sign-ins                             | Offline            | This risk detection indicates sign-in properties or patterns that are unusual for this service principal.                                                                                                                                                                                                                      |
 |                                                 |                    | The detection learns the baselines sign-in behavior for workload identities in your tenant in between 2 and 60 days, and fires if one or more of the following unfamiliar properties appear during a later sign-in: IP address / ASN, target resource, user agent, hosting/non-hosting IP change, IP country, credential type. |
 | Unusual addition of credentials to an OAuth app | Offline            | This detection is discovered by Microsoft Defender for Cloud Apps. This detection identifies the suspicious addition of privileged credentials to an OAuth app. This can indicate that an attacker has compromised the app, and is using it for malicious activity.                                                            |

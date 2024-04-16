@@ -5,11 +5,10 @@ metadata:
   unitType: learning-content
   title: What is Azure Service Health?
   description: What is Azure Service Health and what can it be used for?
-  ms.date: 9/1/2021
-  author: ricmmartins
-  ms.author: ricmart
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.date: 02/26/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/2-what-is-azure-service-health.md)]

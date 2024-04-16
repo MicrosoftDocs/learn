@@ -1,5 +1,4 @@
-
-The Microsoft Authentication Library (MSAL) can be used to provide secure access to Microsoft Graph, other Microsoft APIs, third-party web APIs, or your own web API. MSAL supports many different application architectures and platforms including .NET, JavaScript, Java, Python, Android, and iOS.
+The Microsoft Authentication Library (MSAL) can be used to provide secure access to Microsoft Graph, other Microsoft APIs, or your own web API. MSAL supports many different application architectures and platforms including .NET, JavaScript, Java, Python, Android, and iOS.
 
 MSAL gives you many ways to get tokens, with a consistent API for many platforms. Using MSAL provides the following benefits:
 
@@ -12,7 +11,7 @@ MSAL gives you many ways to get tokens, with a consistent API for many platforms
 
  ## Application types and scenarios
 
-Using MSAL, a token can be acquired from many application types: web applications, web APIs, single-page apps (JavaScript), mobile and native applications, and daemons and server-side applications. MSAL currently supports the platforms and frameworks listed in the following table.
+Within MSAL, a token can be acquired from many application types: web applications, web APIs, single-page apps (JavaScript), mobile and native applications, and daemons and server-side applications. MSAL currently supports the platforms and frameworks listed in the following table.
 
 | Library | Supported platforms and frameworks |
 |--|--|
@@ -44,7 +43,7 @@ The following table shows some of the different authentication flows provided by
 
 ### Public client, and confidential client applications
 
-Security tokens can be acquired by multiple types of applications. These applications tend to be separated into the following two categories. Each is used with different libraries and objects.
+Multiple types of applications can acquire security tokens. These applications tend to be separated into the following two categories. Each is used with different libraries and objects.
 
 * **Public client applications**: Are apps that run on devices or desktop computers or in a web browser. They're not trusted to safely keep application secrets, so they only access web APIs on behalf of the user. (They support only public client flows.) Public clients can't hold configuration-time secrets, so they don't have client secrets.
 

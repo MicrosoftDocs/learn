@@ -25,7 +25,7 @@ There are eight types of table-level lock in Azure Database for PostgreSQL and t
 Each type of existing lock will block other requested locks being acquired. The following table lists which lock types will be blocked:
 
 
-|   | Existing ACCESS SHARE  | Existing ROW SHARE | Existing ROW EXCLUSIVE | Existing SHARE UPDATE EXCLUSIVE | Existing SHARE | Existing SHARE ROW EXCL | Existing EXCLUSIVE | Existing ACCESS EXCLUSIVE |
+| -- | Existing ACCESS SHARE  | Existing ROW SHARE | Existing ROW EXCLUSIVE | Existing SHARE UPDATE EXCLUSIVE | Existing SHARE | Existing SHARE ROW EXCL | Existing EXCLUSIVE | Existing ACCESS EXCLUSIVE |
 | -------------------- | - | -------------- | ----------- | ----------- | -------------------- | ------- | ----------------- | ------- |
 | Requested ACCESS SHARE       |   |                |             |             |                      |         |                   |Blocked      |
 | Requested ROW SHARE          |   |                |             |             |                      |         |Blocked                |Blocked      |
@@ -43,7 +43,7 @@ Row level locks are more granular and will only affect another transaction that 
 There are four types of row-level lock in Azure Database for PostgreSQL and they are acquired depending on which other lock types need to be blocked:
 
 
-| | Existing FOR KEY SHARE | Existing FOR SHARE | Existing FOR NO KEY UPDATE | Existing FOR UPDATE |
+| -- | Existing FOR KEY SHARE | Existing FOR SHARE | Existing FOR NO KEY UPDATE | Existing FOR UPDATE |
 | ------------------- | ----------------- | ------------- | --------- | ----------------- |
 | Requested FOR KEY SHARE       |                   |               |           |Blocked                |
 | Requested FOR SHARE           |                   |               |Blocked        |Blocked                |

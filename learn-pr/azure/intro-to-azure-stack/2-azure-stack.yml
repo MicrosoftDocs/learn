@@ -3,11 +3,11 @@ uid: learn.azure.intro-to-azure-stack.2-azure-stack
 metadata:
   title: What is Azure Stack?
   description: Describe the Azure Stack portfolio, hybrid cloud model, hybrid characteristics of Azure Stack, and the basic characteristics of Azure Stack products
-  ms.date: 12/09/2020
+  ms.date: 03/28/2023
   author: sethmanheim
   ms.author: sethm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  manager: femila
+  ms.topic: unit
   ms.custom: e2e-hybrid
 title: What is Azure Stack?
 durationInMinutes: 4

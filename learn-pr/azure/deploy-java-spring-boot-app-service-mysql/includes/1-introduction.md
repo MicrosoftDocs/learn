@@ -6,7 +6,7 @@ In this module, you'll first scaffold a Spring Boot web application by using Spr
 
 You'll then code a to-do application that stores tasks in a relational database. The tasks will need a MySQL database, so you'll create and host by using Azure Database for MySQL.
 
-Next you'll build the application and also configure it to connect to the MySQL database. Before you deploy, you'll confirm the application can run locally. You'll then deploy through Maven and host on Azure App Service.
+Next, you'll build the application and also configure it to connect to the MySQL database. Before you deploy, you'll confirm the application can run locally. You'll then deploy through Maven and host on Azure App Service.
 
 By the end of this module, you'll be able to incorporate Spring Boot applications into Azure App Service and integrate with a relational database.
 
@@ -25,6 +25,6 @@ By the end of this module, you'll be able to:
 ## Prerequisites
 
 As a Java developer, you're already familiar with Spring applications. As you complete the exercises in this module, you'll use a personal Azure account. Make sure that you have the following resources:
-  
+
 - An Azure subscription
 - Local installations of Java JDK (1.8 or later), Maven (3.0 or later), and the Azure CLI (2.12 or later)

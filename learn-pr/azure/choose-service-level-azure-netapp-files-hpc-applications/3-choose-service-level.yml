@@ -5,11 +5,10 @@ metadata:
   unitType: learning-content  
   title: Choose your service level
   description: Examples on choosing the most cost-effective service level based on throughput requirements.
-  ms.date: 04/06/2021
+  ms.date: 05/10/2023
   author: mengruts  
   ms.author: mengtsai
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/3-choose-service-level.md)]

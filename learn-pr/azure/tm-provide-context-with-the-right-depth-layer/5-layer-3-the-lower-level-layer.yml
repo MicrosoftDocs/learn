@@ -4,11 +4,10 @@ title: Layer 3 - The lower-level layer
 metadata:
   title: Layer 3 - The Lower-Level Layer
   description: Learn what Layer 3 is and when to use it
-  ms.date: 02/28/2020
+  ms.date: 05/05/2023
   author: rodsan
   ms.author: rodsan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-threat-modeling
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/5-layer-3-the-lower-level-layer.md)]

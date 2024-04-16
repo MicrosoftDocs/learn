@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-explore-azure-center-sap-solutions.exercise-install-sap-software
+title: Exercise - Install the SAP software
+metadata:
+  title: Exercise - Install the SAP software
+  description: "Exercise - Install the SAP software with Azure Center for SAP solutions."
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/6-exercise-install-sap-software.md)]

@@ -4,11 +4,10 @@ title: Monitor errors in your app using logging
 metadata:
   title: Monitor errors in your app using logging
   description: Transient errors should be monitored, but aren't as serious as permenant errors
-  ms.date: 04/10/2019
+  ms.date: 08/01/2023
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/8-log-useful-information.md)]

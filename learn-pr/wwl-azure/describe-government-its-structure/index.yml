@@ -2,12 +2,12 @@
 uid: learn.wwl.describe-government-its-structure
 metadata:
   title: Describe the government and its structure
-  description: "Understand government and how it is organized."
+  description: Understand government and how it is organized.
   ms.date: 04/29/2022
   author: wwlpublish
   ms.author: jesander
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Describe the government and its structure
 summary: Understand different forms of government in the United States, their organization, and the roles these key organizations play in cloud strategy.
 abstract: |

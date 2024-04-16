@@ -3,11 +3,10 @@ uid: learn.govern-monitor-secure-resources-azure-lighthouse.7-summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 01/08/2020
+  ms.date: 08/10/2023
   author: iankensey
   ms.author: prukulka
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Summary
 durationInMinutes: 1
 content: |

@@ -6,8 +6,9 @@ metadata:
   ms.date: 12/13/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: cosmos-db
+  ms.subservice: nosql
 title: Implement integrated cache in Azure Cosmos DB for NoSQL
 summary: Implement, configure, and monitor integrated cache in Azure Cosmos DB for NoSQL.
 abstract: |
@@ -24,7 +25,7 @@ roles:
 products:
 - azure-cosmos-db
 subjects:
-- database
+- databases
 units:
 - learn.wwl.implement-integrated-cache.introduction
 - learn.wwl.implement-integrated-cache.review-workloads-that-benefit-from-cache

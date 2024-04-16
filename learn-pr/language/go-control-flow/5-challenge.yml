@@ -3,11 +3,10 @@ uid: learn.language.go-control-flow.5-challenge
 metadata:
   title: Exercise - Use control flows in Go
   description: Practice what you've learned about control flow statements.
-  ms.date: 06/20/2021
+  ms.date: 01/25/2023
   author: GitHubber17
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Exercise - Use control flows in Go
 durationInMinutes: 12

@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: " Test your knowledge of Visual Studio Code."
-  ms.date: 10/20/2022
+  ms.date: 11/22/2023
   author: kjo-msft
   ms.author: karinjohnson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-vs-code # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 2
 
 content: |
@@ -16,12 +15,12 @@ quiz:
   questions:
   - content: "Suppose you work for a company that manages a code repository on GitHub. Programmers are required to commit code regularly to this repository. Which feature of Visual Studio Code helps you meet this requirement?"
     choices:
-    - content: "This feature isn't supported by Visual Studio Code."
+    - content: "Visual Studio Code doesn't support this feature."
       isCorrect: false
       explanation: "Visual Studio Code has built-in support for Git."
     - content: "You can install a code-formatting extension for Visual Studio Code."
       isCorrect: false
-      explanation: "A code-formatting extension does not provide integration with source control management systems."
+      explanation: "A code-formatting extension doesn't provide integration with source control management systems."
     - content: "You can use the built-in source control feature of Visual Studio Code."
       isCorrect: true
       explanation: "Visual Studio Code has built-in support for Git."
@@ -33,13 +32,13 @@ quiz:
       explanation: "You would need to install extensions to provide Android support in Visual Studio Code."
     - content: "Maybe. You can install extensions to support Android development in Visual Studio Code. However, a better choice might be the official Android IDE."
       isCorrect: true
-      explanation: "In some cases, you may prefer to use the official IDE for a particular language or platform such as Android instead of Visual Studio Code."
+      explanation: "In some cases, you might prefer to use the official IDE for a particular language or platform such as Android instead of Visual Studio Code."
   - content: "Suppose your team is planning to develop applications in Rust. How would you determine if Visual Studio Code can support this programming language?"
     choices:
     - content: "You search the Extensions Marketplace to determine if there are Rust extensions."
       isCorrect: true
       explanation: "You can search the Extensions Marketplace for extensions that support hundreds of languages, including Rust."
-    - content: "You determine Visual Studio Code won't support your team's need because Visual Studio Code is a lightweight editor that supports only a few languages."
+    - content: "You determine that Visual Studio Code doesn't support your team's needs because Visual Studio Code is a lightweight editor that supports only a few languages."
       isCorrect: false
       explanation: "You can search the Extensions Marketplace for extensions that support hundreds of languages, including Rust. More extensions are being developed and added all the time."
   

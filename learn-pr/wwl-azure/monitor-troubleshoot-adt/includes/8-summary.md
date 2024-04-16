@@ -1,1 +1,0 @@
-Your team will be responsible for extending the company's IoT solution to include business data from various sources by implementing Azure Digital Twins. Your understanding of how to monitor and troubleshoot the Azure Digital Twins solution will help the team to ensure that the solution continues to operate as intended.

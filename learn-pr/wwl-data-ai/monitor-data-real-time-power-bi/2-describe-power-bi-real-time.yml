@@ -6,9 +6,8 @@ metadata:
   description: "Describe Power BI real-time analytics"
   ms.date: 12/20/2022
   author: wwlpublish
-  ms.author: benjiang
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: anrudduc
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

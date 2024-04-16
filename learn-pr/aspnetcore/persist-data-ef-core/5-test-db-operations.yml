@@ -4,11 +4,11 @@ title: Exercise - Run the app
 metadata:
   title: Exercise - Run the app
   description: "Test the EF Core app."
-  ms.date: 12/13/2021
+  ms.date: 10/04/2023
   author: camsoper
   ms.author: casoper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.manager: markl
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/5-test-db-operations.md)]

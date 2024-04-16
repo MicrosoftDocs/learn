@@ -4,11 +4,12 @@ title: Examine monitoring, logging, and alerting services
 metadata:
   title: Examine monitoring, logging, and alerting services
   description: "Examine monitoring, logging, and alerting services"
-  ms.date: 04/20/2023
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/3-examine-monitoring-logging-alerting-services.md)]

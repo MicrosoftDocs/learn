@@ -4,11 +4,10 @@ title: Introduction
 metadata:
   title: Introduction
   description: Learn to create a successful open-source program by establishing contributor guidance, following proven processes, and leveraging community standards.
-  ms.date: 06/26/2020
+  ms.date: 05/15/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

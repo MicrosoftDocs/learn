@@ -4,11 +4,10 @@ title: Exercise - Create a Service Bus queue and topic
 metadata:
   title: Exercise - Create Service Bus queue and topic
   description: Create Service Bus messaging components—a namespace that contains a queue, a topic, and subscriptions.
-  ms.date: 04/04/2023
+  ms.date: 10/25/2023
   author: spelluru
   ms.author: spelluru
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: true
 durationInMinutes: 10
 content: |

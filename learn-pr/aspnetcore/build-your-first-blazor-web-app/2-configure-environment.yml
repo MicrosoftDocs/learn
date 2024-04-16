@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.build-your-first-blazor-web-app.configure-environment
+title: Configure your development environment
+metadata:
+  title: Configure your development environment
+  description: Learn how to set up your environment for Blazor development.
+  ms.date: 01/26/2024
+  author: danroth27
+  ms.author: daroth
+  ms.manager: markl
+  ms.topic: unit
+  ms.custom: devx-track-dotnet
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-configure-environment.md)]

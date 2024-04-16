@@ -3,11 +3,10 @@ uid: learn.student-evangelism.optimize-basketball-player-rest-breaks.7-codetour
 metadata:
   title: Exercise - Use CodeTour to build your web app functionality
   description: Use CodeTour to build your web app functionality
-  ms.date: 03/10/2021
+  ms.date: 10/12/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Exercise - Use CodeTour to build your web app functionality
 durationInMinutes: 5

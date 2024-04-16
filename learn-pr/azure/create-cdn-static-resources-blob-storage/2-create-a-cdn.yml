@@ -4,11 +4,10 @@ title: Create an Azure CDN
 metadata:
   title: Create an Azure CDN
   description: Use an Azure Content Delivery Network to Optimize Website Performance
-  ms.date: 4/30/2019
+  ms.date: 01/10/2024
   author: duongau
   ms.author: duau
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-create-a-cdn.md)]

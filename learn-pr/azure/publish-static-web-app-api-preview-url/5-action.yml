@@ -3,11 +3,10 @@ uid: learn.azure.publish-static-web-app-api-preview-url.5-action
 metadata:
   title: Publish the API with GitHub Actions
   description: Learn how to include your API when you publish a static site with a GitHub Action
-  ms.date: 12/08/2022
+  ms.date: 12/12/2023
   author: craigshoemaker
   ms.author: cshoe
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   zone_pivot_groups: dev-javascript-framework
 title: Publish the API with GitHub Actions
 durationInMinutes: 3

@@ -36,5 +36,5 @@ Now that you have reviewed this module, you should be able to:
 
 ### Data Loss Prevention
 
-- [Overview of data loss prevention](/microsoft-365/compliance/data-loss-prevention-policies)
+- [Overview of data loss prevention](/microsoft-365/compliance/endpoint-dlp-learn-about?view=o365-worldwide)
 

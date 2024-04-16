@@ -6,9 +6,9 @@ metadata:
   description: In this unit, you learn about some basic operators. You also learn about converting between data types and capturing user input.
   author: softchris
   ms.author: chnoring
-  ms.date: 07/21/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.date: 02/24/2023
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 3
 content: |

@@ -4,12 +4,11 @@ title: Exercise - Use Swashbuckle to create an Open API document
 metadata:
   title: Exercise - Use Swashbuckle to create an Open API document
   description: Create an Open API document for your ASP.NET Core web API with Swashbuckle
-  ms.date: 04/16/2021
+  ms.date: 07/11/2023
   author: justinyoo
   ms.author: juyoo
   manager: jmartens
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: juyoo-04222021
 durationInMinutes: 8

@@ -6,8 +6,9 @@ metadata:
   ms.date: 10/18/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: cosmos-db
+  ms.subservice: nosql
 title: Monitor responses and events in Azure Cosmos DB for NoSQL
 summary: We will learn to use a rich set of REST response codes returned by Azure Cosmos DB request to help you analyze potential issues.
 abstract: |

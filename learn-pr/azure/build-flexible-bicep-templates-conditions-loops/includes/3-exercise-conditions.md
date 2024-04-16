@@ -1,8 +1,8 @@
 [!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
 
-You need to deploy your toy company's resources to a variety of environments. And you want to use parameters and conditions to control what gets deployed to each environment. 
+You need to deploy your toy company's resources to a variety of environments, and you want to use parameters and conditions to control what gets deployed to each environment.
 
-In this exercise, you create an Azure SQL logical server and a database. You then add auditing settings to ensure that auditing is enabled, but you want it enabled only when you're deploying to a production environment. For auditing purposes, you need to have a storage account, which you also deploy only when you're deploying resources to a production environment.
+In this exercise, you'll create an Azure SQL logical server and a database. You'll then add auditing settings to ensure that auditing is enabled, but you want it enabled only when you're deploying to a production environment. For auditing purposes, you need to have a storage account, which you'll also deploy only when you're deploying resources to a production environment.
 
 During the process, you'll:
 
@@ -21,7 +21,7 @@ During the process, you'll:
 1. Create a new file called *main.bicep*.
 
 1. Save the empty file so that Visual Studio Code loads the Bicep tooling. 
- 
+
    You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *templates* folder to save it in.
 
 1. To define a logical server and database, add the following content to the file, along with the parameters and variables that these resources need. Enter the content yourself instead of copying and pasting so that you can see how the tooling helps you to write your Bicep files.
@@ -104,12 +104,12 @@ You're prompted to enter the values for `sqlServerAdministratorLogin` and `sqlSe
 
 > [!TIP]
 > When you enter the secure parameters, the values you choose must follow certain rules:
-> 
-> - `sqlServerAdministratorLogin` must not be an easily guessable login name such as `admin` or `root`. It can contain only alphanumeric characters and must start with a letter.
-> - `sqlServerAdministratorLoginPassword` must be at least eight characters long and include lowercase letters, uppercase letters, numbers, and symbols. For more information about password complexity, see the [SQL Azure password policy](/sql/relational-databases/security/password-policy#password-complexity).
+>
+> * `sqlServerAdministratorLogin` must not be an easily guessable login name such as `admin` or `root`. It can contain only alphanumeric characters and must start with a letter.
+> * `sqlServerAdministratorLoginPassword` must be at least eight characters long and include lowercase letters, uppercase letters, numbers, and symbols. For more information about password complexity, see the [SQL Azure password policy](/sql/relational-databases/security/password-policy#password-complexity).
 >
 > If the parameter values don't meet the requirements, Azure SQL won't deploy your logical server.
-> 
+>
 > Also, *be sure to note the login and password that you enter*. You'll use them again shortly.
 
 Because you haven't specified a value for the `environmentName` parameter, the default value of `Development` is used.
@@ -129,19 +129,19 @@ Use the Azure portal to inspect the resources that you deploy and to inspect the
 
 1. Select **<rgn>[sandbox resource group name]</rgn>**.
 
-1. In the **Overview** section, you can see that one deployment has succeeded. You can also see that a logical server and a SQL database are deployed, but the storage account for auditing isn't deployed. 
- 
+1. In the **Overview** section, you can see that one deployment has succeeded. You can also see that a logical server and a SQL database are deployed, but the storage account for auditing isn't deployed.
+
    > [!NOTE]
    > The storage account with a name beginning with `cloudshell` is unrelated to your deployment and was created by the Learn sandbox.
 
     :::image type="content" source="../media/3-development-deployment.png" alt-text="Screenshot of the Azure portal resource group overview pane, with a section displaying a successful deployment." border="true":::
 
-1. Next to **Deployments**, select **1 Succeeded** to see the details of the deployment.
+1. Next to **Deployments**, select **1 Succeeded** to see deployment details.
 
     :::image type="content" source="../media/3-deployment-succeeded.png" alt-text="Screenshot of the Azure portal resource group overview pane, displaying additional details of the successful deployment." border="true":::
 
-1. Select the deployment called **main** to see which resources were deployed, and then select **Deployment details** to expand it. 
- 
+1. Select the deployment called **main** to see which resources were deployed, and then select **Deployment details** to expand it.
+
    In this case, one logical server and one SQL database are deployed. Notice that the storage account and auditing settings aren't on the list of resources.
 
     :::image type="content" source="../media/3-development-deployment-details.png" alt-text="Screenshot of the Azure portal resource group overview pane for the specific deployment, with a logical server and database resource listed." border="true":::
@@ -150,7 +150,7 @@ Use the Azure portal to inspect the resources that you deploy and to inspect the
 
 ## Redeploy for the production environment
 
-In the previous deployment, the default value for the `environmentName` parameter was used, which meant that it was set to `Development`. 
+In the previous deployment, the default value for the `environmentName` parameter was used, which meant that it was set to `Development`.
 
 Now you'll explicitly set the parameter value to `Production`. You expect that, by making this change, the storage account for auditing purposes will be deployed, and auditing will be enabled on the logical server.
 
@@ -177,7 +177,7 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep -environmentName Producti
 ::: zone-end
 
 > [!CAUTION]
-> Be sure to use the same login and password that you used previously, or else the deployment won't finish successfully.
+> Be sure to use the same login and password that you used previously, or the deployment won't finish successfully.
 
 After minute or two, the deployment should finish successfully.
 
@@ -185,9 +185,9 @@ After minute or two, the deployment should finish successfully.
 
 To complete this exercise, verify that the redeployment has finished successfully and that auditing has been enabled.
 
-1. Return to the Azure portal, and go to your resource group. If you already have the resource group open, select **Refresh**. 
-   
-   You see that an additional storage account has been deployed for auditing purposes.
+1. Return to the Azure portal and go to your resource group. If you already have the resource group open, select **Refresh**.
+
+   You should see that an additional storage account has been deployed for auditing purposes.
 
     :::image type="content" source="../media/3-production-deployment.png" alt-text="Screenshot of the Azure portal resource group overview pane, showing that a storage account is deployed for auditing." border="true":::
 
@@ -197,6 +197,6 @@ To complete this exercise, verify that the redeployment has finished successfull
 
     :::image type="content" source="../media/3-sql-auditing-search.png" alt-text="Screenshot of the Azure portal interface for the logical server, showing the search field with Auditing entered." border="true":::
 
-1. Verify that auditing has been enabled for this logical server.
+1. Verify that auditing is enabled for this logical server.
 
     :::image type="content" source="../media/3-sql-auditing.png" alt-text="Screenshot of the Azure portal interface for the logical server, showing that the auditing configuration is enabled." border="true":::

@@ -3,11 +3,10 @@ uid: learn.azure-security.secure-aad-users-with-mfa.introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 01/03/2021
+  ms.date: 11/03/2023
   author: Justinha
   ms.author: justinha
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Introduction
 durationInMinutes: 3
 content: |

@@ -4,11 +4,11 @@ title: Exercise - Create a VM to host your web application
 metadata:
   title: Exercise - Create a VM to host your web application
   description: Exercise - Create a VM to host your web application
-  ms.date: 06/10/2022
-  author: ericd-mst-github
-  ms.author: erd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 05/11/2023
+  author: ju-shim
+  ms.author: jushiman
+  ms.topic: unit
+  ms.custom: linux-related-content
 interactive: bash
 azureSandbox: true
 durationInMinutes: 10

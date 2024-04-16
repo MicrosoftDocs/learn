@@ -3,11 +3,10 @@ uid: learn.language.go-write-test-program.1-project-files
 metadata:
   title: Outline the online bank project
   description: Define what the project will do and get started creating the project files.
-  ms.date: 02/02/2021
+  ms.date: 01/23/2023
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Outline the online bank project
 durationInMinutes: 3

@@ -5,10 +5,9 @@ metadata:
   title: Summary
   description: Summarizes what you have learned in this module and describes some next steps.
   author: acomfort248
-  ms.author: jabenn
-  ms.date: 06/10/2022
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: chnoring
+  ms.date: 03/01/2023
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 1
 content: |

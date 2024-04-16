@@ -3,11 +3,10 @@ uid: learn.azure-intro-to-blockchain.what-is-blockchain
 metadata:
   title: What is blockchain?
   description: In this unit, we discuss what blockchain is.
-  ms.date: 05/15/2020
+  ms.date: 05/15/2023
   author: PatAltimore
   ms.author: patricka
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: What is blockchain?
 durationInMinutes: 5
 content: |

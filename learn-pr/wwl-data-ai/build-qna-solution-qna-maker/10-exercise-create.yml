@@ -4,12 +4,10 @@ title: Exercise - Create a question answering solution
 metadata:
   title: Exercise - Create a question answering solution
   description: "Exercise - Create a question answering solution"
-  ms.date: 01/05/2022
+  ms.date: 01/22/2024
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
+  ms.topic: unit
 labId: 100989
 labModal: true
 durationInMinutes: 20

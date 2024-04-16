@@ -1,4 +1,3 @@
-
 In this module, you learned how to:
 
 * Explain the differences between the two types of managed identities

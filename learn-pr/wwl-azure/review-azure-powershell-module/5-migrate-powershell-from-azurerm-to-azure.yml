@@ -4,11 +4,12 @@ title: Migrate Azure PowerShell from AzureRM to Azure
 metadata:
   title: Migrate Azure PowerShell from AzureRM to Azure
   description: "Migrate Azure PowerShell from AzureRM to Azure"
-  ms.date: 10/19/2022
+  ms.date: 03/22/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

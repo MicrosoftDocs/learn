@@ -4,13 +4,12 @@ title: Identify factors to install and use Windows PowerShell
 metadata:
   title: Identify factors to install and use Windows PowerShell
   description: "Identify factors to install and use Windows PowerShell"
-  ms.date: 11/10/2022
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 12
 content: |
   [!include[](includes/4-identify-factors-install-use-windows-powershell.md)]

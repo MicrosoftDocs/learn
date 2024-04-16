@@ -4,11 +4,10 @@ title: Perform benchmarking in HBase
 metadata:
   title: Perform benchmarking in HBase
   description: "Perform benchmarking in HBase"
-  ms.date: 01/05/2022
+  ms.date: 04/09/2024
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

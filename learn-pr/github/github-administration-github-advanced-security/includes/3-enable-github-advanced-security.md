@@ -19,7 +19,37 @@ Follow the steps below to enable GitHub Advanced Security for all the repositori
 
 If you'd like to automatically enable GitHub Advanced Security on new private and internal repositories added to your organization, select the **Automatically enable for new private and internal repositories** checkbox under **GitHub Advanced Security**, review the impact of enabling Advanced Security on all new private and internal repositories, and click **Enable for new repositories**.
 
-:::image type="content" source="../media/enable-org-2.png" alt-text="Screenshot of the screen for reviewing the impact of enabling Advanced Security on all new private and internal repositories.":::
+:::image type="content" source="../media/enable-org-2.png" alt-text="Screenshot of the screen for reviewing the effect of enabling Advanced Security on all new private and internal repositories.":::
+
+GitHub also offers an advanced Code scanning feature called autofix (currently in open beta for GitHub Enterprise Cloud users) that can help automate some security fixes users by providing targeted recommendations to developers to fix code scanning alerts in pull requests so they can avoid introducing new security vulnerabilities. Autofix leverages AI to suggest code changes that address vulnerabilities identified by CodeQL during code review. While not a replacement for manual review, autofix can save developers time and effort. 
+
+### Disabling Autofix for an Organization
+
+If autofix is allowed at the enterprise level, organization administrators have the option to disable autofix for an organization. If you disable autofix for an organization, autofix cannot be enabled for any repositories within the organization. 
+> [!NOTE]
+> Disabling autofix at the organization level will remove all open autofix comments from open pull requests across all repositories in the organization.
+
+Follow the steps below to disable Autofix for your organization:
+1. In the upper-right corner of GitHub.com, select your profile photo, then click  Your organizations. 
+2. Next to the organization, click Settings.
+   
+:::image type="content" source="../media/open-repo-settings-autofix.png" alt-text="Screenshot of the screen for clicking the repository settings icon for autofix.":::
+
+3. In the "Security" section of the sidebar, click  Code security and analysis.
+4. Under the "Code scanning" section, deselect Autofix for CodeQL.
+
+### Disabling Autofix for a Repository
+If autofix is allowed at the enterprise level and enabled at the organization level, repository administrators have the option to disable autofix for a repository. Disabling autofix at the repository level will remove all open autofix comments from all open pull requests across the repository. 
+Follow the steps below to disable Autofix for your repository:
+
+1. On GitHub.com, navigate to the main page of the repository. 
+2. Under your repository name, click  Settings. If you cannot see the "Settings" tab, select the  dropdown menu, then click Settings. 
+3. In the "Security" section of the sidebar, click  Code security and analysis. 
+4. In the "Code scanning" section, deselect Autofix for CodeQL.
+
+> [!NOTE]
+> Disabling autofix at any level will close all open autofix comments from all open pull requests at the level that was disabled. If autofix is disabled and then subsequently enabled, autofix won't automatically suggest any fixes for pull requests that are already open.
+
 
 ## Enable GitHub Advanced security for Enterprise Server
 
@@ -29,9 +59,9 @@ Whether you plan on using the user interface or the administrative shell, make s
 
 - Your license for GitHub Enterprise Server has been upgraded to include GitHub Advanced Security and you've uploaded it to your GitHub Enterprise Server instance.
 - You've reviewed the prerequisites for the features you plan to enable:
-  - [Prerequisites for code scanning](https://docs.github.com/en/enterprise-server@3.3/admin/advanced-security/configuring-code-scanning-for-your-appliance#prerequisites-for-code-scanning)
-  - [Prerequisites for secret scanning](https://docs.github.com/en/enterprise-server@3.3/admin/advanced-security/configuring-secret-scanning-for-your-appliance#prerequisites-for-secret-scanning)
-  - [Prerequisites for Dependabot](https://docs.github.com/en/enterprise-server@3.3/admin/configuration/configuring-github-connect/enabling-the-dependency-graph-and-dependabot-alerts-for-your-enterprise)
+  - [Prerequisites for code scanning](https://docs.github.com/en/enterprise-server@3.11/admin/code-security/managing-github-advanced-security-for-your-enterprise/configuring-code-scanning-for-your-appliance)
+  - [Prerequisites for secret scanning](https://docs.github.com/en/enterprise-server@3.11/admin/code-security/managing-github-advanced-security-for-your-enterprise/configuring-secret-scanning-for-your-appliance)
+  - [Prerequisites for Dependabot](https://docs.github.com/en/enterprise-server@3.11/admin/configuration/configuring-github-connect/enabling-dependabot-for-your-enterprise)
 
 > [!NOTE]
 > Enabling GitHub Advanced Security features on your Enterprise Server instance will cause user-facing services on GitHub Enterprise Server to restart. You should time this change carefully to minimize downtime for users.
@@ -64,3 +94,4 @@ Follow the procedure below to enable the GitHub Advanced Security features on yo
 3. Apply the configuration by entering `ghe-config-apply`.
 
 When GitHub Enterprise Server has finished restarting, follow the procedure described in the previous "Enable GitHub Advanced Security for Enterprise Cloud" section to enable GitHub Advanced Security for all the repositories in your organization.
+

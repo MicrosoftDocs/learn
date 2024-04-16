@@ -4,11 +4,12 @@ title: Exercise - Manage tiered storage using ASP.NET Core apps
 metadata:
   title: Exercise - Manage tiered storage using ASP.NET Core apps
   description: Exercise - Manage tiered storage using ASP.NET Core apps
-  ms.date: 09/30/2021
+  ms.date: 11/02/2023
   author: tamram
   ms.author: tamram
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 10
 interactive: bash
 azureSandbox: true

@@ -2,18 +2,18 @@
 uid: learn.wwl.describe-application-based-threats-security-controls
 metadata:
   title: Describe application-based threats and how to protect against them
-  description: "Describe application-based threats and security controls"
-  ms.date: 02/14/2022
+  description: "Describe application-based threats and security controls."
+  ms.date: 03/12/2024
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: security
 title: Describe application-based threats and how to protect against them
-summary: The proliferation of applications across the digital landscape presents an increased opportunity for cybercriminals.  Throughout this module, you’ll learn about the threat landscape of application-based attacks and how to protect your applications.
+summary: The proliferation of applications across the digital landscape presents an increased opportunity for cybercriminals. Throughout this module, you’ll learn about the threat landscape of application-based attacks and how to protect your applications.
 abstract: |
-  -	Describe what are applications
-  -	Describe the threat landscape of applications
-  -	Describe how to protect your applications
+  -	Describe what are applications.
+  -	Describe the threat landscape of applications.
+  -	Describe how to protect your applications.
 prerequisites: ""
 iconUrl: /training/achievements/6-describe-application-based-threats-security-controls.svg
 levels:

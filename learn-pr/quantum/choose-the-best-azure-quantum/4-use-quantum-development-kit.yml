@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.choose-the-best-azure-quantum.use-qdk
+title: Exercise - Use the Quantum Development Kit to run a quantum program
+metadata:
+  title: Exercise - Use the Quantum Development Kit to run a quantum program
+  description: Use the Quantum Development Kit to run a quantum program
+  ms.date: 12/13/2023
+  author: SoniaLopezBravo
+  ms.author: sonialopez
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-use-quantum-development-kit.md)]

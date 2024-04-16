@@ -4,11 +4,10 @@ title: What are blobs?
 metadata:
   title: What are blobs?
   description: What are blobs?
-  ms.date: 03/23/2023
+  ms.date: 10/23/2023
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/2-what-are-blobs.md)]

@@ -3,12 +3,11 @@ uid: learn.azure.learn-introduction-tutorials-mrtk.1-7-exercise-hand-interaction
 title: Exercise - Add hand interaction scripts to an object
 metadata:
   title: Exercise - Add hand interaction scripts to an object
-  description: Introduction for Add hand interaction scripts to an object
-  ms.date: 09/09/2021
-  author: Sean-Kerawala
-  ms.author: sekerawa
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  description: Exercise for Adding hand interaction scripts to an object
+  ms.date: 09/30/2023
+  author: marlenaklein-msft
+  ms.author: marlenaklein
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/1-7-exercise-hand-interaction-with-objectmanipulator.md)]

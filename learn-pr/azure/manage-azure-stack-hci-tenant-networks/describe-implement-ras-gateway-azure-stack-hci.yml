@@ -4,11 +4,10 @@ title: Describe and implement RAS Gateway on Azure Stack HCI
 metadata:
   title: Describe and implement RAS Gateway on Azure Stack HCI
   description: Explore the functionality provided by RAS Gateway.
-  ms.date: 03/30/2022
-  author: mpolicht
-  ms.author: nedelgad
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 12/28/2022
+  author: JasonGerend
+  ms.author: jgerend
+  ms.topic: unit
 durationInMinutes: 11
 content: |
   [!include[](includes/describe-implement-ras-gateway-azure-stack-hci.md)]

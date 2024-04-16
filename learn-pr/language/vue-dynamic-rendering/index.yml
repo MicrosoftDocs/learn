@@ -6,8 +6,7 @@ metadata:
   ms.date: 01/11/2023
   author: GeekTrainer
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom: team=nextgen
 title: Dynamic page displays with Vue.js
 summary: One of the goals of any web framework is to update the display based on data values. This module explores how to make your page dynamic based on those values and how to display lists of information.
@@ -30,9 +29,7 @@ roles:
 - student
 - developer
 products:
-- azure-app-service-static
-subjects:
-- development-tools
+- static-web-apps
 units:
 - learn.language.vue-dynamic-rendering.1-introduction
 - learn.language.vue-dynamic-rendering.2-render-lists

@@ -5,11 +5,10 @@ metadata:
   unitType: exercise
   title: Exercise - Combine table results by using the join operator
   description: In this exercise, you'll learn how to combine table results by using the join operator.
-  ms.date: 09/22/2022
+  ms.date: 01/03/2024
   author: shsagir
   ms.author: shsagir
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/4-exercise-join-types.md)]

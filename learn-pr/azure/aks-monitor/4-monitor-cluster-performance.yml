@@ -4,11 +4,10 @@ title: Monitor performance of your cluster
 metadata:
   title: Monitor performance of your cluster
   description: Monitor the performance and health status of your cluster's components and their workloads.
-  ms.date: 08/10/2022
+  ms.date: 03/13/2024
   author: bwren
   ms.author: bwren
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/4-monitor-cluster-performance.md)]

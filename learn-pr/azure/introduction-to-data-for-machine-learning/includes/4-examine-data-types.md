@@ -8,11 +8,11 @@ For data operations, we sometimes need awareness of what exactly the data repres
 
 _Continuous data_ refers to numerical information that can increase or decrease by any amount. For example, you can add 1 millimeter to 1 meter, and calculate a sum as 1.001 meters.
 
-_Categorical data_ refers to data that doesn’t fall on a continuous spectrum. In our scenario, the data categorizes the people on the Titanic as “staff” or “passengers”. Categorical data can’t be stored as numbers in a clearly obvious way.
+_Categorical data_ refers to data that doesn’t fall on a continuous spectrum. In our scenario, the data categorizes the people on the Titanic as “crew” or “passengers.” Categorical data can’t be stored as numbers in a clearly obvious way.
 
-_Ordinal data_ refers to categorical data that have a defined order, and can therefore support storage as numerical values. For example, we can define values of **big**, **medium**, and **small** as ordinal data because we can numerically rank them: significant > medium > small. By contrast, the values **apple**, **orange** and **coconut** are categorical because we can't rank them. Ordinal data can also refer to numbers that can increase or decrease, but only by set amounts. For example, the number of people boarding a boat is guaranteed to be a whole number: no one can half board.
+_Ordinal data_ refers to categorical data that have a defined order, and can therefore support storage as numerical values. For example, we can define values of **big**, **medium**, and **small** as ordinal data because we can numerically rank them: big > medium > small. By contrast, the values **apple**, **orange** and **coconut** are categorical because we can't rank them. Ordinal data can also refer to numbers that can increase or decrease, but only by set amounts. For example, the number of people boarding a boat is guaranteed to be a whole number: no one can half board.
 
-_IDs_ refer to a special type of categorical data where each sample has its own unique ID. For example, in our dataset, each person on the Titanic has a given ID value, even if that person has the same name as someone else. Identity values help us navigate in a dataset, but our data analysis won't directly involve those values.
+_IDs_ refer to a special type of categorical data where each sample has its own unique ID. For example, in our dataset, each person on the Titanic has a given ID value, even if that person has the same name as someone else. Identity values help us navigate in a dataset, but our data analysis doesn't directly involve those values.
 
 ## Datatypes
 
@@ -26,13 +26,13 @@ A computer must store and process all the data we use for machine learning. Whil
 * booleans: true and false
 * None, void, or null: not data, but rather the _**absence**_ of data
 
-The exact terms and implementation for these concepts vary from language to language, but they all operate in similar ways across all languages.
+The exact terms and implementation for these concepts vary from language to language, but they all operate in similar ways across all computer languages.
 
 Sometimes, two different datatypes offer equivalent functionality. For example, computers can handle true/false values as Booleans (true or false), strings (‘y’, or ‘n’), integers (0 or 1) or even floating-point numbers (0.0 or 1.0).
 
 ## Derived datatypes
 
-As you have used technology, you've encountered many more basic, 'primitive' datatypes beyond the above list. Computers can store dates, images, 3D models, and so on. We refer to these as **derived datatypes**. We start with one or more primitive datatypes to construct a derived datatype.
+As we use technology, we encounter many more basic, 'primitive' datatypes beyond the above list. Computers can store dates, images, 3D models, and so on. We refer to these as **derived datatypes**. We start with one or more primitive datatypes to construct a derived datatype.
 
 Often, in machine learning, it helps to convert derived types into simpler representations. For example, we can store a defined date value (for example, **1st January, 2017**) as an integer or floating point number: **20170101**. Integer or floating point numbers make the calculations behind our models easier.
 

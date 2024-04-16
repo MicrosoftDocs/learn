@@ -6,9 +6,10 @@ metadata:
   description: Learn how to create a custom JavaScript GitHub action and use it within a workflow.
   author: a-a-ron
   ms.author: aastewar
-  ms.date: 04/14/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/24/2023
+  ms.topic: unit
+  ms.custom:
+    - devx-track-js
 durationInMinutes: 6
 content: |
   [!include[](includes/exercise-create-custom-action.md)]

@@ -4,11 +4,10 @@ title: Scale a web app manually
 metadata:
   title: Scale a web app manually
   description: Learn how to use the Azure portal to manually scale a web app in and out.
-  ms.date: 04/11/2019
+  ms.date: 11/08/2023
   author: msangapu-msft
   ms.author: msangapu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/2-scale-a-web-app-manually.md)]

@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.configure-azure-files-file-sync.implement
-title: Implement Azure File Sync
+uid: learn.wwl.configure-azure-files-file-sync.implement-soft-delete
+title: Implement soft delete for Azure Files
 metadata:
-  title: Implement Azure File Sync
-  description: "Implement Azure File Sync"
-  ms.date: 03/30/2023
+  title: Implement soft delete for Azure Files
+  description: "Implement soft delete for Azure Files."
+  ms.date: 04/04/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/5-implement-file-sync.md)]

@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/25/2023
+  ms.date: 02/16/2024
   author: wwlpublish
   ms.author: buzahid
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -31,18 +30,18 @@ quiz:
       explanation: "Correct! The optional argument is included using the parameter name followed by a `:`"
     - content: "`Print(number: \"555\", member: false)`"
       isCorrect: false
-      explanation: "Incorrect. All required arguments must be included"
+      explanation: "Incorrect. All required arguments must be included."
     - content: "`Print(\"Tony\", false)`"
       isCorrect: false
-      explanation: "Incorrect. `false` needs to be a named argument using the parameter name `member`"
+      explanation: "Incorrect. `false` needs to be a named argument using the parameter name `member`."
   - content: "Given the following method signature, `void SetHealth(string health)`, why don't operations inside the method affect the original input string `health`?"
     choices:
-    - content: "The `string` data type is pass by value"
+    - content: "The `string` data type is pass by value."
       isCorrect: false
       explanation: "Incorrect. Strings are pass by reference, but they're immutable so the value can't be altered once assigned."
-    - content: "The method code must be incorrect"
+    - content: "The method code must be incorrect."
       isCorrect: false
       explanation: "Incorrect. Strings are pass by reference, but they're immutable so the value can't be altered once assigned."
     - content: "Strings can't be altered once assigned, they can only be overwritten with a new value."
       isCorrect: true
-      explanation: "Correct! Strings are pass by reference, but they're immutable and can't be altered once assigned"
+      explanation: "Correct! Strings are pass by reference, but they're immutable and can't be altered once assigned."

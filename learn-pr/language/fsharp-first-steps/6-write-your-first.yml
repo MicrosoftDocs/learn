@@ -5,11 +5,11 @@ metadata:
   unitType: exercise
   title: "Exercise - Write your first line of F# code"
   description: "Use F# Interactive to print Hello World to the console"
-  ms.date: 07/20/2021
+  ms.date: 02/22/2023
   author: luisquintanilla
   ms.author: luquinta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.manager: markl
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/6-write-your-first.md)]

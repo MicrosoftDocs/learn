@@ -4,11 +4,10 @@ title: What is GitHub Packages?
 metadata:
   title: What is GitHub Packages?
   description: Discover the main features of GitHub Packages, and when to use it.
-  ms.date: 09/30/2021
+  ms.date: 11/26/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 azureSandbox: false
 content: |

@@ -1,4 +1,3 @@
-
 You can define load-balancing rules to specify how traffic is distributed to your back-end pools. Each rule maps a front-end IP address and port combination to a set of back-end IP address and port combinations.
 
 :::image type="content" source="../media/add-load-balancer-rules-f4d9b188.png" alt-text="Screenshot that shows how to create load-balancing rules in the Azure portal.":::
@@ -20,12 +19,12 @@ Let's take a closer look at how to configure load-balancing rules for your back-
 
    Azure Load Balancer uses a five-tuple hash to map traffic to available servers. The tuple consists of the source IP address, source port, destination IP address, destination port, and protocol type. The load balancer provides stickiness only within a transport session.
 
-- **Session persistence** specifies how to handle traffic from a client. By default, successive requests from a client are handled by any virtual machine in your pool.
+- **Session persistence** specifies how to handle traffic from a client. By default, successive requests from a client go to any virtual machine in your pool.
 
    You can modify the session persistence behavior as follows:
    - **None (default)**: Any virtual machine can handle the request.
-   - **Client IP**: Successive requests from the same client IP address are handled by the same virtual machine.
-   - **Client IP and protocol**: Successive requests from the same client IP address and protocol combination are handled by the same virtual machine.
+   - **Client IP**: Successive requests from the same client IP address go to the same virtual machine.
+   - **Client IP and protocol**: Successive requests from the same client IP address and protocol combination go to the same virtual machine.
 
    > [!NOTE]
    > Maintaining session persistence information is important for applications that implement a shopping cart. Can you think of other applications that might benefit from session persistence?

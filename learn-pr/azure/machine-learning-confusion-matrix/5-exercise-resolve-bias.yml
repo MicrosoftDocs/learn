@@ -4,11 +4,10 @@ title: Exercise - Resolving biases in a classification model
 metadata:
   title: Exercise - Resolving biases in a classification model
   description: Exercise unit about resolving biases in a classification model
-  ms.date: 05/25/2021
+  ms.date: 04/14/2023
   author: TomReidNZ
   ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 sandbox: true
 notebook: notebooks/8-5-exercise-resolve-bias.ipynb

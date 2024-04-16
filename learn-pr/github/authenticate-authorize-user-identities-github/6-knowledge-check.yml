@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Review what you've learned.
-  ms.date: 11/01/2021
+  ms.date: 11/17/2022
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 quiz:
   questions:
@@ -26,14 +25,14 @@ quiz:
         - content: "Short Message Service (SMS)"
           isCorrect: false
           explanation: "If your users are not able to authenticate using a TOTP mobile app, they can authenticate using SMS messages."
-    - content: "You are an admin and want to enable team synchronization for your organization. What installation permissions do you need to configure team synchronization for Azure AD?"
+    - content: "You are an admin and want to enable team synchronization for your organization. What installation permissions do you need to configure team synchronization for Microsoft Entra ID?"
       choices:
         - content: "Provide the tenant URL"
           isCorrect: false
           explanation: "To enable team synchronization for Okta, you or your IdP administrator must: enable SAML SSO and SCIM for your organization using Okta, provide the tenant URL for your Okta instance, and generate a valid SSWS token with read-only admin permissions for your Okta installation as a service user."
         - content: "Read all users’ full profiles"
           isCorrect: true
-          explanation: "To enable team synchronization for Azure AD, the installation needs the following permissions: read all users’ full profiles, Sign in and read user profile, and read directory data."          
+          explanation: "To enable team synchronization for Microsoft Entra ID, the installation needs the following permissions: read all users’ full profiles, Sign in and read user profile, and read directory data."          
         - content: "Generate a valid Single Sign-on for Web Systems (SSWS) token"
           isCorrect: false
           explanation: "To enable team synchronization for Okta, you or your IdP administrator must: enable SAML SSO and SCIM for your organization using Okta, provide the tenant URL for your Okta instance, and generate a valid SSWS token with read-only admin permissions for your Okta installation as a service user."

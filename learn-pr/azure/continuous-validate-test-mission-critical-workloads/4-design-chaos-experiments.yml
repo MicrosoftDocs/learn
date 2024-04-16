@@ -7,8 +7,7 @@ metadata:
   ms.date: 01/16/2023
   author: sebader
   ms.author: prwilk
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/4-design-chaos-experiments.md)]

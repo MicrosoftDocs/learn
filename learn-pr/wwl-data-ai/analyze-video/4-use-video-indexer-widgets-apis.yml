@@ -4,11 +4,11 @@ title: Use Video Analyzer widgets and APIs
 metadata:
   title: Use Video Analyzer widgets and APIs
   description: "Use Video Analyzer widgets and APIs"
-  ms.date: 07/14/2022
+  ms.date: 12/01/2023
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.topic: unit
+  ms.custom: devx-track-arm-template
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

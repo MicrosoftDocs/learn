@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.train-track-model-fabric.train-model
+title: Understand how to train machine learning models
+metadata:
+  title: Understand how to train machine learning models
+  description: "Understand how to train machine learning models"
+  ms.date: 09/20/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-train-model.md)]

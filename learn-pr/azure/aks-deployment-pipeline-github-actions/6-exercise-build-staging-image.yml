@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-deployment-pipeline-github-actions.6-exercise-build-staging-image
 metadata:
-  title: Exercise - Build the staging application image
-  description: Practice what you've learned by building the staging application image. Then, automatically deploy the image to Azure Container Registry by using GitHub Actions.
-  ms.date: 10/08/2020
+  title: Exercise - Build the application image
+  description: Start your GitHub Actions pipeline by building the application image and automatically deploying the image to Azure Container Registry.
+  ms.date: 01/08/2023
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: github
-title: Exercise - Build the staging application image
+  ms.topic: unit
+title: Exercise - Build the application image
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-build-staging-image.md)]

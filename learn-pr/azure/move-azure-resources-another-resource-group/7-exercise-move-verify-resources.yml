@@ -4,11 +4,10 @@ title: Exercise - Move and verify resources between Azure resource groups
 metadata:
   title: Exercise - Move and verify resources between Azure resource groups
   description: Exercise - Move and verify resources between Azure resource groups
-  ms.date: 12/23/2019
+  ms.date: 11/21/2023
   author: tfitzmac
   ms.author: tomfitz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/7-exercise-move-verify-resources.md)]

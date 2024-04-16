@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check how much you have learned.
-  ms.date: 08/10/2022
+  ms.date: 03/13/2024
   author: bwren
   ms.author: bwren
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/8-knowledge-check.md)]

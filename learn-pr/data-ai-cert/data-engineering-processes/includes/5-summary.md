@@ -1,1 +1,0 @@
-In this module, we reviewed the roles and responsibilities of a data engineer. We also explored how these roles relate to the roles of other data and AI professionals. We briefly reviewed common data-engineering practices. Finally, we learned a high-level process for designing a data engineering project.

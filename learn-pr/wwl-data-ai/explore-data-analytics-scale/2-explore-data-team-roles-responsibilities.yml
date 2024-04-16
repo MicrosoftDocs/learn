@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-data-analytics-scale.explore-data-team-roles-responsibilities
+title: Explore data team roles and responsibilities
+metadata:
+  title: Explore data team roles and responsibilities
+  description: "Explore data team roles and responsibilities"
+  ms.date: 06/08/2022
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-explore-data-team-roles-responsibilities.md)]

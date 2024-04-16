@@ -3,11 +3,10 @@ uid: learn.azure.migrate-aspnet-app-azure-kubernetes-service.exercise-discover
 metadata:
   title: Exercise - Discover your ASP.NET web application
   description: Discover your ASP.NET web application to be containerized
-  ms.date: 09/01/2021
-  author: v-ksreedevan
-  ms.author: v-ksreedevan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/11/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 title: Exercise - Discover your ASP.NET web application
 durationInMinutes: 6
 content: |

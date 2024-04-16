@@ -1,6 +1,6 @@
 ## Audio feedback
 
-Audio feedback is a positive loop gain, that occurs when a sound loop exists between an audio input and an audio output. In this example, a signal received by the microphone is amplified and passed out of the loudspeaker. The sound from the loudspeaker can then be received by the microphone again, amplified further, and then passed out through the loudspeaker again.
+Audio feedback is a positive loop gain that occurs when a sound loop exists between an audio input and an audio output. In this example, a signal the microphone receives is amplified and passed out of the loudspeaker. The microphone can then receive the sound from the loudspeaker again, amplify it further, and pass it out through the loudspeaker again.
 
 ## Audio Mixer
 
@@ -8,4 +8,4 @@ The Unity Audio Mixer allows you to mix various audio sources, apply effects, an
 
 ## Spatialization
 
-It enables or disables spatialization. Custom specialized effects improve the realism of sound propagation by incorporating the binaural head-related transfer function (HRTF) such that the listener can better sense the directionality of the sound through the filtering of the head and the micro-delays between the ears.
+This setting enables or disables spatialization. Custom specialized effects improve the realism of sound propagation by incorporating the binaural head-related transfer function (HRTF) such that the listener can better sense the directionality of the sound through the filtering of the head and the micro-delays between the ears.

@@ -6,11 +6,12 @@ metadata:
   ms.date: 07/29/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-stack
+  ms.subservice: azure-stack-hub
 title: Manage access for Azure Stack Hub
 summary: |
-  You configure Azure Stack Hub to support users from multiple Azure Active Directory (Azure AD) tenants.
+  You configure Azure Stack Hub to support users from multiple Microsoft Entra tenants.
   This module helps you prepare for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
 abstract: |
   * Describe Hybrid Identity for Azure Stack Hub.

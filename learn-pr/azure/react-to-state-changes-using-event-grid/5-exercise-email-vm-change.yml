@@ -3,11 +3,10 @@ uid: learn.react-to-state-changes-using-event-grid.5-exercise-email-vm-change
 metadata:
   title: Exercise - Send an email when virtual machines change
   description: Check an event and trigger an email
-  ms.date: 04/04/2023
+  ms.date: 12/01/2023
   author: spelluru
   ms.author: spelluru
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Exercise - Send an email when virtual machines change
 durationInMinutes: 7
 azureSandbox: true

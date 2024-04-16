@@ -3,12 +3,12 @@ uid: learn.aks-application-autoscaling-native.3-exercise-scaling
 metadata:
   title: Exercise - Create your HorizontalPodAutoscaler
   description: Exercise - Create your HorizontalPodAutoscaler
-  ms.date: 03/04/2021
+  ms.date: 01/05/2024
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: devx-track-azurecli
 title: Exercise - Create your HorizontalPodAutoscaler
-durationInMinutes: 2
+durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-scaling.md)]

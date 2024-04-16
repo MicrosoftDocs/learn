@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.windows.windows-best-app-framework.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge to see if you understand when to use each Windows application framework (WPF, Windows Forms, and WinUI 3 with Windows App SDK).
+  ms.date: 01/17/2024
+  author: alvinashcraft
+  ms.author: aashcraft
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: A software consulting firm is tasked with building a Windows desktop line-of-business application that requires a high degree of UI customization, rich functionality, and the high performance of a native Windows application. Which UI framework would be the best choice for this project?
+    choices:
+    - content: WinUI and Windows App SDK
+      isCorrect: false
+      explanation: Incorrect. WinUI is a great choice if the current feature set meets your requirements, but it may not provide the high degree of UI customization required for this project.
+    - content: Windows Forms
+      isCorrect: false
+      explanation: Incorrect. While Windows Forms is a good choice for building desktop applications that require rapid development and rich functionality, it isn't as customizable as WPF.
+    - content: WPF
+      isCorrect: true
+      explanation: Correct. WPF is a mature framework with an extensive ecosystem of third-party libraries and controls. It's a great choice for building desktop applications that require a high degree of customization, rich functionality, and the high performance of a native Windows application.
+  - content: A consulting firm's client wants to build a Windows utility to be used by IT professionals. They want to focus on ease of use and aren't concerned about the style of the app. The timeline for this project is short, so choosing a framework that supports rapid development is important. Which Windows UI framework is the best option for the development team?
+    choices:
+    - content: WPF
+      isCorrect: false
+      explanation: Incorrect. WPF is a good choice for applications that require high-end graphics and multimedia capabilities. It isn't the best choice for this project as it isn't the best choice for rapid application development.
+    - content: Windows Forms
+      isCorrect: true
+      explanation: Correct. Windows Forms is the best choice for this project as it supports rapid development and is frequently used to build Windows utilities.
+    - content: WinUI and Windows App SDK
+      isCorrect: false
+      explanation: Incorrect. WinUI is a good choice for applications that require modern UI features and are built on the latest version of .NET.
+  - content: An independent software vendor (ISV) is creating a multimedia app that needs to implement the Fluent design system and wants to make it available on the Microsoft Store. Which Windows UI framework is the best option for this requirement?
+    choices:
+    - content: WPF
+      isCorrect: false
+      explanation: Incorrect. WPF doesn't implement the Fluent design system by default.
+    - content: WinUI and Windows App SDK
+      isCorrect: true
+      explanation: Correct. WinUI 3 implements the latest Fluent design system and can be easily deployed via the Microsoft Store.
+    - content: Windows Forms
+      isCorrect: false
+      explanation: Incorrect. Windows Forms doesn't implement the Fluent design system.

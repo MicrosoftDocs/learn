@@ -4,11 +4,10 @@ title: Describe inclusive marketing
 metadata:
   title: Describe inclusive marketing
   description: Describe inclusive marketing and the role of diversity within it.
-  ms.date: 04/16/2020
+  ms.date: 05/18/2023
   author: asajohnson
   ms.author: asjohnso
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-inclusive-marketing-overview.md)]

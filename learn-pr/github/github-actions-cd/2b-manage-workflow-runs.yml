@@ -4,11 +4,10 @@ title: Remove artifacts, create status badges, and configure environment protect
 metadata:
   title: Remove artifacts, create status badges, and configure environment protections
   description: Manage workflow runs with removing artifacts, creating status badges, and configuring environment protections.
-  ms.date: 03/18/2020
+  ms.date: 11/02/2023
   author: juliakm
   ms.author: jukullam
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2b-manage-workflow-runs.md)]

@@ -3,11 +3,11 @@ uid: learn.azure.azure-stack-hci-technologies.5-software-defined-networking
 metadata:
   title: What is Windows Server Software-Defined Networking?
   description: Provide an introduction to Software-Defined Networking.
-  ms.date: 12/09/2020
+  ms.date: 02/02/2023
   author: sethmanheim
   ms.author: sethm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  manager: femila
+  ms.topic: unit
   ms.custom: e2e-hybrid
 title: What is Windows Server Software-Defined Networking?
 durationInMinutes: 12

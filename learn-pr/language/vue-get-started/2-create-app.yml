@@ -3,11 +3,10 @@ uid: learn.language.vue-get-started.2-create-app
 metadata:
   title: Get started with Vue.js
   description: Find out how to add Vue.js to an application.
-  ms.date: 03/01/2021 
+  ms.date: 01/10/2023 
   author: GeekTrainer
   ms.author: chrhar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-vue
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Get started with Vue.js
 durationInMinutes: 3

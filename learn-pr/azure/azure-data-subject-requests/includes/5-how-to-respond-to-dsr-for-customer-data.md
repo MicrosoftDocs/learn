@@ -23,13 +23,13 @@ A customer residing in France has called the DSR toll-free number to enact their
 #### Task 1: Discover
 
 1. Sign into the Azure portal.
-2. Navigate to Azure AD, and then select **Users**.
+2. Navigate to Microsoft Entra ID, and then select **Users**.
 3. Locate the user account in the **All users** blade.
 4. Select **Profile** to review the personal data, and then confirm that this is the data subject who made the request.
 
 #### Task 2: Delete
 
-1. In Azure AD, select **Users**.
+1. In Microsoft Entra ID, select **Users**.
 2. In the **All users** blade, select the check box for the data subject's user account.
 3. Select **Delete**, and then select **Yes** to confirm.
 4. In the **Deleted users** blade, select the check box for the data subject's user account.

@@ -3,11 +3,10 @@ uid: learn.language.vue-dynamic-rendering.4-render-with-conditions
 metadata:
   title: Use conditional rendering
   description: There are times when you don't want to show certain information based on the data. In this unit, you learn how to control whether and when to display values.
-  ms.date: 03/01/2021 
+  ms.date: 01/11/2023 
   author: GeekTrainer
   ms.author: chrhar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-vue
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Use conditional rendering
 durationInMinutes: 2

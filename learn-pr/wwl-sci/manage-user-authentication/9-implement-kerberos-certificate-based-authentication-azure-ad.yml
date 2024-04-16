@@ -1,16 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-user-authentication.implement-kerberos-certificate-based-authentication-azure-ad
-title: Implement Kerberos and certificate-based authentication in Azure AD
+title: Implement Kerberos and certificate-based authentication in Microsoft Entra ID
 metadata:
-  title: Implement Kerberos and certificate-based authentication in Azure AD
-  description: "Implement Kerberos and certificate-based authentication in Azure AD"
-  ms.date: 04/06/2023
+  title: Implement Kerberos and certificate-based authentication in Microsoft Entra ID
+  description: "Implement Kerberos and certificate-based authentication in Microsoft Entra ID"
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/9-implement-kerberos-certificate-based-authentication-azure-ad.md)]

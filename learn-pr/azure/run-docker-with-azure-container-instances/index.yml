@@ -3,11 +3,11 @@ uid: learn.run-docker-containers-aci
 metadata:
   title: Run Docker containers with Azure Container Instances
   description: Learn how to run and troubleshoot containerized apps using Docker containers with Azure Container Instances.
-  ms.date: 03/31/2023
+  ms.date: 04/03/2024
   author: v-tcassi
   ms.author: tomcassidy
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: container-instances
 title: Run Docker containers with Azure Container Instances
 summary: Learn how to run containerized apps using Docker containers with Azure Container Instances (ACI).
 abstract:  | 
@@ -30,7 +30,7 @@ products:
 - azure-container-instances
 - azure-cosmos-db
 subjects:
-- container
+- containers
 units:
 - learn.run-docker-containers-aci.1-introduction
 - learn.run-docker-containers-aci.2-run-aci
@@ -39,5 +39,6 @@ units:
 - learn.run-docker-containers-aci.5-use-data-volumes
 - learn.run-docker-containers-aci.6-troubleshoot-aci
 - learn.run-docker-containers-aci.7-knowledge-check
+- learn.run-docker-containers-aci.8-summary
 badge:
   uid: learn.run-docker-containers-aci.badge

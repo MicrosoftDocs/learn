@@ -3,11 +3,10 @@ uid: learn.govern-monitor-secure-resources-azure-lighthouse.6a-knowledge-check
 metadata:
   title: Knowledge check
   description: Check your knowledge
-  ms.date: 07/23/2020
+  ms.date: 08/10/2023
   author: iankensey
   ms.author: prukulka
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Knowledge check
 durationInMinutes: 2
 content: |

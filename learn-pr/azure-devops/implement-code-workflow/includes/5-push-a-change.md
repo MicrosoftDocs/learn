@@ -1,16 +1,16 @@
-In this unit, you'll practice the complete code workflow by pushing a small change to the _Space Game_ website to GitHub.
+In this unit, you'll practice the complete code workflow by pushing a small change to the *Space Game* website to GitHub.
 
 Mara has been given the task of changing some text on the home page of the website, *Index.cshtml*. In this unit, you'll follow along.
 
 Let's briefly review the steps to follow to complete the task:
 
 > [!div class="checklist"]
-> * Synchronize your local repository with the latest `main` branch on GitHub.
-> * Create a branch to hold your changes.
-> * Make the code changes you need, and verify them locally.
-> * Push your branch to GitHub.
-> * Merge any recent changes from the `main` branch on GitHub into your local working branch, and verify that your changes still work.
-> * Push up any remaining changes, watch Azure Pipelines build the application, and submit your pull request.
+> * Synchronize your local repository with the latest `main` branch on GitHub
+> * Create a branch to hold your changes
+> * Make the code changes you need, and verify them locally
+> * Push your branch to GitHub
+> * Merge any recent changes from the `main` branch on GitHub into your local working branch, and verify that your changes still work
+> * Push up any remaining changes, watch Azure Pipelines build the application, and submit your pull request
 
 ## Fetch the latest main branch
 
@@ -32,9 +32,9 @@ The `git pull` command fetches the latest code from the remote repository and me
 
     You can view the list of files that were changed. As an optional step, you can open the *azure-pipelines.yml* file to verify that it contains your complete build configuration.
 
-    Recall that a Git repository where team members collaborate (such as on GitHub) is called a _remote_. Here, _origin_ specifies your repository on GitHub.
+    Recall that a Git repository where team members collaborate (such as on GitHub) is called a *remote*. Here, *origin* specifies your repository on GitHub.
 
-    Later, you'll fetch starter code from the Microsoft GitHub repository, known as _upstream_.
+    Later, you'll fetch starter code from the Microsoft GitHub repository, known as *upstream*.
 
 ## Build and run the web application
 
@@ -55,7 +55,7 @@ To ensure that you have a working copy to start your changes, build and run the 
     > [!TIP]
     > If you see an error in your browser that's related to a privacy or certificate error, select <kbd>Ctrl+C</kbd> from your terminal to stop the running application.
     > 
-    > Then run `dotnet dev-certs https --trust` and select **Yes** when prompted. Or [see this blog post](https://www.hanselman.com/blog/DevelopingLocallyWithASPNETCoreUnderHTTPSSSLAndSelfSignedCerts.aspx?azure-portal=true) for more information.
+    > Then run `dotnet dev-certs https --trust` and select **Yes** when prompted, or [see this blog post](https://www.hanselman.com/blog/DevelopingLocallyWithASPNETCoreUnderHTTPSSSLAndSelfSignedCerts.aspx?azure-portal=true) for more information.
     >
     > After your computer trusts your local SSL certificate, run the `dotnet run` command a second time and go to `http://localhost:5000` from a new browser tab to see the running application.
 
@@ -65,7 +65,7 @@ In development mode, the *Space Game* website is configured to run on port 5000.
 
 In a new browser tab, navigate to `http://localhost:5000` to see the running application.
 
-You see this:
+You should see this:
 
 :::image type="content" source="../media/3-space-game-top.png" alt-text="Screenshot of the Space Game website running in a web browser.":::
 
@@ -75,7 +75,7 @@ When you're finished, return to the terminal window and select <kbd>Ctrl+C</kbd>
 
 ## Create a feature branch
 
-In this section, you create a Git branch so that you can work on files without affecting anyone else. No one will even know you're working on those files until you push them to the remote repository.
+In this section, you'll create a Git branch so that you can work on files without affecting anyone else. No one will even know you're working on those files until you push them to the remote repository.
 
 To create a branch, you use the `git checkout` command and give your branch a name, just like you did in the previous part.
 
@@ -139,7 +139,7 @@ Here you'll stage your changes to *Index.cshtml*, commit the change to your bran
     git status
     ```
 
-    You'll see that *Index.cshtml* has been modified. Like before, the next step is to make sure that Git is tracking this file, which is called _staging_ the file.
+    You'll see that *Index.cshtml* has been modified. Like before, the next step is to make sure that Git is tracking this file, which is called *staging* the file.
 
 1. Run the following `git add` command to stage *Index.cshtml*:
 
@@ -173,9 +173,9 @@ As an optional step, trace the build as it moves through the pipeline, and verif
 
 While you were busy working on your feature, changes might have been made to the remote `main` branch. Before you create a pull request, it's common practice to get the latest from the remote `main` branch.
 
-To do this, you first check out, or switch to, the `main` branch. You then merge the remote `main` branch with your local `main` branch.
+To do this, first check out, or switch to, the `main` branch, then merge the remote `main` branch with your local `main` branch.
 
-Next, you check out your feature branch. Then you merge your feature branch with the `main` branch.
+Next, check out your feature branch, then merge your feature branch with the `main` branch.
 
 Let's try the process now.
 
@@ -199,13 +199,13 @@ Let's try the process now.
     Already up to date.
     ```
 
-1. To check out your feature branch, run `git checkout`.
+1. To check out your feature branch, run `git checkout`:
 
     ```bash
     git checkout feature/home-page-text
     ```
 
-1. Merge your feature branch with `main`.
+1. Merge your feature branch with `main`:
 
     ```bash
     git merge main
@@ -256,8 +256,8 @@ In this section, you submit a pull request just as you did previously.
 
 1. Enter a title and a description for your pull request.
 
-    * **Title**: _Improve the text at the top of the home page_
-    * **Description**: _Received the latest home page text from the product team._
+    * **Title**: *Improve the text at the top of the home page*
+    * **Description**: *Received the latest home page text from the product team.*
 
 1. To complete your pull request, select **Create pull request**.
 

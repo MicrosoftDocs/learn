@@ -2,12 +2,12 @@
 uid: learn.wwl.introduction-to-source-control
 metadata:
   title: Introduction to source control
-  description: "Introduction to source control"
+  description: Introduction to source control
   ms.date: 03/18/2022
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-devops
 title: Introduction to source control
 summary: This module introduces you to the basics of source control, exploring benefits and best practices.
 abstract: |
@@ -39,8 +39,6 @@ products:
 - azure-repos
 - azure-test-plans
 - github
-subjects:
-- development-tools
 units:
 - learn.wwl.introduction-to-source-control.introduction
 - learn.wwl.introduction-to-source-control.explore-devops-foundational-practices

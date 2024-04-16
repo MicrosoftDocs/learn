@@ -3,11 +3,11 @@ uid: learn.azure.intro-to-azure-stack.5-azure-stack-edge
 metadata:
   title: What is Azure Stack Edge?
   description: Describe the basic architecture of Azure Stack Edge, the core capabilities of Azure Stack Edge, and the primary use cases of Azure Stack Edge.
-  ms.date: 12/09/2020
+  ms.date: 03/28/2023
   author: sethmanheim
   ms.author: sethm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  manager: femila
+  ms.topic: unit
   ms.custom: e2e-hybrid
 title: What is Azure Stack Edge?
 durationInMinutes: 10

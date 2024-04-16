@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.create-your-first-speech-to-text-app.exercise-create-continuous-recognition-speech-to-text-app
-title: Exercise - Create a continuous recognition speech-to-text application
+title: Exercise - Create a continuous-recognition speech to text application
 metadata:
-  title: Exercise - Create a continuous recognition speech-to-text application
-  description: In this exercise, you'll create a continuous recognition speech-to-text application.
-  ms.date: 09/15/2022
+  title: Exercise - Create a continuous-recognition speech to text application
+  description: In this exercise, you'll create a continuous-recognition speech to text application.
+  ms.date: 06/19/2023
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: true
 interactive: bash
 durationInMinutes: 10
 content: |
-  [!include[](includes/7-exercise-create-continuous-recognition-speech-to-text-app.md)]
+  [!INCLUDE[](includes/7-exercise-create-continuous-recognition-speech-to-text-app.md)]

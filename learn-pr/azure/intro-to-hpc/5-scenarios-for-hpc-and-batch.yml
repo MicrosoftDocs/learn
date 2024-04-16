@@ -2,12 +2,11 @@
 uid: learn.intro-to-hpc.5-scenarios-for-hpc-and-batch
 metadata:
   title: Scenarios for HPC and Batch technologies
-  description: In this unit, you'll learn about some uses that HPC resources are often put to, and how the technologies you've learned about can address these scenarios.
-  ms.date: 10/03/2022
+  description: In this unit, you learn about some uses that HPC resources are often put to, and how the technologies you've learned about can address these scenarios.
+  ms.date: 05/22/2023
   author: padmalathas
   ms.author: padmalathas
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Scenarios for HPC and Batch technologies
 durationInMinutes: 10
 content: |

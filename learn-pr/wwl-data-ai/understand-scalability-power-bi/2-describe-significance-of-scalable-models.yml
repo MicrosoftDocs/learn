@@ -6,9 +6,8 @@ metadata:
   description: "Describe the significance of scalable models"
   ms.date: 11/24/2022
   author: wwlpublish
-  ms.author: shlindsay
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: anrudduc
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 4

@@ -4,11 +4,10 @@ title: Discuss Learn module best practices
 metadata:
   title: Discuss Learn module best practices
   description: "Discuss Learn module best practices"
-  ms.date: 11/18/2022
+  ms.date: 06/02/2023
   author: wwlpublish
   ms.author: tsheppard
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 12
 content: |
   [!include[](includes/3-learn-module-best-practices.md)]

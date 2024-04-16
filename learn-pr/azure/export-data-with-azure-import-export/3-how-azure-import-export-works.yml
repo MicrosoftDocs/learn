@@ -5,11 +5,11 @@ title: How Azure Import/Export works
 metadata:
   title: How Azure Import/Export works
   description: How Azure Import/Export works
-  ms.date: 7/26/2019
+  ms.date: 03/08/2023
   author: alkohli
   ms.author: alkohli
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  manager: femila
+  ms.topic: unit
 
 durationInMinutes: 5
 content: |

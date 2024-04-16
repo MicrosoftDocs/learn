@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Test your knowledge of strategy methodology.
-  ms.date: 04/25/2022
-  author: BrianBlanchard
-  ms.author: brblanch
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/10/2023
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 durationInMinutes: 10
 content: |
 quiz:
@@ -27,7 +26,7 @@ quiz:
       explanation: Technical assessments should be executed after a corporate strategy has been defined to ensure that the effort delivers on the goals.
     - content: Define cost management, identity management, configuration management, and governance for the cloud.
       isCorrect: false
-      explanation: Although these elements are important, they should follow the strategy that is defined, to ensure that the effort will deliver on the defined goals.
+      explanation: Although these elements are important, they should follow the strategy that is defined, to ensure that the effort delivers on the defined goals.
   - content: What are good examples of motivations to move to the cloud?
     choices:
     - content: Eliminate the IT department and save on costs.
@@ -35,7 +34,7 @@ quiz:
       explanation: The IT department remains a key asset of the organization by leading the cloud adoption and deployment efforts. Although IT focus shifts in a cloud world, it remains a key team for successful cloud adoption.
     - content: Win agility by removing dependencies to IT and deploy new technical capabilities. 
       isCorrect: false
-      explanation: Moving to the cloud won't automatically remove IT dependencies. Defining a new process and operations model can help alleviate those dependencies to achieve agility and adopt new capabilities.
+      explanation: Moving to the cloud doesn't automatically remove IT dependencies. Defining a new process and operations model can help alleviate those dependencies to achieve agility and adopt new capabilities.
     - content: Save on costs, deploy new technical capabilities, drive workload optimization, achieve scale and agility, and improve customer experiences.
       isCorrect: true
       explanation: Correct.
@@ -46,13 +45,13 @@ quiz:
     choices:
     - content: Eliminate the IT department, remove IT dependencies, and win agility. 
       isCorrect: false
-      explanation: The IT department, in partnership with the different stakeholders that are defined in the module, will help update the operations and dependency guidelines to help the organization adopt the cloud successfully.
+      explanation: The IT department, in partnership with the different stakeholders that are defined in the module, help update the operations and dependency guidelines to help the organization adopt the cloud successfully.
     - content: Eliminate the security department and faster time to market.
       isCorrect: false
       explanation: In the cloud, security becomes a shared responsibility between the vendor and the organizations that use the cloud. The security department remains a key stakeholder in risk management for the organization.
     - content: Remove IT processes on-premises and remove security blockers on-premises.
       isCorrect: false
-      explanation: Internal process and security guidelines might need to be updated or created brand-new with cloud adoption, but they won't just be removed.
+      explanation: Internal process and security guidelines might need to be updated or created brand-new with cloud adoption, but they aren't removed.
     - content: Reduce vendor complexity, improve cost of operations, and advance technological and operations capabilities.
       isCorrect: true
       explanation: Correct.

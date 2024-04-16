@@ -3,12 +3,11 @@ uid: learn.orleans-build-first-app.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Check what you've learned.
+  description: Check what you learned about Orleans.
   author: alexwolfmsft
   ms.author: alexwolf
-  ms.date: 5/15/2022
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.date: 04/05/2024
+  ms.topic: unit
 durationInMinutes: 3
 quiz:
   title: Check your knowledge
@@ -21,12 +20,12 @@ quiz:
         - content: "Grains manage collections of silos and the communication between them."
           isCorrect: false
           explanation: "Incorrect. A collection of silos is called a cluster."
-        - content: "Grains are virtual actors comprised of a user-defined identity, behavior and state."
+        - content: "Grains are virtual actors comprised of a user-defined identity, behavior, and state."
           isCorrect: true
           explanation: "Correct. Grains are entities that manage behavior and state."
         - content: "Grains handle implementation details for different storage options for persistent state, such as Azure Blob Storage."
           isCorrect: false
-          explanation: "Incorrect. Storage providers implement different storage services that can be utilized by grains."
+          explanation: "Incorrect. Storage providers implement different storage services that grains can utilize."
     - content: "Which of the following methods is NOT defined on the `IPersistentState` interface?"
       choices:
         - content: "`WriteStateAsync`"
@@ -55,7 +54,7 @@ quiz:
         - content: "`GrainState`"
           isCorrect: false
           explanation: "Incorrect. There's no `GrainState` attribute available in Orleans."
-    - content: "Which of the following accurately represents the order of a grain lifecycle?"
+    - content: "Which of the following lists of events accurately represents the order of a grain lifecycle?"
       choices:
         - content: "Activating → Active → Deactivating → Persisted"
           isCorrect: true

@@ -1,10 +1,11 @@
+
 Azure Cosmos DB takes automatic backups of your data at regular periodic intervals. Azure Cosmos DB does these backups in the following way:
 
 - A full backup is taken every 4 hours. Only the last two backups are stored by default. Both the backup interval and the retention period can be configured in the Azure portal. This configuration can be set during or after the Azure Cosmos DB account has been created. 
 - If Azure Cosmos DB's containers or database are deleted, the existing container and database snapshots will be retained for 30 days.
 - Azure Cosmos DB backups are stored in Azure Blob storage.
 - Backups are stored in the current write region or if using multi-region writes to one of the write regions to guarantee low latency.
-- Snapshots of the backup are replicated to another region through geo-redundant storage (GRS). This replication, provides resiliency against regional disasters.
+- Snapshots of the backup are replicated to another region through geo-redundant storage (GRS). This replication provides resiliency against regional disasters.
 - Backups can't be accessed directly. To restore the backup, a support ticket needs to be opened with the Azure Cosmos DB team.
 - Backups won't affect performance or availability. Furthermore, no RUs are consumed during the backup process.
 

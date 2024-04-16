@@ -6,8 +6,8 @@ metadata:
   ms.date: 08/08/2022
   author: wwlpublish
   ms.author: tsheppard
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: learn
 title: Onboard to Microsoft Learn for Educators program
 summary: Joining MSLE, getting certified in the content you'll be teaching, integrating Microsoft Official Course materials, and leveraging the various benefits will help ensure your students are well prepared for today’s job opportunities.
 abstract: |
@@ -27,11 +27,11 @@ levels:
 roles:
 - higher-ed-educator
 products:
-- azure-security-center
+- defender-for-cloud
 - dynamics-365
 - dynamics-customer-service
 subjects:
-- modern-work
+- business-applications
 units:
 - learn.wwl.onboard-microsoft-learn-educators-program.introduction
 - learn.wwl.onboard-microsoft-learn-educators-program.tour-microsoft-learn-educators-page

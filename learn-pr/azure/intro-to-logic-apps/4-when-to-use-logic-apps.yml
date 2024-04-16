@@ -4,11 +4,10 @@ title: When to use Azure Logic Apps
 metadata:
   title: When to use Azure Logic Apps
   description: Learn about scenarios when you can use Azure Logic Apps.
-  ms.date: 4/25/2019
+  ms.date: 05/16/2023
   author: ecfan
   ms.author: estfan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ROBOTS: INDEX,FOLLOW
 durationInMinutes: 8
 content: |

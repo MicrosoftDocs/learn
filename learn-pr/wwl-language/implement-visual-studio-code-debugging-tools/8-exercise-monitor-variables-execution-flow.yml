@@ -4,11 +4,12 @@ title: Exercise - Monitor variables and execution flow
 metadata:
   title: Exercise - Monitor variables and execution flow
   description: "Exercise - Monitor variables and execution flow"
-  ms.date: 03/24/2023
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 13
 content: |
   [!include[](includes/8-exercise-monitor-variables-execution-flow.md)]

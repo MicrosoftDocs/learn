@@ -83,7 +83,7 @@ In the previous example, you used the **StaticResource** mark-up extension to at
 <Button Text="Cancel" Style="{DynamicResource MyButtonStyle}" />
 ```
 
-**DynamicResource** listens for replacement of the **x:Key** property in the resource dictionary. If you write code that loads a new style into ResourceDictionary with that same **x:Key** value, the new style will automatically get applied to your UI.
+**DynamicResource** listens for replacement of the **x:Key** property in the resource dictionary. If you write code that loads a new style into ResourceDictionary with that same **x:Key** value, the new style is automatically applied to your UI.
 
 ## Use an implicit style for multiple controls
 
@@ -91,7 +91,7 @@ Suppose your UI has 50 buttons and you want to apply the same style to all of th
 
 An *implicit style* is a style that you add to a resource dictionary without giving it an **x:Key** identifier. Implicit styles are automatically applied to all controls of the specified **TargetType** object.
 
-The following code shows the previous example declared as an implicit style. This style will be applied to every button on the page.
+The following code shows the previous example declared as an implicit style. This style is applied to every button on the page.
 
 ```XML
 <ContentPage.Resources>
@@ -117,7 +117,7 @@ The following code shows the previous example declared as an implicit style. Thi
 
 ## Override a style
 
-You can think of a style as providing a set of default values for controls. If an existing style is close to your requirements, but contains one or two setters that you don't want, you can apply the style and then override value by setting properties directly. The explicit setting is applied after the style, so it will override the value from the style.
+You can think of a style as providing a set of default values for controls. An existing style might be close to your requirements, but contain one or two setters that you don't want. In that case, you can apply the style and then override the value by setting properties directly. The explicit setting is applied after the style, so it will override the value from the style.
 
 Suppose you want to use the following style for several buttons on your page.
 
@@ -154,11 +154,11 @@ The following code shows a style that targets a base class that's being applied 
 <Label Style="{StaticResource MyVisualElementStyle}" ... />
 ```
 
-This example identifies the style by using **x:Key** and the controls apply it explicitly. An implicit style won't work here because **TargetType** for an implicit style must be an exact match to the control type.
+This example identifies the style by using **x:Key** and the controls apply it explicitly. An implicit style doesn't work here because **TargetType** for an implicit style must be an exact match to the control type.
 
 ## Use BasedOn to inherit from a style
 
-Suppose you want to create a cohesive look for your UI. You decide that all controls should use a consistent background color. The background color setting will then likely appear in more than one of your styles. The following code shows two styles with a repeated setter.
+Suppose you want to create a cohesive look for your UI. You decide that all controls should use a consistent background color. The background color setting is likely to appear in more than one of your styles. The following code shows two styles with a repeated setter.
 
 ```XML
 <Style x:Key="MyButtonStyle" TargetType="Button">

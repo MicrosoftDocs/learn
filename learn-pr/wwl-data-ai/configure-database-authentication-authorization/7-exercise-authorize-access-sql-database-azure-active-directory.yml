@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-database-authentication-authorization.exercise-authorize-access-sql-database-azure-active-directory
-title: 'Exercise: Authorize Access to Azure SQL Database with Azure Active Directory'
+title: 'Exercise: Authorize Access to Azure SQL Database with Microsoft Entra ID'
 metadata:
-  title: 'Exercise: Authorize Access to Azure SQL Database with Azure Active Directory'
-  description: "Exercise: Authorize Access to Azure SQL Database with Azure Active Directory"
+  title: 'Exercise: Authorize Access to Azure SQL Database with Microsoft Entra ID'
+  description: "Exercise: Authorize Access to Azure SQL Database with Microsoft Entra ID"
   ms.date: 04/26/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labId: 119398
 labModal: true

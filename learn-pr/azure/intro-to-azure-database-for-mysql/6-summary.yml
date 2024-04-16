@@ -5,12 +5,11 @@ metadata:
   unitType: summary  
   title: Summary
   description: Summary
-  ms.date: 03/23/2021  
+  ms.date: 06/09/2023  
   author: markingmyname
   ms.author: maghan
   manager: jroth
-  ms.topic: interactive-tutorial 
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/6-summary.md)]

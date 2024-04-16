@@ -2,12 +2,12 @@
 uid: learn.wwl.continuous-deployment-for-machine-learning
 metadata:
   title: Continuous deployment for machine learning
-  description: "Learn about continuous development for machine learning, machine learning operations, and MLOps."
+  description: Learn about continuous development for machine learning, machine learning operations, and MLOps.
   ms.date: 08/05/2022
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Continuous deployment for machine learning
 summary: Learn how to work with environments for continuous deployment of machine learning models.
 abstract: |

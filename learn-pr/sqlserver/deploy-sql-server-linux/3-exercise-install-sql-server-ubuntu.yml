@@ -4,12 +4,12 @@ title: Exercise - Install SQL Server on Ubuntu
 metadata:
   title: Exercise - Install SQL Server on Ubuntu
   description: In this unit, you will install and use SQL Server on Ubuntu.
-  ms.date: 06/11/2019
+  ms.date: 05/15/2023
   author: rwestmsft
   ms.author: randolphwest
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-sqlserver
+  ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 15
 interactive: bash
 azureSandbox: true

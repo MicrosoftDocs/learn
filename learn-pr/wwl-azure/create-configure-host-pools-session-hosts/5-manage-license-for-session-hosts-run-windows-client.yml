@@ -4,13 +4,12 @@ title: Manage licensing for session hosts that run Windows client
 metadata:
   title: Manage licensing for session hosts that run Windows client
   description: "Manage licensing for session hosts that run Windows client"
-  ms.date: 08/01/2022
+  ms.date: 09/25/2023
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/5-manage-license-for-session-hosts-run-windows-client.md)]

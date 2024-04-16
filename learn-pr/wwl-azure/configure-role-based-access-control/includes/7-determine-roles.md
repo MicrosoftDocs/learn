@@ -1,6 +1,6 @@
-Azure RBAC provides over 100 pre-defined role definitions. Roles can grant access to data within an object. If a user has _read data_ access to a storage account, then they can read the blobs or messages in the storage account.
+Azure provides over 100 pre-defined role definitions. Roles can grant access to data within an object. If a user has _read data_ access to a storage account, then they can read the blobs or messages in the storage account.
 
-The following table describes four built-in Azure RBAC role definitions that are considered fundamental.
+The following table describes four built-in role definitions that are considered fundamental.
 
 | Fundamental&nbsp;role | Description |
 | --- | --- |

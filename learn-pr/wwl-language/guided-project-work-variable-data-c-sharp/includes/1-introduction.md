@@ -1,7 +1,3 @@
-
-
-
-
 Suppose you're a developer who likes to support the local community. You and some of your friends started a business that helps find new homes for stray or abandoned cats and dogs. Your business started off small, with just a couple of animals, but it's starting to grow. Your friends have an initial application developed that enables the entry and display of the animals available for adoption. They ask you to investigate adding features to the app that could help to match the animals in your care with people who are looking for a new family pet.
 
 In completing this coding project, you apply your C# data knowledge and skills in:

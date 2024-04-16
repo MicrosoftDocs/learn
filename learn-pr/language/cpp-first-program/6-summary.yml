@@ -4,11 +4,10 @@ title: Summary
 metadata:
   title: Summary
   description: Summary of concepts in writing your first program in C++.
-  ms.date: 11/18/2021
+  ms.date: 01/04/2023
   author: saifeemustafaq
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: nextgen
 durationInMinutes: 2
 content: |

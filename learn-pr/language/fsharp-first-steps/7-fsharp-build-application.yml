@@ -5,11 +5,13 @@ metadata:
   unitType: learning-content
   title: "Create F# applications"
   description: "Overview of .NET templates and how they can help you build your first F# application"
-  ms.date: 07/20/2021
+  ms.date: 02/22/2023
   author: luisquintanilla
   ms.author: luquinta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.manager: markl
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 4
 content: |
   [!include[](includes/7-fsharp-build-application.md)]

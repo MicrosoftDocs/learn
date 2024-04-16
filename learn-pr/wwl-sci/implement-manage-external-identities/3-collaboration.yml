@@ -4,13 +4,10 @@ title: Manage external collaboration
 metadata:
   title: Manage external collaboration
   description: "Manage external collaboration"
-  ms.date: 02/03/2023
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/3-collaboration.md)]

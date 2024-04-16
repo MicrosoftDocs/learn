@@ -1,6 +1,4 @@
-
-
-You can increase the flexibility of your scripts by using parameters. For example, you may have created a script that trains a machine learning model. You can use the same script to train a model on different datasets, or using various hyperparameter values. 
+You can increase the flexibility of your scripts by using parameters. For example, you might have created a script that trains a machine learning model. You can use the same script to train a model on different datasets, or using various hyperparameter values. 
 
 ## Working with script arguments
 

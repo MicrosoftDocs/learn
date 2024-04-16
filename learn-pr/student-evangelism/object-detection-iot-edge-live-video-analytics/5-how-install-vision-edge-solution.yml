@@ -4,12 +4,12 @@ title: How to install Vision on Edge solution
 metadata:
   title: How to install Vision on Edge solution
   description: In this section, we explain how to install Vision on Edge solution using installer
-  ms.date: 4/23/2021
+  ms.date: 4/27/2021
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
+  ms.topic: unit
   ms.custom: team=nextgen
+  ms.service: iot-hub
 durationInMinutes: 8
 content: |
   [!include[](includes/5-how-install-vision-edge-solution.md)]

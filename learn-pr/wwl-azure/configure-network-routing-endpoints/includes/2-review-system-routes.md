@@ -1,3 +1,4 @@
+
 Azure uses _system routes_ to direct network traffic between virtual machines, on-premises networks, and the internet. Information about the system routes is recorded in a _route table_. 
 
 ### Things to know about system routes

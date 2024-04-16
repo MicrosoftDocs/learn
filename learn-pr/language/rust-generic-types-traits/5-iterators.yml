@@ -3,11 +3,10 @@ uid: learn.language.rust-generic-types-traits.5-iterators
 metadata:
   title: Use iterators
   description: Learn how to use iterators.
-  ms.date: 05/16/2021
+  ms.date: 12/06/2022
   author: danmabee
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Use iterators
 durationInMinutes: 4

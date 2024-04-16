@@ -6,8 +6,8 @@ metadata:
   description: "Understand model relationships"
   ms.date: 04/04/2023
   author: wwlpublish
-  ms.author: benjiang
-  ms.topic: interactive-tutorial
+  ms.author: anrudduc
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

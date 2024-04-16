@@ -3,12 +3,12 @@ uid: learn.secure-your-azure-sql-database.1-create-database
 metadata:
   title: Exercise - Set up sandbox environment
   description: Create an Azure SQL Database and a Linux VM for use throughout this module.
-  ms.date: 11/09/2018
+  ms.date: 11/07/2023
   author: VanMSFT
   ms.author: vanto
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: linux-related-content
 interactive: bash
 azureSandbox: true
 title: Exercise - Set up sandbox environment

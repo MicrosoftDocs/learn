@@ -19,7 +19,7 @@ Your sample declaration contains a **property**, `color`, which is separated fro
 
 ## Embed a CSS file
 
-A quick way to add style information is to place it within the `head` tags of your HTML page by using a `style` attribute. This method isn't considered the best practice, but is OK to use for learning and testing.  
+A quick way to add style information is to place it within the `head` tags of your HTML page by using a `style` attribute. This method isn't considered the best practice, but is OK to use for learning and testing.
 
 The example that follows adds the `<style>` tag with styling information for any `h1` to display gray. Since that is the only styling, the rest of the HTML displays with the browser's default styling.
 
@@ -68,12 +68,12 @@ Now you'll have at least two files, an `.html` file and a `.css` file. The previ
 <!DOCTYPE html>
 <html>
     <head>
-    <title>Welcome</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Welcome</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <h1>Welcome</h1>
         <p>This is my site</p>
     </body>
-</html><link >
+</html>
 ```

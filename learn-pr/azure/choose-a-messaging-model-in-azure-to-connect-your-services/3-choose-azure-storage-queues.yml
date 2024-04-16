@@ -4,11 +4,10 @@ title: Choose a message-based delivery with queues
 metadata:
   title: Choose a message-based delivery with queues
   description: Choose a message-based delivery with queues
-  ms.date: 04/04/2023
+  ms.date: 07/31/2023
   author: spelluru
   ms.author: spelluru
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/3-choose-azure-storage-queues.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-device-provisioning-service.get-started-x-509-certificate-attestation
+title: Examine X.509 certificate attestation
+metadata:
+  title: Examine X.509 certificate attestation
+  description: "Examine X.509 certificate attestation"
+  ms.date: 12/15/2023
+  author: kgremban
+  ms.author: kgremban
+  manager: lizross
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-x509-attestation.md)]

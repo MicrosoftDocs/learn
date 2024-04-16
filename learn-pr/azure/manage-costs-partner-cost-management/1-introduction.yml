@@ -3,11 +3,10 @@ uid: learn.manage-costs-partner-cost-management.introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 11/01/2021
+  ms.date: 05/30/2023
   author: bandersmsft
   ms.author: banders
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Introduction
 durationInMinutes: 2
 content: |

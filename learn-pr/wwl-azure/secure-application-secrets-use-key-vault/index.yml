@@ -6,8 +6,9 @@ metadata:
   ms.date: 01/31/2023
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: key-vault
+  ms.subservice: secrets
 title: Secure application secrets using Key Vault
 summary: You're now running a version of the spring-petclinic microservice application in Azure. You want a better way to protect application secrets like your database connection string. In this module, you'll better protect your application secrets.
 abstract: |

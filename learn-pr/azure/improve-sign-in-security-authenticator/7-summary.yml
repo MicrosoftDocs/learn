@@ -3,13 +3,12 @@ uid: learn.improve-sign-in-security-authenticator.summary
 title: Summary
 metadata:
   unitType: summary
-  title: summary
+  title: Summary
   description: "You needed to roll out a low-cost to help users move away from signing in with less secure methods like Voice calls or SMS. You chose to create a registration campaign to help users set up Microsoft Authenticator, a free app, and use it as their default sign-in method."
-  ms.date: 7/27/2022
+  ms.date: 02/29/2024
   author: Justinha
   ms.author: Justinha
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]

@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.explore-data-for-data-science-microsoft-fabric.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/19/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric 
+durationInMinutes: 8
+quiz:
+  questions:
+  - content: What are the four Apache Spark languages supported by Microsoft Fabric notebooks?
+    choices:
+    - content: PySpark (Python), Spark (Scala), Spark SQL, and SparkR.
+      isCorrect: true
+      explanation: Correct. Microsoft Fabric notebooks currently support four Apache Spark languages, which are PySpark (Python), Spark (Scala), Spark SQL, and SparkR.
+    - content: Python, Java, Scala, and R.
+      isCorrect: false
+      explanation: Incorrect. While these are all programming languages, they aren't the specific Apache Spark languages supported by Microsoft Fabric notebooks.
+    - content: PySpark (Python), Spark (Scala), Java, and C#.
+      isCorrect: false
+      explanation: Incorrect. Java and C# aren't among the Apache Spark languages supported by Microsoft Fabric notebooks.
+  - content: What is the range of a uniform distribution?
+    choices:
+    - content: The range is from 0 to 1.
+      isCorrect: false
+      explanation: Incorrect. While a uniform distribution can have a range from 0 to 1, it's not always the case. The range can be any interval [a, b].
+    - content: The range is the interval [a, b].
+      isCorrect: true
+      explanation: Correct. The range of a uniform distribution is the interval [a, b], where 'a' is the minimum value and 'b' is the maximum value.
+    - content: The range is all real numbers.
+      isCorrect: false
+      explanation: Incorrect. The range of a uniform distribution isn't all real numbers, but rather a specific interval [a, b].
+  - content: What does it mean when data is Missing at Random (MAR)?
+    choices:
+    - content: MAR means the missingness of data is related to some other variables' values but not the missing data itself.
+      isCorrect: true
+      explanation: Correct. When data is Missing at Random (MAR), the missingness of data is related to some other variables' values but not the missing data itself. For example, if women are more likely to disclose their number of daily steps than men, then the daily steps data is MAR.
+    - content: MAR means the missingness of data isn't related to any other variable's values and is random.
+      isCorrect: false
+      explanation: Incorrect. This description applies to Missing Completely at Random (MCAR), not Missing at Random (MAR).
+    - content: MAR means the missingness of data is related to the values of the missing data itself.
+      isCorrect: false
+      explanation: Incorrect. This description applies to Missing Not at Random (MNAR), not Missing at Random (MAR).
+  - content: What does the correlation coefficient indicate in a correlation analysis?
+    choices:
+    - content: The correlation coefficient indicates the strength and direction of the linear relationship between two quantitative variables.
+      isCorrect: true
+      explanation: Correct. The correlation coefficient ranges from -1 to 1. A coefficient of 1 indicates a perfect positive linear correlation, -1 indicates a perfect negative linear correlation, and 0 indicates no linear correlation.
+    - content: The correlation coefficient indicates the nonlinear relationship between two quantitative variables.
+      isCorrect: false
+      explanation: Incorrect. The correlation coefficient specifically measures the strength and direction of the linear relationship between two quantitative variables, not nonlinear relationships.
+    - content: The correlation coefficient indicates the causal relationship between two quantitative variables.
+      isCorrect: false
+      explanation: Incorrect. Correlation doesn't imply causation. Just because two variables are correlated doesn't mean that changes in one variable cause changes in the other.    

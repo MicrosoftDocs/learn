@@ -19,12 +19,12 @@ Additionally, repository administrators and organization owners can give secret 
 With the right set of roles and permissions, the developers involved in your security workflow can take the following actions:
 
 - For code scanning alerts: commit corrections to the code, dismiss alerts that do not require any action, or delete alerts to clean up code scanning results.
-- For secret scanning alerts: delete detected secrets, create new tokens, and update code that uses the detected secrets, or dismiss alerts that do not require any action.
+- For secret scanning alerts: delete detected secrets, create new GitHub tokens, and update code that uses the detected secrets, or dismiss alerts that do not require any action.
 - For Dependabot alerts: update vulnerable dependencies or dismiss alerts that do not require any action.
 
 ## Set a security policy at the organization level
 
-A good way to make sure that everyone in your organization is using GitHub Advanced Security is to set up a security policy at the organization level. For example, you can set a policy that allows all repository administrators in your organization to enable features for Advanced Security for their repositories.
+A good way to ensure that everyone in your organization has a consistent approach to using GitHub Advanced Security is to create a security policy at the organization level. For example, you can set a policy that allows all repository administrators in your organization to enable features for Advanced Security for their repositories.
 
 Policies can be configured for all organizations owned by your enterprise account, or for individual organizations that you choose.
 
@@ -35,7 +35,7 @@ Follow these steps to set up a security policy at the organization level:
 
     :::image type="content" source="../media/security-policy-org.png" alt-text="Screenshot of security policy drop-down.":::
 
-3. Optionally, if you chose **Allow for selected organizations** to the right of an organization, select the drop-down menu to allow or disallow Advanced Security for the organization. Note that disallowing Advanced Security for an organization prevents repository administrators from enabling Advanced Security features for additional repositories, but does not disable the features for repositories where the features are already enabled.
+3. Optionally, if you chose **Allow for selected organizations** to the right of an organization, select the drop-down menu to allow or disallow Advanced Security for the organization. Note that disabling Advanced Security for an organization prevents repository administrators from enabling Advanced Security features for additional repositories, but does not disable the features for repositories where the features are already enabled.
 
     :::image type="content" source="../media/security-policy-org-2.png" alt-text="Screenshot of individual organization security policy drop-down.":::
 
@@ -53,4 +53,4 @@ Follow these steps to set up a security policy at the repository level:
 1. In your repository, navigate to **Security > Security policy**.
 2. Click **Start setup**.
 3. In the new `SECURITY.md` file, add information about supported versions of your project and how to report a vulnerability.
-4. Commit the change to the repository.
+4. Commit the change to the repository to make your security policy accessible.

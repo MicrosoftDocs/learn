@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-code-to-cloud.manage-your-app-components-on-code-to-cloud
+title: Manage your App components on Code to Cloud
+metadata:
+  title: Manage your App components on Code to Cloud
+  description: Manage your app components on Code-to-Cloud
+  ms.date: 09/04/2023
+  author: juliamuiruri4
+  ms.author: juliamuiruri
+  ms.topic: unit
+  ms.service: azure
+  ms.custom: team=nextgen
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-manage-your-app-components-on-code-to-cloud.md)]

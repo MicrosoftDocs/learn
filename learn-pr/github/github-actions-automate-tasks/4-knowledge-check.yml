@@ -4,50 +4,49 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 05/19/2020
+  ms.date: 10/06/2023
   author: juliakm
   ms.author: jukullam
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/4-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What is the primary function of a GitHub Action?"
+  - content: "What are GitHub Actions used for?"
     choices:
     - content: "To automate software development tasks"
       isCorrect: false
       explanation: "GitHub Actions are used to automate software development tasks, but they also facilitate CI/CD and integrate IaC."
-    - content: "To facilitate continuous integration and continuous delivery (CI/CD)"
+    - content: "To facilitate continuous integration and continuous delivery (CI/CD)."
       isCorrect: false
       explanation: "GitHub Actions are used to facilitate CI/CD, but they also automate software development tasks and integrate IaC."
-    - content: "Integrate infrastructure as code within your project's context"
+    - content: "To integrate infrastructure as code within your project's context."
       isCorrect: false
       explanation: "GitHub Actions can integrate infrastructure as code within your project's context, but they can also facilitate CI/CD and integrate IaC."
-    - content: "All of the above"
+    - content: "All of these functions."
       isCorrect: true
-      explanation: "GitHub Actions can integrate infrastructure as code within your project's context, facilitate CI/CD and integrate IaC."
-  - content: "What are the two types of actions?"
+      explanation: "GitHub Actions can integrate infrastructure as code within your project's context, facilitate CI/CD, and integrate IaC."
+  - content: "What are the three types of GitHub actions?"
     choices:
-    - content: "Container actions and JavaScript actions"
+    - content: "Container actions, JavaScript actions, and composite actions"
       isCorrect: true
-      explanation: "With container actions, the environment is part of the action's code. JavaScript actions don't include the environment in the code."
-    - content: "Embedded actions and container actions"
+      explanation: "With container actions, the environment is part of the action's code. JavaScript actions don't include the environment in the code. Composite actions allow you to combine multiple workflow steps within one action."
+    - content: "Embedded actions, composite actions, and container actions"
       isCorrect: false
-      explanation: "Container actions and JavaScript actions. With container actions, the environment is part of the action's code. JavaScript actions don't include the environment in the code."
-    - content: "Workflows and triggers"
+      explanation: "Container actions, JavaScript actions, and composite actions. With container actions, the environment is part of the action's code. JavaScript actions don't include the environment in the code. Composite actions allow you to combine multiple workflow steps within one action."
+    - content: "Workflows, triggers, and composite actions"
       isCorrect: false
-      explanation: "Container actions and JavaScript actions. With container actions, the environment is part of the action's code. JavaScript actions don't include the environment in the code."
-  - content: "Which of the following could _not_ be used as an event trigger ```(runs_on)```?" 
+      explanation: "Container actions, JavaScript actions, and composite actions. With container actions, the environment is part of the action's code. JavaScript actions don't include the environment in the code. Composite actions allow you to combine multiple workflow steps within one action."
+  - content: "Which of the following actions could *not* be used as an event trigger ```(on:)```?" 
     choices:
     - content: "Making a commit"
       isCorrect: false
-      explanation: "Event triggers use Git references and making a commit produces a Git reference."
+      explanation: "Event triggers use Git references and a Git reference is produced when you make a commit."
     - content: "Opening a new tab in your browser"
       isCorrect: true
-      explanation: "Event triggers use Git references and opening a tab does not produce a Git reference."
+      explanation: "Event triggers use Git references and opening a tab doesn't produce a Git reference."
     - content: "Merging a branch"
       isCorrect: false
       explanation: "Event triggers use Git references and merging a branch produces a Git reference."

@@ -4,12 +4,12 @@ title: Use IP Address Management to manage IP addressing
 metadata:
   title: Use IP Address Management to manage IP addressing
   description: "Use IP Address Management to manage IP addressing"
-  ms.date: 03/01/2021
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
-azureSandbox: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/8-use-ip-address-management-to-manage-ip-address.md)]

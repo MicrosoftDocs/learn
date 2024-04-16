@@ -4,11 +4,10 @@ title: Identify incorrectly assigned resources in Azure
 metadata:
   title: Identify incorrectly assigned resources in Azure
   description: Identify incorrectly assigned resources in Azure
-  ms.date: 12/23/2019
+  ms.date: 11/21/2023
   author: tfitzmac
   ms.author: tomfitz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-identify-incorrectly-assigned-resources.md)]

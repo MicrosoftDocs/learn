@@ -3,11 +3,10 @@ uid: learn.n-tier-architecture.1-introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 01/15/2019
-  author: jboeshart
-  ms.author: jaboes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 02/17/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 title: Introduction
 durationInMinutes: 2
 content: |
