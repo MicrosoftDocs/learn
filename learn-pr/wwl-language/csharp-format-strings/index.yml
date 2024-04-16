@@ -18,7 +18,7 @@ summary: Use C# to format strings with white space, special characters, padding,
 abstract: |
   -   Use character escape sequences to add tabs, new lines, and Unicode characters to our strings.
 
-  -   Create verbatim string literals, and escape common characters like backslash ( \) and double-quotes (&amp;quot;&amp;quot;).
+  -   Create verbatim string literals, and escape common characters like backslash ( \ ) and double-quotes ( &quot;&quot; ).
 
   -   Merge templates with variables using composite formatting and string interpolation.
 
