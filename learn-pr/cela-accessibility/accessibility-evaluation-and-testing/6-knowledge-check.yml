@@ -9,6 +9,8 @@ metadata:
   ms.author: erzelman
   ms.topic: unit
 durationInMinutes: 1
+content: |
+  [!include[](includes/6-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
