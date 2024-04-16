@@ -15,7 +15,7 @@ Captions are the text of the spoken content and sound effects in a video or audi
 An audio description is the narration of the visual elements in a video or audio file. This description is meant to paint a vivid picture of a scene for people with low or no vision.
 
 
-<div style="text-align:center;"><video  width="640" height="360" controls><source src="https://learn-video.azurefd.net/vod/player?id=63c69938-4615-4131-ba28-6cf1710e1ec6"></video></div>
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=63c69938-4615-4131-ba28-6cf1710e1ec6]
 
 **Exercise – How to add captions to videos in PowerPoint** 
 
