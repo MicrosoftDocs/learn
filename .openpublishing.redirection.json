@@ -36185,6 +36185,11 @@
       "source_path": "learn-pr/wwl-sci/sc-200-who-hacked-cloud-game/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/training/courses/sc-200t00",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/sc-200-who-hacked-cloud-game/3-keep-playing.md",
+      "redirect_url": "https://learn.microsoft.com/training/courses/sc-200t00",
+      "redirect_document_id": false
     }
   ]
 }
