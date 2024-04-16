@@ -30,7 +30,7 @@ Follow the steps in this section to back up and restore objects by using the Azu
 
 ## Back up
 
-1. Go to the Azure portal.
+1. Go to the [Azure portal](https://portal.azure.com/).
 
 2. Select your key vault.<br>
 
@@ -46,7 +46,7 @@ Follow the steps in this section to back up and restore objects by using the Azu
 
 ## Restore
 
-1. Go to the Azure portal.
+1. Go to the [Azure portal](https://portal.azure.com/).
 
 2. Select your key vault.
 

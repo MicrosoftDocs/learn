@@ -43,7 +43,7 @@ Most methods are designed to accept one or more input parameters. The input para
 
 Methods use a **method signature** to define the number of input parameters that the method will accept, as well as the data type of each parameter. The coding statement that calls the method must adhere the requirements specified by the method signature. Some methods provide options for the number and type of parameters that the method accepts.
 
-When a caller invokes the method, it provides concrete values, called arguments, for each parameter. The arguments must be compatible with the parameter type. However, the argument name, if one is used in the calling code, doesn't have to be the same as the parameter named defined in the method.
+When a caller invokes the method, it provides concrete values, called arguments, for each parameter. The arguments must be compatible with the parameter type. However, the argument name, if one is used in the calling code, doesn't have to be the same as the parameter name defined in the method.
 
 Consider the following code:
 
