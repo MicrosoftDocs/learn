@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "learn-pr", "learn-pr", "{FD61D007-B893-41D6-930E-AB3FB43F86BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "azure-devops", "azure-devops", "{7C92D4C8-C1CB-44FB-9904-A94F2AD95D79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "manage-build-dependencies", "manage-build-dependencies", "{26C47DBD-736F-4989-9A4E-4101F9C99CAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "includes", "includes", "{46243F92-2786-4A78-B412-4B56A1905DF7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6-tailspin.spacegame.web", "learn-pr\azure-devops\manage-build-dependencies\includes\code\6-tailspin.spacegame.web.csproj", "{D10CAAC9-F8BB-496C-8D27-1E96FEB062E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D10CAAC9-F8BB-496C-8D27-1E96FEB062E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D10CAAC9-F8BB-496C-8D27-1E96FEB062E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D10CAAC9-F8BB-496C-8D27-1E96FEB062E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D10CAAC9-F8BB-496C-8D27-1E96FEB062E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7C92D4C8-C1CB-44FB-9904-A94F2AD95D79} = {FD61D007-B893-41D6-930E-AB3FB43F86BF}
+		{26C47DBD-736F-4989-9A4E-4101F9C99CAC} = {7C92D4C8-C1CB-44FB-9904-A94F2AD95D79}
+		{46243F92-2786-4A78-B412-4B56A1905DF7} = {26C47DBD-736F-4989-9A4E-4101F9C99CAC}
+		{D10CAAC9-F8BB-496C-8D27-1E96FEB062E8} = {46243F92-2786-4A78-B412-4B56A1905DF7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D6400477-51C8-448E-B575-6CDBAA528E9B}
+	EndGlobalSection
+EndGlobal
