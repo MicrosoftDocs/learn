@@ -22,51 +22,43 @@ Microsoft Security DevOps is a command line application that integrates static a
 
 **To setup GitHub action**:
 
-1. Sign in to [GitHub](https://www.github.com/).
+1.  Sign in to [GitHub](https://www.github.com/).
+2.  Select a repository you want to configure the GitHub action to.
+3.  Select **Actions**.
+    
+    :::image type="content" source="../media/github-actions-729545c0.png" alt-text="Screenshot showing how to Configure the Microsoft Security DevOps GitHub action.":::
+    
+4.  Select **New workflow**.
+5.  On the Get started with GitHub Actions page, select **set-up a workflow yourself**.:::image type="content" source="../media/new-workflow-de35682c.png" alt-text="Screenshot showing how to Get started with GitHub Actions.":::
+    
+6.  In the text box, enter a name for your workflow file. For example, `msdevopssec.yml`.
+    
+    :::image type="content" source="../media/devops-code-tab-45fbfec6.png" alt-text="Screenshot showing how to enter a name for your workflow file.":::
+    
+7.  Copy and paste the following [sample action workflow](https://github.com/microsoft/security-devops-action/blob/main/.github/workflows/sample-workflow.yml) into the Edit new file tab.
+8.  Select **Start commit**.
+    
+    :::image type="content" source="../media/start-commit-774cb905.png" alt-text="Screenshot showing how to start the commit process for your workflows.":::
+    
+9.  Select **Commit new file**.
+    
+    :::image type="content" source="../media/commit-new-39cc2bad.png" alt-text="Screenshot showing how to Commit a new file.":::
+    
 
-2. Select a repository you want to configure the GitHub action to.
-
-3. Select **Actions**.
-
-:::image type="content" source="../media/github-actions-729545c0.png" alt-text="Screenshot showing how to Configure the Microsoft Security DevOps GitHub action.":::
-
-
-4. Select **New workflow**.
-
-5. On the Get started with GitHub Actions page, select **set-up a workflow yourself**.
-
-:::image type="content" source="../media/new-workflow-de35682c.png" alt-text="Screenshot showing how to Get started with GitHub Actions.":::
-6. In the text box, enter a name for your workflow file. For example, `msdevopssec.yml`.
-
-:::image type="content" source="../media/devops-code-tab-45fbfec6.png" alt-text="Screenshot showing how to enter a name for your workflow file.":::
-
-
-7. Copy and paste the following [sample action workflow](https://github.com/microsoft/security-devops-action/blob/main/.github/workflows/sample-workflow.yml) into the Edit new file tab.
-
-8. Select **Start commit**.
-
-:::image type="content" source="../media/start-commit-774cb905.png" alt-text="Screenshot showing how to start the commit process for your workflows.":::
-9. Select **Commit new file**.
-
-:::image type="content" source="../media/commit-new-39cc2bad.png" alt-text="Screenshot showing how to Commit a new file.":::
-
-
-> [!NOTE]
-> The process can take up to one minute to complete.
+    > [!NOTE]
+    > The process can take up to one minute to complete.
 
 10. Select **Actions** and verify the new action is running.
-
-:::image type="content" source="../media/verify-actions-b00b46ce.png" alt-text="Screenshot showing how to verify the new action is running.":::
-
+    
+    :::image type="content" source="../media/verify-actions-b00b46ce.png" alt-text="Screenshot showing how to verify the new action is running.":::
+    
 
 ## View Scan Results
 
 To view your scan results:
 
-1. Sign in to [GitHub](https://www.github.com/).
-
-2. Navigate to **Security** &gt; **Code scanning alerts** &gt; **Tool**.
-
-3. From the dropdown menu, select **Filter by tool**.
+1.  Sign in to [GitHub](https://www.github.com/).
+2.  Navigate to **Security** &gt; **Code scanning alerts** &gt; **Tool**.
+3.  From the dropdown menu, select **Filter by tool**.
 
 Code scanning findings will be filtered by specific MSDO tools in GitHub. These code scanning results are also pulled into Defender for Cloud recommendations.

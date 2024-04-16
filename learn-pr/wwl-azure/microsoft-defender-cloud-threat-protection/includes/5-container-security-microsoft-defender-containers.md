@@ -2,10 +2,10 @@ Microsoft Defender for Containers is a cloud-native solution to improve, monitor
 
 Defender for Containers assists you with four core domains of container security:<br>
 
- -  **Security posture management** \- performs continuous monitoring of cloud APIs, Kubernetes APIs, and Kubernetes workloads to discover cloud resources, provide comprehensive inventory capabilities, detect misconfigurations and provide guidelines to mitigate them, provide contextual risk assessment, and empowers users to perform enhanced risk hunting capabilities through the Defender for Cloud security explorer.<br>
- -  **Vulnerability assessment** \- provides agentless vulnerability assessment for Azure, AWS, and GCP with remediation guidelines, zero configuration, daily rescans, coverage for OS and language packages, and exploitability insights.<br>
- -  **Run-time threat protection** \- a rich threat detection suite for Kubernetes clusters, nodes, and workloads, powered by Microsoft leading threat intelligence, provides mapping to MITRE ATT&CK framework for easy understanding of risk and relevant context, automated response, and SIEM/XDR integration.<br>
- -  **Deployment & monitoring**\- Monitors your Kubernetes clusters for missing agents and provides frictionless at-scale deployment for agent-based capabilities, support for standard Kubernetes monitoring tools, and management of unmonitored resources.<br>
+ -  Security posture management - performs continuous monitoring of cloud APIs, Kubernetes APIs, and Kubernetes workloads to discover cloud resources, provide comprehensive inventory capabilities, detect misconfigurations and provide guidelines to mitigate them, provide contextual risk assessment, and empowers users to perform enhanced risk hunting capabilities through the Defender for Cloud security explorer.<br>
+ -  Vulnerability assessment - provides agentless vulnerability assessment for Azure, AWS, and GCP with remediation guidelines, zero configuration, daily rescans, coverage for OS and language packages, and exploitability insights.<br>
+ -  Run-time threat protection - a rich threat detection suite for Kubernetes clusters, nodes, and workloads, powered by Microsoft leading threat intelligence, provides mapping to MITRE ATT&CK framework for easy understanding of risk and relevant context, automated response, and Security Information and Event Management (SIEM)/Extended Detection and Response (XDR) integration.<br>
+ -  Deployment & monitoring- Monitors your Kubernetes clusters for missing agents and provides frictionless at-scale deployment for agent-based capabilities, support for standard Kubernetes monitoring tools, and management of unmonitored resources.<br>
 
 ## Microsoft Defender for Containers plan availability
 
@@ -73,6 +73,6 @@ The security alerts page opens:
 :::image type="content" source="../media/view-containers-alerts-88aa964c.png" alt-text="Screenshot showing an example of how to view security alerts for runtime workload in the clusters.":::
 
 
-Security alerts for runtime workload in the clusters can be recognized by the K8S.NODE\_ prefix of the alert type.
+Security alerts for runtime workload in the clusters can be recognized by the Kubernetes K8S.NODE\_ prefix of the alert type.
 
 Defender for Containers also includes host-level threat detection with over 60 Kubernetes-aware analytics, AI, and anomaly detections based on your runtime workload.

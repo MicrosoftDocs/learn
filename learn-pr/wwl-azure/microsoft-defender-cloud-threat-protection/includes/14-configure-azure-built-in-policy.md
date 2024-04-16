@@ -6,25 +6,19 @@ You can always configure specific storage accounts with custom configurations th
 
 To enable and configure Defender for Storage at scale with an Azure built-in policy, follow these steps:
 
-1. Sign in to the [Azure portal](https://portal.azure.com/) and navigate to the **Policy** dashboard.<br>
-
-2. In the Policy dashboard, select **Definitions** from the left-side menu.<br>
-
-3. In the “Security Center” category, search for and then select **Configure Microsoft Defender for Storage to be enabled**. This policy enables all Defender for Storage capabilities: Activity Monitoring, Malware Scanning and Sensitive Data Threat Detection. You can also get it here: [List of built-in policy definitions](/azure/governance/policy/samples/built-in-policies#security-center). If you want to enable a policy without the configurable features, use **Configure basic Microsoft Defender for Storage to be enabled (Activity Monitoring only)**.
-
-:::image type="content" source="../media/policy-definitions-example-4d8af992.png" alt-text="Screenshot showing how to configure and enable Microsoft Defender for Storage.":::
-
-
-4. Select the policy and review it.
-
-5. Select **Assign** and edit the policy details. You can fine-tune, edit, and add custom rules to the policy.<br>
-
-:::image type="content" source="../media/policy-assign-901a7720.png" alt-text="Screenshot showing an example of how to assign and edit policy details.":::
-
-
-6. Once you have completed reviewing, select **Review + create**.
-
-7. Select **Create** to assign the policy.
+1.  Sign in to the [Azure portal](https://portal.azure.com/) and navigate to the **Policy** dashboard.<br>
+2.  In the Policy dashboard, select **Definitions** from the left-side menu.<br>
+3.  In the “Security Center” category, search for and then select **Configure Microsoft Defender for Storage to be enabled**. This policy enables all Defender for Storage capabilities: Activity Monitoring, Malware Scanning and Sensitive Data Threat Detection. You can also get it here: [List of built-in policy definitions](/azure/governance/policy/samples/built-in-policies#security-center). If you want to enable a policy without the configurable features, use **Configure basic Microsoft Defender for Storage to be enabled (Activity Monitoring only)**.
+    
+    :::image type="content" source="../media/policy-definitions-example-4d8af992.png" alt-text="Screenshot showing how to configure and enable Microsoft Defender for Storage.":::
+    
+4.  Select the policy and review it.
+5.  Select **Assign** and edit the policy details. You can fine-tune, edit, and add custom rules to the policy.<br>
+    
+    :::image type="content" source="../media/policy-assign-901a7720.png" alt-text="Screenshot showing an example of how to assign and edit policy details.":::
+    
+6.  Once you have completed reviewing, select **Review + create**.
+7.  Select **Create** to assign the policy.
 
 Malware Scanning can be configured to send scanning results to the following:
 
