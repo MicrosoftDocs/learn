@@ -16,21 +16,13 @@ summary: This module focuses on configuring and managing security monitoring and
 abstract: |
   By the end of this module, participants will be able to:
 
-  -
+  -   Utilize Azure Monitor for comprehensive monitoring of cloud security events.
 
-  Utilize Azure Monitor for comprehensive monitoring of cloud security events.
+  -   Aggregate diverse security data efficiently with data connectors in Microsoft Sentinel.
 
-  -
+  -   Detect threats using customized analytics rules in Microsoft Sentinel.
 
-  Aggregate diverse security data efficiently with data connectors in Microsoft Sentinel.
-
-  -
-
-  Detect threats using customized analytics rules in Microsoft Sentinel.
-
-  -
-
-  Assess and automate incident responses in Microsoft Sentinel for enhanced security management.
+  -   Assess and automate incident responses in Microsoft Sentinel for enhanced security management.
 prerequisites: None
 iconUrl: /training/achievements/generic-badge.svg
 levels:
