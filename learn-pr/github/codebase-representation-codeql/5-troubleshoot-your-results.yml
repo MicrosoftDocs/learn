@@ -4,8 +4,8 @@ title: Troubleshoot CodeQL results
 metadata:
   unitType:  Troubleshoot CodeQL results
   title:  Troubleshoot CodeQL results
-  description: This unit provides common tips for troubleshooting your queries.
-  ms.date: 02/10/2022
+  description: Learn about common tips for troubleshooting your CodeQL queries.
+  ms.date: 04/08/2024
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit
