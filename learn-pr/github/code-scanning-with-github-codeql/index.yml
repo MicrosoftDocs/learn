@@ -46,6 +46,7 @@ units:
 - learn.code-scanning-with-github-codeql.use-codeql-cli
 - learn.code-scanning-with-github-codeql.customize-languages-builds
 - learn.code-scanning-with-github-codeql.exercise-configure-language-matrix
+- learn.code-scanning-with-github-codeql.knowledge-check
 - learn.code-scanning-with-github-codeql.summary
 badge:
   uid: learn.code-scanning-with-github-codeql.badge
