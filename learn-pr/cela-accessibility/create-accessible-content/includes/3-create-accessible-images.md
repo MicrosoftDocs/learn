@@ -5,7 +5,7 @@ Best practice is that Alt text is purposeful and meaningful about what's in the 
 Including alt text for every image is important because it makes your web content more accessible and inclusive for people with vision disabilities, as well as people using low-bandwidth connections or browsers with images turned off. 
 Decorative images (like borders) should be marked 'decorative' if they don't provide context or meaning to the content. Here's how to add alternative text in Word, PowerPoint, and Outlook.
 
-  **Exercise – Add alt text to an image in Word**
+## Exercise – Add alt text to an image in Word
   
   When you want to add alt text to an image in Word:
   1. Right-click on an image or press the applications key and select **View Alt Text**. A pane will open with options.
@@ -22,7 +22,7 @@ Decorative images (like borders) should be marked 'decorative' if they don't pro
 
      :::image type="content" source="../media/3-3-image-as-decorative.png" alt-text="Screenshot of the Alt Text pane in Word. The Mark as decorative box is checked.":::
 
-  **Exercise – Add alt text to images in PowerPoint**
+## Exercise – Add alt text to images in PowerPoint
 
   Follow these steps to add alt text to images in your PowerPoint presentations: 
   1. Right-click or press the applications key on the image and choose **Edit Alt Text** from the menu. (Or select the image and then under the ribbon's Format tab, select Alt Text.)
@@ -33,7 +33,7 @@ Decorative images (like borders) should be marked 'decorative' if they don't pro
 
      :::image type="content" source="../media/3-4-mark-as-decorative.png" alt-text="Screenshot of the Alt Text pane in PowerPoint.":::
 
-  **Exercise – Add alt text to an image in Outlook** 
+## Exercise – Add alt text to an image in Outlook
 
   When crafting emails in Outlook, follow these steps to add alt text to an image: 
   1. Right-click the image or press the applications key and choose **View Alt Text**.
