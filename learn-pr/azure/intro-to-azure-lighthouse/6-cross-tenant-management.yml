@@ -3,7 +3,7 @@ uid: learn.intro-to-azure-lighthouse.6-cross-tenant-management
 metadata:
   title: View cross-tenant access
   description: See how to create a cross-tenant management for your customers.
-  ms.date: 02/09/2023
+  ms.date: 04/15/2024
   author: iankensey
   ms.author: socuff
   ms.topic: unit
