@@ -1,6 +1,6 @@
 Code-scanning workflows that use CodeQL have various configuration options that you can adjust to better suit the needs of your organization.
 
-In this unit, you'll learn how to reference additional queries in a custom configuration file.
+In this unit, we review how to reference additional queries in a custom configuration file.
 
 ## Additional queries in a custom configuration file
 
@@ -31,7 +31,7 @@ The settings in the configuration file are written in YAML format.
 > [!NOTE]
 > The CodeQL package-management functionality, including CodeQL packs, is currently in beta and subject to change.
 
-You can specify CodeQL query packs in an array. Note that the format is different from the format used by the workflow file.
+You can specify CodeQL query packs in an array. The format is different from the format used by the workflow file.
 
 ```yml
 packs:
