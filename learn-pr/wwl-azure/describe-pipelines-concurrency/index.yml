@@ -2,11 +2,12 @@
 uid: learn.wwl.describe-pipelines-concurrency
 metadata:
   title: Describe pipelines and concurrency
-  description: "Describe pipelines and concurrency"
+  description: Describe pipelines and concurrency
   ms.date: 03/18/2022
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: azure
 title: Describe pipelines and concurrency
 summary: This module describes parallel jobs and how to estimate their usage. Also, it presents Azure Pipelines for open-source projects, explores Visual Designer and YAML pipelines.
 abstract: |

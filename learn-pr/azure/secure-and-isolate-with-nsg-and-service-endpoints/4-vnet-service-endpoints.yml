@@ -3,7 +3,7 @@ uid: learn.secure-and-isolate-with-nsg-and-service-endpoints.4-vnet-service-endp
 metadata:
   title: Secure network access to PaaS services with virtual network service endpoints
   description: Secure network access to PaaS services with virtual network service endpoints
-  ms.date: 09/18/2023
+  ms.date: 10/11/2023
   author: asudbring
   ms.author: allensu
   ms.topic: unit

@@ -4,11 +4,12 @@ title: Monitor, investigate, and remediate elevated risky users
 metadata:
   title: Monitor, investigate, and remediate elevated risky users
   description: "Monitor, investigate, and remediate elevated risky users"
-  ms.date: 10/25/2023
+  ms.date: 04/03/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
-  ms.service: azure
+  ms.custom:
+  - N/A
 durationInMinutes: 16
 content: |
   [!include[](includes/6-monitor-investigate-remediate-elevated-risky-users.md)]

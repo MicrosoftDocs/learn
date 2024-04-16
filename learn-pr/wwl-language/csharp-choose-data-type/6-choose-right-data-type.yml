@@ -3,11 +3,13 @@ uid: learn.languages.csharp-choose-data-type.choose-right-data-type
 title: Choose the right data type
 metadata:
   title: Choose the right data type
-  description: "Choose the right data type"
-  ms.date: 02/21/2024
+  description: "Learn the best practices that will help you to choose the right data type."
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/6-choose-right-data-type.md)]

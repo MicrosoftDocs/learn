@@ -4,7 +4,7 @@ title: Deploy Azure Container Instances in a virtual network
 metadata:
   title: Deploy Azure Container Instances in a virtual network
   description: Use Azure CLI in Azure Cloud Shell to deploy an Azure container instance with associated resources into a virtual network and secure private strings.
-  ms.date: 04/27/2022
+  ms.date: 10/12/2023
   author: erjosito
   ms.author: jomore
   ms.topic: unit

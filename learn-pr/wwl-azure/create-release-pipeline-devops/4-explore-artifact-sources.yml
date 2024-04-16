@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-  ms.service: azure
 durationInMinutes: 4
 content: |
   [!include[](includes/4-explore-artifact-sources.md)]

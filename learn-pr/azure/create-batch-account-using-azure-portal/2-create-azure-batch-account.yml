@@ -4,9 +4,9 @@ title: Create a Batch job by using the Azure portal
 metadata:
   title: Create a Batch job by using the Azure portal
   description: Read about Batch and select security features.
-  ms.date: 02/01/2021
-  author: prkannap
-  ms.author: prkannap
+  ms.date: 04/01/2024
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: unit
 durationInMinutes: 5
 content: |

@@ -2,11 +2,12 @@
 uid: learn.wwl.manage-modularize-tasks-templates
 metadata:
   title: Manage and modularize tasks and templates
-  description: "Manage and modularize tasks and templates"
+  description: Manage and modularize tasks and templates
   ms.date: 11/01/2022
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: azure
 title: Manage and modularize tasks and templates
 summary: This module describes the creation of task and variable groups and using release variables and stage variables in your pipeline.
 abstract: |

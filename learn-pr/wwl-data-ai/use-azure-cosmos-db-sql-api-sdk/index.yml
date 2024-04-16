@@ -3,18 +3,22 @@ uid: learn.wwl.use-azure-cosmos-db-sql-api-sdk
 metadata:
   title: Use the Azure Cosmos DB for NoSQL SDK
   description: "Learn about the Microsoft.Azure.Cosmos library, and then download the library to use in a .NET application."
-  ms.date: 05/24/2023
+  ms.date: 03/28/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: module
+  ms.service: cosmos-db
+  ms.subservice: nosql
+  ai-usage: human-only
 title: Use the Azure Cosmos DB for NoSQL SDK
 summary: Learn about the Microsoft.Azure.Cosmos library, and then download the library to use in a .NET application.
 abstract: |
   After completing this module, you'll be able to:
-  *   Integrate the Microsoft.Azure.Cosmos SDK library from NuGet
-  *   Connect to an Azure Cosmos DB for NoSQL account using the SDK and .NET
-prerequisites: |
-  Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
+
+  -   Integrate the Microsoft.Azure.Cosmos SDK library from NuGet
+
+  -   Connect to an Azure Cosmos DB for NoSQL account using the SDK and .NET
+prerequisites: Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
 iconUrl: /training/achievements/azure-cosmos-db-use.svg
 levels:
 - intermediate

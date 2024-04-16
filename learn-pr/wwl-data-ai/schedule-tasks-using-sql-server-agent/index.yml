@@ -2,11 +2,12 @@
 uid: learn.wwl.schedule-tasks-using-sql-server-agent
 metadata:
   title: Create and manage SQL Agent jobs
-  description: "Create and manage SQL Agent jobs"
+  description: Create and manage SQL Agent jobs
   ms.date: 05/11/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: azure
 title: Create and manage SQL Agent jobs
 summary: Explore SQL automation for scheduled tasks, and automatic alerts for SQL Server and Azure SQL Managed Instance.
 abstract: |

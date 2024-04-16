@@ -6,7 +6,7 @@ metadata:
   ms.date: 01/10/2024
   author: duongau
   ms.author: duau
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Create a Content Delivery Network for your Website with Azure CDN and Blob Services
 summary: You learned how to publish static web content using an Azure Content Delivery Network (CDN) and Azure Blob Services.
 abstract: |

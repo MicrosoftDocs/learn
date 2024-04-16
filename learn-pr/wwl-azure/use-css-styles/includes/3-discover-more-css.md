@@ -92,4 +92,4 @@ h2 {
 
 As you might suspect, there are dozens of available named colors, and RGB values offer an infinite set of options. Editors such as [vscode.dev](https://vscode.dev) or [Visual Studio Code](https://code.visualstudio.com) can help identify the available color values. Both editors will show a color swatch preview in your CSS. If you mouse over the swatch you're presented with a color selector you can use to set the color you desire.
 
-:::image type="content" source="../media/color-selector.png" alt-text="Screenshot of color selector from Visual Studio Code":::
+:::image type="content" source="../media/color-selector.png" alt-text="Screenshot of color selector from Visual Studio Code.":::

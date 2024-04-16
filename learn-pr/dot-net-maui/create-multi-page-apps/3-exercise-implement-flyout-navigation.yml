@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: "Exercise: Implement flyout navigation"
   description: "Practice using .NET MAUI Shell to create flyout navigation for your app."
-  ms.date: 10/13/2023
+  ms.date: 10/26/2023
   author: codemillmatt
   ms.author: masoucou
   ms.manager: markl

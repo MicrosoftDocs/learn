@@ -1,6 +1,9 @@
-The Public Information Officer (PIO) in your department maintains a non-public-facing website for use by the local media. Your PIO uses her mobile device to update content on the media website so that local media outlets can stay informed about current events. To prevent unauthorized or incorrect information being presented to the media, this site must be as secure as possible. As the administrator, one approach you can take to improve security is to keep the site current with the latest updates.
+> [!CAUTION]
+> This content references CentOS, a Linux distribution that is nearing End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
 
-Here, we'll introduce the Update Management solution for Azure.
+The Public Information Officer (PIO) in your department maintains a non-public-facing website for use by the local media. Your PIO uses a mobile device to update content on the media website so that local media outlets can stay informed about current events. To prevent unauthorized or incorrect information being presented to the media, this site must be as secure as possible. As the administrator, one approach you can take to improve security is to keep the site current with the latest updates.
+
+Here, we introduce the Update Management solution for Azure.
 
 ## Update Management overview
 
@@ -8,24 +11,24 @@ Here, we'll introduce the Update Management solution for Azure.
 
  There are several advantages to the Update Management solution:
 
-  1. There are no agents or additional configuration within the virtual machine.
-  1. You can run updates without logging into the VM. You also don't have to create passwords to install the update.
+  1. No agents or extra configuration are needed within the virtual machine.
+  1. You can run updates without logging into the virtual machine (VM). You also don't have to create passwords to install the update.
   1. The Update Management solution lists missing updates and provides information about failed deployments in an easy-to-read format.
 
 You can use Update Management to natively onboard machines in multiple subscriptions in the same tenant. To manage machines in a different tenant, you must onboard them as non-Azure machines.
 
 ## Supported Operating Systems
 
-The Update Management solution supports Windows and Linux, specifically:
+The Update Management solution supports Windows and Linux. All operating systems are assumed to be x64. x86 isn't supported for any operating system. Update Management specifically supports:
 
-- Windows Server 2019 (Datacenter/Standard including Server Core), Windows Server 2016 (Datacenter/Standard excluding Server Core), Windows Server 2012 R2(Datacenter/Standard), Windows Server 2012, and Windows Server 2008 R2 (RTM and SP1 Standard)
-- CentOS 6 (x86/X64), CentOS 7 and CentOS 8
+- Windows Server 2022 (Datacenter), Windows Server 2019 (Datacenter/Standard including Server Core), Windows Server 2016 (Datacenter/Standard excluding Server Core), Windows Server 2012 R2(Datacenter/Standard), Windows Server 2012, and Windows Server 2008 R2 (RTM and SP1 Standard)
+- CentOS 6, CentOS 7, and CentOS 8
 - Oracle Linux 6.x, 7.x, 8x
-- Red Hat Enterprise 6 (x86/x64), 7 (x64) and 8
-- SUSE Linux Enterprise Server 11 (x86/x64) and 12 (x64), 15 and 15.1
-- Ubuntu 14.04 LTS, 16.04 LTS and 18.04 (x86/x64), and 20.04 LTS
+- Red Hat Enterprise 6, 7 and 8
+- SUSE Linux Enterprise Server 12, 15 and 15.1
+- Ubuntu 14.04 LTS, 16.04 LTS and 18.04, and 20.04 LTS
 
-In this module, we'll work with a Windows Server 2019 virtual machine deployed in Azure.
+In this module, we work with a Windows Server 2019 virtual machine deployed in Azure.
 
 ## Components Used by Update Management
 

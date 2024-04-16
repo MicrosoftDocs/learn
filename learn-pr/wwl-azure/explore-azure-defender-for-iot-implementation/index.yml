@@ -2,11 +2,12 @@
 uid: learn.wwl.explore-azure-defender-for-iot-implementation
 metadata:
   title: Explore Microsoft Defender for IoT implementation
-  description: "This module provides you with experience configuring Azure Defender for IoT and implementing Azure Defender for IoT security agents to enhance your awareness of device-level security concerns."
+  description: This module provides you with experience configuring Azure Defender for IoT and implementing Azure Defender for IoT security agents to enhance your awareness of device-level security concerns.
   ms.date: 10/09/2023
   author: wwlpublish
   ms.author: serlingdavis
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: defender-for-iot
 title: Explore Microsoft Defender for IoT implementation
 summary: This module provides you with experience configuring Microsoft Defender for IoT and implementing Microsoft Defender for IoT security agents to enhance your awareness of device-level security concerns.
 abstract: |

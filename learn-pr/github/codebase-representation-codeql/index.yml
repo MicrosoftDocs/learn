@@ -2,18 +2,18 @@
 uid: learn.codebase-representation-codeql
 metadata:
   title: "Identify security vulnerabilities in your codebase with CodeQL" # user input: module title for browser tab and search results
-  description: "In this module, you'll learn about CodeQL. You'll review information about how CodeQL enables you to analyze the code in your GitHub repository and identify security vulnerabilities." # user input: a description for site search and SEO
-  ms.date: 2/10/2022
+  description: "Learn how CodeQL lets you analyze the code in your GitHub repository and identify security vulnerabilities." # user input: a description for site search and SEO
+  ms.date: 04/08/2024
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: module
 title: Identify security vulnerabilities in your codebase with CodeQL
 summary: "In this module, you'll learn about CodeQL. You'll review information about how CodeQL enables you to analyze the code in your GitHub repository and identify security vulnerabilities." # user input: introductory summary (https://review.learn.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main)
 abstract: | # user input: learning objectives (https://review.learn.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)
  By the end of this module, you'll be able to:
-  - Create a database by using CodeQL to extract a single relational representation of each source file in the codebase
-  - Run CodeQL in a database to find problems in your source code and find potential security vulnerabilities
-  - Understand CodeQL scan results using queries created by GitHub, or your own custom queries
+  - Create a database by using CodeQL to extract a single relational representation of each source file in the codebase.
+  - Run CodeQL in a database to find problems in your source code and find potential security vulnerabilities.
+  - Understand CodeQL scan results using queries created by GitHub, or your own custom queries.
 prerequisites: | # user input: prerequisites (https://review.learn.microsoft.com/help/learn/id-guidance-prerequisites?branch=main)
   - Basic knowledge of GitHub Actions
   - Familiarity with GitHub code scanning

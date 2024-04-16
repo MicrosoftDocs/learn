@@ -120,7 +120,7 @@ Consider using Azure DMS whenever you want to perform an online database migrati
 To perform a migration with DMS, you complete these tasks:
 
 1. Create a new target database within Azure on the platform of your choice.
-1. Create a new DMS data migration project.
+1. Create a new Azure Database Migration Service (DMS) data migration project.
 1. Generate the schema from the on-premises source databases. If you're using MySQL, you can generate a schema with `sqldump`. If the source database is PostgreSQL, use `pg_dump`.
 1. Create an empty database to act as the migration destination.
 1. Apply the schema to the destination database.

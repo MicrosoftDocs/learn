@@ -23,7 +23,7 @@ param appServicePlanSku object = {
 }
 
 @description('The Azure region into which the resources should be deployed.')
-param location string = 'westus3'
+param location string = 'eastus'
 
 var appServicePlanName = '${environmentName}-${solutionName}-plan'
 var appServiceAppName = '${environmentName}-${solutionName}-app'

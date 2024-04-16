@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.perform-zero-etl-analytics-hdinsight-interactive-query.2-when-should-you-use-hdinsight-interactive-query
-title: When should you use HDInsight Interactive Query
+title: When should you use HDInsight Interactive Query?
 metadata:
-  title: When should you use HDInsight Interactive Query
-  description: "When should you use HDInsight Interactive Query"
-  ms.date: 01/05/2022
+  title: When should you use HDInsight Interactive Query?
+  description: "When should you use HDInsight Interactive Query?"
+  ms.date: 04/08/2024
   author: wwlpublish
   ms.author: jamesh
   ms.topic: unit
