@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-oracle-application-azure-paas.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 04/15/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
