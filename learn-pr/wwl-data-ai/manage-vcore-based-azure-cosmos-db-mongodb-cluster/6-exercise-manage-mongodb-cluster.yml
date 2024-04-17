@@ -8,9 +8,9 @@ metadata:
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
-  azureSandbox: false
-  labId: 163230
-  labModal: true
 durationInMinutes: 40
+azureSandbox: false
+labId: 163230
+labModal: true
 content: |
   [!include[](includes/6-exercise-manage-mongodb-cluster.md)]
