@@ -37,7 +37,7 @@ Our goal for developing the threat matrix for DevOps is to build a comprehensive
 
 It is worth noting that the tactics in this matrix must be looked at from the DevOps perspective. For example, execution techniques in a Virtual Machine running Windows or Linux OS are different from the Execution in a DevOps pipeline. In the Linux case, execution means running code in the OS. When we talk about DevOps environments, it means running code in the pipeline or DevOps resources. In addition to using this threat matrix to categorize attacks and corresponding defense methods, Defenders can work alongside red teams to continuously test assumptions and find new potential attack techniques.
 
-## MITRE ATT&CK Defined:
+## MITRE ATT&CK Defined
 
 The MITRE ATT&CK matrix is a publicly accessible knowledge base for understanding the various tactics and techniques used by attackers during a cyberattack.
 
@@ -49,7 +49,7 @@ Techniques (T) represent "how'" an adversary achieves a tactical goal by perform
 
 Common Knowledge (CK) in ATT&CK stands for common knowledge, essentially the documented modus operandi of tactics and techniques executed by adversaries.
 
-## 1. Initial access<br>
+### Initial access
 
 The initial access tactic refers to techniques an attacker may use for gaining access to the DevOps resources – repositories, pipelines, and dependencies. The following techniques may be a precondition for the next steps:
 
@@ -63,7 +63,7 @@ Endpoint compromise – Using an existing compromise, an attacker can leverage t
 
 Configured webhooks – When an organization has a webhook configured, an attacker could use it as an initial access method into the organization’s network by using the SCM itself to trigger requests into that network. This could grant the attacker access to services that are not meant to be publicly exposed, or that are running old and vulnerable software versions inside the private network.<br>
 
-## 2. Execution<br>
+### Execution
 
 The execution tactic refers to techniques that may be used by a malicious adversary to gain execution access on pipeline resources – the pipeline itself or the deployment resources. Some of the techniques in this section contain explanations about the different ways to perform them, or what we call sub-techniques:
 
@@ -83,7 +83,7 @@ DevOps resources compromise – Pipelines are, at the core, a set of compute res
 
 Control of common registry – An attacker can gain control of a registry used by the organization, resulting in malicious images or packages executed by the pipeline VMs or production VMs.<br>
 
-## 3. Persistence<br>
+### Persistence
 
 The persistency tactic consists of different techniques that an attacker may use for maintaining access to a victim environment:
 
@@ -99,7 +99,7 @@ Modify images in registry – In cases where the pipelines have permissions to a
 
 Create service credentials – A malicious adversary can leverage the access they already have on the environment and create new credentials for use in case the initial access method is lost. This could be done by creating an access token to the SCM, to the application itself, to the cloud resources, and more.<br>
 
-## 4. Privilege escalation<br>
+### Privilege escalation
 
 The privilege escalation techniques are used by an attacker to elevate the privileges in the victim’s environment, gaining higher privileges for already compromised resources:
 
@@ -109,7 +109,7 @@ Commit/push to protected branches – The pipeline has access to the repository 
 
 Certificates and identities from metadata services – Once an attacker is running on cloud-hosted pipelines, the attacker could access the metadata services from inside the pipeline and extract certificates (requires high privileges) and identities from these services.<br>
 
-## 5. Credential access<br>
+### Credential access
 
 Credential access techniques are used by an attacker to steal credentials:
 
@@ -117,7 +117,7 @@ User credentials – In cases where the customer requires access to external ser
 
 Service credentials – There are cases where the attacker can find service credentials, such as service-principal-names (SPN), shared-access-signature (SAS) tokens, and more, which could allow access to other services directly from the pipeline.<br>
 
-## 6. Lateral movement<br>
+### Lateral movement
 
 The lateral movement tactic refers to techniques used by attackers to move through different resources. In CI/CD environments, this may refer to moving to deployment resources, to build artifacts and registries, or to new targets.
 
@@ -127,7 +127,7 @@ Registry injection – If the pipeline is configured with a registry for the bui
 
 Spread to deployment resources – If the pipeline is configured with access to deployment resources, then the attacker has the same access to these resources, allowing the attacker to spread. This could result in code execution, data exfiltration and more, depending on the permissions granted to the pipelines.<br>
 
-## 7. Defense evasion<br>
+### Defense evasion
 
 Defense evasion techniques could be used by attackers to bypass defenses used in a DevOps environment and allow attacks to continue under the radar:
 
@@ -140,7 +140,7 @@ Compilation manipulation – if an attacker wishes to leave no traces in the SCM
 
 Reconfigure branch protections – Branch protection tools allow an organization to configure steps before a PR/commit is approved into a branch. Once an attacker has admin permissions, they may change these configurations and introduce code into the branch without any user intervention.
 
-## 8. Impact<br>
+### Impact
 
 The impact tactic refers to the techniques an attacker could use for exploiting access to the CI/CD resources for malicious purposes, and not as another step in the attack, as these techniques could be noisy and easy to detect:
 
@@ -152,7 +152,7 @@ Local Denial-of-service (DoS) – Once the attacker is running on the CI pipelin
 
 Resource deletion – An attacker with access to resources (cloud resources, repositories, etc.) could permanently delete the resources to achieve denial of services.<br>
 
-## 9. Exfiltration<br>
+### Exfiltration
 
 The exfiltration tactic refers to different techniques that could be used by an attacker to exfiltrate sensitive data from victim environment:
 
