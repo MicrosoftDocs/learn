@@ -23,6 +23,7 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+- azure-openai
 subjects:
 - artificial-intelligence
 - databases
