@@ -4,7 +4,9 @@ ms.custom:
 ---
 This unit takes a closer look at the CREATE EXTERNAL TABLE AS SELECT (CETAS) command and the benefits it provides.
 
-CETAS supports Azure Blob Storage, Azure Data Lake Storage, and S3-compatible object storage as well as external databases. CETAS also supports exporting file formats as either a CSV or Parquet file. CETAS' most powerful capability is to combine with other SELECT operations, such as combining with OPENROWSET or with other external tables. This combination allows CETAS to be used in different and flexible ways.
+CETAS supports Azure Blob Storage, Azure Data Lake Storage, and S3-compatible object storage as well as external databases. CETAS also supports exporting file formats as either a CSV or Parquet file.
+
+CETAS' most powerful capability is to combine with other SELECT operations, such as combining with OPENROWSET or with other external tables. This combination allows CETAS to be used in different and flexible ways.
 
 ## Use cases for CETAS
 
@@ -30,7 +32,7 @@ By using SQL Server 2022 as a data hub, you can combine CETAS capabilities with 
 
 ## Enable CETAS
 
-To use CETAS, you need to enable the property `ALLOW POLYBASE EXPORT` through `sp_configure`. For details, see the next exercise.
+To use CETAS, you need to enable the property `ALLOW POLYBASE EXPORT` by using `sp_configure`. For details, see the next exercise.
 
 :::image type="content" source="../media/allow-polybase-export.png" alt-text="Screenshot of SSMS configuring the option to allow PolyBase export.":::
 
@@ -39,7 +41,7 @@ To use CETAS, you need to enable the property `ALLOW POLYBASE EXPORT` through `s
 To use CETAS, you need three different levels of permission:
 
 - Permission to access and read the data source.
-  If the data resides outside of SQL Server, either on a network share or another database server, the SQL Server service account must have permissions to access the data source.
+  If the data resides outside of SQL Server, either on a network share or another database server, the SQL Server service account must have permission to access the data source.
 
 - Permission on SQL Server 2022 to use the CETAS command.
   For the database user to execute the CETAS command, they need **ADMINISTER BULK OPERATIONS**, **ALTER ANY EXTERNAL DATA SOURCE**, and **ALTER ANY EXTERNAL FILE FORMAT** permissions.
@@ -63,7 +65,7 @@ The input can be a table running locally on your SQL Server instance, a network 
 
 To better understand CETAS, break down the overall T-SQL syntax. CETAS T-SQL structure follows a bottom-up logic approach. It's easier to start at the end of the statement, and then work your way to the top of the T-SQL statement.
 
-:::image type="content" source="../media/create-external-table-as-select-t-sql-structure.png" alt-text="Image of the T-SQL structure of CREATE EXTERNAL TABLE as SELECT statement.":::
+:::image type="content" source="../media/create-external-table-as-select-t-sql-structure.png" alt-text="Image of the T-SQL structure of CREATE EXTERNAL TABLE as SELECT statement." border="false":::
 
 - The bottom of the CETAS structure contains a SELECT statement you use to define what data to export.
 - In the middle, there are optional parameters you can use to reject data that you don't want to export.
@@ -71,7 +73,7 @@ To better understand CETAS, break down the overall T-SQL syntax. CETAS T-SQL str
 
 This structure allows CETAS to be combined with any SELECT statement to query data outside SQL Server, within SQL Server, or from any other supported database. SQL Server 2022 automatically creates the file name and splits the results in multiple files for optimization. For example, a table exported as a Parquet can generate several files, depending on the exported data size. The select statement defines the external table column definition and type.
 
-### Export table a from SQL Server as Parquet
+### Export a table from SQL Server as Parquet
 
 The following example uses CETAS to export a table from SQL Server as Parquet:
 
@@ -86,9 +88,9 @@ SELECT *
 FROM AdventureWorks2022.[Sales].[SalesOrderDetail];
 ```
 
-### Read a delta file and export as Parquet
+### Read a Delta file and export as Parquet
 
-The following example uses CETAS to read a delta file and export it as Parquet:
+The following example uses CETAS to read a Delta file and export it as Parquet:
 
 ```sql
 CREATE EXTERNAL TABLE Delta_to_Parquet

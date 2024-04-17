@@ -54,7 +54,7 @@ RECONFIGURE;
 :::image type="content" source="../media/enable-polybase-t-sql.png" alt-text="An image of enabling PolyBase using T-SQL in SQL Server Management Studio.":::
 
 > [!NOTE]
-> Because you're querying Apache Parquet files by using the PolyBase REST API, the **SQL Server PolyBase Data Movement** and **SQL Server PolyBase Engine** services don't need to be enabled or configured for this exercise.
+> Because you query Apache Parquet files by using the PolyBase REST API, the **SQL Server PolyBase Data Movement** and **SQL Server PolyBase Engine** services don't need to be enabled or configured for this exercise.
 
 ## Create a database
 

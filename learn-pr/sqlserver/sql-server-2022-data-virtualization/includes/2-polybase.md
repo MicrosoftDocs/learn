@@ -35,9 +35,7 @@ Amazon Web Services (AWS) established the S3 standard framework, and major stora
 - [Dell](https://github.com/EMCECS/ECS-CommunityEdition) ECS Community Edition
 - [Hitachi](https://www.hitachivantara.com/en-us/pdf/white-paper/microsoft-sql-server-2022-with-hcp-backup-to-object-polybase-validation.pdf) Hitachi Content Platform (HCP)
 - [MinIO](https://min.io/solutions/sqlserver) Multi-Cloud Object Storage
-- [Pure Storage](https://www.purestorage.com/products/unstructured-data-storage/flashblade-s.html) Pure FlashBlade 
-
-  The Pure Storage [SQL Server Test Drive](https://www.purestorage.com/solutions/applications/microsoft/sql/sql-test-drive.html) portal has virtual SQL Server 2022 labs with a full ledger data virtualization guided exercise and more.
+- [Pure Storage](https://www.purestorage.com/products/unstructured-data-storage/flashblade-s.html) Pure FlashBlade. The Pure Storage [SQL Server Test Drive](https://www.purestorage.com/solutions/applications/microsoft/sql/sql-test-drive.html) portal has virtual SQL Server 2022 labs with a full ledger data virtualization guided exercise and more.
 
 Some object storage partners offer the ability to run their solution as software capable of virtualizing your current storage. You can install and try these solutions on your own machine or virtual machine (VM).
 

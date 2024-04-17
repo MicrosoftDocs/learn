@@ -17,7 +17,9 @@ In this unit, you connect to and create an external table from a database in Azu
 
   To connect to another database, you use the PolyBase services. Open SQL Server Configuration Manager and make sure the **SQL Server PolyBase Data Movement** and **SQL Server PolyBase Engine** services are running.
 
-- An Azure SQL database. To create one, see [Quickstart: Create a single database - Azure SQL Database](/azure/azure-sql/database/single-database-create-quickstart). Be sure to select **Use existing data > Sample** under **Additional settings** when you create the database. For this exercise, use the following information:
+- An Azure SQL database. To create one, see [Quickstart: Create a single database - Azure SQL Database](/azure/azure-sql/database/single-database-create-quickstart). Be sure to select **Use existing data > Sample** under **Additional settings** when you create the database.
+
+  For this exercise, use the following information:
 
   - Name of Azure SQL server: `polybaseserver`
   - Name of Azure SQL database: `polybase2022test`

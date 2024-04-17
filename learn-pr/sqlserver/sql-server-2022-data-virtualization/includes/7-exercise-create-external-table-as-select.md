@@ -14,7 +14,8 @@ In this exercise, you:
 
 - A SQL Server 2022 instance with internet connectivity and the **PolyBase Query Service for External Data** feature installed and enabled as in previous units.
 - The [AdventureWorks2022](/sql/samples/adventureworks-install-configure) sample database restored to your server to use for sample data.
-- An Azure Storage account with a Blob Storage container created. To create the storage, see [Quickstart: Upload, download, and list blobs with the Azure portal](/azure/storage/blobs/storage-quickstart-blobs-portal). Name the container `data`, and create a folder within the container called `chapter3`. 
+- An Azure Storage account with a Blob Storage container named `data` created. To create the storage, see [Quickstart: Upload, download, and list blobs with the Azure portal](/azure/storage/blobs/storage-quickstart-blobs-portal).
+- The **Storage Blob Data Contributor** data access role assigned by Azure role-based access control (RBAC). For more information, see [Assign an Azure role for access to blob data](/azure/storage/blobs/assign-azure-role-data-access).
 - A blob container SAS token with **READ**, **WRITE**, **LIST**, and **CREATE** permissions to be used for CETAS. To create the SAS token, see [Create shared access signature (SAS) tokens for your storage containers](/azure/cognitive-services/translator/document-translation/how-to-guides/create-sas-tokens).
 
 ## Use CETAS to export a table as Parquet
@@ -30,7 +31,6 @@ Imagine that you work with a business analytics team that wants to export data o
 1. Execute the following query to understand the data that you want to export. In this case, you're looking for data that's from 2012 or earlier. You want to export all data from 2011 and 2012.
 
     ```sql
-    
     -- RECORDS BY YEARS
     SELECT COUNT(*) AS QTY, DATEPART(YYYY, [DUEDATE]) AS [YEAR]
     FROM  [PURCHASING].[PURCHASEORDERDETAIL] 
@@ -121,14 +121,16 @@ The data is now exported to Parquet and is easily accessible through the externa
 
 ## Use CETAS to move cold data out of the database
 
-To keep the data manageable, your company decides to move data older than 2014 from the SQL Server database. However, all of the data must still be accessible. For this example, you export the data through CETAS and generate several external tables that you can query later. You can use a view with UNION statements to query the data, or create a single external table and use a wildcard to search through the subfolders of the exported data.
+To keep the data manageable, your company decides to move data older than 2014 from the SQL Server database. However, all of the data must still be accessible.
+
+For this example, you export the data through CETAS and generate several external tables that you can query later. You can use a view with UNION statements to query the data, or create a single external table and use a wildcard to search through the subfolders of the exported data.
 
 First, clone the original table, because you want to simulate exporting and removing the data but don't necessarily want to delete the current data source. Run the following statement:
 
-    ```sql
-    -- CLONE TABLE
-    SELECT * INTO [PURCHASING].[PURCHASEORDERDETAIL_2] FROM [PURCHASING].[PURCHASEORDERDETAIL]
-    ```
+```sql
+-- CLONE TABLE
+SELECT * INTO [PURCHASING].[PURCHASEORDERDETAIL_2] FROM [PURCHASING].[PURCHASEORDERDETAIL]
+```
 
 From the previous exercise, you know there are 5551 records from 2014. Everything before 2014 should be exported to a folder identified by year. Data from 2011 goes into a folder called `2011`, and so on. 
 
@@ -224,34 +226,34 @@ You can use a view or a wildcard search to query the exported external data. Eac
 
 ### Use a view to query the data
 
-1. Now that the old data is exported and deleted from the database, you can use T-SQL to create a view that queries all the external tables and the current data in your database.
+Now that the old data is exported and deleted from the database, you can use T-SQL to create a view that queries all the external tables and the current data in your database.
 
-    ```sql
-    CREATE VIEW vw_purchaseorderdetail 
-    AS
-    SELECT * FROM ex_2011
-    UNION ALL
-    SELECT * FROM ex_2012
-    UNION ALL
-    SELECT * FROM ex_2013
-    UNION ALL
-    SELECT * FROM  [PURCHASING].[PURCHASEORDERDETAIL_2] 
-    ```
+```sql
+CREATE VIEW vw_purchaseorderdetail 
+AS
+SELECT * FROM ex_2011
+UNION ALL
+SELECT * FROM ex_2012
+UNION ALL
+SELECT * FROM ex_2013
+UNION ALL
+SELECT * FROM  [PURCHASING].[PURCHASEORDERDETAIL_2] 
+```
 
-1. You can run the data exploration query you used at the beginning of the exercise to see the data distribution, this time using the newly created view, to see the same results.
+You can run the data exploration query you used at the beginning of the exercise to see the data distribution, this time using the newly created view, to see the same results.
 
-    ```sql
-    SELECT  COUNT(*) AS QTY, DATEPART(YYYY, [DUEDATE]) AS [YEAR]
-    FROM vw_purchaseorderdetail 
-    GROUP BY DATEPART(YYYY, [DUEDATE])
-    ORDER BY [YEAR]
-    ```
+```sql
+SELECT  COUNT(*) AS QTY, DATEPART(YYYY, [DUEDATE]) AS [YEAR]
+FROM vw_purchaseorderdetail 
+GROUP BY DATEPART(YYYY, [DUEDATE])
+ORDER BY [YEAR]
+```
 
 ### Use a wildcard search to query the data
 
 In the preceding example, you used a view with UNION statements to join the three external tables. Another way to achieve the desired results is to use a wildcard search to scan the folder structure, including subfolders for any data from a particular type.
 
-The following T-SQL example allows OPENROWSET to search across the `ABS_Data` data source for Parquet files, including its subfolders.
+The following T-SQL example allows OPENROWSET to search across the `ABS_Data` data source, including its subfolders, for Parquet files.
 
 ```sql
 SELECT COUNT(*) AS QTY, DATEPART(YYYY, [DUEDATE]) AS [YEAR]
@@ -301,7 +303,7 @@ WHERE
 
 The end result is the same, but by using the folder elimination metadata, your query accesses only the required folders instead of scanning the entire data source, producing better query performance. Keep this information in mind to help design your own storage architecture to better leverage capabilities. For example, here's a sample folder architecture:
 
-:::image type="content" source="../media/folder-elimination-architecture.png" alt-text="Screenshot showing a folder architecture example in a storage container.":::
+:::image type="content" source="../media/folder-elimination-architecture.png" alt-text="Screenshot showing a folder architecture example in a storage container." border="false":::
 
 This is what your query would look like:
 
