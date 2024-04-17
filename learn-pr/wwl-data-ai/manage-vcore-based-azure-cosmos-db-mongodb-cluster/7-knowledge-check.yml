@@ -11,6 +11,7 @@ metadata:
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
+content: |
 quiz:
   title: "Check your knowledge"
   questions:
