@@ -47,7 +47,7 @@ The full list of parameters for the `database create` command is shown in the fo
 | Option | Required Usage |
 |---|---|
 |`<database>` | Specify the name and location of a directory to create for the CodeQL database. The command will fail if you try to overwrite an existing directory. If you also specify `--db-cluster`, this is the parent directory, and a subdirectory is created for each language analyzed. |
-| `--language` | Specify the identifier for the language to create a database for, one of: `cpp`, `csharp`, `go`, `java`, `javascript`, `python`, and `ruby` (use Javascript to analyze TypeScript code). When used with `--db-cluster`, the option accepts a comma-separated list, or can be specified more than once. |
+| `--language` | Specify the identifier for the language to create a database for, one of: `cpp`, `csharp`, `go`, `java`, `javascript`, `python`, and `ruby` (use JavaScript to analyze TypeScript code). When used with `--db-cluster`, the option accepts a comma-separated list, or can be specified more than once. |
 | `--command` | Recommended. Use to specify the build command or script that invokes the build process for the codebase. Commands are run from the current folder or, where it is defined, from `--source-root`. Not needed for Python and JavaScript/TypeScript analysis. |
 | `--db-cluster` | Optional. Use in multi-language codebases to generate one database for each language specified by `--language`.|
 | `--no-run-unnecessary-builds`	| Recommended. Use to suppress the build command for languages where the CodeQL CLI does not need to monitor the build (for example, Python and JavaScript/TypeScript).|
