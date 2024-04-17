@@ -24,6 +24,7 @@ roles:
 products:
 - azure-cosmos-db
 subjects:
+- artificial-intelligence
 - databases
 units:
 - learn.wwl.build-your-own-ai-copilot-vcore-based-azure-cosmos-db-mongodb.introduction
