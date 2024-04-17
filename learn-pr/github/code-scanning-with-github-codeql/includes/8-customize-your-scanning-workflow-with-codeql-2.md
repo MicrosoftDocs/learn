@@ -122,7 +122,7 @@ query-filters:
   - exclude:
       id: js/useless-assignment-to-local
 ```
-To find the id of a query, you can click the alert in the list of alerts in the Security tab. This opens the alert details page. The Rule ID field contains the query id.
+To find the ID of a query, you can click the alert in the list of alerts in the Security tab. This opens the alert details page. The Rule ID field contains the query ID.
 
 Things to keep in mind when working with the `excludes` filter:
 * The order of the filters is important. The first filter instruction that appears after the instructions about the queries and query packs determines whether the queries are included or excluded by default.
