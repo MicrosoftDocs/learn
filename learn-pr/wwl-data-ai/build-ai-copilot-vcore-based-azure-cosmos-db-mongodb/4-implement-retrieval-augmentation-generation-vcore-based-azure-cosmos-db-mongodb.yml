@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-your-own-ai-copilot-vcore-based-azure-cosmos-db-mongodb.implement-retrieval-augmentation-generation-vcore-based-azure-cosmos-db-mongodb
-title: Implement retrieval augmentation generation using vector indexes in vCore-based Azure Cosmos DB for MongoDB
+title: Implement Retrieval Augmentation Generation using vector indexes in vCore-based Azure Cosmos DB for MongoDB
 metadata:
-  title: Implement retrieval augmentation generation using vector indexes in vCore-based Azure Cosmos DB for MongoDB
+  title: Implement Retrieval Augmentation Generation using vector indexes in vCore-based Azure Cosmos DB for MongoDB
   description: "Implement retrieval augmentation generation using vector indexes in vCore-based Azure Cosmos DB for MongoDB."
   ms.date: 04/13/2024
   author: wwlpublish
