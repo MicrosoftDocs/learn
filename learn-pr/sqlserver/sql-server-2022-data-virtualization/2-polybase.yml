@@ -23,7 +23,7 @@ quiz:
       explanation: "Object storage is recommended for Big Data, Internet of Things (IoT), Analytics, AI and Machine Learning workloads, not high transactional workloads."
     - content: "False"
       isCorrect: true
-      explanation: "Object storage architecture was designed to leverage Big Data, Internet of Things (IoT), Analytics, AI and Machine Learning workloads, not transactional or online transaction processing (OLTP)." workloads."
+      explanation: "Object storage architecture was designed to leverage Big Data, Internet of Things (IoT), Analytics, AI, and Machine Learning workloads, not transactional or OLTP processing."
   - content: "To run the PolyBase feature, you need to install and enable the **PolyBase Query Service for External Data** option."
     choices: 
     - content: "True"
