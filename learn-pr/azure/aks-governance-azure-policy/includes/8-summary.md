@@ -1,6 +1,6 @@
 At the beginning of this module, you needed to block new deployments from untrusted registries to your Azure Kubernetes cluster, and present a report of the status of your cluster against that Policy.
 
-In this module, you learned how Azure Policy for Kubernetes can be used to achieve this goal. You created an Azure Kubernetes Service (AKS) cluster with the Azure Policy add-on enabled. After that, you assigned a Policy to that cluster to prevent pulling from a nonauthorized container registry. You attempted to create a deployment that didn't comply with this new Policy and found out that it failed. You also took steps to diagnose why that happened. You also assigned an initiative, which is a group of policies to the same cluster. Finally, you were able to show the compliance state of your cluster against these policies and took steps to bring it back to a compliant state for one of the policies.
+In this module, you learned how Azure Policy for Kubernetes can be used to achieve this goal. You created an Azure Kubernetes Service (AKS) cluster with the Azure Policy add-on enabled. After that, you assigned a Policy to that cluster to prevent pulling from a nonauthorized container registry. You attempted to create a deployment that didn't comply with this new Policy and found out that it failed. You took steps to diagnose why the failure happened. You also assigned an initiative, which is a group of policies to the same cluster. Finally, you were able to show the compliance state of your cluster against these policies and took steps to bring it back to a compliant state for one of the policies.
 
 Without this solution, your team would be wasting time by manually creating company policies, asking coworkers not to do certain things and potentially opening your clusters to security and operational issues. In the end, you saved the company thousands of dollars in time by automating that manual work using Azure policies for AKS.
 
@@ -17,7 +17,7 @@ In this module, you created resources by using your Azure subscription. The foll
 
 1. In the left menu, select **Resource groups**.
 
-1. Select the resource group name that starts with **videogamerg** or the resource group name you used.
+1. Select the resource group name starting with **videogamerg** or the resource group name you used.
 
 1. On the **Overview** tab, select **Delete resource group**.
 
