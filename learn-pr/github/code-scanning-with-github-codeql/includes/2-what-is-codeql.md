@@ -2,7 +2,7 @@ CodeQL is the analysis engine used by developers to automate security checks, an
 
 In CodeQL, code is treated like data. Security vulnerabilities, bugs, and other errors are modeled as queries that can be executed against databases extracted from code. You can run the standard CodeQL queries, written by GitHub researchers and community contributors, or write your own to use in custom analyses. Queries that find potential bugs highlight the result directly in the source file.
 
-In this unit, you'Ll learn about the CodeQL static analysis tool and how it uses databases, query suites, and query language packs to perform variant analysis.
+In this unit, you'll learn about the CodeQL static analysis tool and how it uses databases, query suites, and query language packs to perform variant analysis.
 
 ## Variant analysis
 
