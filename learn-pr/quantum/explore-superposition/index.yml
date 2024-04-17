@@ -27,7 +27,7 @@ prerequisites: |
   - Basic knowledge of linear algebra and complex numbers.
   - The latest version of [Visual Studio Code](https://code.visualstudio.com/download) or open [VS Code on the Web](https://vscode.dev/).
   - The latest version of the [Azure Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) extension.
-iconUrl: ../../achievements/quantum/explore-superposition.svg
+iconUrl: /training/achievements/quantum/explore-superposition.svg
 ratingEnabled: true
 levels:
 - beginner
