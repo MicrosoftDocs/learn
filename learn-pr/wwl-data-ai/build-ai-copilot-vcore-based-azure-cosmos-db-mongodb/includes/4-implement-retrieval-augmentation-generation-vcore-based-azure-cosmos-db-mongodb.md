@@ -100,9 +100,9 @@ The vector search result returns the most similar items based on the query vecto
 
 ## Integrate Azure OpenAI
 
-While the vector search results provide relevant items, you can further enhance the user experience by integrating Azure OpenAI to generate detailed responses based on the search results. Azure OpenAI's advanced AI models can provide context-aware responses that complement the search results.
+While the vector search results provide relevant items, you can further enhance the user experience by integrating Azure OpenAI to generate detailed responses based on the vector search results. Azure OpenAI's advanced AI models can provide context-aware responses that complement the vector search results.
 
-So what do we need to do to integrate Azure OpenAI with the vector search results? First, let's create a structured prompt that Azure OpenAI can use to generate detailed responses based on the search results. The structured prompt combines the following elements:
+So what do we need to do to integrate Azure OpenAI with the vector search results? First, let's create a structured prompt that Azure OpenAI can use to generate detailed responses based on the vector search results. The structured prompt combines the following elements:
 
 - **The original query you used in your vector search** - For example, *What type of bikes do you sell?*
 - **User-defined system prompt** - The system prompt provides a clear job description, detailing the tasks the AI is expected to handle, for example, it could define its role as a helper at *Adventure Works Bike Shop*. It outlines how the AI should respond to questions, making sure all answers are relevant and returned in an easy-to-follow format. The system prompt could have the following components:
@@ -111,9 +111,9 @@ So what do we need to do to integrate Azure OpenAI with the vector search result
   - *Limiting AI Interaction responses*: The prompt could include a list of topics the AI should be able to discuss, like bike types, prices, and availability. This list grounds and ensures the AI stays on topic and provides relevant information.
   - *Handling Uncertainty*: The prompt lets the AI know how to handle situations where it might not have enough information to provide an answer. The AI could suggest phrases like "I don't know" or encourage users to conduct their own research. This section can help the AI better manage uncertainty situations.
   - *Other Instructions*: The prompt could include other instructions, like how to provide other resources to users or how to handle inappropriate questions. So, anything else that you want the AI to do, you should include in the system prompt. These instructions help the AI provide a consistent and helpful experience for users.
-- **The vector search results**: The search results provide the most similar items in your data based on the query vector. Since the results returned are the whole documents themselves, you should choose the most relevant *fields* to include in the prompt, like perhaps the *category* or the *description* of the bike. The AI can use this information to generate detailed responses based on the search results. For example, if the search results return *Mountain Bikes* and *Road Bikes*, the AI can provide detailed information about these types of bikes.
+- **The vector search results**: The vector search results provide the most similar items in your data based on the query vector. Since the vector search results returned are the whole documents themselves, you should choose the most relevant *fields* to include in the prompt, like perhaps the *category* or the *description* of the bike. The AI can use this information to generate detailed responses based on the vector search results. For example, if the vector search results return *Mountain Bikes* and *Road Bikes*, the AI can provide detailed information about these types of bikes.
 
-There are many programmatic ways to generate the prompt. The key is to structure it in a way that provides clear instructions to the AI on how to generate responses based on the search results. We visit one such method in the module's exercise.
+There are many programmatic ways to generate the prompt. The key is to structure it in a way that provides clear instructions to the AI on how to generate responses based on the vector search results. We visit one such method in the module's exercise.
 
 Once you defined your structured prompt, you can use the following code snippets to generate responses using Azure OpenAI:
 
