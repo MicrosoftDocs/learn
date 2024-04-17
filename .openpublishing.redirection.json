@@ -36265,6 +36265,46 @@
       "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/6-container-security-microsoft-defender-containers.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/5-container-security-microsoft-defender-containers",
       "redirect_document_id": false
-    }
+    },		
+    {
+      "source_path": "learn-pr/commercial-marketplace/simplify-cloud-procurement-governance-azure-marketplace/index.yml",
+      "redirect_url": "https://learn.microsoft.com/marketplace/governance-control-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/commercial-marketplace/simplify-cloud-procurement-governance-azure-marketplace/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/marketplace/governance-control-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/commercial-marketplace/simplify-cloud-procurement-governance-azure-marketplace/2-find-try-software-azure-marketplace.yml",
+      "redirect_url": "https://learn.microsoft.com/marketplace/governance-control-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/commercial-marketplace/simplify-cloud-procurement-governance-azure-marketplace/3-buy-software-azure-marketplace.yml",
+      "redirect_url": "https://learn.microsoft.com/marketplace/governance-control-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/commercial-marketplace/simplify-cloud-procurement-governance-azure-marketplace/4-manage-software-procurement-azure-marketplace.yml",
+      "redirect_url": "https://learn.microsoft.com/marketplace/governance-control-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/commercial-marketplace/simplify-cloud-procurement-governance-azure-marketplace/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/marketplace/governance-control-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/commercial-marketplace/simplify-cloud-procurement-governance-azure-marketplace/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/marketplace/governance-control-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.simplify-cloud-procurement-governance-azure-marketplace.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/marketplace/governance-control-faq",
+      "redirect_document_id": false
+    }  
   ]
 }
