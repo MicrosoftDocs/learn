@@ -14,7 +14,7 @@ To set up code scanning with the advanced setup, do the following:
 2. In the left hand panel, navigate to **Code security and analysis**, click the **setup** dropdown and select **Advanced**. You may need to enable GitHub Advanced Security before enabling code scanning.
 3. You'll be taken to a new page with a generated workflow file. This file is by default named `codeql.yml` and is a configurable workflow file that needs to be committed to your repository in order to begin running code scanning.
 4. To customize how code scanning scans your code, edit the workflow. Generally you can commit the CodeQL analysis workflow without making any changes to it.
-5. Use the **Commit changes...** button in the upper right hand corner and type a commit message in the pop up box.
+5. Use the **Commit changes...** button in the upper right hand corner and type a commit message in the pop-up box.
 6. Choose whether you'd like to commit directly to the default branch or create a new branch and start a pull request.
 7. Click **Commit changes**.
 
