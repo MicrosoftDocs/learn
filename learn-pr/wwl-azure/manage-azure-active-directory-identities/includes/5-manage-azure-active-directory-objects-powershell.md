@@ -1,6 +1,6 @@
 You can also manage users, groups, and devices by using the Microsoft Graph PowerShell SDK. This approach uses the unified Microsoft Graph API, providing a comprehensive and efficient way to automate management tasks across Microsoft 365 services. PowerShell 7 and later is the recommended PowerShell version for use with the Microsoft Graph PowerShell SDK on all platforms. There are no more prerequisites to use the SDK with PowerShell 7 or later.  For more information, see [Install the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation?view=graph-powershell-1.0)
 
-Before you begin, ensure you have the following:
+Before you begin, ensure you have the following requirement:
 
  - **Operating system** A Windows 10 or later, or a supported version of Windows Server.
  - **PowerShell**. You must have PowerShell 5.1 or newer, or PowerShell Core.
