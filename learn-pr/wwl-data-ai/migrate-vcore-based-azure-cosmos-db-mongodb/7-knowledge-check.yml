@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-vcore-based-azure-cosmos-db-mongodb.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/08/2024
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Why is it important to assess your MongoDB instance before migration?"
+    choices:
+    - content: "To identify any potential compatibility issues that could affect migration."
+      isCorrect: true
+      explanation: "Correct. Assessing identifies compatibility issues for a smoother migration process."
+    - content: "To improve the MongoDB instance's performance."
+      isCorrect: false
+      explanation: "Incorrect. While performance may improve, the assessment's purpose is to identify compatibility issues."
+    - content: "To document the MongoDB instance's schema only."
+      isCorrect: false
+      explanation: "Incorrect. Documentation is part of the process, but the main goal is to identify compatibility issues."
+  - content: "Which tool is preferred for large datasets when migrating to vCore-based Azure Cosmos DB for MongoDB using MongoDB native tools?"
+    choices:
+    - content: "mongoexport/mongoimport."
+      isCorrect: false
+      explanation: "Incorrect. These tools are more suited for smaller datasets."
+    - content: "mongodump/mongorestore."
+      isCorrect: true
+      explanation: "Correct. These tools are efficient for handling large datasets and comprehensive migrations."
+    - content: "MongoDB Atlas."
+      isCorrect: false
+      explanation: "Incorrect. MongoDB Atlas is a database service, not a migration tool."
+  - content: "What is the first step in the premigration process for moving to vCore-based Azure Cosmos DB for MongoDB?"
+    choices:
+    - content: "Premigration logistics planning."
+      isCorrect: false
+      explanation: "Incorrect. Logistics planning is important, but it comes after initial discovery and assessment."
+    - content: "Capacity planning."
+      isCorrect: false
+      explanation: "Incorrect. Capacity planning is crucial but not the first step in pre-migration."
+    - content: "Premigration discovery."
+      isCorrect: true
+      explanation: "Correct. Discovering your existing MongoDB resources is the first step in the pre-migration process."
+  - content: "How can you optimize migration performance with Azure Databricks?"
+    choices:
+    - content: "By minimizing the code complexity in notebooks."
+      isCorrect: false
+      explanation: "Incorrect. While code efficiency is important, performance optimization is more about resource allocation and settings."
+    - content: "By adjusting the number of workers and maxBatchSize based on throughput needs."
+      isCorrect: true
+      explanation: "Correct. These adjustments directly impact the efficiency of data migration."
+    - content: "Limiting the use of Spark SQL."
+      isCorrect: false
+      explanation: "Incorrect. The use of Spark SQL isn't the primary method of optimization for migration performance."
