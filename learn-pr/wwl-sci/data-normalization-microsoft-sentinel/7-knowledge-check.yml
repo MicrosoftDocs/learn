@@ -42,10 +42,10 @@ quiz:
     choices:
     - content: "createdon"
       isCorrect: false
-      explanation: "Incorrect.  starttime and enttime parameters are the supported filtering parameters."
+      explanation: "Incorrect.  starttime and endtime parameters are the supported filtering parameters."
     - content: "ingestiontime"
       isCorrect: false
-      explanation: "Incorrect.  starttime and enttime parameters are the supported filtering parameters."
+      explanation: "Incorrect.  starttime and endtime parameters are the supported filtering parameters."
     - content: "starttime"
       isCorrect: true
-      explanation: "Correct. starttime and enttime parameters are the supported filtering parameters."
+      explanation: "Correct. starttime and endtime parameters are the supported filtering parameters."
