@@ -10,13 +10,6 @@ Even in *operational* mode, you could still receive new alerts, and must check a
 
 Over time, Defender for IoT learns to identify suspicious traffic, so that most of the alerts are accurate and don't need triaging. Defender for IoT then automatically switches from *learning* mode to *operational* mode. However, you can turn off *learning* mode manually at any time, if you think the level of alerts drops to an acceptable level.
 
-In the Sensor:
-
-1. Select **System settings**.
-1. Select **Detection Engines and Network Modeling**.
-1. Under **Network modeling**, toggle the **Learning** button to **Enabled**.
-1. Select **Close**.
-
 After this change, any new devices or unrecognized network traffic trigger an alert, which is assessed like other alerts.
 
 ## Operational mode
@@ -25,8 +18,4 @@ When the sensor is in *learning* mode, all devices detected are identified as *a
 
 Even after *learning* mode is turned off, and *operational* mode starts traffic can be tracked. Activating the *Smart IT Learning*, found under **Network modeling**, makes Defender for IoT send alerts when new suspicious traffic is tracked.
 
-## Check your work
 
-The **System settings** shows that *learning* mode is enabled.
-
-Once the operational mode is enabled your deployment of the OT sensor to Defender for IoT is complete.

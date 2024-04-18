@@ -2,23 +2,21 @@ Your sensor can now send data to Microsoft Defender for IoT, but you need to mak
 
 Once these checks are complete, you have a full and accurate list of devices that are set up correctly and can now securely process data.
 
+When your sensor is fine tuned and almost fully operational, the final stage is to create a baseline of alerts so that Microsoft Defender for IoT understands the normal type of traffic flow through your system. Then, Defender for IoT is able to identify which traffic is most dangerous or suspicious and produces accurate alerts. Creating the baseline is called the learning stage, as based on your triaging of the alerts, Defender for IoT learns which alerts are regular, safe network traffic. This learning stage can take a week or two, depending on the size of your system, as you define which alerts Defender for IoT should flag.
+
 ## OT sensor deployment path
 
 The following diagram shows the complete Operational Technology (OT) deployment path, with the team responsible for each phase:
 
 :::image type="content" source="../media/2-ot-deploy.png" alt-text="Diagram of the complete OT deployment process." border="false":::
 
-This learn module is divided into two sections.
+This learn module is covers the last two phases of the OT sensor deployment path.
 
-Section 1 describes the fifth phase in the deployment, *Calibrate and fine-tune*, and deals with calibrating and fine-tuning your sensor. It includes these units:
+- *Calibrate and fine-tune* deals with calibrating and fine-tuning your sensor. 
 
-- Unit 2 describes the general overview of the calibration and fine tuning phase of the sensor deployment.
-- Unit 3 describes the information and preparations you need to complete the exercise unit.
-- Unit 4 is the exercise unit to practice the calibration and fine tuning activities.
+- *Baseline learning* covers triaging the alerts and how the sensor changes from learning to operational mode.
 
-Section 2 describes the sixth phase in the deployment, *Baseline learning*, and deals with triaging the alerts.
-
-## In this phase
+## In this phase: calibrate and fine tune 
 
 In a real-life scenario, the deployment and connectivity teams ensure that the sensor is already onboarded, activated, and sending data to Defender for IoT.
 
@@ -34,6 +32,26 @@ Now that all of the devices are properly connected to Defender for IoT, you must
 
 If the settings aren't corrected, false alerts are sent that could leave other vulnerabilities on your devices, compromising your most critical assets. Devices are also set to different safety or importance levels, which affect attack vector and risk assessment reports.
 
-## Outcome
+### Outcome
 
 Once these steps are completed, Defender for IoT is set up to monitor all of the devices and pass the data to the Azure portal. Defender for IoT now has an accurate list of all the sensors, devices, and their subnets. As well as the correct status for each one so that they're tracked for vulnerabilities and compromises. The device list now matches the original network diagram produced in the deployment planning phase.
+
+## In this phase: baseline learning
+
+When the sensor first connects to Defender for IoT it enters *learning* mode where the sensor learns the difference between suspicious, harmful network traffic and safe traffic, including regular file transfers or data flows between devices. So that when this suspicious network traffic is identified in the future, alerts are sent to Defender for IoT, and you're able to protect your devices.
+
+In a real life scenario, the *learning* mode can continue for up to two weeks, and requires regularly, daily triage of the alerts.
+
+As the sensor monitors your network, it identifies traffic or file transfers that it knows could signal harmful activity. Alerts are based on categories of activity, and are also given a severity rating based on the possible threat it could lead to. You need to check these alerts and confirm if they're correct or not, this is called the triage process.  
+
+### Triage alerts
+
+Check each of the details of the new alerts listed in Defender for IoT. When you find an alert that is incorrect select the *learn* setting so that the sensor understands that this type of network traffic is safe. This specific alert configuration will be added to the baseline of normal network traffic and won't produce an alert in the future.
+
+The alert details pane has an **Actions taken** tab where the **Learn** setting button is. It also lists other options and solutions for dealing with the alert, especially in a situation where harmful traffic generates the alert.
+
+You might also want to assign a suppression alert to exclude minor level alerts so that only important and severe level alerts appear on the **Alerts** page.
+
+### Outcome
+
+When you complete the triage process, the **Alerts** page shows the updated status of the alerts. The sensor now has a verified baseline of alerts that are considered safe and secure and won't trigger them. This process is repeated until you see that most of the alerts are important ones, and not generated by normal system traffic.
