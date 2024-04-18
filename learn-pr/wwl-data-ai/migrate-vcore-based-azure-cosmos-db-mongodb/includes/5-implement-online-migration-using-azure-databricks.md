@@ -1,4 +1,4 @@
-In this unit, you learn how using Azure Databricks offers a practical solution for migrating large-scale MongoDB datasets to vCore-based Azure Cosmos DB for MongoDB. It allows for detailed control over the migration pace and data transformations, effectively handling very large datasets.
+Azure Databricks simplifies moving big MongoDB datasets to vCore-based Azure Cosmos DB for MongoDB, making the transfer of complex data more straightforward. It allows for detailed control over the migration pace and data transformations, effectively handling very large datasets.
 
 ## Why use Azure Databricks?
 
