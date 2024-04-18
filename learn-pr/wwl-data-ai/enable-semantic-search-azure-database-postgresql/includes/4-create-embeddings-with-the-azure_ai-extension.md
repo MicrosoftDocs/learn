@@ -1,12 +1,12 @@
 Recall that to run a semantic search, we need to compare the query embedding with the embeddings of the items being searched. The `azure_ai` extension for Azure Database for PostgreSQL Flexible Server integrates with Azure OpenAI to generate embedding vectors.
 
-(diagram showing vectors from OpenAI into a vector DB)
+(Diagram showing vectors from OpenAI into a vector database)
 
 DIAGRAM:
 
 - Input text to the azure_ai.create_embeddings API
 - Azure OpenAI logo
-- Vector from OpenAI into the DB vector column
+- Vector from OpenAI into the database vector column
 
 ## Introduction to `azure_ai` and Azure OpenAI
 
@@ -16,7 +16,7 @@ The [Azure OpenAI Embeddings API](/azure/ai-services/openai/reference#embeddings
 
 ## Using the `azure_ai` extension with Azure OpenAI
 
-To call the Azure OpenAI Embeddings API from PostgreSQL, you need to enable & configure the `azure_ai` extension, grant access to Azure OpenAI, and deploy an Azure OpenAI model. Please see the [Azure OpenAI on Azure Database for PostgreSQL Flexible Server documentaiton](/azure/postgresql/flexible-server/generative-ai-azure-openai) for more information.
+To call the Azure OpenAI Embeddings API from PostgreSQL, you need to enable & configure the `azure_ai` extension, grant access to Azure OpenAI, and deploy an Azure OpenAI model. For more information, see the [Azure OpenAI on Azure Database for PostgreSQL Flexible Server documentation](/azure/postgresql/flexible-server/generative-ai-azure-openai).
 
 Once the environment is ready and the extension is allow-listed, run this SQL:
 
@@ -25,14 +25,14 @@ Once the environment is ready and the extension is allow-listed, run this SQL:
 CREATE EXTENSION azure_ai;
 ```
 
-Once `azure_ai` and Azure OpenAI are configured, fetching and storing embeddings is a simple matter of calling a function in the SQL query. Assuming a table `listings` with a `description` column and a `listing_vector` colum, you can generate and store the embedding for all listings with the following query. Replace `{your-deployment-name}` with the **Deployment name** from the Azure OpenAI Studio for the model you created.
+Once `azure_ai` and Azure OpenAI are configured, fetching and storing embeddings is a simple matter of calling a function in the SQL query. Assuming a table `listings` with a `description` column and a `listing_vector` column, you can generate and store the embedding for all listings with the following query. Replace `{your-deployment-name}` with the **Deployment name** from the Azure OpenAI Studio for the model you created.
 
 ```sql
 UPDATE listings
 SET listing_vector = azure_openai.create_embeddings('{your-deployment-name}', description);
 ```
 
-Note that the `listing_vector` vector column must have the same number of dimensions as produced by the language model.
+The `listing_vector` vector column must have the same number of dimensions as produced by the language model.
 
 To see a document embedding, run the following query:
 
@@ -46,7 +46,7 @@ The result is a vector of floating point numbers. You can run `\x` first to make
 
 Once you have embeddings for the documents to search, you can run a semantic search query. To do so, you need to generate an embedding for the query text as well.
 
-The `azure_openai` schema of the `azure_ai` extension lets you generate embeddings within SQL. For example, to find the top 3 listings whose text is most semantically similar to the query "Find me places in a walkable neighborhood", run the following SQL:
+The `azure_openai` schema of the `azure_ai` extension lets you generate embeddings within SQL. For example, to find the top three listings whose text is most semantically similar to the query "Find me places in a walkable neighborhood," run the following SQL:
 
 ```sql
 SELECT id, description FROM listings
@@ -58,4 +58,4 @@ The `<=>` operator calculates the *cosine distance* between the two vectors, the
 
 The `::vector` operator converts the generated embeddings to PostgreSQL vector arrays.
 
-The query returns the top 3 listing IDs and descriptions, ranked from less to more different (more to less similar).
+The query returns the top three listing IDs and descriptions, ranked from less to more different (more to less similar).

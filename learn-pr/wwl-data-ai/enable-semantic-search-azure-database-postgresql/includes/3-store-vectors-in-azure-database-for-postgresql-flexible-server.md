@@ -1,10 +1,10 @@
-Recall that to run a semantic search, we need embedding vectors stored in a vector database. Azure Database for PostgreSQL Flexible Server may be used as a vector database with the `pgvector` extension.
+Recall that to run a semantic search, we need embedding vectors stored in a vector database. Azure Database for PostgreSQL Flexible Server can be used as a vector database with the `pgvector` extension.
 
 DIAGRAM:
 
 - Show an Azure Database for PostgreSQL flexible server
 - Show a `pgvector` extension icon alongside it
-- Show 2 vector column examples `[1,2,3]`, `[4,5,6]`
+- Show two vector column examples `[1,2,3]`, `[4,5,6]`
 
 ## Introduction to `pgvector`
 
@@ -42,7 +42,7 @@ Once you have some vector data, you can see it alongside normal table data:
 (3 rows)
 ```
 
-The `pgvector` extension supports several languages, such as [.NET](https://github.com/pgvector/pgvector-dotnet), [Python](https://github.com/pgvector/pgvector-python), [Java](https://github.com/pgvector/pgvector-java), and many others. See their [Github repositories](https://github.com/orgs/pgvector/repositories?type=all) for more.
+The `pgvector` extension supports several languages, such as [.NET](https://github.com/pgvector/pgvector-dotnet), [Python](https://github.com/pgvector/pgvector-python), [Java](https://github.com/pgvector/pgvector-java), and many others. See their [GitHub repositories](https://github.com/orgs/pgvector/repositories?type=all) for more.
 
 To insert a document with vector `[1, 2, 3]` using Npgsql in C#, run code like this:
 
@@ -58,19 +58,19 @@ await using (var cmd = new NpgsqlCommand(sql, conn))
 
 ## Insert and update vectors
 
-Once a table has a vector column, rows may be added with vector values as above.
+Once a table has a vector column, rows can be added with vector values as previously noted.
 
 ```sql
 INSERT INTO documents (embedding) VALUES ('[1,2,3]');
 ```
 
-You may also load vectors in bulk using the `COPY` statement (see [full example](https://github.com/pgvector/pgvector-python/blob/master/examples/bulk_loading.py) in Python):
+You can also load vectors in bulk using the `COPY` statement (see [full example](https://github.com/pgvector/pgvector-python/blob/master/examples/bulk_loading.py) in Python):
 
 ```sql
 COPY documents (embedding) FROM STDIN WITH (FORMAT BINARY);
 ```
 
-Vector columns may be updated like normal columns:
+Vector columns can be updated like normal columns:
 
 ```sql
 UPDATE documents SET embedding = '[1,1,1]' where id = 1;
@@ -80,11 +80,11 @@ UPDATE documents SET embedding = '[1,1,1]' where id = 1;
 
 The `pgvector` extension provides the `v1 <=> v2` operator to calculate the cosine distance between vectors `v1` and `v2`. The result is a number between 0 and 2, where 0 means "semantically identical" (no distance) and 2 means "semantically opposite" (maximum distance).
 
-You may see the terms cosine **distance** and **similarity**. Recall that cosine similarity is a number between -1 and 1, where -1 means "semantically opposite" and 1 means "semantically identical". Note that `similarity = 1 - distance`.
+You can see the terms cosine **distance** and **similarity**. Recall that cosine similarity is a number between -1 and 1, where -1 means "semantically opposite" and 1 means "semantically identical." Note that `similarity = 1 - distance`.
 
-The upshot is that a query ordered by distance ascending will return the least distant (most similar) results first. A query ordered by similarity descending will return the most similar (least distant) first.
+The upshot is that a query ordered by distance ascending returns the least distant (most similar) results first. A query ordered by similarity descending returns the most similar (least distant) first.
 
-Here are some vectors and their distances and similarities to illustrate the concepts. You can compute this yourself by running something like:
+Here are some vectors and their distances and similarities to illustrate the concepts. You can compute this calculation yourself by running something like:
 
 ```sql
 SELECT '[1,1]' <=> '[-1,-1]';
@@ -102,7 +102,7 @@ Their similarities and distances are:
 | `[1, 1]` | `[-1, -1]` | 2        | -1         |
 | `[1, 0]` | `[0, 1]`   | 1        | 0          |
 
-To get the documents in order of closeness to the vector `[2, 3, 4]` run this query:
+To get the documents in order of closeness to the vector `[2, 3, 4]`, run this query:
 
 ```sql
 SELECT

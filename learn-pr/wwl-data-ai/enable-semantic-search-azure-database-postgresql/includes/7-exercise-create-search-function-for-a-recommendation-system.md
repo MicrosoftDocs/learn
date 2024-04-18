@@ -1,4 +1,4 @@
-Now, let's wrap the vector embedding logic and API calls in a function. hands-on with semantic search. In this exercise, you will install the `vector` and `azure_ai` extensions in an Azure Database for PostgreSQL flexible server, and explore the extension's capabilities for integrating [Azure OpenAI](/azure/ai-services/openai/overview) into your database.
+Now, let's wrap the vector embedding logic and API calls in a function. Hands-on with semantic search. In this exercise, you install the `vector` and `azure_ai` extensions in an Azure Database for PostgreSQL flexible server, and explore the extension's capabilities for integrating [Azure OpenAI](/azure/ai-services/openai/overview) into your database.
 
 > [!Note] 
 >
