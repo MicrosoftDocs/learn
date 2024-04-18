@@ -2,11 +2,12 @@
 uid: learn.wwl.design-processes-to-automate-application-analytics
 metadata:
   title: Design processes to automate application analytics
-  description: "Design processes to automate application analytics"
+  description: Design processes to automate application analytics
   ms.date: 03/02/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: module
+  ms.service: azure
 title: Design processes to automate application analytics
 summary: This module helps designing process to Application Insights, explores telemetry and monitoring tools and technologies.
 abstract: |

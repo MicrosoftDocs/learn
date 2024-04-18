@@ -109,7 +109,7 @@ This is a privileged role. Users in this role can create application registratio
 | microsoft.directory/oAuth2PermissionGrants/createAsOwner | Create OAuth 2.0 permission grants, with creator as the first owner<br>\[**PRIVILEGED**\] |
 | microsoft.directory/servicePrincipals/createAsOwner      | Create service principals, with creator as the first owner                                |
 
-## **Attribute Assignment Administrator**
+## Attribute Assignment Administrator
 
 Users with this role can assign and remove custom security attribute keys and values for supported Microsoft Entra objects such as users, service principals, and devices.
 

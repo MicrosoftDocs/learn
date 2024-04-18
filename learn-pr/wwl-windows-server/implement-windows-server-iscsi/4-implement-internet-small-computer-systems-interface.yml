@@ -4,12 +4,12 @@ title: Implement iSCSI
 metadata:
   title: Implement iSCSI
   description: "Implement iSCSI"
-  ms.date: 10/10/2023
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 15
 content: |
   [!include[](includes/4-implement-internet-small-computer-systems-interface.md)]

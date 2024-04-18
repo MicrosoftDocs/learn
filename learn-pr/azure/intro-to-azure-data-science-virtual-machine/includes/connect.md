@@ -10,9 +10,9 @@ To connect to a Windows DSVM with Remote Desktop:
 
 1. Go back to the DSVM in the Azure portal.
 
-1. Select **Connect** > **RDP**.
+1. Select **Connect**
 
-1. Select **Download RDP File**.
+1. At the **Native RDP** option, select **Download RDP File**.
 
 1. Open the file in Microsoft Remote Desktop to connect.
 
@@ -20,15 +20,15 @@ To connect to a Windows DSVM with Remote Desktop:
 
 ## Connect to the command line by using SSH
 
-To access the command line of your DSVM, you use:
+To access the command line of your DSVM, use:
 
-- An SSH client running in a terminal on your local machine.
-- The username and password that you specified during creation.
-- The public IP address of the running Data Science Virtual Machine.
+- An SSH client that runs in a terminal on your local machine
+- The username and password that you specified during creation of the DSVM
+- The public IP address of the operational Data Science Virtual Machine
 
 ### Install an SSH client on Windows, if necessary
 
-If you're running Linux or macOS, an SSH client is part of the OS standard utilities. If you're running Windows, you might not have an SSH client already installed on your machine. Open a PowerShell console with administrative rights and see if you have the client installed:
+If you run Linux or macOS, an SSH client is part of the OS standard utilities. If you run Windows, you might not have an SSH client available on your machine. Open a PowerShell console with administrative rights, and see if you have the client installed:
 
 ```powershell
 Get-WindowsCapability -Online | ? Name -like 'OpenSSH*'
@@ -49,10 +49,10 @@ Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
 
 ### Connect by using an SSH client from the command line
 
-From a terminal or a PowerShell console, run the following code. Replace `UserName` and `1.1.1.1` with your username and IP address.
+From a terminal or a PowerShell console, run the following code snippet. Replace `UserName` and `1.1.1.1` with your username and IP address.
 
 ```bash
 ssh UserName@1.1.1.1
 ```
 
-The first time you connect via SSH, you'll receive a warning. Accept the fingerprint and you'll be presented with a password prompt. Enter the password you specified while creating the DSVM. You should see a greeting screen and a command prompt.
+The first time you connect via SSH, you'll receive a warning. Accept the fingerprint, and you'll be presented with a password prompt. Enter the password you specified while creating the DSVM. You should see a greeting screen and a command prompt.

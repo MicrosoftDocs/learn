@@ -7,7 +7,7 @@ The following challenge helps you to understand the implications of casting valu
 1. Enter the following "starter" code:
 
     ```csharp
-    int value1 = 12;
+    int value1 = 11;
     decimal value2 = 6.2m;
     float value3 = 4.3f;
 
@@ -33,7 +33,7 @@ The following challenge helps you to understand the implications of casting valu
     ```Output
     Divide value1 by value2, display the result as an int: 2
     Divide value2 by value3, display the result as a decimal: 1.4418604651162790697674418605
-    Divide value3 by value1, display the result as a float: 0.35833335
+    Divide value3 by value1, display the result as a float: 0.3909091
     ```
 
 1. On the Visual Studio Code **File** menu, select **Save**.
@@ -51,7 +51,7 @@ The following challenge helps you to understand the implications of casting valu
     ```Output
     Divide value1 by value2, display the result as an int: 2
     Divide value2 by value3, display the result as a decimal: 1.4418604651162790697674418605
-    Divide value3 by value1, display the result as a float: 0.35833335
+    Divide value3 by value1, display the result as a float: 0.3909091
     ```
 
     > [!NOTE]
