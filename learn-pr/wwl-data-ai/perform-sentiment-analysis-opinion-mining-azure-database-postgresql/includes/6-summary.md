@@ -6,6 +6,6 @@ In this module, you:
 - Described opinion mining techniques to identify sentiments related to specific attributes.
 - Applied sentiment analysis to user reviews in a PostgreSQL database using the `azure_ai` extension.
 
-# References
+## References
 
 - [What is sentiment analysis and opinion mining?](/azure/ai-services/language-service/sentiment-opinion-mining/overview)
