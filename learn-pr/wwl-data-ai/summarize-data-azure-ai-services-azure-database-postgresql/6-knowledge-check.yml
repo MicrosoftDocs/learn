@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/09/2024
+  ms.date: 04/18/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
@@ -21,10 +21,10 @@ quiz:
       explanation: "Correct. The sentenceCount parameter guides how many sentences are returned in the extractive summarization process. The default value is 3, and the range is from 1 to 20."
     - content: "summaryLength"
       isCorrect: false
-      explanation: "Incorrect. This parameter does not exist on the `summarize_extractive()` function."
+      explanation: "Incorrect. This parameter doesn't exist on the `summarize_extractive()` function."
     - content: "maxSentences"
       isCorrect: false
-      explanation: "Incorrect. This parameter does not exist on the `summarize_extractive()` function."
+      explanation: "Incorrect. This parameter doesn't exist on the `summarize_extractive()` function."
   - content: "What are the two summarization techniques accessible through the `azure_ai` extension for Azure Database for PostgreSQL flexible server?"
     choices:
     - content: "Abstractive and query-focused summarization"

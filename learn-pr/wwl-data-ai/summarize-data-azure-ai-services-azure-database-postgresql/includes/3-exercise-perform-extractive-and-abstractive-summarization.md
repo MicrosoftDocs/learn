@@ -1,4 +1,4 @@
-Now, it is time for you to get hands-on with the Azure AI extension and the summarization techniques offered by Azure AI Services. In this exercise, you will use the `azure_ai` extension in Azure Database for PostgreSQL flexible server to generate summaries of text using the abstractive and extractive summarization capabilities of the [Azure AI Language service](/azure/ai-services/language-service/).
+Now, it's time for you to get hands-on with the Azure AI extension and the summarization techniques offered by Azure AI Services. In this exercise, you use the `azure_ai` extension in Azure Database for PostgreSQL flexible server to generate summaries of text using the abstractive and extractive summarization capabilities of the [Azure AI Language service](/azure/ai-services/language-service/).
 
 > Note
 >

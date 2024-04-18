@@ -1,6 +1,6 @@
 In this exercise, you generate text summaries using query-focused summarization and Azure OpenAI.
 
-> Note
+> [!NOTE]
 >
 > To complete this exercise, you will need an [Azure subscription](https://azure.microsoft.com/free) and be approved for Azure OpenAI access. If you need Azure OpenAI access, apply at the [Azure OpenAI limited access](/legal/cognitive-services/openai/limited-access) page.
 
