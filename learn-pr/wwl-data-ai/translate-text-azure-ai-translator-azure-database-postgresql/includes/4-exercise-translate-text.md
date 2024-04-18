@@ -2,7 +2,7 @@
 
 # Exercise: Translate Text
 
-Now, it is time for you to try your hand at translating text using the Azure AI Translator service. In this exercise, you will install the `azure_ai` extension in an Azure Database for PostgreSQL - Flexible Server. You will also create an [Azure AI Translator service instance](/azure/ai-services/translator/) and create a PostgreSQL stored procedure to perform translation on data in an existing table.
+Now, it's time for you to try your hand at translating text using the Azure AI Translator service. In this exercise, you install the `azure_ai` extension in an Azure Database for PostgreSQL - Flexible Server. You also create an [Azure AI Translator service instance](/azure/ai-services/translator/) and create a PostgreSQL stored procedure to perform translation on data in an existing table.
 
 > Note
 >

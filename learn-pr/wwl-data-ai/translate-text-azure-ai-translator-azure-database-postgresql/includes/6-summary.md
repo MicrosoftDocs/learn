@@ -1,6 +1,6 @@
 
 
-The Azure AI Translator service provides document translation support across more than 100 languages and dialects. With the `azure_ai` extension, it is easy to translate text in an Azure Database for PostgreSQL - Flexible Server database, whether in batches or as part of a transaction while inserting data into a table. These translations make it possible to expand your audience using human-readable translations into a variety of languages.
+The Azure AI Translator service provides document translation support across more than 100 languages and dialects. With the `azure_ai` extension, it's easy to translate text in an Azure Database for PostgreSQL - Flexible Server database, whether in batches or as part of a transaction while inserting data into a table. These translations make it possible to expand your audience using human-readable translations into various languages.
 
 ## References
 

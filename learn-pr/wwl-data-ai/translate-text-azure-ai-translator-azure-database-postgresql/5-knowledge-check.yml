@@ -4,7 +4,7 @@ title: Knowledge Check
 metadata:
   title: Knowledge Check
   description: "Knowledge Check"
-  ms.date: 04/09/2024
+  ms.date: 04/18/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
@@ -29,13 +29,13 @@ quiz:
     choices:
     - content: "`azure_ai.translate_text()`."
       isCorrect: false
-      explanation: "Incorrect. There is no `translate_text()` function in the `azure_ai` extension."
+      explanation: "Incorrect. There's no `translate_text()` function in the `azure_ai` extension."
     - content: "`azure_cognitive.translate()`."
       isCorrect: true
       explanation: "Correct. The `translate()` function in the `azure_cognitive` schema allows us to translate text using the Azure AI Translator service."
     - content: "`azure_ai.translate()`."
       isCorrect: false
-      explanation: "Incorrect. There is a `translate()` function in the `azure_ai` extension but it is not in the `azure_ai` schema."
+      explanation: "Incorrect. There's a `translate()` function in the `azure_ai` extension but it isn't in the `azure_ai` schema."
   - content: "Which of the following language codes represents Simplified Chinese for the Azure AI Translator service?"
     choices:
     - content: "zh."
@@ -57,4 +57,4 @@ quiz:
       explanation: "Incorrect. The `translations` column includes more than just the translated text."
     - content: "Language and original text."
       isCorrect: false
-      explanation: "Incorrect. The original text will not appear in the `translations` column."
+      explanation: "Incorrect. The original text doesn't appear in the `translations` column."

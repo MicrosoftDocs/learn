@@ -6,7 +6,7 @@ The Azure AI Translator Service is a cloud-based neural machine translation serv
 
 ## Supported languages
 
-The Azure AI Translator service supports translating text and documents between [more than 100 languages and dialects](/azure/ai-services/translator/language-support), using the cloud-based REST API. The service also supports translating scanned PDF documents, as well as transliteration between languages using different scripts.
+The Azure AI Translator service supports translating text and documents between [more than 100 languages and dialects](/azure/ai-services/translator/language-support), using the cloud-based REST API. The service also supports translating scanned PDF documents, and transliteration between languages using different scripts.
 
 ## Document translation with the Azure AI Translator
 
@@ -15,4 +15,4 @@ Document Translation is a cloud-based machine translation feature of the [Azure 
 - Asynchronous batch document translation supports asynchronous processing of multiple documents and large files. The batch translation process requires an Azure Blob storage account with containers for your source and translated documents.
 - Synchronous document translation supports synchronous processing of single file translations. The file translation process doesn't require an Azure Blob storage account. The final response contains the translated document and is returned directly to the calling client.
 
-For the upcoming exercise, you will use synchronous document translation.
+For the upcoming exercise, you use synchronous document translation.
