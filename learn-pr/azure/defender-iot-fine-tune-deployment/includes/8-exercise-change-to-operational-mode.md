@@ -1,4 +1,4 @@
-You triaged the alerts and determined that the alerts produced accurately represent the network activity. And you think the level of alerts has droped to an acceptable level. Instead of waiting for Defender for IoT to automatically switch from *learning* mode to *operational* mode, you want to manually turn off *learning* mode.
+You triaged the alerts and determined that the alerts produced accurately represent the network activity. And you think the level of alerts has dropped to an acceptable level. Instead of waiting for Defender for IoT to automatically switch from *learning* mode to *operational* mode, you want to manually turn off *learning* mode.
 
 ## Manually end learning mode
 
