@@ -14,19 +14,19 @@ metadata:
 title: Introduction to Azure Virtual Networks
 summary: In this module, you learn how to design and implement Azure networking services. You learn about virtual networks, public and private IPs, DNS, virtual network peering, routing, and Azure Virtual NAT.
 abstract: |
-  At the end of this module, you are able to:
+  At the end of this module, you're able to:
 
-  -   Implement virtual networks
+  -   Implement virtual networks.
 
-  -   Configure public IP services
+  -   Configure public IP services.
 
-  -   Design and implement name resolution
+  -   Design and implement name resolution.
 
-  -   Design and implement cross-VNET connectivity
+  -   Design and implement cross-VNET connectivity.
 
-  -   Implement virtual network routing
+  -   Implement virtual network routing.
 
-  -   Design and implement an Azure Virtual Network NAT
+  -   Design and implement an Azure Virtual Network NAT.
 prerequisites: |
   -   You should have experience with networking concepts, such as IP addressing, Domain Name System (DNS), and routing.
 
