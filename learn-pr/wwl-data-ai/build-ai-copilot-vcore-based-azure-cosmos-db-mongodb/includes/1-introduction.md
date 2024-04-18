@@ -1,4 +1,4 @@
-Enhance your application's data retrival by combining Azure OpenAI with vCore-based Azure Cosmos DB for MongoDB. You'll learn how to make your searches smarter and your answers more relevant using vector databases, embeddings, and Retrieval Augmentation Generation (RAG) systems. This technology combination lets you take full advantage of Azure OpenAI's capabilities and vCore-based Azure Cosmos DB for MongoDB's robust data management.
+Enhance your application's data retrieval by combining Azure OpenAI with vCore-based Azure Cosmos DB for MongoDB. You learn how to make your searches smarter and your answers more relevant using vector databases, embeddings, and Retrieval Augmentation Generation (RAG) systems. This technology combination lets you take full advantage of Azure OpenAI's capabilities and vCore-based Azure Cosmos DB for MongoDB's robust data management.
 
 The topics covered in this module include:
 

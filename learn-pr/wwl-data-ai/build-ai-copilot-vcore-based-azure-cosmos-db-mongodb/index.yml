@@ -31,7 +31,7 @@ units:
 - learn.wwl.build-your-own-ai-copilot-vcore-based-azure-cosmos-db-mongodb.introduction
 - learn.wwl.build-your-own-ai-copilot-vcore-based-azure-cosmos-db-mongodb.explore-azure-openai
 - learn.wwl.build-your-own-ai-copilot-vcore-based-azure-cosmos-db-mongodb.understand-vector-database-retrieval-augmentation-generation-embeddings
-- learn.wwl.build-your-own-ai-copilot-vcore-based-azure-cosmos-db-mongodb.implement-retrieval-augmentation-generation-vcore-based-azure-cosmos-db-mongodb
+- learn.wwl.build-your-own-ai-copilot-vcore-based-azure-cosmos-db-mongodb.implement-retrieval-augmentation-generation-vcore-based-cosmos-db-mongodb
 - learn.wwl.build-your-own-ai-copilot-vcore-based-azure-cosmos-db-mongodb.exercise-develop-ai-copilot-vcore-based-azure-cosmos-db-mongodb
 - learn.wwl.build-your-own-ai-copilot-vcore-based-azure-cosmos-db-mongodb.knowledge-check
 - learn.wwl.build-your-own-ai-copilot-vcore-based-azure-cosmos-db-mongodb.summary
