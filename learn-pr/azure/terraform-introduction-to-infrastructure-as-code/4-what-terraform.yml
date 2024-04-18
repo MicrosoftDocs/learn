@@ -6,7 +6,7 @@ metadata:
   title: What is Bicep?
   description: Learn what Bicep is, and how it works with Azure Resource Manager.
   ms.date: 18/04/2024
-  author: jaredholgate
+  author: jaredfholgate
   ms.author: jaredholgate
   ms.topic: unit
   ms.custom:

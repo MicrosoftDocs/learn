@@ -5,7 +5,7 @@ metadata:
   title: Introduction to infrastructure as code using Terraform
   description: Learn how Terraform can help you adopt infrastructure as code to quickly and confidently scale your cloud deployments.
   ms.date: 18/04/2024
-  author: jaredholgate
+  author: jaredfholgate
   ms.author: jaredholgate
   ms.topic: module
   ms.devlang: hcl

@@ -6,7 +6,7 @@ metadata:
   title: How Bicep works # user input: module title for browser tab and search results
   description: Learn how Bicep deploys your Azure infrastructure.
   ms.date: 18/04/2024
-  author: jaredholgate
+  author: jaredfholgate
   ms.author: jaredholgate
   ms.topic: unit
   ms.custom:
