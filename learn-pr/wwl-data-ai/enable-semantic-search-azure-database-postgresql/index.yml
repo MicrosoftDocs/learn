@@ -35,7 +35,7 @@ units:
 - learn.wwl.enable-semantic-search-azure-database-postgresql.introduction
 - learn.wwl.enable-semantic-search-azure-database-postgresql.understand-semantic-search
 - learn.wwl.enable-semantic-search-azure-database-postgresql.store-vectors-in-azure-database-for-postgresql-flexible-server
-- learn.wwl.enable-semantic-search-azure-database-postgresql.create-embeddings-with-the-azure_ai-extension
+- learn.wwl.enable-semantic-search-azure-database-postgresql.create-embeddings-with-the-azure-ai-extension
 - learn.wwl.enable-semantic-search-azure-database-postgresql.exercise-generate-vector-embeddings-with-azure-openai
 - learn.wwl.enable-semantic-search-azure-database-postgresql.explore-semantic-search-use-cases
 - learn.wwl.enable-semantic-search-azure-database-postgresql.exercise-create-search-function-for-a-recommendation-system
