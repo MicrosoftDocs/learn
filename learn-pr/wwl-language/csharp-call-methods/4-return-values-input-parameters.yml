@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-call-methods.return-values-input-parameters
-title: Exercise - Return values and input parameters of methods
+title: Exercise - Return values and parameters of methods
 metadata:
-  title: Exercise - Return values and input parameters of methods
-  description: "Exercise - Return values and input parameters of methods"
-  ms.date: 04/16/2024
+  title: Exercise - Return values and parameters of methods
+  description: "Exercise - Return values and parameters of methods"
+  ms.date: 04/17/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
@@ -31,7 +31,7 @@ quiz:
     choices:
     - content: "Variables that are used inside a method."
       isCorrect: true
-      explanation: "Correct! Method parameters are the variables used inside the method. The calling statement passes arguments to the method. Arguments are used to assign values to the parameters."
+      explanation: "Correct! Method parameters are variables used inside the method. The method definition specifies the names and types of any parameters that are required. When a caller invokes the method, the calling statement provides concrete values, called arguments, for each parameter."
     - content: "Values returned by a method."
       isCorrect: false
       explanation: "Incorrect. The term \"return value\" does not refer to one or more method parameters."
