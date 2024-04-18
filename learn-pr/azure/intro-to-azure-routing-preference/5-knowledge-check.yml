@@ -3,8 +3,8 @@ uid: learn.intro-to-azure-routing-preference.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "The knowledge check unit of the training module evaluates the user's learned knowledge from the previous units in the module."
-  ms.date: 10/19/2023
+  description: Check what you learned about routing preference."
+  ms.date: 04/08/2024
   author: asudbring
   ms.author: allensu
   ms.topic: unit
@@ -12,9 +12,9 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "A financial company has an application hosted in an Azure Kubernetes Service cluster in the East US Azure region. They recently have seen a spike in cost of network traffic between their satellite office in the Western Europe Azure region and the application in the East US Azure region. They've determined that the application doesn't require high network performance or low latency. What routing preference should the financial company choose for their application's public IP address?"
+  - content: "A financial company has an application hosted in an Azure Kubernetes Service cluster in the East US Azure region. They recently saw a spike in cost of network traffic between their satellite office in the Western Europe Azure region and the application in the East US Azure region. They've determined that the application doesn't require high network performance or low latency. What routing preference should the financial company choose for their application's public IP address?"
     choices:
-    - content: "The financial company should choose the Internet option."
+    - content: "The financial company should choose the Internet routing option."
       isCorrect: true
       explanation: "The routing preference of Internet would fulfill the requirements of cost savings, as most of the traffic destined for and from an application or service in Azure uses the public internet for most the travel."
     - content: "The financial company should choose the Microsoft network option."
@@ -39,7 +39,7 @@ quiz:
     - content: "The engineer should choose the Microsoft network option."
       isCorrect: true
       explanation: "The routing preference of Microsoft network provides the best latency and network performance. This routing preference fulfills the requirement of the application performance. The Internet routing option, though fast and comparable to other cloud providers, is subject to performance and latency issues that could occur with traffic traversing the public internet."
-    - content: "The engineer should choose the Internet option."
+    - content: "The engineer should choose the Internet routing option."
       isCorrect: false
       explanation: "The routing preference of Internet doesn't fulfill the requirement of the application for network and latency performance."
     - content: "The engineer should choose the BGP option."

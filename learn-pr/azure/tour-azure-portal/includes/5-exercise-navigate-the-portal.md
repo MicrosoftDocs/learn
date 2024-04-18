@@ -6,7 +6,7 @@ Let's look at some of the more common areas you'll typically use in the Azure po
 
    :::image type="content" source="../media/5-show-portal-icon.png" alt-text="Screenshot of the Show portal menu option in the Azure portal.":::
 
-   Selecting this icon expands the portal menu on the left-hand side of the screen.
+   Selecting this icon expands the portal menu.
 
    ![Screenshot of the portal menu option on the left-hand side of the portal.](../media/5-show-portal-menu.png)
 
@@ -18,7 +18,7 @@ Let's look at some of the more common areas you'll typically use in the Azure po
 
 1. Select **+ Create** > **Azure virtual machine**. The **Create a virtual machine** pane appears.
 
-1. If you wanted to create a virtual machine, you could enter information here. For now, select the **X** in the top right-hand corner to close the **Create a virtual machine** pane.
+1. To create a virtual machine, you could enter information here. For now, select the **X** in the top right-hand corner to close the **Create a virtual machine** pane.
 
 1. Select the **X** in the top right-hand corner to close the **Virtual machines** pane.
 
@@ -28,7 +28,7 @@ Let's look at some of the more common areas you'll typically use in the Azure po
 
 Find the global control menu at the top of the screen.
 
-![Screenshot of the Azure portal global control menu with icons for Azure Cloud Shell, directory and subscription, notifications, portal settings, help, and feedback.](../media/5-portal-icon-bar.png)
+![Screenshot of the Azure portal global control menu with icons for Azure Cloud Shell, notifications, portal settings, help, and feedback.](../media/5-portal-icon-bar.png)
 
 These options are always available in the portal, no matter what service you're using.
 
@@ -48,17 +48,11 @@ The Azure Cloud Shell is available in the Sandbox environment that we're using f
 
 1. Since we won't use the shell further in this exercise, select **Close**.
 
-## Directories and subscriptions
-
-![Icon representing the directory and subscription option on the global control menu in the Azure portal.](../media/5-subscription-icon.png)
-
-Directories and subscriptions used to be accessed with this icon. The **Directories + subscriptions** feature, though, is now located on the portal settings page. Access the portal settings page by selecting the gear icon.
-
 ## Notifications
 
 ![Icon representing the notifications option on the global control menu in the Azure portal.](../media/5-notifications-icon.png)
 
-1. On the icon bar menu bar, select the **Notifications** (bell) icon. This window shows any pending notifications.
+1. On the icon bar menu bar, select the **Notifications** (bell) icon. This window shows any notifications related to your account, such as confirming whether resources were deployed correctly.
 
     ![Screenshot of notifications window on the global control menu in the Azure portal.](../media/5-notifications-pane.png)
 
@@ -70,7 +64,7 @@ Directories and subscriptions used to be accessed with this icon. The **Director
 
 ![Icon representing the settings option on the global control menu in the Azure portal.](../media/5-settings-icon.png)
 
-1. Select the **Settings** (gear) icon to open the **Portal settings** pane. The **Directories + subscriptions** section is shown by default.
+1. Select the **Settings** (gear) icon to open the **Portal settings** pane. The **Directories + subscriptions** section is shown by default. This is where you can apply subscription filters or change directories. We won't use this section for this exercise.
 
 1. Select the **Signing out + notifications** tab at the left. In the **Sign me out when inactive** drop-down menu, select **After one hour**.
 
@@ -84,7 +78,7 @@ Directories and subscriptions used to be accessed with this icon. The **Director
 
 1. Select the **Language + region** tab at the left. In the **Language** drop-down box, select **Español**. Select the **Apply** button, then select **OK** to confirm your changes. If a **Translate this page** dialog box appears, close the box. The whole Azure portal now appears in Spanish. You can select **Microsoft Azure** to view the **Home** page in Spanish, or navigate to other pages.
 
-1. To revert back to English, select the **Settings** (cog) icon in the top menu bar, then select the **Idioma y región** tab at the left. In the **Idioma** drop-down box, select **English**. Select the **Aplicar** button, then select **Aceptar** to confirm. The portal will now appear in English again.
+1. To revert back to English, select the **Settings** (gear) icon in the top menu bar, then select the **Idioma y región** tab at the left. In the **Idioma** drop-down box, select **English**. Select the **Aplicar** button, then select **Aceptar** to confirm. The portal will now appear in English again.
 
 ## Support + troubleshooting pane
 
@@ -94,18 +88,15 @@ Directories and subscriptions used to be accessed with this icon. The **Director
 
 1. Select the **Help + support** button.
 
-1. In the **Help + support** pane, select **Create a support request**.
+1. In the dialog box, enter a few words to describe a potential problem. For example, you could type "Billing question" or "Unable to create storage account".
 
-1. Support requests can only be created using an active paid subscription. Creating support requests from a free Microsoft Learn sandbox is not supported, but you can click through the process on the **New support request** screen:
+1. Make additional selections when prompted, then review the information provided. This information can often help resolve common issues or questions.
 
-    - On the **Problem description** tab, you select an issue type and describe your issue.
-    - On the **Recommended solution** tab, you'll see suggested solutions that may help resolve your issue.
-    - On the **Additional details** tab, you provide your preferred contact method, contact info, and other information.
-    - On the **Review + create** tab, you review your information and submit your support request.
+1. Near the top of the pane, select **Create a support request**. Support requests can only be created using an active subscription. Creating support requests from a free Microsoft Learn sandbox is not supported, but you can click some of the steps on the **New support request** screen, such as **Problem description** and **Recommended solution**.
 
 1. Since you aren't submitting a real support request, select **Home** in the top left corner. If you're prompted about unsaved edits, select **OK**.
 
-1. If the **Troubleshooting + support** pane isn't still open, select the **Support + troubleshooting** (`?`) icon again
+1. Select the **Support + troubleshooting** (`?`) icon to reopen the pane, then select **Start again** to clear your previous entry.
 
 1. Under **Health Events**, select **View service health**.
 
@@ -125,7 +116,7 @@ Directories and subscriptions used to be accessed with this icon. The **Director
 
 1. Type your impressions of Azure in the **Tell us about your experience** box.
 
-1. Optionally, select the box that says **Microsoft can email you about your feedback**. Then select **Submit feedback**.
+1. Optionally, select the box that says **It's OK to contact me about my feedback**. Then select **Submit feedback**.
 
 1. A **Feedback sent** notification will appear. You can view this notification again by selecting the **Notifications** (bell) icon, as described earlier.
 
@@ -133,10 +124,10 @@ Directories and subscriptions used to be accessed with this icon. The **Director
 
 1. Select your name in the top right-hand corner of the portal.
 
-1. Select "..." then select **My permissions**.
+1. Select "..." and then select **My permissions**.
 
 1. Review the information that appears to see the role you've been assigned on the **Concierge Subscription**.
 
 1. Select the **X** in the top right-hand corner to close the **My permissions** page.
 
-Now that we've explored all the main areas of the Azure portal, let's learn about one of the most useful features: Dashboards.
+Now that we've explored some of the key areas of the Azure portal, let's learn about one of the most useful features: Dashboards.

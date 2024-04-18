@@ -6,7 +6,7 @@ In this module, you learn how to choose the best service level of Azure NetApp F
 
 Suppose you're a member of a semiconductor company who's been tasked with designing their IC chips, which need numerous electronic design automation (EDA) simulations. You don't have sufficient capacity on-premises for this project, so you want to use Azure for those HPC simulation needs.
 
-Management wants this project to be completed in a timely and cost-effective manner. You choose Azure NetApp Files as the back-end storage solution because it provides an on-premises-like experience and performance.
+Management wants this project to be completed in a timely and cost-effective manner. You choose Azure NetApp Files as the back-end storage solution because it provides an on-premises-like performance.
 
 You need to figure out the most optimal and cost-effective way of building and running your HPC applications in Azure.
 
@@ -23,5 +23,5 @@ By the end of this module, you're able to:
 
 ## Prerequisites
 
-- Understand the concepts of storage hierarchy of Azure NetApp Files, which includes Azure NetApp Files accounts, capacity pools, and volumes.
+- Understand the concepts of storage hierarchy of Azure NetApp Files, which includes NetApp accounts, capacity pools, and volumes.
 - Ability to set up Azure NetApp Files and create a volume.
