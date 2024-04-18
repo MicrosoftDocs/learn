@@ -1,4 +1,4 @@
-**Sentiment analysis** is a crucial natural language processing (NLP) technique that allows us to discern the emotional tone or sentiment expressed in textual data. By leveraging machine learning and natural NLP, sentiment analysis aims to determine whether the opinions, sentiments, appraisals, attitudes, and emotions expressed within a piece of text convey a positive, negative, or neutral sentiment. These capabilities empower applications to understand user sentiment, monitor brand perception, and make informed decisions based on textual content.
+**Sentiment analysis** is a crucial natural language processing (NLP) technique that allows us to discern the emotional tone or sentiment expressed in textual data. By using machine learning and natural NLP, sentiment analysis aims to determine whether the opinions, sentiments, appraisals, attitudes, and emotions expressed within a piece of text convey a positive, negative, or neutral sentiment. These capabilities empower applications to understand user sentiment, monitor brand perception, and make informed decisions based on textual content.
 
 The web and mobile apps for Margie's Travel allow renters to submit reviews detailing their experiences staying at properties listed in the apps. The text of these reviews contains valuable information about how the customer felt about the property, its host, and their stay. Understanding these sentiments can help Margie's Travel better serve its customers and provide valuable feedback to property owners and managers.
 
@@ -8,7 +8,7 @@ The `azure_ai` extension for Azure Database for PostgreSQL flexible server relie
 
 This method has three overloads, allowing you to analyze the sentiment of one record at a time or for multiple records by passing in an array of values to analyze. Using the `language` parameter, you can also indicate in which of the [94 supported languages](/azure/ai-services/language-service/sentiment-opinion-mining/language-support#sentiment-analysis-language-support) the input text is written.
 
-The output of the `analyze_sentiment()` function is the `sentiment_analysis_result` composite type. The structure of that type is:
+The output of the `analyze_sentiment()` function is the `sentiment_analysis_result` composite type. The type's structure is:
 
 ```sql
      Column     |       Type       

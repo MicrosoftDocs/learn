@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/09/2024
+  ms.date: 04/18/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
@@ -32,10 +32,10 @@ quiz:
       explanation: "Correct. Opinion mining, or aspect-based sentiment analysis, considers specific aspects or features mentioned in a text. For example, it can determine whether a product review expresses a positive or negative opinion about the battery life, user interface, or customer service."
     - content: "Analyzing overall sentiment of a document"
       isCorrect: false
-      explanation: "Incorrect. Opinion mining goes beyond overall sentiment to analyze opinions related to specific aspects (e.g., product features, service quality)."
+      explanation: "Incorrect. Opinion mining goes beyond overall sentiment to analyze opinions related to specific aspects (for example, product features, service quality)."
     - content: "Extracting key phrases from text"
       isCorrect: false
-      explanation: "Incorrect. Opinion mining analyzes opinions related to specific aspects (e.g., product features, service quality). It is not used for extracting key phrases."
+      explanation: "Incorrect. Opinion mining analyzes opinions related to specific aspects (for example, product features, service quality). It isn't used for extracting key phrases."
   - content: "What does sentiment analysis provide in terms of sentiment labels?"
     choices:
     - content: "Positive, negative, and neutral"

@@ -3,17 +3,17 @@ uid: learn-wwl.perform-sentiment-analysis-opinion-mining-azure-database-postgres
 metadata:
   title: Perform sentiment analysis and opinion mining with Azure Database for PostgreSQL
   description: "Perform sentiment analysis and opinion mining with Azure Database for PostgreSQL"
-  ms.date: 04/09/2024
+  ms.date: 04/18/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module
   ms.service: postgresql
   ms.subservice: flexible-server
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Perform sentiment analysis and opinion mining with Azure Database for PostgreSQL
-summary: place-holder.
-abstract: place-holder.
-prerequisites: None
+summary: This module will explore how Azure AI Services and the Azure AI extension for Azure Database for PostgreSQL - Flexible Server enable sentiment analysis and opinion mining to extract valuable insights from textual data.
+abstract: '- Explore the fundamentals of sentiment analysis and how it can be leveraged to gain insights into user sentiments and emotions. - Describe opinion mining techniques to identify sentiments related to specific attributes. - Apply sentiment analysis to user reviews in a PostgreSQL database using the **azure_ai**&nbsp;extension.'
+prerequisites: Before starting this module, you should have experience working with PostgreSQL databases, writing SQL queries, and a general understanding of Generative AI concepts.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
