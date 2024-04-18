@@ -10,9 +10,6 @@ When the web page loads, the client application:
 * Connects to the SignalR endpoint. The connection is made to the `/api/negotiate` HTTP endpoint. 
 * Listens for the stock changes from the `/api` connection from the SignalR endpoint. When the event is received, the client updates the stock price in the UI. These updates aren't seen in the network tab of the browser because the connection is persistent. .
 
-## Test the client application locally
-
-Before deploying the client to Azure, test the client application locally. This allows you to be confident that the code deployed to Azure works as expected.
 
 ## Deploy the client to Azure Static Web apps
 

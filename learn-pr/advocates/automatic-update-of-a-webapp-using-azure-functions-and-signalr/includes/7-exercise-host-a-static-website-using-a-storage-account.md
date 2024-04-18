@@ -4,11 +4,11 @@ Now that the API is deployed to the cloud, as a Tailwind Traders engineer, you n
 
 1. In Visual Studio Code, open `./start/client/src/index.js` and replace all the code to listen for SignalR messages. The code gets the initial stock list with an HTTP request and then listens for updates from the SignalR connection. When a stock is updated, the client updates the stock price in the UI.
     
-    :::code language="javascript" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/start/client/src/index.js" :::
+    :::code language="javascript" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/solution/client/src/index.js" :::
 
 1. Open `./start/client/index.html` and paste the following code in place of the current DIV with the ID of app.
 
-    :::code language="html" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/start/client/index.html" :::
+    :::code language="html" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/solution/client/index.html" :::
     
     This markup includes a transition element, which allows Vue.js to run a subtle animation as stock data changes. When a stock is updated, the tile fades out and quickly back in to view. This way if the page is full of stock data, users can easily see which stocks have changed.
 
