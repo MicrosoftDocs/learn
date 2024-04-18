@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.use-azure-machine-learning-inferencing-azure-database-postgresql.azure-ml-automated-machine-learning
+uid: learn.wwl.use-azure-machine-learning-inferencing-azure-database-postgresql.azure-machine-learning-automated-machine-learning
 title: What is Azure Machine Learning?
 metadata:
   title: What is Azure Machine Learning?
   description: "What is Azure Machine Learning?"
-  ms.date: 04/09/2024
+  ms.date: 04/18/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-azure-ml-automated-machine-learning.md)]
+  [!include[](includes/2-azure-machine-learning-automated-machine-learning.md)]
