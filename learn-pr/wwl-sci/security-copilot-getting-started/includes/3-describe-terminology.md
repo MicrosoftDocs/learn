@@ -6,7 +6,7 @@ The following terms are important for understanding the way Copilot works:
 
 - Session – A particular conversation within Copilot. Copilot maintains context within a session.
 - Prompt – A specific statement or question within a session. A user enters a prompt in the prompt bar.
-- Capability – A function Copilot uses to solve part of a problem.
+- Capability – A function Copilot uses to solve part of a problem.  A capability may sometimes be referred to as a skill.
 - Plugin – A collection of capabilities by a particular resource.
 - Orchestrator – Copilot’s system for composing capabilities together to answer a user’s prompt.
 

@@ -95,7 +95,9 @@ In this example, configure the access controls to require multifactor authentica
 
 ### Activate the policy
 
-Conditional Access policies can be set to **Report-only** if you want to see how the configuration would affect users, or **Off** if you don't want to the use policy right now.
+Conditional Access policies can be set to **Report-only** if you want to see how the configuration would affect users, or **Off** if you don't want to the use policy right now. Because a test group of users is targeted for this tutorial, let's enable the policy, and then test Microsoft Entra multifactor authentication.
+
+1. Under **Enable policy**, select **On**.
 
 :::image type="content" source="../media/multifactor-enable-policy-control-89c8b9c0.png" alt-text="Screenshot showing an example of how to enable the report only policy.":::
 
@@ -108,15 +110,16 @@ To customize the end-user experience for Microsoft Entra multifactor authenticat
 
 The following Microsoft Entra multifactor authentication settings are available in the Azure portal:
 
-| **Feature**                      | **Description**                                                                                                                                                                                                                                                                       |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Account lockout                  | Temporarily lock accounts from using Microsoft Entra multifactor authentication if there are too many denied authentication attempts in a row. This feature applies only to users who enter a PIN to authenticate. (MFA Server only)                                                  |
-| Block/unblock users              | Block specific users from being able to receive Microsoft Entra multifactor authentication requests. Any authentication attempts for blocked users are automatically denied. Users remain blocked for 90 days from the time that they're blocked or until they're manually unblocked. |
-| Report suspicious activity       | Configure settings that allow users to report fraudulent verification requests.                                                                                                                                                                                                       |
-| Notifications                    | Enable notifications of events from MFA Server.                                                                                                                                                                                                                                       |
-| Open Authorization (OATH) tokens | Used in cloud-based Microsoft Entra multifactor authentication environments to manage OATH tokens for users.                                                                                                                                                                          |
-| Phone call settings              | Configure settings related to phone calls and greetings for cloud and on-premises environments.                                                                                                                                                                                       |
-| Providers                        | This will show any existing authentication providers that you've associated with your account. Adding new providers is disabled as of September 1, 2018.                                                                                                                              |
+| **Feature**                                                                                                                                          | **Description**                                                                                                                                                                                                                                                                       |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Account lockout (MFA Server only)](/entra/identity/authentication/howto-mfa-mfasettings#account-lockout-mfa-server-only) | Temporarily lock accounts from using Microsoft Entra multifactor authentication if there are too many denied authentication attempts in a row. This feature applies only to users who use MFA Server to enter a PIN to authenticate.                                                  |
+| [Block/unblock users](/entra/identity/authentication/howto-mfa-mfasettings#block-and-unblock-users)                       | Block specific users from being able to receive Microsoft Entra multifactor authentication requests. Any authentication attempts for blocked users are automatically denied. Users remain blocked for 90 days from the time that they're blocked or until they're manually unblocked. |
+| [Fraud alert](/entra/identity/authentication/howto-mfa-mfasettings#fraud-alert)                                           | Configure settings that allow users to report fraudulent verification requests.                                                                                                                                                                                                       |
+| [Report suspicious activity](/entra/identity/authentication/howto-mfa-mfasettings#report-suspicious-activity)             | Configure settings that allow users to report fraudulent verification requests.                                                                                                                                                                                                       |
+| [Notifications](/entra/identity/authentication/howto-mfa-mfasettings#notifications)                                       | Enable notifications of events from MFA Server.                                                                                                                                                                                                                                       |
+| [OATH tokens](/entra/identity/authentication/concept-authentication-oath-tokens)                                          | Used in cloud-based Microsoft Entra multifactor authentication environments to manage OATH tokens for users.                                                                                                                                                                          |
+| [Phone call settings](/entra/identity/authentication/howto-mfa-mfasettings#phone-call-settings)                           | Configure settings related to phone calls and greetings for cloud and on-premises environments.                                                                                                                                                                                       |
+| Providers                                                                                                                                            | This will show any existing authentication providers that you've associated with your account. Adding new providers is disabled as of September 1, 2018.                                                                                                                              |
 
 ## Account lockout (Microsoft Entra multifactor authentication Server only)
 
@@ -210,12 +213,13 @@ OATH hardware tokens are supported as part of a public preview.
 
 After you acquire tokens, you need to upload them in a comma-separated values (CSV) file format. Include the **User Principal Name (UPN)**, **serial number**, **secret key**, **time interval**, **manufacturer**, and **model**.
 
-`CSV`
-
-`upn,serial number,secret key,time interval,manufacturer,model Helga@contoso.com,1234567,1234567abcdef1234567abcdef,60,Contoso,HardwareKey`
+```
+upn,serial number,secret key,time interval,manufacturer,model
+Helga@contoso.com,1234567,2234567abcdef2234567abcdef,60,Contoso,HardwareKey
+```
 
 > [!NOTE]
-> Be sure to include the header row in your CSV file.
+> Make sure to include the header row in your CSV file.
 
 An administrator can sign in to the Azure portal, go to **Microsoft Entra ID, Security**, **Multifactor authentication**, **OATH tokens**, and **upload the CSV file**.<br>
 

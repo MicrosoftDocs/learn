@@ -27,6 +27,9 @@ Microsoft is committed to encryption at rest options across cloud services and g
 
 As described previously, the goal of encryption at rest is that data that is persisted on disk is encrypted with a secret encryption key. To achieve that goal secure key creation, storage, access control, and management of the encryption keys must be provided. Though details might vary, Azure services Encryption at Rest implementations can be described in terms illustrated in the following diagram.
 
+:::image type="content" source="../media/azure-security-encryption-f494b036.png" alt-text="Diagram showing an example of Azure encryption at rest components.":::
+
+
 ## Azure Key Vault
 
 The storage location of the encryption keys and access control to those keys is central to an encryption at rest model. The keys need to be highly secured but manageable by specified users and available to specific services. For Azure services, Azure Key Vault is the recommended key storage solution and provides a common management experience across services. Keys are stored and managed in key vaults, and access to a key vault can be given to users or services. Azure Key Vault supports customer creation of keys or import of customer keys for use in customer-managed encryption key scenarios.
@@ -39,8 +42,8 @@ Permissions to use the keys stored in Azure Key Vault, either to manage or to ac
 
 More than one encryption key is used in an encryption at rest implementation. Storing an encryption key in Azure Key Vault ensures secure key access and central management of keys. However, service local access to encryption keys is more efficient for bulk encryption and decryption than interacting with Key Vault for every data operation, allowing for stronger encryption and better performance. Limiting the use of a single encryption key decreases the risk that the key will be compromised and the cost of re-encryption when a key must be replaced. Azure encryption at rest models uses envelope encryption, where a key encryption key encrypts a data encryption key. This model forms a key hierarchy which is better able to address performance and security requirements:
 
- -  **Data Encryption Key (DEK)** – A symmetric AES256 key used to encrypt a partition or block of data, sometimes also referred to as simply a Data Key. A single resource might have many partitions and many Data Encryption Keys. Encrypting each block of data with a different key makes crypto analysis attacks more difficult. And keeping DEKs local to the service encrypting and decrypting data maximizes performance.<br>
- -  **Key Encryption Key (KEK)** – An encryption key used to encrypt the Data Encryption Keys using envelope encryption, also referred to as wrapping. Use of a Key Encryption Key that never leaves Key Vault allows the data encryption keys themselves to be encrypted and controlled. The entity that has access to the KEK might be different than the entity that requires the DEK. An entity might broker access to the DEK to limit the access of each DEK to a specific partition. Since the KEK is required to decrypt the DEKs, customers can cryptographically erase DEKs and data by disabling of the KEK.
+ -  Data Encryption Key (DEK) – A symmetric AES256 key used to encrypt a partition or block of data, sometimes also referred to as simply a Data Key. A single resource might have many partitions and many Data Encryption Keys. Encrypting each block of data with a different key makes crypto analysis attacks more difficult. And keeping DEKs local to the service encrypting and decrypting data maximizes performance.<br>
+ -  Key Encryption Key (KEK) – An encryption key used to encrypt the Data Encryption Keys using envelope encryption, also referred to as wrapping. Use of a Key Encryption Key that never leaves Key Vault allows the data encryption keys themselves to be encrypted and controlled. The entity that has access to the KEK might be different than the entity that requires the DEK. An entity might broker access to the DEK to limit the access of each DEK to a specific partition. Since the KEK is required to decrypt the DEKs, customers can cryptographically erase DEKs and data by disabling of the KEK.
 
 Resource providers and application instances store the encrypted Data Encryption Keys as metadata. Only an entity with access to the Key Encryption Key can decrypt these Data Encryption Keys. Different models of key storage are supported.
 
@@ -78,7 +81,7 @@ It is recommended that whenever possible, IaaS applications leverage Azure Disk 
 
 ## Azure resource providers encryption model support
 
-Microsoft Azure Services each support one or more of the encryption at rest models. For some services, however, one or more of the encryption models might not be applicable. For services that support customer-managed key scenarios, they might support only a subset of the key types that Azure Key Vault supports for key encryption keys. Additionally, services might release support for these scenarios and key types at different schedules. This section describes the encryption at rest support at the time of this writing for each of the major Azure data storage services.
+Microsoft Azure Services each support one or more of the encryptions at rest models. For some services, however, one or more of the encryption models might not be applicable. For services that support customer-managed key scenarios, they might support only a subset of the key types that Azure Key Vault supports for key encryption keys. Additionally, services might release support for these scenarios and key types at different schedules. This section describes the encryption at rest support at the time of this writing for each of the major Azure data storage services.
 
 **Azure disk encryption**
 

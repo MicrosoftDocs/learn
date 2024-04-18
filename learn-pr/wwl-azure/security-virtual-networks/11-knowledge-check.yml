@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/27/2024
+  ms.date: 04/09/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -53,7 +53,7 @@ quiz:
     choices:
     - content: "By providing real-time threat detection and prevention"
       isCorrect: false
-      explanation: "While Network Watcher offers monitoring capabilities, it doesn't provide real-time threat detection and prevention."
+      explanation: "While Network Watcher offers to monitor capabilities, it doesn't provide real-time threat detection and prevention."
     - content: "By enabling monitoring of network traffic flow and identifying security rule violations."
       isCorrect: true
       explanation: "Network Watcher helps identify and diagnose network issues, including security rule violations, by providing insights into network traffic flow and connectivity."

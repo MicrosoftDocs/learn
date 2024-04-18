@@ -8,7 +8,7 @@ You can enable the Defender for Servers plan from the Environment settings page 
 
 ### To enable the Defender for Servers plan:
 
-1. Sign in to the Azure portal.
+1. Sign in to the [Azure portal](https://portal.azure.com/).
 
 2. Search for and select **Microsoft Defender for Cloud**.
 
@@ -26,7 +26,7 @@ Review what's included each plan.
 
 ### To select a Defender for Servers plan:
 
-1. Sign in to the Azure portal.
+1. Sign in to the [Azure portal](https://portal.azure.com/).
 
 2. Search for and select **Microsoft Defender for Cloud**.
 

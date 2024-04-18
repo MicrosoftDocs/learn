@@ -20,7 +20,7 @@ The home menu is accessed by selecting the hamburger icon located on the top lef
 From the home menu, the user can navigate as follows:
 
 - Back to the landing page by selecting the Home icon.
-- My sessions, which list past sessions created. The user can manage past sessions with search and filter options along with the ability to rename, duplicate, or delete sessions as needed.
+- My sessions, which list past sessions created. The user can manage past sessions with search and filter options along with the ability to rename, duplicate, or delete sessions as needed. Currently sessions are kept on the My sessions page until they're manually deleted. When a session is deleted, all data associated with that session is marked as deleted and the time to live (TTL) is set to 30 days. After that TTL expires, queries can't access that data. Logs, which contain session data aren't affected when a session is deleted via the in-product UX. These logs have a retention period of up to 90 days.
 
     :::image type="content" source="../media/my-sessions-v2.png" lightbox="../media/my-sessions-v2.png" alt-text="Screen capture listing a user's session.":::
 
@@ -30,9 +30,9 @@ From the home menu, the user can navigate as follows:
 
 - Owner specific options, for users configured as owners:
 
-  - Owner settings, which include a link to manage the billing in Azure, the option to change the Security Compute Units (SCUs), configuration of data sharing options, and information on where data is stored.
+  - Owner settings, which include a link to manage the billing in Azure, the option to change the Security Compute Units (SCUs), and configuration of data sharing options.
 
-    :::image type="content" source="../media/owner-settings.png" lightbox="../media/owner-settings.png" alt-text="Screen capture showing the owner settings.":::
+    :::image type="content" source="../media/owner-settings-updated-v2.png" lightbox="../media/owner-settings-updated-v2.png" alt-text="Screen capture showing the owner settings.":::
 
   - Role assignments, where admins can view existing role assignments and assign Copilot roles to users.
   
@@ -44,9 +44,19 @@ From the home menu, the user can navigate as follows:
 
     :::image type="content" source="../media/usage-monitoring.png" lightbox="../media/usage-monitoring.png" alt-text="Screen capture showing the usage monitoring dashboard.":::
 
-- Settings, which include preferences along with data and privacy statements. The preferences settings allow users to configure the theme. Users with admin settings can configure who can add and manage custom plugins.
+- Settings, which include configurable preferences, data and privacy statements, and information about the App version.
 
-    :::image type="content" source="../media/settings-preferences-v2.png" lightbox="../media/usage-monitoring.png" alt-text="Screen capture showing the preferences that can be configured.":::
+  - The preferences settings allow users to configure the theme, language, and time zone. Copilot supports many languages. For detailed information see [Supported languages](/security-copilot/supported-languages#supported-languages).
+   
+    For users with owner role permissions, the preferences page includes more configuration options. Owners can configure options plugins, file upload, and the response debugging level.
+
+    :::image type="content" source="../media/settings-preferences-all-user-settings-v2.png" lightbox="../media/settings-preferences-all-user-settings-v2.png" alt-text="Screen capture showing the preferences that can be configured by any user.":::
+
+    :::image type="content" source="../media/settings-preferences-owner-specific-settings.png" lightbox="../media/settings-preferences-owner-specific-settings.png" alt-text="Screen capture showing the preferences that can be configured by owners.":::
+
+  - The data and privacy page provides links to the privacy statement, terms and conditions, and location information for where data is stored.
+  
+  -  The About page provides information of the app version for Copilot.
 
 - Tenant switcher. The tenant, which is provisioned for Copilot doesn't need to be the tenant your security analyst logs in from. In the screenshot that follows, security analyst Angus MacGregor uses a Fabrikam account to sign in. Copilot is provisioned in the Contoso tenant. By selecting the down arrow, Angus MacGregor is able to select the Contoso tenant.
 
@@ -68,7 +78,7 @@ The landing page of the standalone experience displays cards for a subset of the
 
 Select the title of the promptbook to open a page with more detailed information for the promptbook, including the input required to run the promptbook and a list of the prompts included. From this page, you can start a new session.
 
-:::image type="content" source="../media/promptbook-example.png" lightbox="../media/landing-page-promptbooks-mark-up.png" alt-text="Screen capture showing information for the Vulnerability Impact Assessment promptbook.":::
+:::image type="content" source="../media/promptbook-example.png" lightbox="../media/promptbook-example.png" alt-text="Screen capture showing information for the Vulnerability Impact Assessment promptbook.":::
 
 For a complete listing of all the available promptbooks, select View promptbook library.
 
@@ -108,14 +118,28 @@ Copilot integrates with security-specific sources using plugins and files.
 
 - Files - Connections to an organization's knowledge bases gives Copilot more context, resulting in responses that are more relevant, specific, and customized to the user. Uploading a file is one approach that Copilot uses to connect to an organization's knowledge base.
 
-You access and manage sources through the sources icon that is included in the prompt bar. The Manage sources window lists the plugins tab (the default view) and the files tab. 
+You access and manage sources through the sources icon that is included in the prompt bar. The Manage sources window lists the plugins tab (the default view) and the files tab.
 
-:::image type="content" source="../media/manage-sources-icon-mapping-v2.png" lightbox="../media/manage-sources-icon-mapping-v2.png" alt-text="Screen capture showing the sources icon that when selected allows the user to select plugins or files. The default view opens to the plugins page.":::
+:::image type="content" source="../media/manage-sources-icon-mapping-v3.png" lightbox="../media/manage-sources-icon-mapping-v3.png" alt-text="Screen capture showing the sources icon that when selected allows the user to select plugins or files. The default view opens to the plugins page.":::
 
 Refer to subsequent units in this module for detailed information on plugins and connection to knowledge bases.
 
 ### Help
 
-The help icon is located on the bottom right of the Copilot landing page. By selecting the help icon, users can link to documentation, frequently access questions (FAQs), an interactive tour to review key features, and more.
+The help icon is located on the bottom right of the Copilot landing page. 
 
 :::image type="content" source="../media/help-to-help-list.png" lightbox="../media/help-to-help-list.png" alt-text="Screen capture showing the help icon and the help window.":::
+
+By selecting the help icon, you can link to documentation, or if you encounter issues or need to seek assistance, Copilot for Security provides a modern and advanced support experience. Depending on your role, the widget allows you to:
+
+- Find solutions to common problems.
+- Submit a support case to the Microsoft support team.
+
+
+***Find solutions to common problems***. Anyone with access to Copilot for Security can access the self help widget by selecting the help icon then selecting the Help tab. Type your question in the prompt bar and articles related to your search will be surfaced.
+
+:::image type="content" source="../media/help-icon-self-help.png" lightbox="../media/help-icon-self-help.png" alt-text="Screen capture showing the self-help prompt bar and articles related to the entered prompt.":::
+
+***Submit a support case to the Microsoft support team***. To open support cases, you must have, at a minimum, a Service Support Administrator OR Helpdesk Administrator role. You can also view your support history.
+
+:::image type="content" source="../media/contact-support-tab.png" lightbox="../media/contact-support-tab.png" alt-text="Screen capture showing the form to get support from an agent.":::
