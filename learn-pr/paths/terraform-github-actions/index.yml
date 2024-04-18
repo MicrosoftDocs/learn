@@ -1,0 +1,39 @@
+### YamlMime:LearningPath
+uid: learn.terraform-github-actions
+metadata:
+  title: Terraform on Azure automation with GitHub Actions
+  description: Learn how Terraform enables you to manage infrastructure deployments on Azure.
+  brand: azure
+  ms.date: 04/18/2024
+  author: jaredfholgate
+  ms.author: jaredholgate
+  ms.topic: learning-path
+title: Terraform on Azure automation with GitHub Actions
+summary: |
+  Terraform enables you to deploy Azure resources. Terraform uses a declarative syntax that you treat like application code.
+  Treating your infrastructure as code enables you to track changes to your infrastructure requirements and makes your
+  deployments more consistent and repeatable.
+
+  Terraform provides a concise syntax and type safety for you Azure infrastrcuture declarations.
+
+  THIS LEARNING PATH IS UNDER CONSTRUCTION. CHECK BACK SOON FOR UPDATES.
+
+  Each module in this learning path provides examples for use with the Azure CLI. You'll use Visual Studio Code to write and validate your Terraform code.
+
+  [!include[](../../includes/terraform-paths.md)]
+prerequisites: Familiarity with Azure Resources and Azure resource groups is recommended, but not required.
+iconUrl: /training/achievements/terraform/terraform-github-actions.svg
+levels:
+- advanced
+roles:
+- developer
+- administrator
+- solution-architect
+products:
+- azure
+- azure-resource-manager
+- github
+modules:
+- learn.azure.terraform-introduction-to-infrastructure-as-code
+trophy:
+  uid: learn.terraform-github-actions.trophy
