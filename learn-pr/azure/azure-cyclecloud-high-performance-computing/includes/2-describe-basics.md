@@ -1,4 +1,4 @@
-Many organizations want to transition their on-premises HPC workloads to Azure to benefit from its hyperscale capabilities. They also want to minimize the learning curve associated with such a transition and use the expertise associated with the existing deployments, such as a specific HPC scheduler. Finally, they seek insight into the performance and cost of the cloud-based cluster resources, in the manner that parallels their on-premises environments.
+Many organizations want to transition their on-premises HPC workloads to Azure to benefit from its hyperscale capabilities. They also want to minimize the learning curve associated with such a transition and use the expertise associated with the existing deployments, such as a specific HPC scheduler. Finally, they seek insight into the performance and cost of cloud-based cluster resources, in the manner that parallels their on-premises environments.
 
 Implementing a custom solution that addresses these needs is challenging. It requires in-depth knowledge of Azure compute, networking, and storage resources that serve as building blocks of cloud-based HPC clusters. Also, without a corresponding management interface, operating such a solution by relying on standard Azure management tools would result in significant administrative overhead.
 
@@ -11,7 +11,7 @@ Azure CycleCloud addresses these concerns, providing a simple, secure, and scala
 
 Azure CycleCloud is a tool for deploying HPC clusters in Azure and managing their workloads. It offers a wide range of HPC capabilities, including:
 
-- **Template-based deployment of HPC clusters**. Azure CycleCloud provides built-in customizable templates for deployment of the most common cluster schedulers, including Slurm, OpenPBS, LSF, Grid Engine, and HTCondor. Many other predefined templates, which you can import into your Azure CycleCloud instance, are available from the CycleCloud GitHub repository.
+- **Template-based deployment of HPC clusters**. Azure CycleCloud provides built-in customizable templates for deploying the most common cluster schedulers, including Slurm, OpenPBS, LSF, Grid Engine, and HTCondor. Many other predefined templates, which you can import into your Azure CycleCloud instance, are available from the CycleCloud GitHub repository.
 
    > [!NOTE]
    > Templates are INI-formatted files that use declarative syntax to describe how nodes are organized in a CycleCloud cluster, including their respective relationships. Templates contain references to projects, which define node configuration.
@@ -20,13 +20,13 @@ Azure CycleCloud is a tool for deploying HPC clusters in Azure and managing thei
 
 - **Node configuration through cloud-init scripts**. Azure CycleCloud supports configuration management based on custom scripts that run within managed cluster nodes before any other CycleCloud-specific configuration tasks.
 
-- **Management of the internal and external cluster storage**. Azure CycleCloud allows you to configure cluster storage by provisioning, mounting, and formatting Azure managed disks and Network Attached Storage such as NFS servers or BeeGFS clusters.
+- **Management of the internal and external cluster storage**. Azure CycleCloud allows you to configure cluster storage by provisioning, mounting, and formatting Azure managed disks and network attached storage such as NFS servers or BeeGFS clusters.
 
 - **Monitoring, logging, and alerting**. Azure CycleCloud offers built-in cluster monitoring and integrates with Azure Monitor. It's also possible to store log data from CycleCloud clusters to Log Analytics and create custom metrics dashboards. In addition, you can create custom alerts and email notifications triggered by telemetry data. All Azure CycleCloud activities are logged.
 
 - **Authentication and authorization**. Azure CycleCloud supports built-in local authentication. Alternatively, you can integrate it with Active Directory Domain Services or other Lightweight Directory Access Protocol (LDAP)-based identity providers. By default, the locally defined users have access to the operating system on the managed cluster nodes, but it's possible to administer cluster users separately. For management of resources in an Azure subscription, you can use a Microsoft Entra service principal or managed identity.
 
-- Near-realtime cost reporting and controls. Azure CycleCloud tracks cluster usage and estimates the corresponding cost. This feature allows you to set up budget alerts triggered when the cluster cost exceeds the monetary amount you specified. Azure CycleCloud also integrates with Microsoft Cost Management.
+- **Near-realtime cost reporting and controls**. Azure CycleCloud tracks cluster usage and estimates the corresponding cost. This feature allows you to set up budget alerts triggered when the cluster cost exceeds the monetary amount you specified. Azure CycleCloud also integrates with Microsoft Cost Management.
 
 ## How do you implement and use Azure CycleCloud?
 

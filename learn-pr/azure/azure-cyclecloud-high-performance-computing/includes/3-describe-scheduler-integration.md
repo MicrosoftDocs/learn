@@ -1,6 +1,6 @@
 Using cloud agility allows companies to fully benefit from the hyperscale capabilities of Azure while minimizing the operational cost associated with the use of compute resources. The ability to automatically scale the amount of resources in response to their usage patterns is a core component of that agility. In the context of the Azure CycleCloud and HPC, this translates into implementing a close correlation between the resource demands of cluster jobs and the number of cluster compute nodes.
 
-In general, the orchestration of scaling of cluster nodes is the responsibility of schedulers. Schedulers need to be able to communicate their demands to the platform that provides compute resources. Azure CycleCloud helps implement this functionality. In this unit, you learn about the principles of this implementation.
+In general, the orchestration of cluster node scaling is the responsibility of schedulers. Schedulers need to be able to communicate their demands to the platform that provides compute resources. Azure CycleCloud helps implement this functionality. In this unit, you learn about the principles of this implementation.
 
 ## What is the role of Azure CycleCloud in cluster autoscaling?
 

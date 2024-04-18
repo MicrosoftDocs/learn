@@ -6,7 +6,7 @@ Contoso, Ltd. is an oceanographic and meteorological services company based in H
 
 The newly initiated project involves several simulations that track storms moving through the US Gulf Coast during storm season. Unfortunately, an initial assessment determined that the existing on-premises HPC cluster doesn't have sufficient compute capacity to run the simulations.
 
-As the lead research engineer, you want to use the Contoso's existing Azure subscription to provision a new HPC cluster. To use your team's technical expertise, you want to ensure that the cluster you deploy in Azure closely matches the architecture and software stack of the on-premises cluster. At the same time, you need to consider the directives from your management team, who stressed the importance of keeping the cluster's cost within the project's budget.
+As the lead research engineer, you want to use Contoso's existing Azure subscription to provision a new HPC cluster. To use your team's technical expertise, you want to ensure that the cluster you deploy in Azure closely matches the architecture and software stack of the on-premises cluster. At the same time, you need to consider the directives from your management team, who stressed the importance of keeping the cluster's cost within the project's budget.
 
 You start exploring the options for deploying, operating, and monitoring HPC clusters in Azure. To simplify these tasks, you decide to evaluate the functionality of Azure CycleCloud.
 

@@ -1,4 +1,4 @@
-You can create new clusters directly from the graphical interface of the CycleCloud web application. CycleCloud offers many predefined, scheduler-specific templates, which simplify cluster provisioning for the corresponding schedulers.
+You can create new clusters directly from the graphical interface of the Azure CycleCloud web application. CycleCloud offers many predefined, scheduler-specific templates, which simplify cluster provisioning for the corresponding schedulers.
 
 Now that you provisioned an Azure virtual machine that hosts the CycleCloud web applications, you're ready to evaluate its use for deployment of a Slurm-based HPC cluster into Azure. You first need to ensure that your Azure subscription accommodates the cluster's resource requirements. You also want to consider whether your management team wants to keep the cluster's cost within the project's budget. So, you plan to set up CycleCloud budget alerts and deprovision the lab environment after you complete the evaluation.
 
@@ -82,7 +82,7 @@ Now you have the CycleCloud web application installed in an Azure VM, enough vCP
     :::image type="content" source="../media/u5-cyclecloud-create-new-cluster-required-settings.png" alt-text="Screenshot that shows the Required Settings tab of the New Slurm Cluster page of the Azure CycleCloud web application." border="false":::
 
     > [!NOTE]
-    > The **Max VMs per Scaleset** setting limits the maximum size of an Message Passing Interface job that can run on the cluster, since the scaleset is currently the InfiniBand fabric boundary.
+    > The **Max VMs per Scaleset** setting limits the maximum size of a Message Passing Interface job that can run on the cluster, since the scaleset is currently the InfiniBand fabric boundary.
 
 1. On the **Network Attached Storage** tab of the **New Slurm Cluster** page, verify that the **NFS Type** is set to **Builtin**. Accept the default value of **Size (GB)** set to **100**, and select **Next**.
 
@@ -145,6 +145,6 @@ You completed testing of the cluster deployment process by using the Azure Cycle
 
 1. In the Azure portal, navigate to the **cyclecloud-rg** blade. Select the **Delete resource group** entry in the toolbar, and in the **TYPE THE RESOURCE GROUP NAME** textbox, enter **cyclecloud-rg**, and then select **Delete**.
 
-1. Repeat the previous step to delete the resource group with the name starting with **"contoso-slurm-lab-cluster-** which contains the disk resource used by the cluster.
+1. Repeat the previous step to delete the resource group with the name starting with **contoso-slurm-lab-cluster-** that contains the disk resource used by the cluster.
 
 Congratulations! You successfully completed the second exercise of this module. You ensured the availability of compute and network resources that are required to accommodate deployment of a new cluster. Then, you deployed the cluster by using Azure CycleCloud, configured its budget alerts, and started it to validate its functionality. Finally, you terminated the cluster and deleted all resources you provisioned in this module to avoid any unnecessary costs.
