@@ -1,4 +1,4 @@
-The Contoso Windows Server administrator will need to determine what workloads and scenarios are appropriate for VMs and which are more suitable for containers. They will assess the characteristics of VM and container workloads, scenarios where they can be used, and in what circumstances container workloads can be used to increase efficiency.
+The Contoso Windows Server administrator needs to determine what workloads and scenarios are appropriate for VMs and which are more suitable for containers. They'll assess the characteristics of VM and container workloads, scenarios where they can be used, and in what circumstances container workloads can be used to increase efficiency.
 
 **VMs versus containers**
 
@@ -6,7 +6,7 @@ Both VMs and containers are virtualization technologies used to provide isolated
 
 - VMs simulate an entire computer, including virtualized hardware, the OS, user mode, and its own kernel mode. VMs are quite agile and provide tremendous support for applications; however, VMs tend to be large and consume host machine resources.
 
-- Containers (as previously described) build upon the host operating system's kernel and contain an isolated user mode process for the packaged app. This helps to make containers very lightweight and fast to launch. Different from VMs, containers can be easily moved from development, to test, to production environments. However, because the OS is not quite the same, not all applications run the same (or at all) on a container environment.
+- Containers (as previously described) build upon the host operating system's kernel and contain an isolated user mode process for the packaged app. This helps to make containers very lightweight and fast to launch. Different from VMs, containers can be easily moved from development, to test, to production environments. However, because the OS isn't quite the same, not all applications run the same (or at all) on a container environment.
 
 **Similarities and differences**
 
@@ -30,13 +30,13 @@ The following table summarizes the similarities of and differences between featu
 
 At a high level, containers:
 
-- Require relatively few resources. They are less resource-intensive than VMs.
+- Require relatively few resources. They're less resource-intensive than VMs.
 
 - Start up quickly. Container startup times are roughly equivalent to the time required to start a new process.
 
 - Improve server density. Containers enable more efficient utilization of memory, disk, and CPU from the available hardware than VMs. This results in fewer idle servers, resulting in better utilization of the existing compute resources. This is especially important for cloud providers and users because it can reduce costs.
 
-- Portability. Containers behave the same regardless of the environment they are running. A container will have the dependencies for an application to work. This allows a container to perform the same between dev, test, and production as well as between on-premises and cloud.
+- Portability. Containers behave the same regardless of the environment they're running. A container will have the dependencies for an application to work. This allows a container to perform the same between dev, test, and production as well as between on-premises and cloud.
 
 The following graphic provides a comparison of isolation and efficiency between PCs, VMs, containers, and processes, and illustrates that:
 
@@ -54,7 +54,7 @@ The following graphic provides a comparison of isolation and efficiency between 
 
 	- PCs don't share any of these.
 
-![Comparison of isolation and efficiency between PCs, VMs, containers, and processes.](../media/run-containers-on-windows-server-02.png)
+![Diagram showing comparison of isolation and efficiency between PCs, VMs, containers, and processes.](../media/run-containers-on-windows-server-02.png)
 
 > [!Tip]
 > For persistent storage, you can use a bind mount to mount a location on the local machine. Files within the location will be available when you restart a container, or if you want to share the files with multiple containers. If you want a container to run on multiple machines with access to the same files, then a named volume or SMB mount should be used instead.
@@ -72,7 +72,7 @@ Use a VM when you:
 
 - Need to run an app that requires all the resources and services of a full OS, such as a graphical user interface (GUI).
 
-- Need an environment that preserves changes and is persistent. Example: Databases are not good candidates to run on containers.
+- Need an environment that preserves changes and is persistent. Example: Databases aren't good candidates to run on containers.
 
 - Require full isolation and security.
 
@@ -84,6 +84,6 @@ Use a container when you:
 
 - Need to deploy multiple instances of a single app - auto-scale and/or horizontal scale are needed.
 
-- Need to run an app or process that's nonpersistent in an on-demand basis.
+- Need to run an app or process that's non-persistent in an on-demand basis.
 
 - Need to deploy an app that can run on any underlying infrastructure.
