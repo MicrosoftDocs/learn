@@ -4,7 +4,7 @@ title: Manage life cycle for storage account access keys
 metadata:
   title: Manage life cycle for storage account access keys
   description: "Manage life cycle for storage account access keys"
-  ms.date: 02/16/2024
+  ms.date: 04/18/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-manage-storage-account-access-keys.md)]
+  [!include[](includes/4-manage-storage-account-access-keys.md)]
