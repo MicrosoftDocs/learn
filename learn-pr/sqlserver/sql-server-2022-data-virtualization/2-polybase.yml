@@ -20,15 +20,15 @@ quiz:
     choices: 
     - content: "True"
       isCorrect: false
-      explanation: "Object storage is recommended for Big Data, Internet of Things (IoT), Analytics, AI and Machine Learning workloads, not high transactional workloads."
+      explanation: "Object storage is recommended for Big Data, Internet of Things (IoT), Analytics, AI, and Machine Learning workloads, not high-transactional or online transactional processing (OLTP) workloads."
     - content: "False"
       isCorrect: true
-      explanation: "Object storage architecture was designed to leverage Big Data, Internet of Things (IoT), Analytics, AI, and Machine Learning workloads, not transactional or OLTP processing."
+      explanation: "Object storage architecture was designed for Big Data, Internet of Things (IoT), Analytics, AI, and Machine Learning workloads, not high-transactional workloads."
   - content: "To run the PolyBase feature, you need to install and enable the **PolyBase Query Service for External Data** option."
     choices: 
     - content: "True"
       isCorrect: true
-      explanation: "Not all PolyBase data sources need to have the PolyBase services configured and running, but they all require the **PolyBase Query Service for External Data** to be installed and enabled."
+      explanation: "All PolyBase data sources require the **PolyBase Query Service for External Data** to be installed and enabled, even those that don't use the PolyBase services."
     - content: "False"
       isCorrect: false
       explanation: "Not all PolyBase data sources need to have the PolyBase services configured and running, but they all require the **PolyBase Query Service for External Data** to be installed and enabled."
@@ -36,7 +36,7 @@ quiz:
     choices: 
     - content: "True"
       isCorrect: false
-      explanation: "SQL Server 2022 only supports object storage that is S3-compatible."
+      explanation: "SQL Server 2022 supports S3-compatible object storage only."
     - content: "False"
       isCorrect: true
-      explanation: "SQL Server 2022 only supports object storage that is S3-compatible."
+      explanation: "SQL Server 2022 supports S3-compatible object storage only."

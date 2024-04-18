@@ -4,7 +4,7 @@ ms.custom:
 ---
 This unit takes a closer look at the CREATE EXTERNAL TABLE AS SELECT (CETAS) command and the benefits it provides.
 
-CETAS supports Azure Blob Storage, Azure Data Lake Storage, and S3-compatible object storage as well as external databases. CETAS also supports exporting file formats as either a CSV or Parquet file.
+CETAS supports Azure Blob Storage, Azure Data Lake Storage, S3-compatible object storage, and external databases. CETAS also supports exporting file formats as either a CSV or Parquet file.
 
 CETAS' most powerful capability is to combine with other SELECT operations, such as combining with OPENROWSET or with other external tables. This combination allows CETAS to be used in different and flexible ways.
 
@@ -18,7 +18,7 @@ There are many different use cases for CETAS, but the three major ones are:
 
 ### Reporting
 
-The most obvious use case for CETAS is to simplify data export by using all the capabilities of PolyBase and SQL Server flexibility. You can connect to any supported data source, table, or file, and use T-SQL to manipulate and export the results. For example, instead of connecting reporting tools to SQL Server, you can use CETAS to perform all the necessary queries, export the result as a Parquet file, and point the reporting tool to the exported data.
+The most obvious use case for CETAS is to simplify reporting by using all the capabilities of PolyBase and SQL Server flexibility. You can connect to any supported data source, table, or file, and use T-SQL to manipulate and export the results. For example, instead of connecting reporting tools to SQL Server, you can use CETAS to perform all the necessary queries, export the result as a Parquet file, and point the reporting tool to the exported data.
 
 ### Data tiering or offloading
 
@@ -26,15 +26,15 @@ Another common scenario is exporting archive or read-only data out of SQL Server
 
 For example, imagine your `order` table has historical data of past years that doesn't change, but you still need it to be fully accessible. CETAS can help export all `order` table data to another location, reducing database size and required maintenance time. With an external table, the exported data behaves just like a regular table.
 
-### Data exporting hub
+### Data export hub
 
-By using SQL Server 2022 as a data hub, you can combine CETAS capabilities with all the other known PolyBase capabilities, including the ability to connect to other data sources like Oracle, Teradata, ODBC, or other versions of SQL Server.
+By using SQL Server 2022 as a data hub, you can combine CETAS with all existing PolyBase capabilities, including connecting to other data sources like Oracle, Teradata, ODBC, or other versions of SQL Server.
 
 ## Enable CETAS
 
 To use CETAS, you need to enable the property `ALLOW POLYBASE EXPORT` by using `sp_configure`. For details, see the next exercise.
 
-:::image type="content" source="../media/allow-polybase-export.png" alt-text="Screenshot of SSMS configuring the option to allow PolyBase export.":::
+:::image type="content" source="../media/allow-polybase-export.png" alt-text="Screenshot of configuring the option to allow PolyBase export.":::
 
 ###  CETAS permissions
 
@@ -47,7 +47,7 @@ To use CETAS, you need three different levels of permission:
   For the database user to execute the CETAS command, they need **ADMINISTER BULK OPERATIONS**, **ALTER ANY EXTERNAL DATA SOURCE**, and **ALTER ANY EXTERNAL FILE FORMAT** permissions.
 
 - Write permission on the destination to write the CETAS results.
-  To be able to write to the destination, Parquet, or CSV file, the user needs write permissions on the destination. For example, to write to Azure Blob Storage or Azure Data Lake Storage, the user needs **LIST**, **READ**, **CREATE**, and **WRITE** permissions on those destinations.
+  To be able to write to the destination, Parquet, or CSV file, the user needs write permissions on the destination. For example, to write to Azure Blob Storage or Azure Data Lake Storage, the user needs **LIST**, **READ**, **CREATE**, and **WRITE** permissions on those destinations. For details, see the next exercise.
 
 For more information about permissions for CETAS, see [CREATE EXTERNAL TABLE AS SELECT (CETAS) permissions](/sql/t-sql/statements/create-external-table-as-select-transact-sql#permissions).
 
@@ -63,7 +63,7 @@ The input can be a table running locally on your SQL Server instance, a network 
 
 ## CETAS T-SQL structure
 
-To better understand CETAS, break down the overall T-SQL syntax. CETAS T-SQL structure follows a bottom-up logic approach. It's easier to start at the end of the statement, and then work your way to the top of the T-SQL statement.
+To better understand CETAS, you can break down the overall T-SQL syntax. CETAS T-SQL structure follows a bottom-up logic approach. It's easier to start at the end of the statement, and then work your way to the top of the T-SQL statement.
 
 :::image type="content" source="../media/create-external-table-as-select-t-sql-structure.png" alt-text="Image of the T-SQL structure of CREATE EXTERNAL TABLE as SELECT statement." border="false":::
 
@@ -104,3 +104,5 @@ FROM OPENROWSET(BULK N'/delta/sales_fy22/',
 FORMAT = 'DELTA',
 DATA_SOURCE = 's3_delta') AS [r];
 ```
+Proceed to the next unit to use CETAS to export a table as Parquet.
+

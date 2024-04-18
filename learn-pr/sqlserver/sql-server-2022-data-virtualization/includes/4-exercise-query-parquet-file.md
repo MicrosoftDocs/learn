@@ -33,7 +33,7 @@ The setup wizard installs two PolyBase services:
 
 - **SQL Server PolyBase Data Movement**
   - Service executable: `mpdwsvc.exe -dms`
-  - Transfers data between external data sources as well as between PolyBase head and compute nodes (SQL Server 2019).
+  - Transfers data between external data sources and between PolyBase head and compute nodes (SQL Server 2019).
   - Inserts data into other data sources, such as Azure Storage.
 
 For complete information and prerequisites for PolyBase installation, see:
@@ -44,7 +44,7 @@ For complete information and prerequisites for PolyBase installation, see:
 
 ## Enable PolyBase
 
-Once you install the service, connect to your SQL Server 2022 instance in SSMS and run the following command to enable PolyBase.
+Once you install the service, connect to your SQL Server 2022 instance in SQL Server Management Studio (SSMS) and run the following command to enable PolyBase.
 
 ```sql
 EXEC SP_CONFIGURE @CONFIGNAME = N'POLYBASE ENABLED', @CONFIGVALUE = 1;
@@ -168,7 +168,7 @@ ORDER BY confirmed DESC
 
 ## Create and query an external table
 
-OPENROWSET is optimized for ad-hoc execution and data exploration. External tables are better suited for recurring access, because they can also leverage statistics.
+OPENROWSET is optimized for ad-hoc execution and data exploration. External tables are better suited for recurring access, because they can also use statistics.
 
 ### Discover the schema of the external table
 
@@ -190,7 +190,7 @@ You can see that `sp_describe_first_result_set` returned the column names, types
 
 ### Create the external file format
 
-Because you have to reference the Parquet file to the external table, you first need to run `CREATE EXTERNAL FILE FORMAT` to add the Parquet file format. The file format definition is important for external tables because it specifies the actual layout as well as compression type.
+Because you have to reference the Parquet file to the external table, you first need to run `CREATE EXTERNAL FILE FORMAT` to add the Parquet file format. The file format definition is important for external tables because it specifies the actual layout and compression type.
 
 Run the following command:
 

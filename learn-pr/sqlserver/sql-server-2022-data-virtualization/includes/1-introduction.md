@@ -30,7 +30,7 @@ Data virtualization has the following major benefits:
 
 - **No data movement:** Access data in its current location.
 
-- **T-SQL language:** Leverage all the benefits of the T-SQL language, its commands, enhancements, and familiarity.
+- **T-SQL language:** Use all the benefits of the T-SQL language, its commands, enhancements, and familiarity.
 
 - **One source for all your data:** Use SQL Server 2022 as a single data source and data hub for all required data, hiding data complexity from applications. Database administrators and data engineers can maintain a single environment.
 
@@ -54,13 +54,13 @@ After you complete this module, you:
 
   - Understand the benefits and principles of data virtualization.
   - Know what PolyBase is and how to use its capabilities.
-  - Are familiar with object storage solutions.
+  - Are familiar with object storage solutions and SQL Server 2022 support for S3-compatible object storage.
   - Can install and configure PolyBase on SQL Server 2022.
-  - Can access and query external data from SQL Server 2022 by using PolyBase.
+  - Can access and query external data by using PolyBase in SQL Server 2022.
 
 ## Prerequisites
 
-- Basic working knowledge of SQL Server
+- Basic working knowledge of SQL Server 2022
 - Fundamental knowledge of T-SQL and SQL query execution
 - SQL Server 2022 installed
 - SQL Server Management Studio (SSMS) installed

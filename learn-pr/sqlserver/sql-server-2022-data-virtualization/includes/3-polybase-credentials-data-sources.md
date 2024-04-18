@@ -36,7 +36,7 @@ The **Connector location prefix** informs SQL Server of the type of endpoint you
 | Oracle | `oracle` | `<server_name>[:port]` | Basic authentication only |
 | Teradata | `teradata` | `<server_name>[:port]` | Basic authentication only |
 | MongoDB or Cosmos DB API for MongoDB | `mongodb` | `<server_name>[:port]` | Basic authentication only |
-| Generic ODBC | `odbc` | `<server_name>[:port]` | Basic authentication only |
+| Generic Open Database Connectivity (ODBC) | `odbc` | `<server_name>[:port]` | Basic authentication only |
 | Bulk operations | `https` | `<storage_account>.blob.core.windows.net/<container>` | SAS |
 | S3-compatible object storage | `s3` | `s3://<server_name>:<port>/` |  |
 

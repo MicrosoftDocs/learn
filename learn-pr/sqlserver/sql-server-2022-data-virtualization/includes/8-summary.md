@@ -8,9 +8,9 @@ You now have a good understanding of:
 
 - The benefits and principles of data virtualization.
 - What PolyBase is, and how you can use its capabilities.
-- Object storage solutions.
+- Object storage solutions, and SQL Server 2022 support for S3-compatible object storage.
 - How to install and configure PolyBase on SQL Server 2022.
-- How to access external data from SQL Server 2022 by using PolyBase.
+- How to use SQL Server 2022 to access and query external data by using PolyBase.
 
 ## Learn more
 

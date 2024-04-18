@@ -20,7 +20,7 @@ In this exercise, you:
 
 ## Use CETAS to export a table as Parquet
 
-Imagine that you work with a business analytics team that wants to export data older than 2012 from a SQL Server table to an Azure Blob Storage container. You want the team to run their report queries on this exported data rather than directly querying SQL Server.
+Imagine that you work with a business analytics team that wants to export data older than 2012 from a SQL Server table to an Azure Blob Storage container. They want to run their report queries on this exported data rather than directly querying SQL Server.
 
 1. Enable CETAS on the SQL Server instance.
 
@@ -28,7 +28,7 @@ Imagine that you work with a business analytics team that wants to export data o
     EXEC SP_CONFIGURE @CONFIGNAME = 'ALLOW POLYBASE EXPORT', @CONFIGVALUE = 1;
     ```
 
-1. Execute the following query to understand the data that you want to export. In this case, you're looking for data that's from 2012 or earlier. You want to export all data from 2011 and 2012.
+1. Execute the following data exploration query to understand what data you want to export. In this case, you're looking for data that's from 2012 or earlier. You want to export all data from 2011 and 2012.
 
     ```sql
     -- RECORDS BY YEARS
@@ -107,7 +107,7 @@ Imagine that you work with a business analytics team that wants to export data o
 
 1. Check your Azure Blob Storage in the Azure portal. You should see the following structure created. SQL Server 2022 automatically creates the filename based on how much data it exports and the file format.
 
-   :::image type="content" source="../media/parquet-azure-storage.png" alt-text="Screenshot from the Azure portal showing the parquet file in Azure Storage.":::
+   :::image type="content" source="../media/parquet-azure-storage.png" alt-text="Screenshot from the Azure portal showing the Parquet file in Azure Storage.":::
 
 1. You can now access the external table like a regular table.
 
@@ -132,9 +132,9 @@ First, clone the original table, because you want to simulate exporting and remo
 SELECT * INTO [PURCHASING].[PURCHASEORDERDETAIL_2] FROM [PURCHASING].[PURCHASEORDERDETAIL]
 ```
 
-From the previous exercise, you know there are 5551 records from 2014. Everything before 2014 should be exported to a folder identified by year. Data from 2011 goes into a folder called `2011`, and so on. 
+From the first data exploration query, you know there are 5551 records from 2014. Everything before 2014 should be exported to a folder identified by year. Data from 2011 goes into a folder called `2011`, and so on. 
 
-1. Run the following statements:
+1. To create the external tables, run the following commands:
 
     ```sql
     CREATE EXTERNAL TABLE ex_2011
@@ -205,11 +205,11 @@ From the previous exercise, you know there are 5551 records from 2014. Everythin
     WHERE YEAR([DUEDATE]) = 2013;
     ```
 
-1. After you execute these three commands, refresh SSMS **Object Explorer**. Then open **Databases** > **AdventureWorks2022** > **Tables** > **External Tables** to see the external tables.
+1. After you execute these commands, refresh SSMS **Object Explorer**. Then open **Databases** > **AdventureWorks2022** > **Tables** > **External Tables** to see the external tables.
 
    :::image type="content" source="../media/external-tables-2011-2013.png" alt-text="Screenshot of SSMS showing the external tables for 2011, 2012, and 2013.":::
 
-   The following folders are created in the Azure Storage container:
+1. Confirm that the following folders appear in the Azure Storage container:
 
    :::image type="content" source="../media/azure-storage-folders-created.png" alt-text="Screenshot of the Azure portal storage container showing the folders created for our command.":::
 
@@ -240,7 +240,7 @@ UNION ALL
 SELECT * FROM  [PURCHASING].[PURCHASEORDERDETAIL_2] 
 ```
 
-You can run the data exploration query you used at the beginning of the exercise to see the data distribution, this time using the newly created view, to see the same results.
+You can run the original data exploration query, this time using the newly created view, to see the same results.
 
 ```sql
 SELECT  COUNT(*) AS QTY, DATEPART(YYYY, [DUEDATE]) AS [YEAR]
@@ -251,9 +251,9 @@ ORDER BY [YEAR]
 
 ### Use a wildcard search to query the data
 
-In the preceding example, you used a view with UNION statements to join the three external tables. Another way to achieve the desired results is to use a wildcard search to scan the folder structure, including subfolders for any data from a particular type.
+In the preceding example, you used a view with UNION statements to join the three external tables. Another way to achieve the desired results is to use a wildcard search to scan the folder structure, including subfolders, for any data of a particular type.
 
-The following T-SQL example allows OPENROWSET to search across the `ABS_Data` data source, including its subfolders, for Parquet files.
+The following T-SQL example uses OPENROWSET to search across the `ABS_Data` data source, including its subfolders, for Parquet files.
 
 ```sql
 SELECT COUNT(*) AS QTY, DATEPART(YYYY, [DUEDATE]) AS [YEAR]
@@ -268,7 +268,7 @@ ORDER BY [YEAR]
 
 ## Folder elimination and metadata information
 
-Both external tables and OPENROWSET can use the `filepath` function to collect and filter information based on the file metadata. The `filepath` function returns the full path of the file, the folder name, and the file name. You can use that information to further improve the search capabilities of both the external table and OPENROWSET commands.
+Both external tables and OPENROWSET can use the `filepath` function to collect and filter information based on file metadata. The `filepath` function returns full paths, folder names, and file names. You can use that information to improve the search capabilities of both the external table and OPENROWSET commands.
 
 ```sql
 SELECT
@@ -288,7 +288,7 @@ ORDER BY
 
 :::image type="content" source="../media/ssms-filepath-function.png" alt-text="Screenshot of SSMS showing the filepath function.":::
 
-If you want to ensure data from a particular folder is retrieved but still use the functionality of the wildcard search method, you can use the following query:
+If you want to retrieve data from a particular folder and still use the functionality of the wildcard search method, you can use the following query:
 
 ```sql
 SELECT  *
@@ -301,7 +301,7 @@ WHERE
  r.filepath(1) IN ('2011')
 ```
 
-The end result is the same, but by using the folder elimination metadata, your query accesses only the required folders instead of scanning the entire data source, producing better query performance. Keep this information in mind to help design your own storage architecture to better leverage capabilities. For example, here's a sample folder architecture:
+The end results are the same, but by using the folder elimination metadata, your query accesses only the required folders instead of scanning the entire data source, producing better query performance. Keep this information in mind when you design storage architectures to better leverage capabilities. For example, given the following folder architecture:
 
 :::image type="content" source="../media/folder-elimination-architecture.png" alt-text="Screenshot showing a folder architecture example in a storage container." border="false":::
 
@@ -319,8 +319,10 @@ WHERE
  r.filepath(2) IN ('<month>')
 ```
 
-In this example, it matters little how large the data grows. SQL Server queries or loads the data only from the desired folder, skipping all others. Only the folder content is read and loaded.
+For query purposes, it doesn't matter how large the data source grows. SQL Server loads, reads, and queries only the data from the selected folder, skipping all others.
 
-Because no data is stored in the database, the database administrator doesn't need to design a specific maintenance strategy to manage this data. Organizations must still take all the required precautions to safely maintain the data, including but not limited to backups, availability, and permissions.
+Because no data is stored in the database, the database administrator doesn't need to design a specific strategy to manage this data. The company must still take all the required precautions to safely maintain the data, including but not limited to backups, availability, and permissions.
 
-With this knowledge, you can combine OPENROWSET, external table, views, wildcard search, and filepath function to design a performant, durable, and scalable solution across every PolyBase supported data source. You can use CETAS to access and export data from another database like SQL Server, Oracle, Teradata, MongoDB, and others, or from Azure Blob Storage, Azure Data Lake Storage, or S3-compatible object storage.
+Congratulations! You used CETAS to move cold data out of a database into Azure Storage and export a table as Parquet file format. You learned ways to query the exernal data for exploration and to optimize performance.
+
+You can use this knowledge to combine OPENROWSET, external table, views, wildcard search, and filepath function to design a performant, durable, and scalable solution across every PolyBase supported data source. You can use CETAS to access and export data from another database like SQL Server, Oracle, Teradata, MongoDB, and others, or from Azure Blob Storage, Azure Data Lake Storage, or S3-compatible object storage.

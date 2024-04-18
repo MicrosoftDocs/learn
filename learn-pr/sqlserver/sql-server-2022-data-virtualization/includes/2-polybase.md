@@ -4,13 +4,23 @@ ms.custom:
 ---
 PolyBase is the feature that SQL Server uses to enable the data virtualization concept. PolyBase was originally released in SQL Server 2016 and is improved in each later version of SQL Server. The general concept of accessing data remotely without having to copy the data, however, dates from SQL Server 7.0 with the introduction of Linked Server.
 
-:::image type="content" source="../media/polybase-evolution.png" alt-text="An image of PolyBase enhancements in different versions of SQL Server, from 2016 to 2022." border="false":::
+<!-- :::image type="content" source="../media/polybase-evolution.png" alt-text="An image of PolyBase enhancements in different versions of SQL Server, from 2016 to 2022." border="false"::: -->
+
+|SQL Server 2016|SQL Server 2017|SQL Server 2019|SQL Server 2022|
+|-----|-----|-----|-----|
+|Hadoop|OPENROWSET enhancements|SQL Server|New connector framework|
+|Azure Blob Storage|CSV for Azure Blob Storage|Oracle|Object storage integration|
+||Database Scoped Credential|Azure Cosmos DB|CSV|
+|||MongoDB|Parquet|
+|||Teradata|Delta|
+|||Linux support|CETAS|
+|||Generic ODBC||
 
 ## PolyBase enhancements in SQL Server 2022
 
-SQL Server 2022 introduces the newest version of PolyBase, including the capability to query data where it lives, virtualize data, and use REST APIs. REST APIs enable SQL Server to be both more flexible and lightweight while expanding its range of supported connectors and file formats.
+SQL Server 2022 introduces the newest version of PolyBase, including the capability to query data where it lives, virtualize data, and use REST APIs. REST APIs enable SQL Server to be both more flexible and lightweight, while expanding its range of supported connectors and file formats.
 
-In addition to Azure Storage, SQL Server 2022 now supports CSV, Parquet, and Delta files stored in Azure Blob Storage, Azure Data Lake Storage, or any simple storage service (S3)–compatible object storage. SQL Server 2022 can use commands like CREATE EXTERNAL TABLE AS SELECT (CETAS), OPENROWSET, CREATE EXTERNAL TABLE (CET), and all new T-SQL enhancements, making SQL Server 2022 a powerful data hub.
+In addition to Azure Storage, SQL Server 2022 now supports CSV, Parquet, and Delta files stored in Azure Blob Storage, Azure Data Lake Storage, or any simple storage service (S3)–compatible object storage. SQL Server 2022 can use commands like CREATE EXTERNAL TABLE AS SELECT (CETAS), OPENROWSET, CREATE EXTERNAL TABLE (CET), and all new T-SQL enhancements, making it a powerful data hub.
 
 ## S3-compatible object storage
 
@@ -41,9 +51,9 @@ Some object storage partners offer the ability to run their solution as software
 
 ## PolyBase services vs. the PolyBase REST API feature
 
-To use PolyBase, you must install the **PolyBase Query Service for External Data** and enable PolyBase at an instance level by using `sp_configure`. PolyBase setup installs two PolyBase services, **SQL Server PolyBase Engine** and **SQL Server PolyBase Data Movement**. Data sources that use the new PolyBase REST API architecture don't require these services to be running or configured, only the PolyBase feature to be installed and enabled at the instance level.
+To use PolyBase, you must install the **PolyBase Query Service for External Data** and enable PolyBase at an instance level by using `sp_configure`. PolyBase setup installs two PolyBase services, **SQL Server PolyBase Engine** and **SQL Server PolyBase Data Movement**. Data sources like SQL Server, Oracle, MongoDB, or ODBC-based sources use these PolyBase services.
 
-You can use the new REST API-based PolyBase architecture in SQL Server 2022 to access Azure Data Lake Storage, Azure Blob Storage, any S3-compatible object storage, and file formats such as Parquet, Delta, and CSV files. Existing data sources like SQL Server, Oracle, MongoDB, or ODBC-based sources use the PolyBase services.
+Data sources that use the new SQL Server 2022 REST API-based PolyBase architecture don't require these services to be running or configured, only the PolyBase feature to be installed and enabled. You can use the PolyBase REST APIs to access Azure Data Lake Storage, Azure Blob Storage, any S3-compatible object storage, and file formats such as Parquet, Delta, and CSV files. Previously-supported data sources still use the PolyBase services.
 
 |Data source |PolyBase services |PolyBase REST API feature|
 |---------|---------|---------|
@@ -54,6 +64,6 @@ You can use the new REST API-based PolyBase architecture in SQL Server 2022 to a
 |Oracle |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |
 |Teradata |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |
 |MongoDB or Cosmos DB API for MongoDB |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |
-|Generic ODBC |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |
+|Generic Open Database Connectivity (ODBC) |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |
 |Bulk operations |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |
 
