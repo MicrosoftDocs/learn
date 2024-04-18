@@ -3,6 +3,7 @@ A session is a particular conversation within Copilot and consists of one or mor
 Copilot has features that are common across all sessions and the individual prompts that make up a session, including:
 
 - The process log
+- Actions you can take a prompt and its response
 - Prompt feedback
 - The pin board
 
@@ -11,6 +12,20 @@ Copilot has features that are common across all sessions and the individual prom
 For every prompt Copilot runs, Copilot generates a process log that is visible to the user. The user can see what capability is used to generate the response. This is important because it enables the user to determine whether the response was generated from a trusted source. In the screenshot that follows, the process log shows that Copilot chose the Incident Analysis capability. The process log also shows that the final output went through safety checks, which is part of Microsoft’s commitment to responsible AI.
 
 :::image type="content" source="../media/process-log-new.png" lightbox="../media/process-log-new.png" alt-text="Screen capture showing process log, which shows the selected skill and that a safety check was run on the composed message.":::
+
+### Action you can take on  prompt and its response
+
+There's a consistent set of actions available for every prompt/response pair in the Copilot standalone experience. Actions include:
+
+- Pin an individual prompt and its corresponding response to the pin board by selecting the pin icon.
+- Edit a prompt.
+- Rerun a prompt.
+- Delete a prompt.
+- Export a prompt.
+- Copy a response.
+- Provide feedback on a response
+
+:::image type="content" source="../media/prompt-response-actions.png" lightbox="../media/prompt-response-actions.png" alt-text="Screen capture showing highlighting the actions available on a prompt/response pair.":::
 
 ### Feedback
 

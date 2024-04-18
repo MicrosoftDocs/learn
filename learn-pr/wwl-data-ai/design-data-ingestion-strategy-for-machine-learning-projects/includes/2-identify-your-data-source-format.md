@@ -32,7 +32,7 @@ In other words, your organization may already have business processes in place, 
 
 ## Identify the data format
 
-Based on the source of your data, your data may be stored in a specific format. You need to understand in which format the data currently has and which format you’ll need for your machine learning workloads. 
+Based on the source of your data, your data may be stored in a specific format. You need to understand the current format of the data and determine the format required for your machine learning workloads. 
 
 Commonly, we refer to three different formats:
 

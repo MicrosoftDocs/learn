@@ -14,7 +14,7 @@ Always Encrypted makes encryption transparent to applications. An Always Encrypt
 
 To set up Always Encrypted in your database, you need to:
 
-1.  **Provision cryptographic keys to protect your data**. Always Encrypted uses two types of keys:<br>
+1.  Provision cryptographic keys to protect your data. Always Encrypted uses two types of keys:<br>
      -  Column encryption keys.<br>
      -  Column master keys.
     
@@ -29,9 +29,10 @@ To set up Always Encrypted in your database, you need to:
     
      -  The column master key metadata captures the location of the column master key.<br>
      -  The column encryption key metadata contains the encrypted value of the column encryption key. The Database Engine never stores or uses the keys of either type in plaintext.
-2.  **Configure encryption for selected database columns** that contain sensitive data to be protected. This can involve creating new tables with encrypted columns or encrypting existing database columns and existing data. When setting up encryption for a column, you specify the information about an encryption algorithm, a column encryption key to protect the data in the column, and an encryption type. Always Encrypted supports two encryption types:<br>
-     -  **Deterministic encryption** always generates the same encrypted value for a given plaintext value. Using deterministic encryption allows point lookups, equality joins, grouping and indexing on encrypted columns. However, it may also allow unauthorized users to guess information about encrypted values by examining patterns in the encrypted column, especially if there's a small set of possible encrypted values, such as True/False, or North/South/East/West region.<br>
-     -  **Randomized encryption** uses a method that encrypts data in a less predictable manner. Randomized encryption is more secure, but prevents searching, grouping, indexing, and joining on encrypted columns.
+2.  Configure encryption for selected database columns that contain sensitive data to be protected. This can involve creating new tables with encrypted columns or encrypting existing database columns and existing data. When setting up encryption for a column, you specify the information about an encryption algorithm, a column encryption key to protect the data in the column, and an encryption type. Always Encrypted supports two encryption types:<br>
+     -  Deterministic encryption always generates the same encrypted value for a given plaintext value. Using deterministic encryption allows point lookups, equality joins, grouping and indexing on encrypted columns. However, it may also allow unauthorized users to guess information about encrypted values by examining patterns in the encrypted column, especially if there's a small set of possible encrypted values, such as True/False, or North/South/East/West region.<br>
+     -  Randomized encryption uses a method that encrypts data in a l
+     -  ess predictable manner. Randomized encryption is more secure, but prevents searching, grouping, indexing, and joining on encrypted columns.
     
     Use deterministic encryption for columns that will be used as search or grouping parameters. For example, a government ID number. Use randomized encryption for data such as confidential investigation comments, which aren't grouped with other records and aren't used to join tables.
     
@@ -111,7 +112,7 @@ Operand type clash: char(11) encrypted with (encryption_type = 'DETERMINISTIC', 
      -  FOR JSON (SQL Server)
  -  After changing the definition of an encrypted column, execute sp\_refresh\_parameter\_encryption to update the Always Encrypted metadata for the object.
  -  Always Encrypted isn't supported for the columns with the below characteristics:<br>
-     -  Columns using one of the following data types: **xml**, **timestamp**, **rowversion**, **image**, **ntext**, **text, sql\_variant**, **hierarchyid**, **geography**, **geometry**, alias, user-defined types.<br>
+     -  Columns using one of the following data types: xml, timestamp, rowversion, image, ntext, text, sql\_variant, hierarchyid, geography, geometry, alias, user-defined types.<br>
      -  FILESTREAM columns
      -  Columns with the IDENTITY property.
      -  Columns with ROWGUIDCOL property.
@@ -184,6 +185,6 @@ The following table summarizes the permissions required for common actions.
 
 ### Important considerations
 
- -  The **VIEW ANY COLUMN MASTER KEY DEFINITION** and **VIEW ANY COLUMN ENCRYPTION KEY DEFINITION** permissions are required when selecting encrypted columns, even if the user doesn't have permission to the column master keys (in their key stores), protecting the columns and doesn't access plaintext attempt.
- -  In SQL Server, both **VIEW ANY COLUMN MASTER KEY DEFINITION** and **VIEW ANY COLUMN ENCRYPTION KEY DEFINITION** permissions are granted by default to the **public** fixed database role. A database administrator may choose to revoke (or deny) the permissions to the **public** role and grant them to specific roles or users to implement more restricted control.<br>
- -  In SQL Database, the **VIEW ANY COLUMN MASTER KEY DEFINITION** and **VIEW ANY COLUMN ENCRYPTION KEY DEFINITION** permissions aren't granted by default to the public fixed database role. This enables certain existing legacy tools (using older versions of DacFx) to work properly. Consequently, to work with encrypted columns (even if not decrypting them) a database administrator must explicitly grant the **VIEW ANY COLUMN MASTER KEY DEFINITION** and **VIEW ANY COLUMN ENCRYPTION KEY DEFINITION** permissions.
+ -  The VIEW ANY COLUMN MASTER KEY DEFINITION and VIEW ANY COLUMN ENCRYPTION KEY DEFINITION permissions are required when selecting encrypted columns, even if the user doesn't have permission to the column master keys (in their key stores), protecting the columns and doesn't access plaintext attempt.
+ -  In SQL Server, both VIEW ANY COLUMN MASTER KEY DEFINITION and VIEW ANY COLUMN ENCRYPTION KEY DEFINITION permissions are granted by default to the public fixed database role. A database administrator may choose to revoke (or deny) the permissions to the public role and grant them to specific roles or users to implement more restricted control.<br>
+ -  In SQL Database, the VIEW ANY COLUMN MASTER KEY DEFINITION and VIEW ANY COLUMN ENCRYPTION KEY DEFINITION permissions aren't granted by default to the public fixed database role. This enables certain existing legacy tools (using older versions of DacFx) to work properly. Consequently, to work with encrypted columns (even if not decrypting them) a database administrator must explicitly grant the VIEW ANY COLUMN MASTER KEY DEFINITION and VIEW ANY COLUMN ENCRYPTION KEY DEFINITION permissions.

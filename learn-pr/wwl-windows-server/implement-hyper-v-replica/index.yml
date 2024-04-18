@@ -2,27 +2,40 @@
 uid: learn.wwl.implement-hyper-v-replica
 metadata:
   title: Implement Hyper-V Replica
-  description: Implement Hyper-V Replica
-  ms.date: 03/19/2024
+  description: "Implement Hyper-V Replica"
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: module
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
   ms.service: windows-server
+  ms.subservice: hyper-v
+  ai-usage: human-only
 title: Implement Hyper-V Replica
 summary: Learn about Hyper-V Replica, scenarios for its use, and prerequisites to use it. Learn about Azure Site Recovery and the benefits of using it, focusing on implementing Site Recovery in on-premises scenarios.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe Hyper-V Replica, pre-requisites for its use, and its high-level architecture and components.
-  - Describe Hyper-V Replica usage scenarios, available replication settings, and security considerations.
-  - Configure Hyper-V Replica settings, health monitoring, and failover options.
-  - Implement Hyper-V Replica.
-  - Describe extended replication.
-  - Describe Site Recovery.
-  - Implement Site Recovery.
+
+  -   Describe Hyper-V Replica, pre-requisites for its use, and its high-level architecture and components.
+
+  -   Describe Hyper-V Replica usage scenarios, available replication settings, and security considerations.
+
+  -   Configure Hyper-V Replica settings, health monitoring, and failover options.
+
+  -   Implement Hyper-V Replica.
+
+  -   Describe extended replication.
+
+  -   Describe Site Recovery.
+
+  -   Implement Site Recovery.
 prerequisites: |
   To get the best learning experience from this module, you should have knowledge and experience of:
-  - Windows Server.
-  - Hyper-V.
+
+  -   Windows Server.
+
+  -   Hyper-V.
 iconUrl: /training/achievements/implement-hyper-v-replica.svg
 levels:
 - intermediate
