@@ -33,7 +33,7 @@ After that, you might be interested in adding your Terraform code to a continuou
 [Option 1: Deploy Azure resources by using Terraform and Azure Pipelines](xref:learn.terraform-azure-pipelines)
 :::column-end:::
 :::column:::
-[<img src="/training/achievements/terraform/bicep-github-actions.svg" width="101" height="120" alt="The trophy for the Deploy Azure resources using Terraform and GitHub Actions learning path." role="presentation"></img>](xref:learn.terraform-github-actions)
+[<img src="/training/achievements/terraform/terraform-github-actions.svg" width="101" height="120" alt="The trophy for the Deploy Azure resources using Terraform and GitHub Actions learning path." role="presentation"></img>](xref:learn.terraform-github-actions)
 
 [Option 2: Deploy Azure resources by using Terraform and GitHub Actions](xref:learn.terraform-github-actions)
 :::column-end:::

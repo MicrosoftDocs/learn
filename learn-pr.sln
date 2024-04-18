@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "learn-pr", "learn-pr", "{9985566B-FE0D-4148-ABB3-08C699AE0A6A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "learn-pr", "learn-pr", "{B7B9DADE-6084-4CB9-8F0C-9E523983F2D5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "azure-devops", "azure-devops", "{EF8DC536-FEBB-4225-95CD-094443AF9033}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "azure-devops", "azure-devops", "{11CF3825-B123-41E9-8258-7D836E49BB47}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "manage-build-dependencies", "manage-build-dependencies", "{00B51BA8-4416-4D57-9B98-87FC8E822458}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "manage-build-dependencies", "manage-build-dependencies", "{F0D06921-6040-4400-858E-C048E07BA3E4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "includes", "includes", "{75F8A0C2-F1B6-495A-918E-C26FD0062F40}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "includes", "includes", "{C8D75281-A20F-47EE-B985-1085E9797064}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6-tailspin.spacegame.web", "learn-pr\azure-devops\manage-build-dependencies\includes\code\6-tailspin.spacegame.web.csproj", "{1C4DA17C-2E88-48B8-9A66-8691DB20ADC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6-tailspin.spacegame.web", "learn-pr\azure-devops\manage-build-dependencies\includes\code\6-tailspin.spacegame.web.csproj", "{352E902C-0C20-493A-881B-2B07377E29A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,21 +19,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1C4DA17C-2E88-48B8-9A66-8691DB20ADC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1C4DA17C-2E88-48B8-9A66-8691DB20ADC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1C4DA17C-2E88-48B8-9A66-8691DB20ADC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1C4DA17C-2E88-48B8-9A66-8691DB20ADC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{352E902C-0C20-493A-881B-2B07377E29A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{352E902C-0C20-493A-881B-2B07377E29A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{352E902C-0C20-493A-881B-2B07377E29A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{352E902C-0C20-493A-881B-2B07377E29A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{EF8DC536-FEBB-4225-95CD-094443AF9033} = {9985566B-FE0D-4148-ABB3-08C699AE0A6A}
-		{00B51BA8-4416-4D57-9B98-87FC8E822458} = {EF8DC536-FEBB-4225-95CD-094443AF9033}
-		{75F8A0C2-F1B6-495A-918E-C26FD0062F40} = {00B51BA8-4416-4D57-9B98-87FC8E822458}
-		{1C4DA17C-2E88-48B8-9A66-8691DB20ADC1} = {75F8A0C2-F1B6-495A-918E-C26FD0062F40}
+		{11CF3825-B123-41E9-8258-7D836E49BB47} = {B7B9DADE-6084-4CB9-8F0C-9E523983F2D5}
+		{F0D06921-6040-4400-858E-C048E07BA3E4} = {11CF3825-B123-41E9-8258-7D836E49BB47}
+		{C8D75281-A20F-47EE-B985-1085E9797064} = {F0D06921-6040-4400-858E-C048E07BA3E4}
+		{352E902C-0C20-493A-881B-2B07377E29A5} = {C8D75281-A20F-47EE-B985-1085E9797064}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {737A59B7-FE15-4ADC-B017-647C49ADBB82}
+		SolutionGuid = {0A4F1B45-F55A-4887-9871-1B00436C6963}
 	EndGlobalSection
 EndGlobal

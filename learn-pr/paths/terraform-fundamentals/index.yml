@@ -24,10 +24,10 @@ summary: |
   * Define modules that break down complex deployments into smaller reusable components.
 
   Each module in this learning path provides examples for use with the Azure CLI. You'll use Visual Studio Code to write and validate your Terraform code.
- 
+
   [!include[](../../includes/terraform-paths.md)]
 prerequisites: Familiarity with Azure Resources and Azure resource groups is recommended, but not required.
-iconUrl: /training/achievements/bicep/terraform-fundamental.svg
+iconUrl: /training/achievements/terraform/terraform-fundamentals.svg
 levels:
 - beginner
 roles:
@@ -38,7 +38,7 @@ products:
 - azure
 - azure-resource-manager
 modules:
-- learn.azure.terraform-introduction-infrastructure-code
+- learn.azure.terraform-introduction-to-infrastructure-as-code
 - learn.azure.terraform-deploy-azure-resources
 - learn.azure.terraform-build-reusable-modules
 - learn.azure.terraform-functions-loops

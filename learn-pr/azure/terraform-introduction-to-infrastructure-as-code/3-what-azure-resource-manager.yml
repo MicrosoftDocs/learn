@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.terraform-introduction-to-infrastructure-as-code.what-azure-resource-manager
+title: What is Azure Resource Manager?
+metadata:
+  unitType: learning-content
+  title: What is Azure Resource Manager?
+  description: Learn about Azure Resource Manager and how it can help you deploy and manage your Azure resources.
+  ms.date: 18/04/2024
+  author: jaredholgate
+  ms.author: jaredholgate
+  ms.topic: unit
+  ms.custom:
+    - devx-track-terraform
+durationInMinutes: 7 # user input: the estimate time to complete the unit
+content: |
+  [!include[](includes/3-what-azure-resource-manager.md)]
