@@ -2,7 +2,7 @@ CodeQL is the analysis engine used by developers to automate security checks, an
 
 In CodeQL, code is treated like data. Security vulnerabilities, bugs, and other errors are modeled as queries that can be executed against databases extracted from code. You can run the standard CodeQL queries, written by GitHub researchers and community contributors, or write your own to use in custom analyses. Queries that find potential bugs highlight the result directly in the source file.
 
-In this unit, you'Ll learn about the CodeQL static analysis tool and how it uses databases, query suites, and query language packs to perform variant analysis.
+In this unit, you'll learn about the CodeQL static analysis tool and how it uses databases, query suites, and query language packs to perform variant analysis.
 
 ## Variant analysis
 
@@ -33,25 +33,30 @@ Query suites allow you to pass multiple queries to CodeQL without having to spec
 
 ### Default query suites
 
-There are three default query suites for CodeQL:
+There are two built-in query suites for CodeQL:
 
-* `code-scanning`: queries run by default in CodeQL code scanning on GitHub.
-* `security-extended`: queries from `code-scanning`, plus extra security queries with slightly lower precision and severity.
-* `security-and-quality`: queries from `code-scanning`, `security-extended`, plus extra maintainability and reliability queries.
+* `default`: These are the queries run by default in CodeQL code scanning on GitHub, available with the default setup of code scanning. The queries in this query suite are highly precise and return few false positive code scanning results. Relative to the `security-extended` query suite, the default suite returns fewer low-confidence code scanning results.
+* `security-extended`: This suite contains all of the queries from the `default` suite, plus extra security queries with slightly lower precision and severity. It is available with the default setup of code scanning and is listed as the "Extended" option in the query suites dropdown. Relative to the `default` query suite, this suite may return a greater number of false positive code scanning results.
 
-## Query Language (QL) packs
+The default setup of code scanning will use the `default` query suite. This can be changed by selecting the overflow icon to view the CodeQL configuration and then selecting to the edit button. Under "Scan settings" you may choose one of the above two options as the query suite.
 
-QL packs are used to organize the files used in CodeQL analysis. They contain queries, library files, query suites, and important metadata.
+## CodeQL packs
 
-The CodeQL repository contains QL packs for C/C++, C#, Java, JavaScript, Python, and Ruby. The CodeQL for Go repository contains a QL pack for Go analysis. You can also make custom QL packs to contain your own queries and libraries.
+CodedQL packs are used to organize the files used in CodeQL analysis so you can create, share, depend on, and run CodeQL queries and libraries easily. They contain queries, library files, query suites, and important metadata. With CodeQL packs and the package management commands in the CodeQL CLI, you can publish your custom queries and integrate them into your codebase analysis.
 
-### QL pack structure
+There are three types of CodeQL packs: query packs, library packs, and model packs.
 
-A QL pack must contain a file called `qlpack.yml` in its root directory. The other files and directories within the pack should be logically organized. For example:
+* Query packs are designed to be run. When a query pack is published, the bundle includes all the transitive dependencies and pre-compiled representations of each query, in addition to the query sources. This ensures consistent and efficient execution of the queries in the pack.
+* Library packs are designed to be used by query packs (or other library packs) and do not contain queries themselves. The libraries are not compiled separately.
+* Model packs can be used to expand code scanning analysis to include dependencies that are not supported by default. Model packs are currently in beta and subject to change. During the beta, model packs are available for Java analysis at the repository level. For more information about creating your own model packs, see "Creating a CodeQL model pack."
 
-* Queries are organized into directories for specific categories.
-* Queries for specific products, libraries, and frameworks are organized into their own top-level directories.
-* There is a top-level directory named `<owner>/<language>` for query library (`.qll`) files. Within this directory, `.qll` files should be organized into subdirectories for specific categories.
+### CodeQL pack structure
+
+The CodeQL CLI can be used to being developing and publishing a pack using the `pack init` command. This command will create the directory structure and files required, including the main file called `qlpack.yml` in its root directory. The metadata in each `qlpack.yml` file tells CodeQL how to compile any queries in the pack, what libraries the pack depends on, and where to find query suite definitions.
+
+The contents of the CodeQL pack (queries or libraries used in CodeQL analysis) is included in the same directory as `qlpack.yml`, or its subdirectories.
+
+The directory containing the qlpack.yml file serves as the root directory for the content of the CodeQL pack. That is, for all `.ql` and `.qll`s files in the pack, CodeQL will resolve all import statements relative to the directory containing the qlpack.yml file at the pack’s root.
 
 Here's an example `qlpack.yml` file:
 
@@ -66,3 +71,5 @@ dependencies:
     codeql/java-all: "*"
     codeql/suite-helpers: "*"
 ```
+
+For more information on creating and publishing your own CodeQL packs, see "Publishing and using CodeQL packs."<sup>[1]</sup>

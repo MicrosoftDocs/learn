@@ -30,20 +30,10 @@ The system gives preference to the route with the explicit prefix when there's a
 
 To use this feature, specify a Service Tag name for the address prefix parameter in route table commands. For example, in PowerShell you can create a new route to direct traffic sent to an Azure Storage IP prefix to a virtual appliance by using:
 
-**Azure PowerShell**``
+**Azure PowerShell**
 
 ```powershell
-$param = @{
-
-```
-
-```powershell
- Name = 'StorageRoute'
-AddressPrefix = 'Storage'
-NextHopType = 'VirtualAppliance'
-NextHopIpAddress = '10.0.100.4'
-}
-New-AzRouteConfig @param
+$param = @{ Name = 'StorageRoute' AddressPrefix = 'Storage' NextHopType = 'VirtualAppliance' NextHopIpAddress = '10.0.100.4' } New-AzRouteConfig @param
 ```
 
 The same command for CLI is as follows:
@@ -51,15 +41,5 @@ The same command for CLI is as follows:
 **Azure CLI**
 
 ```azurecli
-az network route-table route create \
-
-```
-
-```azurecli
- --resource-group MyResourceGroup \
---route-table-name MyRouteTable \
---name StorageRoute \
---address-prefix Storage \
---next-hop-type VirtualAppliance \
---next-hop-ip-address 10.0.100.4
+az network route-table route create \ --resource-group MyResourceGroup \ --route-table-name MyRouteTable \ --name StorageRoute \ --address-prefix Storage \ --next-hop-type VirtualAppliance \ --next-hop-ip-address 10.0.100.4
 ```

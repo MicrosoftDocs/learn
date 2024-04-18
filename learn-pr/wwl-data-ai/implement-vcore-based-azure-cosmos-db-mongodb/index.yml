@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.implement-vcore-based-azure-cosmos-db-mongodb
+metadata:
+  title: Implement vCore-based Azure Cosmos DB for MongoDB
+  description: "Implement vCore-based Azure Cosmos DB for MongoDB."
+  ms.date: 04/08/2024
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: cosmos-db
+  ms.subservice: mongodb-vcore
+  ai-usage: human-only
+title: Implement vCore-based Azure Cosmos DB for MongoDB
+summary: Explore vCore-based Azure Cosmos DB for MongoDB, covering everything from basic concepts to initial setup. Understand the cost and scalability aspects, and how this service integrates with Azure for application development.
+abstract: |
+  - Learn the vCore-based Azure Cosmos DB for MongoDB concepts.
+  - Learn how to set up a vCore-based Azure Cosmos DB for MongoDB cluster.
+prerequisites: Before starting this module, you should have experience of building cloud applications with Python, Node.js, or a similar programming language.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+subjects:
+- databases
+units:
+- learn.wwl.implement-vcore-based-azure-cosmos-db-mongodb.introduction
+- learn.wwl.implement-vcore-based-azure-cosmos-db-mongodb.explore-features
+- learn.wwl.implement-vcore-based-azure-cosmos-db-mongodb.create-cluster
+- learn.wwl.implement-vcore-based-azure-cosmos-db-mongodb.exercise-deploy-cluster
+- learn.wwl.implement-vcore-based-azure-cosmos-db-mongodb.knowledge-check
+- learn.wwl.implement-vcore-based-azure-cosmos-db-mongodb.summary
+badge:
+  uid: learn.wwl.implement-vcore-based-azure-cosmos-db-mongodb.badge

@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.cela-accessibility.web-accessibility-principles-guidelines
+metadata:
+  title: Web accessibility principles and guidelines
+  description: Explore the concept and importance of accessibility. Learn how levels of conformance to standards and regulations impact accessible design and development.
+  ms.date: 04/11/2024
+  author: erzelman
+  ms.author: erzelman 
+  ms.topic: module
+  ms.service: microsoft-365
+title: Web accessibility principles and guidelines
+summary: This module explores four principles used to evaluate and improve web accessibility. You'll learn how they relate to standards and regulations and explore how levels of conformance impact accessible design and development.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Explain the concept and importance of accessibility.
+  - Identify the main accessibility principles and how they relate to different standards and regulations.
+  - Apply the four principles used to evaluate and improve accessibility: Perceivable, Operable, Understandable, and Robust.
+  - Distinguish between three levels of conformance: A, AA, and AAA, and their implications for accessible design and development.
+iconUrl: /training/achievements/generic-badge.svg
+levels: 
+- beginner
+roles:
+- administrator
+- student
+products:
+- m365
+subjects:
+- accessibility
+units:
+- learn.cela-accessibility.web-accessibility-principles-guidelines.introduction
+- learn.cela-accessibility.web-accessibility-principles-guidelines.web-accessibility-standards-and-principles
+- learn.cela-accessibility.web-accessibility-principles-guidelines.principles-of-accessibility-and-levels-of-conformance
+- learn.cela-accessibility.web-accessibility-principles-guidelines.knowledge-check
+- learn.cela-accessibility.web-accessibility-principles-guidelines.summary
+badge:
+  uid: learn.cela-accessibility.web-accessibility-principles-guidelines.badge
