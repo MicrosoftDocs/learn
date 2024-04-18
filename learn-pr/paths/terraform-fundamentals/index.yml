@@ -39,9 +39,9 @@ products:
 - azure-resource-manager
 modules:
 - learn.azure.terraform-introduction-to-infrastructure-as-code
-- learn.azure.terraform-deploy-azure-resources
-- learn.azure.terraform-build-reusable-modules
-- learn.azure.terraform-functions-loops
-- learn.azure.terraform-create-composable-modules
+#- learn.azure.terraform-deploy-azure-resources
+#- learn.azure.terraform-build-reusable-modules
+#- learn.azure.terraform-functions-loops
+#- learn.azure.terraform-create-composable-modules
 trophy:
   uid: learn.terraform-fundamentals.trophy

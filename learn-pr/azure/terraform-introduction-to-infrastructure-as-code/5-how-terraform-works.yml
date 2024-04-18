@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.terraform-introduction-to-infrastructure-as-code.how-bicep-works
-title: How Bicep works
+uid: learn.azure.terraform-introduction-to-infrastructure-as-code.how-terraform-works
+title: How Terraform works
 metadata:
   unitType: learning-content
-  title: How Bicep works # user input: module title for browser tab and search results
-  description: Learn how Bicep deploys your Azure infrastructure.
+  title: How Terraform works
+  description: Learn how Terraform deploys your Azure infrastructure.
   ms.date: 04/18/2024
   author: jaredfholgate
   ms.author: jaredholgate
@@ -13,4 +13,4 @@ metadata:
     - devx-track-terraform
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-how-bicep-works.md)]
+  [!include[](includes/5-how-terraform-works.md)]

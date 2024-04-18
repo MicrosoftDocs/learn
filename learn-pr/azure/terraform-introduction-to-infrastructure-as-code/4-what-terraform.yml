@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.terraform-introduction-to-infrastructure-as-code.what-bicep
-title: What is Bicep?
+uid: learn.azure.terraform-introduction-to-infrastructure-as-code.what-terraform
+title: What is Terraform?
 metadata:
   unitType: learning-content
-  title: What is Bicep?
-  description: Learn what Bicep is, and how it works with Azure Resource Manager.
+  title: What is Terraform?
+  description: Learn what Terraform is, and how it works with Azure.
   ms.date: 04/18/2024
   author: jaredfholgate
   ms.author: jaredholgate
@@ -13,4 +13,4 @@ metadata:
     - devx-track-terraform
 durationInMinutes: 3 # user input: the estimate time to complete the unit
 content: |
-  [!include[](includes/4-what-bicep.md)]
+  [!include[](includes/4-what-terraform.md)]
