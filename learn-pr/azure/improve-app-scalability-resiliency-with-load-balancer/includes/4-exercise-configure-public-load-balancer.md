@@ -13,8 +13,6 @@ First, deploy your patient-portal application across two virtual machines in a s
 
 To deploy the patient portal web application:
 
-1. Create a new resource group. In step 3 replace **[sandbox resource group name]** with your own resource group name.
-
 1. Run the following `git clone` command in Azure Cloud Shell. The command clones the repo that contains the source for the app and runs the setup script from GitHub. Then changes to the directory of the cloned repo.
 
     ```bash
@@ -28,7 +26,7 @@ To deploy the patient portal web application:
     bash create-high-availability-vm-with-sets.sh <rgn>[sandbox resource group name]</rgn>
     ```
 
-1. When the script finishes, on the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **Resource groups**, then select the **[sandbox resource group name]** resource group. Review the resources created by the script.
+1. When the script finishes, on the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **Resource groups**, then select the **<rgn>[sandbox resource group name]</rgn>** resource group. Review the resources created by the script.
 
 ::: zone pivot="portal"
 
@@ -40,7 +38,7 @@ Now, let's create the load balancer.
 
 1. In the **Search services and marketplace** search box, enter *Load Balancer*, and then press <kbd>Enter</kbd>.
 
-1. From the ensuing list, select *Load Balancer - Microsoft*. Then, select **Create**.
+1. From the ensuing list, select **Load Balancer - Microsoft**, then select **Create**.
 
    :::image type="content" source="../media/4-create-lb.png" alt-text="Create a Load Balancer instance in the Azure portal.":::
 
@@ -50,7 +48,7 @@ Now, let's create the load balancer.
     | ----- | ----------- |
     | **Project details** |
     | Subscription | **Your subscription** |
-    | Resource group | Select your resource group. For example, **learn-ts-loadbalancer-rg** |
+    | Resource group | Select **<rgn>[sandbox resource group name]</rgn>** |
     | **Instance details** |
     | Name | Enter a unique name. For example, **Pub-LB-PatientsPortal**. |
     | Region | Select the location where the virtual machines were created. |
@@ -71,9 +69,10 @@ Now, let's create the load balancer.
     | Setting | Value |
     | ----- | ----------- |
     | Name | Enter a unique name for the front-end IP configuration. For example *myFrontendIP* |
-    | Virtual Network | Select **bePortalVnet** |
-    | Subnet | Select **bePortalSubnet** |
-    | Assignment | Select **Dynamic** |
+    | IP version | Select **IPv4** |
+    | IP type | Select **IP address** |
+    | Public IP address | Select **Create new**, then give your IP address a name and select **Save** |
+    | Gateway Load Balancer | Select **None** |
 
    :::image type="content" source="../media/4-add-frontend-ip-config.png" alt-text="Screenshot that shows the completed settings for the Add frontend IP configuration.":::
 

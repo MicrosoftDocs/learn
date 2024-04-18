@@ -1,5 +1,3 @@
-
-
 Adaptive application control can help Contoso IT operations staff determine which applications are allowed to run on their Azure (and non-Azure) VMs. Being able to control applications in this way can help harden their VMs against malware.
 
 > [!NOTE]
@@ -7,7 +5,7 @@ Adaptive application control can help Contoso IT operations staff determine whic
 
 ## What is adaptive application control?
 
-Adaptive application control uses machine learning to analyze the applications running on your VMs. You configure and manage adaptive application controls in Security Center. Once enabled, the Adaptive application controls feature creates an allow list from its machine-learning analysis.
+Adaptive application control uses machine learning to analyze the applications running on your VMs. You configure and manage adaptive application controls in Security Center. Once enabled, the Adaptive application controls feature creates an allowlist from its machine-learning analysis.
 
 > [!NOTE]
 > Security Center requires at least two weeks of data to perform this analysis.
