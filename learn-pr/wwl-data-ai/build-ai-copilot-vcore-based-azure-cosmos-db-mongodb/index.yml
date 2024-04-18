@@ -11,7 +11,7 @@ metadata:
   ms.subservice: mongodb-vcore
   ai-usage: human-only
 title: Build your own AI copilot with vCore-based Azure Cosmos DB for MongoDB and Azure OpenAI
-summary: Learn how to use your own data to build AI copilots using vCore-based Azure Cosmos DB for MongoDB and Azure OpenAI. The Focus is on database setup and vector search integration for easy AI application development.
+summary: Learn how to use your own data to build AI copilots using vCore-based Azure Cosmos DB for MongoDB and Azure OpenAI. You'll focus on database setup and vector search integration for easy AI application development.
 abstract: |
   -   Learn how to build AI copilots with vCore-based Azure Cosmos DB for MongoDB and Azure OpenAI.
   -   Integrate vector search for advanced data processing in AI applications.
