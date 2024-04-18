@@ -1,7 +1,7 @@
 In the previous unit, you used a "roll dice" coding scenario to illustrate the difference between stateful (instance) and stateless (static) methods. That same scenario can help you to understand other important concepts about calling methods. For example:
 
 - handling the return value of a method.
-- passing input parameters to a method.
+- method parameters and passing arguments to a method.
 - choosing an overloaded version of a method.
 
 ## Return values
@@ -32,18 +32,18 @@ dice.Next(1, 7);
 
 However, ignoring the return value would be pointless. The reason you're calling the `Next()` method is so that you can retrieve the next random value.
 
-## Input parameters
+## Method parameters and arguments in the calling statement
 
-The information consumed by a method is called a parameter. A method can use one or more parameters to accomplish its task, or none at all.
+When you call a method, you can pass in values that the method will use to complete its task. These values are called **arguments**. The method uses the arguments to assign values to the **parameters** that are defined in the method's signature. A method can require one or more parameters to accomplish its task, or none at all.
 
 > [!NOTE]
 > Often times, the terms 'parameter' and 'argument' are used interchangeably. However, 'parameter' refers to the variable that's being used inside the method. An 'argument' is the value that's passed when the method is called.
 
-Most methods are designed to accept one or more input parameters. The input parameters can be used to configure how the method performs its work, or they might be operated on directly. For example, the `Random.Next()` method uses input parameters to configure the upper and lower boundaries of the return value. However, the `Console.WriteLine()` uses the input parameter directly by printing the value to the console.
+Most methods are designed to accept one or more parameters. The parameters can be used to configure how the method performs its work, or they might be operated on directly. For example, the `Random.Next()` method uses parameters to configure the upper and lower boundaries of the return value. However, the `Console.WriteLine()` uses the parameter directly by printing the value to the console.
 
-Methods use a **method signature** to define the number of input parameters that the method will accept, as well as the data type of each parameter. The coding statement that calls the method must adhere the requirements specified by the method signature. Some methods provide options for the number and type of parameters that the method accepts.
+Methods use a **method signature** to define the number of parameters that the method will accept, as well as the data type of each parameter. The coding statement that calls the method must adhere the requirements specified by the method signature. Some methods provide options for the number and type of parameters that the method accepts.
 
-When a caller invokes the method, it provides concrete values, called arguments, for each parameter. The arguments must be compatible with the parameter type. However, the argument name, if one is used in the calling code, doesn't have to be the same as the parameter named defined in the method.
+When a caller invokes the method, it provides concrete values, called arguments, for each parameter. The arguments must be compatible with the parameter type. However, the argument name, if one is used in the calling code, doesn't have to be the same as the parameter name defined in the method.
 
 Consider the following code:
 
@@ -53,12 +53,12 @@ int roll = dice.Next(1, 7);
 Console.WriteLine(roll);
 ```
 
-The first code line creates an instance of the `Random` class named `dice`. The second code line uses the `dice.Next(1, 7)` method to assign a random value to an integer named `roll`. Notice that the calling statement provides two arguments separated by a `,` symbol. The `Next()` method includes a method signature that accepts two input parameters of type `int`. These parameters are used to configure the lower and upper boundaries for the random number that's returned. The final code line uses the `Console.WriteLine()` method to print the value of `roll` to the console.
+The first code line creates an instance of the `Random` class named `dice`. The second code line uses the `dice.Next(1, 7)` method to assign a random value to an integer named `roll`. Notice that the calling statement provides two arguments separated by a `,` symbol. The `Next()` method includes a method signature that accepts two parameters of type `int`. These parameters are used to configure the lower and upper boundaries for the random number that's returned. The final code line uses the `Console.WriteLine()` method to print the value of `roll` to the console.
 
-The arguments passed to a method must be the same data type as the corresponding input parameters defined by the method. If you attempt to pass an incorrectly typed argument to a method, the C# compiler will catch your mistake and force you to update your calling statement before your code will compile and run. Type checking is one way that C# and .NET use to prevent end-users from experiencing errors at runtime.
+The arguments passed to a method must be the same data type as the corresponding parameters defined by the method. If you attempt to pass an incorrectly typed argument to a method, the C# compiler will catch your mistake and force you to update your calling statement before your code will compile and run. Type checking is one way that C# and .NET use to prevent end-users from experiencing errors at runtime.
 
 > [!NOTE]
-> Although input parameters are often used, not all methods require input parameters to complete their task. For example, the `Console` class includes a `Console.Clear()` method that doesn't use input parameters. Since this method is used to clear any information displayed in the console, it doesn't need input parameters to complete it's task.
+> Although parameters are often used, not all methods require parameters to complete their task. For example, the `Console` class includes a `Console.Clear()` method that doesn't use parameters. Since this method is used to clear any information displayed in the console, it doesn't need parameters to complete it's task.
 
 ## Overloaded methods
 
@@ -66,7 +66,7 @@ Many methods in the .NET Class Library have *overloaded* method signatures. Amon
 
 An **overloaded method** is defined with multiple method signatures. Overloaded methods provide different ways to call the method or provide different types of data.
 
-In some cases, overloaded versions of a method are used to define an input parameter using different data types. For example, the `Console.WriteLine()` method has 19 different overloaded versions. Most of those overloads allow the method to accept different types and then write the specified information to the console. Consider the following code:
+In some cases, overloaded versions of a method are used to define a parameter using different data types. For example, the `Console.WriteLine()` method has 19 different overloaded versions. Most of those overloads allow the method to accept different types and then write the specified information to the console. Consider the following code:
 
 ```c#
 int number = 7;
@@ -81,10 +81,10 @@ Console.WriteLine(text);
 In this example, you're invoking three separate overloaded versions of the `WriteLine()` method.
 
 - The first `WriteLine()` method uses a method signature that defines an `int` parameter.
-- The second `WriteLine()` method uses a method signature that defines zero input parameters.
+- The second `WriteLine()` method uses a method signature that defines zero parameters.
 - The third `WriteLine()` method uses a method signature that defines a `string` parameter.
 
-In other cases, overloaded versions of a method define a different number of input parameters. The alternative input parameters can be used to provide more control over desired result. For example, the `Random.Next()` method has overloaded versions that enable you to set various levels of constraint on the randomly generated number.
+In other cases, overloaded versions of a method define a different number of parameters. The alternative parameters can be used to provide more control over desired result. For example, the `Random.Next()` method has overloaded versions that enable you to set various levels of constraint on the randomly generated number.
 
 The following exercise calls the `Random.Next()` method to generate random integer values with different levels of constraint:
 
@@ -145,8 +145,8 @@ The following exercise calls the `Random.Next()` method to generate random integ
 You've already examined several topics in this unit. Here's a quick list of what you've covered:
 
 - You've examined how to use a method's return value (when the method provides a return value).
-- You've examined how a method can use input parameters that are defined as specific data types.
-- You've examined the overloaded versions of some methods that include different input parameters or parameter types.
+- You've examined how a method can use parameters that are defined as specific data types.
+- You've examined the overloaded versions of some methods that include different parameters or parameter types.
 
 ## Use IntelliSense
 
@@ -214,7 +214,7 @@ For example, as you enter the word `dice` slowly, IntelliSense will show all C# 
 
     On the left side of the IntelliSense popup, it displays `1/3`.
 
-    The `1/3` indicates that you're looking at the first of three method signatures for the `Next()` method. Notice that this version of the method signature enables the method to work with no input parameters (no arguments passed to the method in the calling statement).
+    The `1/3` indicates that you're looking at the first of three method signatures for the `Next()` method. Notice that this version of the method signature enables the method to work with no parameters (no arguments passed to the method in the calling statement).
 
     Notice that there's also a tiny arrow above and below the `1/3`.
 
@@ -224,15 +224,15 @@ For example, as you enter the word `dice` slowly, IntelliSense will show all C# 
 
 1. Take a minute to examine each of the overloaded versions for the `Random.Next()` method.
 
-    The second overloaded version of the method, `2/3`, informs you that the `Next()` method can accept an input parameter `int maxValue`. The description tells you that `maxValue` is the exclusive upper bound for the number that you want the `Next()` method to generate. Exclusive indicates that the return number will be less than maxValue. So when you specify `dice.Next(1,7);` the max dice roll will be 6. Notice that the message at the bottom of the section has been updated to: `Returns a non-negative random integer that is less than the specified maximum.`
+    The second overloaded version of the method, `2/3`, informs you that the `Next()` method can accept a parameter `int maxValue`. The description tells you that `maxValue` is the exclusive upper bound for the number that you want the `Next()` method to generate. Exclusive indicates that the return number will be less than maxValue. So when you specify `dice.Next(1,7);` the max dice roll will be 6. Notice that the message at the bottom of the section has been updated to: `Returns a non-negative random integer that is less than the specified maximum.`
 
-    The third version of the method, `3/3`, informs you that the `Next()` method can accept both `int minValue` and `int maxValue` as input parameters. The new parameter, `minValue`, is a lower bound for the number that you want the `Next()` method to generate. Since the lower bound is inclusive rather than exclusive, the return value can be equal to `minValue`. The message at the bottom now states: `Returns a random integer that is within a specified range.`
+    The third version of the method, `3/3`, informs you that the `Next()` method can accept both `int minValue` and `int maxValue` as parameters. The new parameter, `minValue`, is a lower bound for the number that you want the `Next()` method to generate. Since the lower bound is inclusive rather than exclusive, the return value can be equal to `minValue`. The message at the bottom now states: `Returns a random integer that is within a specified range.`
 
     In this case, IntelliSense provides all of the information that you need to select the appropriate overload, including a detailed explanation of `maxValue` and `minValue`. However, you might encounter situations where you need to consult the method's documentation.
 
 ## Use learn.microsoft.com for information about overloaded methods
 
-The second way to learn about overloaded versions of the methods is to consult the documentation for the method. The documentation will also help you to understand exactly what each input parameter is intended for.
+The second way to learn about overloaded versions of the methods is to consult the documentation for the method. The documentation will also help you to understand exactly what each parameter is intended for.
 
 1. To begin, open your preferred Web browser and search engine.
 
@@ -266,7 +266,7 @@ The second way to learn about overloaded versions of the methods is to consult t
 
     - Brief description of the method's functionality
     - Method's definition
-    - Input parameters that the method accepts
+    - Parameters that the method accepts
     - Return values
     - Exceptions that can be raised
     - Examples of the method in use
@@ -274,7 +274,7 @@ The second way to learn about overloaded versions of the methods is to consult t
 
 1. Take a minute to review the **Parameters** section.
 
-    In the *Parameters* section, you can read that the `maxValue` input parameter is the "exclusive upper bound of the random number to be generated." An *exclusive upper bound* means that if you want numbers no larger than `10`, you must pass in the value `11`.
+    In the *Parameters* section, you can read that the `maxValue` parameter is the "exclusive upper bound of the random number to be generated." An *exclusive upper bound* means that if you want numbers no larger than `10`, you must pass in the value `11`.
 
     You can also read in the next line: "`maxValue` must be greater than or equal to 0." What happens if you ignore this statement? You can see in the *Exceptions* section that the method will return an `ArgumentOutOfRangeException` when `maxValue` is less than 0.
 
@@ -283,8 +283,8 @@ The second way to learn about overloaded versions of the methods is to consult t
 
 ## Recap
 
-- Methods might accept no parameters or multiple parameters, depending on how they were designed and implemented. When passing in multiple input parameters, separate them with a `,` symbol.
+- Methods might accept no parameters or multiple parameters, depending on how they were designed and implemented. When passing in multiple parameters, separate them with a `,` symbol.
 - Methods might return a value when they complete their task, or they might return nothing (void).
-- Overloaded methods support several implementations of the method, each with a unique method signature (the number of input parameters and the data type of each input parameter).
-- IntelliSense can help write code more quickly. It provides a quick reference to methods, their return values, their overloaded versions, and the types of their input parameters.
+- Overloaded methods support several implementations of the method, each with a unique method signature (the number of parameters and the data type of each parameter).
+- IntelliSense can help write code more quickly. It provides a quick reference to methods, their return values, their overloaded versions, and the types of their parameters.
 - learn.microsoft.com is the "source of truth" when you want to learn how methods in the .NET Class Library work.

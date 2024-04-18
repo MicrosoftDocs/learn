@@ -3148,3 +3148,8 @@ achievements:
   title: Configure Azure Storage with tools
   summary: Learn how to configure Azure Storage with tools like Azure Storage Explorer and AZCopy.
   iconUrl: /training/achievements/storage-tools-configure.svg
+- uid: learn.wwl.sc-200-who-hacked-cloud-game.badge
+  type: badge
+  title: Who Hacked cloud game
+  summary: Provide instructions and guidance on playing the SC-200 Who Hacked cloud game.
+  iconUrl: /training/achievements/sc-200-who-hacked-cloud-game.svg
