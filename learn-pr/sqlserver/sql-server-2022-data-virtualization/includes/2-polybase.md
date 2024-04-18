@@ -8,24 +8,10 @@ PolyBase is the feature that SQL Server uses to enable the data virtualization c
 
 |SQL Server 2016|SQL Server 2017|SQL Server 2019|SQL Server 2022|
 |-----|-----|-----|-----|
-|• Hadoop<br>
-• Azure Blob Storage<br>
-• Generic ODBC|
-|• OPENROWSET enhancements<br>
-• CSV for Azure Blob Storage<br>
-• Database Scoped Credential|
-|• SQL Server<br>
-• Oracle<br>
-• Azure Cosmos DB<br>
-• MongoDB<br>
-• Teradata<br>
-• Linux support|
-|• New connector framework<br>
-• Object storage integration<br>
-• CSV<br>
-• Parquet<br>
-• Delta<br>
-• CETAS|
+|• Hadoop<br>• Azure Blob Storage<br>• Generic ODBC|
+|• OPENROWSET enhancements<br>• CSV for Azure Blob Storage<br>• Database Scoped Credential|
+|• SQL Server<br>• Oracle<br>• Azure Cosmos DB<br>• MongoDB<br>• Teradata<br>• Linux support|
+|• New connector framework<br>• Object storage integration<br>• CSV<br>• Parquet<br>• Delta<br>• CETAS|
 
 ## PolyBase enhancements in SQL Server 2022
 
