@@ -11,7 +11,7 @@ metadata:
   ms.subservice: mongodb-vcore
   ai-usage: human-only
 title: Implement vCore-based Azure Cosmos DB for MongoDB
-summary: This module introduces you to vCore-based Azure Cosmos DB for MongoDB, from the concepts to the initial setup. It highlights cost and scalability aspects, aligning with Azure integration and application development.
+summary: Explore vCore-based Azure Cosmos DB for MongoDB, covering everything from basic concepts to initial setup. Understand the cost and scalability aspects, and how this service integrates with Azure for application development.
 abstract: |
   - Learn the vCore-based Azure Cosmos DB for MongoDB concepts.
   - Learn how to set up a vCore-based Azure Cosmos DB for MongoDB cluster.
