@@ -7,7 +7,7 @@ metadata:
   ms.date: 4/15/2024
   author: limwainstein
   ms.author: lwainstein
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 ###########################################################################
 ###
 ### If your content is related to a product or service, apply one value from the either the ms.prod allowlist
@@ -18,7 +18,6 @@ metadata:
 ### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
 ### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
 ### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
-  ms.service: defender-for-iot
 durationInMinutes: 8
 ###########################################################################
 ###
@@ -59,18 +58,7 @@ durationInMinutes: 8
 content: |
 quiz:
   questions:
-  - content: "What is a subnet?"
-    choices:
-    - content: "A group of servers that are in the lowest Purdue level."
-      isCorrect: false
-      explanation: "Incorrect, a subnet is a group of devices or interfaces that have a specific purpose or are located in a specific area."
-    - content: "A group of devices or interfaces that have a specific purpose or are located in a specific area."
-      isCorrect: true
-      explanation: "Correct, the subnet is a group of devices controlling a specific area or purpose."
-    - content: "A set of lower quality devices that might not pass accurate data to the sensor."
-      isCorrect: false
-      explanation: "Incorrect, a subnet is a group of devices or interfaces that have a specific purpose or are located in a specific area."
-  - content: "When might you need to merge 2 or more devices?"
+  - content: "When might you need to merge 2 or more OT devices?"
     choices:
     - content: "If a device is listed more than once because of multiple ports connecting to a sensor, for example, linked by wifi and a wired connection."
       isCorrect: true
