@@ -22,7 +22,7 @@ The deployment stack is created or modified with deny settings that prevent any 
 
 The loans application, similar to the deposits application, is composed of an App Service app, Cosmos DB account, and an Azure Front Door endpoint, route, and origin group. The loans application team creates the deployment stack scoped at the subscription level. The stack triggers the deployment of a test version of the application's resources. The deployment stack now manages the application's resources, including the child resources of the Front Door profile in the shared services subscription.
 
-![a graphic representing a deployment stack scenario, step 5](../media/sdeployment-stacks-scenario-4.png)
+![a graphic representing a deployment stack scenario, step 5](../media/deployment-stacks-scenario-4.png)
 
 After testing is complete, the loans application team removes the deployment stack for the test version of the application. When the stack is removed, it removes resources and resource groups defined in the `actionOnUnmanage` property of the stack.
 
