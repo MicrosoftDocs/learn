@@ -7,7 +7,7 @@ string name = "Bob";
 Console.WriteLine(int.Parse(name));
 ```
 
-causes the following exception:
+Causes the following exception:
 
 ```Output
 System.FormatException: 'Input string was not in a correct format.'
@@ -63,7 +63,7 @@ Methods can return a value or return "void" - meaning they return no value. Meth
    
    The converted value is stored in the `int` variable `result`. The `int` variable `result` is declared and initialized before this line of code, so it should be accessible both *inside* the code blocks that belong to the `if` and `else` statements, as well as *outside* of them.
    
-   The `out` keyword instructs the compiler that the `TryParse()` method won't return a value the traditional way only (as a return value), but also will communicate an output through this two-way parameter.
+   The `out` keyword instructs the compiler that the `TryParse()` method doesn't return a value the traditional way only (as a return value), but also communicates an output through this two-way parameter.
   
    When you run the code, you should see the following output:
 

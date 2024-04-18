@@ -1,12 +1,12 @@
 ## Persist data using grains
 
-When working with grains, you'll often need to persist state to ensure your data is safe between application restarts, grain deactivations, and other situations. Orleans is designed for cloud-native applications that are durable and fault tolerant.
+When working with grains, you often need to persist state to ensure your data is safe between application restarts, grain deactivations, and other situations. Orleans is designed for cloud-native applications that are durable and fault tolerant.
 
 Grains can define named data objects to persist in state in a storage provider of your choosing. Examples of storage providers include traditional SQL databases, various Azure services such as Blob Storage, and other cloud resources such as Amazon DynamoDb. These providers are made available through various NuGet packages. Orleans also provides extensibility points to add your own storage providers.
 
 ## The grain state API
 
-Grains implement persistent state using the <xref:Orleans.Runtime.IPersistentState%601> interface, where `TState` is the type of object you'd like to store. Most of the time you won't need to implement this interface directly, since the most common storage providers handle this implementation for you. However, it's useful to understand the underlying contract, which includes the following members:
+Grains implement persistent state using the <xref:Orleans.Runtime.IPersistentState%601> interface, where `TState` is the type of object you'd like to store. Most of the time you don't need to implement this interface directly, since the most common storage providers handle this implementation for you. However, it's useful to understand the underlying contract, which includes the following members:
 
 ```csharp
 public interface IPersistentState<TState> where TState : new()
@@ -34,7 +34,7 @@ The `PersistentStateAttribute` accepts two parameters:
 - **Name**: Defines the name of the state object.
 - **StorageName**: Defines the storage provider the object should be saved to.
 
-The example below demonstrates how to store a `KeyValuePair` object in grain state on the `UrlShortenerGrain` class. The `KeyValuePair` stores the shortened alias as a key and the original full URL as the value. This setup allows both items to be stored in state for whenever they're needed, and can be easily retrieved using the alias.
+The following example demonstrates how to store a `KeyValuePair` object in grain state on the `UrlShortenerGrain` class. The `KeyValuePair` stores the shortened alias as a key and the original full URL as the value. This setup allows both items to be stored in state for whenever they're needed, and can be easily retrieved using the alias.
 
 ```csharp
 public class UrlShortenerGrain : Grain, IUrlShortenerGrain

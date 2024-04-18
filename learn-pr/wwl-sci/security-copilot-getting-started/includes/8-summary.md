@@ -17,3 +17,4 @@ Now that you've completed this module, you should be able to:
 
 - [What is Microsoft Copilot for Security?](/security-copilot/microsoft-security-copilot)
 - [Microsoft Copilot for Security experiences](/security-copilot/experiences-security-copilot)
+- [Understand authentication in Microsoft Copilot for Security](/security-copilot/authentication)

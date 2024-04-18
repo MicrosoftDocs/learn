@@ -1,2 +1,1 @@
 In this module, you learned how to plan and implement robust security measures for Azure SQL Database and Azure SQL Managed Instance, including enabling secure database authentication with Microsoft Enterprise Identity, database auditing, utilizing the Microsoft Purview governance portal for data classification, implementing dynamic masking for sensitive information, Transparent Database Encryption (TDE), and making informed decisions about when to use Azure SQL Database Always Encrypted for client-side data encryption.
-

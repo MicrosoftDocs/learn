@@ -55,7 +55,7 @@ Data Migration Assistant currently doesn’t support:
 -  By default, Data Migration Assistant selects all the qualified logins to migrate. Optionally, you can select specific logins to migrate1.
 
 > [!NOTE]
-> While the Database Migration Assistant is a useful tool available, we recommend that you use the [Azure Database Migration Service](/azure/dms/dms-overview) for large migrations and enhanced overall experience, which is available as [Azure SQL Migration an extension in Azure Data Studio](/azure-data-studio/extensions/azure-sql-migration-extension), or via [Azure Portal](https://aka.ms/dmsazureportal), or through [Azure PowerShell and Azure CLI](/azure/dms/migration-dms-powershell-cli).
+> While the Database Migration Assistant is a useful tool available, we recommend that you use the [Azure Database Migration Service](/azure/dms/dms-overview) for large migrations and enhanced overall experience, which is available as [Azure SQL Migration extension for Azure Data Studio](/azure-data-studio/extensions/azure-sql-migration-extension), or via [Azure Portal](https://aka.ms/dmsazureportal), or through [Azure PowerShell and Azure CLI](/azure/dms/migration-dms-powershell-cli).
 
 ### MoveLogins script
 
