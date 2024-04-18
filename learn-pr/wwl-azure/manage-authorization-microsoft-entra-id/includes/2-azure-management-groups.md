@@ -75,65 +75,7 @@ You can define a management group as an assignable scope in an Azure custom role
 
 Defining and creating a custom role doesn't change with the inclusion of management groups. Use the full path to define the management group **/providers/Microsoft.Management/managementgroups/\{groupId\}**.
 
-Use the management group's ID and not the management group's display name. This common error happens since both are custom-defined fields when creating a management group.<br>
-
-`JSON`
-
-`...`
-
-`{`
-
-`"Name": "MG Test Custom Role",`
-
-`"Id": "id",`
-
-`"IsCustom": true,`
-
-`"Description": "This role provides members understand custom roles.",`
-
-`"Actions": [`
-
-`"Microsoft.Management/managementgroups/delete",`
-
-`"Microsoft.Management/managementgroups/read",`
-
-`"Microsoft.Management/managementgroup/write",`
-
-`"Microsoft.Management/managementgroup/subscriptions/delete",`
-
-`"Microsoft.Management/managementgroup/subscriptions/write",`
-
-`"Microsoft.resources/subscriptions/read",`
-
-`"Microsoft.Authorization/policyAssignments/*",`
-
-`"Microsoft.Authorization/policyDefinitions/*",`
-
-`"Microsoft.Authorization/policySetDefinitions/*",`
-
-`"Microsoft.PolicyInsights/*",`
-
-`"Microsoft.Authorization/roleAssignments/*",`
-
-`"Microsoft.Authorization/roledefinitions/*"`
-
-`],`
-
-`"NotActions": [],`
-
-`"DataActions": [],`
-
-`"NotDataActions": [],`
-
-`"AssignableScopes": [`
-
-`"/providers/microsoft.management/managementGroups/ContosoCorporate"`
-
-`]`
-
-`}`
-
-`...`
+Use the management group's ID and not the management group's display name. This common error happens since both are custom-defined fields when creating a management group.
 
 ### Issues with breaking the role definition and assignment hierarchy path
 

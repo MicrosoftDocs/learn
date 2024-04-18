@@ -7,7 +7,7 @@ Azure RBAC is an authorization system built on Azure Resource Manager that provi
 Here are some examples of what you can do with Azure RBAC:
 
  -  Allow one user to manage virtual machines in a subscription and another user to manage virtual networks
- -  Allow a DBA group to manage SQL databases in a subscription
+ -  Allow a database administrator (DBA) group to manage SQL databases in a subscription
  -  Allow a user to manage all resources in a resource group, such as virtual machines, websites, and subnets
  -  Allow an application to access all resources in a resource group
 
@@ -57,7 +57,7 @@ You can assign roles using the Azure portal, Azure CLI, Azure PowerShell, Azure 
 
 Role assignments are transitive for groups which means that if a user is a member of a group and that group is a member of another group that has a role assignment, the user will have the permissions in the role assignment.
 
-:::image type="content" source="../media/groups-transitive-a12061a3.png" alt-text="Diagram showing an example of the Azure role-based access control groups":::
+:::image type="content" source="../media/groups-transitive-a12061a3.png" alt-text="Diagram showing an example of the Azure role-based access control groups.":::
 
 
 ## Multiple role assignments
