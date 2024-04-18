@@ -6,18 +6,18 @@ DIAGRAM:
 - Azure AI Language entity recognition
 - Sample result table: entities
 
-There are several ways to call the [named entity recognition API](/azure/ai-services/language-service/named-entity-recognition/how-to-call). Here, we'll use the `azure_ai` extension to recognize entities from text in SQL queries.
+There are several ways to call the [named entity recognition API](/azure/ai-services/language-service/named-entity-recognition/how-to-call). Here, we use the `azure_ai` extension to recognize entities from text in SQL queries.
 
 ## Prerequisites
 
-You'll need an Azure Database for PostgreSQL flexible server, with the `azure_ai` extension [enabled and configured](/azure/postgresql/flexible-server/generative-ai-azure-overview). You'll also need to [authorize it](/azure/postgresql/flexible-server/generative-ai-azure-cognitive#configure-azure_ai-extension-with-azure-cognitive-services) with Azure Cognitive Services by setting a Language resource's key and endpoint.
+You need an Azure Database for PostgreSQL flexible server, with the `azure_ai` extension [enabled and configured](/azure/postgresql/flexible-server/generative-ai-azure-overview). You also need to [authorize it](/azure/postgresql/flexible-server/generative-ai-azure-cognitive#configure-azure_ai-extension-with-azure-cognitive-services) with Azure Cognitive Services by setting a Language resource's key and endpoint.
 
 ## Scenarios
 
 Entity recognition is helpful in several domains, such as:
 
 - Search and indexing: build knowledge graphs and tag directories automatically with identified entities.
-- Process automation: automatically recognize products and locations in unstructured text to route customer support requests.
+- Process automation: automatically recognize products and locations in unstructured text and routes them to customer support requests.
 - Market analysis: measure most frequent entities and entity clusters from social media, customer reviews, support tickets, etc., to determine relevant topics and anticipate trends.
 
 ## Using named entity recognition in SQL with Azure Cognitive Services
@@ -36,9 +36,9 @@ azure_cognitive.recognize_entities(
 
 The required parameters are `text`, the input, and `language`, the language the `text` is written in. For example, `en-us` is US English and `fr` is French. See [language support](/azure/ai-services/language-service/concepts/language-support) for the full list of available languages.
 
-By default, entity recognition is stopped if it doesn't finish in 3600000 ms = 1 hour. You can customize this delay by changing `timeout_ms`.
+By default, entity recognition is stopped if it doesn't finish in 3,600,000 ms = 1 hour. You can customize this delay by changing `timeout_ms`.
 
-If an error occurs, the default behavior is to throw an exception resulting in a transaction rollback. You can disable this by setting `throw_on_error` to false.
+If an error occurs, the default behavior is to throw an exception resulting in a transaction rollback. You can disable this behavior by setting `throw_on_error` to false.
 
 See the [Azure Cognitive Services extension documentation](/azure/postgresql/flexible-server/generative-ai-azure-cognitive#azure_cognitiverecognize_entities) for full parameter documentation.
 
@@ -48,13 +48,13 @@ For example, invoking this query:
 SELECT azure_cognitive.recognize_entities('For more information, see Cognitive Services Compliance and Privacy notes.', 'en-us');
 ```
 
-gives this result:
+Gives this result:
 
 ```
 {"(\"Cognitive Services\",Skill,\"\",0.94)"}
 ```
 
-Indicating the entity's name is "Cognitive Services", it's identified as a skill, with a confidence score of 0.94.
+Indicating the entity's name is "Cognitive Services," it's identified as a skill, with a confidence score of 0.94.
 
 You can use table columns for the input text:
 
@@ -63,7 +63,7 @@ SELECT description, azure_cognitive.recognize_entities(description, 'en-us')
 FROM listings LIMIT 1;
 ```
 
-which returns:
+Which returns:
 
 ```
  {"(house,Location,\"\",0.77)","(2013.,DateTime,DateRange,1)","(\"rooftop deck\",Location,\"\",0.88)","(\"lounge area\",Location,Structural,0.97)","(tub,Product,\"\",0.52)","

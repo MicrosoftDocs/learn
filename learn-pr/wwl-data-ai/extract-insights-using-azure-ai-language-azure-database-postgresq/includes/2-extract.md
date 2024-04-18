@@ -6,19 +6,19 @@ DIAGRAM:
 - Azure AI Language key phrase extraction
 - Sample result table: key phrases + confidence
 
-There are several ways to call the [key phrase extraction API](/azure/ai-services/language-service/key-phrase-extraction/how-to/call-api). Here, we'll use the `azure_ai` extension to extract key phrases in SQL queries.
+There are several ways to call the [key phrase extraction API](/azure/ai-services/language-service/key-phrase-extraction/how-to/call-api). Here, we use the `azure_ai` extension to extract key phrases in SQL queries.
 
 ## Prerequisites
 
-You'll need an Azure Database for PostgreSQL flexible server, with the `azure_ai` extension [enabled and configured](/azure/postgresql/flexible-server/generative-ai-azure-overview). You'll also need to [authorize it](/azure/postgresql/flexible-server/generative-ai-azure-cognitive#configure-azure_ai-extension-with-azure-cognitive-services) with Azure Cognitive Services by setting a Language resource's key and endpoint.
+You need an Azure Database for PostgreSQL flexible server, with the `azure_ai` extension [enabled and configured](/azure/postgresql/flexible-server/generative-ai-azure-overview). You also need to [authorize it](/azure/postgresql/flexible-server/generative-ai-azure-cognitive#configure-azure_ai-extension-with-azure-cognitive-services) with Azure Cognitive Services by setting a Language resource's key and endpoint.
 
 ## Scenarios
 
-Key phrase extraction applies to a variety of tasks:
+Key phrase extraction applies to various tasks:
 
 - Summarization: use key phrases to reduce lengthy documents to core topics, for example to identify topics discussed in audio transcripts or meeting notes.
 - Content categorization: use key phrases to index documents for search and browsing. Key phrases can be used to visualize documents in word clouds.
-- Document clustering: large collections of support tickets, product reviews, and other unstructured input may be clustered and analyzed by key phrases.
+- Document clustering: large collections of support tickets, product reviews, and other unstructured input can be clustered and analyzed by key phrases.
 
 ## Using key phrase extraction SQL with Azure Cognitive Services
 
@@ -36,9 +36,9 @@ azure_cognitive.extract_key_phrases(
 
 The required parameters are `text`, the input, and `language`, the language the `text` is written in. For example, `en-us` is US English and `fr` is French. See [language support](/azure/ai-services/language-service/concepts/language-support) for the full list of available languages.
 
-By default, key phrase extraction is stopped if it doesn't finish in 3600000 ms = 1 hour. You can customize this delay by changing `timeout_ms`.
+By default, key phrase extraction is stopped if it doesn't finish in 3,600,000 ms = 1 hour. You can customize this delay by changing `timeout_ms`.
 
-If an error occurs, the default behavior is to throw an exception resulting in a transaction rollback. You can disable this by setting `throw_on_error` to false.
+If an error occurs, the default behavior is to throw an exception resulting in a transaction rollback. You can disable this behavior by setting `throw_on_error` to false.
 
 See the [Azure Cognitive Services extension documentation](/azure/postgresql/flexible-server/generative-ai-azure-cognitive#azure_cognitiveextract_key_phrases) for full parameter documentation.
 
@@ -48,7 +48,7 @@ For example, invoking this query:
 SELECT azure_cognitive.extract_key_phrases('The food was delicious and the staff were wonderful.', 'en-us');
 ```
 
-gives this result:
+Gives this result:
 
 ```
  extract_key_phrases 
@@ -63,7 +63,7 @@ SELECT description, azure_cognitive.extract_key_phrases(description, 'en-us')
 FROM listings LIMIT 1;
 ```
 
-which returns (with `\x` on for extended display):
+Which returns (with `\x` on for extended display):
 
 ```
 description         | Welcome! If you stay here you will be living in a light filled two bedroom upper and ground level apartment (in a two apartment home). During your stay you will be welcome to share in our fresh eggs from the chickens and garden produce in season! Welcome!  Come enjoy your time in Seattle at a lovely urban farmstead.  There are two bedrooms each with a queen bed, full bath, living room and kitchen with wood floors throughout.  During your stay you will be welcome to eat fresh eggs from the chickens and possibly fruit/veggies from the garden if you are in luck!   We are family friendly and have a down to earth atmosphere.  There is a large covered back porch and grill for hanging out especially in summer and a treehouse for up in the trees hammock time! Walking distance to Othello Light Rail Station for easy access to downtown.  Also nearby is the fantastic Seward Park and the Kubota Gardens for outdoorsy loveliness.  New last year is out beautiful Rainier Beach indoor swimming pool comp

@@ -1,10 +1,10 @@
 Azure AI Language is a cloud-based Natural Language Processing (NLP) service. Use this service to understand and analyze text with features such as: key phrase extraction, entity recognition, personally identifiable information (PII) detection, and more. Learn more here: [What is Azure AI Language?](/azure/ai-services/language-service/overview).
 
-The Azure Database for PostgreSQL flexible server `azure_ai` extension integrates the database with the Azure AI Language services. It provides user-defined functions to access the language APIs within SQL. This allows you to extract insights from text directly from the database, without writing natural language processing code in client applications.
+The Azure Database for PostgreSQL flexible server `azure_ai` extension integrates the database with the Azure AI Language services. It provides user-defined functions to access the language APIs within SQL. This access allows you to extract insights from text directly from the database, without writing natural language processing code in client applications.
 
 DIAGRAM:
 
-* Show Azure DB for PostgreSQL flexible server
+* Show Azure Database for PostgreSQL flexible server
 * Show `azure_ai` extension icon
 * Show Azure AI Language icon
 * Show key phrase + entity recognition + PII recognition APIs
@@ -12,15 +12,15 @@ DIAGRAM:
 
 ## Example scenario
 
-Consider a company that provides vacation listings. The company's marketing team wants to better understand customer preferences by identifying the key phrases used in the most popular listings, as well as which businesses, attractions, and places are highlighted. Also, the company's information security team wants to scan listings for personally identifiable information (PII) to ensure safety and privacy.
+Consider a company that provides vacation listings. The company's marketing team wants to better understand customer preferences by identifying the key phrases used in the most popular listings, and which businesses, attractions, and places are highlighted. Also, the company's information security team wants to scan listings for personally identifiable information (PII) to ensure safety and privacy.
 
 ## What will we be doing?
 
-We'll use the `azure_ai` extension to integrate an Azure Database for PostgreSQL flexible server with Azure AI Language to accomplish our three tasks. First, we'll extract the key phrases from listing descriptions and store them in the database, enabling the data science team to analyze which appear the most in popular listings. Then, we'll extract & store named entities for the same purpose. Lastly, we'll flag all listings that contain PII and store the redacted text.
+We use the `azure_ai` extension to integrate an Azure Database for PostgreSQL flexible server with Azure AI Language to accomplish our three tasks. First, we extract the key phrases from listing descriptions and store them in the database, enabling the data science team to analyze which appear the most in popular listings. Then, we extract & store named entities for the same purpose. Lastly, we flag all listings that contain PII and store the redacted text.
 
 ## What is the main goal?
 
-The main goal is to understand using the `azure_ai` PostgreSQL extension to access these Azure AI Language services: key phrase extraction, entity recognition, and PII detection. We'll see how to access these APIs in SQL as well as store the result data in columns.
+The main goal is to understand using the `azure_ai` PostgreSQL extension to access these Azure AI Language services: key phrase extraction, entity recognition, and PII detection. We see how to access these APIs in SQL and store the result data in columns.
 
 ## Setup: enable and authorize `azure_ai`
 
