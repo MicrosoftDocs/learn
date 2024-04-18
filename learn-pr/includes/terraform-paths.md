@@ -1,7 +1,7 @@
 ---
 author: jaredfholgate
 ms.topic: include
-ms.date: 04/04/2024
+ms.date: 04/18/2024
 ms.author: jaredholgate
 ---
 To learn about Terraform on Azure, we recommend you take these three learning paths:

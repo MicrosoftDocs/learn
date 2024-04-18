@@ -5,7 +5,7 @@ metadata:
   unitType: introduction
   title: Introduction
   description: Learn how you can use infrastructure as code and Terraform to quickly and confidently scale your cloud deployments.
-  ms.date: 18/04/2024
+  ms.date: 04/18/2024
   author: jaredfholgate
   ms.author: jaredholgate
   ms.topic: unit
