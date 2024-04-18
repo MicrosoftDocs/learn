@@ -6,20 +6,20 @@ There are two main steps to the role assignment process. First you'll select the
 
 ### Select the role to assign
 
-1.  Sign in to the **Microsoft Entra admin center** as a **Privileged Role Administrator**.
-2.  Browse to **Identity**, **Users**, **All users**.
+1.  Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a Privileged Role Administrator.
+2.  Browse to **Identity** &gt; **Users** &gt; **All users**.
+
+1.  :::image type="content" source="../media/microsoft-entra-users-page-a33719dc.png" alt-text="Screenshot showing the users page in the Microsoft Entra administration center.":::
     
-    :::image type="content" source="../media/microsoft-entra-users-page-a33719dc.png" alt-text="Screenshot showing the users page in the Microsoft Entra administration center.":::
-    
-3.  Search for and select the **user** getting the role assignment.<br>
+2.  Search for and select the **user** getting the role assignment.<br>
     
     :::image type="content" source="../media/select-existing-user-a4c17707.png" alt-text="Screenshot showing a list of principal users in the Azure portal.":::
     
-4.  Select **Assigned roles** from the side menu, then select **Add assignments**.
+3.  Select **Assigned roles** from the side menu, then select **Add assignments**.
     
     :::image type="content" source="../media/user-profile-assigned-external-identity-8af4f695.png" alt-text="Screenshot showing how to select assigned roles and apply assignments.":::
     
-5.  Select a role to assign from the dropdown list and select the **Next** button.
+4.  Select a role to assign from the dropdown list and select the **Next** button.
 
 ## Adjust the role settings
 
