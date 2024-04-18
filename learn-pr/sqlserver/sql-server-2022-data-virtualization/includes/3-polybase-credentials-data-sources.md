@@ -30,12 +30,12 @@ The **Connector location prefix** informs SQL Server of the type of endpoint you
 
 | External data source | Connector location prefix | Location path | Authentication |
 |--|--|--|--|
-| Azure Storage Account (V2) | `abs` | `abs://<storage_account_name>.blob.core.windows.net/<container_name>` | Shared access signature (SAS) |
+| Azure Blob Storage | `abs` | `abs://<storage_account_name>.blob.core.windows.net/<container_name>` | Shared access signature (SAS) |
 | Azure Data Lake Storage | `adls` | `adls://<storage_account_name>.dfs.core.windows.net/<container_name>` | SAS |
 | SQL Server | `sqlserver` | `<server_name>[\<instance_name>][:port]` | SQL authentication only |
 | Oracle | `oracle` | `<server_name>[:port]` | Basic authentication only |
 | Teradata | `teradata` | `<server_name>[:port]` | Basic authentication only |
-| MongoDB or Cosmos DB API for MongoDB | `mongodb` | `<server_name>[:port]` | Basic authentication only |
+| MongoDB or Azure Cosmos DB API for MongoDB | `mongodb` | `<server_name>[:port]` | Basic authentication only |
 | Generic Open Database Connectivity (ODBC) | `odbc` | `<server_name>[:port]` | Basic authentication only |
 | Bulk operations | `https` | `<storage_account>.blob.core.windows.net/<container>` | SAS |
 | S3-compatible object storage | `s3` | `s3://<server_name>:<port>/` |  |

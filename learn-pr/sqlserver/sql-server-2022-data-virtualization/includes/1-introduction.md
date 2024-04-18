@@ -20,7 +20,7 @@ Data virtualization relies on three principles:
 
 - **Data abstraction:** Data abstraction hides the complexities of data access from the underlying data system, formats, and structures.
 
-- **Zero replication:** Unlike traditional ETL, data virtualization doesn't need to collect the data into a separate repository to transform it to the destination format, but handles transformation and aggregation on the fly.
+- **Zero replication:** Unlike traditional extract-transform-load (ETL), data virtualization doesn't need to collect the data into a separate repository to transform it to the destination format, but handles transformation and aggregation on the fly.
 
 - **Real-time data:** Because data virtualization connects to the data source on the fly, it always uses the latest available data.
 
@@ -28,23 +28,23 @@ Data virtualization relies on three principles:
 
 Data virtualization has the following major benefits:
 
-- **No data movement:** Access data in its current location.
+- **No data movement:** Accesses data in its current location.
 
-- **T-SQL language:** Use all the benefits of the T-SQL language, its commands, enhancements, and familiarity.
+- **T-SQL language:** Uses all the benefits of the T-SQL language, its commands, enhancements, and familiarity.
 
-- **One source for all your data:** Use SQL Server 2022 as a single data source and data hub for all required data, hiding data complexity from applications. Database administrators and data engineers can maintain a single environment.
+- **One source for all your data:** Uses SQL Server 2022 as a single data source and data hub for all required data, hiding data complexity from applications. Database administrators and data engineers can maintain a single environment.
 
-- **Security**: Use SQL Server security features for granular permissions, credential management, and control.
+- **Security**: Uses SQL Server security features for granular permissions, credential management, and control.
 
-- **Cost flexibility:** PolyBase is available in all SQL Server 2022 editions.
+- **Cost flexibility:** Is available in all SQL Server 2022 editions.
 
 ## Data virtualization use cases
 
-Data virtualization use cases:
+SQL Server 2022 offers the following major data virtualization use cases:
 
-- **In-database analytics:** Use and combine all SQL Server capabilities and familiarity when using data virtualization.
+- **In-database analytics:** Uses and combines all SQL Server capabilities and familiarity when using data virtualization.
 - **Offload or export data to other data sources.**
-- **Data hub:** You can use SQL Server as a centralized hub to connect, protect, and query different data sources and files, hiding the complexity from the application. There's no need to use an extract-transform-load (ETL) tool to aggregate, copy, or move the data to a staging area.
+- **Data hub:** Uses SQL Server as a centralized hub to connect, protect, and query different data sources and files, hiding the complexity from applications. There's no need to use an ETL tool to aggregate, copy, or move the data to a staging area.
 
   :::image type="content" source="../media/sql-server-data-hub.png" alt-text="Image of SQL Server as a data hub for data virtualization." border="false":::
 

@@ -4,7 +4,7 @@ ms.custom:
 ---
 In this exercise, you:
 
-- Use CETAS to export a table as Parquet.
+- Use CREATE EXTERNAL TABLE AS SELECT (CETAS) to export a table as Parquet.
 - Use CETAS to move cold data out of a database.
 - Use a view to query the data that includes an external table.
 - Use wildcard search to query the data.
@@ -15,7 +15,7 @@ In this exercise, you:
 - A SQL Server 2022 instance with internet connectivity and the **PolyBase Query Service for External Data** feature installed and enabled as in previous units.
 - The [AdventureWorks2022](/sql/samples/adventureworks-install-configure) sample database restored to your server to use for sample data.
 - An Azure Storage account with a Blob Storage container named `data` created. To create the storage, see [Quickstart: Upload, download, and list blobs with the Azure portal](/azure/storage/blobs/storage-quickstart-blobs-portal).
-- The **Storage Blob Data Contributor** data access role assigned by Azure role-based access control (RBAC). For more information, see [Assign an Azure role for access to blob data](/azure/storage/blobs/assign-azure-role-data-access).
+- The Azure role-based access control (RBAC) **Storage Blob Data Contributor** role assigned in Azure. For more information, see [Assign an Azure role for access to blob data](/azure/storage/blobs/assign-azure-role-data-access).
 - A blob container SAS token with **READ**, **WRITE**, **LIST**, and **CREATE** permissions to be used for CETAS. To create the SAS token, see [Create shared access signature (SAS) tokens for your storage containers](/azure/cognitive-services/translator/document-translation/how-to-guides/create-sas-tokens).
 
 ## Use CETAS to export a table as Parquet
@@ -115,7 +115,7 @@ Imagine that you work with a business analytics team that wants to export data o
     SELECT * FROM ex_data_2011_2012
     ```
 
-   :::image type="content" source="../media/ssms-select-from-external-table.png" alt-text="Screenshot of SSMS and the results from the AdventureWorks2022 database showing the results from the external table.":::
+   :::image type="content" source="../media/ssms-select-from-external-table.png" alt-text="Screenshot of results from the AdventureWorks2022 database showing the results from the external table.":::
 
 The data is now exported to Parquet and is easily accessible through the external table. The business analytics team can query the external table or point their reporting tool at the Parquet file.
 
@@ -301,11 +301,11 @@ WHERE
  r.filepath(1) IN ('2011')
 ```
 
-The end results are the same, but by using the folder elimination metadata, your query accesses only the required folders instead of scanning the entire data source, producing better query performance. Keep this information in mind when you design storage architectures to better leverage capabilities. For example, given the following folder architecture:
+The end results are the same, but by using the folder elimination metadata, your query accesses only the required folders instead of scanning the entire data source, producing better query performance. Keep this information in mind when you design storage architectures to better use PolyBase capabilities. For example, given the following folder architecture:
 
 :::image type="content" source="../media/folder-elimination-architecture.png" alt-text="Screenshot showing a folder architecture example in a storage container." border="false":::
 
-This is what your query would look like:
+You could use the following query:
 
 ```sql
 SELECT  *
@@ -319,10 +319,12 @@ WHERE
  r.filepath(2) IN ('<month>')
 ```
 
-For query purposes, it doesn't matter how large the data source grows. SQL Server loads, reads, and queries only the data from the selected folder, skipping all others.
+For purposes of this query, it doesn't matter how large the data source grows. SQL Server loads, reads, and queries only the data from the selected folder, skipping all others.
 
 Because no data is stored in the database, the database administrator doesn't need to design a specific strategy to manage this data. The company must still take all the required precautions to safely maintain the data, including but not limited to backups, availability, and permissions.
 
-Congratulations! You used CETAS to move cold data out of a database into Azure Storage and export a table as Parquet file format. You learned ways to query the exernal data for exploration and to optimize performance.
+## Summary
 
-You can use this knowledge to combine OPENROWSET, external table, views, wildcard search, and filepath function to design a performant, durable, and scalable solution across every PolyBase supported data source. You can use CETAS to access and export data from another database like SQL Server, Oracle, Teradata, MongoDB, and others, or from Azure Blob Storage, Azure Data Lake Storage, or S3-compatible object storage.
+In this exercise, you used CETAS to move cold data out of a database into Azure Storage and export a table as Parquet file format. You learned ways to query the external data for exploration and to optimize performance.
+
+You can use CETAS to combine OPENROWSET, external tables, views, wildcard search, and filepath functions. You can access and export data from other databases like SQL Server, Oracle, Teradata, and MongoDB, or from Azure Blob Storage, Azure Data Lake Storage, or any S3-compatible object storage. CETAS can help you design performant, durable, and scalable solutions across all PolyBase supported data sources.

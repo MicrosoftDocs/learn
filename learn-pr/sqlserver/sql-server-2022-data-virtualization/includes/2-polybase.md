@@ -2,19 +2,30 @@
 ms.custom:
   - build-2023
 ---
-PolyBase is the feature that SQL Server uses to enable the data virtualization concept. PolyBase was originally released in SQL Server 2016 and is improved in each later version of SQL Server. The general concept of accessing data remotely without having to copy the data, however, dates from SQL Server 7.0 with the introduction of Linked Server.
+PolyBase is the feature that SQL Server uses to enable the data virtualization concept. PolyBase was originally released in SQL Server 2016 and is improved in each later version of SQL Server. However, the general concept of accessing data remotely without having to copy the data dates from SQL Server 7.0 with the introduction of Linked Server.
 
 <!-- :::image type="content" source="../media/polybase-evolution.png" alt-text="An image of PolyBase enhancements in different versions of SQL Server, from 2016 to 2022." border="false"::: -->
 
 |SQL Server 2016|SQL Server 2017|SQL Server 2019|SQL Server 2022|
 |-----|-----|-----|-----|
-|Hadoop|OPENROWSET enhancements|SQL Server|New connector framework|
-|Azure Blob Storage|CSV for Azure Blob Storage|Oracle|Object storage integration|
-||Database Scoped Credential|Azure Cosmos DB|CSV|
-|||MongoDB|Parquet|
-|||Teradata|Delta|
-|||Linux support|CETAS|
-|||Generic ODBC||
+|• Hadoop<br>
+• Azure Blob Storage<br>
+• Generic ODBC|
+|• OPENROWSET enhancements<br>
+• CSV for Azure Blob Storage<br>
+• Database Scoped Credential|
+|• SQL Server<br>
+• Oracle<br>
+• Azure Cosmos DB<br>
+• MongoDB<br>
+• Teradata<br>
+• Linux support|
+|• New connector framework<br>
+• Object storage integration<br>
+• CSV<br>
+• Parquet<br>
+• Delta<br>
+• CETAS|
 
 ## PolyBase enhancements in SQL Server 2022
 
@@ -33,12 +44,14 @@ Some main features of object storage compared to a traditional file system are:
 - Keeps metadata embedded in the file.
 - Files can have attributes like tags.
 - More cost-effective to scale and easier to maintain.
-- Optimized for large amounts of data, such as Big Data, Internet of Things (IoT), Machine Learning, and analytics.
+- Optimized for large amounts of data, such as Big Data, Internet of Things (IoT), AI, Machine Learning, and analytics.
 - Not recommended for high-transactional or online transaction processing (OLTP) workloads.
 
 You can also use S3-compatible object storage for backup and restore scenarios by using the BACKUP TO URL command. For more information, see [SQL Server backup and restore with S3-compatible object storage](/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-s3-compatible-object-storage).
 
-Amazon Web Services (AWS) established the S3 standard framework, and major storage providers like Cloudian, Dell, MinIO, and PureStorage now offer S3-compatible object storage solutions. If a solution offers compatibility with S3 REST APIs, it's compatible with SQL Server 2022. For more information about object storage benefits, installation, and testing, see the following storage partner documentation. For more object storage providers, see [Providers of S3-compatible object storage](/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-s3-compatible-object-storage#providers-of-s3-compatible-object-storage).
+Amazon Web Services (AWS) established the S3 standard framework, and major storage providers like Cloudian, Dell, MinIO, and PureStorage now offer S3-compatible object storage solutions. If a solution offers compatibility with S3 REST APIs, it's compatible with SQL Server 2022.
+
+For more information about object storage benefits, installation, and testing, see the following storage partner documentation. For more object storage providers, see [Providers of S3-compatible object storage](/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-s3-compatible-object-storage#providers-of-s3-compatible-object-storage).
 
 - [Cloudian](https://cloudian.com/sql) HyperStore
 - [Dell](https://www.dell.com/en-us/dt/products-solutions/trial-software-download/eula/isilonsoftwaredownload.htm) Isildon OneFS
@@ -53,7 +66,7 @@ Some object storage partners offer the ability to run their solution as software
 
 To use PolyBase, you must install the **PolyBase Query Service for External Data** and enable PolyBase at an instance level by using `sp_configure`. PolyBase setup installs two PolyBase services, **SQL Server PolyBase Engine** and **SQL Server PolyBase Data Movement**. Data sources like SQL Server, Oracle, MongoDB, or ODBC-based sources use these PolyBase services.
 
-Data sources that use the new SQL Server 2022 REST API-based PolyBase architecture don't require these services to be running or configured, only the PolyBase feature to be installed and enabled. You can use the PolyBase REST APIs to access Azure Data Lake Storage, Azure Blob Storage, any S3-compatible object storage, and file formats such as Parquet, Delta, and CSV files. Previously-supported data sources still use the PolyBase services.
+Data sources that use the new SQL Server 2022 REST API-based PolyBase architecture don't require these services to be running or configured, only the PolyBase feature to be installed and enabled. You can use the PolyBase REST APIs to access Azure Data Lake Storage, Azure Blob Storage, any S3-compatible object storage, and file formats such as Parquet, Delta, and CSV files. Previously supported data sources still use the PolyBase services.
 
 |Data source |PolyBase services |PolyBase REST API feature|
 |---------|---------|---------|
@@ -63,7 +76,7 @@ Data sources that use the new SQL Server 2022 REST API-based PolyBase architectu
 |SQL Server |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: | :::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |
 |Oracle |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |
 |Teradata |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |
-|MongoDB or Cosmos DB API for MongoDB |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |
+|MongoDB or Azure Cosmos DB API for MongoDB |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |
 |Generic Open Database Connectivity (ODBC) |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |
 |Bulk operations |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |
 
