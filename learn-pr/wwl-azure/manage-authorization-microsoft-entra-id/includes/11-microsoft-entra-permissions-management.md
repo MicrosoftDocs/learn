@@ -9,7 +9,9 @@ Permissions Management detects, automatically right-sizes, and continuously moni
  -  The inconsistency of cloud providers' native access management models makes it even more complex for Security and Identity to manage permissions and enforce least privilege access policies across their entire environment.
 
 :::image type="content" source="../media/key-use-cases-0c5b6897.png" alt-text="Diagram showing Microsoft Entra Permissions Management identities actions resources.":::
-Key use cases
+
+
+## Key use cases
 
 Permissions Management allows customers to address three key use cases: ***discover***, ***remediate***, and ***monitor***.
 

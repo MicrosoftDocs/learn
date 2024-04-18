@@ -21,6 +21,9 @@ On both Linux and macOS, you'll use a package manager to install PowerShell Core
 
 ### Linux
 
+> [!CAUTION]
+> This content references CentOS, a Linux distribution that is nearing End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
+
 On Linux, the package manager will change based on the Linux distribution you choose.
 
 | Distribution(s)  | Package manager |

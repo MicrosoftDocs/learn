@@ -36090,6 +36090,276 @@
       "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/9-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/10-knowledge-check",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/index.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/1-introduction.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/5-knowledge-check.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/6-summary-resources.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/4-use-azcopy.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/2-use-azure-storage-explorer.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/3a-use-import-export-service.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/3b-use-waimportexport-tool.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/10-azure-key-vault-backup-restore.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/governance-security/13-azure-key-vault-backup-restore",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/11-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/governance-security/14-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/12-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/governance-security/15-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/5-create-key-vault-use-azure-portal.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/governance-security/8-create-key-vault-use-azure-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/6-azure-dedicated-hardware-security-module.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/governance-security/9-azure-dedicated-hardware-security-module",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/7-provide-access-key-vault-keys-certificates-secrets.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/governance-security/10-provide-access-key-vault-keys-certificates-secrets",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/8-azure-key-vault-keys-secrets-certificates.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/governance-security/11-azure-key-vault-keys-secrets-certificates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/9-configure-cryptographic-key-auto-rotation-azure-key-vault.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/governance-security/12-configure-cryptographic-key-auto-rotation-azure-key-vault",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/sc-200-who-hacked-cloud-game/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/courses/sc-200t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/sc-200-who-hacked-cloud-game/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/courses/sc-200t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/sc-200-who-hacked-cloud-game/3-keep-playing.md",
+      "redirect_url": "https://learn.microsoft.com/training/courses/sc-200t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/sc-200-who-hacked-cloud-game/4-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/courses/sc-200t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/sc-200-who-hacked-cloud-game/2-play-who-hacked.md",
+      "redirect_url": "https://learn.microsoft.com/training/courses/sc-200t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/sc-200-who-hacked-cloud-game/5-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/courses/sc-200t00",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/10-microsoft-defender-cloud-devops-security.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/15-microsoft-defender-cloud-devops-security",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/11-devops-security-support-prerequisites.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/16-devops-security-support-prerequisites",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/12-devops-environment-security-posture.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/17-devops-environment-security-posture",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/13-connect-your-git-lab-environment-microsoft-defender-cloud.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/18-connect-your-git-lab-environment-microsoft-defender-cloud",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/14-configure-microsoft-security-devops-github-action.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/19-configure-microsoft-security-devops-github-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/15-security-alerts-incidents.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/20-security-alerts-incidents",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/16-automate-responses-microsoft-defender-cloud-triggers.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/21-automate-responses-microsoft-defender-cloud-triggers",
+      "redirect_document_id": false
+    },
+       {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/17-view-remediate-findings-from-vulnerability-assessments.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/22-view-remediate-findings-from-vulnerability-assessments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/18-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/23-knowledge-check",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/19-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/24-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/5-managed-kubernetes.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/6-managed-kubernetes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/6-container-security-microsoft-defender-containers.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/5-container-security-microsoft-defender-containers",
+      "redirect_document_id": false
+    },		
+    {
+      "source_path": "learn-pr/commercial-marketplace/simplify-cloud-procurement-governance-azure-marketplace/index.yml",
+      "redirect_url": "https://learn.microsoft.com/marketplace/governance-control-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/commercial-marketplace/simplify-cloud-procurement-governance-azure-marketplace/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/marketplace/governance-control-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/commercial-marketplace/simplify-cloud-procurement-governance-azure-marketplace/2-find-try-software-azure-marketplace.yml",
+      "redirect_url": "https://learn.microsoft.com/marketplace/governance-control-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/commercial-marketplace/simplify-cloud-procurement-governance-azure-marketplace/3-buy-software-azure-marketplace.yml",
+      "redirect_url": "https://learn.microsoft.com/marketplace/governance-control-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/commercial-marketplace/simplify-cloud-procurement-governance-azure-marketplace/4-manage-software-procurement-azure-marketplace.yml",
+      "redirect_url": "https://learn.microsoft.com/marketplace/governance-control-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/commercial-marketplace/simplify-cloud-procurement-governance-azure-marketplace/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/marketplace/governance-control-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/commercial-marketplace/simplify-cloud-procurement-governance-azure-marketplace/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/marketplace/governance-control-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.simplify-cloud-procurement-governance-azure-marketplace.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/marketplace/governance-control-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/4-azure-role-based-access-control-.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-authorization-microsoft-entra-id/4-azure-role-based-access-control",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/security-storage/10-enable-infrastructure-encryption-double-encryption-data.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-storage/11-enable-infrastructure-encryption-double-encryption-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-storage/11-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-storage/12-knowledge-check",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-storage/12-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-storage/13-summary",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-storage/2-authorize-requests-azure-storage.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-storage/3-authorize-requests-azure-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-storage/3-manage-storage-account-access-keys.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-storage/4-manage-storage-account-access-keys",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-storage/4-authorize-access-blobs-use-microsoft-entra-id.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-storage/6-authorize-access-blobs-use-microsoft-entra-id",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-storage/5-select-configure-appropriate-method-access-azure.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-storage/5-select-configure-access-azure-files",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-storage/6-authorize-access-tables-use-microsoft-entra-id.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-storage/7-authorize-access-tables-use-microsoft-entra-id",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-storage/7-authorize-access-queue-data-azure-portal.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-storage/8-authorize-access-queue-data-azure-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-storage/8-recommendations-basic-data-protection.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-storage/9-recommendations-basic-data-protection",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-storage/9-bring-your-own-key-specification.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-storage//10-bring-your-own-key-specification",
+      "redirect_document_id": false
     }
   ]
 }
