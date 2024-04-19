@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-vcore-based-azure-cosmos-db-mongodb-cluster.monitor-cluster
+title: Monitor a vCore-based Azure Cosmos DB for MongoDB cluster
+metadata:
+  title: Monitor a vCore-based Azure Cosmos DB for MongoDB cluster
+  description: "Monitor a vCore-based Azure Cosmos DB for MongoDB cluster."
+  ms.date: 04/12/2024
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-monitor-cluster.md)]

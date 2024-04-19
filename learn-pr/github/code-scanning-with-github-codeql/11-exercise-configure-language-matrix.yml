@@ -5,9 +5,9 @@ metadata:
   unitType: exercise
   title: "Exercise - Configure a CodeQL language matrix" # user input: module title for browser tab and search results
   description: "This exercise checks your knowledge on configuring the language matrix in a CodeQL workflow." # user input: a description for site search and SEO
-  ms.date: 01/24/2023
-  author: hrasheed-msft
-  ms.author: hrasheed
+  ms.date: 04/11/2024
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: unit
 durationInMinutes: 1 # user input: the estimate time to complete the unit
 content: |
