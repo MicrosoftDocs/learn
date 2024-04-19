@@ -21,7 +21,7 @@ quiz:
     choices:
     - content: 'To pinpoint who is to blame for the failure.'
       isCorrect: false
-      explanation: 'Blaming and shaming doesn't create an environment conducive to improvement.'
+      explanation: 'Blaming and shaming does not create an environment conducive to improvement.'
     - content: 'To create a punch list of items to be repaired.'
       isCorrect: false
       explanation: 'While a secondary goal might be to create a list of action items, the primary purpose is to learn and improve.'
