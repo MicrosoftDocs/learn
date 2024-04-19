@@ -7,14 +7,14 @@ Accessibility Insights is a tool that helps you identify and fix accessibility i
 :::image type="content" source="../media/3-1-fastPass-and-assessment.png" alt-text="Screenshot of the Accessibility Insights Launch pad showing the four available options: FastPass, Quick Assess, Assessment, and Ad hoc tools.":::
 
 
-- **FastPass** is a quick and easy way to find the most common and impactful accessibility issues on a web page or application. It runs an automated scan that checks for 50 accessibility criteria and generates a report that shows you the issues and how to fix them. 
+**FastPass** is a quick and easy way to find the most common and impactful accessibility issues on a web page or application. It runs an automated scan that checks for 50 accessibility criteria and generates a report that shows you the issues and how to fix them. 
 
-  :::image type="content" source="../media/3-2-sample-accessibility-insights.png" alt-text="Screenshot of a sample Accessibility Insights for Web check. The failures are highlighted on the left on the target page and are also listed on the right on the Accessibility Insights Automated checks page.":::
+:::image type="content" source="../media/3-2-sample-accessibility-insights.png" alt-text="Screenshot of a sample Accessibility Insights for Web check. The failures are highlighted on the left on the target page and are also listed on the right on the Accessibility Insights Automated checks page.":::
  
 
-- **Assessment** is a comprehensive and thorough way to evaluate the accessibility of a web page or application. It guides you through a series of manual tests that cover all the WCAG success criteria and generates a report that shows you the results and how to improve them.
+**Assessment** is a comprehensive and thorough way to evaluate the accessibility of a web page or application. It guides you through a series of manual tests that cover all the WCAG success criteria and generates a report that shows you the results and how to improve them.
 
-  :::image type="content" source="../media/3-3-automated-checks.png" alt-text="Screenshot of a sample Accessibility Insights for Web check that shows one failure selected on the Accessibility Insights Automated checks page on right and also highlighted on the target page on left.":::
+:::image type="content" source="../media/3-3-automated-checks.png" alt-text="Screenshot of a sample Accessibility Insights for Web check that shows one failure selected on the Accessibility Insights Automated checks page on right and also highlighted on the target page on left.":::
 
 ## Accessibility Checker
 
