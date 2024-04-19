@@ -41,11 +41,11 @@ mandated by federal law in the US.
 
 So, why did we tell you this story?
 
-Humans make mistakes. However, _human error_ is not a cause; it's a
+Humans make mistakes. However, _human error_ isn't a cause; it's a
 symptom. When human error is deemed to be the reason for a failure, people
 stop there instead of further analyzing the incident.
 
-System design, organizational context, and personal context all effect
+System design, organizational context, and personal context all affect
 when, how, and with what impact people make mistakes. "Human error" is a
 label that causes you to quit investigating at precisely the moment when
 you're about to discover something interesting about your system.
@@ -103,13 +103,13 @@ Normative language can usually be identified by adverbs such as
 
 Normative thinking leads you to judge decisions based on their outcomes.
 This way of speaking isn't logical, because the outcome is the _only piece
-of information that was not available_ to those who made the decisions and
+of information that wasn't available_ to those who made the decisions and
 judgments.
 
 Normative language can also be used in the opposite sense. People can
 praise operators for having acted "appropriately," for example. But again,
 often this judgment is made with the benefit of information the people in
-question did not have.
+question didn't have.
 
 The problem with normative language is similar to the problem with
 counterfactual reasoning: if we make judgments after the fact using
@@ -127,12 +127,12 @@ would have worked fine...if it hadn't been for those meddling kids."
 When you use mechanistic reasoning in your post-incident review, you build
 your conclusions on the fallacy that the systems you work with and within
 are basically working correctly, and if only those "meddling kids" hadn't
-done whatever they did, the failure would not have occurred.
+done whatever they did, the failure wouldn't have occurred.
 
 However, that's not how systems work.
 
 To illustrate this point, imagine the following scenario: You work on a
-production service. Now you're told that you are not allowed to touch or do
+production service. Now you're told that you aren't allowed to touch or do
 anything to that service. Everything outside your team continues as before: customers continue to use the service, external dependencies continue to
 change, the Internet functions normally.
 
@@ -154,7 +154,7 @@ human action and ability to adapt to changing circumstances that the system
 continues to work.
 
 Therefore, it's erroneous to conclude the system was "basically working...if it hadn't been for those meddling kids." In fact, the reliability of
-your service is not independent of the humans who work on it. Instead, it's
+your service isn't independent of the humans who work on it. Instead, it's
 a direct result of the work that the humans do on it every day.
 
 The problem with mechanistic reasoning is that it leads you down a path
