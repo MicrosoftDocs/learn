@@ -30,7 +30,7 @@ quiz:
       explanation: 'Though meeting space may be at a premium, gather the data first.'
     - content: 'Meet with the engineering manager associated with the service that had a problem.'
       isCorrect: false
-      explanation: 'You will need to gather the data first, all stakeholders can be a part of that process.'
+      explanation: 'You need to gather the data first, and all stakeholders can be a part of that process.'
 
   - content: 'Which tool can help us retrieve a Teams conversation for the post-incident review?'
     choices:
