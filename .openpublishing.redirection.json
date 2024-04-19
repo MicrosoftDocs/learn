@@ -36360,6 +36360,16 @@
       "source_path": "learn-pr/wwl-azure/security-storage/9-bring-your-own-key-specification.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/security-storage//10-bring-your-own-key-specification",
       "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/7-implement-azure-backup-server.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-hybrid-backup-recovery-windows-server-iaas/",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/8-compare-backup-options.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-hybrid-backup-recovery-windows-server-iaas/",
+      "redirect_document_id": false
     }
   ]
 }
