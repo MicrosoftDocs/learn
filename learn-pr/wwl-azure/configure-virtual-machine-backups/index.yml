@@ -3,7 +3,7 @@ uid: learn.wwl.configure-virtual-machine-backups
 metadata:
   title: Configure virtual machine backups
   description: "Learn how to configure virtual machine backups including restore operations."
-  ms.date: 04/17/2024
+  ms.date: 04/19/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
@@ -23,8 +23,6 @@ abstract: |
   -   Implement virtual machine backup and restore, including soft delete.
 
   -   Perform site-to-site recovery by using Azure Site Recovery.
-
-  -   Compare the Azure Backup agent to the Microsoft Azure Backup Server.
 prerequisites: None
 iconUrl: /training/achievements/virtual-machines-configure-backup.svg
 levels:
