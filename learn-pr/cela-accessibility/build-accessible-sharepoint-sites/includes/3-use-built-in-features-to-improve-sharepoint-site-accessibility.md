@@ -8,20 +8,20 @@ When you choose a fully accessible, tested theme for color and contrast, you kno
 
 When you want to customize your site after creating it with a template, use these built-in features to make it accessible to people with disabilities:
 
-- **Alt Text**: Alt text (alternative text) is descriptive text added to images. It provides context for screen readers and people with vision disabilities in understanding the content of an image.
+**Alt Text**: Alt text (alternative text) is descriptive text added to images. It provides context for screen readers and people with vision disabilities in understanding the content of an image.
 
-    :::image type="content" source="../media/sharepoint-online-ribbon.png" alt-text="Screenshot of a section of the SharePoint Online ribbon with the Image tab selected and the selections available in the Select, Properties, Styles, Arrange, Size, and Spacing groups.":::
+:::image type="content" source="../media/sharepoint-online-ribbon.png" alt-text="Screenshot of a section of the SharePoint Online ribbon with the Image tab selected and the selections available in the Select, Properties, Styles, Arrange, Size, and Spacing groups.":::
 
-- **Headings**: Properly structured headings (such as \<h1>, \<h2>, etc.) enhance the accessibility and organization of web pages. They help screen readers navigate content and provide a clear hierarchy.
+**Headings**: Properly structured headings (such as \<h1>, \<h2>, etc.) enhance the accessibility and organization of web pages. They help screen readers navigate content and provide a clear hierarchy.
 
-    :::image type="content" source="../media/page-elements-and-text-styles.png" alt-text="Screenshot of Page Elements and Text Styles available from the Styles group on the SharePoint Online ribbon.":::
+:::image type="content" source="../media/page-elements-and-text-styles.png" alt-text="Screenshot of Page Elements and Text Styles available from the Styles group on the SharePoint Online ribbon.":::
 
-- **Name/Role/Value**: These attributes are crucial for accessible forms and interactive elements. They ensure screen readers announce the purpose and state of form fields, buttons, and other controls. Use built in buttons or web parts and provide an accessible label.
+**Name/Role/Value**: These attributes are crucial for accessible forms and interactive elements. They ensure screen readers announce the purpose and state of form fields, buttons, and other controls. Use built in buttons or web parts and provide an accessible label.
 
-    :::image type="content" source="../media/toolbox-for-call-to-action-webpart.png" alt-text="Screenshot of the toolbox for the Call to Action web part for SharePoint sites, showing how to customize the link, button, and alignment of the web part.":::
+:::image type="content" source="../media/toolbox-for-call-to-action-webpart.png" alt-text="Screenshot of the toolbox for the Call to Action web part for SharePoint sites, showing how to customize the link, button, and alignment of the web part.":::
 
-- **Focus Order**: A logical focus order improves usability for users by determining the sequence in which interactive elements receive focus when navigating with keyboard or assistive technology. When using an accessible template, logical focus order is embedded from the start.
+**Focus Order**: A logical focus order improves usability for users by determining the sequence in which interactive elements receive focus when navigating with keyboard or assistive technology. When using an accessible template, logical focus order is embedded from the start.
 
-- **Relationships**: To ensure screen readers understand the connections within a page, you must establish relationships between elements. For example, associating a form’s label with its corresponding input field.
+**Relationships**: To ensure screen readers understand the connections within a page, you must establish relationships between elements. For example, associating a form’s label with its corresponding input field.
 
-    :::image type="content" source="../media/customized-correct-answer-message.png" alt-text="Screenshot of the customized correct answer message in Microsoft Forms.":::
+:::image type="content" source="../media/customized-correct-answer-message.png" alt-text="Screenshot of the customized correct answer message in Microsoft Forms.":::
