@@ -1,6 +1,6 @@
 Microsoft Defender for Cloud helps streamline the process for meeting regulatory compliance requirements, using the regulatory compliance dashboard. Defender for Cloud continuously assesses your hybrid cloud environment to analyze the risk factors according to the controls and best practices in the standards that you've applied to your subscriptions. The dashboard reflects the status of your compliance with these standards.
 
-When you enable Defender for Cloud on an Azure subscription, the Microsoft cloud security benchmark is automatically assigned to that subscription. This widely respected benchmark builds on the controls from the Center for Internet Security (CIS), PCI-DSS and the National Institute of Standards and Technology (NIST) with a focus on cloud-centric security.
+When you enable Defender for Cloud on an Azure subscription, the Microsoft cloud security benchmark is automatically assigned to that subscription. This widely respected benchmark builds on the controls from the Center for Internet Security (CIS), Payment Card Industry (PCI) Data Security Standards (DSS) and the National Institute of Standards and Technology (NIST) with a focus on cloud-centric security.
 
 The regulatory compliance dashboard shows the status of all the assessments within your environment for your chosen standards and regulations. As you act on the recommendations and reduce risk factors in your environment, your compliance posture improves.
 
@@ -25,7 +25,7 @@ You can use the information in the regulatory compliance dashboard to investigat
 
 ### To investigate your compliance issues:
 
-1. Sign in to the Azure portal.<br>
+1. Sign in to the [Azure portal](https://portal.azure.com/).<br>
 
 2. Navigate to **Defender for Cloud**, **Regulatory compliance**.<br>
 
@@ -56,7 +56,7 @@ The regulatory compliance has both automated and manual assessments that might n
 
 ### To remediate an automated assessment:
 
-1. Sign in to the Azure portal.<br>
+1. Sign in to the [Azure portal](https://portal.azure.com/).<br>
 
 2. Navigate to **Defender for Cloud**, **Regulatory compliance**.<br>
 
@@ -84,7 +84,7 @@ The regulatory compliance has automated and manual assessments that might need t
 
 ### To remediate a manual assessment:
 
-1. Sign in to the Azure portal.<br>
+1. Sign in to the [Azure portal](https://portal.azure.com/).<br>
 
 2. Navigate to **Defender for Cloud**, **Regulatory compliance**.<br>
 
