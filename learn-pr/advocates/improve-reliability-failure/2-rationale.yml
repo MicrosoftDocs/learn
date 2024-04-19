@@ -36,11 +36,11 @@ quiz:
     choices:
     - content: 'They work on the system.'
       isCorrect: false
-      explanation: 'Systems are socio-technical in nature, people are a part of them.'
+      explanation: 'Systems are socio-technical in nature, and people are a part of them.'
     - content: 'They work with a system.'
       isCorrect: false
-      explanation: 'Systems are socio-technical in nature, people are a part of them'
+      explanation: 'Systems are socio-technical in nature, and people are a part of them.'
     - content: 'They work within a system.'
       isCorrect: true
-      explanation: 'Correct. Systems are socio-technical in nature, people are a part of them.'
+      explanation: 'Correct. Systems are socio-technical in nature, and people are a part of them.'
  
