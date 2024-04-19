@@ -27,7 +27,7 @@ quiz:
     - content: "VNet peering."
       isCorrect: true
       explanation: "Correct, virtual network peering enables you to seamlessly connect separate VNets with optimal network performance, whether they are in the same Azure region (VNet peering) or in different regions (Global VNet peering)."
-  - content: "When configuring global peering, what changes will occur in the peered VNets?"
+  - content: "When configuring global peering, what changes occur in the peered VNets?"
     choices:
     - content: "A peering entry is added to the routing table in the source VNet only."
       isCorrect: false
