@@ -17,26 +17,26 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which of the following refers to telling a story about events that did not happen in order to explain what did happen?'
+  - content: 'Which of the following terms refers to telling a story about events that did not happen in order to explain what did happen?'
     choices:
     - content: 'Mechanistic reasoning'
       isCorrect: false
       explanation: 'Mechanistic reasoning refers to the concept that a particular outcome can be inferred from intervention.'
     - content: 'Normative language'
-      isCorrect: false
-      explanation: 'Normative language often implies that there was an "obviously-correct" course of action and judges people based on hindsight.'
+      isCorrect: false 
+      explanation: 'Normative language often implies that there was an "obviously correct" course of action and judges people based on hindsight.'
     - content: 'Counterfactual reasoning'
       isCorrect: true
       explanation: 'Correct.'
 
   - content: 'Human error is a...'
     choices:
-    - content: 'Diagnosis'
+    - content: 'Diagnosis.'
       isCorrect: false
       explanation: 'Human error is a label.'
-    - content: 'Cause of problems'
+    - content: 'Cause of problems.'
       isCorrect: false
       explanation: 'Human error is a label.'
-    - content: 'Label that causes you to quit investigating at precisely the moment when you’re about to discover something interesting about your system'
+    - content: 'Label that causes you to quit investigating at precisely the moment when you’re about to discover something interesting about your system.'
       isCorrect: true
       explanation: 'Correct.'
