@@ -4,7 +4,7 @@ title: "What is a post-incident review?"
 metadata:
   title: "What is a post-incident review?"
   description: "What is a post-incident review?"
-  ms.date: 05/07/2020
+  ms.date: 04/19/2024
   author: dnblankedelman
   ms.author: dnb
   ms.topic: unit
@@ -19,19 +19,19 @@ quiz:
 
   - content: 'Which of these is the correct name for the process that helps us learn from failure?'
     choices:
-    - content: 'post-incident review'
+    - content: 'Post-incident review'
       isCorrect: false
       explanation: 'There is no one correct name, it is the process that matters.'
-    - content: 'post-incident learning review'
+    - content: 'Post-incident learning review'
       isCorrect: false
       explanation: 'There is no one correct name, it is the process that matters.'
-    - content: 'postmortem'
+    - content: 'Postmortem'
       isCorrect: false
       explanation: 'There is no one correct name, it is the process that matters.'
-    - content: 'retrospective'
+    - content: 'Retrospective'
       isCorrect: false
       explanation: 'There is no one correct name, it is the process that matters.'
-    - content: 'people have different names for the same thing, any of the above terms will work, it is the process that matters'
+    - content: 'People have different names for the same thing, any of the preceding terms will work, it is the process that matters'
       isCorrect: true
       explanation: 'Correct, there is no one correct name, it is the process that matters.'
 
@@ -55,15 +55,15 @@ quiz:
 
   - content: 'Ideally, when should you do a post-incident review?'
     choices:
-    - content: 'after every significant incident'
+    - content: 'After every significant incident'
       isCorrect: true
       explanation: 'Correct.'
-    - content: 'once a month'
+    - content: 'Once a month'
       isCorrect: false
       explanation: 'Reviewing incidents once a month could be a good start, but once this is an established practice it needs to happen after significant incidents.'
-    - content: 'after every incident'
+    - content: 'After every incident'
       isCorrect: false
       explanation: 'Not all incidents require review (for example, minor ones).'
-    - content: 'at the beginning of the fiscal quarter'
+    - content: 'At the beginning of the fiscal quarter'
       isCorrect: false
       explanation: 'Incident reviews should take place in connection to significant incidents.'
