@@ -7,7 +7,7 @@ Now, you can be more confident that your automated deployments will succeed and 
 ## Related content
 
 - [Shift testing left with unit tests](/devops/develop/shift-left-make-testing-fast-reliable)
-- [GitHub Actions
+- GitHub Actions
   - [jobs](https://docs.github.com/actions/learn-github-actions/workflow-syntax-for-github-actions#jobs)
   - [needs](https://docs.github.com/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idneeds)
   - [if](https://docs.github.com/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idif)
