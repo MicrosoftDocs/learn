@@ -1,5 +1,3 @@
-
-
 Having completed the planning process, you must perform one of the following procedures:
 
 - Deploy an additional AD DS domain controller to an Azure VM.
