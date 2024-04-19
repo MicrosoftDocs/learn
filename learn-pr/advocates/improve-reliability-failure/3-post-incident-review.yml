@@ -17,23 +17,23 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which of these is the correct name for the process that helps us learn from failure?'
+  - content: 'Which of the following options is the correct name for the process that helps us learn from failure?'
     choices:
     - content: 'Post-incident review'
       isCorrect: false
-      explanation: 'There is no one correct name, it is the process that matters.'
+      explanation: 'There is no one correct name. It is the process that matters.'
     - content: 'Post-incident learning review'
       isCorrect: false
-      explanation: 'There is no one correct name, it is the process that matters.'
+      explanation: 'There is no one correct name. It is the process that matters.'
     - content: 'Postmortem'
       isCorrect: false
-      explanation: 'There is no one correct name, it is the process that matters.'
+      explanation: 'There is no one correct name. It is the process that matters.'
     - content: 'Retrospective'
       isCorrect: false
-      explanation: 'There is no one correct name, it is the process that matters.'
-    - content: 'People have different names for the same thing, any of the preceding terms will work, it is the process that matters'
+      explanation: 'There is no one correct name. It is the process that matters.'
+    - content: 'People have different names for the same thing. Any of the preceding terms work, because it is the process that matters.'
       isCorrect: true
-      explanation: 'Correct, there is no one correct name, it is the process that matters.'
+      explanation: 'Correct, there is no one correct name. It is the process that matters.'
 
   - content: 'A post-incident review takes place during which phase of the incident lifecycle?'
     choices:
