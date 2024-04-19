@@ -1,4 +1,4 @@
-When an incident occurs, your first reaction probably isn't, "Horray, a
+When an incident occurs, your first reaction probably isn't, "Hurray, a
 learning opportunity!" Your immediate priority is figuring out what went
 wrong and fixing it as quickly as possible, to reduce the impact on your
 customers and end users, as it should be. This is the incident-response
