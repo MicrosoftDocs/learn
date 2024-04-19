@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.getting-started-with-finops.2-what-is-finops
+title: What is FinOps?
+metadata:
+  title: What is FinOps?
+  description: TBD
+  ms.date: 04/19/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-what-is-finops.md)]
