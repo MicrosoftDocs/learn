@@ -47,7 +47,7 @@ electrical failure, and in each case, they couldn't find any. So, what they
 concluded was that this was a case of pilot error, that the pilots had
 mistakenly retracted the landing gear.
 
-Here's two additional pieces of information: yhe investigators were
+Here's two additional pieces of information: the investigators were
 correct that no mechanical or electrical failures had occurred. The accidents
 kept happening.
 
