@@ -60,7 +60,7 @@ quiz:
       explanation: 'Correct.'
     - content: 'Once a month'
       isCorrect: false
-      explanation: 'Reviewing incidents once a month could be a good start, but once this is an established practice it needs to happen after significant incidents.'
+      explanation: 'Reviewing incidents once a month could be a good start, but once you establish this practice, it needs to happen after significant incidents.'
     - content: 'After every incident'
       isCorrect: false
       explanation: 'Not all incidents require review (for example, minor ones).'
