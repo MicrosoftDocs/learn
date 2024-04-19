@@ -2,13 +2,13 @@
 ms.custom:
   - build-2023
 ---
-In this exercise, you:
+In this exercise, you use CREATE EXTERNAL TABLE AS SELECT (CETAS) to:
 
-- Use CREATE EXTERNAL TABLE AS SELECT (CETAS) to export a table as Parquet.
-- Use CETAS to move cold data out of a database.
-- Use a view to query the data that includes an external table.
-- Use wildcard search to query the data.
-- Learn about folder elimination and metadata information.
+- Export a table as Parquet.
+- Move cold data out of a database into storage.
+- Create an external table to access the exported external data.
+- Use views or wildcard search as query strategies.
+- Limit queries by using folder elimination and metadata information to improve performance.
 
 ## Prerequisites
 
@@ -220,7 +220,7 @@ From the first data exploration query, you know there are 5551 records from 2014
     WHERE YEAR([DUEDATE]) < 2014
     ```
 
-## Query the data that includes the external table
+## Query data that includes the external table
 
 You can use a view or a wildcard search to query the exported external data. Each method has advantages and disadvantages. The view method is recommended for repetitive requests because it usually performs better, and can also be combined with physical tables. The wildcard search method is more flexible and easier to use for exploration purposes.
 

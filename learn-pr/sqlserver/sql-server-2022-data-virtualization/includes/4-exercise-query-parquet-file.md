@@ -54,7 +54,7 @@ RECONFIGURE;
 :::image type="content" source="../media/enable-polybase-t-sql.png" alt-text="An image of enabling PolyBase using T-SQL in SQL Server Management Studio.":::
 
 > [!NOTE]
-> Because you query Apache Parquet files by using the PolyBase REST API, the **SQL Server PolyBase Data Movement** and **SQL Server PolyBase Engine** services don't need to be enabled or configured for this exercise.
+> In this exercise, you query Apache Parquet files by using the PolyBase REST API, so the **SQL Server PolyBase Data Movement** and **SQL Server PolyBase Engine** services don't need to be enabled or configured.
 
 ## Create a database
 
@@ -251,3 +251,7 @@ SELECT TOP 1000 * FROM ext_covid_data;
 > The column names must match the columns that are stored in the Parquet file, or SQL Server can't identify the columns and returns `NULL`.
 
 After you create the external table `ext_covid_data`, you can add statistics on the updated columns for efficiency. For more information about statistics on external table, see [CREATE STATISTICS (Transact-SQL)](/sql/t-sql/statements/create-statistics-transact-sql).
+
+In this unit, you used PolyBase to connect to an external public data source, and query the Parquet file by using OPENROWSET and by creating an external table.
+
+Proceed to the next exercise to connect to and create an external table from a database in Azure SQL Database by using PolyBase services.

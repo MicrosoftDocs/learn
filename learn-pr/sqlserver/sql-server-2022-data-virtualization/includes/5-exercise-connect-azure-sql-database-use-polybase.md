@@ -13,16 +13,13 @@ In this unit, you connect to and create an external table from a database in Azu
 
 ## Prerequisites
 
-- A SQL Server 2022 instance with PolyBase installed and enabled as in the previous exercise.
+- An Azure SQL database created by using the instructions in [Quickstart: Create a single database - Azure SQL Database](/azure/azure-sql/database/single-database-create-quickstart). Be sure to select **Use existing data > Sample** under **Additional settings** when you create the database.
 
-  To connect to another database, you use the PolyBase services. Open SQL Server Configuration Manager and make sure the **SQL Server PolyBase Data Movement** and **SQL Server PolyBase Engine** services are running.
+  For this exercise, name the Azure SQL server `polybaseserver` and the Azure SQL database `polybase2022test`.
 
-- An Azure SQL database. To create one, see [Quickstart: Create a single database - Azure SQL Database](/azure/azure-sql/database/single-database-create-quickstart). Be sure to select **Use existing data > Sample** under **Additional settings** when you create the database.
+- A SQL Server 2022 instance with PolyBase installed and enabled as for the previous exercise.
 
-  For this exercise, use the following information:
-
-  - Name of Azure SQL server: `polybaseserver`
-  - Name of Azure SQL database: `polybase2022test`
+  To connect to another database such as your Azure SQL database, you need to use PolyBase services. Open SQL Server Configuration Manager and make sure the **SQL Server PolyBase Data Movement** and **SQL Server PolyBase Engine** services are running.
 
 ## Create a database
 
@@ -83,7 +80,7 @@ By default, SQL Server doesn't allow ad hoc distributed queries using OPENROWSET
 EXEC sp_configure 'show advanced options', 1;
 RECONFIGURE;
 
-EXEC SP_CONFIGURE N'Ad Hoc Distributed Queries',1;
+EXEC SP_CONFIGURE N'Ad Hoc Distributed Queries', 1;
 RECONFIGURE;
 ```
 
@@ -103,7 +100,7 @@ N'MSOLEDBSQL',
 
 ## Create an external table from SQL Server 2022 to Azure SQL Database
 
-Now that you verified you can query the external data source, create an external table called `ext_tblCustomers` from that data source by using the database scoped credential and external data source.
+Now that you verified you can query the external data source, you can create and view an external table called `ext_tblCustomers` from that data source by using the database scoped credential and external data source.
 
 ```sql
 CREATE EXTERNAL TABLE ext_tblCustomers(
@@ -118,4 +115,4 @@ WITH
 SELECT * FROM ext_tblCustomers;
 ```
 
-Congratulations! You used PolyBase on a SQL Server 2022 instance to query and create an external table from Azure SQL Database.
+In this unit, you used PolyBase on a SQL Server 2022 instance to query and create an external table from Azure SQL Database. Proceed to the next unit to learn about the CREATE EXTERNAL TABLE AS SELECT (CETAS) command and its benefits.

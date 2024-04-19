@@ -22,7 +22,7 @@ The following diagram illustrates the database relationship with PolyBase object
 
 Another way of understanding PolyBase workflow is through the following diagram:
 
-:::image type="content" source="../media/polybase-workflow.png" alt-text="An image of PolyBase workflow." border="false":::
+:::image type="content" source="../media/polybase-workflow.png" alt-text="An image of PolyBase workflow." lightbox="../media/polybase-workflow.png" border="false":::
 
 ## Supported PolyBase data sources
 
@@ -53,7 +53,7 @@ SQL Server 2022 supports the following file formats:
 
 ## OPENROWSET, CET, and CETAS
 
-PolyBase uses three operators to query or virtualize data. Later units cover these commands and their use cases.
+PolyBase uses three operators to query or virtualize data. This training module covers these commands and their use cases.
 
 - **OPENROWSET** is a lightweight command that allows the SQL engine to access data outside of SQL Server, either a file or another database. OPENROWSET is optimized for ad-hoc execution and recommended for loading data or data exploration. For more information, see [OPENROWSET (Transact-SQL)](/sql/t-sql/functions/openrowset-transact-sql).
 

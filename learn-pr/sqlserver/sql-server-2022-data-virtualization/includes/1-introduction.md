@@ -55,8 +55,8 @@ After you complete this module, you:
   - Understand the benefits and principles of data virtualization.
   - Know what PolyBase is and how to use its capabilities.
   - Are familiar with object storage solutions and SQL Server 2022 support for S3-compatible object storage.
-  - Can install and configure PolyBase on SQL Server 2022.
-  - Can access and query external data by using PolyBase in SQL Server 2022.
+  - Know how to install and configure PolyBase on SQL Server 2022.
+  - Know how to access and query external data by using PolyBase in SQL Server 2022.
 
 ## Prerequisites
 

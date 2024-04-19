@@ -4,7 +4,7 @@ ms.custom:
 ---
 This unit takes a closer look at the CREATE EXTERNAL TABLE AS SELECT (CETAS) command and the benefits it provides.
 
-CETAS supports Azure Blob Storage, Azure Data Lake Storage, S3-compatible object storage, and external databases. CETAS also supports exporting file formats as either a CSV or Parquet file.
+CETAS supports Azure Blob Storage, Azure Data Lake Storage, S3-compatible object storage, and external databases. CETAS also supports exporting file formats as either CSV or Parquet files.
 
 CETAS' most powerful capability is to combine with other SELECT operations, such as combining with OPENROWSET or with other external tables. This combination allows CETAS to be used in different and flexible ways.
 
@@ -47,7 +47,7 @@ To use CETAS, you need three different levels of permission:
   For the database user to execute the CETAS command, they need **ADMINISTER BULK OPERATIONS**, **ALTER ANY EXTERNAL DATA SOURCE**, and **ALTER ANY EXTERNAL FILE FORMAT** permissions.
 
 - Write permission on the destination to write the CETAS results.
-  To be able to write to the destination, Parquet, or CSV file, the user needs write permissions on the destination. For example, to write to Azure Blob Storage or Azure Data Lake Storage, the user needs **LIST**, **READ**, **CREATE**, and **WRITE** permissions on those destinations. For details, see the next exercise.
+  To be able to write to the destination, Parquet, or CSV file, the user needs write permissions on the destination. For example, to write to Azure Blob Storage or Azure Data Lake Storage, the user needs **LIST**, **READ**, **CREATE**, and **WRITE** permissions on those destinations.
 
 For more information about permissions for CETAS, see [CREATE EXTERNAL TABLE AS SELECT (CETAS) permissions](/sql/t-sql/statements/create-external-table-as-select-transact-sql#permissions).
 
@@ -104,5 +104,9 @@ FROM OPENROWSET(BULK N'/delta/sales_fy22/',
 FORMAT = 'DELTA',
 DATA_SOURCE = 's3_delta') AS [r];
 ```
-Proceed to the next unit to use CETAS to export a table as Parquet.
+In the next exercise, you use CETAS to:
 
+- Export a table as Parquet.
+- Move cold data out of a database into storage.
+- Create an external table to access stored data.
+- Use views, wildcard search, folder elimination, and metadata as query strategies.
