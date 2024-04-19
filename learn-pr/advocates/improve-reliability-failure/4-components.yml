@@ -21,10 +21,10 @@ quiz:
     choices:
     - content: 'To pinpoint who is to blame for the failure.'
       isCorrect: false
-      explanation: 'Blaming and shaming will not create an environment conducive to improvement.'
+      explanation: 'Blaming and shaming doesn't create an environment conducive to improvement.'
     - content: 'To create a punch list of items to be repaired.'
       isCorrect: false
-      explanation: 'While a secondary goal might be to create a list of action items, the primary purposes is to learn and improve.'
+      explanation: 'While a secondary goal might be to create a list of action items, the primary purpose is to learn and improve.'
     - content: 'To learn and improve.'
       isCorrect: true
       explanation: 'Correct.'     
@@ -33,7 +33,7 @@ quiz:
     choices:
     - content: 'Yes'
       isCorrect: false
-      explanation: 'It is not possible, it will only lead to an empty team.'
+      explanation: 'It is not possible, and it only leads to an empty team.'
     - content: 'No'
       isCorrect: true
       explanation: 'Correct.'
@@ -46,7 +46,7 @@ quiz:
     - content: 'Better understanding of the system we work within'
       isCorrect: false
       explanation: 'The focus needs to be on all of these items.'
-    - content: 'Hearing the different perspectives people have about the same incident'
+    - content: 'Hearing the different perspectives people have about the same incident.'
       isCorrect: false
       explanation: 'The focus needs to be on all of these items.'
     - content: 'All of these'
