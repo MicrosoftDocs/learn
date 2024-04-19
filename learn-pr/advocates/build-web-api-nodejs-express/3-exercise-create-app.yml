@@ -4,8 +4,8 @@ title: Exercise - Create a new Express web application
 metadata:
   title: Exercise - Create a new Express web application
   description: Use Express to return different types of content like text and JSON.
-  author: GitHubber17
-  ms.author: chnoring
+  author: diberry
+  ms.author: diberry
   ms.date: 02/12/2024
   ms.topic: unit
   ms.custom:
