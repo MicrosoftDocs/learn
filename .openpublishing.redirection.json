@@ -36370,6 +36370,11 @@
       "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/8-compare-backup-options.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/implement-hybrid-backup-recovery-windows-server-iaas/",
       "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-data-ai/explore-fundamentals-stream-processing/8-fabric-realtime-analaytics.md",
+      "redirect_url": "/training/modules/explore-fundamentals-stream-processing/8-fabric-realtime-analytics",
+      "redirect_document_id": false
     }
   ]
 }
