@@ -36375,6 +36375,11 @@
       "source_path": "learn-pr/wwl-data-ai/explore-fundamentals-stream-processing/8-fabric-realtime-analaytics.md",
       "redirect_url": "/training/modules/explore-fundamentals-stream-processing/8-fabric-realtime-analytics",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-security-posture/2-implement-azure-security-center.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-security-posture/2-implement-microsoft-defender-for-cloud",
+      "redirect_document_id": false
     }
   ]
 }
