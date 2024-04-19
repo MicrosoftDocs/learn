@@ -101,7 +101,7 @@ Defender for Servers assigns tags to your AWS resources to manage the auto provi
 
 ### Defender CSPM
 
-If you choose the Microsoft Defender Cloud Security Posturee Management plan, you need:
+If you choose the Microsoft Defender Cloud Security Posture Management plan, you need:
 
  -  An Azure subscription. If you don't have an Azure subscription, you can sign up for a free subscription.
  -  You must enable Microsoft Defender for Cloud on your Azure subscription.
