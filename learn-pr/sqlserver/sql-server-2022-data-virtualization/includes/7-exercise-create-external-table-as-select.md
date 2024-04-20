@@ -12,7 +12,7 @@ In this exercise, you use CREATE EXTERNAL TABLE AS SELECT (CETAS) to:
 
 ## Prerequisites
 
-- A SQL Server 2022 instance with internet connectivity and the **PolyBase Query Service for External Data** feature installed and enabled as in previous units.
+- A SQL Server 2022 instance with internet connectivity and the **PolyBase Query Service for External Data** feature installed and enabled as for previous exercises.
 - The [AdventureWorks2022](/sql/samples/adventureworks-install-configure) sample database restored to your server to use for sample data.
 - An Azure Storage account with a Blob Storage container named `data` created. To create the storage, see [Quickstart: Upload, download, and list blobs with the Azure portal](/azure/storage/blobs/storage-quickstart-blobs-portal).
 - The Azure role-based access control (RBAC) **Storage Blob Data Contributor** role assigned in Azure. For more information, see [Assign an Azure role for access to blob data](/azure/storage/blobs/assign-azure-role-data-access).
@@ -28,6 +28,8 @@ Imagine that you work with a business analytics team that wants to export data o
     EXEC SP_CONFIGURE @CONFIGNAME = 'ALLOW POLYBASE EXPORT', @CONFIGVALUE = 1;
     ```
 
+    :::image type="content" source="../media/allow-polybase-export.png" alt-text="Screenshot of configuring the option to allow PolyBase export.":::
+
 1. Execute the following data exploration query to understand what data you want to export. In this case, you're looking for data that's from 2012 or earlier. You want to export all data from 2011 and 2012.
 
     ```sql
@@ -38,7 +40,7 @@ Imagine that you work with a business analytics team that wants to export data o
     ORDER BY [YEAR]
     ```
 
-   :::image type="content" source="../media/ssms-order-detail-by-year.png" alt-text="Screenshot of SSMS and the results from the AdventureWorks2022 database showing purchase orders grouped by year.":::
+    :::image type="content" source="../media/ssms-order-detail-by-year.png" alt-text="Screenshot of SSMS and the results from the AdventureWorks2022 database showing purchase orders grouped by year.":::
 
 1. Create a database master key for the database, as in the previous exercises.
 
@@ -301,7 +303,9 @@ WHERE
  r.filepath(1) IN ('2011')
 ```
 
-The end results are the same, but by using the folder elimination metadata, your query accesses only the required folders instead of scanning the entire data source, producing better query performance. Keep this information in mind when you design storage architectures to better use PolyBase capabilities. For example, given the following folder architecture:
+The end results are the same, but by using the folder elimination metadata, your query accesses only the required folders instead of scanning the entire data source, producing better query performance. Keep this information in mind when you design storage architectures to better use PolyBase capabilities.
+
+For example, given the following folder architecture:
 
 :::image type="content" source="../media/folder-elimination-architecture.png" alt-text="Screenshot showing a folder architecture example in a storage container." border="false":::
 

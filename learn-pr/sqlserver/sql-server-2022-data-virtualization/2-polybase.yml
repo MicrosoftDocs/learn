@@ -24,15 +24,15 @@ quiz:
     - content: "False"
       isCorrect: true
       explanation: "Object storage architecture was designed for Big Data, Internet of Things (IoT), Analytics, AI, and Machine Learning workloads, not high-transactional workloads."
-  - content: "To run the PolyBase feature, you need to install and enable the **PolyBase Query Service for External Data** option."
+  - content: "To run the PolyBase feature, you need to install and enable the PolyBase Query Service for External Data."
     choices: 
     - content: "True"
       isCorrect: true
-      explanation: "All PolyBase data sources require the **PolyBase Query Service for External Data** to be installed and enabled, even those that don't use the PolyBase services."
+      explanation: "All PolyBase data sources require the **PolyBase Query Service for External Data** to be installed and enabled, even those that don't use the other PolyBase services."
     - content: "False"
       isCorrect: false
       explanation: "Not all PolyBase data sources need to have the PolyBase services configured and running, but they all require the **PolyBase Query Service for External Data** to be installed and enabled."
-  - content: "SQL Server 2022 supports any type of object storage."
+  - content: "SQL Server 2022 supports all types of object storage."
     choices: 
     - content: "True"
       isCorrect: false

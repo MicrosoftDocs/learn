@@ -22,25 +22,10 @@ PolyBase services require firewall ports to be enabled in order to connect to ex
 
 :::image type="content" source="../media/polybase-port-ranges.png" alt-text="Image of the setup executable of SQL Server showing the PolyBase port range configuration.":::
 
-The setup wizard installs two PolyBase services:
-
-- **SQL Server PolyBase Engine**
-  - Service executable: `mpdwsvc.exe -dweng`
-  - Parses queries.
-  - Generates query plans.
-  - Distributes work to compute nodes (SQL Server 2019).
-  - Processes compute node results and results back to the client (SQL Server 2019).
-
-- **SQL Server PolyBase Data Movement**
-  - Service executable: `mpdwsvc.exe -dms`
-  - Transfers data between external data sources and between PolyBase head and compute nodes (SQL Server 2019).
-  - Inserts data into other data sources, such as Azure Storage.
-
-For complete information and prerequisites for PolyBase installation, see:
+PolyBase setup installs two PolyBase services, **SQL Server PolyBase Engine** and **SQL Server PolyBase Data Movement**. For complete information and prerequisites for PolyBase installation, see:
 
 - [Install PolyBase on Windows](/sql/relational-databases/polybase/polybase-installation)
 - [Install PolyBase on Linux](/sql/relational-databases/polybase/polybase-linux-setup)
-- [PolyBase features and limitations](/sql/relational-databases/polybase/polybase-versioned-feature-summary)
 
 ## Enable PolyBase
 
@@ -54,7 +39,7 @@ RECONFIGURE;
 :::image type="content" source="../media/enable-polybase-t-sql.png" alt-text="An image of enabling PolyBase using T-SQL in SQL Server Management Studio.":::
 
 > [!NOTE]
-> In this exercise, you query Apache Parquet files by using the PolyBase REST API, so the **SQL Server PolyBase Data Movement** and **SQL Server PolyBase Engine** services don't need to be enabled or configured.
+> In this exercise, you query Apache Parquet files by using the PolyBase REST API, so you don't need to enable or configure the **SQL Server PolyBase Data Movement** or **SQL Server PolyBase Engine** services.
 
 ## Create a database
 
@@ -252,6 +237,4 @@ SELECT TOP 1000 * FROM ext_covid_data;
 
 After you create the external table `ext_covid_data`, you can add statistics on the updated columns for efficiency. For more information about statistics on external table, see [CREATE STATISTICS (Transact-SQL)](/sql/t-sql/statements/create-statistics-transact-sql).
 
-In this unit, you used PolyBase to connect to an external public data source, and query the Parquet file by using OPENROWSET and by creating an external table.
-
-Proceed to the next exercise to connect to and create an external table from a database in Azure SQL Database by using PolyBase services.
+In this unit, you used PolyBase to connect to an external data source and used OPENROWSET or external table to query the Parquet file. In the next exercise, you use PolyBase services to connect to and create an external table from a database in Azure SQL Database.

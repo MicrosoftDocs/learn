@@ -13,13 +13,9 @@ In this unit, you connect to and create an external table from a database in Azu
 
 ## Prerequisites
 
-- An Azure SQL database created by using the instructions in [Quickstart: Create a single database - Azure SQL Database](/azure/azure-sql/database/single-database-create-quickstart). Be sure to select **Use existing data > Sample** under **Additional settings** when you create the database.
+- An Azure SQL database created by using the instructions in [Quickstart: Create a single database - Azure SQL Database](/azure/azure-sql/database/single-database-create-quickstart). For this exercise, name the Azure SQL server `polybaseserver` and the Azure SQL database `polybase2022test`. Be sure to select **Use existing data > Sample** under **Additional settings** when you create the database.
 
-  For this exercise, name the Azure SQL server `polybaseserver` and the Azure SQL database `polybase2022test`.
-
-- A SQL Server 2022 instance with PolyBase installed and enabled as for the previous exercise.
-
-  To connect to another database such as your Azure SQL database, you need to use PolyBase services. Open SQL Server Configuration Manager and make sure the **SQL Server PolyBase Data Movement** and **SQL Server PolyBase Engine** services are running.
+- A SQL Server 2022 instance with PolyBase installed and enabled as for the previous exercise. To connect to another database such as an Azure SQL database, you need to use PolyBase services. Open SQL Server Configuration Manager and make sure the **SQL Server PolyBase Data Movement** and **SQL Server PolyBase Engine** services are running.
 
 ## Create a database
 
@@ -74,7 +70,7 @@ CREATE EXTERNAL DATA SOURCE AzureSQLDB
 
 ## Enable ad hoc distributed queries
 
-By default, SQL Server doesn't allow ad hoc distributed queries using OPENROWSET. To enable ad hoc distributed queries, run the `sp_configure` command. For more information, see [ad hoc distributed queries (server configuration option)](/sql/database-engine/configure-windows/ad-hoc-distributed-queries-server-configuration-option).
+By default, SQL Server doesn't allow ad hoc distributed queries using OPENROWSET. Run the `sp_configure` command to enable ad hoc distributed queries. For more information, see [ad hoc distributed queries (server configuration option)](/sql/database-engine/configure-windows/ad-hoc-distributed-queries-server-configuration-option).
 
 ```sql
 EXEC sp_configure 'show advanced options', 1;

@@ -11,7 +11,7 @@ The following figure shows the full extent of data virtualization support in SQL
 This training module reviews the data virtualization options in SQL Server 2022, including:
 
 - PolyBase services
-- REST API connectors such as Azure Data Lake Storage, Azure Blob storage, and Amazon S3 compatible object storage that allow for new access with data virtualization
+- REST API connectors such as Azure Data Lake Storage, Azure Blob Storage, and Amazon S3-compatible object storage that allow for new access with data virtualization
 - Transact-SQL (T-SQL) used for data virtualization, including OPENROWSET, CREATE EXTERNAL TABLE (CET), and CREATE EXTERNAL TABLE AS SELECT (CETAS)
 
 ## Principles of data virtualization
@@ -42,9 +42,9 @@ Data virtualization has the following major benefits:
 
 SQL Server 2022 offers the following major data virtualization use cases:
 
-- **In-database analytics:** Uses and combines all SQL Server capabilities and familiarity when using data virtualization.
+- **In-database analytics:** Use and combine all SQL Server capabilities and familiarity when using data virtualization.
 - **Offload or export data to other data sources.**
-- **Data hub:** Uses SQL Server as a centralized hub to connect, protect, and query different data sources and files, hiding the complexity from applications. There's no need to use an ETL tool to aggregate, copy, or move the data to a staging area.
+- **Data hub:** Use SQL Server as a centralized hub to connect, protect, and query different data sources and files, hiding the complexity from applications. There's no need to use an ETL tool to aggregate, copy, or move the data to a staging area.
 
   :::image type="content" source="../media/sql-server-data-hub.png" alt-text="Image of SQL Server as a data hub for data virtualization." border="false":::
 

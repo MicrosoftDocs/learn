@@ -30,11 +30,9 @@ For example, imagine your `order` table has historical data of past years that d
 
 By using SQL Server 2022 as a data hub, you can combine CETAS with all existing PolyBase capabilities, including connecting to other data sources like Oracle, Teradata, ODBC, or other versions of SQL Server.
 
-## Enable CETAS
+## CETAS requirements
 
-To use CETAS, you need to enable the property `ALLOW POLYBASE EXPORT` by using `sp_configure`. For details, see the next exercise.
-
-:::image type="content" source="../media/allow-polybase-export.png" alt-text="Screenshot of configuring the option to allow PolyBase export.":::
+To use CETAS in SQL Server 2022, you need to enable the property `ALLOW POLYBASE EXPORT` by using `sp_configure`. For details, see the next exercise.
 
 ###  CETAS permissions
 

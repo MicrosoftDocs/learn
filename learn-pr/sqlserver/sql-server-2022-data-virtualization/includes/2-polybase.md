@@ -10,11 +10,17 @@ PolyBase is the feature that SQL Server uses to enable the data virtualization c
 |-----|-----|-----|-----|
 |• Hadoop<br>• Azure Blob Storage|• OPENROWSET enhancements<br>• CSV for Azure Blob Storage<br>• Database Scoped Credential|• SQL Server<br>• Oracle<br>• Azure Cosmos DB<br>• MongoDB<br>• Teradata<br>• Linux support<br>• Generic ODBC|• New connector framework<br>• Object storage integration<br>• CSV<br>• Parquet<br>• Delta<br>• CETAS|
 
+For more information about PolyBase, see [PolyBase features and limitations](/sql/relational-databases/polybase/polybase-versioned-feature-summary).
+
 ## PolyBase enhancements in SQL Server 2022
 
-SQL Server 2022 introduces the newest version of PolyBase, including the capability to query data where it lives, virtualize data, and use REST APIs. REST APIs enable SQL Server to be both more flexible and lightweight, while expanding its range of supported connectors and file formats.
+SQL Server 2022 introduces the newest version of PolyBase, including the capability to query data where it lives, virtualize data, and use REST APIs.
 
-In addition to Azure Storage, SQL Server 2022 now supports CSV, Parquet, and Delta files stored in Azure Blob Storage, Azure Data Lake Storage, or any simple storage service (S3)–compatible object storage. SQL Server 2022 can use commands like CREATE EXTERNAL TABLE AS SELECT (CETAS), OPENROWSET, CREATE EXTERNAL TABLE (CET), and all new T-SQL enhancements, making it a powerful data hub.
+- REST APIs enable SQL Server to be both more flexible and lightweight, while expanding its range of supported connectors and file formats.
+
+- SQL Server 2022 now supports CSV, Parquet, and Delta files stored in Azure Blob Storage, Azure Data Lake Storage, or any simple storage service (S3)-compatible object storage.
+
+- SQL Server 2022 can use commands like CREATE EXTERNAL TABLE AS SELECT (CETAS), OPENROWSET, CREATE EXTERNAL TABLE (CET), and all new T-SQL enhancements, making it a powerful data hub.
 
 ## S3-compatible object storage
 
@@ -25,7 +31,7 @@ Object storage, also known as object-based storage, is a strategy that manages a
 Some main features of object storage compared to a traditional file system are:
 
 - Keeps metadata embedded in the file.
-- Files can have attributes like tags.
+- Lets files have attributes like tags.
 - More cost-effective to scale and easier to maintain.
 - Optimized for large amounts of data, such as Big Data, Internet of Things (IoT), AI, Machine Learning, and analytics.
 - Not recommended for high-transactional or online transaction processing (OLTP) workloads.
@@ -47,9 +53,23 @@ Some object storage partners offer the ability to run their solution as software
 
 ## PolyBase services vs. the PolyBase REST API feature
 
-To use PolyBase, you must install the **PolyBase Query Service for External Data** and enable PolyBase at an instance level by using `sp_configure`. PolyBase setup installs two PolyBase services, **SQL Server PolyBase Engine** and **SQL Server PolyBase Data Movement**. Data sources like SQL Server, Oracle, MongoDB, or ODBC-based sources use these PolyBase services.
+To use PolyBase, you must install the **PolyBase Query Service for External Data** and enable PolyBase at an instance level by using `sp_configure`. PolyBase setup installs two PolyBase services, **SQL Server PolyBase Engine** and **SQL Server PolyBase Data Movement**.
 
-Data sources that use the new SQL Server 2022 REST API-based PolyBase architecture don't require these services to be running or configured, only the PolyBase feature to be installed and enabled. You can use the PolyBase REST APIs to access Azure Data Lake Storage, Azure Blob Storage, any S3-compatible object storage, and file formats such as Parquet, Delta, and CSV files. Previously supported data sources still use the PolyBase services.
+- **SQL Server PolyBase Engine**
+  - Service executable: `mpdwsvc.exe -dweng`
+  - Parses queries.
+  - Generates query plans.
+  - Distributes work to compute nodes (SQL Server 2019).
+  - Processes compute node results and results back to the client (SQL Server 2019).
+
+- **SQL Server PolyBase Data Movement**
+  - Service executable: `mpdwsvc.exe -dms`
+  - Transfers data between external data sources and between PolyBase head and compute nodes (SQL Server 2019).
+  - Inserts data into other data sources, such as Azure Storage.
+
+Data sources like SQL Server, Oracle, MongoDB, or ODBC-based sources use these PolyBase services. Data sources that use the new SQL Server 2022 REST API-based PolyBase architecture don't require these services to be running or configured, but the **PolyBase Query Service for External Data** must still be installed and enabled.
+
+You can use the PolyBase REST APIs to access Azure Data Lake Storage, Azure Blob Storage, any S3-compatible object storage, and file formats such as Parquet, Delta, and CSV files. Previously supported data sources still use the **SQL Server PolyBase Engine** and **SQL Server PolyBase Data Movement** services.
 
 |Data source |PolyBase services |PolyBase REST API feature|
 |---------|---------|---------|
