@@ -10,13 +10,13 @@ The following diagram shows the complete Operational Technology (OT) deployment 
 
 :::image type="content" source="../media/2-ot-deploy.png" alt-text="Diagram of the complete OT deployment process." border="false":::
 
-This learn module is covers the last two phases of the OT sensor deployment path.
+This learn module covers the last two phases of the OT sensor deployment path.
 
-- *Calibrate and fine-tune* deals with calibrating and fine-tuning your sensor. 
+- *Calibrate and fine-tune* deals with calibrating and fine-tuning your sensor.
 
 - *Baseline learning* covers triaging the alerts and how the sensor changes from learning to operational mode.
 
-## In this phase: calibrate and fine tune 
+## In this phase: calibrate and fine tune
 
 In a real-life scenario, the deployment and connectivity teams ensure that the sensor is already onboarded, activated, and sending data to Defender for IoT.
 
