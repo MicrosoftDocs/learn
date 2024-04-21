@@ -4,8 +4,8 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: Knowledge check for Configure and use secret scanning in your GitHub repository module
-  ms.date: 03/07/2024
+  description: Knowledge check for configuring and using secret scanning in GitHub.
+  ms.date: 11/25/2021
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit
@@ -28,9 +28,9 @@ quiz:
       explanation: "This is incorrect. Secret scanning is automatically enabled with default settings on public repositories. You can't change secret scanning settings on a public repository no matter what permissions you have on the repository."
   - content: "Where can you configure the recipients of secret scanning alerts?"
     choices:
-    - content: "In the Security and analysis settings of a repository"
+    - content: "In the Code security and analysis settings of a repository"
       isCorrect: true
-      explanation: "Correct! You can configure the recipients of secret scanning alerts in the Access to alerts section of a repository Security and analysis settings."
+      explanation: "Correct! You can configure the recipients of secret scanning alerts in the Access to alerts section of repository Code security and analysis settings."
     - content: "In the Manage access settings of a repository"
       isCorrect: false
       explanation: "This is incorrect. The Manage access settings of a repository enable you to manage user permissions over the repository."
