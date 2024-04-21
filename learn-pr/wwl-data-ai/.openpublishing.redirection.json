@@ -106,7 +106,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "build-ai-copilot-vcore-based-azure-cosmos-db-mongodb-azure-openai/index.yml",
+      "source_path": "build-ai-copilot-vcore-based-azure-cosmos-db-mongodb-azure-openai/index.yml",
       "redirect_url": "/training/paths/build-ai-copilot-vcore-based-azure-cosmos-db-mongodb-azure-openai/",
       "redirect_document_id": true
     }
