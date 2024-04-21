@@ -104,6 +104,11 @@
       "source_path": "create-manage-cognitive-services/7-summary.yml",
       "redirect_url": "/training/modules/create-manage-ai-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "build-ai-copilot-vcore-based-azure-cosmos-db-mongodb-azure-openai/index.yml",
+      "redirect_url": "/training/paths/build-ai-copilot-vcore-based-azure-cosmos-db-mongodb-azure-openai/",
+      "redirect_document_id": true
     }
   ]
 }
