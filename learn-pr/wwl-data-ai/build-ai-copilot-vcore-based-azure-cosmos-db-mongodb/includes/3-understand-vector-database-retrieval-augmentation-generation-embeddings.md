@@ -14,9 +14,11 @@ In platforms like Azure OpenAI, embeddings are key to helping large language mod
 
 ## Explore vector databases
 
-Vector databases save data as high-dimensional vectors created through transformations or embeddings from various data types like text, images, or videos. These databases excel at quickly finding data that matches semantically, not just through exact queries. This capability is valuable for applications such as locating similar images, documents, or products.
+Each value in the vector is considered a dimension of the data it represents. That vector then represents its position in a highly multi-dimensional space relative to all the other vectors. These vectors often have many dimensions, where some of the "smaller" embeddings models in Azure OpenAI have `1536` dimensions.
 
-For example, in a vector database, you could search using an image or a piece of text as a query to find others that closely match in style or content. This process involves applying a query vector (embedding) and using similarity measures like *cosine similarity* or *Euclidean distance*.
+Vector databases save data as these highly multi-dimensional vectors created through transformations or embeddings from various data types like text, images, or videos. These databases excel at quickly finding data that matches semantically, not just through exact queries. This capability is valuable for applications such as locating similar images, documents, or products.
+
+For example, in a vector database, you could search using an image or a piece of text as a query to find others that closely match in style or content. This process involves finding a query vector (embedding) for the search input and using similarity measures like *cosine similarity* or *Euclidean distance* to find the distance between vectors.
 
 So, if you search for the word "cat," the database would return vectors that are most similar to the word "cat" based on the similarity measure used. These similarity measures rely on the transformations or embeddings to rank results based on how closely they match the query.
 
@@ -24,18 +26,18 @@ Vector databases can be an essential component of a Retrieval Augmentation Gener
 
 ## Explore Retrieval Augmented Generation (RAG)
 
-Retrieval Augmented Generation (RAG) systems improve large language models by adding an information retrieval system. This system grounds AI responses in relevant, specific data, such as vectorized documents and images created from the data in your enterprise.
+RAG systems improve large language models by adding an information retrieval system. This system grounds AI responses in relevant, specific data, such as vectorized documents and images created from the data in your enterprise.
 
 A RAG system using vector databases typically follows these steps:
 
-1. Embeds a question and queries and retrieves the relevant data from a vector database.
-1. Generates a prompt based on the data retrieved.
-1. Queries the language model with the prompt to generate a response.
+1. Embeds the input question or query and retrieves the relevant data from a vector database.
+1. Generates a prompt including the initial input and the data retrieved to provide context.
+1. Queries the generative AI model with the combined prompt to generate a response.
 
 ![Diagram of a Retrieval Augmentation Generation system.](../media/3-retrieval-augmentation-generation.png)
 
-Integrating RAG systems allows you to precisely control the data your language models use, making their responses more accurate and tailored. When linked with vector databases containing your data, the AI can use your data, improving its responses and making those responses more applicable and context-aware to your enterprise.
+Integrating RAG systems allows you to precisely control the data your language models use, making their responses more accurate and tailored. When linked with vector databases containing your data, the AI model can use your data, improving its responses and making those responses more applicable and context-aware to your enterprise.
 
 In RAG systems, AI applications are tailored and managed by your data not the other way around.
 
-Vector databases, embeddings, and Retrieval Augmentation Generation (RAG) are essential for enhancing AI-driven applications, especially with vCore-based Azure Cosmos DB for MongoDB and Azure OpenAI. Embeddings translate complex data into numeric vectors that improve AI's understanding, crucial for tasks like text classification and data retrieval. Vector databases use these embeddings to perform fast, semantically driven searches, greatly enhancing data retrieval capabilities. When you combine these technologies into a RAG system, they allow AI to deliver responses that aren't only accurate but also tailored to your specific data, improving both the relevance and effectiveness of your applications.
+Vector databases, embeddings, and Retrieval Augmentation Generation (RAG) are essential for enhancing AI-driven applications, especially with vCore-based Azure Cosmos DB for MongoDB and Azure OpenAI. Embeddings translate complex data into numeric vectors that improve the understanding of an AI model, which is crucial for tasks like text classification and data retrieval. Vector databases use these embeddings to perform fast, semantically driven searches, greatly enhancing data retrieval capabilities. When you combine these technologies into a RAG system, they allow AI to deliver responses that aren't only accurate but also tailored to your specific data, improving both the relevance and effectiveness of your applications.
