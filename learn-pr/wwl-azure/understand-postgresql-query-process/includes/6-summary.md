@@ -7,4 +7,4 @@ Now that you've completed this module, you're able to:
 
 For more information about the topics covered in this module, see:
 
-- [PostgreSQL: Documentation: 14: 14.1. Using EXPLAIN](https://www.postgresql.org/docs/current/using-explain.html)
+- [PostgreSQL: Documentation: Chapter 14: Using EXPLAIN](https://www.postgresql.org/docs/current/using-explain.html)

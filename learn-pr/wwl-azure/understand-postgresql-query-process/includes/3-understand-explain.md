@@ -24,9 +24,10 @@ EXPLAIN ANALYZE SELECT * FROM category ORDER BY cat_id;
 
 This simple query returns the following information:
 
-:::image type="content" source="../media/query-plan-1.png" alt-text="Screenshot showing the Query Plan." lightbox="../media/query-plan-1.png":::
+[![Screenshot showing the Query Plan.]](/media/3-query-plan-1.png)
 
 ## ANALYZE
+
 This option will execute the statement, as well as return the query plan. The output from the statement is discarded, but the statement is still executed. If you want to use EXPLAIN ANALYZE with a query that makes changes to the database, such INSERT, UPDATE, or DELETE, you can use the ROLLBACK statement to prevent the changes being applied. For example:
 
 ```sql
@@ -40,13 +41,17 @@ ROLLBACK;
 ```
 
 ## VERBOSE
+
 Displays additional information including the output column list for each node in the plan tree, schema-qualified table and function names, variables names in expressions together with the table alias, and the name of each trigger for which statistics are displayed.
 
 ## COSTS
+
 Includes the estimated start-up cost, and total cost, plus the estimated number of rows and estimated width of each row.
 
 ## BUFFERS
+
 Buffers can only be used with the ANALYZE option. PostgreSQL uses a Least Recently Used (LRU) cache to store frequently used data in memory. Buffers display how much of the data comes from a cache, and how much is retrieved from disk. Displays the number of shared, local, and temp blocks hits, reads, and writes. The data provided by BUFFERS can help to understand I/O-intensive parts of a query.
 
 ## FORMAT
+
 Defines the output format. XML, JSON, or YAML contain the same information as TEXT, but in a format that is easier for programs to use. TEXT is the default.
