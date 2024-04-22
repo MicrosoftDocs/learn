@@ -10,6 +10,7 @@ metadata:
 title: Build an AI copilot with vCore-based Azure Cosmos DB for MongoDB and Azure OpenAI 
 prerequisites: |
   Before starting this learning path, you should already have:
+  *   To complete the later modules in the learning path, you need access to Azure OpenAI studio, which can take several days to be approved. If you need access, apply through the [**Azure OpenAI limited access**](/legal/cognitive-services/openai/limited-access?azure-portal=true) page.
   *   Familiarity with Azure and the Azure portal.
   *   Experience programming with Python or Node.js.
   If you have no previous programming experience, we recommend you complete the [Introduction to Node.js](/training/modules/intro-to-nodejs/) or [Python for beginners](/training/paths/beginner-python/) learning path before starting this one.

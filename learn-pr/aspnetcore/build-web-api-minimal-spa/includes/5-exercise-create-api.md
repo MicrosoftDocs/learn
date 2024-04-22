@@ -74,7 +74,7 @@ Suppose the back-end team has now finished building the server. To use the serve
 
 1. In the file explorer, browse to the _PizzaStore_ directory, and open _Program.cs_. Replace with the following code to enable CORS (the CORS-related code is highlighted):
 
-   :::code language="csharp" source="../code/dot-net-server/Program-cs-full.cs" highlight="14-27,38,39":::
+   :::code language="csharp" source="../code/dot-net-server/Program-cs-full.cs" highlight="14-27,41,42":::
 
    The changes configure CORS. You'll be able to read and write toward the API, despite the front-end app and API running on different ports.
 

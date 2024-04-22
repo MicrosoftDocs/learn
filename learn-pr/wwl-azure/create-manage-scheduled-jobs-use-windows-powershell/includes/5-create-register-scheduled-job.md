@@ -26,3 +26,4 @@ Id         Name            JobTriggers     Command       Enabled
 Windows PowerShell registers the resulting job in the Windows **Task Scheduler** and creates the job definition on disk. Job definitions are XML files stored in your profile folder in **\\AppData\\Local\\Microsoft\\Windows\\PowerShell\\ScheduledJobs.**
 
 You can run **Get-ScheduledJob** to review a list of scheduled jobs on the local computer. If you know a scheduled job’s name, you can use **Get-JobTrigger** and the *–Name* parameter to retrieve a list of that job’s triggers.
+
