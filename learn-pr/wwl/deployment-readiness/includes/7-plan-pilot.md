@@ -1,4 +1,3 @@
-
 When planning a pilot, ample time should be allowed to perform sufficient testing before deployment. Once testing is complete and all known issues have been resolved, the deployment should be rolled out in phases. There's always the possibility of external factors that weren't identified in the lab that can suddenly appear and impact the deployment. Even if a deployment doesn't result in any technical complications, IT staff should be prepared to support the impact of the deployment on the end users. Failure to provide sufficient resources to train users and address questions or concerns can have just as negative an impact as a software or hardware issue.
 
 #### Phased deployment
@@ -17,7 +16,7 @@ It's important to have engaged members in the initial pilot phase, to make sure 
 
 Once you feel good about the first phase, you can target a larger set of users for your second, pilot phase. This should comprise a representative mix of user roles, device types, apps, Office add-ins, etc. Pilot devices should also be low-risk users or devices to minimize business impact during the pilot. The data returning from these groups will be used via Analytics to target the initial waves for phase 3, the broader deployment.
 
-Remember, all PCs in this phase and future phases should be logging up to the Analytics service, so you can collect diagnostic data about device and app health as well as bandwidth savings. Desktop Analytics can help determine candidates for pilot groups and identify potential issues that might be difficult for users to identify or neglect to report.
+Remember, all PCs in this phase and future phases should be logging up to the Analytics service, so you can collect diagnostic data about device and app health as well as bandwidth savings. Endpoint Analytics can help determine candidates for pilot groups and identify potential issues that might be difficult for users to identify or neglect to report.
 
 For this phase it's especially important to communicate changes and help users take advantage of new capabilities. Users can often de-prioritize or ignore email or other communications coming from IT – so it helps to meet with management to get their help in communicating change and drive adoption of new tools and technology.
 

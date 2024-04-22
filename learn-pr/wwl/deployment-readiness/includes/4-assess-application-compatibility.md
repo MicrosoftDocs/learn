@@ -1,4 +1,3 @@
-
 An app that is written for a specific operating system may cause problems when you install it on a computer with a different operating system. Generally, apps and hardware that work on Windows 7 or 8.1 will continue to work on Windows 11 or later.
 
 The few Windows apps that don't run in Windows 11 are primarily security-class apps (such as anti-virus protection) and apps that perform low-level kernel calls that bypass the standard Windows application-programming interface (API) and communicates with system hardware. Changes between 32-bit and 64-bit architectures and the deprecation and removal of some components that were available in earlier Windows versions from Windows 11 may also impact apps that were dependent on these features. Problems can also occur if a legacy app isn’t User Account Control (UAC)–aware, or if developers didn’t follow guidelines on how to develop Windows apps.
