@@ -4,7 +4,7 @@ The `azure_ml` schema empowers your database with the ability to interact with c
 
 ## Real-time inference with the `azure_ml` schema
 
-Using the `azure_ai` extension, the `azure_ml` schema provides a function for performing real-time inference directly from the database. The `inference` function within this schema is designed to facilitate making predictions or generating outputs using a trained model from Azure Machine Learning. When you deploy a model, the inference function allows you to invoke the model and obtain predictions on new data.
+When you use the `azure_ai` extension, the `azure_ml` schema provides a function for performing real-time inference directly from the database. The `inference` function within this schema is designed to facilitate making predictions or generating outputs using a trained model from Azure Machine Learning. When you deploy a model, the inference function allows you to invoke the model and obtain predictions on new data.
 
 `azure_ml.inference(jsonb,integer,boolean,text)`
 

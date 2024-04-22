@@ -38,12 +38,12 @@ quiz:
       explanation: "Correct. The `azure_ml.scoring_endpoint` setting is used to specify the endpoint for the Azure Machine Learning model that we want to call."
   - content: "In the call to `azure_ml.inference()`, what is the data type of the `input_data` parameter?"
     choices:
-    - content: "jsonb."
+    - content: "Jsonb."
       isCorrect: true
       explanation: "Correct. The `input_data` parameter should be a JSON object in binary representation that contains the input data for the Azure Machine Learning model."
-    - content: "json."
+    - content: "Json."
       isCorrect: false
       explanation: "Incorrect. The `input_data` parameter should be a JSON object, but not one stored in plain text format."
-    - content: "text."
+    - content: "Text."
       isCorrect: false
       explanation: "Incorrect. The `input_data` parameter must be in a JSON format."
