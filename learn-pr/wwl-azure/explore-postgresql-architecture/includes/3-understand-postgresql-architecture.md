@@ -2,7 +2,7 @@ PostgreSQL is a client/server relational database management system (RDMS). Post
 
 PostgreSQL also has its own query language called pgsql. In addition, PostgreSQL supports procedural languages such as Ruby on Rails.
 
-:::image type="content" source="../media/postgres-extensions-languages.png" alt-text="Screenshot showing PostgreSQL extensions and languages." lightbox="../media/postgres-extensions-languages.png":::
+[![Screenshot showing PostgreSQL extensions and languages.]](../media/3-postgres-extensions-languages.png)
 
 ## Client/server architecture
 
