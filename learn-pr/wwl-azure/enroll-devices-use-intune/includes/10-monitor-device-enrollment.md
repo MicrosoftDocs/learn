@@ -1,5 +1,3 @@
-
-
 As an Intune administrator, you must ensure that managed devices are providing the resources that your users need to do their work, while protecting that data from risk.
 
 The Devices workload gives you insights into the devices you manage, and lets you perform remote tasks on those devices.
