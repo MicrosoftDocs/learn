@@ -1,4 +1,4 @@
-This unit discusses how you migrate your MongoDB databases to vCore-based Azure Cosmos DB for MongoDB using the Azure Data Studio migration extension. 
+Learn to migrate your MongoDB databases to vCore-based Azure Cosmos DB for MongoDB offline using the Azure Data Studio migration extension. This extension provides a seamless migration experience, allowing you to assess and migrate your MongoDB databases to Azure Cosmos DB with ease.
 
 ## Prerequisites
 
