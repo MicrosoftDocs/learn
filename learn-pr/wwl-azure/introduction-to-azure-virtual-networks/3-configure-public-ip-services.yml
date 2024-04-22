@@ -4,7 +4,7 @@ title: Configure public IP services
 metadata:
   title: Configure public IP services
   description: "Configure public IP services"
-  ms.date: 04/18/2024
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
@@ -13,3 +13,28 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/3-configure-public-ip-services.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following statements about Azure VNets is correct?"
+    choices:
+    - content: "Outbound communication with the internet must be configured for each resource on the VNet."
+      isCorrect: false
+      explanation: "Incorrect. All resources in a VNet can communicate outbound to the internet, by default."
+    - content: "Azure VNets enable communication between Azure resources."
+      isCorrect: true
+      explanation: "Correct. Virtual Networks can connect Azure resources including VMs, the App Service Environment, Azure Kubernetes Service, and Azure Virtual Machine Scale Sets. You can use service endpoints to connect to other Azure resource types, such as Azure SQL databases and storage accounts."
+    - content: "Azure VNets can't be configured to communicate with on-premises resources."
+      isCorrect: false
+      explanation: "Incorrect. You can connect your on-premises computers and networks to a virtual network using any of the following options: Point-to-site virtual private network (VPN), Site-to-site VPN, Azure ExpressRoute."
+  - content: "Which of the following statements about Azure Public IP addresses is correct?"
+    choices:
+    - content: "Standard Public IPs are Dynamically allocated."
+      isCorrect: false
+      explanation: "That's incorrect, Standard SKU public IP addresses always use the static allocation method."
+    - content: "Basic Public IPs are supported in Availability Zones."
+      isCorrect: false
+      explanation: "That's incorrect, Basic Public IPs aren't supported in Availability Zones."
+    - content: "Public IP addresses allow Internet resources to communicate inbound to Azure resources."
+      isCorrect: true
+      explanation: "That's Correct! An IP address is assigned from a pool of available addresses, based on the location of the resource."

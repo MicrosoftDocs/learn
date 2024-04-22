@@ -4,7 +4,7 @@ title: Design name resolution for your virtual network
 metadata:
   title: Design name resolution for your virtual network
   description: "Design name resolution for your virtual network"
-  ms.date: 04/18/2024
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
@@ -13,3 +13,28 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/5-design-name-resolution-virtual-network.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the difference between a static public IP address and a dynamic public IP address?"
+    choices:
+    - content: "A dynamic IP address remains the same over the lifespan of the resource to which it's assigned."
+      isCorrect: false
+      explanation: "That is incorrect. A dynamic public IP address is an assigned address that can change over the lifespan of the Azure resource. The dynamic IP address is allocated when you create or start a VM."
+    - content: "A static IP address can use an IPv4 address only."
+      isCorrect: false
+      explanation: "That is incorrect. Static IP addresses are created with either an IPv4 or an IPv6 address."
+    - content: "A static IP address remains the same over the lifespan of the resource to which it's assigned."
+      isCorrect: true
+      explanation: "That is correct. A static public IP address is an assigned address that won't change over the lifespan of the Azure resource. To configure a static IP address, set the allocation method explicitly to static."
+  - content: "Application owners need to use dynamic IP addresses for specific resources on their VNet. Which SKU must they choose?"
+    choices:
+    - content: "Basic SKU"
+      isCorrect: true
+      explanation: "That is correct. Basic SKU public IPs can be assigned by using static or dynamic allocation methods."
+    - content: "Standard SKU"
+      isCorrect: false
+      explanation: "That is incorrect. Standard SKU public IP addresses always use the static allocation method."
+    - content: "Either Basic or Standard SKU"
+      isCorrect: false
+      explanation: "That is incorrect. Standard SKU public IP addresses always use the static allocation method. Basic SKU public IPs can be assigned by using static or dynamic allocation methods."
