@@ -1,4 +1,4 @@
-Microsoft Defender for **Cloud is a cloud-native application protection platform (CNAPP)** with a set of security measures and practices designed to protect cloud-based applications from various cyber threats and vulnerabilities.
+Microsoft Defender for Cloud is a cloud-native application protection platform (CNAPP) with a set of security measures and practices designed to protect cloud-based applications from various cyber threats and vulnerabilities.
 
 For an interactive overview of how to Manage your cloud security posture with Microsoft Defender for Cloud, **click on the image below**.
 
