@@ -43,10 +43,10 @@ quiz:
       explanation: "Incorrect. Because there are multiple Chinese language codes, we need to be more specific."
     - content: "zh-CN."
       isCorrect: false
-      explanation: "Incorrect. There is no zh-CN language code for Azure AI Translator."
+      explanation: "Incorrect. There's no zh-CN language code for Azure AI Translator."
     - content: "zh-Hans."
       isCorrect: true
-      explanation: "Correct. zh-Hans is the language code for Simplified Chinese in the Azure AI Translator service. There is also a zh-Hant code for Traditional Chinese."
+      explanation: "Correct. zh-Hans is the language code for Simplified Chinese in the Azure AI Translator service. There's also a zh-Hant code for Traditional Chinese."
   - content: "What elements are available in the output of the `azure_cognitive.translate()` function's `translations` column?"
     choices:
     - content: "Language and translated text."
