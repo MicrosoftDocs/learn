@@ -4,13 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/18/2024
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-knowledge-check.md)]
+  [!include[](includes/5-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -25,17 +25,17 @@ quiz:
     - content: "maxSentences"
       isCorrect: false
       explanation: "Incorrect. This parameter doesn't exist on the `summarize_extractive()` function."
-  - content: "What are the two summarization techniques accessible through the `azure_ai` extension for Azure Database for PostgreSQL flexible server?"
+  - content: "What are the two summarization techniques accessible through the `azure_ai` extension for Azure Database for PostgreSQL - Flexible Server?"
     choices:
     - content: "Abstractive and query-focused summarization"
       isCorrect: false
-      explanation: "Incorrect. The Azure AI extension for PostgreSQL does not support the query-focused summarization technique. This requires the use for Azure OpenAI."
+      explanation: "Incorrect. The Azure AI extension for PostgreSQL doesn't support the query-focused summarization technique. This requires the use for Azure OpenAI."
     - content: "Abstractive and extractive summarization"
       isCorrect: true
       explanation: "Correct. The Azure AI extension for PosgreSQL supports both abstractive and extractive summarization techniques."
     - content: "Extractive and query-focused summarization"
       isCorrect: false
-      explanation: "Incorrect. The Azure AI extension for PostgreSQL does not support the query-focused summarization technique. This requires the use for Azure OpenAI."
+      explanation: "Incorrect. The Azure AI extension for PostgreSQL doesn't support the query-focused summarization technique. This requires the use for Azure OpenAI."
   - content: "What is the primary purpose of query-focused summarization in Azure OpenAI-powered language models?"
     choices:
     - content: "To generate concise summaries of call center conversations"

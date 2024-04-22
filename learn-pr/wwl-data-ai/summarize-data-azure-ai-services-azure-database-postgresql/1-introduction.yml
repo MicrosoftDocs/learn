@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.introduction
-title: XXX
+title: Introduction
 metadata:
-  title: XXX
-  description: "XXX"
-  ms.date: 04/18/2024
+  title: Introduction
+  description: "Introduction"
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-durationInMinutes: 1
+durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]

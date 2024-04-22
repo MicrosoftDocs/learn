@@ -3,7 +3,7 @@ uid: learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql
 metadata:
   title: Summarize data with Azure AI Services and Azure database for PostgreSQL
   description: "Summarize data with Azure AI Services and Azure database for PostgreSQL"
-  ms.date: 04/18/2024
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module
@@ -12,7 +12,12 @@ metadata:
   ai-usage: ai-assisted
 title: Summarize data with Azure AI Services and Azure database for PostgreSQL
 summary: This module will examine how Azure AI Services and the Azure AI extension for Azure Database for PostgreSQL - Flexible Server enable Generative AI summarization techniques for condensing complex content into concise summaries.
-abstract: '- Evaluate the summarization techniques available through Azure AI Services and the **azure_ai**&nbsp;extension. - Examine the differences between extractive, abstractive, and query-focused summarization. - Apply GenAI summarization techniques to data in a PostgreSQL database to gain practical experience using Azure AI Services and the **azure_ai**&nbsp;extension for summarization.'
+abstract: |
+  -   Evaluate the summarization techniques available through Azure AI Services and the azure_ai&nbsp;extension.
+
+  -   Examine the differences between extractive, abstractive, and query-focused summarization.
+
+  -   Apply Generative AI summarization techniques to data in a PostgreSQL database to gain practical experience using Azure AI Services and the azure_ai&nbsp;extension for summarization.
 prerequisites: Before starting this module, you should have experience working with PostgreSQL databases, writing SQL queries, and a general understanding of Generative AI concepts.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
@@ -28,9 +33,8 @@ subjects:
 units:
 - learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.introduction
 - learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.understand-summarization-techniques
-- learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.exercise-perform-extractive-and-abstractive-summarization
 - learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.explore-prompt-engineering-for-summarization
-- learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.exercise-execute-query-focused-summarization
+- learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.exercise-perform-extractive-and-abstractive-summarization
 - learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.knowledge-check
 - learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.summary
 badge:
