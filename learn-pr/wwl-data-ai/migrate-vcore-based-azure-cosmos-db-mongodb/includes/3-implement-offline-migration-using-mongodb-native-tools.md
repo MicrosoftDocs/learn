@@ -1,4 +1,4 @@
-In this unit, we discuss the offline migration of your MongoDB database to vCore-based Azure Cosmos DB for MongoDB using MongoDB's native tools. This migration path is great for situations where migration time can be flexible, ensuring a smooth transfer of your database to Azure's environment.
+Learn how to perform offline migration of your MongoDB database to vCore-based Azure Cosmos DB for MongoDB using native MongoDB tools. This migration path is great for situations where migration time can be flexible, ensuring a smooth transfer of your database to Azure's environment.
 
 ## Prerequisites
 

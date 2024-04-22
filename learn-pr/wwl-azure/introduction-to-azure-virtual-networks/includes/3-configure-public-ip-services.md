@@ -10,15 +10,15 @@ In this unit, you'll learn about requirements for IP addressing when integrating
 
 In Azure Resource Manager, a [public IP](/azure/virtual-network/virtual-network-public-ip-address) address is a resource that has its own properties. Some of the resources you can associate a public IP address resource with:
 
- -  Virtual machine network interfaces 
- -  Virtual machine scale sets
- -  Public Load Balancers
- -  Virtual Network Gateways (VPN/ER)
- -  NAT gateways
- -  Application Gateways
- -  Azure Firewall
- -  Bastion Host
- -  Route Server 
+- Virtual machine network interfaces
+- Virtual machine scale sets
+- Public Load Balancers
+- Virtual Network Gateways (VPN/ER)
+- NAT gateways
+- Application Gateways
+- Azure Firewall
+- Bastion Host
+- Route Server
 
 Public IP addresses are created with an IPv4 or IPv6 address, which can be either static or dynamic.
 
@@ -32,13 +32,12 @@ Public IP addresses are created with one of the following SKUs:
 
 | Public IP address | **Standard** | **Basic**|
 | --- | --- |--- |
-| Allocation method | Static | 	For IPv4: Dynamic or Static; For IPv6: Dynamic. |
-| Idle Timeout | Have an adjustable inbound originated flow idle timeout of 4-30 minutes, with a default of 4 minutes, and fixed outbound originated flow idle timeout of 4 minutes. | 	Have an adjustable inbound originated flow idle timeout of 4-30 minutes, with a default of 4 minutes, and fixed outbound originated flow idle timeout of 4 minutes. |
-|Security |	Secure by default model and be closed to inbound traffic when used as a frontend. Allow traffic with network security group (NSG) is required (for example, on the NIC of a virtual machine with a Standard SKU Public IP attached).	|Open by default. Network security groups are recommended but optional for restricting inbound or outbound traffic|
-|Availability zones	| Supported. Standard IPs can be non-zonal, zonal, or zone-redundant. Zone redundant IPs can only be created in regions where 3 availability zones are live. IPs created before zones are live won't be zone redundant.|	Not supported.|
-|Routing preference	| Supported to enable more granular control of how traffic is routed between Azure and the Internet.|	Not supported.|
-|Global tier |	Supported via cross-region load balancers.|	Not supported.|
-
+| Allocation method | Static |  For IPv4: Dynamic or Static; For IPv6: Dynamic. |
+| Idle Timeout | Have an adjustable inbound originated flow idle timeout of 4-30 minutes, with a default of 4 minutes, and fixed outbound originated flow idle timeout of 4 minutes. |  Have an adjustable inbound originated flow idle timeout of 4-30 minutes, with a default of 4 minutes, and fixed outbound originated flow idle timeout of 4 minutes. |
+|Security | Secure by default model and be closed to inbound traffic when used as a frontend. Allow traffic with network security group (NSG) is required (for example, on the NIC of a virtual machine with a Standard SKU Public IP attached). |Open by default. Network security groups are recommended but optional for restricting inbound or outbound traffic|
+|Availability zones | Supported. Standard IPs can be non-zonal, zonal, or zone-redundant. Zone redundant IPs can only be created in regions where 3 availability zones are live. IPs created before zones are live won't be zone redundant.| Not supported.|
+|Routing preference | Supported to enable more granular control of how traffic is routed between Azure and the Internet.| Not supported.|
+|Global tier | Supported via cross-region load balancers.| Not supported.|
 
 ## Create a public IP address prefix
 
@@ -48,7 +47,22 @@ Public IP prefixes are assigned from a pool of addresses in each Azure region. Y
 
 Addresses from a custom IP address prefix can be used in the same way as Azure owned public IP address prefixes. Addresses from a custom IP address prefix can be associated to Azure resources, interact with internal/private IPs and virtual networks, and reach external destinations outbound from the Azure Wide Area Network.
 
-
 ## Check your knowledge
 
 Choose the best response for each of the questions below. When you're done, select **Check your answers**.
+
+## quiz title
+
+## Multiple Choice
+
+Which of the following statements about Azure VNets is correct?
+( ) Outbound communication with the internet must be configured for each resource on the VNet. {{Incorrect. All resources in a VNet can communicate outbound to the internet, by default.}}
+(x) Azure VNets enable communication between Azure resources. {{Correct. Virtual Networks can connect Azure resources including VMs, the App Service Environment, Azure Kubernetes Service, and Azure Virtual Machine Scale Sets. You can use service endpoints to connect to other Azure resource types, such as Azure SQL databases and storage accounts.}}
+( ) Azure VNets can't be configured to communicate with on-premises resources. {{Incorrect. You can connect your on-premises computers and networks to a virtual network using any of the following options: Point-to-site virtual private network (VPN), Site-to-site VPN, Azure ExpressRoute.}}
+
+## Multiple Choice
+
+Which of the following statements about Azure Public IP addresses is correct?
+( ) Standard Public IPs are Dynamically allocated. {{That's incorrect, Standard SKU public IP addresses always use the static allocation method.}}
+( ) Basic Public IPs are supported in Availability Zones. {{That's incorrect, Basic Public IPs aren't supported in Availability Zones.}}
+(x) Public IP addresses allow Internet resources to communicate inbound to Azure resources. {{That's Correct! An IP address is assigned from a pool of available addresses, based on the location of the resource.}}

@@ -3,7 +3,7 @@ uid: learn.intro-to-azure-lighthouse
 metadata:
   title: Use Azure Lighthouse with your managed service business
   description: Learn about and adopt Azure Lighthouse for your managed service business to manage your customers at scale.
-  ms.date: 02/09/2023
+  ms.date: 04/15/2024
   author: iankensey
   ms.author: socuff
   ms.topic: module
@@ -14,12 +14,12 @@ title: Use Azure Lighthouse with your managed service business
 summary: Learn about and adopt Azure Lighthouse for your managed service business to manage your customers at scale.
 abstract: | 
   In this module, you will:
-  - Explore what Azure Lighthouse is
-  - Understand the features of Azure Lighthouse
-  - See how to use Azure Lighthouse for cross tenant management
-  - See how to use Azure Resource Manager templates
-  - Set up Defender for Cloud with Alerting
-  - Create a managed service offer on the Azure Marketplace
+  - Learn about Azure Lighthouse.
+  - Understand the features of Azure Lighthouse.
+  - See how to use Azure Lighthouse for cross-tenant management.
+  - See how to use Azure Resource Manager templates.
+  - Set up Microsoft Defender for Cloud with alerting.
+  - Create a managed service offer on the Azure Marketplace.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
@@ -33,8 +33,8 @@ subjects:
 - cloud-computing
 - identity-access
 prerequisites: |
- - Basic understanding of Microsoft Azure subscriptions.
- - Basic understanding of Azure resource groups and resources.
+ - Basic understanding of Microsoft Azure subscriptions
+ - Basic understanding of Azure resource groups and resources
 units:
 - learn.intro-to-azure-lighthouse.1-introduction
 - learn.intro-to-azure-lighthouse.2-intro-azure-lighthouse
