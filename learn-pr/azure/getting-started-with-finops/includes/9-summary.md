@@ -6,7 +6,7 @@ At its core, FinOps revolves around 6 principles and empowers individuals and te
 
 Leverage Microsoft resources to initiate or advance your FinOps journey:
 
-- **[FinOps Review Assessment](/assessments/ad1c0f6b-396b-44a4-924b-7a4c778a13d3/)**<br>Use FinOps guidance to assess your organization’s capability gaps. Get recommendations for maximizing cloud business value using FinOps best practices.
+- **[FinOps Review Assessment](/assessments/ad1c0f6b-396b-44a4-924b-7a4c778a13d3/)**<br>Use FinOps guidance to assess your organization's capability gaps. Get recommendations for maximizing cloud business value using FinOps best practices.
 
 - **[FinOps Interactive Guides](https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure)**<br>Gain hands-on experience with Microsoft solutions that enable various FinOps capabilities and best practices.
 
@@ -16,4 +16,4 @@ Leverage Microsoft resources to initiate or advance your FinOps journey:
 
 - **[FinOps Docs](/azure/cost-management-billing/finops/)**<br>Find technical documentation and guidance to help make informed decisions and follow FinOps best practices.
 
-- **[FinOps on Azure](https://azure.microsoft.com/en-us/solutions/finops/)**<br>Explore the range of Microsoft products and services designed to bolster your efforts in implementing FinOps best practices.
+- **[FinOps on Azure](https://azure.microsoft.com/solutions/finops/)**<br>Explore the range of Microsoft products and services designed to bolster your efforts in implementing FinOps best practices.

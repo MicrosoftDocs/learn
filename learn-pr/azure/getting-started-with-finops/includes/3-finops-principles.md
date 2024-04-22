@@ -23,7 +23,7 @@ The FinOps framework includes six principles that act as north star objectives o
 - Create, monitor, and improve real-time financial forecasting and planning.
 - Trending and variance analysis helps explain why costs increased.
 - Internal team benchmarking drives best practices and celebrates wins.
-- Industry peer-level benchmarking assesses your company’s performance.
+- Industry peer-level benchmarking assesses your company's performance.
 
 ## Everyone takes ownership for their cloud usage
 

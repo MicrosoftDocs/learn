@@ -9,7 +9,7 @@ Characteristics:
 - Basic KPIs set for the measurement of success
 - Basic processes and policies are defined around the capability
 - Capability is understood but not followed by all the major teams within the organization
-- Plans to address “low hanging fruit”
+- Plans to address "low hanging fruit"
 
 ## Walk
 
@@ -30,7 +30,7 @@ Characteristics:
 - Very high goals/KPIs set on the measurement of success
 - Automation is the preferred approach
 
-The FinOps Maturity Model offers organizations a roadmap to progress from basic cloud management to highly sophisticated, efficient practices. It aids in assessing their current state and setting goals for improvement. However, it's important to note that the goal of FinOps isn't to mandate every organization to reach the "Run" stage. It varies based on each organization’s objectives and the business value it seeks to derive.
+The FinOps Maturity Model offers organizations a roadmap to progress from basic cloud management to highly sophisticated, efficient practices. It aids in assessing their current state and setting goals for improvement. However, it's important to note that the goal of FinOps isn't to mandate every organization to reach the "Run" stage. It varies based on each organization's objectives and the business value it seeks to derive.
 
 ![Diagram showing the Finops Maturity Model.](../media/6-finops-maturity-model.png)
 

@@ -6,7 +6,7 @@ The FinOps phases are designed as an iterative loop to support the customer jour
 
 **Visibility & Allocation**
 
-In the _Inform_ phase, FinOps activities involve identifying data sources for cloud cost, usage and efficiency data. Using this data for allocation, analysis and reporting empowers teams to develop capabilities in budgeting, forecasting trends, building KPIs for benchmarking, and developing metrics that will reveal the business value of an organization’s cloud spend.
+In the _Inform_ phase, FinOps activities involve identifying data sources for cloud cost, usage and efficiency data. Using this data for allocation, analysis and reporting empowers teams to develop capabilities in budgeting, forecasting trends, building KPIs for benchmarking, and developing metrics that will reveal the business value of an organization's cloud spend.
 
 ## Optimize
 

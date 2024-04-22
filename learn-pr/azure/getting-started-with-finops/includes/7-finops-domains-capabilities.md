@@ -1,6 +1,6 @@
 FinOps domains represent spheres of activity or knowledge. Every organization adopting FinOps will engage in activities across all FinOps Domains. Each FinOps Domain comprises FinOps Capabilities  , which outline functional activities that can be performed within that Domain.
 
-Below, you’ll find how domains and capabilities are grouped. In the next module, "Adopting FinOps on Azure," we will delve deeper into exploring these domains and capabilities.
+Below, you'll find how domains and capabilities are grouped. In the next module, "Adopting FinOps on Azure," we will delve deeper into exploring these domains and capabilities.
 
 ## Domain: Understand cloud usage and cost
 

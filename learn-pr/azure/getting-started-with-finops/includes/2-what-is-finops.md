@@ -1,6 +1,6 @@
 ## Overview
 
-The FinOps Foundation defines [FinOps](https://www.finops.org/introduction/what-is-finops/) as “an operational framework and cultural practice which maximizes the business value of cloud, enables timely data-driven decision making, and creates financial accountability through collaboration between engineering, finance, and business teams.”
+The FinOps Foundation defines [FinOps](https://www.finops.org/introduction/what-is-finops/) as "an operational framework and cultural practice which maximizes the business value of cloud, enables timely data-driven decision making, and creates financial accountability through collaboration between engineering, finance, and business teams."
 
 FinOps supports a cultural shift within organizations, fostering best practices aimed at enhancing efficiency and effectively managing cloud investments. It promotes accountability and data-driven decision-making to support business growth.
 
