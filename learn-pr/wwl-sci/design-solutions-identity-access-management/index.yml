@@ -23,7 +23,7 @@ abstract: |
 prerequisites: |
   - Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications.
   - Experience with hybrid and cloud implementations.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/design-solutions-for-identity-and-access-management.svg
 levels:
 - advanced
 roles:
@@ -49,4 +49,4 @@ units:
 - learn.wwl.design-solutions-identity-access-management.knowledge-check
 - learn.wwl.design-solutions-identity-access-management.summary
 badge:
-  uid: learn.wwl.design-solutions-identity-access-management.badge
+  uid: learn.wwl.design-solutions-for-identity-and-access-management.badge
