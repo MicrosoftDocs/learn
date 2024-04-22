@@ -10,3 +10,5 @@ metadata:
   ms.author: aastewar
   ms.topic: unit
 durationInMinutes: 8 # user input: the estimate time to complete the unit
+content: |
+    [!include[](includes/3-how-does-codeql-analyze-code.md)]
