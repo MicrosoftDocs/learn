@@ -10,9 +10,10 @@ In this example **myprocedure** is used to insert just two values into a table. 
 
 For stored procedures with many input parameters, you can specify the name of parameter to make your code easier to read, and reduce errors. The syntax is:
 
-```
+```sql
 name => value
 ```
+
 For example:
 
 ```sql

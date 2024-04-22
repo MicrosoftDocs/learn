@@ -8,4 +8,4 @@ Now that you have completed this module, you're able to:
 
 For more information about the topics in this module, see:
 
-- [PostgreSQL: Documentation: 13: Chapter 9. Functions and Operators](https://www.postgresql.org/docs/13/functions.html)
+- [PostgreSQL: Documentation: Chapter 9. Functions and Operators](https://www.postgresql.org/docs/current/functions.html)
