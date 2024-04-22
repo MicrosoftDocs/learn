@@ -8,7 +8,7 @@ Personally Identifiable Information (PII) detection identifies and redacts PII f
 
 Without these tools, businesses need to process text by keyword or pattern matching. That method is error-prone and requires manual effort to list identifiable topics and patterns. This logic is typically not implemented in SQL, so it must be repeated across client applications introducing further risk.
 
-By deferring the text processing to Azure AI Language, businesses automate gathering insights from text. The language services encapsulate complex natural language processing algorithms, which are maintained and debugged by Azure developers. This service enables the business's developers to focus on the insights obtained from text: not the process of obtaining the insights.
+When businesses defer the text processing to Azure AI Language, they automate gathering insights from text. The language services encapsulate complex natural language processing algorithms, which are maintained and debugged by Azure developers. This service enables the business's developers to focus on the insights obtained from text: not the process of obtaining the insights.
 
 ## References
 

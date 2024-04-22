@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql.pii
-title: XXX
+title: Recognize PII entities
 metadata:
-  title: XXX
-  description: "XXX"
+  title: Recognize PII entities
+  description: "Recognize PII entities"
   ms.date: 04/22/2024
   author: wwlpublish
   ms.author: rcaper

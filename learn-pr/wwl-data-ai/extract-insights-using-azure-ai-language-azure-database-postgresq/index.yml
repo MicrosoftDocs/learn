@@ -2,7 +2,7 @@
 uid: learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql
 metadata:
   title: Extract insights using Azure AI Language and Azure Database for PostgreSQL
-  description: "Extract insights using Azure AI Language and Azure Database for PostgreSQL"
+  description: "Extract insights using Azure AI Language and Azure Database for PostgreSQL."
   ms.date: 04/22/2024
   author: wwlpublish
   ms.author: rcaper
@@ -14,7 +14,7 @@ title: Extract insights using Azure AI Language and Azure Database for PostgreSQ
 summary: |
   This module covers Azure AI Language tools
 
-  including key phrase extraction, entity recognition, and personally
+  including key phrase extraction, entity recognition, personally
 
   identifiable information recognition and redaction, and using Azure Database
 

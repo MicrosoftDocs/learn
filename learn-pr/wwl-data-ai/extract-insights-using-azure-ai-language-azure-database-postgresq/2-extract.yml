@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql.extract
-title: XXX
+title: Extract key phrases
 metadata:
-  title: XXX
-  description: "XXX"
+  title: Extract key phrases
+  description: "Extract key phrases"
   ms.date: 04/22/2024
   author: wwlpublish
   ms.author: rcaper
