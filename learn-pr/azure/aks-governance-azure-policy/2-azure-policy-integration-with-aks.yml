@@ -4,7 +4,7 @@ title: Azure Policy and how it integrates with Azure Kubernetes Services
 metadata:
   title: Azure Policy and how it integrates with Azure Kubernetes Services
   description: Introduction to Azure Policy and how Azure Policy integrates with Azure Kubernetes Services.
-  ms.date: 04/17/2024
+  ms.date: 04/22/2024
   author: NillsF
   ms.author: nilfran
   ms.topic: unit
