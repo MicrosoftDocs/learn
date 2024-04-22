@@ -1,4 +1,7 @@
 
+> [!CAUTION]
+> This content references CentOS, a Linux distribution that is nearing End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
+
 Tailwind Traders has a mix of compute workloads running as physical servers, virtual machines (VMs), or containers across datacenters in Sydney, Melbourne, and Auckland. These workloads are running a mix of Windows Server and Linux, with Hyper-V configured as the primary virtualization platform. 
 
 Managing this diverse set of operating systems is already a challenge for Tailwind Traders. The company is concerned that migrating into a hybrid posture where workloads are running both on-premises and in the cloud will make it even more difficult to keep track of server operating system workloads and their compliance state.

@@ -126,7 +126,7 @@ keyVaultName='YOUR-KEY-VAULT-NAME'
 read -s -p "Enter the login name: " login
 read -s -p "Enter the password: " password
 
-az keyvault create --name $keyVaultName --location westus3 --enabled-for-template-deployment true
+az keyvault create --name $keyVaultName --location eastus --enabled-for-template-deployment true
 az keyvault secret set --vault-name $keyVaultName --name "sqlServerAdministratorLogin" --value $login --output none
 az keyvault secret set --vault-name $keyVaultName --name "sqlServerAdministratorPassword" --value $password --output none
 ```
@@ -149,7 +149,7 @@ $keyVaultName = 'YOUR-KEY-VAULT-NAME'
 $login = Read-Host "Enter the login name" -AsSecureString
 $password = Read-Host "Enter the password" -AsSecureString
 
-New-AzKeyVault -VaultName $keyVaultName -Location westus3 -EnabledForTemplateDeployment
+New-AzKeyVault -VaultName $keyVaultName -Location eastus -EnabledForTemplateDeployment
 Set-AzKeyVaultSecret -VaultName $keyVaultName -Name 'sqlServerAdministratorLogin' -SecretValue $login
 Set-AzKeyVaultSecret -VaultName $keyVaultName -Name 'sqlServerAdministratorPassword' -SecretValue $password
 ```

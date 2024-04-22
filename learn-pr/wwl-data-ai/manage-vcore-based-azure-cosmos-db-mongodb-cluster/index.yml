@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.manage-vcore-based-azure-cosmos-db-mongodb-cluster
+metadata:
+  title: Manage a vCore-based Azure Cosmos DB for MongoDB cluster
+  description: "Manage a vCore-based Azure Cosmos DB for MongoDB cluster."
+  ms.date: 04/12/2024
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: cosmos-db
+  ms.subservice: mongodb-vcore
+  ai-usage: human-only
+title: Manage a vCore-based Azure Cosmos DB for MongoDB cluster
+summary: Learn to manage a vCore-based Azure Cosmos DB for MongoDB cluster, focusing on scaling, high availability, backup and restoration processes, and diagnostic monitoring.
+abstract: |
+  -   Explore strategies for scaling a vCore-based Azure Cosmos DB for MongoDB clusters, adjusting cluster tiers and storage sizes.
+  -   Set up and manage high availability to ensure minimal downtime in clusters.
+  -   Learn the backup and restore process, with point-in-time recovery features.
+  -   Monitor and diagnose clusters using Azure Monitor, including managing diagnostic settings and queries.
+prerequisites: Before starting this module, you should be familiar with the Azure portal.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+subjects:
+- databases
+units:
+- learn.wwl.manage-vcore-based-azure-cosmos-db-mongodb-cluster.introduction
+- learn.wwl.manage-vcore-based-azure-cosmos-db-mongodb-cluster.scale-configure-cluster
+- learn.wwl.manage-vcore-based-azure-cosmos-db-mongodb-cluster.explore-high-availability-cluster
+- learn.wwl.manage-vcore-based-azure-cosmos-db-mongodb-cluster.backup-restore-cluster
+- learn.wwl.manage-vcore-based-azure-cosmos-db-mongodb-cluster.monitor-cluster
+- learn.wwl.manage-vcore-based-azure-cosmos-db-mongodb-cluster.exercise-manage-mongodb-cluster
+- learn.wwl.manage-vcore-based-azure-cosmos-db-mongodb-cluster.knowledge-check
+- learn.wwl.manage-vcore-based-azure-cosmos-db-mongodb-cluster.summary
+badge:
+  uid: learn.wwl.manage-vcore-based-azure-cosmos-db-mongodb-cluster.badge

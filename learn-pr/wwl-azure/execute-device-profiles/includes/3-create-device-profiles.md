@@ -1,5 +1,3 @@
-
-
 As noted in the previous unit, many device profile types exist. Each platform has its own list of profile types. The process for creating device profiles is similar for all profiles.
 
 To create a Windows device profile:
