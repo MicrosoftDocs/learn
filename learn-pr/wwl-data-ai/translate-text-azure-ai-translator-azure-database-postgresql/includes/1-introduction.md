@@ -1,6 +1,6 @@
 
 
-The Azure Extension for Azure Database for PostgreSQL includes access to the Azure AI Translator, a service that allows you to detect the language of text and translate that text into other languages. With it, you can translate text between [more than 100 languages](/azure/ai-services/translator/language-support#translation). 
+The Azure Extension for Azure Database for PostgreSQL includes access to the Azure AI Translator, a service that allows you to detect the language of text and translate that text into other languages. With it, you can translate text between [more than 100 languages](/azure/ai-services/translator/language-support#translation).
 
 ## Azure AI Services
 
@@ -13,8 +13,6 @@ The Azure AI Translator service is a cloud-based service that uses neural machin
 ## Scenario: Translating rental property descriptions
 
 Suppose you're the lead developer for Margie's Travel. Your company is embarking on a plan to market short-term rental properties for an international clientele. Your rental property descriptions are all in the English language, and you would like to translate these listings into various languages. You're hosting the data in Azure Database for PostgreSQL flexible server and would like to take advantage of other Azure services to perform translation.
-
-TODO: visual element
 
 ## Learning objectives
 
