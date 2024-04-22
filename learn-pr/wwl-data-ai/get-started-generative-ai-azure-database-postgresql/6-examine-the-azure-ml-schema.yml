@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-generative-ai-azure-database-postgresql.examine-the-azure-ml-schema
-title: Examine the Azure Machine Learning Schema
+title: Examine the Azure Machine Learning schema
 metadata:
-  title: Examine the Azure Machine Learning Schema
-  description: "Examine the Azure Machine Learning Schema"
+  title: Examine the Azure Machine Learning schema
+  description: "Examine the Azure Machine Learning schema"
   ms.date: 04/22/2024
   author: wwlpublish
   ms.author: rcaper

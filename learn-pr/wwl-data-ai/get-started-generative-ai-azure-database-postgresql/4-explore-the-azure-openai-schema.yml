@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-generative-ai-azure-database-postgresql.explore-the-azure-openai-schema
-title: Explore the Azure OpenAI Schema
+title: Explore the Azure OpenAI schema
 metadata:
-  title: Explore the Azure OpenAI Schema
-  description: "Explore the Azure OpenAI Schema"
+  title: Explore the Azure OpenAI schema
+  description: "Explore the Azure OpenAI schema"
   ms.date: 04/22/2024
   author: wwlpublish
   ms.author: rcaper

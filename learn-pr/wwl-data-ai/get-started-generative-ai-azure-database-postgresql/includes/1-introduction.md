@@ -4,37 +4,37 @@ The **Azure AI (`azure_ai`) extension** is a powerful tool created by the Postgr
 
 ![Diagram of the Azure AI extension for Azure Database for PostgreSQL extending the database with capabilities from Azure AI and ML services.](../media/azure-database-for-postgresql-azure-ai-extension-diagram.png)
 
-## Azure AI Services
+## Azure AI services
 
-**Azure AI services** are a set of advanced cloud-based tools and technologies created by Microsoft to enable you to build intelligent apps and systems without requiring specialized AI or data science skills. These services allow the incorporation of powerful AI capabilities into a wide range of applications, such as natural language processing, machine learning, computer vision, and more. By leveraging Azure AI services, you can create innovative solutions that enhance user experiences, automate workflows, and improve business operations across various industries.
+**Azure AI services** are a set of advanced cloud-based tools and technologies created by Microsoft to enable you to build intelligent apps and systems without requiring specialized AI or data science skills. These services allow the incorporation of powerful AI capabilities into a wide range of applications, such as natural language processing, machine learning, computer vision, and more. By using Azure AI services, you can create innovative solutions that enhance user experiences, automate workflows, and improve business operations across various industries.
 
-### Azure OpenAI Service
+### Azure OpenAI service
 
-OpenAI is an AI research organization and technology company known for its groundbreaking work in artificial intelligence and machine learning. Their goal is to ensure that artificial general intelligence (AGI) benefits all of humanity. OpenAI has introduced state-of-the-art generative models, including GPT-3, GPT-3.5, and GPT-4.
+OpenAI is an AI research organization and technology company known for its groundbreaking work in artificial intelligence and machine learning. Their goal is to ensure that artificial general intelligence (AGI) benefits all of humanity. OpenAI introduced state-of-the-art generative models, including GPT-3, GPT-3.5, and GPT-4.
 
-Azure OpenAI is Azure's Large Language Model (LLM) service offering, designed to help build GenAI applications using Azure. Exposing a powerful suite of artificial intelligence services and models enables you to build innovative applications that leverage natural language understanding, text generation, and other GenAI capabilities. Azure OpenAI provides access to state-of-the-art LLMs capable of understanding context, generating coherent text, and performing translation, summarization, and question-answering tasks. With Azure OpenAI, you can build applications that understand natural language input and respond intelligently.
+Azure OpenAI is Azure's Large Language Model (LLM) service offering, designed to help build GenAI applications using Azure. Exposing a powerful suite of artificial intelligence services and models enables you to build innovative applications that use natural language understanding, text generation, and other GenAI capabilities. Azure OpenAI provides access to state-of-the-art LLMs capable of understanding context, generating coherent text, and performing translation, summarization, and question-answering tasks. With Azure OpenAI, you can build applications that understand natural language input and respond intelligently.
 
 ### Azure AI Language service
 
-The Azure AI Language service empowers you to build intelligent applications that understand and process natural language. When integrated with Azure Database for PostgreSQL - Flexible Server, these services enhance your database capabilities, allowing you to perform tasks like sentiment analysis, text summarization, and keyphrase extraction directly within SQL queries.
+The Azure AI Language service empowers you to build intelligent applications that understand and process natural language. When integrated with Azure Database for PostgreSQL - Flexible Server, these services enhance your database capabilities, allowing you to perform tasks like sentiment analysis, text summarization, and key phrase extraction directly within SQL queries.
 
 ## Azure Machine Learning
 
 **Azure Machine Learning (Azure ML)** is a comprehensive cloud service designed for the machine learning project lifecycle. It provides a robust platform for building, deploying, and managing machine learning models.
 
-## Unlock AI-Powered Applications
+## Unlock AI-powered applications
 
-Azure AI and ML Services can be seamlessly integrated into your PostgreSQL database using the `azure_ai` extension to help you build highly scalable AI-powered applications. You can leverage the familiar SQL language and the flexibility of PostgreSQL to create intelligent solutions within your database layer. Azure AI Services provide various capabilities, such as natural language processing, recommendation systems, text summarization, and content generation, which can empower your applications. Azure ML allows you to build, train, and deploy custom machine learning models, which can be invoked from the `azure_ai` extension to make predictions or generate outputs based on data in your tables.
+Azure AI and ML Services can be seamlessly integrated into your PostgreSQL database using the `azure_ai` extension to help you build highly scalable AI-powered applications. You can use the familiar SQL language and the flexibility of PostgreSQL to create intelligent solutions within your database layer. Azure AI Services provides various capabilities, such as natural language processing, recommendation systems, text summarization, and content generation, which can empower your applications. Azure ML allows you to build, train, and deploy custom machine learning models, which can be invoked from the `azure_ai` extension to make predictions or generate outputs based on data in your tables.
 
 ## Scenario: Rental property search and recommendations application
 
-Imagine you are the lead AI developer for Margie's Travel, a company whose web and mobile apps connect travelers looking for lodging accommodations with homeowners and property managers willing to rent out their properties. These apps are backed by an Azure Database for PostgreSQL - Flexible Server. You have been tasked with enhancing these apps with new GenAI functionality. You are researching how Azure AI and ML services and the `azure_ai` extension can be leveraged to add these capabilities.
+Imagine you're the lead AI developer for Margie's Travel, a company whose web and mobile apps connect travelers looking for lodging accommodations with homeowners and property managers willing to rent out their properties. These apps are backed by an Azure Database for PostgreSQL - Flexible Server. You're tasked with enhancing these apps with new GenAI functionality. You're researching how Azure AI and ML services and the `azure_ai` extension can be used to add these capabilities.
 
 ## Learning objectives
 
-This module examines the `azure_ai` extension and how it enables the seamless integration of generative AI capabilities into applications using Azure Database for PostgreSQL - Flexible Server. It will equip you with the knowledge to create powerful generative AI applications. In this module, you:
+This module examines the `azure_ai` extension and how it enables the seamless integration of generative AI capabilities into applications using Azure Database for PostgreSQL - Flexible Server. It equips you with the knowledge to create powerful generative AI applications. In this module, you:
 
-- Examine the concepts of Generative AI and Large Language Models and explore how they can be leveraged to build rich AI applications.
+- Examine the concepts of Generative AI and Large Language Models and explore how they can be used to build rich AI applications.
 - Evaluate the capabilities of `azure_ai` extension for PostgreSQL.
 - Install and explore the `azure_ai` extension in an Azure Database for PostgreSQL - Flexible Server database.
 

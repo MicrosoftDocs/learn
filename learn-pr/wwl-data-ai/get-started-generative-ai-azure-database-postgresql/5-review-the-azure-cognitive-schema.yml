@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-generative-ai-azure-database-postgresql.review-the-azure-cognitive-schema
-title: Review the Azure Cognitive Schema
+title: Review the Azure Cognitive schema
 metadata:
-  title: Review the Azure Cognitive Schema
-  description: "Review the Azure Cognitive Schema"
+  title: Review the Azure Cognitive schema
+  description: "Review the Azure Cognitive schema"
   ms.date: 04/22/2024
   author: wwlpublish
   ms.author: rcaper

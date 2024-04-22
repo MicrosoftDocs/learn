@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-generative-ai-azure-database-postgresql.understand-generative-ai-and-llms
-title: Understand Generative AI and LLMs
+title: Understand Generative AI and large language models
 metadata:
-  title: Understand Generative AI and LLMs
-  description: "Understand Generative AI and LLMs"
+  title: Understand Generative AI and large language models
+  description: "Understand Generative AI and large language models"
   ms.date: 04/22/2024
   author: wwlpublish
   ms.author: rcaper
