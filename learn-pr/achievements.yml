@@ -3158,4 +3158,8 @@ achievements:
   title: Diagnose startup errors in your application by using the Kudu console
   summary: This module helps you understand the common startup errors in an ASP.NET Core application and diagnose them by using the Kudu console and the Azure portal.
   iconUrl: /training/achievements/azure-diagnose-application-startup-errors-with-kudu-console.svg
-  
+- uid: learn.govern-monitor-secure-resources-azure-lighthouse.badge
+  type: badge
+  title: Use Azure Lighthouse to govern, monitor, and secure customer resources
+  summary: Azure Lighthouse can help you monitor, secure, and govern your customer resources.
+  iconUrl: /training/achievements/generic-badge.svg
