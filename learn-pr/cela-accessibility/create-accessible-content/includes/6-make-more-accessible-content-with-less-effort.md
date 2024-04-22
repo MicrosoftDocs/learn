@@ -1,6 +1,6 @@
 In this section, we demonstrate how to use Accessibility Checker and Accessibility Assistant to review and edit documents to make them more accessible for people with disabilities.
 
-**Exercise – Check and edit documents with Accessibility Checker** 
+## Exercise – Check and edit documents with Accessibility Checker
 
 The [**Accessibility Checker**](https://support.microsoft.com/en-us/office/improve-accessibility-with-the-accessibility-checker-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f) in Microsoft 365 is a tool that helps you create and edit documents, presentations, emails, and websites that are accessible to people with disabilities. It provides suggestions on how to fix issues and improve the accessibility of your content.
 
@@ -51,7 +51,7 @@ When using the Accessibility Assistant pane, the following five major categories
 
 By flagging any issues that could prevent your documents from being accessible, Accessibility Assistant helps ensure your readers can understand and use the content as you intended.
 
-**Exercise – How to use Accessibility Assistant (Public Preview) in Microsoft 365:**
+## Exercise – How to use Accessibility Assistant (Public Preview) in Microsoft 365:
 
 As you create your document, if you put something in your document that Accessibility Assistant recognizes as an accessibility issue, an icon in the shape of a person appears on screen in the margin.
 
