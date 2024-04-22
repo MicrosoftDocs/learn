@@ -1,7 +1,5 @@
 
 
-
-
 The `azure_ml` schema empowers your database with the ability to interact with custom-build machine learning models capabilities. By utilizing the `azure_ml` schema, you can seamlessly integrate your PostgreSQL database with Azure Machine Learning services. This integration enables you to deploy and serve machine learning models directly from your database, making real-time inferencing efficient and scalable.
 
 ## Real-time inference with the `azure_ml` schema

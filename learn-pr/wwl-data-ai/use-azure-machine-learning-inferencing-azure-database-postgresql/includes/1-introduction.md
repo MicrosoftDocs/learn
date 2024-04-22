@@ -6,7 +6,7 @@ The Azure Extension for Azure Database for PostgreSQL allows you to call custom-
 
 **Azure Machine Learning** is a cloud service for accelerating and managing the machine learning (ML) project lifecycle. Machine learning professionals, data scientists, and engineers can use it in their day-to-day workflows to train and deploy models and manage machine learning operations (MLOps).
 
-You can create a model in Machine Learning or use a model built from an open-source platform, such as PyTorch, TensorFlow, or scikit-learn. MLOps tools help you monitor, retrain, and redeploy models.
+You can create a model in Machine Learning or use a model built from an open-source platform, such as PyTorch, TensorFlow, or scikit-learn. Machine learning operations tools help you monitor, retrain, and redeploy models.
 
 ## Scenario: Estimating nightly prices for rental properties
 
