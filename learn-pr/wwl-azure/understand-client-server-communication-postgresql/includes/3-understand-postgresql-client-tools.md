@@ -26,64 +26,14 @@ pgAdmin is a popular administration and development platform for PostgreSQL. It 
 
 ## psql
 
-psql is a command line utility that allows you to interact with a PostgreSQL server. It can be [downloaded](https://www.postgresql.org/docs/13/functions.html) as part of PostgreSQL. In the setup wizard, when you reach the **Select Components** dialog box, select **Command Line Tools**.
+psql is a command line utility that allows you to interact with a PostgreSQL server. It can be [downloaded](https://sbp.enterprisedb.com/getfile.jsp?fileid=1258893) as part of PostgreSQL. In the setup wizard, when you reach the **Select Components** dialog box, select **Command Line Tools**.
 
-:::image type="content" source="../media/command-line-tools-setup.png" alt-text="Screenshot showing the Select Components dialog box." lightbox="../media/command-line-tools-setup.png":::
+[![Screenshot showing the Select Components dialog box.]](../media/3-command-line-tools-setup.png)
 
-### Connect to Azure Database for PostgreSQL with psql
-
-1. Start psql from your menu.
-1. The syntax for connecting to the server is:
+You can then connect to your database using psql from an command prompt by typing
 
     ```sql
     psql --host=<servername> --port=<port> --username=<user@servername> --dbname=<dbname>
-    ```
-
-1. At the command prompt enter **--host=mypostflex.postgres.database.azure.com** which is the name of the Azure Database for PostgreSQL created in Module 1.
-
-    ```sql
-    psql --host=mydemoserver.postgres.database.azure.com --port=5432 --username=myadmin@mydemoserver --dbname=postgres
-    ```
-
-1. To create a blank database at the prompt, type:
-
-    ```sql
-    CREATE DATABASE mypgsqldb;
-    ```
-
-1. At the prompt, execute the following command to switch connection to the newly created database **mypgsqldb**:
-
-    ```sql
-    \c mypgsqldb
-    ```
-
-1. Now that you have connected to the server, and created a database you can execute familiar SQL queries, such as create tables in the database:
-
-    ```sql
-    CREATE TABLE inventory (
-        id serial PRIMARY KEY,
-        name VARCHAR(50),
-        quantity INTEGER
-        );
-    ```
-
-1. Load data into the tables
-
-    ```sql
-    INSERT INTO inventory (id, name, quantity) VALUES (1, 'banana', 150);
-    INSERT I1NTO inventory (id, name, quantity) VALUES (2, 'orange', 154);
-    ```
-
-1. Query and update the data in the tables
-
-    ```sql
-    SELECT * FROM inventory;
-    ```
-
-1. Update the data in the tables.
-
-    ```sql
-    UPDATE inventory SET quantity = 200 WHERE name = 'banana';
     ```
 
 ## DBeaver

@@ -4,12 +4,12 @@ title: Understand connection handling
 metadata:
   title: Understand connection handling
   description: "Understand connection handling"
-  ms.date: 10/27/2022
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/2-understand-connection-handling.md)]
