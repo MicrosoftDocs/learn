@@ -5,8 +5,8 @@ metadata:
   title: Try Node.js
   description: Learn how to create and run a simple hello world script in Node.js.
   ms.date: 01/05/2024
-  author: manekinekko
-  ms.author: chnoring
+  author: diberry
+  ms.author: diberry
   ms.topic: unit
   ms.custom:
     - team=nextgen

@@ -4,9 +4,9 @@ metadata:
   moduleType: introduction        
   title: Introduction to Azure HDInsight
   description: Evaluate whether Azure HDInsight can help your organization process big data. Describe how Azure HDInsight uses popular open-source frameworks that support many scenarios including extract, transform, data warehousing, and others.
-  ms.date: 07/25/2023  
+  ms.date: 04/21/2024  
   author: sreekzz
-  ms.author: v-sreiyer
+  ms.author: v-sreeiyer
   ms.topic: module-intro-to-product
   ms.service: hdinsight
 title: Introduction to Azure HDInsight
