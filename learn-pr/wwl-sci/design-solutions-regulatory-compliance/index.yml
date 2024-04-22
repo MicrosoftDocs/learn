@@ -22,7 +22,7 @@ abstract: |
 prerequisites: |
   -   Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications.
   -   Experience with hybrid and cloud implementations.
-iconUrl: /learn/achievements/design-solutions-for-regulatory-compliance-social.svg
+iconUrl: /learn/achievements/design-solutions-regulatory-compliance.svg
 levels:
 - advanced
 roles:
@@ -47,4 +47,4 @@ units:
 - learn.wwl.design-solutions-regulatory-compliance.knowledge-check
 - learn.wwl.design-solutions-regulatory-compliance.summary
 badge:
-  uid: learn.wwl.design-solutions-for-regulatory-compliance-social.badge
+  uid: learn.wwl.design-solutions-regulatory-compliance.badge
