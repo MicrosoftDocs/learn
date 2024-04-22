@@ -2,7 +2,7 @@ Using both Azure OpenAI and vCore-based Azure Cosmos DB for MongoDB, you can imp
 
 ## Configure vCore-based Azure Cosmos DB for MongoDB for vector search
 
-The first part of a Retrieval Augmented Generation (RAG) system involves asking a question and searching your data for similar items based on vector similarity. What this means, is that your question is converted into a numerical vector, and the system searches your data for items that are most similar to this vector.
+The first part of a Retrieval Augmented Generation (RAG) system involves asking a question and searching your data for similar items based on vector similarity. This means that your question is converted into a numerical vector, and the system searches your data for items that are most similar to this vector.
 
 This process first requires configuring your vCore-based Azure Cosmos DB for MongoDB to support vector search. This configuration involves three main steps:
 
@@ -24,11 +24,11 @@ Before you can take advantage of vector indexes, you need to generate embeddings
 [0.123, 0.234, 0.345, ...]
 ```
 
-So let suppose you have the **products** collection in the *Adventure Works Bike Shop* **sales** database. You can generate embeddings for the collections document's **category** and **description** fields. Azure OpenAI can help you generate these embeddings from the fields' text data. Once generated, you can store those embeddings in your document's vector columns.
+Suppose you have the **products** collection in the *Adventure Works Bike Shop* **sales** database. You can generate embeddings for the collection document's **category** and **description** fields. Azure OpenAI can help you generate these embeddings from the fields' text data. Once generated, you can store those embeddings in your document's vector columns.
 
 To create your vector column embeddings, you can use the Azure OpenAI's Python or Node.js SDK among other languages. For example, you can use the following code snippets to generate embeddings for the text in the *category* field using Azure OpenAI's API:
 
-Python
+**Python**
 
 ```python
 response = AzureOpenAIClient.embeddings.create(
@@ -36,9 +36,9 @@ response = AzureOpenAIClient.embeddings.create(
     model=embeddings_deployment)
 ```
 
-Node.js
+**Node.js**
 
-```javascript
+```nodejs
 const response = await AzureOpenAIClient.getEmbeddings(embeddingsDeployment, categoryText);
 ```
 
@@ -46,7 +46,7 @@ These commands call Azure OpenAI's API to generate numerical embeddings for the 
 
 ### Create vector indexes
 
-Before we can perform vector searches, to get the results we need for our RAG system, we need to create vector indexes on these vector columns. These indexes allow you to perform efficient vector searches to retrieve similar items based on vector similarity. There are two types of vector indexes available in Azure Cosmos DB for MongoDB: *HNSW* (Hierarchical Navigable Small World) and *IVF* (Inverted File) indexes. You can choose the index type based on your application requirements.
+Before we can perform vector searches to get the results we need for our RAG system, we need to create vector indexes on these vector columns. These indexes allow you to perform efficient vector searches to retrieve similar items based on vector similarity. There are two types of vector indexes available in Azure Cosmos DB for MongoDB: *HNSW* (Hierarchical Navigable Small World) and *IVF* (Inverted File) indexes. You can choose the index type based on your application requirements.
 
 For example, to create a vector index using the *HNSW* algorithm, you can use the following MongoDB command:
 
@@ -96,7 +96,7 @@ db.exampleCollection.aggregate([
 ]);
 ```
 
-The vector search result returns the most similar items based on the query vector. In this command, the *contentVector* would be your vector column name. These results are just an array of your documents with the highest similarity scores. However, you can further enhance the user experience by integrating Azure OpenAI to generate detailed responses based on the search results. This integration is the last step of our Retrieval Augmented Generation (RAG) system. Let's learn how.
+The vector search result returns the most similar items based on the query vector. In this command, the *contentVector* would be your vector column name. These results are just an array of your documents with the highest similarity scores. However, you can further enhance the user experience by integrating Azure OpenAI to generate detailed responses based on the search results. This integration is the last step of our Retrieval Augmented Generation (RAG) system.
 
 ## Integrate Azure OpenAI
 
@@ -117,19 +117,19 @@ There are many programmatic ways to generate the prompt. The key is to structure
 
 Once you defined your structured prompt, you can use the following code snippets to generate responses using Azure OpenAI:
 
-Python
+**Python**
 
 ```python
 response = AzureOpenAICompletionClient.chat.completions.create(
     model=completion_deployment, messages=structuredPrompt)
 ```
 
-Node.js
+**Node.js**
 
-```javascript
+```nodejs
 const response = await AzureOpenAICompletionClient.getChatCompletions(completionDeployment, structuredPrompt);
 ```
 
 These commands call Azure OpenAI's API to generate detailed responses based on the structured prompt, using a specified model to provide context-aware information that complements the vector search results.
 
-This setup combines vCore-based Azure Cosmos DB for MongoDB's customer data with Azure OpenAI’s AI models to form your Retrieval Augmented Generation (RAG) system. By integrating vector search, it allows the AI to pull precise, relevant information from vCore-based Azure Cosmos DB for MongoDB for enhanced responses. This approach significantly improves the quality and relevance of AI-generated responses utilizing your own data.
+This setup combines vCore-based Azure Cosmos DB for MongoDB's customer data with Azure OpenAI's AI models to form your Retrieval Augmented Generation (RAG) system. By integrating vector search, it allows the AI to pull precise, relevant information from vCore-based Azure Cosmos DB for MongoDB for enhanced responses. This approach significantly improves the quality and relevance of AI-generated responses utilizing your own data.
