@@ -2,7 +2,7 @@ PostgreSQL is an ACID-compliant database (Atomicity, Consistency, Isolation, and
 
 In this module. you'll learn how PostgreSQL prevents data loss using the write ahead log.
 
-After completing this module, you'll be able to: 
+After completing this module, you'll be able to:
 
 - Describe write ahead logging.
 - Understand replication and logical decoding.

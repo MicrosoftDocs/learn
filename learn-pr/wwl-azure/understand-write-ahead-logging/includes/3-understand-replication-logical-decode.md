@@ -8,7 +8,7 @@ When you configure high availability for Azure Database for PostgreSQL flexible 
 
 Each availability zone consists of one or more data centers. Availability zones have their own power supplies, cooling systems, network infrastructure, etc., making them independent of each other. Three copies of data files and WAL log files are stored on locally redundant storage within each availability zone, providing physical isolation between primary and standby servers. If one availability zone fails, the other two will likely keep working. Availability zones within a region are connected by fast fibre networks with round-trip latency of less than 2 milliseconds.
 
-:::image type="content" source="../media/availability-zones.png" alt-text="Screenshot showing availability zones within a region are connected by fast fibre networks." lightbox="../media/availability-zones.png":::
+[![Screenshot showing availability zones within a region are connected by fast fibre networks]](../media/3-availability-zones.png)
 
 > [!NOTE]
 > Not all regions have availability zones.
@@ -19,7 +19,7 @@ The standby server reports back to the primary server with information such as t
 
 The **max_wal_senders** parameter sets the maximum number of WAL sender processes.
 
-:::image type="content" source="../media/concepts-zone-redundant-high-availability-architecture.png" alt-text="Screenshot showing the concepts zone redundant high availability architecture." lightbox="../media/concepts-zone-redundant-high-availability-architecture.png":::
+[![Screenshot showing the concepts zone redundant high availability architecture]](../media/3-concepts-zone-redundant-high-availability-architecture.png)
 
 The primary and standby servers are monitored, and appropriate actions are taken to remediate issues including triggering a failover to the standby server. The zone redundant high availability statuses are listed below:
 
