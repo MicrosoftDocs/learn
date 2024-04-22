@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/18/2024
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
@@ -46,4 +46,4 @@ quiz:
       explanation: "Incorrect. While sentiment analysis does return scores, these indicate the confidence of the model in assigned a label to associated text."
     - content: "Overall sentiment orientation"
       isCorrect: false
-      explanation: "Incorrect. Overall sentiment orientation refers to the classification of text based on its underlying sentiment. Sentiment analysis labels are used to describe this, but it does not define the labels sentiment analysis provides."
+      explanation: "Incorrect. Overall sentiment orientation refers to the classification of text based on its underlying sentiment. Sentiment analysis labels are used to describe this, but it doesn't define the labels sentiment analysis provides."

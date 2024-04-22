@@ -1,6 +1,6 @@
-In this exercise, you use the `azure_ai` extension in Azure Database for PostgreSQL flexible server to integrate sentiment analysis functionality into your database. You perform sentiment analysis directly within the database layer and explore how to use the extension to gain valuable insights from user-generated reviews. 
+In this exercise, you use the `azure_ai` extension in Azure Database for PostgreSQL - Flexible Server to integrate sentiment analysis functionality into your database. You perform sentiment analysis directly within the database layer and explore how to use the extension to gain valuable insights from user-generated reviews.
 
-> Note
+> [!Note]
 >
 > To complete this exercise, you will need an [Azure subscription](https://azure.microsoft.com/free) and be approved for Azure OpenAI access. If you need Azure OpenAI access, apply at the [Azure OpenAI limited access](/legal/cognitive-services/openai/limited-access) page.
 

@@ -8,7 +8,7 @@ Opinion mining further analyzes sentiment by identifying opinions related to par
 
 While sentiment analysis provides overall sentiment labels (for example, "positive," "neutral," and "negative"), opinion mining drills down to specific aspects. For instance, a customer review for a rental property might include comments like, "The house was great, and the views of the Sound were amazing. However, the primary bedroom bed was quite uncomfortable." Sentiment analysis would label this as mixed sentiment (positive and negative). Opinion mining would extract specific aspects: "house" (positive), "views" (positive), and "primary bedroom bed" (negative).
 
-Opinion mining involves analyzing text to determine the author's sentiment about particular attributes. Whether it's a property review, a social media post, or customer feedback, understanding sentiment about individual aspects from within textual data is crucial for making informed decisions. 
+Opinion mining involves analyzing text to determine the author's sentiment about particular attributes. Whether it's a property review, a social media post, or customer feedback, understanding sentiment about individual aspects from within textual data is crucial for making informed decisions.
 
 ## Applying sentiment analysis
 

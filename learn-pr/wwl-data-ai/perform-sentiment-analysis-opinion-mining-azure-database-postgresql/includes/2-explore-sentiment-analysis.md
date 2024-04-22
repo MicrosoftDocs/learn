@@ -4,7 +4,7 @@ The web and mobile apps for Margie's Travel allow renters to submit reviews deta
 
 ## Analyze Sentiment with the Azure AI Extension
 
-The `azure_ai` extension for Azure Database for PostgreSQL flexible server relies on integration with the Azure AI Language service to perform sentiment analysis. The sentiment analysis capabilities of the extension are accessible using the `analyze_sentiment()` function within the `azure_cognitive` schema.
+The `azure_ai` extension for Azure Database for PostgreSQL - Flexible Server relies on integration with the Azure AI Language service to perform sentiment analysis. The sentiment analysis capabilities of the extension are accessible using the `analyze_sentiment()` function within the `azure_cognitive` schema.
 
 This method has three overloads, allowing you to analyze the sentiment of one record at a time or for multiple records by passing in an array of values to analyze. Using the `language` parameter, you can also indicate in which of the [94 supported languages](/azure/ai-services/language-service/sentiment-opinion-mining/language-support#sentiment-analysis-language-support) the input text is written.
 

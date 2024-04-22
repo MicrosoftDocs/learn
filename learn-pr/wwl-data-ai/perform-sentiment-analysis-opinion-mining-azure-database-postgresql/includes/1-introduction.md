@@ -2,7 +2,7 @@ In natural language processing (NLP), **sentiment analysis** and **opinion minin
 
 ## Scenario: Analyzing the sentiment of user property reviews
 
-You're a developer for Margie's Travel, a company whose web and mobile apps connect travelers looking for lodging accommodations with homeowners and property managers willing to rent out their properties. Azure Database for PostgreSQL flexible server backed these apps. One of the app's features allows renters to submit reviews of the properties they rented. These reviews enable other customers to determine the quality of accommodations and the helpfulness of hosts. You're asked to use Azure AI Services and the `azure_ai` extension to analyze the sentiment of reviews so descriptive labels can be applied as filters within the apps.
+You're a developer for Margie's Travel, a company whose web and mobile apps connect travelers looking for lodging accommodations with homeowners and property managers willing to rent out their properties. Azure Database for PostgreSQL - Flexible Server backs these apps. One of the app's features allows renters to submit reviews of the properties they rented. These reviews enable other customers to determine the quality of accommodations and the helpfulness of hosts. You're asked to use Azure AI Services and the `azure_ai` extension to analyze the sentiment of reviews so descriptive labels can be applied as filters within the apps.
 
 ## Sentiment analysis: Understanding the big picture
 
