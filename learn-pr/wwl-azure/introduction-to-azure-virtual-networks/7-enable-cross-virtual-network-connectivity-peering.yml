@@ -3,8 +3,8 @@ uid: learn.wwl.introduction-to-azure-virtual-networks.enable-cross-vnet-connecti
 title: Enable cross-virtual network connectivity with peering
 metadata:
   title: Enable cross-virtual network connectivity with peering
-  description: "Enable cross-virtual network connectivity with peering"
-  ms.date: 04/19/2024
+  description: "Enable cross-virtual network connectivity with peering."
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
@@ -31,10 +31,10 @@ quiz:
     choices:
     - content: "A peering entry is added to the routing table in the source VNet only."
       isCorrect: false
-      explanation: "That is incorrect, the VNets communicate as peers, so resources in each VNet must be able to communicate with each other. Adding a single peering entry only allows traffic to be routed one way."
+      explanation: "Incorrect, the VNets communicate as peers, so resources in each VNet must be able to communicate with each other. Adding a single peering entry only allows traffic to be routed one way."
     - content: "All traffic on the Vnet must be routed through a Gateway."
       isCorrect: false
-      explanation: "That is incorrect, resources on each VNet can communicate seamlessly with one another."
+      explanation: "Incorrect, resources on each VNet can communicate seamlessly with one another."
     - content: "A peering entry is added to the routing table in each VNet."
       isCorrect: true
-      explanation: "That is correct, VNet Global Peering entries are added to the routing tables in each VNet to direct traffic to the peered VNet."
+      explanation: "Correct, VNet Global Peering entries are added to the routing tables in each VNet to direct traffic to the peered VNet."
