@@ -1,4 +1,4 @@
-In this module, you'll learn to use scheduled jobs. They're similar to background jobs and run asynchronously in the background. In Windows PowerShell, scheduled jobs are essentially scheduled tasks. They follow all of the same rules for actions, triggers, and other features, and run Windows PowerShell scripts by design.
+In this module, you learn to use scheduled jobs. They're similar to background jobs and run asynchronously in the background. In Windows PowerShell, scheduled jobs are essentially scheduled tasks. They follow all of the same rules for actions, triggers, and other features, and run Windows PowerShell scripts by design.
 
 ## Learning objectives
 

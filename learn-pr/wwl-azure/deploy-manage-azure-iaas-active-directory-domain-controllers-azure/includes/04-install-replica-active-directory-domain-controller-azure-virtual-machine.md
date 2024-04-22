@@ -1,5 +1,3 @@
-
-
 Having completed the planning process, IT staff at Contoso must be ready to perform one of the following procedures:
 
 - Deploy an additional AD DS domain controller to an Azure VM.

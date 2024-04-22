@@ -4,8 +4,8 @@ title: Exercise - Manage request lifecycle
 metadata:
   title: Exercise - Manage request lifecycle
   description: Use middleware to manage a request lifecycle. Learn how to examine the request for valid credentials before you construct a response.
-  author: GitHubber17
-  ms.author: chnoring
+  author: diberry
+  ms.author: diberry
   ms.date: 02/12/2024
   ms.topic: unit
   ms.custom:

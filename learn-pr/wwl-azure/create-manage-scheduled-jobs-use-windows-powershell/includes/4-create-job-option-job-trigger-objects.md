@@ -33,3 +33,4 @@ For example, the following command creates a trigger that runs on Mondays and Th
 ```powershell
 $trigger = New-JobTrigger -Weekly -DaysOfWeek Monday,Thursday -At '3:00PM'
 ```
+
