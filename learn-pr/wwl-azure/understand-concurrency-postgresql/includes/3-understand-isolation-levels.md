@@ -26,7 +26,6 @@ Azure Database for PostgreSQL has three transaction isolation levels, read commi
 
 How isolation levels affect concurrency conflicts:
 
-
 |Isolation level  |Dirty read  |Non-repeatable read  |Phantom read  |
 |---------|---------|---------|---------|
 |Read uncommitted*     |Possible         |Possible         |Possible         |

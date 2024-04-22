@@ -2,7 +2,7 @@ Most database management systems (DBMS) use locks to enforce concurrency control
 
 For example, Connection A is performing a query that scans all of the rows of a table. At the same time, Connection B is performing a query that updates some of the rows. MVCC allows both of the queries to run at the same time by creating another version of the affected rows. In this way, Connection B can perform the updates without affecting Connection A. This process is achieved by each row version having an **xmin** value for the *visible since* transaction and an **xmax** value for the *visible until* transaction. Using this system, Connection A will ignore any modifications that occurred after the Connection A query started.
 
-:::image type="content" source="../media/2-multi-version-concurrency-control.png" alt-text="Screenshot of Multi-Version Concurrency Control diagram showing a read query reading the original data and a write query updating a snapshot." lightbox="../media/2-multi-version-concurrency-control.png":::
+[![Screenshot of Multi-Version Concurrency Control diagram showing a read query reading the original data and a write query updating a snapshot.]](../media/2-multi-version-concurrency-control.png)
 
 ## Transactions
 
