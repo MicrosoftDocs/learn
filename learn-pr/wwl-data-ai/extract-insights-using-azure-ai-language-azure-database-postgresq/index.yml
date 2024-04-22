@@ -3,7 +3,7 @@ uid: learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresq
 metadata:
   title: Extract insights using Azure AI Language and Azure Database for PostgreSQL
   description: "Extract insights using Azure AI Language and Azure Database for PostgreSQL"
-  ms.date: 04/18/2024
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module
@@ -18,13 +18,13 @@ summary: |
 
   identifiable information recognition and redaction, and using Azure Database
 
-  for PostgreSQL—Flexible Server with Azure AI to access these services.
+  for PostgreSQL - Flexible Server with Azure AI to access these services.
 abstract: |
   -   Examine the concepts of key phrase extraction, entity recognition, and PII (personally identifiable information recognition) recognition.
 
-  -   Understand the capabilities provided by the **azure_ai** extension for PostgreSQL to access Azure AI Language.
+  -   Understand the capabilities provided by the azure_ai extension for PostgreSQL to access Azure AI Language.
 
-  -   Install the **azure_ai**&nbsp;extension in an Azure Database for PostgreSQL - Flexible Server database, and use it to extract key phrases, recognize entities in text, and redact PII.
+  -   Install the azure_ai&nbsp;extension in an Azure Database for PostgreSQL - Flexible Server database, and use it to extract key phrases, recognize entities in text, and redact PII.
 prerequisites: Before starting this module, you should have experience working with PostgreSQL databases and writing SQL queries.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
