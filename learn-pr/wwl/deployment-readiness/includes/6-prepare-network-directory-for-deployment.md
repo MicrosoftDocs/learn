@@ -1,11 +1,10 @@
-
 It’s important to understand the capacity of the network infrastructure when planning a deployment. Without proper planning, a deployment can take longer than anticipated and drastically impact the performance of those using the network during deployment. The deployment method and the number of devices that can be deployed at a given time can be impacted by the available bandwidth and network reliability. This is an important consideration for organizations with multiple locations and wide area network (WAN) links.
 
 When deploying an operating system or image, a primary consideration is how to deploy a large amount of data with the least amount of impact to the network. This is typically done by ensuring clients are downloading the data from the closest possible location and managing how much bandwidth is being consumed.
 
 #### Delivery Optimization
 
-Windows updates, upgrades, and applications can contain packages with large files. Downloading and distributing updates can consume quite a bit of network resources on the devices receiving them. You can use Delivery Optimization to reduce bandwidth consumption by sharing the work of downloading these packages among multiple devices in your deployment. Delivery Optimization can accomplish this because it's a self-organizing distributed cache that allows clients to download those packages from alternate sources (such as other peers on the network) in addition to the traditional Internet-based servers. You can use Delivery Optimization with Windows Update, Windows Server Update Services (WSUS), Windows Update for Business, or Endpoint Configuration Manager (when installation of Express Updates is enabled).
+Windows updates, upgrades, and applications can contain packages with large files. Downloading and distributing updates can consume quite a bit of network resources on the devices receiving them. You can use Delivery Optimization to reduce bandwidth consumption by sharing the work of downloading these packages among multiple devices in your deployment. Delivery Optimization can accomplish this because it's a self-organizing distributed cache that allows clients to download those packages from alternate sources (such as other peers on the network) in addition to the traditional Internet-based servers. You can use Delivery Optimization with Windows Update, Windows Server Update Services (WSUS), Windows Update for Business, or Microsoft Configuration Manager (when installation of Express Updates is enabled).
 
 Delivery Optimization is a cloud-managed solution; therefore, access to the Delivery Optimization cloud service is a requirement. In addition, devices must have access to the internet to use the peer-to-peer functionality of Delivery Optimization.
 
@@ -13,7 +12,7 @@ By default in Windows 10 or later Enterprise and Education editions, Delivery Op
 
 #### Branch Cache
 
-Branch Cache replicates files from a central location to a local device like a server. Branch Cache lets clients download locally hosted data instead of consuming WAN bandwidth. Windows Server Update Services (WSUS) and Endpoint Configuration Manager can use BranchCache to optimize network bandwidth during update deployment. BranchCache has two operating modes: Distributed Cache mode and Hosted Cache mode.
+Branch Cache replicates files from a central location to a local device like a server. Branch Cache lets clients download locally hosted data instead of consuming WAN bandwidth. Windows Server Update Services (WSUS) and Microsoft Configuration Manager can use BranchCache to optimize network bandwidth during update deployment. BranchCache has two operating modes: Distributed Cache mode and Hosted Cache mode.
 
  -  **Distributed Cache mode.** In Distributed Cache mode, each client contains a cached version of the BranchCache-enabled files it requests and acts as a distributed cache for other clients requesting that same file. This is similar to the Delivery Optimization feature in Windows.
  -  **Hosted Cache mode.** In Hosted Cache mode, designated servers at specific locations act as a cache for files requested by clients in its area. So rather than clients retrieving files from a latent source, the hosted cache server provides the content on its behalf.
@@ -35,8 +34,6 @@ If an administrator enables Windows BranchCache on client and server computers i
 Windows Low Extra Delay Background Transport (LEDBAT) is a network congestion control feature introduced in Windows Server 2019 to help manage background network transfers. Unlike BITS, which restricts traffic, LEDBAT consumes as much bandwidth as possible, but only unused bandwidth.
 
 For example, an administrator might set bandwidth throttling for package downloads to 50%. With BITS alone, the remaining 50% of bandwidth isn't used, even when it’s available. With LEDBAT, an administrator can remove this throttling limitation because LEDBAT will automatically scale back as latency increases.
-
-**Additional information.** For more information on Windows LEDBAT, see the following article on transport features and performance advancements for Windows clients and Windows Servers.
 
 #### Migration data size
 
