@@ -1,4 +1,3 @@
-
 #### The following sections introduce the tools that can be used to mitigate application compatibility issues.
 
 #### Application Compatibility Toolkit
