@@ -14,11 +14,7 @@ To perform a semantic search, first generate the query's embedding vector. Then,
 
 Most relational database use cases don't involve storing *n*-dimensional vectors and computing the numeric distance between them. Efficient semantic search requires **vector database** functionality.
 
-DIAGRAM:
-
-* Show some documents, going through the model, that become vectors in the db
-* Show the query, going through the model, becoming a query embedding vector
-* Show the query vector vs the db vectors, returning similarity
+![A diagram showing a document and a query going through the OpenAI Embeddings API to become embedding vectors. These vectors are then compared using cosine distance.](../media/cosine_distance.png)
 
 ## Embeddings
 

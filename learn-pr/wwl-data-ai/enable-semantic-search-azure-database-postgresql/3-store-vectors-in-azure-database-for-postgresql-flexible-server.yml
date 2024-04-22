@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.enable-semantic-search-azure-database-postgresql.store-vectors-in-azure-database-for-postgresql-flexible-server
-title: XXX
+title: Store vectors in Azure Database for PostgreSQL
 metadata:
-  title: XXX
-  description: "XXX"
-  ms.date: 04/18/2024
+  title: Store vectors in Azure Database for PostgreSQL
+  description: "Store vectors in Azure Database for PostgreSQL"
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit

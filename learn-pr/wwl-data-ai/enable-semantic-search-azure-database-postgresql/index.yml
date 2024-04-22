@@ -3,7 +3,7 @@ uid: learn.wwl.enable-semantic-search-azure-database-postgresql
 metadata:
   title: Enable semantic search in Azure Database for PostgreSQL
   description: "Enable semantic search in Azure Database for PostgreSQL"
-  ms.date: 04/18/2024
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module
@@ -11,7 +11,7 @@ metadata:
   ms.subservice: flexible-server
   ai-usage: human-only
 title: Enable semantic search in Azure Database for PostgreSQL
-summary: This module explores semantic search, embedding vectors, vector similarity, and using Azure Database for PostgreSQL—Flexible Server with PostgreSQL Vector and Azure AI extensions to generate, store, and query rows with semantic search.
+summary: This module explores semantic search, embedding vectors, vector similarity, and using Azure Database for PostgreSQL - Flexible Server with PostgreSQL Vector and Azure AI extensions to generate, store, and query rows with semantic search.
 abstract: |
   -   Examine the concepts of semantic search &amp; embedding vectors.
 

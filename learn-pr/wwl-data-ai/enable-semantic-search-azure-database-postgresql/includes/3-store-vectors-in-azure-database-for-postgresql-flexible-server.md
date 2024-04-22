@@ -1,18 +1,14 @@
 Recall that to run a semantic search, we need embedding vectors stored in a vector database. Azure Database for PostgreSQL Flexible Server can be used as a vector database with the `pgvector` extension.
 
-DIAGRAM:
+![An image of an Azure Database for PostgreSQL flexible server and the extension named "vector". Next to it are 4 stored vectors with n-dimensions and arbitrary numeric values.](../media/store_vectors.png)
 
-- Show an Azure Database for PostgreSQL flexible server
-- Show a `pgvector` extension icon alongside it
-- Show two vector column examples `[1,2,3]`, `[4,5,6]`
+## Introduction to `vector`
 
-## Introduction to `pgvector`
-
-The open-source [`pgvector` extension](https://github.com/pgvector/pgvector) provides vector storage & similarity querying for PostgreSQL. Once enabled, you can create `vector` columns to store embeddings alongside other columns.
+The open-source [`vector` extension](https://github.com/pgvector/pgvector) provides vector storage & similarity querying for PostgreSQL. Once enabled, you can create `vector` columns to store embeddings alongside other columns.
 
 ```sql
 /* Enable the extension. */
-CREATE EXTENSION pgvector;
+CREATE EXTENSION vector;
 
 /* Create a table containing a 3d vector. */
 CREATE TABLE documents (id bigserial PRIMARY KEY, embedding vector(3));
@@ -42,7 +38,7 @@ Once you have some vector data, you can see it alongside normal table data:
 (3 rows)
 ```
 
-The `pgvector` extension supports several languages, such as [.NET](https://github.com/pgvector/pgvector-dotnet), [Python](https://github.com/pgvector/pgvector-python), [Java](https://github.com/pgvector/pgvector-java), and many others. See their [GitHub repositories](https://github.com/orgs/pgvector/repositories?type=all) for more.
+The `vector` extension supports several languages, such as [.NET](https://github.com/pgvector/pgvector-dotnet), [Python](https://github.com/pgvector/pgvector-python), [Java](https://github.com/pgvector/pgvector-java), and many others. See their [GitHub repositories](https://github.com/orgs/pgvector/repositories?type=all) for more.
 
 To insert a document with vector `[1, 2, 3]` using Npgsql in C#, run code like this:
 
@@ -78,7 +74,7 @@ UPDATE documents SET embedding = '[1,1,1]' where id = 1;
 
 ## Perform a cosine distance search
 
-The `pgvector` extension provides the `v1 <=> v2` operator to calculate the cosine distance between vectors `v1` and `v2`. The result is a number between 0 and 2, where 0 means "semantically identical" (no distance) and 2 means "semantically opposite" (maximum distance).
+The `vector` extension provides the `v1 <=> v2` operator to calculate the cosine distance between vectors `v1` and `v2`. The result is a number between 0 and 2, where 0 means "semantically identical" (no distance) and 2 means "semantically opposite" (maximum distance).
 
 You can see the terms cosine **distance** and **similarity**. Recall that cosine similarity is a number between -1 and 1, where -1 means "semantically opposite" and 1 means "semantically identical." Note that `similarity = 1 - distance`.
 
@@ -92,7 +88,7 @@ SELECT '[1,1]' <=> '[-1,-1]';
 
 Consider these vectors:
 
-![A 2D graph showing the vectors (1,1), (1,0), (0,1), and (0,0)](../media/vectors.svg)
+![A 2D graph showing the vectors (1,1), (1,0), (0,1), and (0,0).](../media/vectors.svg)
 
 Their similarities and distances are:
 

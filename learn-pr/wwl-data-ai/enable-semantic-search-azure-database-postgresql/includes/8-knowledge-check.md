@@ -1,1 +1,1 @@
-*I think this gets auto-generated from the yaml*
+Choose the best response for each of the questions. Then select “Check your answers.”

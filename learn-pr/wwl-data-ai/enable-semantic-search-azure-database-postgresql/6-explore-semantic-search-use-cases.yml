@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.enable-semantic-search-azure-database-postgresql.explore-semantic-search-use-cases
-title: XXX
+title: Explore semantic search use cases
 metadata:
-  title: XXX
-  description: "XXX"
-  ms.date: 04/18/2024
+  title: Explore semantic search use cases
+  description: "Explore semantic search use cases"
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit

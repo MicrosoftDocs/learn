@@ -1,4 +1,4 @@
-Now, let's wrap the vector embedding logic and API calls in a function. Hands-on with semantic search. In this exercise, you install the `vector` and `azure_ai` extensions in an Azure Database for PostgreSQL flexible server, and explore the extension's capabilities for integrating [Azure OpenAI](/azure/ai-services/openai/overview) into your database.
+Now, let's wrap the vector embedding logic and API calls in a function. In this exercise, you install the `vector` and `azure_ai` extensions in an Azure Database for PostgreSQL flexible server, and explore the extension's capabilities for integrating [Azure OpenAI](/azure/ai-services/openai/overview) into your database.
 
 > [!Note] 
 >
@@ -6,5 +6,4 @@ Now, let's wrap the vector embedding logic and API calls in a function. Hands-on
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](/Users/davidhaley/dev/solliance/LP_AI_build-ai-apps-azure-database-postgresql/Modules/M01-get-started-generative-ai-azure-database-postgresql/media/launch-exercise.png)](https://github.com/MicrosoftLearning/mslearn-postgresql/blob/main/Instructions/Labs/13-create-search-function-recommendation-system.md)
-
+[![Button to launch exercise.](../media/launch-exercise.png)](https://github.com/MicrosoftLearning/mslearn-postgresql/blob/main/Instructions/Labs/13-create-search-function-recommendation-system.md)

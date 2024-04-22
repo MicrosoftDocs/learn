@@ -6,5 +6,5 @@ The first step to implementing semantic search is to generate and store embeddin
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](/Users/davidhaley/dev/solliance/LP_AI_build-ai-apps-azure-database-postgresql/Modules/M01-get-started-generative-ai-azure-database-postgresql/media/launch-exercise.png)](https://github.com/MicrosoftLearning/mslearn-postgresql/blob/main/Instructions/Labs/13-create-search-function-recommendation-system.md)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://github.com/MicrosoftLearning/mslearn-postgresql/blob/main/Instructions/Labs/12-generate-vector-embeddings-azure-openai.md)
 
