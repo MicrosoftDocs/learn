@@ -9,3 +9,4 @@ After this module, you should be able to:
  -  Implement and use Windows Information Protection
  -  Describe the Encrypting File System (EFS)
  -  Describe BitLocker
+
