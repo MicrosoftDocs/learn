@@ -18,9 +18,9 @@ Accessibility Insights is a tool that helps you identify and fix accessibility i
 
 ## Accessibility Checker
 
-Accessibility Checker is a tool that helps you identify and fix accessibility issues in M365 products, such as Word, Outlook, and PowerPoint
+Accessibility Checker is a tool that helps you identify and fix accessibility issues in Microsoft 365 products, such as Word, Outlook, and PowerPoint
 
-To use Accessibility Checker in M365, follow these steps:
+To use Accessibility Checker in Microsoft 365, follow these steps:
 
 1. Open the document, email, or presentation that you want to check for accessibility issues.
 2. Click on the Review tab and select Check Accessibility from the ribbon. A pane appears with a list of accessibility issues and tips on how to fix them.
