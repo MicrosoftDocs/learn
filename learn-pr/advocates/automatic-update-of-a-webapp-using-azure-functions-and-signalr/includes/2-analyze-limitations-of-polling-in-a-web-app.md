@@ -6,7 +6,6 @@ The application's current architecture reports stock information by fetching _al
 
 The stock price information is stored in an Azure Cosmos DB database. When triggered by an HTTP request, the function `getStocks` returns all rows from the database.
 
-The function named `getStocks` is responsible for reading the stock information from the database. 
 
 :::code language="typescript" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/start/server/src/functions/getStocks.ts" :::
 
