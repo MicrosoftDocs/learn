@@ -10,7 +10,7 @@ You can review and sort the alerts in **Security > Secret scanning** to determin
 - Secret type
 - Provider
 
-:::image type="content" source="../media/../media/secret-scanning-alerts-filter-secret-type.png" alt-text="Screenshot of secret type filter in secret scanning alerts.":::
+:::image type="content" source="../media/secret-scanning-alerts-filter-secret-type.png" alt-text="Screenshot of secret type filter in secret scanning alerts.":::
 
 ## Respond to an alert
 
