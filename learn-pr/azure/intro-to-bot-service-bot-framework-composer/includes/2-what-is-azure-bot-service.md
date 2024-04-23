@@ -2,7 +2,7 @@ You need to begin exploring methods to provide chat support to your company's cu
 
 ## What is a bot and what does it do?
 
-A *bot* is an app that users interact with in a conversational way using text, graphics (such as cards or images), or speech. Bots provide a conversational experience that you can use to automate simple, repetitive tasks that don't necessarily require human interaction. These tasks might include taking a dinner reservation or gathering profile information. When you interact with an account on Microsoft Teams that has automated responses, or when you "chat" with an AI assistant on a retailer's web site, these are examples of bots.
+A *bot* is an app that users interact with in a conversational way using text, graphics (such as cards or images), or speech. Bots provide a conversational experience that you can use to automate simple, repetitive tasks that don't necessarily require human interaction. These tasks might include taking a dinner reservation or gathering profile information. For example, when you interact with an account on Microsoft Teams that has automated responses, or when you "chat" with an AI assistant on a retailer's web site. You're interacting with a bot.
 
 > [!NOTE]
 > A bot interaction can be a quick question and answer, or it can be a sophisticated conversation that intelligently provides access to services.
@@ -31,7 +31,7 @@ Bots created using Azure Bot Service have the following core functionalities:
 
 1. The bot provides a response. This response might include asking the user for additional information or performing tasks on behalf of the user.
 1. The bot performs reasoning on the user's input to determine what the user is asking or saying.
-1. The bot generates responses to communicate to the user what it's doing or what it's done.
+1. The bot generates responses to communicate to the user about its actions.
 
 :::image type="content" source="../media/2-overview.png" alt-text="Diagram of the Azure Bot Service scenario.":::
 
@@ -48,7 +48,7 @@ Use the framework tools to create conversational bots that interact with custome
 > [!NOTE]
 > Bot Framework Composer is available as a desktop application for Windows, macOS, and Linux. It's also available as a web-based component that you can customize and extend.
 
-Composer offers a visual design experience that makes it easy to model sophisticated conversational experiences where context switching, interruption, and more natural and dynamic conversation flows are important.
+Composer offers a visual design experience that makes it easy to model sophisticated conversational experiences. The type of conversational experiences where context switching, interruption, and more natural and dynamic conversation flows are important.
 
 ### Bot Framework SDK
 
@@ -56,7 +56,7 @@ Composer offers a visual design experience that makes it easy to model sophistic
 
 ### Bot Framework Emulator
 
-*Bot Framework Emulator* is a desktop application that emulates a bot client interface so you can interact with your bot for testing, either locally or remotely. Using the Emulator, you can chat with your bot and inspect the messages that your bot sends and receives. The Emulator displays messages as they would appear in a web chat UI and logs JSON requests and responses as you exchange messages with your bot. Before you deploy your bot to the cloud, run it locally and test it using the Emulator. You can test your bot using the Emulator even if you haven't created it yet with Azure Bot Service, or configured it to run on any channels.
+*Bot Framework Emulator* is a desktop application that emulates a bot client interface so you can interact with your bot for testing, either locally or remotely. Using the Emulator, you can chat with your bot and inspect the messages that your bot sends and receives. The Emulator displays messages as they would appear in a web chat UI and logs JSON requests and responses as you exchange messages with your bot. Before you deploy your bot to the cloud, run it locally and test it using the Emulator. You can test your bot using the Emulator even before you create it with Azure Bot Service, or configure it to run on any channels.
 
 ### Other bot-building tools
 
