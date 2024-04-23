@@ -28,8 +28,7 @@ Follow the steps below to enable secret scanning and push protection for an orga
 5. Select the **Enable all** button next to **Push protection**, and select **Enable for eligible repositories**.
    - (Optional) Select **Automatically enable for repositories added to secret scanning**
 
-:::image type="content" source="../media/enable-secret-scanning-org.png" alt-text="Screenshot of confirmation screen for enabling secret scanning with Enable for eligible repositories button highlighted.":::
-![screenshot of enabling secret scanning in organization settings](../media/enable-secret-scanning-org-settings.png.)
+:::image type="content" source="../media/enable-secret-scanning-org-settings.png" alt-text="Screenshot of enabling secret scanning in organization settings.":::
 
 ## Exclude files from being scanned
 
@@ -71,7 +70,6 @@ You will receive an email notification if:
 Repository and organization administrators can give view access to security alerts to people or teams who have write access to the repository under **Settings > Code security and analysis > Access to alerts**:
 
 :::image type="content" source="../media/access-to-alerts.png" alt-text="Screenshot of Access to alerts section with Search for people or teams field highlighted.":::
-![screenshot of access to alerts section in repository settings](../media/access-to-alerts.png.)
 
 If you want to give view access to security alerts to additional people in your team, type their name in the **Search for people of teams** field, select their name in the list of matches that appear, and select **Save changes**.
 
