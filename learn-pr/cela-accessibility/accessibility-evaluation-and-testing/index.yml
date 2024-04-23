@@ -30,9 +30,9 @@ subjects:
 units:
 - learn.cela-accessibility.accessibility-evaluation-and-testing.introduction
 - learn.cela-accessibility.accessibility-evaluation-and-testing.types-of-accessibility-testing
-- learn.cela-accessibility.accessibility-evaluation-and-testing.accessibility-evaluation-and-testing-tools
+- learn.cela-accessibility.accessibility-evaluation-and-testing.accessibility-evaluation-testing-tools
 - learn.cela-accessibility.accessibility-evaluation-and-testing.interpreting-accessibility-testing-results
-- learn.cela-accessibility.accessibility-evaluation-and-testing.collaborate-to-identify-and-address-accessibility-issues
+- learn.cela-accessibility.accessibility-evaluation-and-testing.collaborate-to-identify-address-accessibility-issues
 - learn.cela-accessibility.accessibility-evaluation-and-testing.knowledge-check
 - learn.cela-accessibility.accessibility-evaluation-and-testing.summary
 badge:
