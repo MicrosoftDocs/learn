@@ -54,7 +54,7 @@ Now that the API is deployed to the cloud, as a Tailwind Traders engineer, you n
 
 1. Select **Review + Create**, then select **Create** to create the resource. Wait for the deployment to complete before continuing.
 1. Select **Go to resource** to open the new Azure Static Web App resource.
-1. On the **Overview** page, copy the **URL** value. This is the base URL of the deployed Azure Static Web apps. 
+1. On the **Overview** page, copy the **URL** value. This is the base URL of the deployed static web app. 
 
 ## Add the BACKEND_URL variable to the repository
 
