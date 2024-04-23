@@ -1,4 +1,3 @@
-
 You can let users enroll their personal devices for Intune management (BYOD). Once you've completed the prerequisites and assigned users licenses, they can download the Intune Company Portal app from the App Store, and follow enrollment instructions in the app.
 
 Enroll your iOS device using Company Portal
@@ -12,11 +11,11 @@ Enroll your iOS device using Company Portal
 
 For organizations that buy devices for their users, Intune supports the following iOS company-owned device enrollment methods:
 
- -  Apple's Device Enrollment Program (DEP)
+ -  Apple Business Manager (ABM)
+ -  Apple’s Automated Device Enrollment (ADE)
  -  Apple School Manager
- -  Apple Configurator Setup Assistant enrollment
- -  Apple Configurator direct enrollment
- -  You can also enroll company-owned iOS devices with a device enrollment manager account.
+ -  Apple Configurator
+ -  Intune Device Enrollment Manager (DEM) account
  -  **Device Enrollment Program**. Organizations can purchase iOS devices through Apple's Device Enrollment Program (DEP). DEP lets you deploy an enrollment profile “over the air” to bring devices into management.
 
 The Apple Device Enrollment Program (DEP) is an online service that automates the enrollment and configuration of Apple iOS devices to MDM. Apple DEP is only available for devices that an organization purchases through either Apple or authorized resellers to provide to employees.

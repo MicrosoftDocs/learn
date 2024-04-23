@@ -36380,6 +36380,21 @@
       "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-security-posture/2-implement-azure-security-center.md",
       "redirect_url": "/training/modules/microsoft-defender-cloud-security-posture/2-implement-microsoft-defender-for-cloud",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/plan-azure-kubernetes-service-deployment/10-summary.md",
+      "redirect_url": "/training/modules/plan-azure-kubernetes-service-deployment/9-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/plan-azure-kubernetes-service-deployment/8-monitor-and-log.md",
+      "redirect_url": "/training/modules/plan-azure-kubernetes-service-deployment/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/plan-azure-kubernetes-service-deployment/9-knowledge-check.md",
+      "redirect_url": "/training/modules/plan-azure-kubernetes-service-deployment/8-knowledge-check",
+      "redirect_document_id": false
     }
   ]
 }
