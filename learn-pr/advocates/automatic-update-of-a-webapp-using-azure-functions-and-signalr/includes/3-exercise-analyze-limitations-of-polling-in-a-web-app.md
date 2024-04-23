@@ -2,15 +2,7 @@ Before you change the prototype, you need to run it to validate the assumptions.
 
 ## Create Azure resources
 
-1. In a terminal, sign in to Azure CLI with the following command. 
-
-    ```bash
-    az login
-    ```
-
 1. In a separate browser tab or window, fork the sample repository on GitHub with the following link: [mslearn-advocates.azure-functions-and-signalr](https://github.com/MicrosoftDocs/mslearn-advocates.azure-functions-and-signalr/fork). This allows you to push your changes to your own version of the source code. This is a required step in order to deploy the source code to Azure later in the module.
-
-    If you are familiar with Dev Containers, you can open your fork in Codespaces, or open the Dev Container in your local Visual Studio Code after you've cloned the sample to your local computer. 
 
 1. In the terminal, clone the repository. In the following command, replace `MicrosoftDocs` with your account:
 
@@ -37,7 +29,7 @@ Before you change the prototype, you need to run it to validate the assumptions.
     View the subscriptions.
 
     ```bash
-    az account list -o table
+    az account list --output json | jq -r '.[] | .name' | sort
     ```
 
     To set the default subscription, replace `YOUR-SUBSCRIPTION-ID` with a subscription ID from the previous Azure CLI output.
@@ -51,7 +43,7 @@ Before you change the prototype, you need to run it to validate the assumptions.
 1. Create the Azure resources and upload the sample data to the database.
 
     ```bash
-    npm start
+    npm start -- <YOUR-SUBSCRIPTION-NAME>
     ```
 
 1. Copy the required information, you'll need these to run the prototype. 
