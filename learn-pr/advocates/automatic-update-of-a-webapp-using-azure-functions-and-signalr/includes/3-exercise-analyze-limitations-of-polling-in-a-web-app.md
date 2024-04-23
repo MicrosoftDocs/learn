@@ -40,11 +40,13 @@ Before you change the prototype, you need to run it to validate the assumptions.
 
     This default subscription is used to create the Azure resources.
 
-1. Create the Azure resources and upload the sample data to the database.
+1. Create the Azure resources and upload the sample data to the database. The process may take a few minutes to complete.
 
     ```bash
-    npm start -- <YOUR-SUBSCRIPTION-NAME>
+    bash create-start-resources.sh "<YOUR-SUBSCRIPTION-NAME>"
     ```
+
+    Make sure you wrap the name in double quotes.
 
 1. Copy the required information, you'll need these to run the prototype. 
 
@@ -52,7 +54,13 @@ Before you change the prototype, you need to run it to validate the assumptions.
     |--|--|
     |Azure Cosmos DB|Referred to as COSMOSDB_CONNECTION_STRING|
     |Azure Storage|Referred to as STORAGE_CONNECTION_STRING|
-    |Resource Group|Referred to as RESOURCE_GROUP_NAME. Default is `stock-prototype`.|
+    |Resource Group|Referred to as RESOURCE_GROUP_NAME.|
+
+1. Use a Node.js script to upload sample data into the database with the following command.
+
+    ```bash
+    npm start
+    ```
 
 1. In the terminal, navigate to the **root** folder.
 
