@@ -5,7 +5,7 @@ As an engineer with Tailwind Traders, you've learned your company is planning to
 
 The server prototype has 2 functions:
 
-|Function|Trigger|Description|
+|Function name|Trigger type|Description|
 |--|--|--|
 |**getStocks**|Cosmos DB|The server is responsible for reading all data from the stocks table in the database and returning that data in an HTTP response whenever the client requests it.|
 |**setPrice**|Timer|A function to change the data in the database runs on a timer trigger. This simulates receiving changes from a backend system.|
