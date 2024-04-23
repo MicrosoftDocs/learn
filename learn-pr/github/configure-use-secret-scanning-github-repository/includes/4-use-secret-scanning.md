@@ -19,7 +19,7 @@ Once a secret has been committed into a repository, you should consider the secr
 - For a compromised GitHub personal access token, delete the compromised token, create a new token, and update any services that use the old token.
 - For all other secrets, first verify that the secret committed to GitHub is valid. If so, create a new secret, update any services that use the old secret, and then delete the old secret.
 
-Once you have taken the appropriate actions for the secret, you can resolve the alert by clicking it in the **Secret scanning alerts** list, and choosing a reason for resolving it in the **Close as** drop-down:
+Once you have taken the appropriate actions for the secret, you can resolve the alert by selecting it in the **Secret scanning alerts** list, and choosing a reason for resolving it in the **Close as** drop-down:
 
 :::image type="content" source="../media/mark-alert-as.png" alt-text="Screenshot of an alert with Mark as drop-down displayed.":::
 ![screenshot of secret scanning alert with close reason drop-down](../media/alert-close-reason.png.)
@@ -39,7 +39,7 @@ The following sections cover how to create custom patterns for organizations and
 Follow the steps below to create a custom pattern for a private repository:
 
 1. In your repository, navigate to **Settings > Code security and analysis**.
-2. Under **Secret scanning > Custom patterns**, click **New pattern**.
+2. Under **Secret scanning > Custom patterns**, select **New pattern**.
 3. Provide the following details for your custom pattern:
     - The name of the pattern
     - The pattern of the secret specified as Hyperscan regex
@@ -49,30 +49,30 @@ Follow the steps below to create a custom pattern for a private repository:
 :::image type="content" source="../media/create-custom-pattern.png" alt-text="Screenshot of New custom pattern screen.":::
 ![screenshot of creating a new custom pattern for octocat token](../media/new-custom-pattern-octocat.png)
 
-4. When you're ready to test your new custom pattern, to identify matches in the repository without creating alerts, click **Save and dry run**.
+4. When you're ready to test your new custom pattern, to identify matches in the repository without creating alerts, select **Save and dry run**.
 5. When the dry run finishes, you'll see a sample of results (up to 1000). Review the results and identify any false positive results.
-6. Edit the new custom pattern to fix any problems with the results, then, to test your changes, click **Save and dry run**.
-7. When you're satisfied with your new custom pattern, click **Publish pattern**.
+6. Edit the new custom pattern to fix any problems with the results, then, to test your changes, select **Save and dry run**.
+7. When you're satisfied with your new custom pattern, select **Publish pattern**.
 
 ### For an organization
 
 Follow the steps below to create a custom pattern for an organization:
 
 1. In your organization, navigate to **Settings > Code security and analysis**.
-2. Under **Secret scanning > Custom patterns**, click **New pattern**.
+2. Under **Secret scanning > Custom patterns**, select **New pattern**.
 3. Provide the following details for your custom pattern:
     - The name of the pattern
     - The pattern of the secret specified as Hyperscan regex
     - (Optional) **More options** provide other surrounding content or additional match requirements for the secret format
     - A sample test string to make sure your configuration is matching the patterns you expect
-4. When you're ready to test your new custom pattern, to identify matches in the repository without creating alerts, click **Save and dry run**.
+4. When you're ready to test your new custom pattern, to identify matches in the repository without creating alerts, select **Save and dry run**.
 5. Select the repositories where you want to perform the dry run.
     - To perform the dry run across the entire organization, select **All repositories in the organization**.
     - To specify the repositories where you want to perform the dry run, select **Selected repositories**, then search for and select up to 10 repositories.
 
 ![screenshot of options to select repositories to perform the dry run](../media/repos-to-dry-run.png)
 
-6. When you're ready to test your new custom pattern, click **Run**.
+6. When you're ready to test your new custom pattern, select **Run**.
 7. When the dry run finishes, you'll see a sample of results (up to 1000). Review the results and identify any false positive results.
-8. Edit the new custom pattern to fix any problems with the results, then, to test your changes, click **Save and dry run**.
-9. When you're satisfied with your new custom pattern, click **Publish pattern**.
+8. Edit the new custom pattern to fix any problems with the results, then, to test your changes, select **Save and dry run**.
+9. When you're satisfied with your new custom pattern, select **Publish pattern**.
