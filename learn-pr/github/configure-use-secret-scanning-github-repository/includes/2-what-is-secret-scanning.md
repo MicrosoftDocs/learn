@@ -13,7 +13,7 @@ Secret scanning automatically scans your entire Git history on all branches pres
 When a secret with a known pattern is committed into a private or public repository in your project, secret scanning sends a notification to all repository administrators about the commit that contains the secret. Repository administrators can then view the list of all detected secrets in the **Security** tab of the repository.
 
 :::image type="content" source="../media/detected-secrets-overview.png" alt-text="Screenshot of secrets detected by secret scanning.":::
-![screenshot of secret scanning alerts](../media/secret-scanning-alerts.png)
+![screenshot of secret scanning alerts](../media/secret-scanning-alerts.png.)
 
 GitHub will also notify the service provider who issued the secret if they are partnered with GitHub. The service provider can then take any appropriate action like revoking the secret, issuing a new secret, or reaching out to you directly depending on the associated risks to you or them.
 
