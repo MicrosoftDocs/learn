@@ -1,6 +1,6 @@
-In this module, you've learned about the client/server architecture of PostgreSQL. You've learned about the different options for Azure Database for PostgreSQL as a platform as a service, including when you might use each option. You've learned about the important server parameters defining memory utilization.
+In this module, you learned about the client/server architecture of PostgreSQL. You've learned about the different options for Azure Database for PostgreSQL as a platform as a service, including when you might use each option. You learned about the important server parameters defining memory utilization.
 
-Now that you've completed this module, you're able to:
+Now that you completed this module, you're able to:
 
 - Describe Azure Database for PostgreSQL.
 - Explore PostgreSQL architecture.
