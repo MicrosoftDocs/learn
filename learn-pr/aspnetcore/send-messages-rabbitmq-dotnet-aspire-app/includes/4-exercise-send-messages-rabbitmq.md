@@ -316,6 +316,8 @@ To receive a message, we must create a component that runs in the background wai
 1. In the **CatalogProcessingJob.cs** class, remove all the default code, and replace it with the following lines:
 
     ```csharp
+	namespace RabbitConsumer;
+	
     using System.Text;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
@@ -324,61 +326,59 @@ To receive a message, we must create a component that runs in the background wai
     using RabbitMQ.Client;
     using RabbitMQ.Client.Events;
 
-    namespace RabbitConsumer
+    public class CatalogProcessingJob : BackgroundService
     {
-        public class CatalogProcessingJob : BackgroundService
+        private readonly ILogger<CatalogProcessingJob> _logger;
+        private readonly IConfiguration _config;
+        private readonly IServiceProvider _serviceProvider;
+        private IConnection? _messageConnection;
+        private IModel? _messageChannel;
+		private EventingBasicConsumer consumer;
+
+        public CatalogProcessingJob(ILogger<CatalogProcessingJob> logger, IConfiguration config, IServiceProvider serviceProvider, IConnection? messageConnection)
         {
-            private readonly ILogger<CatalogProcessingJob> _logger;
-            private readonly IConfiguration _config;
-            private readonly IServiceProvider _serviceProvider;
-            private IConnection? _messageConnection;
-            private IModel? _messageChannel;
+            _logger = logger;
+            _config = config;
+            _serviceProvider = serviceProvider;
+        }
 
-            public CatalogProcessingJob(ILogger<CatalogProcessingJob> logger, IConfiguration config, IServiceProvider serviceProvider, IConnection? messageConnection)
-            {
-                _logger = logger;
-                _config = config;
-                _serviceProvider = serviceProvider;
-            }
+        protected override Task ExecuteAsync(CancellationToken stoppingToken)
+        {
+            string queueName = "catalogEvents";
 
-            protected override Task ExecuteAsync(CancellationToken stoppingToken)
-            {
-                string queueName = "catalogEvents";
+            _messageConnection = _serviceProvider.GetRequiredService<IConnection>();
 
-                _messageConnection = _serviceProvider.GetService<IConnection>();
+            _messageChannel = _messageConnection.CreateModel();
+            _messageChannel.QueueDeclare(queue: queueName,
+                durable: false,
+                exclusive: false,
+                autoDelete: false,
+                arguments: null);
 
-                _messageChannel = _messageConnection!.CreateModel();
-                _messageChannel.QueueDeclare(queue: queueName,
-                    durable: false,
-                    exclusive: false,
-                    autoDelete: false,
-                    arguments: null);
+            consumer = new EventingBasicConsumer(_messageChannel);
+            consumer.Received += ProcessMessageAsync;
 
-                var consumer = new EventingBasicConsumer(_messageChannel);
-                consumer.Received += ProcessMessageAsync;
+            _messageChannel.BasicConsume(queue:  queueName,
+                autoAck: true, 
+                consumer: consumer);
 
-                _messageChannel.BasicConsume(queue:  queueName,
-                    autoAck: true, 
-                    consumer: consumer);
+            return Task.CompletedTask;
+        }
 
-                return Task.CompletedTask;
-            }
+        public override async Task StopAsync(CancellationToken cancellationToken)
+        {
+            await base.StopAsync(cancellationToken);
+            consumer.Received -= ProcessMessageAsync;
+            _messageChannel?.Dispose();
+        }
 
-            public override async Task StopAsync(CancellationToken cancellationToken)
-            {
-                await base.StopAsync(cancellationToken);
-
-                _messageChannel?.Dispose();
-            }
-
-            private void ProcessMessageAsync(object? sender, BasicDeliverEventArgs args)
-            {
+        private void ProcessMessageAsync(object? sender, BasicDeliverEventArgs args)
+        {
             
-                string messagetext = Encoding.UTF8.GetString(args.Body.ToArray());
-                _logger.LogInformation("All products retrieved from the catalog at {now}. Message Text: {text}", DateTime.Now, messagetext);
+            string messagetext = Encoding.UTF8.GetString(args.Body.ToArray());
+            _logger.LogInformation("All products retrieved from the catalog at {now}. Message Text: {text}", DateTime.Now, messagetext);
 
-               var message = args.Body;
-            }
+            var message = args.Body;
         }
     }
     ```
