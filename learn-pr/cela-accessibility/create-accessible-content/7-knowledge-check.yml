@@ -32,7 +32,7 @@ quiz:
     choices:
     - content: "Word"
       isCorrect: false
-      explanation: "Incorrect. Accessibility Checker is available in Word and other Drop down menu tools."
+      explanation: "Incorrect. Accessibility Checker is available in Word and other drop-down menu tools."
     - content: "Excel"
       isCorrect: false
       explanation: "Incorrect. Accessibility Checker is available in Excel and other Microsoft 365 tools."
