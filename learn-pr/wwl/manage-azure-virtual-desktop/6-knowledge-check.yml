@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/22/2024
+  ms.date: 04/23/2024
   author: wwlpublish
   ms.author: rstearman
   ms.topic: unit
@@ -24,7 +24,7 @@ quiz:
       explanation: "Correct. Depth mode fully allocates users on one VM before moving to the next, ensuring optimal performance."
     - content: "Sequential mode load balancing"
       isCorrect: false
-      explanation: "Incorrect. There is no such thing as Sequential mode load balancing in Azure Virtual Desktop."
+      explanation: "Incorrect. There's no such thing as Sequential mode load balancing in Azure Virtual Desktop."
   - content: "A team needs to establish a multi-session Windows 11 environment that offers a comprehensive Windows experience with scalability. They also need to deploy Microsoft 365 Apps for enterprise and optimize them for multi-user virtual scenarios. Which service should they use?"
     choices:
     - content: "Azure Virtual Desktop"
@@ -43,10 +43,10 @@ quiz:
       explanation: "Correct. After setting up the host pool, session host VM, workspace, and application group, the next step is to assign users to the application group."
     - content: "They should create another session host virtual machine."
       isCorrect: false
-      explanation: "Incorrect. Creating another session host virtual machine is not required unless more resources are needed."
+      explanation: "Incorrect. Creating another session host virtual machine isn't required unless more resources are needed."
     - content: "They should delete and recreate the host pool."
       isCorrect: false
-      explanation: "Incorrect. Deleting and recreating the host pool is not necessary once it has been properly set up."
+      explanation: "Incorrect. Deleting and recreating the host pool isn't necessary once it has been properly set up."
   - content: "A system administrator needs to retrieve the object ID of a host pool in Azure Virtual Desktop. Which command should they use?"
     choices:
     - content: "Get-AzWvdWorkspace -Name <WorkspaceName> -ResourceGroupName <ResourceGroupName>).ObjectID"
