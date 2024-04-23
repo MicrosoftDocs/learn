@@ -8,9 +8,9 @@ It's common for company founders to view investor pitches as an opportunity to g
 
 But this scenario rarely plays out. Most of the time, a pitch is just the start of a conversation. By getting people interested in what you're doing, you're encouraging them to connect with you afterward to find out more.
 
-If you're pitching at a public event, such as an accelerator demo day, the purpose of your pitch is to act as a short teaser that gives your audience some small nuggets of information and makes them want to know more.
+If you give your pitch at a public event, such as an accelerator demo day, the purpose of your pitch is to act as a short teaser that gives your audience some small nuggets of information and makes them want to know more.
 
-If you're pitching an investor such as an angel group or a venture capital fund, it's likely that most of the people in the room know little about your company, and your pitch is the first of many meetings before you actually have money in the bank.
+If you pitch an investor such as an angel group or a venture capital fund, it's likely that most of the people in the room know little about your company, and your pitch is the first of many meetings before you actually have money in the bank.
 
 ## Who's your audience?
 
@@ -49,7 +49,7 @@ Here's an example of a Gaddie Pitch for Canva:
 
 **Well, what we do is** provide simple online tools for anyone to make professional presentations, social media graphics, and more in just a few minutes.
 
-**In fact**, since we launched in 2012, our customers have created over 5 billion designs using Canva.
+**In fact**, since we launched in 2012, our customers have created over five billion designs using Canva.
 
 ### Demo day pitch
 
@@ -67,7 +67,7 @@ Since the beginning of the COVID-19 pandemic, almost all accelerator demo days m
 
 Many accelerators and other startup programs require a short video pitch as part of their application process. These pitches vary in length, but 60 to 90 seconds is typical.
 
-Distilling the essence of your startup to a short video can be challenging, but remember that your objective is to convey briefly why your startup should be accepted into the program ahead of others. Later, you can go into detail about your product, the size of the market, or the backgrounds of your team.
+Distilling the essence of your startup into a short video can be challenging, but remember that your objective is to convey briefly why your startup should be accepted into the program ahead of others. Later, you can go into detail about your product, the size of the market, or the backgrounds of your team.
 
 Accelerators usually invest in the startups they accept so, as in a demo day pitch, it's important to convey in the video pitch that your startup has a shot at building a hugely successful business.
 

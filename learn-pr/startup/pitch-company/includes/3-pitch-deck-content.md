@@ -1,7 +1,5 @@
 There's no single right or wrong pitch deck format to use, although experts generally agree about the topics that should be included in a good investor pitch deck.
 
-The following outline contains a checklist of key topics that most investors want to see covered, along with comments about what should go on each slide. As a business founder, you should feel free to reorder the topics to suit your delivery.
-
 > [!NOTE]
 > Work that you completed earlier feeds directly into what investors are looking for:
 >
@@ -10,9 +8,11 @@ The following outline contains a checklist of key topics that most investors wan
 > - [Experiments to test core assumptions](../../validate-idea/5-experiment-power.yml?azure-portal=true)
 > - [Revenue model selection](../../revenue/2-revenue-models.yml?azure-portal=true#task-evaluate-a-revenue-model)
 
+The following outline contains a checklist of key topics that most investors want to see covered, along with comments about what should go on each slide. As a business founder, you should feel free to reorder the topics to suit your delivery.
+
 ## Investor pitch deck outline
 
-The following outline is a guide to what you might include in your investor pitch deck. Use your own judgment, and be sure to address the points that are most relevant for your startup.
+Use your own judgment, and be sure to address the points that are most relevant for your startup.
 
 ### Company overview
 

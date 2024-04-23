@@ -1,8 +1,8 @@
-In this module, you learn what makes a startup pitch effective.
+In this unit, you learn what makes a startup pitch effective.
 
 ## Attributes of a great startup pitch
 
-By analyzing pitches delivered by large numbers of startups, you can distill them down to several common themes that emerge from the best of them. These themes are covered in the following sections.
+By analyzing pitches delivered by large numbers of startups, you can identify several common themes that emerge from the best of them. These themes are covered in the following sections.
 
 ### Clearly explained
 
@@ -34,7 +34,7 @@ Many great startup pitches contain an element of surprise, some new fact or insi
 
 For example, if your startup is focused on helping nurses prepare hospital operating theaters, you might want to start by telling your audience that in X percent of medical procedures there's at least one missing item of essential equipment, and this simple oversight leads to Y thousand preventable deaths every year. By starting with this surprising revelation, you give your audience a clearer understanding of the seriousness of the problem and, therefore, of the importance of your solution.
 
-### An aha moment
+### An *aha* moment
 
 There's often a point in good startup pitches where an audience realizes that what the company is doing is exciting. You can help them reach this realization by using contrast.
 
