@@ -10,7 +10,7 @@ The stock price information is stored in an Azure Cosmos DB database. When trigg
 :::code language="typescript" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/start/server/src/functions/getStocks.ts" :::
 
 * **Get data**: The first section of code, **cosmosInput**, gets all the items in the `stocks` table, with the query `SELECT * from c`, in the `stocksdb` database in Cosmos DB. 
-* **Return data**: The second section of code, **app.http**, receive that data into the function as an input in `context.extraInputs` then returns it as the response body back to the client. 
+* **Return data**: The second section of code, **app.http**, receives that data into the function as an input in `context.extraInputs` then returns it as the response body back to the client. 
 
 
 ### Client
