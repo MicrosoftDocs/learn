@@ -19,7 +19,7 @@ GitHub will also notify the service provider who issued the secret if they are p
 
 For a list of the service providers and patterns automatically detected by GitHub in public and private repositories, please check out Secret scanning patterns<sup>[1]</sup>.
 
-If you don't see the secrets used in your organization in the alerts, you may be able to create custom patterns for them that will be detected by secret scanning. This module covers custom patterns later on in the "Use secret scanning" unit.
+If you don't see the secrets used in your organization in the alerts, you might be able to create custom patterns for them that will be detected by secret scanning. This module covers custom patterns later on in the "Use secret scanning" unit.
 
 ## What is push protection?
 
