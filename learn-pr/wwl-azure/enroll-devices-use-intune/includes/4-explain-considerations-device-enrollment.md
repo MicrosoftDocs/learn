@@ -1,5 +1,3 @@
-
-
 The preferred method for managing your Windows device, which has built-in mobile device management features in the operating system, is to enroll it as a mobile device with Intune.
 
 You must use device enrollment for devices running any operating system other than Windows, such as those on phones or Macs.
