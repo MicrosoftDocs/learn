@@ -4,7 +4,7 @@ title: Implement virtual network traffic routing
 metadata:
   title: Implement virtual network traffic routing
   description: "Implement virtual network traffic routing"
-  ms.date: 04/18/2024
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
@@ -13,3 +13,28 @@ metadata:
 durationInMinutes: 16
 content: |
   [!include[](includes/9-implement-virtual-network-traffic-routing.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What type of routes enable traffic to override routes that Azure configures?"
+    choices:
+    - content: "User-defined routes (UDR)"
+      isCorrect: true
+      explanation: "Correct, you can create custom user-defined routes in Azure to override Azure's default system routes, or to add additional routes to a subnet's route table."
+    - content: "System routes"
+      isCorrect: false
+      explanation: "Incorrect, Azure automatically creates system routes and assigns the routes to each subnet in a virtual network. You can't create system or remove routes."
+    - content: "Default routes"
+      isCorrect: false
+      explanation: "Incorrect, to enable basic routing functionality, Azure automatically creates default system routes for each subnet within the virtual network."
+  - content: "A VNet is experiencing some routing problems. What would an engineer do to begin to diagnose the problem?"
+    choices:
+    - content: "Configure every resource with a static IP address."
+      isCorrect: false
+      explanation: "Incorrect, this would not provide the solution to the existing problems and would be extremely time consuming."
+    - content: "View the effective routes for each NIC. (UDR)"
+      isCorrect: true
+      explanation: "Correct, you can use Azure portal, Azure CLI, or Azure PowerShell to view the Effective Routes for each NIC. This tells you the routes that the NIC can use to communicate with other resources."
+    - content: "Use forced tunneling to control traffic flow."
+      isCorrect: false
+      explanation: "Incorrect, forced tunneling is used to force all Internet-bound traffic back to your on-premises location via a Site-to-Site VPN tunnel for inspection and auditing. It's not helpful for initial problem diagnosis."
