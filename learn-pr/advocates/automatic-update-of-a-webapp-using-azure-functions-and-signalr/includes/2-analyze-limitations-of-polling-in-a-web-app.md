@@ -32,7 +32,7 @@ The server and client code is relatively straightforward: get all data, display 
 As a Tailwind Traders engineer, you've identified some of the drawbacks of this timer-based polling approach.
 
 * **Unnecessary API requests**: In the timer-based polling prototype, the client application contacts the server whether or not changes exist to the underlying data. 
-* **Due to unchanged data**: Once data is returned from the server, the entire list of stocks is updated on the web page, even if no data has changed. This polling mechanism is an inefficient solution.
+* **Unnecessary page refreshes**: Once data is returned from the server, the entire list of stocks is updated on the web page, even if no data has changed. This polling mechanism is an inefficient solution.
 * **Polling intervals**: Selecting the best polling interval for your scenario is also a challenge. Polling forces you to make a choice between how much each call to the backend costs and how quickly you want your app to respond to new data. Delays often exist between the time that new data becomes available and the time that the app detects it. The following illustration shows the issue.
 
     ![An illustration showing a timeline and a polling trigger checking for new data every five minutes. New data becomes available after seven minutes. The app isn't aware of the new data until the next poll, which occurs at 10 minutes.](../media/polling-example.png)
