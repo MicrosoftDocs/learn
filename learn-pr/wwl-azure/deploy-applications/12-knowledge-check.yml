@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/22/2024
+  ms.date: 04/23/2024
   author: wwlpublish
   ms.author: rstearman
   ms.topic: unit
@@ -40,12 +40,12 @@ quiz:
       explanation: "Incorrect. The 'Required' option isn't supported for devices not enrolled with Intune."
   - content: "An IT admin wants to manage the client apps that their company's workforce uses. They have identified the apps they want to manage and assign, and added them to Intune. What is the next step in the Microsoft Intune app lifecycle?"
     choices:
-    - content: "Retire the apps from service"
+    - content: "Retire the apps from service."
       isCorrect: false
       explanation: "Incorrect. Retiring the apps from service is the final step in the Microsoft Intune app lifecycle, not the next step after adding the apps."
-    - content: "Protect the data in the apps"
+    - content: "Protect the data in the apps."
       isCorrect: false
       explanation: "Incorrect. Protecting the data in the apps is a later step in the Microsoft Intune app lifecycle, not the next step after adding the apps."
-    - content: "Deploy the apps to users and devices"
+    - content: "Deploy the apps to users and devices."
       isCorrect: true
       explanation: "Correct. After adding the apps to Intune, the next step in the Microsoft Intune app lifecycle is to deploy the apps to users and devices."
