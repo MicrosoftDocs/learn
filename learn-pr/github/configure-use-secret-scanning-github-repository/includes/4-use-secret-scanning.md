@@ -10,7 +10,7 @@ You can review and sort the alerts in **Security > Secret scanning** to determin
 - Secret type
 - Provider
 
-![screenshot of secret type filter in secret scanning alerts](../media/secret-scanning-alerts-filter-secret-type.png.)
+:::image type="content" source="../media/../media/secret-scanning-alerts-filter-secret-type.png" alt-text="Screenshot of secret type filter in secret scanning alerts.":::
 
 ## Respond to an alert
 
@@ -21,8 +21,8 @@ Once a secret has been committed into a repository, you should consider the secr
 
 Once you have taken the appropriate actions for the secret, you can resolve the alert by selecting it in the **Secret scanning alerts** list, and choosing a reason for resolving it in the **Close as** drop-down:
 
-:::image type="content" source="../media/mark-alert-as.png" alt-text="Screenshot of an alert with Mark as drop-down displayed.":::
-![screenshot of secret scanning alert with close reason drop-down](../media/alert-close-reason.png.)
+:::image type="content" source="../media/alert-close-reason.png." alt-text="Screenshot of secret scanning alert with close reason drop-down.":::
+
 
 ## Create a custom pattern
 
@@ -46,8 +46,7 @@ Follow the steps below to create a custom pattern for a private repository:
     - (Optional) **More options** provide other surrounding content or additional match requirements for the secret format
     - A sample test string to make sure your configuration is matching the patterns you expect
 
-:::image type="content" source="../media/create-custom-pattern.png" alt-text="Screenshot of New custom pattern screen.":::
-![screenshot of creating a new custom pattern for octocat token](../media/new-custom-pattern-octocat.png)
+:::image type="content" source="../media/new-custom-pattern-octocat.png" alt-text="Screenshot of creating a new custom pattern for octocat token.":::
 
 4. When you're ready to test your new custom pattern, to identify matches in the repository without creating alerts, select **Save and dry run**.
 5. When the dry run finishes, you'll see a sample of results (up to 1000). Review the results and identify any false positive results.
@@ -70,7 +69,7 @@ Follow the steps below to create a custom pattern for an organization:
     - To perform the dry run across the entire organization, select **All repositories in the organization**.
     - To specify the repositories where you want to perform the dry run, select **Selected repositories**, then search for and select up to 10 repositories.
 
-![screenshot of options to select repositories to perform the dry run](../media/repos-to-dry-run.png)
+:::image type="content" source="../media/repos-to-dry-run.png" alt-text="Screenshot of options to select repositories to perform the dry run.":::
 
 6. When you're ready to test your new custom pattern, select **Run**.
 7. When the dry run finishes, you'll see a sample of results (up to 1000). Review the results and identify any false positive results.
