@@ -3,7 +3,7 @@ uid: learn.wwl.enroll-devices-use-intune
 metadata:
   title: Understand Microsoft Entra ID
   description: "Students will learn how to configure and setup Intune to more easily manage Windows, Android, and iOS devices."
-  ms.date: 04/22/2024
+  ms.date: 04/23/2024
   author: wwlpublish
   ms.author: rstearman
   ms.topic: module
