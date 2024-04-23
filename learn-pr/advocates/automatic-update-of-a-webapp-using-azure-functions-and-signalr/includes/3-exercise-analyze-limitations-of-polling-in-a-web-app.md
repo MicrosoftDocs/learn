@@ -77,7 +77,7 @@ Before you change the prototype, you need to run it to validate the assumptions.
     cd start/server && npm install && cd ../..
     ```
 
-1. If the notification asks you to select an Azure functions app for the workspace, select `start/server`. This is the Azure Functions app that you'll use to run the server-side code. 
+1. If the notification asks you to select an Azure functions app for the workspace, select `start/server`. This is the function app that you'll use to run the server-side code. 
 
 1. If you receive a notification about installing the latest Azure Functions Core Tools, select **Install**.
 
