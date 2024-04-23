@@ -12,8 +12,7 @@ Follow the steps below to enable secret scanning and push protection on a privat
 4. Select the **Enable** button next to **Secret scanning**. If you see a **Disable** button, it means that secret scanning was already enabled at organization level.
 5. Select the **Enable** button next to **Push protection**. 
 
-:::image type="content" source="../media/enable-secret-scanning-repo.png" alt-text="Screenshot of GitHub Advanced Security section with Enable button for secret scanning highlighted.":::
-![screenshot of secret scanning enabled in repository settings](../media/enable-secret-scanning-repo-settings.png.)
+:::image type="content" source="../media/enable-secret-scanning-repo-settings.png" alt-text="Screenshot of secret scanning enabled in repository settings.":::
 
 ## Enable secret scanning for an organization
 
