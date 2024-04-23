@@ -106,7 +106,7 @@ By default, function apps don't allow CORS requests. You need to update the func
 
     |Property|Value|
     |--|--|
-    |Allowed origins|The base URL of the deployed Azure Static Web Apps resource. |
+    |Allowed origins|The base URL of the deployed static web app. |
 
 1. Select **Save** to save the CORS settings.
 
