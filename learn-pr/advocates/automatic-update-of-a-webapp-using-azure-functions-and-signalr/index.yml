@@ -20,6 +20,7 @@ abstract: |
 prerequisites: |
   - Knowledge of JavaScript
   - Familiarity with serverless APIs, databases
+  - Installation of Node.js LTS (such as 20) 
   - Installation of Visual Studio Code
   - Installation of Azure CLI
 levels:
