@@ -10,7 +10,7 @@ You can review and sort the alerts in **Security > Secret scanning** to determin
 - Secret type
 - Provider
 
-![screenshot of secret type filter in secret scanning alerts](../media/secret-scanning-alerts-filter-secret-type.png)
+![screenshot of secret type filter in secret scanning alerts](../media/secret-scanning-alerts-filter-secret-type.png.)
 
 ## Respond to an alert
 
@@ -22,7 +22,7 @@ Once a secret has been committed into a repository, you should consider the secr
 Once you have taken the appropriate actions for the secret, you can resolve the alert by clicking it in the **Secret scanning alerts** list, and choosing a reason for resolving it in the **Close as** drop-down:
 
 :::image type="content" source="../media/mark-alert-as.png" alt-text="Screenshot of an alert with Mark as drop-down displayed.":::
-![screenshot of secret scanning alert with close reason drop-down](../media/alert-close-reason.png)
+![screenshot of secret scanning alert with close reason drop-down](../media/alert-close-reason.png.)
 
 ## Create a custom pattern
 
