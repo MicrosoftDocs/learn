@@ -112,7 +112,7 @@ By default, function apps don't allow CORS requests. You need to update the func
 
 ## Test the deployment of the client
 
-1. In a browser, use the URL of the deployed Azure Static Web Apps resource to open the client.
+1. In a browser, use the URL of the deployed static web app to open the client.
 1. Open developer tools to watch the Console to see when the SignalR data for updated stock is received. Remember these aren't HTTP requests, so you won't see them in the Network tab.
 
 Congratulations! You've deployed your stock app improved with SignalR!
