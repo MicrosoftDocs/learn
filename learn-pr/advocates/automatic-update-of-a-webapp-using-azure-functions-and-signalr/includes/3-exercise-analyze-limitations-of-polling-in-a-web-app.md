@@ -37,7 +37,7 @@ Before you change the prototype, you need to run it to validate the assumptions.
     View the subscriptions.
 
     ```bash
-    az account list --table
+    az account list -o table
     ```
 
     To set the default subscription, replace `YOUR-SUBSCRIPTION-ID` with a subscription ID from the previous Azure CLI output.
