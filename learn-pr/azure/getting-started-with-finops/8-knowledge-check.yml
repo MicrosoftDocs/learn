@@ -11,7 +11,6 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/8-knowledge-check.md)]
-content: |
 quiz:
   questions:
   - content: "Organizations that use on-premises infrastructure are likely utilizing which cost model?"

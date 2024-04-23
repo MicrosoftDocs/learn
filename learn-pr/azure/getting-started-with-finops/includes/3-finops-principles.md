@@ -1,4 +1,4 @@
-![Diagram illustrating the north star objectives for Finops principles.](../media/3-north-star-objectives-finops-principles.png)
+[![Diagram illustrating the north star objectives for Finops principles.](../media/3-north-star-objectives-finops-principles-small.png)](../media/3-north-star-objectives-finops-principles.png#lightbox)
 
 The FinOps framework includes six principles that act as north star objectives of the FinOps practice. These principles are:
 
@@ -45,4 +45,4 @@ The FinOps framework includes six principles that act as north star objectives o
 - Agile iterative planning is preferred over static long-term plans.
 - Embrace proactive system design with continuous adjustments in cloud optimization over infrequent reactive cleanups.
 
-For more information, see the [FinOps Principles](https://www.finops.org/framework/principles/) by the [FinOps Foundation](https://www.finops.org/).
+For more information, see the <a target="_blank" href="https://www.finops.org/framework/principles/">FinOps Principles</a> by the <a target="_blank" href="https://www.finops.org/">FinOps Foundation</a>.
