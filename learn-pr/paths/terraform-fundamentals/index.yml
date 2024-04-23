@@ -14,7 +14,7 @@ summary: |
   Treating your infrastructure as code enables you to track changes to your infrastructure requirements and makes your
   deployments more consistent and repeatable.
 
-  Terraform provides a concise syntax and type safety for you Azure infrastrcuture declarations.
+  Terraform provides a concise syntax and type safety for your Azure infrastructure declarations.
 
   Take this learning path to get started with Terraform. In it, you'll:
 
