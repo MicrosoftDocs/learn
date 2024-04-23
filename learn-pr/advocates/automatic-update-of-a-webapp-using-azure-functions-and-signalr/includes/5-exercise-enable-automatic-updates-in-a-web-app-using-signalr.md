@@ -188,4 +188,4 @@ Connect your new function app to the GitHub repository to enable continuous depl
 1. Open the URL in a browser to test the API functions.
 1. Append `/api/getStocks` to the URL in the browser and press **Enter**. You should see a JSON array with stock data.
 
-You've updated the server code to return stocks with SignalR and you've deployed to an function app. Next, you'll update the client to use SignalR to receive updates.
+You've updated the server code to return stocks with SignalR and you've deployed to a function app. Next, you'll update the client to use SignalR to receive updates.

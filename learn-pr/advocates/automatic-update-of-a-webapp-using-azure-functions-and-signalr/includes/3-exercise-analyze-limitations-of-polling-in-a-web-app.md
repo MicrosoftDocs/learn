@@ -154,4 +154,4 @@ BACKEND_URL=http://localhost:7071
 
 1. In both the start-client and start server terminals, stop the applications with <kbd>Ctrl</kbd> + <kbd>C</kbd> or kill the terminal by selecting the trashcan icon.
 
-In this unit, you ran the prototype. While the client does run successfully, it isn't efficient. While each individual client may not notice this with such a small number of stocks, that will change as the number of stocks grows and the number of clients pull from the server . The prototype can be improved. Let's learn how in the next unit.
+In this unit, you ran the prototype. While the client does run successfully, it isn't efficient. While each individual client may not notice this with such a small number of stocks, that will change as the number of stocks grows and the number of clients pull from the server. The prototype can be improved. Let's learn how in the next unit.
