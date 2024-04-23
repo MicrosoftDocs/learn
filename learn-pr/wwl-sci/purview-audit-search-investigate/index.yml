@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.purview-audit-search-investigate
+metadata:
+  title: Search and investigate with Microsoft Purview Audit
+  description: "Search and investigate with Microsoft Purview Audit."
+  ms.date: 04/23/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: purview
+  ai-usage: ai-assisted
+title: Search and investigate with Microsoft Purview Audit
+summary: Learn about how sensitivity labels are used to classify and protect business data while making sure that user productivity and their ability to collaborate aren't hindered.
+abstract: |
+  After completing this module, you'll be able to:
+  - Understand the foundations of sensitivity label integration in Microsoft 365.
+  - Manage sensitivity label use in Office apps for security compliance.
+  - Secure Outlook and Teams meetings with sensitivity labels.
+  - Apply labels to Microsoft 365 Groups, SharePoint, and OneDrive for data protection.
+prerequisites: |
+  Fundamentals knowledge of information governance in Microsoft 365.
+iconUrl: /training/achievements/manage-microsoft-purview-audit-premium.svg
+levels:
+- intermediate
+roles:
+- auditor
+- ip-admin
+- risk-practitioner
+products:
+- microsoft-purview
+- m365
+subjects:
+- information-protection-governance
+units:
+- learn.wwl.apply-manage-sensitivity-labels.introduction
+- learn.wwl.purview-audit-search-investigate.audit-overview
+- learn.wwl.purview-audit-search-investigate.configure-manage-audit
+
+- learn.wwl.apply-manage-sensitivity-labels.protect-meetings-with-sensitivity-labels
+- learn.wwl.apply-manage-sensitivity-labels.apply-sensitivity-labels-to-microsoft-365-services
+- learn.wwl.apply-manage-sensitivity-labels.knowledge-check
+- learn.wwl.apply-manage-sensitivity-labels.summary-resources
+badge:
+  uid: learn.wwl.purview-audit-search-investigate.badge

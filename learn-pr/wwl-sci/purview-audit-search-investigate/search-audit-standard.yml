@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-audit-search-investigate.search-audit-standard
+title: Search and investigate activities with Audit (Standard)
+metadata:
+  title: Search and investigate activities with Audit (Standard)
+  description: "Search and investigate activities with Audit (Standard)"
+  ms.date: 04/23/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/search-audit-standard.md)]
