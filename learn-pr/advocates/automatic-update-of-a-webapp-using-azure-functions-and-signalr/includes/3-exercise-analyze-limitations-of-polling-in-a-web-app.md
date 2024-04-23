@@ -93,7 +93,7 @@ When running locally, the client and server applications need to know where to f
 
 Add the connection strings to the prototype's Azure Functions app. 
 
-1. Create the **./start/server/local.settings.json** file and paste in the following. This file has the configuration settings for the Azure Functions app. 
+1. Create the **./start/server/local.settings.json** file and paste in the following. This file has the configuration settings for the local functions project. 
 
     :::code language="json" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/start/server/sample.local.settings.json" :::
     
