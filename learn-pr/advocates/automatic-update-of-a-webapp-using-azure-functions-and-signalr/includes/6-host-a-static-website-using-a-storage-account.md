@@ -11,7 +11,7 @@ When the web page loads, the client application:
 * Listens for the stock changes from the `/api` connection from the SignalR endpoint. When the event is received, the client updates the stock price in the UI. These updates aren't seen in the network tab of the browser because the connection is persistent. .
 
 
-## Deploy the client to Azure Static Web apps
+## Deploy the client to Azure Static Web Apps
 
 To host the client, we'll use Azure Static Web Apps. Azure Static Web Apps is a service that automatically builds and deploys web apps to Azure from a code repository.
 

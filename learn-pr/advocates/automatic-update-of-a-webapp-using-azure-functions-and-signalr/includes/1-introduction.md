@@ -5,9 +5,9 @@ As an engineer with Tailwind Traders, you've learned your company is planning to
 
 The server prototype has 2 functions:
 
-|Function|Trigger|Description|
+|Function name|Trigger type|Description|
 |--|--|--|
-|**getStocks**|Cosmos DB|The server is responsible for reading all data from the stocks table in the database and returning that data in an HTTP response whenever the client requests it.|
+|**getStocks**|Azure Cosmos DB|The server is responsible for reading all data from the stocks table in the database and returning that data in an HTTP response whenever the client requests it.|
 |**setPrice**|Timer|A function to change the data in the database runs on a timer trigger. This simulates receiving changes from a backend system.|
 
 As a prototype, the intern simulated the stock feed with a timer function, which updates every minute. The client website requests all the stocks from the `/api/getStocks` API endpoint every 5 seconds in an attempt to display near real time data. This client request isn't efficient. Instead of pulling the data from the server, it's more efficient for the server to push any new stock information. 

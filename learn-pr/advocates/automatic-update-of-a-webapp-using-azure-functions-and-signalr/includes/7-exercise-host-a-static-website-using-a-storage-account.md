@@ -28,7 +28,7 @@ Now that the API is deployed to the cloud, as a Tailwind Traders engineer, you n
     ```
 ## Create an Azure Static Web apps resource and deploy client
 
-1. Open the [Azure portal](https://portal.azure.com/#create/Microsoft.FunctionApp) to create a new Azure Static Web app.
+1. Open the [Azure portal](https://portal.azure.com/#create/Microsoft.FunctionApp) to create a new Azure Static Web Apps resource.
 1. Use the following information to complete the resource creation **Basics** tab.
 
     | Name                                   | Value                          |
@@ -54,7 +54,7 @@ Now that the API is deployed to the cloud, as a Tailwind Traders engineer, you n
 
 1. Select **Review + Create**, then select **Create** to create the resource. Wait for the deployment to complete before continuing.
 1. Select **Go to resource** to open the new Azure Static Web App resource.
-1. On the **Overview** page, copy the **URL** value. This is the base URL of the deployed Azure Static Web apps. 
+1. On the **Overview** page, copy the **URL** value. This is the base URL of the deployed static web app. 
 
 ## Add the BACKEND_URL variable to the repository
 
@@ -95,9 +95,9 @@ The workflow needs to have the `BACKEND_URL` environment variable set to the dep
 
 1. Open the **Actions** tab in the GitHub fork repository to watch the deployment. 
 
-## Update the Azure Functions App for CORS
+## Update CORS in the function app
 
-By default, Azure Functions apps doesn't allow CORS requests. You need to update the Azure Functions app to allow requests from the Azure Static Web Apps resource.
+By default, function apps don't allow CORS requests. You need to update the function app to allow requests from the static web app.
 
 1. In the Azure portal, navigate to the Azure Functions app created in unit 5.
 1. In the left-hand menu, select **API -> CORS**.
@@ -106,13 +106,13 @@ By default, Azure Functions apps doesn't allow CORS requests. You need to update
 
     |Property|Value|
     |--|--|
-    |Allowed origins|The base URL of the deployed Azure Static Web Apps resource. |
+    |Allowed origins|The base URL of the deployed static web app. |
 
 1. Select **Save** to save the CORS settings.
 
 ## Test the deployment of the client
 
-1. In a browser, use the URL of the deployed Azure Static Web Apps resource to open the client.
+1. In a browser, use the URL of the deployed static web app to open the client.
 1. Open developer tools to watch the Console to see when the SignalR data for updated stock is received. Remember these aren't HTTP requests, so you won't see them in the Network tab.
 
 Congratulations! You've deployed your stock app improved with SignalR!

@@ -23,6 +23,7 @@ prerequisites: |
   - Installation of Node.js LTS (such as 20) 
   - Installation of Visual Studio Code
   - Installation of Azure CLI
+  - An [Azure subscription](https://azure.microsoft.com/free)
 levels:
 - beginner
 roles:
