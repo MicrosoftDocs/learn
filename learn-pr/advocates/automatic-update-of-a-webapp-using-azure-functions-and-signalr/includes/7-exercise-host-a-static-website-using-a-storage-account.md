@@ -95,7 +95,7 @@ The workflow needs to have the `BACKEND_URL` environment variable set to the dep
 
 1. Open the **Actions** tab in the GitHub fork repository to watch the deployment. 
 
-## Update the Azure Functions App for CORS
+## Update CORS in the function app
 
 By default, Azure Functions apps doesn't allow CORS requests. You need to update the Azure Functions app to allow requests from the Azure Static Web Apps resource.
 
