@@ -25,7 +25,7 @@ You need to create an Azure SignalR resource.
 
 In **./start/server/local.settings.json**, add a variable to the **Values** object named `SIGNALR_CONNECTION_STRING` with the value listed in the terminal and save the file.
 
-## Create function to get SignalR connection information
+## Create the `signalr-open-connection` function
 
 The web client uses the SignalR client SDK to establish a connection to the server. The SDK retrieves the connection via a function named **signalr-open-connection** to connect to the service.
 
@@ -51,7 +51,7 @@ The web client uses the SignalR client SDK to establish a connection to the serv
 
     The SignalR connection information is returned from the function.
 
-## Create function to detect and broadcast database changes
+## Create the `signalr-send-message` function
 
 1. Open the Visual Studio Code command palette by pressing **F1**.
 1. Search for and select the **Azure Functions: Create Function** command.
@@ -88,11 +88,11 @@ The web client uses the SignalR client SDK to establish a connection to the serv
     git push
     ```
 
-## Deploy the API functions
+## Create the `signalr-send-message` function
 
-Deploy the Azure Functions app to Azure. 
+Create a function app and related resources in Azure to which you can publish the new functions code.
 
-1. Open the [Azure portal](https://portal.azure.com/#create/Microsoft.FunctionApp) to create a new Azure Functions app.
+1. Open the [Azure portal](https://portal.azure.com/#create/Microsoft.FunctionApp) to create a new functions app.
 1. Use the following information to complete the resource creation **Basics** tab.
 
     | Name                                   | Value                          |
@@ -107,11 +107,13 @@ Deploy the Azure Functions app to Azure.
     | Hosting | Select **Consumption Plan**.|
 
 1. Don't fill out any other tabs and select **Review + create** then select **Create**. Wait for the deployment to complete before continuing.
-1. Select **Go to resource** to open the new Azure Functions app.
+1. Select **Go to resource** to open the new function app.
 
 ## Configure the GitHub deployment
 
-1. In the Azure portal for the new Azure Function App, select **Deployment Center** from the left-hand menu.
+Connect your new function app to the GitHub repository to enable continuous deployment. In a production environment, you would instead deploy code changes to a staging slot before swapping them into production. 
+
+1. In the Azure portal page for the new function app, select **Deployment Center** from the left-hand menu.
 1. Select **Source** of **GitHub**.
 1. Use the following information to complete the deployment configuration.
 
@@ -126,7 +128,7 @@ Deploy the Azure Functions app to Azure.
     | Identity | Select **Create new**.|
 
 1. Select **Save** at the top of the section to save the settings. This creates a new workflow file in your forked repository.
-1. This deploymen configuration created a GitHub Actions workflow file in the repository. You need to update the workflow file to use the correct package path for the Azure Functions app.
+1. This deployment configuration creates a GitHub Actions workflow file in the repository. You need to update the workflow file to use the correct package path for the function app.
 
 ## Edit GitHub deployment workflow
 
