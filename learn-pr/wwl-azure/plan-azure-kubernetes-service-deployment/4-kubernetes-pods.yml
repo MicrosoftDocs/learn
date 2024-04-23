@@ -4,10 +4,12 @@ title: Azure Kubernetes Service pods
 metadata:
   title: Azure Kubernetes Service pods
   description: "Azure Kubernetes Service pods"
-  ms.date: 10/25/2023
+  ms.date: 04/23/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/4-kubernetes-pods.md)]
