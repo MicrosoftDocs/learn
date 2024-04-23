@@ -13,8 +13,8 @@ Application Guard has been created to target several types of systems:
 
  - **Enterprise desktops:** Domain-joined and organization-managed desktops, with configuration management primarily handled through Microsoft Configuration Manager or Microsoft Intune. Employees typically possess Standard User privileges and utilize a high-bandwidth, wired corporate network.
  - **Enterprise mobile laptops:** Domain-joined and organization-managed laptops, with configuration management primarily conducted through Configuration Manager or Microsoft Intune. Employees typically possess Standard User privileges and use a high-bandwidth, wireless corporate network.
- - **Bring your own device (BYOD) mobile laptops:** Personally-owned laptops that are not domain-joined but managed by your organization via tools like Microsoft Intune. Employees generally have admin privileges on the device and access a high-bandwidth wireless corporate network at work and a comparable personal network at home.
- - **Personal devices:** Personally-owned desktops or mobile laptops that are neither domain-joined nor managed by an organization. Users have admin privileges on the device and utilize a high-bandwidth wireless personal network at home or a comparable public network when outside.
+ - **Bring your own device (BYOD) mobile laptops:** Personally owned laptops that are not domain-joined but managed by your organization via tools like Microsoft Intune. Employees generally have admin privileges on the device and access a high-bandwidth wireless corporate network at work and a comparable personal network at home.
+ - **Personal devices:** Personally owned desktops or mobile laptops that are neither domain-joined nor managed by an organization. Users have admin privileges on the device and utilize a high-bandwidth wireless personal network at home or a comparable public network when outside.
 
 
 ### Configuring Application Guard
