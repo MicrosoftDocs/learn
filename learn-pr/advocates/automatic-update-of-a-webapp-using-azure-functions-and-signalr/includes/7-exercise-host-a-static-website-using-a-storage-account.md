@@ -97,7 +97,7 @@ The workflow needs to have the `BACKEND_URL` environment variable set to the dep
 
 ## Update CORS in the function app
 
-By default, Azure Functions apps doesn't allow CORS requests. You need to update the Azure Functions app to allow requests from the Azure Static Web Apps resource.
+By default, function apps don't allow CORS requests. You need to update the function app to allow requests from the static web app.
 
 1. In the Azure portal, navigate to the Azure Functions app created in unit 5.
 1. In the left-hand menu, select **API -> CORS**.
