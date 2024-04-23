@@ -21,7 +21,7 @@ The HTML page uses a timer to send a request to the server every five seconds to
 
 :::code language="html" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/start/client/index.html" :::
 
-:::code language="html" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/start/client/src/index.js" :::
+:::code language="javascript" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/start/client/src/index.js" :::
 
 Once the `startPoll` method begins polling, the `update` method is called every five seconds. Inside the `update` method, a GET request is sent to the `/api/getStocks` API endpoint and the result is set to `app.stocks`, which updates the UI.
 
