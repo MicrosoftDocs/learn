@@ -32,19 +32,19 @@ quiz:
     choices:
     - content: "Word"
       isCorrect: false
-      explanation: "Incorrect. Accessibility Checker is available in Word and other M365 tools."
+      explanation: "Incorrect. Accessibility Checker is available in Word and other Drop down menu tools."
     - content: "Excel"
       isCorrect: false
-      explanation: "Incorrect. Accessibility Checker is available in Excel and other M365 tools."
+      explanation: "Incorrect. Accessibility Checker is available in Excel and other Microsoft 365 tools."
     - content: "Outlook"
       isCorrect: false
-      explanation: "Incorrect. Accessibility Checker is available in Outlook and other M365 tools."
+      explanation: "Incorrect. Accessibility Checker is available in Outlook and other Microsoft 365 tools."
     - content: "PowerPoint"
       isCorrect: false
-      explanation: "Incorrect. Accessibility Checker is available in PowerPoint and other M365 tools."
+      explanation: "Incorrect. Accessibility Checker is available in PowerPoint and other Microsoft 365 tools."
     - content: "All of the above"
       isCorrect: true
-      explanation: "Correct. Accessibility Checker is available in Word, Excel, Outlook, and PowerPoint, in addition to other M365 products."
+      explanation: "Correct. Accessibility Checker is available in Word, Excel, Outlook, and PowerPoint, in addition to other Microsoft 365 products."
   - content: "Which type of caption can be turned off by the user? "
     choices:
     - content: "Open Captions"
