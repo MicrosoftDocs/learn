@@ -22,6 +22,7 @@ prerequisites: |
   - Familiarity with serverless APIs, databases
   - Installation of Visual Studio Code
   - Installation of Azure CLI
+  - An [Azure subscription](https://azure.microsoft.com/free)
 levels:
 - beginner
 roles:
