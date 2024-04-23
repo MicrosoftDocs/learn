@@ -4,10 +4,12 @@ title: Nodes and node pools for Azure Kubernetes Service
 metadata:
   title: Nodes and node pools for Azure Kubernetes Service
   description: "Nodes and node pools for Azure Kubernetes Service"
-  ms.date: 10/25/2023
+  ms.date: 04/23/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/5-understand-node-pools.md)]
