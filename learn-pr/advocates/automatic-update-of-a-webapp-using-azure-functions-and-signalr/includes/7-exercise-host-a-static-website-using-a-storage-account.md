@@ -28,7 +28,7 @@ Now that the API is deployed to the cloud, as a Tailwind Traders engineer, you n
     ```
 ## Create an Azure Static Web apps resource and deploy client
 
-1. Open the [Azure portal](https://portal.azure.com/#create/Microsoft.FunctionApp) to create a new Azure Static Web app.
+1. Open the [Azure portal](https://portal.azure.com/#create/Microsoft.FunctionApp) to create a new Azure Static Web Apps resource.
 1. Use the following information to complete the resource creation **Basics** tab.
 
     | Name                                   | Value                          |
