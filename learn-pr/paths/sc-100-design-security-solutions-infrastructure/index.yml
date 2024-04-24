@@ -13,7 +13,7 @@ prerequisites: |
   -   Experience with hybrid and cloud implementations.
 summary: |
   You learn how to design for infrastructure security, including specifying requirements for different cloud models, designing solutions for posture management in hybrid and multicloud environments, and securing endpoints.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/sc-100-design-security-solutions-infrastructure.svg
 levels:
 - advanced
 roles:

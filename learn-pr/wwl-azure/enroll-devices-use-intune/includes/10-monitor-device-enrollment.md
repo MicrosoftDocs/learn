@@ -1,5 +1,3 @@
-
-
 As an Intune administrator, you must ensure that managed devices are providing the resources that your users need to do their work, while protecting that data from risk.
 
 The Devices workload gives you insights into the devices you manage, and lets you perform remote tasks on those devices.
@@ -45,5 +43,5 @@ Not all devices will be necessarily listed in the Microsoft Intune admin center,
      -  **Enterprise State Roaming** defines which groups may sync settings and app data across devices.
      -  **Audit Logs** log all activities that generated changes in Microsoft Intune. Audit logs include activities such as create, update, delete, and assign. You can review audit logs for most Intune workloads. Auditing is enabled by default, and it can't be disabled. As there can be many audit events, you can filter them based on several criteria or use Graph API to retrieve up to one year of audit events.
         
-        :::image type="content" source="../media/intune-monitor-enrollment-failures-0d6af6b0.png" alt-text="Screenshot of the Devices, Overview screen.":::
+        :::image type="content" source="../media/intune-monitor-enrollment-failures-0d6af6b0.png" alt-text="Screenshot of the Monitor, Overview screen.":::
         
