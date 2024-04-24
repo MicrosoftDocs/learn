@@ -35,6 +35,7 @@ units:
 - learn.wwl.apply-manage-sensitivity-labels.introduction
 - learn.wwl.purview-audit-search-investigate.audit-overview
 - learn.wwl.purview-audit-search-investigate.configure-manage-audit
+- learn.wwl.purview-audit-search-investigate.search-audit-standard
 
 - learn.wwl.apply-manage-sensitivity-labels.protect-meetings-with-sensitivity-labels
 - learn.wwl.apply-manage-sensitivity-labels.apply-sensitivity-labels-to-microsoft-365-services
