@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/22/2024
+  ms.date: 04/24/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
@@ -30,12 +30,12 @@ quiz:
     - content: "Identifying specific aspects within text and their associated sentiments"
       isCorrect: true
       explanation: "Correct. Opinion mining, or aspect-based sentiment analysis, considers specific aspects or features mentioned in a text. For example, it can determine whether a product review expresses a positive or negative opinion about the battery life, user interface, or customer service."
-    - content: "Analyzing overall sentiment of a document"
+    - content: "Analyzing the overall sentiment of a document"
       isCorrect: false
-      explanation: "Incorrect. Opinion mining goes beyond overall sentiment to analyze opinions related to specific aspects (for example, product features, service quality)."
+      explanation: "Incorrect. Opinion mining goes beyond overall sentiment to analyze opinions related to specific aspects (such as product features and service quality)."
     - content: "Extracting key phrases from text"
       isCorrect: false
-      explanation: "Incorrect. Opinion mining analyzes opinions related to specific aspects (for example, product features, service quality). It isn't used for extracting key phrases."
+      explanation: "Incorrect. Opinion mining analyzes opinions related to specific aspects of the text, such as product features or service quality). It isn't used for extracting key phrases."
   - content: "What does sentiment analysis provide in terms of sentiment labels?"
     choices:
     - content: "Positive, negative, and neutral"
@@ -43,7 +43,7 @@ quiz:
       explanation: "Correct. Sentiment analysis labels text with sentiments like positive, negative, or neutral."
     - content: "High confidence scores"
       isCorrect: false
-      explanation: "Incorrect. While sentiment analysis does return scores, these indicate the confidence of the model in assigned a label to associated text."
+      explanation: "Incorrect. While sentiment analysis returns scores, these indicate the model's confidence in assigning a label to the associated text."
     - content: "Overall sentiment orientation"
       isCorrect: false
-      explanation: "Incorrect. Overall sentiment orientation refers to the classification of text based on its underlying sentiment. Sentiment analysis labels are used to describe this, but it doesn't define the labels sentiment analysis provides."
+      explanation: "Incorrect. Overall sentiment orientation refers to text classification based on underlying sentiment. Sentiment analysis labels are used to describe this, but it doesn't define the labels sentiment analysis provides."
