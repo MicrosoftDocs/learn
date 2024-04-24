@@ -27,6 +27,6 @@ Here are some links to more information on the topics we discussed in this modul
 8. [Defining custom patterns for secret scanning](https://docs.github.com/en/code-security/secret-scanning/defining-custom-patterns-for-secret-scanning)
 9. [Learning about Hyperscan Pattern Support](http://intel.github.io/hyperscan/dev-reference/compilation.html#pattern-support)
 
-### Resource Links
+### Resource links
 
 1. [Secret scanning patterns](https://docs.github.com/en/code-security/secret-scanning/secret-scanning-patterns)
