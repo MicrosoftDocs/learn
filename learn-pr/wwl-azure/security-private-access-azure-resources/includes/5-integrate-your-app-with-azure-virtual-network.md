@@ -211,7 +211,7 @@ The virtual network integration feature has no extra charge for use beyond the A
 The feature is easy to set up, but that doesn't mean your experience is problem free. If you encounter problems accessing your desired endpoint, there are various steps you can take depending on what you are observing. For more information, see [virtual network integration troubleshooting guide](/troubleshoot/azure/app-service/troubleshoot-vnet-integration-apps).
 
  -  Virtual network integration isn't supported for Docker Compose scenarios in App Service.
- -  Access restrictions does not apply to traffic coming through a private endpoint.
+ -  Access restrictions do not apply to traffic coming through a private endpoint.
 
 ## Deleting the App Service plan or app before disconnecting the network integration<br>
 
