@@ -3,7 +3,7 @@ uid: learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql
 metadata:
   title: Translate Text with Azure AI Translator and Azure Database for PostgreSQL
   description: "Translate Text with Azure AI Translator and Azure Database for PostgreSQL"
-  ms.date: 04/22/2024
+  ms.date: 04/24/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module

@@ -4,7 +4,7 @@ title: Knowledge Check
 metadata:
   title: Knowledge Check
   description: "Knowledge Check"
-  ms.date: 04/22/2024
+  ms.date: 04/24/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
@@ -24,7 +24,7 @@ quiz:
       explanation: "Incorrect. The Azure AI Translator service supports more than 100 languages."
     - content: "Over 100."
       isCorrect: true
-      explanation: "Correct. The Azure AI Translator service has support for more than 100 languages for performing text and document translation."
+      explanation: "Correct. The Azure AI Translator service supports more than 100 languages for text and document translation."
   - content: "Which function call allows us to translate text using the Azure AI Translator service in Azure Database for PostgreSQL Flexible Server?"
     choices:
     - content: "`azure_ai.translate_text()`."
@@ -35,12 +35,12 @@ quiz:
       explanation: "Correct. The `translate()` function in the `azure_cognitive` schema allows us to translate text using the Azure AI Translator service."
     - content: "`azure_ai.translate()`."
       isCorrect: false
-      explanation: "Incorrect. There's a `translate()` function in the `azure_ai` extension but it isn't in the `azure_ai` schema."
-  - content: "Which of the following language codes represents Simplified Chinese for the Azure AI Translator service?"
+      explanation: "Incorrect. There's a `translate()` function in the `azure_ai` extension but not in the `azure_ai` schema."
+  - content: "Which language code represents Simplified Chinese for the Azure AI Translator service?"
     choices:
     - content: "zh."
       isCorrect: false
-      explanation: "Incorrect. Because there are multiple Chinese language codes, we need to be more specific."
+      explanation: "Incorrect. You must be more specific because there are multiple Chinese language codes."
     - content: "zh-CN."
       isCorrect: false
       explanation: "Incorrect. There's no zh-CN language code for Azure AI Translator."
@@ -51,8 +51,8 @@ quiz:
     choices:
     - content: "Language and translated text."
       isCorrect: true
-      explanation: "Correct. The `translations` column includes the language code and the translated text for each language we send into the function."
-    - content: "Just translated text."
+      explanation: "Correct. The `translations` column includes the language code and the translated text for each language you send into the function."
+    - content: "Just the translated text."
       isCorrect: false
       explanation: "Incorrect. The `translations` column includes more than just the translated text."
     - content: "Language and original text."
