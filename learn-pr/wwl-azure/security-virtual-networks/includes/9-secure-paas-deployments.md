@@ -51,11 +51,11 @@ Best practice: Don't put credentials and other secrets in source code or GitHub.
 
 Best practice: Protect your VM management interfaces on hybrid PaaS and IaaS services by using a management interface that enables you to remote manage these VMs directly. Detail: Remote management protocols such as SSH, RDP, and PowerShell remoting can be used. In general, we recommend that you don't enable direct remote access to VMs from the internet.<br>
 
-If possible, use alternate approaches like using virtual private networks in an Azure virtual network. If alternative approaches are not available, ensure that you use complex passphrases and two-factor authentication (such as Microsoft Entra multifactor authentication).<br>
+If possible, use alternate approaches like using virtual private networks in an Azure virtual network. If alternative approaches aren't available, ensure that you use complex passphrases and two-factor authentication (such as Microsoft Entra multifactor authentication).<br>
 
 Best practice: Use strong authentication and authorization platforms. Detail: Use federated identities in Microsoft Entra ID instead of custom user stores. When you use federated identities, you take advantage of a platform-based approach and you delegate the management of authorized identities to your partners. A federated identity approach is especially important when employees are terminated and that information needs to be reflected through multiple identity and authorization systems.<br>
 
-Use platform-supplied authentication and authorization mechanisms instead of custom code. The reason is that developing custom authentication code can be error prone. Most of your developers are not security experts and are unlikely to be aware of the subtleties and the latest developments in authentication and authorization. Commercial code (for example, from Microsoft) is often extensively security reviewed.<br>
+Use platform-supplied authentication and authorization mechanisms instead of custom code. The reason is that developing custom authentication code can be error prone. Most of your developers aren't security experts and are unlikely to be aware of the subtleties and the latest developments in authentication and authorization. Commercial code (for example, from Microsoft) is often extensively security reviewed.<br>
 
 Use two-factor authentication. Two-factor authentication is the current standard for authentication and authorization because it avoids the security weaknesses inherent in username and password types of authentication. Access to both the Azure management (portal/remote PowerShell) interfaces and customer-facing services should be designed and configured to use Microsoft Entra multifactor authentication.<br>
 
