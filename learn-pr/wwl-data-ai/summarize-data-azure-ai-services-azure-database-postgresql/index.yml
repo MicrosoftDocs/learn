@@ -3,7 +3,7 @@ uid: learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql
 metadata:
   title: Summarize data with Azure AI Services and Azure database for PostgreSQL
   description: "Summarize data with Azure AI Services and Azure database for PostgreSQL"
-  ms.date: 04/22/2024
+  ms.date: 04/24/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module
@@ -32,8 +32,8 @@ subjects:
 - databases
 units:
 - learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.introduction
-- learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.understand-summarization-techniques
-- learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.explore-prompt-engineering-for-summarization
+- learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.explain-extractive-summarization
+- learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.explore-abstractive-summarization
 - learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.exercise-perform-extractive-and-abstractive-summarization
 - learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.knowledge-check
 - learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.summary
