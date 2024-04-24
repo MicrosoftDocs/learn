@@ -2,7 +2,7 @@
 
 
 1. **Setup**: To start using KQL, you need to have an Azure account and set up Azure Data Explorer.
-1. **Create KQL Queryset**: A KQL queryset is a tool that allows you to execute queries, modify, and display query results from a KQL database. It is used in Microsoft Fabric for real-time analytics.
+1. **Create KQL Queryset**: A KQL queryset is a tool that allows you to execute queries, modify, and display query results from a KQL database. It's used in Microsoft Fabric for real-time analytics.
 1. **KQL Queryset limitations**: 
     1. Each tab in the KQL queryset can be associated with a different KQL database, and lets you save queries for later use or share them with others for data analysis
     1. The KQL Queryset uses the Kusto Query Language (KQL) for creating queries, and also supports many SQL functions 
@@ -45,7 +45,7 @@ However, there are advantages to each and in the case of a KQL database, KQL is 
 
 ## Advantages of T-SQL over KQL
 
-One major disadvantage of using T-SQL over KQL is that it is not the native language of the engine and has to go through a transformer which prevents it from being published to Power BI directly from the Queryset.
+One major disadvantage of using T-SQL over KQL is that it's not the native language of the engine and has to go through a transformer. This language difference prevents it from being published to Power BI directly from the Queryset.
 
   [ ![Screenshot of T - S Q L Query with highlighted element showing prevention of publishing to Power B I. ](../media/tsql-queryset-pbi-build.png) ](../media/tsql-queryset-pbi-build-expanded.png#lightbox)
 
@@ -75,12 +75,12 @@ As mentioned, T-SQL can be run to a limit extent against a Microsoft Fabric KQL 
                    ELSE pickup_boroname
                  END;
     ```
-     generates the following KQL Syntax. This is a powerful feature within the KQL Engine
-
+     generates the following KQL Syntax. This function is a powerful feature within the KQL Engine
+p
     ```kusto
     
     Trips
-    | summarize ['Total Trip Distance']=sum(trip_distance) by groupByExpression1=iff((isnull(pickup_boroname) or (pickup_boroname == "")), "Unidentified", > > ickup_boroname)
+    | summarize ['Total Trip Distance']=sum(trip_distance) by groupByExpression1=iff((isnull(pickup_boroname) or (pickup_boroname == "")), "Unidentified", pickup_boroname)
     | project Borough=groupByExpression1, ['Total Trip Distance']
     
     ```
