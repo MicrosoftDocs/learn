@@ -1,5 +1,3 @@
-
-
 Now it's your opportunity to explore Azure Stream Analytics in a sample solution that aggregates streaming data from a simulated IoT device.
 
 > [!NOTE]
@@ -8,6 +6,7 @@ Now it's your opportunity to explore Azure Stream Analytics in a sample solution
 Launch the exercise and follow the instructions.
 
 [![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/dp900-stream-lab?azure-portal=true)
+
 
 
 

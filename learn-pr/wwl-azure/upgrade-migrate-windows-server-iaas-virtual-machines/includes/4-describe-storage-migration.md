@@ -1,4 +1,5 @@
-
+> [!CAUTION]
+> This article references CentOS, a Linux distribution that is nearing End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
 
 In addition to migrating on-premises VMs, Contoso IT staff are also planning how best to migrate storage. They've asked you to research the Windows Server Migration Service.
 

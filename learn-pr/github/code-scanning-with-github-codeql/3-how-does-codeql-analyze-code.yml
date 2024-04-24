@@ -5,46 +5,10 @@ metadata:
   unitType: learning-content
   title: "How does CodeQL analyze code?" # user input: module title for browser tab and search results
   description: "Understand the three phases of code analysis with CodeQL." # user input: a description for site search and SEO
-  ms.date: 01/24/2023
-  author: hrasheed-msft
-  ms.author: hrasheed
+  ms.date: 04/11/2024
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: unit
 durationInMinutes: 8 # user input: the estimate time to complete the unit
 content: |
     [!include[](includes/3-how-does-codeql-analyze-code.md)]
-quiz:
-  title: How does CodeQL analyze code?
-  questions:
-  - content: "To create a database, CodeQL extracts:"
-    choices:
-    - content: "A single relational representation that contains all of the source files in the database."
-      isCorrect: false
-      explanation: "Incorrect."
-    - content: "A single relational representation of each source file in the codebase."
-      isCorrect: true
-      explanation: "Correct!"
-    - content: "Multiple relational representations for each source file in the database."
-      isCorrect: false
-      explanation: "Incorrect."
-  - content: "How does CodeQL database creation work for compiled languages?"
-    choices:
-    - content: "The extractor runs directly on the source code."
-      isCorrect: false
-      explanation: "For interpreted languages, the extractor runs directly on the source code."
-    - content: "For compiled languages, extraction works by monitoring the normal build process."
-      isCorrect: true
-      explanation: "Correct!"
-    - content: "The extractor can run either directly on the source code, or during the build process, depending on how it's configured."
-      isCorrect: false
-      explanation: "The extractor only runs in one way for compiled languages."
-  - content: "The final step of CodeQL analysis is:"
-    choices:
-    - content: "Interpreting the results"
-      isCorrect: true
-      explanation: "Correct!"
-    - content: "Running CodeQL queries against the database"
-      isCorrect: false
-      explanation: "Running CodeQL queries against the database is the second step of CodeQL analysis."
-    - content: "Creating a CodeQL database"
-      isCorrect: false
-      explanation: "Creating a CodeQL database is the first step of CodeQL analysis."

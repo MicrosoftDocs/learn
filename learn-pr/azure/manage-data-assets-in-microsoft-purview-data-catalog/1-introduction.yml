@@ -4,8 +4,8 @@ title: Introduction
 metadata:
   unitType: introduction
   title: Introduction
-  description: "Introduction to the Microsoft Purview Data Catalog. We'll cover a proof of concept scenario where users have already deployed Microsoft Purview, scanned a source, and are ready to use the Microsoft Purview Data Catalog to manage data assets and create a business glossary."
-  ms.date: 04/27/2023
+  description: "Introduction to the Microsoft Purview Data Catalog. We cover a proof of concept scenario where users have Microsoft Purview deployed, and scanned a source. They're now ready to use the Microsoft Purview Data Catalog to manage data assets and create a business glossary."
+  ms.date: 04/03/2024
   author: whhender
   ms.author: whhender
   ms.topic: unit

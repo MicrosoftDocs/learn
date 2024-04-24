@@ -3143,3 +3143,13 @@ achievements:
   title: Introduction to Personalizer
   summary: Discover the services available on Azure to personalize experiences for your users.
   iconUrl: /training/achievements/intro-to-personalizer.svg
+- uid: learn.wwl.configure-storage-tools.badge
+  type: badge
+  title: Configure Azure Storage with tools
+  summary: Learn how to configure Azure Storage with tools like Azure Storage Explorer and AZCopy.
+  iconUrl: /training/achievements/storage-tools-configure.svg
+- uid: learn.wwl.sc-200-who-hacked-cloud-game.badge
+  type: badge
+  title: Who Hacked cloud game
+  summary: Provide instructions and guidance on playing the SC-200 Who Hacked cloud game.
+  iconUrl: /training/achievements/sc-200-who-hacked-cloud-game.svg
