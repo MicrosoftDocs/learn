@@ -80,7 +80,7 @@ Once the list is created, it's time to add the data. Here, "data" means the deta
 
     :::image type="content" source="../media/column-details.png" alt-text="Screenshot of Creating a Column." lightbox="../media/column-details.png":::
 
-    Repeat the same procedure for rest of the columns in the above list.
+    Repeat the same procedure for rest of the columns in the preceding list.
 
     > [!NOTE]
     > After you create a **SharePoint** list, a default **Title** column is created that you can rename as **Name**.
@@ -297,7 +297,7 @@ Now that we've added the product categories, we'll display the list of products 
 
         :::image type="content" source="../media/configure-gallery-fields.png" alt-text="Screenshot of configuring fields in products page" lightbox="../media/configure-gallery-fields.png":::
 
-    On assigning the above fields, you'll observe data getting reflected in your **Gallery**.
+    On assigning the preceding fields, you'll observe data getting reflected in your **Gallery**.
 
 4. Adjust the size of the **Gallery_products** as required. To add the **ImageLink** to the **Image1** heading, select the **Image** in the gallery and configure the **Image** property on the **Property** tab by adding this line of code:
 
@@ -334,6 +334,6 @@ Now that we've added the product categories, we'll display the list of products 
     > [!TIP]
     > To save your progress, select the **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
 
-After implementing the above steps, here is how your application must look. The application will include an excellent **Splash screen**, a **Home page**, and a product inventory to browse products.
+After implementing the preceding steps, here's how your application must look. The application will include an excellent **Splash screen**, a **Home page**, and a product inventory to browse products.
 
 :::image type="content" source="../media/application-demo-1.gif" alt-text="application demo after connecting to a data source." lightbox="../media/application-demo-1.gif":::
