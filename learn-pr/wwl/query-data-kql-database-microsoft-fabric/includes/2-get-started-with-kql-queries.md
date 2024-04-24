@@ -45,7 +45,7 @@ However, there are advantages to each and in the case of a KQL database, KQL is 
 
 ## Advantages of T-SQL over KQL
 
-One major disadvantage of using T-SQL over KQL is that it's not the native language of the engine and has to go through a transformer. This langugage differrence prevents it from being published to Power BI directly from the Queryset.
+One major disadvantage of using T-SQL over KQL is that it's not the native language of the engine and has to go through a transformer. This language difference prevents it from being published to Power BI directly from the Queryset.
 
   [ ![Screenshot of T - S Q L Query with highlighted element showing prevention of publishing to Power B I. ](../media/tsql-queryset-pbi-build.png) ](../media/tsql-queryset-pbi-build-expanded.png#lightbox)
 
