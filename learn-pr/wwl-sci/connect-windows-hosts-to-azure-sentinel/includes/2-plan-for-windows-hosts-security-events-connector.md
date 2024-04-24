@@ -20,7 +20,7 @@ Benefits:
 - Security improvements
 
 Limitations:
-- The Azure Monitor Agent is released in preview and is supported with the CSPM plan and Microsoft Defender for Servers Plan 2.
+ - None.
 
 Requirements:
 - non-Azure VM's/devices require Azure Arc.
