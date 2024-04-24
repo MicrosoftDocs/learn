@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/22/2024
+  ms.date: 04/24/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
@@ -25,25 +25,25 @@ quiz:
     - content: "A security feature that prevents unauthorized access to the database."
       isCorrect: false
       explanation: "Incorrect. GenAI isn't a security feature; it focuses on content generation."
-  - content: "What is the purpose of the azure_ai extension in Azure Database for PostgreSQL - Flexible Server?"
+  - content: "What is the purpose of the azure_ai extension in Azure Database for PostgreSQL?"
     choices:
     - content: "To enhance database security using Azure AI Services."
       isCorrect: false
       explanation: "Incorrect. While security is essential, the extension's primary purpose isn't related to enhanced security."
-    - content: "To enable large language models (LLMs) and build generative AI applications within the database."
+    - content: "To enable generative AI language models to be integrated directly within the database."
       isCorrect: true
-      explanation: "Correct. The azure_ai extension allows using LLMs and building generative AI applications within the database."
+      explanation: "Correct. The azure_ai extension allows using generative AI language models and building generative AI applications within the database."
     - content: "To optimize query performance for complex workloads."
       isCorrect: false
       explanation: "Incorrect. Query optimization isn't the focus of this extension."
-  - content: "What are the key characteristics of Large Language Models (LLMs)?"
+  - content: "What are the key characteristics of generative AI language models?"
     choices:
     - content: "Immense scale in terms of the number of parameters used."
       isCorrect: true
-      explanation: "Correct. LLMs have immense scale, containing hundreds of millions to trillions of parameters."
+      explanation: "Correct. Generative AI language models have immense scale, containing hundreds of millions to trillions of parameters."
     - content: "Limited vocabulary and simple architecture."
       isCorrect: false
-      explanation: "Incorrect. LLMs have a rich vocabulary and complex architectures."
+      explanation: "Incorrect. Generative AI language models have a rich vocabulary and complex architectures."
     - content: "Primarily designed for image recognition."
       isCorrect: false
-      explanation: "Incorrect. LLMs are primarily focused on natural language understanding and generation, not image recognition."
+      explanation: "Incorrect. Generative AI language models are primarily focused on natural language understanding and generation, not image recognition."

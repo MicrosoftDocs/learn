@@ -1,22 +1,24 @@
-The Azure AI extension is a powerful tool created by the Postgres team at Microsoft that provides seamless integration between your Azure Database for PostgreSQL - Flexible Server database and various Azure AI services. This integration streamlines the development process and enables you to effortlessly incorporate AI features into your applications.
+The [azure_ai extension](/azure/postgresql/flexible-server/generative-ai-azure-overview) is a powerful tool created by the Microsoft Postgres team that provides seamless integration between your Azure Database for PostgreSQL flexible server instance and various Azure AI Services. This integration streamlines the development process and enables you to incorporate AI features into your applications effortlessly.
 
-You can access Azure AI services such as natural language processing, text analytics, and large language models (LLMs) from your SQL queries using a simple function call. This extension means you can use the power of Azure AI to add advanced analytics and insights to your applications without leaving your PostgreSQL database.
+You can access Azure AI Services such as natural language processing, text analytics, and generative AI language models from your SQL queries using a simple function call. This extension allows you to use the power of Azure AI and Machine Learning to add advanced analytics and insights to your applications without leaving your PostgreSQL database.
 
-The Azure AI extension also allows you to build generative AI applications directly within your PostgreSQL database. You can use large language models (LLMs) to create advanced AI applications that generate text, images, and other media directly from your database. The extension makes it easy to integrate Azure OpenAI, the Azure AI Language service, and Azure Machine Learning directly from your database, enabling you to build sophisticated AI applications quickly.
+The extension makes it easy to integrate Azure OpenAI, Azure AI Services, and Azure Machine Learning into your database. Overall, the `azure_ai` extension is a game-changer for developers looking to add generative AI features to their applications. Its rich capabilities and seamless integration with Azure AI and Machine Learning services simplify the development process and enable you to build advanced AI applications directly within your PostgreSQL database.
 
-Overall, the Azure AI extension is a game-changer for developers looking to add AI features to their applications. Its rich capabilities and seamless integration with Azure AI services simplify the development process and enable you to build advanced AI applications directly within your PostgreSQL database.
+## What is the azure_ai extension?
 
-## What is the Azure AI extension?
+The `azure_ai` extension provides a comprehensive suite of tools that can enhance the functionality of a PostgreSQL database by integrating Azure AI and Machine Learning Services. With the `azure_ai` extension, you can seamlessly incorporate generative AI capabilities into your database. This extension enables you to create new content based on existing information. These tools include a collection of schemas, user-defined functions (UDFs), and composite types that can be seamlessly integrated into any PostgreSQL database. When you use the power of Azure AI Services, you can benefit from advanced analytics, machine learning, and other AI-driven capabilities to gain deeper insights and make better decisions. With the `azure_ai` extension, PostgreSQL, you can unlock a whole new level of functionality and performance. The extension provides three primary service integrations:
 
-The `azure_ai` extension provides a comprehensive suite of tools that can enhance the capabilities of a PostgreSQL database by integrating Azure AI Services. These tools include a collection of schemas, user-defined functions (UDFs), and composite types that can be seamlessly integrated into any PostgreSQL database. When you use the power of Azure AI Services, you can benefit from advanced analytics, machine learning, and other AI-driven capabilities to gain deeper insights and make better decisions. With the `azure_ai` extension, PostgreSQL you can unlock a whole new level of functionality and performance.
+### Azure AI Services
 
-1. **Generative AI integration**: With the `azure_ai` extension, you can seamlessly incorporate generative AI capabilities into your database. Whether you're working with text, images, or other data, this extension enables you to create new content based on existing information.
+The extension allows your database to call into various [Azure AI Services](/azure/ai-services/what-are-ai-services) to extract insights from data, such as text summarization, translation, and entity extraction. These services simplify the development process, making integrating AI features into your applications more accessible.
 
-2. **Azure OpenAI and Cognitive Services**: The extension allows your database to call into various Azure AI services, including **Azure OpenAI** and **Azure Cognitive Services**. These services simplify the development process, making integrating AI features into your applications more accessible.
+### Azure OpenAI
 
-3. **Vector embeddings**: By invoking the **Azure OpenAI API**, you can generate vector embeddings and store them directly in your PostgreSQL database. These embeddings enable powerful capabilities like semantic search, recommendations, and anomaly detection.
+The [Azure OpenAI Service](/azure/ai-services/openai/overview) integration allows you to invoke the **Azure OpenAI API** directly from your database to generate vector embeddings. Combined with the `vector` extension, you can store the generated embeddings directly in your PostgreSQL database. These embeddings enable powerful capabilities like semantic search, recommendations, and anomaly detection.
 
-4. **Model inference**: The extension allows you to connect to **Azure Machine Learning** to perform inference, using a trained machine learning model to make predictions or generate outputs based on new, unseen data.
+### Azure Machine Learning
+
+The extension allows you to connect to [Azure Machine Learning](/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2) to perform inference. You can use a trained machine learning model to make predictions or generate outputs based on new, unseen data.
 
 ## Enabling the azure_ai extension
 
@@ -25,9 +27,9 @@ Before you can use the `azure_ai` extension, it must be allowed and installed wi
 1. **Allowlist configuration**: Add the extension to your allowlist by running `SHOW azure.extensions;`.
 2. **Installation**: Connect to your target database and execute the following command to install the extension:
 
-    ```sql
-    CREATE EXTENSION IF NOT EXISTS azure_ai;
-    ```
+  ```sql
+  CREATE EXTENSION IF NOT EXISTS azure_ai;
+  ```
 
 ## Schema creation
 
@@ -46,24 +48,24 @@ The extension creates the `azure_ai.settings` table, which is crucial in configu
 
 1. **Setting values**:
 
-    - The `azure_ai.set_setting()` function allows you to **set** various configuration values for Azure AI services. You can assign values to specific keys using this function.
-    - For example, you can set the **Azure OpenAI endpoint** and provide the corresponding **subscription key** using the following commands:
+   - The `azure_ai.set_setting()` function allows you to **set** various configuration values for Azure AI services. You can assign values to specific keys using this function.
+   - For example, you can set the **Azure OpenAI endpoint** and provide the corresponding **subscription key** using the following commands:
 
-        ```sql
-        SELECT azure_ai.set_setting('azure_openai.endpoint', '{endpoint}');
-        SELECT azure_ai.set_setting('azure_openai.subscription_key', '{api-key}');
-        ```
+    ```sql
+    SELECT azure_ai.set_setting('azure_openai.endpoint', '{endpoint}');
+    SELECT azure_ai.set_setting('azure_openai.subscription_key', '{api-key}');
+    ```
 
-2. **Retrieving settings**:
+1. **Retrieving settings**:
 
-    - The `azure_ai.get_setting()` function lets you **retrieve** the values you previously set using `set_setting()`.
-    - Specify the key of the setting you want to view, and the function returns the associated value.
-    - For instance, to verify the settings written in the configuration table, use:
+   - The `azure_ai.get_setting()` function lets you **retrieve** the values you previously set using `set_setting()`.
+   - Specify the key of the setting you want to view, and the function returns the associated value.
+   - For instance, to verify the settings written in the configuration table, use:
 
-        ```sql
-        SELECT azure_ai.get_setting('azure_openai.endpoint');
-        SELECT azure_ai.get_setting('azure_openai.subscription_key');
-        ```
+    ```sql
+    SELECT azure_ai.get_setting('azure_openai.endpoint');
+    SELECT azure_ai.get_setting('azure_openai.subscription_key');
+    ```
 
 ## Access keys and security
 
@@ -73,7 +75,7 @@ Users who need to manage service keys used by the extension require the `azure_a
 
 ## How does the azure_ai extension work?
 
-Let's get hands-on! Here's a quick taste of how easy it's to use azure_ai with Azure Database for PostgreSQL:
+Here's a quick example of how easy it is to use the `azure_ai` extension within an Azure Database for PostgreSQL flexible server:
 
 - **Generating embeddings**: You can create embeddings by calling a user-defined function (UDF) inline from SQL. For example:
 
@@ -87,4 +89,4 @@ Let's get hands-on! Here's a quick taste of how easy it's to use azure_ai with A
     SELECT a.* FROM azure_cognitive.analyze_sentiment('The GenAI session was awesome', 'en') a;
     ```
 
-- **Additional features**: You can add vector columns to tables, create HNSW (Hierarchical Navigable Small World) indexes, and perform semantic searches—all powered by the `azure_ai` extension.
+- **Additional features**: You can add vector columns to tables, create HNSW (Hierarchical Navigable Small World) indexes, and perform semantic searches - all powered by the `azure_ai` extension.
