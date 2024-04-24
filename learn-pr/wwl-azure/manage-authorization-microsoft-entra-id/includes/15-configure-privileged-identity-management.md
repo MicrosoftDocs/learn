@@ -51,7 +51,7 @@ You assign users the role with the [least privileges necessary to perform their 
 
 ## Type of assignments
 
-There are two types of assignment – **eligible** and **active**. If a user has been made eligible for a role, that means they can activate the role when they need to perform privileged tasks.
+There are two types of assignment – **eligible** and **active**. If a user has been made eligible for a role that means they can activate the role when they need to perform privileged tasks.
 
 You can also set a start and end time for each type of assignment. This addition gives you four possible types of assignments:<br>
 
