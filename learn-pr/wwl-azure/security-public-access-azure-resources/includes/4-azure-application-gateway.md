@@ -34,14 +34,14 @@ Only one public IP address and one private IP address are supported. You choose 
 
 A frontend IP address is associated to a *listener*, which checks for incoming requests on the frontend IP.
 
-You can create private and public listeners with the same port number. However, be aware of any network security group (NSG) associated with the Application Gateway subnet. Depending on your NSG's configuration, you might need an allow-inbound rule with **Destination IP addresses** as your application gateway's public and private frontend IPs. When you use the same port, your application gateway changes the **Destination** of the inbound flow to the frontend IPs of your gateway.<br>
+You can create private and public listeners with the same port number. However, be aware of any network security group (NSG) associated with the Application Gateway subnet. Depending on your NSG's configuration, you might need an allow-inbound rule with Destination IP addresses as your application gateway's public and private frontend IPs. When you use the same port, your application gateway changes the **Destination** of the inbound flow to the frontend IPs of your gateway.<br>
 
 **Inbound rule**:<br>
 
- -  **Source**: According to your requirement<br>
- -  **Destination**: Public and private frontend IPs of your application gateway.
- -  **Destination port**: According to configured listeners
- -  **Protocol**: TCP
+ -  Source: According to your requirement<br>
+ -  Destination: Public and private frontend IPs of your application gateway.
+ -  Destination port: According to configured listeners
+ -  Protocol: TCP
 
 **Outbound rule**: No specific requirement
 
@@ -232,7 +232,7 @@ This capability dynamically sets the *host* header in the request to the host na
 
 This feature helps when the domain name of the back end is different from the DNS name of the application gateway, and the back end relies on a specific host header to resolve to the correct endpoint.
 
-An example case is multi-tenant services as the back end. An app service is a multi-tenant service that uses a shared space with a single IP address. So, an app service can only be accessed through the hostnames that are configured in the custom domain settings.
+An example case is multitenant services as the back end. An app service is a multitenant service that uses a shared space with a single IP address. So, an app service can only be accessed through the hostnames that are configured in the custom domain settings.
 
 By default, the custom domain name is *example.azurewebsites.net*. To access your app service by using an application gateway through a hostname that's not explicitly registered in the app service or through the application gateway's FQDN, you can override the hostname in the original request to the app service's hostname. To do this, enable the **pick host name from backend address setting**.
 
@@ -335,9 +335,13 @@ Match criteria can be specified using the `New-AzApplicationGatewayProbeHealthRe
 
 Azure PowerShell
 
-`$match = New-AzApplicationGatewayProbeHealthResponseMatch -StatusCode 200-399`
+```powershell
+$match = New-AzApplicationGatewayProbeHealthResponseMatch -StatusCode 200-399
+```
 
-`$match = New-AzApplicationGatewayProbeHealthResponseMatch -Body "Healthy"`
+```powershell
+$match = New-AzApplicationGatewayProbeHealthResponseMatch -Body "Healthy"
+```
 
 Match criteria can be attached to probe configuration using a `-Match` operator in PowerShell.
 
