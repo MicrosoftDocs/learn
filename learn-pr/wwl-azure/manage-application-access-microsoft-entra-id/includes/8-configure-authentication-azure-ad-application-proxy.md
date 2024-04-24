@@ -64,7 +64,7 @@ The following are areas for which you should define your organization’s busine
 **Access**
 
  -  Remote users with domain-joined or Microsoft Entra joined devices can access published applications securely with seamless single sign-on (SSO).
- -  Remote users with approved personal devices can securely access published applications provided they are enrolled in MFA and have registered the Microsoft Authenticator app on their mobile phone as an authentication method.
+ -  Remote users with approved personal devices can securely access published applications provided they're enrolled in MFA and have registered the Microsoft Authenticator app on their mobile phone as an authentication method.
 
 **Governance**
 
@@ -76,7 +76,7 @@ The following are areas for which you should define your organization’s busine
 
 **Performance**
 
- -  There is no degradation of application performance compared to accessing application from the internal network.
+ -  There's no degradation of application performance compared to accessing application from the internal network.
 
 **User Experience**
 
@@ -132,8 +132,8 @@ Below are some best practices to follow when publishing an application:
      -  HTTP-Only Cookie: Provides additional security by having application proxy include the HTTPOnly flag in set-cookie HTTP response headers. This setting helps to mitigate exploits such as cross-site scripting (XSS). Leave this set to No for clients/user agents that do require access to the session cookie. For example, RDP/MTSC client connecting to a Remote Desktop Gateway published via application proxy.
      -  Secure Cookie: When a cookie is set with the Secure attribute, the user agent (Client-side app) will only include the cookie in HTTP requests if the request is transmitted over a TLS secured channel. This helps mitigate the risk of a cookie being compromised over clear text channels, so should be enabled.
      -  Persistent Cookie: Allows the application proxy session cookie to persist between browser closures by remaining valid until it either expires or is deleted. Used for scenarios where a rich application such as office accesses a document within a published web application, without the user being re-prompted for authentication. Enable with caution however, as persistent cookies can ultimately leave a service at risk of unauthorized access, if not used in conjunction with other compensating controls. This setting should only be used for older applications that can't share cookies between processes. It's better to update your application to handle sharing cookies between processes instead of using this setting.
- -  **Translate URLs in Headers**: You enable this for scenarios where internal DNS cannot be configured to match the organization’s public namespace(a.k.a Split DNS). Unless your application requires the original host header in the client request, leave this value set to Yes. The alternative is to have the connector use the FQDN in the internal URL for routing of the actual traffic, and the FQDN in the external URL, as the host-header. In most cases this alternative should allow the application to function as normal, when accessed remotely, but your users lose the benefits of having a matching inside & outside URL.
- -  **Translate URLs in Application Body**: Turn on Application Body link translation for an app when you want the links from that app to be translated in responses back to the client. If enabled, this function provides a best effort attempt at translating all internal links that application proxy finds in HTML and CSS responses being returned to clients. It is useful when publishing apps that contain either hard-coded absolute or NetBIOS shortname links in the content, or apps with content that links to other on-premises applications.
+ -  **Translate URLs in Headers**: You enable this for scenarios where internal DNS can't be configured to match the organization’s public namespace(a.k.a Split DNS). Unless your application requires the original host header in the client request, leave this value set to Yes. The alternative is to have the connector use the FQDN in the internal URL for routing of the actual traffic, and the FQDN in the external URL, as the host-header. In most cases this alternative should allow the application to function as normal, when accessed remotely, but your users lose the benefits of having a matching inside & outside URL.
+ -  **Translate URLs in Application Body**: Turn on Application Body link translation for an app when you want the links from that app to be translated in responses back to the client. If enabled, this function provides a best effort attempt at translating all internal links that application proxy finds in HTML and CSS responses being returned to clients. It's useful when publishing apps that contain either hard-coded absolute or NetBIOS shortname links in the content, or apps with content that links to other on-premises applications.
 
 For scenarios where a published app links to other published apps, enable link translation for each application so that you have control over the user experience at the per-app level.
 

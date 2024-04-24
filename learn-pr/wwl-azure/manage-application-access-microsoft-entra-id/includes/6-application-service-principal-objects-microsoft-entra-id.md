@@ -23,7 +23,7 @@ You can use the **App registrations** page in the Microsoft Entra admin center t
 :::image type="content" source="../media/application-registrations-blade-7ec323ae.png" alt-text="Screenshot showing the application registrations page.":::
 
 
-The Microsoft Graph Application entitydefines the schema for an application object's properties.<br>
+The Microsoft Graph Application entity defines the schema for an application object's properties.<br>
 
 ## Service principal object
 
@@ -40,7 +40,7 @@ There are three types of service principal:
 
 3. Legacy - This type of service principal represents a legacy app, which is an app created before app registrations were introduced or an app created through legacy experiences. A legacy service principal can have credentials, service principal names, reply URLs, and other properties that an authorized user can edit, but doesn't have an associated app registration. The service principal can only be used in the tenant where it was created.
 
-The Microsoft Graph ServicePrincipal entitydefines the schema for a service principal object's properties.
+The Microsoft Graph ServicePrincipal entity defines the schema for a service principal object's properties.
 
 You can use the Enterprise applications page in the Microsoft Entra admin center to list and manage the service principals in a tenant. You can see the service principal's permissions, user consented permissions, which users have done that consent, sign in information, and more.
 
