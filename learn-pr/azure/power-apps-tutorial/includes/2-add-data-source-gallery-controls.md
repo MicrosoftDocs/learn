@@ -27,7 +27,7 @@ It's straightforward to demand **metadata**, or information about data (such as 
 In Microsoft Power Apps, users can plan and build a business application using components rather than writing code in a traditional programming language like C#. They can design applications by dragging and dropping elements into a canvas, just as they would design a slide in PowerPoint. Indicating logic and working with data can be achieved through an Excel-like experience. Users can create apps that combine business data from several Microsoft and third-party sources. They're allowed to share the app so that users can run it in a browser or on a mobile device, and embed the app so they can run it in SharePoint, Power BI, or Teams. Here are some of the controls available in Power Apps:
 
 * **Buttons**: Associate with the application by clicking or tapping
-* **Gallery**:Show a list of records that contain different sorts of data
+* **Gallery**: Show a list of records that contain different sorts of data
 * **Drop down**: Shows the first item in a rundown until a chevron is selected
 * **Image**: Show a picture from (for instance) a file or a data source
 * **Camera**: Take photographs and save them in the app or to a data source
