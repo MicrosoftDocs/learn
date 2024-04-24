@@ -1,4 +1,4 @@
-Tailwind Traders has onboarded its machines to Azure Arc-enabled servers, and now wants to onboard those servers to Microsoft Sentinel. In this Unit, you’ll learn how to onboard your Azure Arc-enabled servers to Microsoft Sentinel. First, you will connect the Azure Arc-enabled server to a Log Analytics workspace. Second, you will enable Microsoft Sentinel on this workspace.  
+Tailwind Traders has onboarded its machines to Azure Arc-enabled servers, and now wants to onboard those servers to Microsoft Sentinel. In this Unit, you learn how to onboard your Azure Arc-enabled servers to Microsoft Sentinel. First, you connect the Azure Arc-enabled server to a Log Analytics workspace. Second, you enable Microsoft Sentinel on this workspace.
 
 ## Connect the Azure Arc-enabled server to a Log Analytics Workspace using the Log Analytics Agent or Azure Monitor Agent
 
@@ -12,12 +12,14 @@ For physical and virtual machines, you can install the Log Analytics agent, whic
 1. From your browser, go to the [Azure portal](https://portal.azure.com/).
 1. Search for and select **Microsoft Sentinel**.
 
-    ![Screenshot of Microsoft Sentinel selection in the Azure portal.](../media/azure-portal-search.png)
+    :::image type="content" source="../media/azure-portal-search.png" alt-text="Screenshot of Microsoft Sentinel selection in the Azure portal.":::
 
 1. Select **Add**.
 1. Select the workspace to which the Azure Arc-enabled server is connected. You can run Microsoft Sentinel on more than one workspace, but the data is isolated to a single workspace.  
 
     ![Screenshot of adding Microsoft Sentinel solution to the Log Analytics workspace.](../media/sentinel-add-workspace.png)
+
+    :::image type="content" source="../media/sentinel-add-workspace.png" alt-text="Screenshot that shows how to add Microsoft Sentinel to the Log Analytics workspace.":::
 
 1. Select **Add Microsoft Sentinel**.
 
