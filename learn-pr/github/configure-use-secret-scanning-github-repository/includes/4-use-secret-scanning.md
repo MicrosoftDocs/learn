@@ -21,7 +21,7 @@ Once a secret has been committed into a repository, you should consider the secr
 
 Once you have taken the appropriate actions for the secret, you can resolve the alert by selecting it in the **Secret scanning alerts** list, and choosing a reason for resolving it in the **Close as** drop-down:
 
-:::image type="content" source="../media/alert-close-reason.png." alt-text="Screenshot of secret scanning alert with close reason drop-down.":::
+:::image type="content" source="../media/alert-close-reason.png" alt-text="Screenshot of secret scanning alert with close reason drop-down.":::
 
 
 ## Create a custom pattern
