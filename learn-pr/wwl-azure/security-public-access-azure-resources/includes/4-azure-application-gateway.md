@@ -34,14 +34,14 @@ Only one public IP address and one private IP address are supported. You choose 
 
 A frontend IP address is associated to a *listener*, which checks for incoming requests on the frontend IP.
 
-You can create private and public listeners with the same port number. However, be aware of any network security group (NSG) associated with the Application Gateway subnet. Depending on your NSG's configuration, you might need an allow-inbound rule with **Destination IP addresses** as your application gateway's public and private frontend IPs. When you use the same port, your application gateway changes the **Destination** of the inbound flow to the frontend IPs of your gateway.<br>
+You can create private and public listeners with the same port number. However, be aware of any network security group (NSG) associated with the Application Gateway subnet. Depending on your NSG's configuration, you might need an allow-inbound rule with Destination IP addresses as your application gateway's public and private frontend IPs. When you use the same port, your application gateway changes the **Destination** of the inbound flow to the frontend IPs of your gateway.<br>
 
 **Inbound rule**:<br>
 
- -  **Source**: According to your requirement<br>
- -  **Destination**: Public and private frontend IPs of your application gateway.
- -  **Destination port**: According to configured listeners
- -  **Protocol**: TCP
+ -  Source: According to your requirement<br>
+ -  Destination: Public and private frontend IPs of your application gateway.
+ -  Destination port: According to configured listeners
+ -  Protocol: TCP
 
 **Outbound rule**: No specific requirement
 
@@ -335,9 +335,13 @@ Match criteria can be specified using the `New-AzApplicationGatewayProbeHealthRe
 
 Azure PowerShell
 
-`$match = New-AzApplicationGatewayProbeHealthResponseMatch -StatusCode 200-399`
+```powershell
+$match = New-AzApplicationGatewayProbeHealthResponseMatch -StatusCode 200-399
+```
 
-`$match = New-AzApplicationGatewayProbeHealthResponseMatch -Body "Healthy"`
+```powershell
+$match = New-AzApplicationGatewayProbeHealthResponseMatch -Body "Healthy"
+```
 
 Match criteria can be attached to probe configuration using a `-Match` operator in PowerShell.
 
