@@ -11,7 +11,7 @@ title: Secure Azure services and workloads with Microsoft Defender for Cloud reg
 prerequisites: |
   -   None
 summary: |
-  This learning path guides you in securing Azure services and workloads using Microsoft Cloud Security Benchmark controls in Microsoft Defender for Cloud via the Azure portal.
+  This learning path guides you in securing Azure services and workloads using Microsoft Cloud Security Benchmark controls in Microsoft Defender for Cloud via the Azure portal.&nbsp;
 iconUrl: /training/achievements/secure-azure-services-workloads-defender-cloud.svg
 levels:
 - intermediate
