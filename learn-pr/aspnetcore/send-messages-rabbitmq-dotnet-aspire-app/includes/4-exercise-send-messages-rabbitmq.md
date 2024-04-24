@@ -112,11 +112,8 @@ Let's use `git` to obtain a sample app, which doesn't yet use a message broker:
 1. In the command line, browse to a folder of your choice where you can work with code.
 1. Execute the following command to clone the **Northern Mountains eShop** sample application:
 
-    > [!IMPORTANT]
-    > TODO: Check the following URL when the code is in the right place (it should be a branch off the below repo)
-
     ```dotnetcli
-    git clone https://github.com/MicrosoftDocs/mslearn-aspire-starter
+    git clone -b aspire-rabbitmq  https://github.com/MicrosoftDocs/mslearn-aspire-starter
     ```
 
 ## Create the RabbitMQ container
