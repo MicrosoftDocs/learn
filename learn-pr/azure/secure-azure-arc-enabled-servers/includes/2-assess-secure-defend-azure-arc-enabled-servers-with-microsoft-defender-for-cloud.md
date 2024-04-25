@@ -16,7 +16,7 @@ Defender for Cloud enables you to continuously assess, secure, and defend worklo
 
 Enabling enhanced security extends the capabilities to workloads running in private and other public clouds. Enhanced security provides unified security management and threat protection across your hybrid cloud workloads. Major benefits of enabling enhanced security features with Azure Arc-enabled servers include:
 
-- **Microsoft Defender for Endpoint**: Microsoft Defender for servers is available as an enhanced security feature. Microsoft Defender for servers includes Microsoft Defender for Endpoint for comprehensive endpoint detection and response (EDR).  
+- **Microsoft Defender for Endpoint**: Microsoft Defender for Servers is available as an enhanced security feature. Defender for Servers includes Defender for Endpoint for comprehensive endpoint detection and response (EDR).  
 - **Vulnerability assessment for virtual machines, container registries, and SQL resources**: You can use point-and-click vulnerability assessment solutions to discover, manage, and resolve vulnerabilities. You can view, investigate, and remediate the findings directly from within Defender for Cloud.
 - **Multicloud security**: Connect your accounts from Amazon Web Services (AWS) and Google Cloud Platform (GCP) to protect resources and workloads on those platforms.
 - **Hybrid security**: Get a unified view of security across all your on-premises and cloud workloads. Apply security policies and continuously assess the security of your hybrid cloud workloads to ensure compliance with security standards. Collect, search, and analyze security data from multiple sources, including firewalls and other partner solutions.
@@ -24,7 +24,7 @@ Enabling enhanced security extends the capabilities to workloads running in priv
 
 ## Defend multicloud resources on AWS and GCP
 
-Defender for Cloud can protect resources in other clouds, such as AWS and GCP. You can connect AWS and GCP accounts to Microsoft Defender for Cloud. Multicloud capabilities include:  
+Defender for Cloud can protect resources in other clouds, such as AWS and GCP. You can connect AWS and GCP accounts to Defender for Cloud. Multicloud capabilities include:  
 
 - Detection of security misconfigurations across Azure, GCP, and AWS
 - A single view showing Defender for Cloud recommendations, GCP Security Command Center findings, and AWS Foundational Security Best Practices

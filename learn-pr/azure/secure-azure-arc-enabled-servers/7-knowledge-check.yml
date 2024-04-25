@@ -64,7 +64,7 @@ quiz:
     - content: "Azure Automation"
       explanation: "Incorrect, Azure Automation can be used, but it isn't required to onboard to these Azure services."
       isCorrect: false
-    - content: "Azure Log Analytics Workspace"
+    - content: "Azure Log Analytics workspace"
       explanation: "Correct, the Azure Arc-enabled server must be connected to a Log Analytics workspace to onboard to these Azure services."
       isCorrect: true
     - content: "Azure Function"
