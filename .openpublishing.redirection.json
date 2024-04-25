@@ -32692,11 +32692,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/azure-diagnose-application-startup-errors-with-kudu-console/index.yml",
-      "redirect_url": "https://learn.microsoft.com/en-us/aspnet/core/test/troubleshoot-azure-iis",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/azure/azure-diagnose-application-startup-errors-with-kudu-console/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/aspnet/core/test/troubleshoot-azure-iis",
       "redirect_document_id": false
@@ -32723,6 +32718,11 @@
     },
     {
       "source_path": "learn-pr/azure/azure-diagnose-application-startup-errors-with-kudu-console/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/aspnet/core/test/troubleshoot-azure-iis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-diagnose-application-startup-errors-with-kudu-console/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/aspnet/core/test/troubleshoot-azure-iis",
       "redirect_document_id": false
     },
