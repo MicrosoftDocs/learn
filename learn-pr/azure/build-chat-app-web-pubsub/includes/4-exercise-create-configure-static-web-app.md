@@ -25,7 +25,7 @@ Now that the repository is created, you can create a static web app from the Azu
     ```azurecli
     az staticwebapp create \
         --name my-awps-swa-app \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --source https://github.com/$GITHUB_USER_NAME/awps-swa-sample \
         --location $LOC \
         --branch main \
@@ -95,7 +95,7 @@ You're very close to complete. The last step is to configure Web PubSub to trans
     ```azurecli
     az webpubsub hub create \
       --name $WPS_NAME \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
       --hub-name "sample_swa" \
       --event-handler url-template=https://$STATIC_WEB_APP/api/{event} user-event-pattern="*" \
       --event-handler url-template=https://$STATIC_WEB_APP/api/{event} system-event="connect"
