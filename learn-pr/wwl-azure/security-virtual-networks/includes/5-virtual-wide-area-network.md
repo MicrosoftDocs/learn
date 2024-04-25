@@ -29,7 +29,7 @@ If you're running PowerShell locally, open the PowerShell console with elevated 
 
 Before you can create a virtual wan, you have to create a resource group to host the virtual wan or use an existing resource group. Use one of the following examples.
 
-This example creates a new resource group named **TestRG** in the **East US** location. If you want to use an existing resource group instead, you can modify the `$resourceGroup = Get-AzResourceGroup -ResourceGroupName "NameofResourceGroup"`command, and then complete the steps in this exercise using your own values.
+This example creates a new resource group named TestRG in the East US location. If you want to use an existing resource group instead, you can modify the `$resourceGroup = Get-AzResourceGroup -ResourceGroupName "NameofResourceGroup"`command, and then complete the steps in this exercise using your own values.
 
 1.  Create a resource group.
     
@@ -155,7 +155,7 @@ Before you create a connection, be aware of the following:<br>
 
  -  A virtual network can only be connected to one virtual hub at a time.<br>
  -  In order to connect it to a virtual hub, the remote virtual network can't have a gateway.<br>
- -  Some configuration settings, such as **Propagate static route**, can only be configured in the Azure portal at this time.<br>
+ -  Some configuration settings, such as Propagate static route, can only be configured in the Azure portal at this time.<br>
 
 If VPN gateways are present in the virtual hub, this operation as well as any other write operation on the connected VNet can cause disconnection to point-to-site clients as well as reconnection of site-to-site tunnels and **Border Gateway Protocol (BGP)** sessions.
 
@@ -183,30 +183,30 @@ Use the VPN device configuration file to configure your on-premises VPN device. 
 3.  Once the file finishes creating, click the link to download the file. This creates a new file with VPN configuration at the provided SAS url location.<br>
 4.  Apply the configuration to your on-premises VPN device. For more information, see VPN device configuration in this section.<br>
 5.  After you've applied the configuration to your VPN devices, you aren't required to keep the storage account that you created.
-     -  **Address space** of the virtual hub(s) virtual network.
+     -  Address space of the virtual hub(s) virtual network.
          -  Example:
              -  `"AddressSpace":"10.1.0.0/24"`
-     -  **Address space** of the virtual networks that are connected to the virtual hub.
+     -  Address space of the virtual networks that are connected to the virtual hub.
          -  Example:
              -  `"ConnectedSubnets":["10.2.0.0/16","10.3.0.0/16"]`
-     -  **IP address space** of the virtual hub vpngateway. Because each vpngateway connection is composed of two tunnels in active-active configuration, you'll see both IP addresses listed in this file. In this example, you see "Instance0" and "Instance1" for each site.
+     -  IP address space of the virtual hub vpngateway. Because each vpngateway connection is composed of two tunnels in active-active configuration, you'll see both IP addresses listed in this file. In this example, you see "Instance0" and "Instance1" for each site.
          -  Example:
              -  `"Instance0":"nnn.nn.nn.nnn"`
              -  `"Instance1":"nnn.nn.nn.nnn"`
-     -  **Public IP Address**: Assigned by Azure.<br>
-     -  **Private IP Address**: Assigned by Azure.<br>
-     -  **Default BGP IP Address**: Assigned by Azure.<br>
-     -  **Custom BGP IP Address**: This field is reserved for APIPA (Automatic Private IP Addressing). Azure supports BGP IP in the ranges 169.254.21.\* and 169.254.22.\*. Azure accepts BGP connections in these ranges but will dial connection with the default BGP IP. Users can specify multiple custom BGP IP addresses for each instance. The same custom BGP IP address shouldn't be used for both instances.
+     -  Public IP Address: Assigned by Azure.<br>
+     -  Private IP Address: Assigned by Azure.<br>
+     -  Default BGP IP Address: Assigned by Azure.<br>
+     -  Custom BGP IP Address: This field is reserved for APIPA (Automatic Private IP Addressing). Azure supports BGP IP in the ranges 169.254.21.\* and 169.254.22.\*. Azure accepts BGP connections in these ranges but will dial connection with the default BGP IP. Users can specify multiple custom BGP IP addresses for each instance. The same custom BGP IP address shouldn't be used for both instances.
 
 #### VPN device configuration file
 
 The device configuration file contains the settings to use when configuring your on-premises VPN device. When you view this file, notice the following information:
 
-**vpnSiteConfiguration** \- This section denotes the device details set-up as a site connecting to the virtual WAN. It includes the name and public IP address of the branch device.<br>
+ -  vpnSiteConfiguration - This section denotes the device details set-up as a site connecting to the virtual WAN. It includes the name and public IP address of the branch device.<br>
 
-**vpnSiteConnections** \- This section provides information about the following settings:<br>
+vpnSiteConnections - This section provides information about the following settings:<br>
 
-**Vpngateway connection configuration details** such as BGP, preshared key etc. The PSK is the preshared key that is automatically generated for you. You can always edit the connection in the **Overview** page for a custom **Pre-Shared Key (PSK)**.<br>
+ -  Vpngateway connection configuration details such as BGP, preshared key etc. The PSK is the preshared key that is automatically generated for you. You can always edit the connection in the Overview page for a custom Pre-Shared Key (PSK).<br>
 
 #### Example device configuration file
 
