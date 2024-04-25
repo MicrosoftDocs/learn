@@ -31,15 +31,15 @@ Azure Firewall Basic is like Firewall Standard, but has the following main limit
 
 ## Azure Firewall Manager
 
-**Azure Firewall Manager** is a security management service that provides central security policy and route management for cloud-based security perimeters.
+Azure Firewall Manager is a security management service that provides central security policy and route management for cloud-based security perimeters.
 
 Firewall Manager can provide security management for two network architecture types:<br>
 
- -  **Secured virtual hub**<br>
+ -  Secured virtual hub<br>
 
     An Azure Virtual WAN Hub is a Microsoft-managed resource that lets you easily create hub and spoke architectures. When security and routing policies are associated with such a hub, it is referred to as a secured virtual hub.<br>
 
- -  **Hub virtual network**<br>
+ -  Hub virtual network<br>
 
     This is a standard Azure virtual network that you create and manage yourself. When security policies are associated with such a hub, it is referred to as a hub virtual network. At this time, only Azure Firewall Policy is supported. You can peer spoke virtual networks that contain your workload servers and services. You can also manage firewalls in standalone virtual networks that aren't peered to any spoke.
 
