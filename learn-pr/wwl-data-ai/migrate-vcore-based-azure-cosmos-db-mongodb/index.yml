@@ -11,7 +11,7 @@ metadata:
   ms.subservice: mongodb-vcore
   ai-usage: human-only
 title: Migrate to vCore-based Azure Cosmos DB for MongoDB
-summary: This Module introduces the migration to vCore-based Azure Cosmos DB for MongoDB, guiding through readiness assessment, using Azure Data Studio, MongoDB tools, and Azure Databricks for data migration.
+summary: Explore migrating to vCore-based Azure Cosmos DB for MongoDB, utilizing Azure Data Studio, MongoDB migration tools, and Azure Databricks for data migration.
 abstract: |
   - Plan and assess the readiness of a migration from MongoDB to vCore-based Azure Cosmos DB for MongoDB.
   - Use Azure Data Studio for migration assessment and execution.

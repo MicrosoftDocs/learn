@@ -3,24 +3,34 @@ uid: learn.wwl.manage-azure-active-directory-identities
 metadata:
   title: Manage Microsoft Entra identities
   description: "This module enables you to handle Microsoft Entra ID tasks, including RBAC, user/group management, PowerShell cmdlets, and AD DS object synchronization. You'll effectively utilize and manage Microsoft Entra ID in your organization after completing this module."
-  ms.date: 09/01/2023
+  ms.date: 04/18/2024
   author: wwlpublish
   ms.author: rstearman
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: windows
+  ai-usage: human-only
 title: Manage Microsoft Entra identities
 summary: This module teaches how to use Microsoft Entra ID effectively. You'll learn about RBAC, user roles, creating and managing users and groups, using PowerShell cmdlets, and synchronizing objects from AD DS to Microsoft Entra ID.
 abstract: |
   After this module, you should be able to:
-  - Describe RBAC and user roles in Microsoft Entra ID.
-  - Create and manage users in Microsoft Entra ID.
-  - Create and manage groups in Microsoft Entra ID.
-  - Use Windows PowerShell cmdlets to manage Microsoft Entra ID.
-  - Describe how you can synchronize objects from AD DS to Microsoft Entra ID.
+
+  -   Describe RBAC and user roles in Microsoft Entra ID.
+
+  -   Create and manage users in Microsoft Entra ID.
+
+  -   Create and manage groups in Microsoft Entra ID.
+
+  -   Use Windows PowerShell cmdlets to manage Microsoft Entra ID.
+
+  -   Describe how you can synchronize objects from AD DS to Microsoft Entra ID.
 prerequisites: |
-  - Strong technical skills installing, maintaining, and troubleshooting the Windows 11 OS or later.
-  - Strong understanding of computer networking, client security, and application concepts.
-  - Experience using Active Directory Domain Services.
+  -   Strong technical skills installing, maintaining, and troubleshooting the Windows 11 OS or later.
+
+  -   Strong understanding of computer networking, client security, and application concepts.
+
+  -   Experience using Active Directory Domain Services.
 iconUrl: /training/achievements/azure-active-directory-manage-identities.svg
 levels:
 - intermediate
