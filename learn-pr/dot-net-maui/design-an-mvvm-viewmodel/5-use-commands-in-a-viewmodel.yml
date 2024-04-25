@@ -19,7 +19,7 @@ quiz:
   questions:
   - content: What is the purpose of the `ICommand` interface?
     choices:
-    - content: It is used to handle `Clicked` and `Selected` events in the code-behind.
+    - content: It's used to handle `Clicked` and `Selected` events in the code-behind.
       isCorrect: false
       explanation: Incorrect. `ICommand` interface is used to avoid handling events like `Clicked` and `Selected` in the code-behind, keeping the logic in the viewmodel.
     - content: It allows for the creation of custom classes for each event handler.
@@ -47,6 +47,6 @@ quiz:
     - content: It determines whether a control should appear enabled or disabled.
       isCorrect: false
       explanation: Incorrect. It's ultimately up to the control to appear enabled or disabled, which requires checking the command's CanExecute return value. The `CommandParameter` property is passed to that method when it's invoked.
-    - content: It is used to bind the `ICommand` interface to a property.
+    - content: It's used to bind the `ICommand` interface to a property.
       isCorrect: false
-      explanation: Incorrect. The `CommandParameter` property is not used for binding `ICommand`, it is used to pass a parameter to the command when it's invoked.
+      explanation: Incorrect. The `CommandParameter` property isn't used for binding `ICommand`, it's used to pass a parameter to the command when it's invoked.
