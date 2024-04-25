@@ -13,7 +13,7 @@ Microsoft Sentinel is your birds-eye view across the enterprise for alleviating 
 
 ## Connect data
 
-To on-board Microsoft Sentinel, you first need to connect to your security sources.
+To onboard Microsoft Sentinel, you first need to connect to your security sources.
 
 Microsoft Sentinel comes with several connectors for Microsoft solutions, available out of the box and which provide real-time integration. Microsoft Sentinel's out-of-the-box connectors include Microsoft 365 sources, Microsoft Entra ID, Microsoft Defender for Identity, and Microsoft Defender for Cloud Apps. In addition, there are built-in connectors to the broader security ecosystem for non-Microsoft solutions.  
 
