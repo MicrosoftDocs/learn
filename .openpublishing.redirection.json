@@ -32762,6 +32762,146 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/enterprise-scale-architecture/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-introduction/1-introduction.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-introduction/2-vision-customer-challenges.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-introduction/3-enterprise-scale-architecture-approach.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-introduction/4-enterprise-scale-design-principles.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-principles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-introduction/5-summary.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-introduction/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-networking/1-introduction.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/network-topology-and-connectivity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-networking/2-ip-addressing.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-ip-addressing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-networking/3-dns.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/private-link-and-dns-integration-at-scale",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-networking/4-network-topology.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/define-an-azure-network-topology",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-networking/5-connectivity.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/connectivity-to-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-networking/6-network-segmentation.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-landing-zone-network-segmentation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-networking/7-network-encryption.yml" ,
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/define-network-encryption-requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-networking/8-summary.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/network-topology-and-connectivity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-networking/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/network-topology-and-connectivity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-operations/1-introduction.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-operations/2-management-monitoring.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-operations/3-business-continuity-disaster-recovery.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/management-business-continuity-disaster-recovery",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-operations/4-security-governance-compliance.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/governance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-operations/5-summary.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-operations/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-organization/1-introduction.yml" ,
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-areas",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-organization/2-enterprise-enrollment-azure-ad-tenants.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/azure-billing-enterprise-agreement",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-organization/3-identity-access-management.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-organization/4-management-group-subscription-organization.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/resource-org",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-organization/5-summary.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-areas",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-organization/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-areas",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/build-chat-bot-with-azure-bot-service/index.yml",
       "redirect_url": "/azure/bot-service/",
       "redirect_document_id": false
