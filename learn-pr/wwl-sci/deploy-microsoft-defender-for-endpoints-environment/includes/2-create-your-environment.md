@@ -14,6 +14,9 @@ To access the Microsoft Defender portal settings for Endpoints do the following 
 
 :::image type="content" source="../media/screenshot-defender-xdr-settings-endpoints.png" alt-text="Screenshot of Microsoft Defender XDR Settings and Endpoints.":::
 
+> [!NOTE]
+> Your organization may have different settings displayed based on the tenant subscription and configuration.
+
 ## Network configuration
 
 If the organization doesn't require the endpoints to use a Proxy to access the Internet, the following configuration isn't required.
