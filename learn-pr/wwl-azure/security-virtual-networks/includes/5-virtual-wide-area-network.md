@@ -186,7 +186,7 @@ Use the VPN device configuration file to configure your on-premises VPN device. 
      -  Address space of the virtual hub(s) virtual network.
          -  Example:
              -  `"AddressSpace":"10.1.0.0/24"`
-     -  Address space of the virtual networks that are connected to the virtual hub.
+     -  Address spaceof the virtual networks that are connected to the virtual hub.
          -  Example:
              -  `"ConnectedSubnets":["10.2.0.0/16","10.3.0.0/16"]`
      -  IP address space of the virtual hub vpngateway. Because each vpngateway connection is composed of two tunnels in active-active configuration, you'll see both IP addresses listed in this file. In this example, you see "Instance0" and "Instance1" for each site.

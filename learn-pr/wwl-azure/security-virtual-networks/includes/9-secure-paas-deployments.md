@@ -12,7 +12,7 @@ Organizations are able to improve their threat detection and response times by u
 
 Let's look at the security advantages of an Azure PaaS deployment versus on-premises.
 
-## :::image type="content" source="../media/advantages-of-platform%20as%20a%20service-20249c4b.png" alt-text="Diagram showing an example of advantages of the platform as a service model."::: 
+## :::image type="content" source="../media/advantages-of-platform-as-a-service-e78b8c76.png" alt-text="Diagram showing an example of advantages of the platform as a service model."::: 
 
 Starting at the bottom of the stack, the physical infrastructure, Microsoft mitigates common risks and responsibilities. Because the Microsoft cloud is continually monitored by Microsoft, it's hard to attack. It doesn't make sense for an attacker to pursue the Microsoft cloud as a target. Unless the attacker has lots of money and resources, the attacker is likely to move on to another target.
 
