@@ -32,10 +32,11 @@ To use an analytics rule template:<br>
 
 2. Selecting **Create rule** opens the rule creation wizard based on the selected template. All the details are autofilled, and with the **Scheduled** or **Microsoft security** templates, you can customize the logic and other rule settings to better suit your specific needs. You can repeat this process to create more rules based on the template. After following the steps in the rule creation wizard to the end, you finished creating a rule based on the template. The new rules appear in the **Active rules** tab. For more details on how to customize your rules in the rule creation wizard, see [Create custom analytics rules to detect threats](/azure/sentinel/detect-threats-custom).
 
- -  Make sure that you enable all rules associated with your connected data sources in order to ensure full security coverage for your environment. The most efficient way to enable analytics rules is directly from the data connector page, which lists any related rules. For more information, see [Connect data sources](/azure/sentinel/connect-data-sources).
+> [!TIP]
+> Make sure that you enable all rules associated with your connected data sources in order to ensure full security coverage for your environment. The most efficient way to enable analytics rules is directly from the data connector page, which lists any related rules. For more information, see [Connect data sources](/azure/sentinel/connect-data-sources).
+
  -  You can also push rules to Microsoft Sentinel via [API](/rest/api/securityinsights/) and [PowerShell](https://www.powershellgallery.com/packages/Az.SecurityInsights/0.1.0), although doing so requires additional effort.
-    
-    When using API or PowerShell, you must first export the rules to JSON before enabling the rules. API or PowerShell may be helpful when enabling rules in multiple instances of Microsoft Sentinel with identical settings in each instance.
+ -  When using API or PowerShell, you must first export the rules to JSON before enabling the rules. API or PowerShell may be helpful when enabling rules in multiple instances of Microsoft Sentinel with identical settings in each instance.
 
 ## Access permissions for analytics rules
 

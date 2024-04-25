@@ -40,14 +40,11 @@ Get a more complete and detailed introduction to automating threat response usin
 
 Follow these steps to create a new playbook in Microsoft Sentinel:
 
-1. For Microsoft Sentinel in the [Azure portal](https://portal.azure.com/), select the **Configuration** &gt; **Automation** page. For Microsoft Sentinel in the [Defender portal](https://security.microsoft.com/), select **Microsoft Sentinel** &gt; **Configuration** &gt; **Automation**.
-
-2. From the top menu, select **Create**.<br>
-
-3. The drop-down menu that appears under **Create** gives you four choices for creating playbooks:<br>
-
- -  If you're creating a **Standard** playbook (the new kind - see [Logic app types](/azure/sentinel/automate-responses-with-playbooks#logic-app-types)), select **Blank playbook** and then follow the steps in the **Logic Apps Standard** tab below.<br><br>
- -  If you're creating a **Consumption** playbook (the original, classic kind) then depending on which trigger you want to use, select either **Playbook with incident trigger**, **Playbook with alert trigger**, or **Playbook with entity trigger**. Then, continue following the steps in the **Logic Apps Consumption** tab below.<br>
+1.  For Microsoft Sentinel in the [Azure portal](https://portal.azure.com/), select the **Configuration** &gt; **Automation** page. For Microsoft Sentinel in the [Defender portal](https://security.microsoft.com/), select **Microsoft Sentinel** &gt; **Configuration** &gt; **Automation**.
+2.  From the top menu, select **Create**.<br>
+3.  The drop-down menu that appears under **Create** gives you four choices for creating playbooks:<br>
+     -  If you're creating a **Standard** playbook (the new kind - see [Logic app types](/azure/sentinel/automate-responses-with-playbooks#logic-app-types)), select **Blank playbook** and then follow the steps in the **Logic Apps Standard** tab below.<br><br>
+     -  If you're creating a **Consumption** playbook (the original, classic kind) then depending on which trigger you want to use, select either **Playbook with incident trigger**, **Playbook with alert trigger**, or **Playbook with entity trigger**. Then, continue following the steps in the **Logic Apps Consumption** tab below.<br>
 
 For more about which trigger to use, see Use triggers and actions in Microsoft Sentinel playbooks. For more about which trigger to use, see [Use triggers and actions in Microsoft Sentinel playbooks](/azure/sentinel/playbook-triggers-actions).
 
@@ -104,27 +101,22 @@ To use a playbook to respond automatically to an **entire incident** or to an **
 
 To create an automation rule:
 
-1. From the **Automation** page in the Microsoft Sentinel navigation menu, select **Create** from the top menu and then **Automation rule**.<br>
+1.  From the **Automation** page in the Microsoft Sentinel navigation menu, select **Create** from the top menu and then **Automation rule**.<br>
+2.  The **Create new automation rule** panel opens. Enter a name for your rule. Your options differ depending on whether your workspace is onboarded to the unified security operations platform. For example:
+3.  **Trigger**: Select the appropriate trigger according to the circumstance for which you're creating the automation rule—**When incident is created**, **When incident is updated**, or **When alert is created**.<br>
+4.  **Conditions**:<br>
+     -  If your workspace is not yet onboarded to the unified security operations platform, incidents can have two possible sources:<br>
+         -  Incidents can be created inside Microsoft Sentinel<br>
+         -  Incidents can be [imported from—and synchronized with—Microsoft Defender XDR](/azure/sentinel/microsoft-365-defender-sentinel-integration).
+     -  If you selected one of the incident triggers and you want the automation rule to take effect only on incidents sourced in Microsoft Sentinel, or alternatively in Microsoft Defender XDR, specify the source in the If Incident provider equals condition.
+     -  This condition will be displayed only if an incident trigger is selected and your workspace isn't onboarded to the unified security operations platform.<br>
+     -  For all trigger types, if you want the automation rule to take effect only on certain analytics rules, specify which ones by modifying the **If Analytics rule name contains** condition.<br>
+     -  Add any other conditions you want to determine whether this automation rule will run. Select **+ Add** and choose [conditions or condition groups](/azure/sentinel/add-advanced-conditions-to-automation-rules) from the drop-down list. The list of conditions is populated by alert detail and entity identifier fields.<br>
+5.  **Actions**:<br>
+     -  Since you're using this automation rule to run a playbook, choose the **Run playbook** action from the drop-down list. You'll then be prompted to choose from a second drop-down list that shows the available playbooks. An automation rule can run only those playbooks that start with the same trigger (incident or alert) as the trigger defined in the rule, so only those playbooks will appear in the list.
 
-2. The **Create new automation rule** panel opens. Enter a name for your rule. Your options differ depending on whether your workspace is onboarded to the unified security operations platform. For example:
-
-3. **Trigger**: Select the appropriate trigger according to the circumstance for which you're creating the automation rule—**When incident is created**, **When incident is updated**, or **When alert is created**.<br>
-
-4. **Conditions**:<br>
-
- -  If your workspace is not yet onboarded to the unified security operations platform, incidents can have two possible sources:<br>
-     -  Incidents can be created inside Microsoft Sentinel<br>
-     -  Incidents can be [imported from—and synchronized with—Microsoft Defender XDR](/azure/sentinel/microsoft-365-defender-sentinel-integration).
- -  If you selected one of the incident triggers and you want the automation rule to take effect only on incidents sourced in Microsoft Sentinel, or alternatively in Microsoft Defender XDR, specify the source in the If Incident provider equals condition.
- -  This condition will be displayed only if an incident trigger is selected and your workspace isn't onboarded to the unified security operations platform.<br>
- -  For all trigger types, if you want the automation rule to take effect only on certain analytics rules, specify which ones by modifying the **If Analytics rule name contains** condition.<br>
- -  Add any other conditions you want to determine whether this automation rule will run. Select **+ Add** and choose [conditions or condition groups](/azure/sentinel/add-advanced-conditions-to-automation-rules) from the drop-down list. The list of conditions is populated by alert detail and entity identifier fields.<br>
-
-5. **Actions**:<br>
-
- -  Since you're using this automation rule to run a playbook, choose the **Run playbook** action from the drop-down list. You'll then be prompted to choose from a second drop-down list that shows the available playbooks. An automation rule can run only those playbooks that start with the same trigger (incident or alert) as the trigger defined in the rule, so only those playbooks will appear in the list.
-
-**Microsoft Sentinel must be granted explicit permissions in order to run playbooks**, whether manually or from automation rules. If a playbook appears "grayed out" in the drop-down list, it means Sentinel does not have permission to that playbook's resource group. Click the **Manage playbook permissions** link to assign permissions.
+> [!IMPORTANT]
+> Microsoft Sentinel must be granted explicit permissions in order to run playbooks, whether manually or from automation rules. If a playbook appears "grayed out" in the drop-down list, it means Sentinel does not have permission to that playbook's resource group. Click the **Manage playbook permissions** link to assign permissions.
 
 In the **Manage permissions** panel that opens up, mark the check boxes of the resource groups containing the playbooks you want to run, and click **Apply**.
 
