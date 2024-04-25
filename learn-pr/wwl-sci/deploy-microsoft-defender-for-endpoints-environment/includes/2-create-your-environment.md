@@ -1,4 +1,4 @@
-When accessing your Microsoft Defender portal settings for Endpoints for the first time, you'll be able to configure many attributes. You must be a global administrator or security administrator for the tenant. On the Set-up preferences page, you can set the:
+When accessing your Microsoft Defender portal settings for Endpoints for the first time, you're able to configure many attributes. You must be a global administrator or security administrator for the tenant. On the Set-up preferences page, you can set the:
 
 **Data storage location** - Determine where you want to be primarily hosted: US, EU, or UK. You can't change the location after this set up and Microsoft won't transfer the data from the specified geolocation.
 
