@@ -4,15 +4,15 @@ title: Check your knowledge
 metadata:
   title: Check your knowledge
   description: Review of commercial marketplace VM offer concepts
-  ms.date: 07/12/2022
-  author: marleva
-  ms.author: maevan
+  ms.date: 04/25/2024
+  author: amhindma
+  ms.author: amhindma
   ms.topic: unit
 durationInMinutes: 3
 quiz:
   title: 'Knowledge check'
   questions:
-  - content: 'Which of the following are benefits of the VM software delivery method?'
+  - content: 'Which of the following are benefits of the virtual machine (VM) software delivery method?'
     choices:
     - content: 'VM-based software gives customers the flexibility to scale software deployment up or down as their business needs change.'
       isCorrect: false
@@ -40,17 +40,17 @@ quiz:
     - content: 'With the BYOL license model, customers have to purchase a license to use the software outside of Azure Marketplace. With the usage-based license model, customers can purchase a license to the software through Microsoft, streamlining the purchasing process.'
       isCorrect: true
       explanation: 'Correct! If you choose the BYOL license model, customers will have to purchase your software license outside of Azure Marketplace. Usage-based VM offers streamline the purchasing process for customers because they can purchase your software license through Microsoft using the same payment method they use to pay for their Azure subscription.'
-  - content: 'Which of the following criteria need to be met to provide your VM image from a shared image gallery (SIG) when completing the technical configuration in Partner Center?'
+  - content: 'Which of the following criteria need to be met to provide your VM image from the Azure Compute Gallery when completing the technical configuration in Partner Center?'
     choices:
-    - content: 'The Azure subscription that contains the SIG with your VM image must be under the same Azure tenant as your Partner Center publisher account.'
+    - content: 'The Azure subscription that contains the Azure Compute Gallery with your VM image must be under the same Azure tenant as your Partner Center publisher account.'
       isCorrect: true
-      explanation: 'Correct! If the Partner Center account is not associated with the same Azure tenant as the SIG, you will not be able to access your VM image in Partner Center.'
-    - content: 'The user that completes the offer publishing process just needs access rights to the SIG. Partner Center will automatically populate all shared images that the user has access to.'
+      explanation: 'Correct! If the Partner Center account is not associated with the same Azure tenant as the Azure Compute Gallery, you will not be able to access your VM image in Partner Center.'
+    - content: 'The user that completes the offer publishing process just needs access rights to the Azure Compute Gallery. Partner Center will automatically populate all shared images that the user has access to.'
       isCorrect: false
-      explanation: 'While the user who completes the offer technical configuration in Partner Center needs access to the SIG, the Partner Center account also needs to be associated with the Azure subscription that contains the SIG.'
+      explanation: 'While the user who completes the offer technical configuration in Partner Center needs access to the Azure Compute Gallery, the Partner Center account also needs to be associated with the Azure subscription that contains the Azure Compute Gallery.'
     - content: 'The VM image just needs to be generalized to remove all instance-specific identifiers.'
       isCorrect: false
-      explanation: 'All Azure Marketplace VM images must be generalized before publishing, regardless of whether you plan to provide your VM image from a SIG or not.'
-    - content: 'The user that completes the offer publishing process will need to provide an access code to link the VM offer with the SIG that contains the generalized VM images.'
+      explanation: 'All Azure Marketplace VM images must be generalized before publishing, regardless of whether you plan to provide your VM image from a Azure Compute Gallery or not.'
+    - content: 'The user that completes the offer publishing process will need to provide an access code to link the VM offer with the Azure Compute Gallery that contains the generalized VM images.'
       isCorrect: false
-      explanation: 'The Azure subscription that contains the SIG with your VM image must be under the same Azure tenant as your Partner Center publisher account.'
+      explanation: 'The Azure subscription that contains the Azure Compute Gallery with your VM image must be under the same Azure tenant as your Partner Center publisher account.'

@@ -25,7 +25,7 @@ To facilitate this experience, you’ll be asked to provide all the information 
 
 ### VM offer plans and pricing
 
-VM offers must have at least one plan. You can create various plans for the same offer to give your customers choices to purchase your application. Plans can differ in price, availability, billing terms, and levels of software functionality. For more detailed information on offer plans and available VM pricing models, check out our [documentation on planning a virtual machine offer](/azure/marketplace/marketplace-virtual-machines).
+VM offers must have at least one plan. You can create various plans for the same offer to give your customers choices to purchase your application. Plans can differ in price, availability, billing terms, and levels of software functionality. For more detailed information on offer plans and available VM pricing models, check out our [documentation on planning a VM offer](/azure/marketplace/marketplace-virtual-machines).
 
 #### VM offer pricing
 
@@ -34,25 +34,38 @@ When you publish a VM offer customers can purchase through Azure Marketplace, yo
 VM offer pricing is hourly in Azure Marketplace. Your customers will see your software’s price split into two components in the Azure Marketplace online store: Azure infrastructure cost and your software's price per hour.
 
 - **Infrastructure cost**: The hourly cost for Azure VMs used to deploy your application. This cost component varies by the Azure VM type and size that a customer chooses to deploy.
-
 - **Software cost**: The hourly price you charge customers to license your software. This price can vary based on the VM size that customers choose to deploy your software.
 
 When you publish your offer, you’ll only be asked to provide price information for your software. Infrastructure costs are automatically calculated based on the Azure VM type and size the customer uses to deploy your software.
 
 #### Selecting a price entry option
 
-:::image type="content" source="../media/4-vm-price-entry-options-1.png" alt-text="Screenshot of the price entry options in Partner Center. This selection appears in the 'pricing and availability' step of the publishing process.":::
+When you create your VM offer in Partner Center and configure its plans, you’ll be asked to select a price entry option. The different price entry options give you varying levels of flexibility to structure your software’s price. You’ll have the following price entry options:
 
-When you create your VM offer in Partner Center and configure its plans, you’ll be asked to select a price entry option. The different price entry options give you varying levels of flexibility to structure your software’s price. You’ll have three price entry options:
+- **Free**: You provide the VM for free.
+- **Flat rate**: You assign the same hourly price, regardless of the hardware it runs on.
+- **Per vCPU**: You assign the price for one vCPU, and we’ll increment the pricing based on the size of the hardware.
+- **Per vCPU size**: You assign the price based on the number of vCPUs on the hardware they're  deployed on.
+- **Per market and vCPU size**: You assign prices based on the number of vCPUs on the hardware they're deployed on, and for all markets. Currency conversion is done by you, the publisher. This option is easier if you use the import pricing feature.
 
-- **Per core**: You provide one hourly per core price, which is used to calculate pricing for all available core sizes automatically.
+> [!NOTE]
+> If you choose one of the flat rate, per vCPU, or per vCPU size price entry options, Microsoft automatically converts your software pricing into local currencies for global customers by using the current exchange rate.
 
-- **Per core size**: You provide pricing for each of the available core sizes for Azure VMs. This entry option gives you more control to specify your software’s pricing structure.
+#### Configuring reservation pricing (optional)
 
-- **Per market and core size**: You provide pricing for each available core size, with the added flexibility to customize prices for each geographic market.
+When you select the *Flat rate*, *Per vCPU*, or *Per vCPU size* price option, the **Reservation pricing** section appears. You can choose to offer savings for a one-year commitment, three-year commitment, or both. For more information about reservation pricing, including how prices are calculated, see [Plan a VM offer](/partner-center/marketplace/marketplace-virtual-machines#reservation-pricing-optional).
 
->[!NOTE]
->If you choose either the per core or per core size price entry option, Microsoft will automatically convert your software pricing into local currencies for global customers by using the current exchange rate.
+These steps assume you've already selected either the *Flat rate*, *Per vCPU*, or *Per vCPU size* price option and entered a per hour price.
+
+1. Under **Reservation pricing**, select **Yes, offer reservation pricing**.
+1. To offer a one-year discount, select the **1-year saving %** check box and then enter the percentage discount you want to offer.
+1. To offer a three-year discount, select the **3-year saving %** check box and then enter the percentage discount you want to offer.
+1. To see the discounted prices, select **Price per vCPU size**. A table with the one-year and three-year prices for each vCPU size is shown. These prices are calculated based on the number of hours in the term with the percentage discount subtracted.
+
+   > [!TIP]
+   > For Per vCPU size plans, you can optionally change the price for a particular vCPU size in the **Price/hour** column of the table.
+
+1. Make sure to select **Save draft** before you leave the page. The changes will be applied once you publish the offer.
 
 #### Enabling VM offer free trials
 
@@ -60,15 +73,33 @@ When you select the usage-based license model for your VM offer, you can also of
 
 Adding a free trial to your offer is as easy as checking a box when configuring your offer in Partner Center. The option appears on the pricing and availability page of the process, and you can add free trials for each of your offer’s plans.
 
-:::image type="content" source="../media/5-vm-free-trial-option.png" alt-text="Screenshot of the free trial options in Partner Center. These options appear in the 'pricing and availability' step of the publishing process.":::
-
 #### Selecting plan visibility
 
-When you set up your VM offer plans in Partner Center, you’ll be able to dictate whether each plan is public or private. Public plans are made available to all Azure Marketplace customers. Private plans will only be made available to specific customers that you choose. Private plans can be used to negotiate custom terms and pricing with specific customers.
+When you set up your VM offer plans in Partner Center, you’ll be able to dictate whether each plan is **public** or **private**.
 
 :::image type="content" source="../media/6-vm-plan-visibility.png" alt-text="Screenshot of the plan visibility toggle in Partner Center. This toggle appears in the 'pricing and availability' step of the publishing process.":::
 
->[!NOTE]
->To publish a private plan, you’ll need to provide the Azure tenant IDs of the customers that want to use your software. Only those customers will see your private offer in the Azure portal.
+- **Public**: Make your plan visible to all Azure Marketplace customers.
+- **Private**: Make your plan visible to only a preselected audience. Private plans can be used to negotiate custom terms and pricing with specific customers.
 
-For more information on private offers, reference our [documentation on private offers in the commercial marketplace](/azure/marketplace/private-offers).
+   > [!IMPORTANT]
+   > Private plans are still visible to everyone in the CLI, but only deployable to those customers configured in the private audience.
+
+  - Once you publish a private plan, you can still adjust the private audience or change it to public.
+  - But after you make a plan public, it can't be changed back to a private plan.
+  
+  If the plan is private, you can specify the private audience that will have access to this plan using *Azure tenant IDs*, *subscription IDs*, or both. Optionally, include a **Description** of each Azure tenant ID or subscription ID that you assign. Add up to 10 subscription IDs and tenant IDs manually or import a CSV spreadsheet if more than 10 IDs are required. For a published offer, select **Sync private audience** for the changes to the private audience to take effect automatically without needing to republish the offer.
+
+> [!NOTE]
+> A private audience is different from the preview audience that you defined on the **Preview audience** pane. A preview audience can access and view all private and public plans for validation purposes before it's published live to Azure Marketplace. A private audience can only access the specific plans that they're authorized to have access to once the offer is live.
+
+Private offers aren't supported with Azure subscriptions established through a reseller of the Cloud Solution Provider (CSP) program.
+
+##### Hiding a plan
+
+Hide a plan if you don't want it to be visible on Azure Marketplace but still deployable through another Solution Template, Managed Application, Azure CLI, or Azure PowerShell. Hiding a plan is useful when trying to limit exposure to customers that would normally be searching or browsing for it directly via Azure Marketplace. By selecting this checkbox, all VM images associated with your plan will be hidden from Azure Marketplace storefront.
+
+> [!NOTE]
+> A hidden plan is different from a private plan. When a plan is publicly available but hidden, it is still available for any Azure customer to deploy via Solution Template, Managed Application, Azure CLI or Azure PowerShell. However, a plan can be both hidden and private, in which case only the customers configured in the private audience can deploy via these methods. If you wish to make the plan available to a limited set of customers, then set the plan to **Private**.
+
+For more information on private offers, see our [documentation on private offers in the commercial marketplace](/partner-center/marketplace/isv-customer-faq).
