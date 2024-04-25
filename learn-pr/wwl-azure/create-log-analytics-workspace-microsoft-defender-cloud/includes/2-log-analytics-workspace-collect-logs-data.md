@@ -40,8 +40,8 @@ To access archived data, you must first retrieve data from it in an Analytics Lo
 | Search jobs | Retrieve data matching particular criteria. |
 | Restore     | Retrieve data from a particular time range. |
 
-:::image type="content" source="../media/workspace-plan-overview-4961b068.png" alt-text="Screenshot showing an example of a workspace plan.":::
-<br>
+:::image type="content" source="../media/workspace-plan-overview-d04f9562.png" alt-text="Screenshot showing an example of a workspace plan.":::
+
 
 ## Permissions
 
