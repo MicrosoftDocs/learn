@@ -2,8 +2,8 @@
 uid: learn.wwl.manage-authorization-microsoft-entra-id
 metadata:
   title: Manage authorization by using Microsoft Entra ID
-  description: "Administer authorization in Microsoft Entra Id."
-  ms.date: 04/18/2024
+  description: "Administer authorization in Microsoft Entra ID."
+  ms.date: 04/24/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
@@ -14,7 +14,7 @@ metadata:
 title: Manage authorization by using Microsoft Entra ID
 summary: This module is designed to provide administrators with the knowledge and skills required to effectively manage authorization using Microsoft Entra ID, ensuring that users have the appropriate access to resources and data.
 abstract: |
-  By the end of this module, participants will be able to:
+  By the end of this module, participants are able to:
 
   -   Set Azure role permissions across management groups, subscriptions, and resources for access control.
 
