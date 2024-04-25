@@ -7,8 +7,6 @@ metadata:
   author: adegeo
   ms.author: adegeo
   ms.topic: module
-  ms.service: dotnet-mobile
-  ms.subservice: dotnet-maui
   ai-usage: ai-assisted
 title: Design an MVVM viewmodel for .NET MAUI
 summary: "Learn about the MVVM design pattern and how it can separate your business logic and user interface code. Learn how viewmodels are designed and why they're an important part of the pattern."
