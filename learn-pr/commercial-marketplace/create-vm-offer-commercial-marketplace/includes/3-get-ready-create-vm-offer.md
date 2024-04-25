@@ -4,7 +4,7 @@ We just covered the way virtual machine (VM) offers are sold in Azure Marketplac
 
 Regardless of your license-model choice, you’ll need to provide the following information to publish your offer:
 
-- Customer Relationship Management (CRM) connection to receive [customer leads](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads)
+- Customer Relationship Management (CRM) connection to receive [customer leads](/partner-center/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads)
 
 - Offer categories that describe your application and help customers find your software in Azure Marketplace
 
@@ -25,7 +25,7 @@ To facilitate this experience, you’ll be asked to provide all the information 
 
 ### VM offer plans and pricing
 
-VM offers must have at least one plan. You can create various plans for the same offer to give your customers choices to purchase your application. Plans can differ in price, availability, billing terms, and levels of software functionality. For more detailed information on offer plans and available VM pricing models, check out our [documentation on planning a VM offer](/azure/marketplace/marketplace-virtual-machines).
+VM offers must have at least one plan. You can create various plans for the same offer to give your customers choices to purchase your application. Plans can differ in price, availability, billing terms, and levels of software functionality. For more detailed information on offer plans and available VM pricing models, check out our [documentation on planning a VM offer](/partner-center/marketplace/marketplace-virtual-machines).
 
 #### VM offer pricing
 
