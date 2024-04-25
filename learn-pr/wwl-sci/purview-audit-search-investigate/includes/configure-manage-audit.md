@@ -1,6 +1,6 @@
-The IT compliance team at the network of healthcare facilities is addressing unusual access patterns to their electronic health records (EHR). They're tasked with implementing Microsoft Purview Audit (Standard) and Audit (Premium). Their goal is to ensure all access and modifications to patient data are accurately logged and meet health data protection regulations.
+Microsoft Purview Audit (Standard) and Audit (Premium) provide capabilities to search for audit records of user and admin activities across various Microsoft 365 services. While Audit (Standard) is enabled by default, offering immediate access to audit logs, the full scope of features in Audit (Premium) requires specific configurations to effectively manage organizational audit capabilities.
 
-Microsoft Purview Audit (Standard) and Audit (Premium) provide capabilities to search for audit records of user and admin activities across various Microsoft 365 services. While Audit (Standard) is enabled by default, offering immediate access to audit logs, using the full scope of features available in Audit (Premium) requires specific configurations. You can also manage your organization's audit capabilities by changing the settings to turn auditing on or off.
+Following our assessment of Microsoft Purview Audit's tools in our network of healthcare facilities, the IT compliance team is now tasked with configuring both Audit (Standard) and Audit (Premium). Their objective is to ensure all access and modifications to patient data are accurately logged to meet health data protection regulations.
 
 Here you learn to:
 
@@ -37,6 +37,9 @@ Assign _View-Only Audit Logs_ or _Audit Logs_ roles in the Microsoft Purview com
 
 - **Audit Manager**: Grants permissions to search, export, and manage audit settings, including the ability to enable or disable logging.
 - **Audit Reader**: Allows searching and exporting the audit log without the ability to change audit settings.
+
+> [!NOTE]
+> Steps 3-5 are only applicable to Audit.
 
 ### Step 3: Set up Audit (Premium) for users
 

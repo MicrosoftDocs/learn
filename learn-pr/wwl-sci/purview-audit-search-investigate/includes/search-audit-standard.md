@@ -1,6 +1,12 @@
-In healthcare, keeping patient data secure and compliant is essential. The IT compliance team at a network of healthcare facilities uses Microsoft Purview Audit (Standard) to effectively manage and review access to electronic health records (EHR). This setup ensures that all access is properly logged and adheres to health data protection laws. With this system in place, the team is ready to tackle specific security concerns and enhance their auditing processes.
-
 Microsoft Purview Audit (Standard) provides tools for logging activities across Microsoft 365 services. It helps you efficiently use audit log searches to respond to security incidents and manage compliance, ensuring thorough oversight and quick analysis within your organization.
+
+The IT compliance team at a network of healthcare facilities uses Microsoft Purview Audit (Standard) to effectively manage and review access to electronic health records (EHR). This setup ensures that all access is properly logged and adheres to health data protection laws. With this system in place, the team is ready to tackle specific security concerns and enhance their auditing processes.
+
+Here you learn to:
+
+- Prepare and configure the audit log search environment in Microsoft Purview Audit (Standard).
+- Conduct and manage audit search jobs effectively.
+- Analyze search results to investigate and respond to security incidents.
 
 ## Prepare to search the audit log
 
@@ -77,7 +83,7 @@ You can sort and filter this information, or export it up to 50 KB for Audit (St
 
 :::image type="content" source="../media/audit-new-search-result-details.png" alt-text="Screenshot showing the search job item detail dashboard." lightbox="../media/audit-new-search-result-details.png":::
 
-## Investigate unauthorized access to patient records
+## Scenario: Investigate unauthorized access to patient records
 
 The IT compliance team at the healthcare facilities network is using Microsoft Purview Audit (Standard) to address a common issue: determining if users deleted email items related to patient data. The goal of this investigation is to identify any unauthorized deletions that could compromise patient privacy and violate health data protection regulations.
 

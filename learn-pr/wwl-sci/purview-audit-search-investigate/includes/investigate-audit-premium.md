@@ -14,12 +14,12 @@ Microsoft Purview Audit (Premium) builds on Audit (Standard), adding advanced fe
 
 ### Enhanced features in Audit (Premium)
 
-- **Extended data retention**: Offers default retention for up to one year for key services like Microsoft Entra ID, Exchange, OneDrive, and SharePoint. For deeper needs, it supports up to 10 years with an additional add-on license.
+- **Extended data retention**: Offers default retention for up to one year for services like Microsoft Entra ID, Exchange, OneDrive, and SharePoint. For extended retention periods up to 10 years, an additional add-on license is required.
 - **Customizable retention policies**: Allows you to set custom audit log retention times based on the service, specific activities, or user actions. This flexibility helps meet specific compliance and investigative needs.
 - **Increased API bandwidth**: Audit (Premium) users benefit from higher bandwidth access to the Office 365 Management Activity API, allowing for quicker and more efficient data retrieval.
 - **Intelligent insights**: Delivers detailed views of user activities, helping you spot potential breaches and understand user behavior in services like Exchange Online and SharePoint Online.
 
-Audit (Premium) enhances security with its advanced features, making it easier for organizations to handle incidents quickly. Next, we'll show how to use Audit (Premium) to look into compromised accounts, using its detailed logs and analysis tools to address security threats.
+Audit (Premium) enhances security with its advanced features, making it easier for organizations to handle incidents quickly. Next, we show how to use Audit (Premium) to look into compromised accounts, using its detailed logs and analysis tools to address security threats.
 
 ## Investigate compromised accounts with Microsoft Purview Audit (Premium)
 
