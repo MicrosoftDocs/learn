@@ -11,14 +11,7 @@ metadata:
   ms.subservice: flexible-server
   ai-usage: human-only
 title: Extract insights using Azure AI Language and Azure Database for PostgreSQL
-summary: |
-  This module covers Azure AI Language tools
-
-  including key phrase extraction, entity recognition, personally
-
-  identifiable information recognition and redaction, and using Azure Database
-
-  for PostgreSQL - Flexible Server with Azure AI to access these services.
+summary: This module covers Azure AI Language tools including key phrase extraction, entity recognition, personally identifiable information recognition and redaction, and using Azure Database for PostgreSQL - Flexible Server with Azure AI to access these services.
 abstract: |
   -   Examine the concepts of key phrase extraction, entity recognition, and PII (personally identifiable information recognition) recognition.
 
