@@ -8,8 +8,6 @@ When you publish your virtual machine (VM) based application to the Microsoft co
 
 Before you publish your VM offer, you need to decide how you want to use Azure Marketplace to engage with customers and sell your application. When you create your VM offer in Partner Center, you're asked to choose a software license model. Your choice has significant implications for you and your customers' marketplace experience, which we explain throughout the rest of this unit.
 
-:::image type="content" source="../media/3-vm-licensing-partner-center.png" alt-text="Screenshot of the license model options in Partner Center. This screen appears in the 'pricing and availability' step of the publishing process.":::
-
 You have two software licensing options:
 
 - **Bring your own license (BYOL)**: Customers use an existing subscription to your software to deploy your application to their Azure subscription. When you choose the BYOL model, customers have to purchase a subscription to your software outside of Azure Marketplace. They enter a valid subscription key when they configure the VM for deployment in the Azure portal. You're responsible for validating customer subscriptions, facilitating payments, managing active subscriptions, and invoicing  over the life of the subscription.
