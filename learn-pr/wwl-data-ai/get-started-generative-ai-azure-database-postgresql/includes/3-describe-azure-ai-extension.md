@@ -18,7 +18,7 @@ The [Azure OpenAI Service](/azure/ai-services/openai/overview) integration allow
 
 ### Azure Machine Learning
 
-The extension allows you to connect to [Azure Machine Learning](/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2) to perform inference. You can use a trained machine learning model to make predictions or generate outputs based on new, unseen data.
+The extension allows you to connect to [Azure Machine Learning](/azure/machine-learning/overview-what-is-azure-machine-learning) to perform inference. You can use a trained machine learning model to make predictions or generate outputs based on new, unseen data.
 
 ## Enabling the azure_ai extension
 

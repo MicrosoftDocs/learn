@@ -64,11 +64,11 @@ This command outputs a table containing the columns, types, and additional detai
 
 ```sql
                Composite type "azure_cognitive.translated_text_result"
-   Column   |       Type        | Collation | Nullable | Default | Storage | Description 
+      Column       |                Type               | Collation | Nullable | Default | Storage  | Description 
 -------------------+-----------------------------------+-----------+----------+---------+----------+-------------
- translations   | azure_cognitive.translation[]  |     |     |    | extended | 
- detected_language | azure_cognitive.detected_language |     |     |    | extended | 
- source_text   | text               |     |     |    | extended |
+ translations      | azure_cognitive.translation[]     |           |          |         | extended | 
+ detected_language | azure_cognitive.detected_language |           |          |         | extended | 
+ source_text       | text                              |           |          |         | extended |
 ```
 
 ## Set the Language service endpoint and key

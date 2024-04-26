@@ -4,11 +4,11 @@ Generative AI, or GenAI, is an artificial intelligence algorithm capable of lear
 
 GenAI models apply specific machine learning techniques, such as Transformers and Recurrent Neural Networks (RNNs) for text generation and Generative Adversarial Networks (GANs) and Variational Autoencoders (VAEs) for image generation. These techniques enable the algorithm to understand the patterns and relationships within data and generate new, unique, and relevant content. GenAI finds applications in various domains, including:
 
-- **Text Autocompletion and Summarization**: Enhancing productivity by suggesting relevant text.
+- **Text autocompletion and summarization**: Enhancing productivity by suggesting relevant text.
 - **Translation**: Improving language translation services.
-- **Clustering and Segmentation**: Organizing data into meaningful groups.
-- **Question Answering**: Providing accurate responses to user queries.
-- **Anomaly Detection**: Identifying unusual patterns in data.
+- **Clustering and segmentation**: Organizing data into meaningful groups.
+- **Question answering**: Providing accurate responses to user queries.
+- **Anomaly detection**: Identifying unusual patterns in data.
 - **Healthcare**: Generating medical reports, diagnoses, and treatment recommendations.
 
 ## Explore generative AI language models

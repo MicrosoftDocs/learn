@@ -2,7 +2,7 @@ Generative AI, or GenAI, refers to a category of AI algorithms that can learn fr
 
 The [**azure_ai extension**](/azure/postgresql/flexible-server/generative-ai-azure-overview) is a powerful tool created by the PostgreSQL team at Microsoft that provides seamless integration between your Azure Database for PostgreSQL flexible server and Azure AI and Machine Learning services. It allows you to streamline the development process and harness the power of GenAI directly within their database, providing access to powerful natural language query processing capabilities. With just a few lines of SQL code, you can create vector embeddings, extract insights, and store them in the database. This extension bridges the data and actionable knowledge gap, making it a valuable asset for enterprises building GenAI solutions.
 
-![Diagram of the azure_ai extension for Azure Database for PostgreSQL extending the database with capabilities from Azure AI and Machine Learning services.](../media/azure-database-for-postgresql-azure-ai-extension-diagram.png)
+![Diagram of the azure_ai extension for Azure Database for PostgreSQL.](../media/azure-database-postgresql-azure-ai-extension-diagram.png)
 
 ## Azure AI services
 
@@ -16,11 +16,11 @@ The [**Azure OpenAI Service**](/azure/ai-services/openai/overview) provides REST
 
 ### Azure AI Language service
 
-The [**Azure AI Language**](/azure/ai-services/language-service/overview) empowers you to build intelligent applications that understand and process natural language. When integrated with an Azure Database for PostgreSQL flexible server instance, these services enhance your database capabilities, allowing you to perform tasks like sentiment analysis, text summarization, and keyphrase extraction directly within SQL queries.
+The [**Azure AI Language**](/azure/ai-services/language-service/overview) empowers you to build intelligent applications that understand and process natural language. When integrated with an Azure Database for PostgreSQL flexible server instance, these services enhance your database capabilities, allowing you to perform tasks like sentiment analysis, text summarization, and key phrase extraction directly within SQL queries.
 
 ## Azure Machine Learning
 
-[**Azure Machine Learning**](/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2) is a comprehensive cloud service designed for the machine learning project lifecycle. It provides a robust platform for building, deploying, and managing machine learning models.
+[**Azure Machine Learning**](/azure/machine-learning/overview-what-is-azure-machine-learning) is a comprehensive cloud service designed for the machine learning project lifecycle. It provides a robust platform for building, deploying, and managing machine learning models.
 
 ## Unlock AI-powered applications
 

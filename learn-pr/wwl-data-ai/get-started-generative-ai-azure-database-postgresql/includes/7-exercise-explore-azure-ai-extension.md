@@ -1,4 +1,4 @@
-Now, it is time for you to get hands-on with the `azure_ai` extension. In this exercise, you will install the `azure_ai` extension in an Azure Database for PostgreSQL database and explore the extension's capabilities for integrating [Azure OpenAI](/azure/ai-services/openai/overview) and the [Azure AI Language service](/azure/ai-services/language-service/) to incorporate rich generative AI capabilities into your database.
+Now, it is time for you to get hands-on with the `azure_ai` extension. In this exercise, you install the `azure_ai` extension in an Azure Database for PostgreSQL database and explore the extension's capabilities for integrating [Azure OpenAI](/azure/ai-services/openai/overview) and the [Azure AI Language service](/azure/ai-services/language-service/) to incorporate rich generative AI capabilities into your database.
 
 > [!Note]
 >
