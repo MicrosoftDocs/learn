@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.purview-audit-search-investigate.investigate-audit-premium
+uid: learn.wwl.purview-audit-search-investigate.audit-premium-investigate
 title: Investigate activities with Audit (Premium)
 metadata:
   title: Investigate activities with Audit (Premium)
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/investigate-audit-premium.md)]
+  [!include[](includes/audit-premium-investigate.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.purview-audit-search-investigate.retention-audit-premium
+uid: learn.wwl.purview-audit-search-investigate.audit-premium-retention
 title: Configure audit retention with Audit (Premium)
 metadata:
   title: Configure audit retention with Audit (Premium)
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/retention-audit-premium.md)]
+  [!include[](includes/audit-premium-retention.md)]

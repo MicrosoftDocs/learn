@@ -34,10 +34,11 @@ subjects:
 units:
 - learn.wwl.purview-audit-search-investigate.introduction
 - learn.wwl.purview-audit-search-investigate.audit-overview
-- learn.wwl.purview-audit-search-investigate.configure-manage-audit
-- learn.wwl.purview-audit-search-investigate.search-audit-standard
-- learn.wwl.purview-audit-search-investigate.investigate-audit-premium
-- learn.wwl.purview-audit-search-investigate.retention-audit-premium
+- learn.wwl.purview-audit-search-investigate.audit-configure-manage
+- learn.wwl.purview-audit-search-investigate.audit-standard-search
+- learn.wwl.purview-audit-search-investigate.audit-premium-investigate
+- learn.wwl.purview-audit-search-investigate.audit-export
+- learn.wwl.purview-audit-search-investigate.audit-premium-retention
 
 
 - learn.wwl.apply-manage-sensitivity-labels.protect-meetings-with-sensitivity-labels

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.purview-audit-search-investigate.configure-manage-audit
+uid: learn.wwl.purview-audit-search-investigate.audit-configure-manage
 title: Configure and manage auditing in Microsoft Purview
 metadata:
   title: Configure and manage auditing in Microsoft Purview
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/configure-manage-audit.md)]
+  [!include[](includes/audit-configure-manage.md)]

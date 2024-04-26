@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.purview-audit-search-investigate.search-audit-standard
+uid: learn.wwl.purview-audit-search-investigate.audit-standard-search
 title: Conduct searches with Audit (Standard)
 metadata:
   title: Conduct searches with Audit (Standard)
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/search-audit-standard.md)]
+  [!include[](includes/audit-standard-search.md)]
