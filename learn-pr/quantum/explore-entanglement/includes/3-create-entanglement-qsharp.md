@@ -32,9 +32,9 @@ Here's how it works:
 
 1. Apply the $CNOT$ operator to the control qubit, which is in a superposition state, and the target qubit, which is in the state $|0_t\rangle$.
 
-    $$ CNOT \frac{1}{\sqrt{2}}(|0_c\rangle+|1_c\rangle)\ket{0}_t = CNOT \frac{1}{\sqrt2}(|0_c0_t\rangle+|1_c0_t\rangle)= $$
-    $$ =\frac{1}{\sqrt2}(CNOT|0_c 0_t\rangle+CNOT|1_c0_t\rangle)= $$
-    $$= \frac{1}{\sqrt2}(|0_c 0_t\rangle+|1_c1_t\rangle)$$
+    $$ CNOT \frac{1}{\sqrt{2}}(\ket{0_c}+\ket{1_c})\ket{0}_t = CNOT \frac{1}{\sqrt2}(\ket{0_c 0_t}+|\ket{1_c 0_t})= $$
+    $$ =\frac{1}{\sqrt2}(CNOT \ket{0_c 0_t} + CNOT \ket{1_c 0_t})= $$
+    $$= \frac{1}{\sqrt2}(\ket{0_c 0_t}+\ket{1_c 1_t})$$
 
 ## Create and measure the Bell states using Q#
 
@@ -107,9 +107,9 @@ Here's how it works:
 
 1. Apply the $CNOT$ operator to the control qubit and the target qubit, which is in the state $|0_t\rangle$.
 
-    $$ CNOT \frac{1}{\sqrt{2}}(|0_c\rangle-|1_c\rangle)\ket{0}_t = CNOT \frac{1}{\sqrt2}(|0_c0_t\rangle-|1_c0_t\rangle)=$$
-    $$ =\frac{1}{\sqrt2}(CNOT|0_c0_t\rangle-CNOT|1_c0_t\rangle) =$$
-    $$= \frac{1}{\sqrt2}(|0_c0_t\rangle-|1_c1_t\rangle)$$
+    $$ CNOT \frac{1}{\sqrt{2}}(\ket{0_c}-\ket{1_c})\ket{0}_t = CNOT \frac{1}{\sqrt2}(\ket{0_c 0_t}-|\ket{1_c 0_t})= $$
+    $$ =\frac{1}{\sqrt2}(CNOT \ket{0_c 0_t} - CNOT \ket{1_c 0_t})= $$
+    $$= \frac{1}{\sqrt2}(\ket{0_c 0_t}-\ket{1_c 1_t})$$
 
 Modify the Q# code to create the Bell state $\ket{\phi^-}$. Run the program to see the entangled state and the circuit diagram.
 
