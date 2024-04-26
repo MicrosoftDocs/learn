@@ -28,7 +28,7 @@ Managed identities: Azure Key Vault provides a way to securely store credentials
 
 ## Authentication
 
-To do any operations with Key Vault, you first need to authenticate to it. There arethree ways to authenticate to Key Vault:
+To do any operations with Key Vault, you first need to authenticate to it. There are three ways to authenticate to Key Vault:
 
 1.  Managed identities for Azure resources: When you deploy an app on a virtual machine in Azure, you can assign an identity to your virtual machine that has access to Key Vault. You can also assign identities to other Azure resources. The benefit of this approach is that the app or service isn't managing the rotation of the first secret. Azure automatically rotates the identity. We recommend this approach as a best practice.
 2.  Service principal and certificate: You can use a service principal and an associated certificate that has access to Key Vault. We don't recommend this approach because the application owner or developer must rotate the certificate.
