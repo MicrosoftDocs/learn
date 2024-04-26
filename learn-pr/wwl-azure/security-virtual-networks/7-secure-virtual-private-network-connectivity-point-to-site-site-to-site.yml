@@ -4,7 +4,7 @@ title: Secure VPN connectivity, including point-to-site and site-to-site
 metadata:
   title: Secure VPN connectivity, including point-to-site and site-to-site
   description: "Secure VPN connectivity, including point-to-site and site-to-site"
-  ms.date: 04/25/2024
+  ms.date: 04/26/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/6-secure-virtual-private-network-connectivity-point-to-site-site-to-site.md)]
+  [!include[](includes/7-secure-virtual-private-network-connectivity-point-to-site-site-to-site.md)]
