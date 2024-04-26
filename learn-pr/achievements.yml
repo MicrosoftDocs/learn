@@ -3178,3 +3178,8 @@ achievements:
   title: Operational design principles for enterprise-scale architecture 
   summary: Learn how to operationalize an Azure enterprise estate by using centralized management. This approach provides the guardrails needed to enable the organization's path to the cloud.
   iconUrl: /training/achievements/enterprise-scale-operations.svg
+- uid: learn.azure-diagnose-application-startup-errors-with-kudu-console.badge
+  type: badge
+  title: Diagnose startup errors in your application by using the Kudu console
+  summary: This module helps you understand the common startup errors in an ASP.NET Core application and diagnose them by using the Kudu console and the Azure portal.
+  iconUrl: /training/achievements/azure-diagnose-application-startup-errors-with-kudu-console.svg
