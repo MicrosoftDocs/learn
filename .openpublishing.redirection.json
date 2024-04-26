@@ -36601,6 +36601,51 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/1-introduction.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/2-view-manage-service-provider-activities.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/3-use-centralized-monitor-scalable-way.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/4-governance-scale-manage-customer-tenants.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/5-secure-customer-resources-scale.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/6a-knowledge-check.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/6-manage-hybrid-scale.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/7-summary.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/index.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+   {
       "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-security-posture/2-implement-azure-security-center.md",
       "redirect_url": "/training/modules/microsoft-defender-cloud-security-posture/2-implement-microsoft-defender-for-cloud",
       "redirect_document_id": false
