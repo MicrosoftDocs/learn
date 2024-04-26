@@ -9166,6 +9166,55 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/2-create-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/3-exercise-create-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/4-add-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/5-exercise-add-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/6-build-deploy-static-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/7-exercise-build-deploy-static-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/student-evangelism/django/3-admin-site/1-introduction.md",
       "redirect_url": "/training/modules/django-admin-site/1-introduction",
       "redirect_document_id": true
