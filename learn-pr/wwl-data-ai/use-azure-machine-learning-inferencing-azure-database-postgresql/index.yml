@@ -34,7 +34,7 @@ units:
 - learn.wwl.use-azure-machine-learning-inferencing-azure-database-postgresql.introduction
 - learn.wwl.use-azure-machine-learning-inferencing-azure-database-postgresql.azure-machine-learning-automated-machine-learning
 - learn.wwl.use-azure-machine-learning-inferencing-azure-database-postgresql.invoke-azure-machine-learning-postgresql
-- learn.wwl.use-azure-machine-learning-inferencing-azure-database-postgresql.exercise-perform-inference-azure-ml
+- learn.wwl.use-azure-machine-learning-inferencing-azure-database-postgresql.exercise-perform-inference-azure-machine-learning
 - learn.wwl.use-azure-machine-learning-inferencing-azure-database-postgresql.knowledge-check
 - learn.wwl.use-azure-machine-learning-inferencing-azure-database-postgresql.summary
 badge:
