@@ -1,6 +1,6 @@
 Recall that you require embedding vectors stored in a vector database to run a semantic search. Azure Database for PostgreSQL flexible server can be used as a [vector database](/azure/postgresql/flexible-server/how-to-use-pgvector) with the `vector` extension.
 
-![An image of an Azure Database for PostgreSQL flexible server and the extension named "vector." Next to it are four stored vectors with n-dimensions and arbitrary numeric values.](../media/store-vectors.png)
+![Diagram of an Azure Database for PostgreSQL flexible server and the extension named "vector." Next to it are four stored vectors with n-dimensions and arbitrary numeric values.](../media/store-vectors.png)
 
 ## Introduction to `vector`
 
