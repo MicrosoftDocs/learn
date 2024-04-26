@@ -1,15 +1,15 @@
-Authentication with Key Vault works in conjunction with Microsoft Entra ID, which is responsible for authenticating the identity of any given **security principal**.
+Authentication with Key Vault works in conjunction with Microsoft Entra ID, which is responsible for authenticating the identity of any given security principal.
 
-A security principal is an object that represents a user, group, service, or application that's requesting access to Azure resources. Azure assigns a unique **object ID** to every security principal.<br>
+A security principal is an object that represents a user, group, service, or application that's requesting access to Azure resources. Azure assigns a unique object ID to every security principal.<br>
 
- -  A **user** security principal identifies an individual who has a profile in Microsoft Entra ID.<br>
- -  A **group** security principal identifies a set of users created in Microsoft Entra ID. Any roles or permissions assigned to the group are granted to all of the users within the group.<br>
+ -  A user security principal identifies an individual who has a profile in Microsoft Entra ID.<br>
+ -  A group security principal identifies a set of users created in Microsoft Entra ID. Any roles or permissions assigned to the group are granted to all of the users within the group.<br>
  -  A service principal is a type of security principal that identifies an application or service, which is to say, a piece of code rather than a user or group. A service principal's object ID acts like its username; the service principal's client secret acts like its password.<br>
 
 For applications, there are two ways to obtain a service principal:<br>
 
- -  Recommended: enable a system-assigned managed identity for the application. With managed identity, Azure internally manages the application's service principal and automatically authenticates the application with other Azure services. Managed identity is available for applications deployed to a variety of services.
- -  If you cannot use managed identity, you instead **register** the application with your Microsoft Entra tenant, as described on Quickstart: Register an application with the Azure identity platform. Registration also creates a second application object that identifies the app across all tenants.
+1.  Recommended: enable a system-assigned managed identity for the application. With managed identity, Azure internally manages the application's service principal and automatically authenticates the application with other Azure services. Managed identity is available for applications deployed to a variety of services.
+2.  If you cannot use managed identity, you instead register the application with your Microsoft Entra tenant, as described on Quickstart: Register an application with the Azure identity platform. Registration also creates a second application object that identifies the app across all tenants.
 
 ## Configure the Key Vault firewall
 

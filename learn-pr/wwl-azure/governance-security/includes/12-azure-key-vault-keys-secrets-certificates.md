@@ -48,10 +48,10 @@ A Key Vault certificate has the following attribute:<br>
 
 A response includes these additional read-only attributes:
 
- -  **created**: IntDate indicates when this version of the certificate was created.<br>
- -  **updated**: IntDate indicates when this version of the certificate was updated.
- -  **exp**: IntDate contains the value of the expiration date of the X.509 certificate.
- -  **nbf**: IntDate contains the value of the "not before" date of the X.509 certificate.
+ -  created: IntDate indicates when this version of the certificate was created.<br>
+ -  updated: IntDate indicates when this version of the certificate was updated.
+ -  exp: IntDate contains the value of the expiration date of the X.509 certificate.
+ -  nbf: IntDate contains the value of the "not before" date of the X.509 certificate.
 
 > [!NOTE]
 > *If a Key Vault certificate expires it can still be retrieved, but certificate may become inoperable in scenarios like Transport Layer Security protection where expiration of certificate is validated.*<br>
@@ -73,7 +73,7 @@ At a high level, a certificate policy contains the following information:
 
  -  X.509 certificate properties, which include subject name, subject alternate names, and other properties that are used to create an X.509 certificate request.
  -  Key properties, which include key type, key length, exportable, and `ReuseKeyOnRenewal` fields. These fields instruct Key Vault on how to generate a key.
-     -  **Supported key types are** RSA, RSA-HSM, EC, EC-HSM, and octet.
+     -  Supported key types are RSA, RSA-HSM, EC, EC-HSM, and octet.
  -  Secret properties, such as the content type of an addressable secret to generate the secret value, for retrieving a certificate as a secret.
  -  Lifetime actions for the Key Vault certificate. Each lifetime action contains:
  -  Trigger: Specified as days before expiration or lifetime span percentage.
@@ -113,8 +113,6 @@ Before a certificate issuer can be created in a key vault, an administrator must
 1.  Onboard the organization with at least one CA provider.
 2.  Create requester credentials for Key Vault to enroll (and renew) Transport Layer Security/Secure Sockets Layer certificates. This step provides the configuration for creating an issuer object of the provider in the key vault.
 
-For more information on creating issuer objects from the certificate portal, see the Key Vault Team Blog.
-
 Key Vault allows for the creation of multiple issuer objects with different issuer provider configurations. After an issuer object is created, its name can be referenced in one or multiple certificate policies. Referencing the issuer object instructs Key Vault to use the configuration as specified in the issuer object when it's requesting the X.509 certificate from the CA provider during certificate creation and renewal.
 
 Issuer objects are created in the vault. They can be used only with Key Vault certificates in the same vault.
@@ -139,9 +137,9 @@ Transport Layer Security certificates can help encrypt communications over the i
 
 As an example, here are some use cases of using certificates to secure communication and enable authentication:<br>
 
- -  **Intranet/internet websites**: Protect access to your intranet site and ensure encrypted data transfer over the internet through Transport Layer Security certificates.<br>
- -  **IoT and networking devices**: Protect and secure your devices by using certificates for authentication and communication.
- -  **Cloud/multicloud**: Secure cloud-based applications on-premises, cross-cloud, or in your cloud provider's tenant.
+ -  Intranet/internet websites: Protect access to your intranet site and ensure encrypted data transfer over the internet through Transport Layer Security certificates.<br>
+ -  IoT and networking devices: Protect and secure your devices by using certificates for authentication and communication.
+ -  Cloud/multicloud: Secure cloud-based applications on-premises, cross-cloud, or in your cloud provider's tenant.
 
 ## Code signing
 
