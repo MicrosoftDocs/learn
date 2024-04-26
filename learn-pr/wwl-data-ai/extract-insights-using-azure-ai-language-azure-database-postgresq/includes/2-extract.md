@@ -14,7 +14,7 @@ Key phrase extraction applies to various tasks:
 - Content categorization: Use key phrases to index documents for search and browsing. Key phrases can also be used to visualize documents in word clouds.
 - Document clustering: Extensive collections of support tickets, product reviews, and other unstructured input can be clustered and analyzed using key phrases.
 
-## Using keyphrase extraction SQL with Azure Cognitive Services
+## Using key phrase extraction SQL with Azure Cognitive Services
 
 The [azure_ai extension](/azure/postgresql/flexible-server/generative-ai-azure-overview) for Azure Database for PostgreSQL flexible server provides user-defined functions (UDFs) to access AI capabilities from within SQL directly. The key phrase extraction API is accessed with the `azure_cognitive.extract_key_phrases` function:
 
