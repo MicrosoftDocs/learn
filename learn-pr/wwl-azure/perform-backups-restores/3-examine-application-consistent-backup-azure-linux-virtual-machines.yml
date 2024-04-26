@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
-  ms.service: sap-on-azure, linux-related-content
 durationInMinutes: 8
 content: |
   [!include[](includes/3-examine-application-consistent-backup-azure-linux-virtual-machines.md)]

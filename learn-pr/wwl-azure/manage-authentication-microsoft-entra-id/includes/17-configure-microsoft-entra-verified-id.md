@@ -4,11 +4,11 @@ As a verifier, you unlock privileges to subjects that possess verified credentia
 
 ## Prerequisites
 
- -  Set up a tenant for Microsoft Entra Verified ID.
- -  If you want to clone the repository that hosts the sample app, install Git.
- -  Visual Studio Code, Visual Studio or similar code editor.
- -  .NET 7.0.
- -  Download [ngrok](https://ngrok.com/) and sign up for a free account.
+ -  [Set up a tenant for Microsoft Entra Verified ID](/entra/verified-id/verifiable-credentials-configure-tenant).
+ -  If you want to clone the repository that hosts the sample app, install [Git](https://git-scm.com/downloads).
+ -  [Visual Studio Code](https://code.visualstudio.com/Download), [Visual Studio](https://visualstudio.microsoft.com/downloads/) or similar code editor.
+ -  [.NET 7.0](https://dotnet.microsoft.com/download/dotnet/6.0).
+ -  Download [ngrok](https://ngrok.com/) and sign up for a free account. If you can't use ngrok in your organization, read this [FAQ](/entra/verified-id/verifiable-credentials-faq#i-cannot-use-ngrok-what-do-i-do).
  -  A mobile device with the latest version of Microsoft Authenticator.
 
 ## Gather tenant details to set up your sample application
@@ -28,13 +28,9 @@ The following screenshot demonstrates how to copy the required values:
 
 ## Download the sample code
 
-The sample application is available in .NET, and the code is maintained in a GitHub repository. Download the sample code from the GitHub repo, or clone the repository to your local computer:
+The sample application is available in .NET, and the code is maintained in a GitHub repository. Download the sample code from the [GitHub repo](https://github.com/Azure-Samples/active-directory-verifiable-credentials-dotnet), or clone the repository to your local computer:<br>
 
-```
-git clone https://github.com/Azure-Samples/active-directory-verifiable-credentials-dotnet.git
-```
-
-## Configure the verifiable credentials app
+## Configure the verifiable credentials app<br>
 
 Create a client secret for the registered application you created. The sample application uses the client secret to prove its identity when it requests tokens.
 
