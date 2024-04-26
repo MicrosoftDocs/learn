@@ -82,4 +82,3 @@ PowerShell commands provide flexibility for creating, viewing, editing, and dele
 
 - **Edit policies in PowerShell** using the `Set-UnifiedAuditLogRetentionPolicy` cmdlet.
 - **Delete policies in PowerShell** using the `Remove-UnifiedAuditLogRetentionPolicy` cmdlet. It might take up to 30 minutes for the policy to be removed from your organization.
-

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-audit-search-investigate.audit-export
+title: Export audit log data
+metadata:
+  title: Export audit log data
+  description: "Export audit log data"
+  ms.date: 04/25/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/audit-export.md)]
