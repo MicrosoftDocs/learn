@@ -3158,9 +3158,33 @@ achievements:
   title: Who Hacked cloud game
   summary: Provide instructions and guidance on playing the SC-200 Who Hacked cloud game.
   iconUrl: /training/achievements/sc-200-who-hacked-cloud-game.svg
+- uid: learn.azure.enterprise-scale-architecture.trophy
+  type: trophy
+  title: Create a scalable and modular architecture with Azure landing zones
+  summary: Learn how Microsoft Cloud Adoption Framework for Azure landing zones can help your organization to accelerate cloud adoption from months to weeks.
+  iconUrl: /training/achievements/enterprise-scale-architecture.svg
+- uid: learn.azure.enterprise-scale-introduction.badge
+  type: badge
+  title: Introduction to Azure landing zones in the Microsoft Cloud Adoption Framework
+  summary: Learn how Azure landing zones help organizations build the strategic design path and target technical state for your Azure environment.
+  iconUrl: /training/achievements/enterprise-scale-introduction.svg
+- uid: learn.azure.enterprise-scale-organizational-design-principles.badge
+  type: badge
+  title: Organizational design principles for enterprise-scale architecture 
+  summary: Evaluate the critical design areas for enterprise enrollment and Microsoft Entra tenants, identity and access management, and management group.
+  iconUrl: /training/achievements/enterprise-scale-organizational-design-principles.svg
+- uid: learn.azure.enterprise-scale-networking.badge
+  type: badge
+  title: Network design principles for enterprise-scale architecture
+  summary: This training examines key design considerations and recommendations surrounding networking and connectivity to, from, and within Microsoft Azure for the enterprise customer.
+  iconUrl: /training/achievements/enterprise-scale-networking.svg
+- uid: learn.azure.enterprise-scale-operations.badge
+  type: badge
+  title: Operational design principles for enterprise-scale architecture 
+  summary: Learn how to operationalize an Azure enterprise estate by using centralized management. This approach provides the guardrails needed to enable the organization's path to the cloud.
+  iconUrl: /training/achievements/enterprise-scale-operations.svg
 - uid: learn.azure-diagnose-application-startup-errors-with-kudu-console.badge
   type: badge
   title: Diagnose startup errors in your application by using the Kudu console
   summary: This module helps you understand the common startup errors in an ASP.NET Core application and diagnose them by using the Kudu console and the Azure portal.
   iconUrl: /training/achievements/azure-diagnose-application-startup-errors-with-kudu-console.svg
-
