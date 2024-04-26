@@ -3158,3 +3158,8 @@ achievements:
   title: Create and publish a static web app with Gatsby and Azure Static Web Apps
   summary: Use Gatsby and React to develop a static web app, then deploy it to the web with Azure Static Web Apps.
   iconUrl: /training/achievements/static-apps-gatsby.svg
+- uid: learn.azure-diagnose-application-startup-errors-with-kudu-console.badge
+  type: badge
+  title: Diagnose startup errors in your application by using the Kudu console
+  summary: This module helps you understand the common startup errors in an ASP.NET Core application and diagnose them by using the Kudu console and the Azure portal.
+  iconUrl: /training/achievements/azure-diagnose-application-startup-errors-with-kudu-console.svg

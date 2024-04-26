@@ -32741,6 +32741,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/azure-diagnose-application-startup-errors-with-kudu-console/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/test/troubleshoot-azure-iis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-diagnose-application-startup-errors-with-kudu-console/2-kudu-console-concepts.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/test/troubleshoot-azure-iis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-diagnose-application-startup-errors-with-kudu-console/3-app-startup-errors.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/test/troubleshoot-azure-iis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-diagnose-application-startup-errors-with-kudu-console/4-exercise-implement-a-web-application.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/test/troubleshoot-azure-iis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-diagnose-application-startup-errors-with-kudu-console/5-exercise-diagnose-application-event-log-using-kudu-console.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/test/troubleshoot-azure-iis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-diagnose-application-startup-errors-with-kudu-console/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/test/troubleshoot-azure-iis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-diagnose-application-startup-errors-with-kudu-console/index.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/test/troubleshoot-azure-iis",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/intro-to-personalizer/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
       "redirect_document_id": false
