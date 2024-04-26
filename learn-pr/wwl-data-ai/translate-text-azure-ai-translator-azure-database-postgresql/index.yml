@@ -18,7 +18,7 @@ abstract: |
   - Learn how the Azure AI extension enables seamless interaction between Azure Database for PostgreSQL - Flexible Server and Azure AI Translator.
 
   - Understand one way to translate documents automatically as part of record insertion.
-prerequisites: Before starting this module, you should have experience working with the PL/pgSQL language.
+prerequisites: '- Before starting this module, you should have experience working with the PL/pgSQL language.'
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
