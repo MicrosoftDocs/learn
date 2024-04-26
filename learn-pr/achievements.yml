@@ -3153,3 +3153,9 @@ achievements:
   title: Who Hacked cloud game
   summary: Provide instructions and guidance on playing the SC-200 Who Hacked cloud game.
   iconUrl: /training/achievements/sc-200-who-hacked-cloud-game.svg
+- uid: learn.azure-diagnose-application-startup-errors-with-kudu-console.badge
+  type: badge
+  title: Diagnose startup errors in your application by using the Kudu console
+  summary: This module helps you understand the common startup errors in an ASP.NET Core application and diagnose them by using the Kudu console and the Azure portal.
+  iconUrl: /training/achievements/azure-diagnose-application-startup-errors-with-kudu-console.svg
+  
