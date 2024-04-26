@@ -1,6 +1,6 @@
 To run a semantic search, you must compare the query embedding with the embeddings of the searched items. The `azure_ai` extension for Azure Database for PostgreSQL - Flexible Server integrates with Azure OpenAI to generate embedding vectors.
 
-![A diagram showing "lorem ipsum" input text being sent to the Azure OpenAI embeddings API, resulting in a vector array of numbers.](../media/create_embedding.png)
+![A diagram showing "lorem ipsum" input text being sent to the Azure OpenAI embeddings API, resulting in a vector array of numbers.](../media/create-embedding.png)
 
 ## Introduction to `azure_ai` and Azure OpenAI
 

@@ -1,7 +1,8 @@
 Let's go over the fundamentals of semantic search:
-How it differs from standard lexical search.
-What is vector embedding?
-What do vector databases do?
+
+- How it differs from standard lexical search.
+- What is vector embedding?
+- What do vector databases do?
 
 ## What is semantic search?
 
@@ -17,13 +18,13 @@ To perform a semantic search, first generate the query's embedding vector. Then,
 
 Most relational database use cases don't involve storing *n*-dimensional vectors and computing the numeric distance between them. Efficient semantic search requires **vector database** functionality.
 
-![A diagram showing a document and a query going through the OpenAI Embeddings API to become embedding vectors. These vectors are then compared using cosine distance.](../media/cosine_distance.png)
+![A diagram showing a document and a query going through the OpenAI Embeddings API to become embedding vectors. These vectors are then compared using cosine distance.](../media/cosine-distance.png)
 
 ## Embeddings
 
 An **embedding** is a numerical representation of semantics. Embeddings are represented as *n*-dimensional vectors: arrays of *n* numbers. Each dimension represents some semantic quality as determined by the embedding model.
 
-![A diagram showing "lorem ipsum" input text being sent to the Azure OpenAI embeddings API, resulting in a vector array of numbers.](../media/create_embedding.png)
+![A diagram showing "lorem ipsum" input text being sent to the Azure OpenAI embeddings API, resulting in a vector array of numbers.](../media/create-embedding.png)
 
 If two embedding vectors point in similar directions, they represent similar concepts, such as "bright" and "sunny." If they point away from each other, they represent opposite concepts, such as "sad" and "happy." The embedding model structure and training data determine what is considered similar and different.
 

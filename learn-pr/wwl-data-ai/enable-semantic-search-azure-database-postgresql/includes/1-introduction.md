@@ -2,7 +2,7 @@ Semantic search augments standard keyword search with semantic similarity. This 
 
 This module shows how to enable semantic search in Azure Database for PostgreSQL flexible server and how to use Azure OpenAI to generate vector embeddings.
 
-![Diagram of an Azure Database with the vector and azure_ai extensions. It stores embedding vectors, which are compared with a query embedding to get semantically ordered results.](../media/overview.png)
+![Diagram of an Azure Database with the vector and azure_ai extensions.](../media/overview.png)
 
 ## Scenario
 
