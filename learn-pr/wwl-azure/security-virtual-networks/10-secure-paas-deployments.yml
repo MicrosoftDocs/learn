@@ -4,7 +4,7 @@ title: Configure firewall settings on PaaS resources
 metadata:
   title: Configure firewall settings on PaaS resources
   description: "Configure firewall settings on PaaS resources"
-  ms.date: 04/25/2024
+  ms.date: 04/26/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/9-secure-paas-deployments.md)]
+  [!include[](includes/10-secure-paas-deployments.md)]
