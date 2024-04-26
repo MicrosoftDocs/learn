@@ -85,7 +85,7 @@ To ensure the security of data in transit to Azure Monitor logs, we strongly enc
 
 The agent for Linux and Windows communicates outbound to the Azure Monitor service over TCP port 443. If the machine connects through a firewall or proxy server to communicate over the internet, review the following requirements to understand the network configuration required. If your IT security policies do not allow computers on the network to connect to the internet, set up a [Log Analytics gateway](/azure/azure-monitor/agents/gateway) and configure the agent to connect through the gateway to Azure Monitor. The agent can then receive configuration information and send data collected.
 
-:::image type="content" source="../media/log-analytics-agent-example-69281e32.png" alt-text="Diagram showing an example of a Log Analytics gateway network requirements.":::
+:::image type="content" source="../media/log-analytics-agent-example-69281e32.png" alt-text="Diagram showing an example of a Log Analytics gateway network requirement.":::
 
 
 The following table lists the proxy and firewall configuration information required for the Linux and Windows agents to communicate with Azure Monitor logs.
@@ -114,14 +114,14 @@ For the Windows agent connected directly to the service, the proxy configuration
 
 For the Linux agent, the proxy server is specified during installation or [after installation](/azure/azure-monitor/agents/agent-manage#update-proxy-settings) by modifying the proxy.conf configuration file. The Linux agent proxy configuration value has the following syntax:
 
-`[protocol://][user:password@]proxyhost[:port]`
+`[protocol://][user:password@]proxy host[:port]`
 
 | **Property** | **Description**                                                 |
 | ------------ | --------------------------------------------------------------- |
 | Protocol     | https                                                           |
 | user         | Optional username for proxy authentication                      |
 | password     | Optional password for proxy authentication                      |
-| proxyhost    | Address or FQDN of the proxy server/Log Analytics gateway       |
+| proxy host   | Address or FQDN of the proxy server/Log Analytics gateway       |
 | port         | Optional port number for the proxy server/Log Analytics gateway |
 
 For example: `https://user01:password@proxy01.contoso.com:30443`
