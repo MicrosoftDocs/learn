@@ -4,8 +4,8 @@ title: Summary
 metadata:
   unitType: summary
   title: Summary
-  description: Summary for testing your Bicep code by using GitHub Actions.
-  ms.date: 12/27/2022
+  description: Review what you learned about testing your Bicep code by using GitHub Actions.
+  ms.date: 04/10/2024
   author: mumian
   ms.author: jgao
   ms.topic: unit
