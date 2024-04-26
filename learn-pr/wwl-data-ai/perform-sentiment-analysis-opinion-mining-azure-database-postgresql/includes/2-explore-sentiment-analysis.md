@@ -2,7 +2,7 @@
 
 The web and mobile apps for Margie's Travel allow renters to submit reviews detailing their experiences staying at properties listed in the apps. The text of these reviews contains valuable information about how the customer felt about the property, its host, and their stay. Understanding these sentiments can help Margie's Travel better serve its customers and provide valuable feedback to property owners and managers.
 
-## Analyze Sentiment with the azure_ai Extension
+## Analyze sentiment with the azure_ai extension
 
 The `azure_ai` extension for Azure Database for PostgreSQL - Flexible Server relies on integration with the Azure AI Language service to perform sentiment analysis. The sentiment analysis capabilities of the extension are accessible using the `analyze_sentiment()` function within the `azure_cognitive` schema.
 
