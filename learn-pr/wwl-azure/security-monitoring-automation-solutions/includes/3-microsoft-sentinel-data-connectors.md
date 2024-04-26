@@ -25,8 +25,6 @@ Data connectors that use APIs either integrate from the provider side or integra
 
 An API integration built by the provider connects with the provider data sources and pushes data into Microsoft Sentinel custom log tables using the Azure Monitor Data Collector API.
 
-To learn about REST API integration, read your provider documentation and Connect your data source to Microsoft Sentinel's REST-API to ingest data.<br>
-
 ### REST API integration using Azure Functions<br>
 
 Integrations that use Azure Functions to connect with a provider API first format the data, and then send it to Microsoft Sentinel custom log tables using the Azure Monitor Data Collector API.
@@ -53,7 +51,7 @@ Log formats vary, but many sources support CEF-based formatting. The Microsoft S
 
 For data sources that emit data in CEF, set up the Syslog agent and then configure the CEF data flow. After successful configuration, the data appears in the **CommonSecurityLog** table.
 
-## Custom logs
+### Custom logs
 
 For some data sources, you can collect logs as files on Windows or Linux computers using the Log Analytics custom log collection agent.
 
@@ -76,9 +74,3 @@ Both Microsoft and other organizations author Microsoft Sentinel data connectors
 | Microsoft supported | Applies to data connectors for data sources where Microsoft is the data provider and author.<br>Some Microsoft-authored data connectors for non-Microsoft data sources.<br><br>Microsoft supports and maintains data connectors in this category according to the Microsoft Azure Support Plans.<br><br>Partners or the Community support data connectors that are authored by any party other than Microsoft.                                                                                                 |
 | Partner supported   | Applies to data connectors authored by parties other than Microsoft.<br><br>The partner company provides support or maintenance for these data connectors. The partner company can be an Independent Software Vendor, a Managed Service Provider, a Systems Integrator, or any organization whose contact information is provided on the Microsoft Sentinel page for that data connector.<br><br>For any issues with a partner supported data connector, contact the specified data connector support contact. |
 | Community supported | Applies to data connectors authored by Microsoft or partner developers that don't have listed contacts for data connector support and maintenance on the specified data connector page in Microsoft Sentinel.                                                                                                                                                                                                                                                                                                  |
-
-## Find the support contact for a data connector
-
-1. In the Microsoft Sentinel Data connectors page, select the relevant connector.
-
-2. To access support and maintenance for the connector, use the support contact link in the Supported by field on the side panel for the connecter.
