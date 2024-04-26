@@ -23,7 +23,7 @@ The composite type contains the sentiment predictions of the input text. It incl
 
 The function assigns sentiment labels (positive, negative, or neutral) to individual sentences or entire documents. These labels indicate the emotional tone expressed in the text. It returns confidence scores along with the sentiment labels, representing the model's confidence in its predictions.
 
-## Benefits of Sentiment Analysis
+## Benefits of sentiment analysis
 
 - Understand customer feedback: Analyze reviews, social media posts, surveys, etc.
 - Monitor brand reputation: Track sentiment trends over time.
