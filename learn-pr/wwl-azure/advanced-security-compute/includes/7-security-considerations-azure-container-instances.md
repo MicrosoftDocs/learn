@@ -1,20 +1,20 @@
 ## Use a private registry
 
-Containers are built from images that are stored in one or more repositories. These repositories can belong to a public registry, like Docker Hub, or to a private registry. An example of a private registry is the Docker Trusted Registry, which can be installed on-premises or in a virtual private cloud. You can also use cloud-based private container registry services, including Azure Container Registry.
+Containers are built from images that are stored in one or more repositories. These repositories can belong to a public registry, like [Docker Hub](https://hub.docker.com/), or to a private registry. An example of a private registry is the [Docker Trusted Registry](https://docs.docker.com/datacenter/dtr/), which can be installed on-premises or in a virtual private cloud. You can also use cloud-based private container registry services, including [Azure Container Registry](/azure/container-registry/container-registry-intro).
 
-A publicly available container image does not guarantee security. Container images consist of multiple software layers, and each software layer might have vulnerabilities. To help reduce the threat of attacks, you should store and retrieve images from a private registry, such as Azure Container Registry or Docker Trusted Registry. In addition to providing a managed private registry, Azure Container Registry supports service principal-based authentication through Microsoft Entra ID for basic authentication flows. This authentication includes role-based access for read-only (pull), write (push), and other permissions.
+A publicly available container image does not guarantee security. Container images consist of multiple software layers, and each software layer might have vulnerabilities. To help reduce the threat of attacks, you should store and retrieve images from a private registry, such as Azure Container Registry or Docker Trusted Registry. In addition to providing a managed private registry, Azure Container Registry supports [service principal-based authentication](/azure/container-registry/container-registry-authentication) through Microsoft Entra ID for basic authentication flows. This authentication includes role-based access for read-only (pull), write (push), and other permissions.
 
 ## Monitor and scan container images
 
 Take advantage of solutions to scan container images in a private registry and identify potential vulnerabilities. It’s important to understand the depth of threat detection that the different solutions provide.
 
-For example, Azure Container Registry optionally integrates with Microsoft Defender for Cloud to automatically scan all Linux images pushed to a registry. Microsoft Defender for Cloud's integrated Qualys scanner detects image vulnerabilities, classifies them, and provides remediation guidance.<br>
+For example, Azure Container Registry optionally [integrates with Microsoft Defender for Cloud](/azure/security-center/defender-for-container-registries-introduction) to automatically scan all Linux images pushed to a registry. Microsoft Defender for Cloud's integrated Qualys scanner detects image vulnerabilities, classifies them, and provides remediation guidance.
 
-Security monitoring and image scanning solutions such as Twistlock and Aqua Security are also available through the Azure Marketplace.
+Security monitoring and image scanning solutions such as [Twistlock](https://azuremarketplace.microsoft.com/marketplace/apps/twistlock.twistlock?tab=Overview) and [Aqua Security](https://azuremarketplace.microsoft.com/marketplace/apps/aqua-security.aqua-security?tab=Overview) are also available through the Azure Marketplace.
 
 ## Protect credentials
 
-Containers can spread across several clusters and Azure regions. So, you must secure credentials required for logins or API access, such as passwords or tokens. Ensure that only privileged users can access those containers in transit and at rest. Inventory all credential secrets, and then require developers to use emerging secrets-management tools that are designed for container platforms. Make sure that your solution includes encrypted databases, TLS encryption for secrets data in transit, and least-privilege Azure role-based access control (Azure RBAC). Azure Key Vault is a cloud service that safeguards encryption keys and secrets (such as certificates, connection strings, and passwords) for containerized applications. Because this data is sensitive and business critical, secure access to your key vaults so that only authorized applications and users can access them.
+Containers can spread across several clusters and Azure regions. So, you must secure credentials required for logins or API access, such as passwords or tokens. Ensure that only privileged users can access those containers in transit and at rest. Inventory all credential secrets, and then require developers to use emerging secrets-management tools that are designed for container platforms. Make sure that your solution includes encrypted databases, TLS encryption for secrets data in transit, and least-privilege [Azure role-based access control (Azure RBAC)](/azure/role-based-access-control/overview). [Azure Key Vault](/azure/key-vault/general/security-features) is a cloud service that safeguards encryption keys and secrets (such as certificates, connection strings, and passwords) for containerized applications. Because this data is sensitive and business critical, secure access to your key vaults so that only authorized applications and users can access them.
 
 ## Considerations for the container ecosystem
 
@@ -78,33 +78,35 @@ A safe list not only reduces the attack surface but can also provide a baseline 
 
 To help protect containers in one subnet from security risks in another subnet, maintain network segmentation (or nano-segmentation) or segregation between running containers. Maintaining network segmentation might also be necessary to use containers in industries that are required to meet compliance mandates.
 
-For example, the partner tool Aqua provides an automated approach for nano-segmentation. Aqua monitors container network activities in runtime. It identifies all inbound and outbound network connections to/from other containers, services, IP addresses, and the public internet. Nano-segmentation is automatically created based on monitored traffic.<br>
+For example, the partner tool [Aqua](https://azuremarketplace.microsoft.com/marketplace/apps/aqua-security.aqua-security?tab=Overview) provides an automated approach for nano-segmentation. Aqua monitors container network activities in runtime. It identifies all inbound and outbound network connections to/from other containers, services, IP addresses, and the public internet. Nano-segmentation is automatically created based on monitored traffic.
 
 ## Monitor container activity and user access
 
 As with any IT environment, you should consistently monitor activity and user access to your container ecosystem to quickly identify any suspicious or malicious activity. Azure provides container monitoring solutions including:
 
- -  Azure Monitor for containers monitors the performance of your workloads deployed to Kubernetes environments hosted on Azure Kubernetes Service (AKS). Azure Monitor for containers gives you performance visibility by collecting memory and processor metrics from controllers, nodes, and containers that are available in Kubernetes through the Metrics API.<br>
- -  The Azure Container Monitoring solution helps you view and manage other Docker and Windows container hosts in a single location. For example:<br>
-     -  View detailed audit information that shows commands used with containers.<br>
+ -  [Azure Monitor for containers](/azure/azure-monitor/containers/container-insights-overview) monitors the performance of your workloads deployed to Kubernetes environments hosted on Azure Kubernetes Service (AKS). Azure Monitor for containers gives you performance visibility by collecting memory and processor metrics from controllers, nodes, and containers that are available in Kubernetes through the Metrics API.
+ -  The [Azure Container Monitoring solution](/previous-versions/azure/azure-monitor/containers/containers) helps you view and manage other Docker and Windows container hosts in a single location. For example:
+    
+    
+     -  View detailed audit information that shows commands used with containers.
      -  Troubleshoot containers by viewing and searching centralized logs without having to remotely view Docker or Windows hosts.
-     -  Find containers that might be noisy and consume excess resources on a host.
+     -  Find containers that may be noisy and consume excess resources on a host.
      -  View centralized CPU, memory, storage, and network usage and performance information for containers.
-
-The solution supports container orchestrators including Docker Swarm, DC/OS, unmanaged Kubernetes, Service
+    
+    The solution supports container orchestrators including Docker Swarm, DC/OS, unmanaged Kubernetes, Service Fabric, and Red Hat OpenShift.
 
 ## Monitor container resource activity
 
-Monitor your resource activity, like files, network, and other resources that your containers access. Monitoring resource activity and consumption are useful both for performance monitoring and as a security measure.
+Monitor your resource activity, like files, network, and other resources that your containers access. Monitoring resource activity and consumption is useful both for performance monitoring and as a security measure.
 
-Azure Monitor enables core monitoring for Azure services by allowing the collection of metrics, activity logs, and diagnostic logs. For example, the activity log tells you when new resources are created or modified.<br>
+[Azure Monitor](/azure/azure-monitor/overview) enables core monitoring for Azure services by allowing the collection of metrics, activity logs, and diagnostic logs. For example, the activity log tells you when new resources are created or modified.
 
-Metrics are available that provide performance statistics for different resources and even the operating system inside a virtual machine. You can view this data with one of the explorers in the Azure portal and create alerts based on these metrics. Azure Monitor provides the fastest metrics pipeline (5 minutes down to 1 minute), so you should use it for time-critical alerts and notifications.<br>
+Metrics are available that provide performance statistics for different resources and even the operating system inside a virtual machine. You can view this data with one of the explorers in the Azure portal and create alerts based on these metrics. Azure Monitor provides the fastest metrics pipeline (5 minutes down to 1 minute), so you should use it for time-critical alerts and notifications.
 
 ## Log all container administrative user access for auditing
 
 Maintain an accurate audit trail of administrative access to your container ecosystem, including your Kubernetes cluster, container registry, and container images. These logs might be necessary for auditing purposes and will be useful as forensic evidence after any security incident. Azure solutions include:
 
- -  Integration of Azure Kubernetes Service with Microsoft Defender for Cloud to monitor the security configuration of the cluster environment and generate security recommendations.<br>
- -  Azure Container Monitoring solution.
- -  Resource logs for Azure Container Instances and Azure Container Registry.
+ -  [Integration of Azure Kubernetes Service with Microsoft Defender for Cloud](/azure/security-center/defender-for-kubernetes-introduction) to monitor the security configuration of the cluster environment and generate security recommendations
+ -  [Azure Container Monitoring solution](/previous-versions/azure/azure-monitor/containers/containers)
+ -  Resource logs for [Azure Container Instances](/azure/container-instances/container-instances-log-analytics) and [Azure Container Registry](/azure/container-registry/monitor-service)
