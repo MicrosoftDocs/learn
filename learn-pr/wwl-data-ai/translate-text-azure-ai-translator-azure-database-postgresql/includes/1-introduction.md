@@ -18,10 +18,10 @@ Suppose you're the lead developer for Margie's Travel. Your company is embarking
 
 This module shows how to use the Azure AI Translator service with Azure Database for PostgreSQL - Flexible Server. In this module, you will:
 
-- Install the `azure_ai` Extension on an existing Azure Database for PostgreSQL flexible server instance
-- Load rental listing data into a table
-- Provision an Azure AI Translator service
-- Translate rental listings into multiple languages
-- Store the translations in a table
+- Install the `azure_ai` Extension on an existing Azure Database for PostgreSQL flexible server instance.
+- Load rental listing data into a table.
+- Provision an Azure AI Translator service.
+- Translate rental listings into multiple languages.
+- Store the translations in a table.
 
 By the end of this module, you're able to use the `azure_ai` Extension to translate text and store the results in an Azure Database for PostgreSQL flexible server.

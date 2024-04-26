@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql.knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
-  title: Knowledge Check
-  description: "Knowledge Check"
-  ms.date: 04/25/2024
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/26/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit

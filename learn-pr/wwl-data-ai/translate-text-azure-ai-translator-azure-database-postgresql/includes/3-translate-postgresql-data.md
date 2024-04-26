@@ -1,6 +1,6 @@
 
 
-## Translation in the azure_ai Extension
+## Translation in the azure_ai extension
 
 The [Azure AI Language service](/azure/ai-services/language-service/overview) provides powerful tools and models for working with text data. The integrations in the `azure_cognitive` schema of the `azure_ai` extension offer access to this rich set of natural language understanding and processing features accessible directly from the database. One of these functionalities includes the ability to translate text using the `translate()` function.
 
@@ -16,7 +16,7 @@ The function returns a table built on the Azure AI Translator service's [respons
 | `detected_language` | The language is based on automatic language detection. If you specify a language using the `source_language` input parameter, this parameter is set to NULL. |
 | `source_text` | An object containing the input text in the default script of the source language. This option is available only when the input is expressed in a script that isn't the usual script for the language. Such as if Thai text were written in Latin script. |
 
-## Set the Translation service endpoint, key, and region
+## Set the translation service endpoint, key, and region
 
 To successfully make calls against the Language service using the `azure_ai` extension, you must provide the service's endpoint and a key. The following commands demonstrate how the settings can be added to the `azure_ai.settings` configuration table.
 
