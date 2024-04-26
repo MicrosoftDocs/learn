@@ -2,7 +2,7 @@ Quantum entanglement is a quantum phenomenon where two or more qubits are sharin
 
 In this module, you transfer the state of a qubit from one location to another without physically moving the qubit itself. This process, known as quantum teleportation, relies heavily on the principles of quantum entanglement. You'll use Q# and the Azure Quantum Development Kit to create and manipulate entangled qubits. To perform the teleportation, you use operations like Controlled-NOT (CNOT), Hadamard (H), and Pauli X and Z to create Bell states.
 
-By the end of this module, you're be able to:
+By the end of this module, you'll be able to:
 
 - Describe the concept of quantum entanglement.
 - Understand the quantum teleportation protocol.

@@ -43,7 +43,7 @@ operation Teleport(message : Qubit, bob : Qubit) : Unit {
 Let's break down the `Teleport` operation:
 
 1. The operation uses the `alice` qubit and creates entanglement between `alice` and `bob` qubits. The `message` qubit is then entangled with the `alice` qubit, so the two qubits are entangled with the `bob` qubit, and the `message` is encoded.
-1. Then, you need to measure `alice` and `message` qubits in the Bell basis. How can you express a measurement in the Bell basis in Q#? You can't. Or at least not directly. In Q# you have the `M` operation, which performs a measurement in the $Z$-basis or computational basis. So to use the `M` operation correctly, you need transform the Bell states into the computational basis states. You can do this by applying a `H` operation to the `message` qubit. The following table shows the correspondence between the Bell states and the computational basis states.
+1. Then, you need to measure `alice` and `message` qubits in the Bell basis. How can you express a measurement in the Bell basis in Q#? You can't. Or at least not directly. In Q# you have the `M` operation, which performs a measurement in the $Z$-basis or computational basis. So to use the `M` operation correctly, you need to transform the Bell states into the computational basis states. You can do this by applying a `H` operation to the `message` qubit. The following table shows the correspondence between the Bell states and the computational basis states.
 
     | Bell state | Computational basis state |
     |------------|---------------------------|

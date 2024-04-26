@@ -30,16 +30,16 @@ The global state of Alice and Bob's qubits is
 <!--- \ket{\psi}_{mAB} = (\alpha\ket{0}_m + \beta\ket{1}_m) \otimes \frac1{\sqrt2}(\ket{00}_{AB} + \ket{11}_{AB}) --->
 
 
-:::image type="content" source="../media/equation-teleportation-step1.png " alt-text="Screenshot of the quantum state of the global state formed by Alice and Bob's qubits." border="false"::: 
+:::image type="content" source="../media/equation-teleportation-step-1.png " alt-text="Screenshot of the quantum state of the global state formed by Alice and Bob's qubits." border="false"::: 
 
 
-:::image type="content" source="../media/teleportation-step1.png" alt-text="Diagram showing two faces emojis of a woman and a man representing Alice and Bob. Alice owns two qubits, one of them is entangled with Bob's qubits. Entangled qubits are the same color, representing they're entangled. Message qubit is a different color.":::
+:::image type="content" source="../media/teleportation-step-1.png" alt-text="Diagram showing two faces emojis of a woman and a man representing Alice and Bob. Alice owns two qubits, one of them is entangled with Bob's qubits. Entangled qubits are the same color, representing they're entangled. Message qubit is a different color.":::
 
 ### Alice entangles the message qubit with her own qubit
 
 Alice takes the message qubit and entangles it with her own qubit $A$ using a CNOT gate. The message qubit is the control qubit, and Alice's qubit is the target qubit. This creates a three-qubit entangled state.
 
-:::image type="content" source="../media/teleportation-step1b.png" alt-text="Diagram showing two face emojis of a woman and a man representing Alice and Bob, and a hammer emoji representing that Alice manipulates her qubits. The three qubits are the same color, representing they're entangled. ":::
+:::image type="content" source="../media/teleportation-step-1-b.png" alt-text="Diagram showing two face emojis of a woman and a man representing Alice and Bob, and a hammer emoji representing that Alice manipulates her qubits. The three qubits are the same color, representing they're entangled. ":::
 
 The message qubit is in the unknown state $\alpha \ket{0}_m + \beta \ket{1}_m$, so after applying the CNOT gate, Alice's qubits are in a superposition of the four Bell states. The global state of the three qubits is
 
@@ -62,19 +62,19 @@ The global state of Alice and Bob's qubits is a superposition of four possible s
 
 ### Alice measures the qubits
 
-Alice then measures the message qubit and her own qubit. She doesn't measures the qubits in the $Z$-basis as usually, but she chooses the *Bell basis*. The Bell basis consists of the four Bell states, $\lbrace \ket{\phi^+}, \ket{\phi^-}, \ket{\psi^+}, \ket{\psi^-} \rbrace$.
+Alice then measures the message qubit and her own qubit. She doesn't measures the qubits in the $Z$-basis as usual, but she chooses the *Bell basis*. The Bell basis consists of the four Bell states, $\lbrace \ket{\phi^+}, \ket{\phi^-}, \ket{\psi^+}, \ket{\psi^-} \rbrace$.
 
 By measuring the message qubit and her own qubit in the Bell basis, Alice projects her qubits into one of the four Bell states. Because the three qubits are entangled, the measurement results are correlated. When Alice measures her qubits, Bob's qubit is also projected into the correlated state.
 
 For example, if Alice measures her qubits and observes the state $\ket{\phi^-}$, then Bob's qubit is projected into the state $\alpha\ket{0}_B - \beta\ket{1}_B$. 
 
-:::image type="content" source="../media/teleportation-step2.png" alt-text="Diagram showing two face emojis of a woman and a man representing Alice and Bob, and a hammer emoji representing that Alice manipulates her qubits. Alice's qubits are the same color, representing they're entangled, while Bob's qubit is a different color.":::
+:::image type="content" source="../media/teleportation-step-2.png" alt-text="Diagram showing two face emojis of a woman and a man representing Alice and Bob, and a hammer emoji representing that Alice manipulates her qubits. Alice's qubits are the same color, representing they're entangled, while Bob's qubit is a different color.":::
 
 ### Alice calls Bob
 
 Alice calls Bob and tells him the results of her measurements. She uses a classical communication channel, like a phone call, or a text message.
 
-:::image type="content" source="../media/teleportation-step3.png" alt-text="Diagram showing two face emojis of a woman and a man representing Alice and Bob, and a telephone emoji representing that Alice calls Bob.":::
+:::image type="content" source="../media/teleportation-step-3.png" alt-text="Diagram showing two face emojis of a woman and a man representing Alice and Bob, and a telephone emoji representing that Alice calls Bob.":::
 
 Bob now knows the state of his own qubit, without having to measure it. The state of Bob's qubit might not be the same as the state of the message qubit that Alice wanted to teleport, but it's close to it.
 
@@ -82,7 +82,7 @@ Bob now knows the state of his own qubit, without having to measure it. The stat
 
 Next, Bob can recover the original state of the message qubit by applying a specific quantum operation to his qubit. The operation Bob performs depends on what Alice told him by phone.
 
-:::image type="content" source="../media/teleportation-step4.png" alt-text="Diagram showing two face emojis of a woman and a man representing Alice and Bob. Bob applies an operation to his qubit, represented by a hammer emoji. Bob's qubit is the same color as the message qubit.":::
+:::image type="content" source="../media/teleportation-step-4.png" alt-text="Diagram showing two face emojis of a woman and a man representing Alice and Bob. Bob applies an operation to his qubit, represented by a hammer emoji. Bob's qubit is the same color as the message qubit.":::
 
 The operation he executes can be a Pauli $X$ gate, a Pauli $Z$ gate, both, or none.
 
