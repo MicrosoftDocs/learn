@@ -2,15 +2,15 @@ In today's data-driven world, extracting meaningful insights from large volumes 
 
 ## Scenario: Add summarization capabilities to a rental property recommendation app
 
-You're a developer working for Margie's Travel. The company's web and mobile apps connect travelers seeking lodging accommodations with homeowners and property managers willing to rent their properties. An Azure Database for PostgreSQL flexible server database backs these apps, and you're tasked with using the `azure_ai` extension to implement new functionality to provide concise summaries of property descriptions to make it easier for customers to find relevant properties that satisfy their requirements. You aim to produce summaries that guide users toward their ideal stay—whether seeking cozy apartments, waterfront views, or trendy downtown lofts.
+You're a developer working for Margie's Travel. The company's web and mobile apps connect travelers seeking lodging accommodations with homeowners and property managers willing to rent their properties. An Azure Database for PostgreSQL flexible server database backs these apps, and you're tasked with using the `azure_ai` extension to implement new functionality to provide concise summaries of property descriptions to make it easier for customers to find relevant properties that satisfy their requirements. You aim to produce summaries that guide users toward their ideal stay whether seeking cozy apartments, waterfront views, or trendy downtown lofts.
 
 ## Summarization techniques
 
 Two techniques are available to generate summaries when you use Azure AI Services. Understanding these methods and their differences is essential in empowering you to build intelligent applications capable of distilling complex information into digestible insights.
 
-- **Extractive summarization** identifies and extracts the sentences that convey the primary idea of the text directly from the original content.
+- **Extractive summarization**: Identifies and extracts the sentences that convey the primary idea of the text directly from the original content.
 
-- **Abstractive summarization** generates creative summaries by paraphrasing and rephrasing the summarized content. The summary is designed to capture the essence of the original text.
+- **Abstractive summarization**: Generates creative summaries by paraphrasing and rephrasing the summarized content. The summary is designed to capture the essence of the original text.
 
 ## Learning objectives
 

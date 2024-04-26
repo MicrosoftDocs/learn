@@ -19,10 +19,10 @@ Each function returns an array of extracted sentences and a rank score for each 
 
 ```sql
             Composite type "azure_cognitive.sentence"
-  Column |   Type     | Collation | Nullable | Default | Storage | Description 
+    Column  |       Type       | Collation | Nullable | Default | Storage  | Description 
 ------------+------------------+-----------+----------+---------+----------+-------------
- text    | text      |      |      |    | extended | 
- rank_score | double precision |      |      |    | plain  |
+ text       | text             |           |          |         | extended | 
+ rank_score | double precision |           |          |         | plain    |
 ```
 
 The `azure_cognitive.sentence` is a composite type containing the text of an extractive sentence and a rank score for each sentence. The rank score, a value between 0 and 1 (inclusive), indicates how relevant a sentence is to the main idea of the original document. Document summarization ranks extracted sentences, and you can determine whether they're returned in the order they appear or according to their rank using the `sort_by` parameter of the function.
