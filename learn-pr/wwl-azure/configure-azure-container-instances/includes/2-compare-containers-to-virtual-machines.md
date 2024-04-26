@@ -26,7 +26,7 @@ Containers offer several advantages over physical and virtual machines. Review t
 
 - **Consider workload density**. Support higher workload density and improve your resource utilization by working with containers.
 
-### Container images
+### Understand container images
 
 All containers are created from container images. A container image is a lightweight, standalone, executable package of software that encapsulates everything needed to run an application. It includes the following components:
 
