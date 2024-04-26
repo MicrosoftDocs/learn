@@ -3,7 +3,7 @@ uid: learn.wwl.security-monitoring-automation-solutions
 metadata:
   title: Configure and manage security monitoring and automation solutions
   description: "Learn to set up Azure Monitor and Microsoft Sentinel for automatic security monitoring and response in cloud settings."
-  ms.date: 04/25/2024
+  ms.date: 04/26/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
