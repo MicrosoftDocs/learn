@@ -3193,3 +3193,8 @@ achievements:
   title: Diagnose startup errors in your application by using the Kudu console
   summary: This module helps you understand the common startup errors in an ASP.NET Core application and diagnose them by using the Kudu console and the Azure portal.
   iconUrl: /training/achievements/azure-diagnose-application-startup-errors-with-kudu-console.svg
+- uid: learn.azure-data-subject-requests.badge
+  type: badge
+  title: Responding to Data Subject Requests (DSRs)
+  summary: Know, understand, and be able to describe Data Subject Requests (DSRs), and learn how to manage DSRs on Azure and Microsoft 365.
+  iconUrl: /training/achievements/azure-data-subject-requests.svg
