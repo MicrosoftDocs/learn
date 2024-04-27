@@ -36740,9 +36740,59 @@
       "redirect_url": "/training/modules/security-virtual-networks/9-expressroute-encryption",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path": "learn-pr/wwl-azure/security-virtual-networks/9-secure-paas-deployments.md",
       "redirect_url": "/training/modules/security-virtual-networks/10-secure-paas-deployments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/index.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/1-introduction.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/2-what-is-data-subject-request.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/3-what-is-dsr-for-azure-ad-microsoft-service-accounts.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/4-what-is-dsr-for-office-365-applications.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/5-how-to-respond-to-dsr-for-customer-data.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/6-how-to-respond-to-dsr-for-system-generated-logs.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/7-exercise-fulfill-dsr-in-azure-active-directory.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/8-knowledge-check.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/9-summary.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
       "redirect_document_id": false
     }
   ]
