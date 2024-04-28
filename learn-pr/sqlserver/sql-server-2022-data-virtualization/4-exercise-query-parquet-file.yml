@@ -4,7 +4,7 @@ title: Exercise - Use PolyBase to query a Parquet file
 metadata:
   title: Exercise - Use PolyBase to query a Parquet file
   description: "Complete this exercise to learn how to use PolyBase to query an external data source Parquet file and manipulate the data."
-  ms.date: 04/15/2024
+  ms.date: 04/29/2024
   author: HugoMSFT
   ms.author: hudequei
   ms.topic: unit

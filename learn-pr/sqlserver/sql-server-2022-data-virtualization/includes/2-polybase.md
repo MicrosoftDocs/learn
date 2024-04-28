@@ -4,7 +4,7 @@ ms.custom:
 ---
 PolyBase is the feature that SQL Server uses to enable the data virtualization concept. PolyBase was originally released in SQL Server 2016 and is improved in each later version of SQL Server. However, the general concept of accessing data remotely without having to copy the data dates from SQL Server 7.0 with the introduction of Linked Server.
 
-<!-- :::image type="content" source="../media/polybase-evolution.png" alt-text="An image of PolyBase enhancements in different versions of SQL Server, from 2016 to 2022." border="false"::: -->
+The following table lists the first SQL Server version to support various PolyBase features.
 
 |SQL Server 2016|SQL Server 2017|SQL Server 2019|SQL Server 2022|
 |-----|-----|-----|-----|
