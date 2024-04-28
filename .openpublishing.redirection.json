@@ -9166,6 +9166,55 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/2-create-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/3-exercise-create-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/4-add-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/5-exercise-add-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/6-build-deploy-static-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/7-exercise-build-deploy-static-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/student-evangelism/django/3-admin-site/1-introduction.md",
       "redirect_url": "/training/modules/django-admin-site/1-introduction",
       "redirect_document_id": true
@@ -36552,6 +36601,51 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/1-introduction.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/2-view-manage-service-provider-activities.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/3-use-centralized-monitor-scalable-way.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/4-governance-scale-manage-customer-tenants.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/5-secure-customer-resources-scale.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/6a-knowledge-check.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/6-manage-hybrid-scale.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/7-summary.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/index.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+   {
       "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-security-posture/2-implement-azure-security-center.md",
       "redirect_url": "/training/modules/microsoft-defender-cloud-security-posture/2-implement-microsoft-defender-for-cloud",
       "redirect_document_id": false
@@ -36646,9 +36740,59 @@
       "redirect_url": "/training/modules/security-virtual-networks/9-expressroute-encryption",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path": "learn-pr/wwl-azure/security-virtual-networks/9-secure-paas-deployments.md",
       "redirect_url": "/training/modules/security-virtual-networks/10-secure-paas-deployments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/index.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/1-introduction.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/2-what-is-data-subject-request.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/3-what-is-dsr-for-azure-ad-microsoft-service-accounts.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/4-what-is-dsr-for-office-365-applications.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/5-how-to-respond-to-dsr-for-customer-data.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/6-how-to-respond-to-dsr-for-system-generated-logs.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/7-exercise-fulfill-dsr-in-azure-active-directory.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/8-knowledge-check.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/9-summary.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
       "redirect_document_id": false
     }
   ]
