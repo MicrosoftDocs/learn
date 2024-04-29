@@ -38,21 +38,13 @@ Let's walk through each of these controls to understand them better.
 
 Select the **Cloud Shell** icon (>_) to create a new Azure Cloud Shell session. Recall that Azure Cloud Shell is an interactive shell for managing Azure resources. This browser-based terminal lets you control and administer your Azure resources through a command-line interface built right into the portal.
 
-### Directories and subscriptions
-
-In some cases, you may have access to more than one Azure subscription. The **Directory + subscription** section of **Portal settings** lets you change the subscription you're working in, or change to a different directory.
-
-![Screenshot of the Directory and subscription pane.](../media/3-directory-pane.png)
-
-Directories and subscriptions used to be accessed with the book and filter icon. The **Directories + subscriptions** feature, though, is now located on the **Portal settings** page, which you access by selecting the gear icon.
-
 ### Notifications
 
-Selecting the bell icon displays the **Notifications** pane. This pane lists the most recent actions that have been carried out, along with their status.
+Select the bell icon to display the **Notifications** pane. This pane gives you information about the most recent actions that have been carried out, along with their status.
 
 ### Settings
 
-Select the gear icon to change the Azure portal settings. In the tabs at the left, there are multiple options that let you change settings for:
+Select the gear icon to change the Azure portal settings. In the tabs at the left, there are multiple options that let you change settings such as:
 
 - Directories and subscription management
 - Inactivity sign out delay
@@ -63,19 +55,13 @@ Select the gear icon to change the Azure portal settings. In the tabs at the lef
 
 ![Screenshot of the Azure portal settings pane.](../media/3-settings-pane.png)
 
-### Help pane
+### Support + troubleshooting pane
 
-Select the question mark icon to show the **Help** pane. This pane includes several sections you can access, depending on what type of help you need:
-
-- **Service health**: Displays information about the status of various Azure services.
-- **Support resources**: Provides links to read official documentation, find answers from the Azure community, or explore other helpful resources.
-- **Help + support**: Lets you create a support request if you're having problems, or view existing requests.
-
-When you select **Help + support**, a link to  **Create a support request** appears near the top of the pane. When you select this link to open a support request, you complete the form by using provided dropdown lists and text-entry fields. After you finish and submit your request, the Azure support team will investigate the issue, based on the details you provided.
+Select the question mark icon to show the **Support + troubleshooting** pane. This is where you can get help if you're experiencing a problem or need support. You can also see if any ongoing health events are impacting your Azure subscription or find links to support resources.
 
 ### Feedback pane
 
-The **Feedback** icon on the top-right side of the screen opens a pane that lets you send feedback about Azure to Microsoft. You can decide whether or not to allow Microsoft to respond to your feedback by email.
+Select the **Feedback** icon to open a pane that lets you send feedback about Azure to Microsoft. You can decide whether or not to allow Microsoft to respond to your feedback by email.
 
 ### Profile settings
 
@@ -90,8 +76,6 @@ Select the "..." button on the right-hand side for options to:
 - View your bill
 - Submit an idea
 - Update your contact information
-
-If you select "..." and then **View my bill**, Azure takes you to the **Cost Management + Billing - Overview** page, which helps you analyze where Azure is generating costs.
 
 ### Azure Marketplace
 

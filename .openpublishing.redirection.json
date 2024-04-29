@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/modules/index.md",
+      "redirect_url": "/training/browse/?resource_type=module",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/index.md",
+      "redirect_url": "/training/browse/?resource_type=learning%20path",
+      "redirect_document_id": false
+    },    
+    {
       "source_path_from_root": "/learn-pr/azure/add-sign-in-support-python-web-app-identity-platform/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/entra/identity-platform/quickstart-web-app-python-sign-in",
       "redirect_document_id": false
@@ -9153,6 +9163,55 @@
     {
       "source_path": "learn-pr/databricks/understand-the-sql-dw-connector-with-azure-databricks/index.md",
       "redirect_url": "/training/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/2-create-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/3-exercise-create-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/4-add-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/5-exercise-add-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/6-build-deploy-static-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/7-exercise-build-deploy-static-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
     },
     {
@@ -33637,6 +33696,76 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/azure-diagnose-application-startup-errors-with-kudu-console/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/test/troubleshoot-azure-iis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-diagnose-application-startup-errors-with-kudu-console/2-kudu-console-concepts.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/test/troubleshoot-azure-iis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-diagnose-application-startup-errors-with-kudu-console/3-app-startup-errors.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/test/troubleshoot-azure-iis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-diagnose-application-startup-errors-with-kudu-console/4-exercise-implement-a-web-application.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/test/troubleshoot-azure-iis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-diagnose-application-startup-errors-with-kudu-console/5-exercise-diagnose-application-event-log-using-kudu-console.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/test/troubleshoot-azure-iis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-diagnose-application-startup-errors-with-kudu-console/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/test/troubleshoot-azure-iis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-diagnose-application-startup-errors-with-kudu-console/index.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/test/troubleshoot-azure-iis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-personalizer/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-personalizer/2-what-is-personalizer.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-personalizer/3-how-personalizer-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-personalizer/4-when-to-use-personalizer.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-personalizer/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-personalizer/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-personalizer/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/automate-deployments-github-actions-azure/index.yml" ,
       "redirect_url": "https://learn.microsoft.com/training/modules/github-actions-cd",
       "redirect_document_id": false
@@ -33669,6 +33798,146 @@
     {
       "source_path": "learn-pr/azure/automate-deployments-github-actions-azure/6-summary.yml" ,
       "redirect_url": "https://learn.microsoft.com/training/modules/github-actions-cd",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/enterprise-scale-architecture/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-introduction/1-introduction.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-introduction/2-vision-customer-challenges.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-introduction/3-enterprise-scale-architecture-approach.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-introduction/4-enterprise-scale-design-principles.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-principles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-introduction/5-summary.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-introduction/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-networking/1-introduction.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/network-topology-and-connectivity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-networking/2-ip-addressing.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-ip-addressing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-networking/3-dns.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/private-link-and-dns-integration-at-scale",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-networking/4-network-topology.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/define-an-azure-network-topology",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-networking/5-connectivity.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/connectivity-to-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-networking/6-network-segmentation.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-landing-zone-network-segmentation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-networking/7-network-encryption.yml" ,
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/define-network-encryption-requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-networking/8-summary.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/network-topology-and-connectivity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-networking/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/network-topology-and-connectivity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-operations/1-introduction.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-operations/2-management-monitoring.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-operations/3-business-continuity-disaster-recovery.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/management-business-continuity-disaster-recovery",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-operations/4-security-governance-compliance.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/governance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-operations/5-summary.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-operations/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-organization/1-introduction.yml" ,
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-areas",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-organization/2-enterprise-enrollment-azure-ad-tenants.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/azure-billing-enterprise-agreement",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-organization/3-identity-access-management.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-organization/4-management-group-subscription-organization.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/resource-org",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-organization/5-summary.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-areas",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-organization/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-areas",
       "redirect_document_id": false
     },
     {
@@ -36954,6 +37223,531 @@
     {
       "source_path": "learn-pr/azure/deploy-vms-from-vhd-templates/5-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/deploy-vms-from-vhd-templates/6-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/10-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/11-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/2-authorize-database-access.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/3-authorize-database-access",
+      "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/3-database-audit.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/4-database-audit",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/4-microsoft-purview-governance-portal-use-cases.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/5-microsoft-purview-governance-portal-use-cases",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/5-implement-data-classification-sensitive-information.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/6-implement-data-classification-sensitive-information",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/6-dynamic-data-mask.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/7-dynamic-data-mask",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/7-transparent-data-encryption.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/8-transparent-data-encryption",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/8-always-encrypted.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/9-always-encrypted",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/9-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-azure-sql-database-azure-sql-managed-instance/10-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/index.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/1-introduction.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/5-knowledge-check.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/6-summary-resources.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/4-use-azcopy.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/2-use-azure-storage-explorer.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/3a-use-import-export-service.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-tools/3b-use-waimportexport-tool.md",
+      "redirect_url": "/training/modules/upload-download-and-manage-data-with-azure-storage-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/10-azure-key-vault-backup-restore.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/governance-security/13-azure-key-vault-backup-restore",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/11-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/governance-security/14-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/12-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/governance-security/15-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/5-create-key-vault-use-azure-portal.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/governance-security/8-create-key-vault-use-azure-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/6-azure-dedicated-hardware-security-module.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/governance-security/9-azure-dedicated-hardware-security-module",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/7-provide-access-key-vault-keys-certificates-secrets.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/governance-security/10-provide-access-key-vault-keys-certificates-secrets",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/8-azure-key-vault-keys-secrets-certificates.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/governance-security/11-azure-key-vault-keys-secrets-certificates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/9-configure-cryptographic-key-auto-rotation-azure-key-vault.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/governance-security/12-configure-cryptographic-key-auto-rotation-azure-key-vault",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/sc-200-who-hacked-cloud-game/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/courses/sc-200t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/sc-200-who-hacked-cloud-game/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/courses/sc-200t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/sc-200-who-hacked-cloud-game/3-keep-playing.md",
+      "redirect_url": "https://learn.microsoft.com/training/courses/sc-200t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/sc-200-who-hacked-cloud-game/4-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/courses/sc-200t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/sc-200-who-hacked-cloud-game/2-play-who-hacked.md",
+      "redirect_url": "https://learn.microsoft.com/training/courses/sc-200t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/sc-200-who-hacked-cloud-game/5-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/courses/sc-200t00",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/10-microsoft-defender-cloud-devops-security.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/15-microsoft-defender-cloud-devops-security",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/11-devops-security-support-prerequisites.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/16-devops-security-support-prerequisites",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/12-devops-environment-security-posture.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/17-devops-environment-security-posture",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/13-connect-your-git-lab-environment-microsoft-defender-cloud.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/18-connect-your-git-lab-environment-microsoft-defender-cloud",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/14-configure-microsoft-security-devops-github-action.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/19-configure-microsoft-security-devops-github-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/15-security-alerts-incidents.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/20-security-alerts-incidents",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/16-automate-responses-microsoft-defender-cloud-triggers.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/21-automate-responses-microsoft-defender-cloud-triggers",
+      "redirect_document_id": false
+    },
+       {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/17-view-remediate-findings-from-vulnerability-assessments.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/22-view-remediate-findings-from-vulnerability-assessments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/18-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/23-knowledge-check",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/19-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/24-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/5-managed-kubernetes.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/6-managed-kubernetes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/6-container-security-microsoft-defender-containers.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-defender-cloud-threat-protection/5-container-security-microsoft-defender-containers",
+      "redirect_document_id": false
+    },		
+    {
+      "source_path": "learn-pr/commercial-marketplace/simplify-cloud-procurement-governance-azure-marketplace/index.yml",
+      "redirect_url": "https://learn.microsoft.com/marketplace/governance-control-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/commercial-marketplace/simplify-cloud-procurement-governance-azure-marketplace/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/marketplace/governance-control-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/commercial-marketplace/simplify-cloud-procurement-governance-azure-marketplace/2-find-try-software-azure-marketplace.yml",
+      "redirect_url": "https://learn.microsoft.com/marketplace/governance-control-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/commercial-marketplace/simplify-cloud-procurement-governance-azure-marketplace/3-buy-software-azure-marketplace.yml",
+      "redirect_url": "https://learn.microsoft.com/marketplace/governance-control-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/commercial-marketplace/simplify-cloud-procurement-governance-azure-marketplace/4-manage-software-procurement-azure-marketplace.yml",
+      "redirect_url": "https://learn.microsoft.com/marketplace/governance-control-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/commercial-marketplace/simplify-cloud-procurement-governance-azure-marketplace/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/marketplace/governance-control-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/commercial-marketplace/simplify-cloud-procurement-governance-azure-marketplace/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/marketplace/governance-control-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.simplify-cloud-procurement-governance-azure-marketplace.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/marketplace/governance-control-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/4-azure-role-based-access-control-.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-authorization-microsoft-entra-id/4-azure-role-based-access-control",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/security-storage/10-enable-infrastructure-encryption-double-encryption-data.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-storage/11-enable-infrastructure-encryption-double-encryption-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-storage/11-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-storage/12-knowledge-check",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-storage/12-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-storage/13-summary",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-storage/2-authorize-requests-azure-storage.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-storage/3-authorize-requests-azure-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-storage/3-manage-storage-account-access-keys.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-storage/4-manage-storage-account-access-keys",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-storage/4-authorize-access-blobs-use-microsoft-entra-id.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-storage/6-authorize-access-blobs-use-microsoft-entra-id",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-storage/5-select-configure-appropriate-method-access-azure.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-storage/5-select-configure-access-azure-files",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-storage/6-authorize-access-tables-use-microsoft-entra-id.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-storage/7-authorize-access-tables-use-microsoft-entra-id",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-storage/7-authorize-access-queue-data-azure-portal.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-storage/8-authorize-access-queue-data-azure-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-storage/8-recommendations-basic-data-protection.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-storage/9-recommendations-basic-data-protection",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-storage/9-bring-your-own-key-specification.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-storage//10-bring-your-own-key-specification",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/7-implement-azure-backup-server.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-hybrid-backup-recovery-windows-server-iaas/",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/8-compare-backup-options.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-hybrid-backup-recovery-windows-server-iaas/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-data-ai/explore-fundamentals-stream-processing/8-fabric-realtime-analaytics.md",
+      "redirect_url": "/training/modules/explore-fundamentals-stream-processing/8-fabric-realtime-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/1-introduction.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/2-view-manage-service-provider-activities.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/3-use-centralized-monitor-scalable-way.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/4-governance-scale-manage-customer-tenants.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/5-secure-customer-resources-scale.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/6a-knowledge-check.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/6-manage-hybrid-scale.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/7-summary.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/index.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+   {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-security-posture/2-implement-azure-security-center.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-security-posture/2-implement-microsoft-defender-for-cloud",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/plan-azure-kubernetes-service-deployment/10-summary.md",
+      "redirect_url": "/training/modules/plan-azure-kubernetes-service-deployment/9-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/plan-azure-kubernetes-service-deployment/8-monitor-and-log.md",
+      "redirect_url": "/training/modules/plan-azure-kubernetes-service-deployment/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/plan-azure-kubernetes-service-deployment/9-knowledge-check.md",
+      "redirect_url": "/training/modules/plan-azure-kubernetes-service-deployment/8-knowledge-check",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/create-log-analytics-workspace-microsoft-defender-cloud/2-enable-defender-cloud-azure-subscription.md",
+      "redirect_url": "/training/modules/create-log-analytics-workspace-microsoft-defender-cloud/",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/18-connect-your-git-lab-environment-microsoft-defender-cloud.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-monitoring-automation-solutions/5-respond-threats-by-using-playbooks-with-automation-rules-microsoft-sentinel.md",
+      "redirect_url": "/training/modules/security-monitoring-automation-solutions/6-respond-threats-by-using-playbooks-with-automation-rules-microsoft-sentinel",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-monitoring-automation-solutions/6-knowledge-check.md",
+      "redirect_url": "/training/modules/security-monitoring-automation-solutions/7-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-monitoring-automation-solutions/7-summary.md",
+      "redirect_url": "/training/modules/security-monitoring-automation-solutions/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/10-flow-logging-network-security-groups.md",
+      "redirect_url": "/training/modules/security-virtual-networks/11-flow-logging-network-security-groups",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/11-knowledge-check.md",
+      "redirect_url": "/training/modules/security-virtual-networks/12-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/12-summary.md",
+      "redirect_url": "/training/modules/security-virtual-networks/13-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/2-network-security-groups-application-security-groups.md",
+      "redirect_url": "/training/modules/security-virtual-networks/3-network-security-groups-application-security-groups",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/3-user-defined-routes.md",
+      "redirect_url": "/training/modules/security-virtual-networks/4-user-defined-routes",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/4-virtual-network-peering-gateways.md",
+      "redirect_url": "/training/modules/security-virtual-networks/5-virtual-network-peering-gateways",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/5-virtual-wide-area-network.md",
+      "redirect_url": "/training/modules/security-virtual-networks/6-virtual-wide-area-network",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/6-secure-virtual-private-network-connectivity-point-to-site-site-to-site.md",
+      "redirect_url": "/training/modules/security-virtual-networks/7-secure-virtual-private-network-connectivity-point-to-site-site-to-site",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/7-azure-expressroute.md",
+      "redirect_url": "/training/modules/security-virtual-networks/8-azure-expressroute",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/8-expressroute-encryption.md",
+      "redirect_url": "/training/modules/security-virtual-networks/9-expressroute-encryption",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/9-secure-paas-deployments.md",
+      "redirect_url": "/training/modules/security-virtual-networks/10-secure-paas-deployments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/index.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/1-introduction.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/2-what-is-data-subject-request.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/3-what-is-dsr-for-azure-ad-microsoft-service-accounts.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/4-what-is-dsr-for-office-365-applications.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/5-how-to-respond-to-dsr-for-customer-data.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/6-how-to-respond-to-dsr-for-system-generated-logs.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/7-exercise-fulfill-dsr-in-azure-active-directory.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/8-knowledge-check.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/9-summary.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
       "redirect_document_id": false
     }
   ]

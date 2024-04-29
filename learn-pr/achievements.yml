@@ -3243,3 +3243,63 @@ achievements:
   title: Build dual-screen Xamarin.Forms apps by using TwoPaneView
   summary: Use TwoPaneView to support dual-screen devices like the Microsoft Surface Duo.
   iconUrl: /training/achievements/xamarin/xamarin-forms-dual-screen-badge.svg
+- uid: learn.azure.intro-to-personalizer.badge
+  type: badge
+  title: Introduction to Personalizer
+  summary: Discover the services available on Azure to personalize experiences for your users.
+  iconUrl: /training/achievements/intro-to-personalizer.svg
+- uid: learn.govern-monitor-secure-resources-azure-lighthouse.badge
+  type: badge
+  title: Use Azure Lighthouse to govern, monitor, and secure customer resources
+  summary: Azure Lighthouse can help you monitor, secure, and govern your customer resources.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.configure-storage-tools.badge
+  type: badge
+  title: Configure Azure Storage with tools
+  summary: Learn how to configure Azure Storage with tools like Azure Storage Explorer and AZCopy.
+  iconUrl: /training/achievements/storage-tools-configure.svg
+- uid: learn.wwl.sc-200-who-hacked-cloud-game.badge
+  type: badge
+  title: Who Hacked cloud game
+  summary: Provide instructions and guidance on playing the SC-200 Who Hacked cloud game.
+  iconUrl: /training/achievements/sc-200-who-hacked-cloud-game.svg
+- uid: learn.static-apps-gatsby.badge
+  type: badge
+  title: Create and publish a static web app with Gatsby and Azure Static Web Apps
+  summary: Use Gatsby and React to develop a static web app, then deploy it to the web with Azure Static Web Apps.
+  iconUrl: /training/achievements/static-apps-gatsby.svg
+- uid: learn.azure.enterprise-scale-architecture.trophy
+  type: trophy
+  title: Create a scalable and modular architecture with Azure landing zones
+  summary: Learn how Microsoft Cloud Adoption Framework for Azure landing zones can help your organization to accelerate cloud adoption from months to weeks.
+  iconUrl: /training/achievements/enterprise-scale-architecture.svg
+- uid: learn.azure.enterprise-scale-introduction.badge
+  type: badge
+  title: Introduction to Azure landing zones in the Microsoft Cloud Adoption Framework
+  summary: Learn how Azure landing zones help organizations build the strategic design path and target technical state for your Azure environment.
+  iconUrl: /training/achievements/enterprise-scale-introduction.svg
+- uid: learn.azure.enterprise-scale-organizational-design-principles.badge
+  type: badge
+  title: Organizational design principles for enterprise-scale architecture 
+  summary: Evaluate the critical design areas for enterprise enrollment and Microsoft Entra tenants, identity and access management, and management group.
+  iconUrl: /training/achievements/enterprise-scale-organizational-design-principles.svg
+- uid: learn.azure.enterprise-scale-networking.badge
+  type: badge
+  title: Network design principles for enterprise-scale architecture
+  summary: This training examines key design considerations and recommendations surrounding networking and connectivity to, from, and within Microsoft Azure for the enterprise customer.
+  iconUrl: /training/achievements/enterprise-scale-networking.svg
+- uid: learn.azure.enterprise-scale-operations.badge
+  type: badge
+  title: Operational design principles for enterprise-scale architecture 
+  summary: Learn how to operationalize an Azure enterprise estate by using centralized management. This approach provides the guardrails needed to enable the organization's path to the cloud.
+  iconUrl: /training/achievements/enterprise-scale-operations.svg
+- uid: learn.azure-diagnose-application-startup-errors-with-kudu-console.badge
+  type: badge
+  title: Diagnose startup errors in your application by using the Kudu console
+  summary: This module helps you understand the common startup errors in an ASP.NET Core application and diagnose them by using the Kudu console and the Azure portal.
+  iconUrl: /training/achievements/azure-diagnose-application-startup-errors-with-kudu-console.svg
+- uid: learn.azure-data-subject-requests.badge
+  type: badge
+  title: Responding to Data Subject Requests (DSRs)
+  summary: Know, understand, and be able to describe Data Subject Requests (DSRs), and learn how to manage DSRs on Azure and Microsoft 365.
+  iconUrl: /training/achievements/azure-data-subject-requests.svg

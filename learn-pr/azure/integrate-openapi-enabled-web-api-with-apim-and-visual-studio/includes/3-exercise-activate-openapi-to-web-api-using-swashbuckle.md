@@ -68,6 +68,9 @@ In this exercise, you're going to add Swagger and Swagger UI to an ASP.NET Core 
         /* === SwaggerUI END === */
     ```
 
+    > [!NOTE]
+    > It's very important that Swagger endpoints are only enabled in the development environment. Otherwise, it could expose your API to the public.
+
    You've now completed activating the OpenAPI document feature to your ASP.NET Core Web API app. Save the `Startup.cs` file. Your changes might look like the following screenshot.
 
     :::image type="content" source="../media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-05.png" alt-text="File Modified: Startup.cs":::

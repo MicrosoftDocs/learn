@@ -5,8 +5,8 @@ metadata:
   title: 'Exercise - Review your Advisor recommendations'
   description: Learn how to review and evaluate your Azure Advisor recommendations.
   ms.date: 10/20/2023
-  author: danterasera
-  ms.author: darasera
+  author: aortoll
+  ms.author: anortoll
   ms.topic: unit
 durationInMinutes: 4
 content: |

@@ -35,7 +35,7 @@ Multifactor authentication is a process where a user is prompted during the sign
 
 If you only use a password to authenticate a user, it leaves an insecure vector for attack. If the password is weak or has been exposed elsewhere, is it really the user signing in with the username and password, or is it an attacker? When you require a second form of authentication, security is increased as this additional factor isn't something that's easy for an attacker to obtain or duplicate.
 
-:::image type="content" source="../media/azure-multifactor-authentication-process-flow-options-a1c776a5.png" alt-text="diagram showing an example of the Microsoft Entra multifactor authentication user sign-in process.":::
+:::image type="content" source="../media/azure-multifactor-authentication-process-flow-options-a1c776a5.png" alt-text="Diagram showing an example of the Microsoft Entra multifactor authentication user sign-in process.":::
  Microsoft Entra multifactor authentication works by requiring two or more of the following authentication methods:
 
  -  Something you know, typically a password.
