@@ -37749,6 +37749,76 @@
       "source_path": "learn-pr/azure/azure-data-subject-requests/9-summary.yml",
       "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/10-provide-access-key-vault-keys-certificates-secrets.md",
+      "redirect_url": "/training/modules/governance-security/11-provide-access-key-vault-keys-certificates-secrets",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/governance-security/11-azure-key-vault-keys-secrets-certificates.md",
+      "redirect_url": "/training/modules/governance-security/12-azure-key-vault-keys-secrets-certificates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/12-configure-cryptographic-key-auto-rotation-azure-key-vault.md",
+      "redirect_url": "/training/modules/governance-security/13-configure-cryptographic-key-auto-rotation-azure-key-vault",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/13-azure-key-vault-backup-restore.md",
+      "redirect_url": "/training/modules/governance-security/14-azure-key-vault-backup-restore",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/14-knowledge-check.md",
+      "redirect_url": "/training/modules/governance-security/15-knowledge-check",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/governance-security/15-summary.md",
+      "redirect_url": "/training/modules/governance-security/16-summary",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/governance-security/2-create-custom-azure-security-initiatives-policies.md",
+      "redirect_url": "/training/modules/governance-security/3-create-custom-azure-security-initiatives-policies",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/governance-security/3-azure-blueprints.md",
+      "redirect_url": "/training/modules/governance-security/4-azure-blueprints",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/governance-security/4-infrastructure-security-architecture.md",
+      "redirect_url": "/training/modules/governance-security/5-infrastructure-security-architecture",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/5-azure-key-vault.md",
+      "redirect_url": "/training/modules/governance-security/6-azure-key-vault",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/6-azure-key-vault-security.md",
+      "redirect_url": "/training/modules/governance-security/7-azure-key-vault-security",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/governance-security/7-azure-key-vault-authentication.md",
+      "redirect_url": "/training/modules/governance-security/8-azure-key-vault-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/8-create-key-vault-use-azure-portal.md",
+      "redirect_url": "/training/modules/governance-security/9-create-key-vault-use-azure-portal",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/governance-security/9-azure-dedicated-hardware-security-module.md",
+      "redirect_url": "/training/modules/governance-security/10-azure-dedicated-hardware-security-module",
+      "redirect_document_id": false
     }
   ]
 }

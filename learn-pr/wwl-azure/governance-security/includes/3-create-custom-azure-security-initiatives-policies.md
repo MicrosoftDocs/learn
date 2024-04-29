@@ -2,33 +2,33 @@ When it comes to securing your Azure environment, you’ll encounter two essenti
 
 ### Azure Security Policies:
 
- -  **Definition**: Azure Policy is like a diligent guardian that ensures your resources adhere to specific rules. It allows you to define and enforce policies across your Azure environment.
- -  **Components**:
-     -  **Policy Definition**: Specifies the conditions you want to control (e.g., resource types allowed, mandatory tags).
-     -  **Policy Assignment**: Determines where the policy takes effect (individual resources, resource groups, management groups).
-     -  **Policy Parameters**: Customizes policy behavior (e.g., Virtual Machine Stock Keeping Units, location).
- -  **Use Cases**:
+ -  Definition: Azure Policy is like a diligent guardian that ensures your resources adhere to specific rules. It allows you to define and enforce policies across your Azure environment.
+ -  Components:
+     -  Policy Definition: Specifies the conditions you want to control (e.g., resource types allowed, mandatory tags).
+     -  Policy Assignment: Determines where the policy takes effect (individual resources, resource groups, management groups).
+     -  Policy Parameters: Customizes policy behavior (e.g., Virtual Machine Stock Keeping Units, location).
+ -  Use Cases:
      -  Enforcing specific rules consistently.
      -  Ensuring uniform tagging.
      -  Controlling resource types.
 
 ### Azure Security Initiatives:
 
- -  **Definition**: Think of Azure Initiatives as policy bundles. They group related Azure policy definitions together for a specific purpose.
- -  **Components**:
-     -  **Definitions (Policies)**: A collection of policies bundled into a single item.
-     -  **Assignment**: Initiatives are applied to a scope (e.g., subscription, resource group).
-     -  **Parameters**: Customize initiative behavior.
- -  **Use Cases**:
+ -  Definition: Think of Azure Initiatives as policy bundles. They group related Azure policy definitions together for a specific purpose.
+ -  Components:
+     -  Definitions (Policies): A collection of policies bundled into a single item.
+     -  Assignment: Initiatives are applied to a scope (e.g., subscription, resource group).
+     -  Parameters: Customize initiative behavior.
+ -  Use Cases:
      -  Achieving broader compliance goals (e.g., Payment Card Industry Data Security Standard, Health Insurance Portability and Accountability Act).
      -  Managing related policies cohesively.
 
 ### When to Use Which:
 
- -  **Azure Policy**:
+ -  Azure Policy:
      -  Use it for individual policies when specific rules need enforcement.
      -  Sometimes a single policy suffices.
- -  **Azure Initiatives**:
+ -  Azure Initiatives:
      -  Recommended even for a single policy because it simplifies management.
      -  Initiatives allow you to manage multiple policies as a cohesive unit.
      -  Example: Instead of handling 20 separate policies for PCI-DSS compliance, use an initiative that evaluates them all simultaneously.
@@ -37,7 +37,7 @@ When it comes to securing your Azure environment, you’ll encounter two essenti
 
 ## Create and manage policies to enforce compliance
 
-Understanding how to **create** and **manage policies** in Azure is important for staying compliant with your corporate standards and service-level agreements. In this example, you learn to use Azure Policy to do some of the more common tasks related to creating, assigning, and managing policies across your organization, such as:
+Understanding how to create and manage policies in Azure is important for staying compliant with your corporate standards and service-level agreements. In this example, you learn to use Azure Policy to do some of the more common tasks related to creating, assigning, and managing policies across your organization, such as:
 
  -  Assign a policy to enforce a condition for resources you create in the future<br>
  -  Create and assign an initiative definition to track compliance for multiple resources
