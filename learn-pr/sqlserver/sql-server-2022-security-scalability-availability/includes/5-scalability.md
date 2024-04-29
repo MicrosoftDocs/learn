@@ -4,14 +4,14 @@ ms.custom:
 ---
 Now let's look at scalability, and how new features in SQL Server 2022 can help significantly improve the performance of your workloads. By upgrading to SQL Server 2022, you can see significant improvements just by using the default configurations and features that were added to help scalability. 
 
-In this unit, we'll go over:
+In this unit, we go over:
 
 - Buffer pool parallel scan
 - System page latch concurrency enhancements
 
 ## Buffer pool parallel scan
 
-Introduced in SQL Server 2022, buffer pool parallel scan is a feature that improves the performance of buffer pool scan operations that help customers as they scale their SQL Server environments. Common operations such as database startup or shutdown, creating a new database, file drop operations, backup and restore operations, Always On failover events, DBCC CHECKDB and DBCC Check Table, log restore operations, and other internal operations will all benefit from buffer pool parallel scan.
+Introduced in SQL Server 2022, buffer pool parallel scan is a feature that improves the performance of buffer pool scan operations that help customers as they scale their SQL Server environments. Common operations such as database startup or shutdown, creating a new database, file drop operations, backup and restore operations, Always On failover events, DBCC CHECKDB and DBCC Check Table, log restore operations, and other internal operations all benefit from buffer pool parallel scan.
 
 ### What is a buffer pool and why does it affect performance?
 
@@ -21,11 +21,11 @@ In SQL Server 2019 and earlier, scanning the buffer pool was always a serial ope
 
 ### Solving scaling with buffer pool parallel scan
 
-With buffer pool parallel scan, the buffer pool scan can be parallelized, and the scan can complete faster. This is an important improvement for large-memory machines, as you can see the effect to performance when scaling your environment. Customers are seeing 10 to 30 times the improvement in operations that scan the buffer pool, just by using SQL Server 2022 as buffer pool parallel scan is enabled by default.
+With buffer pool parallel scan, the buffer pool scan can be parallelized, and the scan can complete faster. This improvement is important for large-memory machines, as you can see the effect to performance when scaling your environment. Customers are seeing 10 to 30 times the improvement in operations that scan the buffer pool, just by using SQL Server 2022 as buffer pool parallel scan is enabled by default.
 
 ## System page latch concurrency enhancements
 
-As in prior versions of SQL Server, SQL Server 2022 has introduced further improvements to `tempdb` performance, and this time to address:
+As in prior versions of SQL Server, SQL Server 2022 introduced further improvements to `tempdb` performance, and this time to address:
 
 - Concurrent global allocation maps (GAM) updates
 - Concurrent shared global allocation maps (SGAM) updates
@@ -36,7 +36,7 @@ One of the biggest performance issues we see with scaling a SQL Server environme
 
 :::image type="content" source="../media/tempdb-what-is-stored.png" alt-text="Diagram of the operations stored in the tempdb database.":::
 
-Another `tempdb` use is to internally spill to disk when there isn't enough memory available for a process or there's an inaccurate estimate that causes SQL Server to spill to `tempdb`. As we have started pushing towards bigger machines with larger workloads, we have started seeing concurrency issues emerge in the `tempdb` space in three key areas:
+Another `tempdb` use is to internally spill to disk when there isn't enough memory available for a process or there's an inaccurate estimate that causes SQL Server to spill to `tempdb`. As we start pushing towards bigger machines with larger workloads, we start seeing concurrency issues emerge in the `tempdb` space in three key areas:
 
 - [Object allocation contention](/troubleshoot/sql/database-engine/performance/recommendations-reduce-allocation-contention)
 - [Metadata contention](/sql/relational-databases/databases/tempdb-database#memory-optimized-tempdb-metadata)
@@ -46,9 +46,9 @@ If you want more information on the types of contention and why they occur, expl
 
 ### Solving scaling issues with concurrent GAM and SGAM updates
 
-If you've been managing a large SQL Server environment, you've likely ran into issues with higher concurrent workloads, and one of the likely causes was with `tempdb` contentions. For a couple decades, we have recommended a best practice of having multiple data files for `tempdb` to relieve contentions, including contentions to GAM and SGAM. You may have discovered SQL Server performance issues with high workloads but underutilized CPUs on your machine, and read about [PAGELATCH waits](/sql/relational-databases/diagnose-resolve-latch-contention), and followed guides troubleshooting `tempdb`.
+If you're managing a large SQL Server environment, you're likely to run into issues with higher concurrent workloads, and one of the likely causes is with `tempdb` contentions. For a couple decades, we recommended a best practice of having multiple data files for `tempdb` to relieve contentions, including contentions to GAM and SGAM. You might discover SQL Server performance issues with high workloads but underutilized CPUs on your machine, and read about [PAGELATCH waits](/sql/relational-databases/diagnose-resolve-latch-contention), and followed guides troubleshooting `tempdb`.
 
-Continuing the scaling enhancements with SQL Server 2022, we've introduced concurrent GAM and SGAM updates to help address the performance bottleneck with `tempdb` with no application changes or configuration required. This improvement erases nearly all `tempdb` contention, allowing parallel threads to be able to modify the GAM and SGAM pages. With all of these enhancements, users should be able to use the defaults from SQL Server 2022 setup to configure `tempdb` files and no longer have to perform any other tuning for `tempdb` system page latch contention. This potentially enables you to have a *hands-free* approach to managing the `tempdb`.
+Continuing the scaling enhancements with SQL Server 2022, we introduced concurrent GAM and SGAM updates to help address the performance bottleneck with `tempdb` with no application changes or configuration required. This improvement erases nearly all `tempdb` contention, allowing parallel threads to be able to modify the GAM and SGAM pages. With all of these enhancements, users should be able to use the defaults from SQL Server 2022 setup to configure `tempdb` files and no longer have to perform any other tuning for `tempdb` system page latch contention. This enhancement potentially enables you to have a *hands-free* approach to managing the `tempdb`.
 
 If you want to see a performance demo of the scaling improvements introduced in SQL Server 2022, check out the following video:
 
