@@ -3,13 +3,13 @@ Now that the API is deployed to the cloud, as a Tailwind Traders engineer, you n
 ## Update the client application
 
 1. In Visual Studio Code, open `./start/client/src/index.js` and replace all the code to listen for SignalR messages. The code gets the initial stock list with an HTTP request and then listens for updates from the SignalR connection. When a stock is updated, the client updates the stock price in the UI.
-    
+
     :::code language="javascript" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/solution/client/src/index.js" :::
 
 1. Open `./start/client/index.html` and paste the following code in place of the current DIV with the ID of app.
 
     :::code language="html" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/solution/client/index.html" :::
-    
+
     This markup includes a transition element, which allows Vue.js to run a subtle animation as stock data changes. When a stock is updated, the tile fades out and quickly back in to view. This way if the page is full of stock data, users can easily see which stocks have changed.
 
 1. Add the following script block just above the reference to *bundle.js* to include the SignalR SDK.
@@ -20,12 +20,13 @@ Now that the API is deployed to the cloud, as a Tailwind Traders engineer, you n
 
 ## Update the client .env 
 
-1. Create an environment variables file in the `client/start` folder named `.env`.
+1. Create an environment variables file in the `start/client` folder named `.env`.
 1. Add a variable named `BACKEND_URL` and add its value you copied from unit 5.
 
     ```console
     BACKEND_URL=https://YOUR-FUNTIONS-APP-NAME.azurewebsites.net
     ```
+
 ## Create an Azure Static Web apps resource and deploy client
 
 1. Open the [Azure portal](https://portal.azure.com/#create/Microsoft.FunctionApp) to create a new Azure Static Web Apps resource.
@@ -54,7 +55,7 @@ Now that the API is deployed to the cloud, as a Tailwind Traders engineer, you n
 
 1. Select **Review + Create**, then select **Create** to create the resource. Wait for the deployment to complete before continuing.
 1. Select **Go to resource** to open the new Azure Static Web App resource.
-1. On the **Overview** page, copy the **URL** value. This is the base URL of the deployed static web app. 
+1. On the **Overview** page, copy the **URL** value. This is the base URL of the deployed static web app.
 
 ## Add the BACKEND_URL variable to the repository
 
@@ -83,7 +84,6 @@ The workflow needs to have the `BACKEND_URL` environment variable set to the dep
 1. Edit the **Build And Deploy** step to add the **env** property for the `BACKEND_URL` environment variable. 
 
     :::code language="yaml" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/example-client-workflow.yml" :::
-
 
 1. Save and push the changes to the repository.
 
