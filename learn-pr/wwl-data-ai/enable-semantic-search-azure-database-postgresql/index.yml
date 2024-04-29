@@ -3,7 +3,7 @@ uid: learn.wwl.enable-semantic-search-azure-database-postgresql
 metadata:
   title: Enable semantic search in Azure Database for PostgreSQL
   description: "Learn to enable semantic search in Azure Database for PostgreSQL."
-  ms.date: 04/26/2024
+  ms.date: 04/29/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module
