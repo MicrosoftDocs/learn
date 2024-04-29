@@ -3,12 +3,10 @@ uid: learn.wwl.build-ai-apps-azure-database-postgresql
 metadata:
   title: Build AI Apps with Azure Database for PostgreSQL
   description: Build AI Apps with Azure Database for PostgreSQL.
-  ms.date: 04/22/2024
+  ms.date: 04/29/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: learning-path
-  ms.service: postgresql
-  ms.subservice: flexible-server
 title: Build AI Apps with Azure Database for PostgreSQL
 prerequisites: |
   Before starting this module, you should have experience working with PostgreSQL databases, writing SQL queries, and a general understanding of AI and ML concepts.
@@ -27,10 +25,7 @@ subjects:
 - databases
 modules:
 - learn.wwl.get-started-generative-ai-azure-database-postgresql
-- learn.wwl.enable-semantic-search-azure-database-postgresql
-- learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql
 - learn-wwl.perform-sentiment-analysis-opinion-mining-azure-database-postgresql
-- learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql
 - learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql
 - learn.wwl.use-azure-machine-learning-inferencing-azure-database-postgresql
 trophy:
