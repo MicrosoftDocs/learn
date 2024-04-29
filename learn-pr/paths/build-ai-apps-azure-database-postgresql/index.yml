@@ -25,7 +25,10 @@ subjects:
 - databases
 modules:
 - learn.wwl.get-started-generative-ai-azure-database-postgresql
+- learn.wwl.enable-semantic-search-azure-database-postgresql
+- learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql
 - learn-wwl.perform-sentiment-analysis-opinion-mining-azure-database-postgresql
+- learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql
 - learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql
 - learn.wwl.use-azure-machine-learning-inferencing-azure-database-postgresql
 trophy:
