@@ -6,8 +6,8 @@ metadata:
   title: Summary
   description: "Summary of Azure Policy and additional reading."
   ms.date: 01/05/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: unit
 durationInMinutes: 1
 content: |

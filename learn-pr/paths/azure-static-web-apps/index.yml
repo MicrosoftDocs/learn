@@ -41,6 +41,5 @@ modules:
 - learn.azure.publish-static-web-app-api-preview-url
 - learn.azure.publish-static-web-app-authentication
 - learn.azure.publish-static-web-app-and-api-dotnet
-- learn.static-apps-gatsby
 trophy:
   uid: learn.azure-static-web-apps.trophy
