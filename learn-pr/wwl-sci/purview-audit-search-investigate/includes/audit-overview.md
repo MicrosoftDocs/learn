@@ -78,3 +78,7 @@ In Microsoft Teams, the system logs various aspects of communication, such as:
 - **Chat interactions**: Creation, retrieval, and updates of chat messages, along with their contextual properties.
 - **Meeting details**: Details of meeting participants, including whether they joined from the lobby and what artifacts were shared during the session.
 - **Message dynamics**: Creation, deletion, and modifications of messages, providing a trail of how information is handled within the organization.
+
+## Knowledge check
+
+Choose the best response for the question below, then select **Check your answers**.

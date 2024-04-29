@@ -1,4 +1,6 @@
-The IT compliance team at the network of healthcare facilities is now focusing on investigating unusual access patterns detected in their electronic health records (EHR) using Microsoft Purview Audit (Premium). With recent suspicious activities, the team needs to investigate further to ensure that all access to patient data is thoroughly examined and scrutinized for any signs of compromise.
+Microsoft Purview Audit (Premium) offers advanced features that enable detailed investigations of user activities within Microsoft 365 services. This version is useful for forensic analysis, helping organizations in-depth reviews of security incidents and irregular access patterns.
+
+Following the discovery of unusual activities in the electronic health records (EHR) at our network of healthcare facilities, the IT compliance team is now turning to Audit (Premium). Their goal is to conduct thorough investigations to ensure all access to patient data is scrutinized and to identify any potential breaches.
 
 Here you learn to:
 
@@ -10,9 +12,7 @@ Here you learn to:
 
 ## Audit (Premium) overview
 
-Microsoft Purview Audit (Premium) builds on Audit (Standard), adding advanced features tailored for deeper and more extensive auditing requirements. It includes everything from Audit (Standard) plus more capabilities for extended retention and detailed insights.
-
-### Enhanced features in Audit (Premium)
+Microsoft Purview Audit (Premium) enhances the capabilities of Audit (Standard) by adding advanced features tailored for deeper and more extensive auditing requirements. These enhancements include:
 
 - **Extended data retention**: Offers default retention for up to one year for services like Microsoft Entra ID, Exchange, OneDrive, and SharePoint. For extended retention periods up to 10 years, an additional add-on license is required.
 - **Customizable retention policies**: Allows you to set custom audit log retention times based on the service, specific activities, or user actions. This flexibility helps meet specific compliance and investigative needs.
@@ -23,7 +23,7 @@ Audit (Premium) enhances security with its advanced features, making it easier f
 
 ## Investigate compromised accounts with Microsoft Purview Audit (Premium)
 
-**MailItemsAccessed** is a feature in Microsoft Purview Audit (Premium) designed to provide detailed records of how and when email items are accessed. This functionality is crucial for organizations to manage sensitive communications securely and effectively.
+**MailItemsAccessed** is an auditing action in Microsoft Purview Audit (Premium) designed to provide detailed records of how and when email items are accessed. This functionality is crucial for organizations to manage sensitive communications securely and effectively.
 
 ### Understand sync and bind access
 
@@ -111,3 +111,7 @@ Here's how you can use contextual data to track and understand access patterns:
 - **Analyze detailed properties**: Properties like _ClientIPAddress_ and _InternetMessageId_ provide specific details about each access instance, helping in forensic analysis.
 
 By integrating this information into your investigations, you can enhance the accuracy of your security assessments and ensure that your responses to incidents are informed and effective.
+
+## Knowledge check
+
+Choose the best response for the question below, then select **Check your answers**.

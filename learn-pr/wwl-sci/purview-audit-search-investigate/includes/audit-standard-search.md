@@ -1,6 +1,6 @@
 Microsoft Purview Audit (Standard) provides tools for logging activities across Microsoft 365 services. It helps you efficiently use audit log searches to respond to security incidents and manage compliance, ensuring thorough oversight and quick analysis within your organization.
 
-The IT compliance team at a network of healthcare facilities uses Microsoft Purview Audit (Standard) to effectively manage and review access to electronic health records (EHR). This setup ensures that all access is properly logged and adheres to health data protection laws. With this system in place, the team is ready to tackle specific security concerns and enhance their auditing processes.
+The IT compliance team at a network of healthcare facilities uses Microsoft Purview Audit (Standard) to effectively manage and review access to electronic health records (EHR). This setup ensures that all access is properly logged and adheres to health data protection laws. With this system in place, the team is ready to address security concerns and enhance their auditing processes.
 
 Here you learn to:
 
@@ -117,3 +117,7 @@ The IT compliance team followed these steps using Microsoft Purview Audit to inv
 - Use search tools available in the Microsoft Purview compliance portal to attempt the recovery of deleted emails, which is critical when patient care or privacy might be affected.
 
 This approach helps the healthcare facility's compliance team address and manage any inappropriate email deletions, supporting their commitment to maintaining strict patient confidentiality and adherence to healthcare regulations.
+
+## Knowledge check
+
+Choose the best response for the question below, then select **Check your answers**.

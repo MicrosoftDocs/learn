@@ -39,7 +39,7 @@ Assign _View-Only Audit Logs_ or _Audit Logs_ roles in the Microsoft Purview com
 - **Audit Reader**: Allows searching and exporting the audit log without the ability to change audit settings.
 
 > [!NOTE]
-> Steps 3-5 are only applicable to Audit.
+> Steps 3-5 are only applicable to Audit (Premium).
 
 ### Step 3: Set up Audit (Premium) for users
 
@@ -118,3 +118,7 @@ You have to use Exchange Online PowerShell to turn off auditing.
    ```powershell
    Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
    ```
+
+## Knowledge check
+
+Choose the best response for the question below, then select **Check your answers**.

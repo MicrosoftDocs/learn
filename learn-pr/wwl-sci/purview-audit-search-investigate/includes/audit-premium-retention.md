@@ -1,6 +1,6 @@
 Microsoft Purview Audit (Premium) enhances the ability to manage audit logs by extending their retention. For healthcare facilities managing sensitive patient data, maintaining audit records for required periods is essential to comply with healthcare regulations.
 
-With recent suspicious activities detected in the electronic health records, the IT compliance team is now utilizing Microsoft Purview Audit (Premium) to conduct in-depth investigations. This advanced tool allows for detailed scrutiny of all access to patient data, ensuring that any potential breaches are thoroughly analyzed and addressed.
+As our network of healthcare facilities continues to maintain high standards of data protection, the IT compliance team is using Audit (Premium) to ensure that all audit logs are retained for the required periods. This commitment supports ongoing security evaluations and compliance with health data protection standards, providing a reliable foundation for any necessary compliance reviews or investigations.
 
 Here you learn to:
 
@@ -82,3 +82,7 @@ PowerShell commands provide flexibility for creating, viewing, editing, and dele
 
 - **Edit policies in PowerShell** using the `Set-UnifiedAuditLogRetentionPolicy` cmdlet.
 - **Delete policies in PowerShell** using the `Remove-UnifiedAuditLogRetentionPolicy` cmdlet. It might take up to 30 minutes for the policy to be removed from your organization.
+
+## Knowledge check
+
+Choose the best response for the question below, then select **Check your answers**.

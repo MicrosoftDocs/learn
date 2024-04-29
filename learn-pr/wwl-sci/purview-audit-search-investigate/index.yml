@@ -3,7 +3,7 @@ uid: learn.wwl.purview-audit-search-investigate
 metadata:
   title: Search and investigate with Microsoft Purview Audit
   description: "Search and investigate with Microsoft Purview Audit."
-  ms.date: 04/23/2024
+  ms.date: 04/30/2024
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
@@ -39,11 +39,7 @@ units:
 - learn.wwl.purview-audit-search-investigate.audit-premium-investigate
 - learn.wwl.purview-audit-search-investigate.audit-export
 - learn.wwl.purview-audit-search-investigate.audit-premium-retention
-
-
-- learn.wwl.apply-manage-sensitivity-labels.protect-meetings-with-sensitivity-labels
-- learn.wwl.apply-manage-sensitivity-labels.apply-sensitivity-labels-to-microsoft-365-services
-- learn.wwl.apply-manage-sensitivity-labels.knowledge-check
-- learn.wwl.apply-manage-sensitivity-labels.summary-resources
+- learn.wwl.purview-audit-search-investigate.knowledge-check
+- learn.wwl.purview-audit-search-investigate.summary
 badge:
   uid: learn.wwl.purview-audit-search-investigate.badge
