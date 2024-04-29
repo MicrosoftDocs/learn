@@ -100,7 +100,7 @@ To add the `Employees.Write.All` example scope, follow the steps in the **Add a 
 | User consent display name  | *None (leave empty)*                                               |
 | User consent description   | *None (leave empty)*                                               |
 
-Set the State to Enabled, and then select Add scope.
+Set the State to Enabled, and then select Add scope.<br>
 
 ## Verify the exposed scopes
 
