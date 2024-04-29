@@ -4,10 +4,10 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: Knowledge check questions for configure Dependabot security updates on GitHub.
-  ms.date: 02/08/2024
-  author: rmcmurray
-  ms.author: robmcm
+  description: Knowledge check questions for understanding and managing dependencies in GitHub.
+  ms.date: 04/25/2024
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: unit
 durationInMinutes: 6
 content: |
@@ -27,9 +27,9 @@ quiz:
       explanation: "Vendored dependencies are checked into a specific repository but aren't referenced in a manifest file."
   - content: "When is a Dependabot alert generated?"
     choices:
-    - content: "Whenever a new vulnerability is added to the GitHub Advisory Database."
+    - content: "When a new advisory is added to the GitHub Advisory Database or the dependency graph for a repository changes."
       isCorrect: true
-      explanation: "Dependabot alerts are generated under two conditions: a new vulnerability is added to the GitHub Advisory Database and the dependency graph for a repository changes."
+      explanation: "Dependabot alerts are generated under two conditions: a new vulnerability is added to the GitHub Advisory Database or the dependency graph for a repository changes."
     - content: "Whenever a pull request attempts to merge changes into the main branch that contain no dependency changes."
       isCorrect: false
       explanation: "GitHub can review when a pull request attempts to merge changes into the main branch that contain dependency changes. A Dependabot alert is generated if this change would introduce a vulnerability."
@@ -54,7 +54,7 @@ quiz:
       explanation: "To view all of your notifications marked as 'Done', use the `is:done` query."
     - content: "`is:saved`"
       isCorrect: false
-      explanation: "To view all of your saved notifications, use the `is:saved` query."
+      explanation: "The `is:saved` query is used to view all of your saved notifications."
     - content: "`is:complete`"
       isCorrect: false
       explanation: "The `is:complete` query doesn't exist on GitHub."
