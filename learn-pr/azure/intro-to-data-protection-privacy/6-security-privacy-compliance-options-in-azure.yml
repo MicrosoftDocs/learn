@@ -5,8 +5,8 @@ metadata:
   title: Microsoft and Azure data protection tools
   description: Learn about Microsoft and Azure services and tools that support compliance, data protection and security, and data privacy.
   ms.date: 07/27/2023
-  author: cwatson-cat
-  ms.author: cwatson
+  author: TerryLanfear
+  ms.author: terrylan
   ms.topic: unit
 durationInMinutes: 10
 content: |
