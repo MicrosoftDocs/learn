@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql.detect-personally-identifiable-information
-title: Recognize PII entities
+title: Recognize personally identifiable information (PII) entities
 metadata:
-  title: Recognize PII entities
-  description: "Recognize PII entities"
-  ms.date: 04/26/2024
+  title: Recognize personally identifiable information (PII) entities
+  description: "Recognize personally identifiable information (PII) entities"
+  ms.date: 04/29/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit

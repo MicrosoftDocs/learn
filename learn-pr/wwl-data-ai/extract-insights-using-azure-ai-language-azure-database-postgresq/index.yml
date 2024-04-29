@@ -3,7 +3,7 @@ uid: learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresq
 metadata:
   title: Extract insights using Azure AI Language and Azure Database for PostgreSQL
   description: "Learn to extract insights using Azure AI Language and Azure Database for PostgreSQL."
-  ms.date: 04/26/2024
+  ms.date: 04/29/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module
