@@ -6,8 +6,8 @@ metadata:
   title: What is Azure Policy?
   description: "What is Azure Policy and what can it be used for?"
   ms.date: 01/05/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: unit
 durationInMinutes: 1
 content: |

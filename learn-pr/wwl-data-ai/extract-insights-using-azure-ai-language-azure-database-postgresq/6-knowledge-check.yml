@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/29/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An e-commerce website wants to see if a product's positive reviews highlight the same fundamental ideas and negative reviews focus on the same issues. Which tool is the simplest to extract the main concepts in a product review text?"
+    choices:
+    - content: "Embedding vector generation."
+      isCorrect: false
+      explanation: "Incorrect. The embedding vector is the key tool to embed semantic meaning, but it needs to identify the words themselves that lend that meaning."
+    - content: "Key phrase extraction."
+      isCorrect: true
+      explanation: "Correct. Key phrase extraction identifies the key words and phrases in the input text, which can then be stored into array columns for further processing."
+    - content: "Azure OpenAI API."
+      isCorrect: false
+      explanation: "Incorrect. While OpenAI provides language models that could be trained to generate key phrases, it's not as simple as using key phrase extraction APIs."
+  - content: "Which of the following tasks is the key task of entity recognition?"
+    choices:
+    - content: "Recognizing entities in images."
+      isCorrect: false
+      explanation: "Incorrect. The entity recognition services work with text, not images."
+    - content: "Recognizing entities in text."
+      isCorrect: true
+      explanation: "Correct. Azure Language's entity recognition works with text."
+    - content: "Match entities against a known list."
+      isCorrect: false
+      explanation: "Incorrect. Entity recognition identifies arbitrary entities and organizes them by category rather than matching a fixed list of possible entities."
+  - content: "Which of the following options is considered personally identifiable information?"
+    choices:
+    - content: "Phone number."
+      isCorrect: true
+      explanation: "Correct. Phone numbers are often tied to an individual or household and, as such, are personally identifiable information. A primary key identifier only identifies an individual in its database, and a country of residence is too broad to identify somebody personally."
+    - content: "Primary key identifier."
+      isCorrect: false
+      explanation: "Incorrect. A primary key identifier only identifies an individual in its database or application of origin. It needs to be paired with other information to identify a person. The country of residence is too vague to identify a person. But a phone number can often identify a specific person or household: it's PII."
+    - content: "Country of residence."
+      isCorrect: false
+      explanation: "Incorrect. Somebody's country of residence is too broad to identify them uniquely, so it isn't PII. A primary key identifier, while very specific, is only meaningful in its database or application of origin. A phone number, however, typically identifies an individual or household, and so is PII."
