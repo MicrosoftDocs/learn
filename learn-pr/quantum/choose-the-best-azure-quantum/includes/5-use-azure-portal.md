@@ -1,8 +1,8 @@
 The Azure Quantum portal includes a notebook gallery with sample notebooks You can use these notebooks to run your own quantum programs.
 
-## Prerequisites
+## Have an Azure subscription
 
-- An Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=academic-15963-cxa) before you begin.
+To access Azure portal you need An Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=academic-15963-cxa) before you begin.
 
 ## Create a quantum workspace
 
