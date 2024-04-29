@@ -33,5 +33,6 @@ modules:
 - learn.save-money-with-azure-reserved-instances
 - learn.optimize-costs-data-analysis-powerbi
 - learn.manage-costs-partner-cost-management
+- learn.azure.azure-savings-plan-for-compute
 trophy:
   uid: learn.control-spending-manage-bills.trophy
