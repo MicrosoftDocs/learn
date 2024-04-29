@@ -44,7 +44,7 @@ Now that the API is deployed to the cloud, as a Tailwind Traders engineer, you n
     | Branch            | Select the **main** branch.                    |
     | Build Presets| Select **Vue.js**.|
     | App location | Enter `/start/client`.|
-    | Api Location | Leave empty.|
+    | API Location | Leave empty.|
     | Output Location | Enter `dist`.|
 
 1. Select **Preview workflow file** to review the deployment settings. The **Build And Deploy** step should look like the following: 
