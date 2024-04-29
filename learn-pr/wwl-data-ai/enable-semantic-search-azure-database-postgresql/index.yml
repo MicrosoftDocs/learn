@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.enable-semantic-search-azure-database-postgresql
+metadata:
+  title: Enable semantic search in Azure Database for PostgreSQL
+  description: "Learn to enable semantic search in Azure Database for PostgreSQL."
+  ms.date: 04/29/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: module
+  ms.service: postgresql
+  ms.subservice: flexible-server
+  ai-usage: human-only
+title: Enable semantic search in Azure Database for PostgreSQL
+summary: This module explores semantic search, embedding vectors, vector similarity, and using Azure Database for PostgreSQL - Flexible Server with PostgreSQL Vector and Azure AI extensions to generate, store, and query rows with semantic search.
+abstract: |
+  -   Examine the concepts of semantic search &amp; embedding vectors.
+
+  -   Understand the difference between lexical search &amp; semantic search.
+
+  -   Evaluate the capabilities provided by the `azure_ai` extension for PostgreSQL.
+
+  -   Install and explore the `vector` and `azure_ai` extensions in an Azure Database for PostgreSQL - Flexible Server database.
+prerequisites: Before starting this module, you should have experience working with PostgreSQL databases, writing SQL queries, and standard lexical search.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-database-postgresql
+subjects:
+- artificial-intelligence
+- databases
+units:
+- learn.wwl.enable-semantic-search-azure-database-postgresql.introduction
+- learn.wwl.enable-semantic-search-azure-database-postgresql.understand-semantic-search
+- learn.wwl.enable-semantic-search-azure-database-postgresql.store-vectors-azure-database-postgresql-flexible-server
+- learn.wwl.enable-semantic-search-azure-database-postgresql.create-embeddings-with-azure-ai-extension
+- learn.wwl.enable-semantic-search-azure-database-postgresql.exercise-generate-vector-embeddings-with-azure-openai
+- learn.wwl.enable-semantic-search-azure-database-postgresql.explore-semantic-search-use-cases
+- learn.wwl.enable-semantic-search-azure-database-postgresql.exercise-create-search-function-recommendation-system
+- learn.wwl.enable-semantic-search-azure-database-postgresql.knowledge-check
+- learn.wwl.enable-semantic-search-azure-database-postgresql.summary
+badge:
+  uid: learn.wwl.enable-semantic-search-azure-database-postgresql.badge
