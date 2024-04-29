@@ -69,7 +69,7 @@ You can configure a WAF policy and associate that policy to one or more applicat
  -  Custom rules that you create<br>
  -  Managed rule sets that are a collection of Azure-managed preconfigured set of rules<br>
 
-When both are present, custom rules are processed before processing the rules in a managed rule set. A rule is made of a match condition, a priority, and an action. Action types supported are: **ALLOW**, **BLOCK**, and **LOG**. You can create a fully customized policy that meets your specific application protection requirements by combining managed and custom rules.<br>
+When both are present, custom rules are processed before processing the rules in a managed rule set. A rule is made of a match condition, a priority, and an action. Action types supported are: ALLOW, BLOCK, and LOG. You can create a fully customized policy that meets your specific application protection requirements by combining managed and custom rules.<br>
 
 Rules within a policy are processed in a priority order. Priority is a unique integer that defines the order of rules to process. Smaller integer value denotes a higher priority and those rules are evaluated before rules with a higher integer value. Once a rule is matched, the corresponding action that was defined in the rule is applied to the request. Once such a match is processed, rules with lower priorities aren't processed further.<br>
 
@@ -111,8 +111,8 @@ You can access WAF logs from a storage account, event hub, log analytics, or sen
 
 The Application Gateway WAF can be configured to run in the following two modes:
 
- -  **Detection mode**: Monitors and logs all threat alerts. You turn on logging diagnostics for Application Gateway in the Diagnostics section. You must also make sure that the WAF log is selected and turned on. Web application firewall doesn't block incoming requests when it's operating in Detection mode.<br>
- -  **Prevention mode**: Blocks intrusions and attacks that the rules detect. The attacker receives a "403 unauthorized access" exception, and the connection is closed. Prevention mode records such attacks in the WAF logs.
+ -  Detection mode: Monitors and logs all threat alerts. You turn on logging diagnostics for Application Gateway in the Diagnostics section. You must also make sure that the WAF log is selected and turned on. Web application firewall doesn't block incoming requests when it's operating in Detection mode.<br>
+ -  Prevention mode: Blocks intrusions and attacks that the rules detect. The attacker receives a "403 unauthorized access" exception, and the connection is closed. Prevention mode records such attacks in the WAF logs.
 
 ## **WAF engines**
 
