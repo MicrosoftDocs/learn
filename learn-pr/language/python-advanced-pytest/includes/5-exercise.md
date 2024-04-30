@@ -112,11 +112,11 @@ Although you wrote only two test functions, Pytest was able to create eight test
     ```python
     class TestFile:
 
-    def test_f(self, tmpfile):
-        path = tmpfile()
-        with open(path) as _f:
-            contents = _f.read()
-        assert contents == "1"
+        def test_f(self, tmpfile):
+            path = tmpfile()
+            with open(path) as _f:
+                contents = _f.read()
+            assert contents == "1"
     ```
 
     This test class can now ensure that a temporary file will get created and cleaned with the proper contents for the assertion to work.

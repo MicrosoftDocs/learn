@@ -3,8 +3,8 @@ uid: learn.python-advanced-pytest.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Check your knowledge about Pytest parametrize and fixtures
-  ms.date: 1/31/2022
+  description: Check your knowledge about pytest parametrize and fixtures
+  ms.date: 4/12/2024
   author: alfredodeza
   ms.author: alfredodeza
   ms.custom:
@@ -23,9 +23,9 @@ quiz:
     - content: "That is allows sharing the fixtures without importing them in a test suite."
       isCorrect: true
       explanation: "Correct. By adding fixtures in a _conftest.py_, they become available to any test in a test suite without importing them."
-    - content: "Because it allows fixtures to require Pytest fixtures."
+    - content: "Because it allows fixtures to require pytest fixtures."
       isCorrect: false
-      explanation: "Incorrect. Fixtures can always require Pytest fixtures regardless of their location."
+      explanation: "Incorrect. Fixtures can always require pytest fixtures regardless of their location."
   - content: "What makes a test be a good candidate for `parametrize()`?"
     choices:
     - content: "When a test needs to loop over inputs for the same assertion"
@@ -37,11 +37,11 @@ quiz:
     - content: "When a test needs to run in parallel"
       isCorrect: false
       explanation: "Incorrect. There’s no need to use _parametrize_ to run tests in parallel"
-  - content: "Why multiple arguments with _parametrize_ might not be a good idea?"
+  - content: "Why might multiple arguments with _parametrize_ not be a good idea?"
     choices:
-    - content: "Because Pytest doesn't allow it. An exception gets raised instead."
+    - content: "Because pytest doesn't allow it. An exception gets raised instead."
       isCorrect: false
-      explanation: "Incorrect. Pytest does allow multiple arguments with _parametrize_."
+      explanation: "Incorrect. pytest does allow multiple arguments with _parametrize_."
     - content: "Because test functions don't allow multiple arguments."
       isCorrect: false
       explanation: "Incorrect. Test functions do allow multiple arguments, including when testing with _parametrize_." 
