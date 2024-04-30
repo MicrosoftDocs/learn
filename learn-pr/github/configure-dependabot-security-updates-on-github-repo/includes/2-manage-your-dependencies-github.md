@@ -10,7 +10,6 @@ In this unit, you'll learn about the GitHub tools for managing your dependencies
 
 ## The Dependency graph
 
-:::image type="content" source="../media/dependency-graph.png" alt-text="screenshot of Dependencies of the dependency graph.":::
 ![Screenshot of Dependencies of the dependency graph.](../media/dependency-graph.png)
 
 The dependency graph is a summary of the manifest and lock files stored in a repository and any dependencies that are submitted for the repository using the Dependency submission API. These files contain metadata about your project. The dependency graph is automatically generated for public repositories and includes the following information:
