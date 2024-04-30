@@ -17,3 +17,4 @@ After this change, any new devices or unrecognized network traffic trigger an al
 When the sensor is in *learning* mode, all devices detected are identified as *authorized*. Meaning that the device was checked and approved as a recognized part of your system. Once *learning* mode is complete, any new devices detected are logged as *unauthorized*, and must be fully checked before you update the status to *authorized*.
 
 Even after *learning* mode is turned off, and *operational* mode starts traffic can be tracked. Activating the *Smart IT Learning*, found under **Network modeling**, makes Defender for IoT send alerts when new suspicious traffic is tracked.
+ 

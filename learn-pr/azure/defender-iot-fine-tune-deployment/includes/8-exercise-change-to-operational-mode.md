@@ -16,5 +16,5 @@ Review the **System settings**. It should show that *learning* mode is disabled.
 :::image type="content" source="../media/8-disable-learning-mode.png" alt-text="Screenshot of the learning option disabled.":::
 
 Once the operational mode is enabled your deployment of the OT sensor to Defender for IoT is complete.
-
+ 
 <!--- Review content to make sure accurate/complete. -->

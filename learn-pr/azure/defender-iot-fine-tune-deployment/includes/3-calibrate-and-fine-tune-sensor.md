@@ -43,3 +43,4 @@ Check the device details in the **Device inventory**. You might need to make som
 |**DHCP address ranges**| Devices with an IP address allocated by a DHCP server, which changes dynamically, must define the range of IP addresses. This is an important step, which can affect the way your data is assessed for security risks. When the device IP address changes dynamically the device is logged as a new device, which might give misleading information about your system.|
 
 After checking and updating the devices the fine tuning phase is complete.
+ 
