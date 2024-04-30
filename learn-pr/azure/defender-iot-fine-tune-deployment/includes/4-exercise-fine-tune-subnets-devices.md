@@ -62,6 +62,8 @@ Assign a unique device as **Important**. In the **Device map**:
 
 ## Check public IP addresses
 
+It's important list all public IP addresses that are used internally. These IP addresses must be added as a separate subnet within the Subnet settings, as follows:
+
 1. Select **System setting** > **Basic** > **Subnets**
 1. Select **Add subnet**
 1. Type a new **IP** address
@@ -70,6 +72,8 @@ Assign a unique device as **Important**. In the **Device map**:
 1. Select **Save**
 
 ## Add DNS server settings
+
+Define the range of IP addresses for devices with an IP address allocated by a DHCP server, which changes dynamically, as follows:
 
 1. Select **System setting** > **Network monitoring** > **Reverse DNS lookup**
 1. Toggle **Enable**
