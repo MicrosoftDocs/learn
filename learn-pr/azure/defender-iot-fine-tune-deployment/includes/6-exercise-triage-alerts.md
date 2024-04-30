@@ -35,4 +35,9 @@ You can also select several alerts to triage at the same time, however you aren'
 
 ## Check your work
 
-When you complete the triage process, the **Alerts** page shows the updated status of the alerts.
+When you complete the triage process:
+
+1. Go to **Alerts**.
+1. Review the list of alerts which shows high level alerts.
+
+:::image type="content" source="../media/6-alert-after-triage.png" alt-text="Screenshot of the alerts page after triage.":::

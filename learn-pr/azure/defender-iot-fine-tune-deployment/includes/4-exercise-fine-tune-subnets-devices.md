@@ -95,4 +95,7 @@ For a device that automatically refreshes its IP address, add the DHCP address r
 
 ## Check your work
 
-You now have an updated and more accurate set of devices listed in the Device inventory.
+1. Go to **Device inventory**.
+1. The list of devices and subnets is up to date and accurate.
+
+:::image type="content" source="../media/4-fine-tuned-list.png" alt-text="Screenshot of the device inventory after fine tuning.":::
