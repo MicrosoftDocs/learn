@@ -37819,6 +37819,11 @@
       "source_path": "learn-pr/wwl-azure/governance-security/9-azure-dedicated-hardware-security-module.md",
       "redirect_url": "/training/modules/governance-security/10-azure-dedicated-hardware-security-module",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/2-what-is-microsoft-entra-id.md",
+      "redirect_url": "/training/modules/manage-identities-microsoft-entra-id/2-microsoft-entra-id-overview",
+      "redirect_document_id": false
     }
   ]
 }
