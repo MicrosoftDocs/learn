@@ -114,7 +114,7 @@ Learn more about [Microsoft Defender for Endpoint](/microsoft-365/security/defen
 | Release state:                                       | Generally available (GA)                                                                                                 |
 | Relevant Defender plan:                              | [Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction) |
 | Required roles and permissions (subscription-level): | [Owner](/azure/role-based-access-control/built-in-roles#owner)                                |
-| Supported destinations:                              | Yes - Azure virtual machineYes - Azure Arc-enabled machines                                                              |
+| Supported destinations:                              | Yes - Azure virtual machine<br>Yes - Azure Arc-enabled machines                                                          |
 | Policy-based:                                        | Yes                                                                                                                      |
 | Clouds:                                              | Yes - Commercial clouds<br>No - Azure Government, Microsoft Azure operated by 21Vianet                                   |
 
