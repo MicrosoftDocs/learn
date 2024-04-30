@@ -9,16 +9,20 @@ metadata:
   ms.topic: module
   ms.service: purview
   ai-usage: ai-assisted
+  hidden: true
 title: Search and investigate with Microsoft Purview Audit
-summary: Learn about how sensitivity labels are used to classify and protect business data while making sure that user productivity and their ability to collaborate aren't hindered.
+summary: Enhance data security and compliance with Microsoft Purview Audit by configuring detailed audits, managing logs, and analyzing access patterns.
 abstract: |
   After completing this module, you'll be able to:
-  - Understand the foundations of sensitivity label integration in Microsoft 365.
-  - Manage sensitivity label use in Office apps for security compliance.
-  - Secure Outlook and Teams meetings with sensitivity labels.
-  - Apply labels to Microsoft 365 Groups, SharePoint, and OneDrive for data protection.
+  - Identify the differences between Microsoft Purview Audit (Standard) and Audit (Premium).
+  - Configure Microsoft Purview Audit for optimal log management.
+  - Perform audits to assess compliance and security measures.
+  - Analyze irregular access patterns using advanced tools in Purview Audit (Premium) and PowerShell.
+  - Ensure regulatory compliance through strategic data management.
 prerequisites: |
-  Fundamentals knowledge of information governance in Microsoft 365.
+  - Basic familiarity with Microsoft 365.
+  - Understanding of data management principles.
+  - Knowledge of general compliance requirements.
 iconUrl: /training/achievements/manage-microsoft-purview-audit-premium.svg
 levels:
 - intermediate
