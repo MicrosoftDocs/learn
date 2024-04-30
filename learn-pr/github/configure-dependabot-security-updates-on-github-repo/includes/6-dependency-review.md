@@ -1,21 +1,21 @@
 So far we've covered the dependency graph and Dependabot. The next tool to help manage dependencies is dependency review. 
 
-Sometimes you might just want to update the version of one dependency in a manifest and generate a pull request. However, if the updated version of this direct dependency also has updated dependencies, your pull request may have more changes than you expected. The dependency review for each manifest and lock file provides an easy way to see what has changed, and whether any of the new dependency versions contain known vulnerabilities.
+Sometimes you might just want to update the version of one dependency in a manifest and generate a pull request. However, if the updated version of this direct dependency also has dependencies that are up-to-date, your pull request can have more changes than you expected. The dependency review for each manifest and lock file provides an easy way to see what changed, and whether any of the new dependency versions contain known vulnerabilities.
 
-Dependency review helps you understand dependency changes and the security impact of these changes at every pull request with:
+Dependency review helps you understand dependency changes and the security implications of these changes at every pull request with:
 
 - Which dependencies were added, removed, or updated.
-- How many projects use these components.
-- Vulnerability data for these dependencies.
+- Which projects use these components.
+- Which Vulnerability data are for these dependencies.
 
-Dependency review allows you to "shift left". You can use the provided predictive information to catch vulnerable dependencies before they hit production. By checking the dependency reviews in a pull request, and changing any dependencies that are flagged as vulnerable, you can avoid vulnerabilities being added to your project. 
+Dependency review allows you to "shift left." You can use the provided predictive information to catch vulnerable dependencies before they hit production. By checking the dependency reviews in a pull request, and changing any dependencies that are flagged as vulnerable, you can avoid vulnerabilities being added to your project. 
 
 Though dependency review sounds similar to Dependabot, the key difference is prevention. Dependency review analyzes dependency changes to identify and prevent insecure dependencies from entering your project in the first place, while Dependabot helps to automatically keep known dependencies patched and up-to-date. These complementary tools work together to improve software supply chain security. 
 
 
 ## Set up dependency review
 
-The simplest way to get started with dependency review is to set it up from an existing repository. The dependency-review-action is available for all public repositories, as well as private repositories that have GitHub Advanced Security enabled. The action scans for vulnerable versions of dependencies introduced by package version changes in pull requests, and warns you about the associated security vulnerabilities. This gives you better visibility of what's changing in a pull request, and helps prevent vulnerabilities being added to your repository. 
+The simplest way to get started with dependency review is to set it up from an existing repository. The dependency-review-action is available for all public repositories, and private repositories that have GitHub Advanced Security enabled. The action scans for vulnerable versions of dependencies introduced by package version changes in pull requests, and warns you about the associated security vulnerabilities. This scans gives you better visibility of what's changing in a pull request, and helps prevent vulnerabilities being added to your repository. 
 
 1. Go to the main page of the repository.
 2. Select the **Actions** tab for the repository.
@@ -70,23 +70,23 @@ jobs:
 ```
 
 
-## Leverage the marketplace
+## Use the marketplace
 
-If you're already familiar with GitHub Actions, another approach to start with dependency review is through the GitHub marketplace<sup>[7]</sup>. From here you can learn what the dependency-review-action<sup>[8]</sup> workflow does and copy sample code to use in your project. 
+If you're already familiar with GitHub Actions, another approach to start with dependency review is through the GitHub marketplace<sup>[7]</sup>. From here, you can learn what the dependency-review-action<sup>[8]</sup> workflow does and copy sample code to use in your project. 
 
 ![Screenshot of the dependency review action in the github marketplace.](../media/dependency-review-action-in-marketplace.png)
 
 
 ## Configure a dependency review workflow
 
-You can configure the dependency review action to better suit your needs. For example, you can specify the severity level that will make the action check fail, or set an allow or deny list for licenses to scan. 
+You can configure the dependency review action to better suit your needs. For example, you can specify the severity level that make the action check fail, or set an allow or blocklist for licenses to scan. 
 
 There are two methods of configuring the dependency review action:
 
 - Inlining the configuration options in your workflow file.
 - Referencing a configuration file in your workflow file.
 
-Let's say you want to configure license checks and custom severity thresholds to control risk from dependency changes. An example inline configuration to accomplish this within your dependency review action workflow file could be:
+Let's say you want to configure license checks and custom severity thresholds to control risk from dependency changes. An example inline configuration to accomplish this configurations within your dependency review action workflow file could be:
 ```
       - name: Dependency Review
         uses: actions/dependency-review-action@v4
@@ -132,18 +132,18 @@ Alternatively, you can use a separate configuration file and reference it in the
        config-file: 'github/octorepo/.github/dependency-review-config.yml@main'
 ```
 
-Notice that the examples above use a short version number for the action (v4) instead of a semver release number (for example, v4.0.0). This ensures that you use the most recent minor version of the action.
+Notice that the examples use a short version number for the action (v4) instead of a server release number (for example, v4.0.0). This convention ensures that you use the most recent minor version of the action.
 
-We only scratched the surface here. There are many configuration options<sup>[9]</sup> available to fine-tune dependency review. Before implementing dependency review, there are a few considerations to be aware of:
-- The 'allow-licenses' and 'deny-licenses' options are mutually exclusive; an error will be raised if you use both in the same workflow.
+We only scratched the surface here. There are many configuration options<sup>[9]</sup> available to fine-tune dependency review. Before you implement dependency review, there are a few considerations to be aware of:
+- The 'allow-licenses' and 'deny-licenses' options are mutually exclusive; an error is raised if you use both in the same workflow.
 - If the license for a dependency can't be detected, the dependency-review-action will inform you, but the action won't fail. 
-- Some configuration options are not supported with GitHub Enterprise Server. 
+- Some configuration options aren't supported with GitHub Enterprise Server. 
 - All configuration options are optional. 
 
 
 ## Enforce dependency review
 
-You can use branch protection rules and the dependency-review-action in your repository to enforce dependency reviews on your pull requests. By default, the dependency review action check will fail if it discovers any vulnerable packages. A failed check blocks a pull request from being merged when the repository owner requires the dependency review check to pass. This proactive guardrail ensures insecure dependencies are not unknowingly introduced into your project. 
+You can use branch protection rules and the dependency-review-action in your repository to enforce dependency reviews on your pull requests. By default, the dependency review action check fails if it discovers any vulnerable packages. A failed check blocks a pull request from being merged when the repository owner requires the dependency review check to pass. This proactive guardrail ensures insecure dependencies are not unknowingly introduced into your project. 
 
 Here's how to set up a new branch protection rule to enforce dependency review: 
 
@@ -155,17 +155,22 @@ Here's how to set up a new branch protection rule to enforce dependency review:
 6. Select to enable **Require status checks to pass before merging**
 7. Select to enable **Require branches to be up to date before merging**
 8. Enter `dependency-review` in the search bar 
-9. Select `dependency-review` in the search results to add it to **Status check that are required." list
+9. Select `dependency-review` in the search results to add it to **Status check that is required." list
 10. Select **Create** 
 
 ![Screenshot of adding dependency review in a branch protection rule.](../media/dependency-review-branch-protection.png)
 
-If you already have branch protection rules in place, simply edit the relevant rule to enforce dependency review. 
+If you already have branch protection rules in place, edit the relevant rule to enforce dependency review. 
 
 
 ## Check dependency review results
 
-A summary and details from the dependency review action are available when the workflow is finished. You can review this information from the pull request to gain visibility on what changed and understand the security impact of the change. If `comment-summary-in-pr: always` is configured in the workflow, you can simply review the comment in the pull request conversation. If not, switch to the **Checks** tab of the pull request and select **Dependency review** from the left sidebar. The dependency review summary includes vulnerable packages detected, incompatible licenses, invalid SPDX license definitions, unknown licenses, and references to more detailed information. 
+A summary and details from the dependency review action are available when the workflow is finished. You can review this information from the pull request to gain visibility on what changed and understand the security implication of the change. If `comment-summary-in-pr: always` is configured in the workflow, you can review the comment in the pull request conversation. If not, switch to the **Checks** tab of the pull request and select **Dependency review** from the left sidebar. The dependency review summary includes:
+- Vulnerable packages detected
+- Incompatible licenses
+- Invalid Software Package Data Exchange(SPDX) license definitions
+- Unknown licenses
+- References to more detailed information. 
 
 **Example dependency review summary with vulnerable package**
 ![Screenshot of example dependency review summary with vulnerable package.](../media/dependency-review-with-vulnerable-package.png)

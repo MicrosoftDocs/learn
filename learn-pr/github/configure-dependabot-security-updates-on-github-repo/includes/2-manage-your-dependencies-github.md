@@ -51,7 +51,7 @@ You can view the dependency graph for your repository by following these steps:
 
 ### Supported package ecosystem for the dependency graph
 
-This table lists the recommended and supported formats for files containing your dependencies. If you use these formats, your dependency graph is more accurate. Using the recommended file format means that your dependency graph reflects the current build set up and can report vulnerabilities for both direct and indirect dependencies. 
+This table lists the recommended and supported formats for files containing your dependencies. If you use these formats, your dependency graph is more accurate. Using the recommended file format means that your dependency graph reflects the current build setup and can report vulnerabilities for both direct and indirect dependencies. 
 
 Lock files are generally recommended in your repository because they define the exact versions of the direct and indirect dependencies that you're currently using. If you're using lock files, make sure the contributors to your repository are also using the same versions.  If you use a manifest file (or equivalent), indirect dependencies aren't included in checks for vulnerable dependencies.
 

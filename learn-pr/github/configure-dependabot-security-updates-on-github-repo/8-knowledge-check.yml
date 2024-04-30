@@ -40,18 +40,18 @@ quiz:
     choices:
     - content: "Repository is public."
       isCorrect: true
-      explanation: "GitHub automatically enables Dependabot security updates for every public repository. It also enables security updates for private repositories where you have enabled read-only analysis by the dependency graph, and vulnerability alerts in the repository's settings."
+      explanation: "GitHub automatically enables Dependabot security updates for every public repository. It also enables security updates for private repositories where read-only analysis is enabled, and vulnerability alerts in the repository's settings."
     - content: "Repository is a fork."
       isCorrect: false
       explanation: "GitHub doesn't automatically enable Dependabot security updates for forked repositories."
     - content: "Repository is archived."
       isCorrect: false
       explanation: "GitHub automatically enables Dependabot security updates for every repository that isn't archived."
-  - content: "What query can you use to view all the notifications you've marked as done?"
+  - content: "What query can you use to view all the notifications marked as done?"
     choices:
     - content: "`is:done`"
       isCorrect: true
-      explanation: "To view all of your notifications marked as 'Done', use the `is:done` query."
+      explanation: "To view all of your notifications marked as 'Done,' use the `is:done` query."
     - content: "`is:saved`"
       isCorrect: false
       explanation: "The `is:saved` query is used to view all of your saved notifications."
