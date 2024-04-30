@@ -85,9 +85,6 @@ To ensure the security of data in transit to Azure Monitor logs, we strongly enc
 
 The agent for Linux and Windows communicates outbound to the Azure Monitor service over TCP port 443. If the machine connects through a firewall or proxy server to communicate over the internet, review the following requirements to understand the network configuration required. If your IT security policies do not allow computers on the network to connect to the internet, set up a [Log Analytics gateway](/azure/azure-monitor/agents/gateway) and configure the agent to connect through the gateway to Azure Monitor. The agent can then receive configuration information and send data collected.
 
-:::image type="content" source="../media/log-analytics-agent-example-69281e32.png" alt-text="Diagram showing an example of a Log Analytics gateway network requirement.":::
-
-
 The following table lists the proxy and firewall configuration information required for the Linux and Windows agents to communicate with Azure Monitor logs.
 
 ### Firewall requirements
