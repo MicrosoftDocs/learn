@@ -2,7 +2,7 @@ In this exercise, you'll create an Azure Automation account and upload a PowerSh
 
 ## Create a VM
 
-Start by deploying a new VM from a Windows Server 2019 image.
+Start by deploying a new VM from a Windows Server 2022 image.
 
 1. In the Azure Cloud Shell pane on the right, run the following commands to create a username and generate a random password:
 
