@@ -9,6 +9,5 @@ metadata:
   ms.author: lwainstein
   ms.topic: unit
 durationInMinutes: 5
-
 content: |
   [!include[](includes/3-calibrate-and-fine-tune-sensor.md)]
