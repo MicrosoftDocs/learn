@@ -9,7 +9,7 @@ First, identify which alerts are important to triage.
 1. Select the alert by ticking the checkbox for that row. The alert pane opens on the right side.
 1. Select **View full details** to drill down further and see the remediation suggestions. For example:
 
-    :::image type="content" source="../media/7-alert-detected.png" alt-text="screenshot of a chosen alert to view the full alert details." lightbox="../media/7-alert-detected.png":::
+    :::image type="content" source="../media/6-alert-detected.png" alt-text="screenshot of a chosen alert to view the full alert details." lightbox="../media/6-alert-detected.png":::
 
 ## Triage an alert
 
@@ -22,7 +22,7 @@ The **Alerts** page provides more details about an alert.
     | Alert Response |  Action |
     |---|---|
     | If the alert indicates normal network traffic |  1. Select **Select Learn**.<br> 2. Adjust the Status to **Closed**, and select **Apply**.|
-    | If the alert requires a security response | Consult a relevant Control Systems Engineer to validate the origin of the alert.<br>        :::image type="content" source="../media/7-alert-full-details-cropped.png" alt-text="Screenshot of the alert details with the Take Action box highlighted." lightbox="../media/7-alert-full-details-cropped.png" :::|
+    | If the alert requires a security response | Consult a relevant Control Systems Engineer to validate the origin of the alert.<br>        :::image type="content" source="../media/6-alert-full-details-cropped.png" alt-text="Screenshot of the alert details with the Take Action box highlighted." lightbox="../media/6-alert-full-details-cropped.png" :::|
     | If you want to suppress the alert| Select **Create Suppression Rule** and the suppression rule pane opens.<br>1. Type a **Name** and a **Description**.<br>2. If this rule has a time range, select **Expiration date** and enter the dates.<br>3. Choose which sensors this alert applies to.<br>4. Select **Next**, and **Confirm** in the pop-up box.<br>5. Select **Next**.<br>6. Review the details of the rule and then select **Create**.|
 
 1. To complete the triage, update the alert severity and alert status. Select **Apply** to keep the changes.
@@ -31,7 +31,7 @@ The **Alerts** page provides more details about an alert.
 
 You can also select several alerts to triage at the same time, however you aren't able to see their details together. You're able to make bulk changes to their severity or status levels or apply the *learn* setting using the **Alerts** page menu bar.
 
-:::image type="content" source="../media/7-bulk-alert-triage.png" alt-text="Screenshot of bulk update of alerts, in this case updating the severity level for these alerts." lightbox="../media/7-bulk-alert-triage.png":::
+:::image type="content" source="../media/6-bulk-alert-triage.png" alt-text="Screenshot of bulk update of alerts, in this case updating the severity level for these alerts." lightbox="../media/6-bulk-alert-triage.png":::
 
 ## Check your work
 
