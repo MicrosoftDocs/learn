@@ -44,7 +44,7 @@ Suppose you want to suggest travel destinations and activities for a user. For t
     Instructions: Identify the destination the user wants to travel to.
     </message>
     <message role="user">
-    I am so excited to take time off work! My partner and I are thinking about going to Santorini in Greece! I absolutely LOVE Greek food, I'm can't wait to be some place warm.
+    I am so excited to take time off work! My partner and I are thinking about going to Santorini in Greece! I absolutely LOVE Greek food, I can't wait to be some place warm.
     </message>
     <message role="assistant">Santorini, Greece</message>
 
