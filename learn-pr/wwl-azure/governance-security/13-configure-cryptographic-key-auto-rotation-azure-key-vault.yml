@@ -4,7 +4,7 @@ title: Configure key rotation
 metadata:
   title: Configure key rotation
   description: "Configure key rotation"
-  ms.date: 04/15/2024
+  ms.date: 04/29/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/12-configure-cryptographic-key-auto-rotation-azure-key-vault.md)]
+  [!include[](includes/13-configure-cryptographic-key-auto-rotation-azure-key-vault.md)]

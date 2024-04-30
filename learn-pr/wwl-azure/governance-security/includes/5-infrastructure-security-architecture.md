@@ -6,9 +6,9 @@ An Azure landing zone architecture is scalable and modular to meet various deplo
 
 An Azure landing zone consists of platform landing zones and application landing zones. It's worth explaining the function of both in more detail.
 
-**Platform landing zone**: A platform landing zone is a subscription that provides shared services (identity, connectivity, management) to applications in application landing zones. Consolidating these shared services often improves operational efficiency. One or more central teams manage the platform landing zones.<br>
+Platform landing zone: A platform landing zone is a subscription that provides shared services (identity, connectivity, management) to applications in application landing zones. Consolidating these shared services often improves operational efficiency. One or more central teams manage the platform landing zones.<br>
 
-**Application landing zone**: An application landing zone is a subscription for hosting an application. You pre-provision application landing zones through code and use management groups to assign policy controls to them.<br>
+Application landing zone: An application landing zone is a subscription for hosting an application. You pre-provision application landing zones through code and use management groups to assign policy controls to them.<br>
 
 There are three main approaches to managing application landing zones. You should use a (1) central team, (2) application team, or (3) shared team management approach, depending on your needs (see table).<br>
 
@@ -48,7 +48,7 @@ Azure landing zones contain code that makes it easier for your organization's IT
 
 ## Use Zero Trust principles
 
-Your organization can adapt Azure landing zones based on **Azure Security Benchmark (ASB)** best practices and **Zero Trust (ZT)** principles, which are included in the target architecture. Move toward the best practice-aligned target architecture, implementing other security considerations and Zero Trust principles that incrementally build on and improve your organization's security and governance MVP.
+Your organization can adapt Azure landing zones based on Azure Security Benchmark (ASB) best practices and Zero Trust (ZT) principles, which are included in the target architecture. Move toward the best practice-aligned target architecture, implementing other security considerations and Zero Trust principles that incrementally build on and improve your organization's security and governance MVP.
 
 Extend Zero Trust architectural approaches that *never trust and always verify*. Integrate an end-to-end strategy across your digital state that encompasses identities, endpoints, network, data, applications, and infrastructure.<br>
 
