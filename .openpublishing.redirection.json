@@ -37821,6 +37821,10 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/2-what-is-microsoft-entra-id.md",
+      "redirect_url": "/training/modules/manage-identities-microsoft-entra-id/2-microsoft-entra-id-overview",
+      "redirect_document_id": false
+    },{
       "source_path": "learn-pr/github/configure-dependabot-security-updates-on-github-repo/6-exercise.yml",
       "redirect_url": "/training/modules/configure-dependabot-security-updates-on-github-repo/7-exercise",
       "redirect_document_id": true
