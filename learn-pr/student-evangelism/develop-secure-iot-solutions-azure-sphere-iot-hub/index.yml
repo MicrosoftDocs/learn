@@ -6,7 +6,7 @@ metadata:
   ms.date: 12/11/2020
   author: leestott
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
   ms.service: azure-sphere
 title: "Develop secure IoT Solutions for Azure Sphere with IoT Hub"

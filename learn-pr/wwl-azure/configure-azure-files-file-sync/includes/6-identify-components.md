@@ -1,52 +1,47 @@
+[Azure Storage Explorer](/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer?tabs=windows) is a standalone application that makes it easy to work with Azure Storage data on Windows, macOS, and Linux. With Azure Storage Explorer, you can access multiple accounts and subscriptions, and manage all your Storage content.
 
-Azure File Sync is composed of four main components that work together to provide caching for Azure Files shares on an on-premises Windows Server or cloud virtual machine.
+:::image type="content" source="../media/storage-explorer.png" alt-text="Screenshot of Azure Storage Explorer that shows the Emulator storage account open, which has a folder and several documents. The access tier information is visible." border="false":::
 
-The following illustration shows how the components of Azure File Sync provide a cache for a storage account that has Accounting and Sales data stored in Azure Files shares.
+### Things to know about Azure Storage Explorer
 
-:::image type="content" source="../media/file-sync-components-c6561274.png" alt-text="Diagram that shows the components of the Azure File Sync architecture with servers and server endpoints." border="false":::
+Azure Storage Explorer has the following characteristics.
 
-Let's examine the details of the Azure File Sync components.
+- Azure Storage Explorer requires both management (Azure Resource Manager) and data layer permissions to allow full access to your resources. You need Azure Active Directory (Azure AD) permissions to access your storage account, the containers in your account, and the data in the containers.
 
-### Storage Sync Service
+- Azure Storage Explorer lets you connect to different storage accounts.
+   - Connect to storage accounts associated with your Azure subscriptions.
+   - Connect to storage accounts and services that are shared from other Azure subscriptions.
+   - Connect to and manage local storage by using the Azure Storage Emulator.
 
-The Storage Sync Service is the top-level Azure resource for Azure File Sync. This resource is a peer of the storage account resource and can be deployed in a similar manner.
+   :::image type="content" source="../media/connection-options-1df9c8f7.png" alt-text="Screenshot of the Azure Explorer Manage Accounts page.":::
 
-- The Storage Sync Service forms sync relationships with multiple storage accounts by using multiple sync groups.
+### Things to consider when using Azure Storage Explorer
 
-- The service requires a distinct top-level resource from the storage account resource to support the sync relationships.
+Azure Storage Explorer supports many scenarios for working with storage accounts in global and national Azure. As you review these options, think about which scenarios apply to your Azure Storage implementation.
 
-- A subscription can have multiple Storage Sync Service resources deployed.
+| Scenario | Description |
+| --- | --- |
+| **Connect to an Azure subscription** | Manage storage resources that belong to your Azure subscription. |
+| **Work with local development storage** | Manage local storage by using the Azure Storage Emulator. |
+| **Attach to external storage** | Manage storage resources that belong to another Azure subscription or that are under national Azure clouds by using the storage account name, key, and endpoints. This scenario is described in more detail in the next section. |
+| **Attach a storage account with a SAS** | Manage storage resources that belong to another Azure subscription by using a shared access signature (SAS). |
+| **Attach a service with a SAS** | Manage a specific Azure Storage service (blob container, queue, or table) that belongs to another Azure subscription by using a SAS. |
 
-### Sync group
+## Attach to external storage account
 
-A sync group defines the sync topology for a set of files. Endpoints within a sync group are kept in sync with each other. Consider the scenario where you have two distinct sets of files that you want to manage with Azure File Sync. In this case, you create two sync groups and add different endpoints to each sync group. An instance of the Storage Sync Service can host as many sync groups as you need.
+Azure Storage Explorer lets you attach to external storage accounts so storage accounts can be easily shared.
 
-### Registered server
+To create the connection, you need the external storage **Account name** and **Account key**. In the Azure portal, the account key is called **key1**.
 
-The registered server object represents a trust relationship between your server (or cluster) and the Storage Sync Service resource. You can register as many servers to a Storage Sync Service resource as you want.
+:::image type="content" source="../media/attach-name-key-13fe3ba3.png" alt-text="Screenshot of the Azure Storage Explorer wizard to connect to an external storage account.":::
 
-### Azure File Sync agent
+To use a storage account name and key from a national Azure cloud, use the **Storage endpoints domain** drop-down menu to select **Other**, and then enter the custom storage account endpoint domain.
 
-The Azure File Sync agent is a downloadable package that enables Windows Server to be synced with an Azure file share. The Azure File Sync agent has three main components:
+### Access keys
 
-- **FileSyncSvc.exe**: This file is the background Windows service that's responsible for monitoring changes on server endpoints, and for initiating sync sessions to Azure.
+Access keys provide access to the entire storage account. You're provided two access keys so you can maintain connections by using one key while regenerating the other.
 
-- **StorageSync.sys**: This file is the Azure File Sync file system filter that supports cloud tiering. The filter is responsible for tiering files to Azure Files when cloud tiering is enabled.
- 
-- **PowerShell cmdlets**: These PowerShell management cmdlets allow you to interact with the `Microsoft.StorageSync` Azure resource provider. You can find the cmdlets at the following (default) locations:    
-   - `C:\\Program Files\\Azure\\StorageSyncAgent\\StorageSync.Management.PowerShell.Cmdlets.dll`
-   - `C:\\Program Files\\Azure\\StorageSyncAgent\\StorageSync.Management.ServerCmdlets.dll`
+> [!Important]
+> Store your access keys securely. We recommend regenerating your access keys regularly. 
 
-### Server endpoint
-
-A server endpoint represents a specific location on a registered server, such as a folder on a server volume. Multiple server endpoints can exist on the same volume if their namespaces are unique (for example, `F:\\sync1` and `F:\\sync2`). 
-
-### Cloud endpoint
-
-A cloud endpoint is an Azure file share that's part of a sync group. As part of a sync group, the entire cloud endpoint (Azure file share) syncs.
-
-- An Azure file share can be a member of one cloud endpoint only.
-
-- An Azure file share can be a member of one sync group only.
-
-- Consider the scenario where you have a share with existing files. If you add the share as a cloud endpoint to a sync group, the files in the share are merged with files on other endpoints in the sync group.
+When you regenerate your access keys, you must update any Azure resources and applications that access this storage account to use the new keys. This action doesn't interrupt access to disks from your virtual machines.

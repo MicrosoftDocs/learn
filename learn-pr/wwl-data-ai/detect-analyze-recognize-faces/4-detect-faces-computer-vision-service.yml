@@ -4,12 +4,10 @@ title: Detect faces with the Azure AI Vision service
 metadata:
   title: Detect faces with the Azure AI Vision service
   description: "Detect faces with the Azure AI Vision service"
-  ms.date: 07/13/2022
+  ms.date: 03/11/2024
   author: wwlpublish
-  ms.author: berryivor
+  ms.author: gmalc
   ms.topic: unit
-azureSandbox: false
-labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/4-detect-faces-computer-vision-service.md)]

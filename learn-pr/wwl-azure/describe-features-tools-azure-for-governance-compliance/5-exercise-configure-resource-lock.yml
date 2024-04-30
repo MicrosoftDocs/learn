@@ -4,10 +4,12 @@ title: Exercise - Configure a resource lock
 metadata:
   title: Exercise - Configure a resource lock
   description: "Exercise - Configure a resource lock"
-  ms.date: 08/16/2023
+  ms.date: 03/13/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise-configure-resource-lock.md)]

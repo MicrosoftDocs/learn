@@ -4,11 +4,11 @@ title: Exercise - Use a Content Delivery Network to publish a static website
 metadata:
   title: Exercise - Use a Content Delivery Network to publish a static website
   description: Use a Content Delivery Network to publish a static website
-  ms.date: 10/12/2023
+  ms.date: 01/10/2024
   author: duongau
   ms.author: duau
   ms.topic: unit
-azureSandbox: true
+azureSandbox: True
 durationInMinutes: 12
 content: |
   [!include[](includes/3-exercise-use-cdn-serve-static-site.md)]

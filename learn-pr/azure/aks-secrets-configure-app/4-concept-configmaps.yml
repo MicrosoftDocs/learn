@@ -3,7 +3,7 @@ uid: learn.aks-secrets-configure-app.4-concept-configmaps
 metadata:
   title: Understand Kubernetes ConfigMaps
   description: Explore the concepts behind how to decouple application configuration using ConfigMaps.
-  ms.date: 10/09/2023
+  ms.date: 01/26/2024
   author: nickomang
   ms.author: nickoman
   ms.topic: unit
@@ -19,12 +19,12 @@ quiz:
         - content: "To decouple our configuration from our application."
           isCorrect: true
           explanation: "ConfigMaps allow us to abstract our configurations and remove them from our applications."
-        - content: "To map configuration so it's easily accessible."
+        - content: "To map configuration, so it's easily accessible."
           isCorrect: false
           explanation: "Although the name is a map, the ConfigMap object is meant to hold chunks of configuration entirely."
         - content: "To avoid losing data."
           isCorrect: false
-          explanation: "This isn't the objective of the ConfigMaps."
+          explanation: "Avoiding data loss isn't the objective of ConfigMaps."
     - content: "How can you use ConfigMaps in an application?"
       choices:
         - content: "Inject them into variables or mount them into the filesystem."

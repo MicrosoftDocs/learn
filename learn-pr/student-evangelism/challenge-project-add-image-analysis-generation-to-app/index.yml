@@ -18,7 +18,7 @@ metadata:
 ### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
 ### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
 ### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
-  ms.prod: azure
+  ms.service: azure
 title: Challenge project - Add image analysis and generation capabilities to your application
 summary: |
   Demonstrate your ability to develop a smart web application that integrates computer vision capabilities, leveraging Azure AI Vision and Azure OpenAI cognitive services.
@@ -48,7 +48,7 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
   - ai-services
   - azure-openai
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
-  - data-ai
+  - data-management
 units:
 - learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.introduction
 - learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.prepare

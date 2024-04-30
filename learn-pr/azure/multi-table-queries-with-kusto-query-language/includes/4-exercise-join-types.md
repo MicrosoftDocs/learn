@@ -1,18 +1,18 @@
-In this exercise, you'll learn how to use the `join` operator. Recall that the `join` operator merges the rows of two tables by matching values of the specified columns from each table. 
+In this exercise, you learn how to use the `join` operator. Recall that the `join` operator merges the rows of two tables by matching values of the specified columns from each table. 
 
-You'll use the results of the `join` operator to answer questions about sales.
+Let's use the results of the `join` operator to answer questions about sales.
 
 ## Use the `join` operator
 
 In our retail company scenario, your team is asking you to list the three countries/regions that have the most sales.
 
-As you begin inspecting the *SalesFact* table, you notice that the figures you need are available in the **SalesAmount** column, but the table doesn't contain any country data. Examining the other tables, you notice that the country data is available in the **RegionCountryName** column in the *Customers* table. You also notice that both tables have a **CustomerKey** column.
+As you begin inspecting the *SalesFact* table, you notice that the figures you need are available in the **SalesAmount** column, but the table doesn't contain any country/region data. Examining the other tables, you notice that the country/region data is available in the **RegionCountryName** column in the *Customers* table. You also notice that both tables have a **CustomerKey** column.
 
-Because the data is spread over two tables, you'll need both the customer data and the sales data to write a query that provides the requested information. To write the query, you use the `join` operator and the **CustomerKey** column to match the rows from both tables.
+Because the data is spread over two tables, you need both the customer data and the sales data to write a query that provides the requested information. To write the query, you use the `join` operator and the **CustomerKey** column to match the rows from both tables.
 
-Now you're ready to write the query. You'll use an *inner* `join` to get all matching rows from both tables. For best performance, you'll use the customers *dimension* table as the left table and the sales *fact* table as the right table.
+Now you're ready to write the query. Use an *inner* `join` to get all matching rows from both tables. For best performance, use the customers *dimension* table as the left table and the sales *fact* table as the right table.
 
-In the following procedure, you'll build the query in stages to give yourself a better understanding of the result of using the `join` operator.
+In the following procedure, you build the query in stages to give yourself a better understanding of the result of using the `join` operator.
 
 1. Run the following query to get 10 matching arbitrary rows from the *Customers* table and the *SalesFact* table.
 
@@ -43,7 +43,7 @@ In the following procedure, you'll build the query in stages to give yourself a 
 
 1. Take a look at the resulting list. Try modifying the query to also show the corresponding total cost and profit for these countries/regions.
 
-Your team then asks you to identify the countries/regions with the lowest revenues in the last recorded year, by month. To do this, you use a similar query. But this time, you use the `startofmonth()` function to facilitate grouping by month. You also use the `arg_min()` aggregation function to find the countries/regions with the lowest revenues in each month.
+Your team then asks you to identify the countries/regions with the lowest revenues in the last recorded year, by month. To get this data, you use a similar query. But this time, you use the `startofmonth()` function to facilitate grouping by month. You also use the `arg_min()` aggregation function to find the countries/regions with the lowest revenues in each month.
 
 1. Run the following query.
 
@@ -66,9 +66,9 @@ Your team then asks you to identify the countries/regions with the lowest revenu
 
 ## Use the rightouter `join` kind
 
-Your sales team wants to know the total sales by product category. When you start reviewing the available data, you realize that you'll need the *Products* table to get the list of product categories and the *SalesFact* table to get the sales data. You also realize that you want to count the sales for each category and list all product categories.
+Your sales team wants to know the total sales by product category. When you start reviewing the available data, you realize that you need the *Products* table to get the list of product categories and the *SalesFact* table to get the sales data. You also realize that you want to count the sales for each category and list all product categories.
 
-Having analyzed the request, you choose to use the *rightouter* `join`, because it returns all sales records from the right table, enriched with matching data product category from the left table. You write your query by using the *Products* table as the left dimension table, matching data from the *SalesFact* facts table, and grouping the result by product category, as follows:
+Having analyzed the request, you choose to use the *rightouter* `join`, because it returns all sales records from the right table, enriched with matching data product category from the left table. You write your query by using the *Products* table as the left dimension table, matching data from the *SalesFact* facts table, and grouping the result by product category.
 
 1. Run the following query.
 
@@ -85,7 +85,7 @@ Having analyzed the request, you choose to use the *rightouter* `join`, because 
 
     :::image type="content" source="../media/4-join-3.png" alt-text="Screenshot of the join operator query, showing the total sales per product.":::
 
-1. Notice that the execution time is 0.834 seconds, though this time might vary between runs. This query is one way to get this answer and is a good example of a query that isn't optimized for performance. Later, you'll compare this time with the execution time of an equivalent query by using the `lookup` operator, which is optimized for this type of data.
+1. Notice that the execution time is 0.834 seconds, though this time might vary between runs. This query is one way to get this answer and is a good example of a query that isn't optimized for performance. Later, you can compare this time with the execution time of an equivalent query by using the `lookup` operator, which is optimized for this type of data.
 
 ## Use the rightanti `join` kind
 
@@ -106,4 +106,4 @@ Similarly, your sales team wants to know the number of products that don't sell 
 
     :::image type="content" source="../media/4-join-4.png" alt-text="Screenshot of the join operator query, showing the number of products that don't sell in each product category.":::
 
-    Look at each row. The results show the number of unsold products per product category. Notice that the rightanti `join` selects only products that have no sales facts, indicating that there were no sales for products that were returned by the `join` operator.
+    Look at each row. The results show the number of unsold products per product category. Notice that the rightanti `join` selects only products that have no sales facts, indicating that there were no sales for the products returned by the `join` operator.

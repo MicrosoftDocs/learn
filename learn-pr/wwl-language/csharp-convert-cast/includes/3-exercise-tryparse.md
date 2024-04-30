@@ -1,4 +1,3 @@
-
 When working with data, sometimes, you need to convert string data into a numeric data type. As you learned in the previous unit, because the string data type can hold a non-numeric value, it's possible that performing a conversion from a `string` into a numeric data type causes a runtime error.
 
 For example, the following code:
@@ -8,7 +7,7 @@ string name = "Bob";
 Console.WriteLine(int.Parse(name));
 ```
 
-causes the following exception:
+Causes the following exception:
 
 ```Output
 System.FormatException: 'Input string was not in a correct format.'
@@ -38,6 +37,7 @@ Methods can return a value or return "void" - meaning they return no value. Meth
 1. Delete or use the line comment operator `//` to comment out all of the code from the previous exercises.
 
 1. Update your code in the Visual Studio Code Editor as follows:
+
    ```csharp
    string value = "102";
    int result = 0;
@@ -52,13 +52,24 @@ Methods can return a value or return "void" - meaning they return no value. Meth
    ```
 
 1. Examine this line of code:
-   ```   if (int.TryParse(value, out result))   ```
+
+   ```
+   if (int.TryParse(value, out result))
+   ```
+
    When calling a method with an `out` parameter, you must use the keyword `out` before the variable, which holds the value. The `out` parameter is assigned to the `result` variable in the code `(int.TryParse(value,`**` out result`**`)`. You can then use the value the `out` parameter contains throughout the rest of your code using the variable `result`.
+
    The `int.TryParse()` method returns `true` if it successfully converted the `string` variable `value` into an `int`; otherwise, it returns `false`. So, surround the statement in an `if` statement, and then perform the decision logic, accordingly.
+   
    The converted value is stored in the `int` variable `result`. The `int` variable `result` is declared and initialized before this line of code, so it should be accessible both *inside* the code blocks that belong to the `if` and `else` statements, as well as *outside* of them.
-   The `out` keyword instructs the compiler that the `TryParse()` method won't return a value the traditional way only (as a return value), but also will communicate an output through this two-way parameter.
+   
+   The `out` keyword instructs the compiler that the `TryParse()` method doesn't return a value the traditional way only (as a return value), but also communicates an output through this two-way parameter.
+  
    When you run the code, you should see the following output:
-   ```Output   Measurement: 102   ```
+
+   ```Output
+   Measurement: 102
+   ```
 
 ### Use the parsed `int` later in code
 
@@ -99,20 +110,49 @@ Methods can return a value or return "void" - meaning they return no value. Meth
 Lastly, look at the other scenario - where the `TryParse()` is intentionally given a bad value that can't be converted into an `int`.
 
 1. Modify the first line of code, reinitialize the variable `value` to a different value.
-   ```csharp   string value = "bad";   ```
+
+   ```csharp
+   string value = "bad";
+   ```
 
 1. Also, modify the last line of code to ensure that the result is greater than 0 before showing the second message.
-   ```csharp   if (result > 0)       Console.WriteLine($"Measurement (w/ offset): {50 + result}");   ```
+
+   ```csharp
+   if (result > 0)
+      Console.WriteLine($"Measurement (w/ offset): {50 + result}");
+   ```
 
 1. The entire code example should now match the following code:
-   ```csharp   string value = "bad";   int result = 0;   if (int.TryParse(value, out result))   {       Console.WriteLine($"Measurement: {result}");   }   else   {       Console.WriteLine("Unable to report the measurement.");   }
-   if (result > 0)       Console.WriteLine($"Measurement (w/ offset): {50 + result}");   ```
+
+   ```csharp
+   string value = "bad";
+   int result = 0;
+   if (int.TryParse(value, out result))
+   {
+      Console.WriteLine($"Measurement: {result}");
+   }
+   else
+   {
+      Console.WriteLine("Unable to report the measurement.");
+   }
+
+   if (result > 0)
+      Console.WriteLine($"Measurement (w/ offset): {50 + result}");
+   ```
 
 1. Save your code file, and then use Visual Studio Code to run your code. You should get the following result:
-   ```Output   Unable to report the measurement.   ```
+
+   ```Output
+   Unable to report the measurement.
+   ```
 
 1. Examine the last two lines of code added in the previous sample.
-   ```csharp   if (result > 0)       Console.WriteLine($"Measurement (w/ offset): {50 + result}");   ```
+
+   ```csharp
+   if (result > 0)
+      Console.WriteLine($"Measurement (w/ offset): {50 + result}");
+   ```
+   
    Since `result` is defined outside of the `if` statement, `result` can be accessed later in your code outside of the code blocks. So then `result` can be checked for a value greater than zero before allowing `result` + offset to be written as output. Checking for a `result` value greater than zero avoids printing an offset value after the `Unable to report the measurement.` message.
 
 ## Recap

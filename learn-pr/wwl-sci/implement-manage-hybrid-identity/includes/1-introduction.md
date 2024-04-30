@@ -1,4 +1,4 @@
-Hybrid identity allows corporations to have identity solutions that span on-premises and cloud-based solutions. This capability provides unified authentication and authorization capabilities to resources regardless of their location.
+Hybrid identity allows corporations to have identity solutions that span on-premises and cloud-based environments. This capability provides unified authentication and authorization capabilities to resources regardless of their location.
 
 Organizations today are adding cloud application to their existing on-premises apps, which makes them hybrid companies. They need to have identity solutions that authenticate and authorize users to access applications and the underlying data in a secure way. An on-premises Active Directory solution isn't enough; extending to the cloud with Microsoft Entra ID is necessary to provide a hybrid identity solution.
 
@@ -14,7 +14,7 @@ In this module, you'll:
  -  Manage Microsoft Entra Connect
  -  Implement and manage password hash synchronization (PHS)
  -  Implement and manage pass-through authentication (PTA)
- -  Implement and manage Seamless single sign-on (Seamless SSO)
+ -  Implement and manage seamless single sign-on (seamless SSO)
  -  Implement and manage federation excluding manual AD FS deployments
  -  Troubleshoot synchronization errors
  -  Implement and manage Microsoft Entra Connect Health

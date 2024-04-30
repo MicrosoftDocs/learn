@@ -77,7 +77,7 @@ Next, configure your project to use Swagger.
 
 1. Open *Program.cs* and add the highlighted code. Make sure you save your changes.
 
-   :::code language="csharp" source="../code/create-minimal-api-add-swagger.cs" highlight="1, 5-9, 13-17":::
+   :::code language="csharp" source="../code/create-minimal-api-add-swagger.cs" highlight="1, 5-9, 13-20":::
 
 1. Press **Ctrl+\`** to open a terminal in Code. In the new terminal, run the app again:
 

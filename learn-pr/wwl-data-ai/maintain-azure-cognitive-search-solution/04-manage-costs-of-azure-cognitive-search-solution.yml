@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.maintain-azure-cognitive-search-solution.manage-costs-of-azure-cognitive-search-solution
-title: Manage costs of an Azure Cognitive Search solution
+title: Manage costs of an Azure AI Search solution
 metadata:
-  title: Manage costs of an Azure Cognitive Search solution
-  description: "Manage costs of an Azure Cognitive Search solution"
+  title: Manage costs of an Azure AI Search solution
+  description: "Manage costs of an Azure AI Search solution"
   ms.date: 09/27/2023
   author: wwlpublish
   ms.author: berryivor
   ms.topic: unit
-  ms.service: cognitive-search
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

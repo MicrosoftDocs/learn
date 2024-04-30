@@ -4,10 +4,12 @@ title: Manage and use service principals
 metadata:
   title: Manage and use service principals
   description: "Manage and use service principals"
-  ms.date: 12/28/2023
+  ms.date: 04/29/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/6-application-service-principal-objects-microsoft-entra-id.md)]

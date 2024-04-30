@@ -8,7 +8,6 @@ metadata:
   ms.author: sheryang
   ms.topic: module
   ms.service: azure-ai-custom-vision
-  ms.subservice: custom-vision
 title: Classify images with Azure AI Custom Vision
 summary: Image classification is a common workload in artificial intelligence (AI) applications. It harnesses the predictive power of machine learning to enable AI systems to identify real-world items based on images.
 abstract: |

@@ -4,11 +4,10 @@ title: Discover Razor Pages syntax
 metadata:
   title: Discover Razor Pages syntax
   description: "Discover Razor Pages syntax"
-  ms.date: 10/23/2023
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 5

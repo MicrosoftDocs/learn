@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/16/2023
   author: rayoef
   ms.author: rayoflores
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: "Introduction to Docker containers"
 summary: "Describe the benefits of using Docker containers as a containerization platform. Discuss the infrastructure provided by the Docker platform."
 abstract: | 
@@ -30,7 +30,7 @@ products:
 - azure-container-registry
 - azure-container-instances
 subjects:
-- container
+- containers
 units:
 - learn.intro-to-docker-containers.1-introduction
 - learn.intro-to-docker-containers.2-what-is-docker

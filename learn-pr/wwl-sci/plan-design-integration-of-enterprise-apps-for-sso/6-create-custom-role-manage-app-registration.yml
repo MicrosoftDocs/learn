@@ -4,11 +4,12 @@ title: Exercise create a custom role to manage app registration
 metadata:
   title: Exercise create a custom role to manage app registration
   description: "Exercise create a custom role to manage app registration"
-  ms.date: 10/26/2023
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
-  ms.prod: identity-and-access
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/6-create-custom-role-manage-app-registration.md)]

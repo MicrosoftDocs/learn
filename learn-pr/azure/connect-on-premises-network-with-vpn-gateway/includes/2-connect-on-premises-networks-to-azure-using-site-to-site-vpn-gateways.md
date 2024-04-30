@@ -43,7 +43,7 @@ Both types of VPN gateways (route-based and policy-based) in Azure use preshared
 
 ## VPN gateway sizes
 
-The SKU or size that you deploy, determines the capabilities of your VPN gateway. This table shows an example of some of the gateway SKUs. The numbers in this table are subject to change at any time. For the latest information, see [Gateway SKUs](/azure/vpn-gateway/about-gateway-skus.md#benchmark) in the Azure VPN Gateway documentation. The Basic gateway SKU should only be used for Dev/Test workloads. In addition, it's unsupported to migrate from Basic to any VpnGw#/Az sku at a later time without having to remove the gateway and redeploy.
+The SKU or size that you deploy, determines the capabilities of your VPN gateway. This table shows an example of some of the gateway SKUs. The numbers in this table are subject to change at any time. For the latest information, see [Gateway SKUs](/azure/vpn-gateway/about-gateway-skus) in the Azure VPN Gateway documentation. The Basic gateway SKU should only be used for Dev/Test workloads. In addition, it's unsupported to migrate from Basic to any VpnGw#/Az sku at a later time without having to remove the gateway and redeploy.
 
 |**VPN<br>Gateway<br>Generation** |**SKU**   | **S2S/VNet-to-VNet<br>Tunnels** | **P2S<br> SSTP Connections** | **P2S<br> IKEv2/OpenVPN Connections** | **Aggregate<br>Throughput Benchmark** | **BGP** | **Zone-redundant** | **Supported Number of VMs in the Virtual Network** |
 |---            |---         | ---        | ---       | ---            | ---       | ---       | ---  |---|

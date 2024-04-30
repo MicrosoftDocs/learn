@@ -4,8 +4,8 @@ title: Scrub sensitive data from a repository
 metadata:
   unitType: learning-content
   title: Scrub sensitive data from a repository
-  description: In this unit, you'll learn about the tools to help prevent committing sensitive data.
-  ms.date: 09/13/2021
+  description: Learn about tools to help prevent committing sensitive data.
+  ms.date: 02/02/2024
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit

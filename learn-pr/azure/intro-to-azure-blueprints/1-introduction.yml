@@ -4,8 +4,8 @@ title: Introduction
 metadata:
   unitType: introduction
   title: Introduction
-  description: "Introduction to Azure Blueprints and how you can use it to implement governance."
-  ms.date: 11/30/2021
+  description: Learn how to use Azure Blueprints to implement governance for your organization.
+  ms.date: 1/2/2024
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit

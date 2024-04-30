@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.security-copilot-getting-started.summary
+title: Summary and resources
+metadata:
+  title: Summary and resources
+  description: "Microsoft Copilot for Security summary and resources."
+  ms.date: 10/31/2023
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/8-summary.md)]

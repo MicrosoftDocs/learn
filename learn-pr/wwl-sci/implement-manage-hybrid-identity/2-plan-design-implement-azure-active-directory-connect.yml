@@ -4,10 +4,10 @@ title: 'Plan, design, and implement Microsoft Entra Connect '
 metadata:
   title: Plan, design, and implement Microsoft Entra Connect
   description: "Plan, design, and implement Microsoft Entra Connect"
-  ms.date: 10/19/2023
+  ms.date: 01/04/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 12
 content: |
   [!include[](includes/2-plan-design-implement-azure-active-directory-connect.md)]

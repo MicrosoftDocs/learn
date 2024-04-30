@@ -1,53 +1,42 @@
-In this exercise, you'll add a new diagnostic project to your **:::no-loc text="eShopLite":::** solution. You'll see how to include the OpenTelemetry NuGet packages, and then add observability to the **Products** service.
+In this exercise, you add a new diagnostic project to your **:::no-loc text="eShopLite":::** solution. You'll see how to include the OpenTelemetry NuGet packages, and then add observability to the **Products** service.
 
 ## Open the development environment and create the Azure resources
 
-You can choose to use a GitHub codespace that hosts the exercise, or complete the exercise locally in Visual Studio Code.
+You can choose to use a GitHub codespace that hosts the exercise or complete the exercise locally in Visual Studio Code.
 
-To use a codespace create a pre-configured GitHub Codespace with this [Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-observability%2Fdevcontainer.json).
+To use a codespace, create a preconfigured GitHub codespace with this [Codespace creation template](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-observability%2Fdevcontainer.json).
 
-This takes several minutes while GitHub creates and configures the codespace. Once finished, you will see the code files for the exercise. The code used for the rest of this module is in the **/dotnet-observability** directory.
+This step takes several minutes while GitHub creates and configures the codespace. After the process is finished, you see the code files for the exercise. The code used for the rest of this module is in the */dotnet-observability* directory.
 
-To use Visual Studio Code:
-    1. Make sure Docker is running. In a new Visual Studio Code window, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
-    1. Search for and select **Dev Containers: Clone Repository in Container Volume**.
-    1. Select your forked repository. Visual Studio Code creates your development container locally.
+To use **Visual Studio Code**, clone the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative) repository to your local machine. Then:
 
-
-Follow these steps to create and run Docker containers in the codespace.
-
-1. When the setup is complete, within the **dotnet-observability** directory, open the file named **docker-compose.yml**.
-1. Switch to the **PORTS** tab, point at the **Forwarded Address** for the **Back End (32001)** port, and then click the **Copy Local Address** icon.
-
-1. Paste this URL into the `ImagePrefix` environment variable in the **docker-compose.yml** file, replacing the text `http://localhost`. 
-1. Append `images` to the pasted text:
-
-    ```docker-compose
-    environment: 
-      - ProductEndpoint=http://backend:8080
-      - ImagePrefix=https://studious-fortnight-4g4rx9g47wg249w-32001.app.github.dev/images
-    ```
-
+1. Install any [system requiements](https://code.visualstudio.com/docs/devcontainers/containers) to run Dev Container in Visual Studio Code.
+1. Make sure Docker is running. 
+1. In a new Visual Studio Code window open the folder of the cloned repository
+1. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
+1. Search: **>Dev Containers: Rebuild and Reopen in Container**
+1. Select **eShopLite - dotnet-observability** from the drop down. Visual Studio Code creates your development container locally.
 ### Add a diagnostic project to the solution
 
 The first step to adding observability to the **:::no-loc text="eShopLite":::** app is to introduce a new diagnostic project to the solution. This project contains all the OpenTelemetry packages and configurations that you'll use to add observability to the app.
 
-1. In the Visual Studio Code command palette enter **>.NET: Open Solution**
-1. Select **dotnet-observability/eShopLite/eShopLite.snl**
+1. In the Visual Studio Code command palette, enter **>.NET: Open Solution**.
+1. Select **dotnet-observability/eShopLite/eShopLite.sln**.
 1. In the **Solution Explorer**, at the bottom of the **EXPLORER** pane, right-click the **eShopLite** solution and then select **New Project**.
 1. In the **Select a template to create a new .NET project** dialog, select **Class Library (Common, Library)**.
 1. In the **Name** field, enter **Diagnostics**.
-1. In the **Project will be created in** dropdown, select the **Default directory**.
+1. In the **Project will be created in** dropdown, select **Default directory**.
 
 ### Add OpenTelemetry packages
 
-You'll now add the OpenTelemetry packages to the new diagnostic project.
+Now add the OpenTelemetry packages to the new diagnostic project.
 
-1. Using the **TERNINAL** pane at the bottom of Visual Studio Code, go to the **Diagnostics** project folder:
+1. By using the **TERMINAL** pane at the bottom of Visual Studio Code, go to the *Diagnostics* project folder:
 
     ```bash
     cd dotnet-observability/eShopLite/Diagnostics
     ```
+
 1. Run these `dotnet add` commands:
 
     ```dotnetcli
@@ -59,29 +48,30 @@ You'll now add the OpenTelemetry packages to the new diagnostic project.
     dotnet add package OpenTelemetry.Instrumentation.SqlClient --prerelease
     dotnet add package OpenTelemetry.Instrumentation.Http
     ```
-1. In the **EXPLORER** pane, expand the **Diagnostics** folder and then select **Diagnostics.csproj**.
+
+1. On the **EXPLORER** pane, expand the *Diagnostics* folder and then select **Diagnostics.csproj**.
 1. Change the `Project Sdk` at the top to:
 
     ```xml
     <Project Sdk="Microsoft.NET.Sdk.Web">
     ```
 
-    The code above allows you to use the `IConfiguration` class in your code.
+    The preceding code allows you to use the `IConfiguration` class in your code.
 1. In the `<PropertyGroup>`, add the output type:
 
     ```xml
     <OutputType>Library</OutputType>
     ```
 
-    The code above ensures that the project builds as a library. Otherwise the compiler expects a `Program.cs` file with a `main` method.
+    The preceding code ensures that the project builds as a library. Otherwise, the compiler expects a `Program.cs` file with a `main` method.
 
 ### Add the code to use OpenTelemetry
 
-With the OpenTelemetry packages added, you'll now introduce the code to make use of them.
+With the OpenTelemetry packages added, you now introduce the code to make use of them.
 
-1. In the **EXPLORER** pane, right-click the **Class1.cs** file and then select **Rename**.
-1. Rename the file to **DiagnosticServiceCollectionExtensions.cs**.  
-1. Replace the code in the file with this:
+1. On the **EXPLORER** pane, right-click the *Class1.cs* file and then select **Rename**.
+1. Rename the file to **DiagnosticServiceCollectionExtensions.cs**.
+1. Replace the code in the file with the following code:
 
     ```csharp
     using OpenTelemetry.Metrics;
@@ -136,13 +126,14 @@ With the OpenTelemetry packages added, you'll now introduce the code to make use
       }
     }
     ```
-1. In the **TERMINAL** pane, run this command to build the project:
+
+1. On the **TERMINAL** pane, run this command to build the project:
 
     ```dotnetcli
     dotnet build
     ```
   
-    You should see output similar to this:
+    You should see output similar to this example:
 
     ```console
     Build succeeded.
@@ -151,16 +142,16 @@ With the OpenTelemetry packages added, you'll now introduce the code to make use
     ```
     
 1. The **Diagnostics** project is now ready to be used by the **Products** service.
-1. In the **EXPLORER** pane, under **SOLUTION EXPLORER**, right-click the **Products** project, then select **Add Project Reference**.
+1. On the **EXPLORER** pane, under **SOLUTION EXPLORER**, right-click the **Products** project and then select **Add Project Reference**.
 1. Select **Diagnostics**.
-1. In the **EXPLORER** pane, expand the **Products** folder and then select **Program.cs**.
+1. On the **EXPLORER** pane, expand the *Products* folder and then select **Program.cs**.
 1. Under the code comment `// Add observability code here`, add a call to the Diagnostics method:
 
     ```csharp
     builder.Services.AddObservability("Products", builder.Configuration);
     ```
 
-1. In the **TERMINAL** pane, go to the Products folder:
+1. On the **TERMINAL** pane, go to the *Products* folder:
 
     ```bash
     cd ../Products
@@ -172,7 +163,7 @@ With the OpenTelemetry packages added, you'll now introduce the code to make use
     dotnet build
     ```
   
-    You should see output similar to this:
+    You should see output similar to this example:
 
     ```console
     Build succeeded.
@@ -182,44 +173,33 @@ With the OpenTelemetry packages added, you'll now introduce the code to make use
 
 ### Update Docker settings and run the app
 
-1. In the **EXPLORER** pane, in the **Products** folder, select the **Dockerfile** file.
-
-1. At line 9, add this code to copy the **Diagnostics** project into the container:
-
-    ```dockerfile
-    WORKDIR /Diagnostics
-    COPY "eShopLite/Diagnostics/Diagnostics.csproj" .
-    RUN dotnet restore
-    COPY "eShopLite/Diagnostics" .
-    RUN dotnet publish -c release -o /app
-    ```
-
-1. In the **TERMINAL** pane, go to the root of the dotnet-observability folder:
+1. On the **TERMINAL** pane, go to the root of the *dotnet-observability* folder:
 
     ```bash
-    cd ../..
+    cd ..
+    dotnet publish /p:PublishProfile=DefaultContainer
     ```
 
 1. Run these Docker commands:
 
     ```docker
-    docker-compose build
-    docker-compose up
+    cd /workspaces/mslearn-dotnet-cloudnative/dotnet-observability/
+    docker compose up 
     ```
 
-    The back-end (Products service) and front-end (Store service) containers should build, and then the app starts.
+    The back-end (**Products** service) and front-end (**Store** service) containers should build. Then the app starts.
 
 1. If you're doing this exercise in a codespace, select the **PORTS** tab at the bottom of the Visual Studio Code window. Select the **Open in browser** link next to the **Front End** service.
 
-1. If you're doing this exercise locally in Visual Studio Code, in a new browser tab, go to the app at **http://localhost:32000**.
+1. If you're doing this exercise locally in Visual Studio Code, in a new browser tab, go to the app at `http://localhost:32000`.
 
 1. In the app, select **Products** in the navigation bar.
 
-    :::image type="content" source="../media/eshoplite-products.png" alt-text="A screenshot of the Products page in the eShopLite app. The page shows a list of products with a name, description, price, and a button to update the stock." lightbox="../media/eshoplite-products.png":::
+    :::image type="content" source="../media/eshoplite-products.png" alt-text="A screenshot that shows the Products page in the eShopLite app. The page shows a list of products with a name, description, and price and a button to update the stock." lightbox="../media/eshoplite-products.png":::
 
-1. Select **Update Stock** for several of the products then, in the dialog, change the stock value, and select **Update**.
+1. Select **Update Stock** for several of the products. Then, in the dialog, change the stock value and select **Update**.
 
-1. Select the **TERMINAL** tab, and scroll through the messages. Note there are messages from OpenTelemetry like:
+1. Select the **TERMINAL** tab and scroll through the messages. Note there are messages from OpenTelemetry like:
 
     ```console
     backend-1   | Export ec.Microsoft-AspNetCore-Server-Kestrel.connection-queue-length, Meter: OpenTelemetry.Instrumentation.EventCounters/1.5.1.1
@@ -227,4 +207,6 @@ With the OpenTelemetry packages added, you'll now introduce the code to make use
     backend-1   | Value: Sum: 0.05144170000000001 Count: 4 Min: 0.0039736 Max: 0.0359739
     ```
 
-You've successfully added OpenTelemetry to the **Products** service. In the next unit, you'll see how to make better use of the telemetry data by viewing it on tools like Prometheus and Grafana.
+1. Press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the app.
+
+You successfully added OpenTelemetry to the **Products** service. In the next unit, you'll see how to make better use of the telemetry data by viewing it on tools like Prometheus and Grafana.

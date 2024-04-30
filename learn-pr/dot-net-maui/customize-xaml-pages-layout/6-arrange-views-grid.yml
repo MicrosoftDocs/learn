@@ -4,11 +4,11 @@ title: Arrange views with Grid
 metadata:
   title: Arrange views with Grid
   description: Use a Grid layout panel to create flexible user interfaces with many elements that work on multiple device types.
-  ms.date: 10/13/2023
+  ms.date: 11/07/2023
   author: codemillmatt
   ms.author: masoucou
   ms.manager: markl
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.service: azure
 durationInMinutes: 10
 content: |

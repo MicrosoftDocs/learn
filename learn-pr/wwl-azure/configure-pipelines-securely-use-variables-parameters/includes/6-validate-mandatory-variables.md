@@ -33,4 +33,4 @@ You can also configure your pipeline to fail if the variable isn't set correctly
 
 Create a YAML pipeline that validates the presence and correctness of the mandatory variables 'myVariable1' and 'myVariable2'. If either variable is missing or not set correctly, the pipeline should fail. Use the assert function to validate the variables.
 
-For more information about expressions, see [Expressions.](https://learn.microsoft.com/azure/devops/pipelines/security/overview/)
+For more information about expressions, see [Expressions.](/azure/devops/pipelines/security/overview/)

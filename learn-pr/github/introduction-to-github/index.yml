@@ -6,7 +6,8 @@ metadata:
   ms.date: 10/27/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: github
 title: "Introduction to GitHub"
 summary: Learn to use key GitHub features, including issues, notifications, branches, commits, and pull requests.
 abstract: |

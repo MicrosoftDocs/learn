@@ -76,7 +76,7 @@ This time, the results include five rows:
 
 In KQL, `where` is a clause that is used to filter the rows of a table based on a specified condition. The `where` clause is followed by a Boolean expression that evaluates to `true` or `false` for each row in the table. Rows for which the expression evaluates to `true` are included in the result, while rows for which the expression evaluates to `false` are excluded.
 
-The `contains` operator is used in the `where` clause of the query to filter the rows of the ***Customer*** table based on whether the **Item** column contains the string "Mountain-100".
+The `contains` operator is used in the `where` clause of the query to filter the rows of the ***sales*** table based on whether the **Item** column contains the string "Mountain-100".
 
 ```kql
 sales

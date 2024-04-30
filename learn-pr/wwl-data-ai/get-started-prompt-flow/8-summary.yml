@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.get-started-prompt-flow.summary
-title: |
-  Summary
+title: Summary
 metadata:
-  title: |
-    Summary
+  title: Summary
   description: "Summary of module on introducing retrieval augmented generation (RAG) and how to leverage this with Azure Machine Learning's prompt flow."
   ms.date: 7/24/2023
   author: madiepev

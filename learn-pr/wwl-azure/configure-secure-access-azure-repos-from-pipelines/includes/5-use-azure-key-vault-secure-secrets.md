@@ -13,9 +13,9 @@ The first step in securing access to credential secrets is to store them in Azur
 3. Create a new Service Principal in Microsoft Entra ID to grant access to the Key Vault.
 
     > [!NOTE]
-    > Follow [this guide](https://learn.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal) to create your service principal.
+    > Follow [this guide](/azure/active-directory/develop/howto-create-service-principal-portal) to create your service principal.
 
-4. Assign the service principal to the Key Vault following [this guide](https://learn.microsoft.com/azure/key-vault/general/assign-access-policy-portal).
+4. Assign the service principal to the Key Vault following [this guide](/azure/key-vault/general/assign-access-policy-portal).
 
     > [!IMPORTANT]
     > The service principal that you created will need to have **Secret permissions** access ("Get, List") to the Key Vault. If the service principal does not have access to the Key Vault, you will see an error message when you try to link the Variable Group to the Key Vault.
@@ -97,6 +97,6 @@ Try to implement a secure way of storing and accessing multiple secrets in your 
 
 For more information about Azure Key Vault and pipeline integration, see:
 
-- [Manage application configuration data.](https://learn.microsoft.com/training/modules/manage-application-configuration-data/)
-- [Use Azure Key Vault secrets in Azure Pipelines.](https://learn.microsoft.com/azure/devops/pipelines/release/azure-key-vault/)
-- [Azure Key Vault keys, secrets and certificates overview.](https://learn.microsoft.com/azure/key-vault/general/about-keys-secrets-certificates)
+- [Manage application configuration data.](/training/modules/manage-application-configuration-data/)
+- [Use Azure Key Vault secrets in Azure Pipelines.](/azure/devops/pipelines/release/azure-key-vault/)
+- [Azure Key Vault keys, secrets and certificates overview.](/azure/key-vault/general/about-keys-secrets-certificates)

@@ -37,7 +37,7 @@ Create a pipeline in Azure DevOps and configure approval and branch checks to en
 
 For more information about approvals and checks, see:
 
-- [Explore release recommendations](https://learn.microsoft.com/training/modules/explore-release-strategy-recommendations/)
-- [Create a release pipeline](https://learn.microsoft.com/training/modules/create-release-pipeline-devops/)
-- [Define approvals and checks](https://learn.microsoft.com/azure/devops/pipelines/process/approvals)
-- [Use gates and approvals to control your deployment](https://learn.microsoft.com/azure/devops/pipelines/release/deploy-using-approvals)
+- [Explore release recommendations](/training/modules/explore-release-strategy-recommendations/)
+- [Create a release pipeline](/training/modules/create-release-pipeline-devops/)
+- [Define approvals and checks](/azure/devops/pipelines/process/approvals)
+- [Use gates and approvals to control your deployment](/azure/devops/pipelines/release/deploy-using-approvals)

@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-well-architected-reliability.design-for-operations
-title: Design for recovery
+title: Design for operations
 metadata:
-  title: Design for recovery
-  description: Learn strategies for designing your Azure workload to support recovery.
+  title: Design for operations
+  description: Learn strategies for designing your Azure workload to support operations.
   ms.date: 12/18/2023
   author: claytonsiemens77
   ms.author: csiemens
   ms.topic: unit
-  ms.prod: learning-azure
 durationInMinutes: 15
 content: |
   [!include[](includes/5-design-for-operations.md)]

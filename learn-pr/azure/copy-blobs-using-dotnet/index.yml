@@ -7,7 +7,7 @@ metadata:
   author: normesta
   ms.author: normesta
   ms.topic: module
-  ms.prod: learning-azure
+  ms.service: azure
 title: Copy and move blobs from one container or storage account to another using the .NET Storage Client
 summary: Learn how to use the .NET Storage Client to copy and move blobs between contains and storage accounts both synchronously and asynchronously.
 abstract: |

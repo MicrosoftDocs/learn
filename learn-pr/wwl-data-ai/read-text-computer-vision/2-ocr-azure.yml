@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.read-text-computer-vision.get-started
-title: Get started with Vision Studio on Azure
+title: Get started with Azure AI Vision
 metadata:
-  title: Get started with Vision Studio on Azure
-  description: "Get started with the Vision Studio on Azure"
-  ms.date: 10/26/2023
+  title: Get started with Azure AI Vision
+  description: "Get started with Azure AI Vision"
+  ms.date: 03/05/2024
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit

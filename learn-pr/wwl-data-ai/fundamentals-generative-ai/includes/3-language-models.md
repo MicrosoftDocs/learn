@@ -56,7 +56,7 @@ While it may be convenient to represent tokens as simple IDs - essentially creat
 
 It can be useful to think of the elements in a token embedding vector as *coordinates* in multidimensional space, so that each token occupies a specific "location." The closer tokens are to one another along a particular dimension, the more semantically related they are. In other words, related words are grouped closer together. As a simple example, suppose the embeddings for our tokens consist of vectors with three elements, for example:
 
-- 4 ("dog"): [10.3.2]
+- 4 ("dog"): [10,3,2]
 - 5 ("bark"): [10,2,2]
 - 8 ("cat"): [10,3,1]
 - 9 ("meow"): [10,2,1]
@@ -77,7 +77,7 @@ There are multiple ways you can calculate appropriate embeddings for a given set
 
 The *encoder* and *decoder* blocks in a transformer model include multiple layers that form the neural network for the model. We don't need to go into the details of all these layers, but it's useful to consider one of the types of layers that is used in both blocks: *attention* layers. Attention is a technique used to examine a sequence of text tokens and try to quantify the strength of the relationships between them. In particular, *self-attention* involves considering how other tokens around one particular token influence that token's meaning.
 
-In an encoder block, attention is used to examine each token in context, and determine an appropriate encoding for its vector embedding. The vector values are based on the relationship between the token and other tokens with which it frequently appears. This contextualized approach means that the same word might have multiple embeddings depending on the context in which it's used - for example "the bark of a tree" means something different to "I heard a dog bark."
+In an encoder block, each token is carefully examined in context, and an appropriate encoding is determined for its vector embedding. The vector values are based on the relationship between the token and other tokens with which it frequently appears. This contextualized approach means that the same word might have multiple embeddings depending on the context in which it's used - for example "the bark of a tree" means something different to "I heard a dog bark."
 
 In a decoder block, attention layers are used to predict the next token in a sequence. For each token  generated, the model has an attention layer that takes into account the sequence of tokens up to that point. The model considers which of the tokens are the most influential when considering what the next token should be. For example, given the sequence “I heard a dog,” the attention layer might assign greater weight to the tokens “heard” and “dog” when considering the next word in the sequence:
 

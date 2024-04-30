@@ -1,4 +1,4 @@
-Configuration is central to building an app in a way that allows its dependencies to vary, based on the environment in which it's deployed. 
+Configuration is central to building an app in a way that allows its dependencies to vary, based on the environment in which you deploy it. 
 
 In this module, you learned:
 

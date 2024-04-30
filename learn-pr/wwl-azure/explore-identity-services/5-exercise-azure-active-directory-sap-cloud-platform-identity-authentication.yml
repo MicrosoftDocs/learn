@@ -4,10 +4,10 @@ title: Integrate Microsoft Entra ID with SAP Cloud Platform Identity Authenticat
 metadata:
   title: Integrate Microsoft Entra ID with SAP Cloud Platform Identity Authentication
   description: "Integrate Microsoft Entra ID with SAP Cloud Platform Identity Authentication"
-  ms.date: 10/17/2023
+  ms.date: 03/05/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 9
 content: |
   [!include[](includes/5-exercise-azure-active-directory-sap-cloud-platform-identity-authentication.md)]

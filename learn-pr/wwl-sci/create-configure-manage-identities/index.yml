@@ -3,11 +3,12 @@ uid: learn.wwl.create-configure-manage-identities
 metadata:
   title: Create, configure, and manage identities
   description: "Access to cloud-based workloads needs to be controlled centrally by providing a definitive identity for each user and resource. You can ensure employees and vendors have just enough access to do their job."
-  ms.date: 10/20/2023
+  ms.date: 01/31/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: module
-  ms.prod: azure
+  ms.service: entra
+  ms.subservice: standards
 title: Create, configure, and manage identities
 summary: Access to cloud-based workloads needs to be controlled centrally by providing a definitive identity for each user and resource. You can ensure employees and vendors have just-enough access to do their job.
 abstract: |
@@ -27,6 +28,7 @@ roles:
 - security-engineer
 products:
 - azure
+- entra-id
 subjects:
 - identity-access
 units:

@@ -1,6 +1,6 @@
-Creating microservices for a distributed environment presents a significant challenge. Cloud-hosted microservices often run in multiple containers in various regions. Implementing a solution that separates each service's code from configuration will ease the triaging of issues across all environments.
+Creating microservices for a distributed environment presents a significant challenge. Cloud-hosted microservices often run in multiple containers in various regions. Implementing a solution that separates each service's code from configuration eases the triaging of issues across all environments.
 
-In this unit, you'll explore how to integrate ASP.NET Core and Docker configuration features with Azure App Configuration to tackle this challenge in an effective way.
+In this unit, explore how to integrate ASP.NET Core and Docker configuration features with Azure App Configuration to tackle this challenge in an effective way.
 
 You'll review the:
 
@@ -12,7 +12,7 @@ You'll review the:
 
 ## ASP.NET Core configuration
 
-Configuration in an ASP.NET Core project is supported by one or more .NET *configuration providers*. A [configuration provider](/aspnet/core/fundamentals/configuration/#configuration-providers) is an abstraction over a specific configuration source, such as a JSON file. The configuration source's values are represented as a collection of key-value pairs.
+Configuration in an ASP.NET Core project is contained in one or more .NET *configuration providers*. A [configuration provider](/aspnet/core/fundamentals/configuration/#configuration-providers) is an abstraction over a specific configuration source, such as a JSON file. The configuration source's values are represented as a collection of key-value pairs.
 
 An ASP.NET Core app can register multiple configuration providers to read settings from various sources. With the default application host, several configuration providers are automatically registered. The following configuration sources are available in the order listed:
 
@@ -33,7 +33,7 @@ ASP.NET Core uses a [ConfigurationBinder](/dotnet/api/microsoft.extensions.confi
 
 ## Docker configuration
 
-In Docker, one abstraction to handle configuration as a key-value pairs collection is the environment variable section of a container's YAML file. The following snippet is an excerpt from the app's `docker-compose.yml` file
+In Docker, one abstraction to handle configuration as a key-value pairs collection is the environment variable section of a container's YAML file. The following snippet is an excerpt from the app's `docker-compose.yml` file:
 
 ```dockerfile
 services: 
@@ -45,7 +45,6 @@ services:
       dockerfile: DockerfileStore
     environment: 
       - ProductEndpoint=http://backend:8080
-      - ImagePrefix=http://localhost:32001/images
       - ConnectionStrings:AppConfig=Endpoint=https://eshop-app-features.azconfig.io;Id=QWQy;Secret=V/4r/rhg/0tdy2L/AmMfBUcgTrYC4krRC7uFqbjRvDU=
     ports:
       - "32000:8080"
@@ -53,17 +52,17 @@ services:
       - backend
 ```
 
-The file snippet defines the following:
+The file snippet defines:
 
-* Variables are stored in the `environment` section of the YAML file, as highlighted in the preceding snippet.
+* Variables stored in the `environment` section of the YAML file, as highlighted in the preceding snippet.
 * Presented to the containerized app as environment variables.
-* The primary mechanism to persist .NET configuration values in microservices apps.
+* A mechanism to persist .NET configuration values in microservices apps.
 
 Environment variables are a cross-platform mechanism for providing runtime configuration to apps hosted in the Docker containers.
 
 ## Azure App Configuration
 
-A centralized configuration service is especially useful in microservices apps and other distributed apps. This module introduces Azure App Configuration as a service for centrally managing configuration values&mdash;specifically for feature flags. The service will ease the troubleshooting of errors that arise when configuration is deployed with an app.
+A centralized configuration service is especially useful in microservices apps and other distributed apps. This module introduces Azure App Configuration as a service for centrally managing configuration values&mdash;specifically for feature flags. The service eases the troubleshooting of errors that arise when configuration is deployed with an app.
 
 App Configuration is a fully managed service that encrypts key values both at rest and in transit. Configuration values stored with it can be updated in real time without the need to redeploy or restart an app.
 
@@ -71,7 +70,7 @@ In an ASP.NET Core app, Azure App Configuration is registered as a configuration
 
 ## Feature Management library
 
-The *Feature Management* library provides standardized .NET APIs for managing feature flags within apps. It's distributed via NuGet in the form of two different packages named `Microsoft.FeatureManagement` and `Microsoft.FeatureManagement.AspNetCore`. The latter package provides Tag Helpers for use in an ASP.NET Core project's Razor files. The former package is sufficient when the Tag Helpers aren't needed or when not using with an ASP.NET Core project.
+The *Feature Management* library provides standardized .NET APIs for managing feature flags within apps. The library is distributed via NuGet in the form of two different packages named `Microsoft.FeatureManagement` and `Microsoft.FeatureManagement.AspNetCore`. The latter package provides Tag Helpers for use in an ASP.NET Core project's Razor files. The former package is sufficient when the Tag Helpers aren't needed or when not using with an ASP.NET Core project.
 
 The library is built atop `IConfiguration`. For this reason, it's compatible with any .NET configuration provider, including the provider for Azure App Configuration. Because the library is decoupled from Azure App Configuration, integration of the two is made possible via the configuration provider. Combining this library with Azure App Configuration enables you to dynamically toggle features without implementing supporting infrastructure.
 

@@ -1,14 +1,14 @@
 Redaction within applications is most commonly done on log messages and telemetry. It can also be used in other scenarios like redacting dimensions in Metrics, or header data in middleware.
 
-The .NET logging framework provides a simple way to redact data in log messages. The `Microsoft.Extensions.Logging` package includes a `Redactor` class that can be used to redact data.
+The .NET logging framework provides a simple way to redact data in log messages. The `Microsoft.Extensions.Compliance.Abstractions` package enhances logging to include a `Redactor` class that redacts data.
 
 ## What is redaction?
 
 Redaction is the process of removing sensitive information from a message. For example, you might want to redact a user's name from a log message. Or you might want to redact a user's IP address from a telemetry event.
 
-The most simple redaction is to erase the value, and return an empty string for the variables. This behavior is the default for the `Redactor` class. Microsoft includes a `HMACSHA256Redactor` class that can be used to redact data using a hash function. The HMAC redaction is useful if you want to redact data, but still be able to identify it later. The last option is to provide your own redaction function, which is useful if you want to redact data using a custom algorithm.
+The most simple redaction is to erase the value, and return an empty string for a variable. This behavior happens by default because the `ErasingRedactor` is default fallback redactor. Microsoft includes a `HMACSHA256Redactor` class that can be used to redact data using a hash function. The HMAC redaction is useful if you want to redact data, but still be able to correlate log messages across multiple log statements. The last option is to provide your own redaction function, which is useful if you want to redact data using a custom algorithm.
 
-For example, you may want to make it clearer in the logs that a value is redacted by replacing it with `*****`.
+For example, you want to make it clearer in the logs that a value is redacted by replacing it with `*****`.
 
 ## How to redact data in a cloud-native application
 

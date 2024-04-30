@@ -1,6 +1,6 @@
 ## Transcode
 
-When enabled, the source is transcoded into a format that is compatible with the target platform. If disabled, the original content is used, bypassing the potentially lengthy transcoding process.
+When you enable transcoding, the source is transcoded into a format that's compatible with the target platform. When you disable it, the original content is used, bypassing the potentially lengthy transcoding process.
 
 ## Spatial quality
 

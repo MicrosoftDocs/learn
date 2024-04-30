@@ -58,4 +58,4 @@ As you think about your configuration plan for Azure Storage, consider the promi
 
 - **Consider storage for messages**. Use Azure Queue Storage to store large numbers of messages. Queue Storage is commonly used to create a backlog of work to process asynchronously.
 
-- **Consider storage for structured data**. Azure Table Storage is ideal for storing structured, nonrelational data. It provides throughput-optimized tables, global distribution, and automatic secondary indexes. Because Azure Table Storage is part of Azure Cosmos DB, you have access to a fully managed NoSQL database service for modern app development. 
+- **Consider storage for structured data**. Azure Table Storage is ideal for storing structured, nonrelational data. 

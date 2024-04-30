@@ -59,7 +59,7 @@ ON Product(Name);
 The index creates a tree-based structure that the database system's query optimizer can use to quickly find rows in the **Product** table based on a specified **Name**.
 
 > [!div class="mx-imgBorder"]
-> ![Example of an index](../media/index.png)
+> ![Example of an index that creates a tree-based structure.](../media/index.png)
 
 For a table containing few rows, using the index is probably not any more efficient than simply reading the entire table and finding the rows requested by the query (in which case the query optimizer will ignore the index). However, when a table has many rows, indexes can dramatically improve the performance of queries.
 

@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: learning-path
-  ms.prod: learning-power-bi
   ms.service: fabric
 title: Get started with Microsoft Fabric
 prerequisites: |
@@ -27,14 +26,11 @@ subjects:
 - data-analytics
 - data-engineering
 - data-integration
-- data-lake
 - data-management
 - data-modeling
-- data-privacy
-- data-science
+- information-protection-governance
 - data-storage
 - data-visualization
-- data-warehousing
 modules:
 - learn.wwl.introduction-end-analytics-use-microsoft-fabric
 - learn.wwl.get-started-lakehouses

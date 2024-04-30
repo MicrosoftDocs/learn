@@ -3,10 +3,13 @@ uid: learn.wwl.describe-azure-identity-access-security
 metadata:
   title: Describe Azure identity, access, and security
   description: "Describe Azure identity, access, and security"
-  ms.date: 09/01/2023
+  ms.date: 01/05/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
 title: Describe Azure identity, access, and security
 summary: This module covers some of the authorization and authentication methods available with Azure.
 abstract: |

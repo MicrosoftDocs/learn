@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.apply-storage-concepts-to-windows-containers.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/13/2024
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz: 
+  title: Check your knowledge
+  questions: 
+    - content: "Which type of storage is used for file creation and file writes inside a Windows container?"
+      choices:
+        - content: "Scratch space"
+          isCorrect: true
+          explanation: "Correct. By default, each container has its own scratch space, where all file creation and file writes are captured."
+        - content: "Layer storage"
+          isCorrect: false
+          explanation: "Incorrect. Layer storage refers to the container image that consists of the user mode operating system files needed to support your app, including any runtimes, dependencies, or other configuration files.  You can change where these files are located but you should not modify any files in layer storage."
+        - content: "Persistent storage"
+          isCorrect: false
+          explanation: "Incorrect. This type of storage is where your app stores files that weren't included at container build-time and shares data with other containers."
+    - content: "What is a 'StorageClass'?"
+      choices:
+        - content: "An object that represents a physical storage device."
+          isCorrect: false
+          explanation: "Incorrect. A storage volume is a device object that represents a physical storage device."
+        - content: "An object that represents a request for storage by a pod or a container."
+          isCorrect: false
+          explanation: "Incorrect. A persistent volume claim (PVC) is an object that represents a request for storage."
+        - content: "An object that defines a set of parameters and policies for provisioning storage in the cluster."
+          isCorrect: true
+          explanation: "Correct. A 'StorageClass' is an object that defines the parameters of an Azure storage resource, including the storage tier, location and reclaim policy."
+    - content: "What type of persistent storage volume in Azure Kubernetes Service (AKS) is available to multiple nodes at the same time?"
+      choices:
+        - content: "AKS Disk"
+          isCorrect: false
+          explanation: "Incorrect. AKS Disk volumes backed by VHDX are mounted as ReadWriteOnce and are only accessible to a single node at a time."
+        - content: "AKS Files"
+          isCorrect: true
+          explanation: "Correct. AKS Files volumes backed by SMB or NFS file shares are mounted as ReadWriteMany and are available to multiple nodes concurrently."
+        - content: "Azure Blob storage"
+          isCorrect: false
+          explanation: "Incorrect. Azure Blob storage is a type of storage that works with large unstructured datasets. It's not a type of storage volume."

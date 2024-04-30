@@ -30,7 +30,7 @@ The following four cmdlets in the Security and Compliance PowerShell module enab
 | **Cmdlet**                      | **Description**                                             |
 | ------------------------------- | ----------------------------------------------------------- |
 | New-ComplianceSecurityFilter    | This cmdlet creates a new search permissions filter.        |
-| Get-ComplianceSecurityFilters   | This cmdlet returns a list of search permissions filters.   |
+| Get-ComplianceSecurityFilter   | This cmdlet returns a list of search permissions filters.   |
 | Set-ComplianceSecurityFilter    | This cmdlet modifies an existing search permissions filter. |
 | Remove-ComplianceSecurityFilter | This cmdlet deletes a search filter.                        |
 

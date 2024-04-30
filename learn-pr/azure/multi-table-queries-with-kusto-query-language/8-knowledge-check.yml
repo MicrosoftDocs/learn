@@ -4,8 +4,8 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: "Review what you've learned."
-  ms.date: 10/23/2022
+  description: "Review what you learned about multi-table queries in the Kusto Query language."
+  ms.date: 01/03/2024
   author: shsagir
   ms.author: shsagir
   ms.topic: unit

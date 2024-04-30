@@ -21,7 +21,7 @@ https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&to=de
 
 **Document Translation API** translates batches of documents while preserving all document structure and data formatting. Document Translation is a non-real-time request, where you make a request that specifies the location of the source and target documents and the list of target output languages.
 
-This batch translation is done within Azure Blob Storage containers, with the source, target, and glossary files stored in their own separate blob containers. Below we see a request to translate all documents within the `source-en-location` container to French:
+This batch translation is done within Azure Blob Storage containers, with the source, target, and glossary files stored in their own separate blob containers. In the following example, we see a request to translate all documents within the `source-en-location` container to French:
 
 ```json
 {
@@ -53,7 +53,7 @@ Once uploaded, you can then create a custom translation model.
 
 Once a model is trained, you can view the test results. If you require a more accurate model, you can upload more documents and retrain the model. Applications using the Translator Text API V3 can access custom translation models.
 
-## Additional functionalities
+## More functionalities
 
 **Dictionary look-up** provides alternative translations for words or figures of speech. Each dictionary look-up request shows a list of alternate translations that interpret a word or phrase in its original language, allowing you to understand the translation in context. The original or alternate translations can then be used with the Dictionary example operation to show example sentences of the translation pairing in both languages, imparting clarity on the appropriate translation to use.
 

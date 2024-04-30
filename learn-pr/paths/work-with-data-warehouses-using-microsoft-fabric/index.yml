@@ -1,14 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn-wwl.work-with-data-warehouses-using-microsoft-fabric
 metadata:
-  title: Work with data warehouses using Microsoft Fabric
-  description: Work with data warehouses using Microsoft Fabric.
+  title: Implement a data warehouse with Microsoft Fabric
+  description: Implement a data warehouse with Microsoft Fabric.
   ms.date: 12/20/2023
   author: jupadrao
   ms.author: jupadrao
   ms.topic: learning-path
-  ms.prod: fabric
-title: Work with data warehouses using Microsoft Fabric
+title: Implement a data warehouse with Microsoft Fabric
 prerequisites: |
   You should be familiar with basic data concepts and terminology.
 summary: |

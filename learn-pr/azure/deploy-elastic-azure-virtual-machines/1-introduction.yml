@@ -5,11 +5,10 @@ metadata:
   unitType: introduction
   title: Introduction
   description: "This unit introduces deploying Elastic on Azure Virtual Machines. The unit includes an example scenario and informs the user they will learn how to deploy Elastic on Azure VMs."
-  ms.date: 6/15/2021
+  ms.date: 01/10/2023
   author: yenchiho
   ms.author: yenchiho
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]

@@ -54,7 +54,7 @@ By using service connections, you can automate deployment, testing, and other pr
 
 For more information about Service Connections, see:
 
-- [Manage service connections](https://learn.microsoft.com/azure/devops/pipelines/library/service-endpoints/).
-- [Provision and test environments](https://learn.microsoft.com/training/modules/configure-provision-environments/).
-- [Integrate with identity management systems](https://learn.microsoft.com/training/modules/integrate-identity-management-systems/).
-- [Create Azure resources using Azure Resource Manager templates](https://learn.microsoft.com/training/modules/create-azure-resources-using-azure-resource-manager-templates/).
+- [Manage service connections](/azure/devops/pipelines/library/service-endpoints/).
+- [Provision and test environments](/training/modules/configure-provision-environments/).
+- [Integrate with identity management systems](/training/modules/integrate-identity-management-systems/).
+- [Create Azure resources using Azure Resource Manager templates](/training/modules/create-azure-resources-using-azure-resource-manager-templates/).

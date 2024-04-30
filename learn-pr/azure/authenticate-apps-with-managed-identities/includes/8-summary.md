@@ -4,10 +4,10 @@ In this module, you explored service principals on the Azure platform. You saw h
 
 ## Learn more
 
-- [Services that support managed identities for Azure resources](/azure/active-directory/managed-identities-azure-resources/services-support-managed-identities). In addition to a list of supporting services, this article also provides information about region availability and configuration options.
-- [Getting started on integrating Microsoft Entra ID with applications](/azure/active-directory/manage-apps/plan-an-application-integration).
-- [Getting started on managing service principals by using C#](https://azure.microsoft.com/resources/samples/aad-dotnet-manage-service-principals/).
-- [Create an Azure service principal by using the Azure CLI](/cli/azure/create-an-azure-service-principal-azure-cli).
-- [Application and service principal objects in Microsoft Entra ID](/azure/active-directory/develop/app-objects-and-service-principals).
-- [Service-to-service authentication to Azure Key Vault using .NET](/azure/key-vault/service-to-service-authentication).
-- [Documentation for DefaultAzureCredential](https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/identity/Azure.Identity/README.md#defaultazurecredential).
+- [Azure services that can use managed identities to access other services](/entra/identity/managed-identities-azure-resources/managed-identities-status)
+- [Getting started on integrating Microsoft Entra ID with applications](/entra/identity/enterprise-apps/plan-an-application-integration)
+- [Getting started on managing service principals by using C#](/samples/azure-samples/aad-dotnet-manage-service-principals/getting-started-on-managing-service-principals-using-c/)
+- [Create an Azure service principal by using the Azure CLI](/cli/azure/azure-cli-sp-tutorial-1)
+- [Application and service principal objects in Microsoft Entra ID](/entra/identity-platform/app-objects-and-service-principals)
+- [Service-to-service authentication to Azure Key Vault using .NET](/dotnet/api/overview/azure/service-to-service-authentication)
+- [Documentation for DefaultAzureCredential](https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/identity/Azure.Identity/README.md#defaultazurecredential)

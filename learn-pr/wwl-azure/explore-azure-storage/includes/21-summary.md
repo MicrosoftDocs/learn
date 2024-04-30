@@ -2,18 +2,18 @@ Now you have:
 
 - Explored Azure Storage types.
 - Explored Azure Files.
-- Examined Azure virtual machine disks.
+- Examined Azure Virtual Machine disks.
 - Learned to recognize virtual machine images and disks.
 - Explored managed and unmanaged disks.
 - Explored caching for virtual machines and data disks.
 - Explored Write Accelerator.
 - Examined general database sizing.
-- Examined Azure virtual machine storage considerations.
+- Examined Azure Virtual Machine storage considerations.
 - Examined SAP HANA Dynamic Tiering 2.0.
-- Explored Azure virtual machine disks best practices.
-- Explored Azure virtual machine NFS storage.
-- Explored Azure virtual machine SMB storage.
-- Examined SAP HANA Azure virtual machine storage configurations.
+- Explored Azure Virtual Machine disks best practices.
+- Explored Azure Virtual Machine NFS storage.
+- Explored Azure Virtual Machine SMB storage.
+- Examined SAP HANA Azure Virtual Machine storage configurations.
 - Explored solutions with Premium Storage and Azure Write Accelerator for Azure M-Series virtual machines.
 - Explored Azure Ultra disk storage configuration for SAP HANA.
 - Explored NFS v4.1 volumes on Azure NetApp Files.
@@ -31,7 +31,7 @@ Now you have:
 - [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes)
 - [Windows Virtual Machines Pricing](https://azure.microsoft.com/pricing/details/virtual-machines/windows/)
 - [SQL Server Enterprise Virtual Machines Pricing](https://azure.microsoft.com/pricing/details/virtual-machines/sql-server-enterprise/)
-- [Upload a generalized VHD and use it to create new VMs in Azure](/azure/virtual-machines/windows/upload-generalized-managed)
+- [Upload a generalized VHD and use it to create new virtual machines in Azure](/azure/virtual-machines/windows/upload-generalized-managed)
 - [Prepare a SLES or openSUSE Leap virtual machine for Azure](/azure/virtual-machines/linux/suse-create-upload-vhd)
 - [Prepare a Red Hat-based virtual machine for Azure](/azure/virtual-machines/linux/redhat-create-upload-vhd)
 - [Prepare an Oracle Linux virtual machine for Azure](/azure/virtual-machines/linux/oracle-create-upload-vhd)
@@ -46,13 +46,13 @@ Now you have:
 - [Virtual network peering](/azure/virtual-network/virtual-network-peering-overview)
 - [Service level for Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-service-levels)
 - [Configure export policy for NFS or dual-protocol volumes](/azure/azure-netapp-files/azure-netapp-files-configure-export-policy)
-- [SAP HANA VM Pinning Requirements Form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxjSlHBUxkJBjmARn57skvdUQlJaV0ZBOE1PUkhOVk40WjZZQVJXRzI2RC4u)
-- [SAP HANA scale-out with standby node on Azure VMs with Azure NetApp Files on SUSE Linux Enterprise Server](/azure/virtual-machines/workloads/sap/sap-hana-scale-out-standby-netapp-files-suse)
-- [SAP Note \#1619720](https://aka.ms/az-120-sapnote-1619720)
-- [SAP Note \#1872170](https://aka.ms/az-120-sapnote-1872170)
-- [SAP Note \#1793345](https://aka.ms/az-120-sapnote-1793345)
-- [SAP Note \#1597355](https://aka.ms/az-120-sapnote-1597355)
-- [SAP Note \#1984798](https://launchpad.support.sap.com/#/notes/1984798)
-- [SAP Note \#2015553](https://aka.ms/az-120-sapnote-2015553)
-- [SAP Note \#1928533](https://aka.ms/az-120-sapnote-1928533)
-- [SAP Note \#2367194](https://launchpad.support.sap.com/#/notes/2367194)
+- [SAP HANA virtual machine Pinning Requirements Form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxjSlHBUxkJBjmARn57skvdUQlJaV0ZBOE1PUkhOVk40WjZZQVJXRzI2RC4u)
+- [SAP HANA scale-out with standby node on Azure Virtual Machines with Azure NetApp Files on SUSE Linux Enterprise Server](/azure/virtual-machines/workloads/sap/sap-hana-scale-out-standby-netapp-files-suse)
+- [SAP Note \#1619720](https://me.sap.com/notes/1619720)
+- [SAP Note \#1872170](https://me.sap.com/notes/1872170)
+- [SAP Note \#1793345](https://me.sap.com/notes/1793345)
+- [SAP Note \#1597355](https://me.sap.com/notes/1597355)
+- [SAP Note \#1984798](https://me.sap.com/notes/1984798)
+- [SAP Note \#2015553](https://me.sap.com/notes/2015553)
+- [SAP Note \#1928533](https://me.sap.com/notes/1928533)
+- [SAP Note \#2367194](https://me.sap.com/notes/2367194)

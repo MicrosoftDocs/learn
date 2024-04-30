@@ -4,11 +4,11 @@ ms.custom:
 ---
 SQL Server 2022 introduces a range of new features and enhancements, providing powerful tools and capabilities that optimize performance and offer better control on SQL object creation. This module explores some of the key T-SQL features included in the latest release, such as resumable constraints, low priority options, `SELECT WINDOW` functions, new `JSON` functions, and more. With these new features, database administrators and developers can better manage database operations, improve efficiency, and adapt to the evolving needs of modern data management.
 
-In this module, we cover the following topics:
+In this module, we'll cover the following topics:
 
 - **Resumable constraints**: Learn how to execute online operations for adding primary key and unique constraints to large tables, allowing for pausing, resuming, and recovering from failures.
 - **Low priority options**: Discover how to manage lock contention during online index operations and minimize how they affect other queries and transactions.
-- **SELECT WINDOW functions**: Understand how to perform advanced windowing and analytical tasks using the `WINDOWS` predicate of the `SELECT` statement.
+- **SELECT WINDOW functions**: Understand how to perform advanced windowing and analytical tasks using the `SELECT` statement's `WINDOWS` predicate.
 - **IS DISTINCT FROM and IS NOT DISTINCT FROM**: Explore these operators that compare values, accounting for `NULL` values in a more concise and intuitive way.
 - **New date and time functions**: Get familiar with `DATETRUNC`, `DATE_BUCKET`, and other functions that manipulate and analyze date and time data.
 - **String and comparison functions**: Dive into `LTRIM`, `RTRIM`, `TRIM`, `STRING_SPLIT`, `GREATEST`, `LEAST`, and more to efficiently process and compare string data.

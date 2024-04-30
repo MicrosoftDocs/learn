@@ -7,7 +7,7 @@ metadata:
   ms.date: 10/17/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/2-consider-remote-management-azure-virtual-machines.md)]

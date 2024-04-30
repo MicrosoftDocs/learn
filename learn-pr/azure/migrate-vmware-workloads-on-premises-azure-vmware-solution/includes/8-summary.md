@@ -1,9 +1,9 @@
-In this module, you learned about the deployment and configuration steps to set up VMware HCX for VM migrations on-premises into Azure VMware Solution:
+In this module, you learned about the deployment and configuration steps to set up VMware HCX for vSphere VM migrations on-premises into Azure VMware Solution:
 
 First, you learned about the planning that's required to deploy VMware HCX. Next, you learned how to:
 
 - Download the OVA file from the portal.
-- Deploy and configure HCX Connector on-premises.
+- Deploy and configure VMware HCX Connector on-premises.
 
 From there, you learned how to create the following components to migrate VMs:
 
@@ -12,7 +12,7 @@ From there, you learned how to create the following components to migrate VMs:
 - Configure a compute profile
 - Establish a service mesh
 
-Finally, you learned how to migrate VMs from an on-premises VMware environment to Azure VMware Solution.
+Finally, you learned how to migrate VMs from an on-premises VMware vSphere environment to Azure VMware Solution.
 
 By now, you know how to plan, deploy, configure, and migrate VMs on-premises into Azure VMware Solution. At this point, you're ready to help the healthcare company you work for complete a migration pattern into Azure.
 

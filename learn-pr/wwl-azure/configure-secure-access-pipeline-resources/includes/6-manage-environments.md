@@ -59,5 +59,5 @@ It allows you to deploy the application to different environments by changing th
 
 For more information about Environments, see:
 
-- [Create and target an environment.](https://learn.microsoft.com/azure/devops/pipelines/process/environments)
-- [Manage multiple environments by using Bicep and Azure Pipelines](https://learn.microsoft.com/training/modules/manage-multiple-environments-using-bicep-azure-pipelines/)
+- [Create and target an environment.](/azure/devops/pipelines/process/environments)
+- [Manage multiple environments by using Bicep and Azure Pipelines](/training/modules/manage-multiple-environments-using-bicep-azure-pipelines/)

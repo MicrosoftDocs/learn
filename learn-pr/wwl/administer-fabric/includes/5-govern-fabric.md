@@ -21,14 +21,14 @@ Content *certification* is a more formal process that involves a review of the c
 If you aren't an admin, you need to request item certification from an admin. You can do request certification by selecting the item in the Fabric portal, and then selecting **Request certification** from the **More** menu.
 
 > [!NOTE]
-> For more detailed information on the content endorsement process, see [Promote or certify content](https://learn.microsoft.com/fabric/get-started/endorsement-promote-certify).
+> For more detailed information on the content endorsement process, see [Promote or certify content](/fabric/get-started/endorsement-promote-certify).
 
 ## Scan for sensitive data
 
-*Metadata scanning* facilitates governance of data by enabling cataloging and reporting on all the metadata of your organization's Fabric items. The *scanner API* is a set of Admin REST APIs that allows you to scan Fabric items for sensitive data. Use the scanner API to scan data warehouses, data pipelines, datasets, reports, and dashboards for sensitive data. The scanner API can be used to scan both structured and unstructured data.
+*Metadata scanning* facilitates governance of data by enabling cataloging and reporting on all the metadata of your organization's Fabric items. The *scanner API* is a set of Admin REST APIs that allows you to scan Fabric items for sensitive data. Use the scanner API to scan data warehouses, data pipelines, semantic models, reports, and dashboards for sensitive data. The scanner API can be used to scan both structured and unstructured data.
 
 > [!IMPORTANT]
-> Before metadata scanning can be run, it needs to be set up in your organization by an Admin. For more information, see the [Metadata scanning overview](https://learn.microsoft.com/fabric/governance/metadata-scanning-overview).
+> Before metadata scanning can be run, it needs to be set up in your organization by an Admin. For more information, see the [Metadata scanning overview](/fabric/governance/metadata-scanning-overview).
 
 ## Track data lineage
 

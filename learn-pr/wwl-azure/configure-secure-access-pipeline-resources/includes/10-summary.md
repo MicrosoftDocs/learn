@@ -11,13 +11,13 @@ You learned how to:
 
 ## Learn more
 
-- [Create and manage agent pools](https://learn.microsoft.com/azure/devops/pipelines/agents/pools-queues)
-- [Set pipeline permissions](https://learn.microsoft.com/azure/devops/pipelines/policies/permissions)
-- [Set secret variables](https://learn.microsoft.com/azure/devops/pipelines/process/set-secret-variables)
-- [Add & use variable groups](https://learn.microsoft.com/azure/devops/pipelines/library/variable-groups)
-- [Use secure files](https://learn.microsoft.com/azure/devops/pipelines/library/secure-files)
-- [Manage service connections](https://learn.microsoft.com/azure/devops/pipelines/library/service-endpoints)
-- [Create and target an environment](https://learn.microsoft.com/azure/devops/pipelines/process/environments)
-- [Set Git repository permissions](https://learn.microsoft.com/azure/devops/repos/git/set-git-repository-permissions)
-- [Repository protection](https://learn.microsoft.com/azure/devops/pipelines/security/repos)
-- [Security best practices](https://learn.microsoft.com/azure/devops/organizations/security/security-best-practices)
+- [Create and manage agent pools](/azure/devops/pipelines/agents/pools-queues)
+- [Set pipeline permissions](/azure/devops/pipelines/policies/permissions)
+- [Set secret variables](/azure/devops/pipelines/process/set-secret-variables)
+- [Add & use variable groups](/azure/devops/pipelines/library/variable-groups)
+- [Use secure files](/azure/devops/pipelines/library/secure-files)
+- [Manage service connections](/azure/devops/pipelines/library/service-endpoints)
+- [Create and target an environment](/azure/devops/pipelines/process/environments)
+- [Set Git repository permissions](/azure/devops/repos/git/set-git-repository-permissions)
+- [Repository protection](/azure/devops/pipelines/security/repos)
+- [Security best practices](/azure/devops/organizations/security/security-best-practices)

@@ -4,14 +4,12 @@ title: Describe the Microsoft Defender portal
 metadata:
   title: Describe the Microsoft Defender portal
   description: "Describe the Microsoft Defender portal"
-  ms.date: 09/25/2023
+  ms.date: 01/03/2024
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
-  ms.service: microsoft-365-security
-  ms.subservice: m365d
   ms.custom:
   - N/A
-durationInMinutes: 10
+durationInMinutes: 6
 content: |
   [!include[](includes/7-describe-microsoft-defender-portal.md)]

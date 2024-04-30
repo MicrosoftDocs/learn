@@ -3,13 +3,15 @@ uid: learn.wwl.design-solutions-secure-privileged-access
 metadata:
   title: Design solutions for securing privileged access
   description: "You learn advanced techniques for designing solutions that manage privileged access effectively."
-  ms.date: 3/14/2023
+  ms.date: 3/04/2024
   author: hrasheed-msft
   ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: module
+  ms.service: security
+  ai-usage: ai-assisted
 title: Design solutions for securing privileged access
-summary: "You learn advanced techniques for designing solutions that manage privileged access effectively."
+summary: |
+  You learn advanced techniques for designing solutions that manage privileged access effectively.
 abstract: |
   By the end of this module, you are able to:
     - Understand privileged access and the Enterprise Access Model
@@ -19,7 +21,7 @@ abstract: |
 prerequisites: |
   - Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications.
   - Experience with hybrid and cloud implementations.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/design-solutions-secure-privileged-access.svg
 levels:
 - advanced
 roles:

@@ -2,19 +2,19 @@
 uid: learn.implement-observability-cloud-native-app-with-opentelemetry
 metadata:
   title: Implement observability in a .NET cloud-native application with OpenTelemetry
-  description: "Learn about observability and how to implement it in a cloud-native application. Use OpenTelemetry packages to output logs, metrics, and tracing data and analyze the data in Azure Application Insights and third party applications."
+  description: "Learn about observability and how to implement it in a cloud-native application. Use OpenTelemetry packages to output logs, metrics, and tracing data and analyze the data in Application Insights and third-party applications."
   ms.date: 12/20/2023
   author: codemillmatt  
   ms.author: masoucou
   ms.topic: module-standard-task-based
 title: Implement observability in a cloud-native .NET 8 application with OpenTelemetry
-summary: "Implement observability in an existing cloud-native application using OpenTelemetry. Then view the data in Azure Application Insights and third party tools."
+summary: "Implement observability in an existing cloud-native application by using OpenTelemetry. Then view the data in Application Insights and third-party tools."
 abstract: |
   By the end of this module, you'll be able to:
   - Describe the three pillars of observability and how they help monitor applications.
-  - Create an observability cloud-native application using OpenTelemetry.
+  - Create an observability cloud-native application by using OpenTelemetry.
   - Ensure that a cloud-native application is generating observable data.
-  - Use Azure Application Insights and third party tools to monitor a cloud-native application.
+  - Use Application Insights and third-party tools to monitor a cloud-native application.
 prerequisites: |
   - Experience developing applications in C# and .NET
   - Familiarity with RESTful service concepts

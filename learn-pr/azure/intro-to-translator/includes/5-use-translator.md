@@ -1,6 +1,6 @@
 Feel free to treat this exercise as a demo, just to see what you can do with Translator. You fully control these resources. So, if you're interested in peeking at the technical details, you can choose to dive deeper by browsing the code on GitHub or checking out the resources in the Azure portal.
 
-For more guided hands-on learning on Translator, we have more Learn modules for you to check out. After learning more, you can always come back here to apply what you've learned in the free sandbox.
+For more guided hands-on learning on Translator, we have more Learn modules for you to check out. After learning more, you can always come back here to apply what you learned in the free sandbox.
 
 ## Deploy Translator
 
@@ -14,7 +14,7 @@ To create the Translator resource and deploy the webapp, complete the following 
     curl -s https://raw.githubusercontent.com/MicrosoftDocs/mslearn-intro-translator-text-to-speech/main/scripts/deploy-in-sandbox.sh | bash
     ```
 
-2. Wait several minutes for the command to run. You may finish reading this page and navigate to other pages within this module - it doesn't affect the running script.
+2. Wait several minutes for the command to run. You can finish reading this page and navigate to other pages within this module - it doesn't affect the running script.
 
 3. Activate the link to the URL displayed at the bottom of the shell. The web app opens, letting you use Translator. You can also cut and paste the URL from here, but remember, it doesn't work until the script finishes running: https://fr-<rgn>[sandboxName]</rgn>.azurewebsites.net
 

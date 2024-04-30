@@ -23,7 +23,7 @@ One of the most important resources you need when training or deploying a model 
 - **Serverless compute**: A fully managed, on-demand compute you can use for training jobs.
 
 > [!Note]
-> As Azure Machine Learning creates and manages *serverless compute* for you, it's not listed on the compute page in the studio. Learn more about how to [use serverless compute for model training](https://learn.microsoft.com/azure/machine-learning/how-to-use-serverless-compute?azure-portal=true)
+> As Azure Machine Learning creates and manages *serverless compute* for you, it's not listed on the compute page in the studio. Learn more about how to [use serverless compute for model training](/azure/machine-learning/how-to-use-serverless-compute?azure-portal=true)
 
 Though compute is the most important resource when working with machine learning workloads, it can also be the most cost-intensive. Therefore, a best practice is to only allow administrators to create and manage compute resources. Data scientists shouldn't be allowed to edit compute, but only use the available compute to run their workloads.
 

@@ -6,7 +6,7 @@ In this exercise, you'll create a Log Analytics workspace, create a diagnostic s
 
 2. Select **+ Create**, and then provide values for the following options:
 
-   - Select a **Subscription** from the subscription drop-down list if the default selected is not appropriate.
+   - Select **Concierge Subscription** from the subscription drop-down list.
 
    - For **Resource Group**, select the **<rgn>[Sandbox resource group]</rgn>** resource group.
 
@@ -20,7 +20,7 @@ In this exercise, you'll create a Log Analytics workspace, create a diagnostic s
 
 1. On the Azure portal menu, select **Storage accounts**.
 
-2. On the **Storage accounts** page, select the name of the storage account that you created in unit 3.
+2. On the **Storage accounts** page, select the name of the storage account that you created in the previous exercise.
 
 3. In the **Monitoring** section, select **Diagnostic settings**.
 
@@ -28,23 +28,23 @@ In this exercise, you'll create a Log Analytics workspace, create a diagnostic s
 
 5. In the **Diagnostic setting name** box, provide a name for the setting.
 
-6. Select the **StorageRead** log category and in the **Destination details** section, select **Send to Log Analytics workspace**.
+6. In the **Categories** section, check the box for **StorageRead**. In the **Destination details** section, check the box next to **Send to Log Analytics workspace**.
 
-7. In the **Log Analytics workspace** drop-down list, select the Log Analytics workspace that you created in an earlier step.
+7. In the **Log Analytics workspace** drop-down list, select the Log Analytics workspace that you created in the previous section.
 
 8. Select **Save**.
 
 ## Download a blob to generate activity
 
-1. In the **Data storage** section, select **Containers**.
+1. Go back to your storage account. In the **Data storage** section, select **Containers**.
 
-2. In the **Containers** panel, select the container that you created in an earlier exercise.
+2. In the **Containers** panel, select the container that you created in the last exercise.
 
-3. Select a blob that you added in an earlier exercise, select **...**, and then select **Download**.
+3. Select a blob that you added, select **...**, and select **Download**.
 
 ## View logged activity by using a Log Analytics query
 
-1. In the **Monitoring** section, select **Logs**.
+1. Go back to your storage account. In the **Monitoring** section, select **Logs**.
 
    The **Queries** window appears. This window provides you with several queries that you can run. You can also customize any of these queries by hovering over the query, and then selecting the **Load to Editor** that appears for the query. For this exercise, we will create a query from scratch.
 

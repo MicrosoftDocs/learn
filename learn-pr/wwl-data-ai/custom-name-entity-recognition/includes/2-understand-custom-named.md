@@ -1,18 +1,19 @@
 Custom NER is an Azure API service that looks at documents, identifies, and extracts user defined entities. These entities could be anything from names and addresses from bank statements to knowledge mining to improve search results.
 
-Custom NER is part of the Azure AI Language Service in Azure AI Services.
+Custom NER is part of Azure AI Language in Azure AI services.
 
 ## Custom vs built-in NER
 
-The Azure AI Language Service provides certain built-in entity recognition, to recognize things such as a person, location, organization, or URL. Built-in NER allows you to set up the service with minimal configuration, and extract entities. To call a built-in NER, create your service and call the endpoint for that NER service:
+Azure AI Language provides certain built-in entity recognition, to recognize things such as a person, location, organization, or URL. Built-in NER allows you to set up the service with minimal configuration, and extract entities. To call a built-in NER, create your service and call the endpoint for that NER service like this:
 
 ```rest
-<YOUR-ENDPOINT>/text/analytics/v3.2-preview.2/entities/recognition/general
+<YOUR-ENDPOINT>/language/analyze-text/jobs?api-version=<API-VERSION>
 ```
 
 |Placeholder  |Value  | Example |
 |---------|---------|---------|
 |`<YOUR-ENDPOINT>`     | The endpoint for your API request  | `https://<your-resource>.cognitiveservices.azure.com` |
+|`<AIP-VERSION>`       | The version of the API you are calling  | `2023-05-01` |
 
 The body of that call will contain the document(s) the entities are extracted from, and the headers contain your service key.
 
@@ -50,19 +51,19 @@ Custom NER, which is the focus of the rest of this module, is available when the
 
 Examples of when you'd want custom NER include specific legal or bank data, knowledge mining to enhance catalog search, or looking for specific text for audit policies. Each one of these projects requires a specific set of entities and data it needs to extract.
 
-## Azure AI Language Service project life cycle
+## Azure AI Language project life cycle
 
-![Conceptual diagram showing a project steps to define entities, tag data, train model, view model, improve model, deploy model, and extract entities.](../media/extraction-development-lifecycle.png#lightbox)
+:::image type="content" source="../media/extraction-development-lifecycle.png" alt-text="Conceptual diagram showing a project steps to define entities, tag data, train model, view model, improve model, deploy model, and extract entities." lightbox="../media/extraction-development-lifecycle.png":::
 
-Creating an entity extraction model typically follows a similar path to most Azure AI Language Service features:
+Creating an entity extraction model typically follows a similar path to most Azure AI Language service features:
 
 1. **Define entities**: Understanding the data and entities you want to identify, and try to make them as clear as possible. For example, defining exactly which parts of a bank statement you want to extract.
-2. **Tag data**: Label, or tag, your existing data, specifying what text in your dataset corresponds to which entity. This step is important to do accurately and completely, as any wrong or missed labels will reduce the effectiveness of the trained model. A good variation of possible input documents is useful. For example, label bank name, customer name, customer address, specific loan or account terms, loan or account amount, and account number.
-3. **Train model**: Train your model once your entities are labeled. Training teaches your model how to recognize the entities you label.
-4. **View model**: After your model is trained, view the results of the model. This page includes a score of 0 to 1 that is based on the precision and recall of the data tested. You can see which entities worked well (such as customer name) and which entities need improvement (such as account number).
-5. **Improve model**: Improve your model by seeing which entities failed to be identified, and which entities were incorrectly extracted. Find out what data needs to be added to your model's training to improve performance. This page shows you how entities failed, and which entities (such as account number) need to be differentiated from other similar entities (such as loan amount).
-6. **Deploy model**: Once your model performs as desired, deploy your model to make it available via the API. In our example, you can send to requests to the model when it's deployed to extract bank statement entities.
-7. **Extract entities**: Use your model for extracting entities. The lab covers how to use the API, and you can view the [API reference](https://aka.ms/ct-runtime-swagger) for more details.
+1. **Tag data**: Label, or tag, your existing data, specifying what text in your dataset corresponds to which entity. This step is important to do accurately and completely, as any wrong or missed labels will reduce the effectiveness of the trained model. A good variation of possible input documents is useful. For example, label bank name, customer name, customer address, specific loan or account terms, loan or account amount, and account number.
+1. **Train model**: Train your model once your entities are labeled. Training teaches your model how to recognize the entities you label.
+1. **View model**: After your model is trained, view the results of the model. This page includes a score of 0 to 1 that is based on the precision and recall of the data tested. You can see which entities worked well (such as customer name) and which entities need improvement (such as account number).
+1. **Improve model**: Improve your model by seeing which entities failed to be identified, and which entities were incorrectly extracted. Find out what data needs to be added to your model's training to improve performance. This page shows you how entities failed, and which entities (such as account number) need to be differentiated from other similar entities (such as loan amount).
+1. **Deploy model**: Once your model performs as desired, deploy your model to make it available via the API. In our example, you can send to requests to the model when it's deployed to extract bank statement entities.
+1. **Extract entities**: Use your model for extracting entities. The lab covers how to use the API, and you can view the [API reference](https://aka.ms/ct-runtime-swagger) for more details.
 
 ## Considerations for data selection and refining entities
 
@@ -80,7 +81,7 @@ Keeping your entities distinct will also go a long way in helping your model's p
 
 ## How to extract entities
 
-To submit an extraction task, the API requires the JSON body to specify which task to execute. For custom NER, the task for the JSON payload is `customEntityRecognitionTasks`.
+To submit an extraction task, the API requires the JSON body to specify which task to execute. For custom NER, the task for the JSON payload is `CustomEntityRecognition`.
 
 Your payload will look similar to the following JSON:
 
@@ -99,22 +100,22 @@ Your payload will look similar to the following JSON:
             }
         ]
     },
-    "tasks": {
-        "customEntityRecognitionTasks": [      
-            {
-                "parameters": {
-                      "project-name": "myProject",
-                      "deployment-name": "myDeployment"
-                }
+    "tasks": [
+        {
+            "kind": "CustomEntityRecognition",
+            "taskName": "MyRecognitionTaskName",
+            "parameters": {
+            "projectName": "MyProject",
+            "deploymentName": "MyDeployment"
             }
-        ]
-    }
+        }
+    ]
 }
 ```
 
 ## Project limits
 
-The Azure AI Language Service enforces the following restrictions:
+The Azure AI Language service enforces the following restrictions:
 
 - **Training** - at least 10 files, and not more than 100,000
 - **Deployments** - 10 deployment names per project
@@ -122,4 +123,6 @@ The Azure AI Language Service enforces the following restrictions:
   - **Authoring** - this API creates a project, trains, and deploys your model. Limited to 10 POST and 100 GET per minute
   - **Analyze** - this API does the work of actually extracting the entities; it requests a task and retrieves the results. Limited to 20 GET or POST
 - **Projects** - only 1 storage account per project, 500 projects per resource, and 50 trained models per project
-- **Entities** - each entity must be fewer than 10 words and 100 characters, up to 200 entity types, and at least 10 tagged instances per entity
+- **Entities** - each entity can be up to 500 characters. You can have up to 200 entity types.
+
+See the [Service limits for Azure AI Language](/azure/ai-services/language-service/concepts/data-limits) page for detailed information.

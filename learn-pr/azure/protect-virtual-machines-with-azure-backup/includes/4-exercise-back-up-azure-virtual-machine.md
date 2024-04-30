@@ -83,14 +83,18 @@ The command can take a few minutes to complete. Wait for it to finish before mov
 
     The **NW-RHEL01** virtual machine pane appears.
 
-1. In the middle menu pane, scroll down to **Operations**, and select **Backup**. The **Backup** pane for the *NW-RHEL01* virtual machine appears.
+1. In the middle menu pane, scroll down to **Backup + Disaster recovery**, and select **Backup**. The **Backup** pane for the *NW-RHEL01* virtual machine appears.
 
-1. Under the **Summary** section, ensure the following information exists for creating a backup.
+1. Select the radio button for **Standard**. You can accept the defaults for the following options:
 
-    - **Recovery services vault**: **azure-backup** for the name.
+    - **Backup vault**: **vaultXXX** for the name.
     - **Backup policy**: **DailyPolicy-xxxxxxxx**, which creates a daily backup at 12:00 PM UTC with a retention range of 180 days.
 
     ![Screenshot that shows the backup options.](../media/4-portal-azure-backup.png)
+
+1. Select the **Enable backup** button.
+
+1. Once deployment completes, go back to the **NW-RHEL01** virtual machine, scroll down to **Backup + Disaster recovery**, and select **Backup**. The **Backup** pane for the *NW-RHEL01* virtual machine appears.
 
 1. To perform the first backup for this server, in the top menu bar, select **Backup now**.
 
@@ -100,6 +104,14 @@ The command can take a few minutes to complete. Wait for it to finish before mov
 
 ### Enable a backup by using the Azure CLI
 
+1. First, create the azure-backup vault by using Cloud Shell:
+
+    ```azurecli
+    az backup vault create \
+        --resource-group vmbackups \
+        --name azure-backup
+    ```
+
 1. Using Cloud Shell, enable a backup for the *NW-APP01* virtual machine.
 
     ```azurecli
@@ -107,7 +119,7 @@ The command can take a few minutes to complete. Wait for it to finish before mov
         --resource-group vmbackups \
         --vault-name azure-backup \
         --vm NW-APP01 \
-        --policy-name DefaultPolicy
+        --policy-name EnhancedPolicy
     ```
 
 1. Monitor the progress of the setup using the Azure CLI.
@@ -153,7 +165,7 @@ The command can take a few minutes to complete. Wait for it to finish before mov
 
 1. Select the **NW-APP01** virtual machine. The *NW-APP01* virtual machine pane appears.
 
-1. In the middle menu pane, scroll to **Operations**, and select **Backup**. The **Backup** pane for the *NW-APP01* virtual machine appears.
+1. In the middle menu pane, scroll to **Backup + Disaster recovery**, and select **Backup**. The **Backup** pane for the *NW-APP01* virtual machine appears.
 
     Under the **Backup status** section, the **Last backup status** field displays the current status of the backup.
 

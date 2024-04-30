@@ -6,6 +6,8 @@ Your company's CTO needs to provide proof of concept for using Azure shared disk
 > [!NOTE]
 > You can use either Azure PowerShell or the Azure CLI to manage Windows and Linux VMs on Azure. Here, for learning purposes, if you choose the Windows option, you'll use Azure PowerShell. If you choose Linux, you'll use the Azure CLI.
 
+[!INCLUDE [azure-optional-exercise-subscription-note](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 ::: zone pivot="linux-cloud"
 
 ## Deploy Linux VMs by using Azure shared disks
@@ -389,6 +391,10 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
 
 ::: zone-end
 
+<!--
+
 ### Clean up the resources
 
 The sandbox automatically cleans up your resources when you're finished with this module.
+
+-->

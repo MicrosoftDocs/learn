@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.intro-generative-ai-explore-basics.what-is-generative-ai
+title: What is generative AI?
+metadata:
+  title: What is generative AI?
+  description: This content is a part of the 'Introduction to generative AI - Exploring the basics' module.
+  ms.date: 02/21/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-what-is-generative-ai.md)]

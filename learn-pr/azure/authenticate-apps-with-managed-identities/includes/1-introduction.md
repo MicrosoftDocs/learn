@@ -1,4 +1,4 @@
-Developers integrating applications with on-premises, external or cloud services face the issue of authentication. In the past, accessing resources like databases frequently involved options that could compromise security. For example, storing credentials, tokens, or secret keys in configuration files accessible to your applications isn’t recommended from a security standpoint. This approach requires ongoing updates to modify and redistribute applications each time credentials change.
+Developers integrating applications with on-premises, external, or cloud services face the issue of authentication. In the past, accessing resources like databases frequently involved options that could compromise security. For example, storing credentials, tokens, or secret keys in configuration files accessible to your applications isn’t recommended from a security standpoint. This approach requires ongoing updates to modify and redistribute applications each time credentials change.
 
 Azure provides a better solution using authentication tools. These tools include *service principals* and *managed identities*.
 

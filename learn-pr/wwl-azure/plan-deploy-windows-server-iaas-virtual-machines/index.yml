@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
-  ms.prod: windows-server
+  ms.service: windows-server
 title: Plan and deploy Windows Server IaaS Virtual Machines
 summary: You'll be able to describe Azure compute and storage in relation to Azure VMs, and deploy Azure VMs by using the Azure portal, Azure CLI, or templates.
 abstract: |
@@ -43,10 +43,8 @@ products:
 - azure-portal
 - azure-storage
 - azure-virtual-machines
-- azure-automanage
 subjects:
 - virtual-machine
-- development-tools
 units:
 - learn.wwl.plan-deploy-windows-server-iaas-vms.introduction
 - learn.wwl.plan-deploy-windows-server-iaas-vms.describe-azure-compute

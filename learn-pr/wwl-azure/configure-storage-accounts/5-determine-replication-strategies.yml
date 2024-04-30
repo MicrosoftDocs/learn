@@ -4,12 +4,12 @@ title: Determine replication strategies
 metadata:
   title: Determine replication strategies
   description: "Determine replication strategies"
-  ms.date: 12/15/2023
+  ms.date: 03/08/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 4
+durationInMinutes: 7
 content: |
   [!include[](includes/5-determine-replication-strategies.md)]

@@ -1,16 +1,16 @@
 Your function code runs in Azure in the context of a function app. A function app defines the operating system and resources, such as the memory, computing power, and disk space, for running your function code. It provides the base address for accessing your functions. The function app is dynamically scaled when your functions need more resources.
 
-In the luxury watch online website scenario, you'll deploy the Azure Functions you create to the cloud. First create an Azure Function App, and then publish your functions to the Function App.
+In the luxury watch online website scenario, you deploy the Azure Functions you create to the cloud. First create an Azure Function App, and then publish your functions to the Function App.
 
-There are several options available for publishing an Azure Function, and you want to determine the best method. In the overview material here, and in the following exercise, you'll learn about some of these options.
+There are several options available for publishing an Azure Function, and you want to determine the best method. In the overview material here, and in the following exercise, you learn about some of these options.
 
 ## Deploy from Visual Studio
 
 Azure Functions tools for Visual Studio enable you to deploy an Azure Functions project directly from Visual Studio. The Publish wizard helps connect to your Azure account, and prompts you to either specify an existing function app, or create a new one. The functions in your project are then rebuilt and deployed to the function app in Azure.
 
-The Visual Studio **Publish** wizard requires that you either have access to the Azure Functions App that will host your functions, or you have an Azure subscription that you can use to create an Azure Functions App as part of the publication process. You'll investigate the **Publish** wizard in more detail in the exercise in the next unit.
+The Visual Studio **Publish** wizard requires that you either have access to the Azure Functions App that hosts your functions, or you have an Azure subscription that you can use to create an Azure Functions App as part of the publication process. You'll investigate the **Publish** wizard in more detail in the exercise in the next unit.
 
-Deployment from Visual Studio is a great feature for developers. If developers have access to an Azure subscription, they can create an Azure Function App and publish code to Azure, allowing them to perform testing in an environment that is similar to their production environment. When a function is stable, it can be deployed to an Azure Functions App in the production environment.
+Deployment from Visual Studio is a great feature for developers. It allows them to perform testing in an environment that is similar to their production environment. If developers have access to an Azure subscription, they can create an Azure Function App and publish code to Azure. When a function is stable, it can be deployed to an Azure Functions App in the production environment.
 
 ## Continuous deployment
 

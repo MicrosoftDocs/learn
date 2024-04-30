@@ -3,20 +3,24 @@ uid: learn.wwl.describe-benefits-use-cloud-services
 metadata:
   title: Describe the benefits of using cloud services
   description: "Introduction to concepts surrounding cloud computing. Mostly platform agnostic, focused instead on general concepts."
-  ms.date: 01/25/2023
+  ms.date: 03/13/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: azure
 title: Describe the benefits of using cloud services
 summary: This module introduces you to the benefits cloud computing can offer you or your organization.
 abstract: |
   Upon completion of this module, you will be able to:
-  * Describe the benefits of high availability and scalability in the cloud.
-  * Describe the benefits of reliability and predictability in the cloud.
-  * Describe the benefits of security and governance in the cloud.
-  * Describe the benefits of manageability in the cloud.
-prerequisites: |
-  * Basic familiarity with IT terms and concepts
+
+  -   Describe the benefits of high availability and scalability in the cloud.
+
+  -   Describe the benefits of reliability and predictability in the cloud.
+
+  -   Describe the benefits of security and governance in the cloud.
+
+  -   Describe the benefits of manageability in the cloud.
+prerequisites: '-   Basic familiarity with IT terms and concepts'
 iconUrl: /training/achievements/describe-benefits-use-cloud-services.svg
 levels:
 - beginner

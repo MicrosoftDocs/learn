@@ -17,7 +17,7 @@ At a high level, we'll perform the following steps:
 
 Visual Studio Code is an open-source code editor that allows you to create almost any type of application you might like. It's backed by a robust extension marketplace where you can find add-ons to help make your life as a developer easier.
 
-- [Install Visual Studio Code](https://code.visualstudio.com?WT.mc_id=python-11210-chrhar&azure-portal=true)
+- [Download Visual Studio Code](https://code.visualstudio.com/Download)
 
 ## Install Python
 
@@ -27,7 +27,7 @@ To complete this unit, you must have Python 3.6 or later installed on your compu
 python --version
 ```
 
-If Python is installed, the output shows the Python version number. If you need to install Python, follow the steps in the [Install Python 3](/training/modules/python-install-vscode/3-exercise-install-python3?azure-portal=true&WT.mc_id=python-11210-chrhar) documentation for Visual Studio Code. At the top of the article, choose the instructions for your configuration: Windows, Linux, or Mac.
+If Python is installed, the output shows the Python version number. If you need to install Python, follow the steps in the [Install a Python interpreter](https://code.visualstudio.com/docs/python/python-tutorial#_install-a-python-interpreter) documentation for Visual Studio Code. You will also need to install the [Visual Studio Code Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python).
 
 > [!IMPORTANT]
 > If you're using Windows, make sure that the folder location where you installed Python is added to your PATH environment variable. If you miss this step you'll receive an error message "Python isn't found", even after performing the installation. To fix this, you would need to follow these steps to add python to your PATH environment variable:

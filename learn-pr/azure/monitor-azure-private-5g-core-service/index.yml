@@ -4,8 +4,8 @@ metadata:
   title: Monitor the Azure Private 5G Core service
   description: Describes the monitoring capabilities of Azure Private 5G Core, the tools for monitoring the service, and the tool for diagnosing network issues.
   ms.date: 10/27/2022
-  author: rmcmurray
-  ms.author: robmcm
+  author: lnyswonger
+  ms.author: lnyswonger
   ms.topic: module
   ms.service: private-5g-core 
 title: Monitor the Azure Private 5G Core service

@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/17/2023
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Make your application storage highly available with read-access geo-redundant storage
 summary: In this module, you learn how to make your application storage highly available by ensuring that you can fail over resources if there's an Azure region failure.
 abstract: |
@@ -27,7 +27,7 @@ products:
 - azure
 subjects:
 - storage
-- business-continuity
+- site-reliability-engineering
 units:
   - learn.ha-application-storage-with-grs.1-introduction
   - learn.ha-application-storage-with-grs.2-storage-account-replication-features

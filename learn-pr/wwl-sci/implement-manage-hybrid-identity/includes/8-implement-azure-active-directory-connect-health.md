@@ -2,7 +2,7 @@ Microsoft Entra Connect Health provides monitoring of your on-premises identity 
 
 The information is presented in the [Microsoft Entra Connect Health portal](https://aka.ms/aadconnecthealth). Use the Microsoft Entra Connect Health portal to view alerts, performance monitoring, usage analytics, and other information. Microsoft Entra Connect Health enables the single lens of health for your key identity components in one place.
 
-:::image type="content" source="../media/azure-active-directory-connect-health-2-8d08121d.png" alt-text="Diagram of What is Azure AD Connect Health.  Shows how Azure AD Connect is maintained.":::
+:::image type="content" source="../media/azure-active-directory-connect-health-2-8d08121d.png" alt-text="Diagram of Microsoft Entra Connect Health. Shows how Microsoft Entra Connect is maintained.":::
 
 
 Using the Microsoft Entra Connect Health feature requires a Microsoft Entra ID Premium P1 license.
@@ -52,7 +52,7 @@ After the installation finishes, select **Configure Now**.
 
 A PowerShell window opens to start the agent registration process. When you're prompted, sign in by using a Microsoft Entra ID account that has permissions to register the agent. By default, the global admin account has permissions.
 
-:::image type="content" source="../media/install-3-3dc48bc2.png" alt-text="Screenshot of the sign-in window for Microsoft Entra Connect Health AD FS.":::
+:::image type="content" source="../media/install-3-3dc48bc2.png" alt-text="Screenshot of the sign in window for Microsoft Entra Connect Health AD FS.":::
 
 
 After you sign in, PowerShell continues. When it finishes, you can close PowerShell. The configuration is complete.
@@ -70,7 +70,7 @@ To verify that the agent was installed, look for the following services on the s
  -  Microsoft Entra Connect Health AD FS Insights Service
  -  Microsoft Entra Connect Health AD FS Monitoring Service
 
-:::image type="content" source="../media/install-5-01ef9e2e.png" alt-text="Screenshot of the Microsoft Entra Connect Health AD FS services.  Deploy only the services you need.":::
+:::image type="content" source="../media/install-5-01ef9e2e.png" alt-text="Screenshot of the Microsoft Entra Connect Health AD FS services. Deploy only the services you need.":::
 
 
 ## Install the agent for Sync

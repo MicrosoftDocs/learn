@@ -1,0 +1,37 @@
+### YamlMime:LearningPath
+uid: learn.philanthropies.intro-to-ai-for-trainers
+metadata:
+  title: Introduction to artificial intelligence for trainers
+  description: Gain the foundational knowledge about the principles of artificial intelligence (AI) and how it's used in educational settings.
+  ms.date: 01/29/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: learning-path
+  ms.service: artificial-intelligence
+title: Introduction to artificial intelligence for trainers
+prerequisites: |
+  Experience using Sway and PowerPoint
+summary: This learning path provides foundational knowledge about the principles of artificial intelligence (AI) and how it's used in educational settings. It includes a comprehensive exploration into AI principles, an introductory module on leveraging the potential of AI for trainers, a practical exploration of AI applications, and activities for incorporating AI into teaching and learning. By taking this learning path, you'll develop an understanding of various types of AI subsets and their practical applications. You'll also learn how to enhance your training programs with AI. Additionally, you'll gain valuable insights from real-world examples of AI in action and examine how AI can enhance educational processes.
+iconUrl: /training/achievements/intro-to-ai-for-trainers.svg
+levels:
+- beginner
+roles:
+- k-12-educator
+- higher-ed-educator
+- business-user
+- data-engineer
+- school-leader
+products:
+- ai-services
+- azure-machine-learning
+- azure-machine-learning-designer
+- m365-apps
+subjects:
+- artificial-intelligence
+modules:
+- learn.philanthropies.a-guide-to-artifical-intelligence
+- learn.philanthropies.introduction-to-ai-for-trainers
+- learn.philanthropies.exploring-artificial-intelligence-in-action
+- learn.philanthropies.ai-powered-tools-for-teaching
+trophy:
+  uid: learn.philanthropies.intro-to-ai-for-trainers.trophy

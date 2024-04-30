@@ -6,7 +6,7 @@ metadata:
   ms.date: 02/20/2020
   author: Adriamen
   ms.author: japerena
-  ms.topic: interactive-tutorial
+  ms.topic: module
   #ms.learn-contact: barlan
 title: Discover Microsoft guidelines for responsible conversational AI development
 summary: Learn Microsoft guidelines for the development of responsible conversational AI, such as chat bots and voice-controlled systems.
@@ -27,7 +27,7 @@ products:
 - dynamics-365
 subjects:
 - artificial-intelligence
-- chatbot
+- chatbots
 units:
 - learn-wwl.responsible-conversational-ai.introduction
 - learn-wwl.responsible-conversational-ai.conversational-ai-bot-types

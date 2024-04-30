@@ -7,8 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: sheryang
   ms.topic: module
-  ms.service: artificial-intelligence
-  ms.subservice: language-understanding
+  ms.service: azure-ai-language
+  ms.subservice: azure-ai-luis
 title: Fundamentals of conversational language understanding
 summary: In this module, we introduce you to conversational language understanding, and show how to create applications that understand language with Azure AI Language.
 abstract: |

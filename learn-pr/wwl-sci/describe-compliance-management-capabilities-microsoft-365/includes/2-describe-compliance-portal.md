@@ -33,12 +33,3 @@ The default compliance portal home page contains several cards including:
 In addition to the cards on the home page, there’s a navigation pane on the left of the screen that gives easy access to the Compliance Manager and the Data Classification page where you can get snapshots of how sensitive information and labels are being used across your organization's locations. You can access alerts, reports, policies, and all the solutions that are included in the solutions catalog.  There's access to data connectors that you can use to import non-Microsoft data to Microsoft 365 so it can be covered by your compliance solutions. The **Customize navigation** control allows customization of which items appear in the navigation pane.
 
 :::image type="content" source="../media/purview-portal-navigation-v2-inline.png" lightbox="../media/purview-portal-navigation-v2-expanded.png" alt-text="Screenshot of the compliance portal left navigation panel.":::
-
-### Interactive guide
-
-In this interactive guide, you'll explore some of the capabilities of the Microsoft Purview compliance portal, your home for managing compliance needs using integrated solutions for information protection, data lifecycle management, insider risk management, discovery, and more. Select the image that follows to get started and follow the prompts on the screen.
-
-> [!NOTE]
-> The user interface (UI) in Microsoft 365 is continually evolving so the UI shown in the interactive guide may not reflect the most recent updates.
-
-[![Interactive guide - Explore the Microsoft Purview compliance portal](../media/compliance-portal-interactive-guide.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/explore-the-compliance-portal/index.html?azure-portal=true)

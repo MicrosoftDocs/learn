@@ -21,9 +21,10 @@ Here are some links to more information on the topics we discussed in this modul
 - [About dependency review](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-dependency-review)
 - [About the security overview](https://docs.github.com/en/code-security/security-overview/about-the-security-overview)
 - [Enabling or disabling a feature for all existing repositories](https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-and-analysis-settings-for-your-organization#enabling-or-disabling-a-feature-for-all-existing-repositories)
-- [Enabling GitHub Advanced Security for your enterprise](https://docs.github.com/en/enterprise-server@3.3/admin/advanced-security/enabling-github-advanced-security-for-your-enterprise)
+- [Enabling GitHub Advanced Security for your enterprise](https://docs.github.com/en/enterprise-server/admin/code-security/managing-github-advanced-security-for-your-enterprise/enabling-github-advanced-security-for-your-enterprise)
 - [Enforcing a policy for the use of GitHub Advanced Security in your enterprise](https://docs.github.com/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-advanced-security-in-your-enterprise#enforcing-a-policy-for-the-use-of-github-advanced-security-in-your-enterprise)
 - [Adding a security policy to your repository](https://docs.github.com/en/code-security/getting-started/adding-a-security-policy-to-your-repository)
 - [REST API](https://docs.github.com/en/rest)
 - [GraphQL API](https://docs.github.com/en/graphql)
 - [Automatic token authentication](https://docs.github.com/en/actions/security-guides/automatic-token-authentication)
+

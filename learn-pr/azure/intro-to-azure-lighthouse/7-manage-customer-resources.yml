@@ -2,8 +2,8 @@
 uid: learn.intro-to-azure-lighthouse.7-manage-customer-resources
 metadata:
   title: Manage customer resources
-  description: Learn how to manage your customer resources using Azure Lighthouse
-  ms.date: 02/09/2023
+  description: Learn how to manage your customer resources using Azure Lighthouse.
+  ms.date: 04/15/2024
   author: iankensey
   ms.author: socuff
   ms.topic: unit

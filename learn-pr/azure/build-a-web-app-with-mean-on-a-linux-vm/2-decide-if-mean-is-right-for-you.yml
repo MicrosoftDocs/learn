@@ -4,10 +4,11 @@ title: Decide if MEAN is right for you
 metadata:
   title: Decide if MEAN is right for you
   description: Decide if MEAN is right for you
-  ms.date: 06/10/2022
+  ms.date: 05/11/2023
   author: ju-shim
   ms.author: jushiman
   ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 3
 content: |
   [!include[](includes/2-decide-if-mean-is-right-for-you.md)]

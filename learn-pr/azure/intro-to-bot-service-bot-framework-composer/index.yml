@@ -35,7 +35,7 @@ products:
   - azure-bot-service
 subjects:
 - cloud-computing
-- chatbot
+- chatbots
 - artificial-intelligence
 units:
 - learn.azure.intro-to-bot-service-bot-framework-composer.1-introduction

@@ -29,7 +29,7 @@ products:
 - azure
 subjects:
 - business-applications
-- business-continuity
+- site-reliability-engineering
 - cloud-computing
 - migration
 - productivity

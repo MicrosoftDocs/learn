@@ -30,9 +30,9 @@ Now that you have the preceding information on hand, we’ll walk through how to
 | **Satellite name** | AQUA | The name of your satellite. |
 | **Region** | West US 2 | The Azure region you want to use. Each Azure region features datacenters within a latency-defined perimeter connected through a dedicated regional low-latency network. This design provides the best possible performance and security within each region. [Get more information on Azure regions](/azure/availability-zones/az-overview).  |
 | **NORAD ID** | 27424 | A 5-digit satellite identification number. NORAD (North American Aerospace Defense Catalog Number) IDs have been used since the first satellite was launched in 1957. |
-| **TLE title line** | AQUA | The standard format used to describe the trajectory of earth-orbiting objects. TLEs change, so they [need to be kept up to date](https://celestrak.org/NORAD/elements/active.txt). [Get more instructions on updating TLEs.](/azure/orbital/update-tle) |
-| **TLE line 1** | [Enter the TLE line 1 from Celestrak](https://celestrak.org/NORAD/elements/active.txt) | Search the page for "AQUA" and enter the entire first line of the TLE. Example: *1 27424U 02022A   22250.53879010  .00000478  00000+0  11551-3 0  9993* |
-| **TLE line 2** | [Enter the TLE line 2 from Celestrak](https://celestrak.org/NORAD/elements/active.txt) | Search the page for "AQUA" and enter the entire second line of the TLE. Example: *2 27424  98.2510 191.6693 0001463  54.4662 357.4337 14.57372758 82148* |
+| **TLE title line** | AQUA | The standard format used to describe the trajectory of earth-orbiting objects. TLEs change, so they need to be kept up to date. [Get more instructions on updating TLEs.](/azure/orbital/update-tle) |
+| **TLE line 1** | Enter the TLE line 1 from Celestrak | Search the page for "AQUA" and enter the entire first line of the TLE. Example: *1 27424U 02022A   22250.53879010  .00000478  00000+0  11551-3 0  9993* |
+| **TLE line 2** | Enter the TLE line 2 from Celestrak | Search the page for "AQUA" and enter the entire second line of the TLE. Example: *2 27424  98.2510 191.6693 0001463  54.4662 357.4337 14.57372758 82148* |
 
 5. Select **Next** or go to the **Links** tab and select **Add new Link**.
 

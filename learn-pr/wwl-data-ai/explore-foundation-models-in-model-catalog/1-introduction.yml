@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.explore-foundation-models-in-model-catalog.introduction
-title: |
-  Introduction
+title: Introduction
 metadata:
-  title: |
-    Introduction
+  title: Introduction
   description: "Introducing key concepts like artificial intelligence, machine learning, deep learning and natural language processing before exploring foundation models."
   ms.date: 7/24/2023
   author: madiepev

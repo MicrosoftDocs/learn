@@ -1,36 +1,34 @@
+Azure Files offers [soft delete for Server Message Block (SMB) file shares](/azure/storage/files/storage-files-enable-soft-delete?toc=%2Fazure%2Fstorage%2Ffile-sync). Soft delete lets you recover deleted files and file shares.
 
-Azure File Sync enables you to cache several Azure Files shares on an on-premises Windows Server or cloud virtual machine. You can use Azure File Sync to centralize your organization's file shares in Azure Files, while keeping the flexibility, performance, and compatibility of an on-premises file server. 
+:::image type="content" source="../media/files-enable-soft-delete-new-ui.png" alt-text="Illustration that depicts how to enable soft delete on an Azure file share." border="false":::
 
-:::image type="content" source="../media/file-sync-1d3fd2e7.png" alt-text="Illustration that depicts how Azure File Sync can be used to cache an organization's file shares in Azure Files." border="false":::
+### Things to know about soft delete for Azure Files
 
-### Things to know about Azure File Sync
+Let's take a look at the characteristics of soft delete for Azure Files. 
 
-Let's take a look at the characteristics of Azure File Sync.
+- Soft delete for file shares is enabled at the storage account level. 
 
-- Azure File Sync transforms Windows Server into a quick cache of your Azure Files shares.
+- Soft delete transitions content to a soft deleted state instead of being permanently erased.
 
-- You can use any protocol that's available on Windows Server to access your data locally with Azure File Sync, including SMB, NFS, and FTPS.
+- Soft delete lets you configure the retention period. The retention period is the amount of time that soft deleted file shares are stored and available for recovery. 
 
-- Azure File Sync supports as many caches as you need around the world.
+- Soft delete provides a retention period between 1 and 365 days. 
 
-#### Cloud tiering
+- Soft delete can be enabled on either new or existing file shares. 
 
-Cloud tiering is an optional feature of Azure File Sync. Frequently accessed files are cached locally on the server while all other files are tiered to Azure Files based on policy settings.
+- Soft delete doesn't work for Network File System (NFS) shares.
 
-- When a file is tiered, Azure File Sync replaces the file locally with a pointer. A pointer is commonly referred to as a _reparse point_. The reparse point represents a URL to the file in Azure Files.
+### Things to consider when using soft delete for Azure Files
 
-- When a user opens a tiered file, Azure File Sync seamlessly recalls the file data from Azure Files without the user needing to know that the file is stored in Azure.
+There are many advantages to using soft delete for Azure Files. Consider the following scenarios, and think about how you can use soft delete.
 
-- Cloud tiering files have greyed icons with an offline `O` file attribute to let the user know when the file is only in Azure.
+- **Recovery from accidental data loss**. Use soft delete to recover data that is deleted or corrupted.
 
-### Things to consider when using Azure File Sync
+- **Upgrade scenarios**. Use soft delete to restore to a known good state after a failed upgrade attempt.
 
-There are many advantages to using Azure File Sync. Consider the following scenarios, and think about how you can use Azure File Sync with your Azure Files shares.
+- **Ransomware protection**. Use soft delete to recover data without paying ransom to cybercriminals.
 
-- **Consider application lift and shift**. Use Azure File Sync to move applications that require access between Azure and on-premises systems. Provide write access to the same data across Windows Servers and Azure Files. 
+- **Long-term retention**. Use soft delete to comply with data retention requirements.
 
-- **Consider support for branch offices**. Support your branch offices that need to back up files by using Azure File Sync. Use the service to set up a new server that connects to Azure storage.
+- **Business continuity**. Use soft delete to prepare your infrastructure to be highly available for critical workloads.-
 
-- **Consider backup and disaster recovery**. After you implement Azure File Sync, Azure Backup backs up your on-premises data. Restore file metadata immediately and recall data as needed for rapid disaster recovery.
-
-- **Consider file archiving with cloud tiering**. Azure File Sync stores only recently accessed data on local servers. Implement cloud tiering so non-used data moves to Azure Files.

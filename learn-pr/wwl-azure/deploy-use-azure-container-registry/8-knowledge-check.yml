@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/23/2023
+  ms.date: 04/01/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
@@ -14,36 +14,25 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the purpose of Azure Container Registry?"
+  - content: "A team needs to automate the creation and teardown of environments to deliver secure and stable application hosting platforms. Which Azure service can help them achieve this?"
     choices:
-    - content: "To create and manage virtual machines"
+    - content: "Azure App Service"
       isCorrect: false
-      explanation: "Incorrect. Azure Container Registry is not used to create and manage virtual machines."
-    - content: "To store and manage data in a cloud database"
+      explanation: "Incorrect. Azure App Service is a platform-as-a-service (PaaS) offering that allows users to build, deploy, and scale web apps and APIs."
+    - content: "Azure Virtual Machines"
       isCorrect: false
-      explanation: "Incorrect. Azure Container Registry is not used to store and manage data in a cloud database."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      explanation: "Incorrect. Azure Virtual Machines is an infrastructure-as-a-service (IaaS) offering that allows users to deploy and manage virtual machines in the cloud."
+    - content: "Azure Kubernetes Service"
       isCorrect: true
-      explanation: "Correct. Azure Container Registry is a private registry service for building, storing, and managing container images and related artifacts. It enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-  - content: "What is the purpose of Azure Key Vault?"
+      explanation: "Correct. Azure Kubernetes Service (AKS) enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+  - content: "A user wants to create a private registry service for building, storing, and managing container images and related artifacts. They want to use the Azure portal to create an Azure Container Registry instance. What is the purpose of creating an Azure Container Registry instance?"
     choices:
-    - content: "To store and manage data in a cloud database"
+    - content: "To create a public registry service for building, storing, and managing container images and related artifacts."
       isCorrect: false
-      explanation: "Incorrect. Azure Key Vault is not used to store and manage data in a cloud database."
-    - content: "To manage virtual machines"
+      explanation: "Incorrect. The user wants to create a private registry service, not a public one."
+    - content: "To create a virtual machine instance with the Azure portal."
       isCorrect: false
-      explanation: "Incorrect. Azure Key Vault is not used to manage virtual machines."
-    - content: "To safeguard cryptographic keys and secrets used by cloud applications and services"
+      explanation: "Incorrect. The user wants to create a container registry instance, not a virtual machine instance."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
       isCorrect: true
-      explanation: "Correct. Azure Key Vault is a cloud service that safeguards cryptographic keys and secrets used by cloud applications and services. It provides secure access to sensitive information and helps meet compliance requirements."
-  - content: "What is the purpose of automation and validation in application hosting platforms?"
-    choices:
-    - content: "Enables manual creation and teardown of environments"
-      isCorrect: false
-      explanation: "Incorrect. Manual processes are prone to errors and inconsistencies."
-    - content: "Increases the time required for creating and tearing down environments"
-      isCorrect: false
-      explanation: "Incorrect. Automation reduces the time required for these processes."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
-      isCorrect: true
-      explanation: "Correct. Automation and validation ensure consistency, reduce errors, and improve security and stability of application hosting platforms."
+      explanation: "Correct. An Azure Container Registry instance allows users to create a private registry service for building, storing, and managing container images and related artifacts. It also enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."

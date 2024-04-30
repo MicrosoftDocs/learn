@@ -74,7 +74,7 @@ Now you know the difference, but which one should you use? Well, `printf` and `p
 
 As part of printing to the screen, you might want to combine text and numbers. Or you might want the output to be formatted in a certain way, such as by using:
 
-- **Positional arguments**: To format, you can use a .NET function like `string.Format`, which uses positional arguments like `string.Format("My name is {0} and I live in {1}", "Chris", "UK")`.
+- **Positional arguments**: To format, you can use a .NET function like `String.Format`, which uses positional arguments like `String.Format("My name is {0} and I live in {1}", "Chris", "UK")`.
 - **String interpolation**: Another way to combine variables and text is to use something called interpolation. To use it, you need to precede the string with a `$` sign and indicate placeholders with brackets `{}`. Here's an example of using interpolation:
 
    ```fsharp

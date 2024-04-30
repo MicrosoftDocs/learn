@@ -24,7 +24,7 @@ products:
 - azure-openai
 subjects:
 - artificial-intelligence
-- data-ai
+- data-management
 modules:
 - learn.wwl.leverage-ai-tools
 - learn.wwl.create-business-value

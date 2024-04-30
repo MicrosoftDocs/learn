@@ -4,10 +4,12 @@ title: Configure disk encryption, Azure Disk Encryption (ADE), encryption as hos
 metadata:
   title: Configure disk encryption, Azure Disk Encryption (ADE), encryption as host, and confidential disk encryption
   description: "Configure disk encryption, Azure Disk Encryption (ADE), encryption as host, and confidential disk encryption"
-  ms.date: 12/28/2023
+  ms.date: 04/25/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/9-azure-data-encryption.md)]

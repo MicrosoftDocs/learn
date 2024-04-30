@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.build-your-kernel
+metadata:
+  title: Build your kernel
+  description: "Learn how the semantic kernel SDK connects native code to large language models to create smart applications."
+  ms.date: 02/27/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: module
+  ms.service: azure
+  ms.devlang: csharp
+title: Build your kernel
+summary: This module introduces the Semantic Kernel SDK. Learn how the kernel connects code to large language models to extend functionality with generative artificial intelligence.
+abstract: |
+  -   Understand the purpose of Semantic Kernel.
+  -   Understand prompting basics.
+  -   Learn techniques for more effective prompts.
+prerequisites: |
+  -   Experience programming in C#.
+  -   Visual Studio Code IDE installed.
+  -   Familiarity with Azure and the Azure portal.
+  -   Access to Azure Open AI services.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- dotnet
+- vs-code
+- azure-openai
+units:
+- learn.wwl.build-your-kernel.introduction
+- learn.wwl.build-your-kernel.what-semantic-kernel
+- learn.wwl.build-your-kernel.why-use-semantic-kernel
+- learn.wwl.build-your-kernel.how-build-your-kernel
+- learn.wwl.build-your-kernel.exercise-create-your-endpoint
+- learn.wwl.build-your-kernel.exercise-build-kernel-object
+- learn.wwl.build-your-kernel.knowledge-check
+- learn.wwl.build-your-kernel.summary
+badge:
+  uid: learn.wwl.build-your-kernel.badge

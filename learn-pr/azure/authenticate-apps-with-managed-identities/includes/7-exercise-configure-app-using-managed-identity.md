@@ -15,12 +15,12 @@ In this exercise, you'll edit your app to use the new key vault. Then, you'll gr
     ```
 
     > [!NOTE]
-    > If the environment variable `publicIP` isn't set, reset it by running the following command.
+    > If the environment variable `publicIP` isn't set, reset it by running the following command:
     >
     > ```azurecli
     > export publicIP=$(az vm show \
     >     --name prodserver \
-    >     --resource-group <rgn>[Sandbox resource group]</rgn> \
+    >     --resource-group "<rgn>[sandbox resource group name]</rgn>" \
     >     --show-details \
     >     --query [publicIps] \
     >     --output tsv)
@@ -130,7 +130,7 @@ In this exercise, you'll edit your app to use the new key vault. Then, you'll gr
     ```azurecli
     az vm identity show \
       --name $VMNAME \
-      --resource-group <rgn>[Sandbox resource group]</rgn>
+      --resource-group "<rgn>[sandbox resource group name]</rgn>"
     ```
 
     The following code is an example of the returned value. Your IDs will differ.
@@ -154,7 +154,7 @@ In this exercise, you'll edit your app to use the new key vault. Then, you'll gr
         --secret-permissions get list \
         --object-id $(az vm identity show \
                         --name $VMNAME \
-                        --resource-group <rgn>[Sandbox resource group]</rgn> \
+                        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
                         --output tsv \
                         --query principalId)
     ```
@@ -183,4 +183,6 @@ In this exercise, you'll edit your app to use the new key vault. Then, you'll gr
 
     This time, the application should retrieve the secret from Key Vault and display its value.
 
-    `Database connection string:: Server=tcp:prodserverSQL.database.windows.net,1433;Database=myDataBase;User ID=mylogin@myserver;Password=examplePassword;Trusted_Connection=False;Encrypt=True;`
+    ```output
+    Database connection string:: Server=tcp:prodserverSQL.database.windows.net,1433;Database=myDataBase;User ID=mylogin@myserver;Password=examplePassword;Trusted_Connection=False;Encrypt=True;
+    ```

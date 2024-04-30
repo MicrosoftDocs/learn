@@ -82,22 +82,29 @@ You should still have the codespace or Visual Studio Code window open. If not, o
 
 With all the above code in place, the app can use the default redaction implementation to redact the `Order` information. You'll now test this.
 
-1. In the **TERMINAL** window, navigate to the root of the `dotnet-compliance` folder with this command:
+1. On the **TERMINAL** pane at the bottom, go to the *dotnet-compliance/eShopLite* folder.
 
     ```bash
-    cd ../..
+    cd ..
     ```
 
-1. Build and run the app:
+1. Update the apps containers.
+
+    ```dotnetcli
+    dotnet publish /p:PublishProfile=DefaultContainer 
+    ```
+
+1. Go to the *dotnet-compliance* folder, and start the app with Docker:
 
     ```bash
-    docker-compose up --build
+    cd ..
+    docker compose up
     ```
 
 1. Select the **PORTS** tab, then select the **Open in Browser** globe icon for the **Front End (32000)** port.
 1. Select the **Products** link. Add some products to your shopping basket.
 1. Select the **Buy Basket** button.
-1. In the **TERMINAL** window, press <kbd>CTRL</kbd>+<kbd>F</kbd>, in the search field enter **"EventId":1,**.
+1. In the **TERMINAL** window, press <kbd>Ctrl</kbd>+<kbd>F</kbd>, in the search field enter **"EventId":1,**.
 
     ```json
     frontend-1  | {"EventId":1,"LogLevel":"Information","Category":"Store.Services.ProductService","Message":"Placed Order: DataEntities.Order","State":{"Message":"Microsoft.Extensions.Logging.ExtendedLogger\u002BModernTagJoiner","{OriginalFormat}":"Placed Order: {order}","order.Total":209.94,"order.Products":"[\u0022DataEntities.Product\u0022,\u0022DataEntities.Product\u0022,\u0022DataEntities.Product\u0022,\u0022DataEntities.Product\u0022,\u0022DataEntities.Product\u0022,\u0022DataEntities.Product\u0022]","order":"DataEntities.Order","order.CustomerAddress":"","order.CustomerName":"","order.Id":""}}
@@ -106,7 +113,7 @@ With all the above code in place, the app can use the default redaction implemen
     You should see this JSON formatted log entry. Notice that the **order.Total** value is in the logs, but the **CustomerName** and **CustomerAddress** values are empty strings.
 
     By default, if you don't specify a redaction implementation, the redaction engine will use the `ErasingRedactor` implementation to ensure no sensitive data is leaked into the logs.
-1. In the **TERMINAL** window, press <kbd>CTRL</kbd>+<kbd>C</kbd> to stop the app.
+1. In the **TERMINAL** window, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the app.
 
 ## Add a custom redaction implementation
 
@@ -158,7 +165,7 @@ You'll now enhance the redaction implementation to use different redaction algor
 1. Select the **PORTS** tab, then select the **Open in Browser** globe icon for the **Front End (32000)** port.
 1. Select the **Products** link. Add some products to your shopping basket.
 1. Select the **Buy Basket** button.
-1. In the **TERMINAL** window, press <kbd>CTRL</kbd>+<kbd>F</kbd>, in the search field enter **"EventId":1,**.
+1. In the **TERMINAL** window, press <kbd>Ctrl</kbd>+<kbd>F</kbd>, in the search field enter **"EventId":1,**.
 
     ```json
     frontend-1  | {"EventId":1,"LogLevel":"Information","Category":"Store.Services.ProductService","Message":"Placed Order: DataEntities.Order","State":{"Message":"Microsoft.Extensions.Logging.ExtendedLogger\u002BModernTagJoiner","{OriginalFormat}":"Placed Order: {order}","order.Total":269.88,"order.Products":"[\u0022DataEntities.Product\u0022,\u0022DataEntities.Product\u0022,\u0022DataEntities.Product\u0022,\u0022DataEntities.Product\u0022,\u0022DataEntities.Product\u0022,\u0022DataEntities.Product\u0022,\u0022DataEntities.Product\u0022,\u0022DataEntities.Product\u0022,\u0022DataEntities.Product\u0022,\u0022DataEntities.Product\u0022,\u0022DataEntities.Product\u0022,\u0022DataEntities.Product\u0022]","order":"DataEntities.Order","order.CustomerAddress":"*****","order.CustomerName":"*****","order.Id":""}}
@@ -166,4 +173,4 @@ You'll now enhance the redaction implementation to use different redaction algor
 
     You should see this JSON formatted log entry. Notice that the **order.Id** value is still an empty string, but the **CustomerName** and **CustomerAddress** values are now `*****.`
 
-1. In the **TERMINAL** window, press <kbd>CTRL</kbd>+<kbd>C</kbd> to stop the app.
+1. In the **TERMINAL** window, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the app.

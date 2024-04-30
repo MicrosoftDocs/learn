@@ -6,7 +6,7 @@ metadata:
   ms.date: 11/03/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: cosmos-db
 title: Define indexes in Azure Cosmos DB for NoSQL
 summary: Discover indexes and indexing policies in Azure Cosmos DB for NoSQL.

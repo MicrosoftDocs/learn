@@ -4,10 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/17/2023
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 1
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -21,7 +23,7 @@ quiz:
       explanation: "Incorrect. The SAP Web Dispatcher pool isn't normally a potential single point of failure when deployed to a single virtual machine."
     - content: "Central Services"
       isCorrect: true
-      explanation: "Correct. The Central Services is a potential single point of failure when deployed to a single VM, a typical deployment when high availability isn't a requirement. To implement a high availability solution, deploy multiple Central Services instances and configure them as members of a failover cluster with a shared disk or a file share providing highly available storage accessible by all cluster nodes."
+      explanation: "Correct. The Central Services is a potential single point of failure when deployed to a single virtual machine, a typical deployment when high availability isn't a requirement. To implement a high availability solution, deploy multiple Central Services instances and configure them as members of a failover cluster with a shared disk or a file share providing highly available storage accessible by all cluster nodes."
     - content: "Application servers pool"
       isCorrect: false
       explanation: "Incorrect. The application servers pool isn't normally a potential single point of failure when deployed to a single virtual machine."

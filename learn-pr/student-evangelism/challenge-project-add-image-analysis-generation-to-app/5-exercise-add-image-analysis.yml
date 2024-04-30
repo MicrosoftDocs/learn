@@ -8,8 +8,7 @@ metadata:
   author: carlottac94
   ms.author: cacaste
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.prod: azure-ai-vision
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise-add-image-analysis.md)]

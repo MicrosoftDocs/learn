@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-use-sap-workload-planning-deployment-checklist.explore-production-preparation-phase
+title: Explore the production preparation phase
+metadata:
+  title: Explore the production preparation phase
+  description: "Explore the production preparation phase"
+  ms.date: 01/08/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-explore-production-preparation-phase.md)]

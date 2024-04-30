@@ -18,7 +18,7 @@ Modern deployment can change an installed Windows 11 operating system in many wa
 
 As you begin the transition from a traditional delivery of an OS to a more modern approach, there are several key components that you're familiar with in traditional deployment projects. The following chart provides a high-level overview of these considerations to help you determine the best approach and tooling to help you plan your journey forward.
 
-|                  | MDT | Configuration Manager | Windows Autopilot |
+| -- | MDT | Configuration Manager | Windows Autopilot |
 |------------------|:-----:|:-----------------------:|:--------------------:|
 | Require the creation of golden images | Yes | Yes | No |
 | Ability to reset existing OS | No | No | Yes |

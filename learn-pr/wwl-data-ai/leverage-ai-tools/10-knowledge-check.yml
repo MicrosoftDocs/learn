@@ -4,10 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/13/2023
+  ms.date: 04/08/2024
   author: Adriamen
   ms.author: rcaper
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/10-knowledge-check.md)]
@@ -25,7 +27,7 @@ quiz:
     - content: "AI is computer's ability to mimic human-like behavior. Machine learning is AI applied to robotics. Data science is the field that prepares data so it can be used in AI projects."
       isCorrect: false
       explanation: "Incorrect. Machine learning is a technique that uses algorithms to find patterns over time. Data science prepares data for AI projects, but it also covers the rest of the AI lifecycle."
-  - content: "What AI-powered products could use a salesperson with no coding or AI expertise use to improve sales?"
+  - content: "What AI-powered products could a salesperson with no coding or AI expertise use to improve sales?"
     choices:
     - content: "Microsoft 365 and Microsoft Dynamics 365."
       isCorrect: true

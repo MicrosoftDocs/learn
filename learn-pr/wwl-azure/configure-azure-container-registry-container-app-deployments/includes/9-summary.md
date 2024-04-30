@@ -8,32 +8,32 @@ The main takeaways from this module are:
 
 Detailed resources:
 
-- Managed container registries - Azure Container Registry | Microsoft Learn [https://learn.microsoft.com/azure/container-registry/container-registry-intro](/azure/container-registry/container-registry-intro)
+- Managed container registries - Azure Container Registry | Microsoft Learn [/azure/container-registry/container-registry-intro](/azure/container-registry/container-registry-intro)
 
-- Quickstart - Create registry in portal - Azure Container Registry | Microsoft Learn [https://learn.microsoft.com/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli](/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli)
+- Quickstart - Create registry in portal - Azure Container Registry | Microsoft Learn [/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli](/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli)
 
-- Azure Container Registry service tiers [https://learn.microsoft.com/azure/container-registry/container-registry-skus](/azure/container-registry/container-registry-skus)
+- Azure Container Registry service tiers [/azure/container-registry/container-registry-skus](/azure/container-registry/container-registry-skus)
 
-- Push & pull container image - Azure Container Registry | Microsoft Learn [https://learn.microsoft.com/azure/container-registry/container-registry-get-started-docker-cli](/azure/container-registry/container-registry-get-started-docker-cli)
+- Push & pull container image - Azure Container Registry | Microsoft Learn [/azure/container-registry/container-registry-get-started-docker-cli](/azure/container-registry/container-registry-get-started-docker-cli)
 
-- Import container images - Azure Container Registry | Microsoft Learn [https://learn.microsoft.com/azure/container-registry/container-registry-import-images](/azure/container-registry/container-registry-import-images)
+- Import container images - Azure Container Registry | Microsoft Learn [/azure/container-registry/container-registry-import-images](/azure/container-registry/container-registry-import-images)
 
-- Tutorial - Quick container image build - Azure Container Registry | Microsoft Learn [https://learn.microsoft.com/azure/container-registry/container-registry-tutorial-quick-task](/azure/container-registry/container-registry-tutorial-quick-task)
+- Tutorial - Quick container image build - Azure Container Registry | Microsoft Learn [/azure/container-registry/container-registry-tutorial-quick-task](/azure/container-registry/container-registry-tutorial-quick-task)
 
 - Docker Docs - Reference documentation [https://docs.docker.com/reference](https://docs.docker.com/reference)
 
-- Authenticate with managed identity - Azure Container Registry | Microsoft Learn [https://learn.microsoft.com/azure/container-registry/container-registry-authentication-managed-identity](/azure/container-registry/container-registry-authentication-managed-identity)
+- Authenticate with managed identity - Azure Container Registry | Microsoft Learn [/azure/container-registry/container-registry-authentication-managed-identity](/azure/container-registry/container-registry-authentication-managed-identity)
 
-- Manage user-assigned managed identities [https://learn.microsoft.com/azure/active-directory/managed-identities-azure-resources/how-manage-user-assigned-managed-identities](/azure/active-directory/managed-identities-azure-resources/how-manage-user-assigned-managed-identities)
+- Manage user-assigned managed identities [/azure/active-directory/managed-identities-azure-resources/how-manage-user-assigned-managed-identities](/azure/active-directory/managed-identities-azure-resources/how-manage-user-assigned-managed-identities)
 
-- Add a user-assigned identity. [https://learn.microsoft.com/azure/container-apps/managed-identity](/azure/container-apps/managed-identity)
+- Add a user-assigned identity. [/azure/container-apps/managed-identity](/azure/container-apps/managed-identity)
 
-- Registry roles and permissions - Azure Container Registry | Microsoft Learn [https://learn.microsoft.com/azure/container-registry/container-registry-roles](/azure/container-registry/container-registry-roles)
+- Registry roles and permissions - Azure Container Registry | Microsoft Learn [/azure/container-registry/container-registry-roles](/azure/container-registry/container-registry-roles)
 
-- Steps to assign an Azure role - Azure RBAC | Microsoft Learn [https://learn.microsoft.com/azure/role-based-access-control/role-assignments-steps](/azure/role-based-access-control/role-assignments-steps)
+- Steps to assign an Azure role - Azure RBAC | Microsoft Learn [/azure/role-based-access-control/role-assignments-steps](/azure/role-based-access-control/role-assignments-steps)
 
-- Assign Azure roles using the Azure portal - Azure RBAC | Microsoft Learn [https://learn.microsoft.com/azure/role-based-access-control/role-assignments-portal](/azure/role-based-access-control/role-assignments-portal)
+- Assign Azure roles using the Azure portal - Azure RBAC | Microsoft Learn [/azure/role-based-access-control/role-assignments-portal](/azure/role-based-access-control/role-assignments-portal)
 
-- Set up private endpoint with private link - Azure Container Registry | Microsoft Learn [https://learn.microsoft.com/azure/container-registry/container-registry-private-link](/azure/container-registry/container-registry-private-link)
+- Set up private endpoint with private link - Azure Container Registry | Microsoft Learn [/azure/container-registry/container-registry-private-link](/azure/container-registry/container-registry-private-link)
 
-- Quickstart: Use the Azure portal to create a virtual network - Azure Virtual Network | Microsoft Learn [https://learn.microsoft.com/azure/virtual-network/quick-create-portal](/azure/virtual-network/quick-create-portal)
+- Quickstart: Use the Azure portal to create a virtual network - Azure Virtual Network | Microsoft Learn [/azure/virtual-network/quick-create-portal](/azure/virtual-network/quick-create-portal)

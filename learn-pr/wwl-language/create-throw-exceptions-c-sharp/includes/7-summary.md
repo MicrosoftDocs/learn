@@ -4,11 +4,11 @@ By creating, throwing, catching, and handling customized exceptions, you simplif
 
 Without the ability to create and throw customized exception objects, your code would be more difficult to maintain and the user experience would suffer.
 
-## Reference materials:
+## Reference materials
 
 - You can find additional information about using exceptions here: [https://learn.microsoft.com/dotnet/csharp/fundamentals/exceptions/using-exceptions](/dotnet/csharp/fundamentals/exceptions/using-exceptions).
 
-- You can find additional information about creating and throwing here: [https://learn.microsoft.com/dotnet/csharp/fundamentals/exceptions/creating-and-throwing-exception](/dotnet/csharp/fundamentals/exceptions/creating-and-throwing-exceptions).
+- You can find additional information about creating and throwing here: [https://learn.microsoft.com/dotnet/csharp/fundamentals/exceptions/creating-and-throwing-exceptions](/dotnet/csharp/fundamentals/exceptions/creating-and-throwing-exceptions).
 
 - You can find additional information about creating user defined exceptions here: [https://learn.microsoft.com/dotnet/standard/exceptions/how-to-create-user-defined-exceptions](/dotnet/standard/exceptions/how-to-create-user-defined-exceptions).
 
@@ -17,3 +17,7 @@ Without the ability to create and throw customized exception objects, your code 
 - You can find additional information about explicitly throwing exceptions here: [https://learn.microsoft.com/dotnet/standard/exceptions/how-to-explicitly-throw-exceptions](/dotnet/standard/exceptions/how-to-explicitly-throw-exceptions).
 
 - You can find additional information about using specific exceptions here: [https://learn.microsoft.com/dotnet/standard/exceptions/how-to-use-specific-exceptions-in-a-catch-block](/dotnet/standard/exceptions/how-to-use-specific-exceptions-in-a-catch-block).
+
+## Get a free verified certification
+
+Microsoft and freeCodeCamp.org offer a training and certification combo on foundational C#. By completing this Learn module, you've already started. Explore freeCodeCamp's Foundational C# with Microsoft certification here: [https://aka.ms/csharp-certification](https://aka.ms/csharp-certification).

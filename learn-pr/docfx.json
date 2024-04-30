@@ -332,6 +332,19 @@
                 "dest": "./modules/partner-center/"
             },
             {
+                "src": "philanthropies",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "pwa",
                 "files": [
                     "**/*.yml",

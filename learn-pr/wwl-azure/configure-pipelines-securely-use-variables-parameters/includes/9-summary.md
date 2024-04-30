@@ -10,9 +10,9 @@ You learned how to:
 
 ## Learn more
 
-- [Security through templates.](https://learn.microsoft.com/azure/devops/pipelines/security/templates)
-- [Template types & usage.](https://learn.microsoft.com/azure/devops/pipelines/process/templates/)
-- [Securing Azure Pipelines.](https://learn.microsoft.com/azure/devops/pipelines/security/overview/)
-- [Set secret variables.](https://learn.microsoft.com/azure/devops/pipelines/process/set-secret-variables)
-- [How to securely use variables and parameters in your pipeline.](https://learn.microsoft.com/azure/devops/pipelines/security/inputs/)
-- [Plan how to secure your YAML pipelines.](https://learn.microsoft.com/azure/devops/pipelines/security/approach/)
+- [Security through templates.](/azure/devops/pipelines/security/templates)
+- [Template types & usage.](/azure/devops/pipelines/process/templates/)
+- [Securing Azure Pipelines.](/azure/devops/pipelines/security/overview/)
+- [Set secret variables.](/azure/devops/pipelines/process/set-secret-variables)
+- [How to securely use variables and parameters in your pipeline.](/azure/devops/pipelines/security/inputs/)
+- [Plan how to secure your YAML pipelines.](/azure/devops/pipelines/security/approach/)

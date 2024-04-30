@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.finetune-foundation-model-with-azure-machine-learning.summary
-title: |
-  Summary
+title: Summary
 metadata:
-  title: |
-    Summary
+  title: Summary
   description: "Summary of fine-tuning foundation models."
   ms.date: 7/18/2023
   author: madiepev

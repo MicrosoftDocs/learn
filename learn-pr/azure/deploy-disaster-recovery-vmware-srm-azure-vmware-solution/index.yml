@@ -31,7 +31,7 @@ roles:
 products:
   - azure-vmware-solution
 subjects:
-- business-continuity
+- site-reliability-engineering
 - data-engineering
 units:
 - learn.azure.deploy-disaster-recovery-vmware-srm-azure-vmware-solution.1-introduction

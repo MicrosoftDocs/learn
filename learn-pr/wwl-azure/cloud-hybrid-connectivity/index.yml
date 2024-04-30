@@ -6,7 +6,7 @@ metadata:
   ms.date: 04/27/2023
   author: fabianomira
   ms.author: famira
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure
 title: Troubleshoot cloud and hybrid connectivity in Microsoft Azure
 summary: Troubleshooting cloud and hybrid connectivity includes Microsoft ExpressRoute, Azure virtual networks, and Azure Virtual WAN. This module enables you to manage and troubleshoot different network configurations to support your organization’s needs.

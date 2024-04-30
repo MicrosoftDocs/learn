@@ -78,12 +78,11 @@ Complete the following steps to create the GitHub Actions build action:
     az acr repository show-tags -n AZURE_CONTAINER_REGISTRY --repository productservice --orderby time_desc --output table
     ```
 
-    Replacing the AZURE_CONTAINER_REGISTRY with the name of your ACR, you should see output similar to the following:
+    Replacing the **AZURE_CONTAINER_REGISTRY** with the name of your ACR, you should see output similar to the following:
 
     ```bash
     Result
     ----------------------------------------
-    ad61add98f1ae99ae432c4bfd321208224cc5590
     v1
     ```
 
@@ -118,6 +117,5 @@ To view the real-time progress of the build:
     Result
     ----------------------------------------
     8c75edb7a349ec570bd4eac397015bc3c547186e
-    ad61add98f1ae99ae432c4bfd321208224cc5590
     v1
     ```

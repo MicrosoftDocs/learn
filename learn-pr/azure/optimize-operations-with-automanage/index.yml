@@ -28,7 +28,7 @@ roles:
   - solution-architect
 products:
 - azure-arc
-- azure-automanage
+- azure
 subjects:
   - cloud-computing
 units:

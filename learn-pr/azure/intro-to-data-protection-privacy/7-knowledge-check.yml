@@ -1,20 +1,19 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.introduction-data-protection-privacy.7-knowledge-check
+title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 03/24/2021
-  author: cwatson-cat
-  ms.author: cwatson
+  ms.date: 07/27/2023
+  author: TerryLanfear
+  ms.author: terrylan
   ms.topic: unit
-title: Knowledge check
 durationInMinutes: 4
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
-
   - content: "What kind of data do privacy regulations primarily focus on?"
     choices:
     - content: "Business data."
@@ -26,8 +25,6 @@ quiz:
     - content: "Personal data."
       isCorrect: true
       explanation: "Privacy regulations primarily deal with the collection, use, and protection of personal data and sensitive personal data."
-
-
   - content: "What is the CCPA?"
     choices:
     - content: "A data protection policy."
@@ -39,8 +36,6 @@ quiz:
     - content: "A data encryption policy."
       isCorrect: false
       explanation: "The CCPA is a privacy law, not an encryption policy."
-
-
   - content: "What is a processor in privacy regulations?"
     choices:
     - content: "A person, public authority, agency, or other body that alone or jointly with others, determines the purposes and means of processing personal data."
@@ -52,7 +47,6 @@ quiz:
     - content: "A natural or legal person, public authority, agency, or other body that processes personal data on behalf of a controller."
       isCorrect: true
       explanation: "A processor processes personal data on behalf of a controller."
-
   - content: "Which of the following concepts isn't a key principle that Microsoft follows when dealing with customer data?"
     choices:
     - content: "Control."
@@ -64,7 +58,6 @@ quiz:
     - content: "Sharing."
       isCorrect: true
       explanation: "Microsoft's key principles for dealing with customer data are control, transparency, security, legal protection, no content-based targeting, and customer benefit."
-
   - content: "Which Microsoft resource can help an administrator learn how Microsoft implements and supports security, privacy, compliance, and transparency in its cloud products and services?"
     choices:
     - content: "Azure Blueprints."

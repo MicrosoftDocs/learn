@@ -4,13 +4,17 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/28/2021
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
+  ms.custom:
+  - N/A
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
+content: |
+  [!include[](includes/5-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -41,7 +45,7 @@ quiz:
     - content: "In case of a failure of Direct I/O, it provides connectivity to a target volume via SMB 3.x."
       isCorrect: false
       explanation: "That's incorrect. Both block-level and file system redirection use SMB 3.x."
-    - content: "It is considerably faster."
+    - content: "It's considerably faster."
       isCorrect: true
       explanation: "That's correct. The block level redirection bypasses the NTFS or ReFS stack on the owner node, similarly, to Direct I/O, which significantly improves their performance."
     - content: "In case of a failure of Direct I/O, it can use SMB Direct to enhance performance of a connection to a target volume."

@@ -1,4 +1,4 @@
-[!include[](../../../includes/dotnet6-sdk-version.md)]
+[!include[](../../../includes/dotnet8-sdk-version.md)]
 
 ## Create and explore a web API project
 
@@ -13,10 +13,10 @@ To set up a .NET project to work with the web API, we use Visual Studio Code. Vi
 1. In the terminal window, copy and paste the following command:
 
     ```dotnetcli
-    dotnet new webapi -f net6.0
+    dotnet new webapi -controllers -f net8.0
     ```
 
-    This command creates the files for a basic web API project that uses controllers, along with a C# project file named *ContosoPizza.csproj* that returns a list of weather forecasts. If you get an error, ensure that you have the [.NET 6 SDK](https://dotnet.microsoft.com/download) installed.
+    This command creates the files for a basic web API project that uses controllers, along with a C# project file named *ContosoPizza.csproj* that returns a list of weather forecasts. If you get an error, ensure that you have the [.NET 8 SDK](https://dotnet.microsoft.com/download) installed.
 
     > [!IMPORTANT]
     > Web API projects are secured with `https` by default. If you have problems, [configure the ASP.NET Core HTTPS development certificate](/aspnet/core/security/enforcing-ssl#trust-the-aspnet-core-https-development-certificate-on-windows-and-macos).
@@ -34,6 +34,7 @@ To set up a .NET project to work with the web API, we use Visual Studio Code. Vi
     -| appsettings.Development.json
     -| appsettings.json
     -| ContosoPizza.csproj
+    -| ConosoPizza.http
     -| Program.cs
     -| WeatherForecast.cs
     ```
@@ -44,7 +45,8 @@ To set up a .NET project to work with the web API, we use Visual Studio Code. Vi
     |----------------------------------------------|-----------------------------------------------------------------|
     | *:::no-loc text="Controllers/":::*           | Contains classes with public methods exposed as HTTP endpoints. |
     | *:::no-loc text="Program.cs":::*             | Configures services and the app's HTTP request pipeline, and contains the app's managed entry point.   |
-    | *:::no-loc text="ContosoPizza.csproj":::* | Contains configuration metadata for the project.                   |
+    | *:::no-loc text="ContosoPizza.csproj":::*    | Contains configuration metadata for the project.                   |
+    | *:::no-loc text="ConosoPizza.http":::*       | Contains configuration to test REST APIs directly from Visual Studio Code.                   |
 
 ## Build and test the web API
 
@@ -107,6 +109,46 @@ To set up a .NET project to work with the web API, we use Visual Studio Code. Vi
         // ...
     ]
     ```
+
+## Explore with .http files
+
+Included in the project is **ContosoPizza.http**, a file that is used to test API endpoints through a standard format. .http files are supported in several IDEs including Visual Studio and inside of Visual Studio Code with the REST Client extension installed.
+
+1. Open the ContosoPizza.http file.
+
+    This file has been pre-configured with the **@ContosoPizza_HostAddress** variables and a **GET** command calling **/weatherforecast/** that accepts **application/json**.
+
+1. Select the **Sent Request** command above the **GET** which will send a request to the running service.
+
+    Calling this command will open a response window with output similar to what we saw in the browser:
+
+    ```output
+    HTTP/1.1 200 OK
+    Connection: close
+    Content-Type: application/json; charset=utf-8
+    Date: Wed, 17 Jan 2024 16:46:40 GMT
+    Server: Kestrel
+    Transfer-Encoding: chunked
+
+    [
+        {
+            "date": "2024-01-18",
+            "temperatureC": -2,
+            "temperatureF": 29,
+            "summary": "Warm"
+        },
+        {
+            "date": "2024-01-19",
+            "temperatureC": 24,
+            "temperatureF": 75,
+            "summary": "Chilly"
+        },
+        // ..
+    ]
+    ```
+
+
+## Optional: Explore APIs with Command Line HTTP REPL
 
 1. Open a new integrated terminal from Visual Studio Code by selecting **Terminal** > **New Terminal** from the main menu, then run the following command:
 

@@ -37,9 +37,9 @@ We won't discuss certificates in this module. However, if you work with a servic
 When you create a service principal, you generally ask Azure to create a key at the same time. Azure typically generates a random key for you.
 
 > [!NOTE]
-> Do you remember our earlier discussion on how service principals work? Keys are stored as part of the application registration object. If you open the Azure portal, look within the Microsoft Entra configuration, and then go to the application registrations, you can create and delete keys there too.
+> Remember our earlier discussion about how service principals work? Keys are stored as part of the application registration object. If you open the Azure portal, look within the Microsoft Entra configuration, and then go to the application registrations, you can create and delete keys there too.
 
-Azure shows you the key when you create the service principal. This is the only time that Azure will ever show you the key. After that, you can't get it anymore. It's important that you securely copy the key so you can use it when you configure your pipeline. Don't share the key by email or another non-secure means. If you lose the key, you must delete it and create a new one.
+Azure shows you the key when you create the service principal. This is the only time that Azure will ever show you the key. After that, you can't retrieve it anymore. It's important that you securely copy the key so you can use it when you configure your pipeline. Don't share the key by email or another non-secure means. If you lose a key, you must delete it and create a new one.
 
 ## Manage service principals for Azure Pipelines
 
@@ -48,7 +48,7 @@ When you create a key for a pipeline's service principal, it's a good idea to im
 Pipeline tools include secure ways to specify your service principal's application ID and key. Never store credentials of any kind in source control. Instead, use *service connections* when you work with Azure Pipelines. In this module, we only discuss how to create a service principal and key. You'll learn how to configure your pipeline with the key in a later module.
 
 > [!TIP]
-> Azure Pipelines can create service principals for you automatically. In this module, you'll manually create and manage your service principals so you have a better understanding of what's happening. In other modules, you'll use the automatic creation method for simplicity.
+> Azure Pipelines can create service principals for you automatically. In this module, you'll manually create and manage your service principals to gain a better understanding of what's happening. In other modules, you'll use the automatic creation method for simplicity.
 
 ## Create a service principal and key
 
@@ -57,9 +57,9 @@ Pipeline tools include secure ways to specify your service principal's applicati
 You can use the Azure CLI to create and manage service principals.
 
 > [!NOTE]
-> Creating and modifying service principals requires that you have permissions in Microsoft Entra ID. In some organizations, you might need an administrator to perform these steps for you.
+> Creating and modifying service principals requires that you have the related permissions in Microsoft Entra ID. In some organizations, you might need an administrator to perform these steps for you.
 
-To create a service principal and a key, use the `az ad sp create-for-rbac` command. The command accepts several arguments and can optionally assign roles to the service principal. You'll learn about this subject later in this module. For now, here's an example that illustrates how to create a service principal without any Azure role assignments:
+To create a service principal and a key, use the `az ad sp create-for-rbac` command. This command accepts several arguments and can optionally assign roles to the service principal. You'll learn about this subject later in this module. For now, here's an example that illustrates how to create a service principal without any Azure role assignments:
 
 ```azurecli
 az ad sp create-for-rbac --name MyPipeline
@@ -77,9 +77,9 @@ When you run this command, the Azure CLI returns a JSON response with a `passwor
 You can use the Azure PowerShell cmdlets to create and manage service principals.
 
 > [!NOTE]
-> Creating and modifying service principals requires that you have permissions in Microsoft Entra ID. In some organizations, you might need an administrator to perform these steps for you.
+> Creating and modifying service principals requires that you have the related permissions in Microsoft Entra ID. In some organizations, you might need an administrator to perform these steps for you.
 
-To create a service principal and a key, use the `New-AzADServicePrincipal` cmdlet. The command accepts several arguments and can optionally assign roles to the service principal. You'll learn about this subject later in this module. For now, here's an example that illustrates how to create a service principal without any Azure role assignments:
+To create a service principal and a key, use the `New-AzADServicePrincipal` cmdlet. This cmdlet accepts several arguments and can optionally assign roles to the service principal. You'll learn about this subject later in this module. For now, here's an example that illustrates how to create a service principal without any Azure role assignments:
 
 ```azurepowershell
 $servicePrincipal = New-AzADServicePrincipal -DisplayName MyPipeline
@@ -103,7 +103,7 @@ You can't get this key again, so be sure to use it immediately or save it somewh
 Service principals have several identifiers and names that you use to identify and work with them. The identifiers that you use the most are:
 
 - **Application ID**: The application registration has a unique identifier, often called an _application ID_ or sometimes a _client ID_. You typically use it as the username when the service principal signs in to Azure.
-- **Object ID**: The application registration and the service principal have their own separate object IDs, which are unique identifiers assigned by Microsoft Entra ID. Occasionally, you need to use these object IDs when you manage a service principal.
+- **Object ID**: The application registration and the service principal have their own separate object IDs, which are unique identifiers assigned by Microsoft Entra ID. Occasionally, you'll need to use these object IDs when you manage a service principal.
 - **Display name**: This is a human-readable name that describes the service principal.
 
 > [!TIP]
@@ -126,10 +126,10 @@ Service principals don't expire, but their keys do. When you create a key, you c
 To reset a key for a service principal, use the `az ad sp` command with the application ID, as in this example:
 
 ```azurecli
-az ad sp credential reset --name "b585b740-942d-44e9-9126-f1181c95d497"
+az ad sp credential reset --id "b585b740-942d-44e9-9126-f1181c95d497"
 ```
 
-You can also remove and re-create the service principal's key in two separate steps by using the `az ad sp credential delete` and `az ad sp credential reset --append` commands.
+You can also remove and re-create the service principal's key in two separate steps by using the `az ad sp credential delete` and then the `az ad sp credential reset --append` commands.
 
 ::: zone-end
 
@@ -138,10 +138,11 @@ You can also remove and re-create the service principal's key in two separate st
 To reset a key for a service principal, first use the `Remove-AzADServicePrincipalCredential` cmdlet to remove the existing credential. Then use the `New-AzADServicePrincipalCredential` cmdlet to add a new credential. These cmdlets both use the service principal's object ID to identify it. Before you use the cmdlets, you need to obtain this ID from the application ID:
 
 ```azurepowershell
-$applicationId = 'b585b740-942d-44e9-9126-f1181c95d497'
+$applicationId = APPLICATION_ID
 $servicePrincipalObjectId = (Get-AzADServicePrincipal -ApplicationId $applicationId).Id
 
 Remove-AzADServicePrincipalCredential -ObjectId $servicePrincipalObjectId
+
 $newCredential = New-AzADServicePrincipalCredential -ObjectId $servicePrincipalObjectId
 $newKey = $newCredential.SecretText
 ```
@@ -160,7 +161,7 @@ Service principals aren't removed automatically, so you need to audit and remove
 It's a good practice to document your service principals in a place that you and your team can easily access. You should include the following information for each service principal:
 
 > [!div class="checklist"]
-> * Key identifying information, like its name and application ID.
+> * Essential identifying information, including its name and application ID.
 > * The purpose of the service principal.
 > * Who created it, who's responsible for managing it and its keys, and who might have answers if there's a problem.
 > * The permissions that it needs, and a clear justification for why it needs them.

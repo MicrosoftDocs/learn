@@ -48,7 +48,7 @@ Microsoft Entra Connect Health for Active Directory Federation Services (AD FS) 
 1.  Open the **Server** blade from the **Server List** blade by selecting the server name to be removed.
 2.  On the **Server** blade, from the action bar, click **Delete**.
     
-    :::image type="content" source="../media/delete-server-2-1e9e75dc.png" alt-text="Screenshot of Microsoft Entra Connect Health delete server.  Only keep servers that are active.":::
+    :::image type="content" source="../media/delete-server-2-1e9e75dc.png" alt-text="Screenshot of Microsoft Entra Connect Health delete server. Only keep servers that are active.":::
     
 3.  Confirm by typing the server name in the confirmation box.
 4.  Click **Delete**.
@@ -77,7 +77,7 @@ When you're deleting a service instance, be aware of the following:
 1.  Open the **Service** blade from the **Service List** blade by selecting the service identifier (farm name) that you want to remove.
 2.  On the **Service** blade, from the action bar, click **Delete**.
     
-    :::image type="content" source="../media/delete-server-9ebbd5de.png" alt-text="Screenshot of Microsoft Entra Connect Health delete service.  Remove unwanted services.":::
+    :::image type="content" source="../media/delete-server-9ebbd5de.png" alt-text="Screenshot of Microsoft Entra Connect Health delete service. Remove unwanted services.":::
     
 3.  Confirm by typing the service name in the confirmation box (for example: sts.contoso.com).
 4.  Click **Delete**.
@@ -119,7 +119,7 @@ To allow a user access at the *all service instances* level within Microsoft Ent
 
 1.  From the **Configure** section, click **Users**.
     
-    :::image type="content" source="../media/start-role-based-access-control-7a8afaa9.png" alt-text="Screenshot of Microsoft Entra Connect Health resource sidebar.  Add the users you need.":::
+    :::image type="content" source="../media/start-role-based-access-control-7a8afaa9.png" alt-text="Screenshot of Microsoft Entra Connect Health resource sidebar. Add the users you need.":::
     
 2.  Select **Add**.
 3.  In the **Select a role** pane, select a role (for example, **Owner**).
@@ -171,7 +171,7 @@ Taking one step farther to highlight sync errors, Microsoft Entra Connect Health
 
 When **QuarantinedAttributeValueMustBeUnique** and **AttributeValueMustBeUnique** sync errors happen, it's common to see a **UserPrincipalName** or **Proxy Addresses** conflict in Microsoft Entra ID. You might solve the sync errors by updating the conflicting source object from the on-premises side. The sync error will be resolved after the next sync. For example, this image indicates that two users have a conflict of their **UserPrincipalName**. Both are **Joe.J@contoso.com**. The conflicting objects are quarantined in Microsoft Entra ID.
 
-:::image type="content" source="../media/identity-fix-common-case-526debc8.png" alt-text="Diagram of the Diagnose sync error common scenarios.  Most likely place to see errors.":::
+:::image type="content" source="../media/identity-fix-common-case-526debc8.png" alt-text="Diagram of the Diagnose sync error common scenarios. Most likely place to see errors.":::
 
 
 ### Orphaned object scenario
@@ -182,7 +182,7 @@ When an existing user is a cloud-only object, you can also see the conflicting u
 
 As an example, the existing object in Microsoft Entra ID preserves the license of Joe. A newly synchronized object with a different **Source Anchor** occurs in a duplicated attribute state in Microsoft Entra ID. Changes for Joe in on-premises Active Directory won't be applied to Joe’s original user (existing object) in Microsoft Entra ID.
 
-:::image type="content" source="../media/identity-fix-orphaned-case-9d4eccc4.png" alt-text="Screenshot of the Diagnose sync error orphaned object scenario.  Track down objects that are orphaned.":::
+:::image type="content" source="../media/identity-fix-orphaned-case-9d4eccc4.png" alt-text="Screenshot of the Diagnose sync error orphaned object scenario. Track down objects that are orphaned.":::
 
 
 ## Diagnostic and troubleshooting steps in Connect Health
@@ -201,7 +201,7 @@ The diagnose feature supports user objects with the following duplicated attribu
 
 Follow the steps from the Azure portal to narrow down the sync error details and provide more specific solutions:
 
-:::image type="content" source="../media/identity-fix-steps-93d07aa5.png" alt-text="Digram of the Sync error diagnosis steps.  Use these steps to reach a resolution.":::
+:::image type="content" source="../media/identity-fix-steps-93d07aa5.png" alt-text="Digram of the Sync error diagnosis steps. Use these steps to reach a resolution.":::
 
 
 From the Azure portal, take a few steps to identify specific fixable scenarios:

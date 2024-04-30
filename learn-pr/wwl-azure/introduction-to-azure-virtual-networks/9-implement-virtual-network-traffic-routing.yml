@@ -4,17 +4,17 @@ title: Implement virtual network traffic routing
 metadata:
   title: Implement virtual network traffic routing
   description: "Implement virtual network traffic routing"
-  ms.date: 08/16/2023
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 16
 content: |
   [!include[](includes/9-implement-virtual-network-traffic-routing.md)]
 quiz:
-  title: ""
+  title: "Check your knowledge"
   questions:
   - content: "What type of routes enable traffic to override routes that Azure configures?"
     choices:

@@ -32,8 +32,6 @@ roles:
   - data-scientist
 products: 
   - azure
-subjects: 
-  - data-ai
 units:
 - learn.make-recommendations-ai-personalizer.introduction
 - learn.make-recommendations-ai-personalize.create-ai-personalizer-resource

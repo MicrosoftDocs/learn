@@ -7,9 +7,8 @@ metadata:
   ms.date: 8/23/2023
   author: abrilurena
   ms.author: abrilu
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom: devx-track-js
-  ms.prod: github
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

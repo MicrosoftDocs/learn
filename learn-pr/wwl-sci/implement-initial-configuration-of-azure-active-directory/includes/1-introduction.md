@@ -4,11 +4,12 @@ In this module, you learn how to configure and manage a Microsoft Entra tenant. 
 
 In this module, you will:
 
+ -  Company branding
  -  Configure and manage Microsoft Entra roles.
- -  Configure and manage custom domains.
- -  Evaluate permissions based on role assignments and settings.
  -  Configure delegation by using administrative units.
- -  Configure tenant-wide settings.
+ -  Configure and manage custom domains.<br>
+ -  Evaluate permissions based on role assignments and settings.
+ -  Configure tenant-wide settings.<br>
 
 ## Prerequisites
 

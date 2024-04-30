@@ -23,7 +23,7 @@ The following table describes the Azure Firewall policy rule collections and set
 
 First you must decide which rules you need to manage your traffic. Then you use Firewall Manager to create and configure Azure Firewall policies containing these rules, as the following graphic depicts.
 
-:::image type="content" source="../media/threat-intelligence.png" alt-text="Screenshot of the Threat Intelligence settings in the Azure portal within a Firewall Policy called ContosoFirewallPolicy.":::
+:::image type="content" source="../media/threat-intelligence.png" alt-text="Screenshot of the Threat Intelligence blade in the Azure portal within a Firewall Policy." lightbox="../media/threat-intelligence.png":::
 
 ### How rules are processed
 
@@ -60,4 +60,5 @@ Firewall Manager enables you to:
 
 In the following graphic, an administrator is deploying a firewall with a firewall policy for an existing virtual network.
 
-:::image type="content" source="../media/deploy-firewall.png" alt-text="Screenshot of the Virtual networks screen in Firewall Manager. The administrator has selected an existing virtual network.":::
+:::image type="content" source="../media/deploy-firewall.png" alt-text="Screenshot of the Virtual networks blade in Firewall Manager. The administrator selected an existing virtual network." lightbox="../media/deploy-firewall.png":::
+

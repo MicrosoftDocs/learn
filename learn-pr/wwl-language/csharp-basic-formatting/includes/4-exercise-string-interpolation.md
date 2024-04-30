@@ -1,3 +1,6 @@
+
+
+
 While string concatenation is simple and convenient, *string interpolation* is growing in popularity in situations where you need to combine many literal strings and variables into a single formatted message.
 
 ## What is string interpolation?
@@ -102,4 +105,3 @@ Here's what you've learned about string interpolation so far:
 
 - String interpolation provides an improvement over string concatenation by reducing the number of characters required in some situations.
 - You can combine string interpolation and verbatim literals by combining the symbols for each and using that as a prefix for the string template.
-

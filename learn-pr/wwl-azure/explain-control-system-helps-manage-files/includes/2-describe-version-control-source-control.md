@@ -1,4 +1,3 @@
-
 Version control and source control are two similar concepts that work together to ensure you’re working on the correct version of a file. They work together to make managing files easy and consistent.
 
 ## What is version control?

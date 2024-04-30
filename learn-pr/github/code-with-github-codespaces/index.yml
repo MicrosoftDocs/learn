@@ -8,7 +8,6 @@ metadata:
   author: a-a-ron
   ms.author: aastewar
   ms.topic: module-standard-task-based
-  ms.prod: github
 summary: >
   GitHub Codespaces is a fully configured development environment hosted in the cloud.  By using GitHub Codespaces, your workspace, along with all of your configured development environments, is available from any computer with access to the internet. 
 abstract: |

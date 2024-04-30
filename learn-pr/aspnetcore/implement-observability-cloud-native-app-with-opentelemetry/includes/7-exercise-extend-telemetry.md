@@ -1,16 +1,16 @@
-The current **:::no-loc text="eShopLite":::** app is using the default telemetry provided by OpenTelemetry. You can extend the telemetry by adding custom metrics and custom attributes to the telemetry data. This allows you to add more context to the telemetry data, and to create more powerful queries in Application Insights.
+The current **:::no-loc text="eShopLite":::** app is using the default telemetry provided by OpenTelemetry. You can extend the telemetry by adding custom metrics and custom attributes to the telemetry data. This capability allows you to add more context to the telemetry data and to create more powerful queries in Application Insights.
 
-In this exercise, you'll add new metrics to apps, and see how to view them in your observability apps.
+In this exercise, you add new metrics to apps and see how to view them in your observability apps.
 
 ## Create a custom metric
 
-You'd like to have greater visibility of how the stock is changed over time. You'll create a custom metric to track this.
+You want to have greater visibility of how a stock changes over time, so you create a custom metric.
 
-1. In Visual Studio Code, in the **EXPLORER** pane, right-click the **Products** folder, then select **New File**.
+1. In Visual Studio Code, on the **EXPLORER** pane, right-click the *Products* folder and then select **New File**.
 
 1. In the **File name** field, enter **ProductsMetrics.cs**.
 
-1. In the text editor, replace the code with this:
+1. In the text editor, replace the code with this example:
 
     ```csharp
     using System;
@@ -34,10 +34,10 @@ You'd like to have greater visibility of how the stock is changed over time. You
     }
     ```
 
-    The above code creates a new metric called `eshoplite.products.stock_change`. This metric tracks the amount of stock being changed through the product service.
+    The preceding code creates a new metric called `eshoplite.products.stock_change`. This metric tracks the amount of stock being changed through the product service.
 
-1. Press <kbd>CTRL</kbd>+<kbd>S</kbd> to save the file.
-1. In the **EXPLORER** pane, in the **Products** folder, select **Program.cs**.
+1. Select <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file.
+1. On the **EXPLORER** pane, in the *Products* folder, select **Program.cs**.
 1. Replace the `AddObservability` code with this code:
 
     ```csharp
@@ -47,10 +47,10 @@ You'd like to have greater visibility of how the stock is changed over time. You
     builder.Services.AddSingleton<ProductsMetrics>();
     ```
 
-    This adds the `ProductsMetrics` class to the dependency injection container.
+    This code adds the `ProductsMetrics` class to the dependency injection container.
 
-1. Press <kbd>CTRL</kbd>+<kbd>S</kbd> to save the file.
-1. In the **EXPLORER** pane, in the **Products** folder, expand the **Endpoint** folder, and then select **ProductEndpoints.cs**.
+1. Select <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file.
+1. On the **EXPLORER** pane, in the *Products* folder, expand the *Endpoint* folder and then select **ProductEndpoints.cs**.
 1. Replace the existing stock update `MapPut` endpoint with this code:
 
       ```csharp
@@ -71,13 +71,13 @@ You'd like to have greater visibility of how the stock is changed over time. You
 
       You use dependency injection to add the `ProductsMetrics` class to the endpoint. You're then calling the `StockChange` method to increment the metric with the new stock amount.
 
-1. Press <kbd>CTRL</kbd>+<kbd>S</kbd> to save the file.
+1. Select <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file.
 
 ## Add the metric to OpenTelemetry
 
-You'll now add the metric to OpenTelemetry, so that it can be exported to your observability tools.
+You now add the metric to OpenTelemetry so that it can be exported to your observability tools.
 
-1. In the **EXPLORER** pane, in the **Diagnostics** folder, select **DiagnosticServiceCollectionExtensions**.
+1. On the **EXPLORER** pane, in the *Diagnostics* folder, select **DiagnosticServiceCollectionExtensions**.
 1. Change the `AddObservability` method to accept a new parameter:
 
     ```csharp
@@ -102,30 +102,38 @@ You'll now add the metric to OpenTelemetry, so that it can be exported to your o
     }
     ```
 
-1. Press <kbd>CTRL</kbd>+<kbd>S</kbd> to save the file.
+1. Select <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file.
 
 ## View the new metric in Prometheus
 
-1. In the **TERMINAL** pane at the bottom, go to the **dotnet-observability** folder.
+1. On the **TERMINAL** pane at the bottom, go to the *dotnet-observability/eShopLite* folder.
 
     ```bash
-    cd ..\.. 
+    cd ..
     ```
 
-1. Start the app with Docker:
+1. Update the apps containers.
+
+    ```dotnetcli
+    dotnet publish /p:PublishProfile=DefaultContainer 
+    ```
+
+1. Go to the *dotnet-observability* folder, and start the app with Docker:
 
     ```bash
-    docker-compose build
-    docker-compose up
+    cd ..
+    docker compose up
     ```
 
-1. Open the **:::no-loc text="eShopLite":::** app in a browser at **http://localhost:32000**.
-1. Go to the **Products** page, and change the stock amount on several products.
-1. Open the **Prometheus** dashboard at **http://localhost:9090**.
-1. In the search box, enter the`eshoplite_products_stock_change_total` metric, then select **Execute**. 
+1. Open the **:::no-loc text="eShopLite":::** app in a browser at `http://localhost:32000`.
+1. Go to the **Products** page and change the stock amount on several products.
+1. Open the **Prometheus** dashboard at `http://localhost:9090`.
+1. In the search box, enter the`eshoplite_products_stock_change_total` metric and then select **Execute**.
 
-    You should see it listed in a table. 
+    You should see it listed in a table.
 
 1. Select the **Graph** tab. You should see the stock amount change over time.
 
-    :::image type="content" source="../media/new-metric.png" alt-text="A screenshot of Prometheus showing the new custom metric on a graph."  lightbox="../media/new-metric.png":::
+    :::image type="content" source="../media/new-metric.png" alt-text="Screenshot that shows Prometheus showing the new custom metric on a graph."  lightbox="../media/new-metric.png":::
+
+1. On the **TERMINAL** pane, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the app.

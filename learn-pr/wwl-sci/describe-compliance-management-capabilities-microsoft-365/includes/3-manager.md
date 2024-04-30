@@ -49,8 +49,4 @@ Compliance Manager provides many benefits, including:
 - Providing step-by-step guidance on how to implement the solutions to meet regulatory requirements.
 - Helping admins and users to prioritize actions that will have the highest impact on their organizational compliance by associating a score with each action.
 
-### Interactive guide
-
-In this interactive guide, you’ll explore Compliance Manager. Select the image that follows to get started and follow the prompts on the screen.
-
-[![Interactive guide - Explore Compliance Manager](../media/5-compliance-manager-interactive-guide.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/explore-compliance-manager/index.html?azure-portal=true)
+In summary, Compliance Manager helps organizations measure progress in completing actions that help reduce risks around data protection and regulatory standards.

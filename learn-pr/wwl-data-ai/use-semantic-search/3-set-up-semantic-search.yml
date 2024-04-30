@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.use-semantic-search.set-up-semantic-search
-title: Set up semantic search
+title: Set up semantic ranking
 metadata:
-  title: Set up semantic search
-  description: "Learn how to set up semantic search."
+  title: Set up semantic ranking
+  description: "Learn how to set up semantic ranking."
   ms.date: 9/29/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.service: cognitive-search
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/3-set-up-semantic-search.md)]

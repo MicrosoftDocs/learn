@@ -7,7 +7,7 @@ metadata:
   ms.date: 07/18/2023
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/4-administer-windows-365.md)]

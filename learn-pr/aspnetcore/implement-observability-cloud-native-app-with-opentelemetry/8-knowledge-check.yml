@@ -17,23 +17,23 @@ quiz:
     choices:
     - content: "Debugging, logging, and tracing"
       isCorrect: false
-      explanation: "That's not correct. Debugging, logging, and tracing aren't the three pillars of observability."
+      explanation: "Incorrect. Debugging, logging, and tracing aren't the three pillars of observability."
     - content: "Logs, tracking, and metrics"
       isCorrect: false
-      explanation: "That's not correct. Logs, tracking, and metrics aren't the three pillars of observability."
+      explanation: "Incorrect. Logs, tracking, and metrics aren't the three pillars of observability."
     - content: "Logs, metrics, and distributed tracing"
       isCorrect: true
-      explanation: "That's correct. Logs, metrics, and distributed tracing are the three pillars of observability."
+      explanation: "Correct. Logs, metrics, and distributed tracing are the three pillars of observability."
   - content: "Which of the following apps lets you view distributed tracing data?"
     choices:
     - content: "Prometheus"
       isCorrect: false
-      explanation: "That's not correct. Prometheus is a metrics app."
+      explanation: "Incorrect. Prometheus is a metrics app."
     - content: "Zipkin or Jaeger"
       isCorrect: true
-      explanation: "That's correct. Zipkin and Jaeger are both distributed tracing apps."
+      explanation: "Correct. Zipkin and Jaeger are both distributed tracing apps."
     - content: "Grafana"
       isCorrect: false
-      explanation: "That's not correct. Grafana is a metrics app."
+      explanation: "Incorrect. Grafana is a metrics app."
        
 

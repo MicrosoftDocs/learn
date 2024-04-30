@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Check your knowledge of using your own data with Azure OpenAI."
-  ms.date: 7/11/2023
+  ms.date: 2/21/2024
   author: ivorb
   ms.author: berryivor
   ms.topic: unit
@@ -12,7 +12,7 @@ durationInMinutes: 2
 content: |
 quiz:
   questions:
-  - content: "What does Azure OpenAI on your data enable developers to do?"
+  - content: "What does RAG with Azure OpenAI enable developers to do?"
     choices:
     - content: "Create their own AI chat models"
       isCorrect: false
@@ -28,13 +28,13 @@ quiz:
     - content: "Using any data source option available for Azure OpenAI on your data."
       isCorrect: false
       explanation: "Incorrect. Using any data source option may not yield the best results."
-    - content: "Using Azure AI Studio to create the search resource and index."
+    - content: "Using Azure OpenAI Studio to create the search resource and index."
       isCorrect: true
-      explanation: "Correct. Using Azure AI Studio allows the appropriate chunking to happen when inserting into the index, yielding better responses."
-    - content: "Connecting to files in a storage account without using Azure AI Studio."
+      explanation: "Correct. Using Azure OpenAI Studio allows the appropriate chunking to happen when inserting into the index, yielding better responses."
+    - content: "Connecting to files in a storage account without using Azure OpenAI Studio."
       isCorrect: false
-      explanation: "Incorrect. Connecting to files without using Azure AI Studio may not yield the best results."
-  - content: "What are some recommended prompt engineering techniques when using Azure OpenAI on your own data?"
+      explanation: "Incorrect. Connecting to files without using Azure OpenAI Studio may not yield the best results."
+  - content: "What are some recommended prompt engineering techniques when using RAG with Azure OpenAI on your own data?"
     choices:
     - content: "Break down the task and use chain of thought prompting."
       isCorrect: true

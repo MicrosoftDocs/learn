@@ -9,7 +9,7 @@ Here, you'll look at the Network Watcher tool categories, the tools in each cate
 Network Watcher is an Azure service that combines tools in a central place to diagnose the health of Azure networks. The Network Watcher tools are divided into three categories:
 
 - Monitoring tools
-- Network Diagnostic tools
+- Network diagnostic tools
 - Traffic logging tools
 
 With tools to monitor for and diagnose problems, Network Watcher gives you a centralized hub for identifying network glitches, CPU spikes, connectivity problems, memory leaks, and other issues before they affect your business.

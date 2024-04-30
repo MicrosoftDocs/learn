@@ -1,6 +1,6 @@
-Training and evaluating your model is an iterative process of adding data and labels to your training dataset to teach the model more accurately. To know what types of data and labels need to be improved, Azure AI Language Studio provides scoring in the **View model details** page on the left hand pane.
+Training and evaluating your model is an iterative process of adding data and labels to your training dataset to teach the model more accurately. To know what types of data and labels need to be improved, Language Studio provides scoring in the **View model details** page on the left hand pane.
 
-![Screenshot of the View model scoring tab.](../media/model-scoring.png#lightbox)
+:::image type="content" source="../media/model-scoring-new.png" alt-text="Screenshot of the View model scoring tab." lightbox="../media/model-scoring-new.png":::
 
 Individual entities and your overall model score are broken down into three metrics to explain how they're performing and where they need to improve.
 
@@ -24,6 +24,6 @@ If precision is high but recall is low, it means that the model doesn't always r
 
 On the same **View model details** page, there's another tab on the top for the *Confusion matrix*. This view provides a visual table of all the entities and how each performed, giving a complete view of the model and where it's falling short.
 
-![Screenshot of a sample confusion matrix.](../media/model-confusion-matrix.png#lightbox)
+:::image type="content" source="../media/model-confusion-matrix-new.png" alt-text="Screenshot of a sample confusion matrix." lightbox="../media/model-confusion-matrix-new.png":::
 
 The confusion matrix allows you to visually identify where to add data to improve your model's performance.

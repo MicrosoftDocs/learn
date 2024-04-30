@@ -34,8 +34,6 @@ roles:
 - developer
 products:
 - azure
-subjects:
-- development-tools
 modules:
 - learn.language.typescript-get-started
 - learn.language.typescript-declare-variable-types

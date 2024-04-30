@@ -4,10 +4,12 @@ title: Azure Key Vault soft delete overview
 metadata:
   title: Azure Key Vault soft delete overview
   description: "Azure Key Vault soft delete overview"
-  ms.date: 10/11/2023
+  ms.date: 04/24/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
-durationInMinutes: 3
+  ms.custom:
+  - N/A
+durationInMinutes: 10
 content: |
   [!include[](includes/7-azure-key-vault-soft-delete-overview.md)]
