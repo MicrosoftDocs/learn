@@ -1,4 +1,4 @@
-In this module, you learned how to fine-tune, calibrate, and triage the alerts that are listed to Defender for IoT in the Azure portal. In particular, you learned:
+In this module, you learned how to fine-tune and calibrate the devices connected to your sensor, to triage the alerts listed in Defender for IoT and to change from *learning* to *operational* mode. In particular, you learned:
 
 - How to fine-tune and calibrate alerts in Defender for IoT on the Azure portal.
 - How to view and modify subnet data listed in Defender for IoT.
@@ -15,5 +15,4 @@ The learn module is now complete and you know all the stages for deploying a new
 ## Learn more
 
 - [Deploy Defender for IoT for OT monitoring](/azure/defender-for-iot/organizations/ot-deploy/ot-deploy-path)
-- [Onboard OT sensors to Defender for IoT](/azure/defender-for-iot/organizations/onboard-sensors)
 - [Microsoft Defender for IoT documentation for organizations](/azure/defender-for-iot/organizations/)

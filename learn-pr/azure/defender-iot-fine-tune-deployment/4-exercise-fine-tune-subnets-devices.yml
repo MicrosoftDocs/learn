@@ -9,6 +9,5 @@ metadata:
   ms.author: lwainstein
   ms.topic: unit
 durationInMinutes: 6
-
 content: |
   [!include[](includes/4-exercise-fine-tune-subnets-devices.md)]

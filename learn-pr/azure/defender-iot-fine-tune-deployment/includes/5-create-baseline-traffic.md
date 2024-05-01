@@ -2,7 +2,7 @@ Your car manufacturing organization has offices and production sites across the 
 
 Defender for IoT is automatically set to *learning* mode as soon as it starts to receive data from the sensor. In this mode, Defender for IoT starts building a baseline of alerts to help identify suspicious network traffic that might affect the security of your devices. When suspicious traffic is identified Defender for IoT creates an alert. During the *learning* mode, you need to check all of the alerts and confirm if the traffic is potentially dangerous. If the traffic is normal network traffic assign the *learn* status, and the sensor will learn not to flag this type of traffic in the future.
 
-## Creating the alerts baseline
+## Create the alerts baseline
 
 To create the alert baseline, follow the triage process:
 
@@ -27,13 +27,13 @@ In Defender for IoT, select the **Alerts** page that lists all of the alerts gen
 
 1. Filter the list of alerts by a parameter or mix of parameters, such as a time period, the site or zone, or alert severity. You can also sort the list using the **Group by** feature.
 
-    :::image type="content" source="../media/6-alerts-main-group-by-box.png" alt-text="Screenshot of the alerts screen filtering with group by setting with box." lightbox="../media/6-alerts-main-group-by-box.png":::
+    :::image type="content" source="../media/5-alerts-main-group-by-box.png" alt-text="Screenshot of the alerts screen filtering with group by setting with box." lightbox="../media/5-alerts-main-group-by-box.png":::
 
 1. Select an alert and the details appear in the alert pane, including the alert description, traffic source, traffic destination and more.
 1. To analyze the alert in greater detail, select **View full details**.
 1. Choosing multiple alerts allows you to make bulk changes to the status, severity, or learn levels using the top menu bar.
 
-:::image type="content" source="../media/6-alerts-main-bulk-status-boxed.png" alt-text="Screenshot of the alerts screen making a bulk status change with box." lightbox="../media/6-alerts-main-bulk-status-boxed.png":::
+:::image type="content" source="../media/5-alerts-main-bulk-status-boxed.png" alt-text="Screenshot of the alerts screen making a bulk status change with box." lightbox="../media/5-alerts-main-bulk-status-boxed.png":::
 
 ### Analyze an alert
 
@@ -56,7 +56,7 @@ Then update the **severity** or **status** levels, which are automatically set w
 
 In Defender for IoT, the sensor assigns three **Severity** levels, which are: *High*, *Medium* and *Low*. The sensor also assigns three **Status** levels, which are *New*, *Active* and *Closed*. We recommend that you start triaging the critical level alerts first.
 
-:::image type="content" source="../media/6-alerts-main.png" alt-text="Screenshot of the alerts screen." lightbox="../media/6-alerts-main.png":::
+:::image type="content" source="../media/5-alerts-main.png" alt-text="Screenshot of the alerts screen." lightbox="../media/5-alerts-main.png":::
 
 You should update the status level based on the following descriptions:
 
