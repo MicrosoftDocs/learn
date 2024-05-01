@@ -40,6 +40,7 @@ units:
 - learn.wwl.purview-audit-search-investigate.audit-overview
 - learn.wwl.purview-audit-search-investigate.audit-configure-manage
 - learn.wwl.purview-audit-search-investigate.audit-standard-search
+- learn.wwl.purview-audit-search-investigate.audit-copilot
 - learn.wwl.purview-audit-search-investigate.audit-premium-investigate
 - learn.wwl.purview-audit-search-investigate.audit-export
 - learn.wwl.purview-audit-search-investigate.audit-premium-retention
