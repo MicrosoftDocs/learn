@@ -5,7 +5,7 @@ This unit provides common tips for optimizing and troubleshooting when working w
 There are several reasons why your CodeQL analysis may be taking too long to complete:
 
 - If you use self-hosted runners for CodeQL analysis, you can increase the memory or the number of cores.
-- Problems can also occur when a repository contains multiple languages. You can modify your workflow to use a matrix that speeds up the analysis of multiple languages. The analysis of each language runs in parallel with the default CodeQL analysis workflow, advanced workflows may need to be configured similarly if they are setup to run language initialization and analysis sequentially.
+- Problems can also occur when a repository contains multiple languages. You can modify your workflow to use a matrix that speeds up the analysis of multiple languages. The analysis of each language runs in parallel with the default CodeQL analysis workflow, advanced workflows may need to be configured similarly if they are set up to run language initialization and analysis sequentially.
 - The amount of code being analyzed may cause long runtimes. Analysis time is typically proportional to the amount of code being analyzed. You can reduce the size of the code by excluding test code or breaking the code into multiple workflows to only analyze a subset with each scan.
 - You may want to only trigger analysis on the `schedule` event if your analysis is too slow while running during `push` or `pull_request` events.
 
@@ -21,7 +21,7 @@ Some important points to keep in mind while working with CodeQL and the QL query
 
 ### Debug artifacts
 
-Additionally, you can obtain artifacts to help you debug CodeQL. The data contains the CodeQL logs, CodeQL database(s), and any SARIF file(s) produced by the workflow. The debug artifacts are uploaded to the workflow run as an artifact named `debug-artifacts`. Modify the `init` step of your CodeQL workflow file and set `debug: true`. These artifacts help you debug problems with CodeQL code scanning.
+Additionally, you can obtain artifacts to help you debug CodeQL. The data contains the CodeQL logs, CodeQL databases, and any SARIF files produced by the workflow. The debug artifacts are uploaded to the workflow run as an artifact named `debug-artifacts`. Modify the `init` step of your CodeQL workflow file and set `debug: true`. These artifacts help you debug problems with CodeQL code scanning.
 
 ## Troubleshoot CodeQL for Visual Studio Code
 
@@ -33,11 +33,11 @@ Progress and error messages are displayed as notifications in the bottom right c
 
 ## Common error messages
 
-You will need to be familiar with some common error messages in order to troubleshoot your CodeQL workflow.
+To troubleshoot your CodeQL workflow, let's familiarize ourselves with some common error messages.
 
 ### Error: "Server error"
 
-If the run of a workflow for code scanning fails due to a server error, this may be due to a transient communication issue. Try running the workflow again. If the problem persists contact github support.
+If the run of a workflow for code scanning fails due to a server error, this may be due to a transient communication issue. Try running the workflow again. If the problem persists contact GitHub support.
 
 ### Error: "Out of disk" or "Out of memory"
 
@@ -49,7 +49,7 @@ Dependabot is considered untrusted when it triggers a workflow run. The workflow
 
 A simple approach is to run on pushes to the default branch and any other important long-running branches, as well as pull requests opened against this set of branches. 
 
-Here is an example:
+Here's an example:
 >
 ```
 on:
