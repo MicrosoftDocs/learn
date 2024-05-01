@@ -21,9 +21,8 @@ We want to bring the power of cloud technology to every person and organization 
 1. [Amputee Coalition](https://www.amputee-coalition.org/).
 1. [CDC.gov](https://www.cdc.gov/).
 1. [Disability Statistics Center at the UCSF.](https://disability.ucsf.edu/)
-1. [Microsoft Design, Inclusive 1010 Toolkit – Manual](https://www.microsoft.com/design/inclusive/).
+1. [Microsoft Design, Inclusive 1010 Toolkit – Manual](https://inclusive.microsoft.design/).
 1. [Stephen Whiteside, "How Microsoft defines and pursues inclusive marketing"](https://www.warc.com/content/paywall/article/event-reports/how-microsoft-defines-and-pursues-inclusive-marketing/129014) (September 2019).
-1. [Gardenswartz and Rowe model](https://www.gardenswartzrowe.com/why-g-r).
 1. [Microsoft On the Issues, "Inspiring Girls to Stay in STEM and #MakeWhatsNext"](https://blogs.microsoft.com/on-the-issues/2017/03/07/inspiring-girls-stay-stem-makewhatsnext/) (March 7, 2017).
 1. [Microsoft Advertising, "Inclusive Marketing: Why it's essential for your brand"](https://about.ads.microsoft.com/en-us/blog/post/january-2020/inclusive-marketing-why-its-essential-for-your-brand)  (January 27, 2020).
 1. [Erik Larson, "Diversity + Inclusion = Better Decision Making At Work", Forbes](https://www.forbes.com/sites/eriklarson/2017/09/21/new-research-diversity-inclusion-better-decision-making-at-work/#53a778bc4cbf) (September 21, 2017).
