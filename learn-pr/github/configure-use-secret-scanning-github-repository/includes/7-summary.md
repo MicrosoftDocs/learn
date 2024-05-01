@@ -1,6 +1,7 @@
 The goal of this module was to help you understand how secret scanning works so you can configure and use it efficiently in your project.
 
 Secret scanning is enabled by default on all public repositories and can be enabled at the organization or private repository level on an enterprise plan with a GitHub Advanced Security license. Secret scanning scans:
+
 - Entire git histories on all branches present in a GitHub repository
 - Descriptions and comments in issues
 - Titles, descriptions, and comments, in open and closed historical issues
@@ -17,16 +18,13 @@ With secret scanning in GitHub, you can be aware of exposed secrets and respond 
 
 Here are some links to more information on the topics we discussed in this module:
 
-1. [Keeping secrets secure with secret scanning](https://docs.github.com/en/code-security/secret-scanning)
-2. [Learning about GitHub security features](https://docs.github.com/en/code-security/getting-started/github-security-features)
-3. [Learning about secret scanning](https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning)
-4. [Configuring secret scanning for your repositories](https://docs.github.com/en/code-security/secret-scanning/configuring-secret-scanning-for-your-repositories)
-5. [Learning about the  filter pattern cheat sheet](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet)
-6. [Granting access to security alerts](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository#granting-access-to-security-alerts)
-7. [Managing alerts from secret scanning](https://docs.github.com/en/code-security/secret-scanning/managing-alerts-from-secret-scanning)
-8. [Defining custom patterns for secret scanning](https://docs.github.com/en/code-security/secret-scanning/defining-custom-patterns-for-secret-scanning)
-9. [Learning about Hyperscan Pattern Support](http://intel.github.io/hyperscan/dev-reference/compilation.html#pattern-support)
-
-### Resource links
-
-1. [Secret scanning patterns](https://docs.github.com/en/code-security/secret-scanning/secret-scanning-patterns)
+- [Keeping secrets secure with secret scanning](https://docs.github.com/code-security/secret-scanning)
+- [Learning about GitHub security features](https://docs.github.com/code-security/getting-started/github-security-features)
+- [Learning about secret scanning](https://docs.github.com/code-security/secret-scanning/about-secret-scanning)
+- [Configuring secret scanning for your repositories](https://docs.github.com/code-security/secret-scanning/configuring-secret-scanning-for-your-repositories)
+- [Learning about the  filter pattern cheat sheet](https://docs.github.com/actions/learn-github-actions/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet)
+- [Granting access to security alerts](https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository#granting-access-to-security-alerts)
+- [Managing alerts from secret scanning](https://docs.github.com/code-security/secret-scanning/managing-alerts-from-secret-scanning)
+- [Defining custom patterns for secret scanning](https://docs.github.com/code-security/secret-scanning/defining-custom-patterns-for-secret-scanning)
+- [Learning about Hyperscan Pattern Support](http://intel.github.io/hyperscan/dev-reference/compilation.html#pattern-support)
+- [Secret scanning patterns](https://docs.github.com/code-security/secret-scanning/secret-scanning-patterns)
