@@ -431,6 +431,6 @@ groups:
     - id: azure-portal
       title: Azure portal
     - id: azure-cli
-      title: Azure CLI (locally)
+      title: Azure CLI (local)
     - id: vs-code
       title: Visual Studio Code
