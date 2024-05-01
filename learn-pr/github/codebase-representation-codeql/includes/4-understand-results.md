@@ -23,7 +23,7 @@ Each alert includes the following information:
 
 You'll also see information on how to fix the problem when CodeQL analysis identifies an alert. Additionally, code scanning using CodeQL can detect data-flow problems in your code.
 
-:::image type="content" source="../media/alert-screenshot.png" alt-text="Screenshot showing CodeQL analysis alerts." border="false":::
+:::image type="content" source="../media/code-scanning-alert-screenshot.png" alt-text="Screenshot showing CodeQL analysis alerts." border="false":::
 
 ### Data flow alerts
 
