@@ -10,11 +10,12 @@ Microsoft Copilot for Security is an AI-powered, cloud-based security analysis t
 
 ### Use cases
 
-Microsoft Copilot for Security supports many use cases, including:
+Microsoft Copilot for Security focuses on making the following highlighted use cases easy to use.
 
-- Security posture management. Copilot delivers information on anything that might expose an organization to a known threat. It then gives the analyst prescriptive guidance on how to protect against those potential vulnerabilities.
-- Incident response. Copilot can quickly surface an incident. For a surfaced incident, Copilot can enrich it with context from other data sources, assess its scale and impact, and provide information on what the source might be. Copilot can then guide the analyst through the response and remediation steps with guided recommendations. Copilot provides a single pane of glass visibility by pulling in data from other sources like Defender XDR and Sentinel and then correlating and analyzing that data all together.
-- Security reporting. Copilot can deliver customizable reports that are ready to share and easy to consume, allowing analysts to focus more on high value tasks pertinent for securing the organization.
+- Incident summarization - Gain context for incidents and improve communication across your organization by leveraging generative AI to swiftly distill complex security alerts into concise, actionable summaries, which then enable quicker response times and streamlined decision-making.
+- Impact analysis - Utilize AI-driven analytics to assess the potential impact of security incidents, offering insights into affected systems and data to prioritize response efforts effectively.
+- Reverse engineering of scripts - Eliminate the need to manually reverse engineer malware and enable every analyst to understand the actions executed by attackers. Analyze complex command line scripts and translate them into natural language with clear explanations of actions. Efficiently extract and link indicators found in the script to their respective entities in your environment.
+- Guided response - Receive actionable step-by-step guidance for incident response, including directions for triage, investigation, containment, and remediation. Relevant deep links to recommended actions allow for quicker response.
 
 These use cases represent just a few of the capabilities that Copilot delivers and that helps make analysts more productive and also helps up-level them.
 
@@ -38,10 +39,10 @@ With access to the powerful LLMs for NLP, Copilot is able to read, decipher, and
 
 ### Integration with Security-specific sources
 
-Copilot combines powerful LLMs with a security-specific model from Microsoft. This security-specific model is informed by Microsoft’s unique global threat intelligence, more than 65 trillion daily signals, and incorporates information from a growing set of security-specific sources using plug-ins and connections to knowledge bases. Through plug-ins, Copilot integrates with Microsoft's own security products, non-Microsoft products, and open-source intelligence feeds. Connections to an organization's knowledge bases gives Copilot more context, resulting in responses that are more relevant, specific, and customized to the user. Through the powerful combination of advanced general models and security specific sources, Copilot is able to learn at machine speed to help analysts identify and respond to emerging threats.
+Copilot combines powerful LLMs with security-specific sources from Microsoft. These security-specific sources are informed by Microsoft’s unique global threat intelligence, more than 65 trillion daily signals, and incorporates information from a growing set of security solutions using plug-ins and connections to knowledge bases. Through plug-ins, Copilot integrates with Microsoft's own security products, non-Microsoft products, and open-source intelligence feeds. Connections to an organization's knowledge bases gives Copilot more context, resulting in responses that are more relevant, specific, and customized to the user. Through the powerful combination of advanced general models and security specific sources, Copilot is able to learn at machine speed to help analysts identify and respond to emerging threats.
 
 The information you give Copilot will only be accessible to your organization. Your data is your data, and it's protected by comprehensive enterprise compliance and security controls. Your data isn't used to train the foundation AI models.
 
-:::image type="content" source="../media/security-copilot.png" alt-text="Diagram showing key attributes of Microsoft Copilot for Security, including hyperscale AI infrastructure, cyber-trained model with security skills, threat intelligence from 65 trillion signals and end-to-end security tooling.":::
+:::image type="content" source="../media/security-copilot-v2.png" lightbox="../media/security-copilot-v2.png" alt-text="Diagram showing key attributes of Microsoft Copilot for Security, including hyperscale AI infrastructure, security specific orchestrator,evergreen threat intelligence, and cyber skills and promptbooks.":::
 
 Microsoft Copilot for Security is the first security product to enable defenders to move at the speed and scale of AI.

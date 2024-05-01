@@ -61,12 +61,15 @@ For more information about auto-failover groups, see [Use auto-failover groups t
 
 In general, migrating to SQL Managed Instance is often simple given the large set of available features. There are a couple of ways to migrate on-premises databases:
 
-- Restoring a backup
-- Using Database Migration Service (DMS)
+- [**Log Replay Service**](/azure/azure-sql/managed-instance/log-replay-service-overview?azure-portal=true). It's an online migration option, and used when you need more control of your database migration project.
 
-Backup and restore will incur more downtime, as it isn't possible to restore with **NORECOVERY** option, and apply log backups.
+- [**Azure SQL Migration extension for Azure Data Studio**](/sql/azure-data-studio/extensions/azure-sql-migration-extension?azure-portal=true). It's a tool that helps you prepare for migrating your SQL Server databases to Azure. It uses the latest version of Azure Data Migration Service (DMS) to assess your readiness for migration, recommend the best Azure resources for your needs, and execute the migration. It’s ideal for small to medium-sized databases and supports online migration to SQL Managed Instance.
 
-The Database Migration Service is a managed service that connects your on-premises (or Azure Virtual Machines) SQL Server to SQL Managed Instance with near zero downtime. As a result, it acts like an automated log shipping process, meaning you can keep your target databases in sync right up to the point of cutover.
+- [**Managed Instance link.**](/azure/azure-sql/managed-instance/managed-instance-link-feature-overview?azure-portal=true). The Managed Instance link, using distributed availability groups, securely extends your data estate by replicating data almost instantly (online) between any hosted SQL Server and Azure SQL Managed Instance, and vice versa.
+
+- [**Native backup and restore**](/azure/azure-sql/managed-instance/restore-sample-database-quickstart?azure-portal=true). Backup and restore are a simple migration method favored by many SQL Server professionals. It's the easiest migration option for customers who can provide full database backups to Azure Storage.
+
+- [**Transactional replication**](/sql/relational-databases/replication/transactional/transactional-replication?azure-portal=true). Transactional replication is a way to move data between continuously connected database servers. It’s best to be used for online or offline migration of large and complex databases.
 
 ## Machine Learning Services
 

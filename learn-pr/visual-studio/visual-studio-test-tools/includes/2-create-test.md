@@ -4,9 +4,9 @@ In this unit, we'll cover a few basics.
 
 ## Unit tests
 
-A unit test is the most basic type of test, so it's a good place to start learning. A unit test specifically tests only one method or the smallest testable unit of code. 
+A unit test is the most basic type of test, so it's a good place to start learning. A unit test specifically tests only one method or the smallest testable unit of code.
 
-Test methods are very much like regular methods. Test methods can accept parameters and are organized in to test classes that are all a part of a test project. You can also group test classes by namespace, just like other classes.
+Test methods are very much like regular methods. Test methods can accept parameters and are organized into test classes that are all a part of a test project. You can also group test classes by namespace, just like other classes.
 
 The following code is an example of a simple test class. It first imports the unit testing framework. In this case, that's the built-in Microsoft testing framework `Microsoft.VisualStudio.TestTools.UnitTesting`, also known as MSTest. The second `using` directive refers to the calculator app that's being tested, `LearnMyCalculatorApp`. Then the test class is declared and within that, a test method is declared.
 

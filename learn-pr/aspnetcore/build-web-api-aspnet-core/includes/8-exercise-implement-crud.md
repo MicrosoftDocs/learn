@@ -91,9 +91,9 @@ Remember to save the *Controllers/PizzaController.cs* file before proceeding,
 
 Build and start the web API by running the following command:
 
-    ```dotnetcli
-    dotnet run
-    ```
+```dotnetcli
+dotnet run
+```
 
 
 ### Test the finished web API with .http files

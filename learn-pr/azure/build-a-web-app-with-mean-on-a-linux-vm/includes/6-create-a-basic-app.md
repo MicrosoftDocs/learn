@@ -368,7 +368,7 @@ Before you proceed, make sure you have your VM's IP address handy. If you don't 
 ```azurecli
 ipaddress=$(az vm show \
   --name MeanStack \
-  --resource-group <rgn>[sandbox resource group name]</rgn> \
+  --resource-group "<rgn>[sandbox resource group name]</rgn>" \
   --show-details \
   --query [publicIps] \
   --output tsv)

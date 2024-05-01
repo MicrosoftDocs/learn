@@ -19,7 +19,7 @@ az group create \
 
     ```azurecli
     az vm create \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
       --name MeanStack \
       --image Canonical:0001-com-ubuntu-server-focal:20_04-lts:latest \
       --admin-username azureuser \
@@ -50,7 +50,7 @@ az group create \
     ```azurecli
     az vm open-port \
       --port 80 \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
       --name MeanStack
     ```
 
@@ -63,7 +63,7 @@ az group create \
     ```azurecli
     ipaddress=$(az vm show \
       --name MeanStack \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
       --show-details \
       --query [publicIps] \
       --output tsv)

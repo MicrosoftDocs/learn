@@ -1,10 +1,10 @@
 In this module, you learned how to:
 
-- Identify scenarios for which autoscaling is an appropriate solution
+- Identify scenarios for which autoscaling is an appropriate solution.
 - Create autoscaling rules for a web app.
 - Monitor the effects of autoscaling.
 
-Using autoscaling with Azure App Service can help ensure your hosted web app can respond to fluctuations in demand helping to maintain a consistent high-quality level of service for your users.
+Using autoscaling with Azure App Service can help ensure your hosted web app can respond to fluctuations in demand, helping to maintain consistent, high-quality service for your users.
 
 ## Clean up
 
