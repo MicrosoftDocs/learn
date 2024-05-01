@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.service: purview
   ai-usage: ai-assisted
-  hidden: true
+  hidden: false
 title: Search and investigate with Microsoft Purview Audit
 summary: Enhance data security and compliance with Microsoft Purview Audit by configuring detailed audits, managing logs, and analyzing access patterns.
 abstract: |
