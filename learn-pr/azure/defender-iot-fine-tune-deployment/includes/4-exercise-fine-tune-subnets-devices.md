@@ -5,9 +5,9 @@ The following exercises show all of the stages of fine tuning your sensor. Depen
 
 First you must analyze the traffic monitored by the OT sensor.
 
-1. Log in to your sensor
-1. Select **System setting** > **Deployment**
-1. Select **Analyze** to start the subnet analysis process
+1. Log in to your sensor.
+1. Select **System setting** > **Deployment**.
+1. Select **Analyze** to start the subnet analysis process.
 
 This tracks each interface and device the sensor is monitoring and lists the subnet associated with each one. When the analysis is complete, you need to check that each interface is monitoring the correct traffic. Use the OT network plan, from the planning team, to compare the subnet information with the results of the analysis process.
 
@@ -15,12 +15,12 @@ This tracks each interface and device the sensor is monitoring and lists the sub
 
 If you find a device incorrectly configured, make the following changes:
 
-1. Select **System setting** > **Subnets**
-1. Type a new **IP** address
-1. Type a new **Mask** address
-1. Type a new **name**
-1. Select the **Segregated** checkbox if this subnet is on a different Purdue level
-1. Select **Save**
+1. Select **System setting** > **Subnets**.
+1. Type a new **IP** address.
+1. Type a new **Mask** address.
+1. Type a new **name**.
+1. Select the **Segregated** checkbox if this subnet is on a different Purdue level.
+1. Select **Save**.
 
 We recommend giving a meaningful name that specifies the subnet's network role. Subnet names can have up to 60 characters.
 
@@ -32,10 +32,10 @@ All of the devices detected by the OT sensor appear in the **Device inventory**.
 
 In the **Device inventory**, you can view the subnets grouped as either *local* or *routed*. Check through all of the devices listed.
 
-1. Select **Device inventory**
-1. Select **Add filter**
-1. Select **Network Location**
-1. Select either **Local** or **Routed**
+1. Select **Device inventory**.
+1. Select **Add filter**.
+1. Select **Network Location**.
+1. Select either **Local** or **Routed**.
 
 Look through the list of devices and check their details. After checking the device details, as an exercise, choose one device and update several of the fields.
 
@@ -48,52 +48,52 @@ Look through the list of devices and check their details. After checking the dev
 
 You might identify two or more devices listed that are really the same device. To merge two devices:
 
-1. Select **Device inventory**
-1. Select the devices you need to merge by clicking the checkboxes for those rows
-1. Select **Merge**
-1. Select **Confirm**
+1. Select **Device inventory**.
+1. Select the devices you need to merge by clicking the checkboxes for those rows.
+1. Select **Merge**.
+1. Select **Confirm**.
 
 ## Important devices
 
 Assign a unique device as **Important**. In the **Device map**:
 
-1. Select a device and right-click to open the menu options
-1. Select **Important**
+1. Select a device and right-click to open the menu options.
+1. Select **Important**.
 
 ## Check public IP addresses
 
 It's important list all public IP addresses that are used internally. These IP addresses must be added as a separate subnet within the Subnet settings, as follows:
 
-1. Select **System setting** > **Basic** > **Subnets**
-1. Select **Add subnet**
-1. Type a new **IP** address
-1. Type a new **Mask** address
-1. Type a new **name**
-1. Select **Save**
+1. Select **System setting** > **Basic** > **Subnets**.
+1. Select **Add subnet**.
+1. Type a new **IP** address.
+1. Type a new **Mask** address.
+1. Type a new **name**.
+1. Select **Save**.
 
 ## Add DNS server settings
 
 Define the range of IP addresses for devices with an IP address allocated by a DHCP server, which changes dynamically, as follows:
 
-1. Select **System setting** > **Network monitoring** > **Reverse DNS lookup**
-1. Toggle **Enable**
+1. Select **System setting** > **Network monitoring** > **Reverse DNS lookup**.
+1. Toggle **Enable**.
 1. Define the time interval, either:
     - In the **Schedule Reverse Lookup**, define the time interval for your scan by typing a number in the second box.
-    - Or select **By specific time** and type the time in 24 hr format
-1. Select **Add DNS server**
-1. Type the **DNS server address**, **DNS server port** and **Subnets** details
-1. Select **Save**
-1. Optionally, select **Test** at the top to check the settings are correct
+    - Or select **By specific time** and type the time in 24 hr format.
+1. Select **Add DNS server**.
+1. Type the **DNS server address**, **DNS server port** and **Subnets** details.
+1. Select **Save**.
+1. Optionally, select **Test** at the top to check the settings are correct.
 
 ## Add DHCP address ranges
 
 For a device that automatically refreshes its IP address, add the DHCP address ranges for that device.
 
-1. Select **System setting** > **DHCP ranges**
-1. Select **Add range**
-1. Type the IP address ranges
-1. Type a name
-1. Select **Save**
+1. Select **System setting** > **DHCP ranges**.
+1. Select **Add range**.
+1. Type the IP address ranges.
+1. Type a name.
+1. Select **Save**.
 
 :::image type="content" source="../media/4-dhcp-ranges.png" alt-text="Screenshot adding new DHCP ranges for changing IP addresses.":::
 
