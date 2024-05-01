@@ -80,7 +80,7 @@ quiz:
     - content: "Following the remediation steps listed in the device alert pane."
       isCorrect: true
       explanation: "Correct, making changes based on the remediation steps presented."
-  - content: "What is reason for choosing the Learn option in the Take action tab?"
+  - content: "What is the reason for choosing the Learn option in the Take action tab?"
     choices:
     - content: "So that the sensor learns that this type of traffic is normal and won't generate an alert in the future."
       isCorrect: true
@@ -102,3 +102,14 @@ quiz:
     - content: "The user is able to choose which IP address they use for their device."
       isCorrect: false
       explanation: "Incorrect, the sensor must know the range of IP addresses so that it can correctly identify a device."
+  - content: "Once in operational mode, how will new devices be listed in the inventory?"
+    choices:
+    - content: "Authorized, just like all new devices are listed during learning mode."
+      isCorrect: false
+      explanation: "Incorrect, once in operational mode all new devices are listed as unathorized and should be fully checked before updating their status."
+    - content: "Unauthorized, and you should simply update them to authorized as soon as possible."
+      isCorrect: false
+      explanation: "Incorrect, once in operational mode all new devices are listed as unathorized and should be fully checked before updating their status."
+    - content: "Unauthorized, and must be fully checked before updating them to authorized."
+      isCorrect: true
+      explanation: "Correct, the sensor must know the range of IP addresses so that it can correctly identify a device."
