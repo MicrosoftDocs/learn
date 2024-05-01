@@ -53,7 +53,9 @@ Whether you're using the Microsoft Purview portal or the Microsoft Purview compl
    1. **Record type**: Select the type of audit record the policy applies to. If you select multiple record types, you can't choose specific activities.
    1. **Duration**: Set how long to retain the logs, with options ranging from seven days to 10 years. Note: Retaining logs for more than one year requires specific licensing.
    1. **Priority**: Set the priority, where a lower number means higher priority, to determine the order of policy application.
+  
    :::image type="content" source="../media/audit-create-new-audit-retention-policy.png" alt-text="Screenshot showing the new audit retention policy flyout page.":::
+
 1. After filling out the necessary fields, select **Save**.
 
 Your new policy appears in the policy list under **Policies** if it was created in the Microsoft Purview portal. If you created your audit retention policy in the Microsoft Purview compliance portal, the new policy appears on the **Audit retention policies tab**.
