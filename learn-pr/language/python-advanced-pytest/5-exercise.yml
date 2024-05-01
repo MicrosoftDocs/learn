@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.python-advanced-pytest.exercise
-title: Putting it all together
+title: Exercise
 metadata:
   title: Exercise - write a custom fixture and use _parametrize_
-  description: Practice creating a custom fixture and using _parametrize_ in test functions
+  description: Practice creating a custom fixture and use _parametrize_ in test functions.
   ms.date: 4/12/2024
   author: alfredodeza
   ms.author: alfredodeza

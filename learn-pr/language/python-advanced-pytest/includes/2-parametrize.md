@@ -29,7 +29,7 @@ This test is problematic because if it fails, it can lead to several issues, inc
 
 - **Ambiguous test reports:** The test report doesn't clarify whether only one item failed or if there are multiple failures.
 - **Single test view:** All items are seen as a single test, which obscures individual item performance.
-- **Uncertain fixes:** If a failure is corrected, there's no way to know if all issues have been resolved without rerunning the entire test.
+- **Uncertain fixes:** If a failure is corrected, there's no way to know if all issues are resolved without rerunning the entire test.
 
 Let's modify the test to specifically include two items that are expected to fail:
 
@@ -73,7 +73,7 @@ def test_is_digit_33():
     assert "33".isdigit()
 ```
 
-These tests are better in the sense that a failure can be easily associated with a single input. And although it might seem unusual to have several similar tests, it’s actually common to see in production test suites that try to be granular.
+These tests are better in the sense that a failure can be easily associated with a single input. And although it might seem unusual to have several similar tests, it’s common to see in production test suites that try to be granular.
 
 Although the tests would be better because they can report exactly what fails (or passes) they also come with the following issues:
 
@@ -81,11 +81,11 @@ Although the tests would be better because they can report exactly what fails (o
 - There’s potential for typos and mistakes when updating the tests
 - Because they’re repetitive, engineers might not include all use cases and inputs
  
-## Using parametrize
+## How to use parametrize
 
 Now that you’re aware of some of the use cases for _parametrize_, let's update the test that used a `for` loop that includes failing items.
 
-To use _parametrize_, you must import `pytest` as a library, and then use it as a decorator in the function, this is how the updated test should look now:
+To use _parametrize_, you must import `pytest` as a library, and then use it as a decorator in the function. Here's the updated test:
 
 ```python
 import pytest
@@ -97,12 +97,12 @@ def test_string_is_digit(item):
 
 Before running the tests, let's go over the changes.
 
-The `pytest.mark.parametrize()` decorator above defines two arguments. The first argument is a string called `"item"`. That string is used as the _named argument_ for the test function that you see in the next line in the test function definition. The second argument is the list of test values.
+The `pytest.mark.parametrize()` decorator defines two arguments. The first argument is a string called `"item"`. That string is used as the _named argument_ for the test function that you see in the next line in the test function definition. The second argument is the list of test values.
 
 
 ### Rich error reporting
 
-Behind the scenes, pytest considers each item in that list _as a separate test_. That means that all passing and failing tests gets reported separately. Let's see what happens when running the test with `pytest`:
+Behind the scenes, pytest considers each item in that list _as a separate test_. That means that passing and failing tests gets reported separately. Let's see what happens when running the test with `pytest`:
 
 ```bash
 $ pytest test_items.py
@@ -146,9 +146,9 @@ FAILED test_items.py::test_string_is_digit[No] - AssertionError: assert False
 It's hard to miss the value that caused the failure with so many places where it gets reported. 
 
 
-### Using the verbose output flag 
+### Use the verbose output flag 
 
-When running the tests in the command-line, the test reporting when tests are passing is minimal. This is how the test would look after an update to fix the failures:
+When the tests are run in the command-line, the test reporting when test pass is minimal. Here's how the test would look after an update to fix the failures:
 
 ```python
 @pytest.mark.parametrize("item", ["0", "1", "10", "33", "9"])
@@ -170,7 +170,7 @@ test_items.py .....                                                      [100%]
 ============================== 5 passed in 0.01s ===============================
 ```
 
-Increasing the verbosity can include the values that pytest sees for each test when parametrizing:
+Increasing the verbosity shows the values that pytest runs for each test when using _parametrize_:
 
 ```bash
 $ pytest -v test_items.py
@@ -188,11 +188,11 @@ test_items.py::test_string_is_digit[9] PASSED                            [100%]
 ============================== 5 passed in 0.01s ===============================
 ```
 
-## Using multiple argument names
+## How to use multiple argument names
 
-The examples we've seen so far just have one argument name in the first argument. We've been using `"item"` but you can include multiple argument names in the the string that specificies the first argument separated by commas. 
+The examples we've seen so far just have one argument name in the first argument. We've been using `"item"` but you can include multiple argument names in the string that specifies the first argument separated by commas. 
 
-One use case for using multiple argument names is if you want to pass in a set of expected values to test against your input value. In your second argument, each item in your set will need to have a number of values equal to the number of input names. For example, if your input names are `"test\_input, expected\_value"`, then your second argument might look something like this: [("3+5", 8), ("3*4", 12)]
+One use case for using multiple argument names is if you want to pass in a set of expected values to test against your input value. In your second argument, each item in your set needs to have a quantity of values equal to the number of input names. For example, if your input names are `"test\_input, expected\_value"`, then your second argument might look something like this: [("3+5", 8), ("3*4", 12)]
 
 This test verifies if an object has an attribute using the Python `hasattr()` function. It returns a boolean depending on whether the object possesses the associated attribute.
 
@@ -211,11 +211,11 @@ def test_attributes(item, attribute):
     assert hasattr(item, attribute)
 ```
 
-The _parametrize_ decorator still uses a single string for the first argument but with two argument names separated by a comma which become arguments to the test function. In this case, it’s `item` and `attribute`.
+The _parametrize_ decorator still uses a single string for the first argument but with two argument names separated by a comma, which become arguments to the test function. In this case, it’s `item` and `attribute`.
 
 Next is a list of two pairs of items. Each of these pairs represents an `item` and an `attribute` to test for.
 
-When pytest can't build a string representation of the objects being passed in, it will create one. You can see this in action when running the test:
+When pytest can't build a string representation of the objects being passed in, it creates one. You can see this when running the test:
 
 ```bash
 $ pytest -v test_items.py

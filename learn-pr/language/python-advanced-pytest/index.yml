@@ -3,7 +3,7 @@ uid: learn.python-advanced-pytest
 metadata:
   moduleType: standard
   title: Advanced testing with pytest
-  description: Take advantage of the advanced features of pytest, a popular test framework to write and run tests in Python.
+  description: Take advantage of the advanced features of pytest, a popular test framework used to write and run tests in Python.
   ms.date: 4/12/2024
   author: alfredodeza
   ms.author: alfredodeza
@@ -14,7 +14,7 @@ abstract: |
   By the end of this module, you'll be able to:
     - Use the `pytest` framework and its library helpers to solve common testing problems
     - Work with _parametrize_ to create tests with multiple input values
-    - Create and use fixtures, which allow you to extend and share testing functionality
+    - Create and use fixtures, which allow you to extend and share testing functionality.
 prerequisites: |
   - Ability to write Python scripts
   - Familiarity with command-line tools and executing scripts
