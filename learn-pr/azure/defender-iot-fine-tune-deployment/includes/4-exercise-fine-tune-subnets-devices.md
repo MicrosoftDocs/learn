@@ -24,7 +24,7 @@ If you find a device incorrectly configured, make the following changes:
 
 We recommend giving a meaningful name that specifies the subnet's network role. Subnet names can have up to 60 characters.
 
-Once all changes are made, return to **System setting** > **Deployment** and select **Analyze** again to run the process. Review the results to ensure the set up is now correct.  
+Once all changes are made, return to **System setting** > **Deployment** and select **Analyze** again to run the process. Review the results to ensure the setup is now correct.  
 
 ## View and update detected devices
 
