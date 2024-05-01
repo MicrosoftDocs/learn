@@ -7,6 +7,7 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: module
+  ms.service: azure
 title: Introduction to Cloud for Everyone
 summary: In this module, you'll learn about Cloud for Everyone.
 abstract: | 
