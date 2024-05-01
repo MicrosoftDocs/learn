@@ -2,7 +2,7 @@ Your sensor now sends data to Microsoft Defender for IoT, but you need to make f
 
 Once these checks are complete, you have a full and accurate list of devices set up correctly that can now securely process data.
 
-After fine tuning your sensor, the final stage is to create a baseline of alerts so that Microsoft Defender for IoT recognizes normal traffic flow through your system. Defender for IoT is then able to identify dangerous or suspicious traffic and produce accurate alerts. Creating the baseline ocurrs in the *learning* mode, where you triage alerts, and Defender for IoT learns which alerts are actually regular, safe network traffic. The *learning* mode can take a week or two, depending on the size of your system.
+After fine tuning your sensor, the final stage is to create a baseline of alerts so that Microsoft Defender for IoT recognizes normal traffic flow through your system. Defender for IoT is then able to identify dangerous or suspicious traffic and produce accurate alerts. Creating the baseline occurs in the *learning* mode, where you triage alerts, and Defender for IoT learns which alerts are actually regular, safe network traffic. The *learning* mode can take a week or two, depending on the size of your system.
 
 ## OT sensor deployment path
 
@@ -16,7 +16,7 @@ This learn module covers the last two phases of the OT sensor deployment path.
 
 - *Baseline learning* covers triaging the alerts and how the sensor changes from *learning* to *operational* mode.
 
-## In this phase: calibrate and fine tune
+## In this phase: Calibrate and fine tune
 
 In a real-life scenario, the deployment and connectivity teams ensure that the sensor is already onboarded, activated, and sending data to Defender for IoT.
 
@@ -34,7 +34,7 @@ If the settings aren't corrected, false alerts are sent that could leave other v
 
 Once these steps are completed, Defender for IoT is set up to monitor all of the devices and pass the data to the Azure portal. Defender for IoT now has an accurate list of all the sensors, devices, and their subnets. As well as the correct status for each one so that they're tracked for vulnerabilities and compromises. The device list now matches the original network diagram produced in the deployment planning phase.
 
-## In this phase: baseline learning
+## In this phase: Baseline learning
 
 When the sensor first connects to Defender for IoT it enters *learning* mode. In *learning* mode the sensor learns the difference between suspicious, harmful network traffic and safe traffic, including regular file transfers or data flows between devices.
 

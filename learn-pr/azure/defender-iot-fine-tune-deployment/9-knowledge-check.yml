@@ -106,10 +106,10 @@ quiz:
     choices:
     - content: "Authorized, just like all new devices are listed during learning mode."
       isCorrect: false
-      explanation: "Incorrect, once in operational mode all new devices are listed as unathorized and should be fully checked before updating their status."
+      explanation: "Incorrect, once in operational mode all new devices are listed as unauthorized and should be fully checked before updating their status."
     - content: "Unauthorized, and you should simply update them to authorized as soon as possible."
       isCorrect: false
-      explanation: "Incorrect, once in operational mode all new devices are listed as unathorized and should be fully checked before updating their status."
+      explanation: "Incorrect, once in operational mode all new devices are listed as unauthorized and should be fully checked before updating their status."
     - content: "Unauthorized, and must be fully checked before updating them to authorized."
       isCorrect: true
       explanation: "Correct, the sensor must know the range of IP addresses so that it can correctly identify a device."
