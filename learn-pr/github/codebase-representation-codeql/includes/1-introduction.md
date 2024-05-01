@@ -16,4 +16,4 @@ By the end of this module, you'll be able to:
 - Basic knowledge of GitHub Actions
 - Familiarity with GitHub code scanning
 - Administrative access to a repository
-- Familiarity with SQL, Prolog, and Datalog
+- Familiarity with SQL<sup>[1]</sup>, Prolog<sup>[2]</sup>, and Datalog<sup>[3]</sup>
