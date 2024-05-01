@@ -20,11 +20,9 @@ This learn module covers the last two phases of the OT sensor deployment path.
 
 In a real-life scenario, the deployment and connectivity teams ensure that the sensor is already onboarded, activated, and sending data to Defender for IoT.
 
-The OT calibration and fine-tuning is the phase where you check that all of the devices listed in the network plan appear correctly in Defender for IoT. You also check that the settings that Defender for IoT automatically assigns to each device are correct. You might have to adjust some of these device settings.<!-- remvoe this paragraph it is writen in slightly longer form in the next sections -->
-
 ### Calibrate the list of devices
 
-Using Defender for IoT, compare the list of devices displayed by your sensor with the list in the network diagram. The number and type of devices must match exactly to ensure that the correct data is sent to Defender for IoT and that all of the devices are protected. If there are differences between the two lists, you must check and identify the reasons for the differences. <!-- For example, a device may not be listed because it isn't correctly connected to the sensor. LW ??-->Check that all of the devices are properly connected to the sensor, and that the monitoring settings are set correctly. The **Analyze** feature is used to calibrate the system.
+Using Defender for IoT, compare the list of devices displayed by your sensor with the list in the network diagram. The number and type of devices must match exactly to ensure that the correct data is sent to Defender for IoT and that all of the devices are protected. If there are differences between the two lists, you must check and identify the reasons for the differences. For example, a device may not be listed because it isn't correctly connected to the sensor. Check that all of the devices are properly connected to the sensor, and that the monitoring settings are set correctly. The **Analyze** feature is used to calibrate the system.
 
 ### Fine-tune your sensor subnets
 

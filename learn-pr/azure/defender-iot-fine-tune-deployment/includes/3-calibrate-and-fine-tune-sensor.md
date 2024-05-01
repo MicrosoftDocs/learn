@@ -10,7 +10,7 @@ In some cases, the device map produced needs to be corrected. You might need to 
 
 Once your OT sensor is receiving data, make an initial check to see that the sensor identifies each device with the correct subnet, this is called calibration. In the **Deployment** section of the OT sensor run the **Analyze** feature. When the analysis is complete, check the information. If the information isn't what you expect, check the subnet and device settings and make any changes to the settings.
 
-In a real life scenario, incorrect subnet settings could be due to incorrect span configuration, which should be reported to the connection team. However, this is outside the scope of the learn module.<!-- keep this or remove? LW -->
+In a real life scenario, incorrect subnet settings could be due to incorrect span configuration, which should be reported to the connection team.
 
 ## Fine tuning
 
