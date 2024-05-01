@@ -1,384 +1,191 @@
-To support the new functionality, you need to create a few new functions and update the JavaScript on the client.
+To add SignalR to this prototype, you need to create:
 
-## Create a SignalR account
+* An Azure SignalR resource
+* A few new functions to support SignalR
+* Update the client to support SignalR
 
-You need to add a SignalR account to your sandbox subscription.
+## Create a SignalR resource
 
-1. The first step is to run the following command in the Cloud Shell to create a new SignalR account in the sandbox resource group. This command can take a couple of minutes to complete, so wait for it to finish before proceeding to the next step. 
+You need to create an Azure SignalR resource.
 
-    ```bash
-    SIGNALR_SERVICE_NAME=msl-sigr-signalr$(openssl rand -hex 5)
-    az signalr create \
-      --name $SIGNALR_SERVICE_NAME \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --sku Free_DS2 \
-      --unit-count 1
-    ```
-
-1. For SignalR Service to work properly with Azure Functions, you need to set its service mode to *Serverless*. Configure the service mode using the following command.
+1. Return to the terminal to create the SignalR resource. 
+1. Navigate to the `setup-resources` subdirectory to create the resource.
 
     ```bash
-    az resource update \
-      --resource-type Microsoft.SignalRService/SignalR \
-      --name $SIGNALR_SERVICE_NAME \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --set properties.features[flag=ServiceMode].value=Serverless
+    cd stock-prototype/setup-resources && bash create-signalr-resources.sh & cd ..
     ```
 
-## Update local settings
+1. Copy the connection string for the SignalR resource. You'll need this to update the server code.
 
-For the app to run, you need to add the SignalR connection string saved to your local settings.
+    | Resource Type | Environment variable |
+    |--|--|
+    |Azure SignalR|Referred to as SIGNALR_CONNECTION_STRING|
 
-1. Run the following commands in the Cloud Shell to get the connection strings for the resources we created in this exercise.
+## Update server configuration environment variables
 
-    ```bash
-    SIGNALR_CONNECTION_STRING=$(az signalr key list \
-      --name $(az signalr list \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --query [0].name -o tsv) \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --query primaryConnectionString -o tsv)
+In **./start/server/local.settings.json**, add a variable to the **Values** object named `SIGNALR_CONNECTION_STRING` with the value listed in the terminal and save the file.
 
-    printf "\n\nReplace <SIGNALR_CONNECTION_STRING> with:\n$SIGNALR_CONNECTION_STRING\n\n"
-    ```
+## Create the `signalr-open-connection` function
 
-1. Navigate to where you cloned the application and open the **start** folder in Visual Studio Code. Open **local.settings.json** in the editor so you can update the file.
-
-1. In **local.settings.json**, update the variable `AzureSignalRConnectionString` with the value listed in the Cloud Shell and save the file.
-
-## Manage client connections
-
-The web client uses the SignalR client SDK to establish a connection to the server. The SDK retrieves the connection via a function named **negotiate** (by convention) to connect to the service.
+The web client uses the SignalR client SDK to establish a connection to the server. The SDK retrieves the connection via a function named **signalr-open-connection** to connect to the service.
 
 1. Open the Visual Studio Code command palette by pressing **F1**.
 
 1. Search for and select the **Azure Functions: Create Function** command.
+1. Choose **Set default** then select **start/server** to set the location of the Function app.
+1. Select **Yes** when asked to **Initialize project for use with VS Code?**. 
 
 1. When prompted, provide the following information.
 
     | Name                | Value                          |
     | ------------------- | ------------------------------ |
     | Template            | HTTP Trigger                   |
-    | Name                | negotiate                      |
-    | Authorization level | Anonymous                      |
+    | Name                | signalr-open-connection        |
 
-    Refresh the Explorer window in Visual Studio Code to see the updates. A folder named *negotiate* is now available in your function app.
+    A file named *signalr-open-connection.ts* is now available at `./start/server/src/functions`.
 
-1. Open *negotiate/function.json* and add the following SignalR binding definition to the `bindings` array.
+1. Open *signalr-open-connection.ts* and replace the everything with the following code.
 
-    ```json
-    {
-        "type": "signalRConnectionInfo",
-        "name": "connectionInfo",
-        "hubName": "stocks",
-        "direction": "in",
-        "connectionStringSetting": "AzureSignalRConnectionString"
-    }
-    ```
+    :::code language="typescript" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/solution/server/src/functions/signalr-open-connection.ts" :::
 
-    This configuration allows the function to return the connection information to the server, which is used to identify connected clients.
 
-1. Next, open *negotiate/index.js* and replace the existing function code with the following code.
+    The SignalR connection information is returned from the function.
 
-    ```javascript
-    module.exports = async function (context, req, connectionInfo) {
-        context.res.body = connectionInfo;
-    };
-    ```
-
-    As the function is called, the SignalR connection is returned as the response to the function.
-
-Now that the function to return the SignalR connection info is implemented, you can create a function responsible for pushing changes to the client.
-
-## Detect and broadcast database changes
-
-First, you need to create a new function that listens for changes in the database. This function uses an Azure Cosmos DB trigger that connects to the change feed of the database.
+## Create the `signalr-send-message` function
 
 1. Open the Visual Studio Code command palette by pressing **F1**.
 1. Search for and select the **Azure Functions: Create Function** command.
+1. Select the location of the Function app as **start/server**.
+
 1. When prompted, provide the following information.
+
+    | Name                | Value                          |
+    | ------------------- | ------------------------------ |
+    | Template            | Azure Cosmos DB trigger                   |
+    | Name                | `signalr-send-message`        |
+    | Cosmos DB connection string | COSMOSDB_CONNECTION_STRING | 
+    | Database name to be monitored | `stocksdb`|
+    | Collection name | `stocks` |
+    | Checks for existence and automatically creates the leases collection|true|
+
+    Refresh the Explorer window in Visual Studio Code to see the updates. A file named *signalr-open-connection* is now available at `./start/server/src/functions`.
+1. Open *signalr-send-message.ts* and replace the everything with the following code. 
+
+    :::code language="typescript" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/solution/server/src/functions/signalr-send-message.ts" :::
+
+* **Define incoming data**: The `comingFromCosmosDB` object defines the Cosmos DB trigger to watch for changes.
+* **Define outgoing transport**: The `goingOutToSignalR` object defines the same SignalR connection. The hubName is the same hub `default`.
+* **Connect data to transport**: The `dataToMessage` gets the _changed_ items in the `stocks` table and sends each changed item individually through SignalR using the `extraOutputs` using the same hub `default`. 
+* **Connect to app**: The `app.CosmosDB` ties the bindings to the function name `send-signalr-messages`. 
+
+## Commit changes and push to GitHub
+
+1. In the terminal, commit the changes to the repository.
+
+    ```bash
+    git add .
+    git commit -m "Add SignalR functions"
+    git push
+    ```
+
+## Create the `signalr-send-message` function
+
+Create a function app and related resources in Azure to which you can publish the new functions code.
+
+1. Open the [Azure portal](https://portal.azure.com/#create/Microsoft.FunctionApp) to create a new functions app.
+1. Use the following information to complete the resource creation **Basics** tab.
 
     | Name                                   | Value                          |
     | -------------------------------------- | ------------------------------ |
-    | Template                               | Azure Cosmos DB Trigger        |
-    | Name                                   | stocksChanged                  |
-    | App setting for your Azure Cosmos DB account | AzureCosmosDBConnectionString  |
-    | Database name                          | stocksdb                       |
-    | Collection name                        | stocks                         |
-    | Collection name for leases             | leases                         |
-    | Create lease collection if not exists  | true                           |
+    | Resource group                         | Create a new resource group names `stock-prototype`.|
+    | Function App name                      | Postpend your name to `api`. For example, `api-jamie`.|
+    | Code or container                          | Select **code**.                       |
+    | Runtime stack                        | Select **Node.js**.                       |
+    | Version            |  Select an LTS version of Node.js.                    |
+    | Region  | Select a region close to you.                           |
+    | Operating System | Select **Linux**.|
+    | Hosting | Select **Consumption Plan**.|
 
-    Now a folder named *stocksChanged* is created and contains the files for the new function. 
+1. Don't fill out any other tabs and select **Review + create** then select **Create**. Wait for the deployment to complete before continuing.
+1. Select **Go to resource** to open the new function app.
 
-1. Open *stocksChanged/function.json* in Visual Studio Code.
+## Configure the GitHub deployment
 
-1. Append the property `"feedPollDelay": 500` to the existing trigger binding definition. This setting tells Azure Cosmos DB how long to wait before checking for changes in the database. The application you're building is built around a push-based architecture. However behind the scenes, Azure Cosmos DB is continually monitoring the change feed to detect changes. The `feedPollDelay` refers to how the internals of Azure Cosmos DB recognize changes, not how your web application exposes changes to the data.
+Connect your new function app to the GitHub repository to enable continuous deployment. In a production environment, you would instead deploy code changes to a staging slot before swapping them into production. 
 
-    The Azure Cosmos DB binding for your function should now look like the following code.
+1. In the Azure portal page for the new function app, select **Deployment Center** from the left-hand menu.
+1. Select **Source** of **GitHub**.
+1. Use the following information to complete the deployment configuration.
 
-    ```json
-    {
-      "type": "cosmosDBTrigger",
-      "name": "documents",
-      "direction": "in",
-      "leaseCollectionName": "leases",
-      "connectionStringSetting": "AzureCosmosDBConnectionString",
-      "databaseName": "stocksdb",
-      "collectionName": "stocks",
-      "createLeaseCollectionIfNotExists": "true",
-      "feedPollDelay": 500
-    }
-    ```
+    | Name                                   | Value                          |
+    | -------------------------------------- | ------------------------------ |
+    | Organization    | Select your GitHub account.                       |
+    | Repository                        | Search for and select `mslearn-advocates.azure-functions-and-signalr`.                       |
+    | Branch            | Select the **main** branch.                    |
+    | Workflow Option| Select **Add a workflow ...**.|
+    | Authentication type | Select **User-assigned-identity**.|
+    | Subscription | Select the same subscription as seen at the top of the page. |
+    | Identity | Select **Create new**.|
 
-1. Next, append the following SignalR output binding definition to the `bindings` array.
+1. Select **Save** at the top of the section to save the settings. This creates a new workflow file in your forked repository.
+1. This deployment configuration creates a GitHub Actions workflow file in the repository. You need to update the workflow file to use the correct package path for the function app.
 
-    ```json
-    {
-      "type": "signalR",
-      "name": "signalRMessages",
-      "connectionString": "AzureSignalRConnectionString",
-      "hubName": "stocks",
-      "direction": "out"
-    }
-    ```
+## Edit GitHub deployment workflow
 
-    This binding allows the function to broadcast changes to clients.
-
-1. Update the *stocksChanged/index.js* file to reflect the following code. The beauty of all the configuration is that the function code is simple.
-
-    ```javascript
-    module.exports = async function (context, documents) {
-        const updates = documents.map(stock => ({
-            target: 'updated',
-            arguments: [stock]
-        }));
-    
-        context.bindings.signalRMessages = updates;
-        context.done();
-    }
-    ```
-
-    An array of changes is prepared by creating an object that's formatted for SignalR to read. Every updated stock is provided to the `arguments` array along with a `target` property set to `updated`.
-
-    The value of the `target` property is used on the client when listening for specific messages broadcast by SignalR.
-
-## Update the web application
-
-Open *public/index.html* and paste the following code in place of the current DIV with the ID of `app`.
-
-```html
-<div id="app" class="container">
-    <h1 class="title">Stocks</h1>
-    <div id="stocks">
-        <div v-for="stock in stocks" class="stock">
-            <transition name="fade" mode="out-in">
-                <div class="list-item" :key="stock.price">
-                    <div class="lead">{{ stock.symbol }}: ${{ stock.price }}</div>
-                    <div class="change">Change:
-                        <span
-                            :class="{ 'is-up': stock.changeDirection === '+', 'is-down': stock.changeDirection === '-' }">
-                            {{ stock.changeDirection }}{{ stock.change }}
-                        </span>
-                    </div>
-                </div>
-            </transition>
-        </div>
-    </div>
-</div>
-```
-
-This markup adds a transition element, which allows Vue.js to run a subtle animation as stock data changes. When a stock is updated, the tile fades out and quickly back in to view. This way if the page is full of stock data, users can easily see which stocks have changed.
-
-Next, add the following script block just above the reference to *index.html.js*.
-
-```html
-<script src="https://cdn.jsdelivr.net/npm/@aspnet/signalr@1.1.0/dist/browser/signalr.js"></script>
-```
-
-This script adds a reference to the SignalR SDK.
-
-Now open *public/index.html.js* and replace the file with the following code.
-
-```javascript
-const LOCAL_BASE_URL = 'http://localhost:7071';
-const REMOTE_BASE_URL = '<FUNCTION_APP_ENDPOINT>';
-
-const getAPIBaseUrl = () => {
-    const isLocal = /localhost/.test(window.location.href);
-    return isLocal ? LOCAL_BASE_URL : REMOTE_BASE_URL;
-}
-
-const app = new Vue({
-    el: '#app',
-    data() {
-        return {
-            stocks: []
-        }
-    },
-    methods: {
-        async getStocks() {
-            try {
-                const apiUrl = `${getAPIBaseUrl()}/api/getStocks`;
-                const response = await axios.get(apiUrl);
-                app.stocks = response.data;
-            } catch (ex) {
-                console.error(ex);
-            }
-        }
-    },
-    created() {
-        this.getStocks();
-    }
-});
-
-const connect = () => {
-    const connection = new signalR.HubConnectionBuilder()
-                            .withUrl(`${getAPIBaseUrl()}/api`)
-                            .build();
-
-    connection.onclose(()  => {
-        console.log('SignalR connection disconnected');
-        setTimeout(() => connect(), 2000);
-    });
-
-    connection.on('updated', updatedStock => {
-        const index = app.stocks.findIndex(s => s.id === updatedStock.id);
-        app.stocks.splice(index, 1, updatedStock);
-    });
-
-    connection.start().then(() => {
-        console.log("SignalR connection established");
-    });
-};
-
-connect();
-```
-
-The changes you just made accomplished two goals: removed all polling logic from the client and added handlers to listen for messages coming from the server.
-
-A new helper function is introduced which makes it easy for the application to work in local and deployed contexts.
-
-```javascript
-const LOCAL_BASE_URL = 'http://localhost:7071';
-const REMOTE_BASE_URL = '<FUNCTION_APP_ENDPOINT>';
-
-const getAPIBaseUrl = () => {
-    const isLocal = /localhost/.test(window.location.href);
-    return isLocal ? LOCAL_BASE_URL : REMOTE_BASE_URL;
-}
-```
-
-The `getAPIBaseUrl` function returns the appropriate URL depending on whether the app is running locally or deployed to Azure. In an upcoming exercise, the storage account endpoint replaces the placeholder `<REMOTE_BASE_URL>` when you deploy this application to the cloud.
-
-<!-- 
-
-    REVIEW:
-    Consider moving this explanation of the URL switcher to the first exercise, since it's used there too 
-
-    CONCLUSION:
-    Updated code to only use the local variable for the beginning state of the app. Added the code for getAPIBaseUrl in this exercise and added an explanation paragraph.
-
--->
-
-The Vue.js-related code is streamlined now that changes are pushed to the client. Consider this segment of the code you pasted in to the script file:
-
-```javascript
-const app = new Vue({
-    el: '#app',
-    data() {
-        return {
-            stocks: []
-        }
-    },
-    methods: {
-        async getStocks() {
-            try {
-                const apiUrl = `${getAPIBaseUrl()}/api/getStocks`;
-                const response = await axios.get(apiUrl);
-                app.stocks = response.data;
-            } catch (ex) {
-                console.error(ex);
-            }
-        }
-    },
-    created() {
-        this.getStocks();
-    },
-});
-```
-
-The same stocks array is used here as in the previous implementation, but all the polling code is removed and the logic for `getStocks` remains unchanged. The `getStocks` function is still called as the component is created.
-
-Next, consider this segment of the client code:
-
-```javascript
-const connect = () => {
-    const connection = new signalR.HubConnectionBuilder()
-                            .withUrl(`${getAPIBaseUrl()}/api`)
-                            .build();
-
-    connection.onclose(()  => {
-        console.log('SignalR connection disconnected');
-        setTimeout(() => connect(), 2000);
-    });
-
-    connection.on('updated', updatedStock => {
-        const index = app.stocks.findIndex(s => s.id === updatedStock.id);
-        app.stocks.splice(index, 1, updatedStock);
-    });
-
-    connection.start().then(() => {
-        console.log("SignalR connection established");
-    });
-};
-
-connect();
-```
-
-When the page loads, the `connect` function is called. In the body of the `connect` function, the first action is to use the SignalR SDK to create a connection by calling `HubConnectionBuilder`.  The result is a SignalR connection to the server.
-
-To gracefully recover after the server has timed out, the `onclose` handler reestablishes a connection two seconds after the connection has closed by calling `connect` again.
-
-As the client receives messages from the server, it listens for messages via the `on('updated',...` syntax. Once an update is received, the following actions take place:
-
-- The changed stock is located in the array.
-- The old version is removed.
-- The new version is inserted at the same index position in the array.
-
-Manipulating the array this way allows Vue to detect changes in the data and trigger animation effects to notify users of changes.
-
-## Run the application
-
-Now you can see the new version of the app running locally.
-
-Press **F5** to start debugging the functions app.
-
-Next, open a new terminal window in Visual Studio Code and run `npm start`:
-
-```bash
-npm start
-```
-
-The script automatically opens the browser and navigates to http://localhost:8080. If the browser fails to open automatically, you can navigate to http://localhost:8080 manually.
-
-## Observe automatic updates
-
-Now you can change the application's data and observe how to the UI automatically updates.
-
-1. Arrange Visual Studio Code on one side of the screen and the web browser on the other. This way you can see the UI update as changes are made to the database.
-
-1. Return to Visual Studio Code and enter the following command in a new integrated terminal. Again, watch as the application automatically updates the stock ABC.
+1. In Visual Studio Code terminal, pull down the new workflow file from your fork (origin). 
 
     ```bash
-    npm run update-data
+    git pull origin main
     ```
 
-After the database is updated, the UI looks something like the following screenshot:
+    This should place a new folder at **.github** with a path to your workflow file: `.github/workflows/main_RESOURCE_NAME.yml where RESOURCE_NAME is the Azure Functions app name. 
 
-![End state of serverless web app.](../media/serverless-app-end-state.png)
+1. Open the workflow file. 
+1. Change the `name` value at the top of the file to `Server`.
+1. Because the source repository has the Azure Functions app in a subdirectory, the action file needs to change to reflect that. In the **env** section, add a new variable named `PACKAGE_PATH` to use the package path. 
 
-When you're done, stop the running processes:
+    ```YAML
+    env:
+      PACKAGE_PATH: 'start/server'
+    ```
 
-- To stop the web server, select the **kill process** (trash can icon) on the terminal window that is running the web server.
+1. Find the **Resolve Project Dependencies Using Npm** step and replace the contents with the following YAML to also use the package subdirectory path. The critical change is the path in the `pushd` command to include the `env.PACKAGE_PATH` variable.
 
-- To stop the functions app, select the **Stop** button or press **Shift + F5**.
+    :::code language="yaml" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/example-server-workflow.yml" range="29-36":::
+    
+1. Find the **Zip artifact for deployment** step and replace the contents with the following YAML to also use the package subdirectory path. 
+
+    :::code language="yaml" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/example-server-workflow.yml" range="45-49":::
+
+    The zip file is placed at the root of repository so the `../` value is necessary to place the zip file at the root.
+
+1. Save the file and commit the changes to the repository.
+
+    ```bash
+    git add .
+    git commit -m "Update deployment workflow to use package path"
+    git push
+    ```
+
+    This change will trigger the workflow to run. You can watch the workflow from the **Actions** section of the fork on GitHub.
+
+## Configure the environment variables for the API functions
+
+1. In the Azure portal, select **Settings -> Configuration** then select **New application setting**.
+1. Enter the settings for the Cosmos DB and SignalR connection strings. You can find the values in the `local.settings.json` in the `start/server` folder. 
+
+    | Name | Value |
+    |--|--|
+    | **COSMOSDB_CONNECTION_STRING** | The connection string for the Cosmos DB account. |
+    | **SIGNALR_CONNECTION_STRING** | The connection string for the SignalR account. |
+
+1. Select **Save** to save the settings.
+
+## Test the deployment of the API Functions
+
+1. In the Azure portal, select **Overview** and select **URL** to open the app in a browser. 
+1. Copy the URL, you'll need that when you update the client `.env` file for the `BACKEND_URL` value when you work in Unit 7. 
+1. Open the URL in a browser to test the API functions.
+1. Append `/api/getStocks` to the URL in the browser and press **Enter**. You should see a JSON array with stock data.
+
+You've updated the server code to return stocks with SignalR and you've deployed to a function app. Next, you'll update the client to use SignalR to receive updates.

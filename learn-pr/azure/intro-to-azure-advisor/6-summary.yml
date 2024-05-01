@@ -6,8 +6,8 @@ metadata:
   title: Summary
   description: Summary of Azure Advisor benefits and additional reading.
   ms.date: 03/08/2023
-  author: rmcmurray
-  ms.author: robmcm
+  author: aortoll
+  ms.author: anortoll
   ms.topic: unit
 durationInMinutes: 1
 content: |

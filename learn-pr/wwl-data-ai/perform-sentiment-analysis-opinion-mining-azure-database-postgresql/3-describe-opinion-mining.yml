@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.perform-sentiment-analysis-opinion-mining-azure-database-postgresql.describe-opinion-mining
+title: Describe opinion mining
+metadata:
+  title: Describe opinion mining
+  description: "Describe opinion mining"
+  ms.date: 04/26/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-describe-opinion-mining.md)]
