@@ -106,7 +106,7 @@ The IT compliance team followed these steps using Microsoft Purview Audit to inv
 
       **Example of audit record for a hard-deleted item**:
 
-      :::image type="content" source="../media/hard-deleted-item.png" alt-text="Screenshot showing the audit record for a soft-deleted item.":::
+      :::image type="content" source="../media/hard-deleted-item.png" alt-text="Screenshot showing the audit record for a hard-deleted item.":::
 1. **Corrective actions**:
    - If unauthorized deletions are confirmed, initiate the incident response protocol. This protocol might include informing affected parties, securing the compromised accounts, and revising data access policies.
    - If the deletions were part of regular duties but flagged due to unusual volume or timing, update the monitoring thresholds. This change helps minimize false positives while maintaining robust security protocols.

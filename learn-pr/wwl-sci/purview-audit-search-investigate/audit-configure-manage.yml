@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.purview-audit-search-investigate.audit-configure-manage
-title: Configure and manage auditing in Microsoft Purview
+title: Configure and manage Microsoft Purview Audit
 metadata:
-  title: Configure and manage auditing in Microsoft Purview
-  description: "Configure and manage auditing in Microsoft Purview"
+  title: Configure and manage Microsoft Purview Audit
+  description: "Configure and manage Microsoft Purview Audit."
   ms.date: 05/01/2024
   author: wwlpublish
   ms.author: riswinto

@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: "Unlimited, as long as system resources permit."
       isCorrect: false
-      explanation: "Incorrect: There is a specific limit on the number of simultaneous search jobs."
+      explanation: "Incorrect: There's a specific limit on the number of simultaneous search jobs."
     - content: "Up to 5 search jobs."
       isCorrect: false
       explanation: "Incorrect: The limit is higher than 5."
