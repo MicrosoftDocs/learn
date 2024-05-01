@@ -4,13 +4,13 @@ title: Audit Microsoft Copilot for Microsoft 365 interactions
 metadata:
   title: Audit Microsoft Copilot for Microsoft 365 interactions
   description: "Audit Microsoft Copilot for Microsoft 365 interactions."
-  ms.date: 04/30/2024
+  ms.date: 05/01/2024
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/audit-copilot.md)]
 quiz:
