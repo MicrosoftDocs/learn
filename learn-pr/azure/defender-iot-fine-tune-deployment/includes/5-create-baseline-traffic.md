@@ -2,7 +2,7 @@ Your car manufacturing organization has offices and production sites across the 
 
 Defender for IoT is automatically set to *learning* mode as soon as it starts to receive data from the sensor. In this mode, Defender for IoT starts building a baseline of alerts to help identify suspicious network traffic that might affect the security of your devices. When suspicious traffic is identified Defender for IoT creates an alert. During the *learning* mode, you need to check all of the alerts and confirm if the traffic is potentially dangerous. If the traffic is normal network traffic assign the *learn* status, and the sensor will learn not to flag this type of traffic in the future.
 
-## Creating the alerts baseline
+## Create the alerts baseline
 
 To create the alert baseline, follow the triage process:
 

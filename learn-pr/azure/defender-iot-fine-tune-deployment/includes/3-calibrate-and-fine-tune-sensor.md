@@ -1,20 +1,18 @@
-Data is now flowing from your sensor to Microsoft Defender for IoT. The Operational Technology (OT) monitoring software initially identifies the interfaces and device endpoints. The OT software builds a map of the devices in the system, the subnets they're connected to and gives security settings to each one.
+Data is now flowing from your sensor to Microsoft Defender for IoT. The Operational Technology (OT) monitoring software initially identifies the interfaces and device endpoints.
 
-However, it's possible that some of these device settings might not be correctly identified, so you need to check each one. In some cases, you need to reassign the settings or location of the device in the Purdue levels by updating the subnet. The IP and subnet addresses should be available from your IT team or be listed in the planning document.
+The OT sensor software analyzes your system and assigns subnet settings, including security settings, and attempts to understand the architecture of your system and fit each device into the Purdue model setup. However, it's possible that some of these subnet and device settings might not be correctly identified, so you need to check each one.
 
-The OT sensor analyzes your system and assigns subnet settings and attempts to understand the architecture of your system and fit each device into the Purdue model setup. A subnet is a group of devices or interfaces that have a specific purpose or are located in a specific area, for example all of the printers in the main offices, all of the lights in the manufacturing level, all heating systems in the administrative rooms. Each subnet is assigned its own IP address.
+A subnet is a group of devices or interfaces that have a specific purpose or are located in a specific area, for example all of the printers in the main offices, all of the lights in the manufacturing level, all heating systems in the administrative rooms. Each subnet is assigned its own IP address.
 
-In some cases, the device map produced needs to be corrected. You might need to change device settings that are associated with the wrong subnet and ensure that they have the correct IP address.
-
-## Calibration
+## Calibrate your sensor
 
 Once your OT sensor is receiving data, make an initial check to see that the sensor identifies each device with the correct subnet, this is called calibration. In the **Deployment** section of the OT sensor run the **Analyze** feature. When the analysis is complete, check the information. If the information isn't what you expect, check the subnet and device settings and make any changes to the settings.
 
 In a real life scenario, incorrect subnet settings could be due to incorrect span configuration, which should be reported to the connection team.
 
-## Fine tuning
+## Fine tune the sensor results
 
-Now that the sensor is calibrated, check the data and fine tune any items that the sensor has misidentified, such as the device details, or which subnet a device is connected to.  
+Now that the sensor is calibrated, check the data and fine tune any items that the sensor has misidentified, such as the device details, or which subnet a device is connected to. In some cases, you need to reassign the settings or location of the device in the Purdue levels by updating the subnet. The IP and subnet addresses should be available from your IT team or be listed in the planning document.
 
 ### Check and modify the subnet settings
 
@@ -43,4 +41,3 @@ Check the device details in the **Device inventory**. You might need to make som
 |**DHCP address ranges**| Devices with an IP address allocated by a DHCP server, which changes dynamically, must define the range of IP addresses. This is an important step, which can affect the way your data is assessed for security risks. When the device IP address changes dynamically the device is logged as a new device, which might give misleading information about your system.|
 
 After checking and updating the devices the fine tuning phase is complete.
- 
