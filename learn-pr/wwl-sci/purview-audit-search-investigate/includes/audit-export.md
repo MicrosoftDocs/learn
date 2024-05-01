@@ -88,7 +88,7 @@ Imagine the IT compliance team at your healthcare network needs to review ShareP
 
 After you export the data, use the Power Query Editor in Excel to transform the JSON object in the AuditData column into a structured format. This process enhances data visibility and aids in pinpoint analyses:
 
-- **Filter by RecordType**: Focus on specific events, such as SharePoint sharing operations, to streamline reviews and ensure compliance with healthcare data protection regulations.
+- **Filter by RecordType**: Focus on specific events, such as SharePoint sharing operations, to streamline reviews and ensure compliance with healthcare data regulations.
 - **Filter by Operations**: Narrow down to precise activities to monitor how sensitive information is being accessed or modified.
 
 ## Knowledge check
