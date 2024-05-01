@@ -1,4 +1,4 @@
-Now that you've extracted your code to a database, You can analyze it using CodeQL queries. GitHub experts, security researchers, and community contributors write and maintain the default CodeQL queries. You can also write your own queries.
+With your extracted code to a database, you can now analyze it using CodeQL queries. GitHub experts, security researchers, and community contributors write and maintain the default CodeQL queries. You can also write your own queries.
 
 You can use CodeQL queries in code scanning analysis to find problems in your source code and to find potential security vulnerabilities. You can also write custom queries to identify problems for each language you are using in your source code.
 
@@ -31,7 +31,7 @@ select / ... expressions ... */
 
 Using CodeQL with code scanning converts results in a way that highlights the potential issue that the queries are designed to find. Queries contain metadata properties that indicate how the results should be interpreted. Use query metadata to identify your custom queries when you add them to your GitHub repository and provide information about the query's purpose. Metadata information can include things like a description of the query, a unique id, and the kind of problem it is (alert or path). The metadata also specifies how to interpret and display the query results. 
 
-Github has a recommended style guide that can be found in the CodeQL documentation<sup>[7]</sup>.
+GitHub has a recommended style guide that can be found in the CodeQL documentation<sup>[7]</sup>.
 
 This is an example of metadata for one of the standard Java queries:
 
@@ -43,17 +43,17 @@ Queries that don't have metadata aren't interpreted. Those results are output as
 
 QL is a declarative, object-oriented query language that is optimized to enable efficient analysis of hierarchical data structures, in particular, databases representing software artifacts. The syntax of QL is similar to SQL, but the semantics of QL are based on Datalog, a declarative logic programming language often used as a query language. This makes QL primarily a logic language, and all operations in QL are logical operations. Furthermore, QL inherits recursive predicates from Datalog, and adds support for aggregates, making even complex queries concise and simple.
 
-QL is a programming language made up of logical formulas. Common logical connectives such as `and`, `or`, and `not` are used, as well as quantifiers such as `forall` and `exists`. Because QL inherits recursive predicates, you can also write complex recursive queries using simple QL syntax as well as aggregates like `count`, `sum`, and `average`.
+QL is a programming language made up of logical formulas. Common logical connectives such as `and`, `or`, and `not` are used, as well as quantifiers such as `forall` and `exists`. Because QL inherits recursive predicates, you can also write complex recursive queries using simple QL syntax and aggregates like `count`, `sum`, and `average`.
 
-For more information on the QL language see the documentation<sup>[8]</sup>.
+For more information on the QL language, see the documentation<sup>[8]</sup>.
 
 ## Path queries
 
-The way information flows through a program is important, as seemingly benign data can flow in unexpected ways that allow it to be used maliciously. Creating path queries can help to visualize the flow of information through a codebase and track the path taken by data from its possible starting points (`source`) to its possible end points (`sink`). To model paths, your query must provide information about the source and the sink, as well as the data flow steps that link them.
+The way information flows through a program is important, as seemingly benign data can flow in unexpected ways that allow it to be used maliciously. Creating path queries can help to visualize the flow of information through a codebase and track the path taken by data from its possible starting points (`source`) to its possible end points (`sink`). To model paths, your query must provide information about the source and the sink, and the data flow steps that link them.
 
 The easiest way to start writing your own path query is to use one of the existing queries as a template. CodeQL has documentation to get started writing path queries for supported languages<sup>[9]</sup>.
 
-Your path query will require certain metadata, query predicates, and `select` statement structures. Many of the built-in path queries included in CodeQL follow a simple structure. Those structures depend on how CodeQL models the language you are analyzing.
+Your path query requires certain metadata, query predicates, and `select` statement structures. Many of the built-in path queries included in CodeQL follow a simple structure. Those structures depend on how CodeQL models the language you are analyzing.
 
 Below is an example path query template:
 
@@ -106,9 +106,9 @@ You can optionally define a `nodes` query predicate, which specifies the nodes o
 
 ## Analyze your database
 
-You'll receive meaningful results in the context of the source code when you use queries to analyze a CodeQL database. The results will be styled as alerts or paths in Static Analysis Results Interchange Format (SARIF) or another interpreted format.
+You'll receive meaningful results in the context of the source code when you use queries to analyze a CodeQL database. The results are styled as alerts or paths in Static Analysis Results Interchange Format (SARIF) or another interpreted format.
 
-Here is an example of a CodeQL database command that will analyze the database by running selected queries against it and interpretting the results:
+Here is an example of a CodeQL database command that will analyze the database by running selected queries against it and interpreting the results:
 
 `codeql database analyze --format=<format> 
 ---output=<output> [--threads=<num>] [--ram=<MB>] <options>... -- <database> <query|dir|suite>...`
@@ -121,11 +121,11 @@ A full list of available CodeQL cli commands can be found in the CodeQL CLI Manu
 
 ### Use a SARIF file with categories
 
-CodeQL supports Static Analysis Results Interchange Format (SARIF) for sharing static analysis results. SARIF is designed to represent the output of a broad range of static analysis tools. You need to specify a category when using SARIF output for CodeQL analysis. Categories can distinguish multiple analyses performed on the same commit repository and on different languages or different parts of the code. However, SARIF files with the same category will overwrite each other.
+CodeQL supports Static Analysis Results Interchange Format (SARIF) for sharing static analysis results. SARIF is designed to represent the output of a broad range of static analysis tools. You need to specify a category when using SARIF output for CodeQL analysis. Categories can distinguish multiple analyses performed on the same commit repository and on different languages or different parts of the code. However, SARIF files with the same category overwrite each other.
 
 Each SARIF output file can be scanned with CodeQL to analyze different languages within the same code base when the categories value is consistent between the analysis runs. It's recommended to use the language being scanned as an identifier for the `category`
 
-Here is one example. This value will appear (with a trailing slash appended if not already present) as the `<run>.automationId` property in SARIF v1, the `<run>.automationLogicalId` property in SARIF v2, and the `<run>.automationDetails.id` property in SARIF v2.1.0.
+Here is one example. This value appears (with a trailing slash appended if not already present) as the `<run>.automationId` property in SARIF v1, the `<run>.automationLogicalId` property in SARIF v2, and the `<run>.automationDetails.id` property in SARIF v2.1.0.
 
 ### Posting the SARIF results to GitHub
 
