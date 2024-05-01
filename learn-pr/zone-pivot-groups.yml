@@ -429,8 +429,8 @@ groups:
   prompt: Choose how you interact with resources on Azure
   pivots:
     - id: azure-portal
-      title: Azure Portal
+      title: Azure portal
     - id: azure-cli
-      title: Azure CLI (Locally)
+      title: Azure CLI (locally)
     - id: vs-code
       title: Visual Studio Code
