@@ -10,11 +10,11 @@ We want to bring the power of cloud technology to every person and organization 
 
 1. [United Nations International Day of Persons with Disabilities, facts and figures](https://www.un.org/en/observances/day-of-persons-with-disabilities/background) (December 3, 2018).
 1. [World Health Organization Assistive Technology](https://www.who.int/news-room/fact-sheets/detail/assistive-technology) (May 18, 2019).
-1. [Paulo Gaudiano and Ellen Hunt,  "Richard Branson Supports People with Disabilities. Here are Six Ways You Can Do It, Too", Forbes](https://www.forbes.com/sites/gaudianohunt/2016/10/31/richard-branson-supports-disabilities/#421cbcc5788e) (October 16, 2016).
+1. [Paulo Gaudiano and Ellen Hunt,  "Richard Branson Supports People with Disabilities. Here are Six Ways You Can Do It, Too," Forbes](https://www.forbes.com/sites/gaudianohunt/2016/10/31/richard-branson-supports-disabilities/#421cbcc5788e) (October 16, 2016).
 1. [Richard Fry, "Millennials projected to overtake Baby Boomer as America's largest generation", Pew Research Center Fact Tank](https://www.pewresearch.org/fact-tank/2018/03/01/millennials-overtake-baby-boomers/) (March 1, 2018).
 1. [Richard Fry, "Millennials Are the Largest Generation in the U.S. Labor Force," Pew Research Center Fact Tank](https://www.pewresearch.org/fact-tank/2018/04/11/millennials-largest-generation-us-labor-force/) (April 11, 2018).
 1. [LGBT Capital fact sheet, LGBT Capital Homepage,](http://www.lgbt-capital.com/) (January 2020).
-1. [Bridget Brennan, "Top 10 Things Everyone Should Know About Women Consumers", Forbes](https://www.forbes.com/sites/bridgetbrennan/2015/01/21/top-10-things-everyone-should-know-about-women-consumers/#53c338976a8b) (January 21, 2015).  
+1. [Bridget Brennan, "Top 10 Things Everyone Should Know About Women Consumers," Forbes](https://www.forbes.com/sites/bridgetbrennan/2015/01/21/top-10-things-everyone-should-know-about-women-consumers/#53c338976a8b) (January 21, 2015).  
 1. [Statisa, Total consumer spending of women worldwide in 2013-2018](https://www.statista.com/statistics/578492/women-buying-power-worldwide/) (August 9, 2019).
 1. [United States Census Bureau](https://www.census.gov/).
 1. [Limbs for Life Foundation](http://limbsforlife.org/).
