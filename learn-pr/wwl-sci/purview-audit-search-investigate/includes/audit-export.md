@@ -16,7 +16,9 @@ Understanding how to effectively export and transform audit log data is crucial 
 
 1. Begin by searching the audit log. Adjust your search criteria as needed to ensure you capture the necessary data.
 1. On the search results page, select **Export** to download all the audit records from your search into a CSV file. Preparing the download can take time, especially for large searches.
+ 
    :::image type="content" source="../media/audit-export-audit-search-results.png" alt-text="Screenshot showing where to select Export to export data.":::
+
 1. Once the export process is complete, a prompt appears, guiding you to open the CSV file and save it to your local computer. You can also access the CSV file in the Downloads folder.
    - You can download a maximum of 50,000 entries to a CSV file from a single audit log search. If your search results exceed this limit, consider using a narrower date range to manage the volume of data.
 
@@ -25,15 +27,25 @@ Understanding how to effectively export and transform audit log data is crucial 
 After you export the audit data, the next step involves using Excel's Power Query Editor to enhance the data's readability and usability.
 
 1. Open a blank workbook in Excel and navigate to the **Data** tab. Select **From Text/CSV** to open your exported CSV file.
+
    :::image type="content" source="../media/json-transform-open-csv-file.png" alt-text="Screenshot showing the From Text/CSV button in Excel.":::
+
 1. Once the CSV file opens, select **Transform Data** to begin editing in the Power Query Editor.
+
    :::image type="content" source="../media/json-open-power-query.png" alt-text="Screenshot showing the Transform Data button in Excel.":::
+
 1. Right-click **AuditData**, select **Transform**, then choose **JSON** in the **Query Editor**. This step transforms the data into a readable format, creating separate columns for each property within the JSON object.
+
    :::image type="content" source="../media/json-transform.png" alt-text="Screenshot showing where to select Transform then JSON to parse data.":::
+
 1. Select the expand icon in the upper-right corner of the **AuditData** column to see a list of properties in the JSON objects.
+
    :::image type="content" source="../media/json-transform-expand-icon.png" alt-text="Screenshot showing the expand icon.":::
+
 1. If only some properties are visible initially, select **Load more** to display the full list of properties in the JSON objects.
+
    :::image type="content" source="../media/json-transform-load-json-properties.png" alt-text="Screenshot showing where to select Load more to display the full list of properties.":::
+
 1. Deselect any properties you don't need to simplify your data view. This helps in focusing only on relevant data for your analysis.
    - Keep in mind that the properties shown after clicking **Load more** are based on the first 1,000 rows in your CSV file. If different properties exist beyond these rows, they don't appear when the **AuditData** column is expanded. To ensure you capture all necessary properties, you might need to refine your audit log search to return fewer records or filter out less relevant data in the **Operations** column before expanding **AuditData**.
 1. Decide if you want to include the original column name as a prefix in the new column titles, which can help maintain clarity about the data source.
@@ -76,7 +88,7 @@ Imagine the IT compliance team at your healthcare network needs to review ShareP
 
 After you export the data, use the Power Query Editor in Excel to transform the JSON object in the AuditData column into a structured format. This process enhances data visibility and aids in pinpoint analyses:
 
-- **Filter by RecordType**: Focus on specific events, such as SharePoint sharing operations, to streamline reviews and ensure compliance with healthcare data protection regulations.
+- **Filter by RecordType**: Focus on specific events, such as SharePoint sharing operations, to streamline reviews and ensure compliance with healthcare data regulations.
 - **Filter by Operations**: Narrow down to precise activities to monitor how sensitive information is being accessed or modified.
 
 ## Knowledge check
