@@ -70,4 +70,4 @@ Here's what happens when you delete an alert:
 - It isn't added to the *Closed* list in the summary of alerts.
 - If the code that generated the alert stays the same, and the same code scanning tool runs again without any configuration changes, the alert is shown again in your analysis results.
 
-:::image type="content" source="../media/alert-delete.png" alt-text="Screenshot showing deleting a CodeQL analysis." border="false":::
+:::image type="content" source="../media/alert-delete.png" alt-text="Video of dismissing an alert with dismissal dropdown menu." border="false":::
