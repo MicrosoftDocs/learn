@@ -4,7 +4,7 @@ title: Secure and monitor Azure Kubernetes Service
 metadata:
   title: Secure and monitor Azure Kubernetes Service
   description: "Secure and monitor Azure Kubernetes Service"
-  ms.date: 04/25/2024
+  ms.date: 05/02/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/4-microsoft-defender-containers.md)]
+  [!include[](includes/5-microsoft-defender-containers.md)]
