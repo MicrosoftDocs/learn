@@ -12,7 +12,7 @@ GitHub helps you secure your supply chain, from understanding the dependencies i
 
 Here are some helpful tips before you begin the exercise:
 
-1. After opening the exercise repository, right-click **Start course**, and open the link in a new tab.
+1. After you open the exercise repository, right-click **Start course** and open the link in a new tab.
 2. In the new tab, most of the prompts will automatically fill in for you.
    - For owner, choose your personal account or an organization to host the repository.
    - We recommend creating a public repository, as private repositories will [use Actions minutes](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
