@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 Deciding whether you want to sell your SaaS offer through Microsoft is the most important decision you need to make before publishing to the commercial marketplace. This decision plays a significant role in determining the amount of time and resources you and your team need to invest in your company's presence in the commercial marketplace.
-=======
-Deciding whether you want to sell your software as a service (SaaS) offer through Microsoft is the most important decision you need to make before publishing to the commercial marketplace. This decision plays a large role in determining the amount of time and resources you and your team need to invest in your company's presence in the commercial marketplace.
->>>>>>> bc46d3c91be43aa386c0dc1eb3639aafe00a5b48
 
 ## SaaS offer considerations for all publishing options
 
@@ -10,7 +6,6 @@ Regardless of whether you sell through Microsoft, you need to provide the follow
 
 - Customer Relationship Management (CRM) connection to receive [customer leads](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads).
 
-<<<<<<< HEAD
 - Offer categories and industries that describe your application and help customers find your product in the marketplace.
 
 - Legal terms and conditions that dictate the terms of use for your application.
@@ -21,16 +16,6 @@ Regardless of whether you sell through Microsoft, you need to provide the follow
 > To help you provide the information listed, we’ve created a separate learning module that shares information and best practices to help you make the most of your company’s presence in the Microsoft commercial marketplace. To learn more, you can complete the **[Go to market through the Microsoft commercial marketplace](/training/modules/go-to-market-commercial-marketplace/)** module.
 
 In the rest of this unit, we discuss considerations for publishers that sell their SaaS offers through Microsoft.
-=======
-- Offer categories and industries that describe your application and help customers find your product in the marketplace
-- Legal terms and conditions that dictate the terms of use for your application
-- Details and descriptions of your offer and the value it provides for customers
-
-> [!TIP]
-> To help you provide the information listed, we've created a separate learning module that shares information and best practices that will help you make the most of your company's presence in the Microsoft commercial marketplace. To learn more, you can complete the **[Go to market through the Microsoft commercial marketplace](/training/modules/go-to-market-commercial-marketplace/)** module.
-
-We spend the rest of our time in this unit discussing considerations for publishers that sell their SaaS offers through Microsoft.
->>>>>>> bc46d3c91be43aa386c0dc1eb3639aafe00a5b48
 
 ## Provide information to sell through Microsoft
 
