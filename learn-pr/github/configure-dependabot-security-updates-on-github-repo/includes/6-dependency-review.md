@@ -14,7 +14,7 @@ Though dependency review sounds similar to Dependabot, the key difference is pre
 
 ## Set up dependency review
 
-The simplest way to get started with dependency review is to set it up from an existing repository. The `dependency-review-action` is available for all public repositories, and private repositories that have GitHub Advanced Security enabled. The action scans for vulnerable versions of dependencies introduced by package version changes in pull requests, and warns you about the associated security vulnerabilities. This scans gives you better visibility of what's changing in a pull request, and helps prevent vulnerabilities being added to your repository.
+The simplest way to get started with dependency review is to set it up from an existing repository. The `dependency-review-action` is available for all public repositories, and private repositories that have GitHub Advanced Security enabled. The action scans for vulnerable versions of dependencies introduced by package version changes in pull requests, and warns you about the associated security vulnerabilities. This scan gives you better visibility of what's changing in a pull request, and helps prevent vulnerabilities being added to your repository.
 
 1. Go to the repository's main page.
 2. Select the **Actions** tab.
@@ -83,7 +83,7 @@ There are two methods of configuring the `dependency-review-action`:
 - Inlining the configuration options in your workflow file.
 - Referencing a configuration file in your workflow file.
 
-Let's say you want to configure license checks and custom severity thresholds to control risk from dependency changes. An example inline configuration to accomplish this configurations within your `dependency-review-action` workflow file could be:
+Let's say you want to configure license checks and custom severity thresholds to control risk from dependency changes. An example inline configuration to accomplish this configuration within your `dependency-review-action` workflow file could be:
 
 ```yaml
       - name: Dependency Review
