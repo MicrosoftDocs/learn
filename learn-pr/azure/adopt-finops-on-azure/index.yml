@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.azure.adopt-finops-on-azure
+metadata:
+  title: Adopt FinOps on Azure
+  description: Learn how to implement FinOps on Azure.
+  ms.date: 05/02/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: module
+  ms.service: azure
+title: Adopt FinOps on Azure
+summary: In today's dynamic landscape, effective cloud management is paramount for organizations of all sizes and industries. This module offers a comprehensive overview of FinOps domains, capabilities, and Microsoft resources and solutions that can support your journey. Additionally, it includes a tutorial on how to conduct a FinOps iteration to help you initiate or mature your FinOps practice.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe FinOps domains and capabilities.
+  - Make informed decisions about how to start adopting FinOps.
+  - Leverage Microsoft resources and solutions available to implement FinOps.
+  - Conduct a FinOps iteration.
+  **Attribution** - The content of this learn module is based on the [FinOps Framework](https://www.finops.org/framework/) published by the [FinOps Foundation](https://www.finops.org/).
+prerequisites: |
+  - Basic understanding of FinOps
+  - Basic understanding of cloud computing concepts
+  - Basic understanding of the pay-per-use model
+  - Basic knowledge of Azure platform and Azure services  
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: true
+levels:
+- beginner
+- intermediate
+- advanced
+roles:
+- administrator
+- developer
+- student
+products:
+- azure
+subjects:
+- cloud-computing
+units:
+- learn.azure.adopt-finops-on-azure.1-introduction
+- learn.azure.adopt-finops-on-azure.2-understand-cloud-usage-costs
+- learn.azure.adopt-finops-on-azure.3-quantify-business-value
+- learn.azure.adopt-finops-on-azure.4-optimize-cloud-usage-costs
+- learn.azure.adopt-finops-on-azure.5-manage-finops-practice
+- learn.azure.adopt-finops-on-azure.6-conduct-finops-iteration
+- learn.azure.adopt-finops-on-azure.7-knowledge-check
+- learn.azure.adopt-finops-on-azure.8-summary
+badge:
+  uid: learn.azure.adopt-finops-on-azure.badge
