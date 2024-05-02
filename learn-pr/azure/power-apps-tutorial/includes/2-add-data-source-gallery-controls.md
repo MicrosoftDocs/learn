@@ -1,6 +1,6 @@
 Information is a vital part of any application; the entire logic resides on the type of information stored. In Power Apps, the data is stored in a data source that can be accessed using connections. The connection utilizes a particular connector to converse with the data source. Many significant services and on-premises data sources, such as SharePoint, SQL Server, Office 365, Salesforce, and Twitter, have connectors in Power Apps.
 
-The most common data sources are tables, which you can use to store and retrieve information. Connections help you read and write data in Microsoft Excel workbooks, SharePoint lists, SQL tables, and many other formats. You can store these in cloud services such as OneDrive for Business, DropBox, and SQL Server.
+The most common data sources are tables, which you can use to store and retrieve information. Connections help you read and write data in Microsoft Excel workbooks, SharePoint lists, SQL tables, and many other formats. You can store these in cloud services such as OneDrive, DropBox, and SQL Server.
 
 A connector might give tables of information or actions. A few connectors provide just tables, some provide just actions, and some provide both. Your connector might be either standard or custom.
 
