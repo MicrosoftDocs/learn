@@ -4,8 +4,8 @@ title: Work with the file system
 metadata:
   title: Work with the file system
   description: Use the "fs" module to work with the file system.
-  author: burkeholland
-  ms.author: buhollan
+  author: diberry
+  ms.author: diberry
   ms.date: 03/22/2023
   ms.topic: unit
   ms.custom:

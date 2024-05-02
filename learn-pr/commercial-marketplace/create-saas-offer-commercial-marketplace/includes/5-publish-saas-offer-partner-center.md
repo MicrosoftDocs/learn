@@ -15,7 +15,7 @@ The "sell through Microsoft" selection you make in this step determines the info
 When you get to the **Properties** tab of the publishing process, you’re asked to define the categories and industries that are used to index your offering in the commercial marketplace. You select your choices from a prepopulated list of options.
 
 > [!IMPORTANT]
-> The categories you select to describe your offer will determine your SaaS offer’s placement in Azure Marketplace or Microsoft AppSource. As a reminder, business applications are published to Microsoft AppSource, while IT and Developer applications are published to Azure Marketplace.
+> The categories you select to describe your offer will determine your SaaS offer's placement in Azure Marketplace or Microsoft AppSource. As a reminder, business applications are published to Microsoft AppSource, while IT and Developer applications are published to Azure Marketplace.
 
 The **Properties** tab is also where you provide the legal terms and conditions that govern the use of your SaaS application by customers. You can use the commercial marketplace standard contract, or you can define your own terms and conditions. If you choose the standard contract, you’re given the option to supplement it with amendments that you define. For more detail on terms and conditions, you can reference our [standard contract for Microsoft commercial marketplace documentation](/azure/marketplace/standard-contract).
 
@@ -31,7 +31,7 @@ For tips to help you complete this step, reference our documentation on [offer l
 
 When you publish your offer, you’re able to identify a preview audience that can access the offer and review it before it’s live in the commercial marketplace. For more information, review our [documentation on adding a preview audience for your SaaS offer](/azure/marketplace/create-new-saas-offer-preview).
 
-### Complete your offer’s technical configuration
+### Complete your offer's technical configuration
 
 :::image type="content" source="../media/7-technical-configuration.png" alt-text="Screenshot of the technical configuration fields required to publish a transact offer.":::
 

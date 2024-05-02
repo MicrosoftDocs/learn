@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-virtual-networks.virtual-wide-area-network
+title: Plan and implement Virtual Wide Area Network, including secured virtual hub
+metadata:
+  title: Plan and implement Virtual Wide Area Network, including secured virtual hub
+  description: "Plan and implement Virtual Wide Area Network, including secured virtual hub"
+  ms.date: 04/29/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-virtual-wide-area-network.md)]

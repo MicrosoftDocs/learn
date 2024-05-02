@@ -2,11 +2,12 @@
 uid: learn.wwl.introduction-to-continuous-delivery
 metadata:
   title: Introduction to continuous delivery
-  description: "Introduction to continuous delivery"
+  description: Introduction to continuous delivery
   ms.date: 06/20/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: module
+  ms.service: azure
 title: Introduction to continuous delivery
 summary: This module introduces continuous delivery concepts and their implementation in a traditional IT development cycle.
 abstract: |

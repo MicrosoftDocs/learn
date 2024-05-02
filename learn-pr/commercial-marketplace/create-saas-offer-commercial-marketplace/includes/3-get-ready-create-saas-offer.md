@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Deciding whether you want to sell your SaaS offer through Microsoft is the most important decision you need to make before publishing to the commercial marketplace. This decision plays a significant role in determining the amount of time and resources you and your team need to invest in your company's presence in the commercial marketplace.
+=======
+Deciding whether you want to sell your software as a service (SaaS) offer through Microsoft is the most important decision you need to make before publishing to the commercial marketplace. This decision plays a large role in determining the amount of time and resources you and your team need to invest in your company's presence in the commercial marketplace.
+>>>>>>> bc46d3c91be43aa386c0dc1eb3639aafe00a5b48
 
 ## SaaS offer considerations for all publishing options
 
@@ -6,6 +10,7 @@ Regardless of whether you sell through Microsoft, you need to provide the follow
 
 - Customer Relationship Management (CRM) connection to receive [customer leads](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads).
 
+<<<<<<< HEAD
 - Offer categories and industries that describe your application and help customers find your product in the marketplace.
 
 - Legal terms and conditions that dictate the terms of use for your application.
@@ -16,6 +21,16 @@ Regardless of whether you sell through Microsoft, you need to provide the follow
 > To help you provide the information listed, we’ve created a separate learning module that shares information and best practices to help you make the most of your company’s presence in the Microsoft commercial marketplace. To learn more, you can complete the **[Go to market through the Microsoft commercial marketplace](/training/modules/go-to-market-commercial-marketplace/)** module.
 
 In the rest of this unit, we discuss considerations for publishers that sell their SaaS offers through Microsoft.
+=======
+- Offer categories and industries that describe your application and help customers find your product in the marketplace
+- Legal terms and conditions that dictate the terms of use for your application
+- Details and descriptions of your offer and the value it provides for customers
+
+> [!TIP]
+> To help you provide the information listed, we've created a separate learning module that shares information and best practices that will help you make the most of your company's presence in the Microsoft commercial marketplace. To learn more, you can complete the **[Go to market through the Microsoft commercial marketplace](/training/modules/go-to-market-commercial-marketplace/)** module.
+
+We spend the rest of our time in this unit discussing considerations for publishers that sell their SaaS offers through Microsoft.
+>>>>>>> bc46d3c91be43aa386c0dc1eb3639aafe00a5b48
 
 ## Provide information to sell through Microsoft
 
@@ -27,7 +42,9 @@ Let’s spend some time reviewing concepts that can help you decide how you want
 
 SaaS offers that are sold through Microsoft must have at least one plan. You can create various plans with different pricing and availability for the same offer to give your customers choices to purchase your application. Plans can differ in price, billing terms, and levels of functionality. For more detailed information on offer plans and available SaaS pricing models, you can check out our [documentation on planning a SaaS offer](/azure/marketplace/plan-saas-offer).
 
-:::image type="content" source="../media/4-plans-pricing-setup.png" alt-text="Screenshot of the pricing and availability configuration page in Partner Center.":::
+:::image type="content" source="../media/4-plans-pricing-setup.png" alt-text="Screenshot of the top half of the pricing and availability configuration page in Partner Center.":::
+
+:::image type="content" source="../media/4-plans-pricing-setup-review-publish.png" alt-text="Screenshot of the bottom half of the pricing and availability configuration page in Partner Center.":::
 
 #### SaaS offer pricing
 
@@ -51,9 +68,9 @@ When you choose the flat-rate pricing model, you can also use the marketplace me
 
 :::image type="content" source="../media/6-metering-service-dimensions.png" alt-text="Screenshot of the metering service configuration details in Partner Center.":::
 
-Let’s look at an example to help illustrate this concept:
+Let's look at an example to help illustrate this concept:
 
-> Let’s say you sell a SaaS application that helps customers send and share files that are too big to send via email. You chose a flat-rate pricing model that includes 20 TB of file transfers per year for your customers. In addition to the flat monthly rate you charge customers to use your software, you also want to charge them for any data transfers that exceed the 20 TB included in the annual subscription. You can use the marketplace metering service to charge customers per additional GB of data transferred using your application each month.
+> Let's say you sell a SaaS application that helps customers send and share files that are too big to send via email. You chose a flat-rate pricing model that includes 20 TB of file transfers per year for your customers. In addition to the flat monthly rate you charge customers to use your software, you also want to charge them for any data transfers that exceed the 20 TB included in the annual subscription. You can use the marketplace metering service to charge customers per additional GB of data transferred using your application each month.
 
 > [!TIP]
 > You can also use the marketplace metering service to create a fully consumption-based pricing model for your SaaS offer. To do this, set the flat rate price to $0 and use the metering service to dictate an associated price per unit of measure.

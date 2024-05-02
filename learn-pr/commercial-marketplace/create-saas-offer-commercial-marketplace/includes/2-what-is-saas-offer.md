@@ -50,11 +50,12 @@ Choosing to sell your offer through Microsoft is an important decision that has 
 
 - **Other commercial marketplace benefits**: When you sell through Microsoft, you get access to other commercial marketplace benefits for publishers. You get to take advantage of benefits including:
 
+- **Technical configuration of your offer**: When you sell through Microsoft, you're required to complete the technical configuration step of the publishing process in Partner Center. The technical information you provide integrates your offer with the commercial marketplace to provide a better experience for you and your customers. We cover SaaS offer technical components in more detail later in this module.
+- **Customer experience**: When you sell through Microsoft, it's easier for your customers to try, buy, and deploy your application from the commercial marketplace. Customers can activate a free software trial and purchase your solution directly from Microsoft AppSource or Azure Marketplace without having to get in touch with anyone from your organization. Because many customers use the commercial marketplace to streamline their software purchases, we recommend that software vendors sell through Microsoft to provide a better experience for your customers.
+- **Other commercial marketplace benefits**: When you sell through Microsoft, you get access to other commercial marketplace benefits for publishers. You get to take advantage of benefits including:
   - Cost savings and operational efficiencies as Microsoft takes on billing, collections, currency conversions, and taxation for purchases from the commercial marketplace.
-  
   - More valuable [Marketplace Rewards](/azure/marketplace/gtm-your-marketplace-benefits) program benefits, which are unlocked when your offer reaches revenue milestones through marketplace.
-
-  - The ability to take advantage of customers’ Azure [consumption commitment benefit](/azure/marketplace/azure-consumption-commitment-benefit). This benefit makes it possible for customers to purchase qualified offers from the commercial marketplace and receive credit against their Microsoft Azure Consumption Commitment (MACC). This streamlines purchasing and budgeting for customers with existing enterprise agreements (EA) or Microsoft Customer Agreements (MCA).
+  - The ability to take advantage of customers' Azure [consumption commitment benefit](/azure/marketplace/azure-consumption-commitment-benefit). This benefit makes it possible for customers to purchase qualified offers from the commercial marketplace and receive credit against their Microsoft Azure Consumption Commitment (MACC). This streamlines purchasing and budgeting for customers with existing enterprise agreements (EA) or Microsoft Customer Agreements (MCA).
 
 ### Summary
 

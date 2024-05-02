@@ -63,7 +63,7 @@ After sensitivity labels are enabled for containers, you can then configure prot
 
 Now that we've covered the basics of using sensitivity labels in our Microsoft 365 tools, it's clear these steps are just the beginning of ensuring our firm's information is well protected and compliant.
 
-Next, we learn how to use these labels in our work. We explore how to use them for groups in Outlook on the web and for securing documents in SharePoint, among other scenarios. This helps us keep our information safe while supporting effective teamwork across the globe.
+Next, we explore how to effectively manage sensitivity labels in Office applications, ensuring documents and emails are protected.
 
 ## Knowledge check
 

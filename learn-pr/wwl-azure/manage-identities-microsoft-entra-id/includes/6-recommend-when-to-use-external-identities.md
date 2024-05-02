@@ -5,9 +5,9 @@ B2B collaboration is a feature within Microsoft Entra External ID that lets you 
 
 A simple invitation and redemption process lets partners use their own credentials to access your company's resources. You can also enable self-service sign-up user flows to let external users sign up for apps or resources themselves. Once the external user has redeemed their invitation or completed sign-up, they're represented in your directory as a user object. The user type for these B2B collaboration users is typically set to "guest" and their user principal name contains the \#EXT\# identifier.
 
-Developers can use Microsoft Entra business-to-business APIs to customize the invitation process or write applications like self-service sign-up portals.
+Developers can use Microsoft Entra business-to-business APIs to customize the invitation process or write applications like self-service sign-up portals. For licensing and pricing information related to guest users, refer to [Microsoft Entra External ID pricing](https://azure.microsoft.com/pricing/details/active-directory/external-identities/).
 
-**Collaborate with any partner using their identities**
+**Collaborate with any partner using their identities**<br>
 
 With Microsoft Entra B2B, the partner uses their own identity management solution, so there's no external administrative overhead for your organization. Guest users sign in to your apps and services with their own work, school, or social identities.
 
@@ -27,9 +27,9 @@ B2B collaboration is enabled by default, but comprehensive admin settings let yo
 
 As an administrator, you can easily add guest users to your organization in the Azure portal.
 
- -  Create a new guest user in Microsoft Entra ID, similar to how you'd add a new user.<br>
+ -  [Create a new guest user](/entra/external-id/b2b-quickstart-add-guest-users-portal) in Microsoft Entra ID, similar to how you'd add a new user.
  -  Assign guest users to apps or groups.
- -  Send an invitation email that contains a redemption link, or send a direct link to an app you want to share.
+ -  [Send an invitation email](/entra/external-id/invitation-email-elements) that contains a redemption link, or send a direct link to an app you want to share.
 
 :::image type="content" source="../media/invite-external-user-1b53c66b.png" alt-text="Screenshot showing the Microsoft Entra admin center for inviting an external user.":::
 
@@ -41,7 +41,7 @@ As an administrator, you can easily add guest users to your organization in the 
 
 ## Allow self-service sign-up
 
-With a self-service sign-up user flow, you can create a sign-up experience for external users who want to access your apps. As part of the sign-up flow, you can provide options for different social or enterprise identity providers, and collect information about the user.
+With a self-service sign-up user flow, you can create a sign-up experience for external users who want to access your apps. As part of the sign-up flow, you can provide options for different social or enterprise identity providers, and collect information about the user. Learn about [self-service sign-up and how to set it up](/entra/external-id/self-service-sign-up-overview).
 
 You can also use API connectors to integrate your self-service sign-up user flows with external cloud systems. You can connect with custom approval workflows, perform identity verification, and validate user-provided information.<br>
 
@@ -63,8 +63,8 @@ You can use authentication and authorization policies to protect your corporate 
 
 You can delegate guest user management to application owners so that they can add guest users directly to any application they want to share, whether it's a Microsoft application or not.
 
- -  Administrators set up self-service app and group management.<br>
- -  Non-administrators use their Access Panel to add guest users to applications or groups.
+ -  Administrators set up self-service app and group management.
+ -  Non-administrators use their [Access Panel](https://myapps.microsoft.com/) to add guest users to applications or groups.
 
 :::image type="content" source="../media/self-service-application-portal-26f89656.png" alt-text="Screenshot showing how application and group owners manage their own guest users.":::
 
@@ -73,18 +73,19 @@ You can delegate guest user management to application owners so that they can ad
 
 Bring your external partners on board in ways customized to your organization's needs.
 
- -  Use Microsoft Entra entitlement management to configure policies that manage access for external users.<br>
- -  Use the B2B collaboration invitation APIs to customize your onboarding experiences.
+ -  Use [Microsoft Entra entitlement management](/entra/id-governance/entitlement-management-overview) to configure policies that [manage access for external users](/entra/id-governance/entitlement-management-external-users#how-access-works-for-external-users).
+ -  Use the [B2B collaboration invitation APIs](/graph/api/resources/invitation) to customize your onboarding experiences.
 
 ## Integrate with Identity providers
 
-Microsoft Entra External ID supports external identity providers like social media and social networking services, Microsoft accounts, Cloud providers, or enterprise identity providers. You can set up federation with identity providers. This way your external users can sign in with their existing social or enterprise accounts instead of creating a new account just for your application.
+Microsoft Entra External ID supports external identity providers like Facebook, Microsoft accounts, Google, or enterprise identity providers. You can set up federation with identity providers. This way your external users can sign in with their existing social or enterprise accounts instead of creating a new account just for your application. Learn more about [identity providers for External ID](/entra/external-id/identity-providers).
 
 :::image type="content" source="../media/integrate-with-identity-providers-49ba1fd1.png" alt-text="Screenshot showing the external identities configuration and settings page in the Azure dashboard.":::
-
+<br>
 
 ## Integrate with SharePoint and OneDrive
 
-You can enable integration with SharePoint and OneDrive to share files, folders, list items, document libraries, and sites with people outside your organization, while using Azure B2B for authentication and management. The users you share resources with are typically guest users in your directory, and permissions and groups work the same for these guests as they do for internal users. When enabling integration with SharePoint and OneDrive, you also enable the email one-time passcode feature in Microsoft Entra B2B to serve as a fallback authentication method.
+You can [enable integration with SharePoint and OneDrive](/sharepoint/sharepoint-azureb2b-integration) to share files, folders, list items, document libraries, and sites with people outside your organization, while using Azure B2B for authentication and management. The users you share resources with are typically guest users in your directory, and permissions and groups work the same for these guests as they do for internal users. When enabling integration with SharePoint and OneDrive, you also enable the [email one-time passcode](/entra/external-id/one-time-passcode) feature in Microsoft Entra B2B to serve as a fallback authentication method.
 
 :::image type="content" source="../media/email-one-time-passcode-for-guests-d5d36965.png" alt-text="Screenshot showing how to configure an identity provider email with a one-time passcode.":::
+<br>

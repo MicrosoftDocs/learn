@@ -3,38 +3,38 @@ uid: learn.wwl.introduction-to-azure-virtual-networks.enable-cross-vnet-connecti
 title: Enable cross-virtual network connectivity with peering
 metadata:
   title: Enable cross-virtual network connectivity with peering
-  description: "Enable cross-virtual network connectivity with peering"
-  ms.date: 08/16/2023
+  description: "Enable cross-virtual network connectivity with peering."
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/7-enable-cross-virtual-network-connectivity-peering.md)]
 quiz:
-  title: ""
+  title: "Check your knowledge"
   questions:
   - content: "When one needs the resources in one VNet to communicate with resources in a subnet in a different VNet. Which Azure network feature should be used?"
     choices:
-    - content: "Internal DNS."
+    - content: "Internal Domain Name System (DNS)."
       isCorrect: false
-      explanation: "That is incorrect, internal DNS is a service provided by Azure."
+      explanation: "Incorrect, internal DNS is a service provided by Azure."
     - content: "Azure Availability Zones."
       isCorrect: false
-      explanation: "That is incorrect, Azure Availability Zones are a high availability feature. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking."
+      explanation: "Incorrect, Azure Availability Zones are a high availability feature. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking."
     - content: "VNet peering."
       isCorrect: true
-      explanation: "That is correct, virtual network peering enables you to seamlessly connect separate VNets with optimal network performance, whether they are in the same Azure region (VNet peering) or in different regions (Global VNet peering)."
-  - content: "When configuring global peering, what changes will occur in the peered VNets?"
+      explanation: "Correct, virtual network peering enables you to seamlessly connect separate VNets with optimal network performance, whether they are in the same Azure region (VNet peering) or in different regions (Global VNet peering)."
+  - content: "When configuring global peering, what changes occur in the peered VNets?"
     choices:
     - content: "A peering entry is added to the routing table in the source VNet only."
       isCorrect: false
-      explanation: "That is incorrect, the VNets communicate as peers, so resources in each VNet must be able to communicate with each other. Adding a single peering entry only allows traffic to be routed one way."
+      explanation: "Incorrect, the VNets communicate as peers, so resources in each VNet must be able to communicate with each other. Adding a single peering entry only allows traffic to be routed one way."
     - content: "All traffic on the Vnet must be routed through a Gateway."
       isCorrect: false
-      explanation: "That is incorrect, resources on each VNet can communicate seamlessly with one another."
+      explanation: "Incorrect, resources on each VNet can communicate seamlessly with one another."
     - content: "A peering entry is added to the routing table in each VNet."
       isCorrect: true
-      explanation: "That is correct, VNet Global Peering entries are added to the routing tables in each VNet to direct traffic to the peered VNet."
+      explanation: "Correct, VNet Global Peering entries are added to the routing tables in each VNet to direct traffic to the peered VNet."

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-your-own-ai-copilot-vcore-based-azure-cosmos-db-mongodb.understand-vector-database-retrieval-augmentation-generation-embeddings
+title: Understand vector databases, Retrieval Augmentation Generation, and embeddings in AI
+metadata:
+  title: Understand vector databases, Retrieval Augmentation Generation, and embeddings in AI
+  description: "Understand vector databases, Retrieval Augmentation Generation, and embeddings in AI."
+  ms.date: 04/13/2024
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-understand-vector-database-retrieval-augmentation-generation-embeddings.md)]

@@ -4,11 +4,12 @@ title: Administer IP Address Management
 metadata:
   title: Administer IP Address Management
   description: "Administer IP Address Management"
-  ms.date: 03/01/2021
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-azureSandbox: false
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/4-administer-ip-address-management.md)]

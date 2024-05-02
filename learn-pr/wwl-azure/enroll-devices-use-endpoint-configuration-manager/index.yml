@@ -3,24 +3,34 @@ uid: learn.wwl.enroll-devices-use-endpoint-configuration-manager
 metadata:
   title: Enroll devices using Microsoft Configuration Manager
   description: "This module introduces students to client deployment options and some of the high-level management and monitoring options that are available using Configuration Manager"
-  ms.date: 04/27/2023
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: rstearman
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: configuration-manager
+  ai-usage: human-only
 title: Enroll devices using Microsoft Configuration Manager
 summary: This module introduces students to client deployment options and some of the high-level management and monitoring options that are available using Configuration Manager.
 abstract: |
   After completing this module, you will be able to:
-  - Describe Microsoft Endpoint Manager.
-  - Understand the advantages of managing a client with Configuration Manager.
-  - Deploy the Configuration Manager client.
-  - Monitor the Configuration Manager client.
-  - Manage Configuration Manager devices.
+
+  -   Describe Microsoft Endpoint Manager.
+
+  -   Understand the advantages of managing a client with Configuration Manager.
+
+  -   Deploy the Configuration Manager client.
+
+  -   Monitor the Configuration Manager client.
+
+  -   Manage Configuration Manager devices.
 prerequisites: |
-  - Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later.
-  - Strong understanding of computer networking, client security, and application concepts.
-  - Experience using Active Directory Domain Services.
+  -   Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later.
+
+  -   Strong understanding of computer networking, client security, and application concepts.
+
+  -   Experience using Active Directory Domain Services.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

@@ -1,14 +1,22 @@
+<<<<<<< HEAD
 Now that you understand the baseline SaaS offer concepts, let's review some information to help you build a SaaS offer to be sold through Microsoft. As a reminder, an offer sold through Microsoft is also referred to as a **transact offer**.
 
 The commercial marketplace uses APIs to manage the entire lifecycle of SaaS subscriptions purchased through the marketplace. Subscription activation, usages, updates, and cancellations are facilitated through a set of SaaS subscription APIs. You have to integrate with these APIs to sell your SaaS offer through Microsoft.
 
 To facilitate communication about subscription statuses and events between your organization and the commercial marketplace, you need to provide a **landing page URL**, a **connection webhook**, and the **Microsoft Entra identity** that your application uses when communicating with the marketplace. If you decide to use the marketplace metering service to add a consumption-based pricing element to your offer, you also need to integrate with the marketplace metered billing APIs.
+=======
+Now that you understand the baseline software as a service (SaaS) offer concepts, let's review some information that can help you build a SaaS offer that's sold through Microsoft. As a reminder, an offer sold through Microsoft is also referred to as a **transact offer**.
+
+The commercial marketplace uses APIs to manage the entire lifecycle of SaaS subscriptions purchased through the marketplace. Subscription activation, usages, updates, and cancellations are facilitated through a set of SaaS subscription APIs. You have to integrate with these APIs to sell your SaaS offer through Microsoft.
+
+To facilitate communication about subscription statuses and events between your organization and the commercial marketplace, you need to provide a **landing page URL**, a **connection webhook**, and the **Microsoft Entra identity** that your application can use when communicating with the marketplace. If you decide to use the marketplace metering service to add a consumption-based pricing element to your offer, you also need to integrate with the marketplace metered billing APIs.
+>>>>>>> bc46d3c91be43aa386c0dc1eb3639aafe00a5b48
 
 :::image type="content" source="../media/7-technical-configuration.png" alt-text="Screenshot of the technical configuration fields required to publish a transact offer.":::
 
 ### Your offer's landing page
 
-Your SaaS offer’s landing page is the URL to which customers will be redirected after getting your offer from Microsoft AppSource or Azure Marketplace. The landing page has two technical requirements:
+Your SaaS offer's landing page is the URL to which customers will be redirected after getting your offer from Microsoft AppSource or Azure Marketplace. The landing page has two technical requirements:
 
 - It must be integrated with Microsoft Entra ID to log customers in before using your application.
 
