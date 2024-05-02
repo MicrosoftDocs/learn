@@ -21,5 +21,5 @@ This e-book guides you through the FinOps principles to highlight Microsoft solu
 - [FinOps documentation](/azure/cost-management-billing/finops/)<br>
 Find technical documentation and guidance to help make informed decisions and follow FinOps best practices.
 
-- [FinOps on Azure](https://azure.microsoft.com/en-us/solutions/finops/)<br>
+- [FinOps on Azure](https://azure.microsoft.com/solutions/finops/)<br>
 Explore the range of Microsoft products and services designed to bolster your efforts in implementing FinOps best practices.
