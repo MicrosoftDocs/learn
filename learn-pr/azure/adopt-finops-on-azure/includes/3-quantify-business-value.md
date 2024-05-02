@@ -2,43 +2,43 @@ Quantifying business value is crucial for organizations to justify their investm
 
 ![Video placeholder: Overview MS solutions the capabilities in this domain.](../media/3-video-placeholder-small.png)
 
-## Forecasting
+## <u>Forecasting</u>
 
-**Objective**:
+#### Objective:
 
-- Applying statistical methods and forecasting techniques using historical data, current spend patterns, planned changes and related financial metrics to forecast future cloud costs, plan budgets and allocate resources efficiently.
+Applying statistical methods and forecasting techniques using historical data, current spend patterns, planned changes and related financial metrics to forecast future cloud costs, plan budgets and allocate resources efficiently.
 
-**Get started**:
+#### Get started:
 
 <iframe title="FinOps Interactive Guide for Forecasting." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%206%20-%20Forecasting" width="800" height="500"></iframe>
 
-## Budgeting
+## <u>Budgeting</u>
 
-**Objective**:
+#### Objective:
 
-- Strategic and ongoing process for setting, monitoring, and managing financial plans to manage cloud spending effectively, align it with business objectives, and ensure financial accountability throughout the cloud services lifecycle.
+Strategic and ongoing process for setting, monitoring, and managing financial plans to manage cloud spending effectively, align it with business objectives, and ensure financial accountability throughout the cloud services lifecycle.
 
-**Get started**:
+#### Get started:
 
 <iframe title="FinOps Interactive Guide for Budgeting." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%207%20-%20Budget%20management" width="800" height="500"></iframe>
 
-## Unit economics
+## <u>Unit economics</u>
 
-**Objective**:
+#### Objective:
 
-- Develop and track unit economic metrics that reveal a quantitative understanding of how an organization's cloud management practices impact specific business activities, customer segments, or products, to drive efficiency and maximize cloud value.
+Develop and track unit economic metrics that reveal a quantitative understanding of how an organization's cloud management practices impact specific business activities, customer segments, or products, to drive efficiency and maximize cloud value.
 
-## Planning & estimating
+## <u>Planning & estimating</u>
 
-**Objective**:
+#### Objective:
 
-- Anticipating fluctuations in cloud spending and demand for resources by using historical data and current spending to estimate future costs and plan investments in an organization's cloud environment.
+Anticipating fluctuations in cloud spending and demand for resources by using historical data and current spending to estimate future costs and plan investments in an organization's cloud environment.
 
-## Benchmarking
+## <u>Benchmarking</u>
 
-**Objective**:
+#### Objective:
 
-- Use efficiency metrics to evaluate an organization's cloud performance and financial management against other departments in the business or industry peers to inform decision-making and align FinOps with business objectives.
+Use efficiency metrics to evaluate an organization's cloud performance and financial management against other departments in the business or industry peers to inform decision-making and align FinOps with business objectives.
 
 ----------
 

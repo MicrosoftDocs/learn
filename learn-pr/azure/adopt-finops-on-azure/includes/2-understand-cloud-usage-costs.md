@@ -2,41 +2,41 @@ Understanding cloud usage and costs is important for effective cloud management 
 
 ![Video placeholder: Overview MS solutions the capabilities in this domain.](../media/2-video-placeholder-small.png)
 
-## Data ingestion
+## <u>Data ingestion</u>
 
-**Objective**:
+#### Objective:
 
-- Collect, transfer, and normalize data from various sources for analysis, with a focus on understanding the usage and costs associated with an organization's cloud infrastructure.
+Collect, transfer, and normalize data from various sources for analysis, with a focus on understanding the usage and costs associated with an organization's cloud infrastructure.
 
-## Allocation
+## <u>Allocation</u>
 
-**Objective**:
+#### Objective:
 
-- Define strategies to assign and split shared cloud costs using accounts, tags, labels, and other metadata, creating accountability among teams and projects within an organization.
+Define strategies to assign and split shared cloud costs using accounts, tags, labels, and other metadata, creating accountability among teams and projects within an organization.
 
-**Get started**:
+#### Get started:
 
 <iframe title="FinOps Interactive Guide for Cost Allocation." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%201%20-%20Cost%20allocation" width="800" height="500"></iframe>
 
 <iframe title="FinOps Interactive Guide for Manage Shared Costs." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%203%20-%20Manage%20shared%20costs" width="800" height="500"></iframe>
 
-## Reporting + analytics
+## <u>Reporting + analytics</u>
 
-**Objective**:
+#### Objective:
 
-- Examine and showback cloud data to gain insights into usage and spend patterns to identify cost optimization opportunities, improve cost efficiency, and make informed financial decisions regarding cloud resources.
+Examine and showback cloud data to gain insights into usage and spend patterns to identify cost optimization opportunities, improve cost efficiency, and make informed financial decisions regarding cloud resources.
 
-**Get started**:
+#### Get started:
 
 <iframe title="FinOps Interactive Guide for Data Analysis & Showback." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%202%20-%20Data%20analysis%20and%20showback" width="800" height="500"></iframe>
 
-## Anomaly management
+## <u>Anomaly management</u>
 
-**Objective**:
+#### Objective:
 
-- Detect, identify, alert, and manage unexpected cloud cost and usage irregularities in a timely manner to lower risk in cost-effective cloud operations.
+Detect, identify, alert, and manage unexpected cloud cost and usage irregularities in a timely manner to lower risk in cost-effective cloud operations.
 
-**Get started**:
+#### Get started:
 
 <iframe title="FinOps Interactive Guide for Manage Anomalies." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%205%20-%20Manage%20anomalies" width="800" height="500"></iframe>
 

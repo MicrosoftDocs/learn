@@ -2,61 +2,61 @@ By implementing effective FinOps management strategies, organizations can fully 
 
 ![Video placeholder: Overview MS solutions the capabilities in this domain.](../media/5-video-placeholder-small.png)
 
-## FinOps practice operations
+## <u>FinOps practice operations</u>
 
-**Objective**:
+#### Objective:
 
-- Driving a culture of accountability through effective organizational alignment of the FinOps practice and empowering the FinOps function within teams. 
+Driving a culture of accountability through effective organizational alignment of the FinOps practice and empowering the FinOps function within teams. 
 
-## Onboarding workloads
+## <u>Onboarding workloads</u>
 
-**Objective**:
+#### Objective:
 
-- Developing a cloud front door process to onboard brownfield and greenfield applications through financial viability and technical feasibility assessment criteria that supports operational objectives, while also maintaining effective cost management.
+Developing a cloud front door process to onboard brownfield and greenfield applications through financial viability and technical feasibility assessment criteria that supports operational objectives, while also maintaining effective cost management.
 
-## FinOps education & enablement
+## <u>FinOps education & enablement</u>
 
-**Objective**:
+#### Objective:
 
-- Training, skill development, and operational activities that enable teams throughout the organization to adopt and deliver the FinOps practice.
+Training, skill development, and operational activities that enable teams throughout the organization to adopt and deliver the FinOps practice.
 
-## Invoicing & chargeback
+## <u>Invoicing & chargeback</u>
 
-**Objective**:
+#### Objective:
 
-- Developing specific reporting, reconciliation workflows, and chargeback models, in collaboration with the finance team, to align Cloud Service Provider (CSP) invoices with billing data for attributing cloud costs back to specific budgets within an organization.
+Developing specific reporting, reconciliation workflows, and chargeback models, in collaboration with the finance team, to align Cloud Service Provider (CSP) invoices with billing data for attributing cloud costs back to specific budgets within an organization.
 
-## Cloud policy & governance
+## <u>Cloud policy & governance</u>
 
-**Objective**:
+#### Objective:
 
-- Establishing and evolving policies, controls and governance mechanisms to ensure that cloud use aligns with business objectives, complies with regulatory requirements, and optimizes cloud resources efficiently.
+Establishing and evolving policies, controls and governance mechanisms to ensure that cloud use aligns with business objectives, complies with regulatory requirements, and optimizes cloud resources efficiently.
 
-## Intersecting disciplines
+## <u>Intersecting disciplines</u>
 
-**Objective**:
+#### Objective:
 
-- Coordinating activities between an organization's Core FinOps Personas and other disciplines, processes or Allied Personas that may be operating independently - such as ITAM, ITFM, TBM, Security, and Sustainability - in order to promote collaboration for effective cloud operations.
+Coordinating activities between an organization's Core FinOps Personas and other disciplines, processes or Allied Personas that may be operating independently - such as ITAM, ITFM, TBM, Security, and Sustainability - in order to promote collaboration for effective cloud operations.
 
-## FinOps tooling & services
+## <u>FinOps tooling & services</u>
 
-**Objective**:
+#### Objective:
 
-- Developing criteria and methodology to capture proof-of-value for effectively selecting FinOps tools and services that align to the Framework Capabilities to empower the FinOps practice.
+Developing criteria and methodology to capture proof-of-value for effectively selecting FinOps tools and services that align to the Framework Capabilities to empower the FinOps practice.
 
-**Get started**:
+#### Get started:
 
 - [FinOps Toolkit](https://microsoft.github.io/finops-toolkit/)
 
 <iframe title="FinOps on Azure Interactive Guides (approximately 1 hour, 15 minutes)." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure" width="800" height="500"></iframe>
 
-## FinOps assessment
+## <u>FinOps assessment</u>
 
-**Objective**:
+#### Objective:
 
-- Defining the criteria and methodology that provide input for a measurable and repeatable analysis for progressively assessing the maturity of a FinOps practice, in the context of the FinOps Framework.
+Defining the criteria and methodology that provide input for a measurable and repeatable analysis for progressively assessing the maturity of a FinOps practice, in the context of the FinOps Framework.
 
-**Get started**:
+#### Get started:
 
 - [FinOps Review Assessment](/assessments/ad1c0f6b-396b-44a4-924b-7a4c778a13d3/)
 

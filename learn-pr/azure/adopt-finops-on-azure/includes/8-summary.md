@@ -4,7 +4,7 @@ As we conclude this module, we've embarked on a journey through the FinOps Found
 
 By now, you've acquired the knowledge and insights needed to make informed decisions tailored to your organization's unique needs. As you progress beyond this course, we encourage you to apply these resources and solutions to implement best practices that can support your efforts to drive efficiency and accelerate business growth.
 
-## Learn more
+## <u>Learn more</u>
 
 - [FinOps review assessment](/assessments/ad1c0f6b-396b-44a4-924b-7a4c778a13d3/)<br>
 Use FinOps guidance to assess your organization's capability gaps. Get recommendations for maximizing cloud business value using FinOps best practices.
