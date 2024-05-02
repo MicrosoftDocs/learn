@@ -19,9 +19,9 @@ quiz:
     - content: "Creating an Azure service principal and storing your credentials in the `pom.xml` file."
       isCorrect: false
       explanation: "Using an service principal in pom.xml is a supported authentication method."
-    - content: "Creating an Azure service principal and storing your credentials in a certificate file, then modifying your `pom.xml` file to use your credentials."
-      isCorrect: false
-      explanation: "Using a certificate file is a supported authentication method. To do this, use <certificate> and <certificatePassword> in the <auth> element."
+    - content: "Signing in with Maven."
+      isCorrect: true
+      explanation: "mvn azure:login has been deprecated as an authentication type."
     - content: "Signing in using the Azure CLI."
       isCorrect: false
       explanation: "Signing in using the Azure CLI is a supported authentication method."
