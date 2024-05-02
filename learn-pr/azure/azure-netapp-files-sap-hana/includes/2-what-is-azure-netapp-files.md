@@ -45,7 +45,10 @@ Actual data blocks aren't copied, which leads to two efficiencies:
 
 - **Speed**: Creating a snapshot is near-instantaneous. No matter the volume size, creating a snapshot takes only a few seconds. Reverting a volume to a snapshot is also near-instantaneous, supporting fast data recovery in case of a corruption or malicious hijack event.
 - **Space**: A snapshot consumes minimal storage space because it doesn't copy the data blocks of the entire volume. Two snapshots taken in sequence differ only by the blocks added or changed in the time interval between the two.
-You can create up to 255 snapshots per volume. Creating a snapshot doesn't impact volume performance. You can create and maintain snapshots in two ways:
+You can create up to 255 snapshots per volume. Creating a snapshot doesn't impact volume performance. 
+
+You can create and maintain snapshots in two ways:
+
 - **Manual**: Create on-demand snapshots by using the Azure portal, Azure CLI, Azure PowerShell, or Azure REST API.
 - **Automatic**: Automated snapshot creation. You can set up snapshot policies by using the Azure portal, Azure CLI, Azure PowerShell, or Azure REST API.
 
