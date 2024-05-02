@@ -48,7 +48,7 @@ By implementing effective FinOps management strategies, organizations can fully 
 
 - [FinOps Toolkit](https://microsoft.github.io/finops-toolkit/)
 
-<iframe title="FinOps on Azure Interactive Guides (approximately 1 hour, 15 minutes)." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure" width="800" height="500" style="margin-left:30px"></iframe>
+<iframe title="FinOps on Azure Interactive Guides (approximately 1 hour, 15 minutes)." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure" width="800" height="500"></iframe>
 
 ## FinOps assessment
 

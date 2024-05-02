@@ -10,7 +10,7 @@ Quantifying business value is crucial for organizations to justify their investm
 
 **Get started**:
 
-<iframe title="FinOps Interactive Guide for Forecasting." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%206%20-%20Forecasting" width="800" height="500" style="margin-left:30px"></iframe>
+<iframe title="FinOps Interactive Guide for Forecasting." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%206%20-%20Forecasting" width="800" height="500"></iframe>
 
 ## Budgeting
 
@@ -20,7 +20,7 @@ Quantifying business value is crucial for organizations to justify their investm
 
 **Get started**:
 
-<iframe title="FinOps Interactive Guide for Budgeting." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%207%20-%20Budget%20management" width="800" height="500" style="margin-left:30px"></iframe>
+<iframe title="FinOps Interactive Guide for Budgeting." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%207%20-%20Budget%20management" width="800" height="500"></iframe>
 
 ## Unit economics
 
