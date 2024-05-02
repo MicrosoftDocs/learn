@@ -41,6 +41,7 @@ units:
 - learn.azure.azure-netapp-files-with-vmware-solution.best-practices
 - learn.azure.azure-netapp-files-with-vmware-solution.attach-volume-datastore
 - learn.azure.azure-netapp-files-with-vmware-solution.cloud-backup
+- learn.azure.azure-netapp-files-with-vmware-solution.attach-volumes-virtual-machines
 - learn.azure.azure-netapp-files-with-vmware-solution.knowledge-check
 - learn.azure.azure-netapp-files-with-vmware-solution.summary
 badge:
