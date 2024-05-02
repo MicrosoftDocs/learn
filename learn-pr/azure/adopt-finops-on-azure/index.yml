@@ -11,10 +11,10 @@ metadata:
 title: Adopt FinOps on Azure
 summary: In today's dynamic landscape, effective cloud management is paramount for organizations of all sizes and industries. This module offers a comprehensive overview of FinOps domains, capabilities, and Microsoft resources and solutions that can support your journey. Additionally, it includes a tutorial on how to conduct a FinOps iteration to help you initiate or mature your FinOps practice.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you are able to:
   - Describe FinOps domains and capabilities.
   - Make informed decisions about how to start adopting FinOps.
-  - Leverage Microsoft resources and solutions available to implement FinOps.
+  - Apply Microsoft resources and solutions available to implement FinOps.
   - Conduct a FinOps iteration.
   **Attribution** - The content of this learn module is based on the [FinOps Framework](https://www.finops.org/framework/) published by the [FinOps Foundation](https://www.finops.org/).
 prerequisites: |

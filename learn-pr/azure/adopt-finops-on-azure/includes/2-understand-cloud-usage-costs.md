@@ -1,14 +1,18 @@
-Understanding cloud usage and costs is important for effective cloud management and optimization. It allows organizations to gain insight into how resources are being utilized, identify trends, and make informed decisions to optimize performance and cost efficiency. Data ingestion, allocation, reporting and analytics, and anomaly management play crucial roles in achieving this objective.
+Understanding cloud usage and costs is important for effective cloud management and optimization. Gaining this understanding allows organizations to gain insight into how resources are being utilized, identify trends, and make informed decisions to optimize performance and cost efficiency. Data ingestion, allocation, reporting and analytics, and anomaly management play crucial roles in achieving this objective.
 
 ![Video placeholder: Overview MS solutions the capabilities in this domain.](../media/2-video-placeholder-small.png)
 
 ## Data ingestion
 
-**Objective**: Collect, transfer, and normalize data from various sources for analysis, with a focus on understanding the usage and costs associated with an organization's cloud infrastructure.
+**Objective**:
+
+- Collect, transfer, and normalize data from various sources for analysis, with a focus on understanding the usage and costs associated with an organization's cloud infrastructure.
 
 ## Allocation
 
-**Objective**: Define strategies to assign and split shared cloud costs using accounts, tags, labels, and other metadata, creating accountability among teams and projects within an organization.
+**Objective**:
+
+- Define strategies to assign and split shared cloud costs using accounts, tags, labels, and other metadata, creating accountability among teams and projects within an organization.
 
 **Get started**:
 
@@ -17,7 +21,9 @@ Understanding cloud usage and costs is important for effective cloud management 
 
 ## Reporting + analytics
 
-**Objective**: Examine and showback cloud data to gain insights into usage and spend patterns to identify cost optimization opportunities, improve cost efficiency, and make informed financial decisions regarding cloud resources.
+**Objective**:
+
+- Examine and showback cloud data to gain insights into usage and spend patterns to identify cost optimization opportunities, improve cost efficiency, and make informed financial decisions regarding cloud resources.
 
 **Get started**:
 
@@ -25,7 +31,9 @@ Understanding cloud usage and costs is important for effective cloud management 
 
 ## Anomaly management
 
-**Objective**: Detect, identify, alert and manage unexpected cloud cost and usage irregularities in a timely manner to lower risk in cost-effective cloud operations.
+**Objective**:
+
+- Detect, identify, alert, and manage unexpected cloud cost and usage irregularities in a timely manner to lower risk in cost-effective cloud operations.
 
 **Get started**:
 

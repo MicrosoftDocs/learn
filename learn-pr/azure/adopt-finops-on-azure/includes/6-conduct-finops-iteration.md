@@ -1,12 +1,12 @@
 # Unit 6: Conduct a FinOps iteration
 
-FinOps is an iterative, hierarchical process that requires cross-functional collaboration across business, technology, and finance teams. When you consider the 22 different capabilities , each with their own unique nuances, adopting FinOps can seem like a daunting task. However, in this tutorial, you learn how to take an iterative approach to FinOps adoption where you:
+FinOps is an iterative, hierarchical process that requires cross-functional collaboration across business, technology, and finance teams. When you consider the 22 different capabilities, each with their own unique nuances, adopting FinOps can seem like a daunting task. However, in this tutorial, you learn how to take an iterative approach to FinOps adoption where you:
 
 - Define the right scope for your next FinOps investments.
 - Identify measurable goals to achieve over the coming weeks or months.
 - Select the right actions to get to the next maturity level.
 - Review progress at the end of the iteration and identify goals for the next.
-- Use this tutorial as a guide when you start each iteration of the FinOps phases .
+- Use this tutorial as a guide when you start each iteration of the FinOps phases.
 
 ## Before you begin
 
@@ -16,7 +16,7 @@ Consider the stakeholders involved in your iteration. Since FinOps requires coll
 
 Before you start your next iteration, it's important to define the bounds for which you want to focus to ensure your iteration goals are achievable. If it is your first iteration, we recommend selecting three to five FinOps capabilities as a starting point. If you're defining the scope of a later iteration, you may want to keep the same capabilities or add one to two new ones.
 
-Use the information following as a guide to select the right FinOps capabilities based on your role, experience, and current priorities. It isn't an all-inclusive list of considerations. We encourage you to select all from one group or pick and choose across groups based on your current needs. It's merely an aid to help you get started. If you'd like a finer-grained analysis of the areas you should focus on, leverage the [FinOps review assessment](https://aka.ms/finops/review) to identify next steps.
+Use the information following as a guide to select the right FinOps capabilities based on your role, experience, and current priorities. It isn't an all-inclusive list of considerations. We encourage you to select all from one group or pick and choose across groups based on your current needs. It's merely an aid to help you get started. If you'd like a finer-grained analysis of the areas you should focus on, apply the [FinOps review assessment](https://aka.ms/finops/review) to identify next steps.
 
 1. If your team is new to FinOps with little to moderate experience with cost management and optimization, we recommend starting with the basics:
     1. Reporting and analytics
@@ -80,7 +80,7 @@ Next, you identify specific, measurable goals based on your current experience w
 
 > [!IMPORTANT]
 >
-> Before establishing a dedicated FinOps team, consider how much time each individual team is spending on FinOps efforts, what the potential business value is with more savings and efficiency (or lost opportunity), and how much a dedicated team can accelerate those goals. A dedicated team is not for everyone. Ensure you have the right return on investment.
+> Before establishing a dedicated FinOps team, consider how much time each individual team is spending on FinOps efforts, what the potential business value is with more savings and efficiency (or lost opportunity), and how much a dedicated team can accelerate those goals. A dedicated team isn't for everyone. Ensure you have the right return on investment.
 
 - Automation - Has the capability been automated to minimize manual effort?
     - If you're developing a process, we recommend identifying automation opportunities as you go. You may identify low-hanging fruit that could lead to large efficiency gains at scale or even find partner teams willing to contribute time in those areas and share resources.

@@ -4,7 +4,9 @@ Quantifying business value is crucial for organizations to justify their investm
 
 ## Forecasting
 
-**Objective**: Leveraging statistical methods and forecasting techniques using historical data, current spend patterns, planned changes and related financial metrics to forecast future cloud costs, plan budgets and allocate resources efficiently.
+**Objective**:
+
+- Applying statistical methods and forecasting techniques using historical data, current spend patterns, planned changes and related financial metrics to forecast future cloud costs, plan budgets and allocate resources efficiently.
 
 **Get started**:
 
@@ -12,7 +14,9 @@ Quantifying business value is crucial for organizations to justify their investm
 
 ## Budgeting
 
-**Objective**: Strategic and ongoing process for setting, monitoring, and managing financial plans to manage cloud spending effectively, align it with business objectives, and ensure financial accountability throughout the cloud services lifecycle.
+**Objective**:
+
+- Strategic and ongoing process for setting, monitoring, and managing financial plans to manage cloud spending effectively, align it with business objectives, and ensure financial accountability throughout the cloud services lifecycle.
 
 **Get started**:
 
@@ -20,15 +24,21 @@ Quantifying business value is crucial for organizations to justify their investm
 
 ## Unit economics
 
-**Objective**: Develop and track unit economic metrics that reveal a quantitative understanding of how an organization's cloud management practices impact specific business activities, customer segments, or products, to drive efficiency and maximize cloud value.
+**Objective**:
+
+- Develop and track unit economic metrics that reveal a quantitative understanding of how an organization's cloud management practices impact specific business activities, customer segments, or products, to drive efficiency and maximize cloud value.
 
 ## Planning & estimating
 
-**Objective**: Anticipating fluctuations in cloud spending and demand for resources by using historical data and current spending to estimate future costs and plan investments in an organization's cloud environment.
+**Objective**:
+
+- Anticipating fluctuations in cloud spending and demand for resources by using historical data and current spending to estimate future costs and plan investments in an organization's cloud environment.
 
 ## Benchmarking
 
-**Objective**: Use efficiency metrics to evaluate an organization's cloud performance and financial management against other departments in the business or industry peers to inform decision-making and align FinOps with business objectives.
+**Objective**:
+
+- Use efficiency metrics to evaluate an organization's cloud performance and financial management against other departments in the business or industry peers to inform decision-making and align FinOps with business objectives.
 
 ----------
 
