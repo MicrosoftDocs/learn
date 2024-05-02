@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/26/2024
+  ms.date: 05/02/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -38,14 +38,14 @@ quiz:
     - content: "Billing for Container Instances occurs when containers are in use."
       isCorrect: true
       explanation: "Correct. Organizations are only billed when their Container Instances are in use."
-  - content: "What container mangagment solution simplifies deployment?"
+  - content: "What container management solution simplifies deployment?"
     choices:
     - content: "Azure Container Apps"
       isCorrect: true
-      explanation: "Correct. Azure Container Apps is a container mangagment solution that simplifies deployment and provides orchestration."
+      explanation: "Correct. Azure Container Apps is a container management solution that simplifies deployment and provides orchestration."
     - content: "Container groups"
       isCorrect: false
-      explanation: "Incorrect. Container groups are not a container mangagment solution."
+      explanation: "Incorrect. Container groups are not a container management solution."
     - content: "Container Instances"
       isCorrect: false
       explanation: "Incorrect. Azure Container Instances doesn't provide orchestration."

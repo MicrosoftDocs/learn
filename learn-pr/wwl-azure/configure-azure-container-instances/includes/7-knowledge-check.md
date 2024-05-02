@@ -5,7 +5,7 @@ You're working on the app deployment and management strategy for your company's 
 
 - You're examining features of Azure Container Instances to support site-related apps hosted on-premises in Azure to share hardware resources, network usage, and storage volumes.
 
-- The development team needs a container mangagment solution that simplifies deployment and provides orchestration. 
+- The development team needs a container management solution that simplifies deployment and provides orchestration. 
 
 ### Answer the following questions
 
