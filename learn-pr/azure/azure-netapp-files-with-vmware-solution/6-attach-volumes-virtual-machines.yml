@@ -1,3 +1,4 @@
+### YamlMime:ModuleUnit
 uid: learn.azure.azure-netapp-files-with-vmware-solution.attach-volumes-virtual-machines
 title: Attach Azure NetApp Files volumes to virtual machines as guest-mounted file systems 
 metadata:
