@@ -4,7 +4,7 @@ The FinOps framework includes six principles that act as north star objectives o
 
 ## A centralized team drives FinOps
 
-- The central team encourages, evangelizes, and enables best practices in a shared accountability model, much like security, which has a central team yet everyone remains responsible for their portion.
+- The central team encourages, evangelizes, and enables best practices in a shared accountability model. In this regard, the FinOps central team is much like security, which has a central team yet everyone remains responsible for their portion.
 - Executive buy-in for FinOps and its practices and processes is required.
 - Rate, commitment, and discount optimization are centralized to take advantage of economies of scale.
 - Remove the need for engineers and operations teams to think about rate negotiations, allowing them to stay focused on usage optimization of their own environments.
@@ -44,5 +44,7 @@ The FinOps framework includes six principles that act as north star objectives o
 - Embrace just-in-time prediction, planning, and purchasing of capacity.
 - Agile iterative planning is preferred over static long-term plans.
 - Embrace proactive system design with continuous adjustments in cloud optimization over infrequent reactive cleanups.
+
+----------
 
 For more information, see the <a target="_blank" href="https://www.finops.org/framework/principles/">FinOps Principles</a> by the <a target="_blank" href="https://www.finops.org/">FinOps Foundation</a>.
