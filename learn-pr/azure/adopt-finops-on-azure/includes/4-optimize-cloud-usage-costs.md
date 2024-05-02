@@ -10,7 +10,7 @@ Rate optimization, licensing + SaaS management, workload optimization, architect
 
 **Get started**:
 
-- [FinOps Interactive Guide - Managing commitment-based discounts](https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%208%20-%20Manage%20commitment-based%20discounts)
+<iframe title="FinOps Interactive Guide for Managing commitment-based discounts." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%208%20-%20Manage%20commitment-based%20discounts" width="800" height="500" style="margin-left:30px"></iframe>
 
 ## Workload optimization
 
@@ -20,7 +20,7 @@ Rate optimization, licensing + SaaS management, workload optimization, architect
 
 **Get started**:
 
-- [FinOps Interactive Guide - Resource utilization and efficiency](https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%204%20-%20Resource%20utilization%20and%20efficiency)
+<iframe title="FinOps Interactive Guide for Resource utilization and efficiency." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%204%20-%20Resource%20utilization%20and%20efficiency" width="800" height="500" style="margin-left:30px"></iframe>
 
 ## Licensing + SaaS
 
@@ -42,7 +42,7 @@ Rate optimization, licensing + SaaS management, workload optimization, architect
 
 **Get started**:
 
-- [FinOps Interactive Guide - Optimize Carbon Emissions](https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%209%20-%20Carbon%20emission%20optimization)
+<iframe title="FinOps Interactive Guide for Optimize Carbon Emissions." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%209%20-%20Carbon%20emission%20optimization" width="800" height="500" style="margin-left:30px"></iframe>
 
 ----------
 

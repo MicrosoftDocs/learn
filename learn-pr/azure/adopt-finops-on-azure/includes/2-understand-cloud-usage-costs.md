@@ -16,8 +16,9 @@ Understanding cloud usage and costs is important for effective cloud management 
 
 **Get started**:
 
-- [FinOps Interactive Guide - Cost Allocation](https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%201%20-%20Cost%20allocation)
-- [FinOps Interactive Guide - Manage Shared Costs](https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%203%20-%20Manage%20shared%20costs)
+<iframe title="FinOps Interactive Guide for Cost Allocation." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%201%20-%20Cost%20allocation" width="800" height="500" style="margin-left:30px"></iframe>
+
+<iframe title="FinOps Interactive Guide for Manage Shared Costs." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%203%20-%20Manage%20shared%20costs" width="800" height="500" style="margin-left:30px"></iframe>
 
 ## Reporting + analytics
 
@@ -27,7 +28,7 @@ Understanding cloud usage and costs is important for effective cloud management 
 
 **Get started**:
 
-- [FinOps Interactive Guide - Data Analysis & Showback](https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%202%20-%20Data%20analysis%20and%20showback)
+<iframe title="FinOps Interactive Guide for Data Analysis & Showback." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%202%20-%20Data%20analysis%20and%20showback" width="800" height="500" style="margin-left:30px"></iframe>
 
 ## Anomaly management
 
@@ -37,7 +38,7 @@ Understanding cloud usage and costs is important for effective cloud management 
 
 **Get started**:
 
-- [FinOps Interactive Guide - Manage Anomalies](https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%205%20-%20Manage%20anomalies)
+<iframe title="FinOps Interactive Guide for Manage Anomalies." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%205%20-%20Manage%20anomalies" width="800" height="500" style="margin-left:30px"></iframe>
 
 ----------
 

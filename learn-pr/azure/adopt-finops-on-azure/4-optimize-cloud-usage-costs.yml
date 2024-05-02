@@ -8,6 +8,6 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 27
 content: |
   [!include[](includes/4-optimize-cloud-usage-costs.md)]
