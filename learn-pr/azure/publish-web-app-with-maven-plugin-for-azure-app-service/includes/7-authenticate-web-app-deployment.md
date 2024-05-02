@@ -34,7 +34,7 @@ To create an Azure service principal with the Azure CLI, use the following steps
 
     Where `https://mywebapp-1234567890.azurewebsites.net/` is the URL of your web app.
 
-    This command will return a response with a JSON object that resembles the following example:
+    This command returns a response with a JSON object that resembles the following example:
 
     ```json
     Creating 'Contributor' role assignment under scope '/subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss'
@@ -166,7 +166,7 @@ The steps to create an Azure service principal with the Azure CLI are the same a
 
     Where `https://mywebapp-1234567890.azurewebsites.net/` is the URL of your web app.
 
-    This command will return a response with a JSON object that resembles the following example:
+    This command returns a response with a JSON object that resembles the following example:
 
     ```json
     Creating 'Contributor' role assignment under scope '/subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss'
