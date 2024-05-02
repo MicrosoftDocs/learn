@@ -119,7 +119,7 @@ Dependabot is a GitHub tool that automates managing your repository’s dependen
 
 ## Dependency review
 
-You can use dependency review to catch vulnerable dependencies before they're added to your main branch. Dependency review helps you understand dependency changes and the security impact of these changes at every pull request. It provides an easily understandable visualization of dependency changes with a rich diff on the a pull request's **Files Changed** tab. By checking the dependency reviews in a pull request and changing any dependencies that are flagged as vulnerable, you can avoid vulnerabilities being added to your project. Dependency review informs you of:
+You can use dependency review to catch vulnerable dependencies before they're added to your main branch. Dependency review helps you understand dependency changes and the security impact of these changes at every pull request. It provides an easily understandable visualization of dependency changes with a rich diff on a pull request's **Files Changed** tab. By checking the dependency reviews in a pull request and changing any dependencies that are flagged as vulnerable, you can avoid vulnerabilities being added to your project. Dependency review informs you of:
 
 - Which dependencies were added, removed, or updated, along with the release dates.
 - How many projects use these components.
