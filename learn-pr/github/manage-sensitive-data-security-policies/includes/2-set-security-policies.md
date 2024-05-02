@@ -22,7 +22,7 @@ If you've ever contributed to or looked at an open source project, you'll quickl
 
 These files record information about security preparation, key contacts, and the project background. They tell collaborators and other users what measures you've taken to protect them, what to do or who to call in the event of a security issue, and provide guidelines for contributing to the project.
 
-:::image type="content" source="../media/security-md-basic.png" alt-text="A cropped screenshot of SECURITY.md from the git repository":::
+:::image type="content" source="../media/security.md-example.png" alt-text="A cropped screenshot of SECURITY.md from the git repository":::
 
 ### SECURITY.md
 
