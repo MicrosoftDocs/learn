@@ -1,5 +1,3 @@
-# Unit 6: Conduct a FinOps iteration
-
 FinOps is an iterative, hierarchical process that requires cross-functional collaboration across business, technology, and finance teams. When you consider the 22 different capabilities, each with their own unique nuances, adopting FinOps can seem like a daunting task. However, in this tutorial, you learn how to take an iterative approach to FinOps adoption where you:
 
 - Define the right scope for your next FinOps investments.
@@ -8,11 +6,11 @@ FinOps is an iterative, hierarchical process that requires cross-functional coll
 - Review progress at the end of the iteration and identify goals for the next.
 - Use this tutorial as a guide when you start each iteration of the FinOps phases.
 
-## <u>Before you begin</u>
+## Before you begin
 
 Consider the stakeholders involved in your iteration. Since FinOps requires collaboration across business, technology, and finance teams, we recommend approaching this tutorial holistically and evaluating each step with everyone in mind. However, there are also times when you may only have a subset of stakeholders. For example, a single engineering team, or just one FinOps practitioner dedicated to setting up the right culture and driving positive change within the organization. Whichever case applies to you in this iteration, keep all stakeholders' experience in mind as you complete this tutorial. Every balanced team has people with a diverse mix of experience levels. Make your best judgment about the team's current state.
 
-## <u>Define your scope</u>
+## Define your scope
 
 Before you start your next iteration, it's important to define the bounds for which you want to focus to ensure your iteration goals are achievable. If it is your first iteration, we recommend selecting three to five FinOps capabilities as a starting point. If you're defining the scope of a later iteration, you may want to keep the same capabilities or add one to two new ones.
 
@@ -59,7 +57,7 @@ Use the information following as a guide to select the right FinOps capabilities
 
 Note the capabilities you select for future use.
 
-## <u>Identify your goals</u>
+## Identify your goals
 
 Next, you identify specific, measurable goals based on your current experience with the capabilities you selected. Consider the following when you identify goals for this iteration:
 
@@ -88,13 +86,13 @@ Next, you identify specific, measurable goals based on your current experience w
 
 In general, we recommend short iterations with targeted goals. Select one to three highly related goals listed previously. Avoid long iterations that cover a broad spectrum of work because they're harder to track, measure, and ultimately deliver.
 
-## <u>Put your plan into action</u>
+## Put your plan into action
 
 At this point, you have a rough plan of action. You may be new and plan on digging into the capability to learn and implement the basics. Or maybe you're planning to develop or experiment with a process being scaled out to other teams and stakeholders. Or maybe your process is already defined and you're driving full adoption or full automation. Whichever stage you're at, use the FinOps framework to guide your efforts.
 
 Check back later for more targeted guidance aligned with the FinOps Framework.
 
-## <u>Review progress</u>
+## Review progress
 
 When you started the iteration, you identified three to five capabilities, decided on the areas you wanted to focus on for those capabilities. Were you able to achieve what you set out to do? What went well? What didn't go well? How could you improve the next iteration? Make note of your answers internally and review them at the end of each iteration to ensure you're addressing issues and maturing your process.
 

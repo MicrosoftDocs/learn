@@ -2,7 +2,7 @@ Rate optimization, licensing + SaaS management, workload optimization, architect
 
 ![Video placeholder: Overview MS solutions the capabilities in this domain.](../media/4-video-placeholder-small.png)
 
-## <u>Rate optimization</u>
+## Rate optimization
 
 #### Objective:
 
@@ -12,7 +12,7 @@ Driving cloud rate efficiency by acquiring and managing a portfolio of commitmen
 
 <iframe title="FinOps Interactive Guide for Managing commitment-based discounts." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%208%20-%20Manage%20commitment-based%20discounts" width="800" height="500"></iframe>
 
-## <u>Workload optimization</u>
+## Workload optimization
 
 #### Objective:
 
@@ -22,19 +22,19 @@ Analyze and optimize cloud resources to match the specific usage patterns while 
 
 <iframe title="FinOps Interactive Guide for Resource utilization and efficiency." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%204%20-%20Resource%20utilization%20and%20efficiency" width="800" height="500"></iframe>
 
-## <u>Licensing + SaaS</u>
+## Licensing + SaaS
 
 #### Objective:
 
 Mechanisms for understanding and optimizing the use of software licenses and SaaS investments that directly impact the cost structure of an organization's cloud operations, and can require compliance management, vendor specific information, and collaboration with legal team practices.
 
-## <u>Architecting for cloud</u>
+## Architecting for cloud
 
 #### Objective:
 
 Designing solutions with cost-awareness to maximize business value and achieving performance, scalability, and operational objectives while supporting effective cost management.
 
-## <u>Cloud sustainability</u>
+## Cloud sustainability
 
 #### Objective:
 

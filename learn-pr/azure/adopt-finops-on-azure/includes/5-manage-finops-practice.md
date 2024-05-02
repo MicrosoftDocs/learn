@@ -2,43 +2,43 @@ By implementing effective FinOps management strategies, organizations can fully 
 
 ![Video placeholder: Overview MS solutions the capabilities in this domain.](../media/5-video-placeholder-small.png)
 
-## <u>FinOps practice operations</u>
+## FinOps practice operations
 
 #### Objective:
 
 Driving a culture of accountability through effective organizational alignment of the FinOps practice and empowering the FinOps function within teams. 
 
-## <u>Onboarding workloads</u>
+## Onboarding workloads
 
 #### Objective:
 
 Developing a cloud front door process to onboard brownfield and greenfield applications through financial viability and technical feasibility assessment criteria that supports operational objectives, while also maintaining effective cost management.
 
-## <u>FinOps education & enablement</u>
+## FinOps education & enablement
 
 #### Objective:
 
 Training, skill development, and operational activities that enable teams throughout the organization to adopt and deliver the FinOps practice.
 
-## <u>Invoicing & chargeback</u>
+## Invoicing & chargeback
 
 #### Objective:
 
 Developing specific reporting, reconciliation workflows, and chargeback models, in collaboration with the finance team, to align Cloud Service Provider (CSP) invoices with billing data for attributing cloud costs back to specific budgets within an organization.
 
-## <u>Cloud policy & governance</u>
+## Cloud policy & governance
 
 #### Objective:
 
 Establishing and evolving policies, controls and governance mechanisms to ensure that cloud use aligns with business objectives, complies with regulatory requirements, and optimizes cloud resources efficiently.
 
-## <u>Intersecting disciplines</u>
+## Intersecting disciplines
 
 #### Objective:
 
 Coordinating activities between an organization's Core FinOps Personas and other disciplines, processes or Allied Personas that may be operating independently - such as ITAM, ITFM, TBM, Security, and Sustainability - in order to promote collaboration for effective cloud operations.
 
-## <u>FinOps tooling & services</u>
+## FinOps tooling & services
 
 #### Objective:
 
@@ -50,7 +50,7 @@ Developing criteria and methodology to capture proof-of-value for effectively se
 
 <iframe title="FinOps on Azure Interactive Guides (approximately 1 hour, 15 minutes)." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure" width="800" height="500"></iframe>
 
-## <u>FinOps assessment</u>
+## FinOps assessment
 
 #### Objective:
 

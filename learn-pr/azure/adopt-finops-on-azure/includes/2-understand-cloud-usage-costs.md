@@ -2,13 +2,13 @@ Understanding cloud usage and costs is important for effective cloud management 
 
 ![Video placeholder: Overview MS solutions the capabilities in this domain.](../media/2-video-placeholder-small.png)
 
-## <u>Data ingestion</u>
+## Data ingestion
 
 #### Objective:
 
 Collect, transfer, and normalize data from various sources for analysis, with a focus on understanding the usage and costs associated with an organization's cloud infrastructure.
 
-## <u>Allocation</u>
+## Allocation
 
 #### Objective:
 
@@ -20,7 +20,7 @@ Define strategies to assign and split shared cloud costs using accounts, tags, l
 
 <iframe title="FinOps Interactive Guide for Manage Shared Costs." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%203%20-%20Manage%20shared%20costs" width="800" height="500"></iframe>
 
-## <u>Reporting + analytics</u>
+## Reporting + analytics
 
 #### Objective:
 
@@ -30,7 +30,7 @@ Examine and showback cloud data to gain insights into usage and spend patterns t
 
 <iframe title="FinOps Interactive Guide for Data Analysis & Showback." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%202%20-%20Data%20analysis%20and%20showback" width="800" height="500"></iframe>
 
-## <u>Anomaly management</u>
+## Anomaly management
 
 #### Objective:
 

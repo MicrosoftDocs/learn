@@ -2,7 +2,7 @@ Quantifying business value is crucial for organizations to justify their investm
 
 ![Video placeholder: Overview MS solutions the capabilities in this domain.](../media/3-video-placeholder-small.png)
 
-## <u>Forecasting</u>
+## Forecasting
 
 #### Objective:
 
@@ -12,7 +12,7 @@ Applying statistical methods and forecasting techniques using historical data, c
 
 <iframe title="FinOps Interactive Guide for Forecasting." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%206%20-%20Forecasting" width="800" height="500"></iframe>
 
-## <u>Budgeting</u>
+## Budgeting
 
 #### Objective:
 
@@ -22,19 +22,19 @@ Strategic and ongoing process for setting, monitoring, and managing financial pl
 
 <iframe title="FinOps Interactive Guide for Budgeting." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%207%20-%20Budget%20management" width="800" height="500"></iframe>
 
-## <u>Unit economics</u>
+## Unit economics
 
 #### Objective:
 
 Develop and track unit economic metrics that reveal a quantitative understanding of how an organization's cloud management practices impact specific business activities, customer segments, or products, to drive efficiency and maximize cloud value.
 
-## <u>Planning & estimating</u>
+## Planning & estimating
 
 #### Objective:
 
 Anticipating fluctuations in cloud spending and demand for resources by using historical data and current spending to estimate future costs and plan investments in an organization's cloud environment.
 
-## <u>Benchmarking</u>
+## Benchmarking
 
 #### Objective:
 
