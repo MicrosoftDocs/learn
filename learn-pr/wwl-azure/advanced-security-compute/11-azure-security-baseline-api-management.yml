@@ -4,7 +4,7 @@ title: Recommend security configurations for Azure API Management
 metadata:
   title: Recommend security configurations for Azure API Management
   description: "Service supports its own native backup capability (if not using Azure Backup)."
-  ms.date: 04/25/2024
+  ms.date: 05/02/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/10-azure-security-baseline-api-management.md)]
+  [!include[](includes/11-azure-security-baseline-api-management.md)]
