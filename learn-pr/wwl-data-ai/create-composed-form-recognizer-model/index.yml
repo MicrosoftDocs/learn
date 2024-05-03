@@ -2,7 +2,7 @@
 uid: learn.wwl.create-composed-form-recognizer-model
 metadata:
   title: Create a composed Azure AI Document Intelligence model
-  description: "Create a composed Document intelligence model"
+  description: "Create a composed Document intelligence model."
   ms.date: 03/05/2024
   author: wwlpublish
   ms.author: berryivor
