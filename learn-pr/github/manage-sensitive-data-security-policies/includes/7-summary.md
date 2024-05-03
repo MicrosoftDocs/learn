@@ -32,7 +32,7 @@ The following are links related to the information covered in this module:
 - [Reviewing the audit log for your organization](https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization)
 - [Audit log events for your organization](https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/audit-log-events-for-your-organization)
 - [Reference for working with an audit log using the GraphQL API.](https://docs.github.com/en/graphql)
-- [Reference for working with an audit log using the Rest API.](https://docs.github.com/en/rest)
+- [Reference for working with an audit log using a Rest API.](https://docs.github.com/en/rest)
 - [git-filter-repo Manual Page](https://htmlpreview.github.io/?https://github.com/newren/git-filter-repo/blob/docs/html/git-filter-repo.html)
 
 ### Resource Links
