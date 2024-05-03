@@ -81,28 +81,30 @@ Both the increment and decrement operators have an interesting quality &mdash; d
     ```csharp
     int value = 1;
     value++;
-    Console.WriteLine("First: " + value);
-    Console.WriteLine($"Second: {value++}");
-    Console.WriteLine("Third: " + value);
-    Console.WriteLine("Fourth: " + (++value));
+    Console.WriteLine($"1st: {value}");
+    Console.WriteLine($"2nd: {value++}");
+    Console.WriteLine($"3rd: {value}");
+    Console.WriteLine($"4th: {++value}");
+    Console.WriteLine($"5th: {value}");
     ```
 
 1. Run the code. You should see the following output:
 
     ```Output
-    First: 2
-    Second: 2
-    Third: 3
-    Fourth: 4
+    1st: 2
+    2nd: 2
+    3rd: 3
+    4th: 4
+    5th: 4
     ```
 
 Notice this line of code:
 
 ```csharp
-Console.WriteLine($"Second: {value++}");
+Console.WriteLine($"2nd: {value++}");  
 ```
 
-There's two steps to this line:
+There are two steps to this line:
 
 1. Retrieve the current value of the variable `value` and use that in the string interpolation operation.
 2. Increment the value.
@@ -110,21 +112,19 @@ There's two steps to this line:
 The next line of code confirms that the value was, in fact, incremented.
 
 ```csharp
-Console.WriteLine("Third: " + value);
+Console.WriteLine($"3rd: {value}");
 ```
 
-In contrast, consider the last line of code:
+In contrast, consider the line where `++` is before the operand:
 
 ```csharp
-Console.WriteLine("Fourth: " + (++value));
+Console.WriteLine($"4th: {++value}");
 ```
 
-Here, the order of operations is switched because the `++` operator is placed before the operand `value`.
+Here, the order of operations is switched because the `++` operator is placed before the operand `value`:
 
 1. Increment the value.
 2. Retrieve the new incremented value of the variable `value` and use that in the string operation.
-
-While not strictly necessary, you added parenthesis around the expression `(++value)` to improve readability. Seeing so many `+` operators next to each other seems like it could be misunderstood by other developers. Stylistic decisions like this are subjective. However, since you'll write the code once but read it many times, you should prioritize readability.
 
 ## Recap
 
