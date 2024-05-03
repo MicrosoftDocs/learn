@@ -2,7 +2,7 @@
 ms.custom:
   - build-2023
 ---
-Imagine that you're an auditor for the Contoso company. The HR department of Contoso is using a simple web application to manage employees salaries. You were asked to audit the data in the database to make sure the data is correct and no one has tampered with it.
+Imagine that you're an auditor for the Contoso company. The HR department of Contoso is using a simple web application to manage employees salaries. You're asked to audit the data in the database to make sure the data is correct and that no one tampered with it.
 
 In this exercise, we see how you can use ledger in a real world scenario of auditing data using ledger tables. We perform the following tasks:
 
@@ -169,7 +169,7 @@ After looking at some of the functionality of ledger in SQL Server 2022, let's m
     WHERE [FirstName] = N'Jay' AND [LastName] = N'Adams'
     ```
 
-1. If you use a `SELECT` query on the `Employees` table, you can see that Jay's salary has been updated from earlier.
+1. If you use a `SELECT` query on the `Employees` table, you can see that Jay's salary was updated from earlier.
 
     ```sql
     SELECT * FROM [dbo].[Employees]
@@ -207,9 +207,9 @@ Let's assume that a few weeks later, you're doing a routine audit of changes in 
    By using this digest, we know that:
 
    - The data is valid, based on the time the digest was captured.
-   - The internal blocks match the current data changes for the update to Jay's salary. If someone had to fake the data for the `Employees` table without doing a T-SQL `UPDATE` command to make the system *think* Jay's current salary was 50,000 more than it really is, the system would have raised an error that hashes of the changes don't match the current data. You would see a `Ledger verification failed` message.
+   - The internal blocks match the current data changes for the update to Jay's salary. If someone had to fake the data for the `Employees` table without doing a T-SQL `UPDATE` command to make the system *think* Jay's current salary was 50,000 more than it really is, the system raises an error that hashes of the changes don't match the current data. You would see a `Ledger verification failed` message.
 
-1. Now that you verified that the data wasn't tampered with, you browse the content of the ledger view for the `Employees` table. You notice a suspicious update operation performed by Jay, who won't be able to effectively deny they have updated their salary. The data in the ledger table is cryptographically verified as genuine and it clearly shows Jay's **UserName** as the account who updated the salary. To make this verification, run the following query.
+1. Now that you verified that the data wasn't tampered with, you browse the content of the ledger view for the `Employees` table. You notice a suspicious update operation performed by Jay, who can't effectively deny updating the salary. The data in the ledger table is cryptographically verified as genuine and it clearly shows Jay's **UserName** as the account who updated the salary. To make this verification, run the following query.
 
     ```sql
     SET NOCOUNT ON

@@ -11,11 +11,11 @@ In this unit, we go over:
 
 ## Buffer pool parallel scan
 
-Introduced in SQL Server 2022, buffer pool parallel scan is a feature that improves the performance of buffer pool scan operations that help customers as they scale their SQL Server environments. Common operations such as database startup or shutdown, creating a new database, file drop operations, backup and restore operations, Always On failover events, DBCC CHECKDB and DBCC Check Table, log restore operations, and other internal operations all benefit from buffer pool parallel scan.
+SQL Server 2022 introduces the buffer pool parallel scan feature that improves the performance of buffer pool scan operations that help customers as they scale their SQL Server environments. Many common operations benefit from buffer pool parallel scans. Such as, database startup or shutdown, creating a new database, file drop operations, backup and restore operations, and Always On failover events. Database consistency checkers (DBCC) CHECKDB and DBCC Check Table also benefit, as well as log restore operations and other internal operations.
 
 ### What is a buffer pool and why does it affect performance?
 
-A buffer is an 8-KB page in memory and the buffer pool (also known as the buffer cache) is divided into 8-KB pages. The buffer pool is the area in memory where SQL Server stores data pages that are read from disk, and all pages must be copied into the buffer pool before they can be used in a query. Imagine that you have a 1-TB buffer space. With 1 TB, the buffer pool scan needs to iterate over 130 million buffers.
+A buffer is an 8-KB page in memory and the buffer pool (also known as the buffer cache) is divided into 8-KB pages. The buffer pool is the area in memory where SQL Server stores data pages that are read from disk. All pages must be copied into the buffer pool before they can be used in a query. Imagine that you have a 1-TB buffer space. With 1 TB, the buffer pool scan needs to iterate over 130 million buffers.
 
 In SQL Server 2019 and earlier, scanning the buffer pool was always a serial operation. Meaning that the larger your environment or memory on your machine, the bigger performance effect you would see to scanning the buffer pool, as the scan would need to iterate over all the buffers serially. There was no way to eliminate this problem, and the issue wasn't necessarily correlated to how large of an operation you were doing. You would see a difference in performance versus a smaller system even when creating a new database, or shutting down SQL Server, as the bigger system would take longer to scan the buffer pool.
 
@@ -42,7 +42,7 @@ Another `tempdb` use is to internally spill to disk when there isn't enough memo
 - [Metadata contention](/sql/relational-databases/databases/tempdb-database#memory-optimized-tempdb-metadata)
 - [Temporary table cache contention](https://techcommunity.microsoft.com/t5/sql-server-blog/tempdb-files-and-trace-flags-and-updates-oh-my/ba-p/385937)
 
-If you want more information on the types of contention and why they occur, explore the links above.
+If you want more information on the types of contention and why they occur, explore these links.
 
 ### Solving scaling issues with concurrent GAM and SGAM updates
 

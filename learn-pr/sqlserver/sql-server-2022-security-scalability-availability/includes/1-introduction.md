@@ -14,7 +14,7 @@ SQL Server provides security capabilities to protect your data through authentic
 
 In the following units, we go over:
 
-- How you can attest that your data hasn't been tampered with and use the auditing capabilities of ledger.
+- How you can use the auditing capabilities of ledger to attest that your data wasn't tampered with.
 - How the Always Encrypted additions to SQL Server 2022 support confidential queries.
 - How the added built-in server roles provide more granular permissions for specific tasks.
 - How you can apply UNMASK permissions at the database, schema, table, or column level to control and limit unauthorized access to data stored in the database.
