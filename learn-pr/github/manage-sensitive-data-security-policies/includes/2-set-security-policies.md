@@ -2,7 +2,7 @@ In this unit, you'll learn more about the preventive measures you can take to ma
 
 Suppose you're an administrator who is helping to onboard many new collaborators to your organization. You need to make sure they contribute to the proper repositories and have easy access to assistance if they discover a security threat. To do this, you set security policies.
 
-:::image type="content" source="../media/setting-security-policies.png" alt-text="Three screenshots stacked on each other, slightly offset, which show community health files in a repository and settings for an organization":::
+:::image type="content" source="../media/setting-security-policies.png" alt-text="Three screenshots stacked on each other, slightly offset, which show community health files in a repository and settings for an organization.":::
 
 A repository, organization, or enterprise's security policies are the practices and settings that maintain the integrity of users' data and systems. A security policy defines what it means for a system, organization or other entity to be secure, and limits permissions to support that definition. What does that mean for you and your GitHub ecosystem? When you create security policies, you are telling collaborators how to work in ways that maintain code health. Security policies also provide resources for responding to security vulnerabilities and limit collaborators' access.
 
@@ -22,7 +22,7 @@ If you've ever contributed to or looked at an open source project, you'll quickl
 
 These files record information about security preparation, key contacts, and the project background. They tell collaborators and other users what measures you've taken to protect them, what to do or who to call in the event of a security issue, and provide guidelines for contributing to the project.
 
-:::image type="content" source="../media/security.md-example.png" alt-text="A cropped screenshot of SECURITY.md from the git repository":::
+:::image type="content" source="../media/security.md-example.png" alt-text="A cropped screenshot of SECURITY.md from the git repository.":::
 
 ### SECURITY.md
 
@@ -91,7 +91,7 @@ Changing security settings at the organization level or for all organizations co
 > Available settings and tools differ based on the type of repository. In addition,
 > these settings and features differ in their level of required user interaction.
 
-:::image type="content" source="../media/availability-interaction.png" alt-text="A four-quadrant graph, divided by x and y axes, which categorizes security settings by availability to users (x axis) and required level of interaction (y axis)":::
+:::image type="content" source="../media/availability-interaction.png" alt-text="A four-quadrant graph, divided by x and y axes, which categorizes security settings by availability to users (x axis) and required level of interaction (y axis).":::
 
 ### What kinds of security settings are available to administrators?
 
@@ -109,7 +109,7 @@ When you identify a security threat, your team's response will go beyond patchin
 
 GitHub security advisories provide a historical narrative for users that demonstrates that you understand the nature of the threat, have addressed the immediate threat, and have taken steps to prevent similar threats in the future.
 
-:::image type="content" source="../media/security-advisories-goals.png" alt-text="An image showing three steps to security advisories.":::
+:::image type="content" source="../media/security-advisories-goals.png" alt-text="A screenshot showing the three steps to security advisories.":::
 
 In service of these goals, a security advisory should be comprehensive and include following information:
 
