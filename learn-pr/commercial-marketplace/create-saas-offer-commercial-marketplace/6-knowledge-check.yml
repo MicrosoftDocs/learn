@@ -23,7 +23,7 @@ quiz:
     - content: "With SaaS, customers can use your application without needing to take responsibility for underlying app configuration details."
       isCorrect: true
       explanation: "Correct! SaaS allows customers to focus on the value they get from using your application. Your customers don't have to preoccupy themselves with the details of managing the underlying application."
-    - content: "All of the above."
+    - content: "All of these characteristics."
       isCorrect: false
       explanation: "With SaaS, customers can use your application without needing to take responsibility for underlying app configuration details."
   - content: "Which of the following pieces of information isn't required to complete the technical configuration for a publicly available SaaS offer that is sold through Microsoft?"
@@ -39,7 +39,7 @@ quiz:
       explanation: "To create a transact offer, you need to provide a connection webhook URL during the technical configuration in Partner Center. Your connection webhook facilitates communication about subscriptions between your organization and Microsoft."
     - content: "The Azure tenant IDs of your customers."
       isCorrect: true
-      explanation: "Correct! You only need to provide Azure tenant IDs for individual customers when creating private plans for specific customers. This isn't required for public plans."
+      explanation: "Correct! You only need to provide Azure tenant IDs for individual customers when creating a private plan for specific customers. Azure tenant IDs for individual customers aren't required for public plans."
   - content: "When you choose to sell your SaaS application through Microsoft, your SaaS offer is referred to as..."
     choices:
     - content: "A transact offer."
@@ -53,8 +53,8 @@ quiz:
       explanation: "Contact me listings allow customers to share their contact information with your organization through the commercial marketplace. They aren't sold through Microsoft, which means you need to process any resulting transactions independently."
     - content: "A standard commercial marketplace offer."
       isCorrect: false
-      explanation: "When you choose to sell your SaaS application through Microsoft, it's called a transact offer."
-  - content: "Which of the following makes it possible to add a consumption-based pricing component to your SaaS offer?"
+      explanation: "Selling your SaaS application through Microsoft is called a transact offer."
+  - content: "Which of the following features makes it possible to add a consumption-based pricing component to your SaaS offer?"
     choices:
     - content: "The per user pricing model."
       isCorrect: false
