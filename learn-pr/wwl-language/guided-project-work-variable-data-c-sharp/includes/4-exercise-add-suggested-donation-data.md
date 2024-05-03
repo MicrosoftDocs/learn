@@ -50,7 +50,7 @@ You need to create a new variable to hold suggested donations and expand the `ou
 
 1. Take a minute to review `case 0:` inside the switch statement following comment #4.
 
-    The following code that defines sample data for the first pet before the `suggestDonation` data is created.  It would fit nicely below the `animalNickname`!
+    The following code that defines sample data for the first pet before the `suggestedDonation` data is created.  It would fit nicely below the `animalNickname`!
 
     ```csharp
         case 0:
