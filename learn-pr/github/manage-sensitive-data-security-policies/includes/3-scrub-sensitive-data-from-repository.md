@@ -34,7 +34,7 @@ To create a ruleset:
 4. Enter values to configure the ruleset.
 5. Select **Create**.
 
-:::image type="content" source="../media/ew-branch-ruleset.png" alt-text="Create a new branch ruleset page from the left hand navigation bar.":::
+:::image type="content" source="../media/new-branch-ruleset.png" alt-text="Create a new branch ruleset page from the left hand navigation bar.":::
 
 When creating a ruleset you can grant bypass permissions, choose which branches or tags to target, and select the rules to include. 
 
