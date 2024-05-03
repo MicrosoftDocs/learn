@@ -17,7 +17,7 @@ summary: |
   * Design a solution that analyzes your business forms by using Azure AI Document Intelligence.
   * Create a solution that analyzes common documents by using Document Intelligence.
   * Create a solution that analyses different custom form types by using Document Intelligence.
-  * Include an Azure AI Document Intelligence service as a custom skill in an Azure Cognitive Search pipeline.
+  * Include an Azure AI Document Intelligence service as a custom skill in an Azure AI Search pipeline.
 iconUrl: /training/achievements/extract-data-from-forms-use-form-recognizer.svg
 levels:
 - intermediate
