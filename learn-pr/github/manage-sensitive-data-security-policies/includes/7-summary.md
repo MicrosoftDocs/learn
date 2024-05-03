@@ -42,5 +42,5 @@ The following are links related to the information covered in this module:
 -  [git filter-repo](https://github.com/newren/git-filter-repo)
 -  [git filter-repo INSTALL.md](https://github.com/newren/git-filter-repo/blob/main/INSTALL.md)
 -  [Cloning a repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository)
-6. [Tags and Releases](https://docs.github.com/en/github/administering-a-repository/releasing-projects-on-github/about-releases)
-7. [Community guideline Information](https://docs.github.com/en/github/site-policy/github-community-guidelines#doxxing-and-invasion-of-privacy)
+-   [Tags and Releases](https://docs.github.com/en/github/administering-a-repository/releasing-projects-on-github/about-releases)
+-  [Community guideline Information](https://docs.github.com/en/github/site-policy/github-community-guidelines#doxxing-and-invasion-of-privacy)
