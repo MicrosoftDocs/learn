@@ -37838,6 +37838,56 @@
       "source_path": "learn-pr/github/configure-dependabot-security-updates-on-github-repo/8-summary.yml",
       "redirect_url": "/training/modules/configure-dependabot-security-updates-on-github-repo/9-summary",
       "redirect_document_id": true
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/advanced-security-compute/10-azure-security-baseline-api-management.md",
+      "redirect_url": "/training/modules/advanced-security-compute/11-azure-security-baseline-api-management",
+      "redirect_document_id": true
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/advanced-security-compute/11-knowledge-check.md",
+      "redirect_url": "/training/modules/advanced-security-compute/12-knowledge-check",
+      "redirect_document_id": true
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/advanced-security-compute/12-summary.md",
+      "redirect_url": "/training/modules/advanced-security-compute/13-summary",
+      "redirect_document_id": true
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/advanced-security-compute/3-best-practices-cluster-isolation-azure-kubernetes-service.md",
+      "redirect_url": "/training/modules/advanced-security-compute/4-best-practices-cluster-isolation-azure-kubernetes-service",
+      "redirect_document_id": true
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/advanced-security-compute/4-microsoft-defender-containers.md",
+      "redirect_url": "/training/modules/advanced-security-compute/5-microsoft-defender-containers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/advanced-security-compute/5-best-practices-authentication-authorization.md",
+      "redirect_url": "/training/modules/advanced-security-compute/6-best-practices-authentication-authorization",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/advanced-security-compute/6-monitor-container-resources-azure-container-instances.md",
+      "redirect_url": "/training/modules/advanced-security-compute/7-monitor-container-resources-azure-container-instances",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/advanced-security-compute/7-security-considerations-azure-container-instances.md",
+      "redirect_url": "/training/modules/advanced-security-compute/8-security-considerations-azure-container-instances",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/advanced-security-compute/8-azure-container-registry-roles-permissions.md",
+      "redirect_url": "/training/modules/advanced-security-compute/9-azure-container-registry-roles-permissions",
+      "redirect_document_id": true
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/advanced-security-compute/9-azure-data-encryption.md",
+      "redirect_url": "/training/modules/advanced-security-compute/10-azure-data-encryption",
+      "redirect_document_id": true
     }
   ]
 }

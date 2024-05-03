@@ -9,6 +9,6 @@ metadata:
   author: a-a-ron
   ms.author: aastewar
   ms.topic: unit
-durationInMinutes: 4
+durationInMinutes: 10
 content: |
   [!include[](includes/6-dependency-review.md)]
