@@ -48,7 +48,7 @@ Now that you're familiar with the Visual Studio Code user interface, your next s
 
 1. In the filtered list of available extensions, select the extension labeled **IntelliCode for C# - AI-assisted development for C# Dev Kit** published by Microsoft.
 
-    ![Screenshot showing Visual Studio Code C# Dev Kit extension that's published by Microsoft.](../media/visual-studio-code-csharp-intellicode-extension-microsoft.png)
+    ![Screenshot showing Visual Studio Code IntelliCode for C# Dev Kit extension that's published by Microsoft.](../media/visual-studio-code-csharp-intellicode-extension-microsoft.png)
 
 
 1. To install the extension, select **Install**.
