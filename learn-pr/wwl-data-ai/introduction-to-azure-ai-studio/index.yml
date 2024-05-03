@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-to-azure-ai-studio
 metadata:
   title: Introduction to Azure AI Studio (preview)
   description: "Microsoft Azure offers multiple services that enable developers to build amazing AI-powered solutions. Azure AI Studio (preview) brings these services together in a single unified experience for AI development on the Azure cloud platform."
-  ms.date: 05/01/2023
+  ms.date: 10/16/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
