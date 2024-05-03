@@ -44,20 +44,18 @@ The Azure portal provides a wizard to create a web app. This wizard requires the
 |---|---|
 | **Subscription** | A valid and active Azure subscription. |
 | **Resource group** | A valid resource group. |
-| **App name** | The name of the web app. This name becomes part of the app's URL, so it must be unique among all Azure App Service web apps. |
-| **Publish** | You can deploy your application to App Service as **code** or as a ready-to-run **Docker image**. Selecting **Docker image** will activate the wizard's Docker tab, where you'll provide information about the Docker registry from which App Service will retrieve your image. |
-| **Runtime stack** | If you choose to deploy your application as code, App Service needs to know what runtime your application uses (examples include Node.js, Python, Java, and .NET). If you deploy your application as a Docker image, you won't need to choose a runtime stack, because your image will include it. |
+| **Name** | The name of the web app. This name becomes part of the app's URL, so it must be unique among all Azure App Service web apps. |
+| **Publish** | You can deploy your application to App Service as **code** or as a ready-to-run Docker **Container**. Selecting **Container** will activate the wizard's Container tab, where you'll provide information about the Docker registry from which App Service will retrieve your image. |
+| **Runtime stack** | If you choose to deploy your application as code, App Service needs to know what runtime your application uses (examples include Node.js, Python, Java, and .NET). If you deploy your application as a container, you won't need to choose a runtime stack, because your image will include it. |
 | **Operating system** | App Service can host applications on **Windows** or **Linux** servers. See the *Operating systems* section in this unit for additional information. |
 | **Region** | The Azure region from which your application will be served. |
-| **App Service Plan** | See the *App Service plans* section in this unit for information about App Service plans. |
+| **Pricing Plans** | See the *Pricing Plans* section in this unit for information about App Service plans. |
 
 ### Operating systems
 
 If you're deploying your app as code, many of the available runtime stacks are limited to one operating system or the other. After choosing a runtime stack, the toggle will indicate whether or not you have a choice of operating system. If your target runtime stack is available on both operating systems, select the one that you use to develop and test your application.
 
-If your application is packaged as a Docker image, choose the operating system on which your image is designed to run.
-
-Selecting **Windows** activates the **Monitoring** tab, where you can enable **Application Insights**. Enabling this feature configures your app to automatically send detailed performance telemetry to the Application Insights monitoring service without requiring any changes to your code. You can use Application Insights from Linux-hosted apps as well, but this turnkey, no-code option is only available on Windows.
+If your application is packaged as a container, specify the operating system in your container.
 
 ### App Service plans
 
