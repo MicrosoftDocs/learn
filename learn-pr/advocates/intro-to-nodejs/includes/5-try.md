@@ -135,8 +135,8 @@ The following top-level asynchronous code requests an HTTP JSON data source then
 
     ```output
     start
+    statusCode: 200
     end
-    200
     ```
 
 From the output, you can see the event loop in action. The HTTP method is called and put in the task queue, waiting for it to return. The event loop takes the next task, which is the console.log method.
