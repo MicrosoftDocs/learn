@@ -37,7 +37,7 @@ The example that follows shows the compliance settings tab for a new macOS compl
 
 From an existing policy, you can use Copilot to summarize the policy. The summary describes what the policy does, the users and groups assigned to the policy, and the settings in the policy. This feature can help you understand the impact of a policy and its settings on your users and devices.
 
-:::image type="content" source="../media/intune-policy-summarize.png" lightbox="../media/intune-policy-summarize.png" alt-text="Screen capture of Copilot in Intune prompt guide icon and the available prompts.":::
+:::image type="content" source="../media/intune-policy-summarize.png" lightbox="../media/intune-policy-summarize.png" alt-text="Screen capture of Copilot in Intune showing a summary for a device policy and the available prompts.":::
 
 Whether you're using Copilot to learn about the settings for a new policy or summarizing an existing policy, the Copilot window provides more prompts that you can use. You can also select the prompt guide icon on the bottom right and select from an existing list of prompts.
 
