@@ -2,7 +2,7 @@ With your initial database migration complete, you're ready to migrate your appl
 
 ## Remediate your application code
 
-Before migrating your servers to Azure VMs, prepare your applications to use your new databases. During its code audit pass, your dev team will have identified the connection strings, queries, or other functionality with Oracle-specific features. The team now [modifies the application code to address those issues](/azure/azure-sql/migration-guides/managed-instance/oracle-to-managed-instance-guide?view=azuresql&preserve-view=true#post-migration).
+Before migrating your servers to Azure VMs, prepare your applications to use your new databases. During its code audit pass, your dev team will have identified the connection strings, queries, or other functionality with Oracle-specific features. The team now [modifies the application code to address those issues](/azure/azure-sql/migration-guides/managed-instance/oracle-to-managed-instance-guide#post-migration).
 
 ## Use Azure Migrate to replicate the application VMs
 

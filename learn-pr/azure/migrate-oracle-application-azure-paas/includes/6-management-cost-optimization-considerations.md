@@ -14,7 +14,7 @@ Find guidance to help your organization plan, manage, and govern its cloud adopt
 
 - Determine how your application fits into the global [management group](/azure/cloud-adoption-framework/ready/landing-zone/design-area/resource-org-management-groups) and [subscription](/azure/cloud-adoption-framework/ready/landing-zone/design-area/resource-org-subscriptions) structure. Be aware of any permissions or administrative restrictions you may need to address.
 
-- Plan for [governance](/azure/cloud-adoption-framework/govern/) after migration, based on organizational policies and processes. If you don't have these, you'll need to create them prior to migration.
+- Plan for [governance](/azure/cloud-adoption-framework/govern/) after migration, based on organizational policies and processes. If you don't have these policies and processes, you'll need to create them prior to migration.
 
 - Identify [security](/azure/cloud-adoption-framework/secure/) and [management](/azure/cloud-adoption-framework/manage/) requirements for your workloads. Are there network or access restrictions that need to be implemented as a matter of policy? Are there logging and alerting requirements you need to meet? Are there legal or other jurisdictional issues that apply to your data?
 
@@ -32,6 +32,6 @@ Cost optimization includes ensuring that the size and scale of your compute or s
 
 - Help ensure that your solutions are reliable, secure, performant, and optimized for costs by following the [Azure Well-Architected Framework](/azure/well-architected/) approach when designing your Azure solutions. Specific [guidance for solutions built on Azure SQL Managed Instance](https://techcommunity.microsoft.com/t5/azure-sql-blog/optimize-your-azure-sql-managed-instance-cost-with-microsoft/ba-p/2235216) is available.
 
-- Take self-paced training to learn how to manage Azure costs with the Microsoft Learn [Control Azure spending and manage bills with Microsoft Cost Management + Billing](/training/paths/control-spending-manage-bills/) learning path.
+- Take self-paced training to learn how to manage Azure costs with the following learning path on Microsoft Learn: [Control Azure spending and manage bills with Microsoft Cost Management + Billing](/training/paths/control-spending-manage-bills/).
 
-- Lock in pricing with [Azure Reservations](/azure/cost-management-billing/reservations/save-compute-costs-reservations) for significant savings over pay-as-you-go plans, if you can predict your cloud usage. Save more with [Azure Hybrid Benefit](/azure/azure-sql/azure-hybrid-benefit?view=azuresql&tabs=azure-portal&preserve-view=true) by bringing your own SQL Server licenses covered under Software Assurance.
+- Lock in pricing with [Azure Reservations](/azure/cost-management-billing/reservations/save-compute-costs-reservations) for significant savings over pay-as-you-go plans, if you can predict your cloud usage. Save more with [Azure Hybrid Benefit](/azure/azure-sql/azure-hybrid-benefit) by bringing your own SQL Server licenses covered under Software Assurance.
