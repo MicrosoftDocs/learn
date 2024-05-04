@@ -29,6 +29,6 @@ You confirm that rehosting enables you to migrate with a minimum of churn and gi
 
 ## Related information
 
-- Learning path: Migrate virtual machines and apps using Azure Migrate
-- Article: Azure migration guide
-- Article: Azure cloud migration best practices checklist
+- Learning path: [Migrate virtual machines and apps using Azure Migrate](/training/paths/m365-azure-migrate-virtual-machine/)
+- Article: [Azure migration guide](/azure/cloud-adoption-framework/migrate/azure-migration-guide/)
+- Article: [Azure cloud migration best practices checklist](/azure/cloud-adoption-framework/migrate/azure-best-practices/)

@@ -26,7 +26,7 @@ After completing this process, confirm that your applications are communicating 
 
 ## Migrate your Oracle database data
 
-At this point, your new database and application VMs are set up and talking to each other. You're ready for the final migration process—getting your data from your old database to your new Azure-hosted database servers.
+At this point, your new database and application VMs are set up and talking to each other. You're ready for the final migration process: getting your data from your old database to your new Azure-hosted database servers.
 
 Oracle workloads tend to involve very large amounts of data, and the storage and bandwidth requirements during migration can be intense. Based on your workload and uptime requirements, you'll need to determine which of the two data migration scenarios will work for you:
 
