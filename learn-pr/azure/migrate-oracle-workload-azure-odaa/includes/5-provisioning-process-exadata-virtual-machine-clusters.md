@@ -2,7 +2,7 @@ After your Exadata Infrastructure is created, you can start provisioning the vir
 
 ## Provision your virtual machine cluster
 
-Although you can distribute the available resources among multiple virtual machine clusters to support different workloads, in your migration, you're focusing on creating a single cluster.
+Although you can distribute the available resources among multiple virtual machine clusters to support different workloads, you want to create a single cluster.
 
 As you did when creating the infrastructure, use the Azure portal to access the Oracle Database@Azure service blade, where you start the [provisioning process](/azure/oracle/oracle-db/provision-oracle-database#provision-an-exadata-virtual-machine-cluster).
 

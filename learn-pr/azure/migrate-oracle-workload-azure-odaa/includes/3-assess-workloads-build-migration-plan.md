@@ -24,7 +24,7 @@ The [Azure Migrate: Discovery and assessment tool](/azure/migrate/concepts-asses
 
 - Any additional cross-server dependencies and optimization strategies for moving interdependent servers to Azure.
 
-For details on how best to set up and use assessment information, consult the [Azure Migrate “Best practices for creating assessments” documentation](/azure/migrate/best-practices-assessment).
+For details on how best to set up and use assessment information, consult the [Azure Migrate "Best practices for creating assessments" documentation](/azure/migrate/best-practices-assessment).
 
 ## Additional considerations
 
@@ -38,9 +38,9 @@ Before finalizing your plan, consider the following additional factors:
 
 - [Networking.](/azure/virtual-network/network-overview) Does your workload have specific traffic management or security requirements? Is your virtual network properly configured to allow your Oracle Database@Azure infrastructure to communicate with your other Azure resources?
 
-- [Azure role-based access control (RBAC)](/azure/role-based-access-control/overview) helps you manage who has access to Azure resources, what they can do with those resources, and which areas they can access.
+    - [Azure role-based access control (RBAC)](/azure/role-based-access-control/overview) helps you manage who has access to Azure resources, what they can do with those resources, and which areas they can access.
 
-- [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) allows you to manage network traffic in much the same way you would when using an on-premises network.  can offer firewall and gateway/router capabilities. Your virtual network can even be connected to your on-premises or other cloud networks, by using [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways) or [Azure ExpressRou](https://azure.microsoft.com/products/expressroute)te.
+    - [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) allows you to manage network traffic in much the same way you would when using an on-premises network. [Network virtual appliances](https://azure.microsoft.com/solutions/network-appliances) can offer firewall and gateway/router capabilities. Your virtual network can even be connected to your on-premises or other cloud networks, by using [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways) or [Azure ExpressRoute](https://azure.microsoft.com/products/expressroute).
 
 ## Finalize your plan
 

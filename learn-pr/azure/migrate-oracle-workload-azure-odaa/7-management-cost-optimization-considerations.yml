@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.migrate-oracle-workload-azure-odaa.7-management-cost-optimization-considerations
-title: Evaluate management and cost optimization considerations
+title: Plan for management and cost optimization considerations
 metadata:
-  title: Evaluate management and cost optimization considerations
+  title: Plan for management and cost optimization considerations
   description: Learn about management and cost optimization considerations.
   ms.date: 04/15/2024
   author: rmcmurray
