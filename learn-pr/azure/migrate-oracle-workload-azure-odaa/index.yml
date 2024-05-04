@@ -1,17 +1,17 @@
 ### YamlMime:Module
 uid: learn.azure.migrate-oracle-workload-azure-odaa
 metadata:
-  title: "Migrate an Oracle workload to Oracle Database@Azure"
-  description: "Learn how to migrate an Oracle workload to Oracle Database@Azure."
+  title: "Migrate Oracle workloads to Oracle Database@Azure"
+  description: "Learn how to migrate your Oracle workloads to Oracle Database@Azure."
   ms.date: 04/15/2024
   author: rmcmurray
   ms.author: robmcm
   ms.topic: module
   ms.service: azure
-title: "Migrate an Oracle workload to Oracle Database@Azure"
+title: "Migrate Oracle workloads to Oracle Database@Azure"
 summary: "This module describes the process of migrating an Oracle Exadata-powered application to Azure without refactoring, by taking advantage of Oracle infrastructure in Azure datacenters."
 abstract: |
-  After completing this module you'll be able to:
+  After completing this module, you'll be able to:
   - Describe how Oracle Database@Azure works and how it can support your applications.
   - Identify when this migration model is appropriate and how to plan for it.
   - Describe the migration process for your databases and your applications.

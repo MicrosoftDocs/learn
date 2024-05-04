@@ -14,7 +14,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following is the primary factor that allows Oracle Database@Azure to have extremely low latency with Azure-hosted workloads?"
+  - content: "Which of the following options is the primary factor that allows Oracle Database@Azure to have extremely low latency with Azure-hosted workloads?"
     choices:
     - content: "Oracle Database@Azure offers full Exadata database support."
       isCorrect: false
@@ -25,7 +25,7 @@ quiz:
     - content: "Oracle Database@Azure can be managed using the Azure portal."
       isCorrect: false
       explanation: "Incorrect. Oracle Database@Azure delivers low latency because it runs on hardware colocated in the same datacenters as your Azure workloads."
-  - content: "Which of the following is a reason to migrate using Oracle Database@Azure?"
+  - content: "Which of the following scenarios is a reason to migrate using Oracle Database@Azure?"
     choices:
     - content: "You want to manually configure the Oracle software hosting your databases."
       isCorrect: false
@@ -36,7 +36,7 @@ quiz:
     - content: "You want to switch to a non-Oracle hosting technology."
       isCorrect: false
       explanation: "Incorrect. While collocated at Azure datacenters, Oracle Database@Azure runs on fully dedicated Oracle hardware using Oracle server technology."
-  - content: "Which of the following do you configure when provisioning your Exadata infrastructure?"
+  - content: "Which of the following options do you configure when provisioning your Exadata infrastructure?"
     choices:
     - content: "The operating system your VMs will run."
       isCorrect: false

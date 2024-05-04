@@ -4,7 +4,7 @@ In this section, you assess your on-premises environment. You map out how to con
 
 ## Understand your database requirements
 
-Although Oracle Database@Azure will manage the underlying Exadata infrastructure for your databases, you still need to assess database hardware requirements. This includes determining the number of virtual database and storage servers to create, including the total number of CPUs and amount of storage capacity needed.
+Although Oracle Database@Azure manages the underlying Exadata infrastructure for your databases, you still need to assess database hardware requirements. This includes determining the number of virtual database and storage servers to create, including the total number of CPUs and amount of storage capacity needed.
 
 Work with the Oracle sales team to analyze your existing database infrastructure, collecting data such as the CPU, memory, and IO performance of your Oracle databases. With this information, you can select the correct amount of compute and storage capacity for your workload when you provision your infrastructure.
 
@@ -44,4 +44,4 @@ Before finalizing your plan, consider the following additional factors:
 
 ## Finalize your plan
 
-After performing these assessments, you should have all the information you need to plan your migration. These details will enable you to map out your migration landing zone, including the access and networking architecture, in addition to any VM and storage resources you should create.
+After performing these assessments, you should have all the information you need to plan your migration. These details enable you to map out your migration landing zone, including the access and networking architecture, in addition to any VM and storage resources you should create.

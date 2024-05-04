@@ -34,7 +34,7 @@ Next, define how you want your cluster configured, including:
 
 Note that these settings may be limited, based on the configuration of the Exadata infrastructure you created.
 
-After you complete the resource allocation step, configure the networking settings. This includes choosing the virtual network to connect to the rest of your virtual resources, such as your application VMs, and then specifying the [subnet you configured to connect with your cluster](/azure/oracle/oracle-db/oracle-database-network-plan).
+After you complete the resource allocation step, configure the networking settings. These settings include choosing the virtual network to connect to the rest of your virtual resources, such as your application VMs, and then specifying the [subnet you configured to connect with your cluster](/azure/oracle/oracle-db/oracle-database-network-plan).
 
 The remaining steps include configuring diagnostics collection, accepting the Oracle Terms of Use and Privacy Policy, and applying any administrative or management [Azure tags](/azure/azure-resource-manager/management/tag-resources) to the cluster. Then you can proceed to create the cluster.
 

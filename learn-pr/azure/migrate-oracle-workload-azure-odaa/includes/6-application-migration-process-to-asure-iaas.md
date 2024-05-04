@@ -12,7 +12,7 @@ To complete this process:
 
 1. [Install Azure Migrate Mobility service agent on servers migrating to Azure.](/azure/migrate/tutorial-migrate-physical-virtual-machines#install-the-mobility-service-agent) This agent allows the replication appliance to manage the local servers and to copy necessary data to the newly deployed Azure VMs.
 
-1. [Configure your replication settings.](/azure/migrate/tutorial-migrate-physical-virtual-machines#replicate-machines) This allows you to select which machines are being migrated, the target Azure resource group and virtual network to use, and the target VM and storage settings. Because you used Azure Migrate to assess the application, the tool should automatically populate many of these settings.
+1. [Configure your replication settings.](/azure/migrate/tutorial-migrate-physical-virtual-machines#replicate-machines) These settings allow you to select which machines are being migrated, the target Azure resource group and virtual network to use, and the target VM and storage settings. Because you used Azure Migrate to assess the application, the tool should automatically populate many of these settings.
 
 1. [Test your migration.](/azure/migrate/tutorial-migrate-physical-virtual-machines#run-a-test-migration) After configuring your replication settings, perform a test migration. By deploying a test version of your replicated machine, you validate that your settings are correct. After validation, delete the test VMs.
 

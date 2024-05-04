@@ -6,7 +6,7 @@ When you're thinking about a cloud migration project, consider the following que
 
 During a migration, you're primarily concerned with successfully transitioning a specific application to the cloud. But you also want to make sure each migration fits into your organization's broader effort to adopt modern cloud-hosting solutions. As such, you need to understand the goals, limitations, and overall strategy of this effort.
 
-Find guidance to help your organization plan, manage, and govern its cloud adoption process in the [Microsoft Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/). Following the best practices in this framework can help your organization achieve the best business outcomes possible in your cloud adoption effort. Make sure, when planning this effort, that you've considered the following:
+Find guidance to help your organization plan, manage, and govern its cloud adoption process in the [Microsoft Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/). Following the best practices in this framework can help your organization achieve the best business outcomes possible in your cloud adoption effort. When planning this effort, make sure that you've considered the following concepts:
 
 - Fit your workload within the wider organizational [cloud adoption strategy](/azure/cloud-adoption-framework/strategy/). This strategy includes both business justification and aspirational goals for the organization's cloud adoption efforts. If your organization hasn't already defined this strategy, work with your managers and wider business team to start the process of creating one.
 
@@ -32,7 +32,7 @@ Cost optimization includes ensuring that the size and scale of your compute or s
 
 - Make sure that the size and scale of your compute or storage usage is appropriate to your needs. Achieve savings by resizing your VMs to better match your needs or setting up scaling rules to add or remove instances on demand.
 
-- Make sure that you've got the appropriate Oracle licenses and support contracts in place. Existing Oracle customers can use the Bring Your Own License (BYOL) option or Unlimited License Agreements (ULAs). Oracle has guaranteed license mobility between on-premises and Azure licensing, and it offers pricing parity for licenses between OCI and Azure. For more information about Oracle licensing on Azure, refer to the [Oracle and Microsoft Strategic Partnership FAQ](https://www.oracle.com/cloud/azure/interconnect/faq/).
+- Make sure that you've got the appropriate Oracle licenses and support contracts in place. Existing Oracle customers can use the Bring Your Own License (BYOL) option or Unlimited License Agreements (ULAs). Oracle has guaranteed license mobility between on-premises and Azure licensing, and it offers pricing parity for licenses between OCI and Azure. For more information about Oracle licensing on Azure, see the [Oracle and Microsoft Strategic Partnership FAQ](https://www.oracle.com/cloud/azure/interconnect/faq/).
 
 - Get insight into spending and areas where you could improve usage by using the [Microsoft Cost Management](/azure/cost-management-billing/costs/overview-cost-management) tools.
 
