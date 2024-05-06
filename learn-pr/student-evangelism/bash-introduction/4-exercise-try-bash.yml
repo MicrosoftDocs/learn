@@ -3,7 +3,7 @@ uid: learn.student-evangelism.bash-introduction.4-exercise-try-bash
 title: Exercise - Try Bash
 metadata:
   title: Exercise - Try Bash
-  description: Get some experience with Bash by trying some commands
+  description: Get some experience with Bash by trying some commands.
   ms.date: 04/06/2022
   author: softchris
   ms.author: chnoring
@@ -18,7 +18,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "What directory would you switch to if you entered the Bash command `cd .`?"
+  - content: "What directory would you switch to if you entered `cd .` as a Bash command?"
     choices:
     - content: "My special \"home\" directory"
       isCorrect: false
@@ -29,6 +29,6 @@ quiz:
     - content: "The first alphabetical subdirectory"
       isCorrect: false
       explanation: "`.` is a short-version of a directory name, but not that one."
-    - content: "I wouldn't switch directories"
+    - content: "I wouldn't switch directories."
       isCorrect: true
       explanation: "Remember that `.` refers to your current directory. Changing directories (`cd`) to your current directory wouldn't change directories at all!"
