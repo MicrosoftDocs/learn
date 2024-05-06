@@ -15,9 +15,7 @@ Alice and Bob work together in the same company. Alice is based in Seattle, and 
 
 Alice and Bob each have a qubit that is part of an entangled pair that was previously prepared. The entangled pair is a Bell state, which is the state
 
-<!--- \ket{\phi}=\frac1{\sqrt2}(\ket{00}_{AB} + \ket{11}_{AB}) --->
-
-:::image type="content" source="../media/equation-bell-state.png " alt-text="Screenshot of the quantum state of two qubits that are entangled." border="false"::: 
+$$\ket{\phi}=\frac1{\sqrt2}(\ket{0_A 0_B} + \ket{1_A 1_B})$$
 
 Alice has an extra qubit – called the “message qubit” – and wants to send this qubit to Bob. The message qubit is in an unknown state that Alice wants to teleport to Bob. The state of the message qubit is
 
@@ -25,13 +23,9 @@ $$\ket{m}=\alpha \ket{0}_m + \beta \ket{1}_m,$$
 
 where $\alpha$ and $\beta$ are complex numbers.
 
-The global state of Alice and Bob's qubits is
+The global state of Alice and Bob's three qubits is
 
-<!--- \ket{\psi}_{mAB} = (\alpha\ket{0}_m + \beta\ket{1}_m) \otimes \frac1{\sqrt2}(\ket{00}_{AB} + \ket{11}_{AB}) --->
-
-
-:::image type="content" source="../media/equation-teleportation-step-1.png " alt-text="Screenshot of the quantum state of the global state formed by Alice and Bob's qubits." border="false"::: 
-
+$$\ket{\text{Global}} = (\alpha\ket{0}_m + \beta\ket{1}_m) \otimes \frac1{\sqrt2}(\ket{0_A 0_B} + \ket{1_A 1_B}) $$
 
 :::image type="content" source="../media/teleportation-step-1.png" alt-text="Diagram showing two faces emojis of a woman and a man representing Alice and Bob. Alice owns two qubits, one of them is entangled with Bob's qubits. Entangled qubits are the same color, representing they're entangled. Message qubit is a different color.":::
 
@@ -44,16 +38,12 @@ Alice takes the message qubit and entangles it with her own qubit $A$ using a CN
 The message qubit is in the unknown state $\alpha \ket{0}_m + \beta \ket{1}_m$, so after applying the CNOT gate, Alice's qubits are in a superposition of the four Bell states. The global state of the three qubits is
 
 
-<!--- \ket{\psi}_{mAB} & = \frac1{2} \ket{\phi^+}_{mA} (\alpha\ket{0}_B + \beta\ket{1}_B) + \\
-& + \frac1{2}  \ket{\phi^-}_{mA} (\alpha\ket{0}_B - \beta\ket{1}_B) + \\
-& + \frac1{2}  \ket{\psi^+}_{mA} (\alpha\ket{1}_B + \beta\ket{0}_B) + \\
-& + \frac1{2}  \ket{\psi^-}_{mA} (\alpha\ket{1}_B - \beta\ket{0}_B) --->
-
-
-
-:::image type="content" source="../media/equation-three-entangled-qubits.png " alt-text="Screenshot of the quantum state of three qubits that are entangled." border="false"::: 
-
-
+$$\begin{aligned}
+\ket{\text{Global}} & = \frac1{2} \ket{\phi^+}_{\text{Alice}} (\alpha\ket{0}_B + \beta\ket{1}_B) + \\
+& + \frac1{2}  \ket{\phi^-} (\alpha\ket{0}_B - \beta\ket{1}_B) + \\
+& + \frac1{2}  \ket{\psi^+} (\alpha\ket{1}_B + \beta\ket{0}_B) + \\
+& + \frac1{2}  \ket{\psi^-}(\alpha\ket{1}_B - \beta\ket{0}_B)
+\end{aligned} $$
 
 The global state of Alice and Bob's qubits is a superposition of four possible states.
 

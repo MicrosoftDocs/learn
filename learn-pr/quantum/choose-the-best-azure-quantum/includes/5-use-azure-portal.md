@@ -22,13 +22,15 @@ A quantum workspace is a container for your quantum programs and resources. If y
 
 ## Manage your quantum workspace
 
+The Azure portal allows you to manage your quantum workspace. You can view the details of your workspace, manage your Azure Quantum credits, list your quantum jobs, see the status of the quantum computing providers you have selected, and more.
+
+For example, the following steps show you how to view your workspace details and check your Azure Quantum credits.
 
 ### Retrieve your workspace details
 
 For some tasks like connecting to your Azure Quantum workspace, you may need you quantum workspace details, such as the resource ID and the location. 
 
-1. Go to **Quantum Workspaces** in the Azure portal home page.
-1. Select your quantum workspace.
+1. Select your Azure Quantum workspace in the [Azure portal](https://portal.azure.com).
 1. Select **Overview** in the left pane.
 1. The details of your workspace are displayed. For example, you can find the **Resource ID** and the **Location** of your workspace here.
 
@@ -40,8 +42,7 @@ When you create an Azure Quantum workspace for the first time, you get **free US
 
 You can check your remaining Azure Quantum credits in the Azure portal.
 
-1. Go to **Quantum Workspaces** in the Azure portal home page
-1. Select your quantum workspace.
+1. Select your Azure Quantum workspace in the [Azure portal](https://portal.azure.com).
 1. Select **Credits and Quotas** in the left pane.
 1. Your remaining credits are displayed in the **Credits** section. You can check the remaining credits for each of the quantum computing providers you have selected for your workspace.
 
@@ -58,7 +59,10 @@ The Azure Quantum portal includes a notebook gallery with sample notebooks You c
 
     :::image type="content" source="../media/azure-portal-sample-gallery.png" alt-text="Screenshot of the Azure portal showing how to select a sample notebook from the sample gallery.":::
 
-1. The notebook can be found under **My notebooks** and you can now run the notebook.
+1. The notebook can be found under **My notebooks**. 
+1. Open the notebook and click on **Run all** to run the quantum program.
+
+
 
 
 
