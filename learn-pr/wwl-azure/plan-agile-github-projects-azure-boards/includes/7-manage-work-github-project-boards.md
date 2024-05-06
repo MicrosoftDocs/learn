@@ -1,4 +1,3 @@
-
 GitHub Projects allow you to control project deliverables, release dates, and iterations to plan upcoming work.
 
 You can create an iteration to:

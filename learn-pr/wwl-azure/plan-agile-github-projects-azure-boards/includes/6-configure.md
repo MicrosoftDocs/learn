@@ -1,4 +1,3 @@
-
 ## Create a project
 
 To start working with GitHub Projects, you first need to create an organization or user project.

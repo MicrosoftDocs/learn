@@ -1,4 +1,3 @@
-
 ## Project Boards
 
 During the application or project lifecycle, it's crucial to plan and prioritize work. With Project boards, you can control specific feature work, roadmaps, release plans, etc.
