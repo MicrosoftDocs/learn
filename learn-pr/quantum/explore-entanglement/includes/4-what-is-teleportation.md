@@ -19,13 +19,13 @@ $$\ket{\phi}=\frac1{\sqrt2}(\ket{00}_{\text{AB}} + \ket{11}_{\text{AB}})$$
 
 Alice has an extra qubit – called the “message qubit” – and wants to send this qubit to Bob. The message qubit is in an unknown state that Alice wants to teleport to Bob. The state of the message qubit is
 
-$$\ket{m}=\alpha \ket{0}_\text{m} + \beta \ket{1}_\text{m},$$
+$$\ket{m}=\alpha \ket{0}_m + \beta \ket{1}_m,$$
 
 where $\alpha$ and $\beta$ are complex numbers.
 
 The global state of Alice and Bob's three qubits is
 
-$$\ket{\text{Global}} = (\alpha\ket{0}_\text{m} + \beta\ket{1}_\text{m}) \otimes \frac1{\sqrt2}(\ket{00}_{\text{AB}} + \ket{11}_{\text{AB}}) $$
+$$\ket{\text{Global}} = (\alpha\ket{0}_m + \beta\ket{1}_m) \otimes \frac1{\sqrt2}(\ket{00}_{\text{AB}} + \ket{11}_{\text{AB}}) $$
 
 :::image type="content" source="../media/teleportation-step-1.png" alt-text="Diagram showing two faces emojis of a woman and a man representing Alice and Bob. Alice owns two qubits, one of them is entangled with Bob's qubits. Entangled qubits are the same color, representing they're entangled. Message qubit is a different color.":::
 
@@ -35,15 +35,13 @@ Alice takes the message qubit and entangles it with her own qubit $A$ using a CN
 
 :::image type="content" source="../media/teleportation-step-1-b.png" alt-text="Diagram showing two face emojis of a woman and a man representing Alice and Bob, and a hammer emoji representing that Alice manipulates her qubits. The three qubits are the same color, representing they're entangled. ":::
 
-The message qubit is in the unknown state $\alpha \ket{0}_\text{m} + \beta \ket{1}_\text{m}$, so after applying the CNOT gate, Alice's qubits are in a superposition of the four Bell states. The global state of the three qubits is
+The message qubit is in the unknown state $\alpha \ket{0}_m + \beta \ket{1}_m$, so after applying the CNOT gate, Alice's qubits are in a superposition of the four Bell states. The global state of the three qubits is
 
 
-$$
-\ket{\text{Global}} = \frac1{2} \ket{\phi^+}_{\text{mA}} (\alpha\ket{0}_\text{B} + \beta\ket{1}_\text{B}) + $$
-$$ + \frac1{2}  \ket{\phi^-}_{\text{mA}} (\alpha\ket{0}_\text{B} - \beta\ket{1}_\text{B}) + $$
-$$+ \frac1{2}  \ket{\psi^+}_{\text{mA}} (\alpha\ket{1}_\text{B} + \beta\ket{0}_\text{B}) + $$
-$$ + \frac1{2}  \ket{\psi^-}_{\text{mA}} (\alpha\ket{1}_\text{B} - \beta\ket{0}_\text{B})
-$$
+$$ \ket{\text{Global}} = \frac1{2} \ket{\phi^+}_{\text{mA}} (\alpha\ket{0}_B + \beta\ket{1}_B) + $$
+$$ + \frac1{2}  \ket{\phi^-}_{\text{mA}} (\alpha\ket{0}_B - \beta\ket{1}_B) + $$
+$$ + \frac1{2}  \ket{\psi^+}_{\text{mA}} (\alpha\ket{1}_B + \beta\ket{0}_B) + $$
+$$ + \frac1{2}  \ket{\psi^-}_{\text{mA}} (\alpha\ket{1}_B- \beta\ket{0}_B)$$
 
 The global state of Alice and Bob's qubits is a superposition of four possible states.
 
@@ -56,7 +54,7 @@ Alice then measures the message qubit and her own qubit. She doesn't measures th
 
 By measuring the message qubit and her own qubit in the Bell basis, Alice projects her qubits into one of the four Bell states. Because the three qubits are entangled, the measurement results are correlated. When Alice measures her qubits, Bob's qubit is also projected into the correlated state.
 
-For example, if Alice measures her qubits and observes the state $\ket{\phi^-}$, then Bob's qubit is projected into the state $\alpha\ket{0}_\text{B} - \beta\ket{1}_\text{B}$.
+For example, if Alice measures her qubits and observes the state $\ket{\phi^-}$, then Bob's qubit is projected into the state $\alpha\ket{0}_B - \beta\ket{1}_B$.
 
 :::image type="content" source="../media/teleportation-step-2.png" alt-text="Diagram showing two face emojis of a woman and a man representing Alice and Bob, and a hammer emoji representing that Alice manipulates her qubits. Alice's qubits are the same color, representing they're entangled, while Bob's qubit is a different color.":::
 
@@ -76,7 +74,7 @@ Next, Bob can recover the original state of the message qubit by applying a spec
 
 The operation he executes can be a Pauli $X$ gate, a Pauli $Z$ gate, both, or none.
 
-For example, if the result of Alice's measurement is $\ket{\phi^-}$, Bob knows that his qubit is in the state $(\alpha\ket{0}_\text{B} - \beta\ket{1}_\text{B})$. He only needs to apply a Pauli Z gate to recover the original state of the message qubit.
+For example, if the result of Alice's measurement is $\ket{\phi^-}$, Bob knows that his qubit is in the state $(\alpha\ket{0}_B - \beta\ket{1}_B)$. He only needs to apply a Pauli Z gate to recover the original state of the message qubit.
 
 |Alice measures|Bob applies|
 |---|---|
