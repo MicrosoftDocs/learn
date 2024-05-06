@@ -16,13 +16,10 @@ Entanglement is a **quantum correlation** between two or more particles. If two 
 
 Imagine two qubits $A$ and $B$ such that the state of the global system $\ket{\phi}$ is:
 
-<!--- \ket{\phi}=\frac1{\sqrt2}(\ket{00}_{AB} + \ket{11}_{AB}) --->
-
-:::image type="content" source="../media/equation-bell-state.png " alt-text="Screenshot of the quantum state of two qubits that are entangled." border="false"::: 
-
+$$\ket{\phi}=\frac1{\sqrt2}(\ket{0_A 0_B}+ \ket{1_A 1_B})$$
 
 > [!NOTE]
-> In Dirac notation, $\ket{00}_{AB} = |0\rangle_A |0\rangle_B$. The first position corresponds to the first qubit, and the second position corresponds to the second qubit.
+> In Dirac notation, $\ket{0_A 0_B}= |0\rangle_\text{A} |0\rangle_\text{B}$. The first position corresponds to the first qubit, and the second position corresponds to the second qubit.
 
 The global system $\ket{\phi}$ is in a superposition of the states $|00\rangle$ and $|11\rangle$. If you measure both qubits, only two outcomes are possible: $\ket{00}$ and $\ket{11}$, and each has the same probability of $\frac{1}{2}$.
 
