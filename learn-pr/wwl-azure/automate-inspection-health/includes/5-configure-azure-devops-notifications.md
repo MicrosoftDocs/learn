@@ -1,4 +1,3 @@
-
 After defining your target audience, you need to configure your notifications. Using Azure DevOps, you can help your team stay informed about your projects' activities.
 
 You can configure notifications to be sent based on rules or subscriptions by default, out-of-the-box (OOB), created by you or the team or group administrator.
@@ -23,7 +22,7 @@ There are four notification types that you can manage in Azure DevOps:
 
 For each notification, you have a set of specific steps to configure. The following steps show how to manage global notifications:
 
-1.  Open your Azure DevOps organization ```https://dev.azure.com/**\{organization\}**/\_settings/organizationOverview```.
+1.  Open your Azure DevOps organization https://dev.azure.com/**\{organization\}**/\_settings/organizationOverview.
 2.  Click on Organization settings at the bottom left side.
 3.  Click on Global notifications under the General tab.
     
