@@ -49,4 +49,4 @@ Code scanning is also a pipeline-based scanning tool where results are aggregate
  -  Your custom build steps
  -  Advanced Security Perform CodeQL Analysis (AdvancedSecurity-Codeql-Analyze@1)
 
-Additionally, you'll need to include a comma separated list of the languages you're analyzing by using the Advanced Security Initialize CodeQL task. The supported languages include csharp, cpp, go, java, javascript, python, ruby, and swift.
+Additionally, you'll need to include a comma separated list of the languages you're analyzing by using the Advanced Security Initialize CodeQL task. The supported languages include csharp, cpp, go, java, JavaScript, python, ruby, and swift.

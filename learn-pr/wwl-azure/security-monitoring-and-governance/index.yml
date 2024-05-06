@@ -16,13 +16,13 @@ summary: This module describes security monitoring and governance with Microsoft
 abstract: |
   By the end of this module, you'll be able to:
 
-  -   Configure Microsoft Defender for Cloud
+  -   Configure Microsoft Defender for Cloud.
 
-  -   Understand Azure policies
+  -   Understand Azure policies.
 
-  -   Describe initiatives, resource locks and Azure Blueprints
+  -   Describe initiatives, resource locks and Azure Blueprints.
 
-  -   Work with Microsoft Defender for Identity
+  -   Work with Microsoft Defender for Identity.
 prerequisites: None
 iconUrl: /training/achievements/azure-security-center-introduction.svg
 levels:
