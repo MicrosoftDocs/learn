@@ -14,7 +14,7 @@ metadata:
 title: Configure and manage threat protection by using Microsoft Defender for Cloud
 summary: This module focuses on the essential techniques for configuring and managing threat protection exclusively with Microsoft Defender for Cloud, empowering cybersecurity specialists to strengthen the security posture of their cloud environments.
 abstract: |
-  y the end of this module, participants will be able to:
+  By the end of this module, participants will be able to:
 
   -   Master the configuration of Microsoft Defender for Cloud to effectively monitor and protect cloud resources.
 
