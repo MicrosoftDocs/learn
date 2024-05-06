@@ -12,17 +12,17 @@ metadata:
 title: Software Composition Analysis
 summary: This module explains Composition Analysis, how to inspect and validate code bases for compliance, integration with security tools, and integration with Azure Pipelines.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you are able to:
 
-  -   Inspect and validate code bases for compliance
+  -   Inspect and validate code bases for compliance.
 
-  -   Integrate security tools like WhiteSource with Azure DevOps
+  -   Integrate security tools like WhiteSource with Azure DevOps.
 
-  -   Implement pipeline security validation
+  -   Implement pipeline security validation.
 
-  -   Interpret alerts from scanning tools
+  -   Interpret alerts from scanning tools.
 
-  -   Configure GitHub Dependabot alerts and security
+  -   Configure GitHub Dependabot alerts and security.
 prerequisites: None
 iconUrl: /training/achievements/5-integrate-license-and-vulnerability-scans.svg
 levels:

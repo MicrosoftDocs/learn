@@ -8,12 +8,12 @@ Microsoft Defender for Cloud is a cloud-native application protection platform t
 
 ### Microsoft Defender for Containers
 
-Microsoft Defender for Containers is a cloud-native solution which goal is to enhance the security of containerized environments, including Kubernetes clusters, container registries, and container images, across multi-cloud and on-premises environments. It's functionality can be grouped into four main categories:
+Microsoft Defender for Containers is a cloud-native solution which goal is to enhance the security of containerized environments, including Kubernetes clusters, container registries, and container images, across multicloud and on-premises environments. It's functionality can be grouped into four main categories:
 
  -  **Security posture management** performs continuous monitoring of Kubernetes workloads to discover cloud resources, inventory them, detect their misconfigurations, provide remediation guidance, assess the corresponding risks, and assist with risk hunting by using the Defender for Cloud security explorer.
  -  **Run-time threat protection** delivers threat detection for Kubernetes clusters, closely aligned with the MITRE ATT&CK framework and featuring integration with a broad range of security information and event management (SIEM) and extended detection and response (XDR) products.
  -  **Deployment and monitoring** facilitates implementing Kubernetes clusters and tracking their status.
- -  **Vulnerability assessment** provides agentless vulnerability assessment for multi-cloud resources, including remediation guidance and automated scanning.
+ -  **Vulnerability assessment** provides agentless vulnerability assessment for multicloud resources, including remediation guidance and automated scanning.
 
 Vulnerability assessment relies on Microsoft Defender Vulnerability Management.
 
@@ -24,7 +24,7 @@ Microsoft Defender Vulnerability Management offers a trigger-based image scannin
 All images stored in ACR that meet the criteria for scan triggers are automatically scanned for vulnerabilities without any additional configuration. These criteria can be grouped into two main categories:
 
  -  Triggered by push, import, and pull operations. In case of push or import, a scan is typically completed within a few minutes, but it might take up to an hour. Following individual pulls, images are scanned within 24 hours.
- -  Running continuously for images that have been previously scanned for vulnerabilities in order to update their vulnerability reports to account for newly published vulnerabilities. These scans are preformed once per day for images pushed in the last 90 days, images pulled in the last 30 days, and images running on the Kubernetes clusters that are monitored by Defender for Cloud.
+ -  Running continuously for images that have been previously scanned for vulnerabilities in order to update their vulnerability reports to account for newly published vulnerabilities. These scans are performed once per day for images pushed in the last 90 days, images pulled in the last 30 days, and images running on the Kubernetes clusters that are monitored by Defender for Cloud.
 
 Recommendations with vulnerability reports are provided for all images in ACR as well as images that are currently running in Azure Kubernetes Service (AKS) clusters. After you take the recommended steps to remediate the security issue and replace the image in the registry, Microsoft Defender for Cloud automatically rescans the image to confirm that the vulnerabilities no longer exist.
 
@@ -32,4 +32,4 @@ Recommendations with vulnerability reports are provided for all images in ACR as
 
 You can incorporate container and image scanning directly into your CI/CD pipelines to automatically identify vulnerabilities and ensure compliance. The process begins by selecting a suitable scanning tool compatible with the respective platform, such as Aqua available as a DevOps security extension or Trivy GitHub Action. You can then integrate the chosen scanning tool into the build process to analyze container images for vulnerabilities and compliance issues. Container scanning should be applied during the CD stage to assess the outcome of the deployment.
 
-As part of the CI/CD integration, consider preventing the image deployment in case its scan reports non-compliance. When implementing workflows in GitHub, take advantage of its Dependabot capabilities to detect and create pull requests to update dependencies in container images, including Dockerfiles, package manifests, and other configuration files. Automate remediation actions, such as such as patching vulnerabilities or rebuilding an image, based on the scan results. Implement continuous monitoring and reviews of scan results, leveraging platform-specific dashboards, reports, and notifications.
+As part of the CI/CD integration, consider preventing the image deployment in case its scan reports non-compliance. When implementing workflows in GitHub, take advantage of its Dependabot capabilities to detect and create pull requests to update dependencies in container images, including Dockerfiles, package manifests, and other configuration files. Automate remediation actions, such as patching vulnerabilities or rebuilding an image, based on the scan results. Implement continuous monitoring and reviews of scan results, leveraging platform-specific dashboards, reports, and notifications.
