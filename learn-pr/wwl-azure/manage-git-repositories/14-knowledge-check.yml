@@ -32,7 +32,7 @@ quiz:
     - content: "When you need to reduce the size of a repository significantly by removing history."
       isCorrect: false
       explanation: "Incorrect. When you need to hide code and history without removing permissions."
-    - content: "When you need to remove a sensitive file that should not have been uploaded."
+    - content: "When you need to remove a sensitive file that shouldn't have been uploaded."
       isCorrect: false
       explanation: "Incorrect. When you need to hide code and history without removing permissions."
     - content: "When you need to hide code and history without removing permissions."

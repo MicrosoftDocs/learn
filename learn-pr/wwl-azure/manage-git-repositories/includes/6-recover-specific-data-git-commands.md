@@ -1,4 +1,4 @@
-The ability to recover data by using Git commands is crucial for developers to revert accidental changes, restore deleted files, or recover lost commits. It contributes to minimizing unexpected downtime and ensuring project continuity. However, while its benefits are clear, it is important to point out its potential risks. When applying the Git command described in this unit, it is essential to exercise proper caution, especially when manipulating commit history or reverting changes, as mistakes can lead to data loss.
+The ability to recover data by using Git commands is crucial for developers to revert accidental changes, restore deleted files, or recover lost commits. It contributes to minimizing unexpected downtime and ensuring project continuity. However, while its benefits are clear, it is important to point out its potential risks. When applying the Git command described in this unit, it's essential to exercise proper caution, especially when manipulating commit history or reverting changes, as mistakes can lead to data loss.
 
 ## Git data recovery commands
 
@@ -23,13 +23,13 @@ Git commands that deal with data recovery can be grouped into several categories
 ### Recovering deleted commits or branches
 
  -  **git reflog:** displays a record of all commits. You can use it to find the SHA-1 hash of a previously deleted commit or branch and then checkout or restore it.
- -  **git fsck --lost-found:** checks the integrity of the repository and lists any commits that are not reachable from any branch or tag. You can use this to recover lost commits.
+ -  **git fsck --lost-found:** checks the integrity of the repository and lists any commits that aren't reachable from any branch or tag. You can use this to recover lost commits.
 
 Remember to use these commands with caution, especially when manipulating commit history or reverting changes. Always make sure to create a backup of your repo before you start or use git stash to save your current changes before attempting any recovery operations.
 
 ## Sample scenario
 
-Let's step through a sample scenario that illustrates the process of using Git commands to recover a deleted file. We'll assume that a file named example.txt residing in your Git repository has been accidentally deleted and you need to recover it.
+Let's step through a sample scenario that illustrates the process of using Git commands to recover a deleted file. We assume that a file named example.txt residing in your Git repository has been accidentally deleted and you need to recover it.
 
 **Viewing Commit History:**
 

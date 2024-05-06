@@ -26,7 +26,7 @@ Evaluate the current structure of your Git repositories. Consider breaking down 
 
 Git submodules provide a way to include a Git repository as a subdirectory within another Git repository. This is useful when you want to include external code or libraries in your project. When you add a Git submodule, Git creates a text file called a ".gitmodules" file that contains information about the submodule, including its URL and the commit it's currently pointing to.
 
-Git sub repositories represent a newer approach to including a Git repository as a subdirectory within another Git repository. Unlike submodules, sub repositories are managed by a separate tool called "git-subrepo" and do not require a separate ".gitmodules" file. Additionally, sub repositories can be split off into their own standalone repositories at any time, while submodules always remain as part of the main repository.
+Git sub repositories represent a newer approach to including a Git repository as a subdirectory within another Git repository. Unlike submodules, sub repositories are managed by a separate tool called "git-subrepo" and don't require a separate ".gitmodules" file. Additionally, sub repositories can be split off into their own standalone repositories at any time, while submodules always remain as part of the main repository.
 
 ### Promoting cross-repository sharing
 

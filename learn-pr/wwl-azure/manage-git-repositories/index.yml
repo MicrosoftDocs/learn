@@ -14,7 +14,7 @@ metadata:
 title: Manage and configure repositories
 summary: This module explores how to work with large repositories, purge repository data and manage and automate release notes using GitHub.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
 
   -   Understand large Git repositories
 

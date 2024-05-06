@@ -6,7 +6,7 @@ It's possible to use labels to create custom categories to organize pull request
 
 ## Creating automatically generated release notes
 
-While configuring your release, you'll see the option Auto-generate release notes to include all changes between your tag and the last release. If you never created a release, it will consist of all changes from your repository.
+While configuring your release, you see the option Auto-generate release notes to include all changes between your tag and the last release. If you never created a release, it consists of all changes from your repository.
 
 :::image type="content" source="../media/create-release-note-3cb0bee2.png" alt-text="Screenshot of how to create release notes from GitHub.":::
 

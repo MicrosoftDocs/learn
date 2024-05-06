@@ -28,7 +28,7 @@ Other organization roles have elevated permissions to repositories, such as:
  -  **Security managers:** reading all repositories in the organization.
  -  **Owners:** all repository-related permissions, including adding collaborators, as well as writing to and deleting repositories.
 
-Organization owners can set base permissions that apply to all members of an organization when accessing any of its repositories. Base permissions do not apply to outside collaborators. Granting a higher level of access for individual repositories overrides the base permission.
+Organization owners can set base permissions that apply to all members of an organization when accessing any of its repositories. Base permissions don't apply to outside collaborators. Granting a higher level of access for individual repositories overrides the base permission.
 
 Customized access to repositories can be implemented by assigning built-in repository roles to organization members and outside collaborators. These roles include:
 
