@@ -12,7 +12,7 @@ metadata:
 title: Explore package dependencies
 summary: This module explores dependency management concepts and helps to identify project dependencies. You learn how to decompose your system, identify dependencies, and package componentization.
 abstract: |
-  By the end of this module, you are able to:
+  By the end of this module, you're able to:
 
   -   Define dependency management strategy
 
