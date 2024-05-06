@@ -8,10 +8,11 @@ metadata:
   ms.author: lumac
   ms.topic: module
   ms.service: azure
+  ai-usage: human-only
 title: Explore Azure Pipelines
 summary: This module introduces Azure Pipelines concepts and explains key terms and components of the tool, helping you decide your pipeline strategy and responsibilities.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you are able to:
 
   -   Describe Azure Pipelines
 
