@@ -9,6 +9,6 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [Create a multi-platform pipeline](/azure/devops/pipelines/get-started-multiplatform).
- -  [Specify demands](/azure/devops/pipelines/process/demands).
- -  [Supported source repositories](/azure/devops/pipelines/repos).
+ -  [Create a multi-platform pipeline - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/get-started-multiplatform).
+ -  [Demands - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/process/demands).
+ -  [Build source repositories - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/repos).
