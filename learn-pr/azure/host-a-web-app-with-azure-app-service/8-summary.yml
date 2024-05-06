@@ -4,7 +4,7 @@ title: Summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 09/06/2023
+  ms.date: 05/03/2024
   author: cephalin
   ms.author: cephalin
   ms.topic: unit
@@ -28,10 +28,10 @@ quiz:
     choices:
     - content: "GitHub"
       isCorrect: false
-      explanation: "Azure currently supports Azure DevOps, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
-    - content: "Azure DevOps"
+      explanation: "Azure currently supports Azure Repos, GitHub, Bitbucket, and external Git repositories."
+    - content: "Azure Repos"
       isCorrect: false
-      explanation: "Azure currently supports Azure DevOps, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
+      explanation: "Azure currently supports Azure Repos, GitHub, Bitbucket, and external Git repositories."
     - content: "SharePoint"
       isCorrect: true
-      explanation: "Azure currently supports Azure DevOps, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
+      explanation: "Azure currently supports Azure Repos, GitHub, Bitbucket, and external Git repositories."
