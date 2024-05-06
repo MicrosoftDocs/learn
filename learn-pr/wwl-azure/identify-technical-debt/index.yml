@@ -2,22 +2,28 @@
 uid: learn.wwl.identify-technical-debt
 metadata:
   title: Identify technical debt
-  description: Identify technical debt
-  ms.date: 11/16/2022
+  description: "Identify technical debt"
+  ms.date: 05/06/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: azure
+  ai-usage: human-only
 title: Identify technical debt
 summary: This module examines technical debt, complexity, quality metrics, and plans for effective code reviews and code quality validation.
 abstract: |
   By the end of this module, you'll be able to:
-  - Identify and manage technical debt
-  - Integrate code quality tools
-  - Plan code reviews
-  - Describe complexity and quality metrics
-prerequisites: |
-  None
+
+  -   Identify and manage technical debt
+
+  -   Integrate code quality tools
+
+  -   Plan code reviews
+
+  -   Describe complexity and quality metrics
+prerequisites: None
 iconUrl: /training/achievements/6-identify-technical-debt.svg
 levels:
 - advanced
@@ -48,6 +54,7 @@ units:
 - learn.wwl.identify-technical-debt.examine-complexity-quality-metrics
 - learn.wwl.identify-technical-debt.introduction-technical-debt
 - learn.wwl.identify-technical-debt.measure-manage-technical-debt
+- learn.wwl.identify-technical-debt.introduction-to-github-advanced-security
 - learn.wwl.identify-technical-debt.integrate-other-code-quality-tools
 - learn.wwl.identify-technical-debt.plan-effective-code-reviews
 - learn.wwl.identify-technical-debt.knowledge-check
