@@ -15,7 +15,7 @@ Alice and Bob work together in the same company. Alice is based in Seattle, and 
 
 Alice and Bob each have a qubit that is part of an entangled pair that was previously prepared. The entangled pair is a Bell state, which is the state
 
-$$\ket{\phi}=\frac1{\sqrt2}(\ket{00}_{\text{AB}} + \ket{11}_{\text{AB}})$$
+$$\ket{\phi}=\frac1{\sqrt2}(\ket{0_A 0_B} + \ket{1_A 1_B})$$
 
 Alice has an extra qubit – called the “message qubit” – and wants to send this qubit to Bob. The message qubit is in an unknown state that Alice wants to teleport to Bob. The state of the message qubit is
 
@@ -25,7 +25,7 @@ where $\alpha$ and $\beta$ are complex numbers.
 
 The global state of Alice and Bob's three qubits is
 
-$$\ket{\text{Global}} = (\alpha\ket{0}_m + \beta\ket{1}_m) \otimes \frac1{\sqrt2}(\ket{00}_{\text{AB}} + \ket{11}_{\text{AB}}) $$
+$$\ket{\text{Global}} = (\alpha\ket{0}_m + \beta\ket{1}_m) \otimes \frac1{\sqrt2}(\ket{0_A 0_B}+ \ket{1_A 1_B}) $$
 
 :::image type="content" source="../media/teleportation-step-1.png" alt-text="Diagram showing two faces emojis of a woman and a man representing Alice and Bob. Alice owns two qubits, one of them is entangled with Bob's qubits. Entangled qubits are the same color, representing they're entangled. Message qubit is a different color.":::
 
@@ -38,10 +38,13 @@ Alice takes the message qubit and entangles it with her own qubit $A$ using a CN
 The message qubit is in the unknown state $\alpha \ket{0}_m + \beta \ket{1}_m$, so after applying the CNOT gate, Alice's qubits are in a superposition of the four Bell states. The global state of the three qubits is
 
 
-$$ \ket{\text{Global}} = \frac1{2} \ket{\phi^+}_{\text{mA}} (\alpha\ket{0}_B + \beta\ket{1}_B) + $$
-$$ + \frac1{2}  \ket{\phi^-}_{\text{mA}} (\alpha\ket{0}_B - \beta\ket{1}_B) + $$
-$$ + \frac1{2}  \ket{\psi^+}_{\text{mA}} (\alpha\ket{1}_B + \beta\ket{0}_B) + $$
-$$ + \frac1{2}  \ket{\psi^-}_{\text{mA}} (\alpha\ket{1}_B- \beta\ket{0}_B)$$
+$$ \ket{\text{Global}} = \frac1{2} \ket{\phi^+}_\text{mA} (\alpha\ket{0}_B + \beta\ket{1}_B) + $$
+
+$$ + \frac1{2}  \ket{\phi^-}_\text{mA} (\alpha\ket{0}_B - \beta\ket{1}_B) +$$
+
+$$ + \frac1{2}  \ket{\psi^+}_\text{mA}(\alpha\ket{1}_B + \beta\ket{0}_B) + $$
+
+$$ + \frac1{2}  \ket{\psi^-}_\text{mA} (\alpha\ket{1}_B- \beta\ket{0}_B)$$
 
 The global state of Alice and Bob's qubits is a superposition of four possible states.
 
@@ -74,7 +77,7 @@ Next, Bob can recover the original state of the message qubit by applying a spec
 
 The operation he executes can be a Pauli $X$ gate, a Pauli $Z$ gate, both, or none.
 
-For example, if the result of Alice's measurement is $\ket{\phi^-}$, Bob knows that his qubit is in the state $(\alpha\ket{0}_B - \beta\ket{1}_B)$. He only needs to apply a Pauli Z gate to recover the original state of the message qubit.
+For example, if the result of Alice's measurement is $\ket{\phi^-}$, Bob knows that his qubit is in the state $(\alpha \ket{0}_B - \beta \ket{1}_B)$. He only needs to apply a Pauli Z gate to recover the original state of the message qubit.
 
 |Alice measures|Bob applies|
 |---|---|
