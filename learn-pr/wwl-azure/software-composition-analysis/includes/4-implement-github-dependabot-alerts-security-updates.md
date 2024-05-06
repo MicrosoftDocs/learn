@@ -1,4 +1,3 @@
-
 ## Alerts
 
 GitHub Dependabot detects vulnerable dependencies and sends Dependabot alerts about them in several situations:
