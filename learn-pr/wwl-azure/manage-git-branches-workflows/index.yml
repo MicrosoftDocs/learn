@@ -12,7 +12,7 @@ metadata:
 title: Design and implement branch strategies and workflows
 summary: This module explores Git branching types, concepts, and models for the continuous delivery process. It helps companies defining their branching strategy and organization.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're be able to:
 
   -   Describe Git branching workflows
 
