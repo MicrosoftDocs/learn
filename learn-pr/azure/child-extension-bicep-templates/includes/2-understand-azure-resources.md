@@ -37,7 +37,7 @@ You combine the resource provider and type name to make a fully qualified resour
 Every Azure resource has a unique resource ID. This ID includes information that helps disambiguate the resource from any other resource of the same type, or even from different resources that might share the same name. A resource ID for a storage account looks like this:
 
 ```
-/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/ToyDevelopment/providers/Microsoft.Storage/storageAccounts/secrettoys
+/subscriptions/A123b4567c-1234-1a2b-2b1a-1234abc12345/resourceGroups/ToyDevelopment/providers/Microsoft.Storage/storageAccounts/secrettoys
 ```
 
 Let's look at a visual representation of the same information:
@@ -46,7 +46,7 @@ Let's look at a visual representation of the same information:
 
 You can see that a resource ID interleaves information about the resource type and the specific resource you deployed. Let's break this example resource ID into its components:
 
-- `subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c` indicates that this resource is within the Azure subscription with ID. `f0750bbe-ea75-4ae5-b24d-a92ca601da2c`.
+- `subscriptions/A123b4567c-1234-1a2b-2b1a-1234abc12345` indicates that this resource is within the Azure subscription with ID. `A123b4567c-1234-1a2b-2b1a-1234abc12345`.
 - `resourceGroups/ToyDevelopment` indicates that the resource is within the resource group named `ToyDevelopment`.
 - `providers/Microsoft.Storage` indicates that the resource is using a type from the `Microsoft.Storage` resource provider.
 - `storageAccounts` is the resource type.

@@ -64,8 +64,8 @@ The following annotated excerpt from a `pom.xml` file demonstrates some of the r
     <region>westus</region>  
     <runtime> 
       <os>Linux</os>  
-      <javaVersion>Java 8</javaVersion>  
-      <webContainer>Tomcat 8.5</webContainer> 
+      <javaVersion>Java 17</javaVersion>  
+      <webContainer>Tomcat 10.0</webContainer> 
     </runtime>  
     <deployment> 
       <resources> 
