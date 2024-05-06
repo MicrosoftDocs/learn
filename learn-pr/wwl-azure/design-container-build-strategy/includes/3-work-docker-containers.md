@@ -1,4 +1,3 @@
-
 ## Container Lifecycle
 
 The standard steps when working with containers are:

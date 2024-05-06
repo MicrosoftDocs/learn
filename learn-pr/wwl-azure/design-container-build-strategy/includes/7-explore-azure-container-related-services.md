@@ -1,4 +1,3 @@
-
 Azure provides a wide range of services that help you work with containers.
 
 Here are the essential services that are involved:
