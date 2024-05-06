@@ -14,15 +14,15 @@ metadata:
 title: Implement open-source software
 summary: This module explores open-source software and corporate concerns with software components. Also, it explains common open-source licenses, license implications, and ratings.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you are able to:
 
-  -   Implement open-source software
+  -   Implement open-source software.
 
-  -   Explain corporate concerns for open-source components
+  -   Explain corporate concerns for open-source components.
 
-  -   Describe open-source licenses
+  -   Describe open-source licenses.
 
-  -   Understand the license implications and ratings
+  -   Understand the license implications and ratings.
 prerequisites: None
 iconUrl: /training/achievements/2-implement-open-source-software.svg
 levels:
