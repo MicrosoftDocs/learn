@@ -1,4 +1,3 @@
-
 A pipeline is one or more stages that describe a CI/CD process.
 
 Stages are the primary divisions in a pipeline. The stages "Build this app," "Run these tests," and "Deploy to preproduction" are good examples.
