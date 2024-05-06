@@ -14,15 +14,15 @@ metadata:
 title: Implement canary releases and dark launching
 summary: This module describes deployment strategies around canary releases and dark launching and examines traffic managers.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
 
-  -   Describe deployment strategies
+  -   Describe deployment strategies.
 
-  -   Implement canary release
+  -   Implement canary release.
 
-  -   Explain traffic manager
+  -   Explain traffic manager.
 
-  -   Understand dark launching
+  -   Understand dark launching.
 prerequisites: None
 iconUrl: /training/achievements/6-implement-canary-releases-and-dark-launching.svg
 levels:
