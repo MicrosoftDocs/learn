@@ -1,7 +1,4 @@
-
 **Estimated time:** 60 minutes.
-
-**Lab files:** none.
 
 ## Scenario
 
@@ -27,7 +24,7 @@ After completing this lab, you'll be able to:
 
  -  This lab requires **Microsoft Edge** or an [Azure DevOps-supported browser](/azure/devops/server/compatibility).
  -  **Set up an Azure DevOps organization:** If you don't already have an Azure DevOps organization that you can use for this lab, create one by following the instructions available at [Create an organization or project collection](/azure/devops/organizations/accounts/create-organization).
- -  If you don't have Git **2.29.2** or later installed, start a web browser, navigate to the [Git for Windows download page](https://gitforwindows.org/), and install it.
+ -  If you don't have Git **2.44.0** or later installed, start a web browser, navigate to the [Git for Windows download page](https://gitforwindows.org/), and install it.
  -  If you don't have Visual Studio Code installed yet, navigate to the [Visual Studio Code download page](https://code.visualstudio.com/) from the web browser window, download it, and install it.
  -  If you don't have the Visual Studio C\# extension installed yet, navigate to the [C\# extension installation page](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) in the web browser window and install it.
 
@@ -42,4 +39,4 @@ During this lab, you'll complete the following exercises:
  -  Exercise 4: Work with branches.
 
 [:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Screenshot of a launch button, which will take you to the lab.":::
-](https://aka.ms/az-400-version-control-with-git-in-azure-repos)
+](https://go.microsoft.com/fwlink/?linkid=2269558)

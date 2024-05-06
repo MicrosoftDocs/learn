@@ -1,4 +1,3 @@
-
 The core idea behind the Feature Branch Workflow is that all feature development should take place in a dedicated branch instead of the main branch.
 
 The encapsulation makes it easy for multiple developers to work on a particular feature without disturbing the main codebase. It also means the main branch will never contain broken code, a huge advantage for continuous integration environments.
@@ -9,34 +8,24 @@ Pull requests make it incredibly easy for your team to comment on each other's w
 
 Since the main is the only "special" branch, storing several feature branches on the central repository doesn't pose any problems. It's also a convenient way to back up everybody's local commits.
 
+## Release Branch Workflow
+
+In addition to the Feature Branch Workflow, another commonly used strategy in Git branching workflows is the Release Branch Strategy. This strategy involves the creation of dedicated branches specifically for preparing releases. The release branch is typically created from a stable feature branch, ensuring that it contains only thoroughly tested and validated code. Once created, the release branch undergoes additional testing, bug fixes, and stabilization efforts to prepare the codebase for deployment. The release branch allows for the isolation of release-related activities from ongoing feature development, providing a controlled environment for finalizing and polishing the upcoming release. After all necessary adjustments and verifications have been made on the release branch, it is then merged into the main branch or deployed directly to production, depending on the team's release process. The Release Branch Strategy helps teams manage the complexities of coordinating release activities while maintaining a stable main branch for ongoing development.<br>
+
 ## Trunk-based development workflow
 
-The trunk-based development Workflow assumes a central repository, and the main represents the official project history.
+The trunk-based development Workflow assumes a central repository, and the main represents the official project history. Instead of committing directly to their local main branch, developers create a new branch whenever they start working on a new feature. Feature branches should have descriptive names, like new-banner-images or bug-91. The idea is to give each branch a clear, highly focused purpose.
 
-Instead of committing directly to their local main branch, developers create a new branch whenever they start working on a new feature.
-
-Feature branches should have descriptive names, like new-banner-images or bug-91. The idea is to give each branch a clear, highly focused purpose.
-
-Git makes no technical distinction between the main and feature branches, so developers can edit, stage, and commit changes to a feature branch.
+Git makes no technical distinction between the main and feature branches, so developers can edit, stage, and commit changes to a feature branch.<br>
 
 ## Create a branch
 
 :::image type="content" source="../media/create-branch-8f64a7d3.png" alt-text="Diagram showing a branch creation representation.":::
 
 
-When you're working on a project, you will have many different features or ideas in progress at any given time – some of which are ready to go and others that aren't.
+When you're working on a project, you will have many different features or ideas in progress at any given time – some of which are ready to go and others that aren't. Branching exists to help you manage this workflow. When you create a branch in your project, you create an environment where you can try out new ideas.
 
-Branching exists to help you manage this workflow.
-
-When you create a branch in your project, you create an environment where you can try out new ideas.
-
-Changes you make on a branch don't affect the main branch, so you're free to experiment and commit changes, safe in the knowledge that your branch won't be merged until it's ready to be reviewed by someone you're collaborating with.
-
-Branching is a core concept in Git; the entire branch flow is based upon it. Only one rule: anything in the main branch is always deployable.
-
-Because of this, your new branch must be created off the main when working on a feature or a fix.
-
-Your branch name should be descriptive (for example, refactor-authentication, user-content-cache-key, make-retina-avatars) so others can see what is being worked on.
+In addition to creating branches for new features or fixes, teams following a release branch workflow also create dedicated branches specifically for preparing releases. These release branches are typically derived from stable feature branches to ensure they contain thoroughly tested and validated code. Once created, the release branch undergoes additional testing, bug fixes, and stabilization efforts to prepare the codebase for deployment.<br><br>
 
 ## Add commits
 
@@ -55,7 +44,7 @@ Furthermore, each commit is considered a separate unit of change. It lets you ro
 
 Commit messages are essential, especially since Git tracks your changes and displays them as commits once pushed to the server.
 
-By writing clear commit messages, you can make it easier for others to follow along and provide feedback.
+By writing clear commit messages, you can make it easier for others to follow along and provide feedback.<br>
 
 ## Open a pull request
 
@@ -76,7 +65,7 @@ Pull Requests help contribute to projects and for managing changes to shared rep
 
 If you're using a Fork & Pull Model, Pull Requests provide a way to notify project maintainers about the changes you'd like them to consider.
 
-If you're using a Shared Repository Model, Pull Requests help start code review and conversation about proposed changes before they're merged into the main branch.
+If you're using a Shared Repository Model, Pull Requests help start code review and conversation about proposed changes before they're merged into the main branch.<br><br>
 
 ## Discuss and review your code
 
@@ -95,7 +84,7 @@ Suppose someone comments that you forgot to do something, or if there's a bug in
 
 Git will show your new commits and any feedback you may receive in the unified Pull Request view.
 
-Pull Request comments are written in Markdown, so you can embed images and emojis, use pre-formatted text blocks, and other lightweight formatting.
+Pull Request comments are written in Markdown, so you can embed images and emojis, use pre-formatted text blocks, and other lightweight formatting.<br>
 
 ## Deploy
 
@@ -104,7 +93,7 @@ Pull Request comments are written in Markdown, so you can embed images and emoji
 
 With Git, you can deploy from a branch for final testing in an environment before merging to the main.
 
-Once your pull request has been reviewed and the branch passes your tests, you can deploy your changes to verify them. You can roll it back if your branch causes issues by deploying the existing main.
+Once your pull request has been reviewed and the branch passes your tests, you can deploy your changes to verify them. You can roll it back if your branch causes issues by deploying the existing main.<br>
 
 ## Merge
 
@@ -119,4 +108,4 @@ You can associate issues with code by incorporating specific keywords into your 
 
 This workflow helps organize and track branches focused on business domain feature sets.
 
-Other Git workflows, like the Git Forking Workflow and the Gitflow Workflow, are repo-focused and can use the Git Feature Branch Workflow to manage their branching models.
+Other Git workflows, like the Git Forking Workflow and the Gitflow Workflow, are repo-focused and can use the Git Feature Branch Workflow to manage their branching models.<br>
