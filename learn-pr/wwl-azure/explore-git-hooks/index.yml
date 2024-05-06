@@ -14,7 +14,7 @@ metadata:
 title: Explore Git hooks
 summary: This module describes Git hooks and their usage during the development process, implementation, and behavior.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
 
   -   Understand Git hooks
 

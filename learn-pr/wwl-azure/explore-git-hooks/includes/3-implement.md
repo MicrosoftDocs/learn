@@ -1,17 +1,17 @@
-Prioritizing code quality in the development process should start with local code development in order to detect and rectify potential code quality issues as early as possible. It is important to identify opportunities for this practice even before initiating pull requests.
+Prioritizing code quality in the development process should start with local code development in order to detect and rectify potential code quality issues as early as possible. It's important to identify opportunities for this practice even before initiating pull requests.
 
 Git hooks offer such opportunity. They serve as a mechanism for executing custom scripts in response to significant events within the Git lifecycle, such as commits, merges, and pushes. The scripts, located within the .git\\hooks directory of the repository, provide practically unlimited flexibility in automating software development tasks and enforcing development standards.<br>
 
 ## How to do it
 
-Let's start by exploring client-side Git hooks. Navigate to the repo .git\\hooks directory – you'll find there a number of files with the extension .sample. This extension not only indicates their purpose, but also effectively prevents them from running. The file names designate the Git actions which will trigger their execution once you remove the .sample extension.<br>
+Let's start by exploring client-side Git hooks. Navigate to the repo .git\\hooks directory – you find there a number of files with the extension .sample. This extension not only indicates their purpose, but also effectively prevents them from running. The file names designate the Git actions which trigger their execution once you remove the .sample extension.<br>
 
 :::image type="content" source="../media/git-hook-files-8bce9eb8.png" alt-text="Screenshot of Git hook files for automation.":::
 
 
-Rename the pre-commit.sample file to pre-commit. As the name of the file indicates, the script it contains will run whenever you invoke the git commit action. The commit will follow only if your pre-commit script exits with the 0 return value.
+Rename the pre-commit.sample file to pre-commit. As the name of the file indicates, the script it contains will run whenever you invoke the git commit action. The commit follows only if your pre-commit script exits with the 0 return value.
 
-However, it is important to note that, by default, this will not work as intended in any of the Windows operating systems. The commonly overlooked reason for this behavior is the first line of the script:<br>
+However, it's important to note that, by default, this won't work as intended in any of the Windows operating systems. The commonly overlooked reason for this behavior is the first line of the script:<br>
 
 ```Bash
 #!/bin/sh
@@ -21,7 +21,7 @@ On Linux operating systems, the \#! prefix indicates to the program loader that 
 
 While Git for Windows supports Bash commands and shell scripts, it doesn't follow the same convention when designating file system paths. Instead, you need to provide full path to the sh.exe file, starting with the drive letter.
 
-However, there is an additional caveat, which results from the fact Git for Windows by default gets installed in the C:\\Program Files directory. Since this directory contains a space in its name, the resulting path to the sh.exe file would be interpreted as two separate paths, resulting in a failure. To avoid it, it is necessary to add a single backslash (\\) in front of the space to serve as an escape character. Effectively, when using the 64-bit version of Git for Windows, the first line of the scrip t should have the following format:
+However, there's an additional caveat, which results from the fact Git for Windows by default gets installed in the C:\\Program Files directory. Since this directory contains a space in its name, the resulting path to the sh.exe file would be interpreted as two separate paths, resulting in a failure. To avoid it, it's necessary to add a single backslash (\\) in front of the space to serve as an escape character. Effectively, when using the 64-bit version of Git for Windows, the first line of the script should have the following format:
 
 ```Bash
 #!C:/Program\ Files/Git/usr/bin/sh.exe
@@ -41,8 +41,8 @@ then
   cat <<\EOT
 Error: Words from the blocked list were present in the diff:
 EOT
- echo $matches
- exit 1
+echo $matches
+exit 1
 fi
 ```
 
@@ -85,7 +85,7 @@ $body="A new commit has been made to the repository."
 Send-MailMessage -To $recipient -Subject $subject -Body $body -SmtpServer "your.smtp.server"
 ```
 
-It's worth noting that the repo .git\\hooks folder isn't committed into source control. You may wonder whether there is a way to share the scripts you developed with other member of your development team. The good news is that, starting with Git version 2.9, you can map Git hooks to a folder that can be committed into source control. You could do that by updating the global settings configuration for your Git repository:
+It's worth noting that the repo .git\\hooks folder isn't committed into source control. You may wonder whether there's a way to share the scripts you developed with other member of your development team. The good news is that, starting with Git version 2.9, you can map Git hooks to a folder that can be committed into source control. You could do that by updating the global settings configuration for your Git repository:
 
 ```Bash
 Git config --global core.hooksPath '~/.githooks'
