@@ -1,4 +1,3 @@
-
 Packages are used to define the components you rely on and depend upon in your software solution.
 
 They provide a way to store those components in a well-defined format with metadata to describe them.
