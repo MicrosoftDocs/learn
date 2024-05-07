@@ -2,8 +2,8 @@ In this exercise, you create a GitHub workflow that performs an action when you 
 
 ## Prerequisites
 
-* A [GitHub](https://github.com?azure-portal=true) account
-* The ability to navigate and edit files in GitHub
+* A [GitHub](https://github.com?azure-portal=true) account.
+* The ability to navigate and edit files in GitHub.
 
 ## Getting started
 
@@ -16,9 +16,9 @@ When you select the **Start the exercise on GitHub** button, you're navigated to
 When you're finished the exercise in GitHub, return here for:
 
 > [!div class="checklist"]
-> * A quick knowledge check 
-> * A summary of what you've learned
-> * To earn a badge for completing this module
+> * A quick knowledge check.
+> * A summary of what you've learned.
+> * To earn a badge for completing this module.
 
 
 > [!div class="nextstepaction"]

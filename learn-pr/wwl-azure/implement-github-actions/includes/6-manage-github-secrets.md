@@ -21,7 +21,7 @@ To help ensure that GitHub redacts your secret in logs, avoid using structured d
 
 ## Accessing your secrets
 
-Set the secret as an input or environment variable in the workflow file to make it available to an action. You can use and read secrets in a workflow file if you have access to edit the file. For more information, visit [Access permissions on GitHub](https://docs.github.com/en/get-started/learning-about-github/access-permissions-on-github).
+Set the secret as an input or environment variable in the workflow file to make it available to an action. You can use and read secrets in a workflow file if you have access to edit the file. For more information, visit [Access permissions on GitHub](https://docs.github.com/get-started/learning-about-github/access-permissions-on-github).
 
 Organization and repository secrets are read when a workflow run is queued, and environment secrets are read when a job referencing the environment starts. You can also manage secrets using the REST API.
 

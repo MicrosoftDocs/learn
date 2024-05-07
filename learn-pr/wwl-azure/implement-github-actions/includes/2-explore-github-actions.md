@@ -6,9 +6,9 @@ You can run a GitHub Actions *workflow* manually, or configure it to be triggere
 
 A workflow contains the following components:
 
-* **Workflows:** Contain one or more jobs that can run in sequential order or in parallel.
-* **Jobs:** Contain one or more steps that either run a script that you define, or run an *action*. Jobs run inside their own virtual machine *runner*, or inside a container.
-* **Steps:** Define the specific tasks to be performed during the workflow execution.
+* **Workflows**: Contain one or more jobs that can run in sequential order or in parallel.
+* **Jobs**: Contain one or more steps that either run a script that you define, or run an *action*. Jobs run inside their own virtual machine *runner*, or inside a container.
+* **Steps**: Define the specific tasks to be performed during the workflow execution.
 
 Each step executes a single shell script, or *action* that is a reusable extension that can simplify your workflow.
 
@@ -36,8 +36,8 @@ You can write your own actions, or you can find actions to use in your workflows
 
 ### Runners
 
-A runner is a server that runs your workflows when they're triggered. Each runner can run a single job at a time. GitHub provides Ubuntu Linux, Microsoft Windows, and macOS runners to run your workflows; each workflow run executes in a fresh, newly provisioned virtual machine. GitHub also offers [larger runners](https://docs.github.com/en/actions/using-github-hosted-runners/using-larger-runners), which are available in larger configurations.
+A runner is a server that runs your workflows when they're triggered. Each runner can run a single job at a time. GitHub provides Ubuntu Linux, Microsoft Windows, and macOS runners to run your workflows; each workflow run executes in a fresh, newly provisioned virtual machine. GitHub also offers [larger runners](https://docs.github.com/actions/using-github-hosted-runners/using-larger-runners), which are available in larger configurations.
 
-If you need a different operating system or require a specific hardware configuration, you can [host your own runners](https://docs.github.com/en/actions/hosting-your-own-runners).
+If you need a different operating system or require a specific hardware configuration, you can [host your own runners](https://docs.github.com/actions/hosting-your-own-runners).
 
 Now that you understand the components of GitHub Actions, lets examine a workflow file.

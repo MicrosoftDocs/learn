@@ -1,9 +1,9 @@
-GitHub Actions uses YAML syntax to define the workflow. Each workflow is stored as a separate YAML file in your code repository, in a directory named `.github/workflows`. The following workflow example is triggered whenever code is pushed to a repository. The workflow performs the following steps:
+GitHub Actions use YAML syntax to define the workflow. Each workflow is stored as a separate YAML file in your code repository, in a directory named `.github/workflows`. The following workflow example is triggered whenever code is pushed to a repository. The workflow performs the following steps:
 
-1. Checks out the pushed code
-1. Installs Node.js
-1. Installs the Bash Automated Testing System (Bats) testing framework
-1. Runs a command to output the Bats version: `bats -v`
+1. Checks out the pushed code.
+1. Installs Node.js.
+1. Installs the Bash Automated Testing System (Bats) testing framework.
+1. Runs a command to output the Bats version: `bats -v`.
 
 ```yml
 name: learn-github-actions
