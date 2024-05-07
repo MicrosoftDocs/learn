@@ -38,4 +38,4 @@ When you adopt DevOps practices:
 
 The more frequently you deploy, the more you can experiment. The more opportunity you have to pivot or persevere and gain validated learning each cycle. This acceleration in validated learning is the value of the improvement. Think of it as the sum of progress that you achieve and the failures that you avoid.
 
-:::image type="content" source="../media/devops-road-optimize-learning-3f77fb52-55675a69.png" alt-text="Validated learning versus deployment frequency. Good, indifferent, and bad cycle. Value of improvement metric.":::
+:::image type="content" source="../media/devops-road-optimize-learning-3f77fb52-55675a69.png" alt-text="Diagram of Validated learning versus deployment frequency. Good, indifferent, and bad cycle. Value of improvement metric.":::

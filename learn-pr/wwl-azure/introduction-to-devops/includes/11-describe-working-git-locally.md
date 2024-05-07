@@ -98,12 +98,12 @@ The Visual Studio Marketplace features several extensions for Visual Studio Code
     
     ```
     
-    You notice the ".VS Code" folder is added to your working folder. To avoid committing this folder to your Git repository, you can include it in the .gitignore file. Select a file from the ".VS Code" folder, hit F1 to launch the command window in Visual Studio Code, type gitIgnore, and accept the option to include the selected file in the new .gitIgnore file.
+    You notice the ".VS Code" folder is added to your working folder. To avoid committing this folder to your Git repository, you can include it in the .gitignore file. Select a file from the ".VS Code" folder, hit F1 to launch the command window in Visual Studio Code, type gitIgnore, and accept the option to include the selected file in the new. gitIgnore file.
     
     :::image type="content" source="../media/add-file-gitignore-a59fa521-82e51d96-856ec323.png" alt-text="Screenshot of add file to .gitignore action.":::
     
     
-    Open your .gitignore, remove the file name from the path, and leave the folder with a slash, for example, *.VS Code/\**.
+    Open your .gitignore, remove the file name from the path, and leave the folder with a slash, for example,*.VS Code/\**.
     
     :::image type="content" source="../media/gitignore-0eac5553-d1ca4ff7-3fd1e0b2.png" alt-text="Screenshot of add vscode folder to .gitignore action.":::
     
