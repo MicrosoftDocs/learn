@@ -6,7 +6,7 @@ Please be aware that when signing up for the free trial of GitHub Copilot you wi
 
 Before you can start using GitHub Copilot, you need to set up a free trial or subscription for your personal account.
 
-You can do so by selecting your profile photo and then selecting **Settings**. Copilot is on the left-hand menu under **Code, planning, and automation**.
+You can do so by selecting your GitHub profile photo and then selecting **Settings**. Copilot is on the left-hand menu under **Code, planning, and automation**.
 
 After you sign up, you'll need to install an extension for your preferred environment. GitHub Copilot supports GitHub.com, Visual Studio Code, Visual Studio, JetBrains IDEs, and Neovim as an unobtrusive extension.
 
