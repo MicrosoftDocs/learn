@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-github-packages
 metadata:
   title: Introduction to GitHub Packages
   description: "Introduction to GitHub Packages"
-  ms.date: 05/06/2024
+  ms.date: 05/07/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: module
@@ -14,7 +14,7 @@ metadata:
 title: Introduction to GitHub Packages
 summary: This module introduces you to GitHub Packages. It explores ways to control permissions and visibility, publish, install, delete and restore packages using GitHub.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
 
   -   Publish packages
 
