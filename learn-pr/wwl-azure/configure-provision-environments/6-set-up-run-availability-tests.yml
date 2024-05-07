@@ -4,10 +4,12 @@ title: Set up and run availability tests
 metadata:
   title: Set up and run availability tests
   description: "Set up and run availability tests"
-  ms.date: 09/04/2023
+  ms.date: 05/06/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-durationInMinutes: 2
+  ms.custom:
+  - N/A
+durationInMinutes: 60
 content: |
   [!include[](includes/6-set-up-run-availability-tests.md)]
