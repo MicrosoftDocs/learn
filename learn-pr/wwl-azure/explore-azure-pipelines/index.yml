@@ -3,7 +3,7 @@ uid: learn.wwl.explore-azure-pipelines
 metadata:
   title: Explore Azure Pipelines
   description: "Explore Azure Pipelines"
-  ms.date: 05/06/2024
+  ms.date: 05/07/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: module
@@ -12,7 +12,7 @@ metadata:
 title: Explore Azure Pipelines
 summary: This module introduces Azure Pipelines concepts and explains key terms and components of the tool, helping you decide your pipeline strategy and responsibilities.
 abstract: |
-  By the end of this module, you are able to:
+  By the end of this module, you're able to:
 
   -   Describe Azure Pipelines
 
