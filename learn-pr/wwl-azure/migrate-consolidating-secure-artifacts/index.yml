@@ -3,7 +3,7 @@ uid: learn.wwl.migrate-consolidating-secure-artifacts
 metadata:
   title: Migrate consolidating and secure artifacts
   description: "Migrate consolidating and secure artifacts"
-  ms.date: 05/06/2024
+  ms.date: 05/07/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: module
@@ -14,7 +14,7 @@ metadata:
 title: Migrate consolidate and secure artifacts
 summary: This module details package migration, consolidation, and configuration to secure access to package feeds and artifact repositories.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're&nbsp;able to:
 
   -   Identify artifact repositories
 
