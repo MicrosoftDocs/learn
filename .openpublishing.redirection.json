@@ -37908,6 +37908,16 @@
       "source_path": "learn-pr/wwl-azure/identify-technical-debt/9-summary.md",
       "redirect_url": "/training/modules/identify-technical-debt/10-summary",
       "redirect_document_id": true
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/design-processes-automate-application-analytics/5-knowledge-check.md",
+      "redirect_url": "/training/modules/design-processes-automate-application-analytics/6-knowledge-check",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/design-processes-automate-application-analytics/6-summary.md",
+      "redirect_url": "/training/modules/design-processes-automate-application-analytics/7-summary",
+      "redirect_document_id": false
     }
   ]
 }
