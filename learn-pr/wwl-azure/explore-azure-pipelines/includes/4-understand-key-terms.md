@@ -1,6 +1,6 @@
 Understanding the basic terms and parts of Azure Pipelines helps you further explore how it can help you deliver better code more efficiently and reliably.
 
-:::image type="content" source="../media/key-pipeline-concepts-overview-ca80c85c.png" alt-text="Key pipeline terms with a trigger action, starting the pipeline with multiple stages, using various jobs and tasks to create a build artifact, and start the deployment.":::
+:::image type="content" source="../media/key-pipeline-concepts-overview-ca80c85c.png" alt-text="Diagram showing Key pipeline terms with a trigger action, starting the pipeline with multiple stages, using various jobs and tasks to create a build artifact, and start the deployment.":::
 
 
 ## Agent
