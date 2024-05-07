@@ -4,12 +4,12 @@ title: Introduction to technical debt
 metadata:
   title: Introduction to technical debt
   description: "Introduction to technical debt"
-  ms.date: 11/16/2022
+  ms.date: 05/06/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 4
+  ms.custom:
+  - N/A
+durationInMinutes: 5
 content: |
   [!include[](includes/4-introduction-technical-debt.md)]
