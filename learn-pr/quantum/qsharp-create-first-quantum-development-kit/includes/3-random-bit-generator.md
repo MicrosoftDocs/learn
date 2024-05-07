@@ -60,7 +60,7 @@ To do so, you:
     ```
 
 > [!TIP]
-> The Modern QDK includes a set of built-in Q# samples that you can use to learn more about Q# and quantum computing. To view the samples, open a new Q# file and type `sample`, then select the sample you want to view from the list of options. You can find the Q# code in this unit under "Random Bit sample".
+> The  QDK includes a set of built-in Q# samples that you can use to learn more about Q# and quantum computing. To view the samples, open a new Q# file and type `sample`, then select the sample you want to view from the list of options. You can find the Q# code in this unit under "Random Bit sample".
 
 ## Explore the Q# code
 
@@ -70,7 +70,7 @@ To do so, you:
 ## Run the program locally
 
 1. Open a new terminal, **Terminal > New Terminal**. 
-1. To test run your program locally on the built-in simulator, select **Run Q# File** from the play icon drop-down in the top-right, or press **Ctrl+F5**. Your output will appear in the debug console of the terminal.
+1. To test run your program locally on the built-in simulator, click on **Run** from the list of commands below `@EntryPoint()`, or press **Ctrl+F5**. Your output will appear in the debug console.
 1. Run the program again to see a different result.
 
 In the next unit, you'll implement the second phase of your quantum random number generator: combining multiple random bits to form a larger number.
