@@ -4,12 +4,12 @@ title: Explore job types
 metadata:
   title: Explore job types
   description: "Explore job types"
-  ms.date: 07/13/2023
+  ms.date: 05/07/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 1
+  ms.custom:
+  - N/A
+durationInMinutes: 2
 content: |
   [!include[](includes/3-explore-job-types.md)]
