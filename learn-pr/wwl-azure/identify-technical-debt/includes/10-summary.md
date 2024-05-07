@@ -1,4 +1,4 @@
-This module examined technical debt, complexity, quality metrics, and plans for effective code reviews and code quality validation.
+This module examined technical debt, complexity, quality metrics, and plans for effective code reviews and code quality validation. 
 
 You learned how to describe the benefits and usage of:
 
