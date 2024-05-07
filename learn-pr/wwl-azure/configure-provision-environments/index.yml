@@ -3,21 +3,27 @@ uid: learn.wwl.configure-provision-environments
 metadata:
   title: Provision and test environments
   description: "Provision and test environments"
-  ms.date: 09/04/2023
+  ms.date: 05/06/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: azure-devops
+  ai-usage: human-only
 title: Provision and test environments
 summary: This module details target environment provisioning, service connections creation process, and test infrastructure setup. Learn how to configure functional test automation and run availability tests.
 abstract: |
-  By the end of this module, you'll be able to:
-  *   Provision and configure target environment
-  *   Deploy to an environment securely using a service connection
-  *   Configure functional test automation and run availability tests
-  *   Setup test infrastructure
-prerequisites: |
-  None
+  By the end of this module, you're able to:
+
+  -   Provision and configure target environment.
+
+  -   Deploy to an environment securely using a service connection.
+
+  -   Configure functional test automation and run availability tests.
+
+  -   Setup test infrastructure.
+prerequisites: None
 iconUrl: /training/achievements/2-configure-and-provision-environments.svg
 levels:
 - advanced
