@@ -7,7 +7,7 @@ Configure Azure Pipelines to use your Git repo.
 3.  The build creates an artifact used by the rest of your pipeline to run tasks such as deploying to staging or production.
 4.  Your code is now updated, built, tested, and packaged. It can be deployed to any target.
 
-:::image type="content" source="../media/flowchart-edit-code-94cc665f.png" alt-text="Flowchart with edit code, push to code repo, build tasks, and test tasks, create artifact, release tasks, and deploy to target.":::
+:::image type="content" source="../media/flowchart-edit-code-94cc665f.png" alt-text="Screenshot of Flowchart with edit code, push to code repo, build tasks, and test tasks, create artifact, release tasks, and deploy to target.":::
 
 
 ## Benefits of using the Visual Designer

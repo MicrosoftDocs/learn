@@ -3,7 +3,7 @@ uid: learn.wwl.describe-pipelines-concurrency
 metadata:
   title: Describe pipelines and concurrency
   description: "Describe pipelines and concurrency"
-  ms.date: 05/06/2024
+  ms.date: 05/07/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: module
@@ -14,15 +14,15 @@ metadata:
 title: Describe pipelines and concurrency
 summary: This module describes parallel jobs and how to estimate their usage. Also, it presents Azure Pipelines for open-source projects, explores Visual Designer and YAML pipelines.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
 
-  -   Use and estimate parallel jobs
+  -   Use and estimate parallel jobs.
 
-  -   Use Azure Pipelines for open-source or private projects
+  -   Use Azure Pipelines for open-source or private projects.
 
-  -   Use Visual Designer
+  -   Use Visual Designer.
 
-  -   Work with Azure Pipelines and YAML
+  -   Work with Azure Pipelines and YAML.
 prerequisites: None
 iconUrl: /training/achievements/3-describe-pipelines-and-concurrency.svg
 levels:
