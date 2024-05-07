@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/09/2024
+  ms.date: 05/07/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
@@ -27,7 +27,7 @@ quiz:
     - content: "Hybrid"
       isCorrect: false
       explanation: "Incorrect. The hybrid model isn't the best approach based on the company requirements."
-  - content: "What solution should be used to log user sign-in activity?"
+  - content: "What solution should be used to log user activity?"
     choices:
     - content: "Virtual machines insights"
       isCorrect: false
@@ -37,7 +37,7 @@ quiz:
       explanation: "Incorrect. Azure alerts can be used to send notifications about activity log events, but they don't log user sign-in activity."
     - content: "Microsoft Entra audit logs"
       isCorrect: true
-      explanation: "Correct. Microsoft Entra audit logs contain the history of sign-in activity. The logs also have an audit trail of tenant changes."
+      explanation: "Correct. Microsoft Entra audit logs provide a comprehensive report on every logged event in Microsoft Entra ID."
   - content: "What monitoring tool should be used to measure user experience and analyze user behavior for all external facing applications?"
     choices:
     - content: "Azure Application Insights"
