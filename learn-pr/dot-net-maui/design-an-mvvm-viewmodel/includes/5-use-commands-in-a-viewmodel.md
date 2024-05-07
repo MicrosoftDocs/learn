@@ -74,7 +74,7 @@ The `ICommand` interface accepts an `object` parameter for the `CanExecute` and 
 
 .NET MAUI controls that implement the command pattern provide the `CommandParameter` property. By setting this property, you can pass a parameter to the command when it's invoked with `Execute`, or when it checks the `CanExecute` method for status.
 
-In this example, the string value 25 is sent to the command.
+In this example, the string value 25 is sent to the command:
 
 ```xaml
 <Button Text="Give Bonus" Command="{Binding GiveBonus}" CommandParameter="25" />
