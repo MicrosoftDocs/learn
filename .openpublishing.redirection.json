@@ -3666,6 +3666,36 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/cela-accessibility/accessibility-features/00-windows-10-accessibility.yml" ,
+      "redirect_url": "/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessibility-features/01-language-and-etiquette.yml" ,
+      "redirect_url": "/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessibility-features/02-what-is-inclusion.yml" ,
+      "redirect_url": "/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessibility-features/03-knowledge-check.yml" ,
+      "redirect_url": "/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessibility-features/04-summary-and-resources.yml" ,
+      "redirect_url": "/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/learn-pr/cela-accessibility/accessibility-features/index.yml" ,
+      "redirect_url": "/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/data-ai-cert/convert-speech-to-text/index.md",
       "redirect_url": "/training/modules/transcribe-speech-input-text",
       "redirect_document_id": false
