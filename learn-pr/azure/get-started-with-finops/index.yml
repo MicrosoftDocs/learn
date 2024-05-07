@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.get-started-with-finops
 metadata:
-  title: Get Started with FinOps
+  title: Get started with FinOps
   description: Learn about the FinOps Framework and the impact of transitioning from a CapEx to an OpEx model.
   ms.date: 04/19/2024
   author: rmcmurray
   ms.author: robmcm
   ms.topic: module
   ms.service: azure
-title: Get Started with FinOps
+title: Get started with FinOps
 summary: Begin your journey into FinOps on Azure with this module, designed to provide a comprehensive introduction to the FinOps framework. In this module, you'll delve into the essence of FinOps, understanding its fundamental principles, and gaining insights into its core components and best practices.
 abstract: |
   By the end of this module, you'll be able to:
