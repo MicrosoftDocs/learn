@@ -1,4 +1,4 @@
-Testing is a fundamental aspect of software development that validates the quality, reliability, and functionality of applications. It is a key concern during the local developer process (the inner loop) but also is an essential component of the complete DevOps lifecycle (the outer loop), in which code traverses the path from release pipeline to the production environment.
+Testing is a fundamental aspect of software development that validates the quality, reliability, and functionality of applications. It's a key concern during the local developer process (the inner loop) but also is an essential component of the complete DevOps lifecycle (the outer loop), in which code traverses the path from release pipeline to the production environment.
 
 ## Test types
 
@@ -8,7 +8,7 @@ The need for validation spans entire software lifecycle, relying on a range of d
  -  Integration testing evaluates interactions between different components to assess their integration and functionality.
  -  Functional testing primarily focuses on evaluating individual components or features within the application to ensure they meet functional requirements. These tests validate the behavior of specific functions or units of code, often in isolation from the rest of the system, and are typically designed to verify that each component performs its intended function correctly.
  -  Smoke testing identifies whether infrastructure and application components are available and function as expected. Common smoke testing scenarios include reaching the HTTPS endpoint of a web application, querying a database, and simulating a single user flow in the application.
- -  UI testing validates that application user interfaces are deployed and that user interface interactions function as expected. It is recommended to use UI automation tools to drive automation. During automated UI tests, a script mimics a real user scenario.
+ -  UI testing validates that application user interfaces are deployed and that user interface interactions function as expected. It's recommended to use UI automation tools to drive automation. During automated UI tests, a script mimics a real user scenario.
  -  Load testing verifies scalability and application functionality by increasing the load until reaching a predefined threshold, ensuring the system operates effectively under stress. This test usually focus on specific user pathways to ensure the application meets performance requirements when subjected to defined levels of load.
  -  Stress testing involves subjecting the system to excessive loads to assess its resiliency and capacity to handle extreme conditions. This helps with identifying performance bottlenecks and evaluating the ability to recover in a graceful manner.
  -  Performance testing combines load and stress testing to validate performance under load and establish a benchmark for application operation.

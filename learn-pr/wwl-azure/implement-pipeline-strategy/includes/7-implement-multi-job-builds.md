@@ -13,14 +13,14 @@ Adding multiple jobs to a pipeline lets you:
 
 To add another agent job to an existing pipeline, click on the ellipsis and choose as shown in this image:
 
-:::image type="content" source="../media/devops-ci-image-028-86cb5076.png" alt-text="Screenshot of the Add an Agent Job page":::
+:::image type="content" source="../media/devops-ci-image-028-86cb5076.png" alt-text="Screenshot of the Add an Agent Job page.":::
 
 
 ## Parallel jobs
 
 At the organization level, you can configure the number of parallel jobs that are made available.
 
-:::image type="content" source="../media/devops-ci-image-027-d0c04920.png" alt-text="Screenshot of the Retention and Parallel Jobs page":::
+:::image type="content" source="../media/devops-ci-image-027-d0c04920.png" alt-text="Screenshot of the Retention and Parallel Jobs page.":::
 
 
 The free tier allows for one parallel job of up to 1800 minutes per month. The self-hosted agents have higher levels.
