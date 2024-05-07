@@ -2,7 +2,7 @@
 
 One problem with this approach is that it's hard to write unit tests against code-behind files. Code-behind files often assume an application state that's created by parsing XAML or even created by other pages. These conditions are difficult to handle in a unit test runner that might not even be running on a mobile device, let alone with a user interface. So, unit tests are rarely able to test the UI behaviors in these files.
 
-But here's where the MVVM pattern comes in handy. When used correctly, the MVVM pattern solves these problems by moving most UI behavior logic to unit-testable classes that are called **viewmodels**. The MVVM pattern is most commonly used with frameworks that support data-binding. That's because with .NET MAUI, you can data-bind each UI element to a viewmodel and eliminate or nearly eliminate code in a view or code-behind.
+But here's where the MVVM pattern comes in useful. When used correctly, the MVVM pattern solves these problems by moving most UI behavior logic to unit-testable classes that are called **viewmodels**. The MVVM pattern is most commonly used with frameworks that support data-binding. That's because with .NET MAUI, you can data-bind each UI element to a viewmodel and eliminate or nearly eliminate code in a view or code-behind.
 
 ## What are the parts of an MVVM application?
 
@@ -39,7 +39,7 @@ public class EmployeeRepository
 
 The _view_ code controls things that directly interact with the user, such as controls like buttons and entry fields, as well as other purely visual elements like themes, styles, and fonts.
 
-In .NET MAUI, you don't have to write any code to generate a view yourself. Instead, you often define your views by XAML files. Of course, there are situations that call for a custom user control, in which you create your own view through code.
+In .NET MAUI, you don't have to write any C# code to generate a view yourself. Instead, you often define your views by XAML files. Of course, there are situations that call for a custom user control, in which you create your own view through code.
 
 ### What's a viewmodel?
 
@@ -85,7 +85,7 @@ Think about what a viewmodel might do for the HR application. Let's say that the
 
     You then just need the `BindingContext` for the page set to an instance of `EmployeeViewModel`.
 
-In this example, the model does the _business logic_. This logic isn't bound to a visual display or device. You could use the same logic for a handheld device or desktop computer. The view knows nothing of the business logic. The view controls, like the label, know how to get text on the screen, but doesn't care if it's a vacation balance or a random string. The viewmodel knows a _little_ of both worlds, so it can act as an intermediary.
+In this example, the model contains the _business logic_. This logic isn't bound to a visual display or device. You could use the same logic for a handheld device or desktop computer. The view knows nothing of the business logic. The view controls, like the label, know how to get text on the screen, but doesn't care if it's a vacation balance or a random string. The viewmodel knows a _little_ of both worlds, so it can act as an intermediary.
 
 What's interesting is how the viewmodel accomplishes being an intermediary: It exposes properties to which a view can bind. Public properties are the only way a viewmodel provides data. This brings us to why it's _called_ a "viewmodel." The "model" in MVVM represents the structure, data, and logic of the business processes, the "viewmodel" represents the structure, data, and logic that the view requires.
 
@@ -122,10 +122,10 @@ public class EmployeeViewModel : INotifyPropertyChanged
 }
 ```
 
-The view that describes the employee's details, and contains a label control that's bound to the viewmodel's `Name` property:
+The view that describes the employee's details contains a label control that's bound to the viewmodel's `Name` property:
 
 ```xaml
 <Label Text="{Binding Name}" />
 ```
 
-When the `Name` property changes in the viewmodel, the `PropertyChanged` event is raised with the name of that property. The binding listens to the event and then notifies the label that the `Name` property changed. Then, label's `Text` property is updated with the latest value.
+When the `Name` property changes in the viewmodel, the `PropertyChanged` event is raised with the name of that property. The binding listens to the event and then notifies the label that the `Name` property changed. Then, the label's `Text` property is updated with the latest value.

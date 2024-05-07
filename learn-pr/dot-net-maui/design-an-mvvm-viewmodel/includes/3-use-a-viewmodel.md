@@ -31,7 +31,7 @@ public bool IsSupervisor => _model.DirectReports.Any();
 
 ### Enrich by using a viewmodel
 
-Sometimes a model might only provide an ID for related data. Or you might need to go to several model classes to correlate the data required for a single screen. The viewmodel provides an ideal place to perform these tasks as well. Suppose you want to show all the projects that an employee is currently running. This data isn't part of the `Employee` model class. It can be accessed by looking at the `CompanyProjects` model class. Our `EmployeeViewModel`, as always, exposes its work as a public property:
+Sometimes a model might only provide an ID for related data. Or you might need to go to several model classes to correlate the data required for a single screen. The viewmodel provides an ideal place to perform these tasks as well. Suppose you want to show all the projects that an employee is currently managing. This data isn't part of the `Employee` model class. It can be accessed by looking at the `CompanyProjects` model class. Our `EmployeeViewModel`, as always, exposes its work as a public property:
 
 ```csharp
 public IEnumerable<string> ActiveProjects => CompanyProjects.All

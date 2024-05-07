@@ -1,4 +1,4 @@
-In this exercise, swap back to the "movie list" app worked with in the previous exercise. This time, we'll convert the **Delete** menu's event handler to a command.
+In this exercise, swap back to the "movie list" app you worked with in the previous exercise. This time, you'll convert the **Delete** menu's event handler to a command.
 
 ## Download and run the sample
 
