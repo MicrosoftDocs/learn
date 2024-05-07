@@ -14,7 +14,7 @@ metadata:
 title: Understand package management
 summary: This module describes package feeds, common public package sources, and how to create and publish packages.
 abstract: |
-  By the end of this module, you are able to:
+  By the end of this module, you're able to:
 
   -   Implement package management
 
