@@ -159,9 +159,9 @@ To manage resources in your Azure subscription, Azure CycleCloud requires a cert
 
     | Setting | Value |
     | --- | --- |
-    | Role | Select the **Contributor** entry. |
-    | Assign access to | Select the **Virtual Machine** entry. |
-    | Select | Enter **cyclecloud-vm**. |
+    | Role | Select the **Contributor** entry under **Privileged administrator roles**. |
+    | Assign access to | Select **Managed Identity**. |
+    | Select members | Select **Virtual Machine** in the **Managed Identity** dropdown and **cyclecloud-vm** under **Select**. |
 
 1. In the list of results, select the entry representing the **cyclecloud-vm** Azure VM, and then select **Save**.
 
