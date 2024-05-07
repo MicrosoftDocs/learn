@@ -1,4 +1,4 @@
-The ability to recover data by using Git commands is crucial for developers to revert accidental changes, restore deleted files, or recover lost commits. It contributes to minimizing unexpected downtime and ensuring project continuity. However, while its benefits are clear, it is important to point out its potential risks. When applying the Git command described in this unit, it's essential to exercise proper caution, especially when manipulating commit history or reverting changes, as mistakes can lead to data loss.
+The ability to recover data by using Git commands is crucial for developers to revert accidental changes, restore deleted files, or recover lost commits. It contributes to minimizing unexpected downtime and ensuring project continuity. However, while its benefits are clear, it's important to point out its potential risks. When applying the Git command described in this unit, it's essential to exercise proper caution, especially when manipulating commit history or reverting changes, as mistakes can lead to data loss.
 
 ## Git data recovery commands
 
