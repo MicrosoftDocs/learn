@@ -3,7 +3,7 @@ uid: learn.wwl.implement-open-source-software-azure
 metadata:
   title: Implement open-source software
   description: "Implement open-source software"
-  ms.date: 05/06/2024
+  ms.date: 05/07/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: module
@@ -14,7 +14,7 @@ metadata:
 title: Implement open-source software
 summary: This module explores open-source software and corporate concerns with software components. Also, it explains common open-source licenses, license implications, and ratings.
 abstract: |
-  By the end of this module, you are able to:
+  By the end of this module, you're able to:
 
   -   Implement open-source software.
 
