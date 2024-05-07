@@ -18,7 +18,7 @@ Any feed user has access to all the views, whether the default views of @Local, 
 
 When creating a feed, you can choose whether the feed is visible to people in your Azure DevOps organization or only specific people.
 
-:::image type="content" source="../media/2-2-feed-visibility-653a1c98.png" alt-text="Screenshot of Feed visibility":::
+:::image type="content" source="../media/2-2-feed-visibility-653a1c98.png" alt-text="Screenshot of Feed visibility.":::
 
 
 See also: [Secure and share packages using feed permissions](/azure/devops/artifacts/feeds/feed-permissions).

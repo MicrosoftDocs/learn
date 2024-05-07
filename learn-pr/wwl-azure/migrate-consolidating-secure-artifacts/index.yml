@@ -14,7 +14,7 @@ metadata:
 title: Migrate consolidate and secure artifacts
 summary: This module details package migration, consolidation, and configuration to secure access to package feeds and artifact repositories.
 abstract: |
-  By the end of this module,&nbsp;you're&nbsp;able to:
+  By the end of this module, you're able to:
 
   -   Identify artifact repositories
 
