@@ -47,7 +47,7 @@ That brings us back to the _viewmodel_. The viewmodel is the intermediary betwee
 
 :::image type="content" source="../media/mvvm-overview-diagram.png" alt-text="A diagram that illustrates how a viewmodel is an intermediary between a Model and View.":::
 
-Think about what a viewmodel might do for the HR application. Let's say that there's a view that displays an employee's available vacation time, and we want the vacation balance displayed as "2 weeks, 3 days, 4 hours." But the business logic in the model provides that same value as 13.5 days, a decimal number representing the total days in an 8-hour work day. The object model might look like the following list:
+Think about what a viewmodel might do for the HR application. Let's say that there's a view that displays an employee's available vacation time, and you want the vacation balance displayed as "2 weeks, 3 days, 4 hours." But the business logic in the model provides that same value as 13.5 days, a decimal number representing the total days in an 8-hour work day. The object model might look like the following list:
 
 - **Model** &ndash; The `Employee` class, which includes a method:
 
@@ -83,7 +83,7 @@ Think about what a viewmodel might do for the HR application. Let's say that the
     <Label Text="{Binding FormattedVacationBalance}" />
     ```
 
-    We'd then just need the `BindingContext` for the page set to an instance of `EmployeeViewModel`.
+    You then just need the `BindingContext` for the page set to an instance of `EmployeeViewModel`.
 
 In this example, the model does the _business logic_. This logic isn't bound to a visual display or device. You could use the same logic for a handheld device or desktop computer. The view knows nothing of the business logic. The view controls, like the label, know how to get text on the screen, but doesn't care if it's a vacation balance or a random string. The viewmodel knows a _little_ of both worlds, so it can act as an intermediary.
 
