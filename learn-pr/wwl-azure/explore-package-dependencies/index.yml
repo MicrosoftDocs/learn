@@ -3,7 +3,7 @@ uid: learn.wwl.explore-package-dependencies
 metadata:
   title: Explore package dependencies
   description: "Explore package dependencies"
-  ms.date: 05/06/2024
+  ms.date: 05/07/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: module
@@ -46,7 +46,7 @@ products:
 - github
 units:
 - learn.wwl.explore-package-dependencies.introduction
-- learn.wwl.explore-package-dependencies.what-dependency-management
+- learn.wwl.explore-package-dependencies.what-is-dependency-management
 - learn.wwl.explore-package-dependencies.describe-elements-of-dependency-management-strategy
 - learn.wwl.explore-package-dependencies.identify-dependencies
 - learn.wwl.explore-package-dependencies.understand-source-package-componentization
