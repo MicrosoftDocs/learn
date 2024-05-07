@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-to-devops
 metadata:
   title: Introduction to DevOps
   description: "Introduction to DevOps"
-  ms.date: 05/06/2024
+  ms.date: 05/07/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: module
@@ -51,7 +51,7 @@ units:
 - learn.wwl.introduction-to-devops.what-is-devops
 - learn.wwl.introduction-to-devops.explore-devops-journey
 - learn.wwl.introduction-to-devops.identify-transformation-teams
-- learn.wwl.introduction-to-devops.define-organization-structure-for-agile-practices
+- learn.wwl.introduction-to-devops.define-organization-structure-agile-practices
 - learn.wwl.introduction-to-devops.explore-shared-goals-define-timelines
 - learn.wwl.introduction-to-devops.what-is-azure-devops
 - learn.wwl.introduction-to-devops.what-is-github

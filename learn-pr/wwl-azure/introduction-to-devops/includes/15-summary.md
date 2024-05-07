@@ -1,4 +1,4 @@
-This module explored the key areas that organizations must apply to start their DevOps transformation Journey, changing the team's mindset, and defining timelines and goals.
+This module explored the key areas that organizations must apply to start their DevOps transformation Journey, change the team's mindset, and define timelines and goals.<br>
 
 You learned how to describe the benefits and usage of:
 
@@ -15,4 +15,4 @@ You learned how to describe the benefits and usage of:
  -  [View of features and epics on the Feature Timeline - Azure DevOps \| Microsoft Docs](/azure/devops/boards/extensions/feature-timeline)
  -  [Plan and track work in Azure Boards with Basic or Agile processes - Azure Boards \| Microsoft Docs](/azure/devops/boards/get-started/plan-track-work)
  -  [Agile Manifesto for Software Development \| Agile Alliance](https://www.agilealliance.org/agile101/the-agile-manifesto)
- -  [12 Principles Behind the Agile Manifesto \| Agile Alliance](https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto) 
+ -  [12 Principles Behind the Agile Manifesto \| Agile Alliance](https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto)

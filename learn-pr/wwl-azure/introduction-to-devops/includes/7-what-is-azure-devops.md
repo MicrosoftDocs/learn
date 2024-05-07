@@ -6,7 +6,7 @@ It also integrates with the most-leading tools on the market and is an excellent
 
 Azure DevOps includes a range of services covering the complete development life cycle.
 
- -  Azure Boards: agile planning, work item tracking, visualization, and reporting tool.
+ -  Azure Boards: agile planning work item tracking, visualization, and reporting tool.
  -  Azure Pipelines: a language, platform, and cloud-agnostic CI/CD platform-supporting containers or Kubernetes.
  -  Azure Repos: provides cloud-hosted private git repos.
  -  Azure Artifacts: provides integrated package management with support for Maven, npm, Python, and NuGet package feeds from public or private sources.
