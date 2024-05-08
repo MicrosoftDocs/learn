@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-github-actions.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/07/2024
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the role of a runner in GitHub Actions?"
+    choices:
+    - content: "A runner is a custom application for the GitHub Actions platform that performs a complex but frequently repeated task."
+      isCorrect: false
+      explanation: "Incorrect. This description refers to an action, not a runner."
+    - content: "A runner is a server that stores your workflows."
+      isCorrect: false
+      explanation: "Incorrect. A runner doesn't store workflows, it executes them when they're triggered."
+    - content: "A runner is a server that runs your workflows when they're triggered."
+      isCorrect: true
+      explanation: "Correct. Each runner can run a single job at a time and executes workflows when they're triggered."
+  - content: "What takes precedence if a variable with the same name exists at multiple levels?"
+    choices:
+    - content: "The variable at the highest level."
+      isCorrect: false
+      explanation: "Incorrect. The variable at the highest level doesn't take precedence."
+    - content: "The variable at the lowest level."
+      isCorrect: true
+      explanation: "Correct. If a variable with the same name exists at multiple levels, the variable at the lowest level takes precedence."
+    - content: "The variable at the middle level."
+      isCorrect: false
+      explanation: "Incorrect. The variable at the middle level doesn't take precedence."
+  - content: "What is the recommended practice when granting credential permissions for secrets in GitHub?"
+    choices:
+    - content: "Grant full access to all credentials for ease of use."
+      isCorrect: false
+      explanation: "Incorrect. Granting full access can lead to security risks and isn't recommended."
+    - content: "Use personal credentials as much as possible."
+      isCorrect: false
+      explanation: "Incorrect. It's recommended to use deploy keys or a service account instead of personal credentials."
+    - content: "Grant the minimum permissions possible."
+      isCorrect: true
+      explanation: "Correct. It's recommended to grant the minimum permissions possible to limit access and maintain security."
