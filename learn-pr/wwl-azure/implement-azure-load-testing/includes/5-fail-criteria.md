@@ -53,7 +53,7 @@ The test criteria is added in the `failureCriteria` setting.
 
 When you define a test criterion for a specific JMeter request, the request name should match the name of the JMeter sampler in the JMX file.
 
-:::image type="content" source="media/jmeter-request-name.png" alt-text="Screenshot of the JMeter user interface, highlighting the request name.":::
+:::image type="content" source="media/jmeter-request-name.png" alt-text="Screenshot of the JMeter user interface, highlighting the request name.":
 
 ## Auto stop configuration
 

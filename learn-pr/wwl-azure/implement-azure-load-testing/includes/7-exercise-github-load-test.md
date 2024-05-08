@@ -191,4 +191,4 @@ Update your GitHub Actions workflow to run a load test for your Azure load testi
 
 When you run a load test from your CI/CD pipeline, you can view the summary results directly in the CI/CD output log. If you published the test results as a pipeline artifact, you can also download a CSV file for further reporting.
 
-:::image type="content" source="../media/github-actions-workflow-completed.png" alt-text="Screenshot that shows the workflow logging information.":::
+:::image type="content" source="../media/github-actions-workflow-completed.png" alt-text="Screenshot that shows the workflow logging information.":
