@@ -37923,6 +37923,26 @@
       "source_path": "learn-pr/wwl-azure/explore-package-dependencies/2-what-dependency-management.md",
       "redirect_url": "/training/modules/explore-package-dependencies/2-what-is-dependency-management",
       "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/develop-monitor-status-dashboards/2-explore-azure-dashboards.md",
+      "redirect_url": "/training/modules/develop-monitor-status-dashboards/3-explore-azure-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-monitor-status-dashboards/3-examine-view-designer-azure-monitor.md",
+      "redirect_url": "/training/modules/develop-monitor-status-dashboards/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-monitor-status-dashboards/7-knowledge-check.md",
+      "redirect_url": "/training/modules/develop-monitor-status-dashboards/10-knowledge-check",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/develop-monitor-status-dashboards/8-summary.md",
+      "redirect_url": "/training/modules/develop-monitor-status-dashboards/11-summary",
+      "redirect_document_id": false
     }
   ]
 }

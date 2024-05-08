@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/28/2023
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
@@ -29,13 +29,13 @@ quiz:
     choices:
     - content: "workflow.yml."
       isCorrect: false
-      explanation: "Incorrect. Add details action.yml metadata. At the root of your action, you will have an action.yml file. Make sure it has been populated with author, icon, any expected inputs, and outputs."
+      explanation: "Incorrect. Add details action.yml metadata. At the root of your action, you'll have an action.yml file. Make sure it has been populated with author, icon, any expected inputs, and outputs."
     - content: "action.yml."
       isCorrect: true
-      explanation: "Correct. Add details action.yml metadata. At the root of your action, you will have an action.yml file. Make sure it has been populated with author, icon, any expected inputs, and outputs."
+      explanation: "Correct. Add details action.yml metadata. At the root of your action, you'll have an action.yml file. Make sure it has been populated with author, icon, any expected inputs, and outputs."
     - content: "meta.yml."
       isCorrect: false
-      explanation: "Incorrect. Add details action.yml metadata. At the root of your action, you will have an action.yml file. Make sure it has been populated with author, icon, any expected inputs, and outputs."
+      explanation: "Incorrect. Add details action.yml metadata. At the root of your action, you'll have an action.yml file. Make sure it has been populated with author, icon, any expected inputs, and outputs."
   - content: "Which of the following choices is how can the status of a workflow be shown in a repository?"
     choices:
     - content: "Using Badges."
