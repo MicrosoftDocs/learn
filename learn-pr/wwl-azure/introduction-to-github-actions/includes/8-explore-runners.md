@@ -15,7 +15,7 @@ GitHub-hosted runners include the operating system's default built-in tools. For
 
 GitHub-hosted runners run on GitHub's cloud infrastructure, leveraging virtual machines or containers to execute workflows. Each workflow execution is isolated within its own environment, ensuring security and reproducibility. GitHub-hosted runners seamlessly integrate with GitHub Actions, enabling users to reference them directly within workflows hosted in GitHub repositories.
 
-There are some limits on GitHub Actions usage when using GitHub-hosted runners. In particular, each job in a workflow has the maximum of 6 hours of execution time. If a job reaches this limit, the job is terminated and fails to complete. Each workflow run is limited to 35 days. If a workflow run reaches this limit, its run gets cancelled. This period includes execution duration, and time spent on waiting and approval.
+There are some limits on GitHub Actions usage when using GitHub-hosted runners. In particular, each job in a workflow has the maximum of 6 hours of execution time. If a job reaches this limit, the job is terminated and fails to complete. Each workflow run is limited to 35 days. If a workflow run reaches this limit, its run gets canceled. This period includes execution duration, and time spent on waiting and approval.
 
 ### Prerequisites
 
