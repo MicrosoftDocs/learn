@@ -1,6 +1,6 @@
 Use the EXPLAIN statement to display the execution plan for the query. EXPLAIN can be used with any SELECT, INSERT, UPDATE, DELETE, VALUES, EXECUTE, DECLARE, or CREATE TABLE AS statement.
 
-EXPLAIN displays the execution plan for the query, allowing you to understand how PostgreSQL will execute a statement, including whether indexes are used, how tables are joined, and the notional cost of a query.
+EXPLAIN displays the execution plan for the query, allowing you to understand how PostgreSQL: executes a statement, whether indexes are used, how tables are joined, and the notional cost of a query.
 
 The syntax for EXPLAIN is:
 
@@ -28,7 +28,7 @@ This simple query returns the following information:
 
 ## ANALYZE
 
-This option will execute the statement, as well as return the query plan. The output from the statement is discarded, but the statement is still executed. If you want to use EXPLAIN ANALYZE with a query that makes changes to the database, such INSERT, UPDATE, or DELETE, you can use the ROLLBACK statement to prevent the changes being applied. For example:
+This option executes the statement, and returns the query plan. The output from the statement is discarded, but the statement is still executed. You can combine the ROLLBACK and EXPLAIN ANALYZE statements to prevent the changes being applied with a query that makes changes to the database, such INSERT, UPDATE, or DELETE. For example:
 
 ```sql
 BEGIN;
@@ -42,7 +42,12 @@ ROLLBACK;
 
 ## VERBOSE
 
-Displays additional information including the output column list for each node in the plan tree, schema-qualified table and function names, variables names in expressions together with the table alias, and the name of each trigger for which statistics are displayed.
+Displays additional information including:
+
+- the output column list for each node in the plan tree
+- the schema-qualified table and function names
+- the variables names in expressions together with the table alias
+- the name of each trigger for which statistics are displayed
 
 ## COSTS
 
