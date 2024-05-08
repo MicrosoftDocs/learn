@@ -8,11 +8,11 @@ Picture yourself as the primary defender of your organization's cloud assets, en
 
 By the end of this module, participants will be able to:
 
- -  Mastering the configuration of Microsoft Defender for Cloud to effectively monitor and protect cloud resources.
- -  Implementing advanced threat detection strategies using Microsoft Defender for Cloud's built-in capabilities.
- -  Utilizing Microsoft Defender for Cloud's threat intelligence to proactively identify and mitigate security risks.
- -  Configuring and fine-tuning security policies within Microsoft Defender for Cloud to align with organizational security requirements.
- -  Developing expertise in incident response and remediation using Microsoft Defender for Cloud's integrated tools and features.
+ -  Master the configuration of Microsoft Defender for Cloud to effectively monitor and protect cloud resources.
+ -  Implement advanced threat detection strategies using Microsoft Defender for Cloud's built-in capabilities.
+ -  Utilize Microsoft Defender for Cloud's threat intelligence to proactively identify and mitigate security risks.
+ -  Configure and fine-tuning security policies within Microsoft Defender for Cloud to align with organizational security requirements.
+ -  Develop expertise in incident response and remediation using Microsoft Defender for Cloud's integrated tools and features.
 
 ## Goals
 
