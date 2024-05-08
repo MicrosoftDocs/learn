@@ -24,7 +24,7 @@ EXPLAIN ANALYZE SELECT * FROM category ORDER BY cat_id;
 
 This simple query returns the following information:
 
-[![Screenshot showing the Query Plan.]](/media/3-query-plan-1.png)
+![Screenshot showing the Query Plan.](../media/3-query-plan-1.png)
 
 ## ANALYZE
 
