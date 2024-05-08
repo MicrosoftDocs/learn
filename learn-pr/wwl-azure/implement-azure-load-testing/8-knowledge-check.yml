@@ -4,10 +4,77 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/06/2024
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
 durationInMinutes: 3
-content: |
-  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of the test engine in Azure Load Testing?"
+    choices:
+    - content: "It is a computing infrastructure that runs the Apache JMeter test script."
+      isCorrect: true
+      explanation: "correct choice"
+    - content: "It is used to specify the list of URL endpoints to test."
+      isCorrect: false
+      explanation: "incorrect choice"
+    - content: "It is used to store the results of the load test."
+      isCorrect: false
+      explanation: "incorrect choice"
+  - content: "What is the purpose of parameters in Azure Load Testing?"
+    choices:
+    - content: "To hard-code values in the JMeter script"
+      isCorrect: false
+      explanation: "incorrect choice"
+    - content: "To make the test plan configurable instead of hard-coding values in the JMeter script"
+      isCorrect: true
+      explanation: "correct choice"
+    - content: "To split the CSV input data evenly across all engine instances"
+      isCorrect: false
+      explanation: "incorrect choice"
+  - content: "What is the purpose of the 'engineInstances' key in a load test configuration?"
+    choices:
+    - content: "It specifies the number of virtual users in the test script."
+      isCorrect: false
+      explanation: "incorrect choice"
+    - content: "It determines the load pattern in the test script."
+      isCorrect: false
+      explanation: "incorrect choice"
+    - content: "It specifies the number of parallel test engine instances for running the test plan."
+      isCorrect: true
+      explanation: "correct choice"
+  - content: "What is the purpose of defining fail criteria in Azure Load Testing?"
+    choices:
+    - content: "To define performance and quality expectations for your application under load."
+      isCorrect: true
+      explanation: "correct choice"
+    - content: "To ensure that the total number of requests per second doesn't exceed a threshold."
+      isCorrect: false
+      explanation: "incorrect choice"
+    - content: "To automatically start a load test when the error rate surpasses a given threshold."
+      isCorrect: false
+      explanation: "incorrect choice"
+  - content: "What is the purpose of using secrets in Azure Load Testing?"
+    choices:
+    - content: "To securely pass sensitive information like web service credentials to the load test engine without hard-coding them in the test script."
+      isCorrect: true
+      explanation: "correct choice"
+    - content: "To hard code sensitive information in the JMeter test script."
+      isCorrect: false
+      explanation: "incorrect choice"
+    - content: "To store non-sensitive information and make it available as environment variables in the load test engine."
+      isCorrect: false
+      explanation: "incorrect choice"
+  - content: "What is the role of a service principal in the context of automating Azure load testing using GitHub Actions?"
+    choices:
+    - content: "It represents the GitHub Actions workflow in Microsoft Entra ID and is granted permissions to create and run a load test with the Azure Load Testing resource."
+      isCorrect: true
+      explanation: "correct choice"
+    - content: "It represents the Azure Load Testing resource in Microsoft Entra ID."
+      isCorrect: false
+      explanation: "incorrect choice"
+    - content: "It is used to create and manage test plans, test results, and related artifacts."
+      isCorrect: false
+      explanation: "incorrect choice"

@@ -2,15 +2,15 @@
 uid: learn.wwl.implement-azure-load-testing
 metadata:
   title: Implement Azure Load Testing
-  description: "Implement Azure Load Testing"
-  ms.date: 05/06/2024
+  description: "Learn how to optimizes application performance by simulating real-world loads with Azure Load Testing service. Learn how to automate load testing with GitHub Actions to ensure consistent application performance and scalability."
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: module
   ms.service: load-testing
   ai-usage: human-only
 title: Implement Azure Load Testing
-summary: Learn how to automate load tests with Azure Load Testing service.&nbsp;
+summary: Learn how to&nbsp;optimizes application performance by simulating real-world loads with Azure Load Testing service. Learn how to&nbsp;automate load testing&nbsp;with GitHub Actions to ensure consistent application performance and scalability.
 abstract: |
   After completing this module, you'll be able to:
 

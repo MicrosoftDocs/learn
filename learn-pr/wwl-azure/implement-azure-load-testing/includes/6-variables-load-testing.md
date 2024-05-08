@@ -1,4 +1,4 @@
-Learn how to pass secrets and environments as parameters to a load test in Azure Load Testing. You can use parameters to change the behavior of a load test without having to edit the Apache JMeter script. For example, to test a web application, specify the endpoint URL as a parameter to reuse your test script across multiple environments. You can also use parameters to avoid that you have to hard code sensitive information in the JMeter test script.
+Learn how to pass secrets and environments as parameters to a load test in Azure Load Testing. You can use parameters to change the behavior of a load test without having to edit the Apache JMeter script. For example, to test a web application, specify the endpoint URL as a parameter to reuse your test script across multiple environments. You can also use parameters to avoid having to hard code sensitive information in the JMeter test script.
 
 The Azure Load Testing service supports two types of parameters:
 
@@ -70,7 +70,7 @@ You first create a user-defined variable that retrieves the secret value. Then, 
 
     You can create the user-defined variable by using the Apache JMeter IDE, as shown in the following image:
 
-    :::image type="content" source="media/how-to-parameterize-load-tests/user-defined-variables.png" alt-text="Screenshot that shows how to add user-defined variables to your Apache JMeter script.":::
+    :::image type="content" source="media/user-defined-variables.png" alt-text="Screenshot that shows how to add user-defined variables to your Apache JMeter script.":::
 
     Alternatively, you can directly edit the JMX file, as shown in this example code snippet:
 
@@ -87,7 +87,7 @@ You first create a user-defined variable that retrieves the secret value. Then, 
     </Arguments>
     ```
 
-1. Reference the user-defined variable in the test script.
+2. Reference the user-defined variable in the test script.
 
     You can use the `${}` syntax to reference the variable in the script. In the following example, you use the `udv_appToken` variable to set an HTTP header.
 
@@ -122,7 +122,7 @@ You first define a user-defined variable that reads the environment variable, an
 
     You can create a user-defined variable by using the Apache JMeter IDE, as shown in the following image:
 
-    :::image type="content" source="media/how-to-parameterize-load-tests/user-defined-variables-env.png" alt-text="Screenshot that shows how to add user-defined variables for environment variables to your JMeter script.":::
+    :::image type="content" source="media/user-defined-variables-jmeter.png" alt-text="Screenshot that shows how to add user-defined variables for environment variables to your JMeter script.":::
 
     Alternatively, you can directly edit the JMX file, as shown in this example code snippet:
 
@@ -139,7 +139,7 @@ You first define a user-defined variable that reads the environment variable, an
     </Arguments>
     ```
 
-1. Reference the user-defined variable in the test script.
+2. Reference the user-defined variable in the test script.
 
     You can use the `${}` syntax to reference the variable in the script. In the following example, you use the `udv_webapp` variable to configure the application endpoint URL.
 

@@ -80,7 +80,7 @@ You can use parameters to make your test plan configurable instead of hard-codin
 
 1. Specify environment variables to pass nonsensitive parameters to your test script.
 
-    For example, you could use an environment variable to pass the target domain name or port number to the test script. 
+    For example, you could use an environment variable to pass the target domain name or port number to the test script.
 
 2. Add references to secrets, backed by Azure Key Vault.
 
@@ -88,7 +88,7 @@ You can use parameters to make your test plan configurable instead of hard-codin
 
 3. Add references to client certificates, backed by Azure Key Vault.
 
-    If you're load testing application endpoints that use certificate-based authentication, you can add the certificates to your Azure key vault, and add a reference to the certificate in the load test configuration. Azure Load Testing automatically injects the certificates in the web requests in your JMeter script.
+    If you are load testing application endpoints that use certificate-based authentication, you can add the certificates to your Azure key vault, and add a reference to the certificate in the load test configuration. Azure Load Testing automatically injects the certificates in the web requests in your JMeter script.
 
 4. Select the managed identity that is used for accessing your key vault for secrets or certificates.
 

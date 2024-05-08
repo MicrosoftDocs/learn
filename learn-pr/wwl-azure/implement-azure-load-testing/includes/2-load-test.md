@@ -10,7 +10,7 @@ Azure load testing consists of the following components:
 - **Test engine**
 - **App component**
 
-:::image type="content" source="../media/azure-load-testing-concepts.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="../media/load-testing.png" alt-text="Diagram illustrating the process of load testing.":::
 
 ### Load testing resource
 

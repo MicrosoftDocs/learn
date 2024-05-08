@@ -101,9 +101,9 @@ Create a service principal in the Azure subscription and assign the Load Test Co
 
 1. Copy the output JSON object to the clipboard.
 
-    In the next step, you store the service principal information as a GitHub Actions secret.
+    In the next step, you store the service principal information as a GitHub secret.
 
-### Store Azure credentials in GitHub Actions secret
+### Store Azure credentials in GitHub Actions
 
 Create a GitHub Actions secret to securely store the service principal information. You use this secret in your workflow definition to connect to authenticate with Azure and access your Azure load testing resource.
 

@@ -24,14 +24,13 @@ Fail criteria have the following structure:
 
 The following table describes the different components:
 
-| Parameter            | Description                                                                                                                                                                                                                                                                                                                                                 |
-| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Client metric`      | *Required.* The client metric on which the condition should be applied.                                                                                                                                                                                                                                                                                     |
-| `Aggregate function` | *Required.* The aggregate function to be applied on the client metric.                                                                                                                                                                                                                                                                                      |
-| `Condition`          | *Required.* The comparison operator, such as `greater than`, or `less than`.                                                                                                                                                                                                                                                                                |
-| `Threshold`          | *Required.* The numeric value to compare with the client metric.                                                                                                                                                                                                                                                                                            |
-| `Request`            | *Optional.* Name of the sampler in the JMeter script to which the criterion applies. If you don't specify a request name, the criterion applies to the aggregate of all the requests in the script. <br /> Don't include any personal data in the sampler name in your JMeter script. The sampler names appear in the Azure Load Testing results dashboard. |
-|                      |
+| Parameter            | Description                                                                                                                                                                                                                                                                                                                                                |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Client metric`      | *Required.* The client metric on which the condition should be applied.                                                                                                                                                                                                                                                                                    |
+| `Aggregate function` | *Required.* The aggregate function to be applied on the client metric.                                                                                                                                                                                                                                                                                     |
+| `Condition`          | *Required.* The comparison operator, such as `greater than`, or `less than`.                                                                                                                                                                                                                                                                               |
+| `Threshold`          | *Required.* The numeric value to compare with the client metric.                                                                                                                                                                                                                                                                                           |
+| `Request`            | *Optional.* Name of the sampler in the JMeter script to which the criterion applies. If you don't specify a request name, the criterion applies to the aggregate of all the requests in the script. <br/> Don't include any personal data in the sampler name in your JMeter script. The sampler names appear in the Azure Load Testing results dashboard. |
 
 ## load test fail criteria example
 
@@ -54,7 +53,7 @@ The test criteria is added in the `failureCriteria` setting.
 
 When you define a test criterion for a specific JMeter request, the request name should match the name of the JMeter sampler in the JMX file.
 
-:::image type="content" source="media/how-to-define-test-criteria/jmeter-request-name.png" alt-text="Screenshot of the JMeter user interface, highlighting the request name.":::
+:::image type="content" source="media/jmeter-request-name.png" alt-text="Screenshot of the JMeter user interface, highlighting the request name.":::
 
 ## Auto stop configuration
 
@@ -63,7 +62,6 @@ Azure Load Testing automatically stops a load test if the error percentage excee
 In the load test configuration, you can enable or disable the auto stop functionality and configure the error percentage threshold and time window. By default, Azure Load Testing automatically stops a load test that has an error percentage that is at least 90% during any 60-second time window.
 
 You can use the Azure Load Testing auto stop functionality in combination with an [*AutoStop listener*](https://jmeter-plugins.org/wiki/AutoStop/) in your JMeter script. The load test automatically stops when one of the criteria in either the auto stop configuration or the JMeter AutoStop listener is met.
-
 
 ### Auto stop with GitHub Actions
 
@@ -96,4 +94,3 @@ The following example disables auto stop for your load test:
         engineInstances: 1
         autoStop: disable
         ```
-
