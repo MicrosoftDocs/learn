@@ -14,3 +14,4 @@ For more information about the topics covered in this module, see:
 - [Connection handling best practice with PostgreSQL - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/azure-database-for-postgresql/connection-handling-best-practice-with-postgresql/ba-p/790883)
 - [Performance best practices for using Azure Database for PostgreSQL - Connection Pooling | Azure Blog and Updates | Microsoft Azure](https://azure.microsoft.com/blog/performance-best-practices-for-using-azure-database-for-postgresql-connection-pooling/)
 - [PgBouncer - Azure Database for PostgreSQL - Flexible Server | Microsoft Docs](/azure/postgresql/flexible-server/concepts-pgbouncer)
+
