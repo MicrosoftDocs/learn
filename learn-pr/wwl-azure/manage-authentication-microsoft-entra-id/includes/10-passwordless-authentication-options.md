@@ -1,4 +1,4 @@
-Features like multifactor authentication (MFA) are a great way to secure your organization, but users often get frustrated with the additional security layer on top of having to remember their passwords. Passwordless authentication methods are more convenient because the password is removed and replaced with something you have, plus something you are or something you know<br>
+Features like multifactor authentication (MFA) are a great way to secure your organization, but users often get frustrated with the additional security layer on top of having to remember their passwords. Passwordless authentication methods are more convenient because the password is removed and replaced with something you have, plus something you are or something you know.<br>
 
 | **Authentication** | **Something you have**                    | **Something you are or know** |
 | ------------------ | ----------------------------------------- | ----------------------------- |
@@ -8,7 +8,7 @@ Each organization has different needs when it comes to authentication. Microsoft
 
  -  Windows Hello for Business
  -  Microsoft Authenticator
- -  FIDO2 (Fast IDentity Online 2)
+ -  Passkeys FIDO2 (Fast IDentity Online 2)
  -  Certificate-based authentication
 
 :::image type="content" source="../media/passwordless-convenience-security-3e1c4bb8.png" alt-text="Diagram showing multifactor authentication methods.":::
@@ -70,7 +70,7 @@ Passwordless authentication using the Authenticator app follows the same basic p
 
 8. Microsoft Entra ID performs public/private key validation and returns a token.
 
-## FIDO2 security keys
+## Passkeys (FIDO2)
 
 The FIDO (Fast IDentity Online) Alliance helps to promote open authentication standards and reduce the use of passwords as a form of authentication. FIDO2 is the latest standard that incorporates the web authentication (WebAuthn) standard.
 
@@ -79,6 +79,17 @@ FIDO2 security keys are an unphishable standards-based passwordless authenticati
 Users can register and then select a FIDO2 security key at the sign-in interface as their main means of authentication. These FIDO2 security keys are typically USB devices, but could also use Bluetooth or NFC. With a hardware device that handles the authentication, the security of an account is increased as there's no password that could be exposed or guessed.
 
 FIDO2 security keys can be used to sign in to their Microsoft Entra ID or Microsoft Entra hybrid joined Windows 10 devices and get single-sign on to their cloud and on-premises resources. Users can also sign in to supported browsers. FIDO2 security keys are a great option for enterprises who are very security sensitive or have scenarios or employees who aren't willing or able to use their phone as a second factor.
+
+See the reference document here: [Support for FIDO2 authentication with Microsoft Entra ID](/entra/identity/authentication/fido2-compatibility). For developer best practices, see [Support FIDO2 auth in the applications they develop](/entra/identity-platform/support-fido2-authentication).
+
+> [!NOTE]
+> If you purchase and plan to use NFC-based security keys, you need a supported NFC reader for the security key. The NFC reader isn't an Azure requirement or limitation. Check with the vendor for your NFC-based security key for a list of supported NFC readers.
+
+If you're a vendor and want to get your device on this list of supported devices, check out our guidance on how to [become a Microsoft-compatible FIDO2 security key vendor](/entra/identity/authentication/concept-fido2-hardware-vendor).
+
+To get started with FIDO2 security keys, complete the following how-to:
+
+[Enable passwordless sign using FIDO2 security keys](/entra/identity/authentication/howto-authentication-passwordless-security-key)
 
 :::image type="content" source="../media/concept-web-sign-in-security-key-e14a87a7.png" alt-text="Screenshot showing a requirement to sign in with Windows Hello or a security key.":::
 
@@ -105,6 +116,10 @@ The following process is used when a user signs in with a FIDO2 security key:
 8. Microsoft Entra ID verifies the signed nonce using the FIDO2 public key.
 
 9. Microsoft Entra ID returns PRT to enable access to on-premises resources.
+
+## FIDO2 security key providers
+
+The following providers offer FIDO2 security keys of different form factors that are known to be compatible with the passwordless experience. We encourage you to evaluate the security properties of these keys by contacting the vendor and the [FIDO Alliance](https://fidoalliance.org/).
 
 ## Certificate-based authentication
 
@@ -151,13 +166,13 @@ The choice between these three passwordless options depends on your company's se
 
 Here are some factors for you to consider when choosing Microsoft passwordless technology:
 
-| **Windows Hello for Business** | **Passwordless sign-in with the Authenticator app**                                                                                                                                                                                                                              | **FIDO2 security keys**                                                                                                                                             |
-| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Pre-requisite                  | Windows 10, version 1809 or later<br>Microsoft Entra ID                                                                                                                                                                                                                          | Authenticator app<br>Phone (iOS and Android devices)                                                                                                                |
-| Mode                           | Platform                                                                                                                                                                                                                                                                         | Software                                                                                                                                                            |
-| Systems and devices            | PC with a built-in Trusted Platform Module (TPM)<br>PIN and biometrics recognition                                                                                                                                                                                               | PIN and biometrics recognition on phone                                                                                                                             |
-| User experience                | Sign in using a PIN or biometric recognition (facial, iris, or fingerprint) with Windows devices.<br>Windows Hello authentication is tied to the device; the user needs both the device and a sign-in component such as a PIN or biometric factor to access corporate resources. | Sign in using a mobile phone with fingerprint scan, facial or iris recognition, or PIN.<br>Users sign in to work or personal account from their PC or mobile phone. |
-| Enabled scenarios              | Password-less experience with Windows device.<br>Applicable for dedicated work PC with ability for single sign-on to device and applications.                                                                                                                                    | Password-less anywhere solution using mobile phone.<br>Applicable for accessing work or personal applications on the web from any device.                           |
+| **System Nexus**    | **Windows Hello for Business**                                                                                                                                                                                                                                                   | **Passwordless sign-in with the Authenticator app**                                                                                                                 | **FIDO2 security keys**                                                                                                                                                                                                                                   |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Pre-requisite       | Windows 10, version 1809 or later<br>Microsoft Entra ID                                                                                                                                                                                                                          | Authenticator app<br>Phone (iOS and Android devices)                                                                                                                | Windows 10, version 1903 or later<br>Microsoft Entra ID                                                                                                                                                                                                   |
+| Mode                | Platform                                                                                                                                                                                                                                                                         | Software                                                                                                                                                            | Hardware                                                                                                                                                                                                                                                  |
+| Systems and devices | PC with a built-in Trusted Platform Module (TPM)<br>PIN and biometrics recognition                                                                                                                                                                                               | PIN and biometrics recognition on phone                                                                                                                             | FIDO2 security devices that are Microsoft compatible                                                                                                                                                                                                      |
+| User experience     | Sign in using a PIN or biometric recognition (facial, iris, or fingerprint) with Windows devices.<br>Windows Hello authentication is tied to the device; the user needs both the device and a sign-in component such as a PIN or biometric factor to access corporate resources. | Sign in using a mobile phone with fingerprint scan, facial or iris recognition, or PIN.<br>Users sign in to work or personal account from their PC or mobile phone. | Sign in using FIDO2 security device (biometrics, PIN, and NFC)<br>User can access device based on organization controls and authenticate based on PIN, biometrics using devices such as USB security keys and NFC-enabled smartcards, keys, or wearables. |
+| Enabled scenarios   | Password-less experience with Windows device.<br>Applicable for dedicated work PC with ability for single sign-on to device and applications.                                                                                                                                    | Password-less anywhere solution using mobile phone.<br>Applicable for accessing work or personal applications on the web from any device.                           | Password-less experience for workers using biometrics, PIN, and NFC.<br>Applicable for shared PCs and where a mobile phone isn't a viable option (such as for help desk personnel, public kiosk, or hospital team)                                        |
 
 Use the following table to choose which method will support your requirements and users.
 

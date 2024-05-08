@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.quantum.explore-entanglement
+metadata:
+  title: Teleport a qubit using entanglement and the Quantum Development Kit
+  description: Teleport a qubit using entanglement and the Quantum Development Kit
+  ms.date: 04/25/2024
+  author: SoniaLopezBravo
+  ms.author: sonialopez
+  manager: tedhudek
+  ms.topic: module
+  ms.service: azure-quantum
+title: Teleport a qubit using entanglement and the Quantum Development Kit
+summary: Learn how to create entanglement with Q# and the Quantum Development Kit, and help Alice and Bob to teleport a qubit.
+abstract: |
+  By the end of this module, you're able to:
+  - Describe the concept of quantum entanglement.
+  - Understand the quantum teleportation protocol.
+  - Apply single-qubit and multi-qubit operations using Q#.
+  - Create entangled qubits using Q#.
+  
+  During this module, you will:
+  - Learn what entanglement is and how to describe it. 
+  - Create entanglement between two qubits using Q#.
+  - Review the quantum teleportation protocol.
+  - Implement the quantum teleportation protocol using Q#.
+
+prerequisites: |
+  - Basic understanding of quantum computing concepts.
+  - Advance knowledge of linear algebra and Dirac notation.
+  - The latest version of [Visual Studio Code](https://code.visualstudio.com/download) or open [VS Code on the Web](https://vscode.dev/).
+  - The latest version of the [Azure Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) extension.
+
+iconUrl: /training/achievements/quantum/explore-entanglement.svg
+ratingEnabled: true
+levels:
+- advanced
+roles:
+- developer
+products:
+- azure-quantum
+subjects:
+- cloud-computing
+units:
+- learn.quantum.explore-entanglement.introduction
+- learn.quantum.explore-entanglement.what-is-entanglement
+- learn.quantum.explore-entanglement.create-entanglement-qsharp
+- learn.quantum.explore-entanglement.what-is-teleportation
+- learn.quantum.explore-entanglement.create-teleportation-qsharp
+- learn.quantum.explore-entanglement.knowledge-check
+- learn.quantum.explore-entanglement.summary
+badge:
+  uid: learn.quantum.explore-entanglement.badge

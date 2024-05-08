@@ -4,16 +4,16 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Four multiple-choice questions
-  ms.date: 01/01/2022
+  ms.date: 04/23/2024
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: unit
 durationInMinutes: 4
-content: Choose the best response for each question. Then select Check your answers.
+content: Choose the best response for each question, then select **Check your answers**.
 quiz:
   title: ""
   questions:
-    - content: "What can be measured using the measure in MR component?"
+    - content: "What can we measure using the measure in MR component?"
       choices:
         - content: "Distance"
           isCorrect: false
@@ -24,14 +24,14 @@ quiz:
         - content: "Area"
           isCorrect: false
           explanation: Incorrect. The amount of space enclosed in a two-dimensional space.
-        - content: "All of the above"
+        - content: "All of the preceding"
           isCorrect: true
           explanation: Correct. Measure in MR measures distance, volume, and area.
     - content: "In the following options, which one best defines Object Scaling?"
       choices:
         - content: "Object scaling allows users to change the size of the models according to their needs using parameters like Object width, Object height, and Object depth."
           isCorrect: true
-          explanation: Correct. Alternatively, you can specify some or all of the dimensions - these dimensions are labeled as the Object width, Object height, and Object depth properties.
+          explanation: Correct. Alternatively, you can specify some or all of the dimensions. These dimensions are labeled as the Object width, Object height, and Object depth properties.
         - content: "Object scaling allows users to visualize 3D objects in their real world."
           isCorrect: false
           explanation: Incorrect. View in MR allows users to visualize the 3D object in their real world.
@@ -45,7 +45,7 @@ quiz:
           explanation: Incorrect. Measures space between two points.
         - content: "Freeform"
           isCorrect: true
-          explanation: Correct. Allows users to measure distance, area, and volume at once.
+          explanation: Correct. Freeform allows users to measure distance, area, and volume at once.
         - content: "Volume"
           isCorrect: false
           explanation: Incorrect. The amount of space enclosed in a three-dimensional space.
