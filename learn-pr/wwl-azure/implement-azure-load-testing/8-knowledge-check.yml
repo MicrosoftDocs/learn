@@ -19,10 +19,10 @@ quiz:
       explanation: "Correct. The test engine runs the Apache JMeter test script and can be scaled out for larger tests."
     - content: "To specify the list of URL endpoints to test."
       isCorrect: false
-      explanation: "Incorrect. The test engine doesn't specify URL endpoints, it runs the Apache JMeter test script."
+      explanation: "Incorrect. The test engine runs the Apache JMeter test script."
     - content: "To store the results of the load test."
       isCorrect: false
-      explanation: "Incorrect. The test engine doesn't store results, it runs the Apache JMeter test script."
+      explanation: "Incorrect. The test engine runs the Apache JMeter test script."
   - content: "What is the purpose of parameters in Azure Load Testing?"
     choices:
     - content: "To hard-code values in the JMeter script"
@@ -52,8 +52,8 @@ quiz:
       explanation: "Correct. Fail criteria in Azure Load Testing lets you define performance and quality expectations for your application under load."
     - content: "To ensure that the total number of requests per second doesn't exceed a threshold."
       isCorrect: false
-      explanation: "Incorrect. While this could be a part of the fail criteria, it's not the overall purpose. The purpose is to define performance and quality expectations for an application under load."
-    - content: "To automatically start a load test when the error rate surpasses a given threshold."
+      explanation: "Incorrect. While this criteria could be a part of the fail criteria, it's not the overall purpose. The purpose is to define performance and quality expectations for an application under load."
+    - content: "To trigger a load test to start when the error rate surpasses a given threshold."
       isCorrect: false
       explanation: "Incorrect. Fail criteria isn't used to start a load test, but rather to define performance and quality expectations for an application under load."
   - content: "What is the purpose of using secrets in Azure Load Testing?"

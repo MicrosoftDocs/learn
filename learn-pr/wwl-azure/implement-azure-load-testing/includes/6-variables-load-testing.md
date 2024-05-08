@@ -12,7 +12,7 @@ You can specify parameters in the load test configuration when you create a new 
 
 In this section, you learn how to pass secrets to your load test script in Azure Load Testing. For example, you might use a secret to pass the API key to a web service endpoint that you're load testing. Instead of storing the API key in configuration or hard-coding it in the script, you can save it in a secret store to tightly control access to the secret.
 
-Azure Load Testing enables you to store secrets in Azure Key Vault. Alternatively, when you run your load test in a CI/CD pipeline, you can also use the secret store that's associated with your CI/CD technology, such as Azure Pipelines or GitHub Actions.
+Azure Load Testing enables you to store secrets in Azure Key Vault. Alternatively, when you run your load test in a CI/CD pipeline, you can also use the secret store associated with your CI/CD technology, such as Azure Pipelines or GitHub Actions.
 
 To use secrets with Azure Load Testing, you perform the following steps:
 
@@ -31,7 +31,7 @@ To use secrets in the CI/CD secret store and pass them to your load test in CI/C
 
     In GitHub, you can use [GitHub repository secrets](https://docs.github.com/actions/security-guides/encrypted-secrets).
 
-    :::image type="content" source="../media/how-to-parameterize-load-tests/github-new-secret.png" alt-text="Screenshot that shows how to add a GitHub repository secret.":::
+    :::image type="content" source="../media/github-new-secret.png" alt-text="Screenshot that shows how to add a GitHub repository secret.":::
 
 2. Pass the secret as an input parameter to the Load Testing task/action in the CI/CD workflow.
 
@@ -56,13 +56,13 @@ To use secrets in the CI/CD secret store and pass them to your load test in CI/C
     > [!IMPORTANT]
     > The name of the secret input parameter needs to match the name that's used in the Apache JMeter script.
 
-You've now specified a secret in the CI/CD secret store and passed a reference to Azure Load Testing. You can now use the secret in the Apache JMeter script.
+You just specified a secret in the CI/CD secret store and passed a reference to Azure Load Testing. You can now use the secret in the Apache JMeter script.
 
 ### Use secrets in Apache JMeter
 
 Next, you update the Apache JMeter script to use the secret that you specified earlier.
 
-You first create a user-defined variable that retrieves the secret value. Then, you can use this variable in your test (for example, to pass an API token in an HTTP request header).
+You first create a user-defined variable that retrieves the secret value. Then, you can use this variable in your test. For example, to pass an API token in an HTTP request header.
 
 1. Create a user-defined variable in your JMX file, and assign the secret value to it by using the `GetSecret` custom function.
 
@@ -106,7 +106,7 @@ You first create a user-defined variable that retrieves the secret value. Then, 
 
 In this section, you use environment variables to pass parameters to your load test.
 
-1. Update the Apache JMeter script to use the environment variable (for example, to configure the application endpoint hostname).
+1. Update the Apache JMeter script to use the environment variable. For example, to configure the application endpoint hostname.
 
 1. Configure the load test and pass the environment variable to the test script.
 
@@ -114,7 +114,7 @@ In this section, you use environment variables to pass parameters to your load t
 
 In this section, you update the Apache JMeter script to use environment variables to control the script behavior.
 
-You first define a user-defined variable that reads the environment variable, and then you can use this variable in the test execution (for example, to update the HTTP domain).
+You first define a user-defined variable that reads the environment variable, and then you can use this variable in the test execution. For example, to update the HTTP domain.
 
 1. Create a user-defined variable in your JMX file, and assign the environment variable's value to it by using the `System.getenv` function.
 
