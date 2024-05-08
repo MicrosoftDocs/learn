@@ -2,7 +2,7 @@
 uid: learn.accessibility-fundamentals
 metadata:
   title: Accessibility fundamentals
-  description: At Microsoft, we understand the power of technology, and that’s why we continue to innovate, create, and design in a way that gives everyone the ability to achieve more. Trainings like this learning path, which covers accessibility fundamentals, are an important and necessary part of Microsoft’s accessibility strategy to support customers of all abilities. Don’t forget to share your awards on social media after completing each module!
+  description: At Microsoft, we understand the power of technology, and that’s why we continue to innovate, create, and design in a way that gives everyone the ability to achieve more. Training like this learning path, which covers accessibility fundamentals, are an important and necessary part of Microsoft’s accessibility strategy to support customers of all abilities. Don’t forget to share your awards on social media after completing each module!
   brand: m365
   ms.date: 05/12/2019
   author: erzelman
@@ -22,7 +22,6 @@ products:
 subjects:
 - accessibility
 modules:
-- learn.cela-disability-intro
 - learn.cela-accessibility-features
 - learn.accessible-content-m365
 - learn.digital-accessibility
