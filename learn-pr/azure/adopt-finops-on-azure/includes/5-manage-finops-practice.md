@@ -1,6 +1,6 @@
 By implementing effective FinOps management strategies, organizations can fully unlock the potential of their cloud investments and attain greater success in the cloud. To achieve this goal, organizations should apply a range of capabilities, including FinOps practice operations, FinOps tooling and services, FinOps assessment, onboarding workloads, FinOps education and enablement, Invoicing and chargeback, Cloud policy and governance, and Intersecting disciplines.
 
-![Video placeholder: Overview MS solutions the capabilities in this domain.](../media/5-video-placeholder-small.png)
+<!-- Video placeholder: Overview MS solutions the capabilities in this domain. -->
 
 ## FinOps practice operations
 
@@ -45,8 +45,6 @@ Coordinating activities between an organization's Core FinOps Personas and other
 Developing criteria and methodology to capture proof-of-value for effectively selecting FinOps tools and services that align to the Framework Capabilities to empower the FinOps practice.
 
 #### Get started:
-
-- [FinOps Toolkit](https://microsoft.github.io/finops-toolkit/)
 
 <iframe title="FinOps on Azure Interactive Guides (approximately 1 hour, 15 minutes)." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure" width="800" height="500"></iframe>
 
