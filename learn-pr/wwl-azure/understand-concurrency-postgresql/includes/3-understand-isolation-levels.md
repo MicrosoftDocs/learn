@@ -12,7 +12,7 @@ For example, a transaction occurs on a savings account that would take the balan
 
 A non-repeatable read occurs if a transaction: reads data, another transaction updates the data, and the initial transaction reads the data again and sees the new updates.
 
-For example, Connection A starts a transaction and reads the cost per unit and number of units for an order, which are a cost of \$10 and number of units of 3. Connection B then starts another transaction and updates the same order to set the cost per unit to \$12. In the same transaction as the original query, Connection A calculates the total cost for the order. If non-repeatable reads are allowed Connection A returns cost per unit of \$10, number of units of 3, and total cost of \$36, which obviously doesn't make sense.
+For example, Connection A starts a transaction and reads the cost per unit and number of units for an order, which are a cost of 10 and number of units of 3. Connection B then starts another transaction and updates the same order to set the cost per unit to 12. In the same transaction as the original query, Connection A calculates the total cost for the order. If non-repeatable reads are allowed Connection A returns cost per unit of 10, number of units of 3, and total cost of 36, which obviously doesn't make sense.
 
 ### Phantom reads
 
