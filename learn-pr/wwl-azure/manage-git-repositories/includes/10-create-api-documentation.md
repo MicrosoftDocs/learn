@@ -1,4 +1,4 @@
-Documenting the API of a source code repository is essential for providing clarity, accessibility, and ease of use to developers maintaining and consuming the API. Comprehensive documentation serves as a guide for understanding the functionality, inputs, outputs, and usage of the API endpoints. When documenting the API, you should select the most suitable presentation format (such as, OpenAPI specification or Markdown), include examples and usage scenarios, keep it up-to-date with code changes, and solicit feedback from API consumers to continually improve its quality.<br>While the general approach to documenting API is platform-agnostic, there are some differences in its implementation between Azure DevOps and GitHub.
+Documenting the API of a source code repository is essential for providing clarity, accessibility, and ease of use to developers maintaining and consuming the API. Comprehensive documentation serves as a guide for understanding the functionality, inputs, outputs, and usage of the API endpoints. When documenting the API, you should select the most suitable presentation format (such as OpenAPI specification or Markdown), including examples and usage scenarios, keep it up-to-date with code changes, and solicit feedback from API consumers to continually improve its quality.<br>While the general approach to documenting API is platform-agnostic, there are some differences in its implementation between Azure DevOps and GitHub.
 
 ## Documenting API in Azure DevOps
 
@@ -8,13 +8,13 @@ You should publish the API documentation to a central location accessible to you
 
 Alternatively, you can use code annotations or decorators directly within your code to add metadata that describes its API endpoints. Tools like Swagger Codegen or Springfox are able to process these annotations and generate the OpenAPI specification files.
 
-Set up automated processes within your Azure DevOps pipelines to generate API documentation automatically whenever there's a change to the codebase. This ensures that your documentation stays up-to-date and reflects the latest changes in your APIs.
+Set up automated processes within your Azure Pipelines to generate API documentation automatically whenever there's a change to the codebase. This ensures that your documentation stays up-to-date and reflects the latest changes in your APIs.
 
 ## Documenting API in Github
 
 When using GitHub, consider generating API documentation by leveraging tools that are part of the GitHub ecosystem.
 
-Start by documenting your API endpoints, operations, parameters, responses, and any other relevant information. Consider creating that documentation in the Markdown format to account for its broad support and ease of use. Define a consistent structure of individual documents, dividing each into such sections that describe authentication, endpoints, request parameters, response examples, etc.
+Start by documenting your API endpoints, operations, parameters, responses, and any other relevant information. Consider creating that documentation in the Markdown format to account for its broad support and ease of use. Define a consistent structure of individual documents, dividing each into sections that describe authentication, endpoints, request parameters, response examples, etc.
 
 As with Azure DevOps, you can use documentation generators or static site generators to streamline the process of generating API documentation from Markdown files. Popular choices include Jekyll, MkDocs, Docusaurus, and Hugo. Configure the generator to parse Markdown files and generate static HTML pages. You can customize the layout, theme, and styling to match your project's branding and preferences.
 
