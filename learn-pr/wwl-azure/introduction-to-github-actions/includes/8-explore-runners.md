@@ -1,41 +1,66 @@
-When you execute jobs, the steps execute on a Runner.
+GitHub runners are compute resources that execute GitHub Actions workflows. Each runner can run a single job at a time. They allow developers to perform build, test, and deployment tasks directly within from GitHub repositories. There are two main types of GitHub runners:
 
-The steps can be the execution of a shell script or the execution of a predefined Action.
+ -  GitHub-hosted runners are virtualized or containerized compute resources provided and managed by GitHub.
+ -  Self-hosted runners are physical, virtualized, or containerized compute resources that GitHub users and organizations provision and manage themselves.
 
-GitHub provides several hosted runners to avoid you needing to spin up your infrastructure to run actions.
+Each type has some unique characteristics, features a number of distinct capabilities, and warrants several different considerations.
 
-Now, the maximum duration of a job is 6 hours, and for a workflow is 72 hours.
+It is important to note that GitHub strongly recommends against using self-hosted runners in public repos. Doing so introduces a significant security risk, since it potentially allows anyone to run code within the organization's private environment.
 
-For JavaScript code, you have implementations of node.js on:
+## GitHub-hosted runners
 
- -  Windows
- -  macOS
- -  Linux
+GitHub-hosted runners offer a convenient solution for executing workflows within GitHub Actions, eliminating the need to administer the underlying hardware and software components. They are designed to scale automatically based on demand, ensuring optimal performance during peak usage periods. GitHub provides several pre-configured environments for GitHub-hosted runners, covering different software configurations and operating systems, including Ubuntu Linux, Microsoft Windows, and macOS.
 
-If you need to use other languages, a Docker container can be used. Now, the Docker container support is only Linux-based.
+GitHub-hosted runners include the operating system's default built-in tools. For example, Ubuntu and macOS runners include grep, find, and which. To identify all other tools preinstalled on runners, users can review the software bill of materials (SBOM) for each build of the Windows and Ubuntu runner images. Alternatively, users can review the Runner Image subsection of the Set up job section in workflow logs. The link following the Included Software entry describes all preinstalled tools on the runner that ran the workflow. It is also possible to install additional software on GitHub-hosted runners by creating a job that installs the packages as part of the existing workflow.
 
-These options allow you to write in whatever language you prefer.
+GitHub-hosted runners run on GitHub's cloud infrastructure, leveraging virtual machines or containers to execute workflows. Each workflow execution is isolated within its own environment, ensuring security and reproducibility. GitHub-hosted runners seamlessly integrate with GitHub Actions, enabling users to reference them directly within workflows hosted in GitHub repositories.
 
-JavaScript actions will be faster (no container needs to be used) and more versatile runtime.
+There are some limits on GitHub Actions usage when using GitHub-hosted runners. In particular, each job in a workflow has the maximum of 6 hours of execution time. If a job reaches this limit, the job is terminated and fails to complete. Each workflow run is limited to 35 days. If a workflow run reaches this limit, its run gets canceled. This period includes execution duration, and time spent on waiting and approval.
 
-The GitHub UI is also better for working with JavaScript actions.
+### Prerequisites
+
+Before implementing GitHub-hosted runners, users must have a GitHub repository where they can define workflows using GitHub Actions. Runners are available to all GitHub users with access to GitHub Actions.
+
+### Implementation
+
+Unlike self-hosted runners, GitHub-hosted ones are provisioned automatically as part of an individual workflow execution. Users define workflows as YAML-formatted files stored in the .github/workflows directory in GitHub repositories. Within the workflow configuration, users specify the desired runner environment, including the operating system and software dependencies. Runners with matching specifications are set up on demand whenever the workflow is triggered, with one runner per job. Triggers can be either manual or automatic, based on such events as code pushes, pull requests, or repository dispatch events.<br>GitHub-hosted runners authenticate with GitHub by using tokens or credentials provided by GitHub Actions. They rely on built-in connectivity to communicate with the GitHub platform and to download workflow artifacts.
+
+### Maintenance
+
+GitHub manages updates and maintenance of GitHub-hosted runners, ensuring that they remain up-to-date with the latest software versions and security patches. The software tools included in the runners are updated weekly. Runner activities are monitoring and logged, facilitating tracking workflow executions and troubleshooting.
+
+### Licensing and Cost
+
+GitHub-hosted runners are included in the pricing for GitHub Actions, with usage-based billing for workflow minutes beyond the free tier. Users benefit from the automated and cost-efficient scaling, as GitHub automatically provisions and deallocates runners based on demand.
 
 ## Self-hosted runners
 
-If you need different configurations to the ones provided, you can create a self-hosted runner.
+Compared to GitHub-hosted runners, self-hosted ones provide greater control and customization options, with execution environments capable of accommodating a wider range of requirements. They can be deployed on-premises or in the cloud, depending on such criteria as network connectivity, cost, and resource availability.
 
-GitHub has published the source code for self-hosted runners as open-source, and you can find it here: [https://github.com/actions/runner](https://github.com/actions/runner).
+Self-hosted runners are provisioned and managed by users, giving them full control over the execution environment. They are fully customizable, including hardware specifications, software configurations, and network settings. They also facilitate integration with existing infrastructure and tooling, minimizing the possibility of compatibility and interoperability issues.
 
-It allows you to customize the runner completely. However, you then need to maintain (patch, upgrade) the runner system.
+Unlike with GitHub-hosted runners, there are no limits on the time it takes to complete individual job execution and workflow runs.
 
-Self-hosted runners can be added at different levels within an enterprise:
+### Prerequisites
 
- -  Repository-level (single repository).
- -  Organizational-level (multiple repositories in an organization).
- -  Enterprise-level (multiple organizations across an enterprise).
+Users must set up and configure self-hosted runners on their chosen infrastructure, including installing the runner software and any additional software dependencies. The source code for the self-hosted runners is available as an open-source project on GitHub at [https://github.com/actions/runner](https://github.com/actions/runner). Each self-hosted runner acts as an agent that communicates with GitHub Actions to execute workflows.
 
-### **GitHub strongly recommends that you don't use self-hosted runners in public repos.**
+Self-hosted runners require outbound network connectivity, authentication credentials, and authorization to access the GitHub platform and download workflow artifacts. Depending on the location of the runners, it might be necessary to configure firewall rules to satisfy these requirements.
 
-Doing it would be a significant security risk, as you would allow someone (potentially) to run code on your runner within your network.
+### Implementation
 
-For more information on self-hosted runners, see: [About self-hosted runners](https://docs.github.com/actions/hosting-your-own-runners/about-self-hosted-runners).
+As with GitHub-hosted runners, the implementation involves defining YAML-formatted workflows and storing them the .github/workflows directory in GitHub repositories. However, in order for workflows to use self-hosted runners, users need to register them first, providing the required authentication tokens or credentials. As part of the registration, users specify such characteristics as the runner name, labels, and execution environment parameters.
+
+The registration can take place at different levels within an enterprise:
+
+ -  Repository-level (single repository)
+ -  Organizational-level (multiple repositories in an organization)
+ -  Enterprise-level (multiple organizations across an enterprise)
+
+### Maintenance
+
+Users are responsible for updating and maintaining self-hosted runners, including installing software updates and security patches. Maintenance also involves monitoring runner health and performance, as well as troubleshooting any issues that arise throughout the runner runtime.
+
+### Licensing and cost
+
+Self-hosted runners do not incur additional licensing charges beyond the pricing for GitHub Actions and any associated infrastructure costs, including compute, storage, and network. Optimizing resource allocation and utilization become the user's responsibility.<br>
