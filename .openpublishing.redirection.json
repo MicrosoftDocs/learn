@@ -3666,7 +3666,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/cela-accessibility/intro-accessibility-disability/00-windows-10-accessibility.yml" ,
+      "source_path": "learn-pr/cela-accessibility/intro-accessibility-disability/00-what-is-accessibility.yml" ,
       "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
       "redirect_document_id": false
     },
@@ -3691,7 +3691,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/learn-pr/cela-accessibility/intro-accessibility-disability/index.yml" ,
+      "source_path": "learn-pr/cela-accessibility/intro-accessibility-disability/index.yml" ,
       "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
       "redirect_document_id": false
     },
