@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/08/2023
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: anrudduc
   ms.topic: unit
@@ -16,7 +16,7 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is a Microsoft Fabric lakehouse?"
+  - content: "What is a Microsoft Fabric Lakehouse?"
     choices:
     - content: "A relational database based on the Microsoft SQL Server database engine."
       isCorrect: false

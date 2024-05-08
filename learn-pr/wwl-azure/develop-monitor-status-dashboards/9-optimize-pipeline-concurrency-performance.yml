@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-monitor-status-dashboards.optimize-pipeline-concurrency-performance
+title: Optimize pipeline concurrency for performance and cost
+metadata:
+  title: Optimize pipeline concurrency for performance and cost
+  description: "Optimize pipeline concurrency for performance and cost"
+  ms.date: 05/08/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-optimize-pipeline-concurrency-performance.md)]
