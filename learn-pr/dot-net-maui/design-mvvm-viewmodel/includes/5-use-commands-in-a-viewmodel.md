@@ -39,7 +39,7 @@ public interface ICommand
 }
 ```
 
-## Use Command
+## Use the Command class
 
 This command pattern lets you maintain clean separation of UI behavior from UI implementation. But it can complicate your code if you need to create a separate class to implement each event handler.
 
