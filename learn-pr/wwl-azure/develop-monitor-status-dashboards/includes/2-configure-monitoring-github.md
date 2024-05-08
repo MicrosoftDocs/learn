@@ -8,7 +8,7 @@ Current charts provide the ability to visualize project items. The default Statu
 
 ## Historical charts
 
-Historical charts provide the ability to track and visualize changes to project items over time. The default Burn up chart visualizes the progress of project issues over time, showing how much work is completed and how much is left. You can use this chart to view progress, spot trends, and identify bottlenecks to help move the project forward. With custom charts, you can target items with open issues and pull requests, items with issues that were closed as completed or merged via pull requests, as well as items with issues that were closed as not planned. Note that Insights does not track items you have archived or deleted.
+Historical charts provide the ability to track and visualize changes to project items over time. The default Burn up chart visualizes the progress of project issues over time, showing how much work is completed and how much is left. You can use this chart to view progress, spot trends, and identify bottlenecks to help move the project forward. With custom charts, you can target items with open issues and pull requests, items with issues that were closed as completed or merged via pull requests, as well as items with issues that were closed as not planned. Note that Insights doesn't track items you have archived or deleted.
 
 ## Creating charts
 
