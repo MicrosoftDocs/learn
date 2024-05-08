@@ -31,7 +31,7 @@ To use secrets in the CI/CD secret store and pass them to your load test in CI/C
 
     In GitHub, you can use [GitHub repository secrets](https://docs.github.com/actions/security-guides/encrypted-secrets).
 
-    :::image type="content" source="media/how-to-parameterize-load-tests/github-new-secret.png" alt-text="Screenshot that shows how to add a GitHub repository secret.":::
+    :::image type="content" source="../media/how-to-parameterize-load-tests/github-new-secret.png" alt-text="Screenshot that shows how to add a GitHub repository secret.":::
 
 2. Pass the secret as an input parameter to the Load Testing task/action in the CI/CD workflow.
 
@@ -70,7 +70,7 @@ You first create a user-defined variable that retrieves the secret value. Then, 
 
     You can create the user-defined variable by using the Apache JMeter IDE, as shown in the following image:
 
-    :::image type="content" source="media/user-defined-variables.png" alt-text="Screenshot that shows how to add user-defined variables to your Apache JMeter script.":::
+    :::image type="content" source="../media/user-defined-variables.png" alt-text="Screenshot that shows how to add user-defined variables to your Apache JMeter script.":::
 
     Alternatively, you can directly edit the JMX file, as shown in this example code snippet:
 
@@ -122,7 +122,7 @@ You first define a user-defined variable that reads the environment variable, an
 
     You can create a user-defined variable by using the Apache JMeter IDE, as shown in the following image:
 
-    :::image type="content" source="media/user-defined-variables-jmeter.png" alt-text="Screenshot that shows how to add user-defined variables for environment variables to your JMeter script.":::
+    :::image type="content" source="../media/user-defined-variables-jmeter.png" alt-text="Screenshot that shows how to add user-defined variables for environment variables to your JMeter script.":::
 
     Alternatively, you can directly edit the JMX file, as shown in this example code snippet:
 
