@@ -12,9 +12,6 @@ Use FinOps guidance to assess your organization's capability gaps. Get recommend
 - [FinOps interactive guides](https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure)<br>
 Gain hands-on experience with Microsoft solutions that enable various FinOps capabilities and best practices.
 
-- [FinOps toolkit](https://microsoft.github.io/finops-toolkit/)<br>
-The FinOps toolkit is a collection of customizable scripts and Azure Resource Manager templates used to deploy and manage FinOps best practices.
-
 - [FinOps e-book](https://info.microsoft.com/ww-landing-finops-with-azure-bringing-finops-to-life-through-organizational-and-cultural-alignment.html)<br>
 This e-book guides you through the FinOps principles to highlight Microsoft solutions that can support your cloud journey.
 
