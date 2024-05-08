@@ -82,3 +82,4 @@ For **INSERT**, each returned row is inserted into the specified table. This tas
 For **UPDATE**, each computed row includes all the updated column values, plus the row ID of the target row. The data is sent to a ModifyTable node, which creates an updated row and marks the old row as deleted.
 
 For **DELETE**, the only column that is returned by the plan is the row ID. The ModifyTable node uses the row ID to mark the row as deleted.
+
