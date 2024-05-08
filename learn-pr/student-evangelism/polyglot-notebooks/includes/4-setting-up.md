@@ -1,7 +1,9 @@
 In this exercise, you learn how to set up your environment and run your first notebook created via the Polyglot Notebook extension.
 
 ## Set up environment 
+
 There are two things you need to be able to use Polyglot Notebooks, Visual Studio Code, .NET runtime and a Visual Studio Code extension.
+
 - Install Visual Studio Code via [this link.](https://code.visualstudio.com/)
 - Install .NET runtime via [this link.](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 - Install the "Polyglot Notebook" extension in Visual Studio Code. You can also select and install the extension via [this link](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode).
@@ -11,6 +13,7 @@ There are two things you need to be able to use Polyglot Notebooks, Visual Studi
 Congratulations! You successfully installed all the tools you need to begin building with Polyglot Notebooks.
 
 ## Create and run a Notebook
+
 Next, let’s create our first Notebook and let's learn to work with both text and code. 
 
 Via the command palette, type Polyglot and select the command "Polyglot Notebook: Create new blank notebook".
@@ -35,6 +38,7 @@ Console.WriteLine("Hello from Polyglot");
 You should see the text "Hello from Polyglot" below the cell as indicated by the image.
 
 ## Create markdown cell
+
 So far, you created a Notebook, wrote some code, and ran it successfully. Notebooks are great as it allows for the blending of both text and code, so let’s create markdown cell next to add some text.
 
 Hover over the code cell until the commands +Markdown and +Code appears and select +Markdown like so: 
@@ -58,8 +62,8 @@ To confirm the changes, select the 'check' icon on the top right of the cell lik
 
 ![A screenshot of the check icon at the top right corner of the cell](../media/image10.png)
 
-Your Notebook should now look like the one in the image, consisting of a markdown cell on top and code element underneath: 
+Your Notebook should now look like the one in the image, consisting of a markdown cell on top and code element underneath:
 
 ![A screenshot showing the result of running both lines of code](../media/image11.png)
 
-Congrats, you managed to successfully install Polyglot Notebooks, created a Notebook, authored text and code cells and even ran code. In future sections, we explore more advanced features. 
+Congrats, you managed to successfully install Polyglot Notebooks, created a Notebook, authored text and code cells and even ran code. In future sections, we explore more advanced features.

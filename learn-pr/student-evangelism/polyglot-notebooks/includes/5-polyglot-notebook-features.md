@@ -31,7 +31,8 @@ console.log(name)
 
 - **Display command**. To further improve the output, you can use a display helper. When you call the `display`function, it provides a more appealing output. Other benefits of using display helper include:
 
-    1. It can be called repeatedly. You can, for example, call display using either of the code below, and each output is shown:
+    1. It can be called repeatedly. You can, for example, call `Display()` using either of the following code snippets, and each output is shown:
+
     ```csharp
     (1+1).Display();
     name.Display();
@@ -45,21 +46,23 @@ console.log(name)
     displayRef.Update("different value");
     ```
 
-This code cell shows "initial value" and 10 seconds later it shows "different value". 
+    This code cell shows "initial value" and 10 seconds later it shows "different value".
 
 ## Magic commands
 
-Magic commands are simple commands that do something special. It could be telling time, connecting to data source, or sharing values between cells and kernels.  A magic command can take parameters. You recognize it's a magic command, if the code begins with #!, followed by the command as shown:
+Magic commands are simple commands that do something special. It could be telling time, connecting to data source, or sharing values between cells and kernels.  A magic command can take parameters. You recognize it's a magic command, if the code begins with `#!`, followed by the command as shown:
 
-`#!mycommand `
+```javascript
+#!mycommand 
+```
 
-In following example, we would use the set command. The set command enables us use a variable in between kernels. Here’s how to use parameters with the set command:
+In following example, we would use the set command. The set command enables us to use a variable in between kernels. Here’s how to use parameters with the set command:
 
 ```javascript
 #!set --value @csharp:name --name name
 ```
 
-This command enables us use the variable (name) in our C# kernel wfor an operations in our JavaScript kernel.
+This command enables us to use the variable `name` in our C# kernel for operations in our JavaScript kernel.
 
 ## Sharing values between code cells
 
@@ -120,9 +123,9 @@ To make your code flexible, you might want to rely on user input. You could be a
 
 In the code, the user is prompted for input with the text "Please enter a URL" and the result is stored in the `url` variable.
 
-## Direct data entry with #!value
+## Direct data entry with `#!value`
 
-Another handy functionality is being able to store values of different types. Imagine you have a few lines of JSON or XML or whatever you have, and you just want to store the value as is. Here’s a great prefix you can use for the call - #!value. Here’s an example of it being used: 
+Another handy functionality is being able to store values of different types. Imagine you have a few lines of JSON or XML or whatever you have, and you just want to store the value as is. Here’s a great prefix you can use for the call `#!value`. Here’s an example of it being used: 
 
 ```javascript
 #!value --name productsJSON

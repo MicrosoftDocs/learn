@@ -1,11 +1,13 @@
 Polyglot Notebooks is installed as an extension for Visual Studio Code. The Polyglot Notebook extension is powered by .NET Interactive. .NET Interactive is a cutting edge and innovative engine and API built on .NET for running and editing code interactively. 
 
-To get started, you need to install the [latest .NET SDK](https://dotnet.microsoft.com/en-us/download/dotnet). You also need to install [Polyglot Notebooks](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode) as an extension on Visual Studio Code. From there, you can create and run Notebooks and do much more. 
+To get started, you need to install the [latest .NET SDK](https://dotnet.microsoft.com/en-us/download/dotnet). You also need to install [Polyglot Notebooks](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode) as an extension on Visual Studio Code. From there, you can create and run Notebooks and do much more.
 
 ## Creating a Notebook
+
 Now, you’re done installing Polyglot Notebook. Let’s talk a little about creating a notebook next.
 
 When you install the Polyglot extension, it installs a set of commands available through the Command Palette (Ctrl+Shift+P). Each command enables you to carry out a separate activity. Here are some of the commands installed:
+
 - *Polyglot Notebook: Open Notebook*. This command opens a notebook so you can work with it. 
 - *Polyglot Notebook: Create new blank notebook*. This command creates a new notebook for you and allows you to select your preferred file format and programming language. 
 - *Polyglot Notebook: Stop all notebook kernels*. This command makes it impossible for you to switch kernels between cells.

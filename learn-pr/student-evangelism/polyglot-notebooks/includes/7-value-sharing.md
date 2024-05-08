@@ -17,7 +17,7 @@ foreach(var product in products)
 - Create another cell in the same way using +Code button but this time select JavaScript as kernel.
 - Select "variables" menu option on top. 
 - Select the share icon in the Actions column 
-- Next, select the "javaScript – JavaScript" option.
+- Next, select the "JavaScript – JavaScript" option.
 
 ![A screenshot showing the different kernels in Polyglot Notebook.](../media/image14.png)
 
@@ -35,8 +35,10 @@ Add the following code to your JavaScript cell:
 console.log(products); // it should print Saab, Volvo, Fiat 
 ```
 
-## Working with value storage  
+## Working with value storage
+
 Let’s try another case of variable sharing. This time, we work with JSON data.  
+
 - Create a new code cell by select +Code and select **value – Raw Value Storage** for kernel.
 
 - In the new cell, paste the following JSON:
@@ -57,16 +59,19 @@ Let’s try another case of variable sharing. This time, we work with JSON data.
         }
     ]
     ```
-- Running the cell, **data** should show up in the variables table. So open that table if you haven’t already.
+
+- Run the cell and **data** should show up in the variables table. So open that table if you haven’t already.
 
 - Select the share icon to share the **data** variable.
 
 - Then select **csharp** as target cell. Your cell should now have the following code:
+
     ```
     #!set --value @value:data --name data
     ```
 
-- Next, paste the following code: 
+- Next, paste the following code:
+
     ```csharp
     // import JSON in C#
     using System.Text.Json;
