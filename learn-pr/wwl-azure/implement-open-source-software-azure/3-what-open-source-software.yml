@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-open-source-software-azure.what-open-source-software
-title: What is open-source software
+title: What is open-source software?
 metadata:
-  title: What is open-source software
-  description: "What is open-source software"
-  ms.date: 05/27/2022
+  title: What is open-source software?
+  description: "What is open-source software?"
+  ms.date: 05/07/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 1
+  ms.custom:
+  - N/A
+durationInMinutes: 3
 content: |
   [!include[](includes/3-what-open-source-software.md)]
