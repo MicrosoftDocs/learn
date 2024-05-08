@@ -4,5 +4,6 @@ We were also able to successfully install the Polyglot Notebook extension on Vis
 
 ### Learn more
 
-**TODO**: 
-For more information
+- [Polyglot Notebooks repository](https://github.com/dotnet/interactive)
+- [Polyglot Notebook on Visual Studio Code](https://code.visualstudio.com/docs/languages/polyglot)
+- [Polyglot Notebooks Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode)
