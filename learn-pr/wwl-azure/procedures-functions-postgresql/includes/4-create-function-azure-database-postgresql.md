@@ -91,3 +91,4 @@ substr('alphabet', 3, 2) → ph
 
 > [!NOTE]
 > If you are familiar with functions, you will have noticed that the first version uses key words rather than commas to separate arguments. PostgreSQL provides both versions of these functions.
+
