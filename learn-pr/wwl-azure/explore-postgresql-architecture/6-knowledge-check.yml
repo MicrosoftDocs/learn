@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/23/2024
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
@@ -16,17 +16,6 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You work for a small start-up company. The company is developing a system that it hopes will be used by many large corporations across the world. They have yet to win their first customer. Which Azure Database for PostgreSQL server should they select?"
-    choices:
-    - content: "Azure Arc-enabled PostgreSQL Hyperscale."
-      isCorrect: false
-      explanation: "That's incorrect. Azure Arc-enabled PostgreSQL Hyperscale is not an Azure database."
-    - content: "Flexible server."
-      isCorrect: false
-      explanation: "That's incorrect. Flexible server offers more options to configure the server and can be scaled up. However, this start-up may require more scaling options than flexible server can provide."
-    - content: "Azure Cosmos DB for PostgreSQL."
-      isCorrect: true
-      explanation: "That's correct. Azure Cosmos DB for PostgreSQL will allow the start-up company to first use a single node and then scale out as they win customers and grow."
   - content: "Which of the following best describes the architecture of PostgreSQL?"
     choices:
     - content: "Client/server."
@@ -38,15 +27,15 @@ quiz:
     - content: "Relational."
       isCorrect: false
       explanation: "That's incorrect. PostgreSQL doesn't have a relational architecture."
-  - content: "You run a small number of very complex queries on your PostgreSQL database. Which server parameter should you consider tuning to improve performance?"
+  - content: "You run a few complex queries on your PostgreSQL database. Which server parameter should you consider tuning to improve performance?"
     choices:
-    - content: "work_mem"
+    - content: "**work_mem**"
       isCorrect: true
       explanation: "That's correct. This parameter specifies the amount of memory that can be used by internal sort operations and hash tables. Complex queries may benefit from increasing the available memory."
-    - content: "max_connection"
+    - content: "**max_connection**"
       isCorrect: false
       explanation: "That's incorrect. Max_connections specifies the maximum number of query connections at any one time, but won't help processing complex queries."
-    - content: "Shared_buffers"
+    - content: "**Shared_buffers**"
       isCorrect: false
       explanation: "That's incorrect. shared_buffers defines the shared memory used by the server. Increasing the amount of memory available to the server will improve the performance of reading and writing to the database, but not returning the results from complex queries."
   - content: "Which server process is responsible for initiating and shutting down the PostgreSQL processes?"
