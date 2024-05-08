@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-azure-database-postgresql-flexible-server.compare-online-offline-migration
+title: Compare Online and Offline Migrations
+metadata:
+  title: Compare Online and Offline Migrations
+  description: "Compare Online and Offline Migrations."
+  ms.date: 05/08/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-compare-online-offline-migration.md)]
