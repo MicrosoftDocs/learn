@@ -2,22 +2,21 @@
 uid: learn.wwl.extract-data-from-forms-document-intelligence
 metadata:
   title: Develop solutions with Azure AI Document Intelligence
-  description: Develop solutions with Azure AI Document Intelligence
+  description: Develop solutions with Azure AI Document Intelligence.
   ms.date: 10/10/2022
   author: wwlpublish
   ms.author: berryivor
   ms.topic: learning-path
-  ms.service: azure
 title: Develop solutions with Azure AI Document Intelligence
 prerequisites: |
   - None
 summary: |
-  In this learning path, you'll see how Azure AI Document Intelligence solutions can enable you to capture data from typed or hand-written forms. You'll also learn how to build a solution for your custom form types and integrate that solution into an Azure Cognitive Search pipeline.
+  In this learning path, discover how Azure AI Document Intelligence solutions can enable you to capture data from typed or hand-written forms. Learn how to build a solution for your custom form types and integrate that solution into an Azure Cognitive Search pipeline.
   You'll learn how to:
   * Design a solution that analyzes your business forms by using Azure AI Document Intelligence.
   * Create a solution that analyzes common documents by using Document Intelligence.
   * Create a solution that analyses different custom form types by using Document Intelligence.
-  * Include an Azure AI Document Intelligence service as a custom skill in an Azure Cognitive Search pipeline.
+  * Include an Azure AI Document Intelligence service as a custom skill in an Azure AI Search pipeline.
 iconUrl: /training/achievements/extract-data-from-forms-use-form-recognizer.svg
 levels:
 - intermediate

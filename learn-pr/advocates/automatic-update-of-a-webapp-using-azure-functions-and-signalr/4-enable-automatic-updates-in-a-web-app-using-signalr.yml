@@ -3,7 +3,7 @@ uid: learn.advocates.azure-functions-and-signalr.4-enable-automatic-updates-in-a
 metadata:
   title: Enable automatic updates in a web application using SignalR Service
   description: Learn how a push-based architecture can make a better performing application.
-  ms.date: 10/31/2023
+  ms.date: 03/27/2024
   author: craigshoemaker
   ms.author: cshoe
   ms.topic: unit

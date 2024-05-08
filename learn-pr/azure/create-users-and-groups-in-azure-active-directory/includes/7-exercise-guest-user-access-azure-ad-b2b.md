@@ -94,6 +94,6 @@ If the guest user didn't receive the first email invitation, you can resend an i
 
 1. Select the user. The **Profile** pane for the user appears.
 
-1. In the **B2B collaboration** section, select the **Resend invitation** link.
+1. Scroll down to the **B2B invitation** box and select the **Resend invitation** link.
 
 1. Select **Resend**.

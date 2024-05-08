@@ -4,8 +4,8 @@ title: Exercise
 metadata:
   unitType: exercise
   title: Exercise - Exclude files from secret scanning
-  description: This exercise checks your knowledge on excluding files from being scanned by secret scanning. It is automatically graded via a workflow once you have completed the instructions.
-  ms.date: 03/07/2024
+  description: This exercise checks your knowledge on excluding files from being scanned by secret scanning. It's automatically graded via a workflow once you have completed the instructions.
+  ms.date: 04/30/2024
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit

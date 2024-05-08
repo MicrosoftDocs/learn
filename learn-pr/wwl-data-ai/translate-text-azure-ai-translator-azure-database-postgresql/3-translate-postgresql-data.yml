@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql.translate-postgresql-data
+title: Translate data in Azure Database for PostgreSQL
+metadata:
+  title: Translate data in Azure Database for PostgreSQL
+  description: "Translate data in Azure Database for PostgreSQL"
+  ms.date: 04/26/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-translate-postgresql-data.md)]
