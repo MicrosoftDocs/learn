@@ -1,7 +1,5 @@
 **Estimated time:** 45 minutes.
 
-**Lab files:** none.
-
 ## Scenario
 
 YAML-based pipelines allow you to fully implement CI/CD as code, in which pipeline definitions reside in the same repository as the code that is part of your Azure DevOps project. YAML-based pipelines support a wide range of features that are part of the classic pipelines, such as pull requests, code reviews, history, branching, and templates.
@@ -33,4 +31,4 @@ During this lab, you'll complete the following exercises:
  -  Exercise 2: Manage Azure DevOps agent pools.
 
 [:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Screenshot of a launch button which will take you to the lab.":::
-](https://aka.ms/az-400-configure-agent-pools-and-understand-pipeline-styles)
+](https://go.microsoft.com/fwlink/?linkid=2270113)
