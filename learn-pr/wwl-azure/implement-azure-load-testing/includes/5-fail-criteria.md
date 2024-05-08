@@ -1,6 +1,6 @@
 Fail criteria lets you define performance and quality expectations for your application under load. Azure Load Testing supports various client metrics for defining fail criteria, such as error rate or response time. Auto stop criteria enable you to automatically stop your load test when the error rate surpasses a given threshold.
 
-In this unit you'll learn how to define fail criteria and auto stop criteria for load tests.
+In this unit, you learn how to define fail criteria and auto stop criteria for load tests.
 
 ## Load test fail criteria
 
@@ -32,11 +32,11 @@ The following table describes the different components:
 | `Threshold`          | *Required.* The numeric value to compare with the client metric.                                                                                                                                                                                                                                                                                           |
 | `Request`            | *Optional.* Name of the sampler in the JMeter script to which the criterion applies. If you don't specify a request name, the criterion applies to the aggregate of all the requests in the script. <br/> Don't include any personal data in the sampler name in your JMeter script. The sampler names appear in the Azure Load Testing results dashboard. |
 
-## load test fail criteria example
+## Load test fail criteria example
 
 The following example defines three fail criteria. The first two criteria apply to the overall load test, and the last one specifies a condition for the `GetCustomerDetails` request.
 
-The test criteria is added in the `failureCriteria` setting.
+The test criteria are added in the `failureCriteria` setting.
 
     ```yaml
     version: v0.1
@@ -53,7 +53,7 @@ The test criteria is added in the `failureCriteria` setting.
 
 When you define a test criterion for a specific JMeter request, the request name should match the name of the JMeter sampler in the JMX file.
 
-:::image type="content" source="media/jmeter-request-name.png" alt-text="Screenshot of the JMeter user interface, highlighting the request name.":
+:::image type="content" source="media/jmeter-request-name.png" alt-text="Screenshot of the JMeter user interface, highlighting the request name.":::
 
 ## Auto stop configuration
 

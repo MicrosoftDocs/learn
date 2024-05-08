@@ -1,4 +1,4 @@
-Azure Load Testing is a service provided by Microsoft Azure that allows developers and testers to generate high-scale loads to identify performance bottlenecks in applications and automate regression testing. It's designed to help optimize the performance, scalability, and capacity of applications by simulating real-world loads.
+Azure Load Testing is a service provided by Microsoft Azure that allows developers and testers to generate high-scale loads to identify performance bottlenecks in applications and automate regression testing. It is designed to help optimize the performance, scalability, and capacity of applications by simulating real-world loads.
 
 ## Azure Load Testing components
 
@@ -10,7 +10,7 @@ Azure load testing consists of the following components:
 - **Test engine**
 - **App component**
 
-:::image type="content" source="../media/load-testing.png" alt-text="Diagram illustrating the process of load testing.":
+:::image type="content" source="../media/load-testing.png" alt-text="Diagram illustrating the process of load testing.":::
 
 ### Load testing resource
 
@@ -44,7 +44,7 @@ Each time you start a test, Azure Load Testing creates a **test run** and attach
 
 A test run represents one execution of a load test. When you run a test, the test run contains a copy of the configuration settings from the associated test.
 
-After the test run completes, you can view and analyze the load test results in the Azure Load Testing dashboard in the Azure portal or download the test logs and export the test results file.
+After the test run completes, you can view and analyze the load test results in the Azure Load Testing dashboard. You can also download the test logs and export the test results file.
 
 > [!IMPORTANT]
 > When you update a test, the existing test runs don't automatically inherit the new settings from the test. The new settings are only used by new test runs when you run the *test*. If you rerun an existing *test run*, the original settings of the test run are used.
@@ -55,13 +55,13 @@ A test engine is computing infrastructure, managed by Microsoft that runs the Ap
 
 Examples of load patterns:
 
-- linear load
-- stepped load
-- spike load
+- linear
+- stepped
+- spike
 
 ### App component
 
-When you run a load test for an Azure-hosted application, you can monitor resource metrics for the different Azure application components (server-side metrics). While the load test runs, and after completion of the test, you can monitor and analyze the resource metrics in the Azure Load Testing dashboard
+When you run a load test for an Azure-hosted application, you can monitor resource metrics for the different Azure application components (server-side metrics). While the load test runs, and after completion of the test, you can monitor and analyze the resource metrics in the Azure Load Testing dashboard.
 
 When you create or update a load test, you can configure the list of app components that Azure Load Testing will monitor. You can modify the list of default resource metrics for each app component.
 

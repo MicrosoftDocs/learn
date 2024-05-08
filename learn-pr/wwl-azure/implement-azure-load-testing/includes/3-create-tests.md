@@ -41,9 +41,9 @@ There are two options to create a load test in the Azure portal:
 - URL-based test
 - JMeter test script (JMX)
 
-:::image type="content" source="../media/create-test-dropdown.png" alt-text="Screenshot that shows the options to create a new test in the Azure portal.":
+:::image type="content" source="../media/create-test-dropdown.png" alt-text="Screenshot that shows the options to create a new test in the Azure portal.":::
 
-In this unit we will focus on creating a test using a JMeter script.
+In this unit, we focus on creating a test using a JMeter script.
 
 ### Components of a test plan
 
@@ -57,7 +57,7 @@ Alongside the test script, you can upload a user property file, configuration fi
 
 2. Select all files from your local machine, and upload them to Azure.
 
-    :::image type="content" source="../media/test-plan-upload-files.png" alt-text="Screenshot that shows the test plan page for creating a test in the Azure portal, highlighting the upload functionality.":
+    :::image type="content" source="../media/test-plan-upload-files.png" alt-text="Screenshot that shows the test plan page for creating a test in the Azure portal, highlighting the upload functionality.":::
 
     Azure Load Testing stores all files in a single repository. If your test script references configuration or data files, make sure to remove any relative path names in the JMX file.
 
@@ -67,7 +67,7 @@ Alongside the test script, you can upload a user property file, configuration fi
 
     For example, if you have a large customer CSV input file, and the load test runs on 10 parallel test engines, then each instance processes 1/10th of the customers.
 
-    :::image type="content" source="../media/configure-test-split-csv.png" alt-text="Screenshot that shows the checkbox to enable splitting input C S V files when configuring a test in the Azure portal.":
+    :::image type="content" source="../media/configure-test-split-csv.png" alt-text="Screenshot that shows the checkbox to enable splitting input C S V files when configuring a test in the Azure portal.":::
 
 > [!TIP]
 > You can download a file from the **Test plan** tab by selecting the file name in the list. For example, you might download the generated JMeter script for a quick test, modify it, and then upload the file again.
@@ -76,7 +76,7 @@ Alongside the test script, you can upload a user property file, configuration fi
 
 You can use parameters to make your test plan configurable instead of hard-coding values in the JMeter script. Specify key-value pairs in the load test configuration, and reference the value in the JMeter script by using the parameter name.
 
-:::image type="content" source="../media/configure-parameters.png" alt-text="Screenshot that shows how to configure parameters when creating a test in the Azure portal.":
+:::image type="content" source="../media/configure-parameters.png" alt-text="Screenshot that shows how to configure parameters when creating a test in the Azure portal.":::
 
 1. Specify environment variables to pass nonsensitive parameters to your test script.
 
@@ -104,7 +104,7 @@ You can use parameters to make your test plan configurable instead of hard-codin
 
     To connect to a virtual network, select the *Private* **Traffic mode**, and then select the **Virtual network** and **Subnet**.
 
-    :::image type="content" source="../media/configure-test-engine-instances.png" alt-text="Screenshot that shows how to configure the number of test engine instances when creating a test in the Azure portal.":
+    :::image type="content" source="../media/configure-test-engine-instances.png" alt-text="Screenshot that shows how to configure the number of test engine instances when creating a test in the Azure portal.":::
 
 #### Test criteria
 
@@ -124,4 +124,4 @@ You can use parameters to make your test plan configurable instead of hard-codin
 
     Azure Load Testing can automatically stop a load test run when the error rate surpasses a given threshold. You can enable or disable this functionality, and configure the specific error rate threshold and time window.
 
-    :::image type="content" source="../media/configure-test-criteria.png" alt-text="Screenshot that shows how to configure test criteria when creating a test in the Azure portal.":
+    :::image type="content" source="../media/configure-test-criteria.png" alt-text="Screenshot that shows how to configure test criteria when creating a test in the Azure portal.":::
