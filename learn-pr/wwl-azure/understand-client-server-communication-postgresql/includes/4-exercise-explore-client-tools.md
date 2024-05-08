@@ -1,10 +1,7 @@
-# Explore PostgreSQL with client tools
-
 In this exercise, you download and install psql and Azure Data studio. If you already have Azure Data Studio installed on your machine, you can jump ahead to Connect to Azure Database for PostrgreSQL flexible server.
 
-## Before you start
-
-> [!IMPORTANT]
+> [!NOTE]
+>
 > You need your own Azure subscription to complete this exercise. If you don't have an Azure subscription, you can create an [Azure free trial](https://azure.microsoft.com/free).
 >
 
