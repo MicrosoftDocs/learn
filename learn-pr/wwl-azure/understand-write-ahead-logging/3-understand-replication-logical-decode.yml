@@ -3,8 +3,8 @@ uid: learn.wwl.understand-write-ahead-logging.understand-replication-logical-dec
 title: Describe replication and logical decoding
 metadata:
   title: Describe replication and logical decoding
-  description: "Describe replication and logical decoding"
-  ms.date: 04/22/2024
+  description: "Describe replication and logical decoding."
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
