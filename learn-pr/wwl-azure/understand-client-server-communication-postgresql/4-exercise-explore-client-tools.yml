@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.understand-client-server-communication-postgresql.exercise-explore-azure-data-studio
-title: Exercise - Explore PostgreSQL with Azure Data Studio
+uid: learn.wwl.understand-client-server-communication-postgresql.exercise-explore-client-tools
+title: Exercise - Explore PostgreSQL with client tools
 metadata:
-  title: Exercise - Explore PostgreSQL with Azure Data Studio
-  description: "Exercise - Explore PostgreSQL with Azure Data Studio"
-  ms.date: 04/22/2024
+  title: Exercise - Explore PostgreSQL with client tools
+  description: "Exercise - Explore PostgreSQL with client tools"
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit

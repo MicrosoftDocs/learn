@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/22/2024
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
@@ -42,7 +42,7 @@ quiz:
     choices:
     - content: "Azure Data Studio"
       isCorrect: false
-      explanation: "That's incorrect. Azure Data Studio is a client tool designed to connect and develop queries for your PostgreSQL server. It is not a specialist benchmark tool."
+      explanation: "That's incorrect. Azure Data Studio is a client tool designed to connect and develop queries for your PostgreSQL server. It isn't a specialist benchmark tool."
     - content: "pgbench"
       isCorrect: true
       explanation: "That's correct. pgbench is designed to run benchmark tests on PostgreSQL databases."
