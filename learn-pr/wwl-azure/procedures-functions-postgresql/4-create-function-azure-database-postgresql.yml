@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.explore-procedures-functions-postgesql.create-use-function-azure-database-for-postgresql
+uid: learn.wwl.procedures-functions-postgresql.create-use-function-azure-database-for-postgresql
 title: Create and use a function in Azure Database for PostgreSQL
 metadata:
   title: Create and use a function in Azure Database for PostgreSQL
-  description: "Create and use a function in Azure Database for PostgreSQL"
-  ms.date: 04/22/2024
+  description: "Create and use a function in Azure Database for PostgreSQL."
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit

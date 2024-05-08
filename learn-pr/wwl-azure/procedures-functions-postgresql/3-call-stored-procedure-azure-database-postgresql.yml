@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.explore-procedures-functions-postgesql.call-stored-procedure-azure-database-for-postgresql
+uid: learn.wwl.procedures-functions-postgresql.call-stored-procedure-azure-database-for-postgresql
 title: Call a stored procedure in Azure Database for PostgreSQL
 metadata:
   title: Call a stored procedure in Azure Database for PostgreSQL
-  description: "Call a stored procedure in Azure Database for PostgreSQL"
-  ms.date: 04/22/2024
+  description: "Call a stored procedure in Azure Database for PostgreSQL."
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
