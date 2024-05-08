@@ -37920,6 +37920,11 @@
       "redirect_document_id": false
     }, 
     {
+      "source_path": "learn-pr/wwl-azure/explore-package-dependencies/2-what-dependency-management.md",
+      "redirect_url": "/training/modules/explore-package-dependencies/2-what-is-dependency-management",
+      "redirect_document_id": false
+    }, 
+    {
     "source_path": "learn-pr/paths/azure-cosmos-db-for-postgresql/index.yml",
     "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
     "redirect_document_id": false
