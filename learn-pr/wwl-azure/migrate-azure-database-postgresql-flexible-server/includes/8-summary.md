@@ -2,7 +2,7 @@
 
 In this module, you learned about the different PostgreSQL database migration options and how you can use them to rapidly realize the benefits of running on Azure Database for PostgreSQL - Flexible Server. You explored the differences between online and offline migration processes, the various tools, and Azure services that can be used to migrate databases. Finally, looking at how to pick the right methodology and tools to meet your needs for achieving a successful PostgreSQL database migration to Azure.
 
-Now that you completed this module you're able to:
+Now that you completed this module you're able to: 
 
 - Understand how to compare and select offline and online migration methodologies based on their respective benefits.
 - Understand how to compare and select the appropriate solution for migrating a PostgreSQL database to Azure Database for PostgreSQL Flexible Server.
