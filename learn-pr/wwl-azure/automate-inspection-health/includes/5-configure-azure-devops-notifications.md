@@ -29,7 +29,7 @@ For each notification, you have a set of specific steps to configure. The follow
     :::image type="content" source="../media/azure-devops-global-notifications-d4ef8339.png" alt-text="Screenshot of Azure DevOps global notifications.":::
     
 
-The Default subscriptions tab lists all default global subscriptions available. The globe icon on a notification subscription indicates the subscription is a default subscription. You can view all [default notification subscriptions](/azure/devops/notifications/oob-built-in-notifications?view=azure-devops).
+The Default subscriptions tab lists all default global subscriptions available. The globe icon on a notification subscription indicates the subscription is a default subscription. You can view all [default notification subscriptions](/azure/devops/organizations/notifications/oob-built-in-notifications).
 
 You can view and enable options available in the context menu (...) for each subscription.
 
@@ -42,6 +42,6 @@ You can see how to manage your personal notifications following [manage your per
 
 For more information, see:
 
- -  [Get started with notifications in Azure DevOps - Azure DevOps](/azure/devops/notifications/about-notifications).
- -  [Manage notifications for a team, project, organization, or collection - Azure DevOps](/azure/devops/notifications/manage-team-group-global-organization-notifications).
- -  [Events, subscriptions, and notifications - Azure DevOps.](/azure/devops/notifications/concepts-events-and-notifications)
+ -  [Get started with notifications in Azure DevOps - Azure DevOps](/azure/devops/organizations/notifications/about-notifications).
+ -  [Manage notifications for a team, project, organization, or collection - Azure DevOps](/azure/devops/organizations/notifications/manage-team-group-global-organization-notifications).
+ -  [Events, subscriptions, and notifications - Azure DevOps.](/azure/devops/organizations/notifications/about-notifications)
