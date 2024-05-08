@@ -38,7 +38,7 @@ quiz:
     - content: "pg_database_lock."
       isCorrect: false
       explanation: "Incorrect. pg_database_lock isn't a system table in PostgreSQL."
-  - content: "You tuned the server parameters to make autovacuum more efficient. However, users are complaining of slight delays when updating the single table in your database that has most updates. What could you do to resolve the problem?"
+  - content: "The server parameters are tuned to make autovacuum more efficient. However, users are complaining of slight delays when updating the single table in the database that has most updates. What needs done to resolve the problem?"
     choices:
     - content: "Split the table into two."
       isCorrect: true
@@ -49,7 +49,7 @@ quiz:
     - content: "Disable AUTOVACUUM and run VACUUM manually as required."
       isCorrect: false
       explanation: "Incorrect. Vacuum is the same process as autovacuum and won't alter the performance users are experiencing."
-  - content: "You recently took over support for an Azure Database for PostgreSQL database in your company. You noticed that the amount of storage required for the database appears to be growing at a rate greater than you would expect. What should you do to investigate?"
+  - content: "A new administrator recently took over support for an Azure Database for PostgreSQL database at the company. It was noticed that the storage required for the database seems to be growing faster than expected. What steps should be taken to investigate?"
     choices:
     - content: "Check the server parameters to ensure autovacuum is switched OFF."
       isCorrect: false
