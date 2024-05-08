@@ -11,7 +11,7 @@ metadata:
   
 durationInMinutes: 8
 content: |
-  [!include[](includes/3-use-a-viewmodel.md)]
+  [!include[](includes/3-use-viewmodel.md)]
 quiz:
     title: Check your knowledge
     questions:

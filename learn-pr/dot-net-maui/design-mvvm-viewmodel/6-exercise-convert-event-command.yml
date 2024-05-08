@@ -12,4 +12,4 @@ metadata:
   
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-exercise-convert-event-to-command.md)]
+  [!include[](includes/6-exercise-convert-event-command.md)]
