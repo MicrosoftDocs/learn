@@ -3,7 +3,7 @@ uid: learn.languages.csharp-call-methods
 metadata:
   title: Call methods from the .NET Class Library using C#
   description: "Use functionality in the .NET Class Library by calling methods that return values, accept input parameters, and more."
-  ms.date: 04/17/2024
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module
