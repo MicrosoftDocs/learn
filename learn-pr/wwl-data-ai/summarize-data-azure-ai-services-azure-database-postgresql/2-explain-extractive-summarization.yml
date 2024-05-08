@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.explain-extractive-summarization
+title: Explain extractive summarization
+metadata:
+  title: Explain extractive summarization
+  description: "Explain extractive summarization"
+  ms.date: 04/29/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-explain-extractive-summarization.md)]

@@ -2,19 +2,19 @@ Passwords are a primary attack vector. Bad actors use social engineering, phishi
 
 Microsoft offers the following three passwordless authentication options that integrate with Microsoft Entra ID:
 
- -  **Microsoft Authenticator** \- turns any iOS or Android phone into a strong, passwordless credential by allowing users to sign into any platform or browser.
- -  **FIDO2-compliant security keys** \- useful for users who sign in to shared machines like kiosks, in situations where use of phones is restricted, and for highly privileged identities.
- -  **Windows Hello for Business** \- best for users on their dedicated Windows computers.
+1.  Microsoft Authenticator - turns any iOS or Android phone into a strong, passwordless credential by allowing users to sign into any platform or browser.
+2.  FIDO2-compliant security keys - useful for users who sign in to shared machines like kiosks, in situations where use of phones is restricted, and for highly privileged identities.
+3.  Windows Hello for Business - best for users on their dedicated Windows computers.
 
 ## Use the passwordless methods wizard
 
-The Microsoft Entra admin center has a passwordless methods wizard that will help you to select the appropriate method for each of your audiences.
+The [Microsoft Entra admin center](https://entra.microsoft.com/) has a passwordless methods wizard that will help you to select the appropriate method for each of your audiences.
 
 ## Passwordless authentication scenarios
 
 Microsoft's passwordless authentication methods enable many scenarios. Consider your organizational needs, prerequisites, and the capabilities of each authentication method to select your passwordless authentication strategy.
 
-The following table lists the passwordless authentication methods by device types. Our recommendations are in ***bold italics***.
+The following table lists the passwordless authentication methods by device types.
 
 | **Device types**                                        | **Passwordless authentication method**                    |
 | ------------------------------------------------------- | --------------------------------------------------------- |
@@ -88,11 +88,11 @@ Microsoft provides communication templates for end users. Download the authentic
 
 ### Plan user registration
 
-Users register their passwordless method as a part of the combined security information workflow. Microsoft Entra logs registration of security keys and the Authenticator app, and any other changes to the authentication methods.
+Users register their passwordless method as a part of the combined security information workflow at [https://aka.ms/mysecurityinfo](https://aka.ms/mysecurityinfo). Microsoft Entra logs registration of security keys and the Authenticator app, and any other changes to the authentication methods.
 
-For the first-time user who doesn't have a password, admins can provide a Temporary Access Passcode to register their security information. This is a time-limited passcode and satisfies strong authentication requirements. **Temporary Access Pass is a per-user process**.
+For the first-time user who doesn't have a password, admins can provide a [Temporary Access Passcode](/entra/identity/authentication/howto-authentication-temporary-access-pass) to register their security information in [https://aka.ms/mysecurityinfo](https://aka.ms/mysecurityinfo) . This is a time-limited passcode and satisfies strong authentication requirements. Temporary Access Pass is a per-user process.
 
-This method can also be used for easy recovery when the user has lost or forgotten their authentication factor such as security key or the Authenticator app but needs to sign in to **register a new strong authentication method**.
+This method can also be used for easy recovery when the user has lost or forgotten their authentication factor such as security key or the Authenticator app but needs to sign in to register a new strong authentication method.
 
 > [!NOTE]
 > If you can't use the security key or the Authenticator app for some scenarios, multifactor authentication with a username and password along with another registered method can be used as a fallback option.
@@ -103,11 +103,11 @@ Microsoft Authenticator turns any iOS or Android phone into a strong, passwordle
 
 ### Technical considerations
 
-**Active Directory Federation Services (AD FS) Integration** \- When a user enables the Authenticator passwordless credential, authentication for that user defaults to sending a notification for approval. Users in a hybrid tenant are prevented from being directed to AD FS for sign-in unless they select "Use your password instead." This process also bypasses any on-premises Conditional Access policies, and pass-through authentication (PTA) flows. However, if a login\_hint is specified, the user is forwarded to AD FS and bypasses the option to use the passwordless credential. For non-Microsoft 365 applications which use AD FS for authentication, Microsoft Entra Conditional Access policies will not be applied and you will need to set up access control policies within AD FS.
+Active Directory Federation Services (AD FS) Integration - When a user enables the Authenticator passwordless credential, authentication for that user defaults to sending a notification for approval. Users in a hybrid tenant are prevented from being directed to AD FS for sign-in unless they select "Use your password instead." This process also bypasses any on-premises Conditional Access policies, and pass-through authentication (PTA) flows. However, if a login\_hint is specified, the user is forwarded to AD FS and bypasses the option to use the passwordless credential. For non-Microsoft 365 applications which use AD FS for authentication, Microsoft Entra Conditional Access policies will not be applied and you will need to set up access control policies within AD FS.
 
-**MFA server** \- End users enabled for multifactor authentication through an organization's on-premises MFA server can create and use a single passwordless phone sign-in credential. If the user attempts to upgrade multiple installations (**5 or more**) of the Authenticator app with the credential, this change may result in an error.<br>
+MFA server - End users enabled for multifactor authentication through an organization's on-premises MFA server can create and use a single passwordless phone sign-in credential. If the user attempts to upgrade multiple installations (5 or more) of the Authenticator app with the credential, this change may result in an error.<br>
 
-**Device registration** \- To use the Authenticator app for passwordless authentication, the device must be registered in the Microsoft Entra tenant and can't be a shared device. A device can only be registered in a single tenant. This limit means that only one work or school account is supported for phone sign-in using the Authenticator app.
+Device registration - To use the Authenticator app for passwordless authentication, the device must be registered in the Microsoft Entra tenant and can't be a shared device. A device can only be registered in a single tenant. This limit means that only one work or school account is supported for phone sign-in using the Authenticator app.
 
 ### Deploy phone sign-in with the Authenticator app
 
@@ -141,13 +141,13 @@ Enable compatible security keys. Here is a list of FIDO2 security key providers 
 
 Prepare for and plan the key lifecycle.
 
-**Key distribution**\- Plan how to provision keys to your organization. You may have a centralized provisioning process or allow end users to purchase FIDO 2.0-compatible keys.
+Key distribution- Plan how to provision keys to your organization. You may have a centralized provisioning process or allow end users to purchase FIDO 2.0-compatible keys.
 
-**Key activation** \- End users must self-activate the security key. End users register their security keys and enable the second factor (PIN or biometric) at first use. For first-time users, they can use TAP to register their security information.
+Key activation - End users must self-activate the security key. End users register their security keys and enable the second factor (PIN or biometric) at first use. For first-time users, they can use TAP to register their security information.
 
-**Disabling a key** \- If an administrator wishes to remove a FIDO2 key associated with a User Account, they can do so by deleting the key from the user's authentication method as shown below. For more information, see Disable a key
+Disabling a key - If an administrator wishes to remove a FIDO2 key associated with a User Account, they can do so by deleting the key from the user's authentication method as shown below. For more information, see Disable a key
 
-**Issue a new key**: User can register the new FIDO2 key
+Issue a new key: User can register the new FIDO2 key
 
 ### Technical considerations
 

@@ -30,10 +30,15 @@ Enable the middleware for serving the generated JSON document and the Swagger UI
 
 ```csharp
 app.UseSwagger();
-app.UseSwaggerUI();
+if (app.Environment.IsDevelopment())
+{
+    app.app.UseSwaggerUI();
+}
 ```
 
 The default endpoint for the Swagger UI is `http:<hostname>:<port>/swagger`.
+
+[!INCLUDE[SwaggerUI Note](../../../includes/swaggerui-security-note.md)]
 
 ## Customize and extend the Swagger documentation
 

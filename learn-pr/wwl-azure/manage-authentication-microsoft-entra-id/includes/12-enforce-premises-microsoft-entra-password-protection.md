@@ -25,6 +25,13 @@ Many organizations want to carefully test Microsoft Entra Password Protection on
  -  The password filter DLL of the DC Agent receives user password-validation requests from the operating system. The filter forwards them to the DC Agent service that's running locally on the DC.
  -  The DC Agent service of Microsoft Entra Password Protection receives password-validation requests from the password filter DLL of the DC Agent. The DC Agent service processes them by using the current (locally available) password policy and returns the result of *pass* or *fail*.
 
+## Architectural diagram
+
+It's important to understand the underlying design and function concepts before you deploy Microsoft Entra Password Protection in an on-premises AD DS environment. The following diagram shows how the components of Microsoft Entra Password Protection work together:
+
+:::image type="content" source="../media/microsoft-entra-identity-password-protection-6098e71a.png" alt-text="Diagram showing an example of Azure Active Directory Domain Services.":::
+
+
 ## How Microsoft Entra Password Protection works
 
 The on-premises Microsoft Entra Password Protection components work as follows:
@@ -46,3 +53,16 @@ The on-premises Microsoft Entra Password Protection components work as follows:
  -  The DC Agent service always uses the most recent locally available password policy to evaluate a user's password. If no password policy is available on the local DC, the password is automatically accepted. When that happens, an event message is logged to warn the administrator.
  -  Microsoft Entra Password Protection isn't a real-time policy application engine. There can be a delay between when a password policy configuration change is made in Microsoft Entra ID and when that change reaches and is enforced on all DCs.
  -  Microsoft Entra Password Protection acts as a supplement to the existing Microsoft Entra ID password policies, not a replacement. This includes any other 3rd-party password filter dlls that may be installed. Microsoft Entra ID always requires that all password validation components agree before accepting a password.
+
+## Forest / tenant binding for Microsoft Entra Password Protection
+
+Deployment of Microsoft Entra Password Protection in an AD DS forest requires registration of that forest with Microsoft Entra ID. Each proxy service that's deployed must also be registered with Microsoft Entra ID. These forest and proxy registrations are associated with a specific Microsoft Entra tenant, which is identified implicitly by the credentials that are used during registration.
+
+The AD DS forest and all deployed proxy services within a forest must be registered with the same tenant. It's not supported to have an AD DS forest or any proxy services in that forest being registered to different Microsoft Entra tenants. Symptoms of such a mis-configured deployment include the inability to download password policies.
+
+> [!NOTE]
+> Customers that have multiple Microsoft Entra tenants must therefore choose one distinguished tenant to register each forest for Microsoft Entra Password Protection purposes.
+
+## Download
+
+The two required agent installers for Microsoft Entra Password Protection are available from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=57071).
