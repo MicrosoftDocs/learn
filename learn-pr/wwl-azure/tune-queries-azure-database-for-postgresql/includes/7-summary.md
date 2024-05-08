@@ -10,3 +10,4 @@ Now that you completed this module, you should be able to:
 To find more information about the topics covered in this module, see:
 
 - [Monitor performance with the Query Store](/azure/postgresql/concepts-query-store) 
+
