@@ -1,4 +1,4 @@
-Classification models are used to make decisions or assign items into categories. Unlike regression modules, which output continuous numbers, such as heights or weights, classification models output Boolean—either true or false—or categorical decisions, such as ‘apple’, ’banana’ or ‘cherry’.
+Classification models are used to make decisions or assign items into categories. Unlike regression modules, which output continuous numbers, such as heights or weights, classification models output Boolean values—either `true` or `false`—or categorical decisions, such as `apple`, `banana`, or `cherry`.
 
 There are many types of classification models. Some work similarly to classical regression models, while others are fundamentally different. One of the best models to learn initially is called _logistic regression._
 
@@ -18,8 +18,8 @@ As logistic regression gives us these probabilities, rather than simple true/fal
 
 ![diagram showing a logistic function graph.](../media/2-logistic-function-graph.png)
 
-Looking at the graph, we can see that when the feature is below 5, the probability is less than 0.5 and is converted into false. Feature values above 5, give probabilities over 0.5 and are converted to true.
+Looking at the graph, we can see that when the feature is below 5, the probability is less than 0.5 and is converted into false. Feature values that are above 5 give probabilities over 0.5 and are converted to true.
 
-It’s notable that logistic regression doesn't have to be limited to a true/false outcome – it can also be used where there are three or more potential outcomes, such as ‘rain’, ‘snow’ or ‘sun’. This type of outcome requires a slightly more complex setup, called **multinomial logistic regression.** While we don’t practice multinomial logistic regression during the next few exercises, it's worth considering in situations where you need to make predictions that aren't binary.
+It’s notable that logistic regression doesn't have to be limited to a true/false outcome – it can also be used where there are three or more potential outcomes, such as `rain`, `snow`, or `sun`. This type of outcome requires a slightly more complex setup, called **multinomial logistic regression.** While we don’t practice multinomial logistic regression during the next few exercises, it's worth considering in situations where you need to make predictions that aren't binary.
 
 It’s also worth noting that logistic regression can use more than one input feature: more on this case soon.

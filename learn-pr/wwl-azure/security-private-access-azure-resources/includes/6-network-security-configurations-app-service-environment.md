@@ -18,7 +18,7 @@ If you don't have an ASE, you can create one by following the instructions in Cr
 
 To create an app in an ASE:<br>
 
-1. Select Create a resource, Web + Mobile, Web App.<br>
+1. Select **Create a resource**, **Web + Mobile**, **Web App**.<br>
 
 2. Enter a name for the app. If you already selected an App Service plan in an ASE, the domain name for the app reflects the domain name of the ASE:
 
@@ -27,13 +27,13 @@ To create an app in an ASE:<br>
 
 3. Select a subscription.
 
-4. Enter a name for a new resource group, or select Use existing and select one from the drop-down list.<br>
+4. Enter a name for a new resource group, or select **Use existing** and select one from the drop-down list.<br>
 
 5. Select your OS.<br>
 
 6. Select an existing App Service plan in your ASE, or create a new one by following these steps:<br>
 
-    a. From the Azure portal left-side menu, select Create a resource &gt; Web App.<br>
+    a. From the Azure portal left-side menu, select **Create a resource** &gt; **Web App**.<br>
 
     b. Select the subscription.<br>
 
@@ -41,20 +41,20 @@ To create an app in an ASE:<br>
 
     d. Enter the name of your web app.<br>
 
-    e. Select Code or DockerContainer.<br>
+    e. Select **Code** or **DockerContainer**.<br>
 
     f. Select a runtime stack.<br>
 
-    g. Select Linux or Windows.<br>
+    g. Select **Linux** or **Windows**.<br>
 
-    h. Select your ASE in the Region drop-down list.<br>
+    h. Select your ASE in the **Region** drop-down list.<br>
 
-    i. Select or create a new App Service plan. If creating a new App Service plan, select the appropriate Isolated SKU size.<br>
+    i. Select or create a new App Service plan. If creating a new App Service plan, select the appropriate **Isolated** SKU size.<br>
 
 :::image type="content" source="../media/specification-picker-fb196b40.png" alt-text="Screenshot showing the specification picker dashboard.":::
 
 
-7. Select Review + create, make sure the information is correct, and then select Create.
+7. Select **Review + create**, make sure the information is correct, and then select **Create**.
 
 ## How scale works
 
@@ -194,13 +194,13 @@ To create an alert against your logs, follow the instructions in Create, view, a
 
 ## Upgrade preference
 
-If you have multiple ASEs, you might want some ASEs to be upgraded before others. This behavior can be enabled through your ASE portal. Under Configuration you have the option to set Upgrade preference. The three possible values are:
+If you have multiple ASEs, you might want some ASEs to be upgraded before others. This behavior can be enabled through your ASE portal. Under **Configuration** you have the option to set **Upgrade preference**. The three possible values are:
 
- -  **None**: Azure will upgrade your ASE in no particular batch. This value is the default.<br>
- -  **Early**: Your ASE will be upgraded in the first half of the App Service upgrades.
- -  **Late**: Your ASE will be upgraded in the second half of the App Service upgrades.
+ -  None: Azure will upgrade your ASE in no particular batch. This value is the default.<br>
+ -  Early: Your ASE will be upgraded in the first half of the App Service upgrades.
+ -  Late: Your ASE will be upgraded in the second half of the App Service upgrades.
 
-Select the value desired and select Save. The default for any ASE is None.
+Select the value desired and select **Save**. The default for any ASE is **None**.
 
 :::image type="content" source="../media/application-service-environment-configuration-page-0f23112f.png" alt-text="Screenshot showing the application service environment configuration page.":::
 
@@ -223,6 +223,17 @@ If you adjust the size of the front ends to two cores but don't adjust the ratio
 
 1. To delete an ASE:
 
-2. Select Delete at the top of the App Service Environment pane. Enter the name of your ASE to confirm that you want to delete it. When you delete an ASE, you also delete all the content within it.
+2. Select **Delete** at the top of the **App Service Environment** pane. Enter the name of your ASE to confirm that you want to delete it. When you delete an ASE, you also delete all the content within it.
+
+3. Select **OK**.
 
 :::image type="content" source="../media/delete-application-service-environment-page-565fddaf.png" alt-text="Screenshot showing how to delete an application service environment.":::
+
+
+## ASE CLI
+
+There are command line capabilities to administer to an ASE. The Azure CLI commands are noted below.
+
+```azurecli
+C:\>az appservice ase --help Group az appservice ase : Manage App Service Environments v2. This command group is in preview. It may be changed/removed in a future release. Commands: create : Create app service environment. delete : Delete app service environment. list : List app service environments. list-addresses : List VIPs associated with an app service environment. list-plans : List app service plans associated with an app service environment. show : Show details of an app service environment. update : Update app service environment. For more specific examples, use: az find "az appservice ase"
+```

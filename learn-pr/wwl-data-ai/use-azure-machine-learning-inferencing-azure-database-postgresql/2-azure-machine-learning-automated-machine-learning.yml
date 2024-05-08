@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-azure-machine-learning-inferencing-azure-database-postgresql.azure-machine-learning-automated-machine-learning
+title: Explore Azure Machine Learning
+metadata:
+  title: Explore Azure Machine Learning
+  description: "Explore Azure Machine Learning"
+  ms.date: 05/02/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-azure-machine-learning-automated-machine-learning.md)]

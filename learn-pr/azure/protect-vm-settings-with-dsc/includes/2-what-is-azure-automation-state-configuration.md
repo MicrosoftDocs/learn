@@ -122,6 +122,7 @@ Azure Automation DSC is supported by Azure Cloud Services and other cloud provid
 Azure Automation DSC supports the following operating systems:
   
 - Windows
+  - Server 2022
   - Server 2019
   - Server 2016
   - Server 2012 R2

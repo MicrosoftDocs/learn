@@ -6,12 +6,11 @@ Suppose you're managing an important GitHub repository. You want to enforce the 
 
 In this module, you'll:
 
-- Recognize the importance of securing your repository and shifting left in the development lifecycle
-- Identify the tools, GitHub features, and best practices to establish a secure development strategy
-- Keep sensitive files out of your repository by applying the use of a `.gitignore` file
-- Identify how to detect and fix outdated dependencies with security vulnerabilities
-- Recognize advanced security features such as code scanning and secret scanning
-
+- Recognize the importance of securing your repository and shifting left in the development lifecycle.
+- Identify the tools, GitHub features, and best practices to establish a secure development strategy.
+- Keep sensitive files out of your repository by applying the use of a `.gitignore` file.
+- Identify how to detect and fix outdated dependencies with security vulnerabilities.
+- Recognize advanced security features such as code scanning and secret scanning.
 
 ## Prerequisites
 

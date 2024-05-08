@@ -3,7 +3,7 @@ uid: learn.wwl.governance-security
 metadata:
   title: Plan, implement, and manage governance for security
   description: "This module focuses on enabling administrators to effectively plan, implement, and manage security governance in Azure, ensuring compliance with organizational policies and best practices."
-  ms.date: 04/15/2024
+  ms.date: 04/30/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
@@ -40,6 +40,7 @@ subjects:
 - cloud-security
 units:
 - learn.wwl.governance-security.introduction
+- learn.wwl.governance-security.azure-governance-and-management
 - learn.wwl.governance-security.create-custom-azure-security-initiatives-policies
 - learn.wwl.governance-security.azure-blueprints
 - learn.wwl.governance-security.infrastructure-security-architecture

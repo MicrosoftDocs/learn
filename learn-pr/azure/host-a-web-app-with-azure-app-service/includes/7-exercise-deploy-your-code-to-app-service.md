@@ -2,7 +2,7 @@ In this unit, you deploy your web application to App Service.
 
 ::: zone pivot="csharp"
 
-## Deploy with ZIP deploy
+## Deploy with `az webapp deploy`
 
 Let's deploy the .NET application with ZIP deploy.
 
@@ -15,11 +15,11 @@ cd pub
 zip -r site.zip *
 ```
 
-Finally, perform the deployment with `az webapp deployment source config-zip`. Replace `<your-app-name>` in the following command with the name of your Azure web app and run it:
+Finally, perform the deployment with `az webapp deploy`. Replace `<your-app-name>` in the following command with the name of your Azure web app and run it:
 
 ```bash
-az webapp deployment source config-zip \
-    --src site.zip \
+az webapp deploy \
+    --src-path site.zip \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
     --name <your-app-name>
 ```
@@ -38,29 +38,16 @@ Congratulations, you successfully hosted your new ASP.NET Core application on Ap
 
 ::: zone pivot="java"
 
-## Configure deployment credentials
+## Deploy with `az webapp deploy`
 
-Some App Service deployment techniques, including the one we use here, require a username and password that are separate from your Azure credentials. Every web app comes preconfigured with its own username and password. The password can be reset to a new random value, but it can't be changed to something you choose.
-
-Instead of searching for those random values for each one of your apps, you can use an App Service feature called User Deployment Credentials to create your own username and password. The values you choose will work for deployments on *all* App Service web apps to which you have permissions, including new web apps that you create in the future. The username and password you select are tied to your Azure credentials and intended only for your use, so don't share them with others. You can change both the username and password at any time.
-
-The easiest way to create deployment credentials is from the Azure CLI.
-
-1. Run the following command in the Cloud Shell to set deployment credentials, substituting `<username>` and `<password>` with values you choose:
-
-    ```azurecli
-    az webapp deployment user set --user-name <username> --password <password>
-    ```
-
-## Deploy the Java application package with WAR deploy
-
-Let's deploy our Java application with WAR deploy. WAR deploy is part of the Kudu REST API, an administrative service interface available on all App Service web apps, which you can access over HTTP. The simplest way to use WAR deploy is with the `curl` HTTP utility from the command line.
-
-Run the following commands to deploy your Java web app with WAR deploy. Replace `<username>` and `<password>` with the Deployment User username and password you created earlier, and replace `<your-app-name>` with the name of the web app you created in the Azure portal.
+Run the following commands to deploy your Java web app. Replace `<your-app-name>` with the name of the web app you created in the Azure portal.
 
 ```console
 cd ~/helloworld/target
-curl -v -X POST -u <username>:<password> https://<your-app-name>.scm.azurewebsites.net/api/wardeploy --data-binary @helloworld.war
+az webapp deploy \
+    --src-path helloworld.war \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name <your-app-name>
 ```
 
 When the command finishes running, open a new browser tab and go to `https://<your-app-name>.azurewebsites.net`. You get the greeting message from your app. You deployed successfully!
@@ -97,8 +84,6 @@ The deployment takes a few minutes to propagate. You're able to view the progres
 Let's browse to our application. The last line of output from `az webapp up` before the JSON code block has a link to your app. Select it to navigate there in a new browser tab. The page takes a moment to load, as App Service is initializing your app for the first time.
 
 Once it loads, you get the greeting message from your app. You deployed successfully!
-
- :::image type="content" source="../media/7-web-app-in-browser.png" alt-text="Screenshot of welcome page.":::
 
 ::: zone-end
  
