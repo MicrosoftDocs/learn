@@ -20,32 +20,32 @@ quiz:
     choices:
     - content: "Client/server."
       isCorrect: true
-      explanation: "That's correct. PostgreSQL has a client/server architecture."
+      explanation: "Correct. PostgreSQL has a client/server architecture."
     - content: "Distributed."
       isCorrect: false
-      explanation: "That's incorrect. PostgreSQL doesn't have a distributed architecture."
+      explanation: "Incorrect. PostgreSQL doesn't have a distributed architecture."
     - content: "Relational."
       isCorrect: false
-      explanation: "That's incorrect. PostgreSQL doesn't have a relational architecture."
+      explanation: "Incorrect. PostgreSQL doesn't have a relational architecture."
   - content: "You run a few complex queries on your PostgreSQL database. Which server parameter should you consider tuning to improve performance?"
     choices:
     - content: "**work_mem**"
       isCorrect: true
-      explanation: "That's correct. This parameter specifies the amount of memory that can be used by internal sort operations and hash tables. Complex queries may benefit from increasing the available memory."
+      explanation: "Correct. This parameter specifies the amount of memory that can be used by internal sort operations and hash tables. Complex queries may benefit from increasing the available memory."
     - content: "**max_connection**"
       isCorrect: false
-      explanation: "That's incorrect. Max_connections specifies the maximum number of query connections at any one time, but won't help processing complex queries."
+      explanation: "Incorrect. Max_connections specifies the maximum number of query connections at any one time, but won't help processing complex queries."
     - content: "**Shared_buffers**"
       isCorrect: false
-      explanation: "That's incorrect. shared_buffers defines the shared memory used by the server. Increasing the amount of memory available to the server will improve the performance of reading and writing to the database, but not returning the results from complex queries."
+      explanation: "Incorrect. shared_buffers defines the shared memory used by the server. Increasing the amount of memory available to the server will improve the performance of reading and writing to the database, but not returning the results from complex queries."
   - content: "Which server process is responsible for initiating and shutting down the PostgreSQL processes?"
     choices:
     - content: "Query optimizer."
       isCorrect: false
-      explanation: "That's incorrect. The query optimizer is responsible for planning the most efficient way to execute queries."
+      explanation: "Incorrect. The query optimizer is responsible for planning the most efficient way to execute queries."
     - content: "Postmaster daemon."
       isCorrect: true
-      explanation: "That's correct. The postmaster daemon is the server process that is responsible for server start-up processes and shutting down the server."
+      explanation: "Correct. The postmaster daemon is the server process that is responsible for server start-up processes and shutting down the server."
     - content: "PostgreSQL backend processes."
       isCorrect: false
-      explanation: "That's incorrect. The PostgreSQL backend processes are responsible for connection handling, and not starting and shutting down the server."
+      explanation: "Incorrect. The PostgreSQL backend processes are responsible for connection handling, and not starting and shutting down the server."
