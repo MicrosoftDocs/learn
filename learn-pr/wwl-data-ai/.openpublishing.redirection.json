@@ -111,7 +111,7 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "introduction-to-azure-ai-studio/includes/4-azure-ai-projects.md",
+      "source_path": "introduction-to-azure-ai-studio/includes/4-azure-ai-projects.yml",
       "redirect_url": "/training/modules/introduction-to-azure-ai-studio/",
       "redirect_document_id": true
     }
