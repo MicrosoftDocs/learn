@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.identify-technical-debt.plan-effective-code-reviews
+title: Plan effective code reviews
+metadata:
+  title: Plan effective code reviews
+  description: "Plan effective code reviews"
+  ms.date: 05/06/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-plan-effective-code-reviews.md)]

@@ -47,22 +47,4 @@ Public IP prefixes are assigned from a pool of addresses in each Azure region. Y
 
 Addresses from a custom IP address prefix can be used in the same way as Azure owned public IP address prefixes. Addresses from a custom IP address prefix can be associated to Azure resources, interact with internal/private IPs and virtual networks, and reach external destinations outbound from the Azure Wide Area Network.
 
-## Check your knowledge
-
-Choose the best response for each of the questions below. When you're done, select **Check your answers**.
-
-## quiz title
-
-## Multiple Choice
-
-Which of the following statements about Azure VNets is correct?
-( ) Outbound communication with the internet must be configured for each resource on the VNet. {{Incorrect. All resources in a VNet can communicate outbound to the internet, by default.}}
-(x) Azure VNets enable communication between Azure resources. {{Correct. Virtual Networks can connect Azure resources including VMs, the App Service Environment, Azure Kubernetes Service, and Azure Virtual Machine Scale Sets. You can use service endpoints to connect to other Azure resource types, such as Azure SQL databases and storage accounts.}}
-( ) Azure VNets can't be configured to communicate with on-premises resources. {{Incorrect. You can connect your on-premises computers and networks to a virtual network using any of the following options: Point-to-site virtual private network (VPN), Site-to-site VPN, Azure ExpressRoute.}}
-
-## Multiple Choice
-
-Which of the following statements about Azure Public IP addresses is correct?
-( ) Standard Public IPs are Dynamically allocated. {{That's incorrect, Standard SKU public IP addresses always use the static allocation method.}}
-( ) Basic Public IPs are supported in Availability Zones. {{That's incorrect, Basic Public IPs aren't supported in Availability Zones.}}
-(x) Public IP addresses allow Internet resources to communicate inbound to Azure resources. {{That's Correct! An IP address is assigned from a pool of available addresses, based on the location of the resource.}}
+Choose the best response for each of the questions below. Then select **Check your answers**.
