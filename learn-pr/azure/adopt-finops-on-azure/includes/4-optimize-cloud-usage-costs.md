@@ -1,6 +1,6 @@
 Rate optimization, licensing + SaaS management, workload optimization, architecting for the cloud, and cloud sustainability are essential capabilities for optimizing cloud usage and cost. By implementing best practices and maturing in these capabilities, organizations can maximize the value of their cloud investments, control expenses, and ensure efficient resource utilization.
 
-![Video placeholder: Overview MS solutions the capabilities in this domain.](../media/4-video-placeholder-small.png)
+<!-- Video placeholder: Overview MS solutions the capabilities in this domain. -->
 
 ## Rate optimization
 
