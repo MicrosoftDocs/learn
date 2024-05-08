@@ -109,6 +109,11 @@
       "source_path": "build-ai-copilot-vcore-based-azure-cosmos-db-mongodb-azure-openai/index.yml",
       "redirect_url": "/training/paths/build-ai-copilot-vcore-based-azure-cosmos-db-mongodb-azure-openai/",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "introduction-to-azure-ai-studio/includes/4-azure-ai-projects.md",
+      "redirect_url": "/training/modules/introduction-to-azure-ai-studio/",
+      "redirect_document_id": true
     }
   ]
 }
