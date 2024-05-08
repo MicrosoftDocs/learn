@@ -1,32 +1,42 @@
 ### YamlMime:Module
-uid: learn.polyglot-notebooks
+uid: learn.introduction-to-polyglot-notebooks
 metadata:
-  title: Introduction to 
-  description: Learn how to 
-  ms.date: 06/04/2020
-  author: "undefined"
-  ms.author: "undefined"
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Introduction to 
-summary: Learn how to 
+  ms.author: japhletnwamu
+  ms.service: artificial-intelligence
+  author: japhletnwamu
+  ms.date: 04/03/2024
+  title: Introduction to Polyglot Notebooks
+  description: Use Polyglot Notebooks to create and run code in multiple languages in a single document. This module introduces you to Polyglot Notebooks and shows you how to create and run code in multiple languages.
+  ms.topic: module
+  ms.custom: team=cloud_advocates
+title: Introduction to Polyglot Notebooks
+summary: Use Polyglot Notebooks to create and run code in multiple languages in a single document. This module introduces you to Polyglot Notebooks and shows you how to create and run code in multiple languages.
 abstract: |
-  In this module you will:
-  - Learn about X
-iconUrl: /learn/achievements/polyglot-notebooks.svg
+  By the end of this module, you'll be able to:
+  - Describe the core concepts of Polyglot Notebooks
+  - Explain why you should use Polyglot Notebooks.
+  - Create and run Notebooks.
+  - Use features like variable sharing and commands to combine frontend and backend and mermaid to render flowcharts and diagrams.
+prerequisites:
+  To get started with Polyglot Notebooks, you need to.
+  - Install the latest .NET SDK,
+  - Install Polyglot Notebooks as an extension on Visual Studio Code. From there, you can create and run Notebooks and do much more.
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
 - developer
+- student
 products:
-- vs
-prerequisites: None
+- azure
 units:
-- learn.polyglot-notebooks.1-introduction
-- learn.polyglot-notebooks.2-unit
-- learn.polyglot-notebooks.3-exercise-unit
-- learn.polyglot-notebooks.4-knowledge-check
-- learn.polyglot-notebooks.5-summary
-
+- learn.introduction-to-polyglot-notebooks.1-introduction
+- learn.introduction-to-polyglot-notebooks.2-what-is-polyglot-notebook
+- learn.introduction-to-polyglot-notebooks.3-getting-started
+- learn.introduction-to-polyglot-notebooks.4-setting-up
+- learn.introduction-to-polyglot-notebooks.5-polyglot-notebook-features
+- learn.introduction-to-polyglot-notebooks.6-document-your-code
+- learn.introduction-to-polyglot-notebooks.7-value-sharing
+- learn.introduction-to-polyglot-notebooks.8-summary
 badge:
-  uid: learn.polyglot-notebooks.badge
+  uid: learn.introduction-to-polyglot-notebooks.badge
