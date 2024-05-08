@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-azure-load-testing.variables-load-testing
+title: 'Configure secrets and environment variables '
+metadata:
+  title: Configure secrets and environment variables
+  description: "Configure secrets and environment variables"
+  ms.date: 05/08/2024
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-variables-load-testing.md)]
