@@ -1,14 +1,14 @@
-Multi-Version Concurrency Control (MVCC) provides the appropriate concurrency settings for most scenarios, but if an application requires specific locks that control exactly which rows are affected and with a specific lock level, then explicit lock modes enable this fine-grained control.
+Multi-Version Concurrency Control (MVCC) provides the appropriate concurrency settings for most scenarios. However, if an application requires specific locks that control exactly which rows are affected and with a specific lock level, then explicit lock modes enable this fine-grained control.
 
-In Azure Database for PostgreSQL, there are three types of explicit lock, table-level locks, row-level-locks, and page-level locks. The initial transaction will ask for a lock and, if accepted, this will become the existing lock. If another transaction tries to take out a lock on the same data, it will only be accepted if it does not conflict with the original transaction.
+In Azure Database for PostgreSQL, there are three types of explicit lock, table-level locks, row-level-locks, and page-level locks. The initial transaction asks for a lock and, if accepted, the requested lock becomes the existing lock. If another transaction tries to take out a lock on the same data, the lock is granted if it doesn't conflict with the original transaction.
 
-For example, two transactions can query the same data at the same time with a SELECT statement. This would use an ACCESS SHARE lock and they would both be allowed. In another scenario, one transaction is querying data with a SELECT statement and an ACCESS SHARE lock, but at the same time another transaction tries to drop the same table. Dropping a table requires an ACCESS EXCLUSIVE lock which would not be granted, in this scenario.
+For example, two transactions can query the same data at the same time with a SELECT statement. These requests would use an ACCESS SHARE lock and they would both be allowed. In another scenario, one transaction is querying data with a SELECT statement and an ACCESS SHARE lock, but at the same time another transaction tries to drop the same table. Dropping a table requires an ACCESS EXCLUSIVE lock, which wouldn't be granted, in this scenario.
 
 ## Table-level locks
 
 Table level locks acquire locks on an entire table, even if they have ROW in their name. Locking an entire table might be required if the table itself is being modified, or might be more efficient than taking out many row-level locks.
 
-There are eight types of table-level lock in Azure Database for PostgreSQL and these are the SQL commands that acquire these locks:
+There are eight types of table-level lock in Azure Database for PostgreSQL and the SQL commands that acquire these types of locks are:
 
 |Lock Mode  |Acquired by  |
 |---------|---------|
@@ -21,7 +21,7 @@ There are eight types of table-level lock in Azure Database for PostgreSQL and t
 |EXCLUSIVE     |REFRESH MATERIALIZED VIEW CONCURRENTLY command         |
 |ACCESS EXCLUSIVE     |DROP TABLE, REINDEX, TRUNCATE, CLUSTER, REFRESH MATERIALIZED VIEW (not CONCURRENTLY) commands, most ALTER INDEX and ALTER TABLE commands, and VACUUM FULL         |
 
-Each type of existing lock will block other requested locks being acquired. The following table lists which lock types will be blocked:
+Each type of existing lock blocks other requested locks being acquired. The following table lists what locks block other locks from being acquired:
 
 | -- | Existing ACCESS SHARE  | Existing ROW SHARE | Existing ROW EXCLUSIVE | Existing SHARE UPDATE EXCLUSIVE | Existing SHARE | Existing SHARE ROW EXCL | Existing EXCLUSIVE | Existing ACCESS EXCLUSIVE |
 | -------------------- | - | -------------- | ----------- | ----------- | -------------------- | ------- | ----------------- | ------- |
@@ -36,9 +36,9 @@ Each type of existing lock will block other requested locks being acquired. The 
 
 ## Row-level locks
 
-Row level locks are more granular and will only affect another transaction that is accessing the same row. This improves concurrency, but acquiring and dropping many locks will negatively affect performance. Row-level locks are automatically acquired by PostgreSQL and are not applied manually.
+Row level locks are more granular and only affect another transaction that is accessing the same row. This lock type improves concurrency, but acquiring and dropping many locks negatively affects performance. Row-level locks are automatically acquired by PostgreSQL and aren't applied manually.
 
-There are four types of row-level lock in Azure Database for PostgreSQL and they are acquired depending on which other lock types need to be blocked:
+There are four types of row-level lock in Azure Database for PostgreSQL and they're acquired depending on which other lock types need to be blocked:
 
 | -- | Existing FOR KEY SHARE | Existing FOR SHARE | Existing FOR NO KEY UPDATE | Existing FOR UPDATE |
 | ------------------- | ----------------- | ------------- | --------- | ----------------- |
@@ -49,7 +49,7 @@ There are four types of row-level lock in Azure Database for PostgreSQL and they
 
 ## Page-level locks
 
-Page-level locks affect a page of data, which typically consists of multiple rows. Although PostgreSQL processes use page-level locks they are not typically required by application developers.
+Page-level locks affect a page of data, which typically consists of multiple rows. Although PostgreSQL processes use page-level locks, application developers typically don't require this type of lock.
 
 ## Manually applying locks and viewing current locks
 
