@@ -6,7 +6,7 @@ Depending on the tool you use, you may also share visualizations with other user
 
 They're handy in providing a single pane of glass over your Azure infrastructure and services allowing you to identify critical issues quickly.
 
-:::image type="content" source="../media/azure-dashboards-274204b2.png" alt-text="Azure Dashboards.":::
+:::image type="content" source="../media/azure-dashboards-274204b2.png" alt-text="Diagram showing Azure Dashboards.":::
 
 
 ## Advantages
