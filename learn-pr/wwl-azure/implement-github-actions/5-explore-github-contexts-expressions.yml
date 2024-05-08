@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-github-actions.explore-github-contexts-expressions
+title: Explore contexts and expressions in GitHub
+metadata:
+  title: Explore contexts and expressions in GitHub
+  description: "Explore contexts and expressions in GitHub"
+  ms.date: 05/07/2024
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-explore-github-contexts-expressions.md)]
