@@ -4,12 +4,12 @@ title: Run and monitor pipelines
 metadata:
   title: Run and monitor pipelines
   description: "Run and monitor pipelines"
-  ms.date: 01/31/2024
+  ms.date: 05/08/2024
   author: wwlpublish
-  ms.author: anrudduc
+  ms.author: shlindsay
   ms.topic: unit
   ms.custom:
-    - build-2023
+  - build-2023
 durationInMinutes: 5
 content: |
   [!include[](includes/5-run-monitor-pipelines.md)]
