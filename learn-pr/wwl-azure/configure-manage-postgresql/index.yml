@@ -2,7 +2,7 @@
 uid: learn.wwl.configure-manage-postgresql
 metadata:
   title: Configure and manage Azure Database for PostgreSQL
-  description: "Azure Database for PostgreSQL efficiently manages vast quantities of data and their structures through system catalogs and views. This module explores how to optimize database performance by accessing and configuring metadata, understanding the role of the vacuum process in maintaining database health, and managing server settings. We introduce practical techniques to enhance your PostgreSQL database administration, particularly useful in environments requiring robust data handling and security features."
+  description: "Azure Database for PostgreSQL efficiently manages vast quantities of data and their structures through system catalogs and views. This module explores how to optimize database performance by accessing and configuring metadata., understanding the role of the vacuum process in maintaining database health, and managing server settings. We introduce practical techniques to enhance your PostgreSQL database administration, useful in environments requiring robust data handling and security features."
   ms.date: 05/08/2024
   author: wwlpublish
   ms.author: rcaper

@@ -5,11 +5,11 @@ To investigate metadata in an Azure Database for PostgreSQL database, you can qu
 
 The Azure portal has many pages for settings and monitoring allowing you to assess, and in some cases modify metadata.
 
-[![Screenshot of the Settings and Monitoring links.]](../media/3-settings-monitor.png)
+![Screenshot of the Settings and Monitoring links.](../media/3-settings-monitor.png)
 
 These pages are typically the most straightforward and informative method to view metadata for the most commonly required metrics. Many metrics can also be displayed in a graph to give a visual representation of changes over time.
 
-[![Screenshot of C P U percent metrics.]](../media/3-metrics.png)
+![Screenshot of C P U percent metrics.](../media/3-metrics.png)
 
 ## Investigate metadata using system tables and system views
 
@@ -18,12 +18,12 @@ To query metadata in an Azure Database for PostgreSQL database or server, you ca
 * pg_database
     pg_database has basic information such as the database owner (in **datdba**), the collation, and the connection limit (in **datconnlimit**). A **datconnlimit** of **-1** signifies that there's no connection limit.
 
-    [![Screenshot of query of pg_database]](../media/3-query-code.png)
+    ![Screenshot of query of pg_database](../media/3-query-code.png)
 
 * pg_stat_database
     pg_stat_database contains lock information for each database, updated in real time. Querying this table enables you to see the number of rollbacks and deadlocks on each database.
 
-    [![Screenshot of query of pg_stat_database]](../media/3-query-code-1.png)
+    ![Screenshot of query of pg_stat_database](../media/3-query-code-1.png)
 
 To view the metadata that, you require it's often necessary to write complex sql queries against system tables. The most common queries are referenced in system views. These views are in the **pg_catalog** schema and can be listed with the following query:
 
