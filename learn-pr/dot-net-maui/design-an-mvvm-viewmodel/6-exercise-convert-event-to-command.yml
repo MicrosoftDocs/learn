@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.dotnet-maui.design-a-mvvm-viewmodel.6-exercise-convert-event-to-command
+uid: learn.dotnet-maui.design-a-mvvm-viewmodel.exercise-convert-event-to-command
 title: Exercise - Convert an event handler to a command
 metadata:
   title: Exercise - Convert an event handler to a command
