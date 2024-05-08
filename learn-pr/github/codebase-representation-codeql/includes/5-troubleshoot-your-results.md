@@ -11,7 +11,7 @@ There are several reasons why your CodeQL analysis may be taking too long to com
 
 ### Optimizing CodeQL Queries
 
-Some performance issues may arise from custom queries. You can find common problems and how to troubleshoot them here<sup>[11]</sup>. 
+Some performance issues may arise from custom queries. You can find common problems and how to troubleshoot them in [CodeQL troubleshooting query performance](https://codeql.github.com/docs/writing-codeql-queries/troubleshooting-query-performance/).
 
 Some important points to keep in mind while working with CodeQL and the QL query language:
 
@@ -41,13 +41,13 @@ If the run of a workflow for code scanning fails due to a server error, this may
 
 ### Error: "Out of disk" or "Out of memory"
 
-CodeQL may run out of disk or memory on the runner for very large projects. Contact GitHub Support so that we can investigate this type of issue on a hosted GitHub Actions runner. If running on a self-hosted runner, adjustments may need to be made to the server's specs. See here<sup>[12]</sup> for the recommended hardware when running CodeQL.
+CodeQL may run out of disk or memory on the runner for very large projects. Contact GitHub Support so that we can investigate this type of issue on a hosted GitHub Actions runner. If running on a self-hosted runner, adjustments may need to be made to the server's specs. For the recommended hardware when running CodeQL, see the [CodeQL documentation](https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/recommended-hardware-resources-for-running-codeql).
 
 ### Error: 403 "Resource not accessible by integration" when using Dependabot
 
 Dependabot is considered untrusted when it triggers a workflow run. The workflow will run with read-only scopes. Uploading code scanning results for a branch usually requires the `security_events: write scope`. However, code scanning always allows the uploading of results when the `pull_request` event triggers the action run. We recommend for Dependabot branches that you use the `pull_request` event instead of the `push` event.
 
-A simple approach is to run on pushes to the default branch and any other important long-running branches, as well as pull requests opened against this set of branches. 
+A simple approach is to run on pushes to the default branch and any other important long-running branches, as well as pull requests opened against this set of branches.
 
 Here's an example:
 >
@@ -71,4 +71,4 @@ To fix this error you will need to disable CodeQL in the repository and re-uploa
 
 ### Further Reading
 
-Additional information and troubleshooting can be found here<sup>[13]</sup> 
+For more information about troubleshooting, see the [CodeQL documentation](https://docs.github.com/en/code-security/code-scanning/troubleshooting-code-scanning).
