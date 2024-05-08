@@ -28,7 +28,7 @@ pgAdmin is a popular administration and development platform for PostgreSQL. It'
 
 **psql** is a command line utility that allows you to interact with a PostgreSQL server. It can be [downloaded](https://sbp.enterprisedb.com/getfile.jsp?fileid=1258893) as part of PostgreSQL. In the setup wizard, when you reach the **Select Components** dialog box, select **Command Line Tools**.
 
-[![Screenshot showing the Select Components dialog box.]](../media/3-command-line-tools-setup.png)
+![Screenshot showing the Select Components dialog box.](../media/3-command-line-tools-setup.png)
 
 You can then connect to your database using psql from a command prompt by typing:
 
