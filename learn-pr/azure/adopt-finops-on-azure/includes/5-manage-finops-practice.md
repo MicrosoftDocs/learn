@@ -12,7 +12,7 @@ Driving a culture of accountability through effective organizational alignment o
 
 #### Objective:
 
-Developing a cloud front door process to onboard brownfield and greenfield applications through financial viability and technical feasibility assessment criteria that supports operational objectives, while also maintaining effective cost management.
+Developing a cloud front door process to onboard brownfield and greenfield applications through financial viability and technical feasibility assessment criteria that support operational objectives, while also maintaining effective cost management.
 
 ## FinOps education & enablement
 
@@ -36,7 +36,7 @@ Establishing and evolving policies, controls and governance mechanisms to ensure
 
 #### Objective:
 
-Coordinating activities between an organization's Core FinOps Personas and other disciplines, processes or Allied Personas that may be operating independently - such as ITAM, ITFM, TBM, Security, and Sustainability - in order to promote collaboration for effective cloud operations.
+Coordinating activities between an organization's Core FinOps Personas and other disciplines, processes, or Allied Personas that may be operating independently - such as ITAM, ITFM, TBM, Security, and Sustainability - in order to promote collaboration for effective cloud operations.
 
 ## FinOps tooling & services
 
