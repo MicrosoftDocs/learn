@@ -3,7 +3,7 @@ uid: learn.wwl.procedures-functions-postgresql.exercise-create-stored-procedure-
 title: Exercise - Create a stored procedure in Azure Database for PostgreSQL
 metadata:
   title: Exercise - Create a stored procedure in Azure Database for PostgreSQL
-  description: "Exercise - Create a stored procedure in Azure Database for PostgreSQL"
+  description: "Exercise - Create a stored procedure in Azure Database for PostgreSQL."
   ms.date: 05/08/2024
   author: wwlpublish
   ms.author: rcaper

@@ -1,12 +1,8 @@
-# Create a stored procedure in Azure Database for PostgreSQL
-
 In this exercise, you create a stored procedure.
 
-## Before you start
-
-> [!IMPORTANT]
-> You need your own Azure subscription to complete this exercise. If you don't have an Azure subscription, you can create an [Azure free trial](https://azure.microsoft.com/free).
+> [!NOTE]
 >
+> You need your own Azure subscription to complete this exercise. If you don't have an Azure subscription, you can create an [Azure free trial](https://azure.microsoft.com/free).
 
 Launch the exercise and follow the instructions.
 
