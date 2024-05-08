@@ -1,4 +1,4 @@
-The foundation of Microsoft Fabric is a **lakehouse**, which is built on top of the **OneLake** scalable storage layer and uses Apache Spark and SQL compute engines for big data processing. A lakehouse is a unified platform that combines:
+The foundation of Microsoft Fabric is a **Lakehouse**, which is built on top of the **OneLake** scalable storage layer and uses Apache Spark and SQL compute engines for big data processing. A Lakehouse is a unified platform that combines:
 
 - The flexible and scalable storage of a data *lake*
 - The ability to query and analyze data of a data ware*house*
