@@ -36,6 +36,14 @@ Permissions Management launches with the **Data Collectors** dashboard.
 
 Use the Data Collectors dashboard in Permissions Management to configure data collection settings for your authorization system.
 
- -  If the Data Collectors dashboard isn't displayed when Permissions Management launches:<br>
-     -  In the Permissions Management home page, select Settings (the gear icon), then select the Data Collectors subtab.<br>
- -  Select the authorization system you want: **AWS**, Azure, or **GCP**.
+1.  If the Data Collectors dashboard isn't displayed when Permissions Management launches:
+    
+    
+     -  In the Permissions Management home page, select Settings (the gear icon), then select the Data Collectors subtab.
+2.  Select the authorization system you want: AWS, Azure, or GCP.
+3.  For information on how to onboard an AWS account, Azure subscription, or GCP project into Permissions Management, select one of the following articles and follow the instructions:
+    
+    
+     -  [Onboard an AWS account](/entra/permissions-management/onboard-aws)
+     -  [Onboard an Azure subscription](/entra/permissions-management/onboard-azure)
+     -  [Onboard a GCP project](/entra/permissions-management/onboard-gcp)

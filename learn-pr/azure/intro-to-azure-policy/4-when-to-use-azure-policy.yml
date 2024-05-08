@@ -6,8 +6,8 @@ metadata:
   title: When to use Azure Policy
   description: "Learn ways that you can use Azure Policy to manage resources."
   ms.date: 01/05/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: unit
 durationInMinutes: 1
 content: |

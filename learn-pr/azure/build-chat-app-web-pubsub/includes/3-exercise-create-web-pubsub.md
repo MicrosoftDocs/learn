@@ -11,6 +11,7 @@
     ```azurecli
     LOC=<region-name>
     ```
+
 1. Install or upgrade the *webpubsub* Azure CLI extension to the current version.
 
     ```azurecli
@@ -22,7 +23,7 @@
     ```azurecli
     az webpubsub create \
       --name $WPS_NAME \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
       --location $LOC \
       --sku Free_F1
     ```
@@ -32,6 +33,6 @@
     ```azurecli
     AWPS_ACCESS_KEY=$(az webpubsub key show \
       --name $WPS_NAME \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
       --query primaryConnectionString --output tsv)
     ```

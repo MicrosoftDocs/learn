@@ -5,8 +5,8 @@ metadata:
   title: Batch remediation of issues
   description: Learn about Quick Fix and batch remediation of issues that Azure Advisor has surfaced.
   ms.date: 10/20/2023
-  author: danterasera
-  ms.author: darasera
+  author: aortoll
+  ms.author: anortoll
   ms.topic: unit
 durationInMinutes: 3
 content: |

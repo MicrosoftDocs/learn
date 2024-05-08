@@ -1,149 +1,118 @@
-Up to this point you have only run the application on your machine. The next step is to deploy the app to Azure.
+Now that the API is deployed to the cloud, as a Tailwind Traders engineer, you need to update the client code and deploy it to support the SignalR messages coming for Azure Functions.
 
-## Customize Visual Studio Code
+## Update the client application
 
-Before you begin, there are two changes you need to make to Visual Studio Code.
+1. In Visual Studio Code, open `./start/client/src/index.js` and replace all the code to listen for SignalR messages. The code gets the initial stock list with an HTTP request and then listens for updates from the SignalR connection. When a stock is updated, the client updates the stock price in the UI.
 
-The first change grants Visual Studio Code access to the Azure subscription used by the sandbox.  This subscription was created when you activate the sandbox and allows you to use Azure services without incurring any costs.
+    :::code language="javascript" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/solution/client/src/index.js" :::
 
-The second customization tells the Azure Functions extension to use the advanced creation process. If you skip this step, the extension uses default values and doesn't create your function to work with the sandbox.
+1. Open `./start/client/index.html` and paste the following code in place of the current DIV with the ID of app.
 
-### Add concierge tenant to Visual Studio Code
+    :::code language="html" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/solution/client/index.html" :::
 
-The following steps associate the free Azure subscription created for you with Visual Studio Code. At the end of the tutorial, you follow steps to restore Visual Studio Code back to its original settings.
+    This markup includes a transition element, which allows Vue.js to run a subtle animation as stock data changes. When a stock is updated, the tile fades out and quickly back in to view. This way if the page is full of stock data, users can easily see which stocks have changed.
 
-1. In the Cloud Shell, run the following command and copy the tenant ID to your clipboard.
+1. Add the following script block just above the reference to *bundle.js* to include the SignalR SDK.
 
-    ```bash
-    az account list --query "[?name=='Concierge Subscription'].tenantId" -o tsv
+    ```html
+    <script src="https://cdn.jsdelivr.net/npm/@aspnet/signalr@1.0.3/dist/browser/signalr.js"></script>
     ```
 
-1. Open settings in Visual Studio Code. On Windows or Linux, select **File > Preferences > Settings**. On macOS, select **Code > Preferences > Settings**.
+## Update the client .env 
 
-1. Navigate through **User Settings > Extensions > Azure configuration**
+1. Create an environment variables file in the `start/client` folder named `.env`.
+1. Add a variable named `BACKEND_URL` and add its value you copied from unit 5.
 
-1. Enter the tenant in the **Azure: Tenant** textbox.
-
-![Add tenant ID to Visual Studio Code Azure extension configuration.](../media/serverless-app-vs-code-tenant.png)
-
-### Sign out and back in
-
-Now that you've made these changes, you need to sign out and back into the Azure extension.
-
-1. Press **F1** to open the Visual Studio Code command palette.
-
-1. Search for and select **Azure: Sign Out**.
-
-1. Press **F1** again.
-
-1. Search for and select **Azure: Sign In** and sign in with the same account you used to sign into the Learn sandbox.
-
-### Select subscription
-
-1. Press **F1** to open the Visual Studio Code command palette.
-
-1. Search for and select **Azure: Select Subscriptions** > **Concierge Subscription** and then **OK**.
-
-    ![Visual Studio Code Azure extension: Select concierge subscription.](../media/serverless-app-select-concierge.png)
-
-Now Visual Studio Code is configured to use the sandbox resources and avoid any billing against your account.
-
-## Deploy the function app
-
-1. Press **F1** to open the Visual Studio Code command palette.
-
-1. Search for and select the **Azure Functions: Deploy to Function App** command.
-
-1. Follow the prompts to provide the following information.
-
-   | Name              | Value                                                                    |
-   | ------------------------------- | ------------------------------------------------------------------------ |
-   | Function app                    | Select **Create new Function App in Azure... Advanced**                  |
-   | Function app name               | Enter a globally unique name. Valid characters are `a-z`, `0-9`, and `-`.|
-   | OS                              | Select **Windows**                                                       |
-   | Plan                            | Select **Consumption**                                                   |
-   | Language                        | Select **JavaScript**                                                    |
-   | Resource group                  | Select **<rgn>[sandbox resource group name]</rgn>**                      |
-   | Storage account                 | Select the account you created earlier                                   |
-   | Application Insights resource   | Select **Skip for now**                                                  |
-
-    A new function app is created in Azure and the deployment begins. The Azure Functions Visual Studio Code extension first creates the Azure resources and then deploys the function app.
-
-    Once complete, the Azure Functions extension reports the primary endpoint of the function in a message box as shown by this screenshot.
-
-    ![New function app.](../media/serverless-app-new-function-app.png)
-
-    The functions app name (labeled as **1** in the image) is the unique name you provided as you created the app. The app end point (labeled as **2**) is the function app name followed by *azurewebsites.net*.
-
-1. Open **public/index.html.js** and replace `<FUNCTION_APP_ENDPOINT>` with the function's endpoint.
-
-1. Next, upload your local settings to Azure by opening the command palette via **F1** and select **Azure Functions: Upload local settings**. When prompted, choose the function app that you created, and choose to overwrite all settings.
-
-## Configure static websites in Azure Storage
-
-Use the following steps to configure the Azure Storage account to host a static website.
-
-1. Open the Visual Studio Code command palette via **F1**.
-
-1. Search for and select the **Azure Storage: Configure Static Website** command.
-
-   | Name              | Value                                                             |
-   | ----------------- | ----------------------------------------------------------------- |
-   | Storage account   | Select the account you created earlier.                           |
-   | Default file      | Select **index.html** as the index document name for the account. |
-   | Error document    | Enter **index.html** for the default 404 error document path.     |
-
-The error document path is the page the browser loads when a routing error occurs. This path is important for JavaScript frameworks like Vue.js, which have client-side routing.
-
-## Deploy the web application to Azure Storage
-
-1. Open the Visual Studio Code command palette via **F1**.
-
-1. Search for and select the **Azure Storage: Deploy to Static Website** command.
-
-   | Name              | Value                                                             |
-   | ----------------- | ----------------------------------------------------------------- |
-   | Storage account   | Select the Storage account you created earlier.                   |
-   | Select folder     | Select **browse** and choose the *public* subfolder containing the web app. |
-
-After the extension is done deploying your application, a notification appears that the upload was successful. The upload can take several minutes.
-
-## Determine the primary endpoint address of the static website
-
-1. In the command palette, search for **Azure Storage: Browse static website** and choose your Storage account. The site opens in the browser. At this point, the app doesn't run because of the CORS requirements of Azure Functions.
-
-1. Copy the URL in the browser, which is the endpoint of the static site hosted in your Storage account. You use the endpoint value to set up CORS settings for the function app in the next section.
-
-Keep this browser window open. Once the CORS settings are updated in your function app, you return and refresh this window.
-
-## Set up CORS in the function app
-
-1. In the command palette, search for and select the **Azure Functions: Open in portal** command.
-
-1. Select the function app name.
-
-1. Once the portal is open in the browser, select the **Platform features** tab and under **API** select **CORS**.
-
-1. Check the checkbox next to **Enable Access-Control-Allow-Credentials**.
-
-1. Add an entry with the *static website* **primary endpoint** as the value (make sure to remove the trailing `/`). You can paste this value in from your clipboard.
-
-1. Select **Save** to persist the CORS settings.
-
-    ![Enable CORS support for Azure Functions app.](../media/serverless-app-function-cors.png)
-
-## Run the deployed application
-
-Now you can make change to the application's data and observe how to the data is automatically updated.
-
-1. Arrange Visual Studio Code on one side of the screen and the web browser running the static site on the other. This way you can see the UI update as changes are made to the database.
-
-1. Refresh the browser. It might take a moment for stocks to appear as the serverless functions are running for the first time.
-
-1. In Visual Studio integrated terminal, enter the following command and watch as the UI is automatically updated.
-
-    ```bash
-    npm run update-data
+    ```console
+    BACKEND_URL=https://YOUR-FUNTIONS-APP-NAME.azurewebsites.net
     ```
 
-    ![End state of serverless web app.](../media/serverless-app-deployed.png)
+## Create an Azure Static Web apps resource and deploy client
+
+1. Open the [Azure portal](https://portal.azure.com/#create/Microsoft.FunctionApp) to create a new Azure Static Web Apps resource.
+1. Use the following information to complete the resource creation **Basics** tab.
+
+    | Name                                   | Value                          |
+    | -------------------------------------- | ------------------------------ |
+    | Subscription                            | Select your subscription.|
+    | Resource group                         | Use the resource group `stock-prototype`.|
+    | Static Web App name                      | Postpend your name to `client`. For example, `client-jamie`.|
+    | Hosting plan type                       | Select **Free**.                       |
+    | Deployment source                       | Select **GitHub**.                       |    
+    | Organization                        | Select your GitHub account|
+    | Repository    |  Search and select `mslearn-advocates.azure-functions-and-signalr`. |
+    | Branch            | Select the **main** branch.                    |
+    | Build Presets| Select **Vue.js**.|
+    | App location | Enter `/start/client`.|
+    | API Location | Leave empty.|
+    | Output Location | Enter `dist`.|
+
+1. Select **Preview workflow file** to review the deployment settings. The **Build And Deploy** step should look like the following: 
+
+    :::code language="yaml" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/example-client-workflow.yml" range="30-42":::
+
+1. Select **Close** to save the change. 
+
+1. Select **Review + Create**, then select **Create** to create the resource. Wait for the deployment to complete before continuing.
+1. Select **Go to resource** to open the new Azure Static Web App resource.
+1. On the **Overview** page, copy the **URL** value. This is the base URL of the deployed static web app.
+
+## Add the BACKEND_URL variable to the repository
+
+The workflow needs to have the `BACKEND_URL` environment variable set to the deployed Azure Functions app base URL from unit 5.
+
+1. In a browser for your GitHub fork of the sample repository, select **Settings -> Security -> Secrets and variables -> Actions**.
+1. Select **Variables**, then select **New repository variable**. 
+1. Use the following table to create the variable:
+
+    |Name|Value|
+    |---|---|
+    |BACKEND_URL|The base URL of the deployed Azure Functions app. The URL should be in the format of `https://<FUNCTIONS-RESOURCE-NAME>.azurewebsites.net`|
+
+1. Select **Add variable** to save the variable to the repository.
+
+## Edit GitHub deployment workflow
+
+1. In Visual Studio Code terminal, pull down the new workflow file from your fork (origin). 
+
+    ```bash
+    git pull origin main
+    ```
+
+1. Open the `.github/workflows/azure-static-web-apps-*.yml` file. 
+1. Change the `name` value at the top of the file to `Client`.
+1. Edit the **Build And Deploy** step to add the **env** property for the `BACKEND_URL` environment variable. 
+
+    :::code language="yaml" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/example-client-workflow.yml" :::
+
+1. Save and push the changes to the repository.
+
+    ```bash
+    git add .
+    git commit -m "Add BACKEND_URL environment variable"
+    git push
+    ```
+
+1. Open the **Actions** tab in the GitHub fork repository to watch the deployment. 
+
+## Update CORS in the function app
+
+By default, function apps don't allow CORS requests. You need to update the function app to allow requests from the static web app.
+
+1. In the Azure portal, navigate to the Azure Functions app created in unit 5.
+1. In the left-hand menu, select **API -> CORS**.
+1. Select **Enable Access-Control-Allow-Credentials**.
+1. Add the value you copied for the Static Web Apps resource URL. 
+
+    |Property|Value|
+    |--|--|
+    |Allowed origins|The base URL of the deployed static web app. |
+
+1. Select **Save** to save the CORS settings.
+
+## Test the deployment of the client
+
+1. In a browser, use the URL of the deployed static web app to open the client.
+1. Open developer tools to watch the Console to see when the SignalR data for updated stock is received. Remember these aren't HTTP requests, so you won't see them in the Network tab.
+
+Congratulations! You've deployed your stock app improved with SignalR!

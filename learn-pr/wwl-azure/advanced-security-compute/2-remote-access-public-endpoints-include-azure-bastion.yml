@@ -4,7 +4,7 @@ title: Plan and implement remote access to public endpoints, Azure Bastion and j
 metadata:
   title: Plan and implement remote access to public endpoints, Azure Bastion and just-in-time (JIT) virtual machine (VM) access
   description: "Plan and implement remote access to public endpoints, Azure Bastion and just-in-time (JIT) virtual machine (VM) access"
-  ms.date: 04/15/2024
+  ms.date: 05/02/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

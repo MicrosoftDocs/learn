@@ -1,6 +1,6 @@
 ## Create a new user
 
-1. Sign in to the **Microsoft Entra admin center** as at least a **User Administrator**.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as at least a [User Administrator](/entra/identity/role-based-access-control/permissions-reference#user-administrator).
 
 2. Browse to **Identity** &gt; **Users** &gt; **All users**.
 
@@ -30,10 +30,42 @@ The Basics tab contains the core fields required to create a new user. Before yo
 
 ## Properties
 
-There are six categories of user properties you can provide. These properties can be added or updated after the user is created. To manage these details, go to **Identity** &gt; **Users** &gt; **All users** and select a user to update.
+There are five categories of user properties you can provide. These properties can be added or updated after the user is created. To manage these details, go to **Identity** &gt; **Users** &gt; **All users** and select a user to update.
 
  -  **Identity**: Enter the user's first and last name. Set the User type as either Member or Guest.<br>
  -  **Job information**: Add any job-related information, such as the user's job title, department, or manager.
  -  **Contact information**: Add any relevant contact information for the user.
  -  **Parental controls**: For organizations like K-12 school districts, the user's age group may need to be provided. Minors are 12 and under, Not adult are 13-18 years old, and Adults are 18 and over. The combination of age group and consent provided by parent options determine the Legal age group classification. The Legal age group classification may limit the user's access and authority.
  -  **Settings**: Specify the user's global location.
+
+Either select the **Review + create** button to create the new user or **Next: Assignments** to complete the next section.
+
+## Assignments
+
+You can assign the user to an administrative unit, group, or Microsoft Entra role when the account is created. You can assign the user to up to 20 groups or roles. You can only assign the user to one administrative unit. Assignments can be added after the user is created.
+
+To assign a group to the new user:
+
+1. Select + **Add group**.
+
+2. From the menu that appears, choose up to 20 groups from the list and select the **Select** button.
+
+3. Select the **Review + create** button.
+
+To assign a role to the new user:
+
+1. Select + **Add role**.<br>
+
+2. From the menu that appears, choose up to 20 roles from the list and select the **Select** button.
+
+3. Select the **Review + create** button.
+
+To add an administrative unit to the new user:
+
+1. Select + **Add administrative unit**.<br>
+
+2. From the menu that appears, choose one administrative unit from the list and select the **Select** button.
+
+3. Select the **Review + create** button.
+
+4. The final tab captures several key details from the user creation process.

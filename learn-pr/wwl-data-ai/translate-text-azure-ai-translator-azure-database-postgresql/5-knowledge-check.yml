@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/26/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How many languages does Azure AI Translator support?"
+    choices:
+    - content: "0-50."
+      isCorrect: false
+      explanation: "Incorrect. The Azure AI Translator service supports more than 50 languages."
+    - content: "50-100."
+      isCorrect: false
+      explanation: "Incorrect. The Azure AI Translator service supports more than 100 languages."
+    - content: "Over 100."
+      isCorrect: true
+      explanation: "Correct. The Azure AI Translator service supports more than 100 languages for text and document translation."
+  - content: "Which function call allows us to translate text using the Azure AI Translator service in Azure Database for PostgreSQL Flexible Server?"
+    choices:
+    - content: "`azure_ai.translate_text()`."
+      isCorrect: false
+      explanation: "Incorrect. There's no `translate_text()` function in the `azure_ai` extension."
+    - content: "`azure_cognitive.translate()`."
+      isCorrect: true
+      explanation: "Correct. The `translate()` function in the `azure_cognitive` schema allows us to translate text using the Azure AI Translator service."
+    - content: "`azure_ai.translate()`."
+      isCorrect: false
+      explanation: "Incorrect. There's a `translate()` function in the `azure_ai` extension but not in the `azure_ai` schema."
+  - content: "Which language code represents Simplified Chinese for the Azure AI Translator service?"
+    choices:
+    - content: "zh."
+      isCorrect: false
+      explanation: "Incorrect. You must be more specific because there are multiple Chinese language codes."
+    - content: "zh-CN."
+      isCorrect: false
+      explanation: "Incorrect. There's no zh-CN language code for Azure AI Translator."
+    - content: "zh-Hans."
+      isCorrect: true
+      explanation: "Correct. zh-Hans is the language code for Simplified Chinese in the Azure AI Translator service. There's also a zh-Hant code for Traditional Chinese."
+  - content: "What elements are available in the output of the `azure_cognitive.translate()` function's `translations` column?"
+    choices:
+    - content: "Language and translated text."
+      isCorrect: true
+      explanation: "Correct. The `translations` column includes the language code and the translated text for each language you send into the function."
+    - content: "Just the translated text."
+      isCorrect: false
+      explanation: "Incorrect. The `translations` column includes more than just the translated text."
+    - content: "Language and original text."
+      isCorrect: false
+      explanation: "Incorrect. The original text doesn't appear in the `translations` column."
