@@ -8,11 +8,11 @@ Query Store isn't enabled by default, but can be turned on globally or on a per-
 1. Select **Server parameters** and navigate to the **pg_qs.query_capture_mode** setting.
 1. Select **TOP**.
 
-    [![Screenshot of settings to turn Query Store on.]](../media/3-settings-turn-query-store-on.png)
+    [![Screenshot of settings to turn on the Query Store.]](../media/3-settings-turn-query-store-on.png)
 
 1. Navigate to **pgms_wait_sampling.query_capture_mode**, select **ALL**, and select **Save**.
 
-   [![Screenshot of settings to turn pgms_wait_sampling.query_capture_mode on]](../media/3-query-capture-mode.png)
+   [![Screenshot of settings to turn on pgms_wait_sampling.query_capture_mode]](../media/3-query-capture-mode.png)
 
 ## Access information in the Query Store
 
