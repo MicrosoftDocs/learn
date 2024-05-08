@@ -16,21 +16,13 @@ summary: Azure Database for PostgreSQL is an ACID compliant database service. Wr
 abstract: |
   After completing this module, you'll be able to:
 
-  -
+  -   Describe write-ahead logging.
 
-  Describe write-ahead logging.
-
-  -
-
-  Describe replication and logical decoding.
+  -   Describe replication and logical decoding.
 prerequisites: |
-  -
+  -   Demonstrate an understanding of relational databases.
 
-  Demonstrate an understanding of relational databases.
-
-  -
-
-  Demonstrate an understanding of basic SQL.
+  -   Demonstrate an understanding of basic SQL.
 iconUrl: /training/achievements/understand-write-ahead-logging.svg
 levels:
 - intermediate
