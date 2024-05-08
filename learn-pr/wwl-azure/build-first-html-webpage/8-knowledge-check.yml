@@ -40,12 +40,12 @@ quiz:
       explanation: "Correct. A hyperlink points to other content on the website or the internet."
   - content: "Which best describes the correct use of the `<li>` tag??"
     choices:
-    - content: "The `<li>` tag is used for orderdered list items."
+    - content: "The `<li>` tag is used for ordered list items."
       isCorrect: false
-      explanation: "Incorrect. The `<li>` is used for both oredered and unordered lists."
-    - content: "The `<li>` tag is used for unorderdered list items."
+      explanation: "Incorrect. The `<li>` is used for both ordered and unordered lists."
+    - content: "The `<li>` tag is used for unordered list items."
       isCorrect: false
-      explanation: "Incorrect. The `<li>` is used for both oredered and unordered lists."
-    - content: "The `<li>` tag is used for both orderdered adn unordered list items."
+      explanation: "Incorrect. The `<li>` is used for both ordered and unordered lists."
+    - content: "The `<li>` tag is used for both ordered adn unordered list items."
       isCorrect: true
-      explanation: "Correct. The `<li>` is used for both oredered and unordered lists."
+      explanation: "Correct. The `<li>` is used for both ordered and unordered lists."

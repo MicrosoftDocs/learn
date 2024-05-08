@@ -1,4 +1,4 @@
-In this exercise, you will add the rest of the information to your resume. You'll include your email address, social media links, and list of experience. The exercise will use generic text, but you should feel free to customize the content to match your details.
+In this exercise, you'll add the rest of the information to your resume. You'll include your email address, social media links, and list of experience. The exercise will use generic text, but you should feel free to customize the content to match your details.
 
 ## Add Your Email Address and Social Media
 
@@ -38,7 +38,7 @@ Let's start by adding your email address and social media links to your resume.
 
 ## Adding Education and Experience
 
-With the contact information added, you will now finish adding to your resume by including education and other experience.
+With the contact information added, you'll now finish adding to your resume by including education and other experience.
 
 1. Inside **index.html**, below the comment that reads `<!-- education -->`, add the following HTML for your education information:
 
