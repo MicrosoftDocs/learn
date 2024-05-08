@@ -16,12 +16,12 @@ You can also use the Microsoft Defender portal to monitor, manage, and investiga
 
 You can sign into the Microsoft Defender portal at [https://security.microsoft.com/](https://security.microsoft.com/).
 
-Sign in with a user account assigned to an Azure AD security group with access to the Microsoft Defender portal.
+Sign in with a user account assigned to a Microsoft Entra ID security group with access to the Microsoft Defender portal.
 
  -  Microsoft Defender sensor. Microsoft Defender sensors are installed directly on your domain controllers. The sensors monitor domain controller traffic without requiring a dedicated server or port mirroring configurations.
  -  Microsoft Defender cloud service. The Microsoft Defender cloud service runs on the Azure infrastructure and is deployed in the United States, Europe, and Asia. The Microsoft Defender cloud service is connected to the Microsoft Intelligent Security Graph.
 
-:::image type="content" source="../media/azure-defender-62d904d7.png" alt-text="Screenshot of the Azure Defender dashboard and event timeline. Security events display, such as honeytoken activity, remote execution attempt detected, and suspicious service created.":::
+:::image type="content" source="../media/azure-defender-62d904d7.png" alt-text="Screenshot of the Microsoft Defender dashboard and event timeline with security events displayed.":::
 
 
 ## Cryptocurrency mining and other-advanced attacks
