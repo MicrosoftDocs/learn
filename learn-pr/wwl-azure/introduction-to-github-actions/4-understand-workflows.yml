@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-to-github-actions.understand-workflows
-title: Understand workflows
+title: Understand Workflows
 metadata:
-  title: Understand workflows
-  description: "Understand workflows"
-  ms.date: 12/09/2022
+  title: Understand Workflows
+  description: "Understand Workflows"
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.custom:
+  - N/A
+durationInMinutes: 3
 content: |
   [!include[](includes/4-understand-workflows.md)]
