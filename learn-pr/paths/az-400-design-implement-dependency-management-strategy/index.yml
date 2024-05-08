@@ -3,7 +3,7 @@ uid: learn.wwl.az-400-design-implement-dependency-management-strategy
 metadata:
   title: 'AZ-400: Design and implement a dependency management strategy'
   description: 'AZ-400: Design and implement a dependency management strategy'
-  ms.date: 05/26/2022
+  ms.date: 05/06/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: learning-path
@@ -12,7 +12,7 @@ prerequisites: |
   None
 summary: |
   This learning path examines dependency management in software development, how to identify them in your codebase and how to package and manage dependencies in package feeds.
-iconUrl: /training/achievements/az-400-design-and-implement-a-dependency-management-strategy.svg
+iconUrl: /learn/achievements/az-400-design-and-implement-a-dependency-management-strategy.svg
 levels:
 - advanced
 roles:

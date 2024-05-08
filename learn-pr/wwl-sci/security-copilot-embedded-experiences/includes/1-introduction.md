@@ -14,3 +14,4 @@ After completing this module, you'll be able to:
 - Describe Microsoft Copilot in Microsoft Defender XDR.
 - Describe Microsoft Copilot in Microsoft Purview.
 - Describe Microsoft Copilot in Microsoft Entra.
+- Describe Microsoft Copilot in Microsoft Intune.

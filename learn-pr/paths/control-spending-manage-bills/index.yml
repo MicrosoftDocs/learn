@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.control-spending-manage-bills
 metadata:
-  title: Control Azure spending and manage bills with Microsoft Cost Management and billing learning path
+  title: "Control Azure spending and manage bills with Microsoft Cost Management + Billing"
   description: Learn how to monitor and control your Azure spending and optimize the use of Azure resources.
   brand: azure
   ms.date: 03/23/2020
   author: bandersmsft
   ms.author: banders
   ms.topic: learning-path
-title: Control Azure spending and manage bills with Microsoft Cost Management + Billing
+title: "Control Azure spending and manage bills with Microsoft Cost Management + Billing"
 summary: Learn how to monitor and control your Azure spending and optimize the use of Azure resources.
 prerequisites: None
 iconUrl: /training/achievements/control-spending-manage-bills.svg
@@ -33,5 +33,6 @@ modules:
 - learn.save-money-with-azure-reserved-instances
 - learn.optimize-costs-data-analysis-powerbi
 - learn.manage-costs-partner-cost-management
+- learn.azure.azure-savings-plan-for-compute
 trophy:
   uid: learn.control-spending-manage-bills.trophy

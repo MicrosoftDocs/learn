@@ -51,10 +51,10 @@ quiz:
     - content: "The new business is risky and might fail."
       isCorrect: false
       explanation: "All sorts of businesses can use Azure Communication Services, even ones that might not succeed. It's the platform and programming language the business is using that's the problem."
-    - content: "The business's programming language and platform aren't compatible with Azure Communication Services"
+    - content: "The business's programming language and platform aren't compatible with Azure Communication Services."
       isCorrect: true
       explanation: "Azure Communication Services doesn't support all programming languages or devices yet. As this business is using a proprietary programming language and device, it isn't compatible with Azure Communication Services."
-    - content: "New businesses shouldn't use Azure Communication Services"
+    - content: "New businesses shouldn't use Azure Communication Services."
       isCorrect: false
       explanation: "New businesses can provide innovation and new insights to an industry, and are welcome to try Azure Communication Services. The issue is that the platform and device are incompatible with Azure Communication Services."
   - content: "A company wants to process live communication data from its customers. Why isn't Azure Communication Services a good choice for this scenario?"

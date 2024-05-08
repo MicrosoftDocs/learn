@@ -3,7 +3,7 @@ uid: learn.wwl.manage-application-access-microsoft-entra-id
 metadata:
   title: Manage application access in Microsoft Entra ID
   description: "This module focuses on effectively managing identities and enhancing security in Microsoft Enterprise Identity, ensuring that users, groups, and external identities are protected against security threats and unauthorized access."
-  ms.date: 04/02/2024
+  ms.date: 04/29/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
@@ -16,13 +16,13 @@ summary: This module covers managing application access in Microsoft Entra ID, i
 abstract: |
   By the end of this module, participants are able to:
 
-  - Manage enterprise application access in Microsoft Entra ID, including OAuth permission grants for access control.
+  -   Manage enterprise application access in Microsoft Entra ID, including OAuth permission grants for access control.
 
-  - Govern application integration with identity platforms through Microsoft Entra ID app registrations.
+  -   Govern application integration with identity platforms through Microsoft Entra ID app registrations.
 
-  - Configure app registration permission scopes for appropriate resource access levels.
+  -   Configure app registration permission scopes for appropriate resource access levels.
 
-  - Manage app registration consent and use service principals and managed identities for automated management and enhanced security.
+  -   Manage app registration consent and use service principals and managed identities for automated management and enhanced security.
 prerequisites: '-   None'
 iconUrl: /training/achievements/generic-badge.svg
 levels:

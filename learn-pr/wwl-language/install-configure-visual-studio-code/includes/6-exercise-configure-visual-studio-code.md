@@ -1,4 +1,4 @@
-You can extend the capabilities of Visual Studio Code using extensions. The Visual Studio Code community has built hundreds of useful extensions available on the Visual Studio Code Marketplace.
+You can extend the capabilities of Visual Studio Code using extensions. The Visual Studio Code community has hundreds of useful extensions available on the Visual Studio Code Marketplace.
 
 ## Configure Visual Studio Code Extensions
 
@@ -12,7 +12,7 @@ Now that you're familiar with the Visual Studio Code user interface, your next s
 
     Entering "C#" filters the list of extensions to show only the extensions that have something to do with C# coding.
 
-1. In the filtered list of available extensions, select the extension labeled "**C# Dev Kit** - Official C# extension from Microsoft" that's published by Microsoft.
+1. In the filtered list of available extensions, select the extension labeled "**C# Dev Kit** - Official C# extension from Microsoft" published by Microsoft.
 
     ![Screenshot showing Visual Studio Code C# Dev Kit extension that's published by Microsoft.](../media/visual-studio-code-csharp-extension-microsoft.png)
 
@@ -29,15 +29,32 @@ Now that you're familiar with the Visual Studio Code user interface, your next s
 
 1. On the **EXTENSIONS** view, clear the text **C#** from the Search textbox.
 
-    The **EXTENSIONS** view will refresh to show all of the **INSTALLED** extensions at the top of the list. Popular and recommended extensions are listed below the installed extensions.
+    The **EXTENSIONS** view refreshes to show all of the **INSTALLED** extensions at the top of the list. Popular and recommended extensions are listed below the installed extensions.
 
 1. Notice that installing the C# Dev Kit installs the following extensions:
 
     - **.NET Install Tool**. This extension installs and manages different versions of the .NET SDK and Runtime.
-    - **C#**. This extension provides base language support for C#.
-    - **C# Dev Kit** - The official C# extension from Microsoft.
-    - **IntelliCode for C# Dev Kit**. This extension provides AI-assisted development for C# Dev Kit.
+    - **C# - Base language support for C#**.
+    - **C# Dev Kit - Official C# extension from Microsoft**.
 
-    These four extensions are the only ones that you need for now.
 
-In the next unit, you create a C# code project in Visual Studio Code.
+1. The final extension we need is the **IntelliCode for C# - AI-assisted development for C# Dev Kit**. This extension provides AI-assisted development for C# Dev Kit.
+
+1. Ensure that you have Visual Studio Code open.
+
+1. On the **Activity bar**, select **Extensions**.
+
+1. In the **Search Extensions in Marketplace** textbox, enter **C#**
+
+1. In the filtered list of available extensions, select the extension labeled **IntelliCode for C# - AI-assisted development for C# Dev Kit** published by Microsoft.
+
+    ![Screenshot showing Visual Studio Code IntelliCode for C# Dev Kit extension that's published by Microsoft.](../media/visual-studio-code-csharp-intellicode-extension-microsoft.png)
+
+
+1. To install the extension, select **Install**.
+
+    The Install button changes to Installing. The **IntelliCode for C#** extension should install quickly.
+
+The four extensions you installed are the only ones that you need for now.
+
+In the next Unit, you create a C# code project in Visual Studio Code.
