@@ -4,4 +4,4 @@ Now that you completed this module, you should be able to:
 
 - Describe Multi-Version Content Control and snapshots in Azure Database for PostgreSQL.
 - Describe isolation levels in Azure Database for PostgreSQL.
-- Describe locking in Azure Database for PostgreSQL.
+- Describe locking in Azure Database for PostgreSQL. 
