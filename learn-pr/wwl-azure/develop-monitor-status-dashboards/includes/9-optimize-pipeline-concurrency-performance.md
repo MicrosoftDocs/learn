@@ -6,7 +6,7 @@ Optimization involves balancing performance requirements against cost considerat
 
 Divide task sequences in pipelines into parallel jobs and stages to maximize concurrency and reduce overall execution time. Utilize matrix builds and multi-stage pipelines to parallelize builds across different configurations or environments.
 
-In general, using parallelism allows for multiple jobs to run simultaneously, which tends to increase the efficiency of resource utilization and overall pipeline performance. However, this increase in performance need to be weighed against the cost associated with running parallel jobs. It is important to find a proper balance between the desired performance and the number of parallel jobs to minimize costs.
+In general, using parallelism allows for multiple jobs to run simultaneously, which tends to increase the efficiency of resource utilization and overall pipeline performance. However, this increase in performance needs to be weighed against the cost associated with running parallel jobs. It is important to find a proper balance between the desired performance and the number of parallel jobs to minimize costs.
 
 ## Leveraging job dependencies and conditions
 
