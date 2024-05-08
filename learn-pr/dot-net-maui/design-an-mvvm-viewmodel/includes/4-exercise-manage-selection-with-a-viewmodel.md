@@ -48,9 +48,9 @@ Instead, let's update the app to have the `MovieDetailPage` read the selected mo
 1.  Replace the `ListView_ItemTapped` event handler code with the following code:
 
     ```csharp
-    private void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
+    private async void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
     {
-        Navigation.PushAsync(new Views.MovieDetailPage());
+        await Navigation.PushAsync(new Views.MovieDetailPage());
     }
     ```
 

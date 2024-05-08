@@ -14,6 +14,6 @@ In this module, you'll learn the parts of the MVVM pattern and the responsibilit
 
 In this module, you will:
 
-- Identify when to use the Model-View-ViewModel pattern
-- Use a viewmodel to drive visual behavior
-- Improve code testability through data-bindable properties
+- Identify when to use the Model-View-ViewModel pattern.
+- Use a viewmodel to drive visual behavior.
+- Improve code testability through data-bindable properties.

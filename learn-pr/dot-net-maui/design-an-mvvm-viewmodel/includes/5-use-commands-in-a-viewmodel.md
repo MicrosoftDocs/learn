@@ -43,7 +43,7 @@ public interface ICommand
 
 This command pattern lets you maintain clean separation of UI behavior from UI implementation. But it can complicate your code if you need to create a separate class to implement each event handler.
 
-Instead of creating several custom classes that implement the interface, it's common to use `Command` or `Command<T>`. These classes implement `ICommand` but expose its behavior as properties in your viewmodel that you can set. This allows you to implement the `GiveBonus` property that we described earlier entirely within our viewmodel class:
+Instead of creating several custom classes that implement the interface, it's common to use `Command` or `Command<T>`. These classes implement `ICommand` but expose its behavior as properties in your viewmodel that you can set. This allows you to implement the `GiveBonus` property described earlier entirely within our viewmodel class:
 
 ```csharp
 public class EmployeeViewModel : INotifyPropertyChanged
