@@ -8,7 +8,7 @@ Let's start by adding your email address and social media links to your resume.
 
 >[!NOTE]
 >If you closed your browser or CodeSwing, follow these steps to reopen your CodeSwing project.
-> 1. Open [vscode.dev](https://vscode.dev). If you already have your html file open and just need to reopen CodeSwing, skip to step 6.
+>1. Open [vscode.dev](https://vscode.dev). If you already have your html file open and just need to reopen CodeSwing, skip to step 6.
 >1. Select **Open Folder**.
 >1. Navigate to the **resume** folder you created earlier and select **Select Folder**.
 >1. When prompted to **Let site view files**, select **View Files**.
