@@ -24,7 +24,7 @@ steps:
     db_test "$env:DB_PASSWORD"
 ```
 
-It's important to follow this approach, which minimizes the risk of their accidental exposure. Secrets passed between processes from the command line can be viewed by using the ps command and captured in security audit logs.
+It's important to follow this approach, which minimizes the risk of their accidental exposure. Secrets passed between processes from the command line can be viewed by using the PowerShell command and captured in security audit logs.
 
 ## Using secrets in if: conditionals
 
