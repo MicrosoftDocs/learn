@@ -8,4 +8,4 @@ After learning about the Azure Quantum service and its components, you can see t
 - A Resource Estimator to help you estimate the resources needed to run your quantum programs.
 - A quantum programming language, Q#, with quantum libraries.
 - Integration of quantum and classical computing.
-- A Copilot to help you write your quantum programs.
+- Copilot to help you write your quantum programs.

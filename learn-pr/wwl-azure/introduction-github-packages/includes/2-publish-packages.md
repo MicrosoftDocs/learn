@@ -2,84 +2,14 @@ GitHub Packages use native package tooling commands to publish and install packa
 
 ### Support for package registries
 
-:::row:::
-  :::column:::
-    **Language**
-  :::column-end:::
-  :::column:::
-    **Package format**
-  :::column-end:::
-  :::column:::
-    **Package client**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    JavaScript
-  :::column-end:::
-  :::column:::
-    package.json
-  :::column-end:::
-  :::column:::
-    npm
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Ruby
-  :::column-end:::
-  :::column:::
-    Gemfile
-  :::column-end:::
-  :::column:::
-    gem
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Java
-  :::column-end:::
-  :::column:::
-    pom.xml
-  :::column-end:::
-  :::column:::
-    mvn
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Java
-  :::column-end:::
-  :::column:::
-    build.gradle or build.gradle.kts
-  :::column-end:::
-  :::column:::
-    gradle
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    .NET
-  :::column-end:::
-  :::column:::
-    nupkg
-  :::column-end:::
-  :::column:::
-    dotnet CLI
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    N/A
-  :::column-end:::
-  :::column:::
-    Dockerfile
-  :::column-end:::
-  :::column:::
-    Docker
-  :::column-end:::
-:::row-end:::
-
+| **Language** | **Package format**               | **Package client** |
+| ------------ | -------------------------------- | ------------------ |
+| JavaScript   | package.json                     | npm                |
+| Ruby         | Gemfile                          | gem                |
+| Java         | pom.xml                          | mvn                |
+| Java         | build.gradle or build.gradle.kts | gradle             |
+| .NET         | nupkg                            | dotnet CLI         |
+| N/A          | Dockerfile                       | Docker             |
 
 When creating a package, you can provide a description, installation and usage instructions, and other details on the package page. It helps people consuming the package understand how to use it and its purposes.
 
@@ -135,17 +65,21 @@ You can authenticate using npm by either editing your per-user *~/.npmrc* file t
 
 Edit your *~/.npmrc* file for your project to include the following line:
 
+<!--- raw content start --->
 //npm.pkg.github.com/:_authToken=TOKEN
+<!--- raw content end --->
 
 Create a new *~/.npmrc* file if one doesn't exist.
 
 If you prefer to authenticate by logging in to npm, use the npm login command.
 
+<!--- raw content start --->
 $ npm login --scope=@OWNER --registry=https://npm.pkg.github.com
 
 > Username: USERNAME
 > Password: TOKEN
 > Email: PUBLIC-EMAIL-ADDRESS
+<!--- raw content end --->
 
 > [!NOTE]
 > Replace *USERNAME* with your GitHub username, *TOKEN* with your PAT, and *PUBLIC-EMAIL-ADDRESS* with your email address.
