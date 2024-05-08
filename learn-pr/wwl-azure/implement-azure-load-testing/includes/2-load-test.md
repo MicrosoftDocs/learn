@@ -1,4 +1,4 @@
-Azure Load Testing is a service provided by Microsoft Azure that allows developers and testers to generate high-scale loads to identify performance bottlenecks in applications and automate regression testing. It is designed to help optimize the performance, scalability, and capacity of applications by simulating real-world loads.
+Azure Load Testing is a service provided by Microsoft Azure that allows developers and testers to generate high-scale loads to identify performance bottlenecks in applications and automate regression testing. It's designed to help optimize the performance, scalability, and capacity of applications by simulating real-world loads.
 
 ## Azure Load Testing components
 
@@ -34,7 +34,7 @@ A test contains the following configuration settings for running the load test:
 - **Load test parameters**: Environment variables, secrets, and certificates.
 - **Load configuration**: Specify the number of test engines in the load test configuration. Specify the number of virtual users in the test script.
 - **Test criteria**: Define failure criteria to specify the performance expectations in the test and configure auto-stop settings for the test.
-- **Monitoring settings**: Configure the list of Azure app components and resource metrics to monitor during the test run.
+- **Monitoring settings**: Configure the list of Azure app components and resource metrics to monitor.
 
 When you start a test, Azure Load Testing deploys the JMeter test script, related files, and configuration to the test engine instances. The test engine instances then initiate the JMeter test script to simulate the application load.
 
@@ -51,7 +51,7 @@ After the test run completes, you can view and analyze the load test results in 
 
 ### Test engine
 
-A test engine is computing infrastructure, managed by Microsoft that runs the Apache JMeter test script. The test engine instances run the JMeter script in parallel. You can scale out your load test by configuring the number of test engine instances. By running the load test across many parallel test engine instances, Azure Load Testing can scale out the number of virtual users that simulate traffic to your application. The load pattern determines how the load is distributed over the duration of the load test.
+A test engine is computing infrastructure, managed by Microsoft that runs the Apache JMeter test script. The test engine instances run the JMeter script in parallel. You can scale out your load test by configuring the number of test engine instances. Azure Load Testing can scale out the number of virtual users that simulate traffic to your application by running the load test across many parallel test engine instances. The load pattern determines how the load is distributed over the duration of the load test.
 
 Examples of load patterns:
 

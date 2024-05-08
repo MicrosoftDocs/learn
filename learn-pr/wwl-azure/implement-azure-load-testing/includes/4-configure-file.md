@@ -58,7 +58,7 @@ keyVaultReferenceIdentity: /subscriptions/abcdef01-2345-6789-0abc-def012345678/r
 
 ## Configure load parameters
 
-To simulate user traffic for your application, you can configure the load pattern and the number of virtual users you want to simulate load for. By running the load test across many parallel test engine instances, Azure Load Testing can scale out the number of virtual users that simulate traffic to your application. The load pattern determines how the load is distributed over the duration of the load test. Examples of load patterns are **linear**, **stepped**, or **spike load**.
+To simulate user traffic for your application, you can configure the load pattern and the number of virtual users you want to simulate load for. Azure Load Testing can scale out the number of virtual users that simulate traffic to your application by running the load test across many parallel test engine instances. The load pattern determines how the load is distributed over the duration of the load test. Examples of load patterns are **linear**, **stepped**, or **spike load**.
 
 Depending on the type of load test, URL-based, or JMeter-based, you have different options to configure the target load and the load pattern. The following table lists the differences between the two test types.
 
