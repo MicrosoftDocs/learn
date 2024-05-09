@@ -2,22 +2,29 @@
 uid: learn.wwl.explore-postgresql-architecture
 metadata:
   title: Explore PostgreSQL architecture
-  description: "PostgreSQL is an open-source relational database system that is now available as a service in Azure. In this module you will learn about the PostgreSQL architecture, and how to manage different aspects of PostgreSQL in Azure Database for PostgreSQL."
-  ms.date: 10/27/2022
+  description: "PostgreSQL is an open-source relational database system that is now available as a service in Azure. In this module, you learn about the PostgreSQL architecture, and how to manage different aspects of PostgreSQL in Azure Database for PostgreSQL."
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
   ms.service: postgresql
+  ai-usage: human-only
 title: Explore PostgreSQL architecture
-summary: PostgreSQL is an open-source relational database system that is available as an Azure service. In this module you will learn about the PostgreSQL architecture, and how to manage different aspects of Azure Database for PostgreSQL.
+summary: PostgreSQL is an open-source relational database system that is available as an Azure service. In this module, you learn about the PostgreSQL architecture, and how to manage different aspects of Azure Database for PostgreSQL.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe the architecture of PostgreSQL.
-  - Describe the options for creating an Azure Database for PostgresQL server
-  - Understand PostgreSQL shared memory
+
+  -   Describe the architecture of PostgreSQL.
+
+  -   Describe the options for creating an Azure Database for PostgreSQL server.
+
+  -   Understand PostgreSQL shared memory.
 prerequisites: |
-  - Demonstrate an understanding of relational databases.
-  - Demonstrate an understanding of basic SQL.
+  -   Demonstrate an understanding of relational databases.
+
+  -   Demonstrate an understanding of basic SQL.
 iconUrl: /training/achievements/explore-postgresql-architecture.svg
 levels:
 - intermediate
