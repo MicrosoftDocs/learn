@@ -23,7 +23,5 @@ subjects:
 - accessibility
 modules:
 - learn.cela-accessibility-features
-- learn.digital-accessibility
-- learn.accessible-content-m365
 trophy:
   uid: learn.accessibility-fundamentals.trophy
