@@ -8,26 +8,26 @@ When you want to output data from a cell, you have a few different techniques yo
 
 - **Expression**. In this case, you put the variable on a standalone row like this: 
 
-```csharp
-var name = "Diego";
-name
-```
+    ```csharp
+    var name = "Diego";
+    name
+    ```
 
 In the example, you see how the variable name is placed on the last row and there’s no semicolon. Polyglot Notebook interprets that as an expression rather than a statement (code that is completed with a semicolon at the end).
 
 - **Language specific output**. Depending on what language you’re writing in, the way to output information has a different syntax. Here are two examples of C# and JavaScript respectively:
 
-```csharp
-var name = "Diego";
-Console.WriteLine(name);
-```
+    ```csharp
+    var name = "Diego";
+    Console.WriteLine(name);
+    ```
 
-Next, Create a separate code cell with JavaScript as selected kernel
+    Next, Create a separate code cell with JavaScript as selected kernel
 
-```javascript
-name = "Chris";
-console.log(name)
-```
+    ```javascript
+    name = "Chris";
+    console.log(name)
+    ```
 
 - **Display command**. To further improve the output, you can use a display helper. When you call the `display`function, it provides a more appealing output. Other benefits of using display helper include:
 
@@ -125,7 +125,7 @@ In the code, the user is prompted for input with the text "Please enter a URL" a
 
 ## Direct data entry with `#!value`
 
-Another handy functionality is being able to store values of different types. Imagine you have a few lines of JSON or XML or whatever you have, and you just want to store the value as is. Here’s a great prefix you can use for the call `#!value`. Here’s an example of it being used: 
+Another handy functionality is being able to store values of different types. Imagine you have a few lines of JSON or XML or whatever you have, and you just want to store the value as is. Here’s a great prefix you can use for the call `#!value`. Here’s an example of it being used:
 
 ```javascript
 #!value --name productsJSON

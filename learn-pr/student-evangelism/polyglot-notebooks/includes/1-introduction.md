@@ -10,7 +10,7 @@ After completing this module, you'll be able to:
 - Create and run Notebooks. 
 - Use features like variable sharing and commands to combine frontend and backend and mermaid to render flowcharts and diagrams. 
 
-## Learning Objectives
+## Learning objectives
 
 By completing this module, you learn to document your IT systems not only with static text but also with code that you can run to create "living documentation".
 

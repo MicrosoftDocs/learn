@@ -4,47 +4,47 @@ In this exercise, we try out some of the more advanced features in Polyglot Note
 
 Let’s show how valuable it can be to share variables between cells using different kernels.  
 
-- Create a cell using +Code button.
-- Select the kernel by selecting the button in the drop list on the right side, select **csharp C# Script** 
-- Type the following code into the code cell:
+1. Create a cell using +Code button.
+1. Select the kernel by selecting the button in the drop list on the right side, select **csharp C# Script** 
+1. Type the following code into the code cell:
 
-```csharp
-var products = new []{"Saab", "Volvo", "BMW"};
-foreach(var product in products)
-{
-    Console.WriteLine(product);
-}
-```
+    ```csharp
+    var products = new []{"Saab", "Volvo", "BMW"};
+    foreach(var product in products)
+    {
+        Console.WriteLine(product);
+    }
+    ```
 
-- Run the code cell using the play icon.
-- Create another cell in the same way using +Code button but this time select JavaScript as kernel.
-- Select "variables" menu option on top.
-- Select the share icon in the Actions column.
-- Next, select the "JavaScript – JavaScript" option.
+1. Run the code cell using the play icon.
+1. Create another cell in the same way using +Code button but this time select JavaScript as kernel.
+1. Select "variables" menu option on top.
+1. Select the share icon in the Actions column.
+1. Next, select the "JavaScript – JavaScript" option.
 
-![A screenshot showing the different kernels in Polyglot Notebook.](../media/different-kernels-14.png)
+    ![A screenshot showing the different kernels in Polyglot Notebook.](../media/different-kernels-14.png)
 
-You should see a new code cell being created, with JavaScript as kernel, containing the following code:
+    You should see a new code cell being created, with JavaScript as kernel, containing the following code:
 
-```javascript
-#!set --value @csharp:products --name products
-```
+    ```javascript
+    #!set --value @csharp:products --name products
+    ```
 
-Now you have code in place that lets you use a C# variable.
+    Now you have code in place that lets you use a C# variable.
 
-Add the following code to your JavaScript cell:
+1. Add the following code to your JavaScript cell:
 
-```javascript
-console.log(products); // it should print Saab, Volvo, Fiat 
-```
+    ```javascript
+    console.log(products); // it should print Saab, Volvo, Fiat 
+    ```
 
 ## Working with value storage
 
 Let’s try another case of variable sharing. This time, we work with JSON data.  
 
-- Create a new code cell by select +Code and select **value – Raw Value Storage** for kernel.
+1. Create a new code cell by select +Code and select **value – Raw Value Storage** for kernel.
 
-- In the new cell, paste the following JSON:
+1. In the new cell, paste the following JSON:
 
     ```json
     #!value --name data
@@ -63,17 +63,17 @@ Let’s try another case of variable sharing. This time, we work with JSON data.
     ]
     ```
 
-- Run the cell and **data** should show up in the variables table. So open that table if you haven’t already.
+1. Run the cell and **data** should show up in the variables table. So open that table if you haven’t already.
 
-- Select the share icon to share the **data** variable.
+1. Select the share icon to share the **data** variable.
 
-- Then select **csharp** as target cell. Your cell should now have the following code:
+1. Then select **csharp** as target cell. Your cell should now have the following code:
 
     ```
     #!set --value @value:data --name data
     ```
 
-- Next, paste the following code:
+1. Next, paste the following code:
 
     ```csharp
     // import JSON in C#

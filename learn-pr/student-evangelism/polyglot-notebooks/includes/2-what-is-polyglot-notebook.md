@@ -8,7 +8,7 @@ Notebooks are interactive files that allow the mixing of executable code, visual
 
 In this image is a rendered Notebook with a markdown cell on top displaying 'Some text' and under it a code cell for Python. Additionally, the code cell was executed and displayed the text 'Hello world' because of running the code - print("Hello world").
 
-## What is Polyglot Programming?
+## What is Polyglot programming?
 
 Polyglot programming is the practice of using multiple programming languages, using the strength of each language for different tasks. When polyglot programming meets notebooks, you get Polyglot Notebooks!
 
