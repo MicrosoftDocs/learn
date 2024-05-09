@@ -1,6 +1,6 @@
 <!--Summary-->
 
-The goal of this module was to help you understand how to protect your GitHub organization from security risks and what to do in the event of a sensitive data exposure. 
+The goal of this module was to help you understand how to protect your GitHub organization from security risks and what to do if there's a sensitive data exposure. 
 
 You learned how to:
 
