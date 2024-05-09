@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.migrate-oracle-workload-azure-iaas.1-introduction
+uid: learn.azure.migrate-oracle-workload-azure-iaas.introduction
 title: Introduction
 metadata:
   title: Introduction
   description: Introduction
   ms.date: 04/15/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: jjaygbay1
+  ms.author: jacobjaygbay
   ms.topic: unit
 durationInMinutes: 1
 content: |

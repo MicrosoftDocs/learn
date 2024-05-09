@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.migrate-oracle-workload-azure-iaas.2-describe-rehosting-streamlines-migration
+uid: learn.azure.migrate-oracle-workload-azure-iaas.describe-rehosting-streamlines-migration
 title: Describe how the rehosting model streamlines your migration process.
 metadata:
   title: Describe how the rehosting model streamlines your migration process.
   description: Learn how the rehosting model streamlines your migration process.
   ms.date: 04/15/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: jjaygbay1
+  ms.author: jacobjaygbay
   ms.topic: unit
 durationInMinutes: 3
 content: |
