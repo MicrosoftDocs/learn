@@ -14,11 +14,11 @@ Collect, transfer, and normalize data from various sources for analysis, with a 
 
 Define strategies to assign and split shared cloud costs using accounts, tags, labels, and other metadata, creating accountability among teams and projects within an organization.
 
-#### Get started: cost allocation
+#### Get started with cost allocation:
 
 <iframe title="FinOps interactive guide for cost allocation." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%201%20-%20Cost%20allocation" width="800" height="500"></iframe>
 
-#### Get started: manage shared costs
+#### Get started with managing shared costs:
 
 <iframe title="FinOps interactive guide for managing shared costs." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%203%20-%20Manage%20shared%20costs" width="800" height="500"></iframe>
 
@@ -28,7 +28,7 @@ Define strategies to assign and split shared cloud costs using accounts, tags, l
 
 Examine and showback cloud data to gain insights into usage and spend patterns to identify cost optimization opportunities, improve cost efficiency, and make informed financial decisions regarding cloud resources.
 
-#### Get started: data analysis & showback
+#### Get started with data analysis & showback:
 
 <iframe title="FinOps interactive guide for data analysis & showback." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%202%20-%20Data%20analysis%20and%20showback" width="800" height="500"></iframe>
 
@@ -38,7 +38,7 @@ Examine and showback cloud data to gain insights into usage and spend patterns t
 
 Detect, identify, alert, and manage unexpected cloud cost and usage irregularities in a timely manner to lower risk in cost-effective cloud operations.
 
-#### Get started: manage anomalies
+#### Get started with managing anomalies:
 
 <iframe title="FinOps interactive guide for managing anomalies." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%205%20-%20Manage%20anomalies" width="800" height="500"></iframe>
 
