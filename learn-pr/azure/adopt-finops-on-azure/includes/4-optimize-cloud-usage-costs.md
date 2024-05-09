@@ -8,9 +8,9 @@ Rate optimization, licensing + SaaS management, workload optimization, architect
 
 Driving cloud rate efficiency by acquiring and managing a portfolio of commitment discounts (for example, reservations and savings plans) or other rate discounts offered by cloud service providers while meeting the organization's operational and budgetary objectives.
 
-#### Get started:
+#### Get started with managing commitment-based discounts:
 
-<iframe title="FinOps Interactive Guide for Managing commitment-based discounts." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%208%20-%20Manage%20commitment-based%20discounts" width="800" height="500"></iframe>
+<iframe title="FinOps interactive guide for managing commitment-based discounts." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%208%20-%20Manage%20commitment-based%20discounts" width="800" height="500"></iframe>
 
 ## Workload optimization
 
@@ -18,9 +18,9 @@ Driving cloud rate efficiency by acquiring and managing a portfolio of commitmen
 
 Analyze and optimize cloud resources to match the specific usage patterns while ensuring that workloads operate efficiently and ensure there is sufficient business value for the cloud costs associated with each type of resource that is consumed.
 
-#### Get started:
+#### Get started with resource utilization and efficiency:
 
-<iframe title="FinOps Interactive Guide for Resource utilization and efficiency." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%204%20-%20Resource%20utilization%20and%20efficiency" width="800" height="500"></iframe>
+<iframe title="FinOps interactive guide for resource utilization and efficiency." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%204%20-%20Resource%20utilization%20and%20efficiency" width="800" height="500"></iframe>
 
 ## Licensing + SaaS
 
@@ -40,9 +40,9 @@ Designing solutions with cost-awareness to maximize business value and achieving
 
 Establishing the strategic and tactical direction, metrics, and criteria for incorporating sustainability goals and targets into other FinOps Capabilities and decision making. 
 
-#### Get started:
+#### Get started with optimizing carbon emissions:
 
-<iframe title="FinOps Interactive Guide for Optimize Carbon Emissions." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%209%20-%20Carbon%20emission%20optimization" width="800" height="500"></iframe>
+<iframe title="FinOps interactive guide for optimizing carbon emissions." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%209%20-%20Carbon%20emission%20optimization" width="800" height="500"></iframe>
 
 ----------
 
