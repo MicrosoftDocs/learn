@@ -64,8 +64,4 @@ These are just some examples of how you can use Microsoft Copilot for Microsoft 
 
 **GitHub Copilot**: Helps developers maximize their productivity by analyzing and explaining code, adding code documentation, generating new code based on natural language prompts, and more.
 
-![Screenshot of GitHub Copilot.](../media/github-copilot.png)
-
-**Microsoft Copilot Studio**: Low-code development of copilots and plug-ins using Azure OpenAI models for generative AI. For example, you can create a custom copilot using your own data in a drag-and-drop user interface.
-
-**Build your own copilot with Azure AI Studio**:A unified platform that enables developers to build, test, and deploy generative AI solutions.
+![Screenshot of GitHub Copilot.](../media/github.png)

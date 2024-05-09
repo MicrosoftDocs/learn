@@ -6,12 +6,14 @@ Generative AI applications take in natural language input, and return appropriat
 
 ## Natural language generation
 
-To generate a natural language response, you might submit a request such as *"Write a cover letter for my resume."*
+To generate a natural language response, you might submit a request such as *"Write a cover letter for a person with a bachelor's degree in history."*
 
 A generative AI application might respond to such a request like this:
 
-*Hello,
-Please find enclosed my application for the role of...*
+*Dear Hiring Manager,
+I am writing to express my interest in the position of...*
+
+![Screenshot of an AI-generated cover letter for a person with a bachelor's degree in history.](../media/microsoft-copilot-example-write-letter.png)
 
 ## Image generation
 
