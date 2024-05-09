@@ -60,14 +60,14 @@ products:
 subjects:
 - cloud-computing
 units:
-- learn.azure.get-started-with-finops.1-introduction
-- learn.azure.get-started-with-finops.2-what-is-finops
-- learn.azure.get-started-with-finops.3-finops-principles
-- learn.azure.get-started-with-finops.4-finops-personas
-- learn.azure.get-started-with-finops.5-finops-phases
-- learn.azure.get-started-with-finops.6-finops-maturity-model
-- learn.azure.get-started-with-finops.7-finops-domains-capabilities
-- learn.azure.get-started-with-finops.8-knowledge-check
-- learn.azure.get-started-with-finops.9-summary
+- learn.azure.get-started-with-finops.introduction
+- learn.azure.get-started-with-finops.what-is-finops
+- learn.azure.get-started-with-finops.finops-principles
+- learn.azure.get-started-with-finops.finops-personas
+- learn.azure.get-started-with-finops.finops-phases
+- learn.azure.get-started-with-finops.finops-maturity-model
+- learn.azure.get-started-with-finops.finops-domains-capabilities
+- learn.azure.get-started-with-finops.knowledge-check
+- learn.azure.get-started-with-finops.summary
 badge:
   uid: learn.azure.get-started-with-finops.badge
