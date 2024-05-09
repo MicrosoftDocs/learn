@@ -15,3 +15,6 @@ You can achieve idempotency by:
 When defining Infrastructure as Code and Configuration as Code, as a best practice, build the scripts and templates in such a way as to embrace idempotency.
 
 It's essential when working with cloud services because resources and applications can be scaled in and out regularly. New instances of services can be started up to provide service elasticity.
+
+> [!NOTE]
+> You can read more about idempotence at [Idempotency for Windows Azure Message Queues](https://www.atmosera.com/blog/idempotency-for-windows-azure-message-queues/).
