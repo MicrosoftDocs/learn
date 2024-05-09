@@ -3666,6 +3666,31 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/cela-accessibility/digital-accessibility/00-web-development.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/digital-accessibility/01-app-development.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/digital-accessibility/02-knowledge-check.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/digital-accessibility/03-summary-and-resources.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/digital-accessibility/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/data-ai-cert/convert-speech-to-text/index.md",
       "redirect_url": "/training/modules/transcribe-speech-input-text",
       "redirect_document_id": false
