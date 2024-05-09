@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.migrate-oracle-workload-azure-odaa.2-oracle-database-azure-migrated-application-support
+uid: learn.azure.migrate-oracle-workload-azure-odaa.oracle-database-azure-migrated-application-support
 title: Describe how Oracle Database@Azure supports your migrated applications
 metadata:
   title: Describe how Oracle Database@Azure supports your migrated applications
   description: Learn how Oracle Database@Azure supports application migration.
   ms.date: 04/15/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: jjaygbay1
+  ms.author: jacobjaygbay
   ms.topic: unit
 durationInMinutes: 3
 content: |

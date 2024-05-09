@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.migrate-oracle-workload-azure-odaa.8-knowledge-check
+uid: learn.azure.migrate-oracle-workload-azure-odaa.knowledge-check
 title: Knowledge Check
 metadata:
   title: Knowledge Check
   description: Test your knowledge.
   ms.date: 04/15/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: jjaygbay1
+  ms.author: jacobjaygbay
   ms.topic: unit
 durationInMinutes: 2
 content: |

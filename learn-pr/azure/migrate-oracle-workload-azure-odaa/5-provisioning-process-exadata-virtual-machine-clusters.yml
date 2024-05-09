@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.migrate-oracle-workload-azure-odaa.5-provisioning-process-exadata-virtual-machine-clusters
+uid: learn.azure.migrate-oracle-workload-azure-odaa.provisioning-process-exadata-virtual-machine-clusters
 title: Research the provisioning process for Exadata Virtual Machine Clusters
 metadata:
   title: Research the provisioning process for Exadata Virtual Machine Clusters
   description: Learn about the provisioning process for Exadata Virtual Machine Clusters.
   ms.date: 04/15/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: jjaygbay1
+  ms.author: jacobjaygbay
   ms.topic: unit
 durationInMinutes: 3
 content: |
