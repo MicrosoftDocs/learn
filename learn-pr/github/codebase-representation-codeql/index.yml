@@ -7,6 +7,7 @@ metadata:
   author: a-a-ron
   ms.author: aastewar
   ms.topic: module
+  ms.service: github
 title: Identify security vulnerabilities in your codebase by using CodeQL
 summary: "In this module, you learn about CodeQL and how you can use it to analyze the code in your GitHub repository and identify security vulnerabilities."
 abstract: |

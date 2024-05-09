@@ -105,7 +105,7 @@ Here's an example statement that imports the `pathgraph` module from the data-fl
 
 > `import DataFlow::PathGraph`
 
-You can import many additional libraries included with CodeQL. You can also import libraries specifically designed to implement data-flow analysis in various common frameworks and environments.
+You can import many additional libraries included with CodeQL. You can also import libraries that are specifically designed to implement data-flow analysis in various common frameworks and environments.
 
 The class `PathNode` is an example that's specifically designed to implement data-flow analysis. It's `Node` augmented with a call context (except for sinks), an access path, and a configuration. Only `PathNode` values that are reachable from a source are generated.
 
