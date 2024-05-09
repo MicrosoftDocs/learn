@@ -14,7 +14,7 @@ Polyglot programming is the practice of using multiple programming languages, us
 
 As opposed to traditional notebooks that are typically used with Python, the Polyglot Notebooks extension allows you to use multiple programming languages natively all in the same notebook in Visual Studio Code! No more needing wrapper libraries or magic commands to work with your favorite languages in the same notebook!
 
-![A screenshot showing the Polyglot Notebooks extension in Visual Studio Code](../media/polyglot-extension-2.png)
+![A screenshot showing the Polyglot Notebooks extension in Visual Studio Code.](../media/polyglot-extension-2.png)
 
 ## Why use Polyglot Notebooks
 

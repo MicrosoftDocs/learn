@@ -37,7 +37,7 @@ Every time you create a new notebook, a new cell is created. You can keep adding
 
 If you need to add a new cell, select "+ Code" and a new cell appears underneath the existing cell.
 
-![A screenshot showing how to add a new code cell to existing cells in the notebook](../media/add-code-cell-4.png)
+![A screenshot showing how to add a new code cell to existing cells in the notebook.](../media/add-code-cell-4.png)
 
 ### Running a code cell
 
