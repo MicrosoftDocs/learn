@@ -79,7 +79,7 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
 1. Remove the contents of the `lint:` job definition and replace it with the following code to use the _lint.yml_ file you created earlier:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="14-18" highlight="5" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="16-18" highlight="3" :::
 
 1. Delete everything in the file below the lint job that you updated.
 
@@ -91,7 +91,7 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
    :::code language="yaml" source="code/5-workflow.yml" range="32-42" :::
 
-   Now, the workflow runs the lint job once. Then it uses the _deploy.yml_ called workflow twice: once per environment. This keeps the workflow definition clear and easy to understand. Also, the comments help explain what's happening.
+   Your updated workflow runs the lint job once. Then it uses the _deploy.yml_ called workflow twice: once per environment. This keeps the workflow definition clear and easy to understand. The comments in the YAML file identify each job's target environment.
 
 1. Verify that your _workflow.yml_ file looks like the following example:
 
@@ -143,7 +143,7 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
 1. Select **Code**.
 
-1. Select the **Production** environment.
+1. Select the **Production** deployment.
 
    :::image type="content" source="../media/5-code-environment.png" alt-text="Screenshot of GitHub that shows the Code page environment, with the production environment highlighted.":::
 
@@ -158,6 +158,12 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
    :::image type="content" source="../media/5-environment-commits.png" alt-text="Screenshot of GitHub that shows the production environment's deployment details, with a list of commits.":::
 
 1. In your browser, go to the [Azure portal](https://portal.azure.com).
+
+1. In the sidebar menuselect App Services open the Azure App Service app, and select the App Service for the production toy website. It will probably be the second app on the list.
+
+   :::image type="content" source="../media/5-app-services-select.png" alt-text="Screenshot of the Sidebar menu with the App Services selection highlighted.":::
+
+   Notice that the type of App Service plan is **S1**.
 
 1. Go to the **ToyWebsiteProduction** resource group.
 
