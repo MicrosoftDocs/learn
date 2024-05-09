@@ -8,9 +8,9 @@ Quantifying business value is crucial for organizations to justify their investm
 
 Applying statistical methods and forecasting techniques using historical data, current spend patterns, planned changes and related financial metrics to forecast future cloud costs, plan budgets and allocate resources efficiently.
 
-#### Get started:
+#### Get started: forecasting
 
-<iframe title="FinOps Interactive Guide for Forecasting." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%206%20-%20Forecasting" width="800" height="500"></iframe>
+<iframe title="FinOps interactive guide for forecasting." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%206%20-%20Forecasting" width="800" height="500"></iframe>
 
 ## Budgeting
 
@@ -18,9 +18,9 @@ Applying statistical methods and forecasting techniques using historical data, c
 
 Strategic and ongoing process for setting, monitoring, and managing financial plans to manage cloud spending effectively, align it with business objectives, and ensure financial accountability throughout the cloud services lifecycle.
 
-#### Get started:
+#### Get started: budgeting
 
-<iframe title="FinOps Interactive Guide for Budgeting." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%207%20-%20Budget%20management" width="800" height="500"></iframe>
+<iframe title="FinOps interactive guide for budgeting." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%207%20-%20Budget%20management" width="800" height="500"></iframe>
 
 ## Unit economics
 
