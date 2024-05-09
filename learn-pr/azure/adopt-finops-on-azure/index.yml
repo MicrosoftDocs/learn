@@ -62,13 +62,13 @@ products:
 subjects:
 - cloud-computing
 units:
-- learn.azure.adopt-finops-on-azure.1-introduction
-- learn.azure.adopt-finops-on-azure.2-understand-cloud-usage-costs
-- learn.azure.adopt-finops-on-azure.3-quantify-business-value
-- learn.azure.adopt-finops-on-azure.4-optimize-cloud-usage-costs
-- learn.azure.adopt-finops-on-azure.5-manage-finops-practice
-- learn.azure.adopt-finops-on-azure.6-conduct-finops-iteration
-- learn.azure.adopt-finops-on-azure.7-knowledge-check
-- learn.azure.adopt-finops-on-azure.8-summary
+- learn.azure.adopt-finops-on-azure.introduction
+- learn.azure.adopt-finops-on-azure.understand-cloud-usage-costs
+- learn.azure.adopt-finops-on-azure.quantify-business-value
+- learn.azure.adopt-finops-on-azure.optimize-cloud-usage-costs
+- learn.azure.adopt-finops-on-azure.manage-finops-practice
+- learn.azure.adopt-finops-on-azure.conduct-finops-iteration
+- learn.azure.adopt-finops-on-azure.knowledge-check
+- learn.azure.adopt-finops-on-azure.summary
 badge:
   uid: learn.azure.adopt-finops-on-azure.badge
