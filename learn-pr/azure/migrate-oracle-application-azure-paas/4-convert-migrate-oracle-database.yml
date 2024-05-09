@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.migrate-oracle-application-azure-paas.4-convert-migrate-oracle-database
+uid: learn.azure.migrate-oracle-application-azure-paas.convert-migrate-oracle-database
 title: Examine the process of converting and migrating your Oracle database
 metadata:
   title: Examine the process of converting and migrating your Oracle database
   description: Learn how to convert and migrate your Oracle database.
   ms.date: 04/15/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: jjaygbay1
+  ms.author: jacobjaygbay
   ms.topic: unit
 durationInMinutes: 3
 content: |
