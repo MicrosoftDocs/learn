@@ -12,7 +12,7 @@ Query Store isn't enabled by default, but can be turned on globally or on a per-
 
 1. Navigate to **pgms_wait_sampling.query_capture_mode**, select **ALL**, and select **Save**.
 
-   ![Screenshot of settings to turn on pgms_wait_sampling.query_capture_mode](../media/3-query-capture-mode.png)
+   ![Screenshot of settings to turn on pgms_wait_sampling.query_capture_mode.](../media/3-query-capture-mode.png)
 
 ## Access information in the Query Store
 

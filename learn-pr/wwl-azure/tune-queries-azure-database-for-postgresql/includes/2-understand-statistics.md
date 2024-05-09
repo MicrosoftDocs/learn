@@ -10,7 +10,7 @@ To monitor planning and execution statistics there's a PostgreSQL extension call
 SELECT * FROM pg_stat_activity;
 ```
 
-![Screenshot of pg_stat_activity query.](../media/2-activity-query.png)
+![Screenshot of the pg_stat_activity query.](../media/2-activity-query.png)
 
 ## Turning off pg_stat_statements
 
@@ -20,7 +20,7 @@ To turn off tracking of **pg_stat_statements**, perform the following steps:
 
 1. Go to the Azure portal and select your Azure Database for PostgreSQL server.
 1. Select **Server parameters** and navigate to the **pg_stat_statements.track** setting.
-   ![Screenshot of pg_statements](../media/2-statements-track-setting.png)
+   ![Screenshot of the pg_statements command.](../media/2-statements-track-setting.png)
 1. If you want to turn off tracking, select **NONE**.
 1. For more exact tracking, select **ALL**.
 1. The default setting is **TOP**.
