@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.fundamentals-generative-ai.copilots
+uid: learn.wwl.fundamentals-generative-ai.what-are-copilots
 title: What are copilots?
 metadata:
   title: What are copilots?
@@ -8,6 +8,6 @@ metadata:
   author: sherzyang
   ms.author: sheryang
   ms.topic: unit
-durationInMinutes: 4
+durationInMinutes: 3
 content: |
-  [!include[](includes/5-copilots.md)]
+  [!include[](includes/5-what-are-copilots.md)]

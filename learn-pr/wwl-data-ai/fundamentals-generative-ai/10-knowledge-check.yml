@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-generative-ai.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "This knowledge check is based on content about generative AI, large language models, and copilots."
+  ms.date: 6/27/2023
+  author: sherzyang
+  ms.author: sheryang
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "What are Large Language Models?"
+    choices:
+    - content: "Models that only work with one language."
+      isCorrect: false
+      explanation: "Incorrect. Large language models can work with multiple languages."
+    - content: "Models that only work with small amounts of data."
+      isCorrect: false
+      explanation: "Incorrect. Large language models work with massive amounts of data."
+    - content: "Models that use deep learning to process and understand natural language on a massive scale."
+      isCorrect: true
+      explanation: "Correct. Large language models use deep learning to process and understand natural language on a massive scale."
+  - content: "Which Microsoft Copilot should a customer support agent use to research and resolve a support issue?"
+    choices:
+    - content: "Microsoft Copilot for Microsoft Edge"
+      isCorrect: false
+      explanation: ".."
+    - content: "Microsoft Copilot for Dynamics 365 Customer Service"
+      isCorrect: true
+      explanation: ".."
+    - content: "Microsoft Copilot for Security"
+      isCorrect: false
+      explanation: ".."
+  - content: "Which tool should a professional developer use to build a custom copilot and deploy it as a service endpoint in Azure?"
+    choices:
+    - content: "Microsoft Copilot for Azure"
+      isCorrect: false
+      explanation: ".."
+    - content: "Microsoft Copilot Studio"
+      isCorrect: false
+      explanation: ".."
+    - content: "Microsoft Azure AI Studio"
+      isCorrect: true
+      explanation: ".."

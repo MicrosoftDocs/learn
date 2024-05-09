@@ -13,8 +13,7 @@ summary: "In this module you'll explore the way in which large language models (
 abstract: |
   By the end of this module, you'll be able to:
   - Understand generative AI's place in the development of artificial intelligence
-  - Understand large language models and their role in intelligent applications 
-  - Describe how Azure OpenAI supports intelligent application creation 
+  - Understand language models and their role in intelligent applications 
   - Describe examples of copilots and good prompts 
 prerequisites: |
   - Familiarity with Azure and the Azure portal.
@@ -34,10 +33,12 @@ subjects:
 units:
 - learn.wwl.fundamentals-generative-ai.introduction
 - learn.wwl.fundamentals-generative-ai.what-is-generative-ai
-- learn.wwl.fundamentals-generative-ai.language-models
-- learn.wwl.fundamentals-generative-ai.azure-openai
-- learn.wwl.fundamentals-generative-ai.copilots
+- learn.wwl.fundamentals-generative-ai.what-are-language-models
+- learn.wwl.fundamentals-generative-ai.how-do-language-models-work
+- learn.wwl.fundamentals-generative-ai.what-are-copilots
+- learn.wwl.fundamentals-generative-ai.microsoft-copilot
 - learn.wwl.fundamentals-generative-ai.writing-prompts
+- learn.wwl.fundamentals-generative-ai.building-custom-copilots
 - learn.wwl.fundamentals-generative-ai.exercise
 - learn.wwl.fundamentals-generative-ai.knowledge-check
 - learn.wwl.fundamentals-generative-ai.summary

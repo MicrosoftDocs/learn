@@ -1,11 +1,4 @@
-Generative AI applications are powered by *large language models* (LLMs), which are a specialized type of machine learning model that you can use to perform *natural language processing* (NLP) tasks, including:
-
-- Determining *sentiment* or otherwise classifying natural language text.
-- Summarizing text.
-- Comparing multiple text sources for semantic similarity.
-- Generating new natural language.
-
-While the mathematical principles behind these LLMs can be complex, a basic understanding of the architecture used to implement them can help you gain a conceptual understanding of how they work.
+While the mathematical principles behind these language models can be complex, a basic understanding of the architecture used to implement them can help you gain a conceptual understanding of how they work.
 
 ## Transformer models
 
@@ -40,7 +33,7 @@ To tokenize this text, you can identify each discrete word and assign token IDs 
 - *("a" is already tokenized as 3)*
 - cat (8)
 
-The sentence can now be represented with the tokens: *[1 2 3 4 5 6 7 3 8]*. Similarly, the sentence "I heard a cat" could be represented as *[1 2 3 8]*.
+The sentence can now be represented with the tokens: *{1 2 3 4 5 6 7 3 8}*. Similarly, the sentence "I heard a cat" could be represented as *{1 2 3 8}*.
 
 As you continue to train the model, each new token in the training text is added to the vocabulary with appropriate token IDs:
 
@@ -54,19 +47,20 @@ With a sufficiently large set of training text, a vocabulary of many thousands o
 
 While it may be convenient to represent tokens as simple IDs - essentially creating an index for all the words in the vocabulary, they don't tell us anything about the meaning of the words, or the relationships between them. To create a vocabulary that encapsulates semantic relationships between the tokens, we define contextual vectors, known as *embeddings*, for them. Vectors are multi-valued numeric representations of information, for example [10, 3, 1] in which each numeric element represents a particular attribute of the information. For language tokens, each element of a token's vector represents some semantic attribute of the token. The specific categories for the elements of the vectors in a language model are determined during training based on how commonly words are used together or in similar contexts.
 
-It can be useful to think of the elements in a token embedding vector as *coordinates* in multidimensional space, so that each token occupies a specific "location." The closer tokens are to one another along a particular dimension, the more semantically related they are. In other words, related words are grouped closer together. As a simple example, suppose the embeddings for our tokens consist of vectors with three elements, for example:
+Vectors represent lines in multidimensional space, describing *direction* and *distance* along multiple axes (you can impress your mathematician friends by calling these *amplitude* and *magnitude*). It can be useful to think of the elements in an embedding vector for a token as representing steps along a path in multidimensional space. For example, a vector with three elements represents a path in 3-dimensional space in which the element values indicate the units traveled forward/back, left/right, and up/down. Overall, the vector describes the direction and distance of the path from origin to end.
+
+The elements of the tokens in the embeddings space each represent some semantic attribute of the token, so that semantically similar tokens should result in vectors that have a similar orientation – in other words they point in the same direction. A technique called *cosine similarity* is used to determine if two vectors have similar directions (regardless of distance), and therefore represent semantically linked words. As a simple example, suppose the embeddings for our tokens consist of vectors with three elements, for example:
 
 - 4 ("dog"): [10,3,2]
-- 5 ("bark"): [10,2,2]
 - 8 ("cat"): [10,3,1]
-- 9 ("meow"): [10,2,1]
-- 10 ("skateboard"): [3,3,1]
+- 9 ("puppy"): [5,2,1]
+- 10 ("skateboard"): [-3,3,2]
 
-We can plot the location of tokens based on these vectors in three-dimensional space, like this:
+We can plot these vectors in three-dimensional space, like this:
 
 ![Diagram of token vectors plotted in three dimensional space.](../media/embed-example.png)
 
-The locations of the tokens in the embeddings space include some information about how closely the tokens are related to one another. For example, the token for "dog" is close to "cat" and also to "bark." The tokens for "cat" and "bark" are close to "meow." The token for "skateboard" is further away from the other tokens.
+The embedding vectors for dog” and “puppy” describe a path along an almost identical direction, which is also fairly similar to the direction for “cat”. The embedding vector for “skateboard” however describes journey in a very different direction.
 
 > [!NOTE]
 > The previous example shows a simple example model in which each embedding has only three dimensions. Real language models have many more dimensions.
@@ -107,3 +101,13 @@ During training, the actual sequence of tokens is known – we just mask the one
 
 What all of this means, is that a transformer model such as GPT-4 (the model behind ChatGPT and Bing) is designed to take in a text input (called a prompt) and generate a syntactically correct output (called a completion). In effect, the “magic” of the model is that it has the ability to string a coherent sentence together. This ability doesn't imply any “knowledge” or “intelligence” on the part of the model; just a large vocabulary and the ability to generate meaningful sequences of words. What makes a large language model like GPT-4 so powerful however, is the sheer volume of data with which it has been trained (public and licensed data from the Internet) and the complexity of the network. This enables the model to generate completions that are based on the relationships between words in the vocabulary on which the model was trained; often generating output that is indistinguishable from a human response to the same prompt.
 
+## Using language models
+Organizations and developers can train their own language models from scratch, but in most cases it’s more practical to use an existing foundation model, and optionally fine-tune it with your own training data. There are many sources of model that you can use.
+
+On Microsoft Azure, the Azure OpenAI Service includes a curated set of models from OpenAI, hosted in Azure. This offers the benefit of cutting-edge language models like the generative pre-trained transformer (GPT) collection of models (on which ChatGPT and Microsoft's own generative AI services are based)  as well as the DALL-E model for image generation. Using these models from the Azure OpenAI service means that you also get the benefit of a secure, scalable Azure cloud platform in which the models are hosted.
+
+The Azure OpenAI models are included in the Model Catalog, a curated source of models for data scientists and developers using Azure AI Studio and Azure Machine Learning. In addition to the Azure OpenAI models, the model catalog includes the latest open-source models from Microsoft and multiple partners, including:
+- OpenAI
+- HuggingFace
+- Mistral
+- Meta and others.
