@@ -15,13 +15,13 @@ The **M4BankAccount** sample app contains the following files:
 
 ## Challenge requirements
 
-1. Create at least one xUnit unit test for each method in the `BankAccount` class.
+- Create at least one xUnit unit test for each method in the `BankAccount` class.
 
-1. Create a total of at least 12 unique xUnit unit tests.
+- Create a total of at least 12 unique xUnit unit tests.
 
-1. All the tests must be visible in the Test Explorer.
+- All the tests must be visible in the Test Explorer.
 
-1. At least one test for each method must pass when you run the tests.
+- At least one test for each method must pass when you run the tests.
 
 ## Challenge instructions
 

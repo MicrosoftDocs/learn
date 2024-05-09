@@ -345,7 +345,7 @@ GitHub Copilot and GitHub Copilot Chat can help you generate unit tests for your
 
 1. The inline chat provides a **Create** dropdown that includes a **Create as** option.
 
-    ![A screenshot showing the inline chat suggesting some unit tests](../media/unit-test-inline-chat-create-unit-tests-1.png)
+    ![A screenshot showing the inline chat suggesting some unit tests.](../media/unit-test-inline-chat-create-unit-tests-1.png)
 
     You can use the **Create as** option to save the proposed unit tests to the PrimeService.UnitTests folder.
 
