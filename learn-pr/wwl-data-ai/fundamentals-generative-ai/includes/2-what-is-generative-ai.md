@@ -21,7 +21,7 @@ Some generative AI applications can interpret a natural language request and gen
 
 A generative AI application could then return an original new image based on the description you provided, like this:
 
-![Illustration of an AI generated image of a florist business logo.](../media/florist-example.png)
+![Screenshot of an AI-generated image of a florist business logo.](../media/florist-example.png)
 
 ## Code generation
 
