@@ -3338,3 +3338,8 @@ achievements:
   title: Design multitenant SaaS apps by using Azure Cosmos DB for PostgreSQL
   summary: Azure Cosmos DB for PostgreSQL provides a powerful data platform for multitenant software as a service (SaaS) applications. Starting from a single-node instance, a multitenant database can be horizontally scaled to a multi-node distributed cluster of up to 20 servers to meet the demands of tenant growth.
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.accessible-content-m365.badge
+  type: badge
+  title: Creating accessible content with Microsoft 365
+  summary: This module shows you how to create content with Microsoft 365 in a way that enables greater accessibility.
+  iconUrl: /training/achievements/accessible-content-m365.svg
