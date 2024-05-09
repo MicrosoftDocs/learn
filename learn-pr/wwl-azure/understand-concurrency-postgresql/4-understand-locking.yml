@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.understand-concurrency-postgresql.understand-locking
+uid: learn.wwl.understand-concurrency-postgresql.understand-lock
 title: Understand locking
 metadata:
   title: Understand locking

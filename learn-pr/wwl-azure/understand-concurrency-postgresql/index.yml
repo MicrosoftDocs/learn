@@ -38,7 +38,7 @@ units:
 - learn.wwl.understand-concurrency-postgresql.introduction
 - learn.wwl.understand-concurrency-postgresql.understand-multi-version-concurrency-control-snapshots
 - learn.wwl.understand-concurrency-postgresql.understand-isolation-levels
-- learn.wwl.understand-concurrency-postgresql.understand-locking
+- learn.wwl.understand-concurrency-postgresql.understand-lock
 - learn.wwl.understand-concurrency-postgresql.exercise-understand-locking
 - learn.wwl.understand-concurrency-postgresql.knowledge-check
 - learn.wwl.understand-concurrency-postgresql.summary
