@@ -3736,6 +3736,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/accessibility-fundamentals/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/data-ai-cert/convert-speech-to-text/index.md",
       "redirect_url": "/training/modules/transcribe-speech-input-text",
       "redirect_document_id": false
