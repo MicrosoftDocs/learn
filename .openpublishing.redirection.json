@@ -3666,27 +3666,42 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/cela-accessibility/digital-accessibility/00-web-development.yml" ,
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/00-accessibility-checker.yml" ,
       "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/cela-accessibility/digital-accessibility/01-app-development.yml" ,
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/01-word.yml" ,
       "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/cela-accessibility/digital-accessibility/02-knowledge-check.yml" ,
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/02-powerpoint.yml" ,
       "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/cela-accessibility/digital-accessibility/03-summary-and-resources.yml" ,
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/03-excel.yml" ,
       "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/cela-accessibility/digital-accessibility/index.yml" ,
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/04-outlook.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/05-knowledge-check.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/06-summary-resources.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/index.yml" ,
       "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
       "redirect_document_id": false
     },
