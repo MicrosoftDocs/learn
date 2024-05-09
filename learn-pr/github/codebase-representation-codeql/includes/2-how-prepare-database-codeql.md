@@ -1,5 +1,5 @@
 
-CodeQL treats code like data. You create a database by using queryable data that you extract from your code base. Then you can run CodeQL queries on this database to identify security vulnerabilities, bugs, and other errors. You can write your own queries or run standard CodeQL queries written by GitHub researchers and community contributors.
+CodeQL treats code like data. You create a database by using queryable data that you extract from your codebase. Then you can run CodeQL queries on this database to identify security vulnerabilities, bugs, and other errors. You can write your own queries or run standard CodeQL queries written by GitHub researchers and community contributors.
 
 In this unit, you learn how to create a database. This step is required before you can analyze your code. You need to create a CodeQL database that contains all the data necessary to run queries on your code.
 
@@ -47,13 +47,13 @@ After extraction, take one of the following steps to use the `codeql` executable
 
 Now you can run CodeQL commands.
 
-## Verification of your CodeQL CLI setup
+## Verification of your CLI setup
 
-You can run CodeQL CLI subcommands to verify that you correctly set up and can analyze databases:
+You can run CodeQL CLI subcommands to verify that you correctly set up the CLI and can analyze databases:
 
-- Run `codeql resolve qlpacks` (if you added `codeql` to `PATH`) to show which CodeQL packs the CLI can find. Otherwise, use `/<extraction-root>/codeql/codeql resolve qlpacks`. This command displays the names of the CodeQL packs included in the CodeQL CLI bundle, shown in the earlier steps as `<extraction root>`.
+- Run `codeql resolve qlpacks` (if you added `codeql` to `PATH`) to show which CodeQL packs the CLI can find. Otherwise, use `/<extraction-root>/codeql/codeql resolve qlpacks`. This command displays the names of the CodeQL packs included in the CodeQL CLI bundle, shown in the earlier steps as `<extraction-root>`.
 
-  If the CodeQL CLI can't locate the CodeQL packs for the expected languages, check that you downloaded the CodeQL bundle and not a standalone copy of the CodeQL CLI.
+  If the CodeQL CLI can't find the CodeQL packs for the expected languages, check that you downloaded the CodeQL bundle and not a standalone copy of the CodeQL CLI.
 
 - Run `codeql resolve languages` to show which languages the CodeQL CLI package supports by default.
 
@@ -76,7 +76,7 @@ You can also specify the following options. These options depend on the location
 
 - Use `--source-root` to identify the root folder for the primary source files for database creation.
 - Use `--db-cluster` for multiple-language codebases when you want to create databases for more than one language.
-- Use `--command` when you create a database for one or more compiled languages. You don't need this option if you're only using Python and JavaScript.
+- Use `--command` when you create a database for one or more compiled languages. You don't need this option if you're using only Python and JavaScript.
 - Use `--no-run-unnecessary-builds` along with `--db-cluster` to suppress the build command for languages where the CodeQL CLI doesn't need to monitor the build.
 
 After you successfully create the database, a new directory appears at the path specified in the command. If you used the `--db-cluster` option to create more than one database, a subdirectory is created for each language. 
@@ -123,7 +123,7 @@ To find out which options are available for your language's extractor, enter `co
 
 A CodeQL database is a single directory that contains all of the data that's required for analysis. This data includes relational data, copied source files, and a language-specific database schema that specifies the mutual relations in the data. CodeQL imports this data after extraction.
 
-CodeQL databases provide a snapshot of a particular language's queryable data that was extracted from a codebase. This data is a full, hierarchical representation of the code. It includes a representation of the abstract syntax tree, the data flow graph, and the control flow graph.
+CodeQL databases provide a snapshot of a particular language's queryable data that was extracted from a codebase. This data is a full, hierarchical representation of the code. It includes a representation of the abstract syntax tree, the data-flow graph, and the control-flow graph.
 
 Databases are generated one language at a time for multiple-language codebases. Each language has its own unique database schema. The schema provides an interface between the initial lexical analysis during the extraction process and the complex analysis through CodeQL.
 

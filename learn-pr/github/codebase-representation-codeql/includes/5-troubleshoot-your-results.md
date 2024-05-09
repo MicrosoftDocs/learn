@@ -23,9 +23,9 @@ Here are important points to keep in mind while you're working with CodeQL and t
 
 You can obtain artifacts to help you debug problems with CodeQL code scanning. Modify the `init` step of your CodeQL workflow file and set `debug: true`. The debug artifacts are uploaded to the workflow run as an artifact named `debug-artifacts`. The data contains the CodeQL logs, CodeQL databases, and any SARIF files that the workflow produces.
 
-## Troubleshoot CodeQL for Visual Studio Code
+## Troubleshoot the CodeQL extension for VS Code
 
-The Visual Studio extension log files have detailed information to help you troubleshoot.
+The VS Code extension's log files have detailed information to help you troubleshoot.
 
 Progress and error messages appear as notifications in the lower-right corner of the workspace. You can use the **CodeQL Extension Log** dropdown list to select the logs that you need.
 

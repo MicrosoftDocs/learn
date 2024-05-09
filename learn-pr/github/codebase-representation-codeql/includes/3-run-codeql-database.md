@@ -4,7 +4,7 @@ You can use CodeQL queries in code-scanning analysis to find problems in your so
 
 There are two important types of queries:
 
-- *Alert queries* highlight issues in specific locations of your code.
+- *Alert queries* highlight problems in specific locations of your code.
 - *Path queries* describe the flow of information between a source and a sink in your code.
 
 ## Simple CodeQL query
@@ -27,12 +27,12 @@ select / ... expressions ... */
 
 ## Query metadata
 
-Using CodeQL with code scanning converts results in a way that highlights the potential issues that the queries are designed to find. Queries contain metadata properties that indicate how the results should be interpreted. Use query metadata to:
+Using CodeQL with code scanning converts results in a way that highlights the potential problems that the queries are designed to find. Queries contain metadata properties that indicate how the results should be interpreted. Use query metadata to:
 
 - Identify your custom queries when you add them to your GitHub repository.
 - Provide information about the query's purpose.
 
-Metadata information can include information like a description of the query, a unique ID, and the kind of problem it is (alert or path). The metadata also specifies how to interpret and display the query results.
+Metadata information can include a description of the query, a unique ID, and the kind of problem it is (alert or path). Metadata also specifies how to interpret and display the query results.
 
 GitHub has a recommended style guide for query metadata. You can find it in the [CodeQL documentation](https://github.com/github/codeql/blob/main/docs/query-metadata-style-guide.md).
 
@@ -44,9 +44,9 @@ CodeQL doesn't interpret queries that don't have metadata. It shows those result
 
 ## QL syntax
 
-QL is a declarative, object-oriented query language. It's optimized to enable efficient analysis of hierarchical data structures--in particular, databases that represent software artifacts.
+QL is a declarative, object-oriented query language. It's optimized to enable efficient analysis of hierarchical data structures, and in particular, databases that represent software artifacts.
 
-The syntax of QL is similar to SQL, but the semantics of QL are based on Datalog. Datalog is a declarative logic programming language that's often used as a query language. This provenance makes QL primarily a logic language, and all operations in QL are logical operations. Furthermore, QL inherits recursive predicates from Datalog. QL adds support for aggregates to make even complex queries concise and simple.
+The syntax of QL is similar to SQL, but the semantics of QL are based on Datalog. Datalog is a declarative logic programming language that's often used as a query language. Because QL is primarily a logic language, all operations in QL are logical operations. QL also inherits recursive predicates from Datalog. QL adds support for aggregates to make even complex queries concise and simple.
 
 The QL language consists of logical formulas. It uses common logical connectives such as `and`, `or`, and `not`, along with quantifiers such as `forall` and `exists`. Because QL inherits recursive predicates, you can also write complex recursive queries by using simple QL syntax and aggregates like `count`, `sum`, and `average`.
 
@@ -54,9 +54,9 @@ For more information on the QL language, see the [CodeQL documentation](https://
 
 ## Path queries
 
-The way that information flows through a program is important. Data that seems benign can flow in unexpected ways that allow it to be used maliciously.
+The way information flows through a program is important. Data that seems benign can flow in unexpected ways that allow it to be used maliciously.
 
-Creating path queries can help you visualize the flow of information through a codebase. A query can track the path that data takes from its possible starting points (`source`) to its possible endpoints (`sink`). To model paths, your query must provide information about the source, the sink, and the data flow steps that link them.
+Creating path queries can help you visualize the flow of information through a codebase. A query can track the path that data takes from its possible starting points (`source`) to its possible endpoints (`sink`). To model paths, your query must provide information about the source, the sink, and the data-flow steps that link them.
 
 The easiest way to start writing your own path query is to use one of the existing queries as a template. To get these queries for supported languages, see the [CodeQL documentation](https://codeql.github.com/codeql-query-help/).
 
@@ -73,7 +73,7 @@ Here's an example template for a path query:
  */
 
 import <language>
-// For some languages (Java/C++/Python/Swift), you need to explicitly import the data flow library, such as
+// For some languages (Java/C++/Python/Swift), you need to explicitly import the data-flow library, such as
 // import semmle.code.java.dataflow.DataFlow or import codeql.swift.dataflow.DataFlow
 ...
 
@@ -103,7 +103,7 @@ The data-flow libraries contain the other classes, predicates, and modules that 
 
 Here's an example statement that imports the `pathgraph` module from the data-flow library (`DataFlow.qll`), in which `edges` is defined:
 
-> `import DataFlow::PathGraph`
+`import DataFlow::PathGraph`
 
 You can import many additional libraries included with CodeQL. You can also import libraries that are specifically designed to implement data-flow analysis in various common frameworks and environments.
 
@@ -111,7 +111,7 @@ The class `PathNode` is an example that's specifically designed to implement dat
 
 Here's an example of the import path:
 
-> `import semmle.code.cpp.ir.dataflow.internal.DataFlowImpl`
+`import semmle.code.cpp.ir.dataflow.internal.DataFlowImpl`
 
 You can optionally define a `nodes` query predicate, which specifies the nodes of the path graph for all languages. When you define `nodes`, the selected nodes define only edges with endpoints. When you don't define `nodes`, you need to select all possible endpoints of `edges`.
 
@@ -142,9 +142,9 @@ Here's one example. The category value appears (with a trailing slash appended i
 
 ### Post the SARIF results to GitHub
 
-After the database is ready, you can query it interactively. Or you can run a suite of queries to generate a set of results in SARIF format and upload the results to a target repository on GitHub.com.
+After the database is ready, you can query it interactively. Or you can run a suite of queries to generate a set of results in SARIF format and upload the results to a target repository on GitHub.com:
 
-> `codeql github upload-results --sarif=<file> [--github-auth-stdin] [--github-url=<url>] [--repository=<repository-name>] [--ref=<ref>] [--commit=<commit>] [--checkout-path=<path>] <options>...`
+`codeql github upload-results --sarif=<file> [--github-auth-stdin] [--github-url=<url>] [--repository=<repository-name>] [--ref=<ref>] [--commit=<commit>] [--checkout-path=<path>] <options>...`
 
 To upload results to GitHub, make sure that each continuous integration (CI) server has a GitHub App or personal access token for the CodeQL CLI to use. You must use an access token or a GitHub App with the `security_events` write permission.
 
@@ -162,4 +162,4 @@ SARIF specifications use the JSON property name `partialFingerprints`, a diction
 
 GitHub tries to populate the `partialFingerprints` field from the source files if you upload a SARIF file by using the `upload-sarif` action and this data is missing. Additionally, if you upload a SARIF file without fingerprint data by using the `/code-scanning/sarifs` API endpoint, users might see duplicate alerts when code-scanning alerts are processed and displayed.
 
-To avoid seeing duplicate alerts while working with static analysis tools, you should calculate fingerprint data and populate the `partialFingerprints` property before you upload the SARIF file. A helpful starting point is to use the same script as the `upload-sarif` action.
+To avoid seeing duplicate alerts while you're working with static analysis tools, calculate fingerprint data and populate the `partialFingerprints` property before you upload the SARIF file. A helpful starting point is to use the same script as the `upload-sarif` action.
