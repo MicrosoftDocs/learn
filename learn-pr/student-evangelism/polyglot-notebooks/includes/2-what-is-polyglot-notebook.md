@@ -4,17 +4,17 @@ To create documentation for a system, you often consider several different thing
 
 Notebooks are interactive files that allow the mixing of executable code, visualizations, equations, and narrative text. Notebooks are composed of code cells that make it easy to quickly iterate on code. This capability makes it ideal to use when performing data science, machine learning, documentation, or any type of prototyping. A notebook uses the concept of cells to represent different types of content. Here’s what a Notebook can look like:  
 
-![A screenshot of a Jupyter Notebook used to run markdown and some Hello World code written in C#.](../media/image1.png)
+![A screenshot of a Jupyter Notebook used to run markdown and some Hello World code written in C#.](../media/code-cell-1.png)
 
 In this image is a rendered Notebook with a markdown cell on top displaying 'Some text' and under it a code cell for Python. Additionally, the code cell was executed and displayed the text 'Hello world' because of running the code - print("Hello world").
 
 ## What is Polyglot Programming?
 
-Polyglot programming is the practice of using multiple programming languages, using the strength of each language for different tasks. When polyglot programming meets notebooks, you get Polyglot Notebooks! 
+Polyglot programming is the practice of using multiple programming languages, using the strength of each language for different tasks. When polyglot programming meets notebooks, you get Polyglot Notebooks!
 
 As opposed to traditional notebooks that are typically used with Python, the Polyglot Notebooks extension allows you to use multiple programming languages natively all in the same notebook in Visual Studio Code! No more needing wrapper libraries or magic commands to work with your favorite languages in the same notebook!
 
-![A screenshot showing the Polyglot Notebooks extension in Visual Studio Code](../media/image2.png)
+![A screenshot showing the Polyglot Notebooks extension in Visual Studio Code](../media/polyglot-extension-2.png)
 
 ## Why use Polyglot Notebooks
 

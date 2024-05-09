@@ -2,7 +2,7 @@ Asides writing text or code, Polyglot Notebooks is capable of rendering Mermaid 
 
 Let’s work on an example that would document a purchase flow.
 
-Imagine you want to document how your API works when a payment is processed from a purchase. Here’s the Mermaid code from a checkout method where code is called in steps through various layers: 
+Imagine you want to document how your API works when a payment is processed from a purchase. Here’s the Mermaid code from a checkout method where code is called in steps through various layers:
 
 ``` mermaid 
 class CheckoutService {
@@ -33,7 +33,7 @@ class CheckoutService {
 }
  ```
 
-What you want is to quickly show through a visual how this code works, so therefore you use a Mermaid code like so: 
+What you want is to quickly show through a visual how this code works, so therefore you use a Mermaid code like so:
 
 ```mermaid
 sequenceDiagram
@@ -41,10 +41,10 @@ sequenceDiagram
     CardService -->> CheckoutService: OK, payment cleared
     CheckoutService -) ShippingService: Ship(cart)
     ShippingService -->> CheckoutService: OK, "shipping cart content"
-``` 
+```
 
-And finally, by putting the mermaid code in a code cell you get a nice rendering like so: 
+And finally, by putting the mermaid code in a code cell you get a nice rendering like so:
 
-![A screenshot of the visual rendered by putting your mermaid code in a Polyglot Notebook code cell.](../media/image13.png)
+![A screenshot of the visual rendered by putting your mermaid code in a Polyglot Notebook code cell.](../media/mermaid-13.png)
 
-The above visual from the Mermaid rendering is easier to comprehend at first glance and can also be shared with nontechnical stakeholders to show how the system works. 
+The above visual from the Mermaid rendering is easier to comprehend at first glance and can also be shared with nontechnical stakeholders to show how the system works.

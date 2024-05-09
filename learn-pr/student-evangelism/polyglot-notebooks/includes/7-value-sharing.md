@@ -1,8 +1,10 @@
 In this exercise, we try out some of the more advanced features in Polyglot Notebooks.
 
 ## Value sharing
+
 Let’s show how valuable it can be to share variables between cells using different kernels.  
-- Create a cell using +Code button. 
+
+- Create a cell using +Code button.
 - Select the kernel by selecting the button in the drop list on the right side, select **csharp C# Script** 
 - Type the following code into the code cell:
 
@@ -13,13 +15,14 @@ foreach(var product in products)
     Console.WriteLine(product);
 }
 ```
+
 - Run the code cell using the play icon.
 - Create another cell in the same way using +Code button but this time select JavaScript as kernel.
-- Select "variables" menu option on top. 
-- Select the share icon in the Actions column 
+- Select "variables" menu option on top.
+- Select the share icon in the Actions column.
 - Next, select the "JavaScript – JavaScript" option.
 
-![A screenshot showing the different kernels in Polyglot Notebook.](../media/image14.png)
+![A screenshot showing the different kernels in Polyglot Notebook.](../media/different-kernels-14.png)
 
 You should see a new code cell being created, with JavaScript as kernel, containing the following code:
 
@@ -99,4 +102,4 @@ Let’s try another case of variable sharing. This time, we work with JSON data.
     }
     ```
 
-Congrats, you successfully learnt more about working with variable sharing.  
+Congrats, you successfully learnt more about working with variable sharing.

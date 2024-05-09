@@ -37,6 +37,7 @@ units:
 - learn.introduction-to-polyglot-notebooks.5-polyglot-notebook-features
 - learn.introduction-to-polyglot-notebooks.6-document-your-code
 - learn.introduction-to-polyglot-notebooks.7-value-sharing
-- learn.introduction-to-polyglot-notebooks.8-summary
+- learn.introduction-to-polyglot-notebooks.8-knowledge-check
+- learn.introduction-to-polyglot-notebooks.9-summary
 badge:
   uid: learn.introduction-to-polyglot-notebooks.badge
