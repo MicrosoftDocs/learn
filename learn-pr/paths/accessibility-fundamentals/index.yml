@@ -22,7 +22,6 @@ products:
 subjects:
 - accessibility
 modules:
-- learn.cela-disability-intro
 - learn.cela-accessibility-features
 - learn.accessible-content-m365
 trophy:
