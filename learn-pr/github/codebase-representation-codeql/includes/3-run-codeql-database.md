@@ -1,6 +1,6 @@
 With your code extracted to a database, you can now analyze it by using CodeQL queries. GitHub experts, security researchers, and community contributors write and maintain the default CodeQL queries. You can also write your own queries.
 
-You can use CodeQL queries in code-scanning analysis to find problems in your source code and to find potential security vulnerabilities. You can also write custom queries to identify problems for each language you're using in your source code.
+You can use CodeQL queries in code-scanning analysis to find problems in your source code and to find potential security vulnerabilities. You can also write custom queries to identify problems for each language that you're using in your source code.
 
 There are two important types of queries:
 
@@ -29,7 +29,7 @@ select / ... expressions ... */
 
 Using CodeQL with code scanning converts results in a way that highlights the potential issues that the queries are designed to find. Queries contain metadata properties that indicate how the results should be interpreted. Use query metadata to:
 
-- Identify your custom queries when you add them to your GitHub repository
+- Identify your custom queries when you add them to your GitHub repository.
 - Provide information about the query's purpose.
 
 Metadata information can include information like a description of the query, a unique ID, and the kind of problem it is (alert or path). The metadata also specifies how to interpret and display the query results.
@@ -54,9 +54,9 @@ For more information on the QL language, see the [CodeQL documentation](https://
 
 ## Path queries
 
-The way information flows through a program is important. Data that seems benign can flow in unexpected ways that allow it to be used maliciously.
+The way that information flows through a program is important. Data that seems benign can flow in unexpected ways that allow it to be used maliciously.
 
-Creating path queries can help to visualize the flow of information through a codebase. A query can track the path that data takes from its possible starting points (`source`) to its possible end points (`sink`). To model paths, your query must provide information about the source, the sink, and the data flow steps that link them.
+Creating path queries can help you visualize the flow of information through a codebase. A query can track the path that data takes from its possible starting points (`source`) to its possible endpoints (`sink`). To model paths, your query must provide information about the source, the sink, and the data flow steps that link them.
 
 The easiest way to start writing your own path query is to use one of the existing queries as a template. To get these queries for supported languages, see the [CodeQL documentation](https://codeql.github.com/codeql-query-help/).
 
@@ -97,9 +97,9 @@ In that template:
 
 Your query needs to compute a path graph in order to generate path explanations. To do so, define a query predicate called `edges`. A query predicate is a nonmember predicate with a `query` annotation. The query annotation returns all the tuples that the predicate evaluates.
 
-The `edges` predicate defines the edge relations of the graph that you're computing. It's used to compute the paths related to each result that your query generates. You can also import a predefined `edges` predicate from a path graph module in one of the standard data flow libraries.
+The `edges` predicate defines the edge relations of the graph that you're computing. It's used to compute the paths related to each result that your query generates. You can also import a predefined `edges` predicate from a path graph module in one of the standard data-flow libraries.
 
-The data flow libraries contain the other classes, predicates, and modules that are commonly used in data flow analysis, in addition to the path graph module. The CodeQL data-flow libraries function by modeling the data-flow graph or implementing data flow analysis. Normal data-flow libraries are used to analyze the information flow in which data values are preserved at each step.
+The data-flow libraries contain the other classes, predicates, and modules that are commonly used in data-flow analysis, in addition to the path graph module. The CodeQL data-flow libraries function by modeling the data-flow graph or implementing data-flow analysis. Normal data-flow libraries are used to analyze the information flow in which data values are preserved at each step.
 
 Here's an example statement that imports the `pathgraph` module from the data-flow library (`DataFlow.qll`), in which `edges` is defined:
 
@@ -119,7 +119,7 @@ You can optionally define a `nodes` query predicate, which specifies the nodes o
 
  When you use queries to analyze a CodeQL database, you receive meaningful results in the context of the source code. The results are styled as alerts or paths in SARIF or another interpreted format.
 
-Here's an example of a CodeQL database command that will analyze the database by running selected queries against it and interpreting the results:
+Here's an example of a CodeQL database command that analyzes the database by running selected queries against it and interpreting the results:
 
 `codeql database analyze --format=<format>
 ---output=<output> [--threads=<num>] [--ram=<MB>] <options>... -- <database> <query|dir|suite>...`
@@ -136,7 +136,7 @@ CodeQL supports SARIF for sharing static analysis results. SARIF is designed to 
 
 You need to specify a category when using SARIF output for CodeQL analysis. Categories can distinguish multiple analyses performed on the same commit repository and on different languages or different parts of the code. However, SARIF files with the same category overwrite each other.
 
-You can scan each SARIF output file with CodeQL to analyze different languages within the same code base when the category value is consistent between the analysis runs. We recommend that you use the language being scanned as an identifier for the category.
+You can scan each SARIF output file by using CodeQL to analyze different languages within the same code base when the category value is consistent between the analysis runs. We recommend that you use the language being scanned as an identifier for the category.
 
 Here's one example. The category value appears (with a trailing slash appended if it's not already present) as the `<run>.automationId` property in SARIF v1, the `<run>.automationLogicalId` property in SARIF v2, and the `<run>.automationDetails.id` property in SARIF v2.1.0.
 
@@ -152,14 +152,14 @@ You could potentially allow the CodeQL CLI to use the same token if CI servers a
 
 ### Upload SARIF results
 
-For code scanning to display results from a third-party static analysis tool in your GitHub repository, your results must be stored in a SARIF file that supports a specific subset of the SARIF 2.1.0 JSON schema. You can upload the results by using the code scanning API or the CodeQL CLI.
+For code scanning to display results from a non-Microsoft static analysis tool in your GitHub repository, your results must be stored in a SARIF file that supports a specific subset of the SARIF 2.1.0 JSON schema. You can upload the results by using the code-scanning API or the CodeQL CLI.
 
-Each time you upload the results of a new code scan, CodeQL processes the results and adds alerts to the repository. To prevent duplicate alerts for the same problem, code scanning uses the SARIF `partialFingerprints` property to match results across various runs so they appear only once in the latest run for the selected branch. This makes it possible to match alerts to the correct line of code when files are edited.
+Each time you upload the results of a new code scan, CodeQL processes the results and adds alerts to the repository. To prevent duplicate alerts for the same problem, code scanning uses the SARIF `partialFingerprints` property to match results across various runs so that they appear only once in the latest run for the selected branch. This makes it possible to match alerts to the correct line of code when files are edited.
 
 The rule ID for a result has to be the same across analyses. Fingerprint data is automatically included in SARIF files created through the CodeQL analysis workflow or the CodeQL runner.
 
-SARIF specifications use the JSON property name `partialFingerprints`, a dictionary from named fingerprint types to the fingerprint. This will contain, at a minimum, a value for `primaryLocationLineHash`, which provides a fingerprint based on the context of the primary location.
+SARIF specifications use the JSON property name `partialFingerprints`, a dictionary from named fingerprint types to the fingerprint. This property contains, at a minimum, a value for `primaryLocationLineHash`, which provides a fingerprint based on the context of the primary location.
 
-GitHub tries to populate the `partialFingerprints` field from the source files if you upload a SARIF file by using the `upload-sarif` action and this data is missing. Additionally, if you upload a SARIF file without fingerprint data using the `/code-scanning/sarifs` API endpoint, users might see duplicate alerts when code-scanning alerts are processed and displayed.
+GitHub tries to populate the `partialFingerprints` field from the source files if you upload a SARIF file by using the `upload-sarif` action and this data is missing. Additionally, if you upload a SARIF file without fingerprint data by using the `/code-scanning/sarifs` API endpoint, users might see duplicate alerts when code-scanning alerts are processed and displayed.
 
 To avoid seeing duplicate alerts while working with static analysis tools, you should calculate fingerprint data and populate the `partialFingerprints` property before you upload the SARIF file. A helpful starting point is to use the same script as the `upload-sarif` action.
