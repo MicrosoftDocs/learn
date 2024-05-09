@@ -14,11 +14,13 @@ Collect, transfer, and normalize data from various sources for analysis, with a 
 
 Define strategies to assign and split shared cloud costs using accounts, tags, labels, and other metadata, creating accountability among teams and projects within an organization.
 
-#### Get started:
+#### Get started: cost allocation
 
-<iframe title="FinOps Interactive Guide for Cost Allocation." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%201%20-%20Cost%20allocation" width="800" height="500"></iframe>
+<iframe title="FinOps interactive guide for cost allocation." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%201%20-%20Cost%20allocation" width="800" height="500"></iframe>
 
-<iframe title="FinOps Interactive Guide for Manage Shared Costs." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%203%20-%20Manage%20shared%20costs" width="800" height="500"></iframe>
+#### Get started: manage shared costs
+
+<iframe title="FinOps interactive guide for managing shared costs." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%203%20-%20Manage%20shared%20costs" width="800" height="500"></iframe>
 
 ## Reporting + analytics
 
@@ -26,9 +28,9 @@ Define strategies to assign and split shared cloud costs using accounts, tags, l
 
 Examine and showback cloud data to gain insights into usage and spend patterns to identify cost optimization opportunities, improve cost efficiency, and make informed financial decisions regarding cloud resources.
 
-#### Get started:
+#### Get started: data analysis & showback
 
-<iframe title="FinOps Interactive Guide for Data Analysis & Showback." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%202%20-%20Data%20analysis%20and%20showback" width="800" height="500"></iframe>
+<iframe title="FinOps interactive guide for data analysis & showback." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%202%20-%20Data%20analysis%20and%20showback" width="800" height="500"></iframe>
 
 ## Anomaly management
 
@@ -36,9 +38,9 @@ Examine and showback cloud data to gain insights into usage and spend patterns t
 
 Detect, identify, alert, and manage unexpected cloud cost and usage irregularities in a timely manner to lower risk in cost-effective cloud operations.
 
-#### Get started:
+#### Get started: manage anomalies
 
-<iframe title="FinOps Interactive Guide for Manage Anomalies." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%205%20-%20Manage%20anomalies" width="800" height="500"></iframe>
+<iframe title="FinOps interactive guide for managing anomalies." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%205%20-%20Manage%20anomalies" width="800" height="500"></iframe>
 
 ----------
 
