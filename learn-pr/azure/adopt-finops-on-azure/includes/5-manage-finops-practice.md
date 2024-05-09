@@ -44,9 +44,9 @@ Coordinating activities between an organization's Core FinOps Personas and other
 
 Developing criteria and methodology to capture proof-of-value for effectively selecting FinOps tools and services that align to the Framework Capabilities to empower the FinOps practice.
 
-#### Get started:
+#### Get started with the FinOps on Azure interactive guides:
 
-<iframe title="FinOps on Azure Interactive Guides (approximately 1 hour, 15 minutes)." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure" width="800" height="500"></iframe>
+<iframe title="FinOps on Azure interactive guides (approximately 1 hour, 15 minutes)." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure" width="800" height="500"></iframe>
 
 ## FinOps assessment
 
