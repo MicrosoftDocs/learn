@@ -10230,11 +10230,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/achievements/learn.accessibility-fundamentals.trophy.yml",
-      "redirect_url": "learn-pr/achievements/learn.accessibility-fundamental.trophy.yml",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/wwl-azure/examine-components-iot-solution/index.md",
       "redirect_url": "/training/browse/?products=azure&terms=iot",
       "redirect_document_id": false
