@@ -107,13 +107,13 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
    git push
    ```
 
-1. This is the first time you've pushed to this repository, so you might be prompted to sign in.
+1. Since this is the first time you push to the repository, you might be prompted to sign in.
 
    On Windows, type <kbd>1</kbd> to authenticate using a web browser, and select <kbd>Enter</kbd>.
 
    On macOS, select **Authorize**.
 
-1. A browser window appears. You may need to sign in to GitHub again. Select **Authorize**.
+1. A browser window appears. You might need to sign in to GitHub again. Select **Authorize**.
 
 ## View the workflow run
 
@@ -153,23 +153,17 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
 1. Select the commit identifier.
 
-   Notice that GitHub shows you the list of commits included in the deployment. This helps you to see exactly what has changed in your environment over time.
+   Notice that GitHub shows you the list of commits included in the deployment. This helps you to see the changes in your environment over time.
 
    :::image type="content" source="../media/5-environment-commits.png" alt-text="Screenshot of GitHub that shows the production environment's deployment details, with a list of commits.":::
 
 1. In your browser, go to the [Azure portal](https://portal.azure.com).
 
-1. In the sidebar menuselect App Services open the Azure App Service app, and select the App Service for the production toy website. It will probably be the second app on the list.
-
-   :::image type="content" source="../media/5-app-services-select.png" alt-text="Screenshot of the Sidebar menu with the App Services selection highlighted.":::
-
-   Notice that the type of App Service plan is **S1**.
-
 1. Go to the **ToyWebsiteProduction** resource group.
 
 1. In the list of resources, open the Azure App Service app.
 
-   :::image type="content" source="../media/5-app-service-production.png" alt-text="Screenshot of the Azure portal that shows the production App Service app and the App Service plan SKU details.":::
+   :::image type="content" source="../media/5-app-service-production.png" alt-text="Screenshot of the Azure portal that shows the App Services toy website production app and the App Service plan SKU details.":::
 
    Notice that the type of App Service plan is **S1**.
 
