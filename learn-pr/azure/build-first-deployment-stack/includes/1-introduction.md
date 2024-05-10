@@ -1,16 +1,22 @@
-Insert text here.
+An Azure deployment stack is a type of Azure resource that enables you to manage the lifecycle of a collection of Azure resources as a single atomic unit, even if they span multiple resource groups or subscriptions. It allows for consistent and repeatable deployments, simplifies management, and enables efficient scaling and updating of resources.
 
 ## Example Scenario
 
-Insert text here.
+Suppose you work as a DevOps engineer for a community bank that has decided to use deployment stacks to better control lifecycle management of the bank's Azure resources. You've been asked to deploy a test version of a new deposits application.
+
+The initial deployment will include an app service plan and an app service, but the next sprint will include integrating an Azure SQL database.
+
+![a graphic representing an application deployed to a single resource group](../media/single-resource-group-application.png)
+
+You decide to create and modify the deployment stack using a command-line interface and a bicep file that defines the application's resources.
 
 ## What will we be doing?
 
-Insert text here.
+In this module, you'll create, update, and delete a deployment stack and its managed resources.
 
 ## What is the main goal?
 
-After completing this module, you'll be able to create, update, and delete a deployment stack and its managed resources.
+By the end of this module, you'll you'll be able to create, update, and delete a deployment stack and its managed resources. You'll also understand how to use a command-line interface to work with deployment stacks.
 
 ## Prerequisites
 
