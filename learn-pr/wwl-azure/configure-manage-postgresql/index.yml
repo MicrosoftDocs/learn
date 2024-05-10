@@ -43,7 +43,7 @@ units:
 - learn.wwl.configure-manage-postgresql.explain-purpose-vacuum-autovacuum
 - learn.wwl.configure-manage-postgresql.configure-autovacuum-server-parameters
 - learn.wwl.configure-manage-postgresql.exercise-configure-system-parameter-explore-metadata
-- learn.wwl.configure-manage-postgresql.kowledge-check
+- learn.wwl.configure-manage-postgresql.knowledge-check
 - learn.wwl.configure-manage-postgresql.summary
 badge:
   uid: learn.wwl.configure-manage-postgresql.badge
