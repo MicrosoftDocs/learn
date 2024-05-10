@@ -4,12 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/16/2023
+  ms.date: 05/02/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/7-knowledge-check.md)]
@@ -38,14 +38,14 @@ quiz:
     - content: "Billing for Container Instances occurs when containers are in use."
       isCorrect: true
       explanation: "Correct. Organizations are only billed when their Container Instances are in use."
-  - content: "What implementation ensures container software runs the same locally and in the cloud on Azure?"
+  - content: "What container management solution simplifies deployment?"
     choices:
-    - content: "Docker"
+    - content: "Azure Container Apps"
       isCorrect: true
-      explanation: "Correct. Docker guarantees that containerized software always runs the same locally on Windows or Linux, and in the cloud on Azure."
+      explanation: "Correct. Azure Container Apps is a container management solution that simplifies deployment and provides orchestration."
     - content: "Container groups"
       isCorrect: false
-      explanation: "Incorrect. Using container groups in Azure Container Instances doesn't guarantee that your containerized software always runs the same."
+      explanation: "Incorrect. Container groups are not a container management solution."
     - content: "Container Instances"
       isCorrect: false
-      explanation: "Incorrect. Azure Container Instances doesn't guarantee that containerized software always runs the same."
+      explanation: "Incorrect. Azure Container Instances doesn't provide orchestration."
