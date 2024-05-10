@@ -38371,7 +38371,7 @@
     },
     {
       "source_path": "learn-pr/wwl-azure/procedures-functions-postgresql/4-create-use-function-azure-database-for-postgresql.md",
-      "redirect_url": "/training/modules/procedures-functions-postgresql/4-create-function-azure-database-postgresql.md",
+      "redirect_url": "/training/modules/procedures-functions-postgresql/4-create-function-azure-database-postgresql",
       "redirect_document_id": false
     },
      {
