@@ -38378,6 +38378,21 @@
       "source_path": "learn-pr/wwl-azure/procedures-functions-postgresql/5-exercise-create-stored-procedure-azure-database-for-postgresql.md",
       "redirect_url": "/training/modules/procedures-functions-postgresql/",
       "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/secure-azure-database-for-postgresql/7-exercise-configure-permissions.md",
+      "redirect_url": "/training/modules/secure-azure-database-for-postgresql/6-exercise-configure-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/secure-azure-database-for-postgresql/8-knowledge-check.md",
+      "redirect_url": "/training/modules/secure-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/secure-azure-database-for-postgresql/9-summary.md",
+      "redirect_url": "/training/modules/secure-azure-database-for-postgresql/8-summary",
+      "redirect_document_id": false
     }
   ]
 }
