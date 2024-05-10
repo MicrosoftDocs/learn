@@ -2,11 +2,12 @@
 uid: learn.wwl.design-data-integration
 metadata:
   title: Design data integration
-  description: "Azure Architects design and recommend data integration solutions."
+  description: Azure Architects design and recommend data integration solutions.
   ms.date: 06/12/2023
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: azure
 title: Design data integration
 summary: Azure Architects design and recommend data integration solutions.
 abstract: |

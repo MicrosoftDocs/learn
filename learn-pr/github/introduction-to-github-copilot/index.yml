@@ -31,8 +31,6 @@ roles:
 products:
 - github
 - azure
-subjects:
-  - development-tools
 units:
 - learn.github.introduction-to-github-copilot.introduction
 - learn.github.introduction-to-github-copilot.github-copilot-your-ai-pair-programmer

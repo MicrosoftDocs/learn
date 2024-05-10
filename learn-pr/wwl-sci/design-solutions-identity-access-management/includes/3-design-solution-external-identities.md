@@ -14,13 +14,13 @@ The following capabilities make up External Identities:
 
 Depending on how you want to interact with external organizations and the types of resources you need to share, you can use a combination of these capabilities.
 
-![External Identities overview diagram.](https://learn.microsoft.com/azure/active-directory/external-identities/media/external-identities-overview/external-identities-b2b-overview.png)
+![External Identities overview diagram.](/azure/active-directory/external-identities/media/external-identities-overview/external-identities-b2b-overview.png)
 
-<!--[](https://learn.microsoft.com/azure/active-directory/external-identities/external-identities-overview#b2b-collaboration)-->
+<!--[](/azure/active-directory/external-identities/external-identities-overview#b2b-collaboration)-->
 
 ## B2B collaboration
 
-With [B2B collaboration](https://learn.microsoft.com/azure/active-directory/external-identities/what-is-b2b), you can invite anyone to sign in to your Microsoft Entra organization using their own credentials so they can access the apps and resources you want to share with them. Use B2B collaboration when you need to let external users access your Office 365 apps, software-as-a-service (SaaS) apps, and line-of-business applications, especially when the partner doesn't use Microsoft Entra ID or it's impractical for administrators to set up a mutual connection through B2B direct connect. There are no credentials associated with B2B collaboration users. Instead, they authenticate with their home organization or identity provider, and then your organization checks the guest user’s eligibility for B2B collaboration.
+With [B2B collaboration](/azure/active-directory/external-identities/what-is-b2b), you can invite anyone to sign in to your Microsoft Entra organization using their own credentials so they can access the apps and resources you want to share with them. Use B2B collaboration when you need to let external users access your Office 365 apps, software-as-a-service (SaaS) apps, and line-of-business applications, especially when the partner doesn't use Microsoft Entra ID or it's impractical for administrators to set up a mutual connection through B2B direct connect. There are no credentials associated with B2B collaboration users. Instead, they authenticate with their home organization or identity provider, and then your organization checks the guest user’s eligibility for B2B collaboration.
 
 There are various ways to add external users to your organization for B2B collaboration:
 
@@ -28,18 +28,18 @@ There are various ways to add external users to your organization for B2B collab
     
 -   Use self-service sign-up user flows to let external users sign up for applications themselves. The experience can be customized to allow sign-up with a work, school, or social identity (like Google or Facebook). You can also collect information about the user during the sign-up process.
     
--   Use [Microsoft Entra entitlement management](https://learn.microsoft.com/azure/active-directory/governance/entitlement-management-overview), an identity governance feature that lets you manage [identity and access for external users at scale](https://learn.microsoft.com/azure/active-directory/governance/entitlement-management-external-users#how-access-works-for-external-users) by automating access request workflows, access assignments, reviews, and expiration.
+-   Use [Microsoft Entra entitlement management](/azure/active-directory/governance/entitlement-management-overview), an identity governance feature that lets you manage [identity and access for external users at scale](/azure/active-directory/governance/entitlement-management-external-users#how-access-works-for-external-users) by automating access request workflows, access assignments, reviews, and expiration.
     
 
 A user object is created for the B2B collaboration user in the same directory as your employees. This user object can be managed like other user objects in your directory, added to groups, and so on. You can assign permissions to the user object (for authorization) while letting them use their existing credentials (for authentication).
 
-You can use [cross-tenant access settings](https://learn.microsoft.com/azure/active-directory/external-identities/cross-tenant-access-overview) to manage B2B collaboration with other Microsoft Entra organizations and across Microsoft Azure clouds. For B2B collaboration with non-Azure AD external users and organizations, use [external collaboration settings](https://learn.microsoft.com/azure/active-directory/external-identities/external-collaboration-settings-configure).
+You can use [cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview) to manage B2B collaboration with other Microsoft Entra organizations and across Microsoft Azure clouds. For B2B collaboration with non-Azure AD external users and organizations, use [external collaboration settings](/azure/active-directory/external-identities/external-collaboration-settings-configure).
 
-<!--[](https://learn.microsoft.com/azure/active-directory/external-identities/external-identities-overview#b2b-direct-connect)-->
+<!--[](/azure/active-directory/external-identities/external-identities-overview#b2b-direct-connect)-->
 
 ## B2B direct connect
 
-B2B direct connect is a new way to collaborate with other Microsoft Entra organizations. This feature currently works with Microsoft Teams shared channels. With B2B direct connect, you create two-way trust relationships with other Microsoft Entra organizations to allow users to seamlessly sign in to your shared resources and vice versa. B2B direct connect users aren't added as guests to your Microsoft Entra directory. When two organizations mutually enable B2B direct connect, users authenticate in their home organization and receive a token from the resource organization for access. Learn more about [B2B direct connect in Microsoft Entra ID](https://learn.microsoft.com/azure/active-directory/external-identities/b2b-direct-connect-overview).
+B2B direct connect is a new way to collaborate with other Microsoft Entra organizations. This feature currently works with Microsoft Teams shared channels. With B2B direct connect, you create two-way trust relationships with other Microsoft Entra organizations to allow users to seamlessly sign in to your shared resources and vice versa. B2B direct connect users aren't added as guests to your Microsoft Entra directory. When two organizations mutually enable B2B direct connect, users authenticate in their home organization and receive a token from the resource organization for access. Learn more about [B2B direct connect in Microsoft Entra ID](/azure/active-directory/external-identities/b2b-direct-connect-overview).
 
 Currently, B2B direct connect enables the Teams Connect shared channels feature, which lets your users collaborate with external users from multiple organizations with a Teams shared channel for chat, calls, file-sharing, and app-sharing. Once you’ve set up B2B direct connect with an external organization, the following Teams shared channels capabilities become available:
 
@@ -48,11 +48,11 @@ Currently, B2B direct connect enables the Teams Connect shared channels feature,
 -   External users can access the Teams shared channel without having to switch organizations or sign in with a different account. From within Teams, the external user can access files and apps through the Files tab. The user’s access is determined by the shared channel’s policies.
     
 
-You use [cross-tenant access settings](https://learn.microsoft.com/azure/active-directory/external-identities/cross-tenant-access-settings-b2b-collaboration) to manage trust relationships with other Microsoft Entra organizations and define inbound and outbound policies for B2B direct connect.
+You use [cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-settings-b2b-collaboration) to manage trust relationships with other Microsoft Entra organizations and define inbound and outbound policies for B2B direct connect.
 
-For details about the resources, files, and applications, that are available to the B2B direct connect user via the Teams shared channel, refer to [Chat, teams, channels, & apps in Microsoft Teams](https://learn.microsoft.com/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page).
+For details about the resources, files, and applications, that are available to the B2B direct connect user via the Teams shared channel, refer to [Chat, teams, channels, & apps in Microsoft Teams](/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page).
 
-<!--[](https://learn.microsoft.com/azure/active-directory/external-identities/external-identities-overview#azure-ad-b2c)-->
+<!--[](/azure/active-directory/external-identities/external-identities-overview#azure-ad-b2c)-->
 
 ## Azure AD B2C
 
@@ -60,9 +60,9 @@ Azure AD B2C is a Customer Identity and Access Management (CIAM) solution that l
 
 With Azure AD B2C, customers can sign in with an identity they've already established (like Facebook or Gmail). You can completely customize and control how customers sign up, sign in, and manage their profiles when using your applications.
 
-Although Azure AD B2C is built on the same technology as Microsoft Entra ID, it's a separate service with some feature differences. For more information about how an Azure AD B2C tenant differs from a Microsoft Entra tenant, see [Supported Microsoft Entra features](https://learn.microsoft.com/azure/active-directory-b2c/supported-azure-ad-features) in the [Azure AD B2C documentation](https://learn.microsoft.com/azure/active-directory-b2c/).
+Although Azure AD B2C is built on the same technology as Microsoft Entra ID, it's a separate service with some feature differences. For more information about how an Azure AD B2C tenant differs from a Microsoft Entra tenant, see [Supported Microsoft Entra features](/azure/active-directory-b2c/supported-azure-ad-features) in the [Azure AD B2C documentation](/azure/active-directory-b2c/).
 
-<!--[](https://learn.microsoft.com/azure/active-directory/external-identities/external-identities-overview#comparing-external-identities-feature-sets)-->
+<!--[](/azure/active-directory/external-identities/external-identities-overview#comparing-external-identities-feature-sets)-->
 
 ## Comparing External Identities feature sets
 
@@ -84,4 +84,4 @@ The following table gives a detailed comparison of the scenarios you can enable 
 | **Conditional Access**        | Managed by the host/inviting organization.|  Managed by the host/inviting organization.   |  Managed by the organization via Conditional Access and Identity Protection.        |
 | **Branding**  | Host/inviting organization's brand is used.  | For sign-in screens, the user’s home organization brand is used. In the shared channel, the resource organization's brand is used. | Fully customizable branding per application or organization.   |
 
-Based on your organization’s requirements you might use cross-tenant synchronization (preview) in multi-tenant organizations. For more information about this new feature, see the [multi-tenant organization documentation](https://learn.microsoft.com/azure/active-directory/multi-tenant-organizations/) and the [feature comparison](https://learn.microsoft.com/azure/active-directory/multi-tenant-organizations/overview#compare-multi-tenant-capabilities).
+Based on your organization’s requirements you might use cross-tenant synchronization (preview) in multi-tenant organizations. For more information about this new feature, see the [multi-tenant organization documentation](/azure/active-directory/multi-tenant-organizations/) and the [feature comparison](/azure/active-directory/multi-tenant-organizations/overview#compare-multi-tenant-capabilities).

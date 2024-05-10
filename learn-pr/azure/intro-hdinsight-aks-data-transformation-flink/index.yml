@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.intro-to-azure-hdinsight-aks-data-transformation-flink
+metadata:
+  moduleType: introduction        
+  title: Use Apache Flink on Azure HDInsight on AKS
+  description: Use Apache Flink on Azure HDInsight on AKS.
+  ms.date: 02/22/2024  
+  author: sairamyeturi
+  ms.author: sairamyeturi
+  ms.topic: module-guided-project
+  ms.service: hdinsight-aks
+title: Use Apache Flink on Azure HDInsight on AKS
+summary: |
+  This tutorial guides you through the process of performing streaming data transformations using Apache Flink on HDInsight on AKS deployed on Azure Kubernetes Service(AKS). It covers setting up the environment, deploying Apache Flink on HDInsight on AKS, configuring data sources and sinks, and executing streaming data transformations efficiently.
+  
+abstract: |
+  By the end of this module, you can
+    - Understand Apache Flink architecture and use cases 
+    - Create and configure an Apache Flink cluster 
+    - Run an Apache Flink Job from the portal, Apache Flink UI, web `ssh` pod and REST API
+    - Integrate Apache Flink and Apache Kafka.
+prerequisites: |
+  - Good working experience with Azure
+  - Good working experience with big data platforms
+  - Before starting, you should complete the modules: 
+      - [Introduction to Azure HDInsight on AKS](/training/modules/intro-to-azure-hdinsight-aks/) 
+      - [Configure and manage HDInsight on AKS Cluster](/training/modules/intro-configuration-management-hdinsight-aks/).
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - database-administrator
+  - data-engineer
+  - data-scientist
+products:
+  - azure
+  - azure-hdinsight-aks
+units:
+- learn.intro-hdinsight-aks-data-transformation-flink.introduction
+- learn.intro-hdinsight-aks-data-transformation-flink.flink-architecture
+- learn.intro-hdinsight-aks-data-transformation-flink.create-flink-cluster
+- learn.intro-hdinsight-aks-data-transformation-flink.run-job-in-flink
+- learn.intro-hdinsight-aks-data-transformation-flink.write-event-message
+- learn.intro-hdinsight-aks-data-transformation-flink.knowledge-check
+- learn.intro-hdinsight-aks-data-transformation-flink.summary
+badge:
+  uid: learn.intro-hdinsight-aks-data-transformation-flink.badge

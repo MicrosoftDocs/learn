@@ -19,11 +19,11 @@ All settings are applied to **HKLM\\SOFTWARE\\FSLogix\\Profiles.**
 
 Add or verify:
 
-| **Configuring Cloud Cache for Profile Container** |                     |                                                                                                 |
-| ------------------------------------------------- | ------------------- | ----------------------------------------------------------------------------------------------- |
-| Registry Value                                    | Type                | Value                                                                                           |
-| CCDLocations                                      | `REG_SZ / MULTI_SZ` | `type=smb,connectionString=<\Location1\Folder1>;type=smb,connectionString=<\Location2\folder2>` |
-| Enabled                                           | DWORD               | One                                                                                             |
+
+| **Registry Value**                                   | **Type**                | **Value**                                                                                      |
+|------------------------------------------------------|-------------------------|------------------------------------------------------------------------------------------------|
+| CCDLocations                                         | `REG_SZ / MULTI_SZ`     | `type=smb,connectionString=<\Location1\Folder1>;type=smb,connectionString=<\Location2\folder2>`|
+| Enabled                                              | DWORD                   | One                                                                                            |
 
 Other considerations include:
 

@@ -5,9 +5,8 @@ metadata:
   description: This learning path provides instruction on the implementation of Windows 365, including application management, and provisioning, deploying, and managing Windows 365 Cloud PCs.
   ms.date: 01/03/2024
   author: wwlpublish
-  ms.author: mkitris
+  ms.author: rstearman
   ms.topic: learning-path
-  ms.prod: employee-learning
 title: MD-015 Implement Windows 365 Cloud PCs
 prerequisites: |
   - Proficient understanding of general IT practices.
@@ -37,7 +36,6 @@ subjects:
 - business-applications
 - cloud-computing
 - infrastructure
-- modern-work
 - productivity
 - virtualization
 - virtual-machine

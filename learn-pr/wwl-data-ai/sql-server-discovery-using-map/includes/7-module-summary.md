@@ -10,4 +10,3 @@ The MAP toolkit collects inventory information in a methodical and reliable way,
 
 - [Download the Microsoft Assessment and Planning Toolkit](https://www.microsoft.com/download/details.aspx?id=7826)
 - [Microsoft Assessment and Planning (MAP) Toolkit Team Blog](https://blogs.technet.microsoft.com/mapblog/)
-- [Microsoft Assessment and Planning (MAP) Toolkit: Getting Started (Technet article)](https://social.technet.microsoft.com/wiki/contents/articles/1640.microsoft-assessment-and-planning-toolkit.aspx)

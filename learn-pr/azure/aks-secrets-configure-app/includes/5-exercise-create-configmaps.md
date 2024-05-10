@@ -19,17 +19,7 @@ You deployed the application back end, and now you need to deploy the applicatio
 
 ## Create a ConfigMap
 
-1. Get the DNS zone that has been made available with the HTTP application routing add-on using the `az aks show` command and save the output for later use. You can also use the same value from the previous Ingress you created for the application back end.
-
-    ```azurecli-interactive
-    az aks show \
-      -g $RESOURCE_GROUP \
-      -n $CLUSTER_NAME \
-      -o tsv \
-      --query addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName
-    ```
-
-2. Create a new YAML file named `configmap.yaml` and paste in the following code to create the ConfigMap spec:
+1. Create a new YAML file named `configmap.yaml` and paste in the following code to create the ConfigMap spec:
 
     ```yaml
     apiVersion: v1
@@ -46,15 +36,17 @@ You deployed the application back end, and now you need to deploy the applicatio
         })()
     ```
 
-3. Replace `{your-dns-zone}` with the DNS zone you copied from the previous step.
-4. Save and close the file.
-5. Apply the changes to your cluster using the `kubectl apply` command.
+1. Replace `{your-dns-zone}` with the value of the ZONE_NAME variable you created earlier.
+
+1. Save and close the file.
+
+1. Apply the changes to your cluster using the `kubectl apply` command.
 
     ```azurecli-interactive
     kubectl apply -f configmap.yaml
     ```
 
-6. Check the result by querying for the ConfigMap using the `kubectl get configmap` command.
+1. Check the result by querying for the ConfigMap using the `kubectl get configmap` command.
 
     ```azurecli-interactive
     kubectl get configmap ship-manager-config
@@ -99,7 +91,7 @@ You deployed the application back end, and now you need to deploy the applicatio
 
     Notice how the ConfigMap is mounted in the Deployment object. We don't specify any keys, which means we need to specify a `subPath` key. The `subpath` is the filename inside the container.
 
-2. Below the three dashes, paste in the following code to create the Service and Ingress specs:
+1. Below the three dashes, paste in the following code to create the Service and Ingress specs:
 
     ```yaml
     apiVersion: v1
@@ -121,7 +113,7 @@ You deployed the application back end, and now you need to deploy the applicatio
       name: contoso-ship-manager-frontend
       namespace: default
       annotations:
-        kubernetes.io/ingress.class: addon-http-application-routing
+        spec.ingressClassName: webapprouting.kubernetes.azure.com
     spec:
       rules:
         - host: contoso-ship-manager.{your-dns-zone}.aksapp.io
@@ -136,21 +128,23 @@ You deployed the application back end, and now you need to deploy the applicatio
                       name: http
     ```
 
-3. Replace `{your-dns-zone}` in the Ingress to match the DNS you copied from the first step.
-4. Save and close the file.
-5. Deploy the application using the `kubectl apply` command.
+1. Replace `{your-dns-zone}` in the Ingress with the value of the ZONE_NAME variable you created earlier.
+
+1. Save and close the file.
+
+1. Deploy the application using the `kubectl apply` command.
 
     ```azurecli-interactive
     kubectl apply -f frontend.yaml
     ```
 
-6. Check the result by querying the for the Kubernetes API using the `kubectl get deployment` command.
+1. Check the result by querying the Kubernetes API using the `kubectl get deployment` command.
 
     ```azurecli-interactive
     kubectl get deployment contoso-ship-manager-frontend
     ```
 
-    When the API is available, you should get an output similar to the following:
+    When the API is available, you should get an output similar to the following example:
 
     ```output
     NAME                           READY   UP-TO-DATE   AVAILABLE   AGE

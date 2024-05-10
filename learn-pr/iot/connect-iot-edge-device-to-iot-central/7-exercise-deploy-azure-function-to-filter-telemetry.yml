@@ -14,7 +14,8 @@ metadata:
     - devx-track-azurecli
   ms.topic: unit
 durationInMinutes: 10
-azureSandbox: true
-interactive: bash
+# azureSandbox: true
+# interactive: bash
+azureSandbox: false
 content: |
   [!include[](includes/7-exercise-deploy-azure-function-to-filter-telemetry.md)]

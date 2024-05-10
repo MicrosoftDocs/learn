@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.create-prompts-for-generative-ai-training-tools.prompt-based-generative-ai-model
+title: Prompt-based generative AI model
+metadata:
+  title: Prompt-based generative AI model
+  description: This content is a part of the 'Create effective prompts for generative AI training tools' module.
+  ms.date: 02/27/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-prompt-based-generative-ai-model.md)]

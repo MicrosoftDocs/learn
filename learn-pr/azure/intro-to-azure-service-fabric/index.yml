@@ -6,7 +6,7 @@ metadata:
   ms.date: 01/03/2024
   author: tomvcassidy
   ms.author: tomcassidy
-  ms.topic: module
+  ms.topic: module-intro-to-product
   ms.service: service-fabric
 title: Introduction to Azure Service Fabric
 summary: This module describes the features of Azure Service Fabric, such as Azure service integration, stateless and stateful service support, and automatic scaling.

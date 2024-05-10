@@ -2,11 +2,12 @@
 uid: learn.wwl.manage-power-bi-artifacts-use-microsoft-purview
 metadata:
   title: Manage Power BI assets by using Microsoft Purview
-  description: "Improve data governance and asset discovery using Power BI and Microsoft Purview integration."
+  description: Improve data governance and asset discovery using Power BI and Microsoft Purview integration.
   ms.date: 07/06/2023
   author: wwlpublish
-  ms.author: shlindsay
-  ms.topic: interactive-tutorial
+  ms.author: anrudduc
+  ms.topic: module
+  ms.service: azure
 title: Manage Power BI assets by using Microsoft Purview
 summary: Improve data governance and asset discovery using Power BI and Microsoft Purview integration.
 abstract: |

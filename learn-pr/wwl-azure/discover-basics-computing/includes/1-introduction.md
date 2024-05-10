@@ -6,12 +6,12 @@ This module will explore some of the ways the internet works to try to answer so
 
 In this module, you'll learn about the following areas:
 
-- How computers work
-- Computer networks and how people and machines are identified in groups of computers
-- How identity works on the internet
-- What a VPN is and how you use them
-- How websites are identified on the internet
+ -  How computers work
+ -  Computer networks and how people and machines are identified in groups of computers
+ -  How identity works on the internet
+ -  What a virtual private network (VPN) is and how you use them
+ -  How websites are identified on the internet
 
-With this background, you should be well prepared to go deeper into various topics in this exciting discipline. Paraphrasing the sage Obi-wan Kenobi: Are you ready to take your first step into a larger world?
+With this background, you should be well prepared to go deeper into various topics in this exciting area. Are you ready to take your first step into a larger world?
 
 Let's jump in!

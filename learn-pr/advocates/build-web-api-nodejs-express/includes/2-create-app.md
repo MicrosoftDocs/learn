@@ -2,7 +2,7 @@ Companies often store a large amount of data in file systems and databases. They
 
 ## Web servers and web applications
 
-A web server is a piece of software that responds to requests from clients. A web application sits on top of the web server. Some languages, like Node.js, provide both the web server and the web application in a framework. In this module, the web server is provided by the `HTTP` module. The web application is provided by the Express.js framework and includes the web server.
+A web server is a piece of software that responds to requests from clients. A web application sits on top of the web server. Some environments, like Node.js, provide both the web server and the web application in a framework. In this module, the web server is provided by the `HTTP` module. The web application is provided by the Express.js framework and includes the web server.
 
 Learn more:
 

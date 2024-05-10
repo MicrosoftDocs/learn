@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/13/2023
+  ms.date: 04/02/2024
   author: wwlpublish
   ms.author: gmalc
   ms.topic: unit
@@ -19,7 +19,7 @@ quiz:
       explanation: "Incorrect. Azure monitor does not provide details of Fabric capacity unit consumption."
     - content: "Microsoft Fabric Capacity Metrics app"
       isCorrect: true
-      explanation: "Correct. A Data Factory pipeline is not an interactive Spark environment."
+      explanation: "Correct. Microsoft Fabric Capacity Metrics app is the tool used to monitor capacity consumption."
     - content: "Microsoft Azure Data Studio."
       isCorrect: false
       explanation: "Incorrect. Microsoft Azure Data Studio does not provide details of Fabric capacity unit consumption."

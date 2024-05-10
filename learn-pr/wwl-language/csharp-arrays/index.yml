@@ -2,25 +2,27 @@
 uid: learn.languages.csharp-arrays
 metadata:
   title: Store and iterate through sequences of data using Arrays and the foreach statement in C#
-  description: "Store and iterate through sequences of data using Arrays and the foreach statement in C#"
-  ms.date: 01/22/2024
+  description: "Learn to create array variables and iterate through elements of the array."
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: dotnet-csharp
   ms.devlang: csharp
 title: Store and iterate through sequences of data using Arrays and the foreach statement in C#
 summary: Work with sequences of related data in data structures known as arrays. Then, learn to iterate through each item in the sequence.
 abstract: |
   In this module, you will:
-  *   Create and initialize a new array.
-  *   Set and get values in arrays.
-  *   Iterate through each element of an array using the foreach statement.
+  -   Create and initialize a new array.
+  -   Set and get values in arrays.
+  -   Iterate through each element of an array using the foreach statement.
 prerequisites: |
-  - Experience with declaring and initializing variables and basic data types like string.
-  - Experience with printing to output using Console.WriteLine().
-  - Experience with string interpolation to combine literal strings with variable data.
-  - Experience researching how to use methods from the .NET Class Library.
+  -   Experience with declaring and initializing variables and basic data types like string.
+  -   Experience with printing to output using Console.WriteLine().
+  -   Experience with string interpolation to combine literal strings with variable data.
+  -   Experience researching how to use methods from the .NET Class Library.
 iconUrl: /training/achievements/csharp-arrays.svg
 levels:
 - beginner
@@ -33,7 +35,7 @@ products:
 - dotnet
 - vs-code
 subjects:
-- development-tools
+- app-development
 units:
 - learn.languages.csharp-arrays.introduction
 - learn.languages.csharp-arrays.exercise-array-basics

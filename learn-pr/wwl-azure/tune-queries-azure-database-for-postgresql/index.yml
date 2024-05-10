@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/13/2022
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: postgresql
 title: Tune queries in Azure Database for PostgreSQL
 summary: Database management systems (DBMSs) need systems to understand the data and the queries that are running against this data. It is important to understand how performance tuning works and how you can assess performance metrics.
@@ -25,7 +25,7 @@ roles:
 products:
 - azure-database-postgresql
 subjects:
-- database
+- databases
 units:
 - learn.wwl.tune-queries-azure-database-for-postgresql.introduction
 - learn.wwl.tune-queries-azure-database-for-postgresql.understand-statistics

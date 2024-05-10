@@ -8,7 +8,6 @@ metadata:
   ms.author: sheryang
   ms.topic: module
   ms.service: azure-ai-language
-  ms.subservice: language-service
 title: Fundamentals of Text Analysis with the Language Service
 summary: Explore Azure AI Language's natural language processing (NLP) features, which include sentiment analysis, key phrase extraction, named entity recognition, and language detection.
 abstract: |

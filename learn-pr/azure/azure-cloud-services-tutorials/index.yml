@@ -6,8 +6,7 @@ metadata:
   ms.date: 01/11/2024
   author: marlenaklein-msft
   ms.author: marlenaklein
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.topic: module
 title: Integrate Azure Cloud Services to your Unity project on HoloLens 2
 summary: Learn about Azure Cloud Services to enhance your learning experience.
 abstract: |

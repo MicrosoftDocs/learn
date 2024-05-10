@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.intro-configuration-management-hdinsight-aks
+metadata:
+  moduleType: introduction        
+  title: Configure and manage HDInsight on AKS cluster
+  description: Learn how to set up and control HDInsight on AKS cluster. This guide walks you through the process, making it easy to configure and manage HDInsight within AKS.
+  ms.date: 01/18/2024  
+  author: sairamyeturi
+  ms.author: sairamyeturi
+  ms.topic: module
+  ms.service: hdinsight-aks
+title: Configure and manage HDInsight on AKS cluster
+summary: Learn how to set up and control HDInsight on AKS cluster. This guide walks you through the process, making it easy to configure and manage HDInsight within AKS.
+abstract: |
+  By the end of this module, you'll be able to: 
+    - Set up and control HDInsight on AKS cluster.
+    - Easy configuration and management of HDInsight within AKS.
+prerequisites: |
+  - Good working experience with Azure
+  - Good working experience with big data platforms
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - database-administrator
+  - data-engineer
+  - data-scientist
+products:
+  - azure
+  - azure-hdinsight
+subjects:
+- data-management
+units:
+- learn.intro-configuration-management-hdinsight-aks.1-introduction
+- learn.intro-configuration-management-hdinsight-aks.2-guidelines-for-hdinsight-on-aks-cluster
+- learn.intro-configuration-management-hdinsight-aks.3-exercise-create-hdinsight-on-aks-cluster
+- learn.intro-configuration-management-hdinsight-aks.4-manage-hdinsight-on-aks-cluster
+- learn.intro-configuration-management-hdinsight-aks.5-exercise-customize-cluster-configuration
+- learn.intro-configuration-management-hdinsight-aks.6-manage-observability-of-hdinsight-on-aks-cluster
+- learn.intro-configuration-management-hdinsight-aks.7-exercise-enable-log-analytics
+- learn.intro-configuration-management-hdinsight-aks.8-knowledge-check
+- learn.intro-configuration-management-hdinsight-aks.9-summary
+badge:
+  uid: learn.intro-configuration-management-hdinsight-aks.badge

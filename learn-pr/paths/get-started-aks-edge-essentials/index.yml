@@ -1,0 +1,36 @@
+### YamlMime:LearningPath
+uid: learn.get-started-aks-edge-essentials
+title: Get started with Azure Kubernetes Service (AKS) Edge Essentials
+summary: Learn about the basics of on-premises lightweight Kubernetes implementation of AKS Edge Essentials that automates running containerized applications at scale.
+metadata:
+  title: Get started with Azure Kubernetes Service (AKS) Edge Essentials
+  description: Learn about the basics of on-premises lightweight Kubernetes implementation of AKS Edge Essentials that automates running containerized applications at scale. 
+  ms.date: 01/26/2024
+  author: asergaz
+  ms.author: sergaz
+  manager: lizross
+  ms.topic: learning-path
+prerequisites: |
+  - Knowledge about [Kubernetes core concepts for AKS](/azure/aks/hybrid/kubernetes-concepts)
+iconUrl: /training/achievements/iot/get-started-aks-edge-essentials.svg
+levels:
+- beginner
+roles:
+- administrator
+- business-owner
+- developer
+- solution-architect
+- student
+products: 
+- azure
+- aks-edge-essentials
+- windows-iot
+subjects:
+- iot
+- containers
+modules:
+- learn.introduction-to-aks-edge-essentials
+- learn.create-first-aks-edge-essentials
+- learn.connect-aks-edge-essentials-azure-arc
+trophy:
+  uid: learn.get-started-aks-edge-essentials.trophy

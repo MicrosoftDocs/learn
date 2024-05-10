@@ -6,6 +6,7 @@ metadata:
   ms.date: 03/28/2023
   author: sethmanheim
   ms.author: sethm
+  manager: femila
   ms.topic: module
   ms.custom: e2e-hybrid
   ms.service: azure-stack

@@ -5,15 +5,15 @@ Now that you understand the core capabilities of a Microsoft Fabric Lakehouse, l
 You create and configure a new Lakehouse in the Data Engineering workload. Each lakehouse produces three named items in the Fabric-enabled workspace:
 
 - **Lakehouse** is the lakehouse storage and metadata, where you interact with files, folders, and table data.
-- **Semantic model (default)** is an automatically created data model based on the tables in the lakehouse. Power BI reports can be built from the semantic model.
-- **SQL Endpoint** is a read-only SQL endpoint through which you can connect and query data with Transact-SQL.
+- **Semantic model (default)** is an automatically created semantic model based on the tables in the lakehouse. Power BI reports can be built from the semantic model.
+- **SQL analytics endpoint** is a read-only SQL analytics endpoint through which you can connect and query data with Transact-SQL.
 
 ![Screenshot of the three Lakehouse items as described.](../media/lakehouse-items.png)
 
 You can work with the data in the lakehouse in two modes:
 
 - **Lakehouse** enables you to add and interact with tables, files, and folders in the Lakehouse.
-- **SQL Endpoint** enables you to use SQL to query the tables in the lakehouse and manage its relational data model.
+- **SQL analytics endpoint** enables you to use SQL to query the tables in the lakehouse and manage its relational semantic model.
 
 ![Screenshot of the two Lakehouse Explorer modes.](../media/explorer-modes.png)
 

@@ -4,10 +4,10 @@ title: Exercise - Deploy a multi-container solution to a Kubernetes cluster
 metadata:
   title: Exercise - Deploy a multi-container solution to a Kubernetes cluster
   description: Extend the YAML pipeline to build and deploy a multi-container solution to AKS cluster.
-  ms.date: 04/19/2023
+  ms.date: 02/01/2024
   author: ramiMSFT
   ms.author: rabououn
-  ms.custom: devdivchpfy22, devx-track-extended-java
+  ms.custom: devdivchpfy22
   ms.topic: unit
 durationInMinutes: 15
 content: |

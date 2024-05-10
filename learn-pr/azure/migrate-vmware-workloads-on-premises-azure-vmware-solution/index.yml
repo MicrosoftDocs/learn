@@ -32,7 +32,7 @@ products:
 - azure
 - azure-vmware-solution
 subjects:
-- data-warehousing
+- data-storage
 - migration
 units:
 - learn.migrate-vmware-workloads-on-premises-azure-vmware-solution.introduction

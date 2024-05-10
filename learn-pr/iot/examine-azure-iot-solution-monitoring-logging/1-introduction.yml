@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-azure-iot-solution-monitoring-logging.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 01/08/2024
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: module-standard-task-based
+  ms.service: iot-hub
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

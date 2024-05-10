@@ -12,7 +12,8 @@ metadata:
   ms.custom: engagement-fy23
   ms.topic: unit
 durationInMinutes: 10
-azureSandbox: true
-interactive: bash
+# azureSandbox: true
+# interactive: bash
+azureSandbox: false
 content: |
   [!include[](includes/5-exercise-deploy-and-manage-an-iot-edge-device.md)]

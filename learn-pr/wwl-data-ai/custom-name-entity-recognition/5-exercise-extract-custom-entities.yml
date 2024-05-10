@@ -4,12 +4,13 @@ title: Exercise - Extract custom entities
 metadata:
   title: Exercise - Extract custom entities
   description: "Exercise - Extract custom entities"
-  ms.date: 09/01/2022
+  ms.date: 2/21/2024
   author: wwlpublish
   ms.author: berryivor
   ms.topic: unit
 azureSandbox: false
-labModal: false
+labModal: true
+labId: 152402
 durationInMinutes: 35
 content: |
   [!include[](includes/5-exercise-extract-custom-entities.md)]

@@ -7,7 +7,7 @@ metadata:
   ms.date: 08/23/2023
   author: Zimmergren
   ms.author: tozimmergren
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/2-cloud-adoption-framework-overview.md)]

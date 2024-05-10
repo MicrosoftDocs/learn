@@ -30,7 +30,7 @@ You can grant permissions to users via T-SQL or in the Fabric portal. Grant the 
 - ReadData: Allows the user to read data from any table/view within the warehouse.
 - ReadAll: Allows user to read data the raw parquet files in OneLake that can be consumed by Spark.
 
-A user connection to the SQL endpoint will fail without Read permission at a minimum.
+A user connection to the SQL analytics endpoint will fail without Read permission at a minimum.
 
 ## Monitoring
 

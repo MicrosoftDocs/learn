@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/24/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: stream-analytics
 title: Ingest streaming data using Azure Stream Analytics and Azure Synapse Analytics
 summary: Azure Stream Analytics provides a real-time data processing engine that you can use to ingest streaming event data into Azure Synapse Analytics for further analysis and reporting.

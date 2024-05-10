@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.understand-write-ahead-logging.exercise-list-table-changes-logical-decode
-title: 'Exercise: List table changes with logical decoding'
+title: Exercise - List table changes with logical decoding
 metadata:
-  title: 'Exercise: List table changes with logical decoding'
-  description: "Exercise: List table changes with logical decoding"
-  ms.date: 10/03/2022
+  title: Exercise - List table changes with logical decoding
+  description: "Exercise - List table changes with logical decoding."
+  ms.date: 05/10/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 30
 content: |
   [!include[](includes/4-exercise-list-table-changes-logical-decode.md)]

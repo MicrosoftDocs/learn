@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.philanthropies.intro-generative-ai-explore-basics
+metadata:
+  title: Introduction to generative AI - Exploring the basics
+  description: By understanding the basics of generative AI models, you empower yourself to make responsible decisions when using these models. This knowledge allows you to critically evaluate outputs, assess their reliability, and understand potential limitations leading to more informed and effective interactions with generative AI.
+  ms.date: 02/21/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: module
+  ms.service: artificial-intelligence
+title: Introduction to generative AI - Exploring the basics
+summary: This module serves as a guide to understanding the basics of generative AI including its applications. You will be introduced to Microsoft Copilot and the essential skills needed to use Large Language Models (LLMS) efficiently and responsibly.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Analyze the concepts of generative AI.  
+  - Interpret the functionality of large language models (LLMs) and their role in generative AI. 
+  - Evaluate your own critical thinking abilities and learn how to critique these skills to improve your interaction with generative AI.  
+  - Compare various models of generative AI and their usage and understand the selection of specific models for different training applications.
+iconUrl: /training/achievements/intro-generative-ai-explore-basics.svg
+levels:
+- beginner
+roles:
+- k-12-educator
+- business-user
+- higher-ed-educator
+- data-engineer
+- school-leader
+products:
+- ai-services
+- azure-machine-learning
+- azure-machine-learning-designer
+- m365-apps
+- azure-translator-text
+- azure-translator-speech
+- ms-copilot
+- language-service
+subjects:
+- artificial-intelligence
+units:
+- learn.philanthropies.intro-generative-ai-explore-basics.introduction
+- learn.philanthropies.intro-generative-ai-explore-basics.what-is-generative-ai
+- learn.philanthropies.intro-generative-ai-explore-basics.what-are-large-language-models
+- learn.philanthropies.intro-generative-ai-explore-basics.create-training-content-using-microsoft-copilot
+- learn.philanthropies.intro-generative-ai-explore-basics.apply-generative-ai-to-enhance-your-training-experience
+- learn.philanthropies.intro-generative-ai-explore-basics.apply-critical-thinking-when-using-generative-ai
+- learn.philanthropies.intro-generative-ai-explore-basics.knowledge-check
+- learn.philanthropies.intro-generative-ai-explore-basics.summary
+badge:
+  uid: learn.philanthropies.intro-generative-ai-explore-basics.badge
+  

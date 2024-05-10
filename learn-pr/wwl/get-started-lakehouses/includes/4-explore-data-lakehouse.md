@@ -14,6 +14,6 @@ After loading data into the lakehouse, you can use various tools and techniques 
 
 ## Analyze and visualize data in a lakehouse
 
-The data in your lakehouse tables is included in a semantic model that defines a relational model for your data. You can edit this semantic model (or create other semantic models), defining custom measures, hierarchies, aggregations, and other elements of a data model. You can then use the semantic model as the source for a Power BI report that enables you to visualize and analyze the data.
+The data in your lakehouse tables is included in a semantic model that defines a relational model for your data. You can edit this semantic model (or create other semantic models), defining custom measures, hierarchies, aggregations, and other elements of a semantic model. You can then use the semantic model as the source for a Power BI report that enables you to visualize and analyze the data.
 
 By combining the data visualization capabilities of Power BI with the centralized storage and tabular schema of a data lakehouse, you can implement an end-to-end analytics solution on a single platform.

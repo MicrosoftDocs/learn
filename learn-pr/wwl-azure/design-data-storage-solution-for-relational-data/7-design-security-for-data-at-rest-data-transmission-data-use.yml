@@ -7,7 +7,7 @@ metadata:
   ms.date: 09/19/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/7-design-security-for-data-at-rest-data-transmission-data-use.md)]

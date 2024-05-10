@@ -7,9 +7,7 @@ metadata:
   ms.date: 11/02/2023
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.service: artificial-intelligence
-  ms.subservice: language-service
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-understand-text-analytics.md)]

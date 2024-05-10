@@ -10,7 +10,7 @@ Use the following steps to prepare for the Guided Project exercises:
 
 1. Create a working directory with File Explorer in your Desktop folder called **LangtonsAnts**.
 
-1. Download the zip file containing the Starter project code by selecting the following link: [Starter Files](https://codeload.github.com/grfisher-ms/Challenge-Project-delegates-events-exceptions/zip/refs/heads/main).
+1. Download the zip file containing the Starter project code by selecting the following link: [Starter Files](https://codeload.github.com/MicrosoftLearning/Guided-Project-delegates-events-exceptions/zip/refs/heads/main).
 
 1. Unzip the download files to your working directory.
 

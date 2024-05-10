@@ -28,7 +28,7 @@ roles:
 products:
 - sql-server
 subjects:
-- database
+- databases
 units:
 - learn-sqlserver.test-optimize-sql-server-databases-using-dea.1-introduction
 - learn-sqlserver.test-optimize-sql-server-databases-using-dea.2-decide-dea-right-your-task

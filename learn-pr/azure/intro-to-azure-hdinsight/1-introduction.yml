@@ -5,9 +5,9 @@ metadata:
   unitType: introduction  
   title: Introduction
   description: You can use Azure HDInsight to process big data in many scenarios, either historical or real-time. HDInsight supports popular open-source frameworks that support many scenarios including extract, transform, data-warehousing, and others.
-  ms.date: 10/27/2022  
+  ms.date: 04/21/2024  
   author: sreekzz 
-  ms.author: v-sreiyer
+  ms.author: v-sreeiyer
   ms.topic: unit
 durationInMinutes: 3
 content: |

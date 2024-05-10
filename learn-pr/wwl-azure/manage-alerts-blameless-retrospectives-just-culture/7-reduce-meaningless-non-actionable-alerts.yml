@@ -4,12 +4,12 @@ title: Reduce meaningless and non-actionable alerts
 metadata:
   title: Reduce meaningless and non-actionable alerts
   description: "Reduce meaningless and non-actionable alerts"
-  ms.date: 11/06/2023
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/7-reduce-meaningless-non-actionable-alerts.md)]

@@ -4,10 +4,12 @@ title: Exercise - Get started with array basics
 metadata:
   title: Exercise - Get started with array basics
   description: "Exercise - Get started with array basics"
-  ms.date: 01/22/2024
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 19
 content: |
   [!include[](includes/2-exercise-array-basics.md)]

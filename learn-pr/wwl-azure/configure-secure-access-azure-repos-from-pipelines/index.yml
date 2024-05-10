@@ -19,8 +19,7 @@ abstract: |
 prerequisites: |
   - Basic knowledge of Azure Pipelines and YAML.
   - Basic knowledge of security concepts like Azure Key Vault and permissions.
-iconUrl: /training/achievements/generic-trophy.svg
-hidden: false
+iconUrl: /training/achievements/configure-secure-access-azure-repos-from-pipelines.svg
 levels:
   - intermediate
 roles:

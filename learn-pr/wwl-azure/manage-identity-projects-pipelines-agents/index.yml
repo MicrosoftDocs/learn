@@ -21,8 +21,7 @@ prerequisites: |
   - Basic knowledge of Azure DevOps to manage agents and service connections.
   - Basic knowledge of security concepts like agent identities and managed identity.
   - Experience using the Azure portal to create managed identities.
-iconUrl: /training/achievements/generic-trophy.svg
-hidden: false
+iconUrl: /training/achievements/manage-identity-projects-pipelines-agents.svg
 levels:
   - intermediate
 roles:

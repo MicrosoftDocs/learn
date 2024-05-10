@@ -1,12 +1,10 @@
-<!--Manage sensitive data and security policies in GitHub-->
-
 In this unit, you'll learn more about the preventive measures you can take to maintain the health of your GitHub repositories.
 
 Suppose you're an administrator who is helping to onboard many new collaborators to your organization. You need to make sure they contribute to the proper repositories and have easy access to assistance if they discover a security threat. To do this, you set security policies.
 
-:::image type="content" source="../media/setting-security-policies.png" alt-text="Three screenshots stacked on each other, slightly offset, which show community health files in a repository and settings for an organization":::
+:::image type="content" source="../media/setting-security-policies.png" alt-text="Three screenshots stacked on each other, slightly offset, which show community health files in a repository and settings for an organization.":::
 
-A repository, organization, or enterprise's security policies are the practices and settings that maintain the integrity of users' data and systems. A security policy defines what it means for a system, organization or other entity to be secure, and limits permissions to support that definition. What does that mean for you and your GitHub ecosystem? When you create security policies, you are telling collaborators how to work in ways that maintain code health. Security policies also provide resources for responding to security vulnerabilities, and limit collaborators' access.
+A repository, organization, or enterprise's security policies are the practices and settings that maintain the integrity of users' data and systems. A security policy defines what it means for a system, organization or other entity to be secure, and limits permissions to support that definition. What does that mean for you and your GitHub ecosystem? When you create security policies, you are telling collaborators how to work in ways that maintain code health. Security policies also provide resources for responding to security vulnerabilities and limit collaborators' access.
 
 As an administrator, you can set some security policies individually at each level of your control (repo, organization, and enterprise). For instance, you can give individual organization owners permission to allow collaborator write-access or other kinds of access, or as the admin, you can require all organizations in an enterprise allow only a certain kind of access.
 
@@ -24,11 +22,11 @@ If you've ever contributed to or looked at an open source project, you'll quickl
 
 These files record information about security preparation, key contacts, and the project background. They tell collaborators and other users what measures you've taken to protect them, what to do or who to call in the event of a security issue, and provide guidelines for contributing to the project.
 
-:::image type="content" source="../media/security-md-basic.png" alt-text="A cropped screenshot of SECURITY.md from the git repository":::
+:::image type="content" source="../media/security.md-example.png" alt-text="A cropped screenshot of SECURITY.md from the git repository.":::
 
 ### SECURITY.md
 
-*SECURITY.md* is the primary document for communicating security information. It is a Markdown file in a repository's root, `docs`, or `.github` folder. The *SECURITY.md* file should include:
+To give people instructions for reporting security vulnerabilities in your project, you can add a SECURITY.md file to your repository. *SECURITY.md* is the primary document for communicating security information. It is a Markdown file in a repository's root, `docs`, or `.github` folder. The *SECURITY.md* file should include:
 
 - A list of supported versions of the project
 - A way to report a security vulnerability
@@ -43,12 +41,18 @@ It may also include:
 
 A user may add other community health documentation at the organization level or in their user account. GitHub supports the following community health documentation:
 
-- *CODE_OF_CONDUCT.md*
-- *CONTRIBUTING.md*
-- *FUNDING.yml*
-- Issue and pull request templates and *config.yml*
-- *SECURITY.md*
-- *SUPPORT.md*
+| Community health file | Description |
+|----------|----------|
+| *CODE_OF_CONDUCT.md* | A *CODE_OF_CONDUCT* file defines standards for how to engage in a community. |
+| *CONTRIBUTING.md* | A *CONTRIBUTING* file communicates how people should contribute to your project. |
+| Discussion category forms | Discussion category forms customize the templates that are available for community members to use when they open new discussions in your repository. |
+| *FUNDING.yml* | A *FUNDING* file displays a sponsor button in your repository to increase the visibility of funding options for your open source project. |
+| *GOVERNANCE.md* | A *GOVERNANCE* file lets people know about how your project is governed. For example, it might discuss project roles and how decisions are made. |
+| Issue and pull request templates and *config.yml* | Issue and pull request templates customize and standardize the information you'd like contributors to include when they open issues and pull requests in your repository. |
+| *README.md* | A *README* file a guide that provides users with a detailed description of your project. |
+| *SECURITY.md* | A *SECURITY* file gives instructions for how to report a security vulnerability in your project. |
+| *SUPPORT.md* | A *SUPPORT* file lets people know about ways to get help with your project. |
+
 
 GitHub considers files of these types to have specific purpose, and requires you to follow the listed naming scheme when creating or updating them.
 
@@ -76,8 +80,8 @@ Before we go further, you should know that you can configure security settings a
 
 Here's an example of a basic security setting you could change at the organization level or for a whole enterprise.
 
-- You may choose to set base permissions for all members of one organization working in any repository owned by that organization. Select **Settings** in **Your organizations** to give collaborators a uniform level of access ("None," "Read," "Write," or "Admin"). With this setting, one organization's members could have read access to its repositories, while another organization's members could have write access.
-- Alternately, you could apply that setting to every organization covered by the Enterprise plan. Select an enterprise from **Your enterprises** and click **Policies**. The **Repository policies** tab enables you to review the base permissions for every user in every organization in the enterprise, and change them to "None," "Read," "Write," or "Admin." With this setting, only specific individuals to whom you grant special privileges will be able to exceed the base permission level. 
+- You may choose to set base permissions for all members of one organization working in any repository owned by that organization. Select **Settings** in **Your organizations** to give collaborators a uniform level of access ("No permission," "Read," "Write," or "Admin"). With this setting, one organization's members could have read access to its repositories, while another organization's members could have write access.
+- Alternately, you could apply that setting to every organization covered by the Enterprise plan. Select an enterprise from **Your enterprises** and click **Policies**. The **Repository policies** page enables you to review the base permissions set for every member in every organization in the enterprise, and change the selection to "No policy," "No permission," "Read," "Write," or "Admin." With this setting, only specific individuals to whom you grant special privileges will be able to exceed the base permission level. 
 
 As you can see, settings that Enterprise administrators enforce cascade down to all organizations covered by the GitHub Enterprise plan, while settings not covered by Enterprise administrators are free to be customized by organization administrators. Only GitHub Enterprise administrators and organization owners can configure organization security settings.
 
@@ -87,7 +91,7 @@ Changing security settings at the organization level or for all organizations co
 > Available settings and tools differ based on the type of repository. In addition,
 > these settings and features differ in their level of required user interaction.
 
-:::image type="content" source="../media/availability-interaction.png" alt-text="A four-quadrant graph, divided by x and y axes, which categorizes security settings by availability to users (x axis) and required level of interaction (y axis)":::
+:::image type="content" source="../media/availability-interaction.png" alt-text="A four-quadrant graph, divided by x and y axes, which categorizes security settings by availability to users (x axis) and required level of interaction (y axis).":::
 
 ### What kinds of security settings are available to administrators?
 
@@ -105,7 +109,7 @@ When you identify a security threat, your team's response will go beyond patchin
 
 GitHub security advisories provide a historical narrative for users that demonstrates that you understand the nature of the threat, have addressed the immediate threat, and have taken steps to prevent similar threats in the future.
 
-:::image type="content" source="../media/security-advisories-goals.png" alt-text="An image showing three steps to security advisories.":::
+:::image type="content" source="../media/security-advisories-goals.png" alt-text="A screenshot showing the three steps to security advisories.":::
 
 In service of these goals, a security advisory should be comprehensive and include following information:
 

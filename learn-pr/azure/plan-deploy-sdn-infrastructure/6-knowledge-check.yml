@@ -5,9 +5,9 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: A knowledge check unit.
-  ms.date: 11/23/2021
-  author: rmcmurray
-  ms.author: robmcm
+  ms.date: 05/01/2023
+  author: JasonGerend
+  ms.author: jgerend
   ms.topic: unit
 durationInMinutes: 3
 content: |

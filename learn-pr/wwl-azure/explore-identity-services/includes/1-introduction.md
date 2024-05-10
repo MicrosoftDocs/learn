@@ -1,8 +1,6 @@
-## Scenario
-
 In addition to your SAP architect responsibilities for your company's Azure IaaS solutions in compute, storage, and networking, there are other aspects of deploying SAP-based solutions in Azure. You're also responsible for identity services, remote management, and governance and manageability.
 
-You need to prepare the specifications to leverage the identity services component to design multiple authentication and authorization scenarios Azure facilitates, including support for a range of identity providers. However, in the context of IaaS deployments, three of them are of primary relevance:
+You need to prepare the specifications to use the identity services component to design multiple authentication and authorization scenarios Azure facilitates, including support for a range of identity providers. However, in the context of IaaS deployments, three of them are of primary relevance:
 
 - Active Directory Domain Services (AD DS)
 - Microsoft Entra ID
@@ -10,9 +8,7 @@ You need to prepare the specifications to leverage the identity services compone
 
 ## Learning objectives
 
-You'll:
-
-- Explore Azure virtual machine authentication, authorization, and access control.
+- Explore Azure Virtual Machine authentication, authorization, and access control.
 - Explore Microsoft Entra ID.
 - Explore SAP Cloud Platform Identity authentication.
 - Add SAP Cloud Platform Identity Authentication from the gallery.
@@ -21,6 +17,6 @@ You'll:
 - Integrate Microsoft Entra ID with SAP NetWeaver.
 - Integrate Active Directory with SAP single sign-on (Kerberos-SPNEGO).
 - Discover Active Directory Domain Services.
-- Explore primary scenarios using Active Directory Domain Services and Azure virtual machines.
+- Explore primary scenarios using Active Directory Domain Services and Azure Virtual Machines.
 - Integrate Linux with Active Directory Domain Services.
 - Discover Microsoft Entra Domain Services.

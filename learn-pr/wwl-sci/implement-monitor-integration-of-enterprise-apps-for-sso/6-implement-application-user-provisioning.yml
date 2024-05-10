@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
-  ms.prod: azure
 durationInMinutes: 1
 content: |
   [!include[](includes/6-implement-application-user-provisioning.md)]

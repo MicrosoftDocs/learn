@@ -7,13 +7,6 @@ The Shor's algorithm implies that sufficiently large quantum computers can break
 
 In the following exercise, you calculate the resource estimates for the factoring of a 2,048-bit integer. For this application, you compute the physical resource estimates directly from precomputed logical resource estimates. For the tolerated error budget, you use $\epsilon = 1/3$.
 
-## Install qsharp and qsharp-widgets
-
-First, install the latest Azure Quantum `qsharp` and `qsharp-widgets` packages.  
-
-```bash
-python -m pip install --upgrade qsharp qsharp-widgets 
-```
 
 ## Write the Shor's algorithm
 
@@ -27,7 +20,7 @@ python -m pip install --upgrade qsharp qsharp-widgets
 
 1. Use the `Microsoft.Quantum.ResourceEstimation` namespace to define a cached, optimized version of Shor's integer factorization algorithm. Add a new cell and copy the following code.
 
-    ```python
+    ```qsharp
     %%qsharp
     open Microsoft.Quantum.Arrays;
     open Microsoft.Quantum.Canon;

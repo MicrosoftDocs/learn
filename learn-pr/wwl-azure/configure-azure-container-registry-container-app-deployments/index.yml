@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module
-  ms.prod: azure
+  ms.service: azure
 title: Configure Azure Container Registry for container app deployments
 summary: |
   This module teaching users how to set up and configure an Azure Container Registry for deploying containerized applications to Azure Container Apps.

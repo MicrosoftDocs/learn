@@ -60,6 +60,6 @@ In the above example, the variable service_bus_connection is used in the pipelin
 
 For more information about secret variables, see:
 
-- [Define variables.](https://learn.microsoft.com/azure/devops/pipelines/process/variables/)
-- [Manage service connections.](https://learn.microsoft.com/azure/devops/pipelines/library/service-endpoints/)
-- [Provision and test environments.](https://learn.microsoft.com/training/modules/configure-provision-environments/)
+- [Define variables.](/azure/devops/pipelines/process/variables/)
+- [Manage service connections.](/azure/devops/pipelines/library/service-endpoints/)
+- [Provision and test environments.](/training/modules/configure-provision-environments/)

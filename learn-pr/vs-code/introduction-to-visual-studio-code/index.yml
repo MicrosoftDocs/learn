@@ -8,7 +8,7 @@ metadata:
   ms.author: karinjohnson
   manager: jmartens
   ms.topic: module-intro-to-product
-  ms.prod: vs-code
+  ms.service: vs-code
 
 title: Introduction to Visual Studio Code
 
@@ -38,7 +38,7 @@ products:
  - vs-code
 
 subjects:
-  - digital-application-innovation
+  - app-development
 
 units:
 - learn.introduction-to-visual-studio-code.introduction

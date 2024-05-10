@@ -4,10 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/11/2022
+  ms.date: 03/22/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
+  ms.custom:
+  - N/A
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -30,10 +32,10 @@ quiz:
     choices:
     - content: "All parameters accept pipeline input and support both techniques"
       isCorrect: false
-      explanation: "Incorrect. You will find the pipeline input capability of each parameter, and a list of techniques it supports, in the full Help for a command."
+      explanation: "Incorrect. You find the pipeline input capability of each parameter, and a list of techniques it supports, in the full Help for a command."
     - content: "Use the **Get-PSSessionCapability** cmdlet"
       isCorrect: false
-      explanation: "Incorrect. The **Get-PSSessionCapability** cmdlet lists the capabilities of a user in a constrained PowerShell session. You'll find the pipeline input capability of each parameter, and a list of techniques it supports, in the full Help for a command."
+      explanation: "Incorrect. The **Get-PSSessionCapability** cmdlet lists the capabilities of a user in a constrained PowerShell session. You find the pipeline input capability of each parameter, and a list of techniques it supports, in the full Help for a command."
     - content: "Read the full Help for each command"
       isCorrect: true
-      explanation: "Correct. You'll find the pipeline input capability of each parameter, and a list of techniques it supports, in the full Help for a command."
+      explanation: "Correct. You find the pipeline input capability of each parameter, and a list of techniques it supports, in the full Help for a command."

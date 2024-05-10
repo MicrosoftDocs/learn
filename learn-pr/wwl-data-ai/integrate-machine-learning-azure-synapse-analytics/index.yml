@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/30/2021
   author: wwlpublish
   ms.author: chtestao
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: synapse-analytics
   ms.subservice: machine-learning 
 title: Integrate machine learning within Azure Synapse Analytics

@@ -1,6 +1,5 @@
 ---
 author: mumian
-ms.prod: learning-azure
 ms.topic: include
 ms.date: 01/03/2023
 ms.author: jgao

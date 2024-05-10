@@ -2,6 +2,9 @@ You've decided to research the different ways that Azure provides for automating
 
 In this unit, you'll learn about the commands and parameters that you'll need to create the components that are required to set up the virtual machines for your web servers. You'll explore the options that are common for both Linux and Windows virtual machines, and you'll compare the options that are specific to each of these operating systems.
 
+> [!CAUTION]
+> This content references CentOS, a Linux distribution that is nearing End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
+
 ## Creating common components for virtual machines
 
 To build a virtual machine that's publicly accessible via an external IP address, you'll also need to create several networking components: a Virtual Network, a public IP address, a Network Security Group (NSG) with rules, and a Network Interface (NIC).
@@ -335,7 +338,7 @@ Azure will return a JSON response that resembles the following excerpt:
 ]
 ```
 
-The various fields in the JSON response will describe the manufacturer and version for the available virtual machine operating systems; for example: the Linux variants that are listed are in the above excerpt are:
+The various fields in the JSON response will describe the manufacturer and version for the available virtual machine operating systems. For example: the Linux variants that are listed are in the above excerpt are:
 
 | Description | URN Alias |
 | --- | --- |
@@ -396,7 +399,7 @@ If you run the above command, you'll notice that there are far more parameters t
 
 ### Choose your virtual machine authentication options
 
-Azure supports several authentication methods to access virtual machines; for example: just-in-time access, simple usernames and passwords, or SSH keys. If your company decided to deploy and access virtual machines with SSH keys, you would need to add the `--generate-ssh-keys` parameter from the preceding example and remove `--admin-password` parameter:
+Azure supports several authentication methods to access virtual machines. For example, just-in-time access, simple usernames and passwords, or SSH keys. If your company decided to deploy and access virtual machines with SSH keys, you would need to add the `--generate-ssh-keys` parameter from the preceding example and remove `--admin-password` parameter:
 
 ```azurecli
 az vm create \
@@ -468,7 +471,7 @@ Azure will return a JSON response that resembles the following example:
 ]
 ```
 
-The various fields in the JSON response will describe the version information for each of the available virtual machine operating systems; for example: the Windows variants that are listed are in the above excerpt are:
+The various fields in the JSON response will describe the version information for each of the available virtual machine operating systems. For example, the Windows variants that are listed are in the above excerpt are:
 
 | Description | URN Alias |
 | --- | --- |
@@ -530,7 +533,7 @@ For example, if your company had purchased *Azure Hybrid Benefit*, you could cho
 
 ### Choose your virtual machine authentication options
 
-Azure supports several authentication methods to access virtual machines; for example: just-in-time access, simple usernames and passwords, or Windows Remote Management (WinRM).
+Azure supports several authentication methods to access virtual machines. For example, just-in-time access, simple usernames and passwords, or Windows Remote Management (WinRM).
 
 ::: zone-end
 

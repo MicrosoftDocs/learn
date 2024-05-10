@@ -7,15 +7,18 @@ In order for Kubernetes to create a container image, it needs a place from which
 
 You can choose to use a GitHub codespace that hosts the exercise, or complete the exercise locally in Visual Studio Code.
 
-To use a **codespace** create a pre-configured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-kubernetes%2Fdevcontainer.json).
+To use a **codespace**, create a preconfigured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-kubernetes%2Fdevcontainer.json).
 
-This takes several minutes while GitHub creates and configures the codespace. Once finished, you will see the code files for the exercise. The code used for the rest of this module is in the **/dotnet-kubernetes** directory.
+The process takes several minutes while GitHub creates and configures the codespace. Once finished, the code used for the rest of this module is in the **/dotnet-kubernetes** directory.
 
-To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative) repository to your own GitHub account. Then open the folder in Visual Studio Code:
+To use **Visual Studio Code**, clone the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative) repository to your local machine. Then:
 
-1. Make sure Docker is running. In a new Visual Studio Code window, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
-1. Search for and select **Dev Containers: Clone Repository in Container Volume**.
-1. Select your forked repository. Visual Studio Code creates your development container locally.
+1. Install any [system requiements](https://code.visualstudio.com/docs/devcontainers/containers) to run Dev Container in Visual Studio Code.
+1. Make sure Docker is running. 
+1. In a new Visual Studio Code window open the folder of the cloned repository
+1. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
+1. Search: **>Dev Containers: Rebuild and Reopen in Container**
+1. Select **eShopLite - dotnet-kubernetes** from the drop down. Visual Studio Code creates your development container locally.
 
 ### Verify the Docker images by creating containers in the codespace
 
@@ -23,30 +26,16 @@ There are two containers in the Contoso Shop project. Before pushing the images 
 
 Follow these steps to create and run Docker containers in the codespace.
 
-1. When the setup is complete, within the **dotnet-kubernetes** directory, open the file named **docker-compose.yml**.
-1. Switch to the **PORTS** tab, point at the **Forwarded Address** for the **Back End (32001)** port, and then click the **Copy Local Address** icon.
-
-    ![Screenshot showing how to copy the forwarded port for the backend service.](../media/copy-forwarded-port.png)
-
-1. Paste this URL into the `ImagePrefix` environment variable in the **docker-compose.yml** file, replacing the text `http://localhost`. 
-1. Append `images` to the pasted text:
-
-    ```docker-compose
-    environment: 
-      - ProductEndpoint=http://backend:8080
-      - ImagePrefix=https://studious-fortnight-4g4rx9g47wg249w-32001.app.github.dev/images
-    ```
-
 1. Switch to the **TERMINAL** tab and run the following command to go to the code root:
 
-   ```cli
+   ```bash
    cd dotnet-kubernetes
    ```
 
 1. Run the following command to build the containers:
 
-    ```bash
-    docker compose build
+    ```dotnetcli
+    dotnet publish /p:PublishProfile=DefaultContainer
     ```
 
     It might take a while to build the containers.
@@ -57,9 +46,9 @@ Follow these steps to create and run Docker containers in the codespace.
     docker compose up
     ```
 
-1. To test the front end service, switch to the **PORTS** tab, then to the right of the local address for the **Front End** port, select the globe icon. The browser displays the homepage. 
+1. To test the front end service, switch to the **PORTS** tab, then to the right of the local address for the **Front End** port, select the globe icon. The browser displays the homepage.
 1. Select **Products**. The catalog shows Contoso's merchandise.
-1. Close the web site, return to the **TERMINAL** tab, and then press <kbd>Ctrl + C</kbd>. Docker compose halts the containers.
+1. Close the web site, return to the **TERMINAL** tab, and then press <kbd>CTRL</kbd> + <kbd>C</kbd>. Docker compose halts the containers.
 
 ## Sign in to Docker Hub
 
@@ -77,8 +66,8 @@ docker login
 1. Enter the following code to retag or rename the Docker images you created under your Docker username.
 
     ```bash
-    docker tag storeimage [YOUR DOCKER USER NAME]/storeimage
-    docker tag productservice [YOUR DOCKER USER NAME]/productservice
+    docker tag store [YOUR DOCKER USER NAME]/storeimage
+    docker tag products [YOUR DOCKER USER NAME]/productservice
     ```
 
 1. Then finally upload, or push, the Docker images to Docker Hub.
@@ -88,7 +77,7 @@ docker login
     docker push [YOUR DOCKER USER NAME]/productservice
     ```
 
-    If you receive an authentication error you can run `docker logout` followed by `docker login` to re-authenticate.
+    If you receive an authentication error, you can run `docker logout` followed by `docker login` to reauthenticate.
 
 In this exercise, you used Dockerfiles and docker compose to create two Docker images and containers, and pushed those images to Docker Hub.
 

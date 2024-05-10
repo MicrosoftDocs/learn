@@ -45,7 +45,7 @@ The prebuilt models are very flexible but you can help them to return accurate a
 You must also comply with these requirements when you submit a form for analysis:
 
 - The file must be in JPEG, PNG, BMP, TIFF, or PDF format. Additionally, the Read model can accept Microsoft Office files.
-- The file must be smaller that 500 MB for the standard tier, and 4 MB for the free tier.
+- The file must be smaller than 500 MB for the standard tier, and 4 MB for the free tier.
 - Images must have dimensions between 50 x 50 pixels and 10,000 x 10,000 pixels.
 - PDF documents must have dimensions less than 17 x 17 inches or A3 paper size.
 - PDF documents must not be protected with a password.
@@ -104,8 +104,7 @@ Because the service can take a few seconds to respond, it's best to use asynchro
 ::: zone pivot="csharp"
 
 ```csharp
-AnalyzeDocumentOperation operation = await client.StartAnalyzeDocumentFromUriAsync("prebuilt-document", <URI of the document to analyze>);
-await operation.WaitForCompletionAsync();
+AnalyzeDocumentOperation operation = await client.AnalyzeDocumentFromUriAsync(WaitUntil.Completed, "prebuilt-layout", fileUri);
 
 AnalyzeResult result = operation.Value;
 ```
@@ -115,13 +114,9 @@ AnalyzeResult result = operation.Value;
 ::: zone pivot="python"
 
 ```python
-document_analysis_client = DocumentAnalysisClient(endpoint=endpoint, 
-    credential=AzureKeyCredential(key))
-
-task = document_analysis_client.begin_analyze_document_from_url(
+poller = document_analysis_client.begin_analyze_document_from_url(
     "prebuilt-document", docUrl)
-
-result = task.result()
+result: AnalyzeResult = poller.result()
 ```
 
 ::: zone-end
@@ -132,3 +127,4 @@ The details you can extract from these results depend on the model you used.
 
 - [What is Azure AI Document Intelligence?](/azure/ai-services/document-intelligence/overview)
 - [Azure AI Document Intelligence models](/azure/ai-services/document-intelligence/concept-model-overview)
+

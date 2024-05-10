@@ -4,7 +4,7 @@ title: Pytest basics
 metadata:
   title: Pytest basics
   description: Find about the basics on testing conventions in Python and Pytest. These conventions will help you organize your tests and get them discovered.
-  ms.date: 1/25/2022
+  ms.date: 12/08/2023
   author: alfredodeza
   ms.author: alfredodeza
   ms.custom:

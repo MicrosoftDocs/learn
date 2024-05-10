@@ -26,8 +26,6 @@ roles:
 products:
 - azure
 - azure-cosmos-db
-subjects:
-- development-tools
 units:
 - learn.cosmos-db-java-app.1-introduction
 - learn.cosmos-db-java-app.2-setup

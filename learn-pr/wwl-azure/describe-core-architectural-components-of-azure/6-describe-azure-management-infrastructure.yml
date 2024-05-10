@@ -4,12 +4,12 @@ title: Describe Azure management infrastructure
 metadata:
   title: Describe Azure management infrastructure
   description: "Describe Azure management infrastructure"
-  ms.date: 08/09/2023
+  ms.date: 03/06/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/6-describe-azure-management-infrastructure.md)]

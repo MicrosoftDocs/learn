@@ -6,7 +6,7 @@ metadata:
   ms.date: 07/21/2023
   author: tpetchel
   ms.author: thpetche
-  ms.topic: interactive-tutorial
+  ms.topic: module
   #ms.learn-contact: thpetche
 title: Route system feedback to development teams
 summary: Learn how continuous monitoring and dashboards give you insight into how customers use your software and where patterns of failure occur.
@@ -29,7 +29,7 @@ roles:
 products:
 - azure-devops
 subjects:
-- data-warehousing
+- data-storage
 units:
 - learn.azdo.route-system-feedback.1-introduction
 - learn.azdo.route-system-feedback.2-continuously-monitor

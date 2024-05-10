@@ -1,4 +1,3 @@
-
 After creating and testing a knowledge base, you can improve its performance with *active learning* and by defining *synonyms*.
 
 ## Use active learning
@@ -85,7 +84,7 @@ To define synonyms, you must use the REST API to submit synonyms in the followin
         {
             "alterations": [
                 "reservation",
-                "booking",,
+                "booking"
                 ]
         }
     ]

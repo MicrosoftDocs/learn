@@ -80,7 +80,7 @@ foreach (string[] userEntries in userEnteredValues)
     }
 }
 
-static void BusinessProcess1(String[] userEntries)
+static void BusinessProcess1(string[] userEntries)
 {
     int valueEntered;
 
@@ -193,7 +193,7 @@ static void OperatingProcedure1()
     }
 }
 
-static void BusinessProcess1(String[] userEntries)
+static void BusinessProcess1(string[] userEntries)
 {
     int valueEntered;
 

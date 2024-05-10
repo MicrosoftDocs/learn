@@ -8,8 +8,8 @@ metadata:
   author: bethanyjep
   ms.author: bethanycheum
   ms.custom: team=nextgen
-  ms.topic: module-challenge-project
-  ms.service: bing
+  ms.topic: unit
+  ms.service: microsoft-copilot
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]

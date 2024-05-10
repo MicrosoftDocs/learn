@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/27/2022
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: postgresql
 title: Understand PostgreSQL query processing
 summary: The Azure Database for PostgreSQL server receives SQL queries and returns the relevant results. Each SQL query goes through several stages in order to return the correct results as quickly as possible.
@@ -25,7 +25,7 @@ roles:
 products:
 - azure-database-postgresql
 subjects:
-- database
+- databases
 units:
 - learn.wwl.understand-postgresql-query-process.introduction
 - learn.wwl.understand-postgresql-query-process.identify-components

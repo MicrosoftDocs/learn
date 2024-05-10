@@ -7,7 +7,7 @@ metadata:
   author: alfredodeza
   ms.author: chnoring
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-python
   ms.devlang: python
 title: Use strings in Python

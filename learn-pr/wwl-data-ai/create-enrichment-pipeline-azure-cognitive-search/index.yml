@@ -6,7 +6,7 @@ metadata:
   ms.date: 12/11/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: cognitive-search
 title: Create a custom skill for Azure AI Search
 summary: Use the power of artificial intelligence to enrich your data and find new insights.

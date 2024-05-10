@@ -61,12 +61,11 @@ The following steps show how to fill or impute missing values in the targeted co
 
     :::image type="content" border="false" source="../media/4-fill-with-median.png" alt-text="Screenshot of how to impute missing values in the targeted columns using the median in Data Wrangler.":::
 
-    The rows marked for deletion are highlighted in red within the grid, and added to the **Cleaning steps** panel. This visual cue facilitates real-time modifications when needed.
+    The rows marked for imputation are highlighted in red within the grid, and added to the **Cleaning steps** panel. This visual cue facilitates real-time modifications when needed.
 
-1. Select **Apply**. 
+1. Select **Apply**.
     
     The changes are immediately visible in the Data Wrangler’s display grid, providing a real-time view of how the operation affects your dataset.
-
 
 Alternatively, you can use the **Custom operation** operator to create your own imputation code.
 

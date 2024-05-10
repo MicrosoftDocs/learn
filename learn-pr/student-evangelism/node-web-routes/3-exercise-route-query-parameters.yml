@@ -4,9 +4,9 @@ title: Exercise - Route and query parameters
 metadata:
   title: Exercise - Route and query parameters
   description: This unit covers how to filter a response by using query parameters.
-  author: clarkio
-  ms.author: chnoring
-  ms.date: 06/01/2023
+  author: diberry
+  ms.author: diberry
+  ms.date: 01/30/2024
   ms.topic: unit
 durationInMinutes: 4
 content: |

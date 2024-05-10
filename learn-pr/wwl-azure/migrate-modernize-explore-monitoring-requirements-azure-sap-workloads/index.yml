@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: module
-  ms.prod: azure
+  ms.service: azure
 title: Modernize and explore monitoring requirements of Azure for SAP workloads
 summary: This module covers monitoring of data from several Azure systems and to support SAP on Azure workloads with logging, analysis and reporting using the Azure Extension for SAP.
 abstract: |

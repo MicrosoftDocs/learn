@@ -1,4 +1,4 @@
-Application (App) registration in Microsoft Entra ID is the process of ensuring that your identity system is aware of what applications used. This way you can confirm the user has access to the app and that the app has access to any needed resources. This ensures the security and privacy of users, apps, and your data.
+Application (App) registration in Microsoft Entra is the process of ensuring that your identity system is aware of what applications used. This way you can confirm the user has access to the app and that the app has access to any needed resources. This ensures the security and privacy of users, apps, and your data.
 
 ## Benefits of registering an app
 
@@ -56,4 +56,4 @@ The Microsoft identity platform:
  -  Provides infrastructure for implementing app provisioning within the app developer's tenant, and to any other Microsoft Entra tenant.
  -  Handles user consent during token request time and facilitates the dynamic provisioning of apps across tenants.
 
-Consent is the process of a resource owner granting authorization for a client application to access protected resources, under specific permissions, on behalf of the resource owner. Microsoft Entra ID enables users and administrators to dynamically grant or deny consent for the app to access resources on their behalf. And ultimately enables administrators to decide what apps are allowed to do and which users can use specific apps, and how the directory resources are accessed.
+Consent is the process of a resource owner granting authorization for a client application to access protected resources, under specific permissions, on behalf of the resource owner. Microsoft Entra enables users and administrators to dynamically grant or deny consent for the app to access resources on their behalf. And ultimately enables administrators to decide what apps are allowed to do and which users can use specific apps, and how the directory resources are accessed.

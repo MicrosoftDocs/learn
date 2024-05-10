@@ -4,9 +4,9 @@ title: Dynamically resolve resource name by using alias record
 metadata:
   title: Dynamically resolve resource name by using alias record
   description: Dynamically resolve resource name by using alias record
-  ms.date: 10/05/2023
-  author: asudbring
-  ms.author: allensu
+  ms.date: 01/31/2024
+  author: greg-lindsay
+  ms.author: greglin
   ms.topic: unit
 durationInMinutes: 3
 content: |

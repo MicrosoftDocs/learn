@@ -114,7 +114,7 @@ You can reuse and reassign the variable as many times as you want. This example 
 
 You must *set* a variable to a value before you can *get* the value from the variable. Otherwise, you'll see an error.
 
-1. Modify the code you wrote in Step 6 to match the following code:
+1. Modify the code you wrote to match the following code:
 
     ```csharp
     string firstName;

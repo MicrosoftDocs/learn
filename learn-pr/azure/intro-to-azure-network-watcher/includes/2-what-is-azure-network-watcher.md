@@ -3,19 +3,19 @@ Azure Network Watcher provides a suite of tools to monitor, diagnose, view metri
 Network Watcher consists of three major sets of tools and capabilities:
 
 - Monitoring
-    - Topology
-    - Connection monitor
+  - Topology
+  - Connection monitor
 - Network diagnostic
-    - IP flow verify
-    - NSG diagnostics
-    - Next hop
-    - Effective security rules
-    - Connection troubleshoot
-    - Packet capture
-    - VPN troubleshoot
+  - IP flow verify
+  - NSG diagnostics
+  - Next hop
+  - Effective security rules
+  - Connection troubleshoot
+  - Packet capture
+  - VPN troubleshoot
 - Traffic
-    - Flow logs
-    - Traffic analytics
+  - Flow logs
+  - Traffic analytics
 
 :::image type="content" source="../images/network-watcher-tools.png" alt-text="Diagram that shows Azure Network Watcher's tools.":::
 
@@ -28,7 +28,7 @@ Network Watcher offers two monitoring tools that help you view and monitor resou
 
 ### Topology
 
-The **Topology** tool provides a visualization of the entire network for understanding network configuration. It provides an interactive interface to view resources and their relationships in Azure spanning across multiple subscriptions, resource groups, and locations. This tool can help you at the beginning of the troubleshooting process by allowing you to visualize all elements involved in the problem that you're troubleshooting, something that might not be apparent by looking at the contents of resource groups.
+The **Topology** tool provides a visualization of the entire network for understanding network configuration. It provides an interactive interface to view resources and their relationships in Azure spanning across multiple subscriptions, resource groups, and locations. At the beginning of the troubleshooting process, this tool helps you visualize all of the elements involved in the problem, allowing you to find something that isn't apparent by looking at the contents of resource groups.
 
 ### Connection monitor
 

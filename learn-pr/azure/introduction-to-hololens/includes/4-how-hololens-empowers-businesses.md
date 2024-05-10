@@ -6,21 +6,21 @@ HoloLens solutions range from business-ready products from Microsoft, like Mixed
 |---------| ------------|------------|
 | Collaborate in real time with remote employees | **Dynamics 365 Remote Assist**<sup>*</sup> | Use heads-up video calls on HoloLens 2 to share real-time views and receive instant guidance in context with remote collaborators who use Remote Assist or Microsoft Teams. | 
 | Create step-by-step visual work instructions | **Dynamics 365 Guides**<sup>*</sup> | Employees can create and learn by doing with interactive holographic instructions displayed in their HoloLens 2 devices. |
-| Develop for HoloLens | **Get Started**<sup>6</sup> | Learn how to build and manage apps and solutions for the HoloLens 2, accessing the power of Azure mixed reality services. Developers also have the opportunity to join our Mixed Reality Developer Program<sup>*</sup>.|
-| Collaborate digitally in real time through mixed reality | **Microsoft Mesh**<sup>*</sup> | Microsoft Mesh enables presence and shared experiences from anywhere – on any device – through mixed reality applications. | 
-| Use third-party apps for HoloLens 2 | **Microsoft Store**<sup>7</sup> | HoloLens supports many existing applications from the Microsoft Store, and new apps built specifically for HoloLens.reality applications.|
+| Develop for HoloLens | **Get Started**<sup>6</sup> | Learn how to build and manage apps and solutions for the HoloLens 2, accessing the power of Azure mixed-reality services. Developers also have the opportunity to join our Mixed Reality Developer Program<sup>*</sup>.|
+| Collaborate digitally in real time through mixed reality | **Microsoft Mesh**<sup>*</sup> | Microsoft Mesh enables presence and shared experiences from anywhere–on any device–through mixed-reality applications. |
+| Use third-party apps for HoloLens 2 | **Microsoft Store**<sup>7</sup> | HoloLens supports many existing applications from the Microsoft Store, and new apps built specifically for HoloLens.  |
 
 ## HoloLens 3rd party solutions
 
-3rd-party solutions that address most impactful industry scenarios, such as manufacturing, healthcare, retail, education, and other industries have successfully helped customers to accelerate their digital transformation initiatives and improve business impact.
+Third-party solutions that address most impactful industry scenarios, such as manufacturing, healthcare, retail, education, and other industries have successfully helped customers to accelerate their digital transformation initiatives and improve business impact.
 
 For more information, see Apps, services, and solutions for HoloLens 2<sup>*</sup>.
 
 ## HoloLens customer success stories
 
-With HoloLens, your employees can collaborate in real time with remote colleagues, create step-by-step visual work instructions, or develop custom apps for tasks that apply only to your local workspace. 
+With HoloLens, your employees can collaborate in real time with remote colleagues, create step-by-step visual work instructions, or develop custom apps for tasks that apply only to your local workspace.
 
-Here are some solutions that have produced outstanding results for HoloLens customers.
+Here are some solutions that have produced outstanding results for HoloLens customers:
 
 | &nbsp;      | &nbsp; |
 | ----------- | ----------- |
@@ -30,9 +30,9 @@ Here are some solutions that have produced outstanding results for HoloLens cust
 | :::image type="content" source="../media/tokyu.png" alt-text="Photo of a construction worker using HoloLens to examine a digital blueprint."::: | **Tokyu Construction improves engineering precision and increases productivity with Azure Remote Rendering on HoloLens 2.** <br> It can be challenging to look at a 2D blueprint and visualize what a building will actually look like in 3D. |
 | :::image type="content" source="../media/eaton.png" alt-text="Photo of a HoloLens auto worker using Dynamics 365 guides for his hands-on training."::: | **Eaton’s Vehicle Group uses HoloLens with Dynamics 365 guides to train employees.** <br>  When a plant manager explains a process to workers, they don't always understand, until they use HoloLens to view the process in real time. |
 
-## Reference
+## References
 
-6, 7 See **Additional reading** section at the end of this module.  
+6, 7: See the **Additional reading** section in this module's *Summary* unit.  
 
->[!Note]
->\* **See also** links at the end of this module.
+> [!NOTE]
+> \* **See also** links in this module's *Summary* unit.

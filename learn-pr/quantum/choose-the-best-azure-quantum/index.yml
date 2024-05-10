@@ -6,7 +6,7 @@ metadata:
   ms.date: 12/13/2023
   author: SoniaLopezBravo
   ms.author: sonialopez
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-quantum
 title: Choose the best Azure Quantum option for your needs
 summary: Azure Quantum offers different development options. Learn the differences between each option, and how to choose the best way to get started in your quantum journey.
@@ -27,7 +27,7 @@ prerequisites: |
   - Azure subscription. If you don't have one, you can create a [free account](https://azure.microsoft.com/free/?WT.mc_id=academic-15963-cxa).
   - The latest version of [Visual Studio Code](https://code.visualstudio.com/download) or open [VS Code on the Web](https://vscode.dev/).
   - The latest version of the [Azure Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) extension.
-iconUrl: ../../achievements/quantum/choose-the-best-azure-quantum-service.svg
+iconUrl: /training/achievements/quantum/choose-the-best-azure-quantum-service.svg
 ratingEnabled: true
 levels:
 - beginner

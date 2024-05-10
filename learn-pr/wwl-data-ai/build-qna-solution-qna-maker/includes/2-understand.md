@@ -1,4 +1,3 @@
-
 The **Azure AI Language** service includes a *question answering* capability, which enables you to define a *knowledge base* of question and answer pairs that can be queried using natural language input. The knowledge base can be published to a REST endpoint and consumed by client applications, commonly *bots*.
 
 ![A conversational app uses a knowledge base of questions and answers](../media/qna-maker.png)

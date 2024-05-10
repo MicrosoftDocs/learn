@@ -120,8 +120,8 @@ We next need to place some controls that allow players to choose a column and ca
     <nav>
         @for (byte i = 0; i < 7; i++)
         {
-            var piece = i;
-            <span title="Click to play a piece" @onclick="() => PlayPiece(piece)">🔽</span>
+            var col = i;
+            <span title="Click to play a piece" @onclick="() => PlayPiece(col)">🔽</span>
         }
     </nav>
     ```

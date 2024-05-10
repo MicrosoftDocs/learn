@@ -1,29 +1,29 @@
 ### YamlMime:Module
 uid: learn-wwl.security-copilot-getting-started
 metadata:
-  title: Get started with Microsoft Security Copilot
-  description: "Get started with Microsoft Security Copilot"
+  title: Describe Microsoft Copilot for Security
+  description: "Describe Microsoft Copilot for Security."
   ms.date: 10/31/2023
   author: ceperezb
   ms.author: ceperezb
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
-  ms.prod: security
   ms.service: security-copilot
-title: Get started with Microsoft Security Copilot
+  ai-usage: ai-assisted
+title: Describe Microsoft Copilot for Security
 summary: |
-  Get started with Microsoft Security Copilot, an AI-powered, cloud-based security analysis tool that enables analysts to respond to threats quickly, process signals at machine speed, and assess risk more quickly than may otherwise be possible.
-  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
+  Get acquainted with Microsoft Copilot for Security. You are introduced to some basic terminology, how Microsoft Copilot for Security processes prompts, the elements of an effective prompt, and how to enable the solution.
 abstract: |
   By the end of this module, you'll be able to:
-    - Describe what Microsoft Security Copilot is.
-    - Describe the terminology of Microsoft Security Copilot.
-    - Describe how Microsoft Security Copilot processes prompt requests.
+    - Describe what Microsoft Copilot for Security is.
+    - Describe the terminology of Microsoft Copilot for Security.
+    - Describe how Microsoft Copilot for Security processes prompt requests.
     - Describe the elements of an effective prompt
-    - Describe how to enable your Microsoft Security Copilot solution.
+    - Describe how to enable Microsoft Copilot for Security.
 prerequisites: |
-  - None
-iconUrl: /learn/achievements/generic-badge.svg
-hidden: true
+  - Working knowledge of security operations and incident response
+  - Working knowledge of Microsoft security products and services
+iconUrl: /learn/achievements/security-copilot-getting-started.svg
+hidden: false
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - beginner
 roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
@@ -39,7 +39,7 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
   - intune
   - defender-for-threat-intelligence
   - mdeasm
-  - copilot
+  - ms-copilot
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - cloud-security
   - threat-protection

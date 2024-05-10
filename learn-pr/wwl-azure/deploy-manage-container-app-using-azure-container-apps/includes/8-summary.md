@@ -12,6 +12,6 @@ Detailed resources:
 
 - Azure DevOps documentation: [https://docs.microsoft.com/azure/devops/](/azure/devops/)
 
-- Microsoft Entra managed identities for Azure resources documentation: [https://learn.microsoft.com/azure/active-directory/managed-identities-azure-resources/](/azure/active-directory/managed-identities-azure-resources/)
+- Microsoft Entra managed identities for Azure resources documentation: [/azure/active-directory/managed-identities-azure-resources/](/azure/active-directory/managed-identities-azure-resources/)
 
 - Docker Docs - Reference documentation: [https://docs.docker.com/reference](https://docs.docker.com/reference)

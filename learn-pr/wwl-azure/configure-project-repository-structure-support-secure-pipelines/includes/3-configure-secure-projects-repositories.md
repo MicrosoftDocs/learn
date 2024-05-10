@@ -58,7 +58,7 @@ Here's what you need to know about permission settings:
 
 - When adding many teams, consider creating a **Team Administrators** custom group where you allocate a subset of the permissions available to **Project Administrators**.
 
-- Consider granting the [work item query folders Contribute.](https://learn.microsoft.com/azure/devops/boards/queries/set-query-permissions) permission to users or groups that require the ability to create and share work item queries for the project.
+- Consider granting the [work item query folders Contribute.](/azure/devops/boards/queries/set-query-permissions) permission to users or groups that require the ability to create and share work item queries for the project.
 
 > [!NOTE]
 > Always try to apply the least privilege security concept that requires that users be granted the minimum permissions necessary to perform their job functions. For example, if you want to grant a user the ability to create and modify work item queries, consider granting the **Contribute** permission to the **Work item query folders** permission instead of the **Edit project-level information** permission.
@@ -115,6 +115,6 @@ Using Azure resources, access to the files can be controlled through role-based 
 
 If you want to learn more about project and repository security in Azure DevOps, you can read the following articles:
 
-- [Secure access to Azure Repos from pipelines.](https://learn.microsoft.com/azure/devops/pipelines/security/secure-access-to-repos)
-- [Set Git repository permissions.](https://learn.microsoft.com/azure/devops/repos/git/set-git-repository-permissions)
-- [Set branch permissions.](https://learn.microsoft.com/azure/devops/repos/git/branch-permissions)
+- [Secure access to Azure Repos from pipelines.](/azure/devops/pipelines/security/secure-access-to-repos)
+- [Set Git repository permissions.](/azure/devops/repos/git/set-git-repository-permissions)
+- [Set branch permissions.](/azure/devops/repos/git/branch-permissions)

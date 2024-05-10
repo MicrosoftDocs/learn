@@ -1,4 +1,3 @@
-
 To consume the published knowledge base, you can use the REST interface.
 
 The minimal request body for the function contains a question, like this:

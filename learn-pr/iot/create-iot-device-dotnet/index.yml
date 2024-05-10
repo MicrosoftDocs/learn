@@ -9,7 +9,7 @@ metadata:
   ms.author: casoper
   ms.manager: markl
   ms.topic: module
-  ms.prod: .net
+  ms.service: dotnet
 title: Construct Internet of Things devices using the .NET IoT Libraries
 summary: "In this module, you'll learn to read environmental sensors and activate relays using the .NET IoT Libraries."
 abstract: |

@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/31/2020
   author: leestott
   ms.author: chnoring
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.custom: team=nextgen
   ms.service: azure-functions
 title: "Connecting IoT devices to Azure AI services using Azure Functions"
@@ -43,7 +43,7 @@ products:
 subjects:
 - iot
 - machine-learning
-- serverless-compute
+- serverless-computing
 units:
 - learn.oxford.connect-iot-devices-cognitive-services-azure-func.introduction
 - learn.oxford.connect-iot-devices-cognitive-services-azure-func.design-cognitive-service

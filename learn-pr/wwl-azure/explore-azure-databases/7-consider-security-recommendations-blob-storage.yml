@@ -4,10 +4,10 @@ title: Consider security recommendations for Blob storage
 metadata:
   title: Consider security recommendations for Blob storage
   description: "Consider security recommendations for Blob storage"
-  ms.date: 10/18/2023
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/7-consider-security-recommendations-blob-storage.md)]

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.use-own-data-azure-openai.understand-use-own-data
-title: Understand how to use your own data
+title: Understand Retrieval Augmented Generation (RAG) with Azure OpenAI Service
 metadata:
-  title: Understand how to use your own data
-  description: "Learn how to use your own data with Azure OpenAI services."
-  ms.date: 7/11/2023
+  title: Understand Retrieval Augmented Generation (RAG) with Azure OpenAI Service
+  description: "Learn how to use Retrieval Augmented Generation (RAG) with Azure OpenAI Service."
+  ms.date: 2/21/2024
   author: ivorb
   ms.author: berryivor
   ms.topic: unit

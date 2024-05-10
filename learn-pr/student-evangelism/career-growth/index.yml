@@ -6,7 +6,7 @@ metadata:
   ms.date: 08/23/2021
   author: GitHubber17
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
 title: From intern to full-time position
 summary: You've landed your first job in tech as an intern, so now what? Learn strategies to growth-hack your career to ensure that you'll get an offer to join the company full-time after the internship is over.
@@ -25,8 +25,6 @@ roles:
   - student
 products:
   - azure 
-subjects:
-- modern-life
 units:
 - learn.career-growth.introduction
 - learn.career-growth.networking

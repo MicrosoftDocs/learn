@@ -1,4 +1,3 @@
-
 Integrating SAP Cloud Platform Identity Authentication with Microsoft Entra ID gives you the following benefits:
 
 - You can control in Microsoft Entra ID who has access to SAP Cloud Platform Identity Authentication.

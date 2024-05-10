@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-authorization-microsoft-entra-id.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/24/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/24-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A Privileged Role Administrator needs to assign a role to a user. What are the two main steps in the role assignment process?"
+    choices:
+    - content: "Browse to Identity, Users, All users and select the user."
+      isCorrect: false
+      explanation: "Incorrect. This is only the first step in the role assignment process."
+    - content: "Select the user and adjust the role settings."
+      isCorrect: false
+      explanation: "Incorrect. This is only one of the two main steps in the role assignment process."
+    - content: "Select the role to assign and adjust the role settings and duration."
+      isCorrect: true
+      explanation: "Correct. The two main steps in the role assignment process are selecting the role to assign and adjusting the role settings and duration."
+  - content: "An organization wants to regularly review access to privileged Azure resources and Microsoft Entra ID roles. What tool can they use to create access reviews for privileged access?"
+    choices:
+    - content: "Microsoft Advanced Threat Analytics"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Advanced Threat Analytics is used to detect advanced security threats."
+    - content: "Microsoft Entra Privileged Identity Management PIM"
+      isCorrect: true
+      explanation: "Correct. Microsoft Entra Privileged Identity Management PIM can be used to create access reviews for privileged access to Azure resources and Microsoft Entra ID roles."
+    - content: "Microsoft Entra ID Protection"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Entra ID Protection is used to protect user identities and detect potential vulnerabilities."
+  - content: "A team lead needs to grant access to a specific resource group in Azure. What is the first step they should take?"
+    choices:
+    - content: "Click on the Access control tab and select the role to assign."
+      isCorrect: false
+      explanation: "Incorrect. This isn't the first step."
+    - content: "Identify the needed scope by searching for the resource group in the Azure portal."
+      isCorrect: true
+      explanation: "Correct. The first step is to identify the needed scope by searching for the resource group in the Azure portal."
+    - content: "Select the user, group, or service principal to assign the selected role."
+      isCorrect: false
+      explanation: "Incorrect. This isn't the first step."
+  - content: "A company wants to enable Permissions Management for their organization. What is the first step they need to take?"
+    choices:
+    - content: "Activate a free trial or paid license through the Azure portal"
+      isCorrect: false
+      explanation: "Incorrect. This step comes after the first step."
+    - content: "Contact their Microsoft representative for Volume Licensing or Enterprise agreements"
+      isCorrect: false
+      explanation: "Incorrect. This step comes after the first step."
+    - content: "Ensure they have a Microsoft Entra ID tenant and are eligible for or have an active assignment to the Permissions Management Administrator role"
+      isCorrect: true
+      explanation: "Correct. The first step to enable Permissions Management is to ensure they have a Microsoft Entra ID tenant and are eligible for or have an active assignment to the Permissions Management Administrator role."
+  - content: "A security administrator needs to add a role assignment for a new user. Which step should they take to add a condition to the role assignment?"
+    choices:
+    - content: "Select the Constrained recommended option under Delegation type on the Conditions tab."
+      isCorrect: true
+      explanation: "Correct. This option provides more fine-grained access control by constraining the roles and principals the user can assign roles to."
+    - content: "Skip the Conditions tab and proceed to the Review assign tab."
+      isCorrect: false
+      explanation: "Incorrect. Adding a condition is optional but recommended for more fine-grained access control."
+    - content: "Select the Unconstrained option under Delegation type on the Conditions tab."
+      isCorrect: false
+      explanation: "Incorrect. This option doesn't provide fine-grained access control."

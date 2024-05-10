@@ -41,6 +41,6 @@ Implementation of ExpressRoute does take some time. You have to work through a c
 
 ## Use ExpressRoute in a hub-spoke topology
 
-Using ExpressRoute in a hub-spoke topology is no different than other architectural patterns. ExpressRoute, which underpins the connectivity between the hub and the on-premises network, works best when there's high data ingress and egress.
+Using ExpressRoute in a hub-spoke topology is no different than other architectural patterns. ExpressRoute, which underpins the connectivity between the hub and the on-premises network, works best when there's high data throughput both incoming and outgoing.
 
-You use circuits to manage and route traffic. Link ExpressRoute into a virtual network in Azure. The circuits to be connected to the virtual network might be in different regions or subscriptions. There are limits to the number of virtual networks per ExpressRoute circuit. For the standard tier, the limit is currently 10 networks. If you use the premium add-on, the limit is increased based on the circuit size. The lowest number is 20 virtual networks on a 50-Mbps circuit, up to 100 for circuits that are 10 Gbps or bigger.
+You use circuits to manage and route traffic, linking ExpressRoute into a virtual network in Azure. The circuits to be connected to the virtual network might be in different regions or subscriptions. There are limits to the number of virtual networks per ExpressRoute circuit. For the standard tier, the limit is currently 10 networks. If you use the premium add-on, the limit is increased based on the circuit size. The lowest number is 20 virtual networks on a 50-Mbps circuit, up to 100 for circuits that are 10 Gbps or greater.

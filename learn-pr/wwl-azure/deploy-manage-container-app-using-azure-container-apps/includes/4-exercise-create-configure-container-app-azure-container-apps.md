@@ -125,13 +125,11 @@ Complete the following steps to configure a connection between the container app
 
 1. Ensure that your Container App is open in the portal.
 
-1. On the left-side menu under Application, select **Revisions**.
+1. On the left-side menu under Application, select **Revisions and replicas**.
 
 1. Notice the Name assigned to your active revision.
 
-1. On the left-side menu under Application, select **Scale and replicas**.
-
-1. To the right of Revision, ensure that your active revision is selected.
+1. On the left-side menu under Application, select **Scale**.
 
 1. At the top of the page, select **Edit and deploy**.
 

@@ -5,7 +5,7 @@ metadata:
   unitType: introduction
   title: Introduction
   description: Learn how to deploy resources at the subscription, management group, and tenant scope within your Bicep code.
-  ms.date: 10/14/2021
+  ms.date: 12/14/2023
   author: mumian
   ms.author: jgao
   ms.topic: unit

@@ -34,21 +34,17 @@ There are many common tasks performed during identity administration.
 
 ## Identity management automation
 
-| Azure PowerShell | CLI (command line interface) |
+| PowerShell | CLI (command line interface) |
 | :--------------- | :--------------------------- |
-| Cross-platform PowerShell module runs on Windows, macOS, Linux | Cross-platform command-line interface, installable on Windows, macOS, Linux |
+| Cross-platform PowerShell runs on Windows, macOS, Linux | Cross-platform command-line interface, installable on Windows, macOS, Linux |
 | Requires Windows PowerShell or PowerShell | Runs in Windows PowerShell, Command prompt, or Bash and other Unix shells |
-
-> [!Note]
-> You can also script using the Microsoft Graph API.  The commands are very similar to CLI and PowerShell.
 
 | Scripting Language | Action | Command |
 | :----------------- | :----- | :-----: |
 | Azure CLI  | Create user  | `az ad user create --display-name "New User" --password  "Password" --user-principal-name NewUser@contoso.com` |
-| Azure PowerShell | Create user | `New-AzureADUser -DisplayName "New User" -PasswordProfile Password -UserPrincipalName "NewUser@contoso.com" -AccountEnabled $true -MailNickName "Newuser“ `|
 | Microsoft Graph | Create user | `New-MgUser -DisplayName "New User" -PasswordProfile Password -UserPrincipalName "NewUser@contoso.com" -AccountEnabled $true -MailNickName "Newuser“ `|
 
-When picking the right tool, consider your past experience and current work environment. Azure CLI syntax is similar to that of Bash scripting. If you work primarily with Linux systems, Azure CLI feels more natural. Azure PowerShell is a PowerShell module. If you work primarily with Windows systems, Azure PowerShell is a natural fit. Commands follow a verb-noun naming scheme and data is returned as objects.
+When picking the right tool, consider your past experience and current work environment. Azure CLI syntax is similar to that of Bash scripting. If you work primarily with Linux systems, Azure CLI feels more natural. PowerShell is the Microsoft scripting engine. If you work primarily with Windows systems, then PowerShell is a natural fit. Commands follow a verb-noun naming scheme and data is returned as objects.
 
 ### Microsoft Graph
 

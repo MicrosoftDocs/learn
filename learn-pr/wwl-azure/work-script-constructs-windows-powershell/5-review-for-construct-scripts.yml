@@ -4,11 +4,12 @@ title: Review the For construct in Windows PowerShell scripts
 metadata:
   title: Review the For construct in Windows PowerShell scripts
   description: "Review the For construct in Windows PowerShell scripts"
-  ms.date: 11/11/2022
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
   ms.custom:
+  - N/A
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

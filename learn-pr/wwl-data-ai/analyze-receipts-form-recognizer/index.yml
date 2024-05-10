@@ -8,7 +8,6 @@ metadata:
   ms.author: sheryang
   ms.topic: module
   ms.service: azure-ai-document-intelligence
-  ms.subservice: document-intelligence
 title: Fundamentals of Azure AI Document Intelligence
 summary: Document processing is a common task in many business scenarios. Organizations can use Azure AI Document Intelligence to automate data extraction across document types, such as receipts, invoices, and more.
 abstract: |

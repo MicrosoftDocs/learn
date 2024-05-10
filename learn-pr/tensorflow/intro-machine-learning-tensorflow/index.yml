@@ -6,7 +6,7 @@ metadata:
   ms.date: 07/24/2023
   author: bstollnitz
   ms.author: bstollnitz
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=cloud_advocates
   ms.contributors: bstollnitz-08202021
 title: "Go beyond Keras: Customize with TensorFlow"
@@ -29,8 +29,6 @@ prerequisites: |
   - Basic Python knowledge
   - Basic knowledge about how to use Jupyter Notebooks
   - Completion of module 1 of this learning path or knowledge of Keras
-subjects:
-- development-tools
 units:
 - learn.tensorflow.intro-machine-learning-tensorflow.introduction
 - learn.tensorflow.intro-machine-learning-tensorflow.tensors-variables

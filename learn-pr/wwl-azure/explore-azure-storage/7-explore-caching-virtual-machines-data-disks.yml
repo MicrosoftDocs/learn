@@ -3,8 +3,8 @@ uid: learn.wwl.explore-azure-storage.explore-caching-for-virtual-machines-data-d
 title: Explore caching for virtual machines and data disks
 metadata:
   title: Explore caching for virtual machines and data disks
-  description: "Explore caching for virtual machines and data disks"
-  ms.date: 10/17/2023
+  description: "Explore caching for virtual machines and data disks, with Standard and Premium storage."
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

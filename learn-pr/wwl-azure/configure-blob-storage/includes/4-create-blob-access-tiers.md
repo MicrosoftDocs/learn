@@ -24,14 +24,15 @@ The Archive tier is an offline tier that's optimized for data that can tolerate 
 
 The access options for Azure Blob Storage offer a range of features and support levels to help you optimize your storage costs. As you compare the features and support, think about which access options can best support your application needs.
 
-| Compare | Hot tier | Cool tier | Archive tier |
+| Comparison | Hot access tier | Cool access tier | Cold access tier | Archive access tier |
 | --- | --- | --- | --- | ---|
-| **Availability** | 99.9% | 99% | Offline |
-| **Availability (RA-GRS reads)** | 99.99% | 99.9% | Offline |
-| **Latency (time to first byte)** | milliseconds | milliseconds | hours |
-| **Minimum storage duration** |  N/A | 30 days | 180 days |
-| **Usage costs** | Higher storage costs, Lower access & transaction costs | Lower storage costs, Higher access & transaction costs | Lowest storage costs, Highest access & transaction costs |
+| **Availability** | 99.9% | 99% | 99% | 99% |
+| **Availability (RA-GRS reads)** | 99.99%  | 99.9% | 99.9% | 99.9%  |
+| **Latency (time to first byte)** | milliseconds | milliseconds | milliseconds | hours |
+| **Minimum storage duration** | N/A | 30 days | 90 days | 180 days |
 
 ### Configure the blob access tier
 
+
 In the Azure portal, you can select the blob access tier for your Azure storage account. You can also change the blob access tier for your account at any time. By selecting the correct access tier for your needs, you can store your blob data in the most cost-effective manner.
+

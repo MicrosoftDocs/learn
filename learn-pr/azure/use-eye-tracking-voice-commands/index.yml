@@ -6,8 +6,7 @@ metadata:
   ms.date: 01/04/2023
   author: marlenaklein-msft
   ms.author: marlenaklein
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.topic: module
 title: Enable eye tracking and voice commands for objects on the HoloLens 2
 summary: In this module, you'll use eye tracking and voice commands in your Unity project and enhance user experience.
 abstract: |

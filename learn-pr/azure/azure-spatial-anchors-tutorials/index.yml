@@ -6,8 +6,7 @@ metadata:
   ms.date: 01/02/2024
   author: marlenaklein-msft
   ms.author: marlenaklein
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.topic: module
 title: Use Azure Spatial Anchors to anchor objects in the real world
 summary: This course explores the use of Azure Spatial Anchors by integrating it into a HoloLens 2 application. 
 abstract: |

@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/12/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: synapse-analytics
   ms.subservice: pipeline
 title: Populate slowly changing dimensions in Azure Synapse Analytics pipelines

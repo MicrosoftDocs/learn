@@ -12,7 +12,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     (Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content
     ```
 
-1. Run the following commands in Cloud Shell. Enter a complex password and, at the prompt, enter your local public IP address, which you obtained in the preceding step.
+1. Run the following commands in Cloud Shell. Enter a complex password and, at the prompt, enter your local public IP address, which you obtained in the preceding step. Replace "[sandbox resource group name]" with "<rgn>[sandbox resource group name]</rgn>".
 
     ```powershell
     $adminSqlLogin = "cloudadmin"
@@ -20,8 +20,8 @@ These scripts should take three to five minutes to complete. Be sure to note you
     # Prompt for local ip address
     $ipAddress = Read-Host "Disconnect your VPN, open PowerShell on your machine and run '(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content'. Enter the value (include periods) next to 'Address' " 
     # Get resource group and location and random string
-    $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like "<rgn>Sandbox resource group name</rgn>"
-    $resourceGroupName = "<rgn>Sandbox resource group name</rgn>"
+    $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like "[sandbox resource group name]"
+    $resourceGroupName = "[sandbox resource group name]"
     $uniqueID = Get-Random -Minimum 100000 -Maximum 1000000
     $storageAccountName = "mslearnsa"+$uniqueID
     $location = $resourceGroup.Location

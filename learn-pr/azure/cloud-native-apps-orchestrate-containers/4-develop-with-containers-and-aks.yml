@@ -5,8 +5,8 @@ metadata:
   title: Developing with containers and AKS
   description: We examine developing with containers and AKS.
   ms.date: 12/28/2023
-  author: tomreidnz
-  ms.author: jasdeb
+  author: rayoef
+  ms.author: rayoflores
   ms.topic: unit
 durationInMinutes: 5
 content: |

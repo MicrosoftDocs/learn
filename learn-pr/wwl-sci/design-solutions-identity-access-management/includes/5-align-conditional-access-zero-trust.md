@@ -1,6 +1,6 @@
 We'll start out with some design principles.
 
-<!--[](https://learn.microsoft.com/azure/architecture/guide/security/conditional-access-design#conditional-access-as-a-zero-trust-policy-engine)-->
+<!--[](/azure/architecture/guide/security/conditional-access-design#conditional-access-as-a-zero-trust-policy-engine)-->
 
 ### Conditional Access as a Zero Trust policy engine
 

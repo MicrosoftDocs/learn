@@ -4,10 +4,12 @@ title: Exercise - Implement a switch statement
 metadata:
   title: Exercise - Implement a switch statement
   description: "Exercise - Implement a switch statement"
-  ms.date: 01/22/2024
+  ms.date: 04/09/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 11
 content: |
   [!include[](includes/2-exercise-switch-case.md)]
@@ -27,15 +29,15 @@ quiz:
       explanation: "Incorrect. The `break` keyword doesn't instruct the runtime to exit the application."
   - content: "A developer writes the code to implement a `switch-case` construct that evaluates a variable against many possible matching values. They include the `default` keyword as part of their `switch-case` construct. What is the purpose of the `default` keyword?"
     choices:
-    - content: "The `default` keyword supplies the default value for the variable if the variable has not been initialized."
+    - content: "The `default` keyword supplies the default value for the variable if the variable hasn't been initialized."
       isCorrect: false
-      explanation: "Incorrect. The `default` keyword does not supply a default value for the variable being evaluated. An error will be generated if the variable has not been initialized."
+      explanation: "Incorrect. The `default` keyword doesn't supply a default value for the variable being evaluated. An error will be generated if the variable hasn't been initialized."
     - content: "The `default` keyword acts as the matching value when none of the supplied `case` values is a match."
       isCorrect: true
-      explanation: "Correct. If there are no matching `case` value labels, the optional `default` label is used as the matching value."
+      explanation: "Correct. If there's no matching `case` value labels, the optional `default` label is used as the matching value."
     - content: "The `default` keyword supplies a default actions code block that is always executed regardless of the matching case value"
       isCorrect: false
-      explanation: "Incorrect. The `default` keyword does not supply a code block that is always executed."
+      explanation: "Incorrect. The `default` keyword doesn't supply a code block that is always executed."
   - content: "Which of the following statements about the `switch-case` construct is true?"
     choices:
     - content: "A single switch section can have multiple case labels."

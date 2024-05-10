@@ -24,7 +24,7 @@ A rule set is a customized rules engine that groups a combination of rules into 
 
 #### Rules match conditions
 
-The match conditions identify the specific type of requests the action should take. When multiple match conditions are used in a rule, they're grouped together using an AND logic.
+The match conditions identify the specific type of actions the request should take. When multiple match conditions are used in a rule, they're grouped together using an AND logic.
 
 The following type of match conditions can be found in a rule set:
 

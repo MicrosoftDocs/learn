@@ -3,33 +3,41 @@ uid: learn.wwl.guided-project-github-manage-file-updates
 metadata:
   title: Guided Project –  Use GitHub to manage file updates
   description: "Hands-on module focused on getting the learner comfortable with basic source control commands through an integrated development environment or web portal."
-  ms.date: 08/30/2023
+  ms.date: 04/08/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: github
+  ai-usage: human-only
 title: Guided Project –  Use GitHub to manage file updates
 summary: |
   Guided Project – Use GitHub to manage file updates provides you with the opportunity to create your own GitHub repository and manage files within that repository, including updating files, handling conflicts, and updating the source repository.
+
   [!INCLUDE [](../../includes/wwl/guided-project-notes.md)]
 abstract: |
   In this module, you'll practice how to:
-  *   Create a GitHub account and an initial repository.
-  *   Configure software to interact with GitHub.
-  *   Use software to create a local version of your repository.
-  *   Update files locally, and then update the web-based repository.
-  *   Resolve conflicts in your repository.
-  *   Merge all updates to a single repository branch.
-prerequisites: |
-  A personal computer running Windows, macOS, or Linux.
-iconUrl: /training/achievements/generic-badge.svg
+
+  -   Create a GitHub account and an initial repository.
+
+  -   Configure software to interact with GitHub.
+
+  -   Use software to create a local version of your repository.
+
+  -   Update files locally, and then update the web-based repository.
+
+  -   Resolve conflicts in your repository.
+
+  -   Merge all updates to a single repository branch.
+prerequisites: A personal computer running Windows, macOS, or Linux.
+iconUrl: /training/achievements/guided-project-github-manage-file-updates.svg
 levels:
 - beginner
 roles:
 - developer
 products:
 - azure
-subjects:
-- development-tools
 units:
 - learn.wwl.guided-project-github-manage-file-updates.introduction
 - learn.wwl.guided-project-github-manage-file-updates.prepare

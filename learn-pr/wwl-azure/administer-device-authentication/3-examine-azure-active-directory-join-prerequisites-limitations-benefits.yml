@@ -4,10 +4,12 @@ title: Examine Microsoft Entra join prerequisites limitations and benefits
 metadata:
   title: Examine Microsoft Entra join prerequisites limitations and benefits
   description: "This unit covers Microsoft Entra pre-requisites limitations and benefits when joining devices."
-  ms.date: 08/21/2023
+  ms.date: 03/22/2024
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/3-examine-azure-active-directory-join-prerequisites-limitations-benefits.md)]

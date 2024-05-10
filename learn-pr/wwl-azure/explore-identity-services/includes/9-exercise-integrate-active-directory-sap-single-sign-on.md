@@ -17,7 +17,7 @@ Active Directory can be integrated with SAP single sign-on by configuring your S
     2. Enter your SAP user (or the user that you want to map for SSO) in the name field and select **Edit**.
     3. Select the **SNC** tab and type the SNC name you configured in the previous task in the format **p:CN=UserPrincipalName@domain**
 3. **Install secure login software on client computers**.
-4. **Configure SAP GUI for SNC communication**
+4. **Configure SAP GUI for SNC communication**:
 
     1. In the **Secure Network Settings** interface, type the SNC name in the format **p:CN=ServicePrincipalName@domain**
     2. Initiate a connection. You should be signed in without being prompted to enter a password.

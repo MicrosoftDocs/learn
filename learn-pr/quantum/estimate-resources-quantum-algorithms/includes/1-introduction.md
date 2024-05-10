@@ -6,7 +6,7 @@ You can use the Azure Quantum Resource Estimator to analyze the impact of variou
 
 ## Learning objectives
 
-By the end of this module, you will be able to:
+By the end of this module, you'll be able to:
 
 - Explain what the Azure Quantum Resource Estimator is.
 - Define the target parameters of the Azure Quantum Resource Estimator.

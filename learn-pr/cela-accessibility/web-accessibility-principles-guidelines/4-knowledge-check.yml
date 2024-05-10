@@ -1,0 +1,92 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility.web-accessibility-principles-guidelines.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is a part of the "Web accessibility principles and guidelines" module.
+  ms.date: 04/11/2024
+  author: erzelman
+  ms.author: erzelman 
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz: 
+  title: Check your knowledge
+  questions: 
+    - content: "What is web accessibility?"
+      choices:
+        - content: "Practice of designing web content to be fun and entertaining."
+          isCorrect: false
+          explanation: "Incorrect. Web accessibility isn't to make something fun and entertaining but usable for people with disabilities."
+        - content: "Practice of making web content usable and accessible for people with disabilities."
+          isCorrect: true
+          explanation: "Correct. Web accessibility means that websites, tools, and technologies are designed and developed so that people with disabilities can use them effectively."
+        - content: "Practice that makes the web more secure for children."
+          isCorrect: false
+          explanation: "Incorrect. Web accessibility isn't about security or protection, but about usability and inclusion. Web security is a different topic that involves preventing cyberattacks, malware, phishing, and other threats."
+        - content: "Practice that web designers and developers use to access the Internet."
+          isCorrect: false
+          explanation: "Incorrect. Web accessibility isn't about how web designers and developers access the Internet, but about how they make their web content accessible to others. Web accessibility is a practice that benefits all users, not just web professionals."
+    - content: "You can enhance user experiences for people with disabilities by:"
+      choices:
+        - content: "Failing to comply with web accessibility standards and regulations."
+          isCorrect: false
+          explanation: "Incorrect. Failing to comply with web accessibility standards and regulations would make a product or service unusable and inaccessible to people with disabilities."
+        - content: "Ensuring web content is easy to navigate, clear, and consistent."
+          isCorrect: true
+          explanation: "Correct. In addition to following the accessibility principles and guidelines, ensuring that content is easy to navigate, clear, and consistent, makes it possible for people with disabilities to access your products and services."
+        - content: "Focusing on the needs of only users who accessed your prior content."
+          isCorrect: false
+          explanation: "Incorrect. Web content should be accessible to everyone, regardless of their previous experience or familiarity with the content."
+        - content: "Completing this training and relying on others to address accessibility issues."
+          isCorrect: false
+          explanation: "Incorrect. While completing this training is a great way to learn about accessibility, accessibility is everyone’s responsibility."
+    - content: "What are the POUR web accessibility principles?"
+      choices:
+        - content: "Powerful, Objective, Uniform, and Realistic."
+          isCorrect: false
+          explanation: "Incorrect. These items aren't the POUR web accessibility principles."
+        - content: "Presentable, Obtainable, Useful, and Respectful."
+          isCorrect: false
+          explanation: "Incorrect. These items aren't the POUR web accessibility principles."
+        - content: "Perceivable, Operable, Understandable, and Robust."
+          isCorrect: true
+          explanation: "Correct. These items are the four principles of web accessibility."
+        - content: "Punctual, Observable, Unmistakable, and Reversible."
+          isCorrect: false
+          explanation: "Incorrect. These items aren't the POUR web accessibility principles."
+    - content: "Which of the following options is an example of the POUR principle: Perceivable?"
+      choices:
+        - content: "Captions for podcasts."
+          isCorrect: true
+          explanation: "Correct. Captions for audio files is a perceivable principle."
+        - content: "Maximize compatibility with future user agents."
+          isCorrect: false
+          explanation: "Incorrect. This option is a Robust principle."
+        - content: "You can use keyboard to access content."
+          isCorrect: false
+          explanation: "Incorrect. Making something operable from the keyboard is an Operable principle."
+    - content: "Which of the following options is an example of the POUR principle: Operable?"
+      choices:
+        - content: "Captions for podcasts."
+          isCorrect: false
+          explanation: "Incorrect. This option is Perceivable principle."
+        - content: "Maximize compatibility with future user agents."
+          isCorrect: false
+          explanation: "Incorrect. This option is a Robust principle."
+        - content: "You can use keyboard to access content."
+          isCorrect: true
+          explanation: "Correct. Making something operable from the keyboard is an Operable principle."
+    - content: "Which is the recommended Web Content Accessibility Guidelines (WCAG) level of compliance for most web content?"
+      choices:
+        - content: "A: minimum level of accessibility."
+          isCorrect: false
+          explanation: "Incorrect. Level A is the minimum level of accessibility, and you should always strive to meet A and go beyond it."
+        - content: "AA: intermediate level of accessibility."
+          isCorrect: true
+          explanation: "Correct. Level AA is the intermediate level of accessibility and ensures your content is accessible to many users."
+        - content: "AAA: maximum level of accessibility."
+          isCorrect: false
+          explanation: "Incorrect. Even though meeting level AAA would make your product more accessible to people with disabilities, it's not required. Adopting some of the level AAA standards can enhance the accessibility of your product."
+

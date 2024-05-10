@@ -8,10 +8,10 @@ metadata:
   ms.author: cynthist
   ms.topic: module
   ms.service: app-service
+  ai-usage: ai-assisted
 title: Configure Azure App Service plans
 summary: |
   Learn how to configure an Azure App Service plan, including pricing and scaling.
-  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   In this module, you learn how to:
   - Identify features and usage cases for Azure App Service.

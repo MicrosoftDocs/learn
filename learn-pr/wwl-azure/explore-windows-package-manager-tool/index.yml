@@ -7,8 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
-  ms.prod: dev-environment
-  ms.technology: package-manager
+  ms.service: dev-environment
+  ms.subservice: package-manager
 title: Explore the Windows Package Manager tool
 summary: Streamline the installation and maintenance of software on your computer by using Windows Package Manager. Explain the front-end components and commands, the Windows Package Manager repository, and how to contribute to the repository.
 abstract: |

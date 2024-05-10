@@ -3,7 +3,7 @@ uid: learn.wwl.delegates-events-exceptions
 metadata:
   title: Delegates events exceptions
   description: This lesson is on the use of delegates and events.
-  ms.date: 01/18/2024
+  ms.date: 01/29/2024
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: learning-path
@@ -17,6 +17,7 @@ prerequisites: |
 summary: |
   In this module you learned about delegates and event handlers, and how they're used. You learned about what are events and delegates and how to implement event handler stub methods.
 iconUrl: /training/achievements/generic-trophy.svg
+hidden: true
 levels:
 - beginner
 roles:

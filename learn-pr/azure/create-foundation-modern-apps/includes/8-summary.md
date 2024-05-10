@@ -1,6 +1,6 @@
 Getting the timing right of heading to the bus stop is a challenge that most can relate to. The first step in architecting a solution involves building a strong foundation for the application with a database. Azure SQL Database is a modern database with the capabilities required for modern applications like catching the bus. Azure SQL Database supports JSON, geospatial, and GitHub Actions. The features in Azure SQL Database make it easy to meet the requirements of the scenario and enables you to build a CI/CD pipeline from the start.
 
-Azure SQL Database makes it easier to develop the foundations of applications like the serverless, full-stack application discussed for catching the bus. If you choose to complete the next module of the associated learning path, you'll dive into the API portion of the solution, which uses Azure Functions.
+Azure SQL Database makes it easier to develop the foundations of applications like the serverless, full-stack application discussed for catching the bus. 
 
 ## References to further your learning
 

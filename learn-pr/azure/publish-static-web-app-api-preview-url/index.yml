@@ -14,7 +14,7 @@ summary: Publish an Angular, React, Svelte, or Vue JavaScript app and API with A
 abstract: |
   In this module, you will:
     - Choose an existing web app project with either Angular, React, Svelte or Vue
-    - Create an API for the app with Azure Functions
+    - Create an API for the app with Azure Functions v3 programming model for Node.js
     - Run the application locally
     - Publish the app to Azure Static Web Apps
     - Publish the app and its API to Azure Static Web Apps to a staging site

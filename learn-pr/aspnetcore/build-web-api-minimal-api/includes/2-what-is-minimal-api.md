@@ -136,24 +136,27 @@ To use Swagger and the Swagger UI in your API, you do two things:
      using Microsoft.OpenApi.Models;
       ```
 
-   - Add `AddSwaggerGen()`. This method sets up header information on your API, like what it's called and the version number.
+   - Add `AddSwaggerGen()`. This method sets up header information on your API, like what it's called and the version number. Note that Swagger should be limited to development time, as it can be a security risk if it's available in production.
 
      ```csharp
      builder.Services.AddEndpointsApiExplorer();
-     builder.Services.AddSwaggerGen(c =>
-       {
+     if (app.Environment.IsDevelopment())
+     {
+       builder.Services.AddSwaggerGen(c =>
+         {
            c.SwaggerDoc("v1", new OpenApiInfo { Title = "Todo API", Description = "Keep track of your tasks", Version = "v1" });
-       });
+         });
      ```
 
    - Add `UseSwagger()` and `UseSwaggerUI()`. These two code lines tell the API project to use Swagger and also where to find the specification file *swagger.json*.
 
      ```csharp
-     app.UseSwagger();
-     app.UseSwaggerUI(c =>
-       {
-         c.SwaggerEndpoint("/swagger/v1/swagger.json", "Todo API V1");
-       });
+       app.UseSwagger();
+       app.UseSwaggerUI(c =>
+        {
+          c.SwaggerEndpoint("/swagger/v1/swagger.json", "Todo API V1");
+        });
+     } // end of if (app.Environment.IsDevelopment()) block
      ```
 
 That's all that's involved with building a minimal API! Starting the project and navigation to *http://localhost:5000/swagger* displays something like this:

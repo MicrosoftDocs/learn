@@ -2,11 +2,12 @@
 uid: learn.wwl.explore-azure-data-services-for-modern-analytics
 metadata:
   title: Explore Azure data services for modern analytics
-  description: "Understand analytics solutions in the Azure data ecosystem. Explore the architecture of a scalable analytics solution to meet business needs."
+  description: Understand analytics solutions in the Azure data ecosystem. Explore the architecture of a scalable analytics solution to meet business needs.
   ms.date: 02/08/2023
   author: wwlpublish
-  ms.author: shlindsay
-  ms.topic: interactive-tutorial
+  ms.author: anrudduc
+  ms.topic: module
+  ms.service: azure
 title: Explore Azure data services for modern analytics
 summary: Understand analytics solutions in the Azure data ecosystem. Explore the architecture of a scalable analytics solution to meet business needs.
 abstract: |
@@ -24,9 +25,9 @@ products:
 - azure-synapse-analytics
 - power-bi
 subjects:
-- data-lake
+- data-storage
 - data-modeling
-- data-warehousing
+- data-storage
 units:
 - learn.wwl.explore-azure-data-services-for-modern-analytics.introduction
 - learn.wwl.explore-azure-data-services-for-modern-analytics.understand-azure-data-ecosystem

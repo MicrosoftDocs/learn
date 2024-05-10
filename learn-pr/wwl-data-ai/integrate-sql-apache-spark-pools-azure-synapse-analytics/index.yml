@@ -6,7 +6,7 @@ metadata:
   ms.date: 06/08/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: synapse-analytics
   ms.subservice: spark
   ms.custom:
@@ -39,7 +39,7 @@ roles:
 products:
 - azure-synapse-analytics
 subjects:
-- database
+- databases
 units:
 - learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.introduction
 - learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.describe-integration-methods-between-sql

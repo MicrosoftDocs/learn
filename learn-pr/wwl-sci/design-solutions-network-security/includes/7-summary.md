@@ -13,14 +13,14 @@ You learned how to:
 
 ## Learn more with security documentation
 
-- [Implement network segmentation patterns - Microsoft Azure Well-Architected Framework | Microsoft Learn](https://learn.microsoft.com/azure/architecture/framework/security/design-network-segmentation)
-- [Azure network security groups overview | Microsoft Learn](https://learn.microsoft.com/azure/virtual-network/network-security-groups-overview)
-- [Microsoft Defender for DNS - the benefits and features | Microsoft Learn](https://learn.microsoft.com/azure/defender-for-cloud/defender-for-dns-introduction)
-- [Plan for traffic inspection - Cloud Adoption Framework | Microsoft Learn](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-traffic-inspection)
+- [Implement network segmentation patterns - Microsoft Azure Well-Architected Framework | Microsoft Learn](/azure/architecture/framework/security/design-network-segmentation)
+- [Azure network security groups overview | Microsoft Learn](/azure/virtual-network/network-security-groups-overview)
+- [Microsoft Defender for DNS - the benefits and features | Microsoft Learn](/azure/defender-for-cloud/defender-for-dns-introduction)
+- [Plan for traffic inspection - Cloud Adoption Framework | Microsoft Learn](/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-traffic-inspection)
 
 ## Learn more with reference architectures
 
-- [Zero-trust network for web applications with Azure Firewall and Application Gateway - Azure Architecture Center | Microsoft Learn](https://learn.microsoft.com/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall)
+- [Zero-trust network for web applications with Azure Firewall and Application Gateway - Azure Architecture Center | Microsoft Learn](/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall)
 
 > [!NOTE]
 > This module contains AI-generated content.

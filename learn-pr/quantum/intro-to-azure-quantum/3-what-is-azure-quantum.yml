@@ -4,11 +4,11 @@ title: What is Azure Quantum?
 metadata:
   title: What is Azure Quantum?
   description: Learn the components of the Azure Quantum cloud service.
-  ms.date: 10/20/2023
+  ms.date: 01/09/2024
   author: SoniaLopezBravo
   ms.author: sonialopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-quantum
+  manager: tedhudek
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/3-what-is-azure-quantum.md)]

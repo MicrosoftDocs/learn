@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: sheryang
   ms.topic: module
-  ms.prod: azure
+  ms.service: azure
 title: Fundamentals of Knowledge Mining and Azure AI Search
 summary: Use Azure AI Search to make your data searchable.
 abstract: |
