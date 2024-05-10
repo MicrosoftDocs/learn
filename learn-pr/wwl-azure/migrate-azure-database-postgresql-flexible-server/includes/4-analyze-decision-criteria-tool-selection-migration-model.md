@@ -45,5 +45,3 @@ A good example would be automating the offline migration of a database via pg_du
 Now that we went through the process for gathering all of this information, we can work with the stakeholders to determine the best option for a given scenario. When making the decision on which methodology and technology set to use it's important to not just work with the business stakeholders, but also the technical stakeholders. This collaboration helps avoid a situation where the business drives for a minimal downtime migration, which the technical team isn't in a position to deliver because of staffing, resource, or technology constraints.
 
 The key thing here's to manage expectations and have an open and honest dialog. It's also important to ensure that the business takes ownership of validation tasks that sit outside the remit of the technical teams delivering the database migration. This validation can involve data consistency and validation checks, and user experience testing.
-
-## Next: Exercise – Online PostgreSQL Database Migration

@@ -37,5 +37,3 @@ The following table briefly summarizes the key differences between offline and o
 ## Which Method to Choose
 
 Understanding the two migration methods is only part of the story for performing a migration. We need to understand which tools are available to us before we can make a choice about how to perform our data migration.
-
-## Next Unit: Identifying Migration Tool Options

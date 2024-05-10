@@ -7,5 +7,3 @@ After completing this module, you're able to:
 - Understand the different online and offline migration options.
 - Identify the different migration tools available.
 - Select the appropriate migration tool for your specific scenario.
-
-## Next unit: Compare online and offline migrations
