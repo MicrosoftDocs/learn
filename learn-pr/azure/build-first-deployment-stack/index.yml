@@ -28,6 +28,9 @@ prerequisites: |
     > [!TIP]
     > You can use either the Azure CLI or Azure PowerShell to complete this module. If you're not sure which to choose, we recommend you use the [Azure CLI](/cli/azure/install-azure-cli).
 
+    > [!NOTE]
+    > Azure CLI automatically installs the Bicep CLI. Azure PowerShell requires a manual installation. For more information, go to [Install Bicep tools](/azure/azure-resource-manager/bicep/install).
+
 iconUrl: http://via.placeholder.com/120x120
 levels:
   - intermediate
