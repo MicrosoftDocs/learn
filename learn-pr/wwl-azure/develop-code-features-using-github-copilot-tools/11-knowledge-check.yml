@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.develop-code-features-using-github-copilot-tools.knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
-  title: Knowledge Check
-  description: "Knowledge Check"
-  ms.date: 05/09/2024
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/10/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
@@ -66,7 +66,7 @@ quiz:
       explanation: "Correct. GitHub Copilot can generate code line completions from a comment and from code."
     - content: "From a comment and from a prompt."
       isCorrect: false
-      explanation: "Incorrect. GitHub Copilot generates code line completions from comments, but not from a prompt. GitHub Copilot CHat generates responses from prompts."
+      explanation: "Incorrect. GitHub Copilot generates code line completions from comments, but not from a prompt. GitHub Copilot Chat generates responses from prompts."
   - content: "How does GitHub Copilot determine the code completion suggestions it provides?"
     choices:
     - content: "Based on the context of code in the editor."
@@ -86,7 +86,7 @@ quiz:
     - content: "It selects the most relevant suggestion automatically."
       isCorrect: false
       explanation: "Incorrect. GitHub Copilot doesn't automatically select the most relevant suggestion."
-    - content: "It enable developers to review each suggestion by selecting the left or right arrows."
+    - content: "It enables developers to review each suggestion by selecting the left or right arrows."
       isCorrect: true
       explanation: "Correct. When GitHub Copilot generates more than one suggestion, developers can cycle through the suggestions by selecting the left or right arrows."
   - content: "What types of code conversions can be completed using GitHub Copilot?"

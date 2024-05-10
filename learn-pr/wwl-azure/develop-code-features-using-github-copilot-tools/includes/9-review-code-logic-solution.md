@@ -1,10 +1,10 @@
 Your challenge was to update the `QuarterlySalesReport` method to achieve the following requirements:
 
-1. Create the ConstructProductId method
+1. Create the ConstructProductId method.
 
-1. Create the DeconstructProductId method
+1. Create the DeconstructProductId method.
 
-1. Update `QuarterlySalesReport` method to identify the most profitable product
+1. Update `QuarterlySalesReport` method to identify the most profitable product.
 
 This review describes the Copilot Chat features and prompts used to complete the challenge.
 

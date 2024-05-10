@@ -209,9 +209,9 @@ Here are the tasks that you to complete:
     > [!IMPORTANT]
     > The code completions that you receive are likely to be different from the suggestions shown in the following screenshot. Although GitHub Copilot only has a method name and parameter to work with, that may be enough to generate useful suggestions. You should see suggestions that calculate sales by quarter. Rejecting the suggestions and trying again can provide different results.
 
-    ![Screenshot showing the code completion for report data analysis.](../media/code-line-completion-report-analysis-1.png)
+    ![Screenshot showing a code completion suggestion that processes data for a report.](../media/code-line-completion-report-analysis-1.png)
 
-    You can cycle through the suggestions by selecting `>` or `<`>.
+    You can cycle through the suggestions by selecting `>` or `<`.
 
     Notice that the suggested code completion iterates through the sales data and performs quarterly sales calculations.
 

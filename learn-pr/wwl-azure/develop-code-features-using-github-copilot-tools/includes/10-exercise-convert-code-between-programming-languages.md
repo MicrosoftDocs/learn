@@ -2,9 +2,9 @@ GitHub Copilot can help you to convert code from one programming language to ano
 
 You can complete the following types of code conversions by using GitHub Copilot:
 
-- Convert an entire code file to another programming language
-- Convert a function to another programming language
-- Convert a code snippet to another programming language
+- Convert an entire code file to another programming language.
+- Convert a function to another programming language.
+- Convert a code snippet to another programming language.
 
 Each of the chat interfaces (Chat view, Quick Chat window, and inline chat) can be used to convert code between programming languages. Your choice of chat interface depends on your preference and the complexity of the code that you want to convert.
 

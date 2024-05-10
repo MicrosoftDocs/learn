@@ -229,7 +229,7 @@ To update the `GenerateSalesData` method, complete the following steps:
 
     You should see a suggestion that assigns the array index number corresponding to the selected departmentName to indexOfDept.
 
-    ![Inline chat suggestion for the indexOfDept assignment](../media/inline-chat-code-suggestion-3.png)
+    ![Screenshot of Inline chat suggestion for the indexOfDept assignment.](../media/inline-chat-code-suggestion-3.png)
 
     If you don't get the expected suggestion, you can select **Discard** to reject the suggestion and try again. The following prompt provides additional context for the assignment:
 
@@ -239,7 +239,8 @@ To update the `GenerateSalesData` method, complete the following steps:
 
     This prompt specifies creating an integer variable named `indexOfDept` as well as how to assign a value. You could run this prompt without creating/selecting the variable declaration, but GitHub Copilot can occasionally lose its anchor point when you open the inline chat without any code selected.
 
-    >[!NOTE] The **Toggle Change** button (the +/- icon located to the right of the **Accept** and **Discard** buttons) can be used to switch between the original code and the suggested code. This can be useful when you want to compare the original code with the suggested code.
+    > [!NOTE]
+    > The **Toggle Change** button (the +/- icon located to the right of the **Accept** and **Discard** buttons) can be used to switch between the original code and the suggested code. This can be useful when you want to compare the original code with the suggested code.
 
 1. To accept the suggestion provided by GitHub Copilot, select **Accept**.
 
@@ -253,7 +254,7 @@ To update the `GenerateSalesData` method, complete the following steps:
 
     You should see a suggestion that assigns the array index number corresponding to the selected departmentName to indexOfDept.
 
-    ![Inline chat suggestion for the deptAbb assignment](../media/inline-chat-code-suggestion-4.png)
+    ![Screenshot of Inline chat suggestion for the deptAbb assignment.](../media/inline-chat-code-suggestion-4.png)
 
 1. To accept the suggestion provided by GitHub Copilot, select **Accept**.
 
@@ -283,7 +284,7 @@ To update the `GenerateSalesData` method, complete the following steps:
 
     In this case, you should see a suggestion that assigns a randomly selected product size to the `sizeCode` variable. GitHub Copilot could suggest creating either one or two code lines to satisfy this prompt. Either way, it will probably suggest creating a string array of product sizes and then use `random` to assign one of the sizes to `sizeCode`.
 
-    ![Inline chat suggestion for the sizeCode assignment](../media/inline-chat-code-suggestion-5.png)
+    ![Screenshot of Inline chat suggestion for the sizeCode assignment.](../media/inline-chat-code-suggestion-5.png)
 
 1. Select the `string colorCode = "";` code line, open the inline chat, and then enter the following prompt:
 
@@ -325,7 +326,7 @@ To update the `GenerateSalesData` method, complete the following steps:
 
     You should see a suggestion that constructs the productID value using the variables you assigned earlier. The suggestion should include the necessary code to format the productID as "`DDDD-###-SS-CC-MMM`".
 
-    ![Inline chat suggestion for the productID assignment](../media/inline-chat-code-suggestion-6.png)
+    ![Screenshot of Inline chat suggestion for the productID assignment.](../media/inline-chat-code-suggestion-6.png)
 
 1. Manually update the `unitPrice` assignment to use a range of 25 to 300 as follows:
 
@@ -479,7 +480,7 @@ To update the `QuarterlySalesReport` method, complete the following steps:
 
     You should see a suggestion that includes the necessary code to calculate quarterly profit and profit percentage. The suggestion should include the necessary code to calculate the profit and profit percentage for each quarter.
 
-    ![Inline chat suggestion for logical ordering and currency formatting in the QuarterlySalesReport method](../media/inline-chat-code-suggestion-7.png)
+    ![Screenshot of Inline chat suggestion for logical ordering and currency formatting in the QuarterlySalesReport method.](../media/inline-chat-code-suggestion-7.png)
 
 1. To accept the suggestion provided by GitHub Copilot, select **Accept**.
 
@@ -517,7 +518,7 @@ To update the `QuarterlySalesReport` method, complete the following steps:
 
     You should see a suggestion that includes the necessary code to calculate quarterly profit and profit percentage. The suggestion should include the necessary code to calculate the profit and profit percentage for each quarter.
 
-    ![Inline chat suggestion for the QuarterlySalesReport method](../media/inline-chat-code-suggestion-8.png)
+    ![Screenshot of Inline chat suggestion for the quarterly profit calculation.](../media/inline-chat-code-suggestion-8.png)
 
 1. To accept the suggestion provided by GitHub Copilot, select **Accept**.
 
@@ -555,11 +556,11 @@ To update the `QuarterlySalesReport` method, complete the following steps:
 
     You should see a suggestion that includes the necessary code to calculate quarterly profit and profit percentage. The suggestion should include the necessary code to calculate the profit and profit percentage for each quarter.
 
-    ![Inline chat suggestion for the QuarterlySalesReport method](../media/inline-chat-code-suggestion-9a.png)
+    ![Screenshot of Inline chat suggestion for the QuarterlySalesReport method, part 1 of 2.](../media/inline-chat-code-suggestion-9a.png)
 
-    and further down the suggestion
+    The code suggestion continues with the following information.
 
-    ![Inline chat suggestion for the QuarterlySalesReport method](../media/inline-chat-code-suggestion-9b.png)
+    ![Screenshot of Inline chat suggestion for the QuarterlySalesReport method, part 2 of 2.](../media/inline-chat-code-suggestion-9b.png)
 
 1. To accept the suggestion provided by GitHub Copilot, select **Accept**.
 

@@ -211,7 +211,7 @@ Use the following steps to complete this portion of the challenge:
 
 1. Create a prompt that can be used to create the dictionary structure for the QuarterlySalesReport method. Use the first three requirements as the basis for the prompt.
 
-    > [!HINT]
+    > [!NOTE]
     > Review the existing code in the `QuarterlySalesReport` method for help on how the dictionary can be constructed. The prompt that you create for GitHub Copilot Chat should reflect the existing code logic as well as the challenge requirements and criteria details.
 
 1. Submit the prompt to GitHub Copilot Chat and review the code suggestions that are generated.
@@ -220,7 +220,7 @@ Use the following steps to complete this portion of the challenge:
 
 1. Review the updated code and use GitHub Copilot to help fix any errors or issues.
 
-    > [!HINT]
+    > [!NOTE]
     > GitHub Copilot may struggle when generating the code that extracts the product correct product ID components. You may need to manually  : `departmentAbbreviation + "-" + productSerialNumber + "-ss-cc-mmm"`.
 
 1. Save the changes to your Program.cs file.

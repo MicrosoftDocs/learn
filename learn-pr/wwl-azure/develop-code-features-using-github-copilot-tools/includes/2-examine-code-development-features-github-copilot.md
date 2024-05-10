@@ -55,11 +55,11 @@ The Chat view in Visual Studio Code provides an AI assistant that can help you w
 
 The Chat view enables you to have a chat conversation with Copilot in a separate view. You can access the Chat view via the Activity Bar or by pressing Ctrl+Alt+I.
 
-![Screenshot showing the Chat view in Visual Studio Code.](../media/chat-view-1.png)
+![Screenshot showing the Chat view "welcome" message in Visual Studio Code.](../media/chat-view-1.png)
 
 Copilot suggests potential questions to get you started, such as "/fix the problems in my code". You can select any of these suggestions, or use the chat input field to type your own chat prompt
 
-![Screenshot showing the Chat view in Visual Studio Code.](../media/chat-view-2.png)
+![Screenshot showing the Chat view responding to a question in Visual Studio Code.](../media/chat-view-2.png)
 
 Copilot Chat can provide rich and interactive results that contain the following elements:
 
@@ -71,7 +71,7 @@ Copilot Chat can provide rich and interactive results that contain the following
 
 The following example shows a chat prompt that's used to create an Express app. Copilot Chat returns a tree view with a suggested workspace structure and a button to create a new workspace.
 
-![Screenshot showing the Chat view in Visual Studio Code.](../media/chat-view-3.png)
+![Screenshot showing the Chat view with the "Create Workspace" button displayed.](../media/chat-view-3.png)
 
 As you continue asking questions, Copilot maintains the history of your conversation, and provides related follow-up questions or commands in its response too.
 
@@ -85,7 +85,7 @@ Hovering over the code block presents options to Copy and Insert at Cursor (Ctrl
 
 The More Actions (...) button gives options to Insert Into New File and Insert into Terminal (Ctrl+Alt+Enter).
 
-![Screenshot showing the More Actions button in the Chat view.](../media/chat-view-5.png)
+![Screenshot showing the "More Actions" button in the Chat view.](../media/chat-view-5.png)
 
 If Copilot Chat detects that a code block contains a command, you can run it directly in the integrated terminal with Insert into Terminal (Ctrl+Alt+Enter). This option creates or opens the active terminal and inserts the command text, ready for you to run.
 

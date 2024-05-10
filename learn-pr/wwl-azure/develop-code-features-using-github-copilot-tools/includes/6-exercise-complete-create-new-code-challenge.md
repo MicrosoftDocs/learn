@@ -34,7 +34,7 @@ Here are the requirements and criteria details for this portion of the challenge
 
 1. The "after" sample output is provided in the task steps below. Try to match the "after" output format as closely as possible.
 
-    > [!HINT]
+    > [!NOTE]
     > Extended ASCII characters can be used to create borders lines for your table.
 
 Use the following steps to complete this challenge:
