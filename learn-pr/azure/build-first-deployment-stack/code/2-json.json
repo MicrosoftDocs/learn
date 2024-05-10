@@ -1,0 +1,56 @@
+{
+  "actionOnUnmanage": {
+    "managementGroups": "detach",
+    "resourceGroups": "detach",
+    "resources": "detach"
+  },
+  "debugSetting": null,
+  "deletedResources": [],
+  "denySettings": {
+    "applyToChildScopes": false,
+    "excludedActions": null,
+    "excludedPrincipals": null,
+    "mode": "none"
+  },
+  "deploymentId": "/subscriptions/.../deployments/stack-deposits-24051017g2k8i",
+  "deploymentScope": null,
+  "description": null,
+  "detachedResources": [],
+  "duration": "PT43.5601118S",
+  "error": null,
+  "failedResources": [],
+  "id": "/subscriptions/.../deploymentStacks/stack-deposits",
+  "location": null,
+  "name": "stack-deposits",
+  "outputs": null,
+  "parameters": {},
+  "parametersLink": null,
+  "provisioningState": "succeeded",
+  "resourceGroup": "rg-depositsApplication",
+  "resources": [
+    {
+      "denyStatus": "none",
+      "id": "/subscriptions/.../serverfarms/plan-deposits",
+      "resourceGroup": "rg-depositsApplication",
+      "status": "managed"
+    },
+    {
+      "denyStatus": "none",
+      "id": "/subscriptions/.../sites/webapp-brpdm7iotbwjm",
+      "resourceGroup": "rg-depositsApplication",
+      "status": "managed"
+    }
+  ],
+  "systemData": {
+    "createdAt": "2024-05-10T17:53:08.093925+00:00",
+    "createdBy": "depositsapplication@contoso.com",
+    "createdByType": "User",
+    "lastModifiedAt": "2024-05-10T17:54:55.377228+00:00",
+    "lastModifiedBy": "depositsapplication@contoso.com",
+    "lastModifiedByType": "User"
+  },
+  "tags": {},
+  "template": null,
+  "templateLink": null,
+  "type": "Microsoft.Resources/deploymentStacks"
+}

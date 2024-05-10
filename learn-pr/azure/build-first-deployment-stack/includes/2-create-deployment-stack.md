@@ -49,6 +49,9 @@ resource webApplication 'Microsoft.Web/sites@2021-01-15' = {
 }
 ```
 
+> [!NOTE]
+> You may notice the `${uniqueString(resourceGroup().id)}' syntax on the 'webApplicationName' parameter. The uniqueString function creates a string based on the id of the resource group and adds it as a suffix to 'webapp-deposits'. Many Azure services require unique names. This function helps generate a unique name.
+
 ## Creating a deployment stack
 
 Creating and deploying a deployment stack and its resources is nearly identical to a standard Azure deployment. Whether you are using AZ CLI, Azure PowerShell, or an infrastructure as code pipeline, the process feels the same. For example:
@@ -56,16 +59,21 @@ Creating and deploying a deployment stack and its resources is nearly identical 
 The AZ CLI command to deploy a bicep file to a resource group is:
 
 ```azurecli
-az deployment group create -n myResourceGroup -f main.bicep
+az deployment group create \
+    --resource-group rg-depositsApplication \
+    --template-file ./main.bicep
 ```
 
 The AZ CLI command to create a deployment stack at the resource group scope is:
 
 ```azurecli
-az stack group create -n myDeploymentStack -g myResourceGroup -f main.bicep
+az stack group create \
+    --name stack-deposits \
+    --resource-group rg-depositsApplication \
+    --template-file ./main.bicep
 ```
 
-Notice that the only change in the command are the words 'deployment' and 'stack'. The same is true for deployments to subscriptions and management groups. In later modules, we will explore how to manage resources in a deployment stack and how to configure deny settings.
+Notice that the only change in the command are the words 'deployment' and 'stack', and there is a small difference in the parameters used. The same is true for deployments to subscriptions and management groups. In later modules, we will explore how to manage resources in a deployment stack and how to configure deny settings.
 
 Lets take a look at creating a deployment stack at the resource group scope.
 
@@ -136,14 +144,14 @@ The results include the properties of the deployment stack as well as the status
     "excludedPrincipals": null,
     "mode": "none"
   },
-  "deploymentId": "/subscriptions/991ab2d9-e387-49a4-9cb5-a2f3127f3bb0/resourceGroups/rg-depositsApplication/providers/Microsoft.Resources/deployments/stack-deposits-24051017g2k8i",
+  "deploymentId": "/subscriptions/.../deployments/stack-deposits-24051017g2k8i",
   "deploymentScope": null,
   "description": null,
   "detachedResources": [],
   "duration": "PT43.5601118S",
   "error": null,
   "failedResources": [],
-  "id": "/subscriptions/991ab2d9-e387-49a4-9cb5-a2f3127f3bb0/resourceGroups/rg-depositsApplication/providers/Microsoft.Resources/deploymentStacks/stack-deposits",
+  "id": "/subscriptions/.../deploymentStacks/stack-deposits",
   "location": null,
   "name": "stack-deposits",
   "outputs": null,
@@ -154,23 +162,23 @@ The results include the properties of the deployment stack as well as the status
   "resources": [
     {
       "denyStatus": "none",
-      "id": "/subscriptions/991ab2d9-e387-49a4-9cb5-a2f3127f3bb0/resourceGroups/rg-depositsApplication/providers/Microsoft.Web/serverfarms/plan-deposits",
+      "id": "/subscriptions/.../serverfarms/plan-deposits",
       "resourceGroup": "rg-depositsApplication",
       "status": "managed"
     },
     {
       "denyStatus": "none",
-      "id": "/subscriptions/991ab2d9-e387-49a4-9cb5-a2f3127f3bb0/resourceGroups/rg-depositsApplication/providers/Microsoft.Web/sites/webapp-brpdm7iotbwjm",
+      "id": "/subscriptions/.../sites/webapp-brpdm7iotbwjm",
       "resourceGroup": "rg-depositsApplication",
       "status": "managed"
     }
   ],
   "systemData": {
     "createdAt": "2024-05-10T17:53:08.093925+00:00",
-    "createdBy": "jowaddel@microsoft.com",
+    "createdBy": "depositsapplication@contoso.com",
     "createdByType": "User",
     "lastModifiedAt": "2024-05-10T17:54:55.377228+00:00",
-    "lastModifiedBy": "jowaddel@microsoft.com",
+    "lastModifiedBy": "depositsapplication@contoso.com",
     "lastModifiedByType": "User"
   },
   "tags": {},
@@ -179,6 +187,8 @@ The results include the properties of the deployment stack as well as the status
   "type": "Microsoft.Resources/deploymentStacks"
 }
 ```
+
+Take notice of the resources section of the output. For each resource, it shows its status as "managed", its resource group, its resource id, and its deny settings.
 
 ::: zone-end
 
@@ -206,6 +216,8 @@ DeploymentId                : /subscriptions/.../deployments/stack-deposits-2405
 Resources                   : /subscriptions/.../serverfarms/plan-deposits
                               /subscriptions/.../sites/webapp-brpdm7iotbwjm
 ```
+
+Take notice of the resources section of the output. This defines the resources that are managed by the deployment stack. You see the full resource ID of each resource.
 
 ::: zone-end
 
