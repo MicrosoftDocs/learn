@@ -44,4 +44,4 @@ Capabilities:
 - Cloud policy + governance
 - Intersecting disciplines
 
-For more information, see <a target="_blank" href="https://www.finops.org/framework/domains/">FinOps Domains</a> and <a target="_blank" href="https://www.finops.org/framework/capabilities/">FinOps Capabilities</a> by the <a target="_blank" href="https://www.finops.org/">FinOps Foundation</a>.
+For more information, see [FinOps Domains](https://www.finops.org/framework/domains/) and [FinOps Capabilities](https://www.finops.org/framework/capabilities/) by the [FinOps Foundation](https://www.finops.org/).

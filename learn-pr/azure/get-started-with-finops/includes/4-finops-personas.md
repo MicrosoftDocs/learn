@@ -21,4 +21,4 @@ To successfully adopt FinOps, you need to partner with different stakeholders in
 | Security | IT Security collaborates with FinOps Practitioners to leverage their FinOps expertise and insights to optimize cloud security spending, improve IT Security financial governance, and strengthen the organization's overall cloud security posture. |
 | ITFM / TBM | IT Financial Management (ITFM) and Technology Business Management (TBM) are responsible for collaborating with FinOps Practitioners to provide transparency into IT spending, enable informed decision-making, ensuring cloud and traditional IT investments are aligned with business priorities, cost-effective, and deliver measurable value to the organization. |
 
-For more information, see the <a target="_blank" href="https://www.finops.org/framework/personas/">FinOps Personas</a> by the <a target="_blank" href="https://www.finops.org/">FinOps Foundation</a>.
+For more information, see the [FinOps Personas](https://www.finops.org/framework/personas/) by the [FinOps Foundation](https://www.finops.org/).

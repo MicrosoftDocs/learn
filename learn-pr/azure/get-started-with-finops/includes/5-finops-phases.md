@@ -20,4 +20,4 @@ In the _Optimize_ phase, FinOps activities involve identifying opportunities to 
 
 In the _Operate_ phase, FinOps activities involve implementing organizational changes to operationalize FinOps using the data and capabilities developed in the Inform and Optimize phase. This includes establishing cloud governance policies, compliance monitoring, and empowering individuals through the development of training programs, team guidelines, and automation policies that are aligned with organizational objectives.
 
-For more information, see the <a target="_blank" href="https://www.finops.org/framework/phases/">FinOps Phases</a> by the <a target="_blank" href="https://www.finops.org/">FinOps Foundation</a>.
+For more information, see the [FinOps Phases](https://www.finops.org/framework/phases/) by the [FinOps Foundation](https://www.finops.org/).

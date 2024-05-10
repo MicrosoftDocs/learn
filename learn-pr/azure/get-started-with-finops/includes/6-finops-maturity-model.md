@@ -34,4 +34,4 @@ The FinOps Maturity Model offers organizations a roadmap to progress from basic 
 
 [![Diagram showing the Finops Maturity Model.](../media/6-finops-maturity-model-small.png)](../media/6-finops-maturity-model.png#lightbox)
 
-For more information, see the <a target="_blank" href="https://www.finops.org/framework/">FinOps Framework</a> by the <a target="_blank" href="https://www.finops.org/">FinOps Foundation</a>.
+For more information, see the [FinOps Framework](https://www.finops.org/framework/) by the [FinOps Foundation](https://www.finops.org/).

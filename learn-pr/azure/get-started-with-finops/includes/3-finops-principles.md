@@ -45,6 +45,4 @@ The FinOps framework includes six principles that act as north star objectives o
 - Agile iterative planning is preferred over static long-term plans.
 - Embrace proactive system design with continuous adjustments in cloud optimization over infrequent reactive cleanups.
 
-----------
-
-_For more information, see the <a target="_blank" href="https://www.finops.org/framework/principles/">FinOps Principles</a> by the <a target="_blank" href="https://www.finops.org/">FinOps Foundation</a>._
+_For more information, see the [FinOps Principles](https://www.finops.org/framework/principles/) by the [FinOps Foundation](https://www.finops.org/)._

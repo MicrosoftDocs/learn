@@ -25,4 +25,4 @@ The primary components of the framework are:
 - Domains
 - Capabilities
 
-For more information, see the <a target="_blank" href="https://www.finops.org/framework/">FinOps Framework</a> by the <a target="_blank" href="https://www.finops.org/">FinOps Foundation</a>.
+For more information, see the [FinOps Framework](https://www.finops.org/framework/) by the [FinOps Foundation](https://www.finops.org/).
