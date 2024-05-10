@@ -38348,6 +38348,16 @@
       "source_path": "learn-pr/paths/get-started-github-and-visual-studio-code/index.yml",
       "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
       "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/understand-write-ahead-logging/2-describe.md",
+      "redirect_url": "/training/modules/understand-write-ahead-logging/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-write-ahead-logging/3-describe-replication-logical-decode.md",
+      "redirect_url": "/training/modules/understand-write-ahead-logging/",
+      "redirect_document_id": false
     }
   ]
 }
