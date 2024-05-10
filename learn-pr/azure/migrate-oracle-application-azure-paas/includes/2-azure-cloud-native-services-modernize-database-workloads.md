@@ -32,7 +32,7 @@ When considering a PaaS database solution for an Oracle database migration, you 
 
 - [Azure Database for PostgreSQL](/azure/postgresql/flexible-server/overview) is a fully managed service based on the open-source PostgreSQL database system. Some similarities in query language functionality make it an attractive migration target for Oracle databases.
 
-- [Azure SQL](/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview) is a family of database services, and its two prominent options are [Azure SQL Database](/azure/azure-sql/database/sql-database-paas-overview) and [Azure SQL Managed Instance](/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview). Both options are based on the SQL Server engine; SQL Database is optimized for cloud-native applications, and SQL Managed Instance has superior compatibility with existing SQL Server databases. Generally, SQL Managed Instance is favored over SQL Database for the type of migration you're considering.
+- [Azure SQL](/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview) is a family of database services, and its two prominent options are [Azure SQL Database](/azure/azure-sql/database/sql-database-paas-overview) and [Azure SQL Managed Instance](/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview). Both options are based on the SQL Server engine; SQL Database is optimized for cloud-native applications, and SQL Managed Instance has superior compatibility with existing SQL Server databases. Given that your team has strong capabilities in T-SQL, you are favoring Azure SQL Managed Instance for the migration you're considering.
 
 The following diagram shows the process to convert and migrate an Oracle database to either option.
 

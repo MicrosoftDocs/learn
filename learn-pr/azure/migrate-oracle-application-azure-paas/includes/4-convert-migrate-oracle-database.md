@@ -6,7 +6,7 @@ Before starting the process of converting and migrating your database, you creat
 
 - [Create a resource group.](/azure/azure-resource-manager/management/manage-resource-groups-portal) Azure resource groups are region-specific containers for storing and organizing resources. Before creating your Azure SQL managed instance, the application VMs, or other assets, you create a resource group where they will live.
 
-- [Create your Azure SQL managed instance.](/azure/azure-sql/managed-instance/instance-create-quickstart) To select the appropriate initial scale and capacity of the instance, you use the resource usage data from the Oracle AWR data you generated during the assessment phase.
+- [Create your Azure SQL managed instance.](/azure/azure-sql/managed-instance/instance-create-quickstart) To select the appropriate initial scale and capacity of the instance, you use the resource usage data from SSMA assessment report or the Oracle AWR data you generated during the assessment phase.
 
 Now that your SQL managed instance is in place, you can create the blank target databases to migrate to.
 
