@@ -9,7 +9,7 @@ In this section, you'll assess your on-premises environment, identify the necess
 
 Optimizing your cloud usage, or _[rightsizing](https://azure.microsoft.com/blog/rightsize-to-maximize-your-cloud-investment-with-microsoft-azure/)_ your server capacity, is essential to your migration's success, from a cost and management perspective. You need to analyze both your database and application layers to determine the number and size of Azure resources you'll need to create when migrating. 
 
-Your databases may be running on a mix of bare-metal VMs, Oracle dedicated Real Application Cluster (RAC) hardware, and RAC running on third-party hardware. Your applications are running on dedicated on-premises VM servers. You need to use different processes and approaches to properly understand how you'll migrate both parts of the workloads. 
+Your databases may be running on a mix of bare-metal VMs, Oracle dedicated Real Application Cluster (RAC) software, and RAC running on third-party hardware. Your applications are running on dedicated on-premises VM servers. You need to use different processes and approaches to properly understand how you'll migrate both parts of the workloads. 
 
 Find design principles and guidance for this type of rehosting migration in the Azure documentation covering the [Oracle on Azure Virtual Machines landing zone accelerator](/azure/cloud-adoption-framework/scenarios/oracle-iaas/introduction-oracle-landing-zone). The guidance includes networking, security, business continuity and disaster recovery, and resource management recommendations. You'll use this guidance as a baseline to help ensure the success of your organization's Oracle database migration.
 

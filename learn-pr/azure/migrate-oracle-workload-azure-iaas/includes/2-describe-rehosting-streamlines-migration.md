@@ -21,7 +21,7 @@ Typically, rehosting makes sense when you want to:
 - Move to the cloud as quickly as possible.
 - Minimize any custom development or application refactoring related to migration.
 - Continue to maintain control of the servers running your workloads.
-- Optimize your total cost of ownership (TCO). 
+- Rightsize your workloads and CPUs to utilize the optimal number of compute resources and Oracle licenses.
 
 [Your choice of a migration approach](/azure/cloud-adoption-framework/adopt/migrate-or-modernize) depends on your workload requirements, along with your team's business needs, budget, and technical skills. To explore alternative approaches for migrating Oracle workloads, review [Migrate an Oracle workload to Oracle Database@Azure](/training/modules/migrate-oracle-workload-azure-odaa) and [Migrate Oracle-powered applications by using Azure PaaS database services](/training/modules/migrate-oracle-application-azure-paas). 
 
