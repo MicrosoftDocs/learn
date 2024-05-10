@@ -9,7 +9,7 @@ The Azure portal has many pages for settings and monitoring allowing you to asse
 
 These pages are typically the most straightforward and informative method to view metadata for the most commonly required metrics. Many metrics can also be displayed in a graph to give a visual representation of changes over time.
 
-[![Screenshot of PostgreSQL storage metrics.](../media/3-metrics.png)](../media/3-metrics.png#lightbox)
+[![Screenshot of Azure Database for PostgreSQL storage metrics.](../media/3-metrics.png)](../media/3-metrics.png#lightbox)
 
 ## Investigate metadata using system tables and system views
 
