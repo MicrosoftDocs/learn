@@ -9,16 +9,16 @@ You can use Copilot Chat to generate explanations in a variety of situations. Fo
 
 Copilot Chat also provides interface options when asking for explanations:
 
-- Chat view and Quick Chat: You can use a combination `@workspace`, `/explain`, and `#file` in the Chat view or Quick Chat window to generate an explanation your project or specific project files.
-- Smart actions: You can use the `Explain This` smart action explain the purpose of selected code lines.
-- Inline chat: You can use the inline chat to explain selected code sections, coding errors, or how to add functionality to your project.
+- **Chat view and Quick Chat**: You can use a combination `@workspace`, `/explain`, and `#file` in the Chat view or Quick Chat window to generate an explanation your project or specific project files.
+- **Smart actions**: You can use the `Explain This` smart action explain the purpose of selected code lines.
+- **Inline chat**: You can use the inline chat to explain selected code sections, coding errors, or how to add functionality to your project.
 
 ### Prepare sample apps in your Visual Studio Code environment
 
 This module includes practice activities that use GitHub Copilot Chat and prepared code samples. The activities are designed for an environment that includes the following resources:
 
 - Visual Studio Code.
-- The C# Dev Kit extension for Visual Studio Code
+- The C# Dev Kit extension for Visual Studio Code.
 - The GitHub Copilot and GitHub Copilot Chat extensions for Visual Studio Code. A GitHub account with an active subscription for GitHub Copilot is required.
 - Sample code projects created using C#.
 
@@ -154,7 +154,7 @@ In this section of the exercise, you use the **Explain This** smart action to ge
 
 1. Take a minute to review the response in the Chat view.
 
-    ![Screenshot showing the Explain This smart action in the editor.](../media/explain-inline-chat-explain-this.png)
+    ![Screenshot showing the Chat view explaining code that's selected in the editor.](../media/explain-inline-chat-explain-this.png)
 
 1. Notice that the response includes a detailed explanation of the selected code lines.
 
@@ -186,7 +186,7 @@ Managing errors is an essential aspect of software development. Some errors are 
 
 1. Take a minute to review the response in the Chat view.
 
-    ![Screenshot showing the Explain This smart action in the editor.](../media/explain-inline-chat-explain-error.png)
+    ![Screenshot showing the Chat view explaining a coding error.](../media/explain-inline-chat-explain-error.png)
 
     Notice that the response includes information about the error and suggestions for fixing it. In this case, GitHub Copilot Chat explains that the `Task.WhenAll(downloadTasks)` line is causing an error because it's missing the `await` keyword. The response also provides a code snippet that shows how to fix the error by adding the `await` keyword before the `Task.WhenAll(downloadTasks)` line.
 
@@ -240,7 +240,7 @@ The APL2007M2Sample1 project is used to download web pages and calculate the tot
 
 1. Take a minute to review the inline response.
 
-    ![Screenshot showing the code that handles exceptions thrown during the download process.](../media/explain-inline-chat-how-to-handle-exceptions.png)
+    ![Screenshot showing the code that handles exceptions thrown during the download process.](../media/explain-inline-chat-how-handle-exceptions.png)
 
 1. To accept the proposed error handling code, select **Accept**.
 

@@ -4,11 +4,11 @@ Project documentation is essential for reporting, sharing information with stake
 
 Project documentation often includes the following sections:
 
-- Project Overview: A high-level summary of the project, its purpose, and its goals.
-- Project Requirements: A list of the project's requirements, including functional and nonfunctional requirements.
-- Project Constraints: Any constraints that affect the project, such as time, budget, or technical constraints.
-- Project Dependencies: A list of the project's dependencies, including libraries, frameworks, and other components that the project relies on.
-- Project Summary: A brief summary of the project, its purpose, and its goals.
+- **Project Overview**: A high-level summary of the project, its purpose, and its goals.
+- **Project Requirements**: A list of the project's requirements, including functional and nonfunctional requirements.
+- **Project Constraints**: Any constraints that affect the project, such as time, budget, or technical constraints.
+- **Project Dependencies**: A list of the project's dependencies, including libraries, frameworks, and other components that the project relies on.
+- **Project Summary**: A brief summary of the project, its purpose, and its goals.
 
 In this exercise, you'll use GitHub Copilot Chat to generate project documentation for the `APL2007M2Sample1` project.
 

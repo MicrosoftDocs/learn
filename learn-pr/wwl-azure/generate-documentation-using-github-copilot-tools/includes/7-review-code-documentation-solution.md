@@ -299,11 +299,11 @@ To generate the README file contents for the APL2007M2Sample2 project repository
 
 1. Open the Chat view.
 
-1. To generate the readme file contents, enter the following prompt: `@workspace generate a readme document that can be used as a repo description. Include a project title and the following sections: Description, Setup instructions, Usage, Contributor guidelines, License`
+1. To generate the readme file contents, enter the following prompt: `@workspace generate a readme document that can be used as a repo description. Include a project title and the following sections: Description, Setup instructions, Usage, Contributor guidelines, License`.
 
-1. To format the documentation as markdown, enter the following prompt: `format the documentation as markdown and show the raw markdown file contents`
+1. To format the documentation as markdown, enter the following prompt: `format the documentation as markdown and show the raw markdown file contents`.
 
-1. Copy the markdown content to a file location
+1. Copy the markdown content to a file location.
 
 Here is the project documentation in markdown format:
 

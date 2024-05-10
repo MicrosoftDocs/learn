@@ -52,7 +52,7 @@ Documentation is typically used for the following purposes:
 
 GitHub Copilot Chat can help you document your code by generating inline code comments. To generate inline documentation, you have the following options:
 
-- construct a natural language prompt to generate the desired documentation.
+- Construct a natural language prompt to generate the desired documentation.
 - Enter the `/doc` command in the inline chat to generate comments that describe the selected code.
 - Use the `Generate Docs` smart action to generate comments that describe the selected code.
 
