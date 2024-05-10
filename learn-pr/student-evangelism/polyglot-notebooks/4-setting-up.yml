@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-polyglot-notebooks.setting-up
+title: Exercise – Setting up your environment
+metadata:
+  title: Exercise – Setting up your environment
+  description: In this exercise, you learn how to set up your environment for Polyglot Notebook.
+  ms.date: 04/03/2024
+  author: japhletnwamu
+  ms.author: japhletnwamu
+  ms.topic: unit
+  ms.custom: team=cloud_advocates
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-setting-up.md)]

@@ -12,7 +12,7 @@ Without Microsoft Purview Audit, managing and analyzing extensive audit data wou
 
 Implementing Microsoft Purview Audit boosts your security and compliance efforts, reduces the risk of data breaches, and supports thorough investigations, ensuring the integrity of your organization and the security of data.
 
-## References
+## Resources
 
 - [Learn about auditing solutions in Microsoft Purview](/purview/audit-solutions-overview?azure-portal=true)
 - [Get started with auditing solutions](/purview/audit-get-started?azure-portal=true)
