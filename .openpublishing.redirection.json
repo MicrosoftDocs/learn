@@ -7911,6 +7911,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/achievements/learn.accessibility-fundamentals.trophy.yml",
+      "redirect_url": "learn-pr/achievements/learn.accessibility-fundamental.trophy.yml",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/explore-data-science-tools-in-azure/index.md",
       "redirect_url": "/training/modules/get-started-ai-fundamentals",
       "redirect_document_id": false
