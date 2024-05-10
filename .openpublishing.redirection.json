@@ -38358,6 +38358,26 @@
       "source_path": "learn-pr/wwl-azure/understand-write-ahead-logging/3-describe-replication-logical-decode.md",
       "redirect_url": "/training/modules/understand-write-ahead-logging/",
       "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/procedures-functions-postgresql/2-create-stored-procedure-azure-database-for-postgresql.md",
+      "redirect_url": "/training/modules/procedures-functions-postgresql/2-create-stored-procedure-azure-database-postgresql",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/procedures-functions-postgresql/3-call-stored-procedure-azure-database-for-postgresql.md",
+      "redirect_url": "/training/modules/procedures-functions-postgresql/3-call-stored-procedure-azure-database-postgresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/procedures-functions-postgresql/4-create-use-function-azure-database-for-postgresql.md",
+      "redirect_url": "/training/modules/procedures-functions-postgresql/4-create-function-azure-database-postgresql.md",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/procedures-functions-postgresql/5-exercise-create-stored-procedure-azure-database-for-postgresql.md",
+      "redirect_url": "/training/modules/procedures-functions-postgresql/",
+      "redirect_document_id": false
     }
   ]
 }
