@@ -7,7 +7,7 @@ There are several reasons why your CodeQL analysis might take too long to comple
 - If you use self-hosted runners for CodeQL analysis, you can increase the memory or the number of cores.
 - Problems can occur when a repository contains multiple languages. You can modify your workflow to use a matrix that speeds up the analysis of multiple languages. The analysis of each language runs in parallel with the default CodeQL analysis workflow. You might need to configure advanced workflows similarly if they're set up to run language initialization and analysis sequentially.
 - The amount of code that you're analyzing might cause long runtimes. Analysis time is typically proportional to the amount of code that's being analyzed. You can reduce the size of the code by excluding test code or breaking the code into multiple workflows to analyze only a subset with each scan.
-- You might want to trigger analysis on the `schedule` event only if your analysis is too slow while running during `push` or `pull_request` events.
+- You might want to trigger analysis on the `schedule` event only if your analysis is too slow during `push` or `pull_request` events.
 
 ### Optimizing CodeQL queries
 
@@ -64,7 +64,7 @@ on:
 
 ### Error: "SARIF Upload Rejected Because of Default Setup"
 
-You get an error if a process tries to upload a SARIF file that contains results of CodeQL analysis to a repository where CodeQL default setup is enabled. This issue includes uploads through the REST API and the CodeQL CLI. SARIF uploads are blocked when CodeQL default setup is enabled to reduce the potential for users to be confused when multiple systems generate similar code-scanning alerts.
+You get an error if a process tries to upload a SARIF file that contains results of CodeQL analysis to a repository where CodeQL default setup is enabled. This issue includes uploads through the REST API and the CodeQL CLI. SARIF uploads are blocked when CodeQL default setup is enabled, to reduce the potential for user confusion when multiple systems generate similar code-scanning alerts.
 
 This error occurs only for SARIF files that contain results that you create by using CodeQL. To fix this error, disable CodeQL in the repository and then retry uploading the SARIF file.
 

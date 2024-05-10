@@ -31,7 +31,7 @@ quiz:
       explanation: "Correct. The CodeQL CLI includes this command to create and analyze CodeQL databases from the command line."
     - content: "`codeql [subcommand] [command]`"
       isCorrect: false
-      explanation: "Incorrect. [subcommand] doesn't come before [command] to create and analyze a CodeQL database from the CLI."
+      explanation: "Incorrect. `[subcommand]` doesn't come before `[command]` to create and analyze a CodeQL database from the CLI."
     - content: "`[command] [subcommand] codeql`"
       isCorrect: false
       explanation: "Incorrect. `codeql` needs to appear at the beginning of the command."
@@ -39,29 +39,29 @@ quiz:
     choices:
     - content: "A hierarchical representation of the code."
       isCorrect: false
-      explanation: "Incorrect. The database contains a full, hierarchical representation of the code. The representation includes the abstract syntax tree, the data flow graph, and the control flow graph."
+      explanation: "Incorrect. The database contains a full, hierarchical representation of the code. The representation includes the abstract syntax tree, the data-flow graph, and the control-flow graph."
     - content: "A representation of the abstract syntax tree."
       isCorrect: false
-      explanation: "Incorrect. The database contains a full, hierarchical representation of the code. The representation includes the abstract syntax tree, the data flow graph, and the control flow graph."
+      explanation: "Incorrect. The database contains a full, hierarchical representation of the code. The representation includes the abstract syntax tree, the data-flow graph, and the control-flow graph."
     - content: "A tool that produces the relational data."
       isCorrect: true
       explanation: "Correct. An extractor is a tool that produces the relational data and source reference for each input file, from which a CodeQL database can be built."
   - content: "The CLI's built-in search operations do which of the following?"
     choices:
-    - content: "Automatically look in parent directories for the files used in database creation and analysis."
+    - content: "They automatically look in parent directories for the files used in database creation and analysis."
       isCorrect: false
       explanation: "Incorrect. The operations search siblings, not the parent directories."
-    - content: "When manually prompted, they look in sibling directories for the files used in database creation and analysis."
+    - content: "When they're manually prompted, they look in sibling directories for the files used in database creation and analysis."
       isCorrect: false
       explanation: "Incorrect. A manual prompt doesn't occur, because this action is automatic."
-    - content: "Automatically look in all the sibling directories for the files used in database creation and analysis."
+    - content: "They automatically look in all the sibling directories for the files used in database creation and analysis."
       isCorrect: true
       explanation: "Correct. The CLI's built-in search operations automatically look in all the sibling directories for the files used in database creation and analysis."
   - content: "By default, which severity level causes a pull-request check failure during code scanning?"
     choices:
     - content: "`Error`"
       isCorrect: true
-      explanation: "Correct. By default, only alerts with the severity level of `Error` or a security severity level of `Critical` or `High` causes a pull-request check failure. A check still succeeds with alerts of lower severities."
+      explanation: "Correct. By default, only alerts that have a severity level of `Error` or a security severity level of `Critical` or `High` cause a pull-request check failure. A check still succeeds with alerts of lower severities."
     - content: "`Warning`"
       isCorrect: false
       explanation: "Incorrect. `Warning` is a setting, not a severity level."
