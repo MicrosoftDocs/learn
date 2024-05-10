@@ -18,13 +18,13 @@ quiz:
   questions:
   - content: "You want to assign a coadministrator for your Azure Database for PostgreSQL flexible server, so that someone else has access if you aren't available. You would like them to be able to do anything and everything on the server. What role should be assigned to the user account?"
     choices:
-    - content: "**azuresu**"
+    - content: "azuresu"
       isCorrect: false
       explanation: "Incorrect. Azuresu allows the user super user permissions on the server, but isn't available to administrator accounts that you can create."
-    - content: "**pg_read_all_settings**"
+    - content: "pg_read_all_settings"
       isCorrect: false
       explanation: "Incorrect. pg_read_all_settings doesn't allow the user full admin permissions on the server."
-    - content: "**azure_pg_admin**"
+    - content: "azure_pg_admin"
       isCorrect: true
       explanation: "Correct. pg_admin allows the user full admin permissions on the server, and is available to assign to another administrator."
   - content: "Your company is required to encrypt sensitive data stored on disk. As the result of an internal audit, you realize that sensitive data is being held on your Azure for PostgreSQL flexible server. What should you do?"
