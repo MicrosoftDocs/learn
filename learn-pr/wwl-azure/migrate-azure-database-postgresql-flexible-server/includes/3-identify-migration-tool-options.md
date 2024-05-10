@@ -12,11 +12,11 @@ This feature is designed with external PostgreSQL instances as the source and th
 
 Once we have connectivity sorted, then all we need to do is select the database or databases that we want to migrate to the new server. In the following screenshot, notice that if there are multiple databases that back several services that form part of a larger system then we can select to migrate them as a group rather than one at a time. This database grouping can really help not only speed up migrations but also to maintain logical consistency during migration activities.
 
-[![Screenshot of Azure portal showing the migration project database selection.](../media/3-pgflex-migration-project-select-database.png)](../media/3-pgflex-migration-project-select-database.png#lightbox)
+:::image type="content" source="../media/3-pgflex-migration-project-select-database.png" alt-text="Screenshot of Azure portal showing the migration project database selection.":::
 
 When we start the validate and migration process, then we can review the overall progress of the process using the project dashboard. This dashboard shows us as the databases are validated and then as they're migrated to the new server.
 
-[![Screenshot of Azure portal showing the migration project database validation and migration status.](../media/3-pgflex-migration-project-start.png)](../media/3-pgflex-migration-project-start.png#lightbox)
+:::image type="content" source="../media/3-pgflex-migration-project-start.png" alt-text="Screenshot of Azure portal showing the migration project database validation and migration status.":::
 
 This information will be retained after the migration, allowing us to track overall progress. The information also provides any evidence needed to change control processes about the success and duration of any work that is undertaken.
 
@@ -49,7 +49,7 @@ These options are just some of the ways in which pgcopydb can help us improve th
 
 [pgAdmin](https://www.pgadmin.org/) is a widely used management tool that can be used to interact with PostgreSQL databases. This tool allows for the creation and execution of pgsql scripts. The tool contains an array of useful GUI tools that can be used to configure, backup, and restore PostgreSQL databases. Typically, install pgAdmin on administrative workstations. This tool makes it possible to register and connect to multiple PostgreSQL servers, making it a key part of our migration tool set.
 
-[![Screenshot of pgAdmin with menus showing various admin options.](../media/3-migrationtools-pgadmin.png)](../media/3-migrationtools-pgadmin.png#lightbox)
+:::image type="content" source="../media/3-migration-tools-pgadmin.png" alt-text="Screenshot of pgAdmin with menus showing various admin options.":::
 
 ### pg_dump, pg_restore, and psql
 
