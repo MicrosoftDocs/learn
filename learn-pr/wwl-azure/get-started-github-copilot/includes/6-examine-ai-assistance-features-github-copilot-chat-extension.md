@@ -54,10 +54,10 @@ Copilot Chat can also help you write test cases for edge cases and boundary cond
 
 Copilot Chat can also suggest potential improvements to selected code. For example, Copilot Chat can suggest improvements for the following broad categories:
 
-- Code quality: Copilot Chat can suggest ways to improve the readability, maintainability, and performance of your code. This can include suggestions for refactoring, code simplification, and modularity.
-- Code reliability: Copilot Chat can suggest ways to make your code more robust and reliable. This can include suggestions for error handling, input validation, and defensive programming.
-- Code performance: Copilot Chat can suggest ways to optimize the performance of your code. This can include suggestions for algorithmic improvements, data structure optimizations, and parallelization.
-- Code security: Copilot Chat can suggest ways to make your code more secure. This can include suggestions for input sanitization, access control, and encryption.
+- **Code quality**: Copilot Chat can suggest ways to improve the readability, maintainability, and performance of your code. This can include suggestions for refactoring, code simplification, and modularity.
+- **Code reliability**: Copilot Chat can suggest ways to make your code more robust and reliable. This can include suggestions for error handling, input validation, and defensive programming.
+- **Code performance**: Copilot Chat can suggest ways to optimize the performance of your code. This can include suggestions for algorithmic improvements, data structure optimizations, and parallelization.
+- **Code security**: Copilot Chat can suggest ways to make your code more secure. This can include suggestions for input sanitization, access control, and encryption.
 
  By suggesting improvements, Copilot Chat may help you to write better code that is more readable, reliable, performant, and secure.
 
@@ -197,10 +197,10 @@ Some tasks are so common that they can be automated. GitHub Copilot Chat include
 
 The following smart actions are available:
 
-- Explain This: The `Explain This` action generates a natural language description of the selected code. This can be useful for understanding the purpose and functionality of a code snippet. The `Explain This` action is especially useful if you're working with unfamiliar code or need to explain the code to others.
-- Fix This: The `Fix This` action suggests a fix for the selected code. This can be helpful if you encounter an error or issue in your code and need guidance on how to resolve it. Copilot Chat can suggest changes to variables, control structures, or function calls that might resolve the issue.
-- Generate Docs: The `Generate Docs` action creates documentation for the selected code. This can be useful for documenting your codebase, especially if you're working on a project with multiple contributors or need to share your code with others.
-- Generate Tests: The `Generate Tests` action creates unit tests for the selected code. This can be helpful for ensuring the correctness and reliability of your code, especially if you're working on a project with complex logic or critical functionality.
+- **Explain This**: The `Explain This` action generates a natural language description of the selected code. This can be useful for understanding the purpose and functionality of a code snippet. The `Explain This` action is especially useful if you're working with unfamiliar code or need to explain the code to others.
+- **Fix This**: The `Fix This` action suggests a fix for the selected code. This can be helpful if you encounter an error or issue in your code and need guidance on how to resolve it. Copilot Chat can suggest changes to variables, control structures, or function calls that might resolve the issue.
+- **Generate Docs**: The `Generate Docs` action creates documentation for the selected code. This can be useful for documenting your codebase, especially if you're working on a project with multiple contributors or need to share your code with others.
+- **Generate Tests**: The `Generate Tests` action creates unit tests for the selected code. This can be helpful for ensuring the correctness and reliability of your code, especially if you're working on a project with complex logic or critical functionality.
 
 To access the smart actions, right-click on a code snippet in the editor and select the desired action from the Copilot context menu.
 
@@ -227,10 +227,10 @@ Unfortunately, the suggested update, using a HashSet to ensure a collection of u
 Fortunately, you can use the Fix This smart action to resolve this issue. To use the Fix This smart action:
 
 1. Right-click on the code snippet that needs to be fixed. In this case, the code underlined in red.
-1. Select **Fix This** from the Copilot context menu.
-1. Review the suggested fix and select **Accept** to apply the changes.
 
-![Screenshot showing how to access smart actions in Visual Studio Code.](../media/smart-actions-1.png)
+1. Select **Fix This** from the Copilot context menu.
+
+1. Review the suggested fix and select **Accept** to apply the changes.
 
 The Fix This smart action generates a code snippet that resolves the compilation error by creating a new `List<int>` named `numberList` using the `numbers` collection.
 
@@ -281,12 +281,12 @@ Examples of built-in commands:
 
 Examples using Chat participants combined with slash commands:
 
-- `@workspace /explain`: generate an explanation of the full workspace
-- `@workspace /fix` (or `/fix`): propose a fix for the problems in the selected code
-- `@workspace /tests` (or `/tests`): generate unit tests for the selected code
-- `@vscode /api` (or `/api`): ask about VS Code extension development
-- `@workspace /new` (or `/new`): scaffold code for a new workspace
-- `@workspace /newNotebook` (or `/newNotebook`): create a new Jupyter Notebook
+- `@workspace /explain`: generate an explanation of the full workspace.
+- `@workspace /fix` (or `/fix`): propose a fix for the problems in the selected code.
+- `@workspace /tests` (or `/tests`): generate unit tests for the selected code.
+- `@vscode /api` (or `/api`): ask about VS Code extension development.
+- `@workspace /new` (or `/new`): scaffold code for a new workspace.
+- `@workspace /newNotebook` (or `/newNotebook`): create a new Jupyter Notebook.
 
 ### Chat variables
 
@@ -296,11 +296,11 @@ By using a chat variable, you can be more specific about the context that you in
 
 Examples of built-in chat variables are:
 
-- `#selection`: the visible source code in the active editor
+- `#selection`: the visible source code in the active editor.
 - `#editor`: the current selection in the active editor. The editor content is implicitly included in the Chat view context.
 - `#file`: include a specified file in your workspace as context with your chat prompt.
-- `#terminalSelection`: the active terminal's selection
-- `#terminalLastCommand`: the active terminal's last run command
+- `#terminalSelection`: the active terminal's selection.
+- `#terminalLastCommand`: the active terminal's last run command.
 
-> [NOTE!]
+> [!NOTE]
 > If possible, the full contents of the file is included when you use `#file`. If that is too large to fit into the context window, an outline of the file is included that includes functions and their descriptions without implementations. If the outline is also too large, then the file won't be part of the prompt.

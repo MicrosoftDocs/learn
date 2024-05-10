@@ -46,9 +46,9 @@ AI Builder is a feature of Microsoft Power Platform that allows users to add AI 
 
 AI Builder provides the following features:
 
-- Prebuilt AI Models: Includes models for common tasks like prediction, form processing, object detection, and text classification.
-- Custom Models: Allows you to build custom models tailored to your specific business needs using your data.
-- Easy Integration: Seamlessly integrates AI capabilities into apps built with Power Apps, enhancing user experience and efficiency.
+- **Prebuilt AI Models**: Includes models for common tasks like prediction, form processing, object detection, and text classification.
+- **Custom Models**: Allows you to build custom models tailored to your specific business needs using your data.
+- **Easy Integration**: Seamlessly integrates AI capabilities into apps built with Power Apps, enhancing user experience and efficiency.
 
 AI Builder is best suited for users who want to add AI capabilities to their applications without needing to write code or have deep data science expertise. It provides a user-friendly interface for creating and deploying AI models, making it accessible to a wide range of users. Business analysts, developers, and citizen developers can leverage AI Builder to enhance their applications with AI capabilities.
 
@@ -106,9 +106,9 @@ Visual Studio IntelliCode is an extension for Visual Studio that enhances the co
 
 Visual Studio IntelliCode features:
 
-- AI-Powered Code Completions: Offers intelligent suggestions that go beyond simple alphabetical lists, understanding coding patterns and practices.
-- Refactoring Assistance: Recommends where code refactoring could be beneficial and provides assistance in making changes.
-- Code Style Inference: Learns your code style preferences and applies them as you enter code, ensuring consistent code style across your project.
+- **AI-Powered Code Completions**: Offers intelligent suggestions that go beyond simple alphabetical lists, understanding coding patterns and practices.
+- **Refactoring Assistance**: Recommends where code refactoring could be beneficial and provides assistance in making changes.
+- **Code Style Inference**: Learns your code style preferences and applies them as you enter code, ensuring consistent code style across your project.
 
 Visual Studio IntelliCode is intended for:
 
@@ -137,8 +137,8 @@ GitHub provides a suite of AI-assisted programming tools, including GitHub Copil
 
 General support features:
 
-- Language Support: Supports multiple programming languages and frameworks, adapting to the code you're working on.
-- IDE Integration: Works directly in your code editor, providing suggestions and completions as you write code.
+- **Language Support**: Supports multiple programming languages and frameworks, adapting to the code you're working on.
+- **IDE Integration**: Works directly in your code editor, providing suggestions and completions as you write code.
 
 GitHub Copilot's autocomplete features:
 
@@ -149,11 +149,11 @@ Copilot suggestions can help you write code faster and with fewer errors, improv
 
 GitHub Copilot Chat's AI assistance features:
 
-- Chat Interface: Provides a chat interface for interacting with GitHub Copilot, asking and receiving answers to coding-related questions.
-- Code Explanation: Provides explanations for selected code snippets, helping you understand syntax, programming concepts, test cases, debugging, and more, without requiring you to navigate documentation or search online forums.
-- Documentation Generation: Generates explanations or documentation for selected code or entire workspaces, helping you understand and document your codebase.
-- Test Case Generation: Helps in generating test cases for your code, saving time, and improving code quality.
-- Code fixes: Provides suggestions for refactoring code and fixing common issues, improving code quality and maintainability.
+- **Chat Interface**: Provides a chat interface for interacting with GitHub Copilot, asking and receiving answers to coding-related questions.
+- **Code Explanation**: Provides explanations for selected code snippets, helping you understand syntax, programming concepts, test cases, debugging, and more, without requiring you to navigate documentation or search online forums.
+- **Documentation Generation**: Generates explanations or documentation for selected code or entire workspaces, helping you understand and document your codebase.
+- **Test Case Generation**: Helps in generating test cases for your code, saving time, and improving code quality.
+- **Code fixes**: Provides suggestions for refactoring code and fixing common issues, improving code quality and maintainability.
 
 By using AI to assist with coding tasks, GitHub Copilot can help you focus on higher-level design and problem-solving, rather than getting bogged down in syntax and implementation details.
 

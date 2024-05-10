@@ -30,7 +30,7 @@ Notice that when you accept the suggested autocompletion, the `isPrime` function
 
 As you would expect, GitHub Copilot is ready suggest a code snippet for the `isPrime` function as well. When you enter a blank line below the `addPrimeNumbersInNumericList` function, GitHub Copilot suggests an `isPrime` function that you can use.
 
-![Screenshot showing autocomplete for adding prime numbers in a list.](../media/autocomplete-isprime-suggestion.png)
+![Screenshot showing autocomplete for adding isPrime method.](../media/autocomplete-isprime-suggestion.png)
 
 ## Manage autocomplete suggestions
 
@@ -38,7 +38,7 @@ When GitHub Copilot suggests an autocompletion, it also provides an interface fo
 
 When you hover the mouse pointer over a suggested autocompletion, you're presented with several options for managing the suggestions.
 
-![Screenshot showing accept option for autocomplete suggestions.](../media/autocomplete-accept-options-1.png)
+![Screenshot showing "Accept" option for autocomplete suggestions.](../media/autocomplete-accept-options-1.png)
 
 The default interface for managing suggestions includes the following options:
 
@@ -48,13 +48,13 @@ The default interface for managing suggestions includes the following options:
 
 Selecting the **Accept Word** option  accepts the next word in suggestion. This is useful when you want to accept part of the suggestion and then continue typing your own code.
 
-![Screenshot showing accept option for autocomplete suggestions.](../media/autocomplete-accept-options-4.png)
+![Screenshot showing "Accept Word" option in progress for autocomplete suggestions.](../media/autocomplete-accept-options-4.png)
 
 You can continue selecting **Accept Word** until you accepted as much of the suggestion as you want.
 
 Selecting the ellipsis (...) icon to the right of the Accept Word button provides options for **Accept Line** and **Always Showing Toolbar**.
 
-![Screenshot showing accept option for autocomplete suggestions.](../media/autocomplete-accept-options-2.png)
+![Screenshot showing the additional "Accept Line" and "Always Showing Toolbar" options for autocomplete suggestions.](../media/autocomplete-accept-options-2.png)
 
 Selecting the **Always Show Toolbar** option ensures that the toolbar remains visible when using hot keys to managing autocomplete suggestions. Selecting the **Accept Line** option accepts an entire line of the suggestion.
 
@@ -70,11 +70,11 @@ The `addPrimeNumbersInNumericList` and `isPrime` methods appear to be complete. 
 
 When you start writing the comment, GitHub Copilot suggests an autocompletion for your natural language text as it did for your code. It does this using the code it finds in your solution and the portion of the comment that you entered. If you start typing the comment `// create `, GitHub Copilot sees the `addPrimeNumbersInNumericList` methods and predicts that you want to create `a list of numbers`.
 
-![Screenshot showing a the word "create" being added to a comment line.](../media/autocomplete-comment-code-2.png)
+![Screenshot showing the word "create" being added to a comment line.](../media/autocomplete-comment-code-2.png)
 
 As you continue to write your comment, GitHub Copilot updates its autocomplete suggestion. When you're ready to accept the suggestion, select **Accept** or press the Tab key.
 
-![Screenshot showing a the words "create a list of 100 random numbers" being added to a comment line.](../media/autocomplete-comment-code-3.png)
+![Screenshot showing the words "create a list of 100 random numbers" being added to a comment line.](../media/autocomplete-comment-code-3.png)
 
 When you create a new code line after the comment, GitHub Copilot begins generating a code snippet based on the comment and your existing code.
 

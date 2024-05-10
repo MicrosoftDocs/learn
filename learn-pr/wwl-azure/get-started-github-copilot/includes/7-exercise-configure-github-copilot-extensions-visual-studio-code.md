@@ -102,4 +102,4 @@ GitHub Copilot can be managed through personal accounts with GitHub Copilot Indi
 
 You can use the default keyboard shortcuts in Visual Studio Code when using GitHub Copilot. Alternatively, you can rebind the shortcuts in the Keyboard Shortcuts editor using your preferred keyboard shortcuts for each specific command.
 
-For more information, see [Rebinding keyboard shortcuts.](https://docs.github.com/en/copilot/configuring-github-copilot/configuring-github-copilot-in-your-environment)
+For more information, see [Rebinding keyboard shortcuts.](https://docs.github.com/copilot/configuring-github-copilot/configuring-github-copilot-in-your-environment)

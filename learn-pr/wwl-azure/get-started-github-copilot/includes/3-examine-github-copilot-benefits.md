@@ -36,11 +36,11 @@ The primary difference between Business and Enterprise is that GitHub Copilot En
 
 The GitHub Copilot tools provide a range of features, such as:
 
-- Code completion: Copilot suggests code as you type.
-- Chat interactions: Ask Copilot for help with your code.
-- Pull request summaries (Copilot Enterprise only): Get Copilot to describe the changes in a pull request.
-- Knowledge bases (Copilot Enterprise only): Create and manage collections of documentation to use as a context for chatting with Copilot.
-- Copilot in the CLI: Use Copilot from the command line to generate code snippets and more.
+- **Code completion**: Copilot suggests code as you type.
+- **Chat interactions**: Ask Copilot for help with your code.
+- **Pull request summaries (Copilot Enterprise only)**: Get Copilot to describe the changes in a pull request.
+- **Knowledge bases (Copilot Enterprise only)**: Create and manage collections of documentation to use as a context for chatting with Copilot.
+- **Copilot in the CLI**: Use Copilot from the command line to generate code snippets and more.
 
 ### GitHub Copilot
 
