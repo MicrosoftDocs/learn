@@ -44,6 +44,4 @@ Establishing the strategic and tactical direction, metrics, and criteria for inc
 
 <iframe title="FinOps interactive guide for optimizing carbon emissions." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%209%20-%20Carbon%20emission%20optimization" width="800" height="500"></iframe>
 
-----------
-
 _Content attribution for this unit: FinOps Domain: ["Optimize Cloud Usage & Cost"](https://www.finops.org/framework/domains/optimize-cloud-usage-cost/) by [FinOps Foundation](https://www.finops.org/)_.

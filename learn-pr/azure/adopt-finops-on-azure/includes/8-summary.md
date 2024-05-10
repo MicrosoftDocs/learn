@@ -1,5 +1,3 @@
-# Unit 8: Summary
-
 As we conclude this module, we've embarked on a journey through the FinOps Foundation's domains and capabilities, and Microsoft resources and solutions that can enable your organization to adopt best practices. Additionally, you had the opportunity to learn how to conduct a FinOps iteration to help you initiate or mature your FinOps practice.
 
 By now, you've acquired the knowledge and insights needed to make informed decisions tailored to your organization's unique needs. As you progress beyond this course, we encourage you to apply these resources and solutions to implement best practices that can support your efforts to drive efficiency and accelerate business growth.

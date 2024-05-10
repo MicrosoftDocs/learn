@@ -42,6 +42,4 @@ Detect, identify, alert, and manage unexpected cloud cost and usage irregulariti
 
 <iframe title="FinOps interactive guide for managing anomalies." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%205%20-%20Manage%20anomalies" width="800" height="500"></iframe>
 
-----------
-
 _Content attribution for this unit: [FinOps Domain: "Understand Cloud Usage & Cost"](https://www.finops.org/framework/domains/understand-cloud-usage-cost/) by [FinOps Foundation](https://www.finops.org/)_.

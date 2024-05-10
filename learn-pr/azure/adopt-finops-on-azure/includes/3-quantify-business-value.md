@@ -40,6 +40,4 @@ Anticipating fluctuations in cloud spending and demand for resources by using hi
 
 Use efficiency metrics to evaluate an organization's cloud performance and financial management against other departments in the business or industry peers to inform decision-making and align FinOps with business objectives.
 
-----------
-
 _Content attribution for this unit: [FinOps Domain "Quantify Business Value"](https://www.finops.org/framework/domains/quantify-business-value/) by [FinOps Foundation](https://www.finops.org/)_.

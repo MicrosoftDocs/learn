@@ -58,6 +58,4 @@ Defining the criteria and methodology that provide input for a measurable and re
 
 - [FinOps Review Assessment](/assessments/ad1c0f6b-396b-44a4-924b-7a4c778a13d3/)
 
-----------
-
 _Content attribution for this unit: [FinOps Domain: "Manage the FinOps Practice"](https://www.finops.org/framework/domains/manage-finops-practice/) by [FinOps Foundation](https://www.finops.org/)_.
