@@ -161,7 +161,7 @@ Now you'll add and configure a `DbContext` implementation. `DbContext` is a gate
 
 Next, create a migration that you can use to create your initial database.
 
-1. Run the following command to generate a migration for creating the database tables:
+1. In the terminal scoped to the *ContosoPizza* project folder, run the following command to generate a migration for creating the database tables:
 
     ```dotnetcli
     dotnet ef migrations add InitialCreate --context PizzaContext
