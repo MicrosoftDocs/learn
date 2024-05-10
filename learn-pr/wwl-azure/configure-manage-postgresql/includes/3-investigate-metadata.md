@@ -5,7 +5,7 @@ To investigate metadata in an Azure Database for PostgreSQL database, you can qu
 
 The Azure portal has many pages for settings and monitoring allowing you to assess, and in some cases modify metadata.
 
-[![Screenshot of the Settings and Monitoring links.](../media/3-settings-monitor.png)](../media/3-settings-monitor.png#lightbox)
+:::image type="content" source="../media/3-settings-monitor.png" alt-text="Screenshot of the Settings and Monitoring links." lightbox="../media/lp-core-m2-9-dashboard.png":::
 
 These pages are typically the most straightforward and informative method to view metadata for the most commonly required metrics. Many metrics can also be displayed in a graph to give a visual representation of changes over time.
 
