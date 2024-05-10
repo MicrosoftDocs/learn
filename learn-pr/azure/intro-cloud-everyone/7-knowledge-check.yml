@@ -13,7 +13,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: Which of the following statements accurately describes actions that embody Microsoft’s approach to driving inclusivity in our marketing, products and services?
+  - content: Which of the following statements accurately describes actions that embody Microsoft's approach to driving inclusivity in our marketing, products and services?
     choices:
     - content: Providing education to others on D&I, understanding barriers to help avoid them, caring about the workplace environment, and telling people how to engage successfully.
       isCorrect: False
@@ -39,10 +39,10 @@ quiz:
     choices:
     - content: Acting from individual knowledge, making assumptions, strategizing within a team to create an execution plan, and designing from knowledge and experience.
       isCorrect: False
-      explanation: This is the opposite of inclusive.
+      explanation: This approach is the opposite of inclusive.
     - content: Understanding unconscious bias, creating a diverse team to execute on a project, recognizing exclusion, and highlighting diversity with common shared human values.
       isCorrect: True
-      explanation: This is a good and inclusive approach.
-    - content: Creating a marketing team that’s focused on delivering inclusivity messaging as the company’s entire D&I execution plan.
+      explanation: This approach is a good and inclusive one.
+    - content: Creating a marketing team focused on delivering inclusivity messaging as the company's entire D&I execution plan.
       isCorrect: False
       explanation: D&I is more than just messaging.
