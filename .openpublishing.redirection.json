@@ -38278,6 +38278,76 @@
       "source_path": "learn-pr/wwl-azure/develop-monitor-status-dashboards/8-summary.md",
       "redirect_url": "/training/modules/develop-monitor-status-dashboards/11-summary",
       "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/understand-concurrency-postgresql/3-describe-isolation-levels.md",
+      "redirect_url": "/training/modules/understand-concurrency-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-concurrency-postgresql/4-understand-lock.md",
+      "redirect_url": "/training/modules/understand-concurrency-postgresql/4-understand-locking",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-concurrency-postgresql/5-exercise-understand-lock.md",
+      "redirect_url": "/training/modules/understand-concurrency-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/index.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/1-introduction.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/2-lesson-authentication.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/3-exercise-authentication.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/4-lesson-publish.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/5-exercise-publish.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/6-lesson-clone.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/7-exercise-clone.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/8-knowledge-check.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/9-summary.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/get-started-github-and-visual-studio-code/index.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
     }
   ]
 }
