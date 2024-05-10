@@ -24,7 +24,7 @@ Our first step is to create a bicep file that defines our resources to use with 
 
 1. Add the following Bicep code into the file. You deploy the template soon. It's a good idea to type the code yourself instead of copying and pasting, so you can see how the tooling helps you to write your Bicep files.
 
-    :::code language="bicep" source="code/1-template.bicep" range="1-28":::
+    :::code language="bicep" source="[text](../code/1-template.bicep)" range="1-28":::
 
     > [!NOTE]
     > You may notice the `${uniqueString(resourceGroup().id)}' syntax on the 'webApplicationName' parameter. The uniqueString function creates a string based on the id of the resource group and adds it as a suffix to 'webapp-deposits'. Many Azure services require unique names. This function helps generate a unique name.
@@ -107,7 +107,7 @@ az stack group show \
 
 The results include the properties of the deployment stack as well as the status of the managed resources. The output should appear familiar to the following:
 
-    :::code language="json" source="code/2-json.json" range="1-56":::
+:::code language="json" source="[text](../code/2-json.json)" range="1-56":::
 
 Take notice of the resources section of the output. For each resource, it shows its status as "managed", its resource group, its resource id, and its deny settings.
 
@@ -125,7 +125,7 @@ Get-AzResourceGroupDeploymentStack \
 
 The results include the properties of the deployment stack as well as the status of the managed resources. The output should appear familiar to the following:
 
-    :::code language="powershell" source="code/3-powershell.ps1" range="1-10":::
+:::code language="powershell" source="[text](../code/3-powershell.ps1)" range="1-10":::
 
 Take notice of the resources section of the output. This defines the resources that are managed by the deployment stack. You see the full resource ID of each resource.
 
