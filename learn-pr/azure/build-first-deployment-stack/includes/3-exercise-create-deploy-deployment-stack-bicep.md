@@ -1,4 +1,4 @@
-You are at sprint 1 for the new deposits application. You want to test the process of creating a deployment stack with managed resources in a development subscription. In this exercise, you'll create a deployment stack scoped to a resource group that references a bicep file. The file will define an Azure app service plan and an Azure app service.
+You are at sprint 1 for the new deposits application. You want to test the process of creating a deployment stack with managed resources in a development subscription. In this exercise, you create a deployment stack scoped to a resource group that references a bicep file. The file defines an Azure app service plan and an Azure app service.
 
 During the process, you'll:
 
@@ -20,9 +20,9 @@ Our first step is to create a bicep file that defines our resources to use with 
 
 1. Save the empty file so that Visual Studio Code loads the Bicep tooling.
 
-   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a _templates_ folder in which to save the file.
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you saved the file. For example, you might want to create a _templates_ folder in which to save the file.
 
-1. Add the following Bicep code into the file. You'll deploy the template soon. It's a good idea to type the code yourself instead of copying and pasting, so you can see how the tooling helps you to write your Bicep files.
+1. Add the following Bicep code into the file. You deploy the template soon. It's a good idea to type the code yourself instead of copying and pasting, so you can see how the tooling helps you to write your Bicep files.
 
    :::code language="bicep" source="code/1-template.bicep" range="1-28":::
 
@@ -39,7 +39,7 @@ Our first step is to create a bicep file that defines our resources to use with 
 
 ### Create a resource group
 
-We need to create a resource group for our deployment stack and managed resources. Run the following command from the terminal in Visual Studio Code to create a resource group.
+We need to create a resource group for our deployment stack and managed resources. To create a resource group, run the following command from the terminal in Visual Studio Code.
 
 ```azurecli
 az group create \
@@ -55,7 +55,7 @@ az group create \
 
 ### Create a resource group
 
-We need to create a resource group for our deployment stack and managed resources. Run the following command from the terminal in Visual Studio Code to create a resource group.
+We need to create a resource group for our deployment stack and managed resources. To create a resource group, run the following command from the terminal in Visual Studio Code.
 
 ```azurepowershell
 New-AzResourceGroup \
@@ -67,9 +67,7 @@ New-AzResourceGroup \
 
 ### Create the deployment stack
 
-Next, we need to create our deployment stack scoped to our recently created resource group. When we create the stack, the Azure resources in the bicep file are created and now managed by the stack.
-
-Run the following command from the terminal in Visual Studio Code to create a deployment stack.
+Next, we need to create our deployment stack scoped to our recently created resource group. To create the deployment stack, run the following command from the terminal in Visual Studio Code.
 
 ::: zone pivot="cli"
 
@@ -99,9 +97,7 @@ New-AzResourceGroupDeploymentStack `
 
 ::: zone pivot="cli"
 
-When you create a deployment stack and its managed resources, you can view its configuration using the command-line or the Azure portal. In this exercise, we will use AZ CLI.
-
-Run the following command from the terminal in Visual Studio code to view the configuration of the created deployment stack
+When you create a deployment stack and its managed resources, you can view its configuration using the command-line or the Azure portal. In this exercise, we use AZ CLI. To view the configuration of the deployment stack, run the following command from the terminal in Visual Studio Code.
 
 ```azurecli
 az stack group show \
@@ -119,9 +115,7 @@ Take notice of the resources section of the output. For each resource, it shows 
 
 ::: zone pivot="powershell"
 
-When you create a deployment stack and its managed resources, you can view its configuration using the command-line or the Azure portal. In this exercise, we will use Azure PowerShell.
-
-Run the following command from the terminal in Visual Studio code to view the configuration of the created deployment stack
+When you create a deployment stack and its managed resources, you can view its configuration using the command-line or the Azure portal. In this exercise, we use Azure PowerShell. To view the configuration of the deployment stack, run the following command from the terminal in Visual Studio Code.
 
 ```azurepowershell
 Get-AzResourceGroupDeploymentStack \

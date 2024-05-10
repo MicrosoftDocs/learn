@@ -6,7 +6,7 @@ In this unit, you'll learn how to create a deployment stack, verify its deployme
 
 ## Deployment stacks revisited
 
-Deployment stacks change how you think about resource organization across resource groups and subscriptions. A deployment stack allows you to group all the resources that make up your application, regardless of where they are in your Azure resource organizational hierarchy. You can manage them as a single unit. With deployment stacks, you're able to perform lifecycle operations on the collection of resources that make up the stack.
+Deployment stacks change how you think about resource organization across resource groups and subscriptions. A deployment stack allows you to group all the resources that make up your application, regardless of where they're in your Azure resource organizational hierarchy. You can manage them as a single unit. With deployment stacks, you're able to perform lifecycle operations on the collection of resources that make up the stack.
 
 ![a graphic representing an application managed by a deployment stack and deployed to multiple resource groups](../media/deployment-stack-application.png)
 
@@ -16,7 +16,7 @@ Think of deployment stacks as a series of pointers that groups your application'
 
 Deployment stacks support the use of Bicep files, ARM JSON templates, or template specs for defining resources in a stack. When deploying a deployment stack using the Azure CLI or Azure PowerShell, you're able to point to the specific template file (bicep file or ARM JSON template) or template spec. It isn't necessary to change how you define your resources.
 
-We will use the bicep file below for our first deployment stack. The file defines an app service plan and a web app. These resources become managed resources when we create the deployment stack.
+We'll use the following bicep file for our first deployment stack. The file defines an app service plan and a web app. These resources become managed resources when we create the deployment stack.
 
 ```bicep
 // Parameters
@@ -73,13 +73,13 @@ az stack group create \
     --template-file ./main.bicep
 ```
 
-Notice that the only change in the command are the words 'deployment' and 'stack', and there is a small difference in the parameters used. The same is true for deployments to subscriptions and management groups. In later modules, we will explore how to manage resources in a deployment stack and how to configure deny settings.
+Notice that the only changes in the command are the words 'deployment' and 'stack', and there's a small difference in the parameters used. The same is true for deployments to subscriptions and management groups. In later modules, we explore how to manage resources in a deployment stack and how to configure deny settings.
 
 Lets take a look at creating a deployment stack at the resource group scope.
 
 ::: zone pivot="cli"
 
-To create a deployment stack using AZ CLI, use the 'az stack group create' command. The commands below first create a resource group called 'rg-depositsApplication' then creates the deployment stack at the scope of the resource group.
+To create a deployment stack using AZ CLI, use the 'az stack group create' command. The following commands first create a resource group called 'rg-depositsApplication' then creates the deployment stack at the scope of the resource group.
 
 ```azurecli
 az group create \
@@ -97,7 +97,7 @@ az stack group create \
 
 ::: zone pivot="powershell"
 
-To create a deployment stack using AZ CLI, use the 'New-AzResourceGroupDeploymentStack' command. The commands below first create a resource group called 'rg-depositsApplication' then creates the deployment stack at the scope of the resource group.
+To create a deployment stack using AZ CLI, use the 'New-AzResourceGroupDeploymentStack' command. The following commands first create a resource group called 'rg-depositsApplication' then creates the deployment stack at the scope of the resource group.
 
 ```azurepowershell
 New-AzResourceGroup `
@@ -115,7 +115,7 @@ New-AzResourceGroupDeploymentStack `
 
 ## Showing deployment stacks
 
-Resource groups may have multiple deployment stack scoped to them. You can show details about a specific deployment stack scoped to a resource group.
+Resource groups may have multiple deployment stacks scoped to them. You can show details about a specific deployment stack scoped to a resource group.
 
 ::: zone pivot="cli"
 
@@ -127,7 +127,7 @@ az stack group show \
     --name stack-deposits
 ```
 
-The results include the properties of the deployment stack as well as the status of the managed resources. The output should appear familiar to the following:
+The results include the properties of the deployment stack and the status of the managed resources. The output should appear familiar to the following section:
 
 ```json
 {
@@ -188,7 +188,7 @@ The results include the properties of the deployment stack as well as the status
 }
 ```
 
-Take notice of the resources section of the output. For each resource, it shows its status as "managed", its resource group, its resource id, and its deny settings.
+Take notice of the resources section of the output. For each resource, it shows its status as 'managed', its resource group, its resource id, and its deny settings.
 
 ::: zone-end
 
@@ -202,7 +202,7 @@ Get-AzResourceGroupDeploymentStack \
     -Name stack-deposits
 ```
 
-The results include the properties of the deployment stack as well as the status of the managed resources. The output should appear familiar to the following:
+The results include the properties of the deployment stack and the status of the managed resources. The output should appear familiar to the following section:
 
 ```azurepowershell
 Id                          : /subscriptions/.../deploymentStacks/stack-deposits
@@ -217,21 +217,21 @@ Resources                   : /subscriptions/.../serverfarms/plan-deposits
                               /subscriptions/.../sites/webapp-brpdm7iotbwjm
 ```
 
-Take notice of the resources section of the output. This defines the resources that are managed by the deployment stack. You see the full resource ID of each resource.
+Take notice of the resources section of the output. it defines the resources managed by the deployment stack. You see the full resource ID of each resource.
 
 ::: zone-end
 
-You can also view deployment stacks in the Azure portal. They are available at their respective scopes. For a resource group, navigate to the resource group where the deployment stack is scoped. Under sttings, you see an option for deployment stacks.
+You can also view deployment stacks in the Azure portal. They're available at their respective scopes. For a resource group, navigate to the resource group where the deployment stack is scoped. Under settings, you see an option for deployment stacks.
 
 ![a graphic representing the properties of a resource group and where to find deployment stacks](../media/rg-deployment-stack-portal-1.png)
 
-When you click on deployment stacks, it will list any stacks scoped to the resource group. Clicking on a deployment stack takes you to the property page of the deployment stacks.
+When you click on deployment stacks, it lists any stacks scoped to the resource group. Clicking on a deployment stack takes you to the property page of the deployment stacks.
 
 ![a graphic representing the properties of a deployment stack, including its managed resources](../media/rg-deployment-stack-portal-1.png)
 
 ## Listing deployment stacks
 
-Resource groups may have multiple deployment stack scoped to them. You can list all deployment stacks scoped to a specific resource group.
+You can also list all deployment stacks scoped to a specific resource group.
 
 ::: zone pivot="cli"
 
