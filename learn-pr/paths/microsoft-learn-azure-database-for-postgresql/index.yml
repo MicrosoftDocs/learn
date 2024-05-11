@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: learning-path
-  ms.service: azure
 title: Configure and migrate to Azure Database for PostgreSQL
 prerequisites: |
   -   Demonstrate an understanding of relational databases.
