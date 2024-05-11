@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-monitor-status-dashboards.configure-monitoring-github
+title: Configure monitoring in GitHub
+metadata:
+  title: Configure monitoring in GitHub
+  description: "Configure monitoring in GitHub"
+  ms.date: 05/08/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-configure-monitoring-github.md)]
