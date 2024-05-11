@@ -1,6 +1,6 @@
 The notifications include diagnostic information. Here's an example:
 
-:::image type="content" source="../media/notifications-diagnostic-information-ec845555.png" alt-text="Diagnostic information.":::
+:::image type="content" source="../media/notifications-diagnostic-information-ec845555.png" alt-text="Diagram showing diagnostic information.":::
 
 
  -  Triage. The notification shows you how many users or how many operations are affected. It can help you assign a priority to the problem.

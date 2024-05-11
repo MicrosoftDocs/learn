@@ -3,7 +3,7 @@ uid: learn.wwl.az-400-work-git-for-enterprise-devops
 metadata:
   title: 'AZ-400: Development for enterprise DevOps'
   description: 'AZ-400: Development for enterprise DevOps'
-  ms.date: 05/24/2022
+  ms.date: 05/06/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: learning-path
@@ -37,12 +37,13 @@ products:
 subjects:
 - devops
 modules:
-- learn.wwl.structure-your-git-repo
+- learn.wwl.introduction-to-devops
+- learn.wwl.plan-agile-github-projects-azure-boards
 - learn.wwl.manage-git-branches-workflows
 - learn.wwl.collaborate-pull-requests-azure-repos
-- learn.wwl.identify-technical-debt
 - learn.wwl.explore-git-hooks
 - learn.wwl.plan-foster-inner-source
 - learn.wwl.manage-git-repositories
+- learn.wwl.identify-technical-debt
 trophy:
   uid: learn.wwl.az-400-work-git-for-enterprise-devops.trophy

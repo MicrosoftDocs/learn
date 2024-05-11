@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-github-actions.examine-workflow-file
+title: Examine a workflow file
+metadata:
+  title: Examine a workflow file
+  description: "Examine a workflow file"
+  ms.date: 05/07/2024
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-examine-workflow-file.md)]

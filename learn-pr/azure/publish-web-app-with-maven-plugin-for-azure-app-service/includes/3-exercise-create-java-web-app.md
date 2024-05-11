@@ -11,6 +11,7 @@ In this exercise, you'll create a new Java web app using the `maven-archetype-we
       -DgroupId=com.microsoft.example \
       -DartifactId=MyWebApp \
       -DarchetypeArtifactId=maven-archetype-webapp \
+      -DarchetypeVersion=1.4 \
       -DinteractiveMode=false
     ```
 
@@ -21,20 +22,25 @@ In this exercise, you'll create a new Java web app using the `maven-archetype-we
     code pom.xml
     ```
 
-1. Locate the `<finalName>MyWebApp</finalName>` element in the `pom.xml` file, and append the following XML underneath that line to add the Tomcat plugin to your project, which allows you to run a local web server to test your web app:
+1. Locate the `<plugins>` element in the `pom.xml` file, and add the following `<plugin>` below the existing plugins`, which allows you to run a local web server to test your web app:
 
     ```xml
-    <plugins>
-      <plugin>
-        <groupId>org.apache.tomcat.maven</groupId>
-        <artifactId>tomcat7-maven-plugin</artifactId>
-        <version>2.2</version>
+    <plugin>
+      <groupId>org.codehaus.cargo</groupId>
+      <artifactId>cargo-maven3-plugin</artifactId>
+      <version>1.10.13</version>
+      <configuration>
+        <container>
+          <containerId>tomcat11x</containerId>
+        </container>
         <configuration>
-          <!-- http port needed in the sandbox is 8000 -->
-          <port>8000</port>
+          <properties>
+            <!-- http port needed in the sandbox is 8000 -->
+            <cargo.servlet.port>8000</cargo.servlet.port>
+          </properties>
         </configuration>
-      </plugin>
-    </plugins>  
+      </configuration>
+    </plugin>
     ```
 
 1. Save your changes by typing <kbd>Ctrl</kbd>+<kbd>S</kbd>.
@@ -45,25 +51,6 @@ In this exercise, you'll create a new Java web app using the `maven-archetype-we
 
     ```bash
     mvn package
-    ```
-
-    Maven will display a series of messages in the console while it builds your web app. The build should conclude with a status message that is similar to the following example:
-
-    ```output
-    [INFO] Packaging webapp
-    [INFO] Assembling webapp [MyWebApp] in [/home/~/MyWebApp/target/MyWebApp]
-    [INFO] Processing war project
-    [INFO] Copying webapp resources [/home/~/MyWebApp/src/main/webapp]
-    [INFO] Webapp assembled in [23 msecs]
-    [INFO] Building war: /home/~/MyWebApp/target/MyWebApp.war
-    [INFO] WEB-INF/web.xml already added, skipping
-    [INFO] ------------------------------------------------------------------------
-    [INFO] BUILD SUCCESS
-    [INFO] ------------------------------------------------------------------------
-    [INFO] Total time: 3.052 s
-    [INFO] Finished at: 2020-02-12T21:12:00+00:00
-    [INFO] Final Memory: 15M/122M
-    [INFO] ------------------------------------------------------------------------
     ```
 
 ## Test the sample web app
@@ -83,7 +70,7 @@ In this exercise, you'll create a new Java web app using the `maven-archetype-we
 1. Start the Tomcat web server with Maven:
 
     ```bash
-    mvn tomcat7:run
+    mvn cargo:run
     ```
 
 1. Open a new browser tab by using the URL from the JSON that was returned by the `curl` command you ran earlier, appending `MyWebApp/` to the end of the URL. For example, using the above illustration, that URL would be https:\//gateway18.westeurope.console.azure.com/n/cc-1829663c/cc-1829663c/proxy/8000/MyWebApp/. You should see **Hello World!** displayed in your browser:

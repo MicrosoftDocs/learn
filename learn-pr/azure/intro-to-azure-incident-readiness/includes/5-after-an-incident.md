@@ -30,6 +30,8 @@ Beyond just watching this discussion with engineering leaders, Azure Incident Re
 
 To ensure that you'll be invited to an Azure Incident Retrospective (if your services are impacted by a qualifying 'scenario 1' incident, see above) make sure that you have configured [Azure Service Health](https://www.aka.ms/ash-alerts) alerts. Invites to the Azure Incident Retrospective livestreams are distributed to Service Health and via Service Health alerts, just like Post Incident Reviews (PIRs).
 
+After each livestream, we will publish a recording of the session to [this YouTube playlist](https://www.aka.ms/air/videos) and, where relevant, update the PIR on the [Status History page](https://azure.status.microsoft/status/history/) with a link to it.
+
 ## Service Level Agreements (SLAs) and Service Credit process
 
 The Service Level Agreements (SLA) describe Microsoft's commitments for uptime and connectivity for Microsoft Online Services. The current and archived editions of the SLA are [available for download](https://aka.ms/csla) and they cover Azure, as well as Dynamics 365, Office 365, and Intune. If we don't achieve and maintain the Service Levels for each Service as described in this SLA (for any reason, including as a result of one or more service incidents) then customers may be eligible for a credit towards a portion of their monthly service fees. 

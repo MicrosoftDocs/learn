@@ -3,68 +3,68 @@ uid: learn.create-saas-offer-commercial-marketplace.6-knowledge-check
 title: Check your knowledge
 metadata:
   title: Check your knowledge
-  description: Review of commercial marketplace SaaS offer concepts
-  ms.date: 12/09/2022
-  author: marleva
-  ms.author: maevan
+  description: Review of commercial marketplace software as a service (SaaS) offer concepts.
+  ms.date: 04/26/2024
+  author: SindhuRaghvan
+  ms.author: siraghav
   ms.topic: unit
 durationInMinutes: 3
 quiz:
-  title: 'Knowledge check'
+  title: "Knowledge check"
   questions:
-  - content: 'Which of the following characteristics makes SaaS a popular software delivery method for customers?'
+  - content: "Which of the following characteristics makes software as a service (SaaS) a popular software delivery method for customers?"
     choices:
-    - content: 'With SaaS, customers get billed directly for cloud infrastructure costs associated with using your software.'
+    - content: "With SaaS, customers get billed directly for cloud infrastructure costs associated with using your software."
       isCorrect: false
-      explanation: 'When you choose SaaS as a delivery method for your service, the application runs on your cloud infrastructure. This means you will be billed for any associated cloud infrastructure costs.'
-    - content: 'SaaS gives users complete control over the technical configuration of the application, including app security and operating systems.'
+      explanation: "When you choose SaaS as a delivery method for your service, the application runs on your cloud infrastructure. This means you're billed for any associated cloud infrastructure costs."
+    - content: "SaaS gives users complete control over the technical configuration of the application, including app security and operating systems."
       isCorrect: false
-      explanation: 'When you offer your service using the SaaS delivery model, you are responsible for maintaining the apps software and security.'
-    - content: 'With SaaS, customers can use your application without needing to take responsibility for underlying app configuration details.'
+      explanation: "When you offer your service using the SaaS delivery model, you're responsible for maintaining the apps software and security."
+    - content: "With SaaS, customers can use your application without needing to take responsibility for underlying app configuration details."
       isCorrect: true
-      explanation: 'Correct! SaaS allows customers to focus on the value they get from using your application. Your customers will not have to preoccupy themselves with the details of managing the underlying application.'
-    - content: 'All the above.'
+      explanation: "Correct! SaaS allows customers to focus on the value they get from using your application. Your customers don't have to preoccupy themselves with the details of managing the underlying application."
+    - content: "All of these characteristics."
       isCorrect: false
-      explanation: 'With SaaS, customers can use your application without needing to take responsibility for underlying app configuration details.'
-  - content: 'Which of the following pieces of information is not required to complete the technical configuration for a publicly available SaaS offer that is sold through Microsoft?'
+      explanation: "With SaaS, customers can use your application without needing to take responsibility for underlying app configuration details."
+  - content: "Which of the following pieces of information isn't required to complete the technical configuration for a publicly available SaaS offer that is sold through Microsoft?"
     choices:
-    - content: 'An offer landing page.'
+    - content: "An offer landing page."
       isCorrect: false
-      explanation: 'When you publish a transact SaaS offer, you will have to provide a landing page URL. Your offer landing page is where customers are redirected to provide additional user information and activate their subscription.'
-    - content: 'The Microsoft Entra identity your application will use when communicating with the commercial marketplace.'
+      explanation: "When you publish a transact SaaS offer, you have to provide a landing page URL. Your offer landing page is where customers are redirected to provide more user information and activate their subscription."
+    - content: "The Microsoft Entra identity your application uses when communicating with the commercial marketplace."
       isCorrect: false
-      explanation: 'When you choose to sell your SaaS offer through Microsoft, you will need to integrate your application with Microsoft Entra ID. Microsoft Entra ID makes SaaS offer purchases from the commercial marketplace easier and more secure.'
-    - content: 'A connection webhook.'
+      explanation: "When you choose to sell your SaaS offer through Microsoft, you need to integrate your application with Microsoft Entra ID. Microsoft Entra ID makes SaaS offer purchases from the commercial marketplace easier and more secure."
+    - content: "A connection webhook."
       isCorrect: false
-      explanation: 'To create a transact offer, you will need to provide a connection webhook URL during the technical configuration in Partner Center. Your connection webhook facilitates communication about subscriptions between your organization and Microsoft.'
-    - content: 'The Azure tenant IDs of your customers.'
+      explanation: "To create a transact offer, you need to provide a connection webhook URL during the technical configuration in Partner Center. Your connection webhook facilitates communication about subscriptions between your organization and Microsoft."
+    - content: "The Azure tenant IDs of your customers."
       isCorrect: true
-      explanation: 'Correct! You only need to provide Azure tenant IDs for individual customers when creating a private plans for specific customers. This is not required for public plans.'
-  - content: 'When you choose to sell your SaaS application through Microsoft, your SaaS offer is referred to as...'
+      explanation: "Correct! You only need to provide Azure tenant IDs for individual customers when creating a private plan for specific customers. Azure tenant IDs for individual customers aren't required for public plans."
+  - content: "When you choose to sell your SaaS application through Microsoft, your SaaS offer is referred to as..."
     choices:
-    - content: 'A transact offer.'
+    - content: "A transact offer."
       isCorrect: true
-      explanation: 'Correct! Offers sold through Microsoft are also referred to as transact offers. This name comes from the fact that your customers can purchase a subscription to your application directly from the commercial marketplace, without having to get in touch with anyone from your organization.'
-    - content: 'A private plan.'
+      explanation: "Correct! Offers sold through Microsoft are also referred to as transact offers. This name comes from the fact that your customers can purchase a subscription to your application directly from the commercial marketplace, without having to get in touch with anyone from your organization."
+    - content: "A private plan."
       isCorrect: false
-      explanation: 'Private plans are plans that are only made available to specific customers that you choose.'
-    - content: 'A contact me listing.'
+      explanation: "Private plans are plans that are only made available to specific customers that you choose."
+    - content: "A contact me listing."
       isCorrect: false
-      explanation: 'Contact me listings allow customers to share their contact information with your organization through the commercial marketplace. They are not sold through Microsoft, which means you will need to process any resulting transactions independently.'
-    - content: 'A standard commercial marketplace offer.'
+      explanation: "Contact me listings allow customers to share their contact information with your organization through the commercial marketplace. They aren't sold through Microsoft, which means you need to process any resulting transactions independently."
+    - content: "A standard commercial marketplace offer."
       isCorrect: false
-      explanation: 'When you choose to sell your SaaS application through Microsoft, it is called a transact offer.'
-  - content: 'Which of the following makes it possible to add a consumption-based pricing component to your SaaS offer?'
+      explanation: "Selling your SaaS application through Microsoft is called a transact offer."
+  - content: "Which of the following features makes it possible to add a consumption-based pricing component to your SaaS offer?"
     choices:
-    - content: 'The per user pricing model.'
+    - content: "The per user pricing model."
       isCorrect: false
-      explanation: 'To add a consumption-based pricing component to your SaaS offer, you must select the flat rate pricing model in Partner Center. When you choose the flat rate pricing model, you can use the marketplace metering service to add a consumption-based pricing element to your offer.'
-    - content: 'A private plan.'
+      explanation: "To add a consumption-based pricing component to your SaaS offer, you must select the flat rate pricing model in Partner Center. When you choose the flat rate pricing model, you can use the marketplace metering service to add a consumption-based pricing element to your offer."
+    - content: "A private plan."
       isCorrect: false
-      explanation: 'Private plans are plans that are only made available to specific customers that you choose. To add a consumption-based pricing component to your offer, you need to use the marketplace metering service.'
-    - content: 'The marketplace metering service.'
+      explanation: "Private plans are plans that are only made available to specific customers that you choose. To add a consumption-based pricing component to your offer, you need to use the marketplace metering service."
+    - content: "The marketplace metering service."
       isCorrect: true
-      explanation: 'Correct! You can add a consumption-based pricing element to your offer by selecting the flat rate pricing model and using the marketplace metering service to add custom meters to your offer. Custom meters let you define a unit of customer usage, measure customer usages using the metering service, and bill customers for their level of usage.'
-    - content: 'It is not possible to add a consumption-based pricing component to a SaaS offer that is sold through Microsoft.'
+      explanation: "Correct! You can add a consumption-based pricing element to your offer by selecting the flat rate pricing model and using the marketplace metering service to add custom meters to your offer. Custom meters let you define a unit of customer usage, measure customer usages using the metering service, and bill customers for their level of usage."
+    - content: "It isn't possible to add a consumption-based pricing component to a SaaS offer that is sold through Microsoft."
       isCorrect: false
-      explanation: 'You can add a consumption-based pricing element to your offer by selecting the flat rate pricing model and using the marketplace metering service to add custom meters to your offer. Custom meters let you define a unit of customer usage, measure customer usages using the metering service, and bill customers for their level of usage.'
+      explanation: "You can add a consumption-based pricing element to your offer by selecting the flat rate pricing model and using the marketplace metering service to add custom meters to your offer. Custom meters let you define a unit of customer usage, measure customer usages using the metering service, and bill customers for their level of usage."
