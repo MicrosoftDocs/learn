@@ -231,7 +231,7 @@ The next task is to create a Node.js app that simulates an array of motion-activ
    }
    ```
 
-   This code uses the [class support](http://es6-features.org/#ClassDefinition?azure-portal=true) in ECMAScript 6 (ES6) to define a class named `Camera`. Then, it creates 10 `Camera` instances and starts them. Each camera uses a random timer that fires once every few minutes to upload wildlife images to the `photos` container in Blob Storage. Images are randomly selected from the files in the project directory's *photos* subdirectory. Each blob that's created contains metadata that identifies the camera that uploaded the photo and the camera's location.
+   This code uses the [class support](https://github.com/rse/es6-features?azure-portal=true#ClassDefinition?azure-portal=true) in ECMAScript 6 (ES6) to define a class named `Camera`. Then, it creates 10 `Camera` instances and starts them. Each camera uses a random timer that fires once every few minutes to upload wildlife images to the `photos` container in Blob Storage. Images are randomly selected from the files in the project directory's *photos* subdirectory. Each blob that's created contains metadata that identifies the camera that uploaded the photo and the camera's location.
 
 1. If you're running Windows, run the following commands to create a pair of environment variables. In the command, replace `STORAGE_ACCOUNT_NAME` with the name of the storage account you created earlier, and replace `STORAGE_ACCOUNT_KEY` with the storage account's access key:
 
