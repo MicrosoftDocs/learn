@@ -38398,6 +38398,11 @@
       "source_path": "learn-pr/wwl-azure/understand-postgresql-query-process/4-exercise-practice-explain.md",
       "redirect_url": "/training/modules/understand-postgresql-query-process/",
       "redirect_document_id": false
+    },
+        {
+      "source_path": "learn-pr/wwl-azure/understand-client-server-communication-postgresql/4-exercise-explore-data-studio.md",
+      "redirect_url": "/training/modules/understand-client-server-communication-postgresql/",
+      "redirect_document_id": false
     }
   ]
 }
