@@ -1,4 +1,4 @@
-In this exercise, you download and install psql and Azure Data studio. If you already have Azure Data Studio installed on your machine, you can jump ahead to Connect to Azure Database for PostrgreSQL flexible server.
+In this exercise, you download and install psql and Azure Data Studio. If you already have Azure Data Studio installed on your machine, you can jump ahead to Connect to Azure Database for PostrgreSQL flexible server.
 
 > [!NOTE]
 >
