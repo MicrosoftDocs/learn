@@ -97,7 +97,7 @@ az stack group create \
 
 ::: zone pivot="powershell"
 
-To create a deployment stack using AZ CLI, use the 'New-AzResourceGroupDeploymentStack' command. The following commands first create a resource group called 'rg-depositsApplication' then creates the deployment stack at the scope of the resource group.
+To create a deployment stack using Azure PowerShell, use the 'New-AzResourceGroupDeploymentStack' command. The following commands first create a resource group called 'rg-depositsApplication' then creates the deployment stack at the scope of the resource group.
 
 ```azurepowershell
 New-AzResourceGroup `
