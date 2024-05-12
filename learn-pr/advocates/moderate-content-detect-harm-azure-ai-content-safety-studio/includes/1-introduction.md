@@ -8,7 +8,6 @@ By completing this module, you’ll be able to:
 - Perform text and image moderation for harmful content.
 - Analyze and improve Precision, Recall, and F1 Score metrics.
 - Detect groundedness in a model’s output.
-- Identify and block AI-generated copyrighted content.
 - Mitigate direct and indirect prompt injections.
 - Output filter configurations to code.
 

@@ -10,7 +10,7 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/11-knowledge-check.md)]
+  [!include[](includes/10-knowledge-check.md)]
 quiz:
   title: Knowledge check
   questions:
