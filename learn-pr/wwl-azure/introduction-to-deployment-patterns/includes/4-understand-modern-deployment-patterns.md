@@ -1,4 +1,4 @@
-End-users always use your application differently. Unexpected events will happen in a data center, multiple events from multiple users will cooccur, triggering some code that hasn't been tested in that way.
+End-users always use your application differently. Unexpected events will happen in a data center, multiple events from multiple users will co-occur, triggering some code that hasn't been tested in that way.
 
 To overcome, we need to embrace that some features can only be tested in production.
 

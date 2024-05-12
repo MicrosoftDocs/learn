@@ -30,7 +30,7 @@ The architecture of your application is always significant. But when implementin
 
 If your software is a monolith with many tight coupling between the various components, it's challenging to deliver your software continuously.
 
-Every part that is changed might impact other parts that didn't change. Automated tests can track many these unexpected dependencies, but it's still hard.
+Every part that is changed might impact other parts that didn't change. Automated tests can track many of these unexpected dependencies, but it's still hard.
 
 There's also the time aspect when working with different teams. When Team A relies on the service of Team B, Team A can't deliver until Team B is done. It introduces another constraint on delivery.
 

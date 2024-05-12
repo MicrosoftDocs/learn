@@ -1,4 +1,4 @@
-GitHub's offers native monitoring of project-related activities through its insights, including code changes and collaboration metrics. By enabling the monitoring functionality, you can track repository traffic, assess contributor activity, and identify trends over time. This enhances visibility, fosters collaboration, and helps making data-driven decisions. By default, charts are available to anyone that can view the project.
+GitHub offers native monitoring of project-related activities through its insights, including code changes and collaboration metrics. By enabling the monitoring functionality, you can track repository traffic, assess contributor activity, and identify trends over time. This enhances visibility, fosters collaboration, and helps making data-driven decisions. By default, charts are available to anyone that can view the project.
 
 With insights for Projects, you can use the default or create custom charts. Insights support two types of charts: current and historical.
 
