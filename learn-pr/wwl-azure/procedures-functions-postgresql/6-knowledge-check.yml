@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.procedures-functions-postgesql.knowledge-check
+uid: learn.wwl.procedures-functions-postgresql.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/10/2022
+  ms.date: 05/10/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -24,10 +24,10 @@ quiz:
     - content: "Create a function."
       isCorrect: false
       explanation: "Incorrect. You can't use the INSERT statement in a function."
-    - content: "Neither a stored procedure nor a function will address this requirement."
+    - content: "Creating a stored procedure or a function doesn't address this requirement."
       isCorrect: false
       explanation: "Incorrect. One of these two options can be used to make it easier for a colleague to insert data into a table."
-  - content: "You've created a stored procedure that returns a country/region name. Which of the following options is the correct way to call the stored procedure?"
+  - content: "You created a stored procedure that returns a country/region name. Which of the following options is the correct way to call the stored procedure?"
     choices:
     - content: "Write a SELECT query and include the stored procedure's return value with an alias."
       isCorrect: false
@@ -38,7 +38,7 @@ quiz:
     - content: "Use the keywords CALL PROCEDURE."
       isCorrect: false
       explanation: "Incorrect. Stored procedures aren't called with the CALL PROCEDURE keywords."
-  - content: "Your company uses Azure Database for PostgreSQL as the database for their expenses processing application. You need to write some code to calculate how much should be reimbursed to employees for mileage in their own car. The code will return a single decimal number. The result of the code will be used in SELECT statements. What should you do?"
+  - content: "Your company uses Azure Database for PostgreSQL as the database for their expenses processing application. You need to write some code to calculate how much should be reimbursed to employees for mileage in their own car. The code returns a single decimal number. The result of the code is used in SELECT statements. What should you do?"
     choices:
     - content: "Create a stored procedure."
       isCorrect: false
@@ -46,6 +46,6 @@ quiz:
     - content: "Create a function."
       isCorrect: true
       explanation: "Correct. A function returns a single value that can be used in a SELECT statement."
-    - content: "Neither a stored procedure nor a function will address this requirement."
+    - content: "Creating a stored procedure or a function doesn't address this requirement."
       isCorrect: false
       explanation: "Incorrect. One of these two options can be used to fulfill these requirements."
