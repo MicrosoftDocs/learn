@@ -2,7 +2,7 @@ The final AI-powered feature in which Contoso Camping Store has integrated into 
 
 The Protected Material Detection (Text) tool matches known text content (i.e., song lyrics, articles, recipes, and selected web content). This tool can be used to identify, and block known text content from being displayed in the model’s output. Let’s test the model’s ability to detect copyrighted lyrics with the song *Take Me Home, Country Roads* by John Denver.
 
-## Protected Lyrics
+## Protected lyrics
 
 1. In Content Safety Studio, select **Protected material detection**.
 1. In the **Test** section, enter the following into the box:
@@ -26,7 +26,7 @@ The Protected Material Detection (Text) tool matches known text content (i.e., s
 
 The model was about to detect that the output includes protected material! Feel free to complete additional tests for other song lyrics and explore additional content types.
 
-## Bulk Test
+## Bulk test
 
 Like the image and text moderation tools, we can also run a bulk test on a collection of data. Let’s upload a dataset of multiple text records to validate whether the model can detect more copyrighted song lyrics. We’ve included *Take Me Home, Country Roads* in the dataset and lyrics to *This Land is Your Land* by Woody Guthrie. In addition, we’ve added AI-generated summaries of national parks. Each record in the dataset includes a label to indicate whether the content contains protected material.
 

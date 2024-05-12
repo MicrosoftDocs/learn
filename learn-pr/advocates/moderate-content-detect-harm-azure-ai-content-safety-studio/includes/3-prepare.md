@@ -42,7 +42,7 @@ The Content Safety Resource is an Azure AI service. This service consists of mac
 1. Click **Review + create**.
 1. Click **Create**.
 
-## Download the Project Files
+## Download the project files
 
 Project files are available in the [data](https://github.com/Azure-Samples/aacs-workshops/) folder. Download the repository to access the files required for the **Text Moderation** and **Image Moderation** exercises. To download the repository, select **Code** >
 **Download ZIP**.

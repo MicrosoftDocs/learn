@@ -8,7 +8,7 @@ Content Safety Studio offers a suite of features designed to monitor and moderat
 
 **Multimodal Content Analysis**: Works across different types of content, ensuring a comprehensive content safety strategy.
 
-**Groundedness** **Detection**: Detects and blocks "hallucinations" in model outputs, ensuring that the text responses of large language models are factual and accurate, based on the source materials provided.
+**Groundedness** **Detection**: Detects and blocks incorrect information in model outputs, ensuring that the text responses of large language models are factual and accurate, based on the source materials provided.
 
 **Prompt Shields**: Analyzes LLM inputs and detects user Prompt attacks and Document attacks.
 

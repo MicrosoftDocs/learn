@@ -1,4 +1,4 @@
-Implementing into an AI-powered customer support agent has been a gamechanger for Contoso Camping Store! Customers can ask the support agent for product recommendations and guidance on how to use Contoso Camping Store products. However, we want to ensure that the model provides responses that are grounded in the source material that’s passed onto the model.
+Implementing into an AI-powered customer support agent has been a game changer for Contoso Camping Store! Customers can ask the support agent for product recommendations and guidance on how to use Contoso Camping Store products. However, we want to ensure that the model provides responses that are grounded in the source material that’s passed onto the model.
 
 Let’s test prompts with the model to detect the groundedness of its output.
 
@@ -22,7 +22,7 @@ Given that the **Grounding Source** and the **Completion** output are aligned, t
 
 ## Ungrounded Q&A
 
-Since models can sometimes hallucinate, we’ll want to ensure that the model can detect whether an output is ungrounded. Like the prior example, we can test for an ungrounded output but instead, we’ll provide a **Completion** that either contradicts or lacks alignment with the **Grounding Source**.
+Since models can sometimes provide incorrect information, we’ll want to ensure that the model can detect whether an output is ungrounded. Like the prior example, we can test for an ungrounded output but instead, we’ll provide a **Completion** that either contradicts or lacks alignment with the **Grounding Source**.
 
 1. In the **Test** section, enter the following into each box:
 

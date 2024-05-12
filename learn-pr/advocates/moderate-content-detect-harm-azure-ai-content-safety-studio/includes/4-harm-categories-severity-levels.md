@@ -1,6 +1,6 @@
 Every harm category the service applies also comes with a severity level rating. The severity level is meant to indicate the severity of the consequences of showing the flagged content. Both text and image content use the same set of flags.
 
-## Harm Categories
+## Harm categories
 
 | **Category** | **Description** |
 |---|---|
@@ -11,7 +11,7 @@ Every harm category the service applies also comes with a severity level rating.
 
 Classification can be multi-labeled. For example, when a text sample goes through the text moderation model, it could be classified as both Sexual content and Violence.
 
-## Severity Levels
+## Severity levels
 
 Every harm category the service applies also comes with a severity level rating. The severity level is meant to indicate the severity of the consequences of showing the flagged content. The severity scale ranges from 0-7. The text model supports both the full 0-7 and the trimmed scale of 0, 2, 4, and 6. The current version of the image model only supports the trimmed scale.
 

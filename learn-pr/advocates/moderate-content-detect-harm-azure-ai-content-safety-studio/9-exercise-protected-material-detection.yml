@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.moderate-content-and-detect-harm-with-azure-ai-content-safety-studio.exercise-protected-material-detection
-title: Exercise – Protected Material Detection
+uid: learn.moderate-content-detect-harm-azure-ai-content-safety-studio.exercise-protected-material-detection
+title: Exercise – Protected material detection
 metadata:
-  title: Exercise – Protected Material Detection
+  title: Exercise – Protected material detection
   description: Learn how to detect protected material in content using the Azure AI Content Safety Studio.
   ms.date: 05/09/2024
   author: aprilspeight

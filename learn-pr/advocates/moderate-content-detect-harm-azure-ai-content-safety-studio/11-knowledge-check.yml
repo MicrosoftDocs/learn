@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.moderate-content-and-detect-harm-with-azure-ai-content-safety-studio.knowledge-check
+uid: learn.moderate-content-detect-harm-azure-ai-content-safety-studio.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -28,7 +28,7 @@ quiz:
     - content: To measure the speed at which the model detects harmful content.
       isCorrect: false
       explanation: Precision doesn't measure the speed of detection; it solely focuses on the accuracy of identification.
-  - content: Which feature of the Azure AI Content Safety Studio is responsible for detecting and blocking hallucinations in model outputs?
+  - content: Which feature of the Azure AI Content Safety Studio is responsible for detecting and blocking incorrect information in model outputs?
     choices:
     - content: Text Moderation
       isCorrect: false
@@ -41,7 +41,7 @@ quiz:
       explanation: Image Moderation analyzes images to identify and block offensive content.
     - content: Groundedness Detection
       isCorrect: true
-      explanation:  Groundedness Detection is the feature responsible for detecting and blocking "hallucinations" in model outputs, ensuring that the text responses are factual and accurate based on the provided source materials.
+      explanation:  Groundedness Detection is the feature responsible for detecting and blocking incorrect information in model outputs, ensuring that the text responses are factual and accurate based on the provided source materials.
   - content: What is the purpose of the F1 Score metric?
     choices:
     - content: To measure the total volume of harmful content identified by the model.

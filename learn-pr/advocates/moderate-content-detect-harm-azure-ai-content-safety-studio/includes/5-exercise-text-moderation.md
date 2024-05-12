@@ -1,20 +1,20 @@
 Contoso Camping Store provides customers with the ability to speak with an AI-powered customer support agent and post product reviews. We could leverage an AI model to detect whether the text input from our customers is harmful and later use the detection results to implement the necessary precautions.
 
-## Safe Content
+## Safe content
 
 Let’s first test some positive customer feedback. 
 
 1. In Content Safety Studio, select **Moderate text content**.
 1. In the **Test** box, enter the following: 
 
-   *I recently used the PowerBurner Camping Stove on my camping trip, and I must say, it was fantastic! It was easy to use, and the heat control was impressive._ _Great product!*
+   *I recently used the PowerBurner Camping Stove on my camping trip, and I must say, it was fantastic! It was easy to use, and the heat control was impressive. Great product!*
 
 1. Set all **Threshold levels** to **Medium**.
 1. Select **Run test**.
 
 The content is allowed, and the severity level is **Safe** across all categories. This was to be expected given the positive and unharmful sentiment of the customer’s feedback.
 
-## Harmful Content
+## Harmful content
 
 But what would happen if we tested a harmful statement? Let’s test with negative customer feedback. While it's OK to dislike a product, we don't want to condone any name calling or degrading statements.
 
@@ -25,14 +25,14 @@ But what would happen if we tested a harmful statement? Let’s test with negati
 1. Set all **Threshold levels** to **Medium**.
 1. Select **Run test**.
 
-Although the content is **Allowed**, the **Severity level** for **Hate** is low. To guide our model to block such content, we’d need to adjust the **Threshold level** for **Hate**. A lower **Threshold level** would block any content that’s a low, medium, or high severity. There’s no room for exceptions!
+   Although the content is **Allowed**, the **Severity level** for **Hate** is low. To guide our model to block such content, we’d need to adjust the **Threshold level** for **Hate**. A lower **Threshold level** would block any content that’s a low, medium, or high severity. There’s no room for exceptions!
 
 1. Set the **Threshold level** for **Hate** to **Low**.
 1. Select **Run test**.
 
 The content is now **Blocked** and was rejected by the filter in the **Hate** category.
 
-## Violent Content with Misspelling
+## Violent content with misspelling
 
 We can’t anticipate that all text content from our customers would be free of spelling errors. Fortunately, the **Moderate text content** tool can detect harmful content even if the content has spelling errors. Let’s test this capability on additional customer feedback about an incident with a racoon.
 
@@ -45,7 +45,7 @@ We can’t anticipate that all text content from our customers would be free of 
 
 Although the content is **Allowed**, the **Severity level** for **Violence** is **Low**. You could adjust the **Threshold level** for **Violence** to try and block such content, however, should we? Consider a scenario where the customer is asking this question in a conversation with the AI-powered customer support agent in hopes of receiving guidance on how to clean the cooker. There may be no ill-intent in submitting this question and therefore, it may be a better choice not to block such content. As the developer, consider various scenarios where such content may be OK before deciding to adjust the filter and block similar content.
 
-## Run a Bulk Test
+## Run a bulk test
 
 So far, we’ve tested text content for singular isolated text content. However, if we have a bulk dataset of text content, we could test the bulk dataset at once and receive metrics based on the model’s performance.
 
@@ -65,14 +65,14 @@ The **Recall** metric reveals how much of the actual harmful content the model c
 
 The **F1 Score** metric is a function of **Precision** and **Recall**. It's needed when you seek a balance between Precision and Recall. The maximum value is **1**.
 
-We’re also able to view each record and the **Severity level** across each enabled category. The **Judgement** column consists of the following:
+We’re also able to view each record and the **Severity level** across each enabled category. The **Judgment** column consists of the following:
 
 - Allowed
 - Blocked
 - Allowed with warning
 - Blocked with warning
 
-The warnings are an indication that the general judgement from the model is different from the corresponding record label. To resolve such differences, you could adjust the **Threshold levels** within the **Configure filters** section to finetune the model.
+The warnings are an indication that the general judgment from the model is different from the corresponding record label. To resolve such differences, you could adjust the **Threshold levels** within the **Configure filters** section to finetune the model.
 
 The result we’re given is the distribution across categories. This considers the number of records that were judged to be **Safe** compared to the records for the corresponding category which were either **Low**, **Medium**, or **High**.
 

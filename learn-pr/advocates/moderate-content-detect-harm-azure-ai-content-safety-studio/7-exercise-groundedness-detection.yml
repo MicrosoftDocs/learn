@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.moderate-content-and-detect-harm-with-azure-ai-content-safety-studio.exercise-groundedness-detection
-title: Exercise – Groundedness Detection
+uid: learn.moderate-content-detect-harm-azure-ai-content-safety-studio.exercise-groundedness-detection
+title: Exercise – Groundedness detection
 metadata:
-  title: Exercise – Groundedness Detection
+  title: Exercise – Groundedness detection
   description: Learn how to detect groundedness in content using the Azure AI Content Safety Studio.
   ms.date: 05/09/2024
   author: aprilspeight

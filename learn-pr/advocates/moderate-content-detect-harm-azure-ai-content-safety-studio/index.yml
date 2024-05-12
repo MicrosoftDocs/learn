@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.moderate-content-and-detect-harm-with-azure-ai-content-safety-studio
+uid: learn.moderate-content-detect-harm-azure-ai-content-safety-studio
 metadata:
   ms.author: apspeigh
   author: aprilspeight
@@ -34,17 +34,17 @@ roles:
 products:
 - azure
 units:
-- learn.moderate-content-and-detect-harm-with-azure-ai-content-safety-studio.introduction
-- learn.moderate-content-and-detect-harm-with-azure-ai-content-safety-studio.content-safety-studio
-- learn.moderate-content-and-detect-harm-with-azure-ai-content-safety-studio.prepare
-- learn.moderate-content-and-detect-harm-with-azure-ai-content-safety-studio.harm-categories-and-severity-levels
-- learn.moderate-content-and-detect-harm-with-azure-ai-content-safety-studio.exercise-text-moderation
-- learn.moderate-content-and-detect-harm-with-azure-ai-content-safety-studio.exercise-image-moderation
-- learn.moderate-content-and-detect-harm-with-azure-ai-content-safety-studio.exercise-groundedness-detection
-- learn.moderate-content-and-detect-harm-with-azure-ai-content-safety-studio.exercise-prompt-shields
-- learn.moderate-content-and-detect-harm-with-azure-ai-content-safety-studio.exercise-protected-material-detection
-- learn.moderate-content-and-detect-harm-with-azure-ai-content-safety-studio.exercise-integrating-with-the-contoso-camping-store-platform
-- learn.moderate-content-and-detect-harm-with-azure-ai-content-safety-studio.knowledge-check
-- learn.moderate-content-and-detect-harm-with-azure-ai-content-safety-studio.summary
+- learn.moderate-content-detect-harm-azure-ai-content-safety-studio.introduction
+- learn.moderate-content-detect-harm-azure-ai-content-safety-studio.content-safety-studio
+- learn.moderate-content-detect-harm-azure-ai-content-safety-studio.prepare
+- learn.moderate-content-detect-harm-azure-ai-content-safety-studio.harm-categories-severity-levels
+- learn.moderate-content-detect-harm-azure-ai-content-safety-studio.exercise-text-moderation
+- learn.moderate-content-detect-harm-azure-ai-content-safety-studio.exercise-image-moderation
+- learn.moderate-content-detect-harm-azure-ai-content-safety-studio.exercise-groundedness-detection
+- learn.moderate-content-detect-harm-azure-ai-content-safety-studio.exercise-prompt-shields
+- learn.moderate-content-detect-harm-azure-ai-content-safety-studio.exercise-protected-material-detection
+- learn.moderate-content-detect-harm-azure-ai-content-safety-studio.exercise-integrate-contoso-camping-store-platform
+- learn.moderate-content-detect-harm-azure-ai-content-safety-studio.knowledge-check
+- learn.moderate-content-detect-harm-azure-ai-content-safety-studio.summary
 badge:
-  uid: learn.moderate-content-and-detect-harm-with-azure-ai-content-safety-studio-badge
+  uid: learn.moderate-content-detect-harm-azure-ai-content-safety-studio-badge

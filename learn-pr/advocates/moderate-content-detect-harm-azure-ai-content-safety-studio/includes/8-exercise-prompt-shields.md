@@ -1,6 +1,6 @@
 Thus far, we discussed ways that we could both detect harmful content and mitigate harmful content generation from the model. Let’s now prevent prompt injections by adding another layer of security to the model. 
 
-## User Prompt Attack
+## User prompt attack
 
 This shield targets User Prompt injection attacks, where users deliberately exploit system vulnerabilities to elicit unauthorized behavior from the model. A User Prompt injection could lead to inappropriate content generation or violations of system-imposed restrictions.
 
@@ -14,7 +14,7 @@ For the Contoso Camping Store, a user prompt injection could occur during a cust
 
 With good reason, jailbreak attacks were detected in the DAN prompt. We’d certainly want to mitigate the possibility of such an attack from a customer!
 
-## Document Attack
+## Document attack
 
 This shield aims to safeguard against attacks that use information not directly supplied by the user or developer, such as external documents. Attackers might embed hidden instructions in these materials to gain unauthorized control over the model session.
 
@@ -30,7 +30,7 @@ Let’s test for an indirect prompt injection with fictional data provided by a 
 
 The model was able to detect the jailbreak! This detection would be a great asset to Contoso Camping Store to help mitigate the risk of an indirect prompt injection from their external data sources.
 
-## Prompt and Document Attack
+## Prompt and document attack
 
 Suppose a customer submits a DAN prompt via chat to the Contoso Camping Store’s AI-powered customer support assistant. Later, the customer submits an indirect prompt injection via email to the company’s AI-moderated customer support inbox. The customer executes such actions in hopes of manipulating the model into doing their bidding. What outcome can we expect from the model if this action were taken? Let’s test the model with both a direct and indirect prompt injection.
 
