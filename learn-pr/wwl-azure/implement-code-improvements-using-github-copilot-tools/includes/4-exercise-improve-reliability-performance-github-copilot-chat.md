@@ -73,7 +73,7 @@ In this exercise, you'll use GitHub Copilot Chat to generate suggestions that he
 
 You'll use the **APL2007M5BankAccount-Reliability** project during this exercise. It's located in the **SampleApps** folder that you downloaded in the previous unit. You should be able to find the SampleApps folder on your Windows Desktop.
 
-1. Open the **APL2007M5BankAccount-Reliability** sample app in Visual Studio Code.
+Open the **APL2007M5BankAccount-Reliability** sample app in Visual Studio Code.
 
 ### Develop prompts for GitHub Copilot Chat
 
@@ -172,9 +172,9 @@ GitHub Copilot Chat can be used to help improve the reliability of your code. Yo
 
     *1. **Use Specific Exceptions**: Instead of throwing the base `Exception` class, use more specific exceptions. This makes it easier for the calling code to understand and handle specific types of errors. For example, you could throw an InvalidOperationException when trying to debit or transfer with insufficient funds.*
 
-    *1. **Include More Information in Exception Messages**: The exception messages could provide more details about the operation that failed. For example, in the `Debit` method, the exception message could include the attempted debit amount and the current balance.*
+    *2. **Include More Information in Exception Messages**: The exception messages could provide more details about the operation that failed. For example, in the `Debit` method, the exception message could include the attempted debit amount and the current balance.*
 
-    *1. **Consider Custom Exceptions**: If there are specific error conditions that are unique to your application, you might want to create custom exception classes. Creating custom exceptions allows you to encapsulate more information about the error condition and makes your code more self-documenting.*
+    *3. **Consider Custom Exceptions**: If there are specific error conditions that are unique to your application, you might want to create custom exception classes. Creating custom exceptions allows you to encapsulate more information about the error condition and makes your code more self-documenting.*
 
     *Here's how you could improve the `Debit` method with these suggestions:*
 
@@ -254,19 +254,19 @@ GitHub Copilot Chat can be used to help improve the reliability of your code. Yo
 
     *1. Use Decimal for Monetary Values: It's generally recommended to use the decimal type instead of double for monetary values to avoid rounding errors.*
 
-    *1. Add More Validations: You could add more validations in your methods. For example, in the Transfer method, you could check if the toAccount is not null before proceeding with the transfer.*
+    *2. Add More Validations: You could add more validations in your methods. For example, in the Transfer method, you could check if the toAccount is not null before proceeding with the transfer.*
 
-    *1. Use Constants for Magic Numbers: In your Transfer method, there's a magic number 500. It would be better to define it as a constant with a meaningful name at the top of your class.*
+    *3. Use Constants for Magic Numbers: In your Transfer method, there's a magic number 500. It would be better to define it as a constant with a meaningful name at the top of your class.*
 
     ```csharp
     private const double MaxTransferAmountForDifferentOwners = 500;
     ```
 
-    *1. Custom Exception for Transfer Limit: Instead of throwing a general Exception when the transfer amount exceeds the limit for different account owners, consider creating a custom exception like ExceededTransferLimitException.*
+    *4. Custom Exception for Transfer Limit: Instead of throwing a general Exception when the transfer amount exceeds the limit for different account owners, consider creating a custom exception like ExceededTransferLimitException.*
 
-    *1. Logging: Consider adding logging to your application. This can help you understand the flow of your application and diagnose issues.*
+    *5. Logging: Consider adding logging to your application. This can help you understand the flow of your application and diagnose issues.*
 
-    *1. Unit Tests: Write unit tests for your methods to ensure they behave as expected in various scenarios. This can help catch issues early in the development process.*
+    *6. Unit Tests: Write unit tests for your methods to ensure they behave as expected in various scenarios. This can help catch issues early in the development process.*
 
 1. Rather than trying to implement all of the suggestions at once, consider implementing them incrementally.
 
@@ -282,11 +282,11 @@ GitHub Copilot Chat can be used to help improve the reliability of your code. Yo
 
     *1. Consolidate Validation Logic: You could create a separate validation class or method to handle all the validation logic. This would make your BankAccount class cleaner and more focused on its main responsibilities.*
 
-    *1. Use Custom Validation Attributes: For some of the validation, you could use custom validation attributes. This would allow you to annotate the properties that need validation and keep the validation logic separate from the business logic.*
+    *2. Use Custom Validation Attributes: For some of the validation, you could use custom validation attributes. This would allow you to annotate the properties that need validation and keep the validation logic separate from the business logic.*
 
-    *1. Use Fluent Validation: Fluent Validation is a .NET library that uses a fluent interface and lambda expressions for building validation rules. This can make your validation code more intuitive and easier to read.*
+    *3. Use Fluent Validation: Fluent Validation is a .NET library that uses a fluent interface and lambda expressions for building validation rules. This can make your validation code more intuitive and easier to read.*
 
-    *1. Avoid Magic Numbers: In your Transfer method, you have a hardcoded value of 500. It's generally a good practice to avoid "magic numbers" and instead define them as constants with meaningful names at the top of your class.*
+    *4. Avoid Magic Numbers: In your Transfer method, you have a hardcoded value of 500. It's generally a good practice to avoid "magic numbers" and instead define them as constants with meaningful names at the top of your class.*
 
     Here's an example of how you might implement some of these suggestions:
 
@@ -430,11 +430,11 @@ GitHub Copilot Chat can be used to help improve the reliability of your code. Yo
 
     *1. Specific Exception Types: Instead of catching all exceptions, you could catch specific exception types that you expect might occur. This allows you to handle different types of exceptions in different ways.*
 
-    *1. Logging: Instead of (or in addition to) writing the exception message to the console, you could log the exception. This could be as simple as writing to a file, or you could use a logging library that supports different log levels, multiple log targets, etc.*
+    *2. Logging: Instead of (or in addition to) writing the exception message to the console, you could log the exception. This could be as simple as writing to a file, or you could use a logging library that supports different log levels, multiple log targets, etc.*
 
-    *1. Rethrowing Exceptions: In some cases, you might want to rethrow an exception after catching it. This allows a higher level of your code to also catch the exception and handle it. Be careful with this, as it can make your code harder to understand if overused.*
+    *3. Rethrowing Exceptions: In some cases, you might want to rethrow an exception after catching it. This allows a higher level of your code to also catch the exception and handle it. Be careful with this, as it can make your code harder to understand if overused.*
 
-    *1. `Finally` Block: You can use a `finally` block to ensure that certain code gets executed whether an exception is thrown or not. This is useful for cleanup code, like closing a file or a network connection.*
+    *4. `Finally` Block: You can use a `finally` block to ensure that certain code gets executed whether an exception is thrown or not. This is useful for cleanup code, like closing a file or a network connection.*
 
     *Here's an example of how you might apply these suggestions to the CreateBankAccounts method:*
 

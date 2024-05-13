@@ -1,6 +1,6 @@
 This module explores using the GitHub Copilot Chat extension for Visual Studio Code to implement code improvements. You learn about making improvements to code quality, code reliability, code performance, and code security. Prompts are developed for each improvement area and submitted to GitHub Copilot for suggestions on how to improve selected code. Exercises teach you how to craft prompts that generate suggestions for specific improvement areas. Exercises also demonstrate how to implement code updates suggestions, accelerate your development process, and improve the quality of your code.
 
-Imagine you're a developer working on a project that requires high-quality, secure, and efficient code. You've been using Visual Studio Code for your development tasks, but you're looking for a tool that can help you improve your existing code. You want to make improvements to code quality, reliability, performance, and security. You've heard that GitHub Copilot can accelerate your coding process and help you write better code. You're interested in using these tools generate and implement code update suggestions that improve code quality, reliability, performance, and security.
+Imagine you're a developer working on a project that requires high-quality, secure, and efficient code. You've been using Visual Studio Code for your development tasks, but you're looking for a tool that can help you improve your existing code. You want to make improvements to code quality, reliability, performance, and security. You've heard that GitHub Copilot can accelerate your coding process and help you write better code. You're interested in using these tools to generate and implement code update suggestions that improve code quality, reliability, performance, and security.
 
 The topics covered in this module include:
 
@@ -8,7 +8,7 @@ The topics covered in this module include:
 - Improving code quality with GitHub Copilot Chat.
 - Improving code reliability and performance with GitHub Copilot Chat.
 - Improving code security with GitHub Copilot Chat.
-- Challenge exercise: Implementing code improvements with GitHub Copilot Chat.
+- Completing an "app improvement" challenge and reviewing a possible solution.
 
 By the end of this module, you're able to use the GitHub Copilot Chat extension for Visual Studio Code to generate and implement code update suggestions that improve code quality, reliability, performance, and security.
 

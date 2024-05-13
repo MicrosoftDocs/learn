@@ -75,7 +75,13 @@ Many other security flaws can found in code. It’s important for developers to 
 
 ## Improve code security using GitHub Copilot Chat
 
-In this exercise, you use GitHub Copilot Chat to generate suggestions that help you improve code security in a sample application.
+In this exercise, you'll use GitHub Copilot Chat to generate suggestions that help you improve code security in a sample application.
+
+### Prepare sample apps in your Visual Studio Code environment
+
+You'll use the **APL2007M5BankAccount-Security** project during this exercise. It's located in the **SampleApps** folder that you downloaded in the previous unit. You should be able to find the SampleApps folder on your Windows Desktop.
+
+Open the **APL2007M5BankAccount-Security** sample app in Visual Studio Code.
 
 ### Develop prompts for GitHub Copilot Chat
 
@@ -114,7 +120,9 @@ Your goal for this exercise is to write prompts that will help you to improve co
 
 ### Improve code security of the BankAccount class using GitHub Copilot Chat
 
-Developing secure code is essential for any software project. The level of security required depends on the nature of the application and the data it processes. In this exercise, you use GitHub Copilot Chat to generate suggestions for improving the security of the BankAccount class in the **APL2007M5BankAccount-Security** project.
+Developing secure code is essential for any software project. The level of security required depends on the nature of the application and the data it processes.
+
+In this exercise, you use GitHub Copilot Chat to generate suggestions for improving the security of the BankAccount class in the **APL2007M5BankAccount-Security** project.
 
 GitHub Copilot Chat can be used to help improve code security. Your prompts can direct GitHub Copilot to generate suggestions for improving authentication, data protection, logging, and dozens of other topics. You can also create broadly scoped prompts that ask for general suggestions to improve code security. A combination of specific and general prompts can help you to identify areas that need improvement and implement the necessary changes.
 
@@ -207,7 +215,7 @@ GitHub Copilot Chat can be used to help improve code security. Your prompts can 
     }
     ```
 
-    *1. Data Masking: If you need to display these properties (for example, in a user interface), consider masking part of the data. For instance, you could display only the last four digits of the account number.*
+    *2. Data Masking: If you need to display these properties (for example, in a user interface), consider masking part of the data. For instance, you could display only the last four digits of the account number.*
 
     ```csharp
     public string GetMaskedAccountNumber() 
@@ -216,7 +224,7 @@ GitHub Copilot Chat can be used to help improve code security. Your prompts can 
     }
     ```
 
-    *1. Encryption: If the data needs to be stored or transmitted, consider encrypting it. This would require a secure encryption and decryption mechanism.*
+    *3. Encryption: If the data needs to be stored or transmitted, consider encrypting it. This would require a secure encryption and decryption mechanism.*
 
     *Remember, the best way to protect sensitive data depends on your specific use case and requirements. Always follow best practices for data protection and comply with any relevant data protection laws and regulations.*
 
@@ -238,13 +246,13 @@ GitHub Copilot Chat can be used to help improve code security. Your prompts can 
 
     *1. Sensitive Data Exposure: In a real-world application, sensitive data like account numbers, account holder names, and transaction amounts should be encrypted when stored and transmitted. In this code, these values are simply printed to the console, which would not be secure in a production environment.*
 
-    *1. Error Handling: The code catches exceptions and writes them to the console. In a real-world application, you should avoid exposing any detailed error information that could provide hints to an attacker about the internal workings of your application. Instead, log the details to a secure, private log and show a generic error message to the user.*
+    *2. Error Handling: The code catches exceptions and writes them to the console. In a real-world application, you should avoid exposing any detailed error information that could provide hints to an attacker about the internal workings of your application. Instead, log the details to a secure, private log and show a generic error message to the user.*
 
-    *1. Random Number Generation: The Random class in C# is not suitable for generating secure random numbers, as it's predictable. If you need to generate secure random numbers (for example, for generating account numbers or transaction IDs), consider using a more secure method, like the RNGCryptoServiceProvider class.*
+    *3. Random Number Generation: The Random class in C# is not suitable for generating secure random numbers, as it's predictable. If you need to generate secure random numbers (for example, for generating account numbers or transaction IDs), consider using a more secure method, like the RNGCryptoServiceProvider class.*
 
-    *1. Input Validation: While not directly applicable to this code, it's worth mentioning that any user-provided inputs should be validated and sanitized to prevent attacks such as SQL Injection or Cross-Site Scripting (XSS).*
+    *4. Input Validation: While not directly applicable to this code, it's worth mentioning that any user-provided inputs should be validated and sanitized to prevent attacks such as SQL Injection or Cross-Site Scripting (XSS).*
 
-    *1. Secure Coding Practices: Follow secure coding practices like principle of least privilege, defense in depth, etc. For example, limit the permissions of the application to only what it needs to function.*
+    *5. Secure Coding Practices: Follow secure coding practices like principle of least privilege, defense in depth, etc. For example, limit the permissions of the application to only what it needs to function.*
 
    *Remember, security is a broad and complex field, and these are just a few areas to consider. Depending on the specific requirements and context of your application, there may be other security considerations as well.*
 
@@ -264,9 +272,9 @@ GitHub Copilot Chat can be used to help improve code security. Your prompts can 
 
     *1. Avoid revealing sensitive information: When logging or displaying exceptions, be careful not to reveal sensitive information. For example, if an exception occurs because of a failed database operation, the exception message might contain the SQL query, which could reveal table names, column names, or other sensitive information. In the selected code, you're already doing a good job of this by only logging the exception message and not the entire exception.*
 
-    *1. Catch specific exceptions: It's generally a good practice to catch the most specific exceptions possible. This allows you to handle different types of exceptions in different ways. For example, you might want to retry the operation if a TimeoutException occurs, but if an InvalidOperationException occurs, you might want to log the error and abort the operation. In the selected code, you're catching ArgumentException and Exception, but there might be other specific exceptions you could catch as well.*
+    *2. Catch specific exceptions: It's generally a good practice to catch the most specific exceptions possible. This allows you to handle different types of exceptions in different ways. For example, you might want to retry the operation if a TimeoutException occurs, but if an InvalidOperationException occurs, you might want to log the error and abort the operation. In the selected code, you're catching ArgumentException and Exception, but there might be other specific exceptions you could catch as well.*
 
-    *1. Don't swallow exceptions: If you catch an exception and don't rethrow it or otherwise handle it, you're "swallowing" the exception. This can make it difficult to debug issues because it hides the fact that an exception occurred. In the selected code, you're logging the exceptions but not rethrowing them. Depending on the situation, you might want to rethrow the exception after logging it.*
+    *3. Don't swallow exceptions: If you catch an exception and don't rethrow it or otherwise handle it, you're "swallowing" the exception. This can make it difficult to debug issues because it hides the fact that an exception occurred. In the selected code, you're logging the exceptions but not rethrowing them. Depending on the situation, you might want to rethrow the exception after logging it.*
 
     *Here's an example of how you might modify the `CreateBankAccounts` method to implement these suggestions:*
 

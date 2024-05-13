@@ -54,6 +54,8 @@ This module includes practice activities that use GitHub Copilot, GitHub Copilot
 > [!NOTE]
 > If you have not already installed Visual Studio Code and the required extensions, complete those installations before continuing.
 
+To prepare for the exercises in this module, complete the following steps:
+
 1. To download a zip file containing the sample apps, select the following link: [SampleApps](https://raw.githubusercontent.com/MicrosoftLearning/APL-2007-Accelerate-app-development-by-using-GitHub-Copilot/master/LearnModuleExercises/Downloads/SampleApps.zip).
 
 1. Unzip the download files.
@@ -146,13 +148,13 @@ GitHub Copilot Chat will suggest code updates that refactor your code. It's impo
 
     `private static readonly Random random = new Random();`
 
-    *1. Use meaningful variable names: The variable name range in the GenerateRandomDateOpened method is a bit vague. A more descriptive name like daysRange could be used.*
+    *2. Use meaningful variable names: The variable name range in the GenerateRandomDateOpened method is a bit vague. A more descriptive name like daysRange could be used.*
 
-    *1. Add comments: While the code is mostly self-explanatory, adding comments to explain what each method does can be helpful for other developers reading your code.*
+    *3. Add comments: While the code is mostly self-explanatory, adding comments to explain what each method does can be helpful for other developers reading your code.*
 
-    *1. Use constants for magic numbers: In the GenerateRandomDateOpened method, the number 10 is used to represent the number of years back the start date can be. This could be extracted to a constant with a descriptive name, like MaxYearsBack.*
+    *4. Use constants for magic numbers: In the GenerateRandomDateOpened method, the number 10 is used to represent the number of years back the start date can be. This could be extracted to a constant with a descriptive name, like MaxYearsBack.*
 
-    *1. Use var keyword: In C#, you can use the var keyword when the right-hand side of the assignment makes the type obvious. This can make your code cleaner and easier to read.*
+    *5. Use var keyword: In C#, you can use the var keyword when the right-hand side of the assignment makes the type obvious. This can make your code cleaner and easier to read.*
 
    *Here's how your code might look after these improvements:*
 
@@ -217,11 +219,11 @@ GitHub Copilot Chat will suggest code updates that refactor your code. It's impo
 
     *1. Separation of Concerns: The Main method is doing a lot of things: creating accounts, simulating transactions, and simulating transfers. These could be broken down into separate methods to improve readability and maintainability.*
 
-    *1. Error Handling: The code uses a general Exception for error handling. It would be better to create custom exceptions that are specific to the application. This would make it easier to understand and handle errors.*
+    *2. Error Handling: The code uses a general Exception for error handling. It would be better to create custom exceptions that are specific to the application. This would make it easier to understand and handle errors.*
 
-    *1. Magic Numbers: The code contains magic numbers (like 20 for the number of accounts, 100 for the number of transactions, etc.). These should be replaced with named constants.*
+    *3. Magic Numbers: The code contains magic numbers (like 20 for the number of accounts, 100 for the number of transactions, etc.). These should be replaced with named constants.*
 
-    *1. Code Duplication: The code for generating random values is duplicated in several places. This could be refactored into a utility class or methods.*
+    *4. Code Duplication: The code for generating random values is duplicated in several places. This could be refactored into a utility class or methods.*
 
     ```csharp
     class Program
@@ -289,11 +291,11 @@ GitHub Copilot Chat will suggest code updates that refactor your code. It's impo
 
     *1. Separate Concerns: The `Program` class is doing too much. It's creating accounts, simulating transactions, and generating random data. Each of these responsibilities could be a separate class. For example, you could have a `BankAccountFactory` class that's responsible for creating bank accounts, a `TransactionSimulator` class for simulating transactions, and a `RandomDataGenerator` class for generating random data.*
 
-    *1. Use Interfaces: Interfaces can be used to define a contract for classes. This can make your code more flexible and easier to test. For example, you could define an `IAccountFactory` interface with a `Create` method, and then have `BankAccountFactory` implement this interface.*
+    *2. Use Interfaces: Interfaces can be used to define a contract for classes. This can make your code more flexible and easier to test. For example, you could define an `IAccountFactory` interface with a `Create` method, and then have `BankAccountFactory` implement this interface.*
 
-    *1. Magic Numbers: There are several "magic numbers" in the code (like 10, 50000, -500, 500, etc.). These numbers should be replaced with named constants to make the code more readable and maintainable.*
+    *3. Magic Numbers: There are several "magic numbers" in the code (like 10, 50000, -500, 500, etc.). These numbers should be replaced with named constants to make the code more readable and maintainable.*
 
-    *1. Duplication: The `SimulateTransactions` and `SimulateTransfers` methods have almost identical code. This duplication could be eliminated by creating a common method that both methods call.*
+    *4. Duplication: The `SimulateTransactions` and `SimulateTransfers` methods have almost identical code. This duplication could be eliminated by creating a common method that both methods call.*
 
    *Here's an example of how you could refactor the CreateBankAccounts method:*
 
