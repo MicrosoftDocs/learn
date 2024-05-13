@@ -7,7 +7,7 @@ You should expect component malfunctions, platform outages, performance degradat
 
 Contoso Air is a commercial airline that has an in-house development department. The main LOB application is a booking solution that allows customers to book flights directly with Contoso Air. The app is built in Azure and uses Azure App Service, Cosmos DB, Azure Functions, Azure Logic Apps, and Azure Service Bus.
 
-## Determine failure risks.
+## Determine failure risks
 
 **Identify potential failure points in the system, especially for the critical components, and determine the effect on user and system flows.**
 
