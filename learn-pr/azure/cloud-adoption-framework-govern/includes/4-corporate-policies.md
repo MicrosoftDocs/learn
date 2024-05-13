@@ -21,17 +21,20 @@ When you evaluate existing corporate policies to apply them to the cloud or to a
 
 As you'll learn in the next unit, the Tailwind Traders policy on protected data fails to answer these questions. Some of them might be addressed elsewhere, like in policy handbooks, but the final technology-focused question is an undeniable miss. Instead of mitigating risk, it actually introduces long-term risks by locking in a single solution.
 
-## Define corporate policy
+## Incorporate cloud governance policies
 
 Defining corporate policy requires a focus on identifying and mitigating business risks, regardless of the cloud platform the organization uses. Healthy cloud-governance strategy begins with sound corporate policy. The following three-step process guides the iterative development of sound corporate policies:
 
 | &nbsp; | &nbsp;  |
 |--|--|
-| <br> :::image type="content" source="../media/business-risk.png" alt-text="Business risk icon." border="false"::: | <br> [Business risk](/azure/cloud-adoption-framework/govern/policy-compliance/business-risk?azure-portal=true): Investigate current cloud adoption plans and data classification to identify risks to the business. Work with the business to balance risk tolerance and mitigation costs. |
-| <br> :::image type="content" source="../media/corporate-policy.png" alt-text="Policy and compliance icon." border="false"::: | <br> [Policy and compliance](/azure/cloud-adoption-framework/govern/policy-compliance/policy-definition?policy-definition=true): Evaluate risk tolerance to inform policies that govern cloud adoption and manage risks. In some industries, third-party compliance affects initial policy creation. |
-| <br> :::image type="content" source="../media/enforcement.png" alt-text="Process enforcement icon." border="false"::: | <br> [Processes](/azure/cloud-adoption-framework/govern/policy-compliance/processes?Azure-portal=true): The pace of adoption and innovation activities are naturally going to create policy violations. Executing relevant processes helps to monitor and enforce adherence to policies. |
+| <br> :::image type="content" source="../media/business-risk.png" alt-text="Business risk icon." border="false"::: | <br> **Assess cloud risks**: Investigate current cloud adoption plans and data classification to identify risks to the business. Work with the business to balance risk tolerance and mitigation costs. |
+| <br> :::image type="content" source="../media/corporate-policy.png" alt-text="Policy and compliance icon." border="false"::: | <br> **Document cloud governance policies**: \<new content>|
+| <br> :::image type="content" source="../media/enforcement.png" alt-text="Process enforcement icon." border="false"::: | <br> **Enforce cloud governance policies**: \<new content> |
+|\<icon> |**Monitor cloud governance**: \<new content>|
 
-## Business risk
+\<For the following sections, update content>
+
+## Assess cloud risks
 
 During cloud adoption, you encounter various risks. Here are some examples of risks that might evolve at different points of your adoption effort:
 
@@ -54,7 +57,7 @@ It's important to note that none of the concerns are related to "a specific netw
 
 It's likely that deeper investigation of stakeholder concerns and the cloud-adoption plan shows more risks that the organization can't tolerate. But for now, we have enough to start shaping governance policies that address these tangible risks.
 
-## Policy and compliance
+## Document cloud governance policies
 
 Corporate policies establish the requirements, standards, and goals that your IT staff and automated systems need to support. Individual policy statements are guidelines for addressing specific risks that are identified during your risk assessment process. Here are a few examples of proper corporate policies that guide adoption in public and private cloud deployments, and which avoid locking in a specific vendor:
 
@@ -66,7 +69,7 @@ Corporate policies establish the requirements, standards, and goals that your IT
 
   *Design consideration*: In Azure, all deployed assets must be tagged with proper data-classification levels. The cloud governance team and the application owner must review the classifications before deployment to the cloud.
 
-## Process
+## Enforce cloud governance policies
 
 The cloud provides guardrails to help reduce the human overhead of recurring processes by providing validation triggers based on implementation configuration. The following table outlines a few triggers and actions that can address the risks that concern the Tailwind Traders CIO:
 

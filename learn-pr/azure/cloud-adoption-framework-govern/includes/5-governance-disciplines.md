@@ -1,3 +1,5 @@
+\<delete entire page>
+
 Common governance disciplines within cloud platforms inform policies, align toolchains, and help organizations determine how best to automate and enforce corporate policies across their unique cloud platforms.
 
 The following table summarizes each discipline from the Govern methodology in the Cloud Adoption Framework:
