@@ -10,7 +10,7 @@ Now, the team wants your help updating its deployment workflow. The team needs t
 
 :::image type="content" source="../media/1-architecture-diagram.png" alt-text="Diagram that shows the solution architecture, including the website app and integration with the vendor." border="false":::
 
-## What will learn?
+## What will you learn?
 
 In this module, you learn how to extend a workflow to deploy Bicep code to multiple Azure environments in a consistent way. You create separate workload identities for each environment to support higher security and isolation.
 
