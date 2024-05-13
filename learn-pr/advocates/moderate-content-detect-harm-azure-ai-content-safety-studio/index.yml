@@ -4,11 +4,11 @@ metadata:
   ms.author: apspeigh
   author: aprilspeight
   ms.date: 05/09/2024
-  title: Moderate content and detect harm with Content Safety Studio
+  title: Moderate content and detect harm with Azure AI Content Safety Studio
   description: Learn how to choose and build a content moderation system in the Azure AI Content Safety Studio.
   ms.topic: module-guided-project
   ms.service: artificial-intelligence
-title: Moderate content and detect harm with Content Safety Studio
+title: Moderate content and detect harm with Azure AI Content Safety Studio
 summary: | 
   Learn how to choose and build a content moderation system in the Azure AI Content Safety Studio.
   > [!NOTE]
