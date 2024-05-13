@@ -8,6 +8,8 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 16
 content: |
   [!include[](includes/4-exercise-improve-reliability-performance-github-copilot-chat.md)]

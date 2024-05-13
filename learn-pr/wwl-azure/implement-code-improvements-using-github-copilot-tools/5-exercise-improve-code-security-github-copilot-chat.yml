@@ -8,6 +8,8 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise-improve-code-security-github-copilot-chat.md)]
