@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-azure-database-postgresql-flexible-server.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/10/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A PostgreSQL database server at version 11.22 needs an online migration to Azure Database for PostgreSQL - Flexible Server running PostgreSQL version 14. Which tools or services can be used to perform this migration?"
+    choices:
+    - content: "Azure Database for PostgreSQL Flexible Server Migration."
+      isCorrect: false
+      explanation: "Incorrect. Currently DMS is the only option to provide an Online migration option, the Flexible Server Migration option is for offline migrations."
+    - content: "pg_dump and pg_restore."
+      isCorrect: false
+      explanation: "Incorrect. Using these native tools mean you need to perform an offline migration as it doesn't sync changes."
+    - content: "Database Migration Service."
+      isCorrect: true
+      explanation: "Correct. DMS Provides the facility for an Online database migration for PostgreSQL databases."
+  - content: "An offline migration is being performed from an existing PostgreSQL server to Azure Database for PostgreSQL - Flexible Server. To transfer server-level roles from the source to the target, which combination of tools should be used?"
+    choices:
+    - content: "pg_dumpall, psql, and Azure Database for PostgreSQL - Flexible Server Migration."
+      isCorrect: true
+      explanation: "Correct. The process is to first transfer server scoped objects such as roles, then use the Migration feature within **PostgreSQL Flexible Server** to move the schema and data."
+    - content: "pg_dump and pg_restore."
+      isCorrect: false
+      explanation: "Incorrect. While this can be used to migrate a database, it's missing the pg_dumpall process."
+    - content: "psql and Database Migration Service."
+      isCorrect: false
+      explanation: "Incorrect. DMS doesn't provide an offline migration option for PostgreSQL databases."
+  - content: "Before performing a database migration from a source PostgreSQL server to a target, it's necessary to assess whether there are any blockers. Which tool should be used for this assessment?"
+    choices:
+    - content: "Database Migration Service."
+      isCorrect: false
+      explanation: "Incorrect. DMS migrates databases but doesn't provide an assessment capability."
+    - content: "pg_dumpall."
+      isCorrect: false
+      explanation: "Incorrect. This is used to export server config and databases to a file."
+    - content: "Azure Data Studio with Azure PostgreSQL migration extension."
+      isCorrect: true
+      explanation: "Correct. There's a dedicated extension in ADS, which allows you to generate a rich report on potential migration blockers for PostgreSQL databases."
