@@ -12,14 +12,14 @@
     "excludedPrincipals": null,
     "mode": "none"
   },
-  "deploymentId": "/subscriptions/.../resourceGroups/rg-depositsApplication/providers/Microsoft.Resources/deployments/stack-deposits-24051320h86oi",
+  "deploymentId": "/subscriptions/./resourceGroups/rg-depositsApplication/./stack-deposits-24051320h86oi",
   "deploymentScope": null,
   "description": null,
   "detachedResources": [],
   "duration": "PT2M46.0356386S",
   "error": null,
   "failedResources": [],
-  "id": "/subscriptions/.../resourceGroups/rg-depositsApplication/providers/Microsoft.Resources/deploymentStacks/stack-deposits",
+  "id": "/subscriptions/./resourceGroups/rg-depositsApplication/.//stack-deposits",
   "location": null,
   "name": "stack-deposits",
   "outputs": null,
@@ -39,25 +39,25 @@
   "resources": [
     {
       "denyStatus": "none",
-      "id": "/subscriptions/.../resourceGroups/rg-depositsApplication/providers/Microsoft.Sql/servers/sql-eque2jlrboltq",
+      "id": "/subscriptions/./resourceGroups/rg-depositsApplication/./sql-eque2jlrboltq",
       "resourceGroup": "rg-depositsApplication",
       "status": "managed"
     },
     {
       "denyStatus": "none",
-      "id": "/subscriptions/.../resourceGroups/rg-depositsApplication/providers/Microsoft.Sql/servers/sql-eque2jlrboltq/databases/sqldb-eque2jlrboltq", 
+      "id": "/subscriptions/./resourceGroups/rg-depositsApplication/./sql-eque2jlrboltq/databases/sqldb-eque2jlrboltq", 
       "resourceGroup": "rg-depositsApplication",
       "status": "managed"
     },
     {
       "denyStatus": "none",
-      "id": "/subscriptions/.../resourceGroups/rg-depositsApplication/providers/Microsoft.Web/serverfarms/plan-deposits",
+      "id": "/subscriptions/./resourceGroups/rg-depositsApplication/./plan-deposits",
       "resourceGroup": "rg-depositsApplication",
       "status": "managed"
     },
     {
       "denyStatus": "none",
-      "id": "/subscriptions/.../resourceGroups/rg-depositsApplication/providers/Microsoft.Web/sites/webapp-eque2jlrboltq",
+      "id": "/subscriptions/./resourceGroups/rg-depositsApplication/./webapp-eque2jlrboltq",
       "resourceGroup": "rg-depositsApplication",
       "status": "managed"
     }

@@ -126,7 +126,7 @@ Get-AzResourceGroupDeploymentStack `
 
 The results include the properties of the deployment stack as well as the status of the managed resources. The output should appear familiar to the following:
 
-:::code language="powershell" source="code/3-powershell.ps1" range="1-8, 11-12":::
+:::code language="powershell" source="code/3-powershell.ps1" range="1-10":::
 
 Take notice of the resources section of the output. This defines the resources that are managed by the deployment stack. You see the full resource ID of each resource.
 

@@ -105,12 +105,26 @@ Take notice of the resources section of the output. We now see the SQL server an
 
 ::: zone pivot="cli"
 
-Insert text here.
+To delete the deployment stack and its managed resources, run the following command from the terminal in Visual Studio Code.
+
+```azurecli
+az stack group delete \
+    --name stack-deposits \
+    --resource-group rg-depositsApplication \
+    --actionOnUnmanage delete-all
+```
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-Insert text here.
+To delete the deployment stack and its managed resources, run the following command from the terminal in Visual Studio Code.
+
+```azurepowershell
+Remove-AzResourceGroupDeploymentStack `
+    -Name stack-deposits `
+    -ResourceGroupName rg-depositsApplication `
+    -ActionOnUnmanage -DeleteAll
+```
 
 ::: zone-end
