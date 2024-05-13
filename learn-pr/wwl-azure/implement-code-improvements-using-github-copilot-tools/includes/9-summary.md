@@ -4,6 +4,6 @@ The main takeaways from this module are the importance of creating effective pro
 
 Extra Reading:
 
-1. [GitHub Copilot documentation](https://docs.github.com/copilot)
-1. [GitHub Copilot in Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview)
-1. [GitHub Copilot: Your AI pair programmer](https://copilot.github.com/)
+- [GitHub Copilot documentation](https://docs.github.com/copilot)
+- [GitHub Copilot in Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview)
+- [GitHub Copilot: Your AI pair programmer](https://copilot.github.com/)
