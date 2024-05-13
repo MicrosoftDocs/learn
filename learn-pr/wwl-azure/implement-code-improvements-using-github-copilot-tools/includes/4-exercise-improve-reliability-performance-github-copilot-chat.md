@@ -252,21 +252,21 @@ GitHub Copilot Chat can be used to help improve the reliability of your code. Yo
     }
     ```
 
-    *1. Use Decimal for Monetary Values: It's generally recommended to use the decimal type instead of double for monetary values to avoid rounding errors.*
+    *2. Use Decimal for Monetary Values: It's generally recommended to use the decimal type instead of double for monetary values to avoid rounding errors.*
 
-    *2. Add More Validations: You could add more validations in your methods. For example, in the Transfer method, you could check if the toAccount is not null before proceeding with the transfer.*
+    *3. Add More Validations: You could add more validations in your methods. For example, in the Transfer method, you could check if the toAccount is not null before proceeding with the transfer.*
 
-    *3. Use Constants for Magic Numbers: In your Transfer method, there's a magic number 500. It would be better to define it as a constant with a meaningful name at the top of your class.*
+    *4. Use Constants for Magic Numbers: In your Transfer method, there's a magic number 500. It would be better to define it as a constant with a meaningful name at the top of your class.*
 
     ```csharp
     private const double MaxTransferAmountForDifferentOwners = 500;
     ```
 
-    *4. Custom Exception for Transfer Limit: Instead of throwing a general Exception when the transfer amount exceeds the limit for different account owners, consider creating a custom exception like ExceededTransferLimitException.*
+    *5. Custom Exception for Transfer Limit: Instead of throwing a general Exception when the transfer amount exceeds the limit for different account owners, consider creating a custom exception like ExceededTransferLimitException.*
 
-    *5. Logging: Consider adding logging to your application. This can help you understand the flow of your application and diagnose issues.*
+    *6. Logging: Consider adding logging to your application. This can help you understand the flow of your application and diagnose issues.*
 
-    *6. Unit Tests: Write unit tests for your methods to ensure they behave as expected in various scenarios. This can help catch issues early in the development process.*
+    *7. Unit Tests: Write unit tests for your methods to ensure they behave as expected in various scenarios. This can help catch issues early in the development process.*
 
 1. Rather than trying to implement all of the suggestions at once, consider implementing them incrementally.
 
