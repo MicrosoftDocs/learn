@@ -24,7 +24,7 @@ Our first step is to create a bicep file that defines our resources to use with 
 
 1. Add the following Bicep code into the file. You deploy the template soon. It's a good idea to type the code yourself instead of copying and pasting, so you can see how the tooling helps you to write your Bicep files.
 
-    :::code language="bicep" source="code/1-template.bicep" range=1-4,18-42:::
+    :::code language="bicep" source="code/1-template.bicep" range="1-4, 18-42":::
 
     Notice that you're using expressions that include string interpolation and the `uniqueString()` function to define default parameter values. Someone deploying this template can override the default parameter values by specifying the values at deployment time, but they can't override the variable values.
 
@@ -108,7 +108,7 @@ az stack group show \
 
 The results include the properties of the deployment stack as well as the status of the managed resources. The output should appear familiar to the following:
 
-:::code language="json" source="code/2-json.json" range=1-39,52-77:::
+:::code language="json" source="code/2-json.json" range="1-39, 52-77":::
 
 Take notice of the resources section of the output. For each resource, it shows its status as "managed", its resource group, its resource id, and its deny settings.
 
@@ -126,7 +126,7 @@ Get-AzResourceGroupDeploymentStack `
 
 The results include the properties of the deployment stack as well as the status of the managed resources. The output should appear familiar to the following:
 
-:::code language="powershell" source="code/3-powershell.ps1" range=1-8,11-12:::
+:::code language="powershell" source="code/3-powershell.ps1" range="1-8, 11-12":::
 
 Take notice of the resources section of the output. This defines the resources that are managed by the deployment stack. You see the full resource ID of each resource.
 

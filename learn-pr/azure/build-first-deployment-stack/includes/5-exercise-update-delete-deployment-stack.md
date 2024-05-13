@@ -14,11 +14,11 @@ In this exercise, you update the Bicep file you previously created to include ad
 
 1. Add the highlighted code to the parameters section of your file:
 
-    :::code language="bicep" source="code/1-template-1.bicep" range="1-23" highlight="5-16:::
+    :::code language="bicep" source="code/1-template.bicep" range="1-23" highlight="5-16":::
 
 1. Add the following code to the bottom of the file:
 
-    :::code language="bicep" source="code/1-template-1.bicep" range="44-63":::
+    :::code language="bicep" source="code/1-template.bicep" range="44-63":::
 
 1. Save the changes to the file.
 
@@ -38,7 +38,7 @@ az stack group create \
 
 You are prompted to enter a value for `sqlServerAdminUserName` and `sqlServerAdminPassword`. You need to create a complex password for the SQL server.
 
-![a graphic representing an the command line prompting you to endter an administrator user name and password for the sql server](../media/deployment-stack-application-cli.png)
+![a graphic representing an the command line prompting you to endter an administrator user name and password for the sql server](../media/sql-admin-username-password-cli.png)
 
 > [!NOTE]
 > Rember, AZ CLI does not have a dedicated command to update a deployment stack. Use the create command to update the stack
@@ -47,7 +47,7 @@ You are prompted to enter a value for `sqlServerAdminUserName` and `sqlServerAdm
 
 ::: zone pivot="powershell"
 
-To update the deployment stack, run the following command from the terminal in Visual Studio Code.
+With the Bicep file updated, we want to update the deployment stack so that the new Azure SQL database is deployed to the environment as a managed resource. To update the deployment stack, run the following command from the terminal in Visual Studio Code.
 
 ```azurepowershell
 Set-AzResourceGroupDeploymentStack `
@@ -59,7 +59,7 @@ Set-AzResourceGroupDeploymentStack `
 
 You are prompted to enter a value for `sqlServerAdminUserName` and `sqlServerAdminPassword`. You need to create a complex password for the SQL server.
 
-![a graphic representing an the command line prompting you to endter an administrator user name and password for the sql server](../media/deployment-stack-application-powershell.png)
+![a graphic representing an the command line prompting you to endter an administrator user name and password for the sql server](../media/sql-admin-username-password-cli.png)
 
 ::: zone-end
 
@@ -67,13 +67,37 @@ You are prompted to enter a value for `sqlServerAdminUserName` and `sqlServerAdm
 
 ::: zone pivot="cli"
 
-Insert text here.
+With the update complete, we want to validate that the Azure SQL database is now managed by the deployment stack. To view the configuration of the deployment stack, run the following command from the terminal in Visual Studio Code.
+
+```azurecli
+az stack group show \
+    --resource-group rg-depositsApplication \
+    --name stack-deposits
+```
+
+The output should appear familiar to the following:
+
+:::code language="json" source="code/2-json.json":::
+
+Take notice of the resources section of the output. We now see the SQL server and SQL database listed as managed resources.
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-Insert text here.
+With the update complete, we want to validate that the Azure SQL database is now managed by the deployment stack. To view the configuration of the deployment stack, run the following command from the terminal in Visual Studio Code.
+
+```azurepowershell
+Get-AzResourceGroupDeploymentStack `
+    -ResourceGroupName rg-depositsApplication `
+    -Name stack-deposits
+```
+
+The output should appear familiar to the following:
+
+:::code language="json" source="code/3-powershell.ps1":::
+
+Take notice of the resources section of the output. We now see the SQL server and SQL database listed as managed resources.
 
 ::: zone-end
 
