@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.migrate-oracle-workload-azure-odaa.create-exadata-infrastructure-using-oracle-database-azure
-title: Examine the process of creating Exadata infrastructure using Oracle Database@Azure
+title: Create Exadata infrastructure using Oracle Database@Azure
 metadata:
-  title: Examine the process of creating Exadata infrastructure using Oracle Database@Azure
+  title: Create Exadata infrastructure using Oracle Database@Azure
   description: Learn about the process to create Exadata infrastructure using Oracle Database@Azure.
   ms.date: 05/01/2024
   author: jjaygbay1

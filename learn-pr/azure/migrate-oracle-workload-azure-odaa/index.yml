@@ -40,7 +40,7 @@ units:
 - learn.azure.migrate-oracle-workload-azure-odaa.assess-workloads-build-migration-plan
 - learn.azure.migrate-oracle-workload-azure-odaa.create-exadata-infrastructure-using-oracle-database-azure
 - learn.azure.migrate-oracle-workload-azure-odaa.provisioning-process-exadata-virtual-machine-clusters
-- learn.azure.migrate-oracle-workload-azure-odaa.application-migration-process-to-asure-iaas
+- learn.azure.migrate-oracle-workload-azure-odaa.application-migration-process-to-azure-iaas
 - learn.azure.migrate-oracle-workload-azure-odaa.management-cost-optimization-considerations
 - learn.azure.migrate-oracle-workload-azure-odaa.knowledge-check
 - learn.azure.migrate-oracle-workload-azure-odaa.summary

@@ -44,6 +44,14 @@ Now that you've configured your Oracle Exadata infrastructure and virtual machin
 
 OCI DMS enables you to orchestrate your migration workflow to execute secure, fault-tolerant, and incremental migrations. You can choose from several Oracle services, including [Zero Downtime Migration (ZDM)](https://www.oracle.com/database/zero-downtime-migration/), [Data Guard](https://www.oracle.com/database/data-guard/), [Oracle Data Pump](https://docs.oracle.com/en/database/oracle/oracle-database/19/sutil/oracle-data-pump-overview.html), and [Oracle GoldenGate](https://www.oracle.com/integration/goldengate/).
 
-![List of Oracle migration methods.](../media/5-oracle-migration-options.png)
+| Migration Method | Type | Online | Downtime |
+|:---|:--:|:--:|:--:|
+| Oracle Zero Downtime Migration (ZDM) | Physical/logical | &#x2714; | Seamless cutover |
+| Oracle Data Guard | Physical/logical | &#x2714; | Minimal |
+| Oracle GoldenGate | Physical/logical | &#x2714; | Seamless cutover |
+| Oracle Recovery Manager (RMAN) | Physical | &#x2714; | Long |
+| Oracle Data Pump | Logical | &#x2716; | Long |
+| Oracle Database Multitenant Movement | Physical/logical | &#x2716; | Long |
 
 You perform an initial data migration using DMS and then set up incremental updates to keep your data in sync until you're ready to cut over production to your infrastructure.
+
