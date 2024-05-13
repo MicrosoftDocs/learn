@@ -115,14 +115,3 @@ The following animation shows a simplified representation of how this works – 
 During training, the actual sequence of tokens is known – we just mask the ones that come later in the sequence than the token position currently being considered. As in any neural network, the predicted value for the token vector is compared to the actual value of the next vector in the sequence, and the loss is calculated. The weights are then incrementally adjusted to reduce the loss and improve the model. When used for inferencing (predicting a new sequence of tokens), the trained attention layer applies weights that predict the most probable token in the model’s vocabulary that is semantically aligned to the sequence so far.
 
 What all of this means, is that a transformer model such as GPT-4 (the model behind ChatGPT and Bing) is designed to take in a text input (called a prompt) and generate a syntactically correct output (called a completion). In effect, the “magic” of the model is that it has the ability to string a coherent sentence together. This ability doesn't imply any “knowledge” or “intelligence” on the part of the model; just a large vocabulary and the ability to generate meaningful sequences of words. What makes a large language model like GPT-4 so powerful however, is the sheer volume of data with which it has been trained (public and licensed data from the Internet) and the complexity of the network. This enables the model to generate completions that are based on the relationships between words in the vocabulary on which the model was trained; often generating output that is indistinguishable from a human response to the same prompt.
-
-## Using language models
-Organizations and developers can train their own language models from scratch, but in most cases it’s more practical to use an existing foundation model, and optionally fine-tune it with your own training data. There are many sources of model that you can use.
-
-On Microsoft Azure, the Azure OpenAI Service includes a curated set of models from OpenAI, hosted in Azure. This offers the benefit of cutting-edge language models like the generative pre-trained transformer (GPT) collection of models (on which ChatGPT and Microsoft's own generative AI services are based)  as well as the DALL-E model for image generation. Using these models from the Azure OpenAI service means that you also get the benefit of a secure, scalable Azure cloud platform in which the models are hosted.
-
-The Azure OpenAI models are included in the Model Catalog, a curated source of models for data scientists and developers using Azure AI Studio and Azure Machine Learning. In addition to the Azure OpenAI models, the model catalog includes the latest open-source models from Microsoft and multiple partners, including:
-- OpenAI
-- HuggingFace
-- Mistral
-- Meta and others.
