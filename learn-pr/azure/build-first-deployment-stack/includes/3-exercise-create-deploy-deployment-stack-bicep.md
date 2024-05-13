@@ -59,8 +59,8 @@ az group create \
 We need to create a resource group for our deployment stack and managed resources. To create a resource group, run the following command from the terminal in Visual Studio Code.
 
 ```azurepowershell
-New-AzResourceGroup \
-    --name rg-depositsApplication \
+New-AzResourceGroup `
+    --name rg-depositsApplication `
     --location eastus
 ```
 
@@ -88,7 +88,7 @@ az stack group create \
 New-AzResourceGroupDeploymentStack `
     -Name stack-deposits `
     -ResourceGroupName rg-depositsApplication `
-    -TemplateFile ./main.bicep
+    -TemplateFile ./main.bicep `
     -DenySettingsMode none
 ```
 
@@ -102,13 +102,13 @@ When you create a deployment stack and its managed resources, you can view its c
 
 ```azurecli
 az stack group show \
-    --resource-group rg-depositsApplication
+    --resource-group rg-depositsApplication \
     --name stack-deposits
 ```
 
 The results include the properties of the deployment stack as well as the status of the managed resources. The output should appear familiar to the following:
 
-:::code language="json" source="code/2-json.json":::
+:::code language="json" source="code/2-json.json" range=1-39,52-77:::
 
 Take notice of the resources section of the output. For each resource, it shows its status as "managed", its resource group, its resource id, and its deny settings.
 
@@ -119,14 +119,14 @@ Take notice of the resources section of the output. For each resource, it shows 
 When you create a deployment stack and its managed resources, you can view its configuration using the command-line or the Azure portal. In this exercise, we use Azure PowerShell. To view the configuration of the deployment stack, run the following command from the terminal in Visual Studio Code.
 
 ```azurepowershell
-Get-AzResourceGroupDeploymentStack \
-    -ResourceGroupName rg-depositsApplication
+Get-AzResourceGroupDeploymentStack `
+    -ResourceGroupName rg-depositsApplication `
     -Name stack-deposits
 ```
 
 The results include the properties of the deployment stack as well as the status of the managed resources. The output should appear familiar to the following:
 
-:::code language="powershell" source="code/3-powershell.ps1":::
+:::code language="powershell" source="code/3-powershell.ps1" range=1-8,11-12:::
 
 Take notice of the resources section of the output. This defines the resources that are managed by the deployment stack. You see the full resource ID of each resource.
 

@@ -227,7 +227,7 @@ You can also view deployment stacks in the Azure portal. They're available at th
 
 When you click on deployment stacks, it lists any stacks scoped to the resource group. Clicking on a deployment stack takes you to the property page of the deployment stacks.
 
-![a graphic representing the properties of a deployment stack, including its managed resources](../media/rg-deployment-stack-portal-1.png)
+![a graphic representing the properties of a deployment stack, including its managed resources](../media/rg-deployment-stack-portal-2.png)
 
 ## Listing deployment stacks
 
@@ -248,14 +248,12 @@ az stack group list \
 
 To list all deployment stack resources scoped to a resource group using Azure PowerShell, use the `Get-AzResourceGroupDeploymentStack` command, specifying the target resource group.
 
-> [!NOTE]
-> Azure PowerShell uses the same command, `Get-AzResourceGroupDeploymentStack` for both the show and list operations.
-
-Insert text here
-
 ```azurepowershell
 Get-AzResourceGroupDeploymentStack `
     -ResourceGroupName rg-depositsApplication
 ```
+
+> [!NOTE]
+> Azure PowerShell uses the same command, `Get-AzResourceGroupDeploymentStack` for both the show and list operations.
 
 ::: zone-end

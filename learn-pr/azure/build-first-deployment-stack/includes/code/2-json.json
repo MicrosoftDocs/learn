@@ -12,41 +12,62 @@
     "excludedPrincipals": null,
     "mode": "none"
   },
-  "deploymentId": "/subscriptions/.../deployments/stack-deposits-24051017g2k8i",
+  "deploymentId": "/subscriptions/.../resourceGroups/rg-depositsApplication/providers/Microsoft.Resources/deployments/stack-deposits-24051320h86oi",
   "deploymentScope": null,
   "description": null,
   "detachedResources": [],
-  "duration": "PT43.5601118S",
+  "duration": "PT2M46.0356386S",
   "error": null,
   "failedResources": [],
-  "id": "/subscriptions/.../deploymentStacks/stack-deposits",
+  "id": "/subscriptions/.../resourceGroups/rg-depositsApplication/providers/Microsoft.Resources/deploymentStacks/stack-deposits",
   "location": null,
   "name": "stack-deposits",
   "outputs": null,
-  "parameters": {},
+  "parameters": {
+    "sqlServerAdminPassword": {
+      "type": "securestring",
+      "value": ""
+    },
+    "sqlServerAdminUserName": {
+      "type": "string",
+      "value": "sqladmin"
+    }
+  },
   "parametersLink": null,
   "provisioningState": "succeeded",
   "resourceGroup": "rg-depositsApplication",
   "resources": [
     {
       "denyStatus": "none",
-      "id": "/subscriptions/.../serverfarms/plan-deposits",
+      "id": "/subscriptions/.../resourceGroups/rg-depositsApplication/providers/Microsoft.Sql/servers/sql-eque2jlrboltq",
       "resourceGroup": "rg-depositsApplication",
       "status": "managed"
     },
     {
       "denyStatus": "none",
-      "id": "/subscriptions/.../sites/webapp-brpdm7iotbwjm",
+      "id": "/subscriptions/.../resourceGroups/rg-depositsApplication/providers/Microsoft.Sql/servers/sql-eque2jlrboltq/databases/sqldb-eque2jlrboltq", 
+      "resourceGroup": "rg-depositsApplication",
+      "status": "managed"
+    },
+    {
+      "denyStatus": "none",
+      "id": "/subscriptions/.../resourceGroups/rg-depositsApplication/providers/Microsoft.Web/serverfarms/plan-deposits",
+      "resourceGroup": "rg-depositsApplication",
+      "status": "managed"
+    },
+    {
+      "denyStatus": "none",
+      "id": "/subscriptions/.../resourceGroups/rg-depositsApplication/providers/Microsoft.Web/sites/webapp-eque2jlrboltq",
       "resourceGroup": "rg-depositsApplication",
       "status": "managed"
     }
   ],
   "systemData": {
-    "createdAt": "2024-05-10T17:53:08.093925+00:00",
+    "createdAt": "2024-01-01T00:00:01.000000+00:00",
     "createdBy": "depositsapplication@contoso.com",
     "createdByType": "User",
-    "lastModifiedAt": "2024-05-10T17:54:55.377228+00:00",
-    "lastModifiedBy": "depositsapplication@contoso.com",
+    "lastModifiedAt": "2024-01-01T00:00:01.000000+00:00",
+    "lastModifiedBy": "2024-01-01T00:00:01.000000+00:00",
     "lastModifiedByType": "User"
   },
   "tags": {},

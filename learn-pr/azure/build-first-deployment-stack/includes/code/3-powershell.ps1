@@ -1,10 +1,17 @@
-Id                          : /subscriptions/.../deploymentStacks/stack-deposits
+Id                          : /subscriptions/./resourceGroups/rg-depositsApplication/././deploymentStacks/stack-deposits
 Name                        : stack-deposits
 ProvisioningState           : succeeded
 ResourcesCleanupAction      : detach
 ResourceGroupsCleanupAction : detach
 DenySettingsMode            : none
-CreationTime(UTC)           : 1/01/2024 00:00:00 AM
-DeploymentId                : /subscriptions/.../deployments/stack-deposits-24051017g2k8i
-Resources                   : /subscriptions/.../serverfarms/plan-deposits
-                              /subscriptions/.../sites/webapp-brpdm7iotbwjm
+CreationTime(UTC)           : 01/01/2024 0:00:01 AM
+DeploymentId                : /subscriptions/./resourceGroups/rg-depositsApplication/./././stack-deposits-24051320h86oi
+Resources                   : /subscriptions/./resourceGroups/rg-depositsApplication/././sql-eque2jlrboltq
+                              /subscriptions/./resourceGroups/rg-depositsApplication/././sql-eque2jlrboltq/databases/sqldb-eque2jlrboltq
+                              /subscriptions/./resourceGroups/rg-depositsApplication/././plan-deposits
+                              /subscriptions/./resourceGroups/rg-depositsApplication/././webapp-eque2jlrboltq
+Parameters                  : 
+                              Name                      Type                       Value
+                              ========================  =========================  ==========
+                              sqlServerAdminUserName    string                     "sqladmin"
+                              sqlServerAdminPassword    securestring               ""
