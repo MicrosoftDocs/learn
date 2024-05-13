@@ -8,7 +8,7 @@ Microsoft Defender for Cloud is a cloud-native application protection platform t
 
 ### Microsoft Defender for Containers
 
-Microsoft Defender for Containers is a cloud-native solution which goal is to enhance the security of containerized environments, including Kubernetes clusters, container registries, and container images, across multicloud and on-premises environments. It's functionality can be grouped into four main categories:
+Microsoft Defender for Containers is a cloud-native solution which goal is to enhance the security of containerized environments, including Kubernetes clusters, container registries, and container images, across multicloud and on-premises environments. Its functionality can be grouped into four main categories:
 
  -  **Security posture management** performs continuous monitoring of Kubernetes workloads to discover cloud resources, inventory them, detect their misconfigurations, provide remediation guidance, assess the corresponding risks, and assist with risk hunting by using the Defender for Cloud security explorer.
  -  **Run-time threat protection** delivers threat detection for Kubernetes clusters, closely aligned with the MITRE ATT&CK framework and featuring integration with a broad range of security information and event management (SIEM) and extended detection and response (XDR) products.
