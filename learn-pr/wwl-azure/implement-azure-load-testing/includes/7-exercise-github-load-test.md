@@ -52,9 +52,9 @@ The sample application consists of a Node.js web API, which interacts with a NoS
 
 1. At the prompt, provide:
 
-   * Your Azure subscription ID.
-   * A unique name for your web app.
-   * A location. By default, the location is `eastus`. You can get region codes by running the [Get-AzLocation](/powershell/module/az.resources/get-azlocation) command.
+   - Your Azure subscription ID.
+   - A unique name for your web app.
+   - A location. By default, the location is `eastus`. You can get region codes by running the [Get-AzLocation](/powershell/module/az.resources/get-azlocation) command.
 
    > [!IMPORTANT]
    > For your web app's name, use only lowercase letters and numbers. Don't use spaces or special characters.
@@ -123,7 +123,8 @@ Create a service principal in the Azure subscription and assign the Load Test Co
           --resource-type "Microsoft.LoadTestService/loadtests" \
           --query "id" -o tsv
       ```
-The output is a JSON object that represents the service principal. You use this information to authenticate with Azure in the GitHub Actions workflow.
+
+    The output is a JSON object that represents the service principal. You use this information to authenticate with Azure in the GitHub Actions workflow.
 
     ```json
     {
@@ -134,8 +135,9 @@ The output is a JSON object that represents the service principal. You use this 
     (...)
     }
     ```
-> [!NOTE]
-> You might get a `--sdk-auth` deprecation warning when you run this command if you are running an older version of the Azure CLI locally.
+
+    > [!NOTE]
+    > You might get a `--sdk-auth` deprecation warning when you run this command if you are running an older version of the Azure CLI locally.
 
 1. Copy the output JSON object to the clipboard.
 
@@ -168,22 +170,22 @@ You can now access your Azure subscription and load testing resource from your G
 
 1. Update the `SampleApp.yaml` to include the following configurations. Notice that you pass in the sample application that you deployed earlier as a variable to the load test. Replace the `<your-app-name>` text placeholder with the name of your web app.
 
-```yaml
-displayName: Sample Test
-testPlan: SampleApp.jmx
-description: Load test the sample app
-engineInstances: 1
-testId: sample-app-test
-testType: JMX
-splitAllCSVs: False
-failureCriteria: []
-env:
-- name: webapp
-  value: <your-app-name>.azurewebsites.net
-autoStop:
-  errorPercentage: 90
-  timeWindow: 60
-```
+    ```yaml
+    displayName: Sample Test
+    testPlan: SampleApp.jmx
+    description: Load test the sample app
+    engineInstances: 1
+    testId: sample-app-test
+    testType: JMX
+    splitAllCSVs: False
+    failureCriteria: []
+    env:
+    - name: webapp
+      value: <your-app-name>.azurewebsites.net
+    autoStop:
+      errorPercentage: 90
+      timeWindow: 60
+    ```
 
 ## Task 5: Update the GitHub Actions workflow and invoke a test run
 
