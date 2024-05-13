@@ -24,10 +24,11 @@ Our first step is to create a bicep file that defines our resources to use with 
 
 1. Add the following Bicep code into the file. You deploy the template soon. It's a good idea to type the code yourself instead of copying and pasting, so you can see how the tooling helps you to write your Bicep files.
 
-    :::code language="bicep" source="code/1-template.bicep":::
+    :::code language="bicep" source="code/1-template.bicep" range=1-4,18-42:::
 
-    > [!NOTE]
-    > You may notice the `${uniqueString(resourceGroup().id)}' syntax on the 'webApplicationName' parameter. The uniqueString function creates a string based on the id of the resource group and adds it as a suffix to 'webapp-deposits'. Many Azure services require unique names. This function helps generate a unique name.
+    Notice that you're using expressions that include string interpolation and the `uniqueString()` function to define default parameter values. Someone deploying this template can override the default parameter values by specifying the values at deployment time, but they can't override the variable values.
+
+    Also notice that you're using a variable for the Azure App Service plan name, but you're using parameters for the other names. Storage accounts and App Service apps need globally unique names, but App Service plan names need to be unique only within their resource group. This difference means it's not a concern to use the same App Service plan name across different deployments, as long as the deployments are all going into different resource groups.
 
 1. Save the changes to the file.
 
@@ -75,7 +76,7 @@ Next, we need to create our deployment stack scoped to our recently created reso
 az stack group create \
     --name stack-deposits \
     --resource-group rg-depositsApplication \
-    --template-file ./main.bicep
+    --template-file ./main.bicep \
     --deny-settings-mode none
 ```
 

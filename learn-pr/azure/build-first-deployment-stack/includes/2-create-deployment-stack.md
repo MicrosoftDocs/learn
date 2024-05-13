@@ -50,7 +50,7 @@ resource webApplication 'Microsoft.Web/sites@2021-01-15' = {
 ```
 
 > [!NOTE]
-> You may notice the `${uniqueString(resourceGroup().id)}' syntax on the 'webApplicationName' parameter. The uniqueString function creates a string based on the id of the resource group and adds it as a suffix to 'webapp-deposits'. Many Azure services require unique names. This function helps generate a unique name.
+> You may notice the `${uniqueString(resourceGroup().id)}` syntax on the `webApplicationName` parameter. The uniqueString function creates a string based on the id of the resource group and adds it as a suffix to `webapp-deposits`. Many Azure services require unique names. This function helps generate a unique name.
 
 ## Creating a deployment stack
 
@@ -73,13 +73,13 @@ az stack group create \
     --template-file ./main.bicep
 ```
 
-Notice that the only changes in the command are the words 'deployment' and 'stack', and there's a small difference in the parameters used. The same is true for deployments to subscriptions and management groups. In later modules, we explore how to manage resources in a deployment stack and how to configure deny settings.
+Notice that the only changes in the command are the words `deployment` and `stack`, and there's a small difference in the parameters used. The same is true for deployments to subscriptions and management groups. In later modules, we explore how to manage resources in a deployment stack and how to configure deny settings.
 
 Lets take a look at creating a deployment stack at the resource group scope.
 
 ::: zone pivot="cli"
 
-To create a deployment stack using AZ CLI, use the 'az stack group create' command. The following commands first create a resource group called 'rg-depositsApplication' then creates the deployment stack at the scope of the resource group.
+To create a deployment stack using AZ CLI, use the `az stack group create` command. The following commands first create a resource group called `rg-depositsApplication` then creates the deployment stack at the scope of the resource group.
 
 ```azurecli
 az group create \
@@ -97,7 +97,7 @@ az stack group create \
 
 ::: zone pivot="powershell"
 
-To create a deployment stack using Azure PowerShell, use the 'New-AzResourceGroupDeploymentStack' command. The following commands first create a resource group called 'rg-depositsApplication' then creates the deployment stack at the scope of the resource group.
+To create a deployment stack using Azure PowerShell, use the `New-AzResourceGroupDeploymentStack` command. The following commands first create a resource group called `rg-depositsApplication` then creates the deployment stack at the scope of the resource group.
 
 ```azurepowershell
 New-AzResourceGroup `
@@ -119,7 +119,7 @@ Resource groups may have multiple deployment stacks scoped to them. You can show
 
 ::: zone pivot="cli"
 
-To show a specific deployment stack resource scoped to a resource group using AZ CLI, use the 'az stack group show' command, specifying the name of the deployment stack and the target resource group.
+To show a specific deployment stack resource scoped to a resource group using AZ CLI, use the `az stack group show` command, specifying the name of the deployment stack and the target resource group.
 
 ```azurecli
 az stack group show \
@@ -188,13 +188,13 @@ The results include the properties of the deployment stack and the status of the
 }
 ```
 
-Take notice of the resources section of the output. For each resource, it shows its status as 'managed', its resource group, its resource id, and its deny settings.
+Take notice of the resources section of the output. For each resource, it shows its status as `managed`, its resource group, its resource id, and its deny settings.
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-To show a specific deployment stack resource scoped to a resource group using Azure PowerShell, use the 'Get-AzResourceGroupDeploymentStack' command, specifying the name of the deployment stack and the target resource group.
+To show a specific deployment stack resource scoped to a resource group using Azure PowerShell, use the `Get-AzResourceGroupDeploymentStack` command, specifying the name of the deployment stack and the target resource group.
 
 ```azurepowershell
 Get-AzResourceGroupDeploymentStack \
@@ -235,7 +235,7 @@ You can also list all deployment stacks scoped to a specific resource group.
 
 ::: zone pivot="cli"
 
-To list all deployment stack resources scoped to a resource group using AZ CLI, use the 'az stack group list' command, specifying the target resource group.
+To list all deployment stack resources scoped to a resource group using AZ CLI, use the `az stack group list` command, specifying the target resource group.
 
 ```azurecli
 az stack group list \
@@ -246,10 +246,10 @@ az stack group list \
 
 ::: zone pivot="powershell"
 
-To list all deployment stack resources scoped to a resource group using Azure PowerShell, use the 'Get-AzResourceGroupDeploymentStack' command, specifying the target resource group.
+To list all deployment stack resources scoped to a resource group using Azure PowerShell, use the `Get-AzResourceGroupDeploymentStack` command, specifying the target resource group.
 
 > [!NOTE]
-> Azure PowerShell uses the same command, 'Get-AzResourceGroupDeploymentStack' for both the show and list operations.
+> Azure PowerShell uses the same command, `Get-AzResourceGroupDeploymentStack` for both the show and list operations.
 
 Insert text here
 
