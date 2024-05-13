@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.fundamentals-generative-ai.how-do-language-models-work
-title: How do language models work?
+uid: learn.wwl.fundamentals-generative-ai.using-language-models
+title: Using language models
 metadata:
-  title: How do language models work?
+  title: Using language models
   description: "Learn what the GPT language model is in the context of other large language models and the evolution of generative AI capabilities."
   ms.date: 6/27/2023
   author: sherzyang
   ms.author: sheryang
   ms.topic: unit
-durationInMinutes: 7
+durationInMinutes: 3
 content: |
-  [!include[](includes/3a-how-do-language-models-work.md)]
+  [!include[](includes/3a-using-language-models.md)]
