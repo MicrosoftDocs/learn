@@ -16596,16 +16596,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/wwl-azure/software-composition-analysis/9-knowledge-check.md",
-      "redirect_url": "/training/modules/software-composition-analysis/10-knowledge-check",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/software-composition-analysis/10-summary.md",
-      "redirect_url": "/training/modules/software-composition-analysis/11-summary",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "learn-pr/wwl-azure/static-analyzers/4-knowledge-check.md",
       "redirect_url": "/training/modules/static-analyzers/5-knowledge-check",
       "redirect_document_id": true
