@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-monitoring-and-governance.understand-microsoft-defender-identity
+title: Understand Microsoft Defender for Identity
+metadata:
+  title: Understand Microsoft Defender for Identity
+  description: "Understand Microsoft Defender for Identity"
+  ms.date: 05/13/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/9-understand-microsoft-defender-identity.md)]

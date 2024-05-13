@@ -3666,6 +3666,136 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/00-accessibility-checker.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/01-word.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/02-powerpoint.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/03-excel.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/04-outlook.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/05-knowledge-check.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/06-summary-resources.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessibility-features/00-windows-10-accessibility.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessibility-features/01-gaming-features-and-tools.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessibility-features/02-microsoft-365-features.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessibility-features/03-knowledge-check.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessibility-features/04-summary-resources.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessibility-features/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/intro-accessibility-disability/00-what-is-accessibility.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/intro-accessibility-disability/01-language-and-etiquette.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/intro-accessibility-disability/02-what-is-inclusion.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/intro-accessibility-disability/03-knowledge-check.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/intro-accessibility-disability/04-summary-and-resources.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/intro-accessibility-disability/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/digital-accessibility/00-web-development.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/digital-accessibility/01-app-development.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/digital-accessibility/02-knowledge-check.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/digital-accessibility/03-summary-and-resources.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/digital-accessibility/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/accessibility-fundamentals/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/data-ai-cert/convert-speech-to-text/index.md",
       "redirect_url": "/training/modules/transcribe-speech-input-text",
       "redirect_document_id": false
@@ -16593,16 +16723,6 @@
     {
       "source_path": "learn-pr/wwl-data-ai/et-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals/index.md",
       "redirect_url": "/training/modules/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals/",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/software-composition-analysis/9-knowledge-check.md",
-      "redirect_url": "/training/modules/software-composition-analysis/10-knowledge-check",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/software-composition-analysis/10-summary.md",
-      "redirect_url": "/training/modules/software-composition-analysis/11-summary",
       "redirect_document_id": true
     },
     {
@@ -38277,6 +38397,186 @@
      {
       "source_path": "learn-pr/wwl-azure/develop-monitor-status-dashboards/8-summary.md",
       "redirect_url": "/training/modules/develop-monitor-status-dashboards/11-summary",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/understand-concurrency-postgresql/3-describe-isolation-levels.md",
+      "redirect_url": "/training/modules/understand-concurrency-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-concurrency-postgresql/4-understand-lock.md",
+      "redirect_url": "/training/modules/understand-concurrency-postgresql/4-understand-locking",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-concurrency-postgresql/5-exercise-understand-lock.md",
+      "redirect_url": "/training/modules/understand-concurrency-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/index.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/1-introduction.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/2-lesson-authentication.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/3-exercise-authentication.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/4-lesson-publish.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/5-exercise-publish.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/6-lesson-clone.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/7-exercise-clone.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/8-knowledge-check.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/9-summary.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/get-started-github-and-visual-studio-code/index.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/understand-write-ahead-logging/2-describe.md",
+      "redirect_url": "/training/modules/understand-write-ahead-logging/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-write-ahead-logging/3-describe-replication-logical-decode.md",
+      "redirect_url": "/training/modules/understand-write-ahead-logging/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/procedures-functions-postgresql/2-create-stored-procedure-azure-database-for-postgresql.md",
+      "redirect_url": "/training/modules/procedures-functions-postgresql/2-create-stored-procedure-azure-database-postgresql",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/procedures-functions-postgresql/3-call-stored-procedure-azure-database-for-postgresql.md",
+      "redirect_url": "/training/modules/procedures-functions-postgresql/3-call-stored-procedure-azure-database-postgresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/procedures-functions-postgresql/4-create-use-function-azure-database-for-postgresql.md",
+      "redirect_url": "/training/modules/procedures-functions-postgresql/4-create-function-azure-database-postgresql",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/procedures-functions-postgresql/5-exercise-create-stored-procedure-azure-database-for-postgresql.md",
+      "redirect_url": "/training/modules/procedures-functions-postgresql/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/secure-azure-database-for-postgresql/7-exercise-configure-permissions.md",
+      "redirect_url": "/training/modules/secure-azure-database-for-postgresql/6-exercise-configure-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/secure-azure-database-for-postgresql/8-knowledge-check.md",
+      "redirect_url": "/training/modules/secure-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/secure-azure-database-for-postgresql/9-summary.md",
+      "redirect_url": "/training/modules/secure-azure-database-for-postgresql/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-postgresql-query-process/4-exercise-practice-explain.md",
+      "redirect_url": "/training/modules/understand-postgresql-query-process/",
+      "redirect_document_id": false
+    },
+        {
+      "source_path": "learn-pr/wwl-azure/understand-client-server-communication-postgresql/4-exercise-explore-data-studio.md",
+      "redirect_url": "/training/modules/understand-client-server-communication-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/software-composition-analysis/10-knowledge-check.md",
+      "redirect_url": "/training/modules/software-composition-analysis/9-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/software-composition-analysis/11-summary.md",
+      "redirect_url": "/training/modules/software-composition-analysis/10-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/software-composition-analysis/4-integrate-whitesource-azure-devops-pipeline.md",
+      "redirect_url": "/training/modules/software-composition-analysis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/software-composition-analysis/5-implement-github-dependabot-alerts-security-updates.md",
+      "redirect_url": "/training/modules/software-composition-analysis/4-implement-github-dependabot-alerts-security-updates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/software-composition-analysis/6-integrate-software-composition-analysis-checks-into-pipelines.md",
+      "redirect_url": "/training/modules/software-composition-analysis/5-integrate-software-composition-analysis-checks-into-pipelines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/software-composition-analysis/7-examine-tools-for-assess-package-security-license-rate.md",
+      "redirect_url": "/training/modules/software-composition-analysis/6-examine-tools-for-assess-package-security-license-rate",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/software-composition-analysis/9-implement-security-compliance-azure-pipeline.md",
+      "redirect_url": "/training/modules/software-composition-analysis/",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/security-monitoring-and-governance/10-understand-microsoft-defender-identity.md",
+      "redirect_url": "/training/modules/security-monitoring-and-governance/9-understand-microsoft-defender-identity",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/security-monitoring-and-governance/11-knowledge-check.md",
+      "redirect_url": "/training/modules/security-monitoring-and-governance/12-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-monitoring-and-governance/12-summary.md",
+      "redirect_url": "/training/modules/security-monitoring-and-governance/13-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-monitoring-and-governance/9-explore-azure-blueprints.md",
+      "redirect_url": "/training/modules/security-monitoring-and-governance/",
       "redirect_document_id": false
     }
   ]

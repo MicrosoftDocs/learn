@@ -3303,6 +3303,11 @@ achievements:
   title: Responding to Data Subject Requests (DSRs)
   summary: Know, understand, and be able to describe Data Subject Requests (DSRs), and learn how to manage DSRs on Azure and Microsoft 365.
   iconUrl: /training/achievements/azure-data-subject-requests.svg
+- uid: learn.cela-disability-intro.badge
+  type: badge
+  title: Introduction to disability and accessibility
+  summary: This module presents the core ideas and definitions needed to understand accessibility concepts. You'll learn what accessibility means, how to be respectful and inclusive of people of all abilities, and why it's important for technology and materials to be accessible to everyone.
+  iconUrl: /training/achievements/accessibility-features.svg
 - uid: learn.azure-cosmos-db-for-postgresql.trophy
   type: trophy
   title: Azure Cosmos DB for PostgreSQL
@@ -3338,3 +3343,18 @@ achievements:
   title: Design multitenant SaaS apps by using Azure Cosmos DB for PostgreSQL
   summary: Azure Cosmos DB for PostgreSQL provides a powerful data platform for multitenant software as a service (SaaS) applications. Starting from a single-node instance, a multitenant database can be horizontally scaled to a multi-node distributed cluster of up to 20 servers to meet the demands of tenant growth.
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.accessible-content-m365.badge
+  type: badge
+  title: Creating accessible content with Microsoft 365
+  summary: This module shows you how to create content with Microsoft 365 in a way that enables greater accessibility.
+  iconUrl: /training/achievements/accessible-content-m365.svg
+- uid: learn.digital-accessibility.badge
+  type: badge
+  title: Digital accessibility
+  summary: This module shows how to create accessible and inclusive content for mobile apps and the web.
+  iconUrl: /training/achievements/digital-accessibility.svg
+- uid: learn.accessibility-features.badge
+  type: badge
+  title: Microsoft Accessibility Features and Tools
+  summary: This module highlights how to find and use key accessibility features and tools built into Microsoft products such as Windows 10, Microsoft PowerPoint, and Microsoft Translator.
+  iconUrl: /training/achievements/accessibility-features.svg

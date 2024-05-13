@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.moderate-content-detect-harm-azure-ai-content-safety-studio
+metadata:
+  ms.author: apspeigh
+  author: aprilspeight
+  ms.date: 05/09/2024
+  title: Moderate content and detect harm with Azure AI Content Safety Studio
+  description: Learn how to choose and build a content moderation system in the Azure AI Content Safety Studio.
+  ms.topic: module-guided-project
+  ms.service: artificial-intelligence
+title: Moderate content and detect harm with Azure AI Content Safety Studio
+summary: | 
+  Learn how to choose and build a content moderation system in the Azure AI Content Safety Studio.
+  > [!NOTE]
+  >  This is a **_guided project_** module where you’ll complete an end-to-end project by following step-by-step instructions.
+abstract: |
+  By the end of this module, you're able to:
+  - Configure filters and threshold levels to block harmful content.
+  - Perform text and image moderation for harmful content.
+  - Analyze and improve Precision, Recall, and F1 Score metrics.
+  - Detect groundedness in a model’s output.
+  - Identify and block AI-generated copyrighted content.
+  - Mitigate direct and indirect prompt injections.
+  - Output filter configurations to code.
+prerequisites: |
+  - An Azure subscription - [Create one for free](https://azure.microsoft.com/free/)
+  - Familiarity with Azure and the Azure portal
+  - Access to Azure OpenAI Services
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.moderate-content-detect-harm-azure-ai-content-safety-studio.introduction
+- learn.moderate-content-detect-harm-azure-ai-content-safety-studio.content-safety-studio
+- learn.moderate-content-detect-harm-azure-ai-content-safety-studio.prepare
+- learn.moderate-content-detect-harm-azure-ai-content-safety-studio.harm-categories-severity-levels
+- learn.moderate-content-detect-harm-azure-ai-content-safety-studio.exercise-text-moderation
+- learn.moderate-content-detect-harm-azure-ai-content-safety-studio.exercise-image-moderation
+- learn.moderate-content-detect-harm-azure-ai-content-safety-studio.exercise-groundedness-detection
+- learn.moderate-content-detect-harm-azure-ai-content-safety-studio.exercise-prompt-shields
+- learn.moderate-content-detect-harm-azure-ai-content-safety-studio.exercise-integrate-contoso-camping-store-platform
+- learn.moderate-content-detect-harm-azure-ai-content-safety-studio.knowledge-check
+- learn.moderate-content-detect-harm-azure-ai-content-safety-studio.summary
+badge:
+  uid: learn.moderate-content-detect-harm-azure-ai-content-safety-studio-badge
