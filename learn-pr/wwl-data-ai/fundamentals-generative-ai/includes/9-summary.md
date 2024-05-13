@@ -3,6 +3,9 @@ Generative AI is a rapidly developing field of AI that supports new language gen
 The main takeaways from this module include understanding the role of generative AI in creating AI assistants or copilots that provide contextualized support for common tasks. Often, generative AI is integrated into chat applications like ChatGPT and Bing Chat to interpret natural language inputs and generate suitable responses. You learned about the three levels of copilot adoption and the various applications of Microsoft Copilot across different Microsoft applications. The module also highlighted the importance of improving the quality of responses from generative AI. Finally, you have been introduced to two tools offered by Microsoft for customizing or developing custom copilots: Copilot Studio and Azure AI Studio.
 
 More reading:
-- [Microsoft AI Hub](/ai/)
-- [Azure OpenAI documentation](/azure/ai-services/openai/overview)
-- [Learn how to develop AI solutions with Azure OpenAI](/training/paths/develop-ai-solutions-azure-openai/)
+- [Use Microsoft Copilot](https://copilot.microsoft.com/)
+- [Learn about Copilot for Microsoft 365](https://adoption.microsoft.com/copilot/)
+- [Try out Microsoft Copilot Studio](https://www.microsoft.com/microsoft-copilot/microsoft-copilot-studio/)
+- [Try out Microsoft AI Studio](https://azure.microsoft.com/products/ai-studio/)
+
+
