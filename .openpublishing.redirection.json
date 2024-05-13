@@ -16596,16 +16596,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/wwl-azure/software-composition-analysis/9-knowledge-check.md",
-      "redirect_url": "/training/modules/software-composition-analysis/10-knowledge-check",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/software-composition-analysis/10-summary.md",
-      "redirect_url": "/training/modules/software-composition-analysis/11-summary",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "learn-pr/wwl-azure/static-analyzers/4-knowledge-check.md",
       "redirect_url": "/training/modules/static-analyzers/5-knowledge-check",
       "redirect_document_id": true
@@ -38402,6 +38392,41 @@
         {
       "source_path": "learn-pr/wwl-azure/understand-client-server-communication-postgresql/4-exercise-explore-data-studio.md",
       "redirect_url": "/training/modules/understand-client-server-communication-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/software-composition-analysis/10-knowledge-check.md",
+      "redirect_url": "/training/modules/software-composition-analysis/9-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/software-composition-analysis/11-summary.md",
+      "redirect_url": "/training/modules/software-composition-analysis/10-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/software-composition-analysis/4-integrate-whitesource-azure-devops-pipeline.md",
+      "redirect_url": "/training/modules/software-composition-analysis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/software-composition-analysis/5-implement-github-dependabot-alerts-security-updates.md",
+      "redirect_url": "/training/modules/software-composition-analysis/4-implement-github-dependabot-alerts-security-updates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/software-composition-analysis/6-integrate-software-composition-analysis-checks-into-pipelines.md",
+      "redirect_url": "/training/modules/software-composition-analysis/5-integrate-software-composition-analysis-checks-into-pipelines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/software-composition-analysis/7-examine-tools-for-assess-package-security-license-rate.md",
+      "redirect_url": "/training/modules/software-composition-analysis/6-examine-tools-for-assess-package-security-license-rate",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/software-composition-analysis/9-implement-security-compliance-azure-pipeline.md",
+      "redirect_url": "/training/modules/software-composition-analysis/",
       "redirect_document_id": false
     }
   ]
