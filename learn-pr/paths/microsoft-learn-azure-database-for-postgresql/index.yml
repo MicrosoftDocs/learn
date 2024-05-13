@@ -1,20 +1,20 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.microsoft-learn-azure-database-for-postgresql
 metadata:
-  title: Work with Azure Database for PostgreSQL
-  description: Work with Azure Database for PostgreSQL
-  ms.date: 08/24/2022
+  title: 'Configure and migrate to Azure Database for PostgreSQL  '
+  description: Azure Database for PostgreSQL is a Platform as a Service database service in the Microsoft cloud. It bases itself on the PostgreSQL open-source relational database and includes built-in high availability, automatic backup and restore, as well as comprehensive security features. The pay-as-you-go pricing model provides predictable performance and near-instant scaling. In this learning path, you're introduced to the main features of PostgreSQL and how they work in Azure Database for PostgreSQL. You learn about the different Azure Database for PostgreSQL implementation options, and how to configure a server for your needs.
+  ms.date: 05/11/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: learning-path
-title: Work with Azure Database for PostgreSQL
+title: Configure and migrate to Azure Database for PostgreSQL
 prerequisites: |
-  - Demonstrate an understanding of relational databases.
-  - Demonstrate an understanding of basic SQL.
+  -   Demonstrate an understanding of relational databases.
+  -   Demonstrate an understanding of basic SQL.
 summary: |
-  Azure Database for PostgreSQL is a Platform as a Service database service in the Microsoft cloud. It's based on the PostgreSQL open-source relational database and includes built-in high availability, automatic backup and restore, as well as comprehensive security features. The pay-as -you-go pricing model provides predictable performance and near-instant scaling.
-  In this learning path you'll be introduced to the main features of PostgreSQL and how they work in Azure Database for PostgreSQL. You'll learn about the different Azure Database for PostgreSQL implementation options, and how to configure a server for your needs.
-iconUrl: /training/achievements/microsoft-learn-azure-database-for-postgresql.svg
+  Azure Database for PostgreSQL is a Platform as a Service database service in the Microsoft cloud. It bases itself on the PostgreSQL open-source relational database and includes built-in high availability, automatic backup and restore, as well as comprehensive security features. The pay-as-you-go pricing model provides predictable performance and near-instant scaling.
+  In this learning path, you learn the main features of PostgreSQL and how they work in Azure Database for PostgreSQL. You learn about the different Azure Database for PostgreSQL implementation options, and how to configure a server for your needs.
+iconUrl: /learn/achievements/microsoft-learn-azure-database-for-postgresql.svg
 levels:
 - intermediate
 roles:
@@ -30,9 +30,9 @@ modules:
 - learn.wwl.secure-azure-database-for-postgresql
 - learn.wwl.procedures-functions-postgesql
 - learn.wwl.understand-write-ahead-logging
-- learn.wwl.use-system-catalogs-system-views-postgresql
+- learn.wwl.configure-manage-postgresql
 - learn.wwl.understand-concurrency-postgresql
-- learn.wwl.optimize-vacuum-azure-database-for-postgresql
 - learn.wwl.tune-queries-azure-database-for-postgresql
+- learn.wwl.migrate-azure-database-postgresql-flexible-server
 trophy:
   uid: learn.wwl.microsoft-learn-azure-database-for-postgresql.trophy
