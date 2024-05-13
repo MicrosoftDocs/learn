@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.work-with-form-recognizer
 metadata:
-  title: Extract data from forms with Document intelligence
-  description: "Document intelligence extracts data at scale to enable the submission of documents in real time, at scale, with accuracy. This module gives users the tools to use the&nbsp;*Azure Document intelligence*&nbsp;vision API."
+  title: Extract data from forms with Azure Document intelligence
+  description: "Azure Document intelligence extracts data at scale to enable the submission of documents in real time, at scale, with accuracy. This module gives users the tools to use the Azure Document intelligence vision API."
   ms.date: 04/18/2024
   author: wwlpublish
-  ms.author: sheryang
+  ms.author: berryivor
   ms.topic: module
   ms.service: azure
   ai-usage: human-only
-title: Extract data from forms with Document intelligence
+title: Extract data from forms with Azure Document intelligence
 summary: Document intelligence uses machine learning technology to identify and extract key-value pairs and table data from form documents with accuracy, at scale. This module teaches you how to use the *Azure Document intelligence* cognitive service.
 abstract: |
   In this module, you learn how to:
@@ -40,8 +40,8 @@ units:
 - learn.wwl.work-with-form-recognizer.get-started
 - learn.wwl.work-with-form-recognizer.train-custom-models-with-labels
 - learn.wwl.work-with-form-recognizer.use-models
-- learn.wwl.work-with-form-recognizer.exercise-extract-data-from-custom-forms
 - learn.wwl.work-with-form-recognizer.form-recognizer-studio
+- learn.wwl.work-with-form-recognizer.exercise-extract-data-from-custom-forms
 - learn.wwl.work-with-form-recognizer.knowledge-check-summary
 - learn.wwl.work-with-form-recognizer.summary
 badge:

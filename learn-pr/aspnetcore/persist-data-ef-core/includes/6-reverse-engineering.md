@@ -29,7 +29,7 @@ Now, you'll use the database to scaffold the code:
     > [!NOTE]
     > In this exercise, you can ignore the warning about your connection string being in source code. In real-world code, always store your connection strings in a secure location.
 
-1. Open *Models\Coupon.cs*. The `Expiration` property is defined as a string because SQLite doesn't have a datetime data type. Change the `Expiration` type from `string?` to `DateTime`. EF Core manages the conversion of datetime data to string data.
+1. Open *Models\Coupon.cs* and inspect the scaffolded model. 
 
     ```csharp
     using System;
@@ -41,10 +41,12 @@ Now, you'll use the database to scaffold the code:
         {
             public long Id { get; set; }
             public string Description { get; set; } = null!;
-            public DateTime Expiration { get; set; }
+            public DateOnly? Expiration { get; set; }
         }
     }
     ```
+
+    Since SQLite has a limited set of types compared to C#, the scaffolding tool made inferences as to what C# types to use. For example, the `Expiration` database column was defined as a string because SQLite doesn't have a date data type. The scaffolding tool inferred that the C# type should be `DateOnly?` based on the data in the database.
 
     > [!TIP]
     > If the database changes, you can generate new scaffolded files. The generated files are overwritten each time, but they're created as `partial` classes, so you can extend them with custom properties and behaviors in your own, separate files.

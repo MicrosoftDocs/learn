@@ -4,12 +4,12 @@ title: Develop a just culture
 metadata:
   title: Develop a just culture
   description: "Develop a just culture"
-  ms.date: 11/06/2023
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.custom:
+  - N/A
+durationInMinutes: 3
 content: |
   [!include[](includes/9-develop-just-culture.md)]
