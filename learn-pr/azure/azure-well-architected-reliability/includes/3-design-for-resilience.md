@@ -1,7 +1,7 @@
 | :::image type="icon" source="../media/goal.svg"::: The workload must continue to operate with full or reduced functionality. |
 | :----------------------------------------------------------------------------------------------------------------------------------------- |
 
-You should expect component malfunctions, platform outages, performance degradations, and other to faults occur. Build resiliency in the system so that it's fault-tolerant and can degrade gracefully.
+You should expect component malfunctions, platform outages, performance degradations, and other faults to occur. Build resiliency in the system so that it's fault-tolerant and can degrade gracefully.
 
 **Example scenario**
 
