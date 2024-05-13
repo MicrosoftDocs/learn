@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.moderate-content-detect-harm-azure-ai-content-safety-studio.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summarize what you learned in this module about the Azure AI Content Safety Studio.
+  ms.date: 05/09/2024
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/11-summary.md)]
