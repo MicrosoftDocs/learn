@@ -3,13 +3,13 @@ uid: learn.wwl.secure-azure-database-for-postgresql.describe-built-server-roles
 title: Describe built-in Azure Database for PostgreSQL server roles
 metadata:
   title: Describe built-in Azure Database for PostgreSQL server roles
-  description: "Describe built-in Azure Database for PostgreSQL server roles"
-  ms.date: 02/07/2023
+  description: "Describe built-in Azure Database for PostgreSQL server roles."
+  ms.date: 05/10/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/3-describe-built-server-roles.md)]
