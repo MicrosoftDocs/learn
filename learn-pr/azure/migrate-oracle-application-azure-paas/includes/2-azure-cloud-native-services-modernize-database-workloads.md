@@ -36,7 +36,7 @@ When considering a PaaS database solution for an Oracle database migration, you 
 
 The following diagram shows the process to convert and migrate an Oracle database to either option.
 
-![Shows steps in the process to convert and migrate Oracle to PostgreSQL and Oracle to SQL.](../media/2-conversion-process.png)
+![Diagram that shows steps in the process to convert and migrate Oracle to PostgreSQL and Oracle to SQL.](../media/2-conversion-process.png)
 
 In addition to the choice of core database technology, you consider the various tools designed to help you in your migration:
 
