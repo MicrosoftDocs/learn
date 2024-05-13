@@ -105,12 +105,12 @@ The following animation shows a simplified representation of how this works – 
 
 ![Animation showing an attention layer assigning weights to tokens and predicting the next one.](../media/attention.gif)
 
-1.	A sequence of token embeddings is fed into the attention layer. Each token is represented as a vector of numeric values.
-2.	The goal in a decoder is to predict the next token in the sequence, which will also be a vector that aligns to an embedding in the model’s vocabulary.
-3.	The attention layer evaluates the sequence so far and assigns weights to each token to represent their relative influence on the next token. 
-4.	The weights can be used to compute a new vector for the next token with an attention score. Multi-head attention uses different elements in the embeddings to calculate multiple alternative tokens.
-5.	A fully connected neural network uses the scores in the calculated vectors to predict the most probable token from the entire vocabulary.
-6.	The predicted output is appended to the sequence so far, which is used as the input for the next iteration.
+1. A sequence of token embeddings is fed into the attention layer. Each token is represented as a vector of numeric values.
+2. The goal in a decoder is to predict the next token in the sequence, which will also be a vector that aligns to an embedding in the model’s vocabulary.
+3. The attention layer evaluates the sequence so far and assigns weights to each token to represent their relative influence on the next token. 
+4. The weights can be used to compute a new vector for the next token with an attention score. Multi-head attention uses different elements in the embeddings to calculate multiple alternative tokens.
+5. A fully connected neural network uses the scores in the calculated vectors to predict the most probable token from the entire vocabulary.
+6. The predicted output is appended to the sequence so far, which is used as the input for the next iteration.
 
 During training, the actual sequence of tokens is known – we just mask the ones that come later in the sequence than the token position currently being considered. As in any neural network, the predicted value for the token vector is compared to the actual value of the next vector in the sequence, and the loss is calculated. The weights are then incrementally adjusted to reduce the loss and improve the model. When used for inferencing (predicting a new sequence of tokens), the trained attention layer applies weights that predict the most probable token in the model’s vocabulary that is semantically aligned to the sequence so far.
 
