@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.design-a-mvvm-viewmodel.exercise-manage-selection-with-a-viewmodel
+title: Exercise - Manage selection by using a viewmodel
+metadata:
+  title: Exercise - Manage selection by using a viewmodel
+  description: "Add code to a viewmodel to help maintain selection state."
+  ms.date: 04/21/2024
+  author: adegeo
+  ms.author: adegeo
+  ms.topic: unit
+  ms.custom: devx-track-dotnet
+  
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-manage-selection-with-viewmodel.md)]
