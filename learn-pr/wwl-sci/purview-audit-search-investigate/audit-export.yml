@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-audit-search-investigate.audit-export
+title: Export audit log data
+metadata:
+  title: Export audit log data
+  description: "Export audit log data."
+  ms.date: 05/01/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/audit-export.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the maximum number of entries that can be exported to a CSV file from a single audit log search in Microsoft Purview Audit?"
+    choices:
+    - content: "10,000 entries."
+      isCorrect: false
+      explanation: "Incorrect: The limit is higher than 10,000 entries."
+    - content: "50,000 entries."
+      isCorrect: true
+      explanation: "Correct: Up to 50,000 entries can be downloaded to a CSV file from a single audit log search."
+    - content: "100,000 entries."
+      isCorrect: false
+      explanation: "Incorrect: The limit isn't as high as 100,000 entries for a single export."

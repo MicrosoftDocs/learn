@@ -2,8 +2,8 @@
 uid: learn.wwl.microsoft-defender-cloud-threat-protection
 metadata:
   title: Configure and manage threat protection by using Microsoft Defender for Cloud
-  description: "This module focuses on configuring and managing security monitoring and automation solutions using Azure Monitor and Microsoft Sentinel, enabling organizations to proactively identify and respond to security incidents in their cloud environment."
-  ms.date: 04/17/2024
+  description: "This module focuses on the essential techniques for configuring and managing threat protection exclusively with Microsoft Defender for Cloud, empowering cybersecurity specialists to strengthen the security posture of their cloud environments."
+  ms.date: 05/10/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
@@ -12,17 +12,19 @@ metadata:
   ms.service: azure
   ai-usage: human-only
 title: Configure and manage threat protection by using Microsoft Defender for Cloud
-summary: This module focuses on configuring and managing security monitoring and automation solutions using Azure Monitor and Microsoft Sentinel, enabling organizations to proactively identify and respond to security incidents in their cloud environment.
+summary: This module focuses on the essential techniques for configuring and managing threat protection exclusively with Microsoft Defender for Cloud, empowering cybersecurity specialists to strengthen the security posture of their cloud environments.
 abstract: |
   By the end of this module, participants will be able to:
 
-  -   Utilize Azure Monitor for comprehensive monitoring of cloud security events.
+  -   Master the configuration of Microsoft Defender for Cloud to effectively monitor and protect cloud resources.
 
-  -   Aggregate diverse security data efficiently with data connectors in Microsoft Sentinel.
+  -   Implement advanced threat detection strategies using Microsoft Defender for Cloud's built-in capabilities.
 
-  -   Detect threats using customized analytics rules in Microsoft Sentinel.
+  -   Utilize Microsoft Defender for Cloud's threat intelligence to proactively identify and mitigate security risks.
 
-  -   Assess and automate incident responses in Microsoft Sentinel for enhanced security management.
+  -   Configure and fine-tuning security policies within Microsoft Defender for Cloud to align with organizational security requirements.
+
+  -   Develop expertise in incident response and remediation using Microsoft Defender for Cloud's integrated tools and features.
 prerequisites: None
 iconUrl: /training/achievements/generic-badge.svg
 levels:
@@ -32,8 +34,8 @@ roles:
 - security-engineer
 products:
 - azure
-- azure-log-analytics
-- azure-monitor
+- defender-for-cloud
+- defender-for-cloud-apps
 subjects:
 - it-management-monitoring
 units:
@@ -54,7 +56,7 @@ units:
 - learn.wwl.microsoft-defender-cloud-threat-protection.microsoft-defender-cloud-devops-security
 - learn.wwl.microsoft-defender-cloud-threat-protection.devops-security-support-prerequisites
 - learn.wwl.microsoft-defender-cloud-threat-protection.devops-environment-security-posture
-- learn.wwl.microsoft-defender-cloud-threat-protection.connect-your-git-lab-environment-microsoft-defender-cloud
+- learn.wwl.microsoft-defender-cloud-threat-protection.connect-your-git-hub-lab-environment-microsoft-defender-cloud
 - learn.wwl.microsoft-defender-cloud-threat-protection.configure-microsoft-security-devops-github-action
 - learn.wwl.microsoft-defender-cloud-threat-protection.security-alerts-incidents
 - learn.wwl.microsoft-defender-cloud-threat-protection.automate-responses-microsoft-defender-cloud-triggers

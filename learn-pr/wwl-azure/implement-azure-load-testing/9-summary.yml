@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-azure-load-testing.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 05/13/2024
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 2
+content: |
+  [!include[](includes/9-summary.md)]

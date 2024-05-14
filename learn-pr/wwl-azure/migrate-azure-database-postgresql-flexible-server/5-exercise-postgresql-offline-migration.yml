@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-azure-database-postgresql-flexible-server.exercise-postgresql-offline-migration
+title: Exercise – Offline PostgreSQL database migration
+metadata:
+  title: Exercise – Offline PostgreSQL database migration
+  description: "Exercise – Offline PostgreSQL database migration."
+  ms.date: 05/10/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 20
+content: |
+  [!include[](includes/5-exercise-postgresql-offline-migration.md)]

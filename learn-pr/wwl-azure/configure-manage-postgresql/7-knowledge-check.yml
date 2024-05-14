@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-manage-postgresql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/10/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which schema stores metadata in PostgreSQL?"
+    choices:
+    - content: "pg_schema"
+      isCorrect: false
+      explanation: "Incorrect. pg_schema isn't a system schema in PostgreSQL."
+    - content: "pg_catalog"
+      isCorrect: true
+      explanation: "Correct. The **pg_catalog** schema stores metadata."
+    - content: "pg_metadata"
+      isCorrect: false
+      explanation: "Incorrect. pg_metadata isn't a system schema in PostgreSQL."
+  - content: "Which system table contains lock information for each database?"
+    choices:
+    - content: "pg_database."
+      isCorrect: false
+      explanation: "Incorrect. pg_database has basic information such as the database owner, the collation, and the connection limit."
+    - content: "pg_stat_database."
+      isCorrect: true
+      explanation: "Correct. pg_stat_database contains lock information for each database."
+    - content: "pg_database_lock."
+      isCorrect: false
+      explanation: "Incorrect. pg_database_lock isn't a system table in PostgreSQL."
+  - content: "The server parameters are tuned to make autovacuum more efficient. However, users are complaining of slight delays when updating the single table in the database that has most updates. What needs done to resolve the problem?"
+    choices:
+    - content: "Split the table into two."
+      isCorrect: true
+      explanation: "Correct. The autovacuum process locks the data page when running. When one table has most of the updates, splitting the table allows autovacuum to run in parallel reducing the time each data page is locked."
+    - content: "Increase the value for autovacuum_analyze_threshold."
+      isCorrect: false
+      explanation: "Incorrect. autovacuum_analyze_threshold determines the number of dead types before autovacuum will run. If this value is increased, autovacuum will have more work to do, increasing the latency for users."
+    - content: "Disable AUTOVACUUM and run VACUUM manually as required."
+      isCorrect: false
+      explanation: "Incorrect. Vacuum is the same process as autovacuum and won't alter the performance users are experiencing."
+  - content: "A new administrator recently took over support for an Azure Database for PostgreSQL database at the company. It was noticed that the storage required for the database seems to be growing faster than expected. What steps should be taken to investigate?"
+    choices:
+    - content: "Check the server parameters to ensure autovacuum is switched OFF."
+      isCorrect: false
+      explanation: "Incorrect. Autovacuum should always be enabled. Check the server parameters to ensure autovacuum is ON."
+    - content: "Prevent users from adding more data to the database until the problem is solved."
+      isCorrect: false
+      explanation: "Incorrect. First investigate whether dead rows are a cause of the storage problem. If not, increase the amount of storage provisioned for the database."
+    - content: "Run a SELECT query to find dead rows that are no longer needed in the database."
+      isCorrect: true
+      explanation: "Correct. Rows marked for deletion that haven't yet been deleted can cause database \"bloat\" and take more storage space than required. Run a SELECT statement to find the number of dead rows in tables that are updated frequently."

@@ -47,3 +47,14 @@ quiz:
     - content: Select the 'Summarize' tab in the Risky User Details window.
       isCorrect: true
       explanation: Correct. The 'Summarize' tab displays the Copilot generated summary of the user's risk level.
+  - content: What information can be obtained by using Copilot in Intune, when creating a new policy?
+    choices:
+    - content: The date and time a policy was last updated.
+      isCorrect: false
+      explanation: Incorrect. Copilot doesn't provide information on the date and time a policy was last updated.
+    - content: The number of users who have accessed a policy.
+      isCorrect: false
+      explanation: Incorrect. Copilot doesn't provide information on the number of users who have accessed a policy.
+    - content: Information about individual settings, their impact, and recommended values.
+      isCorrect: true
+      explanation: Correct. When creating a new policy, Copilot can be used to learn more about individual settings, their impact, and recommended values.

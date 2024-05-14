@@ -1,4 +1,3 @@
-
 Enrolling personal and organization-owned devices in Intune can significantly enhance your organization's security and device management capabilities. Enrolling a device establishes a connection between the device and Intune, allowing you to manage and control the device remotely.
 
 Once enrolled, the device will receive the policies and profiles you created, including email, Wi-Fi, security settings, and more configurations. These policies and profiles can be customized to meet your organization's specific needs, ensuring that your devices are configured and secured in accordance with your policies.
@@ -78,6 +77,6 @@ Co-management enables you to manage Windows devices concurrently by using both C
 
 ##### Method 8: Microsoft Entra join (bulk enrollment)
 
-Bulk enrollment is an efficient way to set up many devices to be managed by Intune without the need to re-image the devices. You enable bulk enrollment by creating a provisioning package using the Windows Configuration Designer app from the Store. You then apply this package during the OOBE or run it from the Settings app. This method can be used instead of method 1 if you want the enrollment process to be as easy as possible for your users. You don’t have to give users instructions on how to **set up a work or school** account from the **Settings** app. You supply them with the provisioning package and all they’ve to it to select it to enroll in Microsoft Entra ID and Intune.
+Bulk enrollment is an efficient way to set up many devices to be managed by Intune without the need to re-image the devices. You enable bulk enrollment by creating a provisioning package using the Windows Configuration Designer app from the Store. You then apply this package during the OOBE or run it from the Settings app. If you want to make the enrollment process as easy as possible for your users, you can use this method instead of method 1. You don’t have to give users instructions on how to **set up a work or school** account from the **Settings** app. You provide them with the provisioning package, and all they need to do is select it to enroll in Microsoft Entra ID and Intune.
 
 :::image type="content" source="../media/windows-configuration-designer-create-menu-15ea5078.png" alt-text="Screenshot of the Windows Configuration Designer start page.":::
