@@ -16,44 +16,44 @@ Before you start your next iteration, it's important to define the bounds for wh
 
 Use the information following as a guide to select the right FinOps capabilities based on your role, experience, and current priorities. It isn't an all-inclusive list of considerations. We encourage you to select all from one group or pick and choose across groups based on your current needs. It's merely an aid to help you get started. If you'd like a finer-grained analysis of the areas you should focus on, apply the [FinOps review assessment](https://aka.ms/finops/review) to identify next steps.
 
-1. If your team is new to FinOps with little to moderate experience with cost management and optimization, we recommend starting with the basics:
-    1. Reporting and analytics
-    2. Forecasting
-    3. Budgeting
-    4. Workload optimization
-    5. Anomaly management
-    6. FinOps assessment
+- If your team is new to FinOps with little to moderate experience with cost management and optimization, we recommend starting with the basics:
+    - Reporting and analytics
+    - Forecasting
+    - Budgeting
+    - Workload optimization
+    - Anomaly management
+    - FinOps assessment
 
-2. If you're building a new FinOps team or interested in driving awareness and adoption of FinOps, start with:
-    1. FinOps education and enablement
-    2. FinOps practice operations
-    3. Onboarding workloads
+- If you're building a new FinOps team or interested in driving awareness and adoption of FinOps, start with:
+    - FinOps education and enablement
+    - FinOps practice operations
+    - Onboarding workloads
 
-3. If your team has a solid understanding of the basics provided by FinOps tools in Microsoft Cloud and is responsible for managing costs across a broad organization with distributed and sometimes shared ownership, consider:
-    1. Allocation
-    2. Chargeback
-    3. Rate optimization
+- If your team has a solid understanding of the basics provided by FinOps tools in Microsoft Cloud and is responsible for managing costs across a broad organization with distributed and sometimes shared ownership, consider:
+    - Allocation
+    - Chargeback
+    - Rate optimization
 
-4. If your team needs to build more advanced reporting, like managing costs across clouds or merging with business data, consider:
-    1. Data ingestion
-    2. Allocation (especially metadata)
-    3. Reporting and analytics
-    4. FinOps tools and services
+- If your team needs to build more advanced reporting, like managing costs across clouds or merging with business data, consider:
+    - Data ingestion
+    - Allocation (especially metadata)
+    - Reporting and analytics
+    - FinOps tools and services
 
-5. If your team has a solid understanding of the basics and wants to focus on deeper optimization or advanced automation, consider:
-    1. Workload optimization
-    2. Rate optimization
-    3. Cloud policy and governance
-    4. Anomaly management
-    5. Budgeting
-    6. Cloud sustainability
-    7. Architecting for cloud
+- If your team has a solid understanding of the basics and wants to focus on deeper optimization or advanced automation, consider:
+    - Workload optimization
+    - Rate optimization
+    - Cloud policy and governance
+    - Anomaly management
+    - Budgeting
+    - Cloud sustainability
+    - Architecting for cloud
 
-6. If your team has a solid understanding of the basics and needs to map cloud investments back to business value, consider:
-    1. Unit economics
-    2. Benchmarking
-    3. Forecasting
-    4. Budgeting
+- If your team has a solid understanding of the basics and needs to map cloud investments back to business value, consider:
+    - Unit economics
+    - Benchmarking
+    - Forecasting
+    - Budgeting
 
 Note the capabilities you select for future use.
 
