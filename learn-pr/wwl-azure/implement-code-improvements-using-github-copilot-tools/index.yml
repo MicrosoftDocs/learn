@@ -7,6 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
   ms.service: github-copilot
   ms.devlang: csharp
   ai-usage: ai-assisted
