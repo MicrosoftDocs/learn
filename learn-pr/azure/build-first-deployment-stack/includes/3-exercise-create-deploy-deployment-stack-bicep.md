@@ -1,4 +1,4 @@
-You are at sprint 1 for the new deposits application. You want to test the process of creating a deployment stack with managed resources in a development subscription. In this exercise, you create a deployment stack scoped to a resource group that references a bicep file. The file defines an Azure app service plan and an Azure app service.
+You are on sprint 1 for the new deposits application. You want to test the process of creating a deployment stack with managed resources in a development subscription. In this exercise, you create a deployment stack scoped to a resource group that references a bicep file. The file defines an Azure app service plan and an Azure app service.
 
 During the process, you'll:
 

@@ -1,4 +1,4 @@
-In this exercise, you update the Bicep file you previously created to include additional resources. You also update and delete the deployment stack that manages your resources.
+You are on sprint 2 for the new deposits application. You want to test updating the deployment stack by defining an Azure SQL database in the bicep file. You want to verify that the newly defined resources are managed by the stack. In this exercise, you update the Bicep file you previously created to include additional resources. You also update and delete the deployment stack that manages your resources.
 
 > [!div class="checklist"]
 >
@@ -41,7 +41,7 @@ You are prompted to enter a value for `sqlServerAdminUserName` and `sqlServerAdm
 ![a graphic representing an the command line prompting you to endter an administrator user name and password for the sql server](../media/sql-admin-username-password-cli.png)
 
 > [!NOTE]
-> Rember, AZ CLI does not have a dedicated command to update a deployment stack. Use the create command to update the stack
+> AZ CLI does not have a dedicated command to update a deployment stack. Use the create command to update the stack.
 
 ::: zone-end
 
@@ -111,7 +111,7 @@ To delete the deployment stack and its managed resources, run the following comm
 az stack group delete \
     --name stack-deposits \
     --resource-group rg-depositsApplication \
-    --actionOnUnmanage delete-all
+    --action-on-unmanage deleteAll
 ```
 
 ::: zone-end

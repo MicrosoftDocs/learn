@@ -1,6 +1,8 @@
 An Azure deployment stack is a collection of Azure resources that can be managed as a single unit even if they span multiple resource groups or subscriptions.
 
-In this unit, you'll learn how to create a deployment stack, verify its deployment, and list all deployment stacks in your environment.
+You are planning for the deployment of the test version of the new deposits application. You need to learn more about how to create a deployment stack and verify its managed resources.
+
+In this unit, you learn how to create a deployment stack, verify its deployment, and list all deployment stacks in your environment.
 
 [!INCLUDE [Note - don't run commands](../../../includes/dont-run-commands.md)]
 
