@@ -1,7 +1,6 @@
 Now let's explore generative AI with Microsoft Copilot.
 
->![NOTE] 
->There are two variations of the exercise: one for learners who have access to Microsoft 365 Copilot, and an alternative for those who don't. Launch and complete one **or** the other to explore Microsoft Copilot.
+> **Note**: There are two variations of the exercise: one for learners who have access to Microsoft 365 Copilot, and an alternative for those who don't. Launch and complete one **or** the other to explore Microsoft Copilot.
 
 ## Using Microsoft Copilot for Microsoft 365
 If you have access to Microsoft Copilot for Microsoft 365, launch this version of the exercise and follow the instructions. 
