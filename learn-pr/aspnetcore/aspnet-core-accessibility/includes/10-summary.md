@@ -8,6 +8,4 @@ In this module, you used HTML standards for web accessibility along with Accessi
 - [Accessibility Insights](https://accessibilityinsights.io/): Free, open-source application for solving accessibility issues.
 - [Introduction to Accessibility Insights for Web](https://www.youtube.com/watch?v=U6NY8Cxym5g): Video overview of how to use the Accessibility Insights for Web application to solve accessibility issues.
 
-  :::image type="content" source="../../../cela-accessibility/digital-accessibility/media/youtube-accinsights-for-web.png" alt-text="Screenshot of the title screen for the Introduction to Accessibility Insights for Web video.":::
-
 [!include[](../../../includes/dotnet-summary.md)]
