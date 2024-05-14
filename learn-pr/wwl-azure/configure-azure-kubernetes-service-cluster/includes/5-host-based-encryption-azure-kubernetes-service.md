@@ -17,7 +17,7 @@ A list of examples enabling host-based encryption on new and existing clusters u
  -  Create a new cluster and configure the cluster agent nodes to use host-based encryption using `--enable-encryption-at-host` flag.
     
     ```azurecli
-    az aks create --name myAKSCluster --resource-group myResourceGroup -s Standard_DS2_v2 -l westus2--enable-encryption-at-host
+    az aks create --name myAKSCluster --resource-group myResourceGroup -s Standard_DS2_v2 -l westus2 --enable-encryption-at-host
     ```
 
 ### Use host-based encryption on existing clusters.

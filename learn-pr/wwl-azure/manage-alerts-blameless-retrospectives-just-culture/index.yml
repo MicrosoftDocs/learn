@@ -3,21 +3,27 @@ uid: learn.wwl.manage-alerts-blameless-retrospectives-just-culture
 metadata:
   title: Manage alerts, blameless retrospectives and a just culture
   description: "Manage alerts, blameless retrospectives and a just culture"
-  ms.date: 11/06/2023
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: azure
+  ai-usage: human-only
 title: Manage alerts, blameless retrospectives and a just culture
 summary: This module examines alerts, blameless retrospectives and creates a just culture. It helps improving application performance, reducing meaningless and nonactionable alerts, and explains server response-time degradation.
 abstract: |
-  By the end of this module, you'll be able to:
-  - Carry out blameless retrospectives and create a just culture
-  - Improve application performance
-  - Explain server response time degradation
-  - Reduce meaningless and nonactionable alerts
-prerequisites: |
-  None
+  By the end of this module, you're able to:
+
+  -   Carry out blameless retrospectives and create a just culture
+
+  -   Improve application performance
+
+  -   Explain server response time degradation
+
+  -   Reduce meaningless and nonactionable alerts
+prerequisites: None
 iconUrl: /learn/achievements/8-manage-alerts-blameless-retrospectives-and-a-just-culture.svg
 levels:
 - advanced

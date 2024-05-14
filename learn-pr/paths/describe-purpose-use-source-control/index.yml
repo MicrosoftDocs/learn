@@ -20,8 +20,6 @@ roles:
 products:
 - azure
 - github
-subjects:
-- development-tools
 modules:
 - learn.wwl.explain-control-system-helps-manage-files
 - learn.wwl.describe-how-git-manages-source-control

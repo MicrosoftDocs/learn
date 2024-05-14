@@ -2,22 +2,30 @@
 uid: learn.wwl.measure-performance-azure-cosmos-db-sql-api
 metadata:
   title: Measure performance in Azure Cosmos DB for NoSQL
-  description: "We will learn to use Azure Monitor to create and analyze monitoring data for Azure Cosmos DB."
-  ms.date: 06/20/2023
+  description: "We learn to use Azure Monitor to create and analyze monitoring data for Azure Cosmos DB."
+  ms.date: 04/23/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: cosmos-db
+  ai-usage: human-only
 title: Measure performance in Azure Cosmos DB for NoSQL
-summary: We'll learn to use Azure Monitor to create and analyze monitoring data for Azure Cosmos DB.
+summary: We learn to use Azure Monitor to create and analyze monitoring data for Azure Cosmos DB.
 abstract: |
   After completing this module, you’ll be able to:
-  - Understand how Azure Cosmos DB uses Azure Monitor to monitor server-side metrics
-  - Measure Cosmos DB's throughput
-  - Observe rate-limiting events
-  - Query telemetry logs
-  - Measure cross-partition storage distribution throughput
-prerequisites: |
-  Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
+
+  -   Understand how Azure Cosmos DB uses Azure Monitor to monitor server-side metrics.
+
+  -   Measure Cosmos DB's throughput
+
+  -   Observe rate-limiting events.
+
+  -   Query telemetry logs
+
+  -   Measure cross-partition storage distribution throughput
+prerequisites: Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
 iconUrl: /training/achievements/azure-cosmos-db-measure-performance.svg
 levels:
 - intermediate

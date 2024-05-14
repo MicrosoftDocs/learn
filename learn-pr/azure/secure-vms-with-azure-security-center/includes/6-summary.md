@@ -1,10 +1,10 @@
 Microsoft Defender for Cloud offers built-in security management and threat protection for your cloud workloads. Defender for Cloud helps you find and fix vulnerabilities, block malicious access, and identify weak areas in your servers and network.
 
-Defender for Cloud is available to every Azure subscription through a free, basic tier. You can activate a paid tier to get more features, including integration with on-premise resources and other cloud providers.
+Defender for Cloud is available to every Azure subscription through a free, basic tier. You can activate a paid tier to get more features, including integration with on-premises resources and other cloud providers.
 
-One of those standard tier features is *Just-in-time VM access*. When a JIT access request is approved for a VM behind an Azure Firewall, Microsoft Defender for Cloud pokes through the firewall to allow management access to the VM for a specific time period. After the specified time period, Defender for Cloud restores the firewall and NSG rules to their previous state, so your VM is protected from attack. Each request is audited so security personal can identify each access request.
+One of those standard tier features is *Just-in-time VM access*. When a Just-in-time (JIT) access request is approved for a virtual machine (VM) behind an Azure Firewall, Microsoft Defender for Cloud pokes through the firewall to allow management access to the VM for a specific time period. After the specified time period, Defender for Cloud restores the firewall and Network Security Group (NSG) rules to their previous state, so your VM is protected from attack. Each request is audited so security personal can identify each access request.
 
-Finally, you can protect your VMs and servers with *antimalware software* that's integrated into Microsoft Defender for Cloud. With Defender for Cloud, you can monitor all your resources in a single place.
+Finally, you can protect your VMs and servers with the *antimalware software* integrated into Microsoft Defender for Cloud. With Defender for Cloud, you can monitor all your resources in a single place.
 
 ## Cleanup
 
@@ -22,7 +22,7 @@ We created two VM resources in this module. To ensure you don't continue to get 
 
 ## Further reading
 
-To learn more about the topics in this module, check out the following links:
+To learn more about the subjects in this module, check out the following links:
 
 - [Microsoft Security Intelligence](https://www.microsoft.com/wdsi)
 - [Microsoft Defender for Cloud overview](https://azure.microsoft.com/services/security-center/)

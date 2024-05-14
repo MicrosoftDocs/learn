@@ -6,7 +6,7 @@ metadata:
   ms.date: 08/25/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: synapse-analytics
 title: Transform data with Spark in Azure Synapse Analytics
 summary: Data engineers commonly need to transform large volumes of data. Apache Spark pools in Azure Synapse Analytics provide a distributed processing platform that they can use to accomplish this goal.

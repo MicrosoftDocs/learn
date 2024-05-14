@@ -3,7 +3,7 @@ uid: learn.azdo.run-non-functional-tests-azure-pipelines
 metadata:
   title: Run nonfunctional tests in Azure Pipelines
   description: Run automated load tests by using Apache JMeter, a form of nonfunctional testing, in Azure Pipelines.
-  ms.date: 01/18/2024
+  ms.date: 04/02/2024
   author: steved0x
   ms.author: sdanie
   ms.custom: devdivchpfy22
@@ -36,8 +36,6 @@ roles:
 products:
 - azure
 - azure-devops
-subjects:
-- development-tools
 units:
 - learn.azdo.run-non-functional-tests-azure-pipelines.1-introduction
 - learn.azdo.run-non-functional-tests-azure-pipelines.2-what-is-non-functional-testing

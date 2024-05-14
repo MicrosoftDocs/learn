@@ -23,7 +23,9 @@ ImageAnalysisResult result = client.Analyze(
 ::: zone pivot="python"
 
 ```python
-import azure.ai.vision.imageanalysis as vision
+from azure.ai.vision.imageanalysis import ImageAnalysisClient
+from azure.ai.vision.imageanalysis.models import VisualFeatures
+from azure.core.credentials import AzureKeyCredential
 
 client = ImageAnalysisClient(
     endpoint=os.environ["ENDPOINT"],

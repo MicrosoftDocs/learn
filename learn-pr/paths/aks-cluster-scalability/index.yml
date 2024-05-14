@@ -30,7 +30,6 @@ roles:
 products:
 - azure
 subjects:
-- development-tools
 - cloud-computing
 modules:
 - learn.aks-application-autoscaling-native

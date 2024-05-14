@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility.web-accessibility-principles-guidelines.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is a part of the "Web accessibility principles and guidelines" module.
+  ms.date: 04/11/2024
+  author: erzelman
+  ms.author: erzelman 
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-summary.md)]

@@ -3,12 +3,11 @@ uid: learn.wwl.analyze-images-computer-vision
 metadata:
   title: Fundamentals of Computer Vision
   description: "Analyze images with the Azure AI Vision service."
-  ms.date: 12/04/2023
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: sheryang
   ms.topic: module
-  ms.service: azure-ai-language
-  ms.subservice: azure-ai-luis
+  ms.service: azure
 title: Fundamentals of Computer Vision
 summary: Azure AI Vision service enables software engineers to create intelligent solutions that extract information from images; a common task in many artificial intelligence (AI) scenarios.
 abstract: |

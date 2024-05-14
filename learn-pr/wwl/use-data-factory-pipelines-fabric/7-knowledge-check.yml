@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/31/2024
+  ms.date: 05/08/2024
   author: wwlpublish
-  ms.author: anrudduc
-  ms.service: fabric
+  ms.author: shlindsay
   ms.topic: unit
   ms.custom:
-    - build-2023
+  - build-2023
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -45,6 +44,6 @@ quiz:
     - content: "View the run details in the run history."
       isCorrect: true
       explanation: "Correct. The run history details show the time taken for each activity - optionally as a Gantt chart."
-    - content: "View the **Refreshed** value for your lakehouse's default semantic model"
+    - content: "View the **Refreshed** value for your lakehouse's default dataset"
       isCorrect: false
-      explanation: "Incorrect. The refreshed value shows the timestamp when the semantic model was last refreshed, not the elapsed time for pipeline activities."
+      explanation: "Incorrect. The refreshed value shows the timestamp when the dataset was last refreshed, not the elapsed time for pipeline activities."

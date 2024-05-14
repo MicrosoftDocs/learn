@@ -4,11 +4,12 @@ title: Azure Kubernetes cluster architecture
 metadata:
   title: Azure Kubernetes cluster architecture
   description: "Azure Kubernetes cluster architecture"
-  ms.date: 10/25/2023
+  ms.date: 04/23/2024
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/3-kubernetes-cluster-architecture.md)]

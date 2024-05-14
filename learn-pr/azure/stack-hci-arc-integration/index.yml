@@ -4,8 +4,8 @@ metadata:
   title: Integrate Azure Arc and Azure Stack HCI
   description: Integrate Azure Arc and Azure Stack HCI
   ms.date: 05/19/2023
-  author: rmcmurray
-  ms.author: robmcm
+  author: JasonGerend
+  ms.author: jgerend
   ms.topic: module
   ms.custom: e2e-hybrid
   ms.service: azure-arc

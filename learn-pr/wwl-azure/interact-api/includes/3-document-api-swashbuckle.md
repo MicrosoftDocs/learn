@@ -8,7 +8,7 @@ There are three main components to Swashbuckle:
 
 * [Swashbuckle.AspNetCore.SwaggerUI](https://www.nuget.org/packages/Swashbuckle.AspNetCore.SwaggerUI/): an embedded version of the Swagger UI tool. It interprets Swagger JSON to build a rich, customizable experience for describing the web API functionality. It includes built-in test harnesses for the public methods.
 
-The following `dotnet run` command installs the Swashbuckle NuGet package:
+The following `dotnet add` command installs the Swashbuckle NuGet package:
 
 ```dotnetcli
 dotnet add <name>.csproj package Swashbuckle.AspNetCore -v 6.5.0
@@ -30,10 +30,15 @@ Enable the middleware for serving the generated JSON document and the Swagger UI
 
 ```csharp
 app.UseSwagger();
-app.UseSwaggerUI();
+if (app.Environment.IsDevelopment())
+{
+    app.app.UseSwaggerUI();
+}
 ```
 
 The default endpoint for the Swagger UI is `http:<hostname>:<port>/swagger`.
+
+[!INCLUDE[SwaggerUI Note](../../../includes/swaggerui-security-note.md)]
 
 ## Customize and extend the Swagger documentation
 

@@ -4,11 +4,10 @@ title: Implement a public load balancer
 metadata:
   title: Implement a public load balancer
   description: "Implement a public load balancer"
-  ms.date: 11/20/2023
+  ms.date: 03/15/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
-  ms.service: load-balancer
   ms.custom:
   - N/A
 durationInMinutes: 2

@@ -6,7 +6,7 @@ metadata:
   ms.date: 12/11/2023
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.custom:
   - N/A
   ms.service: container-instances
@@ -31,7 +31,7 @@ products:
 - azure
 - azure-container-instances
 subjects:
-- container
+- containers
 units:
 - learn.wwl.create-run-container-images-azure-container-instances.introduction
 - learn.wwl.create-run-container-images-azure-container-instances.explore

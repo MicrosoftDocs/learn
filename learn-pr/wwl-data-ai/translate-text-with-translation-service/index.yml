@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/21/2023
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure
 title: Translate text and speech with Azure AI services
 summary: Automated translation capabilities in an AI solution enable closer collaboration by removing language barriers.

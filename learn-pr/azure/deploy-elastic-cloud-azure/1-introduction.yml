@@ -5,7 +5,7 @@ metadata:
   unitType: introduction
   title: Introduction
   description: "This unit describes Elastic Cloud on Azure, introduces an example scenario, and explains that the reader will learn to deploy Elastic Cloud and load sample data into Kibana."
-  ms.date: 6/11/2021
+  ms.date: 04/07/2023
   author: yenchiho
   ms.author: yenchiho
   ms.topic: unit

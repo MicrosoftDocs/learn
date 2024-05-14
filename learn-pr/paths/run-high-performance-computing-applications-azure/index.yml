@@ -32,7 +32,7 @@ products:
 - azure-netapp-files
 subjects:
 - cloud-computing
-- high-performance-computing
+- infrastructure
 modules:
 - learn.intro-to-hpc
 - learn.azure.create-batch-account-using-azure-portal

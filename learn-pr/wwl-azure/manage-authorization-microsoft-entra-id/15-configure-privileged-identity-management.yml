@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-authorization-microsoft-entra-id.configure-privileged-identity-management
+title: Configure Privileged Identity Management
+metadata:
+  title: Configure Privileged Identity Management
+  description: "Configure Privileged Identity Management"
+  ms.date: 04/24/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 25
+content: |
+  [!include[](includes/15-configure-privileged-identity-management.md)]

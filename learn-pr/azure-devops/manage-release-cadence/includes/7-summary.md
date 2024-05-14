@@ -1,8 +1,8 @@
 In this module, you defined a _deployment pattern_ as an automated way to smoothly roll out new application features to your users. A good deployment pattern can help you minimize downtime. It can also enable you to roll out new features progressively to your users.
 
-You can choose from several deployment patterns. The deployment pattern you choose depends on your reasons for the deployment and your resources. Do you have canary testers in place? Will you employ a dark launch and choose testers who don't know that they're testers? If you have a trusted set of testers that progressively increases from a small set to a larger set, then could choose a progressive-exposure deployment. Or, if you want to know if one version performs better than another version, you could choose A/B testing.
+You can choose from several deployment patterns. The deployment pattern you choose depends on your reasons for the deployment and your resources. Do you have canary testers in place? Will you employ a dark launch and choose testers who don't know that they're testers? If you have a trusted set of testers that progressively increases from a small set to a larger set, then you could choose a progressive-exposure deployment. Or, if you want to know if one version performs better than another version, you could choose A/B testing.
 
-The Tailspin team chose to implement the blue-green deployment pattern. They took advantage of deployment slots in Azure App Service. *Deployment slots* are live apps that have their own host names. The team can swap two deployment slots. By swapping, they can promote changes to production instantly. Although the team isn't ready to release their website to the public, they've proven that they can get new features to their users without incurring downtime.
+The Tailspin team chose to implement the blue-green deployment pattern, using deployment slots in Azure App Service. *Deployment slots* are live apps that have their own host names. The team can swap two deployment slots. By swapping, they can promote changes to production instantly. Although the team isn't ready to release their website to the public, they've proven that they can get new features to their users without incurring downtime.
 
 As a bonus, in this module you also learned how to roll forward an unintended change by reverting a Git commit and then pushing the reverted change through the pipeline.
 
@@ -37,12 +37,12 @@ The release pipeline that you and the team built in this learning path reduced:
     The team achieved this by using a scheduled trigger to deploy to _Test_ every day at 3:00 AM.
 * The time it takes to get the tested build into _Staging_. The required time went from *two days* to *zero days*.
 
-    The team achieved this improvement by adding Selenium UI tests, a form of functional testing to the _Test_ stage. These automated tests are much faster than the manual versions.
+    The team achieved this improvement by adding Selenium UI tests, a form of functional testing, to the _Test_ stage. These automated tests are much faster than the manual versions.
 * The time it takes to get the approved build from _Staging_ to live. The required time went from *one day* to *less than one day*.
 
     The team achieved this improvement by adding manual approval checks to the pipeline. When management signs off, Tim can release the changes from _Staging_ to live.
 
-These changes reduce the total lead time from 22 days to 10 days. We substitute these numbers into the equation:
+These changes reduce the total lead time from 22 days to 10 days. When we substitute these numbers into the equation:
 
 $${Activity\ ratio\ =\ }{\dfrac{5\ days}{10\ days}}{ = 0.50}$$
 

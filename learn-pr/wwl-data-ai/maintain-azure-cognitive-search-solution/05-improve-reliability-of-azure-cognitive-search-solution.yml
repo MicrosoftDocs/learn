@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.maintain-azure-cognitive-search-solution.improve-reliability-of-azure-cognitive-search-solution
-title: Improve reliability of an Azure Cognitive Search solution
+title: Improve reliability of an Azure AI Search solution
 metadata:
-  title: Improve reliability of an Azure Cognitive Search solution
-  description: "Improve reliability of an Azure Cognitive Search solution"
+  title: Improve reliability of an Azure AI Search solution
+  description: "Improve reliability of an Azure AI Search solution"
   ms.date: 09/27/2023
   author: wwlpublish
   ms.author: berryivor
   ms.topic: unit
-  ms.service: cognitive-search
 azureSandbox: false
 labModal: false
 durationInMinutes: 4

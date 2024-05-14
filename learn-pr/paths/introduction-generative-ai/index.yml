@@ -32,7 +32,6 @@ products:
   - azure
 subjects: 
   - cloud-computing
-  - data-ai
 modules:
 - learn.wwl.fundamentals-generative-ai
 - learn.wwl.explore-azure-openai

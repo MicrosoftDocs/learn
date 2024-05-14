@@ -1,5 +1,4 @@
-
-Azure Files provides the capability to take share snapshots of file shares. File share snapshots capture a point-in-time, read-only copy of your data.
+Azure Files provides the capability to take share [snapshots of file shares](/azure/storage/files/storage-snapshots-files). File share snapshots capture a point-in-time, read-only copy of your data.
 
 :::image type="content" source="../media/file-share-snapshot-cbda2136.png" alt-text="Screenshot of a file share snapshot that shows the snapshot name and date it was created.":::
 

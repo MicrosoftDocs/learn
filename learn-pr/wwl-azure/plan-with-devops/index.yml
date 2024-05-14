@@ -12,14 +12,13 @@ title: Plan with DevOps
 summary: Plan your software development projects agilely using GitHub Projects boards. You'll facilitate collaboration, shared responsibility, continuous learning, and optimization through version control, continuous integration and continuous testing, and Infrastructure as Code.
 abstract: |
   Upon completion of this module, you'll be able to:
-  *   Describe the components of and the path to a DevOps culture
-  *   Define the frameworks and methods of the Agile methodology
-  *   Implement DevOps practices
-  *   Use GitHub to plan a project
+  *   Describe the components of and the path to a DevOps culture.
+  *   Define the frameworks and methods of the Agile methodology.
+  *   Implement DevOps practices.
+  *   Use GitHub to plan a project.
 prerequisites: |
   *   Basic familiarity with IT terms and concepts
 iconUrl: /training/achievements/generic-trophy.svg
-hidden: true
 levels:
   - beginner
 roles:
@@ -40,12 +39,13 @@ subjects:
   - devops
   - cloud-computing
 units:
-  - learn.wwl.plan-with-devops.introduction
-  - learn.wwl.plan-with-devops.foster-devops-culture
-  - learn.wwl.plan-with-devops.what-is-agile
-  - learn.wwl.plan-with-devops.explore-devops-practices
-  - learn.wwl.plan-with-devops.plan-with-github
-  - learn.wwl.plan-with-devops.knowledge-check
-  - learn.wwl.plan-with-devops.summary
+- learn.wwl.plan-with-devops.introduction
+- learn.wwl.plan-with-devops.foster-devops-culture
+- learn.wwl.plan-with-devops.what-is-agile
+- learn.wwl.plan-with-devops.explore-devops-practices
+- learn.wwl.plan-with-devops.plan-with-github
+- learn.wwl.plan-with-devops.agile-plan-and-management-using-github
+- learn.wwl.plan-with-devops.knowledge-check
+- learn.wwl.plan-with-devops.summary
 badge:
   uid: learn.wwl.plan-with-devops.badge

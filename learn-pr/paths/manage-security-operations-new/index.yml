@@ -1,15 +1,15 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.manage-security-operations-new
 metadata:
-  title: Manage security operations
-  description: Manage security operations
-  ms.date: 01/03/2024
+  title: 'AZ-500: Manage security operations'
+  description: 'AZ-500: Manage security operations'
+  ms.date: 03/12/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: learning-path
-title: Manage security operations
+title: 'AZ-500: Manage security operations'
 prerequisites: |
-  - None
+  -   None
 summary: |
   Master the art of managing security operations in Azure, from governance and policy creation to infrastructure security, key management, security posture, threat protection, and advanced security monitoring and automation.
 iconUrl: /training/achievements/generic-trophy.svg

@@ -29,8 +29,6 @@ roles:
 products: 
 - github
 - vs-code
-subjects:
-  - professional-social-network
 units:
 - learn.become-learn-contributor.introduction
 - learn.become-learn-contributor.what-is-learn-contributor

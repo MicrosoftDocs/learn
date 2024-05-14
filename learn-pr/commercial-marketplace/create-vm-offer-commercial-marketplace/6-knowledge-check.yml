@@ -3,54 +3,54 @@ uid: learn.create-vm-offer-commercial-marketplace.6-knowledge-check
 title: Check your knowledge
 metadata:
   title: Check your knowledge
-  description: Review of commercial marketplace VM offer concepts
-  ms.date: 06/03/2021
-  author: marleva
-  ms.author: maevan
+  description: Review of commercial marketplace virtual machine (VM) offer concepts.
+  ms.date: 04/25/2024
+  author: amhindma
+  ms.author: amhindma
   ms.topic: unit
 durationInMinutes: 3
 quiz:
-  title: 'Knowledge check'
+  title: "Knowledge check"
   questions:
-  - content: 'Which of the following are benefits of the VM software delivery method?'
+  - content: "Which of the following are benefits of the virtual machine (VM) software delivery method?"
     choices:
-    - content: 'VM-based software gives customers the flexibility to scale software deployment up or down as their business needs change.'
+    - content: "VM-based software gives customers the flexibility to scale software deployment up or down as their business needs change."
       isCorrect: false
-      explanation: 'VM-based software does give customers the flexibility to scale software deployment. However, it also gives them more control over application data. Additionally, VMs help Independent Software Vendors (ISV) scale their business.'
-    - content: 'VM-based software gives customers control over their application data and where it is stored.'
+      explanation: "VM-based software does give customers the flexibility to scale software deployment. However, it also gives them more control over application data. Additionally, VMs help Independent Software Vendors (ISV) scale their business."
+    - content: "VM-based software gives customers control over their application data and where it gets stored."
       isCorrect: false
-      explanation: 'VM-based software gives customers control over their application data because they have control over their Azure environment. However, it also gives customers the flexibility to scale software deployment up or down as their business needs change. VM-based software also helps Independent Software Vendors (ISV) scale their business.'
-    - content: 'Using VMs to package software helps Independent Software Vendors (ISV) scale their business. They do not need to worry about incurring additional cloud infrastructure costs when they grow their base of customers because the software is deployed directly to the customer Azure subscription.'
+      explanation: "VM-based software gives customers control over their application data because they have control over their Azure environment. However, it also gives customers the flexibility to scale software deployment up or down as their business needs change. VM-based software also helps Independent Software Vendors (ISV) scale their business."
+    - content: "Using VMs to package software helps Independent Software Vendors (ISV) scale their business. They don't need to worry about incurring other cloud infrastructure costs when they grow their base of customers because the software is deployed directly to the customer Azure subscription."
       isCorrect: false
-      explanation: 'Using VMs to deliver software to customers can help Independent Software Vendors (ISV) scale their business. However, the VM software delivery model also provides the above benefits for customers.'
-    - content: 'All the above.'
+      explanation: "Using VMs to deliver software to customers can help Independent Software Vendors (ISV) scale their business. However, the VM software delivery model also provides the above benefits for customers."
+    - content: "All of the above."
       isCorrect: true
-      explanation: 'Great job! The VM software delivery method provides all of these benefits for both software providers and their customers. VMs make it easy for both customers and software providers to scale their businesses because of the flexibility they offer. VM-based software also provides customers with more control over their application data and where it is stored.'
-  - content: 'Which of the following best describes the difference between the bring-your-own-license (BYOL) and usage-based software license models?'
+      explanation: "Great job! The VM software delivery method provides all of these benefits for both software providers and their customers. VMs make it easy for both customers and software providers to scale their businesses because of the flexibility they offer. VM-based software also provides customers with more control over their application data and where it gets stored."
+  - content: "Which of the following best describes the difference between the bring-your-own-license (BYOL) and usage-based software license models?"
     choices:
-    - content: 'Usage-based VM offers appear in both the Azure Marketplace online store and the Azure Marketplace experience in the Azure portal. BYOL offers only appear in the Azure portal.'
+    - content: "Usage-based VM offers appear in both the Azure Marketplace online store and the Azure Marketplace experience in the Azure portal. BYOL offers only appear in the Azure portal."
       isCorrect: false
-      explanation: 'Both usage-based and BYOL offers appear in the Azure Marketplace online store and the Azure Marketplace experience in the Azure portal.'
-    - content: 'Usage-based VM offers are publicly available to all Azure Marketplace customers. BYOL offers are only made available to customers that the Independent Software Vendor (ISV) specifically identifies when they publish their offer in Partner Center.'
+      explanation: "Both usage-based and BYOL offers appear in the Azure Marketplace online store and the Azure Marketplace experience in the Azure portal."
+    - content: "Usage-based VM offers are publicly available to all Azure Marketplace customers. BYOL offers are only made available to customers that the Independent Software Vendor (ISV) specifically identifies when they publish their offer in Partner Center."
       isCorrect: false
-      explanation: 'Both usage-based and BYOL offers can be made publicly available in Azure Marketplace. Private offers are only made available to customers that the ISV specifically identifies when they publish their offer in Partner Center. To publish a private offer, ISVs enter customer Azure tenant IDs in Partner Center.'
-    - content: 'Customers can deploy usage-based offers directly from Azure Marketplace. BYOL offers can only be deployed from a custom template in the Azure portal.'
+      explanation: "Both usage-based and BYOL offers can be made publicly available in Azure Marketplace. Private offers are only made available to customers that the ISV specifically identifies when they publish their offer in Partner Center. To publish a private offer, ISVs enter customer Azure tenant IDs in Partner Center."
+    - content: "Customers can deploy usage-based offers directly from Azure Marketplace. BYOL offers can only be deployed from a custom template in the Azure portal."
       isCorrect: false
-      explanation: 'Customers can deploy both types of VM offers from Azure Marketplace. With BYOL offers, customers will be asked to enter a license key before they deploy the VM to their Azure subscription.'
-    - content: 'With the BYOL license model, customers have to purchase a license to use the software outside of Azure Marketplace. With the usage-based license model, customers can purchase a license to the software through Microsoft, streamlining the purchasing process.'
+      explanation: "Customers can deploy both types of VM offers from Azure Marketplace. With BYOL offers, customers are asked to enter a license key before they deploy the VM to their Azure subscription."
+    - content: "With the BYOL license model, customers have to purchase a license to use the software outside of Azure Marketplace. With the usage-based license model, customers can purchase a license to the software through Microsoft, streamlining the purchasing process."
       isCorrect: true
-      explanation: 'Correct! If you choose the BYOL license model, customers will have to purchase your software license outside of Azure Marketplace. Usage-based VM offers streamline the purchasing process for customers because they can purchase your software license through Microsoft using the same payment method they use to pay for their Azure subscription.'
-  - content: 'Which of the following criteria need to be met to provide your VM image from a shared image gallery (SIG) when completing the technical configuration in Partner Center?'
+      explanation: "Correct! If you choose the BYOL license model, customers have to purchase your software license outside of Azure Marketplace. Usage-based VM offers streamline the purchasing process for customers because they can purchase your software license through Microsoft using the same payment method they use to pay for their Azure subscription."
+  - content: "Which of the following criteria need to be met to provide your VM image from the Azure Compute Gallery when completing the technical configuration in Partner Center?"
     choices:
-    - content: 'The Azure subscription that contains the SIG with your VM image must be under the same Azure tenant as your Partner Center publisher account.'
+    - content: "The Azure subscription that contains the Azure Compute Gallery with your VM image must be under the same Azure tenant as your Partner Center publisher account."
       isCorrect: true
-      explanation: 'Correct! If the Partner Center account is not associated with the same Azure tenant as the SIG, you will not be able to access your VM image in Partner Center.'
-    - content: 'The user that completes the offer publishing process just needs access rights to the SIG. Partner Center will automatically populate all shared images that the user has access to.'
+      explanation: "Correct! If the Partner Center account isn't associated with the same Azure tenant as the Azure Compute Gallery, you can't access your VM image in Partner Center."
+    - content: "The user that completes the offer publishing process just needs access rights to the Azure Compute Gallery. Partner Center automatically populates all shared images that the user has access to."
       isCorrect: false
-      explanation: 'While the user who completes the offer technical configuration in Partner Center needs access to the SIG, the Partner Center account also needs to be associated with the Azure subscription that contains the SIG.'
-    - content: 'The VM image just needs to be generalized to remove all instance-specific identifiers.'
+      explanation: "While the user who completes the offer technical configuration in Partner Center needs access to the Azure Compute Gallery, the Partner Center account also needs to be associated with the Azure subscription that contains the Azure Compute Gallery."
+    - content: "The VM image just needs to be generalized to remove all instance-specific identifiers."
       isCorrect: false
-      explanation: 'All Azure Marketplace VM images must be generalized before publishing, regardless of whether you plan to provide your VM image from a SIG or not.'
-    - content: 'The user that completes the offer publishing process will need to provide an access code to link the VM offer with the SIG that contains the generalized VM images.'
+      explanation: "All Azure Marketplace VM images must be generalized before publishing, regardless of whether you plan to provide your VM image from the Azure Compute Gallery or not."
+    - content: "The user that completes the offer publishing process needs to provide an access code to link the VM offer with the Azure Compute Gallery that contains the generalized VM images."
       isCorrect: false
-      explanation: 'The Azure subscription that contains the SIG with your VM image must be under the same Azure tenant as your Partner Center publisher account.'
+      explanation: "The Azure subscription that contains the Azure Compute Gallery with your VM image must be under the same Azure tenant as your Partner Center publisher account."

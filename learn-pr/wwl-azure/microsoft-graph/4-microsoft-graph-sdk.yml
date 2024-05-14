@@ -4,10 +4,10 @@ title: Query Microsoft Graph by using SDKs
 metadata:
   title: Query Microsoft Graph by using SDKs
   description: "Query Microsoft Graph by using SDKs"
-  ms.date: 11/02/2023
+  ms.date: 03/13/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom: N/A, devx-track-dotnet
 durationInMinutes: 3
 content: |

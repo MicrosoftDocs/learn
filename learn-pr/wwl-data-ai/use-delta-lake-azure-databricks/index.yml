@@ -6,7 +6,7 @@ metadata:
   ms.date: 08/26/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure-databricks
 title: Use Delta Lake in Azure Databricks
 summary: Delta Lake is an open source relational storage area for Spark that you can use to implement a data lakehouse architecture in Azure Databricks.
@@ -28,8 +28,7 @@ products:
 subjects:
 - data-analytics
 - data-engineering
-- data-lake
-- data-warehousing
+- data-storage
 units:
 - learn.wwl.use-delta-lake-azure-databricks.introduction
 - learn.wwl.use-delta-lake-azure-databricks.get-started

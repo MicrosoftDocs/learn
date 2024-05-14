@@ -3,21 +3,27 @@ uid: learn.wwl.explore-fundamentals-of-stream-processing
 metadata:
   title: Explore fundamentals of real-time analytics
   description: "Learn about the basics of stream processing, and the services in Microsoft Azure that you can use to implement real-time analytics solutions."
-  ms.date: 06/15/2023
+  ms.date: 04/19/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: module
-  ms.service: azure
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: fabric
+  ai-usage: human-only
 title: Explore fundamentals of real-time analytics
 summary: Learn about the basics of stream processing, and the services in Microsoft Azure that you can use to implement real-time analytics solutions.
 abstract: |
-  - Compare batch and stream processing
-  - Describe common elements of streaming data solutions
-  - Describe features and capabilities of Azure Stream Analytics
-  - Describe features and capabilities of Spark Structured Streaming on Azure
-  - Describe features and capabilities of realtime analytics in Microsoft Fabric
-prerequisites: |
-  Before starting this module, you should have some conceptual understanding of modern data warehousing and analytics, and you should be familiar with Azure services for data workloads, including Azure Storage, Azure SQL Database, and Azure Synapse Analytics.
+  -   Compare batch and stream processing
+
+  -   Describe common elements of streaming data solutions
+
+  -   Describe features and capabilities of Azure Stream Analytics
+
+  -   Describe features and capabilities of Spark Structured Streaming on Azure
+
+  -   Describe features and capabilities of realtime analytics in Microsoft Fabric
+prerequisites: Before starting this module, you should have some conceptual understanding of modern data warehousing and analytics, and you should be familiar with Azure services for data workloads, including Azure Storage, Azure SQL Database, and Azure Synapse Analytics.
 iconUrl: /training/achievements/2-explore-fundamentals-of-real-time-analytics.svg
 levels:
 - beginner

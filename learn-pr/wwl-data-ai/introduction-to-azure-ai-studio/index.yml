@@ -29,7 +29,9 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
   - azure
   - ai-services
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
-  - data-ai
+  - artificial-intelligence
+  - machine-learning
+  - natural-language-processing
 units:
 - learn.wwl.introduction-to-azure-ai-studio.introduction
 - learn.wwl.introduction-to-azure-ai-studio.what-is-ai-studio

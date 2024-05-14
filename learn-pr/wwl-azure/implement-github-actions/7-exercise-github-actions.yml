@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-github-actions.exercise-github-actions
+title: Exercise - Create a workflow that validates code on a pull request
+metadata:
+  title: Exercise - Create a workflow that validates code on a pull request
+  description: "Exercise - Create a workflow that validates code on a pull request"
+  ms.date: 05/07/2024
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/7-exercise-github-actions.md)]

@@ -4,10 +4,12 @@ title: Understand batch and stream processing
 metadata:
   title: Understand batch and stream processing
   description: "Understand batch and stream processing"
-  ms.date: 06/15/2023
+  ms.date: 04/19/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 9
 content: |
   [!include[](includes/2-batch-stream.md)]

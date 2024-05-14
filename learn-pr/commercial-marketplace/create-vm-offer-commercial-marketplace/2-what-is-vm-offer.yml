@@ -3,10 +3,10 @@ uid: learn.create-vm-offer-commercial-marketplace.2-what-is-vm-offer
 title: What is a virtual machine offer?
 metadata:
   title: What is a virtual machine offer?
-  description: In this unit, we explain how VM-based applications are sold through Azure Marketplace
-  ms.date: 06/03/2021
-  author: marleva
-  ms.author: maevan
+  description: In this unit, we explain how VM-based applications are sold through Azure Marketplace.
+  ms.date: 04/25/2024
+  author: amhindma
+  ms.author: amhindma
   ms.topic: unit
 durationInMinutes: 7
 content: |

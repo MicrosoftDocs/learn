@@ -2,15 +2,16 @@
 uid: learn-wwl.load-data-into-microsoft-fabric-data-warehouse
 metadata:
   title: Load data into a Microsoft Fabric data warehouse
-  description: "Explore the process of loading data into a warehouse in Microsoft Fabric."
+  description: Explore the process of loading data into a warehouse in Microsoft Fabric.
   ms.date: 12/01/2023
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: module
   ms.custom:
-    - build-2023
-    - build-2023-dataai
-    - build-2023-fabric 
+  - build-2023
+  - build-2023-dataai
+  - build-2023-fabric
+  ms.service: azure
 title: Load data into a Microsoft Fabric data warehouse
 summary: Data warehouse in Microsoft Fabric is a comprehensive platform for data and analytics, featuring advanced query processing and full transactional T-SQL capabilities for easy data management and analysis.
 abstract: |
@@ -30,7 +31,7 @@ roles:
 products:
 - fabric
 subjects:
-- data-science
+- data-management
 - machine-learning
 units:
 - learn-wwl.load-data-into-microsoft-fabric-data-warehouse.introduction

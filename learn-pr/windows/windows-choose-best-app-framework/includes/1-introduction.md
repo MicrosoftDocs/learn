@@ -4,7 +4,7 @@ This module discusses the different options for building Windows applications an
 
 ## Example scenario
 
-Imagine you are a project manager at a consulting company that has a team of developers experienced in .NET, C#, and XAML. The company has three different projects: a shopping list application, a line-of-business application for the healthcare industry, and a log reader utility for IT professionals. Each project has specific requirements and deployment scenarios. The module guides you through the process of analyzing decision criteria to choose the best application framework for each project.
+Imagine you're a project manager at a consulting company that has a team of developers experienced in .NET, C#, and Extensible Application Markup Language (XAML). The company has three different projects: a cloud file sync application, a line-of-business application for the healthcare industry, and a log reader utility for IT professionals. Each project has specific requirements and deployment scenarios. The module guides you through the process of analyzing decision criteria to choose the best application framework for each project.
 
 ## How can this decision best be reached?
 

@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.philanthropies.apply-responsible-ai-principles
+metadata:
+  title: Apply responsible AI principles in learning environments
+  description: Discover Microsoft's commitment to ethical AI. Learn about the principles of responsible AI - fairness, reliability & safety, privacy & security, transparency, inclusiveness, and accountability specifically for a learning environment. Principles that are designed to guide and shape the future of AI development and usage.
+  ms.date: 03/25/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: module
+  ms.service: artificial-intelligence
+title: Apply responsible AI principles in learning environments
+summary: In this module, you will explore Microsoft's responsible AI principles, which include fairness, reliability & safety, privacy & security, transparency, inclusiveness, and accountability. This module is essential for anyone looking to implement or build an AI system responsibly for a learning environment.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Analyze the importance of using real-world data to evaluate the fairness of AI systems. 
+  - Assess how Microsoft's responsible AI standard facilitates accessibility and inclusion for users through alternative interaction methods.
+  - Evaluate the role of role-based access controls in maintaining the security of AI systems and protecting learner data.
+iconUrl: /training/achievements/apply-responsible-ai-principles.svg
+levels:
+- beginner
+roles:
+- k-12-educator
+- business-user
+- higher-ed-educator
+- data-engineer
+- school-leader
+products:
+- ai-services
+- azure-machine-learning
+- azure-machine-learning-designer
+- m365-apps
+- azure-translator-text
+- azure-translator-speech
+- ms-copilot
+- language-service
+subjects:
+- artificial-intelligence
+units:
+- learn.philanthropies.apply-responsible-ai-principles.introduction
+- learn.philanthropies.apply-responsible-ai-principles.consider-the-fairness-principle
+- learn.philanthropies.apply-responsible-ai-principles.explore-the-reliability-and-safety-principle
+- learn.philanthropies.apply-responsible-ai-principles.examine-the-privacy-and-security-principle
+- learn.philanthropies.apply-responsible-ai-principles.apply-the-inclusiveness-principle
+- learn.philanthropies.apply-responsible-ai-principles.use-the-transparency-principle
+- learn.philanthropies.apply-responsible-ai-principles.implement-the-accountability-principle
+- learn.philanthropies.apply-responsible-ai-principles.knowledge-check
+- learn.philanthropies.apply-responsible-ai-principles.summary
+badge:
+  uid: learn.philanthropies.apply-responsible-ai-principles.badge

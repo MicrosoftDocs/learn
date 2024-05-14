@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-cloud-native-apps-containerized-deployments
 metadata:
   title: Get started with cloud native apps and containerized deployments
   description: "Learn about cloud-native application concepts, containerized deployment benefits and challenges, deployment options, and Azure-specific best practices for managing and scaling containerized applications."
-  ms.date: 11/29/2023
+  ms.date: 02/26/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module
@@ -13,15 +13,15 @@ summary: |
   This module provides an introduction to cloud-native applications, the benefits of containerized deployments, the options for containerized deployments on the Azure platform, and the features of Azure Container Apps.
   [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
-  - Examine the concept of cloud-native applications.
-  - Explore the benefits and challenges of containerized deployments.
-  - Explore different deployment options and strategies for cloud-native applications.
-  - Examine best practices for managing and scaling containerized deployments in Azure.
+  -   Examine the concept of cloud-native applications.
+  -   Explore the benefits and challenges of containerized deployments.
+  -   Explore different deployment options and strategies for cloud-native applications.
+  -   Examine best practices for managing and scaling containerized deployments in Azure.
 prerequisites: |
-  - Basic understanding of cloud computing concepts: Familiarity with cloud computing fundamentals, such as virtualization, scalability, and on-demand resource provisioning.
-  - Knowledge of containers: Understanding the concept of containers, their benefits, and how they differ from traditional apps and virtual machines.
-  - Familiarity with container orchestration: Basic understanding of container orchestration platforms like Kubernetes and their role in managing containerized applications.
-  - Experience with Azure: Some familiarity with Microsoft Azure and its core container services, such as Azure Container Registry, Azure Kubernetes Service, and Azure Container Apps.
+  -   Basic understanding of cloud computing concepts: Familiarity with cloud computing fundamentals, such as virtualization, scalability, and on-demand resource provisioning.
+  -   Knowledge of containers: Understanding the concept of containers, their benefits, and how they differ from traditional apps and virtual machines.
+  -   Familiarity with container orchestration: Basic understanding of container orchestration platforms like Kubernetes and their role in managing containerized applications.
+  -   Experience with Azure: Some familiarity with Microsoft Azure and its core container services, such as Azure Container Registry, Azure Kubernetes Service, and Azure Container Apps.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

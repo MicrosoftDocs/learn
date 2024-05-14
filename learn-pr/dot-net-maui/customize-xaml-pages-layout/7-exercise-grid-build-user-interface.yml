@@ -4,11 +4,11 @@ title: Exercise - Use Grid to build a user interface
 metadata:
   title: Exercise - Use Grid to build a user interface
   description: Create a Grid layout and position its elements in a .NET MAUI app.
-  ms.date: 10/13/2023
+  ms.date: 11/07/2023
   author: codemillmatt
   ms.author: masoucou
   ms.manager: markl
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.service: azure
   ms.custom:
     - devx-track-dotnet

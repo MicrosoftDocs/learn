@@ -4,11 +4,12 @@ title: Implement continuous access evaluation
 metadata:
   title: Implement continuous access evaluation
   description: "Implement continuous access evaluation"
-  ms.date: 10/19/2023
+  ms.date: 04/09/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
-  ms.service: azure
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/11-implement-continuous-access-evaluation.md)]

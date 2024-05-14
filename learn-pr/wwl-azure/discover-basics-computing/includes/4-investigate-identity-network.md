@@ -10,7 +10,8 @@ The title of this section sounds like a science fiction movie, doesn't it? In so
 
 In addition to the MAC address, each computer that connects to a network (or a subnet) gets another unique ID *on that network*. When you connect to your home network, there's a machine, called a router, that assigns an ID to your device. This is a different ID than the MAC address. This new ID is called an internet protocol (IP) address.
 
-![Diagram showing various computers with an IP Address underneath each one.](../media/internet-protocol-address-computers.png)
+:::image type="content" source="../media/internet-protocol-address-computers-bc57d79d.png" alt-text="Diagram showing various computers with an IP Address underneath each one.":::
+
 
 You may have seen these weird IDs here and there. They're made up of four groups of numbers separated by a period. Here's an example of a common IP address: `192.168.1.1`. It's not important at this point to understand these numbers. Focus on the fact that each device on a network gets one. It's used to identify that device on that network.
 
@@ -18,7 +19,8 @@ You may have seen these weird IDs here and there. They're made up of four groups
 
 Now, since devices are given this unique ID within a subnet (a small group), devices on different subnets may have the same IP address. For example, your mobile phone on your home network (a subnet) may get assigned the IP address of `192.168.1.100`. Your neighbor's home network's router may assign their mobile phone the same IP address of `192.168.1.100`. Both mobile devices have unique MAC addresses but can have the same IP address. But there's no conflict because you're on two different subnets.
 
-![Diagram showing hierarchy of computers to portray a network and subnets.](../media/network-subnets.png)
+:::image type="content" source="../media/network-subnets-e984b1c5.png" alt-text="Diagram showing hierarchy of computers to portray a network and subnets.":::
+
 
 When your home network needs to know how to get a text message to you, it looks for the IP address assigned to a specific MAC Address. It then finds your device and sends your phone the data which, by more magic, your phone knows what to do with.
 

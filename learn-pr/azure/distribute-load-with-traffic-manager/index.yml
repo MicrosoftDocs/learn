@@ -29,7 +29,7 @@ products:
 - azure-traffic-manager
 - azure-virtual-network
 subjects:
-- business-continuity
+- site-reliability-engineering
 units:
 - learn.distribute-load-with-traffic-manager.1-introduction
 - learn.distribute-load-with-traffic-manager.2-routing-with-traffic-manager

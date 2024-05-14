@@ -3,7 +3,7 @@ uid: learn.language.rust-error-handling.3-use-option-type-deal-with-absence
 metadata:
   title: Use the Option type to deal with absence
   description: Learn how to use the Option enum when the absence of a value is a possibility.
-  ms.date: 6/7/2021
+  ms.date: 01/05/2023
   author: meaghanlewis
   ms.author: chnoring
   ms.topic: unit

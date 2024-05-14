@@ -10,6 +10,7 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
+sandbox: false
 title: Understand state management in Kubernetes
 durationInMinutes: 5
 content: |

@@ -1,13 +1,13 @@
 ### YamlMime:Module
 uid: learn.azure.introduction-data-protection-privacy
+title: Introduction to data protection and privacy
 metadata:
   title: Introduction to data protection and privacy
   description: Learn about data protection and privacy, privacy laws and regulations, Microsoft data categories, and Microsoft data protection and compliance support.
   ms.date: 07/27/2023
-  author: cwatson-cat
-  ms.author: cwatson
-  ms.topic: interactive-tutorial
-title: Introduction to data protection and privacy
+  author: TerryLanfear
+  ms.author: terrylan
+  ms.topic: module
 summary: Learn about data protection and privacy, privacy laws and regulations, Microsoft data categories, and Microsoft data protection and compliance support.
 abstract: |
   Understand more about:

@@ -4,8 +4,8 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: This is a knowledge check unit.
-  ms.date: 06/07/2021
+  description: Check your knowledge about what you learned.
+  ms.date: 04/17/2024
   author: anhoward
   ms.author: anhoward
   ms.topic: unit
@@ -15,23 +15,23 @@ quiz:
   questions:
   - content: "You want to simplify the process of deploying Azure CycleCloud and configuring its access to your Azure subscription. What should you do?"
     choices:
-    - content: "Deploy Azure CycleCloud by using the Azure Marketplace image and enable system assigned managed identity."
+    - content: "Deploy Azure CycleCloud by using the Azure Marketplace image and enable system-assigned managed identity."
       isCorrect: true
       explanation: "Using the Azure Marketplace-based image and enabling system assigned managed identity, follow the Microsoft recommendations and simplify the process of deploying Azure CycleCloud and configuring its access to the target Azure subscription."
     - content: "Deploy containerized Azure CycleCloud by using an image from the Microsoft Container Registry and configure a service principal."
       isCorrect: false
       explanation: "While using a container to run Azure CycleCloud is an option, using a service principal introduces management overhead."
-    - content: "Deploy Azure CycleCloud to your on-premises server and use AD DS-based authentication."
+    - content: "Deploy Azure CycleCloud to your on-premises server and use Active Directory Domain Services-based authentication."
       isCorrect: false
       explanation: "This approach increases management overhead. More importantly, AD DS-based authentication isn't supported in this scenario."
   - content: "You've installed Azure CycleCloud on an Azure VM and deployed your first cluster by using the web interface. Now you want to automate provisioning of an Azure CycleCloud-managed cluster based on an existing template. What should you do first?"
     choices:
-    - content: "Enable system assigned managed identity."
+    - content: "Enable system-assigned managed identity."
       isCorrect: false
-      explanation: "This step is already completed, because you've successfully deployed the first cluster."
+      explanation: "This step is already completed, because you successfully deployed the first cluster."
     - content: "Create an Azure Storage account."
       isCorrect: false
-      explanation: "This step is already completed, because you've successfully installed and configured Azure CycleCloud."
+      explanation: "This step is already completed, because you successfully installed and configured Azure CycleCloud."
     - content: "Install Azure CycleCloud CLI."
       isCorrect: true
       explanation: "Azure CycleCloud CLI facilitates automation and integration of CycleCloud into existing workflows."
@@ -40,7 +40,7 @@ quiz:
     - content: "Use Azure CycleCloud CLI to import the template."
       isCorrect: true
       explanation: "Azure CycleCloud CLI allows you to provision a cluster by importing the corresponding template."
-    - content: "Use ARM to deploy the template."
+    - content: "Use Azure Resource Manager to deploy the template."
       isCorrect: false
       explanation: "This method allows you to deploy Azure resources based on an ARM template."
     - content: "Use Azure CLI to deploy the template."

@@ -4,10 +4,10 @@ title: Introduction
 metadata:
   title: Introduction
   description:  Introduces you to the Defender for IoT deployment planning process.
-  ms.date: 7/20/2023
-  author: cwatson-cat
-  ms.author: cwatson
-  ms.topic: interactive-tutorial
+  ms.date: 11/29/2023
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: unit
   ms.service: defender-for-iot
 durationInMinutes: 1
 content: |

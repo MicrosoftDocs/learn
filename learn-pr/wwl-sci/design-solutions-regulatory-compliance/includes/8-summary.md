@@ -7,8 +7,8 @@ You've learned:
 
 - [Introduction to regulatory compliance - Cloud Adoption Framework](/azure/cloud-adoption-framework/govern/policy-compliance/regulatory-compliance)
 - [Security Baseline discipline overview - Cloud Adoption Framework](/azure/cloud-adoption-framework/govern/security-baseline/)
-- [Microsoft Purview Compliance Manager - Microsoft Purview (compliance)](https://learn.microsoft.com/microsoft-365/compliance/compliance-manager?view=o365-worldwide)
-- [Learn about Microsoft Priva - Microsoft Priva](https://learn.microsoft.com/privacy/priva/priva-overview)
+- [Microsoft Purview Compliance Manager - Microsoft Purview (compliance)](/microsoft-365/compliance/compliance-manager?view=o365-worldwide)
+- [Learn about Microsoft Priva - Microsoft Priva](/privacy/priva/priva-overview)
 - [Overview of Azure Policy - Azure Policy](/azure/governance/policy/overview)
 - [Remediate non-compliant resources - Azure Policy](/azure/governance/policy/how-to/remediate-resources?tabs=azure-portal)
 - [Tutorial: Regulatory compliance checks - Microsoft Defender for Cloud](/azure/defender-for-cloud/regulatory-compliance-dashboard)

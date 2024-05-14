@@ -2,24 +2,33 @@
 uid: learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads
 metadata:
   title: Analyze data in a relational data warehouse
-  description: "<div|Relational data warehouses are a core element of most enterprise Business Intelligence (BI) solutions, and are used as the basis for data models, reports, and analysis.  </div|<div| </div|"
-  ms.date: 09/11/2023
+  description: "Relational data warehouses are a core element of most enterprise Business Intelligence (BI) solutions, and are used as the basis for data models, reports, and analysis."
+  ms.date: 04/11/2024
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: module
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
   ms.service: synapse-analytics
+  ai-usage: human-only
 title: Analyze data in a relational data warehouse
 summary: Relational data warehouses are a core element of most enterprise Business Intelligence (BI) solutions, and are used as the basis for data models, reports, and analysis.
 abstract: |
   In this module, you'll learn how to:
-  - Design a schema for a relational data warehouse.
-  - Create fact, dimension, and staging tables.
-  - Use SQL to load data into data warehouse tables.
-  - Use SQL to query relational data warehouse tables.
+
+  -   Design a schema for a relational data warehouse.
+
+  -   Create fact, dimension, and staging tables.
+
+  -   Use SQL to load data into data warehouse tables.
+
+  -   Use SQL to query relational data warehouse tables.
 prerequisites: |
   Before taking this module, you should have:
-  -  An understanding of [data fundamentals](https://aka.ms/AzureLearn_DataFundamentals).
-  - Experience of [querying data with Transact-SQL](/learn/paths/get-started-querying-with-transact-sql/).
+
+  -   An understanding of [data fundamentals](https://aka.ms/AzureLearn_DataFundamentals).
+
+  -   Experience of [querying data with Transact-SQL](/learn/paths/get-started-querying-with-transact-sql/).
 iconUrl: /learn/achievements/azure-synapse-analytics-multi-dimensional-schema.svg
 levels:
 - intermediate
@@ -29,7 +38,7 @@ roles:
 products:
 - azure-synapse-analytics
 subjects:
-- data-warehousing
+- data-storage
 units:
 - learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.introduction
 - learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.design-implement-star-schema

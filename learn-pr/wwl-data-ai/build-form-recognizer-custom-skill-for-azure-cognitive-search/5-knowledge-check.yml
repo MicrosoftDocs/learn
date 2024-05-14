@@ -4,17 +4,19 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/06/2024
+  ms.date: 03/12/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following values does Cognitive Search use to match a form submitted to a custom skill with the right response from that skill?"
+  - content: "Which of the following values does AI Search use to match a form submitted to a custom skill with the right response from that skill?"
     choices:
     - content: "formUrl."
       isCorrect: false
@@ -25,7 +27,7 @@ quiz:
     - content: "formSasToken."
       isCorrect: false
       explanation: "Incorrect. The formSasToken value is used to authenticate with an Azure Storage account when the form is stored there."
-  - content: "You're troubleshooting your Cognitive Search indexing process. You have a single custom skill that calls Azure AI Document Intelligence but requests are never received by your skill. Which of the following stages of the indexing process might be causing the problem?"
+  - content: "You're troubleshooting your AI Search indexing process. You have a single custom skill that calls Azure AI Document Intelligence but requests are never received by your skill. Which of the following stages of the indexing process might be causing the problem?"
     choices:
     - content: "Push to index."
       isCorrect: false

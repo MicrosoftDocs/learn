@@ -2,11 +2,12 @@
 uid: learn.wwl.use-sql-warehouses-azure-databricks
 metadata:
   title: Use SQL Warehouses in Azure Databricks
-  description: "Use SQL Warehouses in Azure Databricks"
+  description: Use SQL Warehouses in Azure Databricks
   ms.date: 08/29/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: azure
 title: Use SQL Warehouses in Azure Databricks
 summary: Azure Databricks provides SQL Warehouses that enable data analysts to work with data using familiar relational SQL queries.
 abstract: |
@@ -26,8 +27,7 @@ products:
 subjects:
 - data-analytics
 - data-engineering
-- data-lake
-- data-warehousing
+- data-storage
 units:
 - learn.wwl.use-sql-warehouses-azure-databricks.introduction
 - learn.wwl.use-sql-warehouses-azure-databricks.get-started

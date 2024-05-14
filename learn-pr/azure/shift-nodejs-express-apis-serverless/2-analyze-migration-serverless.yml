@@ -3,7 +3,7 @@ uid: learn.azure.shift-express-api-azure-functions.2-analyze-migration-serverles
 metadata:
   title: Evaluate a migration to serverless
   description: Consider the benefits of a serverless architecture and how you can easily migrate a sample Express Node.js app to Azure Functions.
-  ms.date: 04/10/2020
+  ms.date: 02/20/2024
   author: johnpapa
   ms.author: jopapa
   ms.topic: unit

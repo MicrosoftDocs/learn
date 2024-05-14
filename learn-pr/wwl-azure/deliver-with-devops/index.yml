@@ -12,15 +12,14 @@ title: Deliver with DevOps
 summary: Build and run continuous integration and continuous delivery workflows using GitHub Actions. Your workflows will have accelerated release cycles, increased resiliency, improved collaboration and reusability, and infrastructure as code.
 abstract: |
   Upon completion of this module, you'll be able to:
-  *   Define the concept of continuous delivery
-  *   Describe the concept and implementation methods of IaC
-  *   Review the progressive exposure techniques and deployment practices
-  *   Explore DevOps shift-right testing scenarios
-  *   Describe how to implement continuous delivery with GitHub Actions
+  *   Define the concept of continuous delivery.
+  *   Describe the concept and implementation methods of IaC.
+  *   Review the progressive exposure techniques and deployment practices.
+  *   Explore DevOps shift-right testing scenarios.
+  *   Describe how to implement continuous delivery with GitHub Actions.
 prerequisites: |
   *   Basic familiarity with IT terms and concepts
 iconUrl: /training/achievements/generic-trophy.svg
-hidden: true
 levels:
   - beginner
 roles:
@@ -41,12 +40,13 @@ subjects:
   - devops
   - cloud-computing
 units:
-  - learn.wwl.deliver-with-devops.introduction
-  - learn.wwl.deliver-with-devops.explore-continuous-delivery
-  - learn.wwl.deliver-with-devops.explore-infrastructure-as-code
-  - learn.wwl.deliver-with-devops.explore-progressive-exposure-techniques
-  - learn.wwl.deliver-with-devops.explore-continuous-delivery-github-actions
-  - learn.wwl.deliver-with-devops.knowledge-check
-  - learn.wwl.deliver-with-devops.summary
+- learn.wwl.deliver-with-devops.introduction
+- learn.wwl.deliver-with-devops.explore-continuous-delivery
+- learn.wwl.deliver-with-devops.explore-infrastructure-as-code
+- learn.wwl.deliver-with-devops.explore-progressive-exposure-techniques
+- learn.wwl.deliver-with-devops.explore-continuous-delivery-github-actions
+- learn.wwl.deliver-with-devops.implement-ci-cd-with-github-actions-and-infrastructure-as-code-with-bicep
+- learn.wwl.deliver-with-devops.knowledge-check
+- learn.wwl.deliver-with-devops.summary
 badge:
   uid: learn.wwl.deliver-with-devops.badge

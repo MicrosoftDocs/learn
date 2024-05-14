@@ -1,10 +1,17 @@
+
+
+
+
+
 Every software developer needs to complete some level of testing and debugging when they develop their code, and exception handling is often required. But how are these three tasks related and when should they be implemented?
 
 ## Testing, debugging, and exception handling
 
 Code debugging is clearly related to both code development and testing. After all, you make corrections to your code logic as you develop your application, and you also run your code periodically to verify that your code syntax and logic are correct. But is updating code logic during the development process really what's meant by debugging? And is verifying that your code builds and runs really what's meant by testing? No, not really.
 
-How does exception handling relate to code development and testing? In fact, what does "exception handling" mean and is a developer expected to do it? In C# development, the errors that occur while the application is running are referred to as exceptions. The term "exception handling" refers to the process that a developer uses to manage those runtime exceptions within their code. Errors that occur during the build process are referred to as errors, and aren't part of the exception handling process.
+How does exception handling relate to code development and testing? In fact, what does "exception handling" mean and is a developer expected to do it? In C# development, the errors that occur during the application runtime (versus build errors that occur during the build process) are referred to as exceptions, and "exception handling" is the process that a developer uses to manage those runtime exceptions within their code.
+
+You may be wondering how exception handling relates to code development and testing. In fact, what does "exception handling" mean and is a developer expected to do it? In C# development, the errors that occur while the application is running are referred to as exceptions. The term "exception handling" refers to the process that a developer uses to manage those runtime exceptions within their code. Errors that occur during the build process are referred to as errors, and aren't part of the exception handling process.
 
 The following sections describe the developer's role in testing, debugging, and exception handling.
 

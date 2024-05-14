@@ -7,8 +7,7 @@ metadata:
   ms.date: 09/19/2023
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.service: fabric
+  ms.topic: unit
   ms.custom:
     - build-2023
     - build-2023-dataai
@@ -19,14 +18,14 @@ quiz:
   - content: What type of data does Data Wrangler currently support?
     choices:
     - content: Only Pandas DataFrames.
-      isCorrect: true
-      explanation: Correct. As of now, Data Wrangler only supports Pandas DataFrames.
+      isCorrect: false
+      explanation: Incorrect. Data Wrangler supports Pandas DataFrames and Spark DataFrames.
     - content: Only Spark DataFrames.
       isCorrect: false
-      explanation: Incorrect. While support for Spark DataFrames is in progress, currently Data Wrangler only supports Pandas DataFrames.
+      explanation: Incorrect. Data Wrangler supports Pandas DataFrames and Spark DataFrames.
     - content: Both Pandas and Spark DataFrames.
-      isCorrect: false
-      explanation: Incorrect. Support for Spark DataFrames is in progress, but currently, only Pandas DataFrames are supported.
+      isCorrect: true
+      explanation: Correct. Both Pandas and Spark DataFrames are supported.
   - content: How can you launch Data Wrangler from a Microsoft Fabric notebook?
     choices:
     - content: By selecting the DataFrame you wish to open in Data Wrangler from the "Data" tab under the notebook ribbon.

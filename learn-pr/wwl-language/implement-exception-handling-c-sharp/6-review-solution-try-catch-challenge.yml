@@ -4,10 +4,12 @@ title: Review the solution for the try-catch challenge
 metadata:
   title: Review the solution for the try-catch challenge
   description: "Review the solution for the try-catch challenge"
-  ms.date: 01/24/2024
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/6-review-solution-try-catch-challenge.md)]

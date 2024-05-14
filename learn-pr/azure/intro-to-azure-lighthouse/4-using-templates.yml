@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-lighthouse.4-using-templates
 metadata:
-  title: Using Azure Resource Manager templates to deploy Azure Lighthouse
-  description: Understand how you can use Azure Resource Manager templates to onboard customers to Azure Lighthouse
-  ms.date: 02/09/2023
+  title: Use Azure Resource Manager templates to deploy Azure Lighthouse
+  description: Understand how to use Azure Resource Manager templates to onboard customers to Azure Lighthouse.
+  ms.date: 04/15/2024
   author: iankensey
   ms.author: socuff
   ms.topic: unit
@@ -11,7 +11,7 @@ metadata:
     - team=cloud_advocates
     - devx-track-arm-template
   ms.contributors: socuff-04232021
-title: Using Azure Resource Manager templates to deploy Azure Lighthouse
+title: Use Azure Resource Manager templates to deploy Azure Lighthouse
 durationInMinutes: 8
 content: |
   [!include[](includes/4-using-templates.md)]

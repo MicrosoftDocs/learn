@@ -32,7 +32,7 @@ products:
 - fabric
 subjects:
 - data-analytics
-- data-warehousing
+- data-storage
 units:
 - learn.wwl.get-started-data-warehouse.introduction
 - learn.wwl.get-started-data-warehouse.understand-data-warehouse

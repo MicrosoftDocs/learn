@@ -416,3 +416,21 @@ groups:
       title: Local development environment using a Microsoft-hosted agent
     - id: github-codespaces-agent
       title: GitHub Codespaces development environment using a self-hosted agent
+- id: dev-m365-tenant
+  title: Development environment
+  prompt: Choose your development environment
+  pivots:
+    - id: m365
+      title: Microsoft 365 tenant
+    - id: devproxy
+      title: Simulated (Dev Proxy)
+- id: azure-resource-interaction
+  title: Azure interaction options
+  prompt: Choose how you interact with resources on Azure
+  pivots:
+    - id: azure-portal
+      title: Azure portal
+    - id: azure-cli
+      title: Azure CLI (local)
+    - id: vs-code
+      title: Visual Studio Code

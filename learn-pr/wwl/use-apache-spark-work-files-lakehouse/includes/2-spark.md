@@ -25,7 +25,7 @@ Specific configuration settings include:
 
 The Spark open source ecosystem includes a wide selection of code libraries for common (and sometimes very specialized) tasks. Since a great deal of Spark processing is performed using PySpark, the huge range of Python libraries ensures that whatever the task you need to perform, there's probably a library to help.
 
-By default, Spark clusters in Microsoft Fabric include many of the most commonly used libraries, but if you need to install other libraries, you can do so on the **Library management** page in the workspace settings.
+By default, Spark clusters in Microsoft Fabric include many of the most commonly used libraries. In order to set additional default libraries or persist library specifications for code items, you need workspace admin permissions to create an environment and set the default environment for the workspace.
 
 > [!TIP]
 > For more information about library management, see [Manage Apache Spark libraries in Microsoft Fabric](/fabric/data-engineering/library-management) in the Microsoft Fabric documentation.

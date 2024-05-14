@@ -1,6 +1,6 @@
 Microsoft Intune is a single, integrated management platform for managing, protecting, and monitoring all of your organization's endpoints.
 
-Endpoints include the mobile devices, desktop computers, virtual machines, embedded devices, servers, and shared devices that your organization uses. Examples of shared and specialized devices include retail point-of-sale devices, ruggedized devices, digital interactive whiteboards, conference-room devices, and holographic wearable computers. Additionally, endpoints also include the apps used by your organization.
+Endpoints include the mobile devices, desktop computers, virtual machines, embedded devices, and shared devices that your organization uses. Examples of shared and specialized devices include retail point-of-sale devices, ruggedized devices, digital interactive whiteboards, conference-room devices, and holographic wearable computers. Additionally, endpoints also include the apps used by your organization.
 
 By protecting and managing your organization's endpoints using Microsoft Intune, you accomplish the following actions:
 
@@ -16,7 +16,7 @@ By protecting and managing your organization's endpoints using Microsoft Intune,
 The Microsoft Intune console helps keep your organization's cloud and on-premises devices, apps, and data secure. Intune integrates Microsoft Intune, Microsoft Endpoint Configuration Manager, and Windows Autopilot.
 
 > [!IMPORTANT]
-> If you already have Microsoft Intune or Microsoft Endpoint Configuration Manager, you already have Microsoft Intune. These are all now one management system.
+> If you already have Microsoft Endpoint Configuration Manager, you already have Microsoft Intune. These are all now one management system.
 
 ![Diagram of Microsoft Intune.](../media/intro-to-endpoint-manager-01.png)
 

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/10/2024
+  ms.date: 04/03/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -38,14 +38,14 @@ quiz:
     - content: "Microsoft Entra account"
       isCorrect: false
       explanation: "Incorrect. A Microsoft Entra account is an identity created through Microsoft Entra ID or another Microsoft cloud service, such as Microsoft 365. Identities are stored in Microsoft Entra ID and accessible to the organization's cloud service subscriptions. This account is also sometimes called a work or school account."
-  - content: "Your users want to sign-in to devices, apps, and services from anywhere. Users want to sign-in by using an organizational work or school account instead of a personal account. What should you do first?"
+  - content: "Which is true about Microsoft Entra ID?"
     choices:
-    - content: "Enable the device in Microsoft Entra ID."
-      isCorrect: false
-      explanation: "Incorrect. You should first join the devices."
-    - content: "Join the device to Microsoft Entra ID."
+    - content: "Microsoft Entra ID includes federation services."
       isCorrect: true
-      explanation: "Correct. Joining the device provides the features you need."
-    - content: "Register the device with Microsoft Entra ID."
+      explanation: "Correct. Microsoft Entra ID includes federation services, including third party services."
+    - content: "Microsoft Entra ID uses Kerberos authentication."
       isCorrect: false
-      explanation: "Incorrect. Registering the device doesn't provide the features you need."
+      explanation: "Incorrect. Microsoft Entra ID uses HTTP and HTTPS authentication."
+    - content: "Microsoft Entra ID organizes users and groups into organization units."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Entra ID creates users and groups in flat structure."

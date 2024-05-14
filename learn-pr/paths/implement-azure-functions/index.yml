@@ -23,7 +23,7 @@ products:
 - azure
 - azure-functions
 subjects:
-- serverless-compute
+- serverless-computing
 modules:
 - learn.wwl.explore-azure-functions
 - learn.wwl.develop-azure-functions

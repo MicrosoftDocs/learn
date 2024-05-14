@@ -4,7 +4,7 @@ title: Exercise - Create and configure for iteration loops
 metadata:
   title: Exercise - Create and configure for iteration loops
   description: "Exercise - Create and configure for iteration loops"
-  ms.date: 01/22/2024
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
@@ -18,7 +18,7 @@ quiz:
     choices:
     - content: "`for (int x = 20: x < 80: x++)`"
       isCorrect: false
-      explanation: "Incorrect. A colon cannot be used as an end of statement operator."
+      explanation: "Incorrect. A colon can't be used as an end of statement operator."
     - content: "`for (int j = 0; j < 80; j + 1)`"
       isCorrect: false
       explanation: "Incorrect. The iterator section `j + 1` causes a compilation error."
@@ -29,7 +29,7 @@ quiz:
     choices:
     - content: "`exit;`"
       isCorrect: false
-      explanation: "Incorrect. The word \"exit\" is not a keyword in C#."
+      explanation: "Incorrect. The word \"exit\" isn't a keyword in C#."
     - content: "`break;`"
       isCorrect: true
       explanation: "Correct! The `break` keyword can be used to jump out of a `for` loop when a desired condition is met."

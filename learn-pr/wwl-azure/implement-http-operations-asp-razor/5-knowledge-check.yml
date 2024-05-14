@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/23/2023
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
@@ -24,7 +24,7 @@ quiz:
       explanation: "Incorrect. This approach is recommended for short-lived clients."
     - content: "Create a `static` or singleton instance using the `HttpClient` class and set `PooledConnectionLifetime`."
       isCorrect: true
-      explanation: "Correct. For long-lived clients, it's recommended to create a `static` or singleton instance using the `HttpClient` class and set `PooledConnectionLifetime`."
+      explanation: "Correct. For long-lived clients, create a `static` or singleton instance using the `HttpClient` class and set `PooledConnectionLifetime`."
   - content: "What is the purpose of `IHttpClientFactory` in an ASP.NET Razor Pages app?"
     choices:
     - content: "To handle the creation and disposal of REST operations"

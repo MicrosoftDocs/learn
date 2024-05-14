@@ -6,9 +6,9 @@ metadata:
   ms.date: 11/03/2023
   author: lgayhardt
   ms.author: lagayhar
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: machine-learning
-  ms.subservice: responsible-ai 
+  ms.subservice: rai 
 title: Train a model and debug it with Responsible AI dashboard
 summary: Learn how to debug an AI model using the Responsible AI dashboard in Azure Machine Learning studio to ensure it performs responsibly and is less harmful.
 abstract: |

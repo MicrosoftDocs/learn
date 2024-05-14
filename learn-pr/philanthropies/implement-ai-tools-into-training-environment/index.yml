@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.philanthropies.implement-ai-tools-into-training-environment
+metadata:
+  title: Implement AI tools into a training environment
+  description: Explore the power of AI tools in education and training plans. Learn how to integrate AI tools to enhance creativity, productivity, and efficiency in your training sessions. Understand the potential and limitations of AI through real-life examples and enhance your training experience.
+  ms.date: 03/11/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: module
+  ms.service: artificial-intelligence
+title: Implement AI tools into a training environment
+summary: In this module, you learn how to proactively apply AI tools into your training sessions while being aware of the applications limitations creating a more engaging and efficient learning environment for your learners.
+abstract: |
+  By the end of this module, you are able to:
+  - Explore the benefits of using AI while acknowledging its limitations.
+  - Analyze how AI tools can improve cognitive engagement in learning.
+  - Recognize various applications of generative AI in training and learning activities.
+iconUrl: /training/achievements/implement-ai-tools-into-a-training-environment.svg
+levels:
+- beginner
+roles:
+- k-12-educator
+- business-user
+- higher-ed-educator
+- data-engineer
+- school-leader
+products:
+- ai-services
+- azure-machine-learning
+- azure-machine-learning-designer
+- m365-apps
+- azure-translator-text
+- azure-translator-speech
+- ms-copilot
+- language-service
+subjects:
+- artificial-intelligence
+units:
+- learn.philanthropies.implement-ai-tools-into-training-environment.introduction
+- learn.philanthropies.implement-ai-tools-into-training-environment.elevating-training-sessions-with-ai-tools
+- learn.philanthropies.implement-ai-tools-into-training-environment.explore-the-potential-and-limitations-of-ai-tools
+- learn.philanthropies.implement-ai-tools-into-training-environment.knowledge-check
+- learn.philanthropies.implement-ai-tools-into-training-environment.summary
+badge:
+  uid: learn.philanthropies.implement-ai-tools-into-training-environment.badge

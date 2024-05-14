@@ -5,10 +5,10 @@ To start a project with Azure Document Intelligence services, you need to prepar
 
 ## Subscribe to a resource 
 You can access Azure Document Intelligence services via:
-- A **Azure AI Service resource**: a multi-service subscription key (used across multiple Azure AI Services) 
+- An **Azure AI Service resource**: a multi-service subscription key (used across multiple Azure AI Services) 
 
 **OR** 
-- A **Azure Document Intelligence resource**: a single-service subscription key (used only with a specific Azure AI Service) 
+- An **Azure Document Intelligence resource**: a single-service subscription key (used only with a specific Azure AI Service) 
  
 >[!NOTE]
 >Create an Azure AI Services resource if you plan to access multiple Azure AI services under a single endpoint/key. For Azure Document Intelligence access only, create an Azure Document Intelligence resource. Please note that you'll need a single-service resource if you intend to use Microsoft Entra authentication.

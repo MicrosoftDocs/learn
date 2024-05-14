@@ -4,10 +4,11 @@ title: Monitor VM host data
 metadata:
   title: View VM host monitoring data
   description: Create a Linux VM with recommended alerts and boot diagnostics enabled, and view built-in metrics graphs, boot diagnostics, and the activity log.
-  ms.date: 02/03/2023
+  ms.date: 11/06/2023
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 6
 content: |
   [!include[](includes/3-exercise-create-virtual-machine.md)]

@@ -67,7 +67,7 @@ products:
 subjects:
 - cloud-computing
 - it-management-monitoring
-- business-continuity
+- site-reliability-engineering
 modules:
 - learn.design-monitoring-strategy-on-azure
 - learn.azure.monitor-azure-vm-using-diagnostic-data

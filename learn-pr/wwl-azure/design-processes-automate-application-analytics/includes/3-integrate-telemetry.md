@@ -24,6 +24,20 @@ Once a project is released, telemetry is what you are looking for to enable data
 
 Telemetry is what makes it possible to collect all that raw data that becomes valuable, actionable analytics.
 
+## Common sources of telemetry
+
+When it comes to gathering telemetry, there are various sources to tap into for valuable insights. Azure offers a rich ecosystem of services that provide telemetry data from different aspects of your application and infrastructure. For instance, telemetry can be collected from Windows and Linux servers running in Azure, other cloud environments, or on-premises, containerized workloads, storage accounts, network services, and more. These sources offer a wealth of information about the health, performance, and usage of your resources.
+
+To harness the power of this telemetry data, Azure provides specialized insight services tailored to these different sources. One such service is Application Insights, which focuses on collecting telemetry from web applications hosted on App Services, physical and virtual servers, containers, and other types of compute resources. It offers detailed monitoring and diagnostics capabilities, allowing you to track performance metrics, detect issues, and analyze user interactions.
+
+If you want to monitor physical and virtual servers running Windows or Linux, VM Insights provides deep visibility into their performance and health metrics, enabling proactive management and troubleshooting. It offers features like performance trend analysis, anomaly detection, and recommendations for performance optimization.
+
+Container Insights is designed to gather telemetry from containerized applications running on Azure Kubernetes Service (AKS) or Arc-enabled Kubernetes clusters. It provides insights into container performance, resource utilization, and application dependencies, helping you optimize containerized workloads and ensure their reliability and scalability.
+
+Storage Insights focuses on telemetry data related to Azure storage accounts, providing visibility into storage performance, usage patterns, and access trends. It enables you to monitor storage latency, throughput, and capacity utilization, helping you optimize storage configurations and identify potential bottlenecks.
+
+Lastly, Network Insights collects telemetry from Azure network services, such as Azure virtual networks, load balancers, and firewalls, to monitor network performance, connectivity, and security. It offers visibility into network traffic patterns, latency metrics, and security events, allowing you to troubleshoot network issues and optimize network configurations for better performance and reliability.
+
 ## Benefits of telemetry
 
 The primary benefit of telemetry is the ability of an end user to monitor the state of an object or environment while physically far removed from it.

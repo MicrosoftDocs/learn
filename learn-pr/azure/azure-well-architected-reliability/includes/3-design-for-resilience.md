@@ -1,27 +1,27 @@
 | :::image type="icon" source="../media/goal.svg"::: The workload must continue to operate with full or reduced functionality. |
 | :----------------------------------------------------------------------------------------------------------------------------------------- |
 
-You should expect component malfunctions, platform outages, performance degradations, and other to faults occur. Build resiliency in the system so that it's fault-tolerant and can degrade gracefully.
+You should expect component malfunctions, platform outages, performance degradations, and other faults to occur. Build resiliency in the system so that it's fault-tolerant and can degrade gracefully.
 
 **Example scenario**
 
-Contoso Air is a commercial airline that has an in-house development department. The main LOB application is a booking solution that allows customers to book flights directly with Contoso Air. The app is built in Azure and uses Azure App Service, Cosmos DB, Azure Functions, Azure Logic Apps and Azure Service Bus.
+Contoso Air is a commercial airline that has an in-house development department. The main LOB application is a booking solution that allows customers to book flights directly with Contoso Air. The app is built in Azure and uses Azure App Service, Cosmos DB, Azure Functions, Azure Logic Apps, and Azure Service Bus.
 
-## Determine failure risks.
+## Determine failure risks
 
 **Identify potential failure points in the system, especially for the critical components, and determine the effect on user and system flows.**
 
-Analyze the failure case, blast radius and intensity of fault for each potential failure point. Failure cases and their intensity can range from relatively low-impact scenarios like the temporary loss of a backend process to full-scale outages resulting from disasters. Performing this analysis helps you determine the design of error handling capabilities at the component level.
+Analyze the failure case, blast radius, and intensity of fault for each potential failure point. Failure cases and their intensity can range from relatively low-impact scenarios like the temporary loss of a backend process to full-scale outages resulting from disasters. Performing this analysis helps you determine the design of error handling capabilities at the component level.
 
 *Contoso's challenge*
 
 - The LOB application provides many key functions ranging from marketing through commerce. The ticket purchase user flow has been identified as the most critical flow.  The workload team has determined that more reliability measures should be implemented to ensure that the flow is optimized for resilience.
-- The team has time budgeted for improvements like decoupling components and redesigning flows, but wants to ensure that they are using that time to focus on the highest value improvements.
+- The team has time budgeted for improvements like decoupling components and redesigning flows, but wants to ensure that they're using that time to focus on the highest value improvements.
 
 *Applying the approach and outcomes*
 
-- The team identifies the external payment gateway as a potential failure point. The gateway is highly available but there’s a potential for users experiencing occasional transient faults resulting from network issues or bursts of extremely high requests. The gateway may reject some requests when it’s overloaded by multiple simultaneous requests being sent.
-- The team determines that users must resubmit requests when their initial requests are rejected by the gateway, causing a negative user experience.
+- The team identifies the external payment gateway as a potential failure point. The gateway is highly available but there’s a potential for users experiencing occasional transient faults resulting from network issues or bursts of extremely high requests. The gateway might reject some requests when it’s overloaded by multiple simultaneous requests being sent.
+- The team determines that users must resubmit requests when the gateway rejects their initial requests, causing a negative user experience.
 
 ## Implement self-preservation mechanisms
 
@@ -49,7 +49,7 @@ Adding intermediaries prevents direct dependency between components and improves
 
 *Contoso's challenge*
 
-- Implementing retries and decoupling the payment gateway calls from the UI using Service Bus has dramatically increased the reliability of this flow, but the business stakeholders still worry about data loss that may happen due to a catastrophic failure in the primary region.  
+- Implementing retries and decoupling the payment gateway calls from the UI using Service Bus has dramatically increased the reliability of this flow, but the business stakeholders still worry about data loss that might happen due to a catastrophic failure in the primary region.  
 
 *Applying the approach and outcomes*
 

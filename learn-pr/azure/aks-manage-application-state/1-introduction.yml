@@ -10,6 +10,7 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
+sandbox: false
 title: Introduction
 durationInMinutes: 2
 content: |

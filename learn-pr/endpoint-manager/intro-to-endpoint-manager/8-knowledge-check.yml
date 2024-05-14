@@ -3,11 +3,10 @@ uid: learn.intro-to-endpoint-manager.8-knowledge-check
 metadata:
   title: Knowledge Check
   description: Knowledge Check
-  ms.date: 10/15/2020
+  ms.date: 09/29/2023
   author: Erikre 
   ms.author: erikre
-  ms.topic: interactive-tutorial
-  ms.prod: learning-endpoint-manager  
+  ms.topic: unit
 title: Knowledge Check
 durationInMinutes: 3
 quiz:

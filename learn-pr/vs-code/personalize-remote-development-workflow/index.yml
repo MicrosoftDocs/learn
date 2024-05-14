@@ -38,7 +38,7 @@ products:
   - vs-code
 
 subjects:
-  - digital-application-innovation
+  - app-development
 
 units:
   - learn.personalize-remote-development-workflow.introduction

@@ -4,10 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/17/2023
+  ms.date: 03/05/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/14-knowledge-check.md)]
@@ -18,32 +18,32 @@ quiz:
     choices:
     - content: "Microsoft Entra Basic"
       isCorrect: false
-      explanation: "That’s incorrect. Microsoft Entra Basic doesn't offer Microsoft Entra ID Protection."
+      explanation: "Incorrect. Microsoft Entra Basic doesn't offer Microsoft Entra ID Protection."
     - content: "Microsoft Entra ID P1"
       isCorrect: false
-      explanation: "That’s incorrect. Microsoft Entra ID P1 doesn't offer Microsoft Entra ID Protection."
+      explanation: "Incorrect. Microsoft Entra ID P1 doesn't offer Microsoft Entra ID Protection."
     - content: "Microsoft Entra ID P2"
       isCorrect: true
-      explanation: "That’s correct. Microsoft Entra ID P2 also offers Microsoft Entra ID Protection and Privileged Identity Management (PIM)."
+      explanation: "Correct. Microsoft Entra ID P2 also offers Microsoft Entra ID Protection and Privileged Identity Management (PIM)."
   - content: "Do Active Directory Domain Services and Microsoft Entra Domain Services share exactly the same feature set?"
     choices:
     - content: "Yes"
       isCorrect: false
-      explanation: "That’s incorrect. Microsoft Entra Domain Services doesn't allow users to create trust relationships or extend the schema. Support for Group Policy is limited, with only two previously created Group Policy Objects. In addition, Microsoft Entra Domain Services doesn't support LDAP writes."
+      explanation: "Incorrect. Microsoft Entra Domain Services doesn't allow users to create trust relationships or extend the schema. Support for Group Policy is limited, with only two previously created Group Policy Objects. In addition, Microsoft Entra Domain Services doesn't support LDAP writes."
     - content: "No"
       isCorrect: true
       explanation: "Correct. Microsoft Entra Domain Services doesn't allow users to create trust relationships or extend the schema. Support for Group Policy is limited, with only two previously created Group Policy Objects. In addition, Microsoft Entra Domain Services doesn't support LDAP writes."
     - content: "Microsoft Entra Domain Services doesn't support LDAP writes, but there are no other differences"
       isCorrect: false
-      explanation: "That’s incorrect. Microsoft Entra Domain Services doesn't support LDAP writes, but there are some other important differences between AD DS and Microsoft Entra Domain Services. For example, Microsoft Entra Domain Services does not allow users to create trust relationships or extend the schema. Support for Group Policy is limited, with only two previously created Group Policy Objects."
-  - content: "There are several ways to integrate Linux VMs with Active Directory. Which of the following options doesn't allow users to change their passwords from the Linux client?"
+      explanation: "Incorrect. Microsoft Entra Domain Services doesn't support LDAP writes, but there are some other important differences between AD DS and Microsoft Entra Domain Services. For example, Microsoft Entra Domain Services doesn't allow users to create trust relationships or extend the schema. Support for Group Policy is limited, with only two previously created Group Policy Objects."
+  - content: "There are several ways to integrate Linux virtual machines with Active Directory. Which of the following options doesn't allow users to change their passwords from the Linux client?"
     choices:
     - content: "LDAP Authentication / Authorization"
       isCorrect: true
       explanation: "Correct. With LDAP Authentication / Authorization users can't change their password from the Linux client."
     - content: "Kerberos 5 Authentication / LDAP Authorization"
       isCorrect: false
-      explanation: "That’s incorrect. With Kerberos 5 Authentication and LDAP Authorization, users can change their passwords from the Linux client."
+      explanation: "Incorrect. With Kerberos 5 Authentication and LDAP Authorization, users can change their passwords from the Linux client."
     - content: "Winbind Authentication / Authorization"
       isCorrect: false
-      explanation: "That’s incorrect. With Winbind Authentication and Authorization, users can change their passwords from the Linux client."
+      explanation: "Incorrect. With Winbind Authentication and Authorization, users can change their passwords from the Linux client."

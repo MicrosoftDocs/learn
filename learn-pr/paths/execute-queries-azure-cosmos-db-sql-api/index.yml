@@ -20,7 +20,7 @@ roles:
 products:
 - azure-cosmos-db
 subjects:
-- database
+- databases
 modules:
 - learn.wwl.query-azure-cosmos-db-sql-api
 - learn.wwl.author-complex-queries-azure-cosmos-db-sql-api

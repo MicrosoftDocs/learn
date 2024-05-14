@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-monitor-status-dashboards.optimize-pipeline-cost-time-performance-reliability
+title: Optimize a pipeline for cost, time, performance, and reliability
+metadata:
+  title: Optimize a pipeline for cost, time, performance, and reliability
+  description: "Optimize a pipeline for cost, time, performance, and reliability"
+  ms.date: 05/08/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-optimize-pipeline-cost-time-performance-reliability.md)]

@@ -3,7 +3,7 @@ uid: learn.languages.aspnetcore-accessibility
 metadata:
   title: Create accessible web apps by using ASP.NET Core
   description: Diagnose and fix common web accessibility issues in an ASP.NET Core application.
-  ms.date: 01/12/2023
+  ms.date: 02/13/2024
   author: jongalloway
   ms.author: jogallow
   ms.manager: markl
@@ -12,7 +12,7 @@ metadata:
 title: Create accessible web apps by using ASP.NET Core
 summary: Diagnose and fix common web accessibility issues in an ASP.NET Core application.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
   - Use Accessibility Insights for Web to find and fix common accessibility issues.
   - Browse through your web applications by using a screen reader.
   - Improve accessibility by following web standards and best practices.
@@ -35,7 +35,6 @@ products:
 - vs-code
 subjects:
 - accessibility
-- development-tools
 units:
 - learn.languages.aspnetcore-accessibility.1-introduction
 - learn.languages.aspnetcore-accessibility.2-web-accessibility-fundamentals

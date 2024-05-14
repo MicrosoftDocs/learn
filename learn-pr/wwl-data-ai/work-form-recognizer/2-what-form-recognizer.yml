@@ -4,12 +4,10 @@ title: What is Azure Document Intelligence?
 metadata:
   title: What is Azure Document Intelligence?
   description: "What is Azure Document Intelligence?"
-  ms.date: 10/18/2023
+  ms.date: 04/18/2024
   author: wwlpublish
   ms.author: berryivor
   ms.topic: unit
-azureSandbox: false
-labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/2-what-form-recognizer.md)]

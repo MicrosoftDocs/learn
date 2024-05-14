@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Sizing the network
   description: We reviewed the application to determine how many pods it needs and what kind of virtual machines and how many of them to deploy. Now, we can look at sizing the network.
-  ms.date: 10/31/2023
+  ms.date: 02/15/2024
   ms.topic: unit
   ms.author: schaffererin
   author: schaffererin

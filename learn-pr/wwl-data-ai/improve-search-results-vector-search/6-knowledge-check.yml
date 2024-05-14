@@ -7,8 +7,7 @@ metadata:
   ms.date: 9/29/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.service: cognitive-search
+  ms.topic: unit
 durationInMinutes: 3
 content: |
 quiz:

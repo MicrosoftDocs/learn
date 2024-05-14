@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/19/2023
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: fabric
   ms.custom:
     - build-2023
@@ -32,7 +32,7 @@ roles:
 products:
 - fabric
 subjects:
-- data-science
+- data-management
 - machine-learning
 units:
 - learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.introduction

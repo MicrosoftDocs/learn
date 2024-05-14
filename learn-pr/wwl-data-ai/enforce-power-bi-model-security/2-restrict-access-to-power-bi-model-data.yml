@@ -6,8 +6,8 @@ metadata:
   description: "Restrict access to Power BI model data"
   ms.date: 08/04/2023
   author: wwlpublish
-  ms.author: shlindsay
-  ms.topic: interactive-tutorial
+  ms.author: anrudduc
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 14

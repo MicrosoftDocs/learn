@@ -4,12 +4,11 @@ title: Explore Microsoft .NET SDK v3 for Azure Cosmos DB
 metadata:
   title: Explore Microsoft .NET SDK v3 for Azure Cosmos DB
   description: "Explore Microsoft .NET SDK v3 for Azure Cosmos DB"
-  ms.date: 04/25/2023
+  ms.date: 03/06/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
-  ms.custom:
-    - devx-track-dotnet
+  ms.custom: N/A, devx-track-dotnet
 durationInMinutes: 3
 content: |
   [!include[](includes/2-cosmos-db-dotnet-overview.md)]

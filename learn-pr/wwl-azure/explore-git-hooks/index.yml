@@ -3,21 +3,27 @@ uid: learn.wwl.explore-git-hooks
 metadata:
   title: Explore Git hooks
   description: "Explore Git hooks"
-  ms.date: 06/02/2023
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: azure
+  ai-usage: human-only
 title: Explore Git hooks
 summary: This module describes Git hooks and their usage during the development process, implementation, and behavior.
 abstract: |
-  By the end of this module, you'll be able to:
-  - Understand Git hooks
-  - Identify when used Git hooks
-  - Implement Git hooks for automation
-  - Explain Git hooks' behavior
-prerequisites: |
-  None
+  By the end of this module, you're able to:
+
+  -   Understand Git hooks
+
+  -   Identify when used Git hooks
+
+  -   Implement Git hooks for automation
+
+  -   Explain Git hooks' behavior
+prerequisites: None
 iconUrl: /training/achievements/4-explore-git-hooks.svg
 levels:
 - advanced
@@ -40,8 +46,6 @@ products:
 - azure-repos
 - azure-test-plans
 - github
-subjects:
-- development-tools
 units:
 - learn.wwl.explore-git-hooks.introduction
 - learn.wwl.explore-git-hooks.introduction-to

@@ -6,11 +6,11 @@ In the Azure portal, application packages can be uploaded and managed in more fe
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. Select **Resource groups**, and then select the resource group that contains the Batch account that you created in previous steps.
+1. Select **Resource groups**, then select the resource group that contains the Batch account that you created in previous steps.
 
-1. In the settings window for your resource group, select **Overview**, and then select your Batch account.
+1. On the resource group's **Overview** page, select your Batch account.
 
-1. In the settings window for your Batch account, select  **Applications** > **Add** to open the **New application** page.
+1. In the settings window for your Batch account, select **Applications** under **Features** in the left menu, then select **Add** to open the **New application** page.
 
     :::image type="content" source="../media/5-diagram-1.png" alt-text="Screenshot of the page for creating an application package in the Azure portal.":::
 
@@ -36,23 +36,21 @@ In the Azure portal, application packages can be uploaded and managed in more fe
 
 After the .zip file has been uploaded to your Azure storage account, the portal displays a notification. Depending on the size of the file that you're uploading and the speed of your network connection, this process might take some time to finish.
 
-To add more application package versions for an existing application, select the application in the **Applications** section of your Batch account, and then select **Add**. As you did for the new application, specify the **Version** value for your new package, upload your .zip file in the **Application package** box, and then select **Submit**.
+To add more application package versions for an existing application, select the application in the **Applications** section of your Batch account, then select **Add**. As you did for the new application, specify the **Version** value for your new package, upload your .zip file in the **Application package** box, and then select **Submit**.
 
 ### Run a task by using an application package in the Azure portal
 
 In the Azure portal, Batch tasks can run directly on virtual machines in a Batch pool. These tasks can use application packages to simplify environment setup.
 
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
+1. From the Azure portal home, select **Resource groups**, then select the resource group that contains the Batch account that you created in previous steps.
 
-1. Select **Resource groups**, and then select the resource group that contains the Batch account that you created in previous steps.
+1. On the resource group's **Overview** page, select your Batch account.
 
-1. In the settings window for your resource group, select **Overview**, and then select your Batch account.
-
-1. In the settings window for your Batch account, select **Jobs** > **Add**.
+1. In the settings window for your Batch account, select **Jobs** under **Features** in the left-hand menu, then select **Add**.
 
 1. In the **Add job** window, enter **Job ID** value for your new job.
 
-1. Click **Select a pool to run the job on**, select the pool that you created in previous steps, and then click **Select**.
+1. Select the **Select pool** link, select the pool that you created in previous steps and select the **Select** button.
 
 1. Keep **Job manager, preparation, and release tasks** as **None**.
 
@@ -69,20 +67,20 @@ In the Azure portal, Batch tasks can run directly on virtual machines in a Batch
     1. Enter a **Task ID** value.
 
     1. Enter the following code for **Command line**:
-    
+
         ```cmd
         cmd /c %AZ_BATCH_APP_PACKAGE_ffmpeg#4.3.1%\\bin\\ffmpeg.exe -i LowPriVMs-1.mp4 LowPriVMs-1.mp3
         ```
 
     1. Under **Advanced settings**:
-    
+
       - For **Resource files**, select the video that you uploaded previously by selecting **Pick storage blob**. Check the box for **Include SAS**, and leave the default **Expires in** value for seven days. Select **OK**. Go to your storage account, select the **input-data** container, and select the file that you uploaded.
 
            :::image type="content" source="../media/5-select-resource-file.png" alt-text="Screenshot of selecting the resource file in the Azure portal.":::
 
       - For **Application packages**, select the application package that you added previously.
 
-    1. Select **Submit**.
+    d. Select **Submit**.
 
 1. After the task is submitted, open it to see the output. The *stderr.txt* file reports any errors encountered. The *stdout.txt* file displays the task output result.
 

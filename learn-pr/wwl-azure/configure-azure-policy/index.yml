@@ -8,10 +8,10 @@ metadata:
   ms.author: cynthist
   ms.topic: module
   ms.service: azure
+  ai-usage: ai-assisted
 title: Configure Azure Policy
 summary: |
   Learn how to configure Azure Policy to implement compliance requirements.
-  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   In this module, you learn how to:
     - Create management groups to target policies and spending budgets.

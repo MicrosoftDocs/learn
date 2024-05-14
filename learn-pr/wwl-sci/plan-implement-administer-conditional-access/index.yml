@@ -3,24 +3,33 @@ uid: learn.wwl.plan-implement-administer-conditional-access
 metadata:
   title: Plan, implement, and administer Conditional Access
   description: "Conditional Access gives a fine granularity of control over which users can do specific activities, access which resources, and how to ensure data and systems are safe."
-  ms.date: 10/19/2023
+  ms.date: 04/09/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: module
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
   ms.service: azure
+  ai-usage: human-only
 title: Plan, implement, and administer Conditional Access
 summary: Conditional Access gives a fine granularity of control over which users can do specific activities, access which resources, and how to ensure data and systems are safe.
 abstract: |
   By the end of this module, you will be able to:
-  - Plan and implement security defaults.
-  - Plan conditional access policies.
-  - Implement conditional access policy controls and assignments (targeting, applications, and conditions).
-  - Test and troubleshoot conditional access policies.
-  - Implement application controls.
-  - Implement session management.
-  - Configure smart lockout thresholds.
-prerequisites: |
-  None
+
+  -   Plan and implement security defaults.
+
+  -   Plan conditional access policies.
+
+  -   Implement conditional access policy controls and assignments (targeting, applications, and conditions).
+
+  -   Test and troubleshoot conditional access policies.
+
+  -   Implement application controls.
+
+  -   Implement session management.
+
+  -   Configure smart lockout thresholds.
+prerequisites: None
 iconUrl: /learn/achievements/plan-implement-and-administer-conditional-access.svg
 levels:
 - advanced
