@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/23/2024
+  ms.date: 05/14/2024
   author: wwlpublish
   ms.author: rstearman
   ms.topic: unit
@@ -49,12 +49,12 @@ quiz:
       explanation: "Incorrect. Deleting and recreating the host pool isn't necessary once it has been properly set up."
   - content: "A system administrator needs to retrieve the object ID of a host pool in Azure Virtual Desktop. Which command should they use?"
     choices:
-    - content: "Get-AzWvdWorkspace -Name <WorkspaceName> -ResourceGroupName <ResourceGroupName>).ObjectID"
+    - content: "Get-AzWvdWorkspace -Name &lt;WorkspaceName&gt; -ResourceGroupName &lt;ResourceGroupName&gt;).ObjectID"
       isCorrect: false
       explanation: "Incorrect. This PowerShell command is used to retrieve the object ID of a workspace, not a host pool."
-    - content: "az desktopvirtualization workspace show --name <Name> --resource-group <ResourceGroupName> --query objectId --output tsv"
+    - content: "az desktopvirtualization workspace show --name &lt;Name&gt; --resource-group &lt;ResourceGroupName&gt; --query objectId --output tsv"
       isCorrect: false
       explanation: "Incorrect. This command is used to retrieve the object ID of a workspace, not a host pool."
-    - content: "az desktopvirtualization hostpool show --name <Name> --resource-group <ResourceGroupName> --query objectId --output tsv"
+    - content: "az desktopvirtualization hostpool show --name &lt;Name&gt; --resource-group &lt;ResourceGroupName&gt; --query objectId --output tsv"
       isCorrect: true
       explanation: "Correct. This command retrieves the object ID of a host pool in Azure Virtual Desktop."
