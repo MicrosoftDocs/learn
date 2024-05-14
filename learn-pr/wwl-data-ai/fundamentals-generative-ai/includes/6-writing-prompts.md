@@ -1,4 +1,4 @@
-The quality of responses from copilots not only depends on the language model used, but on the types of prompts it's given. Prompts are ways we tell an application what we want it to do. You can get the most useful completions by being explicit about the kind of response you want, for example, “Summarize the key things to do in Edinburgh during August”. You can achieve better results when you submit clear, specific prompts.
+The quality of responses from copilots not only depends on the language model used, but on the types of prompts it's given. Prompts are ways we tell an application what we want it to do. You can get the most useful completions by being explicit about the kind of response you want, for example, "Summarize the key considerations for adopting Copilot described in this document for a corporate executive. Format the summary as no more than six bullet points with a professional tone". You can achieve better results when you submit clear, specific prompts.
 
 ![A screenshot of the considerations for improving a copilot response that corresponds with the numbered list below.](../media/writing-prompts.png)
 

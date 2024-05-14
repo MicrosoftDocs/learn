@@ -1,17 +1,18 @@
 Now let's explore generative AI with Microsoft Copilot.
 
-![IMPORTANT] there are two variants of the exercise: one for learners who have access to Microsoft 365 Copilot, and an alternative for those who don't. Launch and compelte one **or** the other to explore Microsoft Copilot.
+>![NOTE] 
+>There are two variations of the exercise: one for learners who have access to Microsoft 365 Copilot, and an alternative for those who don't. Launch and complete one **or** the other to explore Microsoft Copilot.
 
-## Using Copilot for Microsoft 365
-If you have access to Copilot for Microsoft 365, launch this version of the exercise and follow the instructions. 
+## Using Microsoft Copilot for Microsoft 365
+If you have access to Microsoft Copilot for Microsoft 365, launch this version of the exercise and follow the instructions. 
 
 To complete this exercise, you need a Microsoft 365 account and a license for Microsoft Copilot.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2270745)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2270745?azure-portal=true)
 
 
 ## Using Microsoft Copilot in Microsoft Edge
-If you do not have access to Copilot for Microsoft 365, launch this version which will explore Microsoft Copilot in Microsoft Edge. 
+If you do not have access to Microsoft Copilot for Microsoft 365, launch this version which will explore Microsoft Copilot in Microsoft Edge. 
 
 This exercise requires a free Microsoft account (for example an *outlook.com*, *live.com*. or *hotmail.com* account), and the Microsoft Edge web browser.
 
@@ -22,4 +23,4 @@ This exercise requires a free Microsoft account (for example an *outlook.com*, *
     > **Tip**: If you did not sign into Edge after creating your account, use the user account icon (&#128100;) on the Edge toolbar to sign in using a *personal* account.
 
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2249955)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2249955?azure-portal=true)
