@@ -11,11 +11,11 @@ Azure API Center is a new service on Azure that offers a structured and centrali
 | **Potential security threats**    | **Ease of API governance.** With APIs consolidated in one location, governing these APIs to enforce organization security policies becomes easier for administrators.    |
 | **Inconsistent API design**   | **Automated API design conformance checks.** API Center allows admins to enforce design standards across all APIs and implements a linting workflow that checks APIs against a defined style guide and generates an API compliance report accessible in your API Center.    |
 
-## API Ecosystem Roles & Responsibilities
+## API Ecosystem roles & responsibilities
 
 An organization's API ecosystem often consists of different roles with diverse responsibilities that are integral to its successful operation. Let's take a closer look into some of the roles.
 
-1. **API Producers** - These could be individual developers or teams whose main responsibilities include:
+1. **API producers** - These could be individual developers or teams whose main responsibilities include:
     - Consolidating system specifications and requirements
     - Designing the API architecture that fits the defined goals
     - Developing, securing, and publishing the APIs
@@ -25,14 +25,14 @@ An organization's API ecosystem often consists of different roles with diverse r
 
     API producers strive to ensure they're following the best practices, security & compliance policies and organizational API standards for consistency. They also need to ensure they aren't duplicating the effort of previous/ other teams within the organization.
 
-1. **API Consumers** - These could be internal or external users of the APIs who:
+1. **API consumers** - These could be internal or external users of the APIs who:
     - Consume private APIs in their internal business workflows and services *(Internal consumers)*
     - Use restricted API endpoints to integrate into strategic business partnerships *(Partner consumers)*
     - Consume publicly available APIs to build external systems that use services provided by the organization *(Third-party consumers)*
 
     API consumers need to ensure that they quickly discover the most suitable APIs for their workloads to avoid wasting valuable development resources and efforts on duplications. To achieve this, it's important that they receive quality and easy to use documentation to validate the APIs that solve their respective needs and that they can seamlessly integrate into their applications.
 
-1. **Product Managers** - Product managers care about releasing secure, reliable, and compliant product experiences. Some of their tasks may include:
+1. **Product managers** - Product managers care about releasing secure, reliable, and compliant product experiences. Some of their tasks may include:
     - Creating plans to centralize all API operations
     - Enforce API best practices across product engineering teams for API design, security, and lifecycle
     - Enforce monitoring, analysis, and reporting for API governance
@@ -50,7 +50,7 @@ With API Center, you can create a catalog of APIs hosted and managed on differen
 
 ### Capabilities of Azure API Center
 
-**API Inventory**
+**API inventory**
 
 At the foundation of API Center is building a complete and up-to-date inventory of all APIs built and used throughout the organization. This inventory is key to enabling API governance, discovery, and consumption at scale.
 
@@ -60,7 +60,7 @@ With API Center, you can add APIs to your inventory regardless of:
 - API type: REST, GraphQL, SOAP, gRPC, WebSocket, WebHook, etc.
 - Runtime environment: Kubernetes cluster, Web App, API Management, Apigee API Management, Azure Functions, etc.
 
-**API Governance**
+**API governance**
 
 Now, with a complete API inventory, we need to look into how we can ensure these APIs are consistent, standardized, usable, and secure. API governance is defined as the practice of defining and applying standards, policies, and processes at scale across all organizational APIs.
 
@@ -72,7 +72,7 @@ API platform efforts are most successful when they have developer buy-in. The AP
 
 :::image type="content" source="../media/2-apic-analysis.png" alt-text="Screenshot showing API Analysis on API Center":::
 
-**API Discovery & Consumption**
+**API discovery & consumption**
 
 API Center streamlines the entire API development lifecycle, improving developer experience by integrating with popular developer tools such as Visual Studio Code. The API Center extension provides an experience for API consumers to discover, try, and consume APIs directly inside Visual Studio Code in the context of how they already work. Another capability of API Center is a traditional web-based API Center portal, designed to enable API consumers to easily navigate documentation, discover, access, and consume APIs from your API catalog.
 

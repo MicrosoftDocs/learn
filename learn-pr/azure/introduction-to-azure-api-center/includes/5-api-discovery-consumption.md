@@ -6,17 +6,17 @@ In this unit, you'll see how the API Center VS Code extension allows you to easi
 
 To govern your APIs through API Center extension on VS Code, you'll need to:
 
-1. Install [Visual Studio Code](https://code.visualstudio.com)
-1. Install [API Center extension](https://marketplace.visualstudio.com/items?itemName=apidev.azure-api-center)
+- Install [Visual Studio Code](https://code.visualstudio.com)
+- Install [API Center extension](https://marketplace.visualstudio.com/items?itemName=apidev.azure-api-center)
 
 The following Visual Studio Code extensions are optional and needed only for certain scenarios as indicated:
 
-1. [REST client extension](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) - to send HTTP requests and view the responses in Visual Studio Code directly.
-2. [Microsoft Kiota extension](https://marketplace.visualstudio.com/items?itemName=ms-graph.kiota) - to generate API clients.
+- [REST client extension](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) - to send HTTP requests and view the responses in Visual Studio Code directly.
+- [Microsoft Kiota extension](https://marketplace.visualstudio.com/items?itemName=ms-graph.kiota) - to generate API clients.
 
 ## API discovery and consumption
 
-You can view the your organization's API catalog directly in Visual Studio Code, with all your APIs, versions, definitions, environments, and deployments. With one glance, you instantly get an overview of all the APIs available within your organization.
+You can view your organization's API catalog directly in Visual Studio Code, with all your APIs, versions, definitions, environments, and deployments. With one glance, you instantly get an overview of all the APIs available within your organization.
 
 But what if your organization has hundreds or thousands of APIs? Don’t you worry, you can search for APIs through the search icon as shown below.
 
@@ -67,7 +67,7 @@ The API Center extension also uses Microsoft Kiota to generate a client for your
 
     b. Select the language for the generated SDK.
 
-## Self-hosted API Center Portal
+## Self-hosted API Center portal
 API Center portal is a website for developers and stakeholders to seamlessly discover and engage with APIs in your API inventory. With this self-hosted website, organizations provide a web-based API discovery and consumption experience to consumers.
 
 :::image type="content" source="../media/4-contoso-apic-portal.png" alt-text="Screenshot showing the landing page of the contoso api center portal or website":::

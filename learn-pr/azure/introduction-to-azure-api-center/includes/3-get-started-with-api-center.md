@@ -84,7 +84,7 @@ To start managing your APIs through API Center, you need:
 ::: zone pivot="vs-code"
 
 > [!NOTE]
-> Creating an API Center resource is currently not supported on VS Code. Create one using Azure CLI or the Azure Portal.
+> Creating an API Center resource is currently not supported on VS Code. Create one using Azure CLI or the Azure portal.
 
 ::: zone-end
 
@@ -129,7 +129,7 @@ This opens a modal on the right with metadata details, which include built-in pr
 > [!NOTE]
 > You can add and edit properties in the schema at any time and instantly apply them to all APIs in your API Center
 
-## Step 3: Add APIs to the Inventory
+## Step 3: Add APIs to the inventory
 
 The Contoso organization would like to recommend technical conferences for their engineering teams as part of their internal skilling drive. We'll add a Conference API with speakers, sessions, and topics.
 
@@ -247,7 +247,7 @@ az apic api definition import-specification --resource-group myResourceGroup --s
 
 ### Environments
 
-An environment, (Development, Testing, Staging, or Production), represents a location where an API runtime is deployed. Contoso IT Administrators define two environments – Testing and production, in their API Center instance to manage and track different API runtimes in their organization.
+An environment (Development, Testing, Staging, or Production), represents a location where an API runtime is deployed. Contoso IT Administrators define two environments – Testing and production, in their API Center instance to manage and track different API runtimes in their organization.
 
 To create an environment,
 

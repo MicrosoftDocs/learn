@@ -13,7 +13,7 @@ Contoso Corporation is a fictitious company that implements microservice archite
 
 At this point, IT administrators started to brainstorm on an effective and seamless solution to prevent their organization from getting to this state. If your organization also needs to adopt a strategy to centralize all of your APIs for easier tracking and governance, then this is the right module for you.
 
-## Learning Objectives
+## Learning objectives
 
 In this module, you will:
 
