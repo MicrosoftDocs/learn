@@ -13,11 +13,11 @@ To create an event source, you need to follow these steps:
 
 2. Enter a name for the new event stream and ensure the enhanced capabilities box is checked then select Create. You see the main editor canvas where you can add sources and destinations to your event stream.
 
-    ![Name event stream and select enhanced features](../media/new-event-stream.png)
+    ![Screenshot of name event stream and select enhanced features](../media/new-event-stream.png)
 
 3. Select add source on the ribbon or select one of the options in the main editor canvas
 
-    ![Screenshot of new button in main editor.](../media/add-source-dropdown-selector.png)
+    ![Screenshot of new dropdown selector button in main editor.](../media/add-source-dropdown-selector.png)
 
 4. Enter a source name for the new source and select a cloud connection to your source. If you don’t have a cloud connection, select Create new connection to create one. You need to provide the information of your source, such as connection name, connection type, authentication, and privacy level. 
 5. Select a data format of the incoming real-time events that you want to get from your source. The event streams feature supports the ingestion of events from Azure Event Hubs in JSON, Avro, and CSV (with header) data formats.
@@ -71,9 +71,9 @@ Custom app as an event source is a more advanced option but an important feature
 
 To stream events from your own application using Custom app as an event source in Fabric event stream, you need to follow these steps:
 
-1. Create an event stream item in Microsoft Fabric and add a Custom app source to it. Select New source on the ribbon or ![Screenshot of new button in main editor.](../media/new-button-main-editor.png) in the main editor canvas and then selecting Custom app. The Custom app configuration screen appears, where you can obtain the endpoint connection string, which is an event hub compatible connection string. [The compatible connection string is used in your application to send events to the event stream.](https://blog.fabric.microsoft.com/blog/stream-real-time-events-to-microsoft-fabric-with-event-streams-from-custom-application/) and [this blog post](https://blog.fabric.microsoft.com/blog/stream-real-time-events-to-microsoft-fabric-with-event-streams-from-custom-application/).
+1. Create an event stream item in Microsoft Fabric and add a Custom app source to it. Select New source on the ribbon or ![Screenshot of another new button in main editor.](../media/new-button-main-editor.png) in the main editor canvas and then selecting Custom app. The Custom app configuration screen appears, where you can obtain the endpoint connection string, which is an event hub compatible connection string. [The compatible connection string is used in your application to send events to the event stream.](https://blog.fabric.microsoft.com/blog/stream-real-time-events-to-microsoft-fabric-with-event-streams-from-custom-application/) and [this blog post](https://blog.fabric.microsoft.com/blog/stream-real-time-events-to-microsoft-fabric-with-event-streams-from-custom-application/).
 2. Create an application that sends events to the event stream using the connection string from the previous step. You can use any programming language or framework that supports event hubs or Kafka clients, such as Node.js, Python, Java, .NET, etc. You can find some examples of how to create such applications in [this linked article](/fabric/real-time-analytics/event-streams/stream-real-time-events-from-custom-app-to-kusto) and [this linked blog post](https://blog.fabric.microsoft.com/blog/stream-real-time-events-to-microsoft-fabric-with-event-streams-from-custom-application/).
-3. Add one or more destinations to your event stream to route and/or transform your event data to Fabric data sinks, such as Lakehouse, KQL Database, Power BI, etc. Select New destination on the ribbon or ![Screenshot of new button in main editor.](../media/new-button-main-editor.png) in the main editor canvas and then selecting the destination type you want. The destination configuration screen appears, where you can specify the details of your destination, such as the name, schema, format, etc.
+3. Add one or more destinations to your event stream to route and/or transform your event data to Fabric data sinks, such as Lakehouse, KQL Database, Power BI, etc. Select New destination on the ribbon or ![Screenshot of a new button in main editor canvas.](../media/new-button-main-editor.png) in the main editor canvas and then selecting the destination type you want. The destination configuration screen appears, where you can specify the details of your destination, such as the name, schema, format, etc.
 4. Verify that your event data is successfully streamed to your event stream and your destinations by using the Data preview and Data insights tabs in the main editor of your event stream. You can also query and analyze your data using various tools and services that are connected to your destinations, such as Spark SQL, Databricks, Power BI, etc.
 
 ## Processing events within event streams
