@@ -14,4 +14,4 @@ metadata:
   - build-2023-fabric
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-define-real-time-intelligence.md)]
+  [!include[](includes/2-define-real-time-analytics.md)]
