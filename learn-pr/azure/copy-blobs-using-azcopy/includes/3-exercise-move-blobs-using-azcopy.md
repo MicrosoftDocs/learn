@@ -1,6 +1,6 @@
-You've decided to evaluate the AzCopy command as an alternative to using the Azure CLI. As before, you want to move blobs that contain the details for product specifications, and that are more than six months old, to an archive store in a separate Blob Storage account.
+You decided to evaluate the AzCopy command as an alternative to using the Azure CLI. As before, you want to move blobs that contain the details for product specifications, and that are more than six months old, to an archive store in a separate Blob Storage account.
 
-In this exercise, you'll investigate how to use the AzCopy to migrate blobs that haven't changed in the last six months to a separate storage account.
+In this exercise, you investigate how to use AzCopy to migrate blobs that haven't changed in the last six months to a separate storage account.
 
 ## Create and add data to hot storage
 
@@ -42,7 +42,7 @@ First, create two accounts by using the Azure CLI.
 
 ## Setup
 
-We'll start by downloading the latest version of AzCopy; currently version 10. The Azure CLI does include AzCopy, but it might be an older version. We'll also generate SAS tokens for our storage accounts and then upload some sample data.
+Let's start by downloading the latest version of AzCopy; currently version 10. The Azure CLI does include AzCopy, but it might be an older version. Let's also generate SAS tokens for our storage accounts and then upload some sample data.
 
 1. In the Cloud Shell window, run the following commands to download and extract the most recent version of *AzCopy* for Linux.
 
@@ -123,13 +123,13 @@ We'll start by downloading the latest version of AzCopy; currently version 10. T
       --query '[].{name:name, properties:properties.lastModified}'
     ```
 
-1. Now that you have a list of blobs and their last modified times, you can use this information to create a script that uses AzCopy to transfer each blob that has a last modified time of more than six months ago to *Cool* storage. Because these files were just added, none of them will be old enough to filter by six months. Instead, run this example command to copy the *specification01.md* file to this new cool storage container.
+1. Now that you have a list of blobs and their last modified times, you can use this information to create a script that uses AzCopy to transfer each blob that has a last modified time of more than six months ago to *Cool* storage. Because these files were just added, none of them are old enough to filter by six months. Instead, run this example command to copy the *specification01.md* file to this new cool storage container.
 
     ```bash
     ./azcopy copy https://$HOT_STORAGE_NAME.blob.core.windows.net/specifications/specification01.md$HOT_SAS_TOKEN https://$COOL_STORAGE_NAME.blob.core.windows.net/azcopy-archive$COOL_SAS_TOKEN
     ```
 
-1. The blob being copied is small and the transfer will complete quickly, but imagine that the blob is several gigabytes in size. The transfer would take much longer. Run the following command to view AzCopy jobs that have run recently, or are still running.
+1. The blob being copied is small and the transfer completes quickly, but imagine that the blob is several gigabytes in size. The transfer would take longer. Run the following command to view AzCopy jobs that ran recently, or are still running.
 
     ```bash
     ./azcopy jobs list
@@ -143,7 +143,7 @@ We'll start by downloading the latest version of AzCopy; currently version 10. T
     ./azcopy jobs show <jobid>
     ```
 
-1. Verify that the blob has been copied. Run the following command to list the blobs in the *azcopy-archive* container in the destination storage account.
+1. Verify that the blob was copied. Run the following command to list the blobs in the *azcopy-archive* container in the destination storage account.
 
     ```bash
     ./azcopy list https://$COOL_STORAGE_NAME.blob.core.windows.net/azcopy-archive$COOL_SAS_TOKEN
