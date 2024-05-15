@@ -14,7 +14,7 @@ To add an event stream destination in Microsoft Fabric, you need to follow these
   - Schema: Select a compression type and data format, and preview how the data is sent to your selected destination. By performing this step, you can ensure you have properly formatted your data and it adheres to the expected schema, which helps prevent data loss or inaccuracies during ingestion.
   - Summary: Review the status of your data ingestion, including the table created with the schema you defined, and connection between the event stream and the selected destination.
 4. Review the status of your data ingestion and select Done. A destination tile appears on the canvas, connected to your event stream.
-  For more information, you can refer to [this article](/fabric/real-time-analytics/event-streams/add-manage-event stream-destinations) that explains how to create and manage an event stream in Microsoft Fabric.
+  For more information, you can refer to [this article](/fabric/real-time-analytics/event-streams/add-manage-eventstream-destinations) that explains how to create and manage an event stream in Microsoft Fabric.
 
 ## Types of event destinations available in event stream
 
@@ -25,7 +25,7 @@ In event stream, there are currently four current destination types supported in
 - Custom App
 - Reflex
 
-![Screenshot of new event stream destination.](../media/create-new-event stream-destination.png)
+![Screenshot of new event stream destination.](../media/create-new-eventstream-destination.png)
 
 ## Store events in a delta table using Lakehouse as an event destination
 
@@ -95,9 +95,9 @@ Earlier, we mentioned the **Group by** operator in the event processor editor. T
      A window is a 10-second sliding window that alerts the user whenever an article is mentioned more than three times in under 10 seconds
   
      ![Screenshot of the sliding window concept.](./../media/sliding-window.png)
-
-    > [NOTE]
-    > All of the tweets belong to the same topic in this scenario
+ 
+    > [!NOTE]
+> All of the tweets belong to the same topic in this scenario
 
   - **session windows** simply divides events into variable and nonoverlapping intervals that are based on a gap of lack of activity.
     

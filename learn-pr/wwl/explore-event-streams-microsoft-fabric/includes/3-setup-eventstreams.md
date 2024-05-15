@@ -6,14 +6,14 @@ To create an event source, you need to follow these steps:
 
 1. Change your Fabric experience to Real-Time Intelligence and select event stream to create a new event stream in **workspace** or **homepage** or **create hub**.
 
-   ![Screenshot of create new event stream.](../media/create-new-event stream.png)
+   ![Screenshot of create new event stream.](../media/create-new-eventstream.png)
 
    > [!Note] 
    > As you can see from the image, there are several methods. Anytime you're in the PowerBI Service and have access to Fabric you can click on the icon in the bottom-left portion in the image to switch between fabric sources.
 
 2. Enter a name for the new event stream and ensure the enhanced capabilities box is checked then select Create. You see the main editor canvas where you can add sources and destinations to your event stream.
 
-    ![Screenshot of name event stream and select enhanced features](../media/new-event-stream.png)
+    ![Screenshot of name event stream and select enhanced features.](../media/new-event-stream.png)
 
 3. Select add source on the ribbon or select one of the options in the main editor canvas
 
@@ -48,10 +48,10 @@ Azure Event Hubs is a service that can handle large amounts of event data from d
 
 To configure Azure Event Hubs as an event source in Microsoft Fabric, you need to:
 
-1. Create an Azure Event Hubs namespace and an event hub. A namespace is a container for your event hubs, and an event hub is a logical entity that receives the event data. You can create them in the Azure portal by following the steps in [this linked article](/fabric/real-time-analytics/event-streams/add-manage-event stream-sources).
-2. Create a shared access policy and a connection string for your event hub. A shared access policy defines the permissions for accessing your event hub, and a connection string is a string that contains the information needed to connect to your event hub. You can create them in the Azure portal by following the steps in [this linked article](/fabric/real-time-analytics/event-streams/add-manage-event stream-sources).
+1. Create an Azure Event Hubs namespace and an event hub. A namespace is a container for your event hubs, and an event hub is a logical entity that receives the event data. You can create them in the Azure portal by following the steps in [this linked article](/fabric/real-time-analytics/event-streams/add-manage-eventstream-sources).
+2. Create a shared access policy and a connection string for your event hub. A shared access policy defines the permissions for accessing your event hub, and a connection string is a string that contains the information needed to connect to your event hub. You can create them in the Azure portal by following the steps in [this linked article](/fabric/real-time-analytics/event-streams/add-manage-eventstream-sources).
 3. Choose a data format for your event data. The data format determines how your event data is encoded and decoded. You can choose from JSON, Avro, or CSV formats.
-4. Choose a consumer group for your event hub. A consumer group is a view of an event hub that enables multiple consumers to read the same stream of events at different speeds and with different offsets. You can create a consumer group in the Azure portal by following the steps in [this linked article](/fabric/real-time-analytics/event-streams/add-manage-event stream-sources).
+4. Choose a consumer group for your event hub. A consumer group is a view of an event hub that enables multiple consumers to read the same stream of events at different speeds and with different offsets. You can create a consumer group in the Azure portal by following the steps in [this linked article](/fabric/real-time-analytics/event-streams/add-manage-eventstream-sources)..
 5. Create an event stream item in Microsoft Fabric. An event stream item is what you create in the portal to define your event data flow. You can create it by following the steps in [this linked article](/fabric/real-time-analytics/event-streams/transform-and-stream-real-time-events-to-lakehouse).
 6. Add an Azure Event Hubs source to your event stream item. You can add it by following the steps in [this linked article](/fabric/real-time-analytics/event-streams/transform-and-stream-real-time-events-to-lakehouse). You need to provide the connection string and the consumer group of your event hub, and select the data format of your event data.
 
