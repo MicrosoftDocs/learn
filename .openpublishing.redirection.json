@@ -38578,6 +38578,11 @@
       "source_path": "learn-pr/wwl-azure/security-monitoring-and-governance/9-explore-azure-blueprints.md",
       "redirect_url": "/training/modules/security-monitoring-and-governance/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/security-ops-sentinel/index.yml",
+      "redirect_url": "/training/paths/sc-200-configure-azure-sentinel-environment/",
+      "redirect_document_id": false
     }
   ]
 }
