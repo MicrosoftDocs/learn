@@ -1,0 +1,12 @@
+In this exercise, let's create a test spec for a Todo Application using Playwright's code generator, Codegen.
+- Navigate to the Todo Application: [https://demo.playwright.dev/todomvc/#/](https://demo.playwright.dev/todomvc/)
+- Add a new todo item "water the plants"
+- Add another todo item "feed the dog"
+- Toggle the "water the plants" todo as done
+- Select the active button
+- Assert that the todo field contains the text "feed the dog"
+- Select the completed filter
+- Assert that the todo field contains the text "water the plants"
+- Change the test name to active and completed filters
+- Save the test file as todo.spec.ts
+- Run the test with trace viewer selected and make sure it passes
