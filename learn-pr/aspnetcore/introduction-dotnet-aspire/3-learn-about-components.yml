@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-dotnet-aspire.learn-about-components
+title: Learn about .NET Aspire components
+metadata:
+  title: Learn about .NET Aspire components
+  description: In this unit, you'll learn about common requirements for backing services that microservices often need. You'll also see how .NET Aspire built-in components make it easy to consume and work with such backing services.
+  ms.date: 01/31/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-learn-about-components.md)]

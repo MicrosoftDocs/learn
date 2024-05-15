@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-dotnet-aspire.what
+title: What is .NET Aspire?
+metadata:
+  title: What is .NET Aspire
+  description: In this unit, you'll learn about the challenges that face developers as they create cloud-native applications and how .NET Aspire addresses those challenges and enables teams to create applications rapidly.
+  ms.date: 01/31/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-what.md)]
