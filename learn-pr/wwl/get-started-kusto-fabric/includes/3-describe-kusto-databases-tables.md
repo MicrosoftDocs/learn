@@ -6,7 +6,7 @@ Let's explore the core elements of Real-Time Intelligence in Microsoft Fabric.
 
 - **Event house**: Event houses are like a large, efficient library for data. They help organizations handle and analyze lots of data quickly, especially when it's important to get insights fast. Think of it as a supercharged database that can deal with data coming in nonstop, from different places, and in various forms. It's designed to grow with the data needs of a project, making sure everything will run smoothly without wasting resources.
 
-    ![Event house landing page](../media/eventhouse-landing-page.png)
+    ![Screenshot of Event house landing page.](../media/eventhouse-landing-page.png)
 
 - **KQL database**: is a Kusto database and an upper-level entity that hosts a collection of tables, stored functions, materialized views, shortcuts, and datastreams. 
 
@@ -23,7 +23,7 @@ Let's explore the core elements of Real-Time Intelligence in Microsoft Fabric.
 As with many databases, the KQL Database has many objects to handle your data storage, streaming, and querying needs to support your decision making systems downstream.
 From the event house landing page, you can select on any of the databases and navigate to the individual database for exploring data, adding elements, and more.
 
-![KQL Database landing page.](../media/kql-database-landing.png)
+![Screenshot of KQL Database landing page.](../media/kql-database-landing.png)
 
 - A **table** is a schema entity that contains a set of columns and rows of data. A table has a well-defined schema (an ordered list of column name and data type pairs). You can use the `.create table` command to create a new table, the `.show table` command to show the table schema, and the `.ingest` command to ingest data into a table.
 - A **function** is a schema entity that encapsulates a subquery expression that can be invoked from within other KQL queries. A stored function has a name, an optional list of parameters, and a body that contains the subquery expression. You can use the `.create function` command to create a new stored function, and the `.show functions` command to show the stored functions in a database.
