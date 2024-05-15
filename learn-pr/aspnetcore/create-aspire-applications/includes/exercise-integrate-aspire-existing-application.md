@@ -1,6 +1,6 @@
 Now let's explore how to add .NET Aspire to an existing ASP.NET Core web app. Along the way, you'll learn how to add the .NET Aspire stack to an existing ASP.NET Core web app and then run the app. You'll also see how to call microservices from the ASP.NET Core app.
 
-## Setup your environment
+## Set up your environment
 
 To add .NET Aspire to an existing demo ASP.NET Core web app, you need to first obtain the existing app.
 
