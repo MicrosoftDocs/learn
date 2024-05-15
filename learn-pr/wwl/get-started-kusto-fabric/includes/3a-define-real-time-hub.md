@@ -2,11 +2,11 @@
 
 The Real-Time Hub serves as your gateway to uncover and control the flow of your streaming data. It's a dynamic catalog that includes:
 
- ![Real-Time hub role in Real-Time Intelligence](../media/real-time-hub-highlight.png)
+ ![Screenshot of Real-Time hub role in Real-Time Intelligence.](../media/real-time-hub-highlight.png)
 
 - **Event streams**: Gain access to all the active event streams within Fabric that you're permitted to view.
 - **Microsoft Sources**: Quickly find and configure streaming sources available to you, such as Azure Event Hubs, Azure IoT Hub, and various Change Data Capture (CDC) options from Azure SQL DB, Azure Cosmos DB, and PostgreSQL DB.
-- **Fabric Events**: Use event-driven features for instant notifications and data handling. Keep tabs on events from Fabric Workspace Items to Azure Blob Storage, which can initiate further processes or workflows. This action could involve starting a data pipeline or dispatching an email alert. Plus, you have the flexibility to route these events to different destinations through Event streams. Alerts allow you to interact both within your workspace and outside of it from the Real-Time hub by selecting the ![Select alert button](../media/set-alert-button.png) ***Set alert*** button.
+- **Fabric Events**: Use event-driven features for instant notifications and data handling. Keep tabs on events from Fabric Workspace Items to Azure Blob Storage, which can initiate further processes or workflows. This action could involve starting a data pipeline or dispatching an email alert. Plus, you have the flexibility to route these events to different destinations through Event streams. Alerts allow you to interact both within your workspace and outside of it from the Real-Time hub by selecting the ![Screenshot of Select alert button.](../media/set-alert-button.png) ***Set alert*** button.
 
 All this information is presented in an easy-to-digest format, ensuring seamless integration with your Fabric workloads.
 
@@ -14,7 +14,7 @@ All this information is presented in an easy-to-digest format, ensuring seamless
 
 The Microsoft Fabric Real-Time Intelligence experience's event streams feature allows for seamless integration of real-time events into Fabric. You can create an eventstream, which is an instance within Fabric, add sources of event data, apply optional transformations to the data, and route it to various destinations, all without the need for coding. This no-code approach simplifies the process of managing event data within Fabric.
 
-![Event stream sources](../media/event-stream-sources.png)
+![Screenshot of Event stream sources.](../media/event-stream-sources.png)
 
 ## Processing events within event streams
 
@@ -53,6 +53,6 @@ When you choose the enhanced capabilities, you're able to use the standard desti
 
 You're now able to attach to multiple destinations within an event stream at the same time without impacting or colliding with each other.
 
-![Simultaneous event streams](../media/real-time-events-workflow.png)
+![Screenshot of Simultaneous event streams.](../media/real-time-events-workflow.png)
 
 
