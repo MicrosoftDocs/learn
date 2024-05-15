@@ -8,8 +8,6 @@ In addition to the Azure OpenAI models, the model catalog includes the latest op
 - Mistral
 - Meta and others.
 
-They don't need to create language models from scratch - most people use an off-the-shelf foundation model (which you can use as-is or fine-tune with your own additional natural language training data)
-
 ## Large and small language models
 There are many language models available that you can use to power generative AI applications. In general, language models can be considered in two categorize: *Large Language Models* (LLMs) and *Small Language models* (SLMs).
 

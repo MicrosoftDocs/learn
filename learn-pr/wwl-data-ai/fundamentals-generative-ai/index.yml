@@ -3,7 +3,7 @@ uid: learn.wwl.fundamentals-generative-ai
 metadata:
   title: Fundamentals of Generative AI          
   description: "Learn what generative AI is, how large language models form the foundation of generative AI applications, and see examples of copilots and good prompts."               # Copy your 'evaluate' Learning Objective here (see below)
-  ms.date: 6/27/2023               
+  ms.date: 5/15/2024               
   author: sherzyang       
   ms.author: sheryang            
   ms.topic: module-intro-to-product # Please don't edit, used for our analytics
