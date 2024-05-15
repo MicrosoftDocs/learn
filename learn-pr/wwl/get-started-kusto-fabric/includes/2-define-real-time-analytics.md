@@ -21,7 +21,7 @@ By Using Real-Time Intelligence in Fabric, you can:
 
 The Real-Time Hub serves as your gateway to uncover and control the flow of your streaming data. It's a dynamic catalog that includes:
 
- ![Real-Time hub role in Real-Time Intelligence](../media/real-time-hub-highlight.png)
+ ![Screenshot of Real-Time hub role in Real-Time Intelligence.](../media/real-time-hub-highlight.png)
 
 ## Visualize data insights with Real-Time Dashboards
 
@@ -29,11 +29,11 @@ Data insights can be visualized through KQL querysets, Real-Time dashboards, and
 
 Alerts can also be set within the non-table visualizations on the Real-Time Dashboards while in editing mode to provide notifications when an established threshold that you set has been met.
 
-![Real-Time Dashboard alerts](../media/set-alert-dashboard.png)
+![Screenshot of Real-Time Dashboard alerts.](../media/set-alert-dashboard.png)
 
 The alerts can notify you within Microsoft Teams or by sending an email.
 
-![Alert parameter configuration.](../media/set-alert-parameters.png)
+![Screenshot of Alert parameter configuration.](../media/set-alert-parameters.png)
 
 
 ### Kusto Query Language (KQL)
