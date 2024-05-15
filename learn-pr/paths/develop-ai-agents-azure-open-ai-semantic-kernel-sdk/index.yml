@@ -1,14 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.develop-ai-agents-azure-open-ai-semantic-kernel-sdk
 metadata:
-  title: APL-2005 Develop AI agents using Azure OpenAI and the Semantic Kernel SDK
-  description: APL-2005 Develop AI agents using Azure OpenAI and the Semantic Kernel SDK
-  ms.date: 02/29/2024
+  title: Develop AI agents using Azure OpenAI and the Semantic Kernel SDK
+  description: Develop AI agents using Azure OpenAI and the Semantic Kernel SDK
+  ms.date: 05/15/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: learning-path
-  ms.service: azure-ai-services
-title: APL-2005 Develop AI agents using Azure OpenAI and the Semantic Kernel SDK
+title: Develop AI agents using Azure OpenAI and the Semantic Kernel SDK
 prerequisites: |
   -   Experience programming in C#.
   -   Visual Studio Code IDE installed.
