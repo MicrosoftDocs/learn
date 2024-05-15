@@ -62,7 +62,7 @@ Microservices and their loosely coupled nature increase the flexibility of your 
 - You can specify clearly for all teams the .NET projects, containers, executables, and cloud resources that make up the application.
 - Microservices can automatically discover endpoints for all the application's components. .NET Aspire performs this service discovery by managing connection strings and injecting them into microservices where needed.
 
-When you create a .NET Aspire app, you'll see a new project in the solution called **\<SolutionName\>.AppHost**. This project implements orchestration for your app and you should ensure it's the start up project for the solution.
+When you create a .NET Aspire app, you'll see a new project in the solution called **\<SolutionName\>.AppHost**. This project implements orchestration for your app and you should ensure it's the start-up project for the solution.
 
 ### Components
 

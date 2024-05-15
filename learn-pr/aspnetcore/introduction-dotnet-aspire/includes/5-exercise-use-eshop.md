@@ -1,6 +1,6 @@
 We can use the latest eShop reference application, which includes the .NET Aspire stack, to illustrate a complete and complex cloud-native app.
 
-Imagine you work for an outdoor clothing and equipment company. Your development team have been working with .NET Aspire to create a new eShop web app for the main customer-facing site. You want to understand the architecture of this app and test its functionality before you deploy it.
+Imagine you work for an outdoor clothing and equipment company. Your development team has been working with .NET Aspire to create a new eShop web app for the main customer-facing site. You want to understand the architecture of this app and test its functionality before you deploy it.
 
 In this unit, you'll install .NET Aspire and its prerequisites and then use the eShop app to investigate and run .NET Aspire.
 
@@ -13,7 +13,7 @@ The prerequisites for this .NET Aspire exercise are:
 - Docker Desktop
 - .NET Aspire workload in Visual Studio
 
-If you've already got these installed, you can skip ahead explore the eShop application.
+If you've already got these installed, you can skip ahead to explore the eShop application.
 
 ### Install .NET 8
 
