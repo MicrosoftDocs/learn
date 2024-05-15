@@ -1,4 +1,4 @@
-Insert text here.
+TODO: Insert text here.
 
 In this unit, you learn how to update a deployment stack by adding resources to your Bicep file. Additionaly, you learn how to delete a deployment stack and its managed resources.
 
@@ -20,53 +20,17 @@ You're able to control how Azure handles detached resources, resource groups, an
 - Delete resources - deletes resources, but detaches resource groups and management groups
 - Detach all - detaches all resources, resource groups, and management groups
 
-Let's take a look at the json output when using the AZ CLI `az stack group show` command with values set for the `--action-on-unmanage` parameter. Notice the set behavior for resources, resource groups, and management groups.
-
-1. `--action-on-unmanage deleteAll`
-
-    ```json
-    "actionOnUnmanage": {
-        "managementGroups": "delete",
-        "resourceGroups": "delete",
-        "resources": "delete"
-    },
-    ```
-
-1. `--action-on-unmanage deleteResources`
-
-    ```json
-    "actionOnUnmanage": {
-        "managementGroups": "detach",
-        "resourceGroups": "detach",
-        "resources": "delete"
-    },
-    ```
-
-1. `--action-on-unmanage detachAll`
-
-```json
-"actionOnUnmanage": {
-    "managementGroups": "detach",
-    "resourceGroups": "detach",
-    "resources": "detach"
-},
-```
-
 In the next module, you work on managing resource lifecycles, including the _action on unmanage_ parameter.
 
 ## Updating a deployment stack
 
-As an application evolves, so does its resources. How do we update a deployment stack and its managed resources when new services and features are added? Updating a deployment stack and its resources includes different activites related to its resources, including:
+As an application evolves, so does its resources. How do we update a deployment stack and its managed resources when new services and features are added? What situations require us to update a deployment stack? Adding a new resource or changing the property of an existing managed resource would require that we update the deployment stack.
 
-- Adding a new managed resource
-- Adding an existing resource
-- Adding, removing, or modifying a property of a managed resource
-- Detaching a managed resource
-- Deleting a managed resource
+Let's say that our deposits application needs to add a new Azure SQL database, and we want the database to be managed by the deployment stack. To accomplish this, we update our Bicep file to define our new Azure SQL database.
 
-To update a deployment stack, make the appropriate changes to the template file used to define your resources.
+:::code language="bicep" source="code/1-template.bicep" range="1-63" highlight="5-16, 44-63":::
 
-After making the appropriate changes to the template file used 
+The highlighted code defines our new Azure SQL database for our deposits application. With our new resource defined, we need to update the deployment stack.
 
 ::: zone pivot="cli"
 
@@ -83,6 +47,18 @@ az stack group create \
 > [!NOTE]
 > AZ CLI does not have a dedicated command to update a deployment stack. Use the create command to update the stack.
 
+To verify that the new resources are managed by the stack, use the `az stack group show` command.
+
+```azurecli
+az stack group show \
+    --resource-group rg-depositsApplication
+    --name stack-deposits
+```
+
+:::code language="json" source="code/2-json.json" range="1-77" highlight="40-51":::
+
+The highlighted code shows the new Azure SQL server and Azure SQL database as managed by the deployment stack.
+
 ::: zone-end
 
 ::: zone pivot="powershell"
@@ -97,13 +73,25 @@ Set-AzResourceGroupDeploymentStack `
     -DenySettingsMode none
 ```
 
+To verify that the new resources are managed by the stack, use the ``Get-AzResourceGroupDeploymentStack`` command.
+
+```azurepowershell
+Get-AzResourceGroupDeploymentStack \
+    -ResourceGroupName rg-depositsApplication
+    -Name stack-deposits
+```
+
+:::code language="json" source="code/3-powershell.ps1" range="1-17" highlight="11-12":::
+
+The highlighted code shows the new Azure SQL server and Azure SQL database as managed by the deployment stack.
+
 ::: zone-end
+
+In the next module, you work on managing resource lifecycles, including adding, updating, detaching, and deleting managed resources.
 
 ## Deleting a deployment stack
 
-Insert text here.
-
-If a resource no longer needs to be managed by the deployment stack, you can modify the stack to no longer include the resource. The action on unmanage behavior of a deployment stack determines what happens to a resource that is removed from the deployment stack's definition. This behavior, discussed later in the unit, determines if a resource, resource group, or management groups is detached or deleted from the stack.
+TODO: Insert text here.
 
 ::: zone pivot="cli"
 

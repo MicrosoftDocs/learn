@@ -10,7 +10,7 @@ In this unit, you learn how to create a deployment stack, verify its deployment,
 
 Deployment stacks change how you think about resource organization across resource groups and subscriptions. A deployment stack allows you to group all the resources that make up your application, regardless of where they're in your Azure resource organizational hierarchy. You can manage them as a single unit. With deployment stacks, you're able to perform lifecycle operations on the collection of resources that make up the stack.
 
-![a graphic representing an application managed by a deployment stack and deployed to multiple resource groups](../media/deployment-stack-application.png)
+![a graphic representing an application managed by a resource group scoped deployment stack](../media/depolyment-stack-resource-group-scope.png)
 
 Think of deployment stacks as a series of pointers that groups your application's resources into a single unit. Deployment stacks can be created at different scopes, such as resource groups, subscriptions, and management groups.
 
@@ -20,36 +20,7 @@ Deployment stacks support the use of Bicep files, ARM JSON templates, or templat
 
 We'll use the following bicep file for our first deployment stack. The file defines an app service plan and a web app. These resources become managed resources when we create the deployment stack.
 
-```bicep
-// Parameters
-@description('The name of the app service plan.')
-param appServicePlanName string = 'plan-deposits'
-
-@description('The location for all resources.')
-param location string = 'eastus'
-
-@description('The name of the web application')
-param webApplicationName string = 'webapp-deposits-${uniqueString(resourceGroup().id)}'
-
-// Resource - App Service Plan
-resource appServicePlan 'Microsoft.Web/serverfarms@2020-12-01' = {
-  name: appServicePlanName
-  location: location
-  sku: {
-    name: 'F1'
-    capacity: 1
-  }
-}
-
-// Resource - Web App
-resource webApplication 'Microsoft.Web/sites@2021-01-15' = {
-  name: webApplicationName
-  location: location
-  properties: {
-    serverFarmId: appServicePlan.id
-  }
-}
-```
+:::code language="bicep" source="code/1-template.bicep" range="1-4, 18-42":::
 
 > [!NOTE]
 > You may notice the `${uniqueString(resourceGroup().id)}` syntax on the `webApplicationName` parameter. The uniqueString function creates a string based on the id of the resource group and adds it as a suffix to `webapp-deposits`. Many Azure services require unique names. This function helps generate a unique name.
@@ -131,64 +102,7 @@ az stack group show \
 
 The results include the properties of the deployment stack and the status of the managed resources. The output should appear familiar to the following section:
 
-```json
-{
-  "actionOnUnmanage": {
-    "managementGroups": "detach",
-    "resourceGroups": "detach",
-    "resources": "detach"
-  },
-  "debugSetting": null,
-  "deletedResources": [],
-  "denySettings": {
-    "applyToChildScopes": false,
-    "excludedActions": null,
-    "excludedPrincipals": null,
-    "mode": "none"
-  },
-  "deploymentId": "/subscriptions/.../deployments/stack-deposits-24051017g2k8i",
-  "deploymentScope": null,
-  "description": null,
-  "detachedResources": [],
-  "duration": "PT43.5601118S",
-  "error": null,
-  "failedResources": [],
-  "id": "/subscriptions/.../deploymentStacks/stack-deposits",
-  "location": null,
-  "name": "stack-deposits",
-  "outputs": null,
-  "parameters": {},
-  "parametersLink": null,
-  "provisioningState": "succeeded",
-  "resourceGroup": "rg-depositsApplication",
-  "resources": [
-    {
-      "denyStatus": "none",
-      "id": "/subscriptions/.../serverfarms/plan-deposits",
-      "resourceGroup": "rg-depositsApplication",
-      "status": "managed"
-    },
-    {
-      "denyStatus": "none",
-      "id": "/subscriptions/.../sites/webapp-brpdm7iotbwjm",
-      "resourceGroup": "rg-depositsApplication",
-      "status": "managed"
-    }
-  ],
-  "systemData": {
-    "createdAt": "2024-05-10T17:53:08.093925+00:00",
-    "createdBy": "depositsapplication@contoso.com",
-    "createdByType": "User",
-    "lastModifiedAt": "2024-05-10T17:54:55.377228+00:00",
-    "lastModifiedBy": "depositsapplication@contoso.com",
-    "lastModifiedByType": "User"
-  },
-  "tags": {},
-  "template": null,
-  "templateLink": null,
-  "type": "Microsoft.Resources/deploymentStacks"
-}
-```
+:::code language="json" source="code/2-json.json" range="1-39, 52-77":::
 
 Take notice of the resources section of the output. For each resource, it shows its status as `managed`, its resource group, its resource id, and its deny settings.
 

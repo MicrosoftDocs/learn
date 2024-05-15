@@ -6,8 +6,6 @@ Suppose you work as a DevOps engineer for a community bank that decided to use d
 
 The initial deployment will include an app service plan and an app service, but the next sprint will include integrating an Azure SQL database.
 
-![a graphic representing an application deployed to a single resource group](../media/single-resource-group-application.png)
-
 You decide to create and modify the deployment stack using a command-line interface and a bicep file that defines the application's resources.
 
 ## What will we be doing?
