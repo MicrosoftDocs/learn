@@ -18567,37 +18567,37 @@
     },
     {
       "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/index.md",
-      "redirect_url": "https://learn.microsoft.com/dotnet/maui/tutorials/notes-mvvm",
+      "redirect_url": "/training/modules/design-mvvm-viewmodel/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/1-introduction.md",
-      "redirect_url": "https://learn.microsoft.com/dotnet/maui/tutorials/notes-mvvm",
+      "redirect_url": "training/modules/design-mvvm-viewmodel/1-introduction",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/2-what-is-mvvm.md",
-      "redirect_url": "https://learn.microsoft.com/dotnet/maui/tutorials/notes-mvvm",
+      "redirect_url": "/training/modules/design-mvvm-viewmodel/2-what-is-mvvm",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/3-use-a-viewmodel.md",
-      "redirect_url": "https://learn.microsoft.com/dotnet/maui/tutorials/notes-mvvm",
+      "redirect_url": "/training/modules/design-mvvm-viewmodel/3-use-viewmodel",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/4-exercise-manage-selection-with-a-viewmodel.md",
-      "redirect_url": "https://learn.microsoft.com/dotnet/maui/tutorials/notes-mvvm",
+      "redirect_url": "/training/modules/design-mvvm-viewmodel/4-exercise-manage-selection-with-viewmodel",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/5-use-commands-in-a-viewmodel.md",
-      "redirect_url": "https://learn.microsoft.com/dotnet/maui/tutorials/notes-mvvm",
+      "redirect_url": "/training/modules/design-mvvm-viewmodel/5-use-commands-viewmodel",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/6-summary.md",
-      "redirect_url": "https://learn.microsoft.com/dotnet/maui/tutorials/notes-mvvm",
+      "redirect_url": "/training/modules/design-mvvm-viewmodel/7-summary",
       "redirect_document_id": false
     },
     {
