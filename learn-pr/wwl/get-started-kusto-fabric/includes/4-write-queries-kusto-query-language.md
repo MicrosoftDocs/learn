@@ -153,15 +153,15 @@ One new feature within the Microsoft Real-Time Intelligence tooling is the abili
 
 When your administrator enables Copilot, you see the option in the top menubar of your querysets. When you ask a question about your data, Copilot will generate the KQL Code to answer your question. You can create several queries within the queryset using this no-code approach to gather useful information for user consumption.
 
-![Nocode Copilot approach using Querysets](../media/copilot.png)
+![Screenshot of Nocode Copilot approach using Querysets.](../media/copilot.png)
 
 Once you have queries within the queryset, you can then Pin them to an existing dashboard or create a new dashboard. To accomplish this, select the queries you want pinned, and then select the **Pin to dashboard**. This gives you a window to perform other actions.
 
-![nocode Copilot pin to dashboard feature](../media/copilot-pin-to-dashboard.png)
+![Screenshot of nocode Copilot pin to dashboard feature.](../media/copilot-pin-to-dashboard.png)
 
 You also have the ability to add a queryset query to a Power BI Report by highlighting your preferred query and then selecting the **Build PowerBI report**.
 
-![Nocode Copilot Build PowerBI Report](../media/copilot-build-powerbi-report.png)
+![Screenshot of Nocode Copilot Build PowerBI Report.](../media/copilot-build-powerbi-report.png)
 
-> **Note:**
+> [!NOTE]
 > You can only select one query at a time using the **Pin to Dashboard** or the **Build PowerBI report** but you can append dashboard elements to existing dashboards.
