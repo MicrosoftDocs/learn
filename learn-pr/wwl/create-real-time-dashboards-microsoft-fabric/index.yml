@@ -12,9 +12,12 @@ metadata:
 title: Create real time dashboards with Microsoft Fabric
 summary: In this module, you'll learn about the Real-Time Dashboard in Microsoft Fabric and its user-friendly experience.
 abstract: |
- After completing this module, you'll be able to:
- - LO1
- - LO2
+ By the end of this module, you'll be able to:
+ - Create a Real-Time dashboard in Microsoft Fabric.
+ - Understand some of its advanced features.
+ - Apply some best practices for effective use.
+ - Have hands-on experience in a lab exercise.
+ 
 prerequisites: Familiarity with Microsoft Fabric.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
