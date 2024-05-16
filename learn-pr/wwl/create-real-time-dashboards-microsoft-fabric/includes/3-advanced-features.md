@@ -8,11 +8,11 @@ Pages give you the ability to create optional containers for more tiles. It's a 
 
 One of the first things you might need to do is to rename the existing page, select the elipses ***...*** and then choose the ***Rename page*** option.
 
-![Rename an existing page](../media/rename-page.png)!
+![Screenshot of Rename an existing page](../media/rename-page.png)!
 
 Once done, you can select ***+ Add page*** below your newly named page on the bottom part of the canvas.
 
-![Add a new page](../media/add-page.png)
+![Screenshot of Add a new page](../media/add-page.png)
 
 Then follow the procedure again to rename the page as you continue.
 
@@ -22,15 +22,15 @@ In many cases, you're dealing with large amounts of data and you can improve the
 
 1. locate and select the ***Parameters*** button on the tool bar.
 
-    ![Select parameter button to open parameters pane](../media/add-parameter.png)
+    ![Screenshot of Select parameter button to open parameters pane](../media/add-parameter.png)
 
 2. When the side panel expands, select the ***+ Add parameter***.
 
-    ![Add new parameter](../media/add-parameter-step-2.png)
+    ![Screenshot of Add new parameter](../media/add-parameter-step-2.png)
 
 3. Configure the parameter to apply a filter to the base query. For more information about the use and configuration of the different kinds of parameters, see [Use parameters in Real-Time Dashboards](/fabric/real-time-intelligence/dashboard-parameters?branch=main)
 
-    ![Configure parameter(s)](../media/parameter-settings.png)
+    ![Screenshot of Configure parameter(s)](../media/parameter-settings.png)
 
 ### View query
 
@@ -38,12 +38,12 @@ You can review the query in two modes: viewing and editing. However, you can onl
 
 1. Select a tile you want to explore and select the ***[...]***> ***View query***.
 
-    ![Select query tile to edit](../media/edit-query.png)
+    ![Screenshot of Select query tile to edit](../media/edit-query.png)
 
 1. Select the ***Edit query*** option.
 1. You can choose either the option of editing the ***Existing Queryset*** or a ***New Queryset***
 
-    ![Edit exiting query](../media/edit-queryset-from-tile.png)
+    ![Screenshot of Edit exiting query](../media/edit-queryset-from-tile.png)
 
 > [!NOTE]
 > When you edit a query with this approach, the changes won't appear int eh original Real-Time Dashboard.
@@ -61,4 +61,4 @@ Auto refresh automatically updates dashboard data, eliminating the need for manu
 1. Choose values for ***Minimum time interval*** and ***Default refresh interval***.
 1. Select ***Apply*** and then be sure to ***Save*** the dashboard.
 
-    ![Enable Auto Refresh](../media/enable-auto-refresh.png)
+    ![Screenshot of Enable Auto Refresh](../media/enable-auto-refresh.png)

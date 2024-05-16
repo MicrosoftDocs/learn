@@ -9,5 +9,6 @@ The main takeaways from this module include understanding the importance of main
 
 More Reading:
 1. [Getting started with Power BI](/power-bi/guided-learning)
-1. [Creating a dashboard with Azure Data Explorer](/azure/data-explorer/create-dashboard)
+1. [Creating a dashboard with Azure Data Explorer](/training/modules/create-dashboards-azure-data-explorer/)
 1. [Understanding Kusto Query Language](/azure/data-explorer/kusto/query)/
+(/training/modules/create-dashboards-azure-data-explorer/)
