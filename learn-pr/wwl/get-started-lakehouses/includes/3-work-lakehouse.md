@@ -37,7 +37,7 @@ Shortcuts are useful when you need to source data that's in a different storage 
 
 Source data permissions and credentials are all managed by OneLake. When accessing data through a shortcut to another OneLake location, the identity of the calling user will be utilized to authorize access to the data in the target path of the shortcut. The user must have permissions in the target location to read the data.
 
-Shortcuts can be created in both Lakehouses and KQL databases, and appear as a folder in the lake. This allows Spark, SQL, Real-Time Analytics and Analysis Services to all utilize shortcuts when querying data.
+Shortcuts can be created in both Lakehouses and KQL databases, and appear as a folder in the lake. This allows Spark, SQL, Real-Time intelligence and Analysis Services to all utilize shortcuts when querying data.
 
 > [!NOTE]
 > For more information on how to use shortcuts, see [OneLake shortcuts documentation](/fabric/onelake/onelake-shortcuts) in the Microsoft Fabric documentation.
