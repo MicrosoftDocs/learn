@@ -14,16 +14,17 @@ metadata:
 title: Get started with Data Activator in Microsoft Fabric
 summary: Use Data Activator in Microsoft Fabric to easily monitor and take action on your data.
 abstract: |
-  After completing this module, you will be able to:
-  -   Understand Data Activator
+  After completing this module, you'll be able to:
+  -   Understand Data Activator.
 
-  -   Understand triggers, conditions and actions in Data Activator
+  -   Understand triggers, conditions, and actions in Data Activator.
 
-  -   Get data from Power BI Reports and EventStreams with Data Activator
+  -   Get data from Power BI Reports and EventStreams with Data Activator.
 
-  -   Assign data and create triggers in Data Activator
+  -   Assign data and create triggers in Data Activator.
 
-  -   Interact with Real-Time Intelligence
+  -   Interact with Real-Time Intelligence.
+
 prerequisites: Before starting this module, you should be familiar with Microsoft Fabric. Familiarity with Power BI and EventStreams may be helpful.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
