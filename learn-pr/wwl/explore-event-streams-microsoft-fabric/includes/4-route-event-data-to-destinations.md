@@ -97,7 +97,7 @@ Earlier, we mentioned the **Group by** operator in the event processor editor. T
      ![Screenshot of the sliding window concept.](./../media/sliding-window.png)
  
     > [!NOTE]
-> All of the tweets belong to the same topic in this scenario
+    > All of the tweets belong to the same topic in this scenario
 
   - **session windows** simply divides events into variable and nonoverlapping intervals that are based on a gap of lack of activity.
     

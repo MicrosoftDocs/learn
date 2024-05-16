@@ -6,7 +6,7 @@ Microsoft Fabric event streams are a no-code feature that lets you capture and s
 
 Microsoft Fabric Event streams work by creating a pipeline of events from multiple internal and external sources to different destinations. You can think of it as a conveyor belt that moves data from one place to another. You can also add some transformations to the data along the way, such as filtering, aggregating, or enriching.
 
-[ ![Screenshot of multiple event stream sources and destinations.](../media/real-time-intelligence-eventstream-workflow.png)](../media/real-time-intelligence-eventstream-workflow-large.png)
+[ ![Screenshot of multiple event stream sources and destinations.](../media/real-time-intelligence-eventstream-workflow.png)](../media/real-time-intelligence-eventstream-workflow-large.png#lightbox)
 
 Event stream's Main Editor can be used to design your pipeline by dragging and dropping different nodes, such as sources, destinations, and transformations. You can also see the event data flowing through the pipeline in real-time. Microsoft Fabric event stream handles the scaling, reliability, and security of your event stream automatically. You don’t need to write any code or manage any infrastructure to use Microsoft Fabric event stream.
 
@@ -21,13 +21,13 @@ The main components of Microsoft Fabric event stream are:
 * **Destination**: Destination is where your event data goes to. You can pick KQL database or lakehouse as your destination type. You can also give the table name and the schema mapping of your destination.
 * **Main Editor**: Main Editor is the place where you can add and manage your sources and destinations. You can also see the event data, check the data insights, and view logs for each source or destination. Each source or destination shows up as a tile (node) in the place. The Fabric event streams feature supports sending data to diverse destinations, such as Lakehouse, KQL database, Reflex, and Custom App. You can attach multiple destinations in an event stream to simultaneously receive data from your event streams without interfering with each other.
 
- [![Screenshot of Main Editor with components.](../media/event stream-components-from-main-editor.png)](../media/eventstream-components-from-main-editor-large.png)
+ [ ![Screenshot of Main Editor with components.](../media/eventstream-components-from-main-editor.png)](../media/eventstream-components-from-main-editor-large.png#lightbox)
 
 ## Main Editor components
 
 Before we dive deeper into event streams, it's important to understand the design canvas known as Main Editor. Understanding Main Editor assists you in your no code development and designing event streams in an efficient and approach that allows for reuse.
 
-[ ![Screenshot of Main Editor elements.](../media/elements-of-main-editor.png)](../media/elements-of-main-editor-large.png)
+[ ![Screenshot of Main Editor elements.](../media/elements-of-main-editor.png)](../media/elements-of-main-editor-large.png#lightbox)
 
 1. **Ribbon**: The ribbon menu provides source and destination options.
 2. **Data navigation pane**: The data navigation pane allows you to navigate the sources and destinations.
