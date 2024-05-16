@@ -4,7 +4,7 @@ Here are the steps to engage with your customers:
 
 - **Create a compelling business profile**: Your business profile is often the first point of contact with potential customers. Ensure your business profile highlights your company's experience with Microsoft-specific offerings, and that it's up-to-date, brief, and informative.
 - **Generate more leads**: Use the **Find a solution provider** search to be discoverable by customers looking for specific solutions. Microsoft sends millions of leads per year to its partners. Make sure your profile is optimized to receive these referrals.
-- **List and market your offer**: Understand the different listing types such as Contact me, Free trial, Test drive, and Get it now, and choose the one that best suits your offer. This helps you align your marketplace offer with the right audience and drive sales more effectively.
+- **List and market your offer**: Understand the different listing types such as **Contact me**, **Free trial**, **Test drive**, and **Get it now**, and choose the one that best suits your offer. This helps you align your marketplace offer with the right audience and drive sales more effectively.
 - **Use marketplace rewards**: Engage with the Microsoft AI Cloud Partner Program and evaluate the marketplace options to publish your offer. This can lead to sales and marketing benefits that help grow your business.
 - **Engage through Partner Center**: Use the Partner Center to manage your partnership with Microsoft, which facilitates transactions, promotes relationship building, and offers analytics to track your success.
 - Tap into Microsoft's marketing resources**: Access marketing resources provided by Microsoft to learn about best practices and how to use them effectively to participate in the ecosystem of customers, partners, and sellers.
@@ -55,7 +55,7 @@ If you want more information about leads, see [Customer leads from your marketpl
 
 Listing options define how easily a customer can find, try, purchase, and deploy your solution online. There are four primary options: [Contact me](#contact-me), [Free trial](#free-trial), [Bring your own license (BYOL)](#bring-your-own-license), and [Transact](#transact).
 
-### Contact Me
+### Contact me
 
 **Contact me** is a simple listing of your solution with the lowest level of engagement with potential customers, and the lowest level of investment in the commercial marketplace by your organization. With this listing type, you can add text description, product screenshots, supporting documents, and optional video content to your offer's landing page.
 
