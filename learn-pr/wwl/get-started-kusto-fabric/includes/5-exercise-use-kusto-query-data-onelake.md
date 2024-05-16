@@ -6,4 +6,4 @@ Now it's your chance to build an event house that contains a KQL database then r
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2260722)
+[![Icon for Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2260722)
