@@ -1,3 +1,5 @@
+*Governance* is a large subject, and it might be intimidating at first. Governance seeks to establish the proper scope of corporate actions by mitigating tangible risks through corporate policy.
+
 Poor governance policies create unnecessary constraints, and they might not protect the company. This unit evaluates ways to create proper, actionable corporate policies.
 
 ## Tailwind Traders' improper corporate policy
@@ -13,6 +15,7 @@ Corporate policies are designed to instruct teams on the best way to address tan
 When you evaluate existing corporate policies to apply them to the cloud or to any other new technology, you should be able to answer the following questions:
 
 - What risk does this policy attempt to mitigate?
+
 - Why is that risk not within organizational risk tolerance?
 - Who determined that the risk isn't tolerable?
 - When should this policy be applied (workload classification, situational, and so on)? When should exceptions be reviewed?
@@ -23,7 +26,7 @@ As you'll learn in the next unit, the Tailwind Traders policy on protected data 
 
 ## Incorporate cloud governance policies
 
-Defining corporate policy requires a focus on identifying and mitigating business risks, regardless of the cloud platform the organization uses. Healthy cloud-governance strategy begins with sound corporate policy. The following three-step process guides the iterative development of sound corporate policies:
+Defining corporate policy requires a focus on identifying and mitigating business risks, regardless of the cloud platform the organization uses. Healthy cloud-governance strategy begins with sound corporate policy. The following four-step process guides the iterative development of sound corporate policies:
 
 | &nbsp; | &nbsp;  |
 |--|--|
@@ -36,12 +39,26 @@ Defining corporate policy requires a focus on identifying and mitigating busines
 
 ## Assess cloud risks
 
+
+
 During cloud adoption, you encounter various risks. Here are some examples of risks that might evolve at different points of your adoption effort:
 
 - During early experimentation, a few assets with little to no relevant data are deployed. The risk is small.
 - When the first workload is deployed, risk increases a little. This risk is easily remediated by choosing an inherently low-risk application that has a small user base.
 - As more workloads come online, risks change at each release. New applications go live, and risks change.
 - When a company brings the first 10 or 20 applications online, the risk profile is much different than when the thousandth application goes into production in the cloud.
+
+## Example risks and high-risk areas
+
+To determine which risks are a top priority, consider the following high-risk areas:
+
+| &nbsp; | &nbsp; |
+|--|--|
+| <br> :::image type="content" source="../media/cost-management-icon.png" alt-text="Cost management icon." border="false"::: | <br> **Cost management**: Cost is a primary concern for cloud users. Develop policies for cost control for all cloud platforms. |
+| <br> :::image type="content" source="../media/security-baseline-icon.png" alt-text="Security baseline icon." border="false"::: | <br> **Security**: Security is a complex subject that's unique to each company. Once security requirements are established, cloud-governance policies and enforcement apply those requirements across network, data, and asset configurations.|
+| <br> :::image type="content" source="../media/identity-baseline-icon.png" alt-text="Identity baseline icon." border="false"::: | <br> **Identity**: Inconsistencies in the application of identity requirements can increase the risk of breach. The Identity Baseline discipline focuses on ensuring that identity is consistently applied across cloud-adoption efforts. |
+| <br> :::image type="content" source="../media/resource-consistency-icon.png" alt-text="Resource consistency icon." border="false"::: | <br> **Resource consistency**: Cloud operations depend on consistent resource configuration. Through governance tooling, resources can be configured consistently to manage risks related to onboarding, drift, discoverability, and recovery. |
+| <br> :::image type="content" source="../media/deployment-acceleration-icon.png" alt-text="Deployment acceleration icon." border="false"::: | <br> **Deployment acceleration**: Centralization, standardization, and consistency in approaches to deployment and configuration improve governance practices. When provided through cloud-based governance tooling, they create a cloud factor that can accelerate deployment activities. |
 
 Risk is relative. A small company with a few IT assets in a building that's offline has little risk. Add users and an internet connection with access to those assets, and the risk intensifies. When that small company grows to Fortune 500 status, the risks are exponentially greater. As revenue, business processes, employee counts, and IT assets accumulate, risks increase and coalesce. IT assets that help generate revenue are at tangible risk of stopping that revenue stream if an outage occurs. Every moment of downtime equates to loss. Likewise, as data accumulates, the risk of harm to customers grows.
 
@@ -89,3 +106,4 @@ You can automate each of these triggers and actions by using Azure governance to
 After establishing your cloud policy statements and drafting a design guide, you need to create a strategy to ensure that your cloud deployment stays in compliance with your policy requirements. This strategy must encompass your cloud-governance team's ongoing review and communication processes. This strategy must encompass your cloud-governance team's ongoing review and communication processes and establish criteria for when policy violations require action. It must also define the requirements for automated monitoring and compliance systems that detect violations and trigger remediation actions.
 
 In the next unit, we'll group these types of risks into actionable cloud disciplines.
+

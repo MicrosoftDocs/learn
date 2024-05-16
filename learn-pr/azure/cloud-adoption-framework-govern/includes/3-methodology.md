@@ -1,29 +1,33 @@
-Implementing proper cloud governance requires proper business policy, protective guardrails, and skilled people taking a consistent, disciplined approach to governance.
+To implement proper cloud governance, you need proper business policy, protective guardrails, and skilled people taking a consistent, disciplined approach to governance.
 
 ## Build governance maturity
 
-This unit explains the four-step process in the Cloud Adoption Framework to build a mature cloud-governance solution:
+Adhere to the following steps to build a mature cloud-governance solution:
 
-1. **Methodology**: Understand the underlying methodology
-1. **Governance benchmark**: Assess your current-state and future-state needs
-1. **Governance foundation**: Establish your governance foundation by using a set of governance tools
-1. **Mature governance disciplines**: Iteratively add governance controls to address risks
+1. **Understand the methodology**: Understand the underlying methodology.
 
-These steps get you started using the Govern methodology in the cloud. They also set you on a path to mature governance discipline as your cloud adoption plan progresses.
+1. **Determine your governance benchmark**: Assess your current-state and future-state needs.
+1. **Establish your governance foundation**: Use governance tools to establish your governance foundation.
+1. **Make continuous improvements**: Iteratively add governance controls to address risks.
 
-## Govern methodology
+Use these steps to get started with the Govern methodology in the cloud, and follow a path to mature governance security when your cloud adoption plan progresses.
 
-The Govern methodology provides a structured approach to building the governance maturity that's required for confidence in cloud adoption.
+## Use the Govern methodology
 
-\<new image that shows Govern methodology overview>
+The Govern methodology provides a structured approach that you can use to establish and optimize governance in Azure. The govern methodology consists of five steps:
 
-## Corporate policy
+1. Build a cloud governance team.  
 
-*Governance* is a large subject, and it might be intimidating at first. Governance seeks to establish the proper scope of corporate actions by mitigating tangible risks through corporate policy.
+1. Assess cloud risks.
+1. Document cloud governance policies.
+1. Enforce cloud governance policies.
+1. Monitor cloud governance.
 
-\<new content>
+:::image type="content" source="../media/govern.svg" alt-text="Diagram that shows the Govern methodology." lightbox="../media/govern.svg" border="false":::
 
-## Cloud governance assessment \<replacement for benchmark tool>
+## Build a cloud governance team
+
+## Assess your cloud governance
 
 The Cloud Adoption Framework provides a cloud governance assessment to help you identify gaps in the governance disciplines and corporate policy in your organization.
 
@@ -40,9 +44,3 @@ Azure includes a suite of governance tools that are built on top of the Azure Re
 *Figure 3: The Azure Resource Manager tools that support governance, with a focus on Azure Policy and Azure Blueprints.*
 
 In later units, you apply these tools to create a governance foundation for Tailwind Traders.
-
-\<deleted standard and complex governance guides>
-
-## \<deleted section that referenced disciplines and standard/complex guides>
-
-Later in this module, we discuss each discipline from the Cloud Adoption Framework Govern methodology and relate them to Tailwind Traders' customer narrative.

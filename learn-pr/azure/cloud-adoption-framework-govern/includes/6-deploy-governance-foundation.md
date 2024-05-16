@@ -72,6 +72,7 @@ There are several technical and nontechnical reasons to scale with multiple subs
 The following questions might help illustrate reasons for you to scale your subscriptions:
 
 - Are there capacity or technical limitations?
+
 - Do you need to clearly separate concerns? For example:
   - Separation of duties
   - Dev/test versus generic nonproduction
@@ -117,32 +118,6 @@ For guidance on applying a policy, check out the tutorial on [creating and manag
 
 > [!IMPORTANT]
 > Step 9 in the [tutorial](/azure/governance/policy/tutorials/create-and-manage#assign-a-policy?azure-portal=true) illustrates **Policy enforcement**. As you learn about governance, be sure to set **Policy enforcement** to **Disabled**. When this setting is disabled, you can audit your environment without making any changes, and it won't prevent future deployments.
-
-## Deployment acceleration
-
-Packaging all the governance change in a blueprint accelerates deployments and creates consistent governance application. When we assign a blueprint in the next exercise, governance is consistently applied to all subscriptions in the assigned management group. It's also applied to all resource groups and assets in those subscriptions.
-
-### Exercise: Assign the CAF Foundation blueprint
-
-Use Azure Blueprints to package Azure Resource Manager templates, Azure policies, and role-based access control settings into a single package. The Cloud Adoption Framework for Azure (CAF) Foundation blueprint provides an example and a starting point for using blueprints in cloud governance to:
-
-- Deploy Azure Key Vault
-- Deploy Log Analytics in Azure Monitor Logs
-- Deploy Microsoft Defender for Cloud (standard version)
-
-The CAF Foundation blueprint also defines and deploys policies to:
-
-- Apply `cost center` tags to resource groups
-- Append resources in resource group with the `cost center` tag
-- Permit an Azure region for resources and resource groups
-- Permit storage account SKUs (choose when deploying)
-- Permit Azure Virtual Machines SKUs (choose when deploying)
-- Require Azure Network Watcher to be deployed
-- Require secure transfer encryption for Azure Storage accounts
-- Deny resource types (choose when deploying)
-- Create an initiative to enable monitoring in Microsoft Defender for Cloud (89 policies)
-
-Follow the prescribed steps to [publish and assign this sample blueprint to your management group](/azure/governance/blueprints/samples/caf-foundation/deploy?azure-portal=true).
 
 ### Exercise: Evaluate a current environment
 
