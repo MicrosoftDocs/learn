@@ -14,7 +14,7 @@ All this information is presented in an easy-to-digest format, ensuring seamless
 
 The Microsoft Fabric Real-Time Intelligence experience's event streams feature allows for seamless integration of real-time events into Fabric. You can create an eventstream, which is an instance within Fabric, add sources of event data, apply optional transformations to the data, and route it to various destinations, all without the need for coding. This no-code approach simplifies the process of managing event data within Fabric.
 
-![Screenshot of Event stream sources.](../media/event-stream-sources.png)
+[ ![Screenshot of Event stream sources.](../media/event-stream-sources.png)](../media/event-stream-sources-large.png#lightbox)
 
 ## Processing events within event streams
 
@@ -53,6 +53,6 @@ When you choose the enhanced capabilities, you're able to use the standard desti
 
 You're now able to attach to multiple destinations within an event stream at the same time without impacting or colliding with each other.
 
-![Screenshot of Simultaneous event streams.](../media/real-time-events-workflow.png)
+[ ![Screenshot of Simultaneous event streams.](../media/real-time-events-workflow.png)](../media/real-time-events-workflow-large.png#lightbox)
 
 
