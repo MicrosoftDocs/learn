@@ -12,6 +12,6 @@ Copilots have the potential to revolutionize the way we work by helping with fir
 
 In general, you can categorize industry and personal Copilot adoption into three buckets: off-the-shelf use, extending Microsoft Copilot, and custom development. 
 
-1. You can use off-the-shelf copilots, like Microsoft Copilot for Microsoft 365 to empower users and increase their productivity.
-2. You can extend Microsoft Copilot to support custom business processes or tasks, using your own data to control how Copilot responds to user prompts in your organization.
-3. You can build custom copilots to integrate generative AI into business apps or to create unique experiences for your customers. 
+- You can use off-the-shelf copilots, like Microsoft Copilot for Microsoft 365 to empower users and increase their productivity.
+- You can extend Microsoft Copilot to support custom business processes or tasks, using your own data to control how Copilot responds to user prompts in your organization.
+- You can build custom copilots to integrate generative AI into business apps or to create unique experiences for your customers. 
