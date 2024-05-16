@@ -2,7 +2,7 @@
 uid: learn.wwl.create-real-time-dashboards-microsoft-fabric
 metadata:
   title: Create real time dashboards with Microsoft Fabric
-  description: "A dashboard is like a control center for Real-Time Intelligence. It contains different sections, or &quot;tiles,&quot; that can be spread out over several pages. Each tile shows live, up-to-date information based on a specific question or &quot;query&quot; you have. With Kusto Query Language (KQL), you can take these questions and turn them into visuals on your dashboard, and you can change both the questions and how they look anytime. This Real-Time Intelligence dashboard is great because it lets you explore data easily and shows you the latest info super fast and in a way that's easy to understand."
+  description: "Real-Time Dashboards can fetch data from various sources, provide visual representations, and update automatically. This dashboard should be easy to use, accessible, and secure. It should also allow for data exploration, filtering, and drill-down capabilities. This scenario is common in many industries where real-time data analysis is crucial for decision-making."
   ms.date: 05/14/2024
   author: wwlpublish
   ms.author: jamesh
@@ -17,7 +17,7 @@ abstract: |
  - Understand some of its advanced features.
  - Apply some best practices for effective use.
  - Have hands-on experience in a lab exercise.
- 
+
 prerequisites: Familiarity with Microsoft Fabric.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
