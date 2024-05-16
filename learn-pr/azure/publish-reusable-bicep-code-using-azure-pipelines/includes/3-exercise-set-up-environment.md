@@ -43,7 +43,7 @@ On the Azure DevOps Demo Generator site:
 
 [!INCLUDE [](../../includes/cleanup-steps.md)]
 
-[Clean up the resources](6-exercise-publish-module-registry.md#clean-up-the-resources)
+[Clean up the resources](6-exercise-publish-module-registry#clean-up-the-resources)
 
 ## Clone the repository
 
