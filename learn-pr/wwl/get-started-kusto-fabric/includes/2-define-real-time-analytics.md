@@ -29,7 +29,7 @@ Data insights can be visualized through KQL querysets, Real-Time dashboards, and
 
 Alerts can also be set within the non-table visualizations on the Real-Time Dashboards while in editing mode to provide notifications when an established threshold that you set has been met.
 
-![Screenshot of Real-Time Dashboard alerts.](../media/set-alert-dashboard.png)
+[ ![Screenshot of Real-Time Dashboard alerts.](../media/set-alert-dashboard.png)](../media/set-alert-dashboard-large.png#lightbox)
 
 The alerts can notify you within Microsoft Teams or by sending an email.
 
