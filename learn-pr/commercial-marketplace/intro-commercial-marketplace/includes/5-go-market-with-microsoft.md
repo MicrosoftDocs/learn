@@ -13,7 +13,7 @@ When you engage customers by offering a **Free trial** listing, enabling deploym
 As your commercial marketplace offers hit certain revenue milestones, you're eligible for higher tiers of Marketplace Rewards benefits. Your revenue milestones can be met when customers buy your solutions through Microsoft AppSource, Azure Marketplace, Microsoft's extensive network of resellers, and the various in-product experiences. It's essential to have an active **Transact** offer in the commercial marketplace for you to attain these revenue levels.
 
 The Marketplace Rewards program is designed to support your business development with the commercial marketplace. Microsoft initiates activities aimed at boosting awareness to help secure your first customers, and progressing to more advanced sales and technical benefits as you sell more. All partners who maintain active offers in the commercial marketplace can access these benefits.
-To learn more about the benefits available through this commercial marketplace program, see the reference section at the end of this learn module.
+To learn more about the benefits available through this commercial marketplace program, see the resources section at the end of this learn module.
 
 ## Summary
 

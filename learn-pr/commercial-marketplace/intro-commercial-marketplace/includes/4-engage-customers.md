@@ -11,7 +11,7 @@ Here are the steps to engage with your customers:
 
 By following these steps, you can create a robust engagement strategy that not only attracts customers but also builds lasting relationships with them in the commercial marketplace. Remember to keep your offerings aligned with customer needs and stay proactive in managing your leads and profiles.
 
-Find more details in the reference section at the end of this learning module.
+Find more details in the resources section at the end of this learning module.
 
 ## Engage customers with your marketplace offers
 
@@ -95,6 +95,4 @@ When a customer selects **Get it now**, Microsoft provides you with the customer
 
 :::image type="content" source="..\media\13-get-it-now-example.png" alt-text="Screenshot of the Get it now call to action button from marketplace.":::
 
-Transact offers are billed to an existing Microsoft account or a credit card. For offers that require the use of Azure infrastructure in a customer's Azure account, the associated infrastructure and/or software costs also appear on the customer's consolidated Microsoft invoice. This streamlined billing method is a significant benefit for customers, as they don't need to handle a separate invoice from your company. For more information on listing options, see Introduction to listing options. (See reference section at the end of this learning module.)
-
-For more information on listing options, see [Introduction to listing options](/azure/marketplace/determine-your-listing-type#choose-a-listing-option).
+Transact offers are billed to an existing Microsoft account or a credit card. For offers that require the use of Azure infrastructure in a customer's Azure account, the associated infrastructure and/or software costs also appear on the customer's consolidated Microsoft invoice. This streamlined billing method is a significant benefit for customers, as they don't need to handle a separate invoice from your company.

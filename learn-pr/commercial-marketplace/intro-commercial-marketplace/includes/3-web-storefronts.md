@@ -11,7 +11,7 @@ Azure Marketplace is a comprehensive online store that offers various solutions 
 - Finished software solutions: ready-to-use applications for business operations.
 - Consulting and managed services: expert services for Azure solution deployment and management.
 
-Azure Marketplace simplifies the search for the right solutions with categorized and filterable listings, enabling customers to easily build on their existing Azure cloud infrastructure. The Azure Marketplace online store link can be found at the end of this learn module.
+Azure Marketplace simplifies the search for the right solutions with categorized and filterable listings, enabling customers to easily build on their existing Azure cloud infrastructure. The Azure Marketplace online store link can be found in the resources section at the end of this module.
 
 :::image type="content" source="..\media\2-azure-marketplace-homepage.png" alt-text="Screenshot of the Azure Marketplace homepage with emphasis on apps and consulting services buttons.":::
 

@@ -11,3 +11,4 @@ In this module, you'll:
 - Understand the distinct purposes of the two storefronts: Microsoft AppSource and Azure Marketplace.
 - Understand the range of solutions offered in Microsoft AppSource and Azure Marketplace, and how they serve the business needs of a global customer base.
 - Learn the go-to-market strategies by selling your cloud solutions and services through the commercial marketplace.
+- Find a list of resources to help you further explore the commercial marketplace and its benefits.
