@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-kusto-fabric.define-real-time-analytics
-title: What is Synapse Real-Time Analytics?
+title: Describe Microsoft Fabric Real-Time Intelligence?
 metadata:
-  title: What is Synapse Real-Time Analytics?
-  description: "What is Synapse Real-Time Analytics?"
-  ms.date: 01/09/2024
+  title: Describe Microsoft Fabric Real-Time Intelligence?
+  description: "What is Microsoft Fabric Real-Time Intelligence?"
+  ms.date: 05/14/2024
   author: wwlpublish
-  ms.author: anrudduc
+  ms.author: jamesh
   ms.topic: unit
   ms.custom:
   - build-2023
   - build-2023-dataai
   - build-2023-fabric
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/2-define-real-time-analytics.md)]
