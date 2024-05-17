@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.manage-data-retention-microsoft-365.compare-use-of-preservation-lock,-preservation-hold-pegulatory-retention-policie
+uid: learn.wwl.manage-data-retention-microsoft-365.explain-retention-teams
 title: Explain retention in Microsoft Teams
 metadata:
   title: Explain retention in Microsoft Teams
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-explain-retention-teams.md)]
+  [!include[](includes/explain-retention-teams.md)]

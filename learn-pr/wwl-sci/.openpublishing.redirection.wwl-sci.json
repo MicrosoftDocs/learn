@@ -64,6 +64,21 @@
         "source_path_from_root": "/learn-pr/wwl-sci/apply-manage-sensitivity-labels/apply-protections-restrictions-to-email-files.md",
         "redirect_url": "https://learn.microsoft.com/training/modules/apply-manage-sensitivity-labels/",
         "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/manage-data-retention-microsoft-365/1-introduction.md",
+        "redirect_url": "/training/modules/manage-data-retention-microsoft-365/introduction",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/manage-data-retention-microsoft-365/3-explain-retention-sharepoint-online-onedrive-for-business.md",
+        "redirect_url": "/training/modules/manage-data-retention-microsoft-365/explain-retention-sharepoint-online-onedrive",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/manage-data-retention-microsoft-365/4-explain-retention-teams.md",
+        "redirect_url": "/training/modules/manage-data-retention-microsoft-365/explain-retention-teams",
+        "redirect_document_id": false
       }
     ]
 }
