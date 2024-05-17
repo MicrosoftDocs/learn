@@ -1,4 +1,4 @@
-In this module you learnt the core concepts of Playwright for automated end to end testing and then you:
+In this module you learned the core concepts of Playwright for automated end to end testing and then you:
 
 * Installed Playwright and ran the example tests
 * Explored the HTML report

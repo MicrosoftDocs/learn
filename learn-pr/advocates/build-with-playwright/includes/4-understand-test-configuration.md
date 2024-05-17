@@ -224,7 +224,7 @@ Playwright has a [`use` property](https://playwright.dev/docs/test-use-options) 
 
 These options can be set globally, in the config file (for all tests) or locally for a specific test or group of tests only.
 
-To turn on traces and take a screenshot for our projects, let's try to `use` the Recording feature. It allows us get a visual and system level understanding of what happens in test execution. Update the top-level `use` object in your `playwright.config.ts` as follows:
+To turn on traces and take a screenshot for our projects, let's try to `use` the Recording feature. It allows us to get a visual and system level understanding of what happens in test execution. Update the top-level `use` object in your `playwright.config.ts` as follows:
 
 ```js
 export default defineConfig({
