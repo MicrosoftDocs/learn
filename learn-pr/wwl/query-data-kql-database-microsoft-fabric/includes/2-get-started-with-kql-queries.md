@@ -10,7 +10,7 @@
     > The use of SQL or SQL Functions within a KQL Queryset removes the ability to build Power BI Reports with it
 
 1. To create a KQL Queryset, you can go to any section within Microsoft Fabric and select the **Create button** and then scroll to **Create KQL Queryset** as shown in the example, which starts from the **Data Engineering** section.
-[ ![Screenshot of KQL Queryset from within Data Engineering section.](../media/create-kql-queryset.png) ](../media/create-kql-queryset-large.png#lightbox)
+[ ![Screenshot of KQL Queryset from within Data Engineering section.](../media/create-kql-queryset-small.png)](../media/create-kql-queryset-large.png#lightbox)
     - **Basic Query**: A basic KQL query follows the pattern: `<table_name> | where <condition> | project <columns>`.
     - **Functions and Operators**: KQL supports various operators for arithmetic, comparison, logical operations, and string manipulations.
     - **Advanced Querying**: Once you have a good grasp of the basics, you can move on to more advanced querying techniques such as aggregations, joins, and subqueries.
@@ -30,7 +30,7 @@ You can use these queries to practice and get comfortable with the basics of KQL
 
 Within Microsoft Fabric KQL Database, you can use the primary language of Kusto Query Language (KQL) or Transact-Structured Query Language (T-SQL), and you can use the data to build Power BI Reports. 
 
-[ ![Screenshot of K Q L Query with highlighted element of publishing to Power B I. ](../media/kql-queryset-pbi-build.png) ](../media/kql-queryset-pbi-build-expanded.png#lightbox)
+[ ![Screenshot of K Q L Query with highlighted element of publishing to Power B I. ](../media/kql-queryset-pbi-build.png)](../media/kql-queryset-pbi-build-expanded.png#lightbox)
 
 However, there are advantages to each and in the case of a KQL database, KQL is the preferred language. More comparisons follow:
 
@@ -95,7 +95,7 @@ One new feature within the Microsoft Real-Time Intelligence tooling is the abili
 
 When your administrator enables Copilot, you see the option in the top menubar of your querysets. When you ask a question about your data, Copilot generates the KQL Code to answer your question. You can create several queries within the queryset using this no-code approach to gather useful information for user consumption.
 
-[ ![Screenshot of Nocode Copilot approach using Querysets](../media/copilot-small.png) ](../media/copilot-large.png#lightbox)
+[ ![Screenshot of Nocode Copilot approach using Querysets](../media/copilot-small.png)](../media/copilot-large.png#lightbox)
 
 Once you have queries within the queryset, you can then Pin them to an existing dashboard or create a new dashboard. To accomplish this, select the queries you want pinned, and then select the **Pin to dashboard**. This gives you a window to perform other actions by:
  - Selecting the Copilot button on the menubar.
