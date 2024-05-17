@@ -137,7 +137,7 @@ To open last HTML report run:
 
 Let's run the `show-report` command and note how the report now only shows us the two tests on the one browser.
 
-:::image type="content" source="../media/run-report-one-project.png" alt-text="A screenshot of an HTML report showing 2 test files.":::
+:::image type="content" source="../media/run-report-one-project.png" alt-text="A screenshot of an HTML report showing 2 test files from Playwright.":::
 
 ## Explore Emulation
 
@@ -275,7 +275,7 @@ Let's look at the detailed view of one of our tests using the `chromium` project
 
 1. Most importantly, we get a link to a trace of our test. To open the trace, select on the trace icon in the list view or the image of the trace when in the detail view of the test. 
 
-:::image type="content" source="../media/run-use-report-trace.pn" alt-text="A screenshot showing the link to the trace of our test from the report.":::
+:::image type="content" source="../media/run-use-report-trace.png" alt-text="A screenshot showing the link to the trace of our test from the report.":::
 
 1. The trace gives us a detailed view of our test. From there, we can easily step through each action and explore the network requests, console and even pop out the DOM snapshot and inspect it (think debugging). Let's explore in more detail in the next section.
 
