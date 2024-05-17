@@ -4,7 +4,7 @@ title: Deploy Defender for IoT for OT monitoring
 metadata:
   title: Deploy Microsoft Defender for IoT for OT monitoring
   description: Learn how to deploy Defender for IoT to discover and secure IoT and OT devices.
-  ms.date: 05/06/2024
+  ms.date: 05/17/2024
   author: limwainstein
   ms.author: lwainstein
   ms.topic: learning-path
@@ -24,7 +24,7 @@ prerequisites: |
   - A configured network adapter port group that connects to the SPAN port on the virtual switch
   - Access to Wireshark or similar packet capture (PCAPS) file reader
   - A network diagram for your organization
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/defender-iot-deploy-ot-monitoring.svg
 levels:
   - intermediate
 roles:
@@ -39,5 +39,6 @@ modules:
   - learn.defender-iot-prepare-deployment
   - learn.onboard-sensor-microsoft-defender-iot
   - learn.defender-iot-deploy-sensor
+  - learn.defender-iot-fine-tune-deployment
 trophy:
   uid: learn.defender-iot-deploy-ot-monitoring.trophy
