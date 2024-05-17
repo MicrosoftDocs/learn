@@ -8,7 +8,7 @@ This module demonstrates how to evaluate and respond to risks and implement guar
 
 In this module, you'll:
 
-- Learn about the Govern methodology.
+- Learn about the Cloud Adoption Framework Govern methodology.
 - Build a cloud governance team to oversee cloud governance.
 - Assess cloud risks to determine which policies to implement.
 - Document cloud governance policies to ensure transparency.

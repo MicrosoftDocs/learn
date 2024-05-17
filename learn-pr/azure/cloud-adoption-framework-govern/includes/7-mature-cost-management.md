@@ -23,7 +23,7 @@ The objective of this discipline is to apply these cost-management best practice
 
 Cost management across the enterprise is a function of cloud governance and cloud operations. All cost-management decisions change the assets that support a workload. When those changes affect a workload's architecture, other considerations are required to minimize the impact on users and business functions. It's likely that the cloud-adoption team that configured or developed that workload is accountable for following through with those changes.
 
-- **Tagging is critical to all governance**: Make sure that all workloads and resources follow [proper naming and tagging conventions](/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging?azure-portal=true) and that you [enforce tagging conventions by using Azure Policy](/azure/governance/policy/tutorials/govern-tags?azure-portal=true).
+- **Tagging is critical to all governance**: Make sure that all workloads and resources follow [proper naming and tagging conventions](/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging) and that you [enforce tagging conventions by using Azure Policy](/azure/governance/policy/tutorials/govern-tags).
 
 - **Identify right-size opportunities**: Review your current resource utilization and performance requirements across the environment.
 - **Resize**: Modify each resource to use the smallest instance or SKU that can support the performance requirements of each resource.
@@ -33,7 +33,7 @@ Cost management across the enterprise is a function of cloud governance and clou
 
 The following best practices typically are achieved by a member of the cloud-governance or cloud-operations team in accordance with patching and other scheduled maintenance processes. These best practices map to actionable guidance we describe later in this unit.
 
-- **Tagging is critical to all governance**: Ensure that all workloads and resources follow [proper naming and tagging conventions](/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging?azure-portal=true) and that you [enforce tagging conventions by using Azure Policy](/azure/governance/policy/tutorials/govern-tags?azure-portal=true).
+- **Tagging is critical to all governance**: Ensure that all workloads and resources follow [proper naming and tagging conventions](/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging) and that you [enforce tagging conventions by using Azure Policy](/azure/governance/policy/tutorials/govern-tags).
 
 - **Identify right-size opportunities**: Review your current resource utilization and performance requirements across the environment to identify resources that have remained underutilized for more than 90 days.
 - **Right-size provisioned SKUs**: Modify underutilized resources to use the smallest instance or SKU that can support the performance requirements of each resource.
@@ -46,7 +46,7 @@ The following best practices typically are achieved by a member of the cloud-gov
 
 ### Workload cost management best practices
 
-Before making architectural changes, consult the technical lead for the workload. Facilitate a review of the workload by using the [Azure Well-Architected Framework overview](/azure/architecture/framework/?azure-portal=true) and [introduction](/training/modules/azure-well-architected-introduction/?azure-portal=true) to guide decisions about the following architectural changes:
+Before making architectural changes, consult the technical lead for the workload. Facilitate a review of the workload by using the [Azure Well-Architected Framework overview](/azure/architecture/framework/) and [introduction](/training/modules/azure-well-architected-introduction/) to guide decisions about the following architectural changes:
 
 - **Azure App Service**: Verify production requirements for any Premium tier App Service plan. Without an understanding of the business requirements for a workload and the underlying assets configuration, it's difficult to determine whether a Premium tier plan is required.
 
@@ -74,19 +74,20 @@ Microsoft Cost Management brings together resource organization, Azure Advisor a
 
 ### Exercise: Create a budget
 
-To get started with Microsoft Cost Management, create your first budget with the [Create and manage Azure budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?azure-portal=true) tutorial.
+To get started with Microsoft Cost Management, create your first budget with the [Create and manage Azure budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets) tutorial.
 
 ### Exercise: Find opportunities to optimize
 
-If you have existing deployments in your Azure environment, you likely have recommendations in the Azure portal that might affect your overall spending. Complete the [Optimize costs from recommendations](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?azure-portal=true) tutorial to view recommendations from Azure Advisor and other recommendations that might reduce your costs. The recommendations identify opportunities to apply the operational best practices described in this unit.
+If you have existing deployments in your Azure environment, you likely have recommendations in the Azure portal that might affect your overall spending. Complete the [Optimize costs from recommendations](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations) tutorial to view recommendations from Azure Advisor and other recommendations that might reduce your costs. The recommendations identify opportunities to apply the operational best practices described in this unit.
 
 ### Exercise: Limit cost risks by using Azure Policy
 
 To proactively limit unexpected costs, you can use Azure Policy to create guardrails that affect the ability of any role to overspend. The two most common cost risks come from misunderstood decisions:
 
 - **Azure regions**: Asset costs vary between Azure regions. When possible, you can use Azure Policy to limit deploying resources across regions.
+
 - **Azure SKUs**: The SKU that's selected during deployment directly affects costs. Minimizing the use of expensive resources in self-service or workload-owned subscriptions can limit surprise budget overrun.
 
-Add a policy to [deny VM SKUs](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fcccc23c7-8427-4f53-ad12-b6a63eb452b3?azure-portal=true) in your nonproduction environments to see this type of cost control policy in action.
+Add a policy to [deny VM SKUs](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fcccc23c7-8427-4f53-ad12-b6a63eb452b3) in your nonproduction environments to see this type of cost control policy in action.
 
-Add a policy to specify [allowed locations](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fe56962a6-4747-49cd-b67b-bf8b01975c4c?azure-portal=true) for specific subscriptions to avoid cost drift related to regional pricing.
+Add a policy to specify [allowed locations](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fe56962a6-4747-49cd-b67b-bf8b01975c4c) for specific subscriptions to avoid cost drift related to regional pricing.

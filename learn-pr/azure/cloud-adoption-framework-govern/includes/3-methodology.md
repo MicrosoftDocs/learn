@@ -1,20 +1,20 @@
-To implement proper cloud governance, you need proper business policy, protective guardrails, and skilled people taking a consistent, disciplined approach to governance.
+To implement proper cloud governance, Tailwind Traders needs proper business policy, protective guardrails, and skilled people that take a consistent, disciplined approach to governance.
 
 ## Build governance maturity
 
 Adhere to the following steps to build a mature cloud-governance solution:
 
-1. **Understand the methodology**: Understand the underlying methodology.
+1. **Understand the Govern methodology**: Understand the underlying methodology.
 
 1. **Determine your governance benchmark**: Assess your current-state and future-state needs.
 1. **Establish your governance foundation**: Use governance tools to establish your governance foundation.
 1. **Make continuous improvements**: Iteratively add governance controls to address risks.
 
-Use these steps to get started with the Govern methodology in the cloud, and follow a path to mature governance security when your cloud adoption plan progresses.
+Use these steps to get started with the Govern methodology in the cloud, and follow a path to mature governance security when your cloud adoption plan progresses.*
 
 ## Use the Govern methodology
 
-The Govern methodology provides a structured approach that you can use to establish and optimize governance in Azure. Use this methodology to prevent problems that can block your progress, like Tailwind Traders' policy that doesn't align with their cloud adoption plans. The govern methodology consists of five steps:
+The Govern methodology provides a structured approach that you can use to establish and optimize governance in Azure. The govern methodology consists of five steps:
 
 1. Build a cloud governance team.  
 
