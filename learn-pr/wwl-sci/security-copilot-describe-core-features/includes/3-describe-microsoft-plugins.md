@@ -7,7 +7,7 @@ One of the mechanisms by which Copilot integrates to these various sources is th
 
 Microsoft plugins give Copilot access to information and capabilities from within your organization's Microsoft products. The image that follows shows only a subset of the available Microsoft plugins and the order in which the plugins are listed may vary from what is displayed in the product.
 
-:::image type="content" source="../media/plugins-microsoft-updated-list-v3.png" lightbox="../media/plugins-microsoft-updated-list-v3.png" alt-text="Screen capture of the Manage plugins window that shows the Microsoft services.":::
+:::image type="content" source="../media/microsoft-plugins.png" lightbox="../media/microsoft-plugins.png" alt-text="Screen capture of the Manage plugins window that shows the Microsoft services.":::
 
 Generally speaking, Microsoft plugins in Copilot use the OBO (on behalf of) model – meaning that  Copilot knows that a customer has licenses to specific products and is automatically signed into those products. Copilot can then access the specific products when the plugin is enabled and, where applicable, parameters are configured. Some Microsoft plugins that require setup, as noted by the settings icon or the set up button, may include configurable parameters that are used for authentication in-lieu of the OBO model.
 
