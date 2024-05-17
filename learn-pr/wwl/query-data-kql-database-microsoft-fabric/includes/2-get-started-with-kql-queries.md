@@ -10,7 +10,7 @@
     > The use of SQL or SQL Functions within a KQL Queryset removes the ability to build Power BI Reports with it
 
 1. To create a KQL Queryset, you can go to any section within Microsoft Fabric and select the **Create button** and then scroll to **Create KQL Queryset** as shown in the example, which starts from the **Data Engineering** section.
-[ ![Screenshot of K Q L Queryset from within Data Engineering section.](../media/create-kql-queryset.png) ](../media/create-kql-queryset-large.png#lightbox)
+[ ![Screenshot of KQL Queryset from within Data Engineering section.](../media/create-kql-queryset.png) ](../media/create-kql-queryset-large.png#lightbox)
     - **Basic Query**: A basic KQL query follows the pattern: `<table_name> | where <condition> | project <columns>`.
     - **Functions and Operators**: KQL supports various operators for arithmetic, comparison, logical operations, and string manipulations.
     - **Advanced Querying**: Once you have a good grasp of the basics, you can move on to more advanced querying techniques such as aggregations, joins, and subqueries.
@@ -95,7 +95,7 @@ One new feature within the Microsoft Real-Time Intelligence tooling is the abili
 
 When your administrator enables Copilot, you see the option in the top menubar of your querysets. When you ask a question about your data, Copilot generates the KQL Code to answer your question. You can create several queries within the queryset using this no-code approach to gather useful information for user consumption.
 
-[ ![Nocode Copilot approach using Querysets](../media/copilot-small.png) ](../media/copilot-large.png#lightbox)
+[ ![Screenshot of Nocode Copilot approach using Querysets](../media/copilot-small.png) ](../media/copilot-large.png#lightbox)
 
 Once you have queries within the queryset, you can then Pin them to an existing dashboard or create a new dashboard. To accomplish this, select the queries you want pinned, and then select the **Pin to dashboard**. This gives you a window to perform other actions by:
  - Selecting the Copilot button on the menubar.
@@ -103,10 +103,10 @@ Once you have queries within the queryset, you can then Pin them to an existing 
  - Selecting the insert button below the results in Copilot.
  - Selecting the **Pin to dashboard** button in the menubar.
 
-[ ![nocode Copilot pin to dashboard feature](../media/copilot-pin-to-dashboard.png) ](../media/copilot-pin-to-dashboard-large.png#lightbox)
+[ ![Screenshot of Nocode Copilot pin to dashboard feature](../media/copilot-pin-to-dashboard.png) ](../media/copilot-pin-to-dashboard-large.png#lightbox)
 
-> **Note:**
-> You can see in the query that was typed above the resulting Copilot query that there were typographical errors and it recognized the source tables names which didn't directly allign to your question as it was able to understand the utterances by the user.
+> [!NOTE]
+> You can see in the query that was typed above the resulting Copilot query that there were typographical errors and it recognized the source tables names which didn't directly align to your question as it was able to understand the utterances by the user.
 
 
 You also have the ability to add a queryset query to a Power BI Report by highlighting your preferred query and then selecting the **Build PowerBI report**. This provides you with an empty Power BI report with the query from your selected queryset by:
@@ -115,11 +115,10 @@ You also have the ability to add a queryset query to a Power BI Report by highli
  - Selecting the insert button below the results in Copilot.
  - Selecting the **Build PowerBI report** button in the menubar.
 
-[![Nocode Copilot Build PowerBI Report](../media/copilot-build-powerbi-report.png) ](../media/copilot-build-powerbi-report-large.png#lightbox)
+[![Screenshot of Nocode Copilot Build PowerBI Report](../media/copilot-build-powerbi-report.png) ](../media/copilot-build-powerbi-report-large.png#lightbox)
 
-> **Note:**
+> [!NOTE]
 > You can only select one query at a time using the **Pin to Dashboard** or the **Build PowerBI report** but you can append dashboard elements to existing dashboards.
-
 
 Here are some extra resources:
 
