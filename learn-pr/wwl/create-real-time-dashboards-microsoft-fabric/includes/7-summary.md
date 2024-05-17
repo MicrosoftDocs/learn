@@ -8,7 +8,6 @@ In this module, you have learned about the Real-Time Dashboard in Microsoft Fabr
 The main takeaways from this module include understanding the importance of maintaining clarity and simplicity in your dashboard by using clear labels and avoiding clutter. You also learned about ensuring data relevance to the audience's needs, setting an appropriate autorefresh rate, designing accessible dashboards, and incorporating interactivity features like filters and drill-down capabilities. Additionally, you were taught how to optimize performance by refining queries and visuals, implement proper security measures for data protection, and regularly test the dashboard for functionality and performance issues.
 
 More Reading:
-1. [Getting started with Power BI](/power-bi/guided-learning)
-1. [Creating a dashboard with Azure Data Explorer](/training/modules/create-dashboards-azure-data-explorer/)
-1. [Understanding Kusto Query Language](/azure/data-explorer/kusto/query)/
-(/training/modules/create-dashboards-azure-data-explorer/)
+- [Getting started with Power BI](/power-bi/guided-learning)
+- [Creating a dashboard with Azure Data Explorer](/training/modules/create-dashboards-azure-data-explorer/)
+- [Understanding Kusto Query Language](/azure/data-explorer/kusto/query)

@@ -3,24 +3,23 @@ As a Software as a Service, there are fewer things that you need to worry about 
 There are still some best practices to follow to help your users understand your dashboards, feeds, and other objects within Microsoft Fabric Real-Time Intelligence.
 
 
-1. **Clarity and Simplicity**: Keep the dashboard simple and avoid clutter. 
-    1. Use clear labels for tiles and visuals. 
-    1. Use more pages for navigation or subject area when necessary.
-1. **Relevance**: Ensure that the data displayed is relevant to the dashboard's purpose and the audience's needs.
-1. **Refresh Rate**: Set an appropriate autorefresh rate to ensure data is up-to-date without overloading the system.
-    1. Be sure to work with your users
-    1. Ensure refresh rates are within their expectations.
-1. **Accessibility**: Design dashboards that are accessible to all users, including those with viewer permissions.
-1. **Interactivity**: Include features that allow users to interact with the data, such as filters and drill-down capabilities.
-    1. Elicit feedback regularly to ensure that the reports continue to provide value.
-    1. As users become more familiar with the products, the introduction of new features can enhance their productivity.
-    1. Use Copilot when possible to increase productivity.
-1. **Performance**: Optimize queries and visuals for performance to ensure a smooth user experience.
-    1. Include parameters, which apply filters at the query and are executed during the rendering of the Real-Time Dashboard.
-    1. Don't query more than you use in the visualization to meet the customer requirements.
-1. **Security**: Implement proper security measures 
-    1. Protect sensitive data.
-    2. Remember, Fabric is a Software as a Service (SaaS) solution, and it's critical that you properly manage who has access to the system (Authentication), and what they have access too (Authorization).
-1. **Testing**: Regularly test the dashboard for functionality and performance issues.
-    1. Testing should include user-acceptance testing and feedback loops.
-
+- **Clarity and Simplicity**: Keep the dashboard simple and avoid clutter.
+    - Use clear labels for tiles and visuals. 
+    - Use more pages for navigation or subject area when necessary.
+- **Relevance**: Ensure that the data displayed is relevant to the dashboard's purpose and the audience's needs.
+- **Refresh Rate**: Set an appropriate autorefresh rate to ensure data is up-to-date without overloading the system.
+    - Be sure to work with your users
+    - Ensure refresh rates are within their expectations.
+- **Accessibility**: Design dashboards that are accessible to all users, including those with viewer permissions.
+- **Interactivity**: Include features that allow users to interact with the data, such as filters and drill-down capabilities.
+    - Elicit feedback regularly to ensure that the reports continue to provide value.
+    - As users become more familiar with the products, the introduction of new features can enhance their productivity.
+    - Use Copilot when possible to increase productivity.
+- **Performance**: Optimize queries and visuals for performance to ensure a smooth user experience.
+    - Include parameters, which apply filters at the query and are executed during the rendering of the Real-Time Dashboard.
+    - Don't query more than you use in the visualization to meet the customer requirements.
+- **Security**: Implement proper security measures 
+    - Protect sensitive data.
+    - Remember, Fabric is a Software as a Service (SaaS) solution, and it's critical that you properly manage who has access to the system (Authentication), and what they have access too (Authorization).
+- **Testing**: Regularly test the dashboard for functionality and performance issues.
+    - Testing should include user-acceptance testing and feedback loops.
