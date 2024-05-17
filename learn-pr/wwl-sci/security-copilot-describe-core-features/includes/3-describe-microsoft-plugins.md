@@ -54,6 +54,8 @@ The preview standalone experience in Azure WAF can help you with:
 - Summarizing SQL injection(SQLi) attacks.
 - Summarizing Cross-site scripting(XSS) attacks.
 
+:::image type="content" source="../media/azure-web-application-firewall-capabilities.png" lightbox="../media/azure-web-application-firewall-capabilities.png" alt-text="Screen capture of the Azure Web Application Firewall capabilities that can be run in the standalone experience.":::
+
 Example prompts include:
 
 - Was there a SQL injection attack in my global WAF in the last day?
