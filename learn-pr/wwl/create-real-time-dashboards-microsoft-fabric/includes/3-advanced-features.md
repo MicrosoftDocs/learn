@@ -20,13 +20,13 @@ Then follow the procedure again to rename the page as you continue.
 
 In many cases, you're dealing with large amounts of data and you can improve the performance of the rendering process with the use of parameters. Parameters apply filtering at the query level when your tiles are populated which simplify the results to the user and provide them with a way to explorer your data more effectively.
 
-1. locate and select the ***Parameters*** button on the tool bar.
+1. Locate and select the ***Parameters*** button on the tool bar.
 
     ![Screenshot of Select parameter button to open parameters pane.](../media/add-parameter.png)
 
 2. When the side panel expands, select the ***+ Add parameter***.
 
-    ![Screenshot of Add new parameter](../media/add-parameter-step-2.png)
+    ![Screenshot of Add new parameter.](../media/add-parameter-step-2.png)
 
 3. Configure the parameter to apply a filter to the base query. For more information about the use and configuration of the different kinds of parameters, see [Use parameters in Real-Time Dashboards.](/fabric/real-time-intelligence/dashboard-parameters?branch=main)
 
