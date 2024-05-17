@@ -271,15 +271,15 @@ Let's look at the detailed view of one of our tests using the `chromium` project
 
 1. The detail view includes a screenshot (from page.goto). This is useful for visual regression testing.
 
-:::image type="content" source="../media/run-use-report-screenshot.png" alt-text="A screenshot of a detailed view from page.goto.":::
+   :::image type="content" source="../media/run-use-report-screenshot.png" alt-text="A screenshot of a detailed view from page.goto.":::
 
 1. Most importantly, we get a link to a trace of our test. To open the trace, select on the trace icon in the list view or the image of the trace when in the detail view of the test. 
 
-:::image type="content" source="../media/run-use-report-trace.png" alt-text="A screenshot showing the link to the trace of our test from the report.":::
+   :::image type="content" source="../media/run-use-report-trace.png" alt-text="A screenshot showing the link to the trace of our test from the report.":::
 
 1. The trace gives us a detailed view of our test. From there, we can easily step through each action and explore the network requests, console and even pop out the DOM snapshot and inspect it (think debugging). Let's explore in more detail in the next section.
 
-:::image type="content" source="../media/run-use-report-trace-detail.png" alt-text="A screenshot of the trace of our test.":::
+   :::image type="content" source="../media/run-use-report-trace-detail.png" alt-text="A screenshot of the trace of our test.":::
 
 Let's go back to the report and select one of the tests runs on our Mobile Safari project. The detail page for the mobile project reflects the emulated profile view where once again we can explore the trace for our emulated test. 
 
