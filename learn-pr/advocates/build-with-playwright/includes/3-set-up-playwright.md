@@ -1,7 +1,6 @@
 Let’s begin by installing Playwright, then we explore the tool and validate that we can run the example tests that come when installing Playwright.
 
 ## Installing Playwright
-Start by opening the terminal and creating a new directory for your project. Playwright can be installed in an existing project but for this workshop, we create a new one. Let’s call it learn-playwright.
 
 Start by opening the terminal and creating a new directory for your project. Playwright can also be installed in an existing project but for this workshop we create a new one. Let's call it learn-playwright.
 
@@ -22,6 +21,7 @@ npm init playwright@latest
 ```
 
 When you run this command, you're asked a few questions to configure the Playwright project:
+
 - Select the language you want to use for your tests. We recommend TypeScript.
 - Select the name of the test directory. We recommend tests.
 - Add a GitHub Action for automating tests. We recommend Yes.
@@ -101,17 +101,19 @@ Happy hacking! 🎭
 ```
 
 The output tells us that a new npm project is created with a package.json file, and that Playwright Test is installed. It also tells us the files that have been created:
-1. `playwright.config.ts` - the Playwright Test Configuration file.
-2. `.github/workflows/playwright.yml` - GitHub Action for automating tests
-3. `tests/` - top-level folder that Playwright searches recursively for tests with an example test script.
-4. `tests-examples/` - staging folder with a demo todo app test script to try out.
-5. `package.json` - the NPM project file.
+
+- `playwright.config.ts` - the Playwright Test Configuration file.
+- `.github/workflows/playwright.yml` - GitHub Action for automating tests
+- `tests/` - top-level folder that Playwright searches recursively for tests with an example test script.
+- `tests-examples/` - staging folder with a demo todo app test script to try out.
+- `package.json` - the npm project file.
 
 Next it tells us that Playwright is downloading browsers. Playwright downloads the latest version of the browsers that we can use to run our tests on. It uses browser binaries that are installed locally, so you don't need to have the browsers installed on your machine.
 
 When finished, we get a success message and a list of commands we can run to interact with the Playwright Test project.
 
 ## Validate Playwright Test Runner
+
 To run tests in Playwright, we use the npx playwright test command. The command runs all the tests in the tests/ folder, which is the folder name we defined in step 2 when installing.
 
 ```bash
@@ -143,11 +145,12 @@ We should then get the following message telling us the report is being served l
 Serving HTML report at http://localhost:9323. Press Ctrl+C to quit.
 ```
 
-![A screenshot of a Playwright report](../media/setup-show-report.png)
+:::image type="content" source="../media/setup-show-report.png" alt-text="A screenshot of a Playwright report.":::
 
 The report gives us the following insights:
+
 - We have two test cases ("has title", "get started link")
-- We ran each across three browser engines (chromium, firefox, webkit)
+- We ran each across three browser engines (chromium, Firefox, webkit)
 - The test cases were defined in the ```example.spec.ts``` file
 - The test run took *4.0s* with all six tests passing (none skipped)
 
@@ -161,7 +164,7 @@ Clicking on a particular row gives you the detailed run of that test case. For e
 - The "After Hooks" run last. They take any context *cleanup* actions needed.
 - The test case took "424 ms" to complete.
 
-![A screenshot showing an example of a detailed Playwright spec report](../media/run-report-detail.png)
+:::image type="content" source="../media/run-report-detail.png" alt-text="A screenshot showing an example of a detailed Playwright spec report.":::
 
 To run our test only on the Chromium browser, we can use the `--project` option.
 

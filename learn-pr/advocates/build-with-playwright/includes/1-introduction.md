@@ -5,14 +5,18 @@ Delivering a reliable and consistent user experience in this environment is chal
 Test Automation is the process of using software tools and processes to execute testing strategies with minimal manual involvement and automated repeatable workflows. Test Automation frameworks provide tools, libraries, and rules for developers to execute automated testing plans. Popular options include Selenium, Cypress, and Playwright.
 
 ## Learning Objectives
+
 In this module, you will learn:
+
 * How to use Playwright to test a sample web application. 
 * How to run tests, view test reports, and understand the structure of a Playwright project.
 * How to use Visual Studio Code to run tests, debug tests, and record new tests.
 * How to create a new test suite, and how to refine your tests. 
 
 ## Prerequisites
+
 To get started with Playwright,
+
 * Visual Studio Code installed
 * Latest version of node
 * Latest version of npm

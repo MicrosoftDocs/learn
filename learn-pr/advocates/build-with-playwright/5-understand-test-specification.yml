@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.build-with-playwright.understanding-test-spec
+uid: learn.build-with-playwright.understand-test-specification
 title: Understand Test Specification
 metadata:
   title: Understand Test Specification
@@ -11,4 +11,4 @@ metadata:
   ms.custom: team=cloud_advocates
 durationInMinutes: 9
 content: |
-  [!include[](includes/5-understanding-test-spec.md)]
+  [!include[](includes/5-understand-test-specification.md)]

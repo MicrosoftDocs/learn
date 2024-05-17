@@ -26,7 +26,9 @@ test('text field is cleared when item is added', async ({ page}) => {
 ```
 
 ## Task 2: Add a describe block
+
 Your test file should now look like this:
+
 ```js
 import { test, expect } from '@playwright/test';
 test.describe('New Todo', () => {
@@ -53,7 +55,9 @@ test.describe('New Todo', () => {
 ```
 
 ## Task 3: Add a beforeEach hook
+
 Your test file should now look like this:
+
 ```js
 import { test, expect } from '@playwright/test';
 test.describe('New Todo', () => {
@@ -82,7 +86,9 @@ test.describe('New Todo', () => {
 ```
 
 ## Use BaseURL
+
 Your test file should now look like this:
+
 ```js
 import { test, expect } from '@playwright/test';
 test.describe('New Todo', () => {
@@ -111,6 +117,7 @@ test.describe('New Todo', () => {
 ```
 
 Playwright Config file should look like this:
+
 ```js
 ...
 use: {
@@ -121,7 +128,9 @@ use: {
 ```
 
 ## Create a reusable locator
+
 Your test file should now look like this:
+
 ```js
 import { test, expect } from '@playwright/test';
 test.describe('New Todo', () => {

@@ -1,12 +1,15 @@
 Let’s now dive deeper into the Playwright Test Specification and Configuration. Let’s open the project we created in the previous section in our favorite code editor and explore the files that Playwright installed. We're using Visual Studio Code for the workshop. 
 
 ## Understanding TestConfig
+
 Let’s start by learning about Playwright Test Configuration.
+
 - The playwright.config.ts file defines the default Test Runner configuration.
 - The TestConfig API describes the available configuration properties for customization.
 - The [Playwright Test CLI](https://playwright.dev/docs/test-cli) lets you override config properties or file location at runtime.
 
 Let's see what the default configuration file provided by Playwright (on first setup) looks like. The `playwright.config.ts` snippet is simplified for clarity.
+
 ```js
 import { defineConfig, devices } from '@playwright/test';
 
@@ -52,9 +55,11 @@ We can refer to the [Basic Configuration](https://playwright.dev/docs/test-confi
 - [`projects`](https://playwright.dev/docs/api/class-testconfig) = run tests in multiple configurations (think browsers, emulators, options)
 
 ## Configure Test Dir
+
 The `testDir` property tells Playwright where to look for test files. By default, it's set to `./tests`, which means that Playwright looks for test files in the `tests` folder. If you have your test files in a different folder, you can change this property to point to that folder.
 
 Let's change the testDir property so that Playwright looks for test files in the root of the project.
+
 ```js
 export default defineConfig({
   testDir: '.',
@@ -63,11 +68,13 @@ export default defineConfig({
 ```
 
 Now that we updated the testDir property, let's run the tests again and see what happens.
+
 ```bash
 npx playwright test
 ```
 
 This time, Playwright would look for test files in the root of the project and run the tests.
+
 ```bash
 Running 78 tests using 5 workers
   78 passed (15.4s)
@@ -77,15 +84,17 @@ To open last HTML report run:
 ```
 
 Wow, that's many tests. To see what happened, let's open the HTML report.
+
 ```bash
 npx playwright show-report
 ```
 
-![A screenshot of an HTML report showing 2 test files](../media/run-report.png)
+:::image type="content" source="../media/run-report.png" alt-text="A screenshot of an HTML report showing 2 test files.":::
 
 The report tells us that tests were run in tests/example.spec.ts and tests-examples/demo-todo-app.spec.ts and on the three different browser engines - `Chromium`, `Firefox`, and `Webkit`. As we set the testDir to the root of the project, Playwright found all the test files in the project and ran them.
 
 Let's set the `testDir` back to `./tests` so we can move on to the next exercise.
+
 ```js
 export default defineConfig({
   testDir:* *'./tests',
@@ -94,11 +103,13 @@ export default defineConfig({
 ```
 
 ## Configure Projects
+
 A project is a group of tests that run with the same configuration and can be used to run tests on different browsers and devices. In the last section, we saw how we can run a test on the Chromium browser by adding the `-- project` option after the test command in the CLI.
 
 Projects are defined in the projects array in the configuration file. By default, Playwright comes with three projects already defined, chromium, firefox, and webkit. This is why our tests ran on all three browsers.
 
 Each project has a name property and a use property. The use option defines what the project should use. For example, the Desktop Chrome device for the chromium project.
+
 ```bash
   projects: [
     {
@@ -109,6 +120,7 @@ Each project has a name property and a use property. The use option defines what
 ```
 
 Comment out the other projects and leave only the chromium project. Then run the tests.
+
 ```bash
 npx playwright test
 ```
@@ -125,12 +137,14 @@ To open last HTML report run:
 
 Let's run the `show-report` command and note how the report now only shows us the two tests on the one browser.
 
-![A screenshot of a HTML report showing 2 test files](../media/run-report-one-project.png)
+:::image type="content" source="../media/run-report-one-project.png" alt-text="A screenshot of an HTML report showing 2 test files.":::
 
 ## Explore Emulation
+
 Playwright supports [Emulation](https://playwright.dev/docs/emulation) for mobile testing. You can select device profiles from the [supported emulation profiles](https://github.com/microsoft/playwright/blob/main/packages/playwright-core/src/server/deviceDescriptorsSource.json) and add it as a new project in the configuration file.
 
 You might notice that the default configuration file has a commented-out section for testing against mobile viewports. Let's uncomment out the project for Mobile Safari.
+
 ```bash
   projects: [
     {
@@ -173,31 +187,36 @@ npx playwright test
 ```
 
 The code runs our two tests on the chromium and Mobile Safari projects. We can see that we now have two test executions.
+
 ```bash
 Running 4 tests using 4 workers
   4 passed
 ```
 
 To see what happened, lets's open the report.
+
 ```bash
 npx playwright show-report
 ```
 
 This serves the report on a local server and opens the browser to that URL.
+
 ```bash
 Serving HTML report at http://localhost:9323. Press Ctrl+C to quit.
 ```
 
 Note how the same two test cases are executed, now with the `chromium` browser and the `iPhone 12 Pro` device emulator. We can see that the emulator takes a little longer to run each test compared to the browser engines.
 
-![A screenshot of an emulated test](../media/run-emulator.png)
+:::image type="content" source="../media/run-emulator.png" alt-text="A screenshot of an emulated test.":::
 
 We can [override the default profile properties](https://playwright.dev/docs/emulation) via the Playwright configuration file (global) or within a Test Specification file (local override) - but to try that out, we first need to understand the `use` directive.
 
 Before we do that let's reset our `playwright.config.ts` file to run tests on the chromium, Firefox and webkit projects and comment-out the Mobile Safari project.
 
 ## Explore `use` Options
+
 Playwright has a [`use` property](https://playwright.dev/docs/test-use-options) to configure the Test Runner for the following features:
+
 - [Basic](https://playwright.dev/docs/test-use-options) - set `baseURL` (maps to "/" route) and `storageState` (for example, load auth).
 - [Emulation](https://playwright.dev/docs/test-use-options) - emulates a real device,  for example, mobile or tablet
 - [Network](https://playwright.dev/docs/test-use-options) - configure connections, for example, provide credentials for HTTP auth
@@ -206,6 +225,7 @@ Playwright has a [`use` property](https://playwright.dev/docs/test-use-options) 
 These options can be set globally, in the config file (for all tests) or locally for a specific test or group of tests only.
 
 To turn on traces and take a screenshot for our projects, let's try to `use` the Recording feature. It allows us get a visual and system level understanding of what happens in test execution. Update the top-level `use` object in your `playwright.config.ts` as follows:
+
 ```js
 export default defineConfig({
   testDir: './tests',
@@ -219,17 +239,20 @@ export default defineConfig({
 ```
 
 Let's run the test again.
+
 ```bash
 npx playwright test
 ```
 
 Note how the total time taken to run the tests increased drastically. Turning on traces and recording media are time-intensive actions and should be used with discretion - typically to help debug issues.
+
 ```bash
 Running 4 tests using 3 workers
   4 passed
 ```
 
 To see what happened, let's open the HTML report.
+
 ```bash
 npx playwright show-report
 ```
@@ -238,33 +261,34 @@ npx playwright show-report
 Serving HTML report at http://localhost:9323. Press Ctrl+C to quit.
 ```
 
-![A screenshot showing reports of each test](../media/run-use-report.png)
+:::image type="content" source="../media/run-use-report.png" alt-text="A screenshot showing reports of each test.":::
 
 Turning on options like recording are expensive, so use with discretion - for example, for debugging on CI.
 
 Let's look at the detailed view of one of our tests using the `chromium` project as defined in our config file.
 
-![A screenshot showing the detailed view of a HTML report](../media/run-use-report-detail.png)
+:::image type="content" source="../media/run-use-report-detail.png" alt-text="A screenshot showing the detailed view of an HTML report.":::
 
 1. The detail view includes a screenshot (from page.goto). This is useful for visual regression testing.
 
-![A screenshot of a detailed view from page.goto](../media/run-use-report-screenshot.png)
+:::image type="content" source="../media/run-use-report-screenshot.png" alt-text="A screenshot of a detailed view from page.goto.":::
 
-2. Most importantly, we get a link to a trace of our test. To open the trace, select on the trace icon in the list view or the image of the trace when in the detail view of the test. 
+1. Most importantly, we get a link to a trace of our test. To open the trace, select on the trace icon in the list view or the image of the trace when in the detail view of the test. 
 
-![A screenshot showing the link to the trace of our test from the report](../media/run-use-report-trace.png)
+:::image type="content" source="../media/run-use-report-trace.pn" alt-text="A screenshot showing the link to the trace of our test from the report.":::
 
-3. The trace gives us a detailed view of our test. From there, we can easily step through each action and explore the network requests, console and even pop out the DOM snapshot and inspect it (think debugging). Let's explore in more detail in the next section.
+1. The trace gives us a detailed view of our test. From there, we can easily step through each action and explore the network requests, console and even pop out the DOM snapshot and inspect it (think debugging). Let's explore in more detail in the next section.
 
-![A screenshot of the trace of our test](../media/run-use-report-trace-detail.png)
+:::image type="content" source="../media/run-use-report-trace-detail.png" alt-text="A screenshot of the trace of our test.":::
 
 Let's go back to the report and select one of the tests runs on our Mobile Safari project. The detail page for the mobile project reflects the emulated profile view where once again we can explore the trace for our emulated test. 
 
-![A screenshot of a report showing screenshot of mobile safari](../media/run-use-report-screenshot-mobile.png)
+:::image type="content" source="../media/run-use-report-screenshot-mobile.png" alt-text="A screenshot of a report showing screenshot of mobile safari.":::
 
 Turning on traces for every test run isn't recommended for production runs. Let's change the config back to run traces on the first retry of a failed test. That way if our test fails on CI, we have a trace to help debug the issue.
 
 Let's also remove the screenshot option as we don't need that for now.
+
 ```js
 export default defineConfig({
   testDir: './tests',

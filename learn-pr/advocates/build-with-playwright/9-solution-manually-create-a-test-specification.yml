@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.build-with-playwright.solution-manually-create-a-test-spec
+uid: learn.build-with-playwright.solution-manually-create-a-test-specification
 title: "Review the Solution: Manually Create a Test Spec"
 metadata:
   title: "Review the Solution: Manually Create a Test Spec"
@@ -11,4 +11,4 @@ metadata:
   ms.custom: team=cloud_advocates
 durationInMinutes: 10
 content: |
-  [!include[](includes/9-solution-manually-create-a-test-spec.md)]
+  [!include[](includes/9-solution-manually-create-a-test-specification.md)]

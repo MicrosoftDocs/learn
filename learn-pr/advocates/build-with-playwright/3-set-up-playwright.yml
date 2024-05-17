@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.build-with-playwright.setting-up-playwright
+uid: learn.build-with-playwright.set-up-playwright
 title: "Exercise: Getting Started with Playwright"
 metadata:
   title: "Exercise: Getting Started with Playwright"
@@ -11,4 +11,4 @@ metadata:
   ms.custom: team=cloud_advocates
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-setting-up-playwright.md)]
+  [!include[](includes/3-set-up-playwright.md)]

@@ -1,8 +1,9 @@
 [Playwright](https://playwright.dev/) is an open-source framework for *reliable* end-to-end testing for modern web apps. It's relatively new (released in 2020) but maintains an active [release schedule](https://playwright.dev/docs/release-notes), adding new features and fixing bugs at a rapid pace. The [2022 StateOfJS](https://2022.stateofjs.com/en-US/libraries/testing/) trends on testing show that Playwright is growing steadily in popularity and retention within the web development community.
 
-![A screenshot showing Playwright's ratio over time](../media/playwright-ranking.png)
+:::image type="content" source="../media/playwright-ranking.png" alt-text="A screenshot showing Playwright's ratio over time.":::
 
 ## Why should we use Playwright?
+
 There are many reasons for choosing Playwright as your test automation framework. Here are four key ones:
 
 *Unified API*. Playwright works across all modern browser engines (Chromium, WebKit, Firefox) and supports device emulation for mobile coverage. It comprises both headed and headless browser options, allowing developers to prioritize between debugging convenience and CI/Cloud execution.
@@ -14,6 +15,7 @@ There are many reasons for choosing Playwright as your test automation framework
 *Powerful Tooling*. Playwright streamlines the developer experience from test authoring, to execution, debugging, reporting, and profiling - with options to use a CLI or the Visual Studio Code extension.
 
 ## Playwright Core Concepts
+
 In the following exercises, let's learn how to perform test automation tasks using Playwright. To set the stage, here are a few core terms and concepts to keep in mind. Their purpose and usage becomes clearer when you work through the exercises.
 
 | **Concept** | **Description** |
@@ -30,6 +32,7 @@ In the following exercises, let's learn how to perform test automation tasks usi
 | [**Page Object Models**](https://playwright.dev/docs/pom) | Represent UI components by "Objects" and associate testing logic for reuse |
 
 ## Playwright Core Tools
+
 Let's learn how to use a few Playwright tools - both from the command-line and from within Visual Studio Code. For reference, here are some key developer tools we would explore - with a description of the role they play in testing workflow.
 
 | **Tool** | **Description** |
