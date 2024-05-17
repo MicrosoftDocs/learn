@@ -44,7 +44,7 @@ At the top, you'll see a timeline of the test that you can hover over to see the
 
 In the left sidebar, you can see the actions that were performed during the test execution. If you select the `locator.click` action, you'll see a red dot on the `Get Started` button in the DOM snapshot.
 
-:::image type="content" source="../media/vs-code-trace-viewer-select-action.pn" alt-text="A screenshot showing the actions performed during the test execution.":::
+:::image type="content" source="../media/vs-code-trace-viewer-select-action.png" alt-text="A screenshot showing the actions performed during the test execution.":::
 
 Next select on the assertion, `expect.toBeVisible`, and you'll see our DOM snapshot changed to show the Installation page with a highlight on the heading that we're asserting. Above the DOM snapshot, you can select on the *Before* and *After* buttons to see the state of the DOM before and after the action was performed.
 
