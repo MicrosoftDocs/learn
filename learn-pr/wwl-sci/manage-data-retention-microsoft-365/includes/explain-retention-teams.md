@@ -4,7 +4,6 @@ Retention policies in Microsoft Teams ensure that your organization can manage c
 
 When setting up retention policies in Teams, it's important to understand the types of content covered:
 
-
 - **Teams chats and Microsoft Copilot for Microsoft 365 interactions**: All messages in Microsoft Teams, including interactions from Copilot for Microsoft 365, are covered under a unified retention policy. This policy ensures consistent handling of all chat interactions, whether or not users are actively using both applications.
 - **Extended content types**: Retention policies in Teams not only cover text messages but also include video clips, embedded images, tables, hyperlinks, links to other messages and files within Teams, and card content used in messaging. This comprehensive coverage helps ensure that all aspects of a communication are retained for compliance purposes.
 - **Other elements in chats**: The policy also covers the names of all participants in private and group chats, as well as the team names and titles of messages in channel communications.
