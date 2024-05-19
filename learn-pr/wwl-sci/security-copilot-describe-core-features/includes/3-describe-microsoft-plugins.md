@@ -229,7 +229,7 @@ There are two separate plugins in Copilot that relate to Sentinel:
 
 :::image type="content" source="../media/sentinel-skills-v3.png" lightbox="../media/sentinel-skills-v3.png" alt-text="Screen capture of the Sentinel and NL2KQK in Sentinel plugin.":::
 
-***Micrsooft Sentinel (Preview)***
+***Microsoft Sentinel (Preview)***
 
 To utilize the Sentinel plugin, the user would need to be assigned a role permission that grants access to Copilot and a Sentinel specific role like Microsoft Sentinel Reader to access incidents in the workspace.
 
