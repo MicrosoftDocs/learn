@@ -63,6 +63,12 @@ First, create two accounts by using the Azure CLI.
       --account-key $HOT_KEY
    ```
 
+1. Run the following command to download the sample source code for this exercise.
+
+    ```bash
+    git clone https://github.com/MicrosoftDocs/mslearn-copy-move-blobs-from-containers-or-storage-accounts sample
+    ```
+
 1. Upload the files to your storage account and save each one as a blob. This command uploads several specification files.
 
     ```azurecli
@@ -86,12 +92,6 @@ First, create two accounts by using the Azure CLI.
 
 ## Set up your project
 
-1. Run the following command to download the sample source code for this exercise.
-
-    ```bash
-    git clone https://github.com/MicrosoftDocs/mslearn-copy-move-blobs-from-containers-or-storage-accounts sample
-    ```
-
 1. Move to the samples folder.
 
     ```bash
@@ -104,12 +104,12 @@ First, create two accounts by using the Azure CLI.
     code TransferBlobs/TransferBlobs.csproj
     ```
 
-1. Change the `<TargetFramework>` value to *net6.0*.
+1. Change the `<TargetFramework>` value to *net7.0*.
 
     ```C#
     <PropertyGroup>
       <OutputType>Exe</OutputType>
-      <TargetFramework>net6.0</TargetFramework>
+      <TargetFramework>net7.0</TargetFramework>
     </PropertyGroup>
     ```
 
