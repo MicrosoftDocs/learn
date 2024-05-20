@@ -1,16 +1,8 @@
-*Governance* is a large subject, and it might be intimidating at first. Governance seeks to establish the proper scope of corporate actions by mitigating tangible risks through corporate policy.
+Governance seeks to mitigate tangible risks through corporate policy. The policies establish the proper scope of corporate actions.
 
-Poor governance policies create unnecessary constraints, and they might not protect the company. This unit evaluates ways to create proper, actionable corporate policies.
+Poor governance policies can create unnecessary constraints, and they might not provide protection. This unit describes how to create proper, actionable corporate policies.
 
 ## Assess cloud risks
-
-During cloud adoption, you encounter various risks. Here are some examples of risks that might evolve at various points of your adoption effort:
-
-- During early experimentation, you deploy a few assets that have little to no relevant data. The risk is small.
-
-- When you deploy your first workload, risk slightly increases. You can choose an inherently low-risk application that has a small user base to remediate this risk.
-- When more workloads go online, risks change at each release. New applications go live and risks change.
-- When your company brings the first 10 or 20 applications online, the risk is lower than when the thousandth application goes into production in the cloud.
 
 To effectively assess risks in the cloud:
 
@@ -21,11 +13,17 @@ To effectively assess risks in the cloud:
 - **Document risks**, and inform all necessary parties in your organization about the risks.
 - **Review risks** regularly and in response to events to ensure that they remain valid and accurate.
 
-If Tailwind Traders had assessed their risks before they moved resources to the cloud, they might have avoided their blockage due to an improper policy.
-
 ## Example risks and high-risk areas
 
-You must determine which risks are a top priority. Consider the following areas where risks often occur:
+During cloud adoption, you encounter various risks. As your workload gets larger, risk often increases. Consider the following examples of risk levels at various points of your adoption effort:
+
+- During early experimentation, you deploy a few assets that have little to no relevant data. The risk is small.
+
+- When you deploy your first workload, risk slightly increases. You can choose an inherently low-risk application that has a small user base to remediate this risk.
+- When more workloads go online, risks change at each release. New applications go live and risks might increase.
+- When your company brings the first 10 or 20 applications online, the risk is lower than when the thousandth application goes into production in the cloud.
+
+During your cloud risk assessment, you must determine which risks are a top priority. Consider the following areas in which risks often occur:
 
 | &nbsp; | &nbsp; |
 |--|--|
@@ -42,7 +40,7 @@ According to the Tailwind Traders customer narrative, the top risks that concern
 - Overspending in the cloud
 
 - Not meeting organizational security or compliance requirements
-- Asset configuration that creates operations-management problems or oversights
+- Asset configuration that creates operations management problems or oversights
 - Unauthorized access that compromises systems or data
 - Immature processes or lack of team skills, which creates inconsistent governance
 
@@ -50,9 +48,9 @@ Note that none of the concerns are related to "a specific network segment of the
 
 It's likely that deeper investigation of stakeholder concerns and the cloud adoption plan shows more risks that the organization can't tolerate. But for now, we have enough to start shaping governance policies that address these tangible risks.
 
-## Blocked by current policies
+## Blocked by current policy
 
-The current policy at Tailwind Traders states that "Customer and financial data can only be hosted in a specific network segment of the *existing datacenters*, referred to as protected assets." The policy is problematic, as the business plans its move from primarily using on-premises datacenters to cloud datacenters.
+A current policy at Tailwind Traders states that "Customer and financial data can only be hosted in a specific network segment of the *existing datacenters*, referred to as protected assets." The policy is problematic, as the business plans its move from primarily using on-premises datacenters to cloud datacenters.
 
 The CIO is working to change the policy, but the central operations and infrastructure team must apply the following controls before the CIO is comfortable approving policy changes:
 

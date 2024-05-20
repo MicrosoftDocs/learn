@@ -1,4 +1,4 @@
-To implement proper cloud governance, Tailwind Traders needs proper business policy, protective guardrails, and skilled people that take a consistent, disciplined approach to governance.
+To implement proper cloud governance, you need proper business policy, protective guardrails, and skilled people that take a consistent, disciplined approach to governance.
 
 ## Build governance maturity
 
@@ -27,7 +27,12 @@ The Govern methodology provides a structured approach that you can use to establ
 
 ## Build a cloud governance team
 
+You must first form a cloud governance team to oversee cloud governance in your organization.
 
+- **Define the functions of your team**: A cloud governance team should engage stakeholders, assess cloud risks, develop and update governance policies, and monitor and review governance. You can add more functions if needed.
+
+- **Select the right team members**: Select a small and diverse team to encourage quick decision-making and to include various perspectives. Define the roles and responsibilities of each team member.
+- **Define your team's authority and scope**: Ensure that your organization supports your cloud governance team so that you can enforce important security policies. Clearly define the scope of your cloud governance team's authority, and separate their scope from other teams' responsibilities.
 
 ## Assess your cloud governance
 
