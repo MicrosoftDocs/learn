@@ -1,22 +1,22 @@
 One of GitHub Copilot's key features is its ability to assist with code improvements. GitHub Copilot Chat provides suggestions for improving code quality, reliability, performance, and security. These suggestions are based on the context of your codebase and can help you enhance the quality, readability, and efficiency of your code. This module explores how GitHub Copilot Chat can assist with code improvements and how you can use it to enhance your codebase.
 
-Without AI-powered tools, implementing code improvements requires two things:
+Without AI-powered tools, implementing code improvements requires experience and time:
 
 - **Code development experience**: Having a foundational understanding of software development principles and practices is important. You should be familiar with coding concepts, programming languages, and best practices for writing clean, efficient, and maintainable code. This knowledge helps you evaluate the suggestions provided by GitHub Copilot Chat and determine which ones are most appropriate for your codebase. You also need practical experience working with codebases and development tools to effectively implement the suggestions provided by GitHub Copilot Chat. Being proficient in the coding environment is also important.
 
-- **Time**: Without AI tools, implementing significant code improvements takes hundreds hours, or even thousands of hours. You need to analyze your codebase, identify areas for improvement, and implement the necessary changes. This process can be complex and time-consuming, especially for large codebases. Projects with tight deadlines often require phased, incremental updates that add more complexity to a process that's already difficult to manage.
+- **Time**: Implementing code improvements can take hundreds hours, or even thousands of hours. You need to analyze your codebase, identify areas for improvement, and implement the necessary changes. This process can be complex and time-consuming, especially for large codebases. Projects with tight deadlines often require phased, incremental updates that add more complexity to a process that's already difficult to manage.
 
-GitHub Copilot doesn't eliminate these requirements, but it does provide significant help. You still need to have a solid foundation in coding and development practices. These skills are required to evaluate and implement the suggestions provided by GitHub Copilot Chat. However, GitHub Copilot Chat can help you identify issue and accelerate the implementation process. It can suggest improvements to your codebase, provide guidance on best practices, and help you write cleaner, more efficient code. This can save you time and effort, making it easier to enhance the quality, reliability, performance, and security of your codebase.
+GitHub Copilot doesn't eliminate these requirements, but it does provide significant help. You still need to have a solid foundation in coding and development practices. These skills are required to evaluate and implement the suggestions provided by GitHub Copilot Chat. However, GitHub Copilot Chat can help you identify issues and accelerate the implementation process. It can suggest improvements to your codebase, provide guidance on best practices, and help you write cleaner, more efficient code. This can save you time and effort, making it easier to improve the quality, reliability, performance, and security of your codebase.
 
 ## Code improvements with GitHub Copilot Chat
 
-With GitHub Copilot Chat, implementing code improvements still requires two key elements:
+With GitHub Copilot Chat, implementing code improvements requires two key elements:
 
-- **The ability to build effective prompts**: Prompts are used to communicate your intent to GitHub Copilot. To create an effective prompt, you need a clear understanding of what you want to achieve. Your prompts should be concise, specific, and focused. For example, if you want to improve code quality, you might create a prompt that asks GitHub Copilot to suggest refactoring updates to enhance the modularity of a specific class or method. Effective prompts help GitHub Copilot understand your goals and provide relevant suggestions. When GitHub Copilot receives prompts that are defined too broadly or vaguely, it may not be able to generate useful suggestions.
+- **The knowledge and ability to build effective prompts**: Prompts are used to communicate your intent to GitHub Copilot. To create an effective prompt, you need a clear understanding of what you want to achieve. Your prompts should be concise, specific, and focused. For example, if you want to improve code quality, you might create a prompt that asks GitHub Copilot to suggest refactoring updates to enhance the modularity of a specific class or method. Effective prompts help GitHub Copilot understand your goals and provide relevant suggestions. When GitHub Copilot receives prompts that are defined too broadly or vaguely, it may not be able to generate useful suggestions.
 
-- **The ability to evaluate and implement suggested updates**: GitHub Copilot Chat generates suggestions that reflect the context of your codebase and the intent of your prompt. You must be able to evaluate these suggestions and determine which ones are appropriate for your code. You also need to implement the suggestions in your codebase. This could involve changing code structure, refactoring code, or adding new features. Having the skills to evaluate and implement the suggestions provided by GitHub Copilot Chat is essential for making effective code improvements.
+- **The ability to evaluate and implement suggested updates**: GitHub Copilot Chat generates suggestions that reflect the context of your codebase and the intent of your prompt. You must be able to evaluate the suggestions and determine which ones are appropriate for your code. You also need to implement the suggestions in your codebase. This could involve changing code structure, refactoring code, or adding new features. Having the skills to evaluate and implement the suggestions provided by GitHub Copilot Chat is essential for making effective code improvements.
 
-GitHub Copilot Chat can assist with code improvements in practically any area, providing suggestions and guidance to help you improve your code and accelerate your development process. Code improvements span a wire range of disciplines and can be categorized in many ways. This module focuses on the following code improvement categories:
+GitHub Copilot Chat provides guidance and suggestions that help you improve your code and accelerate your development process. There are many different types of code improvement, and many ways to group these types into manageable buckets. This module focuses the following categories of code improvements:
 
 - **Code quality**: Enhance the readability, maintainability, and efficiency of your code.
 - **Code reliability**: Improve the robustness, error handling, and stability of your code.
@@ -32,7 +32,7 @@ GitHub Copilot can suggest improvements to code quality, such as refactoring upd
 For example, you could submit the following prompts to GitHub Copilot Chat to improve code quality:
 
 - **Prompt**: "Suggest refactoring updates to enhance the modularity of the `User` class."
-- **Prompt**: "Provide design pattern suggestions to improve the architecture of the `OrderService` class."
+- **Prompt**: "Provide design pattern suggestions to improve the internal structure of the `OrderService` class."
 - **Prompt**: "Recommend code style enhancements to make the `ProductController` class more readable."
 
 ### Code reliability improvements
