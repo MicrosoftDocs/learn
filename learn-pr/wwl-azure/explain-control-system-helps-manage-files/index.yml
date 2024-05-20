@@ -15,7 +15,12 @@ title: Explain how a source control system helps manage files
 summary: '**Explain how a source control system helps manage files** goes over the purpose of a source control system, the benefits of using a source control system, between version control and source control, and how software can help you interact with a source control system.'
 abstract: |
   After you complete this module, you'll be able to:
-   - Describe version control and source control. - Explain the benefits of using a source control system. - Describe how software helps interact with source control systems.
+
+  -   Describe version control and source control.
+
+  -   Explain the benefits of using a source control system.
+
+  -   Describe how software helps interact with source control systems.
 prerequisites: A personal computer running Windows, macOS, or Linux.
 iconUrl: /training/achievements/explain-control-system-helps-manage-files.svg
 levels:
