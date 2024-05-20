@@ -41,11 +41,16 @@ az stack group create \
     --name stack-deposits \
     --resource-group rg-depositsApplication \
     --template-file ./main.bicep \
+    --action-on-unmanage deleteAll \
     --deny-settings-mode none
 ```
 
 > [!NOTE]
 > AZ CLI does not have a dedicated command to update a deployment stack. Use the create command to update the stack.
+
+When performing an update on the stack, you receive a message stating that the stack already exists in the current subscription. If the value of the _action on unmanage_ parameter has changed, the warning alerts you of the new values.
+
+![a graphic representing an AZ CLI warning that the deployment stack already exists](../media/stack-exists-cli.png)
 
 To verify that the new resources are managed by the stack, use the `az stack group show` command.
 
@@ -70,14 +75,15 @@ Set-AzResourceGroupDeploymentStack `
     -Name stack-deposits `
     -ResourceGroupName rg-depositsApplication `
     -TemplateFile ./main.bicep `
-    -DenySettingsMode none
+    -ActionOnUnmanage DeleteAll `
+    -DenySettingsMode None
 ```
 
 To verify that the new resources are managed by the stack, use the ``Get-AzResourceGroupDeploymentStack`` command.
 
 ```azurepowershell
-Get-AzResourceGroupDeploymentStack \
-    -ResourceGroupName rg-depositsApplication
+Get-AzResourceGroupDeploymentStack `
+    -ResourceGroupName rg-depositsApplication `
     -Name stack-deposits
 ```
 
@@ -92,6 +98,8 @@ In the next module, you work on managing resource lifecycles, including adding, 
 ## Deleting a deployment stack
 
 TODO: Insert text here.
+
+TODO: If you change the action on unmanage parameter, it will take precedence.
 
 ::: zone pivot="cli"
 
@@ -118,4 +126,3 @@ Remove-AzResourceGroupDeploymentStack `
 ```
 
 ::: zone-end
-

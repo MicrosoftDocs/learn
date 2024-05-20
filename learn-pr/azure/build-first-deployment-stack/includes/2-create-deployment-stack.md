@@ -29,6 +29,8 @@ We'll use the following bicep file for our first deployment stack. The file defi
 
 Creating and deploying a deployment stack and its resources is nearly identical to a standard Azure deployment. Whether you are using AZ CLI, Azure PowerShell, or an infrastructure as code pipeline, the process feels the same. For example:
 
+::: zone pivot="cli"
+
 The AZ CLI command to deploy a bicep file to a resource group is:
 
 ```azurecli
@@ -43,12 +45,40 @@ The AZ CLI command to create a deployment stack at the resource group scope is:
 az stack group create \
     --name stack-deposits \
     --resource-group rg-depositsApplication \
-    --template-file ./main.bicep
+    --template-file ./main.bicep \
+    --action-on-unmanage deleteAll \
+    --deny-settings-mode none
 ```
 
-Notice that the only changes in the command are the words `deployment` and `stack`, and there's a small difference in the parameters used. The same is true for deployments to subscriptions and management groups. In later modules, we explore how to manage resources in a deployment stack and how to configure deny settings.
+Notice that the only changes in the command are the words `deployment` and `stack`, and differences in the parameters used. The same is true for deployments to subscriptions and management groups. In later modules, we explore how to manage a deployment stack's resources using _action on unmanage_ how to configure _deny settings_.
 
-Lets take a look at creating a deployment stack at the resource group scope.
+::: zone-end
+
+::: zone pivot="powershell"
+
+The Azure PowerShell command to deploy a bicep file to a resource group is:
+
+```azurepowershell
+New-AzResourceGroupDeployment `
+    -ResourceGroupName rg-depositsApplication `
+    --TemplateFile eastus
+
+The Azure PowerShell command to create a deployment stack at the resource group scope is:
+
+```azurepowershell
+New-AzResourceGroupDeploymentStack `
+    -Name stack-deposits `
+    -ResourceGroupName rg-depositsApplication `
+    -TemplateFile ./main.bicep `
+    -ActionOnUnmanage DeleteAll `
+    -DenySettingsMode None
+```
+
+Notice that the only changes in the command is the word `stack`, and differences in the parameters used. The same is true for deployments to subscriptions and management groups. In later modules, we explore how to manage a deployment stack's resources using _action on unmanage_ how to configure _deny settings_.
+
+::: zone-end
+
+Now, lets take a look at creating a deployment stack at the resource group scope.
 
 ::: zone pivot="cli"
 
@@ -58,11 +88,14 @@ To create a deployment stack using AZ CLI, use the `az stack group create` comma
 az group create \
     --name rg-depositsApplication \
     --location eastus
+```
 
+```azurecli
 az stack group create \
     --name stack-deposits \
     --resource-group rg-depositsApplication \
-    --template-file ./main.bicep
+    --template-file ./main.bicep \
+    --action-on-unmanage deleteAll \
     --deny-settings-mode none
 ```
 
@@ -76,12 +109,15 @@ To create a deployment stack using Azure PowerShell, use the `New-AzResourceGrou
 New-AzResourceGroup `
     -Name rg-depositsApplication `
     -Location eastus
+```
 
+```azurepowershell
 New-AzResourceGroupDeploymentStack `
     -Name stack-deposits `
     -ResourceGroupName rg-depositsApplication `
-    -TemplateFile ./main.bicep
-    -DenySettingsMode none
+    -TemplateFile ./main.bicep `
+    -ActionOnUnmanage DeleteAll `
+    -DenySettingsMode None
 ```
 
 ::: zone-end
@@ -96,7 +132,7 @@ To show a specific deployment stack resource scoped to a resource group using AZ
 
 ```azurecli
 az stack group show \
-    --resource-group rg-depositsApplication
+    --resource-group rg-depositsApplication \
     --name stack-deposits
 ```
 
@@ -113,25 +149,14 @@ Take notice of the resources section of the output. For each resource, it shows 
 To show a specific deployment stack resource scoped to a resource group using Azure PowerShell, use the `Get-AzResourceGroupDeploymentStack` command, specifying the name of the deployment stack and the target resource group.
 
 ```azurepowershell
-Get-AzResourceGroupDeploymentStack \
-    -ResourceGroupName rg-depositsApplication
+Get-AzResourceGroupDeploymentStack `
+    -ResourceGroupName rg-depositsApplication `
     -Name stack-deposits
 ```
 
 The results include the properties of the deployment stack and the status of the managed resources. The output should appear familiar to the following section:
 
-```azurepowershell
-Id                          : /subscriptions/.../deploymentStacks/stack-deposits
-Name                        : stack-deposits
-ProvisioningState           : succeeded
-ResourcesCleanupAction      : detach
-ResourceGroupsCleanupAction : detach
-DenySettingsMode            : none
-CreationTime(UTC)           : 1/01/2024 00:00:00 AM
-DeploymentId                : /subscriptions/.../deployments/stack-deposits-24051017g2k8i
-Resources                   : /subscriptions/.../serverfarms/plan-deposits
-                              /subscriptions/.../sites/webapp-brpdm7iotbwjm
-```
+:::code language="powershell" source="code/3-powershell.ps1" range="1-10":::
 
 Take notice of the resources section of the output. it defines the resources managed by the deployment stack. You see the full resource ID of each resource.
 

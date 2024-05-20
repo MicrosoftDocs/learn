@@ -60,8 +60,8 @@ We need to create a resource group for our deployment stack and managed resource
 
 ```azurepowershell
 New-AzResourceGroup `
-    --name rg-depositsApplication `
-    --location eastus
+    -Name rg-depositsApplication `
+    -Location eastus
 ```
 
 ::: zone-end
@@ -77,6 +77,7 @@ az stack group create \
     --name stack-deposits \
     --resource-group rg-depositsApplication \
     --template-file ./main.bicep \
+    --action-on-unmanage deleteAll \
     --deny-settings-mode none
 ```
 
@@ -89,7 +90,8 @@ New-AzResourceGroupDeploymentStack `
     -Name stack-deposits `
     -ResourceGroupName rg-depositsApplication `
     -TemplateFile ./main.bicep `
-    -DenySettingsMode none
+    -ActionOnUnmanage DeleteAll `
+    -DenySettingsMode None
 ```
 
 ::: zone-end
