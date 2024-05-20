@@ -65,7 +65,8 @@ The latest .NET 8 release improves support for containerization. You can use the
 
 If you want more control of how the images are built, you can use a Dockerfile to create an image for the Products web service. 
 
-1. In the **EXPLORER** pane, open the file named **./dotnet-docker/Products/Dockerfile**. The file is empty.
+1. In the **EXPLORER** pane, create a file named **Dockerfile** in **./dotnet-docker/Products**. The file is empty.
+
 1. Enter the following code:
 
     ```dockerfile
