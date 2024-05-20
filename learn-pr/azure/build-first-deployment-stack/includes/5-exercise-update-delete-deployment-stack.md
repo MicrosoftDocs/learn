@@ -26,54 +26,56 @@ You are on sprint 2 for the new deposits application. You want to test updating 
 
 ::: zone pivot="cli"
 
-1. With the Bicep file updated, we want to update the deployment stack so that the new Azure SQL database is deployed to the environment as a managed resource. To update the deployment stack, run the following command from the terminal in Visual Studio Code.
+With the Bicep file updated, we want to update the deployment stack so that the new Azure SQL database is deployed to the environment as a managed resource. 
 
-    ```azurecli
-    az stack group create \
-        --name stack-deposits \
-        --resource-group rg-depositsApplication \
-        --template-file ./main.bicep \
-        --action-on-unmanage deleteAll \
-        --deny-settings-mode none
-    ```
+With the Bicep file updated, we want to update the deployment stack so that the new Azure SQL database is deployed to the environment as a managed resource. To update the deployment stack, run the following command from the terminal in Visual Studio Code.
 
-    > [!NOTE]
-    > AZ CLI does not have a dedicated command to update a deployment stack. Use the create command to update the stack.
+```azurecli
+az stack group create \
+    --name stack-deposits \
+    --resource-group rg-depositsApplication \
+    --template-file ./main.bicep \
+    --action-on-unmanage deleteAll \
+    --deny-settings-mode none
+```
 
-1. You receive a message stating that the stack already exists in the current subscription. If the value of the _action on unmanage_ parameter has changed, the warning alerts you of the new values. Press `y`, followed by 'Enter`.
+> [!NOTE]
+> AZ CLI does not have a dedicated command to update a deployment stack. Use the create command to update the stack.
 
-    ![a graphic representing a command line warning that the deployment stack already exists](../media/stack-exists-cli.png)
+You receive a message stating that the stack already exists in the current subscription. If the value of the _action on unmanage_ parameter has changed, the warning alerts you of the new values. Press `y`, followed by 'Enter`.
 
-1. You are prompted to enter a value for `sqlServerAdminUserName`. Create a name for the SQL server administrator, followed by 'Enter'.
+![a graphic representing a command line warning that the deployment stack already exists](../media/stack-exists-cli.png)
 
-    ![a graphic representing the command line prompting you to enter an SQL server administrator user name](../media/sqladmin-cli.png)
+You are prompted to enter a value for `sqlServerAdminUserName`. Create a name for the SQL server administrator, followed by 'Enter'.
 
-1. You are prompted to enter a value for `sqlServerAdminPassword`. Create a complex password for the SQL server administrator, followed by 'Enter'.
+![a graphic representing the command line prompting you to enter an SQL server administrator user name](../media/sqladmin-cli.png)
 
-    ![a graphic representing the command line prompting you to enter an SQL server administrator user name](../media/sqlpassword-cli.png)
+You are prompted to enter a value for `sqlServerAdminPassword`. Create a complex password for the SQL server administrator, followed by 'Enter'.
+
+![a graphic representing the command line prompting you to enter an SQL server administrator user name](../media/sqlpassword-cli.png)
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-1. With the Bicep file updated, we want to update the deployment stack so that the new Azure SQL database is deployed to the environment as a managed resource. To update the deployment stack, run the following command from the terminal in Visual Studio Code.
+With the Bicep file updated, we want to update the deployment stack so that the new Azure SQL database is deployed to the environment as a managed resource. To update the deployment stack, run the following command from the terminal in Visual Studio Code.
 
-    ```azurepowershell
-    Set-AzResourceGroupDeploymentStack `
-        -Name stack-deposits `
-        -ResourceGroupName rg-depositsApplication `
-        -TemplateFile ./main.bicep `
-        -ActionOnUnmanage DeleteAll `
-        -DenySettingsMode none
-    ```
+```azurepowershell
+Set-AzResourceGroupDeploymentStack `
+    -Name stack-deposits `
+    -ResourceGroupName rg-depositsApplication `
+    -TemplateFile ./main.bicep `
+    -ActionOnUnmanage DeleteAll `
+    -DenySettingsMode none
+```
 
-1. You are prompted to enter a value for `sqlServerAdminUserName`. Create a name for the SQL server administrator, followed by 'Enter'.
+You are prompted to enter a value for `sqlServerAdminUserName`. Create a name for the SQL server administrator, followed by 'Enter'.
 
-    ![a graphic representing the command line prompting you to enter an SQL server administrator user name](../media/sqladmin-ps.png)
+![a graphic representing the command line prompting you to enter an SQL server administrator user name](../media/sqladmin-ps.png)
 
-1. You are prompted to enter a value for `sqlServerAdminPassword`. Create a complex password for the SQL server administrator, followed by 'Enter'.
+You are prompted to enter a value for `sqlServerAdminPassword`. Create a complex password for the SQL server administrator, followed by 'Enter'.
 
-    ![a graphic representing the command line prompting you to enter an SQL server administrator user name](../media/sqlpassword-ps.png)
+![a graphic representing the command line prompting you to enter an SQL server administrator user name](../media/sqlpassword-ps.png)
 
 ::: zone-end
 
