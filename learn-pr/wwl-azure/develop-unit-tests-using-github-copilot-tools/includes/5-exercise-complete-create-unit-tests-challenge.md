@@ -6,7 +6,7 @@ In this challenge exercise, you need to create xUnit unit tests for the methods 
 
 ## Prepare your coding environment
 
-You are using the **M4BankAccount** sample application from the SampleApps folder. Open the **M4BankAccount** sample application in Visual Studio Code. Ensure that the application builds and runs successfully before you start the challenge.
+You are using the **APL2007M4BankAccount** sample application from the SampleApps folder. Open the **APL2007M4BankAccount** sample application in Visual Studio Code. Ensure that the application builds and runs successfully before you start the challenge.
 
 The **M4BankAccount** sample app contains the following files:
 
@@ -29,13 +29,17 @@ Create xUnit unit tests for the methods in the `BankAccount` class using GitHub 
 
 Use the following steps to complete this challenge:
 
-1. Open the **BankAccountClass** folder in Visual Studio Code.
+1. Open the **APL2007M4BankAccount** folder in Visual Studio Code.
 
-1. Review the project files and ensure that the solution builds and runs.
+1. Review the project files, and then ensure that the solution builds and runs.
 
-1. Create an xUnit test project named **BankAccount.UnitTests** and add it to your solution.
+    It can take 10-15 seconds before the app displays output.
 
-1. Use GitHub Copilot Chat to create the required unit tests.
+1. Add an xUnit test project to your solution. Name the project **BankAccount.UnitTests**.
+
+1. Create the required project references and class files.
+
+1. Use GitHub Copilot Chat to create unit tests. See the challenge requirements for details.
 
 1. Build the solution and ensure that the tests are displayed in the Test Explorer.
 
