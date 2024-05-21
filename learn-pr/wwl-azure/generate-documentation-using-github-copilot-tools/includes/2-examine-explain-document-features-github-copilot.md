@@ -1,4 +1,4 @@
-GitHub Copilot Chat can be used at various points in the development process to help developers generate documentation. In addition, when a developer is working with unfamiliar code, GitHub Copilot Chat can provide explanations of selected code blocks or files. Explanations are useful for developers who are interested in the code's behavior or for nontechnical stakeholders who need to understand how the code works.
+GitHub Copilot Chat can be used at various points in the development process to help developers generate documentation. In addition, when a developer is working with unfamiliar or poorly documented code, GitHub Copilot Chat can explain selected code blocks or files. Explanations are also useful for nontechnical stakeholders who need to understand how the code works.
 
 ## Access GitHub Copilot Chat in Visual Studio Code
 
@@ -9,9 +9,11 @@ Visual Studio Code provides easy access to the following GitHub Copilot Chat fea
 - **Quick Chat**: Ask a quick question and get back into what you're doing.
 - **Smart actions**: Run smart actions to complete certain tasks without even having to write a prompt.
 
-The inline chat, chat view, and quick chat features allow you to ask questions and get help from GitHub Copilot Chat without leaving the Visual Studio Code environment. These features make it easy to get help and information from GitHub Copilot Chat while you're working on your code.
+The inline chat, chat view, and quick chat features enable you to ask questions and get help from GitHub Copilot Chat without leaving the Visual Studio Code environment. The **Explain This** and **Generate Docs** smart actions enable you to generate explanations and documentation for your code with just a few clicks. These features make it easy to get help from GitHub Copilot Chat while you're working on your code.
 
-Providing GitHub Copilot Chat with questions that include a clear scope and intent improves the generated responses. GitHub Copilot Chat uses chat participants, slash commands, and chat variables to understand the context of your question and generate relevant responses. By using these specialized descriptors, you can help GitHub Copilot Chat generate more accurate and useful responses.
+Providing GitHub Copilot Chat with questions that include a clear scope and intent improves the generated responses. You can use *chat participants*, *slash commands*, and *chat variables* to supplement the natural language text in your questions. The context and intent provided by these specialized descriptors helps GitHub Copilot Chat generate more accurate and useful responses.
+
+When writing questions or prompts for GitHub Copilot Chat, consider the following tips:
 
 - Chat participants, such as `@workspace` or `@terminal`, help GitHub Copilot Chat understand the larger context of your question.
 - Slash commands, such as `/explain`, help GitHub Copilot Chat understand the intent of your question.
@@ -21,42 +23,46 @@ GitHub Copilot Chat performs better when you use an appropriate combination of c
 
 ## Generate explanations using GitHub Copilot Chat
 
-Explanations are useful for developers who are working with unfamiliar code and need to understand how it works. GitHub Copilot Chat can generate explanations of selected code blocks, files, or the entire workspace. Explanations can be useful for developers who are interested in the code's behavior and for nontechnical stakeholders who need to understand how the code works.
+Explanations are useful when you encounter complex or unfamiliar code and need to understand how it works. Developers often encounter complex algorithms, regular expressions, or other code that's difficult to understand at first glance. GitHub Copilot Chat can generate explanations of selected code blocks, files, or the entire workspace. Explanations help developers understand the purpose and behavior of the code, making it easier to work with and maintain.
 
-GitHub Copilot Chat can help explain selected code by generating natural language descriptions of the code's functionality and purpose. For example, if you select a function or code block in the code editor, GitHub Copilot Chat can generate a natural language description of what the code does and how it fits into the overall system. This can include information such as the function's input and output parameters, its dependencies, and its purpose in the larger application.
+GitHub Copilot Chat helps explain selected code by generating natural language descriptions of the code's functionality and purpose. For example, if you select the method of a class you need to implement, GitHub Copilot Chat can generate an explanation that uses natural language text and code snippets to describe what the method does and how to implement it. The explanation can include the method's input parameters and return values, its dependencies, and the purpose it serves in the larger application.
 
-If you select a block of code in the editor, you have several options for viewing a natural language description of selected code. For example you can use the following methods to generate explanations for selected code blocks:
+There are several ways to generate an explanation of selected code using GitHub Copilot Chat. For example, after selecting code in the editor, you can generate an explanation using the following methods:
 
 - You can open an inline chat and use `/explain` in your prompt.
 - You can use the `Explain This` smart action.
 - You can open the Chat view and use `/explain #selection` in your prompt.
 
-Getting explanations can be useful for understanding complex algorithms, regular expressions, or other code that may be difficult to understand at first glance. By generating explanations, GitHub Copilot Chat can help you understand the code's behavior and purpose, making it easier to work with and maintain.
-
-In the Chat view (or Quick Chat window), you can use the `@workspace` chat participant followed by a natural language description to generate an explanation for an entire workspace. Responses can include a summary of the project, its purpose, and any other relevant information. You can also generate an explanation of a specific project file in the workspace by using the `#file` chat variable to specify a filename. By generating explanations for the workspace, you can create a high-level overview that helps other developers understand the project and its goals. This can be useful for onboarding new team members, sharing information with stakeholders, or documenting the project for future reference.
+GitHub Copilot Chat can also be used to generate explanations that address a broader scope. For example, you can use `@workspace` in the chat view to generate an explanation for an entire workspace. Responses can include a summary of the project, its purpose, and other information that's relevant to the workspace. You can also generate an explanation of a specific project file in the workspace by using the `#file` chat variable to specify a filename. Workspace explanations can help you to understand a project and its goals. Developers who are joining a project can use workspace explanations to accelerate their onboarding process.
 
 Some examples of questions you can ask Copilot Chat to generate explanations include:
 
-- `@workspace Explain this project`
-- `@workspace /explain Explain the dependencies of this project`
-- `@workspace /explain #file:program.cs Explain how this file is used in the project`
+- Chat view: `@workspace Explain this project`
+- Chat view: `@workspace /explain Explain the dependencies of this project`
+- Chat view: `@workspace /explain #file:program.cs Explain how this file is used in the project`
+- Inline chat: `/explain #selection Explain how this method works`
+- Inline chat: `/explain Explain this code block`
 
 ## Generate documentation using GitHub Copilot Chat
 
 Documentation is typically used for the following purposes:
 
-- Inline documentation that's used to describe code files, components, or code blocks. Inline documentation is intended for developers and testers who work on the code.
-- External project documentation that's used to prepare overviews, summaries, and reports. External documentation is intended for executive stakeholders, project managers, and end users. Developers and testers can also benefit from external documentation.
+- Inline documentation that's used to describe the contents of a code file. Inline documentation is intended for developers and testers who work on the code.
+- External project documentation that's used to provide an overview of the project. External documentation is intended for executive stakeholders, project managers, and end users. Developers and testers can also benefit from external documentation.
 
 ### Generate inline documentation
 
-GitHub Copilot Chat can help you document your code by generating inline code comments. To generate inline documentation, you have the following options:
+Good inline documentation improves the readability and maintainability of a codebase, making it easier for developers to understand and work with. However, writing inline documentation can be time-consuming, especially for a complex codebase.
+
+GitHub Copilot Chat generates inline documentation quickly and accurately. Using GitHub Copilot Chat to document common items like classes and class components can save you valuable time.
+
+To generate inline documentation, you have the following options:
 
 - Construct a natural language prompt to generate the desired documentation.
 - Enter the `/doc` command in the inline chat to generate comments that describe the selected code.
 - Use the `Generate Docs` smart action to generate comments that describe the selected code.
 
-Generating code comments can be useful for documenting your classes, methods, and properties, or complex algorithms that may be difficult to understand at first glance. Having GitHub Copilot Chat generate documentation can help you to create more readable and maintainable code that's easier for other developers to understand and work with.
+GitHub Copilot Chat generates inline documentation that explains the code’s functionality and purpose.
 
 ### External project documentation
 

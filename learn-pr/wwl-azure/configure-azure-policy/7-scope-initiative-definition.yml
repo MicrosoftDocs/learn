@@ -4,10 +4,12 @@ title: Scope the initiative definition
 metadata:
   title: Scope the initiative definition
   description: "Scope the initiative definition"
-  ms.date: 11/16/2023
+  ms.date: 05/20/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 1
 content: |
   [!include[](includes/7-scope-initiative-definition.md)]

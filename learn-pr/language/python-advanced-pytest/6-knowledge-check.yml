@@ -3,8 +3,8 @@ uid: learn.python-advanced-pytest.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Check your knowledge about Pytest parametrize and fixtures
-  ms.date: 1/31/2022
+  description: Check your knowledge about pytest parametrize and fixtures
+  ms.date: 4/12/2024
   author: alfredodeza
   ms.author: alfredodeza
   ms.custom:
@@ -17,29 +17,29 @@ quiz:
   questions:
   - content: "What is one useful feature of adding fixtures to the _conftest.py_ file?"
     choices:
-    - content: "That it allows importing those fixtures in a test suite."
+    - content: "It allows importing those fixtures in a test suite."
       isCorrect: false
       explanation: "Incorrect. Adding fixtures in a _conftest.py_ file doesn't affect their importing in a suite."
-    - content: "That is allows sharing the fixtures without importing them in a test suite."
+    - content: "It allows sharing the fixtures without importing them in a test suite."
       isCorrect: true
       explanation: "Correct. By adding fixtures in a _conftest.py_, they become available to any test in a test suite without importing them."
-    - content: "Because it allows fixtures to require Pytest fixtures."
+    - content: "Because it allows fixtures to require pytest fixtures."
       isCorrect: false
-      explanation: "Incorrect. Fixtures can always require Pytest fixtures regardless of their location."
-  - content: "What makes a test be a good candidate for `parametrize()`?"
+      explanation: "Incorrect. Fixtures can always require pytest fixtures regardless of their location."
+  - content: "What makes a test a good candidate for `parametrize()`?"
     choices:
-    - content: "When a test needs to loop over inputs for the same assertion"
+    - content: "When a test needs to loop over inputs for the same assertion."
       isCorrect: true
-      explanation: "Correct. Parametrize is a great choice to avoid looping. Converting input items into individual tests."
+      explanation: "Correct. Parametrize is a great choice to avoid looping, converting input items into individual tests."
     - content: "When a test needs to catch multiple exceptions."
       isCorrect: false
       explanation: "Incorrect. Multiple exceptions in a test don't make it a good candidate for _parametrize_."
-    - content: "When a test needs to run in parallel"
+    - content: "When a test needs to run in parallel."
       isCorrect: false
-      explanation: "Incorrect. There’s no need to use _parametrize_ to run tests in parallel"
-  - content: "Why multiple arguments with _parametrize_ might not be a good idea?"
+      explanation: "Incorrect. There’s no need to use _parametrize_ to run tests in parallel."
+  - content: "Why might multiple arguments with _parametrize_ not be a good idea?"
     choices:
-    - content: "Because Pytest doesn't allow it. An exception gets raised instead."
+    - content: "Because pytest doesn't allow it. An exception gets raised instead."
       isCorrect: false
       explanation: "Incorrect. Pytest does allow multiple arguments with _parametrize_."
     - content: "Because test functions don't allow multiple arguments."
@@ -47,4 +47,4 @@ quiz:
       explanation: "Incorrect. Test functions do allow multiple arguments, including when testing with _parametrize_." 
     - content: "Because it can make tests harder to read."
       isCorrect: true
-      explanation: "Correct. When using multiple arguments with _parametrize_, it can make tests harder to read."
+      explanation: "Correct. Using multiple arguments with _parametrize_ can make tests harder to read."

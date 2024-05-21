@@ -28,17 +28,17 @@ quiz:
     - content: What format seems correct for a `vscode.dev` URL tied to a remote machine and folder? 
       choices:
         - content: vscode.dev/tunnel/<folder_name>/<machine_name>
-          isCorrect: true
-          explanation: Correct. This answer shows the right format. The others don't work.
+          isCorrect: false
+          explanation: This answer is incorrect.
         - content: vscode.dev/tunnel/<machine_name_folder_name> 
           isCorrect: false
           explanation: This answer is incorrect. 
         - content: vscode.dev/tunnel/<machine_name>/<folder_name>
-          isCorrect: false
-          explanation: This answer is incorrect. 
+          isCorrect: true
+          explanation: Correct. This answer shows the right format. The others don't work.
     - content: Which statement is most true?
       choices:
-        - content: The Remote - Tunnels extension lets you connect to a remote machine, like a desktop PC or a virtual machine, via a secure tunnel. You can connect to that machine from a Visual Studio Code client anywhere, without the requirement of the Secure Shell protocol. 
+        - content: The Visual Studio Code Remote - Tunnels extension, lets you connect via a secure tunnel to a remote machine like a desktop PC or virtual machine. You can connect to that machine from a Visual Studio Code client anywhere, without the requirement of the Secure Shell protocol. 
           isCorrect: true
           explanation: Correct. The Remote - Tunnels extension connects to either a remote desktop PC or a remote virtual machine.
         - content: The Remote - Tunnels extension lets you connect to a desktop PC but not a virtual machine, via a secure tunnel. 
