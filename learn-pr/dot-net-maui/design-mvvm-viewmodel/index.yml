@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.dotnet-maui.design-a-mvvm-viewmodel
+metadata:
+  title: Design an MVVM viewmodel for .NET MAUI
+  description: Discover how the MVVM design pattern can help separate your business logic and user interface code. Learn about how viewmodels are designed and why they're so important.
+  ms.date: 04/21/2024
+  author: adegeo
+  ms.author: adegeo
+  ms.topic: module
+  ms.service: dotnet-mobile
+  ai-usage: ai-assisted
+title: Design an MVVM viewmodel for .NET MAUI
+summary: "Learn about the MVVM design pattern and how it can separate your business logic and user interface code. Learn how viewmodels are designed and why they're an important part of the pattern."
+abstract: |
+  By the end of this module, you'll be able to:
+  - Identify when to use the Model-View-ViewModel (MVVM) pattern.
+  - Use a viewmodel to drive visual behavior.
+  - Improve code testability through data-bindable properties.
+prerequisites: |
+  - Visual Studio 2022 with the **.NET Multi-platform App UI development** workload installed.
+  - Familiarity with intermediate programming concepts like interfaces, classes, and attributes.
+  - Ability to write XAML code.
+  - Completed the previous module in this training path or understand how data binding works in .NET MAUI.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- dotnet-maui
+- dotnet
+- vs
+units:
+- learn.dotnet-maui.design-a-mvvm-viewmodel.introduction
+- learn.dotnet-maui.design-a-mvvm-viewmodel.what-is-mvvm
+- learn.dotnet-maui.design-a-mvvm-viewmodel.use-a-viewmodel
+- learn.dotnet-maui.design-a-mvvm-viewmodel.exercise-manage-selection-with-a-viewmodel
+- learn.dotnet-maui.design-a-mvvm-viewmodel.use-commands-in-a-viewmodel
+- learn.dotnet-maui.design-a-mvvm-viewmodel.exercise-convert-event-to-command
+- learn.dotnet-maui.design-a-mvvm-viewmodel.summary
+badge:
+  uid: learn.dotnet-maui.design-a-mvvm-viewmodel.badge

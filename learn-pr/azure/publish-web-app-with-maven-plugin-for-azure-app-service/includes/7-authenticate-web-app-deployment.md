@@ -83,7 +83,7 @@ To create an Azure service principal with the Azure CLI, use the following steps
                 <schemaVersion>v2</schemaVersion>
                 <resourceGroup>MyWebApp-1714654093047-rg</resourceGroup>
                 <appName>MyWebApp-1714654093047</appName>
-                <pricingTier>F1</pricingTier>
+                <pricingTier>S1</pricingTier>
                 <region>centralus</region>
                 <auth>
                     <type>service_principal</type>
@@ -251,7 +251,7 @@ The steps to create an Azure service principal with the Azure CLI are the same a
             <schemaVersion>V2</schemaVersion>  
             <resourceGroup>maven-publish</resourceGroup>  
             <appName>MyWebApp-1234567890</appName>  
-            <pricingTier>F1</pricingTier>  
+            <pricingTier>S1</pricingTier>  
             <region>centralus</region>
             <auth>
               <type>service_principal</type>

@@ -48,9 +48,31 @@ On the GitHub site, follow these steps to create a repository from the template:
 
 [!INCLUDE [](../../includes/cleanup-steps.md)]
 
+To clean up your resources without completing the module, run the following commands in the Visual Studio Code terminal:
+
+::: zone pivot="cli"
+
+```azurecli
+az group delete --resource-group ToyWebsiteTest --yes --no-wait
+az group delete --resource-group ToyWebsiteProduction --yes --no-wait
+```
+
+The resource group is deleted in the background.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+```azurepowershell
+Remove-AzResourceGroup -Name ToyWebsiteTest -Force
+Remove-AzResourceGroup -Name ToyWebsiteProduction -Force
+```
+
+::: zone-end
+
 ## Clone the repository
 
-You now have a copy of the template repository in your own account. You will now clone this repository locally so you can start work in it.
+You now have a copy of the template repository in your own account. Next, clone this repository locally so you can start working in it.
 
 1. Select **Code** and select the copy icon.
 
@@ -214,14 +236,14 @@ To create the workload identities, the Azure CLI commands use `jq` to parse data
 
 ## Create two resource groups in Azure and grant the workload identity access
 
-Next, create a resource group for each environment. This process also grants the respective workload identity the Contributor role on the resource group, which allows your workflow to deploy to the resource group.
+Next, create a resource group for each environment. This process also grants the respective workload identity the _Contributor_ role on the resource group, which allows your workflow to deploy to the resource group.
 
 ::: zone pivot="cli"
 
 1. To create the test environment's resource group and grant the workload identity access to it, run the following Azure CLI commands in the Visual Studio Code terminal:
 
    ```bash
-   testResourceGroupResourceId=$(az group create --name ToyWebsiteTest --location westus3 --query id --output tsv)
+   testResourceGroupResourceId=$(az group create --name ToyWebsiteTest --location eastus --query id --output tsv)
 
    az ad sp create --id $testApplicationRegistrationObjectId
    az role assignment create \
@@ -233,7 +255,7 @@ Next, create a resource group for each environment. This process also grants the
 1. Run a similar process to create the production environment's resource group:
 
    ```bash
-   productionResourceGroupResourceId=$(az group create --name ToyWebsiteProduction --location westus3 --query id --output tsv)
+   productionResourceGroupResourceId=$(az group create --name ToyWebsiteProduction --location eastus --query id --output tsv)
 
    az ad sp create --id $productionApplicationRegistrationObjectId
    az role assignment create \
@@ -249,7 +271,7 @@ Next, create a resource group for each environment. This process also grants the
 1. To create the test environment's resource group and grant the workload identity access to it, run the following Azure PowerShell commands in the Visual Studio Code terminal:
 
    ```azurepowershell
-   $testResourceGroup = New-AzResourceGroup -Name ToyWebsiteTest -Location westus3
+   $testResourceGroup = New-AzResourceGroup -Name ToyWebsiteTest -Location eastus
 
    New-AzADServicePrincipal -AppId $($testApplicationRegistration.AppId)
    New-AzRoleAssignment `
@@ -261,7 +283,7 @@ Next, create a resource group for each environment. This process also grants the
 1. Run a similar process to create the production environment's resource group:
 
    ```azurepowershell
-   $productionResourceGroup = New-AzResourceGroup -Name ToyWebsiteProduction -Location westus3
+   $productionResourceGroup = New-AzResourceGroup -Name ToyWebsiteProduction -Location eastus
 
    New-AzADServicePrincipal -AppId $($productionApplicationRegistration.AppId)
    New-AzRoleAssignment `
@@ -301,7 +323,7 @@ Write-Host "AZURE_SUBSCRIPTION_ID: $($azureContext.Subscription.Id)"
 
 ## Create GitHub secrets
 
-You've created two workload identities, and resource groups that they can deploy to. Next, create secrets in GitHub Actions.
+You've created two workload identities and the resource groups where they'll be deployed. Next, create secrets in GitHub Actions.
 
 1. In your browser, navigate to your GitHub repository.
 

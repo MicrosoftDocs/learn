@@ -1,0 +1,104 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-code-improvements-using-github-copilot-tools.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/20/2024
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 8
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How can GitHub Copilot Chat assist in improving the modularity of a class?"
+    choices:
+    - content: "By suggesting potential refactoring updates based on the context of your codebase."
+      isCorrect: true
+      explanation: "Correct. GitHub Copilot Chat can suggest potential refactoring updates to improve the modularity of a class."
+    - content: "By providing a detailed analysis of the class's dependencies."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot Chat doesn't provide a detailed analysis of class dependencies, but it can suggest improvements to enhance modularity."
+    - content: "By automatically rewriting the entire class."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot Chat doesn't rewrite entire classes, but it can suggest improvements."
+  - content: "How does GitHub Copilot Chat propose fixes for bugs in your code?"
+    choices:
+    - content: "By running automated tests and identifying the root cause."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot Chat doesn't run automated tests, but it suggests possible fixes based on the context of the error or issue."
+    - content: "By suggesting code snippets and solutions based on the context of the error or issue."
+      isCorrect: true
+      explanation: "Correct. GitHub Copilot Chat proposes fixes for bugs by suggesting code snippets and solutions based on the context of the error or issue."
+    - content: "By comparing your code with a database of known bug patterns."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot Chat doesn't compare your code with a database of known bug patterns, but it suggests possible fixes based on the context of the error or issue."
+  - content: "What is the purpose of code refactoring?"
+    choices:
+    - content: "To alter the external behavior or functionality of the code."
+      isCorrect: false
+      explanation: "Incorrect. Code refactoring doesn't change the external behavior or functionality of the code."
+    - content: "To improve the internal structure of the code without altering its external behavior or functionality."
+      isCorrect: true
+      explanation: "Correct. Code refactoring is a process that enhances readability, simplifies complexity, increases modularity, and improves reusability, thereby creating a more manageable and maintainable codebase."
+    - content: "To add new features or enhancements to the code."
+      isCorrect: false
+      explanation: "Incorrect. Code refactoring isn't primarily about adding new features or enhancements, but about improving the internal structure of the code."
+  - content: "What factors can be considered when working on code quality improvements?"
+    choices:
+    - content: "The number of lines of code in the program."
+      isCorrect: false
+      explanation: "Incorrect. The number of lines of code isn't a primary factor in determining code quality."
+    - content: "The time required to write code."
+      isCorrect: false
+      explanation: "Incorrect. The time required to write code doesn't directly impact code quality."
+    - content: "Readability, complexity, modularity, reusability, testability, extensibility, reliability, performance, security, scalability, usability, and portability."
+      isCorrect: true
+      explanation: "Correct. These are all important factors to consider when working on code quality improvements."
+  - content: "What is the importance of context and intent when developing prompts for GitHub Copilot Chat?"
+    choices:
+    - content: "They determine the color scheme used by GitHub Copilot Chat."
+      isCorrect: false
+      explanation: "Incorrect. Context and intent don't affect the color scheme of GitHub Copilot Chat."
+    - content: "They control the volume of the audio output from GitHub Copilot Chat."
+      isCorrect: false
+      explanation: "Incorrect. Context and intent don't control the volume of any audio output, as GitHub Copilot Chat doesn't provide audio output."
+    - content: "They specify the scope that GitHub Copilot should examine and the goal to be achieved."
+      isCorrect: true
+      explanation: "Correct. The context should reference the workspace or a file to ensure that GitHub Copilot examines an appropriate scope when formulating a response, while the intent should describe the goal to be achieved."
+  - content: "What does code reliability refer to in software development?"
+    choices:
+    - content: "The use of modern CPU architectures by parallelizing tasks and performing I/O operations asynchronously."
+      isCorrect: false
+      explanation: "Incorrect. This is a method to improve code performance, not a definition of code reliability."
+    - content: "The likelihood that software will function correctly under specific conditions and for a certain period of time."
+      isCorrect: true
+      explanation: "Correct. Code reliability refers to the probability of a software system functioning without failure under specified conditions for a specified period of time."
+    - content: "The efficiency of a program or application."
+      isCorrect: false
+      explanation: "Incorrect. This definition refers to code performance, not code reliability."
+  - content: "What is one way to improve code reliability?"
+    choices:
+    - content: "By optimizing algorithms and data structures for the task at hand."
+      isCorrect: false
+      explanation: "Incorrect. This is a method to improve code performance, not code reliability."
+    - content: "By identifying potential issues in the code to prevent bugs and errors from occurring."
+      isCorrect: true
+      explanation: "Correct. Identifying potential issues in the code can help prevent bugs and errors from occurring, which improves code reliability."
+    - content: "By minimizing disk and network I/O operations or performing them asynchronously."
+      isCorrect: false
+      explanation: "Incorrect. This is a method to improve code performance, not code reliability."
+  - content: "What are some ways to improve exception handling in code to make it more secure?"
+    choices:
+    - content: "Revealing sensitive information in exceptions, catching general exceptions only, and swallowing exceptions."
+      isCorrect: false
+      explanation: "Incorrect. These practices don't improve exception handling. They can actually make the code less secure."
+    - content: "Avoid revealing sensitive information in exceptions, catch the most specific exceptions possible, and avoid swallowing exceptions."
+      isCorrect: true
+      explanation: "Correct. These practices can help improve exception handling in code and make it more secure."
+    - content: "Exposing detailed error information, catching only specific exceptions, and not rethrowing exceptions."
+      isCorrect: false
+      explanation: "Incorrect. Exposing detailed error information and not rethrowing exceptions can make the code less secure."

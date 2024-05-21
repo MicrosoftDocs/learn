@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-modularize-tasks-templates.explore-variables-release-pipelines
+title: Explore variables in release pipelines
+metadata:
+  title: Explore variables in release pipelines
+  description: "Explore variables in release pipelines"
+  ms.date: 05/21/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-explore-variables-release-pipelines.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-oracle-workload-azure-iaas.oracle-database-server-virtual-machine-deployment-azure-iaas
+title: Examine the process of deploying Oracle database server VMs to Azure IaaS
+metadata:
+  title: Examine the process of deploying Oracle database server VMs to Azure IaaS
+  description: Learn how to deploy Oracle database server VMs to Azure IaaS.
+  ms.date: 05/01/2024
+  author: jjaygbay1
+  ms.author: jacobjaygbay
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-oracle-database-server-virtual-machine-deployment-azure-iaas.md)]
