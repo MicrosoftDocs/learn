@@ -145,6 +145,10 @@ suggested called The Acorn?
 Sample image created.
 ![Screenshot of the drink image.](../media/mug.png)
 
+
+Image created for Acorn drink.
+
+
 ## Optional: Iterate on image with reference
 
 This step is optional, but it's fun.

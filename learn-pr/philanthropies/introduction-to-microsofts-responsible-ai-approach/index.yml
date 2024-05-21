@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.philanthropies.introduction-to-microsofts-responsible-ai-approach
+
+metadata:
+  title: Introduction to Microsoft's Responsible AI Approach
+  description: This module provides an overview of Microsoft's responsible AI principles, guidelines, and standards.
+  ms.date: 03/22/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: module
+  ms.service: artificial-intelligence
+title: Introduction to Microsoft's Responsible AI Approach
+summary: This module provides an overview of Microsoft's Responsible AI Framework. You will explore the principles, guidelines, and standards that shape Microsoft's commitment to ethical and responsible AI development.
+
+abstract: |
+  By the end of this module, you're able to:
+  -  Recognize the importance of adaptive learning in AI systems.
+  -  Develop the ability to assess how clearly articulated capabilities and performance expectations of AI systems contributes to building user trust.
+  -  Analyze the foundational principles that guide the Microsoft Responsible AI Standard Playbook. 
+
+iconUrl: /training/achievements/introduction-to-microsofts-responsible-ai-approach.svg
+levels:
+- beginner
+roles:
+- k-12-educator
+- business-user
+- higher-ed-educator
+- data-engineer
+- school-leader
+products:
+- ai-services
+- azure-machine-learning
+- azure-machine-learning-designer
+- m365-apps
+- azure-translator-text
+- azure-translator-speech
+- ms-copilot
+- language-service
+subjects:
+- artificial-intelligence
+units:
+- learn.philanthropies.introduction-to-microsofts-responsible-ai-approach.introduction
+- learn.philanthropies.introduction-to-microsofts-responsible-ai-approach.discover-microsofts-responsible-ai-principles
+- learn.philanthropies.introduction-to-microsofts-responsible-ai-approach.use-guidelines-for-human-ai-interaction
+- learn.philanthropies.introduction-to-microsofts-responsible-ai-approach.follow-the-responsible-ai-standard-playbook
+- learn.philanthropies.introduction-to-microsofts-responsible-ai-approach.knowledge-check
+- learn.philanthropies.introduction-to-microsofts-responsible-ai-approach.summary
+badge:
+  uid: learn.philanthropies.introduction-to-microsofts-responsible-ai-approach.badge

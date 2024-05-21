@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-azure-database-for-postgresql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/10/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You want to assign a coadministrator for your Azure Database for PostgreSQL flexible server, so that someone else has access if you aren't available. You would like them to be able to do anything and everything on the server. What role should be assigned to the user account?"
+    choices:
+    - content: "azuresu"
+      isCorrect: false
+      explanation: "Incorrect. Azuresu allows the user super user permissions on the server, but isn't available to administrator accounts that you can create."
+    - content: "pg_read_all_settings"
+      isCorrect: false
+      explanation: "Incorrect. pg_read_all_settings doesn't allow the user full admin permissions on the server."
+    - content: "azure_pg_admin"
+      isCorrect: true
+      explanation: "Correct. pg_admin allows the user full admin permissions on the server, and is available to assign to another administrator."
+  - content: "Your company is required to encrypt sensitive data stored on disk. As the result of an internal audit, you realize that sensitive data is being held on your Azure for PostgreSQL flexible server. What should you do?"
+    choices:
+    - content: "Nothing - your data is already encrypted."
+      isCorrect: true
+      explanation: "Correct. Azure for PostgreSQL flexible server automatically encrypts data at rest, and in transit, with keys managed by Microsoft."
+    - content: "Migrate your data to Azure Cosmos DB for PostgreSQL so that data can be encrypted with your own keys."
+      isCorrect: false
+      explanation: "Incorrect. There's no need to migrate your data to a different implementation of Azure Database for PostgreSQL."
+    - content: "Set two server parameters and restart the server."
+      isCorrect: false
+      explanation: "Incorrect. There are no server parameters for encrypting data at rest on Azure Database for PostgreSQL servers."
+  - content: "What does the following query do? CREATE ROLE \"kerry@allen.dev\" WITH LOGIN **SUPERUSER**;"
+    choices:
+    - content: "Creates a new user with sign in and superuser permissions."
+      isCorrect: false
+      explanation: "Incorrect. You can't create a superuser role in Azure Database for PostgreSQL."
+    - content: "Creates a new user with sign in and admin permissions."
+      isCorrect: false
+      explanation: "Incorrect. You can't assign superuser permissions in Azure Database for PostgreSQL."
+    - content: "Returns an error message."
+      isCorrect: true
+      explanation: "Correct. You can't create a superuser role in Azure Database for PostgreSQL and the query returns an error."

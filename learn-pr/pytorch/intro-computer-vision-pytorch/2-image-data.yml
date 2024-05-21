@@ -6,7 +6,7 @@ metadata:
   description: In this unit, we learn how computer images can be represented as tensors in PyTorch, and how to do handle image datasets
   author: shwars
   ms.author: chnoring
-  ms.date: 04/14/2020
+  ms.date: 06/04/2020
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 5

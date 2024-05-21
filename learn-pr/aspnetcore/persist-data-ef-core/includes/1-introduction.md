@@ -24,9 +24,9 @@ In this module, you'll:
 
 The following tools are required.
 
-### .NET 7.0 SDK
+### .NET 8.0 SDK
 
-[!include[](../../../includes/dotnet7-sdk-version.md)]
+[!include[](../../../includes/dotnet8-sdk-version.md)]
 
 ### Git command-line client
 

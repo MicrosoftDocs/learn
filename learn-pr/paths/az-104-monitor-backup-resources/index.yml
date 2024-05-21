@@ -72,7 +72,6 @@ modules:
 - learn.wwl.configure-file-folder-backups
 - learn.wwl.configure-virtual-machine-backups
 - learn.wwl.configure-azure-monitor
-- learn.wwl.configure-azure-alerts
 - learn.wwl.configure-log-analytics
 - learn.wwl.configure-network-watcher
 - learn.incident-response-with-alerting-on-azure

@@ -1,0 +1,82 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-azure-load-testing.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/13/2024
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of the test engine in Azure Load Testing?"
+    choices:
+    - content: "It's a computing infrastructure that runs the Apache JMeter test script."
+      isCorrect: true
+      explanation: "Correct. The test engine runs the Apache JMeter test script and can be scaled out for larger tests."
+    - content: "To specify the list of URL endpoints to test."
+      isCorrect: false
+      explanation: "Incorrect. The test engine runs the Apache JMeter test script."
+    - content: "To store the results of the load test."
+      isCorrect: false
+      explanation: "Incorrect. The test engine runs the Apache JMeter test script."
+  - content: "What is the purpose of parameters in Azure Load Testing?"
+    choices:
+    - content: "To hard-code values in the JMeter script"
+      isCorrect: false
+      explanation: "Incorrect. Parameters are used to make the test plan configurable, not to hard-code values."
+    - content: "To make the test plan configurable instead of hard-coding values in the JMeter script"
+      isCorrect: true
+      explanation: "Correct. Parameters allow for key-value pairs in the load test configuration, which can be referenced in the JMeter script."
+    - content: "To split the CSV input data evenly across all engine instances"
+      isCorrect: false
+      explanation: "Incorrect. Splitting CSV input data is a separate feature, not related to parameters."
+  - content: "What is the purpose of the 'engineInstances' key in a load test configuration?"
+    choices:
+    - content: "It specifies the number of virtual users in the test script."
+      isCorrect: false
+      explanation: "Incorrect. The 'engineInstances' key doesn't specify the number of virtual users in the test script."
+    - content: "It determines the load pattern in the test script."
+      isCorrect: false
+      explanation: "Incorrect. The 'engineInstances' key doesn't determine the load pattern in the test script."
+    - content: "It specifies the number of parallel test engine instances for running the test plan."
+      isCorrect: true
+      explanation: "Correct. The 'engineInstances' key is used to specify the number of parallel test engine instances for running the test plan."
+  - content: "What is the purpose of defining fail criteria in Azure Load Testing?"
+    choices:
+    - content: "To define performance and quality expectations for your application under load."
+      isCorrect: true
+      explanation: "Correct. Fail criteria in Azure Load Testing lets you define performance and quality expectations for your application under load."
+    - content: "To ensure that the total number of requests per second doesn't exceed a threshold."
+      isCorrect: false
+      explanation: "Incorrect. While this criteria could be a part of the fail criteria, it's not the overall purpose. The purpose is to define performance and quality expectations for an application under load."
+    - content: "To trigger a load test to start when the error rate surpasses a given threshold."
+      isCorrect: false
+      explanation: "Incorrect. Fail criteria isn't used to start a load test, but rather to define performance and quality expectations for an application under load."
+  - content: "What is the purpose of using secrets in Azure Load Testing?"
+    choices:
+    - content: "To securely pass sensitive information like web service credentials to the load test engine without hard-coding them in the test script."
+      isCorrect: true
+      explanation: "Correct. Secrets in Azure Load Testing are used to securely pass sensitive information to the load test engine."
+    - content: "To hard code sensitive information in the JMeter test script."
+      isCorrect: false
+      explanation: "Incorrect. Secrets are used to avoid hard coding sensitive information in the JMeter test script."
+    - content: "To store nonsensitive information and make it available as environment variables in the load test engine."
+      isCorrect: false
+      explanation: "Incorrect. Secrets are used to store sensitive information, not nonsensitive information."
+  - content: "What is the role of a service principal in the context of automating Azure load testing using GitHub Actions?"
+    choices:
+    - content: "It represents the GitHub Actions workflow in Microsoft Entra ID and is granted permissions to create and run a load test with the Azure Load Testing resource."
+      isCorrect: true
+      explanation: "Correct. The service principal acts as an identity for the GitHub Actions workflow, allowing it to interact with the Azure Load Testing resource."
+    - content: "It represents the Azure Load Testing resource in Microsoft Entra ID."
+      isCorrect: false
+      explanation: "Incorrect. The service principal doesn't represent the Azure Load Testing resource, but rather the GitHub Actions workflow."
+    - content: "It's used to create and manage test plans, test results, and related artifacts."
+      isCorrect: false
+      explanation: "Incorrect. The service principal doesn't directly manage test plans or results. It provides access for the GitHub Actions workflow to the Azure Load Testing resource."

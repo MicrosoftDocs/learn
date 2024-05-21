@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-audit-search-investigate.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/01/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the main difference between Audit (Standard) and Audit (Premium) regarding audit log retention periods?"
+    choices:
+    - content: "Audit (Standard) offers a maximum retention period of 180 days."
+      isCorrect: true
+      explanation: "Correct: Audit (Standard) supports a retention period of 180 days by default."
+    - content: "Audit (Standard) supports 10-year retention policies."
+      isCorrect: false
+      explanation: "Incorrect: 10-year retention is available only in Audit (Premium) with a required add-on license."
+    - content: "Both versions offer indefinite retention."
+      isCorrect: false
+      explanation: "Incorrect: Neither version offers indefinite retention; they have specific retention limits."
+  - content: "What step should be taken first before searching the audit log in Microsoft Purview?"
+    choices:
+    - content: "Install the latest updates for Microsoft 365."
+      isCorrect: false
+      explanation: "Incorrect: While keeping software updated is important for security, it's not a prerequisite for conducting audit log searches."
+    - content: "Confirm audit log search is enabled."
+      isCorrect: true
+      explanation: "Correct: Confirm audit log search is enabled with the Get-AdminAuditLogConfig command."      
+    - content: "Export the existing audit logs to a CSV file for backup."
+      isCorrect: false
+      explanation: "Incorrect: Exporting logs for backup isn't the first step required before conducting searches."      
+  - content: "What feature of Microsoft Purview Audit (Premium) is essential for managing sensitive communications securely?"
+    choices:
+    - content: "Standard data retention."
+      isCorrect: false
+      explanation: "Incorrect: Standard data retention doesn't provide the necessary detail for managing sensitive communications."
+    - content: "Basic audit logs."
+      isCorrect: false
+      explanation: "Incorrect: Basic audit logs don't provide the detailed access information needed for sensitive communications."
+    - content: "MailItemsAccessed."
+      isCorrect: true
+      explanation: "Correct: MailItemsAccessed is important for providing detailed records of how and when email items are accessed, essential for managing sensitive communications."
+  - content: "What is the primary purpose of exporting audit logs to CSV in Microsoft Purview Audit?"
+    choices:
+    - content: "To perform detailed data analysis and meet compliance reporting requirements."
+      isCorrect: true
+      explanation: "Correct: Exporting audit logs to CSV enables extensive data manipulation and deeper insights, essential for compliance and detailed analysis."
+    - content: "To reduce the storage space used on servers."
+      isCorrect: false
+      explanation: "Incorrect: Exporting to CSV is used for analysis and compliance, not primarily for reducing storage requirements."
+    - content: "To enhance the visual presentation of data."
+      isCorrect: false
+      explanation: "Incorrect: While visual presentation might be improved, the primary purpose isn't focused on aesthetics."
+  - content: "How are audit log retention policies prioritized in Microsoft Purview Audit (Premium) when conflicts occur?"
+    choices:
+    - content: "Based on the date the policy was created."
+      isCorrect: false
+      explanation: "Incorrect: Policies aren't prioritized based on their creation date."
+    - content: "Alphabetically by policy name."
+      isCorrect: false
+      explanation: "Incorrect: Alphabetical order of policy names doesn't determine their priority."
+    - content: "By a priority level set by the administrator."
+      isCorrect: true
+      explanation: "Correct: Administrators set a priority level to determine which policy takes precedence if there are conflicts."

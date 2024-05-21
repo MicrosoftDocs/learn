@@ -3,7 +3,7 @@ uid: learn.design-monitoring-strategy-on-azure.4-security-center
 metadata:
   title: Manage infrastructure security by using Defender for Cloud
   description: Learn how to monitor, analyze, and manage infrastructure security by using Microsoft Defender for Cloud.
-  ms.date: 12/03/2019
+  ms.date: 11/13/2023
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit

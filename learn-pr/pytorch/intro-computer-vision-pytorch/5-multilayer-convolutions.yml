@@ -6,7 +6,7 @@ metadata:
   description: In this unit, we learn how several convolutional layers can be stacked in order to recognize hierarchy of patterns that build up objects on the image.
   author: shwars
   ms.author: chnoring
-  ms.date: 04/14/2020
+  ms.date: 06/04/2020
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 10

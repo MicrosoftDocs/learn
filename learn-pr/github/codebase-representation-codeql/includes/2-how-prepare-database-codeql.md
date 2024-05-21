@@ -1,3 +1,4 @@
+
 CodeQL treats code like data. You create a database using queryable data that you extracted from your code base. Then you can run CodeQL queries on this database to identify security vulnerabilities, bugs, and other errors. You can write your own queries or run standard CodeQL queries written by GitHub researchers and community contributors.
 
 In this unit, you'll learn how to create a database. This step is required before you can analyze your code. You need to create a CodeQL database containing all the data necessary to run queries on your code. CodeQL analysis relies on extracting relational data from your code and using it to build a CodeQL database. These databases contain all of the important information about a codebase. 
@@ -21,46 +22,19 @@ Source file extraction from the codebase works by monitoring the normal build pr
 
 Use the following steps to set up the CodeQL CLI.
 
-### 1. Download the CodeQL CLI zip package
+### 1. Download the CodeQL CLI bundle zip package
 
-You'll need two things to begin using the CodeQL CLI:
+It's recommended to install the CodeQL CLI and queries by downloading the bundled package. This ensures compatibility and improved performance as opposed to downloading the CLI and queries repo separately. The CodeQL CLI download package is a zip archive containing tools, scripts, and various CodeQL-specific files. The bundle includes the CodeQL CLI, compatible versions of the queries and libraries from the CodeQL Github repo, and precompiled versions of the included queries. 
 
-- The CLI 
-- The query libraries, which include the local CodeQL queries in that repo
+You can download the bundle by navigating to the CodeQL public repository under the releases<sup>[4]</sup> section, and downloading the platform specific bundle from underneath "assets." On this page you can also view the changelogs for releases as well as downloads for previous versions of the CodeQL bundle. If needed, you can download `codeql-bundle.tar.gz`, which contains the CLI for all supported platforms
 
-The CodeQL CLI download package is a zip archive containing tools, scripts, and various CodeQL-specific files. You can download the `codeql-PLATFORM.zip` file for the specific CLI platform you want to use. Alternatively, you can download the `codeql.zip` file that contains the CLI for all supported platforms.
+### 2. Extract the zip archive
 
-Download the zip archive for Linux, Windows, or macOS, from [github/codeql-cli-binaries](https://github.com/github/codeql-cli-binaries). Then download the appropriate `codeql-PLATFORM.zip` file for a specific platform. Alternatively, you can download `codeql.zip` that contains the CLI for all supported platforms.
+If you're using Linux, Windows, or macOS, you can simply extract the zip archive into the directory of your choice.
 
-### 2. Create a new CodeQL directory
+Additional steps need to be taken for macOS "Catalina"<sup>[5]</sup> (or newer) users.
 
-Place the CLI and any queries and libraries you want to use into a CodeQL directory.
-
-Here's an example of a new CodeQL directory: `$HOME/codeql-home`.
-
-The CLI's built-in search operations automatically looks in all sibling directories for the files used in the database creation and analysis. The analysis can only complete successfully when the necessary query libraries are found in a related sibling directory. 
-
-You can prevent the CLI from searching unrelated sibling directories by keeping the components in their own directory. Keeping the components in their own directory ensures all files are available without specifying any further options on the command line.
-
-### 3. Obtain a local copy of the CodeQL queries
-
-The CodeQL repository on GitHub contains the queries and libraries for CodeQL analysis of C/C++, C#, Java, JavaScript/TypeScript, Python, and Ruby. The CodeQL for Go repository on GitHub is contained within the CodeQL repository and contains the libraries and queries for Go analysis.
-
-Clone a copy of the repository into your CodeQL directory `codeql-home`. The root of the cloned repository will be called`codeql` by default. After creating the clone, rename the folder`codeql-repo` so that you don't have a conflict with the CodeQL CLI that you'll extract in the next step.
-
-You can also clone and rename the repository in a single step when using git from the command line by running `git clone git@github.com:github/codeql.git codeql-repo` in the `codeql-home`.
-
-For example, if the root of the cloned CodeQL repository is `$HOME/codeql-home/codeql-repo`, then the root of the cloned CodeQL for Go repository should be `$HOME/codeql-home/codeql-go`.
-
-The queries and libraries are organized into QL packs within these repositories. QL packs contain important metadata that tells the CodeQL CLI how to process the query files, along with the queries themselves. You'll learn more about the QL language in the next unit.
-
-### 4. Extract the zip archive
-
-If you're using Linux, Windows, and macOS, you can extract the zip archive into the directory you created in step 2.
-
-For example, if the path to your copy of the CodeQL repository is `$HOME/codeql-home/codeql-repo`, then extract the CLI into `$HOME/codeql-home/`.
-
-### 5. Launch `codeql`
+### 3. Launch `codeql`
 
 After extraction, you can follow one of the below steps to use the `codeql` executable to run the CodeQL processes.
 
@@ -73,10 +47,9 @@ Now you're able to execute CodeQL commands.
 
 You can also execute CodeQL CLI subcommands to verify that you correctly set up and can analyze databases.
 
-- Run `codeql resolve languages` to show which languages are available for database creation. This will list the languages supported by default in your CodeQL CLI package.
-- Run `codeql resolve qlpacks` to show which QL packs the CLI can find. This will display the names of the QL packs included in the CodeQL repositories: `codeql-cpp`, `codeql-csharp`, `codeql-go`, `codeql-java`, `codeql-javascript`, and `codeql-python`. The CodeQL repositories also contain ‘upgrade’ packs and ‘legacy’ packs. 
-    - Upgrade packs are used by the CLI when you want to upgrade a database so that it can be analyzed with a newer version of the CodeQL toolchain than was used to create it. 
-    - Legacy packs ensure that custom queries and libraries created using older products are compatible with your version of CodeQL.
+- Run `codeql resolve qlpacks` (if codeql was added to your PATH) to show which QL packs the CLI can find or `/<extraction-root>/codeql/codeql resolve qlpacks` otherwise. This will display the names of the QL packs included in the CodeQL CLI bundle, shown in the earlier steps as `<extraction root>`. If the CodeQL CLI is unable to locate the qlpacks for the expected languages, check that you downloaded the CodeQL bundle and not a standalone copy of the CodeQL CLI.
+
+- Run `codeql resolve languages` to show which languages are available supported by default in your CodeQL CLI package.
 
 ## Create a database
 
@@ -100,48 +73,40 @@ You can also specify additional options. These options depend on the location of
 - `--command` is used when you create a database for one or more compiled languages. This option isn't needed if you're only using Python and JavaScript
 - `--no-run-unnecessary-builds` is used along with `--db-cluster` to suppress the build command for languages where the CodeQL CLI doesn't need to monitor the build
 
-Additionally, you can create a new directory that can include the CLI and any queries you want to use. The CLI's built-in search operations automatically look in all of the directory's sibling directories for the files used in the database creation.
-
-For example:
->
-```
-- $HOME/codeql-home
-```
->
+After the database is successfully created, there will be a new directory at the path specified in the command. If you used the --db-cluster option to create more than one database, a subdirectory is created for each language. Each CodeQL database directory contains a number of subdirectories, including the relational data used for analysis and a source archive. The source archive is a copy of the source files made at the time the database was created used for displaying analysis results.
 
 ## Extractors
 
 An extractor is a tool that produces the relational data and source reference for each input file, from which a CodeQL database can be built. Each language supported by CodeQL has one extractor. This ensures that the extraction process is as accurate as possible.
 
-Each extractor defines its own set of configuration options. For CodeQL CLI v2.7.1 and above, typing `codeql resolve extractor --format=betterjson` will result in data formatted like the following example:
+Each extractor defines its own set of configuration options. Typing `codeql resolve extractor --format=betterjson` will result in data formatted like the following example:
 
 >
 ```
 {
-     "
-     extractor_root" : "/home/user/codeql/java",
-     "extractor_options" : {
-         "option1" : {
-         "title" : "Java extractor option 1",
-         "description" : "An example string option for the Java extractor.",
-         "type" : "string",
-         "pattern" : "[a-z]+"
-         },
-     "group1" : {
-         "title" : "Java extractor group 1",
-         "description" : "An example option group for the Java extractor.",
-         "type" : "object",
-         "properties" : {
-             "option2" : {
-                 "title" : "Java extractor option 2",
-                 "description" : "An example array option for the Java extractor",
-                 "type" : "array",
-                 "pattern" : "[1-9][0-9]*"
+    "extractor_root" : "/home/user/codeql/java",
+    "extractor_options" : {
+        "option1" : {
+            "title" : "Java extractor option 1",
+            "description" : "An example string option for the Java extractor.",
+            "type" : "string",
+            "pattern" : "[a-z]+"
+        },
+        "group1" : {
+            "title" : "Java extractor group 1",
+            "description" : "An example option group for the Java extractor.",
+            "type" : "object",
+            "properties" : {
+                "option2" : {
+                    "title" : "Java extractor option 2",
+                    "description" : "An example array option for the Java extractor",
+                    "type" : "array",
+                    "pattern" : "[1-9][0-9]*"
+                }
             }
-         }
-     }
-     }
- }
+        }
+    }
+}
 ```
 
 To find out which options are available for your language's extractor, type `codeql resolve languages --format=betterjson` or `codeql resolve extractor --format=betterjson`.
@@ -172,12 +137,12 @@ The CodeQL library defines classes to provide a layer of abstraction over each o
 
 Now let's talk about some potential shortfalls of database creation in the code scanning workflow. This section specifically looks at using the GitHub CodeQL action.
 
-You need to use a language matrix for `autobuild` to build each of the compiled languages listed in the matrix. If you don't use a matrix, then `autobuild` attempts to build the supported compiled language with the most source files in the repository. Analysis of compiled languages, other than Go, will fail unless you supply explicit commands. A matrix can be used to create jobs for more than one supported version of a programming language, operating system, or tool.
+You need to use a language matrix for `autobuild` to build each of the compiled languages listed in the matrix. A matrix can be used to create jobs for more than one supported version of a programming language, operating system, or tool. If you don't use a matrix, then `autobuild` attempts to build the supported compiled language with the most source files in the repository. Analysis of compiled languages, other than Go, will often fail unless you supply explicit commands to build the code before performing the analysis step.
 
-The `autobuild` step behavior varies depending on the operating system that the extractor runs on. The `autobuild` step attempts to autodetect a suitable build method for C/C++ on Windows. It reviews the files present in the repository to determine the system used on Linux and macOS. You must understand the operating system and language used for CodeQL to work correctly.
+The `autobuild` step behavior varies depending on the operating system that the langauge extractor runs on. The `autobuild` step attempts to autodetect a suitable build method for the language based on the OS, this can lead to unreliable results for **compiled langauges** though, and will often result in a failed run. It's recommended that you configure a build step within the code scanning workflow file that runs before analysis, rather than letting `autobuild` attempt to build compiled languages. This way the workflow file is tailored to your system and project's build requirements, allowing for more reliable scans.
 
-You will use build projects for compiled languages without specifying any build commands with CodeQL autobuilders. CodeQL examines the source for evidence of a build system and attempts to run the optimal commands required to extract a database when an autobuilder is invoked.
+You can read more on specific langauges and the steps autobuild attempts in the documentation<sup>[6]</sup>
 
 ## VS Code extension
 
-Additionally, you can use Visual Studio (VS) Code and the CodeQL extension, as long as you're using VS Code 1.39 or later. Using the extension and CodeQL, you can compile and run queries. You can download the extension from the Visual Studio Code Marketplace. Download the CodeQL VSIX file. The extension uses your installed CLI found on your `PATH`, if it's available. This most likely occurred if you create your own CodeQL databases. If not, the extension automatically manages access to the executable of the CLI for you. In doing so, this ensures that the CLI is compatible with the CodeQL extension.
+Additionally, you can use Visual Studio (VS) Code and the CodeQL extension, as long as you're using VS Code 1.39 or later. Using the extension and CodeQL, you can compile and run queries. You can download the extension from the Visual Studio Code Marketplace or by downloading the CodeQL VSIX file. The extension uses your installed CLI found on your `PATH` if it's available. If not, the extension automatically manages access to the executable of the CLI for you. In doing so, this ensures that the CLI is compatible with the CodeQL extension.

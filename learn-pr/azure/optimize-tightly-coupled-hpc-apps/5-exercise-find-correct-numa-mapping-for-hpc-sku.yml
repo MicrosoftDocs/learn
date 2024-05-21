@@ -4,7 +4,7 @@ title: Exercise - Find the correct NUMA mapping for an HPC SKU
 metadata:
   title: Exercise - Find the correct NUMA mapping for an HPC SKU
   description: Find the core to NUMA node domain mapping for an HPC SKU.
-  ms.date: 02/04/2021
+  ms.date: 05/09/2023
   author: garvct
   ms.author: cogarvey
   ms.topic: unit

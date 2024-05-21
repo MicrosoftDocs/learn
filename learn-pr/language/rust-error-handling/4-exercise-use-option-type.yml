@@ -3,7 +3,7 @@ uid: learn.language.rust-error-handling.4-exercise-use-option-type
 metadata:
   title: Exercise - Use the Option type to deal with absence
   description: Use what you've learned about the Option type to complete this exercise.
-  ms.date: 12/14/2020
+  ms.date: 01/05/2023
   author: meaghanlewis
   ms.author: chnoring
   ms.topic: unit

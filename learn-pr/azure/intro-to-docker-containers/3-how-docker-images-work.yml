@@ -5,7 +5,7 @@ title: How Docker images work
 metadata:
   title: How Docker images work
   description: In this unit, we discuss how we build Docker images and explore basic image management.
-  ms.date: 03/24/2023
+  ms.date: 09/16/2023
   author: rayoef
   ms.author: rayoflores
   ms.topic: unit

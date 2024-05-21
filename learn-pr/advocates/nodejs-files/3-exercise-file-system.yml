@@ -4,8 +4,8 @@ title: Exercise - Work with the file system
 metadata:
   title: Exercise - Work with the file system
   description: Use the "fs" module to read files and folders on the file system.
-  author: burkeholland
-  ms.author: buhollan
+  author: diberry
+  ms.author: diberry
   ms.date: 06/05/2023
   ms.topic: unit
   ms.custom:

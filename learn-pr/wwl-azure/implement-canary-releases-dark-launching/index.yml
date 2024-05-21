@@ -3,20 +3,27 @@ uid: learn.wwl.implement-canary-releases-dark-launching
 metadata:
   title: Implement canary releases and dark launching
   description: "Implement canary releases and dark launching"
-  ms.date: 03/02/2022
+  ms.date: 05/06/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
 title: Implement canary releases and dark launching
 summary: This module describes deployment strategies around canary releases and dark launching and examines traffic managers.
 abstract: |
-  By the end of this module, you'll be able to:
-  *   Describe deployment strategies
-  *   Implement canary release
-  *   Explain traffic manager
-  *   Understand dark launching
-prerequisites: |
-  None
+  By the end of this module, you're able to:
+
+  -   Describe deployment strategies.
+
+  -   Implement canary release.
+
+  -   Explain traffic manager.
+
+  -   Understand dark launching.
+prerequisites: None
 iconUrl: /training/achievements/6-implement-canary-releases-and-dark-launching.svg
 levels:
 - advanced

@@ -1,19 +1,19 @@
-This module focuses on configuring and managing security monitoring and automation solutions using Azure Monitor and Microsoft Sentinel, enabling organizations to proactively identify and respond to security incidents in their cloud environment.
+This module focuses on the essential techniques for configuring and managing threat protection exclusively with Microsoft Defender for Cloud, empowering cybersecurity specialists to strengthen the security posture of their cloud environments.
 
 ## Scenario
 
-Imagine you are a cybersecurity specialist responsible for safeguarding your organization's cloud resources. You need to implement effective security monitoring to detect and respond to security events and automate responses to incidents swiftly and accurately.
+Picture yourself as the primary defender of your organization's cloud assets, entrusted with implementing robust security measures using only Microsoft Defender for Cloud to safeguard against a myriad of cyber threats.
 
 ## Learning objectives
 
 By the end of this module, participants will be able to:
 
- -  Monitor security events effectively using Azure Monitor to gain visibility into their cloud environment.
- -  Configure data connectors in Microsoft Sentinel to collect and aggregate security data from various sources.
- -  Create and customize analytics rules in Microsoft Sentinel to detect specific security threats and anomalies.
- -  Evaluate alerts and incidents in Microsoft Sentinel to assess the severity and impact of security events.
- -  Configure automation in Microsoft Sentinel to orchestrate incident response actions and streamline security workflows.
+ -  Master the configuration of Microsoft Defender for Cloud to effectively monitor and protect cloud resources.
+ -  Implement advanced threat detection strategies using Microsoft Defender for Cloud's built-in capabilities.
+ -  Utilize Microsoft Defender for Cloud's threat intelligence to proactively identify and mitigate security risks.
+ -  Configure and fine-tuning security policies within Microsoft Defender for Cloud to align with organizational security requirements.
+ -  Develop expertise in incident response and remediation using Microsoft Defender for Cloud's integrated tools and features.
 
 ## Goals
 
-The module aims to equip participants with the knowledge and skills needed to configure and manage security monitoring and automation solutions effectively. Participants will learn how to monitor security events, set up data connectors, create customized analytics rules, evaluate alerts and incidents, and automate response actions, enhancing their organization's ability to detect and respond to security threats in a timely and efficient manner.
+This module aims to equip cybersecurity specialists with the knowledge and skills required to proficiently configure and manage threat protection solutions exclusively with Microsoft Defender for Cloud, thereby enhancing the resilience of their organization's cloud infrastructure against cyber threats.

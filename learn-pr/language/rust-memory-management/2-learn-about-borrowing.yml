@@ -3,7 +3,7 @@ uid: learn.languages.rust-memory-management.2-learn-about-borrowing
 metadata:
   title: Learn about borrowing
   description: Learn about one of Rust's most unique features, how to borrow mutable data.
-  ms.date: 05/16/2021
+  ms.date: 01/17/2023
   author: meaghanlewis
   ms.author: chnoring
   ms.topic: unit

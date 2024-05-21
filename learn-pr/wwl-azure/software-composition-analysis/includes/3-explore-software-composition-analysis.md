@@ -1,4 +1,3 @@
-
 Two crucial areas of the Secure DevOps pipeline are Package management and Open-Source Software OSS components.
 
 ## Package management

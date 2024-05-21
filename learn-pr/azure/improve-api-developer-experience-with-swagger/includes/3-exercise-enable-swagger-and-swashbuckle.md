@@ -73,14 +73,14 @@ Because you created the API, you knew its shape, but an external developer who w
     ```csharp
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
-        app.UseSwagger();
-        app.UseSwaggerUI(c =>
-        {
-            c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-        });
-
         if (env.IsDevelopment())
         {
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+            });
+
             app.UseDeveloperExceptionPage();
         }
 

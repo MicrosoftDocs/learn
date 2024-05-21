@@ -3,25 +3,27 @@ uid: learn.languages.csharp-choose-data-type.exercise-reference-types
 title: Exercise - Discover reference types
 metadata:
   title: Exercise - Discover reference types
-  description: "Exercise - Discover reference types"
-  ms.date: 02/21/2024
+  description: "Discover reference types, and how they're different from value types."
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/5-exercise-reference-types.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What variable type is created if the `new` operator is used to create a variable?"
+  - content: "In C#, when the `new` keyword is used to create an instance of a `class`, where is the memory allocated?"
     choices:
-    - content: "value"
+    - content: "Stack"
       isCorrect: false
-      explanation: "That’s incorrect. The `new` operator isn't used to create value types on the stack."
-    - content: "reference"
+      explanation: "Incorrect. Instances of classes aren't typically allocated on the stack."
+    - content: "Heap"
       isCorrect: true
-      explanation: "That’s correct. The `new` operator is used to allocate memory on the heap for a reference type."
-    - content: "integer type"
+      explanation: "Correct. Instances of classes are allocated on the heap when created with the `new` keyword."
+    - content: "Variable"
       isCorrect: false
-      explanation: "That’s incorrect. The `new` operator isn't used to create an integer variable. Integers are value types."
+      explanation: "Incorrect. The term \"variable\" refers to the identifier used to access stored data, not the location of memory allocation."

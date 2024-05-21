@@ -3,12 +3,13 @@ uid: learn.wwl.implement-azure-monitoring-for-sap-workloads-azure-vms.introducti
 title: Introduction
 metadata:
   title: Introduction
-  description: "Introduction"
-  ms.date: 03/09/2021
+  description: "Introduction to the module."
+  ms.date: 03/28/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
-azureSandbox: false
+  ms.custom:
+  - N/A
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

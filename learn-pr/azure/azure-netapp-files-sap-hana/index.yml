@@ -2,14 +2,14 @@
 uid: learn.azure.azure-netapp-files-sap-hana
 metadata:
   moduleType: introduction        
-  title: Using Azure NetApp Files application groups with SAP HANA       
+  title: Using Azure NetApp Files application volume groups for SAP HANA       
   description: This module helps you understand Microsoft Azure NetApp Files and how to use the service with virtual machines running SAP HANA.       
   ms.date: 02/27/2023
   author: b-ahibbard   
   ms.author: anfdocs           
   ms.topic: module
   ms.service: azure-netapp-files
-title:  Using Azure NetApp Files application groups with SAP HANA   
+title:  Using Azure NetApp Files application volume groups for SAP HANA   
 summary: This module helps you understand Microsoft Azure NetApp Files and how to use the service with virtual machines running SAP HANA. 
 abstract: |
   By the end of this module, you'll be able to describe the following: 

@@ -4,7 +4,7 @@ title: Exercise - Connect a room environment monitor to Azure IoT Hub
 metadata:
   title: Exercise - Connect a room environment monitor to Azure IoT Hub
   description: In this section, we connect a room environment monitor to Azure IoT Hub.
-  ms.date: 6/26/2020
+  ms.date: 12/11/2020
   author: leestott
   ms.author: leestott
   ms.topic: unit

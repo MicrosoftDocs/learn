@@ -3,7 +3,7 @@ uid: learn.wwl.az-400-implement-ci-azure-pipelines-github-actions
 metadata:
   title: 'AZ-400: Implement CI with Azure Pipelines and GitHub Actions'
   description: 'AZ-400: Implement CI with Azure Pipelines and GitHub Actions'
-  ms.date: 05/17/2022
+  ms.date: 05/06/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: learning-path
@@ -12,7 +12,7 @@ prerequisites: |
   None
 summary: |
   This learning path introduces the continuous integration concept using Azure Pipelines and GitHub Actions and provides instruction on configuring those services and building applications.
-iconUrl: /training/achievements/az-400-implement-ci-with-azure-pipelines-and-github-actions.svg
+iconUrl: /learn/achievements/az-400-implement-ci-with-azure-pipelines-and-github-actions.svg
 levels:
 - advanced
 roles:
@@ -38,7 +38,6 @@ modules:
 - learn.wwl.explore-azure-pipelines
 - learn.wwl.manage-azure-pipeline-agents-pools
 - learn.wwl.describe-pipelines-concurrency
-- learn.wwl.explore-continuous-integration
 - learn.wwl.implement-pipeline-strategy
 - learn.wwl.integrate-azure-pipelines
 - learn.wwl.introduction-to-github-actions

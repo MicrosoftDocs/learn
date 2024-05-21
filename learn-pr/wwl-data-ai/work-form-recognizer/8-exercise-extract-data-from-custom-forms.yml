@@ -4,13 +4,12 @@ title: Exercise - Extract data from custom forms
 metadata:
   title: Exercise - Extract data from custom forms
   description: "Exercise - Extract data from custom forms"
-  ms.date: 10/18/2023
+  ms.date: 04/18/2024
   author: wwlpublish
   ms.author: berryivor
   ms.topic: unit
-azureSandbox: false
-labModal: true
 labId: 152394
+labModal: true
 durationInMinutes: 25
 content: |
   [!include[](includes/8-exercise-extract-data-from-custom-forms.md)]
