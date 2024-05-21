@@ -6,7 +6,7 @@ metadata:
   ms.date: 5/10/2024
   author: abrilurena
   ms.author: abrilu
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.prod: github
 title: Using GitHub Copilot with Python
 summary: "Use GitHub Copilot, an AI pair programmer that offers autocomplete-style suggestions as you code, to work with Python"
@@ -32,7 +32,7 @@ products:
   - github
 subjects:
   - devops
-  - development-tools
+  - productivity
 units:
 - learn.advanced-github-copilot.introduction
 - learn.advanced-github-copilo.advanced-github-copilot-features
