@@ -12,7 +12,7 @@ durationInMinutes: 5
 quiz:
   title: ""
   questions:
-  - content: "What is the first step in creating a new Real-Time Dashboard in Power BI?"
+  - content: "What is the first step in creating a new Real-Time Dashboard in Microsoft Fabric?"
     choices:
     - content: "Adding a tile to the dashboard"
       isCorrect: false
