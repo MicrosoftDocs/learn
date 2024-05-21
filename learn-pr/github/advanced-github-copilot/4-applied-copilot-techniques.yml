@@ -12,7 +12,6 @@ metadata:
   ms.author: abrilu
   ms.topic: unit
   ms.custom: devx-track-python
-  ms.service: github-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/4-applied-copilot-techniques.md)]
