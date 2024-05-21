@@ -2,7 +2,7 @@
 
 Your company is subject to many regulations and compliance rules. Your company wants to ensure each department implements and deploys resources correctly. You're responsible for investigating how to use Azure Policy and management groups to implement compliance measures.
 
-In this module, you learn how to implement Azure policies. The content includes examples of policy definitions and initiative definitions. You learn how to scope your policies and identity noncompliant resources. You also learn the benefits and usage of management groups.
+In this module, you learn how to implement Azure policies. The content includes examples of policy definitions and initiative definitions. You learn how to scope your policies and identify noncompliant resources. You also learn the benefits and usage of management groups.
 
 The goal to this module is to ensure Administrators can use Azure policy to ensure resource compliance. 
 
