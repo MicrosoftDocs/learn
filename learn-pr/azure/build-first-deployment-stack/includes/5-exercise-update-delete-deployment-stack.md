@@ -26,56 +26,59 @@ You are on sprint 2 for the new deposits application. You want to test updating 
 
 ::: zone pivot="cli"
 
-With the Bicep file updated, we want to update the deployment stack so that the new Azure SQL database is deployed to the environment as a managed resource. 
+With the Bicep file updated, we want to update the deployment stack so that the new Azure SQL database is deployed to the environment as a managed resource.
 
-With the Bicep file updated, we want to update the deployment stack so that the new Azure SQL database is deployed to the environment as a managed resource. To update the deployment stack, run the following command from the terminal in Visual Studio Code.
+1. To update the deployment stack, run the following command from the terminal in Visual Studio Code.
 
-```azurecli
-az stack group create \
-    --name stack-deposits \
-    --resource-group rg-depositsApplication \
-    --template-file ./main.bicep \
-    --action-on-unmanage deleteAll \
-    --deny-settings-mode none
-```
+    ```azurecli
+    az stack group create \
+        --name stack-deposits \
+        --resource-group rg-depositsApplication \
+        --template-file ./main.bicep \
+        --action-on-unmanage deleteAll \
+        --deny-settings-mode none
+    ```
 
-> [!NOTE]
-> AZ CLI does not have a dedicated command to update a deployment stack. Use the create command to update the stack.
+1. You receive a message stating that the stack already exists in the current subscription. If the value of the _action on unmanage_ parameter has changed, the warning alerts you of the new values. Press `y`, followed by 'Enter`.
 
-You receive a message stating that the stack already exists in the current subscription. If the value of the _action on unmanage_ parameter has changed, the warning alerts you of the new values. Press `y`, followed by 'Enter`.
+    ![a graphic representing an AZ CLI command line warning that the deployment stack already exists](../media/stack-exists-cli.png)
 
-![a graphic representing a command line warning that the deployment stack already exists](../media/stack-exists-cli.png)
+1. You are prompted to enter a value for `sqlServerAdminUserName`. Create a name for the SQL server administrator, followed by 'Enter'.
 
-You are prompted to enter a value for `sqlServerAdminUserName`. Create a name for the SQL server administrator, followed by 'Enter'.
+    ![a graphic representing the AZ CLI command line prompting you to enter an SQL server administrator user name](../media/sqladmin-cli.png)
 
-![a graphic representing the command line prompting you to enter an SQL server administrator user name](../media/sqladmin-cli.png)
+1. You are prompted to enter a value for `sqlServerAdminPassword`. Create a complex password for the SQL server administrator, followed by 'Enter'.
 
-You are prompted to enter a value for `sqlServerAdminPassword`. Create a complex password for the SQL server administrator, followed by 'Enter'.
+    ![a graphic representing the AZ CLI command line prompting you to enter an SQL server administrator user name](../media/sqlpassword-cli.png)
 
-![a graphic representing the command line prompting you to enter an SQL server administrator user name](../media/sqlpassword-cli.png)
+Wait for the update operation to complete before moving on to the next task.
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-With the Bicep file updated, we want to update the deployment stack so that the new Azure SQL database is deployed to the environment as a managed resource. To update the deployment stack, run the following command from the terminal in Visual Studio Code.
+With the Bicep file updated, we want to update the deployment stack so that the new Azure SQL database is deployed to the environment as a managed resource.
 
-```azurepowershell
-Set-AzResourceGroupDeploymentStack `
-    -Name stack-deposits `
-    -ResourceGroupName rg-depositsApplication `
-    -TemplateFile ./main.bicep `
-    -ActionOnUnmanage DeleteAll `
-    -DenySettingsMode none
-```
+1. To update the deployment stack, run the following command from the terminal in Visual Studio Code.
 
-You are prompted to enter a value for `sqlServerAdminUserName`. Create a name for the SQL server administrator, followed by 'Enter'.
+    ```azurepowershell
+    Set-AzResourceGroupDeploymentStack `
+        -Name stack-deposits `
+        -ResourceGroupName rg-depositsApplication `
+        -TemplateFile ./main.bicep `
+        -ActionOnUnmanage DeleteAll `
+        -DenySettingsMode none
+    ```
 
-![a graphic representing the command line prompting you to enter an SQL server administrator user name](../media/sqladmin-ps.png)
+1. You are prompted to enter a value for `sqlServerAdminUserName`. Create a name for the SQL server administrator, followed by 'Enter'.
 
-You are prompted to enter a value for `sqlServerAdminPassword`. Create a complex password for the SQL server administrator, followed by 'Enter'.
+    ![a graphic representing the Azure PowerShell command line prompting you to enter an SQL server administrator user name](../media/sqladmin-ps.png)
 
-![a graphic representing the command line prompting you to enter an SQL server administrator user name](../media/sqlpassword-ps.png)
+1. You are prompted to enter a value for `sqlServerAdminPassword`. Create a complex password for the SQL server administrator, followed by 'Enter'.
+
+    ![a graphic representing the Azure PowerShell command line prompting you to enter an SQL server administrator user name](../media/sqlpassword-ps.png)
+
+1. Wait for the update operation to complete before moving on to the next task.
 
 ::: zone-end
 
@@ -130,11 +133,22 @@ Take notice of the resources section of the output. We now see the SQL server an
         --action-on-unmanage deleteAll
     ```
 
-1. You are asked to confirm if you would like to delete the stack and the specified resources. 
+1. You are asked to confirm if you would like to delete the stack and the specified resources.
 
-    ![a graphic representing a command line confirmation to delete the deployment stack](../media/confirm-cli.png)
+    ![a graphic representing a command line confirmation to delete the deployment stack using AZ CLI](../media/confirm-cli.png)
 
 1. After the delete operation completes, open the Azure portal and verify that the deployment stack and its resources have been removed.
+
+1. To delete the resource group used in these exercises, run the folloing command from the terminal in Visual Studio Code.
+
+    ```azurepowershell
+    az group delete \
+        -name rg-depositsApplication
+    ```
+
+1. You are asked to confirm if you would like to remove the resource group. Press 'Y', followed by 'Enter'.
+
+    [a graphic representing a command line confirmation to delete the resource group using AZ CLI](../media/confirm-rg-cli.png)
 
 ::: zone-end
 
@@ -149,10 +163,21 @@ Take notice of the resources section of the output. We now see the SQL server an
         -ActionOnUnmanage DeleteAll
     ```
 
-1. You are asked to confirm if you would like to delete the stack and the specified resources.
+2. You are asked to confirm if you would like to delete the stack and the specified resources. 
 
-    ![a graphic representing a command line confirmation to delete the deployment stack](../media/confirm-ps.png)
+    ![a graphic representing a command line confirmation to delete the deployment stack using Azure PowerShell](../media/confirm-ps.png)
 
-1. After the delete operation completes, open the Azure portal and verify that the deployment stack and its resources have been removed.
+3. After the delete operation completes, open the Azure portal and verify that the deployment stack and its resources have been removed.
+
+4. To delete the resource group used in these exercises, run the folloing command from the terminal in Visual Studio Code.
+
+    ```azurepowershell
+    Remove-AzResourceGroup `
+        -Name rg-depositsApplication
+    ```
+
+5. You are asked to confirm if you would like to remove the resource group. Press 'Y', followed by 'Enter'.
+
+    [a graphic representing a command line confirmation to delete the resource group using Azure PowerShell](../media/confirm-rg-ps.png)
 
 ::: zone-end

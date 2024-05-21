@@ -1,4 +1,6 @@
-TODO: Insert text here.
+Deployment stacks enable you to manage your Azure resources using standard processes and templates. As your application changes, so does the resources that make up the application. Adding and removing managed resources is a critical part of lifecycle management.
+
+You have completed sprint 1 and the intial deployment of the deposits application using deployment stacks. Now, you need to prepare for sprint 2 introduces new services to the application. You want to learn more about how to update and delte deployment stacks and managed resources.
 
 In this unit, you learn how to update a deployment stack by adding resources to your Bicep file. Additionaly, you learn how to delete a deployment stack and its managed resources.
 
@@ -19,6 +21,9 @@ You're able to control how Azure handles detached resources, resource groups, an
 - Delete all - deletes resources, resource groups, and management groups
 - Delete resources - deletes resources, but detaches resource groups and management groups
 - Detach all - detaches all resources, resource groups, and management groups
+
+> [!NOTE]
+> In this module, we are working with resrouce group scoped deployment stacks. In this situation, the resource group is not managed by the stack. > The 'delete all' value for the _action on unmanage_ parameter doesn't detele the resource group where the stack exists. It is necessary to delete the resource group after the stack and its resources are deleted.
 
 In the next module, you work on managing resource lifecycles, including the _action on unmanage_ parameter.
 
@@ -97,9 +102,7 @@ In the next module, you work on managing resource lifecycles, including adding, 
 
 ## Deleting a deployment stack
 
-TODO: Insert text here.
-
-TODO: If you change the action on unmanage parameter, it will take precedence.
+Reliable resource cleanup is a key feature of deployment stacks. When you delete a deployment stack, you can also delete the managed resources, resource groups, and management groups. Using a single API call eliminates the need to understand dependencies. As with creating and updating deployment stacks, the the _action on unmanage_ parameter determines how Azure will handle detached resources.
 
 ::: zone pivot="cli"
 

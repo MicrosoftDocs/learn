@@ -12,36 +12,36 @@ durationInMinutes: 1
 content: | 
 quiz:
   questions:
-  - content: TBD
+  - content: Which of the following values is NOT an option for the _action on unmanage_ parameter?
     choices:
-    - content: TBD
+    - content: Delete all
+      isCorrect: false
+      explanation: The 'delete all' value is an option for the _action on unmanage_ parameter.
+    - content: Delete and detach some
       isCorrect: true
-      explanation: TBD
-    - content: TBD
+      explanation: The 'delete and detach some' value is not an option for the _action on unmanage_ parameter. Available values are delete all, delete resources, and detach all.
+    - content: Detach all
       isCorrect: false
-      explanation: TBD
-    - content: TBD
-      isCorrect: false
-      explanation: TBD
-  - content: TBD
+      explanation: The 'detach all' value is an option for the _action on unmanage_ parameter.
+  - content: Deployment stacks manages resources defined in templates. Which of the following template types work with deployment stacks?
     choices:
-    - content: TBD
+    - content: Azure PowerShell template
+      isCorrect: false
+      explanation: Deployment stacks work with resources defined in ARM JSON templates, Bicep files, and template specs.
+    - content: Azure CLI template
+      isCorrect: false
+      explanation: Deployment stacks work with resources defined in ARM JSON templates, Bicep files, and template specs.
+    - content: Azure Bicep file
       isCorrect: true
-      explanation: TBD
-    - content: TBD
-      isCorrect: false
-      explanation: TBD
-    - content: TBD
-      isCorrect: false
-      explanation: TBD
-  - content: TBD
+      explanation: Deployment stacks work with resources defined in ARM JSON templates, Bicep files, and template specs.
+  - content: What is the command used to update a resource group scoped deployment stack using the Azure CLI?
     choices:
-    - content: TBD
+    - content: az stack group create
       isCorrect: true
-      explanation: TBD
-    - content: TBD
+      explanation: The command to update a deployment stack using Azure CLI is `az stack group create`. Azure CLI uses the same command to create and update a deployment stack.
+    - content: az stack group update
       isCorrect: false
-      explanation: TBD
-    - content: TBD
+      explanation: The command to update a deployment stack using Azure CLI is `az stack group create`. Azure CLI uses the same command to create and update a deployment stack.
+    - content: az stack group modify
       isCorrect: false
-      explanation: TBD
+      explanation: The command to update a deployment stack using Azure CLI is `az stack group create`. Azure CLI uses the same command to create and update a deployment stack.
