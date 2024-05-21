@@ -1,17 +1,11 @@
-GitHub Copilot Chat is a powerful tool that leverages AI to help you with a variety of coding-related tasks. One great example is its ability to answer your code-related questions.
+GitHub Copilot Chat uses conversational AI assistance and smart commands to help you with coding-related tasks. One example is the ability to explain unfamiliar and complex code.
 
-You can use Copilot Chat to generate explanations in a variety of situations. For example:
+You can use GitHub Copilot Chat to generate explanations for a number of reasons. For example:
 
-- When you inherit a new code project, Copilot Chat can provide an explanation of the entire project or specific project files.
-- Copilot Chat can explain specific code lines or sections to help you understand the purpose of the code and how it works.
-- Copilot Chat can explain errors in your code and suggest ways to fix them.
-- Copilot Chat can explain how to add new functionality to your project and provide code snippets to help you implement it.
-
-Copilot Chat also provides interface options when asking for explanations:
-
-- **Chat view and Quick Chat**: You can use a combination `@workspace`, `/explain`, and `#file` in the Chat view or Quick Chat window to generate an explanation your project or specific project files.
-- **Smart actions**: You can use the `Explain This` smart action explain the purpose of selected code lines.
-- **Inline chat**: You can use the inline chat to explain selected code sections, coding errors, or how to add functionality to your project.
+- GitHub Copilot Chat can explain an entire workspace or specific project files when you join an existing project.
+- GitHub Copilot Chat can explain specific code lines or sections when code is complex or difficult to understand.
+- GitHub Copilot Chat can explain errors in your code and suggest ways to fix them.
+- GitHub Copilot Chat can explain how to add features to your project and provide code snippets that demonstrate how to implement the new code.
 
 ### Prepare sample apps in your Visual Studio Code environment
 
@@ -24,6 +18,8 @@ This module includes practice activities that use GitHub Copilot Chat and prepar
 
 > [!NOTE]
 > If you have not already installed Visual Studio Code and the required extensions, complete those installations before continuing.
+
+To prepare for the exercises in this module, complete the following steps:
 
 1. To download a zip file containing the sample apps, select the following link: [SampleApps](https://raw.githubusercontent.com/MicrosoftLearning/APL-2007-Accelerate-app-development-by-using-GitHub-Copilot/master/LearnModuleExercises/Downloads/SampleApps.zip).
 
@@ -54,9 +50,9 @@ This module includes practice activities that use GitHub Copilot Chat and prepar
     - MainWindow.xaml
     - MainWindow.xaml.cs
     - Sample1.csproj
-    - Sample1.sln
+    - APL2007M2Sample1.sln
 
-You are now ready to use GitHub Copilot Chat to complete this exercise.
+You're now ready to use GitHub Copilot Chat to complete this exercise.
 
 ### Workspace and project file explanations
 
@@ -72,10 +68,10 @@ GitHub Copilot Chat can help you understand new projects or specific project fil
 
 1. Take a minute to review the response in the Chat view.
 
-    > [!NOTE]
-    > Since Copilot Chat uses an AI model to generate responses, the actual response you receive may vary slightly from the example shown here.
+    GitHub Copilot Chat generates an explanation of the APL2007M2Sample1 project that's similar to the following response:
 
-    Copilot Chat generates explanation of the APL2007M2Sample1 project that's similar to the following response:
+    > [!IMPORTANT]
+    > GitHub Copilot Chat uses an AI model to generate responses. The responses you receive are similar to the responses shown in this training, but they aren't identical.
 
     ![Screenshot showing an explanation of the Sample1 project in the Chat view.](../media/explain-chat-view-workspace-explain-this-project-sample1.png)
 
@@ -85,7 +81,9 @@ GitHub Copilot Chat can help you understand new projects or specific project fil
 
     As mentioned earlier, the response from the AI model isn't an exact match for the examples shown. Your response may include a different follow-up question. If you don't see a follow-up question, you can skip over the next step.
 
-1. Select the suggested follow-up question and review the response in the Chat view.
+    Selecting "random" follow-up questions isn't recommended, because GitHub Copilot Chat builds history of your conversation. This history helps GitHub Copilot Chat to understand what you're interested in. As you build a chat history, the AI model learns from your interactions and provides more relevant follow-up questions.
+
+1. Open the `MainWindow.xaml.cs` file in the editor.
 
 1. Use the following command to ask Copilot to explain the `MainWindow.xaml.cs` file:
 
@@ -93,16 +91,16 @@ GitHub Copilot Chat can help you understand new projects or specific project fil
     @workspace /explain #file:MainWindow.xaml.cs
     ```
 
-    ![Screenshot showing an explanation of the MainWindow.xaml.cs file in the Chat view.](../media/explain-chat-view-workspace-slash-explain-hash-file.png)
-
 1. Take a minute to review the response in the Chat view.
+
+    ![Screenshot showing an explanation of the MainWindow.xaml.cs file in the Chat view.](../media/explain-chat-view-workspace-slash-explain-hash-file.png)
 
     Notice that GitHub Copilot Chat generates a detailed explanation of the `MainWindow.xaml.cs` file. The explanation includes information about the file's purpose, structure, and key components.
 
     Once again, GitHub Copilot Chat suggests a follow-up question. Although GitHub Copilot Chat suggests great follow-up questions, we suggest that you continue on to the next section of this exercise.
 
     > [!IMPORTANT]
-    > GitHub Copilot Chat maintains a history of your chat conversation. As you continue to ask questions, it refines its responses accordingly. The context of your questions, especially in regard to your code project, influences GitHub Copilot Chat's subsequent responses. This helps it to provide more accurate and relevant responses. However, it also means the response you receive for a particular question is likely to vary based on your conversation history.
+    > GitHub Copilot Chat maintains a history of your chat conversation. As you continue to ask questions, it refines its responses accordingly. The context of your questions, especially in regard to your code project, influences GitHub Copilot Chat's subsequent responses. This helps it to provide more accurate and relevant responses. It also means the response you receive for a particular question is likely to vary based on your conversation history.
 
 ### Selected code explanations
 
@@ -110,7 +108,7 @@ Even experienced developers encounter code that's difficult to understand. Rathe
 
 In this section of the exercise, you use the **Explain This** smart action to generate an explanation of selected code lines.
 
-1. In Visual Studio Code, open the `MainWindow.xaml.cs` file in the editor.
+1. Ensure that you have the `MainWindow.xaml.cs` file open in the editor.
 
 1. Scroll down to locate the `SumPageSizesAsync()` method.
 
@@ -140,6 +138,8 @@ In this section of the exercise, you use the **Explain This** smart action to ge
 
 1. Select the following code lines, and then use the **Explain This** smart action to generate an explanation.
 
+    To select the **Explain This** smart action, right-click the selected code lines, select **Copilot**, and then select **Explain This** from the context menu.
+
     ```csharp
 
     IEnumerable<Task<int>> downloadTasksQuery =
@@ -150,17 +150,19 @@ In this section of the exercise, you use the **Explain This** smart action to ge
 
     ```
 
-    Right-click the selected code lines, select **Copilot**, and then select **Explain This** from the context menu.
-
 1. Take a minute to review the response in the Chat view.
 
     ![Screenshot showing the Chat view explaining code that's selected in the editor.](../media/explain-inline-chat-explain-this.png)
 
-1. Notice that the response includes a detailed explanation of the selected code lines.
+1. Notice the level of detailed included in the explanation.
+
+    GitHub Copilot Chat generates detailed explanations that include information about the selected code lines, their purpose, and how they work. Responses include code snippets and natural language descriptions that help you understand the code.
 
 ### Error explanations
 
 Managing errors is an essential aspect of software development. Some errors are easy to spot and fix, while others can be more challenging. When you encounter an error in your code that's difficult to understand, you can ask GitHub Copilot Chat to provide an explanation. For example, you can ask GitHub Copilot Chat to explain why a specific line of code is causing an error.
+
+Use the following steps to complete this section of the exercise:
 
 1. Ensure that you have `MainWindow.xaml.cs` open in the editor.
 
@@ -174,7 +176,7 @@ Managing errors is an essential aspect of software development. Some errors are 
 
     ![Screenshot showing an error message in the editor.](../media/visual-studio-code-error-message.png)
 
-    Error messages don't always help you to understand why your code is generating an error. You can ask Copilot Chat to provide an explanation of the error and suggest ways to fix it.
+    Error messages don't always help you fix the problem. You can ask Copilot Chat to provide an explanation of the error and suggest ways to fix it.
 
 1. Select the code line, and then press `Ctrl` + `I` to open an inline chat.
 
@@ -190,9 +192,6 @@ Managing errors is an essential aspect of software development. Some errors are 
 
     Notice that the response includes information about the error and suggestions for fixing it. In this case, GitHub Copilot Chat explains that the `Task.WhenAll(downloadTasks)` line is causing an error because it's missing the `await` keyword. The response also provides a code snippet that shows how to fix the error by adding the `await` keyword before the `Task.WhenAll(downloadTasks)` line.
 
-    > [!NOTE]
-    > Copilot Chat uses an AI model to generate responses, the actual response you receive may vary slightly from the example shown here.
-
 1. You can use the explanations provided by GitHub Copilot Chat to fix the errors in your code.
 
     Add the `await` keyword before the `Task.WhenAll(downloadTasks)` line, as shown in the following code snippet:
@@ -207,11 +206,13 @@ Managing errors is an essential aspect of software development. Some errors are 
 
 ### New feature or functionality explanations
 
-Adding new features to your applications requires planning and coordination with your team.
+GitHub Copilot Chat can explain how to add new features or functionality to your project.
 
-When you're considering new features or improved functionality for a project, GitHub Copilot Chat can help. You can use the `/explain` command to have GitHub Copilot Chat explain how to extend your app. GitHub Copilot Chat provides code snippets and explanations to help you implement new functionality.
+Consider the APL2007M2Sample1 project. Your code downloads web pages and calculates the total size of the downloaded pages. There's currently no exception handling enabled for bad web site URLs. In this section of the exercise, you use GitHub Copilot Chat to explain how to manage exceptions during the download process.
 
-The APL2007M2Sample1 project is used to download web pages and calculate the total size of the downloaded pages. GitHub Copilot Chat can explain how to add a new feature or capability to the project. For example, you can ask GitHub Copilot Chat to explain how to handle exceptions thrown during the download process.
+Use the following steps to complete this section of the exercise:
+
+1. Select the code lines that include the `ProcessUrlAsync` and `SumPageSizesAsync` methods.
 
 1. In the Chat view, to have GitHub Copilot Chat explain how to handle exceptions thrown during the download process, enter the following question:
 
@@ -225,14 +226,11 @@ The APL2007M2Sample1 project is used to download web pages and calculate the tot
 
     ![Screenshot showing an explanation of how to handle exceptions thrown during the download process in the Chat view.](../media/explain-chat-view-workspace-explain-new-feature.png)
 
-    The response provides a detailed explanation of how to handle exceptions thrown during the download process. It includes code snippets and suggestions for improving error handling in the project.
+    The response provides a detailed explanation of how to handle exceptions thrown during the download process. You also get a code snippet that implements the suggested exception handling code. You can copy the code snippet or insert it into your code project at the location of the cursor. The response also includes another "How can I" suggestion. In a work environment, you could use GitHub Copilot Chat to investigate further improvements.
 
-    Notice that the response includes an additional "How can I" suggestion. You can select this suggestion to ask Copilot Chat to provide more information about the topic.
+    Rather than copying or inserting the code snippet from the Chat view, the next step investigates using the inline chat to implement the suggested exception handling code.  
 
-    > [!NOTE]
-    > GitHub Copilot Chat uses an AI model to generate responses, the actual response you receive may vary slightly from the example shown here.
-
-1. To ask the question using inline chat, select the `ProcessUrlAsync` method, press `Ctrl` + `I`, and then enter the following prompt:
+1. To ask inline chat how to implement exception handling, select the `ProcessUrlAsync` method, press `Ctrl` + `I`, and then enter the following prompt:
 
     ```plaintext
     How can I handle exceptions thrown during the download process?
