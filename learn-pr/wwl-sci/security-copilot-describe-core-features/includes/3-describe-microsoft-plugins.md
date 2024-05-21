@@ -5,9 +5,9 @@ One of the mechanisms by which Copilot integrates to these various sources is th
 
 ### Microsoft plugins
 
-Microsoft plugins give Copilot access to information and capabilities from within your organization's Microsoft products. The image that follows shows only a subset of the available Microsoft plugins.
+Microsoft plugins give Copilot access to information and capabilities from within your organization's Microsoft products. The image that follows shows only a subset of the available Microsoft plugins and the order in which the plugins are listed may vary from what is displayed in the product.
 
-:::image type="content" source="../media/plugins-microsoft-updated-list-v3.png" lightbox="../media/plugins-microsoft-updated-list-v3.png" alt-text="Screen capture of the Manage plugins window that shows the Microsoft services.":::
+:::image type="content" source="../media/microsoft-plugins.png" lightbox="../media/microsoft-plugins.png" alt-text="Screen capture of the Manage plugins window that shows the Microsoft services.":::
 
 Generally speaking, Microsoft plugins in Copilot use the OBO (on behalf of) model – meaning that  Copilot knows that a customer has licenses to specific products and is automatically signed into those products. Copilot can then access the specific products when the plugin is enabled and, where applicable, parameters are configured. Some Microsoft plugins that require setup, as noted by the settings icon or the set up button, may include configurable parameters that are used for authentication in-lieu of the OBO model.
 
@@ -17,9 +17,54 @@ To view the system capabilities supported by the enabled plugins, you select the
 
 The sections that follow provide brief descriptions for many of the available Microsoft plugins. Microsoft Copilot for Security is continually adding support for Microsoft products.
 
+#### Azure Firewall (Preview)
+
+Azure Firewall is a cloud-native and intelligent network firewall security service that provides best of breed threat protection for your cloud workloads running in Azure. It's a fully stateful firewall as a service with built-in high availability and unrestricted cloud scalability.
+
+The Azure Firewall integration with Copilot helps analysts perform detailed investigations of the malicious traffic intercepted by the intrusion detection and prevention system (IDPS) and/or the threat intelligence capabilities of the firewalls across their environment.
+
+To use the Azure Firewall integration with Copilot:
+
+- The Azure Firewalls to be used with Copilot for Security must be configured with resource specific structured logs for IDPS and these logs must be sent to a Log Analytics workspace.
+- The users using the Azure Firewall plugin in Copilot for Security must have the appropriate Azure role-based access control (RBAC) roles to access the Firewall and associated Log Analytics workspace.
+- The Azure Firewall plugin in Copilot for Security must be turned on.
+
+Copilot includes built-in system prompts, but you can also enter your own prompts based on the capabilities supported.
+
+:::image type="content" source="../media/azure-firewall-capabilities.png" lightbox="../media/azure-firewall-capabilities.png" alt-text="Screen capture of the Azure Firewall capabilities that can be run in the standalone experience.":::
+
+Example prompts include:
+
+- Has there been any malicious traffic intercepted by my Firewall \<Firewall name>?
+- What are the top 20 IDPS hits from the last seven days for Firewall \<Firewall name> in resource group \<resource group name>?
+- If I want to make sure all my Firewalls are protected against attacks from signature ID \<ID number>, how do I do this?
+
+#### Azure Web Application Firewall (Preview)
+
+Azure Web Application Firewall (WAF) integration in Copilot for Security enables deep investigation of Azure WAF events. It can help you investigate WAF logs triggered by Azure WAF in a matter of minutes and provide related attack vectors using natural language responses at machine speed. It provides visibility into your environment’s threat landscape. It allows you to retrieve a list of most frequently triggered WAF rules and identify the top offending IPaddresses in your environment.
+
+Copilot for Security integration is supported on both Azure WAF integrated with Azure Application Gateway and Azure WAF integrated with Azure Front Door.
+
+To use the Azure WAF integration in Copilot, the Azure WAF plugin in Copilot for Security must be turned on and configured.
+
+The preview standalone experience in Azure WAF can help you with:
+
+- Providing a list of top Azure WAF rules triggered in the customer environment and generating deep context with related attack vectors.
+- Providing a list of malicious IP addresses in the customer environment and generating related threats.
+- Summarizing SQL injection(SQLi) attacks.
+- Summarizing Cross-site scripting(XSS) attacks.
+
+:::image type="content" source="../media/azure-web-application-firewall-capabilities.png" lightbox="../media/azure-web-application-firewall-capabilities.png" alt-text="Screen capture of the Azure Web Application Firewall capabilities that can be run in the standalone experience.":::
+
+Example prompts include:
+
+- Was there a SQL injection attack in my global WAF in the last day?
+- What were the top global WAF rules triggered in the last 24 hours?
+- Summarize list of malicious IP addresses in my Azure Front Door WAF in the last six hours?
+
 #### Azure AI Search (Preview)
 
-The Azure AI Search plugin allows you to connect your company’s knowledge bases or repositories to Microsoft Copilot for Security. Details on this plugin and connections to knowledge bases is described in a subsequent unit of this module.
+The Azure AI Search plugin allows you to connect your company’s knowledge bases or repositories to Microsoft Copilot for Security. Details on this plugin and connections to knowledge bases are described in a subsequent unit of this module.
 
 #### Microsoft Entra
 
@@ -184,7 +229,7 @@ There are two separate plugins in Copilot that relate to Sentinel:
 
 :::image type="content" source="../media/sentinel-skills-v3.png" lightbox="../media/sentinel-skills-v3.png" alt-text="Screen capture of the Sentinel and NL2KQK in Sentinel plugin.":::
 
-***Micrsooft Sentinel (Preview)***
+***Microsoft Sentinel (Preview)***
 
 To utilize the Sentinel plugin, the user would need to be assigned a role permission that grants access to Copilot and a Sentinel specific role like Microsoft Sentinel Reader to access incidents in the workspace.
 
