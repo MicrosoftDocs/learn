@@ -43,6 +43,6 @@ The cloud provides guardrails to help reduce human overhead due to recurring pro
 
 You can use Azure governance tools to automate each of these triggers and actions. Other cloud providers might require a more manual approach, but the defined policies are still applicable. Don't define policies that lock you into using a specific vendor so that you don't have to repeat this process in the future.
 
-After you establish your cloud policy statements and draft a design guide, you need to create a strategy to ensure that your cloud deployment remains compliant with your policy requirements. This strategy must encompass your cloud-governance team's ongoing review and communication processes and establish criteria for when policy violations require action. It must also define the requirements for automated monitoring and compliance systems that detect violations and trigger remediation actions.
+After you establish your cloud policy statements and draft a design guide, you need to create a strategy to ensure that your cloud deployment remains compliant with your policy requirements. This strategy must encompass your cloud governance team's ongoing review and communication processes and establish criteria for when policy violations require action. It must also define the requirements for automated monitoring and compliance systems that detect violations and trigger remediation actions.
 
 In the next unit, we'll group these types of risks into actionable cloud disciplines.
