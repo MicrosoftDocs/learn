@@ -46,4 +46,4 @@ When the pipeline has finished, the values will be cleared.
 
 You can mark a variable in the release pipeline as secret. This way, the secret is hidden from the log output. It's beneficial when writing a password or other sensitive information.
 
-:::image type="content" source="../media/vars-3569d015.png" alt-text="Variables.":::
+:::image type="content" source="../media/vars-3569d015.png" alt-text="Screenshot showing Variables tab.":::
