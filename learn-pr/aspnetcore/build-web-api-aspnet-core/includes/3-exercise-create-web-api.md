@@ -34,7 +34,7 @@ To set up a .NET project to work with the web API, we use Visual Studio Code. Vi
     -| appsettings.Development.json
     -| appsettings.json
     -| ContosoPizza.csproj
-    -| ConosoPizza.http
+    -| ContosoPizza.http
     -| Program.cs
     -| WeatherForecast.cs
     ```
@@ -46,7 +46,7 @@ To set up a .NET project to work with the web API, we use Visual Studio Code. Vi
     | *:::no-loc text="Controllers/":::*           | Contains classes with public methods exposed as HTTP endpoints. |
     | *:::no-loc text="Program.cs":::*             | Configures services and the app's HTTP request pipeline, and contains the app's managed entry point.   |
     | *:::no-loc text="ContosoPizza.csproj":::*    | Contains configuration metadata for the project.                   |
-    | *:::no-loc text="ConosoPizza.http":::*       | Contains configuration to test REST APIs directly from Visual Studio Code.                   |
+    | *:::no-loc text="ContosoPizza.http":::*       | Contains configuration to test REST APIs directly from Visual Studio Code.                   |
 
 ## Build and test the web API
 
@@ -79,7 +79,7 @@ To set up a .NET project to work with the web API, we use Visual Studio Code. Vi
           Hosting environment: Development        
     ```
 
-    If you're running this app on your own machine, you could direct a browser to the HTTPS link that's displayed in the output (in the preceding case, `https://localhost:7294`) to view the resulting page. Remember this port, because you use it throughout the module where `{PORT}` is used.
+    If you're running this app on your own machine, you could direct a browser to the HTTPS link displayed in the output (in the preceding case, `https://localhost:7294`) to view the resulting page. Remember this port, because you use it throughout the module where `{PORT}` is used.
 
     > [!IMPORTANT]
     > Check the terminal output if you encounter any unexpected behavior. If the build fails or other errors occur, the log file's information helps you troubleshoot. As you make changes to the code, you'll need to stop the web API by selecting CTRL+C on the keyboard and rerunning the `dotnet run` command.
@@ -110,17 +110,17 @@ To set up a .NET project to work with the web API, we use Visual Studio Code. Vi
     ]
     ```
 
-## Explore with .http files
+## Optional: Explore with `.http` files
 
-Included in the project is **ContosoPizza.http**, a file that is used to test API endpoints through a standard format. .http files are supported in several IDEs including Visual Studio and inside of Visual Studio Code with the REST Client extension installed.
+Included in the project is **ContosoPizza.http**, a file that is used to test API endpoints through a standard format. `.http` files are supported in several Integrated development environments (IDEs) including Visual Studio and inside of Visual Studio Code with the REST Client extension installed.
 
 1. Open the ContosoPizza.http file.
 
-    This file has been pre-configured with the **@ContosoPizza_HostAddress** variables and a **GET** command calling **/weatherforecast/** that accepts **application/json**.
+    In some IDEs, this file is preconfigured with the **@ContosoPizza_HostAddress** variables and a **GET** command calling **/weatherforecast/** that accepts **application/json**.
 
-1. Select the **Sent Request** command above the **GET** which will send a request to the running service.
+1. If it's present in your file, select the **Sent Request** command above the **GET** which sends a request to the running service.
 
-    Calling this command will open a response window with output similar to what we saw in the browser:
+    Calling this command opens a response window with output similar to what we saw in the browser:
 
     ```output
     HTTP/1.1 200 OK
@@ -239,4 +239,4 @@ Included in the project is **ContosoPizza.http**, a file that is used to test AP
 
 1. Return to the `dotnet` terminal in the drop-down list in Visual Studio Code. Shut down the web API by selecting CTRL+C on your keyboard.
 
-Now that you've created the web API, we can modify it to meet the needs of the pizza web API.
+Now that you created the web API, we can modify it to meet the needs of the pizza web API.
