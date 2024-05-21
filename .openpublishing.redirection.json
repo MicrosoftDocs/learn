@@ -38618,6 +38618,36 @@
       "source_path": "learn-pr/wwl-azure/explore-release-strategy-recommendations/9-knowledge-check.md",
       "redirect_url": "/training/modules/explore-release-strategy-recommendations/8-knowledge-check",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-modularize-tasks-templates/3-exercise-create-manage-task-groups.md",
+      "redirect_url": "/training/modules/manage-modularize-tasks-templates/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/manage-modularize-tasks-templates/4-explore-variables-release-pipelines.md",
+      "redirect_url": "/training/modules/manage-modularize-tasks-templates/3-explore-variables-release-pipelines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-modularize-tasks-templates/5-understand-variable-groups.md",
+      "redirect_url": "/training/modules/manage-modularize-tasks-templates/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-modularize-tasks-templates/6-exercise-create-manage-variable-groups.md",
+      "redirect_url": "/training/modules/manage-modularize-tasks-templates/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/manage-modularize-tasks-templates/7-knowledge-check.md",
+      "redirect_url": "/training/modules/manage-modularize-tasks-templates/5-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-modularize-tasks-templates/8-summary.md",
+      "redirect_url": "/training/modules/manage-modularize-tasks-templates/6-summary",
+      "redirect_document_id": false
     }
   ]
 }
