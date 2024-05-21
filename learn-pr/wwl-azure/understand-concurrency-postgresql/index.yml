@@ -2,22 +2,29 @@
 uid: learn.wwl.understand-concurrency-postgresql
 metadata:
   title: Understand concurrency in PostgreSQL
-  description: "Azure Database for PostgreSQL is a multi-user relational database solution. The ability to support many concurrent users enables PostgreSQL databases to scale out and enable applications that support many users and locations at the same time. The increase in users brings a risk of conflicts and so it is important to understand the concurrency systems that are in place in Azure Database for PostgreSQL to manage concurrency and conflicts. In this module we will look at both isolation levels and locking in Azure Database for PostgreSQL."
-  ms.date: 09/16/2022
+  description: "Azure Database for PostgreSQL is a multi-user relational database solution. The ability to support many concurrent users enables PostgreSQL databases to scale out and enable applications that support many users and locations at the same time. The increase in users brings a risk of conflicts. For this reason, it's important to understand the concurrency systems that are in place in Azure Database for PostgreSQL to manage concurrency and conflicts. In this module, we look at both isolation levels and locking in Azure Database for PostgreSQL."
+  ms.date: 05/09/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
   ms.service: postgresql
+  ai-usage: human-only
 title: Understand concurrency in PostgreSQL
 summary: Azure Database for PostgreSQL is a multi-user relational database solution. The increase in users brings a risk of conflicts and so it is important to understand the concurrency systems that are in place.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe Multi-Version Content Control and snapshots in Azure Database for PostgreSQL.
-  - Describe isolation levels in Azure Database for PostgreSQL.
-  - Describe locking in Azure Database for PostgreSQL.
+
+  -   Describe Multi-Version Content Control and snapshots in Azure Database for PostgreSQL.
+
+  -   Describe isolation levels in Azure Database for PostgreSQL.
+
+  -   Describe locking in Azure Database for PostgreSQL.
 prerequisites: |
-  - Demonstrate an understanding of relational databases.
-  - Demonstrate an understanding of basic SQL.
+  -   Demonstrate an understanding of relational databases.
+
+  -   Demonstrate an understanding of basic SQL.
 iconUrl: /training/achievements/understand-concurrency-postgresql.svg
 levels:
 - intermediate
@@ -30,9 +37,9 @@ subjects:
 units:
 - learn.wwl.understand-concurrency-postgresql.introduction
 - learn.wwl.understand-concurrency-postgresql.understand-multi-version-concurrency-control-snapshots
-- learn.wwl.understand-concurrency-postgresql.describe-isolation-levels
+- learn.wwl.understand-concurrency-postgresql.understand-isolation-levels
 - learn.wwl.understand-concurrency-postgresql.understand-lock
-- learn.wwl.understand-concurrency-postgresql.exercise-understand-lock
+- learn.wwl.understand-concurrency-postgresql.exercise-understand-locking
 - learn.wwl.understand-concurrency-postgresql.knowledge-check
 - learn.wwl.understand-concurrency-postgresql.summary
 badge:
