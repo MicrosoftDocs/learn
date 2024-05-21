@@ -60,7 +60,7 @@ The following annotated excerpt from a `pom.xml` file demonstrates some of the r
     <subscriptionId>11111111-1111-1111-1111-111111111111</subscriptionId>  
     <resourceGroup>learn-9c627899-58ae-4ef5-9630-3336ec7bce0c</resourceGroup>  
     <appName>MyWebApp-1610102860270</appName>  
-    <pricingTier>F1</pricingTier>  
+    <pricingTier>S1</pricingTier>  
     <region>westus</region>  
     <runtime> 
       <os>Linux</os>  

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-kusto-fabric.define-real-time-hub
+title: Describe Microsoft Fabric Real-Time hub
+metadata:
+  title: Describe Microsoft Fabric Real-Time hub
+  description: "What is Microsoft Fabric Real-Time hub?"
+  ms.date: 05/14/2024
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: unit
+  ms.custom:
+  - build-2023
+  - build-2023-dataai
+  - build-2023-fabric
+durationInMinutes: 15
+content: |
+  [!include[](includes/3a-define-real-time-hub.md)]

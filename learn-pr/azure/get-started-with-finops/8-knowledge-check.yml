@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.get-started-with-finops.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Test your knowledge.
+  ms.date: 04/19/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Organizations that use on-premises infrastructure are likely utilizing which cost model?"
+    choices:
+    - content: "CapEx"
+      isCorrect: true
+      explanation: "Correct: Most organizations that use on-premises infrastructure manage their costs with a CapEx model."
+    - content: "OpEx"
+      isCorrect: false
+      explanation: "Incorrect: Organizations that use cloud services or outsource their infrastructure likely use an OpEx model."
+    - content: "Pay-per-use cost model"
+      isCorrect: false
+      explanation: "Incorrect: Pay-per-use cost model is a key characteristic of cloud-based services, not on-premises services."
+  - content: "Which concept of FinOps helps you determine where you're currently operating and where you need to improve if the business value warrants?"
+    choices:
+    - content: "Phases"
+      isCorrect: false
+      explanation: "Incorrect: The FinOps phases are an iterative loop designed to support incremental changes to maximize the cloud business value."
+    - content: "Maturity Model"
+      isCorrect: true
+      explanation: "Correct: The FinOps maturity model helps you determine where you're currently operating and where you need to improve if the business value warrants."
+    - content: "Domains"
+      isCorrect: false
+      explanation: "Incorrect: FinOps domains describe the fundamental business outcomes an organization should expect from a FinOps practice."
+    - content: "Capabilities"
+      isCorrect: false
+      explanation: "Incorrect: FinOps capabilities are mapped to a single domain and are the activities performed to achieve desired business outcomes."
+  - content: "When implementing FinOps, who should be facilitating FinOps activities?"
+    choices:
+    - content: "Project Manager"
+      isCorrect: false
+      explanation: "Incorrect: The project manager is an important stakeholder, but not a person who should be facilitating the FinOps activities.ncorrect: The project manager is an important stakeholder, but not a person who should be facilitating the FinOps activities."
+    - content: "Chief Financial Officer"
+      isCorrect: false
+      explanation: "Incorrect: Chief Financial Officer is an important stakeholder, but not a person who should be facilitating the FinOps activities."
+    - content: "FinOps team"
+      isCorrect: true
+      explanation: "Correct: FinOps team is a central and key stakeholder for FinOps implementation. FinOps team should be facilitating the FinOps activities."
+    - content: "Chief Information Officer"
+      isCorrect: false
+      explanation: "Incorrect: Chief Information Officer is an important stakeholder, but not a person who should be facilitating the FinOps activities."

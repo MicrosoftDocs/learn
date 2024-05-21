@@ -16,6 +16,8 @@ This module includes practice activities that use GitHub Copilot, GitHub Copilot
 > [!NOTE]
 > If you have not already installed Visual Studio Code and the required extensions, complete those installations before continuing.
 
+To prepare for the exercises in this module, complete the following steps:
+
 1. To download a zip file containing the sample apps, select the following link: [SampleApps](https://raw.githubusercontent.com/MicrosoftLearning/APL-2007-Accelerate-app-development-by-using-GitHub-Copilot/master/LearnModuleExercises/Downloads/SampleApps.zip).
 
 1. Unzip the download files.
@@ -33,40 +35,40 @@ This module includes practice activities that use GitHub Copilot, GitHub Copilot
 
 1. Open the **APL2007M4PrimeService** folder in Visual Studio Code.
 
-1. Take a minute to review the code in the Program.cs file.
+1. Expand the Numbers folder, and then take a minute to review the code in the PrimeService.cs file.
 
-    The `PrimeService` class has a single public method `IsPrime(int candidate)` This method checks if a given integer candidate is a prime number. A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+    It's important to understand the code that you're testing. The `PrimeService` class has a single public method `IsPrime(int candidate)`. This method checks if a given integer candidate is a prime number (an integer greater than 1 that has no positive divisors other than 1 and itself). The method returns `true` if the candidate is a prime number and `false` if it's not. The method follows these steps to determine if a number is prime:
 
     - If the `candidate` is less than 2, it's not a prime number, so the method returns `false`.
     - If the `candidate` is 2 or more, it checks for any divisors from 2 up to the square root of the `candidate`. The reason for only checking up to the square root is that a larger factor of the number would be a multiple of smaller factor that has already been checked.
-    - If the `candidate` can be divided evenly (i.e., with a remainder of 0) by any of these potential divisors, it's not a prime number, so the method returns `false`.
+    - If the `candidate` can be divided evenly (with a remainder of 0) by any of these potential divisors, it's not a prime number, so the method returns `false`.
     - If no such divisor is found, then the `candidate` is a prime number, so the method returns `true`.
 
     This method provides a few options for unit testing.
 
-You are now ready to complete the exercise.
+You're now ready to complete the exercise.
 
 ### Create an xUnit test project for your unit tests
 
-Unit test projects are typically created in a folder that's separate from the project that you're testing. This separation helps to keep the test code separate from the production code. In this exercise, you'll create an xUnit test project for the APL2007M4PrimeService project.
+Unit test projects are typically created in a folder that's separate from the project that you're testing. This separation helps to keep the test code separate from the production code. In this exercise, you create an xUnit test project for the APL2007M4PrimeService project.
 
 To create a new xUnit test project, complete the following steps:
 
 1. Open the Solution Explorer view in Visual Studio Code.
 
-    The Solution Explorer is located at the bottom of the Views bar on the left side of the Visual Studio Code window. The Solution Explorer view is similar to the Explorer view, but it's specifically designed to work with Visual Studio Code projects rather than general file systems.
+    The Solution Explorer view is accessible from Visual Studio Code's Side Bar panel. The Solution Explorer is similar to the Explorer view, but it's specifically designed to work with Visual Studio Code projects rather than general file systems.
 
-1. In the Solution Explorer view, right-click the APL2007M4PrimeService folder, and then select **New Project**.
+1. In the Solution Explorer view, right-click **APL2007M4PrimeService**, and then select **New Project**.
 
-    Ensure that you are working in the Solution Explorer, not the Explorer view.
+    If you don't see the **New Project** option, ensure that you're working in the *Solution Explorer* view, not the *Explorer* view.
 
 1. When the list of project types appears, select **xUnit Test Project**.
 
-1. For the project name, enter **PrimeService.UnitTests**.
+1. For the project name, type **PrimeService.UnitTests** and then press Enter.
 
     The project name should reflect the name of the class that you're testing and it should be unique within the solution. In this case the class is named `PrimeService`, so the test project is named `PrimeService.UnitTests`.
 
-1. Select the default location.
+1. Select the default directory location.
 
     You could also create the xUnit test project using the Visual Studio Code terminal. Open a terminal, navigate to the Numbers folder, and then run the following command:
 
@@ -74,15 +76,15 @@ To create a new xUnit test project, complete the following steps:
     dotnet new xunit -n PrimeService.UnitTests
     ```
 
-1. Open the PrimeService.UnitTests folder.
+1. Select **Create Project**, and then expand the PrimeService.UnitTests folder.
 
-1. Delete the UnitTest1.cs file that was created with the PrimeService.UnitTests project.
+1. Delete the UnitTest1.cs file that's created with the PrimeService.UnitTests project.
 
     Before you create a new unit test, you need to add a reference to the unit test project that points to the class project that you want to test.
 
-1. To add a reference, right-click the PrimeService.UnitTests project, select **Add Project Reference**, and then select the Numbers project (Numbers should be the only option).
+1. To add a reference to your code project, right-click **PrimeService.UnitTests**, select **Add Project Reference**, and then select **Numbers**.
 
-1. To create the class that's used to hold your unit test, right-click the PrimeService.UnitTests project, select **Add New File**, select **Class**, and then enter **PrimeServiceTests**.
+1. To create a class for your unit tests, right-click **PrimeService.UnitTests**, select **Add New File**, select **Class**, type **PrimeServiceTests** and then press Enter.
 
     Visual Studio Code should open the PrimeServiceTests.cs file for you.
 
@@ -103,9 +105,7 @@ To create a new xUnit test project, complete the following steps:
 1. To help avoid namespace issues when you build the project, update the PrimeServiceTests.cs file as follows:
 
     ```csharp
-    using System.Numbers;
-    
-    namespace PrimeServiceUnitTests;
+    namespace System.Numbers.UnitTests;
     
     public class PrimeServiceTests
     {
@@ -113,7 +113,7 @@ To create a new xUnit test project, complete the following steps:
     }
     ```
 
-    This update adds a using statement for the Numbers namespace used by the PrimeService class and ensures that the namespace for the PrimeServiceTests class doesn't conflict with the names of the classes.
+    A namespace in C# is used to organize related classes and types. It's a way to avoid name collisions and to make it easier to understand the organization of the code. The `.UnitTests` suffix in the test project's namespace is a common convention to indicate that the code in this namespace is testing the code in the System.Numbers namespace. This makes it clear when looking at the project structure which code is production code and which code is test code.
 
 1. Take a minute to examine the PrimeServiceTests.csproj file.
 
@@ -151,11 +151,13 @@ To create a new xUnit test project, complete the following steps:
     > [!NOTE]
     > If you see any build errors, review the steps in this exercise to ensure that you've followed each step correctly. You must have a successful build before you continue.
 
-You are now ready to create a unit test using GitHub Copilot Chat.
+You're now ready to create a unit test using GitHub Copilot Chat.
 
 ### Create unit tests using Chat view
 
 GitHub Copilot and GitHub Copilot Chat can help you generate unit tests for your code by providing suggestions based on the context of your codebase. You can use GitHub Copilot Chat to generate unit tests for specific methods or classes in your code.
+
+Use the following steps to complete this section of the exercise:
 
 1. In the Solution Explorer view, under the Numbers folder, open the PrimeService.cs file.
 
@@ -169,9 +171,9 @@ GitHub Copilot and GitHub Copilot Chat can help you generate unit tests for your
 
 1. Take a minute to review the suggestions provided by GitHub Copilot Chat.
 
-1. Notice that Chat view provides a code sample containing suggested unit tests.
+1. Notice that the Chat view provides a code sample containing suggested unit tests.
 
-    The class proposed by GitHub Copilot Chat includes tests for specific numbers as well as a theory for testing negative numbers and zero. GitHub Copilot Chat also reminds you that can add more test cases as needed.
+    The class proposed by GitHub Copilot Chat includes tests for specific numbers. Your response may also include a theory for testing negative numbers and zero. GitHub Copilot Chat may also remind you that can add more test cases as needed.
 
     The code snippet provided should be similar to the following code snippet:
 
@@ -228,19 +230,23 @@ GitHub Copilot and GitHub Copilot Chat can help you generate unit tests for your
     }
     ```
 
-1. Regenerate the unit tests without the surrounding class.
+1. Consider how you might integrate the unit tests into your test project.
+
+    The Chat view enables you to copy a code snippet or insert it directly into your project. However, you already have a PrimeServiceTests class, so it would be better to have the unit tests without the surrounding class.
+
+1. To recreate the code snippet without the surrounding class, enter the following prompt:
 
     ```plaintext
-    @workspace #selection Generate unit tests for the xUnit framework. Show the unit tests without the surrounding class.
+    Show the unit tests without the surrounding class.
     ```
 
-1. Notice the buttons at the top of the code snippet window.
+1. To display the **Copy** and **Insert at Cursor** buttons, hover the mouse pointer over the code snippet.
 
-    The Chat view provides a few options for how you can use the code snippet:
+    The Chat view provides a few options for managing a code snippet:
 
     - The **Copy** button allows you to copy the code snippet to your clipboard.
-    - The **Insert** button allows you to insert the code snippet into your project.
-    - The "..." button (More Actions) provides options to insert the snippet into either a new file or the terminal.
+    - The **Insert at Cursor** button allows you to insert the code snippet into your project.
+    - The **...** button (More Actions) provides options to insert the snippet into either a new file or the terminal.
 
     ![A screenshot showing the Chat view with the code snippet and buttons at the top of the window.](../media/unit-test-chat-view-create-unit-tests-1.png)
 
@@ -248,27 +254,45 @@ GitHub Copilot and GitHub Copilot Chat can help you generate unit tests for your
 
 1. Open the PrimeServiceTests.cs file.
 
-1. Select the PrimeServiceTests class, and then paste the contents of the clipboard into the PrimeServiceTests.cs file.
+1. Create a blank code line inside the PrimeServiceTests class, and then paste the contents of the clipboard into the PrimeServiceTests.cs file.
+
+1. Take a minute to review the PrimeServiceTests.cs file.
+
+1. Notice that the unit tests require an instance of the PrimeService class.
+
+    You may have seen this mentioned in the Chat view when you recreated the code snippet.
+
+1. To create an instance of the PrimeService class, add the following code to the top of your PrimeServiceTests class:
+
+    ```csharp
+    private readonly PrimeService _primeService;
+    
+    public PrimeServiceTests()
+    {
+        _primeService = new PrimeService();
+    }
+    ```
 
 1. Save the PrimeServiceTests.cs file, and then rebuild the solution.
 
-1. If the build is successful, you'll see green "test arrows" next to each unit test.
+    If the build is successful, you see green "test arrows" next to each unit test.
 
     ![A screenshot showing the "test arrows" next to the unit tests.](../media/unit-test-chat-view-create-unit-tests-2.png)
 
-    You are creating additional unit tests using inline chat in the next section, so there is no need to run the tests at this time.
+    You create more unit tests the next section, so there's no need to run the tests at this time.
 
-    However, for those who can't wait, there are several ways to run your tests. For example:
+    However, there are several ways to run your tests. For example:
 
     - You can run the tests from the Visual Studio Code terminal by using the `dotnet test` command.
     - You can run the tests from the Visual Studio Code Test Explorer view.
-    - You can run the tests from the Visual Studio Code Command Palette by using the **.NET: Run Test(s)** command.
-    - You can run the tests from the Visual Studio Code editor by selecting the **Run Test(s)** option from the light bulb menu.
-    - You can run the tests from the Visual Studio Code editor by selecting the **Run Test(s)** option from the context menu.
+    - You can run the tests from the Visual Studio Code Command Palette by using the **Test: Run All Tests** command.
+    - You can run the tests from the Visual Studio Code editor by selecting the **Run Tests in Current File** option from the context menu.
 
-    The tests should pass, and you should see the test results in the Visual Studio Code terminal.
+    The tests you created during this section of the exercise should run successfully. The green "test arrows" next to the unit test become green circles with a checkmark.
 
 ### Create unit tests using inline chat
+
+Use the following steps to complete this section of the exercise:
 
 1. In the Solution Explorer view, open the PrimeService.cs file.
 
@@ -339,96 +363,108 @@ GitHub Copilot and GitHub Copilot Chat can help you generate unit tests for your
     }
     ```
 
-1. Notice that these unit tests are similar to the ones suggested by the Chat view.
+1. Notice the similarities and differences between the unit tests proposed by inline chat versus Chat view.
 
-    The inline chat provided a slightly different approach. Inline chat suggested unit tests that include comments for the **Arrange**, **Act**, and **Assert** sections of each test. Inline chat proposed tests for the numbers 1, 2, and 4, and reminded you to add more test cases as needed. There were no theory tests proposed.
+    The Chat view and inline chat produced similar test coverage. However, inline chat suggested unit tests that use the Arrange, Act, and Assert (AAA) pattern, a common way of writing unit tests for a method. You can request the AAA pattern, or another test pattern, in the prompts that you submit to either inline chat or the Chat view.
 
-1. The inline chat provides a **Create** dropdown that includes a **Create as** option.
+1. To create a new unit test file for the inline chat suggestion, select **Accept**.
 
-    ![A screenshot showing the inline chat suggesting some unit tests.](../media/unit-test-inline-chat-create-unit-tests-1.png)
-
-    You can use the **Create as** option to save the proposed unit tests to the PrimeService.UnitTests folder.
-
-    > [!NOTE]
-    > Choosing the **Create as** option does not close the inline chat. You can continue to interact with GitHub Copilot Chat to generate more unit tests.
-
-1. Select the **Create as** option, and then save the file as **PrimeServiceTests2.cs** in the PrimeService.UnitTests folder.
-
-    This results in conflicts with the existing PrimeServiceTests.cs file, but after you look at the two files, you'll delete the PrimeServiceTests.cs file.
+1. In the Save As dialog, navigate to the PrimeService.UnitTests folder, name the file **PrimeServiceTests2.cs** and then select **Save**.
 
 1. Take a minute to compare the PrimeServiceTests.cs and PrimeServiceTests2.cs files.
 
-    Notice that no namespace was included and there isn't a `using` for the namespace of the PrimeService class.
+    As long as the two files specify different namespaces, you should be able to keep both files in the project without conflicts.
 
-1. Update the PrimeServiceTests2.cs file as follows:
+1. Update the PrimeServiceTests2.cs file with the following code:
 
     ```csharp
-    //using Xunit;
-    using System.Numbers;
-    
-    namespace PrimeServiceUnitTests;
-    
-    public class PrimeServiceTests
+    // using Xunit;
+    namespace System.Numbers.Tests
     {
-        private readonly PrimeService _primeService;
-    
-        public PrimeServiceTests()
+        public class PrimeServiceTests
         {
-            _primeService = new PrimeService();
+            private readonly PrimeService _primeService;
+    
+            public PrimeServiceTests()
+            {
+                _primeService = new PrimeService();
+            }
+    
+            [Fact]
+            public void IsPrime_ReturnsFalse_ForNegativeNumbers()
+            {
+                // Arrange
+                int candidate = -5;
+    
+                // Act
+                bool result = _primeService.IsPrime(candidate);
+    
+                // Assert
+                Assert.False(result);
+            }
+    
+            [Fact]
+            public void IsPrime_ReturnsFalse_ForZero()
+            {
+                // Arrange
+                int candidate = 0;
+    
+                // Act
+                bool result = _primeService.IsPrime(candidate);
+    
+                // Assert
+                Assert.False(result);
+            }
+    
+            [Fact]
+            public void IsPrime_ReturnsFalse_ForOne()
+            {
+                // Arrange
+                int candidate = 1;
+    
+                // Act
+                bool result = _primeService.IsPrime(candidate);
+    
+                // Assert
+                Assert.False(result);
+            }
+    
+            [Fact]
+            public void IsPrime_ReturnsTrue_ForPrimeNumbers()
+            {
+                // Arrange
+                int candidate = 7;
+    
+                // Act
+                bool result = _primeService.IsPrime(candidate);
+    
+                // Assert
+                Assert.True(result);
+            }
+    
+            [Fact]
+            public void IsPrime_ReturnsFalse_ForNonPrimeNumbers()
+            {
+                // Arrange
+                int candidate = 10;
+    
+                // Act
+                bool result = _primeService.IsPrime(candidate);
+    
+                // Assert
+                Assert.False(result);
+            }
         }
-    
-        [Fact]
-        public void IsPrime_InputIs1_ReturnsFalse()
-        {
-            // Arrange
-            int number = 1;
-    
-            // Act
-            bool result = _primeService.IsPrime(number);
-    
-            // Assert
-            Assert.False(result);
-        }
-    
-        [Fact]
-        public void IsPrime_InputIs2_ReturnsTrue()
-        {
-            // Arrange
-            int number = 2;
-    
-            // Act
-            bool result = _primeService.IsPrime(number);
-    
-            // Assert
-            Assert.True(result);
-        }
-    
-        [Fact]
-        public void IsPrime_InputIs4_ReturnsFalse()
-        {
-            // Arrange
-            int number = 4;
-    
-            // Act
-            bool result = _primeService.IsPrime(number);
-    
-            // Assert
-            Assert.False(result);
-        }
-    
-        // Add more test cases as needed
     }
     ```
 
-1. Delete the PrimeServiceTests.cs file.
-
-    You could comment out the contents of the file rather than deleting if you want. That way you can reference the contents in the next unit of this module.
-
 1. Save the PrimeServiceTests2.cs file, and then rebuild the solution.
+
+    If you have build errors that indicate naming conflicts, comment out the contents of the original PrimeServiceTests.cs file and rebuild. You can still reference both files in the next unit.
 
 1. You should now see the green "test arrows" next to each unit test in the PrimeServiceTests2.cs file.
 
-    Keep in mind that the generated unit tests do not cover all possible scenarios.
+    Keep in mind that the generated unit tests don't cover all possible scenarios.
 
 ### Summary
 

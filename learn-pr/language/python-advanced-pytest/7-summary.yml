@@ -3,8 +3,8 @@ uid: learn.python-advanced-pytest.summary
 title: Summary
 metadata:
   title: Summary
-  description: In this module, we went through two advanced features of Pytest. Fixtures and _parametrize_ allow you to write better tests while producing better output.
-  ms.date: 1/31/2022
+  description: In this module, we went through two advanced features of pytest. Fixtures and _parametrize_ help you to write better tests and produce better output.
+  ms.date: 4/12/2024
   author: alfredodeza
   ms.author: alfredodeza
   ms.custom:

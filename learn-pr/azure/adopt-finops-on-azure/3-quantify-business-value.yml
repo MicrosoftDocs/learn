@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.adopt-finops-on-azure.quantify-business-value
+title: Quantify business value
+metadata:
+  title: Quantify business value
+  description: Learn how to quantify an organization's business value.
+  ms.date: 05/02/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+durationInMinutes: 24
+content: |
+  [!include[](includes/3-quantify-business-value.md)]

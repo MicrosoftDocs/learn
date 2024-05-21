@@ -6,7 +6,7 @@ KQL queries are created using relational operators to filter and transform data 
 
 ## Create and load tables in KQL
 
-In most cases, you'll create tables and define their source using the graphical tools in Microsoft Fabric. However, you can use KQL statements to create and load tables.
+In most cases, you create tables and define their source using the graphical tools in Microsoft Fabric. However, you can use KQL statements to create and load tables.
 
 To create a table and ingest data into it,  you can use the **`.create table`** command, which creates a new empty table with a specified schema. You need to provide the table name, the column names and their data types, and optionally some properties such as docstring or folder. For example:
 
@@ -93,7 +93,7 @@ The results include only sales for items containing "Mountain-100":
 |SO43699|1|2019-07-01T00:00:00Z|Sydney Wright|sydney61@adventure-works.com|Mountain-100 Silver 44|1|3399.99|271.9992|
 |...|...|...|...|...|...|...|...|...|
 
-KQL works particularly well when you want to work with time series data. For example, to filter the sales data to show orders that occurred between two datetime values. You can take advantage of many time series functions, including `now()`, which returns the current time. This example returns all orders that occurred within the last day (24 hours).
+KQL works well when you want to work with time series data. For example, to filter the sales data to show orders that occurred between two datetime values. You can take advantage of many time series functions, including `now()`, which returns the current time. This example returns all orders that occurred within the last day (24 hours).
 
 ```kql
 sales
@@ -131,7 +131,7 @@ The results look similar to this example:
 
 ## Summarize and aggregate
 
-You can use the `summarize` operator to group data by a column and create a new column with an aggregation for the group. For example, the following query returns the total quantity of each item that has been sold.
+You can use the `summarize` operator to group data by a column and create a new column with an aggregation for the group. For example, the following query returns the total quantity of each item that has sold.
 
 ```kql
 sales
@@ -147,3 +147,21 @@ The results include a column based on the aggregation function used (in this cas
 |Mountain Tire Tube|1,581|
 |Road Tire Tube|1,212|
 |...|...|
+
+## Using Copilot to assist with queryset queries
+One new feature within the Microsoft Real-Time Intelligence tooling is the ability to use [Copilot for Real-Time Intelligence](/fabric/get-started/copilot-real-time-analytics?branch=main). Copilot gives you the ability to write natural language prompts instead of writing or having to quickly learn KQL queries. 
+
+When your administrator enables Copilot, you see the option in the top menubar of your querysets. When you ask a question about your data, Copilot will generate the KQL Code to answer your question. You can create several queries within the queryset using this no-code approach to gather useful information for user consumption.
+
+[ ![Screenshot of Nocode Copilot approach using Querysets.](../media/copilot.png)](../media/copilot-large.png#lightbox)
+
+Once you have queries within the queryset, you can then Pin them to an existing dashboard or create a new dashboard. To accomplish this, select the queries you want pinned, and then select the **Pin to dashboard**. This gives you a window to perform other actions.
+
+[ ![Screenshot of nocode Copilot pin to dashboard feature.](../media/copilot-pin-to-dashboard.png)](../media/copilot-pin-to-dashboard-large.png#lightbox)
+
+You also have the ability to add a queryset query to a Power BI Report by highlighting your preferred query and then selecting the **Build PowerBI report**.
+
+[ ![Screenshot of Nocode Copilot Build PowerBI Report.](../media/copilot-build-power-bi-report.png)](../media/copilot-build-power-bi-report-large.png#lightbox)
+
+> [!NOTE]
+> You can only select one query at a time using the **Pin to Dashboard** or the **Build PowerBI report** but you can append dashboard elements to existing dashboards.

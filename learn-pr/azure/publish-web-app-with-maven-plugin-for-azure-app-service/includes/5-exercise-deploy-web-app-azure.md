@@ -19,7 +19,7 @@ In this exercise, you'll add the `azure-webapp-maven-plugin` plugin to your proj
     | **Define value for OS** | *Enter the corresponding number for **Linux*** |
     | **Define value for javaVersion** | *Enter the corresponding number for **Java 17*** |
     | **Define value for webContainer** | *Enter the corresponding number for **TOMCAT 10.0*** |
-    | **Define value for pricingTier** | *Enter the corresponding number for **F1*** |
+    | **Define value for pricingTier** | *Enter the corresponding number for **S1*** |
     | **Confirm (Y/N)** | *Enter **Y*** |
 
     The plugin will add the appropriate settings that reflect your choices to your `pom.xml` file.

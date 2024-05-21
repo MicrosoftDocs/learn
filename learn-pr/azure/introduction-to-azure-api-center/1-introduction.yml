@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-api-center.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction to Azure API Center, a centralized secure inventory of APIs to help you govern, discover, and consume APIs across your organization."
+  ms.date: 5/3/2024
+  author: juliamuiruri4
+  ms.author: juliamuiruri
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

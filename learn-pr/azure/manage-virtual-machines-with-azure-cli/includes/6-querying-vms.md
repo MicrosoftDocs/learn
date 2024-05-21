@@ -42,7 +42,7 @@ SampleVM          168.61.54.62         10.0.0.4
 We can get more detailed information about a specific virtual machine by name or ID running the `vm show` command.
 
 ```azurecli
-az vm show --resource-group <rgn>[sandbox resource group name]</rgn> --name SampleVM
+az vm show --resource-group "<rgn>[sandbox resource group name]</rgn>" --name SampleVM
 ```
 
 This returns a fairly large JSON block with all sorts of information about the VM, including attached storage devices, network interfaces, and all of the object IDs for resources that the VM is connected to. Again, we could change to a table format, but that omits almost all of the interesting data. Instead, we can turn to a built-in query language for JSON called [JMESPath](http://jmespath.org/).
@@ -117,7 +117,7 @@ With a basic understanding of JMES queries, we can add filters to the data retur
 
 ```azurecli
 az vm show \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
     --name SampleVM \
     --query "osProfile.adminUsername"
 ```
@@ -126,7 +126,7 @@ We can get the size assigned to our VM:
 
 ```azurecli
 az vm show \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
     --name SampleVM \
     --query hardwareProfile.vmSize
 ```
@@ -135,7 +135,7 @@ Or, to retrieve all the IDs for your network interfaces, we can run the query:
 
 ```azurecli
 az vm show \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
     --name SampleVM \
     --query "networkProfile.networkInterfaces[].id"
 ```
@@ -146,7 +146,7 @@ For example:
 
 ```azurecli
 az vm show \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
     --name SampleVM \
     --query "networkProfile.networkInterfaces[].id" -o tsv
 ```
