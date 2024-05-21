@@ -1,23 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.create-real-time-dashboards-microsoft-fabric
 metadata:
-  title: Create Real-Time Dashboards with Microsoft Fabric
+  title: Create real time dashboards with Microsoft Fabric
   description: "Real-Time Dashboards can fetch data from various sources, provide visual representations, and update automatically. This dashboard should be easy to use, accessible, and secure. It should also allow for data exploration, filtering, and drill-down capabilities. This scenario is common in many industries where real-time data analysis is crucial for decision-making."
-  ms.date: 05/14/2024
+  ms.date: 05/21/2024
   author: wwlpublish
   ms.author: jamesh
   ms.topic: module
   ms.service: azure
   ai-usage: human-only
-title: Create Real-Time Dashboards with Microsoft Fabric
+title: Create real time dashboards with Microsoft Fabric
 summary: In this module, you'll learn about the Real-Time Dashboard in Microsoft Fabric and its user-friendly experience.
 abstract: |
- By the end of this module, you'll be able to:
- - Create a Real-Time Dashboard in Microsoft Fabric.
- - Understand some of its advanced features.
- - Apply some best practices for effective use.
- - Have hands-on experience in a lab exercise.
+  By the end of this module, you'll be able to:
 
+  -   Create a Real-Time dashboard in Microsoft Fabric.
+
+  -   Understand some of its advanced features.
+
+  -   Apply some best practices for effective use.
+
+  -   Have hands-on experience in a lab exercise.
 prerequisites: Familiarity with Microsoft Fabric.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
