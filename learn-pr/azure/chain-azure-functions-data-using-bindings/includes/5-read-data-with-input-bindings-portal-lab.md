@@ -150,9 +150,9 @@ Your **Bookmarks** container has five items. In this scenario, if a request arri
 
 1. Let's create another function. Select **Create** on the **Functions** tab. The **Create function** pane appears, listing templates for supported triggers.
 
-1. In the **Select a template** section, select **HTTP trigger**.
+1. In the **Select a template** section, select **HTTP trigger**, then select **Next**.
 
-1. Accept all default settings, and select **Create** to create your function.
+1. Accept all default settings and select **Create** to create your function.
 
    The Overview pane for the **HttpTrigger2** function appears.
 
