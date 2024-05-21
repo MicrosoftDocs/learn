@@ -57,9 +57,7 @@ Generally, you should implement a data warehouse load process that performs task
 4. Load the fact tables from the fact data in the staging tables, looking up the appropriate surrogate keys for related dimensions.
 5. Perform post-load optimization by updating indexes and table distribution statistics.
 
-If you have tables in the lakehouse, and you want to be able to query it in your warehouse - but not make changes -
-
- With a Fabric data warehouse, you don't have to copy data from the lakehouse to the data warehouse. You can query data in the lakehouse directly from the data warehouse using cross-database querying.
+If you have tables in the lakehouse, and you want to be able to query it in your warehouse - but not make changes - with a Fabric data warehouse, you don't have to copy data from the lakehouse to the data warehouse. You can query data in the lakehouse directly from the data warehouse using cross-database querying.
 
 > [!IMPORTANT]
 > Working with tables in the Fabric data warehouse currently has some limitations. See [Tables in data warehousing in Microsoft Fabric](/fabric/data-warehouse/tables) for more information.
