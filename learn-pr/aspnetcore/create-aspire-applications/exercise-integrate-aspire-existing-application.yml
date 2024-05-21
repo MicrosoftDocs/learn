@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.create-aspire-application.exercise-integrate-aspire-existing-application
+title: Exercise - Integrate an existing ASP.NET Core web app
+metadata:
+  title: Exercise - Integrate an existing ASP.NET Core web app
+  description: "See how to add the .NET Aspire stack to an existing ASP.NET Core web app and then run the app. Then call between microservices from the ASP.NET Core app."
+  ms.date: 2/6/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/exercise-integrate-aspire-existing-application.md)]
