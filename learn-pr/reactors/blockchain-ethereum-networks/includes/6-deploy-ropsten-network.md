@@ -80,7 +80,7 @@ Return to the *todolist* project folder in Visual Studio Code.
 
 1. Next to **Project ID**, select the clipboard icon to copy the ID. Return to *./truffle-config.js* to paste in the `infuraKey` value. 
 
-    The following image shows an example of what to paste. Your key will be different than the one you see here:
+    The following image shows an example key to paste. While the example key can be used as a placeholder, your key will be different than the one you see here, and you should use your own infuraKey.
 
     ```javascript
     const infuraKey = "f6bfe21890a84b9fa27def74bafb0b1b";

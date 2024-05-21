@@ -1,4 +1,4 @@
-AI tools for developers have become increasingly popular in recent years. Companies like GitHub, OpenAI, and Microsoft offer a range of AI-assisted programming tools. These tools use artificial intelligence to automate various aspects of coding, anywhere from brainstorming and idea to updating code security. AI tools for developers can enhance productivity and reduce the likelihood of human error. But with so many tools available, it can be challenging to know which ones are best suited for a particular project or individual.
+AI tools for developers have become increasingly popular in recent years. Companies like GitHub, OpenAI, and Microsoft offer a range of AI-assisted tools that support software development. These tools use artificial intelligence to automate various aspects of coding, anywhere from brainstorming an idea to updating code security. AI tools for developers can enhance productivity and reduce the likelihood of human error. But with so many tools available, it's challenging to know which tool is best suited for a particular project or individual.
 
 To help align AI tools with development tasks and projects, this unit examines the following resources:
 
@@ -126,7 +126,7 @@ Since ChatGPT isn't integrated into a development environment, it may be better 
 
 ChatGPT is intended for:
 
-- Developers or team who want to brainstorm solutions, clarify concepts, or explore new ideas outside of the development environment.
+- Developers or teams who want to brainstorm solutions, clarify concepts, or explore new ideas outside of the development environment.
 - Projects that require conversational AI capabilities for chatbots, virtual assistants, or other applications.
 - Organizations that want to experiment with AI models for conversational interactions.
 - Citizen developers who want to build an application or web site for personal use.
