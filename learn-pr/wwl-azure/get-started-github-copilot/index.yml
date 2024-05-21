@@ -3,10 +3,12 @@ uid: learn.wwl.get-started-github-copilot
 metadata:
   title: Get started with GitHub Copilot
   description: "This module introduces developers to the GitHub Copilot products, the benefits that GitHub Copilot provides to developers, the GitHub Copilot and GitHub Copilot Chat product features, and the GitHub Copilot extensions for Visual Studio Code."
-  ms.date: 05/10/2024
+  ms.date: 05/16/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module-intro-to-product
+  ms.custom:
+  - N/A
   ms.service: github-copilot
   ms.devlang: csharp
   ai-usage: ai-assisted
@@ -25,7 +27,7 @@ abstract: |
 prerequisites: |
   -   An active subscription for GitHub Copilot in your personal GitHub account (or associated with a subscription managed by an organization or enterprise) is required.
 
-  -   An awareness that if you choose to complete the training using a free GitHub Copilot trial, you will be asked for a form of payment when signing up for the free GitHub Copilot trial. You won't be charged until the trial is over, unless you cancel prior to the conclusion of the 30-day period.
+  -   Awareness of the GitHub Copilot free trial conditions. If you choose the free trial offer for GitHub Copilot, a form of payment is requested at sign-up. Charges aren't applied until the trial is over, unless you cancel before the conclusion of the 30-day period.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
