@@ -17,13 +17,13 @@ quiz:
     - content: Delete all
       isCorrect: false
       explanation: The 'delete all' value is an option for the _action on unmanage_ parameter.
-    - content: Delete and detach some
+    - content: Delete and detach
       isCorrect: true
-      explanation: The 'delete and detach some' value is not an option for the _action on unmanage_ parameter. Available values are delete all, delete resources, and detach all.
+      explanation: The 'delete and detach' value is not an option for the _action on unmanage_ parameter. Available values are delete all, delete resources, and detach all.
     - content: Detach all
       isCorrect: false
       explanation: The 'detach all' value is an option for the _action on unmanage_ parameter.
-  - content: Deployment stacks manages resources defined in templates. Which of the following template types work with deployment stacks?
+  - content: Deployment stacks manage resources defined in templates. Which of the following template types work with deployment stacks?
     choices:
     - content: Azure PowerShell template
       isCorrect: false

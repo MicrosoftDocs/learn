@@ -1,8 +1,8 @@
 Deployment stacks enable you to manage your Azure resources using standard processes and templates. As your application changes, so does the resources that make up the application. Adding and removing managed resources is a critical part of lifecycle management.
 
-You have completed sprint 1 and the intial deployment of the deposits application using deployment stacks. Now, you need to prepare for sprint 2 introduces new services to the application. You want to learn more about how to update and delte deployment stacks and managed resources.
+You have completed sprint 1 and the initial deployment of the deposits application using deployment stacks. Now, you need to prepare for sprint 2 introduces new services to the application. You want to learn more about how to update and delete deployment stacks and managed resources.
 
-In this unit, you learn how to update a deployment stack by adding resources to your Bicep file. Additionaly, you learn how to delete a deployment stack and its managed resources.
+In this unit, you learn how to update a deployment stack by adding resources to your Bicep file. Additionally, you learn how to delete a deployment stack and its managed resources.
 
 [!INCLUDE [Note - don't run commands](../../../includes/dont-run-commands.md)]
 
@@ -12,7 +12,7 @@ When you create a deployment stack, the stack becomes responsible for the manage
 
 ![a graphic representing a deployment stack and managed resources](../media/deployment-stacks-scenario-2-and-5.png)
 
-In the graphice above, the deposits deployment stack is managing 5 resources.
+In the graphic above, the deposits deployment stack is managing five resources.
 
 What happens to a resource that is no longer managed by the deployment stack? If a resource is no longer defined in a template file and the stack is updated, the resource can become detached or deleted. A detached resource is a resource that is no longer managed by the stack, but the resource continues to exist within Azure. A deleted resource is a resource that is no longer managed by the stack, and has been deleted from Azure.
 
@@ -102,7 +102,7 @@ In the next module, you work on managing resource lifecycles, including adding, 
 
 ## Deleting a deployment stack
 
-Reliable resource cleanup is a key feature of deployment stacks. When you delete a deployment stack, you can also delete the managed resources, resource groups, and management groups. Using a single API call eliminates the need to understand dependencies. As with creating and updating deployment stacks, the the _action on unmanage_ parameter determines how Azure will handle detached resources.
+Reliable resource cleanup is a key feature of deployment stacks. When you delete a deployment stack, you can also delete the managed resources, resource groups, and management groups. Using a single API call eliminates the need to understand dependencies. As with creating and updating deployment stacks, the _action on unmanage_ parameter determines how Azure will handle detached resources.
 
 ::: zone pivot="cli"
 
