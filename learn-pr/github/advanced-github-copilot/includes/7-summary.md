@@ -2,7 +2,7 @@ GitHub Copilot is a tool that offers many ways to interact with your project and
 
 Now that you have finished this module, you should be able to:
 
-- Use GitHub Copilot features like chat, agents, inline chat, and slash commands, which offers more flexibility to accomplish coding tasks.
+- Use GitHub Copilot features like chat, agents, inline chat, and slash commands, which offer more flexibility to accomplish coding tasks.
 - Apply the `@workspace` agent using GitHub Copilot Chat to provide more content when trying to get output relevant to your project.
 
 
