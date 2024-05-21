@@ -39,7 +39,9 @@ Here are the requirements and criteria details for this portion of the challenge
 
 Use the following steps to complete this challenge:
 
-1. Run the application and verify the following "before" output:
+1. Run the application and verify the following "before" format:
+
+    Verify the format, not the numeric data.
 
     ```output
     Quarterly Sales Report
@@ -90,7 +92,7 @@ Use the following steps to complete this challenge:
 
 1. Use GitHub Copilot Chat to implement code updates required to format the department sales information as a table.
 
-1. Run the application and verify that your updated application produces the following "after" output:
+1. Run the application and verify that your updated application produces the following "after" format:
 
     ```output
     Quarterly Sales Report
