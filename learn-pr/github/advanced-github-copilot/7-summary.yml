@@ -11,7 +11,7 @@ metadata:
   ms.author: abrilu
   ms.topic: unit
   ms.custom: devx-track-python
-  ms.prod: github
+  ms.service: github-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
