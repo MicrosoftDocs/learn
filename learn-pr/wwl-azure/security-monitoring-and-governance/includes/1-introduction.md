@@ -6,7 +6,7 @@ After completing this module, students and professionals can:
 
  -  Configure Microsoft Defender for Cloud.
  -  Understand Azure policies.
- -  Describe initiatives, resource locks, and Azure Blueprints.
+ -  Describe initiatives and resource locks.
  -  Work with Microsoft Defender for Identity.
 
 ## Prerequisites

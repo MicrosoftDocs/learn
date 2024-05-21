@@ -1,25 +1,38 @@
-After meeting with your company’s executive team, you start to compile some information about the commercial marketplace to report back to the group. You learn that the commercial marketplace is a cloud-based, on-demand market that lets Microsoft partners publish their solutions in Microsoft’s online product catalog.
+Following a strategic session with your company's executive leadership, you begin to gather insightful details about the commercial marketplace. You discover that the commercial marketplace operates as a cloud-centric, on-demand marketplace, empowering Microsoft partners to showcase their innovative solutions within Microsoft's extensive online product catalog. The commercial marketplace initiative is designed to streamline the process of bringing partner solutions to a global audience, facilitating seamless access and distribution.
 
-## Built for customers
+## Designed for customers
 
-For your current and future customers, the commercial marketplace is a powerful tool to find, try, buy, and deploy best-in-class solutions to accelerate digital transformation and innovation in the cloud. For your customers who are already Microsoft customers, purchasing solutions from the commercial marketplace has an added benefit: they can include commercial marketplace purchases in their existing Microsoft purchase agreements and receive a consolidated invoice from Microsoft.
+The commercial marketplace stands as a robust platform that enables both existing and prospective customers to discover, evaluate, purchase, and deploy best-in-class cloud solutions. These cloud solutions are pivotal in propelling digital transformation and fostering innovation within the Microsoft cloud ecosystem. For those who are already part of the cloud ecosystem, the commercial marketplace offers customers an added benefit: the ability to integrate their marketplace purchases with existing Microsoft procurement agreements, simplifying billing through a unified invoice directly from Microsoft.
 
-## Built for partners
+## Crafted for partners
 
-The commercial marketplace is free to join. You can use the commercial marketplace as a dynamic sales and marketing channel to access new markets, customer segments, and Microsoft cloud users with your software and services. You can also leverage it as a means to find best-in-class solutions you can deploy within your own cloud infrastructure to build your own solutions.
+Joining the commercial marketplace is entirely free. The commercial marketplace serves as an agile sales and marketing channel for your cloud solutions and services, granting you access to untapped markets, diverse customer segments, and a vast user base within the Microsoft cloud ecosystem. You can utilize the commercial marketplace not only as a platform to showcase your solutions and services to your customers, but also as a resource to discover and build exemplary solutions that can be seamlessly integrated into your organization's own cloud infrastructure.
 
 ## Multiple access points
 
-When you list your company’s solutions in the commercial marketplace, customers can find them in two online stores, through the Microsoft network of resellers, and through in-product experiences in products like Microsoft 365, Dynamics 365, the Power Platform, and Azure.
+Microsoft's commercial marketplace offers two distinct online stores: Microsoft AppSource and Azure Marketplace. The two storefronts cater to varied buyer roles across customer organizations.
 
-The commercial marketplace has two online stores, **Microsoft AppSource** and **Azure Marketplace**, which are designed to serve different buyer roles within your customers’ organizations.
+Listing your solutions in the commercial marketplace makes them accessible through:
 
-Between the two online stores and the in-product experiences, the commercial marketplace draws millions of active users per month, with each unique user representing a potential customer for your company. Because Microsoft products and services are used widely by organizations around the world, these monthly users represent companies of all sizes in every industry.
+- **Microsoft AppSource**: targeting business users seeking specialized industry solutions.
+- **Azure Marketplace**: ideal for IT professionals and cloud engineers looking for cloud infrastructure and building block services.
+
+Additionally, your solutions can also gain visibility through:
+
+- **Microsoft's Reseller Network**: expanding reach via a vast network of resellers.
+- **In-product integrations**: seamlessly integrating with Microsoft 365, Dynamics 365, the Power Platform, and Azure, providing customers with direct in-product discovery and deployment options.
+
+This multifaceted approach ensures that your solutions are discoverable by the right audience, at the right time, within the Microsoft cloud ecosystem.
+
+## Expansive reach
+
+The commercial marketplace, encompassing the two online stores and in-product experiences, attracts millions of active users monthly. Each user is a unique opportunity, a prospective customer for your offerings.
+Given the global adoption of Microsoft products and services across organizations, these active users reflect a diverse spectrum of potential clients, ranging from small businesses to large enterprises, spanning all industries. This broad user base underscores the commercial marketplace's potential as a powerful channel to amplify your company's reach and growth.
 
 :::image type="content" source="../media/1-commercial-market.png" alt-text="Diagram that compares the two commercial marketplace storefronts by audience.":::
 
-## Summary
+## Unlock opportunities
 
-The potential to get your products in front of all these people sounds like the opportunity your executive team asked you to find, but you still need to learn more about the online stores. Your company sells solutions that were built with different customer groups in mind, and you need to understand how those solutions would fit into the commercial marketplace.
+The prospect of showcasing your products to a vast global audience aligns perfectly with your executive team's directive. However, to capitalize on this opportunity, a deeper understanding of the online stores is essential. Your company's solutions, tailored for diverse customer groups, must find their appropriate niche within the commercial marketplace.
 
-To determine which online store is best suited for your solutions, you decide to reference the [commercial marketplace documentation](/azure/marketplace/overview) to learn more about **Microsoft AppSource** and **Azure Marketplace.**
+To identify the most fitting online store for your solutions - whether Microsoft AppSource for business applications or Azure Marketplace for IT services - you plan to delve into the commercial marketplace documentation. This provides clarity on how to position your offerings effectively in this expansive ecosystem.

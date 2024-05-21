@@ -1,6 +1,9 @@
-Real-Time Analytics is a fully managed big data analytics platform optimized for streaming, time-series data. It contains a dedicated query language and engine with exceptional performance for searching structured, semi-structured, and unstructured data with high performance. Real-Time Analytics is fully integrated with the entire suite of Fabric products, for both data loading and advanced visualization scenarios.
+In this module, you have learnt about Microsoft Fabric's Real-Time Intelligence, an end-to-end streaming solution for high-speed data analysis. The service is optimized for time-series data and supports automatic partitioning and indexing of any data format. You have also learnt about the core components of Real-Time Intelligence, including Event House, KQL Database, KQL Queryset, Real-Time Dashboards, and Eventstream. The module also covered the use of the Real-Time Hub as a gateway to control the flow of streaming data and the use of Kusto Query Language (KQL) for data analysis and extraction of insights.
 
-KQL database and the Kusto Query Language (KQL) are powerful features to help you explore your streaming data within Fabric. Kusto provides a structure that is similar to SQL with the use of databases, tables, and columns with the extended capabilities to balance large data for better performance within your queries.
+The main takeaways from this module include understanding how Real-Time Intelligence can handle data of various sizes and formats. This understanding comes from different sources, making it suitable for solutions like IoT and log analytics in various industries. The module also provided practical knowledge on how to construct an event house with a KQL database and execute some KQL queries.
 
-> [!TIP]
-> To learn more about Real-Time Analytics in Microsoft Fabric, see [What is Real-Time Analytics in Fabric?](/fabric/real-time-analytics/overview). <!-- Update URL for release -->
+More Reading:
+1. [Microsoft Fabric's Real-Time Intelligence](/azure/stream-analytics/stream-analytics-introduction)
+2. [Kusto Query Language (KQL)](/azure/data-explorer/kusto/query/)
+3. [Real-Time Hub in Microsoft Fabric](/azure/event-hubs/event-hubs-about)
+4. [Getting started with Microsoft Fabric](/azure/azure-functions/functions-overview)

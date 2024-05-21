@@ -42,7 +42,7 @@ Let's create a new Linux virtual machine. Execute the following command in Azure
 
 ```azurecli
 az vm create \
-  --resource-group <rgn>[sandbox resource group name]</rgn> \
+  --resource-group "<rgn>[sandbox resource group name]</rgn>" \
   --location westus \
   --name SampleVM \
   --image Ubuntu2204 \

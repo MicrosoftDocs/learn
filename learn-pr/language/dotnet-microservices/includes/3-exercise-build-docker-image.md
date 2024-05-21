@@ -13,12 +13,12 @@ GitHub takes several minutes to create and configure the codespace. When the pro
 
 To use **Visual Studio Code**, clone the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative) repository to your local machine. Then:
 
-1. Install any [system requiements](https://code.visualstudio.com/docs/devcontainers/containers) to run Dev Container in Visual Studio Code.
+1. Install any [system requirements](https://code.visualstudio.com/docs/devcontainers/containers) to run Dev Container in Visual Studio Code.
 1. Make sure Docker is running. 
 1. In a new Visual Studio Code window open the folder of the cloned repository
 1. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
 1. Search: **>Dev Containers: Rebuild and Reopen in Container**
-1. Select **eShopLite - dotnet-docker** from the drop down. Visual Studio Code creates your development container locally.
+1. Select **eShopLite - dotnet-docker** from the drop-down. Visual Studio Code creates your development container locally.
 
 ## Use .NET publish to create the Products back-end image
 
@@ -65,7 +65,8 @@ The latest .NET 8 release improves support for containerization. You can use the
 
 If you want more control of how the images are built, you can use a Dockerfile to create an image for the Products web service. 
 
-1. In the **EXPLORER** pane, open the file named **./dotnet-docker/Products/Dockerfile**. The file is empty.
+1. In the **EXPLORER** pane, create a file named **Dockerfile** in **./dotnet-docker/Products**. The file is empty.
+
 1. Enter the following code:
 
     ```dockerfile
@@ -148,7 +149,7 @@ Having completed the Dockerfile, the next step is to use it to create a Docker i
     productsbackend                     latest   190783f7e06f    About a minute ago   293MB
     ```
 
-Think about the difference between using `dotnet publish` and having to manually create the **dockerfiles** for each microservice in your apps.
+Think about the difference between using `dotnet publish` and having to manually create the **Dockerfiles** for each microservice in your apps.
 
 ## Run the container and test the service
 

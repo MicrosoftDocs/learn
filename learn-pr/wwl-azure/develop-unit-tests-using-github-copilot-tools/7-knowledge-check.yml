@@ -1,0 +1,93 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-unit-tests-using-github-copilot-tools.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/20/2024
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the role of GitHub Copilot Chat in generating unit test cases?"
+    choices:
+    - content: "It manually writes all the test cases for the user."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot Chat does not manually write all the test cases, but it generates code snippets based on the code specified by the user."
+    - content: "It only suggests possible input parameters and expected output values."
+      isCorrect: false
+      explanation: "Incorrect. While GitHub Copilot Chat does suggest possible input parameters and expected output values, it also suggests assertions and can help identify edge cases and boundary conditions."
+    - content: "It helps generate code snippets for test cases based on the code specified by the user, suggests possible input parameters, expected output values, and assertions, and can help identify edge cases and boundary conditions."
+      isCorrect: true
+      explanation: "Correct. GitHub Copilot Chat helps generate code snippets for test cases, suggesting possible inputs, outputs, assertions, and identifying edge cases and boundary conditions."
+  - content: "What is the purpose of the Test Explorer in Visual Studio Code?"
+    choices:
+    - content: "To write new code snippets for unit tests."
+      isCorrect: false
+      explanation: "Incorrect. The Test Explorer is not used to write new code snippets, but to manage and run existing unit tests."
+    - content: "To run and debug unit tests, view the results of test runs, and manage test cases in the workspace."
+      isCorrect: true
+      explanation: "Correct. The Test Explorer is used to run and debug unit tests, view test results, and manage test cases in the workspace."
+    - content: "To generate test cases based on the code context."
+      isCorrect: false
+      explanation: "Incorrect. The Test Explorer does not generate test cases, but provides a user interface to manage and run existing test cases."
+  - content: "What is the significance of the Arrange, Act, and Assert sections in unit tests?"
+    choices:
+    - content: "They are used to organize the code in the main application."
+      isCorrect: false
+      explanation: "Incorrect. The Arrange, Act, and Assert sections are specific to unit tests, not the main application code."
+    - content: "They are used to structure unit tests into setup (Arrange), execution (Act), and verification (Assert) phases."
+      isCorrect: true
+      explanation: "Correct. The Arrange, Act, and Assert sections help structure unit tests by separating the setup, execution, and verification phases."
+    - content: "They are used to compile and run the unit tests."
+      isCorrect: false
+      explanation: "Incorrect. The Arrange, Act, and Assert sections are not used to compile and run unit tests, but to structure them."
+  - content: "What is the purpose of generating assertions to ensure that function input parameters are valid?"
+    choices:
+    - content: "To enhance the performance of the function."
+      isCorrect: false
+      explanation: "Incorrect. Generating assertions for function input parameters is not primarily done to enhance performance."
+    - content: "To prevent invalid data from being processed by the function."
+      isCorrect: true
+      explanation: "Correct. Generating assertions for function input parameters helps prevent invalid data from being processed by the function."
+    - content: "To check if the function returns the expected output."
+      isCorrect: false
+      explanation: "Incorrect. Generating assertions for function input parameters is not primarily done to check the function's output."
+  - content: "What does GitHub Copilot provide when creating unit tests for specific conditions?"
+    choices:
+    - content: "It provides a user interface for manually writing tests."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot does not provide a user interface for writing tests. GitHub Copilot suggests completions and generates tests."
+    - content: "It automatically runs the tests and provides the results."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot does not run tests. GitHub Copilot helps generate them."
+    - content: "It suggests completions and generates tests based on the code context."
+      isCorrect: true
+      explanation: "Correct. GitHub Copilot suggests completions and generates tests based on the code context."
+  - content: "What is the benefit of using GitHub Copilot for generating unit tests?"
+    choices:
+    - content: "It reduces the need for manual testing."
+      isCorrect: false
+      explanation: "Incorrect. While GitHub Copilot helps generate unit tests, it does not eliminate the need for manual testing."
+    - content: "It can suggest a range of unit tests based on the code context, saving development time."
+      isCorrect: true
+      explanation: "Correct. GitHub Copilot can suggest a range of unit tests based on the code context, which can save development time."
+    - content: "It automatically fixes bugs in the code."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot does not fix bugs. GitHub Copilot helps generate unit tests."
+  - content: "What is the role of the Test Explorer in Visual Studio Code?"
+    choices:
+    - content: "It is used to write new test cases."
+      isCorrect: false
+      explanation: "Incorrect. The Test Explorer is not used to write new test cases, but to run and debug tests."
+    - content: "It is used to run and debug tests, and to view the results of test runs."
+      isCorrect: true
+      explanation: "Correct. The Test Explorer is used to run and debug tests, and to view the results of test runs."
+    - content: "It is used to generate code snippets."
+      isCorrect: false
+      explanation: "Incorrect. The Test Explorer does not generate code snippets. The Test Explorer is used to run and debug tests."
