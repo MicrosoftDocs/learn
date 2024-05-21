@@ -4,10 +4,12 @@ title: Control Deployments using Release Gates
 metadata:
   title: Control Deployments using Release Gates
   description: "Control Deployments using Release Gates"
-  ms.date: 06/28/2023
+  ms.date: 05/21/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 75
 content: |
-  [!include[](includes/8-control-deployments-using-release-gates.md)]
+  [!include[](includes/7-control-deployments-using-release-gates.md)]

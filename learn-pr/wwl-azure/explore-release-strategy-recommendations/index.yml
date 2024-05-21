@@ -3,21 +3,27 @@ uid: learn.wwl.explore-release-strategy-recommendations
 metadata:
   title: Explore release recommendations
   description: "Explore release recommendations"
-  ms.date: 06/28/2023
+  ms.date: 05/21/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: module-standard-task-based
+  ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: azure
+  ai-usage: human-only
 title: Explore release recommendations
 summary: This module explores the critical release strategy recommendations that organizations must consider when designing automated deployments and explains how to define components of a release pipeline and artifact sources, create approves, and configure release gates.
 abstract: |
-  By the end of this module, you'll be able to:
-  - Explain things to consider when designing your release strategy
-  - Define the components of a release pipeline and use artifact sources
-  - Create a release approval plan
-  - Implement release gates
-prerequisites: |
-  None
+  By the end of this module, you're able to:
+
+  -   Explain things to consider when designing your release strategy.
+
+  -   Define the components of a release pipeline and use artifact sources.
+
+  -   Create a release approval plan.
+
+  -   Implement release gates.
+prerequisites: None
 iconUrl: /training/achievements/2-explore-release-strategy-recommendations.svg
 levels:
 - advanced
@@ -45,11 +51,10 @@ subjects:
 units:
 - learn.wwl.explore-release-strategy-recommendations.introduction
 - learn.wwl.explore-release-strategy-recommendations.understand-delivery-cadence-three-types-of-triggers
-- learn.wwl.explore-release-strategy-recommendations.exercise-select-your-delivery-deployment-cadence
 - learn.wwl.explore-release-strategy-recommendations.explore-release-approvals
-- learn.wwl.explore-release-strategy-recommendations.exercise-set-up-manual-approvals
 - learn.wwl.explore-release-strategy-recommendations.explore-release-gates
 - learn.wwl.explore-release-strategy-recommendations.use-release-gates-to-protect-quality
+- learn.wwl.explore-release-strategy-recommendations.explore-gitops-release-strategy-recommendations
 - learn.wwl.explore-release-strategy-recommendations.control-deployments-using-release-gates
 - learn.wwl.explore-release-strategy-recommendations.knowledge-check
 - learn.wwl.explore-release-strategy-recommendations.summary
