@@ -18,7 +18,7 @@ Azure Relay addresses these kinds of problems by providing a point in the cloud 
 
 Azure Relay establishes a connection between two components, such as an Azure function and an on-premises service. When the connection is established, requests and responses can be exchanged through the relay, as if there were a direct connection. You can make two types of connections in Azure Relay:
 
-- **Hybrid connections**: Hybrid connections are two-way streams of binary data that use either WebSocket or HTTP standards. Because these connections are based on open standards, you can use them from almost any language or coding framework. For example, you could use them to connect an on-premises Node.js server to an Azure web job that's written in C# and the .NET Framework.
+- **Hybrid connections**: Hybrid connections are two-way streams of binary data that use either WebSocket or HTTP standards. Because these connections are based on open standards, you can use them from almost any language or coding framework. For example, you could use them to connect an on-premises Node.js server to an Azure web job written in C# and the .NET Framework.
 - **WCF connections**: Some developers use Windows Communication Foundation (WCF) to enable remote procedure calls. WCF was commonly used for network communications with older versions of the .NET Framework. WCF is now considered a legacy protocol, but it remains in common use in older applications. Because Azure Relay supports WCF, you can use it with existing .NET Framework components that use this standard, without having to rewrite them. 
 
 Use hybrid connections unless you're supporting existing .NET Framework components that use WCF.
@@ -27,8 +27,8 @@ Use hybrid connections unless you're supporting existing .NET Framework componen
 
 Hybrid connections can use one of these protocols:
 
-- **HTTP**: This stateless protocol consists of requests such as GET and POST, and it's used to transfer webpages between web servers and browsers. Usually, HTTP uses TCP port 80 or 443 when the request is secured with Secure Sockets Layer. This protocol is widely supported and easy to code for. However, because this protocol is stateless, it's less efficient for persistent communications.
-- **WebSocket**: This protocol creates a full duplex communication channel over port 80 or 443, which is more efficient than the stateless HTTP protocol. A WebSocket connection is especially efficient when the communication consists of many messages, not just a single request and response.
+- **HTTP**: This stateless protocol consists of requests such as GET and POST, and is used to transfer webpages between web servers and browsers. Usually, HTTP uses Transmission Control Protocol (TCP) port 80 or 443 when the request is secured with Secure Sockets Layer. This protocol is widely supported and easy to code for. However, because this protocol is stateless, it's less efficient for persistent communications.
+- **WebSocket**: This protocol creates a full duplex communication channel over port 80 or 443, which is more efficient than the stateless HTTP protocol. A WebSocket connection is especially efficient when the communication consists of many messages, and isn't just a single request and response.
 
 In this module, because the process is a simple request for a credit check, followed by a single response, you use a hybrid connection and the HTTP protocol.
 

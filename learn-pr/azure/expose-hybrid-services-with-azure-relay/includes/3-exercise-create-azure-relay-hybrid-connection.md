@@ -60,4 +60,4 @@ For your credit-checking web service, you want to use hybrid connections, not Wi
 
 1. In the **Name** box, enter **CreditCheckConnection**. Leave **Requires Client Authentication** selected, and then select **Create**.
 
-You've completed the configuration of the relay in Azure. Apps can exchange messages through the relay when they make the right connection to it.
+You completed the configuration of the relay in Azure. Apps can exchange messages through the relay when they make the right connection to it.
