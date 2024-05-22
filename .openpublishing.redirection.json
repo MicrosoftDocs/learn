@@ -38579,6 +38579,51 @@
       "redirect_url": "/training/modules/security-monitoring-and-governance/",
       "redirect_document_id": false
     },
+    {
+      "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/index.yml",
+      "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/1-introduction.yml",
+      "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/2-deployment-options.yml",
+      "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/3-permissions-roles.yml",
+      "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/4-connect-data-sources.yml",
+      "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/5-data-connection-methods.yml",
+      "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/6-manage-logs.yml",
+      "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/7-knowledge-check.yml",
+      "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/8-summary.yml",
+      "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
+      "redirect_document_id": false
+    },      
       {
       "source_path": "learn-pr/wwl-azure/explore-release-strategy-recommendations/10-summary.md",
       "redirect_url": "/training/modules/explore-release-strategy-recommendations/9-summary",
