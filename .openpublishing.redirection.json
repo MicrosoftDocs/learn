@@ -38684,5 +38684,10 @@
     "redirect_url": "/training/modules/create-azure-resources-by-using-azure-cli/5-summary",
     "redirect_document_id": false
     }
+    {,
+      "source_path": "learn-pr/azure/cloud-adoption-framework-govern/5-governance-disciplines.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-govern/5-document-enforce",
+      "redirect_document_id": false
+    }
   ]
 }
