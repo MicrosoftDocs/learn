@@ -14,25 +14,15 @@ metadata:
 title: Define a Microsoft AI strategy to create business value in manufacturing
 summary: This module is designed to help manufacturing professionals adopt Microsoft AI solutions. It discusses common use cases and real customer stories.
 abstract: |
-  -
+  -   Identify AI use cases in manufacturing.
 
-  Identify AI use cases in manufacturing.
+  -   Examine available AI tools and resources for manufacturing scenarios.
 
-  -
-
-  Examine available AI tools and resources for manufacturing scenarios.
-
-  -
-
-  Discover insights from manufacturing-specific AI success stories.
+  -   Discover insights from manufacturing-specific AI success stories.
 prerequisites: |
-  -
+  -   Basic understanding of AI concepts.
 
-  Basic understanding of AI concepts.
-
-  -
-
-  Basic understanding of manufacturing concepts.
+  -   Basic understanding of manufacturing concepts.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
