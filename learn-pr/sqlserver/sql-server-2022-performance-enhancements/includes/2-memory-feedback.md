@@ -2,13 +2,13 @@
 ms.custom:
   - build-2023
 ---
-Prior to SQL Server 2022, memory grant feedback was based on the most recent execution for a specific query, and could result in some cases of different feedback adjustments that could lead to the query processor disabling memory grant feedback for a specific query. In SQL Server 2022, memory grant feedback uses a percentile method to look at memory grants over several executions before using a memory grant feedback.
+In versions previous to SQL Server 2022, memory grant feedback was based on the most recent execution for a specific query. This approach could result in some cases of different feedback adjustments that could lead to the query processor disabling memory grant feedback for a specific query. In SQL Server 2022, memory grant feedback uses a percentile method. It looks at memory grants over several executions before using a memory grant feedback.
 
-Additionally, prior to SQL Server 2022, memory grant feedback was only stored in a cached plan in memory. If the cache plan was evicted, memory grant feedback would have to be recalculated on new query executions. In SQL Server 2022, if the Query Store is enabled, memory grant feedback is persisted in the Query Store. You can view memory grant feedback persistence using the **sys.query_store_plan_feedback** catalog view.
+In versions previous to SQL Server 2022, memory grant feedback was only stored in a cached plan in memory. If the cache plan is evicted, memory grant feedback would be recalculated on new query executions. In SQL Server 2022, if the Query Store is enabled, memory grant feedback is persisted in the Query Store. You can view memory grant feedback persistence using the **sys.query_store_plan_feedback** catalog view.
 
 ## Batch mode memory grant feedback
 
-A query's execution plan includes the minimum required memory needed for execution and the ideal memory grant size to have all rows fit in memory. Performance suffers when memory grant sizes are incorrectly sized. Excessive grants result in wasted memory and reduced concurrency. Insufficient memory grants cause expensive spills to disk. By addressing repeating workloads, batch mode memory grant feedback recalculates the actual memory required for a query and then updates the grant value for the cached plan. When an identical query statement is executed, the query uses the revised memory grant size, reducing excessive memory grants that affect concurrency and fixing underestimated memory grants that cause expensive spills to disk.
+A query's execution plan includes the minimum required memory needed for execution. The ideal memory grant size to have all rows fit in memory. Performance suffers when memory grant sizes are incorrectly sized. Excessive grants result in wasted memory and reduced concurrency. Insufficient memory grants cause expensive spills to disk. By addressing repeating workloads, batch mode memory grant feedback recalculates the actual memory required for a query and then updates the grant value for the cached plan. When an identical query statement is executed, the query uses the revised memory grant size. This approach reduces excessive memory grants that affect concurrency and fixes underestimated memory grants that cause expensive spills to disk.
 
 The following graph shows one example of using batch mode adaptive memory grant feedback. For the first execution of the query, the duration was 88 seconds due to high spills:
 
@@ -25,15 +25,15 @@ ORDER BY MAX(max_elapsed_time_microsec) DESC;
 
 :::image type="content" source="../media/memory-grant-high-spills.png" alt-text="Screenshot of a batch mode adaptive memory grant feedback query execution with high spills.":::
 
-With memory grant feedback enabled for the second execution, the duration is 1 second (down from 88 seconds). The spills are removed entirely, and the grant is higher:
+With memory grant feedback enabled for the second execution, the duration is 1 second, compared to 88 seconds. The spills are removed entirely, and the grant is higher:
 
 :::image type="content" source="../media/memory-grant-no-spills.png" alt-text="Screenshot of a batch mode adaptive memory grant feedback query execution with no spills.":::
 
 ## Memory grant feedback sizing
 
-For an excessive memory grant condition, if the granted memory is more than two times the size of the actual used memory, memory grant feedback recalculates the memory grant and update the cached plan. Plans with memory grants under 1 MB won't be recalculated for overages.
+For an excessive memory grant condition, if the granted memory is more than two times the size of the actual used memory, memory grant feedback recalculates the memory grant and updates the cached plan. Plans with memory grants under 1 MB aren't recalculated for overages.
 
-For an insufficiently sized memory grant condition that result in a spill to disk for batch mode operators, memory grant feedback triggers a recalculation of the memory grant. Spill events are reported to memory grant feedback and can be surfaced using the `spilling_report_to_memory_grant_feedback` extended event. This event returns the node ID from the plan and the spilled data size of that node.
+For an insufficiently sized memory grant condition that results in a spill to disk for batch mode operators, memory grant feedback triggers a recalculation of the memory grant. Spill events are reported to memory grant feedback. They can be surfaced using the `spilling_report_to_memory_grant_feedback` extended event. This event returns the node ID from the plan and the spilled data size of that node.
 
 The adjusted memory grant shows up in the actual (post-execution) plan in the `GrantedMemory` property.
 
@@ -51,9 +51,9 @@ ALTER DATABASE [WideWorldImportersDW] SET COMPATIBILITY_LEVEL = 140;
 
 ## Row mode memory grant feedback
 
-Row mode memory grant feedback expands on the batch mode memory grant feedback feature by adjusting memory grant sizes for both batch and row mode operators.
+Row mode memory grant feedback expands on the batch mode memory grant feedback feature. It adjusts memory grant sizes for both batch and row mode operators.
 
-To enable row mode memory grant feedback, enable database compatibility level 150 or higher for the database you're connected to when executing the query.
+To enable row mode memory grant feedback, enable database compatibility level 150 or higher for the database you're connected to when you execute the query.
 
 ```sql
 ALTER DATABASE [<database name>] SET COMPATIBILITY_LEVEL = 150;

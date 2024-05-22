@@ -3,35 +3,35 @@ ms.custom:
   - build-2023
 ---
 > [!NOTE]
-> This exercise will be leveraging the following githib repository:
+> This exercise uses the following githib repository:
 >
 > https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/03_BuiltinQueryIntelligence/dopfeedback
 >
-> Before continuing with the exercise, make sure that the prerequisites and setup has been completed.
+> Before you continue, make sure that you complete the prerequisites and setup.
 
-As your role of a database administrator for the World Wide Importers Corporation, you have concerns about using the right amount of parallelism for the business unit queries. Looking through the release notes, you find that SQL Server 2022 has introduced a new feature called Degree Of Parallelism (DOP) feedback to find the parallel efficiency of a query.
+As your role of a database administrator for the World Wide Importers Corporation, you have concerns about using the right amount of parallelism for the business unit queries. Looking through the release notes, you find that SQL Server 2022 introduces a new feature called Degree Of Parallelism (DOP) feedback to find the parallel efficiency of a query.
 
-In this exercise, we'll be evaluating the Degree of Parallelism feedback feature in SQL Server 2022.
+In this exercise, you evaluate the Degree of Parallelism feedback feature in SQL Server 2022.
 
-You'll observe how this feature validates DOP values for an eligible query until the lowest possible DOP value is found that reduces CPU usage and achieves the *no harm* principle over time.
+Observe how this feature validates DOP values for an eligible query until the lowest possible DOP value is found that reduces CPU usage and achieves the *no harm* principle over time.
 
 ## Prerequisites
 
 - SQL Server 2022 Evaluation or Developer Edition
 - A virtual machine (VM) or computer with at minimum 8 CPUs and 24 GB of memory.
 - Install the latest version of [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms).
-- Download [ostress.exe](/troubleshoot/sql/tools/replay-markup-language-utility#tools-in-rml-utilities-for-sql-server) from https://aka.ms/ostress. Install using the RMLSetup.msi file that is downloaded. Use all defaults for the installation.
+- Download [ostress.exe](/troubleshoot/sql/tools/replay-markup-language-utility#tools-in-rml-utilities-for-sql-server) from https://aka.ms/ostress. Install using the *RMLSetup.msi* file. Use all defaults for the installation.
 
 ## Set up the exercise
 
-1. Create a directory called `c:\sql_sample_databases` to store backups and files.
+1. Create a directory called *c:\sql_sample_databases* to store backups and files.
 
-1. Download a backup of a customized version of the `WideWorldImporters` sample database for the DOP exercise from https://aka.ms/wwi_dop, and copy it into `c:\sql_sample_databases` directory.
+1. Download a backup of a customized version of the `WideWorldImporters` sample database for the DOP exercise from https://aka.ms/wwi_dop, and copy it into *c:\sql_sample_databases* directory.
 
    > [!NOTE]
    > If you try to restore the default sample `WideWorldImporters` database, you can use the [restorewwi.sql](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/dopfeedback/restorewwi.sql), [populatedata.sql](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/dopfeedback/populatedata.sql) and [rebuild_index.sql](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/dopfeedback/rebuild_index.sql) scripts to customize the database for the exercise.
 
-1. [Restore](/sql/t-sql/statements/restore-statements-transact-sql) the customized version of the `WideWorldImporters` sample database to your SQL Server 2022 instance using SSMS. You may need to change the directory paths for the location of your backup and where you'll restore the database files.
+1. [Restore](/sql/t-sql/statements/restore-statements-transact-sql) the customized version of the `WideWorldImporters` sample database to your SQL Server 2022 instance using SSMS. You might need to change the directory paths for the location of your backup and where you restore the database files.
 
     ```sql
     USE master;
@@ -49,7 +49,7 @@ You'll observe how this feature validates DOP values for an eligible query until
     ```
 
    > [!IMPORTANT]
-   > If you have permission issues to restore the backup, you can try to copy the backup into the default `data` folder for your SQL Server installation and try the restore again. You'll need to edit the restore script accordingly. The default for most instances is `C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\DATA.`
+   > If you have permission issues to restore the backup, you can try to copy the backup into the default *data* folder for your SQL Server installation and try the restore again. You need to edit the restore script accordingly. The default for most instances is `C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\DATA.`
 
 ## Exercise - DOP feedback
 
@@ -66,7 +66,7 @@ You'll observe how this feature validates DOP values for an eligible query until
     go
     ```
 
-1. Execute the following script to create a stored procedure to query data that we'll use a query plan with parallelism.  
+1. Execute the following script to create a stored procedure to query data that you use a query plan with parallelism.  
 
     ```sql
     USE WideWorldImporters;
@@ -137,24 +137,24 @@ You'll observe how this feature validates DOP values for an eligible query until
     GO
     ```
 
-    The above script enables DOP feedback, set database compatibility to 160, and clear settings for the exercise. The `INTERVAL_LENGTH_MINUTES` setting on the Query Store has been set to 1 so that we could observe query statistics at a granular level.
+    This script enables DOP feedback, sets database compatibility to 160, and clears settings for the exercise. The `INTERVAL_LENGTH_MINUTES` setting on the Query Store is set to 1 so that you can observe query statistics at a granular level.
 
-1. Run **[workload_index_scan_users.cmd](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/dopfeedback/workload_index_scan_users.cmd)** from a Command Prompt.  
+1. Run [workload_index_scan_users.cmd](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/dopfeedback/workload_index_scan_users.cmd) from a command prompt.  
 
    > [!NOTE]
    > If you are using a named instance, edit **workload_index_scan_users.cmd** to use `-S.\<instance name>`
 
    The script takes around 15 minutes to run.
 
-1. Once the script starts running, we can observe DOP feedback using the live data from Extended Events. Within the Live Data Viewer in SSMS, you can add columns to the default view to see the sequence of feedback. Right-click any field in the Details pane and select **Show Column in Table**.
+1. After the script starts running, you can observe DOP feedback using the live data from Extended Events. Within the Live Data Viewer in SSMS, you can add columns to the default view to see the sequence of feedback. Right-click any field in the Details pane and select **Show Column in Table**.
   
-   You should see a series of events like below.
+   You should see a series of events:
 
    :::image type="content" source="../media/degree-of-parallelism-feedback-exercise-xevent-live-data-view.jpg" alt-text="Screenshot of SSMS Extended Events showing a live data view of DOP feedback.":::
 
-   You should first see a `dop_feedback_eligible_query` event. The event can take 5-10 minutes to first appear. Then you'll see a series of `dop_feedback_provided` and `dop_feedback_validation` events until you see a final `dop_feedback_stabilized` event with a `feedback_dop value` of 2. Depending on your system, it's possible the system can stabilize at a DOP value of 4.
+   You should first see a `dop_feedback_eligible_query` event. The event can take 5-10 minutes to first appear. Then you see a series of `dop_feedback_provided` and `dop_feedback_validation` events until you see a final `dop_feedback_stabilized` event with a `feedback_dop value` of 2. Depending on your system, it's possible the system can stabilize at a DOP value of 4.
 
-   The `dop_feedback_stabilized` event shows the reason for stabilization. In this case, the validation for DOP 2 stabilized because the query has reached the minimum DOP value.
+   The `dop_feedback_stabilized` event shows the reason for stabilization. In this case, the validation for DOP 2 stabilized because the query reached the minimum DOP value.
 
    :::image type="content" source="../media/degree-of-parallelism-feedback-exercise-xevent-feedback-reason.jpg" alt-text="Screenshot of SSMS Extended Events showing a live data view of DOP feedback stabilized reason.":::
 
@@ -176,7 +176,7 @@ You'll observe how this feature validates DOP values for an eligible query until
     GO
     ```
 
-   You'll notice a small decrease in `avg_duration_ms` and decrease in needed CPU across the various `last_dop` values.
+   Notice a small decrease in `avg_duration_ms` and decrease in needed CPU across the various `last_dop` values.
 
    :::image type="content" source="../media/degree-of-parallelism-feedback-exercise-query-stats.jpg" alt-text="Screenshot of SSMS query stats results.":::
 
@@ -205,4 +205,4 @@ You'll observe how this feature validates DOP values for an eligible query until
 
    :::image type="content" source="../media/degree-of-parallelism-exercise-top-resource-consuming-queries-report-cpu.jpg" alt-text="Screenshot of SSMS viewing the Top Resource Consuming Queries report and looking at CPU usage.":::
 
-   This above report shows you the real benefit of DOP feedback. There's a significant reduction in CPU resources required to achieve a similar or lower duration for the query without any user action.
+   This report shows you the real benefit of DOP feedback. There's a significant reduction in CPU resources required to achieve a similar or lower duration for the query without any user action.
