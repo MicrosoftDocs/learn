@@ -38648,6 +38648,11 @@
       "source_path": "learn-pr/wwl-azure/manage-modularize-tasks-templates/8-summary.md",
       "redirect_url": "/training/modules/manage-modularize-tasks-templates/6-summary",
       "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/introduction-to-secure-devops/8-exercise-threat-modeling.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-secure-devops",
+    "redirect_document_id": false
     }
   ]
 }
