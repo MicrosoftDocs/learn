@@ -4,10 +4,12 @@ title: Manage dependencies
 metadata:
   title: Manage dependencies
   description: "Manage dependencies"
-  ms.date: 06/30/2023
+  ms.date: 05/22/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/4-manage-dependencies.md)]
