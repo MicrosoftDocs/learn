@@ -1,6 +1,6 @@
 Retention policies and labels are crucial tools in SharePoint Online and OneDrive, helping organizations manage their data in line with legal and regulatory standards. These tools ensure that necessary information is retained and obsolete data is deleted appropriately.
 
-## Understand retention settings in SharePoint and OneDrive
+## Overview of retention in SharePoint and OneDrive
 
 Effective retention settings are vital for compliance and efficient data management in SharePoint and OneDrive. These settings help organizations in meet legal obligations and manage the lifecycle of their data.
 
@@ -12,7 +12,7 @@ When you apply retention policies and retention labels, a Preservation Hold libr
 - **Modifications and deletions**: Edited or deleted documents are preserved in the Preservation Hold library to maintain compliance. Any attempt to alter or remove documents under retention are checked for unauthorized changes. Users attempting to delete protected items receive error notifications.
 - **Periodic reviews**: A timer job periodically runs and compares files older than 30 days in the Preservation Hold library against retention rules. Files exceeding their retention period without a pending disposition review are marked for removal. This timer job runs every seven days, which means that together with the minimal 30 days, it can take up to 37 days for content to be deleted from the Preservation Hold library.
 
-### Navigating the content lifecycle in SharePoint and OneDrive
+### Retention lifecycle in SharePoint and OneDrive
 
 How content is handled in SharePoint and OneDrive depends on the applied retention settings: **retain and delete**, **retain-only**, and **delete-only**. Each setting affects the content's path from its creation to its potential deletion, aligning organizational data management with compliance protocols.
 

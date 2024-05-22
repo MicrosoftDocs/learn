@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.manage-data-retention-microsoft-365.apply-retention-to-microsoft-sharepoint-onedrive
+uid: learn.wwl.manage-data-retention-microsoft-365.explain-retention-exchange-online
 title: Explain retention in Exchange Online
 metadata:
   title: Explain retention in Exchange Online
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-explain-retention-exchange-online.md)]
+  [!include[](includes/explain-retention-exchange-online.md)]

@@ -1,6 +1,6 @@
 Retention policies in Microsoft Teams ensure that your organization can manage communications data in compliance with legal and regulatory standards. These policies help govern the retention and deletion of chats and channel messages, crucial for data lifecycle management within Teams.
 
-## Overview of retention settings in Microsoft Teams
+## Overview of retention in Microsoft Teams
 
 When setting up retention policies in Teams, it's important to understand the types of content covered:
 
@@ -37,7 +37,7 @@ Messages remain in these mailboxes until they meet the criteria set by the reten
 - **Retention policy configuration**: To effectively manage your Teams communications, it's crucial to configure retention policies specifically for **Teams channel messages** and **Teams chats**. These messages aren't covered under the general retention policies for Exchange user or group mailboxes and require specific settings to ensure proper data lifecycle management.
 - **Handling new users in chats**: When a new user is added to an existing chat, all previously shared messages are copied into their mailbox, maintaining the original creation date. This practice ensures that all participants have access to the same historical data, regardless of when they joined the chat.
 
-### Navigating the content lifecycle in Teams
+### Retention lifecycle in Teams
 
 Here's how content is handled in Teams depending on the applied retention settings: retain and delete, retain-only, and delete-only. Each setting affects the content's path from its creation to its potential deletion, aligning with organizational data management and compliance protocols.
 
@@ -45,9 +45,9 @@ Here's how content is handled in Teams depending on the applied retention settin
 
 | Scenario | Modified or deleted content| Unmodified content|
 | :--- | :--- | :--- |
-| **Retain and delete**| Content is first stored in SubstrateHolds after being edited or deleted. It remains there for at least 1 day. Post-retention period, it undergoes permanent deletion within 1-7 days.| Moves directly to SubstrateHolds post-retention period and is permanently deleted within 1-7 days after at least 1 day of storage.|
-| **Retain-only**| Edited or deleted content is moved to SubstrateHolds but remains indefinitely until the retention period ends, then permanently deleted after 1-7 days post-period.| Stays indefinitely in its original location, unaffected by retention operations.|
-| **Delete-only**|Moves directly to SubstrateHolds upon deletion, stored for at least 1 day, and then permanently deleted within 1-7 days.| At the end of the retention period, moves to SubstrateHolds, stored for at least 1 day, and then permanently deleted within 1-7 days.|
+| **Retain and delete**| If edited or deleted during the retention period, the content is immediately moved to SubstrateHolds and is permanently deleted 1-7 days after the retention period.| Moves directly to SubstrateHolds post-retention period and is permanently deleted within 1-7 days after at least 1 day of storage.|
+| **Retain-only**| Edited or deleted content is moved to SubstrateHolds and retained indefinitely until the end of the retention period, followed by deletion within 1-7 days.| Remains unchanged in its original location, unaffected by retention operations.|
+| **Delete-only**| Content is immediately stored in SubstrateHolds for at least 1 day, then permanently deleted within 1-7 days.| After the retention period, it's moved to SubstrateHolds, retained for at least 1 day, and then permanently deleted within 1-7 days.|
 
 Content in SubstrateHolds isn't visible in the Teams app but remains searchable by eDiscovery tools until permanently deleted. This process ensures compliance while the data is "soft-deleted" and awaiting permanent removal based on the set policies.
 
@@ -63,4 +63,3 @@ When external users participate in meetings or chats hosted by your organization
 ## Handling employee departures
 
 When an employee with a mailbox in Exchange Online leaves your organization and their Microsoft 365 account is deleted, their chat messages remain preserved under retention. These messages are stored in an inactive mailbox. They continue to adhere to any retention policies applied before the mailbox was deactivated, ensuring that the data remains accessible for eDiscovery. Files uploaded to a channel are stored in your team's SharePoint folder. In contrast, files shared in one-on-one or group chats are saved in the _Microsoft Teams Chat Files_ in your OneDrive folder and are shared exclusively with the conversation's participants. SharePoint and OneDrive respectively govern the retention policies for these files.
-

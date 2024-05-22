@@ -1,39 +1,49 @@
-Yammer connects leaders, communicators, and employees to build communities, share knowledge, and engage everyone. Yammer helps you connect and engage across your organization, so you can discuss ideas, share updates, and network with others.
+Viva Engage, part of the Microsoft Viva employee experience platform within Microsoft 365 and Microsoft Teams, enhances organizational connectivity by enabling employees to connect with leaders, coworkers, and communities. It offers a platform for crowdsourcing ideas, sharing work experiences, and fostering belonging at work. Effective retention policies in Viva Engage are crucial. They help organizations control and manage the lifecycle of digital content. This capability ensures all interactions comply with legal and regulatory standards while supporting the platform's collaborative and communicative functions.
 
-Retention policies can be used to retain data from community messages and user messages in Yammer and delete those messages. Exchange mailboxes are used to store the data copied from these messages. Data from Yammer user messages is stored in a hidden folder in each user's mailbox that is included in the user message. For community messages, a similar hidden folder is used in a group mailbox.
+## Overview of retention in Viva Engage
 
-Copies of community messages can also be stored in the hidden folder of user mailboxes if they mention @ user or inform the user of a reply. Although these messages originated as community messages, a retention policy for Yammer user messages will often include copies of community messages. As a result, user messages aren't limited to private messages.
-These hidden folders aren't intended to be accessed directly by users or administrators, but store data that compliance administrators can search with eDiscovery tools.
+Retention policies in Viva Engage help organizations manage the lifecycle of digital content within their networks, ensuring compliance with legal and regulatory standards. These policies govern both the retention and deletion of various types of content, which include:
 
->[!NOTE]
->Although Yammer messages are stored in Exchange, they are only included in a retention policy configured for the locations of Yammer community messages or Yammer user messages.
+- **User messages**: These include private messages between individuals and any posts made on user storylines. All are stored in the individual mailboxes of the users involved, ensuring they're retained according to policy specifics.
+- **Community messages**: These encompass messages posted within specific Viva Engage communities. They're stored in both the group mailboxes associated with the community. They're also stored in the mailboxes of users who receive notifications or are @ mentioned in these messages. Like user messages, community messages include the community name and any provided message title.
 
-## Yammer retention functionality
-After a retention policy is configured for Yammer messages, a timer job from the Exchange service periodically evaluates items in the hidden folder where these Yammer messages are stored. The timer job takes up to seven days to run. When these items have expired their retention period, they're moved to the SubstrateHolds folder—a hidden folder that's in every user or group mailbox to store "soft-deleted" items before they're permanently deleted.
-After a retention policy is configured for Yammer messages, the paths the content takes depend on whether the retention policy is to **retain and then delete**, to **retain only**, or **delete only**.
+Emoticons used in reactions aren't retained under these policies. SharePoint and OneDrive retention policies govern files used within Viva Engage. Viva Engage-specific retention policies don't apply to these files.
 
-![Graphical diagram of retention period processing for Yammer messages.](../media/yammer-retention-lifecycle.png)
+## How retention works with Viva Engage
 
-The following table provides an overview of the different ways content is held or removed by retention policies for Yammer:
+Viva Engage uses Exchange mailboxes to efficiently manage and store both user and community messages under its retention policies. These messages are securely kept in within their respective mailboxes, only accessible through eDiscovery tools for compliance checks. This practice ensures that regular users and administrators don't have visibility into these folders, maintaining privacy and security.
 
-| Step| (1) **If a Yammer message is edited or deleted** by the user during the retention period…| (2) **If a Yammer message is not modified or deleted** during the retention period…|
+Initially, messages are stored in hidden folders within the Exchange system. Following the end of their retention period, they're transferred to the SubstrateHolds folder. This process serves as a temporary storage area where messages await their eventual permanent deletion, while still being accessible for legal and compliance reviews if necessary.
+
+### Retention lifecycle for Viva Engage
+
+When a user's mailbox is deleted under an active retention policy, it becomes an inactive mailbox, preserving the data for necessary compliance and discovery processes. A scheduled timer job evaluates the retention status of items every seven days, moving expired items to the SubstrateHolds folder, where they're prepared for permanent deletion. However, if there are legal holds or other eDiscovery requirements, the deletion process is paused, ensuring that all compliance needs are met.
+
+Messages, once deleted from the user view in Viva Engage, remain discoverable through eDiscovery tools as long as they are in the SubstrateHolds folder, maintaining accessibility for compliance checks even after they're no longer visible within the application.
+
+:::image type="content" source="../media/viva-engage-retention-lifecycle.png" alt-text="Diagram showing the content lifecycle for Viva Engage." lightbox="../media/viva-engage-retention-lifecycle.png":::
+
+| Scenario | Modified or deleted content| Unmodified content|
 | :--- | :--- | :--- |
-| **retain and delete**| The original message is immediately copied (if edited) or moved (if deleted) to the SubstrateHolds folder. The message is stored there until the retention period expires and then the message is immediately permanently deleted.| The message is moved to the SubstrateHolds folder after the retention period expires. This action takes up to seven days from the expiry date. When the message is in the SubstrateHolds folder, it's then immediately permanently deleted.|
-| **retain-only**| A copy of the original message is immediately created in the SubstrateHolds folder and retained there until the retention period expires. Then the message is immediately permanently deleted from the SubstrateHolds folder. | Nothing happens before and after the retention period; the message remains in its original location.|
-| **delete-only**| The item is immediately moved to the SubstrateHolds folder where it's immediately permanently deleted.| At the end of the retention period, the message is moved to the SubstrateHolds folder. This action takes up to seven days from the expiry date. Then the message is immediately permanently deleted from the SubstrateHolds folder.
+| **Retain and delete**| If edited or deleted during the retention period, the message is immediately copied or moved to SubstrateHolds. It remains there for at least 1 day. After the retention period, it undergoes permanent deletion within 1-7 days. | The message moves directly to SubstrateHolds after the retention period and is permanently deleted within 1-7 days after at least 1 day of storage. |
+| **Retain-only** | If edited or deleted, the message is immediately copied to SubstrateHolds and retained there indefinitely until the retention period ends. It's then permanently deleted within 1-7 days post-period. | The message stays indefinitely in its original location, unaffected by retention operations. |
+| **Delete-only** | Upon deletion, the message is immediately moved to SubstrateHolds and stored for at least 1 day, then permanently deleted within 1-7 days. | At the end of the retention period, the message moves to SubstrateHolds, is stored for at least 1 day, and then permanently deleted within 1-7 days. |
 
-## Important considerations
+## Messages from external users
 
-There are several aspects to consider when configuring retention policies for Yammer:
+Retention policies in Viva Engage are primarily designed for internal users within your organization. However, you can extend these policies to external users by modifying the policy settings:
 
-- By default, a retention policy for Yammer user messages applies to all users in your organization, but not external users. You can apply a retention policy to external users if you use the Edit option for users included, and specify their account.
+- **Applying policies to external users**: Include external users in retention policies by selecting the **Edit** option and specifying their account details.
+- **Limitation for Azure B2B guest users**: Viva Engage retention policies don't support Azure B2B guest users, which is crucial when collaborating externally.
 
-- When you select Edit for the Yammer user messages location, you might see guests and non-mailbox users. Retention policies aren't designed for these users, so don't select them.
+### Limitations
 
-- Files that you use with Yammer aren't included in retention policies for Yammer. These items have their own retention policies.
+There are specific limitations in how retention policies can be applied within Viva Engage, especially concerning external and guest users:
 
-It's also important to know what happens to the data of users, when they leave the organization:
+- **Editing user message policies**: Be careful when selecting **Edit** for the Viva Engage user messages. The interface might display guest and non-mailbox users, but retention policies don't cover these groups. Make sure you don't select them to avoid configuration errors.
 
-| Documents and Files| Yammer user messages| Yammer community messages|
-| :--- | :--- | :--- |
-| Because files and documents stored Yammer are located on SharePoint Online sites, the same behavior as for SharePoint Online and OneDrive applies.| When a user leaves the organization and their Microsoft 365 account is removed, their Yammer user messages that are subject to retention are retained in an inactive mailbox. These messages are still subject to the retention policies that were set for the user before their mailbox became inactive. This content is visible to an eDiscovery search. | Yammer community messages posted by a user are stored in the Azure database and the group mailbox. When a user leaves the organization, those data remains unaffected.|
+## Handling employee departures
+
+When an employee leaves your organization and their Microsoft 365 account is deactivated, their Viva Engage user messages subject to retention are securely stored in an inactive mailbox. This process ensures these messages remain accessible for eDiscovery searches, following any retention policies applied before deactivation. Retaining data in inactive mailboxes aids compliance with legal obligations and facilitates audits or investigations post-employee departure. Data remains in the inactive mailbox according to the retention policy, varying based on legal and regulatory requirements.
+
+If the departing user stored files in Viva Engage, these files are subject to separate retention policies managed through SharePoint and OneDrive.

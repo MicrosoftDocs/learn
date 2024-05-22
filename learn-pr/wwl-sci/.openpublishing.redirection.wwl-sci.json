@@ -84,6 +84,11 @@
         "source_path_from_root": "/learn-pr/wwl-sci/manage-data-retention-microsoft-365/4a-explain-retention-microsoft-yammer.md",
         "redirect_url": "/training/modules/manage-data-retention-microsoft-365/explain-retention-viva-engage",
         "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/manage-data-retention-microsoft-365/2-explain-retention-exchange-online.md",
+        "redirect_url": "/training/modules/manage-data-retention-microsoft-365/explain-retention-exchange-online",
+        "redirect_document_id": false
       }
     ]
 }

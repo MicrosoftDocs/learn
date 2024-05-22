@@ -36,6 +36,9 @@ units:
 - learn.wwl.manage-data-retention-microsoft-365.introduction
 - learn.wwl.manage-data-retention-microsoft-365.explain-retention-sharepoint-online-onedrive
 - learn.wwl.manage-data-retention-microsoft-365.explain-retention-teams
+- learn.wwl.manage-data-retention-microsoft-365.explain-retention-viva-engage
+- learn.wwl.manage-data-retention-microsoft-365.explain-retention-exchange-online
+- learn.wwl.manage-data-retention-microsoft-365.explain-retention-copilot-interactions
 
 - learn.wwl.manage-data-retention-microsoft-365.compare-use-of-preservation-lock,-preservation-hold-pegulatory-retention-policie
 - learn.wwl.manage-data-retention-microsoft-365.explain-retention-microsoft-yammer
