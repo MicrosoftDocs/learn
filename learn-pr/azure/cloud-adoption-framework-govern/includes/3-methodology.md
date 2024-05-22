@@ -44,7 +44,7 @@ You can use the cloud governance assessment to get personalized recommendations 
 
 ## Governance foundation
 
-<maybe remove or just focus on tools. Note Blueprints in image.>
+<!--maybe remove or just focus on tools. Note Blueprints in image..-->
 
 Azure has a suite of governance tools that are built on top of the Azure Resource Manager platform. The initial governance foundation demonstrates how you can apply these tools to demonstrate cloud governance. As you progress through the units of this module, you learn how to apply these tools to solve governance challenges. First, start with a governance foundation to familiarize yourself with the tools.
 

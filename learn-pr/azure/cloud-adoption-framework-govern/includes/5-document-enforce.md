@@ -9,8 +9,8 @@ When you define corporate policy, you must identify and mitigate business risks,
 | <br> :::image type="content" source="../media/enforcement.png" alt-text="Process enforcement icon." border="false"::: | <br> **Enforce cloud governance policies**: Implement controls and procedures to align cloud use to the cloud governance policies. |
 | :::image type="icon" source="../media/business-risk.png" alt-text="Monitoring icon."::: |**Monitor cloud governance**: Configure monitoring solutions to track your compliance.|
 
-<update icon>
-<For the following sections, update content>
+<!--update icon-->
+<!--For the following sections, update content.-->
 
 ## Document cloud governance policies
 

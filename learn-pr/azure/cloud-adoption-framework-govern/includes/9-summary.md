@@ -1,6 +1,7 @@
 In this module, you learned about governance theory, corporate policies, and governance disciplines. You also got experience applying basic governance by using Azure governance products.
-<change content>
-<add links>
+
+<!--change content-->
+<!--add links-->
 
 ## Next steps
 
