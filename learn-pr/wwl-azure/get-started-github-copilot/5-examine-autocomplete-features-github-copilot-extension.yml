@@ -4,10 +4,12 @@ title: Examine the autocomplete features of the GitHub Copilot extension
 metadata:
   title: Examine the autocomplete features of the GitHub Copilot extension
   description: "Examine the autocomplete features of the GitHub Copilot extension"
-  ms.date: 05/10/2024
+  ms.date: 05/16/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/5-examine-autocomplete-features-github-copilot-extension.md)]

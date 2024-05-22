@@ -1,18 +1,21 @@
-GitHub Copilot Chat can help you write unit test cases by generating code snippets based on the code you specify. The code selections that you specify can be based on the code open in the editor or the code snippet you highlight in the editor. Using Copilot Chat can help you write test cases without spending as much time on repetitive tasks. For example, if you're writing a test case for a specific function, you can use Copilot Chat to suggest possible input parameters and expected output values based on the function's signature and body. Copilot Chat can also suggest assertions that ensure the function is working correctly, based on the code's context and semantics.
+GitHub Copilot Chat can be used to suggest unit tests based on the code you specify. For example, if you specify a method signature and body, GitHub Copilot Chat can suggest test cases that cover input parameters and expected output values. Once your test project contains a few test cases, you can use GitHub Copilot to generate code completion suggestions for additional test cases. Using code line completions to generate unit tests reduces the repetitive process and helps to ensure that your code is thoroughly tested.
 
-Copilot Chat can also help you write test cases for edge cases and boundary conditions that might be difficult to identify manually. For instance, Copilot Chat can suggest test cases for error handling, null values, or unexpected input types, helping you ensure your code is robust and resilient. However, it is important to note that generated test cases may not cover all possible scenarios, and manual testing and code review are still necessary to ensure the quality of the code.
+GitHub Copilot Chat uses your code's context and semantics to suggest assertions that ensure the function is working correctly. It also helps you write test cases for edge cases and boundary conditions that might be difficult to identify manually. For example, GitHub Copilot Chat can suggest test cases for error handling, null values, or unexpected input types.
 
-## Access GitHub Copilot tools in Visual Studio Code
+> [!IMPORTANT]
+> Generated test cases may not cover all possible scenarios. Manual testing and code reviews are necessary to ensure the quality of your code.
 
-Visual Studio Code provides easy access to the following GitHub Copilot and Copilot Chat features:
+## GitHub Copilot tools in Visual Studio Code
+
+Visual Studio Code provides easy access to the following GitHub Copilot and GitHub Copilot Chat features:
 
 - **Code line completions**: Use code line completions to write code more efficiently.
 - **Inline chat**: Start an inline chat conversation directly from the editor for help while you're coding.
-- **Chat view**: Have an AI assistant on the side to help you at any time.
+- **Chat view**: Open an AI assistant on the side that can help you at any time.
 - **Quick Chat**: Ask a quick question and get back into what you're doing.
 - **Smart actions**: Run smart actions to complete certain tasks without even having to write a prompt.
 
-The inline chat, chat view, and quick chat features allow you to ask questions and get help from GitHub Copilot Chat without leaving the Visual Studio Code environment. These features make it easy to get help and information from GitHub Copilot Chat while you're working on your code.
+The GitHub Copilot extensions accelerate code development and keep you inside the Visual Studio Code environment.
 
 ## Visual Studio Code support for unit tests
 
@@ -24,26 +27,32 @@ To create and run C# unit tests in Visual Studio Code, you need the following re
 
 ### C# Dev Kit support for unit tests
 
-This C# Dev Kit extension provides a rich set of features to help you create and manage unit tests for your C# projects. It includes the following features:
+The C# Dev Kit extension for Visual Studio Code provides a rich set of features to help you create and manage unit tests for your C# projects. It includes the following features:
 
-    - Test Explorer - A tree view to show all the test cases in your workspace.
-    - Run/Debug test cases - A feature to run and debug test cases.
-    - View test results - A feature to view the test results.
-    - Testing commands - Commands to run all tests, run failed tests, and more.
-    - Testing settings - Settings specific to testing.
-    - Test framework package
+- Test Explorer - A tree view to show all the test cases in your workspace.
+- Run/Debug test cases - A feature to run and debug test cases.
+- View test results - A feature to view the test results.
+- Testing commands - Commands to run all tests, run failed tests, and more.
+- Testing settings - Settings specific to testing.
+- Test framework package
 
-Visual Studio Code and the C# Dev Kit provide a rich set of features to help you create and manage unit tests for your C# projects. You can enable testing for your project, add test framework packages, run and manage unit tests, and generate unit test cases using the C# Dev Kit.
-
-The C# Dev Kit extension supports the following test frameworks:
+The C# Dev Kit supports the following test frameworks:
 
 - xUnit
 - NUnit
 - MSTest
 
+The C# Dev Kit enables you to create a test project, add a test framework package, and manage unit tests.
+
 ### Enabling a test framework
 
-You can enable a test framework for your project with just a few steps in the Solution Explorer:
+The Command Palette in Visual Studio Code provides the easiest way to enable a test framework for your project. You can open the Command Palette in the following ways:
+
+- Press the **Ctrl** + **Shift** + **P** keys (Windows/Linux) or **Cmd** + **Shift** + **P** (macOS).
+- Open the **View** menu, and then select **Command Palette**.
+- Open the Solution Explorer view, right-click the project folder, and then select **New Project**. This option opens the Command Palette with the **.NET:New Project...** command already selected.
+
+The following sections describe how to enable a test framework for your C# project using the Command Palette.
 
 #### xUnit
 
@@ -89,13 +98,6 @@ From the Terminal, run the following command:
     dotnet add [location of your test csproj file] reference [location of the csproj file for project to be tested]
     ```
 
-### Managing unit tests in Visual Studio Code
-
-The C# Dev Kit extension also provides the following features:
-
-- Run/Debug tests cases
-- View test report
-
 ## Develop unit tests in Visual Studio Code using GitHub Copilot Chat
 
 The combination of Visual Studio Code and GitHub Copilot Chat provides a powerful environment for creating and running unit tests for your C# projects.
@@ -108,33 +110,17 @@ The Unit testing process can be broken down into three stages:
 
 ### Create a test project
 
-To create a test project for your C# project, complete the following steps:
+You need to create a test project that will be used to hold your unit tests. You can use Visual Studio Code to complete the following tasks:
 
-1. Open Visual Studio Code.
+1. Use the Command Palette to create a test project that uses a specified test framework.
 
-1. Press **Ctrl** + **Shift** + **P** to open the Command Palette.
-
-1. Type **new project** and select **.NET: New Project...**.
-
-1. Choose the test framework you want to use (xUnit, NUnit, or MSTest).
-
-1. Provide a name and location for the new project.
-
-    After creating the test project, you need to add a reference to the project that you're testing.
-
-1. To add a reference to the project you're testing, run the following command in the Terminal:
-
-    The command should look like this:
-
-        ```plaintext
-        dotnet add [location of your test project's .csproj file] reference [location of the project to be tested's .csproj file]
-        ```
+1. Use the integrated Terminal to add a reference to the project you're testing.
 
 This process creates a new project and configures the test runner for the selected framework.
 
 ### Generate unit test cases using GitHub Copilot Chat
 
-GitHub Copilot Chat can be used to help you write unit test cases for your test framework. Copilot Chat identifies your test framework and coding style and generates matching code snippets. You can use Copilot Chat to complete the following tasks:
+GitHub Copilot Chat can be used to help you write unit test cases for your test framework. Copilot Chat recognizes your test framework and coding style and generates matching code snippets. You can use Copilot Chat to complete the following tasks:
 
 - Write unit test cases for your test framework based on the code open in the editor or the code snippet you highlight in the editor. Copilot identifies your test framework and coding style and generates matching code snippets.
 

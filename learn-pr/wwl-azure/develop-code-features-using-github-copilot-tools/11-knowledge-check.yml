@@ -4,10 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/10/2024
+  ms.date: 05/22/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 quiz:
   title: "Check your knowledge"
@@ -38,7 +40,7 @@ quiz:
     choices:
     - content: "By being vague about the inputs, outputs, APIs, or frameworks they want to use."
       isCorrect: false
-      explanation: "Incorrect. The more specific your prompt is, the better the outcome will be."
+      explanation: "Incorrect. The more specific your prompt, the better the outcome."
     - content: "By using chat participants, slash commands, chat variables, and being specific in your prompts."
       isCorrect: true
       explanation: "Correct. These methods help Copilot understand your intent and provide more targeted and accurate responses."
@@ -58,20 +60,20 @@ quiz:
       explanation: "Incorrect. Maintaining high quality doesn't slow down the suggestion process, but rather improves it."
   - content: "What are the two ways to generate code line completions using GitHub Copilot?"
     choices:
-    - content: "From a code line and from a code file."
+    - content: "Generate completions from a code line and from a code file."
       isCorrect: false
       explanation: "Incorrect. GitHub Copilot generates code line completions from a code line, but not from a code file."
-    - content: "From a comment and from a code line."
+    - content: "Generate completions from a comment and from a code line."
       isCorrect: true
       explanation: "Correct. GitHub Copilot can generate code line completions from a comment and from code."
-    - content: "From a comment and from a prompt."
+    - content: "Generate completions from a comment and from a prompt."
       isCorrect: false
       explanation: "Incorrect. GitHub Copilot generates code line completions from comments, but not from a prompt. GitHub Copilot Chat generates responses from prompts."
   - content: "How does GitHub Copilot determine the code completion suggestions it provides?"
     choices:
     - content: "Based on the context of code in the editor."
       isCorrect: true
-      explanation: "Correct. GitHub Copilot generates code completion suggestions based on the context of code the editor. This includes the code being written and the surrounding code."
+      explanation: "Correct. GitHub Copilot generates code completion suggestions based on the context of code the editor. GitHub Copilot uses the code being written and surrounding code to generate code completion suggestions."
     - content: "Based on the programming language used."
       isCorrect: false
       explanation: "Incorrect. While GitHub Copilot does support multiple programming languages, it doesn't base its suggestions solely on the language used."

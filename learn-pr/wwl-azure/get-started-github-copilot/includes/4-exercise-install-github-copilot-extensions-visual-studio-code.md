@@ -5,7 +5,7 @@ The GitHub Copilot extensions for Visual Studio Code provide the following servi
 - Generate explanations of existing code projects and suggestions for documentation.
 - Generate code autocompletion suggestions in response code and comments entered in the editor.
 - Generate code update suggestions in response to questions and prompts entered through a chat interface.
-- Generate unit test suggestions using code autocompletion suggestions prompts entered through a chat interface.
+- Generate unit test suggestions based on chat session and code completion responses.
 - Generate code improvement suggestions in response to questions and prompts entered through a chat interface.
 
 > [!IMPORTANT]
@@ -24,7 +24,7 @@ You can set up a subscription to GitHub Copilot Individual with your personal Gi
 
 ### Member of an organization
 
-You need to be assigned to a subscription by an organization owner.
+If your GitHub account is licensed through an organization, you need to be assigned to a subscription by an organization owner.
 
 You can request access to GitHub Copilot Business from the GitHub Copilot settings for your personal account.
 

@@ -1,12 +1,14 @@
 Code challenges reinforce what you've learned and help you gain some confidence before proceeding.
 
-## Challenge: Create project and inline documentation for an existing app
+### Challenge: Create project and inline documentation for an existing app
 
-You've been asked to review an existing app and then create the project and inline documentation. You have 15 minutes to complete this challenge.
+You've been asked to review an existing app and then create the project and inline documentation.
 
-## Prepare your coding environment
+Some organizations use an existing or customized standard for their documentation. When organizations select a standard, they often hold developers accountable for following that standard. This challenge is not about crafting documentation that achieves a specific standard. Instead, it's about using GitHub Copilot Chat to help you generate inline and project documentation more efficiently.
 
-You're using Visual Studio Code and the GitHub Copilot extensions to complete this challenge. The sample project that you'll be working with is named **APL2007M2Sample2**. The APL2007M2Sample2 project is included in the **SampleApps** folder that you downloaded when you completed the "Generate code explanations using GitHub Copilot Chat" unit earlier in this module.
+### Prepare your coding environment
+
+In this challenge, you use Visual Studio Code and the GitHub Copilot extensions to document a sample project. The sample project that you'll be working with is named **APL2007M2Sample2**. The project is included in the **SampleApps** folder that you downloaded when you completed the "Generate code explanations using GitHub Copilot Chat" unit earlier in this module.
 
 1. Open the **APL2007M2Sample2** folder in Visual Studio Code.
 
@@ -15,15 +17,17 @@ You're using Visual Studio Code and the GitHub Copilot extensions to complete th
     1. Navigate to the Windows Desktop folder, open the **SampleApps** folder, and locate the **APL2007M2Sample2** folder.
     1. Select **APL2007M2Sample2** and then select **Select Folder**.
 
-    The Visual Studio Code EXPLORER view should show a APL2007M2Sample2 code project containing a media folder and the following files:
+1. Verify that the **APL2007M2Sample2** project contains the following files:
+
+    The Visual Studio Code EXPLORER view should display a APL2007M2Sample2 code project containing a media folder and the following files:
 
     - Program.cs
     - Sample2.csproj
-    - Sample2.sln
+    - APL2007M2Sample2.sln
 
-You are now ready to use GitHub Copilot Chat to complete this exercise.
+You're now ready to complete this challenge.
 
-## Documentation requirements for this challenge
+### Documentation requirements for this challenge
 
 Your documentation must include the following items:
 
@@ -41,7 +45,7 @@ Your documentation must include the following items:
     - **Dependencies**: A list of the dependencies for the project.
     - **Summary**: A summary of the project.
 
-1. README file contents that can be used for the code project repository. The README contents should contain the following sections:
+1. README file contents that can be used for the code project repository. The README contents should be formatted as markdown and contain the following sections:
 
     - **Project Title**: A brief, clear title for the project.
     - **Description**: A detailed explanation of what the project is and what it does.
@@ -50,12 +54,18 @@ Your documentation must include the following items:
     - **Contributor guidelines**: Guidelines for how others can contribute to the project.
     - **License**: The license that the project is under.
 
-## Instructions
+### Instructions
 
-Organizations often apply an existing or customized standard for their documentation and hold developers accountable for following that standard. This challenge is not about crafting documentation that achieves a specific standard. Instead, it's about using GitHub Copilot Chat to help you generate inline and project documentation more efficiently.
+Use the following steps to complete this challenge:
+
+1. Verify that the project builds without an error when you run `dotnet build` in the Terminal.
 
 1. Use GitHub Copilot Chat in Visual Studio Code to generate inline and project documentation.
 
 1. Review the generated documentation to ensure that it meets the requirements.
 
-Good luck! You have 15 minutes to complete this challenge. When you're done, review the solution described in the next unit.
+1. Once you've completed the documentation, save the changes to the project.
+
+1. After saving the documented code, verify that the project builds without an error when you run `dotnet build` in the Terminal.
+
+Good luck! When you're done, review the solution described in the next unit.
