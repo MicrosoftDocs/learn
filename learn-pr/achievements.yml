@@ -3358,3 +3358,8 @@ achievements:
   title: Microsoft Accessibility Features and Tools
   summary: This module highlights how to find and use key accessibility features and tools built into Microsoft products such as Windows 10, Microsoft PowerPoint, and Microsoft Translator.
   iconUrl: /training/achievements/accessibility-features.svg
+- uid: learn.azure.azure-sentinel-deploy-connect.badge
+  type: badge
+  title: Deploy Microsoft Sentinel and connect data sources
+  summary: In this course you'll learn how to deploy Microsoft Sentinel and connect it to data sources. You'll also learn how to use Azure and AI to provide analysis of security alerts.
+  iconUrl:  /training/achievements/deploy-azure-sentinel-and-connect-data-sources.svg
