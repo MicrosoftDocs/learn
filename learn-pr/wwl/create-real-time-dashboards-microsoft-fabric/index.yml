@@ -3,10 +3,12 @@ uid: learn.wwl.create-real-time-dashboards-microsoft-fabric
 metadata:
   title: Create real time dashboards with Microsoft Fabric
   description: "Real-Time Dashboards can fetch data from various sources, provide visual representations, and update automatically. This dashboard should be easy to use, accessible, and secure. It should also allow for data exploration, filtering, and drill-down capabilities. This scenario is common in many industries where real-time data analysis is crucial for decision-making."
-  ms.date: 05/21/2024
+  ms.date: 05/22/2024
   author: wwlpublish
   ms.author: jamesh
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: azure
   ai-usage: human-only
 title: Create real time dashboards with Microsoft Fabric
