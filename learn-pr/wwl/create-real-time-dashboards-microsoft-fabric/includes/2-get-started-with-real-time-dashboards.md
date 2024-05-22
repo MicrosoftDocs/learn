@@ -6,7 +6,7 @@ The Real-Time Dashboard is integrated within a workspace environment. Whenever y
 
 ![Screenshot of Edit and View reports.](../media/edit-view-real-time-dashboard.png)
 
-To ***create*** a new report, you navigate to the Real-Time Intelligence section of Power BI and when presented with the ***New*** selection list, select the Real-Time Dashboard button. You can also select the ***Create*** button ![Create button](../media/create-button.png) on the left side of the canvas and then scroll in the various services, then select the Real-Time Dashboard card.
+To ***create*** a new report, you navigate to the Real-Time Intelligence section of Power BI and when presented with the ***New*** selection list, select the Real-Time Dashboard button. You can also select the ***Create*** button ![This is a create button image to create a new object](../media/create-button.png) on the left side of the canvas and then scroll in the various services, then select the Real-Time Dashboard card.
 
 ![Screenshot of Create Tool Bar in RTI.](../media/real-time-intelligence-services.png)
 

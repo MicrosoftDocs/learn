@@ -12,7 +12,7 @@ metadata:
   ms.service: azure
   ai-usage: human-only
 title: Create real time dashboards with Microsoft Fabric
-summary: In this module, you'll learn about the Real-Time Dashboard in Microsoft Fabric and its user-friendly experience.
+summary: In this module, you'll learn about the Real-Time Dashboard in Microsoft Fabric and its user-friendly experience. Dashboards allow the user to create an experience that allows for autorefresh of data, parameterization, and a multi-page dashboarding experience with a no-code experience and integration with Copilot in the underlying querysets.
 abstract: |
   By the end of this module, you'll be able to:
 
