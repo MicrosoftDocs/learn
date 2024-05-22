@@ -4,10 +4,12 @@ title: Explore AI goals and challenges in healthcare
 metadata:
   title: Explore AI goals and challenges in healthcare
   description: "Explore AI goals and challenges in healthcare"
-  ms.date: 11/30/2023
+  ms.date: 05/22/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 9
 content: |
   [!include[](includes/2-explore-ai-goals-challenges-healthcare.md)]
