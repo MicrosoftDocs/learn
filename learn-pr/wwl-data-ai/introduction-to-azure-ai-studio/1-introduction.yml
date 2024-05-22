@@ -3,10 +3,10 @@ uid: learn.wwl.introduction-to-azure-ai-studio.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "Explore scenarios for Azure AI Studio (preview)."
-  ms.date: 10/16/2023
+  description: "Explore scenarios for Azure AI Studio."
+  ms.date: 05/08/2024
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: unit
   ms.custom:
     - ignite-2023
