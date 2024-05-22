@@ -23,6 +23,6 @@ Now that you have reviewed this module, you should:
 
 ## References
 
-1. [Microsoft WorkLab, “Technology Can Help Unlock a New Future for Frontline Workers,” January 12, 2022.](https://www.microsoft.com/en-us/worklab/work-trend-index/technology-unlocks-a-new-future-for-frontline)
-1. [World Economic Forum, “Data Excellence: Transforming manufacturing and supply systems,” January 2021.](https://www3.weforum.org/docs/WEF_Data_Excellence_Transforming_manufacturing_2021.pdf)
-1. [World Economic Forum, “The Data-Driven Journey Towards Manufacturing Excellence,” January 2022.](https://www3.weforum.org/docs/WEF_The_Data-Driven_Journey_Towards_Manufacturing_Excellence_2022.pdf)
+* [Microsoft WorkLab, “Technology Can Help Unlock a New Future for Frontline Workers,” January 12, 2022.](https://www.microsoft.com/en-us/worklab/work-trend-index/technology-unlocks-a-new-future-for-frontline)
+* [World Economic Forum, “Data Excellence: Transforming manufacturing and supply systems,” January 2021.](https://www3.weforum.org/docs/WEF_Data_Excellence_Transforming_manufacturing_2021.pdf)
+* [World Economic Forum, “The Data-Driven Journey Towards Manufacturing Excellence,” January 2022.](https://www3.weforum.org/docs/WEF_The_Data-Driven_Journey_Towards_Manufacturing_Excellence_2022.pdf)

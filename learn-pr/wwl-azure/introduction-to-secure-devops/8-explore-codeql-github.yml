@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-secure-devops.explore-codeql-github
+title: Explore CodeQL in GitHub
+metadata:
+  title: Explore CodeQL in GitHub
+  description: "Explore CodeQL in GitHub"
+  ms.date: 05/22/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-explore-codeql-github.md)]
