@@ -35,10 +35,10 @@ subjects:
   - productivity
 units:
 - learn.advanced-github-copilot.introduction
-- learn.advanced-github-copilo.advanced-github-copilot-features
+- learn.advanced-github-copilot.advanced-github-copilot-features
 - learn.advanced-github-copilot.exercise-setup
-- learn.advanced-github-copilo.applied-copilot-techniques
-- learn.advanced-github-copilo.exercise-update-a-web-api
+- learn.advanced-github-copilot.applied-copilot-techniques
+- learn.advanced-github-copilot.exercise-update-a-web-api
 - learn.advanced-github-copilot.knowledge-check
 - learn.advanced-github-copilot.summary
 badge:
