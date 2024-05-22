@@ -4,17 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/26/2023
+  ms.date: 05/22/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-  ms.custom:
-    - devx-track-azurecli
-azureSandbox: false
-labModal: false
-durationInMinutes: 4
+durationInMinutes: 5
 content: |
-  [!include[](includes/5-knowledge-check.md)]
+  [!include[](includes/4-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -44,10 +40,10 @@ quiz:
     choices:
     - content: "variable=\"value\"."
       isCorrect: false
-      explanation: "Incorrect. If you use a PowerShell for running Azure CLI scripts, you'll need to use the following syntax for string variables $variable=\"value\", and $variable=integer for integer values."
+      explanation: "Incorrect. If you use a PowerShell for running Azure CLI scripts, you need to use the following syntax for string variables $variable=\"value\", and $variable=integer for integer values."
     - content: "variable=value."
       isCorrect: false
-      explanation: "Incorrect. If you use a PowerShell for running Azure CLI scripts, you'll need to use the following syntax for string variables $variable=\"value\", and $variable=integer for integer values."
+      explanation: "Incorrect. If you use a PowerShell for running Azure CLI scripts, you need to use the following syntax for string variables $variable=\"value\", and $variable=integer for integer values."
     - content: "$variable=\"value\"."
       isCorrect: true
-      explanation: "Correct. If you use a PowerShell for running Azure CLI scripts, you'll need to use the following syntax for string variables $variable=\"value\", and $variable=integer for integer values."
+      explanation: "Correct. If you use a PowerShell for running Azure CLI scripts, you need to use the following syntax for string variables $variable=\"value\", and $variable=integer for integer values."

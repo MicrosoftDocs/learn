@@ -4,14 +4,10 @@ title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 04/26/2023
+  ms.date: 05/22/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-  ms.custom:
-    - devx-track-azurecli
-azureSandbox: false
-labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-summary.md)]
+  [!include[](includes/5-summary.md)]
