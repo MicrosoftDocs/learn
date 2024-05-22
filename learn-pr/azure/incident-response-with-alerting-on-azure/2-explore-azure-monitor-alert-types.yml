@@ -4,8 +4,8 @@ metadata:
   title: Explore the different alert types that Azure Monitor supports
   description: Explore how Azure Monitor receives resource data, what makes up an alert, and how and when to use an alert. Then learn how to create and manage your own alerts.
   ms.date: 09/14/2023
-  author: cwatson-cat
-  ms.author: cwatson
+  author: AbbyMSFT
+  ms.author: abbyweisberg
   ms.topic: unit
 title: Explore the different alert types that Azure Monitor supports
 durationInMinutes: 6

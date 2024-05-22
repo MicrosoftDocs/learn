@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Use an activity log alert and an action group to notify users about events in your Azure infrastructure
   description: In this exercise, you'll create an activity log alert and set up an action group that will send you an email.
   ms.date: 09/14/2023
-  author: cwatson-cat
-  ms.author: cwatson
+  author: AbbyMSFT
+  ms.author: abbyweisberg
   ms.topic: unit
 title: Exercise -Use an activity log alert and an action group to notify users about events in your Azure infrastructure
 durationInMinutes: 10
