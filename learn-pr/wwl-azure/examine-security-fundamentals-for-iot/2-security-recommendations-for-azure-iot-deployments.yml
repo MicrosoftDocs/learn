@@ -1,15 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.examine-security-fundamentals-for-iot.review-security-recommendations
+uid: learn.wwl.examine-security-fundamentals-for-iot.security-recommendations-for-azure-iot-deployments
 title: Review security recommendations
 metadata:
   title: Review security recommendations
   description: "Review security recommendations"
-  ms.date: 10/09/2023
+  ms.date: 05/22/2024
   author: wwlpublish
-  ms.author: cahowd
+  ms.author: serlingdavis
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.custom:
+  - N/A
+  zone_pivot_groups: azure-interface
 content: |
   [!include[](includes/2-security-recommendations-for-azure-iot-deployments.md)]
+interactive: bash

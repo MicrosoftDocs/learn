@@ -1,15 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.examine-security-fundamentals-for-iot.depth-strategy
+uid: learn.wwl.examine-security-fundamentals-for-iot.iot-security-best-practices
 title: Examine a security-in-depth strategy
 metadata:
   title: Examine a security-in-depth strategy
   description: "Examine a security-in-depth strategy"
-  ms.date: 10/09/2023
+  ms.date: 05/22/2024
   author: wwlpublish
-  ms.author: cahowd
+  ms.author: serlingdavis
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 5
+  ms.custom:
+  - N/A
+  zone_pivot_groups: azure-interface
 content: |
   [!include[](includes/4-iot-security-best-practices.md)]
+interactive: bash
