@@ -128,7 +128,7 @@ In approximately 15 to 20 minutes, your newly created instance of CluedIn is abl
 
 ## Create an Azure Storage Account
 
-You need an Azure Data Lake Storage (ADLS) Gen2 Storage Account to host all of the data used for the module.
+You need an ADLS (Azure Data Lake Storage) Gen2 Storage Account to host all of the data used for the module.
 
 You can bring an account you already have or use this guide to create one:
 
