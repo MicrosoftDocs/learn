@@ -3,13 +3,13 @@ uid: learn.wwl.define-microsoft-ai-strategy-manufacturing
 metadata:
   title: Define a Microsoft AI strategy to create business value in manufacturing
   description: "Discover AI use cases and scenarios for manufacturing. Get familiar with Microsoft AI tools and services for manufacturing. Learn from real success stories."
-  ms.date: 03/21/2024
+  ms.date: 05/22/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: azure-ai-services
+  ms.service: microsoft-cloud-manufacturing
   ai-usage: human-only
 title: Define a Microsoft AI strategy to create business value in manufacturing
 summary: This module is designed to help manufacturing professionals adopt Microsoft AI solutions. It discusses common use cases and real customer stories.

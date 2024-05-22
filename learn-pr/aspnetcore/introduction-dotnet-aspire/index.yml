@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.introduction-dotnet-aspire
+metadata:
+  title: Introduction to .NET Aspire
+  description: In this module, you'll learn about cloud-native applications and how the .NET Aspire stack makes it easier to develop microservices and connect them with each other and with supporting services.
+  ms.date: 01/31/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: module
+  ms.service: dotnet-aspire
+  ms.custom:
+  - team=cloud_advocates
+title: Introduction to .NET Aspire
+summary: Learn about the .NET Aspire stack in .NET 8 and how you can use it to ease and accelerate the development of cloud-native web applications. 
+abstract: |
+  By the end of this module, you'll be able to:
+
+  - Describe how .NET Aspire makes it easier to develop cloud-native distributed applications.
+  - Select the right .NET Aspire component to address a functional requirement in a cloud-native application.
+  - Use Visual Studio to create and run a new .NET Aspire application.
+ratingEnabled: true
+iconUrl: /training/achievements/dotnet-aspiresvg
+levels:
+- intermediate
+roles:
+- developer
+- solution-architect
+products:
+- dotnet
+- aspnet-core
+- dotnet-aspire
+- vs
+- vs-code
+subjects:
+- custom-app-development
+units:
+- learn.introduction-dotnet-aspire.introduction
+- learn.introduction-dotnet-aspire.what
+- learn.introduction-dotnet-aspire.learn-about-components
+- learn.introduction-dotnet-aspire.learn-about-tools
+- learn.introduction-dotnet-aspire.exercise-use-eshop
+- learn.introduction-dotnet-aspire.knowledge-check
+- learn.introduction-dotnet-aspire.summary
+badge:
+  uid: learn.introduction-dotnet-aspire.badge

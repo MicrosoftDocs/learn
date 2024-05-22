@@ -22,7 +22,7 @@ After talking to your colleagues on the website team, you decide on the followin
    1. The workflow pauses for manual validation.
    1. If approval is received, the workflow runs the deployment and smoke tests against your production environment.
 
-Some of these tasks are repeated between your test and production environments, and some are run only for specific environments:
+Some of these tasks are run in both your test and production environments, and some are run only for specific environments:
 
 | Task | Environments |
 |-|-|
@@ -32,7 +32,7 @@ Some of these tasks are repeated between your test and production environments, 
 | Deploy | Both environments |
 | Smoke Test | Both environments |
 
-When you need to repeat steps in your workflow, you might try to copy and paste your step definitions. However, this isn't a good practice. It's easy to accidentally make subtle mistakes or for things to get out of sync when you duplicate your workflow's code. And in the future, when you need to make a change to the steps, you have to remember to apply the change in multiple places.
+When you need to repeat steps in your workflow, copying and pasting your step definitions isn't a good practice. It's easy to accidentally make subtle mistakes or for things to get out of sync when you duplicate your workflow's code. And in the future, when you need to make a change to the steps, you have to remember to apply the change in multiple places. A better practice is to use reusable workflows.
 
 ## Reusable workflows
 
@@ -60,9 +60,9 @@ You can define as many inputs and secrets as you need. But just like Bicep param
 
 Inputs can have several properties, including:
 
-- The _name_ of the input, which you use to refer to the input in your workflow definitions.
-- The _type_ of the input. Inputs support _string_, _number_, and _Boolean_ values.
-- The _default value_ of the input, which is optional. If you don't specify a default value, then a value must be provided when the workflow is used in a caller workflow.
+- The _name_, which you use to refer to the input in your workflow definitions.
+- The _type_. Inputs support _string_, _number_, and _Boolean_ values.
+- The _default value_, which is optional. If you don't specify a default value, then a value must be provided when the workflow is used in a caller workflow.
 
 Secrets have names, but they don't have types or default values.
 
@@ -84,14 +84,14 @@ When you work with called workflows, you often define some of your deployment ac
 
 ## Conditions
 
-You can use workflow _conditions_ to specify whether a step or a job should run depending on a rule that you specify. You can combine inputs and workflow conditions to customize your deployment process for many different situations.
+You use workflow _conditions_ to specify whether a step or a job should run depending on a rule that you create. You can combine inputs and workflow conditions to customize your deployment process to suit your needs.
 
-For example, imagine you define a workflow that runs script steps. You plan to reuse the template for each of your environments. When you deploy your production environment, you want to run another step. Here's how you can achieve that by using the `if` condition on the step:
+For example, imagine you define a workflow that runs the steps in a script. You plan to reuse the template for each of your environments. When you deploy your production environment, you want to run another step. Here's how you can achieve that by using the `if` condition on the step:
 
 :::code language="yaml" source="code/3-script-conditions.yml" range="15-24" highlight="10" :::
 
 The condition here translates to: _if the environmentType parameter's value is equal to 'Production', then run the step_.
 
-Although conditions are a way to add flexibility to your workflow, try not to use too many of them. They complicate your workflow and make it harder to understand its flow. If you have many conditions in a called workflow, then a called workflow might not be the best solution for the deployment, and you might need to redesign your overall workflow.
+Although conditions add flexibility to your workflow, too many of them can complicate your workflow and make it harder to understand. If you have many conditions in a called workflow, you might want to consider redesigning it.
 
-Also, consider using YAML comments to explain the conditions that you use and any other aspects of your workflow that might need more explanation. Comments help make your workflow easy to understand and work with in the future. There are some example YAML comments in the exercises throughout this module.
+Also, use YAML comments to explain the conditions that you use and any other aspects of your workflow that might need more explanation. Comments help make your workflow easier to understand and work with in the future. There are some example YAML comments in the exercises throughout this module.

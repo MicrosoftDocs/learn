@@ -4,10 +4,12 @@ title: 'Exercise - Create code by using GitHub Copilot Inline Chat '
 metadata:
   title: Exercise - Create code by using GitHub Copilot Inline Chat
   description: "Exercise - Create code by using GitHub Copilot Inline Chat"
-  ms.date: 05/10/2024
+  ms.date: 05/22/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 18
 content: |
   [!include[](includes/5-exercise-create-code-copilot-chat.md)]

@@ -9,14 +9,14 @@ metadata:
   ms.topic: module
   ms.custom:
   - event-tier1-build-2022
-  ms.service: purview
+  ms.service: purview-data-governance
 title: 'Govern multicloud relational databases using Microsoft Purview'
-summary: Govern your relational databases where they are using Microsoft Purview.
+summary: Govern your relational databases where they're using Microsoft Purview.
 abstract:  | 
   After completing this module, you’ll be able to:
-  - Govern and manage data from an on-premises SQL Server using Microsoft Purview
-  - Govern and manage data from SQL Server running in an Azure VM using Microsoft Purview
-  - Govern and manage data from Amazon RDS using Microsoft Purview
+  - Govern and manage data from an on-premises SQL Server using Microsoft Purview.
+  - Govern and manage data from SQL Server running in an Azure VM using Microsoft Purview.
+  - Govern and manage data from Amazon RDS using Microsoft Purview.
 
 prerequisites: |
   To get the best learning experience from this module, you should have:

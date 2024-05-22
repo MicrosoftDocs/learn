@@ -3,21 +3,25 @@ uid: learn.wwl.create-azure-resources-by-using-azure-cli
 metadata:
   title: Create Azure resources by using Azure CLI
   description: "Create Azure resources by using Azure CLI"
-  ms.date: 04/26/2023
+  ms.date: 05/22/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: module-standard-task-based
-  ms.service: azure-cli
+  ms.topic: module
+  ms.service: azure
+  ai-usage: human-only
 title: Create Azure resources by using Azure CLI
 summary: This module explains Azure CLI to create Azure resources, run templates, and detail Azure CLI commands.
 abstract: |
-  By the end of this module, you'll be able to:
-  - Create Azure resources using Azure CLI
-  - Understand and work with Azure CLI
-  - Run templates using Azure CLI
-  - Explains Azure CLI commands
-prerequisites: |
-  None
+  By the end of this module, you're able to:
+
+  -   Create Azure resources using Azure CLI.
+
+  -   Understand and work with Azure CLI.
+
+  -   Run templates using Azure CLI.
+
+  -   Explains Azure CLI commands.
+prerequisites: None
 iconUrl: /learn/achievements/3-create-azure-resources-by-using-azure-cli.svg
 levels:
 - advanced
@@ -45,8 +49,7 @@ subjects:
 units:
 - learn.wwl.create-azure-resources-by-using-azure-cli.introduction
 - learn.wwl.create-azure-resources-by-using-azure-cli.what-azure-cli
-- learn.wwl.create-azure-resources-by-using-azure-cli.work-with-azure-cli
-- learn.wwl.create-azure-resources-by-using-azure-cli.exercise-run-templates-using-azure-cli
+- learn.wwl.create-azure-resources-by-using-azure-cli.work-azure-cli
 - learn.wwl.create-azure-resources-by-using-azure-cli.knowledge-check
 - learn.wwl.create-azure-resources-by-using-azure-cli.summary
 badge:

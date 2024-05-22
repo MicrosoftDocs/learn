@@ -4,10 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/24/2023
+  ms.date: 05/22/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]

@@ -31,7 +31,7 @@ roles:
 - k-12-educator
 - student
 products:
-- industry-solutions
+- vs-code
 subjects:
 - cloud-computing
 units:

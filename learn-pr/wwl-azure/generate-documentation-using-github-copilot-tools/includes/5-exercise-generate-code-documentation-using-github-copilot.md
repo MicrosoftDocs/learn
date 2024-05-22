@@ -1,4 +1,4 @@
-Inline code documentation helps to ensure that your code is consumable by other developers. Code comments help developers understand the codebase, its purpose, and how to use it. Properly documenting your code creates a more readable and maintainable codebase that's easier for other developers to understand and work with.
+Documenting your code is an important aspect of the software development process. Code comments help developers understand the codebase, its purpose, and how to use it.
 
 GitHub Copilot Chat can help you document your code by generating inline code comments. To generate inline documentation, you have the following options:
 
@@ -6,11 +6,13 @@ GitHub Copilot Chat can help you document your code by generating inline code co
 - Enter the `/doc` command in the inline chat to generate comments that describe the selected code.
 - Use the **Generate Docs** smart action to generate comments that describe the selected code.
 
-Using GitHub Copilot Chat to generate inline code documentation, can help you create a more readable and maintainable codebase that's easier for other developers to understand and work with.
+Properly documenting your code creates a more readable and maintainable codebase that's easier for other developers to understand and work with.
 
 ### Generate inline code documentation using the Chat view
 
 In this exercise, you use GitHub Copilot Chat to generate inline code documentation for the `APL2007M2Sample1` project.
+
+Use the following steps to complete this section of the exercise:
 
 1. Ensure that you have the `APL2007M2Sample1` project open in Visual Studio Code.
 
@@ -166,6 +168,12 @@ In this exercise, you use GitHub Copilot Chat to generate inline code documentat
 
     You can always select **Discard** if you want to reject the suggested update.
 
+### Generate inline code documentation using the **Generate Docs** smart action
+
+The **Generate Docs** smart action is another way to generate inline code documentation. You can use this smart action to generate comments that describe the selected code.
+
+Use the following steps to complete this section of the exercise:
+
 1. In the Visual Studio Code editor, select the `StartSumPageSizesAsync` method.
 
 1. Right-click the selected code block, select **Copilot**, and then select **Generate Docs**.
@@ -174,19 +182,15 @@ In this exercise, you use GitHub Copilot Chat to generate inline code documentat
 
     If necessary, edit the suggested update.
 
-    ![Screenshot showing the code documentation generated using **Generate Docs**.](../media/generate-docs.png)
+    ![Screenshot showing the code documentation generated using the **Generate Docs** smart action.](../media/generate-docs.png)
 
-1. Once your review is complete, select **Accept**.
+    Notice that the **Generate Docs** smart action and inline chat produce similar results.
 
-1. Close the `MainWindow.xaml.cs` file without saving your changes.
+1. Once your review is complete, select **Discard**.
 
-### Generate inline code documentation using the **Generate Docs** smart action
+    Rather than adding inline comments to each method individually, you can generate comments for the entire class at once.
 
-1. Open the `MainWindow.xaml.cs` file.
-
-1. If you saved the `MainWindow.xaml.cs` file with code comments from the previous steps, you can remove the comments.
-
-1. Select the code block for the `MainWindow` class.
+1. Select all of the methods *inside* the `MainWindow` class.
 
 1. Right-click the selection, select **Copilot**, and then select **Generate Docs**.
 
@@ -194,15 +198,14 @@ In this exercise, you use GitHub Copilot Chat to generate inline code documentat
 
 1. Review the suggested changes.
 
-    Notice that the generated documentation includes comments for the class and each of the methods.
+    Notice that the generated documentation includes comments for each of the methods.
 
     > [!IMPORTANT]
     > If you find issues in the generated documentation, modify the suggested changes before continuing.
 
 1. Select **Accept**.
 
-> [!NOTE]
-> When working with selected code, entering `/doc` as the prompt for an inline chat, and selecting the **Generate Docs** smart action, produce similar results.
+    Each of the methods in the `MainWindow` class now includes generated comments.
 
 ### Summary
 

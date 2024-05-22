@@ -4,11 +4,12 @@ title: Describe SQL injection attack
 metadata:
   title: Describe SQL injection attack
   description: "Describe SQL injection attack"
-  ms.date: 06/13/2023
+  ms.date: 05/22/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-  zone_pivot_groups: azure-interface
+  ms.custom:
+  - N/A
 durationInMinutes: 1
 content: |
   [!include[](includes/2-describe-sql-injection-attack.md)]

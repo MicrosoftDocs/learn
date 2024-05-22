@@ -22,6 +22,6 @@ After you've ingested the data into the Lakehouse, you can use Notebooks or Data
 
 Data Factory Pipelines can be used to orchestrate Spark, Dataflow, and other activities; enabling you to implement complex data transformation processes.
 
-After transforming your data, you can query it using SQL, use it to train machine learning models, perform real-time analytics, or develop reports in Power BI.
+After transforming your data, you can query it using SQL, use it to train machine learning models, perform real-time intelligence, or develop reports in Power BI.
 
 You can also apply data governance policies to your Lakehouse, such as data classification and access control.

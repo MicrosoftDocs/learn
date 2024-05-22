@@ -33,5 +33,6 @@ modules:
 - learn.dotnet-maui.consume-rest-services
 - learn.dotnet-maui.store-local-data
 - learn.dotnet-maui.separate-ui-and-logic-with-data-binding
+- learn.dotnet-maui.design-a-mvvm-viewmodel
 trophy:
   uid: learn.dotnet-maui.build-apps-with-dotnet-maui.trophy

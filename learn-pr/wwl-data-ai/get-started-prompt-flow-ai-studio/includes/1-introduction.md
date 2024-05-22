@@ -1,11 +1,11 @@
 The true power of **Large Language Models** (**LLMs**) lies in their application. Whether you want to use LLMs to classify web pages into categories, or to build a chatbot on your data. To harness the power of the LLMs available, you need to create an application that combines your data sources with LLMs and generates the desired output.
 
-To develop, test, tune, and deploy LLM applications, you can use **prompt flow**, accessible in the [Azure Machine Learning studio](/azure/machine-learning/prompt-flow/overview-what-is-prompt-flow?azure-portal=true) and the [Azure AI Studio (preview)](/azure/ai-studio/how-to/prompt-flow?azure-portal=true).
+To develop, test, tune, and deploy LLM applications, you can use **prompt flow**, accessible in the [Azure Machine Learning studio](/azure/machine-learning/prompt-flow/overview-what-is-prompt-flow?azure-portal=true) and the [Azure AI Studio](/azure/ai-studio/how-to/prompt-flow?azure-portal=true).
 
 :::image type="content" source="../media/prompt-flow-feature.png" alt-text="Diagram showing prompt flow as a feature of Azure Machine Learning and Azure AI.":::
 
 > [!Note]
-> The focus of this module is on understanding and exploring prompt flow through Azure AI Studio. However, note that the content applies to the prompt flow experience in both Azure Machine Learning and Azure AI Studio (preview).
+> The focus of this module is on understanding and exploring prompt flow through Azure AI Studio. However, note that the content applies to the prompt flow experience in both Azure Machine Learning and Azure AI Studio.
 
 Prompt flow takes a **prompt** as input, which in the context of LLMs, refers to the query provided to the LLM application to generate a response. It's the text or set of instructions given to the LLM application, prompting it to generate output or perform a specific task.
 
