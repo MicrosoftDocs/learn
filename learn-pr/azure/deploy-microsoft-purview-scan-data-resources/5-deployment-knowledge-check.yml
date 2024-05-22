@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: "Knowledge check for deployment of a Microsoft Purview account in Azure. These questions cover basic information for Microsoft Purview accounts and how to deploy them in the Microsoft Purview governance portal."
-  ms.date: 04/27/2023
+  ms.date: 05/20/2024
   author: whhender
   ms.author: whhender
   ms.topic: unit

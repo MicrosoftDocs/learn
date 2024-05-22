@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Deploy Microsoft Purview and scan an Azure Data Lake resource using the Azure portal
   description: "This module will teach you how to deploy a Microsoft Purview account in your subscription, register and scan an Azure Data Lake resource, and apply permissions to your Microsoft Purview account. This will get you started using Microsoft Purview to govern your data landscape."
-  ms.date: 04/27/2023
+  ms.date: 05/20/2024
   author: whhender
   ms.author: whhender
   ms.topic: module

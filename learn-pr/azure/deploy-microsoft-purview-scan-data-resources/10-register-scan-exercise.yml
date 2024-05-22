@@ -5,7 +5,7 @@ metadata:
   unitType: excercise
   title: register-and-scan-excercise
   description: "This exercise describes the steps needed to register an Azure Storage source in Microsoft Purview. It also describes the steps to scan the data in Azure Storage into the Microsoft Purview Data Map."
-  ms.date: 04/27/2023
+  ms.date: 05/20/2024
   author: whhender
   ms.author: whhender
   ms.topic: unit

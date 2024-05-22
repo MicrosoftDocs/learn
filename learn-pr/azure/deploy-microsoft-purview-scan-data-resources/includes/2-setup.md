@@ -1,19 +1,19 @@
 
 ## Prerequisites
 
-In order to follow the hands-on exercises in this module, you'll need the following:
+In order to follow the hands-on exercises in this module, you need:
 
 - An [Azure account](https://azure.microsoft.com/free/) with an active subscription. If you don't have one, you can follow the link to create a free one.
-- Owner permissions within a Resource Group to create resources and manage role assignments. If you just created your Azure account, you'll have owner permissions already. If you didn't create your subscription, check with your Azure administrator to confirm [you have owner permissions within a resource group](/azure/role-based-access-control/quickstart-assign-role-user-portal).
-- An Azure Data Lake Store Gen2 or Azure Storage account. If you don't have one, [follow the steps below to create one](#create-a-storage-account).
-- Some data in your ADLS Gen2 or Azure Storage account. If you don't have any data, you can follow [the steps below to add data to your storage account](#add-data-to-your-storage-account).
+- Owner permissions within a Resource Group to create resources and manage role assignments. If you just created your Azure account, you already have owner permissions. If you didn't create your subscription, check with your Azure administrator to confirm [you have owner permissions within a resource group](/azure/role-based-access-control/quickstart-assign-role-user-portal).
+- An Azure Data Lake Store Gen2 or Azure Storage account. If you don't have one, follow the steps in the section titled [Create a storage account](#create-a-storage-account).
+- Some data in your ADLS Gen2 or Azure Storage account. If you don't have any data, you can follow the steps in the section titled [Add data to your storage account](#add-data-to-your-storage-account).
 
 ## Create a storage account
 
 > [!NOTE]
 > If you already have an ADLS Gen2 or Azure Storage account in your subscription that you would like to use, you can skip this section.
 
-To provide data for Microsoft Purview to classify, we'll set up an ADLS Gen 2 account with some sample data. Follow the steps below to create the resource.
+To provide data for Microsoft Purview to classify, we'll set up an ADLS Gen 2 account with some sample data. Follow these steps to create the resource:
 
 1. Sign in to the [Azure portal](https://portal.azure.com) with your Azure account.
 1. Select **Create a resource**.
@@ -63,7 +63,7 @@ To provide data for Microsoft Purview to classify, we'll set up an ADLS Gen 2 ac
 
     :::image type="content" source="../media/add-data/select-storage-browser.png" alt-text="Screenshot of A D L S Gen 2 storage account with Storage browser selected from the left side menu.":::
 
-1. Select **Upload** from the top menu.
+1. Select **Blob containers**, then select **Upload** from the top menu.
 
     :::image type="content" source="../media/add-data/select-upload.png" alt-text="Screenshot of A D L S Gen 2 storage browser, with the upload button selected in the menu at the top.":::
 
@@ -77,4 +77,4 @@ To provide data for Microsoft Purview to classify, we'll set up an ADLS Gen 2 ac
 
 1. In the **raw** container, you should see all the files you uploaded.
 
-    :::image type="content" source="../media/add-data/all-files.png" alt-text="Screenshot of A D L S Gen 2 storage browser with the new raw container opened, and all the uploaded files listed below.":::
+    :::image type="content" source="../media/add-data/all-files.png" alt-text="Screenshot of A D L S Gen 2 storage browser with the new raw container opened, and all the uploaded files listed.":::
