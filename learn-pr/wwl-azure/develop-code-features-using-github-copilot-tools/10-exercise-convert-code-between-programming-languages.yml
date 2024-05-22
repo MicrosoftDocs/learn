@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-code-features-using-github-copilot-tools.exercise-convert-code-between-programming-languages
+title: Exercise - Convert code from one programming language to another
+metadata:
+  title: Exercise - Convert code from one programming language to another
+  description: "Exercise - Convert code from one programming language to another"
+  ms.date: 05/22/2024
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 8
+content: |
+  [!include[](includes/10-exercise-convert-code-between-programming-languages.md)]

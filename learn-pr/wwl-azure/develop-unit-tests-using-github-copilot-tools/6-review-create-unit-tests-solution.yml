@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-unit-tests-using-github-copilot-tools.review-create-unit-tests-solution
+title: Review the "create unit tests" solution
+metadata:
+  title: Review the "create unit tests" solution
+  description: "Review the \"create unit tests\" solution"
+  ms.date: 05/20/2024
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-review-create-unit-tests-solution.md)]

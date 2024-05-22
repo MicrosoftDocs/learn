@@ -1,0 +1,2 @@
+> [!NOTE]
+> If you are planning to run and debug your .NET MAUI apps on Android from Windows, it's best to clone or download the exercise content to a short folder path, such as **C:\\dev\\**, to avoid build-generated files exceeding the maximum path length.

@@ -11,3 +11,5 @@ Simply put, AI is software that imitates human behaviors and capabilities. Devel
 - **Natural language processing**: Capabilities within AI for a computer to interpret written or spoken language and to respond in kind.
 - **Speech recognition**: Technology that enables a program to process human speech into a written format. It's also known as automatic speech recognition (ASR) or speech-to-text.
 - **Generative AI**: Capabilities within AI that create original content in various formats, including natural language, images, and code.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=1f5ae668-6f2b-42ce-97af-03ca40cae446]

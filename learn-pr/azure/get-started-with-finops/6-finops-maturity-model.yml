@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.get-started-with-finops.finops-maturity-model
+title: FinOps Maturity Model
+metadata:
+  title: FinOps Maturity Model
+  description: Learn about the FinOps Maturity Model as defined by the FinOps Framework.
+  ms.date: 04/19/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-finops-maturity-model.md)]

@@ -79,7 +79,7 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
 1. Remove the contents of the `lint:` job definition and replace it with the following code to use the _lint.yml_ file you created earlier:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="14-18" highlight="5" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="16-18" highlight="3" :::
 
 1. Delete everything in the file below the lint job that you updated.
 
@@ -91,7 +91,7 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
    :::code language="yaml" source="code/5-workflow.yml" range="32-42" :::
 
-   Now, the workflow runs the lint job once. Then it uses the _deploy.yml_ called workflow twice: once per environment. This keeps the workflow definition clear and easy to understand. Also, the comments help explain what's happening.
+   Your updated workflow runs the lint job once. Then it uses the _deploy.yml_ called workflow twice: once per environment. This keeps the workflow definition clear and easy to understand. The comments in the YAML file identify each job's target environment.
 
 1. Verify that your _workflow.yml_ file looks like the following example:
 
@@ -107,13 +107,13 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
    git push
    ```
 
-1. This is the first time you've pushed to this repository, so you might be prompted to sign in.
+1. Since this is the first time you push to the repository, you might be prompted to sign in.
 
    On Windows, type <kbd>1</kbd> to authenticate using a web browser, and select <kbd>Enter</kbd>.
 
    On macOS, select **Authorize**.
 
-1. A browser window appears. You may need to sign in to GitHub again. Select **Authorize**.
+1. A browser window appears. You might need to sign in to GitHub again. Select **Authorize**.
 
 ## View the workflow run
 
@@ -143,7 +143,7 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
 1. Select **Code**.
 
-1. Select the **Production** environment.
+1. Select the **Production** deployment.
 
    :::image type="content" source="../media/5-code-environment.png" alt-text="Screenshot of GitHub that shows the Code page environment, with the production environment highlighted.":::
 
@@ -153,7 +153,7 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
 1. Select the commit identifier.
 
-   Notice that GitHub shows you the list of commits included in the deployment. This helps you to see exactly what has changed in your environment over time.
+   Notice that GitHub shows you the list of commits included in the deployment. This helps you to see the changes in your environment over time.
 
    :::image type="content" source="../media/5-environment-commits.png" alt-text="Screenshot of GitHub that shows the production environment's deployment details, with a list of commits.":::
 
@@ -163,7 +163,7 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
 1. In the list of resources, open the Azure App Service app.
 
-   :::image type="content" source="../media/5-app-service-production.png" alt-text="Screenshot of the Azure portal that shows the production App Service app and the App Service plan SKU details.":::
+   :::image type="content" source="../media/5-app-service-production.png" alt-text="Screenshot of the Azure portal that shows the App Services toy website production app and the App Service plan SKU details.":::
 
    Notice that the type of App Service plan is **S1**.
 
