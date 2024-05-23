@@ -2,7 +2,7 @@ The goal of inclusive design practices is to recognize the barriers before we im
 
 ## Learning objectives
 
-By then end of this module, you'll be able to:
+By the end of this module, you'll be able to:
 
 - Describe inclusive product design.
 - Explain the principles of inclusive design.

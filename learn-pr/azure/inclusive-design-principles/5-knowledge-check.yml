@@ -44,7 +44,7 @@ quiz:
     choices:  
     - content: Perception
       isCorrect: false
-      explanation: No. The correct answer is Agility .
+      explanation: No. The correct answer is Agility.
     - content: Agility
       isCorrect: true
       explanation: That is the correct answer.
