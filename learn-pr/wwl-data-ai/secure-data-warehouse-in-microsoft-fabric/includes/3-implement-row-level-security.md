@@ -1,4 +1,4 @@
-Row-Level Security (RLS) is a feature that provides granular control over access to rows in a table based on group membership or execution context. 
+[Row-Level Security (RLS)](/fabric/data-warehouse/row-level-security?azure-portal=true) is a feature that provides granular control over access to rows in a table based on group membership or execution context. 
 
 For example, in an e-commerce platform, you can ensure that sellers only have access to order rows that are related to their own products. This way, each seller can manage their orders independently, while maintaining the privacy of other sellers’ order information.
 

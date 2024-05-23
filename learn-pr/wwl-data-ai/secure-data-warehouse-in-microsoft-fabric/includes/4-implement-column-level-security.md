@@ -1,4 +1,4 @@
-Column-level security (CLS) allows you to restrict column access in order to protect sensitive data. It provides granular control over who can access specific pieces of data, enhancing the overall security of your data warehouse.
+[Column-level security (CLS)](/fabric/data-warehouse/column-level-security?azure-portal=true) allows you to restrict column access in order to protect sensitive data. It provides granular control over who can access specific pieces of data, enhancing the overall security of your data warehouse.
 
 ## Secure sensitive data
 

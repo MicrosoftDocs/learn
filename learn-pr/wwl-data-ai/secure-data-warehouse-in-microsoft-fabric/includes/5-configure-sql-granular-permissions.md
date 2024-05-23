@@ -1,4 +1,4 @@
-If you're familiar with relational databases and enterprise warehouses, it's common knowledge that there are four fundamental permissions governing Data Manipulation Language (DML) operations. These permissions, namely `SELECT`, `INSERT`, `UPDATE`, and `DELETE`, are universally applicable across all database platforms.
+If you're familiar with relational databases and enterprise warehouses, it's common knowledge that there are four fundamental permissions governing [Data Manipulation Language (DML)](/sql/t-sql/queries/queries?azure-portal=true) operations. These permissions, namely `SELECT`, `INSERT`, `UPDATE`, and `DELETE`, are universally applicable across all database platforms.
 
 All of these permissions can be granted, revoked or denied on tables and views. If a permission is granted using the `GRANT` statement, then the permission is given to the user or role referenced in the `GRANT` statement. Users can also be denied permissions using the `DENY` command. If a user is granted a permission and denied the same permission, the `DENY` will always supersede the grant, and the user will be denied access to the specific object.
 
