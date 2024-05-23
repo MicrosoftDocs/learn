@@ -46,7 +46,7 @@ After reviewing all the recommendations, decide which one to remediate first. We
 
 The regulatory compliance has both automated and manual assessments that may need to be remediated. Using the information in the regulatory compliance dashboard, improve your compliance posture by resolving recommendations directly within the dashboard.
 
-**To remediate an automated assessment**:<br>
+**To remediate an automated assessment**<br>
 
 1.  Sign in to the **Azure portal**.<br>
 2.  Navigate to **Defender for Cloud** then click, **Regulatory compliance**.<br>
@@ -71,7 +71,7 @@ The regulatory compliance has both automated and manual assessments that may nee
 
 The regulatory compliance has automated and manual assessments that may need to be remediated. Manual assessments are assessments that require input from the customer to remediate them.
 
-### To remediate a manual assessment:<br>
+### To remediate a manual assessment<br>
 
 1. Sign in to the **Azure portal**.<br>
 
