@@ -1,6 +1,3 @@
-> [!CAUTION]
-> This article references CentOS, a Linux distribution that is nearing End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
-
 Follow more specific, and up-to-date details are available at [Get started with Desired State Configuration (DSC) for Linux](/powershell/scripting/dsc/getting-started/lnxgettingstarted).
 
 The following Linux operating system versions are currently supported by both PowerShell DSC and Azure Automation DSC:
