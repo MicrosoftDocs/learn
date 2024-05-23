@@ -29,7 +29,7 @@ The following list has a numbered item that matches each location in the image a
 Recommendations give you suggestions on how to better secure your resources. You implement a recommendation by following the remediation steps provided in the recommendation.
 
 > [!NOTE]
-> Assessments **run approximately every 12 hours,** so you will see the impact on your compliance data only after the next run of the relevant assessment.
+> Assessments **run approximately every 12 hours**, so you will see the impact on your compliance data only after the next run of the relevant assessment.
 
 ## Remediation steps
 
@@ -46,7 +46,7 @@ After reviewing all the recommendations, decide which one to remediate first. We
 
 The regulatory compliance has both automated and manual assessments that may need to be remediated. Using the information in the regulatory compliance dashboard, improve your compliance posture by resolving recommendations directly within the dashboard.
 
-**To remediate an automated assessment:**<br>
+**To remediate an automated assessment**:<br>
 
 1.  Sign in to the **Azure portal**.<br>
 2.  Navigate to **Defender for Cloud** then click, **Regulatory compliance**.<br>
