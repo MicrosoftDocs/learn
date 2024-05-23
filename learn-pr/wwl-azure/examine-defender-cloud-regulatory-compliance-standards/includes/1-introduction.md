@@ -4,7 +4,7 @@ This module covers regulatory compliance standards in Microsoft Defender for Clo
 
 Imagine your work as an IT Security Manager at a multinational corporation. You must ensure cloud deployments comply with various regulatory requirements. Learn to leverage Microsoft Defender for Cloud to manage compliance controls, address key standards, and maintain a secure, compliant cloud environment globally.
 
-## Learning Objectives
+## Learning objectives
 
 By the end of this training module, participants will:
 

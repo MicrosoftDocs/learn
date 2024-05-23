@@ -23,7 +23,7 @@ In the dashboard you can:
  -  Review assessments for compliance controls within each applied standard.
  -  Get a summary report for a specific standard.
  -  Manage compliance policies to see the standards assigned to a specific scope.
- -  Run a query to create a custom compliance report
+ -  Run a query to create a custom compliance report.
  -  [Create a "compliance over time workbook"](/azure/defender-for-cloud/custom-dashboards-azure-workbooks) to track compliance status over time.
  -  Download audit reports.
  -  Review compliance offerings for Microsoft and third-party audits.
@@ -63,10 +63,10 @@ The following standards are available in Defender for Cloud:
 | FedRAMP ‘H’ & ‘M’         | CIS AWS Foundations                                   | CIS Google Cloud Platform Foundation Benchmark        |
 | HIPAA/HITRUST                         | CRI Profile                                           | CIS Google Kubernetes Engine (GKE) Benchmark          |
 | ISO/IEC 27001                         | CSA Cloud Controls Matrix (CCM)                       | CRI Profile                                           |
-| New Zealand ISM Restricted            | GDPR                                                  | CSA Cloud Controls Matrix (CCM)                       |
+| New Zealand ISM Restricted            |                                                       | CSA Cloud Controls Matrix (CCM)                       |
 | NIST SP 800-171                       | ISO/IEC 27001                                         | Cybersecurity Maturity Model Certification (CMMC)     |
 | NIST SP 800-53                        | ISO/IEC 27002                                         | FFIEC Cybersecurity Assessment Tool (CAT)             |
-| PCI DSS                               | NIST Cybersecurity Framework (CSF)                    | GDPR                                                  |
+| PCI DSS                               | NIST Cybersecurity Framework (CSF)                    |                                                       |
 | RMIT Malaysia                         | NIST SP 800-172                                       | ISO/IEC 27001                                         |
 | SOC 2                                 | PCI DSS                                               | ISO/IEC 27002                                         |
 | SWIFT CSP CSCF                        |                                                       | ISO/IEC 27017                                         |

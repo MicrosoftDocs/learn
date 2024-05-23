@@ -1,11 +1,11 @@
 ## Multiple Choice
-A security analyst is tasked with improving the compliance posture of their hybrid cloud environment. They are using Microsoft Defender for Cloud's regulatory compliance dashboard to monitor the status of all assessments within the environment. How can they increase their overall compliance score?
-( ) By disabling the automated assessments {{Incorrect. Disabling automated assessments will not provide a comprehensive view of the compliance status.}}
-( ) By ignoring the recommendations and focusing on manual assessments {{Incorrect. Ignoring the recommendations provided by the dashboard will not help in improving the compliance posture.}}
-(x) By acting on the recommendations and reducing risk factors in the environment {{Correct. Acting on the recommendations and reducing risk factors will improve the compliance posture and increase the overall compliance score.}}
+A security analyst is tasked with improving the compliance posture of their hybrid cloud environment. They're using Microsoft Defender for Cloud's regulatory compliance dashboard to monitor the status of all assessments within the environment. How can they increase their overall compliance score?
+( ) By disabling the automated assessments. {{Incorrect. Disabling automated assessments will not provide a comprehensive view of the compliance status.}}
+( ) By ignoring the recommendations and focusing on manual assessments. {{Incorrect. Ignoring the recommendations provided by the dashboard will not help in improving the compliance posture.}}
+(x) By acting on the recommendations and reducing risk factors in the environment. {{Correct. Acting on the recommendations and reducing risk factors will improve the compliance posture and increase the overall compliance score.}}
 
 ## Multiple Choice
-A system administrator is tasked with improving the compliance posture of their organization's Azure environment. They are using the regulatory compliance dashboard in Microsoft Defender for Cloud to resolve recommendations. What should they do to remediate an automated assessment?
+A system administrator is tasked with improving the compliance posture of their organization's Azure environment. They're using the regulatory compliance dashboard in Microsoft Defender for Cloud to resolve recommendations. What should they do to remediate an automated assessment?
 ( ) Manually attest the compliance control and attach evidence for compliance. {{Incorrect. Manual attestation is used for manual assessments, not automated ones.}}
 ( ) Wait for the next run of the relevant assessment to see the impact on compliance data. {{Incorrect. This is a step that happens after remediation actions have been taken, not a remediation action itself.}}
 (x) Select a failing assessment from the dashboard, follow the provided remediation steps, and resolve the recommendation for a particular resource. {{Correct. For automated assessments, the system administrator needs to follow the remediation steps provided in the dashboard for each failing assessment and resolve the recommendation for the specific resource.}}

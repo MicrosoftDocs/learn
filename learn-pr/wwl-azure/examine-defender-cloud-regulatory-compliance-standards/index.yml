@@ -3,12 +3,13 @@ uid: learn.wwl.examine-defender-cloud-regulatory-compliance-standards
 metadata:
   title: 'Examine Defender for Cloud regulatory compliance standards '
   description: "Learn how to use Microsoft Defender for Cloud to streamline regulatory compliance by identifying and addressing issues that hinder meeting compliance standards and achieving certifications."
-  ms.date: 05/22/2024
+  ms.date: 05/23/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module
   ms.custom:
   - N/A
+  ms.service: defender-for-cloud
   ai-usage: human-only
 title: Examine Defender for Cloud regulatory compliance standards
 summary: In this module, we will focus on using Microsoft Defender for Cloud to streamline regulatory compliance by identifying and addressing issues that hinder meeting compliance standards and certifications.
@@ -46,7 +47,7 @@ units:
 - learn.wwl.examine-defender-cloud-regulatory-compliance-standards.introduction
 - learn.wwl.examine-defender-cloud-regulatory-compliance-standards.regulatory-compliance-standards
 - learn.wwl.examine-defender-cloud-regulatory-compliance-standards.microsoft-cloud-security-benchmark
-- learn.wwl.examine-defender-cloud-regulatory-compliance-standards.improve-your-regulatory-compliance
+- learn.wwl.examine-defender-cloud-regulatory-compliance-standards.improve-regulatory-compliance
 - learn.wwl.examine-defender-cloud-regulatory-compliance-standards.knowledge-check
 - learn.wwl.examine-defender-cloud-regulatory-compliance-standards.summary
 badge:

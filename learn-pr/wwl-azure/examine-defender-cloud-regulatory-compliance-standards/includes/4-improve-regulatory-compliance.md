@@ -48,31 +48,24 @@ The regulatory compliance has both automated and manual assessments that may nee
 
 **To remediate an automated assessment:**<br>
 
-1. Sign in to the **Azure portal.**<br>
-
-2. Navigate to **Defender for Cloud** then click, **Regulatory compliance.**<br>
-
-3. Select a regulatory compliance standard.<br>
-
-4. Select a compliance control to expand it.<br>
-
-5. Select any of the failing assessments that appear in the dashboard to view the details for that recommendation. Each recommendation includes a set of remediation steps to resolve the issue.<br>
-
-6. Select a particular resource to view more details and resolve the recommendation for that resource. For example, in the **Azure CIS 1.1.0** standard, select the recommendation **Disk encryption should be applied on virtual machines.**
-
-    :::image type="content" source="../media/disk-encryption-example-recommendation-d7d9c47a.png" alt-text="Screenshot showing an example of affected resources that require remediation.":::
-
-
-7. In this example, when you select **Take action** from the recommendation details page, you arrive in the Azure Virtual Machine pages of the Azure portal, where you can enable encryption from the **Security** tab:
-
-    :::image type="content" source="../media/disk-encryption-settings-example-recommendation-b78e253b.png" alt-text="Screenshot showing an example of a virtual machines disk setting.":::
-
-
-For more information about how to apply recommendations, see [Implementing security recommendations in Microsoft Defender for Cloud](/azure/defender-for-cloud/review-security-recommendations).
-
-8. After you take action to resolve recommendations, you'll see the result in the compliance dashboard report because your compliance score improves.
-
-Assessments run approximately every 12 hours, so you'll see the impact on your compliance data only after the next run of the relevant assessment.
+1.  Sign in to the **Azure portal**.<br>
+2.  Navigate to **Defender for Cloud** then click, **Regulatory compliance**.<br>
+3.  Select a regulatory compliance standard.<br>
+4.  Select a compliance control to expand it.<br>
+5.  Select any of the failing assessments that appear in the dashboard to view the details for that recommendation. Each recommendation includes a set of remediation steps to resolve the issue.<br>
+6.  Select a particular resource to view more details and resolve the recommendation for that resource. For example, in the **Azure CIS 1.1.0** standard, select the recommendation **Disk encryption should be applied on virtual machines**.
+    
+        :::image type="content" source="../media/disk-encryption-example-recommendation-d7d9c47a.png" alt-text="Screenshot showing an example of affected resources that require remediation.":::
+    
+7.  In this example, when you select **Take action** from the recommendation details page, you arrive in the Azure Virtual Machine pages of the Azure portal, where you can enable encryption from the **Security** tab:
+    
+        :::image type="content" source="../media/disk-encryption-settings-example-recommendation-b78e253b.png" alt-text="Screenshot showing an example of a virtual machines disk setting.":::
+    
+    
+    For more information about how to apply recommendations, see [Implementing security recommendations in Microsoft Defender for Cloud](/azure/defender-for-cloud/review-security-recommendations).
+8.  After you take action to resolve recommendations, you'll see the result in the compliance dashboard report because your compliance score improves.
+    
+    Assessments run approximately every 12 hours, so you'll see the impact on your compliance data only after the next run of the relevant assessment.
 
 ## Remediate a manual assessment
 
@@ -80,9 +73,9 @@ The regulatory compliance has automated and manual assessments that may need to 
 
 ### To remediate a manual assessment:<br>
 
-1. Sign in to the **Azure portal.**<br>
+1. Sign in to the **Azure portal**.<br>
 
-2. Navigate to **Defender for Cloud** then click, **Regulatory compliance.**<br>
+2. Navigate to **Defender for Cloud** then click, **Regulatory compliance**.<br>
 
 3. Select a regulatory compliance standard.<br>
 
@@ -92,8 +85,8 @@ The regulatory compliance has automated and manual assessments that may need to 
 
 6. Select the relevant subscriptions.<br>
 
-7. Select **Attest.**<br>
+7. Select **Attest**.<br>
 
 8. Enter the relevant information and attach evidence for compliance.<br>
 
-9. Select **Save.**<br>
+9. Select **Save**.<br>
