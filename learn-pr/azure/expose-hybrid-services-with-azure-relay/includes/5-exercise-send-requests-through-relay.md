@@ -1,6 +1,6 @@
 Code in client apps has to connect to and authenticate with Azure Relay before the apps can send and receive messages.
 
-You've created a relay for your credit-checking service. Now you want to enable your on-premises listener component to connect to the relay, so that it can receive requests and send responses. You also want to complete the code in the client app, which sends credit-check requests to the relay and wait for responses. By connecting to the relay service in this way, you expose the service to components in the cloud, without having to open a port on your on-premises firewall. This approach helps protect the credit-checking service.
+You created a relay for your credit-checking service. Now you want to enable your on-premises listener component to connect to the relay, so that it can receive requests and send responses. You also want to complete the code in the client app, which sends credit-check requests to the relay and wait for responses. By connecting to the relay service in this way, you expose the service to components in the cloud, without having to open a port on your on-premises firewall. This approach helps protect the credit-checking service.
 
 In this unit, you write the Azure Relay code in both the sender and listener applications.
 
@@ -40,9 +40,9 @@ The listener app now has all the information it needs to connect to and authenti
 
 ## Respond to requests in the listener app
 
-You must add the credit-checking service to your relay as a listener, so that it receives requests that are sent to the relay. Your code must configure the listener to subscribe to events, process any requests, and formulate responses. The credit-checking service, for example, must obtain the name from the request and then respond with the credit history for that person. When you've set up the listener, call the `OpenAsync()` method to start listening for requests.
+You must add the credit-checking service to your relay as a listener, so that it receives requests that are sent to the relay. Your code must configure the listener to subscribe to events, process any requests, and formulate responses. The credit-checking service, for example, must obtain the name from the request and then respond with the credit history for that person. When you set up the listener, call the `OpenAsync()` method to start listening for requests.
 
-1. In the *Program.cs* code file for the listener app, look for the "// Subscribe to the status events" comment. Immediately after the comment, add this code:
+1. Look for the "// Subscribe to the status events" comment in the *Program.cs* code file for the listener app. Immediately after the comment, add this code:
 
     ```csharp
     listener.Connecting += (o, e) => { Console.WriteLine("Connecting"); };
@@ -76,7 +76,7 @@ You must add the credit-checking service to your relay as a listener, so that it
     Console.WriteLine("Server listening");
     ```
 
-1. To save your changes, select <kbd>Ctrl+S</kbd>, and then select <kbd>Ctrl+Q</kbd> to close the editor.
+1. Save your changes by selecting <kbd>Ctrl+S</kbd>, then close the editor by selecting <kbd>Ctrl+Q</kbd>.
 
 ## Configure the sender app
 
@@ -111,7 +111,7 @@ The sender app now has all the information it needs to connect to and authentica
 
 To request a credit check, the sender app sends a name in an HTTP GET request to the relay. Let's write the code that formulates that request.
 
-1. In the *Program.cs* code file for the sender app, look for the "// Create an HttpClient and formulate the request" comment. Immediately after the comment, add this code:
+1. Look for the "// Create an HttpClient and formulate the request" comment in the *Program.cs* code file for the sender app. Immediately after the comment, add this code:
 
     ```csharp
     var client = new HttpClient();
@@ -136,7 +136,7 @@ To request a credit check, the sender app sends a name in an HTTP GET request to
     Console.WriteLine(await response.Content.ReadAsStringAsync());
     ```
 
-1. To save your changes, select <kbd>Ctrl+S</kbd>, and then select <kbd>Ctrl+Q</kbd> to close the editor.
+1. Save your changes by selecting <kbd>Ctrl+S</kbd>, then close the editor by selecting <kbd>Ctrl+Q</kbd>.
 
 ## Start the apps
 
@@ -149,7 +149,7 @@ The listener and sender apps are complete. You can now run both apps, use the se
     dotnet run
     ```
 
-1. When you receive the "Server listening" message, you can start the sender. Open a new instance of your browser, and go to the [Welcome to Azure Cloud Shell](https://shell.azure.com) page.
+1. After you receive the "Server listening" message, you can start the sender. Open a new instance of your browser, and go to the [Welcome to Azure Cloud Shell](https://shell.azure.com) page.
 
 1. If you're asked to select a directory, choose *Microsoft Learn Sandbox*.
 
@@ -164,7 +164,7 @@ The listener and sender apps are complete. You can now run both apps, use the se
 
 Now that the apps are both running in separate instances of Cloud Shell, let's test them by checking a credit record.
 
-1. Arrange the browser windows so that you can see both.
+1. To see both apps at the same time, arrange your browser windows.
 
 1. In the sender app, type a name, and then press <kbd>Enter</kbd>.
 

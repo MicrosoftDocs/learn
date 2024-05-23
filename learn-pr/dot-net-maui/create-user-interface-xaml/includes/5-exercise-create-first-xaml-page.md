@@ -25,7 +25,7 @@ You've been asked to add some further features to this page. Before you start, y
 
 1. Open the **Notes.sln** Visual Studio solution file in this folder or the folder in Visual Studio Code.
 
-1. In the **Solution Explorer** window, expand the **Notes** project and open the **MainPage.xaml.cs** file.
+1. In the **Solution Explorer** window, expand the **Notes** project, expand the **MainPage.xaml** file, and open the **MainPage.xaml.cs** file.
 
 1. Review the **MainPage** class defined in this file. The constructor contains the following code that creates the UI:
 
