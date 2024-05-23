@@ -14,4 +14,3 @@ You also learned some of the benefits and how to:
  -  [Bicep on Microsoft Learn](/azure/azure-resource-manager/bicep/learn-bicep).
  -  [Best practices for Bicep \| Microsoft documentation](/azure/azure-resource-manager/bicep/best-practices).
  -  [Migrate to Bicep \| Microsoft documentation](/azure/azure-resource-manager/bicep/migrate).
-
