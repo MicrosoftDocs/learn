@@ -33,7 +33,7 @@ In Defender for IoT, select the **Alerts** page that lists all of the alerts gen
 1. To analyze the alert in greater detail, select **View full details**.
 1. Choosing multiple alerts allows you to make bulk changes to the status, severity, or learn levels using the top menu bar.
 
-:::image type="content" source="../media/5-alerts-main-bulk-status-boxed.png" alt-text="Screenshot of the alerts screen making a bulk status change with box." lightbox="../media/5-alerts-main-bulk-status-boxed.png":::
+   :::image type="content" source="../media/5-alerts-main-bulk-status-boxed.png" alt-text="Screenshot of the alerts screen making a bulk status change with box." lightbox="../media/5-alerts-main-bulk-status-boxed.png":::
 
 ### Analyze an alert
 

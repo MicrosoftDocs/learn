@@ -40,4 +40,4 @@ When you complete the triage process:
 1. Go to **Alerts**.
 1. Review the list of alerts which shows high level alerts.
 
-:::image type="content" source="../media/6-alert-after-triage.png" alt-text="Screenshot of the alerts page after triage.":::
+   :::image type="content" source="../media/6-alert-after-triage.png" lightbox="../media/6-alert-after-triage.png" alt-text="Screenshot of the alerts page after triage.":::

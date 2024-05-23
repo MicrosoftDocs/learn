@@ -1,16 +1,16 @@
-In this module, you learned how to fine-tune and calibrate the devices connected to your sensor, to triage the alerts listed in Defender for IoT and to change from *learning* to *operational* mode. In particular, you learned:
+In this module, you learned how to fine-tune and calibrate the devices connected to your sensor, to triage the alerts listed in Defender for IoT. You also learned how to change from *learning* to *operational* mode. In particular, you learned how to:
 
-- How to fine-tune and calibrate alerts in Defender for IoT on the Azure portal.
-- How to view and modify subnet data listed in Defender for IoT.
-- How to update device information and merge devices.
-- How to check public IP addresses and assign the IP addresses for DHCP ranges.
-- How to triage alerts to create an alert baseline.
-- How to analyze the alert details.
-- How to follow the Take Action instructions and to update the alert status and severity levels.
-- How to create a suppression rule.
-- How to change from *learning* mode to *operational* mode.
+- Fine-tune and calibrate alerts in Defender for IoT on the Azure portal.
+- View and modify subnet data listed in Defender for IoT.
+- Update device information and merge devices.
+- Check public IP addresses and assign the IP addresses for Dynamic Host Configuration Protocol (DHCP) ranges.
+- Triage alerts to create an alert baseline.
+- Analyze the alert details.
+- Follow the Take Action instructions and to update the alert status and severity levels.
+- Create a suppression rule.
+- Change from *learning* mode to *operational* mode.
 
-The learn module is now complete and you know all the stages for deploying a new Operational Technology sensor to Defender for IoT on the Azure portal.
+Now you know all the stages for deploying a new operational technology (OT) sensor to Defender for IoT on the Azure portal.
 
 ## Learn more
 

@@ -3,7 +3,7 @@ uid: learn.defender-iot-fine-tune-deployment
 metadata:
   title: Fine-tune your Microsoft Defender for IoT OT sensor
   description: "Learn how to fine tune and calibrate your deployment of Microsoft Defender for IoT to monitor your OT network."
-  ms.date: 4/18/2024
+  ms.date: 5/23/2024
   author: limwainstein
   ms.author: lwainstein
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
