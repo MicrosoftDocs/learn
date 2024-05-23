@@ -1,6 +1,6 @@
-In this module, you have learnt about Dynamic Data Masking (DDM), Row-Level Security (RLS), Column-level security (CLS), and granular SQL permissions in Fabric warehouses. 
+In this module, you learned about Dynamic Data Masking (DDM), Row-Level Security (RLS), Column-level security (CLS), and granular SQL permissions in Fabric warehouses. 
 
-The main takeaways from this module include understanding how DDM, RLS, and CLS work and their use cases. DDM operates at the column level, offering full, email, custom text, and random masking types. RLS works by associating a security predicate function with a table. CLS can be implemented by identifying sensitive columns, defining access roles, assigning roles to users, and implementing access control. In addition, you've learned about the principle of least privilege, which suggests that users and applications should only be given the permissions necessary to complete their tasks.
+The main takeaways from this module include understanding how DDM, RLS, and CLS work and their use cases. DDM operates at the column level, offering full, email, custom text, and random masking types. RLS works by associating a security predicate function with a table. CLS can be implemented by identifying sensitive columns, defining access roles, assigning roles to users, and implementing access control. In addition, you learned about the principle of least privilege, which suggests that users and applications should only be given the permissions necessary to complete their tasks.
 
 For additional reading, you can refer to the following URLs:
 

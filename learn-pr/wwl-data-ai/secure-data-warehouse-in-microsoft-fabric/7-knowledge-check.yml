@@ -18,7 +18,7 @@ quiz:
       explanation: Correct. DDM enhances security by applying dynamic masking to sensitive data in real time, thus preventing exposure to unauthorized users.
     - content: It changes the actual data in the database.
       isCorrect: false
-      explanation: Incorrect. DDM does not change the actual data in the database, it only masks it in query results.
+      explanation: Incorrect. DDM doesn't change the actual data in the database. It only masks it in query results.
     - content: It requires complex coding to implement.
       isCorrect: false
       explanation: Incorrect. DDM is straightforward to implement and doesn’t require complex coding.
@@ -29,29 +29,29 @@ quiz:
       explanation: Correct. The security predicate function in RLS is defined to return true or false based on certain conditions, typically involving the values of one or more columns in the table.
     - content: It enables type conversions in predicate functions.
       isCorrect: false
-      explanation: Incorrect. The security predicate function does not enable type conversions. It returns true or false based on certain conditions, typically involving the values of one or more columns in the table.
+      explanation: Incorrect. The security predicate function doesn't enable type conversions. It returns true or false based on certain conditions, typically involving the values of one or more columns in the table.
     - content: It allows users to run ad hoc queries.
       isCorrect: false
-      explanation: Incorrect. The security predicate function does not allow users to run ad hoc queries. It determines whether a row is accessible to a user based on certain conditions.
+      explanation: Incorrect. The security predicate function doesn't allow users to run ad hoc queries. It determines whether a row is accessible to a user based on certain conditions.
   - content: What happens when a user is granted a permission and then denied the same permission in a warehouse?
     choices:
-    - content: The GRANT statement will supersede the DENY, and the user will have access to the specific object.
+    - content: The GRANT statement supersedes the DENY, and the user will have access to the specific object.
       isCorrect: false
-      explanation: Incorrect. If a user is granted a permission and then denied the same permission, the DENY will always supersede the GRANT.
-    - content: The DENY will always supersede the GRANT, and the user will be denied access to the specific object.
+      explanation: Incorrect. If a user is granted a permission and then denied the same permission, the DENY always supersedes the GRANT.
+    - content: The DENY always supersedes the GRANT, and the user is denied access to the specific object.
       isCorrect: true
-      explanation: Correct. If a user is granted a permission and then denied the same permission, the DENY will always supersede the GRANT.
-    - content: The user will have both permissions, and it will cause a conflict in the system.
+      explanation: Correct. If a user is granted a permission and then denied the same permission, the DENY always supersedes the GRANT.
+    - content: The user has both permissions, and it causes a conflict.
       isCorrect: false
-      explanation: Incorrect. There won't be a conflict. The DENY statement will always supersede the GRANT statement.
+      explanation: Incorrect. There isn't a conflict. The DENY statement always supersedes the GRANT statement.
   - content: What is required to secure a warehouse in Microsoft Fabric?
     choices:
-    - content: A Microsoft Fabric trial license with the Fabric preview enabled in your tenant
+    - content: A Microsoft Fabric trial license with the Fabric preview enabled in your tenant.
       isCorrect: true
       explanation: Correct. This setup allows access to the necessary features to secure a warehouse in Microsoft Fabric.
     - content: A standard Microsoft Fabric license
       isCorrect: false
-      explanation: Incorrect. A standard license does not provide access to the Fabric preview needed for this task.
-    - content: A Microsoft Fabric trial license without the Fabric preview enabled
+      explanation: Incorrect. A standard license doesn't provide access to the Fabric preview needed for this task.
+    - content: A Microsoft Fabric trial license without the Fabric preview enabled.
       isCorrect: false
       explanation: Incorrect. The Fabric preview must be enabled in the tenant for this task.
