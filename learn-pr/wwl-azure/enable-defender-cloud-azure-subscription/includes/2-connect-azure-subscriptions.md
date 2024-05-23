@@ -20,6 +20,9 @@ Defender for Cloud helps you find and fix security vulnerabilities. Defender for
 
 The Defender for Cloud's overview page opens.
 
+:::image type="content" source="../media/defender-for-cloud-overview-page-6ffa92d8.png" alt-text="Screenshot showing an example of the Microsoft Defender for Cloud overview page.":::
+
+
 Defender for Cloud is now enabled on your subscription and you have access to the basic features provided by Defender for Cloud. These features include:
 
  -  The [Foundational Cloud Security Posture Management (CSPM)](/azure/defender-for-cloud/concept-cloud-security-posture-management) plan.
@@ -52,9 +55,15 @@ To enable additional paid plans on a subscription:
 
 3. In the Defender for Cloud menu, select **Environment settings**.
 
+:::image type="content" source="../media/environmental-settings-b7df4178.png" alt-text="Screenshot showing an example of how to navigate to Defender for Cloud's Environment settings page.":::
+
+
 4. Select the subscription or workspace that you want to protect.
 
 5. Select **Enable** all to enable all of the plans for Defender for Cloud.<br>
+
+:::image type="content" source="../media/enable-all-plans-fe385b32.png" alt-text="Screenshot showing an example of how to Enable all plans in Defender for Cloud's Settings page.":::
+<br>
 
 6. Select **Save**.
 
