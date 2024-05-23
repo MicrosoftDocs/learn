@@ -1,5 +1,3 @@
-**Estimated time:** 45 minutes.
-
 ## Scenario
 
 In this lab, you’ll create an Azure Bicep template and modularize it using the Azure Bicep Modules concept. You’ll then modify the main deployment template to use the module and finally deploy the all the resources to Azure.

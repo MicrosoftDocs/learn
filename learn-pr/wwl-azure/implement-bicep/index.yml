@@ -54,7 +54,7 @@ units:
 - learn.wwl.implement-bicep.understand-bicep-file-structure-syntax
 - learn.wwl.implement-bicep.exercise-deploy-bicep-file-azure-pipelines
 - learn.wwl.implement-bicep.exercise-deploy-bicep-file-github-workflows
-- learn.wwl.implement-bicep.azure-deployment-using-resource-manager-templates
+- learn.wwl.implement-bicep.azure-deployment-use-resource-manager-templates
 - learn.wwl.implement-bicep.knowledge-check
 - learn.wwl.implement-bicep.summary
 badge:
