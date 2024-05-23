@@ -4,13 +4,14 @@ title: Examine a security-in-depth strategy
 metadata:
   title: Examine a security-in-depth strategy
   description: "Examine a security-in-depth strategy"
-  ms.date: 05/22/2024
+  ms.date: 05/23/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
   ms.custom:
   - N/A
   zone_pivot_groups: azure-interface
+durationInMinutes: 7
 content: |
   [!include[](includes/4-iot-security-best-practices.md)]
 interactive: bash

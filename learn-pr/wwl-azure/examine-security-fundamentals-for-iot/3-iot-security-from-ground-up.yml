@@ -4,13 +4,14 @@ title: Examine IoT security infrastructure from the ground up
 metadata:
   title: Examine IoT security infrastructure from the ground up
   description: "Examine IoT security infrastructure from the ground up"
-  ms.date: 05/22/2024
+  ms.date: 05/23/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
   ms.custom:
   - N/A
   zone_pivot_groups: azure-interface
+durationInMinutes: 7
 content: |
   [!include[](includes/3-iot-security-from-ground-up.md)]
 interactive: bash

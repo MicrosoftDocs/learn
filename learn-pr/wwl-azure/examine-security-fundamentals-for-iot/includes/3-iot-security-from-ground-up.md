@@ -58,8 +58,6 @@ Enterprise IoT devices can include devices such as printers, smart TVs, and conf
 
 For more information, see [Securing IoT devices in the enterprise](/azure/defender-for-iot/organizations/concept-enterprise).
 
-[ ](/azure/defender-for-iot/organizations/overview#supported-service-regions)
-
 ## Supported service regions
 
 Defender for IoT routes all traffic from all European regions to the *West Europe* regional datacenter. It routes traffic from all remaining regions to the *East US* regional datacenter.
