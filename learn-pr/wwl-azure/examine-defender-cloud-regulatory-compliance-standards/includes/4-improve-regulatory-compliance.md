@@ -55,11 +55,11 @@ The regulatory compliance has both automated and manual assessments that may nee
 5.  Select any of the failing assessments that appear in the dashboard to view the details for that recommendation. Each recommendation includes a set of remediation steps to resolve the issue.<br>
 6.  Select a particular resource to view more details and resolve the recommendation for that resource. For example, in the **Azure CIS 1.1.0** standard, select the recommendation **Disk encryption should be applied on virtual machines**.
     
-        :::image type="content" source="../media/disk-encryption-example-recommendation-d7d9c47a.png" alt-text="Screenshot showing an example of affected resources that require remediation.":::
+    :::image type="content" source="../media/disk-encryption-example-recommendation-d7d9c47a.png" alt-text="Screenshot showing an example of affected resources that require remediation.":::
     
 7.  In this example, when you select **Take action** from the recommendation details page, you arrive in the Azure Virtual Machine pages of the Azure portal, where you can enable encryption from the **Security** tab:
     
-        :::image type="content" source="../media/disk-encryption-settings-example-recommendation-b78e253b.png" alt-text="Screenshot showing an example of a virtual machines disk setting.":::
+    :::image type="content" source="../media/disk-encryption-settings-example-recommendation-b78e253b.png" alt-text="Screenshot showing an example of a virtual machines disk setting.":::
     
     
     For more information about how to apply recommendations, see [Implementing security recommendations in Microsoft Defender for Cloud](/azure/defender-for-cloud/review-security-recommendations).

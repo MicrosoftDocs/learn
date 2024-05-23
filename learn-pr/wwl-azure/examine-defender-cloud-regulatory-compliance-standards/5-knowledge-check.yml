@@ -13,3 +13,50 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A security analyst is tasked with improving the compliance posture of their hybrid cloud environment. They're using Microsoft Defender for Cloud's regulatory compliance dashboard to monitor the status of all assessments within the environment. How can they increase their overall compliance score?"
+    choices:
+    - content: "By disabling the automated assessments."
+      isCorrect: false
+      explanation: "Incorrect. Disabling automated assessments will not provide a comprehensive view of the compliance status."
+    - content: "By ignoring the recommendations and focusing on manual assessments."
+      isCorrect: false
+      explanation: "Incorrect. Ignoring the recommendations provided by the dashboard will not help in improving the compliance posture."
+    - content: "By acting on the recommendations and reducing risk factors in the environment."
+      isCorrect: true
+      explanation: "Correct. Acting on the recommendations and reducing risk factors will improve the compliance posture and increase the overall compliance score."
+  - content: "A system administrator is tasked with improving the compliance posture of their organization's Azure environment. They're using the regulatory compliance dashboard in Microsoft Defender for Cloud to resolve recommendations. What should they do to remediate an automated assessment?"
+    choices:
+    - content: "Manually attest the compliance control and attach evidence for compliance."
+      isCorrect: false
+      explanation: "Incorrect. Manual attestation is used for manual assessments, not automated ones."
+    - content: "Wait for the next run of the relevant assessment to see the impact on compliance data."
+      isCorrect: false
+      explanation: "Incorrect. This is a step that happens after remediation actions have been taken, not a remediation action itself."
+    - content: "Select a failing assessment from the dashboard, follow the provided remediation steps, and resolve the recommendation for a particular resource."
+      isCorrect: true
+      explanation: "Correct. For automated assessments, the system administrator needs to follow the remediation steps provided in the dashboard for each failing assessment and resolve the recommendation for the specific resource."
+  - content: "A team is using Microsoft Defender for Cloud to continuously assess their hybrid cloud environment against security standards. They want to understand their overall compliance standing. What does the Regulatory Compliance dashboard provide?"
+    choices:
+    - content: "It automatically starts to assess resources in scope when subscriptions and accounts are onboarded to Defender for Cloud."
+      isCorrect: false
+      explanation: "Incorrect. This is a feature of the Microsoft cloud security benchmark MCSB, not the Regulatory Compliance dashboard."
+    - content: "It provides a detailed technical implementation guidance for Azure, AWS and GCP."
+      isCorrect: false
+      explanation: "Incorrect. The dashboard provides information about compliance, not technical implementation guidance."
+    - content: "It gives a view of the overall compliance standing."
+      isCorrect: true
+      explanation: "Correct. The Regulatory Compliance dashboard provides information about the overall compliance standing."
+  - content: "An IT Security Manager at a multinational corporation is tasked with ensuring cloud deployments comply with various regulatory requirements. They need to leverage Microsoft Defender for Cloud to manage compliance controls and maintain a secure, compliant cloud environment globally. What should they do to achieve this?"
+    choices:
+    - content: "They should only rely on external audits for compliance assessments and reports."
+      isCorrect: false
+      explanation: "Incorrect. While external audits are important, they should also conduct regular internal compliance assessments and generate comprehensive compliance reports using Microsoft Defender for Cloud."
+    - content: "They should ignore the compliance management dashboard and manually check each component for compliance."
+      isCorrect: false
+      explanation: "Incorrect. Ignoring the compliance management dashboard would not be efficient or effective in managing compliance controls."
+    - content: "They should use Microsoft Defender for Cloud's compliance management dashboard, implement and manage compliance controls within it, and conduct regular compliance assessments and generate comprehensive compliance reports."
+      isCorrect: true
+      explanation: "Correct. Using Microsoft Defender for Cloud's compliance management dashboard and conducting regular compliance assessments and reports will help ensure compliance with regulatory requirements."
