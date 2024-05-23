@@ -3,22 +3,28 @@ uid: learn.wwl.implement-desired-state-configuration-dsc
 metadata:
   title: Implement Desired State Configuration (DSC)
   description: "Implement Desired State Configuration (DSC)"
-  ms.date: 03/18/2022
+  ms.date: 05/23/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: automation
   ms.subservice: dsc
+  ai-usage: human-only
 title: Implement Desired State Configuration (DSC)
 summary: This module describes Desired State Configuration (DSC) and its components for implementation. You can exercise how to import, compile and automate your environment creation, and use DSC for Linux automation on Azure.
 abstract: |
-  By the end of this module, you'll be able to:
-  - Implement Desired State Configuration (DSC)
-  - Describe Azure Automation State Configuration
-  - Implement DSC and Linux Automation on Azure
-  - Plan for hybrid management
-prerequisites: |
-  None
+  By the end of this module, you're able to:
+
+  -   Implement Desired State Configuration (DSC).
+
+  -   Describe Azure Automation State Configuration.
+
+  -   Implement DSC and Linux Automation on Azure.
+
+  -   Plan for hybrid management.
+prerequisites: None
 iconUrl: /training/achievements/5-implement-desired-state-configuration-dsc.svg
 levels:
 - advanced
@@ -49,9 +55,6 @@ units:
 - learn.wwl.implement-desired-state-configuration-dsc.explore-desired-state-configuration-dsc
 - learn.wwl.implement-desired-state-configuration-dsc.explore-azure-automation
 - learn.wwl.implement-desired-state-configuration-dsc.examine-dsc-configuration-file
-- learn.wwl.implement-desired-state-configuration-dsc.exercise-import-compile
-- learn.wwl.implement-desired-state-configuration-dsc.exercise-onboard-machines-for-management
-- learn.wwl.implement-desired-state-configuration-dsc.explore-hybrid-management
 - learn.wwl.implement-desired-state-configuration-dsc.implement-dsc-linux-automation-azure
 - learn.wwl.implement-desired-state-configuration-dsc.knowledge-check
 - learn.wwl.implement-desired-state-configuration-dsc.summary
