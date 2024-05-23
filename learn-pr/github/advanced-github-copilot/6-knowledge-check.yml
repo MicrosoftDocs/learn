@@ -15,7 +15,7 @@ quiz:
   questions:
   - content: "What is ghost text in GitHub Copilot?"
     choices:
-    - content: "Ghost text in GitHub Copilot are suggestions that appear in your text editor as you type."
+    - content: "Ghost text in GitHub Copilot is suggestions that appear in your text editor as you type."
       isCorrect: true
       explanation: "That's correct! Ghost text refers to the suggestions given by GitHub Copilot without a prompt, based on your currently opened files. By accepting these suggestions with the Tab key or manually editing them, you can quickly write code and documentation for your project."
     - content: "Ghost text in GitHub Copilot are options used when typing to provide suggestions."
