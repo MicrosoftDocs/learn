@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-fine-tune-deployment.exercise-fine-tune-subnets-devices
+title:  Exercise - Fine-tune the defined subnets and devices
+metadata:
+  title: Exercise - Fine-tune the defined subnets and devices
+  description: "Exercise - Fine-tune the defined subnets and devices."
+  ms.date: 5/23/2024
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-exercise-fine-tune-subnets-devices.md)]
