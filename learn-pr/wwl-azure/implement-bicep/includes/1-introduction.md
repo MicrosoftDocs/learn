@@ -12,4 +12,3 @@ This module explains what Bicep is and how it's integrated into different tools 
  -  Basic understanding of DevOps and its concepts.
  -  Familiarity with version control principles.
  -  Beneficial if responsible for deploying resources to Azure via Infrastructure as Code (IaC).
-
