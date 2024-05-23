@@ -1,8 +1,8 @@
-It may sound odd that we're going to stream data so early in the module, even though there are still so many problems with the data that need to be addressed. 
+It might sound odd that we're going to stream data so early in the module, even though there are still so many problems with the data that need to be addressed. 
 
 Agility and time to value are of upmost importance in today's modern technology stack. Our data might not be perfect yet, but the data is already at a better level of usability than it was when it was raw, so we can provide this value immediately to our end users, and then iterate over our model to continue to make improvements.
 
-So let's set up our stream of data back into an ADLS Gen2 folder called **mastered**:
+So let's set up our stream of data back into an Azure Data lake Storage (ADLS) Gen2 folder called **mastered**:
 
 1. Gather the account key for your storage account by:
 
@@ -16,12 +16,12 @@ So let's set up our stream of data back into an ADLS Gen2 folder called **master
 
     :::image type="content" source="../media/export-target-data-lake.png" alt-text="Screenshot of the CluedIn Consume window, showing the Azure Data Lake Connector selected.":::
 
-1. Enter the account details, including the storage account key you copied earlier. The **FileSystemName** will be your container name. You can use an existing container, or enter a new name here and CluedIn will create it for your. For **DirectoryName**, enter **mastered**.
+1. Enter the account details, including the storage account key you copied earlier. The **FileSystemName** is your container name. You can use an existing container, or enter a new name here and CluedIn creates it for you. For **DirectoryName**, enter **mastered**.
 
     :::image type="content" source="../media/export-target-details.png" alt-text="Screenshot of the CluedIn Consume window, showing the Azure Data Lake details added.":::
 
-1. After you've entered your connection information, select **Test Connection**. If you get a green light, you can move on! If not, check these values:
-    - Confirm that your container name has no capital characters, special characters, or spaces. (These are limitations on the ADLS Gen2 side).
+1. After you enter your connection information, select **Test Connection**. If you get a green light, you can move on! If not, check these values:
+    - Confirm that your container name has no capital characters, special characters, or spaces. (These limitations are required on the ADLS Gen2 side).
     - Your account key value for your ADLS Gen2 account.
     - Your storage account firewall settings and account key value for your ADLS Gen2 account.
 
@@ -31,16 +31,21 @@ So let's set up our stream of data back into an ADLS Gen2 folder called **master
 
     A Stream in CluedIn allows an end user to set up a push-based delivery of data to a target.
 
-    A stream requires that you provide it with a Filter (which records you would like to share), an Export Target (where to send it), a projection (what data in those records to share). You can also optionally make final transformations or actions on the data to be applied to the data leaving the platform (but won't make any changes to that same data in the CluedIn platform).
+    A stream requires that you provide it with:
+    - A filter. The records you would like to share.
+    - An Export Target. Where to send the stream.
+    - A projection. What data in the records to share. 
 
-1. Set a filter using the conditions on the first tab of your newly created stream with a value of **Property**, with a value of **Entity Type** and set the operator to **Equals**.
+    Optionally, you can make final transformations or actions on the data. These changes are applied to the data leaving the platform, but don't affect that same data in the CluedIn platform.
+
+1. Set a filter using the conditions on the first tab of your newly created stream with a value of **Property** and a value of **Entity Type**. Set the operator to **Equals**.
 
 1. In the value for the Entity Type, choose **Employee** and save.
 
     :::image type="content" source="../media/stream-filter.png" alt-text="Screenshot of the CluedIn stream configuration window, showing the value selector.":::
 
 1. In the **Export Target** tab, choose the Azure Data Lake Connector that you just added. Select **Next**.
-1. Add **mastered** as the Target Name. This points the data stream to the folder you created in the first step.
+1. Add **mastered** as the Target Name. This setting points the data stream to the folder you created in the first step.
 
     :::image type="content" source="../media/choose-target.png" alt-text="Screenshot of the CluedIn stream Export Target Configuration window, showing the ADLS Gen 2 account selected.":::
 
@@ -56,10 +61,10 @@ So let's set up our stream of data back into an ADLS Gen2 folder called **master
     >[!NOTE]
     > You can look at the Data Tab to get a preview of the exact data that will be shared downstream.
 
-    :::image type="content" source="../media/stream-setup.png" alt-text="Screenshot of the CluedIn stream Export Target Configuration window, showing the Add Property drop-down menu.":::
+    :::image type="content" source="../media/stream-setup.png" alt-text="Screenshot of the CluedIn stream Export Target Configuration window, showing the 'Add Property' drop-down menu.":::
 
-1. Toggle the **Inactive** button and your stream will be activated.
+1. Toggle the **Inactive** button and your stream is activated.
 
-1. Navigate to your ADLS Gen2 and you should see a folder called **mastered** and files created for the data. Because this is a stream of live data, CluedIn will create regular data files. You'll need to stitch these together yourself when you want to utilize them.
+1. Navigate to your ADLS Gen2 and you should see a folder called **mastered** and files created for the data. Because this stream contains live data, CluedIn creates regular data files. You need to stitch these files together yourself when you want to utilize them.
 
-Your end consumers can already start to use this data, with all its glory and failures. However, we can still say at this point that the end users will prefer to use this than the original files in our raw folder.
+Your end consumers can already start to use this data, even with its imperfections. However, we can say that your end consumers prefer to use this data over the original files in our raw folder.
