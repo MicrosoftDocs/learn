@@ -15,6 +15,9 @@ Defender for Cloud continually assesses the environment-in-scope against any com
 
 The Regulatory compliance dashboard provides an interactive overview of compliance state.
 
+:::image type="content" source="../media/regulatory-compliance-dashboard-overview-05d39e24.png" alt-text="Screenshot showing an example of the regulatory compliance dashboard in Microsoft Defender for Cloud.":::
+
+
 In the dashboard you can:
 
  -  Get a summary of standards controls that have been passed.

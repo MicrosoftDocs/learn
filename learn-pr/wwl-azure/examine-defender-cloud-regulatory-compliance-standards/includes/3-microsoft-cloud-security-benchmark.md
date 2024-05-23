@@ -11,6 +11,9 @@ This benchmark builds on the cloud security principles defined by the Microsoft 
 
 The compliance dashboard gives you a view of your overall compliance standing. Security for non-Azure platforms follows the same cloud-neutral security principles as Azure. Each control within the benchmark provides the same granularity and scope of technical guidance across Azure and other cloud resources.
 
+:::image type="content" source="../media/regulatory-compliance-data-protection-controls-dc02b79c.png" alt-text="Screenshot showing an example of regulatory compliance data protection controls.":::
+
+
 From the compliance dashboard, you're able to manage all of your compliance requirements for your cloud deployments, including automatic, manual, and shared responsibilities.
 
 > [!NOTE]
