@@ -1,16 +1,16 @@
 ### YamlMime:Module
 uid: learn.security-copilot-exercises
 metadata:
-  title: Explore Microsoft Copilot for Security with lab-like exercises
-  description: "xplore Microsoft Copilot for Security with lab-like exercises."
+  title: Explore use cases of Microsoft Copilot for Security
+  description: "Explore use cases of Microsoft Copilot for Security."
   ms.date: 06/28/2024
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: module-standard-task-based
   ms.service: security-copilot
   ai-usage: ai-assisted
-title: Explore Microsoft Copilot for Security with lab-like exercises
-summary: "Explore Microsoft Copilot for Security in the standalone and embedded experiences, through lab-like exercises."
+title: Explore use cases of Microsoft Copilot for Security
+summary: "Explore use cases of Microsoft Copilot for Security in the standalone and embedded experiences, through lab-like exercises."
 abstract: |
   By the end of this module, you'll be able to:
     - "Set up Microsoft Copilot for Security."
