@@ -3,12 +3,13 @@ uid: learn.wwl.enable-defender-cloud-azure-subscription
 metadata:
   title: 'Enable Defender for Cloud on your Azure Subscription  '
   description: "Learn how to connect your Azure subscriptions to Microsoft Defender for Cloud, enabling enhanced security monitoring, compliance management, and the implementation of best practices for threat protection."
-  ms.date: 05/22/2024
+  ms.date: 05/23/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module
   ms.custom:
   - N/A
+  ms.service: defender-for-cloud
   ai-usage: human-only
 title: Enable Defender for Cloud on your Azure Subscription
 summary: In this module, we will focus on enabling Microsoft Defender for Cloud on your Azure subscription to enhance security monitoring, compliance management, and threat protection for your cloud-based applications.
@@ -44,8 +45,8 @@ products:
 - defender-for-cloud
 units:
 - learn.wwl.enable-defender-cloud-azure-subscription.introduction
-- learn.wwl.enable-defender-cloud-azure-subscription.connect-your-azure-subscriptions
-- learn.wwl.enable-defender-cloud-azure-subscription.upgrade-microsoft-defender-for-cloud
+- learn.wwl.enable-defender-cloud-azure-subscription.connect-azure-subscriptions
+- learn.wwl.enable-defender-cloud-azure-subscription.upgrade-microsoft-defender-cloud
 - learn.wwl.enable-defender-cloud-azure-subscription.knowledge-check
 - learn.wwl.enable-defender-cloud-azure-subscription.summary
 badge:
