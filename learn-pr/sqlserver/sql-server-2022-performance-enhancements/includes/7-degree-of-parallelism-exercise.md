@@ -19,14 +19,14 @@ Observe how this feature validates DOP values for an eligible query. It finds th
 
 - SQL Server 2022 Evaluation or Developer Edition
 - A virtual machine (VM) or computer with at minimum 8 CPUs and 24 GB of memory.
-- Install the latest version of [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms).
+- The latest version of [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms).
 - Download [ostress.exe](/troubleshoot/sql/tools/replay-markup-language-utility#tools-in-rml-utilities-for-sql-server) from https://aka.ms/ostress. Install using the *RMLSetup.msi* file. Use all defaults for the installation.
 
 ## Set up the exercise
 
 1. Create a directory called *c:\sql_sample_databases* to store backups and files.
 
-1. Download a backup of a customized version of the `WideWorldImporters` sample database for the DOP exercise from https://aka.ms/wwi_dop, and copy it into *c:\sql_sample_databases* directory.
+1. Download a backup of a customized version of the `WideWorldImporters` sample database for the DOP exercise from https://aka.ms/wwi_dop. Save it into *c:\sql_sample_databases* directory.
 
    > [!NOTE]
    > If you try to restore the default sample `WideWorldImporters` database, you can use the [restorewwi.sql](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/dopfeedback/restorewwi.sql), [populatedata.sql](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/dopfeedback/populatedata.sql) and [rebuild_index.sql](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/dopfeedback/rebuild_index.sql) scripts to customize the database for the exercise.
@@ -142,11 +142,11 @@ Observe how this feature validates DOP values for an eligible query. It finds th
 1. Run [workload_index_scan_users.cmd](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/dopfeedback/workload_index_scan_users.cmd) from a command prompt.  
 
    > [!NOTE]
-   > If you are using a named instance, edit **workload_index_scan_users.cmd** to use `-S.\<instance name>`
+   > If you are using a named instance, edit **workload_index_scan_users.cmd** to use `-S.\<instance name>`.
 
    The script takes around 15 minutes to run.
 
-1. After the script starts running, you can observe DOP feedback using the live data from Extended Events. Within the Live Data Viewer in SSMS, you can add columns to the default view to see the sequence of feedback. Right-click any field in the Details pane and select **Show Column in Table**.
+1. After the script starts running, you can observe DOP feedback using the live data from Extended Events. In the Live Data Viewer in SSMS, you can add columns to the default view to see the sequence of feedback. Right-click any field in the Details pane and select **Show Column in Table**.
   
    You should see a series of events:
 

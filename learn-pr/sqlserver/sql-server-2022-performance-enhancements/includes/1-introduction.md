@@ -23,7 +23,7 @@ The database engine uses two principles to make decisions for IQP:
 - Avoid causing any query performance regressions by using a new method or automation.
 - Provide a method at the database or query level to disable a specific IQP capability.
 
-This approach allows you to choose which IQP feature you want enabled at the database or query level. Use the other IQP feature depending on your database compatibility level.
+This approach allows you to choose which IQP featureS you want enabled at the database or query level.
 
 While the Query Store collects key performance information for queries, the query processor in SQL Server 2022 also uses the Query Store to persist information to accelerate query performance. This information includes supporting features such as:
 

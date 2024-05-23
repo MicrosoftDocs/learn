@@ -15,16 +15,16 @@ In this exercise, you evaluate the Parameter Sensitive Plan optimization. You cr
 
 ## Prerequisites
 
-- SQL Server 2022 Evaluation or Developer Edition
+- SQL Server 2022 Evaluation or Developer Edition.
 - A virtual machine (VM) or computer with at minimum 2 CPUs and 8 GB of memory. For some of the exercises, it's best to have a machine with 8 CPUs or more.
-- Install the latest version of [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms).
+- The latest version of [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms).
 - Download [ostress.exe](/troubleshoot/sql/tools/replay-markup-language-utility#tools-in-rml-utilities-for-sql-server) from https://aka.ms/ostress. Install using the *RMLSetup.msi* file. Use all defaults for the installation.
 
 ## Set up the exercise
 
 1. Create a directory called *c:\sql_sample_databases* to store backups and files.
 
-1. Download a backup of a customized version of the `WideWorldImporters` sample database for the PSP exercise from https://aka.ms/wwi_pspopt, and copy it into *c:\sql_sample_databases* directory.
+1. Download a backup of a customized version of the `WideWorldImporters` sample database for the PSP exercise from https://aka.ms/wwi_pspopt. Save it in the *c:\sql_sample_databases* directory.
 
    > [!NOTE]
    > If you try to restore the default sample `WideWorldImporters` database, you can use the [restorewwi.sql](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/pspopt/restorewwi.sql), [populatedata.sql](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/pspopt/populatedata.sql) and [rebuild_index.sql](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/pspopt/rebuild_index.sql) scripts to customize the database for the exercise.
@@ -82,7 +82,7 @@ In this exercise, you evaluate the Parameter Sensitive Plan optimization. You cr
 
 You want to understand what is happening in the Wide World Importers database. Look at the PSP optimization for a single query execution that runs under the older database compatibility mode of 150.
 
-1. Run the following script to execute the stored procedure created earlier, and make sure that the **Actual Execution Plan** option is enabled. Run the script **twice**.
+1. Run the following script to execute the stored procedure created earlier. Make sure that the **Actual Execution Plan** option is enabled. Run the script *twice*.
 
     ```sql
     USE WideWorldImporters;
@@ -177,28 +177,28 @@ You want to understand what is happening in the Wide World Importers database. L
 
    :::image type="content" source="../media/parameter-senstive-plan-exercise-2-remove-counter.png" alt-text="Screenshot of Performance Monitor and removing counters.":::
 
-1. With the performance counters ready, you can simulate a workload against our Wide World Importers database. Run [workload_index_seek.cmd 10](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/pspopt/workload_index_seek.cmd) from the Command Prompt or in a PowerShell terminal. This command should finish quickly. The parameter used is the number of users. This example uses `10`. You might want to increase this value for machines with 8 CPUs or more. Make sure that you are in the directory you downloaded as part of the prerequisites.
+1. With the performance counters ready, you can simulate a workload against our Wide World Importers database. Run [workload_index_seek.cmd 10](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/pspopt/workload_index_seek.cmd) from the command prompt or in a PowerShell window. This command should finish quickly. The parameter used is the number of users. This example uses `10`. You might want to increase this value for machines with 8 CPUs or more. Make sure that you are in the directory you downloaded as part of the prerequisites.
 
    > [!NOTE]
    > If you are using a named instance, edit **workload_index_seek.cmd** and **workload_index_scan.cmd** to use `-S.\<instance name>`
 
-   :::image type="content" source="../media/parameter-senstive-plan-exercise-2-index-seek-command.png" alt-text="Screenshot of Command Prompt for executing workload_index_seek.cmd.":::
+   :::image type="content" source="../media/parameter-senstive-plan-exercise-2-index-seek-command.png" alt-text="Screenshot of command prompt for executing workload_index_seek.cmd.":::
 
    Observe the performance monitor counters that you set up previously.
 
    :::image type="content" source="../media/parameter-senstive-plan-exercise-2-index-seek-performance.png" alt-text="Screenshot of Performance Monitor after running an index seek query.":::
 
-1. Now run [workload_index_scan.cmd](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/pspopt/workload_index_scan.cmd) from the command prompt or in a PowerShell terminal. These commands should take longer, but now locks into cache a plan for a scan.
+1. Now run [workload_index_scan.cmd](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/pspopt/workload_index_scan.cmd) from the command prompt or in a PowerShell window. These commands should take longer, but now locks into cache a plan for a scan.
 
-   :::image type="content" source="../media/parameter-senstive-plan-exercise-2-index-scan-command.png" alt-text="Screenshot of Command Prompt for executing workload_index_scan.cmd.":::
+   :::image type="content" source="../media/parameter-senstive-plan-exercise-2-index-scan-command.png" alt-text="Screenshot of command prompt for executing workload_index_scan.cmd.":::
 
-1. Run [workload_index_seek.cmd 10](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/pspopt/workload_index_seek.cmd) again from the command prompt or in a PowerShell terminal.
+1. Run [workload_index_seek.cmd 10](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/pspopt/workload_index_seek.cmd) again from the command prompt or in a PowerShell window.
 
    Observe the performance monitor counters that you set up previously. Notice a higher **% Processor Time** (CPU), and lower **Batch Requests/sec**. Also observe that the workload doesn't finish in a few seconds as before.
 
    :::image type="content" source="../media/parameter-senstive-plan-exercise-2-index-seek-performance-2.png" alt-text="Screenshot of Performance Monitor after running an index scan and index seek query.":::
 
-1. Press **Ctrl**+**C** in the command window or PowerShell terminal to cancel the workload for **workload_index_seek.cmd**, because it can take minutes to complete.
+1. Press **Ctrl**+**C** in the command window or PowerShell window to cancel the workload for **workload_index_seek.cmd**, because it can take minutes to complete.
 
 1. Pause Performance Monitor by selecting the pause button.
 
@@ -250,17 +250,17 @@ SQL Server 2022 enhancements to PSP can solve the parameter sniffing problem obs
 
 1. Resume capturing Performance Monitor by selecting the play button.
 
-1. Run [workload_index_seek.cmd 10](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/pspopt/workload_index_seek.cmd) from the Command Prompt or in a PowerShell terminal. The command should finish quickly as in the second exercise.
+1. Run [workload_index_seek.cmd 10](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/pspopt/workload_index_seek.cmd) from the command prompt or in a PowerShell window. The command should finish quickly as in the second exercise.
 
-1. Now run [workload_index_scan.cmd](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/pspopt/workload_index_scan.cmd) from the Command Prompt or in a PowerShell terminal. These commands should take longer again, and locks into cache a plan for a scan.
+1. Now run [workload_index_scan.cmd](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/pspopt/workload_index_scan.cmd) from the command prompt or in a PowerShell window. These commands should take longer again, and locks into cache a plan for a scan.
 
-1. Run [workload_index_seek.cmd 10](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/pspopt/workload_index_seek.cmd) again from the Command Prompt or in a PowerShell terminal. The command now finishes again in a few seconds. Unlike in the previous exercise where the command took a longer time to run, you don't need to terminate the workload.
+1. Run [workload_index_seek.cmd 10](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/pspopt/workload_index_seek.cmd) again from the command prompt or in a PowerShell window. The command now finishes again in a few seconds. Unlike in the previous exercise where the command took a longer time to run, you don't need to terminate the workload.
 
    Observe the Performance Monitor counters and you see consistent performance.
 
    :::image type="content" source="../media/parameter-senstive-plan-exercise-3-performance-monitor-consistent.png" alt-text="Screenshot of Performance Monitor showing consistent performance from running the index scan and index seek queries.":::
 
-1. To observe why there's a performance difference, look in the Query Store. Open the **WideWorldImporters** > **Query Store** > **Top Resource Consuming Queries** in SSMS **Object Explorer** to open the report. There are two plans for the same stored procedure. The one difference is that there's a new option applied to the query for each procedure, which is why there are two different *queries* in the Query Store.
+1. To observe why there's a performance difference, look in the Query Store. In SSMS **Object Explorer**, select **WideWorldImporters** > **Query Store** > **Top Resource Consuming Queries** to open the report. There are two plans for the same stored procedure. The one difference is that there's a new option applied to the query for each procedure, which is why there are two different *queries* in the Query Store.
 
    :::image type="content" source="../media/parameter-senstive-plan-exercise-3-query-store-top-resources-report.png" alt-text="Screenshot of SSMS Query Store Top Resource Consuming Queries report.":::
 

@@ -11,19 +11,19 @@ ms.custom:
 
 Imagine that you're a database administrator for the World Wide Importers Corporation. You need to understand how memory grant feedback is different in SQL Server 2022 than in previous versions. To understand this difference, this module simulates an out of date statistics exercise. Review the persistence of the memory grant feedback that is new to SQL Server 2022 and requires the Query Store.
 
-In this exercise, you learn how to see how memory grant feedback can improve query performance automatically, including persisting feedback to the Query Store.
+In this exercise, you learn how memory grant feedback can improve query performance automatically, including persisting feedback to the Query Store.
 
 ## Prerequisites
 
 - SQL Server 2022 Evaluation or Developer Edition
-- A virtual machine (VM) or computer with at minimum 2 CPUs and 8 GB of memory.
-- Install the latest version of [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms).
+- A virtual machine (VM) or computer with at minimum 2 CPUs and 8 GB of memory
+- The latest version of [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms)
 
 ## Set up the exercise
 
 1. Create a directory called *c:\sql_sample_databases* to store backups and files.
 
-1. Download a backup of a customized version of the `WideWorldImportersDW` sample database backup for the memory grant feedback exercise from https://aka.ms/wwidw_mgf, and copy it to the *c:\sql_sample_databases* directory.
+1. Download a backup of a customized version of the `WideWorldImportersDW` sample database backup for the memory grant feedback exercise from https://aka.ms/wwidw_mgf. Save it to the *c:\sql_sample_databases* directory.
 
    > [!NOTE]
    > If you try to restore the default sample `WideWorldImportersDW` database, you can use the [extendwwidw.sql](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/persistedmgf/extendwwidw.sql) script to customize the database for the exercise.
@@ -46,7 +46,7 @@ In this exercise, you learn how to see how memory grant feedback can improve que
    > [!IMPORTANT]
    > If you have permission issues to restore the backup, you can try to copy the backup into the default *data* folder for your SQL Server installation and try the restore again. You need to edit the restore script accordingly. The default for most instances is *C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\DATA*.
 
-1. Run the following script from SSMS. This script ensures the `WideWorldImporters` database is at `dbcompat 150` and clear the query store.
+1. Run the following script from SSMS. This script ensures the `WideWorldImporters` database is at `dbcompat 150` and clears the query store.
 
    ```sql
    USE [WideWorldImportersDW];
@@ -61,7 +61,7 @@ In this exercise, you learn how to see how memory grant feedback can improve que
 
 ## Exercise - Memory grant feedback
 
-1. In order to evaluate persisted memory grant feedback, first simulate creating an out of date statistics on a table. Run the following script in SSMS.
+1. To evaluate persisted memory grant feedback, simulate creating an out of date statistics on a table. Run the following script in SSMS.
 
     ```sql
     USE WideWorldImportersDW;
@@ -87,17 +87,17 @@ In this exercise, you learn how to see how memory grant feedback can improve que
 
    :::image type="content" source="../media/memory-grant-execute-select-query.png" alt-text="Screenshot of SSMS query executing select query for memory grant exercise.":::
 
-1. When the query returns select the **Execution plan** tab, look at the yellow warning on the hash join operator. Hover over the Hash Match operator on the query plan.  
+1. When the query returns select the **Execution plan** tab, look at the yellow warning on the hash join operator. Hover over the **Hash Match** operator on the query plan.  
 
    :::image type="content" source="../media/memory-grant-query-execution-plan.png" alt-text="Screenshot of the execution plan in SSMS.":::
 
-   The script, which didn't do a full scan of statistics, leads to an inaccurate estimate of the number of rows the query would return. The query estimated 52.8634 rows and actually returned 66,416 rows. The query also caused 52,008 pages, each 8 KB in size totaling up to over 400 MB, to spill and be read from the `tempdb`.
+   The script, which didn't do a full scan of statistics, leads to an inaccurate estimate of the number of rows the query returns. The query estimated 52.8634 rows and actually returned 66,416 rows. The query also caused 52,008 pages, each 8 KB in size totaling up to over 400 MB, to spill and be read from the `tempdb`.
 
-1. Now, hover over the `SELECT` operator in the query plan.
+1. Now, hover over the **SELECT** operator in the query plan.
 
    :::image type="content" source="../media/memory-grant-query-plan-select-operator.png" alt-text="Screenshot of the execution plan in SSMS and hovering over the select operator.":::
 
-1. The Memory Grant for this query is around 1.4 MB. That value is far short of the more than 400 MB that spilled to `tempdb`. Right-click on the `SELECT` operator and select properties.
+1. The Memory Grant for this query is around 1.4 MB. That value is far short of the more than 400 MB that spilled to `tempdb`. Right-click on the **SELECT** operator and select **Properties**.
 
    :::image type="content" source="../media/memory-grant-query-plan-properties.png" alt-text="Screenshot of the execution plan in SSMS selecting properties for the select operator.":::
 

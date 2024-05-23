@@ -14,9 +14,9 @@ title: Understand the built-in query intelligence enhancements of SQL Server 202
 summary: "Learn about and use the Intelligent Query Processing feature enhancements in SQL Server 2022."
 abstract: |
   At the end of this module, you can:
-  - Understand the key functionality behind Intelligent Query Processing and when to implement the feature.
-  - Understand Automatic performance healing with memory grant feedback persistence.
-  - Know how to get consistent performance with Parameter Sensitive Plan optimization.
+  - Understand the key functionality behind Intelligent Query Processing and when to implement the feature
+  - Understand Automatic performance healing with memory grant feedback persistence
+  - Know how to get consistent performance with Parameter Sensitive Plan optimization
   - Gain parallel efficiency with DOP Feedback
 prerequisites: |
   - Basic working knowledge of SQL Server and query processing.

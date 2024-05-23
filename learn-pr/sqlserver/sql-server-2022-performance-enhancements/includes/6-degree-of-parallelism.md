@@ -6,11 +6,11 @@ The optimizer in SQL Server in some cases runs pieces of the query plan called *
 
 The Degree of Parallelism that a query is executed with can greatly affect its performance. When a query uses parallelism, there's always the question of whether it's using the right amount of parallelism. Sometimes, if the DOP is too high, it can introduce inefficiencies into the query execution. If the DOP is too low, you might miss some of the increase speed that parallelism can provide.  
 
-SQL Server can control the maximum number of threads per operator using server, database, resource governor, or query settings called *max Degree of Parallelism* (MAXDOP). Setting the right MAXDOP for a SQL Server deployment can be a complex and sometimes difficult exercise.
+SQL Server can control the maximum number of threads per operator using server, database, resource governor, or query settings called *max Degree of Parallelism* (MAXDOP). Setting the right MAXDOP for a SQL Server deployment can be complex and sometimes difficult.
 
 ## DOP enhancements in SQL Server 2022
 
-SQL Server 2022 introduces a new feature called DOP feedback. The optimizer uses DOP feedback to find the parallel efficiency for a query. Parallel efficiency is the minimum DOP for a query that can result in the same overall query duration, factoring our common waits. This feature looks at any parallel query and determine if it might perform better with a lower Degree of Parallelism than currently being used. Reducing the DOP for a query can provide more threads and CPU resources for other queries of the application.  
+SQL Server 2022 introduces a new feature called *DOP feedback*. The optimizer uses DOP feedback to find the parallel efficiency for a query. Parallel efficiency is the minimum DOP for a query that can result in the same overall query duration, factoring our common waits. This feature looks at any parallel query and determine if it might perform better with a lower Degree of Parallelism than currently being used. Reducing the DOP for a query can provide more threads and CPU resources for other queries of the application.  
 
 DOP feedback never increases the DOP. At best, DOP feedback reverts to a stable previous DOP, and it works incrementally. Instead of trying to drastically lower the DOP all at once, DOP feedback tries a slightly lower DOP. If the DOP is good, it might try another slightly lower DOP. If the new, even lower DOP is good, DOP feedback might try to reduce again down to the DOP of two. It won't make a parallel plan become serial. If the new, lower DOP isn't as good, it goes back to the previous known good DOP and keep the query at that level.
 
