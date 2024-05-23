@@ -38793,6 +38793,16 @@
     "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/18-summary.md",
     "redirect_url": "/training/modules/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/17-summary",
     "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/describe-pipelines-concurrency/7-knowledge-check.md",
+    "redirect_url": "/training/modules/describe-pipelines-concurrency/8-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/describe-pipelines-concurrency/8-summary.md",
+    "redirect_url": "/training/modules/describe-pipelines-concurrency/9-summary",
+    "redirect_document_id": false
     }
   ]
 }
