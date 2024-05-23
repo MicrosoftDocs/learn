@@ -38565,6 +38565,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/security-ops-sentinel/index.yml",
+      "redirect_url": "/training/paths/sc-200-configure-azure-sentinel-environment/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/index.yml",
       "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
       "redirect_document_id": false
