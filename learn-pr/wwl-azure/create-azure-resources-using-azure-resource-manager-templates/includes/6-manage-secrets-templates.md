@@ -1,4 +1,3 @@
-
 When passing a secure value (such as a password) as a parameter during deployment, you can retrieve the value from an Azure Key Vault.
 
 Reference the Key Vault and secret in your parameter file.
