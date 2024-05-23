@@ -4,7 +4,7 @@ For example, in an e-commerce platform, you can ensure that sellers only have ac
 
 If you have experience with SQL Server, you find that row-level security shares similar characteristics and features.
 
-## Understand the internals
+## Protect your data
 
 Row-Level Security (RLS) works by associating a function, known as a security predicate, with a table. This function is defined to return *true* or *false* based on certain conditions, typically involving the values of one or more columns in the table. When a user attempts to access data in the table, the security predicate function is invoked. If the function returns *true*, the row is accessible to the user; if it returns *false*, the row is effectively invisible to the user. 
 
@@ -80,7 +80,7 @@ If you alter the security policy with `WITH (STATE = OFF);`, you notice that use
 >[!NOTE]
 > There is a risk of information leakage if an attacker writes a query with a specially crafted `WHERE` clause and, for example, a divide-by-zero error, to force an exception if the `WHERE` condition is true. This is known as a *side-channel attack*. It is wise to limit the ability of users to run ad hoc queries when using row-level security.
 
-## Use case
+## Explore use cases
 
 Row-level security is ideal for many scenarios, including:
 
@@ -88,7 +88,7 @@ Row-level security is ideal for many scenarios, including:
 - When you need to restrict customers' data access to only the data relevant to their company.
 - When you need to restrict access for compliance purposes.
 
-## Best practice
+## Apply best practices
 
 Here are a few best practices to consider when implementing RLS:
 

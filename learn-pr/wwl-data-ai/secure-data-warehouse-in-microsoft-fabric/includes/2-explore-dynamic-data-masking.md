@@ -2,7 +2,7 @@ Dynamic Data Masking (DDM) is a security feature that limits data exposure to no
 
 Dynamic data masking offers several key benefits that enhance the security and manageability of your data. One of the primary advantages is its real-time masking feature. When a query is made on sensitive data, DDM applies dynamic masking to it in real time. This process means that the actual data is never exposed to unauthorized users, thus enhancing the security of your data. Furthermore, DDM is straightforward to implement. It doesn’t require complex coding, making it accessible for users of all skill levels.
 
-Another benefit of DDM is that it has no effect on the underlying data. The data in the database isn’t changed when DDM is applied. Instead, the masking rules are applied to the query results. This benefit means that the actual data remains intact and secure, while nonprivileged users only see a masked version of the data.
+Another benefit of DDM is that the data in the database isn’t changed when DDM is applied. Instead, the masking rules are applied to the query results. This benefit means that the actual data remains intact and secure, while nonprivileged users only see a masked version of the data.
 
 ## Define masking rule
 

@@ -16,11 +16,11 @@ Here's how you might implement column-level security in this scenario:
 
 1. **Implement access control**: Restrict access to the `MedicalHistory` column based on the user's role. 
 
-In this way, column-level security can help ensure that sensitive health information is only accessible to those who are authorized to see it, thou protecting patient privacy and complying with healthcare regulations. 
+Column-level security can help ensure that sensitive health information is only accessible to those who are authorized to see it, thou protecting patient privacy and complying with healthcare regulations. 
 
 ## Configure column-level security
 
-In our previous example, the syntax to use for implementing column level security might looks as follows:
+In our previous example, the syntax to use for implementing column-level security might look as follows:
 
 ```sql
 -- Create roles
@@ -44,13 +44,6 @@ GO
 ```
 
 In this example, we first create the roles `Doctor`, `Nurse`, `Receptionist`, and `Patient`. We then grant `SELECT` permissions on all columns in the `Patients` table to all roles. Finally, we deny `SELECT` permissions on the `MedicalHistory` column to the `Receptionist` and `Patient` roles. This ensures that only users with the `Doctor` or `Nurse` role can access the `MedicalHistory` column.
-
-Alternatively, you could `GRANT` access to all the columns in the Patients table, except for MedicalHistory column.
-
-```sql
-GRANT SELECT ON dbo.Patients (<column_list>) TO Receptionist;
-GRANT SELECT ON dbo.Patients (<column_list>) TO Patient;
-```
 
 ## Understand the benefits
 
