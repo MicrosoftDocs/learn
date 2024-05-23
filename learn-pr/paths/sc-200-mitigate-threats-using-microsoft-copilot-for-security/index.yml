@@ -1,0 +1,37 @@
+### YamlMime:LearningPath
+uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-copilot-for-security
+metadata:
+  title: 'SC-200: Mitigate threats using Microsoft Copilot for Security'
+  description: 'SC-200: Mitigate threats using Microsoft Copilot for Security'
+  ms.date: 05/23/2024
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: learning-path
+title: 'SC-200: Mitigate threats using Microsoft Copilot for Security'
+prerequisites: |
+  - Working knowledge of Microsoft security, compliance, and identity products
+  - Working knowledge of security operations and incident response
+  - Working knowledge of Microsoft Defender XDR
+summary: |
+  Get started with Microsoft Copilot for Security. You'll be introduced to basic terminology, how Microsoft Copilot for Security processes prompts, the elements of an effective prompt, and how to enable the solution. This learning path aligns with exam SC-200: Microsoft Security Operations Analyst.
+iconUrl: /training/achievements/mitigate-threats-using-microsoft-365-defender.svg
+levels:
+- intermediate
+roles:
+- security-operations-analyst
+products:
+- microsoft-sentinel
+- defender-endpoint
+- microsoft-defender
+- defender-xdr
+subjects:
+- cloud-security
+- security
+- threat-protection
+modules:
+- learn.wwl.fundamentals-generative-ai
+- learn-wwl.security-copilot-getting-started
+- learn.security-copilot-describe-core-features
+- learn.security-copilot-embedded-experiences
+trophy:
+  uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-copilot-for-security.trophy
