@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.security-copilot-exercises
+metadata:
+  title: Explore Microsoft Copilot for Security with lab-like exercises
+  description: "xplore Microsoft Copilot for Security with lab-like exercises."
+  ms.date: 06/28/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: module-standard-task-based
+  ms.service: security-copilot
+  ai-usage: ai-assisted
+title: Explore Microsoft Copilot for Security with lab-like exercises
+summary: "Explore Microsoft Copilot for Security in the standalone and embedded experiences, through lab-like exercises."
+abstract: |
+  By the end of this module, you'll be able to:
+    - "Set up Microsoft Copilot for Security."
+    - "Work with sources in Copilot."
+    - "Create a custom playbook."
+    - "Use the capabilities of Copilot in Defender XDR."
+    - "Use the capabilities of Copilot in Microsoft Purview."
+prerequisites: |
+  - Working knowledge of security operations and incident response
+  - Working knowledge of Microsoft Security solutions and services
+  - Completion of the module [Describe Microsoft Copilot for Security](/training/modules/security-copilot-getting-started/)
+  - Completion of the module [Describe the core features of Microsoft Copilot for Security](training/modules/security-copilot-describe-core-features/)
+  - Completion of the module [Describe the embedded experiences of Microsoft Copilot for Security](training/modules/security-copilot-embedded-experiences/)
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - beginner
+roles: 
+  - security-engineer
+  - security-operations-analyst
+  - business-owner
+products:
+  - ms-copilot
+  - defender-xdr
+  - microsoft-purview
+subjects:
+  - security
+units:
+- learn.security-copilot-exercises.introduction
+- learn.security-copilot-exercises.first-run-experience
+- learn.security-copilot-exercises.explore-standalone-experience
+- learn.security-copilot-exercises.configure-plugin
+- learn.security-copilot-exercises.explore-knowledge-base-file-upload
+- learn.security-copilot-exercises.create-custom-playbook
+- learn.security-copilot-exercises.explore-embedded-defender-xdr
+- learn.security-copilot-exercises.explore-embedded-microsoft-purview
+- learn.security-copilot-exercises.summary
+badge:
+  uid: learn.security-copilot-exercises.badge

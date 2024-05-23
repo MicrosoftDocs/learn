@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-exercises.first-run-experience
+title: Explore the first run experience
+metadata:
+  title: Explore the first run experience
+  description: "Explore the first run experience."
+  ms.date: 06/28/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-first-run-experience.md)]

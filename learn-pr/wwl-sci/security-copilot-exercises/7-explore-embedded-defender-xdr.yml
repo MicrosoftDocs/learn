@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-exercises.explore-embedded-defender-xdr
+title: Explore the capabilities of Copilot in Microsoft Defender XDR
+metadata:
+  title: Explore the capabilities of Copilot in Microsoft Defender XDR
+  description: "Explore the capabilities of Copilot in Microsoft Defender XDR."
+  ms.date: 06/28/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-explore-embedded-defender-xdr.md)]

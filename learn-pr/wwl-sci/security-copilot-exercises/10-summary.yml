@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-exercises.summary
+title: Summary and resources
+metadata:
+  title: Summary and resources
+  description: "Summary and resources for explore Microsoft Copilot for Security with lab-like exercises."
+  ms.date: 06/28/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/10-summary.md)]

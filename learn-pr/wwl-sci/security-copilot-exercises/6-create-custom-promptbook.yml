@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-exercises.create-custom-promptbook
+title: Create a custom promptbook
+metadata:
+  title: Create a custom promptbook
+  description: "Create a custom promptbook."
+  ms.date: 06/28/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-create-custom-promptbook.md)]

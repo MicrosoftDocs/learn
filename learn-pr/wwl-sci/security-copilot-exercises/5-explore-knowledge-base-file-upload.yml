@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-exercises.explore-knowledge-base-file-upload
+title: Explore file uploads as a knowledge base
+metadata:
+  title: Explore file uploads as a knowledge base
+  description: "Explore file uploads as a knowledge base."
+  ms.date: 06/28/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-explore-knowledge-base-file-upload.md)]
