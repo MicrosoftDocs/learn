@@ -30094,21 +30094,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/wwl-azure/explore-azure-automation-devops/11-examine-checkpoint-parallel-processing.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-automation-devops/12-examine-checkpoint-parallel-processing",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/explore-azure-automation-devops/12-knowledge-check.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-automation-devops/13-knowledge-check",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/explore-azure-automation-devops/13-summary.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-automation-devops/14-summary",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/wwl/get-started-lakehouses/4-exercise-lakehouse.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/get-started-lakehouses/5-exercise-lakehouse",
       "redirect_document_id": false
@@ -38670,6 +38655,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/security-ops-sentinel/index.yml",
+      "redirect_url": "/training/paths/sc-200-configure-azure-sentinel-environment/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/index.yml",
       "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
       "redirect_document_id": false
@@ -38817,6 +38807,96 @@
     {
     "source_path": "learn-pr/wwl-azure/create-azure-resources-by-using-azure-cli/6-summary.md",
     "redirect_url": "/training/modules/create-azure-resources-by-using-azure-cli/5-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/explore-azure-automation-devops/11-exercise-create-run-workflow-runbook.md",
+    "redirect_url": "/training/modules/explore-azure-automation-devops",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/explore-azure-automation-devops/12-examine-checkpoint-parallel-processing.md",
+    "redirect_url": "/training/modules/explore-azure-automation-devops/11-examine-checkpoint-parallel-processing",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/explore-azure-automation-devops/13-knowledge-check.md",
+    "redirect_url": "/training/modules/explore-azure-automation-devops/12-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/explore-azure-automation-devops/14-summary.md",
+    "redirect_url": "/training/modules/explore-azure-automation-devops/13-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-desired-state-configuration-dsc/10-knowledge-check.md",
+    "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/7-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-desired-state-configuration-dsc/11-summary.md",
+    "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/8-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-desired-state-configuration-dsc/6-exercise-import-compile.md",
+    "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-desired-state-configuration-dsc/7-exercise-onboard-machines-for-management.md",
+    "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/implement-desired-state-configuration-dsc/8-explore-hybrid-management.md",
+    "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/implement-desired-state-configuration-dsc/9-implement-dsc-linux-automation-azure.md",
+    "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/6-implement-dsc-linux-automation-azure",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-bicep/8-knowledge-check.md",
+    "redirect_url": "/training/modules/implement-bicep/9-knowledge-check",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/implement-bicep/9-summary.md",
+    "redirect_url": "/training/modules/implement-bicep/10-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/15-explore-best-practices-dp-100-learning-path-12.md",
+    "redirect_url": "/training/modules/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/16-bring-it-all-together.md",
+    "redirect_url": "/training/modules/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/15-bring-it-all-together",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/17-knowledge-check.md",
+    "redirect_url": "/training/modules/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/16-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/18-summary.md",
+    "redirect_url": "/training/modules/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/17-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/describe-pipelines-concurrency/7-knowledge-check.md",
+    "redirect_url": "/training/modules/describe-pipelines-concurrency/8-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/describe-pipelines-concurrency/8-summary.md",
+    "redirect_url": "/training/modules/describe-pipelines-concurrency/9-summary",
     "redirect_document_id": false
     }
   ]
