@@ -1,135 +1,57 @@
-Deploying a cloud governance foundation accelerates your ability to govern your entire Azure environment. This unit outlines the considerations and implementations that are required to deploy a foundation that can achieve resource consistency and prepare you for other governance disciplines.
+## Enforce cloud governance policies
 
-## What do you configure?
+Cloud governance enforcement refers to the controls and procedures you use to align cloud use to the cloud governance policies. The cloud governance team must delegate enforcement responsibilities so that each team or individual can enforce cloud governance policies within their area of responsibility.
 
-This unit assumes that you deployed assets to Azure, and you want to configure the environment to better organize, track, and govern those assets. When you finish this unit, you understand *why* and *how* to configure management groups, subscription design, resource groups, and tagging.
+To effectively enforce cloud governance policies:
 
-## Strategic considerations
+- **Define an approach for enforcing policies**: Delegate governance responsibilities, adopt an inheritance model for policies, apply tagging and naming conventions to the resources in the inheritance model, and implement a monitor-first approach to ensure a smooth transition to enforcement.
 
-Resource organization is based on what's important to your organization. Before you define a management group or subscription design, it's important to understand the priority of these competing priorities:
+- **Automate cloud governance**: Use cloud governance tools to automate compliance on a small set of policies and expand out. Incorporate infrastructure as code (IaC) tools or custom scripts or applications. Automate areas of governance such as:  
+   - AI
+   - Cost
+   - Data
+   - Operations
+   - Regulatory compliance
+   - Resource management
+   - Security
 
-- **Cost transparency**: Every cloud adoption should be aligned to departments, business units, projects, or other cost-allocation mechanisms for chargeback and showback accounting requirements.
-
-- **Compliance and security**: Every cloud adoption should map to specific compliance requirements that map cloud adoption to specific risk, security, and compliance organization structures.
-- **Democratization (delegated responsibility)**: Every cloud adoption should map to teams, product groups, or projects for easier segmentation of responsibility by teams.
-
-Understanding these strategic priorities can help you identify the best starting point for your management and subscription design.
-
-## Resource organization in Azure
-
-The basic foundation of all governance is consistent resource organization.
-
-:::image type="content" source="../media/resource-consistency.png" alt-text="Image that demonstrates the Resource Consistency baseline as a hierarchy of resources." border="false":::
-
-*Figure 1: Resource consistency.*
-
-The three main components of resource organization are:
-
-- *Management groups*, which reflect security, operations, and business or accounting hierarchies.
-- *Subscriptions*, which group similar resources into logical boundaries.
-- *Resource groups*, which further group applications or workloads into deployment and operations units.
+- **Review and update enforcement mechanisms**: Keep cloud governance policy enforcement aligned with your current needs, including developer, architect, workload, platform, and business requirements. Track changes in regulations and standards to ensure compliance. 
 
 ## Governance design consideration
 
-To accommodate long-term governance needs, design a high-level hierarchy, but implement only what you need. Add new nodes to the hierarchy as requirements dictate.
+To accommodate long-term governance needs, apply a hierarchical governance model in which specific workloads inherit governance policies from the platform. This model helps ensure that organizational standards apply to the correct environments, such as purchasing requirements for cloud services.
 
-:::image type="content" source="../media/management-group-hierarchy.png" alt-text="Image that demonstrates management group hierarchy." border="false":::
+:::image type="content" source="../media/management-group-hierarchy.png" alt-text="Diagram that shows the management group hierarchy." border="false" lightbox="../media/management-group-hierarchy.png":::
 
-*Figure 2: Management group hierarchy.*
+- **Management groups**: Such as business unit, geography, or environment
 
-The following components are in descending levels in the management group hierarchy shown in Figure 2:
+- **Subscriptions**: For each application category, such as preproduction, development, and production environments
+- **Resource groups**: For each application
 
-- **Management group**: Business unit, geography, and environment
+## Define a tagging and naming strategy
 
-- **Subscription**: Per application category, preproduction, development environments, and production
-- **Resource groups**: Per application
+Define a tagging and naming strategy to provide a structured framework for resource categorization, cost management, security, and compliance across the cloud environment. Tag resources to set up your environment so that you can take advantage of automated tools. Consider the following suggested tags for workloads:
 
-### Exercise: Configure your first management group hierarchy
-
-Start with a smaller hierarchy so you can experiment and quickly overcome initial learning curves.
-
-:::image type="content" source="../media/small-management-group-hierarchy.png" alt-text="Diagram of a reduced-size management group hierarchy." border="false":::
-
-*Figure 3: Initial, smaller management group hierarchy.*
-
-In this smaller version, attempt the following configuration steps:
-
-- **Parent node**: Define a management group for corporate IT.
-
-- **Child nodes**: Define child nodes for each production and nonproduction environment.
-
-For guidance on creating these management groups, reference the [quickstart guide for creating a management group in the Azure portal](/azure/governance/management-groups/create-management-group-portal).
-
-## Subscription design
-
-A subscription is a logical container for all deployed assets. Subscriptions are used to group together common workloads based on billing, compliance, security, or access requirements. To maximize the effectiveness of governance, you should use as few subscriptions as possible.
-
-:::image type="content" source="../media/initial-subscription-model.png" alt-text="Diagram of two separate subscriptions, one labeled production and one labeled nonproduction." border="false":::
-
-*Figure 4: Production and nonproduction subscriptions.*
-
-## Scaling with subscriptions
-
-There are several technical and nontechnical reasons to scale with multiple subscriptions. Check out the [fundamental concepts article](/azure/cloud-adoption-framework/ready/azure-best-practices/scale-subscriptions) for an overview of common reasons to scale.
-
-The following questions might help illustrate reasons for you to scale your subscriptions:
-
-- Are there capacity or technical limitations?
-
-- Do you need to clearly separate concerns? For example:
-  - Separation of duties
-  - Dev/test versus generic nonproduction
-  - Different customers
-  - Different departments or business units
-  - Different projects
-- Are you able to spread the cost of a shared infrastructure across application owners? (Often, a dedicated subscription is used for shared infrastructure, like Microsoft Entra ID, monitoring, or patching tools.)
-- Do you need to create clearer separation of duties through shared service subscriptions for operations management, security, identity sync, connectivity, or DevOps teams?
-
-### Exercise: Add subscriptions to your management groups
-
-Add existing subscriptions in each of the environment nodes to create clarity between production, development, and QA resources.
-
-:::image type="content" source="../media/add-context-sub.png" alt-text="Screenshot that shows adding a subscription to a management group in the Azure portal.":::
-
-*Figure 5: Add a subscription to a management group.*
-
-For guidance on adding subscriptions to a management group, reference the [how-to guide](/azure/governance/management-groups/manage#move-subscriptions).
-
-## Tagging
-
-Management groups reflect your highest-priority organization structure. Tagging reflects various organizing principles that also are reflected in metadata. Here are suggested tags for all workloads:
-
-- Workload (and/or application)
-- Data sensitivity; reference [Data classification](/azure/cloud-adoption-framework/govern/policy-compliance/data-classification) for examples
-- Mission criticality; reference [Workload criticality](/azure/cloud-adoption-framework/manage/considerations/criticality) for examples
+- Workload or application
+- Data sensitivity, see [examples](/azure/cloud-adoption-framework/govern/policy-compliance/data-classification)
+- Mission criticality, see [examples](/azure/cloud-adoption-framework/manage/considerations/criticality)
 - Owner
-- Department (cost center)
+- Department, such as cost center
 - Environment
 
 ### Exercise: Assign a tagging policy
 
-You can apply Azure policies to all subscriptions in a management group. To understand the role of policy in your governance foundation, apply a policy to one of your management groups in the hierarchy.
+You can apply Azure policies to all subscriptions in a management group. To understand the role of policy in your governance foundation, apply a policy to one of your management groups.
 
-:::image type="content" source="../media/select-assign-policy.png" alt-text="Screenshot that shows assigning a policy in the Azure portal.":::
+:::image type="content" source="../media/select-assign-policy.png" alt-text="Screenshot that shows the assign policy button in the Azure portal." lightbox="../media/select-assign-policy.png":::
 
-*Figure 6: Assign a policy in the Azure portal.*
+To apply a policy, see the [tutorial to assign a policy](/azure/governance/policy/tutorials/create-and-manage#assign-a-policy).
 
-For guidance on applying a policy, check out the tutorial on [creating and managing policies](/azure/governance/policy/tutorials/create-and-manage#assign-a-policy)
+- On step 4, select a management group to ensure that you apply the policies to all subscriptions in the management group.
 
-- Step 4 of the instructions for assigning a policy discusses scope. In this step, you select the management group to ensure that the policies are applied to all subscriptions in the management group.
-- Steps 6 and 7 discuss policy definition. From the list of **Built-in** policies, we suggest selecting one of the policies related to [tagging](/azure/governance/policy/samples/built-in-policies#tags). Specifically, the policy that requires a [tag on all resources](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F1e30110a-5ceb-460c-a204-c1c3969c6d62) helps establish a governance foundation.
+- On steps 6 and 7, select one of the built-in policies related to [tagging](/azure/governance/policy/samples/built-in-policies#tags). Specifically, the policy that requires a [tag on all resources](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F1e30110a-5ceb-460c-a204-c1c3969c6d62) helps establish a governance foundation.
 
 > [!IMPORTANT]
-> Step 9 in the [tutorial](/azure/governance/policy/tutorials/create-and-manage#assign-a-policy) illustrates **Policy enforcement**. As you learn about governance, be sure to set **Policy enforcement** to **Disabled**. When this setting is disabled, you can audit your environment without making any changes, and it won't prevent future deployments.
+> On step 9, set **Policy enforcement** to **Disabled**. When you disable this setting, you can audit your environment without making any changes, and you don't block future deployments.
 
-### Exercise: Evaluate a current environment
-
-Customers commonly attempt to add governance to existing, mature adoption efforts across multiple subscriptions. As you mature your governance practices across a portfolio, the [Azure governance visualizer](https://github.com/azure/azure-governance-visualizer) can provide insights about your current governance configuration.
-
-:::image type="content" source="../media/visualizer.png" alt-text="Diagram of the Azure Governance Visualizer." border="false":::
-
-*Figure 7: The Azure governance visualizer.*
-
-Deploy the Azure governance visualizer to see how management groups, blueprints, policies, and other governance configurations have been applied across your environment.
-
-These exercises help demonstrate a starting point or foundation for governance. In the next unit, you'll build on this foundation to establish a mature Cost Management discipline.
+These exercises help demonstrate a starting point or foundation for governance. In the next unit, you'll build on this foundation to 

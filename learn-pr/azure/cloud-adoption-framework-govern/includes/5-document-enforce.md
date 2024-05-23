@@ -1,18 +1,6 @@
 ## Incorporate cloud governance policies
 
-When you define corporate policy, you must identify and mitigate business risks, regardless of the cloud platform that your organization uses. Healthy cloud governance strategy begins with sound corporate policy. The following four-step process describes the iterative development of sound corporate policies:
-
-| &nbsp; | &nbsp;  |
-|--|--|
-| <br> :::image type="content" source="../media/business-risk.png" alt-text="Business risk icon." border="false"::: | <br> **Assess cloud risks**: Identify and catalog a comprehensive list of cloud risks. Analyze those risks to prioritize them by severity. Document the risks, and ensure that you inform all necessary parties in your organization. |
-| <br> :::image type="content" source="../media/corporate-policy.png" alt-text="Policy and compliance icon." border="false"::: | <br> **Document cloud governance policies**: Define and document policies that help mitigate your risks. Grant policy access to everyone who needs to adhere to the policies. |
-| <br> :::image type="content" source="../media/enforcement.png" alt-text="Process enforcement icon." border="false"::: | <br> **Enforce cloud governance policies**: Implement controls and procedures to align cloud use to the cloud governance policies. |
-| :::image type="icon" source="../media/business-risk.png" alt-text="Monitoring icon."::: |**Monitor cloud governance**: Configure monitoring solutions to track your compliance.|
-
-<!--update icon-->
-<!--For the following sections, update content.-->
-
-## Document cloud governance policies
+After you identify business risks, you must incorporate policies to mitigate them, regardless of the cloud platform that your organization uses. Healthy cloud governance strategy begins with sound corporate policy. 
 
 Corporate policies establish the requirements, standards, and goals that your IT staff and automated systems must align with. Individual policy statements are guidelines that you can use to address specific risks that you identify during your risk assessment process.
 
@@ -26,9 +14,29 @@ The following examples describe proper corporate policies that help guide adopti
 
   **Design consideration:** In Azure, the organization must tag all deployed assets with proper data classification levels. The cloud governance team and the application owner must review the classifications before deployment to the cloud.
 
-## Enforce cloud governance policies
+## Document cloud governance policies
 
-The cloud provides guardrails to help reduce human overhead due to recurring processes. The cloud can provide validation triggers based on implementation configuration. The following table outlines triggers and actions that can address the risks that concern the Tailwind Traders CIO:
+To effectively document your cloud governance policies:
+
+- **Define an approach to document your cloud governance policies**. Establish an approach for creating, maintaining, and updating the rules and guidelines that govern the use of cloud services. 
+
+- **Define your policies**. Include a policy ID, policy statement, risk ID, policy category, policy purpose, policy scope, and the remediation strategies for a policy violation.
+- **Distribute your policies**. Use a centralized policy repository, and create compliance checklists to inform everyone who needs to adhere to cloud governance policies.
+- **Review your policies**. Schedule regular and event-based reviews, implement feedback mechanisms, facilitate change control, and identify inefficiencies in cloud architecture and operations.
+
+## Align with cloud governance policies
+
+The cloud provides guardrails to help reduce human overhead due to recurring processes. You can use these guardrails to help align with the policies that you incorporate.
+
+Tailwind Traders incorporate new policies including:
+
+- Avoid overspending.
+
+- Fulfill all organizational security and compliance requirements.
+- Ensure that systems and data are secure.
+- Regularly test and validate processes to ensure that they remain consistent and effective.
+
+The following table outlines triggers and actions that can address the risks that concern the Tailwind Traders CIO. The actions align their organization with their new policies.
 
 | Risk | Sample trigger | Sample action |
 |-----------------------------|----------------|---------------|
@@ -45,4 +53,4 @@ You can use Azure governance tools to automate each of these triggers and action
 
 After you establish your cloud policy statements and draft a design guide, you need to create a strategy to ensure that your cloud deployment remains compliant with your policy requirements. This strategy must encompass your cloud governance team's ongoing review and communication processes and establish criteria for when policy violations require action. It must also define the requirements for automated monitoring and compliance systems that detect violations and trigger remediation actions.
 
-In the next unit, we'll group these types of risks into actionable cloud disciplines.
+In the next unit...

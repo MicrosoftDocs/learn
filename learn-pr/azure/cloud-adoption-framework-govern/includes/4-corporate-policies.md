@@ -2,6 +2,33 @@ Governance seeks to mitigate tangible risks through corporate policy. The polici
 
 Poor governance policies can create unnecessary constraints, and they might not provide protection. This unit describes how to create proper, actionable corporate policies.
 
+## Blocked by current policy
+
+Tailwind Traders has policies already in place. A current policy states that "Customer and financial data can only be hosted in a specific network segment of the *existing datacenters*, referred to as protected assets." The policy is problematic, because the business plans to move its on-premises datacenters to the cloud.
+
+Corporate policies are designed to instruct teams on the best way to address tangible risks that the organization deems intolerable. Corporate policies aren't designed to require a specific technical implementation.
+
+The CIO is working to change the policy, but the central operations and infrastructure team must apply the following controls before the CIO is comfortable approving policy changes:
+
+- Control costs to deliver on the promised savings as adoption scales
+
+- Adhere to security and third-party compliance requirements
+- Configure asset management to prepare all workloads to be ready for operations management
+- Apply and meet identity and access-management requirements
+- Follow a path to ensure that all these controls are consistently applied to all workloads while acknowledging the scale and learning curve challenges across the technology teams
+
+To give the CIO confidence that the team is ready to migrate more complex, higher-risk workloads to the cloud. They must demonstrate that these controls are in place. It also provides the required governance balance.
+
+Unfortunately, the governance requirement for the "existing datacenters" was discovered only as the team prepared to deploy its first mission-critical workload to production. The policy has frozen the effort to migrate the company's current datacenters. More foresight would have helped the team address this policy sooner as they moved lower-risk workloads to production.
+
+Currently, the governance policy hasn't affected the retail innovation team, and it has been delivering new innovations in the cloud faster than expected. However, the same challenges can block the following teams and efforts:
+
+- The application development teams are working in a dev/test capacity to learn about cloud-native capabilities.
+
+- The business intelligence team is experimenting with big data in the cloud and curing data on new platforms.
+
+The remaining units in this module demonstrate the Govern methodology's approach to meeting Tailwind Traders' governance needs, preferably in parallel to cloud-adoption efforts to avoid unexpected project interruptions.
+
 ## Assess cloud risks
 
 To effectively assess risks in the cloud:
@@ -48,39 +75,6 @@ Note that none of the concerns are related to "a specific network segment of the
 
 It's likely that deeper investigation of stakeholder concerns and the cloud adoption plan shows more risks that the organization can't tolerate. But for now, we have enough to start shaping governance policies that address these tangible risks.
 
-## Blocked by current policy
-
-A current policy at Tailwind Traders states that "Customer and financial data can only be hosted in a specific network segment of the *existing datacenters*, referred to as protected assets." The policy is problematic, as the business plans its move from primarily using on-premises datacenters to cloud datacenters.
-
-The CIO is working to change the policy, but the central operations and infrastructure team must apply the following controls before the CIO is comfortable approving policy changes:
-
-- Control costs to deliver on the promised savings as adoption scales
-
-- Adhere to security and third-party compliance requirements
-- Configure asset management to prepare all workloads to be ready for operations management
-- Apply and meet identity and access-management requirements
-- Follow a path to ensure that all these controls are consistently applied to all workloads while acknowledging the scale and learning curve challenges across the technology teams
-
-To give the CIO confidence that the team is ready to migrate more complex, higher-risk workloads to the cloud. They must demonstrate that these controls are in place. It also provides the required governance balance.
-
-Unfortunately, the governance requirement for the "existing datacenters" was discovered only as the team prepared to deploy its first mission-critical workload to production. The policy has frozen the effort to migrate the company's current datacenters. More foresight would have helped the team address this policy sooner as they moved lower-risk workloads to production.
-
-Currently, the governance policy hasn't affected the retail innovation team, and it has been delivering new innovations in the cloud faster than expected. However, the same challenges can block the following teams and efforts:
-
-- The application development teams are working in a dev/test capacity to learn about cloud-native capabilities.
-
-- The business intelligence team is experimenting with big data in the cloud and curing data on new platforms.
-
-The remaining units in this module demonstrate the Govern methodology's approach to meeting Tailwind Traders' governance needs, preferably in parallel to cloud-adoption efforts to avoid unexpected project interruptions.
-
-## Tailwind Traders' improper corporate policy
-
-What's wrong with Tailwind Traders' existing policy?
-
-Tailwind Traders' policy: *Customer and financial data can only be hosted in a specific network segment of the existing datacenters, referred to as protected assets.*
-
-Corporate policies are designed to instruct teams on the best way to address tangible risks that the organization deems intolerable. Corporate policies aren't designed to require a specific technical implementation.
-
 ## Evaluate existing corporate policy
 
 When you evaluate existing corporate policies to apply them to the cloud or to any other new technology, you should be able to answer the following questions:
@@ -93,4 +87,6 @@ When you evaluate existing corporate policies to apply them to the cloud or to a
 - How do you enforce this process? How often should you review the policy for applicability?
 - For technology-focused processes, does this policy create a dependency on a specific technology solution or technology vendor and add risk to your organization?
 
-In the next unit, you learn that the Tailwind Traders' policy on protected data fails to answer these questions. Other sources, such as policy handbooks, might address some of these questions. But Tailwind Traders doesn't have an answer for the final technology-focused question. The existing policy doesn't mitigate risks. It actually introduces long-term risks because it confines Tailwind Traders to a single solution.
+The Tailwind Traders' policy on protected data fails to answer these questions. Other sources, such as policy handbooks, might address some of these questions. But Tailwind Traders doesn't have an answer for the final technology-focused question. The existing policy doesn't mitigate risks. It actually introduces long-term risks because it confines Tailwind Traders to a single solution.
+
+<!--Change the second question here-->
