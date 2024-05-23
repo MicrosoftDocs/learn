@@ -4,7 +4,7 @@ title: Check your knowledge
 metadata:
   title: Check your knowledge
   description: Check your knowledge
-  ms.date: 03/31/2023
+  ms.date: 05/23/2024
   author: asajohnson
   ms.author: asjohnso
   ms.topic: unit
@@ -19,7 +19,7 @@ quiz:
       explanation: No. Inclusive design is concerned with delivering an experience that has mainstream appeal by creating solutions in an all-embracing manner.
     - content: Delivering an experience that has mainstream appeal by creating solutions in an all-embracing manner.
       isCorrect: true
-      explanation: That is the correct answer
+      explanation: That is the correct answer.
     - content: Inclusive design is the same as accessibility plus user experience work.
       isCorrect: false
       explanation: No. Inclusive design is concerned with delivering an experience that has mainstream appeal by creating solutions in an all-embracing manner.
@@ -44,20 +44,20 @@ quiz:
     choices:  
     - content: Perception
       isCorrect: false
-      explanation: No. The correct answer is Agility 
+      explanation: No. The correct answer is Agility .
     - content: Agility
       isCorrect: true
-      explanation: That is the correct answer
+      explanation: That is the correct answer.
     - content: Cognition
       isCorrect: false
-      explanation: No. The correct answer is Agility
+      explanation: No. The correct answer is Agility.
     - content: Hearing
       isCorrect: false
-      explanation: No. The correct answer is Agility
+      explanation: No. The correct answer is Agility.
     - content: Vision
       isCorrect: false
-      explanation: No. The correct answer is Agility
+      explanation: No. The correct answer is Agility.
     - content: Sensation
       isCorrect: false
-      explanation: No. The correct answer is Agility
+      explanation: No. The correct answer is Agility.
 
