@@ -116,9 +116,14 @@
       "redirect_document_id": false
     },
     {
-        "source_path": "understand-scalability-power-bi/4a-exercise-create-star-schema-model.yml",
-        "redirect_url": "/training/modules/understand-scalability-power-bi/",
-        "redirect_document_id": false
+      "source_path": "understand-scalability-power-bi/4a-exercise-create-star-schema-model.yml",
+      "redirect_url": "/training/modules/understand-scalability-power-bi/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "introduction-to-azure-ai-studio/4-azure-ai-projects.yml",
+      "redirect_url": "/training/modules/introduction-to-azure-ai-studio/",
+      "redirect_document_id": false
     }
   ]
 }

@@ -62,4 +62,3 @@ You also need to have that Bicep file you created earlier pushed into the Azure 
     
     :::image type="content" source="../media/azure-resource-group-bicep-b3c33069.jpg" alt-text="Screenshot of a resource group created by Bicep.":::
     
-

@@ -24,8 +24,11 @@ roles:
   - developer
   - solution-architect
 products: 
-  - dotnet-aspire
+  - dotnet
   - aspnet-core
+  - dotnet-aspire
+  - vs
+  - vs-code
 subjects: 
   - cross-development
   - backend-development
