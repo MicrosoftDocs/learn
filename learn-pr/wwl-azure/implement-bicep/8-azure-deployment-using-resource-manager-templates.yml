@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-bicep.azure-deployment-using-resource-manager-templates
+title: Deployments using Azure Bicep templates
+metadata:
+  title: Deployments using Azure Bicep templates
+  description: "Deployments using Azure Bicep templates"
+  ms.date: 05/23/2024
+  author: wwlpublish
+  ms.author: yasa
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 60
+content: |
+  [!include[](includes/8-azure-deployment-using-resource-manager-templates.md)]
