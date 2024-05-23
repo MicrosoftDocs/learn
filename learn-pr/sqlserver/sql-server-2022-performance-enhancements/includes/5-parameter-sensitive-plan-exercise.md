@@ -65,7 +65,7 @@ In this exercise, you evaluate the Parameter Sensitive Plan optimization. You cr
    GO
    ```
 
-1. Execute the following script from SSMS to ensure the `WideWorldImporters` database is at `dbcompat 150` and clear the query store.
+1. Run the following script from SSMS to ensure the `WideWorldImporters` database is at `dbcompat 150` and clear the query store.
 
     ```sql
     USE WideWorldImporters;
@@ -106,7 +106,7 @@ You want to understand what is happening in the Wide World Importers database. L
 
    The query plan uses an **Index Seek** shown in the screenshot. When this plan is within the procedure cache, the business unit reports that performance exceeds the service level agreement (SLA).
 
-1. In a different query window, run the following script to execute the stored procedure again. This time, it clears the procedure cache and uses a different supplier value.
+1. In a different query window, run the following script to run the stored procedure again. This time, it clears the procedure cache and uses a different supplier value.
 
     ```sql
     USE WideWorldImporters;
@@ -126,7 +126,7 @@ You want to understand what is happening in the Wide World Importers database. L
 
    :::image type="content" source="../media/parameter-senstive-plan-exercise-execute-stored-proc-execution-plan-index-scan.png" alt-text="Screenshot of SSMS with the execution plan of the GetStockItemsbySupplier stored procedure showing Clustered Index Scan.":::
 
-   When this query runs, the business unit reports that the query runs long. It's acceptable for the information being requested and meets the SLA. However, after the `EXEC Warehouse.GetStockItemsbySupplier 4` query runs, the business unit notices the query, `EXEC Warehouse.GetStockItemsbySupplier 2` executes slower than before and no longer meets the SLA agreement.
+   When this query runs, the business unit reports that the query runs long. It's acceptable for the information being requested and meets the SLA. However, after the `EXEC Warehouse.GetStockItemsbySupplier 4` query runs, the business unit notices the query, `EXEC Warehouse.GetStockItemsbySupplier 2` runs slower than before and no longer meets the SLA agreement.
 
 1. To see what's going on and work on identifying the issue, go back and run the first query in this exercise again.
 
@@ -140,7 +140,7 @@ You want to understand what is happening in the Wide World Importers database. L
     GO
     ```
 
-   You see that the query executes quickly, in less than 1 second. However, the timing from `SET STATISTICS TIME ON` is longer than the previous execution. Examine the messages recorded from setting statistics time to on. You can see a significant increase in **SQL Server Execution Times**.
+   You see that the query runs quickly, in less than 1 second. However, the timing from `SET STATISTICS TIME ON` is longer than the previous execution. Examine the messages recorded from setting statistics time to on. You can see a significant increase in **SQL Server Execution Times**.
 
    :::image type="content" source="../media/parameter-senstive-plan-exercise-execute-stored-proc-message-2.png" alt-text="Screenshot of SSMS with the output message of the GetStockItemsbySupplier stored procedure showing an increase in SQL Server Execution Times.":::
 
@@ -150,7 +150,7 @@ You want to understand what is happening in the Wide World Importers database. L
 
 ## Exercise - Workload problem for PSP
 
-1. Execute the following script to clear plan cache and query store. Remember that `dbcompat` is still set to 150.
+1. Run the following script to clear plan cache and query store. Remember that `dbcompat` is still set to 150.
 
     ```sql
     USE WideWorldImporters;
@@ -213,7 +213,9 @@ You want to understand what is happening in the Wide World Importers database. L
     GO
     ```
 
-   The differences in `supplier_count` explain why "one size doesn't fit all" for the stored procedure based on parameter values. The seek business process returns data for `SupplierID` 2, which when initially executed, the optimizer compiles a query plan that uses a clustered index seek. However, when you execute the scan business process, the optimizer compiles a query plan that uses a clustered index scan. This new plan is stored in the procedure cache and is the one used for future queries. When this happens, you can see by the above performance metrics the query doesn't scale for those `SupplierID`s with a lower supplier count due to the skew in the data. This parameter sensitivity, also known as *parameter sniffing*, would require attention of the database administrator and could require coding changes to ensure that the query scales when using parameters for `SupplierID`.
+   The differences in `supplier_count` explain why "one size doesn't fit all" for the stored procedure based on parameter values. The seek business process returns data for `SupplierID` 2, which when initially executed, the optimizer compiles a query plan that uses a clustered index seek. However, when you run the scan business process, the optimizer compiles a query plan that uses a clustered index scan. This new plan is stored in the procedure cache and is the one used for future queries.
+
+   When this situation happens, you can see by the above performance metrics the query doesn't scale for those `SupplierID`s with a lower supplier count due to the skew in the data. This parameter sensitivity, also known as *parameter sniffing*, would require attention of the database administrator and could require coding changes to ensure that the query scales when using parameters for `SupplierID`.
 
    :::image type="content" source="../media/parameter-senstive-plan-exercise-2-supplier-count.png" alt-text="Screenshot of SSMS after running the stored procedures in the exercise showing the differences in supplier_count.":::
 
@@ -236,7 +238,7 @@ SQL Server 2022 enhancements to PSP can solve the parameter sniffing problem obs
     GO
     ```
 
-1. Validate that the `WideWorldImporters` database is set to compatibility level 160 by executing the following T-SQL.
+1. Validate that the `WideWorldImporters` database is set to compatibility level 160 by running the following T-SQL.
 
     ```sql
     SELECT name, compatibility_level 
@@ -266,7 +268,7 @@ SQL Server 2022 enhancements to PSP can solve the parameter sniffing problem obs
 
    :::image type="content" source="../media/parameter-senstive-plan-exercise-3-query-store-top-resources-variant-2.png" alt-text="Screenshot of SSMS Query Store Top Resource Consuming Queries report showing the second variant of the query that we ran.":::
 
-1. Execute the following script to look at the Query Store plan. Look into the details of the results to see the query text is the same but slightly different with the option to use variants. You see that the `query_hash` is the same value.
+1. Run the following script to look at the Query Store plan. Look into the details of the results to see the query text is the same but slightly different with the option to use variants. You see that the `query_hash` is the same value.
 
     ```sql
     USE WideWorldImporters;
@@ -291,7 +293,7 @@ SQL Server 2022 enhancements to PSP can solve the parameter sniffing problem obs
 
    :::image type="content" source="../media/parameter-senstive-plan-exercise-3-same-query-hash.png" alt-text="Screenshot of SSMS showing the same query_hash for the query store plan.":::
 
-1. Execute the following script and observe the text of the query is from the stored procedure without variant options. This text is from the *parent plan*.
+1. Run the following script and observe the text of the query is from the stored procedure without variant options. This text is from the *parent plan*.
 
     ```sql
     USE WideWorldImporters;
@@ -309,7 +311,7 @@ SQL Server 2022 enhancements to PSP can solve the parameter sniffing problem obs
 
    :::image type="content" source="../media/parameter-senstive-plan-exercise-3-query-store-parent-plan.png" alt-text="Screenshot of SSMS showing the parent plan for the query store plan.":::
 
-1. Execute the following script. If you select the `dispatcher_plan` value, you see a graphical plan operator called **MULTIPLE PLAN**.
+1. Run the following script. If you select the `dispatcher_plan` value, you see a graphical plan operator called **MULTIPLE PLAN**.
 
     ```sql
     USE WideWorldImporters;
@@ -327,7 +329,7 @@ SQL Server 2022 enhancements to PSP can solve the parameter sniffing problem obs
 
    :::image type="content" source="../media/parameter-senstive-plan-exercise-3-query-store-multiple-plan.png" alt-text="Screenshot of SSMS showing the multiple plan for the query store plan.":::
 
-1. To find the parent stored procedure of the statements from variants, execute the following script. Scroll left and right on the results and see the `parent_query_id`, `query_variant_query_id`, `query_hash`, and other columns of interest.
+1. To find the parent stored procedure of the statements from variants, run the following script. Scroll left and right on the results and see the `parent_query_id`, `query_variant_query_id`, `query_hash`, and other columns of interest.
 
     ```sql
     USE [WideWorldImporters];

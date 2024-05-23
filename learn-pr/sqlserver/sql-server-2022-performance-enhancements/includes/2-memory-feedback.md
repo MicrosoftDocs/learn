@@ -53,7 +53,7 @@ ALTER DATABASE [WideWorldImportersDW] SET COMPATIBILITY_LEVEL = 140;
 
 Row mode memory grant feedback expands on the batch mode memory grant feedback feature. It adjusts memory grant sizes for both batch and row mode operators.
 
-To enable row mode memory grant feedback, enable database compatibility level 150 or higher for the database you're connected to when you execute the query.
+To enable row mode memory grant feedback, enable database compatibility level 150 or higher for the database you're connected to when you run the query.
 
 ```sql
 ALTER DATABASE [<database name>] SET COMPATIBILITY_LEVEL = 150;
@@ -63,7 +63,7 @@ As with batch mode memory grant feedback, row mode memory grant feedback activit
 
 Memory grant feedback doesn't require the Query Store. However, the persistence improvements introduced in SQL Server 2022 require the Query Store to be enabled for the database and in a `read write` state.
 
-Starting with row mode memory grant feedback, two new query plan attributes is shown for actual post-execution plans: `IsMemoryGrantFeedbackAdjusted` and `LastRequestedMemory`, which are added to the `MemoryGrantInfo` query plan XML element.
+Two new query plan attributes are shown for actual post-execution plans: `IsMemoryGrantFeedbackAdjusted` and `LastRequestedMemory`, which are added to the `MemoryGrantInfo` query plan XML element.
 
 - The `LastRequestedMemory` attribute shows the granted memory in kilobytes (KB) from the prior query execution.
 - The `IsMemoryGrantFeedbackAdjusted` attribute allows you to check the state of memory grant feedback for the statement within an actual query execution plan.

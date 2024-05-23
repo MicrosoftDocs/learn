@@ -9,11 +9,11 @@ ms.custom:
 >
 > Before you continue, make sure that you complete the prerequisites and setup.
 
-As your role of a database administrator for the World Wide Importers Corporation, you have concerns about using the right amount of parallelism for the business unit queries. Looking through the release notes, you find that SQL Server 2022 introduces a new feature called Degree Of Parallelism (DOP) feedback to find the parallel efficiency of a query.
+In your role as database administrator for the World Wide Importers Corporation, you want to use the right amount of parallelism for business unit queries. Looking through the release notes, you find that SQL Server 2022 introduces a new feature called Degree Of Parallelism (DOP) feedback to find the parallel efficiency of a query.
 
 In this exercise, you evaluate the Degree of Parallelism feedback feature in SQL Server 2022.
 
-Observe how this feature validates DOP values for an eligible query until the lowest possible DOP value is found that reduces CPU usage and achieves the *no harm* principle over time.
+Observe how this feature validates DOP values for an eligible query. It finds the lowest possible DOP value that reduces CPU usage and achieves the *no harm* principle over time.
 
 ## Prerequisites
 
@@ -53,7 +53,7 @@ Observe how this feature validates DOP values for an eligible query until the lo
 
 ## Exercise - DOP feedback
 
-1. Execute the following script in SSMS to configure MAXDOP to 0 for your SQL Server instance.
+1. Run the following script in SSMS to configure MAXDOP to 0 for your SQL Server instance.
 
     ```sql
     sp_configure 'show advanced', 1;
@@ -66,7 +66,7 @@ Observe how this feature validates DOP values for an eligible query until the lo
     go
     ```
 
-1. Execute the following script to create a stored procedure to query data that you use a query plan with parallelism.  
+1. Run the following script to create a stored procedure to query data that you use a query plan with parallelism.  
 
     ```sql
     USE WideWorldImporters;
@@ -84,7 +84,7 @@ Observe how this feature validates DOP values for an eligible query until the lo
 
 1. Create and run an XEvent session to watch live data and observe the events that get generated while the DOP feedback runs in the background.  
 
-   Execute the following script to create and start an XEvent session.
+   Run the following script to create and start an XEvent session.
 
     ```sql
     IF EXISTS (SELECT * FROM sys.server_event_sessions WHERE name = 'DOPFeedback')
@@ -114,7 +114,7 @@ Observe how this feature validates DOP values for an eligible query until the lo
 
    :::image type="content" source="../media/degree-of-parallelism-feedback-exercise-xevent-live-data.jpg" alt-text="Screenshot of SSMS Extended Events and selecting Watch Live Data.":::
   
-1. Execute the following script to set Query Store settings and database setting for DOP feedback.
+1. Run the following script to set Query Store settings and database setting for DOP feedback.
 
     ```sql
     USE WideWorldImporters;
@@ -189,7 +189,7 @@ Observe how this feature validates DOP values for an eligible query until the lo
     GO
     ```
 
-1. Examine the values in the `feedback_desc` field to see the `BaselineStats` and `LastGoodFeedback` values.  
+1. To see the `BaselineStats` and `LastGoodFeedback` values, examine the values in the `feedback_desc` field.
 
    :::image type="content" source="../media/degree-of-parallelism-feedback-exercise-query-store-plan-feedback.jpg" alt-text="Screenshot of SSMS Query Store plan feedback results.":::
 

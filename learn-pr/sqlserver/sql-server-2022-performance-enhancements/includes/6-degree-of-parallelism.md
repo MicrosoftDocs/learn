@@ -20,7 +20,7 @@ DOP feedback never increases the DOP. At best, DOP feedback reverts to a stable 
 
 A query is compiled with a Degree of Parallelism of 8. If DOP feedback detects a fair amount of wait times between threads and CPU overhead, it suggests a lower DOP, such as DOP of 6. On the next execution, the query executes with a DOP of 6. If the performance is better over the next several executions, the DOP of 6 is considered stabilized.
 
-However, DOP feedback might then determine that there are still too many waits and further attempt a DOP of 4. Again, several executions are used to verify the feedback. DOP feedback might then try a DOP of 2. If, after several executions the DOP 2, performance isn't determined to be better, the system returns to suggesting a DOP of 4 as the most recent, stable, and verified DOP.
+However, DOP feedback might then determine that there are still too many waits and further attempt a DOP of 4. Again, several executions are used to verify the feedback. DOP feedback might then try a DOP of 2. If after several executions the DOP 2, performance isn't determined to be better, the system returns to suggesting a DOP of 4 as the most recent, stable, and verified DOP.
 
 ## DOP feedback architecture
 

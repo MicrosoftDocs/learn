@@ -34,7 +34,7 @@ While the Query Store collects key performance information for queries, the quer
 
 ## Example scenario
 
-Imagine that you're a database administrator at the World Wide Importers Corporation. You oversee the adoption of SQL Server 2022. Some databases that you manage need to maintain their legacy compatibility mode of 140. Some can be upgraded to the current compatibility mode of 160. In each scenario, you need use the best practices when you apply the latest functionality available to optimize the performance of your systems.
+Imagine that you're a database administrator at the World Wide Importers Corporation. You oversee the adoption of SQL Server 2022. Some databases that you manage need to maintain their legacy compatibility mode of 140. Some can be upgraded to the current compatibility mode of 160. In each scenario, you need to use the best practices when you apply the latest functionality available to optimize the performance of your systems.
 
 To do this task, use the Intelligent Query Processing advancements in SQL Server 2022. Your goal is to implement these low-code to no-code changes.
 

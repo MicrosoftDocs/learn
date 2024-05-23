@@ -46,7 +46,7 @@ In this exercise, you learn how to see how memory grant feedback can improve que
    > [!IMPORTANT]
    > If you have permission issues to restore the backup, you can try to copy the backup into the default *data* folder for your SQL Server installation and try the restore again. You need to edit the restore script accordingly. The default for most instances is *C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\DATA*.
 
-1. Execute the following script from SSMS. This script ensures the `WideWorldImporters` database is at dbcompat 150 and clear the query store.
+1. Run the following script from SSMS. This script ensures the `WideWorldImporters` database is at `dbcompat 150` and clear the query store.
 
    ```sql
    USE [WideWorldImportersDW];
@@ -61,7 +61,7 @@ In this exercise, you learn how to see how memory grant feedback can improve que
 
 ## Exercise - Memory grant feedback
 
-1. In order to evaluate persisted memory grant feedback, first simulate creating an out of date statistics on a table. Execute the following script in SSMS.
+1. In order to evaluate persisted memory grant feedback, first simulate creating an out of date statistics on a table. Run the following script in SSMS.
 
     ```sql
     USE WideWorldImportersDW;
@@ -71,7 +71,7 @@ In this exercise, you learn how to see how memory grant feedback can improve que
     GO
     ```
 
-1. Now that the statistics are out of date, you can execute a query to determine the effect on performance. Execute the following script in SSMS. Before you run the script, make sure to include the actual execution plan. This script takes around 30 to 45 seconds to run.
+1. Now that the statistics are out of date, you can run a query to determine the effect on performance. Execute the following script in SSMS. Before you run the script, make sure to include the actual execution plan. This script takes around 30 to 45 seconds to run.
 
     ```sql
     USE WideWorldImportersDW;
@@ -97,15 +97,15 @@ In this exercise, you learn how to see how memory grant feedback can improve que
 
    :::image type="content" source="../media/memory-grant-query-plan-select-operator.png" alt-text="Screenshot of the execution plan in SSMS and hovering over the select operator.":::
 
-1. The Memory Grant for this query is around 1.4 MB. That is far short of the more than 400 MB that spilled to `tempdb`. Right-click on the `SELECT` operator and select properties.
+1. The Memory Grant for this query is around 1.4 MB. That value is far short of the more than 400 MB that spilled to `tempdb`. Right-click on the `SELECT` operator and select properties.
 
    :::image type="content" source="../media/memory-grant-query-plan-properties.png" alt-text="Screenshot of the execution plan in SSMS selecting properties for the select operator.":::
 
    :::image type="content" source="../media/memory-grant-query-plan-select-properties.png" alt-text="Screenshot of the execution plan select operator properties in SSMS.":::
 
-1. **IsMemoryGrangFeedbackAdjusted** has a value of `NoFirstExecution`. This value means no adjustment has been made because there's no feedback and the query was compiled. The *used* memory is only the memory used as part of the grant and doesn't account for the spill.
+1. **IsMemoryGrangFeedbackAdjusted** has a value of `NoFirstExecution`. This value means that the system made no adjustment because there's no feedback and the query was compiled. The *used* memory is only the memory used as part of the grant and doesn't account for the spill.
 
-1. You can query the Query Store in order to find information. Execute the following script in SSMS.
+1. You can query the Query Store in order to find information. Run the following script in SSMS.
 
     ```sql
     USE WideWorldImportersDW;
@@ -127,7 +127,7 @@ In this exercise, you learn how to see how memory grant feedback can improve que
 
    :::image type="content" source="../media/memory-grant-query-store-output.png" alt-text="Screenshot of the query store output in SSMS.":::
 
-1. Now that the Query Store has this feedback, execute the following script in SSMS.  
+1. Now that the Query Store has this feedback, run the following script in SSMS.  
 
     ```sql
     USE WideWorldImportersDW;
@@ -143,7 +143,7 @@ In this exercise, you learn how to see how memory grant feedback can improve que
 
    The query should run quicker than last time.
 
-1. After executing the query, see if you have any further feedback updates. Execute the following script in SSMS.
+1. After you run the query, see if you have any further feedback updates. Run the following script in SSMS.
 
     ```sql
     USE WideWorldImportersDW;
@@ -167,9 +167,9 @@ In this exercise, you learn how to see how memory grant feedback can improve que
 
 ## Exercise - Memory grant feedback persistence
 
-The SQL Server 2022 feature that you're reviewing is memory grant feedback persistence. After you test the memory grant, wtest the persistence.
+The SQL Server 2022 feature that you're reviewing is memory grant feedback persistence. After you test the memory grant, test the persistence.
 
-1. To test the persistence, clear the plan cache. In previous versions, clearing the plan cache lost the memory grant feedback. Execute the following script in SSMS.
+1. To test the persistence, clear the plan cache. In previous versions, clearing the plan cache lost the memory grant feedback. Run the following script in SSMS.
 
     ```sql
     USE [WideWorldImportersDW];
@@ -178,7 +178,7 @@ The SQL Server 2022 feature that you're reviewing is memory grant feedback persi
     GO
     ```
 
-1. Then execute the following script in SSMS.  
+1. Run the following script in SSMS.  
 
     ```sql
     USE WideWorldImportersDW;
