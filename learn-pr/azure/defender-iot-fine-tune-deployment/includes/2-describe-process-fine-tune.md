@@ -6,7 +6,7 @@ After fine tuning your sensor, the final stage is to create a baseline of alerts
 
 ## OT sensor deployment path
 
-The following diagram shows the complete Operational Technology (OT) deployment path, with the team responsible for each phase:
+The following diagram shows the complete operational technology (OT) deployment path, with the team responsible for each phase:
 
 :::image type="content" source="../media/2-ot-deploy.png" alt-text="Diagram of the complete OT deployment process." border="false":::
 

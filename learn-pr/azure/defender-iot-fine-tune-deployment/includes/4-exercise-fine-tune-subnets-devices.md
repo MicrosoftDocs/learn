@@ -1,4 +1,4 @@
-Your sensor now sends data to Microsoft Defender for IoT. You need to check that the devices are recognized and configured correctly in the Operational Technology (OT) sensor software. The sensor initially scans the entire network and tries to identify where all of the devices should be located within the Purdue levels.
+Your sensor now sends data to Microsoft Defender for IoT. You need to check that the devices are recognized and configured correctly in the operational technology (OT) sensor software. The sensor initially scans the entire network and tries to identify where all of the devices should be located within the Purdue levels.
 
 The following exercises show all of the stages of fine tuning your sensor. Depending on the data available in your system, you might only be able to do some of these exercises but not all of them.
 
@@ -88,7 +88,7 @@ Define the range of IP addresses for devices with an IP address allocated by a D
 
 ## Add DHCP address ranges
 
-For a device that automatically refreshes its IP address, add the DHCP address ranges for that device.
+For a device that automatically refreshes its IP address, add the  Dynamic Host Configuration Protocol (DHCP) address ranges for that device.
 
 1. Select **System setting** > **DHCP ranges**.
 1. Select **Add range**.

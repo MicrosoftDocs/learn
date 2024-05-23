@@ -1,4 +1,4 @@
-Data is now flowing from your sensor to Microsoft Defender for IoT. The Operational Technology (OT) monitoring software initially identifies the interfaces and device endpoints.
+Data is now flowing from your sensor to Microsoft Defender for IoT. The operational technology (OT) monitoring software initially identifies the interfaces and device endpoints.
 
 The OT sensor software analyzes your system and assigns subnet settings, including security settings, and attempts to understand the architecture of your system and fit each device into the Purdue model setup. However, it's possible that some of these subnet and device settings might not be correctly identified, so you need to check each one.
 
