@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.secure-data-warehouse-in-microsoft-fabric.implement-column-level-security
+title: Load data using T-SQL
+metadata:
+  title: Load data using T-SQL
+  description: "Learn the concept and how to implement column-level security in a data warehouse in Microsoft Fabric."
+  ms.date: 5/23/2024
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-implement-column-level-security.md)]

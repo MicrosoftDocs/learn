@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.secure-data-warehouse-in-microsoft-fabric.configure-sql-granular-permissions
+title: Load and transform data with Dataflow Gen2
+metadata:
+  title: Load and transform data with Dataflow Gen2
+  description: "Learn how to configure granular access to database objects in a data warehouse in Microsoft Fabric."
+  ms.date: 5/23/2024
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-configure-sql-granular-permissions.md)]
