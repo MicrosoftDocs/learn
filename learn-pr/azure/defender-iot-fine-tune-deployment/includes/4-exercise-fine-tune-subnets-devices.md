@@ -1,4 +1,5 @@
 Your sensor now sends data to Microsoft Defender for IoT. You need to check that the devices are recognized and configured correctly in the Operational Technology (OT) sensor software. The sensor initially scans the entire network and tries to identify where all of the devices should be located within the Purdue levels.
+
 The following exercises show all of the stages of fine tuning your sensor. Depending on the data available in your system, you might only be able to do some of these exercises but not all of them.
 
 ## View the subnets detected by your sensor
@@ -92,14 +93,16 @@ For a device that automatically refreshes its IP address, add the DHCP address r
 1. Select **System setting** > **DHCP ranges**.
 1. Select **Add range**.
 1. Type the IP address ranges.
+
+   :::image type="content" source="../media/4-dhcp-ranges.png" alt-text="Screenshot adding new DHCP ranges for changing IP addresses.":::
 1. Type a name.
 1. Select **Save**.
 
-:::image type="content" source="../media/4-dhcp-ranges.png" alt-text="Screenshot adding new DHCP ranges for changing IP addresses.":::
-
 ## Check your work
+
+Verify that the devices and subnets listed are accurate in the device inventory.
 
 1. Go to **Device inventory**.
 1. The list of devices and subnets is up to date and accurate.
 
-:::image type="content" source="../media/4-fine-tuned-list.png" alt-text="Screenshot of the device inventory after fine tuning.":::
+   :::image type="content" source="../media/4-fine-tuned-list.png" lightbox="../media/4-fine-tuned-list.png" alt-text="Screenshot of the device inventory after fine tuning.":::
