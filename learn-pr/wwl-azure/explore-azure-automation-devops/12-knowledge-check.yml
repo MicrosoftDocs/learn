@@ -4,13 +4,15 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/05/2023
+  ms.date: 05/23/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
-  [!include[](includes/13-knowledge-check.md)]
+  [!include[](includes/12-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -44,6 +46,6 @@ quiz:
     - content: "Param."
       isCorrect: false
       explanation: "Incorrect. When you create your workflow, begin with the workflow keyword, which identifies a workflow command to PowerShell."
-    - content: "workflow."
+    - content: "Workflow."
       isCorrect: true
       explanation: "Correct. When you create your workflow, begin with the workflow keyword, which identifies a workflow command to PowerShell."
