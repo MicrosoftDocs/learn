@@ -38565,6 +38565,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/security-ops-sentinel/index.yml",
+      "redirect_url": "/training/paths/sc-200-configure-azure-sentinel-environment/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/index.yml",
       "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
       "redirect_document_id": false
@@ -38772,6 +38777,36 @@
      {
     "source_path": "learn-pr/wwl-azure/implement-bicep/9-summary.md",
     "redirect_url": "/training/modules/implement-bicep/10-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/15-explore-best-practices-dp-100-learning-path-12.md",
+    "redirect_url": "/training/modules/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/16-bring-it-all-together.md",
+    "redirect_url": "/training/modules/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/15-bring-it-all-together",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/17-knowledge-check.md",
+    "redirect_url": "/training/modules/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/16-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/18-summary.md",
+    "redirect_url": "/training/modules/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/17-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/describe-pipelines-concurrency/7-knowledge-check.md",
+    "redirect_url": "/training/modules/describe-pipelines-concurrency/8-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/describe-pipelines-concurrency/8-summary.md",
+    "redirect_url": "/training/modules/describe-pipelines-concurrency/9-summary",
     "redirect_document_id": false
     }
   ]
