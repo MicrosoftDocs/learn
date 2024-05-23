@@ -10,6 +10,6 @@ metadata:
   ms.author: viniap
   ms.topic: unit
   ms.custom: team=cloud_advocates
-durationInMinutes: 10
+durationInMinutes: 2
 content: |
   [!include[](includes/2-what-is-azure-cloud-shell.md)]

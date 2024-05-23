@@ -3303,3 +3303,63 @@ achievements:
   title: Responding to Data Subject Requests (DSRs)
   summary: Know, understand, and be able to describe Data Subject Requests (DSRs), and learn how to manage DSRs on Azure and Microsoft 365.
   iconUrl: /training/achievements/azure-data-subject-requests.svg
+- uid: learn.cela-disability-intro.badge
+  type: badge
+  title: Introduction to disability and accessibility
+  summary: This module presents the core ideas and definitions needed to understand accessibility concepts. You'll learn what accessibility means, how to be respectful and inclusive of people of all abilities, and why it's important for technology and materials to be accessible to everyone.
+  iconUrl: /training/achievements/accessibility-features.svg
+- uid: learn.azure-cosmos-db-for-postgresql.trophy
+  type: trophy
+  title: Azure Cosmos DB for PostgreSQL
+  summary: Azure Cosmos DB for PostgreSQL provides a highly scalable distributed relational database solution, reliably and securely managed on Azure. In these modules, learn how to effectively model data for distributed tables, efficiently ingest and query data by using distributed tables, use extensions to bundle multiple related SQL objects together, and design for a global scale and availability.
+  iconUrl: /learn/achievements/generic-trophy.svg
+- uid: learn.model-data-azure-cosmos-db-postgresql.badge
+  type: badge
+  title: Model data for Azure Cosmos DB for PostgreSQL
+  summary: In this module, you'll learn how to model, build, and alter a scalable, distributed, relational database in Azure Cosmos DB for PostgreSQL.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.ingest-query-data-using-azure-cosmos-db-postgresql.badge
+  type: badge
+  title: Ingest and query data using Azure Cosmos DB for PostgreSQL
+  summary: Understand how data is distributed across Azure Cosmos DB for PostgreSQL to efficiently ingest and query data across the cluster.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.extend-functionality-of-azure-cosmos-db-postgresql-using-extensions.badge
+  type: badge
+  title: Extend the functionality of Azure Cosmos DB for PostgreSQL using extensions
+  summary: Use PostgreSQL extensions to enhance and extend the functionality of Azure Cosmos DB for PostgreSQL. PostgreSQL allows you to extend the functionality of a database by using extensions. Extensions allow for bundling multiple related SQL objects together in a single package that can be loaded or removed from the database with a single command. After being loaded in the database, extensions can function like built-in features.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.manage-performance-availability-azure-cosmos-db-postgresql.badge
+  type: badge
+  title: Manage performance and availability in Azure Cosmos DB for PostgreSQL
+  summary: Azure Cosmos DB for PostgreSQL provides a highly scalable distributed database solution, reliably and securely managed on Azure. Scaled resources, read replication, and data availability can be managed to improve performance in Azure Cosmos DB for PostgreSQL.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.badge
+  type: badge
+  title: Scale from a single node to multiple nodes by using Azure Cosmos DB for PostgreSQL
+  summary: Azure Cosmos DB for PostgreSQL can scale from a single-node, nondistributed cluster to a multi-node, distributed cluster with minimal downtime. When you start with small amounts of data, it makes sense to start with a single node. But as time goes on, data needs to scale for growth. By understanding the process of going from a single-node cluster to a multi-node cluster, you can grow your data by using Azure Cosmos DB for PostgreSQL.
+  iconUrl: /learn/achievements/intro-to-hyperscale.svg
+- uid: learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.badge
+  type: badge
+  title: Design multitenant SaaS apps by using Azure Cosmos DB for PostgreSQL
+  summary: Azure Cosmos DB for PostgreSQL provides a powerful data platform for multitenant software as a service (SaaS) applications. Starting from a single-node instance, a multitenant database can be horizontally scaled to a multi-node distributed cluster of up to 20 servers to meet the demands of tenant growth.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.accessible-content-m365.badge
+  type: badge
+  title: Creating accessible content with Microsoft 365
+  summary: This module shows you how to create content with Microsoft 365 in a way that enables greater accessibility.
+  iconUrl: /training/achievements/accessible-content-m365.svg
+- uid: learn.digital-accessibility.badge
+  type: badge
+  title: Digital accessibility
+  summary: This module shows how to create accessible and inclusive content for mobile apps and the web.
+  iconUrl: /training/achievements/digital-accessibility.svg
+- uid: learn.accessibility-features.badge
+  type: badge
+  title: Microsoft Accessibility Features and Tools
+  summary: This module highlights how to find and use key accessibility features and tools built into Microsoft products such as Windows 10, Microsoft PowerPoint, and Microsoft Translator.
+  iconUrl: /training/achievements/accessibility-features.svg
+- uid: learn.azure.azure-sentinel-deploy-connect.badge
+  type: badge
+  title: Deploy Microsoft Sentinel and connect data sources
+  summary: In this course you'll learn how to deploy Microsoft Sentinel and connect it to data sources. You'll also learn how to use Azure and AI to provide analysis of security alerts.
+  iconUrl:  /training/achievements/deploy-azure-sentinel-and-connect-data-sources.svg

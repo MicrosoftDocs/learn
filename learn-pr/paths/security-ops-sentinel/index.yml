@@ -31,7 +31,7 @@ subjects:
 - cloud-security
 modules:
 - learn.intro-to-azure-sentinel
-- learn.azure.azure-sentinel-deploy-connect
+# - learn.azure.azure-sentinel-deploy-connect
 - learn.azure.analyze-data-in-sentinel
 - learn.azure.incident-management-sentinel
 - learn.azure.hunt-threats-sentinel

@@ -4,10 +4,12 @@ title: Create an initiative definition
 metadata:
   title: Create an initiative definition
   description: "Create an initiative definition"
-  ms.date: 11/16/2023
+  ms.date: 05/20/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/6-create-initiative-definitions.md)]

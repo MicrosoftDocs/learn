@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generate-documentation-using-github-copilot-tools.examine-explain-document-features-github-copilot
+title: Examine the "document" and "explain" features of GitHub Copilot Chat
+metadata:
+  title: Examine the "document" and "explain" features of GitHub Copilot Chat
+  description: "Examine the \"document\" and \"explain\" features of GitHub Copilot Chat"
+  ms.date: 05/16/2024
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-examine-explain-document-features-github-copilot.md)]

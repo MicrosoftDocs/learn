@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.wwl.automate-azure-load-testing-github
+metadata:
+  title: Automate Azure Load Testing by using GitHub
+  description: Learn how to implement GitHub Actions and configure Azure Load Testing to automate testing app deployments.
+  ms.date: 05/09/2024
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: learning-path
+title: Automate Azure Load Testing by using GitHub
+prerequisites: |
+  -   Experience with GitHub and an understanding of pull requests, code merges, and other repository management practices.
+  -   Experience creating resources in Azure.
+summary: |
+  Learn how to implement GitHub Actions and configure Azure Load Testing to automate testing app deployments.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- github
+- azure-load-testing
+subjects:
+- automation
+modules:
+- learn.wwl.implement-github-actions
+- learn.wwl.implement-github-actions-azure
+- learn.wwl.implement-azure-load-testing
+trophy:
+  uid: learn.wwl.automate-azure-load-testing-github.trophy

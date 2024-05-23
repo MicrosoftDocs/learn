@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.advanced-github-copilot.applied-copilot-techniques
+
+title: Applied GitHub Copilot techniques
+
+metadata:
+  title: Applied GitHub Copilot techniques
+
+  description: "Use GitHub Copilot to update a Python project. Update the Python API and use GitHub Copilot to suggest additions for new endpoints."
+  ms.date: 5/10/2024
+  author: abrilurena
+  ms.author: abrilu
+  ms.topic: unit
+  ms.custom: devx-track-python
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-applied-copilot-techniques.md)]
