@@ -10,7 +10,7 @@
 
 ### Content/Media/assets
 - [X] Remove locale from urls
-- [] Final images/screenshots are present
+- [X] Final images/screenshots are present
 - [X] Badge images are present
 - [X] Verify Acrolinx score for all content (score > 80)
 
