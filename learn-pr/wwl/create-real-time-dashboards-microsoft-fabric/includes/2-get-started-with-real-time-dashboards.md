@@ -6,7 +6,7 @@ The Real-Time Dashboard is integrated within a workspace environment. Whenever y
 
 ![Screenshot of Edit and View reports.](../media/edit-view-real-time-dashboard.png)
 
-To ***create*** a new report, you navigate to the Real-Time Intelligence section of Power BI and when presented with the ***New*** selection list, select the Real-Time Dashboard button. You can also select the ***Create*** button ![This is a create button image to create a new object](../media/create-button.png) on the left side of the canvas and then scroll in the various services, then select the Real-Time Dashboard card.
+To ***create*** a new report, you navigate to the Real-Time Intelligence section of Power BI and when presented with the ***New*** selection list, select the Real-Time Dashboard button. You can also select the ***Create*** button ![Screenshot of create button to create a new object.](../media/create-button.png) on the left side of the canvas and then scroll in the various services, then select the Real-Time Dashboard card.
 
 ![Screenshot of Create Tool Bar in RTI.](../media/real-time-intelligence-services.png)
 
@@ -18,7 +18,7 @@ The next step is to connect to a data source to query data from. In this context
 
 ![Screenshot of Data sources.](../media/data-source.png)
 
-Once you have filled out the properties for the appropriate source, select ***Create***
+Once you have filled out the properties for the appropriate source, select ***Create***.
 
 ### Add a Tile to the Dashboard
 
@@ -26,11 +26,11 @@ Dashboard tiles are designed to utilize snippets from the Kusto Query Language t
 
 1. Either select on the dashboard within the canvas, or choose ***New text tile*** or ***New tile*** from the menu bar located at the top of the canvas to add a new tile.
 1. In the ***Query pane***
-    1. Select the data source created earlier
+    1. Select the data source created earlier.
     1. Enter or type your query and then select ***Run***.
-    1. Select the ***+ Add visual***
+    1. Select the ***+ Add visual***.
 
-    ![Screenshot of Adding a tile to the dashboard.](../media/adding-tile.png)
+    ![Screenshot of Adding a tile to the dashboard.](../media/add-tile.png)
 
 1. We can now add a visual by going into the ***Visual formatting tab*** by selecting ***Add visual***.
 
@@ -38,8 +38,8 @@ Dashboard tiles are designed to utilize snippets from the Kusto Query Language t
     > The query was modified in this example to make it more user friendly. 
 
      
-    ![Screenshot of Adding a visual for the tile based on KQL query.](../media/adding-visual.png)
+    ![Screenshot of Adding a visual for the tile based on KQL query.](../media/add-visual.png)
 
 1. When you're happy with the visualization and the formatting of it, select ***Apply Changes*** to add more visualizations, adjust its size, or rearrange your visualization on the canvas.
 
-    ![Screenshot of Viewing the visualization when completed.](../media/adjust-visual-on-canvas.png)
+    ![Screenshot of Viewing the visualization when completed.](../media/adjust-visual-canvas.png)

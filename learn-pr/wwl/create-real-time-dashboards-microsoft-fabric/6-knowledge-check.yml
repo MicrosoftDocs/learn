@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/22/2024
+  ms.date: 05/23/2024
   author: wwlpublish
   ms.author: jamesh
   ms.topic: unit
@@ -12,7 +12,7 @@ metadata:
   - N/A
 durationInMinutes: 5
 quiz:
-  title: ""
+  title: "Check your knowledge"
   questions:
   - content: "What is the first step in creating a new Real-Time Dashboard in Microsoft Fabric?"
     choices:
