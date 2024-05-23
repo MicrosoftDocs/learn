@@ -39,6 +39,6 @@ modules:
   - learn.defender-iot-prepare-deployment
   - learn.onboard-sensor-microsoft-defender-iot
   - learn.defender-iot-deploy-sensor
-  #- learn.defender-iot-fine-tune-deployment
+  - learn.defender-iot-fine-tune-deployment
 trophy:
   uid: learn.defender-iot-deploy-ot-monitoring.trophy
