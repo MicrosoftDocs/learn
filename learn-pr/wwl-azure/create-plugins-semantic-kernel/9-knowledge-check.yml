@@ -4,10 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Check your knowledge"
-  ms.date: 02/27/2024
+  ms.date: 04/30/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"

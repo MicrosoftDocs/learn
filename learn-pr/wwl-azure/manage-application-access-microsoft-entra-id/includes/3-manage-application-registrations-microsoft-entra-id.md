@@ -1,13 +1,12 @@
 When you register a new application in Microsoft Entra ID, a service principal is automatically created for the app registration. The service principal is the app's identity in the Microsoft Entra tenant. Access to resources is restricted by the roles assigned to the service principal, giving you control over which resources can be accessed and at which level. For security reasons, it's always recommended to use service principals with automated tools rather than allowing them to sign in with a user identity.
 
-> [!IMPORTANT]
-> *Instead of creating a service principal, consider using managed identities for Azure resources for your application identity. If your code runs on a service that supports managed identities and accesses resources that support Microsoft Entra authentication, managed identities are a better option for you.*
+Instead of creating a service principal, consider using managed identities for Azure resources for your application identity. If your code runs on a service that supports managed identities and accesses resources that support Microsoft Entra authentication, managed identities are a better option for you. To learn more about managed identities for Azure resources, including which services currently support it, see [What is managed identities for Azure resources?](/entra/identity/managed-identities-azure-resources/overview).
 
 ## Prerequisites
 
 To register an application in your Microsoft Entra tenant, you need:
 
-A Microsoft Entra user account. If you don't already have one, you can create an account for free.
+ -  A Microsoft Entra user account. If you don't already have one, you can [create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 
 ## Permissions required for registering an app
 
@@ -15,20 +14,20 @@ You must have sufficient permissions to register an application with your Micros
 
 ## Register an application with Microsoft Entra ID and create a service principal
 
-1. Sign in to the Microsoft Entra admin center as at least a Cloud Application Administrator.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as at least a [Cloud Application Administrator](/entra/identity/role-based-access-control/permissions-reference#cloud-application-administrator).
 
-2. Browse to **Identity**, **Applications**, **App registrations** then select **New registration**.<br>
+2. Browse to **Identity** &gt; **Applications** &gt; **App registrations** then select **New registration**.
 
-3. Name the application, for example "example-app".<br>
+3. Name the application, for example "example-app".
 
-4. Select a supported account type, which determines who can use the application.<br>
+4. Select a supported account type, which determines who can use the application.
 
-5. Under **Redirect URI**, select **Web** for the type of application you want to create. Enter the URI where the access token is sent to.<br>
+5. Under **Redirect URI**, select **Web** for the type of application you want to create. Enter the URI where the access token is sent to.
 
 6. Select **Register**.
 
 :::image type="content" source="../media/create-application-411da6f3.png" alt-text="Screenshot showing how to register an application in the Microsoft Entra administration center.":::
-
+<br>
 
 You've created your Microsoft Entra application and service principal.<br>
 
@@ -38,7 +37,7 @@ To access resources in your subscription, you must assign a role to the applicat
 
 You can set the scope at the level of the subscription, resource group, or resource. Permissions are inherited to lower levels of scope.
 
-1. Sign in to the Azure portal.
+1. Sign in to the [Azure portal](https://portal.azure.com/)
 
 2. Select the level of scope you wish to assign the application to. For example, to assign a role at the subscription scope, search for and select **Subscriptions**. If you don't see the subscription you're looking for, select **global subscriptions filter**. Make sure the subscription you want is selected for the tenant.
 
@@ -148,7 +147,7 @@ You might need to configure extra permissions on resources that your application
 
 To configure access policies:
 
-1. Sign in to the Azure portal.
+1. Sign in to the [Azure portal](https://portal.azure.com/).
 
 2. Select your key vault and select **Access policies**.
 

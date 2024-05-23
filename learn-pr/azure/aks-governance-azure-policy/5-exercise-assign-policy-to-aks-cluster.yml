@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-governance-azure-policy.exercise-assign-policy-to-aks-cluster
-title: Exercise - Assign a policy to an AKS Cluster
+title: Exercise - Assign a policy to an Azure Kubernetes Services Cluster
 metadata:
   title: Exercise - Assign a policy to an Azure Kubernetes Services Cluster
-  description: Exercise to assign a policy to an AKS cluster
-  ms.date: 01/11/2024
+  description: Exercise to assign a policy to an Azure Kubernetes Services (AKS) cluster.
+  ms.date: 04/22/2024
   author: mosabami
   ms.author: aayodeji
   ms.topic: unit

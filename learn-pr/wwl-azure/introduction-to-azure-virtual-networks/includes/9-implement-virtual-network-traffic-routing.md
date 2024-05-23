@@ -311,22 +311,4 @@ Steps you might take to resolve the routing problem might include:
 3. Ensure that the route table is associated to the correct subnet (the one that contains the network interface). Learn how to [associate a route table to a subnet](/azure/virtual-network/manage-route-table).
 4. Ensure that devices such as Azure VPN gateway or network virtual appliances you've deployed are operating as intended.
 
-## Check your knowledge
-
-Choose the best response for each of the questions below. When you're done, select **Check your answers**.
-
-## quiz title
-
-## Multiple Choice
-
-What type of routes enable traffic to override routes that Azure configures?
-(x) User-defined routes (UDR) {{Correct, you can create custom user-defined routes in Azure to override Azure's default system routes, or to add additional routes to a subnet's route table.}}
-( ) System routes {{Incorrect, Azure automatically creates system routes and assigns the routes to each subnet in a virtual network. You can't create system or remove routes.}}
-( ) Default routes {{Incorrect, to enable basic routing functionality, Azure automatically creates default system routes for each subnet within the virtual network.}}
-
-## Multiple Choice
-
-A VNet is experiencing some routing problems. What would an engineer do to begin to diagnose the problem?
-( ) Configure every resource with a static IP address. {{Incorrect, this would not provide the solution to the existing problems and would be extremely time consuming.}}
-(x) View the effective routes for each NIC. (UDR) {{Correct, you can use Azure portal, Azure CLI, or Azure PowerShell to view the Effective Routes for each NIC. This tells you the routes that the NIC can use to communicate with other resources.}}
-( ) Use forced tunneling to control traffic flow. {{Incorrect, forced tunneling is used to force all Internet-bound traffic back to your on-premises location via a Site-to-Site VPN tunnel for inspection and auditing. It's not helpful for initial problem diagnosis.}}
+Choose the best response for each of the questions below. Then select **Check your answers**.

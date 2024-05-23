@@ -2,7 +2,7 @@
 uid: learn.security-copilot-embedded-experiences
 metadata:
   title: Describe the embedded experiences of Microsoft Copilot for Security
-  description: "Microsoft Copilot for Security is accessible directly from some Microsoft security products, this is referred to the embedded experience. Learn about the scenarios supported by the Copilot embedded experience in Microsoft’s security solutions."
+  description: "Microsoft Copilot for Security is accessible directly from some Microsoft security products. This is referred to the embedded experience. Learn about the scenarios supported by the Copilot embedded experience in Microsoft’s security solutions."
   ms.date: 03/12/2024
   author: wwlpublish
   ms.author: ceperezb
@@ -11,18 +11,20 @@ metadata:
   ai-usage: ai-assisted
 title: Describe the embedded experiences of Microsoft Copilot for Security
 summary: |
-  Microsoft Copilot for Security is accessible directly from some Microsoft security products, this is referred to as the embedded experience. Learn about the scenarios supported by the Copilot embedded experience in Microsoft’s security solutions.
+  Microsoft Copilot for Security is accessible directly from some Microsoft security products. This is referred to as the embedded experience. Learn about the scenarios supported by the Copilot embedded experience in Microsoft’s security solutions.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
   - Describe Microsoft Copilot in Microsoft Defender XDR.
   - Describe Microsoft Copilot in Microsoft Purview.
   - Describe Microsoft Copilot in Microsoft Entra.
+  - Describe Microsoft Copilot in Microsoft Intune.
 prerequisites: |
   - Working knowledge of security operations and incident response
   - Working knowledge of Microsoft Defender for XDR
   - Working knowledge of Microsoft Purview
   - Working knowledge of Microsoft Entra
-iconUrl: /learn/achievements/generic-badge.svg
+  - Working knowledge of Microsoft Intune
+iconUrl: /learn/achievements/security-copilot-embedded-experiences.svg
 hidden: false
 levels: 
   - beginner
@@ -41,6 +43,7 @@ units:
 - learn.security-copilot-embedded-experiences.copilot-for-defender
 - learn.security-copilot-embedded-experiences.copilot-for-purview
 - learn.security-copilot-embedded-experiences.copilot-for-entra
+- learn.security-copilot-embedded-experiences.copilot-for-intune
 - learn.security-copilot-embedded-experiences.knowledge-check
 - learn.security-copilot-embedded-experiences.summary
 badge:

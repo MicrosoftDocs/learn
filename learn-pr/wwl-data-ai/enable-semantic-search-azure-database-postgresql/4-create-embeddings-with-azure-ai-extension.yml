@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enable-semantic-search-azure-database-postgresql.create-embeddings-with-azure-ai-extension
+title: Create embeddings with the Azure AI extension
+metadata:
+  title: Create embeddings with the Azure AI extension
+  description: "Create embeddings with the Azure AI extension"
+  ms.date: 04/29/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-create-embeddings-with-azure-ai-extension.md)]

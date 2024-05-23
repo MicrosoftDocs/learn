@@ -1,6 +1,3 @@
-
-
-
 Azure Virtual Desktop, a cloud-based desktop and app virtualization service on Microsoft Azure, offers access to remote desktops and apps across various devices, including Windows, Mac, iOS, Android, and Linux. It also supports most modern browsers for accessing experiences hosted on Azure Virtual Desktop.
 ## Optimal User Experience 
 

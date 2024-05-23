@@ -1,10 +1,12 @@
-The Azure Quantum portal includes a notebook gallery with sample notebooks You can use these notebooks to run your own quantum programs.
 
-## Prerequisites
 
-- An Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=academic-15963-cxa) before you begin.
+## Have an Azure subscription
+
+To access Azure portal you need an Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=academic-15963-cxa) before you begin.
 
 ## Create a quantum workspace
+
+A quantum workspace is a container for your quantum programs and resources. If you want to run quantum programs using Azure Quantum, you need to create a quantum workspace.
 
 1. Sign in to the [Azure portal](https://portal.azure.com), using the credentials for your Azure subscription.
 1. Select **Create a resource** and then search for **Azure Quantum**. On the results page, you should see a tile for the **Azure Quantum** service.
@@ -14,83 +16,53 @@ The Azure Quantum portal includes a notebook gallery with sample notebooks You c
 1. Enter a **name** and select the **region** for the workspace.
 1. Select **Create**. 
 
-Deployment of your workspace may take a few minutes. The status and deployment details will be updated in the portal.
+> [!NOTE]
+> Deployment of your workspace may take a few minutes. The status and deployment details will be updated in the portal.
+
+
+## Manage your quantum workspace
+
+The Azure portal allows you to manage your quantum workspace. You can view the details of your workspace, manage your Azure Quantum credits, list your quantum jobs, see the status of the quantum computing providers you have selected, and more.
+
+For example, the following steps show you how to view your workspace details and check your Azure Quantum credits.
+
+### Retrieve your workspace details
+
+For some tasks like connecting to your Azure Quantum workspace, you may need you quantum workspace details, such as the resource ID and the location. 
+
+1. Select your Azure Quantum workspace in the [Azure portal](https://portal.azure.com).
+1. Select **Overview** in the left pane.
+1. The details of your workspace are displayed. For example, you can find the **Resource ID** and the **Location** of your workspace here.
+
+    :::image type="content" source="../media/azure-portal-workspace-overview.png" alt-text="Screenshot of Azure portal showing how to review your workspace details.":::
+
+### View your Azure Quantum credits
+
+When you create an Azure Quantum workspace for the first time, you get **free USD500 in Azure Quantum Credits** for use in each of the quantum computing providers. 
+
+You can check your remaining Azure Quantum credits in the Azure portal.
+
+1. Select your Azure Quantum workspace in the [Azure portal](https://portal.azure.com).
+1. Select **Credits and Quotas** in the left pane.
+1. Your remaining credits are displayed in the **Credits** section. You can check the remaining credits for each of the quantum computing providers you have selected for your workspace.
+
+    :::image type="content" source="../media/azure-portal-credits-quotas.png" alt-text="Screenshot of Azure portal showing how to review the remaining credits for your workspace.":::
 
 ## Run a quantum program using Azure Quantum notebooks
 
-
-### Create a notebook
+The Azure Quantum portal includes a notebook gallery with sample notebooks You can use these notebooks to run your own quantum programs.
 
 1. Select your Azure Quantum workspace in the [Azure portal](https://portal.azure.com).
-1. Select **Notebooks**.
-1. Click **My Notebooks** and click **Add New**.
-1. Type a name for the file, for example *submit-quantum-job.ipynb*, and click **Create file**.
-1. The notebook can be found under **My notebooks** and you can now run the notebook.
+1. Select **Notebooks**, and then select **Sample gallery**.
+1. You can select any sample notebook. For example, select **Hello, world: Q#**. You can choose the provider you want to use for running the notebook, for example, **IonQ**. 
+1. Click on **Copy to my notebooks**.
 
-### Connect to your Azure Quantum workspace
+    :::image type="content" source="../media/azure-portal-sample-gallery.png" alt-text="Screenshot of the Azure portal showing how to select a sample notebook from the sample gallery.":::
 
-To connect to the Azure Quantum service, your need the resource ID and the location of your Azure Quantum workspace. You can find this values in the **Overview** section of your workspace in the Azure portal.
+1. The notebook can be found under **My notebooks**. 
+1. Open the notebook and click on **Run all** to run the quantum program.
 
-Copy the following code in a new cell in your notebook and replace the values for `resource_id` and `location` with the values for your workspace.
 
-```python
 
-import azure.quantum
-
-workspace = Workspace ( 
-    resource_id = "", # Add your resource_id 
-    location = ""  # Add your workspace location (for example, "westus") 
-)
-```
-
-### Write a Q# operation
-
-1. First, you need to import the `qsharp` package to enable the "%%qsharp" magic command used in later cells. Add the following code in a new cell in your notebook.
-
-    ```python
-    import qsharp
-    ```
-
-1. Copy the following code in a new cell in your notebook. This code defines a Q# operation that generates a random bit using the `%%qsharp` 'magic' command.
-
-    ```python
-    %%qsharp
-    
-    operation Random() : Result {
-        use q = Qubit();
-        H(q);
-        let result = M(q);
-        Reset(q);
-        return result
-    }
-    
-    operation RandomNBits(N: Int): Result[] {
-        mutable results = [];
-        for i in 0 .. N - 1 {
-            let r = Random();
-            set results += [r];
-        }
-        return results
-    }
-    ```
-
-    - The operation `Random` uses the `H` gate to put a qubit in a superposition of `0` and `1`, then measures the qubit to get a random bit. The `Reset` operation resets the qubit to the `|0⟩` state.
-    - The operation `RandomNBits` takes an integer `N` as input and returns an array of `N` random bits.
-
-### Run the Q# operation
-
-1. Add the following code in a new cell in your notebook to run the `RandomNBits` operation for 100 shots against the Rigetti simulator.
-
-    ```python
-    operation = qsharp.compile("RandomNBits(4)")
-    target = workspace.get_targets("rigetti.sim.qvm")
-    job = target.submit(operation, "my-azure-quantum-job", input_params={ "count": 100 })
-    
-    # Wait for the job to complete
-    job.get_results()
-    ```
-
-1. To run the full program from top to bottom, select **Run all**.
-1. To walk through the example and run each cell individually from top to bottom, select the cell you want to run and select the **run icon**.
 
 

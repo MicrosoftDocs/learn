@@ -10,3 +10,5 @@ metadata:
   ms.author: aastewar
   ms.topic: unit
 durationInMinutes: 8 # user input: the estimate time to complete the unit
+content: |
+    [!include[](includes/5-code-scanning-codeql.md)]

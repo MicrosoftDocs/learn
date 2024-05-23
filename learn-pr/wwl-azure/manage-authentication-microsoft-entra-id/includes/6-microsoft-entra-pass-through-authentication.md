@@ -9,27 +9,27 @@ You can combine Pass-through Authentication with the Seamless single sign-on fea
 
 ## Key benefits of using Microsoft Entra pass-through authentication
 
- -  *Great user experience*
+ -  Great user experience
      -  Users use the same passwords to sign into both on-premises and cloud-based applications.
      -  Users spend less time talking to the IT helpdesk resolving password-related issues.
      -  Users can complete self-service password management tasks in the cloud.
- -  *Easy to deploy & administer*
+ -  Easy to deploy & administer
      -  No need for complex on-premises deployments or network configuration.
      -  Needs just a lightweight agent to be installed on-premises.
      -  No management overhead. The agent automatically receives improvements and bug fixes.
- -  *Secure*
+ -  Secure
      -  On-premises passwords are never stored in the cloud in any form.
-     -  Protects your user accounts by working seamlessly with Microsoft Entra Conditional Access policies, including Multi-Factor Authentication (MFA), blocking legacy authentication and by filtering out brute force password attacks.
+     -  Protects your user accounts by working seamlessly with Microsoft Entra Conditional Access policies, including multifactor authentication (MFA), blocking legacy authentication and by filtering out brute force password attacks.
      -  The agent only makes outbound connections from within your network. Therefore, there is no requirement to install the agent in a perimeter network, also known as a DMZ.
      -  The communication between an agent and Microsoft Entra ID is secured using certificate-based authentication. These certificates are automatically renewed every few months by Microsoft Entra ID.
- -  *Highly available*
+ -  Highly available
      -  Additional agents can be installed on multiple on-premises servers to provide high availability of sign-in requests.
 
 ## Feature highlights
 
  -  Supports user sign-in into all web browser-based applications and into Microsoft Office client applications that use modern authentication.
  -  Sign-in usernames can be either the on-premises default username (userPrincipalName) or another attribute configured in Microsoft Entra Connect (known as Alternate ID).
- -  The feature works seamlessly with Conditional Access features such as Multi-Factor Authentication (MFA) to help secure your users.
+ -  The feature works seamlessly with Conditional Access features such as multifactor authentication (MFA) to help secure your users.
  -  Integrated with cloud-based self-service password management, including password writeback to on-premises Active Directory and password protection by banning commonly used passwords.
  -  Multi-forest environments are supported if there are forest trusts between your AD forests and if name suffix routing is correctly configured.
  -  It is a free feature, and you don't need any paid editions of Microsoft Entra ID to use it.

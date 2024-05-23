@@ -4,7 +4,7 @@ title: Configure internet access with Azure Virtual NAT
 metadata:
   title: Configure internet access with Azure Virtual NAT
   description: "Configure internet access with Azure Virtual NAT"
-  ms.date: 04/18/2024
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
@@ -13,3 +13,28 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/10-configure-internet-access-azure-virtual-nat.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of NAT?"
+    choices:
+    - content: "NAT enables you to share a single public IPv4 address among multiple internal resources."
+      isCorrect: true
+      explanation: "Correct, NAT enables internal resources to share an IP address for communication with Internet resources."
+    - content: "NAT allows you to assign multiple private IPv4 addresses to a single virtual machine."
+      isCorrect: false
+      explanation: "Incorrect, you can assign multiple IPv4 addresses to a single virtual machine, but the NAT service isn't used for this."
+    - content: "NAT enables you to configure an external IPv4 address on each individual virtual machine."
+      isCorrect: false
+      explanation: "Incorrect, the NAT service is configured as a gateway, providing shared IPv4 address(es) for internal resources. It isn't configured on individual virtual machines."
+  - content: "How does NAT scale to support dynamic workloads?"
+    choices:
+    - content: "NAT supports up to four public IP addresses."
+      isCorrect: false
+      explanation: "Incorrect, NAT supports up to 16 public IP addresses. Additionally, by using port network address translation (PNAT or PAT), NAT provides up to 64,000 concurrent flows for UDP and TCP respectively, for each attached public IP address."
+    - content: "NAT doesn't scale dynamically. You must configure NAT to scale manually, by adding other NAT Gateways."
+      isCorrect: false
+      explanation: "Incorrect, NAT scales automatically to support dynamic workloads. You don't need to add extra NAT gateways."
+    - content: "NAT supports up to 16 public IP addresses, and for each of those, uses port network address translation (PNAT or PAT) to provide up to 64,000 concurrent traffic flows."
+      isCorrect: true
+      explanation: "Correct, NAT supports up to 16 public IP addresses. Using port network address translation (PNAT or PAT), NAT provides up to 64,000 concurrent flows for UDP and TCP respectively, for each attached public IP address."

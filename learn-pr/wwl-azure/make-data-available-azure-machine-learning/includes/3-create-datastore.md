@@ -47,7 +47,7 @@ blob_datastore = AzureBlobDatastore(
     			description = "Datastore pointing to a blob container",
     			account_name = "mytestblobstore",
     			container_name = "data-container",
-    			credentials = AccountKeyCredentials(
+    			credentials = AccountKeyConfiguration(
         			account_key="XXXxxxXXXxXXXXxxXXX"
     			),
 )
@@ -62,7 +62,7 @@ name="blob_sas_example",
 description="Datastore pointing to a blob container",
 account_name="mytestblobstore",
 container_name="data-container",
-credentials=SasTokenCredentials(
+credentials=SasTokenConfiguration(
 sas_token="?xx=XXXX-XX-XX&xx=xxxx&xxx=xxx&xx=xxxxxxxxxxx&xx=XXXX-XX-XXXXX:XX:XXX&xx=XXXX-XX-XXXXX:XX:XXX&xxx=xxxxx&xxx=XXxXXXxxxxxXXXXXXXxXxxxXXXXXxxXXXXXxXXXXxXXXxXXxXX"
 ),
 )

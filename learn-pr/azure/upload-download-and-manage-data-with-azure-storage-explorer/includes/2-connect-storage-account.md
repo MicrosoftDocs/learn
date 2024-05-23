@@ -31,11 +31,11 @@ The Azure Storage Explorer application runs on the following versions of these p
 
 Azure Storage Explorer can access many different data types from services like these:
 
-- **Azure Blob Storage**: Blob storage is used to store unstructured data as a binary large object (blob).
+- **Azure Blob Storage**: Blob storage is used to store unstructured data as a binary large object (blob). 
 - **Azure Table Storage**: Table storage is used to store NoSQL, semi-structured data.
 - **Azure Queue Storage**: Queue storage is used to store messages in a queue, which can then be accessed and processed by applications through HTTP(S) calls.
 - **Azure Files**: Azure Files is a file-sharing service that enables access through the Server Message Block protocol, similar to traditional file servers.
-- **Azure Data Lake Storage**: Azure Data Lake, based on Apache Hadoop, is designed for large data volumes and can store unstructured and structured data. Azure Data Lake Storage Gen1 is a dedicated service. Azure Data Lake Storage Gen2 is Azure Blob Storage with the hierarchical namespace feature enabled on the account.
+- **Azure Data Lake Storage**: Azure Data Lake, based on Apache Hadoop, is designed for large data volumes and can store unstructured and structured data. Azure Data Lake Storage Gen2 is Azure Blob Storage with the hierarchical namespace feature enabled on the account.
 
 ### Manage multiple storage accounts in multiple subscriptions
 
@@ -124,9 +124,3 @@ To add a connection:
 1. Review and verify the connection details, and then select **Connect**.
 
 When the connection is added, it appears in the resource tree as a connection node. The connection node is in this branch: **Local & attached** > **Storage Accounts**.
-
-### Manage Data Lake Storage Gen1
-
-You can use Storage Explorer to access and manage data stored in Data Lake Storage Gen1.
-
-To connect to a Data Lake service, you'll need the URI associated with the data lake. Using a URI allows you to access resources that aren't in your subscription. When you have the URI of the resource that you want to access, you connect to it by using the **Data Lake Storage Gen1** option.

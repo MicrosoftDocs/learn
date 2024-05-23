@@ -3,7 +3,7 @@ uid: learn.wwl.set-up-microsoft-defender-cloud
 metadata:
   title: Set up Microsoft Defender for Cloud
   description: "Discover how to leverage Microsoft Defender for Cloud through the Azure portal to ensure the security of your Azure services and workloads, offering continuous threat detection and prevention."
-  ms.date: 04/11/2024
+  ms.date: 04/24/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-standard-task-based
@@ -26,7 +26,7 @@ abstract: |
 
   -   Familiarize yourself with Just in Time Virtual Machine to implement fine-grained access controls for enhanced security.
 prerequisites: None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/set-up-microsoft-defender-for-cloud.svg
 levels:
 - intermediate
 roles:

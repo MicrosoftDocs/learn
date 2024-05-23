@@ -13,16 +13,16 @@ Privileged Identity Management (PIM) provides a time-based and approval-based ro
 
 PIM enables you to allow a specific set of actions at a particular scope. Key features include:<br>
 
- -  Provide **just-in-time** privileged access to resources<br>
- -  Assign **eligibility for membership or ownership** of PIM for Groups<br>
- -  Assign **time-bound** access to resources using start and end dates<br>
- -  Require **approval** to activate privileged roles<br>
- -  Enforce **Multifactor authentication** to activate any role<br>
- -  Enforce **Conditional Access policies** to activate any role (Public preview)<br>
- -  Use **justification** to understand why users activate<br>
- -  Get **notifications** when privileged roles are activated<br>
- -  Conduct **access reviews** to ensure users still need roles<br>
- -  Download **audit history** for internal or external audit<br>
+ -  Provide just-in-time privileged access to resources<br>
+ -  Assign eligibility for membership or ownership of PIM for Groups<br>
+ -  Assign time-bound access to resources using start and end dates<br>
+ -  Require approval to activate privileged roles<br>
+ -  Enforce Multifactor authentication to activate any role<br>
+ -  Enforce Conditional Access policies to activate any role (Public preview)<br>
+ -  Use justification to understand why users activate<br>
+ -  Get notifications when privileged roles are activated<br>
+ -  Conduct access reviews to ensure users still need roles<br>
+ -  Download audit history for internal or external audit<br>
 
 ## Understand PIM<br>
 
@@ -30,9 +30,9 @@ The PIM concepts in this section will help you understand your organization’s 
 
 Today, you can use PIM with:<br>
 
- -  **Microsoft Entra roles** – Sometimes referred to as directory roles, Microsoft Entra roles include built-in and custom roles to manage Microsoft Entra ID and other Microsoft 365 online services.<br>
- -  **Azure roles** – The role-based access control (RBAC) roles in Azure that grants access to management groups, subscriptions, resource groups, and resources.<br>
- -  **PIM for Groups** – To set up just-in-time access to member and owner role of a Microsoft Entra security group. PIM for Groups not only gives you an alternative way to set up PIM for Microsoft Entra roles and Azure roles, but also allows you to set up PIM for other permissions across Microsoft online services like Intune, Azure Key Vaults, and Azure Information Protection. If the group is configured for app provisioning, activation of group membership triggers provisioning of group membership (and the user account, if it wasn’t provisioned) to the application using the System for Cross-Domain Identity Management (SCIM) protocol.<br>
+ -  Microsoft Entra roles – Sometimes referred to as directory roles, Microsoft Entra roles include built-in and custom roles to manage Microsoft Entra ID and other Microsoft 365 online services.<br>
+ -  Azure roles – The role-based access control (RBAC) roles in Azure that grants access to management groups, subscriptions, resource groups, and resources.<br>
+ -  PIM for Groups – To set up just-in-time access to member and owner role of a Microsoft Entra security group. PIM for Groups not only gives you an alternative way to set up PIM for Microsoft Entra roles and Azure roles, but also allows you to set up PIM for other permissions across Microsoft online services like Intune, Azure Key Vaults, and Azure Information Protection. If the group is configured for app provisioning, activation of group membership triggers provisioning of group membership (and the user account, if it wasn’t provisioned) to the application using the System for Cross-Domain Identity Management (SCIM) protocol.<br>
 
 You can assign the following to these roles or groups:<br>
 
@@ -44,11 +44,14 @@ You can assign the following to these roles or groups:<br>
 
 ## Principle of least privilege
 
-You assign users the role with the least privileges necessary to perform their tasks. This practice minimizes the number of Global Administrators and instead uses specific administrator roles for certain scenarios.
+You assign users the role with the [least privileges necessary to perform their tasks](/entra/identity/role-based-access-control/delegate-by-task). This practice minimizes the number of Global Administrators and instead uses specific administrator roles for certain scenarios.
+
+> [!NOTE]
+> Microsoft has very few Global Administrators. Learn more at [how Microsoft uses Privileged Identity Management](https://www.microsoft.com/itshowcase/Article/Content/887/Using-Azure-AD-Privileged-Identity-Management-for-elevated-access).
 
 ## Type of assignments
 
-There are two types of assignment – **eligible** and **active**. If a user has been made eligible for a role, that means they can activate the role when they need to perform privileged tasks.
+There are two types of assignment – **eligible** and **active**. If a user has been made eligible for a role that means they can activate the role when they need to perform privileged tasks.
 
 You can also set a start and end time for each type of assignment. This addition gives you four possible types of assignments:<br>
 
@@ -63,11 +66,11 @@ In case the role expires, you can **extend** or **renew** these assignments.<br>
 
 ## Plan the project
 
-When technology projects fail, it’s typically because of mismatched expectations on impact, outcomes, and responsibilities. To avoid these pitfalls, ensure that you’re engaging the right stakeholders and that stakeholder roles in the project are well understood.
+When technology projects fail, it’s typically because of mismatched expectations on impact, outcomes, and responsibilities. To avoid these pitfalls, [ensure that you’re engaging the right stakeholders](/entra/architecture/deployment-plans) and that stakeholder roles in the project are well understood.
 
 ### Plan a pilot
 
-At each stage of your deployment ensure that you are evaluating that the results are as expected. See best practices for a pilot.
+At each stage of your deployment ensure that you are evaluating that the results are as expected. See [best practices for a pilot](/entra/architecture/deployment-plans#best-practices-for-a-pilot).
 
  -  Start with a small set of users (pilot group) and verify that the PIM behaves as expected.<br>
  -  Verify whether all the configuration you set up for the roles or PIM for Groups are working correctly.<br>
@@ -116,19 +119,19 @@ Follow these tasks to prepare PIM to manage Microsoft Entra roles.
 
 List who has privileged roles in your organization. Review the users assigned, identify administrators who no longer need the role, and remove them from their assignments.
 
-You can use Microsoft Entra roles access reviews to automate the discovery, review, and approval or removal of assignments.<br>
+You can use [Microsoft Entra roles access reviews](/entra/id-governance/privileged-identity-management/pim-create-roles-and-resource-roles-review) to automate the discovery, review, and approval or removal of assignments.
 
 ### Determine roles to be managed by PIM<br>
 
 Prioritize protecting Microsoft Entra roles that have the most permissions. It’s also important to consider what data and permission are most sensitive for your organization.
 
-First, ensure that all Global and Security admin roles are managed using PIM because they’re the users who can do the most harm when compromised. Then consider more roles that should be managed that could be vulnerable to attack.<br>
+First, ensure that all Global and Security admin roles are managed using PIM because they’re the users who can do the most harm when compromised. Then consider more roles that should be managed that could be vulnerable to attack.
 
-You can use the Privileged label to identify roles with high privileges that you can manage with PIM. Privileged label is present on Roles and Administrator in Microsoft Entra ID admin center.
+You can use the Privileged label to identify roles with high privileges that you can manage with PIM. Privileged label is present on [Roles and Administrator](/entra/identity/role-based-access-control/privileged-roles-permissions?tabs=admin-center) in Microsoft Entra admin center. See the article, [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference) to learn more.
 
 ### Configure PIM settings for Microsoft Entra roles
 
-Draft and configure your PIM settings for every privileged Microsoft Entra role that your organization uses.
+[Draft and configure your PIM settings](/entra/id-governance/privileged-identity-management/pim-how-to-change-default-settings) for every privileged Microsoft Entra role that your organization uses.
 
 The following table shows example settings:<br>
 
@@ -142,26 +145,31 @@ The following table shows example settings:<br>
 
 For Microsoft Entra roles in PIM, only a user who is in the Privileged Role Administrator or Global Administrator role can manage assignments for other administrators. Global Administrators, Security Administrators, Global Readers, and Security Readers can also view assignments to Microsoft Entra roles in PIM.
 
-When role nears its expiration, use PIM to extend or renew the roles. Both user-initiated actions require an approval from a Global administrator or Privileged role administrator.<br>
+Follow the instructions in the links below:
 
-When these important events occur in Microsoft Entra roles, PIM sends email notifications and weekly digest emails to privilege administrators depending on the role, event, and notification settings. These emails might also include links to relevant tasks, such activating or renewing a role.<br>
+1.  [Give eligible assignments](/entra/id-governance/privileged-identity-management/pim-how-to-add-role-to-user).
+2.  [Allow eligible users to activate their Microsoft Entra role just-in-time](/entra/id-governance/privileged-identity-management/pim-how-to-activate-role)
+
+When role nears its expiration, use [PIM to extend or renew the roles](/entra/id-governance/privileged-identity-management/pim-resource-roles-renew-extend). Both user-initiated actions require an approval from a Global administrator or Privileged role administrator.
+
+When these important events occur in Microsoft Entra roles, PIM [sends email notifications and weekly digest emails](/entra/id-governance/privileged-identity-management/pim-email-notifications) to privilege administrators depending on the role, event, and notification settings. These emails might also include links to relevant tasks, such activating or renewing a role.
 
 > [!NOTE]
-> You can also perform these PIM tasks using the Microsoft Graph APIs for Microsoft Entra roles.
+> You can also perform these PIM tasks [using the Microsoft Graph APIs for Microsoft Entra roles](/entra/id-governance/privileged-identity-management/pim-apis).
 
 ### Approve or deny PIM activation requests
 
-A delegated approver receives an email notification when a request is pending for approval.
+A delegated approver receives an email notification when a request is pending for approval. Follow these steps to [approve or deny requests to activate an Azure resource role](/entra/id-governance/privileged-identity-management/pim-resource-roles-approval-workflow).
 
 ### View audit history for Microsoft Entra roles
 
-View audit history for all role assignments and activations **within past 30 days** for Microsoft Entra roles. You can access the audit logs if you are a Global Administrator or a privileged role administrator.
+[View audit history for all role assignments and activations](/entra/id-governance/privileged-identity-management/pim-how-to-use-audit-log) within past 30 days for Microsoft Entra roles. You can access the audit logs if you are a Global Administrator or a privileged role administrator.
 
-**We recommend** you have at least one administrator read through all audit events on a weekly basis and export your audit events on a monthly basis.<br>
+We recommend you have at least one administrator read through all audit events on a weekly basis and export your audit events on a monthly basis.
 
-### Security alerts for Microsoft Entra roles
+### Security alerts for Microsoft Entra roles<br>
 
-Configure security alerts for the Microsoft Entra roles which triggers an alert in case of suspicious and unsafe activity.
+[Configure security alerts for the Microsoft Entra roles](/entra/id-governance/privileged-identity-management/pim-how-to-configure-security-alerts) which triggers an alert in case of suspicious and unsafe activity.
 
 ## Plan and implement PIM for Azure Resource roles
 
@@ -171,9 +179,9 @@ Follow these tasks to prepare PIM to manage Azure resource roles.
 
 Minimize Owner and User Access Administrator assignments attached to each subscription or resource and remove unnecessary assignments.
 
-As a Global Administrator you can elevate access to manage all Azure subscriptions. You can then find each subscription owner and work with them to remove unnecessary assignments within their subscriptions.<br>
+As a Global Administrator you can [elevate access to manage all Azure subscriptions](/azure/role-based-access-control/elevate-access-global-admin). You can then find each subscription owner and work with them to remove unnecessary assignments within their subscriptions.
 
-Use access reviews for Azure resources to audit and remove unnecessary role assignments.<br>
+Use [access reviews for Azure resources](/entra/id-governance/privileged-identity-management/pim-create-roles-and-resource-roles-review) to audit and remove unnecessary role assignments.
 
 ### Determine roles to be managed by PIM<br>
 
@@ -189,7 +197,7 @@ For subscriptions or resources that aren’t as critical, you won’t need to se
 
 ### Configure PIM settings for Azure Resource roles
 
-Draft and configure settings for the Azure Resource roles that you’ve planned to protect with PIM.
+[Draft and configure settings](/entra/id-governance/privileged-identity-management/pim-resource-roles-configure-role-settings) for the Azure Resource roles that you’ve planned to protect with PIM.
 
 The following table shows example settings:
 
@@ -200,20 +208,20 @@ The following table shows example settings:
 
 ### Assign eligibility for PIM for Groups
 
-You can assign eligibility to members or owners of the PIM for Groups. With just one activation, they will have access to all the linked resources.
+You can [assign eligibility to members or owners of the PIM for Groups.](/entra/id-governance/privileged-identity-management/groups-assign-member-owner) With just one activation, they will have access to all the linked resources.
 
 > [!NOTE]
 > You can assign the group to one or more Microsoft Entra ID and Azure resource roles in the same way as you assign roles to users. A **maximum of 500 role-assignable groups** can be created in a single Microsoft Entra organization (tenant).
 
 :::image type="content" source="../media/privileged-identity-for-groups-800d8e90.png" alt-text="Diagram showing an example of privileged identity for groups.":::
- When group assignment nears its expiration, use PIM to extend or renew the group assignment. This operation requires group owner approval.
+When group assignment nears its expiration, use [PIM to extend or renew the group assignment](/entra/id-governance/privileged-identity-management/groups-renew-extend). This operation requires group owner approval.
 
 ### Approve or deny PIM activation request
 
 Configure PIM for Groups members and owners to require approval for activation and choose users or groups from your Microsoft Entra organization as delegated approvers. We recommend selecting two or more approvers for each group to reduce workload for the privileged role administrator.
 
-Approve or deny role activation requests for PIM for Groups. As a delegated approver, you'll receive an email notification when a request is pending for your approval.<br>
+[Approve or deny role activation requests for PIM for Groups](/entra/id-governance/privileged-identity-management/groups-approval-workflow). As a delegated approver, you'll receive an email notification when a request is pending for your approval.
 
-View audit history for PIM for Groups<br>
+### View audit history for PIM for Groups
 
-View audit history for all assignments and activations within past 30 days for PIM for Groups.
+[View audit history for all assignments and activations](/entra/id-governance/privileged-identity-management/groups-audit) within past 30 days for PIM for Groups.

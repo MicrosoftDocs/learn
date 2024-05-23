@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Learn about what you can achieve with the Node.js JavaScript runtime and why it might be the right tool for your project.
   ms.date: 01/05/2024
-  author: manekinekko
-  ms.author: chnoring
+  author: diberry
+  ms.author: diberry
   ms.topic: unit
   ms.custom:
     - team=nextgen

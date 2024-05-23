@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.build-with-playwright.exercise-manually-create-a-test-specification
+title: "Exercise: Manually Create a Test Spec"
+metadata:
+  title: "Exercise: Manually Create a Test Spec"
+  description: In this exercise, you'll experiment how to manually create a test spec file and add a test to it.
+  ms.date: 05/08/2024
+  author: japhletnwamu
+  ms.author: japhletnwamu
+  ms.topic: unit
+  ms.custom: team=cloud_advocates
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-exercise-manually-create-test-specification.md)]

@@ -1,5 +1,3 @@
-
-
 You most likely have the technologies you can use to deploy Always On VPN. Other than your DC/DNS servers, the Always On VPN deployment requires an NPS (RADIUS) server, a Certification Authority (CA) server, and a Remote Access (Routing/VPN) server. Once the infrastructure is set up, you must enroll clients, and then connect the clients to your on-premises securely through several network changes.
 
 When preparing for Always On VPN deployment, you should ensure that you have the following components in place:

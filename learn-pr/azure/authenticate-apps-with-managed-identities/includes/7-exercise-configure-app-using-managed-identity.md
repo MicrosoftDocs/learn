@@ -20,7 +20,7 @@ In this exercise, you'll edit your app to use the new key vault. Then, you'll gr
     > ```azurecli
     > export publicIP=$(az vm show \
     >     --name prodserver \
-    >     --resource-group <rgn>[Sandbox resource group]</rgn> \
+    >     --resource-group "<rgn>[sandbox resource group name]</rgn>" \
     >     --show-details \
     >     --query [publicIps] \
     >     --output tsv)
@@ -130,7 +130,7 @@ In this exercise, you'll edit your app to use the new key vault. Then, you'll gr
     ```azurecli
     az vm identity show \
       --name $VMNAME \
-      --resource-group <rgn>[Sandbox resource group]</rgn>
+      --resource-group "<rgn>[sandbox resource group name]</rgn>"
     ```
 
     The following code is an example of the returned value. Your IDs will differ.
@@ -154,7 +154,7 @@ In this exercise, you'll edit your app to use the new key vault. Then, you'll gr
         --secret-permissions get list \
         --object-id $(az vm identity show \
                         --name $VMNAME \
-                        --resource-group <rgn>[Sandbox resource group]</rgn> \
+                        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
                         --output tsv \
                         --query principalId)
     ```

@@ -5,8 +5,8 @@ metadata:
   title: Data encryption and key management
   description: Overview of how Azure encrypts data, covering data at rest and in transit, encryption key management, and Azure confidential computing.
   ms.date: 07/25/2023
-  author: rmcmurray
-  ms.author: robmcm
+  author: TerryLanfear
+  ms.author: terrylan
   ms.topic: unit
 durationInMinutes: 3
 content: |

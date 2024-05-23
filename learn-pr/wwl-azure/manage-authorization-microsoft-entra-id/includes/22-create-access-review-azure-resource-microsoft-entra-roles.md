@@ -2,9 +2,18 @@ The need for access to privileged Azure resource and Microsoft Entra roles by em
 
 ## Prerequisites
 
-Using Privileged Identity Management requires licenses.
+Using Privileged Identity Management requires licenses. For more information on licensing, see [Microsoft Entra ID Governance licensing fundamentals](/entra/id-governance/licensing-fundamentals) .
 
-To create access reviews for Azure resources, you must be assigned to the Owner or the User Access Administrator role for the Azure resources. To create access reviews for Microsoft Entra roles, you must be assigned to the Global Administrator or the Privileged Role Administrator role.
+For more information about licenses for PIM, see [License requirements to use Privileged Identity Management](/entra/id-governance/licensing-fundamentals).
+
+To create access reviews for Azure resources, you must be assigned to the [Owner](/azure/role-based-access-control/built-in-roles#owner) or the [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator) role for the Azure resources. To create access reviews for Microsoft Entra roles, you must be assigned to the [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) or the [Privileged Role Administrator](/entra/identity/role-based-access-control/permissions-reference#privileged-role-administrator) role.
+
+Using Access Reviews for Service Principals requires a Microsoft Entra Workload ID Premium plan in addition to a Microsoft Entra ID P2 or Microsoft Entra ID Governance license.
+
+ -  Workload Identities Premium licensing: You can view and acquire licenses on the [Workload Identities blade](https://portal.azure.com/#view/Microsoft_Azure_ManagedServiceIdentity/WorkloadIdentitiesBlade) in the Microsoft Entra admin center.
+
+> [!NOTE]
+> Access reviews capture a snapshot of access at the beginning of each review instance. Any changes made during the review process will be reflected in the subsequent review cycle. Essentially, with the commencement of each new recurrence, pertinent data regarding the users, resources under review, and their respective reviewers is retrieved.
 
 ## Types of licenses
 
@@ -24,15 +33,18 @@ Access Reviews for Service Principals require a Microsoft Entra Workload ID Prem
 
 ## Create access reviews
 
-1. Sign in to the Microsoft Entra admin center as a user that is assigned to one of the prerequisite role(s).
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a user that is assigned to one of the prerequisite role(s).
 
-2. Browse to Identity governance &gt; Privileged Identity Management.<br>
+2. Browse to **Identity governance** &gt; **Privileged Identity Management**.<br>
 
-3. For Microsoft Entra roles, select Microsoft Entra roles. For Azure resources, select Azure resources.
+3. For Microsoft Entra roles, select **Microsoft Entra roles**. For Azure resources, select **Azure resources**.
 
-4. For Microsoft Entra roles, select Microsoft Entra roles again under Manage. For Azure resources, select the subscription you want to manage.<br>
+:::image type="content" source="../media/identity-governance-9ead442a.png" alt-text="Screenshot showing the Microsoft Entra administration centers Privileged Identity Management dashboard.":::
 
-5. Under Manage, select Access reviews, and then select New to create a new access review.
+
+4. For Microsoft Entra roles, select **Microsoft Entra roles** again under **Manage**. For Azure resources, select the subscription you want to manage.<br>
+
+5. Under Manage, select **Access reviews**, and then select **New** to create a new access review.
 
 6. Name the access review. Optionally, give the review a description. The name and description are shown to the reviewers.<br>
 
@@ -77,12 +89,14 @@ Access Reviews for Service Principals require a Microsoft Entra Workload ID Prem
 
 1. To specify additional settings, expand the Advanced settings section.
 
-2. Set Show recommendations to Enable to show the reviewers the system recommendations based the user's access information. Recommendations are based on a 30-day interval period where users who have logged in the past 30 days are recommended access, while users who have not are recommended denial of access. These sign-ins are irrespective of whether they were interactive. The last sign-in of the user is also displayed along with the recommendation.<br>
+2. Set **Show recommendations** to **Enable** to show the reviewers the system recommendations based the user's access information. Recommendations are based on a 30-day interval period where users who have logged in the past 30 days are recommended access, while users who have not are recommended denial of access. These sign-ins are irrespective of whether they were interactive. The last sign-in of the user is also displayed along with the recommendation.<br>
 
-3. Set Require reason on approval to Enable to require the reviewer to supply a reason for approval.<br>
+3. Set **Require reason on approval** to **Enable** to require the reviewer to supply a reason for approval.<br>
 
-4. Set Mail notifications to Enable to have Microsoft Entra ID send email notifications to reviewers when an access review starts, and to administrators when a review completes.<br>
+4. Set **Mail notifications** to **Enable** to have Microsoft Entra ID send email notifications to reviewers when an access review starts, and to administrators when a review completes.<br>
 
-5. Set Reminders to Enable to have Microsoft Entra ID send reminders of access reviews in progress to reviewers who haven't completed their review.<br>
+5. Set **Reminders** to **Enable** to have Microsoft Entra ID send reminders of access reviews in progress to reviewers who haven't completed their review.<br>
 
 6. The content of the email sent to reviewers is auto-generated based on the review details, such as review name, resource name, due date, etc. If you need a way to communicate additional information such as additional instructions or contact information, you can specify these details in the Additional content for reviewer email which will be included in the invitation and reminder emails sent to assigned reviewers. The highlighted section below is where this information will be displayed.
+
+:::image type="content" source="../media/email-information-acaa27c2.png" alt-text="Screenshot showing an access required email notification.":::

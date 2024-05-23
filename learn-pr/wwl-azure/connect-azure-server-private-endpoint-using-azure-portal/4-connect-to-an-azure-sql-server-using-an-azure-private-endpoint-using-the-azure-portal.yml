@@ -4,10 +4,12 @@ title: Exercise - Deploy a virtual machine to test connectivity privately and se
 metadata:
   title: Exercise - Deploy a virtual machine to test connectivity privately and securely to the SQL server across the private endpoint
   description: "Exercise - Deploy a virtual machine to test connectivity privately and securely to the SQL server across the private endpoint"
-  ms.date: 01/16/2024
+  ms.date: 04/24/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 30
 content: |
   [!include[](includes/4-connect-to-an-azure-sql-server-using-an-azure-private-endpoint-using-the-azure-portal.md)]

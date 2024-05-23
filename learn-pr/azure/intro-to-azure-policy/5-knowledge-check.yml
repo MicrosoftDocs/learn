@@ -6,8 +6,8 @@ metadata:
   title: Knowledge check
   description: "Check your knowledge about Azure Policy."
   ms.date: 01/05/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: unit
 durationInMinutes: 5
 content: |

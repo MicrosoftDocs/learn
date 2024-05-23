@@ -5,19 +5,19 @@ Here, we discuss some of the essential security tools and techniques available t
 
 ## The importance of a secure development strategy
 
-Application security is important. News services frequently carry stories about some breach of a company's systems, and private company and customer data that was stolen.
+Application security is important. News services frequently carry stories about some breach of a company's systems and private company and customer data that was stolen.
 
-So, what are the issues to think about when planning a secure development strategy? Clearly, we need to protect information from being disclosed to people that shouldn't have access to it. But more importantly, we need to ensure that information is only altered or destroyed when it's appropriate.
+So, what are the issues to think about when planning a secure development strategy? Clearly, we need to protect information from being disclosed to people that shouldn't have access to it, but more importantly, we need to ensure that information is only altered or destroyed when it's appropriate.
 
-We need to make sure we properly authenticate who's accessing the data, and that they have the correct permissions to do so. Through historical or archival data or logs, we need to be able to find evidence when something is wrong.
+We need to make sure we properly authenticate who's accessing the data and that they have the correct permissions to do so. Through historical or archival data or logs, we need to be able to find evidence when something is wrong.
 
 There are many aspects to building and deploying secure applications. Here are three things to consider:
 
-- **There is a general knowledge problem.** Many developers and other staff members assume they understand security, but they don't. Cybersecurity is a constantly evolving discipline. A program of ongoing education and training is essential.
+- **There's a general knowledge problem**: Many developers and other staff members assume they understand security, but they don't. Cybersecurity is a constantly evolving discipline. A program of ongoing education and training is essential.
 
-- **Code must be created correctly and securely.** We need to be sure that the code is created correctly and securely implements the required features. We also need to make sure that the features were designed with security in mind.
+- **Code must be created correctly and securely**: We need to be sure that the code is created correctly and securely implements the required features. We also need to make sure that the features were designed with security in mind.
 
-- **Applications must comply with rules and regulations.** We need to make sure that the code complies with required rules and regulations. We have to test for compliance while building the code and then retest periodically, even after deployment.
+- **Applications must comply with rules and regulations**: We need to make sure that the code complies with required rules and regulations. We have to test for compliance while building the code and then retest periodically, even after deployment.
 
 ### Security at every step
 
@@ -25,9 +25,9 @@ There are many aspects to building and deploying secure applications. Here are t
 
 Security isn't something you can just add later to an application or a system. Secure development must be part of every stage of the software-development life cycle. This concept is even more important for critical applications and those applications that process sensitive or highly confidential information.
 
-In practice, to hold teams accountable for what they develop, processes need to **shift left**, or completed earlier, in the development lifecycle. By moving steps from a final gate at deployment time to an earlier step, fewer mistakes are made, and developers can move more quickly.
+In practice, to hold teams accountable for what they develop, processes need to **shift left**, or be completed earlier, in the development lifecycle. By moving steps from a final gate at deployment time to an earlier step, fewer mistakes are made, and developers can move more quickly.
 
-Application security concepts weren't a focus for developers in the past. Apart from the education and training issues, it's because their organizations emphasized fast development of features.
+Application-security concepts weren't a focus for developers in the past. Apart from the education and training issues, it's because their organizations emphasized fast development of features.
 
 With the introduction of DevOps practices however, security testing is easier to integrate into the pipeline. Rather than being a task performed by security specialists, security testing should just be part of the day-to-day delivery processes.
 
@@ -39,7 +39,7 @@ Shifting left is a process change, but it isn’t a single control or specific t
 
 GitHub offers security features that help keep data secure in repositories and across organizations. To locate the security tab:
 
-1. On GitHub.com, go to the main page of the repository.
+1. On GitHub.com, go to the repository's main page.
 
 1. Under the repository name, select **Security**.
 
@@ -52,16 +52,16 @@ From the Security tab, you can add features to your GitHub workflow to help avoi
 - **Security advisories** that you can use to privately discuss, fix, and publish information about security vulnerabilities in your repository.
 - **Code scanning** that helps you find, triage, and fix vulnerabilities and errors in your code.
 
-For more information, see [GitHub security features](https://docs.github.com/en/code-security/getting-started/github-security-features).
+For more information, see [GitHub security features](https://docs.github.com/code-security/getting-started/github-security-features).
 
 > [!NOTE]
 > Dependabot alert advisories for malware are currently in beta and subject to change. Only advisories that have been reviewed by GitHub will trigger Dependabot alerts.
 
-Next we explore some of these features and learn ways to distribute security and operational responsibilities across all phases of the software-development lifecycle.
+Next, we explore some of these features and learn ways to distribute security and operational responsibilities across all phases of the software-development lifecycle.
 
 ## Communicate a security policy with SECURITY.md
 
-The community benefits of GitHub are substantial, but they also carry potential risks. The fact that anyone can propose bug fixes publicly comes with certain responsibilities. The most important is the responsible disclosure of information that could lead to security exploits before their underlying bugs can be fixed. Developers looking to report or address security issues look for a `SECURITY.md` file in the root of a repository in order to responsibly disclose their concerns. Providing guidance in this file ultimately speeds up the resolution of these critical issues.
+GitHub's community benefits are substantial, but they also carry potential risks. The fact that anyone can propose bug fixes publicly comes with certain responsibilities. The most important is the responsible disclosure of information that could lead to security exploits before their underlying bugs can be fixed. Developers looking to report or address security issues look for a `SECURITY.md` file in the root of a repository in order to responsibly disclose their concerns. Providing guidance in this file ultimately speeds up the resolution of these critical issues.
 
 To learn more about `SECURITY.md`, see [Adding a security policy to your repository](https://docs.github.com/code-security/getting-started/adding-a-security-policy-to-your-repository).
 
@@ -73,7 +73,7 @@ GitHub Security Advisories allow repository maintainers to privately discuss and
 
 It's easy for developers to overlook files included in a commit. Sometimes these overlooked files are benign, such as intermediate build files. However, there's always the risk that someone might inadvertently commit sensitive data. For example, someone could commit an API key or private configuration data that a malicious actor could use. One technique to help avoid this risk is to build and maintain `.gitignore` files. These files instruct client tools, such as the `git` command line utility, to ignore paths and patterns when aggregating files for a commit.
 
-The following sample illustrates some of the common use cases for ignoring files.
+The following sample illustrates some of the common use cases for ignoring files:
 
 ```.gitignore
 # User-specific files - Ignore all files ending in ".suo"
@@ -99,7 +99,7 @@ x86/
 
 Your repository might include multiple `.gitignore` files. Settings are inherited from parent directories, with overriding fields in new `.gitignore` files taking precedence over parent settings for their folders and subfolders. It's significant effort to maintain the root `.gitignore` file, although adding a `.gitignore` file into a project directory can be helpful when that project has specific requirements that are easier to maintain separately from the parent, such as files that should *not* be ignored.
 
-To learn more about `.gitignore`, see [Ignoring files](https://docs.github.com/get-started/getting-started-with-git/ignoring-files). Also check out the collection of starter `.gitignore` files offered for various platforms in the [gitignore repository](https://github.com/github/gitignore?azure-portal=true).
+To learn more about `.gitignore`, see [Ignoring files](https://docs.github.com/get-started/getting-started-with-git/ignoring-files). Also check out the collection of starter `.gitignore` files offered for various platforms in the [gitignore repository](https://github.com/github/gitignore).
 
 ## Remove sensitive data from a repository
 
@@ -110,18 +110,18 @@ While `.gitignore` files can be useful in helping contributors avoid committing 
 
 ## Branch protection rules
 
-You can create a [branch protection rule](https://docs.github.com/github/administering-a-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule) to enforce certain workflows for one or more branches. For example, you can require an approving review or passing status checks for all pull requests merged into the protected branch.
+You can create a [branch protection rule](https://docs.github.com/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule) to enforce certain workflows for one or more branches. For example, you can require an approving review or passing status checks for all pull requests merged into the protected branch.
 
-You can use the workflows that protect the branch to: 
+You can use the workflows that protect the branch to:
 
-* Run a build to verify the code changes can be build
-* Run a linter to check for typos and conformation to the internal coding conventions
-* Run automated tests to check for any behavior changes of the code
-* And so on
+- Run a build to verify the code changes can be build
+- Run a linter to check for typos and conformation to the internal coding conventions
+- Run automated tests to check for any behavior changes of the code
+- And so on
 
 ## Add a CODEOWNERS file
 
-By adding a [CODEOWNERS](https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-code-owners#codeowners-syntax) file to your repository, you can assign individual team members or entire teams as code owners to paths in your repository. These code owners are then required for pull-request reviews on any changes to files in a path that they're configured for.
+By adding a [CODEOWNERS](https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-code-owners#codeowners-syntax) file to your repository, you can assign individual team members or entire teams as code owners to paths in your repository. These code owners are then required for pull-request reviews on any changes to files in a path for which they're configured.
 
 ```
 # Changes to files with the js extensions need to be reviewed by the js-owner user/group:
@@ -131,4 +131,4 @@ By adding a [CODEOWNERS](https://docs.github.com/github/creating-cloning-and-arc
 /build/ @octocat
 ```
 
-You can create the CODEOWNERS file in either the root of the repository, or in the `docs` or `.github` folder.
+You can create the CODEOWNERS file in either the root of the repository or in the `docs` or `.github` folder.

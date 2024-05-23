@@ -72,22 +72,4 @@ The following diagram shows a scenario in which hub VNet hosts a VPN gateway tha
 
 :::image type="content" source="../media/service-chaining-be9346d4.png" alt-text="Hub-and-spoke configuration - Contoso and Fabrikam peer to Hub VNet. Hub VNet contains NVA, VMs, and a VPN Gateway connected to on-premises network.":::
 
-## Check your knowledge
-
-Choose the best response for each of the questions below. When you're done, select **Check your answers**.
-
-## quiz title
-
-## Multiple Choice
-
-When one needs the resources in one VNet to communicate with resources in a subnet in a different VNet. Which Azure network feature should be used?
-( ) Internal DNS. {{That is incorrect, internal DNS is a service provided by Azure.}}
-( ) Azure Availability Zones. {{That is incorrect, Azure Availability Zones are a high availability feature. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking.}}
-(x) VNet peering. {{That is correct, virtual network peering enables you to seamlessly connect separate VNets with optimal network performance, whether they are in the same Azure region (VNet peering) or in different regions (Global VNet peering).}}
-
-## Multiple Choice
-
-When configuring global peering, what changes will occur in the peered VNets?
-( ) A peering entry is added to the routing table in the source VNet only. {{That is incorrect, the VNets communicate as peers, so resources in each VNet must be able to communicate with each other. Adding a single peering entry only allows traffic to be routed one way.}}
-( ) All traffic on the Vnet must be routed through a Gateway. {{That is incorrect, resources on each VNet can communicate seamlessly with one another.}}
-(x) A peering entry is added to the routing table in each VNet. {{That is correct, VNet Global Peering entries are added to the routing tables in each VNet to direct traffic to the peered VNet.}}
+Choose the best response for each of the questions below. Then select **Check your answers**.

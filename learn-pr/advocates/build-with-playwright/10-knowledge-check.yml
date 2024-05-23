@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.build-with-playwright.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your understanding so far.
+  ms.date: 05/08/2024
+  author: japhletnwamu
+  ms.author: japhletnwamu
+  ms.topic: unit
+  ms.custom: team=cloud_advocates
+durationInMinutes: 6
+content: |
+  Choose the best response for each question. Then, select **Check your answers**.
+quiz:
+  title: Knowledge check
+  questions:
+  - content: Which of the following is a fixture in Playwright?
+    choices:
+    - content: page
+      isCorrect: true
+      explanation: "Correct: In Playwright a page is a built-in fixture which is passed into your tests to ensure test isolation."
+    - content: click
+      isCorrect: false
+      explanation: "Incorrect: click is an action that represents a user clicking."
+    - content: goto
+      isCorrect: false
+      explanation: "Incorrect: goto is a method used for navigating to a URL."
+    - content: expect
+      isCorrect: false
+      explanation: "Incorrect: expect is a function used with a matcher to assert a condition."
+
+  - content: Which of the following groups related tests together in Playwright?
+    choices:
+    - content: getByRole
+      isCorrect: false
+      explanation: "Incorrect: getByRole is a locator which is how you find elements on a page."
+    - content: describe
+      isCorrect: true
+      explanation: "Correct: Describe allows us to group Test Case objects logically in a file."
+    - content: page
+      isCorrect: false
+      explanation: "Incorrect: In Playwright a page is a built-in fixture which is passed into your tests to ensure test isolation."
+    - content: beforeEach
+      isCorrect: false
+      explanation: "Incorrect: beforeEach is a hook that can be applied to all tests within a group."
+
+  - content: Which of the following is a locator in Playwright?
+    choices:
+    - content: expect
+      isCorrect: false
+      explanation: "Incorrect: expect is a function used with a matcher to assert a condition."
+    - content: toBeVisible
+      isCorrect: false
+      explanation: "Incorrect: toBeVisible is an assertion for validating outcomes of automated actions."
+    - content: getByRole.
+      isCorrect: true
+      explanation: "Correct: getByRole is a locator that is used to find an element on the page by its accessible role."
+    - content: goto.
+      isCorrect: false
+      explanation: "Incorrect: goto is a method used for navigating to a URL."

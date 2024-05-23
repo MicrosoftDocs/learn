@@ -3,20 +3,23 @@ uid: learn.wwl.security-private-access-azure-resources
 metadata:
   title: Plan and implement security for private access to Azure resources
   description: "This module focuses on equipping administrators with the knowledge and skills required to plan and implement robust security measures for private access to Azure resources, safeguarding sensitive data and enhancing network integrity."
-  ms.date: 02/19/2024
+  ms.date: 04/24/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
   ms.service: azure
+  ai-usage: human-only
 title: Plan and implement security for private access to Azure resources
 summary: This module focuses on equipping administrators with the knowledge and skills required to plan and implement robust security measures for private access to Azure resources, safeguarding sensitive data and enhancing network integrity.
 abstract: |
-  - Develop security strategies for private access to Azure resources to protect sensitive data.
-  - Utilize virtual network Service Endpoints and Private Endpoints for secure Azure service access.
-  - Manage Private Link services for secure resource exposure and integrate Azure App Service and Functions with virtual networks.
-  - Configure network security for App Service Environment and Azure SQL Managed Instance to safeguard web applications and databases.
-prerequisites: |
-  - None
+  -   Develop security strategies for private access to Azure resources to protect sensitive data.
+
+  -   Utilize virtual network Service Endpoints and Private Endpoints for secure Azure service access.
+
+  -   Manage Private Link services for secure resource exposure and integrate Azure App Service and Functions with virtual networks.
+
+  -   Configure network security for App Service Environment and Azure SQL Managed Instance to safeguard web applications and databases.
+prerequisites: '-   None'
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

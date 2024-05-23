@@ -4,12 +4,12 @@ title: Install a replica Active Directory domain controller in an Azure VM
 metadata:
   title: Install a replica Active Directory domain controller in an Azure VM
   description: "Install a replica Active Directory domain controller in an Azure VM"
-  ms.date: 08/25/2023
+  ms.date: 04/19/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/04-install-replica-active-directory-domain-controller-azure-virtual-machine.md)]

@@ -2,25 +2,28 @@
 uid: learn.wwl.configure-virtual-machine-backups
 metadata:
   title: Configure virtual machine backups
-  description: Learn how to configure virtual machine backups including restore operations.
-  ms.date: 10/31/2023
+  description: "Learn how to configure virtual machine backups including restore operations."
+  ms.date: 04/19/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
   ms.custom:
   - N/A
   ms.service: azure
+  ai-usage: ai-assisted
 title: Configure virtual machine backups
 summary: Learn how to configure virtual machine backups including restore operations.
 abstract: |
   In this module, you learn how to:
-  - Identify features and usage cases for different Azure backup methods.
-  - Configure virtual machine snapshots and backup options.
-  - Implement virtual machine backup and restore, including soft delete.
-  - Perform site-to-site recovery by using Azure Site Recovery.
-  - Compare the Azure Backup agent to the Microsoft Azure Backup Server.
-prerequisites: |
-  None
+
+  -   Identify features and usage cases for different Azure backup methods.
+
+  -   Configure virtual machine snapshots and backup options.
+
+  -   Implement virtual machine backup and restore, including soft delete.
+
+  -   Perform site-to-site recovery by using Azure Site Recovery.
+prerequisites: None
 iconUrl: /training/achievements/virtual-machines-configure-backup.svg
 levels:
 - intermediate
@@ -38,8 +41,6 @@ units:
 - learn.wwl.configure-virtual-machine-backups.setup-recovery-services-vault-backup-options
 - learn.wwl.configure-virtual-machine-backups.backup-virtual-machines
 - learn.wwl.configure-virtual-machine-backups.restore-virtual-machines
-- learn.wwl.configure-virtual-machine-backups.implement-azure-backup-server
-- learn.wwl.configure-virtual-machine-backups.compare-backup-options
 - learn.wwl.configure-virtual-machine-backups.manage-soft-delete
 - learn.wwl.configure-virtual-machine-backups.implement-azure-site-recovery
 - learn.wwl.configure-virtual-machine-backups.lab-simulation-backup

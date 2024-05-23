@@ -4,7 +4,7 @@ In order to deploy Win32 apps, the following criteria must be met:
 
  -  Windows 10 version 1607 or later (Enterprise, Pro, and Education versions)
  -  Devices must be joined to Microsoft Entra ID and auto enrolled.
- -  Windows application size has a maximum of 8 GB per app.
+ -  Windows application size has a maximum of 30 GB per app.
 
 Some features worth noting include:
 

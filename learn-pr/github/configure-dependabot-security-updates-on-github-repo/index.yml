@@ -2,11 +2,12 @@
 uid: learn.configure-dependabot-security-updates-on-github-repo
 metadata:
   moduleType: standard
+  ms.service: github
   title: Configure Dependabot security updates on your GitHub repo
   description: Learn how to configure Dependabot security updates on your GitHub repo.
-  ms.date: 02/08/2024
-  author: rmcmurray
-  ms.author: robmcm
+  ms.date: 04/25/2024
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: module
 title: Configure Dependabot security updates on your GitHub repo
 summary: Manage your dependencies with GitHub Dependabot.
@@ -39,6 +40,7 @@ units:
 - learn.configure-dependabot-security-updates-on-github-repo.dependabot-alerts
 - learn.configure-dependabot-security-updates-on-github-repo.dependabot-security-updates
 - learn.configure-dependabot-security-updates-on-github-repo.manage-dependabot-notifications-reporting
+- learn.configure-dependabot-security-updates-on-github-repo.dependency-review
 - learn.configure-dependabot-security-updates-on-github-repo.exercise
 - learn.configure-dependabot-security-updates-on-github-repo.knowledge-check
 - learn.configure-dependabot-security-updates-on-github-repo.summary

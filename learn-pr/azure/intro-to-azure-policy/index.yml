@@ -5,8 +5,8 @@ metadata:
   title: Introduction to Azure Policy
   description: "This module introduces you to Azure Policy and describes how to use it to meet compliance requirements in your environment."
   ms.date: 01/05/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: module-standard-task-based
   ms.service: azure-policy
 title: Intro to Azure Policy

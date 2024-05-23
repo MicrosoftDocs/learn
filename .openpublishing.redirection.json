@@ -214,17 +214,17 @@
       "source_path_from_root": "/learn-pr/azure/secure-b2b-collaboration-cross-tenant-access/5-exercise-configure-organizational-settings.yml",
       "redirect_url": "/training/modules/secure-b2b-collaboration-cross-tenant-access/4-exercise-configure-organizational-settings",
       "redirect_document_id": true
-    }, 
+    },
     {
       "source_path_from_root": "/learn-pr/azure/secure-b2b-collaboration-cross-tenant-access/6-knowledge-check.yml",
       "redirect_url": "/training/modules/secure-b2b-collaboration-cross-tenant-access/5-knowledge-check",
       "redirect_document_id": true
-    }, 
+    },
     {
       "source_path_from_root": "/learn-pr/azure/secure-b2b-collaboration-cross-tenant-access/7-summary.yml",
       "redirect_url": "/training/modules/secure-b2b-collaboration-cross-tenant-access/6-summary",
       "redirect_document_id": true
-    },   
+    },
     {
       "source_path": "learn-pr/pytorch/intro-computer-vision-pytorch/4-multilayer-dense-neural-networks.md",
       "redirect_url": "/training/modules/intro-computer-vision-pytorch/3-train-dense-neural-networks",
@@ -3663,6 +3663,136 @@
     {
       "source_path": "learn-pr/cela-accessibility/intro-accessibility-disability/03-summary-and-resources.md",
       "redirect_url": "/training/modules/intro-accessibility-disability/04-summary-and-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/00-accessibility-checker.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/01-word.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/02-powerpoint.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/03-excel.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/04-outlook.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/05-knowledge-check.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/06-summary-resources.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessibility-features/00-windows-10-accessibility.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessibility-features/01-gaming-features-and-tools.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessibility-features/02-microsoft-365-features.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessibility-features/03-knowledge-check.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessibility-features/04-summary-resources.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessibility-features/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/intro-accessibility-disability/00-what-is-accessibility.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/intro-accessibility-disability/01-language-and-etiquette.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/intro-accessibility-disability/02-what-is-inclusion.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/intro-accessibility-disability/03-knowledge-check.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/intro-accessibility-disability/04-summary-and-resources.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/intro-accessibility-disability/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/digital-accessibility/00-web-development.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/digital-accessibility/01-app-development.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/digital-accessibility/02-knowledge-check.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/digital-accessibility/03-summary-and-resources.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/digital-accessibility/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/accessibility-fundamentals/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
       "redirect_document_id": false
     },
     {
@@ -7834,7 +7964,7 @@
       "source_path": "learn-pr/achievements/learn.visual-studio.visual-studio-intro.badge.yml",
       "redirect_url": "https://learn.microsoft.com/visualstudio/get-started/visual-studio-ide?view=vs-2022",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "learn-pr/paths/explore-data-science-tools-in-azure/index.md",
       "redirect_url": "/training/modules/get-started-ai-fundamentals",
@@ -9163,6 +9293,55 @@
     {
       "source_path": "learn-pr/databricks/understand-the-sql-dw-connector-with-azure-databricks/index.md",
       "redirect_url": "/training/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/2-create-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/3-exercise-create-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/4-add-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/5-exercise-add-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/6-build-deploy-static-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/7-exercise-build-deploy-static-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-static-webapp-gatsby-app-service/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
     },
     {
@@ -14405,7 +14584,7 @@
       "source_path": "learn-pr/wwl-azure/explore-iot-hub-automatic-device-management/1-introduction.md",
       "redirect_url": "/training/paths/use-iot-hub-apps-manage-iot-devices",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/wwl-azure/explore-iot-hub-automatic-device-management/2-implement-automatic-device-management.md",
       "redirect_url": "/training/paths/use-iot-hub-apps-manage-iot-devices",
@@ -16547,16 +16726,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/wwl-azure/software-composition-analysis/9-knowledge-check.md",
-      "redirect_url": "/training/modules/software-composition-analysis/10-knowledge-check",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/software-composition-analysis/10-summary.md",
-      "redirect_url": "/training/modules/software-composition-analysis/11-summary",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "learn-pr/wwl-azure/static-analyzers/4-knowledge-check.md",
       "redirect_url": "/training/modules/static-analyzers/5-knowledge-check",
       "redirect_document_id": true
@@ -18099,6 +18268,961 @@
     {
       "source_path": "learn-pr/wwl-azure/introduction-chef-puppet/6-what-is-puppet.md",
       "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/consume-rest-services/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/consume-rest-services-maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/consume-rest-services/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/consume-rest-services-maui/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/consume-rest-services/2-detect-network-connectivity.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/consume-rest-services-maui/2-detect-network-connectivity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/consume-rest-services/3-consume-rest-service-with-httpclient.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/consume-rest-services-maui/3-consume-rest-web-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/consume-rest-services/4-exercise-consume-rest-service-with-httpclient.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/consume-rest-services-maui/5-exercise-consume-rest-web-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/consume-rest-services/5-use-platform-specific-network-features.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/consume-rest-services-maui/4-use-platform-specific-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/consume-rest-services/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/consume-rest-services-maui/6-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-a-mobile-app-with-xamarin-forms/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-mobile-and-desktop-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-a-mobile-app-with-xamarin-forms/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-mobile-and-desktop-apps/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-a-mobile-app-with-xamarin-forms/2-create-a-xf-project-in-vs.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-mobile-and-desktop-apps/3-create-a-maui-project-visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-a-mobile-app-with-xamarin-forms/3-exercise-create-your-first-xamarin-forms-application.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-mobile-and-desktop-apps/4-exercise-create-your-first-maui-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-a-mobile-app-with-xamarin-forms/4-design-your-first-xamarin-forms-ui.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-mobile-and-desktop-apps/5-add-controls-to-the-ui",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-a-mobile-app-with-xamarin-forms/5-exercise-create-phone-number-translator-app.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-mobile-and-desktop-apps/6-exercise-create-phone-number-translator-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-a-mobile-app-with-xamarin-forms/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-mobile-and-desktop-apps/7-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/index.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/handlers/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/handlers/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/2-understand-renderers.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/handlers/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/3-customize-existing-elements-with-derived-renderers.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/handlers/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/4-exercise-extend-an-existing-renderer.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/handlers/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/5-create-new-element-and-renderer.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/handlers/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/6-exercise-create-custom-element.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/handlers/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/7-Send-notifications-between-renderer-element.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/handlers/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/8-exercise-communicate-between-renderer-element.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/handlers/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/handlers/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-multi-page-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-multi-page-apps/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/2-implement-stack-navigation.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-multi-page-apps/2-implement-flyout-navigation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/3-exercise-navigate-between-pages-using-stack-navigation.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-multi-page-apps/3-exercise-implement-flyout-navigation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/4-display-content-requiring-user-action-using-modal-pages.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-multi-page-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/5-implement-tab-navigation.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-multi-page-apps/4-implement-tab-navigation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/6-exercise-navigate-between-pages-using-tab-navigation.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-multi-page-apps/5-exercise-implement-tab-navigation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-multi-page-apps/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-user-interface-xaml/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-user-interface-xaml/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/2-benefits-of-using-xaml.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-user-interface-xaml/2-xaml-benefits",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/3-types-and-properties-in-xamarin-forms-xaml.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-user-interface-xaml/3-types-properties-maui-xaml",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/4-event-handling-in-xaml.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-user-interface-xaml/4-event-handling-xaml",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/5-exercise-create-your-first-xaml-page.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-user-interface-xaml/5-exercise-create-first-xaml-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/6-xaml-markup-extensions.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-user-interface-xaml/6-xaml-markup-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/7-platform-specific-values-in-xaml.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-user-interface-xaml/7-platform-specific-values-xaml",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/8-exercise-add-behavior-to-your-xaml-page.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-user-interface-xaml/8-exercise-add-behavior-xaml-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-user-interface-xaml/9-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/customize-xaml-pages-layout",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/customize-xaml-pages-layout/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/2-specify-the-size-of-a-view.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/customize-xaml-pages-layout/2-specify-size-view",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/3-exercise-explore-alignment-options.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/customize-xaml-pages-layout/3-exercise-explore-alignment-options",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/4-arrange-view-with-stacklayout.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/customize-xaml-pages-layout/4-arrange-views-stacklayout",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/5-exercise-use-stacklayout-to-build-a-ui.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/customize-xaml-pages-layout/5-exercise-stacklayout-build-user-interface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/6-arrange-view-with-grid.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/customize-xaml-pages-layout/6-arrange-views-grid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/7-exercise-use-grid-to-build-a-ui.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/customize-xaml-pages-layout/7-exercise-grid-build-user-interface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/customize-xaml-pages-layout/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-xamarin-forms-listview/index.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/listview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-xamarin-forms-listview/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/listview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-xamarin-forms-listview/2-create-a-custom-cell-layout.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/listview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-xamarin-forms-listview/3-use-multiple-cell-layouts-in-a-listview.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/listview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-xamarin-forms-listview/4-exercise-create-and-select-custom-cells.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/listview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-xamarin-forms-listview/5-separate-data-into-groups.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/listview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-xamarin-forms-listview/6-exercise-group-rows-by-first-letter.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/listview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-xamarin-forms-listview/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/listview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/index.md",
+      "redirect_url": "/training/modules/design-mvvm-viewmodel/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/1-introduction.md",
+      "redirect_url": "training/modules/design-mvvm-viewmodel/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/2-what-is-mvvm.md",
+      "redirect_url": "/training/modules/design-mvvm-viewmodel/2-what-is-mvvm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/3-use-a-viewmodel.md",
+      "redirect_url": "/training/modules/design-mvvm-viewmodel/3-use-viewmodel",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/4-exercise-manage-selection-with-a-viewmodel.md",
+      "redirect_url": "/training/modules/design-mvvm-viewmodel/4-exercise-manage-selection-with-viewmodel",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/5-use-commands-in-a-viewmodel.md",
+      "redirect_url": "/training/modules/design-mvvm-viewmodel/5-use-commands-viewmodel",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/6-summary.md",
+      "redirect_url": "/training/modules/design-mvvm-viewmodel/7-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-shared-resources/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-shared-resources/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/2-define-and-use-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-shared-resources/2-define-and-use-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/3-exercise-use-page-level-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-shared-resources/3-exercise-use-page-level-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/4-use-and-update-dynamic-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-shared-resources/4-use-and-update-dynamic-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/5-exercise-use-dynamicresource-to-update-elements.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-shared-resources/5-exercise-use-dynamic-resources-to-update-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/6-create-consistent-ui-with-styles.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-shared-resources/6-create-consistent-ui-by-using-styles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/7-exercise-create-and-apply-a-style.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-shared-resources/7-exercise-create-and-apply-a-style",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/8-create-and-use-applicationwide-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-shared-resources/8-create-and-use-application-wide-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/9-exercise-use-application-wide-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-shared-resources/9-exercise-use-application-wide-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/10-apply-user-accessibility-choices-with-builtin-styles.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-shared-resources/11-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/11-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-shared-resources/11-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-collections-in-xamarin-forms-apps-with-listview/index.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/listview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-collections-in-xamarin-forms-apps-with-listview/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/listview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-collections-in-xamarin-forms-apps-with-listview/2-display-collection-with-listview.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/listview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-collections-in-xamarin-forms-apps-with-listview/3-exercise-display-collection-with-listview.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/listview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-collections-in-xamarin-forms-apps-with-listview/4-dynamically-add-and-remove-listview-items.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/listview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-collections-in-xamarin-forms-apps-with-listview/5-customize-listview-rows.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/listview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-collections-in-xamarin-forms-apps-with-listview/6-exercise-customize-row-using-built-in-cell-types.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/listview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-collections-in-xamarin-forms-apps-with-listview/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/listview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-multi-page-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-multi-page-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/2-choose-between-split-and-pop-over-for-your-master-view.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-multi-page-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/3-define-ui-for-drawer-navigation.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-multi-page-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/4-exercise-define-drawer-navigation-ui-using-xamarin-forms.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-multi-page-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/5-navigate-between-pages-in-a-drawer-menu.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-multi-page-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/6-exercise-respond-to-item-selection-in-your-drawer-menu.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-multi-page-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/7-display-a-collection-with-split-view.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-multi-page-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/8-exercise-display-a-collection-with-master-detail-split-view.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-multi-page-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-multi-page-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/index.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/architecture/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/architecture/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/2-share-code-using-net-standard-libraries.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/architecture/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/3-use-an-interface-to-create-an-abstraction.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/architecture/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/4-use-an-abstract-class-to-create-an-abstraction.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/architecture/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/5-use-inversion-of-control-to-manage-platform-specific-dependencies.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/architecture/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/6-locate-dependencies-using-the-factory-pattern.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/architecture/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/7-exercise-use-the-factory-pattern-to-access-a-dependency-from-shared-code.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/architecture/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/8-use-a-service-locator-to-register-and-retrieve-dependencies.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/architecture/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/9-exercise-add-an-abstraction-and-service-locator-into-your-project-to-find-and-use-a-platform-specific-feature.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/architecture/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/10-use-an-ioc-container-to-automatically-inject-dependencies.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/architecture/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/11-exercise-switch-to-an-ioc-container-and-inject-your-dependency-into-your-code.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/architecture/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/12-summary.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/architecture/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/intro-to-app-center/index.md",
+      "redirect_url": "https://learn.microsoft.com/appcenter/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/intro-to-app-center/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/appcenter/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/intro-to-app-center/2-what-is-app-center.md",
+      "redirect_url": "https://learn.microsoft.com/appcenter/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/intro-to-app-center/3-how-app-center-build-works.md",
+      "redirect_url": "https://learn.microsoft.com/appcenter/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/intro-to-app-center/4-how-app-center-test-works.md",
+      "redirect_url": "https://learn.microsoft.com/appcenter/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/intro-to-app-center/5-how-app-center-distribute-works.md",
+      "redirect_url": "https://learn.microsoft.com/appcenter/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/intro-to-app-center/6-how-app-center-diagnostics-works.md",
+      "redirect_url": "https://learn.microsoft.com/appcenter/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/intro-to-app-center/7-how-app-center-analytics-works.md",
+      "redirect_url": "https://learn.microsoft.com/appcenter/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/intro-to-app-center/8-exercise-create-app-center-account.md",
+      "redirect_url": "https://learn.microsoft.com/appcenter/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/intro-to-app-center/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/appcenter/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/index.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/2-what-is-xamarin-android.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/3-exercise-create-a-xamarin-android-tipcalculator-app.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/4-build-a-ui-for-an-activity.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/5-exercise-add-views-to-the-tipcalculator-app-ui.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/6-write-behavior-for-an-activity.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/7-exercise-add-behavior-to-the-tipcalculator-app-activity.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/8-update-your-android-sdk.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/index.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/2-what-is-xamarin-ios.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/3-create-a-xamarin-ios-app.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/4-exercise-create-a-tip-calculator-app.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/5-explore-ios-terminology.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/6-add-views-to-your-app.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/7-add-controls-and-behavior-to-your-app.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/8-exercise-add-ui-and-behavior-to-a-tip-calculator-app.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/prepare-to-publish-your-xamarin-application/index.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/deployment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/prepare-to-publish-your-xamarin-application/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/deployment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/prepare-to-publish-your-xamarin-application/2-prepare-your-application-for-publishing.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/deployment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/prepare-to-publish-your-xamarin-application/3-preparing-for-release.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/deployment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/prepare-to-publish-your-xamarin-application/4-link-your-application.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/deployment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/prepare-to-publish-your-xamarin-application/5-preserve-critical-code.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/deployment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/prepare-to-publish-your-xamarin-application/6-publish-your-application.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/deployment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/prepare-to-publish-your-xamarin-application/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/deployment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/separate-ui-and-logic-with-data-binding/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/separate-ui-and-logic-with-data-binding/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding/2-use-databinding-in-xamarin-forms.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/separate-ui-and-logic-with-data-binding/3-use-data-bindings-xaml",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding/3-exercise-replace-code-with-data-bindings.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/separate-ui-and-logic-with-data-binding/4-exercise-replace-code-with-data-bindings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding/4-customize-databinding-capabilities.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/separate-ui-and-logic-with-data-binding/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding/5-exercise-implement-inotifypropertychanged.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/separate-ui-and-logic-with-data-binding/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding/6-databinding-mismatched-types.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/separate-ui-and-logic-with-data-binding/5-databinding-mistatched-types",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding/7-exercise-use-value-converter.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/separate-ui-and-logic-with-data-binding/6-exercise-create-converter",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/separate-ui-and-logic-with-data-binding/7-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/store-local-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/store-local-data/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/2-compare-storage-options.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/store-local-data/2-compare-storage-options",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/3-store-data-locally-with-sqlite.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/store-local-data/3-store-data-locally-with-sqlite",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/4-exercise-store-data-locally-with-sqlite.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/store-local-data/4-exercise-store-data-locally-with-sqlite",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/5-use-sqlite-asynchronously.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/store-local-data/5-use-sqlite-asynchronously",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/6-exercise-use-sqlite-asynchronously.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/store-local-data/6-exerise-use-sqlite-asynchronously",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/store-local-data/7-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/use-effects-in-xamarin-forms/index.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/handlers/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/use-effects-in-xamarin-forms/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/handlers/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/use-effects-in-xamarin-forms/2-apply-an-effect-to-an-element.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/handlers/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/use-effects-in-xamarin-forms/3-create-a-platform-effect.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/handlers/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/use-effects-in-xamarin-forms/4-exercise-create-an-effect.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/handlers/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/use-effects-in-xamarin-forms/5-configure-an-effect-with-attached-properties.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/handlers/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/use-effects-in-xamarin-forms/6-exercise-add-configurable-properties-to-an-effect.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/handlers/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/use-effects-in-xamarin-forms/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/handlers/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-accessibility/index.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/fundamentals/accessibility",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-accessibility/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/fundamentals/accessibility",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-accessibility/2-accessibility-features.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/fundamentals/accessibility",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-accessibility/3-exercise-enable-screen-readers.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/fundamentals/accessibility",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-accessibility/4-automation-properties.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/fundamentals/accessibility",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-accessibility/5-exercise-add-automation-properties.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/fundamentals/accessibility",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-accessibility/6-keyboard-accessibility.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/fundamentals/accessibility",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-accessibility/7-exercise-keyboard-accessibility.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/fundamentals/accessibility",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-accessibility/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/fundamentals/accessibility",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/index.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/twopaneview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/twopaneview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/2-display-two-screens.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/twopaneview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/3-exercise-add-twopaneview.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/twopaneview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/4-span-unspan.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/twopaneview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/5-exercise-use-dualscreeninfo.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/twopaneview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/6-larger-screens.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/twopaneview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/7-exercise-tablet-support.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/twopaneview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/8-hinge-angle.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/twopaneview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/twopaneview",
       "redirect_document_id": false
     },
     {
@@ -20045,7 +21169,7 @@
       "source_path": "learn-pr/azure/create-publish-webapp-app-service-vs-code/8-summary.md",
       "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-vscode",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "learn-pr/wwl-data-ai/work-dataframes-columns-azure-databricks/index.md",
       "redirect_url": "/training/modules/use-apache-spark-azure-databricks/",
@@ -26189,27 +27313,27 @@
       "source_path": "learn-pr/azure/ms-learn-live-foundations-serverless-developers/4-configure-http-action.yml",
       "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/serverless/architectures/web-app",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "learn-pr/azure/ms-learn-live-foundations-serverless-developers/5-configure-url-route.yml",
       "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/serverless/architectures/web-app",
       "redirect_document_id": false
-    },   
+    },
     {
       "source_path": "learn-pr/azure/ms-learn-live-foundations-serverless-developers/6-read-input-data-from-url.yml",
       "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/serverless/architectures/web-app",
       "redirect_document_id": false
-    },  
+    },
     {
       "source_path": "learn-pr/azure/ms-learn-live-foundations-serverless-developers/7-return-data-to-caller.yml",
       "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/serverless/architectures/web-app",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure/ms-learn-live-foundations-serverless-developers/8-post-complex-data.yml",
       "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/serverless/architectures/web-app",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure/ms-learn-live-foundations-serverless-developers/9-add-remaining-endpoints.yml",
       "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/serverless/architectures/web-app",
@@ -26864,7 +27988,7 @@
       "source_path": "learn-pr/ai-business-school/responsible-ai-governing-practices/3-organizational-model.md",
       "redirect_url": "https://learn.microsoft.com/ai/",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure/intro-to-mixed-reality-design/5-mixed-reality-resources.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-mixed-reality-design/7-mixed-reality-resources",
@@ -27549,7 +28673,7 @@
       "redirect_url": "https://learn.microsoft.com/training/modules/migrate-sql-workloads-azure-sql-databases",
       "redirect_document_id": false
     },
-    { 
+    {
       "source_path": "learn-pr/wwl-data-ai/migrate-sql-workloads-azure-sql-databases/6-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/migrate-sql-workloads-azure-sql-databases",
       "redirect_document_id": false
@@ -28877,21 +30001,6 @@
     {
       "source_path": "learn-pr/wwl-azure/explore-azure-automation-devops/10-exercise-create-run-workflow-runbook.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-automation-devops/11-exercise-create-run-workflow-runbook",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/explore-azure-automation-devops/11-examine-checkpoint-parallel-processing.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-automation-devops/12-examine-checkpoint-parallel-processing",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/explore-azure-automation-devops/12-knowledge-check.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-automation-devops/13-knowledge-check",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/explore-azure-automation-devops/13-summary.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-automation-devops/14-summary",
       "redirect_document_id": false
     },
     {
@@ -30876,22 +31985,22 @@
       "source_path": "learn-pr/wwl-sci/create-configure-manage-identities/9-exercise-restore-remove-deleted-users.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/create-configure-manage-identities/4-exercise-restore-remove-deleted-users",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "learn-pr/wwl-azure/make-data-available-azure-machine-learning/1b-video.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/make-data-available-azure-machine-learning/1-introduction",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "learn-pr/wwl-azure/find-best-classification-model-automated-machine-learning/1b-video.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/find-best-classification-model-automated-machine-learning/1-introduction",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "learn-pr/wwl-azure/run-training-script-command-job-azure-machine-learning/1b-video.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/run-training-script-command-job-azure-machine-learning/1-introduction",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "learn-pr/wwl-azure/run-pipelines-azure-machine-learning/1b-video.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/run-pipelines-azure-machine-learning/1-introduction",
@@ -31091,7 +32200,7 @@
       "source_path": "learn-pr/wwl-data-ai/create-language-model-with-language-understanding/4-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/create-language-model-with-language-understanding/6-summary",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/endpoint-manager/determine-endpoint-implementation/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/intune-planning-guide",
@@ -32150,7 +33259,7 @@
         "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/1-introduction.yml",
         "redirect_url": "/training/paths/create-microservices-with-dotnet",
         "redirect_document_id": false
-    },    
+    },
     {
         "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/code/deploy/k8s/helm-simple/catalog/templates/configmap.yaml",
         "redirect_url": "/training/paths/create-microservices-with-dotnet",
@@ -32692,6 +33801,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/azure-diagnose-application-startup-errors-with-kudu-console/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/test/troubleshoot-azure-iis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-diagnose-application-startup-errors-with-kudu-console/2-kudu-console-concepts.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/test/troubleshoot-azure-iis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-diagnose-application-startup-errors-with-kudu-console/3-app-startup-errors.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/test/troubleshoot-azure-iis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-diagnose-application-startup-errors-with-kudu-console/4-exercise-implement-a-web-application.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/test/troubleshoot-azure-iis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-diagnose-application-startup-errors-with-kudu-console/5-exercise-diagnose-application-event-log-using-kudu-console.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/test/troubleshoot-azure-iis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-diagnose-application-startup-errors-with-kudu-console/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/test/troubleshoot-azure-iis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-diagnose-application-startup-errors-with-kudu-console/index.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/test/troubleshoot-azure-iis",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/intro-to-personalizer/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
       "redirect_document_id": false
@@ -32759,6 +33903,146 @@
     {
       "source_path": "learn-pr/azure/automate-deployments-github-actions-azure/6-summary.yml" ,
       "redirect_url": "https://learn.microsoft.com/training/modules/github-actions-cd",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/enterprise-scale-architecture/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-introduction/1-introduction.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-introduction/2-vision-customer-challenges.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-introduction/3-enterprise-scale-architecture-approach.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-introduction/4-enterprise-scale-design-principles.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-principles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-introduction/5-summary.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-introduction/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-networking/1-introduction.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/network-topology-and-connectivity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-networking/2-ip-addressing.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-ip-addressing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-networking/3-dns.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/private-link-and-dns-integration-at-scale",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-networking/4-network-topology.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/define-an-azure-network-topology",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-networking/5-connectivity.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/connectivity-to-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-networking/6-network-segmentation.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-landing-zone-network-segmentation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-networking/7-network-encryption.yml" ,
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/define-network-encryption-requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-networking/8-summary.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/network-topology-and-connectivity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-networking/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/network-topology-and-connectivity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-operations/1-introduction.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-operations/2-management-monitoring.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-operations/3-business-continuity-disaster-recovery.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/management-business-continuity-disaster-recovery",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-operations/4-security-governance-compliance.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/governance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-operations/5-summary.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-operations/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-organization/1-introduction.yml" ,
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-areas",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-organization/2-enterprise-enrollment-azure-ad-tenants.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/azure-billing-enterprise-agreement",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-organization/3-identity-access-management.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-organization/4-management-group-subscription-organization.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/resource-org",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-organization/5-summary.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-areas",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enterprise-scale-organization/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-areas",
       "redirect_document_id": false
     },
     {
@@ -36360,6 +37644,1135 @@
       "source_path": "learn-pr/wwl-azure/security-storage/9-bring-your-own-key-specification.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/security-storage//10-bring-your-own-key-specification",
       "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/7-implement-azure-backup-server.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-hybrid-backup-recovery-windows-server-iaas/",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/8-compare-backup-options.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-hybrid-backup-recovery-windows-server-iaas/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-data-ai/explore-fundamentals-stream-processing/8-fabric-realtime-analaytics.md",
+      "redirect_url": "/training/modules/explore-fundamentals-stream-processing/8-fabric-realtime-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/1-introduction.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/2-view-manage-service-provider-activities.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/3-use-centralized-monitor-scalable-way.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/4-governance-scale-manage-customer-tenants.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/5-secure-customer-resources-scale.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/6a-knowledge-check.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/6-manage-hybrid-scale.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/7-summary.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/index.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+   {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-security-posture/2-implement-azure-security-center.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-security-posture/2-implement-microsoft-defender-for-cloud",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/plan-azure-kubernetes-service-deployment/10-summary.md",
+      "redirect_url": "/training/modules/plan-azure-kubernetes-service-deployment/9-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/plan-azure-kubernetes-service-deployment/8-monitor-and-log.md",
+      "redirect_url": "/training/modules/plan-azure-kubernetes-service-deployment/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/plan-azure-kubernetes-service-deployment/9-knowledge-check.md",
+      "redirect_url": "/training/modules/plan-azure-kubernetes-service-deployment/8-knowledge-check",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/create-log-analytics-workspace-microsoft-defender-cloud/2-enable-defender-cloud-azure-subscription.md",
+      "redirect_url": "/training/modules/create-log-analytics-workspace-microsoft-defender-cloud/",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/18-connect-your-git-lab-environment-microsoft-defender-cloud.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-monitoring-automation-solutions/5-respond-threats-by-using-playbooks-with-automation-rules-microsoft-sentinel.md",
+      "redirect_url": "/training/modules/security-monitoring-automation-solutions/6-respond-threats-by-using-playbooks-with-automation-rules-microsoft-sentinel",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-monitoring-automation-solutions/6-knowledge-check.md",
+      "redirect_url": "/training/modules/security-monitoring-automation-solutions/7-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-monitoring-automation-solutions/7-summary.md",
+      "redirect_url": "/training/modules/security-monitoring-automation-solutions/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/10-flow-logging-network-security-groups.md",
+      "redirect_url": "/training/modules/security-virtual-networks/11-flow-logging-network-security-groups",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/11-knowledge-check.md",
+      "redirect_url": "/training/modules/security-virtual-networks/12-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/12-summary.md",
+      "redirect_url": "/training/modules/security-virtual-networks/13-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/2-network-security-groups-application-security-groups.md",
+      "redirect_url": "/training/modules/security-virtual-networks/3-network-security-groups-application-security-groups",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/3-user-defined-routes.md",
+      "redirect_url": "/training/modules/security-virtual-networks/4-user-defined-routes",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/4-virtual-network-peering-gateways.md",
+      "redirect_url": "/training/modules/security-virtual-networks/5-virtual-network-peering-gateways",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/5-virtual-wide-area-network.md",
+      "redirect_url": "/training/modules/security-virtual-networks/6-virtual-wide-area-network",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/6-secure-virtual-private-network-connectivity-point-to-site-site-to-site.md",
+      "redirect_url": "/training/modules/security-virtual-networks/7-secure-virtual-private-network-connectivity-point-to-site-site-to-site",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/7-azure-expressroute.md",
+      "redirect_url": "/training/modules/security-virtual-networks/8-azure-expressroute",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/8-expressroute-encryption.md",
+      "redirect_url": "/training/modules/security-virtual-networks/9-expressroute-encryption",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/9-secure-paas-deployments.md",
+      "redirect_url": "/training/modules/security-virtual-networks/10-secure-paas-deployments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/index.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/1-introduction.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/2-what-is-data-subject-request.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/3-what-is-dsr-for-azure-ad-microsoft-service-accounts.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/4-what-is-dsr-for-office-365-applications.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/5-how-to-respond-to-dsr-for-customer-data.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/6-how-to-respond-to-dsr-for-system-generated-logs.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/7-exercise-fulfill-dsr-in-azure-active-directory.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/8-knowledge-check.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-data-subject-requests/9-summary.yml",
+      "redirect_url": "/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/10-provide-access-key-vault-keys-certificates-secrets.md",
+      "redirect_url": "/training/modules/governance-security/11-provide-access-key-vault-keys-certificates-secrets",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/governance-security/11-azure-key-vault-keys-secrets-certificates.md",
+      "redirect_url": "/training/modules/governance-security/12-azure-key-vault-keys-secrets-certificates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/12-configure-cryptographic-key-auto-rotation-azure-key-vault.md",
+      "redirect_url": "/training/modules/governance-security/13-configure-cryptographic-key-auto-rotation-azure-key-vault",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/13-azure-key-vault-backup-restore.md",
+      "redirect_url": "/training/modules/governance-security/14-azure-key-vault-backup-restore",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/14-knowledge-check.md",
+      "redirect_url": "/training/modules/governance-security/15-knowledge-check",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/governance-security/15-summary.md",
+      "redirect_url": "/training/modules/governance-security/16-summary",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/governance-security/2-create-custom-azure-security-initiatives-policies.md",
+      "redirect_url": "/training/modules/governance-security/3-create-custom-azure-security-initiatives-policies",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/governance-security/3-azure-blueprints.md",
+      "redirect_url": "/training/modules/governance-security/4-azure-blueprints",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/governance-security/4-infrastructure-security-architecture.md",
+      "redirect_url": "/training/modules/governance-security/5-infrastructure-security-architecture",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/5-azure-key-vault.md",
+      "redirect_url": "/training/modules/governance-security/6-azure-key-vault",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/6-azure-key-vault-security.md",
+      "redirect_url": "/training/modules/governance-security/7-azure-key-vault-security",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/governance-security/7-azure-key-vault-authentication.md",
+      "redirect_url": "/training/modules/governance-security/8-azure-key-vault-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/8-create-key-vault-use-azure-portal.md",
+      "redirect_url": "/training/modules/governance-security/9-create-key-vault-use-azure-portal",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/governance-security/9-azure-dedicated-hardware-security-module.md",
+      "redirect_url": "/training/modules/governance-security/10-azure-dedicated-hardware-security-module",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/2-what-is-microsoft-entra-id.md",
+      "redirect_url": "/training/modules/manage-identities-microsoft-entra-id/2-microsoft-entra-id-overview",
+      "redirect_document_id": false
+    },{
+      "source_path": "learn-pr/github/configure-dependabot-security-updates-on-github-repo/6-exercise.yml",
+      "redirect_url": "/training/modules/configure-dependabot-security-updates-on-github-repo/7-exercise",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/github/configure-dependabot-security-updates-on-github-repo/7-knowledge-check.yml",
+      "redirect_url": "/training/modules/configure-dependabot-security-updates-on-github-repo/8-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/github/configure-dependabot-security-updates-on-github-repo/8-summary.yml",
+      "redirect_url": "/training/modules/configure-dependabot-security-updates-on-github-repo/9-summary",
+      "redirect_document_id": true
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/advanced-security-compute/10-azure-security-baseline-api-management.md",
+      "redirect_url": "/training/modules/advanced-security-compute/11-azure-security-baseline-api-management",
+      "redirect_document_id": true
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/advanced-security-compute/11-knowledge-check.md",
+      "redirect_url": "/training/modules/advanced-security-compute/12-knowledge-check",
+      "redirect_document_id": true
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/advanced-security-compute/12-summary.md",
+      "redirect_url": "/training/modules/advanced-security-compute/13-summary",
+      "redirect_document_id": true
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/advanced-security-compute/3-best-practices-cluster-isolation-azure-kubernetes-service.md",
+      "redirect_url": "/training/modules/advanced-security-compute/4-best-practices-cluster-isolation-azure-kubernetes-service",
+      "redirect_document_id": true
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/advanced-security-compute/4-microsoft-defender-containers.md",
+      "redirect_url": "/training/modules/advanced-security-compute/5-microsoft-defender-containers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/advanced-security-compute/5-best-practices-authentication-authorization.md",
+      "redirect_url": "/training/modules/advanced-security-compute/6-best-practices-authentication-authorization",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/advanced-security-compute/6-monitor-container-resources-azure-container-instances.md",
+      "redirect_url": "/training/modules/advanced-security-compute/7-monitor-container-resources-azure-container-instances",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/advanced-security-compute/7-security-considerations-azure-container-instances.md",
+      "redirect_url": "/training/modules/advanced-security-compute/8-security-considerations-azure-container-instances",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/advanced-security-compute/8-azure-container-registry-roles-permissions.md",
+      "redirect_url": "/training/modules/advanced-security-compute/9-azure-container-registry-roles-permissions",
+      "redirect_document_id": true
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/advanced-security-compute/9-azure-data-encryption.md",
+      "redirect_url": "/training/modules/advanced-security-compute/10-azure-data-encryption",
+      "redirect_document_id": true
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/identify-technical-debt/6-integrate-other-code-quality-tools.md",
+      "redirect_url": "/training/modules/identify-technical-debt/7-integrate-other-code-quality-tools",
+      "redirect_document_id": true
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/identify-technical-debt/7-plan-effective-code-reviews.md",
+      "redirect_url": "/training/modules/identify-technical-debt/8-plan-effective-code-reviews",
+      "redirect_document_id": true
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/identify-technical-debt/8-knowledge-check.md",
+      "redirect_url": "/training/modules/identify-technical-debt/9-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/identify-technical-debt/9-summary.md",
+      "redirect_url": "/training/modules/identify-technical-debt/10-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-processes-automate-application-analytics/5-knowledge-check.md",
+      "redirect_url": "/training/modules/design-processes-automate-application-analytics/6-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-processes-automate-application-analytics/6-summary.md",
+      "redirect_url": "/training/modules/design-processes-automate-application-analytics/7-summary",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/wwl-azure/explore-package-dependencies/2-what-dependency-management.md",
+      "redirect_url": "/training/modules/explore-package-dependencies/2-what-is-dependency-management",
+      "redirect_document_id": false
+    }, 
+    {
+    "source_path": "learn-pr/paths/azure-cosmos-db-for-postgresql/index.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/model-data-azure-cosmos-db-postgresql/index.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/model-data-azure-cosmos-db-postgresql/1-introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/model-data-azure-cosmos-db-postgresql/2-classify-tables-based-on-processing.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+     "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/model-data-azure-cosmos-db-postgresql/3-exercise-create-tables.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/model-data-azure-cosmos-db-postgresql/4-scaffold-data-for-distribution.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/model-data-azure-cosmos-db-postgresql/5-exercise-create-scaffolding.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/model-data-azure-cosmos-db-postgresql/6-partition-timeseries-data.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/model-data-azure-cosmos-db-postgresql/7-exercise-create-timeseries-partitions.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/model-data-azure-cosmos-db-postgresql/8-alter-scaffolding-in-a-distributed-environment.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/model-data-azure-cosmos-db-postgresql/9-exercise-alter-scaffolding.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/model-data-azure-cosmos-db-postgresql/10-knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/model-data-azure-cosmos-db-postgresql/11-summary.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/ingest-query-data-using-azure-cosmos-db-for-postgresql/index.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/ingest-query-data-using-azure-cosmos-db-for-postgresql/1-introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/ingest-query-data-using-azure-cosmos-db-for-postgresql/2-load-data.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/ingest-query-data-using-azure-cosmos-db-for-postgresql/3-exercise-load-data.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/ingest-query-data-using-azure-cosmos-db-for-postgresql/4-data-distribution.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/ingest-query-data-using-azure-cosmos-db-for-postgresql/5-exercise-data-distribution.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/ingest-query-data-using-azure-cosmos-db-for-postgresql/6-query-execution.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/ingest-query-data-using-azure-cosmos-db-for-postgresql/7-query-distributed-tables.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/ingest-query-data-using-azure-cosmos-db-for-postgresql/8-query-anti-patterns.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/ingest-query-data-using-azure-cosmos-db-for-postgresql/9-exercise-query-data.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/ingest-query-data-using-azure-cosmos-db-for-postgresql/10-unsupported-features.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/ingest-query-data-using-azure-cosmos-db-for-postgresql/11-knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/ingest-query-data-using-azure-cosmos-db-for-postgresql/12-summary.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/extend-the-functionality-of-azure-cosmos-db-for-postgresql-using-extensions/index.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/extend-the-functionality-of-azure-cosmos-db-for-postgresql-using-extensions/1-introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/extend-the-functionality-of-azure-cosmos-db-for-postgresql-using-extensions/2-citus.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/extend-the-functionality-of-azure-cosmos-db-for-postgresql-using-extensions/3-exercise-explore-citus.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/extend-the-functionality-of-azure-cosmos-db-for-postgresql-using-extensions/4-apply-extensions.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/extend-the-functionality-of-azure-cosmos-db-for-postgresql-using-extensions/5-azure-storage.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/extend-the-functionality-of-azure-cosmos-db-for-postgresql-using-extensions/6-exercise-azure-storage.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/extend-the-functionality-of-azure-cosmos-db-for-postgresql-using-extensions/7-knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/extend-the-functionality-of-azure-cosmos-db-for-postgresql-using-extensions/8-summary.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/manage-performance-availability-azure-cosmos-db-postgresql/index.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/manage-performance-availability-azure-cosmos-db-postgresql/1-introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/manage-performance-availability-azure-cosmos-db-postgresql/2-scale-and-rebalance-data.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/manage-performance-availability-azure-cosmos-db-postgresql/3-exercise-scale-and-rebalance-data.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/manage-performance-availability-azure-cosmos-db-postgresql/4-work-with-read-replicas.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/manage-performance-availability-azure-cosmos-db-postgresql/5-exercise-manage-read-replicas.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/manage-performance-availability-azure-cosmos-db-postgresql/6-configure-high-availability.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/manage-performance-availability-azure-cosmos-db-postgresql/7-exercise-configure-high-availability.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/manage-performance-availability-azure-cosmos-db-postgresql/8-knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/manage-performance-availability-azure-cosmos-db-postgresql/9-summary.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql/index.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql/1-introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql/2-use-cases-for-single-node.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql/3-exercise-create-single-node-cluster.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql/4-understand-architecture.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql/5-exercise-scale-nodes.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql/6-address-schema-concerns.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql/7-distribute-tables.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql/8-exercise-distribute-tables.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql/9-knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql/10-summary.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql/index.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql/1-introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql/2-prep-tables-for-multi-tenant-data-architecture.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql/3-exercise-prep-tables-for-distribution.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql/4-distribute-tables-with-minimal-app-disruption.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql/5-exercise-distribute-multi-tenant-tables.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql/6-monitor-tenants.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql/7-isolate-tenants.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql/8-exercise-isolate-tenant.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql/9-knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql/10-summary.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/develop-monitor-status-dashboards/2-explore-azure-dashboards.md",
+      "redirect_url": "/training/modules/develop-monitor-status-dashboards/3-explore-azure-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-monitor-status-dashboards/3-examine-view-designer-azure-monitor.md",
+      "redirect_url": "/training/modules/develop-monitor-status-dashboards/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-monitor-status-dashboards/7-knowledge-check.md",
+      "redirect_url": "/training/modules/develop-monitor-status-dashboards/10-knowledge-check",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/develop-monitor-status-dashboards/8-summary.md",
+      "redirect_url": "/training/modules/develop-monitor-status-dashboards/11-summary",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/understand-concurrency-postgresql/3-describe-isolation-levels.md",
+      "redirect_url": "/training/modules/understand-concurrency-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-concurrency-postgresql/4-understand-lock.md",
+      "redirect_url": "/training/modules/understand-concurrency-postgresql/4-understand-locking",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-concurrency-postgresql/5-exercise-understand-lock.md",
+      "redirect_url": "/training/modules/understand-concurrency-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/index.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/1-introduction.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/2-lesson-authentication.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/3-exercise-authentication.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/4-lesson-publish.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/5-exercise-publish.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/6-lesson-clone.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/7-exercise-clone.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/8-knowledge-check.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/9-summary.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/get-started-github-and-visual-studio-code/index.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/understand-write-ahead-logging/2-describe.md",
+      "redirect_url": "/training/modules/understand-write-ahead-logging/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-write-ahead-logging/3-describe-replication-logical-decode.md",
+      "redirect_url": "/training/modules/understand-write-ahead-logging/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/procedures-functions-postgresql/2-create-stored-procedure-azure-database-for-postgresql.md",
+      "redirect_url": "/training/modules/procedures-functions-postgresql/2-create-stored-procedure-azure-database-postgresql",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/procedures-functions-postgresql/3-call-stored-procedure-azure-database-for-postgresql.md",
+      "redirect_url": "/training/modules/procedures-functions-postgresql/3-call-stored-procedure-azure-database-postgresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/procedures-functions-postgresql/4-create-use-function-azure-database-for-postgresql.md",
+      "redirect_url": "/training/modules/procedures-functions-postgresql/4-create-function-azure-database-postgresql",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/procedures-functions-postgresql/5-exercise-create-stored-procedure-azure-database-for-postgresql.md",
+      "redirect_url": "/training/modules/procedures-functions-postgresql/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/secure-azure-database-for-postgresql/7-exercise-configure-permissions.md",
+      "redirect_url": "/training/modules/secure-azure-database-for-postgresql/6-exercise-configure-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/secure-azure-database-for-postgresql/8-knowledge-check.md",
+      "redirect_url": "/training/modules/secure-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/secure-azure-database-for-postgresql/9-summary.md",
+      "redirect_url": "/training/modules/secure-azure-database-for-postgresql/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-postgresql-query-process/4-exercise-practice-explain.md",
+      "redirect_url": "/training/modules/understand-postgresql-query-process/",
+      "redirect_document_id": false
+    },
+        {
+      "source_path": "learn-pr/wwl-azure/understand-client-server-communication-postgresql/4-exercise-explore-data-studio.md",
+      "redirect_url": "/training/modules/understand-client-server-communication-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/software-composition-analysis/10-knowledge-check.md",
+      "redirect_url": "/training/modules/software-composition-analysis/9-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/software-composition-analysis/11-summary.md",
+      "redirect_url": "/training/modules/software-composition-analysis/10-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/software-composition-analysis/4-integrate-whitesource-azure-devops-pipeline.md",
+      "redirect_url": "/training/modules/software-composition-analysis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/software-composition-analysis/5-implement-github-dependabot-alerts-security-updates.md",
+      "redirect_url": "/training/modules/software-composition-analysis/4-implement-github-dependabot-alerts-security-updates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/software-composition-analysis/6-integrate-software-composition-analysis-checks-into-pipelines.md",
+      "redirect_url": "/training/modules/software-composition-analysis/5-integrate-software-composition-analysis-checks-into-pipelines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/software-composition-analysis/7-examine-tools-for-assess-package-security-license-rate.md",
+      "redirect_url": "/training/modules/software-composition-analysis/6-examine-tools-for-assess-package-security-license-rate",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/software-composition-analysis/9-implement-security-compliance-azure-pipeline.md",
+      "redirect_url": "/training/modules/software-composition-analysis/",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/security-monitoring-and-governance/10-understand-microsoft-defender-identity.md",
+      "redirect_url": "/training/modules/security-monitoring-and-governance/9-understand-microsoft-defender-identity",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/security-monitoring-and-governance/11-knowledge-check.md",
+      "redirect_url": "/training/modules/security-monitoring-and-governance/12-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-monitoring-and-governance/12-summary.md",
+      "redirect_url": "/training/modules/security-monitoring-and-governance/13-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-monitoring-and-governance/9-explore-azure-blueprints.md",
+      "redirect_url": "/training/modules/security-monitoring-and-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/index.yml",
+      "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/1-introduction.yml",
+      "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/2-deployment-options.yml",
+      "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/3-permissions-roles.yml",
+      "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/4-connect-data-sources.yml",
+      "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/5-data-connection-methods.yml",
+      "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/6-manage-logs.yml",
+      "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/7-knowledge-check.yml",
+      "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/8-summary.yml",
+      "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
+      "redirect_document_id": false
+    },      
+      {
+      "source_path": "learn-pr/wwl-azure/explore-release-strategy-recommendations/10-summary.md",
+      "redirect_url": "/training/modules/explore-release-strategy-recommendations/9-summary",
+      "redirect_document_id": false
+    },
+       {
+      "source_path": "learn-pr/wwl-azure/explore-release-strategy-recommendations/3-exercise-select-your-delivery-deployment-cadence.md",
+      "redirect_url": "/training/modules/explore-release-strategy-recommendations/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/explore-release-strategy-recommendations/4-explore-release-approvals.md",
+      "redirect_url": "/training/modules/explore-release-strategy-recommendations/3-explore-release-approvals",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/explore-release-strategy-recommendations/5-exercise-set-up-manual-approvals.md",
+      "redirect_url": "/training/modules/explore-release-strategy-recommendations/",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/explore-release-strategy-recommendations/6-explore-release-gates.md",
+      "redirect_url": "/training/modules/explore-release-strategy-recommendations/4-explore-release-gates",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/explore-release-strategy-recommendations/7-use-release-gates-to-protect-quality.md",
+      "redirect_url": "/training/modules/explore-release-strategy-recommendations/5-use-release-gates-to-protect-quality",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/explore-release-strategy-recommendations/8-control-deployments-using-release-gates.md",
+      "redirect_url": "/training/modules/explore-release-strategy-recommendations/7-control-deployments-using-release-gates",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/explore-release-strategy-recommendations/9-knowledge-check.md",
+      "redirect_url": "/training/modules/explore-release-strategy-recommendations/8-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-modularize-tasks-templates/3-exercise-create-manage-task-groups.md",
+      "redirect_url": "/training/modules/manage-modularize-tasks-templates/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/manage-modularize-tasks-templates/4-explore-variables-release-pipelines.md",
+      "redirect_url": "/training/modules/manage-modularize-tasks-templates/3-explore-variables-release-pipelines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-modularize-tasks-templates/5-understand-variable-groups.md",
+      "redirect_url": "/training/modules/manage-modularize-tasks-templates/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-modularize-tasks-templates/6-exercise-create-manage-variable-groups.md",
+      "redirect_url": "/training/modules/manage-modularize-tasks-templates/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/manage-modularize-tasks-templates/7-knowledge-check.md",
+      "redirect_url": "/training/modules/manage-modularize-tasks-templates/5-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-modularize-tasks-templates/8-summary.md",
+      "redirect_url": "/training/modules/manage-modularize-tasks-templates/6-summary",
+      "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/introduction-to-secure-devops/8-exercise-threat-modeling.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-secure-devops",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/create-azure-resources-using-azure-resource-manager-templates/7-azure-deployment-using-resource-manager-templates.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/create-azure-resources-using-azure-resource-manager-templates",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/create-azure-resources-using-azure-resource-manager-templates/8-knowledge-check.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/create-azure-resources-using-azure-resource-manager-templates/7-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/create-azure-resources-using-azure-resource-manager-templates/9-summary.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/create-azure-resources-using-azure-resource-manager-templates/8-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/create-azure-resources-by-using-azure-cli/4-exercise-run-templates-using-azure-cli.md",
+    "redirect_url": "/training/modules/create-azure-resources-by-using-azure-cli/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/create-azure-resources-by-using-azure-cli/5-knowledge-check.md",
+    "redirect_url": "/training/modules/create-azure-resources-by-using-azure-cli/4-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/create-azure-resources-by-using-azure-cli/6-summary.md",
+    "redirect_url": "/training/modules/create-azure-resources-by-using-azure-cli/5-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/explore-azure-automation-devops/11-exercise-create-run-workflow-runbook.md",
+    "redirect_url": "/training/modules/explore-azure-automation-devops",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/explore-azure-automation-devops/12-examine-checkpoint-parallel-processing.md",
+    "redirect_url": "/training/modules/explore-azure-automation-devops/11-examine-checkpoint-parallel-processing",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/explore-azure-automation-devops/13-knowledge-check.md",
+    "redirect_url": "/training/modules/explore-azure-automation-devops/12-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/explore-azure-automation-devops/14-summary.md",
+    "redirect_url": "/training/modules/explore-azure-automation-devops/13-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-desired-state-configuration-dsc/10-knowledge-check.md",
+    "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/7-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-desired-state-configuration-dsc/11-summary.md",
+    "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/8-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-desired-state-configuration-dsc/6-exercise-import-compile.md",
+    "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-desired-state-configuration-dsc/7-exercise-onboard-machines-for-management.md",
+    "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/implement-desired-state-configuration-dsc/8-explore-hybrid-management.md",
+    "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/implement-desired-state-configuration-dsc/9-implement-dsc-linux-automation-azure.md",
+    "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/6-implement-dsc-linux-automation-azure",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-bicep/8-knowledge-check.md",
+    "redirect_url": "/training/modules/implement-bicep/9-knowledge-check",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/implement-bicep/9-summary.md",
+    "redirect_url": "/training/modules/implement-bicep/10-summary",
+    "redirect_document_id": false
     }
   ]
 }

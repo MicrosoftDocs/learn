@@ -4,9 +4,9 @@ Imagine a global consultancy firm with branches worldwide, dealing with a wide r
 
 In this module you learn to:
 
-- Apply labels to Microsoft 365 Groups, SharePoint, and OneDrive for data protection.
-- Secure Outlook and Teams meetings with sensitivity labels.
 - Manage sensitivity label use in Office apps for security compliance.
+- Secure Outlook and Teams meetings with sensitivity labels.
+- Apply labels to Microsoft 365 Groups, SharePoint, and OneDrive for data protection.
 
 ## Prerequisites
 

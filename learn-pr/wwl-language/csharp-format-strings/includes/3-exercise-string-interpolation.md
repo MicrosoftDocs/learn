@@ -71,8 +71,8 @@ Since you bill the customers using fractions of shares even though the precision
 
     ```Output
     Invoice Number: 1201
-    Shares: 25.457 Product
-        Sub Total: $2,750.00
+       Shares: 25.457 Product
+         Sub Total: $2,750.00
     ```
 
     >[!NOTE]
@@ -92,9 +92,9 @@ Since you bill the customers using fractions of shares even though the precision
 
     ```Output
     Invoice Number: 1201
-    Shares: 25.457 Product
-        Sub Total: $2,750.00
-            Tax: 15.83 %
+       Shares: 25.457 Product
+         Sub Total: $2,750.00
+               Tax: 15.83%
     ```
 
 ## Finalize the receipt with the total amount due formatted as currency

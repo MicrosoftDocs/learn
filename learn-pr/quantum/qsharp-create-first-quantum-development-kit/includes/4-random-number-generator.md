@@ -157,8 +157,8 @@ The `let` directive declares variables that don't change during the computation.
 
 Let's try out our new random number generator!
 
-1. Before running the program, you need to set the target profile to **Unrestricted**. Select **View -> Command Palette**, search for QIR, select **Q#: Set the Azure Quantum QIR target profile**, and then select **Q#: unrestricted**. 
-1. To test run your program locally on the built-in simulator, select **Run Q# File** from the play icon drop-down in the top-right, or press **Ctrl+F5**. Your output will appear in the debug console.
+1. Before running the program, you need to set the target profile to **Unrestricted**. Select **View -> Command Palette**, search for QIR, select **Q#: Set the Azure Quantum QIR target profile**, and then select **Q#: unrestricted**.
+1. To test run your program locally on the built-in simulator, click on **Run** from the list of commands below `@EntryPoint()`, or press **Ctrl+F5**. Your output will appear in the debug console.
 1. Run the program again to see a different result.
 
 > [!NOTE]

@@ -3,7 +3,7 @@ uid: learn.wwl.manage-authentication-microsoft-entra-id
 metadata:
   title: Manage authentication by using Microsoft Entra ID
   description: "This module is designed to provide administrators with the knowledge and skills needed to manage authentication effectively using Microsoft Entra ID, ensuring secure access to resources and enhancing user experience."
-  ms.date: 04/15/2024
+  ms.date: 05/07/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product

@@ -73,6 +73,12 @@
       "branch_mapping": {}
     },
     {
+      "path_to_root": "microsoftdocs-mslearn-advocates-azure-functions-and-signalr",
+      "url": "https://github.com/MicrosoftDocs/mslearn-advocates.azure-functions-and-signalr",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
       "path_to_root": "cosmos-db-sql-api-javascript-samples",
       "url": "https://github.com/Azure-Samples/cosmos-db-sql-api-javascript-samples",
       "branch": "main",

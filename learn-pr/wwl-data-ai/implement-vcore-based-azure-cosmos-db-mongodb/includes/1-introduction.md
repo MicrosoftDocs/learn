@@ -8,6 +8,3 @@ The topics covered in this module include:
 - Set Up a vCore-based Azure Cosmos DB for MongoDB cluster.
 
 By the end of this module, you'll learn what vCore-based Azure Cosmos DB for MongoDB has to offer and how to set up a cluster to support your MongoDB workloads.
-
-> [!NOTE]
-> To complete related modules, you need access to Azure OpenAI studio, which can take several days to be approved. If you need access, apply through the [**Azure OpenAI limited access**](/legal/cognitive-services/openai/limited-access?azure-portal=true) page.

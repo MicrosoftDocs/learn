@@ -1,4 +1,3 @@
-
 Threat modeling is a core element of the Microsoft Security Development Lifecycle (SDL).
 
 It's an engineering technique you can use to help you identify threats, attacks, vulnerabilities, and countermeasures that could affect your application.
@@ -7,7 +6,7 @@ You can use threat modeling to shape your application's design, meet your compan
 
 With non-security experts in mind, the tool makes threat modeling easier for all developers by providing clear guidance on creating and analyzing threat models.
 
-:::image type="content" source="../media/threat-modeling-98beb5cb.png" alt-text="Five stages, define, diagram, identify, mitigate, and validate.":::
+:::image type="content" source="../media/threat-modeling-98beb5cb.png" alt-text="Diagram showing five stages, define, diagram, identify, mitigate, and validate.":::
 
 
 There are five major threat modeling steps:

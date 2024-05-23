@@ -15,7 +15,7 @@ abstract: |
   - Analyze the importance of using real-world data to evaluate the fairness of AI systems. 
   - Assess how Microsoft's responsible AI standard facilitates accessibility and inclusion for users through alternative interaction methods.
   - Evaluate the role of role-based access controls in maintaining the security of AI systems and protecting learner data.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/apply-responsible-ai-principles.svg
 levels:
 - beginner
 roles:

@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.use-telemetry-dotnet-aspire.dotnet-aspire-dashboard
+title: Using the .NET Aspire dashboard
+metadata:
+  title: Using the .NET Aspire dashboard
+  description: In this unit, you'll learn how to examine and analyze telemetry data by using the tools in the .NET Aspire dashboard.
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-dotnet-aspire-dashboard.md)]

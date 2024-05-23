@@ -4,8 +4,8 @@ title: Exercise - Manage dependency updates in your Node.js project
 metadata:
   title: Exercise - Manage dependency updates in your Node.js project
   description: Exercise on how to update dependencies and configure the package.json so that updates happen in a predictable way.
-  author: GitHubber17
-  ms.author: chnoring
+  author: diberry
+  ms.author: diberry
   ms.date: 05/30/2023
   ms.topic: unit
   ms.custom:
