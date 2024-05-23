@@ -12,7 +12,7 @@ title: Secure a Microsoft Fabric data warehouse
 summary: Data warehouse in Microsoft Fabric is a comprehensive platform for data and analytics, featuring advanced query processing and full transactional T-SQL capabilities for easy data management and analysis.
 abstract: |
   In this module, you'll:
-  - Learn concepts of securing a data warehouse in Microsoft Fabric.
+  - Learn the concepts of securing a data warehouse in Microsoft Fabric.
   - Learn how to implement dynamic data masking to obscure sensitive information.
   - Learn how to configure row-level security to provide granular control.
   - Learn how to implement column-level security to protect sensitive data.

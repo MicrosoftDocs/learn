@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.secure-data-warehouse-in-microsoft-fabric.implement-row-level-security
-title: Use data pipelines to load a warehouse
+title: Implement row-level security
 metadata:
-  title: Use data pipelines to load a warehouse
+  title: Implement row-level security
   description: "Learn the concept and how to implement row-level security in a data warehouse in Microsoft Fabric."
   ms.date: 5/23/2024
   author: wwlpublish

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.secure-data-warehouse-in-microsoft-fabric.exercise-secure-data-warehouse
-title: 'Exercise: Load data into a warehouse in Microsoft Fabric'
+title: 'Exercise: Secure a warehouse in Microsoft Fabric'
 metadata:
-  title: 'Exercise: Load data into a warehouse in Microsoft Fabric'
+  title: 'Exercise: Secure a warehouse in Microsoft Fabric'
   description: "Learn how to secure a warehouse using T-SQL in Microsoft Fabric."
   ms.date: 5/23/2024
   author: wwlpublish

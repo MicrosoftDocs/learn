@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.secure-data-warehouse-in-microsoft-fabric.configure-sql-granular-permissions
-title: Load and transform data with Dataflow Gen2
+title: Configure SQL granular permissions using T-SQL
 metadata:
-  title: Load and transform data with Dataflow Gen2
+  title: Configure SQL granular permissions using T-SQL
   description: "Learn how to configure granular access to database objects in a data warehouse in Microsoft Fabric."
   ms.date: 5/23/2024
   author: wwlpublish
