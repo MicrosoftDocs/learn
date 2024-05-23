@@ -9,6 +9,6 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [Building a Continuous Integration and Continuous Deployment pipeline with DSC](/azure/devops/pipelines/release/dsc-cicd?view=azure-devops).
- -  [Azure Automation State Configuration overview](/azure/automation/automation-dsc-overview).
- -  [Introduction to the Azure Desired State Configuration extension handler](/azure/virtual-machines/extensions/dsc-overview).
+ -  [Building a pipeline with DSC - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/release/dsc-cicd?view=azure-devops).
+ -  [Azure Automation State Configuration overview \| Microsoft Docs](/azure/automation/automation-dsc-overview).
+ -  [Desired State Configuration for Azure overview - Azure Virtual Machines \| Microsoft Docs](/azure/virtual-machines/extensions/dsc-overview).
