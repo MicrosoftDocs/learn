@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.advanced-github-copilot.exercise-setup
-title: Exercise - Set up GitHub Copilot to work with VS Code
+title: Exercise - Set up GitHub Copilot to work with Visual Studio Code
 metadata:
   title: |
     Exercise - Use VS Code and GitHub Copilot suggestions to develop with Python
