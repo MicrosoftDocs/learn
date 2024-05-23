@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-real-time-dashboards-microsoft-fabric.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 05/21/2024
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-summary.md)]

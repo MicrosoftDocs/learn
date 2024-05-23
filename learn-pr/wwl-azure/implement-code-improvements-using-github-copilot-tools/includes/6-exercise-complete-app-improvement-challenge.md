@@ -24,16 +24,16 @@ To open and test the **APL2007M5SalesReport** sample application, complete the f
 
 You need to complete the following tasks in the order listed:
 
-1. Use two or more prompts to improve the modularity of the **QuarterlySalesReport** method.
+1. Use the suggestions from two or more prompts to improve the modularity of the **QuarterlySalesReport** method.
 
     - Extract the code that builds report tables to a separate method named DisplayReports. This method should accept the required input parameters and return a Boolean that indicates successful completion.
     - Extract the code that identifies the top three products to a separate method named TopThree.
 
-1. Use one or more prompts to improve error handling for the **QuarterlyIncomeReport** class.
+1. Use the suggestions from one or more prompts to improve error handling for the **QuarterlyIncomeReport** class.
 
     - Implement error handling for at least three methods that contribute displaying the sales report.
 
-1. Use one or more prompts to ensure that only authenticated users are able to access sales information.
+1. Use the suggestions from one or more prompts to ensure that only authenticated users are able to access sales information.
 
     - Restrict access to the **QuarterlySalesReport** method to authenticated users only.
     - Ensure that unauthenticated users can't access the methods used to generate sales reports.

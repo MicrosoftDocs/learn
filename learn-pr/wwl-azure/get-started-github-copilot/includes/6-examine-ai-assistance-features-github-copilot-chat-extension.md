@@ -4,7 +4,7 @@ The GitHub Copilot Chat extension provides a chat interface that lets you intera
 
 ## How it works
 
-GitHub Copilot Chat works by using a combination of natural language processing and machine learning to understand your question and provide you with an answer. This process can be broken down into the following steps.
+GitHub Copilot Chat uses a combination of natural language processing and machine learning to understand your question and provide you with an answer. This process can be broken down into the following steps.
 
 ### Input processing
 
@@ -36,30 +36,30 @@ By generating explanations and documentation, Copilot Chat may help you to under
 
 ### Answering coding questions
 
-You can ask Copilot Chat for help or clarification on specific coding problems and receive responses in natural language format or in code snippet format. This can be a useful tool for programmers, as it can provide guidance and support for common coding tasks and challenges.
+You can ask Copilot Chat for help or clarification on specific coding problems and receive responses in natural language format or in code snippet format. This is a useful tool for programmers because it provides guidance and support for common coding tasks and challenges.
 
 ### Proposing bug fixes
 
-Copilot Chat can propose a fix for bugs in your code by suggesting code snippets and solutions based on the context of the error or issue. This can be useful if you're struggling to identify the root cause of a bug or you need guidance on the best way to fix it. For example, if your code produces an error message or warning, Copilot Chat can suggest possible fixes based on the error message, the code's syntax, and the surrounding code.
+Copilot Chat can propose a fix for bugs in your code by suggesting code snippets and solutions based on the context of the error or issue. This is useful if you're struggling to identify the root cause of a bug or you need guidance on the best way to fix it. For example, if your code produces an error message or warning, Copilot Chat can suggest possible fixes based on the error message, the code's syntax, and the surrounding code.
 
 Copilot Chat can suggest changes to variables, control structures, or function calls that might resolve the issue and generate code snippets that can be incorporated into the codebase. However, it's important to note that the suggested fixes may not always be optimal or complete, so you'll need to review and test the suggestions.
 
 ### Generating unit test cases
 
-Copilot Chat can help you write unit test cases by generating code snippets based on the code open in the editor or the code snippet you highlight in the editor. This may help you write test cases without spending as much time on repetitive tasks. For example, if you're writing a test case for a specific function, you can use Copilot Chat to suggest possible input parameters and expected output values based on the function's signature and body. Copilot Chat can also suggest assertions that ensure the function is working correctly, based on the code's context and semantics.
+Copilot Chat can help you write unit test cases by generating code snippets based on the code open in the editor or the code snippet you highlight in the editor. This helps you write test cases without spending as much time on repetitive tasks. For example, if you're writing a test case for a specific function, you can use Copilot Chat to suggest possible input parameters and expected output values based on the function's signature and body. Copilot Chat can also suggest assertions that ensure the function is working correctly, based on the code's context and semantics.
 
-Copilot Chat can also help you write test cases for edge cases and boundary conditions that might be difficult to identify manually. For instance, Copilot Chat can suggest test cases for error handling, null values, or unexpected input types, helping you ensure your code is robust and resilient. However, it's important to note that generated test cases may not cover all possible scenarios, and manual testing and code review are still necessary to ensure the quality of the code. For more information on generating unit test cases, see "Asking GitHub Copilot Chat questions about your code."
+Copilot Chat can also help you write test cases for edge cases and boundary conditions that might be difficult to identify manually. For instance, Copilot Chat can suggest test cases for error handling, null values, or unexpected input types, helping you ensure your code is robust and resilient. However, it's important to note that generated test cases may not cover all possible scenarios, and manual testing and code review are still necessary to ensure the quality of the code.
 
 ### Suggesting improvements to an existing codebase
 
-Copilot Chat can also suggest potential improvements to selected code. For example, Copilot Chat can suggest improvements for the following broad categories:
+Copilot Chat can also suggest potential improvements to selected code. For example, Copilot Chat can suggest improvements in the following categories:
 
 - **Code quality**: Copilot Chat can suggest ways to improve the readability, maintainability, and performance of your code. This can include suggestions for refactoring, code simplification, and modularity.
 - **Code reliability**: Copilot Chat can suggest ways to make your code more robust and reliable. This can include suggestions for error handling, input validation, and defensive programming.
 - **Code performance**: Copilot Chat can suggest ways to optimize the performance of your code. This can include suggestions for algorithmic improvements, data structure optimizations, and parallelization.
 - **Code security**: Copilot Chat can suggest ways to make your code more secure. This can include suggestions for input sanitization, access control, and encryption.
 
- By suggesting improvements, Copilot Chat may help you to write better code that is more readable, reliable, performant, and secure.
+By suggesting improvements, Copilot Chat may help you to write better code that is more readable, reliable, performant, and secure.
 
 ## GitHub Copilot Chat in Visual Studio Code
 
@@ -70,6 +70,7 @@ Here are some ways that you can access GitHub Copilot Chat features within Visua
 - Open the Chat view for an AI assistant that can help you at any time.
 - Start an inline chat conversation directly from the editor for help while you're coding.
 - Run smart actions to complete certain tasks without even having to write a prompt.
+- Open the Quick Chat window for a quick, interactive conversation with the AI.
 
 ### Chat view
 
@@ -77,8 +78,8 @@ The Chat view is a panel that displays the chat messages between you and the AI 
 
 You can open the Chat view in two ways:
 
-- Open the GitHub Copilot status menu, and then select **GitHub Copilot Chat** (select the GitHub Copilot icon on the Visual Studio Code status bar access the GitHub Copilot status menu).
 - Select the **Chat** icon in the Visual Studio Code activity bar.
+- Open the GitHub Copilot status menu, and then select **GitHub Copilot Chat**. To open the GitHub Copilot status menu, select the GitHub Copilot icon on the Visual Studio Code status bar.
 
 Either way, the Chat view opens in the Visual Studio Code interface, allowing you to interact with the AI pair programmer.
 
@@ -86,7 +87,7 @@ Either way, the Chat view opens in the Visual Studio Code interface, allowing yo
 
 The Chat view allows you to interact with the AI pair programmer by typing messages and receiving responses. You can use the Chat view to ask questions, request explanations, propose fixes, generate documentation, and more. The AI pair programmer responds with natural language descriptions, code snippets, and other relevant information to help you with your coding tasks.
 
-Consider the prime number sample app that was built using GitHub Copilot auto completions in the previous unit.
+Consider the prime number sample app built using GitHub Copilot line completions in the previous unit.
 
 ```csharp
 int addPrimeNumbersInNumericList(List<int> numbers)
@@ -177,19 +178,24 @@ To update your code using GitHub Copilot auto completions, you would need to:
 1. Use GitHub Copilot to generate a new code snippet from the updated comment.
 1. Review the suggestions and select the best option.
 
-Luckily that isn't necessary. A better solution is to use Copilot Chat to suggest the required code updates.
+Luckily that isn't necessary. A better solution is to use GitHub Copilot Chat to suggest the required code updates.
 
 You can use an inline chat session to suggest a code update as follows:
 
 1. Highlight the code snippet that you want to update.
 1. Press `Ctrl` + `I` to open the inline chat.
-1. Enter a question or prompt for Copilot Chat to generate a suggestion.
+1. Ask GitHub Copilot Chat how to complete the update.
+1. Review the suggestions and select the best option.
 
-In this case you could ask, "How can I update this code to ensure that the list doesn't include duplicate numbers?"
+In this case, you could ask: `how can I update this code to ensure that the list doesn't include duplicate numbers?`
 
 ![Screenshot showing suggested update from inline chat in Visual Studio Code.](../media/inline-chat-3.png)
 
-If you like the proposed code updates, you can select **Accept** and continue coding. If you don't like the proposed updates, you can ask Copilot Chat for another suggestion or provide more context to help it generate better suggestions.
+If you like the proposed code updates, you can select **Accept** and continue coding. If you don't like the proposed updates, you can ask Copilot Chat to generate another suggestion by selecting the **Rerun...** icon. The Rerun icon is displayed as a circular arrow that and appears below and to the right of the prompt textbox. Hover the mouse pointer in the area below the prompt textbox to display the Rerun icon:
+
+![Screenshot showing the Rerun icon displayed below prompt textbox during an inline chat session.](../media/inline-chat-4.png)
+
+If you rerun the prompt and still don't get the results you need, try updating your prompt with additional context. Copilot Chat generates better suggestions when the prompt is clear, succinct, and accurate.
 
 ### Smart actions
 
@@ -208,7 +214,7 @@ To access the smart actions, right-click on a code snippet in the editor and sel
 
 Once again, let's consider the prime number app.
 
-In the previous section, you saw how to use an inline chat session to ensure that the list of numbers doesn't include any duplicates.
+In the previous section, the inline chat suggested the following code to ensure that `numbers` doesn't include any duplicates:
 
 ```csharp
 // create a list of 100 unique random numbers between 1 and 1000
@@ -220,11 +226,11 @@ while (numbers.Count < 100)
 }
 ```
 
-Unfortunately, the suggested update, using a HashSet to ensure a collection of unique elements, introduces a new issue. The `addPrimeNumbersInNumericList` function expects a `List<int>` as input, but the updated code uses a `HashSet<int>`. This causes a compilation error.
+Although using a `HashSet` ensures a collection of unique elements, the update creates a new problem. The `addPrimeNumbersInNumericList` function expects a `List<int>` as input, but the updated code creates a `HashSet<int>`. This results in the following compilation error:
 
 ![Screenshot showing an error message in Visual Studio Code.](../media/smart-actions-2.png)
 
-Fortunately, you can use the Fix This smart action to resolve this issue. To use the Fix This smart action:
+Fortunately, you can use the **Fix This** smart action to resolve the issue. To use the **Fix This** smart action:
 
 1. Right-click on the code snippet that needs to be fixed. In this case, the code underlined in red.
 
@@ -232,9 +238,15 @@ Fortunately, you can use the Fix This smart action to resolve this issue. To use
 
 1. Review the suggested fix and select **Accept** to apply the changes.
 
-The Fix This smart action generates a code snippet that resolves the compilation error by creating a new `List<int>` named `numberList` using the `numbers` collection.
+The **Fix This** smart action generates a code snippet that fixes the error by using the `numbers` collection to create a new `List<int>` named `numberList`.
 
-As always, review the fix that's suggested by Copilot Chat. There may better solutions. You can select **Accept** to update your code with the proposed fix.
+```csharp
+List<int> numberList = new List<int>(numbers);
+int sum = addPrimeNumbersInNumericList(numberList);
+Console.WriteLine(sum);
+```
+
+As always, review the suggestion provided by Copilot Chat. There may better solutions. You can select **Accept** to update your code with the proposed fix.
 
 ### Quick Chat
 
@@ -252,15 +264,15 @@ When you interact with GitHub Copilot Chat, you can use a combination of chat pa
 
 ### Chat participants
 
-GitHub Copilot Chat provides better responses when you indicate the scope and intent of your question. You can do this by mentioning chat participants in your chat messages using the @ symbol. Chat participants are like experts with a specific specialty that can help you with your questions.
+GitHub Copilot Chat provides better responses when you indicate the scope and intent of your question. You can do this by mentioning chat participants in your chat messages using the `@` symbol. Chat participants are like experts with a specific specialty that can help you with your questions.
 
 Currently, Copilot Chat supports the following built-in chat participants:
 
-- @workspace has context about the code in your workspace and can help you navigate it, finding relevant files or classes.
-- @vscode knows about commands and features in the VS Code editor itself, and can help you use them.
-- @terminal has context about the integrated terminal shell and its contents.
+- `@workspace`: The `@workspace` participant has context about the code in your workspace and can help you navigate it, finding relevant files or classes.
+- `@vscode`: The `@vscode` participant knows about commands and features in the Visual Studio Code editor itself, and can help you use them.
+- `@terminal`: The `@terminal` participant has context about the integrated terminal shell and its contents.
 
-You can prepend your chat inputs with a specific participant to help Copilot give you a more relevant response.
+You can prefix your chat question or prompt with a specific participant to help Copilot generate a more relevant response.
 
 ### Slash commands
 
@@ -274,19 +286,23 @@ Once the intent is clear, `@workspace` has a better chance of addressing your ne
 
 Examples of built-in commands:
 
-- `/help`: get help about using GitHub Copilot
-- `/doc`: generate code documentation
-- `/clear`: start a new chat session
-- `/explain`: explain how the selected code works
+- `/help`: Get help about using GitHub Copilot.
+- `/doc`: Generate code documentation.
+- `/clear`: Start a new chat session.
+- `/explain`: Explain how the selected code works.
+- `/tests`: Generate unit tests for the selected code.
+- `/fix`: Propose a fix for the selected code.
+- `/new`: Scaffold code for a new workspace. Only the chat prompt is used as context.
+- `/newNotebook`: Create a new Jupyter Notebook. Only the chat prompt is used as context.
 
 Examples using Chat participants combined with slash commands:
 
-- `@workspace /explain`: generate an explanation of the full workspace.
-- `@workspace /fix` (or `/fix`): propose a fix for the problems in the selected code.
-- `@workspace /tests` (or `/tests`): generate unit tests for the selected code.
-- `@vscode /api` (or `/api`): ask about VS Code extension development.
-- `@workspace /new` (or `/new`): scaffold code for a new workspace.
-- `@workspace /newNotebook` (or `/newNotebook`): create a new Jupyter Notebook.
+- `@workspace /explain`: Generate an explanation of the full workspace.
+- `@workspace /fix` (or `/fix`): Propose a fix for the problems in the selected code.
+- `@workspace /tests` (or `/tests`): Generate unit tests for the selected code.
+- `@vscode /api` (or `/api`): Ask about Visual Studio Code extension development.
+- `@workspace /new` (or `/new`): Scaffold code for a new workspace.
+- `@workspace /newNotebook` (or `/newNotebook`): Create a new Jupyter Notebook.
 
 ### Chat variables
 
@@ -303,4 +319,4 @@ Examples of built-in chat variables are:
 - `#terminalLastCommand`: the active terminal's last run command.
 
 > [!NOTE]
-> If possible, the full contents of the file is included when you use `#file`. If that is too large to fit into the context window, an outline of the file is included that includes functions and their descriptions without implementations. If the outline is also too large, then the file won't be part of the prompt.
+> If possible, the full contents of the file is included when you use `#file`. If the file is too large to fit into the context window, an outline of the file is included that includes functions and their descriptions without implementations. If the outline is also too large, then the file won't be part of the prompt.

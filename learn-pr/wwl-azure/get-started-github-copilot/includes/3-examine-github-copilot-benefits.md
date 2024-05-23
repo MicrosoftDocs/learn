@@ -65,11 +65,11 @@ Next to the editor and pull request, the terminal is the place where developers 
 
 ## Limitations of GitHub Copilot Chat
 
-Depending on factors such as your codebase and input data, you may experience different levels of performance when using Copilot Chat. The following information is designed to help you understand system limitations and key concepts about performance as they apply to Copilot Chat.
+Depending on your codebase, the prompts that you enter, and other factors, you may experience different levels of performance when using GitHub Copilot Chat. The following information is designed to help you understand system limitations and key concepts about performance as they apply to GitHub Copilot Chat.
 
 ### Limited scope
 
-Copilot Chat is trained on a large body of code but it still has a limited scope. It may not be able to handle some complex code structures or obscure programming languages. For each programming language, the quality of suggestions you receive may depend on the volume and diversity of training data for that language. For example, JavaScript is well-represented in public repositories and is one of GitHub Copilot's best supported languages. Languages with less representation in public repositories may be more challenging for Copilot Chat. Additionally, Copilot Chat can only suggest code based on the context of the code being written, so it may not be able to identify larger design or architectural issues.
+GitHub Copilot Chat is trained on a large body of code but it still has a limited scope. It may not be able to handle some complex code structures or obscure programming languages. For each programming language, the quality of suggestions you receive may depend on the volume and diversity of training data for that language. For example, JavaScript is well-represented in public repositories and is one of GitHub Copilot's best supported languages. Languages with less representation in public repositories may be more challenging for Copilot Chat. Additionally, Copilot Chat can only suggest code based on the context of the code being written, so it may not be able to identify larger design or architectural issues.
 
 ### Potential biases
 

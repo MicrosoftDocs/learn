@@ -1,6 +1,6 @@
 Azure CLI lets you control nearly every aspect of every Azure resource.
 
-You can work with Azure resources such as resource groups, storage, VMs, Microsoft Entra ID, containers, and machine learning.
+You can work with Azure resources such as resource groups, storage, VMs, Azure Active Directory, containers, and machine learning.
 
 Commands in the CLI are structured in ***groups*** and ***subgroups***.
 

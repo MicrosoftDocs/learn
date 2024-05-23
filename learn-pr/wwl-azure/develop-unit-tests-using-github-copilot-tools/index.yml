@@ -2,8 +2,8 @@
 uid: learn.wwl.develop-unit-tests-using-github-copilot-tools
 metadata:
   title: Develop unit tests using GitHub Copilot tools
-  description: "This module explores using the GitHub Copilot and GitHub Copilot Chat extensions for Visual Studio Code to create unit tests. Unit test projects are used to verify that the unit tests build and run successfully."
-  ms.date: 05/10/2024
+  description: "This module explores using GitHub Copilot and GitHub Copilot Chat to create unit tests. Exercises provide practical experience creating unit test projects and running unit tests in Visual Studio Code."
+  ms.date: 05/20/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module-standard-task-based
@@ -12,9 +12,9 @@ metadata:
   ms.service: github-copilot
   ai-usage: ai-assisted
 title: Develop unit tests using GitHub Copilot tools
-summary: This module explores using the GitHub Copilot and GitHub Copilot Chat extensions for Visual Studio Code to create unit tests. Unit test projects are used to verify that the unit tests build and run successfully.&nbsp;&nbsp;
+summary: This module explores using GitHub Copilot and GitHub Copilot Chat to create unit tests. Exercises provide practical experience creating unit test projects and running unit tests in Visual Studio Code.&nbsp;&nbsp;
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
 
   -   Create unit tests using the GitHub Copilot and GitHub Copilot Chat extensions for Visual Studio Code.
 
@@ -30,7 +30,7 @@ prerequisites: |
 
   -   Experience developing C# applications using Visual Studio Code and the C# Dev Kit extension is recommended.
 
-  -   An awareness that if you choose to complete the training using a free GitHub Copilot trial, you will be asked for a form of payment when signing up for the free GitHub Copilot trial. You won't be charged until the trial is over, unless you cancel prior to the conclusion of the 30-day period.
+  -   Awareness of the GitHub Copilot free trial conditions. If you choose the free trial offer for GitHub Copilot, a form of payment is requested at sign-up. Charges aren't applied until the trial is over, unless you cancel before the conclusion of the 30-day period.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

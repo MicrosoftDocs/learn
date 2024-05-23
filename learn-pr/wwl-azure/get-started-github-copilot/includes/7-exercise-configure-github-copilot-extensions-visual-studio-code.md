@@ -1,8 +1,8 @@
-Your GitHub Copilot experience can be customized using configuration settings available through your GitHub.com account and in coding environment. In Visual Studio Code, you can access the settings for GitHub Copilot and Copilot Chat using the GitHub Copilot status menu. The settings allow you to enable or disable GitHub Copilot for specific languages, configure the behavior of GitHub Copilot Chat, and customize the GitHub Copilot experience to suit your preferences. You can also configure GitHub Copilot settings on GitHub.com to manage your GitHub Copilot subscription, configure the retention of prompts and suggestions, and allow or block suggestions matching public code.
+GitHub Copilot settings are configured in your GitHub.com account and the Visual Studio Code environment. In Visual Studio Code, you access settings for GitHub Copilot and GitHub Copilot Chat using the GitHub Copilot status menu. The settings allow you to enable or disable GitHub Copilot for specific languages, configure the behavior of GitHub Copilot Chat, and customize the GitHub Copilot experience to suit your preferences. You can also configure GitHub Copilot settings on GitHub.com to manage your GitHub Copilot subscription, configure the retention of prompts and suggestions, and allow or block suggestions matching public code.
 
 ## Enable or disable GitHub Copilot
 
-GitHub Copilot is enabled by default when you install the extension in Visual Studio Code. You can disable GitHub Copilot if you prefer not to use it.
+GitHub Copilot is enabled by default when you install the extension in Visual Studio Code. You can disable GitHub Copilot for a period of time if you need to.
 
 To view the enable and disable options for the GitHub Copilot extension, follow these steps:
 
@@ -14,11 +14,11 @@ To view the enable and disable options for the GitHub Copilot extension, follow 
 
     ![Screenshot showing a dropdown menu for the GitHub Copilot extension.](../media/github-copilot-enable-disable.png)
 
-    If you want to test the enable/disable options, you can select the disable option. However, be sure to re-enable GitHub Copilot before you continue with this exercise.
+If you want to test the enable/disable options, you can select the disable option. However, be sure to re-enable GitHub Copilot before you continue with this exercise.
 
 ## Configure GitHub Copilot and Copilot Chat in Visual Studio Code
 
-The GitHub Copilot extensions are configured with default settings when you install the extensions in Visual Studio Code. You can customize these settings to suit your preferences. For example, you can
+The GitHub Copilot extensions are configured with default settings when you install the extensions in Visual Studio Code. You can customize these settings to suit your preferences.
 
 Visual Studio Code provides two ways to access the settings for the GitHub Copilot extensions:
 

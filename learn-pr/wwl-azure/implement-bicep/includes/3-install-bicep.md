@@ -4,7 +4,7 @@ To start, install the Bicep CLI or the [Visual Studio Code Extension](https://ma
 
 The extension provides language support, IntelliSense, and linting support.
 
-:::image type="content" source="../media/bicep-extension-f990a375.png" alt-text="Screenshot of Bicep extension from V S Code marketplace.":::
+:::image type="content" source="../media/bicep-extension-f990a375.png" alt-text="Screenshot of Bicep extension from VS Code marketplace.":::
 
 
 To verify you've it installed, create a file with the `.bicep` extension and watch the language mode change in the lower right corner of VS Code.
@@ -66,4 +66,3 @@ If any errors or issues were faced during the installation, make sure you visit 
 ## Next steps
 
 In the next unit, you'll create your first Bicep template and deploy it to Azure.
-

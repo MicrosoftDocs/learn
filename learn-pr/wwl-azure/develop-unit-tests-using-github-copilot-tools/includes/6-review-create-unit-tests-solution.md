@@ -17,7 +17,7 @@ The following sections show one possible solution for the challenge from the pre
 
 1. Open the Solution Explorer view.
 
-1. Right-click the **M4BankAccountClass** folder, and then select **New Project**.
+1. Right-click the **APL2007M4BankAccountClass** folder, and then select **New Project**.
 
 1. In the **Create a new project** dialog box, select **xUnit Test Project**.
 
@@ -25,13 +25,21 @@ The following sections show one possible solution for the challenge from the pre
 
 1. Save the project to the default location.
 
+1. Delete the UnitTest1.cs file.
+
+1. Add a reference to the BankAccount project.
+
+1. Add a new class file named **BankAccountTests.cs** to the BankAccount.UnitTests project.
+
+1. Build the solution.
+
 ### Create unit tests for the `BankAccount` class using inline chat
 
 1. Open the BankAccount.cs file.
 
 1. Select the BankAccount class.
 
-    You could select just the method that you want to test, but that can lead to issues with the code that GitHub Copilot generates. By selecting the entire class, you help GitHub Copilot understand the context of the code you're working on. Your prompt can still specify a specific method if you want.
+    You could select a single method that you want to test, but that can lead to issues when GitHub Copilot generates the tests. By selecting the entire class, you help GitHub Copilot understand the context of the code you're working on. Your prompt can still specify unit tests for a specific method.
 
 1. Enter one of the following prompts:
 

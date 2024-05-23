@@ -1,7 +1,7 @@
 Code security refers to the measures taken to protect software from unauthorized access, data breaches, and other security threats. Code security is an essential aspect of software development that involves protecting applications and systems from security threats. Improving your code security can help you to protect your applications and systems from security threats.
 
 > [!IMPORTANT]
-> This training does not teach developers how to create secure code. Instead, it focuses on how to use GitHub Copilot Chat to generate suggestions for improving code security in a sample application. The suggestions do not represent best practices or comprehensive solutions for developing secure code. Developers should use their judgment and expertise to evaluate and implement the suggestions provided by GitHub Copilot Chat. Implementing suggestions proposed by GitHub Copilot does not replace the need for thorough code reviews and testing.
+> This training isn't about best practices for developing secure code. Instead, it focuses on how to use GitHub Copilot Chat to generate suggestions for improving code security in a sample application. The suggestions do not represent best practices or comprehensive solutions for developing secure code. Developers should use their judgment and expertise to evaluate and implement the suggestions provided by GitHub Copilot Chat. Implementing suggestions proposed by GitHub Copilot does not replace the need for thorough code reviews and testing.
 
 ## Code security
 
@@ -85,12 +85,16 @@ Open the **APL2007M5BankAccount-Security** sample app in Visual Studio Code.
 
 ### Develop prompts for GitHub Copilot Chat
 
-Prompts (or questions) need to specify context and intent. For prompts that will be used to improve code security, the context should include your workspace or a file, and the intent should describe the goal you want to achieve. Consider the following suggestions when you're developing your prompts:
+The prompts you write for GitHub Copilot Chat should provide a clearly defined context and intent. Consider the following suggestions when developing your prompts:
 
-- The context should reference your workspace (`@workspace`) or a file (`#file:`). These references will help to ensure that GitHub Copilot examines an appropriate scope when formulating a response. Your prompt could also use `#selection` to identify a specific method or code block that you've selected in the editor.
-- The intent should specify the code reliability factor that you want to improve. For example, you might ask GitHub Copilot Chat to suggest ways to improve exception handling.
+- Define an outer context that's scoped at a higher level than the code you want to update. For example, if you want to improve a method, specify the class or file that includes the method as the outer context. Identify the method as an inner context.
+- Use chat participants and chat variables to help specify context. You can use the `#file:` and `#selection` chat variables to identify the specific code you are focused on. You can also include the full workspace (`@workspace`) when appropriate. Refer to the file or code selection in the natural language portion of your prompt.
+- The intent should be clear, concise, and specific. Your prompt should specify the type of improvement you want to achieve.
 
-Your goal for this exercise is to write prompts that will help you to improve code security. You use the **APL2007M5BankAccount-Security** project to develop your prompts.
+During this portion of the exercise, you review the **APL2007M5BankAccount-Security** project and create three prompts for GitHub Copilot Chat. The prompts focus on improving code security.
+
+Use the following steps to complete this portion of the exercise:
+Your goal for this exercise is to write prompts that help you to improve code security. You use the **APL2007M5BankAccount-Security** project to develop your prompts.
 
 1. Open the **APL2007M5BankAccount-Security** project, and then review the **Program.cs** and **BankAccount.cs** code files.
 
@@ -135,11 +139,11 @@ GitHub Copilot Chat can be used to help improve code security. Your prompts can 
 
 1. Open the BankAccount.cs file in Visual Studio Code, and then select all of the code in the file.
 
-1. Open the Chat view, and then enter the first prompt that you've prepared for the BankAccount class.
+1. Open the Chat view, and then enter the first prompt that you prepared for the BankAccount class.
 
 1. Review the suggestions provided by GitHub Copilot Chat.
 
-    For example, if you enter `@workspace /explain #file:BankAccount.cs How can I implement authentication in the selected code?` in the Chat view, GitHub Copilot Chat will suggest updates that are similar to the following response:
+    For example, if you enter `@workspace /explain #file:BankAccount.cs How can I implement authentication in the selected code?` in the Chat view, GitHub Copilot Chat suggests updates that are similar to the following response:
 
     *Implementing authentication in this context would typically involve adding a method to the BankAccount class that verifies the account holder's identity before allowing certain operations. This could be done using a password, a PIN, or some other form of authentication.*
 
@@ -190,7 +194,7 @@ GitHub Copilot Chat can be used to help improve code security. Your prompts can 
 
 1. Review the suggestions provided by GitHub Copilot Chat.
 
-    For example, if you enter `@workspace /explain #file:BankAccount.cs How can I protect sensitive data in the selected code?` in the Chat view, GitHub Copilot Chat will suggest updates that are similar to the following response:
+    For example, if you enter `@workspace /explain #file:BankAccount.cs How can I protect sensitive data in the selected code?` in the Chat view, GitHub Copilot Chat suggests updates that are similar to the following response:
 
     *In the provided code, sensitive data such as AccountNumber and AccountHolderName are publicly accessible properties of the BankAccount class. This could potentially expose sensitive information.*
 
@@ -236,11 +240,11 @@ GitHub Copilot Chat can be used to help improve code security. Your prompts can 
 
 1. Open the Program.cs file in Visual Studio Code, and then select all of the code in the file.
 
-1. Open the Chat view, and then enter the first prompt that you've prepared for the Program class.
+1. Open the Chat view, and then enter the first prompt that you prepared for the Program class.
 
 1. Review the suggestions provided by GitHub Copilot Chat.
 
-    For example, if you enter `@workspace /explain #file:Program.cs How can I improve the security of the selected code?` in the Chat view, GitHub Copilot Chat will suggest updates that are similar to the following response:
+    For example, if you enter `@workspace /explain #file:Program.cs How can I improve the security of the selected code?` in the Chat view, GitHub Copilot Chat suggests updates that are similar to the following response:
 
     *The selected code is a simulation of bank transactions, so it doesn't directly deal with sensitive data or security concerns. However, if this were a real banking application, there would be several areas to consider for improving security:*
 
@@ -266,7 +270,7 @@ GitHub Copilot Chat can be used to help improve code security. Your prompts can 
 
 1. Review the suggestions provided by GitHub Copilot Chat.
 
-    For example, if you enter `@workspace /explain #file:Program.cs How can I implement secure exception handling in the selected code?` in the Chat view, GitHub Copilot Chat will suggest updates that are similar to the following response:
+    For example, if you enter `@workspace /explain #file:Program.cs How can I implement secure exception handling in the selected code?` in the Chat view, GitHub Copilot Chat suggests updates that are similar to the following response:
 
     *The selected code already includes some basic exception handling, but there are a few ways you can improve it to make it more secure:*
 

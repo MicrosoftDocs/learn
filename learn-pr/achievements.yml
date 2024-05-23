@@ -3363,3 +3363,8 @@ achievements:
   title: Cloud-native security operations with Microsoft Sentinel
   summary: This learning path describes basic architecture, core capabilities, and primary use cases of its products. You'll also learn about differences and Get familiar with Microsoft Sentinel, a cloud-native, security information and event management (SIEM) service.
   iconUrl: /training/achievements/security-ops-sentinel.svg
+- uid: learn.azure.azure-sentinel-deploy-connect.badge
+  type: badge
+  title: Deploy Microsoft Sentinel and connect data sources
+  summary: In this course you'll learn how to deploy Microsoft Sentinel and connect it to data sources. You'll also learn how to use Azure and AI to provide analysis of security alerts.
+  iconUrl:  /training/achievements/deploy-azure-sentinel-and-connect-data-sources.svg

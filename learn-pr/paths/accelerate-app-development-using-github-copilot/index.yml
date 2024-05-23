@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.accelerate-app-development-using-github-copilot
 metadata:
-  title: 'APL-2007: Accelerate app development by using GitHub Copilot'
+  title: Accelerate app development by using GitHub Copilot
   description: Learn how to accelerate app development by using GitHub Copilot and GitHub Copilot Chat in a Visual Studio Code environment.
-  ms.date: 05/13/2024
+  ms.date: 05/20/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: learning-path
-title: 'APL-2007: Accelerate app development by using GitHub Copilot'
+title: Accelerate app development by using GitHub Copilot
 prerequisites: |
   -   An active subscription for GitHub Copilot&nbsp;is required&nbsp;for either a personal GitHub account or a GitHub account managed by an organization or enterprise.
   -   One or more years of code develop experience is recommended.
