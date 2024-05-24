@@ -63,7 +63,7 @@ ExpressRoute: If you're using [ExpressRoute](/azure/expressroute/expressroute-in
  -  Configure service endpoints on a subnet in a virtual network. Endpoints work with any type of compute instances running within that subnet.
  -  You can configure multiple service endpoints for all supported Azure services (Azure Storage or Azure SQL Database, for example) on a subnet.
  -  For Azure SQL Database, virtual networks must be in the same region as the Azure service resource. For all other services, you can secure Azure service resources to virtual networks in any region.
- -  The virtual network where the endpoint is configured can be in the same or different subscription than the Azure service resource. The virtual network where the endpoint is configured can be in the same or different subscription than the Azure service resource. For more information on permissions required for setting up endpoints and securing Azure services, see [Provisioning](/azure/virtual-network/virtual-network-service-endpoints-overview#provisioning).
+ -  The virtual network where the endpoint is configured can be in the same or different subscription than the Azure service resource. For more information on permissions required for setting up endpoints and securing Azure services, see [Provisioning](/azure/virtual-network/virtual-network-service-endpoints-overview#provisioning).
  -  For supported services, you can secure new or existing resources to virtual networks using service endpoints.
 
 ## Considerations
