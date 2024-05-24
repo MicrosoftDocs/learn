@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-git-repositories
 metadata:
-  title: Manage Git repositories
+  title: Manage and configure repositories
   description: "This module explores how to work with large repositories, purge repository data and manage and automate release notes using GitHub."
   ms.date: 05/24/2024
   author: wwlpublish
