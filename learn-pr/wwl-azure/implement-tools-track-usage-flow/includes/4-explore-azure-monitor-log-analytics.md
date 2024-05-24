@@ -1,4 +1,3 @@
-
 When you run at a cloud scale, you need intelligent logging and monitoring tools that scale to your needs and provide real-time insight into your data.
 
 Azure Monitor is Microsoft's native cloud monitoring solution. Azure Monitor collects monitoring telemetry from different kinds of on-premises and Azure sources.
@@ -12,7 +11,7 @@ With Azure Monitor, you can analyze data, set up alerts, and get end-to-end view
 :::image type="content" source="../media/azure-monitor-68847a2c.png" alt-text="Screenshot of Azure Monitor and services covering Insights, Visualize, Analyze, Respond and Integrate monitoring.":::
 
 
-In this tutorial, we'll focus on the Log Analytics part of Azure Monitor. We'll learn how to:
+In this tutorial, we focus on the Log Analytics part of Azure Monitor. You'll learn how to:
 
  -  Set up Log Analytics workspace.
  -  Connect virtual machines to a log analytics workspace.
@@ -21,8 +20,8 @@ In this tutorial, we'll focus on the Log Analytics part of Azure Monitor. We'll 
 
 ## Getting started
 
-1.  You'll need a resource group with one or more virtual machines that you have access to RDP to follow along.
-2.  Log into [Azure Shell](https://shell.azure.com/powershell). Execute the command below. It will create a new resource group and log analytics workspace. Take a record of the workspaceid of the log analytics workspace as we'll be using it again.
+1.  You need a resource group with one or more virtual machines that you have access to RDP to follow along.
+2.  Log into [Azure Shell](https://shell.azure.com/powershell). Execute the command following. It creates a new resource group and log analytics workspace. Take a record of the workspaceid of the log analytics workspace as we're using it again.
     
     ```powershell
     $ResourceGroup = "azwe-rg-devtest-logs-001"
@@ -176,7 +175,7 @@ In this tutorial, we'll focus on the Log Analytics part of Azure Monitor. We'll 
     $CounterSystem = "Processor Queue Length"
     
     #########################################################
-    $global:number = 1 #Name parameter needs to be unique that why we will use number ++ in function
+    $global:number = 1 #Name parameter needs to be unique that why we'll use number ++ in function
     #########################################################
     
     function AddPerfCounters ($PerfObject, $PerfCounters, $Instance)
@@ -221,7 +220,7 @@ In this tutorial, we'll focus on the Log Analytics part of Azure Monitor. We'll 
 ## How it works
 
 1.  Log Analytics works by running the Microsoft Monitoring Agent service on the machine. The service locally captures and buffers the events and pushes them securely out to the Log Analytics workspace in Azure.
-2.  Log into the virtual machine, navigate to the C:\\Program Files\\Microsoft Monitoring Agent\\MMA, and open the control panel. It will show you the details of the log analytics workspace connected. You also can add multiple log analytics workspaces to publish the log data into various workspaces.
+2.  Log in to the virtual machine, navigate to the C:\\Program Files\\Microsoft Monitoring Agent\\MMA, and open the control panel. It shows you the details of the log analytics workspace connected. You also can add multiple log analytics workspaces to publish the log data into various workspaces.
 
     :::image type="content" source="../media/microsoft-monitoring-agent-properties-c1189ab6.png" alt-text="Screenshot of the Microsoft Monitoring Agent Properties with computer name, property name, and product version information.":::
 
