@@ -1,23 +1,5 @@
+You and your team at the community back have decided to leverate deployment stacks to improve the lifecycle management of your Azure resources. 
 
+To test the functionality and features of deployment stacks, you deployed resources for the bank's deposits application by creating and updating a deployment stack.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-You and your team at the community bank want to improve the lifecycle management of your Azure resources. Challenges arise as workloads grow in size.
-
-In this module, you've learned about Azure deployment stacks and their benefits for resource management. Deployment stacks allow you to manage a group of Azure resources as a single unit, simplifying management and enabling consistent deployments. You can create, list, update, and delete deployment stacks using Azure CLI, Azure PowerShell, or the Azure portal. These stacks offer benefits such as simplified provisioning, prevention of unauthorized changes, easy resource cleanup, and support for standardized templates.
-
-To better understand how deployment stacks work, you reviewed the core concepts of Azure Resource Manager, the deployment stacks resource, and its resource provider.
-
-Finally, you learned about common scenarios using deployment stacks and how those scenarios may apply to your internal processes.
+In this module, you learned how to create, show, list, update, and delete a deployment stack and its managed resources. Deployment stacks manages resources defined in the same ARM JSON templates, Bicep files, or template specs used in your Azure deployments. You created a deployment stack that manages an app service plan and web app, reviewed the configuration of the deployment stack, and verified its managed resources. You reviewed the basics of the _action on unmanaged_ parameter, which determines how detached resources are handled. You then updated the deployment stack to include new managed resources, an Azure SQL server and database. Finally, you deteled the deployment stack and its managed resources.

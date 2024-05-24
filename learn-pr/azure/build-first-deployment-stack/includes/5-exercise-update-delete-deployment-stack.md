@@ -51,7 +51,7 @@ With the Bicep file updated, we want to update the deployment stack so that the 
 
 1. You're prompted to enter a value for `sqlServerAdminPassword`. Create a complex password for the SQL server administrator, followed by 'Enter.'
 
-    ![a graphic representing the AZ CLI command line prompting you to enter an SQL server administrator user name](../media/sqlpassword-cli.png)
+    ![a graphic representing the AZ CLI command line prompting you to enter an SQL server administrator password](../media/sqlpassword-cli.png)
 
 Wait for the update operation to complete before moving on to the next task.
 
@@ -72,15 +72,15 @@ With the Bicep file updated, we want to update the deployment stack so that the 
         -DenySettingsMode none
     ```
 
-1. You're prompted to enter a value for `sqlServerAdminUserName`. Create a name for the SQL server administrator, followed by 'Enter.'
+2. You're prompted to enter a value for `sqlServerAdminUserName`. Create a name for the SQL server administrator, followed by 'Enter.'
 
     ![a graphic representing the Azure PowerShell command line prompting you to enter an SQL server administrator user name](../media/sqladmin-ps.png)
 
-1. You're prompted to enter a value for `sqlServerAdminPassword`. Create a complex password for the SQL server administrator, followed by 'Enter.'
+3. You're prompted to enter a value for `sqlServerAdminPassword`. Create a complex password for the SQL server administrator, followed by 'Enter.'
 
-    ![a graphic representing the Azure PowerShell command line prompting you to enter an SQL server administrator user name](../media/sqlpassword-ps.png)
+    ![a graphic representing the Azure PowerShell command line prompting you to enter an SQL server administrator password](../media/sqlpassword-ps.png)
 
-1. Wait for the update operation to complete before moving on to the next task.
+4. Wait for the update operation to complete before moving on to the next task.
 
 ::: zone-end
 

@@ -16,7 +16,7 @@ Think of deployment stacks as a series of pointers that groups your application'
 
 ## Define resources
 
-Deployment stacks support the use of Bicep files, ARM JSON templates, or template specs for defining resources in a stack. When deploying a deployment stack using the Azure CLI or Azure PowerShell, you're able to point to the specific template file (bicep file or ARM JSON template) or template spec. It isn't necessary to change how you define your resources.
+Deployment stacks support the use of Bicep files, ARM JSON templates, or template specs for defining resources in a stack. When creating a deployment stack using the Azure CLI or Azure PowerShell, you're able to point to the specific template file (Bicep file or ARM JSON template) or template spec. It isn't necessary to change how you define your resources.
 
 We'll use the following bicep file for our first deployment stack. The file defines an app service plan and a web app. These resources become managed resources when we create the deployment stack.
 
@@ -62,6 +62,7 @@ The Azure PowerShell command to deploy a bicep file to a resource group is:
 New-AzResourceGroupDeployment `
     -ResourceGroupName rg-depositsApplication `
     --TemplateFile eastus
+```
 
 The Azure PowerShell command to create a deployment stack at the resource group scope is:
 
