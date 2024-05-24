@@ -38948,6 +38948,21 @@
     "source_path": "learn-pr/wwl-azure/implement-versioning-strategy/9-knowledge-check.md",
     "redirect_url": "/training/modules/implement-versioning-strategy/7-knowledge-check",
     "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/manage-git-branches-workflows/7-version-control-git-azure-repos.md",
+    "redirect_url": "/training/modules/manage-git-branches-workflows/8-version-control-git-azure-repos",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/manage-git-branches-workflows/8-knowledge-check.md",
+    "redirect_url": "/training/modules/manage-git-branches-workflows/9-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/manage-git-branches-workflows/9-summary.md",
+    "redirect_url": "/training/modules/manage-git-branches-workflows/10-summary",
+    "redirect_document_id": false
     }
   ]
 }
