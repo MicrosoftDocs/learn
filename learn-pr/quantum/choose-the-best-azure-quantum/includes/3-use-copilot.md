@@ -71,10 +71,4 @@ You can prompt the Copilot in Azure Quantum for almost anything quantum related.
 - "Explain quantum interference"
 - "What is the difference between a qubit and a classical bit?"
 
-## Open your code sample on VS Code for the Web
 
-To explore the sample code further, you can open the code in [VS Code for the Web](https://vscode.dev) and take advantage of features such as improved error messaging, Q# syntax highlighting, and integrated debugging. If you already have an Azure account set up, you can connect directly to your Azure Quantum workspaces from VS Code.
-
-To open your code in VS Code for the Web, select the VS Code icon on the bottom of the code window.
-  
-:::image type="content" source="../media/launch-vs-code.png" alt-text="Screenshot of the icon to launch VS Code.":::

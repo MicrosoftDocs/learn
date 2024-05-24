@@ -2,20 +2,26 @@
 uid: learn.wwl.introduction-to-deployment-patterns
 metadata:
   title: Introduction to deployment patterns
-  description: Introduction to deployment patterns
-  ms.date: 01/25/2023
+  description: "Introduction to deployment patterns"
+  ms.date: 05/06/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: azure
+  ai-usage: human-only
 title: Introduction to deployment patterns
 summary: This module introduces deployment patterns and explains microservices architecture to help improve the deployment cycle and examine classical and modern deployment patterns.
 abstract: |
-  - Describe deployment patterns
-  - Explain microservices architecture
-  - Understand classical and modern deployment patterns
-  - Plan and design your architecture
-prerequisites: ''
+  -   Describe deployment patterns
+
+  -   Explain microservices architecture
+
+  -   Understand classical and modern deployment patterns
+
+  -   Plan and design your architecture
+prerequisites: None
 iconUrl: /learn/achievements/4-introduction-to-deployment-patterns.svg
 levels:
 - advanced

@@ -1,19 +1,24 @@
-When Microsoft partners add their solutions to the commercial marketplace, one way that customers can find their products and services is by visiting the online stores. You decide to go to the [commercial marketplace documentation](/azure/marketplace/overview) to learn more.
+As a Microsoft partner, listing your solutions in the commercial marketplace opens a direct pathway for customers to discover your offers through the online stores. To further enhance your understanding and maximize the potential of your marketplace offers, see the commercial marketplace documentation for more insights.
 
 ## Azure Marketplace
 
-As you read the documentation, you learn that Azure Marketplace is the Microsoft online store for IT solutions. It contains technical software and services that are certified to run on Microsoft Azure.
+Microsoft Azure Marketplace offers a wide array of IT solutions and services. These offers are designed and certified to integrate seamlessly with the Microsoft Azure cloud platform.
 
-Azure Marketplace has thousands of solutions that are made to extend directly into users’ Azure infrastructure. Products in this storefront include Azure building blocks, digital cloud services, finished software solutions, and consulting and managed services. Products and services are organized by category and can be filtered, making it easy for customers to find the right app or service.
+Azure Marketplace is a comprehensive online store that offers various solutions tailored for Microsoft Azure, including:
 
-Your customers can access the Azure Marketplace online store by visiting <https://azuremarketplace.microsoft.com>.
+- Azure building blocks: essential components for cloud application development.
+- Digital cloud services: services hosted on Azure, providing functionalities like analytics and database management.
+- Finished software solutions: ready-to-use applications for business operations.
+- Consulting and managed services: expert services for Azure solution deployment and management.
+
+Azure Marketplace simplifies the search for the right solutions with categorized and filterable listings, enabling customers to easily build on their existing Azure cloud infrastructure. The Azure Marketplace online store link can be found in the resources section at the end of this module.
 
 :::image type="content" source="..\media\2-azure-marketplace-homepage.png" alt-text="Screenshot of the Azure Marketplace homepage with emphasis on apps and consulting services buttons.":::
 
 :::image type="content" source="..\media\3-azure-marketplace-apps.png" alt-text="Screenshot of the Azure Marketplace apps landing page with emphasis on application categories and filters.":::
 <br>*Screenshots of the Azure Marketplace web storefront.*
 
-Because Azure Marketplace is a part of Azure, your customers can also access these solutions through [the Azure portal](https://portal.azure.com). Whenever Azure users select **Create a resource** on the Azure portal homepage, they’re accessing solutions from Azure Marketplace.
+Azure Marketplace is a part of Azure, allowing your customers to access the Azure Marketplace solutions through the Azure portal. By selecting **Create a resource** on the Azure portal homepage, users are accessing solutions listed in Azure Marketplace.
 
 :::image type="content" source="..\media\4-azure-portal-homepage-create-resource.png" alt-text="Screenshot of the Azure portal homepage with emphasis on the Create a resource button.":::
 
@@ -22,28 +27,28 @@ Because Azure Marketplace is a part of Azure, your customers can also access the
 :::image type="content" source="..\media\6-azure-marketplace-azure-portal-2.png" alt-text="Screenshot of Azure Marketplace in Azure portal with emphasis on application categories and filters.":::
 <br>*Screenshots from the in-product version of Azure Marketplace in the Azure portal.*
 
-Both the online store and the Azure portal experiences help customers quickly find, try, buy, and deploy solutions to Azure online in minutes.
+Azure Marketplace and the Azure portal help to streamline the process for customers to easily find, try, purchase, and deploy Azure solutions within minutes.
 
-In addition to the cloud products and services available through both the online store and the portal, the [Azure Marketplace online store](https://azuremarketplace.microsoft.com) also lists consulting and managed services offered by Microsoft partners to help customers in myriad areas including analytics, DevOps, migration, and security.
+In addition to cloud solutions and services available through both the online store and the Azure portal, the Azure Marketplace online store also features consulting and managed services offered by Microsoft partners, helping customers in areas such as analytics, DevOps, migration, and security.
 
 ## Microsoft AppSource
 
-Microsoft AppSource contains business software that extends directly into Azure, Dynamics 365, Microsoft 365, and the Power Platform. Microsoft AppSource also contains web applications, which are hosted on the cloud and accessed over the internet. Solutions are organized by category and industry and can be filtered, making it simple for customers to find the right app or service.
+Microsoft AppSource offers business software that integrates with Azure, Dynamics 365, Microsoft 365, and the Power Platform. In AppSource, you can also find cloud-hosted web applications. Customers can easily filter and search for the right app or services based on category and industry.
 
-Your customers can access the Microsoft AppSource online store by visiting <https://appsource.microsoft.com>.
+The Microsoft AppSource online store link can be found at the end of this learn module.
 
 :::image type="content" source="..\media\7-microsoft-appsource-homepage.png" alt-text="Screenshot of Microsoft AppSource homepage with emphasis on apps and consulting services buttons.":::
 
 :::image type="content" source="..\media\8-microsoft-appsource-apps.png" alt-text="Screenshot of Microsoft AppSource apps landing page with emphasis on application categories and filters.":::
 <br>*Screenshots of the Microsoft AppSource online store.*
 
-AppSource apps are also available within Microsoft products by selecting **Get more apps** from the homepage in Dynamics 365, **Get apps** in Power BI, **Apps** in Teams, and **Insert\>Get Add-ins** in Microsoft 365 products (excluding Teams).
+AppSource applications can be accessed within Microsoft products through options like **Get more apps** in Dynamics 365, **Get apps** in Power BI, **Apps** in Teams, and **Insert > Get Add-ins** in Microsoft 365 products (excluding Teams).
 
 :::image type="content" source="..\media\9-appsource-apps-powerbi.png" alt-text="Screenshot of Microsoft AppSource products from in-product Get apps page in Power BI.":::
 <br>*Example of the Microsoft AppSource in-product experience from Power BI.*
 
-In addition to the cloud products that are available through the online store and in-product experiences, [Microsoft AppSource](https://appsource.microsoft.com) also lists consulting services provided by Microsoft partners. AppSource consulting services are organized by industry, service type, location, and Microsoft product type.
+In addition to the cloud products that are available through the online store and in-product experiences, Microsoft AppSource also lists consulting services provided by Microsoft partners, organized by industry, service type, location, and Microsoft product.
 
 ## Summary
 
-Now that you have a better understanding of the online stores and the applications and services they contain, you're convinced that your future customers will be able to find your solutions when you choose to join the commercial marketplace. Next, you turn your attention to learning more about the different ways you can list your products in Microsoft AppSource and Azure Marketplace.
+With a clearer grasp of the online stores and their offerings, you're assured that joining the commercial marketplace can make your solutions easily discoverable to potential customers. Your focus now shifts to exploring the various listing options for your offers in Microsoft AppSource and Azure Marketplace.
