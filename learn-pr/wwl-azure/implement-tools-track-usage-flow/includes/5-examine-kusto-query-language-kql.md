@@ -1,4 +1,3 @@
-
 Kusto is the primary way to query Log Analytics. It provides both a query language and a set of control commands.
 
 Kusto can be used directly within Azure Data Explorer.

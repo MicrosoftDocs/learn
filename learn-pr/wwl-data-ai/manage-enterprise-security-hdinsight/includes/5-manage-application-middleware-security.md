@@ -12,7 +12,7 @@ Below is a representation of the components and parties involved in the HDInsigh
 ![HDInsight Authentication Process](../media/10-hdinsight-authentication-process.png)
 
 The below components in the Enterprise Identity domain participate in the set-up and authentication process for an ESP cluster.
-- Windows Server Active directory: Domain controller on premises and stores the User Principal Name (a.k.a UPN) ( for example: John.Doe@Contoso.com) and their respective domain passwords. 
+- Windows Server Active directory: Domain controller on premises and stores the User Principal Name (a.k.a UPN) ( for example: `user@Contoso.com`) and their respective domain passwords. 
 - [Active directory Connect](/azure/active-directory/hybrid/whatis-azure-ad-connect)(AD Connect): Microsoft tool designed to accomplish hybrid identity setup. Functionalities like password hash synch are critical in setting up ESP on HDInsight. 
 - [Azure Activity directory](/azure/active-directory/fundamentals/active-directory-whatis) (Microsoft Entra ID): Microsoft Azure based identity and access management service.
 - [Microsoft Entra Domain Services](/azure/active-directory-domain-services/overview) (Microsoft Entra Domain Services): Provides managed domain services such as domain join, group policy, lightweight directory access protocol (LDAP), and Kerberos/NTLM authentication that is fully compatible with Windows Server Active Directory. You use these domain services without the need to deploy, manage, and patch domain controllers in the cloud. Microsoft Entra Domain Services integrates with your existing Microsoft Entra tenant, which makes it possible for users to sign in using their existing credentials. You can also use existing groups and user accounts to secure access to resources, which provides a smoother lift-and-shift of on-premises resources to Azure.
@@ -30,7 +30,7 @@ While all the steps in the authentication process accomplished automatically and
 
 ![Authentication: When password hashes are synchronized to Microsoft Entra ID](../media/11-password-hash-to-aad.png)
 
-1. User John Doe authenticates onto an HDInsight service (for example Ambari, ssh, Zeppelin, etc.) with his domain credentials John.Doe@contoso.onmicrosoft.com (known as a user principal name or UPN) and password. The gateway holds the username and password. 
+1. User John Doe authenticates onto an HDInsight service (for example Ambari, ssh, Zeppelin, etc.) with his domain credentials `user@contoso.onmicrosoft.com` (known as a user principal name or UPN) and password. The gateway holds the username and password. 
 1. The HDInsight Gateway sends the UPN and password provided by user to the Microsoft Entra ID using resource owner password credentials (ROPC) flow and requests an OAuth access request.  Microsoft Entra ID confirms the identity of the user and issues a refresh token that is saved to the credential service, which runs on the head node. In clusters with ADLS Gen 2 storage accounts, the storage drivers communicate with the credential service to retrieve the OAuth token for the purpose of passthrough authentication to ADLS. 
 1. The gateway then authenticates the user with Microsoft Entra Domain Services and gets a Kerberos Ticket. The gateway then passes the Kerberos ticket to the head nodes and authenticates the user into the cluster.
 
@@ -44,7 +44,7 @@ While all the steps in the authentication process accomplished automatically and
 ![When password hashes are not synchronized to Microsoft Entra ID](../media/12-password-nothashed-to-aad.png)
 
 1. User John Doe launches a web-based HDInsight service such as Ambari, or Zeppelin. The page redirects the user to an interactive login screen. 
-	The client is redirected to the Microsoft Entra ID for the user to authenticate using their UPN John.Doe@contoso.onmicrosoft.com.
+	The client is redirected to the Microsoft Entra ID for the user to authenticate using their UPN `user@contoso.onmicrosoft.com`.
 3.	On entering the UPN, the client is redirected to the on-premise ADFS server where the user enters his password. MFA authentication, if enabled, is now executed. After successful authentication, an OAuth token is issued to the client.
 4.	The client presents the OAuth token to the HDInsight gateway.
 5.	The HDInsight gateway uses the OAuth token to acquire a Kerberos ticket from the HIB node.

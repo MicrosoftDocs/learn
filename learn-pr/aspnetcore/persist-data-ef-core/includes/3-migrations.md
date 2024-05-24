@@ -161,7 +161,7 @@ Now you'll add and configure a `DbContext` implementation. `DbContext` is a gate
 
 Next, create a migration that you can use to create your initial database.
 
-1. Run the following command to generate a migration for creating the database tables:
+1. In the terminal scoped to the *ContosoPizza* project folder, run the following command to generate a migration for creating the database tables:
 
     ```dotnetcli
     dotnet ef migrations add InitialCreate --context PizzaContext
@@ -275,8 +275,8 @@ Your manager at Contoso Pizza gives you some new requirements, so you have to ch
     1. Add a `Pizzas` property of type  `ICollection<Pizza>?` to make `Pizza`-`Topping` a many-to-many relationship.
     1. Add a `[JsonIgnore]` attribute to the `Pizzas` property.
 
-   > [!IMPORTANT]
-   > These steps prevent `Topping` entities from including the `Pizzas` property when the web API code serializes the response to JSON. Without this change, a serialized collection of toppings would include a collection of every pizza that uses the topping. Each pizza in *that* collection would contain a collection of toppings, which each would again contain a collection of pizzas. This type of infinite loop is called a *circular reference* and can't be serialized.
+        > [!IMPORTANT]
+        > This attribute prevents `Topping` entities from including the `Pizzas` property when the web API code serializes the response to JSON. Without this change, a serialized collection of toppings would include a collection of every pizza that uses the topping. Each pizza in *that* collection would contain a collection of toppings, which each would again contain a collection of pizzas. This type of infinite loop is called a *circular reference* and can't be serialized.
 
     Your updated *Topping.cs* file should look like the following:
 

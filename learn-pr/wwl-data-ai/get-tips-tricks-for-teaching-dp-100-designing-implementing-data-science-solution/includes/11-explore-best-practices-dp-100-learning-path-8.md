@@ -1,28 +1,32 @@
 
 
-DP-100: Learning Path 8 Train models with scripts in Azure Machine Learning
+
+DP-100: Learning Path 8 Optimize model training in Azure Machine Learning
 
 Learning Path 8 Overview
 
-As you begin to teach this learning path, get familiar with what the students learn during the learning path. In this learning path, students learn how to run the training script as a command job to help prepare production-ready script. Students also learn about common terminologies like the code, command, environment, and compute.
+As you begin to teach this learning path, get familiar with what the students learn during the learning path. In this learning path student learn about optimizing the learning path training in Azure Machine Learning and running the pipelines in Azure Machine Learning. Students will also learn about hyper parameter tuning and how to use the Azure Machine Learning SDK to apply hyper parameter tuning to find the best learning path.
 
-This learning path consists of two modules:
+This learning path consists of four focus areas:
 
-- Module 1 – Run a training script as a command job in Azure Machine Learning
-- Module 2 – Track model training with MLflow in jobs
+- Understand pipeline components and create them
+- Build, configure, and run AML Pipeline
+- Understand hyper parameters
+- Configure various hyper parameter tuning options on AML 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW14vI6]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW14NOV]
 
 Learning Path 8 Tips and Tricks
 
-- Illustrate a completed experiment to show status, logs, and outputs 
-- Emphasize the difference between logging modes and make sure it's clear before moving forward
+- Emphasize the importance of workflow in Machine Learning
+- Differentiate between parameters and hyperparameters
+
 Learning Path 8 Demos (optional)
-- Show where outputs can be found
-- Compare both outputs: in a notebook and in the user interface (UI)
-- Show where saved artifacts are located in a local file folder and in Blob storage
 
-Learning Path 8 Labs
+- Visit an existing pipeline or YAML file
+- Use hyperparameter tuning document to show the different configuration options
 
-- [Lab 8.1: Run a training script as a command job in Azure Machine Learning](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/08-Script-command-job.html)
-- [Lab 8.2: Use MLflow to track training jobs](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/08-Script-mlflow-tracking.html)
+Learning Path 8 Labs (optional)
+
+- Lab 8.1: [Perform hyperparameter tuning with a sweep job](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/09-Hyperparameter-tuning.html)
+- [Lab 8.2: Run pipelines in Azure Machine Learning](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/09-Run-pipelines.html)

@@ -4,12 +4,10 @@ title: Describe Azure Pipelines
 metadata:
   title: Describe Azure Pipelines
   description: "Describe Azure Pipelines"
-  ms.date: 10/08/2022
+  ms.date: 05/07/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/3-describe-azure-pipelines.md)]

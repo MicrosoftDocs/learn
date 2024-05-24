@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.azure.secure-azure-arc-enabled-servers
 metadata:
-  title: Secure your hybrid and multicloud machines through Azure Arc-enabled servers 
-  description: Understand the security capabilities of Azure Arc-enabled servers. Learn about the benefits of and how to onboard Azure Arc-enabled servers to Microsoft Defender for Cloud, Microsoft Defender for Servers, and Microsoft Sentinel.
-  ms.date: 12/15/2022
+  title: Secure your hybrid and multicloud machines by using Azure Arc-enabled servers 
+  description: Learn about the benefits of and how to onboard Azure Arc-enabled servers to Microsoft Defender for Cloud, Microsoft Defender for Servers, and Microsoft Sentinel.
+  ms.date: 04/24/2024
   author: aurnovcy
   ms.author: aurnovc
   ms.topic: module
   ms.service: azure-arc
   ms.subservice: azure-arc-servers
-title: Secure your hybrid and multicloud machines through Azure Arc-enabled servers 
+title: Secure your hybrid and multicloud machines by using Azure Arc-enabled servers 
 summary: Azure Arc promises to bridge the gap between on-premises and cloud environments. Azure Arc extends the consistent security, observability, and governance of the Azure platform to non-Azure machines. In this module, you'll learn about planning and securely deploying Azure Arc-enabled servers at scale.
 abstract: |
   After you've completed this module, you'll be able to:

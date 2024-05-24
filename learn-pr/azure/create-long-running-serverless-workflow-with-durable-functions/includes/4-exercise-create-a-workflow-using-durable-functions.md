@@ -6,7 +6,7 @@ In this exercise, you use the example scenario from the previous unit to learn h
 
 1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. Search for and select **Function App**. The **Create Function App** pane appears.
+1. Search for and select **Function App**. Select **Consumption**, then select the **Select** button. The **Create Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -24,7 +24,6 @@ In this exercise, you use the example scenario from the previous unit to learn h
     | **Operating system** |
     | Operating System | *Windows* | Specifies the operating system that hosts the function app. |
     | **Plan** |
-    | Plan type | *Consumption (Serverless)* | Specifies the hosting plan that defines how resources are allocated to your function app. In the default **Consumption** plan, resources are added dynamically as required by your functions. In this serverless hosting model, you only pay for the time your functions run. |
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
@@ -98,7 +97,10 @@ Because we're creating JavaScript Durable Functions, we need to install the `dur
     npm install durable-functions
     ```
 
-    This command instructs the node package manager to install the `durable-functions` package and any required dependencies. Installation can take a few minutes to complete, and the node package manager might display some warnings, which you can ignore. If you're prompted to install a newer version of npm, use the command given in the error to install the newer version, then install the `durable-functions` package once the new version is installed.
+    This command instructs the node package manager to install the `durable-functions` package and any required dependencies. Installation can take a few minutes to complete, and the node package manager might display some warnings, which you can ignore. 
+
+    > [!NOTE]
+    > If you're prompted to install a newer version of npm, use the command given in the error to install the newer version, then install the `durable-functions` package once the new version is installed.
 
     Wait until all packages are finished installing.
 

@@ -68,7 +68,7 @@ Now you have the CycleCloud web application installed in an Azure VM, enough vCP
     | Setting | Value |
     | --- | --- |
     | Region | Select the name of the Azure region where you intend to deploy the cluster in this exercise. |
-    | Scheduler VM type | Select **Choose**, and then in the **Select a machine type** pop-up window, in the **SKU Search** text box, enter **D4_v3**. In the list of results, select the checkbox next to the **D4_v3** entry, and then select **Apply**. |
+    | Scheduler VM Type | Select **Choose**, and then in the **Select a machine type** pop-up window, in the **SKU Search** text box, enter "D2ds_v5". In the list of results, select the checkbox next to the **D2ds_v5** entry, and then select **Apply**. |
 
     :::image type="content" source="../media/u5-cyclecloud-select-machine-type.png" alt-text="Screenshot that shows the Select a machine type pop-up window tab of the New Slurm Cluster page of the Azure CycleCloud web application." border="false":::
 

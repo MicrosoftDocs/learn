@@ -4,7 +4,7 @@ title: Run CodeQL in a database
 metadata:
   unitType: Run CodeQL in a database 
   title: Run CodeQL in a database 
-  description: Learn how to analyze your database using CodeQL queries.
+  description: Learn how to analyze your database by using CodeQL queries.
   ms.date: 05/01/2024
   author: a-a-ron
   ms.author: aastewar

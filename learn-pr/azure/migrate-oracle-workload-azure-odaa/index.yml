@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.azure.migrate-oracle-workload-azure-odaa
+metadata:
+  title: "Migrate Oracle workloads to Oracle Database@Azure"
+  description: "Learn how to migrate your Oracle workloads to Oracle Database@Azure."
+  ms.date: 05/01/2024
+  author: jjaygbay1
+  ms.author: jacobjaygbay
+  ms.topic: module
+  ms.service: azure
+title: "Migrate Oracle workloads to Oracle Database@Azure"
+summary: "This module describes the process of migrating an Oracle Exadata-powered application to Azure without refactoring, by taking advantage of Oracle infrastructure in Azure datacenters."
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe how Oracle Database@Azure works and how it can support your applications.
+  - Identify when this migration model is appropriate and how to plan for it.
+  - Describe the migration process for your databases and your applications.
+prerequisites: |
+  - Basic understanding of the Azure platform
+  - Familiarity with hosting and operations of Oracle Exadata databases and applications
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- administrator
+- solution-architect
+- database-administrator
+- business-user
+- technology-manager
+- developer
+products:
+- azure
+- azure-cost-management
+subjects:
+- databases
+units:
+- learn.azure.migrate-oracle-workload-azure-odaa.introduction
+- learn.azure.migrate-oracle-workload-azure-odaa.oracle-database-azure-migrated-application-support
+- learn.azure.migrate-oracle-workload-azure-odaa.assess-workloads-build-migration-plan
+- learn.azure.migrate-oracle-workload-azure-odaa.create-exadata-infrastructure-using-oracle-database-azure
+- learn.azure.migrate-oracle-workload-azure-odaa.provisioning-process-exadata-virtual-machine-clusters
+- learn.azure.migrate-oracle-workload-azure-odaa.application-migration-process-to-azure-iaas
+- learn.azure.migrate-oracle-workload-azure-odaa.management-cost-optimization-considerations
+- learn.azure.migrate-oracle-workload-azure-odaa.knowledge-check
+- learn.azure.migrate-oracle-workload-azure-odaa.summary
+badge:
+  uid: learn.azure.migrate-oracle-workload-azure-odaa.badge

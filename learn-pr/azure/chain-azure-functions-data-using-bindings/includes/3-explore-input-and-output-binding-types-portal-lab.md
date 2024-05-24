@@ -30,7 +30,7 @@ Let's create a function app that we can use throughout this module. A function a
 
 1. In the **Create a resource** menu, select **Compute**, and in the results list select **Function App**. You might need to search for **Function App** in the *Search services and marketplace* window.
 
-1. Select **Create.** The **Create Function App** pane appears.
+1. Select **Consumption**, then select the **Select** button. The **Create Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -41,7 +41,6 @@ Let's create a function app that we can use throughout this module. A function a
     | Resource Group | From the dropdown list, select <rgn>[sandbox resource group name]</rgn> | The resource group for the sandbox. |
     | **Instance Details** |
     | Function App name | Enter a *globally unique name* | This name identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
-    | Do you want to deploy code or container image? | Code | Option to publish code files or a Docker container. |
     | Runtime stack | From the dropdown list, select **Node.js** | The sample code in this module is written in JavaScript. |
     | Version | Accept *default* | The default value is sufficient for this exercise. |
     | Region | From the dropdown list, select a *location* | Select the region nearest to you. |
@@ -60,9 +59,9 @@ Let's create a function app that we can use throughout this module. A function a
 
 1. On the resource menu or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the **Create a resource** menu, select **Compute**, and then search for and select **Function App**. You might need to search for **Function App** in the *Search services and marketplace* window.
+1. In the **Create a resource** menu, select **Compute**, and in the results list select **Function App**. You might need to search for **Function App** in the *Search services and marketplace* window.
 
-1. Select **Create.** The **Create Function App** pane appears.
+1. Select **Consumption**, then select the **Select** button. The **Create Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -73,7 +72,6 @@ Let's create a function app that we can use throughout this module. A function a
     | Resource Group | From the dropdown list, select <rgn>[sandbox resource group name]</rgn> | The resource group for the sandbox. |
     | **Instance Details** |
     | Function App name | Enter a *globally unique name* | This name identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
-    | Do you want to deploy code or container image? | Code | Option to publish code files or a Docker container. |
     | Runtime stack | From the dropdown list, select *PowerShell Core* | The sample code for this module is written in PowerShell. |
     | Version | Accept *default* | The default value is sufficient for this exercise. |
     | Region | From the dropdown list, select a *location* | Select the region nearest to you. |
@@ -95,17 +93,17 @@ Let's create a function app that we can use throughout this module. A function a
 
 Now that we have a function app, it's time to create a function. Each function is activated by a trigger. In this module, we define an HTTP trigger by using a predefined template.
 
-1. Select the **Create in Azure portal** button in the **Functions** tab on the **Overview** page.
+1. Select the **Create function** button under **Create in Azure portal** in the **Functions** tab on the **Overview** page.
 
 1. The **Create function** pane appears.
 
     :::image type="content" source="../media/3-add-function-small.png" alt-text="Screenshot for the Create Function pane." lightbox="../media/3-add-function.png":::
 
-1. In the **Select a template** section, select the **HTTP trigger** template.
+1. In the **Select a template** section, select the **HTTP trigger** template, then select **Next**.
 
 1. In the **Template details** section, confirm the following settings.
 
-    - In the **New Function** text box, accept the default name *HttpTrigger1*. Azure automatically creates unique names for the functions you create. You can choose a different name, but remember to use meaningful names.
+    - In the **Function name** text box, accept the default name *HttpTrigger1*. Azure automatically creates unique names for the functions you create. You can choose a different name, but remember to use meaningful names.
 
     - In the **Authorization level** text box, accept the default value *Function*. Authorization level determines what keys need to be present on the request in order for it to run. *Function* authorization level requires a function-specific key, which we can find once it's created.
 
@@ -157,7 +155,7 @@ Now that we have a function app, it's time to create a function. Each function i
     }
     ```
 
-1. Let's look briefly at the function's other file--the **function.json** config file. Access this file by selecting **function.json** from the dropdown list in the filepath above the code block. The configuration data is shown in the following JSON listing.
+1. Let's look briefly at the function's other file, the **function.json** config file. Access this file by selecting **function.json** from the dropdown list in the filepath above the code block. The configuration data is shown in the following JSON listing.
 
     ```json
     {
@@ -191,15 +189,15 @@ In the preceding code for our function, we saw that we accessed the payload of t
 
 Now that we have a function app, let's create a function. Each function is activated by a trigger. In this module, we create an HTTP trigger by using a template.
 
-1. Select the **Create in Azure portal** button in the **Functions** tab on the **Overview** page.
+1. Select the **Create function** button under **Create in Azure portal** in the **Functions** tab on the **Overview** page.
 
 1. The **Create function** pane appears.
 
-1. In the **Select a template** section, select the **HTTP trigger** template.
+1. In the **Select a template** section, select the **HTTP trigger** template, then select **Next**.
 
 1. In the **Template details** section, confirm the following settings.
 
-    - In the **New Function** text box, accept the default name *HttpTrigger1*. Azure automatically provides a unique name when you create a function. You can choose a different name, but remember to use meaningful names.
+    - In the **Function name** text box, accept the default name *HttpTrigger1*. Azure automatically provides a unique name when you create a function. You can choose a different name, but remember to use meaningful names.
 
     - In the **Authorization level** text box, accept  the default value *Function*. Authorization level determines what keys need to be present on the request in order for it to run. *Function* requires a function-specific key.
 
