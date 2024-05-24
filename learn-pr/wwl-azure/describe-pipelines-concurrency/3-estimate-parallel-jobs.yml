@@ -4,12 +4,12 @@ title: Estimate parallel jobs
 metadata:
   title: Estimate parallel jobs
   description: "Estimate parallel jobs"
-  ms.date: 03/18/2022
+  ms.date: 05/23/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.custom:
+  - N/A
+durationInMinutes: 6
 content: |
   [!include[](includes/3-estimate-parallel-jobs.md)]
