@@ -8,6 +8,6 @@ metadata:
   author: joshuawaddell
   ms.author: jowaddel
   ms.topic: unit
-durationInMinutes: 1
+durationInMinutes: 7
 content: | 
   [!include[](includes/5-deployment-stack-scenario.md)]

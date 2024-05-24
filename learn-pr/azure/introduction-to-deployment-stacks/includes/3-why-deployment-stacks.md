@@ -44,7 +44,24 @@ When deleting a deployment stack, you can use the `actionOnUnmanage` property to
 
 Creating and deploying a deployment stack and its resources is nearly identical to a standard Azure deployment. For example:
 
-The AZ CLI command to deploy a bicep file to a resource group is `az deployment group create -n myResourceGroup -f main.bicep` while the command to create a deployment stack at the resource group scope is `as stack group create -n myDeploymentStack -g myResourceGroup -f main.bicep`.
+The Azure CLI command to deploy a bicep file to a resource group is:
+
+```azurecli
+az deployment group create \
+    --resource-group rg-depositsApplication \
+    --template-file ./main.bicep
+```
+
+The Azure CLI command to create a deployment stack at the resource group scope is:
+
+```azurecli
+az stack group create \
+    --name stack-deposits \
+    --resource-group rg-depositsApplication \
+    --template-file ./main.bicep \
+    --action-on-unmanage deleteAll \
+    --deny-settings-mode none
+```
 
 Deployment stacks support the use of Bicep files, ARM JSON templates, or template specs for defining resources in a stack. When deploying a deployment stack using the Azure CLI or Azure PowerShell, you're able to point to the specific template file (bicep file or ARM JSON template) or template spec. It isn't necessary to change how you define your resources.
 

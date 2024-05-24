@@ -48,19 +48,35 @@ What operations can be performed on deployment stacks? You're able to create, li
 
 Creating and deploying a deployment stack and its resources is nearly identical to a standard Azure deployment and it uses the same ARM JSON templates, Bicep files, or template specs you're used to. For example:
 
-The AZ CLI command to deploy a bicep file to a resource group is:
+The Azure CLI command to deploy a bicep file to a resource group is:
 
-`az deployment group create -n myResourceGroup -f main.bicep`
+```azurecli
+az deployment group create \
+    --resource-group rg-depositsApplication \
+    --template-file ./main.bicep
+```
 
-The AZ CLI command to create a deployment stack at the resource group scope is:
+The Azure CLI command to create a deployment stack at the resource group scope is:
 
-`az stack group create -n myDeploymentStack -g myResourceGroup -f main.bicep`
+```azurecli
+az stack group create \
+    --name stack-deposits \
+    --resource-group rg-depositsApplication \
+    --template-file ./main.bicep \
+    --action-on-unmanage deleteAll \
+    --deny-settings-mode none
+```
 
 Deployment stacks allow for efficient environment cleanup. Deployment stacks allow you to delete the stack and all of its resources through a single API call, without needing to understand dependencies. This feature simplifies the removal of the resources in a reliable way, it improves the speed of resource removal. For example:
 
-The AZ CLI command to delete a deployment stack at the resource group scope along with its resources is:
+The Azure CLI command to delete a deployment stack at the resource group scope along with its resources is:
 
-`az stack group delete -n myDeploymentStack -g myResourceGroup --actionOnUnmanage DeleteAll`
+```azurecli
+az stack group delete \
+    --name stack-deposits \
+    --resource-group rg-depositsApplication \
+    --action-on-unmanage deleteAll
+```
 
 > [!NOTE]
 > You may already use complete mode deployments as part of an existing deployment strategy. If you do, consider deployment stacks to be the next evolution, as well as a safer option.
