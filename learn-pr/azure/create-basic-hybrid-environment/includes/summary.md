@@ -6,7 +6,7 @@ You have successfully completed the following exercises:
 - Built a virtual machine using PowerShell
 - Installed Windows Server Active Directory using PowerShell
 - Created a test user in Windows Server AD using PowerShell
-- Created an Azure tenant and a global administrator account.
+- Created an Azure tenant and a global administrator account
 
 Now that you completed this module, you can use this environment as a starting point for future learn modules. You're now able to gain a deeper understanding of the identity space and some practical hands-on experience.
 

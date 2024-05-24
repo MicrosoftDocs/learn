@@ -91,7 +91,7 @@ In order to finish building the virtual machine, you need to finish the operatin
 1. You're prompted to **Press any key to boot from CD or DVD**. Select any key.
 1. On the Windows Server startup screen, select your language and **Next**.
 
-:::image type="content" source="../media/3-exercise-5.png" alt-text="Screenshot shows the Windows Setup dialog box for Windows Server 2019 where you can select a language." lightbox="../media/3-exercise-5.png":::
+   :::image type="content" source="../media/3-exercise-5.png" alt-text="Screenshot shows the Windows Setup dialog box for Windows Server 2019 where you can select a language." lightbox="../media/3-exercise-5.png":::
 
 1. Select **Install Now**.
 1. Select **Windows 2019 Standard (Desktop Experience)** and **Next**.

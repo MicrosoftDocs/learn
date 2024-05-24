@@ -91,8 +91,6 @@ This PowerShell script can accomplish this task. The script contains the followi
 | $Password           | The password for the administrator account when the computer is started in Safe Mode or a variant of Safe Mode, such as Directory Services Restore Mode |
 | $SecureString       | Converts $Password to a secure string |
 
-Do the following tasks:
-
 1. Open the PowerShell ISE as Administrator.
 1. Run the following script.
 
@@ -136,8 +134,6 @@ This PowerShell script can accomplish this task. The script contains the followi
 | $Password    | The password for the user |
 | $Identity    | Specifies an Active Directory user object by providing the DN of the user |
 | $SecureString| Converts $Password to a secure string |
-
-Do the following tasks:
 
 1. Open the PowerShell ISE as Administrator.
 1. Run the following script.
