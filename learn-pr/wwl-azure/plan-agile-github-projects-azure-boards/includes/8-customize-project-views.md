@@ -1,4 +1,3 @@
-
 Using Projects views, you can organize information by changing the layout, grouping, sorting, and filtering your work.
 
 You can create and use different visualizations, for example, Board view:
