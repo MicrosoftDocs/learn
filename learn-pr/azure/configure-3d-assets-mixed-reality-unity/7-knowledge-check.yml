@@ -18,10 +18,10 @@ quiz:
       choices:
         - content: "Proximity, relativity, and ingenuity"
           isCorrect: false
-          explanation: "Considering the proximity of assets to each other and contextual data (for example, terrain) is important to overall experience design.  You should make certain that Assets have appropriate clearance to avoid any collisions of moving parts.  Ingenuity (bring clever, original, and inventive) is an important enabler for designer to build creative and human-centric solutions.  Bathymetry is the measurement of depth of water in oceans, seas, or lakes and has little to do with design."
+          explanation: "Considering the proximity of assets to each other and contextual data (for example, terrain) is important to overall experience design. You should make certain that Assets have appropriate clearance to avoid any collisions of moving parts. Ingenuity (bring clever, original, and inventive) is an important enabler for designer to build creative and human-centric solutions. Bathymetry is the measurement of depth of water in oceans, seas, or lakes and has little to do with design."
         - content: "Proximity, size, asset fidelity"
           isCorrect: true
-          explanation: "Considering the proximity of assets to each other and contextual data (for example, terrain) is important to overall experience design.  You should make certain that Assets have appropriate clearance to avoid any collisions of moving parts.  Ensuring that assets and terrain are scaled appropriately adds an element of realism to your Scene.  Finally, asset fidelity must be considered when designing a HoloLens experience.  You'll need to balance Asset fidelity with performance, especially when not running your Digital Twin solution on a PC."
+          explanation: "Considering the proximity of assets to each other and contextual data (for example, terrain) is important to overall experience design. You should make certain that Assets have appropriate clearance to avoid any collisions of moving parts. Ensuring that assets and terrain are scaled appropriately adds an element of realism to your Scene. Finally, asset fidelity must be considered when designing a HoloLens experience. You'll need to balance Asset fidelity with performance, especially when not running your Digital Twin solution on a PC."
         - content: "Proximity, developer GUI, user height"
           isCorrect: false
           explanation: "Although proximity of assets to each other and contextual data (for example, terrain) is important, and you may have some interest in user height for certain apps, the Unity Editor installation directory is of no concern to designing a mixed reality experience. "
@@ -32,10 +32,10 @@ quiz:
           explanation: "Although you can create a Prefab to link to SCADA systems and historians, often via an IoT service such as Azure IoT Hub, they don't automatically connect to any systems unless configured to do so."
         - content: "Prefabs are built into mixed reality devices, simple to deploy."
           isCorrect: false
-          explanation: "Prefabs are Unity Assets that act as a template from which you can create new Prefab instances in the Scene.  They aren't built into mixed reality devices."
+          explanation: "Prefabs are Unity Assets that act as a template from which you can create new Prefab instances in the Scene. They aren't built into mixed reality devices."
         - content: "When one Prefab is edited, all others are edited, saving time."
           isCorrect: true
-          explanation: "The Unity Prefab system allows you to automatically keep all the copies in sync.  Any edits that you make to a Prefab Asset are automatically reflected in the instances of that Prefab, allowing you to easily make broad changes across your whole Project without having to repeatedly make the same edit to every copy of the Asset. \nYou can nest Prefabs inside other Prefabs to create complex hierarchies of objects that are easy to edit at multiple levels. \nHowever, this doesn't mean all Prefab instances have to be identical. You can override settings on individual prefab instances if you want some instances of a Prefab to differ from others. You can also create variants of Prefabs, which allow you to group a set of overrides together into a meaningful variation of a Prefab."
+          explanation: "The Unity Prefab system allows you to automatically keep all the copies in sync. Any edits that you make to a Prefab Asset are automatically reflected in the instances of that Prefab, allowing you to easily make broad changes across your whole Project without having to repeatedly make the same edit to every copy of the Asset. \nYou can nest Prefabs inside other Prefabs to create complex hierarchies of objects that are easy to edit at multiple levels. \nHowever, this doesn't mean all Prefab instances have to be identical. You can override settings on individual prefab instances if you want some instances of a Prefab to differ from others. You can also create variants of Prefabs, which allow you to group a set of overrides together into a meaningful variation of a Prefab."
     - content: "What best describes the Microsoft.MixedReality.Toolkit.UI Namespace use for mixed reality solutions?"
       choices:
         - content: "It contains a set of MRTK object classes to accelerate development."
@@ -43,7 +43,7 @@ quiz:
           explanation: "The Microsoft.MixedReality.Toolkit.UI Namespace contains over 160 different classes, struct, interfaces, and enums to provide developers a means to accelerate UI development for mixed reality apps."
         - content: "It contains a set of Bing Maps object classes to interact with real world coordinates."
           isCorrect: false
-          explanation: "Bing Maps is accessible through the Maps SDK for Unity, where you can use a host of functions and the Playable Locations API.  It isn't directly connected to the Microsoft.MixedReality.Toolkit.UI Namespace."
+          explanation: "Bing Maps is accessible through the Maps SDK for Unity, where you can use a host of functions and the Playable Locations API. It isn't directly connected to the Microsoft.MixedReality.Toolkit.UI Namespace."
         - content: "It contains a set of Azure Digital Twin object classes for rapid prototyping."
           isCorrect: false
           explanation: "It contains a set of Azure Digital Twin object classes for rapid prototyping of UIs. The Microsoft.MixedReality.Toolkit.UI Namespace contains classes, structs, interfaces, and enums to accelerate the development of UIs for mixed reality experiences."
