@@ -15,7 +15,7 @@ Defender for Cloud helps you find and fix security vulnerabilities. Defender for
 
  -  To view information related to a resource in Defender for Cloud, you must be assigned the Owner, Contributor, or Reader role for the subscription or for the resource group that the resource is located in.
     
-    :::image type="content" source="../media/microsoft-defender-cloud-subcription-8479e941.png" alt-text="Screenshot showing an example of how to search for Microsoft Defender for Cloud.":::
+    :::image type="content" source="../media/microsoft-defender-cloud-subscription-f2daf5b1.png" alt-text="Screenshot showing an example of how to search for Microsoft Defender for Cloud.":::
     
  -  The Defender for Cloud's overview page opens.
     
@@ -57,7 +57,7 @@ To enable additional paid plans on a subscription:
 4.  Select the subscription or workspace that you want to protect.
 5.  Select **Enable** all to enable all of the plans for Defender for Cloud.
     
-    :::image type="content" source="../media/enable-all-plans-fe385b32.png" alt-text="Screenshot showing an example of how to Enable all plans in Defender for Cloud's Settings page. "lightbox="../media/enable-all-plans-fe385b32.png":::
+    :::image type="content" source="../media/enable-all-plans-fe385b32.png" alt-text="Screenshot showing an example of how to Enable all plans in Defender for Cloud's Settings page.":::
     
 6.  Select **Save**.
 
