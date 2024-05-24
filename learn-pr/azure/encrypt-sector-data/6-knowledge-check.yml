@@ -18,7 +18,7 @@ quiz:
     choices:
     - content: "Data encryption at rest."
       isCorrect: false
-      explanation: "Incorrect.  Azure provides extensive options for data encryption at rest to help customers safeguard their data and meet their compliance needs using Microsoft-managed encryption keys and customer-managed encryption keys."
+      explanation: "Incorrect.  Azure provides extensive options for data encryption at rest to help customers safeguard their data and meet their compliance needs by using Microsoft-managed encryption keys and customer-managed encryption keys."
     - content: "Bring your own key capability."
       isCorrect: false
       explanation: "Incorrect. With Azure Key Vault, customers can import or generate encryption keys in HSMs, ensuring that keys never leave the HSM protection boundary. This protection supports bring your own key (BYOK) scenarios."
