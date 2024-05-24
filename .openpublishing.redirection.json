@@ -6351,6 +6351,111 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/introduction-to-azure-postgres/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-postgres/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-postgres/2-what-is-azure-database-postgresql.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-postgres/3-how-azure-database-postgres-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-postgres/4-when-to-use-azure-database-postgres.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-postgres/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-postgres/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-postgres/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/2-create-database-azure-database-postgresql.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/3-exercise-create-database.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/4-connect-develop-your-database.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/5-exercise-create-basic-schema.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/6-connect-app-to-database.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/7-exercise-use-database-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.azure.azure-database-for-postgresql.trophy.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.azure.create-and-connect-to-azure-database-postgresql.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.create-azure-db-for-postgresql.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/github/github-introduction-products/5-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/github-introduction-products/6-summary",
       "redirect_document_id": false
@@ -38565,6 +38670,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/security-ops-sentinel/index.yml",
+      "redirect_url": "/training/paths/sc-200-configure-azure-sentinel-environment/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/index.yml",
       "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
       "redirect_document_id": false
@@ -38762,6 +38872,46 @@
      {
     "source_path": "learn-pr/wwl-azure/implement-desired-state-configuration-dsc/9-implement-dsc-linux-automation-azure.md",
     "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/6-implement-dsc-linux-automation-azure",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-bicep/8-knowledge-check.md",
+    "redirect_url": "/training/modules/implement-bicep/9-knowledge-check",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/implement-bicep/9-summary.md",
+    "redirect_url": "/training/modules/implement-bicep/10-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/15-explore-best-practices-dp-100-learning-path-12.md",
+    "redirect_url": "/training/modules/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/16-bring-it-all-together.md",
+    "redirect_url": "/training/modules/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/15-bring-it-all-together",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/17-knowledge-check.md",
+    "redirect_url": "/training/modules/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/16-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/18-summary.md",
+    "redirect_url": "/training/modules/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/17-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/describe-pipelines-concurrency/7-knowledge-check.md",
+    "redirect_url": "/training/modules/describe-pipelines-concurrency/8-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/describe-pipelines-concurrency/8-summary.md",
+    "redirect_url": "/training/modules/describe-pipelines-concurrency/9-summary",
     "redirect_document_id": false
     }
   ]
