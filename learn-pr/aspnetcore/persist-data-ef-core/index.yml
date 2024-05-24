@@ -24,7 +24,7 @@ prerequisites: |
   - Experience writing C# at the beginner level
   - A basic understanding of relational databases
   - Visual Studio Code
-  - .NET 7.0 SDK
+  - .NET 8.0 SDK
   - Git command-line client
 iconUrl: /training/achievements/aspnetcore/persist-data-ef-core.svg
 levels:

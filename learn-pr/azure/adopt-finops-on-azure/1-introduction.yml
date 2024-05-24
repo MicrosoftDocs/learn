@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.adopt-finops-on-azure.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 05/02/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

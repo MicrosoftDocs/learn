@@ -17,4 +17,3 @@ By the end of this module, participants will be able to:
 ## Goals
 
 The module aims to equip participants with the knowledge and skills necessary to manage identities and enhance security within Microsoft Entra ID. Participants will learn how to secure user accounts, groups, and external identities, and they'll be able to implement Microsoft Entra ID Protection to detect and mitigate identity-related security risks, ultimately strengthening the organization's overall security posture.
-
