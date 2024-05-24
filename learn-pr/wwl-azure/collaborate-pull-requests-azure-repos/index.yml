@@ -50,7 +50,7 @@ subjects:
 units:
 - learn.wwl.collaborate-pull-requests-azure-repos.introduction
 - learn.wwl.collaborate-pull-requests-azure-repos.collaborate-pull-requests
-- learn.wwl.collaborate-pull-requests-azure-repos.exercise-collaborate-pull-requests
+- learn.wwl.collaborate-pull-requests-azure-repos.exercise-collaborating-pull-requests
 - learn.wwl.collaborate-pull-requests-azure-repos.knowledge-check
 - learn.wwl.collaborate-pull-requests-azure-repos.summary
 badge:
