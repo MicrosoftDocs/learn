@@ -6351,6 +6351,111 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/introduction-to-azure-postgres/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-postgres/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-postgres/2-what-is-azure-database-postgresql.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-postgres/3-how-azure-database-postgres-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-postgres/4-when-to-use-azure-database-postgres.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-postgres/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-postgres/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-postgres/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/2-create-database-azure-database-postgresql.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/3-exercise-create-database.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/4-connect-develop-your-database.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/5-exercise-create-basic-schema.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/6-connect-app-to-database.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/7-exercise-use-database-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.azure.azure-database-for-postgresql.trophy.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.azure.create-and-connect-to-azure-database-postgresql.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.create-azure-db-for-postgresql.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/github/github-introduction-products/5-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/github-introduction-products/6-summary",
       "redirect_document_id": false
@@ -38807,6 +38912,71 @@
     {
     "source_path": "learn-pr/wwl-azure/describe-pipelines-concurrency/8-summary.md",
     "redirect_url": "/training/modules/describe-pipelines-concurrency/9-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-tools-track-usage-flow/8-exercise-add-application-insights-asp-net-core-application.md",
+    "redirect_url": "/training/modules/implement-tools-track-usage-flow/",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/share-knowledge-within-teams/4-integrate-azure-boards.md",
+    "redirect_url": "/training/modules/share-knowledge-within-teams/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-versioning-strategy/10-summary.md",
+    "redirect_url": "/training/modules/implement-versioning-strategy/8-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-versioning-strategy/6-exercise-promote-package.md",
+    "redirect_url": "/training/modules/implement-versioning-strategy/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-versioning-strategy/7-explore-best-practices-for-versioning.md",
+    "redirect_url": "/training/modules/implement-versioning-strategy/6-explore-best-practices-for-versioning",
+    "redirect_document_id": false
+    },
+       {
+    "source_path": "learn-pr/wwl-azure/implement-versioning-strategy/8-exercise-push-from-pipeline.md",
+    "redirect_url": "/training/modules/implement-versioning-strategy/",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/implement-versioning-strategy/9-knowledge-check.md",
+    "redirect_url": "/training/modules/implement-versioning-strategy/7-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/manage-git-branches-workflows/7-version-control-git-azure-repos.md",
+    "redirect_url": "/training/modules/manage-git-branches-workflows/8-version-control-git-azure-repos",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/manage-git-branches-workflows/8-knowledge-check.md",
+    "redirect_url": "/training/modules/manage-git-branches-workflows/9-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/manage-git-branches-workflows/9-summary.md",
+    "redirect_url": "/training/modules/manage-git-branches-workflows/10-summary",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/collaborate-pull-requests-azure-repos/4-examine-github-mobile-for-pull-request-approvals.md",
+    "redirect_url": "/training/modules/collaborate-pull-requests-azure-repos/",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/collaborate-pull-requests-azure-repos/5-knowledge-check.md",
+    "redirect_url": "/training/modules/collaborate-pull-requests-azure-repos/4-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/collaborate-pull-requests-azure-repos/6-summary.md",
+    "redirect_url": "/training/modules/collaborate-pull-requests-azure-repos/5-summary",
     "redirect_document_id": false
     }
   ]
