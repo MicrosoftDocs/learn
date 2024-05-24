@@ -194,6 +194,3 @@ The following code contains the `Teleport` operation, the `SetToPlus` and `SetTo
     
     Received state |0〉
     ```
-
-> [!NOTE]
-> You can't visualize the circuit diagram for the *teleportation.qs* because the Q# program contains a comparison of a `Result` type. 

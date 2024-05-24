@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-unit-tests-using-github-copilot-tools.exercise-complete-create-unit-tests-challenge
+title: Exercise - Complete the "create unit tests" challenge
+metadata:
+  title: Exercise - Complete the "create unit tests" challenge
+  description: "Exercise - Complete the \"create unit tests\" challenge"
+  ms.date: 05/20/2024
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-exercise-complete-create-unit-tests-challenge.md)]

@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.introduction-to-polyglot-notebooks
+metadata:
+  ms.author: japhletnwamu
+  ms.service: artificial-intelligence
+  author: japhletnwamu
+  ms.date: 04/03/2024
+  title: Introduction to Polyglot Notebooks
+  description: Use Polyglot Notebooks to create and run code in multiple languages in a single document. This module introduces you to Polyglot Notebooks and shows you how to create and run code in multiple languages.
+  ms.topic: module
+  ms.custom: team=cloud_advocates
+title: Introduction to Polyglot Notebooks
+summary: Use Polyglot Notebooks to create and run code in multiple languages in a single document. This module introduces you to Polyglot Notebooks and shows you how to create and run code in multiple languages.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe the core concepts of Polyglot Notebooks
+  - Explain why you should use Polyglot Notebooks.
+  - Create and run Notebooks.
+  - Use features like variable sharing and commands to combine frontend and backend and mermaid to render flowcharts and diagrams.
+prerequisites:
+  To get started with Polyglot Notebooks, you need to.
+  - Install the latest .NET SDK,
+  - Install Polyglot Notebooks as an extension on Visual Studio Code. From there, you can create and run Notebooks and do much more.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.introduction-to-polyglot-notebooks.introduction
+- learn.introduction-to-polyglot-notebooks.what-is-polyglot-notebook
+- learn.introduction-to-polyglot-notebooks.getting-started
+- learn.introduction-to-polyglot-notebooks.setting-up
+- learn.introduction-to-polyglot-notebooks.polyglot-notebook-features
+- learn.introduction-to-polyglot-notebooks.document-your-code
+- learn.introduction-to-polyglot-notebooks.value-sharing
+- learn.introduction-to-polyglot-notebooks.knowledge-check
+- learn.introduction-to-polyglot-notebooks.summary
+badge:
+  uid: learn.introduction-to-polyglot-notebooks.badge

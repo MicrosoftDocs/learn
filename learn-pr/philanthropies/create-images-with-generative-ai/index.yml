@@ -15,7 +15,7 @@ abstract: |
   - Understand how AI-generated images can enhance training programs.
   - Analyze the impact of the quality of the prompt on the AI-generated image.
   - Evaluate the recommended actions when an AI-generated image doesn't align with your expectations.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/create-images-with-generative-ai.svg
 levels:
 - beginner
 roles:

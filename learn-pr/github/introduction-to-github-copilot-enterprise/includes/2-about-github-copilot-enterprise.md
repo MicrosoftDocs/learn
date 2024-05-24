@@ -48,7 +48,7 @@ Now, let's review the differences between GitHub Copilot Enterprise, GitHub Copi
 |---------------------------------------------------------|---|---|
 |**Collaborative Chat within pull requests**| ✓ | ✕ | ✕ |
 |**Lives on Github.com**| ✓ | ✓ | ✓ |
-|**Plugs right into your editor**| ✕ | ✓ | ✓ |
+|**Plugs right into your editor**| ✓ | ✓ | ✓ |
 |**Pull request summaries**| ✓ | ✕ |  ✕ |
 |**Copilot docset management**| ✓ | ✕ |  ✕ |
 |**Copilot code review**| ✓ | ✕ |  ✕ |

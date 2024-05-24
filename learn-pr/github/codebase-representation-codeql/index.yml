@@ -1,28 +1,29 @@
 ### YamlMime:Module
 uid: learn.codebase-representation-codeql
 metadata:
-  title: "Identify security vulnerabilities in your codebase with CodeQL" # user input: module title for browser tab and search results
-  description: "Learn how CodeQL lets you analyze the code in your GitHub repository and identify security vulnerabilities." # user input: a description for site search and SEO
+  title: "Identify security vulnerabilities in your codebase by using CodeQL"
+  description: "Learn how to use CodeQL to analyze the code in your GitHub repository and identify security vulnerabilities." 
   ms.date: 05/01/2024
   author: a-a-ron
   ms.author: aastewar
   ms.topic: module
-title: Identify security vulnerabilities in your codebase with CodeQL
-summary: "In this module, you'll learn about CodeQL. You'll review information about how CodeQL enables you to analyze the code in your GitHub repository and identify security vulnerabilities." # user input: introductory summary (https://review.learn.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main)
-abstract: | # user input: learning objectives (https://review.learn.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)
+  ms.service: github
+title: Identify security vulnerabilities in your codebase by using CodeQL
+summary: "In this module, you learn about CodeQL and how you can use it to analyze the code in your GitHub repository and identify security vulnerabilities."
+abstract: |
  By the end of this module, you'll be able to:
   - Create a database by using CodeQL to extract a single relational representation of each source file in the codebase.
   - Run CodeQL in a database to find problems in your source code and find potential security vulnerabilities.
-  - Understand CodeQL scan results using queries created by GitHub, or your own custom queries.
-prerequisites: | # user input: prerequisites (https://review.learn.microsoft.com/help/learn/id-guidance-prerequisites?branch=main)
+  - Understand CodeQL scan results by using GitHub-created queries or your own custom queries.
+prerequisites: |
   - Basic knowledge of GitHub Actions
   - Familiarity with GitHub code scanning
   - Administrative access to a repository
-  - Familiarity with SQL, Prolog, Datalog
+  - Familiarity with SQL, Prolog, and Datalog
 iconUrl: /training/achievements/generic-badge.svg
-levels: # user input: add levels from level taxonomy (https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level)
+levels:
   - intermediate 
-roles: # user input: add roles from role taxonomy (https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role)
+roles:
   - devops-engineer
   - administrator
   - developer
