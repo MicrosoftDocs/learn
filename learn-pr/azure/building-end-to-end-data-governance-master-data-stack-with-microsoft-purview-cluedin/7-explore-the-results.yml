@@ -3,7 +3,7 @@ uid: learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-
 title: Explore the results
 metadata:
   title: Explore the results
-  description: "With your data now mapped into the CluedIn platform and streaming to ADLS Gen 2, we'll explore the data in the CluedIn Studio."
+  description: "With your data now mapped into the CluedIn platform and streaming to Azure Data Lake Storage (ADLS) Gen 2, we explore the data in the CluedIn Studio."
   ms.date: 11/29/2023
   author: whhender
   ms.author: whhender
