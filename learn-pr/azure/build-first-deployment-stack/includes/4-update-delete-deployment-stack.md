@@ -10,6 +10,8 @@ In this unit, you learn how to update a deployment stack by adding resources to 
 
 As an application evolves, so does its resources. How do we update a deployment stack and its managed resources when new services and features are added? What situations require us to update a deployment stack? Adding a new resource or changing the property of an existing managed resource would require that we update the deployment stack.
 
+Updating a stack means updating the resources defined in our ARM JSON template, Bicep file, or template spec. Once the change is made to the template file, we update the deployment stack using the appropriate command.
+
 Let's say that our deposits application needs to add a new Azure SQL database, and we want the deployment stack to manage the database. To add the new database, we update our Bicep file to define a new Azure SQL server and database.
 
 :::code language="bicep" source="code/1-template.bicep" range="1-63" highlight="5-16, 44-63":::
