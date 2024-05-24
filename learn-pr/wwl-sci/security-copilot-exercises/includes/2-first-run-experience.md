@@ -1,78 +1,84 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+The organization you work for wants to increase the efficiency and capabilities of its security analyst to improve security outcomes. In support of that objective, the office of the CISO has determined that deploying Microsoft Copilot for Security is a key step towards that objective. As the Security administrator for your organization, you have been tasked with setting up Copilot.
 
-    Goal: briefly summarize the key skill this unit will teach
+In this exercise, you will walk through the first run experience.  
 
-    Heading: none
+- You have a global administrator role within Microsoft Entra.
+- You will provision Microsoft Entra with 1 security compute unit (SCU), to start.
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+> [!NOTE]
+> The environment for this exercise is based on a simulation, generated from pre-determined screen captures of the actual product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script are not be supported.
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+### Exercise
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+> [!NOTE]
+> It is recommended that you open the exercise environment in a separate browser window so that you can simultaneously view the instructions and the exercise environment.
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+Using the exercise environment, follow the exercise steps that are listed.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+[![Button to launch exercise environment.](../media/security-copilot-launch-exercise-button-v2.png)]()
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+#### Task: Set role permissions
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+Before users can start using Copilot, admins need to provision and allocate capacity. To provision capacity:
 
-    Goal: State concisely what's covered in this unit
+- You must have an Azure subscription.
+- You need to be an Azure owner or Azure contributor, at a resource group level, as a minimum.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+In this task you'll walk through the process of ensuring you have the appropriate role permissions.  This starts by enabling access management for Azure resources.
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+Why is this needed? As a Global Administrator in Microsoft Entra ID, you might not have access to all subscriptions and management groups in your directory.  Microsoft Entra ID and Azure resources are secured independently from one another. That is, Microsoft Entra role assignments do not grant access to Azure resources, and Azure role assignments do not grant access to Microsoft Entra ID. When you elevate your access, you will be assigned the User Access Administrator role in Azure at root scope (/). This allows you to view all resources and assign access in any subscription or management group in the directory. For details, see [Elevate access to manage all Azure subscriptions and management groups.](/azure/role-based-access-control/elevate-access-global-admin).
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+Once you have user access, you can then assign yourself the necessary access to provision SCUs for Copilot.  
+ and assigning the contributor or owner role that will enable you to provision the security compute units (SCU) for Copilot.
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+1. You'll start by enabling Access management for Azure resources.  To access this setting:
+    1. Make sure you are on the browser tab for **Microsoft Entra**.
+    1. Select **Overview** from the left navigation panel.
+    1. Then select the **Properties** tab from the main window.
+    1. Enable the toggle switch for **Access management for Azure resources**.
 
-    Heading: none
--->
-TODO: add a visual element
+1. Now that you can view all resources and assign access in any subscription or management group in the directory, assign yourself the Owner role for the Azure subscription.
+    1. Select the **Azure browser tab** to access the Azure portal.
+    1. Select **Subscriptions** then select the **???? Verify the subscription name for the simulation???**
+    1. Select **Access control (IAM)**.
+    1. Select **Add**, then **Add role assignment**.
+    1. From the Role tab, select **Privileged administrator roles**.
+    1. Select **Owner**.
+    1. Select **+ Select members**.
+    1. Select **??? Which user ???**.
+    1. Select **Allow user to assign all roles except privileged administrator roles, Owner, UAA, RBAC (Recommended)**.
+    1. Select **Review + assign**.
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+As an owner to the Azure subscription, you'll now be able to provision capacity within Copilot.
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+#### Task: Provision capacity
 
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
+In this task, you'll go through the steps of provisioning capacity for your organization. There are two options for provisioning capacity:
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
+- Provision capacity within Copilot for Security (recommended)
+- Provision capacity through Azure
 
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+For this exercise, you'll provision capacity through Copilot for Security. When you first open Copilot for Security (https://securitycopilot.microsoft.com), a wizard guides you through the steps in setting up capacity for your organization.
 
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+1. Open the browser tab for **Microsoft Copilot for Security**.
+1. Follow the steps in the Wizard, select **Get started**.
+1. On this page, you'll set up your security capacity.  
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    ***For this simulation, the input values are auto-populated by selecting the right arrow key on your keyboard.***
+    
+    1. Use the right arrow key to enter your Azure subscription
+    1. Select Create a new resource group then use the right arrow key to enter the resource group name.
+    1. Use the right arrow key to enter the capacity name
+    1. Select a region for the Prompt evaluation location.
+    1. You can choose whether you want to select the option, "If this location has too much traffic, allow Copilot to evaluate prompts anywhere in the world (recommended for optimal performance).
+    1. Capacity region is set based on location selected.
+    1. Use the right arrow key to populate Security compute units field with the value of 1.
+    1. Select the box, "I acknowledge that I have read, understood, and agree to the Terms and Conditions.
+    1. Select Continue (on bottom right).
 
-<!-- Do not add a unit summary or references/links -->
+1. Once the SCU is provisioned, the next page in the wizard is to allocate that capacity. Select the drop down and select the capacity that was configured.
+1. The next screen is where you can select options to help improve Copilot.  You can select the toggle based on your preferences.
+1. In the next page, you're informed of the default roles that can access Copilot (you’ll add users in a subsequent exercise). Select continue.
+1. You are now ready to explore and start using Copilot.  The next unit will focus on exploring the core functionality of the standalone experience.
+
+In this exercise, you successfully provisioned Copilot for Security.

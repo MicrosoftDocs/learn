@@ -1,104 +1,104 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+Now that you’ve successfully provisioned Copilot and configured the default environment, you will explore all the core features available in the standalone experience of Microsoft Copilot for Security.
 
-    Heading: none
+In this exercise, you'll start exploring all the key landmarks in the landing page of the standalone experience of Microsoft Copilot for Security.  For this exercise, you have the Copilot owner role.
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+> [!NOTE]
+> The environment for this exercise is based on a simulation, generated from pre-determined screen captures of the actual product. As a limited simulation, links on a page may not be enabled and **this exploration exercise does not accept any user inputs**.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+### Exercise
 
-    Goal: Describe the part of the scenario covered in this exercise
+> [!NOTE]
+> It is recommended that you open the exercise environment in a separate browser window so that you can simultaneously view the instructions and the exercise environment.
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+Using the exercise environment, follow the exercise steps that are listed.  As noted in above, this exploration exercise does not accept any user inputs.
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+[![Button to launch exercise environment.](../media/security-copilot-launch-exercise-button-v2.png)]()
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+#### Task: Explore the menu options
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+You'll start at the top left corner of the page and exploring the options in the home menu.
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+1. Select the **Menu** icon ![home menu icon](../media/home-menu-icon.png), which is sometimes referred to as the hamburger icon.
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+1. Select **My sessions** and note the available options.
+    1. Select search icon, then select the X to close.
+    1. Select recent to view the most recent sessions
+    1. Select filter and note the available options, then close the filer.
+    1. Select the home menu icon to open the home menu.
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+1. Select **Promptbook library**.
+    1. Select search icon and then select the X to close.
+    1. Select My promptbooks.  A subsequent task will dive deeper into promptbooks.
+    1. Select Woodgrove.
+    1. Select Microsoft.
+    1. Select filter to view the available options, then select the X to close.
+    1. Select the home menu icon to open the home menu.
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+1. Select **Owner settings**.  These settings are available to you as an Copilot owner.  A Copilot contributor does have not access to these menu options.
+    1. For plugins for Copilot for Security, select the drop-down for Who can add and manage their own custom plugins to view the available options.
+    1. Select drop-down for Who can add and manage custom plugins for everyone in the organization to view the available options.  Note, this option is greyed out if Who can add and manage their own custom plugins is set to owners only.
+    1. Select the information icon next to “Allow Copilot for Security to access data from your Microsoft 365 Services.”  This setting must be enabled if you want to use the Microsoft Purview plugin.  You will work with this setting in a later exercise.
+    1. Select the drop down for who can upload files to view the available options.
+    1. Select the home menu icon to open the home menu.
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+1. Select **Role assignment**.
+    1. Select Add members, then close.
+    1. Expand owner.
+    1. Expand contributor.
+    1. Select the home menu icon to open the home menu.
 
-    Goal: List the steps they'll do to complete the exercise.
+1. Select **Usage monitoring**.
+    1. Select the date filter to view available options.
+    1. Select the home menu icon to open the home menu.
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+1. Select **Settings**.
+    1. Select preferences. Scroll down to view available options.
+    1. Select data and privacy.
+    1. Select About.
+    1. Select the X to close the preferences window.
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
+1. Select the tenant switch, which is the down-arrow next to the tenant name.  In this case, the only available tenant is Woodgrove, this is where you can select other tenants if available.
 
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+#### Task: Explore access to recent sessions
 
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+In the center of the landing page, you will see cards representing your more recent sessions.  
 
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+1. Selecting the title of any session card takes you to that session.
+1. Select View all sessions to go to the My sessions page.
+1. Return to the landing page.
 
-<!-- 5. Validation -------------------------------------------------------------------------------------------
+#### Task: Explore access to promptbooks
 
-    Goal: Enables the learner to evaluate if they completed the exercise correctly. Feedback like this is critical for learning.
+The next section of the Copilot landing page revolves around promptbooks. The landing page shows tiles for some Microsoft security promptbooks. Here you will explore access to promptbooks and the promptbook library. In a subsequent exercise, you will explore creating and running a promptbook.  
 
-    Structure:
-        1. A heading of "## Check your work".
-        2. An introductory paragraph describing how they'll validate their work at a high level.
-        3. Numbered steps (if the learner needs to perform multiple steps to verify if they were successful).
-        4. Video of an expert performing the exact steps of the exercise (optional).
+1. To the right of where it says Get started with these promptbooks, are a left and right arrow key that allows you to scroll through the tiles for Microsoft security promptbooks.  Select the **right arrow >**
 
-    Example:
-         "At this point, the app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
+1. Each tile shows the title of the promptbook, a brief description, the number of prompts, and a run icon.  Selecting the title of any of the promptbook tiles to open that promptbook.  Select **Vulnerability impact assessment**, as an example.  The window for the selected promptbook provides information, including who created the promptbook, tags, a brief description, inputs required to run the promptbook, and a listing of the prompts.  You can duplicate or share this promptbook. You also have the option to start a new session.  Select **X** to close the window.
 
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
+1. Select **View the promptbook library**.
+    1. Select the search icon and close it.
+    1. To view promptbooks that you own, select My promptbooks.
+    1. Select Woodgrove for a listing of promptbooks owned by Woodgrove, the name of a ficticious organization.
+    1. To view built-in, Microsoft owned/developed promptbooks, select Microsoft.
+    1. Select the filter icon.  Here you can filter based on tags assigned to the workbook.  Close the filter window by selecting the X in the New filter tab.
+    1. Return to the landing page.
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+#### Task: Explore the promptbar
 
-<!-- Do not add a unit summary or references/links -->
+At the bottom center of the page is the promptbar.  The promptbar includes the prompts and sources icon, which you'll explore.
+
+1. In the promptbar you type in your prompt or you can select the prompts icon to select a built-in prompt or a promptbook.  Select the **prompt icon** ![prompt icon](../media/prompt-icon.png). 
+    1. Select **See all promptbooks**
+        1. Scroll to view all the available promptbooks.
+        1. Select the **back-arrow** next to the search bar to go back.
+    1. Select **See all system  capabilities**.  The list shows all available system capabilities (these capabilities are in effect prompts that you can run). Many system capabilities are associated with specific plugins and as such will only be listed if the corresponding plugin is enabled.
+        1. Scroll to view all the available promptbooks.
+        1. Select the **back-arrow** next to the search bar to go back.
+
+1. Select the **sources icon** ![sources icon](../media/sources-icon.png).
+    1. The sources icon opens the manage sources window. From here you can access Plugins or Files. Let's start by selecting **Plugins**.
+        1. Select whether you want to all plugins, those that are enabled (on), or those that are disabled (off).
+        1. Expand/collapse list of Microsoft, non-Microsoft, and custom plugins.
+        1. Some plugins require configuring parameters. Select the settings icon for the Microsoft Sentinel plugin.  You'll explore 
