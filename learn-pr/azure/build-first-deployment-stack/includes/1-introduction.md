@@ -4,7 +4,7 @@ An Azure deployment stack is a type of Azure resource that enables you to manage
 
 Suppose you work as a DevOps engineer for a community bank that decided to use deployment stacks to better control lifecycle management of the bank's Azure resources. You've been asked to deploy a test version of a new deposits application.
 
-The initial deployment will include an app service plan and an app service, but the next sprint will include integrating an Azure SQL database.
+The initial deployment will include an app service plan and an app service, but the next sprint will include integrating an Azure SQL server and database.
 
 You decide to create and modify the deployment stack using a command-line interface and a bicep file that defines the application's resources.
 

@@ -1,6 +1,6 @@
 An Azure deployment stack is a collection of Azure resources that can be managed as a single unit even if they span multiple resource groups or subscriptions.
 
-You are planning for the deployment of the test version of the new deposits application. You need to learn more about how to create a deployment stack and verify its managed resources.
+You're planning for the deployment of the test version of the new deposits application. You need to learn more about how to create a deployment stack and verify its managed resources.
 
 In this unit, you learn how to create a deployment stack, verify its deployment, and list all deployment stacks in your environment.
 
@@ -18,7 +18,7 @@ Think of deployment stacks as a series of pointers that groups your application'
 
 Deployment stacks support the use of Bicep files, ARM JSON templates, or template specs for defining resources in a stack. When creating a deployment stack using the Azure CLI or Azure PowerShell, you're able to point to the specific template file (Bicep file or ARM JSON template) or template spec. It isn't necessary to change how you define your resources.
 
-We'll use the following bicep file for our first deployment stack. The file defines an app service plan and a web app. These resources become managed resources when we create the deployment stack.
+We use the following bicep file for our first deployment stack. The file defines an app service plan and a web app. These resources become managed resources when we create the deployment stack.
 
 :::code language="bicep" source="code/1-template.bicep" range="1-4, 18-42":::
 
@@ -27,7 +27,7 @@ We'll use the following bicep file for our first deployment stack. The file defi
 
 ## Creating a deployment stack
 
-Creating and deploying a deployment stack and its resources is nearly identical to a standard Azure deployment. Whether you are using AZ CLI, Azure PowerShell, or an infrastructure as code pipeline, the process feels the same. For example:
+Creating and deploying a deployment stack and its resources is nearly identical to a standard Azure deployment. Whether you're using AZ CLI, Azure PowerShell, or an infrastructure as code pipeline, the process feels the same. For example:
 
 ::: zone pivot="cli"
 
@@ -75,7 +75,7 @@ New-AzResourceGroupDeploymentStack `
     -DenySettingsMode None
 ```
 
-Notice that the only changes in the command is the word `stack`, and differences in the parameters used. The same is true for deployments to subscriptions and management groups. In later modules, we explore how to manage a deployment stack's resources using _action on unmanage_ how to configure _deny settings_.
+Notice that the only change in the command is the word `stack`, and differences in the parameters used. The same is true for deployments to subscriptions and management groups. In later modules, we explore how to manage a deployment stack's resources using _action on unmanage_ how to configure _deny settings_.
 
 ::: zone-end
 
@@ -159,7 +159,7 @@ The results include the properties of the deployment stack and the status of the
 
 :::code language="powershell" source="code/3-powershell.ps1" range="1-10":::
 
-Take notice of the resources section of the output. it defines the resources managed by the deployment stack. You see the full resource ID of each resource.
+Take notice of the resources section of the output. It defines the resources managed by the deployment stack. You see the full resource ID of each resource.
 
 ::: zone-end
 

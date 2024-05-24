@@ -88,7 +88,7 @@ With the Bicep file updated, we want to update the deployment stack so that the 
 
 ::: zone pivot="cli"
 
-With the update complete, we want to validate that the the deployment stack is managing the Azure SQL database. To view the configuration of the deployment stack, run the following command from the terminal in Visual Studio Code.
+With the update complete, we want to validate that the deployment stack is managing the Azure SQL database. To view the configuration of the deployment stack, run the following command from the terminal in Visual Studio Code.
 
 ```azurecli
 az stack group show \
@@ -106,7 +106,7 @@ Take notice of the resources section of the output. We now see the SQL server an
 
 ::: zone pivot="powershell"
 
-With the update complete, we want to validate that the the deployment stack is managing the Azure SQL database. To view the configuration of the deployment stack, run the following command from the terminal in Visual Studio Code.
+With the update complete, we want to validate that the deployment stack is managing the Azure SQL database. To view the configuration of the deployment stack, run the following command from the terminal in Visual Studio Code.
 
 ```azurepowershell
 Get-AzResourceGroupDeploymentStack `

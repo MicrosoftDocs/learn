@@ -12,7 +12,7 @@ During the process, you'll:
 
 ## Create the Bicep file
 
-Our first step is to create a bicep file that defines our resources to use with the deployment stack
+Our first step is to create a bicep file that defines our resources to use with the deployment stack.
 
 1. Open Visual Studio Code.
 
@@ -108,11 +108,11 @@ az stack group show \
     --name stack-deposits
 ```
 
-The results include the properties of the deployment stack as well as the status of the managed resources. The output should appear familiar to the following:
+The results include the properties of the deployment stack and the status of the managed resources. The json output should appear familiar to the following image:
 
 :::code language="json" source="code/2-json.json" range="1-39, 52-77":::
 
-Take notice of the resources section of the output. For each resource, it shows its status as "managed", its resource group, its resource id, and its deny settings.
+Take notice of the resources section of the output. For each resource, it shows its status as "managed," its resource group, its resource id, and its deny settings.
 
 ::: zone-end
 
@@ -126,10 +126,10 @@ Get-AzResourceGroupDeploymentStack `
     -Name stack-deposits
 ```
 
-The results include the properties of the deployment stack as well as the status of the managed resources. The output should appear familiar to the following:
+The results include the properties of the deployment stack and the status of the managed resources. The PowerShell output should appear familiar to the following image:
 
 :::code language="powershell" source="code/3-powershell.ps1" range="1-10":::
 
-Take notice of the resources section of the output. This defines the resources that are managed by the deployment stack. You see the full resource ID of each resource.
+Take notice of the resources section of the output. It defines the resources managed by the deployment stack. You see the full resource ID of each resource.
 
 ::: zone-end
