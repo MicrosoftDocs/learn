@@ -1,5 +1,15 @@
 Microsoft Exchange Online is a cloud-based service that manages emails, calendars, contacts, and tasks, playing a critical role in business environments by ensuring the secure and legal management of information. Effective retention policies in Exchange keep communications data compliant with legal standards and ensure that information is available when needed, preventing data overload.
 
+As the Data Protection Officer at the bank, your focus is now on managing Microsoft Exchange Online, which handles all the bank's emails, calendars, contacts, and tasks. Your task is to ensure the bank's communication data is handled securely and meets strict legal requirements.You must ensure these policies are thoroughly understood and effectively implemented to protect against data breaches and ensure compliance with regulatory demands. This includes overseeing how emails, tasks, and other items are retained or deleted, and ensuring the proper functioning of systems like the Recoverable Items folder to prevent data loss.
+
+Here you learn to:
+
+- Understand the scope and function of retention policies in Exchange Online.
+- Identify types of data covered under retention policies and those that are not.
+- Explain the process of transitioning from Messaging Records Management (MRM) to modern retention policies.
+- Navigate the retention and deletion mechanisms within the Recoverable Items folder.
+- Manage compliance and legal holds effectively within Exchange environments.
+
 ## Overview of retention in Exchange
 
 Retention policies in Exchange are designed to help organizations manage their communications data. These policies cover a wide range of data types within Exchange, including mail messages, tasks, calendar items, and notes. While public folders are included under retention policies, they aren't covered by retention labels.

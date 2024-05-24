@@ -1,5 +1,15 @@
 Microsoft Copilot for Microsoft 365 is an AI-powered productivity tool that integrates large language models (LLMs) like GPT-4 with Microsoft 365 applications including Word, Excel, PowerPoint, Outlook, and Teams. This tool enhances user creativity, productivity, and skills by utilizing AI to understand, summarize, predict, and generate content based on data from Microsoft Graph. Given its extensive interaction with sensitive data, effective retention policies are crucial for compliance with legal and regulatory standards. They also play a key role in protecting against data breaches and loss, maintaining the integrity and security of organizational data.
 
+As the Data Protection Officer at the bank, you now turn your attention to Microsoft Copilot, an advanced AI tool that interacts deeply with the organization's data across various Microsoft 365 applications. Given the tool's capability to generate, summarize, and manipulate sensitive data, you must ensure that Copilot's data interactions comply with data protection laws. Your role involves understanding how Copilot handles sensitive information, ensuring that retention policies adequately protect this data while it’s stored and even after it's deleted, according to regulatory standards.
+
+Here you learn to:
+
+- Identify Copilot interactions and data subject to retention policies.
+- Understand retention policies for Copilot prompts and responses.
+- Examine Copilot data retention lifecycle.
+- Assess compliance mechanisms for Copilot data.
+- Ensure Copilot data retention aligns with governance policies.
+
 ## Overview of retention in Copilot for Microsoft 365
 
 Retention policies for the location **Teams chats and Copilot interactions** manage the lifecycle of digital content from user interactions with Copilot. These policies ensure compliance with legal and regulatory standards for data retention and deletion, streamlining compliance across communication platforms. Retention in Copilot involves:

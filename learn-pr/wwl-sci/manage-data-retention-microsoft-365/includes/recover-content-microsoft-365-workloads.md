@@ -1,5 +1,15 @@
 In today's digital-first environment, understanding how to recover and retain documents isn't just a matter of correcting mistakes—it's essential for maintaining business continuity, complying with data protection regulations, and ensuring that sensitive information is safeguarded against accidental loss or malicious attacks.
 
+As the Data Protection Officer at the bank, your focus now shifts to managing and recovering documents in SharePoint, OneDrive, and Teams. Ensuring that documents can be recovered quickly and efficiently is crucial for maintaining business continuity and complying with data protection regulations. Your task is to understand the recovery options available within these platforms to address accidental deletions, data loss, or malicious attacks, ensuring that sensitive information remains protected and operations continue smoothly.
+
+Here you learn to:
+
+- Recover deleted files and documents in SharePoint, OneDrive, and Teams.
+- Restore previous versions of documents in SharePoint.
+- Perform a complete restoration of OneDrive content.
+- Manage recovery of items from the Recycle Bin in SharePoint and Teams.
+- Utilize version control tools in Microsoft 365 apps for enterprise.
+
 ## Recovery options
 
 Recovery tools help users manage and restore their data effectively, ensuring that operations can continue smoothly without significant data loss.

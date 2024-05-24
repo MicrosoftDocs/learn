@@ -1,5 +1,15 @@
 Viva Engage, part of the Microsoft Viva employee experience platform within Microsoft 365 and Microsoft Teams, enhances organizational connectivity by enabling employees to connect with leaders, coworkers, and communities. It offers a platform for crowdsourcing ideas, sharing work experiences, and fostering belonging at work. Effective retention policies in Viva Engage are crucial. They help organizations control and manage the lifecycle of digital content. This capability ensures all interactions comply with legal and regulatory standards while supporting the platform's collaborative and communicative functions.
 
+As the Data Protection Officer at the bank, your focus now shifts to Viva Engage, a key platform for internal community building and communication. Your challenge is to ensure that all interactions within Viva Engage—ranging from private messages to community posts—are managed according to the bank’s strict data retention policies. You need to grasp how these policies are applied within Viva Engage to ensure compliance and safeguard the privacy and integrity of communications, especially in a platform designed to foster open sharing and connectivity.
+
+Here you learn to:
+
+- Identify the types of content covered by retention policies in Viva Engage.
+- Understand how retention policies are applied and managed within Viva Engage environments.
+- Examine the retention lifecycle for both user and community messages in Viva Engage.
+- Assess compliance strategies for messages from external users within Viva Engage.
+- Ensure data integrity and compliance during employee transitions involving Viva Engage content.
+
 ## Overview of retention in Viva Engage
 
 Retention policies in Viva Engage help organizations manage the lifecycle of digital content within their networks, ensuring compliance with legal and regulatory standards. These policies govern both the retention and deletion of various types of content, which include:

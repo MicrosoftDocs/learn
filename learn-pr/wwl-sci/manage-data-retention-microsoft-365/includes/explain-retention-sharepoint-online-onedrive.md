@@ -1,5 +1,15 @@
 Retention policies and labels are crucial tools in SharePoint Online and OneDrive, helping organizations manage their data in line with legal and regulatory standards. These tools ensure that necessary information is retained and obsolete data is deleted appropriately.
 
+As a Data Protection Officer at a major bank, your role involves a deep understanding of how retention policies are managed within SharePoint Online and OneDrive. The bank handles a substantial volume of sensitive information that must be securely managed and compliant with regulatory standards. Your task is to understand the details of retention settings, understand the mechanisms of data preservation and deletion, and ensure these processes align with legal requirements. This knowledge enables you to maintain compliance and oversee any adjustments or audits related to data retention within these platforms.
+
+Here you learn to:
+
+- Understand retention policies and labels in SharePoint Online and OneDrive.
+- Describe the document lifecycle, focusing on retention and deletion.
+- Explain configuration of retention settings for data protection.
+- Demonstrate the use of Preservation Hold libraries.
+- Assess data integrity strategies during employee transitions.
+
 ## Overview of retention in SharePoint and OneDrive
 
 Effective retention settings are vital for compliance and efficient data management in SharePoint and OneDrive. These settings help organizations in meet legal obligations and manage the lifecycle of their data.

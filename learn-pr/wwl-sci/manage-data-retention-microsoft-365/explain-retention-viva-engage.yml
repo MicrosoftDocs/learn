@@ -4,12 +4,26 @@ title: Explain retention in Microsoft Yammer
 metadata:
   title: Explain retention in Microsoft Yammer
   description: "Explain retention in Microsoft Yammer"
-  ms.date: 05/12024
+  ms.date: 05/24/2024
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/explain-retention-viva-engage.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What types of content are covered by retention policies in Viva Engage?"
+    choices:
+    - content: "User messages, community messages, and emoticons."
+      isCorrect: false
+      explanation: "Incorrect: Emoticons aren't covered under Viva Engage retention policies."
+    - content: "User messages, community messages, and SharePoint files."
+      isCorrect: false
+      explanation: "Incorrect: SharePoint files are governed by separate retention policies, not Viva Engage-specific policies."
+    - content: "User messages and community messages."
+      isCorrect: true
+      explanation: "Correct: Retention policies in Viva Engage cover user messages and community messages, ensuring compliance with legal and regulatory standards."

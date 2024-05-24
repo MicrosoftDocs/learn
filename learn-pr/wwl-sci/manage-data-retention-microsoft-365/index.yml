@@ -3,19 +3,20 @@ uid: learn.wwl.manage-data-retention-microsoft-365
 metadata:
   title: Manage data retention and deletion in Microsoft 365 workloads
   description: "Manage data retention and deletion in Microsoft 365 workloads"
-  ms.date: 05/13/2024
+  ms.date: 05/24/2024
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
   ms.service: microsoft-purview
+  ai-usage: ai-assisted
 title: Manage data retention and deletion in Microsoft 365 workloads
 summary: Learn how to manage retention for Microsoft 365, and how retention solutions are implemented in the individual Microsoft 365 services.
 abstract: |
   After completing this module, you will be able to:
-  *   Describe the retention features in Microsoft 365 workloads.
-  *   Configure retention settings in Microsoft Teams, Yammer, and SharePoint Online.
-  *   Recover content protected by retention settings.
-  *   Regain protected items from Exchange Mailboxes.
+  - Describe the retention features in Microsoft 365 workloads.
+  - Configure retention settings in Microsoft Teams, Viva Engage, and SharePoint Online.
+  - Recover content protected by retention settings.
+  - Regain protected items from Exchange Mailboxes.
 prerequisites: |
   - Basic understanding of Microsoft 365 services
   - Basic understanding of Microsoft Purview
@@ -36,13 +37,12 @@ units:
 - learn.wwl.manage-data-retention-microsoft-365.introduction
 - learn.wwl.manage-data-retention-microsoft-365.explain-retention-sharepoint-online-onedrive
 - learn.wwl.manage-data-retention-microsoft-365.explain-retention-teams
+- learn.wwl.manage-data-retention-microsoft-365.explain-retention-copilot-interactions
 - learn.wwl.manage-data-retention-microsoft-365.explain-retention-viva-engage
 - learn.wwl.manage-data-retention-microsoft-365.explain-retention-exchange-online
-- learn.wwl.manage-data-retention-microsoft-365.explain-retention-copilot-interactions
-- learn.wwl.manage-data-retention-microsoft-365.recover-content-microsoft-365-workloads
 - learn.wwl.manage-data-retention-microsoft-365.apply-mailbox-holds-microsoft-exchange
-
 - learn.wwl.manage-data-retention-microsoft-365.recover-content-microsoft-exchange
+- learn.wwl.manage-data-retention-microsoft-365.recover-content-microsoft-365-workloads
 - learn.wwl.manage-data-retention-microsoft-365.knowledge-check
 - learn.wwl.manage-data-retention-microsoft-365.summary-resources
 badge:

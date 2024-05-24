@@ -1,5 +1,15 @@
 In Microsoft 365, ensuring legal and regulatory compliance often requires preserving email content that could be relevant to litigation or investigations. This preservation is accomplished through mechanisms known as Litigation Holds and In-Place Holds. Both play crucial roles but are suited to different scenarios depending on the specifics of the legal requirements and organizational policies.
 
+As the Data Protection Officer at the bank, you now need to focus on implementing and managing Litigation Holds and In-Place Holds within Microsoft 365. These holds are essential to preserving email content that might be relevant to litigation or investigations. Your role is to ensure that the bank’s email data is retained according to legal and regulatory requirements, preventing unauthorized deletions and ensuring data availability for compliance checks. Understanding how to effectively use these holds will help you protect sensitive information and manage compliance risks.
+
+Here you learn to:
+
+- Describe the purpose and functionality of Litigation Holds and In-Place Holds in Microsoft 365.
+- Implement Litigation Holds using the Exchange Admin Center and Exchange Management Shell.
+- Create In-Place Holds using the Exchange Admin Center and Exchange Management Shell.
+- Manage and monitor holds to ensure compliance with legal and regulatory requirements.
+- Assess strategies for preserving email content during litigation or investigations.
+
 ## What are In-Place and Litigation Holds?
 
 **In-Place Holds** and **Litigation Holds** are features in Microsoft 365 that prevent permanent deletion of emails and other mailbox items to meet compliance or legal requirements. Here's what they entail:
@@ -21,9 +31,9 @@ These holds are used to meet legal requirements, but they also help protect the 
 
 Here's how you can apply these holds within your organization:
 
-### Use the Exchange admin center (EAC) to place a mailbox on Litigation Hold
+### Use the Exchange Admin Center (EAC) to place a mailbox on Litigation Hold
 
-1. Navigate to the Exchange Admin Center at [https://admin.exchange.microsoft.com]( https://admin.exchange.microsoft.com) and sign in as Exchange administrator.
+1. Navigate to the Exchange Admin Center at [https://admin.exchange.microsoft.com]( https://admin.exchange.microsoft.com?azure-portal=true) and sign in as Exchange administrator.
 1. Select **Recipients** > **Mailboxes**.
 1. In the list of user mailboxes, select the mailbox that you want to place on Litigation Hold, and then select **Edit**.
 1. On the mailbox properties page, select **Mailbox features**.
@@ -56,7 +66,7 @@ Set-Mailbox <user email address> -LitigationHoldEnabled $true -LitigationHoldDur
 
 ### Use the EAC to create an In-Place Hold
 
-1. Navigate to the Exchange Admin Center at [https://admin.exchange.microsoft.com]( https://admin.exchange.microsoft.com) and sign in as Exchange administrator.
+1. Navigate to the Exchange Admin Center at [https://admin.exchange.microsoft.com]( https://admin.exchange.microsoft.com?azure-portal=true) and sign in as Exchange administrator.
 1. Navigate to **Compliance management** > **In-Place eDiscovery & Hold**, and select **New**.
 1. On the **Name and description** page, enter a name for the hold and an optional description, then select **Next**.
 1. On the **Mailboxes and Public folders page**, select the content sources:

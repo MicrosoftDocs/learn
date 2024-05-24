@@ -13,3 +13,17 @@ labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/apply-mailbox-holds-microsoft-exchange.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Why are holds essential for organizations in Microsoft 365?"
+    choices:
+    - content: "They prevent all data from being modified."
+      isCorrect: false
+      explanation: "Incorrect: Holds don't prevent data from being modified; they prevent it from being permanently deleted."
+    - content: "They ensure compliance with legal obligations to preserve electronically stored information during litigation or investigations."
+      isCorrect: true
+      explanation: "Correct: Holds are crucial for legal compliance and to preserve relevant information for potential litigation or audits."
+    - content: "They automatically delete obsolete data after a certain period."
+      isCorrect: false
+      explanation: "Incorrect: Holds are about preserving data, not automatically deleting it."

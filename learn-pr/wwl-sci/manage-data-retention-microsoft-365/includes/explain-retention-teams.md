@@ -1,5 +1,14 @@
 Retention policies in Microsoft Teams ensure that your organization can manage communications data in compliance with legal and regulatory standards. These policies help govern the retention and deletion of chats and channel messages, crucial for data lifecycle management within Teams.
 
+As the Data Protection Officer at the bank, you now focus on Microsoft Teams, the platform for your organization’s daily communications. Your responsibility is to ensure that retention policies are correctly understood and applied across all aspects of Teams. This includes chats, meetings, and collaborations involving sensitive information. You must make sure these policies cover everything from messages to attached files, ensuring compliance with strict regulatory requirements.
+
+Here you learn to:
+
+- Understand retention policies in Microsoft Teams for different content types.
+- Manage the data lifecycle in Teams, including retention, archiving, and deletion.
+- Navigate compliance for external and guest user communications.
+- Oversee data retention and deletion during employee transitions to secure sensitive information.
+
 ## Overview of retention in Microsoft Teams
 
 When setting up retention policies in Teams, it's important to understand the types of content covered:
