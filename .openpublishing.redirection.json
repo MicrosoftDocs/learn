@@ -38913,6 +38913,11 @@
     "source_path": "learn-pr/wwl-azure/describe-pipelines-concurrency/8-summary.md",
     "redirect_url": "/training/modules/describe-pipelines-concurrency/9-summary",
     "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-tools-track-usage-flow/8-exercise-add-application-insights-asp-net-core-application.md",
+    "redirect_url": "/training/modules/implement-tools-track-usage-flow/",
+    "redirect_document_id": false
     }
   ]
 }
