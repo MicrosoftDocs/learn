@@ -49,7 +49,7 @@ Placing your Prefab wind turbine assets in the Scene enables interaction with th
 
 ## Enable Gizmos
 
-Gizmos are a graphic overlay associated with a GameObject in a Scene and are displayed in the Scene View. Built-in Scene tools such as the move tool are Gizmos, and you can create custom Gizmos using textures or scripting. Some Gizmos are only drawn when the GameObject is selected, while the Editor draws other Gizmos regardless of which GameObjects are selected. you'll want to adjust the size of the Gizmos for your Scene, so that your Scene is not overwhelmed by oversize icons/objects.
+Gizmos are a graphic overlay associated with a GameObject in a Scene and are displayed in the Scene View. Built-in Scene tools such as the move tool are Gizmos, and you can create custom Gizmos using textures or scripting. Some Gizmos are only drawn when the GameObject is selected, while the Editor draws other Gizmos regardless of which GameObjects are selected. You'll want to adjust the size of the Gizmos for your Scene, so that your Scene isn't overwhelmed by oversize icons/objects.
 
 1. Select the **Gizmos** drop-down at the top of the **Scene** window and adjust the size via the slider.
 2. Toggle Gizmos on and off by selecting the **Gizmos** button at the top of your Scene.
@@ -60,7 +60,7 @@ Gizmos are a graphic overlay associated with a GameObject in a Scene and are dis
 
 1. Create Bing Maps Account:
 
-    - If you haven’t already, you need to [create a Bing Maps account](/bingmaps/getting-started/bing-maps-dev-center-help/creating-a-bing-maps-account). You will use that account to access the Microsoft Bing Maps Dev Center to generate a **Developer Key**, which is a code used to authenticate with the map service. The app you build for Mixed Reality will connect to that map service using your Bing Maps account.
+    - If you haven’t already, you need to [create a Bing Maps account](/bingmaps/getting-started/bing-maps-dev-center-help/creating-a-bing-maps-account). You'll use that account to access the Microsoft Bing Maps Dev Center to generate a **Developer Key**, which is a code used to authenticate with the map service. The app you build for Mixed Reality will connect to that map service using your Bing Maps account.
 
 1. When you create a Developer Key, be sure to select **Basic** as the key type and **Windows Application** as the **Application Type**.
 
