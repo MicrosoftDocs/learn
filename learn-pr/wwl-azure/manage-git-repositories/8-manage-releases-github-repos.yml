@@ -4,12 +4,12 @@ title: Manage releases with GitHub Repos
 metadata:
   title: Manage releases with GitHub Repos
   description: "Manage releases with GitHub Repos"
-  ms.date: 11/01/2022
+  ms.date: 05/24/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.custom:
+  - N/A
+durationInMinutes: 4
 content: |
-  [!include[](includes/4-manage-releases-github-repos.md)]
+  [!include[](includes/8-manage-releases-github-repos.md)]
