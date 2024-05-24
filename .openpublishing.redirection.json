@@ -38918,6 +38918,11 @@
     "source_path": "learn-pr/wwl-azure/implement-tools-track-usage-flow/8-exercise-add-application-insights-asp-net-core-application.md",
     "redirect_url": "/training/modules/implement-tools-track-usage-flow/",
     "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/share-knowledge-within-teams/4-integrate-azure-boards.md",
+    "redirect_url": "/training/modules/share-knowledge-within-teams/",
+    "redirect_document_id": false
     }
   ]
 }
