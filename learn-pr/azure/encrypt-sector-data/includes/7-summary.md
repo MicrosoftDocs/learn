@@ -28,5 +28,5 @@ Now that you have reviewed this module, you should be able to:
 * [What is Azure VPN Gateway?](/azure/vpn-gateway/vpn-gateway-about-vpngateways?azure-portal=true).
 * [802.1AE: MAC Security (MACsec)](https://1.ieee802.org/security/802-1ae/?azure-portal=true).
 * [Remote Desktop Protocol](/windows/win32/termserv/remote-desktop-protocol?azure-portal=true).
-* [Azure Key Vault keys, secrets and certificates overview](/azure/key-vault/about-keys-secrets-and-certificates?azure-portal=true).
+* [Azure Key Vault keys, secrets, and certificates overview](/azure/key-vault/about-keys-secrets-and-certificates?azure-portal=true).
 * [How to use SSH keys with Windows on Azure](/azure/virtual-machines/linux/ssh-from-windows?azure-portal=true).
