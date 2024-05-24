@@ -38923,6 +38923,31 @@
     "source_path": "learn-pr/wwl-azure/share-knowledge-within-teams/4-integrate-azure-boards.md",
     "redirect_url": "/training/modules/share-knowledge-within-teams/",
     "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-versioning-strategy/10-summary.md",
+    "redirect_url": "/training/modules/implement-versioning-strategy/8-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-versioning-strategy/6-exercise-promote-package.md",
+    "redirect_url": "/training/modules/implement-versioning-strategy/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-versioning-strategy/7-explore-best-practices-for-versioning.md",
+    "redirect_url": "/training/modules/implement-versioning-strategy/6-explore-best-practices-for-versioning",
+    "redirect_document_id": false
+    },
+       {
+    "source_path": "learn-pr/wwl-azure/implement-versioning-strategy/8-exercise-push-from-pipeline.md",
+    "redirect_url": "/training/modules/implement-versioning-strategy/",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/implement-versioning-strategy/9-knowledge-check.md",
+    "redirect_url": "/training/modules/implement-versioning-strategy/7-knowledge-check",
+    "redirect_document_id": false
     }
   ]
 }
