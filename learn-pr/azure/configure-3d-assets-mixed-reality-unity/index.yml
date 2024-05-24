@@ -12,7 +12,7 @@ title: Configure 3D assets for mixed reality in Unity
 summary: Learn how to place Prefab 3D assets or models into a Unity scene.
 abstract: |
   By the end of this module, you'll be able to:
-  - Incorporate design considerations into building a Scene..
+  - Incorporate design considerations into building a Scene.
   - Use MRTK interactions to provide a rich user experience
   - Place assets in a Unity scene.
 iconUrl: /training/achievements/configure-3d-assets-mixed-reality-unity.svg
