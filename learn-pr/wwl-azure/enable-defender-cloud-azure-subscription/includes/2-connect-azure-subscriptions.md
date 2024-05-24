@@ -57,7 +57,7 @@ To enable additional paid plans on a subscription:
 4.  Select the subscription or workspace that you want to protect.
 5.  Select **Enable** all to enable all of the plans for Defender for Cloud.
     
-    :::image type="content" source="../media/enable-all-plans-fe385b32.png" alt-text="Screenshot showing an example of how to Enable all plans in Defender for Cloud's Settings page.":::
+    :::image type="content" source="../media/enable-all-plans-fe385b32.png" alt-text="Screenshot showing an example of how to Enable all plans in Defender for Cloud's Settings page." lightbox="../media/enable-all-plans-fe385b32.png":::
     
 6.  Select **Save**.
 
