@@ -30,7 +30,7 @@ Note that Azure DevOps provides two options to bypass policy requirements for a 
  -  Bypass policies when completing pull requests.
  -  Bypass policies when pushing.
 
-It is essential to ensure that these permissions are granted only to designated individuals that understand the implications of these actions on the compliance with organizational standards and can exercise sound judgement regarding their use.
+It is essential to ensure that these permissions are granted only to designated individuals that understand the implications of these actions on the compliance with organizational standards and can exercise sound judgment regarding their use.
 
 ## GitHub
 
@@ -41,7 +41,7 @@ To implement branch protection rules, navigate to your repository in the GitHub 
  -  **Require a pull request before merging:** requires that contributors submit pull requests for review and approval before merging their changes.
  -  **Require status checks to pass before merging:** designates status checks that must pass before allowing merges. When enabled, commits must first be pushed to another branch, then merged or pushed directly to a branch that matches this rule after status checks have passed.
  -  **Require conversation resolution before merging:** ensures that all discussions and comments related to code changes are resolved before merging pull requests.
- -  **Require signed commits:** mandates that commits pushed to protected branches are signed with verified signatures, enhancing security, and ensuring the authenticity of code contributions.
+ -  **Require signed commits:** mandates that commit pushed to protected branches are signed with verified signatures, enhancing security, and ensuring the authenticity of code contributions.
  -  **Require linear history:** prevents merge commits in protected branches, enforcing a linear history, which makes it easier to track and, if needed, reverse any changes. This effectively means that any pull requests must use a squash merge or a rebase merge.
  -  **Require deployments to succeed before merging:** dictates that changes proposed in pull requests are thoroughly tested and validated before being integrated into the codebase.
  -  **Lock branch:** as its Azure Devops equivalent, restricts write access to the branch, making it read-only.
