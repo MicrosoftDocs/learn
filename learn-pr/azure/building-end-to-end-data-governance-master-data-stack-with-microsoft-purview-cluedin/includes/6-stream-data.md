@@ -1,6 +1,6 @@
-It might sound odd that we're going to stream data so early in the module, even though there are still so many problems with the data that need to be addressed. 
+It might sound odd that we're going to stream data so early in the module. Even though, there are still so many problems with the data that need to be addressed.
 
-Agility and time to value are of upmost importance in today's modern technology stack. Our data might not be perfect yet, but the data is already at a better level of usability than it was when it was raw, so we can provide this value immediately to our end users, and then iterate over our model to continue to make improvements.
+Agility and time to value are of upmost importance in today's modern technology stack. Our data might not be perfect yet, but the data is already at a better level of usability than it was when it was raw. So, we can provide this value immediately to our end users and then iterate over our model to continue to make improvements.
 
 So let's set up our stream of data back into an Azure Data lake Storage (ADLS) Gen2 folder called **mastered**:
 

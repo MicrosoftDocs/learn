@@ -44,7 +44,7 @@ This file contains more employees, but contains some of the same data quality is
 
 ### Products.csv
 
-In this file, we have 10 rows of data containing 10 fictitious products. We have columns for a SKU, Name, and Size. As you look across the other Products.csv files from YellowSystems (under the YellowSystems folder), you notice that there's no Identifier that can be used to uniquely stitch the products together. That's why we need to use a fuzzy merging approach later in the exercise.
+In this file, we have 10 rows of data containing 10 fictitious products. We have columns for a SKU, Name, and Size. As you look across the other Products.csv files from YellowSystems (under the YellowSystems folder), you notice that there's no Identifier that can be used to uniquely stitch the products together. The lack of a unique identifier, is why we need to use a fuzzy merging approach later in the exercise.
 
 :::image type="content" source="../media/navision-products-csv-sample-inline.png" alt-text="Screenshot of sample data in Products.csv." lightbox="../media/navision-products-csv-sample.png":::
 
@@ -68,7 +68,7 @@ Finally, notice in the file that we have the same 10 employees however we once a
 
 :::image type="content" source="../media/xero-persons-csv-sample-inline.png" alt-text="Screenshot of sample data in Persons.csv." lightbox="../media/xero-persons-csv-sample.png" :::
 
-Once again, if we look at Lorain, we can see that this time her email ends with "yahoo.com". However we can see that she does have an identifier of "1" and a column called "pid" that has a value that we did see in the Employees.csv file. It's most likely that we could use different identifiers from each file to stitch this together - however on the surface that would be quite a tricky SQL statement or Python script to create.
+Once again, if we look at Lorain, we can see that this time the email ends with "yahoo.com". However we can see that she does have an identifier of "1" and a column called "pid" that has a value that we did see in the Employees.csv file. It's most likely that we could use different identifiers from each file to stitch this value together - however on the surface that would be quite a tricky SQL statement or Python script to create.
 
 ## Upload the data to the ADLS Gen2
 
@@ -145,7 +145,7 @@ Now we create the secure credentials that Microsoft Purview and Azure Data Facto
 
 1. Set your scan to run once, and select **Continue**, then **Save and Run**. It takes only a few minutes to scan these files.
 
-1. You can check the scan by selecting your ADLS Gen2 resource in the data map, choosing **View details**, and looking at the **Last run status** of the most recent scan. Wait until it's completed.
+1. You can check the scan by selecting your ADLS Gen2 resource in the data map, choosing **View details**, and looking at the **Last run status** of the most recent scan.
 
 1. After the scan is complete, you should validate that everything was success by selecting your ADLS Gen2 resource in Microsoft Purview and making sure that there are assets discovered. You can see the number of discovered assets listed above the scan details.
 
@@ -208,33 +208,34 @@ Now we create the secure credentials that Microsoft Purview and Azure Data Facto
 
 1. Toggle on the settings for **Purview SyncDataSources** and **Purview PollDataSources**. These settings integrate the data sources from Microsoft Purview with CluedIn.
 
-1. You'll also notice a setting called **Purview : Sync CluedIn Data Sources Keywords**. Set this to **CluedInSource**. CluedIn will now be polling every 60 seconds to find Microsoft Purview assets that have been tagged with a Glossary Term that matches the filter.
+1. Notice the setting called **Purview : Sync CluedIn Data Sources Keywords**. Set it to **CluedInSource**. CluedIn now polls every 60 seconds to find Microsoft Purview assets that are tagged with a Glossary Term that matches the filter.
 
 1. Wait at least 60 seconds for CluedIn to poll the data sources in your Microsoft Purview resource.
 
-1. In CluedIn, go to the **Datasources** section under **Integration** in CluedIn and you'll notice that your 7 files are now showing in CluedIn. However, there will only be the metadata that is registered.
+1. In CluedIn, go to the **Datasources** section under **Integration**. Notice that your seven files are now showing in CluedIn. However, only the metadata is registered.
 
     :::image type="content" source="../media/cluedin-data-sources-purview.png" alt-text="Screenshot of the CluedIn integrations screen, showing the data sources.":::
 
 # Connect CluedIn to Azure Data Factory
 
-Next, we'll provide CluedIn with the credentials of our Azure Data Factory so CluedIn can also automate the construction of the Azure Data Factory pipelines to copy the data into CluedIn.
+Next, we provide CluedIn with the credentials of our Azure Data Factory so CluedIn can also automate the construction of the Azure Data Factory pipelines to copy the data into CluedIn.
 
 1. In the Azure portal, open your Data Factory instance and select **Access Control IAM**. Grant your service principal the **Data Factory Contributor** role to allow it to create pipelines and triggers.
 
 1. In your CluedIn Studio, select the **Settings** section, under **Administration**. Fill in the Azure Data Factory details:
-    1. Purview : Azure Data Factory Base Url - will be formatted like: `https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.DataFactory/factories/{factoryName}/`
+    1. Purview : Azure Data Factory Base Url - is formatted like: `https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.DataFactory/factories/{factoryName}/`
     1. Purview : Azure Data Factory Client ID - the Application (client) ID from your service principal
     1. Purview : Azure Data Factory Client Secret - the client secret value from setting up your service principal.
     1. Purview: Azure Data Factory Tenant ID- the Azure Tenant ID where your Azure Data Factory account lives.
 
-1. Toggle on the setting for **Purview : Azure Data Factory Pipeline Automation**. This will use our Azure Data Factory instance to copy our data into CluedIn.
+1. Toggle on the setting for **Purview : Azure Data Factory Pipeline Automation**. This setting uses our Azure Data Factory instance to copy our data into CluedIn.
 
-1. You'll also notice that there's a setting called **Search Filter for Azure Data Factory Pipelines**. Make sure it is set to **CluedInADFAuto**.
+1. You also notice a setting called **Search Filter for Azure Data Factory Pipelines**. Set it to **CluedInADFAuto**.
 
-1. We tagged our resources for this earlier, but you'll need to wait at least 60 seconds after set up to see the results.
-1. Return to the **Datasources** section under **Integration** in CluedIn and you'll now notice that all of your items in the list now have a new entry under them. When you select them will take you through to a preview of the data we have for our scenario.
+1. We tagged our resources for this setting earlier, but you need to wait at least 60 seconds after set up to see the results.
+
+1. Return to the **Datasources** section under **Integration** in CluedIn. Notice that all of your items in the list now have a new entry under them. When you select them, it takes you through to a preview of the data we have for our scenario.
 
 ## Congratulations!
 
-Great work! We've integrated all the pieces of our data technology stack! Give yourself a pat on the back before moving on to the next section. This is the most difficult part. Everything else is just using the tools we've put in place.
+Great work! We integrated all the pieces of our data technology stack! Give yourself a pat on the back before moving on to the next section. This integration is the most difficult part. Everything else is just using the tools we put in place.
