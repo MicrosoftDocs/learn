@@ -4,8 +4,8 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: "Questions on the basic Active Directory and Azure AD module."
-  ms.date: 5/31/2022
+  description: "Test your knowledge with these questions on the basic Windows Server Active Directory and Microsoft Entra ID."
+  ms.date: 05/24/2024
   author: billmath
   ms.author: billmath
   ms.topic: unit
@@ -32,28 +32,28 @@ quiz:
     - content: "Active Directory Usage and Compliance."
       explanation: "Incorrect, Active Directory Users and Computers is a Microsoft Management Console (MMC) snap-in that allows you to manage AD objects.."
       isCorrect: false
-    - content: "A bird that flies south"
+    - content: "A bird that flies south."
       explanation: "Incorrect, Active Directory Users and Computers is a Microsoft Management Console (MMC) snap-in that allows you to manage AD objects."
       isCorrect: false
   - content: "What is entra.microsoft.com?"
     choices:
-    - content: "where I go to get email."
+    - content: "Where I go to get email."
       explanation: "Incorrect, it's a new portal that allows you to easily manage your identity infrastructure."
       isCorrect: false
-    - content: "where I go to watch videos"
+    - content: "Where I go to watch videos."
       explanation: "Incorrect, it's a new portal that allows you to easily manage your identity infrastructure."
       isCorrect: false
-    - content: "a new cloud portal that allows you to manage your identity infrastructure and maintains security more easily."
+    - content: "A new cloud portal that allows you to manage your identity infrastructure and maintains security more easily."
       explanation: "Correct, it's a new portal that allows you to easily manage your identity infrastructure."
       isCorrect: true
   - content: "Why build this environment?"
     choices:
-    - content: "to create a foundation for testing and exploring more identity scenarios"
+    - content: "To create a foundation for testing and exploring more identity scenarios."
       explanation: "Correct, you can use this environment as a starting point for future learn modules. This environment will allow you to gain a deeper understanding of the identity space and some practical hands-on experience."
       isCorrect: true
-    - content: "because it's here."
+    - content: "Because it's here."
       explanation: "Incorrect, you can use this environment as a starting point for future learn modules. This environment will allow you to gain a deeper understanding of the identity space and some practical hands-on experience."
       isCorrect: false
-    - content: "so I can learn about video editing."
+    - content: "So I can learn about video editing."
       explanation: "Incorrect, you can use this environment as a starting point for future learn modules. This environment will allow you to gain a deeper understanding of the identity space, and some practical hands-on experience."
       isCorrect: false

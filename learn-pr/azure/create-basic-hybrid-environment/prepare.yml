@@ -4,8 +4,8 @@ title: Prepare for the basic hybrid environment
 metadata:
   unitType: learning-content
   title:  Prepare for the basic hybrid environment
-  description: "Project overview and setup requirements."
-  ms.date: 5/31/2022
+  description: "Learn about the setup requirements for a Windows Server Active Directory and Microsoft Entra ID hybrid configuration."
+  ms.date: 05/24/2024
   author: billmath
   ms.author: billmath
   ms.topic: unit
