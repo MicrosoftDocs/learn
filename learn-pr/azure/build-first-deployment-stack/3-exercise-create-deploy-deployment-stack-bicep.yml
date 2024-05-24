@@ -9,6 +9,6 @@ metadata:
   ms.author: jowaddel
   ms.topic: unit
   zone_pivot_groups: azure-shell-interface
-durationInMinutes: 1
+durationInMinutes: 10
 content: | 
   [!include[](includes/3-exercise-create-deploy-deployment-stack-bicep.md)]
