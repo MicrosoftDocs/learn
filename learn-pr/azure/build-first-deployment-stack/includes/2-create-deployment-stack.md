@@ -27,11 +27,11 @@ We use the following bicep file for our first deployment stack. The file defines
 
 ## Creating a deployment stack
 
-Creating and deploying a deployment stack and its resources is nearly identical to a standard Azure deployment. Whether you're using AZ CLI, Azure PowerShell, or an infrastructure as code pipeline, the process feels the same. For example:
+Creating and deploying a deployment stack and its resources is nearly identical to a standard Azure deployment. Whether you're using Azure CLI, Azure PowerShell, or an infrastructure as code pipeline, the process feels the same. For example:
 
 ::: zone pivot="cli"
 
-The AZ CLI command to deploy a bicep file to a resource group is:
+The Azure CLI command to deploy a bicep file to a resource group is:
 
 ```azurecli
 az deployment group create \
@@ -39,7 +39,7 @@ az deployment group create \
     --template-file ./main.bicep
 ```
 
-The AZ CLI command to create a deployment stack at the resource group scope is:
+The Azure CLI command to create a deployment stack at the resource group scope is:
 
 ```azurecli
 az stack group create \
@@ -83,7 +83,7 @@ Now, lets take a look at creating a deployment stack at the resource group scope
 
 ::: zone pivot="cli"
 
-To create a deployment stack using AZ CLI, use the `az stack group create` command. The following commands first create a resource group called `rg-depositsApplication` then creates the deployment stack at the scope of the resource group.
+To create a deployment stack using Azure CLI, use the `az stack group create` command. The following commands first create a resource group called `rg-depositsApplication` then creates the deployment stack at the scope of the resource group.
 
 ```azurecli
 az group create \
@@ -129,7 +129,7 @@ Resource groups may have multiple deployment stacks scoped to them. You can show
 
 ::: zone pivot="cli"
 
-To show a specific deployment stack resource scoped to a resource group using AZ CLI, use the `az stack group show` command, specifying the name of the deployment stack and the target resource group.
+To show a specific deployment stack resource scoped to a resource group using Azure CLI, use the `az stack group show` command, specifying the name of the deployment stack and the target resource group.
 
 ```azurecli
 az stack group show \
@@ -177,7 +177,7 @@ You can also list all deployment stacks scoped to a specific resource group.
 
 ::: zone pivot="cli"
 
-To list all deployment stack resources scoped to a resource group using AZ CLI, use the `az stack group list` command, specifying the target resource group.
+To list all deployment stack resources scoped to a resource group using Azure CLI, use the `az stack group list` command, specifying the target resource group.
 
 ```azurecli
 az stack group list \

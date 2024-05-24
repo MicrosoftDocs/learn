@@ -12,14 +12,14 @@ durationInMinutes: 1
 content: | 
 quiz:
   questions:
-  - content: Which of the following values is NOT an option for the _action on unmanage_ parameter?
+  - content: Which of the following values isn't an option for the _action on unmanage_ parameter?
     choices:
     - content: Delete all
       isCorrect: false
       explanation: The 'delete all' value is an option for the _action on unmanage_ parameter.
     - content: Delete and detach
       isCorrect: true
-      explanation: The 'delete and detach' value is not an option for the _action on unmanage_ parameter. Available values are delete all, delete resources, and detach all.
+      explanation: The 'delete and detach' value isn't an option for the _action on unmanage_ parameter. Available values are delete all, delete resources, and detach all.
     - content: Detach all
       isCorrect: false
       explanation: The 'detach all' value is an option for the _action on unmanage_ parameter.

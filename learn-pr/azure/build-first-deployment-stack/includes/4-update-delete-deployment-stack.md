@@ -39,7 +39,7 @@ The highlighted code defines our new Azure SQL database for our deposits applica
 
 ::: zone pivot="cli"
 
-To update a deployment stack using AZ CLI, use the `az stack group create` command.
+To update a deployment stack using Azure CLI, use the `az stack group create` command.
 
 ```azurecli
 az stack group create \
@@ -51,11 +51,11 @@ az stack group create \
 ```
 
 > [!NOTE]
-> AZ CLI does not have a dedicated command to update a deployment stack. Use the create command to update the stack.
+> Azure CLI does not have a dedicated command to update a deployment stack. Use the create command to update the stack.
 
 When performing an update on the stack, you receive a message stating that the stack already exists in the current subscription. If the value of the _action on unmanage_ parameter changes, the warning alerts you of the new values.
 
-![a graphic representing an AZ CLI warning that the deployment stack already exists](../media/stack-exists-cli.png)
+![a graphic representing an Azure CLI warning that the deployment stack already exists](../media/stack-exists-cli.png)
 
 To verify that the stack is managing the new resources, use the `az stack group show` command.
 
@@ -106,7 +106,7 @@ Reliable resource cleanup is a key feature of deployment stacks. When you delete
 
 ::: zone pivot="cli"
 
-To delete a deployment stack using AZ CLI, use the `az stack group delete` command. The `--action-on-unmanaged` argument determines how Azure handles detached resources, resource groups, and management groups.
+To delete a deployment stack using Azure CLI, use the `az stack group delete` command. The `--action-on-unmanaged` argument determines how Azure handles detached resources, resource groups, and management groups.
 
 ```azurecli
 az stack group delete \

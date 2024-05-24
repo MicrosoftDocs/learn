@@ -22,4 +22,4 @@ You should be familiar with:
 
 - Azure, including the Azure portal, subscriptions, resource groups, and resources.
 - Bicep, including creating and deploying basic files.
-- Basic Azure PowerShell or AZ CLI commands.
+- Basic Azure PowerShell or Azure CLI commands.

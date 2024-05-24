@@ -43,15 +43,15 @@ With the Bicep file updated, we want to update the deployment stack so that the 
 
 1. You receive a message stating that the stack already exists in the current subscription. If the value of the _action on unmanage_ parameter changed, the warning alerts you of the new values. Press `y`, followed by 'Enter`.
 
-    ![a graphic representing an AZ CLI command line warning that the deployment stack already exists](../media/stack-exists-cli.png)
+    ![a graphic representing an Azure CLI command line warning that the deployment stack already exists](../media/stack-exists-cli.png)
 
 1. You're prompted to enter a value for `sqlServerAdminUserName`. Create a name for the SQL server administrator, followed by 'Enter.'
 
-    ![a graphic representing the AZ CLI command line prompting you to enter an SQL server administrator user name](../media/sqladmin-cli.png)
+    ![a graphic representing the Azure CLI command line prompting you to enter an SQL server administrator user name](../media/sqladmin-cli.png)
 
 1. You're prompted to enter a value for `sqlServerAdminPassword`. Create a complex password for the SQL server administrator, followed by 'Enter.'
 
-    ![a graphic representing the AZ CLI command line prompting you to enter an SQL server administrator password](../media/sqlpassword-cli.png)
+    ![a graphic representing the Azure CLI command line prompting you to enter an SQL server administrator password](../media/sqlpassword-cli.png)
 
 Wait for the update operation to complete before moving on to the next task.
 
@@ -137,7 +137,7 @@ Take notice of the resources section of the output. We now see the SQL server an
 
 1. You're asked to confirm if you would like to delete the stack and the specified resources.
 
-    ![a graphic representing a command line confirmation to delete the deployment stack using AZ CLI](../media/confirm-cli.png)
+    ![a graphic representing a command line confirmation to delete the deployment stack using Azure CLI](../media/confirm-cli.png)
 
 1. After the delete operation completes, open the Azure portal and verify that the deployment stack and its resources are removed.
 
@@ -150,7 +150,7 @@ Take notice of the resources section of the output. We now see the SQL server an
 
 1. You're asked to confirm if you would like to remove the resource group. Press 'Y', followed by 'Enter.'
 
-    ![a graphic representing a command line confirmation to delete the resource group using AZ CLI](../media/confirm-rg-cli.png)
+    ![a graphic representing a command line confirmation to delete the resource group using Azure CLI](../media/confirm-rg-cli.png)
 
 ::: zone-end
 
@@ -165,7 +165,7 @@ Take notice of the resources section of the output. We now see the SQL server an
         -ActionOnUnmanage DeleteAll
     ```
 
-2. You're asked to confirm if you would like to delete the stack and the specified resources. 
+2. You're asked to confirm if you would like to delete the stack and the specified resources.
 
     ![a graphic representing a command line confirmation to delete the deployment stack using Azure PowerShell](../media/confirm-ps.png)
 

@@ -1,4 +1,4 @@
-You and your team at the community bank decided to use deployment stacks to improve the lifecycle management of your Azure resources. 
+You and your team at the community bank decided to use deployment stacks to improve the lifecycle management of your Azure resources.
 
 To test the functionality and features of deployment stacks, you deployed resources for the bank's deposits application by creating and updating a deployment stack.
 

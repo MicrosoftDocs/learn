@@ -100,7 +100,7 @@ New-AzResourceGroupDeploymentStack `
 
 ::: zone pivot="cli"
 
-When you create a deployment stack and its managed resources, you can view its configuration using the command-line or the Azure portal. In this exercise, we use AZ CLI. To view the configuration of the deployment stack, run the following command from the terminal in Visual Studio Code.
+When you create a deployment stack and its managed resources, you can view its configuration using the command-line or the Azure portal. In this exercise, we use Azure CLI. To view the configuration of the deployment stack, run the following command from the terminal in Visual Studio Code.
 
 ```azurecli
 az stack group show \
