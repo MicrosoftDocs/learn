@@ -8,6 +8,7 @@ metadata:
   author: billmath
   ms.author: billmath
   ms.topic: module
+  ms.service: active-directory
 title: Create a basic hybrid environment
 summary: |
   Create an on-premises Active Directory environment and a Microsoft Entra tenant.  This environment is the basis for more guided projects that demonstrate how to deploy hybrid environments and use the cloud.
