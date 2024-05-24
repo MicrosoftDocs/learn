@@ -4,15 +4,15 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/01/2022
+  ms.date: 05/24/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 4
+  ms.custom:
+  - N/A
+durationInMinutes: 5
 content: |
-  [!include[](includes/6-knowledge-check.md)]
+  [!include[](includes/14-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -32,7 +32,7 @@ quiz:
     - content: "When you need to reduce the size of a repository significantly by removing history."
       isCorrect: false
       explanation: "Incorrect. When you need to hide code and history without removing permissions."
-    - content: "When you need to remove a sensitive file that should not have been uploaded."
+    - content: "When you need to remove a sensitive file that shouldn't have been uploaded."
       isCorrect: false
       explanation: "Incorrect. When you need to hide code and history without removing permissions."
     - content: "When you need to hide code and history without removing permissions."

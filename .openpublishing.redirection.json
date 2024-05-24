@@ -38978,6 +38978,31 @@
     "source_path": "learn-pr/wwl-azure/collaborate-pull-requests-azure-repos/6-summary.md",
     "redirect_url": "/training/modules/collaborate-pull-requests-azure-repos/5-summary",
     "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/manage-git-repositories/3-purge-repository-data.md",
+    "redirect_url": "/training/modules/manage-git-repositories/7-purge-repository-data",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/manage-git-repositories/4-manage-releases-github-repos.md",
+    "redirect_url": "/training/modules/manage-git-repositories/8-manage-releases-github-repos",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/manage-git-repositories/5-automate-release-notes-github.md",
+    "redirect_url": "/training/modules/manage-git-repositories/9-automate-release-notes-github",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/manage-git-repositories/6-knowledge-check.md",
+    "redirect_url": "/training/modules/manage-git-repositories/14-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/manage-git-repositories/7-summary.md",
+    "redirect_url": "/training/modules/manage-git-repositories/15-summary",
+    "redirect_document_id": false
     }
   ]
 }

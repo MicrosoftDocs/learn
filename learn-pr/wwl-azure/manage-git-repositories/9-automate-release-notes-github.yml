@@ -4,12 +4,12 @@ title: Automate release notes with GitHub
 metadata:
   title: Automate release notes with GitHub
   description: "Automate release notes with GitHub"
-  ms.date: 11/01/2022
+  ms.date: 05/24/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.custom:
+  - N/A
+durationInMinutes: 5
 content: |
-  [!include[](includes/5-automate-release-notes-github.md)]
+  [!include[](includes/9-automate-release-notes-github.md)]

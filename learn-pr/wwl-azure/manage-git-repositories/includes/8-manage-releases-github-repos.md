@@ -43,10 +43,10 @@ You can't edit Releases with GitHub CLI.
 
 To edit, use the Web Browser:
 
-1. Navigate to the main repository page on GitHub.com.
-1. Click **Releases** to the right of the list of files.
-1. Click on the **edit icon** on the right side of the page, next to the release you want to edit.
-1. Edit the details for the release, then click **Update release**.
+1.  Navigate to the main repository page on GitHub.com.
+2.  Click **Releases** to the right of the list of files.
+3.  Click on the **edit icon** on the right side of the page, next to the release you want to edit.
+4.  Edit the details for the release, then click **Update release**.
 
 ## Deleting a release
 
