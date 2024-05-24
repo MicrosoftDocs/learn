@@ -3,7 +3,7 @@ uid: learn.wwl.manage-git-repositories
 metadata:
   title: Manage Git repositories
   description: "This module explores how to work with large repositories, purge repository data and manage and automate release notes using GitHub."
-  ms.date: 05/08/2024
+  ms.date: 05/24/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: module
