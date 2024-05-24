@@ -89,6 +89,22 @@
         "source_path_from_root": "/learn-pr/wwl-sci/manage-data-retention-microsoft-365/2-explain-retention-exchange-online.md",
         "redirect_url": "/training/modules/manage-data-retention-microsoft-365/explain-retention-exchange-online",
         "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/manage-data-retention-microsoft-365/5-recover-content-microsoft-teams-sharepoint-onedrive.md",
+        "redirect_url": "/training/modules/manage-data-retention-microsoft-365/explain-retention-exchange-online",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/manage-data-retention-microsoft-365/6-implement-retention-policies-tags-microsoft-exchange.md",
+        "redirect_url": "/training/modules/manage-data-retention-microsoft-365/explain-retention-exchange-online",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/manage-data-retention-microsoft-365/7-apply-mailbox-holds-microsoft-exchange.md",
+        "redirect_url": "/training/modules/manage-data-retention-microsoft-365/apply-mailbox-holds-microsoft-exchange",
+        "redirect_document_id": false
       }
+      
     ]
 }

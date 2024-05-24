@@ -39,12 +39,9 @@ units:
 - learn.wwl.manage-data-retention-microsoft-365.explain-retention-viva-engage
 - learn.wwl.manage-data-retention-microsoft-365.explain-retention-exchange-online
 - learn.wwl.manage-data-retention-microsoft-365.explain-retention-copilot-interactions
-
-- learn.wwl.manage-data-retention-microsoft-365.compare-use-of-preservation-lock,-preservation-hold-pegulatory-retention-policie
-- learn.wwl.manage-data-retention-microsoft-365.explain-retention-microsoft-yammer
-- learn.wwl.manage-data-retention-microsoft-365.recover-content-microsoft-teams,-sharepoint,-onedrive
-- learn.wwl.manage-data-retention-microsoft-365.implement-retention-policies-tags-microsoft-exchange
+- learn.wwl.manage-data-retention-microsoft-365.recover-content-microsoft-365-workloads
 - learn.wwl.manage-data-retention-microsoft-365.apply-mailbox-holds-microsoft-exchange
+
 - learn.wwl.manage-data-retention-microsoft-365.recover-content-microsoft-exchange
 - learn.wwl.manage-data-retention-microsoft-365.knowledge-check
 - learn.wwl.manage-data-retention-microsoft-365.summary-resources

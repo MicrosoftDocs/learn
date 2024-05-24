@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.manage-data-retention-microsoft-365.recover-content-microsoft-teams,-sharepoint,-onedrive
+uid: learn.wwl.manage-data-retention-microsoft-365.recover-content-microsoft-365-workloads
 title: Recover content in Microsoft 365 workloads
 metadata:
   title: Recover content in Microsoft 365 workloads
   description: "Recover content in Microsoft 365 workloads"
-  ms.date: 02/27/2023
+  ms.date: 05/23/2024
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: riswinto
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/5-recover-content-microsoft-teams-sharepoint-onedrive.md)]
+  [!include[](includes/recover-content-microsoft-365-workloads.md)]

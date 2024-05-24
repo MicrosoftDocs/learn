@@ -2,14 +2,30 @@ Microsoft Exchange Online is a cloud-based service that manages emails, calendar
 
 ## Overview of retention in Exchange
 
-Retention policies in Exchange are designed to help organizations manage their communications data. These policies cover a wide range of data types within Exchange, including:
+Retention policies in Exchange are designed to help organizations manage their communications data. These policies cover a wide range of data types within Exchange, including mail messages, tasks, calendar items, and notes. While public folders are included under retention policies, they aren't covered by retention labels.
 
-- **Mail messages** include all received messages, drafts, and sent messages, along with any attachments.
-- **Tasks** with end dates are included under retention policies.
-- **Calendar items** are also supported as long as they have an end date.
-- **Notes** consist of simple text items that are often used for quick reminders.
+### Transition from Messaging Records Management (MRM) to modern retention policies
 
-However, it's important to note that some items, like contacts and tasks without end dates, aren't covered by these policies. Public folders are included under retention policies but not under retention labels.
+As the digital landscape evolves, Microsoft has enhanced its information governance capabilities within Exchange. Traditionally, Messaging Records Management (MRM) was used to manage email lifecycles. However, to align with modern compliance demands and more integrated data management across Microsoft 365, it's recommended to transition to using retention policies and labels provided through the Microsoft Purview compliance portal.
+
+These tools offer a unified approach to managing data retention and deletion across various Microsoft 365 services and provide several benefits over the older MRM system:
+
+- **Centralized management**: Simplifies the governance of data across all Microsoft 365 services.
+**Enhanced compliance**: Improves the organization's compliance posture with advanced data protection capabilities.
+- **Increased flexibility**: Allows for granular retention and deletion controls at the item level.
+
+Organizations currently using MRM should consider gradually transitioning to these modern retention tools to ensure compliance and efficient data management.
+
+### Data types managed under retention policies
+
+Under modern retention policies in Exchange, various types of communications data are included to ensure comprehensive management and compliance:
+
+- **Mail messages**: Includes all received messages, drafts, and sent messages, along with any attachments.
+- **Tasks**: Included under retention policies as long as they have end dates.
+- **Calendar items**: Also supported as long as they have an end date.
+- **Notes**: Consist of simple text items often used for quick reminders.
+
+It's important to note that some items, like contacts and tasks without end dates, aren't covered by these policies. Public folders are included under retention policies but not under retention labels, highlighting the need for a tailored approach to different types of data.
 
 ## How retention works in Exchange
 

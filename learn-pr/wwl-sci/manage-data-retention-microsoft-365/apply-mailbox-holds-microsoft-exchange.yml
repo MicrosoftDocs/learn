@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/7-apply-mailbox-holds-microsoft-exchange.md)]
+  [!include[](includes/apply-mailbox-holds-microsoft-exchange.md)]
