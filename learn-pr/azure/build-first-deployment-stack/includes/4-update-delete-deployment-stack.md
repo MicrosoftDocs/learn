@@ -6,27 +6,6 @@ In this unit, you learn how to update a deployment stack by adding resources to 
 
 [!INCLUDE [Note - don't run commands](../../../includes/dont-run-commands.md)]
 
-## Managed resources revisited
-
-When you create a deployment stack, the stack becomes responsible for managing the resources described in the Bicep file, ARM JSON template, or template spec. Resources managed by the stack are known as managed resources, but those resources are updated through the original template files.
-
-![a graphic representing a deployment stack and managed resources](../media/deployment-stacks-scenario-2-and-5.png)
-
-In this graphic, the deposits deployment stack is managing five resources.
-
-What happens to a resource that is no longer managed by the deployment stack? If a resource is no longer defined in a template file and the stack is updated, the resource can become detached or deleted. A detached resource is a resource that is no longer managed by the stack, but the resource continues to exist within Azure. A deleted resource is a resource that is no longer managed by the stack, and is deleted from Azure.
-
-You're able to control how Azure handles detached resources, resource groups, and management groups with a property known as the _action on unmanage_ parameter. The action on unmanage parameter can be set when creating, modifying, or deleting a deployment stack. All three operations have the ability to set the behavior of the _action on unmanage_ parameter. Keep in mind that the value set last takes precedence. There are three possible values for _action on unmanage_:
-
-- Delete all - deletes resources, resource groups, and management groups
-- Delete resources - deletes resources, but detaches resource groups and management groups
-- Detach all - detaches all resources, resource groups, and management groups
-
-> [!NOTE]
-> In this module, we are working with resrouce group scoped deployment stacks. In this situation, the resource group is not managed by the stack. > The 'delete all' value for the _action on unmanage_ parameter doesn't detele the resource group where the stack exists. It is necessary to delete the resource group after the stack and its resources are deleted.
-
-In the next module, you work on managing resource lifecycles, including the _action on unmanage_ parameter.
-
 ## Updating a deployment stack
 
 As an application evolves, so does its resources. How do we update a deployment stack and its managed resources when new services and features are added? What situations require us to update a deployment stack? Adding a new resource or changing the property of an existing managed resource would require that we update the deployment stack.

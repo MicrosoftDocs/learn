@@ -50,7 +50,10 @@ az stack group create \
     --deny-settings-mode none
 ```
 
-Notice that the only changes in the command are the words `deployment` and `stack`, and differences in the parameters used. The same is true for deployments to subscriptions and management groups. In later modules, we explore how to manage a deployment stack's resources using _action on unmanage_ how to configure _deny settings_.
+Notice that the only changes in the command are the words `deployment` and `stack`, and differences in the parameters used. The same is true for deployments to subscriptions and management groups.
+
+> [!NOTE]
+> In later modules, we explore how to manage a deployment stack's resources using `--action-on-unmanage` and how to prevent unwanted changes using `--deny-settings-mode`.
 
 ::: zone-end
 
@@ -75,7 +78,10 @@ New-AzResourceGroupDeploymentStack `
     -DenySettingsMode None
 ```
 
-Notice that the only change in the command is the word `stack`, and differences in the parameters used. The same is true for deployments to subscriptions and management groups. In later modules, we explore how to manage a deployment stack's resources using _action on unmanage_ how to configure _deny settings_.
+Notice that the only change in the command is the word `stack`, and differences in the parameters used. The same is true for deployments to subscriptions and management groups.
+
+> [!NOTE]
+> In later modules, we explore how to manage a deployment stack's resources using `-ActionOnUnmanage` and how to prevent unwanted changes using `-DenySettingsMode`.
 
 ::: zone-end
 
