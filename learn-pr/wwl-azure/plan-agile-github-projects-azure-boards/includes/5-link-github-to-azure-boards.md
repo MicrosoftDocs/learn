@@ -1,4 +1,3 @@
-
 ## Use GitHub, track work in Azure Boards
 
 Use Azure Boards to plan and track your work and GitHub as source control for software development.

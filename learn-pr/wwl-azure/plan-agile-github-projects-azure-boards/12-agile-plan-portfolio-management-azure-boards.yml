@@ -4,10 +4,10 @@ title: Agile Plan and Portfolio Management with Azure Boards
 metadata:
   title: Agile Plan and Portfolio Management with Azure Boards
   description: "Agile Plan and Portfolio Management with Azure Boards"
-  ms.date: 06/30/2023
+  ms.date: 05/24/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
 durationInMinutes: 57
 content: |
-  [!include[](includes/9-agile-plan-portfolio-management-azure-boards.md)]
+  [!include[](includes/12-agile-plan-portfolio-management-azure-boards.md)]
