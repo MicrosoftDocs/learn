@@ -3,7 +3,7 @@ uid: learn.wwl.understand-scalability-power-bi
 metadata:
   title: Understand scalability in Power BI
   description: "Scalable data models enable enterprise-scale analytics in Power BI. Implement data modeling best practices, use large dataset storage format, and practice building a star schema to design analytics solutions that can scale."
-  ms.date: 11/24/2022
+  ms.date: 05/15/2024
   author: wwlpublish
   ms.author: anrudduc
   ms.topic: module-standard-task-based
@@ -12,13 +12,13 @@ title: Understand scalability in Power BI
 summary: Scalable data models enable enterprise-scale analytics in Power BI. Implement data modeling best practices, use large dataset storage format, and practice building a star schema to design analytics solutions that can scale.
 abstract: |
   By the end of this module, you’ll be able to:
-  * Describe the importance of building scalable data models
-  * Implement Power BI data modeling best practices
-  * Use the Power BI large dataset storage format
+  * Describe the importance of building scalable data models.
+  * Implement Power BI data modeling best practices.
+  * Use the Power BI large dataset storage format.
 prerequisites: |
   Consider completing the [Model data in Power BI](/training/paths/model-power-bi/) learning path.
-  You will need knowledge of:
-  *   Power BI data model design including star schema design basics
+  You need knowledge of:
+  *   Power BI data model design including star schema design basics.
 iconUrl: /training/achievements/understand-scalability-power-bi.svg
 levels:
 - intermediate
@@ -35,7 +35,6 @@ units:
 - learn.wwl.understand-scalability-power-bi.describe-significance-of-scalable-models
 - learn.wwl.understand-scalability-power-bi.implement-data-modeling-best-practices
 - learn.wwl.understand-scalability-power-bi.configure-large-datasets
-- learn.wwl.understand-scalability-power-bi.exercise-create-star-schema-model
 - learn.wwl.understand-scalability-power-bi.knowledge-check
 - learn.wwl.understand-scalability-power-bi.summary
 badge:

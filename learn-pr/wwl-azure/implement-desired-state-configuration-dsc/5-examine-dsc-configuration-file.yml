@@ -4,12 +4,12 @@ title: Examine DSC configuration file
 metadata:
   title: Examine DSC configuration file
   description: "Examine DSC configuration file"
-  ms.date: 03/18/2022
+  ms.date: 05/23/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.custom:
+  - N/A
+durationInMinutes: 3
 content: |
   [!include[](includes/5-examine-dsc-configuration-file.md)]

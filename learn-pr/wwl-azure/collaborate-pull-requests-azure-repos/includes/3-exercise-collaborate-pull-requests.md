@@ -12,31 +12,31 @@ The out-of-the-box branch policies include several policies, such as build valid
 
 ## How to do it
 
-1. Open the branches view for the myWebApp Git repository in the parts-unlimited team portal. Select the main branch, and from the pull-down, context menu choose Branch policies:
+1.  Open the branches view for the myWebApp Git repository in the parts-unlimited team portal. Select the main branch, and from the pull-down, context menu choose Branch policies:
 
     :::image type="content" source="../media/open-branches-9ad34c7c.png" alt-text="Open branches.":::
 
 
-1. In the policies view, It presents out-of-the-box policies. Set the minimum number of reviewers to 1:
+2.  In the policies view, It presents out-of-the-box policies. Set the minimum number of reviewers to 1:
 
     :::image type="content" source="../media/require-minimum-number-reviewers-4e4d2d64.png" alt-text="Require a minimum number of reviewers.":::
 
 
     The Allow requestors to approve their own changes option allows the submitter to self-approve their changes.
 
-    It's OK for mature teams, where branch policies are used as a reminder for the checks that need to be performed by the individual.
+    While this might be acceptable for mature teams, in general, it should be avoided.<br>
 
-1. Use the review policy with the comment-resolution policy. It allows you to enforce that the code review comments are resolved before the changes are accepted. The requester can take the feedback from the comment and create a new work item and resolve the changes. It at least guarantees that code review comments aren't lost with the acceptance of the code into the main branch:
+3.  Use the review policy with the comment-resolution policy. It allows you to enforce that the code review comments are resolved before the changes are accepted. The requester can take the feedback from the comment and create a new work item and resolve the changes. It at least guarantees that code review comments aren't lost with the acceptance of the code into the main branch:
 
     :::image type="content" source="../media/check-comment-resolution-f4bb058c.png" alt-text="Check for comment resolution.":::
 
 
-1. A requirement instigates a code change in the team project. If the work item triggered the work isn't linked to the change, it becomes hard to understand why it was made over time. It's especially useful when reviewing the history of changes. Configure the Check for linked work items policy to block changes that don't have a work item linked to them:
+4.  A requirement instigates a code change in the team project. If the work item triggered the work isn't linked to the change, it becomes hard to understand why it was made over time. It's especially useful when reviewing the history of changes. Configure the Check for linked work items policy to block changes that don't have a work item linked to them:
 
     :::image type="content" source="../media/check-linked-work-items-9f9a5589.png" alt-text="Check for linked work items.":::
 
 
-1. Select the option to automatically include reviewers when a pull request is raised automatically. You can map which reviewers are added based on the area of the code being changed:
+5.  Select the option to automatically include reviewers when a pull request is raised automatically. You can map which reviewers are added based on the area of the code being changed:
 
     :::image type="content" source="../media/add-automatic-reviewers-528e31d0.png" alt-text="Add automatic reviewers.":::
 

@@ -43,7 +43,7 @@ The following table lists the significant differences between manual deployment 
 
 The following list is benefits of infrastructure as code:
 
- -  Promotes auditing by making it easier to trace what was deployed, when, and how. (In other words, it improves traceability.)
+ -  Promotes auditing by making it easier to trace what was deployed, when, and how. (In other words, it improves traceability).
  -  Provides consistent environments from release to release.
  -  Greater consistency across development, test, and production environments.
  -  Automates scale-up and scale-out processes.

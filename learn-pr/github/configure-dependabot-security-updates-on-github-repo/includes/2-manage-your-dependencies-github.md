@@ -107,7 +107,7 @@ GitHub offers two ways to export a Software Bill of Materials (SBOM) for your re
 - Via the GitHub UI
 - Using the REST API
 
-You can leverage SBOMs as part of your audit process and use them to comply with regulatory and legal requirements. If your company provides software to the US federal government, per [Executive Order 14028](https://www.gsa.gov/technology/technology-products-services/it-security/executive-order-14028-improving-the-nations-cybersecurity?azure-portal=true), you'll need to provide an SBOM for your product.
+You can leverage SBOMs as part of your audit process and use them to comply with regulatory and legal requirements. If your company provides software to the US federal government, per [Executive Order 14028](https://www.gsa.gov/technology/it-contract-vehicles-and-purchasing-programs/information-technology-category/it-security/executive-order-14028?azure-portal=true), you'll need to provide an SBOM for your product.
 
 ## Dependabot  
 

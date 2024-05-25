@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-real-time-dashboards-microsoft-fabric.exercise
+title: Exercise - create a Real-Time Dashboard
+metadata:
+  title: Exercise - create a Real-Time Dashboard
+  description: "Exercise - create a Real-Time Dashboard"
+  ms.date: 05/21/2024
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: unit
+durationInMinutes: 35
+content: |
+  [!include[](includes/5-exercise.md)]

@@ -26,7 +26,7 @@ After you configure the budget amount, select **Next** to configure budget alert
 
 If you want to receive emails, add azure-noreply@microsoft.com to your approved senders list so that emails don't go to your junk email folder.
 
-In the following example, an email alert is generated and sent to admin@fabrikam.com when 90 percent of the budget is reached.
+In the following example, an email alert is generated and sent to `admin@fabrikam.com` when 90 percent of the budget is reached.
 
 :::image type="content" source="../media/06-create-budget-alert.png" alt-text="Screenshot that shows creating a budget with alert conditions." lightbox="../media/06-create-budget-alert.png" :::
 

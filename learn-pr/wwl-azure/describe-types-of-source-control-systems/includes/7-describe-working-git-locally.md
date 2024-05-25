@@ -65,7 +65,7 @@ The Visual Studio Marketplace features several extensions for Visual Studio Code
     
     ```Cmd
     git config --global user.name "John Doe"
-    git config --global user.email "john.doe@contoso.com"
+    git config --global user.email "user@contoso.com"
     
     ```
     
