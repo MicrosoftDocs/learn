@@ -4,10 +4,12 @@ title: Work with Docker containers
 metadata:
   title: Work with Docker containers
   description: "Work with Docker containers"
-  ms.date: 06/30/2023
+  ms.date: 05/25/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/3-work-docker-containers.md)]
