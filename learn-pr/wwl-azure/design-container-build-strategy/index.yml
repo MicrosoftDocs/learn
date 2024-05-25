@@ -54,7 +54,7 @@ units:
 - learn.wwl.design-container-build-strategy.work-docker-containers
 - learn.wwl.design-container-build-strategy.understand-dockerfile-core-concepts
 - learn.wwl.design-container-build-strategy.examine-multi-stage-dockerfiles
-- learn.wwl.design-container-build-strategy.examine-considerations-multiple-stage-builds
+- learn.wwl.design-container-build-strategy.examine-considerations-for-multiple-stage-builds
 - learn.wwl.design-container-build-strategy.explore-azure-container-related-services
 - learn.wwl.design-container-build-strategy.deploy-docker-containers-to-azure-app-service-web-apps
 - learn.wwl.design-container-build-strategy.knowledge-check
