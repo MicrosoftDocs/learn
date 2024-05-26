@@ -4,11 +4,12 @@ title: Explore Azure Monitor and Log Analytics
 metadata:
   title: Explore Azure Monitor and Log Analytics
   description: "Explore Azure Monitor and Log Analytics"
-  ms.date: 06/30/2023
+  ms.date: 05/24/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-  ms.custom: devx-track-azurepowershell
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/4-explore-azure-monitor-log-analytics.md)]

@@ -1,4 +1,3 @@
-
 Dockerfiles are text files that contain the commands needed by **docker build** to assemble an image.
 
 Here's an example of a basic Dockerfile:

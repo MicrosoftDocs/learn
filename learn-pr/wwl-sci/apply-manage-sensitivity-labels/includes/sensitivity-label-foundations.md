@@ -36,7 +36,7 @@ After a sensitivity label is applied to a site, you must have the following role
 
 ### Enable sensitivity labels for containers and synchronize labels
 
-When you enable sensitivity labels for containers like Microsoft Teams, Microsoft 365 Groups, and SharePoint sites allow you to extend the data protection and compliance capabilities of Microsoft 365 to these environments. Follow these steps in this one-time procedure if you need to enable sensitivity labels for containers in your environment:
+To use Microsoft Purview's data protection and compliance capabilities for Microsoft Teams, Microsoft 365 Groups, and SharePoint sites, follow these steps to enable sensitivity labels for containers in your environment.:
 
 1. **Enable labels**: Follow the [Microsoft Entra documentation to enable sensitivity labels for Microsoft 365 Groups](/entra/identity/users/groups-assign-sensitivity-labels?azure-portal=true).
 1. **Synchronize labels**: Connect to [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell?azure-portal=true) as an administrator, and run the `Execute-AzureAdLabelSync` command to sync labels with Microsoft Entra ID.

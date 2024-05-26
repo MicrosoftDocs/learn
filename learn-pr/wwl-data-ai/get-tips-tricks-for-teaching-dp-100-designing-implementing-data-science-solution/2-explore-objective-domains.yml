@@ -4,10 +4,10 @@ title: Explore objective domains
 metadata:
   title: Explore objective domains
   description: "Explore objective domains"
-  ms.date: 09/07/2023
+  ms.date: 05/23/2024
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 4
 content: |
   [!include[](includes/2-explore-objective-domains.md)]

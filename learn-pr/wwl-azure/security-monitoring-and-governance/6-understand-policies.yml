@@ -4,12 +4,12 @@ title: Understand policies
 metadata:
   title: Understand policies
   description: "Understand policies"
-  ms.date: 06/25/2023
+  ms.date: 05/13/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.custom:
+  - N/A
+durationInMinutes: 4
 content: |
   [!include[](includes/6-understand-policies.md)]

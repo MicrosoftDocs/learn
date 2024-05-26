@@ -19,4 +19,3 @@ By the end of this module, participants are able to:
 ## Goals
 
 The module aims to equip participants with the knowledge and skills necessary to manage authentication effectively within Microsoft Entra ID. Participants learn how to configure and enforce modern authentication methods, secure user authentication, and streamline access to resources, ultimately enhancing security and user convenience.
-
