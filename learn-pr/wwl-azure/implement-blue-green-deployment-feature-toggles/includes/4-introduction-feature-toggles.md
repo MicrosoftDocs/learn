@@ -70,7 +70,7 @@ With feature toggles, you build new features behind a toggle. Your feature is "o
 
 In the purest form, a feature toggle is an IF statement.
 
-:::image type="content" source="../media/feature-toggle-0a27e13b.png" alt-text="Feature Toggle.":::
+:::image type="content" source="../media/feature-toggle-0a27e13b.png" alt-text="Diagram showing feature toggle.":::
 
 
 When the switch is off, it executes the code in the IF, otherwise the ELSE.

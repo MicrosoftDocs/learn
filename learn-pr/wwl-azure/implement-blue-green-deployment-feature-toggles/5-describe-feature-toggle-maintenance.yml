@@ -4,10 +4,12 @@ title: Describe feature toggle maintenance
 metadata:
   title: Describe feature toggle maintenance
   description: "Describe feature toggle maintenance"
-  ms.date: 10/13/2023
+  ms.date: 05/26/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
-  [!include[](includes/6-describe-feature-toggle-maintenance.md)]
+  [!include[](includes/5-describe-feature-toggle-maintenance.md)]

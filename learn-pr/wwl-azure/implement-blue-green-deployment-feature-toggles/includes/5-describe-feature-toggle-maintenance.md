@@ -12,7 +12,7 @@ He states that you can look at the dimension of how long a toggle should be in y
 
 ## Planning feature flag lifecycles
 
-:::image type="content" source="../media/switch-position-triggers-flag-64d2ca6d.png" alt-text="A switch in the on position triggers a flag, if this, else that.":::
+:::image type="content" source="../media/switch-position-triggers-flag-64d2ca6d.png" alt-text="Diagram showing a switch in the on position triggers a flag, if this, else that.":::
 
 
 The most important thing is to remember that you need to remove the toggles from the software.
