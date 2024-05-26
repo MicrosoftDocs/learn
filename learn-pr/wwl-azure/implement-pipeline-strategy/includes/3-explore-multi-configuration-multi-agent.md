@@ -7,7 +7,7 @@ There are three different types of jobs you can run.
      -  Run the release once with configuration setting A on WebApp A and setting B for WebApp B.
      -  Deploy to different geographic regions.
 
-:::image type="content" source="../media/multi-conf-job1-eeb391d2.png" alt-text="Diagram showing Multi-configuration.":::
+:::image type="content" source="../media/multi-configuration-job-1-277f163a.png" alt-text="Screenshot of Multi-configuration.":::
 
 
  -  **Multi-agent**: Run the same set of tasks on multiple agents using the specified number of agents. For example, you can run a broad suite of 1000 tests on a single agent. Or you can use two agents and run 500 tests on each one in parallel.

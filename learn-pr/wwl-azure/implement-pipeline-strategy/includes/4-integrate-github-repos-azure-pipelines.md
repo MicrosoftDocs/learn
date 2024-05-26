@@ -8,9 +8,9 @@ While GitHub and Azure Pipelines offer tight integration with each other, they'r
 
 Consider aligning the way GitHub repos and Azure Pipelines are named and structured. In particular:
 
-1.  If you don't have an Azure DevOps organization yet, create one named the same as your GitHub organization or account. For example, assuming that your GitHub organization is named org1, the resulting Azure DevOps organization URL would be https://dev.azure.com/org1.
-2.  In the Azure DevOps organization, create projects named the same as the GitHub repositories. For example, assuming that your GitHub repo is named repo1, the resulting URL would be https://dev.azure.com/org1/repo1.
-3.  In the DevOps project, create pipelines named after the corresponding GitHub organization and repository, such as org1.repo1.
+ -  If you don't have an Azure DevOps organization yet, create one named the same as your GitHub organization or account. For example, assuming that your GitHub organization is named org1, the resulting Azure DevOps organization URL would be https://dev.azure.com/org1.
+ -  In the Azure DevOps organization, create projects named the same as the GitHub repositories. For example, assuming that your GitHub repo is named repo1, the resulting URL would be https://dev.azure.com/org1/repo1.
+ -  In the DevOps project, create pipelines named after the corresponding GitHub organization and repository, such as org1.repo1.
 
 Note that this alignment isn't required, but it will help you clearly indicate the relationship between GitHub repos and their respective Azure Pipelines.
 
