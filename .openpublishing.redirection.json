@@ -27005,11 +27005,6 @@
     "redirect_document_id": false
   },
   {
-    "source_path": "learn-pr/wwl-azure/design-container-build-strategy/6-examine-considerations-multiple-stage-builds.md",
-    "redirect_url": "https://learn.microsoft.com/training/modules/design-container-build-strategy/6-examine-considerations-for-multiple-stage-builds",
-    "redirect_document_id": false
-  },
-  {
     "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/",
     "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
     "redirect_document_id": false
@@ -39042,6 +39037,11 @@
     {
     "source_path": "learn-pr/wwl-azure/plan-agile-github-projects-azure-boards/9-agile-plan-portfolio-management-azure-boards.md",
     "redirect_url": "/training/modules/plan-agile-github-projects-azure-boards/12-agile-plan-portfolio-management-azure-boards",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/design-container-build-strategy/6-examine-considerations-for-multiple-stage-builds.md",
+    "redirect_url": "/training/modules/design-container-build-strategy/6-examine-considerations-multiple-stage-builds",
     "redirect_document_id": false
     }
   ]
