@@ -4,12 +4,12 @@ title: Understand typical situations for agent pools
 metadata:
   title: Understand typical situations for agent pools
   description: "Understand typical situations for agent pools"
-  ms.date: 07/13/2023
+  ms.date: 05/07/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.custom:
+  - N/A
+durationInMinutes: 3
 content: |
   [!include[](includes/6-understand-typical-situations-for-agent-pools.md)]

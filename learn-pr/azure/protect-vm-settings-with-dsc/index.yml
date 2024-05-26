@@ -4,8 +4,8 @@ metadata:
   title: Protect your virtual machine settings with Azure Automation State Configuration
   description: Learn how to protect your virtual machine settings with Azure Automation State Configuration
   ms.date: 09/22/2023
-  author: cwatson-cat
-  ms.author: cwatson
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: module
   ms.service: automation
 title: Protect your virtual machine settings with Azure Automation State Configuration

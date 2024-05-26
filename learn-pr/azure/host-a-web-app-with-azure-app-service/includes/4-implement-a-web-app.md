@@ -24,7 +24,7 @@ This command creates a new ASP.NET Core MVC application in a new folder with the
 To quickly create a starter web application, you can use the Maven (`mvn`) command-line tool commonly used in the Java ecosystem. In particular, Maven includes a feature called *archetypes* that can quickly create starter code for different kinds of applications using templates. You can use the `maven-archetype-webapp` template to generate the code for a simple web app that displays "Hello World!" on its homepage.
 
 ```bash
-mvn archetype:generate -DgroupId=example.webapp -DartifactId=helloworld -DinteractiveMode=false -DarchetypeArtifactId=maven-archetype-webapp
+mvn archetype:generate -DgroupId=example.webapp -DartifactId=helloworld -DinteractiveMode=false -DarchetypeArtifactId=maven-archetype-webapp -DarchetypeVersion=1.4
 ```
 
 This command creates a `helloworld` folder that contains the source code for your application.

@@ -4,10 +4,12 @@ title: Explore package feed managers
 metadata:
   title: Explore package feed managers
   description: "Explore package feed managers"
-  ms.date: 07/06/2023
+  ms.date: 05/07/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/4-explore-package-feed-managers.md)]

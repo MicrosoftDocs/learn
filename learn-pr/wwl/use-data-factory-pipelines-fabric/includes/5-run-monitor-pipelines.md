@@ -1,8 +1,4 @@
----
-ms.custom:
-  - build-2023
----
-When you have completed a pipeline, you can use the **Validate** option to check that is configuration is valid, and then either run it interactively or specify a schedule.
+When you have completed a pipeline, you can use the **Validate** option to check that the configuration is valid, and then either run it interactively or specify a schedule.
 
 ![Screenshot of a the Run menu for a pipeline in Microsoft Fabric.](../media/run-pipeline.png) <!-- Update screenshot for release -->
 

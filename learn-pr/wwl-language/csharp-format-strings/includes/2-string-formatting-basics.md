@@ -197,7 +197,7 @@ Console.WriteLine($"Tax rate: {tax:P2}");
 If you're viewing this from the `en-US` culture, you observe the following output.
 
 ```Output
-Tax rate: 36.79 %
+Tax rate: 36.79%
 ```
 
 ### Combining formatting approaches

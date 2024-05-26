@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-defender-cloud-regulatory-compliance-standards.microsoft-cloud-security-benchmark
+title: Microsoft cloud security benchmark in Defender for Cloud
+metadata:
+  title: Microsoft cloud security benchmark in Defender for Cloud
+  description: "Microsoft cloud security benchmark in Defender for Cloud"
+  ms.date: 05/24/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-microsoft-cloud-security-benchmark.md)]

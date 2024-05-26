@@ -4,7 +4,7 @@ Here, you learn the different states of data. We discuss the classifications of 
 
 ## Data states
 
-All data can be in different states at different moments in time. At the most basic level, data can have theses states:
+All data can be in different states at different moments in time. At the most basic level, data can have these states:
 
 - **Data at rest** is settled and stored somewhere. It can include storage objects and files that are on physical media. The media can be optical disks or magnetic disks such as HDDs.
 - **Data in transit** is being moved, whether over a network or between two locations (or applications).

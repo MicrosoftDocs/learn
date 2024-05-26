@@ -23,7 +23,7 @@ As we mentioned at the beginning of this unit, deciding between the BYOL and usa
 - **Additional benefits for publishers**: When you license your software through Microsoft, you're eligible for other commercial marketplace benefits for publishers, including:
   - Cost savings and operational efficiencies as Microsoft takes on billing, collections, currency conversions, and taxation for purchases from the commercial marketplace.
   - More valuable [Marketplace Rewards](/partner-center/marketplace/gtm-your-marketplace-benefits) program benefits when your offer reaches revenue milestones through marketplace.
-  - The ability to take advantage of customers' [Azure consumption commitment benefit](/partner-center/marketplace/azure-consumption-commitment-benefit). This benefit lets customers purchase qualified offers from the commercial marketplace and get credit against their Microsoft Azure Consumption Commitment (MACC). This streamlines purchasing and budgeting for customers with existing enterprise agreements (EA) or Microsoft Customer Agreements (MCA).
+  - The ability to take advantage of customers' [Azure consumption commitment benefit](/marketplace/azure-consumption-commitment-benefit). This benefit lets customers purchase qualified offers from the commercial marketplace and get credit against their Microsoft Azure Consumption Commitment (MACC). This streamlines purchasing and budgeting for customers with existing enterprise agreements (EA) or Microsoft Customer Agreements (MCA).
 
 ## Summary
 
