@@ -39043,6 +39043,26 @@
     "source_path": "learn-pr/wwl-azure/design-container-build-strategy/6-examine-considerations-for-multiple-stage-builds.md",
     "redirect_url": "/training/modules/design-container-build-strategy/6-examine-considerations-multiple-stage-builds",
     "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-pipeline-strategy/3-implement-multi-agent-builds.md",
+    "redirect_url": "/training/modules/implement-pipeline-strategy/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-pipeline-strategy/4-explore-source-control-types-supported-by-azure-pipelines.md",
+    "redirect_url": "/training/modules/implement-pipeline-strategy/8-explore-source-control-types-supported-by-azure-pipelines",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-pipeline-strategy/5-knowledge-check.md",
+    "redirect_url": "/training/modules/implement-pipeline-strategy/9-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-pipeline-strategy/6-summary.md",
+    "redirect_url": "/training/modules/implement-pipeline-strategy/10-summary",
+    "redirect_document_id": false
     }
   ]
 }

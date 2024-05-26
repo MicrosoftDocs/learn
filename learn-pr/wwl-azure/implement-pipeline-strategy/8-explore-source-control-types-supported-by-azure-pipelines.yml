@@ -4,12 +4,12 @@ title: Explore source control types supported by Azure Pipelines
 metadata:
   title: Explore source control types supported by Azure Pipelines
   description: "Explore source control types supported by Azure Pipelines"
-  ms.date: 05/17/2022
+  ms.date: 05/26/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 1
+  ms.custom:
+  - N/A
+durationInMinutes: 3
 content: |
-  [!include[](includes/4-explore-source-control-types-supported-by-azure-pipelines.md)]
+  [!include[](includes/8-explore-source-control-types-supported-by-azure-pipelines.md)]
