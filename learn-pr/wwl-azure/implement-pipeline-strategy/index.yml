@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-pipeline-strategy
 metadata:
-  title: Implement a pipeline strategy
+  title: Design and implement a pipeline strategy
   description: "Implement a pipeline strategy"
-  ms.date: 05/07/2024
+  ms.date: 05/26/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: module
