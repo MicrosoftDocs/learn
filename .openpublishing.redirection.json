@@ -25876,16 +25876,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/wwl-azure/integrate-azure-pipelines/8-knowledge-check.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/integrate-azure-pipelines/7-knowledge-check",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/integrate-azure-pipelines/9-summary.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/integrate-azure-pipelines/8-summary",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/wwl-azure/share-knowledge-within-teams/5-integrate-azure-devops-teams.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/share-knowledge-within-teams/",
       "redirect_document_id": false
@@ -39062,6 +39052,16 @@
     {
     "source_path": "learn-pr/wwl-azure/implement-pipeline-strategy/6-summary.md",
     "redirect_url": "/training/modules/implement-pipeline-strategy/10-summary",
+    "redirect_document_id": false
+    },
+        {
+    "source_path": "learn-pr/wwl-azure/integrate-azure-pipelines/7-knowledge-check.md",
+    "redirect_url": "/training/modules/integrate-azure-pipelines/8-knowledge-check",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/integrate-azure-pipelines/8-summary.md",
+    "redirect_url": "/training/modules/integrate-azure-pipelines/9-summary",
     "redirect_document_id": false
     }
   ]
