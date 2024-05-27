@@ -39108,6 +39108,26 @@
     "source_path": "learn-pr/wwl-azure/implement-test-progressive-exposure-deployment/6-summary.md",
     "redirect_url": "/training/modules/implement-test-progressive-exposure-deployment/5-summary",
     "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/integrate-identity-management-systems/3-explore-service-principals.md",
+    "redirect_url": "/training/modules/integrate-identity-management-systems/",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/integrate-identity-management-systems/4-explore-managed-identity.md",
+    "redirect_url": "/training/modules/integrate-identity-management-systems/",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/integrate-identity-management-systems/5-knowledge-check.md",
+    "redirect_url": "/training/modules/integrate-identity-management-systems/7-knowledge-check",
+    "redirect_document_id": false
+    }
+     {
+    "source_path": "learn-pr/wwl-azure/integrate-identity-management-systems/6-summary.md",
+    "redirect_url": "/training/modules/integrate-identity-management-systems/8-summary",
+    "redirect_document_id": false
     }
   ]
 }
