@@ -37,9 +37,5 @@ modules:
 - learn-m365.m365-threat-remediate
 - learn-m365.m365-threat-safeguard
 - learn-m365.cloud-app-security
-- learn.wwl.fundamentals-generative-ai
-- learn-wwl.security-copilot-getting-started
-- learn.security-copilot-describe-core-features
-- learn.security-copilot-embedded-experiences
 trophy:
   uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-365-defender.trophy
