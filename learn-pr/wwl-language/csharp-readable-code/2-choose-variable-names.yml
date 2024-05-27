@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: "UserOption."
       isCorrect: false
-      explanation: "Incorrect. In camel case formatting the first letter is lower case."
+      explanation: "Incorrect. In camel case formatting, the first letter is lower case."
     - content: "user Option."
       isCorrect: false
       explanation: "Incorrect. All variable names must have consecutive letters, no spaces."
