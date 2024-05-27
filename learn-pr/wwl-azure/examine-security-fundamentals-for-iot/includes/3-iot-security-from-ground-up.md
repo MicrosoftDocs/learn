@@ -9,7 +9,8 @@ Defender for IoT provides agentless, network layer monitoring, and integrates wi
 > [!NOTE]
 > OT monitoring with Microsoft Defender for IoT is now available for purchase with site-based licenses, purchased on the Microsoft 365 admin center.
 
-## :::image type="content" source="../media/end-to-end-coverage-3540777a.png" alt-text="Diagram showing an example of operational technology monitoring in Defender for the Internet of Things."::: 
+:::image type="content" source="../media/end-to-end-coverage-3540777a.png" alt-text="Diagram showing an example of operational technology monitoring in Defender for the Internet of Things.":::
+
 
 ## Agentless device monitoring
 
